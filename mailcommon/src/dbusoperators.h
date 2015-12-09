@@ -1,0 +1,8 @@
+#ifndef MAILFILTER_DBUSOPERATORS_H
+#define MAILFILTER_DBUSOPERATORS_H
+
+#include <QList>
+
+Q_DECLARE_METATYPE(QList<qint64>)
+
+#endif
