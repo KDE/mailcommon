@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 2.8.12)
 
 project(mailcommon)
 
-if(${CMAKE_SOURCE_DIR} STREQUAL ${mailcommon_SOURCE_DIR})
-# ECM setup
 find_package(ECM 5.16.0 CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${mailcommon_SOURCE_DIR}/cmake/modules/ ${ECM_MODULE_PATH})
 set(LIBRARY_NAMELINK)
@@ -91,13 +89,6 @@ install(FILES
 )
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
-else()
-ecm_setup_version(${KDEPIM_LIB_VERSION} VARIABLE_PREFIX MAILCOMMON
-                        VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailcommon_version.h"
-                        PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5MailCommonConfigVersion.cmake"
-                        SOVERSION 5
-)
-endif()
 
 add_subdirectory(src)
 install( FILES mailcommon.categories DESTINATION ${KDE_INSTALL_CONFDIR} )
