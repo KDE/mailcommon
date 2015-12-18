@@ -52,6 +52,13 @@ find_package(KF5MailTransport ${KMAILTRANSPORT_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5Ldap ${KLDAP_LIB_VERSION} CONFIG REQUIRED)
 find_package(Phonon4Qt5 CONFIG REQUIRED)
 
+find_package(Qt5Designer CONFIG)
+set_package_properties(Qt5Designer PROPERTIES
+   PURPOSE "Required to build the Qt Designer plugins"
+   TYPE OPTIONAL
+)
+
+
 ecm_setup_version(${MAILCOMMON_LIB_VERSION} VARIABLE_PREFIX MAILCOMMON
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailcommon_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5MailCommonConfigVersion.cmake"
