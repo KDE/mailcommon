@@ -422,7 +422,6 @@ ecm_generate_pri_file(BASE_NAME MailCommon
     DEPS "AkonadiCore AkonadiMime MessageComposer PimCommon" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/MailCommon
 )
 
-if(${CMAKE_SOURCE_DIR} STREQUAL ${mailcommon_SOURCE_DIR})
 install(FILES
     ${MailCommon_Camelcasesearchrule_HEADERS}
     ${MailCommon_CamelCase_HEADERS}
@@ -472,10 +471,5 @@ install(FILES
 install(FILES
     ${PRI_FILENAME}
     DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
-
-
-endif()
-
-
 
 add_subdirectory(designer)
