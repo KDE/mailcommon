@@ -23,31 +23,32 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 
-#include "PimCommon/ImapAclAttribute"
-#include "PimCommon/PimUtil"
+#include <PimCommon/ImapAclAttribute>
+#include <PimCommon/PimUtil>
 
-#include <AkonadiCore/quotacolorproxymodel.h>
+#include <AkonadiCore/AttributeFactory>
+#include <AkonadiCore/ChangeRecorder>
+#include <AkonadiCore/Collection>
+#include <AkonadiCore/EntityMimeTypeFilterModel>
+#include <AkonadiCore/EntityTreeModel>
+#include <AkonadiCore/ItemFetchScope>
+#include <AkonadiCore/QuotaColorProxyModel>
+#include <AkonadiCore/StatisticsProxyModel>
 
-#include <AkonadiCore/statisticsproxymodel.h>
+#include <AkonadiWidgets/EntityTreeView>
+#include <AkonadiWidgets/ETMViewStateSaver>
 
-#include <messageviewer/messageviewersettings.h>
+#include <KMime/Message>
 
 #include <MessageCore/MessageCoreSettings>
 
-#include <AttributeFactory>
-#include <ChangeRecorder>
-#include <Collection>
-#include <EntityMimeTypeFilterModel>
-#include <EntityTreeModel>
-#include <EntityTreeView>
-#include <ETMViewStateSaver>
-#include <ItemFetchScope>
-
-#include <QLineEdit>
 #include <KLocalizedString>
-#include <QKeyEvent>
-#include <QLabel>
+
 #include <QFontDatabase>
+#include <QKeyEvent>
+#include <QLineEdit>
+#include <QLabel>
+#include <QPointer>
 #include <QVBoxLayout>
 
 namespace MailCommon
