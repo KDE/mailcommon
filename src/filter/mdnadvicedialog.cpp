@@ -29,7 +29,7 @@ using MessageComposer::MessageFactory;
 #ifndef QT_NO_CURSOR
 #include <libkdepim/kcursorsaver.h>
 #endif
-#include <MessageViewer/ObjectTreeParser>
+#include <MimeTreeParser/ObjectTreeParser>
 
 #include <ItemFetchJob>
 #include <ItemModifyJob>
