@@ -42,7 +42,20 @@ class Q_DECL_HIDDEN SnippetsManager::Private
 {
 public:
     Private(SnippetsManager *qq, QWidget *parent)
-        : q(qq), mEditor(0), mParent(parent), mDirty(false)
+        : q(qq),
+          mModel(Q_NULLPTR),
+          mSelectionModel(Q_NULLPTR),
+          mActionCollection(Q_NULLPTR),
+          mEditor(Q_NULLPTR),
+          mAddSnippetAction(Q_NULLPTR),
+          mEditSnippetAction(Q_NULLPTR),
+          mDeleteSnippetAction(Q_NULLPTR),
+          mAddSnippetGroupAction(Q_NULLPTR),
+          mEditSnippetGroupAction(Q_NULLPTR),
+          mDeleteSnippetGroupAction(Q_NULLPTR),
+          mInsertSnippetAction(Q_NULLPTR),
+          mParent(parent),
+          mDirty(false)
     {
     }
 
