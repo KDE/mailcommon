@@ -106,7 +106,7 @@ bool FilterActionAddTag::argsFromStringInteractive(const QString &argsStr, const
     if (mList.isEmpty()) {
         return needUpdate;
     }
-    const bool index = mList.contains(mParameter);
+    const bool index = mList.contains(QUrl(mParameter));
     if (!index) {
         QPointer<FilterActionMissingTagDialog> dlg = new FilterActionMissingTagDialog(mList, filterName, argsStr);
         if (dlg->exec()) {
@@ -120,10 +120,10 @@ bool FilterActionAddTag::argsFromStringInteractive(const QString &argsStr, const
 
 FilterAction::ReturnCode FilterActionAddTag::process(ItemContext &context, bool) const
 {
-    if (!mList.contains(mParameter)) {
+    if (!mList.contains(QUrl(mParameter))) {
         return ErrorButGoOn;
     }
-    context.item().setTag(Akonadi::Tag::fromUrl(mParameter));
+    context.item().setTag(Akonadi::Tag::fromUrl(QUrl(mParameter)));
     context.setNeedsFlagStore();
 
     return GoOn;
@@ -140,7 +140,7 @@ void FilterActionAddTag::argsFromString(const QString &argsStr)
         mParameter = argsStr;
         return;
     }
-    if (mList.contains(argsStr)) {
+    if (mList.contains(QUrl(argsStr))) {
         mParameter = argsStr;
         return;
     }

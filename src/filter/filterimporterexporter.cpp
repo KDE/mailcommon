@@ -348,7 +348,7 @@ void FilterImporterExporter::exportFilters(const QList<MailFilter *> &filters, c
 {
     QUrl saveUrl;
     if (fileName.isEmpty()) {
-        saveUrl = QFileDialog::getSaveFileUrl(d->mParent, i18n("Export Filters"), QDir::homePath());
+        saveUrl = QFileDialog::getSaveFileUrl(d->mParent, i18n("Export Filters"), QUrl::fromLocalFile(QDir::homePath()));
 
         if (saveUrl.isEmpty() ||
                 !MessageViewer::Util::checkOverwrite(saveUrl, d->mParent)) {
