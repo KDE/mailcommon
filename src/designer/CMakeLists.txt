@@ -4,6 +4,7 @@ if (Qt5Designer_FOUND)
     target_link_libraries(mailcommonwidgets
         KF5::MailCommon
         KF5::Libkdepim
+        KF5::I18n
     )
     if(NOT WIN32)
         # Since there are no libraries provided by this module,

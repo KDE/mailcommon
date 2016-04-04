@@ -209,6 +209,8 @@ PUBLIC
   KF5::MessageComposer
   KF5::PimCommon
 PRIVATE
+  KF5::TextWidgets
+  KF5::I18n
   KF5::Libkdepim
   KF5::MessageViewer
   KF5::MailImporter

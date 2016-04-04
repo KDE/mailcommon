@@ -6,6 +6,7 @@ target_link_libraries(filterimporterexportergui
   Qt5::Core
   Qt5::Gui
   KF5::MailCommon
+  KF5::I18n
 )
 
 set(invalidfilterdialoggui_SRCS invalidfilterdialoggui.cpp)
@@ -15,6 +16,7 @@ target_link_libraries(invalidfilterdialoggui
   Qt5::Core
   Qt5::Gui
   KF5::MailCommon
+  KF5::I18n
 )
 
 set(mndadvicedialoggui_SRCS mndadvicedialoggui.cpp)
@@ -24,6 +26,7 @@ target_link_libraries(mndadvicedialoggui
   Qt5::Core
   Qt5::Gui
   KF5::MailCommon
+  KF5::I18n
 )
 
 
@@ -34,4 +37,5 @@ target_link_libraries(kmfilterdialogtestgui
   Qt5::Core
   Qt5::Gui
   KF5::MailCommon
+  KF5::I18n
 )
