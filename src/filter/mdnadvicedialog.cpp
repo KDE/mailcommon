@@ -23,6 +23,7 @@
 #include <messagecore/messagehelpers.h>
 
 #include <MessageComposer/MessageFactory>
+#include <MessageComposer/Util>
 using MessageComposer::MessageFactory;
 
 #include <messageviewer/messageviewersettings.h>
@@ -228,10 +229,8 @@ QPair< bool, KMime::MDN::SendingMode > MDNAdviceHelper::checkAndSetMDNInfo(
     }
 
     // RFC 2298: An MDN MUST NOT be generated in response to an MDN.
-    if (MimeTreeParser::ObjectTreeParser::findType(msg.data(),
-            "message",
-            "disposition-notification",
-            true, true)) {
+    if (MessageComposer::Util::findTypeInMessage(msg.data(),
+            "message", "disposition-notification")) {
         mdnStateAttr->setMDNState(MailCommon::MDNStateAttribute::MDNIgnore);
     } else if (mode == 0) {   // ignore
         doSend = false;
