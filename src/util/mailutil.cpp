@@ -375,7 +375,7 @@ bool MailCommon::Util::foundMailer()
 
 MailCommon::ExpireCollectionAttribute *MailCommon::Util::expirationCollectionAttribute(const Akonadi::Collection &collection, bool &mustDeleteExpirationAttribute)
 {
-    MailCommon::ExpireCollectionAttribute *attr = 0;
+    MailCommon::ExpireCollectionAttribute *attr = Q_NULLPTR;
     if (collection.hasAttribute<MailCommon::ExpireCollectionAttribute>()) {
         attr = collection.attribute<MailCommon::ExpireCollectionAttribute>();
         mustDeleteExpirationAttribute = false;
