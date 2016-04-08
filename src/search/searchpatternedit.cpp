@@ -403,6 +403,7 @@ void SearchRuleWidget::initFieldList(SearchPatternEdit::SearchPatternEditOptions
     mFilterFieldList.append(QStringLiteral("X-Loop"));
     mFilterFieldList.append(QStringLiteral("X-Mailing-List"));
     mFilterFieldList.append(QStringLiteral("X-Spam-Flag"));
+    mFilterFieldList.append(QStringLiteral("X-Spam-Status"));
 }
 
 void SearchRuleWidget::slotRuleFieldChanged(const QString &field)
