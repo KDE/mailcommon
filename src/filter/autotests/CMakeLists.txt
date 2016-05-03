@@ -1,10 +1,20 @@
+set(mailcommon_filter_test_LIBS Qt5::Test Qt5::Gui KF5::AkonadiCore KF5::AkonadiMime
+                                KF5::Libkdepim KF5::MailCommon KF5::PimCommon Phonon::phonon4qt5
+                                KF5::KIOWidgets KF5::IconThemes KF5::TemplateParser
+                                KF5::MailTransport
+)
+
 macro(add_mailcommon_filter_test _name)
     ecm_add_test(${ARGN} 
         TEST_NAME ${_name}
         NAME_PREFIX "mailcommon-filter-"
-        LINK_LIBRARIES Qt5::Test Qt5::Gui KF5::AkonadiCore KF5::AkonadiMime
-                       KF5::Libkdepim KF5::MailCommon KF5::PimCommon Phonon::phonon4qt5 KF5::KIOWidgets KF5::IconThemes KF5::TemplateParser KF5::MailTransport 
+        LINK_LIBRARIES ${mailcommon_filter_test_LIBS}
     )
+endmacro()
+
+macro(add_mailcommon_filter_akonadi_test _name _sources)
+    set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR})
+    add_akonadi_isolated_test_advanced(${_name} "${ARGN}" "${mailcommon_filter_test_LIBS}")
 endmacro()
 
 set(filter_common_SRCS)
@@ -87,7 +97,7 @@ add_mailcommon_filter_test(filteractionwithaddresstest
     ${filter_common_SRCS}
 )
 
-add_mailcommon_filter_test(filteractionaddtoaddressbooktest
+add_mailcommon_filter_akonadi_test(filteractionaddtoaddressbooktest
     filteractionaddtoaddressbooktest.cpp
     ../filteractions/filteractionaddtoaddressbook.cpp
     ../filteractions/filteractionwithstringlist.cpp
