@@ -18,7 +18,6 @@ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMQtDeclareLoggingCategory)
 include(ECMAddTests)
 
-
 set(PIM_VERSION "5.2.54")
 set(MAILCOMMON_LIB_VERSION ${PIM_VERSION})
 set(KF5_VERSION "5.19.0")
