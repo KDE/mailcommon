@@ -214,6 +214,7 @@ void AccountConfigOrderDialog::init()
             }
         }
     }
+    instanceList.sort(Qt::CaseInsensitive);
     const int numberOfList(listOrderAccount.count());
     for (int i = 0; i < numberOfList; ++i) {
         instanceList.removeOne(listOrderAccount.at(i));
