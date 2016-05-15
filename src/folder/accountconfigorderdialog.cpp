@@ -232,8 +232,9 @@ void AccountConfigOrderDialog::init()
             d->mListAccount->addItem(item);
         }
     }
-    d->mEnableAccountOrder->setChecked(MailCommon::MailCommonSettings::self()->enableAccountOrder());
-    slotEnableAccountOrder(MailCommon::MailCommonSettings::self()->enableAccountOrder());
+    const bool enabled = MailCommon::MailCommonSettings::self()->enableAccountOrder();
+    d->mEnableAccountOrder->setChecked(enabled);
+    slotEnableAccountOrder(enabled);
 }
 
 void AccountConfigOrderDialog::slotOk()
