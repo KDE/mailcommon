@@ -64,6 +64,7 @@ QSharedPointer<FolderCollection> FolderCollection::forCollection(
 
 FolderCollection::FolderCollection(const Akonadi::Collection &col, bool writeconfig)
     : mCollection(col),
+      mFormatMessage(MessageViewer::Viewer::Unknown),
       mPutRepliesInSameFolder(false),
       mHideInSelectionDialog(false),
       mWriteConfig(writeconfig)
@@ -74,6 +75,16 @@ FolderCollection::FolderCollection(const Akonadi::Collection &col, bool writecon
     readConfig();
     connect(KernelIf->identityManager(), SIGNAL(changed()),
             this, SLOT(slotIdentitiesChanged()));
+}
+
+MessageViewer::Viewer::DisplayFormatMessage FolderCollection::formatMessage() const
+{
+    return mFormatMessage;
+}
+
+void FolderCollection::setFormatMessage(MessageViewer::Viewer::DisplayFormatMessage formatMessage)
+{
+    mFormatMessage = formatMessage;
 }
 
 FolderCollection::~FolderCollection()
@@ -205,6 +216,9 @@ void FolderCollection::readConfig()
         QKeySequence sc(shortcut);
         setShortcut(sc);
     }
+
+    mFormatMessage = static_cast<MessageViewer::Viewer::DisplayFormatMessage>(configGroup.readEntry("displayFormatOverride",
+                                                                                              static_cast<int>(MessageViewer::Viewer::UseGlobalSetting)));
 }
 
 bool FolderCollection::isValid() const
@@ -254,6 +268,14 @@ void FolderCollection::writeConfig() const
         configGroup.writeEntry("Shortcut", mShortcut.toString());
     } else {
         configGroup.deleteEntry("Shortcut");
+    }
+
+    if (mFormatMessage != MessageViewer::Viewer::Unknown) {
+        if (mFormatMessage == MessageViewer::Viewer::UseGlobalSetting) {
+            configGroup.deleteEntry("displayFormatOverride");
+        } else {
+            configGroup.writeEntry("displayFormatOverride", static_cast<int>(mFormatMessage));
+        }
     }
 }
 
