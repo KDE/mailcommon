@@ -77,6 +77,14 @@ FolderCollection::FolderCollection(const Akonadi::Collection &col, bool writecon
             this, SLOT(slotIdentitiesChanged()));
 }
 
+FolderCollection::~FolderCollection()
+{
+    //qCDebug(MAILCOMMON_LOG)<<" FolderCollection::~FolderCollection"<<this;
+    if (mWriteConfig) {
+        writeConfig();
+    }
+}
+
 MessageViewer::Viewer::DisplayFormatMessage FolderCollection::formatMessage() const
 {
     return mFormatMessage;
@@ -85,14 +93,6 @@ MessageViewer::Viewer::DisplayFormatMessage FolderCollection::formatMessage() co
 void FolderCollection::setFormatMessage(MessageViewer::Viewer::DisplayFormatMessage formatMessage)
 {
     mFormatMessage = formatMessage;
-}
-
-FolderCollection::~FolderCollection()
-{
-    //qCDebug(MAILCOMMON_LOG)<<" FolderCollection::~FolderCollection"<<this;
-    if (mWriteConfig) {
-        writeConfig();
-    }
 }
 
 void FolderCollection::clearCache()
