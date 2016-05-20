@@ -19,6 +19,7 @@
 #define MAILCOMMON_FOLDERCOLLECTION_H
 
 #include "mailcommon_export.h"
+#include <MessageViewer/Viewer>
 
 #include <MessageCore/MailingList>
 using MessageCore::MailingList;
@@ -138,6 +139,9 @@ public:
     QString mailingListPostAddress() const;
 
     uint fallBackIdentity() const;
+    MessageViewer::Viewer::DisplayFormatMessage formatMessage() const;
+    void setFormatMessage(MessageViewer::Viewer::DisplayFormatMessage formatMessage);
+
 protected Q_SLOTS:
     void slotIdentitiesChanged();
 
@@ -153,6 +157,7 @@ private:
     bool mUseDefaultIdentity;
     uint mIdentity;
 
+    MessageViewer::Viewer::DisplayFormatMessage mFormatMessage;
     /** Should replies to messages in this folder be put in here? */
     bool mPutRepliesInSameFolder;
 
