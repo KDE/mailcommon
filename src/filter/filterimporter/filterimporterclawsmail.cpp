@@ -103,6 +103,7 @@ MailFilter *FilterImporterClawsMails::parseLine(const QString &line)
 
 QString FilterImporterClawsMails::extractActions(const QString &line, MailFilter *filter)
 {
+    Q_UNUSED(filter);
     return line;
 }
 
@@ -148,4 +149,3 @@ QString FilterImporterClawsMails::extractString(const QString &tmp, int &pos)
     qCDebug(MAILCOMMON_LOG) << " name " << name;
     return name;
 }
-

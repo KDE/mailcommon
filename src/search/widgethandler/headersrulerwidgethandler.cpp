@@ -132,7 +132,8 @@ SearchRule::Function HeadersRuleWidgetHandler::function(const QByteArray &field,
 QString HeadersRuleWidgetHandler::currentValue(const QStackedWidget *valueStack,
         SearchRule::Function func) const
 {
-    //in other cases of func it is a lineedit
+    Q_UNUSED(func);
+
     const KLineEdit *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
     if (lineEdit) {
@@ -299,4 +300,3 @@ bool HeadersRuleWidgetHandler::update(const QByteArray &field,
     }
     return true;
 }
-
