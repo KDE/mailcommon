@@ -286,6 +286,11 @@ void FolderCollection::setShortcut(const QKeySequence &sc)
     }
 }
 
+const QKeySequence &FolderCollection::shortcut() const
+{
+    return mShortcut;
+}
+
 void FolderCollection::setUseDefaultIdentity(bool useDefaultIdentity)
 {
     if (mUseDefaultIdentity != useDefaultIdentity) {
@@ -295,6 +300,11 @@ void FolderCollection::setUseDefaultIdentity(bool useDefaultIdentity)
         }
         KernelIf->syncConfig();
     }
+}
+
+bool FolderCollection::useDefaultIdentity() const
+{
+    return mUseDefaultIdentity;
 }
 
 void FolderCollection::setIdentity(uint identity)
@@ -360,6 +370,11 @@ void FolderCollection::setMailingListEnabled(bool enabled)
     }
 }
 
+bool FolderCollection::isMailingListEnabled() const
+{
+    return mMailingListEnabled;
+}
+
 void FolderCollection::setMailingList(const MailingList &mlist)
 {
     if (mMailingList == mlist) {
@@ -368,6 +383,31 @@ void FolderCollection::setMailingList(const MailingList &mlist)
 
     mMailingList = mlist;
     writeConfig();
+}
+
+MessageCore::MailingList FolderCollection::mailingList() const
+{
+    return mMailingList;
+}
+
+bool FolderCollection::putRepliesInSameFolder() const
+{
+    return mPutRepliesInSameFolder;
+}
+
+void FolderCollection::setPutRepliesInSameFolder(bool b)
+{
+    mPutRepliesInSameFolder = b;
+}
+
+bool FolderCollection::hideInSelectionDialog() const
+{
+    return mHideInSelectionDialog;
+}
+
+void FolderCollection::setHideInSelectionDialog(bool hide)
+{
+    mHideInSelectionDialog = hide;
 }
 
 }

@@ -77,20 +77,14 @@ public:
     Akonadi::CollectionStatistics statistics() const;
 
     void setShortcut(const QKeySequence &);
-    const QKeySequence &shortcut() const
-    {
-        return mShortcut;
-    }
+    const QKeySequence &shortcut() const;
 
     /**
      *  Get / set whether the default identity should be used instead of the
      *  identity specified by setIdentity().
      */
     void setUseDefaultIdentity(bool useDefaultIdentity);
-    bool useDefaultIdentity() const
-    {
-        return mUseDefaultIdentity;
-    }
+    bool useDefaultIdentity() const;
 
     void setIdentity(uint identity);
     uint identity() const;
@@ -99,42 +93,24 @@ public:
      * Returns true if this folder is associated with a mailing-list.
      */
     void setMailingListEnabled(bool enabled);
-    bool isMailingListEnabled() const
-    {
-        return mMailingListEnabled;
-    }
+    bool isMailingListEnabled() const;
 
     void setMailingList(const MailingList &mlist);
 
-    MailingList mailingList() const
-    {
-        return mMailingList;
-    }
+    MailingList mailingList() const;
 
     /**
      * Returns true if the replies to mails from this folder should be
      * put in the same folder.
      */
-    bool putRepliesInSameFolder() const
-    {
-        return mPutRepliesInSameFolder;
-    }
-    void setPutRepliesInSameFolder(bool b)
-    {
-        mPutRepliesInSameFolder = b;
-    }
+    bool putRepliesInSameFolder() const;
+    void setPutRepliesInSameFolder(bool b);
 
     /**
      * Returns true if this folder should be hidden from all folder selection dialogs
      */
-    bool hideInSelectionDialog() const
-    {
-        return mHideInSelectionDialog;
-    }
-    void setHideInSelectionDialog(bool hide)
-    {
-        mHideInSelectionDialog = hide;
-    }
+    bool hideInSelectionDialog() const;
+    void setHideInSelectionDialog(bool hide);
 
     QString mailingListPostAddress() const;
 
