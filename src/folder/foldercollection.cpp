@@ -101,6 +101,16 @@ void FolderCollection::clearCache()
     fcMap.clear();
 }
 
+void FolderCollection::resetHtmlFormat()
+{
+    QMutexLocker lock(&mapMutex);
+    QMap<Collection::Id, QSharedPointer<FolderCollection> >::const_iterator i = fcMap.constBegin();
+    while (i != fcMap.constEnd()) {
+        i.value()->setFormatMessage(MessageViewer::Viewer::UseGlobalSetting);
+        ++i;
+    }
+}
+
 bool FolderCollection::isWriteConfig() const
 {
     return mWriteConfig;

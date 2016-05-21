@@ -49,6 +49,7 @@ public:
 
     static QString configGroupName(const Akonadi::Collection &col);
     static void clearCache();
+    static void resetHtmlFormat();
 
     bool isWriteConfig() const;
     void setWriteConfig(bool writeConfig);
