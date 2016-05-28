@@ -16,8 +16,10 @@
 */
 
 #include "searchruletest.h"
-#include <qtest.h>
 #include "../search/searchrule/searchrule.h"
+
+#include <qtest.h>
+
 class TestSearchRule : public MailCommon::SearchRule
 {
 public:
@@ -25,17 +27,19 @@ public:
                    const QString &contents = QString())
         : MailCommon::SearchRule(field, function, contents)
     {
-
     }
 
     bool matches(const Akonadi::Item &item) const
     {
+        Q_UNUSED(item);
         return false;
     }
+
     bool isEmpty() const
     {
         return false;
     }
+
     MailCommon::SearchRule::RequiredPart requiredPart() const
     {
         return MailCommon::SearchRule::CompleteMessage;
@@ -45,7 +49,6 @@ public:
 SearchRuleTest::SearchRuleTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void SearchRuleTest::shouldHaveDefaultValue()
