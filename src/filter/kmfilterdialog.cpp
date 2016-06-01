@@ -89,17 +89,17 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
       mIgnoreFilterUpdates(true)
 {
     setWindowTitle(i18n("Filter Rules"));
-    buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel | QDialogButtonBox::Help | QDialogButtonBox::Apply);
+    buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel | QDialogButtonBox::Help | QDialogButtonBox::Apply, this);
     QVBoxLayout *mainLayout = new QVBoxLayout;
     setLayout(mainLayout);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
-    QPushButton *user1Button = new QPushButton;
+    QPushButton *user1Button = new QPushButton(this);
     buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
-    QPushButton *user2Button = new QPushButton;
+    QPushButton *user2Button = new QPushButton(this);
     buttonBox->addButton(user2Button, QDialogButtonBox::ActionRole);
-    QPushButton *user3Button = new QPushButton;
+    QPushButton *user3Button = new QPushButton(this);
     buttonBox->addButton(user3Button, QDialogButtonBox::ActionRole);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &KMFilterDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
@@ -179,9 +179,9 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     splitter->setChildrenCollapsible(false);
     topLayout->addWidget(splitter);
 
-    mFilterList = new KMFilterListBox(i18n("Available Filters"));
+    mFilterList = new KMFilterListBox(i18n("Available Filters"), this);
     splitter->addWidget(mFilterList);
-    QTabWidget *tabWidget = new QTabWidget;
+    QTabWidget *tabWidget = new QTabWidget(this);
     splitter->addWidget(tabWidget);
 
     QWidget *page1 = new QWidget(tabWidget);
@@ -309,14 +309,14 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     vbl2->addWidget(mAdvOptsGroup, 0, Qt::AlignTop);
 
     QHBoxLayout *applySpecificFiltersLayout = new QHBoxLayout;
-    QLabel *lab = new QLabel(i18n("Run selected filter(s) on: "));
+    QLabel *lab = new QLabel(i18n("Run selected filter(s) on: "), this);
     applySpecificFiltersLayout->addWidget(lab);
-    mFolderRequester = new MailCommon::FolderRequester;
+    mFolderRequester = new MailCommon::FolderRequester(this);
     mFolderRequester->setNotAllowToCreateNewFolder(true);
     applySpecificFiltersLayout->addWidget(mFolderRequester);
     connect(mFolderRequester, &FolderRequester::folderChanged,
             this, &KMFilterDialog::slotFolderChanged);
-    mRunNow = new QPushButton(i18n("Run Now"));
+    mRunNow = new QPushButton(i18n("Run Now"), this);
     mRunNow->setEnabled(false);
     applySpecificFiltersLayout->addWidget(mRunNow);
     connect(mRunNow, &QPushButton::clicked, this, &KMFilterDialog::slotRunFilters);
