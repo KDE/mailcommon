@@ -285,7 +285,7 @@ QString SearchPattern::asString() const
     QList<SearchRule::Ptr>::const_iterator it;
     QList<SearchRule::Ptr>::const_iterator endIt = constEnd();
     for (it = constBegin(); it != endIt; ++it) {
-        result += "\n\t" + FilterLog::recode((*it)->asString());
+        result += QStringLiteral("\n\t") + FilterLog::recode((*it)->asString());
     }
 
     return result;
