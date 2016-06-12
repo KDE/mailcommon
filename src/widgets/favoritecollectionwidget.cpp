@@ -131,7 +131,7 @@ void FavoriteCollectionWidget::createMenu(KActionCollection *ac)
 
 void FavoriteCollectionWidget::slotChangeMode(bool)
 {
-    QAction *act = dynamic_cast< QAction * >(sender());
+    QAction *act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }
@@ -166,7 +166,7 @@ void FavoriteCollectionWidget::changeViewMode(QListView::ViewMode mode)
 
 void FavoriteCollectionWidget::slotChangeIconSize(bool)
 {
-    QAction *act = dynamic_cast< QAction * >(sender());
+    QAction *act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }
