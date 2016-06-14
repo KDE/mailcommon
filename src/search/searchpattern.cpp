@@ -264,7 +264,7 @@ void SearchPattern::init()
 {
     clear();
     mOperator = OpAnd;
-    mName = '<' + i18nc("name used for a virgin filter", "unknown") + '>';
+    mName = QLatin1Char('<') + i18nc("name used for a virgin filter", "unknown") + QLatin1Char('>');
 }
 
 QString SearchPattern::asString() const
