@@ -101,6 +101,10 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     if (isEmpty()) {
         return false;
     }
+    if (!item.hasPayload<KMime::Message::Ptr>()) {
+        return false;
+    }
+
     const KMime::Message::Ptr msg = item.payload<KMime::Message::Ptr>();
     Q_ASSERT(msg.data());
 
