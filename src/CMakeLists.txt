@@ -440,7 +440,6 @@ install(FILES
     ${MailCommon_Camelcasecollectionpageattributes_HEADERS}
     ${MailCommon_Camelcasefilterimporter_HEADERS}
     ${MailCommon_Camelcasesnippets_HEADERS}
-    ${MailCommon_Camelcasekernel_HEADERS}
     ${MailCommon_Camelcasewidgets_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/MailCommon
     COMPONENT Devel
@@ -465,7 +464,6 @@ install(FILES
     ${MailCommon_collectionpageattributes_HEADERS}
     ${MailCommon_filterimporter_HEADERS}
     ${MailCommon_snippets_HEADERS}
-    ${MailCommon_kernel_HEADERS}
     ${MailCommon_widgets_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/mailcommon
     COMPONENT Devel
