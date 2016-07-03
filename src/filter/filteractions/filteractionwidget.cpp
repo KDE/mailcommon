@@ -40,7 +40,7 @@ using namespace MailCommon;
 //
 //=============================================================================
 
-class FilterActionWidget::Private
+class Q_DECL_HIDDEN FilterActionWidget::Private
 {
 public:
     Private(FilterActionWidget *qq)
