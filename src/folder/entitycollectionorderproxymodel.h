@@ -20,11 +20,25 @@
 #define MAILCOMMON_ENTITYCOLLECTIONORDERPROXYMODEL_H
 
 #include <EntityOrderProxyModel>
+#include "mailcommon_export.h"
 
 namespace MailCommon
 {
 
-class EntityCollectionOrderProxyModel : public Akonadi::EntityOrderProxyModel
+/**
+ * @brief The EntityCollectionOrderProxyModel class implements ordering of mail collections.
+ * It supports two modes: manual sorting and automatic sorting.
+ *
+ * The manual sorting (which has to be activated explicitly by the user) allows the user to
+ * reorder the collections (both toplevel resources and folders within the resource) by drag-n-drop,
+ * and is implemented by the base class EntityOrderProxyModel.
+ *
+ * The automatic sorting is implemented by this class itself, and consists of assigning ranks
+ * to various special folders (outbox, drafts, sent etc.) and then having the other folders sorted
+ * by name (or another column), i.e. the default behaviour from QSortFilterProxyModel.
+ * In that mode, the order of the toplevel folders can be controlled with setTopLevelOrder().
+ */
+class MAILCOMMON_EXPORT EntityCollectionOrderProxyModel : public Akonadi::EntityOrderProxyModel
 {
     Q_OBJECT
 public:
