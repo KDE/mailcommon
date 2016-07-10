@@ -39,8 +39,9 @@ public:
     int collectionRank(const Akonadi::Collection &collection)
     {
         const Akonadi::Collection::Id id = collection.id();
-        if (collectionRanks.contains(id)) {
-            return collectionRanks[id];
+        const int cachedRank = collectionRanks.value(id, -1);
+        if (cachedRank != -1) {
+            return cachedRank;
         }
 
         int rank = 100;
