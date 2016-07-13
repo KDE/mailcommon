@@ -16,7 +16,7 @@
 */
 
 #include "kmfilterdialogtestgui.h"
-#include "dummykernel.h"
+#include "../../../autotests/dummykernel.h"
 #include "../kernel/mailkernel.h"
 #include "../kmfilterdialog.h"
 
