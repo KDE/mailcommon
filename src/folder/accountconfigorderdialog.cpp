@@ -66,8 +66,8 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(QWidget *parent)
 {
     setWindowTitle(i18n("Edit Accounts Order"));
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
@@ -79,6 +79,7 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(QWidget *parent)
     mainLayout->addWidget(buttonBox);
 
     QVBoxLayout *vbox = new QVBoxLayout;
+    vbox->setMargin(0);
     page->setLayout(vbox);
 
     d->mEnableAccountOrder = new QCheckBox(i18n("Use custom order"));
