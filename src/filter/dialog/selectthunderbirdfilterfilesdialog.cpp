@@ -32,7 +32,7 @@ SelectThunderbirdFilterFilesDialog::SelectThunderbirdFilterFilesDialog(const QSt
     : QDialog(parent)
 {
     setWindowTitle(i18n("Select thunderbird filter files"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QVBoxLayout *mainLayout = new QVBoxLayout;
     setLayout(mainLayout);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
