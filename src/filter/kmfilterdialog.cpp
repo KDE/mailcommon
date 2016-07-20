@@ -36,6 +36,7 @@ using MailCommon::FilterImporterExporter;
 #include "util/mailutil.h"
 #include "search/searchpatternedit.h"
 #include "filterconverter/filterconverttosieve.h"
+#include <PimCommon/PimUtil>
 
 #include <ItemFetchJob>
 
@@ -780,6 +781,6 @@ void KMFilterDialog::slotExportAsSieveScript()
 
 void KMFilterDialog::slotHelp()
 {
-    KHelpClient::invokeHelp(QStringLiteral("filters"), QStringLiteral("kmail"));
+    PimCommon::Util::invokeHelp(QStringLiteral("kmail/filters.html"));
 }
 
