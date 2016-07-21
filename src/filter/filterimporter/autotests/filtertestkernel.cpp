@@ -92,6 +92,12 @@ bool FilterTestKernel::showPopupAfterDnD()
     return false;
 }
 
+void FilterTestKernel::expunge(Akonadi::Collection::Id col, bool sync)
+{
+    Q_UNUSED(col);
+    Q_UNUSED(sync);
+}
+
 qreal FilterTestKernel::closeToQuotaThreshold()
 {
     return 80;

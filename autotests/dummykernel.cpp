@@ -76,6 +76,12 @@ bool DummyKernel::showPopupAfterDnD()
     return false;
 }
 
+void DummyKernel::expunge(Akonadi::Collection::Id col, bool sync)
+{
+    Q_UNUSED(col);
+    Q_UNUSED(sync);
+}
+
 qreal DummyKernel::closeToQuotaThreshold()
 {
     return 80;
