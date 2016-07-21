@@ -67,6 +67,7 @@ public:
     virtual Akonadi::ChangeRecorder *folderCollectionMonitor() const = 0;
     virtual void updateSystemTray() = 0;
     virtual MessageComposer::MessageSender *msgSender() = 0;
+    virtual void expunge(Akonadi::Collection::Id col, bool sync) = 0;
 
     virtual ~IKernel()
     {
