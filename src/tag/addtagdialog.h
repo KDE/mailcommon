@@ -41,12 +41,10 @@ public:
     QString label() const;
     Akonadi::Tag tag() const;
 
-private Q_SLOTS:
+private:
     void slotSave();
     void slotTagNameChanged(const QString &text);
     void onTagCreated(KJob *job);
-
-private:
     AddTagDialogPrivate *const d;
 };
 }

@@ -50,14 +50,12 @@ public:
     void expireAllFolders(bool immediate, QAbstractItemModel *collectionModel);
     void expunge(const Akonadi::Collection &, bool sync = false);
 
-private Q_SLOTS:
-    void slotDeleteJob(KJob *job);
-
 protected:
     void expireAllCollection(const QAbstractItemModel *model, bool immediate,
                              const QModelIndex &parentIndex = QModelIndex());
 
 private:
+    void slotDeleteJob(KJob *job);
     FolderCollectionMonitorPrivate *const d;
 };
 

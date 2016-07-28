@@ -82,14 +82,12 @@ Q_SIGNALS:
     void backupDone(const QString &);
     void error(const QString &);
 
-private Q_SLOTS:
+private:
     void itemFetchJobResult(KJob *job);
     void cancelJob();
     void archiveNextFolder();
     void onArchiveNextFolderDone(KJob *job);
     void archiveNextMessage();
-
-private:
     bool queueFolders(const Akonadi::Collection &root);
     void processMessage(const Akonadi::Item &item);
     QString pathForCollection(const Akonadi::Collection &collection) const;

@@ -115,14 +115,12 @@ public:
     void pause();
     void resume();
 
-private Q_SLOTS:
+private:
     /// Called by a timer to run the next job
     void slotRunNextJob();
 
     /// Called when the current job terminates
     void slotJobFinished();
-
-private:
     void restartTimer();
     void interruptCurrentTask();
     void runTaskNow(ScheduledTask *task);

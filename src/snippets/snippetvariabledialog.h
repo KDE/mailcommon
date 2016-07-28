@@ -43,10 +43,8 @@ public:
     QString variableValue() const;
     bool saveVariableIsChecked() const;
 
-private Q_SLOTS:
-    void slotAccepted();
-
 private:
+    void slotAccepted();
     QString mVariableName;
     QMap<QString, QString> *mVariables;
     KPIMTextEdit::PlainTextEditorWidget *mVariableValueText;

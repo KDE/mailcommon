@@ -50,13 +50,12 @@ public:
     void execute() Q_DECL_OVERRIDE;
     void kill() Q_DECL_OVERRIDE;
 
-private Q_SLOTS:
+
+private:
     void slotDoWork();
     void slotExpireDone(KJob *job);
     void slotMoveDone(KJob *job);
     void itemFetchResult(KJob *job);
-
-private:
     void done();
 
 private:

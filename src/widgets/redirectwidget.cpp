@@ -37,11 +37,10 @@ using namespace MailCommon;
 RedirectWidget::RedirectWidget(QWidget *parent)
     : QWidget(parent)
 {
-    QHBoxLayout *hbox = new QHBoxLayout;
+    QHBoxLayout *hbox = new QHBoxLayout(this);
     hbox->setSpacing(0);
     hbox->setMargin(0);
     hbox->setAlignment(Qt::AlignRight);
-    setLayout(hbox);
 
     mEdit = new MessageComposer::ComposerLineEdit(true);
     mEdit->setRecentAddressConfig(KernelIf->config().data());
@@ -49,7 +48,7 @@ RedirectWidget::RedirectWidget(QWidget *parent)
     mEdit->setClearButtonShown(true);
     hbox->addWidget(mEdit);
 
-    QPushButton *BtnTo = new QPushButton();
+    QPushButton *BtnTo = new QPushButton(this);
     BtnTo->setIcon(QIcon::fromTheme(QStringLiteral("help-contents")));
     BtnTo->setIconSize(QSize(KIconLoader::SizeSmall, KIconLoader::SizeSmall));
     BtnTo->setToolTip(i18n("Use the Address-Selection Dialog"));

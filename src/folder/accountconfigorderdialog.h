@@ -32,13 +32,12 @@ public:
     explicit AccountConfigOrderDialog(QWidget *parent);
     ~AccountConfigOrderDialog();
 
-private Q_SLOTS:
+private:
     void slotOk();
     void slotMoveUp();
     void slotMoveDown();
     void slotEnableControls();
     void slotEnableAccountOrder(bool state);
-private:
     enum Type {
         IdentifierAccount = Qt::UserRole + 1
     };

@@ -67,10 +67,8 @@ Q_SIGNALS:
     void changed();
     void iconNameChanged(const QString &);
 
-private Q_SLOTS:
-    void slotEmitChangeCheck();
-
 private:
+    void slotEmitChangeCheck();
     TagWidgetPrivate *const d;
 };
 }

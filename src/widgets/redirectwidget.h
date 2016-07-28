@@ -44,10 +44,8 @@ public:
 Q_SIGNALS:
     void addressChanged(const QString &);
 
-private Q_SLOTS:
-    void slotAddressSelection();
-
 private:
+    void slotAddressSelection();
     MessageComposer::ComposerLineEdit *mEdit;
     QString mResendStr;
 };

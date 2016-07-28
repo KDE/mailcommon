@@ -76,12 +76,10 @@ Q_SIGNALS:
      */
     void textChanged(const QString &);
 
-private Q_SLOTS:
+private:
     void playSound();
     void openSoundDialog(KUrlRequester *);
     void slotUrlChanged(const QString &);
-
-private:
     KUrlRequester *m_urlRequester;
     QPushButton *m_playButton;
 };

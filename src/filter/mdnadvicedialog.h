@@ -86,12 +86,10 @@ public:
 
     MessageComposer::MDNAdvice result() const;
 
-private Q_SLOTS:
+private:
     void slotUser1Clicked();
     void slotUser2Clicked();
     void slotYesClicked();
-
-private:
     MessageComposer::MDNAdvice m_result;
 
 protected:
