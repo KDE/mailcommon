@@ -90,9 +90,9 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
       mIgnoreFilterUpdates(true)
 {
     setWindowTitle(i18n("Filter Rules"));
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+
     buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel | QDialogButtonBox::Help | QDialogButtonBox::Apply, this);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
@@ -172,6 +172,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     mainLayout->addWidget(w);
     mainLayout->addWidget(buttonBox);
     QVBoxLayout *topVLayout = new QVBoxLayout(w);
+    topVLayout->setMargin(0);
     QHBoxLayout *topLayout = new QHBoxLayout;
     topVLayout->addLayout(topLayout);
     topLayout->setMargin(0);
