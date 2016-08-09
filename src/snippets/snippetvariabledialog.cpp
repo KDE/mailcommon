@@ -39,30 +39,16 @@ SnippetVariableDialog::SnippetVariableDialog(const QString &variableName,
     : QDialog(parent), mVariableName(variableName), mVariables(variables)
 {
     setWindowTitle(i18n("Enter Values for Variables"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
-    QWidget *mainWidget = new QWidget(this);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
-    mainLayout->addWidget(mainWidget);
-    QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
-    okButton->setDefault(true);
-    okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
-    connect(buttonBox, &QDialogButtonBox::accepted, this, &SnippetVariableDialog::slotAccepted);
-    connect(buttonBox, &QDialogButtonBox::rejected, this, &SnippetVariableDialog::reject);
-    mainLayout->addWidget(buttonBox);
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
-    QVBoxLayout *layout = new QVBoxLayout(mainWidget);
+    QLabel *label = new QLabel(i18n("Enter the replacement values for '%1':", variableName), this);
+    mainLayout->addWidget(label);
 
-    QLabel *label = new QLabel;
-    label->setText(i18n("Enter the replacement values for '%1':", variableName));
-    layout->addWidget(label);
+    mVariableValueText = new KPIMTextEdit::PlainTextEditorWidget(this);
+    mainLayout->addWidget(mVariableValueText);
 
-    mVariableValueText = new KPIMTextEdit::PlainTextEditorWidget;
-    layout->addWidget(mVariableValueText);
-
-    mSaveVariable = new QCheckBox;
+    mSaveVariable = new QCheckBox(i18n("Make value &default"), this);
     mSaveVariable->setChecked(false);
-    mSaveVariable->setText(i18n("Make value &default"));
     mSaveVariable->setToolTip(
         i18nc("@info:tooltip",
               "Enable this to save the value entered to the right "
@@ -72,14 +58,22 @@ SnippetVariableDialog::SnippetVariableDialog(const QString &variableName,
               "If you enable this option, the value entered to the right will be saved. "
               "If you use the same variable later, even in another snippet, the value entered "
               "to the right will be the default value for that variable."));
-    layout->addWidget(mSaveVariable);
+    mainLayout->addWidget(mSaveVariable);
 
     if (mVariables->contains(variableName)) {
         mSaveVariable->setChecked(true);
         mVariableValueText->setPlainText(mVariables->value(variableName));
     }
-
     mVariableValueText->setFocus();
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
+    okButton->setDefault(true);
+    okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &SnippetVariableDialog::slotAccepted);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &SnippetVariableDialog::reject);
+
+    mainLayout->addWidget(buttonBox);
 }
 
 QString SnippetVariableDialog::variableValue() const
