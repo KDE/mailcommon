@@ -111,7 +111,7 @@ Akonadi::Tag Tag::saveToAkonadi(Tag::SaveFlags saveFlags) const
     return tag;
 }
 
-bool Tag::compare(Tag::Ptr &tag1, Tag::Ptr &tag2)
+bool Tag::compare(const Tag::Ptr &tag1, const Tag::Ptr &tag2)
 {
     if (tag1->priority < tag2->priority) {
         return true;
@@ -122,7 +122,7 @@ bool Tag::compare(Tag::Ptr &tag1, Tag::Ptr &tag2)
     }
 }
 
-bool Tag::compareName(Tag::Ptr &tag1, Tag::Ptr &tag2)
+bool Tag::compareName(const Tag::Ptr &tag1, const Tag::Ptr &tag2)
 {
     return (tag1->tagName < tag2->tagName);
 }
