@@ -59,9 +59,9 @@ public:
     Akonadi::Tag saveToAkonadi(SaveFlags saveFlags = SaveFlags(TextColor | BackgroundColor | Font)) const;
 
     // Compare, based on priority
-    static bool compare(Ptr &tag1, Ptr &tag2);
+    static bool compare(const Ptr &tag1, const Ptr &tag2);
     // Compare, based on name
-    static bool compareName(Ptr &tag1, Ptr &tag2);
+    static bool compareName(const Ptr &tag1, const Ptr &tag2);
 
     qint64 id() const;
     QString name() const;
