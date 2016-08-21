@@ -41,7 +41,7 @@ KMFilterAccountList::KMFilterAccountList(QWidget *parent)
     setRootIsDecorated(false);
     setSortingEnabled(true);
     sortByColumn(0, Qt::AscendingOrder);
-    header()->setMovable(false);
+    header()->setSectionsMovable(false);
 }
 
 KMFilterAccountList::~KMFilterAccountList()
