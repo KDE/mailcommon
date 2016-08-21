@@ -60,7 +60,7 @@ class FolderTreeWidgetTest : public QObject
     Q_OBJECT
 public:
 
-private slots:
+private Q_SLOTS:
     void initTestCase()
     {
         AkonadiTest::checkTestIsIsolated();
