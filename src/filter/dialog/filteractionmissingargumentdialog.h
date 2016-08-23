@@ -101,21 +101,5 @@ private:
     KIdentityManagement::IdentityCombo *mComboBoxIdentity;
 };
 
-class FilterActionMissingTransportDialog : public QDialog
-{
-    Q_OBJECT
-public:
-    explicit FilterActionMissingTransportDialog(const QString &filtername,
-            QWidget *parent = Q_NULLPTR);
-    ~FilterActionMissingTransportDialog();
-    int selectedTransport() const;
-
-private:
-    void writeConfig();
-    void readConfig();
-    MailTransport::TransportComboBox *mComboBoxTransport;
-};
-
-
 #endif /* FILTERACTIONMISSINGARGUMENTDIALOG_H */
 
