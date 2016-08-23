@@ -38,10 +38,19 @@ FilterActionMissingTransportDialog::FilterActionMissingTransportDialog(const QSt
     setModal(true);
     setWindowTitle(i18n("Select Transport"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
-    QWidget *mainWidget = new QWidget(this);
-    mainLayout->addWidget(mainWidget);
 
+    QLabel *label = new QLabel(this);
+    label->setObjectName(QStringLiteral("label"));
+    label->setText(i18n("Filter transport is missing. "
+                        "Please select a transport to use with filter \"%1\"",
+                        filtername));
+    label->setWordWrap(true);
+    mainLayout->addWidget(label);
+    mComboBoxTransport = new MailTransport::TransportComboBox(this);
+    mComboBoxTransport->setObjectName(QStringLiteral("comboboxtransport"));
+    mainLayout->addWidget(mComboBoxTransport);
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    buttonBox->setObjectName(QStringLiteral("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
@@ -49,15 +58,6 @@ FilterActionMissingTransportDialog::FilterActionMissingTransportDialog(const QSt
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingTransportDialog::reject);
     mainLayout->addWidget(buttonBox);
     okButton->setDefault(true);
-    QVBoxLayout *lay = new QVBoxLayout(mainWidget);
-    QLabel *label = new QLabel(this);
-    label->setText(i18n("Filter transport is missing. "
-                        "Please select a transport to use with filter \"%1\"",
-                        filtername));
-    label->setWordWrap(true);
-    lay->addWidget(label);
-    mComboBoxTransport = new MailTransport::TransportComboBox(this);
-    lay->addWidget(mComboBoxTransport);
     readConfig();
 }
 

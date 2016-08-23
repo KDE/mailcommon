@@ -39,3 +39,37 @@ target_link_libraries(kmfilterdialogtestgui
   KF5::MailCommon
   KF5::I18n
 )
+
+set(filteractionmissingsoundurldialogui_SRCS filteractionmissingsoundurldialogui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingsoundurldialog.cpp)
+add_executable(filteractionmissingsoundurldialogui ${filteractionmissingsoundurldialogui_SRCS})
+ecm_mark_as_test(filteractionmissingsoundurldialogui)
+target_link_libraries(filteractionmissingsoundurldialogui
+  Qt5::Core
+  Qt5::Gui
+  KF5::MailCommon
+  KF5::I18n
+  KF5::KIOWidgets
+)
+
+set(filteractionmissingtemplatedialoggui_SRCS filteractionmissingtemplatedialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtemplatedialog.cpp)
+add_executable(filteractionmissingtemplatedialoggui ${filteractionmissingtemplatedialoggui_SRCS})
+ecm_mark_as_test(filteractionmissingtemplatedialoggui)
+target_link_libraries(filteractionmissingtemplatedialoggui
+  Qt5::Core
+  Qt5::Gui
+  KF5::MailCommon
+  KF5::I18n
+  KF5::Completion
+)
+
+set(filteractionmissingtransportdialoggui_SRCS filteractionmissingtransportdialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtransportdialog.cpp)
+add_executable(filteractionmissingtransportdialoggui ${filteractionmissingtransportdialoggui_SRCS})
+ecm_mark_as_test(filteractionmissingtransportdialoggui)
+target_link_libraries(filteractionmissingtransportdialoggui
+  Qt5::Core
+  Qt5::Gui
+  KF5::MailCommon
+  KF5::I18n
+  KF5::Completion
+  KF5::MailTransport
+)
