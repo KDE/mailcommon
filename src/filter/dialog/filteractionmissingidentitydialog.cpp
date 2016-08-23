@@ -17,26 +17,31 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "filteractionmissingsoundurldialog.h"
 
+#include "filteractionmissingidentitydialog.h"
+#include "kernel/mailkernel.h"
+
+#include <KSharedConfig>
 #include <KConfigGroup>
 #include <KLocalizedString>
-#include <KUrlRequester>
-#include <KSharedConfig>
+
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QPushButton>
 #include <QVBoxLayout>
 
+#include <KIdentityManagement/IdentityCombo>
+
 using namespace MailCommon;
 
-FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QString &filtername,
-        const QString &argStr,
+FilterActionMissingIdentityDialog::FilterActionMissingIdentityDialog(const QString &filtername,
         QWidget *parent)
     : QDialog(parent)
 {
     setModal(true);
+    setWindowTitle(i18n("Select Identity"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
+
     QWidget *mainWidget = new QWidget(this);
     mainLayout->addWidget(mainWidget);
 
@@ -44,41 +49,30 @@ FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QStri
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
-    QPushButton *user1Button = new QPushButton;
-    buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
-    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingSoundUrlDialog::accept);
-    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingSoundUrlDialog::reject);
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingIdentityDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingIdentityDialog::reject);
     mainLayout->addWidget(buttonBox);
     okButton->setDefault(true);
-    setWindowTitle(i18n("Select sound"));
     QVBoxLayout *lay = new QVBoxLayout(mainWidget);
-    QLabel *label = new QLabel(i18n("Sound file was \"%1\".", argStr));
-    lay->addWidget(label);
-
-    label = new QLabel(this);
-    label->setText(i18n("Sound file is missing. "
-                        "Please select a sound to use with filter \"%1\"",
+    QLabel *label = new QLabel(this);
+    label->setText(i18n("Filter identity is missing. "
+                        "Please select an identity to use with filter \"%1\"",
                         filtername));
     label->setWordWrap(true);
     lay->addWidget(label);
-    mUrlWidget = new KUrlRequester(this);
-    lay->addWidget(mUrlWidget);
+    mComboBoxIdentity = new KIdentityManagement::IdentityCombo(KernelIf->identityManager(), this);
+    lay->addWidget(mComboBoxIdentity);
     readConfig();
 }
 
-FilterActionMissingSoundUrlDialog::~FilterActionMissingSoundUrlDialog()
+FilterActionMissingIdentityDialog::~FilterActionMissingIdentityDialog()
 {
     writeConfig();
 }
 
-QString FilterActionMissingSoundUrlDialog::soundUrl() const
+void FilterActionMissingIdentityDialog::readConfig()
 {
-    return mUrlWidget->url().path();
-}
-
-void FilterActionMissingSoundUrlDialog::readConfig()
-{
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingSoundUrlDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingMissingIdentity");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -86,9 +80,14 @@ void FilterActionMissingSoundUrlDialog::readConfig()
     }
 }
 
-void FilterActionMissingSoundUrlDialog::writeConfig()
+void FilterActionMissingIdentityDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingSoundUrlDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingMissingIdentity");
     group.writeEntry("Size", size());
+}
+
+int FilterActionMissingIdentityDialog::selectedIdentity() const
+{
+    return mComboBoxIdentity->currentIdentity();
 }
 

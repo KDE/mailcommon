@@ -67,6 +67,10 @@ set(libmailcommon_filter_dialog
     filter/dialog/filteractionmissingargumentdialog.cpp
     filter/dialog/filteractionmissingsoundurldialog.cpp
     filter/dialog/filteractionmissingtagdialog.cpp
+    filter/dialog/filteractionmissingaccountdialog.cpp
+    filter/dialog/filteractionmissingtemplatedialog.cpp
+    filter/dialog/filteractionmissingtransportdialog.cpp
+    filter/dialog/filteractionmissingidentitydialog.cpp
     )
 
 

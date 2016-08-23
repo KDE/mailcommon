@@ -27,7 +27,7 @@
 #include "filteractions/filteractiondict.h"
 #include "filtermanager.h"
 #include "filterlog.h"
-#include "dialog/filteractionmissingargumentdialog.h"
+#include "dialog/filteractionmissingaccountdialog.h"
 using MailCommon::FilterLog;
 
 #include "PimCommon/PimUtil"
@@ -470,8 +470,8 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
 
     mAccounts = config.readEntry("accounts-set", QStringList());
     if (!mAccounts.isEmpty() && interactive) {
-        if (!FilterActionMissingAccountDialog::allAccountExist(mAccounts)) {
-            FilterActionMissingAccountDialog *dlg = new FilterActionMissingAccountDialog(mAccounts, name());
+        if (!MailCommon::FilterActionMissingAccountDialog::allAccountExist(mAccounts)) {
+            MailCommon::FilterActionMissingAccountDialog *dlg = new MailCommon::FilterActionMissingAccountDialog(mAccounts, name());
             if (dlg->exec()) {
                 mAccounts = dlg->selectedAccount();
                 needUpdate = true;

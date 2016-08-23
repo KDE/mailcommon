@@ -19,7 +19,7 @@
 
 #include "filteractionsettransport.h"
 
-#include "filter/dialog/filteractionmissingargumentdialog.h"
+#include "filter/dialog/filteractionmissingtransportdialog.h"
 
 #include <KLocalizedString>
 #include <MailTransport/Transport>
@@ -57,7 +57,7 @@ bool FilterActionSetTransport::argsFromStringInteractive(const QString &argsStr,
     bool needUpdate = false;
     argsFromString(argsStr);
     if (!MailTransport::TransportManager::self()->transportById(mParameter, false)) {
-        QPointer<FilterActionMissingTransportDialog> dlg = new FilterActionMissingTransportDialog(filterName);
+        QPointer<MailCommon::FilterActionMissingTransportDialog> dlg = new MailCommon::FilterActionMissingTransportDialog(filterName);
         if (dlg->exec()) {
             mParameter = dlg->selectedTransport();
             needUpdate = true;

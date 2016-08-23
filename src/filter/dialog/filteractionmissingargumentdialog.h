@@ -86,68 +86,6 @@ private:
     QPushButton *mOkButton;
 };
 
-class FilterActionMissingIdentityDialog : public QDialog
-{
-    Q_OBJECT
-public:
-    explicit FilterActionMissingIdentityDialog(const QString &filtername,
-            QWidget *parent = Q_NULLPTR);
-    ~FilterActionMissingIdentityDialog();
-    int selectedIdentity() const;
-
-private:
-    void writeConfig();
-    void readConfig();
-    KIdentityManagement::IdentityCombo *mComboBoxIdentity;
-};
-
-class FilterActionMissingTransportDialog : public QDialog
-{
-    Q_OBJECT
-public:
-    explicit FilterActionMissingTransportDialog(const QString &filtername,
-            QWidget *parent = Q_NULLPTR);
-    ~FilterActionMissingTransportDialog();
-    int selectedTransport() const;
-
-private:
-    void writeConfig();
-    void readConfig();
-    MailTransport::TransportComboBox *mComboBoxTransport;
-};
-
-class FilterActionMissingTemplateDialog : public QDialog
-{
-    Q_OBJECT
-public:
-    explicit FilterActionMissingTemplateDialog(const QStringList &templateList,
-            const QString &filtername,
-            QWidget *parent = Q_NULLPTR);
-    ~FilterActionMissingTemplateDialog();
-    QString selectedTemplate() const;
-
-private:
-    void readConfig();
-    void writeConfig();
-    KComboBox *mComboBoxTemplate;
-};
-
-class FilterActionMissingAccountDialog : public QDialog
-{
-    Q_OBJECT
-public:
-    explicit FilterActionMissingAccountDialog(const QStringList &lstAccount,
-            const QString &filtername,
-            QWidget *parent = Q_NULLPTR);
-    ~FilterActionMissingAccountDialog();
-    QStringList selectedAccount() const;
-    static bool allAccountExist(const QStringList &lst);
-
-private:
-    void readConfig();
-    void writeConfig();
-    MailCommon::KMFilterAccountList *mAccountList;
-};
 
 #endif /* FILTERACTIONMISSINGARGUMENTDIALOG_H */
 
