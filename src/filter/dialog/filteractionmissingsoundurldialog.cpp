@@ -36,33 +36,35 @@ FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QStri
     : QDialog(parent)
 {
     setModal(true);
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
-    QWidget *mainWidget = new QWidget(this);
-    mainLayout->addWidget(mainWidget);
-
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
-    okButton->setDefault(true);
-    okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
-    QPushButton *user1Button = new QPushButton;
-    buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
-    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingSoundUrlDialog::accept);
-    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingSoundUrlDialog::reject);
-    mainLayout->addWidget(buttonBox);
-    okButton->setDefault(true);
     setWindowTitle(i18n("Select sound"));
-    QVBoxLayout *lay = new QVBoxLayout(mainWidget);
+
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+
     QLabel *label = new QLabel(i18n("Sound file was \"%1\".", argStr));
-    lay->addWidget(label);
+    label->setObjectName(QStringLiteral("oldlabel"));
+    mainLayout->addWidget(label);
 
     label = new QLabel(this);
+    label->setObjectName(QStringLiteral("selectlabel"));
     label->setText(i18n("Sound file is missing. "
                         "Please select a sound to use with filter \"%1\"",
                         filtername));
     label->setWordWrap(true);
-    lay->addWidget(label);
+    mainLayout->addWidget(label);
     mUrlWidget = new KUrlRequester(this);
-    lay->addWidget(mUrlWidget);
+    mUrlWidget->setObjectName(QStringLiteral("urlwidget"));
+    mainLayout->addWidget(mUrlWidget);
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    buttonBox->setObjectName(QStringLiteral("buttonbox"));
+    QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
+    okButton->setDefault(true);
+    okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingSoundUrlDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingSoundUrlDialog::reject);
+
+    mainLayout->addWidget(buttonBox);
+    okButton->setDefault(true);
     readConfig();
 }
 

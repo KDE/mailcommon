@@ -224,3 +224,18 @@ add_mailcommon_filter_test(mailfiltertest
     mailfiltertest.cpp
     ${filter_common_SRCS}
 )
+
+add_mailcommon_filter_test(filteractionmissingsoundurldialogtest
+    filteractionmissingsoundurldialogtest.cpp
+    ../dialog/filteractionmissingsoundurldialog.cpp
+    )
+
+add_mailcommon_filter_test(filteractionmissingtemplatedialogtest
+    filteractionmissingtemplatedialogtest.cpp
+    ../dialog/filteractionmissingtemplatedialog.cpp
+    )
+
+add_mailcommon_filter_test(filteractionmissingtransportdialogtest
+    filteractionmissingtransportdialogtest.cpp
+    ../dialog/filteractionmissingtransportdialog.cpp
+    )

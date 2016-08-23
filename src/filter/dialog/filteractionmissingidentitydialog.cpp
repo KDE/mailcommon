@@ -46,6 +46,8 @@ FilterActionMissingIdentityDialog::FilterActionMissingIdentityDialog(const QStri
     mainLayout->addWidget(mainWidget);
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    buttonBox->setObjectName(QStringLiteral("buttonbox"));
+
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
@@ -55,12 +57,14 @@ FilterActionMissingIdentityDialog::FilterActionMissingIdentityDialog(const QStri
     okButton->setDefault(true);
     QVBoxLayout *lay = new QVBoxLayout(mainWidget);
     QLabel *label = new QLabel(this);
+    label->setObjectName(QStringLiteral("label"));
     label->setText(i18n("Filter identity is missing. "
                         "Please select an identity to use with filter \"%1\"",
                         filtername));
     label->setWordWrap(true);
     lay->addWidget(label);
     mComboBoxIdentity = new KIdentityManagement::IdentityCombo(KernelIf->identityManager(), this);
+    mComboBoxIdentity->setObjectName(QStringLiteral("comboboxidentity"));
     lay->addWidget(mComboBoxIdentity);
     readConfig();
 }
