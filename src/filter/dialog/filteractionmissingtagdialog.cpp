@@ -20,9 +20,9 @@
 
 #include "filteractionmissingtagdialog.h"
 #include <KLocalizedString>
+#include <KSharedConfig>
 
 #include "tag/addtagdialog.h"
-#include "kernel/mailkernel.h"
 
 #include <KConfigGroup>
 #include <QDialogButtonBox>
@@ -89,7 +89,7 @@ FilterActionMissingTagDialog::~FilterActionMissingTagDialog()
 
 void FilterActionMissingTagDialog::readConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingTagDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingTagDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -99,7 +99,7 @@ void FilterActionMissingTagDialog::readConfig()
 
 void FilterActionMissingTagDialog::writeConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingTagDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingTagDialog");
     group.writeEntry("Size", size());
 }
 

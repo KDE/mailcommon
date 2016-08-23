@@ -18,11 +18,11 @@
 */
 
 #include "filteractionmissingsoundurldialog.h"
-#include "kernel/mailkernel.h"
 
 #include <KConfigGroup>
 #include <KLocalizedString>
 #include <KUrlRequester>
+#include <KSharedConfig>
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QPushButton>
@@ -78,7 +78,7 @@ QString FilterActionMissingSoundUrlDialog::soundUrl() const
 
 void FilterActionMissingSoundUrlDialog::readConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingSoundUrlDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingSoundUrlDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -88,7 +88,7 @@ void FilterActionMissingSoundUrlDialog::readConfig()
 
 void FilterActionMissingSoundUrlDialog::writeConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingSoundUrlDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingSoundUrlDialog");
     group.writeEntry("Size", size());
 }
 

@@ -20,11 +20,12 @@
 
 #include "filteractionmissingaccountdialog.h"
 #include "filter/kmfilteraccountlist.h"
-#include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 
 #include <KLocalizedString>
+#include <KSharedConfig>
 
+#include <KConfigGroup>
 #include <QDialogButtonBox>
 #include <QHBoxLayout>
 #include <QLabel>
@@ -71,7 +72,7 @@ FilterActionMissingAccountDialog::~FilterActionMissingAccountDialog()
 
 void FilterActionMissingAccountDialog::readConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingAccountDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingAccountDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -81,7 +82,7 @@ void FilterActionMissingAccountDialog::readConfig()
 
 void FilterActionMissingAccountDialog::writeConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingAccountDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingAccountDialog");
     group.writeEntry("Size", size());
 }
 

@@ -18,7 +18,8 @@
 */
 
 #include "filteractionmissingtemplatedialog.h"
-#include "kernel/mailkernel.h"
+
+#include <KSharedConfig>
 
 #include <KComboBox>
 #include <KConfigGroup>
@@ -69,7 +70,7 @@ FilterActionMissingTemplateDialog::~FilterActionMissingTemplateDialog()
 
 void FilterActionMissingTemplateDialog::readConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingTemplateDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingTemplateDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -79,7 +80,7 @@ void FilterActionMissingTemplateDialog::readConfig()
 
 void FilterActionMissingTemplateDialog::writeConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingTemplateDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingTemplateDialog");
     group.writeEntry("Size", size());
 }
 

@@ -21,7 +21,7 @@
 #include "filteractionmissingidentitydialog.h"
 #include "kernel/mailkernel.h"
 
-
+#include <KSharedConfig>
 #include <KConfigGroup>
 #include <KLocalizedString>
 
@@ -72,7 +72,7 @@ FilterActionMissingIdentityDialog::~FilterActionMissingIdentityDialog()
 
 void FilterActionMissingIdentityDialog::readConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingMissingIdentity");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingMissingIdentity");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -82,7 +82,7 @@ void FilterActionMissingIdentityDialog::readConfig()
 
 void FilterActionMissingIdentityDialog::writeConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingMissingIdentity");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingMissingIdentity");
     group.writeEntry("Size", size());
 }
 

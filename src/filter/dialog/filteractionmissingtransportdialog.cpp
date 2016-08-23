@@ -18,8 +18,8 @@
 */
 
 #include "filteractionmissingtransportdialog.h"
-#include "kernel/mailkernel.h"
 
+#include <KSharedConfig>
 #include <KLocalizedString>
 
 #include <QDialogButtonBox>
@@ -68,7 +68,7 @@ FilterActionMissingTransportDialog::~FilterActionMissingTransportDialog()
 
 void FilterActionMissingTransportDialog::readConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingTransportDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingTransportDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -78,7 +78,7 @@ void FilterActionMissingTransportDialog::readConfig()
 
 void FilterActionMissingTransportDialog::writeConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingTransportDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingTransportDialog");
     group.writeEntry("Size", size());
 }
 
