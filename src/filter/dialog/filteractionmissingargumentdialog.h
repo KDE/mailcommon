@@ -149,28 +149,5 @@ private:
     MailCommon::KMFilterAccountList *mAccountList;
 };
 
-class FilterActionMissingTagDialog : public QDialog
-{
-    Q_OBJECT
-public:
-    explicit FilterActionMissingTagDialog(const QMap<QUrl, QString> &templateList,
-                                          const QString &filtername,
-                                          const QString &argsStr,
-                                          QWidget *parent = Q_NULLPTR);
-    ~FilterActionMissingTagDialog();
-    QString selectedTag() const;
-
-private Q_SLOTS:
-    void slotAddTag();
-
-private:
-    void readConfig();
-    void writeConfig();
-
-    enum TypeData {
-        UrlData = Qt::UserRole + 1
-    };
-    QListWidget *mTagList;
-};
 #endif /* FILTERACTIONMISSINGARGUMENTDIALOG_H */
 

@@ -19,7 +19,7 @@
 
 #include "filteractionaddtag.h"
 #include "filter/filtermanager.h"
-#include "filter/dialog/filteractionmissingargumentdialog.h"
+#include "filter/dialog/filteractionmissingtagdialog.h"
 #include "PimCommon/MinimumComboBox"
 
 #include <QTextDocument>
@@ -108,7 +108,7 @@ bool FilterActionAddTag::argsFromStringInteractive(const QString &argsStr, const
     }
     const bool index = mList.contains(QUrl(mParameter));
     if (!index) {
-        QPointer<FilterActionMissingTagDialog> dlg = new FilterActionMissingTagDialog(mList, filterName, argsStr);
+        QPointer<MailCommon::FilterActionMissingTagDialog> dlg = new MailCommon::FilterActionMissingTagDialog(mList, filterName, argsStr);
         if (dlg->exec()) {
             mParameter = dlg->selectedTag();
             needUpdate = true;

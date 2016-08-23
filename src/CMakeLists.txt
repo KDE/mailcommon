@@ -66,6 +66,7 @@ set(libmailcommon_filter_dialog
     filter/dialog/selectthunderbirdfilterfileswidget.cpp
     filter/dialog/filteractionmissingargumentdialog.cpp
     filter/dialog/filteractionmissingsoundurldialog.cpp
+    filter/dialog/filteractionmissingtagdialog.cpp
     )
 
 
