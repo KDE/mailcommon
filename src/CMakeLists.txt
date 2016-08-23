@@ -68,6 +68,7 @@ set(libmailcommon_filter_dialog
     filter/dialog/filteractionmissingsoundurldialog.cpp
     filter/dialog/filteractionmissingtagdialog.cpp
     filter/dialog/filteractionmissingaccountdialog.cpp
+    filter/dialog/filteractionmissingtemplatedialog.cpp
     )
 
 

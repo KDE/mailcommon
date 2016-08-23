@@ -22,7 +22,7 @@
 
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
-#include "filter/dialog/filteractionmissingargumentdialog.h"
+#include "filter/dialog/filteractionmissingtemplatedialog.h"
 
 #include <PimCommon/MinimumComboBox>
 #include <MessageComposer/MessageFactory>
@@ -221,7 +221,7 @@ bool FilterActionForward::argsFromStringInteractive(const QString &argsStr, cons
                 currentTemplateList << templateName;
             }
         }
-        QPointer<FilterActionMissingTemplateDialog> dlg = new FilterActionMissingTemplateDialog(currentTemplateList, filterName);
+        QPointer<MailCommon::FilterActionMissingTemplateDialog> dlg = new MailCommon::FilterActionMissingTemplateDialog(currentTemplateList, filterName);
         if (dlg->exec()) {
             mTemplate = dlg->selectedTemplate();
             needUpdate = true;

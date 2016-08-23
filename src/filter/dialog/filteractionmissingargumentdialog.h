@@ -116,22 +116,6 @@ private:
     MailTransport::TransportComboBox *mComboBoxTransport;
 };
 
-class FilterActionMissingTemplateDialog : public QDialog
-{
-    Q_OBJECT
-public:
-    explicit FilterActionMissingTemplateDialog(const QStringList &templateList,
-            const QString &filtername,
-            QWidget *parent = Q_NULLPTR);
-    ~FilterActionMissingTemplateDialog();
-    QString selectedTemplate() const;
-
-private:
-    void readConfig();
-    void writeConfig();
-    KComboBox *mComboBoxTemplate;
-};
-
 
 #endif /* FILTERACTIONMISSINGARGUMENTDIALOG_H */
 

@@ -166,7 +166,7 @@ add_mailcommon_filter_test(filteractionforwardtest
     ../filteractions/filteractionforward.cpp
     ../filteractions/filteractionwithaddress.cpp
     ../filteractions/filteractionwithstring.cpp
-    ../dialog/filteractionmissingargumentdialog.cpp
+    ../dialog/filteractionmissingtemplatedialog.cpp
     ../kmfilteraccountlist.cpp
     ${filter_common_SRCS}
 )
