@@ -70,6 +70,7 @@ set(libmailcommon_filter_dialog
     filter/dialog/filteractionmissingaccountdialog.cpp
     filter/dialog/filteractionmissingtemplatedialog.cpp
     filter/dialog/filteractionmissingtransportdialog.cpp
+    filter/dialog/filteractionmissingidentitydialog.cpp
     )
 
 

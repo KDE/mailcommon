@@ -21,7 +21,7 @@
 #include "MessageCore/StringUtil"
 
 #include "kernel/mailkernel.h"
-#include "filter/dialog/filteractionmissingargumentdialog.h"
+#include "filter/dialog/filteractionmissingidentitydialog.h"
 
 #include <KIdentityManagement/Identity>
 #include <KIdentityManagement/IdentityCombo>
@@ -48,7 +48,7 @@ bool FilterActionSetIdentity::argsFromStringInteractive(const QString &argsStr, 
     bool needUpdate = false;
     argsFromString(argsStr);
     if (KernelIf->identityManager()->identityForUoid(mParameter).isNull()) {
-        QPointer<FilterActionMissingIdentityDialog> dlg = new FilterActionMissingIdentityDialog(filterName);
+        QPointer<MailCommon::FilterActionMissingIdentityDialog> dlg = new MailCommon::FilterActionMissingIdentityDialog(filterName);
         if (dlg->exec()) {
             mParameter = dlg->selectedIdentity();
             needUpdate = true;

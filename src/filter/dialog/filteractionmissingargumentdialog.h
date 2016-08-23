@@ -86,20 +86,6 @@ private:
     QPushButton *mOkButton;
 };
 
-class FilterActionMissingIdentityDialog : public QDialog
-{
-    Q_OBJECT
-public:
-    explicit FilterActionMissingIdentityDialog(const QString &filtername,
-            QWidget *parent = Q_NULLPTR);
-    ~FilterActionMissingIdentityDialog();
-    int selectedIdentity() const;
-
-private:
-    void writeConfig();
-    void readConfig();
-    KIdentityManagement::IdentityCombo *mComboBoxIdentity;
-};
 
 #endif /* FILTERACTIONMISSINGARGUMENTDIALOG_H */
 
