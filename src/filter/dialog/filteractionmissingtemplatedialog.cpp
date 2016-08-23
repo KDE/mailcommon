@@ -39,10 +39,22 @@ FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(
     setModal(true);
     setWindowTitle(i18n("Select Template"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
-    QWidget *mainWidget = new QWidget(this);
-    mainLayout->addWidget(mainWidget);
+
+    QLabel *label = new QLabel(this);
+    label->setObjectName(QStringLiteral("label"));
+    label->setText(i18n("Filter template is missing. "
+                        "Please select a template to use with filter \"%1\"",
+                        filtername));
+    label->setWordWrap(true);
+    mainLayout->addWidget(label);
+    mComboBoxTemplate = new KComboBox(this);
+    mComboBoxTemplate->setObjectName(QStringLiteral("comboboxtemplate"));
+    mComboBoxTemplate->addItems(templateList);
+    mainLayout->addWidget(mComboBoxTemplate);
+
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    buttonBox->setObjectName(QStringLiteral("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
@@ -50,16 +62,6 @@ FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingTemplateDialog::reject);
     mainLayout->addWidget(buttonBox);
     okButton->setDefault(true);
-    QVBoxLayout *lay = new QVBoxLayout(mainWidget);
-    QLabel *label = new QLabel(this);
-    label->setText(i18n("Filter template is missing. "
-                        "Please select a template to use with filter \"%1\"",
-                        filtername));
-    label->setWordWrap(true);
-    lay->addWidget(label);
-    mComboBoxTemplate = new KComboBox(this);
-    mComboBoxTemplate->addItems(templateList);
-    lay->addWidget(mComboBoxTemplate);
     readConfig();
 }
 
