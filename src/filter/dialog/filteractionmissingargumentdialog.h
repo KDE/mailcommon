@@ -132,22 +132,6 @@ private:
     KComboBox *mComboBoxTemplate;
 };
 
-class FilterActionMissingAccountDialog : public QDialog
-{
-    Q_OBJECT
-public:
-    explicit FilterActionMissingAccountDialog(const QStringList &lstAccount,
-            const QString &filtername,
-            QWidget *parent = Q_NULLPTR);
-    ~FilterActionMissingAccountDialog();
-    QStringList selectedAccount() const;
-    static bool allAccountExist(const QStringList &lst);
-
-private:
-    void readConfig();
-    void writeConfig();
-    MailCommon::KMFilterAccountList *mAccountList;
-};
 
 #endif /* FILTERACTIONMISSINGARGUMENTDIALOG_H */
 
