@@ -20,7 +20,6 @@ set(libmailcommon_filter_SRCS
   filter/filteractions/filteractiondict.cpp
   filter/filteractions/filteractionexec.cpp
   filter/filteractions/filteractionforward.cpp
-  filter/dialog/filteractionmissingargumentdialog.cpp
   filter/filteractions/filteractionmove.cpp
   filter/filteractions/filteractionpipethrough.cpp
   filter/filteractions/filteractionplaysound.cpp
@@ -59,10 +58,16 @@ set(libmailcommon_filter_SRCS
   filter/itemcontext.cpp
   filter/kmfilterdialog.cpp
   filter/mailfilter.cpp
-  filter/dialog/selectthunderbirdfilterfilesdialog.cpp
-  filter/dialog/selectthunderbirdfilterfileswidget.cpp
   filter/mdnadvicedialog.cpp
 )
+
+set(libmailcommon_filter_dialog
+    filter/dialog/selectthunderbirdfilterfilesdialog.cpp
+    filter/dialog/selectthunderbirdfilterfileswidget.cpp
+    filter/dialog/filteractionmissingargumentdialog.cpp
+    filter/dialog/filteractionmissingsoundurldialog.cpp
+    )
+
 
 set(libmailcommon_invalidfilters 
   filter/invalidfilters/invalidfilterdialog.cpp
@@ -154,6 +159,7 @@ set(libmailcommon_util_SRCS
 
 set(libmailcommon_SRCS
   kernel/mailkernel.cpp
+  ${libmailcommon_filter_dialog}
   ${libmailcommon_util_SRCS}
   ${libmailcommon_mdn_SRCS}
   ${libmailcommon_invalidfilters}

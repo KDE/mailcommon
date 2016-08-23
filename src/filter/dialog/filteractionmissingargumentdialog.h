@@ -172,22 +172,5 @@ private:
     };
     QListWidget *mTagList;
 };
-
-class FilterActionMissingSoundUrlDialog : public QDialog
-{
-    Q_OBJECT
-public:
-    explicit FilterActionMissingSoundUrlDialog(const QString &filtername,
-            const QString &argStr,
-            QWidget *parent = Q_NULLPTR);
-    ~FilterActionMissingSoundUrlDialog();
-    QString soundUrl() const;
-
-private:
-    void readConfig();
-    void writeConfig();
-    KUrlRequester *mUrlWidget;
-};
-
 #endif /* FILTERACTIONMISSINGARGUMENTDIALOG_H */
 
