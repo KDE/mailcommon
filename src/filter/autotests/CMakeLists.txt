@@ -111,7 +111,7 @@ add_mailcommon_filter_test(filteractionplaysoundtest
     ../filteractions/filteractionwithtest.cpp
     ../filteractions/filteractionplaysound.cpp
     ../soundtestwidget.cpp
-    ../dialog/filteractionmissingargumentdialog.cpp
+    ../dialog/filteractionmissingsoundurldialog.cpp
     ../kmfilteraccountlist.cpp
     ${filter_common_SRCS}
 )

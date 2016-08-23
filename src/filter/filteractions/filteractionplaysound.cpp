@@ -19,7 +19,7 @@
 
 #include "filteractionplaysound.h"
 
-#include "filter/dialog/filteractionmissingargumentdialog.h"
+#include "filter/dialog/filteractionmissingsoundurldialog.h"
 
 #include <phonon/mediaobject.h>
 
@@ -75,7 +75,7 @@ bool FilterActionPlaySound::argsFromStringInteractive(const QString &argsStr, co
     bool needUpdate = false;
     argsFromString(argsStr);
     if (!QFile(mParameter).exists()) {
-        QPointer<FilterActionMissingSoundUrlDialog> dlg = new FilterActionMissingSoundUrlDialog(filterName, argsStr);
+        QPointer<MailCommon::FilterActionMissingSoundUrlDialog> dlg = new MailCommon::FilterActionMissingSoundUrlDialog(filterName, argsStr);
         if (dlg->exec()) {
             mParameter = dlg->soundUrl();
             needUpdate = true;

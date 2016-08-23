@@ -49,10 +49,10 @@ FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
 {
     setModal(true);
     setWindowTitle(i18n("Select Folder"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QWidget *mainWidget = new QWidget(this);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
     mainLayout->addWidget(mainWidget);
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setDefault(true);
@@ -209,12 +209,12 @@ FilterActionMissingIdentityDialog::FilterActionMissingIdentityDialog(const QStri
 {
     setModal(true);
     setWindowTitle(i18n("Select Identity"));
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+
     QWidget *mainWidget = new QWidget(this);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
     mainLayout->addWidget(mainWidget);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
@@ -266,12 +266,11 @@ FilterActionMissingTransportDialog::FilterActionMissingTransportDialog(const QSt
 {
     setModal(true);
     setWindowTitle(i18n("Select Transport"));
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
     QWidget *mainWidget = new QWidget(this);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
     mainLayout->addWidget(mainWidget);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
@@ -323,12 +322,11 @@ FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(
 {
     setModal(true);
     setWindowTitle(i18n("Select Template"));
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
     QWidget *mainWidget = new QWidget(this);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
     mainLayout->addWidget(mainWidget);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
@@ -386,9 +384,8 @@ FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QString
 {
     setModal(true);
     setWindowTitle(i18n("Select Account"));
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
     QWidget *mainWidget = new QWidget(this);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
     mainLayout->addWidget(mainWidget);
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
@@ -460,156 +457,3 @@ bool FilterActionMissingAccountDialog::allAccountExist(const QStringList &lst)
     }
     return true;
 }
-
-FilterActionMissingTagDialog::FilterActionMissingTagDialog(
-    const QMap<QUrl, QString> &tagList, const QString &filtername,
-    const QString &argsStr, QWidget *parent)
-    : QDialog(parent)
-{
-    setModal(true);
-    setWindowTitle(i18n("Select Tag"));
-    QWidget *mainWidget = new QWidget(this);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
-    mainLayout->addWidget(mainWidget);
-
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
-    QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
-    okButton->setDefault(true);
-    okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
-    QPushButton *user1Button = new QPushButton;
-    buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
-    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingTagDialog::accept);
-    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingTagDialog::reject);
-    mainLayout->addWidget(buttonBox);
-    okButton->setDefault(true);
-    user1Button->setText(i18n("Add Tag..."));
-    QVBoxLayout *lay = new QVBoxLayout(mainWidget);
-    QLabel *label = new QLabel(i18n("Tag was \"%1\".", argsStr));
-    lay->addWidget(label);
-
-    label = new QLabel(this);
-    label->setText(i18n("Filter tag is missing. "
-                        "Please select a tag to use with filter \"%1\"",
-                        filtername));
-    label->setWordWrap(true);
-    lay->addWidget(label);
-    mTagList = new QListWidget(this);
-
-    QMapIterator<QUrl, QString> map(tagList);
-    while (map.hasNext()) {
-        map.next();
-        QListWidgetItem *item = new QListWidgetItem(map.value());
-        item->setData(UrlData, map.key().toString());
-        mTagList->addItem(item);
-    }
-
-    connect(user1Button, &QPushButton::clicked, this, &FilterActionMissingTagDialog::slotAddTag);
-    connect(mTagList, &QListWidget::itemDoubleClicked, this, &FilterActionMissingTagDialog::accept);
-    lay->addWidget(mTagList);
-    readConfig();
-}
-
-FilterActionMissingTagDialog::~FilterActionMissingTagDialog()
-{
-    writeConfig();
-}
-
-void FilterActionMissingTagDialog::readConfig()
-{
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingTagDialog");
-
-    const QSize size = group.readEntry("Size", QSize(500, 300));
-    if (size.isValid()) {
-        resize(size);
-    }
-}
-
-void FilterActionMissingTagDialog::writeConfig()
-{
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingTagDialog");
-    group.writeEntry("Size", size());
-}
-
-QString FilterActionMissingTagDialog::selectedTag() const
-{
-    if (mTagList->currentItem()) {
-        return mTagList->currentItem()->data(UrlData).toString();
-    }
-    return QString();
-}
-
-void FilterActionMissingTagDialog::slotAddTag()
-{
-    QPointer<MailCommon::AddTagDialog> dlg = new MailCommon::AddTagDialog(QList<KActionCollection *>(), this);
-    if (dlg->exec())  {
-        QListWidgetItem *item = new QListWidgetItem(dlg->label());
-        item->setData(UrlData, dlg->tag().url().url());
-        mTagList->addItem(item);
-    }
-    delete dlg;
-}
-
-FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QString &filtername,
-        const QString &argStr,
-        QWidget *parent)
-    : QDialog(parent)
-{
-    setModal(true);
-    QWidget *mainWidget = new QWidget(this);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
-    mainLayout->addWidget(mainWidget);
-
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
-    QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
-    okButton->setDefault(true);
-    okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
-    QPushButton *user1Button = new QPushButton;
-    buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
-    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingSoundUrlDialog::accept);
-    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingSoundUrlDialog::reject);
-    mainLayout->addWidget(buttonBox);
-    okButton->setDefault(true);
-    setWindowTitle(i18n("Select sound"));
-    QVBoxLayout *lay = new QVBoxLayout(mainWidget);
-    QLabel *label = new QLabel(i18n("Sound file was \"%1\".", argStr));
-    lay->addWidget(label);
-
-    label = new QLabel(this);
-    label->setText(i18n("Sound file is missing. "
-                        "Please select a sound to use with filter \"%1\"",
-                        filtername));
-    label->setWordWrap(true);
-    lay->addWidget(label);
-    mUrlWidget = new KUrlRequester(this);
-    lay->addWidget(mUrlWidget);
-    readConfig();
-}
-
-FilterActionMissingSoundUrlDialog::~FilterActionMissingSoundUrlDialog()
-{
-    writeConfig();
-}
-
-QString FilterActionMissingSoundUrlDialog::soundUrl() const
-{
-    return mUrlWidget->url().path();
-}
-
-void FilterActionMissingSoundUrlDialog::readConfig()
-{
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingSoundUrlDialog");
-
-    const QSize size = group.readEntry("Size", QSize(500, 300));
-    if (size.isValid()) {
-        resize(size);
-    }
-}
-
-void FilterActionMissingSoundUrlDialog::writeConfig()
-{
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingSoundUrlDialog");
-    group.writeEntry("Size", size());
-}
-
