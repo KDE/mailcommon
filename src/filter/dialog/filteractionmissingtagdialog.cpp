@@ -39,33 +39,13 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
     const QString &argsStr, QWidget *parent)
     : QDialog(parent)
 {
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
-
     setModal(true);
     setWindowTitle(i18n("Select Tag"));
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
-    QWidget *mainWidget = new QWidget(this);
-    mainLayout->addWidget(mainWidget);
-
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    buttonBox->setObjectName(QStringLiteral("buttonbox"));
-    QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
-    okButton->setDefault(true);
-    okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
-    QPushButton *user1Button = new QPushButton(this);
-    user1Button->setObjectName(QStringLiteral("addtag"));
-    user1Button->setText(i18n("Add Tag..."));
-    buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
-
-    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingTagDialog::accept);
-    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingTagDialog::reject);
-    mainLayout->addWidget(buttonBox);
-    okButton->setDefault(true);
-
-    QVBoxLayout *lay = new QVBoxLayout(mainWidget);
     QLabel *label = new QLabel(i18n("Tag was \"%1\".", argsStr));
     label->setObjectName(QStringLiteral("tagnamelabel"));
-    lay->addWidget(label);
+    mainLayout->addWidget(label);
 
     label = new QLabel(this);
     label->setObjectName(QStringLiteral("filtername"));
@@ -73,7 +53,7 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
                         "Please select a tag to use with filter \"%1\"",
                         filtername));
     label->setWordWrap(true);
-    lay->addWidget(label);
+    mainLayout->addWidget(label);
     mTagList = new QListWidget(this);
     mTagList->setObjectName(QStringLiteral("taglist"));
 
@@ -85,9 +65,24 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
         mTagList->addItem(item);
     }
 
-    connect(user1Button, &QPushButton::clicked, this, &FilterActionMissingTagDialog::slotAddTag);
     connect(mTagList, &QListWidget::itemDoubleClicked, this, &FilterActionMissingTagDialog::accept);
-    lay->addWidget(mTagList);
+    mainLayout->addWidget(mTagList);
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    buttonBox->setObjectName(QStringLiteral("buttonbox"));
+    QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
+    okButton->setDefault(true);
+    okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
+    QPushButton *user1Button = new QPushButton(this);
+    user1Button->setObjectName(QStringLiteral("addtag"));
+    user1Button->setText(i18n("Add Tag..."));
+    buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
+
+    connect(user1Button, &QPushButton::clicked, this, &FilterActionMissingTagDialog::slotAddTag);
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingTagDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingTagDialog::reject);
+    mainLayout->addWidget(buttonBox);
+    okButton->setDefault(true);
     readConfig();
 }
 
