@@ -73,3 +73,14 @@ target_link_libraries(filteractionmissingtransportdialoggui
   KF5::Completion
   KF5::MailTransport
 )
+
+set(filteractionmissingaccountdialoggui_SRCS filteractionmissingaccountdialoggui.cpp ../../../autotests/dummykernel.cpp ../../filter/kmfilteraccountlist.cpp ../dialog/filteractionmissingaccountdialog.cpp)
+add_executable(filteractionmissingaccountdialoggui ${filteractionmissingaccountdialoggui_SRCS})
+ecm_mark_as_test(filteractionmissingaccountdialoggui)
+target_link_libraries(filteractionmissingaccountdialoggui
+  Qt5::Core
+  Qt5::Gui
+  KF5::MailCommon
+  KF5::I18n
+  KF5::Completion
+)

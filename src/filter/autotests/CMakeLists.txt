@@ -239,3 +239,9 @@ add_mailcommon_filter_test(filteractionmissingtransportdialogtest
     filteractionmissingtransportdialogtest.cpp
     ../dialog/filteractionmissingtransportdialog.cpp
     )
+
+add_mailcommon_filter_test(filteractionmissingaccountdialogtest
+    filteractionmissingaccountdialogtest.cpp
+    ../dialog/filteractionmissingaccountdialog.cpp
+    ../../filter/kmfilteraccountlist.cpp
+    )
