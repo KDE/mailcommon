@@ -238,14 +238,14 @@ void FolderTreeView::setSortingPolicy(FolderTreeWidget::SortingPolicy policy, bo
     mSortingPolicy = policy;
     switch (mSortingPolicy) {
     case FolderTreeWidget::SortByCurrentColumn:
-        header()->setClickable(true);
+        header()->setSectionsClickable(true);
         header()->setSortIndicatorShown(true);
         setSortingEnabled(true);
         Q_EMIT manualSortingChanged(false);
         break;
 
     case FolderTreeWidget::SortByDragAndDropKey:
-        header()->setClickable(false);
+        header()->setSectionsClickable(false);
         header()->setSortIndicatorShown(false);
 
         setSortingEnabled(false);   // hack for qutie bug: this call shouldn't be here at all

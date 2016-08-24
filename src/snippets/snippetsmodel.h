@@ -66,6 +66,7 @@ public:
                       int row, int column, const QModelIndex &parent) Q_DECL_OVERRIDE;
 
     Qt::DropActions supportedDropActions() const Q_DECL_OVERRIDE;
+    QHash<int, QByteArray> roleNames() const Q_DECL_OVERRIDE;
 
 protected:
     bool insertRows(int row, int count,

@@ -148,12 +148,6 @@ SnippetsModel::SnippetsModel(QObject *parent)
     : QAbstractItemModel(parent)
 {
     mRootItem = new SnippetItem(true);
-
-    QHash<int, QByteArray> names = roleNames();
-
-    names.insert(IsGroupRole, "isSnippetGroup");
-
-    setRoleNames(names);
 }
 
 SnippetsModel::~SnippetsModel()
@@ -441,5 +435,15 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action,
 Qt::DropActions SnippetsModel::supportedDropActions() const
 {
     return Qt::CopyAction | Qt::MoveAction;
+}
+
+QHash<int, QByteArray> SnippetsModel::roleNames() const
+{
+    static QHash<int, QByteArray> names;
+    if (names.isEmpty()) {
+        names.insert(IsGroupRole, QByteArrayLiteral("isSnippetGroup"));
+    }
+
+    return names;
 }
 

@@ -209,7 +209,7 @@ void FilterActionPipeThroughTest::testXUidUnchange()
     filter.argsFromString(QStringLiteral("cat "));
     QCOMPARE(filter.process(context, false), FilterAction::GoOn);
     QCOMPARE(context.needsPayloadStore(), true);
-    QCOMPARE(QString::fromAscii(msgPtr->encodedContent()), QString::fromAscii(data));
+    QCOMPARE(QString::fromLatin1(msgPtr->encodedContent()), QString::fromLatin1(data));
 }
 
 void FilterActionPipeThroughTest::testXUidRemoved()
