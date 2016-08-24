@@ -51,26 +51,15 @@ FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
     setWindowTitle(i18n("Select Folder"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    QWidget *mainWidget = new QWidget(this);
-    mainLayout->addWidget(mainWidget);
-    mOkButton = buttonBox->button(QDialogButtonBox::Ok);
-    mOkButton->setDefault(true);
-    mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
-    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingCollectionDialog::accept);
-    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingCollectionDialog::reject);
-    mainLayout->addWidget(buttonBox);
-    mOkButton->setDefault(true);
-    QVBoxLayout *lay = new QVBoxLayout(mainWidget);
     QLabel *lab = new QLabel(i18n("Folder path was \"%1\".", argStr));
     lab->setWordWrap(true);
-    lay->addWidget(lab);
+    mainLayout->addWidget(lab);
     if (!list.isEmpty()) {
         lab = new QLabel(i18n("The following folders can be used for this filter:"));
         lab->setWordWrap(true);
-        lay->addWidget(lab);
+        mainLayout->addWidget(lab);
         mListwidget = new QListWidget(this);
-        lay->addWidget(mListwidget);
+        mainLayout->addWidget(mListwidget);
         const int numberOfItems(list.count());
         for (int i = 0; i < numberOfItems; ++i) {
             Akonadi::Collection col = list.at(i);
@@ -91,10 +80,19 @@ FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
         label->setText(i18n("Filter folder is missing. "
                             "Please select a folder to use with filter \"%1\"",
                             filtername));
-    lay->addWidget(label);
+    mainLayout->addWidget(label);
     mFolderRequester = new MailCommon::FolderRequester(this);
     connect(mFolderRequester, &MailCommon::FolderRequester::folderChanged, this, &FilterActionMissingCollectionDialog::slotFolderChanged);
-    lay->addWidget(mFolderRequester);
+    mainLayout->addWidget(mFolderRequester);
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    mOkButton = buttonBox->button(QDialogButtonBox::Ok);
+    mOkButton->setDefault(true);
+    mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingCollectionDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingCollectionDialog::reject);
+    mainLayout->addWidget(buttonBox);
+    mOkButton->setDefault(true);
     mOkButton->setEnabled(false);
     readConfig();
 }
@@ -106,7 +104,7 @@ FilterActionMissingCollectionDialog::~FilterActionMissingCollectionDialog()
 
 void FilterActionMissingCollectionDialog::readConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingCollectionDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingCollectionDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -116,7 +114,7 @@ void FilterActionMissingCollectionDialog::readConfig()
 
 void FilterActionMissingCollectionDialog::writeConfig()
 {
-    KConfigGroup group(KernelIf->config(), "FilterActionMissingCollectionDialog");
+    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingCollectionDialog");
     group.writeEntry("Size", size());
 }
 
