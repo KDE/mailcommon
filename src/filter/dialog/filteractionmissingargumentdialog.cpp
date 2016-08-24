@@ -178,15 +178,15 @@ Akonadi::Collection::List FilterActionMissingCollectionDialog::potentialCorrectF
         return lst;
     }
 
-    const int lastSlash = realPath.lastIndexOf(QLatin1Char('/'));
-    QString lastElement;
-    if (lastSlash == -1) {
-        lastElement = realPath;
-    } else {
-        lastElement = realPath.right(realPath.length() - lastSlash - 1);
-    }
-
     if (KernelIf->collectionModel()) {
+        const int lastSlash = realPath.lastIndexOf(QLatin1Char('/'));
+        QString lastElement;
+        if (lastSlash == -1) {
+            lastElement = realPath;
+        } else {
+            lastElement = realPath.right(realPath.length() - lastSlash - 1);
+        }
+
         FilterActionMissingCollectionDialog::getPotentialFolders(
             KernelIf->collectionModel(), QModelIndex(), lastElement, lst);
 
