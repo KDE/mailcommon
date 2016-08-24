@@ -245,3 +245,8 @@ add_mailcommon_filter_test(filteractionmissingaccountdialogtest
     ../dialog/filteractionmissingaccountdialog.cpp
     ../../filter/kmfilteraccountlist.cpp
     )
+
+add_mailcommon_filter_test(filteractionmissingtagdialogtest
+    filteractionmissingtagdialogtest.cpp
+    ../dialog/filteractionmissingtagdialog.cpp
+    )
