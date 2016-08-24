@@ -18,7 +18,10 @@
 */
 
 #include "filteractionmissingaccountdialogtest.h"
-
+#include "../filter/dialog/filteractionmissingaccountdialog.h"
+#include "../filter/kmfilteraccountlist.h"
+#include <QDialogButtonBox>
+#include <QLabel>
 #include <QTest>
 
 FilterActionMissingAccountDialogTest::FilterActionMissingAccountDialogTest(QObject *parent)
@@ -30,6 +33,23 @@ FilterActionMissingAccountDialogTest::FilterActionMissingAccountDialogTest(QObje
 FilterActionMissingAccountDialogTest::~FilterActionMissingAccountDialogTest()
 {
 
+}
+
+void FilterActionMissingAccountDialogTest::shouldHaveDefaultValue()
+{
+    MailCommon::FilterActionMissingAccountDialog dlg(QStringList(), QStringLiteral("filename"));
+    QVERIFY(!dlg.windowTitle().isEmpty());
+    QVERIFY(dlg.isModal());
+
+    QDialogButtonBox *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
+    QVERIFY(buttonBox);
+
+    QLabel *label = dlg.findChild<QLabel *>(QStringLiteral("label"));
+    QVERIFY(label);
+    QVERIFY(!label->text().isEmpty());
+
+    MailCommon::KMFilterAccountList *mAccountList = dlg.findChild<MailCommon::KMFilterAccountList *>(QStringLiteral("accountlist"));
+    QVERIFY(mAccountList);
 }
 
 QTEST_MAIN(FilterActionMissingAccountDialogTest)
