@@ -58,8 +58,6 @@ using namespace Akonadi;
 class FolderTreeWidgetTest : public QObject
 {
     Q_OBJECT
-public:
-
 private Q_SLOTS:
     void initTestCase()
     {

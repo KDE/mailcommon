@@ -41,10 +41,21 @@ FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QString
     setModal(true);
     setWindowTitle(i18n("Select Account"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
-    QWidget *mainWidget = new QWidget(this);
-    mainLayout->addWidget(mainWidget);
+
+    QLabel *label = new QLabel(this);
+    label->setObjectName(QStringLiteral("label"));
+    label->setText(i18n("Filter account is missing. "
+                        "Please select account to use with filter \"%1\"",
+                        filtername));
+    label->setWordWrap(true);
+    mainLayout->addWidget(label);
+    mAccountList = new MailCommon::KMFilterAccountList(this);
+    mAccountList->setObjectName(QStringLiteral("accountlist"));
+    mAccountList->applyOnAccount(lstAccount);
+    mainLayout->addWidget(mAccountList);
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    buttonBox->setObjectName(QStringLiteral("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
@@ -52,16 +63,6 @@ FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QString
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingAccountDialog::reject);
     mainLayout->addWidget(buttonBox);
     okButton->setDefault(true);
-    QVBoxLayout *lay = new QVBoxLayout(mainWidget);
-    QLabel *label = new QLabel(this);
-    label->setText(i18n("Filter account is missing. "
-                        "Please select account to use with filter \"%1\"",
-                        filtername));
-    label->setWordWrap(true);
-    lay->addWidget(label);
-    mAccountList = new MailCommon::KMFilterAccountList(this);
-    mAccountList->applyOnAccount(lstAccount);
-    lay->addWidget(mAccountList);
     readConfig();
 }
 

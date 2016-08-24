@@ -446,3 +446,4 @@ QHash<int, QByteArray> SnippetsModel::roleNames() const
 
     return names;
 }
+
