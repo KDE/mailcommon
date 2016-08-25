@@ -32,22 +32,22 @@ SelectThunderbirdFilterFilesDialog::SelectThunderbirdFilterFilesDialog(const QSt
     : QDialog(parent)
 {
     setWindowTitle(i18n("Select thunderbird filter files"));
+    setModal(true);
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+
+    mSelectFilterFilesWidget = new MailCommon::SelectThunderbirdFilterFilesWidget(defaultSettingPath, this);
+    mainLayout->addWidget(mSelectFilterFilesWidget);
+
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &SelectThunderbirdFilterFilesDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &SelectThunderbirdFilterFilesDialog::reject);
-    okButton->setDefault(true);
-    setModal(true);
-    mSelectFilterFilesWidget = new MailCommon::SelectThunderbirdFilterFilesWidget(defaultSettingPath, this);
     connect(mSelectFilterFilesWidget, &MailCommon::SelectThunderbirdFilterFilesWidget::enableOkButton, okButton, &QPushButton::setEnabled);
-    mainLayout->addWidget(mSelectFilterFilesWidget);
+    okButton->setEnabled(false);
     mainLayout->addWidget(buttonBox);
     readConfig();
-    okButton->setEnabled(false);
 }
 
 SelectThunderbirdFilterFilesDialog::~SelectThunderbirdFilterFilesDialog()
