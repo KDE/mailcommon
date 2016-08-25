@@ -54,20 +54,22 @@ AddTagDialog::AddTagDialog(const QList<KActionCollection *> &actions, QWidget *p
 {
     setModal(true);
     setWindowTitle(i18n("Add Tag"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
-    d->mOkButton = buttonBox->button(QDialogButtonBox::Ok);
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+
+
+    d->mTagWidget = new MailCommon::TagWidget(actions, this);
+    mainLayout->addWidget(d->mTagWidget);
+
+    connect(d->mTagWidget->tagNameLineEdit(), &KLineEdit::textChanged, this, &AddTagDialog::slotTagNameChanged);
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     d->mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
+    d->mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &AddTagDialog::slotSave);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &AddTagDialog::reject);
     d->mOkButton->setDefault(true);
-
-    d->mTagWidget = new MailCommon::TagWidget(actions, this);
-
-    connect(d->mTagWidget->tagNameLineEdit(), &KLineEdit::textChanged, this, &AddTagDialog::slotTagNameChanged);
     d->mOkButton->setEnabled(false);
-    mainLayout->addWidget(d->mTagWidget);
+
     mainLayout->addWidget(buttonBox);
 }
 
