@@ -29,6 +29,7 @@ public:
     explicit FilterActionMissingIdentityDialogTest(QObject *parent = Q_NULLPTR);
     ~FilterActionMissingIdentityDialogTest();
 private Q_SLOTS:
+    void initTestCase();
     void shouldHaveDefaultValue();
 };
 
