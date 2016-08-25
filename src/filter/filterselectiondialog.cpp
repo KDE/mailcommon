@@ -39,11 +39,10 @@ FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     QVBoxLayout *top = new QVBoxLayout;
     setLayout(top);
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
-    mOkButton->setDefault(true);
     mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
+    mOkButton->setDefault(true);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterSelectionDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterSelectionDialog::reject);
-    mOkButton->setDefault(true);
 
     filtersListWidget = new QListWidget(this);
     KListWidgetSearchLine *searchLine = new KListWidgetSearchLine(this, filtersListWidget);

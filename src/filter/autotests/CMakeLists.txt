@@ -250,3 +250,9 @@ add_mailcommon_filter_test(filteractionmissingtagdialogtest
     filteractionmissingtagdialogtest.cpp
     ../dialog/filteractionmissingtagdialog.cpp
     )
+
+add_mailcommon_filter_test(filteractionmissingidentitydialogtest
+    filteractionmissingidentitydialogtest.cpp
+    ../dialog/filteractionmissingidentitydialog.cpp
+    ../../../autotests/dummykernel.cpp
+    )

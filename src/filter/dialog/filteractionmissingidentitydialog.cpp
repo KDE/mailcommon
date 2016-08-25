@@ -42,30 +42,27 @@ FilterActionMissingIdentityDialog::FilterActionMissingIdentityDialog(const QStri
     setWindowTitle(i18n("Select Identity"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
-    QWidget *mainWidget = new QWidget(this);
-    mainLayout->addWidget(mainWidget);
-
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    buttonBox->setObjectName(QStringLiteral("buttonbox"));
-
-    QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
-    okButton->setDefault(true);
-    okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
-    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingIdentityDialog::accept);
-    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingIdentityDialog::reject);
-    mainLayout->addWidget(buttonBox);
-    okButton->setDefault(true);
-    QVBoxLayout *lay = new QVBoxLayout(mainWidget);
     QLabel *label = new QLabel(this);
     label->setObjectName(QStringLiteral("label"));
     label->setText(i18n("Filter identity is missing. "
                         "Please select an identity to use with filter \"%1\"",
                         filtername));
     label->setWordWrap(true);
-    lay->addWidget(label);
+    mainLayout->addWidget(label);
     mComboBoxIdentity = new KIdentityManagement::IdentityCombo(KernelIf->identityManager(), this);
     mComboBoxIdentity->setObjectName(QStringLiteral("comboboxidentity"));
-    lay->addWidget(mComboBoxIdentity);
+    mainLayout->addWidget(mComboBoxIdentity);
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    buttonBox->setObjectName(QStringLiteral("buttonbox"));
+
+    QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
+    okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingIdentityDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingIdentityDialog::reject);
+    mainLayout->addWidget(buttonBox);
+    okButton->setDefault(true);
+
     readConfig();
 }
 

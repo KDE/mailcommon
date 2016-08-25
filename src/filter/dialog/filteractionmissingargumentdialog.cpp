@@ -92,7 +92,6 @@ FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
     connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingCollectionDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingCollectionDialog::reject);
     mainLayout->addWidget(buttonBox);
-    mOkButton->setDefault(true);
     mOkButton->setEnabled(false);
     readConfig();
 }

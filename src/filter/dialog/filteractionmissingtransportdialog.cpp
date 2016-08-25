@@ -57,7 +57,6 @@ FilterActionMissingTransportDialog::FilterActionMissingTransportDialog(const QSt
     connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingTransportDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingTransportDialog::reject);
     mainLayout->addWidget(buttonBox);
-    okButton->setDefault(true);
     readConfig();
 }
 

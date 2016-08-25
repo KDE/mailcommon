@@ -95,3 +95,14 @@ target_link_libraries(filteractionmissingtagdialoggui
   KF5::I18n
   KF5::Completion
 )
+
+set(filteractionmissingidentitydialoggui_SRCS filteractionmissingidentitydialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingidentitydialog.cpp)
+add_executable(filteractionmissingidentitydialoggui ${filteractionmissingidentitydialoggui_SRCS})
+ecm_mark_as_test(filteractionmissingidentitydialoggui)
+target_link_libraries(filteractionmissingidentitydialoggui
+  Qt5::Core
+  Qt5::Gui
+  KF5::MailCommon
+  KF5::I18n
+  KF5::Completion
+)

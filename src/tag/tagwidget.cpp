@@ -73,8 +73,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     : QWidget(parent),
       d(new MailCommon::TagWidgetPrivate)
 {
-    QGridLayout *settings = new QGridLayout;
-    setLayout(settings);
+    QGridLayout *settings = new QGridLayout(this);
 
     //Stretcher layout for adding some space after the label
     QVBoxLayout *spacer = new QVBoxLayout();

@@ -61,7 +61,6 @@ FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(
     connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingTemplateDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingTemplateDialog::reject);
     mainLayout->addWidget(buttonBox);
-    okButton->setDefault(true);
     readConfig();
 }
 

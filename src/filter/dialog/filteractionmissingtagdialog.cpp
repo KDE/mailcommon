@@ -71,7 +71,6 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
-    okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     QPushButton *user1Button = new QPushButton(this);
     user1Button->setObjectName(QStringLiteral("addtag"));

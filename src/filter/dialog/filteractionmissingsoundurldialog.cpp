@@ -64,7 +64,6 @@ FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QStri
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingSoundUrlDialog::reject);
 
     mainLayout->addWidget(buttonBox);
-    okButton->setDefault(true);
     readConfig();
 }
 
