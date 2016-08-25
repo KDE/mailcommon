@@ -57,7 +57,6 @@ FilterActionMissingIdentityDialog::FilterActionMissingIdentityDialog(const QStri
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
 
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
-    okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingIdentityDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingIdentityDialog::reject);

@@ -58,7 +58,6 @@ AddTagDialog::AddTagDialog(const QList<KActionCollection *> &actions, QWidget *p
     QVBoxLayout *mainLayout = new QVBoxLayout;
     setLayout(mainLayout);
     d->mOkButton = buttonBox->button(QDialogButtonBox::Ok);
-    d->mOkButton->setDefault(true);
     d->mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &AddTagDialog::slotSave);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &AddTagDialog::reject);

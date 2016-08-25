@@ -62,7 +62,6 @@ FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QString
     connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingAccountDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingAccountDialog::reject);
     mainLayout->addWidget(buttonBox);
-    okButton->setDefault(true);
     readConfig();
 }
 

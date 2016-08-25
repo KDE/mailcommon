@@ -72,7 +72,6 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(QWidget *parent)
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &AccountConfigOrderDialog::reject);
-    okButton->setDefault(true);
 
     QWidget *page = new QWidget(this);
     mainLayout->addWidget(page);
