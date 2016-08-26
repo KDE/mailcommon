@@ -312,6 +312,7 @@ public:
     void generateSieveScript(QStringList &requires, QString &code);
 
     void clearApplyOnAccount();
+    void agentRemoved(const QString &identifier);
 private:
     QString mIdentifier;
     SearchPattern mPattern;

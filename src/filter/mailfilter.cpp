@@ -275,6 +275,11 @@ SearchRule::RequiredPart MailFilter::requiredPart(const QString &id) const
     return static_cast<SearchRule::RequiredPart>(requiredPart);
 }
 
+void MailFilter::agentRemoved(const QString &identifier)
+{
+    mAccounts.removeAll(identifier);
+}
+
 void MailFilter::folderRemoved(const Akonadi::Collection &aFolder, const Akonadi::Collection &aNewFolder)
 {
     QListIterator<FilterAction *> it(mActions);
