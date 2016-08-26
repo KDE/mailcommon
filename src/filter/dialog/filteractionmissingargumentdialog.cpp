@@ -52,10 +52,12 @@ FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
     QLabel *lab = new QLabel(i18n("Folder path was \"%1\".", argStr));
+    lab->setObjectName(QStringLiteral("argumentlabel"));
     lab->setWordWrap(true);
     mainLayout->addWidget(lab);
     if (!list.isEmpty()) {
         lab = new QLabel(i18n("The following folders can be used for this filter:"));
+        lab->setObjectName(QStringLiteral("label"));
         lab->setWordWrap(true);
         mainLayout->addWidget(lab);
         mListwidget = new QListWidget(this);
@@ -73,6 +75,7 @@ FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
     }
 
     QLabel *label = new QLabel(this);
+    label->setObjectName(QStringLiteral("folderlabel"));
     label->setWordWrap(true);
     if (filtername.isEmpty()) {
         label->setText(i18n("Please select a folder"));
@@ -82,17 +85,19 @@ FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
                             filtername));
     mainLayout->addWidget(label);
     mFolderRequester = new MailCommon::FolderRequester(this);
+    mFolderRequester->setObjectName(QStringLiteral("folderrequester"));
     connect(mFolderRequester, &MailCommon::FolderRequester::folderChanged, this, &FilterActionMissingCollectionDialog::slotFolderChanged);
     mainLayout->addWidget(mFolderRequester);
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    buttonBox->setObjectName(QStringLiteral("buttonbox"));
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setDefault(true);
     mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
+    mOkButton->setEnabled(false);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingCollectionDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingCollectionDialog::reject);
     mainLayout->addWidget(buttonBox);
-    mOkButton->setEnabled(false);
     readConfig();
 }
 
