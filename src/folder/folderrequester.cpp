@@ -102,9 +102,7 @@ void FolderRequester::slotOpenDialog()
         options |= FolderSelectionDialog::HideOutboxFolder;
     }
 
-    QScopedPointer<FolderSelectionDialog> dlg(
-        new FolderSelectionDialog(this, options));
-
+    QPointer<FolderSelectionDialog> dlg(new FolderSelectionDialog(this, options));
     dlg->setWindowTitle(i18n("Select Folder"));
     dlg->setModal(false);
     dlg->setSelectedCollection(d->mCollection);
@@ -112,6 +110,7 @@ void FolderRequester::slotOpenDialog()
     if (dlg->exec() && dlg) {
         setCollection(dlg->selectedCollection(), false);
     }
+    delete dlg;
 }
 
 //-----------------------------------------------------------------------------
