@@ -35,9 +35,9 @@ FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     setObjectName(QStringLiteral("filterselection"));
     setModal(true);
     setWindowTitle(i18n("Select Filters"));
+    QVBoxLayout *top = new QVBoxLayout(this);
+
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    QVBoxLayout *top = new QVBoxLayout;
-    setLayout(top);
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     mOkButton->setDefault(true);

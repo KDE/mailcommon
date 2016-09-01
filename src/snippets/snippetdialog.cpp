@@ -37,8 +37,7 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
     connect(buttonBox, &QDialogButtonBox::rejected, this, &SnippetDialog::reject);
 
     QWidget *mainWidget = new QWidget(this);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->addWidget(mainWidget);
     mainLayout->addWidget(buttonBox);
     mUi->setupUi(mainWidget);

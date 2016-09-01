@@ -38,11 +38,10 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
     : QDialog(parent)
 {
     setWindowTitle(i18n("Convert to sieve script"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Close);
+    QVBoxLayout *topLayout = new QVBoxLayout(this);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Close, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
-    QVBoxLayout *topLayout = new QVBoxLayout;
-    setLayout(topLayout);
-    QPushButton *saveButton = new QPushButton;
+    QPushButton *saveButton = new QPushButton(this);
     buttonBox->addButton(saveButton, QDialogButtonBox::ActionRole);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterConvertToSieveResultDialog::reject);
     saveButton->setText(i18n("Save..."));
