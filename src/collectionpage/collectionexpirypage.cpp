@@ -93,7 +93,7 @@ void CollectionExpiryPage::init()
     globalVBox->addSpacing(30);
 
     QGroupBox *actionsGroup = new QGroupBox;
-    actionsGroup->hide(); // for mutual exclusion of the radio buttons
+    actionsGroup->setFlat(true); // for mutual exclusion of the radio buttons
 
     QHBoxLayout *moveToHBox = new QHBoxLayout();
     moveToHBox->setMargin(0);
