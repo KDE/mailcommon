@@ -18,7 +18,7 @@ macro(add_mailcommon_filter_akonadi_test _name _sources)
 endmacro()
 
 set(filter_common_SRCS)
-ecm_qt_declare_logging_category(filter_common_SRCS HEADER mailcommon_debug.h IDENTIFIER MAILCOMMON_LOG CATEGORY_NAME log_mailcommon)
+ecm_qt_declare_logging_category(filter_common_SRCS HEADER mailcommon_debug.h IDENTIFIER MAILCOMMON_LOG CATEGORY_NAME org.kde.pim.mailcommon)
 
 add_mailcommon_filter_test(itemcontexttest
     itemcontexttest.cpp

@@ -181,7 +181,7 @@ kconfig_add_kcfg_files(libmailcommon_SRCS
     settings/mailcommonsettings_base.kcfgc
 )
 
-ecm_qt_declare_logging_category(libmailcommon_SRCS HEADER mailcommon_debug.h IDENTIFIER MAILCOMMON_LOG CATEGORY_NAME log_mailcommon)
+ecm_qt_declare_logging_category(libmailcommon_SRCS HEADER mailcommon_debug.h IDENTIFIER MAILCOMMON_LOG CATEGORY_NAME org.kde.pim.mailcommon)
 
 set_source_files_properties(${CMAKE_CURRENT_SOURCE_DIR}/dbusinterfaces/org.freedesktop.Akonadi.MailFilterAgent.xml PROPERTIES INCLUDE "dbusoperators.h")
 

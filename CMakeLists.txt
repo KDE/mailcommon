@@ -114,5 +114,5 @@ install(FILES
 
 add_subdirectory(src)
 add_subdirectory(autotests)
-install( FILES mailcommon.categories DESTINATION ${KDE_INSTALL_CONFDIR} )
+install( FILES mailcommon.renamecategories mailcommon.categories DESTINATION ${KDE_INSTALL_CONFDIR} )
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
