@@ -47,6 +47,8 @@ public:
           hideSpecificFolder(false),
           hideOutboxFolder(false)
     {
+        const KColorScheme scheme(QPalette::Active, KColorScheme::View);
+        brokenAccountColor = scheme.foreground(KColorScheme::NegativeText).color();
     }
 
     QSet<QString> includedMimeTypes;
@@ -87,15 +89,6 @@ FolderTreeWidgetProxyModel::~FolderTreeWidgetProxyModel()
 
 void FolderTreeWidgetProxyModel::readConfig()
 {
-    KConfigGroup collectionFolderView(KernelIf->config(), "CollectionFolderView");
-    KColorScheme scheme(QPalette::Active, KColorScheme::View);
-    if (MessageCore::MessageCoreSettings::self()->useDefaultColors()) {
-        d->brokenAccountColor = scheme.foreground(KColorScheme::NegativeText).color();
-    } else {
-        d->brokenAccountColor =
-            collectionFolderView.readEntry("BrokenAccountColor",
-                                           scheme.foreground(KColorScheme::NegativeText).color());
-    }
     invalidate();
 }
 
