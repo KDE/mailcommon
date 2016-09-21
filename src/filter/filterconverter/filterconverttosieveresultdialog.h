@@ -19,7 +19,6 @@
 #define FILTERCONVERTTOSIEVERESULTDIALOG_H
 
 #include <QDialog>
-#include <KConfigGroup>
 
 namespace KPIMTextEdit
 {
