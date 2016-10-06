@@ -264,6 +264,8 @@ void TagRuleWidgetHandler::reset(QStackedWidget *functionStack,
         lineEdit->blockSignals(true);
         lineEdit->clear();
         lineEdit->blockSignals(false);
+        lineEdit->setClearButtonEnabled(false);
+        lineEdit->setClearButtonEnabled(true);
         valueStack->setCurrentWidget(lineEdit);
     }
 
@@ -326,6 +328,8 @@ bool TagRuleWidgetHandler::setRule(QStackedWidget *functionStack,
             lineEdit->blockSignals(true);
             lineEdit->setText(rule->contents());
             lineEdit->blockSignals(false);
+            lineEdit->setClearButtonEnabled(false);
+            lineEdit->setClearButtonEnabled(true);
             valueStack->setCurrentWidget(lineEdit);
         }
     } else {
