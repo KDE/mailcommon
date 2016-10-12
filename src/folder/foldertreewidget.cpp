@@ -274,13 +274,7 @@ void FolderTreeWidget::slotGeneralPaletteChanged()
 
 void FolderTreeWidget::readConfig()
 {
-    // Custom/System font support
-    if (!MessageCore::MessageCoreSettings::self()->useDefaultFonts()) {
-        KConfigGroup fontConfig(KernelIf->config(), "Fonts");
-        setFont(fontConfig.readEntry("folder-font", QFontDatabase::systemFont(QFontDatabase::GeneralFont)));
-    } else {
-        setFont(QFontDatabase::systemFont(QFontDatabase::GeneralFont));
-    }
+    setFont(QFontDatabase::systemFont(QFontDatabase::GeneralFont));
 
     d->folderTreeView->readConfig();
     d->folderTreeView->setDropActionMenuEnabled(SettingsIf->showPopupAfterDnD());
