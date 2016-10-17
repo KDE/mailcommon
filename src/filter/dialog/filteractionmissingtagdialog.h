@@ -22,7 +22,8 @@
 
 #include <QDialog>
 class QListWidget;
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterActionMissingTagDialog : public QDialog
 {
     Q_OBJECT

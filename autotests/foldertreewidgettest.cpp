@@ -150,7 +150,7 @@ private Q_SLOTS:
 
         // Create resources
         const int numResources = numFolders.count();
-        for (int i = 1 /*first one already created*/ ; i < numResources ; ++i ) {
+        for (int i = 1 /*first one already created*/; i < numResources; ++i) {
             AgentInstanceCreateJob *agentCreateJob = new AgentInstanceCreateJob(agentType);
             AKVERIFYEXEC(agentCreateJob);
             const QString identifier = agentCreateJob->instance().identifier();
@@ -163,14 +163,14 @@ private Q_SLOTS:
             topLevelCollections.append(topLevelCollection);
 
             // Now create some folders
-            for (int number = 0 ; number < numFolders[i] ; ++number) {
+            for (int number = 0; number < numFolders[i]; ++number) {
                 Collection mailCollection;
                 mailCollection.setParentCollection(topLevelCollection);
                 mailCollection.setName(QStringLiteral("mailCollection_%1_%2").arg(i).arg(number));
                 CollectionCreateJob *collCreateJob = new CollectionCreateJob(mailCollection);
                 AKVERIFYEXEC(collCreateJob);
             }
-            const int resourceRow = collectNames(mTopModel).indexOf("res" + QString::number(i+1));
+            const int resourceRow = collectNames(mTopModel).indexOf("res" + QString::number(i + 1));
             QModelIndex parent = mTopModel->index(resourceRow, 0);
             QTRY_COMPARE(mTopModel->rowCount(parent), numFolders[i]);
 
@@ -211,7 +211,6 @@ private:
         }
     }
 
-
     static QStringList collectNames(QAbstractItemModel *model);
     EntityMimeTypeFilterModel *mCollectionModel;
     QAbstractItemModel *mTopModel;
@@ -219,11 +218,10 @@ private:
     QStringList mFolderNames;
 };
 
-
 QStringList FolderTreeWidgetTest::collectNames(QAbstractItemModel *model)
 {
     QStringList ret;
-    for (int row = 0 ; row < model->rowCount() ; ++row) {
+    for (int row = 0; row < model->rowCount(); ++row) {
         ret.append(model->index(row, 0).data().toString());
     }
     return ret;

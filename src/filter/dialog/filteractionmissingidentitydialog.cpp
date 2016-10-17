@@ -17,7 +17,6 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #include "filteractionmissingidentitydialog.h"
 #include "kernel/mailkernel.h"
 

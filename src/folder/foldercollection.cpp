@@ -228,7 +228,7 @@ void FolderCollection::readConfig()
     }
 
     mFormatMessage = static_cast<MessageViewer::Viewer::DisplayFormatMessage>(configGroup.readEntry("displayFormatOverride",
-                                                                                              static_cast<int>(MessageViewer::Viewer::UseGlobalSetting)));
+                     static_cast<int>(MessageViewer::Viewer::UseGlobalSetting)));
 }
 
 bool FolderCollection::isValid() const

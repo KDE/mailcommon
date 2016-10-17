@@ -50,7 +50,6 @@ public:
     void execute() Q_DECL_OVERRIDE;
     void kill() Q_DECL_OVERRIDE;
 
-
 private:
     void slotDoWork();
     void slotExpireDone(KJob *job);

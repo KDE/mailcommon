@@ -17,7 +17,6 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #include "filteractionmissingaccountdialog.h"
 #include "filter/kmfilteraccountlist.h"
 #include "util/mailutil.h"

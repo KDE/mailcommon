@@ -52,7 +52,6 @@ FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(
     mComboBoxTemplate->addItems(templateList);
     mainLayout->addWidget(mComboBoxTemplate);
 
-
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);

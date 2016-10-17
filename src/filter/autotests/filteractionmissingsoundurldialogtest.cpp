@@ -38,7 +38,7 @@ FilterActionMissingSoundUrlDialogTest::~FilterActionMissingSoundUrlDialogTest()
 
 void FilterActionMissingSoundUrlDialogTest::shouldHaveDefaultValue()
 {
-    MailCommon::FilterActionMissingSoundUrlDialog dlg(QStringLiteral("filename"),QStringLiteral("arg"));
+    MailCommon::FilterActionMissingSoundUrlDialog dlg(QStringLiteral("filename"), QStringLiteral("arg"));
     QVERIFY(!dlg.windowTitle().isEmpty());
 
     QDialogButtonBox *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));

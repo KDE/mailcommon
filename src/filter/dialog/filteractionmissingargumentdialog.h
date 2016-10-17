@@ -86,6 +86,5 @@ private:
     QPushButton *mOkButton;
 };
 
-
 #endif /* FILTERACTIONMISSINGARGUMENTDIALOG_H */
 
