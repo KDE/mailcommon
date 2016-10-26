@@ -151,17 +151,19 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     } else {
         // make sure to treat messages with multiple header lines for
         // the same header correctly
-        msgContents = msg->headerByType(field()) ?
-                      msg->headerByType(field())->asUnicodeString() :
-                      "";
+        msgContents = "";
+        if (auto hrd = msg->headerByType(field())) {
+            msgContents = hrd->asUnicodeString();
+        }
     }
 
     if (function() == FuncIsInAddressbook ||
             function() == FuncIsNotInAddressbook) {
         // I think only the "from"-field makes sense.
-        msgContents = msg->headerByType(field()) ?
-                      msg->headerByType(field())->asUnicodeString() :
-                      "";
+        msgContents = "";
+        if (auto hrd = msg->headerByType(field())) {
+            msgContents = hrd->asUnicodeString();
+        }
 
         if (msgContents.isEmpty()) {
             return (function() == FuncIsInAddressbook) ? false : true;

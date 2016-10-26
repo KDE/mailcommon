@@ -70,7 +70,10 @@ FilterAction::ReturnCode FilterActionSetIdentity::process(ItemContext &context, 
     }
 
     const KMime::Message::Ptr msg = context.item().payload<KMime::Message::Ptr>();
-    const uint currentId = msg->headerByType("X-KMail-Identity") ? msg->headerByType("X-KMail-Identity")->asUnicodeString().trimmed().toUInt() : 0;
+    uint currentId = 0;
+    if (auto hrd = msg->headerByType("X-KMail-Identity")) {
+        currentId = hrd->asUnicodeString().trimmed().toUInt();
+    }
     if (currentId != mParameter) {
         KMime::Headers::Generic *header = new KMime::Headers::Generic("X-KMail-Identity");
         header->fromUnicodeString(QString::number(mParameter), "utf-8");

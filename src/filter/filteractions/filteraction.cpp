@@ -115,7 +115,10 @@ void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionTyp
     const QPair<bool, KMime::MDN::SendingMode> mdnSend = MDNAdviceHelper::instance()->checkAndSetMDNInfo(item, type, true);
     if (mdnSend.first) {
         const int quote =  MessageViewer::MessageViewerSettings::self()->quoteMessage();
-        QString receiptTo =  msg->headerByType("Disposition-Notification-To") ? msg->headerByType("Disposition-Notification-To")->asUnicodeString() : QString();
+        QString receiptTo;
+        if (auto hrd = msg->headerByType("Disposition-Notification-To")) {
+            receiptTo = hrd->asUnicodeString();
+        }
         if (receiptTo.isEmpty()) {
             return;
         }

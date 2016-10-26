@@ -250,12 +250,18 @@ FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &co
             unfortunate, as we need to removed the original from the folder
             using that, and look it up in the message. When the (new) message
             is uploaded, the header is stripped anyhow. */
-            const QString uid = aMsg->headerByType("X-UID") ? aMsg->headerByType("X-UID")->asUnicodeString() : QString();
+            QString uid;
+            if (auto hrd = aMsg->headerByType("X-UID")) {
+                uid = hrd->asUnicodeString();
+            }
             aMsg->setContent(KMime::CRLFtoLF(msgText));
             aMsg->setFrozen(true);
             aMsg->parse();
 
-            const QString newUid = aMsg->headerByType("X-UID") ? aMsg->headerByType("X-UID")->asUnicodeString() : QString();
+            QString newUid;
+            if (auto hrd = aMsg->headerByType("X-UID")) {
+                newUid = hrd->asUnicodeString();
+            }
             if (uid != newUid) {
                 aMsg->setFrozen(false);
                 KMime::Headers::Generic *header = new KMime::Headers::Generic("X-UID");
