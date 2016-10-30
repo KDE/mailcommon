@@ -371,7 +371,7 @@ bool Kernel::folderIsSentMailFolder(const Akonadi::Collection &col)
     return false;
 }
 
-bool Kernel::folderIsInbox(const Akonadi::Collection &collection, bool withoutPop3InboxSetting)
+bool Kernel::folderIsInbox(const Akonadi::Collection &collection)
 {
     if (collection.remoteId().toLower() == QLatin1String("inbox") ||
             collection.remoteId().toLower() == QLatin1String("/inbox") ||
@@ -386,26 +386,6 @@ bool Kernel::folderIsInbox(const Akonadi::Collection &collection, bool withoutPo
     //MBOX is one folder only, treat as inbox
     if (collection.resource().contains(MBOX_RESOURCE_IDENTIFIER)) {
         return true;
-    }
-
-    if (!withoutPop3InboxSetting) {
-        const Akonadi::AgentInstance::List lst = MailCommon::Util::agentInstances();
-        foreach (const Akonadi::AgentInstance &type, lst) {
-            if (type.status() == Akonadi::AgentInstance::Broken) {
-                continue;
-            }
-            const QString typeIdentifier = type.identifier();
-            if (typeIdentifier.contains(POP3_RESOURCE_IDENTIFIER)) {
-                PimCommon::ResourceReadConfigFile resourceFile(typeIdentifier);
-                const KConfigGroup grp = resourceFile.group(QStringLiteral("General"));
-                if (grp.isValid()) {
-                    const Akonadi::Collection::Id targetCollection = grp.readEntry(QStringLiteral("targetCollection"), -1);
-                    if (targetCollection == collection.id()) {
-                        return true;
-                    }
-                }
-            }
-        }
     }
     return false;
 }

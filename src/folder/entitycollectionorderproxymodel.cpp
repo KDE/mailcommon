@@ -45,7 +45,7 @@ public:
         }
 
         int rank = 100;
-        if (Kernel::folderIsInbox(collection, true)) {
+        if (Kernel::folderIsInbox(collection)) {
             rank = 1;
         } else if (Kernel::self()->folderIsDraftOrOutbox(collection)) {
             if (Kernel::self()->folderIsDrafts(collection)) {

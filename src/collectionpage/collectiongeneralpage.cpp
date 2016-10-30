@@ -79,7 +79,7 @@ void CollectionGeneralPage::addLine(QWidget *parent, QVBoxLayout *layout)
 void CollectionGeneralPage::init(const Akonadi::Collection &collection)
 {
     mIsLocalSystemFolder = CommonKernel->isSystemFolderCollection(collection) ||
-                           Kernel::folderIsInbox(collection, true);
+                           Kernel::folderIsInbox(collection);
 
     mIsResourceFolder = (collection.parentCollection() == Akonadi::Collection::root());
     QLabel *label;
