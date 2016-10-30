@@ -410,5 +410,26 @@ bool Kernel::folderIsInbox(const Akonadi::Collection &collection, bool withoutPo
     return false;
 }
 
+QMap<QString, Akonadi::Collection::Id> Kernel::folderIsInbox()
+{
+    QMap<QString, Akonadi::Collection::Id> mapIdentifierCollectionId;
+    const Akonadi::AgentInstance::List lst = MailCommon::Util::agentInstances();
+    foreach (const Akonadi::AgentInstance &type, lst) {
+        if (type.status() == Akonadi::AgentInstance::Broken) {
+            continue;
+        }
+        const QString typeIdentifier = type.identifier();
+        if (typeIdentifier.contains(POP3_RESOURCE_IDENTIFIER)) {
+            PimCommon::ResourceReadConfigFile resourceFile(typeIdentifier);
+            const KConfigGroup grp = resourceFile.group(QStringLiteral("General"));
+            if (grp.isValid()) {
+                const Akonadi::Collection::Id targetCollection = grp.readEntry(QStringLiteral("targetCollection"), -1);
+                mapIdentifierCollectionId.insert(typeIdentifier, targetCollection);
+            }
+        }
+    }
+    return mapIdentifierCollectionId;
+}
+
 }
 
