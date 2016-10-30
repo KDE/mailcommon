@@ -143,7 +143,7 @@ public:
 
     PimCommon::ImapResourceCapabilitiesManager *imapResourceManager() const;
 
-    static QMap<QString, Akonadi::Collection::Id> folderIsInbox();
+    static QMap<QString, Akonadi::Collection::Id> pop3ResourceTargetCollection();
 private:
     void findCreateDefaultCollection(Akonadi::SpecialMailCollections::Type);
 

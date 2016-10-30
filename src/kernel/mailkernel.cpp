@@ -410,7 +410,7 @@ bool Kernel::folderIsInbox(const Akonadi::Collection &collection, bool withoutPo
     return false;
 }
 
-QMap<QString, Akonadi::Collection::Id> Kernel::folderIsInbox()
+QMap<QString, Akonadi::Collection::Id> Kernel::pop3ResourceTargetCollection()
 {
     QMap<QString, Akonadi::Collection::Id> mapIdentifierCollectionId;
     const Akonadi::AgentInstance::List lst = MailCommon::Util::agentInstances();
