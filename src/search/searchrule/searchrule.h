@@ -38,7 +38,7 @@ public:
     /**
      * Defines a pointer to a search rule.
      */
-    typedef boost::shared_ptr<SearchRule> Ptr;
+    typedef std::shared_ptr<SearchRule> Ptr;
 
     /**
      * Describes operators for comparison of field and contents.
