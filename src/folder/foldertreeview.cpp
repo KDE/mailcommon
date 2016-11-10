@@ -213,7 +213,7 @@ void FolderTreeView::slotHeaderContextMenuRequested(const QPoint &pnt)
 
 void FolderTreeView::slotHeaderContextMenuChangeSortingPolicy(bool)
 {
-    QAction *act = dynamic_cast< QAction * >(sender());
+    QAction *act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }
@@ -263,7 +263,7 @@ void FolderTreeView::setSortingPolicy(FolderTreeWidget::SortingPolicy policy, bo
 
 void FolderTreeView::slotHeaderContextMenuChangeToolTipDisplayPolicy(bool)
 {
-    QAction *act = dynamic_cast< QAction * >(sender());
+    QAction *act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }
@@ -280,7 +280,7 @@ void FolderTreeView::slotHeaderContextMenuChangeToolTipDisplayPolicy(bool)
 
 void FolderTreeView::slotHeaderContextMenuChangeHeader(bool)
 {
-    QAction *act = dynamic_cast< QAction * >(sender());
+    QAction *act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }
@@ -306,7 +306,7 @@ void FolderTreeView::slotHeaderContextMenuChangeHeader(bool)
 
 void FolderTreeView::slotHeaderContextMenuChangeIconSize(bool)
 {
-    QAction *act = dynamic_cast< QAction * >(sender());
+    QAction *act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }
