@@ -63,7 +63,7 @@ public:
      *
      * @param state The state the attribute will have.
      */
-    explicit MDNStateAttribute(const MDNSentState &state = MDNStateUnknown);
+    explicit MDNStateAttribute(MDNSentState state = MDNStateUnknown);
 
     /**
      * Creates a new MDN state attribute.
@@ -100,7 +100,7 @@ public:
     /**
      * Sets the MDN @p state.
      */
-    void setMDNState(const MDNSentState &state);
+    void setMDNState(MDNSentState state);
 
     /**
      * Returns the MDN state.

@@ -23,6 +23,7 @@ namespace MailCommon
 class MailFilter;
 class KMFilterAccountList : public QTreeWidget
 {
+    Q_OBJECT
 public:
     explicit KMFilterAccountList(QWidget *parent);
     ~KMFilterAccountList();

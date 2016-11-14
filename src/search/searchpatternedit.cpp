@@ -450,12 +450,12 @@ void SearchRuleWidgetLister::setRuleList(QList<SearchRule::Ptr> *aList)
     mRuleList = aList;
 
     if (!widgets().isEmpty()) {   // move this below next 'if'?
-        widgets().first()->blockSignals(true);
+        widgets().constFirst()->blockSignals(true);
     }
 
     if (aList->isEmpty()) {
         slotClear();
-        widgets().first()->blockSignals(false);
+        widgets().constFirst()->blockSignals(false);
         return;
     }
 
@@ -486,7 +486,7 @@ void SearchRuleWidgetLister::setRuleList(QList<SearchRule::Ptr> *aList)
     }
 
     Q_ASSERT(!widgets().isEmpty());
-    widgets().first()->blockSignals(false);
+    widgets().constFirst()->blockSignals(false);
     updateAddRemoveButton();
 }
 

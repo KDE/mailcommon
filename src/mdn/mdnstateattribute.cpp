@@ -54,7 +54,7 @@ public:
         return state;
     }
 
-    QByteArray stateToData(const MDNSentState &state)
+    QByteArray stateToData(MDNSentState state)
     {
         QByteArray data = "U"; // Unknown
 
@@ -76,7 +76,7 @@ public:
     QByteArray mSentState;
 };
 
-MDNStateAttribute::MDNStateAttribute(const MDNSentState &state)
+MDNStateAttribute::MDNStateAttribute(MDNSentState state)
     : d(new Private)
 {
     d->mSentState = d->stateToData(state);
@@ -114,7 +114,7 @@ void MDNStateAttribute::deserialize(const QByteArray &data)
     d->mSentState = data;
 }
 
-void MDNStateAttribute::setMDNState(const MDNSentState &state)
+void MDNStateAttribute::setMDNState(MDNSentState state)
 {
     d->mSentState = d->stateToData(state);
 }

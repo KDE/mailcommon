@@ -305,13 +305,13 @@ void FilterActionWidgetLister::setActionList(QList<FilterAction *> *list)
     static_cast<QWidget *>(parent())->setEnabled(true);
 
     if (!widgets().isEmpty()) {   // move this below next 'if'?
-        widgets().first()->blockSignals(true);
+        widgets().constFirst()->blockSignals(true);
     }
 
     if (list->isEmpty()) {
         slotClear();
-        connectWidget(widgets().first(), 0);
-        widgets().first()->blockSignals(false);
+        connectWidget(widgets().constFirst(), 0);
+        widgets().constFirst()->blockSignals(false);
         return;
     }
 
@@ -337,7 +337,7 @@ void FilterActionWidgetLister::setActionList(QList<FilterAction *> *list)
             (aIt != aEnd && wIt != wEnd); ++aIt, ++wIt) {
         connectWidget((*wIt), (*aIt));
     }
-    widgets().first()->blockSignals(false);
+    widgets().constFirst()->blockSignals(false);
     updateAddRemoveButton();
 
 }

@@ -155,9 +155,9 @@ QString HeadersRuleWidgetHandler::value(const QByteArray &field,
     }
     SearchRule::Function func = currentFunction(functionStack);
     if (func == SearchRule::FuncIsInAddressbook) {
-        return "is in address book"; // just a non-empty dummy value
+        return QStringLiteral("is in address book"); // just a non-empty dummy value
     } else if (func == SearchRule::FuncIsNotInAddressbook) {
-        return "is not in address book"; // just a non-empty dummy value
+        return QStringLiteral("is not in address book"); // just a non-empty dummy value
     } else {
         return currentValue(valueStack, func);
     }

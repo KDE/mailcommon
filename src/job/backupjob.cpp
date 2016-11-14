@@ -291,7 +291,7 @@ void BackupJob::itemFetchJobResult(KJob *job)
         Akonadi::ItemFetchJob *fetchJob = dynamic_cast<Akonadi::ItemFetchJob *>(job);
         Q_ASSERT(fetchJob);
         Q_ASSERT(fetchJob->items().size() == 1);
-        processMessage(fetchJob->items().first());
+        processMessage(fetchJob->items().constFirst());
     }
 }
 
