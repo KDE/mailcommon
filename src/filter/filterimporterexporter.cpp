@@ -363,7 +363,7 @@ void FilterImporterExporter::exportFilters(const QList<MailFilter *> &filters, c
         writeFiltersToConfig(filters, config, true);
         //qDeleteAll(filters);
     } else {
-        QScopedPointer<FilterSelectionDialog> dlg(new FilterSelectionDialog(d->mParent));
+        std::unique_ptr<FilterSelectionDialog> dlg(new FilterSelectionDialog(d->mParent));
         dlg->setFilters(filters);
         if (dlg->exec() == QDialog::Accepted && dlg) {
             QList<MailFilter *> lst = dlg->selectedFilters();
