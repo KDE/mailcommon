@@ -79,7 +79,7 @@ void RedirectWidget::setFocus()
 
 void RedirectWidget::slotAddressSelection()
 {
-    QScopedPointer<Akonadi::EmailAddressSelectionDialog> dlg(
+    std::unique_ptr<Akonadi::EmailAddressSelectionDialog> dlg(
         new Akonadi::EmailAddressSelectionDialog(this));
 
     dlg->view()->view()->setSelectionMode(QAbstractItemView::MultiSelection);
