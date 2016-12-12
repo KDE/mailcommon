@@ -165,6 +165,7 @@ set(libmailcommon_util_SRCS
 
 set(libmailcommon_plugincheckbeforeclosing_SRCS
    plugincheckbeforeclosing/plugincheckbeforeclosing.cpp
+   plugincheckbeforeclosing/plugincheckbeforeclosinginterface.cpp
    )
    
 set(libmailcommon_SRCS
@@ -268,6 +269,7 @@ if (BUILD_TESTING)
    add_subdirectory(filter/tests) 
    add_subdirectory(search/autotests)
    add_subdirectory(mdn/autotests/)
+   add_subdirectory(plugincheckbeforeclosing/autotests)
 endif()
 
 ecm_generate_headers(MailCommon_CamelCase_HEADERS
