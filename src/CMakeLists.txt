@@ -162,6 +162,11 @@ set(libmailcommon_util_SRCS
   util/resourcereadconfigfile.cpp
 )
 
+
+set(libmailcommon_plugincheckbeforeclosing_SRCS
+   plugincheckbeforeclosing/plugincheckbeforeclosing.cpp
+   )
+   
 set(libmailcommon_SRCS
   kernel/mailkernel.cpp
   ${libmailcommon_filter_dialog}
@@ -176,6 +181,7 @@ set(libmailcommon_SRCS
   ${libmailcommon_collection_SRCS}
   ${libmailcommon_folder_SRCS}
   ${libmailcommon_filter_SRCS}
+  ${libmailcommon_plugincheckbeforeclosing_SRCS}
 )
 kconfig_add_kcfg_files(libmailcommon_SRCS
     settings/mailcommonsettings_base.kcfgc
