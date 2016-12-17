@@ -239,7 +239,7 @@ Akonadi::Collection::List FolderTreeWidget::selectedCollections() const
     Akonadi::Collection::List collections;
     const QItemSelectionModel *selectionModel = d->folderTreeView->selectionModel();
     const QModelIndexList selectedIndexes = selectionModel->selectedIndexes();
-    foreach (const QModelIndex &index, selectedIndexes) {
+    for (const QModelIndex &index : selectedIndexes) {
         if (index.isValid()) {
             const Akonadi::Collection collection =
                 index.model()->data(

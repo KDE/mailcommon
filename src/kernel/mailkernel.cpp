@@ -341,7 +341,7 @@ bool Kernel::folderIsTrash(const Akonadi::Collection &col)
     }
 
     const Akonadi::AgentInstance::List lst = MailCommon::Util::agentInstances();
-    foreach (const Akonadi::AgentInstance &agent, lst) {
+    for (const Akonadi::AgentInstance &agent : lst) {
         const Akonadi::Collection trash = Akonadi::SpecialMailCollections::self()->collection(Akonadi::SpecialMailCollections::Trash, agent);
         if (col == trash) {
             return true;
@@ -394,7 +394,7 @@ QMap<QString, Akonadi::Collection::Id> Kernel::pop3ResourceTargetCollection()
 {
     QMap<QString, Akonadi::Collection::Id> mapIdentifierCollectionId;
     const Akonadi::AgentInstance::List lst = MailCommon::Util::agentInstances();
-    foreach (const Akonadi::AgentInstance &type, lst) {
+    for (const Akonadi::AgentInstance &type : lst) {
         if (type.status() == Akonadi::AgentInstance::Broken) {
             continue;
         }

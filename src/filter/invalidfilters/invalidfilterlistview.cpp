@@ -39,7 +39,7 @@ InvalidFilterListView::~InvalidFilterListView()
 
 void InvalidFilterListView::setInvalidFilters(const QVector<MailCommon::InvalidFilterInfo> &lst)
 {
-    Q_FOREACH (const MailCommon::InvalidFilterInfo &info, lst) {
+    for (const MailCommon::InvalidFilterInfo &info : lst) {
         model()->insertRow(0);
         const QModelIndex index = model()->index(0, 0);
         model()->setData(index, info.name(), Qt::DisplayRole);

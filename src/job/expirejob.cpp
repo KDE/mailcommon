@@ -222,7 +222,7 @@ void ExpireJob::slotMoveDone(KJob *job)
     }
     Akonadi::ItemMoveJob *itemjob = dynamic_cast<Akonadi::ItemMoveJob *>(job);
     if (itemjob) {
-        Akonadi::Item::List lst = itemjob->items();
+        const Akonadi::Item::List lst = itemjob->items();
         if (!lst.isEmpty()) {
             Akonadi::Item::List newLst;
             Q_FOREACH (Akonadi::Item item, lst) {

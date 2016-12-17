@@ -232,7 +232,7 @@ void FilterManager::filter(const Akonadi::Item::List &messages, FilterManager::F
     QList<qint64> itemIds;
 
     itemIds.reserve(messages.size());
-    foreach (const Akonadi::Item &item, messages) {
+    for (const Akonadi::Item &item : messages) {
         itemIds << item.id();
     }
 

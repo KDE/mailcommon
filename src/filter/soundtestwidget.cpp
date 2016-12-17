@@ -91,7 +91,7 @@ void SoundTestWidget::openSoundDialog(KUrlRequester *)
         QDir dir;
         dir.setFilter(QDir::Files | QDir::Readable);
 
-        foreach (const QString &soundDir, soundDirs) {
+        for (const QString &soundDir : soundDirs) {
             dir = soundDir;
             if (dir.isReadable() && dir.count() > 2) {
                 soundURL.setPath(soundDir);

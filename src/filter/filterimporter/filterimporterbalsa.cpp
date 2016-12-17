@@ -53,7 +53,7 @@ QString FilterImporterBalsa::defaultFiltersSettingsPath()
 void FilterImporterBalsa::readConfig(KConfig *config)
 {
     const QStringList filterList = config->groupList().filter(QRegularExpression(QStringLiteral("filter-\\d+")));
-    Q_FOREACH (const QString &filter, filterList) {
+    for (const QString &filter : filterList) {
         KConfigGroup grp = config->group(filter);
         parseFilter(grp);
     }

@@ -103,7 +103,7 @@ void FilterImporterExporter::writeFiltersToConfig(const QList<MailFilter *> &fil
     const QStringList filterGroups =
         config->groupList().filter(QRegularExpression(QStringLiteral("Filter #\\d+")));
 
-    foreach (const QString &group, filterGroups) {
+    for (const QString &group : filterGroups) {
         config->deleteGroup(group);
     }
 

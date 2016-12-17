@@ -112,7 +112,7 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
     templateCombo->addItem(i18n("Default Template"));
 
     const QStringList templateNames = SettingsIf->customTemplates();
-    foreach (const QString &templateName, templateNames) {
+    for (const QString &templateName : templateNames) {
         TemplateParser::CTemplates templat(templateName);
         if (templat.type() == TemplateParser::CustomTemplates::TForward ||
                 templat.type() == TemplateParser::CustomTemplates::TUniversal) {
@@ -211,7 +211,7 @@ bool FilterActionForward::argsFromStringInteractive(const QString &argsStr, cons
         const QStringList templateNames = SettingsIf->customTemplates();
         QStringList currentTemplateList;
         currentTemplateList << i18n("Default Template");
-        foreach (const QString &templateName, templateNames) {
+        for (const QString &templateName : templateNames) {
             TemplateParser::CTemplates templat(templateName);
             if (templat.type() == TemplateParser::CustomTemplates::TForward ||
                     templat.type() == TemplateParser::CustomTemplates::TUniversal) {
