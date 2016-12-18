@@ -81,7 +81,7 @@ private Q_SLOTS:
         QCOMPARE(collectNames(mTopModel), mFolderNames);
     }
 
-    void createAndDeleteSearchCollection() // testCreateResources must have been called before
+    void createAndDeleteSearchCollection()
     {
 #if KITEMMODELS_VERSION <= QT_VERSION_CHECK(5, 25, 0)
         QSKIP("This test requires a fix in kitemmodels' KRecursiveFilterProxyModel");
