@@ -86,7 +86,7 @@ SearchRule::RequiredPart FilterActionRemoveHeader::requiredPart() const
 
 void FilterActionRemoveHeader::setParamWidgetValue(QWidget *paramWidget) const
 {
-    PimCommon::MinimumComboBox *comboBox = dynamic_cast<PimCommon::MinimumComboBox *>(paramWidget);
+    PimCommon::MinimumComboBox *comboBox = qobject_cast<PimCommon::MinimumComboBox *>(paramWidget);
     Q_ASSERT(comboBox);
 
     const int index = mParameterList.indexOf(mParameter);

@@ -490,7 +490,7 @@ void KMFilterDialog::slotRunFilters()
 
 void KMFilterDialog::slotFetchItemsForFolderDone(KJob *job)
 {
-    Akonadi::ItemFetchJob *fjob = dynamic_cast<Akonadi::ItemFetchJob *>(job);
+    Akonadi::ItemFetchJob *fjob = qobject_cast<Akonadi::ItemFetchJob *>(job);
     Q_ASSERT(fjob);
 
     QStringList filtersId;

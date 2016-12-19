@@ -99,7 +99,7 @@ SearchRule::RequiredPart FilterActionSetTransport::requiredPart() const
 
 void FilterActionSetTransport::applyParamWidgetValue(QWidget *paramWidget)
 {
-    const MailTransport::TransportComboBox *comboBox = dynamic_cast<MailTransport::TransportComboBox *>(paramWidget);
+    const MailTransport::TransportComboBox *comboBox = qobject_cast<MailTransport::TransportComboBox *>(paramWidget);
     Q_ASSERT(comboBox);
 
     mParameter = comboBox->currentTransportId();
@@ -108,7 +108,7 @@ void FilterActionSetTransport::applyParamWidgetValue(QWidget *paramWidget)
 
 void FilterActionSetTransport::clearParamWidget(QWidget *paramWidget) const
 {
-    MailTransport::TransportComboBox *comboBox = dynamic_cast<MailTransport::TransportComboBox *>(paramWidget);
+    MailTransport::TransportComboBox *comboBox = qobject_cast<MailTransport::TransportComboBox *>(paramWidget);
     Q_ASSERT(comboBox);
 
     comboBox->setCurrentIndex(0);
@@ -116,7 +116,7 @@ void FilterActionSetTransport::clearParamWidget(QWidget *paramWidget) const
 
 void FilterActionSetTransport::setParamWidgetValue(QWidget *paramWidget) const
 {
-    MailTransport::TransportComboBox *comboBox = dynamic_cast<MailTransport::TransportComboBox *>(paramWidget);
+    MailTransport::TransportComboBox *comboBox = qobject_cast<MailTransport::TransportComboBox *>(paramWidget);
     Q_ASSERT(comboBox);
 
     comboBox->setCurrentTransport(mParameter);

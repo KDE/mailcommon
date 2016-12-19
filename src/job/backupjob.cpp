@@ -288,7 +288,7 @@ void BackupJob::itemFetchJobResult(KJob *job)
         qCWarning(MAILCOMMON_LOG) << job->errorString();
         abort(i18n("Downloading a message in folder '%1' failed.", mCurrentFolder.name()));
     } else {
-        Akonadi::ItemFetchJob *fetchJob = dynamic_cast<Akonadi::ItemFetchJob *>(job);
+        Akonadi::ItemFetchJob *fetchJob = qobject_cast<Akonadi::ItemFetchJob *>(job);
         Q_ASSERT(fetchJob);
         Q_ASSERT(fetchJob->items().size() == 1);
         processMessage(fetchJob->items().constFirst());

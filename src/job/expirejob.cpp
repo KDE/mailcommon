@@ -220,7 +220,7 @@ void ExpireJob::slotMoveDone(KJob *job)
     if (job->error()) {
         qCCritical(MAILCOMMON_LOG) << job->error() << job->errorString();
     }
-    Akonadi::ItemMoveJob *itemjob = dynamic_cast<Akonadi::ItemMoveJob *>(job);
+    Akonadi::ItemMoveJob *itemjob = qobject_cast<Akonadi::ItemMoveJob *>(job);
     if (itemjob) {
         const Akonadi::Item::List lst = itemjob->items();
         if (!lst.isEmpty()) {
