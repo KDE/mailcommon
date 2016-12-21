@@ -244,7 +244,7 @@ void FilterManager::filter(const Akonadi::Item::List &messages, SearchRule::Requ
     QList<qint64> itemIds;
 
     itemIds.reserve(messages.size());
-    foreach (const Akonadi::Item &item, messages) {
+    for (const Akonadi::Item &item : messages) {
         itemIds << item.id();
     }
     d->mMailFilterAgentInterface->applySpecificFilters(itemIds, static_cast<int>(requiredPart), listFilters);
@@ -267,7 +267,7 @@ void FilterManager::appendFilters(const QList<MailCommon::MailFilter *> &filters
 {
     beginUpdate();
     if (replaceIfNameExists) {
-        foreach (const MailCommon::MailFilter *newFilter, filters) {
+        for (const MailCommon::MailFilter *newFilter : filters) {
             int numberOfFilters = d->mFilters.count();
             for (int i = 0; i < numberOfFilters; ++i) {
                 MailCommon::MailFilter *filter = d->mFilters.at(i);

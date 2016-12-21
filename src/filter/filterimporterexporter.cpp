@@ -108,7 +108,7 @@ void FilterImporterExporter::writeFiltersToConfig(const QList<MailFilter *> &fil
     }
 
     int i = 0;
-    foreach (const MailFilter *filter, filters) {
+    for (const MailFilter *filter : filters) {
         if (!filter->isEmpty()) {
             const QString groupName = QStringLiteral("Filter #%1").arg(i);
 

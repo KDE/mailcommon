@@ -138,7 +138,8 @@ bool MailCommon::Util::showJobErrorMessage(KJob *job)
 Akonadi::AgentInstance::List MailCommon::Util::agentInstances(bool excludeMailDispacher)
 {
     Akonadi::AgentInstance::List relevantInstances;
-    foreach (const Akonadi::AgentInstance &instance, Akonadi::AgentManager::self()->instances()) {
+    const Akonadi::AgentInstance::List agentList = Akonadi::AgentManager::self()->instances();
+    for (const Akonadi::AgentInstance &instance : agentList) {
         const QStringList capabilities(instance.type().capabilities());
         if (instance.type().mimeTypes().contains(KMime::Message::mimeType())) {
             if (capabilities.contains(QStringLiteral("Resource")) &&

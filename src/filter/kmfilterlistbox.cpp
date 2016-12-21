@@ -801,7 +801,7 @@ void KMFilterListBox::loadFilterList(bool createDummyFilter)
     mListWidget->clear();
 
     const QList<MailFilter *> filters = MailCommon::FilterManager::instance()->filters();
-    foreach (MailFilter *filter, filters) {
+    for (MailFilter *filter : filters) {
         QListWidgetFilterItem *item =
             new QListWidgetFilterItem(filter->pattern()->name(), mListWidget);
         item->setFilter(new MailFilter(*filter));

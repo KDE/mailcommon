@@ -104,10 +104,9 @@ namespace
  */
 int childCount(const QObject *parent, const QString &objName)
 {
-    QObjectList list = parent->children();
-    QObject *item;
+    const QObjectList list = parent->children();
     int count = 0;
-    foreach (item, list) {
+    for (QObject *item : list) {
         if (item->objectName() == objName) {
             count++;
         }

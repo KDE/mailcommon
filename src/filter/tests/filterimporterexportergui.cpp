@@ -93,13 +93,13 @@ void FilterImporterExporterGui::importFilters(MailCommon::FilterImporterExporter
 {
     MailCommon::FilterImporterExporter importer(this);
     bool canceled = false;
-    QList<MailCommon::MailFilter *> filters = importer.importFilters(canceled, type);
+    const QList<MailCommon::MailFilter *> filters = importer.importFilters(canceled, type);
     if (canceled) {
         mTextEdit->setText(QStringLiteral("Canceled"));
         return;
     }
     QString result;
-    Q_FOREACH (MailCommon::MailFilter *filter, filters) {
+    for (MailCommon::MailFilter *filter : filters) {
         if (!result.isEmpty()) {
             result += QLatin1Char('\n');
         }

@@ -359,7 +359,7 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
 
                 const KContacts::Addressee::List contacts = job->contacts();
 
-                foreach (const KContacts::Addressee &contact, contacts) {
+                for (const KContacts::Addressee &contact : contacts) {
                     if (contact.hasCategory(category)) {
                         return true;
                     }
@@ -383,7 +383,7 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
 
                 const KContacts::Addressee::List contacts = job->contacts();
 
-                foreach (const KContacts::Addressee &contact, contacts) {
+                for (const KContacts::Addressee &contact : contacts) {
                     if (contact.hasCategory(category)) {
                         return false;
                     }

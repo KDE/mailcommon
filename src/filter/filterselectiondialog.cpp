@@ -106,7 +106,7 @@ void FilterSelectionDialog::setFilters(const QList<MailFilter *> &filters)
     originalFilters = filters;
     filtersListWidget->clear();
 
-    foreach (const MailFilter *filter, filters) {
+    for (const MailFilter *filter : filters) {
         QListWidgetItem *item = new QListWidgetItem(filter->name(), filtersListWidget);
         item->setFlags(Qt::ItemIsUserCheckable | Qt::ItemIsEnabled);
         item->setCheckState(Qt::Checked);

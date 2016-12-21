@@ -225,7 +225,7 @@ void ExpireJob::slotMoveDone(KJob *job)
         const Akonadi::Item::List lst = itemjob->items();
         if (!lst.isEmpty()) {
             Akonadi::Item::List newLst;
-            Q_FOREACH (Akonadi::Item item, lst) {
+            for (Akonadi::Item item : lst) {
                 if (!item.hasFlag(Akonadi::MessageFlags::Seen)) {
                     item.setFlag(Akonadi::MessageFlags::Seen);
                     newLst << item;
