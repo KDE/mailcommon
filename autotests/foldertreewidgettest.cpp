@@ -32,6 +32,7 @@
 #include <AkonadiCore/CollectionDeleteJob>
 #include <AkonadiCore/CollectionCreateJob>
 #include <AkonadiCore/CollectionFetchJob>
+#include <AkonadiCore/CollectionMoveJob>
 #include <AkonadiCore/EntityOrderProxyModel>
 
 #include <KMime/Message>
@@ -52,6 +53,8 @@
 #include <QTemporaryDir>
 
 #include "dummykernel.cpp"
+
+//#define SHOW_WIDGET
 
 using namespace Akonadi;
 
@@ -179,6 +182,48 @@ private Q_SLOTS:
         QCOMPARE(collectNames(mTopModel), mFolderNames);
     }
 
+    void testMoveFolder()
+    {
+#if QT_VERSION < QT_VERSION_CHECK(5, 8, 1) || KITEMMODELS_VERSION < QT_VERSION_CHECK(5, 30, 0)
+        QSKIP("This test requires fixes in QSFPM, QIPM (which were made in Qt 5.8.1) and KExtraColumnsProxyModel >= 5.30");
+#endif
+        // Given a source folder with 2 levels of parents (res1/sub1/sub2)
+        const QStringList folderNames = collectNames(mCollectionModel);
+        const QModelIndex res1Index = mCollectionModel->index(folderNames.indexOf("res1"), 0, QModelIndex());
+        const Collection topLevelCollection = res1Index.data(EntityTreeModel::CollectionRole).value<Collection>();
+        QCOMPARE(topLevelCollection.name(), QStringLiteral("res1"));
+        const int parentCount = 2;
+        Collection currentColl = topLevelCollection;
+        for (int number = 0; number < parentCount; ++number) {
+            Collection mailCollection;
+            mailCollection.setParentCollection(currentColl);
+            mailCollection.setName(QStringLiteral("sub%1").arg(number+1));
+            CollectionCreateJob *collCreateJob = new CollectionCreateJob(mailCollection);
+            AKVERIFYEXEC(collCreateJob);
+            currentColl = collCreateJob->collection();
+        }
+        QTRY_COMPARE(mCollectionModel->rowCount(res1Index), 1);
+
+        // ... and a dest folder in another resource
+        const QPersistentModelIndex res2Index = mCollectionModel->index(folderNames.indexOf("res2"), 0, QModelIndex());
+        const int origRowCount = mCollectionModel->rowCount(res2Index);
+        const Collection newParentCollection = res2Index.data(EntityTreeModel::CollectionRole).value<Collection>();
+        QCOMPARE(newParentCollection.name(), QStringLiteral("res2"));
+
+        QTest::qWait(100); // #### akonadi bug? Without this, a warning "Only resources can modify remote identifiers" appears
+
+        // When moving the source folder (sub2) to the dest folder
+        CollectionMoveJob *collMoveJob = new CollectionMoveJob(currentColl, newParentCollection);
+        AKVERIFYEXEC(collMoveJob);
+
+        // wait for Akonadi::Monitor::collectionMoved
+        QTRY_COMPARE(mCollectionModel->rowCount(res2Index), origRowCount+1);
+
+#ifdef SHOW_WIDGET
+        QTest::qWait(1000);
+#endif
+    }
+
 private:
     static Collection topLevelCollectionForResource(const QString &identifier)
     {
@@ -202,6 +247,7 @@ private:
     static void checkMailFolders(const QModelIndex &parent)
     {
         const QAbstractItemModel *model = parent.model();
+        QVERIFY(model);
         for (int row = 0; row < model->rowCount(parent); ++row) {
             QModelIndex idx = model->index(row, 0, parent);
             QModelIndex col1idx = model->index(row, 1, parent);
@@ -221,6 +267,7 @@ private:
 QStringList FolderTreeWidgetTest::collectNames(QAbstractItemModel *model)
 {
     QStringList ret;
+    ret.reserve(model->rowCount());
     for (int row = 0; row < model->rowCount(); ++row) {
         ret.append(model->index(row, 0).data().toString());
     }
