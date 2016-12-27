@@ -107,7 +107,7 @@ protected Q_SLOTS:
 Q_SIGNALS:
     void changeTooltipsPolicy(FolderTreeWidget::ToolTipDisplayPolicy);
     void manualSortingChanged(bool actif);
-    void prefereCreateNewTab(bool);
+    void newTabRequested(bool);
 
 private:
     bool ignoreUnreadFolder(const Akonadi::Collection &, bool) const;

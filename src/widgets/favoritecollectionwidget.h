@@ -52,7 +52,7 @@ protected:
 
     void mousePressEvent(QMouseEvent *e) Q_DECL_OVERRIDE;
 Q_SIGNALS:
-    void prefereCreateNewTab(bool);
+    void newTabRequested(bool);
 
 private:
     void createMenu(KActionCollection *ac);

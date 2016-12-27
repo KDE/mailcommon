@@ -72,7 +72,7 @@ FavoriteCollectionWidget::~FavoriteCollectionWidget()
 void FavoriteCollectionWidget::mousePressEvent(QMouseEvent *e)
 {
     const bool buttonPressedIsMiddle = (e->button() == Qt::MidButton);
-    Q_EMIT prefereCreateNewTab(buttonPressedIsMiddle);
+    Q_EMIT newTabRequested(buttonPressedIsMiddle);
     Akonadi::EntityListView::mousePressEvent(e);
 }
 
