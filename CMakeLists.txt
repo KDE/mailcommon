@@ -19,7 +19,7 @@ include(ECMQtDeclareLoggingCategory)
 include(ECMAddTests)
 include(ECMCoverageOption)
 
-set(PIM_VERSION "5.4.40")
+set(PIM_VERSION "5.4.41")
 set(MAILCOMMON_LIB_VERSION ${PIM_VERSION})
 set(AKONADIMIME_LIB_VERSION "5.4.40")
 set(MESSAGELIB_LIB_VERSION "5.4.40")
