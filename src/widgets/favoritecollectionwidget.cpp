@@ -30,6 +30,7 @@
 
 #include <QPainter>
 #include <QFontDatabase>
+#include <QMouseEvent>
 
 using namespace MailCommon;
 
@@ -67,6 +68,14 @@ FavoriteCollectionWidget::~FavoriteCollectionWidget()
 {
     delete d;
 }
+
+void FavoriteCollectionWidget::mousePressEvent(QMouseEvent *e)
+{
+    const bool buttonPressedIsMiddle = (e->button() == Qt::MidButton);
+    Q_EMIT prefereCreateNewTab(buttonPressedIsMiddle);
+    Akonadi::EntityListView::mousePressEvent(e);
+}
+
 
 void FavoriteCollectionWidget::updateMode()
 {

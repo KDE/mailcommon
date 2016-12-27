@@ -50,6 +50,10 @@ protected Q_SLOTS:
 protected:
     void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;
 
+    void mousePressEvent(QMouseEvent *e) Q_DECL_OVERRIDE;
+Q_SIGNALS:
+    void prefereCreateNewTab(bool);
+
 private:
     void createMenu(KActionCollection *ac);
     class Private;
