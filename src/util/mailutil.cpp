@@ -353,19 +353,18 @@ QString MailCommon::Util::convertFolderPathToCollectionStr(const QString &folder
 
 bool MailCommon::Util::foundMailer()
 {
-    QStringList lst;
-    lst << MailImporter::FilterEvolution::defaultSettingsPath();
-    lst << MailImporter::FilterEvolution_v2::defaultSettingsPath();
-    lst << MailImporter::FilterEvolution_v3::defaultSettingsPath();
-    lst << MailImporter::FilterBalsa::defaultSettingsPath();
-    lst << MailImporter::FilterClawsMail::defaultSettingsPath();
-    lst << MailImporter::FilterOpera::defaultSettingsPath();
-    lst << MailImporter::FilterSylpheed::defaultSettingsPath();
-    lst << MailImporter::FilterThunderbird::defaultSettingsPath();
-    lst << MailImporter::OtherMailerUtil::trojitaDefaultPath();
-    lst << MailImporter::FilterIcedove::defaultSettingsPath();
+    const QStringList lst = { MailImporter::FilterEvolution::defaultSettingsPath(),
+                              MailImporter::FilterEvolution_v2::defaultSettingsPath(),
+                              MailImporter::FilterEvolution_v3::defaultSettingsPath(),
+                              MailImporter::FilterBalsa::defaultSettingsPath(),
+                              MailImporter::FilterClawsMail::defaultSettingsPath(),
+                              MailImporter::FilterOpera::defaultSettingsPath(),
+                              MailImporter::FilterSylpheed::defaultSettingsPath(),
+                              MailImporter::FilterThunderbird::defaultSettingsPath(),
+                              MailImporter::OtherMailerUtil::trojitaDefaultPath(),
+                              MailImporter::FilterIcedove::defaultSettingsPath()};
 
-    Q_FOREACH (const QString &path, lst) {
+    for (const QString &path : lst) {
         QDir directory(path);
         if (directory.exists()) {
             return true;

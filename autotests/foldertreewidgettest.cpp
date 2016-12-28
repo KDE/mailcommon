@@ -231,7 +231,7 @@ private:
         CollectionFetchJob *job = new CollectionFetchJob(Collection::root(), CollectionFetchJob::FirstLevel);
         if (job->exec()) {
             const Collection::List collections = job->collections();
-            foreach (const Collection &col, collections) {
+            for (const Collection &col : collections) {
                 //qDebug() << col.resource() << col.mimeType();
                 if (col.resource() == identifier) {
                     return col;
