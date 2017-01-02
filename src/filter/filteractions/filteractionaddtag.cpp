@@ -35,7 +35,7 @@ FilterAction *FilterActionAddTag::newAction()
 
 FilterActionAddTag::FilterActionAddTag(QObject *parent)
     : FilterAction(QStringLiteral("add tag"), i18n("Add Tag"), parent),
-      mComboBox(0)
+      mComboBox(Q_NULLPTR)
 {
     mList = FilterManager::instance()->tagList();
     connect(FilterManager::instance(), &FilterManager::tagListingFinished, this, &FilterActionAddTag::slotTagListingFinished);

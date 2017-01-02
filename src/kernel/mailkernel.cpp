@@ -58,9 +58,9 @@ Q_GLOBAL_STATIC(KernelPrivate, sInstance)
 
 Kernel::Kernel(QObject *parent) : QObject(parent)
 {
-    mKernelIf = 0;
-    mSettingsIf = 0;
-    mFilterIf = 0;
+    mKernelIf = Q_NULLPTR;
+    mSettingsIf = Q_NULLPTR;
+    mFilterIf = Q_NULLPTR;
     mImapResourceManager = new PimCommon::ImapResourceCapabilitiesManager(this);
 }
 
@@ -81,7 +81,7 @@ void Kernel::registerKernelIf(IKernel *kernelIf)
 
 bool Kernel::kernelIsRegistered() const
 {
-    return mKernelIf != 0;
+    return mKernelIf != Q_NULLPTR;
 }
 
 IKernel *Kernel::kernelIf() const
@@ -266,7 +266,7 @@ void Kernel::emergencyExit(const QString &reason)
     if (!s_showingErrorBox) {
         s_showingErrorBox = true;
         if (qApp) {   //see bug 313104
-            KMessageBox::error(0, mesg);
+            KMessageBox::error(Q_NULLPTR, mesg);
         }
         ::exit(1);
     }

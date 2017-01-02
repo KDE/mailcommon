@@ -192,7 +192,7 @@ void CollectionExpiryPage::saveAndExpire(Akonadi::Collection &collection, bool s
         expireNow = false;                                // settings are not valid
     }
 
-    MailCommon::ExpireCollectionAttribute *attribute = 0;
+    MailCommon::ExpireCollectionAttribute *attribute = Q_NULLPTR;
     if (expireToFolder.isValid() && moveToRB->isChecked()) {
         if (expireToFolder.id() == collection.id()) {
             KMessageBox::error(this, i18n("Please select a different folder than the current folder to expire messages into.\nIf this is not done, expired messages will be permanently deleted."),

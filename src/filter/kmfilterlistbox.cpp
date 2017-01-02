@@ -418,7 +418,7 @@ QList<MailFilter *> KMFilterListBox::filtersForSaving(bool closeAfterSaving, boo
             }
             delete dlg;
         } else {
-            QPointer<MailCommon::InvalidFilterDialog> dlg = new MailCommon::InvalidFilterDialog(0);
+            QPointer<MailCommon::InvalidFilterDialog> dlg = new MailCommon::InvalidFilterDialog(Q_NULLPTR);
             dlg->setInvalidFilters(listInvalidFilters);
             if (!dlg->exec()) {
                 wasCanceled = true;
@@ -571,7 +571,7 @@ void KMFilterListBox::slotTop()
         return;
     }
 
-    QListWidgetItem *item = 0;
+    QListWidgetItem *item = Q_NULLPTR;
     bool wasMoved = false;
     for (int i = 0; i < numberOfItem; ++i) {
         const int posItem = mListWidget->row(listWidgetItem.at(i));
@@ -872,7 +872,7 @@ void KMFilterListBox::swapNeighbouringFilters(int untouchedOne, int movedOne)
 }
 
 QListWidgetFilterItem::QListWidgetFilterItem(const QString &text, QListWidget *parent)
-    : QListWidgetItem(text, parent), mFilter(0)
+    : QListWidgetItem(text, parent), mFilter(Q_NULLPTR)
 {
 }
 

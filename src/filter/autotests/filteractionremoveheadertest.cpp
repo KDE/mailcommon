@@ -34,7 +34,7 @@ FilterActionRemoveHeaderTest::~FilterActionRemoveHeaderTest()
 void FilterActionRemoveHeaderTest::shouldHaveDefaultValue()
 {
     MailCommon::FilterActionRemoveHeader filter;
-    QWidget *w = filter.createParamWidget(0);
+    QWidget *w = filter.createParamWidget(Q_NULLPTR);
     PimCommon::MinimumComboBox *comboBox = dynamic_cast<PimCommon::MinimumComboBox *>(w);
     QVERIFY(comboBox);
     QVERIFY(comboBox->isEditable());

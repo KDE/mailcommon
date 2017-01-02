@@ -339,14 +339,14 @@ QStringList SnippetsModel::mimeTypes() const
 QMimeData *SnippetsModel::mimeData(const QModelIndexList &indexes) const
 {
     if (indexes.isEmpty()) {
-        return 0;
+        return Q_NULLPTR;
     }
 
     const QModelIndex index = indexes.first();
 
     SnippetItem *item = static_cast<SnippetItem *>(index.internalPointer());
     if (item->isGroup()) {
-        return 0;
+        return Q_NULLPTR;
     }
 
     QMimeData *mimeData = new QMimeData();
@@ -383,7 +383,7 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action,
         if (item->isGroup()) {
             Q_EMIT addNewDndSnippset(encodedData);
         } else {
-            if (KMessageBox::Yes == KMessageBox::questionYesNo(0, i18n("Do you want to update snippet?"), i18n("Rename snippet"))) {
+            if (KMessageBox::Yes == KMessageBox::questionYesNo(Q_NULLPTR, i18n("Do you want to update snippet?"), i18n("Rename snippet"))) {
                 item->setText(encodedData);
             }
         }

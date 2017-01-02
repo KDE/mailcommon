@@ -38,8 +38,8 @@ class Q_DECL_HIDDEN FavoriteCollectionWidget::Private
 {
 public:
     Private()
-        : listMode(0),
-          iconMode(0)
+        : listMode(Q_NULLPTR),
+          iconMode(Q_NULLPTR)
     {
     }
     QColor textColor;

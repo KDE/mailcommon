@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
     QStandardPaths::setTestModeEnabled(true);
-    DummyKernel *kernel = new DummyKernel(0);
+    DummyKernel *kernel = new DummyKernel(Q_NULLPTR);
     CommonKernel->registerKernelIf(kernel);   //register KernelIf early, it is used by the Filter classes
     CommonKernel->registerSettingsIf(kernel);   //SettingsIf is used in FolderTreeWidget
 

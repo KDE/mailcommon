@@ -48,16 +48,16 @@ BackupJob::BackupJob(QWidget *parent)
       mArchiveTime(QDateTime::currentDateTime()),
       mArchiveType(Zip),
       mRootFolder(0),
-      mArchive(0),
+      mArchive(Q_NULLPTR),
       mParentWidget(parent),
       mArchivedMessages(0),
       mArchivedSize(0),
-      mProgressItem(0),
+      mProgressItem(Q_NULLPTR),
       mAborted(false),
       mDeleteFoldersAfterCompletion(false),
       mRecursive(true),
       mCurrentFolder(Akonadi::Collection()),
-      mCurrentJob(0),
+      mCurrentJob(Q_NULLPTR),
       mDisplayMessageBox(true)
 {
 }
@@ -66,7 +66,7 @@ BackupJob::~BackupJob()
 {
     mPendingFolders.clear();
     delete mArchive;
-    mArchive = 0;
+    mArchive = Q_NULLPTR;
 }
 
 void BackupJob::setRootFolder(const Akonadi::Collection &rootFolder)
@@ -164,12 +164,12 @@ void BackupJob::abort(const QString &errorMessage)
 
     if (mCurrentJob) {
         mCurrentJob->kill();
-        mCurrentJob = 0;
+        mCurrentJob = Q_NULLPTR;
     }
 
     if (mProgressItem) {
         mProgressItem->setComplete();
-        mProgressItem = 0;
+        mProgressItem = Q_NULLPTR;
         // The progressmanager will delete it
     }
     QString text = i18n("Failed to archive the folder '%1'.", mRootFolder.name());
@@ -197,7 +197,7 @@ void BackupJob::finish()
     if (mProgressItem) {
         mProgressItem->setStatus(archivingStr);
         mProgressItem->setComplete();
-        mProgressItem = 0;
+        mProgressItem = Q_NULLPTR;
     }
 
     QFileInfo archiveFileInfo(mMailArchivePath.path());
@@ -281,7 +281,7 @@ void BackupJob::itemFetchJobResult(KJob *job)
     }
 
     Q_ASSERT(job == mCurrentJob);
-    mCurrentJob = 0;
+    mCurrentJob = Q_NULLPTR;
 
     if (job->error()) {
         Q_ASSERT(mCurrentFolder.isValid());

@@ -137,7 +137,7 @@ MDNAdviceDialog::MDNAdviceDialog(const QString &text, bool canDeny, QWidget *par
         text,
         QStringList(),
         QString(),
-        0,
+        Q_NULLPTR,
         KMessageBox::NoExec);
 }
 

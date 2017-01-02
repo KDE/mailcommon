@@ -257,7 +257,7 @@ void SnippetsManager::Private::deleteSnippet()
     const QString snippetName = index.data(SnippetsModel::NameRole).toString();
 
     if (KMessageBox::warningContinueCancel(
-                0,
+                Q_NULLPTR,
                 xi18nc("@info",
                        "Do you really want to remove snippet \"%1\"?<nl/>"
                        "<warning>There is no way to undo the removal.</warning>", snippetName),
@@ -327,7 +327,7 @@ void SnippetsManager::Private::deleteSnippetGroup()
 
     if (mModel->rowCount(groupIndex) > 0) {
         if (KMessageBox::warningContinueCancel(
-                    0,
+                    Q_NULLPTR,
                     xi18nc("@info",
                            "Do you really want to remove group \"%1\" along with all its snippets?<nl/>"
                            "<warning>There is no way to undo the removal.</warning>", groupName),
@@ -337,7 +337,7 @@ void SnippetsManager::Private::deleteSnippetGroup()
         }
     } else {
         if (KMessageBox::warningContinueCancel(
-                    0,
+                    Q_NULLPTR,
                     i18nc("@info",
                           "Do you really want to remove group \"%1\"?", groupName),
                     QString(),

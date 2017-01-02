@@ -39,7 +39,7 @@ FilterActionAddToAddressBookTest::~FilterActionAddToAddressBookTest()
 void FilterActionAddToAddressBookTest::shouldHaveDefaultValue()
 {
     MailCommon::FilterActionAddToAddressBook filter;
-    QWidget *w = filter.createParamWidget(0);
+    QWidget *w = filter.createParamWidget(Q_NULLPTR);
 
     PimCommon::MinimumComboBox *headerCombo = w->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("HeaderComboBox"));
     QVERIFY(headerCombo);

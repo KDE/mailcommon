@@ -47,9 +47,9 @@ class Q_DECL_HIDDEN FolderSelectionDialog::FolderSelectionDialogPrivate
 {
 public:
     FolderSelectionDialogPrivate()
-        : folderTreeWidget(0),
-          mUser1Button(0),
-          mOkButton(0),
+        : folderTreeWidget(Q_NULLPTR),
+          mUser1Button(Q_NULLPTR),
+          mOkButton(Q_NULLPTR),
           mNotAllowToCreateNewFolder(false),
           mUseGlobalSettings(true)
     {
@@ -104,7 +104,7 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
         optReadableProxy |= FolderTreeWidgetProxyModel::HideOutboxFolder;
     }
 
-    d->folderTreeWidget = new FolderTreeWidget(this, 0, opt, optReadableProxy);
+    d->folderTreeWidget = new FolderTreeWidget(this, Q_NULLPTR, opt, optReadableProxy);
     d->folderTreeWidget->readConfig();
     d->folderTreeWidget->disableContextMenuAndExtraColumn();
     d->folderTreeWidget->folderTreeWidgetProxyModel()->setEnabledCheck((options & EnableCheck));

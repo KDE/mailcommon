@@ -44,7 +44,7 @@ class Q_DECL_HIDDEN FilterActionWidget::Private
 {
 public:
     Private(FilterActionWidget *qq)
-        : q(qq), mComboBox(0), mAdd(0), mRemove(0), mLayout(0)
+        : q(qq), mComboBox(Q_NULLPTR), mAdd(Q_NULLPTR), mRemove(Q_NULLPTR), mLayout(Q_NULLPTR)
     {
     }
 
@@ -98,7 +98,7 @@ void FilterActionWidget::Private::slotFilterTypeChanged(int index)
 {
     setFilterAction(index < mActionList.count() ?
                     mActionList.at(index)->createParamWidget(q) :
-                    0);
+                    Q_NULLPTR);
 }
 
 FilterActionWidget::FilterActionWidget(QWidget *parent)
@@ -243,7 +243,7 @@ FilterAction *FilterActionWidget::action() const
         }
     }
 
-    return 0;
+    return Q_NULLPTR;
 }
 
 //=============================================================================
@@ -256,7 +256,7 @@ class FilterActionWidgetLister::Private
 {
 public:
     Private(FilterActionWidgetLister *qq)
-        : q(qq), mActionList(0)
+        : q(qq), mActionList(Q_NULLPTR)
     {
     }
 
@@ -310,7 +310,7 @@ void FilterActionWidgetLister::setActionList(QList<FilterAction *> *list)
 
     if (list->isEmpty()) {
         slotClear();
-        connectWidget(widgets().constFirst(), 0);
+        connectWidget(widgets().constFirst(), Q_NULLPTR);
         widgets().constFirst()->blockSignals(false);
         return;
     }
@@ -400,7 +400,7 @@ void FilterActionWidgetLister::reset()
         d->regenerateActionListFromWidgets();
     }
 
-    d->mActionList = 0;
+    d->mActionList = Q_NULLPTR;
     slotClear();
 
     static_cast<QWidget *>(parent())->setEnabled(false);
@@ -424,7 +424,7 @@ void FilterActionWidgetLister::clearWidget(QWidget *widget)
 {
     if (widget) {
         FilterActionWidget *w = static_cast<FilterActionWidget *>(widget);
-        w->setAction(0);
+        w->setAction(Q_NULLPTR);
         w->disconnect(this);
         reconnectWidget(w);
         updateAddRemoveButton();

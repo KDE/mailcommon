@@ -63,7 +63,7 @@ static KMime::Content *findMimeNodeForIndex(KMime::Content *node, int &index)
         }
     }
 
-    return 0;
+    return Q_NULLPTR;
 }
 
 QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Message::Ptr &aMsg, QList<QTemporaryFile *> &aTempFileList) const

@@ -32,8 +32,8 @@ FilterActionDeleteTest::~FilterActionDeleteTest()
 
 void FilterActionDeleteTest::shouldHaveDefaultValue()
 {
-    MailCommon::FilterActionDelete filter(0);
-    QWidget *w = filter.createParamWidget(0);
+    MailCommon::FilterActionDelete filter(Q_NULLPTR);
+    QWidget *w = filter.createParamWidget(Q_NULLPTR);
     QVERIFY(w);
 
     QLabel *lab = dynamic_cast<QLabel *>(w);
@@ -43,7 +43,7 @@ void FilterActionDeleteTest::shouldHaveDefaultValue()
 
 void FilterActionDeleteTest::shouldReturnSieveValue()
 {
-    MailCommon::FilterActionDelete filter(0);
+    MailCommon::FilterActionDelete filter(Q_NULLPTR);
     QCOMPARE(filter.sieveCode(), QStringLiteral("discard;"));
 }
 

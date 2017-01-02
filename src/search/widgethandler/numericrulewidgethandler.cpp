@@ -47,7 +47,7 @@ QWidget *NumericRuleWidgetHandler::createFunctionWidget(
     int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
 {
     if (number != 0) {
-        return 0;
+        return Q_NULLPTR;
     }
 
     PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
@@ -68,7 +68,7 @@ QWidget *NumericRuleWidgetHandler::createValueWidget(int number,
         const QObject *receiver) const
 {
     if (number != 0) {
-        return 0;
+        return Q_NULLPTR;
     }
 
     KPluralHandlingSpinBox *numInput = new KPluralHandlingSpinBox(valueStack);

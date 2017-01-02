@@ -58,7 +58,7 @@ FillTagComboJob::FillTagComboJob(KComboBox *combo, QObject *parent)
 
 void FillTagComboJob::onDestroyed()
 {
-    mComboBox = 0;
+    mComboBox = Q_NULLPTR;
     setError(KJob::UserDefinedError);
     qCDebug(MAILCOMMON_LOG) << "Combobox destroyed";
     emitResult();
@@ -117,7 +117,7 @@ QWidget *TagRuleWidgetHandler::createFunctionWidget(
     int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const
 {
     if (number != 0) {
-        return 0;
+        return Q_NULLPTR;
     }
 
     PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
@@ -170,7 +170,7 @@ QWidget *TagRuleWidgetHandler::createValueWidget(int number,
         return valueCombo;
     }
 
-    return 0;
+    return Q_NULLPTR;
 }
 
 //---------------------------------------------------------------------------

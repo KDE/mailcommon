@@ -36,7 +36,7 @@ FilterActionExecTest::~FilterActionExecTest()
 void FilterActionExecTest::shouldHaveDefaultValue()
 {
     MailCommon::FilterActionExec filter;
-    QWidget *w = filter.createParamWidget(0);
+    QWidget *w = filter.createParamWidget(Q_NULLPTR);
     KUrlRequester *requester = w->findChild<KUrlRequester *>(QStringLiteral("requester"));
     QVERIFY(requester);
 

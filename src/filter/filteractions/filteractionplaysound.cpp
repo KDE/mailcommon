@@ -32,7 +32,7 @@ using namespace MailCommon;
 
 FilterActionPlaySound::FilterActionPlaySound()
     : FilterActionWithTest(QStringLiteral("play sound"), i18n("Play Sound"))
-    , mPlayer(0)
+    , mPlayer(Q_NULLPTR)
 {
 }
 

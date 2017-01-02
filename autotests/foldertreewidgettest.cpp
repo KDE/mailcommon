@@ -66,11 +66,11 @@ private Q_SLOTS:
     {
         AkonadiTest::checkTestIsIsolated();
 
-        DummyKernel *kernel = new DummyKernel(0);
+        DummyKernel *kernel = new DummyKernel(Q_NULLPTR);
         CommonKernel->registerKernelIf(kernel);
         CommonKernel->registerSettingsIf(kernel);
 
-        mFolderTreeWidget = new MailCommon::FolderTreeWidget(0);
+        mFolderTreeWidget = new MailCommon::FolderTreeWidget(Q_NULLPTR);
         const QStringList resourceOrder{"akonadi_knut_resource_2", "akonadi_knut_resource_0"}; // _1 isn't specified so it goes at the end
         mFolderTreeWidget->entityOrderProxy()->setTopLevelOrder(resourceOrder);
 

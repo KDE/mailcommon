@@ -54,7 +54,7 @@ FilterActionWithUrlTest::~FilterActionWithUrlTest()
 void FilterActionWithUrlTest::shouldHaveDefaultValue()
 {
     TestFilterActionWithUrl filter;
-    QWidget *w = filter.createParamWidget(0);
+    QWidget *w = filter.createParamWidget(Q_NULLPTR);
     KUrlRequester *requester = w->findChild<KUrlRequester *>(QStringLiteral("requester"));
     QVERIFY(requester);
     QToolButton *toolButton = w->findChild<QToolButton *>(QStringLiteral("helpbutton"));
@@ -64,7 +64,7 @@ void FilterActionWithUrlTest::shouldHaveDefaultValue()
 void FilterActionWithUrlTest::shouldClearWidget()
 {
     TestFilterActionWithUrl filter;
-    QWidget *w = filter.createParamWidget(0);
+    QWidget *w = filter.createParamWidget(Q_NULLPTR);
     KUrlRequester *requester = w->findChild<KUrlRequester *>(QStringLiteral("requester"));
     requester->setUrl(QUrl::fromLocalFile("/foo/bla"));
     QVERIFY(!requester->url().isEmpty());
@@ -75,7 +75,7 @@ void FilterActionWithUrlTest::shouldClearWidget()
 void FilterActionWithUrlTest::shouldAddValue()
 {
     TestFilterActionWithUrl filter;
-    QWidget *w = filter.createParamWidget(0);
+    QWidget *w = filter.createParamWidget(Q_NULLPTR);
     KUrlRequester *requester = w->findChild<KUrlRequester *>(QStringLiteral("requester"));
     filter.argsFromString(QStringLiteral("/foo"));
     filter.setParamWidgetValue(w);
@@ -85,7 +85,7 @@ void FilterActionWithUrlTest::shouldAddValue()
 void FilterActionWithUrlTest::shouldApplyValue()
 {
     TestFilterActionWithUrl filter;
-    QWidget *w = filter.createParamWidget(0);
+    QWidget *w = filter.createParamWidget(Q_NULLPTR);
     filter.argsFromString(QStringLiteral("foo"));
     filter.setParamWidgetValue(w);
     filter.applyParamWidgetValue(w);
@@ -109,7 +109,7 @@ void FilterActionWithUrlTest::shouldTestUrl()
     QFETCH(QString, urlstr);
     QFETCH(QString, output);
     TestFilterActionWithUrl filter;
-    QWidget *w = filter.createParamWidget(0);
+    QWidget *w = filter.createParamWidget(Q_NULLPTR);
     filter.argsFromString(urlstr);
     filter.setParamWidgetValue(w);
     filter.applyParamWidgetValue(w);
