@@ -45,7 +45,7 @@ FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
     const Akonadi::Collection::List &list, const QString &filtername,
     const QString &argStr, QWidget *parent)
     : QDialog(parent),
-      mListwidget(Q_NULLPTR)
+      mListwidget(nullptr)
 {
     setModal(true);
     setWindowTitle(i18n("Select Folder"));

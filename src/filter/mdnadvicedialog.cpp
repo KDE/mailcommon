@@ -47,7 +47,7 @@ using MessageComposer::MessageFactory;
 
 using namespace MailCommon;
 
-MDNAdviceHelper *MDNAdviceHelper::s_instance = Q_NULLPTR;
+MDNAdviceHelper *MDNAdviceHelper::s_instance = nullptr;
 
 static const struct {
     const char *dontAskAgainID;
@@ -105,8 +105,8 @@ MDNAdviceDialog::MDNAdviceDialog(const QString &text, bool canDeny, QWidget *par
     : QDialog(parent), m_result(MessageComposer::MDNIgnore)
 {
     setWindowTitle(i18n("Message Disposition Notification Request"));
-    QDialogButtonBox *buttonBox = Q_NULLPTR;
-    QPushButton *user1Button = Q_NULLPTR;
+    QDialogButtonBox *buttonBox = nullptr;
+    QPushButton *user1Button = nullptr;
     if (canDeny) {
         buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes);
         user1Button = new QPushButton;
@@ -137,7 +137,7 @@ MDNAdviceDialog::MDNAdviceDialog(const QString &text, bool canDeny, QWidget *par
         text,
         QStringList(),
         QString(),
-        Q_NULLPTR,
+        nullptr,
         KMessageBox::NoExec);
 }
 

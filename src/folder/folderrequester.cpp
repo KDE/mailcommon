@@ -52,7 +52,7 @@ class FolderRequesterPrivate
 {
 public:
     FolderRequesterPrivate()
-        : mEdit(Q_NULLPTR),
+        : mEdit(nullptr),
           mMustBeReadWrite(true),
           mShowOutbox(true),
           mNotCreateNewFolder(false)

@@ -44,7 +44,7 @@ class Q_DECL_HIDDEN FilterActionWidget::Private
 {
 public:
     Private(FilterActionWidget *qq)
-        : q(qq), mComboBox(Q_NULLPTR), mAdd(Q_NULLPTR), mRemove(Q_NULLPTR), mLayout(Q_NULLPTR)
+        : q(qq), mComboBox(nullptr), mAdd(nullptr), mRemove(nullptr), mLayout(nullptr)
     {
     }
 
@@ -54,7 +54,7 @@ public:
         mActionList.clear();
     }
 
-    void setFilterAction(QWidget *widget = Q_NULLPTR);
+    void setFilterAction(QWidget *widget = nullptr);
 
     void slotFilterTypeChanged(int index);
     void slotAddWidget();
@@ -98,7 +98,7 @@ void FilterActionWidget::Private::slotFilterTypeChanged(int index)
 {
     setFilterAction(index < mActionList.count() ?
                     mActionList.at(index)->createParamWidget(q) :
-                    Q_NULLPTR);
+                    nullptr);
 }
 
 FilterActionWidget::FilterActionWidget(QWidget *parent)
@@ -243,7 +243,7 @@ FilterAction *FilterActionWidget::action() const
         }
     }
 
-    return Q_NULLPTR;
+    return nullptr;
 }
 
 //=============================================================================
@@ -256,7 +256,7 @@ class FilterActionWidgetLister::Private
 {
 public:
     Private(FilterActionWidgetLister *qq)
-        : q(qq), mActionList(Q_NULLPTR)
+        : q(qq), mActionList(nullptr)
     {
     }
 
@@ -310,7 +310,7 @@ void FilterActionWidgetLister::setActionList(QList<FilterAction *> *list)
 
     if (list->isEmpty()) {
         slotClear();
-        connectWidget(widgets().constFirst(), Q_NULLPTR);
+        connectWidget(widgets().constFirst(), nullptr);
         widgets().constFirst()->blockSignals(false);
         return;
     }
@@ -400,7 +400,7 @@ void FilterActionWidgetLister::reset()
         d->regenerateActionListFromWidgets();
     }
 
-    d->mActionList = Q_NULLPTR;
+    d->mActionList = nullptr;
     slotClear();
 
     static_cast<QWidget *>(parent())->setEnabled(false);
@@ -424,7 +424,7 @@ void FilterActionWidgetLister::clearWidget(QWidget *widget)
 {
     if (widget) {
         FilterActionWidget *w = static_cast<FilterActionWidget *>(widget);
-        w->setAction(Q_NULLPTR);
+        w->setAction(nullptr);
         w->disconnect(this);
         reconnectWidget(w);
         updateAddRemoveButton();

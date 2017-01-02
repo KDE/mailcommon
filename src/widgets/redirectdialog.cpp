@@ -62,14 +62,14 @@ class Q_DECL_HIDDEN RedirectDialog::Private
 public:
     Private(RedirectDialog *qq, RedirectDialog::SendMode mode)
         : q(qq),
-          mEditTo(Q_NULLPTR),
-          mEditCc(Q_NULLPTR),
-          mEditBcc(Q_NULLPTR),
+          mEditTo(nullptr),
+          mEditCc(nullptr),
+          mEditBcc(nullptr),
           mSendMode(mode),
-          mComboboxIdentity(Q_NULLPTR),
-          mTransportCombobox(Q_NULLPTR),
-          mUser1Button(Q_NULLPTR),
-          mUser2Button(Q_NULLPTR)
+          mComboboxIdentity(nullptr),
+          mTransportCombobox(nullptr),
+          mUser1Button(nullptr),
+          mUser2Button(nullptr)
 
     {
     }

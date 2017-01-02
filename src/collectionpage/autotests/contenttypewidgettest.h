@@ -27,7 +27,7 @@ class ContentTypeWidgetTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit ContentTypeWidgetTest(QObject *parent = Q_NULLPTR);
+    explicit ContentTypeWidgetTest(QObject *parent = nullptr);
     ~ContentTypeWidgetTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

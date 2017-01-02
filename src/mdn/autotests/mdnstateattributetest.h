@@ -24,7 +24,7 @@ class MDNStateAttributeTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit MDNStateAttributeTest(QObject *parent = Q_NULLPTR);
+    explicit MDNStateAttributeTest(QObject *parent = nullptr);
     ~MDNStateAttributeTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

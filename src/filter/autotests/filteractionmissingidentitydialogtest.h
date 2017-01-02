@@ -26,7 +26,7 @@ class FilterActionMissingIdentityDialogTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingIdentityDialogTest(QObject *parent = Q_NULLPTR);
+    explicit FilterActionMissingIdentityDialogTest(QObject *parent = nullptr);
     ~FilterActionMissingIdentityDialogTest();
 private Q_SLOTS:
     void initTestCase();

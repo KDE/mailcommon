@@ -7,7 +7,7 @@ class FilterActionSendReceiptTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterActionSendReceiptTest(QObject *parent = Q_NULLPTR);
+    explicit FilterActionSendReceiptTest(QObject *parent = nullptr);
 private Q_SLOTS:
     void shouldBeNotEmpty();
     void shouldRequiresPart();

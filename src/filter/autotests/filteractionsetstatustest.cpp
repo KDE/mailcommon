@@ -35,7 +35,7 @@ FilterActionSetStatusTest::~FilterActionSetStatusTest()
 void FilterActionSetStatusTest::shouldHaveDefaultValue()
 {
     MailCommon::FilterActionSetStatus filter;
-    QWidget *w = filter.createParamWidget(Q_NULLPTR);
+    QWidget *w = filter.createParamWidget(nullptr);
     QCOMPARE(w->objectName(), QStringLiteral("combobox"));
     PimCommon::MinimumComboBox *comboBox = dynamic_cast<PimCommon::MinimumComboBox *>(w);
     QVERIFY(comboBox);

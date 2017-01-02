@@ -24,7 +24,7 @@ class FilterActionAddToAddressBookTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterActionAddToAddressBookTest(QObject *parent = Q_NULLPTR);
+    explicit FilterActionAddToAddressBookTest(QObject *parent = nullptr);
     ~FilterActionAddToAddressBookTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

@@ -52,7 +52,7 @@ using std::remove;
 
 using namespace MailCommon;
 
-MailCommon::RuleWidgetHandlerManager *MailCommon::RuleWidgetHandlerManager::self = Q_NULLPTR;
+MailCommon::RuleWidgetHandlerManager *MailCommon::RuleWidgetHandlerManager::self = nullptr;
 
 MailCommon::RuleWidgetHandlerManager::RuleWidgetHandlerManager()
     : mIsBalooSearch(false)
@@ -122,7 +122,7 @@ void MailCommon::RuleWidgetHandlerManager::createWidgets(QStackedWidget *functio
 {
     const_iterator end(mHandlers.constEnd());
     for (const_iterator it = mHandlers.constBegin(); it != end; ++it) {
-        QWidget *w = Q_NULLPTR;
+        QWidget *w = nullptr;
         for (int i = 0;
                 (w = (*it)->createFunctionWidget(i, functionStack, receiver, mIsBalooSearch));
                 ++i) {
@@ -132,7 +132,7 @@ void MailCommon::RuleWidgetHandlerManager::createWidgets(QStackedWidget *functio
             } else {
                 // there was already a widget with this name, so discard this widget
                 delete w;
-                w = Q_NULLPTR;
+                w = nullptr;
             }
         }
         for (int i = 0;
@@ -144,7 +144,7 @@ void MailCommon::RuleWidgetHandlerManager::createWidgets(QStackedWidget *functio
             } else {
                 // there was already a widget with this name, so discard this widget
                 delete w;
-                w = Q_NULLPTR;
+                w = nullptr;
             }
         }
     }

@@ -50,7 +50,7 @@ FilterImporterClawsMails::~FilterImporterClawsMails()
 
 void FilterImporterClawsMails::readStream(QTextStream &stream)
 {
-    MailFilter *filter = Q_NULLPTR;
+    MailFilter *filter = nullptr;
     while (!stream.atEnd()) {
         QString line = stream.readLine();
         qCDebug(MAILCOMMON_LOG) << " line :" << line << " filter " << filter;

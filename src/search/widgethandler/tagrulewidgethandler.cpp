@@ -39,7 +39,7 @@ class FillTagComboJob : public KJob
 {
     Q_OBJECT
 public:
-    explicit FillTagComboJob(KComboBox *combo, QObject *parent = Q_NULLPTR);
+    explicit FillTagComboJob(KComboBox *combo, QObject *parent = nullptr);
     void start() Q_DECL_OVERRIDE;
 private Q_SLOTS:
     void onDestroyed();
@@ -58,7 +58,7 @@ FillTagComboJob::FillTagComboJob(KComboBox *combo, QObject *parent)
 
 void FillTagComboJob::onDestroyed()
 {
-    mComboBox = Q_NULLPTR;
+    mComboBox = nullptr;
     setError(KJob::UserDefinedError);
     qCDebug(MAILCOMMON_LOG) << "Combobox destroyed";
     emitResult();
@@ -117,7 +117,7 @@ QWidget *TagRuleWidgetHandler::createFunctionWidget(
     int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const
 {
     if (number != 0) {
-        return Q_NULLPTR;
+        return nullptr;
     }
 
     PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
@@ -170,7 +170,7 @@ QWidget *TagRuleWidgetHandler::createValueWidget(int number,
         return valueCombo;
     }
 
-    return Q_NULLPTR;
+    return nullptr;
 }
 
 //---------------------------------------------------------------------------

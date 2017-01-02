@@ -36,17 +36,17 @@ class MailCommon::TagWidgetPrivate
 {
 public:
     TagWidgetPrivate()
-        : mTagNameLineEdit(Q_NULLPTR),
-          mTextColorCheck(Q_NULLPTR),
-          mBackgroundColorCheck(Q_NULLPTR),
-          mTextFontCheck(Q_NULLPTR),
-          mInToolbarCheck(Q_NULLPTR),
-          mTextColorCombo(Q_NULLPTR),
-          mBackgroundColorCombo(Q_NULLPTR),
-          mBoldCheckBox(Q_NULLPTR),
-          mItalicCheckBox(Q_NULLPTR),
-          mIconButton(Q_NULLPTR),
-          mKeySequenceWidget(Q_NULLPTR)
+        : mTagNameLineEdit(nullptr),
+          mTextColorCheck(nullptr),
+          mBackgroundColorCheck(nullptr),
+          mTextFontCheck(nullptr),
+          mInToolbarCheck(nullptr),
+          mTextColorCombo(nullptr),
+          mBackgroundColorCombo(nullptr),
+          mBoldCheckBox(nullptr),
+          mItalicCheckBox(nullptr),
+          mIconButton(nullptr),
+          mKeySequenceWidget(nullptr)
     {
 
     }

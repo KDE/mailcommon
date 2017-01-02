@@ -40,7 +40,7 @@ class Q_DECL_HIDDEN FilterManager::Private
 {
 public:
     Private(FilterManager *qq)
-        : q(qq), mMailFilterAgentInterface(Q_NULLPTR), mMonitor(new Akonadi::Monitor), mInitialized(false)
+        : q(qq), mMailFilterAgentInterface(nullptr), mMonitor(new Akonadi::Monitor), mInitialized(false)
     {
         mMailFilterAgentInterface = new org::freedesktop::Akonadi::MailFilterAgent(QStringLiteral("org.freedesktop.Akonadi.MailFilterAgent"),
                 QStringLiteral("/MailFilterAgent"),
@@ -94,8 +94,8 @@ void FilterManager::Private::clear()
 
 using namespace MailCommon;
 
-FilterManager *FilterManager::Private::mInstance = Q_NULLPTR;
-FilterActionDict *FilterManager::Private::mFilterActionDict = Q_NULLPTR;
+FilterManager *FilterManager::Private::mInstance = nullptr;
+FilterActionDict *FilterManager::Private::mFilterActionDict = nullptr;
 
 FilterManager *FilterManager::instance()
 {

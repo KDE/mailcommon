@@ -89,9 +89,9 @@ SearchRuleWidget::SearchRuleWidget(QWidget *parent, SearchRule::Ptr aRule,
                                    SearchPatternEdit::SearchPatternEditOptions options,
                                    SearchPatternEdit::SearchModeType modeType)
     : QWidget(parent),
-      mRuleField(Q_NULLPTR),
-      mFunctionStack(Q_NULLPTR),
-      mValueStack(Q_NULLPTR)
+      mRuleField(nullptr),
+      mFunctionStack(nullptr),
+      mValueStack(nullptr)
 {
     initFieldList(options);
     initWidget(modeType);
@@ -421,7 +421,7 @@ void SearchRuleWidget::slotRuleFieldChanged(const QString &field)
 SearchRuleWidgetLister::SearchRuleWidgetLister(QWidget *parent, SearchPatternEdit::SearchPatternEditOptions options, SearchPatternEdit::SearchModeType modeType)
     : KWidgetLister(false, 2, SearchPattern::filterRulesMaximumSize(), parent)
 {
-    mRuleList = Q_NULLPTR;
+    mRuleList = nullptr;
 
     mTypeMode = modeType;
     mOptions = options;
@@ -540,7 +540,7 @@ void SearchRuleWidgetLister::reset()
         regenerateRuleListFromWidgets();
     }
 
-    mRuleList = Q_NULLPTR;
+    mRuleList = nullptr;
     slotClear();
     updateAddRemoveButton();
 }
@@ -587,7 +587,7 @@ void SearchRuleWidgetLister::regenerateRuleListFromWidgets()
 //=============================================================================
 
 SearchPatternEdit::SearchPatternEdit(QWidget *parent, SearchPatternEditOptions options, SearchModeType modeType)
-    : QWidget(parent), mAllMessageRBtn(Q_NULLPTR)
+    : QWidget(parent), mAllMessageRBtn(nullptr)
 {
     setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     setObjectName(QStringLiteral("SearchPatternEdit"));

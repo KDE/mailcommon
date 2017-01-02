@@ -74,7 +74,7 @@ void FilterTestKernel::syncConfig()
 MailCommon::JobScheduler *FilterTestKernel::jobScheduler() const
 {
     Q_ASSERT(false);
-    return Q_NULLPTR;
+    return nullptr;
 }
 
 Akonadi::ChangeRecorder *FilterTestKernel::folderCollectionMonitor() const

@@ -24,7 +24,7 @@ class ItemContextTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit ItemContextTest(QObject *parent = Q_NULLPTR);
+    explicit ItemContextTest(QObject *parent = nullptr);
     ~ItemContextTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

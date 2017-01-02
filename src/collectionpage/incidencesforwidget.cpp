@@ -29,7 +29,7 @@ class MailCommon::IncidencesForWidgetPrivate
 {
 public:
     IncidencesForWidgetPrivate()
-        : mIncidencesForComboBox(Q_NULLPTR)
+        : mIncidencesForComboBox(nullptr)
     {
 
     }

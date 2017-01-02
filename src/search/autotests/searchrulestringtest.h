@@ -23,7 +23,7 @@ class SearchRuleStringTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit SearchRuleStringTest(QObject *parent = Q_NULLPTR);
+    explicit SearchRuleStringTest(QObject *parent = nullptr);
 
 private Q_SLOTS:
     void shouldHaveDefaultValue();

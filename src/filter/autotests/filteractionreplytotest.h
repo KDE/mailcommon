@@ -24,7 +24,7 @@ class FilterActionReplyToTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterActionReplyToTest(QObject *parent = Q_NULLPTR);
+    explicit FilterActionReplyToTest(QObject *parent = nullptr);
     ~FilterActionReplyToTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

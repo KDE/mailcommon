@@ -85,7 +85,7 @@ using namespace MailCommon;
 KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollection,
                                QWidget *parent, bool createDummyFilter)
     : QDialog(parent),
-      mFilter(Q_NULLPTR),
+      mFilter(nullptr),
       mDoNotClose(false),
       mIgnoreFilterUpdates(true)
 {
@@ -569,7 +569,7 @@ void KMFilterDialog::slotFilterSelected(MailFilter *aFilter)
 
 void KMFilterDialog::slotReset()
 {
-    mFilter = Q_NULLPTR;
+    mFilter = nullptr;
     mPatternEdit->reset();
 
     mActionLister->reset();

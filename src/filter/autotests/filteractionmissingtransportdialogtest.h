@@ -26,7 +26,7 @@ class FilterActionMissingTransportDialogTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingTransportDialogTest(QObject *parent = Q_NULLPTR);
+    explicit FilterActionMissingTransportDialogTest(QObject *parent = nullptr);
     ~FilterActionMissingTransportDialogTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

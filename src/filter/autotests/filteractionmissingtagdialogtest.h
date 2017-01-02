@@ -26,7 +26,7 @@ class FilterActionMissingTagDialogTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingTagDialogTest(QObject *parent = Q_NULLPTR);
+    explicit FilterActionMissingTagDialogTest(QObject *parent = nullptr);
     ~FilterActionMissingTagDialogTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

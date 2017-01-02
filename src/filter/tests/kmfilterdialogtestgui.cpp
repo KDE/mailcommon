@@ -26,12 +26,12 @@ int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
     QStandardPaths::setTestModeEnabled(true);
-    DummyKernel *kernel = new DummyKernel(Q_NULLPTR);
+    DummyKernel *kernel = new DummyKernel(nullptr);
     CommonKernel->registerKernelIf(kernel);   //register KernelIf early, it is used by the Filter classes
     CommonKernel->registerSettingsIf(kernel);   //SettingsIf is used in FolderTreeWidget
 
     QList<KActionCollection *> lstAction;
-    MailCommon::KMFilterDialog *dlg = new MailCommon::KMFilterDialog(lstAction, Q_NULLPTR, true);
+    MailCommon::KMFilterDialog *dlg = new MailCommon::KMFilterDialog(lstAction, nullptr, true);
     dlg->resize(800, 600);
     dlg->show();
     const int ret = app.exec();

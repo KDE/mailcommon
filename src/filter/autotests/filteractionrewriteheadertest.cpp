@@ -36,7 +36,7 @@ FilterActionRewriteHeaderTest::~FilterActionRewriteHeaderTest()
 void FilterActionRewriteHeaderTest::shouldHaveDefaultValue()
 {
     MailCommon::FilterActionRewriteHeader filter;
-    QWidget *w = filter.createParamWidget(Q_NULLPTR);
+    QWidget *w = filter.createParamWidget(nullptr);
     PimCommon::MinimumComboBox *combo = w->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("combo"));
     QVERIFY(combo);
     QVERIFY(combo->count() > 0);

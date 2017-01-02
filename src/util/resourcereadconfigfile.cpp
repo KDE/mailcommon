@@ -25,7 +25,7 @@ class PimCommon::ResourceReadConfigFilePrivate
 {
 public:
     ResourceReadConfigFilePrivate()
-        : mConfig(Q_NULLPTR)
+        : mConfig(nullptr)
     {
 
     }

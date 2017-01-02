@@ -24,7 +24,7 @@ class InvalidFilterInfoTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit InvalidFilterInfoTest(QObject *parent = Q_NULLPTR);
+    explicit InvalidFilterInfoTest(QObject *parent = nullptr);
     ~InvalidFilterInfoTest();
 private Q_SLOTS:
     void shouldAddEmptyValue();

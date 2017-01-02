@@ -24,7 +24,7 @@ class FilterConvertToSieveResultDialogTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterConvertToSieveResultDialogTest(QObject *parent = Q_NULLPTR);
+    explicit FilterConvertToSieveResultDialogTest(QObject *parent = nullptr);
     ~FilterConvertToSieveResultDialogTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

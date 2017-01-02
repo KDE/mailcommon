@@ -24,7 +24,7 @@ class FilterActionSendFakeDispositionTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterActionSendFakeDispositionTest(QObject *parent = Q_NULLPTR);
+    explicit FilterActionSendFakeDispositionTest(QObject *parent = nullptr);
     ~FilterActionSendFakeDispositionTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

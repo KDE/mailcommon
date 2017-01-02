@@ -31,7 +31,7 @@ class MailCommon::ContentTypeWidgetPrivate
 {
 public:
     ContentTypeWidgetPrivate()
-        : mContentsComboBox(Q_NULLPTR)
+        : mContentsComboBox(nullptr)
     {
 
     }

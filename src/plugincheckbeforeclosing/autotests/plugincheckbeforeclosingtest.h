@@ -27,7 +27,7 @@ class PluginCheckBeforeClosingTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit PluginCheckBeforeClosingTest(QObject *parent = Q_NULLPTR);
+    explicit PluginCheckBeforeClosingTest(QObject *parent = nullptr);
     ~PluginCheckBeforeClosingTest();
 };
 

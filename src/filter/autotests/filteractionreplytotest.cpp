@@ -33,7 +33,7 @@ FilterActionReplyToTest::~FilterActionReplyToTest()
 void FilterActionReplyToTest::shouldHaveDefaultValue()
 {
     MailCommon::FilterActionReplyTo filter;
-    QWidget *w = filter.createParamWidget(Q_NULLPTR);
+    QWidget *w = filter.createParamWidget(nullptr);
     QCOMPARE(w->objectName(), QStringLiteral("emailaddressrequester"));
 }
 

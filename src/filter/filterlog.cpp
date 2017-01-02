@@ -90,7 +90,7 @@ void FilterLog::Private::checkLogSize()
     }
 }
 
-FilterLog *FilterLog::Private::mSelf = Q_NULLPTR;
+FilterLog *FilterLog::Private::mSelf = nullptr;
 
 FilterLog::FilterLog()
     : d(new Private(this))

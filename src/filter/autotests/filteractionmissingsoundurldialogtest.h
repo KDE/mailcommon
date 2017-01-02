@@ -26,7 +26,7 @@ class FilterActionMissingSoundUrlDialogTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingSoundUrlDialogTest(QObject *parent = Q_NULLPTR);
+    explicit FilterActionMissingSoundUrlDialogTest(QObject *parent = nullptr);
     ~FilterActionMissingSoundUrlDialogTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

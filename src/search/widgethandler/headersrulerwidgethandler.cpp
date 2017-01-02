@@ -57,7 +57,7 @@ QWidget *HeadersRuleWidgetHandler::createFunctionWidget(
     int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const
 {
     if (number != 0) {
-        return Q_NULLPTR;
+        return nullptr;
     }
 
     PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
@@ -99,7 +99,7 @@ QWidget *HeadersRuleWidgetHandler::createValueWidget(int number,
         label->setBuddy(valueStack);
         return label;
     }
-    return Q_NULLPTR;
+    return nullptr;
 }
 
 //---------------------------------------------------------------------------

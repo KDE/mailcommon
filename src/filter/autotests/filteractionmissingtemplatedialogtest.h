@@ -26,7 +26,7 @@ class FilterActionMissingTemplateDialogTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingTemplateDialogTest(QObject *parent = Q_NULLPTR);
+    explicit FilterActionMissingTemplateDialogTest(QObject *parent = nullptr);
     ~FilterActionMissingTemplateDialogTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

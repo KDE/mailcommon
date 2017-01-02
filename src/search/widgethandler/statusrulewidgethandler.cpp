@@ -41,7 +41,7 @@ QWidget *StatusRuleWidgetHandler::createFunctionWidget(
     int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
 {
     if (number != 0) {
-        return Q_NULLPTR;
+        return nullptr;
     }
 
     PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
@@ -62,13 +62,13 @@ QWidget *StatusRuleWidgetHandler::createValueWidget(int number,
         const QObject *receiver) const
 {
     if (number != 0) {
-        return Q_NULLPTR;
+        return nullptr;
     }
 
     PimCommon::MinimumComboBox *statusCombo = new PimCommon::MinimumComboBox(valueStack);
     statusCombo->setObjectName(QStringLiteral("statusRuleValueCombo"));
     for (int i = 0; i < MailCommon::StatusValueCountWithoutHidden; ++i) {
-        if (MailCommon::StatusValues[ i ].icon != Q_NULLPTR) {
+        if (MailCommon::StatusValues[ i ].icon != nullptr) {
             statusCombo->addItem(
                 SmallIcon(QLatin1String(MailCommon::StatusValues[ i ].icon)),
                 i18nc("message status", MailCommon::StatusValues[ i ].text));

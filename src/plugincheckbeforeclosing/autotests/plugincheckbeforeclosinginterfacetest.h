@@ -27,7 +27,7 @@ class PluginCheckBeforeClosingInterfaceTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit PluginCheckBeforeClosingInterfaceTest(QObject *parent = Q_NULLPTR);
+    explicit PluginCheckBeforeClosingInterfaceTest(QObject *parent = nullptr);
     ~PluginCheckBeforeClosingInterfaceTest();
 };
 

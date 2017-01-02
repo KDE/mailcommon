@@ -32,7 +32,7 @@ using namespace MailCommon;
 class MailCommon::SnippetItem
 {
 public:
-    SnippetItem(bool isGroup = false, SnippetItem *parent = Q_NULLPTR);
+    SnippetItem(bool isGroup = false, SnippetItem *parent = nullptr);
     ~SnippetItem();
 
     bool isGroup() const;
@@ -339,14 +339,14 @@ QStringList SnippetsModel::mimeTypes() const
 QMimeData *SnippetsModel::mimeData(const QModelIndexList &indexes) const
 {
     if (indexes.isEmpty()) {
-        return Q_NULLPTR;
+        return nullptr;
     }
 
     const QModelIndex index = indexes.first();
 
     SnippetItem *item = static_cast<SnippetItem *>(index.internalPointer());
     if (item->isGroup()) {
-        return Q_NULLPTR;
+        return nullptr;
     }
 
     QMimeData *mimeData = new QMimeData();
@@ -383,7 +383,7 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action,
         if (item->isGroup()) {
             Q_EMIT addNewDndSnippset(encodedData);
         } else {
-            if (KMessageBox::Yes == KMessageBox::questionYesNo(Q_NULLPTR, i18n("Do you want to update snippet?"), i18n("Rename snippet"))) {
+            if (KMessageBox::Yes == KMessageBox::questionYesNo(nullptr, i18n("Do you want to update snippet?"), i18n("Rename snippet"))) {
                 item->setText(encodedData);
             }
         }

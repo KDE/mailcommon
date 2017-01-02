@@ -39,7 +39,7 @@ FilterActionMissingIdentityDialogTest::~FilterActionMissingIdentityDialogTest()
 
 void FilterActionMissingIdentityDialogTest::initTestCase()
 {
-    DummyKernel *kernel = new DummyKernel(Q_NULLPTR);
+    DummyKernel *kernel = new DummyKernel(nullptr);
     CommonKernel->registerKernelIf(kernel);   //register KernelIf early, it is used by the Filter classes
     CommonKernel->registerSettingsIf(kernel);   //SettingsIf is used in FolderTreeWidget
 }

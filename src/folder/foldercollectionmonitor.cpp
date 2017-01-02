@@ -40,7 +40,7 @@ class FolderCollectionMonitorPrivate
 {
 public:
     FolderCollectionMonitorPrivate()
-        : mMonitor(Q_NULLPTR)
+        : mMonitor(nullptr)
     {
 
     }

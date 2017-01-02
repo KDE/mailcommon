@@ -43,7 +43,7 @@ ScheduledTask::~ScheduledTask()
 JobScheduler::JobScheduler(QObject *parent)
     : QObject(parent), mTimer(this),
       mPendingImmediateTasks(0),
-      mCurrentTask(Q_NULLPTR), mCurrentJob(Q_NULLPTR)
+      mCurrentTask(nullptr), mCurrentJob(nullptr)
 {
     connect(&mTimer, &QTimer::timeout, this, &JobScheduler::slotRunNextJob);
     // No need to start the internal timer yet, we wait for a task to be scheduled
@@ -54,7 +54,7 @@ JobScheduler::~JobScheduler()
     qDeleteAll(mTaskList);
     mTaskList.clear();
     delete mCurrentTask;
-    mCurrentTask = Q_NULLPTR;
+    mCurrentTask = nullptr;
     delete mCurrentJob;
 }
 
@@ -115,7 +115,7 @@ void JobScheduler::interruptCurrentTask()
 #endif
     // File it again. This will either delete it or put it in mTaskList.
     registerTask(mCurrentTask);
-    mCurrentTask = Q_NULLPTR;
+    mCurrentTask = nullptr;
     mCurrentJob->kill(); // This deletes the job and calls slotJobFinished!
 }
 
@@ -125,8 +125,8 @@ void JobScheduler::slotRunNextJob()
 #ifdef DEBUG_SCHEDULER
         qCDebug(MAILCOMMON_LOG) << "JobScheduler: slotRunNextJob";
 #endif
-        Q_ASSERT(mCurrentTask == Q_NULLPTR);
-        ScheduledTask *task = Q_NULLPTR;
+        Q_ASSERT(mCurrentTask == nullptr);
+        ScheduledTask *task = nullptr;
         // Find a task suitable for being run
         TaskList::Iterator end(mTaskList.end());
         for (TaskList::Iterator it = mTaskList.begin(); it != end; ++it) {
@@ -175,7 +175,7 @@ void JobScheduler::restartTimer()
 
 void JobScheduler::runTaskNow(ScheduledTask *task)
 {
-    Q_ASSERT(mCurrentTask == Q_NULLPTR);
+    Q_ASSERT(mCurrentTask == nullptr);
     if (mCurrentTask) {
         interruptCurrentTask();
     }
@@ -191,7 +191,7 @@ void JobScheduler::runTaskNow(ScheduledTask *task)
 #endif
     if (!mCurrentJob) {   // nothing to do, e.g. folder deleted
         delete mCurrentTask;
-        mCurrentTask = Q_NULLPTR;
+        mCurrentTask = nullptr;
         if (!mTaskList.isEmpty()) {
             restartTimer();
         }
@@ -212,8 +212,8 @@ void JobScheduler::slotJobFinished()
     qCDebug(MAILCOMMON_LOG) << "JobScheduler: slotJobFinished";
 #endif
     delete mCurrentTask;
-    mCurrentTask = Q_NULLPTR;
-    mCurrentJob = Q_NULLPTR;
+    mCurrentTask = nullptr;
+    mCurrentJob = nullptr;
     if (!mTaskList.isEmpty()) {
         restartTimer();
     }

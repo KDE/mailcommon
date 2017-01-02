@@ -26,7 +26,7 @@ class IncidencesForWidgetTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit IncidencesForWidgetTest(QObject *parent = Q_NULLPTR);
+    explicit IncidencesForWidgetTest(QObject *parent = nullptr);
     ~IncidencesForWidgetTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

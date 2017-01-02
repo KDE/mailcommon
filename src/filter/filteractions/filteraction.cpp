@@ -65,7 +65,7 @@ QString FilterAction::informationAboutNotValidAction() const
 
 FilterAction *FilterAction::newAction()
 {
-    return Q_NULLPTR;
+    return nullptr;
 }
 
 QWidget *FilterAction::createParamWidget(QWidget *parent) const

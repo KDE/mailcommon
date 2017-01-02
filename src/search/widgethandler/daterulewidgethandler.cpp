@@ -49,7 +49,7 @@ QWidget *DateRuleWidgetHandler::createFunctionWidget(
     int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
 {
     if (number != 0) {
-        return Q_NULLPTR;
+        return nullptr;
     }
 
     PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
@@ -70,7 +70,7 @@ QWidget *DateRuleWidgetHandler::createValueWidget(int number,
         const QObject *receiver) const
 {
     if (number != 0) {
-        return Q_NULLPTR;
+        return nullptr;
     }
 
     KDateComboBox *dateCombo = new KDateComboBox(valueStack);

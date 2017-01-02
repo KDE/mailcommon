@@ -25,7 +25,7 @@ class FilterActionMissingAccountDialogTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingAccountDialogTest(QObject *parent = Q_NULLPTR);
+    explicit FilterActionMissingAccountDialogTest(QObject *parent = nullptr);
     ~FilterActionMissingAccountDialogTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

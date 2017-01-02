@@ -49,7 +49,7 @@ QWidget *MessageRuleWidgetHandler::createFunctionWidget(
     int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const
 {
     if (number != 0) {
-        return Q_NULLPTR;
+        return nullptr;
     }
 
     PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
@@ -89,7 +89,7 @@ QWidget *MessageRuleWidgetHandler::createValueWidget(int number,
         return label;
     }
 
-    return Q_NULLPTR;
+    return nullptr;
 }
 
 //---------------------------------------------------------------------------

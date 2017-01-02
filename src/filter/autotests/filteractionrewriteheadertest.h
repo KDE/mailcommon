@@ -24,7 +24,7 @@ class FilterActionRewriteHeaderTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterActionRewriteHeaderTest(QObject *parent = Q_NULLPTR);
+    explicit FilterActionRewriteHeaderTest(QObject *parent = nullptr);
     ~FilterActionRewriteHeaderTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

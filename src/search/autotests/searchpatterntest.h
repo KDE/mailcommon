@@ -24,7 +24,7 @@ class SearchPatternTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit SearchPatternTest(QObject *parent = Q_NULLPTR);
+    explicit SearchPatternTest(QObject *parent = nullptr);
     ~SearchPatternTest();
 private Q_SLOTS:
     void shouldRuleRequirePart_data();

@@ -24,7 +24,7 @@ class SearchRuleDateTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit SearchRuleDateTest(QObject *parent = Q_NULLPTR);
+    explicit SearchRuleDateTest(QObject *parent = nullptr);
 
 private Q_SLOTS:
     void shouldHaveDefaultValue();

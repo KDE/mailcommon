@@ -46,7 +46,7 @@ void FilterActionMoveTest::shouldHaveRequiresPart()
 void FilterActionMoveTest::shouldHaveDefaultValue()
 {
     MailCommon::FilterActionMove filter;
-    QWidget *w = filter.createParamWidget(Q_NULLPTR);
+    QWidget *w = filter.createParamWidget(nullptr);
     QVERIFY(w);
     MailCommon::FolderRequester *requester = dynamic_cast<MailCommon::FolderRequester *>(w);
     QVERIFY(requester);

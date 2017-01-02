@@ -52,11 +52,11 @@ using namespace MailCommon;
 
 CollectionGeneralPage::CollectionGeneralPage(QWidget *parent)
     : CollectionPropertiesPage(parent),
-      mContentsComboBox(Q_NULLPTR),
-      mIncidencesForComboBox(Q_NULLPTR),
-      mSharedSeenFlagsCheckBox(Q_NULLPTR),
-      mNameEdit(Q_NULLPTR),
-      mFolderCollection(Q_NULLPTR)
+      mContentsComboBox(nullptr),
+      mIncidencesForComboBox(nullptr),
+      mSharedSeenFlagsCheckBox(nullptr),
+      mNameEdit(nullptr),
+      mFolderCollection(nullptr)
 {
     setObjectName(QStringLiteral("MailCommon::CollectionGeneralPage"));
     setPageTitle(i18nc("@title:tab General settings for a folder.", "General"));

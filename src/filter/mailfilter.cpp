@@ -433,7 +433,7 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
     int numActions = config.readEntry("actions", 0);
     if (numActions > filterActionsMaximumSize()) {
         numActions = filterActionsMaximumSize();
-        KMessageBox::information(Q_NULLPTR, i18n("<qt>Too many filter actions in filter rule <b>%1</b>.</qt>", mPattern.name()));
+        KMessageBox::information(nullptr, i18n("<qt>Too many filter actions in filter rule <b>%1</b>.</qt>", mPattern.name()));
     }
 
     for (int i = 0; i < numActions; ++i) {
@@ -467,7 +467,7 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
                 }
             }
         } else
-            KMessageBox::information(Q_NULLPTR /* app-global modal dialog box */,
+            KMessageBox::information(nullptr /* app-global modal dialog box */,
                                      i18n("<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br />Ignoring it.</qt>",
                                           config.readEntry(actName, QString()),
                                           mPattern.name()));

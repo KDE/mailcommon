@@ -24,7 +24,7 @@ class FilterImporterGmailTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterImporterGmailTest(QObject *parent = Q_NULLPTR);
+    explicit FilterImporterGmailTest(QObject *parent = nullptr);
 private Q_SLOTS:
     void initTestCase();
     void testImportFilters();

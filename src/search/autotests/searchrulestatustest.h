@@ -24,7 +24,7 @@ class SearchRuleStatusTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit SearchRuleStatusTest(QObject *parent = Q_NULLPTR);
+    explicit SearchRuleStatusTest(QObject *parent = nullptr);
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldHaveRequirePart();

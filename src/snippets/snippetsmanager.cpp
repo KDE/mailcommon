@@ -43,17 +43,17 @@ class Q_DECL_HIDDEN SnippetsManager::Private
 public:
     Private(SnippetsManager *qq, QWidget *parent)
         : q(qq),
-          mModel(Q_NULLPTR),
-          mSelectionModel(Q_NULLPTR),
-          mActionCollection(Q_NULLPTR),
-          mEditor(Q_NULLPTR),
-          mAddSnippetAction(Q_NULLPTR),
-          mEditSnippetAction(Q_NULLPTR),
-          mDeleteSnippetAction(Q_NULLPTR),
-          mAddSnippetGroupAction(Q_NULLPTR),
-          mEditSnippetGroupAction(Q_NULLPTR),
-          mDeleteSnippetGroupAction(Q_NULLPTR),
-          mInsertSnippetAction(Q_NULLPTR),
+          mModel(nullptr),
+          mSelectionModel(nullptr),
+          mActionCollection(nullptr),
+          mEditor(nullptr),
+          mAddSnippetAction(nullptr),
+          mEditSnippetAction(nullptr),
+          mDeleteSnippetAction(nullptr),
+          mAddSnippetGroupAction(nullptr),
+          mEditSnippetGroupAction(nullptr),
+          mDeleteSnippetGroupAction(nullptr),
+          mInsertSnippetAction(nullptr),
           mParent(parent),
           mDirty(false)
     {
@@ -257,7 +257,7 @@ void SnippetsManager::Private::deleteSnippet()
     const QString snippetName = index.data(SnippetsModel::NameRole).toString();
 
     if (KMessageBox::warningContinueCancel(
-                Q_NULLPTR,
+                nullptr,
                 xi18nc("@info",
                        "Do you really want to remove snippet \"%1\"?<nl/>"
                        "<warning>There is no way to undo the removal.</warning>", snippetName),
@@ -327,7 +327,7 @@ void SnippetsManager::Private::deleteSnippetGroup()
 
     if (mModel->rowCount(groupIndex) > 0) {
         if (KMessageBox::warningContinueCancel(
-                    Q_NULLPTR,
+                    nullptr,
                     xi18nc("@info",
                            "Do you really want to remove group \"%1\" along with all its snippets?<nl/>"
                            "<warning>There is no way to undo the removal.</warning>", groupName),
@@ -337,7 +337,7 @@ void SnippetsManager::Private::deleteSnippetGroup()
         }
     } else {
         if (KMessageBox::warningContinueCancel(
-                    Q_NULLPTR,
+                    nullptr,
                     i18nc("@info",
                           "Do you really want to remove group \"%1\"?", groupName),
                     QString(),
