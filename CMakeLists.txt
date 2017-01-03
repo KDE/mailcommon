@@ -1,8 +1,9 @@
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.0)
+set(PIM_VERSION "5.4.42")
 
-project(mailcommon)
+project(mailcommon VERSION ${PIM_VERSION})
 
-set(KF5_VERSION "5.28.0")
+set(KF5_VERSION "5.27.0")
 find_package(ECM ${KF5_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${mailcommon_SOURCE_DIR}/cmake/modules/ ${ECM_MODULE_PATH})
 set(LIBRARY_NAMELINK)
@@ -19,7 +20,6 @@ include(ECMQtDeclareLoggingCategory)
 include(ECMAddTests)
 include(ECMCoverageOption)
 
-set(PIM_VERSION "5.4.42")
 set(MAILCOMMON_LIB_VERSION ${PIM_VERSION})
 set(AKONADIMIME_LIB_VERSION "5.4.40")
 set(MESSAGELIB_LIB_VERSION "5.4.40")
@@ -75,7 +75,7 @@ if (Qt5Designer_FOUND)
   find_package(KF5DesignerPlugin ${KF5_VERSION} CONFIG REQUIRED)
 endif()
 
-ecm_setup_version(${MAILCOMMON_LIB_VERSION} VARIABLE_PREFIX MAILCOMMON
+ecm_setup_version(PROJECT VARIABLE_PREFIX MAILCOMMON
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailcommon_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5MailCommonConfigVersion.cmake"
                         SOVERSION 5
