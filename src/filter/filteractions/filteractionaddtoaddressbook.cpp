@@ -87,7 +87,7 @@ FilterAction::ReturnCode FilterActionAddToAddressBook::process(ItemContext &cont
         contact.setNameFromString(name);
         contact.insertEmail(email, true);
         if (!mCategory.isEmpty()) {
-            contact.setCategories(mCategory.split(QStringLiteral(";")));
+            contact.setCategories(mCategory.split(QLatin1Char(';')));
         }
 
         KPIM::AddContactJob *job = new KPIM::AddContactJob(contact, Akonadi::Collection(mCollectionId));
@@ -157,7 +157,7 @@ void FilterActionAddToAddressBook::setParamWidgetValue(QWidget *paramWidget) con
 
     KPIM::TagWidget *categoryEdit = paramWidget->findChild<KPIM::TagWidget *>(QStringLiteral("CategoryEdit"));
     Q_ASSERT(categoryEdit);
-    categoryEdit->setSelection(mCategory.split(QStringLiteral(";")));
+    categoryEdit->setSelection(mCategory.split(QLatin1Char(';')));
 
     Akonadi::CollectionComboBox *collectionComboBox = paramWidget->findChild<Akonadi::CollectionComboBox *>(QStringLiteral("AddressBookComboBox"));
     Q_ASSERT(collectionComboBox);
@@ -173,7 +173,7 @@ void FilterActionAddToAddressBook::applyParamWidgetValue(QWidget *paramWidget)
 
     const KPIM::TagWidget *categoryEdit = paramWidget->findChild<KPIM::TagWidget *>(QStringLiteral("CategoryEdit"));
     Q_ASSERT(categoryEdit);
-    mCategory = categoryEdit->selection().join(QStringLiteral(";"));
+    mCategory = categoryEdit->selection().join(QLatin1Char(';'));
 
     const Akonadi::CollectionComboBox *collectionComboBox = paramWidget->findChild<Akonadi::CollectionComboBox *>(QStringLiteral("AddressBookComboBox"));
     Q_ASSERT(collectionComboBox);
@@ -200,7 +200,7 @@ void FilterActionAddToAddressBook::clearParamWidget(QWidget *paramWidget) const
 
     KPIM::TagWidget *categoryEdit = paramWidget->findChild<KPIM::TagWidget *>(QStringLiteral("CategoryEdit"));
     Q_ASSERT(categoryEdit);
-    categoryEdit->setSelection(mCategory.split(QStringLiteral(";")));
+    categoryEdit->setSelection(mCategory.split(QLatin1Char(';')));
 }
 
 QString FilterActionAddToAddressBook::argsAsString() const

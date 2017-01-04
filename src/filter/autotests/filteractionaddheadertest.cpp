@@ -76,7 +76,7 @@ void FilterActionAddHeaderTest::shouldClearWidget()
 void FilterActionAddHeaderTest::shouldReturnSieveCode()
 {
     MailCommon::FilterActionAddHeader filter;
-    QCOMPARE(filter.sieveRequires().join(QStringLiteral(",")), QStringLiteral("editheader"));
+    QCOMPARE(filter.sieveRequires().join(QLatin1Char(',')), QStringLiteral("editheader"));
 }
 
 void FilterActionAddHeaderTest::shouldBeEmpty()
