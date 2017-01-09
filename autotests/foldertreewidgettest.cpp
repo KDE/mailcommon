@@ -54,7 +54,7 @@
 
 #include "dummykernel.cpp"
 
-#define SHOW_WIDGET
+// #define SHOW_WIDGET
 
 using namespace Akonadi;
 
