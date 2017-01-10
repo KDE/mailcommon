@@ -40,7 +40,7 @@ public:
     Q_DECLARE_FLAGS(FolderTreeWidgetProxyModelOptions, FolderTreeWidgetProxyModelOption)
 
     explicit FolderTreeWidgetProxyModel(
-        QObject *parent = Q_NULLPTR,
+        QObject *parent = nullptr,
         FolderTreeWidgetProxyModelOptions = FolderTreeWidgetProxyModel::None);
 
     virtual ~FolderTreeWidgetProxyModel();

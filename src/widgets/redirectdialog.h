@@ -66,7 +66,7 @@ public:
      * @param mode The preferred send mode.
      * @param parent The parent widget.
      */
-    explicit RedirectDialog(SendMode mode = SendNow, QWidget *parent = Q_NULLPTR);
+    explicit RedirectDialog(SendMode mode = SendNow, QWidget *parent = nullptr);
 
     /**
      * Destroys the redirect dialog.

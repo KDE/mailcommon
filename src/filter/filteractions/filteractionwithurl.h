@@ -50,7 +50,7 @@ class FilterActionWithUrlHelpButton : public QToolButton
 {
     Q_OBJECT
 public:
-    explicit FilterActionWithUrlHelpButton(QWidget *parent = Q_NULLPTR);
+    explicit FilterActionWithUrlHelpButton(QWidget *parent = nullptr);
     ~FilterActionWithUrlHelpButton();
 };
 
@@ -61,7 +61,7 @@ public:
     /**
      * @copydoc FilterAction::FilterAction
      */
-    FilterActionWithUrl(const QString &name, const QString &label, QObject *parent = Q_NULLPTR);
+    FilterActionWithUrl(const QString &name, const QString &label, QObject *parent = nullptr);
 
     /**
      * @copydoc FilterAction::~FilterAction

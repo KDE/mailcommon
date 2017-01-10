@@ -30,7 +30,7 @@ class MAILCOMMON_EXPORT ContentTypeWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit ContentTypeWidget(QWidget *parent = Q_NULLPTR);
+    explicit ContentTypeWidget(QWidget *parent = nullptr);
     ~ContentTypeWidget();
 
     int currentIndex() const;

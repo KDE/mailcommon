@@ -56,7 +56,7 @@ class MailFilter;
 class QListWidgetFilterItem : public QListWidgetItem
 {
 public:
-    explicit QListWidgetFilterItem(const QString &text, QListWidget *parent = Q_NULLPTR);
+    explicit QListWidgetFilterItem(const QString &text, QListWidget *parent = nullptr);
     ~QListWidgetFilterItem();
 
     void setFilter(MailCommon::MailFilter *filter);
@@ -73,7 +73,7 @@ public:
     /**
      * Constructor.
      */
-    explicit KMFilterListBox(const QString &title, QWidget *widget = Q_NULLPTR);
+    explicit KMFilterListBox(const QString &title, QWidget *widget = nullptr);
 
     /**
      * Destructor.

@@ -61,7 +61,7 @@ public:
         KMime::MDN::DispositionType d);
 
 private:
-    explicit MDNAdviceHelper(QObject *parent = Q_NULLPTR)
+    explicit MDNAdviceHelper(QObject *parent = nullptr)
         : QObject(parent)
     {
     }
@@ -81,7 +81,7 @@ class MAILCOMMON_EXPORT MDNAdviceDialog : public QDialog
     Q_OBJECT
 
 public:
-    MDNAdviceDialog(const QString &text, bool canDeny, QWidget *parent = Q_NULLPTR);
+    MDNAdviceDialog(const QString &text, bool canDeny, QWidget *parent = nullptr);
     ~MDNAdviceDialog();
 
     MessageComposer::MDNAdvice result() const;

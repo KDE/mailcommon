@@ -60,7 +60,7 @@ public:
      *
      * @param parent The parent widget.
      */
-    explicit FilterActionWidget(QWidget *parent = Q_NULLPTR);
+    explicit FilterActionWidget(QWidget *parent = nullptr);
 
     /**
      * Destroys the filter action widget.
@@ -121,7 +121,7 @@ public:
      *
      * @param parent The parent widget.
      */
-    explicit FilterActionWidgetLister(QWidget *parent = Q_NULLPTR);
+    explicit FilterActionWidgetLister(QWidget *parent = nullptr);
 
     /**
      * Destroys the filter action widget lister.

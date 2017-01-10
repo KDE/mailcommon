@@ -125,7 +125,7 @@ public:
      * single filter dialog.
      */
     explicit KMFilterDialog(const QList<KActionCollection *> &actionCollection,
-                            QWidget *parent = Q_NULLPTR, bool createDummyFilter = true);
+                            QWidget *parent = nullptr, bool createDummyFilter = true);
 
     /**
      * Called from KMFilterMgr. Creates a new filter and presets

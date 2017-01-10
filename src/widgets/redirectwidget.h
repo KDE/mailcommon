@@ -35,7 +35,7 @@ class RedirectWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit RedirectWidget(QWidget *parent = Q_NULLPTR);
+    explicit RedirectWidget(QWidget *parent = nullptr);
     ~RedirectWidget();
 
     void setFocus();

@@ -30,7 +30,7 @@ class MAILCOMMON_EXPORT PluginCheckBeforeClosing : public QObject
 {
     Q_OBJECT
 public:
-    explicit PluginCheckBeforeClosing(QObject *parent = Q_NULLPTR);
+    explicit PluginCheckBeforeClosing(QObject *parent = nullptr);
     ~PluginCheckBeforeClosing();
 };
 }

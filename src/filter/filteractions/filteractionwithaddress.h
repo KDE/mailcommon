@@ -48,7 +48,7 @@ public:
     /**
      * @copydoc FilterAction::FilterAction
      */
-    FilterActionWithAddress(const QString &name, const QString &label, QObject *parent = Q_NULLPTR);
+    FilterActionWithAddress(const QString &name, const QString &label, QObject *parent = nullptr);
 
     /**
      * @copydoc FilterAction::createParamWidget

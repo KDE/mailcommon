@@ -33,7 +33,7 @@ class FilterActionMove: public FilterActionWithFolder
 {
     Q_OBJECT
 public:
-    explicit FilterActionMove(QObject *parent = Q_NULLPTR);
+    explicit FilterActionMove(QObject *parent = nullptr);
     ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
     SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
     static FilterAction *newAction();

@@ -41,7 +41,7 @@ class MAILCOMMON_EXPORT CollectionExpiryPage : public Akonadi::CollectionPropert
     Q_OBJECT
 
 public:
-    explicit CollectionExpiryPage(QWidget *parent = Q_NULLPTR);
+    explicit CollectionExpiryPage(QWidget *parent = nullptr);
     ~CollectionExpiryPage();
 
     bool canHandle(const Akonadi::Collection &col) const Q_DECL_OVERRIDE;

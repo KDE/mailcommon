@@ -30,7 +30,7 @@ class FilterActionMissingSoundUrlDialog : public QDialog
 public:
     explicit FilterActionMissingSoundUrlDialog(const QString &filtername,
             const QString &argStr,
-            QWidget *parent = Q_NULLPTR);
+            QWidget *parent = nullptr);
     ~FilterActionMissingSoundUrlDialog();
     QString soundUrl() const;
 

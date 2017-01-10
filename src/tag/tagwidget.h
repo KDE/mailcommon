@@ -38,7 +38,7 @@ class MAILCOMMON_EXPORT TagWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit TagWidget(const QList<KActionCollection *> &actionCollections, QWidget *parent = Q_NULLPTR);
+    explicit TagWidget(const QList<KActionCollection *> &actionCollections, QWidget *parent = nullptr);
     ~TagWidget();
 
     void recordTagSettings(MailCommon::Tag::Ptr tag);

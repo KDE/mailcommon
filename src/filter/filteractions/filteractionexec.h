@@ -33,7 +33,7 @@ class FilterActionExec : public FilterActionWithCommand
 {
     Q_OBJECT
 public:
-    explicit FilterActionExec(QObject *parent = Q_NULLPTR);
+    explicit FilterActionExec(QObject *parent = nullptr);
     ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
     SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
     static FilterAction *newAction();

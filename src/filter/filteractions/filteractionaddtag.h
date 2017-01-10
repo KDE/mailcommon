@@ -38,7 +38,7 @@ class FilterActionAddTag: public FilterAction
 {
     Q_OBJECT
 public:
-    explicit FilterActionAddTag(QObject *parent = Q_NULLPTR);
+    explicit FilterActionAddTag(QObject *parent = nullptr);
     ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
     SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
 

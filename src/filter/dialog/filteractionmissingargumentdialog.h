@@ -57,7 +57,7 @@ public:
     explicit FilterActionMissingCollectionDialog(const Akonadi::Collection::List &list,
             const QString &filtername = QString(),
             const QString &argStr = QString(),
-            QWidget *parent = Q_NULLPTR);
+            QWidget *parent = nullptr);
     ~FilterActionMissingCollectionDialog();
 
     Akonadi::Collection selectedCollection() const;

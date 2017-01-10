@@ -32,7 +32,7 @@ public:
     /**
      * @copydoc FilterAction::FilterAction
      */
-    FilterActionWithTest(const QString &name, const QString &label, QObject *parent = Q_NULLPTR);
+    FilterActionWithTest(const QString &name, const QString &label, QObject *parent = nullptr);
 
     /**
      * @copydoc FilterAction::~FilterAction

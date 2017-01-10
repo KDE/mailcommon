@@ -35,7 +35,7 @@ class SnippetDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit SnippetDialog(KActionCollection *actionCollection, bool inGroupMode, QWidget *parent = Q_NULLPTR);
+    explicit SnippetDialog(KActionCollection *actionCollection, bool inGroupMode, QWidget *parent = nullptr);
     ~SnippetDialog();
 
     void setName(const QString &name);

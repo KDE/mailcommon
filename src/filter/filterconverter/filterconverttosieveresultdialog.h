@@ -31,7 +31,7 @@ class FilterConvertToSieveResultDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit FilterConvertToSieveResultDialog(QWidget *parent = Q_NULLPTR);
+    explicit FilterConvertToSieveResultDialog(QWidget *parent = nullptr);
     ~FilterConvertToSieveResultDialog();
 
     void setCode(const QString &code);

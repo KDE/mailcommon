@@ -33,7 +33,7 @@ class FilterActionForward: public FilterActionWithAddress
 {
     Q_OBJECT
 public:
-    explicit FilterActionForward(QObject *parent = Q_NULLPTR);
+    explicit FilterActionForward(QObject *parent = nullptr);
     static FilterAction *newAction();
     ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
     SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;

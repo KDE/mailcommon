@@ -31,7 +31,7 @@ class MAILCOMMON_EXPORT IncidencesForWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit IncidencesForWidget(QWidget *parent = Q_NULLPTR);
+    explicit IncidencesForWidget(QWidget *parent = nullptr);
     ~IncidencesForWidget();
 
     int currentIndex() const;

@@ -47,7 +47,7 @@ public:
      * @param kernel The mail kernel object that will be used.
      * @param parent The parent object.
      */
-    explicit SendMdnHandler(IKernel *kernel, QObject *parent = Q_NULLPTR);
+    explicit SendMdnHandler(IKernel *kernel, QObject *parent = nullptr);
 
     /**
      * Destroys the send mdn handler.

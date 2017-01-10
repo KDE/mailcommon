@@ -26,7 +26,7 @@ class MAILCOMMON_EXPORT InvalidFilterInfoWidget : public KMessageWidget
 {
     Q_OBJECT
 public:
-    explicit InvalidFilterInfoWidget(QWidget *parent = Q_NULLPTR);
+    explicit InvalidFilterInfoWidget(QWidget *parent = nullptr);
     ~InvalidFilterInfoWidget();
 public Q_SLOTS:
     void slotShowDetails(const QString &details);

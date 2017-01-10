@@ -29,7 +29,7 @@ class MAILCOMMON_EXPORT InvalidFilterListView : public QListView
 {
     Q_OBJECT
 public:
-    explicit InvalidFilterListView(QWidget *parent = Q_NULLPTR);
+    explicit InvalidFilterListView(QWidget *parent = nullptr);
     ~InvalidFilterListView();
     void setInvalidFilters(const QVector<MailCommon::InvalidFilterInfo> &lst);
 Q_SIGNALS:

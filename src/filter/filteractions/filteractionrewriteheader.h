@@ -35,7 +35,7 @@ class FilterActionRewriteHeader: public FilterActionWithStringList
 {
     Q_OBJECT
 public:
-    explicit FilterActionRewriteHeader(QObject *parent = Q_NULLPTR);
+    explicit FilterActionRewriteHeader(QObject *parent = nullptr);
     ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
     SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
     QWidget *createParamWidget(QWidget *parent) const Q_DECL_OVERRIDE;

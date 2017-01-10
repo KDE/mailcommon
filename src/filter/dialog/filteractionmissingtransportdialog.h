@@ -33,7 +33,7 @@ class FilterActionMissingTransportDialog : public QDialog
     Q_OBJECT
 public:
     explicit FilterActionMissingTransportDialog(const QString &filtername,
-            QWidget *parent = Q_NULLPTR);
+            QWidget *parent = nullptr);
     ~FilterActionMissingTransportDialog();
     int selectedTransport() const;
 

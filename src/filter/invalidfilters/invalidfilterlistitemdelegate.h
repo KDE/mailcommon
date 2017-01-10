@@ -26,7 +26,7 @@ class InvalidFilterListItemDelegate : public KWidgetItemDelegate
 {
     Q_OBJECT
 public:
-    explicit InvalidFilterListItemDelegate(QAbstractItemView *itemView, QObject *parent = Q_NULLPTR);
+    explicit InvalidFilterListItemDelegate(QAbstractItemView *itemView, QObject *parent = nullptr);
     virtual ~InvalidFilterListItemDelegate();
 
     QSize sizeHint(const QStyleOptionViewItem &option,

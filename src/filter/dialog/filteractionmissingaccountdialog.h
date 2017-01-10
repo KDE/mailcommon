@@ -30,7 +30,7 @@ class FilterActionMissingAccountDialog : public QDialog
 public:
     explicit FilterActionMissingAccountDialog(const QStringList &lstAccount,
             const QString &filtername,
-            QWidget *parent = Q_NULLPTR);
+            QWidget *parent = nullptr);
     ~FilterActionMissingAccountDialog();
     QStringList selectedAccount() const;
     static bool allAccountExist(const QStringList &lst);

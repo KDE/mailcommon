@@ -65,8 +65,8 @@ public:
     Q_DECLARE_FLAGS(TreeViewOptions, TreeViewOption)
 
     explicit FolderTreeWidget(
-        QWidget *parent = Q_NULLPTR,
-        KXMLGUIClient *xmlGuiClient = Q_NULLPTR,
+        QWidget *parent = nullptr,
+        KXMLGUIClient *xmlGuiClient = nullptr,
         TreeViewOptions options = (TreeViewOptions)(ShowUnreadCount |
                                   ShowCollectionStatisticAnimation),
         FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelOptions optReadableProxy = FolderTreeWidgetProxyModel::None);

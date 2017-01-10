@@ -35,7 +35,7 @@ public:
     /**
      * @copydoc FilterAction::FilterAction
      */
-    FilterActionWithCommand(const QString &name, const QString &label, QObject *parent = Q_NULLPTR);
+    FilterActionWithCommand(const QString &name, const QString &label, QObject *parent = nullptr);
 
     /**
      * @copydoc FilterAction::createParamWidget

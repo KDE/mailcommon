@@ -27,7 +27,7 @@ class FilterActionUnsetStatus: public FilterActionStatus
 {
     Q_OBJECT
 public:
-    explicit FilterActionUnsetStatus(QObject *parent = Q_NULLPTR);
+    explicit FilterActionUnsetStatus(QObject *parent = nullptr);
     ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
     SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
 

@@ -66,7 +66,7 @@ public:
         TarGz = 3
     };
 
-    explicit BackupJob(QWidget *parent = Q_NULLPTR);
+    explicit BackupJob(QWidget *parent = nullptr);
     ~BackupJob();
 
     void setRootFolder(const Akonadi::Collection &rootFolder);

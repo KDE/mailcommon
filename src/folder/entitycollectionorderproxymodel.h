@@ -42,7 +42,7 @@ class MAILCOMMON_EXPORT EntityCollectionOrderProxyModel : public Akonadi::Entity
 {
     Q_OBJECT
 public:
-    explicit EntityCollectionOrderProxyModel(QObject *parent = Q_NULLPTR);
+    explicit EntityCollectionOrderProxyModel(QObject *parent = nullptr);
 
     virtual ~EntityCollectionOrderProxyModel();
 

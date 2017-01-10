@@ -31,7 +31,7 @@ class FilterActionMissingTemplateDialog : public QDialog
 public:
     explicit FilterActionMissingTemplateDialog(const QStringList &templateList,
             const QString &filtername,
-            QWidget *parent = Q_NULLPTR);
+            QWidget *parent = nullptr);
     ~FilterActionMissingTemplateDialog();
     QString selectedTemplate() const;
 

@@ -30,7 +30,7 @@ class MAILCOMMON_EXPORT InvalidFilterDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit InvalidFilterDialog(QWidget *parent = Q_NULLPTR);
+    explicit InvalidFilterDialog(QWidget *parent = nullptr);
     ~InvalidFilterDialog();
 
     void setInvalidFilters(const QVector<InvalidFilterInfo> &lst);

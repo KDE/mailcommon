@@ -33,7 +33,7 @@ class FilterActionSendFakeDisposition: public FilterActionWithStringList
 {
     Q_OBJECT
 public:
-    explicit FilterActionSendFakeDisposition(QObject *parent = Q_NULLPTR);
+    explicit FilterActionSendFakeDisposition(QObject *parent = nullptr);
     ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
     SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
 

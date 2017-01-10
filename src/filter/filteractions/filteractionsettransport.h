@@ -33,7 +33,7 @@ class FilterActionSetTransport: public FilterAction
 {
     Q_OBJECT
 public:
-    explicit FilterActionSetTransport(QObject *parent = Q_NULLPTR);
+    explicit FilterActionSetTransport(QObject *parent = nullptr);
     ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
     SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
     static FilterAction *newAction();

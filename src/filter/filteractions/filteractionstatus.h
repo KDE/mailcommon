@@ -28,7 +28,7 @@ class FilterActionStatus : public FilterActionWithStringList
 {
     Q_OBJECT
 public:
-    FilterActionStatus(const QString &name, const QString &label, QObject *parent = Q_NULLPTR);
+    FilterActionStatus(const QString &name, const QString &label, QObject *parent = nullptr);
     SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
     bool isEmpty() const Q_DECL_OVERRIDE;
     void argsFromString(const QString &argsStr) Q_DECL_OVERRIDE;

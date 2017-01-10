@@ -31,7 +31,7 @@ public:
     explicit FilterActionMissingTagDialog(const QMap<QUrl, QString> &templateList,
                                           const QString &filtername,
                                           const QString &argsStr,
-                                          QWidget *parent = Q_NULLPTR);
+                                          QWidget *parent = nullptr);
     ~FilterActionMissingTagDialog();
     QString selectedTag() const;
 

@@ -47,7 +47,7 @@ public:
     /**
      * @copydoc FilterAction::FilterAction
      */
-    FilterActionWithNone(const QString &name, const QString &label, QObject *parent = Q_NULLPTR);
+    FilterActionWithNone(const QString &name, const QString &label, QObject *parent = nullptr);
 
     /**
      * @copydoc FilterAction::argsFromString
