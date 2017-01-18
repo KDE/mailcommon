@@ -41,6 +41,9 @@ using namespace MailCommon;
 struct InstanceStruct {
     QString name;
     QIcon icon;
+    bool isValid() const {
+        return !name.isEmpty();
+    }
 };
 
 class MailCommon::AccountConfigOrderDialogPrivate
@@ -226,8 +229,8 @@ void AccountConfigOrderDialog::init()
     const int numberOfElement(finalList.count());
     for (int i = 0; i < numberOfElement; ++i) {
         const QString identifier(finalList.at(i));
-        if (mapInstance.contains(identifier)) {
-            InstanceStruct tmp = mapInstance.value(identifier);
+        const InstanceStruct tmp = mapInstance.value(identifier);
+        if (tmp.isValid()) {
             QListWidgetItem *item = new QListWidgetItem(tmp.icon, tmp.name, d->mListAccount);
             item->setData(AccountConfigOrderDialog::IdentifierAccount, identifier);
             d->mListAccount->addItem(item);
