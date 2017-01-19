@@ -159,7 +159,7 @@ void FolderSelectionDialog::slotDoubleClick(const QModelIndex &index)
 {
     Q_UNUSED(index);
     const bool hasSelectedCollection =
-        (d->folderTreeWidget->selectionModel()->selectedIndexes().count() > 0);
+        (!d->folderTreeWidget->selectionModel()->selectedIndexes().isEmpty());
     if (hasSelectedCollection) {
         accept();
     }
@@ -233,7 +233,7 @@ void FolderSelectionDialog::collectionCreationResult(KJob *job)
 void FolderSelectionDialog::slotSelectionChanged()
 {
     const bool enablebuttons =
-        (d->folderTreeWidget->selectionModel()->selectedIndexes().count() > 0);
+        (!d->folderTreeWidget->selectionModel()->selectedIndexes().isEmpty());
     d->mOkButton->setEnabled(enablebuttons);
 
     if (!d->mNotAllowToCreateNewFolder) {
