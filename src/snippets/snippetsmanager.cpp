@@ -586,9 +586,9 @@ void SnippetsManager::Private::save()
         group.writeEntry("variablesCount", variablesCount);
 
         int counter = 0;
-        QMapIterator<QString, QString> it(mSavedVariables);
-        while (it.hasNext()) {
-            it.next();
+        QMap<QString, QString>::const_iterator it = mSavedVariables.cbegin();
+        const QMap<QString, QString>::const_iterator itEnd = mSavedVariables.cend();
+        for (; it != itEnd; ++it) {
             group.writeEntry(QStringLiteral("variableName_%1").arg(counter), it.key());
             group.writeEntry(QStringLiteral("variableValue_%1").arg(counter), it.value());
             counter++;
