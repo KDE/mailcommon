@@ -56,9 +56,9 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
     mTagList = new QListWidget(this);
     mTagList->setObjectName(QStringLiteral("taglist"));
 
-    QMapIterator<QUrl, QString> map(tagList);
-    while (map.hasNext()) {
-        map.next();
+    QMap<QUrl, QString>::const_iterator map = tagList.constBegin();
+    const QMap<QUrl, QString>::const_iterator mapEnd = tagList.constEnd();
+    for(;map != mapEnd; ++map) {
         QListWidgetItem *item = new QListWidgetItem(map.value());
         item->setData(UrlData, map.key().toString());
         mTagList->addItem(item);

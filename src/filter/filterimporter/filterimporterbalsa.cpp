@@ -19,6 +19,7 @@
 #include "filter/filtermanager.h"
 #include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
+#include "helper_p.h"
 #include <KConfig>
 #include <KConfigGroup>
 
@@ -98,7 +99,7 @@ void FilterImporterBalsa::parseCondition(const QString &condition, MailCommon::M
         //no multi condition
         conditionList << condition;
     }
-    Q_FOREACH (QString cond, conditionList) {
+    for (QString cond : qAsConst(conditionList)) {
         cond = cond.trimmed();
         if (cond.startsWith(QStringLiteral("NOT"))) {
             cond = cond.right(cond.length() - 3);

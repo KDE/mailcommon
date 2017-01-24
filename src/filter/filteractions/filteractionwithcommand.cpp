@@ -56,7 +56,8 @@ static KMime::Content *findMimeNodeForIndex(KMime::Content *node, int &index)
         return node;
     }
 
-    foreach (KMime::Content *child, node->contents()) {
+    const QVector<KMime::Content *> lstContents = node->contents();
+    for (KMime::Content *child : lstContents) {
         KMime::Content *result = findMimeNodeForIndex(child, --index);
         if (result) {
             return result;

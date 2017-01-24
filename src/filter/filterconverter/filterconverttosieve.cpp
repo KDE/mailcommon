@@ -18,6 +18,7 @@
 #include "filterconverttosieve.h"
 #include "filterconverttosieveresultdialog.h"
 #include "filter/mailfilter.h"
+#include "helper_p.h"
 
 #include <QPointer>
 
@@ -38,12 +39,12 @@ void FilterConvertToSieve::convert()
     if (!mListFilters.isEmpty()) {
         QStringList requires;
         QString code;
-        Q_FOREACH (MailFilter *filter, mListFilters) {
+        for (MailFilter *filter : qAsConst(mListFilters)) {
             filter->generateSieveScript(requires, code);
             code += QLatin1Char('\n');
         }
         QString requireStr;
-        Q_FOREACH (const QString &require, requires) {
+        for (const QString &require : qAsConst(requires)) {
             requireStr += QStringLiteral("require \"%1\";").arg(require);
             requireStr += QLatin1Char('\n');
         }
