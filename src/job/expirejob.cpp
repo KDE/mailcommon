@@ -127,7 +127,8 @@ void ExpireJob::itemFetchResult(KJob *job)
         return;
     }
 
-    foreach (const Akonadi::Item &item, qobject_cast<Akonadi::ItemFetchJob *>(job)->items()) {
+    const Akonadi::Item::List items = qobject_cast<Akonadi::ItemFetchJob *>(job)->items();
+    for (const Akonadi::Item &item : items) {
         if (!item.hasPayload<KMime::Message::Ptr>()) {
             continue;
         }

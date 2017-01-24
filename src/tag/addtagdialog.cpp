@@ -18,6 +18,7 @@
 #include "addtagdialog.h"
 #include "tag/tagwidget.h"
 #include "mailcommon_debug.h"
+#include "helper_p.h"
 
 #include <KLocalizedString>
 #include <KLineEdit>
@@ -91,7 +92,7 @@ void AddTagDialog::slotSave()
 {
     const QString name(d->mTagWidget->tagNameLineEdit()->text());
 
-    Q_FOREACH (const MailCommon::Tag::Ptr &tag, d->mTags) {
+    for (const MailCommon::Tag::Ptr &tag : qAsConst(d->mTags)) {
         if (tag->name() == name) {
             KMessageBox::error(this, i18n("Tag %1 already exists", name));
             d->mTagWidget->tagNameLineEdit()->setFocus();

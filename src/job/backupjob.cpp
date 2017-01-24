@@ -20,6 +20,7 @@
 */
 
 #include "backupjob.h"
+#include "helper_p.h"
 
 #include <Libkdepim/BroadcastStatus>
 #include "mailcommon_debug.h"
@@ -120,7 +121,8 @@ bool BackupJob::queueFolders(const Akonadi::Collection &root)
             return false;
         }
 
-        foreach (const Akonadi::Collection &collection, job->collections()) {
+        const Akonadi::Collection::List lstCols = job->collections();
+        for (const Akonadi::Collection &collection : lstCols) {
             if (!queueFolders(collection)) {
                 return false;
             }
@@ -132,7 +134,7 @@ bool BackupJob::queueFolders(const Akonadi::Collection &root)
 
 bool BackupJob::hasChildren(const Akonadi::Collection &collection) const
 {
-    foreach (const Akonadi::Collection &curCol, mAllFolders) {
+    for (const Akonadi::Collection &curCol : qAsConst(mAllFolders)) {
         if (collection == curCol.parentCollection()) {
             return true;
         }
@@ -304,7 +306,7 @@ bool BackupJob::writeDirHelper(const QString &directoryPath)
 
 QString BackupJob::collectionName(const Akonadi::Collection &collection) const
 {
-    foreach (const Akonadi::Collection &curCol, mAllFolders) {
+    for (const Akonadi::Collection &curCol : qAsConst(mAllFolders)) {
         if (curCol == collection) {
             return curCol.name();
         }

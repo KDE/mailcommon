@@ -135,12 +135,12 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
     : QDialog(parent), d(new Private(this, mode))
 {
     setWindowTitle(i18n("Redirect Message"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Cancel);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Cancel, this);
     QVBoxLayout *topLayout = new QVBoxLayout;
     setLayout(topLayout);
-    d->mUser1Button = new QPushButton;
+    d->mUser1Button = new QPushButton(this);
     buttonBox->addButton(d->mUser1Button, QDialogButtonBox::ActionRole);
-    d->mUser2Button = new QPushButton;
+    d->mUser2Button = new QPushButton(this);
     buttonBox->addButton(d->mUser2Button, QDialogButtonBox::ActionRole);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &RedirectDialog::reject);
     if (mode == SendNow) {

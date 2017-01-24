@@ -68,7 +68,7 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(QWidget *parent)
       d(new MailCommon::AccountConfigOrderDialogPrivate)
 {
     setWindowTitle(i18n("Edit Accounts Order"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
@@ -84,7 +84,7 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(QWidget *parent)
     vbox->setMargin(0);
     page->setLayout(vbox);
 
-    d->mEnableAccountOrder = new QCheckBox(i18n("Use custom order"));
+    d->mEnableAccountOrder = new QCheckBox(i18n("Use custom order"), this);
     connect(d->mEnableAccountOrder, &QCheckBox::clicked, this, &AccountConfigOrderDialog::slotEnableAccountOrder);
     vbox->addWidget(d->mEnableAccountOrder);
 
@@ -189,7 +189,8 @@ void AccountConfigOrderDialog::init()
     QStringList instanceList;
 
     QMap<QString, InstanceStruct> mapInstance;
-    foreach (const Akonadi::AgentInstance &instance, Akonadi::AgentManager::self()->instances()) {
+    const Akonadi::AgentInstance::List lstInstances = Akonadi::AgentManager::self()->instances();
+    for (const Akonadi::AgentInstance &instance : lstInstances) {
         const QStringList capabilities(instance.type().capabilities());
         if (instance.type().mimeTypes().contains(KMime::Message::mimeType())) {
             if (capabilities.contains(QStringLiteral("Resource")) &&

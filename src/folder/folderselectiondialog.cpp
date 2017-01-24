@@ -67,7 +67,7 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
     setObjectName(QStringLiteral("folder dialog"));
 
     d->mNotAllowToCreateNewFolder = (options & FolderSelectionDialog::NotAllowToCreateNewFolder);
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QVBoxLayout *mainLayout = new QVBoxLayout;
     setLayout(mainLayout);
     d->mOkButton = buttonBox->button(QDialogButtonBox::Ok);

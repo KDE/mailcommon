@@ -31,8 +31,7 @@
 
 #include <kio/global.h> //krazy:exclude=camelcase as there is no such
 
-namespace MailCommon
-{
+using namespace MailCommon;
 
 //----------------------------------------------------------------------------
 FolderJob::FolderJob() :
@@ -76,7 +75,5 @@ bool FolderJob::isCancellable() const
 void FolderJob::setCancellable(bool b)
 {
     mCancellable = b;
-}
-
 }
 

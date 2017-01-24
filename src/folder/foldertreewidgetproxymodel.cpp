@@ -128,8 +128,10 @@ bool FolderTreeWidgetProxyModel::enabledCheck() const
 
 void FolderTreeWidgetProxyModel::setHideVirtualFolder(bool exclude)
 {
-    d->hideVirtualFolder = exclude;
-    invalidate();
+    if (d->hideVirtualFolder != exclude) {
+        d->hideVirtualFolder = exclude;
+        invalidate();
+    }
 }
 
 bool FolderTreeWidgetProxyModel::hideVirtualFolder() const
@@ -139,8 +141,10 @@ bool FolderTreeWidgetProxyModel::hideVirtualFolder() const
 
 void FolderTreeWidgetProxyModel::setHideSpecificFolder(bool hide)
 {
-    d->hideSpecificFolder = hide;
-    invalidate();
+    if (d->hideSpecificFolder != hide) {
+        d->hideSpecificFolder = hide;
+        invalidate();
+    }
 }
 
 bool FolderTreeWidgetProxyModel::hideSpecificFolder() const
@@ -150,8 +154,10 @@ bool FolderTreeWidgetProxyModel::hideSpecificFolder() const
 
 void FolderTreeWidgetProxyModel::setHideOutboxFolder(bool hide)
 {
-    d->hideOutboxFolder = hide;
-    invalidate();
+    if (d->hideOutboxFolder != hide) {
+        d->hideOutboxFolder = hide;
+        invalidate();
+    }
 }
 
 bool FolderTreeWidgetProxyModel::hideOutboxFolder() const
