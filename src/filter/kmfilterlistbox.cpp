@@ -524,7 +524,8 @@ void KMFilterListBox::slotDelete()
 
     Q_EMIT resetWidgets();
 
-    Q_FOREACH (QListWidgetItem *item, mListWidget->selectedItems()) {
+    const QList<QListWidgetItem *> lstItems = mListWidget->selectedItems();
+    for (QListWidgetItem *item : lstItems) {
         QListWidgetFilterItem *itemFilter = static_cast<QListWidgetFilterItem *>(item);
 
         MailCommon::MailFilter *filter = itemFilter->filter();
@@ -620,7 +621,7 @@ QStringList KMFilterListBox::selectedFilterId(SearchRule::RequiredPart &required
 
 void KMFilterListBox::slotBottom()
 {
-    QList<QListWidgetItem *> listWidgetItem = selectedFilter();
+    const QList<QListWidgetItem *> listWidgetItem = selectedFilter();
     if (listWidgetItem.isEmpty()) {
         return;
     }
@@ -653,7 +654,7 @@ void KMFilterListBox::slotBottom()
 
 void KMFilterListBox::slotUp()
 {
-    QList<QListWidgetItem *> listWidgetItem = selectedFilter();
+    const QList<QListWidgetItem *> listWidgetItem = selectedFilter();
     if (listWidgetItem.isEmpty()) {
         return;
     }
@@ -681,7 +682,7 @@ void KMFilterListBox::slotUp()
 
 void KMFilterListBox::slotDown()
 {
-    QList<QListWidgetItem *> listWidgetItem = selectedFilter();
+    const QList<QListWidgetItem *> listWidgetItem = selectedFilter();
     if (listWidgetItem.isEmpty()) {
         return;
     }

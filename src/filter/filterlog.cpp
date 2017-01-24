@@ -27,6 +27,7 @@
 */
 
 #include "filterlog.h"
+#include "helper_p.h"
 
 #include "messagecomposer/util.h"
 #include "mailcommon_debug.h"
@@ -196,7 +197,7 @@ void FilterLog::dump()
 {
 #ifndef NDEBUG
     qCDebug(MAILCOMMON_LOG) << "----- starting filter log -----";
-    foreach (const QString &entry, d->mLogEntries) {
+    for (const QString &entry : qAsConst(d->mLogEntries)) {
         qCDebug(MAILCOMMON_LOG) << entry;
     }
     qCDebug(MAILCOMMON_LOG) << "------ end of filter log ------";
@@ -212,7 +213,7 @@ bool FilterLog::saveToFile(const QString &fileName) const
 
     file.write("<html>\n<body>\n");
     file.write("<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n");
-    foreach (const QString &entry, d->mLogEntries) {
+    for (const QString &entry : qAsConst(d->mLogEntries)) {
         const QString line = QLatin1String("<p>") + entry + QLatin1String("</p>") + QLatin1Char('\n');
         file.write(line.toLocal8Bit());
     }

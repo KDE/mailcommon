@@ -504,7 +504,8 @@ void MailFilter::generateSieveScript(QStringList &requires, QString &code)
             code += QLatin1Char('\n');
         }
         code += QLatin1String("    ") + (*it)->sieveCode();
-        Q_FOREACH (const QString &str, (*it)->sieveRequires()) {
+        const QStringList lstRequires = (*it)->sieveRequires();
+        for (const QString &str : lstRequires) {
             if (!requires.contains(str)) {
                 requires.append(str);
             }

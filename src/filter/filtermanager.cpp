@@ -168,7 +168,8 @@ void FilterManager::slotFinishedTagListing(KJob *job)
         qCWarning(MAILCOMMON_LOG) << "failed to retrieve tags " << job->errorString();
     }
     Akonadi::TagFetchJob *fetchJob = static_cast<Akonadi::TagFetchJob *>(job);
-    Q_FOREACH (const Akonadi::Tag &tag, fetchJob->tags()) {
+    const Akonadi::Tag::List lstTags = fetchJob->tags();
+    for (const Akonadi::Tag &tag : lstTags) {
         d->mTagList.insert(tag.url(), tag.name());
     }
 
@@ -191,9 +192,7 @@ void FilterManager::slotTagChanged(const Akonadi::Tag &tag)
 
 void FilterManager::slotTagRemoved(const Akonadi::Tag &tag)
 {
-    if (d->mTagList.contains(tag.url())) {
-        d->mTagList.remove(tag.url());
-    }
+    d->mTagList.remove(tag.url());
     Q_EMIT tagListingFinished();
 }
 

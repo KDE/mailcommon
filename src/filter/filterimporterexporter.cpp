@@ -236,7 +236,8 @@ QList<MailFilter *> FilterImporterExporter::importFilters(
             SelectThunderbirdFilterFilesDialog *selectThunderBirdFileDialog = new SelectThunderbirdFilterFilesDialog(defaultPath, d->mParent);
             selectThunderBirdFileDialog->setStartDir(QUrl::fromLocalFile(defaultPath));
             if (selectThunderBirdFileDialog->exec()) {
-                Q_FOREACH (const QString &url, selectThunderBirdFileDialog->selectedFiles()) {
+                const QStringList lstFiles = selectThunderBirdFileDialog->selectedFiles();
+                for (const QString &url : lstFiles ) {
                     QFile fileThunderbird(url);
                     if (!fileThunderbird.open(QIODevice::ReadOnly)) {
                         KMessageBox::error(
