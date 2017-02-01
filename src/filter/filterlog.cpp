@@ -163,9 +163,9 @@ bool FilterLog::isContentTypeEnabled(ContentType contentType) const
 void FilterLog::add(const QString &logEntry, ContentType contentType)
 {
     if (isLogging() && (d->mAllowedTypes & contentType)) {
-        QString timedLog = QLatin1Char('[') + QTime::currentTime().toString() + QLatin1String("] ");
+        QString timedLog;
         if (contentType & ~Meta) {
-            timedLog += logEntry;
+            timedLog = QLatin1Char('[') + QTime::currentTime().toString() + QLatin1String("] ") + logEntry;
         } else {
             timedLog = logEntry;
         }
