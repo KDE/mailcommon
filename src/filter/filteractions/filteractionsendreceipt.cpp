@@ -22,8 +22,8 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 
-#include "MessageComposer/MessageFactory"
-#include "MessageComposer/MessageSender"
+#include <MessageComposer/MessageFactoryNG>
+#include <MessageComposer/MessageSender>
 
 #include <KLocalizedString>
 
@@ -38,7 +38,7 @@ FilterAction::ReturnCode FilterActionSendReceipt::process(ItemContext &context, 
 {
     const KMime::Message::Ptr msg = context.item().payload<KMime::Message::Ptr>();
 
-    MessageComposer::MessageFactory factory(msg, context.item().id());
+    MessageComposer::MessageFactoryNG factory(msg, context.item().id());
     factory.setFolderIdentity(Util::folderIdentity(context.item()));
     factory.setIdentityManager(KernelIf->identityManager());
 

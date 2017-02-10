@@ -25,7 +25,7 @@
 #include "util/mailutil.h"
 #include "filter/mdnadvicedialog.h"
 #include "mailcommon_debug.h"
-#include <MessageComposer/MessageFactory>
+#include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
 #include <messagecore/messagehelpers.h>
 #include <messageviewer/messageviewersettings.h>
@@ -90,7 +90,7 @@ void SendMdnHandler::Private::handleMessages()
         if (mdnSend.first) {
             const int quote =  MessageViewer::MessageViewerSettings::self()->quoteMessage();
 
-            MessageComposer::MessageFactory factory(message, Akonadi::Item().id());
+            MessageComposer::MessageFactoryNG factory(message, Akonadi::Item().id());
             factory.setIdentityManager(mKernel->identityManager());
             factory.setFolderIdentity(MailCommon::Util::folderIdentity(item));
 

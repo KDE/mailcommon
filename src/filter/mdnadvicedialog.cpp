@@ -22,9 +22,9 @@
 
 #include <messagecore/messagehelpers.h>
 
-#include <MessageComposer/MessageFactory>
+#include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/Util>
-using MessageComposer::MessageFactory;
+using MessageComposer::MessageFactoryNG;
 
 #include <messageviewer/messageviewersettings.h>
 #ifndef QT_NO_CURSOR
@@ -193,29 +193,29 @@ QPair< bool, KMime::MDN::SendingMode > MDNAdviceHelper::checkAndSetMDNInfo(
             s = KMime::MDN::SentManually;
         } else {
 
-            if (MessageFactory::MDNMDNUnknownOption(msg)) {
+            if (MessageFactoryNG::MDNMDNUnknownOption(msg)) {
                 mode = requestAdviceOnMDN("mdnUnknownOption");
                 s = KMime::MDN::SentManually;
                 // TODO set type to Failed as well
                 //      and clear modifiers
             }
 
-            if (MessageFactory::MDNConfirmMultipleRecipients(msg)) {
+            if (MessageFactoryNG::MDNConfirmMultipleRecipients(msg)) {
                 mode = requestAdviceOnMDN("mdnMultipleAddressesInReceiptTo");
                 s = KMime::MDN::SentManually;
             }
 
-            if (MessageFactory::MDNReturnPathEmpty(msg)) {
+            if (MessageFactoryNG::MDNReturnPathEmpty(msg)) {
                 mode = requestAdviceOnMDN("mdnReturnPathEmpty");
                 s = KMime::MDN::SentManually;
             }
 
-            if (MessageFactory::MDNReturnPathNotInRecieptTo(msg)) {
+            if (MessageFactoryNG::MDNReturnPathNotInRecieptTo(msg)) {
                 mode = requestAdviceOnMDN("mdnReturnPathNotInReceiptTo");
                 s = KMime::MDN::SentManually;
             }
 
-            if (MessageFactory::MDNRequested(msg)) {
+            if (MessageFactoryNG::MDNRequested(msg)) {
                 if (s != KMime::MDN::SentManually) {
                     // don't ask again if user has already been asked. use the users' decision
                     mode = requestAdviceOnMDN("mdnNormalAsk");

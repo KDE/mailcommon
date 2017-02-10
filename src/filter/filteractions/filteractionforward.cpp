@@ -25,7 +25,7 @@
 #include "filter/dialog/filteractionmissingtemplatedialog.h"
 
 #include <PimCommon/MinimumComboBox>
-#include <MessageComposer/MessageFactory>
+#include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
 #include <Akonadi/Contact/EmailAddressRequester>
 #include <MessageCore/StringUtil>
@@ -63,8 +63,8 @@ FilterAction::ReturnCode FilterActionForward::process(ItemContext &context, bool
         qCWarning(MAILCOMMON_LOG) << "Attempt to forward to receipient of original message, ignoring.";
         return ErrorButGoOn;
     }
-
-    MessageComposer::MessageFactory factory(msg, context.item().id());
+#if 0 //PORT ME TO ASync
+    MessageComposer::MessageFactoryNG factory(msg, context.item().id());
     factory.setIdentityManager(KernelIf->identityManager());
     factory.setFolderIdentity(Util::folderIdentity(context.item()));
     factory.setTemplate(mTemplate);
@@ -77,7 +77,7 @@ FilterAction::ReturnCode FilterActionForward::process(ItemContext &context, bool
     } else {
         sendMDN(context.item(), KMime::MDN::Dispatched);
     }
-
+#endif
     // (the msgSender takes ownership of the message, so don't delete it here)
     return GoOn;
 }

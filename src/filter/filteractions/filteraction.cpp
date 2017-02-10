@@ -25,7 +25,7 @@
 #include "util/mailutil.h"
 #include "mailcommon_debug.h"
 
-#include <MessageComposer/MessageFactory>
+#include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
 #include <messagecore/messagehelpers.h>
 #include <messageviewer/messageviewersettings.h>
@@ -122,7 +122,7 @@ void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionTyp
         if (receiptTo.isEmpty()) {
             return;
         }
-        MessageComposer::MessageFactory factory(msg, Akonadi::Item().id());
+        MessageComposer::MessageFactoryNG factory(msg, Akonadi::Item().id());
         factory.setIdentityManager(KernelIf->identityManager());
         factory.setFolderIdentity(MailCommon::Util::folderIdentity(item));
 

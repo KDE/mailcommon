@@ -22,7 +22,7 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 
-#include <MessageComposer/MessageFactory>
+#include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
 #include <messagecore/messagehelpers.h>
 
@@ -48,7 +48,7 @@ FilterAction::ReturnCode FilterActionRedirect::process(ItemContext &context, boo
 
     KMime::Message::Ptr msg = MessageCore::Util::message(context.item());
 
-    MessageComposer::MessageFactory factory(msg, context.item().id());
+    MessageComposer::MessageFactoryNG factory(msg, context.item().id());
     factory.setFolderIdentity(Util::folderIdentity(context.item()));
     factory.setIdentityManager(KernelIf->identityManager());
 
