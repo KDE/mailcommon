@@ -246,6 +246,7 @@ void AccountConfigOrderDialog::slotOk()
 {
     QStringList order;
     const int numberOfItems(d->mListAccount->count());
+    order.reserve(numberOfItems);
     for (int i = 0; i < numberOfItems; ++i) {
         order << d->mListAccount->item(i)->data(AccountConfigOrderDialog::IdentifierAccount).toString();
     }

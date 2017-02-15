@@ -33,10 +33,10 @@
 
 #include <KMime/KMimeMessage>
 
-namespace MailCommon
-{
+using namespace MailCommon;
 
-class FolderCollectionMonitorPrivate
+
+class MailCommon::FolderCollectionMonitorPrivate
 {
 public:
     FolderCollectionMonitorPrivate()
@@ -137,7 +137,5 @@ void FolderCollectionMonitor::expunge(const Akonadi::Collection &col, bool sync)
 void FolderCollectionMonitor::slotDeleteJob(KJob *job)
 {
     Util::showJobErrorMessage(job);
-}
-
 }
 
