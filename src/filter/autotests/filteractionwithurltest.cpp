@@ -29,12 +29,12 @@ public:
     {
 
     }
-    FilterAction::ReturnCode process(MailCommon::ItemContext &, bool) const
+    FilterAction::ReturnCode process(MailCommon::ItemContext &, bool) const Q_DECL_OVERRIDE
     {
         return GoOn;
     }
 
-    MailCommon::SearchRule::RequiredPart requiredPart() const
+    MailCommon::SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE
     {
         return MailCommon::SearchRule::CompleteMessage;
     }

@@ -29,18 +29,18 @@ public:
     {
     }
 
-    bool matches(const Akonadi::Item &item) const
+    bool matches(const Akonadi::Item &item) const Q_DECL_OVERRIDE
     {
         Q_UNUSED(item);
         return false;
     }
 
-    bool isEmpty() const
+    bool isEmpty() const Q_DECL_OVERRIDE
     {
         return false;
     }
 
-    MailCommon::SearchRule::RequiredPart requiredPart() const
+    MailCommon::SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE
     {
         return MailCommon::SearchRule::CompleteMessage;
     }
