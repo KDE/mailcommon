@@ -782,6 +782,6 @@ void KMFilterDialog::slotExportAsSieveScript()
 
 void KMFilterDialog::slotHelp()
 {
-    PimCommon::Util::invokeHelp(QStringLiteral("kmail/filters.html"));
+    PimCommon::Util::invokeHelp(QStringLiteral("kmail2/filters.html"));
 }
 
