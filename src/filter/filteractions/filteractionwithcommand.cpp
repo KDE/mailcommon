@@ -115,7 +115,7 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Messa
 
             if ((*it) == -1) {
                 file.write(aMsg->encodedContent());
-            } else if (aMsg->contents().size() == 0) {
+            } else if (aMsg->contents().isEmpty()) {
                 file.write(aMsg->decodedContent());
             } else {
                 int index = *it; // we pass by reference below, so this is not const
