@@ -17,11 +17,15 @@
 
 #ifndef KMFILTERACCOUNTLIST_H
 #define KMFILTERACCOUNTLIST_H
+
 #include <QTreeWidget>
+
+#include "mailcommon_private_export.h"
+
 namespace MailCommon
 {
 class MailFilter;
-class KMFilterAccountList : public QTreeWidget
+class MAILCOMMON_TESTS_EXPORT KMFilterAccountList : public QTreeWidget
 {
     Q_OBJECT
 public:

@@ -112,7 +112,6 @@ add_mailcommon_filter_test(filteractionplaysoundtest
     ../filteractions/filteractionplaysound.cpp
     ../soundtestwidget.cpp
     ../dialog/filteractionmissingsoundurldialog.cpp
-    ../kmfilteraccountlist.cpp
     ${filter_common_SRCS}
 )
 
@@ -167,7 +166,6 @@ add_mailcommon_filter_test(filteractionforwardtest
     ../filteractions/filteractionwithaddress.cpp
     ../filteractions/filteractionwithstring.cpp
     ../dialog/filteractionmissingtemplatedialog.cpp
-    ../kmfilteraccountlist.cpp
     ${filter_common_SRCS}
 )
 
@@ -210,7 +208,6 @@ add_mailcommon_filter_test(filteractionsettransporttest
     filteractionsettransporttest.cpp
     ../filteractions/filteractionsettransport.cpp
     ../dialog/filteractionmissingtransportdialog.cpp
-    ../kmfilteraccountlist.cpp
     ${filter_common_SRCS}
 )
 
@@ -243,7 +240,6 @@ add_mailcommon_filter_test(filteractionmissingtransportdialogtest
 add_mailcommon_filter_test(filteractionmissingaccountdialogtest
     filteractionmissingaccountdialogtest.cpp
     ../dialog/filteractionmissingaccountdialog.cpp
-    ../../filter/kmfilteraccountlist.cpp
     )
 
 add_mailcommon_filter_test(filteractionmissingtagdialogtest
