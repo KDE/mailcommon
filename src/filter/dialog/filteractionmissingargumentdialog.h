@@ -25,8 +25,6 @@
 
 #include <QDialog>
 
-class KComboBox;
-class KUrlRequester;
 
 class QAbstractItemModel;
 class QListWidget;
@@ -37,17 +35,14 @@ class QPushButton;
 namespace MailCommon
 {
 class FolderRequester;
-class KMFilterAccountList;
 }
 
 namespace KIdentityManagement
 {
-class IdentityCombo;
 }
 
 namespace MailTransport
 {
-class TransportComboBox;
 }
 
 class MAILCOMMON_EXPORT FilterActionMissingCollectionDialog : public QDialog
