@@ -545,7 +545,7 @@ void SnippetsManager::Private::save()
     KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("kmailsnippetrc"), KConfig::NoGlobals);
 
     // clear everything
-    foreach (const QString &group, config->groupList()) {
+    for (const QString &group : config->groupList()) {
         config->deleteGroup(group);
     }
 

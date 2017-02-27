@@ -88,7 +88,9 @@ void RedirectWidget::slotAddressSelection()
 
     if (dlg->exec() != QDialog::Rejected && dlg) {
         QStringList addresses;
-        foreach (const Akonadi::EmailAddressSelection &selection, dlg->selectedAddresses()) {
+        const Akonadi::EmailAddressSelection::List lstAddress = dlg->selectedAddresses();
+        addresses.reserve(lstAddress.count());
+        for (const Akonadi::EmailAddressSelection &selection : lstAddress) {
             addresses << selection.quotedEmail();
         }
 
