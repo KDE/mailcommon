@@ -23,7 +23,7 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 
-#include <PimCommon/ImapAclAttribute>
+#include <PimCommonAkonadi/ImapAclAttribute>
 #include <PimCommon/PimUtil>
 
 #include <AkonadiCore/AttributeFactory>

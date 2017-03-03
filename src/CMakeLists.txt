@@ -228,7 +228,7 @@ PUBLIC
   KF5::AkonadiCore
   KF5::AkonadiMime
   KF5::MessageComposer
-  KF5::PimCommon
+  KF5::PimCommonAkonadi
 PRIVATE
   KF5::TextWidgets
   KF5::I18n

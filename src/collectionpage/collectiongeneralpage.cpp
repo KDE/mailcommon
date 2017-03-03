@@ -33,7 +33,7 @@
 #include <EntityDisplayAttribute>
 #include <AkonadiCore/NewMailNotifierAttribute>
 #include <KIdentityManagement/IdentityCombo>
-#include "PimCommon/ImapResourceCapabilitiesManager"
+#include <PimCommonAkonadi/ImapResourceCapabilitiesManager>
 
 #include <KColorScheme>
 #include <KComboBox>

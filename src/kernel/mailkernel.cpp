@@ -20,7 +20,7 @@
 #include "util/mailutil.h"
 #include "mailcommon_debug.h"
 #include "PimCommon/PimUtil"
-#include "PimCommon/ImapResourceCapabilitiesManager"
+#include <PimCommonAkonadi/ImapResourceCapabilitiesManager>
 
 #include <AgentInstance>
 #include <QApplication>
