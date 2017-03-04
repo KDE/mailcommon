@@ -21,8 +21,8 @@
 
 #include "PimCommon/MinimumComboBox"
 
-#include "Libkdepim/AddContactJob"
-#include "Libkdepim/TagWidgets"
+#include <LibkdepimAkonadi/AddContactJob>
+#include <LibkdepimAkonadi/TagWidgets>
 
 #include <CollectionComboBox>
 #include <KContacts/Addressee>

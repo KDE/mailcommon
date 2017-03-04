@@ -232,7 +232,7 @@ PUBLIC
 PRIVATE
   KF5::TextWidgets
   KF5::I18n
-  KF5::Libkdepim
+  KF5::LibkdepimAkonadi
   KF5::MessageViewer
   KF5::MailImporter
   KF5::MessageCore
