@@ -25,7 +25,7 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 
-#include "PimCommon/PimUtil"
+#include <PimCommon/PimUtil>
 #include <AgentManager>
 #include <AttributeFactory>
 #include <Collection>

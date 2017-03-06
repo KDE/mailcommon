@@ -30,7 +30,7 @@
 #include "dialog/filteractionmissingaccountdialog.h"
 using MailCommon::FilterLog;
 
-#include "PimCommon/PimUtil"
+#include <PimCommon/PimUtil>
 
 // KDEPIMLIBS headers
 #include <AgentManager>

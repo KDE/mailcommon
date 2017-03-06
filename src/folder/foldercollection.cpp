@@ -20,7 +20,7 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 #include "util/resourcereadconfigfile.h"
-#include "PimCommon/PimUtil"
+#include <PimCommon/PimUtil>
 #include <AkonadiCore/NewMailNotifierAttribute>
 #include "mailcommon_debug.h"
 #include <ItemFetchJob>

@@ -19,7 +19,7 @@
 #include "mailkernel.h"
 #include "util/mailutil.h"
 #include "mailcommon_debug.h"
-#include "PimCommon/PimUtil"
+#include <PimCommon/PimUtil>
 #include <PimCommonAkonadi/ImapResourceCapabilitiesManager>
 
 #include <AgentInstance>

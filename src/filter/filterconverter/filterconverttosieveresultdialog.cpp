@@ -20,7 +20,7 @@
 #include "PimCommon/SieveSyntaxHighlighterUtil"
 #include "kpimtextedit/plaintexteditor.h"
 #include "kpimtextedit/plaintexteditorwidget.h"
-#include "PimCommon/PimUtil"
+#include <PimCommon/PimUtil>
 
 #include <KLocalizedString>
 
