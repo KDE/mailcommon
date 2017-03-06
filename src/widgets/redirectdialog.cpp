@@ -36,9 +36,7 @@
 #include <KIdentityManagement/IdentityCombo>
 #include <KIdentityManagement/IdentityManager>
 
-#include <MailTransport/Transport>
 #include <MailTransport/TransportComboBox>
-#include <MailTransport/TransportManager>
 
 #include <KIconLoader>
 #include <KLocalizedString>

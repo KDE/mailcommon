@@ -25,10 +25,6 @@
 
 #include <EntityMimeTypeFilterModel>
 
-#include <MailTransport/TransportComboBox>
-#include <MailTransport/Transport>
-#include <MailTransport/TransportManager>
-
 #include <KIdentityManagement/IdentityCombo>
 
 #include <KLocalizedString>
