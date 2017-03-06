@@ -400,7 +400,7 @@ QMap<QString, Akonadi::Collection::Id> Kernel::pop3ResourceTargetCollection()
         }
         const QString typeIdentifier = type.identifier();
         if (typeIdentifier.contains(POP3_RESOURCE_IDENTIFIER)) {
-            PimCommon::ResourceReadConfigFile resourceFile(typeIdentifier);
+            MailCommon::ResourceReadConfigFile resourceFile(typeIdentifier);
             const KConfigGroup grp = resourceFile.group(QStringLiteral("General"));
             if (grp.isValid()) {
                 const Akonadi::Collection::Id targetCollection = grp.readEntry(QStringLiteral("targetCollection"), -1);

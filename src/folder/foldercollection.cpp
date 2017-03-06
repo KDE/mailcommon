@@ -249,7 +249,7 @@ void FolderCollection::writeConfig() const
         uint defaultIdentityId = -1;
 
         if (PimCommon::Util::isImapResource(mCollection.resource())) {
-            PimCommon::ResourceReadConfigFile resourceFile(mCollection.resource());
+            MailCommon::ResourceReadConfigFile resourceFile(mCollection.resource());
             KConfigGroup grp = resourceFile.group(QStringLiteral("cache"));
             if (grp.isValid()) {
                 defaultIdentityId = grp.readEntry(QStringLiteral("AccountIdentity"), -1);
@@ -328,7 +328,7 @@ void FolderCollection::setIdentity(uint identity)
 uint FolderCollection::fallBackIdentity() const
 {
     int identityId = -1;
-    PimCommon::ResourceReadConfigFile resourceFile(mCollection.resource());
+    MailCommon::ResourceReadConfigFile resourceFile(mCollection.resource());
     KConfigGroup grp = resourceFile.group(QStringLiteral("cache"));
     if (grp.isValid()) {
         const bool useDefault = grp.readEntry(QStringLiteral("UseDefaultIdentity"), true);

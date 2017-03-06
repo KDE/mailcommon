@@ -19,9 +19,9 @@
 
 #include <KConfig>
 
-using namespace PimCommon;
+using namespace MailCommon;
 
-class PimCommon::ResourceReadConfigFilePrivate
+class MailCommon::ResourceReadConfigFilePrivate
 {
 public:
     ResourceReadConfigFilePrivate()
@@ -38,7 +38,7 @@ public:
 };
 
 ResourceReadConfigFile::ResourceReadConfigFile(const QString &resourceName)
-    : d(new PimCommon::ResourceReadConfigFilePrivate)
+    : d(new MailCommon::ResourceReadConfigFilePrivate)
 {
     d->mConfig = new KConfig(resourceName + QStringLiteral("rc"));
 }
