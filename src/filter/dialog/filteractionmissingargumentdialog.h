@@ -37,14 +37,6 @@ namespace MailCommon
 class FolderRequester;
 }
 
-namespace KIdentityManagement
-{
-}
-
-namespace MailTransport
-{
-}
-
 class MAILCOMMON_EXPORT FilterActionMissingCollectionDialog : public QDialog
 {
     Q_OBJECT
