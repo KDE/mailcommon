@@ -107,7 +107,7 @@ public:
      * @param function The function to use for searching.
      * @param contents The contents to search for.
      */
-    static SearchRule::Ptr createInstance(const QByteArray &field = 0,
+    static SearchRule::Ptr createInstance(const QByteArray &field = QByteArray(),
                                           Function function = FuncContains,
                                           const QString &contents = QString());
 
