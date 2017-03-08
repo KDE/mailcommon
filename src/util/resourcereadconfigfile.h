@@ -20,12 +20,12 @@
 
 #include <KConfigGroup>
 #include <QString>
-#include "pimcommon_export.h"
+#include "mailcommon_export.h"
 
 namespace MailCommon
 {
 class ResourceReadConfigFilePrivate;
-class PIMCOMMON_EXPORT ResourceReadConfigFile
+class MAILCOMMON_EXPORT ResourceReadConfigFile
 {
 public:
     ResourceReadConfigFile(const QString &resourceName);
