@@ -18,7 +18,6 @@
 */
 
 #include <AkonadiCore/NewMailNotifierAttribute>
-#include "collectionpage/attributes/collectionannotationsattribute.h"
 #include "collectionpage/attributes/expirecollectionattribute.h"
 
 #include <AkonadiCore/attributefactory.h>
@@ -29,7 +28,6 @@ namespace
 // Anonymous namespace; function is invisible outside this file.
 bool dummy()
 {
-    Akonadi::AttributeFactory::registerAttribute<MailCommon::CollectionAnnotationsAttribute>();
     Akonadi::AttributeFactory::registerAttribute<MailCommon::ExpireCollectionAttribute>();
     Akonadi::AttributeFactory::registerAttribute<Akonadi::NewMailNotifierAttribute>();
     return true;

@@ -6,17 +6,7 @@ macro(add_mailcommon_collectionpage_test _name)
     )
 endmacro()
 
-add_mailcommon_collectionpage_test(collectionannotationsattributetest
-    collectionannotationsattributetest.cpp
-    ../attributes/collectionannotationsattribute.cpp
-)
 add_mailcommon_collectionpage_test(expirecollectionattributetest
     expirecollectionattributetest.cpp
     ../attributes/expirecollectionattribute.cpp
-)
-add_mailcommon_collectionpage_test(incidencesforwidgettest
-    incidencesforwidgettest.cpp
-)
-add_mailcommon_collectionpage_test(contenttypewidgettest
-    contenttypewidgettest.cpp
 )

@@ -88,14 +88,10 @@ set(libmailcommon_invalidfilters
 )
 
 set(libmailcommon_collection_SRCS
-  collectionpage/collectiontypeutil.cpp
   collectionpage/attributeregistrar.cpp
-  collectionpage/attributes/collectionannotationsattribute.cpp
   collectionpage/collectiongeneralpage.cpp
   collectionpage/collectionexpirypage.cpp
   collectionpage/attributes/expirecollectionattribute.cpp
-  collectionpage/incidencesforwidget.cpp
-  collectionpage/contenttypewidget.cpp
 )
 
 set(libmailcommon_folder_SRCS
@@ -377,8 +373,6 @@ ecm_generate_headers(MailCommon_Camelcasemdn_HEADERS
 
 ecm_generate_headers(MailCommon_Camelcasecollectionpage_HEADERS
   HEADER_NAMES
-  IncidencesForWidget
-  CollectionTypeUtil
   CollectionGeneralPage
   CollectionExpiryPage
   REQUIRED_HEADERS MailCommon_collectionpage_HEADERS
@@ -388,7 +382,6 @@ ecm_generate_headers(MailCommon_Camelcasecollectionpage_HEADERS
 
 ecm_generate_headers(MailCommon_Camelcasecollectionpageattributes_HEADERS
   HEADER_NAMES
-  CollectionAnnotationsAttribute
   ExpireCollectionAttribute
   REQUIRED_HEADERS MailCommon_collectionpageattributes_HEADERS
   PREFIX MailCommon

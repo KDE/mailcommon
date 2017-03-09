@@ -27,7 +27,11 @@ class KLineEdit;
 class QCheckBox;
 
 template <typename T> class QSharedPointer;
-
+namespace PimCommon
+{
+class IncidencesForWidget;
+class ContentTypeWidget;
+}
 namespace KIdentityManagement
 {
 class IdentityCombo;
@@ -37,8 +41,6 @@ namespace MailCommon
 {
 
 class FolderCollection;
-class IncidencesForWidget;
-class ContentTypeWidget;
 class MAILCOMMON_EXPORT CollectionGeneralPage : public Akonadi::CollectionPropertiesPage
 {
     Q_OBJECT
@@ -61,8 +63,8 @@ private Q_SLOTS:
 private:
     void addLine(QWidget *parent, QVBoxLayout *layout);
     QString mColorName;
-    ContentTypeWidget *mContentsComboBox;
-    IncidencesForWidget *mIncidencesForComboBox;
+    PimCommon::ContentTypeWidget *mContentsComboBox;
+    PimCommon::IncidencesForWidget *mIncidencesForComboBox;
     QCheckBox *mSharedSeenFlagsCheckBox;
     QCheckBox   *mNotifyOnNewMailCheckBox;
     QCheckBox   *mKeepRepliesInSameFolderCheckBox;
