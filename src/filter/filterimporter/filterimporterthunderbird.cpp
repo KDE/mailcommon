@@ -99,7 +99,7 @@ MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream
                         value = QStringLiteral("5 (Lowest)");
                     }
                     lstValue << value;
-                    value = lstValue.join(QStringLiteral("\t"));
+                    value = lstValue.join(QLatin1Char('\t'));
                     actionName = QStringLiteral("add header");
                 } else if (actionName == QLatin1String("copy") || actionName == QLatin1String("transfer")) {
                     QUrl url = QUrl::fromLocalFile(value);
