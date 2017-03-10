@@ -86,9 +86,6 @@ private Q_SLOTS:
 
     void createAndDeleteSearchCollection()
     {
-#if KITEMMODELS_VERSION <= QT_VERSION_CHECK(5, 25, 0)
-        QSKIP("This test requires a fix in kitemmodels' KRecursiveFilterProxyModel");
-#endif
 #ifdef SHOW_WIDGET
         mFolderTreeWidget->resize(1000, 1000);
         mFolderTreeWidget->show();
@@ -184,8 +181,8 @@ private Q_SLOTS:
 
     void testMoveFolder()
     {
-#if QT_VERSION < QT_VERSION_CHECK(5, 8, 1) || KITEMMODELS_VERSION < QT_VERSION_CHECK(5, 30, 0)
-        QSKIP("This test requires fixes in QSFPM, QIPM (which were made in Qt 5.8.1) and KExtraColumnsProxyModel >= 5.30");
+#if QT_VERSION < QT_VERSION_CHECK(5, 8, 1)
+        QSKIP("This test requires fixes in QSFPM, QIPM (which were made in Qt 5.8.1)");
 #endif
         // Given a source folder with 2 levels of parents (res1/sub1/sub2)
         const QStringList folderNames = collectNames(mCollectionModel);
