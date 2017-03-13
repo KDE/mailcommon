@@ -19,10 +19,10 @@
 #define INVALIDFILTERINFOWIDGET_H
 
 #include <KMessageWidget>
-#include "mailcommon_export.h"
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
-class MAILCOMMON_EXPORT InvalidFilterInfoWidget : public KMessageWidget
+class MAILCOMMON_TESTS_EXPORT InvalidFilterInfoWidget : public KMessageWidget
 {
     Q_OBJECT
 public:

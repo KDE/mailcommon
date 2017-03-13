@@ -19,10 +19,10 @@
 #define INVALIDFILTERINFO_H
 
 #include <QString>
-#include "mailcommon_export.h"
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
-class MAILCOMMON_EXPORT InvalidFilterInfo
+class MAILCOMMON_TESTS_EXPORT InvalidFilterInfo
 {
 public:
     InvalidFilterInfo();

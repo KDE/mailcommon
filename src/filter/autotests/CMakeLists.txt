@@ -171,7 +171,6 @@ add_mailcommon_filter_test(filteractionforwardtest
 
 add_mailcommon_filter_test(invalidfilterinfowidgettest
     invalidfilterinfowidgettest.cpp
-    ../invalidfilters/invalidfilterinfowidget.cpp
     ${filter_common_SRCS}
 )
 

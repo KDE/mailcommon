@@ -19,8 +19,7 @@
 #ifndef MAILCOMMON_FILTERACTIONMISSINGARGUMENTDIALOG_H
 #define MAILCOMMON_FILTERACTIONMISSINGARGUMENTDIALOG_H
 
-#include "mailcommon_export.h"
-
+#include "mailcommon_private_export.h"
 #include <Collection>
 
 #include <QDialog>
@@ -37,7 +36,7 @@ namespace MailCommon
 class FolderRequester;
 }
 
-class MAILCOMMON_EXPORT FilterActionMissingCollectionDialog : public QDialog
+class MAILCOMMON_TESTS_EXPORT FilterActionMissingCollectionDialog : public QDialog
 {
     Q_OBJECT
 public:

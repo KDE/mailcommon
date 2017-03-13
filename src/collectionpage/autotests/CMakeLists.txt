@@ -8,5 +8,4 @@ endmacro()
 
 add_mailcommon_collectionpage_test(expirecollectionattributetest
     expirecollectionattributetest.cpp
-    ../attributes/expirecollectionattribute.cpp
 )
