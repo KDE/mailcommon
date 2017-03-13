@@ -362,7 +362,8 @@ bool MailCommon::Util::foundMailer()
                               MailImporter::FilterSylpheed::defaultSettingsPath(),
                               MailImporter::FilterThunderbird::defaultSettingsPath(),
                               MailImporter::OtherMailerUtil::trojitaDefaultPath(),
-                              MailImporter::FilterIcedove::defaultSettingsPath()};
+                              MailImporter::FilterIcedove::defaultSettingsPath(),
+                              MailImporter::OtherMailerUtil::gearyDefaultPath()};
 
     for (const QString &path : lst) {
         QDir directory(path);
