@@ -31,6 +31,7 @@
 #include <QPainter>
 #include <QFontDatabase>
 #include <QMouseEvent>
+#include <QMimeData>
 
 using namespace MailCommon;
 
@@ -245,33 +246,70 @@ void FavoriteCollectionWidget::paintEvent(QPaintEvent *event)
     }
 }
 
+static bool isCollection(const QMimeData *mimeData)
+{
+    const QList<QUrl> urls = mimeData->urls();
+    for (const QUrl &url : urls) {
+        const Akonadi::Collection collection = Akonadi::Collection::fromUrl(url);
+        if (collection.isValid()) {
+            return true;
+        }
+    }
+    return false;
+}
+
+bool FavoriteCollectionWidget::acceptEvent(QDropEvent *event) const
+{
+    const bool draggingCollection = isCollection(event->mimeData());
+    const bool droppingOnCollection = dropIndicatorPosition() == QAbstractItemView::OnItem;
+    if (event->source() == this) {
+        if (draggingCollection && !droppingOnCollection) // Re-ordering favorites
+            return true;
+    } else {
+        if ((draggingCollection && !droppingOnCollection) // Adding a new favorite collection
+            || (!draggingCollection && droppingOnCollection)) // Dropping emails onto a favorite collection
+            return true;
+    }
+    event->ignore();
+    return false;
+}
+
 void FavoriteCollectionWidget::dragEnterEvent(QDragEnterEvent *event)
 {
     if (event->source() == this) {
-        // skip EntityListView logic (we want to reorder favorites, not trigger moving/copying of actual folders)
-        QListView::dragEnterEvent(event);
+        QListView::dragEnterEvent(event); // Re-ordering favourites
     } else {
-        Akonadi::EntityListView::dragEnterEvent(event);
+        Akonadi::EntityListView::dragEnterEvent(event); // Dropping emails onto a favorite collection
     }
 }
 
 void FavoriteCollectionWidget::dragMoveEvent(QDragMoveEvent *event)
 {
+    // We need to ask QListView to update dropIndicatorPosition() first...
+    QListView::dragMoveEvent(event);
     if (event->source() == this) {
-        // skip EntityListView logic (we want to reorder favorites, not trigger moving/copying of actual folders)
-        QListView::dragMoveEvent(event);
+        if (acceptEvent(event)) {
+            event->setDropAction(Qt::MoveAction);
+            event->acceptProposedAction(); // Re-ordering favourites
+        }
     } else {
-        Akonadi::EntityListView::dragMoveEvent(event);
+        if (acceptEvent(event))
+            Akonadi::EntityListView::dragMoveEvent(event); // Dropping emails onto a favorite collection
     }
 }
 
 void FavoriteCollectionWidget::dropEvent(QDropEvent *event)
 {
     if (event->source() == this) {
-        // skip EntityListView logic (we want to reorder favorites, not trigger moving/copying of actual folders)
-        QListView::dropEvent(event);
+        if (acceptEvent(event))
+            QListView::dropEvent(event); // Re-ordering favourites
     } else {
-        Akonadi::EntityListView::dropEvent(event);
+        if (acceptEvent(event)) {
+            if (dropIndicatorPosition() == QAbstractItemView::OnItem)
+                Akonadi::EntityListView::dropEvent(event); // Dropping emails onto a favorite collection
+            else
+                QListView::dropEvent(event); // Add new favorite
+        }
     }
 }
 

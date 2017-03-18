@@ -58,7 +58,9 @@ Q_SIGNALS:
     void newTabRequested(bool);
 
 private:
+    bool acceptEvent(QDropEvent *event) const;
     void createMenu(KActionCollection *ac);
+
     class Private;
     Private *const d;
 };

@@ -33,8 +33,6 @@ public:
     explicit FavoriteCollectionOrderProxyModel(QObject *parent = nullptr);
     virtual ~FavoriteCollectionOrderProxyModel();
 
-    Qt::ItemFlags flags(const QModelIndex &index) const override;
-
 protected:
     Akonadi::Collection parentCollection(const QModelIndex &index) const override;
 

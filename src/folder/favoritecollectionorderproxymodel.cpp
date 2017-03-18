@@ -42,16 +42,6 @@ FavoriteCollectionOrderProxyModel::~FavoriteCollectionOrderProxyModel()
     delete d;
 }
 
-Qt::ItemFlags FavoriteCollectionOrderProxyModel::flags(const QModelIndex &index) const
-{
-    Qt::ItemFlags flags = KRecursiveFilterProxyModel::flags(index);
-    // Don't allow dropping on folders
-    if (index.isValid()) {
-        flags &= ~Qt::ItemIsDropEnabled;
-    }
-    return flags;
-}
-
 Akonadi::Collection FavoriteCollectionOrderProxyModel::parentCollection(const QModelIndex &index) const
 {
     Q_UNUSED(index);
