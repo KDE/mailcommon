@@ -23,7 +23,7 @@
 #include <PimCommonAkonadi/CollectionAnnotationsAttribute>
 #include "folder/foldercollection.h"
 #include "kernel/mailkernel.h"
-#include "util/mailutil.h"
+#include "util/mailutil_p.h"
 
 #include <PimCommon/PimUtil>
 #include <AgentManager>

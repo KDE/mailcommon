@@ -37,6 +37,7 @@
 *******************************************************************************/
 
 #include "mailutil.h"
+#include "mailutil_p.h"
 
 #include "mailcommon_debug.h"
 #include "calendarinterface.h"

@@ -17,6 +17,7 @@
 */
 
 #include "foldertreeview.h"
+#include "util/mailutil_p.h"
 #include "kernel/mailkernel.h"
 
 #include <CollectionStatistics>
