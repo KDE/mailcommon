@@ -19,7 +19,7 @@
 #include "filter/filtermanager.h"
 #include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
-#include "helper_p.h"
+
 #include <KConfig>
 #include <KConfigGroup>
 

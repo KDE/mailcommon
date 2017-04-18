@@ -27,7 +27,7 @@
 */
 
 #include "filterlog.h"
-#include "helper_p.h"
+
 
 #include "messagecomposer/util.h"
 #include "mailcommon_debug.h"

@@ -20,7 +20,7 @@
 */
 
 #include "backupjob.h"
-#include "helper_p.h"
+
 
 #include <Libkdepim/BroadcastStatus>
 #include "mailcommon_debug.h"

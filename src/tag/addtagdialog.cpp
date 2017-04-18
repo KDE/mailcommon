@@ -18,7 +18,7 @@
 #include "addtagdialog.h"
 #include "tag/tagwidget.h"
 #include "mailcommon_debug.h"
-#include "helper_p.h"
+
 
 #include <KLocalizedString>
 #include <KLineEdit>
