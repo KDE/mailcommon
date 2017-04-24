@@ -135,6 +135,16 @@ FilterManager::FilterManager()
     }
 }
 
+FilterManager::~FilterManager()
+{
+    cleanup();
+}
+
+void FilterManager::cleanup()
+{
+    d->clear();
+}
+
 void FilterManager::slotServerStateChanged(Akonadi::ServerManager::State state)
 {
     if (state == Akonadi::ServerManager::Running) {

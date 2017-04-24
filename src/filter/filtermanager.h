@@ -43,6 +43,7 @@ class MAILCOMMON_EXPORT FilterManager : public QObject
     Q_OBJECT
 
 public:
+    ~FilterManager();
     /**
      * Describes the list of filters.
      */
@@ -158,6 +159,7 @@ public:
 
     bool initialized() const;
 
+    void cleanup();
 private Q_SLOTS:
     void slotServerStateChanged(Akonadi::ServerManager::State);
     void slotFinishedTagListing(KJob *);
