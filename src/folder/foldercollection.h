@@ -44,7 +44,6 @@ public:
 
     ~FolderCollection();
 
-    Akonadi::Collection collection() const;
     void setCollection(const Akonadi::Collection &collection);
 
     static QString configGroupName(const Akonadi::Collection &col);

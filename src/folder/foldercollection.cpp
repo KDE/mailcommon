@@ -166,11 +166,6 @@ Akonadi::CollectionStatistics FolderCollection::statistics() const
     return mCollection.statistics();
 }
 
-Akonadi::Collection FolderCollection::collection() const
-{
-    return mCollection;
-}
-
 void FolderCollection::setCollection(const Akonadi::Collection &collection)
 {
     mCollection = collection;
