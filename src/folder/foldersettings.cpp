@@ -233,6 +233,7 @@ bool FolderSettings::isValid() const
 
 void FolderSettings::writeConfig() const
 {
+    Q_ASSERT_X(!mCollection.resource().isEmpty(), "FolderSettings::writeConfig", "No resource found in collection");
     KConfigGroup configGroup(KernelIf->config(), configGroupName(mCollection));
 
     configGroup.writeEntry("MailingListEnabled", mMailingListEnabled);
@@ -322,6 +323,7 @@ void FolderSettings::setIdentity(uint identity)
 
 uint FolderSettings::fallBackIdentity() const
 {
+    Q_ASSERT_X(!mCollection.resource().isEmpty(), "FolderSettings::fallBackIdentity", "No resource found in collection");
     int identityId = -1;
     MailCommon::ResourceReadConfigFile resourceFile(mCollection.resource());
     KConfigGroup grp = resourceFile.group(QStringLiteral("cache"));
