@@ -17,7 +17,7 @@
 
 #include "foldercollectionmonitor.h"
 #include "util/mailutil.h"
-#include "foldercollection.h"
+#include "foldersettings.h"
 #include "mailcommon_debug.h"
 #include <ChangeRecorder>
 #include <Collection>

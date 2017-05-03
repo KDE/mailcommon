@@ -15,8 +15,8 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef MAILCOMMON_FOLDERCOLLECTION_H
-#define MAILCOMMON_FOLDERCOLLECTION_H
+#ifndef MAILCOMMON_FOLDERSETTINGS_H
+#define MAILCOMMON_FOLDERSETTINGS_H
 
 #include "mailcommon_export.h"
 #include <MessageViewer/Viewer>
@@ -34,15 +34,15 @@ using MessageCore::MailingList;
 namespace MailCommon
 {
 
-class MAILCOMMON_EXPORT FolderCollection : public QObject
+class MAILCOMMON_EXPORT FolderSettings : public QObject
 {
     Q_OBJECT
 
 public:
-    static QSharedPointer<FolderCollection> forCollection(
+    static QSharedPointer<FolderSettings> forCollection(
         const Akonadi::Collection &coll, bool writeConfig = true);
 
-    ~FolderCollection();
+    ~FolderSettings();
 
     void setCollection(const Akonadi::Collection &collection);
 
@@ -122,7 +122,7 @@ protected Q_SLOTS:
     void slotIdentitiesChanged();
 
 private:
-    explicit FolderCollection(const Akonadi::Collection &col, bool writeconfig);
+    explicit FolderSettings(const Akonadi::Collection &col, bool writeconfig);
 
     Akonadi::Collection mCollection;
 

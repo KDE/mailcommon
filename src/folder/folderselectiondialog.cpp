@@ -18,7 +18,7 @@
 
 #include "folderselectiondialog.h"
 
-#include "foldercollection.h"
+#include "foldersettings.h"
 #include "foldertreeview.h"
 #include "foldertreewidget.h"
 #include "foldertreewidgetproxymodel.h"
@@ -240,7 +240,7 @@ void FolderSelectionDialog::slotSelectionChanged()
         Akonadi::Collection parent;
         d->mUser1Button->setEnabled(canCreateCollection(parent));
         if (parent.isValid()) {
-            const QSharedPointer<FolderCollection> fd(FolderCollection::forCollection(parent, false));
+            const QSharedPointer<FolderSettings> fd(FolderSettings::forCollection(parent, false));
             d->mOkButton->setEnabled(fd->canCreateMessages());
         }
     }

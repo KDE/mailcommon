@@ -42,7 +42,7 @@
 #include "mailcommon_debug.h"
 #include "calendarinterface.h"
 #include "job/expirejob.h"
-#include "folder/foldercollection.h"
+#include "folder/foldersettings.h"
 #include "pop3settings.h"
 #include "kernel/mailkernel.h"
 #include "filter/dialog/filteractionmissingargumentdialog.h"
@@ -164,8 +164,8 @@ uint MailCommon::Util::folderIdentity(const Akonadi::Item &item)
         if (col.resource().isEmpty()) {
             col = parentCollectionFromItem(item);
         }
-        const QSharedPointer<FolderCollection> fd =
-            FolderCollection::forCollection(col, false);
+        const QSharedPointer<FolderSettings> fd =
+            FolderSettings::forCollection(col, false);
 
         id = fd->identity();
     }
@@ -384,7 +384,7 @@ MailCommon::ExpireCollectionAttribute *MailCommon::Util::expirationCollectionAtt
     } else {
         attr = new MailCommon::ExpireCollectionAttribute();
         KConfigGroup configGroup(KernelIf->config(),
-                                 MailCommon::FolderCollection::configGroupName(collection));
+                                 MailCommon::FolderSettings::configGroupName(collection));
 
         if (configGroup.hasKey("ExpireMessages")) {
             attr->setAutoExpire(configGroup.readEntry("ExpireMessages", false));

@@ -40,7 +40,7 @@ class QVBoxLayout;
 namespace MailCommon
 {
 
-class FolderCollection;
+class FolderSettings;
 class MAILCOMMON_EXPORT CollectionGeneralPage : public Akonadi::CollectionPropertiesPage
 {
     Q_OBJECT
@@ -72,7 +72,7 @@ private:
     QCheckBox   *mUseDefaultIdentityCheckBox;
     KLineEdit   *mNameEdit;
     KIdentityManagement::IdentityCombo *mIdentityComboBox;
-    QSharedPointer<MailCommon::FolderCollection> mFolderCollection;
+    QSharedPointer<MailCommon::FolderSettings> mFolderCollection;
     bool mIsLocalSystemFolder;
     bool mIsResourceFolder;
 };

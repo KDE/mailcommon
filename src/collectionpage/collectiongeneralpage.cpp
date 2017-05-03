@@ -21,7 +21,7 @@
 #include "incidencesforwidget.h"
 #include <PimCommonAkonadi/ContentTypeWidget>
 #include <PimCommonAkonadi/CollectionAnnotationsAttribute>
-#include "folder/foldercollection.h"
+#include "folder/foldersettings.h"
 #include "kernel/mailkernel.h"
 #include "util/mailutil_p.h"
 
@@ -230,7 +230,7 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
 
 void CollectionGeneralPage::load(const Akonadi::Collection &collection)
 {
-    mFolderCollection = FolderCollection::forCollection(collection);
+    mFolderCollection = FolderSettings::forCollection(collection);
     init(collection);
 
     if (mNameEdit) {

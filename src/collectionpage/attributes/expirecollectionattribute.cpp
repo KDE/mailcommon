@@ -17,7 +17,7 @@
 */
 
 #include "expirecollectionattribute.h"
-#include "folder/foldercollection.h"
+#include "folder/foldersettings.h"
 #include "kernel/mailkernel.h"
 
 #include <KConfigGroup>

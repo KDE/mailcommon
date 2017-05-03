@@ -16,7 +16,7 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#include "foldercollection.h"
+#include "foldersettings.h"
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 #include "util/resourcereadconfigfile.h"
@@ -40,17 +40,17 @@ namespace MailCommon
 {
 
 static QMutex mapMutex;
-static QMap<Collection::Id, QSharedPointer<FolderCollection> > fcMap;
+static QMap<Collection::Id, QSharedPointer<FolderSettings> > fcMap;
 
-QSharedPointer<FolderCollection> FolderCollection::forCollection(
+QSharedPointer<FolderSettings> FolderSettings::forCollection(
     const Akonadi::Collection &coll, bool writeConfig)
 {
     QMutexLocker lock(&mapMutex);
 
-    QSharedPointer<FolderCollection> sptr = fcMap.value(coll.id());
+    QSharedPointer<FolderSettings> sptr = fcMap.value(coll.id());
 
     if (!sptr) {
-        sptr = QSharedPointer<FolderCollection>(new FolderCollection(coll, writeConfig));
+        sptr = QSharedPointer<FolderSettings>(new FolderSettings(coll, writeConfig));
         fcMap.insert(coll.id(), sptr);
     } else {
         sptr->setCollection(coll);
@@ -62,7 +62,7 @@ QSharedPointer<FolderCollection> FolderCollection::forCollection(
     return sptr;
 }
 
-FolderCollection::FolderCollection(const Akonadi::Collection &col, bool writeconfig)
+FolderSettings::FolderSettings(const Akonadi::Collection &col, bool writeconfig)
     : mCollection(col),
       mFormatMessage(MessageViewer::Viewer::Unknown),
       mPutRepliesInSameFolder(false),
@@ -77,7 +77,7 @@ FolderCollection::FolderCollection(const Akonadi::Collection &col, bool writecon
             this, SLOT(slotIdentitiesChanged()));
 }
 
-FolderCollection::~FolderCollection()
+FolderSettings::~FolderSettings()
 {
     //qCDebug(MAILCOMMON_LOG)<<" FolderCollection::~FolderCollection"<<this;
     if (mWriteConfig) {
@@ -85,93 +85,93 @@ FolderCollection::~FolderCollection()
     }
 }
 
-MessageViewer::Viewer::DisplayFormatMessage FolderCollection::formatMessage() const
+MessageViewer::Viewer::DisplayFormatMessage FolderSettings::formatMessage() const
 {
     return mFormatMessage;
 }
 
-void FolderCollection::setFormatMessage(MessageViewer::Viewer::DisplayFormatMessage formatMessage)
+void FolderSettings::setFormatMessage(MessageViewer::Viewer::DisplayFormatMessage formatMessage)
 {
     mFormatMessage = formatMessage;
 }
 
-void FolderCollection::clearCache()
+void FolderSettings::clearCache()
 {
     QMutexLocker lock(&mapMutex);
     fcMap.clear();
 }
 
-void FolderCollection::resetHtmlFormat()
+void FolderSettings::resetHtmlFormat()
 {
     QMutexLocker lock(&mapMutex);
-    QMap<Collection::Id, QSharedPointer<FolderCollection> >::const_iterator i = fcMap.constBegin();
+    QMap<Collection::Id, QSharedPointer<FolderSettings> >::const_iterator i = fcMap.constBegin();
     while (i != fcMap.constEnd()) {
         i.value()->setFormatMessage(MessageViewer::Viewer::UseGlobalSetting);
         ++i;
     }
 }
 
-bool FolderCollection::isWriteConfig() const
+bool FolderSettings::isWriteConfig() const
 {
     return mWriteConfig;
 }
 
-void FolderCollection::setWriteConfig(bool writeConfig)
+void FolderSettings::setWriteConfig(bool writeConfig)
 {
     mWriteConfig = writeConfig;
 }
 
-QString FolderCollection::name() const
+QString FolderSettings::name() const
 {
     return mCollection.name();
 }
 
-bool FolderCollection::isSystemFolder() const
+bool FolderSettings::isSystemFolder() const
 {
     return Kernel::self()->isSystemFolderCollection(mCollection);
 }
 
-bool FolderCollection::isStructural() const
+bool FolderSettings::isStructural() const
 {
     return mCollection.contentMimeTypes().isEmpty();
 }
 
-bool FolderCollection::isReadOnly() const
+bool FolderSettings::isReadOnly() const
 {
     return mCollection.rights() & Akonadi::Collection::ReadOnly;
 }
 
-bool FolderCollection::canDeleteMessages() const
+bool FolderSettings::canDeleteMessages() const
 {
     return mCollection.rights() & Akonadi::Collection::CanDeleteItem;
 }
 
-bool FolderCollection::canCreateMessages() const
+bool FolderSettings::canCreateMessages() const
 {
     return mCollection.rights() & Akonadi::Collection::CanCreateItem;
 }
 
-qint64 FolderCollection::count() const
+qint64 FolderSettings::count() const
 {
     return mCollection.statistics().count();
 }
 
-Akonadi::Collection::Rights FolderCollection::rights() const
+Akonadi::Collection::Rights FolderSettings::rights() const
 {
     return mCollection.rights();
 }
 
-Akonadi::CollectionStatistics FolderCollection::statistics() const
+Akonadi::CollectionStatistics FolderSettings::statistics() const
 {
     return mCollection.statistics();
 }
 
-void FolderCollection::setCollection(const Akonadi::Collection &collection)
+void FolderSettings::setCollection(const Akonadi::Collection &collection)
 {
     mCollection = collection;
 }
 
-void FolderCollection::slotIdentitiesChanged()
+void FolderSettings::slotIdentitiesChanged()
 {
     uint defaultIdentity =  KernelIf->identityManager()->defaultIdentity().uoid();
     // The default identity may have changed, therefore set it again if necessary
@@ -186,12 +186,12 @@ void FolderCollection::slotIdentitiesChanged()
     }
 }
 
-QString FolderCollection::configGroupName(const Akonadi::Collection &col)
+QString FolderSettings::configGroupName(const Akonadi::Collection &col)
 {
     return QStringLiteral("Folder-%1").arg(QString::number(col.id()));
 }
 
-void FolderCollection::readConfig()
+void FolderSettings::readConfig()
 {
     KConfigGroup configGroup(KernelIf->config(), configGroupName(mCollection));
     mMailingListEnabled = configGroup.readEntry("MailingListEnabled", false);
@@ -226,12 +226,12 @@ void FolderCollection::readConfig()
                      static_cast<int>(MessageViewer::Viewer::UseGlobalSetting)));
 }
 
-bool FolderCollection::isValid() const
+bool FolderSettings::isValid() const
 {
     return mCollection.isValid();
 }
 
-void FolderCollection::writeConfig() const
+void FolderSettings::writeConfig() const
 {
     KConfigGroup configGroup(KernelIf->config(), configGroupName(mCollection));
 
@@ -284,19 +284,19 @@ void FolderCollection::writeConfig() const
     }
 }
 
-void FolderCollection::setShortcut(const QKeySequence &sc)
+void FolderSettings::setShortcut(const QKeySequence &sc)
 {
     if (mShortcut != sc) {
         mShortcut = sc;
     }
 }
 
-const QKeySequence &FolderCollection::shortcut() const
+const QKeySequence &FolderSettings::shortcut() const
 {
     return mShortcut;
 }
 
-void FolderCollection::setUseDefaultIdentity(bool useDefaultIdentity)
+void FolderSettings::setUseDefaultIdentity(bool useDefaultIdentity)
 {
     if (mUseDefaultIdentity != useDefaultIdentity) {
         mUseDefaultIdentity = useDefaultIdentity;
@@ -307,12 +307,12 @@ void FolderCollection::setUseDefaultIdentity(bool useDefaultIdentity)
     }
 }
 
-bool FolderCollection::useDefaultIdentity() const
+bool FolderSettings::useDefaultIdentity() const
 {
     return mUseDefaultIdentity;
 }
 
-void FolderCollection::setIdentity(uint identity)
+void FolderSettings::setIdentity(uint identity)
 {
     if (mIdentity != identity) {
         mIdentity = identity;
@@ -320,7 +320,7 @@ void FolderCollection::setIdentity(uint identity)
     }
 }
 
-uint FolderCollection::fallBackIdentity() const
+uint FolderSettings::fallBackIdentity() const
 {
     int identityId = -1;
     MailCommon::ResourceReadConfigFile resourceFile(mCollection.resource());
@@ -342,7 +342,7 @@ uint FolderCollection::fallBackIdentity() const
     return identityId;
 }
 
-uint FolderCollection::identity() const
+uint FolderSettings::identity() const
 {
     if (mUseDefaultIdentity) {
         return fallBackIdentity();
@@ -350,7 +350,7 @@ uint FolderCollection::identity() const
     return mIdentity;
 }
 
-QString FolderCollection::mailingListPostAddress() const
+QString FolderSettings::mailingListPostAddress() const
 {
     if (mMailingList.features() & MailingList::Post) {
         QList<QUrl> post = mMailingList.postUrls();
@@ -367,7 +367,7 @@ QString FolderCollection::mailingListPostAddress() const
     return QString();
 }
 
-void FolderCollection::setMailingListEnabled(bool enabled)
+void FolderSettings::setMailingListEnabled(bool enabled)
 {
     if (mMailingListEnabled != enabled) {
         mMailingListEnabled = enabled;
@@ -375,12 +375,12 @@ void FolderCollection::setMailingListEnabled(bool enabled)
     }
 }
 
-bool FolderCollection::isMailingListEnabled() const
+bool FolderSettings::isMailingListEnabled() const
 {
     return mMailingListEnabled;
 }
 
-void FolderCollection::setMailingList(const MailingList &mlist)
+void FolderSettings::setMailingList(const MailingList &mlist)
 {
     if (mMailingList == mlist) {
         return;
@@ -390,27 +390,27 @@ void FolderCollection::setMailingList(const MailingList &mlist)
     writeConfig();
 }
 
-MessageCore::MailingList FolderCollection::mailingList() const
+MessageCore::MailingList FolderSettings::mailingList() const
 {
     return mMailingList;
 }
 
-bool FolderCollection::putRepliesInSameFolder() const
+bool FolderSettings::putRepliesInSameFolder() const
 {
     return mPutRepliesInSameFolder;
 }
 
-void FolderCollection::setPutRepliesInSameFolder(bool b)
+void FolderSettings::setPutRepliesInSameFolder(bool b)
 {
     mPutRepliesInSameFolder = b;
 }
 
-bool FolderCollection::hideInSelectionDialog() const
+bool FolderSettings::hideInSelectionDialog() const
 {
     return mHideInSelectionDialog;
 }
 
-void FolderCollection::setHideInSelectionDialog(bool hide)
+void FolderSettings::setHideInSelectionDialog(bool hide)
 {
     mHideInSelectionDialog = hide;
 }

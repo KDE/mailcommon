@@ -95,7 +95,7 @@ set(libmailcommon_collection_SRCS
 )
 
 set(libmailcommon_folder_SRCS
-  folder/foldercollection.cpp
+  folder/foldersettings.cpp
   folder/foldercollectionmonitor.cpp
   folder/folderrequester.cpp
   folder/folderselectiondialog.cpp
@@ -299,7 +299,7 @@ ecm_generate_headers(MailCommon_Camelcasetag_HEADERS
 
 ecm_generate_headers(MailCommon_Camelcasefolder_HEADERS
   HEADER_NAMES
-  FolderCollection
+  FolderSettings
   FolderRequester
   FolderCollectionMonitor
   AccountConfigOrderDialog

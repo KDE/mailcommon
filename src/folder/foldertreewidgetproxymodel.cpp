@@ -18,7 +18,7 @@
 */
 
 #include "foldertreewidgetproxymodel.h"
-#include "foldercollection.h"
+#include "foldersettings.h"
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 
@@ -183,8 +183,8 @@ bool FolderTreeWidgetProxyModel::acceptRow(int sourceRow, const QModelIndex &sou
     }
 
     if (d->hideSpecificFolder) {
-        const QSharedPointer<FolderCollection> col =
-            FolderCollection::forCollection(collection, false);
+        const QSharedPointer<FolderSettings> col =
+            FolderSettings::forCollection(collection, false);
         if (col && col->hideInSelectionDialog()) {
             return false;
         }

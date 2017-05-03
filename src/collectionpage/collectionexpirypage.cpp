@@ -20,7 +20,7 @@
 
 #include "attributes/expirecollectionattribute.h"
 #include "folder/folderrequester.h"
-#include "folder/foldercollection.h"
+#include "folder/foldersettings.h"
 #include "util/mailutil.h"
 #include "kernel/mailkernel.h"
 #include "mailcommon_debug.h"
@@ -53,7 +53,7 @@ CollectionExpiryPage::~CollectionExpiryPage()
 
 bool CollectionExpiryPage::canHandle(const Akonadi::Collection &col) const
 {
-    QSharedPointer<FolderCollection> fd = FolderCollection::forCollection(col, false);
+    QSharedPointer<FolderSettings> fd = FolderSettings::forCollection(col, false);
     return (fd->canDeleteMessages() && !fd->isStructural());
 }
 
