@@ -87,7 +87,7 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Messa
     }
 
     // sort the list of n's
-    std::sort(argList.begin(), argList.end());
+    qSort(argList);
 
     // and use QString::arg to substitute filenames for the %n's.
     int lastSeen = -2;
