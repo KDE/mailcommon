@@ -119,7 +119,7 @@ SearchRule::Ptr SearchRule::createInstanceFromConfig(const KConfigGroup &config,
     static const QString contents = QStringLiteral("contents");
 
     const QByteArray &field2 = config.readEntry(field + cIdx, QString()).toLatin1();
-    Function func2 = configValueToFunc(config.readEntry(func + cIdx, QString()).toLatin1());
+    Function func2 = configValueToFunc(config.readEntry(func + cIdx, QString()).toLatin1().constData());
     const QString &contents2 = config.readEntry(contents + cIdx, QString());
 
     if (field2 == "<To or Cc>") {   // backwards compat
@@ -135,7 +135,7 @@ SearchRule::Ptr SearchRule::createInstance(QDataStream &s)
     s >> field;
     QString function;
     s >> function;
-    Function func = configValueToFunc(function.toUtf8());
+    Function func = configValueToFunc(function.toUtf8().constData());
     QString contents;
     s >> contents;
     return createInstance(field, func, contents);

@@ -366,7 +366,7 @@ void SnippetsManager::Private::insertSelectedSnippet()
     }
 
     const QString text = replaceVariables(index.data(SnippetsModel::TextRole).toString());
-    QMetaObject::invokeMethod(mEditor, mEditorInsertMethod, Qt::DirectConnection,
+    QMetaObject::invokeMethod(mEditor, mEditorInsertMethod.constData(), Qt::DirectConnection,
                               Q_ARG(QString, text));
 }
 
@@ -382,7 +382,7 @@ void SnippetsManager::Private::insertActionSnippet()
     }
 
     const QString text = replaceVariables(action->property("snippetText").toString());
-    QMetaObject::invokeMethod(mEditor, mEditorInsertMethod, Qt::DirectConnection,
+    QMetaObject::invokeMethod(mEditor, mEditorInsertMethod.constData(), Qt::DirectConnection,
                               Q_ARG(QString, text));
 }
 

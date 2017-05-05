@@ -73,23 +73,23 @@ SearchRule::RequiredPart SearchRuleString::requiredPart() const
 {
     const QByteArray f = field();
     SearchRule::RequiredPart part = Header;
-    if (qstricmp(f, "<recipients>") == 0 ||
-            qstricmp(f, "<status>") == 0 ||
-            qstricmp(f, "<tag>") == 0 ||
-            qstricmp(f, "subject") == 0 ||
-            qstricmp(f, "from") == 0 ||
-            qstricmp(f, "sender") == 0 ||
-            qstricmp(f, "reply-to") == 0 ||
-            qstricmp(f, "to") == 0  ||
-            qstricmp(f, "cc") == 0 ||
-            qstricmp(f, "bcc") == 0 ||
-            qstricmp(f, "in-reply-to") == 0 ||
-            qstricmp(f, "message-id") == 0 ||
-            qstricmp(f, "references") == 0) {
+    if (qstricmp(f.constData(), "<recipients>") == 0 ||
+            qstricmp(f.constData(), "<status>") == 0 ||
+            qstricmp(f.constData(), "<tag>") == 0 ||
+            qstricmp(f.constData(), "subject") == 0 ||
+            qstricmp(f.constData(), "from") == 0 ||
+            qstricmp(f.constData(), "sender") == 0 ||
+            qstricmp(f.constData(), "reply-to") == 0 ||
+            qstricmp(f.constData(), "to") == 0  ||
+            qstricmp(f.constData(), "cc") == 0 ||
+            qstricmp(f.constData(), "bcc") == 0 ||
+            qstricmp(f.constData(), "in-reply-to") == 0 ||
+            qstricmp(f.constData(), "message-id") == 0 ||
+            qstricmp(f.constData(), "references") == 0) {
         // these fields are directly provided by KMime::Message, no need to fetch the whole Header part
         part = Envelope;
-    } else if (qstricmp(f, "<message>") == 0 ||
-               qstricmp(f, "<body>") == 0) {
+    } else if (qstricmp(f.constData(), "<message>") == 0 ||
+               qstricmp(f.constData(), "<body>") == 0) {
         part = CompleteMessage;
     }
 
@@ -117,16 +117,16 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     // Overwrite the value for complete messages and all headers!
     bool logContents = true;
 
-    if (qstricmp(field(), "<message>") == 0) {
+    if (qstricmp(field().constData(), "<message>") == 0) {
         msgContents = msg->encodedContent();
         logContents = false;
-    } else if (qstricmp(field(), "<body>") == 0) {
+    } else if (qstricmp(field().constData(), "<body>") == 0) {
         msgContents = msg->body();
         logContents = false;
-    } else if (qstricmp(field(), "<any header>") == 0) {
+    } else if (qstricmp(field().constData(), "<any header>") == 0) {
         msgContents = msg->head();
         logContents = false;
-    } else if (qstricmp(field(), "<recipients>") == 0) {
+    } else if (qstricmp(field().constData(), "<recipients>") == 0) {
         // (mmutz 2001-11-05) hack to fix "<recipients> !contains foo" to
         // meet user's expectations. See FAQ entry in KDE 2.2.2's KMail
         // handbook
@@ -141,7 +141,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
         msgContents = msg->to()->asUnicodeString();
         msgContents += ", " + msg->cc()->asUnicodeString();
         msgContents += ", " + msg->bcc()->asUnicodeString();
-    } else if (qstricmp(field(), "<tag>") == 0) {
+    } else if (qstricmp(field().constData(), "<tag>") == 0) {
         //port?
         //     const Nepomuk2::Resource res( item.url() );
         //     foreach ( const Nepomuk2::Tag &tag, res.tags() ) {
@@ -152,7 +152,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
         // make sure to treat messages with multiple header lines for
         // the same header correctly
         msgContents = "";
-        if (auto hrd = msg->headerByType(field())) {
+        if (auto hrd = msg->headerByType(field().constData())) {
             msgContents = hrd->asUnicodeString();
         }
     }
@@ -161,7 +161,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
             function() == FuncIsNotInAddressbook) {
         // I think only the "from"-field makes sense.
         msgContents = "";
-        if (auto hrd = msg->headerByType(field())) {
+        if (auto hrd = msg->headerByType(field().constData())) {
             msgContents = hrd->asUnicodeString();
         }
 
@@ -195,43 +195,43 @@ void SearchRuleString::addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &empty
     using namespace Akonadi;
     emptyIsNotAnError = false;
     SearchTerm termGroup(SearchTerm::RelOr);
-    if (qstricmp(field(), "subject") == 0) {
+    if (qstricmp(field().constData(), "subject") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Subject, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "reply-to") == 0) {
+    } else if (qstricmp(field().constData(), "reply-to") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderReplyTo, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "<message>") == 0) {
+    } else if (qstricmp(field().constData(), "<message>") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Message, contents(), akonadiComparator()));
     } else if (field() == "<body>") {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Body, contents(), akonadiComparator()));
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Attachment, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "<recipients>") == 0) {
+    } else if (qstricmp(field().constData(), "<recipients>") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderTo, contents(), akonadiComparator()));
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderCC, contents(), akonadiComparator()));
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderBCC, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "<any header>") == 0) {
+    } else if (qstricmp(field().constData(), "<any header>") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Headers, contents(), akonadiComparator()));
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Subject, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "to") == 0) {
+    } else if (qstricmp(field().constData(), "to") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderTo, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "cc") == 0) {
+    } else if (qstricmp(field().constData(), "cc") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderCC, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "bcc") == 0) {
+    } else if (qstricmp(field().constData(), "bcc") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderBCC, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "from") == 0) {
+    } else if (qstricmp(field().constData(), "from") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderFrom, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "list-id") == 0) {
+    } else if (qstricmp(field().constData(), "list-id") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderListId, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "resent-from") == 0) {
+    } else if (qstricmp(field().constData(), "resent-from") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderResentFrom, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "x-loop") == 0) {
+    } else if (qstricmp(field().constData(), "x-loop") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderXLoop, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "x-mailing-list") == 0) {
+    } else if (qstricmp(field().constData(), "x-mailing-list") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderXMailingList, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "x-spam-flag") == 0) {
+    } else if (qstricmp(field().constData(), "x-spam-flag") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderXSpamFlag, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "organization")  == 0) {
+    } else if (qstricmp(field().constData(), "organization")  == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderOrganization, contents(), akonadiComparator()));
-    } else if (qstricmp(field(), "<tag>") == 0) {
+    } else if (qstricmp(field().constData(), "<tag>") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::MessageTag, contents(), akonadiComparator()));
     }
 
