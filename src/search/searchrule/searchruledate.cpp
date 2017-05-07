@@ -54,10 +54,10 @@ bool SearchRuleDate::matches(const Akonadi::Item &item) const
     const QDate dateValue = QDate::fromString(contents(), Qt::ISODate);
     bool rc = matchesInternal(dateValue, msgDate);
     if (FilterLog::instance()->isLogging()) {
-        QString msg = (rc ? "<font color=#00FF00>1 = </font>"
-                       : "<font color=#FF0000>0 = </font>");
+        QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>")
+                       : QStringLiteral("<font color=#FF0000>0 = </font>"));
         msg += FilterLog::recode(asString());
-        msg += " ( <i>" + contents() + "</i> )"; //TODO change with locale?
+        msg += QStringLiteral(" ( <i>") + contents() + QStringLiteral("</i> )"); //TODO change with locale?
         FilterLog::instance()->add(msg, FilterLog::RuleResult);
     }
     return rc;

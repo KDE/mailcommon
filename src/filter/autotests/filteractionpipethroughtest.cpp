@@ -45,7 +45,7 @@ void FilterActionPipeThroughTest::testWithNoCommand()
     item.setPayload<KMime::Message::Ptr>(msgPtr);
     ItemContext context(item, true);
 
-    filter.argsFromString("");
+    filter.argsFromString(QStringLiteral(""));
     QCOMPARE(filter.process(context, false), FilterAction::ErrorButGoOn);
     QCOMPARE(context.needsPayloadStore(), false);
 }

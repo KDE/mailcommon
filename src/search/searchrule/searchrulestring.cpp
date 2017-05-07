@@ -151,7 +151,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     } else {
         // make sure to treat messages with multiple header lines for
         // the same header correctly
-        msgContents = "";
+        msgContents = QStringLiteral("");
         if (auto hrd = msg->headerByType(field().constData())) {
             msgContents = hrd->asUnicodeString();
         }
@@ -160,7 +160,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     if (function() == FuncIsInAddressbook ||
             function() == FuncIsNotInAddressbook) {
         // I think only the "from"-field makes sense.
-        msgContents = "";
+        msgContents = QStringLiteral("");
         if (auto hrd = msg->headerByType(field().constData())) {
             msgContents = hrd->asUnicodeString();
         }
@@ -179,11 +179,11 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
 
     bool rc = matchesInternal(msgContents);
     if (FilterLog::instance()->isLogging()) {
-        QString msg = (rc ? "<font color=#00FF00>1 = </font>" : "<font color=#FF0000>0 = </font>");
+        QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>") : QStringLiteral("<font color=#FF0000>0 = </font>"));
         msg += FilterLog::recode(asString());
         // only log headers bcause messages and bodies can be pretty large
         if (logContents) {
-            msg += " (<i>" + FilterLog::recode(msgContents) + "</i>)";
+            msg += QStringLiteral(" (<i>") + FilterLog::recode(msgContents) + QStringLiteral("</i>)");
         }
         FilterLog::instance()->add(msg, FilterLog::RuleResult);
     }

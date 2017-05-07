@@ -153,7 +153,7 @@ void FilterActionRemoveHeaderTest::shouldRemoveMultiHeader()
     item.setPayload<KMime::Message::Ptr>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
-    filter.argsFromString("testheader");
+    filter.argsFromString(QStringLiteral("testheader"));
     QCOMPARE(filter.process(context, false), MailCommon::FilterAction::GoOn);
     QCOMPARE(context.needsPayloadStore(), true);
     QCOMPARE(msgPtr->encodedContent(), output);

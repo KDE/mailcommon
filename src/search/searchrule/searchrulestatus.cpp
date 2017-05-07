@@ -52,7 +52,7 @@ QString englishNameForStatus(const Akonadi::MessageStatus &status)
 {
     for (int i = 0; i < numStatusNames; ++i) {
         if (statusNames[i].status == status) {
-            return statusNames[i].name;
+            return QString::fromLatin1(statusNames[i].name);
         }
     }
     return QString();
@@ -76,7 +76,7 @@ SearchRuleStatus::SearchRuleStatus(Akonadi::MessageStatus status, Function func)
 Akonadi::MessageStatus SearchRuleStatus::statusFromEnglishName(const QString &aStatusString)
 {
     for (int i = 0; i < numStatusNames; ++i) {
-        if (!aStatusString.compare(statusNames[i].name)) {
+        if (!aStatusString.compare(QString::fromLatin1(statusNames[i].name))) {
             return statusNames[i].status;
         }
     }
@@ -119,7 +119,7 @@ bool SearchRuleStatus::matches(const Akonadi::Item &item) const
         break;
     }
     if (FilterLog::instance()->isLogging()) {
-        QString msg = (rc ? "<font color=#00FF00>1 = </font>" : "<font color=#FF0000>0 = </font>");
+        QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>") : QStringLiteral("<font color=#FF0000>0 = </font>"));
         msg += FilterLog::recode(asString());
         FilterLog::instance()->add(msg, FilterLog::RuleResult);
     }

@@ -165,7 +165,7 @@ QString SearchRule::functionToString(Function function)
     if (function != FuncNone) {
         return funcConfigNames[int(function)];
     } else {
-        return "invalid";
+        return QStringLiteral("invalid");
     }
 }
 
@@ -176,7 +176,7 @@ void SearchRule::writeConfig(KConfigGroup &config, int aIdx) const
     static const QString func = QStringLiteral("func");
     static const QString contents = QStringLiteral("contents");
 
-    config.writeEntry(field + cIdx, QString(mField));
+    config.writeEntry(field + cIdx, /*QString*/(mField));
     config.writeEntry(func + cIdx, functionToString(mFunction));
     config.writeEntry(contents + cIdx, mContents);
 }
@@ -522,7 +522,7 @@ const QString SearchRule::asString() const
 {
     QString result  = QLatin1String("\"") + mField + QLatin1String("\" <");
     result += functionToString(mFunction);
-    result += "> \"" + mContents + "\"";
+    result += QStringLiteral("> \"") + mContents + QStringLiteral("\"");
 
     return result;
 }

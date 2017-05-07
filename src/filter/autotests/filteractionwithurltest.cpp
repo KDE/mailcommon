@@ -66,7 +66,7 @@ void FilterActionWithUrlTest::shouldClearWidget()
     TestFilterActionWithUrl filter;
     QWidget *w = filter.createParamWidget(nullptr);
     KUrlRequester *requester = w->findChild<KUrlRequester *>(QStringLiteral("requester"));
-    requester->setUrl(QUrl::fromLocalFile("/foo/bla"));
+    requester->setUrl(QUrl::fromLocalFile(QStringLiteral("/foo/bla")));
     QVERIFY(!requester->url().isEmpty());
     filter.clearParamWidget(w);
     QVERIFY(requester->url().isEmpty());
