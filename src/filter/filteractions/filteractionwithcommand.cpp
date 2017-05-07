@@ -156,7 +156,7 @@ void substituteMessageHeaders(const KMime::Message::Ptr &aMsg, QString &result)
     QRegExp header_rx(QStringLiteral("%\\{([a-z0-9-]+)\\}"), Qt::CaseInsensitive);
     int idx = 0;
     while ((idx = header_rx.indexIn(result, idx)) != -1) {
-        const KMime::Headers::Base *header = aMsg->headerByType(header_rx.cap(1).toLatin1());
+        const KMime::Headers::Base *header = aMsg->headerByType(header_rx.cap(1).toLatin1().constData());
         QString replacement;
         if (header) {
             replacement = KShell::quoteArg(QString::fromLatin1(header->as7BitString()));
