@@ -151,7 +151,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
 
     connect(menu, &QMenu::triggered, this, &KMFilterDialog::slotImportFilter);
 
-    act = new QAction(i18n("GMail filters"), this);
+    act = new QAction(i18n("Gmail filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::GmailFilter));
     menu->addAction(act);
 
