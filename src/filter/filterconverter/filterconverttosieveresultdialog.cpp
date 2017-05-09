@@ -37,7 +37,7 @@ using namespace MailCommon;
 FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *parent)
     : QDialog(parent)
 {
-    setWindowTitle(i18n("Convert to sieve script"));
+    setWindowTitle(i18nc("@title:window", "Convert to Sieve Script"));
     QVBoxLayout *topLayout = new QVBoxLayout(this);
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Close, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
