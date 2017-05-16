@@ -62,7 +62,8 @@ public:
         BalsaFilter = 5,
         ClawsMailFilter = 6,
         IcedoveFilter = 7,
-        GmailFilter = 8
+        GmailFilter = 8,
+        SeaMonkey = 9
     };
 
     /**

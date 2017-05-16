@@ -55,6 +55,11 @@ void FilterImporterThunderbird::readStream(QTextStream &stream)
     appendFilter(filter);
 }
 
+QString FilterImporterThunderbird::defaultSeaMonkeyFiltersSettingsPath()
+{
+    return QStringLiteral("%1/.mozilla/seamonkey").arg(QDir::homePath());
+}
+
 QString FilterImporterThunderbird::defaultIcedoveFiltersSettingsPath()
 {
     return QStringLiteral("%1/.icedove/").arg(QDir::homePath());

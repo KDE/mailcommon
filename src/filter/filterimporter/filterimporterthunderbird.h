@@ -38,6 +38,7 @@ public:
     static QString defaultThunderbirdFiltersSettingsPath();
 
     static QString defaultIcedoveFiltersSettingsPath();
+    static QString defaultSeaMonkeyFiltersSettingsPath();
 private:
     void readStream(QTextStream &stream);
     static QString cleanArgument(const QString &line, const QString &removeStr);
