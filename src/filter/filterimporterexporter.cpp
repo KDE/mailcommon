@@ -165,7 +165,7 @@ QList<MailFilter *> FilterImporterExporter::importFilters(
     QString fileName(filename);
 
     QFile file;
-    if ((type != ThunderBirdFilter) && (type != IcedoveFilter) && (type != SeaMonkey)) {
+    if ((type != ThunderBirdFilter) && (type != IcedoveFilter) && (type != SeaMonkeyFilter)) {
         if (fileName.isEmpty()) {
             QString title;
             QString defaultPath;
@@ -176,7 +176,7 @@ QList<MailFilter *> FilterImporterExporter::importFilters(
                 break;
             case ThunderBirdFilter:
             case IcedoveFilter:
-            case SeaMonkey:
+            case SeaMonkeyFilter:
                 break;
             case EvolutionFilter:
                 title = i18n("Import Evolution Filters");
@@ -230,11 +230,17 @@ QList<MailFilter *> FilterImporterExporter::importFilters(
         break;
     }
     case IcedoveFilter:
-    case SeaMonkey:
+    case SeaMonkeyFilter:
     case ThunderBirdFilter: {
         if (fileName.isEmpty()) {
-            //TODO add SeaMonkey support
-            const QString defaultPath = (type == ThunderBirdFilter) ? MailCommon::FilterImporterThunderbird::defaultThunderbirdFiltersSettingsPath() : MailCommon::FilterImporterThunderbird::defaultIcedoveFiltersSettingsPath();
+            QString defaultPath;
+            if (type == ThunderBirdFilter) {
+                defaultPath = MailCommon::FilterImporterThunderbird::defaultThunderbirdFiltersSettingsPath();
+            } else if (type == IcedoveFilter) {
+                defaultPath = MailCommon::FilterImporterThunderbird::defaultIcedoveFiltersSettingsPath();
+            } else if (type == SeaMonkeyFilter) {
+                defaultPath = MailCommon::FilterImporterThunderbird::defaultSeaMonkeyFiltersSettingsPath();
+            }
 
             SelectThunderbirdFilterFilesDialog *selectThunderBirdFileDialog = new SelectThunderbirdFilterFilesDialog(defaultPath, d->mParent);
             selectThunderBirdFileDialog->setStartDir(QUrl::fromLocalFile(defaultPath));
