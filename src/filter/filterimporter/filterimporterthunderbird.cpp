@@ -17,6 +17,9 @@
 
 #include "filterimporterthunderbird.h"
 #include "filter/mailfilter.h"
+#include <MailImporter/FilterSeaMonkey>
+#include <MailImporter/FilterIcedove>
+#include <MailImporter/FilterThunderbird>
 #include "mailcommon_debug.h"
 #include <QUrl>
 
@@ -57,17 +60,17 @@ void FilterImporterThunderbird::readStream(QTextStream &stream)
 
 QString FilterImporterThunderbird::defaultSeaMonkeyFiltersSettingsPath()
 {
-    return QStringLiteral("%1/.mozilla/seamonkey").arg(QDir::homePath());
+    return MailImporter::FilterSeaMonkey::defaultSettingsPath();
 }
 
 QString FilterImporterThunderbird::defaultIcedoveFiltersSettingsPath()
 {
-    return QStringLiteral("%1/.icedove/").arg(QDir::homePath());
+    return MailImporter::FilterIcedove::defaultSettingsPath();
 }
 
 QString FilterImporterThunderbird::defaultThunderbirdFiltersSettingsPath()
 {
-    return QStringLiteral("%1/.thunderbird/").arg(QDir::homePath());
+    return MailImporter::FilterThunderbird::defaultSettingsPath();
 }
 
 MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream,
