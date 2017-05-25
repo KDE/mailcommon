@@ -186,26 +186,32 @@ KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
     hbHBoxLayout = new QHBoxLayout(hb);
     hbHBoxLayout->setMargin(0);
     hbHBoxLayout->setSpacing(4);
-    mBtnNew = new QPushButton(QString(), hb);
+    mBtnNew = new QPushButton(hb);
     hbHBoxLayout->addWidget(mBtnNew);
     mBtnNew->setIcon(QIcon::fromTheme(QStringLiteral("document-new")));
     mBtnNew->setIconSize(QSize(KIconLoader::SizeSmall, KIconLoader::SizeSmall));
     mBtnNew->setMinimumSize(mBtnNew->sizeHint() * 1.2);
-    mBtnCopy = new QPushButton(QString(), hb);
+    mBtnCopy = new QPushButton(hb);
     hbHBoxLayout->addWidget(mBtnCopy);
     mBtnCopy->setIcon(QIcon::fromTheme(QStringLiteral("edit-copy")));
     mBtnCopy->setIconSize(QSize(KIconLoader::SizeSmall, KIconLoader::SizeSmall));
     mBtnCopy->setMinimumSize(mBtnCopy->sizeHint() * 1.2);
-    mBtnDelete = new QPushButton(QString(), hb);
+    mBtnDelete = new QPushButton(hb);
     hbHBoxLayout->addWidget(mBtnDelete);
     mBtnDelete->setIcon(QIcon::fromTheme(QStringLiteral("edit-delete")));
     mBtnDelete->setIconSize(QSize(KIconLoader::SizeSmall, KIconLoader::SizeSmall));
     mBtnDelete->setMinimumSize(mBtnDelete->sizeHint() * 1.2);
-    mBtnRename = new QPushButton(i18n("Rename..."), hb);
+    mBtnRename = new QPushButton(hb);
+    mBtnRename->setIcon(QIcon::fromTheme(QStringLiteral("edit-rename")));
+    mBtnRename->setIconSize(QSize(KIconLoader::SizeSmall, KIconLoader::SizeSmall));
+    mBtnRename->setMinimumSize(mBtnDelete->sizeHint() * 1.2);
+
+
     hbHBoxLayout->addWidget(mBtnRename);
     mBtnNew->setToolTip(i18nc("@action:button in filter list manipulator", "New"));
     mBtnCopy->setToolTip(i18n("Copy"));
     mBtnDelete->setToolTip(i18n("Delete"));
+    mBtnRename->setToolTip(i18n("Rename"));
     mBtnNew->setWhatsThis(i18n(_wt_filterlist_new));
     mBtnCopy->setWhatsThis(i18n(_wt_filterlist_copy));
     mBtnDelete->setWhatsThis(i18n(_wt_filterlist_delete));
