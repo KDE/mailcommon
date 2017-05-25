@@ -118,13 +118,13 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     bool logContents = true;
 
     if (qstricmp(field().constData(), "<message>") == 0) {
-        msgContents = msg->encodedContent();
+        msgContents = QString::fromUtf8(msg->encodedContent());
         logContents = false;
     } else if (qstricmp(field().constData(), "<body>") == 0) {
-        msgContents = msg->body();
+        msgContents = QString::fromUtf8(msg->body());
         logContents = false;
     } else if (qstricmp(field().constData(), "<any header>") == 0) {
-        msgContents = msg->head();
+        msgContents = QString::fromUtf8(msg->head());
         logContents = false;
     } else if (qstricmp(field().constData(), "<recipients>") == 0) {
         // (mmutz 2001-11-05) hack to fix "<recipients> !contains foo" to
