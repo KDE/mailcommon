@@ -27,15 +27,16 @@
 using namespace MailCommon;
 
 FilterImporterProcmail::FilterImporterProcmail(QFile *file)
-    : FilterImporterAbstract(), mFilterCount(0)
+    : FilterImporterAbstract()
+    , mFilterCount(0)
 {
     QTextStream stream(file);
     readStream(stream);
 }
 
 FilterImporterProcmail::FilterImporterProcmail(QString string)
-    : FilterImporterAbstract(),
-      mFilterCount(0)
+    : FilterImporterAbstract()
+    , mFilterCount(0)
 {
     QTextStream stream(&string);
     readStream(stream);
@@ -67,9 +68,7 @@ QString FilterImporterProcmail::createUniqFilterName()
     return i18n("Procmail filter %1", ++mFilterCount);
 }
 
-MailCommon::MailFilter *FilterImporterProcmail::parseLine(QTextStream &stream,
-        QString line,
-        MailCommon::MailFilter *filter)
+MailCommon::MailFilter *FilterImporterProcmail::parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter)
 {
     Q_UNUSED(stream);
     if (line.isEmpty()) {
@@ -84,7 +83,6 @@ MailCommon::MailFilter *FilterImporterProcmail::parseLine(QTextStream &stream,
         const QString uniqName = createUniqFilterName();
         filter->pattern()->setName(uniqName);
         filter->setToolbarName(uniqName);
-
     } else if (line.startsWith(QStringLiteral("* "))) {
         line.remove(0, 2);
         QByteArray fieldName;

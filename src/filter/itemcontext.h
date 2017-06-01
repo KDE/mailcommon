@@ -26,9 +26,7 @@
 #include <Collection>
 #include <Item>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * @short A helper class for the filtering process
  *
@@ -103,7 +101,6 @@ private:
     Akonadi::Collection mMoveTargetCollection;
     ItemContextActions mItemContextAction;
 };
-
 }
 
 #endif

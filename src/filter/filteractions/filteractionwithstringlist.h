@@ -24,9 +24,7 @@
 
 #include <QStringList>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * @short Abstract base class for filter actions with a fixed set of string parameters.
  *
@@ -85,7 +83,6 @@ public:
 protected:
     QStringList mParameterList;
 };
-
 }
 
 #endif

@@ -35,9 +35,7 @@
 #include <QDialog>
 #include <KConfigGroup>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * @short A dialog to request information about message redirection from the user.
  *
@@ -102,7 +100,6 @@ private:
     Q_PRIVATE_SLOT(d, void slotAddressChanged(const QString &))
     //@endcond
 };
-
 }
 
 #endif

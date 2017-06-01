@@ -26,8 +26,8 @@ public:
     TestFilterActionWithAddress()
         : MailCommon::FilterActionWithAddress(QStringLiteral("foo"), QStringLiteral("bla"))
     {
-
     }
+
     FilterAction::ReturnCode process(MailCommon::ItemContext &, bool) const Q_DECL_OVERRIDE
     {
         return GoOn;
@@ -37,18 +37,15 @@ public:
     {
         return MailCommon::SearchRule::CompleteMessage;
     }
-
 };
 
 FilterActionWithAddressTest::FilterActionWithAddressTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionWithAddressTest::~FilterActionWithAddressTest()
 {
-
 }
 
 void FilterActionWithAddressTest::shouldHaveDefaultValue()

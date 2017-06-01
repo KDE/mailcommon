@@ -21,8 +21,7 @@
 #include <QAbstractListModel>
 #include <QList>
 #include "invalidfilterinfo.h"
-namespace MailCommon
-{
+namespace MailCommon {
 class InvalidFilterListModel : public QAbstractListModel
 {
     Q_OBJECT

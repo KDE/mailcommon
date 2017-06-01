@@ -51,22 +51,20 @@
 #include <QPointer>
 #include <QVBoxLayout>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class Q_DECL_HIDDEN FolderTreeWidget::FolderTreeWidgetPrivate
 {
 public:
     FolderTreeWidgetPrivate()
-        : filterModel(nullptr),
-          folderTreeView(nullptr),
-          quotaModel(nullptr),
-          readableproxy(nullptr),
-          entityOrderProxy(nullptr),
-          filterFolderLineEdit(nullptr),
-          saver(nullptr),
-          label(nullptr),
-          dontKeyFilter(false)
+        : filterModel(nullptr)
+        , folderTreeView(nullptr)
+        , quotaModel(nullptr)
+        , readableproxy(nullptr)
+        , entityOrderProxy(nullptr)
+        , filterFolderLineEdit(nullptr)
+        , saver(nullptr)
+        , label(nullptr)
+        , dontKeyFilter(false)
     {
     }
 
@@ -86,10 +84,9 @@ public:
 };
 
 FolderTreeWidget::FolderTreeWidget(
-    QWidget *parent, KXMLGUIClient *xmlGuiClient,
-    FolderTreeWidget::TreeViewOptions options,
-    FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelOptions optReadableProxy)
-    : QWidget(parent), d(new FolderTreeWidgetPrivate())
+    QWidget *parent, KXMLGUIClient *xmlGuiClient, FolderTreeWidget::TreeViewOptions options, FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelOptions optReadableProxy)
+    : QWidget(parent)
+    , d(new FolderTreeWidgetPrivate())
 {
     Akonadi::AttributeFactory::registerAttribute<PimCommon::ImapAclAttribute>();
 
@@ -150,7 +147,6 @@ FolderTreeWidget::FolderTreeWidget(
     } else {
         d->filterFolderLineEdit->hide();
     }
-
 }
 
 FolderTreeWidget::~FolderTreeWidget()
@@ -192,8 +188,8 @@ void FolderTreeWidget::disableContextMenuAndExtraColumn()
 
 void FolderTreeWidget::selectCollectionFolder(const Akonadi::Collection &collection)
 {
-    const QModelIndex index =
-        Akonadi::EntityTreeModel::modelIndexForCollection(d->folderTreeView->model(), collection);
+    const QModelIndex index
+        = Akonadi::EntityTreeModel::modelIndexForCollection(d->folderTreeView->model(), collection);
 
     d->folderTreeView->setCurrentIndex(index);
     d->folderTreeView->setExpanded(index, true);
@@ -241,9 +237,9 @@ Akonadi::Collection::List FolderTreeWidget::selectedCollections() const
     const QModelIndexList selectedIndexes = selectionModel->selectedIndexes();
     for (const QModelIndex &index : selectedIndexes) {
         if (index.isValid()) {
-            const Akonadi::Collection collection =
-                index.model()->data(
-                    index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+            const Akonadi::Collection collection
+                = index.model()->data(
+                index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
             if (collection.isValid()) {
                 collections.append(collection);
             }
@@ -354,9 +350,9 @@ QLineEdit *FolderTreeWidget::filterFolderLineEdit() const
 void FolderTreeWidget::applyFilter(const QString &filter)
 {
     d->label->setText(
-        filter.isEmpty() ?
-        i18n("You can start typing to filter the list of folders.") :
-        i18n("Path: (%1)", filter));
+        filter.isEmpty()
+        ? i18n("You can start typing to filter the list of folders.")
+        : i18n("Path: (%1)", filter));
 
     d->readableproxy->setFilterFolder(filter);
     d->folderTreeView->expandAll();
@@ -398,33 +394,33 @@ bool FolderTreeWidget::eventFilter(QObject *o, QEvent *e)
     if (e->type() == QEvent::KeyPress) {
         const QKeyEvent *const ke = static_cast<QKeyEvent *>(e);
         switch (ke->key()) {
-        case Qt::Key_Backspace: {
+        case Qt::Key_Backspace:
+        {
             const int filterLength(d->filter.length());
             if (filterLength > 0) {
                 d->filter.truncate(filterLength - 1);
             }
             applyFilter(d->filter);
             return false;
+            break;
         }
-        break;
         case Qt::Key_Delete:
             d->filter.clear();
             applyFilter(d->filter);
             return false;
             break;
-        default: {
+        default:
+        {
             const QString s = ke->text();
             if (!s.isEmpty() && s.at(0).isPrint()) {
                 d->filter += s;
                 applyFilter(d->filter);
                 return false;
             }
+            break;
         }
-        break;
         }
     }
     return false;
 }
-
 }
-

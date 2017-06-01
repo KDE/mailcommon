@@ -23,8 +23,7 @@
 #include <AkonadiCore/Item>
 
 class KConfigGroup;
-namespace MailCommon
-{
+namespace MailCommon {
 /**
  * @short This class represents one search pattern rule.
  * Incoming mail is sent through the list of mail filter
@@ -86,8 +85,7 @@ public:
      * @param function The function to use for searching.
      * @param contents The contents to search for.
      */
-    explicit SearchRule(const QByteArray &field = QByteArray(), Function function = FuncContains,
-                        const QString &contents = QString());
+    explicit SearchRule(const QByteArray &field = QByteArray(), Function function = FuncContains, const QString &contents = QString());
 
     /**
      * Creates a new search rule from an @p other rule.
@@ -107,9 +105,7 @@ public:
      * @param function The function to use for searching.
      * @param contents The contents to search for.
      */
-    static SearchRule::Ptr createInstance(const QByteArray &field = QByteArray(),
-                                          Function function = FuncContains,
-                                          const QString &contents = QString());
+    static SearchRule::Ptr createInstance(const QByteArray &field = QByteArray(), Function function = FuncContains, const QString &contents = QString());
 
     /**
      * Creates a new search rule of a certain type by instantiating the
@@ -119,9 +115,7 @@ public:
      * @param function The name of the function to use for searching.
      * @param contents The contents to search for.
      */
-    static SearchRule::Ptr createInstance(const QByteArray &field,
-                                          const char *function,
-                                          const QString &contents);
+    static SearchRule::Ptr createInstance(const QByteArray &field, const char *function, const QString &contents);
 
     /**
      * Creates a new search rule by cloning an @p other rule.
@@ -272,7 +266,7 @@ private:
 
     QByteArray mField;
     Function mFunction;
-    QString  mContents;
+    QString mContents;
 };
 }
 

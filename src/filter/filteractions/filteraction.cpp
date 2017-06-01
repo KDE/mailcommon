@@ -35,7 +35,9 @@
 using namespace MailCommon;
 
 FilterAction::FilterAction(const QString &name, const QString &label, QObject *parent)
-    : QObject(parent), mName(name), mLabel(label)
+    : QObject(parent)
+    , mName(name)
+    , mLabel(label)
 {
 }
 
@@ -104,8 +106,7 @@ bool FilterAction::folderRemoved(const Akonadi::Collection &, const Akonadi::Col
     return false;
 }
 
-void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionType type,
-                           const QVector<KMime::MDN::DispositionModifier> &modifiers)
+void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionType type, const QVector<KMime::MDN::DispositionModifier> &modifiers)
 {
     const KMime::Message::Ptr msg = MessageCore::Util::message(item);
     if (!msg) {
@@ -114,7 +115,7 @@ void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionTyp
 
     const QPair<bool, KMime::MDN::SendingMode> mdnSend = MDNAdviceHelper::instance()->checkAndSetMDNInfo(item, type, true);
     if (mdnSend.first) {
-        const int quote =  MessageViewer::MessageViewerSettings::self()->quoteMessage();
+        const int quote = MessageViewer::MessageViewerSettings::self()->quoteMessage();
         QString receiptTo;
         if (auto hrd = msg->headerByType("Disposition-Notification-To")) {
             receiptTo = hrd->asUnicodeString();
@@ -144,4 +145,3 @@ QString FilterAction::sieveCode() const
 {
     return i18n("### \"action '%1' not supported\"", name());
 }
-

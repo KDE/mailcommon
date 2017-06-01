@@ -22,8 +22,7 @@
 #include <QString>
 #include "mailcommon_export.h"
 
-namespace MailCommon
-{
+namespace MailCommon {
 class ResourceReadConfigFilePrivate;
 class MAILCOMMON_EXPORT ResourceReadConfigFile
 {

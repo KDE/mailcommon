@@ -63,9 +63,7 @@ void FilterImporterAbstract::appendFilter(MailCommon::MailFilter *filter)
     }
 }
 
-void FilterImporterAbstract::createFilterAction(MailCommon::MailFilter *filter,
-        const QString &actionName,
-        const QString &value)
+void FilterImporterAbstract::createFilterAction(MailCommon::MailFilter *filter, const QString &actionName, const QString &value)
 {
     if (!actionName.isEmpty()) {
         FilterActionDesc *desc = MailCommon::FilterManager::filterActionDict()->value(actionName);

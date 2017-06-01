@@ -23,12 +23,10 @@
 FilterActionRemoveHeaderTest::FilterActionRemoveHeaderTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionRemoveHeaderTest::~FilterActionRemoveHeaderTest()
 {
-
 }
 
 void FilterActionRemoveHeaderTest::shouldHaveDefaultValue()

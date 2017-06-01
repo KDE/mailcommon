@@ -41,14 +41,14 @@ FilterAction *FilterActionAddToAddressBook::newAction()
 }
 
 FilterActionAddToAddressBook::FilterActionAddToAddressBook(QObject *parent)
-    : FilterActionWithStringList(QStringLiteral("add to address book"), i18n("Add to Address Book"), parent),
-      mFromStr(i18nc("Email sender", "From")),
-      mToStr(i18nc("Email recipient", "To")),
-      mCCStr(i18n("CC")),
-      mBCCStr(i18n("BCC")),
-      mHeaderType(UnknownHeader),
-      mCollectionId(-1),
-      mCategory(i18n("KMail Filter"))
+    : FilterActionWithStringList(QStringLiteral("add to address book"), i18n("Add to Address Book"), parent)
+    , mFromStr(i18nc("Email sender", "From"))
+    , mToStr(i18nc("Email recipient", "To"))
+    , mCCStr(i18n("CC"))
+    , mBCCStr(i18n("BCC"))
+    , mHeaderType(UnknownHeader)
+    , mCollectionId(-1)
+    , mCategory(i18n("KMail Filter"))
 {
 }
 
@@ -67,11 +67,20 @@ FilterAction::ReturnCode FilterActionAddToAddressBook::process(ItemContext &cont
 
     QString headerLine;
     switch (mHeaderType) {
-    case FromHeader: headerLine = msg->from()->asUnicodeString(); break;
-    case ToHeader: headerLine = msg->to()->asUnicodeString(); break;
-    case CcHeader: headerLine = msg->cc()->asUnicodeString(); break;
-    case BccHeader: headerLine = msg->bcc()->asUnicodeString(); break;
-    case UnknownHeader: break;
+    case FromHeader:
+        headerLine = msg->from()->asUnicodeString();
+        break;
+    case ToHeader:
+        headerLine = msg->to()->asUnicodeString();
+        break;
+    case CcHeader:
+        headerLine = msg->cc()->asUnicodeString();
+        break;
+    case BccHeader:
+        headerLine = msg->bcc()->asUnicodeString();
+        break;
+    case UnknownHeader:
+        break;
     }
     if (headerLine.isEmpty()) {
         return ErrorButGoOn;
@@ -183,7 +192,8 @@ void FilterActionAddToAddressBook::applyParamWidgetValue(QWidget *paramWidget)
     // we use the previously 'stored' value from the 'collectionId' property
     if (collection.isValid()) {
         mCollectionId = collection.id();
-        connect(collectionComboBox, static_cast<void (Akonadi::CollectionComboBox::*)(int)>(&Akonadi::CollectionComboBox::currentIndexChanged), this, &FilterActionAddToAddressBook::filterActionModified);
+        connect(collectionComboBox, static_cast<void (Akonadi::CollectionComboBox::*)(
+                                                    int)>(&Akonadi::CollectionComboBox::currentIndexChanged), this, &FilterActionAddToAddressBook::filterActionModified);
     } else {
         const QVariant value = collectionComboBox->property("collectionId");
         if (value.isValid()) {
@@ -208,11 +218,20 @@ QString FilterActionAddToAddressBook::argsAsString() const
     QString result;
 
     switch (mHeaderType) {
-    case FromHeader: result = QStringLiteral("From"); break;
-    case ToHeader: result = QStringLiteral("To"); break;
-    case CcHeader: result = QStringLiteral("CC"); break;
-    case BccHeader: result = QStringLiteral("BCC"); break;
-    case UnknownHeader: break;
+    case FromHeader:
+        result = QStringLiteral("From");
+        break;
+    case ToHeader:
+        result = QStringLiteral("To");
+        break;
+    case CcHeader:
+        result = QStringLiteral("CC");
+        break;
+    case BccHeader:
+        result = QStringLiteral("BCC");
+        break;
+    case UnknownHeader:
+        break;
     }
 
     result += QLatin1Char('\t');

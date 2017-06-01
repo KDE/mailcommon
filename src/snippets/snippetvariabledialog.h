@@ -24,21 +24,16 @@
 #include <QDialog>
 
 class QCheckBox;
-namespace KPIMTextEdit
-{
+namespace KPIMTextEdit {
 class PlainTextEditorWidget;
 }
-namespace MailCommon
-{
-
+namespace MailCommon {
 class SnippetVariableDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    SnippetVariableDialog(const QString &variableName,
-                          QMap<QString, QString> *variables,
-                          QWidget *parent = nullptr);
+    SnippetVariableDialog(const QString &variableName, QMap<QString, QString> *variables, QWidget *parent = nullptr);
 
     QString variableValue() const;
     bool saveVariableIsChecked() const;
@@ -50,7 +45,6 @@ private:
     KPIMTextEdit::PlainTextEditorWidget *mVariableValueText;
     QCheckBox *mSaveVariable;
 };
-
 }
 
 #endif

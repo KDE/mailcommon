@@ -84,4 +84,3 @@ void InvalidFilterDialog::readConfig()
         resize(sizeDialog);
     }
 }
-

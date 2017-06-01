@@ -79,4 +79,3 @@ QString FilterActionCopy::informationAboutNotValidAction() const
 {
     return i18n("Folder destination was not defined.");
 }
-

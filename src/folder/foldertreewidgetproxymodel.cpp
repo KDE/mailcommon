@@ -35,17 +35,15 @@
 
 #include <QPalette>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class FolderTreeWidgetProxyModel::Private
 {
 public:
     Private()
-        : enableCheck(false),
-          hideVirtualFolder(false),
-          hideSpecificFolder(false),
-          hideOutboxFolder(false)
+        : enableCheck(false)
+        , hideVirtualFolder(false)
+        , hideSpecificFolder(false)
+        , hideOutboxFolder(false)
     {
         const KColorScheme scheme(QPalette::Active, KColorScheme::View);
         brokenAccountColor = scheme.foreground(KColorScheme::NegativeText).color();
@@ -62,10 +60,9 @@ public:
     bool hideOutboxFolder;
 };
 
-FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModel(QObject *parent,
-        FolderTreeWidgetProxyModelOptions option)
-    : Akonadi::EntityRightsFilterModel(parent),
-      d(new Private)
+FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModel(QObject *parent, FolderTreeWidgetProxyModelOptions option)
+    : Akonadi::EntityRightsFilterModel(parent)
+    , d(new Private)
 {
     setDynamicSortFilter(true);
     setFilterCaseSensitivity(Qt::CaseInsensitive);
@@ -169,9 +166,9 @@ bool FolderTreeWidgetProxyModel::acceptRow(int sourceRow, const QModelIndex &sou
 {
     const QModelIndex modelIndex = sourceModel()->index(sourceRow, 0, sourceParent);
 
-    const Akonadi::Collection collection =
-        sourceModel()->data(
-            modelIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+    const Akonadi::Collection collection
+        = sourceModel()->data(
+        modelIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
     if (!d->checker.isWantedCollection(collection)) {
         return false;
     }
@@ -183,8 +180,8 @@ bool FolderTreeWidgetProxyModel::acceptRow(int sourceRow, const QModelIndex &sou
     }
 
     if (d->hideSpecificFolder) {
-        const QSharedPointer<FolderSettings> col =
-            FolderSettings::forCollection(collection, false);
+        const QSharedPointer<FolderSettings> col
+            = FolderSettings::forCollection(collection, false);
         if (col && col->hideInSelectionDialog()) {
             return false;
         }
@@ -214,14 +211,13 @@ QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) co
     if (role == Qt::TextColorRole) {
         const QModelIndex sourceIndex = mapToSource(index);
         const QModelIndex rowIndex = sourceIndex.sibling(sourceIndex.row(), 0);
-        const Akonadi::Collection collection =
-            sourceModel()->data(
-                rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const Akonadi::Collection collection
+            = sourceModel()->data(
+            rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
         if (!MailCommon::Util::isVirtualCollection(collection)) {
-
-            const Akonadi::AgentInstance instance =
-                Akonadi::AgentManager::self()->instance(collection.resource());
+            const Akonadi::AgentInstance instance
+                = Akonadi::AgentManager::self()->instance(collection.resource());
 
             if (instance.status() == Akonadi::AgentInstance::Broken) {
                 return d->brokenAccountColor;
@@ -230,13 +226,12 @@ QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) co
     } else if (role == Qt::DisplayRole) {
         const QModelIndex sourceIndex = mapToSource(index);
         const QModelIndex rowIndex = sourceIndex.sibling(sourceIndex.row(), 0);
-        const Akonadi::Collection collection =
-            sourceModel()->data(
-                rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const Akonadi::Collection collection
+            = sourceModel()->data(
+            rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         if (!MailCommon::Util::isVirtualCollection(collection)) {
-
-            const Akonadi::AgentInstance instance =
-                Akonadi::AgentManager::self()->instance(collection.resource());
+            const Akonadi::AgentInstance instance
+                = Akonadi::AgentManager::self()->instance(collection.resource());
             if (collection.parentCollection() == Akonadi::Collection::root()) {
                 if (!instance.isOnline()) {
                     return i18n("%1 (Offline)", Akonadi::EntityRightsFilterModel::data(index, role).toString());
@@ -244,7 +239,7 @@ QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) co
             }
         }
     }
-    return  Akonadi::EntityRightsFilterModel::data(index, role);
+    return Akonadi::EntityRightsFilterModel::data(index, role);
 }
 
 void FolderTreeWidgetProxyModel::updatePalette()
@@ -262,6 +257,4 @@ void FolderTreeWidgetProxyModel::addContentMimeTypeInclusionFilter(const QString
     d->checker.setWantedMimeTypes(d->includedMimeTypes.toList());
     invalidateFilter();
 }
-
 }
-

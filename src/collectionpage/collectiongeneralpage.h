@@ -26,20 +26,16 @@ class KLineEdit;
 
 class QCheckBox;
 
-template <typename T> class QSharedPointer;
-namespace PimCommon
-{
+template<typename T> class QSharedPointer;
+namespace PimCommon {
 class IncidencesForWidget;
 class ContentTypeWidget;
 }
-namespace KIdentityManagement
-{
+namespace KIdentityManagement {
 class IdentityCombo;
 }
 class QVBoxLayout;
-namespace MailCommon
-{
-
+namespace MailCommon {
 class FolderSettings;
 class MAILCOMMON_EXPORT CollectionGeneralPage : public Akonadi::CollectionPropertiesPage
 {
@@ -66,11 +62,11 @@ private:
     PimCommon::ContentTypeWidget *mContentsComboBox;
     PimCommon::IncidencesForWidget *mIncidencesForComboBox;
     QCheckBox *mSharedSeenFlagsCheckBox;
-    QCheckBox   *mNotifyOnNewMailCheckBox;
-    QCheckBox   *mKeepRepliesInSameFolderCheckBox;
-    QCheckBox   *mHideInSelectionDialogCheckBox;
-    QCheckBox   *mUseDefaultIdentityCheckBox;
-    KLineEdit   *mNameEdit;
+    QCheckBox *mNotifyOnNewMailCheckBox;
+    QCheckBox *mKeepRepliesInSameFolderCheckBox;
+    QCheckBox *mHideInSelectionDialogCheckBox;
+    QCheckBox *mUseDefaultIdentityCheckBox;
+    KLineEdit *mNameEdit;
     KIdentityManagement::IdentityCombo *mIdentityComboBox;
     QSharedPointer<MailCommon::FolderSettings> mFolderCollection;
     bool mIsLocalSystemFolder;
@@ -78,7 +74,6 @@ private:
 };
 
 AKONADI_COLLECTION_PROPERTIES_PAGE_FACTORY(CollectionGeneralPageFactory, CollectionGeneralPage)
-
 }
 
 #endif

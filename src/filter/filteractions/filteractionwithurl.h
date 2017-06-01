@@ -23,9 +23,7 @@
 #include "filteraction.h"
 #include <QToolButton>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * @short Abstract base class for filter actions with a command line as parameter.
  *
@@ -115,7 +113,6 @@ private:
 private Q_SLOTS:
     void slotHelp();
 };
-
 }
 
 #endif

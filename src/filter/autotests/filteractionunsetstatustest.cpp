@@ -22,12 +22,10 @@
 FilterActionUnsetStatusTest::FilterActionUnsetStatusTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionUnsetStatusTest::~FilterActionUnsetStatusTest()
 {
-
 }
 
 void FilterActionUnsetStatusTest::shouldHaveSieveRequires()

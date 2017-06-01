@@ -112,8 +112,8 @@ SearchRule::RequiredPart SearchPattern::requiredPart() const
 
     if (!isEmpty()) {
         reqPart = (*std::max_element(constBegin(), constEnd(),
-                                     boost::bind(&MailCommon::SearchRule::requiredPart, _1) <
-                                     boost::bind(&MailCommon::SearchRule::requiredPart, _2)))->requiredPart();
+                                     boost::bind(&MailCommon::SearchRule::requiredPart, _1)
+                                     < boost::bind(&MailCommon::SearchRule::requiredPart, _2)))->requiredPart();
     }
     return reqPart;
 }
@@ -175,11 +175,11 @@ void SearchPattern::readConfig(const KConfigGroup &config)
 
 void SearchPattern::importLegacyConfig(const KConfigGroup &config)
 {
-    SearchRule::Ptr rule =
-        SearchRule::createInstance(
-            config.readEntry("fieldA").toLatin1(),
-            config.readEntry("funcA").toLatin1().constData(),
-            config.readEntry("contentsA"));
+    SearchRule::Ptr rule
+        = SearchRule::createInstance(
+        config.readEntry("fieldA").toLatin1(),
+        config.readEntry("funcA").toLatin1().constData(),
+        config.readEntry("contentsA"));
 
     if (rule->isEmpty()) {
         // if the first rule is invalid,
@@ -193,11 +193,11 @@ void SearchPattern::importLegacyConfig(const KConfigGroup &config)
         return;
     }
 
-    rule =
-        SearchRule::createInstance(
-            config.readEntry("fieldB").toLatin1(),
-            config.readEntry("funcB").toLatin1().constData(),
-            config.readEntry("contentsB"));
+    rule
+        = SearchRule::createInstance(
+        config.readEntry("fieldB").toLatin1(),
+        config.readEntry("funcB").toLatin1().constData(),
+        config.readEntry("contentsB"));
 
     if (rule->isEmpty()) {
         return;
@@ -421,8 +421,7 @@ void SearchPattern::generateSieveScript(QStringList &requires, QString &code)
 
 // Needed for MSVC 2010, as it seems to not implicit cast for a pointer anymore
 #ifdef _MSC_VER
-namespace MailCommon
-{
+namespace MailCommon {
 uint qHash(SearchRule::Ptr sr)
 {
     return ::qHash(sr.get());

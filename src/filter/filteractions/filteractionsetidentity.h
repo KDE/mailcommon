@@ -22,14 +22,12 @@
 
 #include "filteractionwithuoid.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionSetIdentity - set identity to
 // Specify Identity to be used when replying to a message
 //=============================================================================
-class FilterActionSetIdentity: public FilterActionWithUOID
+class FilterActionSetIdentity : public FilterActionWithUOID
 {
     Q_OBJECT
 public:
@@ -44,7 +42,6 @@ public:
     void setParamWidgetValue(QWidget *parent) const Q_DECL_OVERRIDE;
     void clearParamWidget(QWidget *param) const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

@@ -22,12 +22,10 @@
 class QUrl;
 class QAbstractButton;
 
-namespace Ui
-{
+namespace Ui {
 class SelectThunderbirdFilterFilesWidget;
 }
-namespace MailCommon
-{
+namespace MailCommon {
 class SelectThunderbirdFilterFilesWidget : public QWidget
 {
     Q_OBJECT

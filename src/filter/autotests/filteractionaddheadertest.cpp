@@ -27,12 +27,10 @@
 FilterActionAddHeaderTest::FilterActionAddHeaderTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionAddHeaderTest::~FilterActionAddHeaderTest()
 {
-
 }
 
 void FilterActionAddHeaderTest::shouldCreateWidget()

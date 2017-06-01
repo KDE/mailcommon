@@ -20,9 +20,7 @@
 
 #include "filter/filterimporter/filterimporterabstract.h"
 class QFile;
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MAILCOMMON_EXPORT FilterImporterGmail : public FilterImporterAbstract
 {
 public:

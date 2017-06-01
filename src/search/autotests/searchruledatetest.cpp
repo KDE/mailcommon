@@ -23,7 +23,6 @@ Q_DECLARE_METATYPE(MailCommon::SearchRule::Function)
 SearchRuleDateTest::SearchRuleDateTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void SearchRuleDateTest::shouldHaveDefaultValue()

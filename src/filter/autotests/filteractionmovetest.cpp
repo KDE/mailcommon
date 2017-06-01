@@ -23,12 +23,10 @@
 FilterActionMoveTest::FilterActionMoveTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionMoveTest::~FilterActionMoveTest()
 {
-
 }
 
 void FilterActionMoveTest::shouldHaveSieveRequires()

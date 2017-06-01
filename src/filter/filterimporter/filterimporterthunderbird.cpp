@@ -73,9 +73,7 @@ QString FilterImporterThunderbird::defaultThunderbirdFiltersSettingsPath()
     return MailImporter::FilterThunderbird::defaultSettingsPath();
 }
 
-MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream,
-        QString line,
-        MailCommon::MailFilter *filter)
+MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter)
 {
     if (line.startsWith(QStringLiteral("name="))) {
         appendFilter(filter);
@@ -158,8 +156,7 @@ MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream
     return filter;
 }
 
-void FilterImporterThunderbird::extractConditions(const QString &line,
-        MailCommon::MailFilter *filter)
+void FilterImporterThunderbird::extractConditions(const QString &line, MailCommon::MailFilter *filter)
 {
     if (line.startsWith(QStringLiteral("AND"))) {
         filter->pattern()->setOp(SearchPattern::OpAnd);
@@ -186,8 +183,7 @@ void FilterImporterThunderbird::extractConditions(const QString &line,
     }
 }
 
-bool FilterImporterThunderbird::splitConditions(const QString &cond,
-        MailCommon::MailFilter *filter)
+bool FilterImporterThunderbird::splitConditions(const QString &cond, MailCommon::MailFilter *filter)
 {
     /*
     *    {nsMsgSearchAttrib::Subject,    "subject"},
@@ -368,9 +364,7 @@ bool FilterImporterThunderbird::splitConditions(const QString &cond,
     return true;
 }
 
-QString FilterImporterThunderbird::extractActions(const QString &line,
-        MailCommon::MailFilter *filter,
-        QString &value)
+QString FilterImporterThunderbird::extractActions(const QString &line, MailCommon::MailFilter *filter, QString &value)
 {
     /*
     { nsMsgFilterAction::MoveToFolder,            "Move to folder"},

@@ -38,17 +38,19 @@ class Q_DECL_HIDDEN FavoriteCollectionWidget::Private
 {
 public:
     Private()
-        : listMode(nullptr),
-          iconMode(nullptr)
+        : listMode(nullptr)
+        , iconMode(nullptr)
     {
     }
+
     QColor textColor;
     QAction *listMode;
     QAction *iconMode;
 };
 
 FavoriteCollectionWidget::FavoriteCollectionWidget(KXMLGUIClient *xmlGuiClient, QWidget *parent)
-    : Akonadi::EntityListView(xmlGuiClient, parent), d(new Private)
+    : Akonadi::EntityListView(xmlGuiClient, parent)
+    , d(new Private)
 {
     setFocusPolicy(Qt::NoFocus);
 
@@ -76,7 +78,6 @@ void FavoriteCollectionWidget::mousePressEvent(QMouseEvent *e)
     Akonadi::EntityListView::mousePressEvent(e);
 }
 
-
 void FavoriteCollectionWidget::updateMode()
 {
     switch (viewMode()) {
@@ -93,7 +94,7 @@ void FavoriteCollectionWidget::updateMode()
 
 void FavoriteCollectionWidget::createMenu(KActionCollection *ac)
 {
-    KActionMenu *iconSizeMenu  = new KActionMenu(i18n("Icon size"), this);
+    KActionMenu *iconSizeMenu = new KActionMenu(i18n("Icon size"), this);
     ac->addAction(QStringLiteral("favorite_icon_size"), iconSizeMenu);
 
     static const int icon_sizes[] = { 16, 22, 32 /*, 48, 64, 128 */ };
@@ -121,7 +122,7 @@ void FavoriteCollectionWidget::createMenu(KActionCollection *ac)
     modeFavoriteMenu->addAction(d->listMode);
     d->listMode->setCheckable(true);
     grp->addAction(d->listMode);
-    if (viewMode() ==  ListMode) {
+    if (viewMode() == ListMode) {
         d->listMode->setChecked(true);
     }
     d->listMode->setData(QVariant(MailCommon::MailCommonSettings::EnumFavoriteCollectionViewMode::ListMode));
@@ -243,4 +244,3 @@ void FavoriteCollectionWidget::paintEvent(QPaintEvent *event)
         Akonadi::EntityListView::paintEvent(event);
     }
 }
-

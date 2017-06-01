@@ -58,13 +58,11 @@ QString FilterImporterEvolution::defaultFiltersSettingsPath()
     return QStringLiteral("%1/.config/evolution/mail/filters.xml").arg(QDir::homePath());
 }
 
-void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter,
-        MailCommon::MailFilter *filter,
-        parseType type)
+void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter, MailCommon::MailFilter *filter, parseType type)
 {
     for (QDomElement partFilter = ruleFilter.firstChildElement();
-            !partFilter.isNull();
-            partFilter = partFilter.nextSiblingElement()) {
+         !partFilter.isNull();
+         partFilter = partFilter.nextSiblingElement()) {
         const QString nexttag = partFilter.tagName();
         if (nexttag == QLatin1String("part")) {
             if (partFilter.hasAttribute(QStringLiteral("name"))) {
@@ -134,16 +132,14 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter,
                     SearchRule::Function functionName = SearchRule::FuncNone;
 
                     for (QDomElement valueFilter = partFilter.firstChildElement();
-                            !valueFilter.isNull();
-                            valueFilter = valueFilter.nextSiblingElement()) {
+                         !valueFilter.isNull();
+                         valueFilter = valueFilter.nextSiblingElement()) {
                         const QString valueTag = valueFilter.tagName();
 
                         if (valueTag == QLatin1String("value")) {
-
                             if (valueFilter.hasAttribute(QStringLiteral("name"))) {
                                 const QString name = valueFilter.attribute(QStringLiteral("name"));
                                 if (name == QLatin1String("flag")) {
-
                                     const QString flag = valueFilter.attribute(QStringLiteral("value"));
                                     qCDebug(MAILCOMMON_LOG) << " flag :" << flag;
                                     if (flag == QLatin1String("Seen")) {
@@ -190,7 +186,6 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter,
                                 } else {
                                     qCDebug(MAILCOMMON_LOG) << " type not implemented " << name;
                                 }
-
                             }
                             if (valueFilter.hasAttribute(QStringLiteral("value"))) {
                                 const QString value = valueFilter.attribute(QStringLiteral("value"));
@@ -233,7 +228,6 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter,
                     }
                     SearchRule::Ptr rule = SearchRule::createInstance(fieldName, functionName, contents);
                     filter->pattern()->append(rule);
-
                 } else if (type == FilterImporterEvolution::ActionType) {
                     QString actionName;
                     if (name == QLatin1String("stop")) {
@@ -271,8 +265,8 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter,
                     }
                     QString value;
                     for (QDomElement valueFilter = partFilter.firstChildElement();
-                            !valueFilter.isNull();
-                            valueFilter = valueFilter.nextSiblingElement()) {
+                         !valueFilter.isNull();
+                         valueFilter = valueFilter.nextSiblingElement()) {
                         const QString valueTag = valueFilter.tagName();
                         if (valueTag == QLatin1String("value")) {
                             if (valueFilter.hasAttribute(QStringLiteral("name"))) {
@@ -299,7 +293,6 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter,
                                 } else if (name == QLatin1String("address")) {
                                     //TODO
                                 }
-
                             }
                             if (valueFilter.hasAttribute(QStringLiteral("value"))) {
                                 const QString name = valueFilter.attribute(QStringLiteral("value"));
@@ -336,7 +329,6 @@ void FilterImporterEvolution::parseFilters(const QDomElement &e)
         } else {
             qCDebug(MAILCOMMON_LOG) << " grouping not implemented: " << attr;
         }
-
     }
 
     if (e.hasAttribute(QStringLiteral("source"))) {
@@ -351,8 +343,8 @@ void FilterImporterEvolution::parseFilters(const QDomElement &e)
         }
     }
     for (QDomElement ruleFilter = e.firstChildElement();
-            !ruleFilter.isNull();
-            ruleFilter = ruleFilter.nextSiblingElement()) {
+         !ruleFilter.isNull();
+         ruleFilter = ruleFilter.nextSiblingElement()) {
         const QString nexttag = ruleFilter.tagName();
         if (nexttag == QLatin1String("title")) {
             filter->pattern()->setName(ruleFilter.text());

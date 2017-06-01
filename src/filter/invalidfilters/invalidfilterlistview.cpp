@@ -25,7 +25,7 @@ InvalidFilterListView::InvalidFilterListView(QWidget *parent)
 {
     InvalidFilterListItemDelegate *invalidFilterDelegate = new InvalidFilterListItemDelegate(this, this);
 
-    InvalidFilterListModel *invalidFilterListModel  = new InvalidFilterListModel(this);
+    InvalidFilterListModel *invalidFilterListModel = new InvalidFilterListModel(this);
     connect(invalidFilterDelegate, &InvalidFilterListItemDelegate::showDetails, this, &InvalidFilterListView::showDetails);
     //connect(this, SIGNAL(pressed(QModelIndex)), SIGNAL(hideInformationWidget()));
     setModel(invalidFilterListModel);
@@ -34,7 +34,6 @@ InvalidFilterListView::InvalidFilterListView(QWidget *parent)
 
 InvalidFilterListView::~InvalidFilterListView()
 {
-
 }
 
 void InvalidFilterListView::setInvalidFilters(const QVector<MailCommon::InvalidFilterInfo> &lst)

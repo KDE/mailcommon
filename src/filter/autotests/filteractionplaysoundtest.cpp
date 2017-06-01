@@ -23,12 +23,10 @@
 FilterActionPlaySoundTest::FilterActionPlaySoundTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionPlaySoundTest::~FilterActionPlaySoundTest()
 {
-
 }
 
 void FilterActionPlaySoundTest::shouldBeValid()
@@ -60,7 +58,6 @@ void FilterActionPlaySoundTest::shouldSieveRequres()
 {
     MailCommon::FilterActionPlaySound w;
     QCOMPARE(w.sieveRequires(), QStringList());
-
 }
 
 QTEST_MAIN(FilterActionPlaySoundTest)

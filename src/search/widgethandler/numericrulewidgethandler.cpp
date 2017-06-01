@@ -31,15 +31,15 @@ static const struct {
     SearchRule::Function id;
     const char *displayName;
 } NumericFunctions[] = {
-    { SearchRule::FuncEquals,           I18N_NOOP("is equal to")         },
-    { SearchRule::FuncNotEqual,         I18N_NOOP("is not equal to")      },
-    { SearchRule::FuncIsGreater,        I18N_NOOP("is greater than")     },
-    { SearchRule::FuncIsLessOrEqual,    I18N_NOOP("is less than or equal to") },
-    { SearchRule::FuncIsLess,           I18N_NOOP("is less than")        },
+    { SearchRule::FuncEquals, I18N_NOOP("is equal to")         },
+    { SearchRule::FuncNotEqual, I18N_NOOP("is not equal to")      },
+    { SearchRule::FuncIsGreater, I18N_NOOP("is greater than")     },
+    { SearchRule::FuncIsLessOrEqual, I18N_NOOP("is less than or equal to") },
+    { SearchRule::FuncIsLess, I18N_NOOP("is less than")        },
     { SearchRule::FuncIsGreaterOrEqual, I18N_NOOP("is greater than or equal to") }
 };
-static const int NumericFunctionCount =
-    sizeof(NumericFunctions) / sizeof(*NumericFunctions);
+static const int NumericFunctionCount
+    = sizeof(NumericFunctions) / sizeof(*NumericFunctions);
 
 //---------------------------------------------------------------------------
 
@@ -63,9 +63,7 @@ QWidget *NumericRuleWidgetHandler::createFunctionWidget(
 
 //---------------------------------------------------------------------------
 
-QWidget *NumericRuleWidgetHandler::createValueWidget(int number,
-        QStackedWidget *valueStack,
-        const QObject *receiver) const
+QWidget *NumericRuleWidgetHandler::createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const
 {
     if (number != 0) {
         return nullptr;
@@ -83,8 +81,8 @@ QWidget *NumericRuleWidgetHandler::createValueWidget(int number,
 SearchRule::Function NumericRuleWidgetHandler::currentFunction(
     const QStackedWidget *functionStack) const
 {
-    const PimCommon::MinimumComboBox *funcCombo =
-        functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("numericRuleFuncCombo"));
+    const PimCommon::MinimumComboBox *funcCombo
+        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("numericRuleFuncCombo"));
 
     if (funcCombo && funcCombo->currentIndex() >= 0) {
         return NumericFunctions[funcCombo->currentIndex()].id;
@@ -95,8 +93,7 @@ SearchRule::Function NumericRuleWidgetHandler::currentFunction(
 
 //---------------------------------------------------------------------------
 
-SearchRule::Function NumericRuleWidgetHandler::function(const QByteArray &field,
-        const QStackedWidget *functionStack) const
+SearchRule::Function NumericRuleWidgetHandler::function(const QByteArray &field, const QStackedWidget *functionStack) const
 {
     if (!handlesField(field)) {
         return SearchRule::FuncNone;
@@ -120,9 +117,7 @@ QString NumericRuleWidgetHandler::currentValue(const QStackedWidget *valueStack)
 
 //---------------------------------------------------------------------------
 
-QString NumericRuleWidgetHandler::value(const QByteArray &field,
-                                        const QStackedWidget *,
-                                        const QStackedWidget *valueStack) const
+QString NumericRuleWidgetHandler::value(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
         return QString();
@@ -133,9 +128,7 @@ QString NumericRuleWidgetHandler::value(const QByteArray &field,
 
 //---------------------------------------------------------------------------
 
-QString NumericRuleWidgetHandler::prettyValue(const QByteArray &field,
-        const QStackedWidget *,
-        const QStackedWidget *valueStack) const
+QString NumericRuleWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
         return QString();
@@ -153,12 +146,11 @@ bool NumericRuleWidgetHandler::handlesField(const QByteArray &field) const
 
 //---------------------------------------------------------------------------
 
-void NumericRuleWidgetHandler::reset(QStackedWidget *functionStack,
-                                     QStackedWidget *valueStack) const
+void NumericRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     // reset the function combo box
-    PimCommon::MinimumComboBox *funcCombo =
-        functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("numericRuleFuncCombo"));
+    PimCommon::MinimumComboBox *funcCombo
+        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("numericRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -188,9 +180,7 @@ void initNumInput(KPluralHandlingSpinBox *numInput, const QByteArray &field)
 
 //---------------------------------------------------------------------------
 
-bool NumericRuleWidgetHandler::setRule(QStackedWidget *functionStack,
-                                       QStackedWidget *valueStack,
-                                       const SearchRule::Ptr rule, bool /*isBalooSearch*/) const
+bool NumericRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const SearchRule::Ptr rule, bool /*isBalooSearch*/) const
 {
     if (!rule || !handlesField(rule->field())) {
         reset(functionStack, valueStack);
@@ -206,8 +196,8 @@ bool NumericRuleWidgetHandler::setRule(QStackedWidget *functionStack,
         }
     }
 
-    PimCommon::MinimumComboBox *funcCombo =
-        functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("numericRuleFuncCombo"));
+    PimCommon::MinimumComboBox *funcCombo
+        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("numericRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -241,9 +231,7 @@ bool NumericRuleWidgetHandler::setRule(QStackedWidget *functionStack,
 
 //---------------------------------------------------------------------------
 
-bool NumericRuleWidgetHandler::update(const QByteArray &field,
-                                      QStackedWidget *functionStack,
-                                      QStackedWidget *valueStack) const
+bool NumericRuleWidgetHandler::update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
         return false;

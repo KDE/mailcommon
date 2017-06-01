@@ -25,9 +25,7 @@
 #include <Akonadi/KMime/SpecialMailCollections>
 #include <AgentManager>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class Q_DECL_HIDDEN EntityCollectionOrderProxyModel::EntityCollectionOrderProxyModelPrivate
 {
 public:
@@ -85,7 +83,8 @@ public:
 };
 
 EntityCollectionOrderProxyModel::EntityCollectionOrderProxyModel(QObject *parent)
-    : EntityOrderProxyModel(parent), d(new EntityCollectionOrderProxyModelPrivate())
+    : EntityOrderProxyModel(parent)
+    , d(new EntityCollectionOrderProxyModelPrivate())
 {
     setSortCaseSensitivity(Qt::CaseInsensitive);
     connect(Akonadi::SpecialMailCollections::self(), &Akonadi::SpecialMailCollections::defaultCollectionsChanged, this, &EntityCollectionOrderProxyModel::slotSpecialCollectionsChanged);
@@ -120,15 +119,13 @@ void EntityCollectionOrderProxyModel::clearRanks()
     invalidate();
 }
 
-bool EntityCollectionOrderProxyModel::lessThan(const QModelIndex &left,
-        const QModelIndex &right) const
+bool EntityCollectionOrderProxyModel::lessThan(const QModelIndex &left, const QModelIndex &right) const
 {
     if (!d->manualSortingActive) {
-
-        Akonadi::Collection leftData =
-            left.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
-        Akonadi::Collection rightData =
-            right.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        Akonadi::Collection leftData
+            = left.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        Akonadi::Collection rightData
+            = right.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
         const int rankLeft = d->collectionRank(leftData);
         const int rankRight = d->collectionRank(rightData);
@@ -159,6 +156,4 @@ bool EntityCollectionOrderProxyModel::isManualSortingActive() const
 {
     return d->manualSortingActive;
 }
-
 }
-

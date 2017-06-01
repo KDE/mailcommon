@@ -33,7 +33,6 @@ FilterActionMissingSoundUrlDialogTest::FilterActionMissingSoundUrlDialogTest(QOb
 
 FilterActionMissingSoundUrlDialogTest::~FilterActionMissingSoundUrlDialogTest()
 {
-
 }
 
 void FilterActionMissingSoundUrlDialogTest::shouldHaveDefaultValue()

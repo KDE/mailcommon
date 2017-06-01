@@ -22,12 +22,10 @@
 FilterActionReplyToTest::FilterActionReplyToTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionReplyToTest::~FilterActionReplyToTest()
 {
-
 }
 
 void FilterActionReplyToTest::shouldHaveDefaultValue()
@@ -75,7 +73,6 @@ void FilterActionReplyToTest::shouldHadReplyToHeader()
     QCOMPARE(filter.process(context, false), MailCommon::FilterAction::GoOn);
     QCOMPARE(context.needsPayloadStore(), true);
     QCOMPARE(msgPtr->encodedContent(), output);
-
 }
 
 void FilterActionReplyToTest::shouldReplaceReplyToHeader()

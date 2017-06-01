@@ -22,12 +22,10 @@
 MailFilterTest::MailFilterTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 MailFilterTest::~MailFilterTest()
 {
-
 }
 
 void MailFilterTest::shouldHaveDefaultValue()
@@ -45,7 +43,6 @@ void MailFilterTest::shouldHaveDefaultValue()
     QCOMPARE(mailfilter.applicability(), MailCommon::MailFilter::All);
     QVERIFY(mailfilter.actions()->isEmpty());
     QVERIFY(mailfilter.icon().isEmpty());
-
 }
 
 void MailFilterTest::shouldApplySettings()

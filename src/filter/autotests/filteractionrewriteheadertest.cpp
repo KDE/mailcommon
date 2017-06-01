@@ -25,12 +25,10 @@
 FilterActionRewriteHeaderTest::FilterActionRewriteHeaderTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionRewriteHeaderTest::~FilterActionRewriteHeaderTest()
 {
-
 }
 
 void FilterActionRewriteHeaderTest::shouldHaveDefaultValue()

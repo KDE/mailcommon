@@ -21,7 +21,6 @@
 SearchRuleNumericalTest::SearchRuleNumericalTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void SearchRuleNumericalTest::shouldHaveDefaultValue()

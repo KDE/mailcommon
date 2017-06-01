@@ -34,7 +34,7 @@ FilterActionUnsetStatus::FilterActionUnsetStatus(QObject *parent)
 bool FilterActionUnsetStatus::checkIsValid(int &index) const
 {
     index = mParameterList.indexOf(mParameter);
-    return (index < 1);
+    return index < 1;
 }
 
 bool FilterActionUnsetStatus::isEmpty() const
@@ -107,4 +107,3 @@ QStringList FilterActionUnsetStatus::sieveRequires() const
 {
     return QStringList() << QStringLiteral("imap4flags");
 }
-

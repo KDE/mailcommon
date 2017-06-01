@@ -21,19 +21,16 @@
 #define FILTERACTIONMISSINGTRANSPORTDIALOG_H
 
 #include <QDialog>
-namespace MailTransport
-{
+namespace MailTransport {
 class TransportComboBox;
 }
 
-namespace MailCommon
-{
+namespace MailCommon {
 class FilterActionMissingTransportDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingTransportDialog(const QString &filtername,
-            QWidget *parent = nullptr);
+    explicit FilterActionMissingTransportDialog(const QString &filtername, QWidget *parent = nullptr);
     ~FilterActionMissingTransportDialog();
     int selectedTransport() const;
 

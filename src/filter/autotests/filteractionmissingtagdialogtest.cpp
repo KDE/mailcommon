@@ -28,12 +28,10 @@
 FilterActionMissingTagDialogTest::FilterActionMissingTagDialogTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionMissingTagDialogTest::~FilterActionMissingTagDialogTest()
 {
-
 }
 
 void FilterActionMissingTagDialogTest::shouldHaveDefaultValue()

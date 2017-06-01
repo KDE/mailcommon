@@ -27,9 +27,7 @@
 
 #include <attribute.h>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * @short An Attribute that keeps track of the MDN state of a mail message.
  *
@@ -115,7 +113,6 @@ private:
     Private *const d;
     //@endcond
 };
-
 }
 
 #endif

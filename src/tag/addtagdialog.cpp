@@ -19,7 +19,6 @@
 #include "tag/tagwidget.h"
 #include "mailcommon_debug.h"
 
-
 #include <KLocalizedString>
 #include <KLineEdit>
 #include <KMessageBox>
@@ -35,10 +34,9 @@ class MailCommon::AddTagDialogPrivate
 {
 public:
     AddTagDialogPrivate()
-        : mTagWidget(nullptr),
-          mOkButton(nullptr)
+        : mTagWidget(nullptr)
+        , mOkButton(nullptr)
     {
-
     }
 
     QString mLabel;
@@ -50,8 +48,8 @@ public:
 };
 
 AddTagDialog::AddTagDialog(const QList<KActionCollection *> &actions, QWidget *parent)
-    : QDialog(parent),
-      d(new MailCommon::AddTagDialogPrivate)
+    : QDialog(parent)
+    , d(new MailCommon::AddTagDialogPrivate)
 {
     setModal(true);
     setWindowTitle(i18n("Add Tag"));
@@ -131,4 +129,3 @@ Akonadi::Tag AddTagDialog::tag() const
 {
     return d->mTag;
 }
-

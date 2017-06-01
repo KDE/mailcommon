@@ -22,8 +22,7 @@
 #include "invalidfilterinfo.h"
 #include "mailcommon_export.h"
 
-namespace MailCommon
-{
+namespace MailCommon {
 class InvalidFilterListView;
 class MAILCOMMON_EXPORT InvalidFilterWidget : public QWidget
 {

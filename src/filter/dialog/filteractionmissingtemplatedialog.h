@@ -23,15 +23,12 @@
 #include <QDialog>
 
 class KComboBox;
-namespace MailCommon
-{
+namespace MailCommon {
 class FilterActionMissingTemplateDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingTemplateDialog(const QStringList &templateList,
-            const QString &filtername,
-            QWidget *parent = nullptr);
+    explicit FilterActionMissingTemplateDialog(const QStringList &templateList, const QString &filtername, QWidget *parent = nullptr);
     ~FilterActionMissingTemplateDialog();
     QString selectedTemplate() const;
 

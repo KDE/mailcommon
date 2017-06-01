@@ -114,7 +114,6 @@ QString FilterImporterClawsMails::extractConditions(const QString &line, MailFil
     if (line.startsWith(QStringLiteral("subject"))) {
         fieldName = "subject";
     } else if (line.startsWith(QStringLiteral("age_lower"))) {
-
     }
     filter->pattern()->setOp(SearchPattern::OpAnd);
     //TODO
@@ -129,7 +128,6 @@ QString FilterImporterClawsMails::extractString(const QString &tmp, int &pos)
     for (; i < tmp.length(); ++i) {
         const QChar currentChar = tmp.at(i);
         if (i == 0 && (currentChar.isSpace() || currentChar == QLatin1Char('"'))) {
-
         } else {
             if (currentChar != QLatin1Char('"')) {
                 if (currentChar != QLatin1Char('\\')) {

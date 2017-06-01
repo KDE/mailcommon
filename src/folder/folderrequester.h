@@ -41,9 +41,7 @@ class QKeyEvent;
 
 class KJob;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * A widget that contains a KLineEdit which shows the current folder
  * and a button that fires a FolderSelectionDialog
@@ -58,7 +56,7 @@ namespace MailCommon
  * - Allow to pass in an existing ETM, to remove the Kernel dependency
  */
 class FolderRequesterPrivate;
-class MAILCOMMON_EXPORT FolderRequester: public QWidget
+class MAILCOMMON_EXPORT FolderRequester : public QWidget
 {
     Q_OBJECT
 
@@ -122,7 +120,6 @@ protected:
 protected:
     FolderRequesterPrivate *const d;
 };
-
 }
 
 #endif

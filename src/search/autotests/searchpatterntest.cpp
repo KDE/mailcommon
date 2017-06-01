@@ -22,12 +22,10 @@
 SearchPatternTest::SearchPatternTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 SearchPatternTest::~SearchPatternTest()
 {
-
 }
 
 void SearchPatternTest::shouldRuleRequirePart_data()

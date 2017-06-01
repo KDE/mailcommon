@@ -35,9 +35,7 @@ class QAbstractButton;
 class QRadioButton;
 class QStackedWidget;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class SearchPatternEdit;
 
 /**
@@ -98,9 +96,7 @@ public:
      * QGroupBox, as usual.
      */
     explicit SearchPatternEdit(
-        QWidget *parent = nullptr,
-        SearchPatternEditOptions options = (SearchPatternEditOptions)(None),
-        SearchModeType modeType = StandardMode);
+        QWidget *parent = nullptr, SearchPatternEditOptions options = (SearchPatternEditOptions)(None), SearchModeType modeType = StandardMode);
 
     ~SearchPatternEdit();
 
@@ -285,8 +281,7 @@ class SearchRuleWidgetLister : public KPIM::KWidgetLister
     friend class SearchPatternEdit;
 
 public:
-    explicit SearchRuleWidgetLister(QWidget *parent = nullptr,
-                                    SearchPatternEdit::SearchPatternEditOptions opt = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None),
+    explicit SearchRuleWidgetLister(QWidget *parent = nullptr, SearchPatternEdit::SearchPatternEditOptions opt = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None),
                                     SearchPatternEdit::SearchModeType modeType = SearchPatternEdit::StandardMode);
 
     virtual ~SearchRuleWidgetLister();
@@ -312,7 +307,6 @@ private:
     SearchPatternEdit::SearchPatternEditOptions mOptions;
     SearchPatternEdit::SearchModeType mTypeMode;
 };
-
 }
 
 #endif

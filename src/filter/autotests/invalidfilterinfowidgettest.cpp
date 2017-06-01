@@ -22,12 +22,10 @@
 InvalidFilterInfoWidgetTest::InvalidFilterInfoWidgetTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 InvalidFilterInfoWidgetTest::~InvalidFilterInfoWidgetTest()
 {
-
 }
 
 void InvalidFilterInfoWidgetTest::shouldHaveDefaultValue()

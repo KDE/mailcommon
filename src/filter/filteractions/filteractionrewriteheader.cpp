@@ -51,7 +51,7 @@ FilterActionRewriteHeader::FilterActionRewriteHeader(QObject *parent)
 
 bool FilterActionRewriteHeader::isEmpty() const
 {
-    return (mParameter.isEmpty() || mRegExp.isEmpty());
+    return mParameter.isEmpty() || mRegExp.isEmpty();
 }
 
 QString FilterActionRewriteHeader::informationAboutNotValidAction() const
@@ -248,4 +248,3 @@ void FilterActionRewriteHeader::argsFromString(const QString &argsStr)
 
     mParameter = mParameterList.at(index);
 }
-

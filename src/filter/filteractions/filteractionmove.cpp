@@ -77,4 +77,3 @@ QString FilterActionMove::informationAboutNotValidAction() const
 {
     return i18n("Folder destination was not defined.");
 }
-

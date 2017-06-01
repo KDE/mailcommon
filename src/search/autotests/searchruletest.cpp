@@ -23,8 +23,7 @@
 class TestSearchRule : public MailCommon::SearchRule
 {
 public:
-    TestSearchRule(const QByteArray &field = QByteArray(), Function function = FuncContains,
-                   const QString &contents = QString())
+    TestSearchRule(const QByteArray &field = QByteArray(), Function function = FuncContains, const QString &contents = QString())
         : MailCommon::SearchRule(field, function, contents)
     {
     }

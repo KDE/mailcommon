@@ -26,9 +26,7 @@ using MailCommon::FilterLog;
 #include <KLocalizedString>
 using namespace MailCommon;
 
-SearchRuleDate::SearchRuleDate(const QByteArray &field,
-                               Function func,
-                               const QString &contents)
+SearchRuleDate::SearchRuleDate(const QByteArray &field, Function func, const QString &contents)
     : SearchRule(field, func, contents)
 {
 }
@@ -63,27 +61,26 @@ bool SearchRuleDate::matches(const Akonadi::Item &item) const
     return rc;
 }
 
-bool SearchRuleDate::matchesInternal(const QDate &dateValue,
-                                     const QDate &msgDate) const
+bool SearchRuleDate::matchesInternal(const QDate &dateValue, const QDate &msgDate) const
 {
     switch (function()) {
     case SearchRule::FuncEquals:
-        return (dateValue == msgDate);
+        return dateValue == msgDate;
 
     case SearchRule::FuncNotEqual:
-        return (dateValue != msgDate);
+        return dateValue != msgDate;
 
     case FuncIsGreater:
-        return (msgDate > dateValue);
+        return msgDate > dateValue;
 
     case FuncIsLessOrEqual:
-        return (msgDate <= dateValue);
+        return msgDate <= dateValue;
 
     case FuncIsLess:
-        return (msgDate < dateValue);
+        return msgDate < dateValue;
 
     case FuncIsGreaterOrEqual:
-        return (msgDate >= dateValue);
+        return msgDate >= dateValue;
 
     default:
         ;
@@ -106,4 +103,3 @@ void SearchRuleDate::addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIs
     term.setIsNegated(isNegated());
     groupTerm.addSubTerm(term);
 }
-

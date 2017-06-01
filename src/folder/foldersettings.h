@@ -31,9 +31,7 @@ using MessageCore::MailingList;
 #include <QKeySequence>
 #include <KIO/Job>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MAILCOMMON_EXPORT FolderSettings : public QObject
 {
     Q_OBJECT
@@ -127,8 +125,8 @@ private:
     Akonadi::Collection mCollection;
 
     /** Mailing list attributes */
-    bool                mMailingListEnabled;
-    MailingList         mMailingList;
+    bool mMailingListEnabled;
+    MailingList mMailingList;
 
     bool mUseDefaultIdentity;
     uint mIdentity;
@@ -144,7 +142,6 @@ private:
     QKeySequence mShortcut;
     bool mWriteConfig;
 };
-
 }
 
 #endif

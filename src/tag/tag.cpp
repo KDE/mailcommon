@@ -116,7 +116,7 @@ bool Tag::compare(const Tag::Ptr &tag1, const Tag::Ptr &tag2)
     if (tag1->priority < tag2->priority) {
         return true;
     } else if (tag1->priority == tag2->priority) {
-        return (tag1->tagName < tag2->tagName);
+        return tag1->tagName < tag2->tagName;
     } else {
         return false;
     }
@@ -124,7 +124,7 @@ bool Tag::compare(const Tag::Ptr &tag1, const Tag::Ptr &tag2)
 
 bool Tag::compareName(const Tag::Ptr &tag1, const Tag::Ptr &tag2)
 {
-    return (tag1->tagName < tag2->tagName);
+    return tag1->tagName < tag2->tagName;
 }
 
 bool Tag::operator==(const Tag &other) const
@@ -134,15 +134,15 @@ bool Tag::operator==(const Tag &other) const
         return id() == other.id();
     }
 #endif
-    return tagName == other.tagName &&
-           textColor == other.textColor &&
-           backgroundColor == other.backgroundColor &&
-           isBold == other.isBold &&
-           isItalic == other.isItalic &&
-           iconName == other.iconName &&
-           inToolbar == other.inToolbar &&
-           shortcut.toString() == other.shortcut.toString() &&
-           priority == other.priority;
+    return tagName == other.tagName
+           && textColor == other.textColor
+           && backgroundColor == other.backgroundColor
+           && isBold == other.isBold
+           && isItalic == other.isItalic
+           && iconName == other.iconName
+           && inToolbar == other.inToolbar
+           && shortcut.toString() == other.shortcut.toString()
+           && priority == other.priority;
 }
 
 bool Tag::operator!=(const Tag &other) const
@@ -164,4 +164,3 @@ Akonadi::Tag Tag::tag() const
 {
     return mTag;
 }
-

@@ -26,13 +26,13 @@
 using namespace MailCommon;
 
 ExpireCollectionAttribute::ExpireCollectionAttribute()
-    : mExpireMessages(false),
-      mUnreadExpireAge(28),
-      mReadExpireAge(14),
-      mUnreadExpireUnits(ExpireNever),
-      mReadExpireUnits(ExpireNever),
-      mExpireAction(ExpireDelete),
-      mExpireToFolderId(-1)
+    : mExpireMessages(false)
+    , mUnreadExpireAge(28)
+    , mReadExpireAge(14)
+    , mUnreadExpireUnits(ExpireNever)
+    , mReadExpireUnits(ExpireNever)
+    , mExpireAction(ExpireDelete)
+    , mExpireToFolderId(-1)
 {
 }
 
@@ -135,17 +135,16 @@ ExpireCollectionAttribute::ExpireUnits ExpireCollectionAttribute::readExpireUnit
 
 bool ExpireCollectionAttribute::operator==(const ExpireCollectionAttribute &other) const
 {
-    return (mExpireMessages == other.isAutoExpire()) &&
-           (mUnreadExpireAge == other.unreadExpireAge()) &&
-           (mReadExpireAge == other.readExpireAge()) &&
-           (mUnreadExpireUnits == other.unreadExpireUnits()) &&
-           (mReadExpireUnits == other.readExpireUnits()) &&
-           (mExpireAction == other.expireAction()) &&
-           (mExpireToFolderId == other.expireToFolderId());
+    return (mExpireMessages == other.isAutoExpire())
+           && (mUnreadExpireAge == other.unreadExpireAge())
+           && (mReadExpireAge == other.readExpireAge())
+           && (mUnreadExpireUnits == other.unreadExpireUnits())
+           && (mReadExpireUnits == other.readExpireUnits())
+           && (mExpireAction == other.expireAction())
+           && (mExpireToFolderId == other.expireToFolderId());
 }
 
-int ExpireCollectionAttribute::daysToExpire(int number,
-        ExpireCollectionAttribute::ExpireUnits units)
+int ExpireCollectionAttribute::daysToExpire(int number, ExpireCollectionAttribute::ExpireUnits units)
 {
     switch (units) {
     case ExpireCollectionAttribute::ExpireDays: // Days
@@ -200,4 +199,3 @@ void ExpireCollectionAttribute::deserialize(const QByteArray &data)
     s >> mUnreadExpireAge;
     s >> mExpireMessages;
 }
-

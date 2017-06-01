@@ -24,9 +24,9 @@
 #include <KLocalizedString>
 using namespace MailCommon;
 
-SelectThunderbirdFilterFilesWidget::SelectThunderbirdFilterFilesWidget(const QString &defaultSettingPath, QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::SelectThunderbirdFilterFilesWidget)
+SelectThunderbirdFilterFilesWidget::SelectThunderbirdFilterFilesWidget(const QString &defaultSettingPath, QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::SelectThunderbirdFilterFilesWidget)
 {
     ui->setupUi(this);
     connect(ui->buttonGroup, static_cast<void (QButtonGroup::*)(QAbstractButton *)>(&QButtonGroup::buttonClicked), this, &SelectThunderbirdFilterFilesWidget::slotButtonClicked);
@@ -127,4 +127,3 @@ void SelectThunderbirdFilterFilesWidget::setStartDir(const QUrl &url)
     ui->fileUrl->setFilter(QStringLiteral("*.dat"));
     ui->fileUrl->setStartDir(url);
 }
-

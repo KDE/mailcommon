@@ -63,7 +63,6 @@ RedirectWidget::RedirectWidget(QWidget *parent)
 
 RedirectWidget::~RedirectWidget()
 {
-
 }
 
 QString RedirectWidget::resend()

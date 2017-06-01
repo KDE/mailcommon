@@ -41,7 +41,8 @@ using namespace MailCommon;
 struct InstanceStruct {
     QString name;
     QIcon icon;
-    bool isValid() const {
+    bool isValid() const
+    {
         return !name.isEmpty();
     }
 };
@@ -50,13 +51,13 @@ class MailCommon::AccountConfigOrderDialogPrivate
 {
 public:
     AccountConfigOrderDialogPrivate()
-        : mListAccount(nullptr),
-          mUpButton(nullptr),
-          mDownButton(nullptr),
-          mEnableAccountOrder(nullptr)
+        : mListAccount(nullptr)
+        , mUpButton(nullptr)
+        , mDownButton(nullptr)
+        , mEnableAccountOrder(nullptr)
     {
-
     }
+
     QListWidget *mListAccount;
     QPushButton *mUpButton;
     QPushButton *mDownButton;
@@ -64,8 +65,8 @@ public:
 };
 
 AccountConfigOrderDialog::AccountConfigOrderDialog(QWidget *parent)
-    : QDialog(parent),
-      d(new MailCommon::AccountConfigOrderDialogPrivate)
+    : QDialog(parent)
+    , d(new MailCommon::AccountConfigOrderDialogPrivate)
 {
     setWindowTitle(i18n("Edit Accounts Order"));
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
@@ -155,7 +156,7 @@ void AccountConfigOrderDialog::slotMoveUp()
     QListWidgetItem *item = d->mListAccount->takeItem(pos);
     // now selected item is at idx(idx-1), so
     // insert the other item at idx, ie. above(below).
-    d->mListAccount->insertItem(pos - 1,  item);
+    d->mListAccount->insertItem(pos - 1, item);
     d->mListAccount->blockSignals(false);
     d->mListAccount->setCurrentRow(pos - 1);
 }
@@ -193,9 +194,9 @@ void AccountConfigOrderDialog::init()
     for (const Akonadi::AgentInstance &instance : lstInstances) {
         const QStringList capabilities(instance.type().capabilities());
         if (instance.type().mimeTypes().contains(KMime::Message::mimeType())) {
-            if (capabilities.contains(QStringLiteral("Resource")) &&
-                    !capabilities.contains(QStringLiteral("Virtual")) &&
-                    !capabilities.contains(QStringLiteral("MailTransport"))) {
+            if (capabilities.contains(QStringLiteral("Resource"))
+                && !capabilities.contains(QStringLiteral("Virtual"))
+                && !capabilities.contains(QStringLiteral("MailTransport"))) {
                 const QString identifier = instance.identifier();
                 if (!identifier.contains(POP3_RESOURCE_IDENTIFIER)) {
                     instanceList << instance.identifier();
@@ -272,4 +273,3 @@ void AccountConfigOrderDialog::writeConfig()
     accountConfigDialog.writeEntry("Size", size());
     accountConfigDialog.sync();
 }
-

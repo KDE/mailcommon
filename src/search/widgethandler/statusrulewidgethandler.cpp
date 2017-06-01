@@ -29,11 +29,11 @@ static const struct {
     SearchRule::Function id;
     const char *displayName;
 } StatusFunctions[] = {
-    { SearchRule::FuncContains,    I18N_NOOP("is")    },
+    { SearchRule::FuncContains, I18N_NOOP("is")    },
     { SearchRule::FuncContainsNot, I18N_NOOP("is not") }
 };
-static const int StatusFunctionCount =
-    sizeof(StatusFunctions) / sizeof(*StatusFunctions);
+static const int StatusFunctionCount
+    = sizeof(StatusFunctions) / sizeof(*StatusFunctions);
 
 //---------------------------------------------------------------------------
 
@@ -57,9 +57,7 @@ QWidget *StatusRuleWidgetHandler::createFunctionWidget(
 
 //---------------------------------------------------------------------------
 
-QWidget *StatusRuleWidgetHandler::createValueWidget(int number,
-        QStackedWidget *valueStack,
-        const QObject *receiver) const
+QWidget *StatusRuleWidgetHandler::createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const
 {
     if (number != 0) {
         return nullptr;
@@ -88,8 +86,8 @@ QWidget *StatusRuleWidgetHandler::createValueWidget(int number,
 SearchRule::Function StatusRuleWidgetHandler::currentFunction(
     const QStackedWidget *functionStack) const
 {
-    const PimCommon::MinimumComboBox *funcCombo =
-        functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleFuncCombo"));
+    const PimCommon::MinimumComboBox *funcCombo
+        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleFuncCombo"));
 
     if (funcCombo && funcCombo->currentIndex() >= 0) {
         return StatusFunctions[funcCombo->currentIndex()].id;
@@ -100,8 +98,7 @@ SearchRule::Function StatusRuleWidgetHandler::currentFunction(
 
 //---------------------------------------------------------------------------
 
-SearchRule::Function StatusRuleWidgetHandler::function(const QByteArray &field,
-        const QStackedWidget *functionStack) const
+SearchRule::Function StatusRuleWidgetHandler::function(const QByteArray &field, const QStackedWidget *functionStack) const
 {
     if (!handlesField(field)) {
         return SearchRule::FuncNone;
@@ -114,8 +111,8 @@ SearchRule::Function StatusRuleWidgetHandler::function(const QByteArray &field,
 
 int StatusRuleWidgetHandler::currentStatusValue(const QStackedWidget *valueStack) const
 {
-    const PimCommon::MinimumComboBox *statusCombo =
-        valueStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleValueCombo"));
+    const PimCommon::MinimumComboBox *statusCombo
+        = valueStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleValueCombo"));
 
     if (statusCombo) {
         return statusCombo->currentIndex();
@@ -126,9 +123,7 @@ int StatusRuleWidgetHandler::currentStatusValue(const QStackedWidget *valueStack
 
 //---------------------------------------------------------------------------
 
-QString StatusRuleWidgetHandler::value(const QByteArray &field,
-                                       const QStackedWidget *,
-                                       const QStackedWidget *valueStack) const
+QString StatusRuleWidgetHandler::value(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
         return QString();
@@ -144,9 +139,7 @@ QString StatusRuleWidgetHandler::value(const QByteArray &field,
 
 //---------------------------------------------------------------------------
 
-QString StatusRuleWidgetHandler::prettyValue(const QByteArray &field,
-        const QStackedWidget *,
-        const QStackedWidget *valueStack) const
+QString StatusRuleWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
         return QString();
@@ -164,17 +157,16 @@ QString StatusRuleWidgetHandler::prettyValue(const QByteArray &field,
 
 bool StatusRuleWidgetHandler::handlesField(const QByteArray &field) const
 {
-    return (field == "<status>");
+    return field == "<status>";
 }
 
 //---------------------------------------------------------------------------
 
-void StatusRuleWidgetHandler::reset(QStackedWidget *functionStack,
-                                    QStackedWidget *valueStack) const
+void StatusRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     // reset the function combo box
-    PimCommon::MinimumComboBox *funcCombo =
-        functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleFuncCombo"));
+    PimCommon::MinimumComboBox *funcCombo
+        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -183,8 +175,8 @@ void StatusRuleWidgetHandler::reset(QStackedWidget *functionStack,
     }
 
     // reset the status value combo box
-    PimCommon::MinimumComboBox *statusCombo =
-        valueStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleValueCombo"));
+    PimCommon::MinimumComboBox *statusCombo
+        = valueStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleValueCombo"));
 
     if (statusCombo) {
         statusCombo->blockSignals(true);
@@ -195,9 +187,7 @@ void StatusRuleWidgetHandler::reset(QStackedWidget *functionStack,
 
 //---------------------------------------------------------------------------
 
-bool StatusRuleWidgetHandler::setRule(QStackedWidget *functionStack,
-                                      QStackedWidget *valueStack,
-                                      const SearchRule::Ptr rule, bool /*isBalooSearch*/) const
+bool StatusRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const SearchRule::Ptr rule, bool /*isBalooSearch*/) const
 {
     if (!rule || !handlesField(rule->field())) {
         reset(functionStack, valueStack);
@@ -213,8 +203,8 @@ bool StatusRuleWidgetHandler::setRule(QStackedWidget *functionStack,
         }
     }
 
-    PimCommon::MinimumComboBox *funcCombo =
-        functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleFuncCombo"));
+    PimCommon::MinimumComboBox *funcCombo
+        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -236,8 +226,8 @@ bool StatusRuleWidgetHandler::setRule(QStackedWidget *functionStack,
         }
     }
 
-    PimCommon::MinimumComboBox *statusCombo =
-        valueStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleValueCombo"));
+    PimCommon::MinimumComboBox *statusCombo
+        = valueStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleValueCombo"));
 
     if (statusCombo) {
         statusCombo->blockSignals(true);
@@ -254,9 +244,7 @@ bool StatusRuleWidgetHandler::setRule(QStackedWidget *functionStack,
 
 //---------------------------------------------------------------------------
 
-bool StatusRuleWidgetHandler::update(const QByteArray &field,
-                                     QStackedWidget *functionStack,
-                                     QStackedWidget *valueStack) const
+bool StatusRuleWidgetHandler::update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
         return false;
@@ -270,4 +258,3 @@ bool StatusRuleWidgetHandler::update(const QByteArray &field,
 
     return true;
 }
-

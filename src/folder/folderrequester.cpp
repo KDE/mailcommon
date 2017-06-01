@@ -45,19 +45,18 @@
 #include <QToolButton>
 #include <KConfigGroup>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class FolderRequesterPrivate
 {
 public:
     FolderRequesterPrivate()
-        : mEdit(nullptr),
-          mMustBeReadWrite(true),
-          mShowOutbox(true),
-          mNotCreateNewFolder(false)
+        : mEdit(nullptr)
+        , mMustBeReadWrite(true)
+        , mShowOutbox(true)
+        , mNotCreateNewFolder(false)
     {
     }
+
     Akonadi::Collection mCollection;
     KLineEdit *mEdit;
     bool mMustBeReadWrite;
@@ -66,8 +65,8 @@ public:
 };
 
 FolderRequester::FolderRequester(QWidget *parent)
-    : QWidget(parent),
-      d(new MailCommon::FolderRequesterPrivate)
+    : QWidget(parent)
+    , d(new MailCommon::FolderRequesterPrivate)
 {
     QHBoxLayout *hlay = new QHBoxLayout(this);
     hlay->setContentsMargins(0, 0, 0, 0);
@@ -139,8 +138,8 @@ void FolderRequester::setCollection(const Akonadi::Collection &collection, bool 
     d->mCollection = collection;
     if (d->mCollection.isValid()) {
         if (fetchCollection) {
-            Akonadi::CollectionFetchJob *job =
-                new Akonadi::CollectionFetchJob(d->mCollection, Akonadi::CollectionFetchJob::Base, this);
+            Akonadi::CollectionFetchJob *job
+                = new Akonadi::CollectionFetchJob(d->mCollection, Akonadi::CollectionFetchJob::Base, this);
 
             connect(job, &Akonadi::CollectionFetchJob::result, this, &FolderRequester::slotCollectionsReceived);
         } else {
@@ -207,6 +206,4 @@ void FolderRequester::setNotAllowToCreateNewFolder(bool notCreateNewFolder)
 {
     d->mNotCreateNewFolder = notCreateNewFolder;
 }
-
 } // namespace MailCommon
-

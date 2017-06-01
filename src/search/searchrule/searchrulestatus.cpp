@@ -29,24 +29,52 @@ struct _statusNames {
 };
 
 static struct _statusNames statusNames[] = {
-    { "Important", Akonadi::MessageStatus::statusImportant() },
-    { "Unread", Akonadi::MessageStatus::statusUnread() },
-    { "Read", Akonadi::MessageStatus::statusRead() },
-    { "Deleted", Akonadi::MessageStatus::statusDeleted() },
-    { "Replied", Akonadi::MessageStatus::statusReplied() },
-    { "Forwarded", Akonadi::MessageStatus::statusForwarded() },
-    { "Queued", Akonadi::MessageStatus::statusQueued() },
-    { "Sent", Akonadi::MessageStatus::statusSent() },
-    { "Watched", Akonadi::MessageStatus::statusWatched() },
-    { "Ignored", Akonadi::MessageStatus::statusIgnored() },
-    { "Action Item", Akonadi::MessageStatus::statusToAct() },
-    { "Spam", Akonadi::MessageStatus::statusSpam() },
-    { "Ham", Akonadi::MessageStatus::statusHam() },
-    { "Has Attachment", Akonadi::MessageStatus::statusHasAttachment() }
+    {
+        "Important", Akonadi::MessageStatus::statusImportant()
+    },
+    {
+        "Unread", Akonadi::MessageStatus::statusUnread()
+    },
+    {
+        "Read", Akonadi::MessageStatus::statusRead()
+    },
+    {
+        "Deleted", Akonadi::MessageStatus::statusDeleted()
+    },
+    {
+        "Replied", Akonadi::MessageStatus::statusReplied()
+    },
+    {
+        "Forwarded", Akonadi::MessageStatus::statusForwarded()
+    },
+    {
+        "Queued", Akonadi::MessageStatus::statusQueued()
+    },
+    {
+        "Sent", Akonadi::MessageStatus::statusSent()
+    },
+    {
+        "Watched", Akonadi::MessageStatus::statusWatched()
+    },
+    {
+        "Ignored", Akonadi::MessageStatus::statusIgnored()
+    },
+    {
+        "Action Item", Akonadi::MessageStatus::statusToAct()
+    },
+    {
+        "Spam", Akonadi::MessageStatus::statusSpam()
+    },
+    {
+        "Ham", Akonadi::MessageStatus::statusHam()
+    },
+    {
+        "Has Attachment", Akonadi::MessageStatus::statusHasAttachment()
+    }
 };
 
-static const int numStatusNames =
-    sizeof statusNames / sizeof(struct _statusNames);
+static const int numStatusNames
+    = sizeof statusNames / sizeof(struct _statusNames);
 
 QString englishNameForStatus(const Akonadi::MessageStatus &status)
 {
@@ -58,8 +86,7 @@ QString englishNameForStatus(const Akonadi::MessageStatus &status)
     return QString();
 }
 
-SearchRuleStatus::SearchRuleStatus(const QByteArray &field,
-                                   Function func, const QString &aContents)
+SearchRuleStatus::SearchRuleStatus(const QByteArray &field, Function func, const QString &aContents)
     : SearchRule(field, func, aContents)
 {
     // the values are always in english, both from the conf file as well as

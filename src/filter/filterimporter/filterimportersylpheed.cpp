@@ -71,8 +71,8 @@ void FilterImporterSylpheed::parseConditions(const QDomElement &e, MailCommon::M
         }
     }
     for (QDomElement ruleFilter = e.firstChildElement();
-            !ruleFilter.isNull();
-            ruleFilter = ruleFilter.nextSiblingElement()) {
+         !ruleFilter.isNull();
+         ruleFilter = ruleFilter.nextSiblingElement()) {
         QString contentsName;
         QByteArray fieldName;
         SearchRule::Function functionName = SearchRule::FuncNone;
@@ -170,12 +170,11 @@ void FilterImporterSylpheed::parseConditions(const QDomElement &e, MailCommon::M
     }
 }
 
-void FilterImporterSylpheed::parseActions(const QDomElement &e,
-        MailCommon::MailFilter *filter)
+void FilterImporterSylpheed::parseActions(const QDomElement &e, MailCommon::MailFilter *filter)
 {
     for (QDomElement ruleFilter = e.firstChildElement();
-            !ruleFilter.isNull();
-            ruleFilter = ruleFilter.nextSiblingElement()) {
+         !ruleFilter.isNull();
+         ruleFilter = ruleFilter.nextSiblingElement()) {
         QString actionName;
         const QString nexttag = ruleFilter.tagName();
         QString value = ruleFilter.text();
@@ -251,11 +250,10 @@ void FilterImporterSylpheed::parseFilters(const QDomElement &e)
         } else {
             qCDebug(MAILCOMMON_LOG) << " timing not defined: " << attr;
         }
-
     }
     for (QDomElement ruleFilter = e.firstChildElement();
-            !ruleFilter.isNull();
-            ruleFilter = ruleFilter.nextSiblingElement()) {
+         !ruleFilter.isNull();
+         ruleFilter = ruleFilter.nextSiblingElement()) {
         const QString nexttag = ruleFilter.tagName();
         if (nexttag == QLatin1String("condition-list")) {
             parseConditions(ruleFilter, filter);

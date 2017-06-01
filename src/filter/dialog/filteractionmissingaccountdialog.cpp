@@ -32,9 +32,7 @@
 
 using namespace MailCommon;
 
-FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QStringList &lstAccount,
-        const QString &filtername,
-        QWidget *parent)
+FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QStringList &lstAccount, const QString &filtername, QWidget *parent)
     : QDialog(parent)
 {
     setModal(true);
@@ -101,7 +99,7 @@ bool FilterActionMissingAccountDialog::allAccountExist(const QStringList &lst)
         bool found = false;
         const QString accountName(lst.at(i));
         for (int j = 0; j < numberOfAgent; ++j) {
-            if (lstAgent.at(j).identifier() ==  accountName) {
+            if (lstAgent.at(j).identifier() == accountName) {
                 found = true;
                 break;
             }

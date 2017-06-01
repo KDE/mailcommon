@@ -31,9 +31,7 @@ class QAbstractItemModel;
 class QAction;
 class QItemSelectionModel;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MAILCOMMON_EXPORT SnippetsManager : public QObject
 {
     Q_OBJECT
@@ -59,8 +57,7 @@ public:
      *                         register the snippet shortcuts at.
      * @param parent The parent object.
      */
-    explicit SnippetsManager(KActionCollection *actionCollection,
-                             QObject *parent = nullptr, QWidget *widget = nullptr);
+    explicit SnippetsManager(KActionCollection *actionCollection, QObject *parent = nullptr, QWidget *widget = nullptr);
 
     /**
      * Destroys the snippets manager.
@@ -163,7 +160,6 @@ private:
     Q_PRIVATE_SLOT(d, void slotAddNewDndSnippset(QString))
     //@endcond
 };
-
 }
 
 #endif

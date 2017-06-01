@@ -44,7 +44,11 @@ class Q_DECL_HIDDEN FilterActionWidget::Private
 {
 public:
     Private(FilterActionWidget *qq)
-        : q(qq), mComboBox(nullptr), mAdd(nullptr), mRemove(nullptr), mLayout(nullptr)
+        : q(qq)
+        , mComboBox(nullptr)
+        , mAdd(nullptr)
+        , mRemove(nullptr)
+        , mLayout(nullptr)
     {
     }
 
@@ -96,13 +100,14 @@ void FilterActionWidget::Private::slotRemoveWidget()
 
 void FilterActionWidget::Private::slotFilterTypeChanged(int index)
 {
-    setFilterAction(index < mActionList.count() ?
-                    mActionList.at(index)->createParamWidget(q) :
-                    nullptr);
+    setFilterAction(index < mActionList.count()
+                    ? mActionList.at(index)->createParamWidget(q)
+                    : nullptr);
 }
 
 FilterActionWidget::FilterActionWidget(QWidget *parent)
-    : QWidget(parent), d(new Private(this))
+    : QWidget(parent)
+    , d(new Private(this))
 {
     QHBoxLayout *mainLayout = new QHBoxLayout;
     mainLayout->setMargin(0);
@@ -178,7 +183,6 @@ FilterActionWidget::FilterActionWidget(QWidget *parent)
     d->setFilterAction();
     d->mLayout->addWidget(d->mAdd, 1, 3);
     d->mLayout->addWidget(d->mRemove, 1, 4);
-
 }
 
 FilterActionWidget::~FilterActionWidget()
@@ -230,8 +234,8 @@ FilterAction *FilterActionWidget::action() const
 {
     // look up the action description via the label
     // returned by KComboBox::currentText()...
-    FilterActionDesc *description =
-        MailCommon::FilterManager::filterActionDict()->value(d->mComboBox->itemData(d->mComboBox->currentIndex()).toString());
+    FilterActionDesc *description
+        = MailCommon::FilterManager::filterActionDict()->value(d->mComboBox->itemData(d->mComboBox->currentIndex()).toString());
 
     if (description) {
         // ...create an instance...
@@ -256,7 +260,8 @@ class FilterActionWidgetLister::Private
 {
 public:
     Private(FilterActionWidgetLister *qq)
-        : q(qq), mActionList(nullptr)
+        : q(qq)
+        , mActionList(nullptr)
     {
     }
 
@@ -284,7 +289,8 @@ void FilterActionWidgetLister::Private::regenerateActionListFromWidgets()
 }
 
 FilterActionWidgetLister:: FilterActionWidgetLister(QWidget *parent)
-    : KWidgetLister(false, 1, MailFilter::filterActionsMaximumSize(), parent), d(new Private(this))
+    : KWidgetLister(false, 1, MailFilter::filterActionsMaximumSize(), parent)
+    , d(new Private(this))
 {
 }
 
@@ -334,12 +340,11 @@ void FilterActionWidgetLister::setActionList(QList<FilterAction *> *list)
     QList<QWidget *>::ConstIterator wIt = widgetList.constBegin();
     QList<QWidget *>::ConstIterator wEnd = widgetList.constEnd();
     for (QList<FilterAction *>::const_iterator aIt = d->mActionList->constBegin();
-            (aIt != aEnd && wIt != wEnd); ++aIt, ++wIt) {
+         (aIt != aEnd && wIt != wEnd); ++aIt, ++wIt) {
         connectWidget((*wIt), (*aIt));
     }
     widgets().constFirst()->blockSignals(false);
     updateAddRemoveButton();
-
 }
 
 void FilterActionWidgetLister::connectWidget(QWidget *widget, FilterAction *filterAction)

@@ -22,9 +22,7 @@
 
 #include "filteraction.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class FilterActionWithTest : public FilterAction
 {
     Q_OBJECT
@@ -82,7 +80,6 @@ public:
 protected:
     QString mParameter;
 };
-
 }
 
 #endif

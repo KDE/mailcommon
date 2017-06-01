@@ -28,9 +28,7 @@ class QPushButton;
 class QListWidget;
 class QWidget;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MailFilter;
 
 class FilterSelectionDialog : public QDialog
@@ -57,6 +55,5 @@ private:
     QPushButton *unselectAllButton;
     QPushButton *mOkButton;
 };
-
 }
 #endif // FILTERSELECTIONDIALOG_H

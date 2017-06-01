@@ -22,7 +22,6 @@
 SearchRuleStatusTest::SearchRuleStatusTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void SearchRuleStatusTest::shouldHaveDefaultValue()
@@ -42,12 +41,10 @@ void SearchRuleStatusTest::shouldHaveRequirePart()
 
 void SearchRuleStatusTest::shouldMatchStatus()
 {
-
 }
 
 void SearchRuleStatusTest::shouldMatchStatus_data()
 {
-
 }
 
 void SearchRuleStatusTest::shouldBeEmpty()

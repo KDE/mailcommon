@@ -20,8 +20,7 @@
 
 #include <KWidgetItemDelegate>
 
-namespace MailCommon
-{
+namespace MailCommon {
 class InvalidFilterListItemDelegate : public KWidgetItemDelegate
 {
     Q_OBJECT
@@ -29,17 +28,13 @@ public:
     explicit InvalidFilterListItemDelegate(QAbstractItemView *itemView, QObject *parent = nullptr);
     virtual ~InvalidFilterListItemDelegate();
 
-    QSize sizeHint(const QStyleOptionViewItem &option,
-                   const QModelIndex &index) const Q_DECL_OVERRIDE;
+    QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const Q_DECL_OVERRIDE;
 
-    void paint(QPainter *painter, const QStyleOptionViewItem &option,
-               const QModelIndex &index) const Q_DECL_OVERRIDE;
+    void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const Q_DECL_OVERRIDE;
 
     QList<QWidget *> createItemWidgets(const QModelIndex &) const Q_DECL_OVERRIDE;
 
-    void updateItemWidgets(const QList<QWidget *> widgets,
-                           const QStyleOptionViewItem &option,
-                           const QPersistentModelIndex &index) const Q_DECL_OVERRIDE;
+    void updateItemWidgets(const QList<QWidget *> widgets, const QStyleOptionViewItem &option, const QPersistentModelIndex &index) const Q_DECL_OVERRIDE;
 private Q_SLOTS:
     void slotShowDetails();
 Q_SIGNALS:

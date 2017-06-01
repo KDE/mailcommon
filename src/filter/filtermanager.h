@@ -28,9 +28,7 @@
 
 #include <QObject>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class FilterActionDict;
 
 /**
@@ -102,8 +100,7 @@ public:
      * @param account @c true if an account id is specified else @c false
      * @param accountId The id of the resource that the message was retrieved from
      */
-    void filter(const Akonadi::Item &item, FilterSet set = Inbound,
-                bool account = false, const QString &resourceId = QString()) const;
+    void filter(const Akonadi::Item &item, FilterSet set = Inbound, bool account = false, const QString &resourceId = QString()) const;
 
     /**
      * Process given @p messages by applying the filter rules one by
@@ -115,8 +112,7 @@ public:
      */
     void filter(const Akonadi::Item::List &messages, FilterSet set = Explicit) const;
 
-    void filter(const Akonadi::Item::List &messages, SearchRule::RequiredPart requiredPart,
-                const QStringList &listFilters) const;
+    void filter(const Akonadi::Item::List &messages, SearchRule::RequiredPart requiredPart, const QStringList &listFilters) const;
 
     /// Manage filters interface
 
@@ -125,8 +121,7 @@ public:
      * write everything back into the configuration. The filter manager
      * takes ownership of the filters in the list.
      */
-    void appendFilters(const QList<MailCommon::MailFilter *> &filters,
-                       bool replaceIfNameExists = false);
+    void appendFilters(const QList<MailCommon::MailFilter *> &filters, bool replaceIfNameExists = false);
 
     /**
      * Removes the given @p filter from the list.
@@ -186,7 +181,6 @@ private:
     class Private;
     Private *const d;
 };
-
 }
 
 #endif

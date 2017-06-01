@@ -22,14 +22,12 @@
 
 #include "filteractionwithaddress.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionReplyTo - set Reply-To to
 // Set the Reply-to header in a message
 //=============================================================================
-class FilterActionReplyTo: public FilterActionWithAddress
+class FilterActionReplyTo : public FilterActionWithAddress
 {
     Q_OBJECT
 public:
@@ -39,7 +37,6 @@ public:
     static FilterAction *newAction();
     QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

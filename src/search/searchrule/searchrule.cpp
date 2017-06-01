@@ -44,8 +44,8 @@ static const char *const funcConfigNames[] = {
     "end-with", "not-end-with"
 };
 
-static const int numFuncConfigNames =
-    sizeof funcConfigNames / sizeof * funcConfigNames;
+static const int numFuncConfigNames
+    = sizeof funcConfigNames / sizeof *funcConfigNames;
 
 //==================================================
 //
@@ -54,16 +54,16 @@ static const int numFuncConfigNames =
 //==================================================
 
 SearchRule::SearchRule(const QByteArray &field, Function func, const QString &contents)
-    : mField(field),
-      mFunction(func),
-      mContents(contents)
+    : mField(field)
+    , mFunction(func)
+    , mContents(contents)
 {
 }
 
 SearchRule::SearchRule(const SearchRule &other)
-    : mField(other.mField),
-      mFunction(other.mFunction),
-      mContents(other.mContents)
+    : mField(other.mField)
+    , mFunction(other.mFunction)
+    , mContents(other.mContents)
 {
 }
 
@@ -80,9 +80,7 @@ const SearchRule &SearchRule::operator=(const SearchRule &other)
     return *this;
 }
 
-SearchRule::Ptr SearchRule::createInstance(const QByteArray &field,
-        Function func,
-        const QString &contents)
+SearchRule::Ptr SearchRule::createInstance(const QByteArray &field, Function func, const QString &contents)
 {
     SearchRule::Ptr ret;
     if (field == "<status>") {
@@ -98,16 +96,14 @@ SearchRule::Ptr SearchRule::createInstance(const QByteArray &field,
     return ret;
 }
 
-SearchRule::Ptr SearchRule::createInstance(const QByteArray &field,
-        const char *func,
-        const QString &contents)
+SearchRule::Ptr SearchRule::createInstance(const QByteArray &field, const char *func, const QString &contents)
 {
-    return (createInstance(field, configValueToFunc(func), contents));
+    return createInstance(field, configValueToFunc(func), contents);
 }
 
 SearchRule::Ptr SearchRule::createInstance(const SearchRule &other)
 {
-    return (createInstance(other.field(), other.function(), other.contents()));
+    return createInstance(other.field(), other.function(), other.contents());
 }
 
 SearchRule::Ptr SearchRule::createInstanceFromConfig(const KConfigGroup &config, int aIdx)
@@ -176,7 +172,7 @@ void SearchRule::writeConfig(KConfigGroup &config, int aIdx) const
     static const QString func = QStringLiteral("func");
     static const QString contents = QStringLiteral("contents");
 
-    config.writeEntry(field + cIdx, /*QString*/(mField));
+    config.writeEntry(field + cIdx, /*QString*/ (mField));
     config.writeEntry(func + cIdx, functionToString(mFunction));
     config.writeEntry(contents + cIdx, mContents);
 }
@@ -520,7 +516,7 @@ QString SearchRule::contents() const
 
 const QString SearchRule::asString() const
 {
-    QString result  = QLatin1String("\"") + mField + QLatin1String("\" <");
+    QString result = QLatin1String("\"") + mField + QLatin1String("\" <");
     result += functionToString(mFunction);
     result += QStringLiteral("> \"") + mContents + QStringLiteral("\"");
 
@@ -592,4 +588,3 @@ QDataStream &SearchRule::operator >>(QDataStream &s) const
     s << mField << functionToString(mFunction) << mContents;
     return s;
 }
-

@@ -23,12 +23,10 @@
 InvalidFilterInfoTest::InvalidFilterInfoTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 InvalidFilterInfoTest::~InvalidFilterInfoTest()
 {
-
 }
 
 void InvalidFilterInfoTest::shouldAddEmptyValue()

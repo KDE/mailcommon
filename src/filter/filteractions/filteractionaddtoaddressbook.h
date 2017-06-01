@@ -22,14 +22,12 @@
 
 #include "filteractionwithstringlist.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionAddToAddressBook
 // - add email address from header to address book
 //=============================================================================
-class FilterActionAddToAddressBook: public FilterActionWithStringList
+class FilterActionAddToAddressBook : public FilterActionWithStringList
 {
     Q_OBJECT
 public:
@@ -64,7 +62,6 @@ private:
     Akonadi::Collection::Id mCollectionId;
     QString mCategory;
 };
-
 }
 
 #endif

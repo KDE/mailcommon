@@ -51,58 +51,59 @@ MDNAdviceHelper *MDNAdviceHelper::s_instance = nullptr;
 
 static const struct {
     const char *dontAskAgainID;
-    bool         canDeny;
+    bool canDeny;
     const char *text;
 } mdnMessageBoxes[] = {
     {
         "mdnNormalAsk", true,
         I18N_NOOP("This message contains a request to return a notification "
-        "about your reception of the message.\n"
-        "You can either ignore the request or let the mail program "
-        "send a \"denied\" or normal response.")
+                  "about your reception of the message.\n"
+                  "You can either ignore the request or let the mail program "
+                  "send a \"denied\" or normal response.")
     },
     {
         "mdnUnknownOption", false,
         I18N_NOOP("This message contains a request to send a notification "
-        "about your reception of the message.\n"
-        "It contains a processing instruction that is marked as "
-        "\"required\", but which is unknown to the mail program.\n"
-        "You can either ignore the request or let the mail program "
-        "send a \"failed\" response.")
+                  "about your reception of the message.\n"
+                  "It contains a processing instruction that is marked as "
+                  "\"required\", but which is unknown to the mail program.\n"
+                  "You can either ignore the request or let the mail program "
+                  "send a \"failed\" response.")
     },
     {
         "mdnMultipleAddressesInReceiptTo", true,
         I18N_NOOP("This message contains a request to send a notification "
-        "about your reception of the message,\n"
-        "but it is requested to send the notification to more "
-        "than one address.\n"
-        "You can either ignore the request or let the mail program "
-        "send a \"denied\" or normal response.")
+                  "about your reception of the message,\n"
+                  "but it is requested to send the notification to more "
+                  "than one address.\n"
+                  "You can either ignore the request or let the mail program "
+                  "send a \"denied\" or normal response.")
     },
     {
         "mdnReturnPathEmpty", true,
         I18N_NOOP("This message contains a request to send a notification "
-        "about your reception of the message,\n"
-        "but there is no return-path set.\n"
-        "You can either ignore the request or let the mail program "
-        "send a \"denied\" or normal response.")
+                  "about your reception of the message,\n"
+                  "but there is no return-path set.\n"
+                  "You can either ignore the request or let the mail program "
+                  "send a \"denied\" or normal response.")
     },
     {
         "mdnReturnPathNotInReceiptTo", true,
         I18N_NOOP("This message contains a request to send a notification "
-        "about your reception of the message,\n"
-        "but the return-path address differs from the address "
-        "the notification was requested to be sent to.\n"
-        "You can either ignore the request or let the mail program "
-        "send a \"denied\" or normal response.")
+                  "about your reception of the message,\n"
+                  "but the return-path address differs from the address "
+                  "the notification was requested to be sent to.\n"
+                  "You can either ignore the request or let the mail program "
+                  "send a \"denied\" or normal response.")
     },
 };
 
-static const int numMdnMessageBoxes =
-    sizeof mdnMessageBoxes / sizeof * mdnMessageBoxes;
+static const int numMdnMessageBoxes
+    = sizeof mdnMessageBoxes / sizeof *mdnMessageBoxes;
 
 MDNAdviceDialog::MDNAdviceDialog(const QString &text, bool canDeny, QWidget *parent)
-    : QDialog(parent), m_result(MessageComposer::MDNIgnore)
+    : QDialog(parent)
+    , m_result(MessageComposer::MDNIgnore)
 {
     setWindowTitle(i18n("Message Disposition Notification Request"));
     QDialogButtonBox *buttonBox = nullptr;
@@ -172,13 +173,13 @@ QPair< bool, KMime::MDN::SendingMode > MDNAdviceHelper::checkAndSetMDNInfo(
     // has been issued on behalf of a recipient, no further MDNs may be
     // issued on behalf of that recipient, even if another disposition
     // is performed on the message.
-    if (item.hasAttribute< MailCommon::MDNStateAttribute >() &&
-            item.attribute< MailCommon::MDNStateAttribute >()->mdnState() != MailCommon::MDNStateAttribute::MDNStateUnknown) {
+    if (item.hasAttribute< MailCommon::MDNStateAttribute >()
+        && item.attribute< MailCommon::MDNStateAttribute >()->mdnState() != MailCommon::MDNStateAttribute::MDNStateUnknown) {
         // if already dealt with, don't do it again.
         return QPair< bool, KMime::MDN::SendingMode >(false, KMime::MDN::SentAutomatically);
     }
-    MailCommon::MDNStateAttribute *mdnStateAttr =
-        new MailCommon::MDNStateAttribute(MailCommon::MDNStateAttribute::MDNStateUnknown);
+    MailCommon::MDNStateAttribute *mdnStateAttr
+        = new MailCommon::MDNStateAttribute(MailCommon::MDNStateAttribute::MDNStateUnknown);
 
     KMime::MDN::SendingMode s = KMime::MDN::SentAutomatically; // set to manual if asked user
     bool doSend = false;
@@ -192,7 +193,6 @@ QPair< bool, KMime::MDN::SendingMode > MDNAdviceHelper::checkAndSetMDNInfo(
             mdnStateAttr->setMDNState(MailCommon::MDNStateAttribute::MDNIgnore);
             s = KMime::MDN::SentManually;
         } else {
-
             if (MessageFactoryNG::MDNMDNUnknownOption(msg)) {
                 mode = requestAdviceOnMDN("mdnUnknownOption");
                 s = KMime::MDN::SentManually;
@@ -224,13 +224,12 @@ QPair< bool, KMime::MDN::SendingMode > MDNAdviceHelper::checkAndSetMDNInfo(
             } else { // if message doesn't have a disposition header, never send anything.
                 mode = 0;
             }
-
         }
     }
 
     // RFC 2298: An MDN MUST NOT be generated in response to an MDN.
     if (MessageComposer::Util::findTypeInMessage(msg.data(),
-            "message", "disposition-notification")) {
+                                                 "message", "disposition-notification")) {
         mdnStateAttr->setMDNState(MailCommon::MDNStateAttribute::MDNIgnore);
     } else if (mode == 0) {   // ignore
         doSend = false;
@@ -272,7 +271,7 @@ MailCommon::MDNStateAttribute::MDNSentState MDNAdviceHelper::dispositionToSentSt
         return MailCommon::MDNStateAttribute::MDNFailed;
     default:
         return MailCommon::MDNStateAttribute::MDNStateUnknown;
-    };
+    }
 }
 
 int MDNAdviceHelper::requestAdviceOnMDN(const char *what)
@@ -320,4 +319,3 @@ void MDNAdviceDialog::slotYesClicked()
     m_result = MessageComposer::MDNIgnore;
     accept();
 }
-

@@ -28,12 +28,10 @@
 FilterActionAddToAddressBookTest::FilterActionAddToAddressBookTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionAddToAddressBookTest::~FilterActionAddToAddressBookTest()
 {
-
 }
 
 void FilterActionAddToAddressBookTest::shouldHaveDefaultValue()

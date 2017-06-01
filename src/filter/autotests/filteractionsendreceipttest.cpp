@@ -21,7 +21,6 @@
 FilterActionSendReceiptTest::FilterActionSendReceiptTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void FilterActionSendReceiptTest::shouldBeNotEmpty()

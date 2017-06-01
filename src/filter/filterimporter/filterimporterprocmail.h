@@ -24,9 +24,7 @@
 
 class QFile;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MailFilter;
 
 class FilterImporterProcmail : public FilterImporterAbstract
@@ -42,10 +40,7 @@ private:
     void readStream(QTextStream &stream);
     QString createUniqFilterName();
     int mFilterCount;
-
 };
-
 }
 
 #endif /*MAILCOMMON_FILTERIMPORTER_FILTERIMPORTERPROCMAIL_P_H*/
-

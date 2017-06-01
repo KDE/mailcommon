@@ -22,14 +22,12 @@
 
 #include "filteractionwithaddress.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionForward - forward to
 // Forward message to another user, with a defined template
 //=============================================================================
-class FilterActionForward: public FilterActionWithAddress
+class FilterActionForward : public FilterActionWithAddress
 {
     Q_OBJECT
 public:
@@ -50,7 +48,6 @@ public:
 private:
     mutable QString mTemplate;
 };
-
 }
 
 #endif

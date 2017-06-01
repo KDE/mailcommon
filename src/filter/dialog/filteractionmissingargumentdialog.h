@@ -24,15 +24,13 @@
 
 #include <QDialog>
 
-
 class QAbstractItemModel;
 class QListWidget;
 class QListWidgetItem;
 class QModelIndex;
 class QPushButton;
 
-namespace MailCommon
-{
+namespace MailCommon {
 class FolderRequester;
 }
 
@@ -40,15 +38,11 @@ class MAILCOMMON_TESTS_EXPORT FilterActionMissingCollectionDialog : public QDial
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingCollectionDialog(const Akonadi::Collection::List &list,
-            const QString &filtername = QString(),
-            const QString &argStr = QString(),
-            QWidget *parent = nullptr);
+    explicit FilterActionMissingCollectionDialog(const Akonadi::Collection::List &list, const QString &filtername = QString(), const QString &argStr = QString(), QWidget *parent = nullptr);
     ~FilterActionMissingCollectionDialog();
 
     Akonadi::Collection selectedCollection() const;
-    static Akonadi::Collection::List potentialCorrectFolders(const QString &path,
-            bool &exactPath);
+    static Akonadi::Collection::List potentialCorrectFolders(const QString &path, bool &exactPath);
 
 private Q_SLOTS:
     void slotCurrentItemChanged();
@@ -56,10 +50,7 @@ private Q_SLOTS:
     void slotDoubleItemClicked(QListWidgetItem *item);
 
 private:
-    static void getPotentialFolders(const QAbstractItemModel *model,
-                                    const QModelIndex &parentIndex,
-                                    const QString &realPath,
-                                    Akonadi::Collection::List &list);
+    static void getPotentialFolders(const QAbstractItemModel *model, const QModelIndex &parentIndex, const QString &realPath, Akonadi::Collection::List &list);
     enum collectionEnum {
         IdentifyCollection = Qt::UserRole + 1
     };
@@ -73,4 +64,3 @@ private:
 };
 
 #endif /* FILTERACTIONMISSINGARGUMENTDIALOG_H */
-

@@ -19,9 +19,9 @@
 
 using namespace MailCommon;
 
-InvalidFilterListModel::InvalidFilterListModel(QObject *parent) :
-    QAbstractListModel(parent),
-    mInvalidFilterItems()
+InvalidFilterListModel::InvalidFilterListModel(QObject *parent)
+    : QAbstractListModel(parent)
+    , mInvalidFilterItems()
 {
 }
 
@@ -93,4 +93,3 @@ int InvalidFilterListModel::rowCount(const QModelIndex &parent) const
     Q_UNUSED(parent);
     return mInvalidFilterItems.count();
 }
-

@@ -27,12 +27,10 @@
 FilterActionMissingTemplateDialogTest::FilterActionMissingTemplateDialogTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionMissingTemplateDialogTest::~FilterActionMissingTemplateDialogTest()
 {
-
 }
 
 void FilterActionMissingTemplateDialogTest::shouldHaveDefaultValue()

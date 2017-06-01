@@ -22,14 +22,12 @@
 
 #include "filteraction.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionSetTransport - set transport to...
 // Specify mail transport (smtp server) to be used when replying to a message
 //=============================================================================
-class FilterActionSetTransport: public FilterAction
+class FilterActionSetTransport : public FilterAction
 {
     Q_OBJECT
 public:
@@ -78,7 +76,6 @@ protected:
     int mParameter;
     mutable QString mTransportName;
 };
-
 }
 
 #endif

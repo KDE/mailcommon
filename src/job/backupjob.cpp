@@ -21,7 +21,6 @@
 
 #include "backupjob.h"
 
-
 #include <Libkdepim/BroadcastStatus>
 #include "mailcommon_debug.h"
 #include <CollectionDeleteJob>
@@ -45,21 +44,21 @@ using namespace MailCommon;
 static const mode_t archivePerms = S_IFREG | 0644;
 
 BackupJob::BackupJob(QWidget *parent)
-    : QObject(parent),
-      mArchiveTime(QDateTime::currentDateTime()),
-      mArchiveType(Zip),
-      mRootFolder(0),
-      mArchive(nullptr),
-      mParentWidget(parent),
-      mArchivedMessages(0),
-      mArchivedSize(0),
-      mProgressItem(nullptr),
-      mAborted(false),
-      mDeleteFoldersAfterCompletion(false),
-      mRecursive(true),
-      mCurrentFolder(Akonadi::Collection()),
-      mCurrentJob(nullptr),
-      mDisplayMessageBox(true)
+    : QObject(parent)
+    , mArchiveTime(QDateTime::currentDateTime())
+    , mArchiveType(Zip)
+    , mRootFolder(0)
+    , mArchive(nullptr)
+    , mParentWidget(parent)
+    , mArchivedMessages(0)
+    , mArchivedSize(0)
+    , mProgressItem(nullptr)
+    , mAborted(false)
+    , mDeleteFoldersAfterCompletion(false)
+    , mRecursive(true)
+    , mCurrentFolder(Akonadi::Collection())
+    , mCurrentJob(nullptr)
+    , mDisplayMessageBox(true)
 {
 }
 
@@ -111,8 +110,8 @@ bool BackupJob::queueFolders(const Akonadi::Collection &root)
         // in the mPendingFolders list before all second level children, so that the
         // directories for the first level are written before the directories in the
         // second level, in the archive file.
-        Akonadi::CollectionFetchJob *job =
-            new Akonadi::CollectionFetchJob(root, Akonadi::CollectionFetchJob::FirstLevel);
+        Akonadi::CollectionFetchJob *job
+            = new Akonadi::CollectionFetchJob(root, Akonadi::CollectionFetchJob::FirstLevel);
         job->fetchScope().setAncestorRetrieval(Akonadi::CollectionFetchScope::All);
         job->exec();
         if (job->error()) {
@@ -412,24 +411,22 @@ void BackupJob::start()
     }
 
     switch (mArchiveType) {
-    case Zip: {
+    case Zip:
+    {
         KZip *zip = new KZip(mMailArchivePath.path());
         zip->setCompression(KZip::DeflateCompression);
         mArchive = zip;
         break;
     }
-    case Tar: {
+    case Tar:
         mArchive = new KTar(mMailArchivePath.path(), QStringLiteral("application/x-tar"));
         break;
-    }
-    case TarGz: {
+    case TarGz:
         mArchive = new KTar(mMailArchivePath.path(), QStringLiteral("application/x-gzip"));
         break;
-    }
-    case TarBz2: {
+    case TarBz2:
         mArchive = new KTar(mMailArchivePath.path(), QStringLiteral("application/x-bzip2"));
         break;
-    }
     }
 
     qCDebug(MAILCOMMON_LOG) << "Starting backup.";
@@ -439,10 +436,10 @@ void BackupJob::start()
     }
 
     mProgressItem = KPIM::ProgressManager::createProgressItem(
-                        QStringLiteral("BackupJob"),
-                        i18n("Archiving"),
-                        QString(),
-                        true);
+        QStringLiteral("BackupJob"),
+        i18n("Archiving"),
+        QString(),
+        true);
     mProgressItem->setUsesBusyIndicator(true);
     connect(mProgressItem.data(), &KPIM::ProgressItem::progressItemCanceled, this, &BackupJob::cancelJob);
 
@@ -453,4 +450,3 @@ void BackupJob::setDisplayMessageBox(bool display)
 {
     mDisplayMessageBox = display;
 }
-

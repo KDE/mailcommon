@@ -24,8 +24,8 @@
 using namespace MailCommon;
 
 FilterImporterGmail::FilterImporterGmail(QFile *file)
-    : FilterImporterAbstract(),
-      mFilterCount(0)
+    : FilterImporterAbstract()
+    , mFilterCount(0)
 {
     QDomDocument doc;
     if (!loadDomElement(doc, file)) {
@@ -49,7 +49,6 @@ FilterImporterGmail::FilterImporterGmail(QFile *file)
 
 FilterImporterGmail::~FilterImporterGmail()
 {
-
 }
 
 QString FilterImporterGmail::defaultFiltersSettingsPath()
@@ -72,8 +71,8 @@ void FilterImporterGmail::parseFilters(const QDomElement &e)
     filter->setEnabled(true);
     QByteArray fieldName;
     for (QDomElement ruleFilter = e.firstChildElement();
-            !ruleFilter.isNull();
-            ruleFilter = ruleFilter.nextSiblingElement()) {
+         !ruleFilter.isNull();
+         ruleFilter = ruleFilter.nextSiblingElement()) {
         const QString tagName = ruleFilter.tagName();
         if (tagName == QLatin1String("category")) {
             if (ruleFilter.hasAttribute(QStringLiteral("term"))) {
@@ -93,25 +92,17 @@ void FilterImporterGmail::parseFilters(const QDomElement &e)
                 } else if (criteriaProperty == QLatin1String("subject")) {
                     fieldName = "subject";
                 } else if (criteriaProperty == QLatin1String("hasTheWord")) {
-
                 } else if (criteriaProperty == QLatin1String("doesNotHaveTheWord")) {
-
                 } else if (criteriaProperty == QLatin1String("hasAttachment")) {
                     fieldName = "<size>";
                 }
                 //Action
                 else if (criteriaProperty == QLatin1String("shouldArchive")) {
-
                 } else if (criteriaProperty == QLatin1String("shouldMarkAsRead")) {
-
                 } else if (criteriaProperty == QLatin1String("shouldStar")) {
-
                 } else if (criteriaProperty == QLatin1String("label")) {
-
                 } else if (criteriaProperty == QLatin1String("forwardTo")) {
-
                 } else if (criteriaProperty == QLatin1String("shouldTrash")) {
-
                 } else if (criteriaProperty == QLatin1String("neverSpam")) {
                 } else {
                     qCDebug(MAILCOMMON_LOG) << " unknown item " << criteriaProperty;

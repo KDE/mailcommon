@@ -22,14 +22,12 @@
 
 #include "filteractionwithstringlist.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionRemoveHeader - remove header
 // Remove all instances of the given header field.
 //=============================================================================
-class FilterActionRemoveHeader: public FilterActionWithStringList
+class FilterActionRemoveHeader : public FilterActionWithStringList
 {
     Q_OBJECT
 public:
@@ -44,7 +42,6 @@ public:
     static FilterAction *newAction();
     QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

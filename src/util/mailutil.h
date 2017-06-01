@@ -45,8 +45,7 @@
 
 class OrgKdeAkonadiPOP3SettingsInterface;
 
-namespace Akonadi
-{
+namespace Akonadi {
 class Item;
 }
 class KJob;
@@ -55,16 +54,13 @@ class QAbstractItemModel;
 class QModelIndex;
 class QString;
 
-namespace MailCommon
-{
+namespace MailCommon {
 class ExpireCollectionAttribute;
 /**
  * The Util namespace contains a collection of helper functions use in
  * various places.
  */
-namespace Util
-{
-
+namespace Util {
 MAILCOMMON_EXPORT OrgKdeAkonadiPOP3SettingsInterface *createPop3SettingsInterface(
     const QString &ident);
 
@@ -97,8 +93,7 @@ MAILCOMMON_EXPORT QString realFolderPath(const QString &path);
 
 MAILCOMMON_EXPORT QColor defaultQuotaColor();
 
-MAILCOMMON_EXPORT void expireOldMessages(const Akonadi::Collection &collection,
-        bool immediate);
+MAILCOMMON_EXPORT void expireOldMessages(const Akonadi::Collection &collection, bool immediate);
 
 MAILCOMMON_EXPORT Akonadi::Collection updatedCollection(const Akonadi::Collection &col);
 
@@ -109,7 +104,6 @@ MAILCOMMON_EXPORT bool foundMailer();
 MAILCOMMON_EXPORT bool isLocalCollection(const QString &resource);
 MAILCOMMON_EXPORT MailCommon::ExpireCollectionAttribute *expirationCollectionAttribute(const Akonadi::Collection &collection, bool &mustDeleteExpirationAttribute);
 }
-
 }
 
 #endif

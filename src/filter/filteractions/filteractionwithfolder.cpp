@@ -135,4 +135,3 @@ bool FilterActionWithFolder::folderRemoved(const Akonadi::Collection &oldFolder,
         return false;
     }
 }
-

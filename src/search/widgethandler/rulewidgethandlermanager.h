@@ -40,9 +40,7 @@ class QObject;
 class QString;
 class QStackedWidget;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class RuleWidgetHandler;
 
 /**
@@ -70,35 +68,21 @@ public:
     void registerHandler(const RuleWidgetHandler *handler);
     void unregisterHandler(const RuleWidgetHandler *handler);
 
-    void createWidgets(QStackedWidget *functionStack,
-                       QStackedWidget *valueStack,
-                       const QObject *receiver) const;
+    void createWidgets(QStackedWidget *functionStack, QStackedWidget *valueStack, const QObject *receiver) const;
 
-    MailCommon::SearchRule::Function function(const QByteArray &field,
-            const QStackedWidget *functionStack) const;
+    MailCommon::SearchRule::Function function(const QByteArray &field, const QStackedWidget *functionStack) const;
 
-    QString value(const QByteArray &field,
-                  const QStackedWidget *functionStack,
-                  const QStackedWidget *valueStack) const;
+    QString value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const;
 
-    QString prettyValue(const QByteArray &field,
-                        const QStackedWidget *functionStack,
-                        const QStackedWidget *valueStack) const;
+    QString prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const;
 
-    bool handlesField(const QByteArray &field,
-                      const QStackedWidget *functionStack,
-                      const QStackedWidget *valueStack) const;
+    bool handlesField(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const;
 
-    void reset(QStackedWidget *functionStack,
-               QStackedWidget *valueStack) const;
+    void reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const;
 
-    void setRule(QStackedWidget *functionStack,
-                 QStackedWidget *valueStack,
-                 const MailCommon::SearchRule::Ptr rule) const;
+    void setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const MailCommon::SearchRule::Ptr rule) const;
 
-    void update(const QByteArray &field,
-                QStackedWidget *functionStack,
-                QStackedWidget *valueStack) const;
+    void update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const;
 
 private:
     typedef QVector<const RuleWidgetHandler *>::const_iterator const_iterator;
@@ -107,7 +91,6 @@ private:
     QVector<const RuleWidgetHandler *> mHandlers;
     bool mIsBalooSearch;
 };
-
 } // namespace MailCommon
 
 #endif

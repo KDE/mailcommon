@@ -29,21 +29,17 @@
 
 #include <AkonadiCore/searchquery.h>
 
-namespace Akonadi
-{
+namespace Akonadi {
 class Item;
 }
 
-namespace KMime
-{
+namespace KMime {
 class Message;
 }
 
 class KConfigGroup;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 // Needed for MSVC 2010, as it seems to not implicit cast for a pointer anymore
 #ifdef _MSC_VER
 uint qHash(SearchRule::Ptr sr);
@@ -71,7 +67,6 @@ uint qHash(SearchRule::Ptr sr);
 */
 class MAILCOMMON_EXPORT SearchPattern : public QList<SearchRule::Ptr>
 {
-
 public:
     /**
      * Boolean operators that connect the return values of the
@@ -237,10 +232,9 @@ private:
      * to "<i18n("unnamed")>", and the boolean operator to @p OpAnd.
      */
     void init();
-    QString  mName;
+    QString mName;
     Operator mOperator;
 };
-
 }
 
 Q_DECLARE_METATYPE(MailCommon::SearchRule::RequiredPart)

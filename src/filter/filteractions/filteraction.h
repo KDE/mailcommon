@@ -36,9 +36,7 @@
 
 class QWidget;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * @short Abstract base class for mail filter actions.
  *
@@ -176,8 +174,7 @@ public:
      * folder @p aFolder is used and changes to @p aNewFolder in this
      * case. Returns true if a change was made.
      */
-    virtual bool folderRemoved(const Akonadi::Collection &aFolder,
-                               const Akonadi::Collection &aNewFolder);
+    virtual bool folderRemoved(const Akonadi::Collection &aFolder, const Akonadi::Collection &aNewFolder);
 
     /**
      * Static function that creates a filter action of this type.
@@ -187,10 +184,8 @@ public:
     /**
      * Automates the sending of MDNs from filter actions.
      */
-    static void sendMDN(const Akonadi::Item &item,
-                        KMime::MDN::DispositionType d,
-                        const QVector<KMime::MDN::DispositionModifier> &m =
-                            QVector<KMime::MDN::DispositionModifier>());
+    static void sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionType d, const QVector<KMime::MDN::DispositionModifier> &m
+                            = QVector<KMime::MDN::DispositionModifier>());
 
 Q_SIGNALS:
     /**
@@ -203,7 +198,6 @@ private:
     QString mName;
     QString mLabel;
 };
-
 }
 
 #endif

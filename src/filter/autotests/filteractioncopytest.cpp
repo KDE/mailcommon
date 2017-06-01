@@ -22,12 +22,10 @@
 FilterActionCopyTest::FilterActionCopyTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionCopyTest::~FilterActionCopyTest()
 {
-
 }
 
 void FilterActionCopyTest::shouldBeEmpty()

@@ -64,7 +64,7 @@ MailFilter::MailFilter()
 
 MailFilter::MailFilter(const KConfigGroup &aConfig, bool interactive, bool &needUpdate)
 {
-    needUpdate =  readConfig(aConfig, interactive);
+    needUpdate = readConfig(aConfig, interactive);
 }
 
 MailFilter::MailFilter(const MailFilter &aFilter)
@@ -139,7 +139,6 @@ MailFilter::ReturnCode MailFilter::execActions(ItemContext &context, bool &stopI
     QList<FilterAction *>::const_iterator it(mActions.constBegin());
     QList<FilterAction *>::const_iterator end(mActions.constEnd());
     for (; it != end; ++it) {
-
         if (FilterLog::instance()->isLogging()) {
             const QString logText(i18n("<b>Applying filter action:</b> %1",
                                        (*it)->displayString()));
@@ -267,8 +266,8 @@ SearchRule::RequiredPart MailFilter::requiredPart(const QString &id) const
     QList<FilterAction *> actionList = *actions();
     if (!actionList.isEmpty()) {
         requiredPartByActions = (*std::max_element(actionList.constBegin(), actionList.constEnd(),
-                                 boost::bind(&MailCommon::FilterAction::requiredPart, _1) <
-                                 boost::bind(&MailCommon::FilterAction::requiredPart, _2)))->requiredPart();
+                                                   boost::bind(&MailCommon::FilterAction::requiredPart, _1)
+                                                   < boost::bind(&MailCommon::FilterAction::requiredPart, _2)))->requiredPart();
     }
     requiredPart = qMax(requiredPart, requiredPartByActions);
 
@@ -409,8 +408,8 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
         bApplyOnInbound = bool(sets.contains(QStringLiteral("check-mail")));
         bApplyOnOutbound = bool(sets.contains(QStringLiteral("send-mail")));
         bApplyOnExplicit = bool(sets.contains(QStringLiteral("manual-filtering")));
-        mApplicability = (AccountType) config.readEntry(
-                             "Applicability", (int)ButImap);
+        mApplicability = (AccountType)config.readEntry(
+            "Applicability", (int)ButImap);
     }
 
     bStopProcessingHere = config.readEntry("StopProcessingHere", true);
@@ -441,7 +440,7 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
         argsName.sprintf("action-args-%d", i);
         // get the action description...
         FilterActionDesc *desc = FilterManager::filterActionDict()->value(
-                                     config.readEntry(actName, QString()));
+            config.readEntry(actName, QString()));
         if (desc) {
             //...create an instance...
             FilterAction *fa = desc->create();
@@ -456,21 +455,20 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
                     fa->argsFromString(config.readEntry(argsName, QString()));
                 }
                 //...check if it's empty and...
-                if (!fa->isEmpty())
+                if (!fa->isEmpty()) {
                     //...append it if it's not and...
-                {
                     mActions.append(fa);
-                } else
+                } else {
                     //...delete is else.
-                {
                     delete fa;
                 }
             }
-        } else
+        } else {
             KMessageBox::information(nullptr /* app-global modal dialog box */,
                                      i18n("<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br />Ignoring it.</qt>",
                                           config.readEntry(actName, QString()),
                                           mPattern.name()));
+        }
     }
 
     mAccounts = config.readEntry("accounts-set", QStringList());
@@ -585,7 +583,6 @@ QString MailFilter::purify(bool removeAction)
     }
 
     if (!Akonadi::AgentManager::self()->instances().isEmpty()) {   // safety test to ensure that Akonadi system is ready
-
         // Remove invalid accounts from mAccounts - just to be tidy
         QStringList::Iterator it2 = mAccounts.begin();
         while (it2 != mAccounts.end()) {
@@ -601,8 +598,8 @@ QString MailFilter::purify(bool removeAction)
 
 bool MailFilter::isEmpty() const
 {
-    return (mPattern.isEmpty() && mActions.isEmpty()) ||
-           ((applicability() == Checked) && (bApplyOnInbound && mAccounts.isEmpty()));
+    return (mPattern.isEmpty() && mActions.isEmpty())
+           || ((applicability() == Checked) && (bApplyOnInbound && mAccounts.isEmpty()));
 }
 
 QString MailFilter::toolbarName() const

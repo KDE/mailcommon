@@ -36,9 +36,7 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class KernelPrivate
 {
 public:
@@ -51,6 +49,7 @@ public:
         qCDebug(MAILCOMMON_LOG);
         delete kernel;
     }
+
     Kernel *kernel;
 };
 
@@ -119,9 +118,9 @@ PimCommon::ImapResourceCapabilitiesManager *Kernel::imapResourceManager() const
 
 Akonadi::Collection Kernel::collectionFromId(Akonadi::Collection::Id id) const
 {
-    const QModelIndex idx =
-        Akonadi::EntityTreeModel::modelIndexForCollection(
-            kernelIf()->collectionModel(), Akonadi::Collection(id));
+    const QModelIndex idx
+        = Akonadi::EntityTreeModel::modelIndexForCollection(
+        kernelIf()->collectionModel(), Akonadi::Collection(id));
 
     return idx.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 }
@@ -130,52 +129,52 @@ Akonadi::Collection Kernel::trashCollectionFolder()
 {
     return
         Akonadi::SpecialMailCollections::self()->defaultCollection(
-            Akonadi::SpecialMailCollections::Trash);
+        Akonadi::SpecialMailCollections::Trash);
 }
 
 Akonadi::Collection Kernel::inboxCollectionFolder()
 {
     return
         Akonadi::SpecialMailCollections::self()->defaultCollection(
-            Akonadi::SpecialMailCollections::Inbox);
+        Akonadi::SpecialMailCollections::Inbox);
 }
 
 Akonadi::Collection Kernel::outboxCollectionFolder()
 {
     return
         Akonadi::SpecialMailCollections::self()->defaultCollection(
-            Akonadi::SpecialMailCollections::Outbox);
+        Akonadi::SpecialMailCollections::Outbox);
 }
 
 Akonadi::Collection Kernel::sentCollectionFolder()
 {
     return
         Akonadi::SpecialMailCollections::self()->defaultCollection(
-            Akonadi::SpecialMailCollections::SentMail);
+        Akonadi::SpecialMailCollections::SentMail);
 }
 
 Akonadi::Collection Kernel::draftsCollectionFolder()
 {
     return
         Akonadi::SpecialMailCollections::self()->defaultCollection(
-            Akonadi::SpecialMailCollections::Drafts);
+        Akonadi::SpecialMailCollections::Drafts);
 }
 
 Akonadi::Collection Kernel::templatesCollectionFolder()
 {
     return
         Akonadi::SpecialMailCollections::self()->defaultCollection(
-            Akonadi::SpecialMailCollections::Templates);
+        Akonadi::SpecialMailCollections::Templates);
 }
 
 bool Kernel::isSystemFolderCollection(const Akonadi::Collection &col)
 {
-    return (col == inboxCollectionFolder() ||
-            col == outboxCollectionFolder() ||
-            col == sentCollectionFolder() ||
-            col == trashCollectionFolder() ||
-            col == draftsCollectionFolder() ||
-            col == templatesCollectionFolder());
+    return col == inboxCollectionFolder()
+           || col == outboxCollectionFolder()
+           || col == sentCollectionFolder()
+           || col == trashCollectionFolder()
+           || col == draftsCollectionFolder()
+           || col == templatesCollectionFolder();
 }
 
 bool Kernel::isMainFolderCollection(const Akonadi::Collection &col)
@@ -194,8 +193,8 @@ void Kernel::initFolders()
     findCreateDefaultCollection(Akonadi::SpecialMailCollections::Trash);
     findCreateDefaultCollection(Akonadi::SpecialMailCollections::Templates);
 
-    Akonadi::SpecialMailCollectionsDiscoveryJob *job =
-        new Akonadi::SpecialMailCollectionsDiscoveryJob(this);
+    Akonadi::SpecialMailCollectionsDiscoveryJob *job
+        = new Akonadi::SpecialMailCollectionsDiscoveryJob(this);
     job->start();
     // we don't connect to the job directly: it will register stuff into SpecialMailCollections, which will Q_EMIT signals.
 }
@@ -203,15 +202,15 @@ void Kernel::initFolders()
 void Kernel::findCreateDefaultCollection(Akonadi::SpecialMailCollections::Type type)
 {
     if (Akonadi::SpecialMailCollections::self()->hasDefaultCollection(type)) {
-        const Akonadi::Collection col =
-            Akonadi::SpecialMailCollections::self()->defaultCollection(type);
+        const Akonadi::Collection col
+            = Akonadi::SpecialMailCollections::self()->defaultCollection(type);
 
         if (!(col.rights() & Akonadi::Collection::AllRights)) {
             emergencyExit(i18n("You do not have read/write permission to your inbox folder."));
         }
     } else {
-        Akonadi::SpecialMailCollectionsRequestJob *job =
-            new Akonadi::SpecialMailCollectionsRequestJob(this);
+        Akonadi::SpecialMailCollectionsRequestJob *job
+            = new Akonadi::SpecialMailCollectionsRequestJob(this);
 
         connect(job, &Akonadi::SpecialMailCollectionsRequestJob::result, this, &Kernel::createDefaultCollectionDone);
 
@@ -226,8 +225,8 @@ void Kernel::createDefaultCollectionDone(KJob *job)
         return;
     }
 
-    Akonadi::SpecialMailCollectionsRequestJob *requestJob =
-        qobject_cast<Akonadi::SpecialMailCollectionsRequestJob *>(job);
+    Akonadi::SpecialMailCollectionsRequestJob *requestJob
+        = qobject_cast<Akonadi::SpecialMailCollectionsRequestJob *>(job);
 
     const Akonadi::Collection col = requestJob->collection();
     if (!(col.rights() & Akonadi::Collection::AllRights)) {
@@ -374,9 +373,9 @@ bool Kernel::folderIsSentMailFolder(const Akonadi::Collection &col)
 bool Kernel::folderIsInbox(const Akonadi::Collection &collection)
 {
     const QString collectionRemoteIdLower = collection.remoteId().toLower();
-    if (collectionRemoteIdLower == QLatin1String("inbox") ||
-            collectionRemoteIdLower == QLatin1String("/inbox") ||
-            collectionRemoteIdLower == QLatin1String(".inbox")) {
+    if (collectionRemoteIdLower == QLatin1String("inbox")
+        || collectionRemoteIdLower == QLatin1String("/inbox")
+        || collectionRemoteIdLower == QLatin1String(".inbox")) {
         return true;
     }
     //Fix order. Remoteid is not "inbox" when translated
@@ -411,6 +410,4 @@ QMap<QString, Akonadi::Collection::Id> Kernel::pop3ResourceTargetCollection()
     }
     return mapIdentifierCollectionId;
 }
-
 }
-

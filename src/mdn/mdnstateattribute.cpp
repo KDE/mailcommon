@@ -39,16 +39,36 @@ public:
         MDNSentState state = MDNStateUnknown;
 
         switch (data.at(0)) {
-        case 'N': state = MDNNone; break;
-        case 'I': state = MDNIgnore; break;
-        case 'R': state = MDNDisplayed; break;
-        case 'D': state = MDNDeleted; break;
-        case 'F': state = MDNDispatched; break;
-        case 'P': state = MDNProcessed; break;
-        case 'X': state = MDNDenied; break;
-        case 'E': state = MDNFailed; break;
-        case 'U': state = MDNStateUnknown; break;
-        default: state = MDNStateUnknown; break;
+        case 'N':
+            state = MDNNone;
+            break;
+        case 'I':
+            state = MDNIgnore;
+            break;
+        case 'R':
+            state = MDNDisplayed;
+            break;
+        case 'D':
+            state = MDNDeleted;
+            break;
+        case 'F':
+            state = MDNDispatched;
+            break;
+        case 'P':
+            state = MDNProcessed;
+            break;
+        case 'X':
+            state = MDNDenied;
+            break;
+        case 'E':
+            state = MDNFailed;
+            break;
+        case 'U':
+            state = MDNStateUnknown;
+            break;
+        default:
+            state = MDNStateUnknown;
+            break;
         }
 
         return state;
@@ -59,15 +79,33 @@ public:
         QByteArray data = "U"; // Unknown
 
         switch (state) {
-        case MDNNone:         data = "N"; break;
-        case MDNIgnore:       data = "I"; break;
-        case MDNDisplayed:    data = "R"; break;
-        case MDNDeleted:      data = "D"; break;
-        case MDNDispatched:   data = "F"; break;
-        case MDNProcessed:    data = "P"; break;
-        case MDNDenied:       data = "X"; break;
-        case MDNFailed:       data = "E"; break;
-        case MDNStateUnknown: data = "U"; break;
+        case MDNNone:
+            data = "N";
+            break;
+        case MDNIgnore:
+            data = "I";
+            break;
+        case MDNDisplayed:
+            data = "R";
+            break;
+        case MDNDeleted:
+            data = "D";
+            break;
+        case MDNDispatched:
+            data = "F";
+            break;
+        case MDNProcessed:
+            data = "P";
+            break;
+        case MDNDenied:
+            data = "X";
+            break;
+        case MDNFailed:
+            data = "E";
+            break;
+        case MDNStateUnknown:
+            data = "U";
+            break;
         }
 
         return data;
@@ -130,9 +168,7 @@ bool MDNStateAttribute::operator==(const MDNStateAttribute &other) const
 }
 
 // Register the attribute when the library is loaded.
-namespace
-{
-
+namespace {
 bool dummyMDNStateAttribute()
 {
     using namespace MailCommon;
@@ -141,5 +177,4 @@ bool dummyMDNStateAttribute()
 }
 
 const bool registeredMDNStateAttribute = dummyMDNStateAttribute();
-
 }

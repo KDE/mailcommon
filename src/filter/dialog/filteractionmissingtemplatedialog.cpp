@@ -92,4 +92,3 @@ QString FilterActionMissingTemplateDialog::selectedTemplate() const
         return mComboBoxTemplate->currentText();
     }
 }
-

@@ -26,8 +26,8 @@
 
 using namespace MailCommon;
 
-InvalidFilterListItemDelegate::InvalidFilterListItemDelegate(QAbstractItemView *itemView, QObject *parent) :
-    KWidgetItemDelegate(itemView, parent)
+InvalidFilterListItemDelegate::InvalidFilterListItemDelegate(QAbstractItemView *itemView, QObject *parent)
+    : KWidgetItemDelegate(itemView, parent)
 {
 }
 
@@ -35,20 +35,18 @@ InvalidFilterListItemDelegate::~InvalidFilterListItemDelegate()
 {
 }
 
-QSize InvalidFilterListItemDelegate::sizeHint(const QStyleOptionViewItem &option,
-        const QModelIndex &index) const
+QSize InvalidFilterListItemDelegate::sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
     Q_UNUSED(index);
 
     const QStyle *style = itemView()->style();
-    const int buttonHeight = style->pixelMetric(QStyle::PM_ButtonMargin) * 2 +
-                             style->pixelMetric(QStyle::PM_ButtonIconSize);
+    const int buttonHeight = style->pixelMetric(QStyle::PM_ButtonMargin) * 2
+                             +style->pixelMetric(QStyle::PM_ButtonIconSize);
     const int fontHeight = option.fontMetrics.height();
     return QSize(100, qMax(buttonHeight, fontHeight));
 }
 
-void InvalidFilterListItemDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option,
-        const QModelIndex &index) const
+void InvalidFilterListItemDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
     Q_UNUSED(index);
     painter->save();
@@ -70,9 +68,7 @@ QList<QWidget *> InvalidFilterListItemDelegate::createItemWidgets(const QModelIn
     return QList<QWidget *>() << label << showInformationToolButton;
 }
 
-void InvalidFilterListItemDelegate::updateItemWidgets(const QList<QWidget *> widgets,
-        const QStyleOptionViewItem &option,
-        const QPersistentModelIndex &index) const
+void InvalidFilterListItemDelegate::updateItemWidgets(const QList<QWidget *> widgets, const QStyleOptionViewItem &option, const QPersistentModelIndex &index) const
 {
     QLabel *label = static_cast<QLabel *>(widgets[0]);
     const QAbstractItemModel *model = index.model();
@@ -102,4 +98,3 @@ void InvalidFilterListItemDelegate::slotShowDetails()
         Q_EMIT showDetails(information);
     }
 }
-

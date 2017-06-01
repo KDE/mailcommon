@@ -24,12 +24,10 @@
 InvalidFilterDialogTest::InvalidFilterDialogTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 InvalidFilterDialogTest::~InvalidFilterDialogTest()
 {
-
 }
 
 void InvalidFilterDialogTest::shouldHaveDefaultValue()

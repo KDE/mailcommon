@@ -24,13 +24,14 @@
 using namespace MailCommon;
 
 FilterActionWithUOID::FilterActionWithUOID(const QString &name, const QString &label, QObject *parent)
-    : FilterAction(name, label, parent), mParameter(0)
+    : FilterAction(name, label, parent)
+    , mParameter(0)
 {
 }
 
 bool FilterActionWithUOID::isEmpty() const
 {
-    return (mParameter == 0);
+    return mParameter == 0;
 }
 
 void FilterActionWithUOID::argsFromString(const QString &argsStr)
@@ -50,4 +51,3 @@ QString FilterActionWithUOID::displayString() const
 {
     return label() + QLatin1String(" \"") + argsAsString().toHtmlEscaped() + QLatin1String("\"");
 }
-

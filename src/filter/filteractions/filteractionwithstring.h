@@ -22,9 +22,7 @@
 
 #include "filteraction.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * @short Abstract base class for filter actions with a free-form string as parameter.
  *
@@ -91,7 +89,6 @@ public:
 protected:
     QString mParameter;
 };
-
 }
 
 #endif

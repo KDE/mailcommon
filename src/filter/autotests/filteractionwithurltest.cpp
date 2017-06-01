@@ -27,8 +27,8 @@ public:
     TestFilterActionWithUrl()
         : MailCommon::FilterActionWithUrl(QStringLiteral("test"), QStringLiteral("label"))
     {
-
     }
+
     FilterAction::ReturnCode process(MailCommon::ItemContext &, bool) const Q_DECL_OVERRIDE
     {
         return GoOn;
@@ -43,12 +43,10 @@ public:
 FilterActionWithUrlTest::FilterActionWithUrlTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionWithUrlTest::~FilterActionWithUrlTest()
 {
-
 }
 
 void FilterActionWithUrlTest::shouldHaveDefaultValue()

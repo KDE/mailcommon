@@ -22,18 +22,15 @@
 
 #include <QDialog>
 
-namespace KIdentityManagement
-{
+namespace KIdentityManagement {
 class IdentityCombo;
 }
-namespace MailCommon
-{
+namespace MailCommon {
 class FilterActionMissingIdentityDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingIdentityDialog(const QString &filtername,
-            QWidget *parent = nullptr);
+    explicit FilterActionMissingIdentityDialog(const QString &filtername, QWidget *parent = nullptr);
     ~FilterActionMissingIdentityDialog();
     int selectedIdentity() const;
 

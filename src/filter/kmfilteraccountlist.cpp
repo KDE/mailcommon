@@ -67,9 +67,9 @@ void KMFilterAccountList::updateAccountList(MailCommon::MailFilter *filter)
         listItem->setText(2, agent.identifier());
         if (filter) {
             listItem->setCheckState(0,
-                                    filter->applyOnAccount(agent.identifier()) ?
-                                    Qt::Checked :
-                                    Qt::Unchecked);
+                                    filter->applyOnAccount(agent.identifier())
+                                    ? Qt::Checked
+                                    : Qt::Unchecked);
         }
         top = listItem;
     }
@@ -114,8 +114,8 @@ void KMFilterAccountList::applyOnAccount(const QStringList &lstAccount)
         listItem->setText(0, agent.name());
         listItem->setText(1, agent.type().name());
         listItem->setText(2, agent.identifier());
-        listItem->setCheckState(0, lstAccount.contains(agent.identifier()) ?
-                                Qt::Checked : Qt::Unchecked);
+        listItem->setCheckState(0, lstAccount.contains(agent.identifier())
+                                ? Qt::Checked : Qt::Unchecked);
         top = listItem;
     }
     blockSignals(false);

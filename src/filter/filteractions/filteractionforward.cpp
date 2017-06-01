@@ -59,7 +59,7 @@ FilterAction::ReturnCode FilterActionForward::process(ItemContext &context, bool
     // avoid endless loops when this action is used in a filter
     // which applies to sent messages
     if (MessageCore::StringUtil::addressIsInAddressList(mParameter,
-            QStringList(msg->to()->asUnicodeString()))) {
+                                                        QStringList(msg->to()->asUnicodeString()))) {
         qCWarning(MAILCOMMON_LOG) << "Attempt to forward to receipient of original message, ignoring.";
         return ErrorButGoOn;
     }
@@ -114,8 +114,8 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
     const QStringList templateNames = SettingsIf->customTemplates();
     for (const QString &templateName : templateNames) {
         TemplateParser::CTemplates templat(templateName);
-        if (templat.type() == TemplateParser::CustomTemplates::TForward ||
-                templat.type() == TemplateParser::CustomTemplates::TUniversal) {
+        if (templat.type() == TemplateParser::CustomTemplates::TForward
+            || templat.type() == TemplateParser::CustomTemplates::TUniversal) {
             templateCombo->addItem(templateName);
         }
     }
@@ -182,8 +182,7 @@ void FilterActionForward::clearParamWidget(QWidget *paramWidget) const
 
 // We simply place a "@$$@" between the two parameters. The template is the last
 // parameter in the string, for compatibility reasons.
-namespace
-{
+namespace {
 inline const QString forwardFilterArgsSeperator()
 {
     return QStringLiteral("@$$@");
@@ -193,7 +192,7 @@ void FilterActionForward::argsFromString(const QString &argsStr)
 {
     const int seperatorPos = argsStr.indexOf(forwardFilterArgsSeperator());
 
-    if (seperatorPos == - 1) {
+    if (seperatorPos == -1) {
         // Old config, assume that the whole string is the addressee
         FilterActionWithAddress::argsFromString(argsStr);
     } else {
@@ -213,8 +212,8 @@ bool FilterActionForward::argsFromStringInteractive(const QString &argsStr, cons
         currentTemplateList << i18n("Default Template");
         for (const QString &templateName : templateNames) {
             TemplateParser::CTemplates templat(templateName);
-            if (templat.type() == TemplateParser::CustomTemplates::TForward ||
-                    templat.type() == TemplateParser::CustomTemplates::TUniversal) {
+            if (templat.type() == TemplateParser::CustomTemplates::TForward
+                || templat.type() == TemplateParser::CustomTemplates::TUniversal) {
                 if (templateName == mTemplate) {
                     return false;
                 }

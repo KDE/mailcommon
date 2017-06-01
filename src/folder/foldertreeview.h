@@ -28,14 +28,11 @@
 
 class QMouseEvent;
 
-namespace Akonadi
-{
+namespace Akonadi {
 class CollectionStatisticsDelegate;
 }
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * This is an enhanced EntityTreeView specially suited for the folders in KMail's
  * main folder widget.
@@ -47,8 +44,7 @@ class MAILCOMMON_EXPORT FolderTreeView : public Akonadi::EntityTreeView
 public:
     explicit FolderTreeView(QWidget *parent = nullptr, bool showUnreadCount = true);
 
-    explicit FolderTreeView(KXMLGUIClient *xmlGuiClient, QWidget *parent = nullptr,
-                            bool showUnreadCount = true);
+    explicit FolderTreeView(KXMLGUIClient *xmlGuiClient, QWidget *parent = nullptr, bool showUnreadCount = true);
 
     virtual ~FolderTreeView();
 
@@ -81,12 +77,10 @@ protected:
     void selectModelIndex(const QModelIndex &);
     void setCurrentModelIndex(const QModelIndex &);
     QModelIndex selectNextFolder(const QModelIndex &current);
-    bool isUnreadFolder(const QModelIndex &current, QModelIndex &nextIndex,
-                        FolderTreeView::Move move, bool confirm);
+    bool isUnreadFolder(const QModelIndex &current, QModelIndex &nextIndex, FolderTreeView::Move move, bool confirm);
     void writeConfig();
 
-    void setSortingPolicy(FolderTreeWidget::SortingPolicy policy,
-                          bool writeInConfig = false);
+    void setSortingPolicy(FolderTreeWidget::SortingPolicy policy, bool writeInConfig = false);
 
     void mousePressEvent(QMouseEvent *e) Q_DECL_OVERRIDE;
 
@@ -120,7 +114,6 @@ private:
     bool mbDisableContextMenuAndExtraColumn;
     bool mbDisableSaveConfig;
 };
-
 }
 
 #endif

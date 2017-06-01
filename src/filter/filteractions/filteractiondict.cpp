@@ -104,4 +104,3 @@ const QList<FilterActionDesc *> &FilterActionDict::list() const
 {
     return mList;
 }
-

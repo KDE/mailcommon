@@ -49,8 +49,7 @@ class KListWidgetSearchLine;
  * @see MailCommon::MailFilter KMFilterDialog KMFilterActionEdit SearchPatternEdit
  */
 
-namespace MailCommon
-{
+namespace MailCommon {
 class MailFilter;
 
 class QListWidgetFilterItem : public QListWidgetItem

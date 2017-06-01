@@ -23,7 +23,6 @@
 FilterImporterGmailTest::FilterImporterGmailTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void FilterImporterGmailTest::initTestCase()
@@ -40,4 +39,3 @@ void FilterImporterGmailTest::testImportFilters()
 }
 
 QTEST_AKONADIMAIN(FilterImporterGmailTest)
-

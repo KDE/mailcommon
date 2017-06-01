@@ -22,8 +22,7 @@
 #include "invalidfilterinfo.h"
 #include <QDialog>
 
-namespace MailCommon
-{
+namespace MailCommon {
 class InvalidFilterWidget;
 class InvalidFilterInfoWidget;
 class MAILCOMMON_TESTS_EXPORT InvalidFilterDialog : public QDialog

@@ -20,8 +20,7 @@
 
 #include <QList>
 
-namespace MailCommon
-{
+namespace MailCommon {
 class MailFilter;
 class FilterConvertToSieve
 {
@@ -34,6 +33,5 @@ public:
 private:
     QList<MailFilter *> mListFilters;
 };
-
 }
 #endif // FILTERCONVERTTOSIEVE_H

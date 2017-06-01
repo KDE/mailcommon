@@ -20,8 +20,7 @@
 
 #include "searchpattern.h"
 #include <AkonadiCore/Item>
-namespace MailCommon
-{
+namespace MailCommon {
 /**
  * @short This class represents a search pattern rule operating on numerical values.
  *
@@ -38,14 +37,12 @@ public:
      * @param function The function to use for searching.
      * @param contents The contents to search for.
      */
-    explicit SearchRuleNumerical(const QByteArray &field = QByteArray(),
-                                 Function function = FuncContains,
-                                 const QString &contents = QString());
+    explicit SearchRuleNumerical(const QByteArray &field = QByteArray(), Function function = FuncContains, const QString &contents = QString());
 
     /**
      * @copydoc SearchRule::isEmpty()
      */
-    bool isEmpty() const  Q_DECL_OVERRIDE;
+    bool isEmpty() const Q_DECL_OVERRIDE;
 
     /**
      * @copydoc SearchRule::matches()
@@ -65,15 +62,13 @@ public:
      * A helper method for the main matches() method.
      * Does the actual comparing.
      */
-    bool matchesInternal(long numericalValue, long numericalContents,
-                         const QString &contents) const;
+    bool matchesInternal(long numericalValue, long numericalContents, const QString &contents) const;
 
     /**
      * @copydoc SearchRule::addQueryTerms()
      */
     void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const Q_DECL_OVERRIDE;
     QString informationAboutNotValidRules() const Q_DECL_OVERRIDE;
-
 };
 }
 #endif // SEARCHRULENUMERICAL_H

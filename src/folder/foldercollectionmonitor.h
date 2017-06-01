@@ -28,15 +28,13 @@
 
 class QAbstractItemModel;
 
-namespace Akonadi
-{
+namespace Akonadi {
 class ChangeRecorder;
 class Collection;
 class Session;
 }
 
-namespace MailCommon
-{
+namespace MailCommon {
 class FolderCollectionMonitorPrivate;
 class MAILCOMMON_EXPORT FolderCollectionMonitor : public QObject
 {
@@ -51,14 +49,12 @@ public:
     void expunge(const Akonadi::Collection &, bool sync = false);
 
 protected:
-    void expireAllCollection(const QAbstractItemModel *model, bool immediate,
-                             const QModelIndex &parentIndex = QModelIndex());
+    void expireAllCollection(const QAbstractItemModel *model, bool immediate, const QModelIndex &parentIndex = QModelIndex());
 
 private:
     void slotDeleteJob(KJob *job);
     FolderCollectionMonitorPrivate *const d;
 };
-
 }
 
 #endif

@@ -16,8 +16,7 @@
 
 #include <QDialog>
 
-namespace Ui
-{
+namespace Ui {
 class SnippetDialog;
 }
 
@@ -27,9 +26,7 @@ class QAbstractItemModel;
 class QModelIndex;
 class QPushButton;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class SnippetDialog : public QDialog
 {
     Q_OBJECT

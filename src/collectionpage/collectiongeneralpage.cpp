@@ -51,12 +51,12 @@ using namespace Akonadi;
 using namespace MailCommon;
 
 CollectionGeneralPage::CollectionGeneralPage(QWidget *parent)
-    : CollectionPropertiesPage(parent),
-      mContentsComboBox(nullptr),
-      mIncidencesForComboBox(nullptr),
-      mSharedSeenFlagsCheckBox(nullptr),
-      mNameEdit(nullptr),
-      mFolderCollection(nullptr)
+    : CollectionPropertiesPage(parent)
+    , mContentsComboBox(nullptr)
+    , mIncidencesForComboBox(nullptr)
+    , mSharedSeenFlagsCheckBox(nullptr)
+    , mNameEdit(nullptr)
+    , mFolderCollection(nullptr)
 {
     setObjectName(QStringLiteral("MailCommon::CollectionGeneralPage"));
     setPageTitle(i18nc("@title:tab General settings for a folder.", "General"));
@@ -78,8 +78,8 @@ void CollectionGeneralPage::addLine(QWidget *parent, QVBoxLayout *layout)
 
 void CollectionGeneralPage::init(const Akonadi::Collection &collection)
 {
-    mIsLocalSystemFolder = CommonKernel->isSystemFolderCollection(collection) ||
-                           Kernel::folderIsInbox(collection);
+    mIsLocalSystemFolder = CommonKernel->isSystemFolderCollection(collection)
+                           || Kernel::folderIsInbox(collection);
 
     mIsResourceFolder = (collection.parentCollection() == Akonadi::Collection::root());
     QLabel *label;
@@ -87,9 +87,8 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
     QVBoxLayout *topLayout = new QVBoxLayout(this);
 
     // Musn't be able to edit details for a non-resource, system folder.
-    if ((!mIsLocalSystemFolder || mIsResourceFolder) &&
-            !mFolderCollection->isReadOnly()) {
-
+    if ((!mIsLocalSystemFolder || mIsResourceFolder)
+        && !mFolderCollection->isReadOnly()) {
         QHBoxLayout *hl = new QHBoxLayout();
         topLayout->addItem(hl);
         label = new QLabel(i18nc("@label:textbox Name of the folder.", "&Name:"), this);
@@ -106,8 +105,8 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
     // should new mail in this folder be ignored?
     QHBoxLayout *hbl = new QHBoxLayout();
     topLayout->addItem(hbl);
-    mNotifyOnNewMailCheckBox =
-        new QCheckBox(i18n("Act on new/unread mail in this folder"), this);
+    mNotifyOnNewMailCheckBox
+        = new QCheckBox(i18n("Act on new/unread mail in this folder"), this);
     mNotifyOnNewMailCheckBox->setWhatsThis(
         i18n("<qt><p>If this option is enabled then you will be notified about "
              "new/unread mail in this folder. Moreover, going to the "
@@ -122,8 +121,8 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
     // should replies to mails in this folder be kept in this same folder?
     hbl = new QHBoxLayout();
     topLayout->addItem(hbl);
-    mKeepRepliesInSameFolderCheckBox =
-        new QCheckBox(i18n("Keep replies in this folder"), this);
+    mKeepRepliesInSameFolderCheckBox
+        = new QCheckBox(i18n("Keep replies in this folder"), this);
     mKeepRepliesInSameFolderCheckBox->setWhatsThis(
         i18n("Check this option if you want replies you write "
              "to mails in this folder to be put in this same folder "
@@ -133,8 +132,8 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
     // should this folder be shown in the folder selection dialog?
     hbl = new QHBoxLayout();
     topLayout->addItem(hbl);
-    mHideInSelectionDialogCheckBox =
-        new QCheckBox(i18n("Hide this folder in the folder selection dialog"), this);
+    mHideInSelectionDialogCheckBox
+        = new QCheckBox(i18n("Hide this folder in the folder selection dialog"), this);
     mHideInSelectionDialogCheckBox->setWhatsThis(
         xi18nc("@info:whatsthis",
                "Check this option if you do not want this folder "
@@ -175,19 +174,19 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
     if (CommonKernel->imapResourceManager()->hasAnnotationSupport(collectionResource)) {
         PimCommon::CollectionTypeUtil::FolderContentsType contentsType = PimCommon::CollectionTypeUtil::ContentsTypeMail;
 
-        const PimCommon::CollectionAnnotationsAttribute *annotationAttribute =
-            collection.attribute<PimCommon::CollectionAnnotationsAttribute>();
+        const PimCommon::CollectionAnnotationsAttribute *annotationAttribute
+            = collection.attribute<PimCommon::CollectionAnnotationsAttribute>();
 
-        const QMap<QByteArray, QByteArray> annotations =
-            (annotationAttribute ?
-             annotationAttribute->annotations() :
-             QMap<QByteArray, QByteArray>());
+        const QMap<QByteArray, QByteArray> annotations
+            = (annotationAttribute
+               ? annotationAttribute->annotations()
+               : QMap<QByteArray, QByteArray>());
 
         const bool sharedSeen = (annotations.value(PimCommon::CollectionTypeUtil::kolabSharedSeen()) == "true");
 
         PimCommon::CollectionTypeUtil collectionUtil;
-        const PimCommon::CollectionTypeUtil::IncidencesFor incidencesFor =
-            collectionUtil.incidencesForFromString(QLatin1String(annotations.value(PimCommon::CollectionTypeUtil::kolabIncidencesFor())));
+        const PimCommon::CollectionTypeUtil::IncidencesFor incidencesFor
+            = collectionUtil.incidencesForFromString(QLatin1String(annotations.value(PimCommon::CollectionTypeUtil::kolabIncidencesFor())));
 
         const PimCommon::CollectionTypeUtil::FolderContentsType folderType = collectionUtil.typeFromKolabName(annotations.value(PimCommon::CollectionTypeUtil::kolabFolderType()));
 
@@ -248,16 +247,16 @@ void CollectionGeneralPage::load(const Akonadi::Collection &collection)
     // ignore new mail
     mNotifyOnNewMailCheckBox->setChecked(!Util::ignoreNewMailInFolder(collection));
 
-    const bool keepInFolder = (mFolderCollection->canCreateMessages() &&
-                               mFolderCollection->putRepliesInSameFolder());
+    const bool keepInFolder = (mFolderCollection->canCreateMessages()
+                               && mFolderCollection->putRepliesInSameFolder());
 
     mKeepRepliesInSameFolderCheckBox->setChecked(keepInFolder);
     mKeepRepliesInSameFolderCheckBox->setEnabled(mFolderCollection->canCreateMessages());
     mHideInSelectionDialogCheckBox->setChecked(mFolderCollection->hideInSelectionDialog());
 
     if (mContentsComboBox) {
-        const PimCommon::CollectionAnnotationsAttribute *annotationsAttribute =
-            collection.attribute<PimCommon::CollectionAnnotationsAttribute>();
+        const PimCommon::CollectionAnnotationsAttribute *annotationsAttribute
+            = collection.attribute<PimCommon::CollectionAnnotationsAttribute>();
 
         if (annotationsAttribute) {
             const QMap<QByteArray, QByteArray> annotations = annotationsAttribute->annotations();
@@ -275,19 +274,19 @@ void CollectionGeneralPage::save(Collection &collection)
     if (mNameEdit) {
         if (!mIsLocalSystemFolder) {
             const QString nameFolder(mNameEdit->text().trimmed());
-            bool canRenameFolder =  !(nameFolder.startsWith(QLatin1Char('.')) ||
-                                      nameFolder.endsWith(QLatin1Char('.')) ||
-                                      nameFolder.contains(QLatin1Char('/')) ||
-                                      nameFolder.isEmpty());
+            bool canRenameFolder = !(nameFolder.startsWith(QLatin1Char('.'))
+                                     || nameFolder.endsWith(QLatin1Char('.'))
+                                     || nameFolder.contains(QLatin1Char('/'))
+                                     || nameFolder.isEmpty());
 
             if (mIsResourceFolder && (PimCommon::Util::isImapResource(collection.resource()))) {
                 collection.setName(nameFolder);
-                Akonadi::AgentInstance instance =
-                    Akonadi::AgentManager::self()->instance(collection.resource());
+                Akonadi::AgentInstance instance
+                    = Akonadi::AgentManager::self()->instance(collection.resource());
                 instance.setName(nameFolder);
             } else if (canRenameFolder) {
-                if (collection.hasAttribute<Akonadi::EntityDisplayAttribute>() &&
-                        !collection.attribute<Akonadi::EntityDisplayAttribute>()->displayName().isEmpty()) {
+                if (collection.hasAttribute<Akonadi::EntityDisplayAttribute>()
+                    && !collection.attribute<Akonadi::EntityDisplayAttribute>()->displayName().isEmpty()) {
                     collection.attribute<Akonadi::EntityDisplayAttribute>()->setDisplayName(
                         nameFolder);
                 } else if (!nameFolder.isEmpty()) {
@@ -304,8 +303,8 @@ void CollectionGeneralPage::save(Collection &collection)
         collection.removeAttribute<Akonadi::NewMailNotifierAttribute>();
     }
 
-    PimCommon::CollectionAnnotationsAttribute *annotationsAttribute =
-        collection.attribute<PimCommon::CollectionAnnotationsAttribute>(Collection::AddIfMissing);
+    PimCommon::CollectionAnnotationsAttribute *annotationsAttribute
+        = collection.attribute<PimCommon::CollectionAnnotationsAttribute>(Collection::AddIfMissing);
 
     QMap<QByteArray, QByteArray> annotations = annotationsAttribute->annotations();
     if (mSharedSeenFlagsCheckBox && mSharedSeenFlagsCheckBox->isEnabled()) {
@@ -314,20 +313,20 @@ void CollectionGeneralPage::save(Collection &collection)
 
     PimCommon::CollectionTypeUtil collectionUtil;
     if (mIncidencesForComboBox && mIncidencesForComboBox->isEnabled()) {
-        annotations[ PimCommon::CollectionTypeUtil::kolabIncidencesFor() ] =
-            collectionUtil.incidencesForToString(
-                static_cast<PimCommon::CollectionTypeUtil::IncidencesFor>(mIncidencesForComboBox->currentIndex())).toLatin1();
+        annotations[ PimCommon::CollectionTypeUtil::kolabIncidencesFor() ]
+            = collectionUtil.incidencesForToString(
+            static_cast<PimCommon::CollectionTypeUtil::IncidencesFor>(mIncidencesForComboBox->currentIndex())).toLatin1();
     }
 
     if (mContentsComboBox) {
-        const PimCommon::CollectionTypeUtil::FolderContentsType type =
-            collectionUtil.contentsTypeFromString(mContentsComboBox->currentText());
+        const PimCommon::CollectionTypeUtil::FolderContentsType type
+            = collectionUtil.contentsTypeFromString(mContentsComboBox->currentText());
 
         const QByteArray kolabName = collectionUtil.kolabNameFromType(type);
         if (!kolabName.isEmpty()) {
             const QString iconName = collectionUtil.iconNameFromContentsType(type);
-            Akonadi::EntityDisplayAttribute *attribute =
-                collection.attribute<Akonadi::EntityDisplayAttribute>(Akonadi::Collection::AddIfMissing);
+            Akonadi::EntityDisplayAttribute *attribute
+                = collection.attribute<Akonadi::EntityDisplayAttribute>(Akonadi::Collection::AddIfMissing);
             attribute->setIconName(iconName);
             new Akonadi::CollectionModifyJob(collection);
             annotations[ PimCommon::CollectionTypeUtil::kolabFolderType() ] = kolabName;
@@ -360,20 +359,20 @@ void CollectionGeneralPage::slotIdentityCheckboxChanged()
 void CollectionGeneralPage::slotFolderContentsSelectionChanged(int)
 {
     PimCommon::CollectionTypeUtil collectionUtil;
-    const PimCommon::CollectionTypeUtil::FolderContentsType type =
-        collectionUtil.contentsTypeFromString(mContentsComboBox->currentText());
+    const PimCommon::CollectionTypeUtil::FolderContentsType type
+        = collectionUtil.contentsTypeFromString(mContentsComboBox->currentText());
 
     if (type != PimCommon::CollectionTypeUtil::ContentsTypeMail) {
-        const QString message =
-            i18n("You have configured this folder to contain groupware information. "
-                 "That means that this folder will disappear once the configuration "
-                 "dialog is closed.");
+        const QString message
+            = i18n("You have configured this folder to contain groupware information. "
+                   "That means that this folder will disappear once the configuration "
+                   "dialog is closed.");
 
         KMessageBox::information(this, message);
     }
 
-    const bool enable = (type == PimCommon::CollectionTypeUtil::ContentsTypeCalendar ||
-                         type == PimCommon::CollectionTypeUtil::ContentsTypeTask);
+    const bool enable = (type == PimCommon::CollectionTypeUtil::ContentsTypeCalendar
+                         || type == PimCommon::CollectionTypeUtil::ContentsTypeTask);
 
     if (mIncidencesForComboBox) {
         mIncidencesForComboBox->setEnabled(enable);
@@ -384,10 +383,10 @@ void CollectionGeneralPage::slotNameChanged(const QString &name)
 {
 #ifndef QT_NO_STYLE_STYLESHEET
     QString styleSheet;
-    if (name.startsWith(QLatin1Char('.')) ||
-            name.endsWith(QLatin1Char('.')) ||
-            name.contains(QLatin1Char('/')) ||
-            name.isEmpty()) {
+    if (name.startsWith(QLatin1Char('.'))
+        || name.endsWith(QLatin1Char('.'))
+        || name.contains(QLatin1Char('/'))
+        || name.isEmpty()) {
         if (mColorName.isEmpty()) {
             const KColorScheme::BackgroundRole bgColorScheme(KColorScheme::NegativeBackground);
             KStatefulBrush bgBrush(KColorScheme::View, bgColorScheme);
@@ -399,4 +398,3 @@ void CollectionGeneralPage::slotNameChanged(const QString &name)
     setStyleSheet(styleSheet);
 #endif
 }
-

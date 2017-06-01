@@ -31,8 +31,7 @@
 
 using namespace MailCommon;
 
-FilterActionMissingTransportDialog::FilterActionMissingTransportDialog(const QString &filtername,
-        QWidget *parent)
+FilterActionMissingTransportDialog::FilterActionMissingTransportDialog(const QString &filtername, QWidget *parent)
     : QDialog(parent)
 {
     setModal(true);
@@ -85,4 +84,3 @@ int FilterActionMissingTransportDialog::selectedTransport() const
 {
     return mComboBoxTransport->currentTransportId();
 }
-

@@ -23,9 +23,7 @@
 
 class QFile;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MailFilter;
 
 class MAILCOMMON_EXPORT FilterImporterClawsMails : public FilterImporterAbstract
@@ -47,7 +45,6 @@ private:
     QString extractActions(const QString &line, MailFilter *filter);
     void readStream(QTextStream &stream);
 };
-
 }
 
 #endif // MAILCOMMON_FILTERIMPORTER_FILTERIMPORTERCLAWSMAILS_P_H

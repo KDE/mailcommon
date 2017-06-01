@@ -27,8 +27,7 @@
 
 class KActionCollection;
 
-namespace MailCommon
-{
+namespace MailCommon {
 class AddTagDialogPrivate;
 class MAILCOMMON_EXPORT AddTagDialog : public QDialog
 {

@@ -147,4 +147,3 @@ void FilterSelectionDialog::slotSelectAllButton()
         item->setCheckState(Qt::Checked);
     }
 }
-

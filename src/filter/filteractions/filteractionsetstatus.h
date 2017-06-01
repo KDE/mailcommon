@@ -21,14 +21,12 @@
 #define MAILCOMMON_FILTERACTIONSETSTATUS_H
 
 #include "filteractionstatus.h"
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionSetStatus - set status to
 // Set the status of messages
 //=============================================================================
-class FilterActionSetStatus: public FilterActionStatus
+class FilterActionSetStatus : public FilterActionStatus
 {
     Q_OBJECT
 public:
@@ -42,7 +40,6 @@ public:
     bool isEmpty() const Q_DECL_OVERRIDE;
     QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

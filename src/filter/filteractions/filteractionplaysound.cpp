@@ -48,7 +48,7 @@ FilterAction *FilterActionPlaySound::newAction()
 
 bool FilterActionPlaySound::isEmpty() const
 {
-    return (mParameter.isEmpty());
+    return mParameter.isEmpty();
 }
 
 FilterAction::ReturnCode FilterActionPlaySound::process(ItemContext &, bool) const

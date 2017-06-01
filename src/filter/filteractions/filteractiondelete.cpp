@@ -63,4 +63,3 @@ QString FilterActionDelete::sieveCode() const
 {
     return QStringLiteral("discard;");
 }
-

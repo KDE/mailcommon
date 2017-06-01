@@ -22,9 +22,7 @@
 
 #include "filteractionwithnone.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionDelete - Delete action
 //=============================================================================
@@ -39,7 +37,6 @@ public:
     QWidget *createParamWidget(QWidget *parent) const Q_DECL_OVERRIDE;
     QString sieveCode() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

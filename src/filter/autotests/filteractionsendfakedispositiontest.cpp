@@ -23,12 +23,10 @@
 FilterActionSendFakeDispositionTest::FilterActionSendFakeDispositionTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionSendFakeDispositionTest::~FilterActionSendFakeDispositionTest()
 {
-
 }
 
 void FilterActionSendFakeDispositionTest::shouldHaveDefaultValue()

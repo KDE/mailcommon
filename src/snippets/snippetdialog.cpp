@@ -26,7 +26,8 @@
 using namespace MailCommon;
 
 SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMode, QWidget *parent)
-    : QDialog(parent), mActionCollection(actionCollection)
+    : QDialog(parent)
+    , mActionCollection(actionCollection)
 {
     mUi = new Ui::SnippetDialog;
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
@@ -116,10 +117,10 @@ void SnippetDialog::slotTextChanged()
 
 bool SnippetDialog::snippetIsValid() const
 {
-    if (mUi->groupWidget->isVisible())
-        return (!mUi->nameEdit->text().trimmed().isEmpty() &&
-                !mUi->groupBox->currentText().trimmed().isEmpty());
-    else {
-        return (!mUi->nameEdit->text().trimmed().isEmpty());
+    if (mUi->groupWidget->isVisible()) {
+        return !mUi->nameEdit->text().trimmed().isEmpty()
+               && !mUi->groupBox->currentText().trimmed().isEmpty();
+    } else {
+        return !mUi->nameEdit->text().trimmed().isEmpty();
     }
 }

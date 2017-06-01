@@ -22,9 +22,7 @@
 #include <EntityOrderProxyModel>
 #include "mailcommon_export.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * @brief The EntityCollectionOrderProxyModel class implements ordering of mail collections.
  * It supports two modes: manual sorting and automatic sorting.
@@ -61,8 +59,6 @@ private:
     class EntityCollectionOrderProxyModelPrivate;
     EntityCollectionOrderProxyModelPrivate *const d;
 };
-
 }
 
 #endif
-

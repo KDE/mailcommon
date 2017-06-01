@@ -21,9 +21,7 @@
 #include "filteractionwithstringlist.h"
 #include <Akonadi/KMime/MessageStatus>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class FilterActionStatus : public FilterActionWithStringList
 {
     Q_OBJECT
@@ -41,6 +39,5 @@ public:
     static const Akonadi::MessageStatus stati[];
     static const int StatiCount;
 };
-
 }
 #endif // FILTERACTIONSTATUS_H

@@ -35,22 +35,20 @@
 
 using namespace MailCommon;
 
-
 class MailCommon::FolderCollectionMonitorPrivate
 {
 public:
     FolderCollectionMonitorPrivate()
         : mMonitor(nullptr)
     {
-
     }
 
     Akonadi::ChangeRecorder *mMonitor;
 };
 
 FolderCollectionMonitor::FolderCollectionMonitor(Akonadi::Session *session, QObject *parent)
-    : QObject(parent),
-      d(new MailCommon::FolderCollectionMonitorPrivate)
+    : QObject(parent)
+    , d(new MailCommon::FolderCollectionMonitorPrivate)
 {
     // monitor collection changes
     d->mMonitor = new Akonadi::ChangeRecorder(this);
@@ -79,33 +77,30 @@ Akonadi::ChangeRecorder *FolderCollectionMonitor::monitor() const
     return d->mMonitor;
 }
 
-void FolderCollectionMonitor::expireAllFolders(bool immediate,
-        QAbstractItemModel *collectionModel)
+void FolderCollectionMonitor::expireAllFolders(bool immediate, QAbstractItemModel *collectionModel)
 {
     if (collectionModel) {
         expireAllCollection(collectionModel, immediate);
     }
 }
 
-void FolderCollectionMonitor::expireAllCollection(const QAbstractItemModel *model,
-        bool immediate,
-        const QModelIndex &parentIndex)
+void FolderCollectionMonitor::expireAllCollection(const QAbstractItemModel *model, bool immediate, const QModelIndex &parentIndex)
 {
     const int rowCount = model->rowCount(parentIndex);
     for (int row = 0; row < rowCount; ++row) {
         const QModelIndex index = model->index(row, 0, parentIndex);
-        const Akonadi::Collection collection =
-            model->data(
-                index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const Akonadi::Collection collection
+            = model->data(
+            index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
         if (!collection.isValid() || Util::isVirtualCollection(collection)) {
             continue;
         }
 
         bool mustDeleteExpirationAttribute = false;
-        MailCommon::ExpireCollectionAttribute *attr =
-            MailCommon::Util::expirationCollectionAttribute(
-                collection, mustDeleteExpirationAttribute);
+        MailCommon::ExpireCollectionAttribute *attr
+            = MailCommon::Util::expirationCollectionAttribute(
+            collection, mustDeleteExpirationAttribute);
 
         if (attr->isAutoExpire()) {
             MailCommon::Util::expireOldMessages(collection, immediate);
@@ -138,4 +133,3 @@ void FolderCollectionMonitor::slotDeleteJob(KJob *job)
 {
     Util::showJobErrorMessage(job);
 }
-

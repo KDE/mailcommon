@@ -22,7 +22,6 @@
 SearchRuleStringTest::SearchRuleStringTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void SearchRuleStringTest::shouldHaveDefaultValue()
@@ -66,12 +65,10 @@ void SearchRuleStringTest::shouldHaveRequirePart_data()
 
 void SearchRuleStringTest::shouldMatchString()
 {
-
 }
 
 void SearchRuleStringTest::shouldMatchString_data()
 {
-
 }
 
 void SearchRuleStringTest::shouldBeEmpty()

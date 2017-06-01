@@ -23,14 +23,11 @@
 
 #include <QWidget>
 
-namespace MessageComposer
-{
+namespace MessageComposer {
 class ComposerLineEdit;
 }
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class RedirectWidget : public QWidget
 {
     Q_OBJECT

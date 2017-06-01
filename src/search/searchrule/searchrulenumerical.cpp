@@ -31,9 +31,7 @@ using MailCommon::FilterLog;
 
 using namespace MailCommon;
 
-SearchRuleNumerical::SearchRuleNumerical(const QByteArray &field,
-        Function func,
-        const QString &contents)
+SearchRuleNumerical::SearchRuleNumerical(const QByteArray &field, Function func, const QString &contents)
     : SearchRule(field, func, contents)
 {
 }
@@ -86,43 +84,44 @@ SearchRule::RequiredPart SearchRuleNumerical::requiredPart() const
     return SearchRule::Envelope;
 }
 
-bool SearchRuleNumerical::matchesInternal(long numericalValue,
-        long numericalMsgContents, const QString &msgContents) const
+bool SearchRuleNumerical::matchesInternal(long numericalValue, long numericalMsgContents, const QString &msgContents) const
 {
     switch (function()) {
     case SearchRule::FuncEquals:
-        return (numericalValue == numericalMsgContents);
+        return numericalValue == numericalMsgContents;
 
     case SearchRule::FuncNotEqual:
-        return (numericalValue != numericalMsgContents);
+        return numericalValue != numericalMsgContents;
 
     case SearchRule::FuncContains:
-        return (msgContents.contains(contents(), Qt::CaseInsensitive));
+        return msgContents.contains(contents(), Qt::CaseInsensitive);
 
     case SearchRule::FuncContainsNot:
-        return (!msgContents.contains(contents(), Qt::CaseInsensitive));
+        return !msgContents.contains(contents(), Qt::CaseInsensitive);
 
-    case SearchRule::FuncRegExp: {
+    case SearchRule::FuncRegExp:
+    {
         QRegExp regexp(contents(), Qt::CaseInsensitive);
-        return (regexp.indexIn(msgContents) >= 0);
+        return regexp.indexIn(msgContents) >= 0;
     }
 
-    case SearchRule::FuncNotRegExp: {
+    case SearchRule::FuncNotRegExp:
+    {
         QRegExp regexp(contents(), Qt::CaseInsensitive);
-        return (regexp.indexIn(msgContents) < 0);
+        return regexp.indexIn(msgContents) < 0;
     }
 
     case FuncIsGreater:
-        return (numericalMsgContents > numericalValue);
+        return numericalMsgContents > numericalValue;
 
     case FuncIsLessOrEqual:
-        return (numericalMsgContents <= numericalValue);
+        return numericalMsgContents <= numericalValue;
 
     case FuncIsLess:
-        return (numericalMsgContents < numericalValue);
+        return numericalMsgContents < numericalValue;
 
     case FuncIsGreaterOrEqual:
-        return (numericalMsgContents >= numericalValue);
+        return numericalMsgContents >= numericalValue;
 
     case FuncIsInAddressbook:  // since email-addresses are not numerical, I settle for false here
         return false;

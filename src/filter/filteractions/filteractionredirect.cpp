@@ -82,4 +82,3 @@ QString FilterActionRedirect::informationAboutNotValidAction() const
 {
     return i18n("Email address was missing.");
 }
-

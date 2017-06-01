@@ -33,9 +33,7 @@
 #include <Collection>
 #include "mailcommon_export.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MAILCOMMON_EXPORT FolderJob : public QObject
 {
     Q_OBJECT
@@ -98,12 +96,11 @@ protected:
     virtual void execute() = 0;
 
     Akonadi::Collection mSrcFolder;
-    int                 mErrorCode;
+    int mErrorCode;
 
-    bool                mStarted;
-    bool                mCancellable;
+    bool mStarted;
+    bool mCancellable;
 };
-
 }
 
 #endif

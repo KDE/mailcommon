@@ -110,9 +110,9 @@ void SoundTestWidget::playSound()
     }
 
     const QString file = QStringLiteral("file:");
-    const QString play = (parameter.startsWith(file) ?
-                          parameter.mid(file.length()) :
-                          parameter);
+    const QString play = (parameter.startsWith(file)
+                          ? parameter.mid(file.length())
+                          : parameter);
     Phonon::MediaObject *player = Phonon::createPlayer(Phonon::NotificationCategory, QUrl::fromLocalFile(play));
     player->play();
     connect(player, &Phonon::MediaObject::finished, player, &Phonon::MediaObject::deleteLater);
@@ -132,4 +132,3 @@ void SoundTestWidget::clear()
 {
     m_urlRequester->lineEdit()->clear();
 }
-

@@ -22,14 +22,12 @@
 
 #include "filteractionwithstringlist.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionSendFakeDisposition - send fake MDN
 // Sends a fake MDN or forces an ignore.
 //=============================================================================
-class FilterActionSendFakeDisposition: public FilterActionWithStringList
+class FilterActionSendFakeDisposition : public FilterActionWithStringList
 {
     Q_OBJECT
 public:
@@ -46,7 +44,6 @@ public:
     QString displayString() const Q_DECL_OVERRIDE;
     QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

@@ -25,9 +25,7 @@
 #include <QMultiHash>
 #include <QString>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class FilterAction;
 
 typedef FilterAction *(*FilterActionNewFunc)(void);
@@ -103,7 +101,6 @@ protected:
 private:
     QList<FilterActionDesc *> mList;
 };
-
 }
 
 #endif

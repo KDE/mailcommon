@@ -22,9 +22,7 @@
 
 #include "filteractionwithcommand.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionExec - execute command
 // Execute a shell command
@@ -39,7 +37,6 @@ public:
     static FilterAction *newAction();
     QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

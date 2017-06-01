@@ -38,10 +38,9 @@
 #include <QPushButton>
 
 FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
-    const Akonadi::Collection::List &list, const QString &filtername,
-    const QString &argStr, QWidget *parent)
-    : QDialog(parent),
-      mListwidget(nullptr)
+    const Akonadi::Collection::List &list, const QString &filtername, const QString &argStr, QWidget *parent)
+    : QDialog(parent)
+    , mListwidget(nullptr)
 {
     setModal(true);
     setWindowTitle(i18n("Select Folder"));
@@ -67,7 +66,6 @@ FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
         }
         connect(mListwidget, &QListWidget::currentItemChanged, this, &FilterActionMissingCollectionDialog::slotCurrentItemChanged);
         connect(mListwidget, &QListWidget::itemDoubleClicked, this, &FilterActionMissingCollectionDialog::slotDoubleItemClicked);
-
     }
 
     QLabel *label = new QLabel(this);
@@ -75,10 +73,11 @@ FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
     label->setWordWrap(true);
     if (filtername.isEmpty()) {
         label->setText(i18n("Please select a folder"));
-    } else
+    } else {
         label->setText(i18n("Filter folder is missing. "
                             "Please select a folder to use with filter \"%1\"",
                             filtername));
+    }
     mainLayout->addWidget(label);
     mFolderRequester = new MailCommon::FolderRequester(this);
     mFolderRequester->setObjectName(QStringLiteral("folderrequester"));
@@ -129,8 +128,8 @@ void FilterActionMissingCollectionDialog::slotDoubleItemClicked(QListWidgetItem 
         return;
     }
 
-    const Akonadi::Collection::Id id =
-        item->data(FilterActionMissingCollectionDialog::IdentifyCollection).toLongLong();
+    const Akonadi::Collection::Id id
+        = item->data(FilterActionMissingCollectionDialog::IdentifyCollection).toLongLong();
 
     mFolderRequester->setCollection(Akonadi::Collection(id));
     accept();
@@ -140,8 +139,8 @@ void FilterActionMissingCollectionDialog::slotCurrentItemChanged()
 {
     QListWidgetItem *currentItem = mListwidget->currentItem();
     if (currentItem) {
-        const Akonadi::Collection::Id id =
-            currentItem->data(FilterActionMissingCollectionDialog::IdentifyCollection).toLongLong();
+        const Akonadi::Collection::Id id
+            = currentItem->data(FilterActionMissingCollectionDialog::IdentifyCollection).toLongLong();
         mFolderRequester->setCollection(Akonadi::Collection(id));
     }
 }
@@ -151,10 +150,7 @@ Akonadi::Collection FilterActionMissingCollectionDialog::selectedCollection() co
     return mFolderRequester->collection();
 }
 
-void FilterActionMissingCollectionDialog::getPotentialFolders(const QAbstractItemModel *model,
-        const QModelIndex &parentIndex,
-        const QString &lastElement,
-        Akonadi::Collection::List &list)
+void FilterActionMissingCollectionDialog::getPotentialFolders(const QAbstractItemModel *model, const QModelIndex &parentIndex, const QString &lastElement, Akonadi::Collection::List &list)
 {
     const int rowCount = model->rowCount(parentIndex);
     for (int row = 0; row < rowCount; ++row) {
@@ -164,7 +160,7 @@ void FilterActionMissingCollectionDialog::getPotentialFolders(const QAbstractIte
         }
         if (model->data(index).toString() == lastElement) {
             list << model->data(
-                     index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+                index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         }
     }
 }
@@ -194,10 +190,9 @@ Akonadi::Collection::List FilterActionMissingCollectionDialog::potentialCorrectF
         for (int i = 0; i < numberOfItems; ++i) {
             if (MailCommon::Util::fullCollectionPath(lst.at(i)) == realPath) {
                 exactPath = true;
-                return  Akonadi::Collection::List() << lst.at(i);
+                return Akonadi::Collection::List() << lst.at(i);
             }
         }
     }
     return lst;
 }
-

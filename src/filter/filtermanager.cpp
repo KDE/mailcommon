@@ -33,18 +33,19 @@
 
 #include <QTimer>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class Q_DECL_HIDDEN FilterManager::Private
 {
 public:
     Private(FilterManager *qq)
-        : q(qq), mMailFilterAgentInterface(nullptr), mMonitor(new Akonadi::Monitor), mInitialized(false)
+        : q(qq)
+        , mMailFilterAgentInterface(nullptr)
+        , mMonitor(new Akonadi::Monitor)
+        , mInitialized(false)
     {
         mMailFilterAgentInterface = new org::freedesktop::Akonadi::MailFilterAgent(QStringLiteral("org.freedesktop.Akonadi.MailFilterAgent"),
-                QStringLiteral("/MailFilterAgent"),
-                QDBusConnection::sessionBus(), q);
+                                                                                   QStringLiteral("/MailFilterAgent"),
+                                                                                   QDBusConnection::sessionBus(), q);
     }
 
     void readConfig();
@@ -89,7 +90,6 @@ void FilterManager::Private::clear()
     qDeleteAll(mFilters);
     mFilters.clear();
 }
-
 }
 
 using namespace MailCommon;
@@ -310,4 +310,3 @@ void FilterManager::endUpdate()
     d->mMailFilterAgentInterface->reload();
     Q_EMIT filtersChanged();
 }
-

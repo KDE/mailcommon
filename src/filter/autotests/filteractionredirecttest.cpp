@@ -22,12 +22,10 @@
 FilterActionRedirectTest::FilterActionRedirectTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionRedirectTest::~FilterActionRedirectTest()
 {
-
 }
 
 void FilterActionRedirectTest::shouldBeEmpty()

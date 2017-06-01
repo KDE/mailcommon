@@ -28,7 +28,6 @@
 
 #include "filterlog.h"
 
-
 #include "messagecomposer/util.h"
 #include "mailcommon_debug.h"
 
@@ -44,15 +43,15 @@ class Q_DECL_HIDDEN FilterLog::Private
 {
 public:
     Private(FilterLog *qq)
-        : q(qq),
-          mLogging(false),
-          mMaxLogSize(512 * 1024),
-          mCurrentLogSize(0),
-          mAllowedTypes(FilterLog::Meta |
-                        FilterLog::PatternDescription |
-                        FilterLog::RuleResult |
-                        FilterLog::PatternResult |
-                        FilterLog::AppliedAction)
+        : q(qq)
+        , mLogging(false)
+        , mMaxLogSize(512 * 1024)
+        , mCurrentLogSize(0)
+        , mAllowedTypes(FilterLog::Meta
+                        |FilterLog::PatternDescription
+                        |FilterLog::RuleResult
+                        |FilterLog::PatternResult
+                        |FilterLog::AppliedAction)
     {
     }
 
@@ -157,7 +156,7 @@ void FilterLog::setContentTypeEnabled(ContentType contentType, bool enable)
 
 bool FilterLog::isContentTypeEnabled(ContentType contentType) const
 {
-    return (d->mAllowedTypes & contentType);
+    return d->mAllowedTypes & contentType;
 }
 
 void FilterLog::add(const QString &logEntry, ContentType contentType)
@@ -226,4 +225,3 @@ QString FilterLog::recode(const QString &plain)
 {
     return plain.toHtmlEscaped();
 }
-

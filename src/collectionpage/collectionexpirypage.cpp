@@ -54,7 +54,7 @@ CollectionExpiryPage::~CollectionExpiryPage()
 bool CollectionExpiryPage::canHandle(const Akonadi::Collection &col) const
 {
     QSharedPointer<FolderSettings> fd = FolderSettings::forCollection(col, false);
-    return (fd->canDeleteMessages() && !fd->isStructural());
+    return fd->canDeleteMessages() && !fd->isStructural();
 }
 
 void CollectionExpiryPage::init()
@@ -140,14 +140,14 @@ void CollectionExpiryPage::load(const Akonadi::Collection &collection)
     attr->daysToExpire(daysToExpireUnread, daysToExpireRead);
 
     if (expiryGloballyOn
-            && attr->readExpireUnits() != ExpireCollectionAttribute::ExpireNever
-            && daysToExpireRead >= 0) {
+        && attr->readExpireUnits() != ExpireCollectionAttribute::ExpireNever
+        && daysToExpireRead >= 0) {
         expireReadMailCB->setChecked(true);
         expireReadMailSB->setValue(daysToExpireRead);
     }
     if (expiryGloballyOn
-            && attr->unreadExpireUnits() != ExpireCollectionAttribute::ExpireNever
-            && daysToExpireUnread >= 0) {
+        && attr->unreadExpireUnits() != ExpireCollectionAttribute::ExpireNever
+        && daysToExpireUnread >= 0) {
         expireUnreadMailCB->setChecked(true);
         expireUnreadMailSB->setValue(daysToExpireUnread);
     }
@@ -205,17 +205,17 @@ void CollectionExpiryPage::saveAndExpire(Akonadi::Collection &collection, bool s
         }
     }
     if (!attribute) {
-        attribute =  collection.attribute<MailCommon::ExpireCollectionAttribute>(Akonadi::Collection::AddIfMissing);
+        attribute = collection.attribute<MailCommon::ExpireCollectionAttribute>(Akonadi::Collection::AddIfMissing);
     }
 
     attribute->setAutoExpire(enableGlobally);
     // we always write out days now
     attribute->setReadExpireAge(expireReadMailSB->value());
     attribute->setUnreadExpireAge(expireUnreadMailSB->value());
-    attribute->setReadExpireUnits(expireReadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays :
-                                  MailCommon::ExpireCollectionAttribute::ExpireNever);
-    attribute->setUnreadExpireUnits(expireUnreadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays :
-                                    MailCommon::ExpireCollectionAttribute::ExpireNever);
+    attribute->setReadExpireUnits(expireReadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays
+                                  : MailCommon::ExpireCollectionAttribute::ExpireNever);
+    attribute->setUnreadExpireUnits(expireUnreadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays
+                                    : MailCommon::ExpireCollectionAttribute::ExpireNever);
 
     if (deletePermanentlyRB->isChecked()) {
         attribute->setExpireAction(ExpireCollectionAttribute::ExpireDelete);
@@ -271,4 +271,3 @@ void CollectionExpiryPage::slotChanged()
 {
     mChanged = true;
 }
-

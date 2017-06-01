@@ -38,12 +38,11 @@ FilterActionWithUrlHelpButton::FilterActionWithUrlHelpButton(QWidget *parent)
 
 FilterActionWithUrlHelpButton::~FilterActionWithUrlHelpButton()
 {
-
 }
 
 FilterActionWithUrl::FilterActionWithUrl(const QString &name, const QString &label, QObject *parent)
-    : FilterAction(name, label, parent),
-      mHelpButton(nullptr)
+    : FilterAction(name, label, parent)
+    , mHelpButton(nullptr)
 {
 }
 
@@ -125,4 +124,3 @@ QString FilterActionWithUrl::displayString() const
 {
     return label() + QLatin1String(" \"") + argsAsString().toHtmlEscaped() + QLatin1String("\"");
 }
-

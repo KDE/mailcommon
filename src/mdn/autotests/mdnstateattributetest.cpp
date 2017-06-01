@@ -22,12 +22,10 @@
 MDNStateAttributeTest::MDNStateAttributeTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 MDNStateAttributeTest::~MDNStateAttributeTest()
 {
-
 }
 
 void MDNStateAttributeTest::shouldHaveDefaultValue()

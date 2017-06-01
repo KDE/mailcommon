@@ -20,8 +20,7 @@
 
 #include <KMessageWidget>
 #include "mailcommon_private_export.h"
-namespace MailCommon
-{
+namespace MailCommon {
 class MAILCOMMON_TESTS_EXPORT InvalidFilterInfoWidget : public KMessageWidget
 {
     Q_OBJECT

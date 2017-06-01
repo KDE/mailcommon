@@ -38,14 +38,11 @@ class KJob;
 
 class QWidget;
 
-namespace Akonadi
-{
+namespace Akonadi {
 class ItemFetchJob;
 }
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * Writes an entire folder structure to an archive file. The archive is
  * structured like a hierarchy of maildir folders. However, every type of
@@ -53,7 +50,7 @@ namespace MailCommon
  *
  * The job deletes itself after it finished.
  */
-class  MAILCOMMON_EXPORT BackupJob : public QObject
+class MAILCOMMON_EXPORT BackupJob : public QObject
 {
     Q_OBJECT
 
@@ -124,7 +121,6 @@ private:
     Akonadi::ItemFetchJob *mCurrentJob;
     bool mDisplayMessageBox;
 };
-
 }
 
 #endif

@@ -37,9 +37,7 @@
 
 class KJob;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class ExpireJob : public ScheduledJob
 {
     Q_OBJECT
@@ -79,7 +77,8 @@ public:
     {
     }
 
-    ScheduledJob *run() Q_DECL_OVERRIDE {
+    ScheduledJob *run() Q_DECL_OVERRIDE
+    {
         return folder().isValid() ? new ExpireJob(folder(), isImmediate()) : 0;
     }
 
@@ -88,8 +87,6 @@ public:
         return 1;
     }
 };
-
 } // namespace
 
 #endif
-

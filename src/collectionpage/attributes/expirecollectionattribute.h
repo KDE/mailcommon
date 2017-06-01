@@ -24,9 +24,7 @@
 #include <Attribute>
 #include <Collection>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MAILCOMMON_EXPORT ExpireCollectionAttribute : public Akonadi::Attribute
 {
 public:
@@ -135,12 +133,10 @@ private:
     bool mExpireMessages;         // true if old messages are expired
     int mUnreadExpireAge;         // Given in unreadExpireUnits
     int mReadExpireAge;           // Given in readExpireUnits
-    ExpireCollectionAttribute::ExpireUnits  mUnreadExpireUnits;
-    ExpireCollectionAttribute::ExpireUnits  mReadExpireUnits;
+    ExpireCollectionAttribute::ExpireUnits mUnreadExpireUnits;
+    ExpireCollectionAttribute::ExpireUnits mReadExpireUnits;
     ExpireCollectionAttribute::ExpireAction mExpireAction;
     Akonadi::Collection::Id mExpireToFolderId;
 };
-
 }
 #endif /* EXPIRATIONCOLLECTIONATTRIBUTE_H */
-

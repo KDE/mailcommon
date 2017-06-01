@@ -40,20 +40,19 @@
 #include <QDialogButtonBox>
 #include <QPushButton>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class Q_DECL_HIDDEN FolderSelectionDialog::FolderSelectionDialogPrivate
 {
 public:
     FolderSelectionDialogPrivate()
-        : folderTreeWidget(nullptr),
-          mUser1Button(nullptr),
-          mOkButton(nullptr),
-          mNotAllowToCreateNewFolder(false),
-          mUseGlobalSettings(true)
+        : folderTreeWidget(nullptr)
+        , mUser1Button(nullptr)
+        , mOkButton(nullptr)
+        , mNotAllowToCreateNewFolder(false)
+        , mUseGlobalSettings(true)
     {
     }
+
     FolderTreeWidget *folderTreeWidget;
     QPushButton *mUser1Button;
     QPushButton *mOkButton;
@@ -62,7 +61,8 @@ public:
 };
 
 FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOptions options)
-    : QDialog(parent), d(new FolderSelectionDialogPrivate())
+    : QDialog(parent)
+    , d(new FolderSelectionDialogPrivate())
 {
     setObjectName(QStringLiteral("folder dialog"));
 
@@ -83,7 +83,7 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
         d->mUser1Button->setAutoDefault(false);
         buttonBox->addButton(d->mUser1Button, QDialogButtonBox::ActionRole);
         KGuiItem::assign(d->mUser1Button, KGuiItem(i18n("&New Subfolder..."), QStringLiteral("folder-new"),
-                         i18n("Create a new subfolder under the currently selected folder")));
+                                                   i18n("Create a new subfolder under the currently selected folder")));
     }
     FolderTreeWidget::TreeViewOptions opt = FolderTreeWidget::None;
     if (options & FolderSelectionDialog::ShowUnreadCount) {
@@ -91,8 +91,8 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
     }
     opt |= FolderTreeWidget::UseDistinctSelectionModel;
 
-    FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelOptions optReadableProxy =
-        FolderTreeWidgetProxyModel::None;
+    FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelOptions optReadableProxy
+        = FolderTreeWidgetProxyModel::None;
 
     if (options & FolderSelectionDialog::HideVirtualFolder) {
         optReadableProxy |= FolderTreeWidgetProxyModel::HideVirtualFolder;
@@ -124,7 +124,6 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
         d->folderTreeWidget->folderTreeView()->setContextMenuPolicy(Qt::CustomContextMenu);
         connect(d->folderTreeWidget->folderTreeView(), &QWidget::customContextMenuRequested,
                 this, &FolderSelectionDialog::slotFolderTreeWidgetContextMenuRequested);
-
     }
 
     connect(d->folderTreeWidget->selectionModel(), &QItemSelectionModel::selectionChanged,
@@ -137,7 +136,6 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
 
     d->mUseGlobalSettings = !(options & NotUseGlobalSettings);
     readConfig();
-
 }
 
 FolderSelectionDialog::~FolderSelectionDialog()
@@ -158,8 +156,8 @@ void FolderSelectionDialog::slotFolderTreeWidgetContextMenuRequested(const QPoin
 void FolderSelectionDialog::slotDoubleClick(const QModelIndex &index)
 {
     Q_UNUSED(index);
-    const bool hasSelectedCollection =
-        (!d->folderTreeWidget->selectionModel()->selectedIndexes().isEmpty());
+    const bool hasSelectedCollection
+        = (!d->folderTreeWidget->selectionModel()->selectedIndexes().isEmpty());
     if (hasSelectedCollection) {
         accept();
     }
@@ -193,8 +191,8 @@ bool FolderSelectionDialog::canCreateCollection(Akonadi::Collection &parentCol)
         return false;
     }
 
-    if ((parentCol.rights() & Akonadi::Collection::CanCreateCollection) &&
-            parentCol.contentMimeTypes().contains(Akonadi::Collection::mimeType())) {
+    if ((parentCol.rights() & Akonadi::Collection::CanCreateCollection)
+        && parentCol.contentMimeTypes().contains(Akonadi::Collection::mimeType())) {
         return true;
     }
     return false;
@@ -205,8 +203,8 @@ void FolderSelectionDialog::slotAddChildFolder()
     Akonadi::Collection parentCol;
     if (canCreateCollection(parentCol)) {
         const QString name = QInputDialog::getText(this,
-                             i18nc("@title:window", "New Folder"),
-                             i18nc("@label:textbox, name of a thing", "Name"));
+                                                   i18nc("@title:window", "New Folder"),
+                                                   i18nc("@label:textbox, name of a thing", "Name"));
 
         if (name.isEmpty()) {
             return;
@@ -232,8 +230,8 @@ void FolderSelectionDialog::collectionCreationResult(KJob *job)
 
 void FolderSelectionDialog::slotSelectionChanged()
 {
-    const bool enablebuttons =
-        (!d->folderTreeWidget->selectionModel()->selectedIndexes().isEmpty());
+    const bool enablebuttons
+        = (!d->folderTreeWidget->selectionModel()->selectedIndexes().isEmpty());
     d->mOkButton->setEnabled(enablebuttons);
 
     if (!d->mNotAllowToCreateNewFolder) {
@@ -307,6 +305,4 @@ void FolderSelectionDialog::hideEvent(QHideEvent *)
 {
     d->folderTreeWidget->clearFilter();
 }
-
 }
-

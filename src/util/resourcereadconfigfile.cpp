@@ -27,8 +27,8 @@ public:
     ResourceReadConfigFilePrivate()
         : mConfig(nullptr)
     {
-
     }
+
     ~ResourceReadConfigFilePrivate()
     {
         delete mConfig;

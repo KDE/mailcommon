@@ -43,7 +43,6 @@ InvalidFilterWidget::InvalidFilterWidget(QWidget *parent)
 
 InvalidFilterWidget::~InvalidFilterWidget()
 {
-
 }
 
 void InvalidFilterWidget::setInvalidFilters(const QVector<InvalidFilterInfo> &lst)

@@ -39,4 +39,3 @@ QString FilterActionWithNone::argsAsString() const
 {
     return QString();
 }
-

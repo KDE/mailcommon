@@ -59,11 +59,12 @@ using KPIM::BroadcastStatus;
   - Expire All Folders                              [KMMainWidget::slotExpireAll()]
 */
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 ExpireJob::ExpireJob(const Akonadi::Collection &folder, bool immediate)
-    : ScheduledJob(folder, immediate), mMaxUnreadTime(0), mMaxReadTime(0), mMoveToFolder(0)
+    : ScheduledJob(folder, immediate)
+    , mMaxUnreadTime(0)
+    , mMaxReadTime(0)
+    , mMoveToFolder(0)
 {
 }
 
@@ -84,9 +85,9 @@ void ExpireJob::execute()
     int unreadDays, readDays;
     bool mustDeleteExpirationAttribute = false;
 
-    MailCommon::ExpireCollectionAttribute *expirationAttribute =
-        MailCommon::Util::expirationCollectionAttribute(
-            mSrcFolder, mustDeleteExpirationAttribute);
+    MailCommon::ExpireCollectionAttribute *expirationAttribute
+        = MailCommon::Util::expirationCollectionAttribute(
+        mSrcFolder, mustDeleteExpirationAttribute);
 
     expirationAttribute->daysToExpire(unreadDays, readDays);
     if (mustDeleteExpirationAttribute) {
@@ -136,8 +137,8 @@ void ExpireJob::itemFetchResult(KJob *job)
         const KMime::Message::Ptr mb = item.payload<KMime::Message::Ptr>();
         Akonadi::MessageStatus status;
         status.setStatusFromFlags(item.flags());
-        if ((status.isImportant() || status.isToAct() || status.isWatched()) &&
-                SettingsIf->excludeImportantMailFromExpiry()) {
+        if ((status.isImportant() || status.isToAct() || status.isWatched())
+            && SettingsIf->excludeImportantMailFromExpiry()) {
             continue;
         }
 
@@ -167,9 +168,9 @@ void ExpireJob::done()
         mCancellable = false;
         bool mustDeleteExpirationAttribute = false;
 
-        MailCommon::ExpireCollectionAttribute *expirationAttribute =
-            MailCommon::Util::expirationCollectionAttribute(
-                mSrcFolder, mustDeleteExpirationAttribute);
+        MailCommon::ExpireCollectionAttribute *expirationAttribute
+            = MailCommon::Util::expirationCollectionAttribute(
+            mSrcFolder, mustDeleteExpirationAttribute);
 
         if (expirationAttribute->expireAction() == MailCommon::ExpireCollectionAttribute::ExpireDelete) {
             // Expire by deletion, i.e. move to null target folder
@@ -255,9 +256,9 @@ void ExpireJob::slotExpireDone(KJob *job)
     const int error = job->error();
     bool mustDeleteExpirationAttribute = false;
 
-    MailCommon::ExpireCollectionAttribute *expirationAttribute =
-        MailCommon::Util::expirationCollectionAttribute(
-            mSrcFolder, mustDeleteExpirationAttribute);
+    MailCommon::ExpireCollectionAttribute *expirationAttribute
+        = MailCommon::Util::expirationCollectionAttribute(
+        mSrcFolder, mustDeleteExpirationAttribute);
 
     switch (error) {
     case KJob::NoError:
@@ -301,6 +302,4 @@ void ExpireJob::slotExpireDone(KJob *job)
     }
     deleteLater();
 }
-
 }
-

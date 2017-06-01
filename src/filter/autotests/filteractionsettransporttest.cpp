@@ -6,12 +6,10 @@
 FilterActionSetTransportTest::FilterActionSetTransportTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionSetTransportTest::~FilterActionSetTransportTest()
 {
-
 }
 
 void FilterActionSetTransportTest::shouldBeEmpty()

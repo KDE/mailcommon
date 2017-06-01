@@ -34,8 +34,10 @@
 using namespace MailCommon;
 
 //----------------------------------------------------------------------------
-FolderJob::FolderJob() :
-    mErrorCode(0), mStarted(false), mCancellable(false)
+FolderJob::FolderJob()
+    : mErrorCode(0)
+    , mStarted(false)
+    , mCancellable(false)
 {
 }
 
@@ -76,4 +78,3 @@ void FolderJob::setCancellable(bool b)
 {
     mCancellable = b;
 }
-

@@ -25,9 +25,7 @@
 class QPushButton;
 class KUrlRequester;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * @short A widget to play a sound from a given URL.
  */
@@ -83,7 +81,6 @@ private:
     KUrlRequester *m_urlRequester;
     QPushButton *m_playButton;
 };
-
 }
 
 #endif

@@ -23,9 +23,7 @@
 #include <Collection>
 #include <EntityRightsFilterModel>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class FolderTreeWidgetProxyModel : public Akonadi::EntityRightsFilterModel
 {
     Q_OBJECT
@@ -40,8 +38,7 @@ public:
     Q_DECLARE_FLAGS(FolderTreeWidgetProxyModelOptions, FolderTreeWidgetProxyModelOption)
 
     explicit FolderTreeWidgetProxyModel(
-        QObject *parent = nullptr,
-        FolderTreeWidgetProxyModelOptions = FolderTreeWidgetProxyModel::None);
+        QObject *parent = nullptr, FolderTreeWidgetProxyModelOptions = FolderTreeWidgetProxyModel::None);
 
     virtual ~FolderTreeWidgetProxyModel();
 
@@ -74,7 +71,6 @@ private:
     class Private;
     Private *const d;
 };
-
 }
 
 #endif

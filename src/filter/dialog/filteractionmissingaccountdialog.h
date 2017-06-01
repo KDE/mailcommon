@@ -21,16 +21,13 @@
 #define FILTERACTIONMISSINGACCOUNTDIALOG_H
 
 #include <QDialog>
-namespace MailCommon
-{
+namespace MailCommon {
 class KMFilterAccountList;
 class FilterActionMissingAccountDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingAccountDialog(const QStringList &lstAccount,
-            const QString &filtername,
-            QWidget *parent = nullptr);
+    explicit FilterActionMissingAccountDialog(const QStringList &lstAccount, const QString &filtername, QWidget *parent = nullptr);
     ~FilterActionMissingAccountDialog();
     QStringList selectedAccount() const;
     static bool allAccountExist(const QStringList &lst);

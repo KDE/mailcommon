@@ -22,16 +22,12 @@
 
 #include <QDialog>
 class QListWidget;
-namespace MailCommon
-{
+namespace MailCommon {
 class FilterActionMissingTagDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingTagDialog(const QMap<QUrl, QString> &templateList,
-                                          const QString &filtername,
-                                          const QString &argsStr,
-                                          QWidget *parent = nullptr);
+    explicit FilterActionMissingTagDialog(const QMap<QUrl, QString> &templateList, const QString &filtername, const QString &argsStr, QWidget *parent = nullptr);
     ~FilterActionMissingTagDialog();
     QString selectedTag() const;
 
@@ -47,6 +43,5 @@ private:
     };
     QListWidget *mTagList;
 };
-
 }
 #endif // FILTERACTIONMISSINGTAGDIALOG_H

@@ -61,7 +61,7 @@ FilterAction *FilterActionSendFakeDisposition::newAction()
 bool FilterActionSendFakeDisposition::isEmpty() const
 {
     const int index = mParameterList.indexOf(mParameter);
-    return (index < 1);
+    return index < 1;
 }
 
 FilterAction::ReturnCode FilterActionSendFakeDisposition::process(ItemContext &context, bool) const
@@ -126,4 +126,3 @@ QString FilterActionSendFakeDisposition::informationAboutNotValidAction() const
 {
     return i18n("Fake type undefined.");
 }
-

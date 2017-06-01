@@ -84,7 +84,7 @@ OrgKdeAkonadiPOP3SettingsInterface *MailCommon::Util::createPop3SettingsInterfac
 {
     return
         new OrgKdeAkonadiPOP3SettingsInterface(
-            QLatin1String("org.freedesktop.Akonadi.Resource.") + ident, QStringLiteral("/Settings"), QDBusConnection::sessionBus());
+        QLatin1String("org.freedesktop.Akonadi.Resource.") + ident, QStringLiteral("/Settings"), QDBusConnection::sessionBus());
 }
 
 bool MailCommon::Util::isVirtualCollection(const Akonadi::Collection &collection)
@@ -99,17 +99,17 @@ bool MailCommon::Util::isVirtualCollection(const QString &resource)
 
 bool MailCommon::Util::isLocalCollection(const QString &resource)
 {
-    return resource.contains(QStringLiteral("akonadi_mbox_resource")) ||
-           resource.contains(QStringLiteral("akonadi_maildir_resource")) ||
-           resource.contains(QStringLiteral("akonadi_mixedmaildir_resource"));
+    return resource.contains(QStringLiteral("akonadi_mbox_resource"))
+           || resource.contains(QStringLiteral("akonadi_maildir_resource"))
+           || resource.contains(QStringLiteral("akonadi_mixedmaildir_resource"));
 }
 
 QString MailCommon::Util::fullCollectionPath(const Akonadi::Collection &collection)
 {
     QString fullPath;
 
-    QModelIndex idx =
-        Akonadi::EntityTreeModel::modelIndexForCollection(KernelIf->collectionModel(), collection);
+    QModelIndex idx
+        = Akonadi::EntityTreeModel::modelIndexForCollection(KernelIf->collectionModel(), collection);
     if (!idx.isValid()) {
         return fullPath;
     }
@@ -143,12 +143,12 @@ Akonadi::AgentInstance::List MailCommon::Util::agentInstances(bool excludeMailDi
     for (const Akonadi::AgentInstance &instance : agentList) {
         const QStringList capabilities(instance.type().capabilities());
         if (instance.type().mimeTypes().contains(KMime::Message::mimeType())) {
-            if (capabilities.contains(QStringLiteral("Resource")) &&
-                    !capabilities.contains(QStringLiteral("Virtual")) &&
-                    !capabilities.contains(QStringLiteral("MailTransport"))) {
+            if (capabilities.contains(QStringLiteral("Resource"))
+                && !capabilities.contains(QStringLiteral("Virtual"))
+                && !capabilities.contains(QStringLiteral("MailTransport"))) {
                 relevantInstances << instance;
-            } else if (!excludeMailDispacher &&
-                       instance.identifier() == QLatin1String("akonadi_maildispatcher_agent")) {
+            } else if (!excludeMailDispacher
+                       && instance.identifier() == QLatin1String("akonadi_maildispatcher_agent")) {
                 relevantInstances << instance;
             }
         }
@@ -164,8 +164,8 @@ uint MailCommon::Util::folderIdentity(const Akonadi::Item &item)
         if (col.resource().isEmpty()) {
             col = parentCollectionFromItem(item);
         }
-        const QSharedPointer<FolderSettings> fd =
-            FolderSettings::forCollection(col, false);
+        const QSharedPointer<FolderSettings> fd
+            = FolderSettings::forCollection(col, false);
 
         id = fd->identity();
     }
@@ -203,8 +203,8 @@ static QModelIndex indexBelow(QAbstractItemModel *model, const QModelIndex &curr
     while (currentParent.isValid()) {
         // check if the parent has children except from us
         if (model->rowCount(grandParent) > currentParent.row() + 1) {
-            const QModelIndex index =
-                indexBelow(model, model->index(currentParent.row() + 1, 0, grandParent));
+            const QModelIndex index
+                = indexBelow(model, model->index(currentParent.row() + 1, 0, grandParent));
             if (index.isValid()) {
                 return index;
             }
@@ -243,10 +243,8 @@ static QModelIndex indexAbove(QAbstractItemModel *model, const QModelIndex &curr
     return lastChildOfModel(model, previousSibling);
 }
 
-QModelIndex MailCommon::Util::nextUnreadCollection(QAbstractItemModel *model,
-        const QModelIndex &current,
-        SearchDirection direction,
-        bool (*ignoreCollectionCallback)(const Akonadi::Collection &collection))
+QModelIndex MailCommon::Util::nextUnreadCollection(QAbstractItemModel *model, const QModelIndex &current, SearchDirection direction, bool (*ignoreCollectionCallback)(
+                                                       const Akonadi::Collection &collection))
 {
     QModelIndex index = current;
     while (true) {
@@ -261,11 +259,10 @@ QModelIndex MailCommon::Util::nextUnreadCollection(QAbstractItemModel *model,
         }
 
         // check if the index is a collection
-        const Akonadi::Collection collection =
-            index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const Akonadi::Collection collection
+            = index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
         if (collection.isValid()) {
-
             // check if it is unread
             if (collection.statistics().unreadCount() > 0) {
                 if (ignoreCollectionCallback && ignoreCollectionCallback(collection)) {
@@ -354,17 +351,19 @@ QString MailCommon::Util::convertFolderPathToCollectionStr(const QString &folder
 
 bool MailCommon::Util::foundMailer()
 {
-    const QStringList lst = { MailImporter::FilterEvolution::defaultSettingsPath(),
-                              MailImporter::FilterEvolution_v2::defaultSettingsPath(),
-                              MailImporter::FilterEvolution_v3::defaultSettingsPath(),
-                              MailImporter::FilterBalsa::defaultSettingsPath(),
-                              MailImporter::FilterClawsMail::defaultSettingsPath(),
-                              MailImporter::FilterOpera::defaultSettingsPath(),
-                              MailImporter::FilterSylpheed::defaultSettingsPath(),
-                              MailImporter::FilterThunderbird::defaultSettingsPath(),
-                              MailImporter::OtherMailerUtil::trojitaDefaultPath(),
-                              MailImporter::FilterIcedove::defaultSettingsPath(),
-                              MailImporter::OtherMailerUtil::gearyDefaultPath()};
+    const QStringList lst = {
+        MailImporter::FilterEvolution::defaultSettingsPath(),
+        MailImporter::FilterEvolution_v2::defaultSettingsPath(),
+        MailImporter::FilterEvolution_v3::defaultSettingsPath(),
+        MailImporter::FilterBalsa::defaultSettingsPath(),
+        MailImporter::FilterClawsMail::defaultSettingsPath(),
+        MailImporter::FilterOpera::defaultSettingsPath(),
+        MailImporter::FilterSylpheed::defaultSettingsPath(),
+        MailImporter::FilterThunderbird::defaultSettingsPath(),
+        MailImporter::OtherMailerUtil::trojitaDefaultPath(),
+        MailImporter::FilterIcedove::defaultSettingsPath(),
+        MailImporter::OtherMailerUtil::gearyDefaultPath()
+    };
 
     for (const QString &path : lst) {
         QDir directory(path);
@@ -392,9 +391,9 @@ MailCommon::ExpireCollectionAttribute *MailCommon::Util::expirationCollectionAtt
             attr->setReadExpireUnits((MailCommon::ExpireCollectionAttribute::ExpireUnits)configGroup.readEntry("ReadExpireUnits", (int)MailCommon::ExpireCollectionAttribute::ExpireMonths));
             attr->setUnreadExpireAge(configGroup.readEntry("UnreadExpireAge", 12));
             attr->setUnreadExpireUnits((MailCommon::ExpireCollectionAttribute::ExpireUnits)configGroup.readEntry("UnreadExpireUnits", (int)MailCommon::ExpireCollectionAttribute::ExpireNever));
-            attr->setExpireAction(configGroup.readEntry("ExpireAction", "Delete") == QLatin1String("Move") ?
-                                  MailCommon::ExpireCollectionAttribute::ExpireMove :
-                                  MailCommon::ExpireCollectionAttribute::ExpireDelete);
+            attr->setExpireAction(configGroup.readEntry("ExpireAction", "Delete") == QLatin1String("Move")
+                                  ? MailCommon::ExpireCollectionAttribute::ExpireMove
+                                  : MailCommon::ExpireCollectionAttribute::ExpireDelete);
             attr->setExpireToFolderId(configGroup.readEntry("ExpireToFolder", -1));
         }
 
@@ -402,4 +401,3 @@ MailCommon::ExpireCollectionAttribute *MailCommon::Util::expirationCollectionAtt
     }
     return attr;
 }
-

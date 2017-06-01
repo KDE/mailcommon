@@ -22,14 +22,12 @@
 
 #include "filteractionwithaddress.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionRedirect - redirect to
 // Redirect message to another user
 //=============================================================================
-class FilterActionRedirect: public FilterActionWithAddress
+class FilterActionRedirect : public FilterActionWithAddress
 {
     Q_OBJECT
 public:
@@ -40,7 +38,6 @@ public:
     QString sieveCode() const Q_DECL_OVERRIDE;
     QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

@@ -44,8 +44,7 @@
 #include <AgentInstance>
 #include <Collection>
 
-namespace Akonadi
-{
+namespace Akonadi {
 class Item;
 }
 
@@ -53,14 +52,12 @@ class QAbstractItemModel;
 class QModelIndex;
 class QString;
 
-namespace MailCommon
-{
+namespace MailCommon {
 /**
  * The Util namespace contains a collection of helper functions use in
  * various places.
  */
-namespace Util
-{
+namespace Util {
 /**
    * Returns the index of the next unread collection following a given index.
    *
@@ -70,14 +67,10 @@ namespace Util
    * @param ignoreCollectionCallback A callback method to ignore certain
    *        collections by returning @c true.
    */
-QModelIndex nextUnreadCollection(QAbstractItemModel *model,
-                                 const QModelIndex &current,
-                                 SearchDirection direction,
-                                 bool (*ignoreCollectionCallback)(const Akonadi::Collection &collection) = 0);
+QModelIndex nextUnreadCollection(QAbstractItemModel *model, const QModelIndex &current, SearchDirection direction, bool (*ignoreCollectionCallback)(const Akonadi::Collection &collection) = 0);
 
 bool ignoreNewMailInFolder(const Akonadi::Collection &collection);
 }
-
 }
 
 #endif

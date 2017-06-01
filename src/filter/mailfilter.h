@@ -34,9 +34,7 @@
 
 class KConfigGroup;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MAILCOMMON_EXPORT MailFilter
 {
     friend MAILCOMMON_EXPORT QDataStream &operator<<(QDataStream &stream, const MailFilter &filter);
@@ -54,7 +52,9 @@ public:
       @param NoResult For internal use only!
 
     */
-    enum ReturnCode { NoResult, GoOn, CriticalError };
+    enum ReturnCode {
+        NoResult, GoOn, CriticalError
+    };
 
     /** Account type codes used by setApplicability. They mean:
 
@@ -65,7 +65,9 @@ public:
       @param Checked apply to all accounts specified by setApplyOnAccount
 
     */
-    enum AccountType { All, ButImap, Checked };
+    enum AccountType {
+        All, ButImap, Checked
+    };
 
     /** Constructor that initializes basic settings. */
     MailFilter();
@@ -335,7 +337,6 @@ private:
 
 MAILCOMMON_EXPORT QDataStream &operator<<(QDataStream &stream, const MailFilter &filter);
 MAILCOMMON_EXPORT QDataStream &operator>>(QDataStream &stream, MailFilter &filter);
-
 }
 
 #endif /*MAILCOMMON_MAILFILTER_H*/

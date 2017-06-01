@@ -20,14 +20,12 @@ using namespace MailCommon;
 
 InvalidFilterInfo::InvalidFilterInfo()
 {
-
 }
 
 InvalidFilterInfo::InvalidFilterInfo(const QString &name, const QString &information)
-    : mName(name),
-      mInformation(information)
+    : mName(name)
+    , mInformation(information)
 {
-
 }
 
 QString InvalidFilterInfo::information() const
@@ -54,4 +52,3 @@ bool InvalidFilterInfo::operator ==(const InvalidFilterInfo &other) const
 {
     return (mName == other.name()) && (mInformation == other.information());
 }
-

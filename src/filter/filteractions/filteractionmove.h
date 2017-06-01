@@ -22,14 +22,12 @@
 
 #include "filteractionwithfolder.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionMove - move into folder
 // File message into another mail folder
 //=============================================================================
-class FilterActionMove: public FilterActionWithFolder
+class FilterActionMove : public FilterActionWithFolder
 {
     Q_OBJECT
 public:
@@ -42,7 +40,6 @@ public:
 
     QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

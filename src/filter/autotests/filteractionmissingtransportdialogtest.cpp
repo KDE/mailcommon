@@ -29,12 +29,10 @@
 FilterActionMissingTransportDialogTest::FilterActionMissingTransportDialogTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionMissingTransportDialogTest::~FilterActionMissingTransportDialogTest()
 {
-
 }
 
 void FilterActionMissingTransportDialogTest::shouldHaveDefaultValue()

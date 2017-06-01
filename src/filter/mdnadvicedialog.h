@@ -28,9 +28,7 @@
 
 #include <QDialog>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MDNAdviceHelper : public QObject
 {
     Q_OBJECT
@@ -54,7 +52,7 @@ public:
      * Will also set the MailCommon::MDNStateAttribute on the given item
      * to what the user has selected.
      */
-    QPair<bool, KMime::MDN::SendingMode>checkAndSetMDNInfo(
+    QPair<bool, KMime::MDN::SendingMode> checkAndSetMDNInfo(
         const Akonadi::Item &item, KMime::MDN::DispositionType d, bool forceSend = false);
 
     MailCommon::MDNStateAttribute::MDNSentState dispositionToSentState(
@@ -97,7 +95,6 @@ protected:
     // Reimplemented
     void slotButtonClicked(int button);
 };
-
 }
 
 #endif

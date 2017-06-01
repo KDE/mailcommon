@@ -31,9 +31,7 @@ class QCheckBox;
 class QPushButton;
 class QRadioButton;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class FolderRequester;
 
 class MAILCOMMON_EXPORT CollectionExpiryPage : public Akonadi::CollectionPropertiesPage
@@ -75,7 +73,6 @@ private:
 };
 
 AKONADI_COLLECTION_PROPERTIES_PAGE_FACTORY(CollectionExpiryPageFactory, CollectionExpiryPage)
-
 }
 
 #endif

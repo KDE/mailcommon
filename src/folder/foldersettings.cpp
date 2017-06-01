@@ -36,9 +36,7 @@ using namespace Akonadi;
 #include <QMutexLocker>
 #include <QSharedPointer>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 static QMutex mapMutex;
 static QMap<Collection::Id, QSharedPointer<FolderSettings> > fcMap;
 
@@ -63,11 +61,11 @@ QSharedPointer<FolderSettings> FolderSettings::forCollection(
 }
 
 FolderSettings::FolderSettings(const Akonadi::Collection &col, bool writeconfig)
-    : mCollection(col),
-      mFormatMessage(MessageViewer::Viewer::Unknown),
-      mPutRepliesInSameFolder(false),
-      mHideInSelectionDialog(false),
-      mWriteConfig(writeconfig)
+    : mCollection(col)
+    , mFormatMessage(MessageViewer::Viewer::Unknown)
+    , mPutRepliesInSameFolder(false)
+    , mHideInSelectionDialog(false)
+    , mWriteConfig(writeconfig)
 {
     Q_ASSERT(col.isValid());
     mIdentity = KernelIf->identityManager()->defaultIdentity().uoid();
@@ -173,7 +171,7 @@ void FolderSettings::setCollection(const Akonadi::Collection &collection)
 
 void FolderSettings::slotIdentitiesChanged()
 {
-    uint defaultIdentity =  KernelIf->identityManager()->defaultIdentity().uoid();
+    uint defaultIdentity = KernelIf->identityManager()->defaultIdentity().uoid();
     // The default identity may have changed, therefore set it again if necessary
     if (mUseDefaultIdentity) {
         mIdentity = defaultIdentity;
@@ -223,7 +221,7 @@ void FolderSettings::readConfig()
     }
 
     mFormatMessage = static_cast<MessageViewer::Viewer::DisplayFormatMessage>(configGroup.readEntry("displayFormatOverride",
-                     static_cast<int>(MessageViewer::Viewer::UseGlobalSetting)));
+                                                                                                    static_cast<int>(MessageViewer::Viewer::UseGlobalSetting)));
 }
 
 bool FolderSettings::isValid() const
@@ -337,8 +335,8 @@ uint FolderSettings::fallBackIdentity() const
             identityId = remoteAccountIdent;
         }
     }
-    if (identityId != -1 &&
-            !KernelIf->identityManager()->identityForUoid(identityId).isNull()) {
+    if (identityId != -1
+        && !KernelIf->identityManager()->identityForUoid(identityId).isNull()) {
         return identityId;
     }
     return identityId;
@@ -416,6 +414,4 @@ void FolderSettings::setHideInSelectionDialog(bool hide)
 {
     mHideInSelectionDialog = hide;
 }
-
 }
-

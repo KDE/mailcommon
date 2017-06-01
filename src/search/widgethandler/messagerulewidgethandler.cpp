@@ -33,15 +33,15 @@ static const struct {
     SearchRule::Function id;
     const char *displayName;
 } MessageFunctions[] = {
-    { SearchRule::FuncContains,        I18N_NOOP("contains")          },
-    { SearchRule::FuncContainsNot,     I18N_NOOP("does not contain")  },
-    { SearchRule::FuncRegExp,          I18N_NOOP("matches regular expr.") },
-    { SearchRule::FuncNotRegExp,       I18N_NOOP("does not match reg. expr.") },
-    { SearchRule::FuncHasAttachment,   I18N_NOOP("has an attachment") },
+    { SearchRule::FuncContains, I18N_NOOP("contains")          },
+    { SearchRule::FuncContainsNot, I18N_NOOP("does not contain")  },
+    { SearchRule::FuncRegExp, I18N_NOOP("matches regular expr.") },
+    { SearchRule::FuncNotRegExp, I18N_NOOP("does not match reg. expr.") },
+    { SearchRule::FuncHasAttachment, I18N_NOOP("has an attachment") },
     { SearchRule::FuncHasNoAttachment, I18N_NOOP("has no attachment") },
 };
-static const int MessageFunctionCount =
-    sizeof(MessageFunctions) / sizeof(*MessageFunctions);
+static const int MessageFunctionCount
+    = sizeof(MessageFunctions) / sizeof(*MessageFunctions);
 
 //---------------------------------------------------------------------------
 
@@ -66,9 +66,7 @@ QWidget *MessageRuleWidgetHandler::createFunctionWidget(
 
 //---------------------------------------------------------------------------
 
-QWidget *MessageRuleWidgetHandler::createValueWidget(int number,
-        QStackedWidget *valueStack,
-        const QObject *receiver) const
+QWidget *MessageRuleWidgetHandler::createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const
 {
     if (number == 0) {
         KLineEdit *lineEdit = new KLineEdit(valueStack);
@@ -77,7 +75,7 @@ QWidget *MessageRuleWidgetHandler::createValueWidget(int number,
 
         lineEdit->setObjectName(QStringLiteral("regExpLineEdit"));
         QObject::connect(lineEdit, SIGNAL(textChanged(QString)), receiver, SLOT(slotValueChanged()));
-        QObject::connect(lineEdit, SIGNAL(returnPressed()),  receiver, SLOT(slotReturnPressed()));
+        QObject::connect(lineEdit, SIGNAL(returnPressed()), receiver, SLOT(slotReturnPressed()));
         return lineEdit;
     }
 
@@ -97,8 +95,8 @@ QWidget *MessageRuleWidgetHandler::createValueWidget(int number,
 SearchRule::Function MessageRuleWidgetHandler::currentFunction(
     const QStackedWidget *functionStack) const
 {
-    const PimCommon::MinimumComboBox *funcCombo =
-        functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("messageRuleFuncCombo"));
+    const PimCommon::MinimumComboBox *funcCombo
+        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("messageRuleFuncCombo"));
 
     if (funcCombo && funcCombo->currentIndex() >= 0) {
         return MessageFunctions[funcCombo->currentIndex()].id;
@@ -109,8 +107,7 @@ SearchRule::Function MessageRuleWidgetHandler::currentFunction(
 
 //---------------------------------------------------------------------------
 
-SearchRule::Function MessageRuleWidgetHandler::function(const QByteArray &field,
-        const QStackedWidget *functionStack) const
+SearchRule::Function MessageRuleWidgetHandler::function(const QByteArray &field, const QStackedWidget *functionStack) const
 {
     if (!handlesField(field)) {
         return SearchRule::FuncNone;
@@ -121,8 +118,7 @@ SearchRule::Function MessageRuleWidgetHandler::function(const QByteArray &field,
 
 //---------------------------------------------------------------------------
 
-QString MessageRuleWidgetHandler::currentValue(const QStackedWidget *valueStack,
-        SearchRule::Function) const
+QString MessageRuleWidgetHandler::currentValue(const QStackedWidget *valueStack, SearchRule::Function) const
 {
     const KLineEdit *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
@@ -135,9 +131,7 @@ QString MessageRuleWidgetHandler::currentValue(const QStackedWidget *valueStack,
 
 //---------------------------------------------------------------------------
 
-QString MessageRuleWidgetHandler::value(const QByteArray &field,
-                                        const QStackedWidget *functionStack,
-                                        const QStackedWidget *valueStack) const
+QString MessageRuleWidgetHandler::value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
         return QString();
@@ -155,9 +149,7 @@ QString MessageRuleWidgetHandler::value(const QByteArray &field,
 
 //---------------------------------------------------------------------------
 
-QString MessageRuleWidgetHandler::prettyValue(const QByteArray &field,
-        const QStackedWidget *functionStack,
-        const QStackedWidget *valueStack) const
+QString MessageRuleWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
         return QString();
@@ -177,13 +169,12 @@ QString MessageRuleWidgetHandler::prettyValue(const QByteArray &field,
 
 bool MessageRuleWidgetHandler::handlesField(const QByteArray &field) const
 {
-    return (field == "<message>");
+    return field == "<message>";
 }
 
 //---------------------------------------------------------------------------
 
-void MessageRuleWidgetHandler::reset(QStackedWidget *functionStack,
-                                     QStackedWidget *valueStack) const
+void MessageRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     // reset the function combo box
     PimCommon::MinimumComboBox *funcCombo = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("messageRuleFuncCombo"));
@@ -209,9 +200,7 @@ void MessageRuleWidgetHandler::reset(QStackedWidget *functionStack,
 
 //---------------------------------------------------------------------------
 
-bool MessageRuleWidgetHandler::setRule(QStackedWidget *functionStack,
-                                       QStackedWidget *valueStack,
-                                       const SearchRule::Ptr rule, bool isBalooSearch) const
+bool MessageRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const SearchRule::Ptr rule, bool isBalooSearch) const
 {
     if (!rule || !handlesField(rule->field())) {
         reset(functionStack, valueStack);
@@ -232,8 +221,8 @@ bool MessageRuleWidgetHandler::setRule(QStackedWidget *functionStack,
         }
     }
 
-    PimCommon::MinimumComboBox *funcCombo =
-        functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("messageRuleFuncCombo"));
+    PimCommon::MinimumComboBox *funcCombo
+        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("messageRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -246,8 +235,8 @@ bool MessageRuleWidgetHandler::setRule(QStackedWidget *functionStack,
         functionStack->setCurrentWidget(funcCombo);
     }
 
-    if (func == SearchRule::FuncHasAttachment  ||
-            func == SearchRule::FuncHasNoAttachment) {
+    if (func == SearchRule::FuncHasAttachment
+        || func == SearchRule::FuncHasNoAttachment) {
         QWidget *w = valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider"));
         valueStack->setCurrentWidget(w);
     } else {
@@ -267,9 +256,7 @@ bool MessageRuleWidgetHandler::setRule(QStackedWidget *functionStack,
 
 //---------------------------------------------------------------------------
 
-bool MessageRuleWidgetHandler::update(const QByteArray &field,
-                                      QStackedWidget *functionStack,
-                                      QStackedWidget *valueStack) const
+bool MessageRuleWidgetHandler::update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
         return false;
@@ -280,8 +267,8 @@ bool MessageRuleWidgetHandler::update(const QByteArray &field,
 
     // raise the correct value widget
     SearchRule::Function func = currentFunction(functionStack);
-    if (func == SearchRule::FuncHasAttachment  ||
-            func == SearchRule::FuncHasNoAttachment) {
+    if (func == SearchRule::FuncHasAttachment
+        || func == SearchRule::FuncHasNoAttachment) {
         QWidget *w = valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider"));
         valueStack->setCurrentWidget(w);
     } else {

@@ -20,10 +20,8 @@
 #define FILTERACTIONUNSETSTATUS_H
 
 #include "filteractionstatus.h"
-namespace MailCommon
-{
-
-class FilterActionUnsetStatus: public FilterActionStatus
+namespace MailCommon {
+class FilterActionUnsetStatus : public FilterActionStatus
 {
     Q_OBJECT
 public:

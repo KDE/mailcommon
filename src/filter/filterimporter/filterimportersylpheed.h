@@ -24,9 +24,7 @@
 
 class QFile;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MailFilter;
 
 class FilterImporterSylpheed : public FilterImporterAbstract
@@ -39,10 +37,7 @@ private:
     void parseFilters(const QDomElement &e);
     void parseConditions(const QDomElement &ruleFilter, MailCommon::MailFilter *filter);
     void parseActions(const QDomElement &e, MailCommon::MailFilter *filter);
-
 };
-
 }
 
 #endif /* FILTERIMPORTERSYLPHEED_P_H */
-

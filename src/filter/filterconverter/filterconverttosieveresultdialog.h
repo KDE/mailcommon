@@ -20,13 +20,11 @@
 
 #include <QDialog>
 
-namespace KPIMTextEdit
-{
+namespace KPIMTextEdit {
 class PlainTextEditorWidget;
 }
 
-namespace MailCommon
-{
+namespace MailCommon {
 class FilterConvertToSieveResultDialog : public QDialog
 {
     Q_OBJECT

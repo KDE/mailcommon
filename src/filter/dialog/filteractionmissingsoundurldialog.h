@@ -22,15 +22,12 @@
 
 #include <QDialog>
 class KUrlRequester;
-namespace MailCommon
-{
+namespace MailCommon {
 class FilterActionMissingSoundUrlDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingSoundUrlDialog(const QString &filtername,
-            const QString &argStr,
-            QWidget *parent = nullptr);
+    explicit FilterActionMissingSoundUrlDialog(const QString &filtername, const QString &argStr, QWidget *parent = nullptr);
     ~FilterActionMissingSoundUrlDialog();
     QString soundUrl() const;
 

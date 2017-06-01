@@ -42,13 +42,15 @@ QWidget *FilterActionSetTransport::createParamWidget(QWidget *parent) const
     transportCombobox->setObjectName(QStringLiteral("transportcombobox"));
     setParamWidgetValue(transportCombobox);
 
-    connect(transportCombobox, static_cast<void (MailTransport::TransportComboBox::*)(int)>(&MailTransport::TransportComboBox::currentIndexChanged), this, &FilterActionSetTransport::filterActionModified);
+    connect(transportCombobox, static_cast<void (MailTransport::TransportComboBox::*)(int)>(&MailTransport::TransportComboBox::currentIndexChanged), this,
+            &FilterActionSetTransport::filterActionModified);
 
     return transportCombobox;
 }
 
 FilterActionSetTransport::FilterActionSetTransport(QObject *parent)
-    : FilterAction(QStringLiteral("set transport"), i18n("Set Transport To"), parent), mParameter(-1)
+    : FilterAction(QStringLiteral("set transport"), i18n("Set Transport To"), parent)
+    , mParameter(-1)
 {
 }
 
@@ -124,7 +126,7 @@ void FilterActionSetTransport::setParamWidgetValue(QWidget *paramWidget) const
 
 bool FilterActionSetTransport::isEmpty() const
 {
-    return (mParameter == -1);
+    return mParameter == -1;
 }
 
 void FilterActionSetTransport::argsFromString(const QString &argsStr)
@@ -155,4 +157,3 @@ QString FilterActionSetTransport::informationAboutNotValidAction() const
 {
     return i18n("Mail transport not defined.");
 }
-

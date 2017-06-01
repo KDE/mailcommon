@@ -33,10 +33,10 @@
 
 using namespace MailCommon;
 
-SnippetVariableDialog::SnippetVariableDialog(const QString &variableName,
-        QMap<QString, QString> *variables,
-        QWidget *parent)
-    : QDialog(parent), mVariableName(variableName), mVariables(variables)
+SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<QString, QString> *variables, QWidget *parent)
+    : QDialog(parent)
+    , mVariableName(variableName)
+    , mVariables(variables)
 {
     setWindowTitle(i18n("Enter Values for Variables"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
@@ -96,4 +96,3 @@ void SnippetVariableDialog::slotAccepted()
 
     accept();
 }
-

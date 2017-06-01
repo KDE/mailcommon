@@ -41,9 +41,7 @@
 // This is for debugging purposes only, don't commit with it.
 //#define DEBUG_SCHEDULER
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class FolderJob;
 class ScheduledJob;
 
@@ -149,7 +147,6 @@ public:
 protected:
     bool mImmediate;
 };
-
 }
 
 #endif

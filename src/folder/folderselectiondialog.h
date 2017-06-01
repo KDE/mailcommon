@@ -29,9 +29,7 @@
 
 class KJob;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * A dialog that lets the user select a folder.
  * TODO: Move most of this to Akonadi::CollectionDialog
@@ -85,7 +83,6 @@ private:
     class FolderSelectionDialogPrivate;
     FolderSelectionDialogPrivate *const d;
 };
-
 }
 
 #endif

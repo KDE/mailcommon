@@ -27,9 +27,7 @@
 #include <QSharedPointer>
 #include <AkonadiCore/tag.h>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 // Our own copy of the tag data.
 // Useful in the config dialog, because the user might cancel his changes,
 // in which case we don't write them back.
@@ -82,17 +80,17 @@ public:
 
 private:
     Tag()
-        : isBold(false),
-          isItalic(false),
-          inToolbar(false),
-          isImmutable(false),
-          priority(0)
+        : isBold(false)
+        , isItalic(false)
+        , inToolbar(false)
+        , isImmutable(false)
+        , priority(0)
     {
     }
+
     Akonadi::Tag mTag;
 };
 Q_DECLARE_OPERATORS_FOR_FLAGS(Tag::SaveFlags)
-
 }
 
 #endif

@@ -22,9 +22,7 @@
 
 #include "filteractionwithstring.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * @short Abstract base class for filter actions with a mail address as parameter.
  *
@@ -70,7 +68,6 @@ public:
      */
     void clearParamWidget(QWidget *paramWidget) const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

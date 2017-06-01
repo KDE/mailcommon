@@ -27,12 +27,10 @@
 FilterActionMissingAccountDialogTest::FilterActionMissingAccountDialogTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionMissingAccountDialogTest::~FilterActionMissingAccountDialogTest()
 {
-
 }
 
 void FilterActionMissingAccountDialogTest::shouldHaveDefaultValue()

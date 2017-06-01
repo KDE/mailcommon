@@ -95,9 +95,7 @@ void MailCommon::RuleWidgetHandlerManager::unregisterHandler(const RuleWidgetHan
     mHandlers.erase(remove(mHandlers.begin(), mHandlers.end(), handler), mHandlers.end());
 }
 
-namespace
-{
-
+namespace {
 /**
  * Returns the number of immediate children of parent with the given object name.
  * Used by RuleWidgetHandlerManager::createWidgets().
@@ -113,19 +111,16 @@ int childCount(const QObject *parent, const QString &objName)
     }
     return count;
 }
-
 }
 
-void MailCommon::RuleWidgetHandlerManager::createWidgets(QStackedWidget *functionStack,
-        QStackedWidget *valueStack,
-        const QObject *receiver) const
+void MailCommon::RuleWidgetHandlerManager::createWidgets(QStackedWidget *functionStack, QStackedWidget *valueStack, const QObject *receiver) const
 {
     const_iterator end(mHandlers.constEnd());
     for (const_iterator it = mHandlers.constBegin(); it != end; ++it) {
         QWidget *w = nullptr;
         for (int i = 0;
-                (w = (*it)->createFunctionWidget(i, functionStack, receiver, mIsBalooSearch));
-                ++i) {
+             (w = (*it)->createFunctionWidget(i, functionStack, receiver, mIsBalooSearch));
+             ++i) {
             if (childCount(functionStack, w->objectName()) < 2) {
                 // there wasn't already a widget with this name, so add this widget
                 functionStack->addWidget(w);
@@ -136,8 +131,8 @@ void MailCommon::RuleWidgetHandlerManager::createWidgets(QStackedWidget *functio
             }
         }
         for (int i = 0;
-                (w = (*it)->createValueWidget(i, valueStack, receiver));
-                ++i) {
+             (w = (*it)->createValueWidget(i, valueStack, receiver));
+             ++i) {
             if (childCount(valueStack, w->objectName()) < 2) {
                 // there wasn't already a widget with this name, so add this widget
                 valueStack->addWidget(w);
@@ -163,9 +158,7 @@ SearchRule::Function MailCommon::RuleWidgetHandlerManager::function(
     return SearchRule::FuncNone;
 }
 
-QString MailCommon::RuleWidgetHandlerManager::value(const QByteArray &field,
-        const QStackedWidget *functionStack,
-        const QStackedWidget *valueStack) const
+QString MailCommon::RuleWidgetHandlerManager::value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
 {
     const_iterator end(mHandlers.constEnd());
     for (const_iterator it = mHandlers.constBegin(); it != end; ++it) {
@@ -177,9 +170,7 @@ QString MailCommon::RuleWidgetHandlerManager::value(const QByteArray &field,
     return QString();
 }
 
-QString MailCommon::RuleWidgetHandlerManager::prettyValue(const QByteArray &field,
-        const QStackedWidget *functionStack,
-        const QStackedWidget *valueStack) const
+QString MailCommon::RuleWidgetHandlerManager::prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
 {
     const_iterator end(mHandlers.constEnd());
     for (const_iterator it = mHandlers.constBegin(); it != end; ++it) {
@@ -191,8 +182,7 @@ QString MailCommon::RuleWidgetHandlerManager::prettyValue(const QByteArray &fiel
     return QString();
 }
 
-void MailCommon::RuleWidgetHandlerManager::reset(QStackedWidget *functionStack,
-        QStackedWidget *valueStack) const
+void MailCommon::RuleWidgetHandlerManager::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     const_iterator end(mHandlers.constEnd());
     for (const_iterator it = mHandlers.constBegin(); it != end; ++it) {
@@ -201,9 +191,7 @@ void MailCommon::RuleWidgetHandlerManager::reset(QStackedWidget *functionStack,
     update("", functionStack, valueStack);
 }
 
-void MailCommon::RuleWidgetHandlerManager::setRule(QStackedWidget *functionStack,
-        QStackedWidget *valueStack,
-        const SearchRule::Ptr rule) const
+void MailCommon::RuleWidgetHandlerManager::setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const SearchRule::Ptr rule) const
 {
     Q_ASSERT(rule);
     reset(functionStack, valueStack);
@@ -215,9 +203,7 @@ void MailCommon::RuleWidgetHandlerManager::setRule(QStackedWidget *functionStack
     }
 }
 
-void MailCommon::RuleWidgetHandlerManager::update(const QByteArray &field,
-        QStackedWidget *functionStack,
-        QStackedWidget *valueStack) const
+void MailCommon::RuleWidgetHandlerManager::update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     const_iterator end(mHandlers.constEnd());
     for (const_iterator it = mHandlers.constBegin(); it != end; ++it) {

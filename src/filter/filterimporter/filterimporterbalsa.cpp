@@ -39,7 +39,6 @@ FilterImporterBalsa::FilterImporterBalsa(QFile *file)
 FilterImporterBalsa::FilterImporterBalsa()
     : FilterImporterAbstract()
 {
-
 }
 
 FilterImporterBalsa::~FilterImporterBalsa()

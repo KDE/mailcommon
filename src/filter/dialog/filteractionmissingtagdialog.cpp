@@ -34,8 +34,7 @@
 using namespace MailCommon;
 
 FilterActionMissingTagDialog::FilterActionMissingTagDialog(
-    const QMap<QUrl, QString> &tagList, const QString &filtername,
-    const QString &argsStr, QWidget *parent)
+    const QMap<QUrl, QString> &tagList, const QString &filtername, const QString &argsStr, QWidget *parent)
     : QDialog(parent)
 {
     setModal(true);
@@ -58,7 +57,7 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
 
     QMap<QUrl, QString>::const_iterator map = tagList.constBegin();
     const QMap<QUrl, QString>::const_iterator mapEnd = tagList.constEnd();
-    for(;map != mapEnd; ++map) {
+    for (; map != mapEnd; ++map) {
         QListWidgetItem *item = new QListWidgetItem(map.value());
         item->setData(UrlData, map.key().toString());
         mTagList->addItem(item);
@@ -116,11 +115,10 @@ QString FilterActionMissingTagDialog::selectedTag() const
 void FilterActionMissingTagDialog::slotAddTag()
 {
     QPointer<MailCommon::AddTagDialog> dlg = new MailCommon::AddTagDialog(QList<KActionCollection *>(), this);
-    if (dlg->exec())  {
+    if (dlg->exec()) {
         QListWidgetItem *item = new QListWidgetItem(dlg->label());
         item->setData(UrlData, dlg->tag().url().url());
         mTagList->addItem(item);
     }
     delete dlg;
 }
-

@@ -22,19 +22,16 @@
 
 #include "filteractionwithstringlist.h"
 
-namespace PimCommon
-{
+namespace PimCommon {
 class MinimumComboBox;
 }
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionAddTag - append tag to message
 // Appends a tag to messages
 //=============================================================================
-class FilterActionAddTag: public FilterAction
+class FilterActionAddTag : public FilterAction
 {
     Q_OBJECT
 public:
@@ -67,7 +64,6 @@ private:
     QString mParameter;
     mutable PimCommon::MinimumComboBox *mComboBox;
 };
-
 }
 
 #endif

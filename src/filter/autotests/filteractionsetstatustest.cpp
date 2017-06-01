@@ -24,12 +24,10 @@
 FilterActionSetStatusTest::FilterActionSetStatusTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionSetStatusTest::~FilterActionSetStatusTest()
 {
-
 }
 
 void FilterActionSetStatusTest::shouldHaveDefaultValue()

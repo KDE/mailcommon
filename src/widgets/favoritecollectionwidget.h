@@ -26,9 +26,7 @@
 class KXMLGUIClient;
 class KActionCollection;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MAILCOMMON_EXPORT FavoriteCollectionWidget : public Akonadi::EntityListView
 {
     Q_OBJECT
@@ -59,8 +57,6 @@ private:
     class Private;
     Private *const d;
 };
-
 }
 
 #endif /* MAILCOMMON_FAVORITECOLLECTIONWIDGET_H */
-

@@ -22,8 +22,7 @@
 #include <KConfigGroup>
 #include "mailcommon_export.h"
 
-namespace MailCommon
-{
+namespace MailCommon {
 class AccountConfigOrderDialogPrivate;
 class MAILCOMMON_EXPORT AccountConfigOrderDialog : public QDialog
 {

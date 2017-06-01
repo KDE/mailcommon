@@ -27,16 +27,13 @@
 
 #include <QObject>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class IKernel;
 
 /**
  * @short A viewer handler to send MDN for viewed messages.
  */
-class MAILCOMMON_EXPORT SendMdnHandler : public QObject,
-    public MessageViewer::AbstractMessageLoadedHandler
+class MAILCOMMON_EXPORT SendMdnHandler : public QObject, public MessageViewer::AbstractMessageLoadedHandler
 {
     Q_OBJECT
 
@@ -67,7 +64,6 @@ private:
     Q_PRIVATE_SLOT(d, void handleMessages())
     //@endcond
 };
-
 }
 
 #endif

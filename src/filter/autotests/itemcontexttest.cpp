@@ -22,12 +22,10 @@
 ItemContextTest::ItemContextTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 ItemContextTest::~ItemContextTest()
 {
-
 }
 
 void ItemContextTest::shouldHaveDefaultValue()
@@ -74,7 +72,6 @@ void ItemContextTest::shouldAssignContext_data()
 
     QTest::newRow("F T F T") << false << true << false << true;
     QTest::newRow("F F F T") << false << false << false << true;
-
 }
 
 void ItemContextTest::shouldAssignContext()

@@ -28,13 +28,10 @@
 #include <KSharedConfig>
 
 #include <QObject>
-namespace PimCommon
-{
+namespace PimCommon {
 class ImapResourceCapabilitiesManager;
 }
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * Deals with common mail application related operations. The required interfaces
  * MUST be registered before using it!
@@ -164,7 +161,6 @@ private:
     ISettings *mSettingsIf;
     PimCommon::ImapResourceCapabilitiesManager *mImapResourceManager;
 };
-
 }
 
 #define KernelIf MailCommon::Kernel::self()->kernelIf()

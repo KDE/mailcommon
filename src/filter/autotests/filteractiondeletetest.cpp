@@ -22,12 +22,10 @@
 FilterActionDeleteTest::FilterActionDeleteTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionDeleteTest::~FilterActionDeleteTest()
 {
-
 }
 
 void FilterActionDeleteTest::shouldHaveDefaultValue()

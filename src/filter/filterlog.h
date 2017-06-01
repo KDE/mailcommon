@@ -34,9 +34,7 @@
 #include <QObject>
 #include <QStringList>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * @short KMail Filter Log Collector.
  *
@@ -72,11 +70,11 @@ public:
      * Describes the type of content that will be logged.
      */
     enum ContentType {
-        Meta               = 1, ///< Log all meta data.
+        Meta = 1,               ///< Log all meta data.
         PatternDescription = 2, ///< Log all pattern description.
-        RuleResult         = 4, ///< Log all rule matching results.
-        PatternResult      = 8, ///< Log all pattern matching results.
-        AppliedAction      = 16 ///< Log all applied actions.
+        RuleResult = 4,         ///< Log all rule matching results.
+        PatternResult = 8,      ///< Log all pattern matching results.
+        AppliedAction = 16      ///< Log all applied actions.
     };
 
     /**
@@ -171,7 +169,6 @@ private:
     Private *const d;
     //@endcond
 };
-
 }
 
 #endif

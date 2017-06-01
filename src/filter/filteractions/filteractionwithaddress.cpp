@@ -54,4 +54,3 @@ void FilterActionWithAddress::clearParamWidget(QWidget *paramWidget) const
 {
     qobject_cast<Akonadi::EmailAddressRequester *>(paramWidget)->clear();
 }
-

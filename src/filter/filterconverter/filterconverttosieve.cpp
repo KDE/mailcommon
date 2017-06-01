@@ -19,7 +19,6 @@
 #include "filterconverttosieveresultdialog.h"
 #include "filter/mailfilter.h"
 
-
 #include <QPointer>
 
 using namespace MailCommon;

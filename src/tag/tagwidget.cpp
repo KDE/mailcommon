@@ -36,19 +36,18 @@ class MailCommon::TagWidgetPrivate
 {
 public:
     TagWidgetPrivate()
-        : mTagNameLineEdit(nullptr),
-          mTextColorCheck(nullptr),
-          mBackgroundColorCheck(nullptr),
-          mTextFontCheck(nullptr),
-          mInToolbarCheck(nullptr),
-          mTextColorCombo(nullptr),
-          mBackgroundColorCombo(nullptr),
-          mBoldCheckBox(nullptr),
-          mItalicCheckBox(nullptr),
-          mIconButton(nullptr),
-          mKeySequenceWidget(nullptr)
+        : mTagNameLineEdit(nullptr)
+        , mTextColorCheck(nullptr)
+        , mBackgroundColorCheck(nullptr)
+        , mTextFontCheck(nullptr)
+        , mInToolbarCheck(nullptr)
+        , mTextColorCombo(nullptr)
+        , mBackgroundColorCombo(nullptr)
+        , mBoldCheckBox(nullptr)
+        , mItalicCheckBox(nullptr)
+        , mIconButton(nullptr)
+        , mKeySequenceWidget(nullptr)
     {
-
     }
 
     KLineEdit *mTagNameLineEdit;
@@ -70,8 +69,8 @@ public:
 };
 
 TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidget *parent)
-    : QWidget(parent),
-      d(new MailCommon::TagWidgetPrivate)
+    : QWidget(parent)
+    , d(new MailCommon::TagWidgetPrivate)
 {
     QGridLayout *settings = new QGridLayout(this);
     settings->setMargin(0);
@@ -86,8 +85,8 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     d->mTagNameLineEdit->setTrapReturnKey(true);
     settings->addWidget(d->mTagNameLineEdit, 1, 1);
 
-    QLabel *namelabel = new QLabel(i18nc("@label:listbox Name of the tag", "Name:")
-                                   , this);
+    QLabel *namelabel = new QLabel(i18nc("@label:listbox Name of the tag", "Name:"),
+                                   this);
     namelabel->setBuddy(d->mTagNameLineEdit);
     settings->addWidget(namelabel, 1, 0);
 
@@ -110,7 +109,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
 
     //Third row for text background color
     d->mBackgroundColorCheck = new QCheckBox(i18n("Change &background color:"),
-            this);
+                                             this);
     settings->addWidget(d->mBackgroundColorCheck, 3, 0);
 
     d->mBackgroundColorCombo = new KColorCombo(this);
@@ -189,7 +188,6 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     settings->addWidget(d->mInToolbarCheck, 7, 0);
     connect(d->mInToolbarCheck, &QCheckBox::stateChanged,
             this, &TagWidget::slotEmitChangeCheck);
-
 }
 
 TagWidget::~TagWidget()
@@ -308,4 +306,3 @@ KKeySequenceWidget *TagWidget::keySequenceWidget() const
 {
     return d->mKeySequenceWidget;
 }
-

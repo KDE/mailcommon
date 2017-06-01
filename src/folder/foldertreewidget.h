@@ -27,8 +27,7 @@
 #include <QAbstractItemView>
 #include <QWidget>
 
-namespace Akonadi
-{
+namespace Akonadi {
 class StatisticsProxyModel;
 }
 
@@ -37,9 +36,7 @@ class KXMLGUIClient;
 
 class QItemSelectionModel;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class EntityCollectionOrderProxyModel;
 class FolderTreeView;
 
@@ -65,10 +62,8 @@ public:
     Q_DECLARE_FLAGS(TreeViewOptions, TreeViewOption)
 
     explicit FolderTreeWidget(
-        QWidget *parent = nullptr,
-        KXMLGUIClient *xmlGuiClient = nullptr,
-        TreeViewOptions options = (TreeViewOptions)(ShowUnreadCount |
-                                  ShowCollectionStatisticAnimation),
+        QWidget *parent = nullptr, KXMLGUIClient *xmlGuiClient = nullptr, TreeViewOptions options = (TreeViewOptions)(ShowUnreadCount
+                                                                                                                      |ShowCollectionStatisticAnimation),
         FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelOptions optReadableProxy = FolderTreeWidgetProxyModel::None);
     ~FolderTreeWidget();
 
@@ -138,9 +133,7 @@ private:
     bool eventFilter(QObject *o, QEvent *e) Q_DECL_OVERRIDE;
     class FolderTreeWidgetPrivate;
     FolderTreeWidgetPrivate *const d;
-
 };
-
 }
 
 #endif

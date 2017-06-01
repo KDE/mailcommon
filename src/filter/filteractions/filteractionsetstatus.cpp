@@ -36,7 +36,7 @@ FilterActionSetStatus::FilterActionSetStatus(QObject *parent)
 bool FilterActionSetStatus::isEmpty() const
 {
     const int index = mParameterList.indexOf(mParameter);
-    return (index < 1);
+    return index < 1;
 }
 
 QString FilterActionSetStatus::informationAboutNotValidAction() const
@@ -97,4 +97,3 @@ QStringList FilterActionSetStatus::sieveRequires() const
 {
     return QStringList() << QStringLiteral("imap4flags");
 }
-

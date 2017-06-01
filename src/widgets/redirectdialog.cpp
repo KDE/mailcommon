@@ -59,18 +59,18 @@ class Q_DECL_HIDDEN RedirectDialog::Private
 {
 public:
     Private(RedirectDialog *qq, RedirectDialog::SendMode mode)
-        : q(qq),
-          mEditTo(nullptr),
-          mEditCc(nullptr),
-          mEditBcc(nullptr),
-          mSendMode(mode),
-          mComboboxIdentity(nullptr),
-          mTransportCombobox(nullptr),
-          mUser1Button(nullptr),
-          mUser2Button(nullptr)
-
+        : q(qq)
+        , mEditTo(nullptr)
+        , mEditCc(nullptr)
+        , mEditBcc(nullptr)
+        , mSendMode(mode)
+        , mComboboxIdentity(nullptr)
+        , mTransportCombobox(nullptr)
+        , mUser1Button(nullptr)
+        , mUser2Button(nullptr)
     {
     }
+
     enum TypeAddress {
         ResendTo,
         ResendCc,
@@ -130,7 +130,8 @@ void RedirectDialog::Private::slotAddressChanged(const QString &text)
 }
 
 RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
-    : QDialog(parent), d(new Private(this, mode))
+    : QDialog(parent)
+    , d(new Private(this, mode))
 {
     setWindowTitle(i18n("Redirect Message"));
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Cancel, this);

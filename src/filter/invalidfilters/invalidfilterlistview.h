@@ -22,9 +22,7 @@
 #include "invalidfilterinfo.h"
 #include "mailcommon_export.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MAILCOMMON_EXPORT InvalidFilterListView : public QListView
 {
     Q_OBJECT

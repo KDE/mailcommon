@@ -24,9 +24,7 @@
 
 class QFile;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MailFilter;
 
 class MAILCOMMON_EXPORT FilterImporterThunderbird : public FilterImporterAbstract
@@ -48,8 +46,6 @@ private:
     bool splitConditions(const QString &cond, MailCommon::MailFilter *filter);
     MailFilter *parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter);
 };
-
 }
 
 #endif /* FILTERIMPORTERTHUNDERBIRD_H */
-

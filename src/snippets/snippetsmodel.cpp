@@ -64,7 +64,8 @@ private:
 };
 
 SnippetItem::SnippetItem(bool isGroup, SnippetItem *parent)
-    : mParentItem(parent), mIsGroup(isGroup)
+    : mParentItem(parent)
+    , mIsGroup(isGroup)
 {
 }
 
@@ -333,7 +334,7 @@ QStringList SnippetsModel::mimeTypes() const
 {
     return
         QStringList() << QStringLiteral("text/x-kmail-textsnippet")
-        << QStringLiteral("text/plain");
+                      << QStringLiteral("text/plain");
 }
 
 QMimeData *SnippetsModel::mimeData(const QModelIndexList &indexes) const
@@ -361,8 +362,7 @@ QMimeData *SnippetsModel::mimeData(const QModelIndexList &indexes) const
     return mimeData;
 }
 
-bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action,
-                                 int row, int column, const QModelIndex &parent)
+bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &parent)
 {
     Q_UNUSED(row);
 
@@ -446,4 +446,3 @@ QHash<int, QByteArray> SnippetsModel::roleNames() const
 
     return names;
 }
-

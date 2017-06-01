@@ -24,14 +24,12 @@
 
 #include <QRegExp>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionRewriteHeader - rewrite header
 // Rewrite a header using a regexp.
 //=============================================================================
-class FilterActionRewriteHeader: public FilterActionWithStringList
+class FilterActionRewriteHeader : public FilterActionWithStringList
 {
     Q_OBJECT
 public:
@@ -57,7 +55,6 @@ private:
     QRegExp mRegExp;
     QString mReplacementString;
 };
-
 }
 
 #endif

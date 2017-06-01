@@ -25,12 +25,10 @@
 FilterActionExecTest::FilterActionExecTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionExecTest::~FilterActionExecTest()
 {
-
 }
 
 void FilterActionExecTest::shouldHaveDefaultValue()

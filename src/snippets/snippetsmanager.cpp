@@ -42,20 +42,20 @@ class Q_DECL_HIDDEN SnippetsManager::Private
 {
 public:
     Private(SnippetsManager *qq, QWidget *parent)
-        : q(qq),
-          mModel(nullptr),
-          mSelectionModel(nullptr),
-          mActionCollection(nullptr),
-          mEditor(nullptr),
-          mAddSnippetAction(nullptr),
-          mEditSnippetAction(nullptr),
-          mDeleteSnippetAction(nullptr),
-          mAddSnippetGroupAction(nullptr),
-          mEditSnippetGroupAction(nullptr),
-          mDeleteSnippetGroupAction(nullptr),
-          mInsertSnippetAction(nullptr),
-          mParent(parent),
-          mDirty(false)
+        : q(qq)
+        , mModel(nullptr)
+        , mSelectionModel(nullptr)
+        , mActionCollection(nullptr)
+        , mEditor(nullptr)
+        , mAddSnippetAction(nullptr)
+        , mEditSnippetAction(nullptr)
+        , mDeleteSnippetAction(nullptr)
+        , mAddSnippetGroupAction(nullptr)
+        , mEditSnippetGroupAction(nullptr)
+        , mDeleteSnippetGroupAction(nullptr)
+        , mInsertSnippetAction(nullptr)
+        , mParent(parent)
+        , mDirty(false)
     {
     }
 
@@ -78,13 +78,11 @@ public:
 
     void slotAddNewDndSnippset(const QString &);
 
-    void updateActionCollection(const QString &oldName, const QString &newName,
-                                const QKeySequence &keySequence, const QString &text);
+    void updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text);
 
     QString replaceVariables(const QString &text);
     QModelIndex createGroup(const QString &groupName);
-    void createSnippet(const QModelIndex &groupIndex, const QString &snippetName,
-                       const QString &snippetText, const QString &snippetKeySequence);
+    void createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence);
 
     void load();
     void save();
@@ -195,7 +193,6 @@ void SnippetsManager::Private::createSnippet(const QString &text)
         mDirty = true;
     }
     delete dlg;
-
 }
 
 void SnippetsManager::Private::slotAddNewDndSnippset(const QString &text)
@@ -230,7 +227,6 @@ void SnippetsManager::Private::editSnippet()
             index.data(SnippetsModel::KeySequenceRole).toString()));
 
     if (dlg->exec()) {
-
         const QModelIndex newGroupIndex = dlg->groupIndex();
 
         if (oldGroupIndex != newGroupIndex) {
@@ -257,12 +253,12 @@ void SnippetsManager::Private::deleteSnippet()
     const QString snippetName = index.data(SnippetsModel::NameRole).toString();
 
     if (KMessageBox::warningContinueCancel(
-                nullptr,
-                xi18nc("@info",
-                       "Do you really want to remove snippet \"%1\"?<nl/>"
-                       "<warning>There is no way to undo the removal.</warning>", snippetName),
-                QString(),
-                KStandardGuiItem::remove()) == KMessageBox::Cancel) {
+            nullptr,
+            xi18nc("@info",
+                   "Do you really want to remove snippet \"%1\"?<nl/>"
+                   "<warning>There is no way to undo the removal.</warning>", snippetName),
+            QString(),
+            KStandardGuiItem::remove()) == KMessageBox::Cancel) {
         return;
     }
 
@@ -278,7 +274,6 @@ void SnippetsManager::Private::addSnippetGroup()
     dlg->setWindowTitle(i18nc("@title:window", "Add Group"));
 
     if (dlg->exec()) {
-
         if (!mModel->insertRow(mModel->rowCount(), QModelIndex())) {
             qCDebug(MAILCOMMON_LOG) << "unable to insert row";
             delete dlg;
@@ -327,21 +322,21 @@ void SnippetsManager::Private::deleteSnippetGroup()
 
     if (mModel->rowCount(groupIndex) > 0) {
         if (KMessageBox::warningContinueCancel(
-                    nullptr,
-                    xi18nc("@info",
-                           "Do you really want to remove group \"%1\" along with all its snippets?<nl/>"
-                           "<warning>There is no way to undo the removal.</warning>", groupName),
-                    QString(),
-                    KStandardGuiItem::remove()) == KMessageBox::Cancel) {
+                nullptr,
+                xi18nc("@info",
+                       "Do you really want to remove group \"%1\" along with all its snippets?<nl/>"
+                       "<warning>There is no way to undo the removal.</warning>", groupName),
+                QString(),
+                KStandardGuiItem::remove()) == KMessageBox::Cancel) {
             return;
         }
     } else {
         if (KMessageBox::warningContinueCancel(
-                    nullptr,
-                    i18nc("@info",
-                          "Do you really want to remove group \"%1\"?", groupName),
-                    QString(),
-                    KStandardGuiItem::remove()) == KMessageBox::Cancel) {
+                nullptr,
+                i18nc("@info",
+                      "Do you really want to remove group \"%1\"?", groupName),
+                QString(),
+                KStandardGuiItem::remove()) == KMessageBox::Cancel) {
             return;
         }
     }
@@ -386,10 +381,7 @@ void SnippetsManager::Private::insertActionSnippet()
                               Q_ARG(QString, text));
 }
 
-void SnippetsManager::Private::updateActionCollection(const QString &oldName,
-        const QString &newName,
-        const QKeySequence &keySequence,
-        const QString &text)
+void SnippetsManager::Private::updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text)
 {
     // remove previous action in case that the name changed
     if (!oldName.isEmpty()) {
@@ -406,8 +398,8 @@ void SnippetsManager::Private::updateActionCollection(const QString &oldName,
         const QString actionName = i18nc("@action", "Snippet %1", newName);
         const QString normalizedName = QString(actionName).replace(QLatin1Char(' '), QLatin1Char('_'));
 
-        QAction *action =
-            mActionCollection->addAction(normalizedName, q, SLOT(insertActionSnippet()));
+        QAction *action
+            = mActionCollection->addAction(normalizedName, q, SLOT(insertActionSnippet()));
         action->setProperty("snippetText", text);
         action->setText(actionName);
         mActionCollection->setDefaultShortcut(action, keySequence);
@@ -433,10 +425,8 @@ QString SnippetsManager::Private::replaceVariables(const QString &text)
 
             if (variableName != QLatin1String("$$")) {      // if not double-delimiter
                 if (!localVariables.contains(variableName)) {      // and not already in map
-
                     QPointer<SnippetVariableDialog> dlg = new SnippetVariableDialog(variableName, &mSavedVariables, mParent);
                     if (dlg->exec()) {
-
                         if (dlg->saveVariableIsChecked()) {
                             mDirty = true;
                         }
@@ -469,12 +459,8 @@ QModelIndex SnippetsManager::Private::createGroup(const QString &groupName)
     return groupIndex;
 }
 
-void SnippetsManager::Private::createSnippet(const QModelIndex &groupIndex,
-        const QString &snippetName,
-        const QString &snippetText,
-        const QString &snippetKeySequence)
+void SnippetsManager::Private::createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence)
 {
-
     mModel->insertRow(mModel->rowCount(groupIndex), groupIndex);
     const QModelIndex index = mModel->index(mModel->rowCount(groupIndex) - 1, 0, groupIndex);
 
@@ -490,16 +476,16 @@ void SnippetsManager::Private::createSnippet(const QModelIndex &groupIndex,
 
 void SnippetsManager::Private::load()
 {
-    const KSharedConfig::Ptr config =
-        KSharedConfig::openConfig(QStringLiteral("kmailsnippetrc"), KConfig::NoGlobals);
+    const KSharedConfig::Ptr config
+        = KSharedConfig::openConfig(QStringLiteral("kmailsnippetrc"), KConfig::NoGlobals);
 
     const KConfigGroup snippetPartGroup = config->group("SnippetPart");
 
     const int groupCount = snippetPartGroup.readEntry("snippetGroupCount", 0);
 
     for (int i = 0; i < groupCount; ++i) {
-        const KConfigGroup group =
-            config->group(QStringLiteral("SnippetGroup_%1").arg(i));
+        const KConfigGroup group
+            = config->group(QStringLiteral("SnippetGroup_%1").arg(i));
 
         const QString groupName = group.readEntry("Name");
 
@@ -508,14 +494,14 @@ void SnippetsManager::Private::load()
 
         const int snippetCount = group.readEntry("snippetCount", 0);
         for (int j = 0; j < snippetCount; ++j) {
-            const QString snippetName =
-                group.readEntry(QStringLiteral("snippetName_%1").arg(j), QString());
+            const QString snippetName
+                = group.readEntry(QStringLiteral("snippetName_%1").arg(j), QString());
 
-            const QString snippetText =
-                group.readEntry(QStringLiteral("snippetText_%1").arg(j), QString());
+            const QString snippetText
+                = group.readEntry(QStringLiteral("snippetText_%1").arg(j), QString());
 
-            const QString snippetKeySequence =
-                group.readEntry(QStringLiteral("snippetKeySequence_%1").arg(j), QString());
+            const QString snippetKeySequence
+                = group.readEntry(QStringLiteral("snippetKeySequence_%1").arg(j), QString());
 
             createSnippet(groupIndex, snippetName, snippetText, snippetKeySequence);
         }
@@ -526,11 +512,11 @@ void SnippetsManager::Private::load()
     const int variablesCount = group.readEntry("variablesCount", 0);
 
     for (int i = 0; i < variablesCount; ++i) {
-        const QString variableKey =
-            group.readEntry(QStringLiteral("variableName_%1").arg(i), QString());
+        const QString variableKey
+            = group.readEntry(QStringLiteral("variableName_%1").arg(i), QString());
 
-        const QString variableValue =
-            group.readEntry(QStringLiteral("variableValue_%1").arg(i), QString());
+        const QString variableValue
+            = group.readEntry(QStringLiteral("variableValue_%1").arg(i), QString());
 
         mSavedVariables.insert(variableKey, variableValue);
     }
@@ -599,9 +585,9 @@ void SnippetsManager::Private::save()
     mDirty = false;
 }
 
-SnippetsManager::SnippetsManager(KActionCollection *actionCollection,
-                                 QObject *parent, QWidget *widget)
-    : QObject(parent), d(new Private(this, widget))
+SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *parent, QWidget *widget)
+    : QObject(parent)
+    , d(new Private(this, widget))
 {
     d->mModel = new SnippetsModel(this);
     d->mSelectionModel = new QItemSelectionModel(d->mModel);
@@ -647,16 +633,15 @@ SnippetsManager::~SnippetsManager()
     delete d;
 }
 
-void SnippetsManager::setEditor(QObject *editor, const char *insertSnippetMethod,
-                                const char *dropSignal)
+void SnippetsManager::setEditor(QObject *editor, const char *insertSnippetMethod, const char *dropSignal)
 {
     d->mEditor = editor;
     d->mEditorInsertMethod = insertSnippetMethod;
 
     if (dropSignal) {
-        const int index =
-            editor->metaObject()->indexOfSignal(
-                QMetaObject::normalizedSignature(dropSignal + 1).data());    // skip the leading '2'
+        const int index
+            = editor->metaObject()->indexOfSignal(
+            QMetaObject::normalizedSignature(dropSignal + 1).data());        // skip the leading '2'
         if (index != -1) {
             connect(editor, dropSignal, this, SLOT(insertSelectedSnippet()));
         }

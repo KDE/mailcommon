@@ -47,8 +47,7 @@ class QPushButton;
 class QRadioButton;
 class QPushButton;
 class QDialogButtonBox;
-namespace MailCommon
-{
+namespace MailCommon {
 class SearchPatternEdit;
 class FilterActionWidgetLister;
 class FolderRequester;
@@ -112,8 +111,7 @@ class KJob;
  * @author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>.
  * @see MailCommon::MailFilter KMFilterActionEdit SearchPatternEdit KMFilterListBox
  */
-namespace MailCommon
-{
+namespace MailCommon {
 class MAILCOMMON_EXPORT KMFilterDialog : public QDialog
 {
     Q_OBJECT
@@ -124,8 +122,7 @@ public:
      * to do this is KMFilterMgr. This ensures that there is only a
      * single filter dialog.
      */
-    explicit KMFilterDialog(const QList<KActionCollection *> &actionCollection,
-                            QWidget *parent = nullptr, bool createDummyFilter = true);
+    explicit KMFilterDialog(const QList<KActionCollection *> &actionCollection, QWidget *parent = nullptr, bool createDummyFilter = true);
 
     /**
      * Called from KMFilterMgr. Creates a new filter and presets
@@ -251,7 +248,6 @@ protected:
     bool mDoNotClose;
     bool mIgnoreFilterUpdates;
 };
-
 }
 
 #endif /*kmfilterdialog_h*/

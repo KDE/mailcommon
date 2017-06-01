@@ -33,8 +33,7 @@
 
 using namespace MailCommon;
 
-FilterActionMissingIdentityDialog::FilterActionMissingIdentityDialog(const QString &filtername,
-        QWidget *parent)
+FilterActionMissingIdentityDialog::FilterActionMissingIdentityDialog(const QString &filtername, QWidget *parent)
     : QDialog(parent)
 {
     setModal(true);
@@ -90,4 +89,3 @@ int FilterActionMissingIdentityDialog::selectedIdentity() const
 {
     return mComboBoxIdentity->currentIdentity();
 }
-

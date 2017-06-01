@@ -22,9 +22,7 @@
 
 #include "filteractionwithnone.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionSendReceipt - send receipt
 // Return delivery receipt.
@@ -38,7 +36,6 @@ public:
     SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
     static FilterAction *newAction();
 };
-
 }
 
 #endif

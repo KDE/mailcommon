@@ -22,9 +22,7 @@
 
 #include "filteraction.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  *  @short Abstract base class for filter actions with no parameter.
  *
@@ -64,7 +62,6 @@ public:
      */
     QString displayString() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

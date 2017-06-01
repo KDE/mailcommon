@@ -98,4 +98,3 @@ void FilterConvertToSieveResultDialog::writeConfig()
     group.writeEntry("Size", size());
     group.sync();
 }
-

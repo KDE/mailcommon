@@ -23,12 +23,10 @@
 SnippetsManagerTest::SnippetsManagerTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 SnippetsManagerTest::~SnippetsManagerTest()
 {
-
 }
 
 void SnippetsManagerTest::shouldHaveDefaultValue()

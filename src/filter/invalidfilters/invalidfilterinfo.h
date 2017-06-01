@@ -20,8 +20,7 @@
 
 #include <QString>
 #include "mailcommon_private_export.h"
-namespace MailCommon
-{
+namespace MailCommon {
 class MAILCOMMON_TESTS_EXPORT InvalidFilterInfo
 {
 public:

@@ -24,9 +24,7 @@ class QFile;
 class KConfigGroup;
 class KConfig;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MailFilter;
 
 class FilterImporterBalsa : public FilterImporterAbstract
@@ -42,7 +40,6 @@ private:
     void parseCondition(const QString &condition, MailCommon::MailFilter *filter);
     void parseAction(int actionType, const QString &action, MailCommon::MailFilter *filter);
 };
-
 }
 
 #endif // FILTERIMPORTERBALSA_H

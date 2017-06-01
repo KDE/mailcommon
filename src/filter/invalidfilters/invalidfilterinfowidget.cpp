@@ -29,7 +29,6 @@ InvalidFilterInfoWidget::InvalidFilterInfoWidget(QWidget *parent)
 
 InvalidFilterInfoWidget::~InvalidFilterInfoWidget()
 {
-
 }
 
 void InvalidFilterInfoWidget::slotShowDetails(const QString &details)
@@ -37,4 +36,3 @@ void InvalidFilterInfoWidget::slotShowDetails(const QString &details)
     setText(details);
     animatedShow();
 }
-

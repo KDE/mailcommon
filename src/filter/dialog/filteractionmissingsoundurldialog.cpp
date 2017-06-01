@@ -30,9 +30,7 @@
 
 using namespace MailCommon;
 
-FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QString &filtername,
-        const QString &argStr,
-        QWidget *parent)
+FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QString &filtername, const QString &argStr, QWidget *parent)
     : QDialog(parent)
 {
     setModal(true);
@@ -92,4 +90,3 @@ void FilterActionMissingSoundUrlDialog::writeConfig()
     KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingSoundUrlDialog");
     group.writeEntry("Size", size());
 }
-

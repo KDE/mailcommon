@@ -141,9 +141,7 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Messa
     return result;
 }
 
-namespace
-{
-
+namespace {
 /**
  * Substitutes placeholders in the command line with the
  * content of the correspoding header in the message.
@@ -176,7 +174,6 @@ void substituteCommandLineArgsForItem(const Akonadi::Item &item, QString &comman
     commandLine.replace(QLatin1String("%{itemurl}"), item.url(Akonadi::Item::UrlWithMimeType).url());
     commandLine.replace(QLatin1String("%{itemid}"), QString::number(item.id()));
 }
-
 }
 
 FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &context, bool withOutput) const
@@ -215,7 +212,7 @@ FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &co
     // the user may have specified. In the long run, we
     // shouldn't be using tempfiles at all for this class, due
     // to security aspects. (mmutz)
-    commandLine =  QLatin1Char('(') + commandLine + QLatin1String(") <") + inFile->fileName();
+    commandLine = QLatin1Char('(') + commandLine + QLatin1String(") <") + inFile->fileName();
 
     // write message to file
     QString tempFileName = inFile->fileName();
@@ -284,4 +281,3 @@ FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &co
 
     return GoOn;
 }
-

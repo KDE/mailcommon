@@ -24,14 +24,12 @@
 
 class KJob;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionCopy - copy into folder
 // Copy message into another mail folder
 //=============================================================================
-class FilterActionCopy: public FilterActionWithFolder
+class FilterActionCopy : public FilterActionWithFolder
 {
     Q_OBJECT
 public:
@@ -46,7 +44,6 @@ public:
 protected Q_SLOTS:
     void jobFinished(KJob *job);
 };
-
 }
 
 #endif

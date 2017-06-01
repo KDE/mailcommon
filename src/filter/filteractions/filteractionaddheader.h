@@ -22,14 +22,12 @@
 
 #include "filteractionwithstringlist.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionAddHeader - add header
 // Add a header with the given value.
 //=============================================================================
-class FilterActionAddHeader: public FilterActionWithStringList
+class FilterActionAddHeader : public FilterActionWithStringList
 {
     Q_OBJECT
 public:
@@ -57,7 +55,6 @@ public:
 private:
     QString mValue;
 };
-
 }
 
 #endif

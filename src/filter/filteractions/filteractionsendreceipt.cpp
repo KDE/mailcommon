@@ -63,4 +63,3 @@ FilterAction *FilterActionSendReceipt::newAction()
 {
     return new FilterActionSendReceipt;
 }
-

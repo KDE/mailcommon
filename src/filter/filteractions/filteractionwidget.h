@@ -26,9 +26,7 @@
 
 #include <Libkdepim/KWidgetLister>
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class FilterAction;
 class FilterActionWidget;
 
@@ -171,7 +169,6 @@ private:
     //@endcond
     void connectWidget(QWidget *widget, FilterAction *filterAction);
 };
-
 }
 
 #endif

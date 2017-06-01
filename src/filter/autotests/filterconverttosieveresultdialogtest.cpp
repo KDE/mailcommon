@@ -24,12 +24,10 @@
 FilterConvertToSieveResultDialogTest::FilterConvertToSieveResultDialogTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterConvertToSieveResultDialogTest::~FilterConvertToSieveResultDialogTest()
 {
-
 }
 
 void FilterConvertToSieveResultDialogTest::shouldHaveDefaultValue()

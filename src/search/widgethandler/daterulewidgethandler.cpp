@@ -33,15 +33,15 @@ static const struct {
     SearchRule::Function id;
     const char *displayName;
 } DateFunctions[] = {
-    { SearchRule::FuncEquals,           I18N_NOOP("is equal to")         },
-    { SearchRule::FuncNotEqual,         I18N_NOOP("is not equal to")      },
-    { SearchRule::FuncIsGreater,        I18N_NOOP("is after")     },
-    { SearchRule::FuncIsLessOrEqual,    I18N_NOOP("is before or equal to") },
-    { SearchRule::FuncIsLess,           I18N_NOOP("is before")        },
+    { SearchRule::FuncEquals, I18N_NOOP("is equal to")         },
+    { SearchRule::FuncNotEqual, I18N_NOOP("is not equal to")      },
+    { SearchRule::FuncIsGreater, I18N_NOOP("is after")     },
+    { SearchRule::FuncIsLessOrEqual, I18N_NOOP("is before or equal to") },
+    { SearchRule::FuncIsLess, I18N_NOOP("is before")        },
     { SearchRule::FuncIsGreaterOrEqual, I18N_NOOP("is after or equal to") }
 };
-static const int DateFunctionCount =
-    sizeof(DateFunctions) / sizeof(*DateFunctions);
+static const int DateFunctionCount
+    = sizeof(DateFunctions) / sizeof(*DateFunctions);
 
 //---------------------------------------------------------------------------
 
@@ -65,9 +65,7 @@ QWidget *DateRuleWidgetHandler::createFunctionWidget(
 
 //---------------------------------------------------------------------------
 
-QWidget *DateRuleWidgetHandler::createValueWidget(int number,
-        QStackedWidget *valueStack,
-        const QObject *receiver) const
+QWidget *DateRuleWidgetHandler::createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const
 {
     if (number != 0) {
         return nullptr;
@@ -86,8 +84,8 @@ QWidget *DateRuleWidgetHandler::createValueWidget(int number,
 SearchRule::Function DateRuleWidgetHandler::currentFunction(
     const QStackedWidget *functionStack) const
 {
-    const PimCommon::MinimumComboBox *funcCombo =
-        functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("dateRuleFuncCombo"));
+    const PimCommon::MinimumComboBox *funcCombo
+        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("dateRuleFuncCombo"));
 
     if (funcCombo && funcCombo->currentIndex() >= 0) {
         return DateFunctions[funcCombo->currentIndex()].id;
@@ -98,8 +96,7 @@ SearchRule::Function DateRuleWidgetHandler::currentFunction(
 
 //---------------------------------------------------------------------------
 
-SearchRule::Function DateRuleWidgetHandler::function(const QByteArray &field,
-        const QStackedWidget *functionStack) const
+SearchRule::Function DateRuleWidgetHandler::function(const QByteArray &field, const QStackedWidget *functionStack) const
 {
     if (!handlesField(field)) {
         return SearchRule::FuncNone;
@@ -123,9 +120,7 @@ QString DateRuleWidgetHandler::currentValue(const QStackedWidget *valueStack) co
 
 //---------------------------------------------------------------------------
 
-QString DateRuleWidgetHandler::value(const QByteArray &field,
-                                     const QStackedWidget *,
-                                     const QStackedWidget *valueStack) const
+QString DateRuleWidgetHandler::value(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
         return QString();
@@ -136,9 +131,7 @@ QString DateRuleWidgetHandler::value(const QByteArray &field,
 
 //---------------------------------------------------------------------------
 
-QString DateRuleWidgetHandler::prettyValue(const QByteArray &field,
-        const QStackedWidget *,
-        const QStackedWidget *valueStack) const
+QString DateRuleWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
         return QString();
@@ -151,17 +144,16 @@ QString DateRuleWidgetHandler::prettyValue(const QByteArray &field,
 
 bool DateRuleWidgetHandler::handlesField(const QByteArray &field) const
 {
-    return (field == "<date>");
+    return field == "<date>";
 }
 
 //---------------------------------------------------------------------------
 
-void DateRuleWidgetHandler::reset(QStackedWidget *functionStack,
-                                  QStackedWidget *valueStack) const
+void DateRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     // reset the function combo box
-    PimCommon::MinimumComboBox *funcCombo =
-        functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("dateRuleFuncCombo"));
+    PimCommon::MinimumComboBox *funcCombo
+        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("dateRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -181,9 +173,7 @@ void DateRuleWidgetHandler::reset(QStackedWidget *functionStack,
 
 //---------------------------------------------------------------------------
 
-bool DateRuleWidgetHandler::setRule(QStackedWidget *functionStack,
-                                    QStackedWidget *valueStack,
-                                    const SearchRule::Ptr rule, bool /*isBalooSearch*/) const
+bool DateRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const SearchRule::Ptr rule, bool /*isBalooSearch*/) const
 {
     if (!rule || !handlesField(rule->field())) {
         reset(functionStack, valueStack);
@@ -199,8 +189,8 @@ bool DateRuleWidgetHandler::setRule(QStackedWidget *functionStack,
         }
     }
 
-    PimCommon::MinimumComboBox *funcCombo =
-        functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("dateRuleFuncCombo"));
+    PimCommon::MinimumComboBox *funcCombo
+        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("dateRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -229,9 +219,7 @@ bool DateRuleWidgetHandler::setRule(QStackedWidget *functionStack,
 
 //---------------------------------------------------------------------------
 
-bool DateRuleWidgetHandler::update(const QByteArray &field,
-                                   QStackedWidget *functionStack,
-                                   QStackedWidget *valueStack) const
+bool DateRuleWidgetHandler::update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
         return false;
@@ -248,4 +236,3 @@ bool DateRuleWidgetHandler::update(const QByteArray &field,
     }
     return true;
 }
-

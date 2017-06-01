@@ -34,8 +34,8 @@ FilterAction *FilterActionAddTag::newAction()
 }
 
 FilterActionAddTag::FilterActionAddTag(QObject *parent)
-    : FilterAction(QStringLiteral("add tag"), i18n("Add Tag"), parent),
-      mComboBox(nullptr)
+    : FilterAction(QStringLiteral("add tag"), i18n("Add Tag"), parent)
+    , mComboBox(nullptr)
 {
     mList = FilterManager::instance()->tagList();
     connect(FilterManager::instance(), &FilterManager::tagListingFinished, this, &FilterActionAddTag::slotTagListingFinished);
@@ -78,7 +78,7 @@ void FilterActionAddTag::clearParamWidget(QWidget *paramWidget) const
 
 bool FilterActionAddTag::isEmpty() const
 {
-    return (mParameter.isEmpty());
+    return mParameter.isEmpty();
 }
 
 void FilterActionAddTag::slotTagListingFinished()
@@ -164,4 +164,3 @@ QString FilterActionAddTag::informationAboutNotValidAction() const
     const QString info = name() + QLatin1Char('\n') + i18n("No tag selected.");
     return info;
 }
-

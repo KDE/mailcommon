@@ -22,15 +22,13 @@
 
 #include "filteractionwithcommand.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 //=============================================================================
 // FilterActionPipeThrough - use external filter app
 // External message filter: executes a shell command with message
 // on stdin; altered message is expected on stdout.
 //=============================================================================
-class FilterActionPipeThrough: public FilterActionWithCommand
+class FilterActionPipeThrough : public FilterActionWithCommand
 {
     Q_OBJECT
 public:
@@ -40,7 +38,6 @@ public:
     static FilterAction *newAction();
     QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

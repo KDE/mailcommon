@@ -113,4 +113,3 @@ QString FilterActionRemoveHeader::informationAboutNotValidAction() const
 {
     return i18n("Header name undefined.");
 }
-

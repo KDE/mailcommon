@@ -35,9 +35,7 @@ using MailCommon::FilterLog;
 #include <boost/bind.hpp>
 
 using namespace MailCommon;
-SearchRuleString::SearchRuleString(const QByteArray &field,
-                                   Function func,
-                                   const QString &contents)
+SearchRuleString::SearchRuleString(const QByteArray &field, Function func, const QString &contents)
     : SearchRule(field, func, contents)
 {
 }
@@ -73,23 +71,23 @@ SearchRule::RequiredPart SearchRuleString::requiredPart() const
 {
     const QByteArray f = field();
     SearchRule::RequiredPart part = Header;
-    if (qstricmp(f.constData(), "<recipients>") == 0 ||
-            qstricmp(f.constData(), "<status>") == 0 ||
-            qstricmp(f.constData(), "<tag>") == 0 ||
-            qstricmp(f.constData(), "subject") == 0 ||
-            qstricmp(f.constData(), "from") == 0 ||
-            qstricmp(f.constData(), "sender") == 0 ||
-            qstricmp(f.constData(), "reply-to") == 0 ||
-            qstricmp(f.constData(), "to") == 0  ||
-            qstricmp(f.constData(), "cc") == 0 ||
-            qstricmp(f.constData(), "bcc") == 0 ||
-            qstricmp(f.constData(), "in-reply-to") == 0 ||
-            qstricmp(f.constData(), "message-id") == 0 ||
-            qstricmp(f.constData(), "references") == 0) {
+    if (qstricmp(f.constData(), "<recipients>") == 0
+        || qstricmp(f.constData(), "<status>") == 0
+        || qstricmp(f.constData(), "<tag>") == 0
+        || qstricmp(f.constData(), "subject") == 0
+        || qstricmp(f.constData(), "from") == 0
+        || qstricmp(f.constData(), "sender") == 0
+        || qstricmp(f.constData(), "reply-to") == 0
+        || qstricmp(f.constData(), "to") == 0
+        || qstricmp(f.constData(), "cc") == 0
+        || qstricmp(f.constData(), "bcc") == 0
+        || qstricmp(f.constData(), "in-reply-to") == 0
+        || qstricmp(f.constData(), "message-id") == 0
+        || qstricmp(f.constData(), "references") == 0) {
         // these fields are directly provided by KMime::Message, no need to fetch the whole Header part
         part = Envelope;
-    } else if (qstricmp(f.constData(), "<message>") == 0 ||
-               qstricmp(f.constData(), "<body>") == 0) {
+    } else if (qstricmp(f.constData(), "<message>") == 0
+               || qstricmp(f.constData(), "<body>") == 0) {
         part = CompleteMessage;
     }
 
@@ -134,9 +132,9 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
             // do we need to treat this case specially? Ie.: What shall
             // "equality" mean for recipients.
             return
-                matchesInternal(msg->to()->asUnicodeString()) ||
-                matchesInternal(msg->cc()->asUnicodeString()) ||
-                matchesInternal(msg->bcc()->asUnicodeString());
+                matchesInternal(msg->to()->asUnicodeString())
+                || matchesInternal(msg->cc()->asUnicodeString())
+                || matchesInternal(msg->bcc()->asUnicodeString());
         }
         msgContents = msg->to()->asUnicodeString();
         msgContents += ", " + msg->cc()->asUnicodeString();
@@ -157,8 +155,8 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
         }
     }
 
-    if (function() == FuncIsInAddressbook ||
-            function() == FuncIsNotInAddressbook) {
+    if (function() == FuncIsInAddressbook
+        || function() == FuncIsNotInAddressbook) {
         // I think only the "from"-field makes sense.
         msgContents = QStringLiteral("");
         if (auto hrd = msg->headerByType(field().constData())) {
@@ -229,7 +227,7 @@ void SearchRuleString::addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &empty
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderXMailingList, contents(), akonadiComparator()));
     } else if (qstricmp(field().constData(), "x-spam-flag") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderXSpamFlag, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "organization")  == 0) {
+    } else if (qstricmp(field().constData(), "organization") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderOrganization, contents(), akonadiComparator()));
     } else if (qstricmp(field().constData(), "<tag>") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::MessageTag, contents(), akonadiComparator()));
@@ -257,56 +255,55 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
 
     switch (function()) {
     case SearchRule::FuncEquals:
-        return (QString::compare(msgContents.toLower(), contents().toLower()) == 0);
+        return QString::compare(msgContents.toLower(), contents().toLower()) == 0;
 
     case SearchRule::FuncNotEqual:
-        return (QString::compare(msgContents.toLower(), contents().toLower()) != 0);
+        return QString::compare(msgContents.toLower(), contents().toLower()) != 0;
 
     case SearchRule::FuncContains:
-        return (msgContents.contains(contents(), Qt::CaseInsensitive));
+        return msgContents.contains(contents(), Qt::CaseInsensitive);
 
     case SearchRule::FuncContainsNot:
-        return (!msgContents.contains(contents(), Qt::CaseInsensitive));
+        return !msgContents.contains(contents(), Qt::CaseInsensitive);
 
-    case SearchRule::FuncRegExp: {
+    case SearchRule::FuncRegExp:
+    {
         QRegExp regexp(contents(), Qt::CaseInsensitive);
-        return (regexp.indexIn(msgContents) >= 0);
+        return regexp.indexIn(msgContents) >= 0;
     }
 
-    case SearchRule::FuncNotRegExp: {
+    case SearchRule::FuncNotRegExp:
+    {
         QRegExp regexp(contents(), Qt::CaseInsensitive);
-        return (regexp.indexIn(msgContents) < 0);
+        return regexp.indexIn(msgContents) < 0;
     }
 
-    case SearchRule::FuncStartWith: {
+    case SearchRule::FuncStartWith:
         return msgContents.startsWith(contents());
-    }
 
-    case SearchRule::FuncNotStartWith: {
+    case SearchRule::FuncNotStartWith:
         return !msgContents.startsWith(contents());
-    }
 
-    case SearchRule::FuncEndWith: {
+    case SearchRule::FuncEndWith:
         return msgContents.endsWith(contents());
-    }
 
-    case SearchRule::FuncNotEndWith: {
+    case SearchRule::FuncNotEndWith:
         return !msgContents.endsWith(contents());
-    }
 
     case FuncIsGreater:
-        return (QString::compare(msgContents.toLower(), contents().toLower()) > 0);
+        return QString::compare(msgContents.toLower(), contents().toLower()) > 0;
 
     case FuncIsLessOrEqual:
-        return (QString::compare(msgContents.toLower(), contents().toLower()) <= 0);
+        return QString::compare(msgContents.toLower(), contents().toLower()) <= 0;
 
     case FuncIsLess:
-        return (QString::compare(msgContents.toLower(), contents().toLower()) < 0);
+        return QString::compare(msgContents.toLower(), contents().toLower()) < 0;
 
     case FuncIsGreaterOrEqual:
-        return (QString::compare(msgContents.toLower(), contents().toLower()) >= 0);
+        return QString::compare(msgContents.toLower(), contents().toLower()) >= 0;
 
-    case FuncIsInAddressbook: {
+    case FuncIsInAddressbook:
+    {
         const QStringList addressList = KEmailAddress::splitAddressList(msgContents.toLower());
         QStringList::ConstIterator end(addressList.constEnd());
         for (QStringList::ConstIterator it = addressList.constBegin(); (it != end); ++it) {
@@ -325,7 +322,8 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
         return false;
     }
 
-    case FuncIsNotInAddressbook: {
+    case FuncIsNotInAddressbook:
+    {
         const QStringList addressList = KEmailAddress::splitAddressList(msgContents.toLower());
         QStringList::ConstIterator end(addressList.constEnd());
 
@@ -345,9 +343,10 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
         return false;
     }
 
-    case FuncIsInCategory: {
+    case FuncIsInCategory:
+    {
         QString category = contents();
-        const QStringList addressList =  KEmailAddress::splitAddressList(msgContents.toLower());
+        const QStringList addressList = KEmailAddress::splitAddressList(msgContents.toLower());
 
         QStringList::ConstIterator end(addressList.constEnd());
         for (QStringList::ConstIterator it = addressList.constBegin(); it != end; ++it) {
@@ -369,9 +368,10 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
         return false;
     }
 
-    case FuncIsNotInCategory: {
+    case FuncIsNotInCategory:
+    {
         QString category = contents();
-        const QStringList addressList =  KEmailAddress::splitAddressList(msgContents.toLower());
+        const QStringList addressList = KEmailAddress::splitAddressList(msgContents.toLower());
 
         QStringList::ConstIterator end(addressList.constEnd());
         for (QStringList::ConstIterator it = addressList.constBegin(); it != end; ++it) {
@@ -389,7 +389,6 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
                     }
                 }
             }
-
         }
         return true;
     }

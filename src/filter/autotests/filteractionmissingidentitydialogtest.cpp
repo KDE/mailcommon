@@ -29,12 +29,10 @@
 FilterActionMissingIdentityDialogTest::FilterActionMissingIdentityDialogTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterActionMissingIdentityDialogTest::~FilterActionMissingIdentityDialogTest()
 {
-
 }
 
 void FilterActionMissingIdentityDialogTest::initTestCase()

@@ -24,9 +24,7 @@
 
 class QFile;
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 class MailFilter;
 
 class FilterImporterEvolution : public FilterImporterAbstract
@@ -41,11 +39,8 @@ private:
         ActionType = 1
     };
     void parseFilters(const QDomElement &e);
-    void parsePartAction(const QDomElement &ruleFilter,
-                         MailCommon::MailFilter *filter,
-                         MailCommon::FilterImporterEvolution::parseType type);
+    void parsePartAction(const QDomElement &ruleFilter, MailCommon::MailFilter *filter, MailCommon::FilterImporterEvolution::parseType type);
 };
-
 }
 
 #endif // FILTERIMPORTEREVOLUTION_H

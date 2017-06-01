@@ -22,9 +22,7 @@
 
 #include "filteraction.h"
 
-namespace MailCommon
-{
-
+namespace MailCommon {
 /**
  * @short Abstract base class for filter actions with a mail folder as parameter.
  *
@@ -96,13 +94,11 @@ public:
     /**
      * @copydoc FilterAction::folderRemoved
      */
-    bool folderRemoved(const Akonadi::Collection &aFolder,
-                       const Akonadi::Collection &aNewFolder) Q_DECL_OVERRIDE;
+    bool folderRemoved(const Akonadi::Collection &aFolder, const Akonadi::Collection &aNewFolder) Q_DECL_OVERRIDE;
 
 protected:
     Akonadi::Collection mFolder;
 };
-
 }
 
 #endif

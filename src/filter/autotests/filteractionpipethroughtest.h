@@ -22,12 +22,11 @@
 
 #include <QObject>
 
-namespace MailCommon
-{
+namespace MailCommon {
 class FilterAction;
 }
 
-class FilterActionPipeThroughTest  : public QObject
+class FilterActionPipeThroughTest : public QObject
 {
     Q_OBJECT
 public:
