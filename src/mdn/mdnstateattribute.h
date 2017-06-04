@@ -78,22 +78,22 @@ public:
     /**
      * Reimplemented from Attribute
      */
-    QByteArray type() const Q_DECL_OVERRIDE;
+    QByteArray type() const override;
 
     /**
      * Reimplemented from Attribute
      */
-    MDNStateAttribute *clone() const Q_DECL_OVERRIDE;
+    MDNStateAttribute *clone() const override;
 
     /**
      * Reimplemented from Attribute
      */
-    QByteArray serialized() const Q_DECL_OVERRIDE;
+    QByteArray serialized() const override;
 
     /**
      * Reimplemented from Attribute
      */
-    void deserialize(const QByteArray &data) Q_DECL_OVERRIDE;
+    void deserialize(const QByteArray &data) override;
 
     /**
      * Sets the MDN @p state.

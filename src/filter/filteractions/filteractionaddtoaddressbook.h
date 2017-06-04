@@ -32,22 +32,22 @@ class FilterActionAddToAddressBook : public FilterActionWithStringList
     Q_OBJECT
 public:
     explicit FilterActionAddToAddressBook(QObject *parent = nullptr);
-    ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
+    ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
     static FilterAction *newAction();
 
-    SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
+    SearchRule::RequiredPart requiredPart() const override;
 
-    bool isEmpty() const Q_DECL_OVERRIDE;
+    bool isEmpty() const override;
 
-    QWidget *createParamWidget(QWidget *parent) const Q_DECL_OVERRIDE;
-    void setParamWidgetValue(QWidget *paramWidget) const Q_DECL_OVERRIDE;
-    void applyParamWidgetValue(QWidget *paramWidget) Q_DECL_OVERRIDE;
-    void clearParamWidget(QWidget *paramWidget) const Q_DECL_OVERRIDE;
+    QWidget *createParamWidget(QWidget *parent) const override;
+    void setParamWidgetValue(QWidget *paramWidget) const override;
+    void applyParamWidgetValue(QWidget *paramWidget) override;
+    void clearParamWidget(QWidget *paramWidget) const override;
 
-    QString argsAsString() const Q_DECL_OVERRIDE;
-    void argsFromString(const QString &argsStr) Q_DECL_OVERRIDE;
+    QString argsAsString() const override;
+    void argsFromString(const QString &argsStr) override;
 
-    QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
+    QString informationAboutNotValidAction() const override;
 private:
     enum HeaderType {
         FromHeader,

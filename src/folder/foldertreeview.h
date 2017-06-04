@@ -66,7 +66,7 @@ public:
 
     void updatePalette();
 
-    void keyboardSearch(const QString &) Q_DECL_OVERRIDE;
+    void keyboardSearch(const QString &) override;
 protected:
     enum Move {
         Next = 0,
@@ -82,7 +82,7 @@ protected:
 
     void setSortingPolicy(FolderTreeWidget::SortingPolicy policy, bool writeInConfig = false);
 
-    void mousePressEvent(QMouseEvent *e) Q_DECL_OVERRIDE;
+    void mousePressEvent(QMouseEvent *e) override;
 
 public Q_SLOTS:
     void slotFocusNextFolder();

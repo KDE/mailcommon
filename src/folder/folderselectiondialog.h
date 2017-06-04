@@ -75,9 +75,9 @@ protected:
     void writeConfig();
     bool canCreateCollection(Akonadi::Collection &parentCol);
 
-    void hideEvent(QHideEvent *) Q_DECL_OVERRIDE;
+    void hideEvent(QHideEvent *) override;
 
-    void showEvent(QShowEvent *) Q_DECL_OVERRIDE;
+    void showEvent(QShowEvent *) override;
 
 private:
     class FolderSelectionDialogPrivate;

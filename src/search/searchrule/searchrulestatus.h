@@ -69,22 +69,22 @@ public:
 
     explicit SearchRuleStatus(Akonadi::MessageStatus status, Function function = FuncContains);
 
-    bool isEmpty() const Q_DECL_OVERRIDE;
-    bool matches(const Akonadi::Item &item) const Q_DECL_OVERRIDE;
+    bool isEmpty() const override;
+    bool matches(const Akonadi::Item &item) const override;
 
     /**
      * @copydoc SearchRule::requiredPart()
      */
-    RequiredPart requiredPart() const Q_DECL_OVERRIDE;
+    RequiredPart requiredPart() const override;
 
-    void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const Q_DECL_OVERRIDE;
+    void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const override;
 
     //Not possible to implement optimized form for status searching
     using SearchRule::matches;
 
     static Akonadi::MessageStatus statusFromEnglishName(const QString &);
 
-    QString informationAboutNotValidRules() const Q_DECL_OVERRIDE;
+    QString informationAboutNotValidRules() const override;
 
 private:
     Akonadi::MessageStatus mStatus;

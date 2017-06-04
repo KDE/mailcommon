@@ -142,7 +142,7 @@ public Q_SLOTS:
     void slotFilterSelected(MailCommon::MailFilter *aFilter);
 
     /** Override QDialog::accept to allow disabling close */
-    void accept() Q_DECL_OVERRIDE;
+    void accept() override;
 
 protected Q_SLOTS:
     void slotApplicabilityChanged();
@@ -210,7 +210,7 @@ private:
     void importFilters(MailCommon::FilterImporterExporter::FilterType type);
 
 protected:
-    bool event(QEvent *e) Q_DECL_OVERRIDE;
+    bool event(QEvent *e) override;
 
     /** The widget that contains the ListBox showing the filters, and the
         controls to remove filters, add new ones and to change their order. */

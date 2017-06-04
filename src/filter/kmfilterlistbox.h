@@ -243,7 +243,7 @@ protected:
     QPushButton *mBtnTop;
     QPushButton *mBtnBottom;
     KListWidgetSearchLine *mSearchListWidget;
-    bool eventFilter(QObject *obj, QEvent *event) Q_DECL_OVERRIDE;
+    bool eventFilter(QObject *obj, QEvent *event) override;
 private:
     void applyFilterChanged(bool closeAfterSaving);
     void enableControls();

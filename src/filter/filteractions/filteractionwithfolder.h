@@ -50,51 +50,51 @@ public:
     /**
      * @copydoc FilterAction::isEmpty
      */
-    bool isEmpty() const Q_DECL_OVERRIDE;
+    bool isEmpty() const override;
 
     /**
      * @copydoc FilterAction::createParamWidget
      */
-    QWidget *createParamWidget(QWidget *parent) const Q_DECL_OVERRIDE;
+    QWidget *createParamWidget(QWidget *parent) const override;
 
     /**
      * @copydoc FilterAction::applyParamWidgetValue
      */
-    void applyParamWidgetValue(QWidget *paramWidget) Q_DECL_OVERRIDE;
+    void applyParamWidgetValue(QWidget *paramWidget) override;
 
     /**
      * @copydoc FilterAction::setParamWidgetValue
      */
-    void setParamWidgetValue(QWidget *paramWidget) const Q_DECL_OVERRIDE;
+    void setParamWidgetValue(QWidget *paramWidget) const override;
 
     /**
      * @copydoc FilterAction::clearParamWidget
      */
-    void clearParamWidget(QWidget *paramWidget) const Q_DECL_OVERRIDE;
+    void clearParamWidget(QWidget *paramWidget) const override;
 
     /**
      * @copydoc FilterAction::argsFromString
      */
-    void argsFromString(const QString &argsStr) Q_DECL_OVERRIDE;
+    void argsFromString(const QString &argsStr) override;
 
     /**
      * @copydoc FilterAction::argsAsString
      */
-    QString argsAsString() const Q_DECL_OVERRIDE;
+    QString argsAsString() const override;
 
-    bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) Q_DECL_OVERRIDE;
+    bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
 
-    QString argsAsStringReal() const Q_DECL_OVERRIDE;
+    QString argsAsStringReal() const override;
 
     /**
      * @copydoc FilterAction::displayString
      */
-    QString displayString() const Q_DECL_OVERRIDE;
+    QString displayString() const override;
 
     /**
      * @copydoc FilterAction::folderRemoved
      */
-    bool folderRemoved(const Akonadi::Collection &aFolder, const Akonadi::Collection &aNewFolder) Q_DECL_OVERRIDE;
+    bool folderRemoved(const Akonadi::Collection &aFolder, const Akonadi::Collection &aNewFolder) override;
 
 protected:
     Akonadi::Collection mFolder;

@@ -46,9 +46,9 @@ protected Q_SLOTS:
     void slotChangeMode(bool);
 
 protected:
-    void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;
+    void paintEvent(QPaintEvent *) override;
 
-    void mousePressEvent(QMouseEvent *e) Q_DECL_OVERRIDE;
+    void mousePressEvent(QMouseEvent *e) override;
 Q_SIGNALS:
     void newTabRequested(bool);
 

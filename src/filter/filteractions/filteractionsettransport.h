@@ -32,45 +32,45 @@ class FilterActionSetTransport : public FilterAction
     Q_OBJECT
 public:
     explicit FilterActionSetTransport(QObject *parent = nullptr);
-    ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
-    SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
+    ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    SearchRule::RequiredPart requiredPart() const override;
     static FilterAction *newAction();
-    QWidget *createParamWidget(QWidget *parent) const Q_DECL_OVERRIDE;
+    QWidget *createParamWidget(QWidget *parent) const override;
     /**
      * @copydoc FilterAction::applyParamWidgetValue
      */
-    void applyParamWidgetValue(QWidget *paramWidget) Q_DECL_OVERRIDE;
+    void applyParamWidgetValue(QWidget *paramWidget) override;
 
     /**
      * @copydoc FilterAction::setParamWidgetValue
      */
-    void setParamWidgetValue(QWidget *paramWidget) const Q_DECL_OVERRIDE;
+    void setParamWidgetValue(QWidget *paramWidget) const override;
 
     /**
      * @copydoc FilterAction::clearParamWidget
      */
-    void clearParamWidget(QWidget *paramWidget) const Q_DECL_OVERRIDE;
+    void clearParamWidget(QWidget *paramWidget) const override;
 
-    bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) Q_DECL_OVERRIDE;
+    bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
 
     /**
      * @copydoc FilterAction::argsFromString
      */
-    void argsFromString(const QString &argsStr) Q_DECL_OVERRIDE;
+    void argsFromString(const QString &argsStr) override;
     /**
      * @copydoc FilterAction::isEmpty
      */
-    bool isEmpty() const Q_DECL_OVERRIDE;
+    bool isEmpty() const override;
     /**
      * @copydoc FilterAction::argsAsString
      */
-    QString argsAsString() const Q_DECL_OVERRIDE;
+    QString argsAsString() const override;
 
     /**
      * @copydoc FilterAction::displayString
      */
-    QString displayString() const Q_DECL_OVERRIDE;
-    QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
+    QString displayString() const override;
+    QString informationAboutNotValidAction() const override;
 
 protected:
     int mParameter;

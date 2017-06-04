@@ -42,9 +42,9 @@ public:
     explicit CollectionExpiryPage(QWidget *parent = nullptr);
     ~CollectionExpiryPage();
 
-    bool canHandle(const Akonadi::Collection &col) const Q_DECL_OVERRIDE;
-    void load(const Akonadi::Collection &collection) Q_DECL_OVERRIDE;
-    void save(Akonadi::Collection &collection) Q_DECL_OVERRIDE;
+    bool canHandle(const Akonadi::Collection &col) const override;
+    void load(const Akonadi::Collection &collection) override;
+    void save(Akonadi::Collection &collection) override;
 
 protected:
     void init();

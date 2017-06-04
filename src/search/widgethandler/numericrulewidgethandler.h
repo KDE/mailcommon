@@ -15,23 +15,23 @@ public:
     {
     }
 
-    QWidget *createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const Q_DECL_OVERRIDE;
+    QWidget *createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const override;
 
-    QWidget *createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const Q_DECL_OVERRIDE;
+    QWidget *createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const override;
 
-    SearchRule::Function function(const QByteArray &field, const QStackedWidget *functionStack) const Q_DECL_OVERRIDE;
+    SearchRule::Function function(const QByteArray &field, const QStackedWidget *functionStack) const override;
 
-    QString value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const Q_DECL_OVERRIDE;
+    QString value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const override;
 
-    QString prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const Q_DECL_OVERRIDE;
+    QString prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const override;
 
-    bool handlesField(const QByteArray &field) const Q_DECL_OVERRIDE;
+    bool handlesField(const QByteArray &field) const override;
 
-    void reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const Q_DECL_OVERRIDE;
+    void reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const override;
 
-    bool setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const SearchRule::Ptr rule, bool isBalooSearch) const Q_DECL_OVERRIDE;
+    bool setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const SearchRule::Ptr rule, bool isBalooSearch) const override;
 
-    bool update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const Q_DECL_OVERRIDE;
+    bool update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const override;
 
 private:
     SearchRule::Function currentFunction(const QStackedWidget *functionStack) const;

@@ -130,7 +130,7 @@ protected Q_SLOTS:
     void slotGeneralPaletteChanged();
 
 private:
-    bool eventFilter(QObject *o, QEvent *e) Q_DECL_OVERRIDE;
+    bool eventFilter(QObject *o, QEvent *e) override;
     class FolderTreeWidgetPrivate;
     FolderTreeWidgetPrivate *const d;
 };

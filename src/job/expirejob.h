@@ -45,8 +45,8 @@ public:
     explicit ExpireJob(const Akonadi::Collection &folder, bool immediate);
     virtual ~ExpireJob();
 
-    void execute() Q_DECL_OVERRIDE;
-    void kill() Q_DECL_OVERRIDE;
+    void execute() override;
+    void kill() override;
 
 private:
     void slotDoWork();
@@ -77,12 +77,12 @@ public:
     {
     }
 
-    ScheduledJob *run() Q_DECL_OVERRIDE
+    ScheduledJob *run() override
     {
         return folder().isValid() ? new ExpireJob(folder(), isImmediate()) : 0;
     }
 
-    int taskTypeId() const Q_DECL_OVERRIDE
+    int taskTypeId() const override
     {
         return 1;
     }

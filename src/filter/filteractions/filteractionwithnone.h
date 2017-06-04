@@ -50,17 +50,17 @@ public:
     /**
      * @copydoc FilterAction::argsFromString
      */
-    void argsFromString(const QString &) Q_DECL_OVERRIDE;
+    void argsFromString(const QString &) override;
 
     /**
      * @copydoc FilterAction::argsAsString
      */
-    QString argsAsString() const Q_DECL_OVERRIDE;
+    QString argsAsString() const override;
 
     /**
      * @copydoc FilterAction::displayString
      */
-    QString displayString() const Q_DECL_OVERRIDE;
+    QString displayString() const override;
 };
 }
 

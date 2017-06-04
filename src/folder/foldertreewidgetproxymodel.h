@@ -42,9 +42,9 @@ public:
 
     virtual ~FolderTreeWidgetProxyModel();
 
-    Qt::ItemFlags flags(const QModelIndex &index) const Q_DECL_OVERRIDE;
+    Qt::ItemFlags flags(const QModelIndex &index) const override;
 
-    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
+    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
 
     void setEnabledCheck(bool enable);
     bool enabledCheck() const;
@@ -65,7 +65,7 @@ public:
     void readConfig();
 
 protected:
-    bool acceptRow(int sourceRow, const QModelIndex &sourceParent) const Q_DECL_OVERRIDE;
+    bool acceptRow(int sourceRow, const QModelIndex &sourceParent) const override;
 
 private:
     class Private;

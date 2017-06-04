@@ -32,26 +32,26 @@ class FilterActionAddHeader : public FilterActionWithStringList
     Q_OBJECT
 public:
     explicit FilterActionAddHeader(QObject *parent = nullptr);
-    ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
-    QWidget *createParamWidget(QWidget *parent) const Q_DECL_OVERRIDE;
-    void setParamWidgetValue(QWidget *paramWidget) const Q_DECL_OVERRIDE;
-    void applyParamWidgetValue(QWidget *paramWidget) Q_DECL_OVERRIDE;
-    void clearParamWidget(QWidget *paramWidget) const Q_DECL_OVERRIDE;
+    ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    QWidget *createParamWidget(QWidget *parent) const override;
+    void setParamWidgetValue(QWidget *paramWidget) const override;
+    void applyParamWidgetValue(QWidget *paramWidget) override;
+    void clearParamWidget(QWidget *paramWidget) const override;
 
-    SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
+    SearchRule::RequiredPart requiredPart() const override;
 
-    QString argsAsString() const Q_DECL_OVERRIDE;
-    void argsFromString(const QString &argsStr) Q_DECL_OVERRIDE;
+    QString argsAsString() const override;
+    void argsFromString(const QString &argsStr) override;
 
-    QString displayString() const Q_DECL_OVERRIDE;
+    QString displayString() const override;
 
     static FilterAction *newAction();
 
-    QStringList sieveRequires() const Q_DECL_OVERRIDE;
-    QString sieveCode() const Q_DECL_OVERRIDE;
+    QStringList sieveRequires() const override;
+    QString sieveCode() const override;
 
-    bool isEmpty() const Q_DECL_OVERRIDE;
-    QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
+    bool isEmpty() const override;
+    QString informationAboutNotValidAction() const override;
 private:
     QString mValue;
 };

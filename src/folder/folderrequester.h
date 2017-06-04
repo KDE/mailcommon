@@ -114,7 +114,7 @@ Q_SIGNALS:
 
 protected:
     /** Capture space key to open the dialog */
-    void keyPressEvent(QKeyEvent *e) Q_DECL_OVERRIDE;
+    void keyPressEvent(QKeyEvent *e) override;
     void setCollectionFullPath(const Akonadi::Collection &col);
 
 protected:

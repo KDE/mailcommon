@@ -37,13 +37,13 @@ class FilterActionPlaySound : public FilterActionWithTest
 public:
     FilterActionPlaySound();
     ~FilterActionPlaySound();
-    ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
-    SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
+    ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    SearchRule::RequiredPart requiredPart() const override;
     static FilterAction *newAction();
-    bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) Q_DECL_OVERRIDE;
+    bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
 
-    bool isEmpty() const Q_DECL_OVERRIDE;
-    QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
+    bool isEmpty() const override;
+    QString informationAboutNotValidAction() const override;
 private:
     mutable Phonon::MediaObject *mPlayer;
 };

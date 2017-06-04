@@ -33,18 +33,18 @@ class FilterActionForward : public FilterActionWithAddress
 public:
     explicit FilterActionForward(QObject *parent = nullptr);
     static FilterAction *newAction();
-    ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
-    SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
-    QWidget *createParamWidget(QWidget *parent) const Q_DECL_OVERRIDE;
-    void applyParamWidgetValue(QWidget *paramWidget) Q_DECL_OVERRIDE;
-    void setParamWidgetValue(QWidget *paramWidget) const Q_DECL_OVERRIDE;
-    void clearParamWidget(QWidget *paramWidget) const Q_DECL_OVERRIDE;
-    void argsFromString(const QString &argsStr) Q_DECL_OVERRIDE;
-    QString argsAsString() const Q_DECL_OVERRIDE;
-    QString displayString() const Q_DECL_OVERRIDE;
-    bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) Q_DECL_OVERRIDE;
+    ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    SearchRule::RequiredPart requiredPart() const override;
+    QWidget *createParamWidget(QWidget *parent) const override;
+    void applyParamWidgetValue(QWidget *paramWidget) override;
+    void setParamWidgetValue(QWidget *paramWidget) const override;
+    void clearParamWidget(QWidget *paramWidget) const override;
+    void argsFromString(const QString &argsStr) override;
+    QString argsAsString() const override;
+    QString displayString() const override;
+    bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
 
-    QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
+    QString informationAboutNotValidAction() const override;
 private:
     mutable QString mTemplate;
 };

@@ -27,14 +27,14 @@ class FilterActionStatus : public FilterActionWithStringList
     Q_OBJECT
 public:
     FilterActionStatus(const QString &name, const QString &label, QObject *parent = nullptr);
-    SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
-    bool isEmpty() const Q_DECL_OVERRIDE;
-    void argsFromString(const QString &argsStr) Q_DECL_OVERRIDE;
-    QString argsAsString() const Q_DECL_OVERRIDE;
-    QString displayString() const Q_DECL_OVERRIDE;
+    SearchRule::RequiredPart requiredPart() const override;
+    bool isEmpty() const override;
+    void argsFromString(const QString &argsStr) override;
+    QString argsAsString() const override;
+    QString displayString() const override;
 
     static QString realStatusString(const QString &statusStr);
-    QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
+    QString informationAboutNotValidAction() const override;
 
     static const Akonadi::MessageStatus stati[];
     static const int StatiCount;

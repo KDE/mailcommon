@@ -40,42 +40,42 @@ public:
     /**
      * @copydoc FilterAction::isEmpty
      */
-    bool isEmpty() const Q_DECL_OVERRIDE;
+    bool isEmpty() const override;
 
     /**
      * @copydoc FilterAction::createParamWidget
      */
-    QWidget *createParamWidget(QWidget *parent) const Q_DECL_OVERRIDE;
+    QWidget *createParamWidget(QWidget *parent) const override;
 
     /**
      * @copydoc FilterAction::applyParamWidgetValue
      */
-    void applyParamWidgetValue(QWidget *paramWidget) Q_DECL_OVERRIDE;
+    void applyParamWidgetValue(QWidget *paramWidget) override;
 
     /**
      * @copydoc FilterAction::setParamWidgetValue
      */
-    void setParamWidgetValue(QWidget *paramWidget) const Q_DECL_OVERRIDE;
+    void setParamWidgetValue(QWidget *paramWidget) const override;
 
     /**
      * @copydoc FilterAction::clearParamWidget
      */
-    void clearParamWidget(QWidget *paramWidget) const Q_DECL_OVERRIDE;
+    void clearParamWidget(QWidget *paramWidget) const override;
 
     /**
      * @copydoc FilterAction::argsFromString
      */
-    void argsFromString(const QString &argsStr) Q_DECL_OVERRIDE;
+    void argsFromString(const QString &argsStr) override;
 
     /**
      * @copydoc FilterAction::argsAsString
      */
-    QString argsAsString() const Q_DECL_OVERRIDE;
+    QString argsAsString() const override;
 
     /**
      * @copydoc FilterAction::displayString
      */
-    QString displayString() const Q_DECL_OVERRIDE;
+    QString displayString() const override;
 
 protected:
     QString mParameter;

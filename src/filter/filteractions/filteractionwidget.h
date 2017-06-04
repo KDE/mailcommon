@@ -153,12 +153,12 @@ protected:
     /**
      * @copydoc KPIM::KWidgetLister::clearWidget
      */
-    void clearWidget(QWidget *) Q_DECL_OVERRIDE;
+    void clearWidget(QWidget *) override;
 
     /**
      * @copydoc KPIM::KWidgetLister::createWidget
      */
-    QWidget *createWidget(QWidget *) Q_DECL_OVERRIDE;
+    QWidget *createWidget(QWidget *) override;
 
     void updateAddRemoveButton();
 

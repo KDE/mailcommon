@@ -88,7 +88,7 @@ public:
     QString cc() const;
     QString bcc() const;
 protected:
-    void accept() Q_DECL_OVERRIDE;
+    void accept() override;
 
 private:
     //@cond PRIVATE

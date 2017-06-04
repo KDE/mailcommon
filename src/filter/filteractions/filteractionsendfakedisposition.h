@@ -32,17 +32,17 @@ class FilterActionSendFakeDisposition : public FilterActionWithStringList
     Q_OBJECT
 public:
     explicit FilterActionSendFakeDisposition(QObject *parent = nullptr);
-    ReturnCode process(ItemContext &context, bool applyOnOutbound) const Q_DECL_OVERRIDE;
-    SearchRule::RequiredPart requiredPart() const Q_DECL_OVERRIDE;
+    ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    SearchRule::RequiredPart requiredPart() const override;
 
     static FilterAction *newAction();
 
-    bool isEmpty() const Q_DECL_OVERRIDE;
+    bool isEmpty() const override;
 
-    void argsFromString(const QString &argsStr) Q_DECL_OVERRIDE;
-    QString argsAsString() const Q_DECL_OVERRIDE;
-    QString displayString() const Q_DECL_OVERRIDE;
-    QString informationAboutNotValidAction() const Q_DECL_OVERRIDE;
+    void argsFromString(const QString &argsStr) override;
+    QString argsAsString() const override;
+    QString displayString() const override;
+    QString informationAboutNotValidAction() const override;
 };
 }
 

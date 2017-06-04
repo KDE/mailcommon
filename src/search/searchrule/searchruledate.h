@@ -35,17 +35,17 @@ public:
     /**
      * @copydoc SearchRule::isEmpty()
      */
-    bool isEmpty() const Q_DECL_OVERRIDE;
+    bool isEmpty() const override;
 
     /**
      * @copydoc SearchRule::matches()
      */
-    bool matches(const Akonadi::Item &item) const Q_DECL_OVERRIDE;
+    bool matches(const Akonadi::Item &item) const override;
 
     /**
      * @copydoc SearchRule::requiredPart()
      */
-    RequiredPart requiredPart() const Q_DECL_OVERRIDE;
+    RequiredPart requiredPart() const override;
 
     // Optimized matching not implemented, will use the unoptimized matching
     // from SearchRule
@@ -60,8 +60,8 @@ public:
     /**
      * @copydoc SearchRule::addQueryTerms()
      */
-    void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const Q_DECL_OVERRIDE;
-    QString informationAboutNotValidRules() const Q_DECL_OVERRIDE;
+    void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const override;
+    QString informationAboutNotValidRules() const override;
 };
 }
 
