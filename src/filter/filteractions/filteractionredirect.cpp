@@ -24,7 +24,7 @@
 
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
-#include <messagecore/messagehelpers.h>
+#include <MessageComposer/Util>
 
 #include <KLocalizedString>
 
@@ -46,7 +46,7 @@ FilterAction::ReturnCode FilterActionRedirect::process(ItemContext &context, boo
         return ErrorButGoOn;
     }
 
-    KMime::Message::Ptr msg = MessageCore::Util::message(context.item());
+    KMime::Message::Ptr msg = MessageComposer::Util::message(context.item());
 
     MessageComposer::MessageFactoryNG factory(msg, context.item().id());
     factory.setFolderIdentity(Util::folderIdentity(context.item()));

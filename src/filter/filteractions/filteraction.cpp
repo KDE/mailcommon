@@ -27,7 +27,7 @@
 
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
-#include <messagecore/messagehelpers.h>
+#include <MessageComposer/Util>
 #include <messageviewer/messageviewersettings.h>
 
 #include <KLocalizedString>
@@ -108,7 +108,7 @@ bool FilterAction::folderRemoved(const Akonadi::Collection &, const Akonadi::Col
 
 void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionType type, const QVector<KMime::MDN::DispositionModifier> &modifiers)
 {
-    const KMime::Message::Ptr msg = MessageCore::Util::message(item);
+    const KMime::Message::Ptr msg = MessageComposer::Util::message(item);
     if (!msg) {
         return;
     }

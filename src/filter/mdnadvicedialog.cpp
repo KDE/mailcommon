@@ -20,7 +20,6 @@
 #include "kernel/mailkernel.h"
 #include "mailcommon_debug.h"
 
-#include <messagecore/messagehelpers.h>
 
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/Util>
@@ -166,7 +165,7 @@ MessageComposer::MDNAdvice MDNAdviceHelper::questionIgnoreSend(const QString &te
 QPair< bool, KMime::MDN::SendingMode > MDNAdviceHelper::checkAndSetMDNInfo(
     const Akonadi::Item &item, KMime::MDN::DispositionType d, bool forceSend)
 {
-    KMime::Message::Ptr msg = MessageCore::Util::message(item);
+    KMime::Message::Ptr msg = MessageComposer::Util::message(item);
 
     // RFC 2298: At most one MDN may be issued on behalf of each
     // particular recipient by their user agent.  That is, once an MDN

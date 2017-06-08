@@ -25,9 +25,9 @@
 #include "util/mailutil.h"
 #include "filter/mdnadvicedialog.h"
 #include "mailcommon_debug.h"
+#include <MessageComposer/Util>
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
-#include <messagecore/messagehelpers.h>
 #include <messageviewer/messageviewersettings.h>
 
 #include <Collection>
@@ -81,7 +81,7 @@ void SendMdnHandler::Private::handleMessages()
             continue;
         }
 
-        const KMime::Message::Ptr message = MessageCore::Util::message(item);
+        const KMime::Message::Ptr message = MessageComposer::Util::message(item);
         if (!message) {
             continue;
         }
