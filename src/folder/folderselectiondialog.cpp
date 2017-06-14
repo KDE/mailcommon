@@ -147,7 +147,7 @@ FolderSelectionDialog::~FolderSelectionDialog()
 void FolderSelectionDialog::slotFolderTreeWidgetContextMenuRequested(const QPoint &pos)
 {
     if (d->mUser1Button && d->mUser1Button->isEnabled() && d->folderTreeWidget->folderTreeView()->indexAt(pos).isValid()) {
-        QMenu menu;
+        QMenu menu(this);
         menu.addAction(i18n("&New Subfolder..."), this, &FolderSelectionDialog::slotAddChildFolder);
         menu.exec(QCursor::pos());
     }
