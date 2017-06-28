@@ -43,7 +43,12 @@ public:
         , mMonitor(new Akonadi::Monitor)
         , mInitialized(false)
     {
-        mMailFilterAgentInterface = new org::freedesktop::Akonadi::MailFilterAgent(QStringLiteral("org.freedesktop.Akonadi.MailFilterAgent"),
+        QString service = QStringLiteral("org.freedesktop.Akonadi.MailFilterAgent");
+        if (Akonadi::ServerManager::hasInstanceIdentifier()) {
+            service += QLatin1Char('.') + Akonadi::ServerManager::instanceIdentifier();
+        }
+
+        mMailFilterAgentInterface = new org::freedesktop::Akonadi::MailFilterAgent(service,
                                                                                    QStringLiteral("/MailFilterAgent"),
                                                                                    QDBusConnection::sessionBus(), q);
     }
