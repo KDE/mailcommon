@@ -5,7 +5,7 @@ set(mailcommon_filter_test_LIBS Qt5::Test Qt5::Gui KF5::AkonadiCore KF5::Akonadi
 )
 
 macro(add_mailcommon_filter_test _name)
-    ecm_add_test(${ARGN} 
+    ecm_add_test(${ARGN}
         TEST_NAME ${_name}
         NAME_PREFIX "mailcommon-filter-"
         LINK_LIBRARIES ${mailcommon_filter_test_LIBS}
