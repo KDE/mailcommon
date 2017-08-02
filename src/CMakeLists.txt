@@ -19,8 +19,10 @@ set(libmailcommon_filter_SRCS
   filter/filteractions/filteractionaddtag.cpp
   filter/filteractions/filteractionaddtoaddressbook.cpp
   filter/filteractions/filteractioncopy.cpp
+  filter/filteractions/filteractiondecrypt.cpp
   filter/filteractions/filteractiondelete.cpp
   filter/filteractions/filteractiondict.cpp
+  filter/filteractions/filteractionencrypt.cpp
   filter/filteractions/filteractionexec.cpp
   filter/filteractions/filteractionforward.cpp
   filter/filteractions/filteractionmove.cpp
@@ -40,6 +42,7 @@ set(libmailcommon_filter_SRCS
   filter/filteractions/filteractionwidget.cpp
   filter/filteractions/filteractionwithaddress.cpp
   filter/filteractions/filteractionwithcommand.cpp
+  filter/filteractions/filteractionwithcrypto.cpp
   filter/filteractions/filteractionwithfolder.cpp
   filter/filteractions/filteractionwithnone.cpp
   filter/filteractions/filteractionwithstring.cpp

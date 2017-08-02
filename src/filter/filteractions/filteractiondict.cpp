@@ -23,8 +23,10 @@
 #include "filteractionaddtag.h"
 #include "filteractionaddtoaddressbook.h"
 #include "filteractioncopy.h"
+#include "filteractiondecrypt.h"
 #include "filteractiondelete.h"
 #include "filteractionexec.h"
+#include "filteractionencrypt.h"
 #include "filteractionforward.h"
 #include "filteractionmove.h"
 #include "filteractionpipethrough.h"
@@ -74,6 +76,8 @@ void FilterActionDict::init()
     insert(FilterActionAddToAddressBook::newAction);
     insert(FilterActionDelete::newAction);
     insert(FilterActionUnsetStatus::newAction);
+    insert(FilterActionEncrypt::newAction);
+    insert(FilterActionDecrypt::newAction);
     // Register custom filter actions below this line.
 }
 

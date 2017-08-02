@@ -4,6 +4,8 @@ set(mailcommon_filter_test_LIBS Qt5::Test Qt5::Gui KF5::AkonadiCore KF5::Akonadi
                                 KF5::MailTransport KF5::I18n
 )
 
+add_definitions(-DTEST_PATH=\"${CMAKE_CURRENT_SOURCE_DIR}\")
+
 macro(add_mailcommon_filter_test _name)
     ecm_add_test(${ARGN}
         TEST_NAME ${_name}
@@ -46,6 +48,22 @@ add_mailcommon_filter_test(filteractiondeletetest
     filteractiondeletetest.cpp
     ../filteractions/filteractiondelete.cpp
     ../filteractions/filteractionwithnone.cpp
+    ${filter_common_SRCS}
+)
+
+add_mailcommon_filter_test(filteractionencrypttest
+    filteractionencrypttest.cpp
+    gpghelper.cpp
+    ../filteractions/filteractionencrypt.cpp
+    ../filteractions/filteractionwithcrypto.cpp
+    ${filter_common_SRCS}
+)
+
+add_mailcommon_filter_test(filteractiondecrypttest
+    filteractiondecrypttest.cpp
+    gpghelper.cpp
+    ../filteractions/filteractiondecrypt.cpp
+    ../filteractions/filteractionwithcrypto.cpp
     ${filter_common_SRCS}
 )
 
