@@ -43,11 +43,8 @@ public:
         , mMonitor(new Akonadi::Monitor)
         , mInitialized(false)
     {
-        QString service = QStringLiteral("org.freedesktop.Akonadi.MailFilterAgent");
-        if (Akonadi::ServerManager::hasInstanceIdentifier()) {
-            service += QLatin1Char('.') + Akonadi::ServerManager::instanceIdentifier();
-        }
-
+        const auto service = Akonadi::ServerManager::agentServiceName(Akonadi::ServerManager::Agent,
+                                                                      QStringLiteral("akonadi_mailfilter_agent"));
         mMailFilterAgentInterface = new org::freedesktop::Akonadi::MailFilterAgent(service,
                                                                                    QStringLiteral("/MailFilterAgent"),
                                                                                    QDBusConnection::sessionBus(), q);
@@ -70,7 +67,8 @@ public:
 
 void FilterManager::Private::readConfig()
 {
-    KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("akonadi_mailfilter_agentrc"));
+    KSharedConfig::Ptr config = KSharedConfig::openConfig(
+        Akonadi::ServerManager::addNamespace(QStringLiteral("akonadi_mailfilter_agent")) + QStringLiteral("rc"));
     clear();
     QStringList emptyFilters;
     mFilters = FilterImporterExporter::readFiltersFromConfig(config, emptyFilters);
@@ -79,7 +77,8 @@ void FilterManager::Private::readConfig()
 
 void FilterManager::Private::writeConfig(bool withSync) const
 {
-    KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("akonadi_mailfilter_agentrc"));
+    KSharedConfig::Ptr config = KSharedConfig::openConfig(
+        Akonadi::ServerManager::addNamespace(QStringLiteral("akonadi_mailfilter_agent")) + QStringLiteral("rc"));
 
     // Now, write out the new stuff:
     FilterImporterExporter::writeFiltersToConfig(mFilters, config);
