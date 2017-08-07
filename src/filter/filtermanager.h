@@ -104,6 +104,30 @@ public:
     void filter(const Akonadi::Item &item, FilterSet set = Inbound, bool account = false, const QString &resourceId = QString()) const;
 
     /**
+     * Process all messages in given collection by applying the filters rules one
+     * by one. You can select which set of filters (incoming or outgoing)
+     * should be used.
+     */
+    void filter(const Akonadi::Collection &collection, FilterSet set = Inbound) const;
+
+    /**
+     * Apply specified filters on all messages in given collection
+     */
+    void filter(const Akonadi::Collection &collection, const QStringList &listFilters) const;
+
+    /**
+     * Process all messages in given collections by applying the filters rules one
+     * by one. You can select which set of filters (incoming or outgoing)
+     * should be used.
+     */
+    void filter(const Akonadi::Collection::List &collections, FilterSet set = Inbound) const;
+
+    /**
+     * Apply specified filters on all messages in given collection
+     */
+    void filter(const Akonadi::Collection::List &collections, const QStringList &listFilters) const;
+
+    /**
      * Process given @p messages by applying the filter rules one by
      * one. You can select which set of filters (incoming or outgoing)
      * should be used.

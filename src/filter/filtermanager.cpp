@@ -240,6 +240,40 @@ void FilterManager::filter(const Akonadi::Item &item, FilterSet set, bool accoun
     d->mMailFilterAgentInterface->filterItem(item.id(), static_cast<int>(set), account ? resourceId : QString());
 }
 
+void FilterManager::filter(const Akonadi::Collection &collection, MailCommon::FilterManager::FilterSet set) const
+{
+    filter({ collection }, set);
+}
+
+void FilterManager::filter(const Akonadi::Collection::List &collections, FilterManager::FilterSet set) const
+{
+    QList<qint64> colIds;
+    colIds.reserve(collections.size());
+    for (const auto col : collections) {
+        colIds << col.id();
+    }
+
+    d->mMailFilterAgentInterface->filterCollections(colIds, static_cast<int>(set));
+}
+
+void FilterManager::filter(const Akonadi::Collection &collection, const QStringList &listFilters) const
+{
+    filter({ collection }, listFilters);
+}
+
+
+void FilterManager::filter(const Akonadi::Collection::List &collections, const QStringList &listFilters) const
+{
+    QList<qint64> colIds;
+    colIds.reserve(collections.size());
+    for (const auto col : collections) {
+        colIds << col.id();
+    }
+
+    d->mMailFilterAgentInterface->applySpecificFiltersOnCollections(colIds, listFilters);
+}
+
+
 void FilterManager::filter(const Akonadi::Item::List &messages, FilterManager::FilterSet set) const
 {
     QList<qint64> itemIds;
