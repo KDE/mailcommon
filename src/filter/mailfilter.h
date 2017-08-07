@@ -146,13 +146,13 @@ public:
       outbound messages (@p aApply == true) or not.
       See applyOnOutbound applyOnInbound setApplyOnInbound
     */
-    void setApplyOnOutbound(bool aApply = true);
+    void setApplyOnOutbound(bool aApply);
 
     /** Set whether this filter should be applied on
       outbound messages before sending (@p aApply == TRUE) or not.
       See applyOnOutbound applyOnInbound setApplyOnInbound
     */
-    void setApplyBeforeOutbound(bool aApply = true);
+    void setApplyBeforeOutbound(bool aApply);
 
     /** @return true if this filter should be applied on
       outbound messages, false otherwise.
@@ -170,7 +170,7 @@ public:
       inbound messages (@p aApply == true) or not.
       @see setApplyOnOutbound applyOnInbound applyOnOutbound
     */
-    void setApplyOnInbound(bool aApply = true);
+    void setApplyOnInbound(bool aApply);
 
     /** @return true if this filter should be applied on
       inbound messages, false otherwise.
@@ -182,7 +182,7 @@ public:
       explicit (CTRL-J) filtering (@p aApply == true) or not.
       @see setApplyOnOutbound applyOnInbound applyOnOutbound
     */
-    void setApplyOnExplicit(bool aApply = true);
+    void setApplyOnExplicit(bool aApply);
 
     /** @return true if this filter should be applied on
       explicit (CTRL-J) filtering, false otherwise.
@@ -202,7 +202,7 @@ public:
     /** Sets whether the filter should be applied on inbound emails in all
       folders, not just Inbox.
     */
-    void setApplyOnAllFoldersInbound(bool aApply = true);
+    void setApplyOnAllFoldersInbound(bool aApply);
 
     /** Returns whether the filter should be applied on inbound emails in all
       folders, not just Inbox.
