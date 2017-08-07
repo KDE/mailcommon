@@ -199,6 +199,16 @@ public:
     */
     void setApplicability(AccountType aApply = All);
 
+    /** Sets whether the filter should be applied on inbound emails in all
+      folders, not just Inbox.
+    */
+    void setApplyOnAllFoldersInbound(bool aApply = true);
+
+    /** Returns whether the filter should be applied on inbound emails in all
+      folders, not just Inbox.
+    */
+    bool applyOnAllFoldersInbound() const;
+
     /** @return true if this filter should be applied on
       inbound messages for all accounts, or false if this filter
       is to be applied on a specified set of accounts only.
@@ -327,6 +337,7 @@ private:
     bool bApplyBeforeOutbound : 1;
     bool bApplyOnOutbound : 1;
     bool bApplyOnExplicit : 1;
+    bool bApplyOnAllFolders : 1;
     bool bStopProcessingHere : 1;
     bool bConfigureShortcut : 1;
     bool bConfigureToolbar : 1;

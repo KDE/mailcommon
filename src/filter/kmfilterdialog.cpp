@@ -264,28 +264,35 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
             = new QCheckBox(i18n("Apply this filter on manual &filtering"), mAdvOptsGroup);
         gl->addWidget(mApplyOnCtrlJ, 6, 0, 1, 4);
 
+        mApplyOnAllFolders = new QCheckBox(i18n("Apply this filter on inbound emails in all folders"), mAdvOptsGroup);
+        mApplyOnAllFolders->setToolTip(i18n("<p>The filter will be applied on inbound emails from all folders "
+                                            "belonging to all accounts selected above. This is useful when using local filters "
+                                            "with IMAP accounts where new emails may have already been moved to different folders "
+                                            "by server-side filters.</p>"));
+        gl->addWidget(mApplyOnAllFolders, 7, 0, 1, 4);
+
         mStopProcessingHere
             = new QCheckBox(i18n("If this filter &matches, stop processing here"), mAdvOptsGroup);
-        gl->addWidget(mStopProcessingHere, 7, 0, 1, 4);
+        gl->addWidget(mStopProcessingHere, 8, 0, 1, 4);
 
         mConfigureShortcut
             = new QCheckBox(i18n("Add this filter to the Apply Filter menu"), mAdvOptsGroup);
-        gl->addWidget(mConfigureShortcut, 8, 0, 1, 2);
+        gl->addWidget(mConfigureShortcut, 9, 0, 1, 2);
 
         QLabel *keyButtonLabel = new QLabel(i18n("Shortcut:"), mAdvOptsGroup);
         keyButtonLabel->setAlignment(Qt::AlignVCenter | Qt::AlignRight);
-        gl->addWidget(keyButtonLabel, 8, 2, 1, 1);
+        gl->addWidget(keyButtonLabel, 9, 2, 1, 1);
 
         mKeySeqWidget = new KKeySequenceWidget(mAdvOptsGroup);
         mKeySeqWidget->setObjectName(QStringLiteral("FilterShortcutSelector"));
-        gl->addWidget(mKeySeqWidget, 8, 3, 1, 1);
+        gl->addWidget(mKeySeqWidget, 9, 3, 1, 1);
         mKeySeqWidget->setEnabled(false);
         mKeySeqWidget->setModifierlessAllowed(true);
         mKeySeqWidget->setCheckActionCollections(actionCollection);
 
         mConfigureToolbar
             = new QCheckBox(i18n("Additionally add this filter to the toolbar"), mAdvOptsGroup);
-        gl->addWidget(mConfigureToolbar, 9, 0, 1, 4);
+        gl->addWidget(mConfigureToolbar, 10, 0, 1, 4);
         mConfigureToolbar->setEnabled(false);
 
         QWidget *hbox = new QWidget(mAdvOptsGroup);
@@ -303,7 +310,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
         mFilterActionIconButton->setIcon(QIcon::fromTheme(QStringLiteral("system-run")));
         mFilterActionIconButton->setEnabled(false);
 
-        gl->addWidget(hbox, 10, 0, 1, 4);
+        gl->addWidget(hbox, 11, 0, 1, 4);
 
         mAdvOptsGroup->setLayout(gl);
     }
@@ -335,6 +342,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     connect(mApplyOnForTraditional, &QAbstractButton::clicked, this, &KMFilterDialog::slotApplicabilityChanged);
     connect(mApplyOnForChecked, &QAbstractButton::clicked, this, &KMFilterDialog::slotApplicabilityChanged);
     connect(mApplyBeforeOut, &QAbstractButton::clicked, this, &KMFilterDialog::slotApplicabilityChanged);
+    connect(mApplyOnAllFolders, &QAbstractButton::clicked, this, &KMFilterDialog::slotApplicabilityChanged);
     connect(mApplyOnOut, &QAbstractButton::clicked, this, &KMFilterDialog::slotApplicabilityChanged);
     connect(mApplyOnCtrlJ, &QAbstractButton::clicked, this, &KMFilterDialog::slotApplicabilityChanged);
     connect(mAccountList, &KMFilterAccountList::itemChanged, this, &KMFilterDialog::slotApplicableAccountsChanged);
@@ -529,6 +537,7 @@ void KMFilterDialog::slotFilterSelected(MailFilter *aFilter)
     qCDebug(MAILCOMMON_LOG) << "apply on outbound ==" << aFilter->applyOnOutbound();
     qCDebug(MAILCOMMON_LOG) << "apply before outbound == " << aFilter->applyBeforeOutbound();
     qCDebug(MAILCOMMON_LOG) << "apply on explicit ==" << aFilter->applyOnExplicit();
+    qCDebug(MAILCOMMON_LOG) << "apply on all folders inboud == " << aFilter->applyOnAllFoldersInbound();
 
     // NOTE: setting these values activates the slot that sets them in
     // the filter! So make sure we have the correct values _before_ we
@@ -538,6 +547,7 @@ void KMFilterDialog::slotFilterSelected(MailFilter *aFilter)
     const bool applyOnTraditional = aFilter->applicability() == MailFilter::ButImap;
     const bool applyBeforeOut = aFilter->applyBeforeOutbound();
     const bool applyOnOut = aFilter->applyOnOutbound();
+    const bool applyOnAllFolders = aFilter->applyOnAllFoldersInbound();
     const bool applyOnExplicit = aFilter->applyOnExplicit();
     const bool stopHere = aFilter->stopProcessingHere();
     const bool configureShortcut = aFilter->configureShortcut();
@@ -550,6 +560,7 @@ void KMFilterDialog::slotFilterSelected(MailFilter *aFilter)
     mApplyOnForTraditional->setEnabled(applyOnIn);
     mApplyOnForChecked->setEnabled(applyOnIn);
     mApplyOnForAll->setChecked(applyOnForAll);
+    mApplyOnAllFolders->setChecked(applyOnAllFolders);
     mApplyOnForTraditional->setChecked(applyOnTraditional);
     mApplyOnForChecked->setChecked(!applyOnForAll && !applyOnTraditional);
     mAccountList->setEnabled(mApplyOnForChecked->isEnabled() && mApplyOnForChecked->isChecked());
@@ -589,6 +600,7 @@ void KMFilterDialog::slotApplicabilityChanged()
         mFilter->setApplyBeforeOutbound(mApplyBeforeOut->isChecked());
         mFilter->setApplyOnOutbound(mApplyOnOut->isChecked());
         mFilter->setApplyOnExplicit(mApplyOnCtrlJ->isChecked());
+        mFilter->setApplyOnAllFoldersInbound(mApplyOnAllFolders->isChecked());
         if (mApplyOnForAll->isChecked()) {
             mFilter->setApplicability(MailFilter::All);
             mFilter->clearApplyOnAccount();
@@ -615,6 +627,7 @@ void KMFilterDialog::slotApplicabilityChanged()
                                 << (mFilter->applyOnInbound() ? "incoming " : "")
                                 << (mFilter->applyOnOutbound() ? "outgoing " : "")
                                 << (mFilter->applyBeforeOutbound() ? "before_outgoing " : "")
+                                << (mFilter->applyOnAllFoldersInbound() ? "all folders inboud " : "")
                                 << (mFilter->applyOnExplicit() ? "explicit CTRL-J" : "");
     }
 }

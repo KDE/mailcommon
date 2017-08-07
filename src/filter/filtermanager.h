@@ -51,7 +51,8 @@ public:
         Outbound = 0x2,
         Explicit = 0x4,
         BeforeOutbound = 0x8,
-        All = Inbound | BeforeOutbound | Outbound | Explicit
+        AllFolders = 0x16, ///< Apply the filter on all folders, not just inbox
+        All = Inbound | BeforeOutbound | Outbound | Explicit | AllFolders
     };
 
     /**

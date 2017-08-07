@@ -54,6 +54,7 @@ MailFilter::MailFilter()
     bApplyBeforeOutbound = false;
     bApplyOnOutbound = false;
     bApplyOnExplicit = true;
+    bApplyOnAllFolders = false;
     bStopProcessingHere = true;
     bConfigureShortcut = false;
     bConfigureToolbar = false;
@@ -76,6 +77,7 @@ MailFilter::MailFilter(const MailFilter &aFilter)
     bApplyBeforeOutbound = aFilter.applyBeforeOutbound();
     bApplyOnOutbound = aFilter.applyOnOutbound();
     bApplyOnExplicit = aFilter.applyOnExplicit();
+    bApplyOnAllFolders = aFilter.applyOnAllFoldersInbound();
     bStopProcessingHere = aFilter.stopProcessingHere();
     bConfigureShortcut = aFilter.configureShortcut();
     bConfigureToolbar = aFilter.configureToolbar();
@@ -234,6 +236,16 @@ void MailFilter::setApplyOnExplicit(bool aApply)
 bool MailFilter::applyOnExplicit() const
 {
     return bApplyOnExplicit;
+}
+
+void MailFilter::setApplyOnAllFoldersInbound(bool aApply)
+{
+    bApplyOnAllFolders = aApply;
+}
+
+bool MailFilter::applyOnAllFoldersInbound() const
+{
+    return bApplyOnAllFolders;
 }
 
 void MailFilter::setApplicability(AccountType aApply)
@@ -402,12 +414,14 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
         bApplyOnOutbound = false;
         bApplyOnInbound = true;
         bApplyOnExplicit = true;
+        bApplyOnAllFolders = false;
         mApplicability = ButImap;
     } else {
         bApplyBeforeOutbound = bool(sets.contains(QStringLiteral("before-send-mail")));
         bApplyOnInbound = bool(sets.contains(QStringLiteral("check-mail")));
         bApplyOnOutbound = bool(sets.contains(QStringLiteral("send-mail")));
         bApplyOnExplicit = bool(sets.contains(QStringLiteral("manual-filtering")));
+        bApplyOnAllFolders = bool(sets.contains(QStringLiteral("all-folders")));
         mApplicability = (AccountType)config.readEntry(
             "Applicability", (int)ButImap);
     }
@@ -530,6 +544,9 @@ void MailFilter::writeConfig(KConfigGroup &config, bool exportFilter) const
     if (bApplyOnExplicit) {
         sets.append(QStringLiteral("manual-filtering"));
     }
+    if (bApplyOnAllFolders) {
+        sets.append(QStringLiteral("all-folders"));
+    }
     config.writeEntry("apply-on", sets);
 
     config.writeEntry("StopProcessingHere", bStopProcessingHere);
@@ -642,6 +659,9 @@ const QString MailFilter::asString() const
     if (bApplyOnExplicit) {
         result += " Explicit";
     }
+    if (bApplyOnAllFolders) {
+        result += " All Folders";
+    }
     result += '\n';
     if (bApplyOnInbound && mApplicability == All) {
         result += "This filter applies to all accounts.\n";
@@ -689,6 +709,7 @@ QDataStream &MailCommon::operator<<(QDataStream &stream, const MailCommon::MailF
     stream << filter.bApplyBeforeOutbound;
     stream << filter.bApplyOnOutbound;
     stream << filter.bApplyOnExplicit;
+    stream << filter.bApplyOnAllFolders;
     stream << filter.bStopProcessingHere;
     stream << filter.bConfigureShortcut;
     stream << filter.bConfigureToolbar;
@@ -708,6 +729,7 @@ QDataStream &MailCommon::operator>>(QDataStream &stream, MailCommon::MailFilter 
     bool bApplyBeforeOutbound;
     bool bApplyOnOutbound;
     bool bApplyOnExplicit;
+    bool bApplyOnAllFolders;
     bool bStopProcessingHere;
     bool bConfigureShortcut;
     bool bConfigureToolbar;
@@ -747,6 +769,7 @@ QDataStream &MailCommon::operator>>(QDataStream &stream, MailCommon::MailFilter 
     stream >> bApplyBeforeOutbound;
     stream >> bApplyOnOutbound;
     stream >> bApplyOnExplicit;
+    stream >> bApplyOnAllFolders;
     stream >> bStopProcessingHere;
     stream >> bConfigureShortcut;
     stream >> bConfigureToolbar;
@@ -760,6 +783,7 @@ QDataStream &MailCommon::operator>>(QDataStream &stream, MailCommon::MailFilter 
     filter.bApplyBeforeOutbound = bApplyBeforeOutbound;
     filter.bApplyOnOutbound = bApplyOnOutbound;
     filter.bApplyOnExplicit = bApplyOnExplicit;
+    filter.bApplyOnAllFolders = bApplyOnAllFolders;
     filter.bStopProcessingHere = bStopProcessingHere;
     filter.bConfigureShortcut = bConfigureShortcut;
     filter.bConfigureToolbar = bConfigureToolbar;
