@@ -53,7 +53,7 @@ QWidget *FilterActionAddTag::createParamWidget(QWidget *parent) const
 
     setParamWidgetValue(mComboBox);
 
-    connect(mComboBox, static_cast<void (PimCommon::MinimumComboBox::*)(int)>(&PimCommon::MinimumComboBox::currentIndexChanged), this, &FilterActionAddTag::filterActionModified);
+    connect(mComboBox, QOverload<int>::of(&PimCommon::MinimumComboBox::currentIndexChanged), this, &FilterActionAddTag::filterActionModified);
 
     return mComboBox;
 }

@@ -73,7 +73,7 @@ void CollectionExpiryPage::init()
     expireReadMailSB->setValue(30);
     expireReadMailSB->setSuffix(ki18ncp("Expire messages after %1", " day", " days"));
     daysBox->addWidget(expireReadMailSB, 0, 1);
-    connect(expireReadMailSB, static_cast<void (KPluralHandlingSpinBox::*)(int)>(&KPluralHandlingSpinBox::valueChanged), this, &CollectionExpiryPage::slotChanged);
+    connect(expireReadMailSB, QOverload<int>::of(&KPluralHandlingSpinBox::valueChanged), this, &CollectionExpiryPage::slotChanged);
 
     expireUnreadMailCB = new QCheckBox;
     expireUnreadMailCB->setText(i18n("Expire unread messages after"));
@@ -85,7 +85,7 @@ void CollectionExpiryPage::init()
     expireUnreadMailSB->setValue(30);
     expireUnreadMailSB->setSuffix(ki18ncp("Expire messages after %1", " day", " days"));
     daysBox->addWidget(expireUnreadMailSB, 1, 1);
-    connect(expireUnreadMailSB, static_cast<void (KPluralHandlingSpinBox::*)(int)>(&KPluralHandlingSpinBox::valueChanged), this, &CollectionExpiryPage::slotChanged);
+    connect(expireUnreadMailSB, QOverload<int>::of(&KPluralHandlingSpinBox::valueChanged), this, &CollectionExpiryPage::slotChanged);
 
     daysBox->setColumnStretch(3, 1);
     globalVBox->addLayout(daysBox);

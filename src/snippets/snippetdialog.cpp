@@ -47,7 +47,7 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
     mOkButton->setEnabled(false);
 
     connect(mUi->nameEdit, &KLineEdit::textChanged, this, &SnippetDialog::slotTextChanged);
-    connect(mUi->groupBox, static_cast<void (KComboBox::*)(const QString &)>(&KComboBox::currentIndexChanged), this, &SnippetDialog::slotGroupChanged);
+    connect(mUi->groupBox, QOverload<const QString &>::of(&KComboBox::currentIndexChanged), this, &SnippetDialog::slotGroupChanged);
 
     mUi->snippetText->setMinimumSize(500, 300);
 

@@ -149,7 +149,7 @@ QWidget *FilterActionRewriteHeader::createParamWidget(QWidget *parent) const
 
     setParamWidgetValue(widget);
 
-    connect(comboBox, static_cast<void (PimCommon::MinimumComboBox::*)(int)>(&PimCommon::MinimumComboBox::currentIndexChanged), this, &FilterActionRewriteHeader::filterActionModified);
+    connect(comboBox, QOverload<int>::of(&PimCommon::MinimumComboBox::currentIndexChanged), this, &FilterActionRewriteHeader::filterActionModified);
     connect(comboBox->lineEdit(), &QLineEdit::textChanged,
             this, &FilterAction::filterActionModified);
     connect(regExpLineEdit, &KLineEdit::textChanged, this, &FilterActionRewriteHeader::filterActionModified);

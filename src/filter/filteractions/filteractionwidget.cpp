@@ -173,7 +173,7 @@ FilterActionWidget::FilterActionWidget(QWidget *parent)
     connect(d->mComboBox, SIGNAL(activated(int)),
             this, SLOT(slotFilterTypeChanged(int)));
 
-    connect(d->mComboBox, static_cast<void (KComboBox::*)(int)>(&KComboBox::activated), this, &FilterActionWidget::filterModified);
+    connect(d->mComboBox, QOverload<int>::of(&KComboBox::activated), this, &FilterActionWidget::filterModified);
 
     connect(d->mAdd, SIGNAL(clicked()),
             this, SLOT(slotAddWidget()));

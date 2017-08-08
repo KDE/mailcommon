@@ -51,7 +51,7 @@ QWidget *FilterActionRemoveHeader::createParamWidget(QWidget *parent) const
     comboBox->setInsertPolicy(QComboBox::InsertAtBottom);
     setParamWidgetValue(comboBox);
 
-    connect(comboBox, static_cast<void (PimCommon::MinimumComboBox::*)(int)>(&PimCommon::MinimumComboBox::currentIndexChanged), this, &FilterActionRemoveHeader::filterActionModified);
+    connect(comboBox, QOverload<int>::of(&PimCommon::MinimumComboBox::currentIndexChanged), this, &FilterActionRemoveHeader::filterActionModified);
     connect(comboBox->lineEdit(), &QLineEdit::textChanged,
             this, &FilterAction::filterActionModified);
 
