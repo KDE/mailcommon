@@ -100,7 +100,8 @@ MAILCOMMON_EXPORT Akonadi::Collection updatedCollection(const Akonadi::Collectio
 MAILCOMMON_EXPORT Akonadi::Collection::Id convertFolderPathToCollectionId(const QString &folder);
 MAILCOMMON_EXPORT QString convertFolderPathToCollectionStr(const QString &folder);
 
-MAILCOMMON_EXPORT bool foundMailer();
+MAILCOMMON_EXPORT void foundMailer(QStringList &lst, const QString &name);
+MAILCOMMON_EXPORT QStringList foundMailer();
 MAILCOMMON_EXPORT bool isLocalCollection(const QString &resource);
 MAILCOMMON_EXPORT MailCommon::ExpireCollectionAttribute *expirationCollectionAttribute(const Akonadi::Collection &collection, bool &mustDeleteExpirationAttribute);
 }

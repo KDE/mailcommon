@@ -348,29 +348,30 @@ QString MailCommon::Util::convertFolderPathToCollectionStr(const QString &folder
     return QString::number(newFolderId);
 }
 
-bool MailCommon::Util::foundMailer()
+void MailCommon::Util::foundMailer(QStringList &lst, const QString &name)
 {
-    const QStringList lst = {
-        MailImporter::FilterEvolution::defaultSettingsPath(),
-        MailImporter::FilterEvolution_v2::defaultSettingsPath(),
-        MailImporter::FilterEvolution_v3::defaultSettingsPath(),
-        MailImporter::FilterBalsa::defaultSettingsPath(),
-        MailImporter::FilterClawsMail::defaultSettingsPath(),
-        MailImporter::FilterOpera::defaultSettingsPath(),
-        MailImporter::FilterSylpheed::defaultSettingsPath(),
-        MailImporter::FilterThunderbird::defaultSettingsPath(),
-        MailImporter::OtherMailerUtil::trojitaDefaultPath(),
-        MailImporter::FilterIcedove::defaultSettingsPath(),
-        MailImporter::OtherMailerUtil::gearyDefaultPath()
-    };
-
-    for (const QString &path : lst) {
-        QDir directory(path);
-        if (directory.exists()) {
-            return true;
-        }
+    if (!name.isEmpty()) {
+        lst.append(name);
     }
-    return false;
+}
+
+QStringList MailCommon::Util::foundMailer()
+{
+    QStringList lst;
+    MailCommon::Util::foundMailer(lst, MailImporter::FilterEvolution::isMailerFound());
+    MailCommon::Util::foundMailer(lst, MailImporter::FilterEvolution_v2::isMailerFound());
+    MailCommon::Util::foundMailer(lst, MailImporter::FilterEvolution_v3::isMailerFound());
+    MailCommon::Util::foundMailer(lst, MailImporter::FilterBalsa::isMailerFound());
+    MailCommon::Util::foundMailer(lst, MailImporter::FilterClawsMail::isMailerFound());
+    MailCommon::Util::foundMailer(lst, MailImporter::FilterOpera::isMailerFound());
+    MailCommon::Util::foundMailer(lst, MailImporter::FilterSylpheed::isMailerFound());
+    MailCommon::Util::foundMailer(lst, MailImporter::FilterThunderbird::isMailerFound());
+    MailCommon::Util::foundMailer(lst, MailImporter::FilterIcedove::isMailerFound());
+    const QStringList otherMailer = MailImporter::OtherMailerUtil::isMailerFound();
+    if (!otherMailer.isEmpty()) {
+        lst << otherMailer;
+    }
+    return lst;
 }
 
 MailCommon::ExpireCollectionAttribute *MailCommon::Util::expirationCollectionAttribute(const Akonadi::Collection &collection, bool &mustDeleteExpirationAttribute)
