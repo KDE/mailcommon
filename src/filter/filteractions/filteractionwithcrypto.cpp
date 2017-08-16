@@ -22,8 +22,12 @@
 
 #include <QGpgME/Protocol>
 #include <QGpgME/DecryptJob>
+#include <QGpgME/VerifyOpaqueJob>
 
 #include <gpgme++/decryptionresult.h>
+#include <gpgme++/verificationresult.h>
+#include <gpgme++/context.h>
+#include <gpgme++/gpgmepp_version.h>
 
 #include <QProcess>
 #include <QStandardPaths>
@@ -31,11 +35,39 @@
 
 using namespace MailCommon;
 
+bool FilterActionWithCrypto::isInlinePGP(const KMime::Content *part) const
+{
+    // Find if the message body starts with --BEGIN PGP MESSAGE-- - we can't just
+    // use contains(), because that would also qualify messages that mention the
+    // string, but are not actually encrypted
+    const auto body = part->body();
+    for (auto c = body.cbegin(), end = body.cend(); c != end; ++c) {
+        if (!c) { // huh?
+            return false; // empty body -> not encrypted
+        }
+        // Is it a white space? Let's check next one
+        if (isspace(*c)) {
+            continue;
+        }
+
+        // First non-white space character in the body - if it's BEGIN PGP MESSAGE
+        // then the message is encrypted, otherwise it's not.
+        if (strncmp(c, "-----BEGIN PGP MESSAGE-----", sizeof("-----BEGIN PGP MESSAGE-----") - 1) == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    return false;
+}
+
 bool FilterActionWithCrypto::isPGP(const KMime::Content *part, bool allowOctetStream) const
 {
     const auto ct = static_cast<KMime::Headers::ContentType*>(part->headerByType("Content-Type"));
-    return ct &&(ct->isSubtype("pgp-encrypted") || ct->isSubtype("encrypted")
-                || (allowOctetStream && ct->isMimeType("application/octet-stream")));
+    return ct && (ct->isSubtype("pgp-encrypted")
+                    || ct->isSubtype("encrypted")
+                    || (allowOctetStream && ct->isMimeType("application/octet-stream")));
 }
 
 bool FilterActionWithCrypto::isSMIME(const KMime::Content *part) const
@@ -44,44 +76,63 @@ bool FilterActionWithCrypto::isSMIME(const KMime::Content *part) const
     return ct && (ct->isSubtype("pkcs7-mime") || ct->isSubtype("x-pkcs7-mime"));
 }
 
+bool FilterActionWithCrypto::isEncrypted(const KMime::Message *msg) const
+{
+    // KMime::isEncrypted does not cover all cases - mostly only deals with
+    // mime types.
+    if (KMime::isEncrypted(const_cast<KMime::Message*>(msg))) {
+        return true;
+    }
+
+    return isInlinePGP(msg);
+}
 
 KMime::Message::Ptr FilterActionWithCrypto::decryptMessage(const KMime::Message::Ptr &msg,
                                                            bool &wasEncrypted) const
 {
-    QGpgME::Protocol *proto = {};
+    GpgME::Protocol protoName = GpgME::UnknownProtocol;
+    bool inlinePGP = false;
     if (msg->mainBodyPart("multipart/encrypted")) {
         const auto subparts = msg->contents();
         for (auto subpart : subparts) {
             if (isPGP(subpart, true)) {
-                proto = QGpgME::openpgp();
+                protoName = GpgME::OpenPGP;
                 break;
             } else if (isSMIME(subpart)) {
-                proto = QGpgME::smime();
+                protoName = GpgME::CMS;
                 break;
             }
         }
     } else {
         if (isPGP(msg.data())) {
-            proto = QGpgME::openpgp();
+            protoName = GpgME::OpenPGP;
         } else if (isSMIME(msg.data())) {
-            proto = QGpgME::smime();
+            protoName = GpgME::CMS;
+        } else if (isInlinePGP(msg.data())) {
+            protoName = GpgME::OpenPGP;
+            inlinePGP = true;
         }
     }
 
-    if (!proto) {
+    if (protoName == GpgME::UnknownProtocol) {
         // Not encrypted, or we don't recognize the encryption
         wasEncrypted = false;
         return {};
     }
 
+    const auto proto = (protoName == GpgME::OpenPGP) ? QGpgME::openpgp() : QGpgME::smime();
+
     wasEncrypted = true;
-    QByteArray outData, inData;
-    if (proto == QGpgME::smime()) {
-        inData = QByteArray::fromBase64(msg->encodedBody());
-    } else {
-        inData = msg->encodedContent();
-    }
+    QByteArray outData;
+    auto inData = msg->decodedContent(); // decodedContent in fact returns decoded body
+
     auto decrypt = proto->decryptJob();
+#if GPGMEPP_VERSION_MAJOR > 1 || (GPGMEPP_VERSION_MAJOR == 1 && GPGMEPP_VERSION_MINOR >= 9)
+    if (inlinePGP) {
+        auto ctx = QGpgME::Job::context(decrypt);
+        ctx->setDecryptionFlags(GpgME::Context::DecryptUnwrap);
+    }
+#endif
     auto result = decrypt->exec(inData, outData);
     if (result.error()) {
         // unknown key, invalid algo, or general error
@@ -89,8 +140,23 @@ KMime::Message::Ptr FilterActionWithCrypto::decryptMessage(const KMime::Message:
         return {};
     }
 
+    if (inlinePGP) {
+        inData = outData;
+        auto verify = proto->verifyOpaqueJob(true);
+        auto result = verify->exec(inData, outData);
+        if (result.error()) {
+            qCWarning(MAILCOMMON_LOG) << "Failed to verify:" << result.error().asString();
+            return {};
+        }
+    }
+
+
     KMime::Content decCt;
-    decCt.setContent(outData);
+    if (inlinePGP) {
+        decCt.setBody(outData);
+    } else {
+        decCt.setContent(outData);
+    }
     decCt.parse();
     decCt.assemble();
 

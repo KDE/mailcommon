@@ -38,10 +38,13 @@ protected:
     KMime::Message::Ptr decryptMessage(const KMime::Message::Ptr &decrypt,
                                        bool &wasEncrypted) const;
 
+    bool isInlinePGP(const KMime::Content *content) const;
     bool isPGP(const KMime::Content *content, bool allowOctetStream = false) const;
     bool isSMIME(const KMime::Content *content) const;
 
     QStringList getEncryptionKeysFromContent(const KMime::Message::Ptr &msg, GpgME::Protocol proto) const;
+
+    bool isEncrypted(const KMime::Message *content) const;
 
 private:
     void copyHeader(const KMime::Headers::Base *header,

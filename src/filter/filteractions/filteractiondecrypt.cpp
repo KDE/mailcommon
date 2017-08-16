@@ -75,7 +75,8 @@ FilterAction::ReturnCode FilterActionDecrypt::process(ItemContext &context, bool
     }
 
     auto msg = item.payload<KMime::Message::Ptr>();
-    if (!KMime::isEncrypted(msg.data())) {
+    if (!isEncrypted(msg.data())) {
+        qCDebug(MAILCOMMON_LOG) << "Message not encrypted";
         return GoOn;
     }
 
