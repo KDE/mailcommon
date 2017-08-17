@@ -104,9 +104,19 @@ Q_SIGNALS:
     void newTabRequested(bool);
 
 private:
+    enum SearchDirection {
+        ForwardSearch,
+        BackwardSearch
+    };
+
+    QModelIndex indexAbove(const QModelIndex &current) const;
+    QModelIndex indexBelow(const QModelIndex &current) const;
+    QModelIndex lastChild(const QModelIndex &current) const;
+    QModelIndex nextUnreadCollection(const QModelIndex &current, SearchDirection direction) const;
+
     bool ignoreUnreadFolder(const Akonadi::Collection &, bool) const;
     bool allowedToEnterFolder(const Akonadi::Collection &, bool) const;
-    bool trySelectNextUnreadFolder(const QModelIndex &, MailCommon::Util::SearchDirection, bool);
+    bool trySelectNextUnreadFolder(const QModelIndex &, SearchDirection, bool);
 
     FolderTreeWidget::ToolTipDisplayPolicy mToolTipDisplayPolicy;
     FolderTreeWidget::SortingPolicy mSortingPolicy;

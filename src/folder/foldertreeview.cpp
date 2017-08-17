@@ -33,7 +33,8 @@
 #include <QHeaderView>
 #include <QMouseEvent>
 
-namespace MailCommon {
+using namespace MailCommon;
+
 FolderTreeView::FolderTreeView(QWidget *parent, bool showUnreadCount)
     : Akonadi::EntityTreeView(parent)
     , mbDisableContextMenuAndExtraColumn(false)
@@ -410,9 +411,9 @@ void FolderTreeView::slotFocusLastFolder()
 void FolderTreeView::selectNextUnreadFolder(bool confirm)
 {
     // find next unread collection starting from current position
-    if (!trySelectNextUnreadFolder(currentIndex(), MailCommon::Util::ForwardSearch, confirm)) {
+    if (!trySelectNextUnreadFolder(currentIndex(), ForwardSearch, confirm)) {
         // if there is none, jump to the last collection and try again
-        trySelectNextUnreadFolder(model()->index(0, 0), MailCommon::Util::ForwardSearch, confirm);
+        trySelectNextUnreadFolder(model()->index(0, 0), ForwardSearch, confirm);
     }
 }
 
@@ -429,18 +430,18 @@ static QModelIndex lastChildOf(QAbstractItemModel *model, const QModelIndex &cur
 void FolderTreeView::selectPrevUnreadFolder(bool confirm)
 {
     // find next unread collection starting from current position
-    if (!trySelectNextUnreadFolder(currentIndex(), MailCommon::Util::BackwardSearch, confirm)) {
+    if (!trySelectNextUnreadFolder(currentIndex(), BackwardSearch, confirm)) {
         // if there is none, jump to top and try again
         const QModelIndex index = lastChildOf(model(), QModelIndex());
-        trySelectNextUnreadFolder(index, MailCommon::Util::BackwardSearch, confirm);
+        trySelectNextUnreadFolder(index, BackwardSearch, confirm);
     }
 }
 
-bool FolderTreeView::trySelectNextUnreadFolder(const QModelIndex &current, MailCommon::Util::SearchDirection direction, bool confirm)
+bool FolderTreeView::trySelectNextUnreadFolder(const QModelIndex &current, SearchDirection direction, bool confirm)
 {
     QModelIndex index = current;
     while (true) {
-        index = MailCommon::Util::nextUnreadCollection(model(), index, direction);
+        index = nextUnreadCollection(index, direction);
 
         if (!index.isValid()) {
             return false;
@@ -607,4 +608,103 @@ void FolderTreeView::keyboardSearch(const QString &)
     // FolderSelectionDialog. We don't want it in KMail main window
     // either because KMail has one-letter keyboard shortcuts.
 }
+
+QModelIndex FolderTreeView::indexBelow(const QModelIndex &current) const
+{
+    // if we have children, return first child
+    if (model()->rowCount(current) > 0) {
+        return model()->index(0, 0, current);
+    }
+
+    // if we have siblings, return next sibling
+    const QModelIndex parent = model()->parent(current);
+    const QModelIndex sibling = model()->index(current.row() + 1, 0, parent);
+
+    if (sibling.isValid()) {   // found valid sibling
+        return sibling;
+    }
+
+    if (!parent.isValid()) {   // our parent is the tree root and we have no siblings
+        return QModelIndex(); // we reached the bottom of the tree
+    }
+
+    // We are the last child, the next index to check is our uncle, parent's first sibling
+    const QModelIndex parentsSibling = parent.sibling(parent.row() + 1, 0);
+    if (parentsSibling.isValid()) {
+        return parentsSibling;
+    }
+
+    // iterate over our parents back to root until we find a parent with a valid sibling
+    QModelIndex currentParent = parent;
+    QModelIndex grandParent = model()->parent(currentParent);
+    while (currentParent.isValid()) {
+        // check if the parent has children except from us
+        if (model()->rowCount(grandParent) > currentParent.row() + 1) {
+            const auto index = indexBelow(model()->index(currentParent.row() + 1, 0, grandParent));
+            if (index.isValid()) {
+                return index;
+            }
+        }
+
+        currentParent = grandParent;
+        grandParent = model()->parent(currentParent);
+    }
+
+    return QModelIndex(); // nothing found -> end of tree
+}
+
+QModelIndex FolderTreeView::lastChild(const QModelIndex &current) const
+{
+    if (model()->rowCount(current) == 0) {
+        return current;
+    }
+
+    return lastChild(model()->index(model()->rowCount(current) - 1, 0, current));
+}
+
+QModelIndex FolderTreeView::indexAbove(const QModelIndex &current) const
+{
+    const QModelIndex parent = model()->parent(current);
+
+    if (current.row() == 0) {
+        // we have no previous siblings -> our parent is the next item above us
+        return parent;
+    }
+
+    // find previous sibling
+    const QModelIndex previousSibling = model()->index(current.row() - 1, 0, parent);
+
+    // the item above us is the last child (or grandchild, or grandgrandchild... etc)
+    // of our previous sibling
+    return lastChild(previousSibling);
+}
+
+QModelIndex FolderTreeView::nextUnreadCollection(const QModelIndex &current, SearchDirection direction) const
+{
+    QModelIndex index = current;
+    while (true) {
+        if (direction == ForwardSearch) {
+            index = indexBelow(index);
+        } else if (direction == BackwardSearch) {
+            index = indexAbove(index);
+        }
+
+        if (!index.isValid()) {   // reach end or top of the model
+            return QModelIndex();
+        }
+
+        // check if the index is a collection
+        const auto collection = index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+
+        if (collection.isValid()) {
+            // check if it is unread
+            if (collection.statistics().unreadCount() > 0) {
+                if (!MailCommon::Util::ignoreNewMailInFolder(collection)) {
+                    return index; // we found the next unread collection
+                }
+            }
+        }
+    }
+
+    return QModelIndex(); // no unread collection found
 }

@@ -79,14 +79,6 @@ MAILCOMMON_EXPORT Akonadi::AgentInstance::List agentInstances(bool excludeMailTr
    */
 MAILCOMMON_EXPORT uint folderIdentity(const Akonadi::Item &item);
 
-/**
-   * Describes the direction for searching next unread collection.
-   */
-enum SearchDirection {
-    ForwardSearch,
-    BackwardSearch
-};
-
 MAILCOMMON_EXPORT Akonadi::Collection parentCollectionFromItem(const Akonadi::Item &item);
 
 MAILCOMMON_EXPORT QString realFolderPath(const QString &path);

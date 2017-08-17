@@ -58,18 +58,9 @@ namespace MailCommon {
  * various places.
  */
 namespace Util {
-/**
-   * Returns the index of the next unread collection following a given index.
-   *
-   * @param model The item model to search in.
-   * @param current The index of the collection where the search will start.
-   * @param direction The direction of search.
-   * @param ignoreCollectionCallback A callback method to ignore certain
-   *        collections by returning @c true.
-   */
-QModelIndex nextUnreadCollection(QAbstractItemModel *model, const QModelIndex &current, SearchDirection direction, bool (*ignoreCollectionCallback)(const Akonadi::Collection &collection) = 0);
 
 bool ignoreNewMailInFolder(const Akonadi::Collection &collection);
+
 }
 }
 
