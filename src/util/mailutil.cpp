@@ -69,6 +69,7 @@
 #include <ItemFetchScope>
 #include <Akonadi/KMime/MessageParts>
 #include <AkonadiCore/NewMailNotifierAttribute>
+#include <AkonadiCore/ServerManager>
 
 #include <KMime/KMimeMessage>
 
@@ -81,26 +82,29 @@
 OrgKdeAkonadiPOP3SettingsInterface *MailCommon::Util::createPop3SettingsInterface(
     const QString &ident)
 {
-    return
-        new OrgKdeAkonadiPOP3SettingsInterface(
-        QLatin1String("org.freedesktop.Akonadi.Resource.") + ident, QStringLiteral("/Settings"), QDBusConnection::sessionBus());
+    const auto service = Akonadi::ServerManager::agentServiceName(Akonadi::ServerManager::Resource, ident);
+    return new OrgKdeAkonadiPOP3SettingsInterface(service, QStringLiteral("/Settings"), QDBusConnection::sessionBus());
 }
 
 bool MailCommon::Util::isVirtualCollection(const Akonadi::Collection &collection)
 {
-    return MailCommon::Util::isVirtualCollection(collection.resource());
+    return collection.isVirtual() || MailCommon::Util::isVirtualCollection(collection.resource());
 }
 
 bool MailCommon::Util::isVirtualCollection(const QString &resource)
 {
-    return resource == QLatin1String("akonadi_search_resource");
+    if (resource == QLatin1String("akonadi_search_resource")) {
+        return true;
+    }
+
+    const auto type = Akonadi::AgentManager::self()->type(resource);
+    return type.capabilities().contains(QStringLiteral("Virtual"));
 }
 
 bool MailCommon::Util::isLocalCollection(const QString &resource)
 {
-    return resource.contains(QStringLiteral("akonadi_mbox_resource"))
-           || resource.contains(QStringLiteral("akonadi_maildir_resource"))
-           || resource.contains(QStringLiteral("akonadi_mixedmaildir_resource"));
+    auto type = Akonadi::AgentManager::self()->type(resource);
+    return type.customProperties().value(QStringLiteral("HasLocalStorage"), false).toBool();
 }
 
 QString MailCommon::Util::fullCollectionPath(const Akonadi::Collection &collection)
