@@ -165,7 +165,7 @@ uint MailCommon::Util::folderIdentity(const Akonadi::Item &item)
     if (item.isValid() && item.parentCollection().isValid()) {
         Akonadi::Collection col = item.parentCollection();
         if (col.resource().isEmpty()) {
-            col = parentCollectionFromItem(item);
+            col = CommonKernel->collectionFromId(col.id());
         }
         const QSharedPointer<FolderSettings> fd
             = FolderSettings::forCollection(col, false);
@@ -183,11 +183,6 @@ bool MailCommon::Util::ignoreNewMailInFolder(const Akonadi::Collection &collecti
         }
     }
     return false;
-}
-
-Akonadi::Collection MailCommon::Util::parentCollectionFromItem(const Akonadi::Item &item)
-{
-    return updatedCollection(item.parentCollection());
 }
 
 QString MailCommon::Util::realFolderPath(const QString &path)
@@ -211,13 +206,6 @@ void MailCommon::Util::expireOldMessages(const Akonadi::Collection &collection, 
 {
     ScheduledExpireTask *task = new ScheduledExpireTask(collection, immediate);
     KernelIf->jobScheduler()->registerTask(task);
-}
-
-Akonadi::Collection MailCommon::Util::updatedCollection(const Akonadi::Collection &col)
-{
-    const QModelIndex idx = Akonadi::EntityTreeModel::modelIndexForCollection(KernelIf->collectionModel(), col);
-    const Akonadi::Collection collection = idx.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
-    return collection;
 }
 
 Akonadi::Collection::Id MailCommon::Util::convertFolderPathToCollectionId(const QString &folder)

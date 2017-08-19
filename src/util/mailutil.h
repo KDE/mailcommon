@@ -79,15 +79,11 @@ MAILCOMMON_EXPORT Akonadi::AgentInstance::List agentInstances(bool excludeMailTr
    */
 MAILCOMMON_EXPORT uint folderIdentity(const Akonadi::Item &item);
 
-MAILCOMMON_EXPORT Akonadi::Collection parentCollectionFromItem(const Akonadi::Item &item);
-
 MAILCOMMON_EXPORT QString realFolderPath(const QString &path);
 
 MAILCOMMON_EXPORT QColor defaultQuotaColor();
 
 MAILCOMMON_EXPORT void expireOldMessages(const Akonadi::Collection &collection, bool immediate);
-
-MAILCOMMON_EXPORT Akonadi::Collection updatedCollection(const Akonadi::Collection &col);
 
 MAILCOMMON_EXPORT Akonadi::Collection::Id convertFolderPathToCollectionId(const QString &folder);
 MAILCOMMON_EXPORT QString convertFolderPathToCollectionStr(const QString &folder);

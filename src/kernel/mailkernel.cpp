@@ -118,11 +118,7 @@ PimCommon::ImapResourceCapabilitiesManager *Kernel::imapResourceManager() const
 
 Akonadi::Collection Kernel::collectionFromId(Akonadi::Collection::Id id) const
 {
-    const QModelIndex idx
-        = Akonadi::EntityTreeModel::modelIndexForCollection(
-        kernelIf()->collectionModel(), Akonadi::Collection(id));
-
-    return idx.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+    return Akonadi::EntityTreeModel::updatedCollection(kernelIf()->collectionModel(), id);
 }
 
 Akonadi::Collection Kernel::trashCollectionFolder()

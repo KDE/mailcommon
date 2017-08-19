@@ -120,7 +120,7 @@ QString FilterActionWithFolder::displayString() const
 {
     QString result;
     if (mFolder.isValid()) {
-        result = MailCommon::Util::fullCollectionPath(MailCommon::Util::updatedCollection(mFolder));
+        result = MailCommon::Util::fullCollectionPath(CommonKernel->collectionFromId(mFolder.id()));
     }
 
     return label() + QLatin1String(" \"") + result.toHtmlEscaped() + QLatin1String("\"");
