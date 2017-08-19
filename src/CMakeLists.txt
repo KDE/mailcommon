@@ -160,6 +160,7 @@ set(libmailcommon_mdn_SRCS
 )
 
 set(libmailcommon_util_SRCS
+  util/cryptoutils.cpp
   util/mailutil.cpp
   util/resourcereadconfigfile.cpp
 )
@@ -268,6 +269,7 @@ endif()
 
 ecm_generate_headers(MailCommon_CamelCase_HEADERS
   HEADER_NAMES
+  CryptoUtils
   MailUtil
   MetaType
   ResourceReadConfigFile

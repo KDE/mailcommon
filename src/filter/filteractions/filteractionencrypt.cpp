@@ -19,6 +19,7 @@
 
 #include "filteractionencrypt.h"
 #include "mailcommon_debug.h"
+#include "util/cryptoutils.h"
 
 #include <QEventLoop>
 #include <QVBoxLayout>
@@ -173,7 +174,7 @@ FilterAction::ReturnCode FilterActionEncrypt::process(ItemContext &context, bool
                 }
             }
             bool dummy; // dummy
-            const auto decrypted = decryptMessage(msg, dummy);
+            const auto decrypted = CryptoUtils::decryptMessage(msg, dummy);
             if (!decrypted) {
                 // We failed to decrypt the encrypted email - very likely we just don't
                 // have the right key, so don't consider it an error
@@ -199,7 +200,7 @@ FilterAction::ReturnCode FilterActionEncrypt::process(ItemContext &context, bool
     KMime::Content *result = encrypt.content();
     result->assemble();
 
-    auto nec = assembleMessage(msg, result);
+    auto nec = CryptoUtils::assembleMessage(msg, result);
     context.item().setPayload(nec);
     context.item().setFlag(Akonadi::MessageFlags::Encrypted);
     context.setNeedsPayloadStore();

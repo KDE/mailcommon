@@ -33,23 +33,7 @@ class FilterActionWithCrypto : public FilterAction
 protected:
     using FilterAction::FilterAction;
 
-    KMime::Message::Ptr assembleMessage(const KMime::Message::Ptr &orig,
-                                        const KMime::Content *newContent) const;
-    KMime::Message::Ptr decryptMessage(const KMime::Message::Ptr &decrypt,
-                                       bool &wasEncrypted) const;
-
-    bool isInlinePGP(const KMime::Content *content) const;
-    bool isPGP(const KMime::Content *content, bool allowOctetStream = false) const;
-    bool isSMIME(const KMime::Content *content) const;
-
     QStringList getEncryptionKeysFromContent(const KMime::Message::Ptr &msg, GpgME::Protocol proto) const;
-
-    bool isEncrypted(const KMime::Message *content) const;
-
-private:
-    void copyHeader(const KMime::Headers::Base *header,
-                    KMime::Message::Ptr destMsg) const;
-    bool isContentHeader(const KMime::Headers::Base *header) const;
 
 private:
     // cached values

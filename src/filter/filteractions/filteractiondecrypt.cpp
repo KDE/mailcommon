@@ -19,6 +19,7 @@
 
 #include "filteractiondecrypt.h"
 #include "mailcommon_debug.h"
+#include "util/cryptoutils.h"
 
 #include <KLocalizedString>
 
@@ -81,7 +82,7 @@ FilterAction::ReturnCode FilterActionDecrypt::process(ItemContext &context, bool
     }
 
     bool wasEncrypted;
-    auto nec = decryptMessage(msg, wasEncrypted);
+    auto nec = CryptoUtils::decryptMessage(msg, wasEncrypted);
     if (!nec) {
         return wasEncrypted ? ErrorButGoOn: GoOn;
     }
