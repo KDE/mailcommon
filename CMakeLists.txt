@@ -70,16 +70,8 @@ find_package(KF5Mime ${KMIME_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5PimCommonAkonadi ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5TemplateParser ${MESSAGELIB_LIB_VERSION} CONFIG REQUIRED)
 find_package(Phonon4Qt5 CONFIG REQUIRED)
-
-find_package(Qt5Designer CONFIG)
-set_package_properties(Qt5Designer PROPERTIES
-   PURPOSE "Required to build the Qt Designer plugins"
-   TYPE OPTIONAL
-)
-
-if (Qt5Designer_FOUND)
-  find_package(KF5DesignerPlugin ${KF5_VERSION} CONFIG REQUIRED)
-endif()
+find_package(KF5DesignerPlugin ${KF5_VERSION} CONFIG)
+set_package_properties(KF5DesignerPlugin PROPERTIES DESCRIPTION "KF5 designer plugin" TYPE OPTIONAL)
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX MAILCOMMON
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailcommon_version.h"
