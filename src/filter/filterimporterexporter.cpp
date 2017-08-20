@@ -348,11 +348,14 @@ QList<MailFilter *> FilterImporterExporter::importFilters(
     d->warningInfoAboutInvalidFilter(emptyFilter);
     file.close();
 
-    FilterSelectionDialog dlg(d->mParent);
-    dlg.setFilters(imported);
-    if (dlg.exec() == QDialog::Accepted) {
-        return dlg.selectedFilters();
+    QPointer<FilterSelectionDialog> dlg = new FilterSelectionDialog(d->mParent);
+    dlg->setFilters(imported);
+    if (dlg->exec() == QDialog::Accepted) {
+        const QList<MailFilter *> selected = dlg->selectedFilters();
+        delete dlg;
+        return selected;
     }
+    delete dlg;
     canceled = true;
     return QList<MailFilter *>();
 }
