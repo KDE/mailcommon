@@ -20,10 +20,12 @@
 #include <qtest.h>
 #include "../filter/invalidfilters/invalidfilterwidget.h"
 #include "../filter/invalidfilters/invalidfilterinfowidget.h"
+#include <QStandardPaths>
 
 InvalidFilterDialogTest::InvalidFilterDialogTest(QObject *parent)
     : QObject(parent)
 {
+    QStandardPaths::setTestModeEnabled(true);
 }
 
 InvalidFilterDialogTest::~InvalidFilterDialogTest()
