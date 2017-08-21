@@ -23,11 +23,13 @@
 #include <QLabel>
 #include <QListWidget>
 #include <QPushButton>
+#include <QStandardPaths>
 #include <QTest>
 
 FilterActionMissingTagDialogTest::FilterActionMissingTagDialogTest(QObject *parent)
     : QObject(parent)
 {
+    QStandardPaths::setTestModeEnabled(true);
 }
 
 FilterActionMissingTagDialogTest::~FilterActionMissingTagDialogTest()

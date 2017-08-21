@@ -21,9 +21,11 @@
 #include <qtest.h>
 #include <QPushButton>
 #include <kpimtextedit/plaintexteditorwidget.h>
+#include <QStandardPaths>
 FilterConvertToSieveResultDialogTest::FilterConvertToSieveResultDialogTest(QObject *parent)
     : QObject(parent)
 {
+    QStandardPaths::setTestModeEnabled(true);
 }
 
 FilterConvertToSieveResultDialogTest::~FilterConvertToSieveResultDialogTest()

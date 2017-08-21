@@ -23,12 +23,14 @@
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QTest>
+#include <QStandardPaths>
 
 #include <MailTransport/TransportComboBox>
 
 FilterActionMissingTransportDialogTest::FilterActionMissingTransportDialogTest(QObject *parent)
     : QObject(parent)
 {
+    QStandardPaths::setTestModeEnabled(true);
 }
 
 FilterActionMissingTransportDialogTest::~FilterActionMissingTransportDialogTest()

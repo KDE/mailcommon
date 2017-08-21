@@ -22,6 +22,7 @@
 #include "../../autotests/dummykernel.h"
 #include "../../kernel/mailkernel.h"
 #include <QDialogButtonBox>
+#include <QStandardPaths>
 #include <QLabel>
 #include <QTest>
 #include <KIdentityManagement/IdentityCombo>
@@ -29,6 +30,7 @@
 FilterActionMissingIdentityDialogTest::FilterActionMissingIdentityDialogTest(QObject *parent)
     : QObject(parent)
 {
+    QStandardPaths::setTestModeEnabled(true);
 }
 
 FilterActionMissingIdentityDialogTest::~FilterActionMissingIdentityDialogTest()

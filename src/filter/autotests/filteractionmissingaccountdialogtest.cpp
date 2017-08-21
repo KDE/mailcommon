@@ -22,11 +22,13 @@
 #include "../filter/kmfilteraccountlist.h"
 #include <QDialogButtonBox>
 #include <QLabel>
+#include <QStandardPaths>
 #include <QTest>
 
 FilterActionMissingAccountDialogTest::FilterActionMissingAccountDialogTest(QObject *parent)
     : QObject(parent)
 {
+    QStandardPaths::setTestModeEnabled(true);
 }
 
 FilterActionMissingAccountDialogTest::~FilterActionMissingAccountDialogTest()

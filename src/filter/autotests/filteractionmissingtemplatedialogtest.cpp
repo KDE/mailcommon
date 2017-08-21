@@ -22,11 +22,13 @@
 #include <KComboBox>
 #include <QDialogButtonBox>
 #include <QLabel>
+#include <QStandardPaths>
 #include <QTest>
 
 FilterActionMissingTemplateDialogTest::FilterActionMissingTemplateDialogTest(QObject *parent)
     : QObject(parent)
 {
+    QStandardPaths::setTestModeEnabled(true);
 }
 
 FilterActionMissingTemplateDialogTest::~FilterActionMissingTemplateDialogTest()
