@@ -129,7 +129,7 @@ QString MailCommon::Util::fullCollectionPath(const Akonadi::Collection &collecti
 bool MailCommon::Util::showJobErrorMessage(KJob *job)
 {
     if (job->error()) {
-        if (auto uidelegate = static_cast<KIO::Job *>(job)->ui()) {
+        if (auto uidelegate = static_cast<KIO::Job *>(job)->uiDelegate()) {
             uidelegate->showErrorMessage();
         } else {
             qCDebug(MAILCOMMON_LOG) << " job->errorString() :" << job->errorString();
