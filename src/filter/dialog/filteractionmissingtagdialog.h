@@ -41,7 +41,7 @@ private:
     enum TypeData {
         UrlData = Qt::UserRole + 1
     };
-    QListWidget *mTagList;
+    QListWidget *mTagList = nullptr;
 };
 }
 #endif // FILTERACTIONMISSINGTAGDIALOG_H

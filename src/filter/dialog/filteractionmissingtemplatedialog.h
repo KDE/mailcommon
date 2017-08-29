@@ -35,7 +35,7 @@ public:
 private:
     void readConfig();
     void writeConfig();
-    KComboBox *mComboBoxTemplate;
+    KComboBox *mComboBoxTemplate = nullptr;
 };
 }
 #endif // FILTERACTIONMISSINGTEMPLATEDIALOG_H

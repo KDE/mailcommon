@@ -45,7 +45,7 @@ public:
     bool isEmpty() const override;
     QString informationAboutNotValidAction() const override;
 private:
-    mutable Phonon::MediaObject *mPlayer;
+    mutable Phonon::MediaObject *mPlayer = nullptr;
 };
 }
 

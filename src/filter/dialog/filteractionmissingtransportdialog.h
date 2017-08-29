@@ -37,7 +37,7 @@ public:
 private:
     void writeConfig();
     void readConfig();
-    MailTransport::TransportComboBox *mComboBoxTransport;
+    MailTransport::TransportComboBox *mComboBoxTransport = nullptr;
 };
 }
 

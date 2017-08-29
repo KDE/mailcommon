@@ -143,11 +143,11 @@ private Q_SLOTS:
 
 private:
     void initLayout(SearchPatternEditOptions options, SearchModeType modeType);
-    MailCommon::SearchPattern *mPattern;
-    QRadioButton *mAllRBtn;
-    QRadioButton *mAnyRBtn;
-    QRadioButton *mAllMessageRBtn;
-    SearchRuleWidgetLister *mRuleLister;
+    MailCommon::SearchPattern *mPattern = nullptr;
+    QRadioButton *mAllRBtn = nullptr;
+    QRadioButton *mAnyRBtn = nullptr;
+    QRadioButton *mAllMessageRBtn = nullptr;
+    SearchRuleWidgetLister *mRuleLister = nullptr;
 };
 
 /**
@@ -267,11 +267,11 @@ private:
     void initFieldList(MailCommon::SearchPatternEdit::SearchPatternEditOptions options);
 
     QStringList mFilterFieldList;
-    KComboBox *mRuleField;
-    QStackedWidget *mFunctionStack;
-    QStackedWidget *mValueStack;
-    QPushButton *mAdd;
-    QPushButton *mRemove;
+    KComboBox *mRuleField = nullptr;
+    QStackedWidget *mFunctionStack = nullptr;
+    QStackedWidget *mValueStack = nullptr;
+    QPushButton *mAdd = nullptr;
+    QPushButton *mRemove = nullptr;
 };
 
 class SearchRuleWidgetLister : public KPIM::KWidgetLister

@@ -36,8 +36,8 @@ public:
 private:
     void writeConfig();
     void readConfig();
-    InvalidFilterWidget *mInvalidFilterWidget;
-    InvalidFilterInfoWidget *mInvalidFilterInfoWidget;
+    InvalidFilterWidget *mInvalidFilterWidget = nullptr;
+    InvalidFilterInfoWidget *mInvalidFilterInfoWidget = nullptr;
 };
 }
 #endif // INVALIDFILTERDIALOG_H

@@ -66,11 +66,11 @@ public:
 
     FilterActionWidget *q;
     QList<MailCommon::FilterAction *> mActionList;
-    KComboBox *mComboBox;
-    QPushButton *mAdd;
-    QPushButton *mRemove;
+    KComboBox *mComboBox = nullptr;
+    QPushButton *mAdd = nullptr;
+    QPushButton *mRemove = nullptr;
 
-    QGridLayout *mLayout;
+    QGridLayout *mLayout = nullptr;
 };
 
 void FilterActionWidget::Private::setFilterAction(QWidget *widget)

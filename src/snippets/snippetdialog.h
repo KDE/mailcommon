@@ -56,9 +56,9 @@ private Q_SLOTS:
 private:
     bool snippetIsValid() const;
 
-    KActionCollection *mActionCollection;
-    Ui::SnippetDialog *mUi;
-    QPushButton *mOkButton;
+    KActionCollection *mActionCollection = nullptr;
+    Ui::SnippetDialog *mUi = nullptr;
+    QPushButton *mOkButton = nullptr;
 };
 }
 #endif

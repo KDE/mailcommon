@@ -255,9 +255,9 @@ private:
     }
 
     static QStringList collectNames(QAbstractItemModel *model);
-    EntityMimeTypeFilterModel *mCollectionModel;
-    QAbstractItemModel *mTopModel;
-    MailCommon::FolderTreeWidget *mFolderTreeWidget;
+    EntityMimeTypeFilterModel *mCollectionModel = nullptr;
+    QAbstractItemModel *mTopModel = nullptr;
+    MailCommon::FolderTreeWidget *mFolderTreeWidget = nullptr;
     QStringList mFolderNames;
 };
 

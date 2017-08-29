@@ -43,7 +43,7 @@ public:
     {
     }
 
-    Akonadi::ChangeRecorder *mMonitor;
+    Akonadi::ChangeRecorder *mMonitor = nullptr;
 };
 
 FolderCollectionMonitor::FolderCollectionMonitor(Akonadi::Session *session, QObject *parent)

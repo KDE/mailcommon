@@ -50,22 +50,22 @@ public:
     {
     }
 
-    KLineEdit *mTagNameLineEdit;
+    KLineEdit *mTagNameLineEdit = nullptr;
 
-    QCheckBox *mTextColorCheck;
-    QCheckBox *mBackgroundColorCheck;
-    QCheckBox *mTextFontCheck;
-    QCheckBox *mInToolbarCheck;
+    QCheckBox *mTextColorCheck = nullptr;
+    QCheckBox *mBackgroundColorCheck = nullptr;
+    QCheckBox *mTextFontCheck = nullptr;
+    QCheckBox *mInToolbarCheck = nullptr;
 
-    KColorCombo *mTextColorCombo;
-    KColorCombo *mBackgroundColorCombo;
+    KColorCombo *mTextColorCombo = nullptr;
+    KColorCombo *mBackgroundColorCombo = nullptr;
 
-    QCheckBox *mBoldCheckBox;
-    QCheckBox *mItalicCheckBox;
+    QCheckBox *mBoldCheckBox = nullptr;
+    QCheckBox *mItalicCheckBox = nullptr;
 
-    KIconButton *mIconButton;
+    KIconButton *mIconButton = nullptr;
 
-    KKeySequenceWidget *mKeySequenceWidget;
+    KKeySequenceWidget *mKeySequenceWidget = nullptr;
 };
 
 TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidget *parent)

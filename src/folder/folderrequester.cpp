@@ -58,10 +58,10 @@ public:
     }
 
     Akonadi::Collection mCollection;
-    KLineEdit *mEdit;
-    bool mMustBeReadWrite;
-    bool mShowOutbox;
-    bool mNotCreateNewFolder;
+    KLineEdit *mEdit = nullptr;
+    bool mMustBeReadWrite = false;
+    bool mShowOutbox = false;
+    bool mNotCreateNewFolder = false;
 };
 
 FolderRequester::FolderRequester(QWidget *parent)

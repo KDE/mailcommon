@@ -105,8 +105,8 @@ private:
     QDateTime mArchiveTime;
     ArchiveType mArchiveType;
     Akonadi::Collection mRootFolder;
-    KArchive *mArchive;
-    QWidget *mParentWidget;
+    KArchive *mArchive = nullptr;
+    QWidget *mParentWidget = nullptr;
     int mArchivedMessages;
     uint mArchivedSize;
     QPointer<KPIM::ProgressItem> mProgressItem;
@@ -118,8 +118,8 @@ private:
     Akonadi::Collection::List mAllFolders;
     Akonadi::Collection mCurrentFolder;
     Akonadi::Item::List mPendingMessages;
-    Akonadi::ItemFetchJob *mCurrentJob;
-    bool mDisplayMessageBox;
+    Akonadi::ItemFetchJob *mCurrentJob = nullptr;
+    bool mDisplayMessageBox = false;
 };
 }
 

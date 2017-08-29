@@ -59,17 +59,17 @@ private:
     void saveAndExpire(Akonadi::Collection &collection, bool saveSettings, bool _expirenow);
 
 private:
-    QCheckBox *expireReadMailCB;
-    KPluralHandlingSpinBox *expireReadMailSB;
-    QCheckBox *expireUnreadMailCB;
-    KPluralHandlingSpinBox *expireUnreadMailSB;
-    QRadioButton *moveToRB;
-    FolderRequester *folderSelector;
-    QRadioButton *deletePermanentlyRB;
-    QPushButton *expireNowPB;
+    QCheckBox *expireReadMailCB = nullptr;
+    KPluralHandlingSpinBox *expireReadMailSB = nullptr;
+    QCheckBox *expireUnreadMailCB = nullptr;
+    KPluralHandlingSpinBox *expireUnreadMailSB = nullptr;
+    QRadioButton *moveToRB = nullptr;
+    FolderRequester *folderSelector = nullptr;
+    QRadioButton *deletePermanentlyRB = nullptr;
+    QPushButton *expireNowPB = nullptr;
 
     Akonadi::Collection mCollection;
-    bool mChanged;
+    bool mChanged = false;
 };
 
 AKONADI_COLLECTION_PROPERTIES_PAGE_FACTORY(CollectionExpiryPageFactory, CollectionExpiryPage)

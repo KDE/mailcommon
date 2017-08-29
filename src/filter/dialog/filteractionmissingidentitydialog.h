@@ -37,7 +37,7 @@ public:
 private:
     void writeConfig();
     void readConfig();
-    KIdentityManagement::IdentityCombo *mComboBoxIdentity;
+    KIdentityManagement::IdentityCombo *mComboBoxIdentity = nullptr;
 };
 }
 

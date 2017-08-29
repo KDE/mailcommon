@@ -214,39 +214,45 @@ protected:
 
     /** The widget that contains the ListBox showing the filters, and the
         controls to remove filters, add new ones and to change their order. */
-    KMFilterListBox *mFilterList;
+    KMFilterListBox *mFilterList = nullptr;
 
     /** The widget that allows editing of the filter pattern. */
-    MailCommon::SearchPatternEdit *mPatternEdit;
+    MailCommon::SearchPatternEdit *mPatternEdit = nullptr;
 
     /** The widget that allows editing of the filter actions. */
-    MailCommon::FilterActionWidgetLister *mActionLister;
+    MailCommon::FilterActionWidgetLister *mActionLister = nullptr;
 
     /** Lets the user select whether to apply this filter on
        inbound/outbound messages, both, or only on explicit CTRL-J. */
-    QCheckBox *mApplyOnIn, *mApplyOnOut, *mApplyBeforeOut, *mApplyOnCtrlJ, *mApplyOnAllFolders;
+    QCheckBox *mApplyOnIn = nullptr;
+    QCheckBox *mApplyOnOut = nullptr;
+    QCheckBox *mApplyBeforeOut = nullptr;
+    QCheckBox *mApplyOnCtrlJ = nullptr;
+    QCheckBox *mApplyOnAllFolders = nullptr;
 
     /** For a filter applied to inbound messages selects whether to apply
         this filter to all accounts or to selected accounts only. */
-    QRadioButton *mApplyOnForAll, *mApplyOnForTraditional, *mApplyOnForChecked;
+    QRadioButton *mApplyOnForAll = nullptr;
+    QRadioButton *mApplyOnForTraditional = nullptr;
+    QRadioButton *mApplyOnForChecked = nullptr;
 
     /** ListView that shows the accounts in the advanced tab */
-    KMFilterAccountList *mAccountList;
+    KMFilterAccountList *mAccountList = nullptr;
 
-    QCheckBox *mStopProcessingHere;
-    QCheckBox *mConfigureShortcut;
-    QCheckBox *mConfigureToolbar;
-    QLabel *mFilterActionLabel;
-    KIconButton *mFilterActionIconButton;
-    KKeySequenceWidget *mKeySeqWidget;
-    QGroupBox *mAdvOptsGroup;
+    QCheckBox *mStopProcessingHere = nullptr;
+    QCheckBox *mConfigureShortcut = nullptr;
+    QCheckBox *mConfigureToolbar = nullptr;
+    QLabel *mFilterActionLabel = nullptr;
+    KIconButton *mFilterActionIconButton = nullptr;
+    KKeySequenceWidget *mKeySeqWidget = nullptr;
+    QGroupBox *mAdvOptsGroup = nullptr;
 
-    MailCommon::MailFilter *mFilter;
-    MailCommon::FolderRequester *mFolderRequester;
-    QPushButton *mRunNow;
-    QDialogButtonBox *buttonBox;
-    bool mDoNotClose;
-    bool mIgnoreFilterUpdates;
+    MailCommon::MailFilter *mFilter = nullptr;
+    MailCommon::FolderRequester *mFolderRequester = nullptr;
+    QPushButton *mRunNow = nullptr;
+    QDialogButtonBox *buttonBox = nullptr;
+    bool mDoNotClose = false;
+    bool mIgnoreFilterUpdates = false;
 };
 }
 

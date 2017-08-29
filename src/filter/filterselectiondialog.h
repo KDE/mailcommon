@@ -49,11 +49,11 @@ public Q_SLOTS:
 private:
     void writeConfig();
     void readConfig();
-    QListWidget *filtersListWidget;
+    QListWidget *filtersListWidget = nullptr;
     QList<MailFilter *> originalFilters;
-    QPushButton *selectAllButton;
-    QPushButton *unselectAllButton;
-    QPushButton *mOkButton;
+    QPushButton *selectAllButton = nullptr;
+    QPushButton *unselectAllButton = nullptr;
+    QPushButton *mOkButton = nullptr;
 };
 }
 #endif // FILTERSELECTIONDIALOG_H

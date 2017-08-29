@@ -34,7 +34,7 @@ public:
         delete mConfig;
     }
 
-    KConfig *mConfig;
+    KConfig *mConfig = nullptr;
 };
 
 ResourceReadConfigFile::ResourceReadConfigFile(const QString &resourceName)

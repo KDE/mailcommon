@@ -52,11 +52,11 @@ public:
     void expunge(Akonadi::Collection::Id col, bool sync) override;
 
 private:
-    KIdentityManagement::IdentityManager *mIdentityManager;
-    MessageComposer::MessageSender *mMessageSender;
-    MailCommon::FolderCollectionMonitor *mFolderCollectionMonitor;
-    Akonadi::EntityTreeModel *mEntityTreeModel;
-    Akonadi::EntityMimeTypeFilterModel *mCollectionModel;
+    KIdentityManagement::IdentityManager *mIdentityManager = nullptr;
+    MessageComposer::MessageSender *mMessageSender = nullptr;
+    MailCommon::FolderCollectionMonitor *mFolderCollectionMonitor = nullptr;
+    Akonadi::EntityTreeModel *mEntityTreeModel = nullptr;
+    Akonadi::EntityMimeTypeFilterModel *mCollectionModel = nullptr;
 };
 
 #endif

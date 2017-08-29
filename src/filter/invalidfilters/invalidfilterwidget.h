@@ -36,7 +36,7 @@ Q_SIGNALS:
     void showDetails(const QString &);
     void hideInformationWidget();
 private:
-    InvalidFilterListView *mInvalidFilterListWidget;
+    InvalidFilterListView *mInvalidFilterListWidget = nullptr;
 };
 }
 

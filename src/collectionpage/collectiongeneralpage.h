@@ -59,18 +59,18 @@ private Q_SLOTS:
 private:
     void addLine(QWidget *parent, QVBoxLayout *layout);
     QString mColorName;
-    PimCommon::ContentTypeWidget *mContentsComboBox;
-    PimCommon::IncidencesForWidget *mIncidencesForComboBox;
-    QCheckBox *mSharedSeenFlagsCheckBox;
-    QCheckBox *mNotifyOnNewMailCheckBox;
-    QCheckBox *mKeepRepliesInSameFolderCheckBox;
-    QCheckBox *mHideInSelectionDialogCheckBox;
-    QCheckBox *mUseDefaultIdentityCheckBox;
-    KLineEdit *mNameEdit;
-    KIdentityManagement::IdentityCombo *mIdentityComboBox;
+    PimCommon::ContentTypeWidget *mContentsComboBox = nullptr;
+    PimCommon::IncidencesForWidget *mIncidencesForComboBox = nullptr;
+    QCheckBox *mSharedSeenFlagsCheckBox = nullptr;
+    QCheckBox *mNotifyOnNewMailCheckBox = nullptr;
+    QCheckBox *mKeepRepliesInSameFolderCheckBox = nullptr;
+    QCheckBox *mHideInSelectionDialogCheckBox = nullptr;
+    QCheckBox *mUseDefaultIdentityCheckBox = nullptr;
+    KLineEdit *mNameEdit = nullptr;
+    KIdentityManagement::IdentityCombo *mIdentityComboBox = nullptr;
     QSharedPointer<MailCommon::FolderSettings> mFolderCollection;
-    bool mIsLocalSystemFolder;
-    bool mIsResourceFolder;
+    bool mIsLocalSystemFolder = false;
+    bool mIsResourceFolder = false;
 };
 
 AKONADI_COLLECTION_PROPERTIES_PAGE_FACTORY(CollectionGeneralPageFactory, CollectionGeneralPage)

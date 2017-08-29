@@ -47,7 +47,7 @@ private Q_SLOTS:
     void slotUrlChanged(const QString &path);
     void slotItemSelectionChanged();
 private:
-    Ui::SelectThunderbirdFilterFilesWidget *ui;
+    Ui::SelectThunderbirdFilterFilesWidget *ui = nullptr;
 };
 }
 #endif // SELECTTHUNDERBIRDFILTERFILESWIDGET_H

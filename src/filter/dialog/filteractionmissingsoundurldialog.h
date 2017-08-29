@@ -34,7 +34,7 @@ public:
 private:
     void readConfig();
     void writeConfig();
-    KUrlRequester *mUrlWidget;
+    KUrlRequester *mUrlWidget = nullptr;
 };
 }
 

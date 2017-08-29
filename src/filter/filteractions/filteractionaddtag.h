@@ -62,7 +62,7 @@ private:
     void initializeTagList();
     mutable QMap<QUrl, QString> mList;
     QString mParameter;
-    mutable PimCommon::MinimumComboBox *mComboBox;
+    mutable PimCommon::MinimumComboBox *mComboBox = nullptr;
 };
 }
 

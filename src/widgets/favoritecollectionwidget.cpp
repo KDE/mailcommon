@@ -38,14 +38,12 @@ class Q_DECL_HIDDEN FavoriteCollectionWidget::Private
 {
 public:
     Private()
-        : listMode(nullptr)
-        , iconMode(nullptr)
     {
     }
 
     QColor textColor;
-    QAction *listMode;
-    QAction *iconMode;
+    QAction *listMode = nullptr;
+    QAction *iconMode = nullptr;
 };
 
 FavoriteCollectionWidget::FavoriteCollectionWidget(KXMLGUIClient *xmlGuiClient, QWidget *parent)

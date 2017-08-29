@@ -37,7 +37,7 @@ public:
 private:
     void readConfig();
     void writeConfig();
-    SelectThunderbirdFilterFilesWidget *mSelectFilterFilesWidget;
+    SelectThunderbirdFilterFilesWidget *mSelectFilterFilesWidget = nullptr;
 };
 }
 

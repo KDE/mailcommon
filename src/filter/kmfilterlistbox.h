@@ -62,7 +62,7 @@ public:
     MailCommon::MailFilter *filter();
 
 private:
-    MailCommon::MailFilter *mFilter;
+    MailCommon::MailFilter *mFilter = nullptr;
 };
 
 class KMFilterListBox : public QGroupBox
@@ -231,18 +231,18 @@ protected Q_SLOTS:
 
 protected:
     /** The listbox displaying the filter list. */
-    QListWidget *mListWidget;
+    QListWidget *mListWidget = nullptr;
 
     /** The various action buttons. */
-    QPushButton *mBtnNew;
-    QPushButton *mBtnCopy;
-    QPushButton *mBtnDelete;
-    QPushButton *mBtnUp;
-    QPushButton *mBtnDown;
-    QPushButton *mBtnRename;
-    QPushButton *mBtnTop;
-    QPushButton *mBtnBottom;
-    KListWidgetSearchLine *mSearchListWidget;
+    QPushButton *mBtnNew = nullptr;
+    QPushButton *mBtnCopy = nullptr;
+    QPushButton *mBtnDelete = nullptr;
+    QPushButton *mBtnUp = nullptr;
+    QPushButton *mBtnDown = nullptr;
+    QPushButton *mBtnRename = nullptr;
+    QPushButton *mBtnTop = nullptr;
+    QPushButton *mBtnBottom = nullptr;
+    KListWidgetSearchLine *mSearchListWidget = nullptr;
     bool eventFilter(QObject *obj, QEvent *event) override;
 private:
     void applyFilterChanged(bool closeAfterSaving);

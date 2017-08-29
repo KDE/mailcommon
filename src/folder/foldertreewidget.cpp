@@ -70,17 +70,17 @@ public:
 
     QString filter;
     QString oldFilterStr;
-    Akonadi::StatisticsProxyModel *filterModel;
-    FolderTreeView *folderTreeView;
-    Akonadi::QuotaColorProxyModel *quotaModel;
-    FolderTreeWidgetProxyModel *readableproxy;
-    EntityCollectionOrderProxyModel *entityOrderProxy;
-    QLineEdit *filterFolderLineEdit;
+    Akonadi::StatisticsProxyModel *filterModel = nullptr;
+    FolderTreeView *folderTreeView = nullptr;
+    Akonadi::QuotaColorProxyModel *quotaModel = nullptr;
+    FolderTreeWidgetProxyModel *readableproxy = nullptr;
+    EntityCollectionOrderProxyModel *entityOrderProxy = nullptr;
+    QLineEdit *filterFolderLineEdit = nullptr;
     QPointer<Akonadi::ETMViewStateSaver> saver;
     QStringList expandedItems;
     QString currentItem;
-    QLabel *label;
-    bool dontKeyFilter;
+    QLabel *label = nullptr;
+    bool dontKeyFilter = false;
 };
 
 FolderTreeWidget::FolderTreeWidget(

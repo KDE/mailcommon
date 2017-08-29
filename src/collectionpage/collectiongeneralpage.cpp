@@ -82,7 +82,7 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
                            || Kernel::folderIsInbox(collection);
 
     mIsResourceFolder = (collection.parentCollection() == Akonadi::Collection::root());
-    QLabel *label;
+    QLabel *label = nullptr;
 
     QVBoxLayout *topLayout = new QVBoxLayout(this);
 

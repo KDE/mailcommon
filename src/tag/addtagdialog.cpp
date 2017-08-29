@@ -41,10 +41,10 @@ public:
 
     QString mLabel;
     QString mGid;
-    MailCommon::TagWidget *mTagWidget;
+    MailCommon::TagWidget *mTagWidget = nullptr;
     QList<MailCommon::Tag::Ptr> mTags;
     Akonadi::Tag mTag;
-    QPushButton *mOkButton;
+    QPushButton *mOkButton = nullptr;
 };
 
 AddTagDialog::AddTagDialog(const QList<KActionCollection *> &actions, QWidget *parent)

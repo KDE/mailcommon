@@ -31,7 +31,7 @@ private Q_SLOTS:
     void slotImportFilter(QAction *act);
 private:
     void importFilters(MailCommon::FilterImporterExporter::FilterType type);
-    QTextEdit *mTextEdit;
+    QTextEdit *mTextEdit = nullptr;
 };
 
 #endif // FILTERIMPORTEREXPORTERGUI_H

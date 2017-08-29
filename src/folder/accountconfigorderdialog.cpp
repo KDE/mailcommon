@@ -58,10 +58,10 @@ public:
     {
     }
 
-    QListWidget *mListAccount;
-    QPushButton *mUpButton;
-    QPushButton *mDownButton;
-    QCheckBox *mEnableAccountOrder;
+    QListWidget *mListAccount = nullptr;
+    QPushButton *mUpButton = nullptr;
+    QPushButton *mDownButton = nullptr;
+    QCheckBox *mEnableAccountOrder = nullptr;
 };
 
 AccountConfigOrderDialog::AccountConfigOrderDialog(QWidget *parent)

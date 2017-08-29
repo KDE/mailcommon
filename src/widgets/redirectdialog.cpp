@@ -81,16 +81,16 @@ public:
     void slotUser2();
     void slotAddressChanged(const QString &);
     QString redirectLabelType(TypeAddress type) const;
-    RedirectDialog *q;
-    RedirectWidget *mEditTo;
-    RedirectWidget *mEditCc;
-    RedirectWidget *mEditBcc;
+    RedirectDialog *q = nullptr;
+    RedirectWidget *mEditTo = nullptr;
+    RedirectWidget *mEditCc = nullptr;
+    RedirectWidget *mEditBcc = nullptr;
 
     RedirectDialog::SendMode mSendMode;
-    KIdentityManagement::IdentityCombo *mComboboxIdentity;
-    MailTransport::TransportComboBox *mTransportCombobox;
-    QPushButton *mUser1Button;
-    QPushButton *mUser2Button;
+    KIdentityManagement::IdentityCombo *mComboboxIdentity = nullptr;
+    MailTransport::TransportComboBox *mTransportCombobox = nullptr;
+    QPushButton *mUser1Button = nullptr;
+    QPushButton *mUser2Button = nullptr;
 };
 
 QString RedirectDialog::Private::redirectLabelType(TypeAddress type) const

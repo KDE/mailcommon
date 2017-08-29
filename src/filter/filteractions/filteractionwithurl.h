@@ -109,7 +109,7 @@ public:
 protected:
     QString mParameter;
 private:
-    mutable FilterActionWithUrlHelpButton *mHelpButton;
+    mutable FilterActionWithUrlHelpButton *mHelpButton = nullptr;
 private Q_SLOTS:
     void slotHelp();
 };

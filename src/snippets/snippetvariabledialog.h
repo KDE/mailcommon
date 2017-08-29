@@ -41,9 +41,9 @@ public:
 private:
     void slotAccepted();
     QString mVariableName;
-    QMap<QString, QString> *mVariables;
-    KPIMTextEdit::PlainTextEditorWidget *mVariableValueText;
-    QCheckBox *mSaveVariable;
+    QMap<QString, QString> *mVariables = nullptr;
+    KPIMTextEdit::PlainTextEditorWidget *mVariableValueText = nullptr;
+    QCheckBox *mSaveVariable = nullptr;
 };
 }
 

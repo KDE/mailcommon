@@ -55,7 +55,7 @@ public:
 
 private:
     QList<SnippetItem *> mChildItems;
-    SnippetItem *mParentItem;
+    SnippetItem *mParentItem = nullptr;
 
     bool mIsGroup;
     QString mName;
@@ -243,7 +243,7 @@ QModelIndex SnippetsModel::index(int row, int column, const QModelIndex &parent)
         return QModelIndex();
     }
 
-    SnippetItem *parentItem;
+    SnippetItem *parentItem = nullptr;
 
     if (!parent.isValid()) {
         parentItem = mRootItem;
@@ -277,7 +277,7 @@ QModelIndex SnippetsModel::parent(const QModelIndex &index) const
 
 int SnippetsModel::rowCount(const QModelIndex &parent) const
 {
-    SnippetItem *parentItem;
+    SnippetItem *parentItem = nullptr;
     if (parent.column() > 0) {
         return 0;
     }
@@ -293,7 +293,7 @@ int SnippetsModel::rowCount(const QModelIndex &parent) const
 
 bool SnippetsModel::insertRows(int row, int count, const QModelIndex &parent)
 {
-    SnippetItem *parentItem;
+    SnippetItem *parentItem = nullptr;
 
     if (!parent.isValid()) {
         parentItem = mRootItem;
@@ -313,7 +313,7 @@ bool SnippetsModel::insertRows(int row, int count, const QModelIndex &parent)
 
 bool SnippetsModel::removeRows(int row, int count, const QModelIndex &parent)
 {
-    SnippetItem *parentItem;
+    SnippetItem *parentItem = nullptr;
 
     if (!parent.isValid()) {
         parentItem = mRootItem;

@@ -59,7 +59,7 @@ public:
     static FilterActionDict *mFilterActionDict;
 
     FilterManager *q;
-    OrgFreedesktopAkonadiMailFilterAgentInterface *mMailFilterAgentInterface;
+    OrgFreedesktopAkonadiMailFilterAgentInterface *mMailFilterAgentInterface = nullptr;
     QList<MailCommon::MailFilter *> mFilters;
     Akonadi::Monitor *mMonitor;
     bool mInitialized;

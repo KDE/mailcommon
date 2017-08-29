@@ -35,7 +35,7 @@ public:
 private:
     void readConfig();
     void writeConfig();
-    MailCommon::KMFilterAccountList *mAccountList;
+    MailCommon::KMFilterAccountList *mAccountList = nullptr;
 };
 }
 #endif // FILTERACTIONMISSINGACCOUNTDIALOG_H

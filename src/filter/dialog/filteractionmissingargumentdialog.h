@@ -58,9 +58,9 @@ private:
 private:
     void writeConfig();
     void readConfig();
-    MailCommon::FolderRequester *mFolderRequester;
-    QListWidget *mListwidget;
-    QPushButton *mOkButton;
+    MailCommon::FolderRequester *mFolderRequester = nullptr;
+    QListWidget *mListwidget = nullptr;
+    QPushButton *mOkButton = nullptr;
 };
 
 #endif /* FILTERACTIONMISSINGARGUMENTDIALOG_H */

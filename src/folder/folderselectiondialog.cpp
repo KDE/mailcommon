@@ -53,11 +53,11 @@ public:
     {
     }
 
-    FolderTreeWidget *folderTreeWidget;
-    QPushButton *mUser1Button;
-    QPushButton *mOkButton;
-    bool mNotAllowToCreateNewFolder;
-    bool mUseGlobalSettings;
+    FolderTreeWidget *folderTreeWidget = nullptr;
+    QPushButton *mUser1Button = nullptr;
+    QPushButton *mOkButton = nullptr;
+    bool mNotAllowToCreateNewFolder = false;
+    bool mUseGlobalSettings = false;
 };
 
 FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOptions options)

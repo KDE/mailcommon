@@ -87,23 +87,23 @@ public:
     void load();
     void save();
 
-    SnippetsManager *q;
-    SnippetsModel *mModel;
-    QItemSelectionModel *mSelectionModel;
-    KActionCollection *mActionCollection;
-    QObject *mEditor;
+    SnippetsManager *q = nullptr;
+    SnippetsModel *mModel = nullptr;
+    QItemSelectionModel *mSelectionModel = nullptr;
+    KActionCollection *mActionCollection = nullptr;
+    QObject *mEditor = nullptr;
     QByteArray mEditorInsertMethod;
     QMap<QString, QString> mSavedVariables;
 
-    QAction *mAddSnippetAction;
-    QAction *mEditSnippetAction;
-    QAction *mDeleteSnippetAction;
-    QAction *mAddSnippetGroupAction;
-    QAction *mEditSnippetGroupAction;
-    QAction *mDeleteSnippetGroupAction;
-    QAction *mInsertSnippetAction;
-    QWidget *mParent;
-    bool mDirty;
+    QAction *mAddSnippetAction = nullptr;
+    QAction *mEditSnippetAction = nullptr;
+    QAction *mDeleteSnippetAction = nullptr;
+    QAction *mAddSnippetGroupAction = nullptr;
+    QAction *mEditSnippetGroupAction = nullptr;
+    QAction *mDeleteSnippetGroupAction = nullptr;
+    QAction *mInsertSnippetAction = nullptr;
+    QWidget *mParent = nullptr;
+    bool mDirty = false;
 };
 
 QModelIndex SnippetsManager::Private::currentGroupIndex() const
