@@ -50,8 +50,6 @@ class Item;
 }
 class KJob;
 
-class QAbstractItemModel;
-class QModelIndex;
 class QString;
 
 namespace MailCommon {

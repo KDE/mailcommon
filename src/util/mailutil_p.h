@@ -48,9 +48,6 @@ namespace Akonadi {
 class Item;
 }
 
-class QAbstractItemModel;
-class QModelIndex;
-class QString;
 
 namespace MailCommon {
 /**
