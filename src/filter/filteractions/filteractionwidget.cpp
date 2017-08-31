@@ -88,13 +88,13 @@ void FilterActionWidget::Private::setFilterAction(QWidget *widget)
 
 void FilterActionWidget::Private::slotAddWidget()
 {
-    Q_EMIT q->addWidget(q);
+    Q_EMIT q->addFilterWidget(q);
     Q_EMIT q->filterModified();
 }
 
 void FilterActionWidget::Private::slotRemoveWidget()
 {
-    Q_EMIT q->removeWidget(q);
+    Q_EMIT q->removeFilterWidget(q);
     Q_EMIT q->filterModified();
 }
 
@@ -413,9 +413,9 @@ void FilterActionWidgetLister::reset()
 
 void FilterActionWidgetLister::reconnectWidget(FilterActionWidget *w)
 {
-    connect(w, &FilterActionWidget::addWidget, this, &FilterActionWidgetLister::slotAddWidget, Qt::UniqueConnection);
+    connect(w, &FilterActionWidget::addFilterWidget, this, &FilterActionWidgetLister::slotAddWidget, Qt::UniqueConnection);
 
-    connect(w, &FilterActionWidget::removeWidget, this, &FilterActionWidgetLister::slotRemoveWidget, Qt::UniqueConnection);
+    connect(w, &FilterActionWidget::removeFilterWidget, this, &FilterActionWidgetLister::slotRemoveWidget, Qt::UniqueConnection);
 }
 
 QWidget *FilterActionWidgetLister::createWidget(QWidget *parent)

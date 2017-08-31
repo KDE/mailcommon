@@ -89,8 +89,8 @@ public:
 
 Q_SIGNALS:
     void filterModified();
-    void addWidget(QWidget *);
-    void removeWidget(QWidget *);
+    void addFilterWidget(QWidget *);
+    void removeFilterWidget(QWidget *);
 
 private:
     //@cond PRIVATE
