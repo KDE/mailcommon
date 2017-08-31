@@ -29,7 +29,7 @@ QStringList FilterActionWithCrypto::getEncryptionKeysFromContent(const KMime::Me
                                                                  GpgME::Protocol protocol) const
 {
     if (protocol == GpgME::CMS && mGpgSmPath.isNull()) {
-        auto path = QStandardPaths::findExecutable(QStringLiteral("gpgsm"));
+        const auto path = QStandardPaths::findExecutable(QStringLiteral("gpgsm"));
         mGpgSmPath = path.isEmpty() ? QStringLiteral("") : path;
     } else if (protocol == GpgME::OpenPGP && mGpgPath.isNull()) {
         auto path = QStandardPaths::findExecutable(QStringLiteral("gpg2"));
