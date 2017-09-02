@@ -18,6 +18,7 @@
 #ifndef FILTERCONVERTTOSIEVERESULTDIALOG_H
 #define FILTERCONVERTTOSIEVERESULTDIALOG_H
 
+#include <KSyntaxHighlighting/Repository>
 #include <QDialog>
 
 namespace KPIMTextEdit {
@@ -41,6 +42,7 @@ private:
     void readConfig();
     void writeConfig();
     KPIMTextEdit::PlainTextEditorWidget *mEditor = nullptr;
+    KSyntaxHighlighting::Repository mSyntaxRepo;
 };
 }
 

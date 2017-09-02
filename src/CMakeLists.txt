@@ -241,6 +241,7 @@ PRIVATE
   KF5::IconThemes
   KF5::Archive
   KF5::ItemViews
+  KF5::SyntaxHighlighting
 )
 target_include_directories(KF5MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/MailCommon/;${KDE_INSTALL_INCLUDEDIR_KF5}/mailcommon>")
 target_include_directories(KF5MailCommon PUBLIC "$<BUILD_INTERFACE:${mailcommon_SOURCE_DIR}/src;${mailcommon_BINARY_DIR}/src;${mailcommon_SOURCE_DIR}/src/search>")

@@ -1,7 +1,7 @@
 set(mailcommon_filter_test_LIBS Qt5::Test Qt5::Gui KF5::AkonadiCore KF5::AkonadiMime
                                 KF5::LibkdepimAkonadi KF5::MailCommon KF5::PimCommon Phonon::phonon4qt5
                                 KF5::KIOWidgets KF5::IconThemes KF5::TemplateParser
-                                KF5::MailTransport KF5::I18n
+                                KF5::MailTransport KF5::I18n KF5::SyntaxHighlighting
 )
 
 add_definitions(-DTEST_PATH=\"${CMAKE_CURRENT_SOURCE_DIR}\")

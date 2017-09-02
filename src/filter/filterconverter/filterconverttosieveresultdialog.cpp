@@ -16,13 +16,14 @@
 */
 
 #include "filterconverttosieveresultdialog.h"
-#include "PimCommon/SieveSyntaxHighlighter"
-#include "PimCommon/SieveSyntaxHighlighterUtil"
 #include "kpimtextedit/plaintexteditor.h"
 #include "kpimtextedit/plaintexteditorwidget.h"
 #include <PimCommon/PimUtil>
 
 #include <KLocalizedString>
+#include <KSyntaxHighlighting/Definition>
+#include <KSyntaxHighlighting/SyntaxHighlighter>
+#include <KSyntaxHighlighting/Theme>
 
 #include <QHBoxLayout>
 
@@ -53,10 +54,11 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
     mEditor = new KPIMTextEdit::PlainTextEditorWidget;
     mEditor->editor()->setSpellCheckingSupport(false);
     mEditor->setObjectName(QStringLiteral("editor"));
-    PimCommon::SieveSyntaxHighlighter *syntaxHighlighter = new PimCommon::SieveSyntaxHighlighter(mEditor->editor()->document());
-    PimCommon::SieveSyntaxHighlighterUtil sieveHighlighterutil;
-    const QStringList capabilities = sieveHighlighterutil.fullCapabilities();
-    syntaxHighlighter->addCapabilities(capabilities);
+    auto syntaxHighlighter = new KSyntaxHighlighting::SyntaxHighlighter(mEditor->editor()->document());
+    syntaxHighlighter->setDefinition(mSyntaxRepo.definitionForName(QStringLiteral("Sieve")));
+    syntaxHighlighter->setTheme((palette().color(QPalette::Base).lightness() < 128)
+        ? mSyntaxRepo.defaultTheme(KSyntaxHighlighting::Repository::DarkTheme)
+        : mSyntaxRepo.defaultTheme(KSyntaxHighlighting::Repository::LightTheme));
     topLayout->addWidget(mEditor);
     topLayout->addWidget(buttonBox);
 
