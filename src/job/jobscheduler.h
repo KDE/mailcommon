@@ -131,8 +131,8 @@ private:
     int mPendingImmediateTasks;
 
     /// Information about the currently running job, if any
-    ScheduledTask *mCurrentTask;
-    ScheduledJob *mCurrentJob;
+    ScheduledTask *mCurrentTask = nullptr;
+    ScheduledJob *mCurrentJob = nullptr;
 };
 
 /**

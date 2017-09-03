@@ -144,7 +144,7 @@ void FolderTreeView::slotHeaderContextMenuRequested(const QPoint &pnt)
 
     // the menu for the columns
     QMenu menu;
-    QAction *act;
+    QAction *act = nullptr;
     menu.addSection(i18n("View Columns"));
     const int nbColumn = header()->count();
     for (int i = 1; i < nbColumn; ++i) {

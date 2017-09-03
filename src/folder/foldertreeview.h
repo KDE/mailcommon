@@ -120,9 +120,9 @@ private:
 
     FolderTreeWidget::ToolTipDisplayPolicy mToolTipDisplayPolicy;
     FolderTreeWidget::SortingPolicy mSortingPolicy;
-    Akonadi::CollectionStatisticsDelegate *mCollectionStatisticsDelegate;
-    bool mbDisableContextMenuAndExtraColumn;
-    bool mbDisableSaveConfig;
+    Akonadi::CollectionStatisticsDelegate *mCollectionStatisticsDelegate = nullptr;
+    bool mbDisableContextMenuAndExtraColumn = false;
+    bool mbDisableSaveConfig = false;
 };
 }
 

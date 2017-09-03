@@ -261,14 +261,13 @@ class FilterActionWidgetLister::Private
 public:
     Private(FilterActionWidgetLister *qq)
         : q(qq)
-        , mActionList(nullptr)
     {
     }
 
     void regenerateActionListFromWidgets();
 
     FilterActionWidgetLister *q;
-    QList<MailCommon::FilterAction *> *mActionList;
+    QList<MailCommon::FilterAction *> *mActionList = nullptr;
 };
 
 void FilterActionWidgetLister::Private::regenerateActionListFromWidgets()

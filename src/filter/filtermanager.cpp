@@ -61,8 +61,8 @@ public:
     FilterManager *q;
     OrgFreedesktopAkonadiMailFilterAgentInterface *mMailFilterAgentInterface = nullptr;
     QList<MailCommon::MailFilter *> mFilters;
-    Akonadi::Monitor *mMonitor;
-    bool mInitialized;
+    Akonadi::Monitor *mMonitor = nullptr;
+    bool mInitialized = false;
 };
 
 void FilterManager::Private::readConfig()

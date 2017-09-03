@@ -303,7 +303,7 @@ private:
     void reconnectWidget(SearchRuleWidget *w);
     void updateAddRemoveButton();
     void regenerateRuleListFromWidgets();
-    QList<MailCommon::SearchRule::Ptr> *mRuleList;
+    QList<MailCommon::SearchRule::Ptr> *mRuleList = nullptr;
     SearchPatternEdit::SearchPatternEditOptions mOptions;
     SearchPatternEdit::SearchModeType mTypeMode;
 };
