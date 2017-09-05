@@ -386,7 +386,7 @@ void CollectionGeneralPage::slotNameChanged(const QString &name)
     if (name.startsWith(QLatin1Char('.'))
         || name.endsWith(QLatin1Char('.'))
         || name.contains(QLatin1Char('/'))
-        || name.isEmpty()) {
+        || name.trimmed().isEmpty()) {
         if (mColorName.isEmpty()) {
             const KColorScheme::BackgroundRole bgColorScheme(KColorScheme::NegativeBackground);
             KStatefulBrush bgBrush(KColorScheme::View, bgColorScheme);
