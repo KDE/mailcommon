@@ -555,16 +555,18 @@ void SnippetsManager::Private::save()
             const QModelIndex index = mModel->index(j, 0, groupIndex);
 
             const QString snippetName = index.data(SnippetsModel::NameRole).toString();
-            const QString snippetText = index.data(SnippetsModel::TextRole).toString();
-            const QString snippetKeySequence = index.data(SnippetsModel::KeySequenceRole).toString();
+            if (!snippetName.isEmpty()) {
+                const QString snippetText = index.data(SnippetsModel::TextRole).toString();
+                const QString snippetKeySequence = index.data(SnippetsModel::KeySequenceRole).toString();
 
-            group.writeEntry(QStringLiteral("snippetName_%1").arg(j), snippetName);
-            if (!snippetText.isEmpty()) {
-                group.writeEntry(QStringLiteral("snippetText_%1").arg(j), snippetText);
-            }
-            if (!snippetKeySequence.isEmpty()) {
-                group.writeEntry(QStringLiteral("snippetKeySequence_%1").arg(j),
-                                 snippetKeySequence);
+                group.writeEntry(QStringLiteral("snippetName_%1").arg(j), snippetName);
+                if (!snippetText.isEmpty()) {
+                    group.writeEntry(QStringLiteral("snippetText_%1").arg(j), snippetText);
+                }
+                if (!snippetKeySequence.isEmpty()) {
+                    group.writeEntry(QStringLiteral("snippetKeySequence_%1").arg(j),
+                                     snippetKeySequence);
+                }
             }
         }
     }

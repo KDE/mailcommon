@@ -30,16 +30,17 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
     , mActionCollection(actionCollection)
 {
     mUi = new Ui::SnippetDialog;
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+
+    QWidget *mainWidget = new QWidget(this);
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    mainLayout->addWidget(mainWidget);
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setDefault(true);
     mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &SnippetDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &SnippetDialog::reject);
-
-    QWidget *mainWidget = new QWidget(this);
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
-    mainLayout->addWidget(mainWidget);
     mainLayout->addWidget(buttonBox);
     mUi->setupUi(mainWidget);
 
@@ -117,10 +118,12 @@ void SnippetDialog::slotTextChanged()
 
 bool SnippetDialog::snippetIsValid() const
 {
-    if (mUi->groupWidget->isVisible()) {
-        return !mUi->nameEdit->text().trimmed().isEmpty()
-               && !mUi->groupBox->currentText().trimmed().isEmpty();
+    if (mUi->nameEdit->text().trimmed().isEmpty()) {
+        return false;
     } else {
-        return !mUi->nameEdit->text().trimmed().isEmpty();
+        if (mUi->groupWidget->isVisible()) {
+            return !mUi->groupBox->currentText().trimmed().isEmpty();
+        }
     }
+    return false;
 }
