@@ -559,9 +559,13 @@ void SnippetsManager::Private::save()
             const QString snippetKeySequence = index.data(SnippetsModel::KeySequenceRole).toString();
 
             group.writeEntry(QStringLiteral("snippetName_%1").arg(j), snippetName);
-            group.writeEntry(QStringLiteral("snippetText_%1").arg(j), snippetText);
-            group.writeEntry(QStringLiteral("snippetKeySequence_%1").arg(j),
-                             snippetKeySequence);
+            if (!snippetText.isEmpty()) {
+                group.writeEntry(QStringLiteral("snippetText_%1").arg(j), snippetText);
+            }
+            if (!snippetKeySequence.isEmpty()) {
+                group.writeEntry(QStringLiteral("snippetKeySequence_%1").arg(j),
+                                 snippetKeySequence);
+            }
         }
     }
 
