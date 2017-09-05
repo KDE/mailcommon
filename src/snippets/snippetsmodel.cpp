@@ -437,12 +437,3 @@ Qt::DropActions SnippetsModel::supportedDropActions() const
     return Qt::CopyAction | Qt::MoveAction;
 }
 
-QHash<int, QByteArray> SnippetsModel::roleNames() const
-{
-    static QHash<int, QByteArray> names;
-    if (names.isEmpty()) {
-        names.insert(IsGroupRole, QByteArrayLiteral("isSnippetGroup"));
-    }
-
-    return names;
-}
