@@ -29,8 +29,7 @@ Q_DECLARE_METATYPE(MailCommon::FilterImporterExporter::FilterType)
 FilterImporterExporterGui::FilterImporterExporterGui(QWidget *parent)
     : QWidget(parent)
 {
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
     QMenuBar *menuBar = new QMenuBar(this);
     mainLayout->addWidget(menuBar);
     QMenu *menuFilter = menuBar->addMenu(QStringLiteral("filter"));

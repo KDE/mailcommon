@@ -109,9 +109,8 @@ FilterActionWidget::FilterActionWidget(QWidget *parent)
     : QWidget(parent)
     , d(new Private(this))
 {
-    QHBoxLayout *mainLayout = new QHBoxLayout;
+    QHBoxLayout *mainLayout = new QHBoxLayout(this);
     mainLayout->setMargin(0);
-    setLayout(mainLayout);
     QWidget *widget = new QWidget(this);
     mainLayout->addWidget(widget);
 
