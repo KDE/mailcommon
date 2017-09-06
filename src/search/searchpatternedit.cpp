@@ -416,7 +416,7 @@ void SearchRuleWidget::slotRuleFieldChanged(const QString &field)
 //=============================================================================
 
 SearchRuleWidgetLister::SearchRuleWidgetLister(QWidget *parent, SearchPatternEdit::SearchPatternEditOptions options, SearchPatternEdit::SearchModeType modeType)
-    : KWidgetLister(false, 2, SearchPattern::filterRulesMaximumSize(), parent)
+    : KWidgetLister(false, 1, SearchPattern::filterRulesMaximumSize(), parent)
 {
     mRuleList = nullptr;
 
