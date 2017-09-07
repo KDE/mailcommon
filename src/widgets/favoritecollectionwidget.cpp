@@ -44,12 +44,14 @@ public:
     QColor textColor;
     QAction *listMode = nullptr;
     QAction *iconMode = nullptr;
+    MailCommonSettings *settings = nullptr;
 };
 
-FavoriteCollectionWidget::FavoriteCollectionWidget(KXMLGUIClient *xmlGuiClient, QWidget *parent)
+FavoriteCollectionWidget::FavoriteCollectionWidget(MailCommon::MailCommonSettings *settings, KXMLGUIClient *xmlGuiClient, QWidget *parent)
     : Akonadi::EntityListView(xmlGuiClient, parent)
     , d(new Private)
 {
+    d->settings = settings;
     setFocusPolicy(Qt::NoFocus);
 
     Akonadi::CollectionStatisticsDelegate *delegate = new Akonadi::CollectionStatisticsDelegate(this);
@@ -161,8 +163,8 @@ void FavoriteCollectionWidget::slotChangeMode(bool)
         break;
     }
 
-    MailCommon::MailCommonSettings::self()->setFavoriteCollectionViewMode(mode);
-    MailCommon::MailCommonSettings::self()->save();
+    d->settings->setFavoriteCollectionViewMode(mode);
+    d->settings->save();
 }
 
 void FavoriteCollectionWidget::changeViewMode(QListView::ViewMode mode)
@@ -192,8 +194,8 @@ void FavoriteCollectionWidget::slotChangeIconSize(bool)
         return;
     }
     setIconSize(newIconSize);
-    MailCommon::MailCommonSettings::self()->setIconSize(iconSize().width());
-    MailCommon::MailCommonSettings::self()->save();
+    d->settings->setIconSize(iconSize().width());
+    d->settings->save();
 }
 
 void FavoriteCollectionWidget::slotGeneralPaletteChanged()
@@ -216,7 +218,7 @@ void FavoriteCollectionWidget::readConfig()
 {
     setFont(QFontDatabase::systemFont(QFontDatabase::GeneralFont));
 
-    int iIconSize = MailCommon::MailCommonSettings::self()->iconSize();
+    int iIconSize = d->settings->iconSize();
     if (iIconSize < 16 || iIconSize > 32) {
         iIconSize = 22;
     }

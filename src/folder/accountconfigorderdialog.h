@@ -24,11 +24,12 @@
 
 namespace MailCommon {
 class AccountConfigOrderDialogPrivate;
+class MailCommonSettings;
 class MAILCOMMON_EXPORT AccountConfigOrderDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit AccountConfigOrderDialog(QWidget *parent);
+    explicit AccountConfigOrderDialog(MailCommon::MailCommonSettings *settings, QWidget *parent);
     ~AccountConfigOrderDialog();
 
 private:

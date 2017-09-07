@@ -27,11 +27,12 @@ class KXMLGUIClient;
 class KActionCollection;
 
 namespace MailCommon {
+class MailCommonSettings;
 class MAILCOMMON_EXPORT FavoriteCollectionWidget : public Akonadi::EntityListView
 {
     Q_OBJECT
 public:
-    explicit FavoriteCollectionWidget(KXMLGUIClient *xmlGuiClient, QWidget *parent = nullptr);
+    explicit FavoriteCollectionWidget(MailCommon::MailCommonSettings *settings, KXMLGUIClient *xmlGuiClient, QWidget *parent = nullptr);
     ~FavoriteCollectionWidget();
 
     void readConfig();

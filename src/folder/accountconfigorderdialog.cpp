@@ -62,12 +62,14 @@ public:
     QPushButton *mUpButton = nullptr;
     QPushButton *mDownButton = nullptr;
     QCheckBox *mEnableAccountOrder = nullptr;
+    MailCommon::MailCommonSettings *mSettings = nullptr;
 };
 
-AccountConfigOrderDialog::AccountConfigOrderDialog(QWidget *parent)
+AccountConfigOrderDialog::AccountConfigOrderDialog(MailCommon::MailCommonSettings *settings, QWidget *parent)
     : QDialog(parent)
     , d(new MailCommon::AccountConfigOrderDialogPrivate)
 {
+    d->mSettings = settings;
     setWindowTitle(i18n("Edit Accounts Order"));
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
@@ -186,7 +188,7 @@ void AccountConfigOrderDialog::slotEnableControls()
 
 void AccountConfigOrderDialog::init()
 {
-    const QStringList listOrderAccount = MailCommon::MailCommonSettings::self()->order();
+    const QStringList listOrderAccount = d->mSettings->order();
     QStringList instanceList;
 
     QMap<QString, InstanceStruct> mapInstance;
@@ -238,7 +240,7 @@ void AccountConfigOrderDialog::init()
             d->mListAccount->addItem(item);
         }
     }
-    const bool enabled = MailCommon::MailCommonSettings::self()->enableAccountOrder();
+    const bool enabled = d->mSettings->enableAccountOrder();
     d->mEnableAccountOrder->setChecked(enabled);
     slotEnableAccountOrder(enabled);
 }
@@ -252,15 +254,15 @@ void AccountConfigOrderDialog::slotOk()
         order << d->mListAccount->item(i)->data(AccountConfigOrderDialog::IdentifierAccount).toString();
     }
 
-    MailCommon::MailCommonSettings::self()->setOrder(order);
-    MailCommon::MailCommonSettings::self()->setEnableAccountOrder(d->mEnableAccountOrder->isChecked());
-    MailCommon::MailCommonSettings::self()->save();
+    d->mSettings->setOrder(order);
+    d->mSettings->setEnableAccountOrder(d->mEnableAccountOrder->isChecked());
+    d->mSettings->save();
     QDialog::accept();
 }
 
 void AccountConfigOrderDialog::readConfig()
 {
-    KConfigGroup accountConfigDialog(MailCommon::MailCommonSettings::self()->config(), "AccountConfigOrderDialog");
+    KConfigGroup accountConfigDialog(d->mSettings->config(), "AccountConfigOrderDialog");
     const QSize size = accountConfigDialog.readEntry("Size", QSize(600, 400));
     if (size.isValid()) {
         resize(size);
@@ -269,7 +271,7 @@ void AccountConfigOrderDialog::readConfig()
 
 void AccountConfigOrderDialog::writeConfig()
 {
-    KConfigGroup accountConfigDialog(MailCommon::MailCommonSettings::self()->config(), "AccountConfigOrderDialog");
+    KConfigGroup accountConfigDialog(d->mSettings->config(), "AccountConfigOrderDialog");
     accountConfigDialog.writeEntry("Size", size());
     accountConfigDialog.sync();
 }
