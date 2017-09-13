@@ -52,16 +52,13 @@ using MailCommon::FilterImporterExporter;
 #include <QTabWidget>
 #include <KWindowSystem>
 #include <KIconButton>
-#include <KHelpClient>
 #include <QIcon>
 
 #include <QApplication>
-#include <QHeaderView>
 #include <QButtonGroup>
 #include <QCheckBox>
 #include <QGridLayout>
 #include <QLabel>
-#include <QListWidget>
 #include <QMenu>
 #include <QRadioButton>
 #include <QTreeWidget>

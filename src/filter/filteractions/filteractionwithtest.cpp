@@ -21,7 +21,6 @@
 
 #include "filter/soundtestwidget.h"
 
-#include <QTextDocument>
 
 using namespace MailCommon;
 

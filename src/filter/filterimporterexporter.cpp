@@ -44,7 +44,7 @@
 #include <MessageViewer/MessageViewerUtil>
 
 #include <KConfig>
-
+#include <KConfigGroup>
 #include <KListWidgetSearchLine>
 #include <KMessageBox>
 #include <QPushButton>

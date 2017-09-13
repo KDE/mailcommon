@@ -34,7 +34,6 @@
 
 #include <CollectionFetchJob>
 
-#include <QDialog>
 #include <KIconLoader>
 #include <KLineEdit>
 #include <KLocalizedString>
@@ -43,7 +42,6 @@
 #include <QHBoxLayout>
 #include <QKeyEvent>
 #include <QToolButton>
-#include <KConfigGroup>
 
 namespace MailCommon {
 class FolderRequesterPrivate

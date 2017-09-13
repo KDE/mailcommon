@@ -38,17 +38,14 @@
 
 #include <MailTransport/TransportComboBox>
 
-#include <KIconLoader>
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <QIcon>
 
 #include <QLabel>
 #include <QPushButton>
 #include <QTreeView>
 #include <QHBoxLayout>
 #include <QFormLayout>
-#include <KConfigGroup>
 #include <QDialogButtonBox>
 #include <KGuiItem>
 #include <QVBoxLayout>

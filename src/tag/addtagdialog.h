@@ -23,7 +23,6 @@
 #include <QDialog>
 #include <AkonadiCore/Tag>
 #include <AkonadiCore/TagCreateJob>
-#include <KConfigGroup>
 
 class KActionCollection;
 

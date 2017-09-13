@@ -32,7 +32,6 @@ using MailCommon::FilterLog;
 
 #include <KMime/KMimeMessage>
 
-#include <KEmailAddress>
 
 #include <KConfigGroup>
 #include <KLocalizedString>

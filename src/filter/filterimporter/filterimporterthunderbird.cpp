@@ -24,7 +24,6 @@
 #include <QUrl>
 
 #include <QFile>
-#include <QDir>
 
 using namespace MailCommon;
 

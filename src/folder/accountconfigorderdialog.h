@@ -19,7 +19,6 @@
 #define ACCOUNTCONFIGORDERDIALOG_H
 
 #include <QDialog>
-#include <KConfigGroup>
 #include "mailcommon_export.h"
 
 namespace MailCommon {

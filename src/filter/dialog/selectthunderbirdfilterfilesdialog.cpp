@@ -20,7 +20,6 @@
 #include <KSharedConfig>
 #include <KLocalizedString>
 
-#include <QHBoxLayout>
 #include <KConfigGroup>
 #include <QDialogButtonBox>
 #include <QPushButton>

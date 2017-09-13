@@ -74,7 +74,6 @@
 #include <KMime/KMimeMessage>
 
 #include <KColorScheme>
-#include <KDBusServiceStarter>
 #include <KJob>
 #include <KIO/JobUiDelegate>
 #include <collectionpage/attributes/expirecollectionattribute.h>

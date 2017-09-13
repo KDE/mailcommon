@@ -17,8 +17,6 @@
 
 #include <kactioncollection.h>
 #include <QDialog>
-#include <KLocalizedString>
-#include <KConfigGroup>
 #include <QVBoxLayout>
 #include <QPushButton>
 #include <QDialogButtonBox>

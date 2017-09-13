@@ -28,7 +28,6 @@
 #include <KIdentityManagement/IdentityCombo>
 
 #include <KLocalizedString>
-#include <KUrlRequester>
 
 #include <QVBoxLayout>
 #include <QLabel>

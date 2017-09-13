@@ -26,7 +26,6 @@
 #include <MailTransport/TransportComboBox>
 #include <MailTransport/TransportManager>
 
-#include <QTextDocument>
 #include <QPointer>
 
 using namespace MailCommon;

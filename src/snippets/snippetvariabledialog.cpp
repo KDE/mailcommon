@@ -21,11 +21,10 @@
 #include "snippetvariabledialog.h"
 
 #include <KLocalizedString>
-
+#include <QMap>
 #include <QCheckBox>
 #include <QLabel>
 #include <QVBoxLayout>
-#include <KConfigGroup>
 #include <QDialogButtonBox>
 #include <QPushButton>
 

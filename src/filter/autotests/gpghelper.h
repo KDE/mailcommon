@@ -18,7 +18,6 @@
 #ifndef GPGHELPER_H_
 #define GPGHELPER_H_
 
-#include <QObject>
 #include <QTemporaryDir>
 
 class GPGHelper

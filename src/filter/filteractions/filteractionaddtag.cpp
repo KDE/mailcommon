@@ -22,7 +22,6 @@
 #include "filter/dialog/filteractionmissingtagdialog.h"
 #include "PimCommon/MinimumComboBox"
 
-#include <QTextDocument>
 #include <QPointer>
 #include <Tag>
 

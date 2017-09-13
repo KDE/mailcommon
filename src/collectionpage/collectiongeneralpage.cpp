@@ -36,8 +36,6 @@
 #include <PimCommonAkonadi/ImapResourceCapabilitiesManager>
 
 #include <KColorScheme>
-#include <KComboBox>
-#include <QDialog>
 #include <KLineEdit>
 #include <KLocalizedString>
 #include <KMessageBox>

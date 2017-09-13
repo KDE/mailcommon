@@ -33,7 +33,6 @@
 #include <Collection>
 #include <Item>
 
-#include <QList>
 
 class KJob;
 

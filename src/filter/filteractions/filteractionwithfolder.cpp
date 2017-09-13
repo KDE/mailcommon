@@ -24,7 +24,6 @@
 #include "util/mailutil.h"
 #include "filter/dialog/filteractionmissingargumentdialog.h"
 
-#include <QTextDocument>
 #include <QPointer>
 
 using namespace MailCommon;

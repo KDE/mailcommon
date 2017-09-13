@@ -25,7 +25,6 @@
 #include <KSyntaxHighlighting/SyntaxHighlighter>
 #include <KSyntaxHighlighting/Theme>
 
-#include <QHBoxLayout>
 
 #include <KSharedConfig>
 #include <KConfigGroup>

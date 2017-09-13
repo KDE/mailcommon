@@ -21,7 +21,6 @@
 
 #include <KLineEdit>
 
-#include <QTextDocument>
 
 using namespace MailCommon;
 

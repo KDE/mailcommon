@@ -23,7 +23,6 @@ using MailCommon::RuleWidgetHandlerManager;
 #include "mailcommon_debug.h"
 #include <PimCommon/MinimumComboBox>
 
-#include <QDialog>
 #include <KLocalizedString>
 #include <QPushButton>
 #include <KLineEdit>
@@ -34,7 +33,6 @@ using MailCommon::RuleWidgetHandlerManager;
 #include <QHBoxLayout>
 #include <QRadioButton>
 #include <QStackedWidget>
-#include <KConfigGroup>
 
 // Definition of special rule field strings
 // Note: Also see SearchRule::matches() and ruleFieldToEnglish() if

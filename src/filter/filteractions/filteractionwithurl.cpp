@@ -25,7 +25,6 @@
 
 #include <QHBoxLayout>
 #include <QWhatsThis>
-#include <QTextDocument>
 
 using namespace MailCommon;
 

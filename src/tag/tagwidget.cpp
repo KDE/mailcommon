@@ -21,16 +21,13 @@
 #include <QGridLayout>
 #include <QLabel>
 #include <QCheckBox>
-#include <QDialog>
 #include <KColorCombo>
-#include <KFontRequester>
 #include <KIconButton>
 #include <KKeySequenceWidget>
 #include <KActionCollection>
 #include <KLineEdit>
 #include <KLocalizedString>
 #include <QIcon>
-#include <KConfigGroup>
 using namespace MailCommon;
 class MailCommon::TagWidgetPrivate
 {

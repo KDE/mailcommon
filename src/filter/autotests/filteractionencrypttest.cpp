@@ -19,7 +19,6 @@
 #include "../filteractions/filteractionencrypt.h"
 
 #include <QTest>
-#include <QFileInfo>
 
 void FilterActionEncryptTest::initTestCase()
 {

@@ -21,7 +21,6 @@
 
 #include <QProcess>
 #include <QStandardPaths>
-#include <QRegularExpression>
 
 using namespace MailCommon;
 

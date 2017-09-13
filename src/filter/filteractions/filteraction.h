@@ -31,7 +31,6 @@
 #include <KMime/MDN>
 #include <KMime/KMimeMessage>
 
-#include <QList>
 #include <QObject>
 
 class QWidget;

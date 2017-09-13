@@ -25,7 +25,6 @@
 #include <KJob>
 
 #include <QVBoxLayout>
-#include <KConfigGroup>
 #include <QDialogButtonBox>
 #include <QPushButton>
 

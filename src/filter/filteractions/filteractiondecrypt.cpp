@@ -25,11 +25,8 @@
 
 #include <KMime/Message>
 
-#include <QGpgME/DecryptJob>
-#include <QGpgME/Protocol>
 #include <gpgme++/decryptionresult.h>
 
-#include <QVector>
 
 #include <Akonadi/KMime/MessageFlags>
 

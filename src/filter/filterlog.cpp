@@ -33,7 +33,6 @@
 
 #include <QFile>
 #include <QTime>
-#include <QTextDocument>
 
 #include <sys/stat.h>
 

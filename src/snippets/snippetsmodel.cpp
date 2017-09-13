@@ -25,7 +25,6 @@
 #include <QMimeData>
 #include <QDataStream>
 #include <QStringList>
-#include <QDebug>
 
 using namespace MailCommon;
 

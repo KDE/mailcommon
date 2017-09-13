@@ -33,7 +33,6 @@
 #include "mailcommon_export.h"
 
 #include <QDialog>
-#include <KConfigGroup>
 
 namespace MailCommon {
 /**

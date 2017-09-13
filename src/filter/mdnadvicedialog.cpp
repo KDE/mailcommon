@@ -39,10 +39,8 @@ using MessageComposer::MessageFactoryNG;
 
 #include <QPointer>
 
-#include <KConfigGroup>
 #include <QDialogButtonBox>
 #include <QPushButton>
-#include <QVBoxLayout>
 
 using namespace MailCommon;
 

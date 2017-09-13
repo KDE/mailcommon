@@ -46,11 +46,8 @@
 
 #include <QTreeView>
 #include <QDebug>
-#include <QEventLoop>
-#include <QLabel>
 #include <QStandardPaths>
 #include <QTest>
-#include <QTemporaryDir>
 
 #include "dummykernel.cpp"
 

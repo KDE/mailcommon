@@ -33,8 +33,6 @@
 
 #include <QGroupBox>
 #include <QList>
-#include <QListWidgetItem>
-#include <QTreeWidget>
 
 class KActionCollection;
 class KIconButton;

@@ -26,7 +26,6 @@
 
 #include <CollectionComboBox>
 #include <KContacts/Addressee>
-#include <KLineEdit>
 #include <KLocalizedString>
 #include <KEmailAddress>
 
