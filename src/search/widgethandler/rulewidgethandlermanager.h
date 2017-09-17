@@ -63,7 +63,7 @@ public:
         return self;
     }
 
-    void setIsBalooSearch(bool isBalooSearch);
+    void setIsAkonadiSearch(bool isBalooSearch);
 
     void registerHandler(const RuleWidgetHandler *handler);
     void unregisterHandler(const RuleWidgetHandler *handler);

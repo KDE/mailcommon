@@ -52,14 +52,14 @@ public:
     {
     }
 
-    virtual QWidget *createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const = 0;
+    virtual QWidget *createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isAkonadiSearch) const = 0;
     virtual QWidget *createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const = 0;
     virtual MailCommon::SearchRule::Function function(const QByteArray &field, const QStackedWidget *functionStack) const = 0;
     virtual QString value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const = 0;
     virtual QString prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const = 0;
     virtual bool handlesField(const QByteArray &field) const = 0;
     virtual void reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const = 0;
-    virtual bool setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const MailCommon::SearchRule::Ptr rule, bool isBalooSearch) const = 0;
+    virtual bool setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const MailCommon::SearchRule::Ptr rule, bool isAkonadiSearch) const = 0;
     virtual bool update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const = 0;
 };
 }

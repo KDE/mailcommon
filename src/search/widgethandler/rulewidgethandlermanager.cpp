@@ -75,7 +75,7 @@ MailCommon::RuleWidgetHandlerManager::~RuleWidgetHandlerManager()
              MessageViewer::DeleteAndSetToZero<RuleWidgetHandler>());
 }
 
-void MailCommon::RuleWidgetHandlerManager::setIsBalooSearch(bool isBalooSearch)
+void MailCommon::RuleWidgetHandlerManager::setIsAkonadiSearch(bool isBalooSearch)
 {
     mIsBalooSearch = isBalooSearch;
 }
