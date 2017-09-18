@@ -241,12 +241,12 @@ void FilterManager::filter(const Akonadi::Item &item, FilterSet set, bool accoun
     d->mMailFilterAgentInterface->filterItem(item.id(), static_cast<int>(set), account ? resourceId : QString());
 }
 
-void FilterManager::filter(const Akonadi::Collection &collection, MailCommon::FilterManager::FilterSet set) const
+void FilterManager::filter(const Akonadi::Collection &collection, FilterSet set) const
 {
     filter(Akonadi::Collection::List{ collection }, set);
 }
 
-void FilterManager::filter(const Akonadi::Collection::List &collections, FilterManager::FilterSet set) const
+void FilterManager::filter(const Akonadi::Collection::List &collections, FilterSet set) const
 {
     QList<qint64> colIds;
     colIds.reserve(collections.size());
@@ -263,7 +263,7 @@ void FilterManager::filter(const Akonadi::Collection &collection, const QStringL
 }
 
 
-void FilterManager::filter(const Akonadi::Collection::List &collections, const QStringList &listFilters) const
+void FilterManager::filter(const Akonadi::Collection::List &collections, const QStringList &listFilters, FilterSet set) const
 {
     QList<qint64> colIds;
     colIds.reserve(collections.size());
@@ -271,7 +271,7 @@ void FilterManager::filter(const Akonadi::Collection::List &collections, const Q
         colIds << col.id();
     }
 
-    d->mMailFilterAgentInterface->applySpecificFiltersOnCollections(colIds, listFilters);
+    d->mMailFilterAgentInterface->applySpecificFiltersOnCollections(colIds, listFilters, static_cast<int>(set));
 }
 
 

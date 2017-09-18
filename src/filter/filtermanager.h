@@ -108,7 +108,7 @@ public:
      * by one. You can select which set of filters (incoming or outgoing)
      * should be used.
      */
-    void filter(const Akonadi::Collection &collection, FilterSet set = Inbound) const;
+    void filter(const Akonadi::Collection &collection, FilterSet set = Explicit) const;
 
     /**
      * Apply specified filters on all messages in given collection
@@ -120,12 +120,12 @@ public:
      * by one. You can select which set of filters (incoming or outgoing)
      * should be used.
      */
-    void filter(const Akonadi::Collection::List &collections, FilterSet set = Inbound) const;
+    void filter(const Akonadi::Collection::List &collections, FilterSet set = Explicit) const;
 
     /**
      * Apply specified filters on all messages in given collection
      */
-    void filter(const Akonadi::Collection::List &collections, const QStringList &listFilters) const;
+    void filter(const Akonadi::Collection::List &collections, const QStringList &listFilters, FilterSet set = Explicit) const;
 
     /**
      * Process given @p messages by applying the filter rules one by
