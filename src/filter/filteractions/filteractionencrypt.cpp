@@ -49,6 +49,7 @@
 using namespace MailCommon;
 
 #define LISTING_FINISHED "listingFinished"
+#define IGNORE_KEY_CHANGE "ignoreKeyChange"
 
 FilterActionEncrypt::FilterActionEncrypt(QObject *parent)
     : FilterActionWithCrypto(QStringLiteral("encrypt"), i18n("Encrypt"), parent)
@@ -237,17 +238,29 @@ QWidget *FilterActionEncrypt::createParamWidget(QWidget *parent) const
     combo->setKeyFilter(filter);
 
     combo->setProperty(LISTING_FINISHED, false);
+    combo->setProperty(IGNORE_KEY_CHANGE, false);
     connect(combo, &Kleo::KeySelectionCombo::keyListingFinished,
             combo, [combo] {
                 combo->setProperty(LISTING_FINISHED, true);
+                combo->setProperty(IGNORE_KEY_CHANGE, true);
             });
     connect(combo, &Kleo::KeySelectionCombo::currentKeyChanged,
-            this, &FilterActionEncrypt::filterActionModified);
+            this, [this, combo]() {
+                // Ignore key change due to the combo box populating itself after
+                // finish
+                if (!combo->property(IGNORE_KEY_CHANGE).toBool()) {
+                    Q_EMIT const_cast<FilterActionEncrypt*>(this)->filterActionModified();
+                } else {
+                    combo->setProperty(IGNORE_KEY_CHANGE, false);
+                }
+            });
     l->addWidget(combo);
 
     auto chkBox = new QCheckBox(w);
     chkBox->setText(i18n("Re-encrypt encrypted emails with this key"));
     chkBox->setChecked(mReencrypt);
+    connect(chkBox, &QCheckBox::toggled,
+            this, &FilterActionEncrypt::filterActionModified);
     l->addWidget(chkBox);
 
     auto lbl = new QLabel(w);
