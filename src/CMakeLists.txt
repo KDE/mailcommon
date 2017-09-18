@@ -120,6 +120,7 @@ set(libmailcommon_search_SRCS
   search/widgethandler/rulewidgethandlermanager.cpp
   search/searchpattern.cpp
   search/searchpatternedit.cpp
+  search/widgethandler/encryptionwidgethandler.cpp
   search/widgethandler/textrulerwidgethandler.cpp
   search/widgethandler/statusrulewidgethandler.cpp
   search/widgethandler/messagerulewidgethandler.cpp
@@ -132,6 +133,7 @@ set(libmailcommon_search_SRCS
   search/searchrule/searchruledate.cpp
   search/searchrule/searchrulestring.cpp 
   search/searchrule/searchrulestatus.cpp
+  search/searchrule/searchruleencryption.cpp
   search/searchrule/searchrule.cpp
 )
 

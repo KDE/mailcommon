@@ -193,7 +193,8 @@ public:
         CC,
         ReplyTo,
         Organization,
-        Date
+        Date,
+        Encryption
     };
 
     /**

@@ -37,6 +37,7 @@
 #include "daterulewidgethandler.h"
 #include "numericdoublerulewidgethandler.h"
 #include "headersrulerwidgethandler.h"
+#include "encryptionwidgethandler.h"
 #include "interfaces/rulewidgethandler.h"
 
 #include <messageviewer/stl_util.h>
@@ -64,6 +65,7 @@ MailCommon::RuleWidgetHandlerManager::RuleWidgetHandlerManager()
     registerHandler(new MailCommon::MessageRuleWidgetHandler());
     registerHandler(new MailCommon::NumericDoubleRuleWidgetHandler());
     registerHandler(new MailCommon::HeadersRuleWidgetHandler());
+    registerHandler(new MailCommon::EncryptionWidgetHandler());
     // the TextRuleWidgetHandler is the fallback handler, so it has to be added
     // as last handler
     registerHandler(new MailCommon::TextRuleWidgetHandler());

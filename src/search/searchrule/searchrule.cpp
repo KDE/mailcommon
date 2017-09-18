@@ -19,6 +19,7 @@
 #include "searchrule/searchruledate.h"
 #include "searchrule/searchrulestring.h"
 #include "searchrule/searchrulestatus.h"
+#include "searchrule/searchruleencryption.h"
 #include "mailcommon_debug.h"
 
 #include <KMime/KMimeMessage>
@@ -89,6 +90,8 @@ SearchRule::Ptr SearchRule::createInstance(const QByteArray &field, Function fun
         ret = SearchRule::Ptr(new SearchRuleNumerical(field, func, contents));
     } else if (field == "<date>") {
         ret = SearchRule::Ptr(new SearchRuleDate(field, func, contents));
+    } else if (field == "<encryption>") {
+        ret = SearchRule::Ptr(new SearchRuleEncryption(field, func, contents));
     } else {
         ret = SearchRule::Ptr(new SearchRuleString(field, func, contents));
     }

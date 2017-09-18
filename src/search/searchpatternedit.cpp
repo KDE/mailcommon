@@ -71,7 +71,8 @@ static const struct {
     { "CC", I18N_NOOP("CC")  },
     { "Reply-To", I18N_NOOP("Reply To")  },
     { "Organization", I18N_NOOP("Organization")  },
-    { "<date>", I18N_NOOP("Date")  }
+    { "<date>", I18N_NOOP("Date")  },
+    { "<encryption>", I18N_NOOP("Encryption") }
 };
 static const int SpecialRuleFieldsCount
     = sizeof(SpecialRuleFields) / sizeof(*SpecialRuleFields);
@@ -390,6 +391,8 @@ void SearchRuleWidget::initFieldList(SearchPatternEdit::SearchPatternEditOptions
     if (!notShowDate) {
         mFilterFieldList.append(i18n(SpecialRuleFields[Date].displayName));
     }
+
+    mFilterFieldList.append(i18n(SpecialRuleFields[Encryption].displayName));
 
     // these others only represent message headers and you can add to
     // them as you like

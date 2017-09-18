@@ -28,3 +28,7 @@ add_search_autotest(searchrulestringtest
     searchrulestringtest.cpp
     ../searchrule/searchrulestring.cpp
 )
+add_search_autotest(searchruleencryptiontest
+    searchruleencryptiontest.cpp
+    ../searchrule/searchruleencryption.cpp
+)
