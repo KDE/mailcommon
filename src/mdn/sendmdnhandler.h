@@ -60,8 +60,6 @@ private:
     //@cond PRIVATE
     class Private;
     Private *const d;
-
-    Q_PRIVATE_SLOT(d, void handleMessages())
     //@endcond
 };
 }

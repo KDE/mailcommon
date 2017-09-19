@@ -111,7 +111,7 @@ SendMdnHandler::SendMdnHandler(IKernel *kernel, QObject *parent)
     , d(new Private(this, kernel))
 {
     d->mTimer.setSingleShot(true);
-    connect(&d->mTimer, SIGNAL(timeout()), this, SLOT(handleMessages()));
+    connect(&d->mTimer, &QTimer::timeout, this, [this]() { d->handleMessages(); });
 }
 
 SendMdnHandler::~SendMdnHandler()

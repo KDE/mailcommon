@@ -162,7 +162,7 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
     mainLayout->addWidget(d->mEditTo);
     formLayout->addRow(d->redirectLabelType(RedirectDialog::Private::ResendTo), d->mEditTo);
 
-    connect(d->mEditTo, SIGNAL(addressChanged(QString)), SLOT(slotAddressChanged(QString)));
+    connect(d->mEditTo, &RedirectWidget::addressChanged, this, [this](const QString &str) { d->slotAddressChanged(str);} );
 
     d->mEditCc = new RedirectWidget;
     formLayout->addRow(d->redirectLabelType(RedirectDialog::Private::ResendCc), d->mEditCc);
@@ -188,8 +188,8 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
 
     KGuiItem::assign(d->mUser1Button, KGuiItem(i18n("&Send Now")));
     KGuiItem::assign(d->mUser2Button, KGuiItem(i18n("Send &Later")));
-    connect(d->mUser1Button, SIGNAL(clicked()), this, SLOT(slotUser1()));
-    connect(d->mUser2Button, SIGNAL(clicked()), this, SLOT(slotUser2()));
+    connect(d->mUser1Button, &QPushButton::clicked, this, [this]() { d->slotUser1(); });
+    connect(d->mUser2Button, &QPushButton::clicked, this, [this]() { d->slotUser2(); });
 
     d->mUser1Button->setEnabled(false);
     d->mUser2Button->setEnabled(false);

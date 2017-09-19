@@ -93,10 +93,6 @@ private:
     //@cond PRIVATE
     class Private;
     Private *const d;
-
-    Q_PRIVATE_SLOT(d, void slotUser1())
-    Q_PRIVATE_SLOT(d, void slotUser2())
-    Q_PRIVATE_SLOT(d, void slotAddressChanged(const QString &))
     //@endcond
 };
 }
