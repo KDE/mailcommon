@@ -147,12 +147,11 @@ KMime::Message::Ptr CryptoUtils::decryptMessage(const KMime::Message::Ptr &msg,
         }
     }
 
-
     KMime::Content decCt;
     if (inlinePGP) {
-        decCt.setBody(outData);
+        decCt.setBody(KMime::CRLFtoLF(outData));
     } else {
-        decCt.setContent(outData);
+        decCt.setContent(KMime::CRLFtoLF(outData));
     }
     decCt.parse();
     decCt.assemble();
