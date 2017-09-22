@@ -68,7 +68,7 @@ FilterImporterExporterGui::FilterImporterExporterGui(QWidget *parent)
     act = new QAction(QStringLiteral("GMail filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::GmailFilter));
     menuFilter->addAction(act);
-    connect(menuFilter, SIGNAL(triggered(QAction *)), SLOT(slotImportFilter(QAction *)));
+    connect(menuFilter, QOverload<QAction*>::of(&QMenu::triggered), this, &FilterImporterExporterGui::slotImportFilter);
 
     mTextEdit = new QTextEdit;
     mTextEdit->setReadOnly(true);
