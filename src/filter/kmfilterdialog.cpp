@@ -387,7 +387,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
             this, &KMFilterDialog::slotDialogUpdated);
     connect(mFilterList, &KMFilterListBox::filterOrderAltered, this, &KMFilterDialog::slotDialogUpdated);
     connect(mPatternEdit, &MailCommon::SearchPatternEdit::patternChanged, this, &KMFilterDialog::slotDialogUpdated);
-    connect(mActionLister, SIGNAL(widgetAdded(QWidget *)), this, SLOT(slotDialogUpdated()));
+    connect(mActionLister, SIGNAL(widgetAdded(QWidget*)), this, SLOT(slotDialogUpdated()));
     connect(mActionLister, SIGNAL(widgetRemoved()), this, SLOT(slotDialogUpdated()));
     connect(mActionLister, &MailCommon::FilterActionWidgetLister::filterModified, this, &KMFilterDialog::slotDialogUpdated);
     connect(mActionLister, &MailCommon::FilterActionWidgetLister::clearWidgets, this, &KMFilterDialog::slotDialogUpdated);
