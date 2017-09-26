@@ -169,8 +169,8 @@ FilterActionWidget::FilterActionWidget(QWidget *parent)
     setFocusProxy(d->mComboBox);
 
     // now connect the combo box and the widget stack
-    connect(d->mComboBox, SIGNAL(activated(int)),
-            this, SLOT(slotFilterTypeChanged(int)));
+    connect(d->mComboBox, QOverload<int>::of(&KComboBox::activated)
+            , this, [this](int index) {d->slotFilterTypeChanged(index); });
 
     connect(d->mComboBox, QOverload<int>::of(&KComboBox::activated), this, &FilterActionWidget::filterModified);
 
@@ -351,8 +351,7 @@ void FilterActionWidgetLister::connectWidget(QWidget *widget, FilterAction *filt
     if (filterAction) {
         w->setAction(filterAction);
     }
-    connect(w, &FilterActionWidget::filterModified,
-            this, &FilterActionWidgetLister::filterModified, Qt::UniqueConnection);
+    connect(w, &FilterActionWidget::filterModified, this, &FilterActionWidgetLister::filterModified, Qt::UniqueConnection);
     reconnectWidget(w);
 }
 
