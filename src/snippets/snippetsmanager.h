@@ -146,6 +146,9 @@ private:
     //@cond PRIVATE
     class Private;
     Private *const d;
+    Q_PRIVATE_SLOT(d, void insertSelectedSnippet())
+    Q_PRIVATE_SLOT(d, void insertActionSnippet())
+
     //@endcond
 };
 }
