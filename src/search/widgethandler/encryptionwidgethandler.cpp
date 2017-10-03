@@ -94,19 +94,23 @@ SearchRule::Function EncryptionWidgetHandler::function(const QByteArray &field,
 QString EncryptionWidgetHandler::value(const QByteArray &field, const QStackedWidget *functionStack,
                                        const QStackedWidget *valueStack) const
 {
-    Q_UNUSED(field);
     Q_UNUSED(functionStack);
     Q_UNUSED(valueStack);
-
+    if (!handlesField(field)) {
+        return QString();
+    }
     return QStringLiteral("is encrypted"); // dummy value
 }
 
 QString EncryptionWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *functionStack,
                                              const QStackedWidget *valueStack) const
 {
-    Q_UNUSED(field);
     Q_UNUSED(functionStack);
     Q_UNUSED(valueStack);
+    if (!handlesField(field)) {
+        return QString();
+    }
+
 
     return i18n("is encrypted");
 }
@@ -131,6 +135,11 @@ void EncryptionWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidge
 bool EncryptionWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidget *valueStack,
                                       const SearchRule::Ptr rule, bool isBalooSearch) const
 {
+    Q_UNUSED(isBalooSearch);
+    if (!rule || !handlesField(rule->field())) {
+        reset(functionStack, valueStack);
+        return false;
+    }
     update("<encryption>", functionStack, valueStack);
 
     const auto combo = functionStack->findChild<KComboBox*>(QStringLiteral("encryptionRuleFuncCombo"));
@@ -146,9 +155,8 @@ bool EncryptionWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWid
         return true;
     }
 
-    Q_UNUSED(isBalooSearch);
 
-    return false;
+    return true;
 }
 
 bool EncryptionWidgetHandler::update(const QByteArray &field, QStackedWidget *functionStack,
