@@ -176,10 +176,10 @@ FilterActionWidget::FilterActionWidget(QWidget *parent)
 
     connect(d->mComboBox, QOverload<int>::of(&KComboBox::activated), this, &FilterActionWidget::filterModified);
 
-    connect(d->mAdd, SIGNAL(clicked()),
-            this, SLOT(slotAddWidget()));
-    connect(d->mRemove, SIGNAL(clicked()),
-            this, SLOT(slotRemoveWidget()));
+    connect(d->mAdd, &QPushButton::clicked,
+            this, [this]() { d->slotAddWidget(); });
+    connect(d->mRemove, &QPushButton::clicked,
+            this, [this]() { d->slotRemoveWidget(); });
 
     d->setFilterAction();
     d->mLayout->addWidget(d->mAdd, 1, 3);
