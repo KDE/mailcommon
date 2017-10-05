@@ -435,4 +435,3 @@ Qt::DropActions SnippetsModel::supportedDropActions() const
 {
     return Qt::CopyAction | Qt::MoveAction;
 }
-

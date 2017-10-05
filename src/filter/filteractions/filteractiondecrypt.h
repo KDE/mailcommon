@@ -22,9 +22,7 @@
 
 #include "filteractionwithcrypto.h"
 
-
 namespace MailCommon {
-
 class FilterActionDecrypt : public FilterActionWithCrypto
 {
     Q_OBJECT
@@ -42,7 +40,6 @@ public:
     SearchRule::RequiredPart requiredPart() const override;
     FilterAction::ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
 };
-
 } // namespace MailCommon
 
 #endif

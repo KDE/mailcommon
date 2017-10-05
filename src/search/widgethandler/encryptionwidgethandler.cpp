@@ -34,7 +34,6 @@ static const struct {
 static const int EncryptionFunctionCount
     = sizeof(EncryptionFunctions) / sizeof(*EncryptionFunctions);
 
-
 EncryptionWidgetHandler::EncryptionWidgetHandler()
     : RuleWidgetHandler()
 {
@@ -44,8 +43,7 @@ EncryptionWidgetHandler::~EncryptionWidgetHandler()
 {
 }
 
-QWidget *EncryptionWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack,
-                                                       const QObject *receiver, bool isBalooSearch) const
+QWidget *EncryptionWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const
 {
     Q_UNUSED(isBalooSearch);
 
@@ -64,8 +62,7 @@ QWidget *EncryptionWidgetHandler::createFunctionWidget(int number, QStackedWidge
     return combo;
 }
 
-QWidget *EncryptionWidgetHandler::createValueWidget(int number, QStackedWidget *valueStack,
-                                                    const QObject *receiver) const
+QWidget *EncryptionWidgetHandler::createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const
 {
     Q_UNUSED(receiver);
 
@@ -78,12 +75,11 @@ QWidget *EncryptionWidgetHandler::createValueWidget(int number, QStackedWidget *
     return lbl;
 }
 
-SearchRule::Function EncryptionWidgetHandler::function(const QByteArray &field,
-                                                       const QStackedWidget *functionStack) const
+SearchRule::Function EncryptionWidgetHandler::function(const QByteArray &field, const QStackedWidget *functionStack) const
 {
     Q_UNUSED(field);
 
-    const auto combo = functionStack->findChild<KComboBox*>(QStringLiteral("encryptionRuleFuncCombo"));
+    const auto combo = functionStack->findChild<KComboBox *>(QStringLiteral("encryptionRuleFuncCombo"));
     if (combo && combo->currentIndex() >= 0) {
         return EncryptionFunctions[combo->currentIndex()].id;
     }
@@ -91,8 +87,7 @@ SearchRule::Function EncryptionWidgetHandler::function(const QByteArray &field,
     return SearchRule::FuncNone;
 }
 
-QString EncryptionWidgetHandler::value(const QByteArray &field, const QStackedWidget *functionStack,
-                                       const QStackedWidget *valueStack) const
+QString EncryptionWidgetHandler::value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
 {
     Q_UNUSED(functionStack);
     Q_UNUSED(valueStack);
@@ -102,15 +97,13 @@ QString EncryptionWidgetHandler::value(const QByteArray &field, const QStackedWi
     return QStringLiteral("is encrypted"); // dummy value
 }
 
-QString EncryptionWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *functionStack,
-                                             const QStackedWidget *valueStack) const
+QString EncryptionWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
 {
     Q_UNUSED(functionStack);
     Q_UNUSED(valueStack);
     if (!handlesField(field)) {
         return QString();
     }
-
 
     return i18n("is encrypted");
 }
@@ -122,7 +115,7 @@ bool EncryptionWidgetHandler::handlesField(const QByteArray &field) const
 
 void EncryptionWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
-    const auto combo = functionStack->findChild<KComboBox*>(QStringLiteral("encryptionRuleFuncCombo"));
+    const auto combo = functionStack->findChild<KComboBox *>(QStringLiteral("encryptionRuleFuncCombo"));
     if (combo) {
         const bool blocked = combo->blockSignals(true);
         combo->setCurrentIndex(0);
@@ -132,8 +125,7 @@ void EncryptionWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidge
     Q_UNUSED(valueStack);
 }
 
-bool EncryptionWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidget *valueStack,
-                                      const SearchRule::Ptr rule, bool isBalooSearch) const
+bool EncryptionWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const SearchRule::Ptr rule, bool isBalooSearch) const
 {
     Q_UNUSED(isBalooSearch);
     if (!rule || !handlesField(rule->field())) {
@@ -142,7 +134,7 @@ bool EncryptionWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWid
     }
     update("<encryption>", functionStack, valueStack);
 
-    const auto combo = functionStack->findChild<KComboBox*>(QStringLiteral("encryptionRuleFuncCombo"));
+    const auto combo = functionStack->findChild<KComboBox *>(QStringLiteral("encryptionRuleFuncCombo"));
     if (combo) {
         const bool blocked = combo->blockSignals(true);
         for (int i = 0; i < EncryptionFunctionCount; ++i) {
@@ -155,23 +147,17 @@ bool EncryptionWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWid
         return true;
     }
 
-
     return true;
 }
 
-bool EncryptionWidgetHandler::update(const QByteArray &field, QStackedWidget *functionStack,
-                                     QStackedWidget *valueStack) const
+bool EncryptionWidgetHandler::update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
         return false;
     }
 
-    functionStack->setCurrentWidget(functionStack->findChild<QWidget*>(QStringLiteral("encryptionRuleFuncCombo")));
-    valueStack->setCurrentWidget(valueStack->findChild<QWidget*>(QStringLiteral("encryptionRuleValueLabel")));
+    functionStack->setCurrentWidget(functionStack->findChild<QWidget *>(QStringLiteral("encryptionRuleFuncCombo")));
+    valueStack->setCurrentWidget(valueStack->findChild<QWidget *>(QStringLiteral("encryptionRuleValueLabel")));
 
     return true;
 }
-
-
-
-

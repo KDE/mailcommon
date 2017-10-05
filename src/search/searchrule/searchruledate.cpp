@@ -17,7 +17,6 @@
 
 #include "searchruledate.h"
 
-
 #include "filter/filterlog.h"
 using MailCommon::FilterLog;
 

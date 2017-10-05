@@ -25,14 +25,9 @@
 #include <mailcommon_export.h>
 
 namespace MailCommon {
-
 namespace CryptoUtils {
-
-
-MAILCOMMON_EXPORT KMime::Message::Ptr assembleMessage(const KMime::Message::Ptr &orig,
-                                                      const KMime::Content *newContent);
-MAILCOMMON_EXPORT KMime::Message::Ptr decryptMessage(const KMime::Message::Ptr &decrypt,
-                                                     bool &wasEncrypted);
+MAILCOMMON_EXPORT KMime::Message::Ptr assembleMessage(const KMime::Message::Ptr &orig, const KMime::Content *newContent);
+MAILCOMMON_EXPORT KMime::Message::Ptr decryptMessage(const KMime::Message::Ptr &decrypt, bool &wasEncrypted);
 
 MAILCOMMON_EXPORT bool isInlinePGP(const KMime::Content *content);
 MAILCOMMON_EXPORT bool isPGP(const KMime::Content *content, bool allowOctetStream = false);
@@ -40,12 +35,9 @@ MAILCOMMON_EXPORT bool isSMIME(const KMime::Content *content);
 
 MAILCOMMON_EXPORT bool isEncrypted(const KMime::Message *content);
 
-MAILCOMMON_EXPORT void copyHeader(const KMime::Headers::Base *header,
-                                  KMime::Message::Ptr destMsg);
+MAILCOMMON_EXPORT void copyHeader(const KMime::Headers::Base *header, KMime::Message::Ptr destMsg);
 MAILCOMMON_EXPORT bool isContentHeader(const KMime::Headers::Base *header);
-
 }
-
 }
 
 #endif

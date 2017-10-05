@@ -169,8 +169,10 @@ FilterActionWidget::FilterActionWidget(QWidget *parent)
     setFocusProxy(d->mComboBox);
 
     // now connect the combo box and the widget stack
-    connect(d->mComboBox, QOverload<int>::of(&KComboBox::activated)
-            , this, [this](int index) {d->slotFilterTypeChanged(index); });
+    connect(d->mComboBox, QOverload<int>::of(&KComboBox::activated),
+            this, [this](int index) {
+        d->slotFilterTypeChanged(index);
+    });
 
     connect(d->mComboBox, QOverload<int>::of(&KComboBox::activated), this, &FilterActionWidget::filterModified);
 

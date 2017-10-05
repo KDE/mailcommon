@@ -25,7 +25,6 @@
 #include <gpgme++/global.h>
 
 namespace MailCommon {
-
 class FilterActionWithCrypto : public FilterAction
 {
     Q_OBJECT
@@ -40,7 +39,6 @@ private:
     mutable QString mGpgSmPath;
     mutable QString mGpgPath;
 };
-
 } // namespace MailCommon
 
 #endif

@@ -21,7 +21,6 @@
 
 #include "filter/soundtestwidget.h"
 
-
 using namespace MailCommon;
 
 FilterActionWithTest::FilterActionWithTest(const QString &name, const QString &label, QObject *parent)

@@ -19,7 +19,6 @@
 
 #include "filteractionwithuoid.h"
 
-
 using namespace MailCommon;
 
 FilterActionWithUOID::FilterActionWithUOID(const QString &name, const QString &label, QObject *parent)

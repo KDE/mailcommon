@@ -262,7 +262,6 @@ void FilterManager::filter(const Akonadi::Collection &collection, const QStringL
     filter(Akonadi::Collection::List{ collection }, listFilters);
 }
 
-
 void FilterManager::filter(const Akonadi::Collection::List &collections, const QStringList &listFilters, FilterSet set) const
 {
     QList<qint64> colIds;
@@ -273,7 +272,6 @@ void FilterManager::filter(const Akonadi::Collection::List &collections, const Q
 
     d->mMailFilterAgentInterface->applySpecificFiltersOnCollections(colIds, listFilters, static_cast<int>(set));
 }
-
 
 void FilterManager::filter(const Akonadi::Item::List &messages, FilterManager::FilterSet set) const
 {

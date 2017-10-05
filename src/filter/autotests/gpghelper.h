@@ -31,7 +31,11 @@ public:
     explicit GPGHelper(const QString &templateGnupgHome);
     ~GPGHelper();
 
-    bool isValid() const { return mValid; }
+    bool isValid() const
+    {
+        return mValid;
+    }
+
     QString gnupgHome() const;
 
     QByteArray decrypt(const QByteArray &enc, CryptoType crypto) const;
@@ -47,4 +51,3 @@ private:
 };
 
 #endif
-

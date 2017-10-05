@@ -21,7 +21,6 @@
 
 #include <KLineEdit>
 
-
 using namespace MailCommon;
 
 FilterActionWithString::FilterActionWithString(const QString &name, const QString &label, QObject *parent)

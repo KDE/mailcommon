@@ -20,7 +20,6 @@
 #include "kernel/mailkernel.h"
 #include "mailcommon_debug.h"
 
-
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/Util>
 using MessageComposer::MessageFactoryNG;

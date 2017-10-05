@@ -27,7 +27,6 @@
 #include <Libkleo/KeyCache>
 
 namespace MailCommon {
-
 class FilterActionEncrypt : public FilterActionWithCrypto
 {
     Q_OBJECT
@@ -53,14 +52,21 @@ public:
     void setParamWidgetValue(QWidget *paramWidget) const override;
     void applyParamWidgetValue(QWidget *paramWidget) override;
 
-    GpgME::Key key() const { return mKey; }
-    bool reencrypt() const { return mReencrypt; }
+    GpgME::Key key() const
+    {
+        return mKey;
+    }
+
+    bool reencrypt() const
+    {
+        return mReencrypt;
+    }
+
 private:
     std::shared_ptr<const Kleo::KeyCache> mKeyCache;
     GpgME::Key mKey;
     bool mReencrypt;
 };
-
 } // namespace MailCommon
 
 #endif

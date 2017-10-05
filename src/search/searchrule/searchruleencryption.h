@@ -21,18 +21,18 @@
 #include "searchpattern.h"
 
 namespace MailCommon {
-
 class SearchRuleEncryption : public SearchRule
 {
 public:
-    explicit SearchRuleEncryption(const QByteArray &field = {}, Function func = FuncEquals, const QString &contents = {});
+    explicit SearchRuleEncryption(const QByteArray &field =
+        {
+        }, Function func = FuncEquals, const QString &contents = {});
     ~SearchRuleEncryption();
 
     bool isEmpty() const override;
     bool matches(const Akonadi::Item &item) const override;
     SearchRule::RequiredPart requiredPart() const override;
 };
-
 }
 
 #endif

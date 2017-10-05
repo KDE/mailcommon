@@ -27,7 +27,6 @@
 
 #include <gpgme++/decryptionresult.h>
 
-
 #include <Akonadi/KMime/MessageFlags>
 
 using namespace MailCommon;
@@ -81,7 +80,7 @@ FilterAction::ReturnCode FilterActionDecrypt::process(ItemContext &context, bool
     bool wasEncrypted;
     auto nec = CryptoUtils::decryptMessage(msg, wasEncrypted);
     if (!nec) {
-        return wasEncrypted ? ErrorButGoOn: GoOn;
+        return wasEncrypted ? ErrorButGoOn : GoOn;
     }
 
     context.item().setPayload(nec);

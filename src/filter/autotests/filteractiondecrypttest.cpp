@@ -56,7 +56,6 @@ void FilterActionDecryptTest::shouldDecrypt_data()
         QTest::newRow(QStringLiteral("PLAIN %1").arg(test.baseName()).toUtf8().constData())
             << plainData << plainData;
     }
-
 }
 
 void FilterActionDecryptTest::shouldDecrypt()

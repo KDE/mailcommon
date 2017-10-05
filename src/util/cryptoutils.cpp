@@ -60,15 +60,15 @@ bool CryptoUtils::isInlinePGP(const KMime::Content *part)
 
 bool CryptoUtils::isPGP(const KMime::Content *part, bool allowOctetStream)
 {
-    const auto ct = static_cast<KMime::Headers::ContentType*>(part->headerByType("Content-Type"));
+    const auto ct = static_cast<KMime::Headers::ContentType *>(part->headerByType("Content-Type"));
     return ct && (ct->isSubtype("pgp-encrypted")
-                    || ct->isSubtype("encrypted")
-                    || (allowOctetStream && ct->isMimeType("application/octet-stream")));
+                  || ct->isSubtype("encrypted")
+                  || (allowOctetStream && ct->isMimeType("application/octet-stream")));
 }
 
 bool CryptoUtils::isSMIME(const KMime::Content *part)
 {
-    const auto ct = static_cast<KMime::Headers::ContentType*>(part->headerByType("Content-Type"));
+    const auto ct = static_cast<KMime::Headers::ContentType *>(part->headerByType("Content-Type"));
     return ct && (ct->isSubtype("pkcs7-mime") || ct->isSubtype("x-pkcs7-mime"));
 }
 
@@ -76,15 +76,14 @@ bool CryptoUtils::isEncrypted(const KMime::Message *msg)
 {
     // KMime::isEncrypted does not cover all cases - mostly only deals with
     // mime types.
-    if (KMime::isEncrypted(const_cast<KMime::Message*>(msg))) {
+    if (KMime::isEncrypted(const_cast<KMime::Message *>(msg))) {
         return true;
     }
 
     return isInlinePGP(msg);
 }
 
-KMime::Message::Ptr CryptoUtils::decryptMessage(const KMime::Message::Ptr &msg,
-                                                           bool &wasEncrypted)
+KMime::Message::Ptr CryptoUtils::decryptMessage(const KMime::Message::Ptr &msg, bool &wasEncrypted)
 {
     GpgME::Protocol protoName = GpgME::UnknownProtocol;
     bool inlinePGP = false;
@@ -159,8 +158,7 @@ KMime::Message::Ptr CryptoUtils::decryptMessage(const KMime::Message::Ptr &msg,
     return assembleMessage(msg, &decCt);
 }
 
-void CryptoUtils::copyHeader(const KMime::Headers::Base *header,
-                                        KMime::Message::Ptr msg)
+void CryptoUtils::copyHeader(const KMime::Headers::Base *header, KMime::Message::Ptr msg)
 {
     auto newHdr = KMime::Headers::createHeader(header->type());
     if (!newHdr) {
@@ -173,21 +171,20 @@ void CryptoUtils::copyHeader(const KMime::Headers::Base *header,
 bool CryptoUtils::isContentHeader(const KMime::Headers::Base *header)
 {
     return header->is("Content-Type")
-            || header->is("Content-Transfer-Encoding")
-            || header->is("Content-Disposition");
+           || header->is("Content-Transfer-Encoding")
+           || header->is("Content-Disposition");
 }
 
-KMime::Message::Ptr CryptoUtils::assembleMessage(const KMime::Message::Ptr &orig,
-                                                const KMime::Content *newContent)
+KMime::Message::Ptr CryptoUtils::assembleMessage(const KMime::Message::Ptr &orig, const KMime::Content *newContent)
 {
     auto out = KMime::Message::Ptr::create();
     // Use the new content as message content
-    out->setBody(const_cast<KMime::Content*>(newContent)->encodedBody());
+    out->setBody(const_cast<KMime::Content *>(newContent)->encodedBody());
     out->parse();
 
     // Copy over headers from the original message, except for CT, CTE and CD
     // headers, we want to preserve those from the new content
-    QVector<KMime::Headers::Base*> headers = orig->headers();
+    QVector<KMime::Headers::Base *> headers = orig->headers();
     for (const auto hdr : qAsConst(headers)) {
         if (isContentHeader(hdr)) {
             continue;

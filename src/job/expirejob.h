@@ -33,7 +33,6 @@
 #include <Collection>
 #include <Item>
 
-
 class KJob;
 
 namespace MailCommon {

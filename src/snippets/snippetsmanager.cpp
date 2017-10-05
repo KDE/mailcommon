@@ -614,19 +614,39 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
     d->mInsertSnippetAction = new QAction(i18n("Insert Snippet"), this);
 
     connect(d->mSelectionModel, &QItemSelectionModel::selectionChanged,
-            this, [this]() {d->selectionChanged();});
-    connect(d->mModel, &SnippetsModel::dndDone, this, [this]() { d->dndDone();} );
-    connect(d->mModel, &SnippetsModel::addNewDndSnippset, this, [this](const QString &str) { d->slotAddNewDndSnippset(str); });
+            this, [this]() {
+        d->selectionChanged();
+    });
+    connect(d->mModel, &SnippetsModel::dndDone, this, [this]() {
+        d->dndDone();
+    });
+    connect(d->mModel, &SnippetsModel::addNewDndSnippset, this, [this](const QString &str) {
+        d->slotAddNewDndSnippset(str);
+    });
 
-    connect(d->mAddSnippetAction, &QAction::triggered, this, [this]() { d->addSnippet(); });
-    connect(d->mEditSnippetAction, &QAction::triggered, this, [this]() { d->editSnippet(); });
-    connect(d->mDeleteSnippetAction, &QAction::triggered, this, [this]() { d->deleteSnippet(); });
+    connect(d->mAddSnippetAction, &QAction::triggered, this, [this]() {
+        d->addSnippet();
+    });
+    connect(d->mEditSnippetAction, &QAction::triggered, this, [this]() {
+        d->editSnippet();
+    });
+    connect(d->mDeleteSnippetAction, &QAction::triggered, this, [this]() {
+        d->deleteSnippet();
+    });
 
-    connect(d->mAddSnippetGroupAction, &QAction::triggered, this, [this]() { d->addSnippetGroup(); });
-    connect(d->mEditSnippetGroupAction, &QAction::triggered, this, [this]() { d->editSnippetGroup(); });
-    connect(d->mDeleteSnippetGroupAction, &QAction::triggered, this, [this]() { d->deleteSnippetGroup(); });
+    connect(d->mAddSnippetGroupAction, &QAction::triggered, this, [this]() {
+        d->addSnippetGroup();
+    });
+    connect(d->mEditSnippetGroupAction, &QAction::triggered, this, [this]() {
+        d->editSnippetGroup();
+    });
+    connect(d->mDeleteSnippetGroupAction, &QAction::triggered, this, [this]() {
+        d->deleteSnippetGroup();
+    });
 
-    connect(d->mInsertSnippetAction, &QAction::triggered, this, [this]() { d->insertSelectedSnippet(); });
+    connect(d->mInsertSnippetAction, &QAction::triggered, this, [this]() {
+        d->insertSelectedSnippet();
+    });
 
     d->selectionChanged();
 

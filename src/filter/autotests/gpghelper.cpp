@@ -23,7 +23,6 @@
 #include <QTest>
 
 namespace {
-
 bool copyRecursively(const QString &src, const QString &dest)
 {
     QFileInfo srcInfo(src);
@@ -56,7 +55,6 @@ QString gpgexe(GPGHelper::CryptoType crypto)
 {
     return (crypto == GPGHelper::OpenPGP) ? QStringLiteral("gpg2") : QStringLiteral("gpgsm");
 }
-
 } // namespace
 
 GPGHelper::GPGHelper(const QString &templateGnupgHome)
@@ -88,8 +86,7 @@ QString GPGHelper::gnupgHome() const
     return mTmpDir.path() + QStringLiteral("/gpghome");
 }
 
-QByteArray GPGHelper::runGpg(const QByteArray &in, GPGHelper::CryptoType crypto,
-                             const QStringList &args) const
+QByteArray GPGHelper::runGpg(const QByteArray &in, GPGHelper::CryptoType crypto, const QStringList &args) const
 {
     QProcess gpg;
     gpg.setReadChannel(QProcess::StandardOutput);
@@ -134,7 +131,8 @@ QString GPGHelper::encryptionKeyFp(const QByteArray &enc, GPGHelper::CryptoType 
     }
 
     // Find first non-colon character after "fpr"
-    for (idx = idx + 4; idx < data.size() && data[idx] == ':'; ++idx);
+    for (idx = idx + 4; idx < data.size() && data[idx] == ':'; ++idx) {
+    }
     const int end = data.indexOf(':', idx);
 
     return QString::fromLatin1(data.constData() + idx, end - idx);

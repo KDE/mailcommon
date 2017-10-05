@@ -22,7 +22,6 @@
 
 using namespace MailCommon;
 
-
 SearchRuleEncryption::SearchRuleEncryption(const QByteArray &field, Function func, const QString &contents)
     : SearchRule(field, func, contents)
 {

@@ -78,7 +78,7 @@ QString FilterActionEncrypt::argsAsString() const
     }
 
     const auto proto = ((mKey.protocol() == GpgME::OpenPGP) ? QStringLiteral("PGP")
-                                                            : QStringLiteral("SMIME"));
+                        : QStringLiteral("SMIME"));
     return QStringLiteral("%1:%2:%3").arg(proto, QString::number(int(mReencrypt)),
                                           QString::fromLatin1(mKey.primaryFingerprint()));
 }
@@ -241,19 +241,19 @@ QWidget *FilterActionEncrypt::createParamWidget(QWidget *parent) const
     combo->setProperty(IGNORE_KEY_CHANGE, false);
     connect(combo, &Kleo::KeySelectionCombo::keyListingFinished,
             combo, [combo] {
-                combo->setProperty(LISTING_FINISHED, true);
-                combo->setProperty(IGNORE_KEY_CHANGE, true);
-            });
+        combo->setProperty(LISTING_FINISHED, true);
+        combo->setProperty(IGNORE_KEY_CHANGE, true);
+    });
     connect(combo, &Kleo::KeySelectionCombo::currentKeyChanged,
             this, [this, combo]() {
-                // Ignore key change due to the combo box populating itself after
-                // finish
-                if (!combo->property(IGNORE_KEY_CHANGE).toBool()) {
-                    Q_EMIT const_cast<FilterActionEncrypt*>(this)->filterActionModified();
-                } else {
-                    combo->setProperty(IGNORE_KEY_CHANGE, false);
-                }
-            });
+        // Ignore key change due to the combo box populating itself after
+        // finish
+        if (!combo->property(IGNORE_KEY_CHANGE).toBool()) {
+            Q_EMIT const_cast<FilterActionEncrypt *>(this)->filterActionModified();
+        } else {
+            combo->setProperty(IGNORE_KEY_CHANGE, false);
+        }
+    });
     l->addWidget(combo);
 
     auto chkBox = new QCheckBox(w);
@@ -280,18 +280,18 @@ QWidget *FilterActionEncrypt::createParamWidget(QWidget *parent) const
 
 void FilterActionEncrypt::setParamWidgetValue(QWidget *paramWidget) const
 {
-    if (auto combo = paramWidget->findChild<Kleo::KeySelectionCombo*>()) {
+    if (auto combo = paramWidget->findChild<Kleo::KeySelectionCombo *>()) {
         combo->setDefaultKey(QString::fromLatin1(mKey.primaryFingerprint()));
         combo->setCurrentKey(QString::fromLatin1(mKey.primaryFingerprint()));
     }
-    if (auto chkBox = paramWidget->findChild<QCheckBox*>()) {
+    if (auto chkBox = paramWidget->findChild<QCheckBox *>()) {
         chkBox->setChecked(mReencrypt);
     }
 }
 
 void FilterActionEncrypt::applyParamWidgetValue(QWidget *paramWidget)
 {
-    if (auto combo = paramWidget->findChild<Kleo::KeySelectionCombo*>()) {
+    if (auto combo = paramWidget->findChild<Kleo::KeySelectionCombo *>()) {
         // FIXME: This is super-ugly, but unfortunately the filtering code generates
         // several instances of this filter and passes the paramWidgets from one
         // instance to another to "copy" stuff in between, which in our case leads
@@ -304,7 +304,7 @@ void FilterActionEncrypt::applyParamWidgetValue(QWidget *paramWidget)
         }
         mKey = combo->currentKey();
     }
-    if (auto chkBox = paramWidget->findChild<QCheckBox*>()) {
+    if (auto chkBox = paramWidget->findChild<QCheckBox *>()) {
         mReencrypt = chkBox->isChecked();
     }
 }

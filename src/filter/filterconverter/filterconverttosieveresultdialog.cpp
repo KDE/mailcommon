@@ -25,7 +25,6 @@
 #include <KSyntaxHighlighting/SyntaxHighlighter>
 #include <KSyntaxHighlighting/Theme>
 
-
 #include <KSharedConfig>
 #include <KConfigGroup>
 #include <QDialogButtonBox>
@@ -56,8 +55,8 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
     auto syntaxHighlighter = new KSyntaxHighlighting::SyntaxHighlighter(mEditor->editor()->document());
     syntaxHighlighter->setDefinition(mSyntaxRepo.definitionForName(QStringLiteral("Sieve")));
     syntaxHighlighter->setTheme((palette().color(QPalette::Base).lightness() < 128)
-        ? mSyntaxRepo.defaultTheme(KSyntaxHighlighting::Repository::DarkTheme)
-        : mSyntaxRepo.defaultTheme(KSyntaxHighlighting::Repository::LightTheme));
+                                ? mSyntaxRepo.defaultTheme(KSyntaxHighlighting::Repository::DarkTheme)
+                                : mSyntaxRepo.defaultTheme(KSyntaxHighlighting::Repository::LightTheme));
     topLayout->addWidget(mEditor);
     topLayout->addWidget(buttonBox);
 

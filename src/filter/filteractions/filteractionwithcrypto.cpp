@@ -24,8 +24,7 @@
 
 using namespace MailCommon;
 
-QStringList FilterActionWithCrypto::getEncryptionKeysFromContent(const KMime::Message::Ptr &msg,
-                                                                 GpgME::Protocol protocol) const
+QStringList FilterActionWithCrypto::getEncryptionKeysFromContent(const KMime::Message::Ptr &msg, GpgME::Protocol protocol) const
 {
     if (protocol == GpgME::CMS && mGpgSmPath.isNull()) {
         const auto path = QStandardPaths::findExecutable(QStringLiteral("gpgsm"));
@@ -101,4 +100,3 @@ QStringList FilterActionWithCrypto::getEncryptionKeysFromContent(const KMime::Me
 
     return keyIds;
 }
-
