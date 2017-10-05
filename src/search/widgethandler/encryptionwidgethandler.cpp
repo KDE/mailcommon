@@ -77,7 +77,9 @@ QWidget *EncryptionWidgetHandler::createValueWidget(int number, QStackedWidget *
 
 SearchRule::Function EncryptionWidgetHandler::function(const QByteArray &field, const QStackedWidget *functionStack) const
 {
-    Q_UNUSED(field);
+    if (!handlesField(field)) {
+        return SearchRule::FuncNone;
+    }
 
     const auto combo = functionStack->findChild<KComboBox *>(QStringLiteral("encryptionRuleFuncCombo"));
     if (combo && combo->currentIndex() >= 0) {
