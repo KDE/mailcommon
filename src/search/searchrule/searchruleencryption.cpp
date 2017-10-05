@@ -17,7 +17,8 @@
 
 #include "searchruleencryption.h"
 #include "util/cryptoutils.h"
-
+#include "filter/filterlog.h"
+using MailCommon::FilterLog;
 #include <KMime/Message>
 
 using namespace MailCommon;
@@ -46,12 +47,20 @@ bool SearchRuleEncryption::matches(const Akonadi::Item &item) const
     }
     const auto msg = item.payload<KMime::Message::Ptr>();
 
-    return shouldBeEncrypted == CryptoUtils::isEncrypted(msg.data());
+    bool rc = (shouldBeEncrypted == CryptoUtils::isEncrypted(msg.data()));
+    if (FilterLog::instance()->isLogging()) {
+        QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>")
+                       : QStringLiteral("<font color=#FF0000>0 = </font>"));
+        msg += FilterLog::recode(asString());
+        msg += QStringLiteral(" ( <i>") + contents() + QStringLiteral("</i> )"); //TODO change with locale?
+        FilterLog::instance()->add(msg, FilterLog::RuleResult);
+    }
+    return rc;
 }
 
 SearchRule::RequiredPart SearchRuleEncryption::requiredPart() const
 {
-    // We can't detect inline signatures jsut from headers, we need to inspect
+    // We can't detect inline signatures just from headers, we need to inspect
     // the entire body.
     return SearchRule::CompleteMessage;
 }
