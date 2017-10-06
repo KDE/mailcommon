@@ -584,17 +584,24 @@ QString MailFilter::purify(bool removeAction)
 {
     QString informationAboutNotValidAction = mPattern.purify(removeAction);
 
-    QListIterator<FilterAction *> it(mActions);
-    it.toBack();
-    while (it.hasPrevious()) {
-        FilterAction *action = it.previous();
-        if (action->isEmpty()) {
-            if (!informationAboutNotValidAction.isEmpty()) {
-                informationAboutNotValidAction += QLatin1Char('\n');
-            }
-            informationAboutNotValidAction += action->informationAboutNotValidAction();
-            if (removeAction) {
-                mActions.removeAll(action);
+    if (mActions.isEmpty()) {
+        if (!informationAboutNotValidAction.isEmpty()) {
+            informationAboutNotValidAction += QLatin1Char('\n');
+        }
+        informationAboutNotValidAction += i18n("Any action defined.");
+    } else {
+        QListIterator<FilterAction *> it(mActions);
+        it.toBack();
+        while (it.hasPrevious()) {
+            FilterAction *action = it.previous();
+            if (action->isEmpty()) {
+                if (!informationAboutNotValidAction.isEmpty()) {
+                    informationAboutNotValidAction += QLatin1Char('\n');
+                }
+                informationAboutNotValidAction += action->informationAboutNotValidAction();
+                if (removeAction) {
+                    mActions.removeAll(action);
+                }
             }
         }
     }
