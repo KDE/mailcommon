@@ -44,7 +44,6 @@ class QListWidget;
 class QPushButton;
 class QRadioButton;
 class QPushButton;
-class QDialogButtonBox;
 namespace MailCommon {
 class SearchPatternEdit;
 class FilterActionWidgetLister;
@@ -248,7 +247,7 @@ protected:
     MailCommon::MailFilter *mFilter = nullptr;
     MailCommon::FolderRequester *mFolderRequester = nullptr;
     QPushButton *mRunNow = nullptr;
-    QDialogButtonBox *buttonBox = nullptr;
+    QPushButton *mApplyButton = nullptr;
     bool mDoNotClose = false;
     bool mIgnoreFilterUpdates = false;
 };

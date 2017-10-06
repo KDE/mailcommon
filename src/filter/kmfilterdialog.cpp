@@ -88,7 +88,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     setWindowTitle(i18n("Filter Rules"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
-    buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel | QDialogButtonBox::Help | QDialogButtonBox::Apply, this);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel | QDialogButtonBox::Help | QDialogButtonBox::Apply, this);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
@@ -162,7 +162,8 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
 
     connect(user2Button, &QAbstractButton::clicked,
             this, &KMFilterDialog::slotExportFilters);
-    buttonBox->button(QDialogButtonBox::Apply)->setEnabled(false);
+    mApplyButton = buttonBox->button(QDialogButtonBox::Apply);
+    mApplyButton->setEnabled(false);
 
     QWidget *w = new QWidget(this);
     mainLayout->addWidget(w);
@@ -365,7 +366,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     connect(mPatternEdit, &MailCommon::SearchPatternEdit::maybeNameChanged, mFilterList, &KMFilterListBox::slotUpdateFilterName);
 
     // save filters on 'Apply' or 'OK'
-    connect(buttonBox->button(QDialogButtonBox::Apply), &QAbstractButton::clicked,
+    connect(mApplyButton, &QAbstractButton::clicked,
             this, &KMFilterDialog::slotApply);
 
     // save dialog size on 'OK'
@@ -438,7 +439,7 @@ bool KMFilterDialog::event(QEvent *e)
 
 void KMFilterDialog::slotApply()
 {
-    buttonBox->button(QDialogButtonBox::Apply)->setEnabled(false);
+    mApplyButton->setEnabled(false);
     mFilterList->slotApplied();
 }
 
@@ -463,7 +464,7 @@ void KMFilterDialog::slotRunFilters()
         return;
     }
 
-    if (buttonBox->button(QDialogButtonBox::Apply)->isEnabled()) {
+    if (mApplyButton->isEnabled()) {
         KMessageBox::information(
             this,
             i18nc("@info",
@@ -755,13 +756,13 @@ void KMFilterDialog::slotDialogUpdated()
 {
     qCDebug(MAILCOMMON_LOG) << "Detected a change in data bound to the dialog!";
     if (!mIgnoreFilterUpdates) {
-        buttonBox->button(QDialogButtonBox::Apply)->setEnabled(true);
+        mApplyButton->setEnabled(true);
     }
 }
 
 void KMFilterDialog::slotExportAsSieveScript()
 {
-    if (buttonBox->button(QDialogButtonBox::Apply)->isEnabled()) {
+    if (mApplyButton->isEnabled()) {
         KMessageBox::information(
             this,
             i18nc("@info",
