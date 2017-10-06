@@ -21,7 +21,6 @@ using namespace MailCommon;
 
 InvalidFilterListModel::InvalidFilterListModel(QObject *parent)
     : QAbstractListModel(parent)
-    , mInvalidFilterItems()
 {
 }
 
