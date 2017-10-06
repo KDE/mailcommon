@@ -45,5 +45,5 @@ FilterAction *FilterActionExec::newAction()
 
 QString FilterActionExec::informationAboutNotValidAction() const
 {
-    return i18n("No action defined.");
+    return i18n("Missing command.");
 }
