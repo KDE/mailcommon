@@ -412,22 +412,15 @@ QList<MailFilter *> KMFilterListBox::filtersForSaving(bool closeAfterSaving, boo
 
     // report on invalid filters:
     if (!emptyFilters.empty()) {
-        if (closeAfterSaving) {
-            QPointer<MailCommon::InvalidFilterDialog> dlg = new MailCommon::InvalidFilterDialog(nullptr);
-            dlg->setInvalidFilters(listInvalidFilters);
-            if (!dlg->exec()) {
+        QPointer<MailCommon::InvalidFilterDialog> dlg = new MailCommon::InvalidFilterDialog(nullptr);
+        dlg->setInvalidFilters(listInvalidFilters);
+        if (!dlg->exec()) {
+            if (closeAfterSaving) {
                 Q_EMIT abortClosing();
-                wasCanceled = true;
             }
-            delete dlg;
-        } else {
-            QPointer<MailCommon::InvalidFilterDialog> dlg = new MailCommon::InvalidFilterDialog(nullptr);
-            dlg->setInvalidFilters(listInvalidFilters);
-            if (!dlg->exec()) {
-                wasCanceled = true;
-            }
-            delete dlg;
+            wasCanceled = true;
         }
+        delete dlg;
     }
     return filters;
 }
