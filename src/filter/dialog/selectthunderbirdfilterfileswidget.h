@@ -40,13 +40,12 @@ public:
 Q_SIGNALS:
     void enableOkButton(bool);
 
-private Q_SLOTS:
+private:
     void slotButtonClicked(QAbstractButton *button);
     void slotProfileChanged(int);
 
     void slotUrlChanged(const QString &path);
     void slotItemSelectionChanged();
-private:
     Ui::SelectThunderbirdFilterFilesWidget *ui = nullptr;
 };
 }

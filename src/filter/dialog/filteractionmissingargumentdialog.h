@@ -44,12 +44,10 @@ public:
     Akonadi::Collection selectedCollection() const;
     static Akonadi::Collection::List potentialCorrectFolders(const QString &path, bool &exactPath);
 
-private Q_SLOTS:
+private:
     void slotCurrentItemChanged();
     void slotFolderChanged(const Akonadi::Collection &col);
     void slotDoubleItemClicked(QListWidgetItem *item);
-
-private:
     static void getPotentialFolders(const QAbstractItemModel *model, const QModelIndex &parentIndex, const QString &realPath, Akonadi::Collection::List &list);
     enum collectionEnum {
         IdentifyCollection = Qt::UserRole + 1

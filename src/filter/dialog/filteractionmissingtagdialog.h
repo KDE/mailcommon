@@ -31,10 +31,8 @@ public:
     ~FilterActionMissingTagDialog();
     QString selectedTag() const;
 
-private Q_SLOTS:
-    void slotAddTag();
-
 private:
+    void slotAddTag();
     void readConfig();
     void writeConfig();
 
