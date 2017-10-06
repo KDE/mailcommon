@@ -402,13 +402,11 @@ bool FolderTreeWidget::eventFilter(QObject *o, QEvent *e)
             }
             applyFilter(d->filter);
             return false;
-            break;
         }
         case Qt::Key_Delete:
             d->filter.clear();
             applyFilter(d->filter);
             return false;
-            break;
         default:
         {
             const QString s = ke->text();

@@ -24,7 +24,7 @@ namespace MailCommon {
 class MAILCOMMON_EXPORT FilterImporterGmail : public FilterImporterAbstract
 {
 public:
-    FilterImporterGmail(QFile *file);
+    explicit FilterImporterGmail(QFile *file);
     ~FilterImporterGmail();
     static QString defaultFiltersSettingsPath();
 private:
