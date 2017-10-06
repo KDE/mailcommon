@@ -20,10 +20,10 @@
 
 #include <QListView>
 #include "invalidfilterinfo.h"
-#include "mailcommon_export.h"
+#include "mailcommon_private_export.h"
 
 namespace MailCommon {
-class MAILCOMMON_EXPORT InvalidFilterListView : public QListView
+class MAILCOMMON_TESTS_EXPORT InvalidFilterListView : public QListView
 {
     Q_OBJECT
 public:
