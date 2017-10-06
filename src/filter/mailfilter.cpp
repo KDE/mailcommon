@@ -675,12 +675,12 @@ const QString MailFilter::asString() const
     } else if (bApplyOnInbound && mApplicability == ButImap) {
         result += "This filter applies to all but IMAP accounts.\n";
     } else if (bApplyOnInbound) {
-        QStringList::ConstIterator it2;
+
         result += "This filter applies to the following accounts:";
         if (mAccounts.isEmpty()) {
             result += " None";
         } else {
-            for (it2 = mAccounts.begin(); it2 != mAccounts.end(); ++it2) {
+            for (QStringList::ConstIterator it2 = mAccounts.begin(), it2End = mAccounts.end(); it2 != it2End; ++it2) {
                 if (Akonadi::AgentManager::self()->instance(*it2).isValid()) {
                     result += ' ' + Akonadi::AgentManager::self()->instance(*it2).name();
                 }
