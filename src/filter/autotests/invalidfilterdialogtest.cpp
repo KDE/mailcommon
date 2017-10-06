@@ -41,6 +41,7 @@ void InvalidFilterDialogTest::shouldHaveDefaultValue()
     MailCommon::InvalidFilterInfoWidget *infoWidget = dlg.findChild<MailCommon::InvalidFilterInfoWidget *>(QStringLiteral("invalid_filter_infowidget"));
     QVERIFY(infoWidget);
     QVERIFY(!infoWidget->isVisible());
+    QVERIFY(!dlg.windowTitle().isEmpty());
 }
 
 QTEST_MAIN(InvalidFilterDialogTest)
