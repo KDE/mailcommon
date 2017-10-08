@@ -28,7 +28,6 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
     , mActionCollection(actionCollection)
 {
     mUi = new Ui::SnippetDialog;
-
     QWidget *mainWidget = new QWidget(this);
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->addWidget(mainWidget);
