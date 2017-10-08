@@ -123,5 +123,5 @@ bool SnippetDialog::snippetIsValid() const
             return !mUi->groupBox->currentText().trimmed().isEmpty();
         }
     }
-    return false;
+    return true;
 }
