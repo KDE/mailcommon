@@ -373,12 +373,13 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
         if (column > 1) {
             return false;
         }
+        const QString encodedData = QString::fromUtf8(data->data(QStringLiteral("text/plain")));
         if (!parent.isValid()) {
+            Q_EMIT addNewDndSnippset(encodedData);
             return false;
         }
         SnippetItem *item = static_cast<SnippetItem *>(parent.internalPointer());
 
-        const QString encodedData = QString::fromUtf8(data->data(QStringLiteral("text/plain")));
         if (item->isGroup()) {
             Q_EMIT addNewDndSnippset(encodedData);
         } else {
