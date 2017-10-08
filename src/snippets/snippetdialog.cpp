@@ -30,7 +30,7 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
     , mActionCollection(actionCollection)
 {
     mUi = new Ui::SnippetDialog;
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setDefault(true);
     mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
