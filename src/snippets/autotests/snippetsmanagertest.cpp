@@ -43,6 +43,7 @@ void SnippetsManagerTest::shouldHaveDefaultValue()
     QVERIFY(snippetManager.editSnippetGroupAction());
     QVERIFY(snippetManager.deleteSnippetGroupAction());
     QVERIFY(snippetManager.insertSnippetAction());
+    QVERIFY(snippetManager.selectedName().isEmpty());
 }
 
 QTEST_MAIN(SnippetsManagerTest)
