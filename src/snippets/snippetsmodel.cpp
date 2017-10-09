@@ -56,7 +56,7 @@ private:
     QList<SnippetItem *> mChildItems;
     SnippetItem *mParentItem = nullptr;
 
-    bool mIsGroup;
+    bool mIsGroup = false;
     QString mName;
     QString mText;
     QString mKeySequence;
