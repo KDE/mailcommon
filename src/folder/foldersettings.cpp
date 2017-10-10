@@ -339,7 +339,7 @@ uint FolderSettings::fallBackIdentity() const
         && !KernelIf->identityManager()->identityForUoid(identityId).isNull()) {
         return identityId;
     }
-    return identityId;
+    return mIdentity;
 }
 
 uint FolderSettings::identity() const
