@@ -741,9 +741,19 @@ void KMFilterDialog::importFilters(MailCommon::FilterImporterExporter::FilterTyp
 
 void KMFilterDialog::slotExportFilters()
 {
-    FilterImporterExporter exporter(this);
     bool wasCanceled = false;
     const QList<MailFilter *> filters = mFilterList->filtersForSaving(false, wasCanceled);
+    if (filters.isEmpty()) {
+        KMessageBox::information(
+            this,
+            i18n("Any filter found."));
+        return;
+    }
+    if (wasCanceled) {
+        qDeleteAll(filters);
+        return;
+    }
+    FilterImporterExporter exporter(this);
     exporter.exportFilters(filters);
 }
 
