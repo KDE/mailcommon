@@ -52,20 +52,14 @@ public:
     void setParamWidgetValue(QWidget *paramWidget) const override;
     void applyParamWidgetValue(QWidget *paramWidget) override;
 
-    GpgME::Key key() const
-    {
-        return mKey;
-    }
+    GpgME::Key key() const;
 
-    bool reencrypt() const
-    {
-        return mReencrypt;
-    }
+    bool reencrypt() const;
 
 private:
     std::shared_ptr<const Kleo::KeyCache> mKeyCache;
     GpgME::Key mKey;
-    bool mReencrypt;
+    bool mReencrypt = false;
 };
 } // namespace MailCommon
 

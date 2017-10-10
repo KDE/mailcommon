@@ -308,3 +308,13 @@ void FilterActionEncrypt::applyParamWidgetValue(QWidget *paramWidget)
         mReencrypt = chkBox->isChecked();
     }
 }
+
+GpgME::Key FilterActionEncrypt::key() const
+{
+    return mKey;
+}
+
+bool FilterActionEncrypt::reencrypt() const
+{
+    return mReencrypt;
+}
