@@ -193,13 +193,11 @@ QStringList FilterLog::logEntries() const
 
 void FilterLog::dump()
 {
-#ifndef NDEBUG
     qCDebug(MAILCOMMON_LOG) << "----- starting filter log -----";
     for (const QString &entry : qAsConst(d->mLogEntries)) {
         qCDebug(MAILCOMMON_LOG) << entry;
     }
     qCDebug(MAILCOMMON_LOG) << "------ end of filter log ------";
-#endif
 }
 
 bool FilterLog::saveToFile(const QString &fileName) const
