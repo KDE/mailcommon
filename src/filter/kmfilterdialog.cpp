@@ -784,7 +784,7 @@ void KMFilterDialog::slotExportAsSieveScript()
     KMessageBox::information(this, i18n("We cannot convert all KMail filters to sieve scripts but we can try :)"), i18n("Convert KMail filters to sieve scripts"));
     bool wasCanceled = false;
     const QList<MailFilter *> filters = mFilterList->filtersForSaving(false, wasCanceled);
-    if (!filters.isEmpty()) {
+    if (filters.isEmpty()) {
         return;
     }
     if (!wasCanceled) {
