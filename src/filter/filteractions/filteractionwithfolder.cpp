@@ -71,7 +71,7 @@ bool FilterActionWithFolder::argsFromStringInteractive(const QString &argsStr, c
     argsFromString(argsStr);
     if (!mFolder.isValid()) {
         bool exactPath = false;
-        Akonadi::Collection::List lst = FilterActionMissingCollectionDialog::potentialCorrectFolders(argsStr, exactPath);
+        const Akonadi::Collection::List lst = FilterActionMissingCollectionDialog::potentialCorrectFolders(argsStr, exactPath);
         if (lst.count() == 1 && exactPath) {
             mFolder = lst.at(0);
         } else {
