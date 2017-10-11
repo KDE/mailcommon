@@ -16,7 +16,7 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#include "filteractionmissingargumentdialog.h"
+#include "filteractionmissingfolderdialog.h"
 #include "filter/kmfilteraccountlist.h"
 #include "folder/folderrequester.h"
 #include "kernel/mailkernel.h"

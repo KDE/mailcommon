@@ -22,7 +22,7 @@
 #include "folder/folderrequester.h"
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
-#include "filter/dialog/filteractionmissingargumentdialog.h"
+#include "filter/dialog/filteractionmissingfolderdialog.h"
 
 #include <QPointer>
 

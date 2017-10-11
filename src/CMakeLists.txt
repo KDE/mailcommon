@@ -70,7 +70,7 @@ set(libmailcommon_filter_SRCS
 set(libmailcommon_filter_dialog
     filter/dialog/selectthunderbirdfilterfilesdialog.cpp
     filter/dialog/selectthunderbirdfilterfileswidget.cpp
-    filter/dialog/filteractionmissingargumentdialog.cpp
+    filter/dialog/filteractionmissingfolderdialog.cpp
     filter/dialog/filteractionmissingsoundurldialog.cpp
     filter/dialog/filteractionmissingtagdialog.cpp
     filter/dialog/filteractionmissingaccountdialog.cpp
