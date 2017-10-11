@@ -71,11 +71,11 @@ bool FilterActionWithFolder::argsFromStringInteractive(const QString &argsStr, c
     argsFromString(argsStr);
     if (!mFolder.isValid()) {
         bool exactPath = false;
-        const Akonadi::Collection::List lst = FilterActionMissingCollectionDialog::potentialCorrectFolders(argsStr, exactPath);
+        const Akonadi::Collection::List lst = FilterActionMissingFolderDialog::potentialCorrectFolders(argsStr, exactPath);
         if (lst.count() == 1 && exactPath) {
             mFolder = lst.at(0);
         } else {
-            QPointer<FilterActionMissingCollectionDialog> dlg = new FilterActionMissingCollectionDialog(lst, name, argsStr);
+            QPointer<FilterActionMissingFolderDialog> dlg = new FilterActionMissingFolderDialog(lst, name, argsStr);
             if (dlg->exec()) {
                 mFolder = dlg->selectedCollection();
                 needUpdate = true;

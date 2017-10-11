@@ -36,7 +36,7 @@
 #include <QDialogButtonBox>
 #include <QPushButton>
 
-FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
+FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(
     const Akonadi::Collection::List &list, const QString &filtername, const QString &argStr, QWidget *parent)
     : QDialog(parent)
     , mListwidget(nullptr)
@@ -60,11 +60,11 @@ FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
         for (int i = 0; i < numberOfItems; ++i) {
             Akonadi::Collection col = list.at(i);
             QListWidgetItem *item = new QListWidgetItem(MailCommon::Util::fullCollectionPath(col));
-            item->setData(FilterActionMissingCollectionDialog::IdentifyCollection, col.id());
+            item->setData(FilterActionMissingFolderDialog::IdentifyCollection, col.id());
             mListwidget->addItem(item);
         }
-        connect(mListwidget, &QListWidget::currentItemChanged, this, &FilterActionMissingCollectionDialog::slotCurrentItemChanged);
-        connect(mListwidget, &QListWidget::itemDoubleClicked, this, &FilterActionMissingCollectionDialog::slotDoubleItemClicked);
+        connect(mListwidget, &QListWidget::currentItemChanged, this, &FilterActionMissingFolderDialog::slotCurrentItemChanged);
+        connect(mListwidget, &QListWidget::itemDoubleClicked, this, &FilterActionMissingFolderDialog::slotDoubleItemClicked);
     }
 
     QLabel *label = new QLabel(this);
@@ -80,7 +80,7 @@ FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
     mainLayout->addWidget(label);
     mFolderRequester = new MailCommon::FolderRequester(this);
     mFolderRequester->setObjectName(QStringLiteral("folderrequester"));
-    connect(mFolderRequester, &MailCommon::FolderRequester::folderChanged, this, &FilterActionMissingCollectionDialog::slotFolderChanged);
+    connect(mFolderRequester, &MailCommon::FolderRequester::folderChanged, this, &FilterActionMissingFolderDialog::slotFolderChanged);
     mainLayout->addWidget(mFolderRequester);
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
@@ -89,18 +89,18 @@ FilterActionMissingCollectionDialog::FilterActionMissingCollectionDialog(
     mOkButton->setDefault(true);
     mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     mOkButton->setEnabled(false);
-    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingCollectionDialog::accept);
-    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingCollectionDialog::reject);
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterActionMissingFolderDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterActionMissingFolderDialog::reject);
     mainLayout->addWidget(buttonBox);
     readConfig();
 }
 
-FilterActionMissingCollectionDialog::~FilterActionMissingCollectionDialog()
+FilterActionMissingFolderDialog::~FilterActionMissingFolderDialog()
 {
     writeConfig();
 }
 
-void FilterActionMissingCollectionDialog::readConfig()
+void FilterActionMissingFolderDialog::readConfig()
 {
     KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingCollectionDialog");
 
@@ -110,46 +110,46 @@ void FilterActionMissingCollectionDialog::readConfig()
     }
 }
 
-void FilterActionMissingCollectionDialog::writeConfig()
+void FilterActionMissingFolderDialog::writeConfig()
 {
     KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingCollectionDialog");
     group.writeEntry("Size", size());
 }
 
-void FilterActionMissingCollectionDialog::slotFolderChanged(const Akonadi::Collection &col)
+void FilterActionMissingFolderDialog::slotFolderChanged(const Akonadi::Collection &col)
 {
     mOkButton->setEnabled(col.isValid());
 }
 
-void FilterActionMissingCollectionDialog::slotDoubleItemClicked(QListWidgetItem *item)
+void FilterActionMissingFolderDialog::slotDoubleItemClicked(QListWidgetItem *item)
 {
     if (!item) {
         return;
     }
 
     const Akonadi::Collection::Id id
-        = item->data(FilterActionMissingCollectionDialog::IdentifyCollection).toLongLong();
+        = item->data(FilterActionMissingFolderDialog::IdentifyCollection).toLongLong();
 
     mFolderRequester->setCollection(Akonadi::Collection(id));
     accept();
 }
 
-void FilterActionMissingCollectionDialog::slotCurrentItemChanged()
+void FilterActionMissingFolderDialog::slotCurrentItemChanged()
 {
     QListWidgetItem *currentItem = mListwidget->currentItem();
     if (currentItem) {
         const Akonadi::Collection::Id id
-            = currentItem->data(FilterActionMissingCollectionDialog::IdentifyCollection).toLongLong();
+            = currentItem->data(FilterActionMissingFolderDialog::IdentifyCollection).toLongLong();
         mFolderRequester->setCollection(Akonadi::Collection(id));
     }
 }
 
-Akonadi::Collection FilterActionMissingCollectionDialog::selectedCollection() const
+Akonadi::Collection FilterActionMissingFolderDialog::selectedCollection() const
 {
     return mFolderRequester->collection();
 }
 
-void FilterActionMissingCollectionDialog::getPotentialFolders(const QAbstractItemModel *model, const QModelIndex &parentIndex, const QString &lastElement, Akonadi::Collection::List &list)
+void FilterActionMissingFolderDialog::getPotentialFolders(const QAbstractItemModel *model, const QModelIndex &parentIndex, const QString &lastElement, Akonadi::Collection::List &list)
 {
     const int rowCount = model->rowCount(parentIndex);
     for (int row = 0; row < rowCount; ++row) {
@@ -164,7 +164,7 @@ void FilterActionMissingCollectionDialog::getPotentialFolders(const QAbstractIte
     }
 }
 
-Akonadi::Collection::List FilterActionMissingCollectionDialog::potentialCorrectFolders(
+Akonadi::Collection::List FilterActionMissingFolderDialog::potentialCorrectFolders(
     const QString &path, bool &exactPath)
 {
     Akonadi::Collection::List lst;
@@ -182,7 +182,7 @@ Akonadi::Collection::List FilterActionMissingCollectionDialog::potentialCorrectF
             lastElement = realPath.right(realPath.length() - lastSlash - 1);
         }
 
-        FilterActionMissingCollectionDialog::getPotentialFolders(
+        FilterActionMissingFolderDialog::getPotentialFolders(
             KernelIf->collectionModel(), QModelIndex(), lastElement, lst);
 
         const int numberOfItems(lst.count());

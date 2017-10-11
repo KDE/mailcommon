@@ -34,12 +34,12 @@ namespace MailCommon {
 class FolderRequester;
 }
 
-class MAILCOMMON_TESTS_EXPORT FilterActionMissingCollectionDialog : public QDialog
+class MAILCOMMON_TESTS_EXPORT FilterActionMissingFolderDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingCollectionDialog(const Akonadi::Collection::List &list, const QString &filtername = QString(), const QString &argStr = QString(), QWidget *parent = nullptr);
-    ~FilterActionMissingCollectionDialog();
+    explicit FilterActionMissingFolderDialog(const Akonadi::Collection::List &list, const QString &filtername = QString(), const QString &argStr = QString(), QWidget *parent = nullptr);
+    ~FilterActionMissingFolderDialog();
 
     Akonadi::Collection selectedCollection() const;
     static Akonadi::Collection::List potentialCorrectFolders(const QString &path, bool &exactPath);

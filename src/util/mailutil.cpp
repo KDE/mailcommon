@@ -211,11 +211,11 @@ Akonadi::Collection::Id MailCommon::Util::convertFolderPathToCollectionId(const 
 {
     Akonadi::Collection::Id newFolderId = -1;
     bool exactPath = false;
-    Akonadi::Collection::List lst = FilterActionMissingCollectionDialog::potentialCorrectFolders(folder, exactPath);
+    Akonadi::Collection::List lst = FilterActionMissingFolderDialog::potentialCorrectFolders(folder, exactPath);
     if (lst.count() == 1 && exactPath) {
         newFolderId = lst.at(0).id();
     } else {
-        QPointer<FilterActionMissingCollectionDialog> dlg = new FilterActionMissingCollectionDialog(lst, QString(), folder);
+        QPointer<FilterActionMissingFolderDialog> dlg = new FilterActionMissingFolderDialog(lst, QString(), folder);
         if (dlg->exec()) {
             newFolderId = dlg->selectedCollection().id();
         }
