@@ -506,6 +506,7 @@ void MailFilter::generateSieveScript(QStringList &requires, QString &code)
     QList<FilterAction *>::const_iterator it;
     QList<FilterAction *>::const_iterator end(mActions.constEnd());
 
+    const QString indentationStr{QStringLiteral("    ")};
     code += QLatin1String(")\n{\n");
     bool firstAction = true;
     for (it = mActions.constBegin(); it != end; ++it) {
@@ -515,13 +516,16 @@ void MailFilter::generateSieveScript(QStringList &requires, QString &code)
         } else {
             code += QLatin1Char('\n');
         }
-        code += QLatin1String("    ") + (*it)->sieveCode();
+        code += indentationStr + (*it)->sieveCode();
         const QStringList lstRequires = (*it)->sieveRequires();
         for (const QString &str : lstRequires) {
             if (!requires.contains(str)) {
                 requires.append(str);
             }
         }
+    }
+    if (bStopProcessingHere) {
+        code += QLatin1Char('\n') + indentationStr + QStringLiteral("stop;");
     }
     code += QLatin1String("\n}\n");
 }
