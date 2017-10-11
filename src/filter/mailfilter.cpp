@@ -41,6 +41,7 @@ using MailCommon::FilterLog;
 #include <kconfig.h>
 #include <kconfiggroup.h>
 #include <krandom.h>
+#include <QPointer>
 
 #include <algorithm>
 #include <boost/bind.hpp>
@@ -488,7 +489,7 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
     mAccounts = config.readEntry("accounts-set", QStringList());
     if (!mAccounts.isEmpty() && interactive) {
         if (!MailCommon::FilterActionMissingAccountDialog::allAccountExist(mAccounts)) {
-            MailCommon::FilterActionMissingAccountDialog *dlg = new MailCommon::FilterActionMissingAccountDialog(mAccounts, name());
+            QPointer<MailCommon::FilterActionMissingAccountDialog> dlg = new MailCommon::FilterActionMissingAccountDialog(mAccounts, name());
             if (dlg->exec()) {
                 mAccounts = dlg->selectedAccount();
                 needUpdate = true;
