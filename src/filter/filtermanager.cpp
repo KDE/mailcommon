@@ -250,7 +250,7 @@ void FilterManager::filter(const Akonadi::Collection::List &collections, FilterS
 {
     QList<qint64> colIds;
     colIds.reserve(collections.size());
-    for (const auto col : collections) {
+    for (const auto &col : collections) {
         colIds << col.id();
     }
 
@@ -266,7 +266,7 @@ void FilterManager::filter(const Akonadi::Collection::List &collections, const Q
 {
     QList<qint64> colIds;
     colIds.reserve(collections.size());
-    for (const auto col : collections) {
+    for (const auto &col : collections) {
         colIds << col.id();
     }
 

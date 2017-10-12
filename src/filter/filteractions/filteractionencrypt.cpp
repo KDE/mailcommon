@@ -151,10 +151,10 @@ FilterAction::ReturnCode FilterActionEncrypt::process(ItemContext &context, bool
                 if (mKey.protocol() == GpgME::OpenPGP) {
                     std::vector<std::string> ids;
                     ids.reserve(encryptionKeys.size());
-                    for (const auto key : encryptionKeys) {
+                    for (const auto &key : encryptionKeys) {
                         ids.push_back(key.toStdString());
                     }
-                    for (const auto key : mKeyCache->findByKeyIDOrFingerprint(ids)) {
+                    for (const auto &key : mKeyCache->findByKeyIDOrFingerprint(ids)) {
                         if (qstrcmp(key.primaryFingerprint(), mKey.primaryFingerprint()) == 0) {
                             // This email is already encrypted with the target key,
                             // so there's no need to re-encrypt it
@@ -164,7 +164,7 @@ FilterAction::ReturnCode FilterActionEncrypt::process(ItemContext &context, bool
                     }
                 } else if (mKey.protocol() == GpgME::CMS) {
                     // We are only able to get serial
-                    for (const auto key : mKeyCache->secretKeys()) {
+                    for (const auto &key : mKeyCache->secretKeys()) {
                         if (qstrcmp(key.issuerSerial(), mKey.issuerSerial()) == 0) {
                             // This email is already encrypted with the target key,
                             // so there's no need to re-encrypt it

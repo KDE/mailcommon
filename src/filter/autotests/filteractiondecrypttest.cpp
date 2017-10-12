@@ -38,7 +38,7 @@ void FilterActionDecryptTest::shouldDecrypt_data()
 
     QDir testDir(QString::fromUtf8(TEST_PATH) + QStringLiteral("/gpgdata"));
     const auto tests = testDir.entryInfoList({ QStringLiteral("*.msg") }, QDir::Files, QDir::Name);
-    for (const auto test : tests) {
+    for (const auto &test : tests) {
         QFile plain(test.absoluteFilePath());
         QVERIFY(plain.open(QIODevice::ReadOnly));
         const auto plainData = plain.readAll();

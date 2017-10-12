@@ -103,14 +103,6 @@ const char _wt_filterlist_rename[]
                 "naming back, click this button and select <em>Clear</em> followed "
                 "by <em>OK</em> in the appearing dialog.</p></qt>");
 
-const char _wt_filterdlg_showLater[]
-    = I18N_NOOP("<qt><p>Check this button to force the confirmation dialog to be "
-                "displayed.</p><p>This is useful if you have defined a ruleset that tags "
-                "messages to be downloaded later. Without the possibility to force "
-                "the dialog popup, these messages could never be downloaded if no "
-                "other large messages were waiting on the server, or if you wanted to "
-                "change the ruleset to tag the messages differently.</p></qt>");
-
 //=============================================================================
 //
 // class KMFilterListBox (the filter list manipulator)
@@ -428,7 +420,7 @@ QList<MailFilter *> KMFilterListBox::filtersForSaving(bool closeAfterSaving, boo
 void KMFilterListBox::slotSelectionChanged()
 {
     if (mListWidget->selectedItems().count() > 1) {
-        resetWidgets();
+        Q_EMIT resetWidgets();
     }
     enableControls();
 }

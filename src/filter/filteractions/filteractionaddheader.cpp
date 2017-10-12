@@ -209,7 +209,7 @@ QString FilterActionAddHeader::sieveCode() const
     if (isEmpty()) {
         return QStringLiteral("# invalid filter. Need to fix it by hand");
     } else {
-        return QStringLiteral("addheader \"%1\" \"%2\";").arg(mParameter).arg(mValue);
+        return QStringLiteral("addheader \"%1\" \"%2\";").arg(mParameter, mValue);
     }
 }
 

@@ -50,7 +50,6 @@ SelectThunderbirdFilterFilesWidget::SelectThunderbirdFilterFilesWidget(const QSt
     slotProfileChanged(0);
     connect(ui->fileUrl, &KUrlRequester::textChanged, this, &SelectThunderbirdFilterFilesWidget::slotUrlChanged);
     connect(ui->listFiles, &QListWidget::itemSelectionChanged, this, &SelectThunderbirdFilterFilesWidget::slotItemSelectionChanged);
-    Q_EMIT enableOkButton(false);
 }
 
 SelectThunderbirdFilterFilesWidget::~SelectThunderbirdFilterFilesWidget()
@@ -115,6 +114,7 @@ QStringList SelectThunderbirdFilterFilesWidget::selectedFiles() const
         listFiles << ui->fileUrl->url().path();
     } else {
         const QList<QListWidgetItem *> list = ui->listFiles->selectedItems();
+        listFiles.reserve(list.count());
         for (QListWidgetItem *item : list) {
             listFiles << item->text();
         }

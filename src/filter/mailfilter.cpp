@@ -652,49 +652,49 @@ const QString MailFilter::asString() const
     QList<FilterAction *>::const_iterator it(mActions.constBegin());
     QList<FilterAction *>::const_iterator end(mActions.constEnd());
     for (; it != end; ++it) {
-        result += "    action: ";
+        result += QStringLiteral("    action: ");
         result += (*it)->label();
-        result += ' ';
+        result += QLatin1Char(' ');
         result += (*it)->argsAsString();
-        result += '\n';
+        result += QLatin1Char('\n');
     }
-    result += "This filter belongs to the following sets:";
+    result += QStringLiteral("This filter belongs to the following sets:");
     if (bApplyOnInbound) {
-        result += " Inbound";
+        result += QStringLiteral(" Inbound");
     }
     if (bApplyBeforeOutbound) {
-        result += " before-Outbound";
+        result += QStringLiteral(" before-Outbound");
     }
     if (bApplyOnOutbound) {
-        result += " Outbound";
+        result += QStringLiteral(" Outbound");
     }
     if (bApplyOnExplicit) {
-        result += " Explicit";
+        result += QStringLiteral(" Explicit");
     }
     if (bApplyOnAllFolders) {
-        result += " All Folders";
+        result += QStringLiteral(" All Folders");
     }
-    result += '\n';
+    result += QLatin1Char('\n');
     if (bApplyOnInbound && mApplicability == All) {
-        result += "This filter applies to all accounts.\n";
+        result += QStringLiteral("This filter applies to all accounts.\n");
     } else if (bApplyOnInbound && mApplicability == ButImap) {
-        result += "This filter applies to all but IMAP accounts.\n";
+        result += QStringLiteral("This filter applies to all but IMAP accounts.\n");
     } else if (bApplyOnInbound) {
 
-        result += "This filter applies to the following accounts:";
+        result += QStringLiteral("This filter applies to the following accounts:");
         if (mAccounts.isEmpty()) {
-            result += " None";
+            result += QStringLiteral(" None");
         } else {
             for (QStringList::ConstIterator it2 = mAccounts.begin(), it2End = mAccounts.end(); it2 != it2End; ++it2) {
                 if (Akonadi::AgentManager::self()->instance(*it2).isValid()) {
-                    result += ' ' + Akonadi::AgentManager::self()->instance(*it2).name();
+                    result += QLatin1Char(' ') + Akonadi::AgentManager::self()->instance(*it2).name();
                 }
             }
         }
-        result += '\n';
+        result += QLatin1Char('\n');
     }
     if (bStopProcessingHere) {
-        result += "If it matches, processing stops at this filter.\n";
+        result += QStringLiteral("If it matches, processing stops at this filter.\n");
     }
 
     return result;

@@ -56,7 +56,7 @@
 using namespace MailCommon;
 
 QList<MailFilter *> FilterImporterExporter::readFiltersFromConfig(
-    const KSharedConfig::Ptr config, QStringList &emptyFilters)
+    const KSharedConfig::Ptr &config, QStringList &emptyFilters)
 {
     const KConfigGroup group = config->group("General");
 

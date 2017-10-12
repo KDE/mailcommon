@@ -100,8 +100,7 @@ public:
      * Reads a list of filters from the given @p config file.
      * Return list of empty filter
      */
-    static QList<MailFilter *> readFiltersFromConfig(
-        const KSharedConfig::Ptr config, QStringList &emptyFilter);
+    static QList<MailFilter *> readFiltersFromConfig(const KSharedConfig::Ptr &config, QStringList &emptyFilter);
 
 private:
     //@cond PRIVATE
