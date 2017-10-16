@@ -76,7 +76,7 @@ static struct _statusNames statusNames[] = {
 static const int numStatusNames
     = sizeof statusNames / sizeof(struct _statusNames);
 
-QString englishNameForStatus(const Akonadi::MessageStatus &status)
+QString englishNameForStatus(Akonadi::MessageStatus status)
 {
     for (int i = 0; i < numStatusNames; ++i) {
         if (statusNames[i].status == status) {
