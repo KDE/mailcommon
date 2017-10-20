@@ -24,7 +24,6 @@
 #include "snippetsmodel.h"
 #include "snippetvariabledialog.h"
 #include <KSharedConfig>
-#include <QAction>
 #include <KActionCollection>
 
 #include <KLocalizedString>

@@ -49,8 +49,6 @@
 #include <KMessageBox>
 #include <QPushButton>
 #include <QFileDialog>
-
-#include <QFileDialog>
 #include <QRegularExpression>
 
 using namespace MailCommon;
@@ -242,7 +240,7 @@ QList<MailFilter *> FilterImporterExporter::importFilters(
                 defaultPath = MailCommon::FilterImporterThunderbird::defaultSeaMonkeyFiltersSettingsPath();
             }
 
-            SelectThunderbirdFilterFilesDialog *selectThunderBirdFileDialog = new SelectThunderbirdFilterFilesDialog(defaultPath, d->mParent);
+            QPointer<SelectThunderbirdFilterFilesDialog> selectThunderBirdFileDialog = new SelectThunderbirdFilterFilesDialog(defaultPath, d->mParent);
             selectThunderBirdFileDialog->setStartDir(QUrl::fromLocalFile(defaultPath));
             if (selectThunderBirdFileDialog->exec()) {
                 const QStringList lstFiles = selectThunderBirdFileDialog->selectedFiles();
