@@ -172,6 +172,7 @@ void initDoubleNumInput(QDoubleSpinBox *numInput, const QByteArray &field)
     if (field == "<size>") {
         numInput->setMinimum(0);
         numInput->setSingleStep(1);
+        numInput->setMaximum(10000000);
         numInput->setSuffix(i18nc("spinbox suffix: unit for kilobyte", " kB"));
     }
 }
