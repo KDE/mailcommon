@@ -155,6 +155,7 @@ void FolderRequester::slotCollectionsReceived(KJob *job)
     if (job->error()) {
         d->mCollection = Akonadi::Collection();
         d->mEdit->setText(i18n("Please select a folder"));
+        Q_EMIT invalidFolder();
         return;
     }
 
@@ -172,6 +173,7 @@ void FolderRequester::slotCollectionsReceived(KJob *job)
         // the requested collection doesn't exists anymore
         d->mCollection = Akonadi::Collection();
         d->mEdit->setText(i18n("Please select a folder"));
+        Q_EMIT invalidFolder();
     }
 }
 

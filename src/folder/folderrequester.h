@@ -111,6 +111,7 @@ Q_SIGNALS:
      * Emitted when the folder changed.
      */
     void folderChanged(const Akonadi::Collection &);
+    void invalidFolder();
 
 protected:
     /** Capture space key to open the dialog */
