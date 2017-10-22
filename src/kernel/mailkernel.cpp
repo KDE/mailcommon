@@ -375,7 +375,7 @@ bool Kernel::folderIsInbox(const Akonadi::Collection &collection)
         return true;
     }
     //Fix order. Remoteid is not "inbox" when translated
-    if (collection == Akonadi::SpecialMailCollections::self()->defaultCollection(Akonadi::SpecialMailCollections::Inbox)) {
+    if (Akonadi::SpecialMailCollections::self()->specialCollectionType(collection) == Akonadi::SpecialMailCollections::Inbox) {
         return true;
     }
 
