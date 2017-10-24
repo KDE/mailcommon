@@ -102,27 +102,18 @@ MDNAdviceDialog::MDNAdviceDialog(const QString &text, bool canDeny, QWidget *par
     , m_result(MessageComposer::MDNIgnore)
 {
     setWindowTitle(i18n("Message Disposition Notification Request"));
-    QDialogButtonBox *buttonBox = nullptr;
     QPushButton *user1Button = nullptr;
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes, this);
+    user1Button = new QPushButton;
+    buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
+    connect(user1Button, &QPushButton::clicked, this, &MDNAdviceDialog::slotUser1Clicked);
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &MDNAdviceDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &MDNAdviceDialog::reject);
     if (canDeny) {
-        buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes);
-        user1Button = new QPushButton;
-        buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
-        connect(user1Button, &QPushButton::clicked, this, &MDNAdviceDialog::slotUser1Clicked);
         QPushButton *user2Button = new QPushButton;
         connect(user2Button, &QPushButton::clicked, this, &MDNAdviceDialog::slotUser2Clicked);
-
         buttonBox->addButton(user2Button, QDialogButtonBox::ActionRole);
-        connect(buttonBox, &QDialogButtonBox::accepted, this, &MDNAdviceDialog::accept);
-        connect(buttonBox, &QDialogButtonBox::rejected, this, &MDNAdviceDialog::reject);
         user2Button->setText(i18n("Send \"&denied\""));
-    } else {
-        buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes);
-        user1Button = new QPushButton;
-        buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
-        connect(user1Button, &QPushButton::clicked, this, &MDNAdviceDialog::slotUser1Clicked);
-        connect(buttonBox, &QDialogButtonBox::accepted, this, &MDNAdviceDialog::accept);
-        connect(buttonBox, &QDialogButtonBox::rejected, this, &MDNAdviceDialog::reject);
     }
     buttonBox->button(QDialogButtonBox::Yes)->setText(i18n("&Ignore"));
     connect(buttonBox->button(QDialogButtonBox::Yes), &QPushButton::clicked, this, &MDNAdviceDialog::slotYesClicked);
