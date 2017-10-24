@@ -398,7 +398,8 @@ void SnippetsManager::Private::updateActionCollection(const QString &oldName, co
         const QString normalizedName = QString(actionName).replace(QLatin1Char(' '), QLatin1Char('_'));
 
         QAction *action
-            = mActionCollection->addAction(normalizedName, q, SLOT(insertActionSnippet()));
+            = mActionCollection->addAction(normalizedName, q);
+        connect(action, &QAction::triggered, q, [this]() {insertActionSnippet();});
         action->setProperty("snippetText", text);
         action->setText(actionName);
         mActionCollection->setDefaultShortcut(action, keySequence);
