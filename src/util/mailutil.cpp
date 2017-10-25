@@ -106,7 +106,7 @@ bool MailCommon::Util::isLocalCollection(const QString &resource)
     return type.customProperties().value(QStringLiteral("HasLocalStorage"), false).toBool();
 }
 
-QString MailCommon::Util::fullCollectionPath(const Akonadi::Collection &collection)
+QString MailCommon::Util::fullCollectionPath(const Akonadi::Collection &collection, bool addAccountName)
 {
     QString fullPath;
 
@@ -119,8 +119,18 @@ QString MailCommon::Util::fullCollectionPath(const Akonadi::Collection &collecti
     fullPath = idx.data().toString();
     idx = idx.parent();
     while (idx != QModelIndex()) {
-        fullPath = idx.data().toString() + QLatin1Char('/') + fullPath;
+        const QString tmp = idx.data().toString() + QLatin1Char('/') + fullPath;
         idx = idx.parent();
+        if (idx != QModelIndex()) {
+            fullPath = tmp;
+        } else {
+            if (!addAccountName) {
+                break;
+            } else {
+                fullPath = tmp;
+                break;
+            }
+        }
     }
     return fullPath;
 }
