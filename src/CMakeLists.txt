@@ -65,6 +65,7 @@ set(libmailcommon_filter_SRCS
   filter/kmfilterdialog.cpp
   filter/mailfilter.cpp
   filter/mdnadvicedialog.cpp
+  filter/filterimporterpathcache.cpp
 )
 
 set(libmailcommon_filter_dialog
