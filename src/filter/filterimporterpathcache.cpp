@@ -35,8 +35,17 @@ FilterImporterPathCache *FilterImporterPathCache::self()
     return &s_self;
 }
 
+int FilterImporterPathCache::count() const
+{
+    return mFilterCache.count();
+}
+
 void FilterImporterPathCache::insert(const QString &original, const QString &newValue)
 {
+    if (original.isEmpty() || newValue.isEmpty()) {
+        return;
+    }
+
     mFilterCache.insert(original, newValue);
 }
 

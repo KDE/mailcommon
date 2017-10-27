@@ -269,3 +269,8 @@ add_mailcommon_filter_test(filteractionmissingidentitydialogtest
     ../dialog/filteractionmissingidentitydialog.cpp
     ../../../autotests/dummykernel.cpp
     )
+
+add_mailcommon_filter_test(filterimporterpathcachetest
+    filterimporterpathcachetest.cpp
+    ../filterimporterpathcache.cpp
+    )

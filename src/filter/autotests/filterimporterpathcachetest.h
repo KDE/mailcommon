@@ -26,10 +26,11 @@ class FilterImporterPathCacheTest : public QObject
 public:
     explicit FilterImporterPathCacheTest(QObject *parent = nullptr);
     ~FilterImporterPathCacheTest();
-
-signals:
-
-public slots:
+private Q_SLOTS:
+    void shouldReturnEmptyStringWhenListIsEmpty();
+    void shouldNotStoreEmptyValue();
+    void shouldNotDuplicateEntries();
+    void shouldReturnValues();
 };
 
 #endif // FILTERIMPORTERPATHCACHETEST_H

@@ -16,6 +16,7 @@
 */
 
 #include "filterimporterpathcachetest.h"
+#include "../filterimporterpathcache.h"
 #include <QTest>
 
 QTEST_MAIN(FilterImporterPathCacheTest)
@@ -29,4 +30,64 @@ FilterImporterPathCacheTest::FilterImporterPathCacheTest(QObject *parent)
 FilterImporterPathCacheTest::~FilterImporterPathCacheTest()
 {
 
+}
+
+void FilterImporterPathCacheTest::shouldReturnEmptyStringWhenListIsEmpty()
+{
+    MailCommon::FilterImporterPathCache cache;
+    QCOMPARE(cache.count(), 0);
+    QVERIFY(cache.convertedFilterPath(QStringLiteral("dd")).isEmpty());
+    QCOMPARE(cache.count(), 0);
+}
+
+void FilterImporterPathCacheTest::shouldNotStoreEmptyValue()
+{
+    MailCommon::FilterImporterPathCache cache;
+    cache.insert(QString(), QStringLiteral("foo"));
+    QCOMPARE(cache.count(), 0);
+
+    cache.insert(QStringLiteral("foo"), QString());
+    QCOMPARE(cache.count(), 0);
+
+    cache.insert(QStringLiteral("foo1"), QStringLiteral("foo"));
+    QCOMPARE(cache.count(), 1);
+}
+
+void FilterImporterPathCacheTest::shouldNotDuplicateEntries()
+{
+    MailCommon::FilterImporterPathCache cache;
+    cache.insert(QStringLiteral("foo1"), QStringLiteral("foo"));
+    QCOMPARE(cache.count(), 1);
+
+    cache.insert(QStringLiteral("foo1"), QStringLiteral("foo"));
+    QCOMPARE(cache.count(), 1);
+
+    cache.insert(QStringLiteral("foo1"), QStringLiteral("foo"));
+    QCOMPARE(cache.count(), 1);
+
+
+    cache.insert(QStringLiteral("foo1"), QStringLiteral("foo2"));
+    QCOMPARE(cache.count(), 1);
+
+    cache.insert(QStringLiteral("foo1"), QStringLiteral("foo3"));
+    QCOMPARE(cache.count(), 1);
+
+    //Add new one
+    cache.insert(QStringLiteral("foo2"), QStringLiteral("foo3"));
+    QCOMPARE(cache.count(), 2);
+
+}
+
+void FilterImporterPathCacheTest::shouldReturnValues()
+{
+    MailCommon::FilterImporterPathCache cache;
+    QString key = QStringLiteral("foo1");
+    QString cached = QStringLiteral("foo");
+    cache.insert(key, cached);
+    QCOMPARE(cache.convertedFilterPath(key), cached);
+
+    //Use value in same key
+    cached = QStringLiteral("foo5");
+    cache.insert(key, cached);
+    QCOMPARE(cache.convertedFilterPath(key), cached);
 }

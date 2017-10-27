@@ -34,6 +34,7 @@ public:
     void insert(const QString &original, const QString &newValue);
     QString convertedFilterPath(const QString &original);
     void clear();
+    int count() const;
 private:
     QHash<QString, QString> mFilterCache;
 };
