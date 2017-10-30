@@ -667,9 +667,9 @@ void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeT
         qCDebug(MAILCOMMON_LOG) << "No first SearchRuleWidget, though slotClear() has been called!";
     }
 
-    connect(mRuleLister, SIGNAL(widgetAdded(QWidget*)),
-            this, SLOT(slotRuleAdded(QWidget*)));
-    connect(mRuleLister, SIGNAL(widgetRemoved()), this, SIGNAL(patternChanged()));
+    connect(mRuleLister, QOverload<QWidget*>::of(&SearchRuleWidgetLister::widgetAdded),
+            this, &SearchPatternEdit::slotRuleAdded);
+    connect(mRuleLister, QOverload<>::of(&SearchRuleWidgetLister::widgetRemoved), this, &SearchPatternEdit::patternChanged);
     connect(mRuleLister, &KPIM::KWidgetLister::clearWidgets, this, &SearchPatternEdit::patternChanged);
 
     layout->addWidget(mRuleLister);
