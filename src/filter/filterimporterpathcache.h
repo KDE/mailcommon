@@ -21,10 +21,10 @@
 #include <QObject>
 #include <QHash>
 #include <AkonadiCore/Collection>
-#include "mailcommon_private_export.h"
+#include "mailcommon_export.h"
 namespace MailCommon
 {
-class MAILCOMMON_TESTS_EXPORT FilterImporterPathCache : public QObject
+class MAILCOMMON_EXPORT FilterImporterPathCache : public QObject
 {
     Q_OBJECT
 public:    

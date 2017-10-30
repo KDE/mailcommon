@@ -338,6 +338,7 @@ ecm_generate_headers(MailCommon_Camelcasefilter_HEADERS
   FilterImporterExporter
   FilterManager
   KMFilterDialog
+  FilterImporterPathCache
   ItemContext
   REQUIRED_HEADERS MailCommon_filter_HEADERS
   PREFIX MailCommon
