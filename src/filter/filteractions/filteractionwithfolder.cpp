@@ -23,6 +23,7 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 #include "filter/dialog/filteractionmissingfolderdialog.h"
+#include "filter/filterimporterpathcache.h"
 
 #include <QPointer>
 
@@ -75,12 +76,19 @@ bool FilterActionWithFolder::argsFromStringInteractive(const QString &argsStr, c
         if (lst.count() == 1 && exactPath) {
             mFolder = lst.at(0);
         } else {
-            QPointer<FilterActionMissingFolderDialog> dlg = new FilterActionMissingFolderDialog(lst, name, argsStr);
-            if (dlg->exec()) {
-                mFolder = dlg->selectedCollection();
+            const Akonadi::Collection newCol = MailCommon::FilterImporterPathCache::self()->convertedFilterPath(argsStr);
+            if (!newCol.isValid()) {
+                QPointer<FilterActionMissingFolderDialog> dlg = new FilterActionMissingFolderDialog(lst, name, argsStr);
+                if (dlg->exec()) {
+                    mFolder = dlg->selectedCollection();
+                    needUpdate = true;
+                    MailCommon::FilterImporterPathCache::self()->insert(argsStr, mFolder);
+                }
+                delete dlg;
+            } else {
+                mFolder = newCol;
                 needUpdate = true;
             }
-            delete dlg;
         }
     }
     return needUpdate;
