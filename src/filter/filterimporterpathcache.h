@@ -20,6 +20,7 @@
 
 #include <QObject>
 #include <QHash>
+#include <AkonadiCore/Collection>
 namespace MailCommon
 {
 class FilterImporterPathCache : public QObject
@@ -31,12 +32,12 @@ public:
     explicit FilterImporterPathCache(QObject *parent = nullptr);
     ~FilterImporterPathCache();
 
-    void insert(const QString &original, const QString &newValue);
-    QString convertedFilterPath(const QString &original);
+    void insert(const QString &original, const Akonadi::Collection &newValue);
+    Akonadi::Collection convertedFilterPath(const QString &original);
     void clear();
     int count() const;
 private:
-    QHash<QString, QString> mFilterCache;
+    QHash<QString, Akonadi::Collection> mFilterCache;
 };
 }
 

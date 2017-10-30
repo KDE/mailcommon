@@ -24,6 +24,7 @@
 #include "mailcommon_debug.h"
 #include "kmfilterlistbox.h"
 
+#include "filterimporterpathcache.h"
 #include "filteractions/filteractiondict.h"
 #include "filteractions/filteractionwidget.h"
 #include "filterimporterexporter.h"
@@ -714,6 +715,7 @@ void KMFilterDialog::slotImportFilter(QAction *act)
 
 void KMFilterDialog::importFilters(MailCommon::FilterImporterExporter::FilterType type)
 {
+    MailCommon::FilterImporterPathCache::self()->clear();
     FilterImporterExporter importer(this);
     bool canceled = false;
     QList<MailFilter *> filters = importer.importFilters(canceled, type);

@@ -40,16 +40,16 @@ int FilterImporterPathCache::count() const
     return mFilterCache.count();
 }
 
-void FilterImporterPathCache::insert(const QString &original, const QString &newValue)
+void FilterImporterPathCache::insert(const QString &original, const Akonadi::Collection &newValue)
 {
-    if (original.isEmpty() || newValue.isEmpty()) {
+    if (original.isEmpty() || !newValue.isValid()) {
         return;
     }
 
     mFilterCache.insert(original, newValue);
 }
 
-QString FilterImporterPathCache::convertedFilterPath(const QString &original)
+Akonadi::Collection FilterImporterPathCache::convertedFilterPath(const QString &original)
 {
     return mFilterCache.value(original);
 }
