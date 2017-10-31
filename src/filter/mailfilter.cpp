@@ -507,7 +507,9 @@ void MailFilter::generateSieveScript(QStringList &requires, QString &code)
     QList<FilterAction *>::const_iterator it;
     QList<FilterAction *>::const_iterator end(mActions.constEnd());
 
-    const QString indentationStr{QStringLiteral("    ")};
+    const QString indentationStr{
+        QStringLiteral("    ")
+    };
     code += QLatin1String(")\n{\n");
     bool firstAction = true;
     for (it = mActions.constBegin(); it != end; ++it) {
@@ -680,7 +682,6 @@ const QString MailFilter::asString() const
     } else if (bApplyOnInbound && mApplicability == ButImap) {
         result += QStringLiteral("This filter applies to all but IMAP accounts.\n");
     } else if (bApplyOnInbound) {
-
         result += QStringLiteral("This filter applies to the following accounts:");
         if (mAccounts.isEmpty()) {
             result += QStringLiteral(" None");

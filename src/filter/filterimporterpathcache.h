@@ -22,12 +22,11 @@
 #include <QHash>
 #include <AkonadiCore/Collection>
 #include "mailcommon_export.h"
-namespace MailCommon
-{
+namespace MailCommon {
 class MAILCOMMON_EXPORT FilterImporterPathCache : public QObject
 {
     Q_OBJECT
-public:    
+public:
     static FilterImporterPathCache *self();
 
     explicit FilterImporterPathCache(QObject *parent = nullptr);

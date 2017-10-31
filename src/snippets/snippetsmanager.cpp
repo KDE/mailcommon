@@ -399,7 +399,9 @@ void SnippetsManager::Private::updateActionCollection(const QString &oldName, co
 
         QAction *action
             = mActionCollection->addAction(normalizedName, q);
-        connect(action, &QAction::triggered, q, [this]() {insertActionSnippet();});
+        connect(action, &QAction::triggered, q, [this]() {
+            insertActionSnippet();
+        });
         action->setProperty("snippetText", text);
         action->setText(actionName);
         mActionCollection->setDefaultShortcut(action, keySequence);

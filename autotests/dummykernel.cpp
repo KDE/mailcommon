@@ -109,4 +109,3 @@ void DummyKernel::setLastSelectedFolder(Akonadi::Collection::Id col)
 {
     Q_UNUSED(col);
 }
-

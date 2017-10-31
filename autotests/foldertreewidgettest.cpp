@@ -68,7 +68,9 @@ private Q_SLOTS:
         CommonKernel->registerSettingsIf(kernel);
 
         mFolderTreeWidget = new MailCommon::FolderTreeWidget(nullptr);
-        const QStringList resourceOrder{"akonadi_knut_resource_2", "akonadi_knut_resource_0"}; // _1 isn't specified so it goes at the end
+        const QStringList resourceOrder{
+            "akonadi_knut_resource_2", "akonadi_knut_resource_0"
+        };                                                                                     // _1 isn't specified so it goes at the end
         mFolderTreeWidget->entityOrderProxy()->setTopLevelOrder(resourceOrder);
 
         mCollectionModel = KernelIf->collectionModel();
@@ -77,7 +79,9 @@ private Q_SLOTS:
         // One knut resource is already defined in the unittestenv, so that it's below "Search" in the ETM.
         QTRY_COMPARE(mCollectionModel->rowCount(), 2);
         QCOMPARE(mTopModel->rowCount(), 1); // Search doesn't appear yet
-        mFolderNames = QStringList{"res1"};
+        mFolderNames = QStringList{
+            "res1"
+        };
         QCOMPARE(collectNames(mTopModel), mFolderNames);
     }
 
@@ -139,11 +143,15 @@ private Q_SLOTS:
     {
         // Test creating more knut resources.
         // This tests that ETM and proxies on top update correctly, and it tests toplevel collection order.
-        const QVector<int> numFolders{ 1, 5, 2 };
+        const QVector<int> numFolders{
+            1, 5, 2
+        };
         QVector<Collection> topLevelCollections;
         const AgentType agentType = AgentManager::self()->type(QStringLiteral("akonadi_knut_resource"));
         QVERIFY(agentType.isValid());
-        mFolderNames = QStringList{"res3", "res1", "res2"}; // according to resourceOrder above (the folder names are defined in testdata-res*.xml)
+        mFolderNames = QStringList{
+            "res3", "res1", "res2"
+        };                                                  // according to resourceOrder above (the folder names are defined in testdata-res*.xml)
 
         // Create resources
         const int numResources = numFolders.count();

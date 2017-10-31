@@ -21,12 +21,10 @@ using namespace MailCommon;
 FilterImporterPathCache::FilterImporterPathCache(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterImporterPathCache::~FilterImporterPathCache()
 {
-
 }
 
 FilterImporterPathCache *FilterImporterPathCache::self()

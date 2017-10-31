@@ -25,12 +25,10 @@ QTEST_MAIN(FilterImporterPathCacheTest)
 FilterImporterPathCacheTest::FilterImporterPathCacheTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterImporterPathCacheTest::~FilterImporterPathCacheTest()
 {
-
 }
 
 void FilterImporterPathCacheTest::shouldReturnEmptyStringWhenListIsEmpty()
@@ -66,7 +64,6 @@ void FilterImporterPathCacheTest::shouldNotDuplicateEntries()
     cache.insert(QStringLiteral("foo1"), Akonadi::Collection(3));
     QCOMPARE(cache.count(), 1);
 
-
     cache.insert(QStringLiteral("foo1"), Akonadi::Collection(4));
     QCOMPARE(cache.count(), 1);
 
@@ -76,7 +73,6 @@ void FilterImporterPathCacheTest::shouldNotDuplicateEntries()
     //Add new one
     cache.insert(QStringLiteral("foo2"), Akonadi::Collection(4));
     QCOMPARE(cache.count(), 2);
-
 }
 
 void FilterImporterPathCacheTest::shouldReturnValues()
