@@ -57,7 +57,6 @@ public:
 
     void setHideOutboxFolder(bool hide);
     bool hideOutboxFolder() const;
-    void setFilterFolder(const QString &filter);
 
     void addContentMimeTypeInclusionFilter(const QString &mimeTypes);
 

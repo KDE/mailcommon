@@ -53,7 +53,6 @@ public:
     Akonadi::MimeTypeChecker checker;
 
     QColor brokenAccountColor;
-    QString filterStr;
     bool enableCheck;
     bool hideVirtualFolder;
     bool hideSpecificFolder;
@@ -193,17 +192,7 @@ bool FolderTreeWidgetProxyModel::acceptRow(int sourceRow, const QModelIndex &sou
         }
     }
 
-    if (d->filterStr.isEmpty()) {
-        return Akonadi::EntityRightsFilterModel::acceptRow(sourceRow, sourceParent);
-    }
-
     return KRecursiveFilterProxyModel::acceptRow(sourceRow, sourceParent);
-}
-
-void FolderTreeWidgetProxyModel::setFilterFolder(const QString &filter)
-{
-    d->filterStr = filter;
-    setFilterWildcard(filter);
 }
 
 QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) const

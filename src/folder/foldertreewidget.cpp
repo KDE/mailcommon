@@ -129,6 +129,7 @@ FolderTreeWidget::FolderTreeWidget(
     //Order proxy
     d->entityOrderProxy = new EntityCollectionOrderProxyModel(this);
     d->entityOrderProxy->setSourceModel(d->readableproxy);
+    d->entityOrderProxy->setFilterCaseSensitivity(Qt::CaseInsensitive);
     KConfigGroup grp(KernelIf->config(), "CollectionTreeOrder");
     d->entityOrderProxy->setOrderConfig(grp);
     d->folderTreeView->setModel(d->entityOrderProxy);
@@ -178,7 +179,7 @@ void FolderTreeWidget::slotFilterFixedString(const QString &text)
         d->folderTreeView->expandAll();
     }
     d->oldFilterStr = text;
-    d->readableproxy->setFilterFolder(text);
+    d->entityOrderProxy->setFilterWildcard(text);
 }
 
 void FolderTreeWidget::disableContextMenuAndExtraColumn()
@@ -354,7 +355,7 @@ void FolderTreeWidget::applyFilter(const QString &filter)
         ? i18n("You can start typing to filter the list of folders.")
         : i18n("Path: (%1)", filter));
 
-    d->readableproxy->setFilterFolder(filter);
+    d->entityOrderProxy->setFilterWildcard(filter);
     d->folderTreeView->expandAll();
     QAbstractItemModel *model = d->folderTreeView->model();
     QModelIndex current = d->folderTreeView->currentIndex();
