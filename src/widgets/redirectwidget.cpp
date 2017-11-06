@@ -59,6 +59,9 @@ RedirectWidget::RedirectWidget(QWidget *parent)
     connect(BtnTo, &QAbstractButton::clicked, this, &RedirectWidget::slotAddressSelection);
 
     connect(mEdit, &QLineEdit::textChanged, this, &RedirectWidget::addressChanged);
+
+    setFocusPolicy(Qt::StrongFocus);
+    setFocusProxy(mEdit);
 }
 
 RedirectWidget::~RedirectWidget()

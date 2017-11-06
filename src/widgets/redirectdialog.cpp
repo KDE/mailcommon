@@ -150,16 +150,19 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
     mainWidget->setLayout(mainLayout);
-    mainLayout->setSpacing(0);
     mainLayout->setMargin(0);
-    QLabel *LabelTo = new QLabel(i18n("Select the recipient addresses to redirect:"));
+    QLabel *LabelTo = new QLabel(i18n("Select the recipient addresses to redirect to:"));
     mainLayout->addWidget(LabelTo);
 
     QFormLayout *formLayout = new QFormLayout;
+    // Combo boxes look better when they are the same size as other full width fields.
+    formLayout->setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);
+    // This is set to zero to avoid double margins between the
+    // three address fields, due to their addresss selection buttons.
+    formLayout->setVerticalSpacing(0);
     mainLayout->addLayout(formLayout);
 
     d->mEditTo = new RedirectWidget;
-    mainLayout->addWidget(d->mEditTo);
     formLayout->addRow(d->redirectLabelType(RedirectDialog::Private::ResendTo), d->mEditTo);
 
     connect(d->mEditTo, &RedirectWidget::addressChanged, this, [this](const QString &str) {
@@ -172,30 +175,21 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
     formLayout->addRow(d->redirectLabelType(RedirectDialog::Private::ResendBcc), d->mEditBcc);
     d->mEditTo->setFocus();
 
-    QHBoxLayout *hbox = new QHBoxLayout;
-    mainLayout->addLayout(hbox);
-    QLabel *lab = new QLabel(i18n("Identity:"));
-    hbox->addWidget(lab);
+    // Because the form layout vertical spacing was set to zero above,
+    // it is necessary to explicitly add spacing between the combo boxes.
+    // The layout default spacing is copied from the main layout.
+    formLayout->addItem(new QSpacerItem(1, mainLayout->spacing(), QSizePolicy::Fixed, QSizePolicy::Fixed));
     d->mComboboxIdentity = new KIdentityManagement::IdentityCombo(KernelIf->identityManager());
-    hbox->addWidget(d->mComboboxIdentity);
-    lab->setBuddy(d->mComboboxIdentity);
+    formLayout->addRow(i18n("Identity:"), d->mComboboxIdentity);
 
-    hbox = new QHBoxLayout;
-    mainLayout->addLayout(hbox);
-    lab = new QLabel(i18n("Transport:"));
-    hbox->addWidget(lab);
+    formLayout->addItem(new QSpacerItem(1, mainLayout->spacing(), QSizePolicy::Fixed, QSizePolicy::Fixed));
     d->mTransportCombobox = new MailTransport::TransportComboBox;
-    hbox->addWidget(d->mTransportCombobox);
-    lab->setBuddy(d->mTransportCombobox);
+    formLayout->addRow(i18n("Transport:"), d->mTransportCombobox);
 
-    KGuiItem::assign(d->mUser1Button, KGuiItem(i18n("&Send Now")));
-    KGuiItem::assign(d->mUser2Button, KGuiItem(i18n("Send &Later")));
-    connect(d->mUser1Button, &QPushButton::clicked, this, [this]() {
-        d->slotUser1();
-    });
-    connect(d->mUser2Button, &QPushButton::clicked, this, [this]() {
-        d->slotUser2();
-    });
+    KGuiItem::assign(d->mUser1Button, KGuiItem(i18n("&Send Now"), QIcon::fromTheme("mail-send")));
+    KGuiItem::assign(d->mUser2Button, KGuiItem(i18n("Send &Later"), QIcon::fromTheme("mail-queue")));
+    connect(d->mUser1Button, &QPushButton::clicked, this, [this]() { d->slotUser1(); });
+    connect(d->mUser2Button, &QPushButton::clicked, this, [this]() { d->slotUser2(); });
 
     d->mUser1Button->setEnabled(false);
     d->mUser2Button->setEnabled(false);
