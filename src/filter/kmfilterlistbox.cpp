@@ -597,11 +597,14 @@ QStringList KMFilterListBox::selectedFilterId(SearchRule::RequiredPart &required
     const int numberOfFilters = mListWidget->count();
     for (int i = 0; i < numberOfFilters; ++i) {
         if (mListWidget->item(i)->isSelected() && !mListWidget->item(i)->isHidden()) {
-            const QString id
-                = static_cast<QListWidgetFilterItem *>(mListWidget->item(i))->filter()->identifier();
-            listFilterId << id;
-            requiredPart = qMax(requiredPart,
-                                static_cast<QListWidgetFilterItem *>(mListWidget->item(i))->filter()->requiredPart(resource));
+            MailFilter *filter = static_cast<QListWidgetFilterItem *>(mListWidget->item(i))->filter();
+            if (!filter->isEmpty()) {
+                const QString id
+                        = filter->identifier();
+                listFilterId << id;
+                requiredPart = qMax(requiredPart,
+                                    static_cast<QListWidgetFilterItem *>(mListWidget->item(i))->filter()->requiredPart(resource));
+            }
         }
     }
     return listFilterId;
