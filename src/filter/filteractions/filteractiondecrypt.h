@@ -39,6 +39,8 @@ public:
 
     SearchRule::RequiredPart requiredPart() const override;
     FilterAction::ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+
+    QWidget *createParamWidget(QWidget *parent) const override;
 };
 } // namespace MailCommon
 
