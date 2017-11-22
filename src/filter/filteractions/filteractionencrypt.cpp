@@ -268,11 +268,11 @@ QWidget *FilterActionEncrypt::createParamWidget(QWidget *parent) const
     palette.setColor(lbl->foregroundRole(), KColorScheme(QPalette::Normal).foreground(KColorScheme::NegativeText).color());
     lbl->setPalette(palette);
     lbl->setWordWrap(true);
-    lbl->setText(i18n("<b>Warning:</b> the encrypted emails will be uploaded back to the server!"));
-    lbl->setToolTip(i18n("<p>You will not be able to read the encrypted emails on any other computer "
-                         "or email client unless you have your private key available there.</p>"
-                         "<p>Also note that most webmail interfaces don't support encryption, so you "
-                         "will not be able to read the encrypted emails there.</p>"));
+    lbl->setText(i18n("<b>Warning:</b> Seckey necessary to read emails."));
+    lbl->setToolTip(i18n("<p>Once an email has been encrypted you will need a crypto setup with "
+                         "your secret key to access the contents again.</p>"
+                         "<p>If you keep emails stored on an email server and use several clients, "
+                         "each of them must be configured to enable decryption.</p>"));
     l->addWidget(lbl);
 
     return w;
