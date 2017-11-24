@@ -96,13 +96,12 @@ FilterAction::ReturnCode FilterActionDecrypt::process(ItemContext &context, bool
 
 QWidget *FilterActionDecrypt::createParamWidget(QWidget *parent) const
 {
-    auto w = new QWidget(parent);
-    auto l = new QVBoxLayout;
-    w->setLayout(l);
+    QWidget *w = new QWidget(parent);
+    QVBoxLayout *l = new QVBoxLayout(w);
 
-    auto lbl = new QLabel(w);
+    QLabel *lbl = new QLabel(w);
 
-    auto palette = lbl->palette();
+    QPalette palette = lbl->palette();
     palette.setColor(lbl->foregroundRole(), KColorScheme(QPalette::Normal).foreground(KColorScheme::NegativeText).color());
     lbl->setPalette(palette);
     lbl->setWordWrap(true);
