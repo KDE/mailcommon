@@ -244,3 +244,38 @@ void FavoriteCollectionWidget::paintEvent(QPaintEvent *event)
         Akonadi::EntityListView::paintEvent(event);
     }
 }
+void FavoriteCollectionWidget::dragEnterEvent(QDragEnterEvent *event)
+{
+    if (event->source() == this) {
+        // skip EntityListView logic (we want to reorder favorites, not trigger moving/copying of actual folders)
+        QListView::dragEnterEvent(event);
+    } else {
+        Akonadi::EntityListView::dragEnterEvent(event);
+    }
+}
+
+void FavoriteCollectionWidget::dragMoveEvent(QDragMoveEvent *event)
+{
+    if (event->source() == this) {
+        // skip EntityListView logic (we want to reorder favorites, not trigger moving/copying of actual folders)
+        QListView::dragMoveEvent(event);
+    } else {
+        Akonadi::EntityListView::dragMoveEvent(event);
+    }
+}
+
+void FavoriteCollectionWidget::dropEvent(QDropEvent *event)
+{
+    if (event->source() == this) {
+        // skip EntityListView logic (we want to reorder favorites, not trigger moving/copying of actual folders)
+        QListView::dropEvent(event);
+    } else {
+        Akonadi::EntityListView::dropEvent(event);
+    }
+}
+
+void FavoriteCollectionWidget::startDrag(Qt::DropActions supportedActions)
+{
+    // skip EntityListView logic (we want to reorder favorites, not trigger moving/copying of actual folders)
+    QListView::startDrag(supportedActions);
+}

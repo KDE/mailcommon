@@ -48,6 +48,10 @@ protected Q_SLOTS:
 
 protected:
     void paintEvent(QPaintEvent *) override;
+    void dragEnterEvent(QDragEnterEvent *event) override;
+    void dragMoveEvent(QDragMoveEvent *event) override;
+    void dropEvent(QDropEvent *event) override;
+    void startDrag(Qt::DropActions) override;
 
     void mousePressEvent(QMouseEvent *e) override;
 Q_SIGNALS:

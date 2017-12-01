@@ -108,6 +108,7 @@ set(libmailcommon_folder_SRCS
   folder/foldertreewidgetproxymodel.cpp
   folder/entitycollectionorderproxymodel.cpp
   folder/accountconfigorderdialog.cpp
+  folder/favoritecollectionorderproxymodel.cpp
 )
 
 set(libmailcommon_job_SRCS
@@ -247,7 +248,7 @@ PRIVATE
   KF5::SyntaxHighlighting
 )
 target_include_directories(KF5MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/MailCommon/;${KDE_INSTALL_INCLUDEDIR_KF5}/mailcommon>")
-target_include_directories(KF5MailCommon PUBLIC "$<BUILD_INTERFACE:${mailcommon_SOURCE_DIR}/src;${mailcommon_BINARY_DIR}/src;${mailcommon_SOURCE_DIR}/src/search>")
+target_include_directories(KF5MailCommon PUBLIC "$<BUILD_INTERFACE:${mailcommon_SOURCE_DIR}/src;${mailcommon_BINARY_DIR}/src;${mailcommon_SOURCE_DIR}/src/search;${mailcommon_SOURCE_DIR}/src/folder>")
 
 
 set_target_properties(KF5MailCommon PROPERTIES
@@ -309,6 +310,7 @@ ecm_generate_headers(MailCommon_Camelcasefolder_HEADERS
   FolderTreeWidget
   FolderSelectionDialog
   FolderTreeWidgetProxyModel
+  FavoriteCollectionOrderProxyModel
   REQUIRED_HEADERS MailCommon_folder_HEADERS
   PREFIX MailCommon
   RELATIVE folder
