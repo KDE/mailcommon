@@ -42,8 +42,6 @@
 #include <MailCommon/FolderTreeView>
 #include <MailCommon/MailKernel>
 
-#include <kitemmodels_version.h>
-
 #include <QTreeView>
 #include <QDebug>
 #include <QStandardPaths>
