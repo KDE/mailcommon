@@ -188,8 +188,12 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
 
     KGuiItem::assign(d->mUser1Button, KGuiItem(i18n("&Send Now"), QIcon::fromTheme("mail-send")));
     KGuiItem::assign(d->mUser2Button, KGuiItem(i18n("Send &Later"), QIcon::fromTheme("mail-queue")));
-    connect(d->mUser1Button, &QPushButton::clicked, this, [this]() { d->slotUser1(); });
-    connect(d->mUser2Button, &QPushButton::clicked, this, [this]() { d->slotUser2(); });
+    connect(d->mUser1Button, &QPushButton::clicked, this, [this]() {
+        d->slotUser1();
+    });
+    connect(d->mUser2Button, &QPushButton::clicked, this, [this]() {
+        d->slotUser2();
+    });
 
     d->mUser1Button->setEnabled(false);
     d->mUser2Button->setEnabled(false);

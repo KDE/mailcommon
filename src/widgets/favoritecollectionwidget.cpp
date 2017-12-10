@@ -244,6 +244,7 @@ void FavoriteCollectionWidget::paintEvent(QPaintEvent *event)
         Akonadi::EntityListView::paintEvent(event);
     }
 }
+
 void FavoriteCollectionWidget::dragEnterEvent(QDragEnterEvent *event)
 {
     if (event->source() == this) {

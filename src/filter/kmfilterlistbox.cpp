@@ -600,7 +600,7 @@ QStringList KMFilterListBox::selectedFilterId(SearchRule::RequiredPart &required
             MailFilter *filter = static_cast<QListWidgetFilterItem *>(mListWidget->item(i))->filter();
             if (!filter->isEmpty()) {
                 const QString id
-                        = filter->identifier();
+                    = filter->identifier();
                 listFilterId << id;
                 requiredPart = qMax(requiredPart,
                                     static_cast<QListWidgetFilterItem *>(mListWidget->item(i))->filter()->requiredPart(resource));
