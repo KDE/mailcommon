@@ -6,7 +6,7 @@ add_definitions(-DTRANSLATION_DOMAIN=\"libmailcommon\")
 
 if(BUILD_TESTING)
    add_definitions(-DBUILD_TESTING)
-endif(BUILD_TESTING)
+endif()
 
 set(libmailcommon_filter_SRCS
   filter/kmfilteraccountlist.cpp
