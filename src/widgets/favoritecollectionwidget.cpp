@@ -290,7 +290,7 @@ void FavoriteCollectionWidget::dragMoveEvent(QDragMoveEvent *event)
     if (event->source() == this) {
         if (acceptEvent(event)) {
             event->setDropAction(Qt::MoveAction);
-            event->acceptProposedAction(); // Re-ordering favourites
+            event->accept(); // Re-ordering favourites
         }
     } else {
         if (acceptEvent(event))
@@ -301,8 +301,9 @@ void FavoriteCollectionWidget::dragMoveEvent(QDragMoveEvent *event)
 void FavoriteCollectionWidget::dropEvent(QDropEvent *event)
 {
     if (event->source() == this) {
-        if (acceptEvent(event))
+        if (acceptEvent(event)) {
             QListView::dropEvent(event); // Re-ordering favourites
+        }
     } else {
         if (acceptEvent(event)) {
             if (dropIndicatorPosition() == QAbstractItemView::OnItem)
