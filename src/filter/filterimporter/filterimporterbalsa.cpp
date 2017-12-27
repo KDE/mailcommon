@@ -88,10 +88,10 @@ void FilterImporterBalsa::parseFilter(const KConfigGroup &grp)
 void FilterImporterBalsa::parseCondition(const QString &condition, MailCommon::MailFilter *filter)
 {
     QStringList conditionList;
-    if (condition.startsWith(QStringLiteral("OR "))) {
+    if (condition.startsWith(QLatin1String("OR "))) {
         conditionList = condition.split(QStringLiteral("OR"));
         filter->pattern()->setOp(SearchPattern::OpOr);
-    } else if (condition.startsWith(QStringLiteral("AND "))) {
+    } else if (condition.startsWith(QLatin1String("AND "))) {
         conditionList = condition.split(QStringLiteral("AND"));
         filter->pattern()->setOp(SearchPattern::OpAnd);
     } else {
@@ -100,7 +100,7 @@ void FilterImporterBalsa::parseCondition(const QString &condition, MailCommon::M
     }
     for (QString cond : qAsConst(conditionList)) {
         cond = cond.trimmed();
-        if (cond.startsWith(QStringLiteral("NOT"))) {
+        if (cond.startsWith(QLatin1String("NOT"))) {
             cond = cond.right(cond.length() - 3);
             cond = cond.trimmed();
         }
@@ -108,15 +108,15 @@ void FilterImporterBalsa::parseCondition(const QString &condition, MailCommon::M
 
         //Date between
         QByteArray fieldName;
-        if (cond.startsWith(QStringLiteral("DATE"))) {
+        if (cond.startsWith(QLatin1String("DATE"))) {
             fieldName = "<date>";
             cond = cond.right(cond.length() - 4);
             cond = cond.trimmed();
             QStringList splitDate = cond.split(QLatin1Char(' '));
             qCDebug(MAILCOMMON_LOG) << " splitDate " << splitDate;
-        } else if (cond.startsWith(QStringLiteral("FLAG"))) {
+        } else if (cond.startsWith(QLatin1String("FLAG"))) {
             qCDebug(MAILCOMMON_LOG) << " FLAG :";
-        } else if (cond.startsWith(QStringLiteral("STRING"))) {
+        } else if (cond.startsWith(QLatin1String("STRING"))) {
             qCDebug(MAILCOMMON_LOG) << " STRING";
         } else {
             qCDebug(MAILCOMMON_LOG) << " condition not implemented :" << cond;

@@ -74,19 +74,19 @@ QString FilterImporterThunderbird::defaultThunderbirdFiltersSettingsPath()
 
 MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter)
 {
-    if (line.startsWith(QStringLiteral("name="))) {
+    if (line.startsWith(QLatin1String("name="))) {
         appendFilter(filter);
         filter = new MailFilter();
         line = cleanArgument(line, QStringLiteral("name="));
         filter->pattern()->setName(line);
         filter->setToolbarName(line);
-    } else if (line.startsWith(QStringLiteral("action="))) {
+    } else if (line.startsWith(QLatin1String("action="))) {
         line = cleanArgument(line, QStringLiteral("action="));
         QString value;
         QString actionName = extractActions(line, filter, value);
         if (!stream.atEnd()) {
             line = stream.readLine();
-            if (line.startsWith(QStringLiteral("actionValue="))) {
+            if (line.startsWith(QLatin1String("actionValue="))) {
                 value = cleanArgument(line, QStringLiteral("actionValue="));
                 //change priority
                 if (actionName == QLatin1String("Change priority")) {
@@ -124,23 +124,23 @@ MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream
         } else {
             createFilterAction(filter, actionName, value);
         }
-    } else if (line.startsWith(QStringLiteral("enabled="))) {
+    } else if (line.startsWith(QLatin1String("enabled="))) {
         line = cleanArgument(line, QStringLiteral("enabled="));
         if (line == QLatin1String("no")) {
             filter->setEnabled(false);
         }
-    } else if (line.startsWith(QStringLiteral("condition="))) {
+    } else if (line.startsWith(QLatin1String("condition="))) {
         line = cleanArgument(line, QStringLiteral("condition="));
         extractConditions(line, filter);
-    } else if (line.startsWith(QStringLiteral("type="))) {
+    } else if (line.startsWith(QLatin1String("type="))) {
         line = cleanArgument(line, QStringLiteral("type="));
         extractType(line, filter);
-    } else if (line.startsWith(QStringLiteral("version="))) {
+    } else if (line.startsWith(QLatin1String("version="))) {
         line = cleanArgument(line, QStringLiteral("version="));
         if (line.toInt() != 9) {
             qCDebug(MAILCOMMON_LOG) << " thunderbird filter version different of 9 need to look at if it changed";
         }
-    } else if (line.startsWith(QStringLiteral("logging="))) {
+    } else if (line.startsWith(QLatin1String("logging="))) {
         line = cleanArgument(line, QStringLiteral("logging="));
         if (line == QLatin1String("no")) {
             //TODO
@@ -157,7 +157,7 @@ MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream
 
 void FilterImporterThunderbird::extractConditions(const QString &line, MailCommon::MailFilter *filter)
 {
-    if (line.startsWith(QStringLiteral("AND"))) {
+    if (line.startsWith(QLatin1String("AND"))) {
         filter->pattern()->setOp(SearchPattern::OpAnd);
         const QStringList conditionsList = line.split(QStringLiteral("AND "));
         const int numberOfCond(conditionsList.count());
@@ -166,7 +166,7 @@ void FilterImporterThunderbird::extractConditions(const QString &line, MailCommo
                 splitConditions(conditionsList.at(i), filter);
             }
         }
-    } else if (line.startsWith(QStringLiteral("OR"))) {
+    } else if (line.startsWith(QLatin1String("OR"))) {
         filter->pattern()->setOp(SearchPattern::OpOr);
         const QStringList conditionsList = line.split(QStringLiteral("OR "));
         const int numberOfCond(conditionsList.count());
@@ -175,7 +175,7 @@ void FilterImporterThunderbird::extractConditions(const QString &line, MailCommo
                 splitConditions(conditionsList.at(i), filter);
             }
         }
-    } else if (line.startsWith(QStringLiteral("ALL"))) {
+    } else if (line.startsWith(QLatin1String("ALL"))) {
         filter->pattern()->setOp(SearchPattern::OpAll);
     } else {
         qCDebug(MAILCOMMON_LOG) << " missing extract condition" << line;
