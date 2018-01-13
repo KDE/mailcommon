@@ -263,12 +263,14 @@ bool FavoriteCollectionWidget::acceptEvent(QDropEvent *event) const
     const bool draggingCollection = isCollection(event->mimeData());
     const bool droppingOnCollection = dropIndicatorPosition() == QAbstractItemView::OnItem;
     if (event->source() == this) {
-        if (draggingCollection && !droppingOnCollection) // Re-ordering favorites
+        if (draggingCollection && !droppingOnCollection) { // Re-ordering favorites
             return true;
+        }
     } else {
         if ((draggingCollection && !droppingOnCollection) // Adding a new favorite collection
-            || (!draggingCollection && droppingOnCollection)) // Dropping emails onto a favorite collection
+            || (!draggingCollection && droppingOnCollection)) { // Dropping emails onto a favorite collection
             return true;
+        }
     }
     event->ignore();
     return false;
@@ -293,8 +295,9 @@ void FavoriteCollectionWidget::dragMoveEvent(QDragMoveEvent *event)
             event->accept(); // Re-ordering favourites
         }
     } else {
-        if (acceptEvent(event))
+        if (acceptEvent(event)) {
             Akonadi::EntityListView::dragMoveEvent(event); // Dropping emails onto a favorite collection
+        }
     }
 }
 
@@ -306,10 +309,11 @@ void FavoriteCollectionWidget::dropEvent(QDropEvent *event)
         }
     } else {
         if (acceptEvent(event)) {
-            if (dropIndicatorPosition() == QAbstractItemView::OnItem)
+            if (dropIndicatorPosition() == QAbstractItemView::OnItem) {
                 Akonadi::EntityListView::dropEvent(event); // Dropping emails onto a favorite collection
-            else
+            } else {
                 QListView::dropEvent(event); // Add new favorite
+            }
         }
     }
 }
