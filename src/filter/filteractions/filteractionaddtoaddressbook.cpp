@@ -137,8 +137,8 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
     collectionComboBox->setAccessRightsFilter(Akonadi::Collection::CanCreateItem);
 
     collectionComboBox->setObjectName(QStringLiteral("AddressBookComboBox"));
-    collectionComboBox->setToolTip(i18n("<p>This defines the preferred address book.<br />"
-                                        "If it is not accessible, the filter will fallback to the default address book.</p>"));
+    collectionComboBox->setToolTip(i18n("This defines the preferred address book.\n"
+                                        "If it is not accessible, the filter will fallback to the default address book."));
     layout->addWidget(collectionComboBox, 1, 2);
 
     connect(headerCombo, QOverload<int>::of(&PimCommon::MinimumComboBox::currentIndexChanged), this, &FilterActionAddToAddressBook::filterActionModified);
