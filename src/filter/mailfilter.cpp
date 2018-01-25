@@ -418,11 +418,11 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
         bApplyOnAllFolders = false;
         mApplicability = ButImap;
     } else {
-        bApplyBeforeOutbound = bool(sets.contains(QStringLiteral("before-send-mail")));
-        bApplyOnInbound = bool(sets.contains(QStringLiteral("check-mail")));
-        bApplyOnOutbound = bool(sets.contains(QStringLiteral("send-mail")));
-        bApplyOnExplicit = bool(sets.contains(QStringLiteral("manual-filtering")));
-        bApplyOnAllFolders = bool(sets.contains(QStringLiteral("all-folders")));
+        bApplyBeforeOutbound = bool(sets.contains(QLatin1String("before-send-mail")));
+        bApplyOnInbound = bool(sets.contains(QLatin1String("check-mail")));
+        bApplyOnOutbound = bool(sets.contains(QLatin1String("send-mail")));
+        bApplyOnExplicit = bool(sets.contains(QLatin1String("manual-filtering")));
+        bApplyOnAllFolders = bool(sets.contains(QLatin1String("all-folders")));
         mApplicability = (AccountType)config.readEntry(
             "Applicability", (int)ButImap);
     }

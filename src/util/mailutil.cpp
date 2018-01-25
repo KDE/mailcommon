@@ -97,7 +97,7 @@ bool MailCommon::Util::isVirtualCollection(const QString &resource)
     }
 
     const auto type = Akonadi::AgentManager::self()->type(resource);
-    return type.capabilities().contains(QStringLiteral("Virtual"));
+    return type.capabilities().contains(QLatin1String("Virtual"));
 }
 
 bool MailCommon::Util::isLocalCollection(const QString &resource)
@@ -155,9 +155,9 @@ Akonadi::AgentInstance::List MailCommon::Util::agentInstances(bool excludeMailDi
     for (const Akonadi::AgentInstance &instance : agentList) {
         const QStringList capabilities(instance.type().capabilities());
         if (instance.type().mimeTypes().contains(KMime::Message::mimeType())) {
-            if (capabilities.contains(QStringLiteral("Resource"))
-                && !capabilities.contains(QStringLiteral("Virtual"))
-                && !capabilities.contains(QStringLiteral("MailTransport"))) {
+            if (capabilities.contains(QLatin1String("Resource"))
+                && !capabilities.contains(QLatin1String("Virtual"))
+                && !capabilities.contains(QLatin1String("MailTransport"))) {
                 relevantInstances << instance;
             } else if (!excludeMailDispacher
                        && instance.identifier() == QLatin1String("akonadi_maildispatcher_agent")) {

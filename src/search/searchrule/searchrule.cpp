@@ -321,7 +321,7 @@ void SearchRule::generateSieveScript(QStringList &requires, QString &code)
         //TODO ?
         code += i18n("<message> not implemented/supported");
     } else if (mField == "<body>") {
-        if (!requires.contains(QStringLiteral("body"))) {
+        if (!requires.contains(QLatin1String("body"))) {
             requires << QStringLiteral("body");
         }
         QString comparaison;
@@ -345,12 +345,12 @@ void SearchRule::generateSieveScript(QStringList &requires, QString &code)
             break;
         case FuncRegExp:
             comparaison = QStringLiteral(":regex");
-            if (!requires.contains(QStringLiteral("regex"))) {
+            if (!requires.contains(QLatin1String("regex"))) {
                 requires << QStringLiteral("regex");
             }
             break;
         case FuncNotRegExp:
-            if (!requires.contains(QStringLiteral("regex"))) {
+            if (!requires.contains(QLatin1String("regex"))) {
                 requires << QStringLiteral("regex");
             }
             comparaison = QStringLiteral(":regex");
@@ -358,14 +358,14 @@ void SearchRule::generateSieveScript(QStringList &requires, QString &code)
             break;
         case FuncStartWith:
             comparaison = QStringLiteral(":regex");
-            if (!requires.contains(QStringLiteral("regex"))) {
+            if (!requires.contains(QLatin1String("regex"))) {
                 requires << QStringLiteral("regex");
             }
             contentStr = QLatin1Char('^') + contentStr;
             break;
         case FuncNotStartWith:
             comparaison = QStringLiteral(":regex");
-            if (!requires.contains(QStringLiteral("regex"))) {
+            if (!requires.contains(QLatin1String("regex"))) {
                 requires << QStringLiteral("regex");
             }
             comparaison = QStringLiteral(":regex");
@@ -374,7 +374,7 @@ void SearchRule::generateSieveScript(QStringList &requires, QString &code)
             break;
         case FuncEndWith:
             comparaison = QStringLiteral(":regex");
-            if (!requires.contains(QStringLiteral("regex"))) {
+            if (!requires.contains(QLatin1String("regex"))) {
                 requires << QStringLiteral("regex");
             }
             comparaison = QStringLiteral(":regex");
@@ -382,7 +382,7 @@ void SearchRule::generateSieveScript(QStringList &requires, QString &code)
             break;
         case FuncNotEndWith:
             comparaison = QStringLiteral(":regex");
-            if (!requires.contains(QStringLiteral("regex"))) {
+            if (!requires.contains(QLatin1String("regex"))) {
                 requires << QStringLiteral("regex");
             }
             comparaison = QStringLiteral(":regex");
@@ -425,12 +425,12 @@ void SearchRule::generateSieveScript(QStringList &requires, QString &code)
             break;
         case FuncRegExp:
             comparaison = QStringLiteral(":regex");
-            if (!requires.contains(QStringLiteral("regex"))) {
+            if (!requires.contains(QLatin1String("regex"))) {
                 requires << QStringLiteral("regex");
             }
             break;
         case FuncNotRegExp:
-            if (!requires.contains(QStringLiteral("regex"))) {
+            if (!requires.contains(QLatin1String("regex"))) {
                 requires << QStringLiteral("regex");
             }
             comparaison = QStringLiteral(":regex");
@@ -438,14 +438,14 @@ void SearchRule::generateSieveScript(QStringList &requires, QString &code)
             break;
         case FuncStartWith:
             comparaison = QStringLiteral(":regex");
-            if (!requires.contains(QStringLiteral("regex"))) {
+            if (!requires.contains(QLatin1String("regex"))) {
                 requires << QStringLiteral("regex");
             }
             contentStr = QLatin1Char('^') + contentStr;
             break;
         case FuncNotStartWith:
             comparaison = QStringLiteral(":regex");
-            if (!requires.contains(QStringLiteral("regex"))) {
+            if (!requires.contains(QLatin1String("regex"))) {
                 requires << QStringLiteral("regex");
             }
             comparaison = QStringLiteral(":regex");
@@ -454,7 +454,7 @@ void SearchRule::generateSieveScript(QStringList &requires, QString &code)
             break;
         case FuncEndWith:
             comparaison = QStringLiteral(":regex");
-            if (!requires.contains(QStringLiteral("regex"))) {
+            if (!requires.contains(QLatin1String("regex"))) {
                 requires << QStringLiteral("regex");
             }
             comparaison = QStringLiteral(":regex");
@@ -462,7 +462,7 @@ void SearchRule::generateSieveScript(QStringList &requires, QString &code)
             break;
         case FuncNotEndWith:
             comparaison = QStringLiteral(":regex");
-            if (!requires.contains(QStringLiteral("regex"))) {
+            if (!requires.contains(QLatin1String("regex"))) {
                 requires << QStringLiteral("regex");
             }
             comparaison = QStringLiteral(":regex");
