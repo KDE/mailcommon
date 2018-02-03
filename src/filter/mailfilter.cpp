@@ -540,19 +540,19 @@ void MailFilter::writeConfig(KConfigGroup &config, bool exportFilter) const
 
     QStringList sets;
     if (bApplyOnInbound) {
-        sets.append(QStringLiteral("check-mail"));
+        sets.append(QLatin1String("check-mail"));
     }
     if (bApplyBeforeOutbound) {
-        sets.append(QStringLiteral("before-send-mail"));
+        sets.append(QLatin1String("before-send-mail"));
     }
     if (bApplyOnOutbound) {
-        sets.append(QStringLiteral("send-mail"));
+        sets.append(QLatin1String("send-mail"));
     }
     if (bApplyOnExplicit) {
-        sets.append(QStringLiteral("manual-filtering"));
+        sets.append(QLatin1String("manual-filtering"));
     }
     if (bApplyOnAllFolders) {
-        sets.append(QStringLiteral("all-folders"));
+        sets.append(QLatin1String("all-folders"));
     }
     config.writeEntry("apply-on", sets);
 
