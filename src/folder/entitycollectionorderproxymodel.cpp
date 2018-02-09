@@ -77,9 +77,9 @@ public:
         return rank;
     }
 
-    bool manualSortingActive;
     QMap<Akonadi::Collection::Id, int> collectionRanks;
     QStringList topLevelOrder;
+    bool manualSortingActive;
 };
 
 EntityCollectionOrderProxyModel::EntityCollectionOrderProxyModel(QObject *parent)

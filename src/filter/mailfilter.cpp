@@ -165,7 +165,8 @@ MailFilter::ReturnCode MailFilter::execActions(ItemContext &context, bool &stopI
                                         .arg(i18n("A problem was found while applying this action."));
                 FilterLog::instance()->add(logText, FilterLog::AppliedAction);
             }
-        default:
+        case FilterAction::GoOn:
+        case FilterAction::ErrorNeedComplete:
             break;
         }
     }
@@ -271,7 +272,7 @@ SearchRule::RequiredPart MailFilter::requiredPart(const QString &id) const
     }
 
     if (pattern()) {
-        requiredPart = qMax(requiredPart, (int)pattern()->requiredPart());    // no pattern means always matches?
+        requiredPart = qMax(requiredPart, static_cast<int>(pattern()->requiredPart()));    // no pattern means always matches?
     }
 
     int requiredPartByActions = SearchRule::Envelope;
@@ -423,8 +424,8 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
         bApplyOnOutbound = bool(sets.contains(QLatin1String("send-mail")));
         bApplyOnExplicit = bool(sets.contains(QLatin1String("manual-filtering")));
         bApplyOnAllFolders = bool(sets.contains(QLatin1String("all-folders")));
-        mApplicability = (AccountType)config.readEntry(
-            "Applicability", (int)ButImap);
+        mApplicability = static_cast<AccountType>(config.readEntry(
+            "Applicability", static_cast<int>(ButImap)));
     }
 
     bStopProcessingHere = config.readEntry("StopProcessingHere", true);
@@ -567,7 +568,7 @@ void MailFilter::writeConfig(KConfigGroup &config, bool exportFilter) const
         config.writeEntry("Icon", mIcon);
     }
     config.writeEntry("AutomaticName", bAutoNaming);
-    config.writeEntry("Applicability", (int)mApplicability);
+    config.writeEntry("Applicability", static_cast<int>(mApplicability));
     config.writeEntry("Enabled", bEnabled);
     QString key;
     int i;
