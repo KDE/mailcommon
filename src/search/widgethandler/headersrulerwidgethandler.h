@@ -28,7 +28,7 @@ public:
     {
     }
 
-    ~HeadersRuleWidgetHandler()
+    ~HeadersRuleWidgetHandler() override
     {
     }
 

@@ -49,7 +49,7 @@ public:
     /**
      * Destroys the send mdn handler.
      */
-    ~SendMdnHandler();
+    ~SendMdnHandler() override;
 
     /**
      * @copydoc AbstractMessageLoadedHandler::setItem()

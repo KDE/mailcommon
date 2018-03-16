@@ -68,7 +68,7 @@ public:
     /**
      * Destroys the redirect dialog.
      */
-    ~RedirectDialog();
+    ~RedirectDialog() override;
 
     /**
      * Returns the addresses for the redirection.

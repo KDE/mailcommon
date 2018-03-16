@@ -28,7 +28,7 @@ public:
     {
     }
 
-    ~TagRuleWidgetHandler()
+    ~TagRuleWidgetHandler() override
     {
     }
 

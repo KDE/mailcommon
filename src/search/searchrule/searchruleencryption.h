@@ -27,7 +27,7 @@ public:
     explicit SearchRuleEncryption(const QByteArray &field =
         {
         }, Function func = FuncEquals, const QString &contents = {});
-    ~SearchRuleEncryption();
+    ~SearchRuleEncryption() override;
 
     bool isEmpty() const override;
     bool matches(const Akonadi::Item &item) const override;

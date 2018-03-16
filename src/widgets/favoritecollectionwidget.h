@@ -33,7 +33,7 @@ class MAILCOMMON_EXPORT FavoriteCollectionWidget : public Akonadi::EntityListVie
     Q_OBJECT
 public:
     explicit FavoriteCollectionWidget(MailCommon::MailCommonSettings *settings, KXMLGUIClient *xmlGuiClient, QWidget *parent = nullptr);
-    ~FavoriteCollectionWidget();
+    ~FavoriteCollectionWidget() override;
 
     void readConfig();
     void updateMode();

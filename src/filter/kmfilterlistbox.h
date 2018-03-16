@@ -77,7 +77,7 @@ public:
     /**
      * Destructor.
      */
-    ~KMFilterListBox();
+    ~KMFilterListBox() override;
 
     /**
      * Called from KMFilterDialog. Creates a new filter and presets

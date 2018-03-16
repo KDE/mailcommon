@@ -28,7 +28,7 @@ public:
     {
     }
 
-    ~NumericDoubleRuleWidgetHandler()
+    ~NumericDoubleRuleWidgetHandler() override
     {
     }
 

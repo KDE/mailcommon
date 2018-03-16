@@ -43,7 +43,7 @@ class MAILCOMMON_EXPORT CollectionGeneralPage : public Akonadi::CollectionProper
 
 public:
     explicit CollectionGeneralPage(QWidget *parent = nullptr);
-    ~CollectionGeneralPage();
+    ~CollectionGeneralPage() override;
 
     void load(const Akonadi::Collection &collection) override;
     void save(Akonadi::Collection &collection) override;

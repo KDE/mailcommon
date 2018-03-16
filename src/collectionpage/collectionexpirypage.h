@@ -40,7 +40,7 @@ class MAILCOMMON_EXPORT CollectionExpiryPage : public Akonadi::CollectionPropert
 
 public:
     explicit CollectionExpiryPage(QWidget *parent = nullptr);
-    ~CollectionExpiryPage();
+    ~CollectionExpiryPage() override;
 
     bool canHandle(const Akonadi::Collection &col) const override;
     void load(const Akonadi::Collection &collection) override;

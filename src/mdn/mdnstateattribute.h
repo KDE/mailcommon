@@ -73,7 +73,7 @@ public:
     /**
      * Destroys the MDN state attribute.
      */
-    ~MDNStateAttribute();
+    ~MDNStateAttribute() override;
 
     /**
      * Reimplemented from Attribute

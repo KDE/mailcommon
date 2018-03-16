@@ -51,7 +51,7 @@ public:
     Q_DECLARE_FLAGS(SelectionFolderOptions, SelectionFolderOption)
 
     FolderSelectionDialog(QWidget *parent, FolderSelectionDialog::SelectionFolderOptions options);
-    ~FolderSelectionDialog();
+    ~FolderSelectionDialog() override;
 
     void setSelectionMode(QAbstractItemView::SelectionMode mode);
     QAbstractItemView::SelectionMode selectionMode() const;

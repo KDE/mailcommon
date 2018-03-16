@@ -42,7 +42,7 @@ class MAILCOMMON_EXPORT EntityCollectionOrderProxyModel : public Akonadi::Entity
 public:
     explicit EntityCollectionOrderProxyModel(QObject *parent = nullptr);
 
-    virtual ~EntityCollectionOrderProxyModel();
+    ~EntityCollectionOrderProxyModel() override;
 
     bool lessThan(const QModelIndex &left, const QModelIndex &right) const override;
 

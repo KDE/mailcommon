@@ -285,7 +285,7 @@ public:
     explicit SearchRuleWidgetLister(QWidget *parent = nullptr, SearchPatternEdit::SearchPatternEditOptions opt = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None),
                                     SearchPatternEdit::SearchModeType modeType = SearchPatternEdit::StandardMode);
 
-    virtual ~SearchRuleWidgetLister();
+    ~SearchRuleWidgetLister() override;
 
     void setRuleList(QList<MailCommon::SearchRule::Ptr> *aList);
 

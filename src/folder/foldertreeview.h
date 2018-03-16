@@ -46,7 +46,7 @@ public:
 
     explicit FolderTreeView(KXMLGUIClient *xmlGuiClient, QWidget *parent = nullptr, bool showUnreadCount = true);
 
-    virtual ~FolderTreeView();
+    ~FolderTreeView() override;
 
     void selectNextUnreadFolder(bool confirm = false);
     void selectPrevUnreadFolder(bool confirm = false);

@@ -120,7 +120,7 @@ public:
     /**
      * Destroys the filter action widget lister.
      */
-    virtual ~FilterActionWidgetLister();
+    ~FilterActionWidgetLister() override;
 
     /**
      * Sets the @p list of filter actions, the lister will create FilterActionWidgets for.

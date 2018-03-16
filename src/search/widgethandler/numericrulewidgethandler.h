@@ -11,7 +11,7 @@ public:
     {
     }
 
-    ~NumericRuleWidgetHandler()
+    ~NumericRuleWidgetHandler() override
     {
     }
 

@@ -31,7 +31,7 @@ class MAILCOMMON_EXPORT FavoriteCollectionOrderProxyModel : public Akonadi::Enti
     Q_OBJECT
 public:
     explicit FavoriteCollectionOrderProxyModel(QObject *parent = nullptr);
-    virtual ~FavoriteCollectionOrderProxyModel();
+    ~FavoriteCollectionOrderProxyModel() override;
 
 protected:
     Akonadi::Collection parentCollection(const QModelIndex &index) const override;

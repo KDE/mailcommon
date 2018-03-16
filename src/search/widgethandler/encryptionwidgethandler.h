@@ -25,7 +25,7 @@ class EncryptionWidgetHandler : public RuleWidgetHandler
 {
 public:
     explicit EncryptionWidgetHandler();
-    ~EncryptionWidgetHandler();
+    ~EncryptionWidgetHandler() override;
 
     QWidget *createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const override;
     QWidget *createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const override;

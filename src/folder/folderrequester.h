@@ -66,7 +66,7 @@ public:
      * @param parent the parent widget
      */
     explicit FolderRequester(QWidget *parent = nullptr);
-    virtual ~FolderRequester();
+    ~FolderRequester() override;
 
     /**
      * Returns the selected collection.

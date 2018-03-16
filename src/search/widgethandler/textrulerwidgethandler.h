@@ -28,7 +28,7 @@ public:
     {
     }
 
-    ~TextRuleWidgetHandler()
+    ~TextRuleWidgetHandler() override
     {
     }
 

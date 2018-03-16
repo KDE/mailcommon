@@ -38,7 +38,7 @@ public:
     };
 
     explicit SnippetsModel(QObject *parent = nullptr);
-    ~SnippetsModel();
+    ~SnippetsModel() override;
 
     bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole) override;
 

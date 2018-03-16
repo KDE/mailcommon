@@ -28,7 +28,7 @@ public:
     {
     }
 
-    ~DateRuleWidgetHandler()
+    ~DateRuleWidgetHandler() override
     {
     }
 

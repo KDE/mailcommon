@@ -40,7 +40,7 @@ public:
     explicit FolderTreeWidgetProxyModel(
         QObject *parent = nullptr, FolderTreeWidgetProxyModelOptions = FolderTreeWidgetProxyModel::None);
 
-    virtual ~FolderTreeWidgetProxyModel();
+    ~FolderTreeWidgetProxyModel() override;
 
     Qt::ItemFlags flags(const QModelIndex &index) const override;
 
