@@ -261,7 +261,7 @@ FilterAction *FilterActionWidget::action() const
 //
 //=============================================================================
 
-class FilterActionWidgetLister::Private
+class Q_DECL_HIDDEN FilterActionWidgetLister::Private
 {
 public:
     Private(FilterActionWidgetLister *qq)
