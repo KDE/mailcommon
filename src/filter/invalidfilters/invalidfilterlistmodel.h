@@ -34,10 +34,10 @@ public:
     explicit InvalidFilterListModel(QObject *parent = nullptr);
     ~InvalidFilterListModel() override;
 
-    bool insertRows(int row, int count, const QModelIndex &parent = QModelIndex()) override;
-    bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole) override;
-    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
-    int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+    Q_REQUIRED_RESULT bool insertRows(int row, int count, const QModelIndex &parent = QModelIndex()) override;
+    Q_REQUIRED_RESULT bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole) override;
+    Q_REQUIRED_RESULT QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
+    Q_REQUIRED_RESULT int rowCount(const QModelIndex &parent = QModelIndex()) const override;
 
 private:
     QList<MailCommon::InvalidFilterInfo> mInvalidFilterItems;

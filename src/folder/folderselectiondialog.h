@@ -54,12 +54,12 @@ public:
     ~FolderSelectionDialog() override;
 
     void setSelectionMode(QAbstractItemView::SelectionMode mode);
-    QAbstractItemView::SelectionMode selectionMode() const;
+    Q_REQUIRED_RESULT QAbstractItemView::SelectionMode selectionMode() const;
 
-    Akonadi::Collection selectedCollection() const;
+    Q_REQUIRED_RESULT Akonadi::Collection selectedCollection() const;
     void setSelectedCollection(const Akonadi::Collection &collection);
 
-    Akonadi::Collection::List selectedCollections() const;
+    Q_REQUIRED_RESULT Akonadi::Collection::List selectedCollections() const;
 
 private Q_SLOTS:
     void slotSelectionChanged();

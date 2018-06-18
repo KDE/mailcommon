@@ -41,19 +41,19 @@ public:
 
     static FilterAction *newAction();
 
-    bool isEmpty() const override;
+    Q_REQUIRED_RESULT bool isEmpty() const override;
 
     void argsFromString(const QString &argsStr) override;
-    QString argsAsString() const override;
-    QString displayString() const override;
-    bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
+    Q_REQUIRED_RESULT QString argsAsString() const override;
+    Q_REQUIRED_RESULT QString displayString() const override;
+    Q_REQUIRED_RESULT bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
 
-    QWidget *createParamWidget(QWidget *parent) const override;
+    Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
     void applyParamWidgetValue(QWidget *paramWidget) override;
     void setParamWidgetValue(QWidget *paramWidget) const override;
     void clearParamWidget(QWidget *paramWidget) const override;
 
-    QString informationAboutNotValidAction() const override;
+    Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
 private Q_SLOTS:
     void slotTagListingFinished();
 

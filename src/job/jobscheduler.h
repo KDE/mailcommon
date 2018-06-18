@@ -75,12 +75,12 @@ public:
     virtual int taskTypeId() const = 0;
 
     /// The folder which this task is about, 0 if it was deleted meanwhile.
-    Akonadi::Collection folder() const
+    Q_REQUIRED_RESULT Akonadi::Collection folder() const
     {
         return mCurrentFolder;
     }
 
-    bool isImmediate() const
+    Q_REQUIRED_RESULT bool isImmediate() const
     {
         return mImmediate;
     }

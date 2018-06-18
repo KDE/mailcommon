@@ -26,13 +26,13 @@ class InvalidFilterListItemDelegate : public KWidgetItemDelegate
     Q_OBJECT
 public:
     explicit InvalidFilterListItemDelegate(QAbstractItemView *itemView, QObject *parent = nullptr);
-    virtual ~InvalidFilterListItemDelegate();
+    ~InvalidFilterListItemDelegate() override;
 
-    QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override;
+    Q_REQUIRED_RESULT QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override;
 
     void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override;
 
-    QList<QWidget *> createItemWidgets(const QModelIndex &) const override;
+    Q_REQUIRED_RESULT QList<QWidget *> createItemWidgets(const QModelIndex &) const override;
 
     void updateItemWidgets(const QList<QWidget *> widgets, const QStyleOptionViewItem &option, const QPersistentModelIndex &index) const override;
 private Q_SLOTS:

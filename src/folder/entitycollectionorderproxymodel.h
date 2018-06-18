@@ -44,10 +44,10 @@ public:
 
     ~EntityCollectionOrderProxyModel() override;
 
-    bool lessThan(const QModelIndex &left, const QModelIndex &right) const override;
+    Q_REQUIRED_RESULT bool lessThan(const QModelIndex &left, const QModelIndex &right) const override;
 
     void setManualSortingActive(bool active);
-    bool isManualSortingActive() const;
+    Q_REQUIRED_RESULT bool isManualSortingActive() const;
 
     void clearRanks();
     void setTopLevelOrder(const QStringList &list);

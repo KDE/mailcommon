@@ -42,7 +42,7 @@ public:
     explicit CollectionExpiryPage(QWidget *parent = nullptr);
     ~CollectionExpiryPage() override;
 
-    bool canHandle(const Akonadi::Collection &col) const override;
+    Q_REQUIRED_RESULT bool canHandle(const Akonadi::Collection &col) const override;
     void load(const Akonadi::Collection &collection) override;
     void save(Akonadi::Collection &collection) override;
 

@@ -59,12 +59,12 @@ public:
      * @return the error code of the job. This must only be called from
      * the slot connected to the finished() signal.
      */
-    int error() const;
+    Q_REQUIRED_RESULT int error() const;
 
     /**
      * @return true if this job can be canceled, e.g. to exit the application
      */
-    bool isCancellable() const;
+    Q_REQUIRED_RESULT bool isCancellable() const;
 
     /**
      * Call this to change the "cancellable" property of this job.

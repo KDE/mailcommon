@@ -36,9 +36,9 @@ public:
     static QString defaultFiltersSettingsPath();
 
 private:
-    MailCommon::MailFilter *parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter);
+    Q_REQUIRED_RESULT MailCommon::MailFilter *parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter);
     void readStream(QTextStream &stream);
-    QString createUniqFilterName();
+    Q_REQUIRED_RESULT QString createUniqFilterName();
     int mFilterCount;
 };
 }

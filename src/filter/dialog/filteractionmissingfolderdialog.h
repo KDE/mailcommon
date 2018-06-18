@@ -41,7 +41,7 @@ public:
     explicit FilterActionMissingFolderDialog(const Akonadi::Collection::List &list, const QString &filtername = QString(), const QString &argStr = QString(), QWidget *parent = nullptr);
     ~FilterActionMissingFolderDialog();
 
-    Akonadi::Collection selectedCollection() const;
+    Q_REQUIRED_RESULT Akonadi::Collection selectedCollection() const;
     static Akonadi::Collection::List potentialCorrectFolders(const QString &path, bool &exactPath);
 
 private:

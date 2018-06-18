@@ -29,7 +29,7 @@ class FilterActionMissingTagDialog : public QDialog
 public:
     explicit FilterActionMissingTagDialog(const QMap<QUrl, QString> &templateList, const QString &filtername, const QString &argsStr, QWidget *parent = nullptr);
     ~FilterActionMissingTagDialog();
-    QString selectedTag() const;
+    Q_REQUIRED_RESULT QString selectedTag() const;
 
 private:
     void slotAddTag();

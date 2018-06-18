@@ -54,7 +54,7 @@ namespace MailCommon {
  * various places.
  */
 namespace Util {
-bool ignoreNewMailInFolder(const Akonadi::Collection &collection);
+Q_REQUIRED_RESULT bool ignoreNewMailInFolder(const Akonadi::Collection &collection);
 }
 }
 

@@ -44,7 +44,7 @@ public:
     explicit FolderCollectionMonitor(Akonadi::Session *session, QObject *parent = nullptr);
     ~FolderCollectionMonitor();
 
-    Akonadi::ChangeRecorder *monitor() const;
+    Q_REQUIRED_RESULT Akonadi::ChangeRecorder *monitor() const;
     void expireAllFolders(bool immediate, QAbstractItemModel *collectionModel);
     void expunge(const Akonadi::Collection &, bool sync = false);
 

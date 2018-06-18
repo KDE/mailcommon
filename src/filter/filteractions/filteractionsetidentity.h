@@ -32,12 +32,12 @@ class FilterActionSetIdentity : public FilterActionWithUOID
     Q_OBJECT
 public:
     explicit FilterActionSetIdentity(QObject *parent = nullptr);
-    ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
-    SearchRule::RequiredPart requiredPart() const override;
-    bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
+    Q_REQUIRED_RESULT ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart() const override;
+    Q_REQUIRED_RESULT bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
     static FilterAction *newAction();
 
-    QWidget *createParamWidget(QWidget *parent) const override;
+    Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
     void applyParamWidgetValue(QWidget *parent) override;
     void setParamWidgetValue(QWidget *parent) const override;
     void clearParamWidget(QWidget *param) const override;

@@ -34,12 +34,12 @@ class FilterActionCopy : public FilterActionWithFolder
     Q_OBJECT
 public:
     explicit FilterActionCopy(QObject *parent = nullptr);
-    ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
-    SearchRule::RequiredPart requiredPart() const override;
+    Q_REQUIRED_RESULT ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart() const override;
     static FilterAction *newAction();
-    QString sieveCode() const override;
-    QStringList sieveRequires() const override;
-    QString informationAboutNotValidAction() const override;
+    Q_REQUIRED_RESULT QString sieveCode() const override;
+    Q_REQUIRED_RESULT QStringList sieveRequires() const override;
+    Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
 
 protected Q_SLOTS:
     void jobFinished(KJob *job);

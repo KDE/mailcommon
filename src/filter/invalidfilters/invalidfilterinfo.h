@@ -27,15 +27,15 @@ public:
     InvalidFilterInfo();
     InvalidFilterInfo(const QString &name, const QString &information);
 
-    QString information() const;
+    Q_REQUIRED_RESULT QString information() const;
 
-    QString name() const;
+    Q_REQUIRED_RESULT QString name() const;
 
     void setName(const QString &name);
 
     void setInformation(const QString &information);
 
-    bool operator ==(const InvalidFilterInfo &other) const;
+    Q_REQUIRED_RESULT bool operator ==(const InvalidFilterInfo &other) const;
 private:
     QString mName;
     QString mInformation;

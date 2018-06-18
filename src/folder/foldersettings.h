@@ -48,31 +48,31 @@ public:
     static void clearCache();
     static void resetHtmlFormat();
 
-    bool isWriteConfig() const;
+    Q_REQUIRED_RESULT bool isWriteConfig() const;
     void setWriteConfig(bool writeConfig);
 
     void writeConfig() const;
     void readConfig();
 
-    QString name() const;
+    Q_REQUIRED_RESULT QString name() const;
 
-    bool isReadOnly() const;
+    Q_REQUIRED_RESULT bool isReadOnly() const;
 
-    bool isStructural() const;
+    Q_REQUIRED_RESULT bool isStructural() const;
 
-    bool isSystemFolder() const;
+    Q_REQUIRED_RESULT bool isSystemFolder() const;
 
-    qint64 count() const;
+    Q_REQUIRED_RESULT qint64 count() const;
 
-    bool canDeleteMessages() const;
+    Q_REQUIRED_RESULT bool canDeleteMessages() const;
 
-    bool canCreateMessages() const;
+    Q_REQUIRED_RESULT bool canCreateMessages() const;
 
-    bool isValid() const;
+    Q_REQUIRED_RESULT bool isValid() const;
 
-    Akonadi::Collection::Rights rights() const;
+    Q_REQUIRED_RESULT Akonadi::Collection::Rights rights() const;
 
-    Akonadi::CollectionStatistics statistics() const;
+    Q_REQUIRED_RESULT Akonadi::CollectionStatistics statistics() const;
 
     void setShortcut(const QKeySequence &);
     const QKeySequence &shortcut() const;
@@ -82,16 +82,16 @@ public:
      *  identity specified by setIdentity().
      */
     void setUseDefaultIdentity(bool useDefaultIdentity);
-    bool useDefaultIdentity() const;
+    Q_REQUIRED_RESULT bool useDefaultIdentity() const;
 
     void setIdentity(uint identity);
-    uint identity() const;
+    Q_REQUIRED_RESULT uint identity() const;
 
     /**
      * Returns true if this folder is associated with a mailing-list.
      */
     void setMailingListEnabled(bool enabled);
-    bool isMailingListEnabled() const;
+    Q_REQUIRED_RESULT bool isMailingListEnabled() const;
 
     void setMailingList(const MailingList &mlist);
 
@@ -101,19 +101,19 @@ public:
      * Returns true if the replies to mails from this folder should be
      * put in the same folder.
      */
-    bool putRepliesInSameFolder() const;
+    Q_REQUIRED_RESULT bool putRepliesInSameFolder() const;
     void setPutRepliesInSameFolder(bool b);
 
     /**
      * Returns true if this folder should be hidden from all folder selection dialogs
      */
-    bool hideInSelectionDialog() const;
+    Q_REQUIRED_RESULT bool hideInSelectionDialog() const;
     void setHideInSelectionDialog(bool hide);
 
-    QString mailingListPostAddress() const;
+    Q_REQUIRED_RESULT QString mailingListPostAddress() const;
 
-    uint fallBackIdentity() const;
-    MessageViewer::Viewer::DisplayFormatMessage formatMessage() const;
+    Q_REQUIRED_RESULT uint fallBackIdentity() const;
+    Q_REQUIRED_RESULT MessageViewer::Viewer::DisplayFormatMessage formatMessage() const;
     void setFormatMessage(MessageViewer::Viewer::DisplayFormatMessage formatMessage);
 
 protected Q_SLOTS:

@@ -36,18 +36,18 @@ public:
     ~SnippetDialog();
 
     void setName(const QString &name);
-    QString name() const;
+    Q_REQUIRED_RESULT QString name() const;
 
     void setText(const QString &text);
-    QString text() const;
+    Q_REQUIRED_RESULT QString text() const;
 
     void setKeySequence(const QKeySequence &sequence);
-    QKeySequence keySequence() const;
+    Q_REQUIRED_RESULT QKeySequence keySequence() const;
 
     void setGroupModel(QAbstractItemModel *model);
 
     void setGroupIndex(const QModelIndex &index);
-    QModelIndex groupIndex() const;
+    Q_REQUIRED_RESULT QModelIndex groupIndex() const;
 
 private Q_SLOTS:
     void slotTextChanged();

@@ -32,22 +32,22 @@ class FilterActionAddToAddressBook : public FilterActionWithStringList
     Q_OBJECT
 public:
     explicit FilterActionAddToAddressBook(QObject *parent = nullptr);
-    ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    Q_REQUIRED_RESULT ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
     static FilterAction *newAction();
 
     SearchRule::RequiredPart requiredPart() const override;
 
-    bool isEmpty() const override;
+    Q_REQUIRED_RESULT bool isEmpty() const override;
 
-    QWidget *createParamWidget(QWidget *parent) const override;
+    Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
     void setParamWidgetValue(QWidget *paramWidget) const override;
     void applyParamWidgetValue(QWidget *paramWidget) override;
     void clearParamWidget(QWidget *paramWidget) const override;
 
-    QString argsAsString() const override;
+    Q_REQUIRED_RESULT QString argsAsString() const override;
     void argsFromString(const QString &argsStr) override;
 
-    QString informationAboutNotValidAction() const override;
+    Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
 private:
     enum HeaderType {
         FromHeader,

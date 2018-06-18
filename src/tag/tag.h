@@ -46,15 +46,15 @@ public:
     typedef QFlags<SaveFlag> SaveFlags;
 
     // Returns true if two tags are equal
-    bool operator==(const Tag &other) const;
+    Q_REQUIRED_RESULT bool operator==(const Tag &other) const;
 
-    bool operator!=(const Tag &other) const;
+    Q_REQUIRED_RESULT bool operator!=(const Tag &other) const;
 
     static Ptr createDefaultTag(const QString &name);
     // expects a tag with all attributes fetched
     static Ptr fromAkonadi(const Akonadi::Tag &tag);
 
-    Akonadi::Tag saveToAkonadi(SaveFlags saveFlags = SaveFlags(TextColor | BackgroundColor | Font)) const;
+    Q_REQUIRED_RESULT Akonadi::Tag saveToAkonadi(SaveFlags saveFlags = SaveFlags(TextColor | BackgroundColor | Font)) const;
 
     // Compare, based on priority
     static bool compare(const Ptr &tag1, const Ptr &tag2);

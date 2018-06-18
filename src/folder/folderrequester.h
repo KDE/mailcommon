@@ -71,7 +71,7 @@ public:
     /**
      * Returns the selected collection.
      */
-    Akonadi::Collection collection() const;
+    Q_REQUIRED_RESULT Akonadi::Collection collection() const;
 
     /**
      * Presets the folder to the collection @p collection.
@@ -82,7 +82,7 @@ public:
     /**
      * Returns @c true if there's a valid collection set on this widget.
      */
-    bool hasCollection() const;
+    Q_REQUIRED_RESULT bool hasCollection() const;
 
     /**
      * Sets if readonly folders should be disabled.

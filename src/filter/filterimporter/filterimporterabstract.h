@@ -33,8 +33,8 @@ class MAILCOMMON_EXPORT FilterImporterAbstract
 public:
     explicit FilterImporterAbstract(bool interactive = true);
     ~FilterImporterAbstract();
-    QList<MailFilter *> importFilter() const;
-    QStringList emptyFilter() const;
+    Q_REQUIRED_RESULT QList<MailFilter *> importFilter() const;
+    Q_REQUIRED_RESULT QStringList emptyFilter() const;
 
 protected:
     void appendFilter(MailCommon::MailFilter *filter);

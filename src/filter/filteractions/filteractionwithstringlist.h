@@ -58,7 +58,7 @@ public:
     /**
      * @copydoc FilterAction::createParamWidget
      */
-    QWidget *createParamWidget(QWidget *parent) const override;
+    Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
 
     /**
      * @copydoc FilterAction::applyParamWidgetValue

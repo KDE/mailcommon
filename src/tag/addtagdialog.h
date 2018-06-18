@@ -36,8 +36,8 @@ public:
     ~AddTagDialog();
 
     void setTags(const QList<MailCommon::Tag::Ptr> &tags);
-    QString label() const;
-    Akonadi::Tag tag() const;
+    Q_REQUIRED_RESULT QString label() const;
+    Q_REQUIRED_RESULT Akonadi::Tag tag() const;
 
 private:
     void slotSave();

@@ -89,10 +89,10 @@ public:
     /**
     * Returns the unique identifier of this filter.
     */
-    QString identifier() const;
+    Q_REQUIRED_RESULT QString identifier() const;
 
     /** Equivalent to @pattern()->name(). @return name of the filter */
-    QString name() const;
+    Q_REQUIRED_RESULT QString name() const;
 
     /** Execute the filter action(s) on the given message.
       Returns:
@@ -105,21 +105,21 @@ public:
       true if the caller may apply other filters and false if he shall
       stop the filtering of this message.
     */
-    ReturnCode execActions(ItemContext &context, bool &stopIt, bool applyOnOutbound) const;
+    Q_REQUIRED_RESULT ReturnCode execActions(ItemContext &context, bool &stopIt, bool applyOnOutbound) const;
 
     /**
     * Returns the required part from the item that is needed for the filter to
     * operate. See @ref SearchRule::RequiredPart */
-    SearchRule::RequiredPart requiredPart(const QString &id) const;
+    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart(const QString &id) const;
 
     /** Write contents to given config group. */
     void writeConfig(KConfigGroup &config, bool exportFilter) const;
 
     /** Initialize from given config group. */
-    bool readConfig(const KConfigGroup &config, bool interactive = false);
+    Q_REQUIRED_RESULT bool readConfig(const KConfigGroup &config, bool interactive = false);
 
     /** Remove empty rules (and actions one day). */
-    QString purify(bool removeAction = true);
+    Q_REQUIRED_RESULT QString purify(bool removeAction = true);
 
     /** Check for empty pattern and action list. */
     bool isEmpty() const;
@@ -135,7 +135,7 @@ public:
     /** Provides a reference to the internal pattern. If you used the
       @p matches() function before, please convert to using
       myFilter->pattern()->matches() now. */
-    SearchPattern *pattern();
+    Q_REQUIRED_RESULT SearchPattern *pattern();
 
     /** Provides a reference to the internal pattern. If you used the
       @p matches() function before, please convert to using

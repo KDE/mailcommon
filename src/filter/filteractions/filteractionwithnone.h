@@ -55,12 +55,12 @@ public:
     /**
      * @copydoc FilterAction::argsAsString
      */
-    QString argsAsString() const override;
+    Q_REQUIRED_RESULT QString argsAsString() const override;
 
     /**
      * @copydoc FilterAction::displayString
      */
-    QString displayString() const override;
+    Q_REQUIRED_RESULT QString displayString() const override;
 };
 }
 

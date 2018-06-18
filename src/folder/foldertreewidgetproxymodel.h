@@ -42,21 +42,21 @@ public:
 
     ~FolderTreeWidgetProxyModel() override;
 
-    Qt::ItemFlags flags(const QModelIndex &index) const override;
+    Q_REQUIRED_RESULT Qt::ItemFlags flags(const QModelIndex &index) const override;
 
-    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
+    Q_REQUIRED_RESULT QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
 
     void setEnabledCheck(bool enable);
-    bool enabledCheck() const;
+    Q_REQUIRED_RESULT bool enabledCheck() const;
 
     void setHideVirtualFolder(bool exclude);
-    bool hideVirtualFolder() const;
+    Q_REQUIRED_RESULT bool hideVirtualFolder() const;
 
     void setHideSpecificFolder(bool hide);
-    bool hideSpecificFolder() const;
+    Q_REQUIRED_RESULT bool hideSpecificFolder() const;
 
     void setHideOutboxFolder(bool hide);
-    bool hideOutboxFolder() const;
+    Q_REQUIRED_RESULT bool hideOutboxFolder() const;
 
     void addContentMimeTypeInclusionFilter(const QString &mimeTypes);
 

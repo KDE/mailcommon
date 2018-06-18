@@ -32,7 +32,7 @@ class FilterActionMissingIdentityDialog : public QDialog
 public:
     explicit FilterActionMissingIdentityDialog(const QString &filtername, QWidget *parent = nullptr);
     ~FilterActionMissingIdentityDialog();
-    int selectedIdentity() const;
+    Q_REQUIRED_RESULT int selectedIdentity() const;
 
 private:
     void writeConfig();

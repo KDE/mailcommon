@@ -35,17 +35,17 @@ public:
     /**
      * @copydoc FilterAction::~FilterAction
      */
-    ~FilterActionWithTest();
+    ~FilterActionWithTest() override;
 
     /**
      * @copydoc FilterAction::isEmpty
      */
-    bool isEmpty() const override;
+    Q_REQUIRED_RESULT bool isEmpty() const override;
 
     /**
      * @copydoc FilterAction::createParamWidget
      */
-    QWidget *createParamWidget(QWidget *parent) const override;
+    Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
 
     /**
      * @copydoc FilterAction::applyParamWidgetValue
@@ -70,12 +70,12 @@ public:
     /**
      * @copydoc FilterAction::argsAsString
      */
-    QString argsAsString() const override;
+    Q_REQUIRED_RESULT QString argsAsString() const override;
 
     /**
      * @copydoc FilterAction::displayString
      */
-    QString displayString() const override;
+    Q_REQUIRED_RESULT QString displayString() const override;
 
 protected:
     QString mParameter;

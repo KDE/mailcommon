@@ -88,28 +88,28 @@ public:
 
     void setSelectionMode(QAbstractItemView::SelectionMode mode);
 
-    QAbstractItemView::SelectionMode selectionMode() const;
+    Q_REQUIRED_RESULT QAbstractItemView::SelectionMode selectionMode() const;
 
-    QItemSelectionModel *selectionModel() const;
+    Q_REQUIRED_RESULT QItemSelectionModel *selectionModel() const;
 
-    QModelIndex currentIndex() const;
+    Q_REQUIRED_RESULT QModelIndex currentIndex() const;
 
-    Akonadi::Collection selectedCollection() const;
+    Q_REQUIRED_RESULT Akonadi::Collection selectedCollection() const;
 
-    Akonadi::Collection::List selectedCollections() const;
+    Q_REQUIRED_RESULT Akonadi::Collection::List selectedCollections() const;
 
-    FolderTreeView *folderTreeView() const;
+    Q_REQUIRED_RESULT FolderTreeView *folderTreeView() const;
 
-    Akonadi::StatisticsProxyModel *statisticsProxyModel() const;
+    Q_REQUIRED_RESULT Akonadi::StatisticsProxyModel *statisticsProxyModel() const;
 
-    FolderTreeWidgetProxyModel *folderTreeWidgetProxyModel() const;
+    Q_REQUIRED_RESULT FolderTreeWidgetProxyModel *folderTreeWidgetProxyModel() const;
 
-    EntityCollectionOrderProxyModel *entityOrderProxy() const;
+    Q_REQUIRED_RESULT EntityCollectionOrderProxyModel *entityOrderProxy() const;
 
     void quotaWarningParameters(const QColor &color, qreal threshold);
     void readQuotaConfig();
 
-    QLineEdit *filterFolderLineEdit() const;
+    Q_REQUIRED_RESULT QLineEdit *filterFolderLineEdit() const;
     void applyFilter(const QString &);
     void clearFilter();
 

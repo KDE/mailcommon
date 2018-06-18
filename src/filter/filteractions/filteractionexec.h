@@ -32,10 +32,10 @@ class FilterActionExec : public FilterActionWithCommand
     Q_OBJECT
 public:
     explicit FilterActionExec(QObject *parent = nullptr);
-    ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
-    SearchRule::RequiredPart requiredPart() const override;
+    Q_REQUIRED_RESULT ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart() const override;
     static FilterAction *newAction();
-    QString informationAboutNotValidAction() const override;
+    Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
 };
 }
 

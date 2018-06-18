@@ -36,7 +36,7 @@ public:
     ~RedirectWidget();
 
     void setFocus();
-    QString resend();
+    Q_REQUIRED_RESULT QString resend();
 
 Q_SIGNALS:
     void addressChanged(const QString &);

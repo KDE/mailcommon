@@ -59,37 +59,37 @@ class ExpireCollectionAttribute;
  * various places.
  */
 namespace Util {
-MAILCOMMON_EXPORT OrgKdeAkonadiPOP3SettingsInterface *createPop3SettingsInterface(
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT OrgKdeAkonadiPOP3SettingsInterface *createPop3SettingsInterface(
     const QString &ident);
 
-MAILCOMMON_EXPORT bool isVirtualCollection(const Akonadi::Collection &col);
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isVirtualCollection(const Akonadi::Collection &col);
 
-MAILCOMMON_EXPORT bool isVirtualCollection(const QString &resource);
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isVirtualCollection(const QString &resource);
 
-MAILCOMMON_EXPORT QString fullCollectionPath(const Akonadi::Collection &collection, bool addAccountName = true);
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT QString fullCollectionPath(const Akonadi::Collection &collection, bool addAccountName = true);
 
-MAILCOMMON_EXPORT bool showJobErrorMessage(KJob *job);
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool showJobErrorMessage(KJob *job);
 
-MAILCOMMON_EXPORT Akonadi::AgentInstance::List agentInstances(bool excludeMailTransport = true);
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT Akonadi::AgentInstance::List agentInstances(bool excludeMailTransport = true);
 
 /**
    * Returns the identity of the folder that contains the given Akonadi::Item.
    */
-MAILCOMMON_EXPORT uint folderIdentity(const Akonadi::Item &item);
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT uint folderIdentity(const Akonadi::Item &item);
 
-MAILCOMMON_EXPORT QString realFolderPath(const QString &path);
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT QString realFolderPath(const QString &path);
 
-MAILCOMMON_EXPORT QColor defaultQuotaColor();
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT QColor defaultQuotaColor();
 
 MAILCOMMON_EXPORT void expireOldMessages(const Akonadi::Collection &collection, bool immediate);
 
-MAILCOMMON_EXPORT Akonadi::Collection::Id convertFolderPathToCollectionId(const QString &folder);
-MAILCOMMON_EXPORT QString convertFolderPathToCollectionStr(const QString &folder);
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT Akonadi::Collection::Id convertFolderPathToCollectionId(const QString &folder);
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT QString convertFolderPathToCollectionStr(const QString &folder);
 
 MAILCOMMON_EXPORT void foundMailer(QStringList &lst, const QString &name);
-MAILCOMMON_EXPORT QStringList foundMailer();
-MAILCOMMON_EXPORT bool isLocalCollection(const QString &resource);
-MAILCOMMON_EXPORT MailCommon::ExpireCollectionAttribute *expirationCollectionAttribute(const Akonadi::Collection &collection, bool &mustDeleteExpirationAttribute);
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT QStringList foundMailer();
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isLocalCollection(const QString &resource);
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT MailCommon::ExpireCollectionAttribute *expirationCollectionAttribute(const Akonadi::Collection &collection, bool &mustDeleteExpirationAttribute);
 }
 }
 

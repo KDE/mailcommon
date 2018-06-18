@@ -33,18 +33,18 @@ class FilterActionForward : public FilterActionWithAddress
 public:
     explicit FilterActionForward(QObject *parent = nullptr);
     static FilterAction *newAction();
-    ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
-    SearchRule::RequiredPart requiredPart() const override;
-    QWidget *createParamWidget(QWidget *parent) const override;
+    Q_REQUIRED_RESULT ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart() const override;
+    Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
     void applyParamWidgetValue(QWidget *paramWidget) override;
     void setParamWidgetValue(QWidget *paramWidget) const override;
     void clearParamWidget(QWidget *paramWidget) const override;
     void argsFromString(const QString &argsStr) override;
-    QString argsAsString() const override;
-    QString displayString() const override;
-    bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
+    Q_REQUIRED_RESULT QString argsAsString() const override;
+    Q_REQUIRED_RESULT QString displayString() const override;
+    Q_REQUIRED_RESULT bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
 
-    QString informationAboutNotValidAction() const override;
+    Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
 private:
     mutable QString mTemplate;
 };

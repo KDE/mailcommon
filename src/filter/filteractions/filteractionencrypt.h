@@ -36,25 +36,25 @@ public:
 
     static FilterAction *newAction();
 
-    QString displayString() const override;
+    Q_REQUIRED_RESULT QString displayString() const override;
 
-    QString argsAsString() const override;
+    Q_REQUIRED_RESULT QString argsAsString() const override;
     void argsFromString(const QString &argsStr) override;
 
-    SearchRule::RequiredPart requiredPart() const override;
-    FilterAction::ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart() const override;
+    Q_REQUIRED_RESULT FilterAction::ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
 
-    bool isEmpty() const override;
+    Q_REQUIRED_RESULT bool isEmpty() const override;
 
-    QString informationAboutNotValidAction() const override;
+    Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
 
-    QWidget *createParamWidget(QWidget *parent) const override;
+    Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
     void setParamWidgetValue(QWidget *paramWidget) const override;
     void applyParamWidgetValue(QWidget *paramWidget) override;
 
-    GpgME::Key key() const;
+    Q_REQUIRED_RESULT GpgME::Key key() const;
 
-    bool reencrypt() const;
+    Q_REQUIRED_RESULT bool reencrypt() const;
 
 private:
     std::shared_ptr<const Kleo::KeyCache> mKeyCache;

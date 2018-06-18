@@ -42,21 +42,21 @@ public:
 
     void recordTagSettings(MailCommon::Tag::Ptr tag);
 
-    KLineEdit *tagNameLineEdit() const;
-    QCheckBox *textColorCheck() const;
-    QCheckBox *textFontCheck() const;
-    QCheckBox *backgroundColorCheck() const;
-    QCheckBox *inToolBarCheck() const;
+    Q_REQUIRED_RESULT KLineEdit *tagNameLineEdit() const;
+    Q_REQUIRED_RESULT QCheckBox *textColorCheck() const;
+    Q_REQUIRED_RESULT QCheckBox *textFontCheck() const;
+    Q_REQUIRED_RESULT QCheckBox *backgroundColorCheck() const;
+    Q_REQUIRED_RESULT QCheckBox *inToolBarCheck() const;
 
-    KColorCombo *textColorCombo() const;
-    KColorCombo *backgroundColorCombo() const;
+    Q_REQUIRED_RESULT KColorCombo *textColorCombo() const;
+    Q_REQUIRED_RESULT KColorCombo *backgroundColorCombo() const;
 
-    QCheckBox *textBoldCheck() const;
-    QCheckBox *textItalicCheck() const;
+    Q_REQUIRED_RESULT QCheckBox *textBoldCheck() const;
+    Q_REQUIRED_RESULT QCheckBox *textItalicCheck() const;
 
-    KIconButton *iconButton() const;
+    Q_REQUIRED_RESULT KIconButton *iconButton() const;
 
-    KKeySequenceWidget *keySequenceWidget() const;
+    Q_REQUIRED_RESULT KKeySequenceWidget *keySequenceWidget() const;
 
     void setTagTextColor(const QColor &color);
     void setTagBackgroundColor(const QColor &color);
