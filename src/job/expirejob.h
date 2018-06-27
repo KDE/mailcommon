@@ -77,7 +77,7 @@ public:
 
     ScheduledJob *run() override
     {
-        return folder().isValid() ? new ExpireJob(folder(), isImmediate()) : 0;
+        return folder().isValid() ? new ExpireJob(folder(), isImmediate()) : nullptr;
     }
 
     int taskTypeId() const override
