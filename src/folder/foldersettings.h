@@ -121,6 +121,7 @@ protected Q_SLOTS:
 
 private:
     explicit FolderSettings(const Akonadi::Collection &col, bool writeconfig);
+    QString resource() const;
 
     Akonadi::Collection mCollection;
 

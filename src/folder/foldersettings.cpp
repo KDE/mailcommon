@@ -231,7 +231,7 @@ bool FolderSettings::isValid() const
 
 void FolderSettings::writeConfig() const
 {
-    Q_ASSERT_X(!mCollection.resource().isEmpty(), "FolderSettings::writeConfig", "No resource found in collection");
+    const QString res = resource();
     KConfigGroup configGroup(KernelIf->config(), configGroupName(mCollection));
 
     configGroup.writeEntry("MailingListEnabled", mMailingListEnabled);
@@ -242,8 +242,8 @@ void FolderSettings::writeConfig() const
     if (!mUseDefaultIdentity) {
         uint defaultIdentityId = -1;
 
-        if (PimCommon::Util::isImapResource(mCollection.resource())) {
-            MailCommon::ResourceReadConfigFile resourceFile(mCollection.resource());
+        if (PimCommon::Util::isImapResource(res)) {
+            MailCommon::ResourceReadConfigFile resourceFile(res);
             KConfigGroup grp = resourceFile.group(QStringLiteral("cache"));
             if (grp.isValid()) {
                 defaultIdentityId = grp.readEntry(QStringLiteral("AccountIdentity"), -1);
@@ -319,11 +319,22 @@ void FolderSettings::setIdentity(uint identity)
     }
 }
 
+QString FolderSettings::resource() const
+{
+    const QString resource = mCollection.resource();
+    if (resource.isEmpty()) {
+        const Collection col = CommonKernel->collectionFromId(mCollection.id());
+        Q_ASSERT(col.isValid());
+        Q_ASSERT(!col.resource().isEmpty());
+        return col.resource();
+    }
+    return resource;
+}
+
 uint FolderSettings::fallBackIdentity() const
 {
-    Q_ASSERT_X(!mCollection.resource().isEmpty(), "FolderSettings::fallBackIdentity", "No resource found in collection");
     int identityId = -1;
-    MailCommon::ResourceReadConfigFile resourceFile(mCollection.resource());
+    MailCommon::ResourceReadConfigFile resourceFile(resource());
     KConfigGroup grp = resourceFile.group(QStringLiteral("cache"));
     if (grp.isValid()) {
         const bool useDefault = grp.readEntry(QStringLiteral("UseDefaultIdentity"), true);
