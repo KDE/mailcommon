@@ -113,11 +113,15 @@ FolderTreeWidget::FolderTreeWidget(
     d->quotaModel = new Akonadi::QuotaColorProxyModel(this);
     d->quotaModel->setSourceModel(KernelIf->collectionModel());
 
-    d->filterModel = new Akonadi::StatisticsProxyModel(this);
-    d->filterModel->setSourceModel(d->quotaModel);
+    if (!(options & HideStatistics)) {
+        d->filterModel = new Akonadi::StatisticsProxyModel(this);
+        d->filterModel->setSourceModel(d->quotaModel);
+    }
 
     d->readableproxy = new FolderTreeWidgetProxyModel(this, optReadableProxy);
-    d->readableproxy->setSourceModel(d->filterModel);
+    d->readableproxy->setSourceModel((options & HideStatistics)
+        ? static_cast<QAbstractItemModel*>(d->quotaModel)
+        : static_cast<QAbstractItemModel*>(d->filterModel));
     d->readableproxy->addContentMimeTypeInclusionFilter(KMime::Message::mimeType());
 
     connect(d->folderTreeView, &FolderTreeView::changeTooltipsPolicy, this, &FolderTreeWidget::slotChangeTooltipsPolicy);
@@ -302,10 +306,14 @@ void FolderTreeWidget::changeToolTipsPolicyConfig(ToolTipDisplayPolicy policy)
     switch (policy) {
     case DisplayAlways:
     case DisplayWhenTextElided: //Need to implement in the future
-        d->filterModel->setToolTipEnabled(true);
+        if (d->filterModel) {
+            d->filterModel->setToolTipEnabled(true);
+        }
         break;
     case DisplayNever:
-        d->filterModel->setToolTipEnabled(false);
+        if (d->filterModel) {
+            d->filterModel->setToolTipEnabled(false);
+        }
     }
     d->folderTreeView->setTooltipsPolicy(policy);
 }
