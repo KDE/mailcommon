@@ -178,6 +178,11 @@ bool MailCommon::Util::isMailAgent(const Akonadi::AgentInstance &instance, bool 
     return false;
 }
 
+bool MailCommon::Util::isUnifiedMailboxesAgent(const Akonadi::Collection &col)
+{
+    return col.resource() == QLatin1String("akonadi_unifiedmailbox_agent");
+}
+
 uint MailCommon::Util::folderIdentity(const Akonadi::Item &item)
 {
     uint id = 0;

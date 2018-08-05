@@ -74,6 +74,8 @@ Q_REQUIRED_RESULT MAILCOMMON_EXPORT Akonadi::AgentInstance::List agentInstances(
 
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isMailAgent(const Akonadi::AgentInstance &instance, bool excludeMailTransport = true);
 
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isUnifiedMailboxesAgent(const Akonadi::Collection &col);
+
 /**
    * Returns the identity of the folder that contains the given Akonadi::Item.
    */
