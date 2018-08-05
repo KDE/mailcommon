@@ -72,6 +72,8 @@ Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool showJobErrorMessage(KJob *job);
 
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT Akonadi::AgentInstance::List agentInstances(bool excludeMailTransport = true);
 
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isMailAgent(const Akonadi::AgentInstance &instance, bool excludeMailTransport = true);
+
 /**
    * Returns the identity of the folder that contains the given Akonadi::Item.
    */

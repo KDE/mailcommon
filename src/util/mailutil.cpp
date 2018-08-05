@@ -152,20 +152,30 @@ Akonadi::AgentInstance::List MailCommon::Util::agentInstances(bool excludeMailDi
 {
     Akonadi::AgentInstance::List relevantInstances;
     const Akonadi::AgentInstance::List agentList = Akonadi::AgentManager::self()->instances();
-    for (const Akonadi::AgentInstance &instance : agentList) {
-        const QStringList capabilities(instance.type().capabilities());
-        if (instance.type().mimeTypes().contains(KMime::Message::mimeType())) {
-            if (capabilities.contains(QLatin1String("Resource"))
-                && !capabilities.contains(QLatin1String("Virtual"))
-                && !capabilities.contains(QLatin1String("MailTransport"))) {
-                relevantInstances << instance;
-            } else if (!excludeMailDispacher
-                       && instance.identifier() == QLatin1String("akonadi_maildispatcher_agent")) {
-                relevantInstances << instance;
-            }
-        }
-    }
+    std::copy_if(agentList.cbegin(), agentList.cend(), std::back_inserter(relevantInstances),
+                 [excludeMailDispacher](const Akonadi::AgentInstance &instance) {
+                    return isMailAgent(instance, excludeMailDispacher);
+                });
     return relevantInstances;
+}
+
+bool MailCommon::Util::isMailAgent(const Akonadi::AgentInstance &instance, bool excludeMailTransport)
+{
+    if (!instance.type().mimeTypes().contains(KMime::Message::mimeType())) {
+        return false;
+    }
+
+    const QStringList capabilities(instance.type().capabilities());
+    if (capabilities.contains(QLatin1String("Resource"))
+        && !capabilities.contains(QLatin1String("Virtual"))
+        && !capabilities.contains(QLatin1String("MailTransport"))
+        && !capabilities.contains(QLatin1String("Autostart"))) {
+        return true;
+    } else if (!excludeMailTransport && instance.identifier() == QLatin1String("akonadi_maildispatcher_agent")) {
+        return true;
+    }
+
+    return false;
 }
 
 uint MailCommon::Util::folderIdentity(const Akonadi::Item &item)
