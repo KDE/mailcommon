@@ -59,6 +59,9 @@ public:
             rank = 6;
         } else if (MailCommon::Util::isVirtualCollection(collection)) {
             rank = 200;
+        } else if (collection.parentCollection() == Akonadi::Collection::root() && MailCommon::Util::isUnifiedMailboxesAgent(collection)) {
+            // special treatment for Unified Mailboxes: they are *always* on top
+            rank = 0;
         } else if (!topLevelOrder.isEmpty()) {
             if (collection.parentCollection() == Akonadi::Collection::root()) {
                 const QString resource = collection.resource();
@@ -69,7 +72,7 @@ public:
                 }
                 const int order = topLevelOrder.indexOf(resource);
                 if (order != -1) {
-                    rank = order;
+                    rank = order + 1; /* top-level rank "0" belongs to Unified Mailboxes */
                 }
             }
         }
@@ -121,11 +124,9 @@ void EntityCollectionOrderProxyModel::clearRanks()
 
 bool EntityCollectionOrderProxyModel::lessThan(const QModelIndex &left, const QModelIndex &right) const
 {
+    const auto leftData = left.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+    const auto rightData = right.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
     if (!d->manualSortingActive) {
-        Akonadi::Collection leftData
-            = left.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
-        Akonadi::Collection rightData
-            = right.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
         const int rankLeft = d->collectionRank(leftData);
         const int rankRight = d->collectionRank(rightData);
@@ -138,7 +139,12 @@ bool EntityCollectionOrderProxyModel::lessThan(const QModelIndex &left, const QM
 
         return QSortFilterProxyModel::lessThan(left, right);
     }
-    return EntityOrderProxyModel::lessThan(left, right);
+
+    if (MailCommon::Util::isUnifiedMailboxesAgent(leftData)) {
+        return true;
+    } else {
+        return EntityOrderProxyModel::lessThan(left, right);
+    }
 }
 
 void EntityCollectionOrderProxyModel::setManualSortingActive(bool active)
