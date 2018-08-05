@@ -194,32 +194,26 @@ void AccountConfigOrderDialog::init()
     QMap<QString, InstanceStruct> mapInstance;
     const Akonadi::AgentInstance::List lstInstances = Akonadi::AgentManager::self()->instances();
     for (const Akonadi::AgentInstance &instance : lstInstances) {
-        const QStringList capabilities(instance.type().capabilities());
-        if (instance.type().mimeTypes().contains(KMime::Message::mimeType())) {
-            if (capabilities.contains(QLatin1String("Resource"))
-                && !capabilities.contains(QLatin1String("Virtual"))
-                && !capabilities.contains(QLatin1String("MailTransport"))) {
-                const QString identifier = instance.identifier();
-                if (!identifier.contains(POP3_RESOURCE_IDENTIFIER)) {
-                    instanceList << instance.identifier();
-                    InstanceStruct instanceStruct;
-                    instanceStruct.name = instance.name();
-                    if (PimCommon::Util::isImapResource(identifier)) {
-                        instanceStruct.name += QLatin1String(" (IMAP)");
-                    } else if (identifier.startsWith(QLatin1String("akonadi_maildir_resource"))) {
-                        instanceStruct.name += QLatin1String(" (Maildir)");
-                    } else if (identifier.startsWith(QLatin1String("akonadi_mailbox_resource"))) {
-                        instanceStruct.name += QLatin1String(" (Mailbox)");
-                    } else if (identifier.startsWith(QLatin1String("akonadi_mixedmaildir_resource"))) {
-                        instanceStruct.name += QLatin1String(" (Mixedmaildir)");
-                    } else {
-                        qCDebug(MAILCOMMON_LOG) << " Unknown resource type " << identifier;
-                    }
-                    instanceStruct.icon = instance.type().icon();
-                    mapInstance.insert(instance.identifier(), instanceStruct);
-                }
-            }
+        const QString identifier = instance.identifier();
+        if (!MailCommon::Util::isMailAgent(instance) || identifier.contains(POP3_RESOURCE_IDENTIFIER)) {
+            continue;
         }
+        instanceList << instance.identifier();
+        InstanceStruct instanceStruct;
+        instanceStruct.name = instance.name();
+        if (PimCommon::Util::isImapResource(identifier)) {
+            instanceStruct.name += QLatin1String(" (IMAP)");
+        } else if (identifier.startsWith(QLatin1String("akonadi_maildir_resource"))) {
+            instanceStruct.name += QLatin1String(" (Maildir)");
+        } else if (identifier.startsWith(QLatin1String("akonadi_mailbox_resource"))) {
+            instanceStruct.name += QLatin1String(" (Mailbox)");
+        } else if (identifier.startsWith(QLatin1String("akonadi_mixedmaildir_resource"))) {
+            instanceStruct.name += QLatin1String(" (Mixedmaildir)");
+        } else {
+            qCDebug(MAILCOMMON_LOG) << " Unknown resource type " << identifier;
+        }
+        instanceStruct.icon = instance.type().icon();
+        mapInstance.insert(instance.identifier(), instanceStruct);
     }
     instanceList.sort(Qt::CaseInsensitive);
     const int numberOfList(listOrderAccount.count());
