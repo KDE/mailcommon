@@ -204,7 +204,7 @@ set(libmailcommon_SRCS ${libmailcommon_SRCS} filter/soundtestwidget.cpp)
 macro(add_resource_iface _kcfgFile _ifaceName _className)
   kcfg_generate_dbus_interface(${CMAKE_CURRENT_SOURCE_DIR}/${_kcfgFile} ${_ifaceName})
   string(TOLOWER ${_className} _codeFile)
-  set_source_files_properties(${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml PROPERTIES INCLUDE "pimcommon/metatype.h")
+  set_source_files_properties(${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml PROPERTIES INCLUDE "MailCommon/MetaType")
   qt5_add_dbus_interface(libmailcommon_SRCS
     ${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml ${_codeFile} ${_className}
   )
