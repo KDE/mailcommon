@@ -108,7 +108,7 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Messa
 
             QFile file(tempFileName);
             if (!file.open(QIODevice::WriteOnly)) {
-                qCWarning(MAILCOMMON_LOG) << "Faild to write message to file: " << file.errorString();
+                qCWarning(MAILCOMMON_LOG) << "Failed to write message to file: " << file.errorString();
                 tempFile->close();
                 continue;
             }
