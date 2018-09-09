@@ -15,8 +15,8 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef RESOUCEREADCONFIGFILE_H
-#define RESOUCEREADCONFIGFILE_H
+#ifndef RESOURCEREADCONFIGFILE_H
+#define RESOURCEREADCONFIGFILE_H
 
 #include <KConfigGroup>
 #include <QString>
@@ -36,4 +36,4 @@ private:
 };
 }
 
-#endif // RESOUCEREADCONFIGFILE_H
+#endif // RESOURCEREADCONFIGFILE_H
