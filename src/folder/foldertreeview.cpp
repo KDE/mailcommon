@@ -145,14 +145,16 @@ void FolderTreeView::slotHeaderContextMenuRequested(const QPoint &pnt)
     // the menu for the columns
     QMenu menu;
     QAction *act = nullptr;
-    menu.addSection(i18n("View Columns"));
     const int nbColumn = header()->count();
-    for (int i = 1; i < nbColumn; ++i) {
-        act = menu.addAction(model()->headerData(i, Qt::Horizontal).toString());
-        act->setCheckable(true);
-        act->setChecked(!header()->isSectionHidden(i));
-        act->setData(QVariant(i));
-        connect(act, &QAction::triggered, this, &FolderTreeView::slotHeaderContextMenuChangeHeader);
+    if (nbColumn > 1) {
+        menu.addSection(i18n("View Columns"));
+        for (int i = 1; i < nbColumn; ++i) {
+            act = menu.addAction(model()->headerData(i, Qt::Horizontal).toString());
+            act->setCheckable(true);
+            act->setChecked(!header()->isSectionHidden(i));
+            act->setData(QVariant(i));
+            connect(act, &QAction::triggered, this, &FolderTreeView::slotHeaderContextMenuChangeHeader);
+        }
     }
 
     menu.addSection(i18n("Icon Size"));
