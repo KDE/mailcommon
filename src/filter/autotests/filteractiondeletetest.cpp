@@ -65,7 +65,7 @@ void FilterActionDeleteTest::shouldDeleteItem()
     item.setPayload<KMime::Message::Ptr>(msgPtr);
     MailCommon::ItemContext context(item, false);
 
-    filter.argsFromString("");
+    filter.argsFromString(QString());
     QCOMPARE(filter.process(context, false), MailCommon::FilterAction::GoOn);
     QCOMPARE(context.needsPayloadStore(), false);
     QCOMPARE(context.deleteItem(), true);

@@ -30,7 +30,7 @@ FilterActionPipeThroughTest::FilterActionPipeThroughTest()
 void FilterActionPipeThroughTest::setOutput(FilterAction *filter, const QByteArray &output)
 {
     QByteArray sendData = output;
-    filter->argsFromString(QLatin1String("echo \"") + sendData.replace('"', "\\\"") + "\"");
+    filter->argsFromString(QLatin1String("echo \"") + QString::fromUtf8(sendData.replace('"', "\\\"")) + QStringLiteral("\""));
 }
 
 void FilterActionPipeThroughTest::testWithNoCommand()

@@ -91,7 +91,7 @@ SearchRule::RequiredPart FilterActionSendFakeDisposition::requiredPart() const
 void FilterActionSendFakeDisposition::argsFromString(const QString &argsStr)
 {
     if (argsStr.length() == 1) {
-        if (argsStr[ 0 ] == 'I') {   // ignore
+        if (argsStr[ 0 ] == QLatin1Char('I')) {   // ignore
             mParameter = mParameterList.at(1);
             return;
         }

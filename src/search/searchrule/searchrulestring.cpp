@@ -137,8 +137,8 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
                 || matchesInternal(msg->bcc()->asUnicodeString());
         }
         msgContents = msg->to()->asUnicodeString();
-        msgContents += ", " + msg->cc()->asUnicodeString();
-        msgContents += ", " + msg->bcc()->asUnicodeString();
+        msgContents += QStringLiteral(", ") + msg->cc()->asUnicodeString();
+        msgContents += QStringLiteral(", ") + msg->bcc()->asUnicodeString();
     } else if (qstricmp(field().constData(), "<tag>") == 0) {
         //port?
         //     const Nepomuk2::Resource res( item.url() );

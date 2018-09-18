@@ -647,8 +647,8 @@ const QString MailFilter::asString() const
 {
     QString result;
 
-    result += "Filter name: " + name() + " (" + mIdentifier  + ")\n";
-    result += mPattern.asString() + '\n';
+    result += QStringLiteral("Filter name: ") + name() + QStringLiteral(" (") + mIdentifier  + QStringLiteral(")\n");
+    result += mPattern.asString() + QLatin1Char('\n');
 
     result += QString("Filter is %1\n").arg(bEnabled ? QStringLiteral("enabled") : QStringLiteral("disabled"));
 

@@ -72,7 +72,7 @@ void FilterActionRewriteHeaderTest::shouldNotExecuteActionWhenParameterIsEmpty()
     item.setPayload<KMime::Message::Ptr>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
-    filter.argsFromString(QStringLiteral(""));
+    filter.argsFromString(QString());
     QCOMPARE(filter.process(context, false), MailCommon::FilterAction::ErrorButGoOn);
     QCOMPARE(context.needsPayloadStore(), false);
 }
@@ -121,7 +121,7 @@ void FilterActionRewriteHeaderTest::shouldRewriteHeader()
     item.setPayload<KMime::Message::Ptr>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
-    filter.argsFromString("testheader\tfoo\tbla");
+    filter.argsFromString(QStringLiteral("testheader\tfoo\tbla"));
     QCOMPARE(filter.process(context, false), MailCommon::FilterAction::GoOn);
     QCOMPARE(context.needsPayloadStore(), true);
     QCOMPARE(msgPtr->encodedContent(), output);
@@ -145,7 +145,7 @@ void FilterActionRewriteHeaderTest::shouldNotRewriteHeaderWhenHeaderNotFound()
     item.setPayload<KMime::Message::Ptr>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
-    filter.argsFromString("testheader\tfoo\tbla");
+    filter.argsFromString(QStringLiteral("testheader\tfoo\tbla"));
     QCOMPARE(filter.process(context, false), MailCommon::FilterAction::GoOn);
     QCOMPARE(context.needsPayloadStore(), false);
     QCOMPARE(msgPtr->encodedContent(), data);

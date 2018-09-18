@@ -63,7 +63,7 @@ void FilterActionAddToAddressBookTest::shouldReportErrorWhenArgumentIsEmpty()
     item.setPayload<KMime::Message::Ptr>(msgPtr);
     MailCommon::ItemContext context(item, false);
 
-    filter.argsFromString("");
+    filter.argsFromString(QString());
     QVERIFY(filter.isEmpty());
     QCOMPARE(filter.process(context, false), MailCommon::FilterAction::ErrorButGoOn);
     QCOMPARE(context.needsPayloadStore(), false);
@@ -79,7 +79,7 @@ void FilterActionAddToAddressBookTest::shouldReportErrorWhenCollectionIsInvalid(
     item.setPayload<KMime::Message::Ptr>(msgPtr);
     MailCommon::ItemContext context(item, false);
 
-    filter.argsFromString("foo\t-1\tddd");
+    filter.argsFromString(QStringLiteral("foo\t-1\tddd"));
     QVERIFY(filter.isEmpty());
     QCOMPARE(filter.process(context, false), MailCommon::FilterAction::ErrorButGoOn);
     QCOMPARE(context.needsPayloadStore(), false);

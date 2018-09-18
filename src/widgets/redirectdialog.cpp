@@ -186,8 +186,8 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
     d->mTransportCombobox = new MailTransport::TransportComboBox;
     formLayout->addRow(i18n("Transport:"), d->mTransportCombobox);
 
-    KGuiItem::assign(d->mUser1Button, KGuiItem(i18n("&Send Now"), QIcon::fromTheme("mail-send")));
-    KGuiItem::assign(d->mUser2Button, KGuiItem(i18n("Send &Later"), QIcon::fromTheme("mail-queue")));
+    KGuiItem::assign(d->mUser1Button, KGuiItem(i18n("&Send Now"), QIcon::fromTheme(QStringLiteral("mail-send"))));
+    KGuiItem::assign(d->mUser2Button, KGuiItem(i18n("Send &Later"), QIcon::fromTheme(QStringLiteral("mail-queue"))));
     connect(d->mUser1Button, &QPushButton::clicked, this, [this]() {
         d->slotUser1();
     });

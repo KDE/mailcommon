@@ -33,7 +33,7 @@ void FilterImportClawMailtest::initTestCase()
 void FilterImportClawMailtest::testImportFilters()
 {
     MailCommon::FilterImporterClawsMails importer;
-    MailCommon::MailFilter *filter = importer.parseLine("enabled rulename \"foo\" subject matchcase \"fff\" add_to_addressbook \"From\" \"addrbook-000002.xml\"");
+    MailCommon::MailFilter *filter = importer.parseLine(QStringLiteral("enabled rulename \"foo\" subject matchcase \"fff\" add_to_addressbook \"From\" \"addrbook-000002.xml\""));
     QCOMPARE(filter->toolbarName(), QStringLiteral("foo"));
     QVERIFY(filter->isEnabled());
     delete filter;

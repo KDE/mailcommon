@@ -72,7 +72,7 @@ GPGHelper::~GPGHelper()
     // shutdown gpg-agent
     QProcess gpgshutdown;
     auto env = gpgshutdown.processEnvironment();
-    env.insert("GNUPGHOME", gnupgHome());
+    env.insert(QStringLiteral("GNUPGHOME"), gnupgHome());
     gpgshutdown.setProcessEnvironment(env);
     gpgshutdown.start(QStringLiteral("gpg-connect-agent"));
     QVERIFY(gpgshutdown.waitForStarted());
@@ -91,7 +91,7 @@ QByteArray GPGHelper::runGpg(const QByteArray &in, GPGHelper::CryptoType crypto,
     QProcess gpg;
     gpg.setReadChannel(QProcess::StandardOutput);
     auto env = gpg.processEnvironment();
-    env.insert("GNUPGHOME", gnupgHome());
+    env.insert(QStringLiteral("GNUPGHOME"), gnupgHome());
     gpg.setProcessEnvironment(env);
     gpg.start(gpgexe(crypto), args);
     if (!gpg.waitForStarted()) {

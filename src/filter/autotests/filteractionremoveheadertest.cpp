@@ -61,7 +61,7 @@ void FilterActionRemoveHeaderTest::shouldNotExecuteActionWhenParameterIsEmpty()
     item.setPayload<KMime::Message::Ptr>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
-    filter.argsFromString("");
+    filter.argsFromString(QString());
     QCOMPARE(filter.process(context, false), MailCommon::FilterAction::ErrorButGoOn);
     QCOMPARE(context.needsPayloadStore(), false);
 }
@@ -92,7 +92,7 @@ void FilterActionRemoveHeaderTest::shouldRemoveHeader()
     item.setPayload<KMime::Message::Ptr>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
-    filter.argsFromString("testheader");
+    filter.argsFromString(QStringLiteral("testheader"));
     QCOMPARE(filter.process(context, false), MailCommon::FilterAction::GoOn);
     QCOMPARE(context.needsPayloadStore(), true);
     QCOMPARE(msgPtr->encodedContent(), output);
@@ -117,7 +117,7 @@ void FilterActionRemoveHeaderTest::shouldNotTryToRemoveHeaderWhenItDoesntExist()
     item.setPayload<KMime::Message::Ptr>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
-    filter.argsFromString("testheader");
+    filter.argsFromString(QStringLiteral("testheader"));
     QCOMPARE(filter.process(context, false), MailCommon::FilterAction::GoOn);
     QCOMPARE(context.needsPayloadStore(), false);
     QCOMPARE(msgPtr->encodedContent(), data);
