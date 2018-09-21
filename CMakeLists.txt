@@ -77,6 +77,18 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX MAILCOMMON
                         SOVERSION 5
 )
 
+find_package(KF5Purpose CONFIG QUIET)
+set_package_properties(KF5Purpose PROPERTIES DESCRIPTION "Support for sharing file"
+                       TYPE OPTIONAL
+                      )
+if (KF5Purpose_FOUND)
+  message(STATUS "Found KF5 Purpose, filesharing enabled")
+  set(KF5_USE_PURPOSE true)
+  add_definitions(-DKF5_USE_PURPOSE)
+else()
+  message(STATUS "KF5 Purpose not found, filesharing disabled")
+endif()
+
 find_package(Xsltproc)
 set_package_properties(Xsltproc PROPERTIES DESCRIPTION "XSLT processor from libxslt" TYPE REQUIRED PURPOSE "Required to generate D-Bus interfaces for all Akonadi resources.")
 
