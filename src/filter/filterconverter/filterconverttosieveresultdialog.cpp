@@ -20,16 +20,25 @@
 #include "kpimtextedit/plaintexteditorwidget.h"
 #include <PimCommon/PimUtil>
 
+#ifdef KF5_USE_PURPOSE
+#include <Purpose/AlternativesModel>
+#include <PurposeWidgets/Menu>
+#include <QJsonArray>
+#endif
+
+
 #include <KLocalizedString>
 #include <KSyntaxHighlighting/Definition>
 #include <KSyntaxHighlighting/SyntaxHighlighter>
 #include <KSyntaxHighlighting/Theme>
 
 #include <KSharedConfig>
+#include <KMessageBox>
 #include <KConfigGroup>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QTemporaryFile>
 
 using namespace MailCommon;
 
@@ -49,6 +58,18 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
     setModal(true);
     connect(saveButton, &QPushButton::clicked, this, &FilterConvertToSieveResultDialog::slotSave);
 
+#ifdef KF5_USE_PURPOSE
+    QPushButton *mShareButton = new QPushButton(i18n("Share..."), this);
+    mShareMenu = new Purpose::Menu(this);
+    mShareMenu->model()->setPluginType(QStringLiteral("Export"));
+    connect(mShareMenu, &Purpose::Menu::aboutToShow, this, &FilterConvertToSieveResultDialog::slotInitializeShareMenu);
+    mShareButton->setMenu(mShareMenu);
+    mShareButton->setIcon( QIcon::fromTheme(QStringLiteral("document-share")));
+    connect(mShareMenu, &Purpose::Menu::finished, this, &FilterConvertToSieveResultDialog::slotShareActionFinished);
+    buttonBox->addButton(mShareButton, QDialogButtonBox::ActionRole);
+#endif
+
+
     mEditor = new KPIMTextEdit::PlainTextEditorWidget;
     mEditor->editor()->setSpellCheckingSupport(false);
     mEditor->setObjectName(QStringLiteral("editor"));
@@ -66,6 +87,44 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
 FilterConvertToSieveResultDialog::~FilterConvertToSieveResultDialog()
 {
     writeConfig();
+#ifdef KF5_USE_PURPOSE
+    delete mTemporaryShareFile;
+#endif
+}
+
+void FilterConvertToSieveResultDialog::slotInitializeShareMenu()
+{
+#ifdef KF5_USE_PURPOSE
+    delete mTemporaryShareFile;
+    mTemporaryShareFile = new QTemporaryFile();
+    mTemporaryShareFile->open();
+    mTemporaryShareFile->setPermissions(QFile::ReadUser);
+    mTemporaryShareFile->write(mEditor->editor()->toPlainText().toUtf8());
+    mTemporaryShareFile->close();
+    mShareMenu->model()->setInputData(QJsonObject {
+        { QStringLiteral("urls"), QJsonArray { {QUrl::fromLocalFile(mTemporaryShareFile->fileName()).toString()} } },
+        { QStringLiteral("mimeType"), { QStringLiteral("text/plain") } }
+    });
+    mShareMenu->reload();
+#endif
+}
+
+void FilterConvertToSieveResultDialog::slotShareActionFinished(const QJsonObject &output, int error, const QString &message)
+{
+#ifdef KF5_USE_PURPOSE
+    if (error) {
+        KMessageBox::error(this, i18n("There was a problem sharing the document: %1", message),
+                           i18n("Share"));
+    } else {
+        const QString url = output[QLatin1String("url")].toString();
+        if (url.isEmpty()) {
+            KMessageBox::information(this, i18n("File was shared."));
+        } else {
+            KMessageBox::information(this, i18n("<qt>You can find the new request at:<br /><a href='%1'>%1</a> </qt>", url),
+                    QString(), QString(), KMessageBox::AllowLink);
+        }
+    }
+#endif
 }
 
 void FilterConvertToSieveResultDialog::slotSave()

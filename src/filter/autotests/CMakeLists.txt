@@ -4,6 +4,10 @@ set(mailcommon_filter_test_LIBS Qt5::Test Qt5::Gui KF5::AkonadiCore KF5::Akonadi
                                 KF5::MailTransport KF5::I18n KF5::SyntaxHighlighting
 )
 
+if (KF5_USE_PURPOSE)
+    set(mailcommon_filter_test_LIBS ${mailcommon_filter_test_LIBS} KF5::Purpose KF5::PurposeWidgets)
+endif()
+
 add_definitions(-DTEST_PATH=\"${CMAKE_CURRENT_SOURCE_DIR}\")
 
 macro(add_mailcommon_filter_test _name)

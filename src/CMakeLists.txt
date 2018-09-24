@@ -247,6 +247,11 @@ PRIVATE
   KF5::ItemViews
   KF5::SyntaxHighlighting
 )
+
+if (KF5_USE_PURPOSE)
+    target_link_libraries(KF5MailCommon PRIVATE KF5::Purpose KF5::PurposeWidgets)
+endif()
+
 target_include_directories(KF5MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/MailCommon/;${KDE_INSTALL_INCLUDEDIR_KF5}/mailcommon>")
 target_include_directories(KF5MailCommon PUBLIC "$<BUILD_INTERFACE:${mailcommon_SOURCE_DIR}/src;${mailcommon_BINARY_DIR}/src;${mailcommon_SOURCE_DIR}/src/search;${mailcommon_SOURCE_DIR}/src/folder>")
 

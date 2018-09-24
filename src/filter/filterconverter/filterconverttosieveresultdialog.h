@@ -20,10 +20,15 @@
 
 #include <KSyntaxHighlighting/Repository>
 #include <QDialog>
-
+class QTemporaryFile;
 namespace KPIMTextEdit {
 class PlainTextEditorWidget;
 }
+#ifdef KF5_USE_PURPOSE
+namespace Purpose {
+class Menu;
+}
+#endif
 
 namespace MailCommon {
 class FilterConvertToSieveResultDialog : public QDialog
@@ -41,8 +46,14 @@ private Q_SLOTS:
 private:
     void readConfig();
     void writeConfig();
+    void slotShareActionFinished(const QJsonObject &output, int error, const QString &message);
+    void slotInitializeShareMenu();
     KPIMTextEdit::PlainTextEditorWidget *mEditor = nullptr;
     KSyntaxHighlighting::Repository mSyntaxRepo;
+#ifdef KF5_USE_PURPOSE
+    Purpose::Menu *mShareMenu = nullptr;
+    QTemporaryFile *mTemporaryShareFile = nullptr;
+#endif
 };
 }
 
