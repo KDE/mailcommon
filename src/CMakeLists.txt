@@ -156,6 +156,7 @@ set(libmailcommon_widget_SRCS
   widgets/redirectdialog.cpp
   widgets/redirectwidget.cpp
   widgets/favoritecollectionwidget.cpp
+  widgets/purposemenuwidget.cpp
 )
 
 set(libmailcommon_mdn_SRCS
@@ -428,6 +429,7 @@ ecm_generate_headers(MailCommon_Camelcasewidgets_HEADERS
   HEADER_NAMES
   RedirectDialog
   FavoriteCollectionWidget
+  PurposeMenuWidget
   REQUIRED_HEADERS MailCommon_widgets_HEADERS
   PREFIX MailCommon
   RELATIVE widgets
