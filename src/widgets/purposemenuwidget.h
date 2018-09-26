@@ -25,15 +25,27 @@ namespace Purpose {
 class Menu;
 }
 #endif
-
+class QMenu;
+class QTemporaryFile;
 namespace MailCommon
 {
 class MAILCOMMON_EXPORT PurposeMenuWidget : public QObject
 {
     Q_OBJECT
 public:
-    explicit PurposeMenuWidget(QObject *parent = nullptr);
-    ~PurposeMenuWidget();
+    explicit PurposeMenuWidget(QWidget *parentWidget, QObject *parent = nullptr);
+    ~PurposeMenuWidget() override;
+
+    virtual QByteArray text() = 0;
+    QMenu *menu() const;
+private:
+    void slotInitializeShareMenu();
+    void slotShareActionFinished(const QJsonObject &output, int error, const QString &message);
+#ifdef KF5_USE_PURPOSE
+    Purpose::Menu *mShareMenu = nullptr;
+    QTemporaryFile *mTemporaryShareFile = nullptr;
+#endif
+    QWidget *mParentWidget = nullptr;
 };
 }
 
