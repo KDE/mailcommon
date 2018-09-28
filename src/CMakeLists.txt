@@ -14,6 +14,7 @@ set(libmailcommon_filter_SRCS
   filter/filterselectiondialog.cpp
   filter/filterconverter/filterconverttosieve.cpp
   filter/filterconverter/filterconverttosieveresultdialog.cpp
+  filter/filterconverter/filterconverttosievepurposemenuwidget.cpp
   filter/filteractions/filteraction.cpp
   filter/filteractions/filteractionaddheader.cpp
   filter/filteractions/filteractionaddtag.cpp

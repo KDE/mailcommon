@@ -24,11 +24,6 @@ class QTemporaryFile;
 namespace KPIMTextEdit {
 class PlainTextEditorWidget;
 }
-#ifdef KF5_USE_PURPOSE
-namespace Purpose {
-class Menu;
-}
-#endif
 
 namespace MailCommon {
 class FilterConvertToSieveResultDialog : public QDialog
@@ -50,10 +45,6 @@ private:
     void slotInitializeShareMenu();
     KPIMTextEdit::PlainTextEditorWidget *mEditor = nullptr;
     KSyntaxHighlighting::Repository mSyntaxRepo;
-#ifdef KF5_USE_PURPOSE
-    Purpose::Menu *mShareMenu = nullptr;
-    QTemporaryFile *mTemporaryShareFile = nullptr;
-#endif
 };
 }
 

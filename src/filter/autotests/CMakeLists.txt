@@ -235,6 +235,7 @@ add_mailcommon_filter_test(filteractionsettransporttest
 add_mailcommon_filter_test(filterconverttosieveresultdialog
     filterconverttosieveresultdialogtest.cpp
     ../filterconverter/filterconverttosieveresultdialog.cpp
+    ../filterconverter/filterconverttosievepurposemenuwidget.cpp
     ${filter_common_SRCS}
 )
 
