@@ -120,8 +120,8 @@ FolderTreeWidget::FolderTreeWidget(
 
     d->readableproxy = new FolderTreeWidgetProxyModel(this, optReadableProxy);
     d->readableproxy->setSourceModel((options & HideStatistics)
-        ? static_cast<QAbstractItemModel*>(d->quotaModel)
-        : static_cast<QAbstractItemModel*>(d->filterModel));
+                                     ? static_cast<QAbstractItemModel *>(d->quotaModel)
+                                     : static_cast<QAbstractItemModel *>(d->filterModel));
     d->readableproxy->addContentMimeTypeInclusionFilter(KMime::Message::mimeType());
 
     connect(d->folderTreeView, &FolderTreeView::changeTooltipsPolicy, this, &FolderTreeWidget::slotChangeTooltipsPolicy);
@@ -244,7 +244,7 @@ Akonadi::Collection::List FolderTreeWidget::selectedCollections() const
         if (index.isValid()) {
             const Akonadi::Collection collection
                 = index.model()->data(
-                index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+                      index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
             if (collection.isValid()) {
                 collections.append(collection);
             }

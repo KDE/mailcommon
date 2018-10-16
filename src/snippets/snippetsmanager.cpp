@@ -669,7 +669,7 @@ void SnippetsManager::setEditor(QObject *editor, const char *insertSnippetMethod
     if (dropSignal) {
         const int index
             = editor->metaObject()->indexOfSignal(
-            QMetaObject::normalizedSignature(dropSignal + 1).data());        // skip the leading '2'
+                  QMetaObject::normalizedSignature(dropSignal + 1).data());  // skip the leading '2'
         if (index != -1) {
             connect(editor, dropSignal, this, SLOT(insertSelectedSnippet()));
         }

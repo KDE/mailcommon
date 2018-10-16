@@ -22,7 +22,6 @@
 FilterconverttosievePurposeMenuWidget::FilterconverttosievePurposeMenuWidget(QWidget *parentWidget, QObject *parent)
     : PimCommon::PurposeMenuWidget(parentWidget, parent)
 {
-
 }
 
 FilterconverttosievePurposeMenuWidget::~FilterconverttosievePurposeMenuWidget()

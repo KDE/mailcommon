@@ -125,8 +125,8 @@ void FolderTreeView::readConfig()
     setIconSize(QSize(iIconSize, iIconSize));
     mToolTipDisplayPolicy
         = static_cast<FolderTreeWidget::ToolTipDisplayPolicy>(
-        myGroup.readEntry("ToolTipDisplayPolicy",
-                          static_cast<int>(FolderTreeWidget::DisplayAlways)));
+              myGroup.readEntry("ToolTipDisplayPolicy",
+                                static_cast<int>(FolderTreeWidget::DisplayAlways)));
 
     Q_EMIT changeTooltipsPolicy(mToolTipDisplayPolicy);
 
@@ -500,12 +500,12 @@ bool FolderTreeView::allowedToEnterFolder(const Akonadi::Collection &collection,
     // parameter (kept in the config file for kmail)
     const int result
         = KMessageBox::questionYesNo(
-        const_cast<FolderTreeView *>(this),
-        i18n("<qt>Go to the next unread message in folder <b>%1</b>?</qt>", collection.name()),
-        i18n("Go to Next Unread Message"),
-        KGuiItem(i18n("Go To")),
-        KGuiItem(i18n("Do Not Go To")),         // defaults
-        QStringLiteral(":kmail_AskNextFolder"), nullptr);
+              const_cast<FolderTreeView *>(this),
+              i18n("<qt>Go to the next unread message in folder <b>%1</b>?</qt>", collection.name()),
+              i18n("Go to Next Unread Message"),
+              KGuiItem(i18n("Go To")),
+              KGuiItem(i18n("Do Not Go To")),   // defaults
+              QStringLiteral(":kmail_AskNextFolder"), nullptr);
 
     return result == KMessageBox::Yes;
 }
@@ -522,7 +522,7 @@ bool FolderTreeView::isUnreadFolder(const QModelIndex &current, QModelIndex &ind
         if (index.isValid()) {
             const Akonadi::Collection collection
                 = index.model()->data(
-                current, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+                      current, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
             if (collection.isValid()) {
                 if (collection.statistics().unreadCount() > 0) {
@@ -572,8 +572,8 @@ Akonadi::Collection FolderTreeView::currentFolder() const
     if (current.isValid()) {
         const Akonadi::Collection collection
             = current.model()->data(
-            current,
-            Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+                  current,
+                  Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         return collection;
     }
     return Akonadi::Collection();

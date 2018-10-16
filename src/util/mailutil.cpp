@@ -154,8 +154,8 @@ Akonadi::AgentInstance::List MailCommon::Util::agentInstances(bool excludeMailDi
     const Akonadi::AgentInstance::List agentList = Akonadi::AgentManager::self()->instances();
     std::copy_if(agentList.cbegin(), agentList.cend(), std::back_inserter(relevantInstances),
                  [excludeMailDispacher](const Akonadi::AgentInstance &instance) {
-                    return isMailAgent(instance, excludeMailDispacher);
-                });
+        return isMailAgent(instance, excludeMailDispacher);
+    });
     return relevantInstances;
 }
 

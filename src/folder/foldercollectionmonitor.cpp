@@ -91,7 +91,7 @@ void FolderCollectionMonitor::expireAllCollection(const QAbstractItemModel *mode
         const QModelIndex index = model->index(row, 0, parentIndex);
         const Akonadi::Collection collection
             = model->data(
-            index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+                  index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
         if (!collection.isValid() || Util::isVirtualCollection(collection)) {
             continue;
@@ -100,7 +100,7 @@ void FolderCollectionMonitor::expireAllCollection(const QAbstractItemModel *mode
         bool mustDeleteExpirationAttribute = false;
         MailCommon::ExpireCollectionAttribute *attr
             = MailCommon::Util::expirationCollectionAttribute(
-            collection, mustDeleteExpirationAttribute);
+                  collection, mustDeleteExpirationAttribute);
 
         if (attr->isAutoExpire()) {
             MailCommon::Util::expireOldMessages(collection, immediate);

@@ -127,7 +127,6 @@ bool EntityCollectionOrderProxyModel::lessThan(const QModelIndex &left, const QM
     const auto leftData = left.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
     const auto rightData = right.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
     if (!d->manualSortingActive) {
-
         const int rankLeft = d->collectionRank(leftData);
         const int rankRight = d->collectionRank(rightData);
 

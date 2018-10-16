@@ -648,7 +648,7 @@ void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeT
     //------------the list of SearchRuleWidget's
     mRuleLister
         = new SearchRuleWidgetLister(
-        this, options, modeType);
+              this, options, modeType);
 
     mRuleLister->slotClear();
 

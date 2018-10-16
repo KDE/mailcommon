@@ -167,7 +167,7 @@ bool FolderTreeWidgetProxyModel::acceptRow(int sourceRow, const QModelIndex &sou
 
     const Akonadi::Collection collection
         = sourceModel()->data(
-        modelIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+              modelIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
     if (!d->checker.isWantedCollection(collection)) {
         return false;
     }
@@ -202,7 +202,7 @@ QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) co
         const QModelIndex rowIndex = sourceIndex.sibling(sourceIndex.row(), 0);
         const Akonadi::Collection collection
             = sourceModel()->data(
-            rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+                  rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
         if (!MailCommon::Util::isVirtualCollection(collection)) {
             const Akonadi::AgentInstance instance
@@ -217,7 +217,7 @@ QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) co
         const QModelIndex rowIndex = sourceIndex.sibling(sourceIndex.row(), 0);
         const Akonadi::Collection collection
             = sourceModel()->data(
-            rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+                  rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         if (!MailCommon::Util::isVirtualCollection(collection)) {
             const Akonadi::AgentInstance instance
                 = Akonadi::AgentManager::self()->instance(collection.resource());

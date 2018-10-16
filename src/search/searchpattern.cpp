@@ -175,9 +175,9 @@ void SearchPattern::importLegacyConfig(const KConfigGroup &config)
 {
     SearchRule::Ptr rule
         = SearchRule::createInstance(
-        config.readEntry("fieldA").toLatin1(),
-        config.readEntry("funcA").toLatin1().constData(),
-        config.readEntry("contentsA"));
+              config.readEntry("fieldA").toLatin1(),
+              config.readEntry("funcA").toLatin1().constData(),
+              config.readEntry("contentsA"));
 
     if (rule->isEmpty()) {
         // if the first rule is invalid,
@@ -193,9 +193,9 @@ void SearchPattern::importLegacyConfig(const KConfigGroup &config)
 
     rule
         = SearchRule::createInstance(
-        config.readEntry("fieldB").toLatin1(),
-        config.readEntry("funcB").toLatin1().constData(),
-        config.readEntry("contentsB"));
+              config.readEntry("fieldB").toLatin1(),
+              config.readEntry("funcB").toLatin1().constData(),
+              config.readEntry("contentsB"));
 
     if (rule->isEmpty()) {
         return;

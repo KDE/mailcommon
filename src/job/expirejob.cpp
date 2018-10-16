@@ -87,7 +87,7 @@ void ExpireJob::execute()
 
     MailCommon::ExpireCollectionAttribute *expirationAttribute
         = MailCommon::Util::expirationCollectionAttribute(
-        mSrcFolder, mustDeleteExpirationAttribute);
+              mSrcFolder, mustDeleteExpirationAttribute);
 
     expirationAttribute->daysToExpire(unreadDays, readDays);
     if (mustDeleteExpirationAttribute) {
@@ -170,7 +170,7 @@ void ExpireJob::done()
 
         MailCommon::ExpireCollectionAttribute *expirationAttribute
             = MailCommon::Util::expirationCollectionAttribute(
-            mSrcFolder, mustDeleteExpirationAttribute);
+                  mSrcFolder, mustDeleteExpirationAttribute);
 
         if (expirationAttribute->expireAction() == MailCommon::ExpireCollectionAttribute::ExpireDelete) {
             // Expire by deletion, i.e. move to null target folder
@@ -258,7 +258,7 @@ void ExpireJob::slotExpireDone(KJob *job)
 
     MailCommon::ExpireCollectionAttribute *expirationAttribute
         = MailCommon::Util::expirationCollectionAttribute(
-        mSrcFolder, mustDeleteExpirationAttribute);
+              mSrcFolder, mustDeleteExpirationAttribute);
 
     switch (error) {
     case KJob::NoError:

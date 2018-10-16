@@ -200,7 +200,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     QHBoxLayout *layout = new QHBoxLayout(patternGroupBox);
     mPatternEdit
         = new MailCommon::SearchPatternEdit(
-        patternGroupBox, MailCommon::SearchPatternEdit::MatchAllMessages);
+              patternGroupBox, MailCommon::SearchPatternEdit::MatchAllMessages);
     layout->addWidget(mPatternEdit);
 
     vbl->addWidget(patternGroupBox, 0, Qt::AlignTop);

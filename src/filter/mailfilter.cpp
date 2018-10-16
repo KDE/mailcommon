@@ -425,7 +425,7 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
         bApplyOnExplicit = bool(sets.contains(QLatin1String("manual-filtering")));
         bApplyOnAllFolders = bool(sets.contains(QLatin1String("all-folders")));
         mApplicability = static_cast<AccountType>(config.readEntry(
-            "Applicability", static_cast<int>(ButImap)));
+                                                      "Applicability", static_cast<int>(ButImap)));
     }
 
     bStopProcessingHere = config.readEntry("StopProcessingHere", true);
