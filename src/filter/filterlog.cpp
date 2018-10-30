@@ -43,7 +43,6 @@ class Q_DECL_HIDDEN FilterLog::Private
 public:
     Private(FilterLog *qq)
         : q(qq)
-        , mLogging(false)
         , mMaxLogSize(512 * 1024)
         , mCurrentLogSize(0)
         , mAllowedTypes(FilterLog::Meta
@@ -51,6 +50,7 @@ public:
                         |FilterLog::RuleResult
                         |FilterLog::PatternResult
                         |FilterLog::AppliedAction)
+        , mLogging(false)
     {
     }
 
@@ -58,10 +58,10 @@ public:
 
     FilterLog *q;
     QStringList mLogEntries;
-    bool mLogging;
     long mMaxLogSize;
     long mCurrentLogSize;
     int mAllowedTypes;
+    bool mLogging;
 
     void checkLogSize();
 };
