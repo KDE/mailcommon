@@ -36,14 +36,14 @@ void FilterConvertToSieve::convert()
 {
     QString result;
     if (!mListFilters.isEmpty()) {
-        QStringList requires;
+        QStringList requiresModule;
         QString code;
         for (MailFilter *filter : qAsConst(mListFilters)) {
-            filter->generateSieveScript(requires, code);
+            filter->generateSieveScript(requiresModule, code);
             code += QLatin1Char('\n');
         }
         QString requireStr;
-        for (const QString &require : qAsConst(requires)) {
+        for (const QString &require : qAsConst(requiresModule)) {
             requireStr += QStringLiteral("require \"%1\";").arg(require);
             requireStr += QLatin1Char('\n');
         }
