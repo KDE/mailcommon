@@ -391,7 +391,7 @@ QDataStream &SearchPattern::operator<<(QDataStream &s)
     return s;
 }
 
-void SearchPattern::generateSieveScript(QStringList &requires, QString &code)
+void SearchPattern::generateSieveScript(QStringList &requiresModules, QString &code)
 {
     code += QLatin1String("\n#") + mName + QLatin1Char('\n');
     switch (mOperator) {
@@ -413,7 +413,7 @@ void SearchPattern::generateSieveScript(QStringList &requires, QString &code)
         if (i != 0) {
             code += QLatin1String("\n, ");
         }
-        (*it)->generateSieveScript(requires, code);
+        (*it)->generateSieveScript(requiresModules, code);
     }
 }
 

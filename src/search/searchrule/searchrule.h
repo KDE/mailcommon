@@ -179,7 +179,7 @@ public:
      */
     void writeConfig(KConfigGroup &group, int index) const;
 
-    void generateSieveScript(QStringList &requires, QString &code);
+    void generateSieveScript(QStringList &requireModules, QString &code);
 
     /**
      * Sets the filter @p function of the rule.

@@ -215,7 +215,7 @@ public:
     QDataStream &operator>>(QDataStream &s) const;
     QDataStream &operator<<(QDataStream &s);
 
-    void generateSieveScript(QStringList &requires, QString &code);
+    void generateSieveScript(QStringList &requiresModules, QString &code);
 
 private:
     /**

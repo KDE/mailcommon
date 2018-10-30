@@ -321,7 +321,7 @@ public:
     bool isEnabled() const;
     void setEnabled(bool);
 
-    void generateSieveScript(QStringList &requires, QString &code);
+    void generateSieveScript(QStringList &requiresModules, QString &code);
 
     void clearApplyOnAccount();
     void agentRemoved(const QString &identifier);

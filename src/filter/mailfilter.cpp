@@ -501,9 +501,9 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
     return needUpdate;
 }
 
-void MailFilter::generateSieveScript(QStringList &requires, QString &code)
+void MailFilter::generateSieveScript(QStringList &requiresModules, QString &code)
 {
-    mPattern.generateSieveScript(requires, code);
+    mPattern.generateSieveScript(requiresModules, code);
 
     QList<FilterAction *>::const_iterator it;
     QList<FilterAction *>::const_iterator end(mActions.constEnd());
@@ -523,8 +523,8 @@ void MailFilter::generateSieveScript(QStringList &requires, QString &code)
         code += indentationStr + (*it)->sieveCode();
         const QStringList lstRequires = (*it)->sieveRequires();
         for (const QString &str : lstRequires) {
-            if (!requires.contains(str)) {
-                requires.append(str);
+            if (!requiresModules.contains(str)) {
+                requiresModules.append(str);
             }
         }
     }
