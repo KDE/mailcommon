@@ -36,7 +36,7 @@ class FilterActionPlaySound : public FilterActionWithTest
     Q_OBJECT
 public:
     FilterActionPlaySound();
-    ~FilterActionPlaySound();
+    ~FilterActionPlaySound() override;
     Q_REQUIRED_RESULT ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
     Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart() const override;
     static FilterAction *newAction();

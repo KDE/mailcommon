@@ -54,7 +54,7 @@ public:
     /**
      * Destroys the string search rule.
      */
-    virtual ~SearchRuleString();
+    ~SearchRuleString() override;
 
     /**
      * @copydoc SearchRule::isEmpty()

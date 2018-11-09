@@ -71,7 +71,7 @@ public:
     {
     }
 
-    virtual ~ScheduledExpireTask()
+    ~ScheduledExpireTask() override
     {
     }
 

@@ -64,7 +64,7 @@ public:
     /**
      * @copydoc FilterAction::~FilterAction
      */
-    ~FilterActionWithUrl();
+    ~FilterActionWithUrl() override;
 
     /**
      * @copydoc FilterAction::isEmpty
