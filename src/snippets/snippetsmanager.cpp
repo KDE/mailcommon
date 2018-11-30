@@ -495,6 +495,7 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
     d->mDeleteSnippetGroupAction->setIcon(QIcon::fromTheme(QStringLiteral("edit-delete")));
 
     d->mInsertSnippetAction = new QAction(i18n("Insert Snippet"), this);
+    d->mInsertSnippetAction->setIcon(QIcon::fromTheme(QStringLiteral("insert-text")));
 
     connect(d->mSelectionModel, &QItemSelectionModel::selectionChanged,
             this, [this]() {
