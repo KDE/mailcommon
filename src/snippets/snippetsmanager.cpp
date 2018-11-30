@@ -602,12 +602,14 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
     d->mActionCollection = actionCollection;
 
     d->mAddSnippetAction = new QAction(i18n("Add Snippet..."), this);
+    d->mAddSnippetAction->setIcon(QIcon::fromTheme(QStringLiteral("list-add")));
     d->mEditSnippetAction = new QAction(i18n("Edit Snippet..."), this);
     d->mEditSnippetAction->setIcon(QIcon::fromTheme(QStringLiteral("document-properties")));
     d->mDeleteSnippetAction = new QAction(i18n("Remove Snippet"), this);
     d->mDeleteSnippetAction->setIcon(QIcon::fromTheme(QStringLiteral("edit-delete")));
 
     d->mAddSnippetGroupAction = new QAction(i18n("Add Group..."), this);
+    d->mAddSnippetGroupAction->setIcon(QIcon::fromTheme(QStringLiteral("list-add")));
     d->mEditSnippetGroupAction = new QAction(i18n("Rename Group..."), this);
     d->mEditSnippetGroupAction->setIcon(QIcon::fromTheme(QStringLiteral("edit-rename")));
     d->mDeleteSnippetGroupAction = new QAction(i18n("Remove Group"), this);
