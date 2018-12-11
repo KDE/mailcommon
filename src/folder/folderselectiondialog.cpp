@@ -46,11 +46,6 @@ class Q_DECL_HIDDEN FolderSelectionDialog::FolderSelectionDialogPrivate
 {
 public:
     FolderSelectionDialogPrivate()
-        : folderTreeWidget(nullptr)
-        , mUser1Button(nullptr)
-        , mOkButton(nullptr)
-        , mNotAllowToCreateNewFolder(false)
-        , mUseGlobalSettings(true)
     {
     }
 
@@ -58,7 +53,7 @@ public:
     QPushButton *mUser1Button = nullptr;
     QPushButton *mOkButton = nullptr;
     bool mNotAllowToCreateNewFolder = false;
-    bool mUseGlobalSettings = false;
+    bool mUseGlobalSettings = true;
 };
 
 FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOptions options)

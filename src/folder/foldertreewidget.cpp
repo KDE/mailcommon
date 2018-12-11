@@ -57,15 +57,6 @@ class Q_DECL_HIDDEN FolderTreeWidget::FolderTreeWidgetPrivate
 {
 public:
     FolderTreeWidgetPrivate()
-        : filterModel(nullptr)
-        , folderTreeView(nullptr)
-        , quotaModel(nullptr)
-        , readableproxy(nullptr)
-        , entityOrderProxy(nullptr)
-        , filterFolderLineEdit(nullptr)
-        , saver(nullptr)
-        , label(nullptr)
-        , dontKeyFilter(false)
     {
     }
 

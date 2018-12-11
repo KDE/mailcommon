@@ -40,7 +40,6 @@ class MailCommon::FolderCollectionMonitorPrivate
 {
 public:
     FolderCollectionMonitorPrivate()
-        : mMonitor(nullptr)
     {
     }
 

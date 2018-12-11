@@ -24,23 +24,13 @@
 
 using namespace MailCommon;
 
-class Q_DECL_HIDDEN FavoriteCollectionOrderProxyModel::FavoriteCollectionOrderProxyModelPrivate
-{
-public:
-    FavoriteCollectionOrderProxyModelPrivate()
-    {
-    }
-};
-
 FavoriteCollectionOrderProxyModel::FavoriteCollectionOrderProxyModel(QObject *parent)
     : EntityOrderProxyModel(parent)
-    , d(nullptr) //, d(new FavoriteCollectionOrderProxyModelPrivate())
 {
 }
 
 FavoriteCollectionOrderProxyModel::~FavoriteCollectionOrderProxyModel()
 {
-    delete d;
 }
 
 Akonadi::Collection FavoriteCollectionOrderProxyModel::parentCollection(const QModelIndex &index) const

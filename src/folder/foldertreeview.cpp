@@ -38,16 +38,12 @@ using namespace MailCommon;
 
 FolderTreeView::FolderTreeView(QWidget *parent, bool showUnreadCount)
     : Akonadi::EntityTreeView(parent)
-    , mbDisableContextMenuAndExtraColumn(false)
-    , mbDisableSaveConfig(false)
 {
     init(showUnreadCount);
 }
 
 FolderTreeView::FolderTreeView(KXMLGUIClient *xmlGuiClient, QWidget *parent, bool showUnreadCount)
     : Akonadi::EntityTreeView(xmlGuiClient, parent)
-    , mbDisableContextMenuAndExtraColumn(false)
-    , mbDisableSaveConfig(false)
 {
     init(showUnreadCount);
 }
