@@ -40,23 +40,17 @@ class FolderTreeWidgetProxyModel::Private
 {
 public:
     Private()
-        : enableCheck(false)
-        , hideVirtualFolder(false)
-        , hideSpecificFolder(false)
-        , hideOutboxFolder(false)
     {
-        const KColorScheme scheme(QPalette::Active, KColorScheme::View);
-        brokenAccountColor = scheme.foreground(KColorScheme::NegativeText).color();
     }
 
     QSet<QString> includedMimeTypes;
     Akonadi::MimeTypeChecker checker;
 
     QColor brokenAccountColor;
-    bool enableCheck;
-    bool hideVirtualFolder;
-    bool hideSpecificFolder;
-    bool hideOutboxFolder;
+    bool enableCheck = false;
+    bool hideVirtualFolder = false;
+    bool hideSpecificFolder = false;
+    bool hideOutboxFolder = false;
 };
 
 FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModel(QObject *parent, FolderTreeWidgetProxyModelOptions option)
@@ -209,6 +203,10 @@ QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) co
                 = Akonadi::AgentManager::self()->instance(collection.resource());
 
             if (instance.status() == Akonadi::AgentInstance::Broken) {
+                if (!d->brokenAccountColor.isValid()) {
+                    const KColorScheme scheme(QPalette::Active, KColorScheme::View);
+                    d->brokenAccountColor = scheme.foreground(KColorScheme::NegativeText).color();
+                }
                 return d->brokenAccountColor;
             }
         }
@@ -233,7 +231,7 @@ QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) co
 
 void FolderTreeWidgetProxyModel::updatePalette()
 {
-    if (MessageCore::MessageCoreSettings::self()->useDefaultColors()) {
+    if (d->brokenAccountColor.isValid()) {
         KColorScheme scheme(QPalette::Active, KColorScheme::View);
         d->brokenAccountColor = scheme.foreground(KColorScheme::NegativeText).color();
         invalidate();

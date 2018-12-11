@@ -48,10 +48,6 @@ class FolderRequesterPrivate
 {
 public:
     FolderRequesterPrivate()
-        : mEdit(nullptr)
-        , mMustBeReadWrite(true)
-        , mShowOutbox(true)
-        , mNotCreateNewFolder(false)
     {
     }
 
