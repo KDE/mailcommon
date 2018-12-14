@@ -108,9 +108,6 @@ public:
 
     Q_REQUIRED_RESULT EntityCollectionOrderProxyModel *entityOrderProxy() const;
 
-    void quotaWarningParameters(const QColor &color, qreal threshold);
-    void readQuotaConfig();
-
     Q_REQUIRED_RESULT QLineEdit *filterFolderLineEdit() const;
     void applyFilter(const QString &);
     void clearFilter();

@@ -63,6 +63,7 @@ public:
     void updatePalette();
     void readConfig();
 
+    void setWarningThreshold(qreal threshold);
 protected:
     bool acceptRow(int sourceRow, const QModelIndex &sourceParent) const override;
 

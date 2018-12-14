@@ -33,7 +33,6 @@
 #include <AkonadiCore/EntityMimeTypeFilterModel>
 #include <AkonadiCore/EntityTreeModel>
 #include <AkonadiCore/ItemFetchScope>
-#include <AkonadiCore/QuotaColorProxyModel>
 #include <AkonadiCore/StatisticsProxyModel>
 
 #include <AkonadiWidgets/EntityTreeView>
@@ -64,7 +63,6 @@ public:
     QString oldFilterStr;
     Akonadi::StatisticsProxyModel *filterModel = nullptr;
     FolderTreeView *folderTreeView = nullptr;
-    Akonadi::QuotaColorProxyModel *quotaModel = nullptr;
     FolderTreeWidgetProxyModel *readableproxy = nullptr;
     EntityCollectionOrderProxyModel *entityOrderProxy = nullptr;
     QLineEdit *filterFolderLineEdit = nullptr;
@@ -101,18 +99,14 @@ FolderTreeWidget::FolderTreeWidget(
               "Search"));
     lay->addWidget(d->filterFolderLineEdit);
 
-    // ... with statistics...
-    d->quotaModel = new Akonadi::QuotaColorProxyModel(this);
-    d->quotaModel->setSourceModel(KernelIf->collectionModel());
-
     if (!(options & HideStatistics)) {
         d->filterModel = new Akonadi::StatisticsProxyModel(this);
-        d->filterModel->setSourceModel(d->quotaModel);
+        d->filterModel->setSourceModel(KernelIf->collectionModel());
     }
 
     d->readableproxy = new FolderTreeWidgetProxyModel(this, optReadableProxy);
     d->readableproxy->setSourceModel((options & HideStatistics)
-                                     ? static_cast<QAbstractItemModel *>(d->quotaModel)
+                                     ? static_cast<QAbstractItemModel *>(KernelIf->collectionModel())
                                      : static_cast<QAbstractItemModel *>(d->filterModel));
     d->readableproxy->addContentMimeTypeInclusionFilter(KMime::Message::mimeType());
 
@@ -271,6 +265,7 @@ void FolderTreeWidget::readConfig()
 
     d->folderTreeView->readConfig();
     d->folderTreeView->setDropActionMenuEnabled(SettingsIf->showPopupAfterDnD());
+    d->readableproxy->setWarningThreshold(SettingsIf->closeToQuotaThreshold());
     d->readableproxy->readConfig();
 
     KConfigGroup readerConfig(KernelIf->config(), "AccountOrder");
@@ -279,8 +274,6 @@ void FolderTreeWidget::readConfig()
         listOrder = readerConfig.readEntry("order", QStringList());
     }
     d->entityOrderProxy->setTopLevelOrder(listOrder);
-
-    readQuotaConfig();
 }
 
 void FolderTreeWidget::restoreHeaderState(const QByteArray &data)
@@ -308,24 +301,6 @@ void FolderTreeWidget::changeToolTipsPolicyConfig(ToolTipDisplayPolicy policy)
         }
     }
     d->folderTreeView->setTooltipsPolicy(policy);
-}
-
-void FolderTreeWidget::quotaWarningParameters(const QColor &color, qreal threshold)
-{
-    d->quotaModel->setWarningThreshold(threshold);
-    d->quotaModel->setWarningColor(color);
-}
-
-void FolderTreeWidget::readQuotaConfig()
-{
-    QColor quotaColor = MailCommon::Util::defaultQuotaColor();
-    qreal threshold = 100;
-    if (!MessageCore::MessageCoreSettings::self()->useDefaultColors()) {
-        KConfigGroup readerConfig(KernelIf->config(), "Reader");
-        quotaColor = readerConfig.readEntry("CloseToQuotaColor", quotaColor);
-    }
-    threshold = SettingsIf->closeToQuotaThreshold();
-    quotaWarningParameters(quotaColor, threshold);
 }
 
 Akonadi::StatisticsProxyModel *FolderTreeWidget::statisticsProxyModel() const
