@@ -35,13 +35,40 @@
 #include <collectionquotaattribute.h>
 
 #include <QPalette>
+#include <QIcon>
 
 namespace MailCommon {
 class FolderTreeWidgetProxyModel::Private
 {
 public:
-    Private()
+    Private(FolderTreeWidgetProxyModel *qq)
+        : q(qq)
     {
+    }
+
+    bool checkQuotaExcedded(const QModelIndex &index, qreal &percentage)
+    {
+        if (index.model()->hasChildren(index)) {
+            const int rowCount = index.model()->rowCount(index);
+            for (int row = 0; row < rowCount; row++) {
+                const QModelIndex firstIndex = q->mapToSource(index.model()->index(row, 0, index));
+
+                const Akonadi::Collection collectionFirst
+                        = q->sourceModel()->data(
+                            firstIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+                if (collectionFirst.isValid() && collectionFirst.hasAttribute<Akonadi::CollectionQuotaAttribute>()) {
+                    const Akonadi::CollectionQuotaAttribute *quota = collectionFirst.attribute<Akonadi::CollectionQuotaAttribute>();
+
+                    if (quota->currentValue() > -1 && quota->maximumValue() > 0) {
+                        percentage = (100.0 * quota->currentValue()) / quota->maximumValue();
+                        if (percentage >= threshold) {
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+        return false;
     }
 
     QSet<QString> includedMimeTypes;
@@ -49,6 +76,7 @@ public:
 
     QColor brokenAccountColor;
     qreal threshold = 0.0;
+    FolderTreeWidgetProxyModel *q;
     bool enableCheck = false;
     bool hideVirtualFolder = false;
     bool hideSpecificFolder = false;
@@ -57,7 +85,7 @@ public:
 
 FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModel(QObject *parent, FolderTreeWidgetProxyModelOptions option)
     : Akonadi::EntityRightsFilterModel(parent)
-    , d(new Private)
+    , d(new Private(this))
 {
     setDynamicSortFilter(true);
     setFilterCaseSensitivity(Qt::CaseInsensitive);
@@ -230,27 +258,23 @@ QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) co
                 if (!instance.isOnline()) {
                     return i18n("%1 (Offline)", Akonadi::EntityRightsFilterModel::data(index, role).toString());
                 }
+                qreal percentage = 0.0;
+                if (d->checkQuotaExcedded(index, percentage)) {
+                    return i18n("%1 (Reached %2% quota)", Akonadi::EntityRightsFilterModel::data(index, role).toString(), static_cast<int>(percentage));
+                }
             }
+        }
+    } else if (role == Qt::DecorationRole) {
+        const QModelIndex sourceIndex = mapToSource(index);
+        const QModelIndex rowIndex = sourceIndex.sibling(sourceIndex.row(), 0);
+        const Akonadi::Collection collection
+            = sourceModel()->data(
+                  rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        if (!MailCommon::Util::isVirtualCollection(collection)) {
             if (collection.parentCollection() == Akonadi::Collection::root()) {
-                if (index.model()->hasChildren(index)) {
-                    const int rowCount = index.model()->rowCount(index);
-                    for (int row = 0; row < rowCount; row++) {
-                        const QModelIndex firstIndex = mapToSource(index.model()->index(row, 0, index));
-
-                        const Akonadi::Collection collectionFirst
-                                = sourceModel()->data(
-                                    firstIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
-                        if (collectionFirst.isValid() && collectionFirst.hasAttribute<Akonadi::CollectionQuotaAttribute>()) {
-                            const Akonadi::CollectionQuotaAttribute *quota = collectionFirst.attribute<Akonadi::CollectionQuotaAttribute>();
-
-                            if (quota->currentValue() > -1 && quota->maximumValue() > 0) {
-                                const qreal percentage = (100.0 * quota->currentValue()) / quota->maximumValue();
-                                if (percentage >= d->threshold) {
-                                    return i18n("%1 (Reached %2% quota)", Akonadi::EntityRightsFilterModel::data(index, role).toString(), percentage);
-                                }
-                            }
-                        }
-                    }
+                qreal percentage = 0.0;
+                if (d->checkQuotaExcedded(index, percentage)) {
+                    return QIcon::fromTheme(QStringLiteral("emblem-warning"));
                 }
             }
         }
