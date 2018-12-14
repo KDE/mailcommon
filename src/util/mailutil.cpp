@@ -220,12 +220,6 @@ QString MailCommon::Util::realFolderPath(const QString &path)
     return realPath;
 }
 
-QColor MailCommon::Util::defaultQuotaColor()
-{
-    KColorScheme scheme(QPalette::Active, KColorScheme::View);
-    return scheme.foreground(KColorScheme::NegativeText).color();
-}
-
 void MailCommon::Util::expireOldMessages(const Akonadi::Collection &collection, bool immediate)
 {
     ScheduledExpireTask *task = new ScheduledExpireTask(collection, immediate);

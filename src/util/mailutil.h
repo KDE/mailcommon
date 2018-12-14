@@ -83,8 +83,6 @@ Q_REQUIRED_RESULT MAILCOMMON_EXPORT uint folderIdentity(const Akonadi::Item &ite
 
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT QString realFolderPath(const QString &path);
 
-Q_REQUIRED_RESULT MAILCOMMON_EXPORT QColor defaultQuotaColor();
-
 MAILCOMMON_EXPORT void expireOldMessages(const Akonadi::Collection &collection, bool immediate);
 
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT Akonadi::Collection::Id convertFolderPathToCollectionId(const QString &folder);
