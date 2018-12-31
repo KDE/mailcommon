@@ -107,7 +107,7 @@ public:
 
     /**
      * Returns the required part from the item that is needed for the action to
-     * operate. See @ref SearchRule::RequiredPart */
+     * operate. See @ref MailCommon::SearchRule::RequiredPart */
     Q_REQUIRED_RESULT virtual SearchRule::RequiredPart requiredPart() const = 0;
     /**
      * Determines whether this action is valid. But this is just a

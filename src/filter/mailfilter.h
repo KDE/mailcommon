@@ -91,7 +91,7 @@ public:
     */
     Q_REQUIRED_RESULT QString identifier() const;
 
-    /** Equivalent to @pattern()->name(). @return name of the filter */
+    /** Equivalent to @p pattern()->name(). @return name of the filter */
     Q_REQUIRED_RESULT QString name() const;
 
     /** Execute the filter action(s) on the given message.
@@ -101,9 +101,9 @@ public:
       the owner of the message,
       @li 0 if processed successfully.
       @param context The context that contains the item to which the actions should be applied.
-      @param stopIt Contains
-      true if the caller may apply other filters and false if he shall
+      @param stopIt Contains @c true if the caller may apply other filters and @c false if he shall
       stop the filtering of this message.
+      @param applyOnOutbound Defines whether to apply the rules on the outbound.
     */
     Q_REQUIRED_RESULT ReturnCode execActions(ItemContext &context, bool &stopIt, bool applyOnOutbound) const;
 

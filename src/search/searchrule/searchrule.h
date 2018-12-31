@@ -73,10 +73,14 @@ public:
         FuncNotEndWith
     };
 
+    /**
+     * @enum RequiredPart
+     * @brief Possible required parts.
+     */
     enum RequiredPart {
-        Envelope = 0,
-        Header,
-        CompleteMessage
+        Envelope = 0,   ///< Envelope
+        Header,         ///< Header
+        CompleteMessage ///< Whole message
     };
 
     /**
@@ -172,6 +176,7 @@ public:
     /**
      * Saves the object into a given config @p group.
      *
+     * @param group The config group.
      * @param index The identifier that is used to distinguish
      *              rules within a single config group.
      *

@@ -120,7 +120,7 @@ public:
 
     /**
      * Returns the required part from the item that is needed for the search to
-     * operate. See @ref RequiredPart */
+     * operate. See @ref SearchRule::RequiredPart */
     SearchRule::RequiredPart requiredPart() const;
 
     /**

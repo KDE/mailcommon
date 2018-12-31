@@ -104,8 +104,9 @@ public:
     /**
      * Returns a list of _copies_ of the current list of filters.
      * The list owns the contents and thus the caller needs to clean them up.
-     * @param closeAfterSaving If true user is given option to continue editing
+     * @param closeAfterSaving If @c true user is given option to continue editing
      * after being warned about invalid filters. Otherwise, user is just warned.
+     * @param wasCanceled If @c true then the operation was canceled.
      */
     QList<MailCommon::MailFilter *> filtersForSaving(bool closeAfterSaving, bool &wasCanceled) const;
 

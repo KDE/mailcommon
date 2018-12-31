@@ -56,6 +56,7 @@ public:
      * @param actionCollection The action collection where the manager will
      *                         register the snippet shortcuts at.
      * @param parent The parent object.
+     * @param widget The widget.
      */
     explicit SnippetsManager(KActionCollection *actionCollection, QObject *parent = nullptr, QWidget *widget = nullptr);
 
