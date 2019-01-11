@@ -190,6 +190,7 @@ void SnippetsManager::Private::createSnippet(const QString &text)
 
         updateActionCollection(QString(), dlg->name(), dlg->keySequence(), dlg->text());
         mDirty = true;
+        save();
     }
     delete dlg;
 }
@@ -241,6 +242,7 @@ void SnippetsManager::Private::editSnippet()
 
         updateActionCollection(oldSnippetName, dlg->name(), dlg->keySequence(), dlg->text());
         mDirty = true;
+        save();
     }
     delete dlg;
 }
@@ -265,6 +267,7 @@ void SnippetsManager::Private::deleteSnippet()
 
     updateActionCollection(snippetName, QString(), QKeySequence(), QString());
     mDirty = true;
+    save();
 }
 
 void SnippetsManager::Private::addSnippetGroup()
@@ -282,6 +285,7 @@ void SnippetsManager::Private::addSnippetGroup()
         const QModelIndex groupIndex = mModel->index(mModel->rowCount() - 1, 0, QModelIndex());
         mModel->setData(groupIndex, dlg->name(), SnippetsModel::NameRole);
         mDirty = true;
+        save();
     }
     delete dlg;
 }
@@ -306,6 +310,7 @@ void SnippetsManager::Private::editSnippetGroup()
 
         mModel->setData(groupIndex, dlg->name(), SnippetsModel::NameRole);
         mDirty = true;
+        save();
     }
     delete dlg;
 }
@@ -342,6 +347,7 @@ void SnippetsManager::Private::deleteSnippetGroup()
 
     mModel->removeRow(groupIndex.row(), QModelIndex());
     mDirty = true;
+    save();
 }
 
 void SnippetsManager::Private::insertSelectedSnippet()
