@@ -174,20 +174,16 @@ bool SnippetsModel::setData(const QModelIndex &index, const QVariant &value, int
         item->setName(value.toString());
         Q_EMIT dataChanged(index, index);
         return true;
-        break;
     case TextRole:
         item->setText(value.toString());
         Q_EMIT dataChanged(index, index);
         return true;
-        break;
     case KeySequenceRole:
         item->setKeySequence(value.toString());
         Q_EMIT dataChanged(index, index);
         return true;
-        break;
     default:
         return false;
-        break;
     }
 
     return false;
