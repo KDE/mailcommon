@@ -204,19 +204,14 @@ QVariant SnippetsModel::data(const QModelIndex &index, int role) const
     switch (role) {
     case Qt::DisplayRole:
         return item->name();
-        break;
     case IsGroupRole:
         return item->isGroup();
-        break;
     case NameRole:
         return item->name();
-        break;
     case TextRole:
         return item->text();
-        break;
     case KeySequenceRole:
         return item->keySequence();
-        break;
     }
 
     return QVariant();
