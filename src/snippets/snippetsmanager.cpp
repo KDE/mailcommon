@@ -42,19 +42,7 @@ class Q_DECL_HIDDEN SnippetsManager::Private
 public:
     Private(SnippetsManager *qq, QWidget *parent)
         : q(qq)
-        , mModel(nullptr)
-        , mSelectionModel(nullptr)
-        , mActionCollection(nullptr)
-        , mEditor(nullptr)
-        , mAddSnippetAction(nullptr)
-        , mEditSnippetAction(nullptr)
-        , mDeleteSnippetAction(nullptr)
-        , mAddSnippetGroupAction(nullptr)
-        , mEditSnippetGroupAction(nullptr)
-        , mDeleteSnippetGroupAction(nullptr)
-        , mInsertSnippetAction(nullptr)
         , mParent(parent)
-        , mDirty(false)
     {
     }
 
