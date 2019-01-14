@@ -381,7 +381,7 @@ void KMFilterListBox::applyFilterChanged(bool closeAfterSaving)
 
 QList<MailFilter *> KMFilterListBox::filtersForSaving(bool closeAfterSaving, bool &wasCanceled) const
 {
-    const_cast<KMFilterListBox *>(this)->applyWidgets();  // signals aren't const
+    Q_EMIT const_cast<KMFilterListBox *>(this)->applyWidgets();  // signals aren't const
     QList<MailFilter *> filters;
     QStringList emptyFilters;
     QVector<MailCommon::InvalidFilterInfo> listInvalidFilters;

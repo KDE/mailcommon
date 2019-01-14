@@ -37,7 +37,7 @@ FilterAction *FilterActionRewriteHeader::newAction()
 FilterActionRewriteHeader::FilterActionRewriteHeader(QObject *parent)
     : FilterActionWithStringList(QStringLiteral("rewrite header"), i18n("Rewrite Header"), parent)
 {
-    mParameterList << QStringLiteral("")
+    mParameterList << QString()
                    << QStringLiteral("Subject")
                    << QStringLiteral("Reply-To")
                    << QStringLiteral("Delivered-To")

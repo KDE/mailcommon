@@ -33,7 +33,7 @@ using namespace MailCommon;
 FilterActionAddHeader::FilterActionAddHeader(QObject *parent)
     : FilterActionWithStringList(QStringLiteral("add header"), i18n("Add Header"), parent)
 {
-    mParameterList << QStringLiteral("")
+    mParameterList << QString()
                    << QStringLiteral("Reply-To")
                    << QStringLiteral("Delivered-To")
                    << QStringLiteral("X-KDE-PR-Message")

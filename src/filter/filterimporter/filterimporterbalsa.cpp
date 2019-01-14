@@ -68,7 +68,7 @@ void FilterImporterBalsa::parseFilter(const KConfigGroup &grp)
     filter->setToolbarName(name);
 
     //TODO not implemented in kmail.
-    const QString popupText = grp.readEntry(QStringLiteral("Popup-text"));
+    //const QString popupText = grp.readEntry(QStringLiteral("Popup-text"));
 
     const QString sound = grp.readEntry(QStringLiteral("Sound"));
     if (!sound.isEmpty()) {

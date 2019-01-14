@@ -403,7 +403,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
             code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1String(mField), conditionToString(mFunction)) + QLatin1Char('"');
             return;
         }
-        code += (negative ? QStringLiteral("not ") : QString()) + QStringLiteral("body :text %1 \"%2\"").arg(comparaison).arg(contentStr);
+        code += (negative ? QStringLiteral("not ") : QString()) + QStringLiteral("body :text %1 \"%2\"").arg(comparaison, contentStr);
     } else {
         QString comparaison;
         bool negative = false;

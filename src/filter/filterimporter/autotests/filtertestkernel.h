@@ -30,6 +30,7 @@ class FolderCollectionMonitor;
 
 class FilterTestKernel : public QObject, public MailCommon::IKernel, public MailCommon::ISettings
 {
+    Q_OBJECT
 public:
     explicit FilterTestKernel(QObject *parent = nullptr);
 

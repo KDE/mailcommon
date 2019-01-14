@@ -40,7 +40,7 @@ class MAILCOMMON_EXPORT FolderJob : public QObject
     Q_OBJECT
 
 public:
-    FolderJob();
+    explicit FolderJob(QObject *parent = nullptr);
 
     virtual ~FolderJob();
 

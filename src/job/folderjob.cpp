@@ -35,8 +35,9 @@
 using namespace MailCommon;
 
 //----------------------------------------------------------------------------
-FolderJob::FolderJob()
-    : mErrorCode(0)
+FolderJob::FolderJob(QObject *parent)
+    : QObject(parent)
+    , mErrorCode(0)
     , mStarted(false)
     , mCancellable(false)
 {

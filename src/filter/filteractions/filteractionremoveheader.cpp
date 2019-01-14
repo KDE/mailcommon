@@ -34,7 +34,7 @@ FilterAction *FilterActionRemoveHeader::newAction()
 FilterActionRemoveHeader::FilterActionRemoveHeader(QObject *parent)
     : FilterActionWithStringList(QStringLiteral("remove header"), i18n("Remove Header"), parent)
 {
-    mParameterList << QStringLiteral("")
+    mParameterList << QString()
                    << QStringLiteral("Reply-To")
                    << QStringLiteral("Delivered-To")
                    << QStringLiteral("X-KDE-PR-Message")
