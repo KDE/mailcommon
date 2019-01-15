@@ -68,10 +68,7 @@ public:
     void updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text);
 
     QString replaceVariables(const QString &text);
-    QModelIndex createGroup(const QString &groupName);
-    void createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence);
 
-    void load();
     void save();
 
     SnippetsManager *q = nullptr;
@@ -80,7 +77,6 @@ public:
     KActionCollection *mActionCollection = nullptr;
     QObject *mEditor = nullptr;
     QByteArray mEditorInsertMethod;
-    QMap<QString, QString> mSavedVariables;
 
     QAction *mAddSnippetAction = nullptr;
     QAction *mEditSnippetAction = nullptr;
@@ -407,10 +403,10 @@ QString SnippetsManager::Private::replaceVariables(const QString &text)
     QString result = text;
     QString variableName;
     QString variableValue;
-    QMap<QString, QString> localVariables(mSavedVariables);
+    QMap<QString, QString> localVariables(SnippetsModel::instance()->savedVariables());
     int iFound = -1;
     int iEnd = -1;
-
+    QMap<QString, QString> tempLocalVariables(localVariables);
     do {
         //find the next variable by this QRegExp
         iFound = text.indexOf(QRegExp(QLatin1String("\\$[A-Za-z-_0-9\\s]*\\$")), iEnd + 1);
@@ -421,7 +417,7 @@ QString SnippetsManager::Private::replaceVariables(const QString &text)
 
             if (variableName != QLatin1String("$$")) {      // if not double-delimiter
                 if (!localVariables.contains(variableName)) {      // and not already in map
-                    QPointer<SnippetVariableDialog> dlg = new SnippetVariableDialog(variableName, &mSavedVariables, mParent);
+                    QPointer<SnippetVariableDialog> dlg = new SnippetVariableDialog(variableName, &tempLocalVariables, mParent);
                     if (dlg->exec()) {
                         if (dlg->saveVariableIsChecked()) {
                             mDirty = true;
@@ -443,80 +439,12 @@ QString SnippetsManager::Private::replaceVariables(const QString &text)
             localVariables[ variableName ] = variableValue;
         }
     } while (iFound != -1);
+    SnippetsModel::instance()->setSavedVariables(tempLocalVariables);
 
     return result;
 }
 
-QModelIndex SnippetsManager::Private::createGroup(const QString &groupName)
-{
-    mModel->insertRow(mModel->rowCount(), QModelIndex());
-    const QModelIndex groupIndex = mModel->index(mModel->rowCount() - 1, 0, QModelIndex());
-    mModel->setData(groupIndex, groupName, SnippetsModel::NameRole);
-    return groupIndex;
-}
 
-void SnippetsManager::Private::createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence)
-{
-    mModel->insertRow(mModel->rowCount(groupIndex), groupIndex);
-    const QModelIndex index = mModel->index(mModel->rowCount(groupIndex) - 1, 0, groupIndex);
-
-    mModel->setData(index, snippetName, SnippetsModel::NameRole);
-    mModel->setData(index, snippetText, SnippetsModel::TextRole);
-    mModel->setData(index, snippetKeySequence, SnippetsModel::KeySequenceRole);
-
-    updateActionCollection(QString(),
-                           snippetName,
-                           QKeySequence::fromString(snippetKeySequence),
-                           snippetText);
-}
-
-void SnippetsManager::Private::load()
-{
-    const KSharedConfig::Ptr config
-        = KSharedConfig::openConfig(QStringLiteral("kmailsnippetrc"), KConfig::NoGlobals);
-
-    const KConfigGroup snippetPartGroup = config->group("SnippetPart");
-
-    const int groupCount = snippetPartGroup.readEntry("snippetGroupCount", 0);
-
-    for (int i = 0; i < groupCount; ++i) {
-        const KConfigGroup group
-            = config->group(QStringLiteral("SnippetGroup_%1").arg(i));
-
-        const QString groupName = group.readEntry("Name");
-
-        // create group
-        QModelIndex groupIndex = createGroup(groupName);
-
-        const int snippetCount = group.readEntry("snippetCount", 0);
-        for (int j = 0; j < snippetCount; ++j) {
-            const QString snippetName
-                = group.readEntry(QStringLiteral("snippetName_%1").arg(j), QString());
-
-            const QString snippetText
-                = group.readEntry(QStringLiteral("snippetText_%1").arg(j), QString());
-
-            const QString snippetKeySequence
-                = group.readEntry(QStringLiteral("snippetKeySequence_%1").arg(j), QString());
-
-            createSnippet(groupIndex, snippetName, snippetText, snippetKeySequence);
-        }
-    }
-
-    mSavedVariables.clear();
-    const KConfigGroup group = config->group("SavedVariablesPart");
-    const int variablesCount = group.readEntry("variablesCount", 0);
-
-    for (int i = 0; i < variablesCount; ++i) {
-        const QString variableKey
-            = group.readEntry(QStringLiteral("variableName_%1").arg(i), QString());
-
-        const QString variableValue
-            = group.readEntry(QStringLiteral("variableValue_%1").arg(i), QString());
-
-        mSavedVariables.insert(variableKey, variableValue);
-    }
-}
 
 void SnippetsManager::Private::save()
 {
@@ -524,66 +452,7 @@ void SnippetsManager::Private::save()
         return;
     }
 
-    KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("kmailsnippetrc"), KConfig::NoGlobals);
-
-    // clear everything
-    for (const QString &group : config->groupList()) {
-        config->deleteGroup(group);
-    }
-
-    // write number of snippet groups
-    KConfigGroup group = config->group("SnippetPart");
-
-    const int groupCount = mModel->rowCount();
-    group.writeEntry("snippetGroupCount", groupCount);
-
-    for (int i = 0; i < groupCount; ++i) {
-        const QModelIndex groupIndex = mModel->index(i, 0, QModelIndex());
-        const QString groupName = groupIndex.data(SnippetsModel::NameRole).toString();
-
-        KConfigGroup group = config->group(QStringLiteral("SnippetGroup_%1").arg(i));
-        group.writeEntry("Name", groupName);
-
-        const int snippetCount = mModel->rowCount(groupIndex);
-
-        group.writeEntry("snippetCount", snippetCount);
-        for (int j = 0; j < snippetCount; ++j) {
-            const QModelIndex index = mModel->index(j, 0, groupIndex);
-
-            const QString snippetName = index.data(SnippetsModel::NameRole).toString();
-            if (!snippetName.isEmpty()) {
-                const QString snippetText = index.data(SnippetsModel::TextRole).toString();
-                const QString snippetKeySequence = index.data(SnippetsModel::KeySequenceRole).toString();
-
-                group.writeEntry(QStringLiteral("snippetName_%1").arg(j), snippetName);
-                if (!snippetText.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetText_%1").arg(j), snippetText);
-                }
-                if (!snippetKeySequence.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetKeySequence_%1").arg(j),
-                                     snippetKeySequence);
-                }
-            }
-        }
-    }
-
-    {
-        KConfigGroup group = config->group("SavedVariablesPart");
-
-        const int variablesCount = mSavedVariables.count();
-        group.writeEntry("variablesCount", variablesCount);
-
-        int counter = 0;
-        QMap<QString, QString>::const_iterator it = mSavedVariables.cbegin();
-        const QMap<QString, QString>::const_iterator itEnd = mSavedVariables.cend();
-        for (; it != itEnd; ++it) {
-            group.writeEntry(QStringLiteral("variableName_%1").arg(counter), it.key());
-            group.writeEntry(QStringLiteral("variableValue_%1").arg(counter), it.value());
-            counter++;
-        }
-    }
-
-    config->sync();
+    SnippetsModel::instance()->save();
     mDirty = false;
 }
 
@@ -591,7 +460,7 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
     : QObject(parent)
     , d(new Private(this, widget))
 {
-    d->mModel = new SnippetsModel(this);
+    d->mModel = SnippetsModel::instance();
     d->mSelectionModel = new QItemSelectionModel(d->mModel);
     d->mActionCollection = actionCollection;
 
@@ -647,8 +516,6 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
     });
 
     d->selectionChanged();
-
-    d->load();
 }
 
 SnippetsManager::~SnippetsManager()

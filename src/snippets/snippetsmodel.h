@@ -64,6 +64,12 @@ public:
 
     Q_REQUIRED_RESULT Qt::DropActions supportedDropActions() const override;
 
+    void load();
+    void save();
+
+    Q_REQUIRED_RESULT QMap<QString, QString> savedVariables() const;
+    void setSavedVariables(const QMap<QString, QString> &savedVariables);
+
 protected:
     bool insertRows(int row, int count, const QModelIndex &parent = QModelIndex()) override;
 
@@ -73,7 +79,10 @@ Q_SIGNALS:
     void dndDone();
     void addNewDndSnippset(const QString &);
 private:
+    QModelIndex createGroup(const QString &groupName);
+    void createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence);
     SnippetItem *mRootItem = nullptr;
+    QMap<QString, QString> mSavedVariables;
 };
 }
 

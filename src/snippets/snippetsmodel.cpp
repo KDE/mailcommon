@@ -25,6 +25,8 @@
 #include <QMimeData>
 #include <QDataStream>
 #include <QStringList>
+#include <KSharedConfig>
+#include <KConfigGroup>
 
 using namespace MailCommon;
 
@@ -154,6 +156,7 @@ SnippetsModel::SnippetsModel(QObject *parent)
     : QAbstractItemModel(parent)
 {
     mRootItem = new SnippetItem(true);
+    load();
 }
 
 SnippetsModel::~SnippetsModel()
@@ -432,4 +435,151 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
 Qt::DropActions SnippetsModel::supportedDropActions() const
 {
     return Qt::CopyAction | Qt::MoveAction;
+}
+
+QModelIndex SnippetsModel::createGroup(const QString &groupName)
+{
+    insertRow(rowCount(), QModelIndex());
+    const QModelIndex groupIndex = index(rowCount() - 1, 0, QModelIndex());
+    setData(groupIndex, groupName, SnippetsModel::NameRole);
+    return groupIndex;
+}
+
+void SnippetsModel::load()
+{
+    const KSharedConfig::Ptr config
+        = KSharedConfig::openConfig(QStringLiteral("kmailsnippetrc"), KConfig::NoGlobals);
+
+    const KConfigGroup snippetPartGroup = config->group("SnippetPart");
+
+    const int groupCount = snippetPartGroup.readEntry("snippetGroupCount", 0);
+
+    for (int i = 0; i < groupCount; ++i) {
+        const KConfigGroup group
+            = config->group(QStringLiteral("SnippetGroup_%1").arg(i));
+
+        const QString groupName = group.readEntry("Name");
+
+        // create group
+        QModelIndex groupIndex = createGroup(groupName);
+
+        const int snippetCount = group.readEntry("snippetCount", 0);
+        for (int j = 0; j < snippetCount; ++j) {
+            const QString snippetName
+                = group.readEntry(QStringLiteral("snippetName_%1").arg(j), QString());
+
+            const QString snippetText
+                = group.readEntry(QStringLiteral("snippetText_%1").arg(j), QString());
+
+            const QString snippetKeySequence
+                = group.readEntry(QStringLiteral("snippetKeySequence_%1").arg(j), QString());
+
+            createSnippet(groupIndex, snippetName, snippetText, snippetKeySequence);
+        }
+    }
+
+    mSavedVariables.clear();
+    const KConfigGroup group = config->group("SavedVariablesPart");
+    const int variablesCount = group.readEntry("variablesCount", 0);
+
+    for (int i = 0; i < variablesCount; ++i) {
+        const QString variableKey
+            = group.readEntry(QStringLiteral("variableName_%1").arg(i), QString());
+
+        const QString variableValue
+            = group.readEntry(QStringLiteral("variableValue_%1").arg(i), QString());
+
+        mSavedVariables.insert(variableKey, variableValue);
+    }
+
+}
+
+void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence)
+{
+    insertRow(rowCount(groupIndex), groupIndex);
+    const QModelIndex modelIndex = index(rowCount(groupIndex) - 1, 0, groupIndex);
+
+    setData(modelIndex, snippetName, SnippetsModel::NameRole);
+    setData(modelIndex, snippetText, SnippetsModel::TextRole);
+    setData(modelIndex, snippetKeySequence, SnippetsModel::KeySequenceRole);
+
+    //TODO
+//    updateActionCollection(QString(),
+//                           snippetName,
+//                           QKeySequence::fromString(snippetKeySequence),
+//                           snippetText);
+}
+
+void SnippetsModel::setSavedVariables(const QMap<QString, QString> &savedVariables)
+{
+    mSavedVariables = savedVariables;
+}
+
+QMap<QString, QString> SnippetsModel::savedVariables() const
+{
+    return mSavedVariables;
+}
+
+void SnippetsModel::save()
+{
+    KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("kmailsnippetrc"), KConfig::NoGlobals);
+
+    // clear everything
+    for (const QString &group : config->groupList()) {
+        config->deleteGroup(group);
+    }
+
+    // write number of snippet groups
+    KConfigGroup group = config->group("SnippetPart");
+
+    const int groupCount = rowCount();
+    group.writeEntry("snippetGroupCount", groupCount);
+
+    for (int i = 0; i < groupCount; ++i) {
+        const QModelIndex groupIndex = index(i, 0, QModelIndex());
+        const QString groupName = groupIndex.data(SnippetsModel::NameRole).toString();
+
+        KConfigGroup group = config->group(QStringLiteral("SnippetGroup_%1").arg(i));
+        group.writeEntry("Name", groupName);
+
+        const int snippetCount = rowCount(groupIndex);
+
+        group.writeEntry("snippetCount", snippetCount);
+        for (int j = 0; j < snippetCount; ++j) {
+            const QModelIndex modelIndex = index(j, 0, groupIndex);
+
+            const QString snippetName = modelIndex.data(SnippetsModel::NameRole).toString();
+            if (!snippetName.isEmpty()) {
+                const QString snippetText = modelIndex.data(SnippetsModel::TextRole).toString();
+                const QString snippetKeySequence = modelIndex.data(SnippetsModel::KeySequenceRole).toString();
+
+                group.writeEntry(QStringLiteral("snippetName_%1").arg(j), snippetName);
+                if (!snippetText.isEmpty()) {
+                    group.writeEntry(QStringLiteral("snippetText_%1").arg(j), snippetText);
+                }
+                if (!snippetKeySequence.isEmpty()) {
+                    group.writeEntry(QStringLiteral("snippetKeySequence_%1").arg(j),
+                                     snippetKeySequence);
+                }
+            }
+        }
+    }
+
+    {
+        KConfigGroup group = config->group("SavedVariablesPart");
+
+        const int variablesCount = mSavedVariables.count();
+        group.writeEntry("variablesCount", variablesCount);
+
+        int counter = 0;
+        QMap<QString, QString>::const_iterator it = mSavedVariables.cbegin();
+        const QMap<QString, QString>::const_iterator itEnd = mSavedVariables.cend();
+        for (; it != itEnd; ++it) {
+            group.writeEntry(QStringLiteral("variableName_%1").arg(counter), it.key());
+            group.writeEntry(QStringLiteral("variableValue_%1").arg(counter), it.value());
+            counter++;
+        }
+    }
+    config->sync();
+
 }
