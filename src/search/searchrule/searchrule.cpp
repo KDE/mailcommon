@@ -153,7 +153,7 @@ SearchRule::Function SearchRule::configValueToFunc(const char *str)
 
     for (int i = 0; i < numFuncConfigNames; ++i) {
         if (qstricmp(funcConfigNames[i], str) == 0) {
-            return (Function)i;
+            return static_cast<Function>(i);
         }
     }
 
