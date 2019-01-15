@@ -503,11 +503,10 @@ void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &
     setData(modelIndex, snippetText, SnippetsModel::TextRole);
     setData(modelIndex, snippetKeySequence, SnippetsModel::KeySequenceRole);
 
-    //TODO
-//    updateActionCollection(QString(),
-//                           snippetName,
-//                           QKeySequence::fromString(snippetKeySequence),
-//                           snippetText);
+    Q_EMIT updateActionCollection(QString(),
+                                  snippetName,
+                                  QKeySequence::fromString(snippetKeySequence),
+                                  snippetText);
 }
 
 void SnippetsModel::setSavedVariables(const QMap<QString, QString> &savedVariables)

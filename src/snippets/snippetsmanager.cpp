@@ -172,7 +172,7 @@ void SnippetsManager::Private::createSnippet(const QString &text)
         mModel->setData(index, dlg->text(), SnippetsModel::TextRole);
         mModel->setData(index, dlg->keySequence().toString(), SnippetsModel::KeySequenceRole);
 
-        updateActionCollection(QString(), dlg->name(), dlg->keySequence(), dlg->text());
+        Q_EMIT mModel->updateActionCollection(QString(), dlg->name(), dlg->keySequence(), dlg->text());
         mDirty = true;
         save();
     }
@@ -224,7 +224,7 @@ void SnippetsManager::Private::editSnippet()
         mModel->setData(index, dlg->text(), SnippetsModel::TextRole);
         mModel->setData(index, dlg->keySequence().toString(), SnippetsModel::KeySequenceRole);
 
-        updateActionCollection(oldSnippetName, dlg->name(), dlg->keySequence(), dlg->text());
+        Q_EMIT mModel->updateActionCollection(oldSnippetName, dlg->name(), dlg->keySequence(), dlg->text());
         mDirty = true;
         save();
     }
@@ -249,7 +249,7 @@ void SnippetsManager::Private::deleteSnippet()
 
     mModel->removeRow(index.row(), currentGroupIndex());
 
-    updateActionCollection(snippetName, QString(), QKeySequence(), QString());
+    Q_EMIT mModel->updateActionCollection(snippetName, QString(), QKeySequence(), QString());
     mDirty = true;
     save();
 }
@@ -461,6 +461,9 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
     , d(new Private(this, widget))
 {
     d->mModel = SnippetsModel::instance();
+    connect(d->mModel, &SnippetsModel::updateActionCollection, this, [this] (const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text) {
+        d->updateActionCollection(oldName, newName, keySequence, text);
+    });
     d->mSelectionModel = new QItemSelectionModel(d->mModel);
     d->mActionCollection = actionCollection;
 
@@ -516,6 +519,7 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
     });
 
     d->selectionChanged();
+    //TODO initialize QKeySequence
 }
 
 SnippetsManager::~SnippetsManager()

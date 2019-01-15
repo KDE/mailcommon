@@ -78,6 +78,8 @@ protected:
 Q_SIGNALS:
     void dndDone();
     void addNewDndSnippset(const QString &);
+    void updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text);
+
 private:
     QModelIndex createGroup(const QString &groupName);
     void createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence);
