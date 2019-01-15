@@ -144,6 +144,12 @@ int SnippetItem::row() const
     return 0;
 }
 
+SnippetsModel *SnippetsModel::instance()
+{
+    static SnippetsModel s_self;
+    return &s_self;
+}
+
 SnippetsModel::SnippetsModel(QObject *parent)
     : QAbstractItemModel(parent)
 {

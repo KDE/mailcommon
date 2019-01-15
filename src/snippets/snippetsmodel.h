@@ -37,6 +37,8 @@ public:
         KeySequenceRole                 ///< The key sequence to activate a snippet
     };
 
+    static SnippetsModel *instance();
+
     explicit SnippetsModel(QObject *parent = nullptr);
     ~SnippetsModel() override;
 
