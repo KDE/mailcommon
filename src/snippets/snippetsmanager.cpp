@@ -67,6 +67,7 @@ public:
 
     void updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text);
     void initializeAction(const QString &newName, const QKeySequence &keySequence, const QString &text);
+    void initializeActionCollection();
 
     QString replaceVariables(const QString &text);
 
@@ -371,6 +372,14 @@ void SnippetsManager::Private::insertActionSnippet()
                               Q_ARG(QString, text));
 }
 
+void SnippetsManager::Private::initializeActionCollection()
+{
+    const QVector<SnippetsInfo> infos = mModel->snippetsInfo();
+    for (const SnippetsInfo &info : infos) {
+        initializeAction(info.newName, info.keySequence, info.text);
+    }
+}
+
 void SnippetsManager::Private::initializeAction(const QString &newName, const QKeySequence &keySequence, const QString &text)
 {
     const QString actionName = i18nc("@action", "Snippet %1", newName);
@@ -524,8 +533,8 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
         d->insertSelectedSnippet();
     });
 
+    d->initializeActionCollection();
     d->selectionChanged();
-    //TODO initialize QKeySequence
 }
 
 SnippetsManager::~SnippetsManager()

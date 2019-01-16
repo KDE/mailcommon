@@ -22,9 +22,17 @@
 #define MAILCOMMON_SNIPPETSMODEL_P_H
 
 #include <QAbstractItemModel>
-
+#include <QKeySequence>
 namespace MailCommon {
 class SnippetItem;
+
+struct SnippetsInfo
+{
+    QString newName;
+    QKeySequence keySequence;
+    QString text;
+};
+
 
 class SnippetsModel : public QAbstractItemModel
 {
@@ -70,6 +78,8 @@ public:
     Q_REQUIRED_RESULT QMap<QString, QString> savedVariables() const;
     void setSavedVariables(const QMap<QString, QString> &savedVariables);
 
+    Q_REQUIRED_RESULT QVector<SnippetsInfo> snippetsInfo() const;
+
 protected:
     bool insertRows(int row, int count, const QModelIndex &parent = QModelIndex()) override;
 
@@ -87,5 +97,6 @@ private:
     QMap<QString, QString> mSavedVariables;
 };
 }
+Q_DECLARE_TYPEINFO(MailCommon::SnippetsInfo, Q_MOVABLE_TYPE);
 
 #endif

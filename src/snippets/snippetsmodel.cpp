@@ -514,6 +514,32 @@ void SnippetsModel::setSavedVariables(const QMap<QString, QString> &savedVariabl
     mSavedVariables = savedVariables;
 }
 
+QVector<SnippetsInfo> SnippetsModel::snippetsInfo() const
+{
+    QVector<SnippetsInfo> infos;
+    const int groupCount = rowCount();
+
+    for (int i = 0; i < groupCount; ++i) {
+        const QModelIndex groupIndex = index(i, 0, QModelIndex());
+        const int snippetCount = rowCount(groupIndex);
+        for (int j = 0; j < snippetCount; ++j) {
+            SnippetsInfo info;
+            const QModelIndex modelIndex = index(j, 0, groupIndex);
+
+            const QString snippetName = modelIndex.data(SnippetsModel::NameRole).toString();
+            if (!snippetName.isEmpty()) {
+                const QString snippetText = modelIndex.data(SnippetsModel::TextRole).toString();
+                const QString snippetKeySequence = modelIndex.data(SnippetsModel::KeySequenceRole).toString();
+                info.text = snippetText;
+                info.newName = snippetName;
+                info.keySequence = QKeySequence::fromString(snippetKeySequence);
+                infos.append(info);
+            }
+        }
+    }
+    return infos;
+}
+
 QMap<QString, QString> SnippetsModel::savedVariables() const
 {
     return mSavedVariables;
