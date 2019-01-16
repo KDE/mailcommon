@@ -66,6 +66,7 @@ public:
     void slotAddNewDndSnippset(const QString &);
 
     void updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text);
+    void initializeAction(const QString &newName, const QKeySequence &keySequence, const QString &text);
 
     QString replaceVariables(const QString &text);
 
@@ -370,6 +371,21 @@ void SnippetsManager::Private::insertActionSnippet()
                               Q_ARG(QString, text));
 }
 
+void SnippetsManager::Private::initializeAction(const QString &newName, const QKeySequence &keySequence, const QString &text)
+{
+    const QString actionName = i18nc("@action", "Snippet %1", newName);
+    const QString normalizedName = QString(actionName).replace(QLatin1Char(' '), QLatin1Char('_'));
+
+    QAction *action
+        = mActionCollection->addAction(normalizedName, q);
+    connect(action, &QAction::triggered, q, [this]() {
+        insertActionSnippet();
+    });
+    action->setProperty("snippetText", text);
+    action->setText(actionName);
+    mActionCollection->setDefaultShortcut(action, keySequence);
+}
+
 void SnippetsManager::Private::updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text)
 {
     // remove previous action in case that the name changed
@@ -384,17 +400,7 @@ void SnippetsManager::Private::updateActionCollection(const QString &oldName, co
     }
 
     if (!newName.isEmpty()) {
-        const QString actionName = i18nc("@action", "Snippet %1", newName);
-        const QString normalizedName = QString(actionName).replace(QLatin1Char(' '), QLatin1Char('_'));
-
-        QAction *action
-            = mActionCollection->addAction(normalizedName, q);
-        connect(action, &QAction::triggered, q, [this]() {
-            insertActionSnippet();
-        });
-        action->setProperty("snippetText", text);
-        action->setText(actionName);
-        mActionCollection->setDefaultShortcut(action, keySequence);
+        initializeAction(newName, keySequence, text);
     }
 }
 
