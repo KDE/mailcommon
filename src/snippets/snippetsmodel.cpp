@@ -33,7 +33,7 @@ using namespace MailCommon;
 class MailCommon::SnippetItem
 {
 public:
-    SnippetItem(bool isGroup = false, SnippetItem *parent = nullptr);
+    explicit SnippetItem(bool isGroup = false, SnippetItem *parent = nullptr);
     ~SnippetItem();
 
     bool isGroup() const;
@@ -461,7 +461,7 @@ void SnippetsModel::load()
         const QString groupName = group.readEntry("Name");
 
         // create group
-        QModelIndex groupIndex = createGroup(groupName);
+        const QModelIndex groupIndex = createGroup(groupName);
 
         const int snippetCount = group.readEntry("snippetCount", 0);
         for (int j = 0; j < snippetCount; ++j) {
@@ -478,7 +478,6 @@ void SnippetsModel::load()
         }
     }
 
-    mSavedVariables.clear();
     const KConfigGroup group = config->group("SavedVariablesPart");
     const int variablesCount = group.readEntry("variablesCount", 0);
 
