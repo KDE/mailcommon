@@ -33,7 +33,6 @@ struct SnippetsInfo
     QString text;
 };
 
-
 class SnippetsModel : public QAbstractItemModel
 {
     Q_OBJECT

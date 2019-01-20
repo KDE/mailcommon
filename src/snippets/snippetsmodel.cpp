@@ -490,7 +490,6 @@ void SnippetsModel::load()
 
         mSavedVariables.insert(variableKey, variableValue);
     }
-
 }
 
 void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence)
@@ -605,5 +604,4 @@ void SnippetsModel::save()
         }
     }
     config->sync();
-
 }

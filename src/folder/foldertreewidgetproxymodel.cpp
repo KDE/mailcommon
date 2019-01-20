@@ -54,8 +54,8 @@ public:
                 const QModelIndex firstIndex = q->mapToSource(index.model()->index(row, 0, index));
 
                 const Akonadi::Collection collectionFirst
-                        = q->sourceModel()->data(
-                            firstIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+                    = q->sourceModel()->data(
+                          firstIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
                 if (collectionFirst.isValid() && collectionFirst.hasAttribute<Akonadi::CollectionQuotaAttribute>()) {
                     const Akonadi::CollectionQuotaAttribute *quota = collectionFirst.attribute<Akonadi::CollectionQuotaAttribute>();
 

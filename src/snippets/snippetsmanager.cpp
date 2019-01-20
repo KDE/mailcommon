@@ -459,8 +459,6 @@ QString SnippetsManager::Private::replaceVariables(const QString &text)
     return result;
 }
 
-
-
 void SnippetsManager::Private::save()
 {
     if (!mDirty) {
@@ -476,7 +474,7 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
     , d(new Private(this, widget))
 {
     d->mModel = SnippetsModel::instance();
-    connect(d->mModel, &SnippetsModel::updateActionCollection, this, [this] (const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text) {
+    connect(d->mModel, &SnippetsModel::updateActionCollection, this, [this](const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text) {
         d->updateActionCollection(oldName, newName, keySequence, text);
     });
     d->mSelectionModel = new QItemSelectionModel(d->mModel);
