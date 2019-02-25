@@ -180,9 +180,8 @@ void CollectionExpiryPage::save(Akonadi::Collection &collection)
     }
 }
 
-void CollectionExpiryPage::saveAndExpire(Akonadi::Collection &collection, bool saveSettings, bool _expireNow)
+void CollectionExpiryPage::saveAndExpire(Akonadi::Collection &collection, bool saveSettings, bool expireNow)
 {
-    bool expireNow = _expireNow;
     bool enableGlobally = expireReadMailCB->isChecked() || expireUnreadMailCB->isChecked();
     const Akonadi::Collection expireToFolder = folderSelector->collection();
     if (enableGlobally && moveToRB->isChecked() && !expireToFolder.isValid()) {
