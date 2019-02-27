@@ -226,7 +226,7 @@ bool FolderTreeWidgetProxyModel::acceptRow(int sourceRow, const QModelIndex &sou
 
 QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) const
 {
-    if (role == Qt::TextColorRole) {
+    if (role == Qt::ForegroundRole) {
         const QModelIndex sourceIndex = mapToSource(index);
         const QModelIndex rowIndex = sourceIndex.sibling(sourceIndex.row(), 0);
         const Akonadi::Collection collection

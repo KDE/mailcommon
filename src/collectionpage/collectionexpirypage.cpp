@@ -96,7 +96,7 @@ void CollectionExpiryPage::init()
     actionsGroup->setFlat(true); // for mutual exclusion of the radio buttons
 
     QHBoxLayout *moveToHBox = new QHBoxLayout();
-    moveToHBox->setMargin(0);
+    moveToHBox->setContentsMargins(0, 0, 0, 0);
     moveToHBox->setSpacing(6);
 
     moveToRB = new QRadioButton(actionsGroup);

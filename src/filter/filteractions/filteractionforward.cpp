@@ -91,7 +91,7 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
 {
     QWidget *addressAndTemplate = new QWidget(parent);
     QHBoxLayout *layout = new QHBoxLayout(addressAndTemplate);
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
 
     QWidget *addressEdit = FilterActionWithAddress::createParamWidget(addressAndTemplate);
     addressEdit->setObjectName(QStringLiteral("addressEdit"));

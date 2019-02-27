@@ -37,7 +37,7 @@ SoundTestWidget::SoundTestWidget(QWidget *parent)
     : QWidget(parent)
 {
     QHBoxLayout *layout = new QHBoxLayout(this);
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
 
     m_playButton = new QPushButton(this);
     m_playButton->setIcon(QIcon::fromTheme(QStringLiteral("arrow-right")));

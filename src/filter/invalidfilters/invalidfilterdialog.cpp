@@ -46,7 +46,7 @@ InvalidFilterDialog::InvalidFilterDialog(QWidget *parent)
 
     QWidget *w = new QWidget(this);
     QVBoxLayout *vbox = new QVBoxLayout;
-    vbox->setMargin(0);
+    vbox->setContentsMargins(0, 0, 0, 0);
     w->setLayout(vbox);
     mInvalidFilterWidget = new InvalidFilterWidget(this);
     mInvalidFilterWidget->setObjectName(QStringLiteral("invalid_filter_widget"));

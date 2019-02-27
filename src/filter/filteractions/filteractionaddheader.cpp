@@ -75,7 +75,7 @@ QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
     QWidget *widget = new QWidget(parent);
     QHBoxLayout *layout = new QHBoxLayout(widget);
     layout->setSpacing(4);
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
 
     PimCommon::MinimumComboBox *comboBox = new PimCommon::MinimumComboBox(widget);
     comboBox->setObjectName(QStringLiteral("combo"));

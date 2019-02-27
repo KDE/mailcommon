@@ -153,7 +153,7 @@ void SearchRuleWidget::setPatternEditOptions(SearchPatternEdit::SearchPatternEdi
 void SearchRuleWidget::initWidget(SearchPatternEdit::SearchModeType modeType)
 {
     QHBoxLayout *hlay = new QHBoxLayout(this);
-    hlay->setMargin(0);
+    hlay->setContentsMargins(0, 0, 0, 0);
 
     // initialize the header field combo box
     mRuleField = new PimCommon::MinimumComboBox(this);
@@ -610,7 +610,7 @@ void SearchPatternEdit::setPatternEditOptions(SearchPatternEdit::SearchPatternEd
 void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeType modeType)
 {
     QVBoxLayout *layout = new QVBoxLayout(this);
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
 
     const bool matchAllMessages = (options & MailCommon::SearchPatternEdit::MatchAllMessages);
     //------------the radio buttons

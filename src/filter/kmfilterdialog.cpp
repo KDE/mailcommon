@@ -170,10 +170,10 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     mainLayout->addWidget(w);
     mainLayout->addWidget(buttonBox);
     QVBoxLayout *topVLayout = new QVBoxLayout(w);
-    topVLayout->setMargin(0);
+    topVLayout->setContentsMargins(0, 0, 0, 0);
     QHBoxLayout *topLayout = new QHBoxLayout;
     topVLayout->addLayout(topLayout);
-    topLayout->setMargin(0);
+    topLayout->setContentsMargins(0, 0, 0, 0);
 
     QSplitter *splitter = new QSplitter;
     splitter->setChildrenCollapsible(false);
@@ -296,7 +296,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
 
         QWidget *hbox = new QWidget(mAdvOptsGroup);
         QHBoxLayout *hboxHBoxLayout = new QHBoxLayout(hbox);
-        hboxHBoxLayout->setMargin(0);
+        hboxHBoxLayout->setContentsMargins(0, 0, 0, 0);
         mFilterActionLabel = new QLabel(i18n("Icon for this filter:"), hbox);
         hboxHBoxLayout->addWidget(mFilterActionLabel);
         mFilterActionLabel->setEnabled(false);
