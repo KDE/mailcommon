@@ -232,6 +232,8 @@ void SearchRuleString::addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &empty
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderOrganization, contents(), akonadiComparator()));
     } else if (qstricmp(field().constData(), "<tag>") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::MessageTag, contents(), akonadiComparator()));
+    } else if (!field().isEmpty()){
+        termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Headers, contents(), akonadiComparator()));
     }
 
     // TODO complete for other headers, generic headers
