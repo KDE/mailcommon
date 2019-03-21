@@ -432,7 +432,8 @@ SearchRuleWidgetLister::~SearchRuleWidgetLister()
 void SearchRuleWidgetLister::setPatternEditOptions(SearchPatternEdit::SearchPatternEditOptions options)
 {
     mOptions = options;
-    foreach (QWidget *w, widgets()) {
+    const auto lst = widgets();
+    for (QWidget *w : lst) {
         qobject_cast<SearchRuleWidget *>(w)->setPatternEditOptions(options);
     }
 }
@@ -569,7 +570,8 @@ void SearchRuleWidgetLister::regenerateRuleListFromWidgets()
 
     mRuleList->clear();
 
-    foreach (const QWidget *w, widgets()) {
+    const auto lst = widgets();
+    for (const QWidget *w : lst) {
         SearchRule::Ptr r = qobject_cast<const SearchRuleWidget *>(w)->rule();
         if (r && !r->isEmpty()) {
             mRuleList->append(r);

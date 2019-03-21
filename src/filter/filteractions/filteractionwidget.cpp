@@ -283,7 +283,8 @@ void FilterActionWidgetLister::Private::regenerateActionListFromWidgets()
 
     mActionList->clear();
 
-    foreach (const QWidget *widget, q->widgets()) {
+    const auto lst = q->widgets();
+    for (const QWidget *widget : lst) {
         FilterAction *action = qobject_cast<const FilterActionWidget *>(widget)->action();
         if (action) {
             mActionList->append(action);

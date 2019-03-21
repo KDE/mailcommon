@@ -366,7 +366,7 @@ QDataStream &SearchPattern::operator>>(QDataStream &s) const
         break;
     }
 
-    Q_FOREACH (const SearchRule::Ptr rule, *this) {
+    for (const SearchRule::Ptr rule : qAsConst(*this)) {
         *rule >> s;
     }
     return s;
