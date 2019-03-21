@@ -239,7 +239,6 @@ PRIVATE
   KF5::Mime
   KF5::Codecs
   KF5::MailTransport
-  Phonon::phonon4qt5
   KF5::XmlGui
   KF5::KIOWidgets
   KF5::WindowSystem
@@ -247,6 +246,7 @@ PRIVATE
   KF5::Archive
   KF5::ItemViews
   KF5::SyntaxHighlighting
+  Qt5::Multimedia
 )
 
 

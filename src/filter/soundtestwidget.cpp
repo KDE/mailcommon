@@ -24,11 +24,10 @@
 #include <KLineEdit>
 #include <QIcon>
 #include <QUrl>
+#include <QMediaPlayer>
 
 #include <QHBoxLayout>
 #include <QPushButton>
-
-#include <phonon/mediaobject.h>
 #include <QStandardPaths>
 
 using namespace MailCommon;
@@ -113,9 +112,15 @@ void SoundTestWidget::playSound()
     const QString play = (parameter.startsWith(file)
                           ? parameter.mid(file.length())
                           : parameter);
-    Phonon::MediaObject *player = Phonon::createPlayer(Phonon::NotificationCategory, QUrl::fromLocalFile(play));
+    QMediaPlayer *player = new QMediaPlayer;
+    player->setMedia(QUrl::fromLocalFile(play));
+    player->setVolume(50);
     player->play();
-    connect(player, &Phonon::MediaObject::finished, player, &Phonon::MediaObject::deleteLater);
+    connect(player, &QMediaPlayer::stateChanged, this, [this, player](QMediaPlayer::State state) {
+        if (state == QMediaPlayer::StoppedState) {
+            player->deleteLater();
+        }
+    });
 }
 
 QString SoundTestWidget::url() const
