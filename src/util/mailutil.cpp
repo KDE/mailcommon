@@ -280,9 +280,10 @@ QStringList MailCommon::Util::foundMailer()
 
 MailCommon::ExpireCollectionAttribute *MailCommon::Util::expirationCollectionAttribute(const Akonadi::Collection &collection, bool &mustDeleteExpirationAttribute)
 {
+    Akonadi::Collection mutableCollection = collection;
     MailCommon::ExpireCollectionAttribute *attr = nullptr;
-    if (collection.hasAttribute<MailCommon::ExpireCollectionAttribute>()) {
-        attr = collection.attribute<MailCommon::ExpireCollectionAttribute>();
+    if (mutableCollection.hasAttribute<MailCommon::ExpireCollectionAttribute>()) {
+        attr = mutableCollection.attribute<MailCommon::ExpireCollectionAttribute>();
         mustDeleteExpirationAttribute = false;
     } else {
         attr = new MailCommon::ExpireCollectionAttribute();

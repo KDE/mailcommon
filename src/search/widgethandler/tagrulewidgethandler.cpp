@@ -88,7 +88,7 @@ void FillTagComboJob::onTagsFetched(KJob *job)
     const auto lst = fetchJob->tags();
     for (const Akonadi::Tag &tag : lst) {
         QString iconName = QStringLiteral("mail-tagged");
-        Akonadi::TagAttribute *attr = tag.attribute<Akonadi::TagAttribute>();
+        const Akonadi::TagAttribute *attr = tag.attribute<Akonadi::TagAttribute>();
         if (attr) {
             if (!attr->iconName().isEmpty()) {
                 iconName = attr->iconName();

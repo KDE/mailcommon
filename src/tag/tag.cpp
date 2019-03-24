@@ -50,7 +50,7 @@ Tag::Ptr Tag::fromAkonadi(const Akonadi::Tag &akonadiTag)
     tag->iconName = QStringLiteral("mail-tagged");
     tag->inToolbar = false;
     tag->isImmutable = akonadiTag.isImmutable();
-    Akonadi::TagAttribute *attr = akonadiTag.attribute<Akonadi::TagAttribute>();
+    const Akonadi::TagAttribute *attr = akonadiTag.attribute<Akonadi::TagAttribute>();
     if (attr) {
         if (!attr->iconName().isEmpty()) {
             tag->iconName = attr->iconName();
