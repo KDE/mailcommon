@@ -22,9 +22,10 @@
 
 #include <Collection>
 #include <EntityRightsFilterModel>
+#include "mailcommon_export.h"
 
 namespace MailCommon {
-class FolderTreeWidgetProxyModel : public Akonadi::EntityRightsFilterModel
+class MAILCOMMON_EXPORT FolderTreeWidgetProxyModel : public Akonadi::EntityRightsFilterModel
 {
     Q_OBJECT
 
