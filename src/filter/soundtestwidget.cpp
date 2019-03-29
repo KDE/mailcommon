@@ -115,12 +115,12 @@ void SoundTestWidget::playSound()
     QMediaPlayer *player = new QMediaPlayer;
     player->setMedia(QUrl::fromLocalFile(play));
     player->setVolume(50);
+    player->play();
     connect(player, &QMediaPlayer::stateChanged, this, [this, player](QMediaPlayer::State state) {
         if (state == QMediaPlayer::StoppedState) {
             player->deleteLater();
         }
     });
-    player->play();
 }
 
 QString SoundTestWidget::url() const
