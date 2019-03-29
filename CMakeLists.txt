@@ -37,7 +37,7 @@ set(PIMCOMMON_LIB_VERSION "5.10.90")
 
 set(AKONADI_VERSION "5.10.90")
 
-find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets DBus Test Xml Multimedia)
+find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets DBus Test Xml)
 
 find_package(KF5Archive ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5Codecs ${KF5_MIN_VERSION} CONFIG REQUIRED)
@@ -67,6 +67,7 @@ find_package(KF5MessageViewer ${MESSAGELIB_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5Mime ${KMIME_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5PimCommonAkonadi ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5TemplateParser ${MESSAGELIB_LIB_VERSION} CONFIG REQUIRED)
+find_package(Phonon4Qt5 CONFIG REQUIRED)
 find_package(KF5DesignerPlugin ${KF5_MIN_VERSION} CONFIG)
 set_package_properties(KF5DesignerPlugin PROPERTIES DESCRIPTION "KF5 designer plugin" TYPE OPTIONAL)
 

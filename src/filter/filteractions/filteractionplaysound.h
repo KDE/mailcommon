@@ -21,7 +21,10 @@
 #define MAILCOMMON_FILTERACTIONPLAYSOUND_H
 
 #include "filteractionwithtest.h"
-class QMediaPlayer;
+
+namespace Phonon {
+class MediaObject;
+}
 
 namespace MailCommon {
 //=============================================================================
@@ -42,7 +45,7 @@ public:
     Q_REQUIRED_RESULT bool isEmpty() const override;
     Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
 private:
-    mutable QMediaPlayer *mPlayer = nullptr;
+    mutable Phonon::MediaObject *mPlayer = nullptr;
 };
 }
 

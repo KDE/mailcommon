@@ -21,9 +21,10 @@
 
 #include "filter/dialog/filteractionmissingsoundurldialog.h"
 
+#include <phonon/mediaobject.h>
 
 #include <KLocalizedString>
-#include <QMediaPlayer>
+
 #include <QFile>
 #include <QPointer>
 
@@ -56,11 +57,10 @@ FilterAction::ReturnCode FilterActionPlaySound::process(ItemContext &, bool) con
         return ErrorButGoOn;
     }
     if (!mPlayer) {
-        mPlayer = new QMediaPlayer;
+        mPlayer = Phonon::createPlayer(Phonon::NotificationCategory);
     }
 
-    mPlayer->setMedia(QUrl::fromLocalFile(mParameter));
-    mPlayer->setVolume(50);
+    mPlayer->setCurrentSource(mParameter);
     mPlayer->play();
     return GoOn;
 }
