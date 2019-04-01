@@ -16,7 +16,7 @@
 */
 
 #include "filteractionexectest.h"
-#include <qtest.h>
+#include <QTest>
 #include "../filteractions/filteractionexec.h"
 #include "../filteractions/filteractionwithurl.h"
 

@@ -16,7 +16,7 @@
 */
 #include "filteractionsendreceipttest.h"
 #include "../filteractions/filteractionsendreceipt.h"
-#include <qtest.h>
+#include <QTest>
 
 FilterActionSendReceiptTest::FilterActionSendReceiptTest(QObject *parent)
     : QObject(parent)

@@ -18,7 +18,7 @@
 #include "searchruletest.h"
 #include "../search/searchrule/searchrule.h"
 
-#include <qtest.h>
+#include <QTest>
 
 class TestSearchRule : public MailCommon::SearchRule
 {

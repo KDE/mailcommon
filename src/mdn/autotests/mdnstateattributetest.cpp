@@ -17,7 +17,7 @@
 
 #include "mdnstateattributetest.h"
 #include "../mdnstateattribute.h"
-#include <qtest.h>
+#include <QTest>
 
 MDNStateAttributeTest::MDNStateAttributeTest(QObject *parent)
     : QObject(parent)

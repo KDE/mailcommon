@@ -17,7 +17,7 @@
 
 #include "invalidfilterinfowidgettest.h"
 #include "../invalidfilters/invalidfilterinfowidget.h"
-#include <qtest.h>
+#include <QTest>
 
 InvalidFilterInfoWidgetTest::InvalidFilterInfoWidgetTest(QObject *parent)
     : QObject(parent)

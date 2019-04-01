@@ -17,7 +17,7 @@
 
 #include "filteractionaddtoaddressbooktest.h"
 #include "../filteractions/filteractionaddtoaddressbook.h"
-#include <qtest.h>
+#include <QTest>
 #include <QWidget>
 #include <QLabel>
 #include <klineedit.h>

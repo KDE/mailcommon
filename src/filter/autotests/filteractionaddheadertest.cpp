@@ -21,7 +21,7 @@
 
 #include <KLineEdit>
 #include <QLabel>
-#include <qtest.h>
+#include <QTest>
 #include <pimcommon/minimumcombobox.h>
 
 FilterActionAddHeaderTest::FilterActionAddHeaderTest(QObject *parent)

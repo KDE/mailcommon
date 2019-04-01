@@ -17,7 +17,7 @@
 
 #include "filteractionreplytotest.h"
 #include "../filteractions/filteractionreplyto.h"
-#include <qtest.h>
+#include <QTest>
 #include <QWidget>
 FilterActionReplyToTest::FilterActionReplyToTest(QObject *parent)
     : QObject(parent)

@@ -16,7 +16,7 @@
 */
 
 #include "searchrulenumericaltest.h"
-#include <qtest.h>
+#include <QTest>
 #include "../searchrule/searchrulenumerical.h"
 SearchRuleNumericalTest::SearchRuleNumericalTest(QObject *parent)
     : QObject(parent)

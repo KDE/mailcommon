@@ -17,7 +17,7 @@
 
 #include "filteractionunsetstatustest.h"
 #include "../filteractions/filteractionunsetstatus.h"
-#include <qtest.h>
+#include <QTest>
 
 FilterActionUnsetStatusTest::FilterActionUnsetStatusTest(QObject *parent)
     : QObject(parent)

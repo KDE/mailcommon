@@ -16,7 +16,7 @@
 */
 
 #include "filteractionrewriteheadertest.h"
-#include <qtest.h>
+#include <QTest>
 #include "../filteractions/filteractionrewriteheader.h"
 #include <KLineEdit>
 #include <QLabel>

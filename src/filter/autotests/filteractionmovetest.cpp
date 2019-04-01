@@ -16,7 +16,7 @@
 */
 
 #include "filteractionmovetest.h"
-#include <qtest.h>
+#include <QTest>
 #include "../filteractions/filteractionmove.h"
 #include "folder/folderrequester.h"
 

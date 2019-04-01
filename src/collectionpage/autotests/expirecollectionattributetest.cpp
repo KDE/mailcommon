@@ -16,7 +16,7 @@
 */
 
 #include "expirecollectionattributetest.h"
-#include <qtest.h>
+#include <QTest>
 #include "../attributes/expirecollectionattribute.h"
 
 Q_DECLARE_METATYPE(MailCommon::ExpireCollectionAttribute::ExpireUnits)

@@ -16,7 +16,7 @@
 */
 #include "filteractionwithaddresstest.h"
 #include "../filteractions/filteractionwithaddress.h"
-#include <qtest.h>
+#include <QTest>
 #include <QWidget>
 #include <Akonadi/Contact/EmailAddressRequester>
 

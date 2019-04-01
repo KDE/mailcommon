@@ -16,7 +16,7 @@
 */
 
 #include "filteractionforwardtest.h"
-#include <qtest.h>
+#include <QTest>
 #include "../filteractions/filteractionforward.h"
 
 FilterActionForwardTest::FilterActionForwardTest(QObject *parent)

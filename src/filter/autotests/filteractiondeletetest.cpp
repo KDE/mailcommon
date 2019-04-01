@@ -17,7 +17,7 @@
 
 #include "filteractiondeletetest.h"
 #include "../filteractions/filteractiondelete.h"
-#include <qtest.h>
+#include <QTest>
 #include <QLabel>
 FilterActionDeleteTest::FilterActionDeleteTest(QObject *parent)
     : QObject(parent)

@@ -17,7 +17,7 @@
 
 #include "filteractionredirecttest.h"
 #include "../filteractions/filteractionredirect.h"
-#include <qtest.h>
+#include <QTest>
 
 FilterActionRedirectTest::FilterActionRedirectTest(QObject *parent)
     : QObject(parent)

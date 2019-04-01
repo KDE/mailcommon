@@ -17,7 +17,7 @@
 
 #include "searchpatterntest.h"
 #include "../searchpattern.h"
-#include <qtest.h>
+#include <QTest>
 
 SearchPatternTest::SearchPatternTest(QObject *parent)
     : QObject(parent)

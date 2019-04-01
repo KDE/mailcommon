@@ -16,7 +16,7 @@
 */
 
 #include "invalidfilterlistwidgettest.h"
-#include <qtest.h>
+#include <QTest>
 #include "../filter/invalidfilters/invalidfilterlistview.h"
 #include "../filter/invalidfilters/invalidfilterinfo.h"
 

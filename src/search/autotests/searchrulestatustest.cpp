@@ -16,7 +16,7 @@
 */
 
 #include "searchrulestatustest.h"
-#include <qtest.h>
+#include <QTest>
 #include "../searchrule/searchrulestatus.h"
 
 SearchRuleStatusTest::SearchRuleStatusTest(QObject *parent)

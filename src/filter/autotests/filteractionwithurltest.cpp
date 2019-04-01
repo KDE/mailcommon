@@ -19,7 +19,7 @@
 #include "../filteractions/filteractionwithurl.h"
 #include <KUrlRequester>
 #include <KLineEdit>
-#include <qtest.h>
+#include <QTest>
 
 class TestFilterActionWithUrl : public MailCommon::FilterActionWithUrl
 {

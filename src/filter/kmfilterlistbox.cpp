@@ -25,10 +25,10 @@
 #include "invalidfilters/invalidfilterdialog.h"
 #include <KLocalizedString>
 #include <klistwidgetsearchline.h>
-#include <qpushbutton.h>
-#include <qboxlayout.h>
-#include <qlistwidget.h>
-#include <qshortcut.h>
+#include <QPushButton>
+#include <QBoxLayout>
+#include <QListWidget>
+#include <QShortcut>
 #include <KMessageBox>
 #include <KIconLoader>
 #include "mailcommon_debug.h"

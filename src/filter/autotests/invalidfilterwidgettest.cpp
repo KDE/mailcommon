@@ -19,7 +19,7 @@
 #include "../filter/invalidfilters/invalidfilterwidget.h"
 #include "../filter/invalidfilters/invalidfilterlistview.h"
 #include <QLabel>
-#include <qtest.h>
+#include <QTest>
 InvalidFilterWidgetTest::InvalidFilterWidgetTest(QObject *parent)
     : QObject(parent)
 {

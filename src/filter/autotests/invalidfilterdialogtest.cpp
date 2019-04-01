@@ -17,7 +17,7 @@
 
 #include "invalidfilterdialogtest.h"
 #include "../filter/invalidfilters/invalidfilterdialog.h"
-#include <qtest.h>
+#include <QTest>
 #include "../filter/invalidfilters/invalidfilterwidget.h"
 #include "../filter/invalidfilters/invalidfilterinfowidget.h"
 #include <QStandardPaths>

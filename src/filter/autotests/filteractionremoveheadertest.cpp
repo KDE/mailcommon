@@ -17,7 +17,7 @@
 
 #include "filteractionremoveheadertest.h"
 #include "../filteractions/filteractionremoveheader.h"
-#include <qtest.h>
+#include <QTest>
 #include <pimcommon/minimumcombobox.h>
 
 FilterActionRemoveHeaderTest::FilterActionRemoveHeaderTest(QObject *parent)

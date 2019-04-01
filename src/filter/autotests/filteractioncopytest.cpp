@@ -17,7 +17,7 @@
 
 #include "filteractioncopytest.h"
 #include "../filteractions/filteractioncopy.h"
-#include <qtest.h>
+#include <QTest>
 
 FilterActionCopyTest::FilterActionCopyTest(QObject *parent)
     : QObject(parent)

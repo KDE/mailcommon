@@ -17,7 +17,7 @@
 
 #include "filteractionplaysoundtest.h"
 #include "../filteractions/filteractionplaysound.h"
-#include <qtest.h>
+#include <QTest>
 #include "filter/soundtestwidget.h"
 
 FilterActionPlaySoundTest::FilterActionPlaySoundTest(QObject *parent)

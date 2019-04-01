@@ -23,7 +23,7 @@
 #include <QPainter>
 #include <QPushButton>
 #include <QToolButton>
-#include <qlabel.h>
+#include <QLabel>
 
 using namespace MailCommon;
 

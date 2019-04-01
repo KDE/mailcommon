@@ -17,7 +17,7 @@
 
 #include "filteractionsetstatustest.h"
 #include "../filteractions/filteractionsetstatus.h"
-#include <qtest.h>
+#include <QTest>
 #include <QWidget>
 #include <pimcommon/minimumcombobox.h>
 

@@ -18,7 +18,7 @@
 #include "filterconverttosieveresultdialogtest.h"
 #include "../filterconverter/filterconverttosieveresultdialog.h"
 #include <QDialogButtonBox>
-#include <qtest.h>
+#include <QTest>
 #include <QPushButton>
 #include <kpimtextedit/plaintexteditorwidget.h>
 #include <QStandardPaths>

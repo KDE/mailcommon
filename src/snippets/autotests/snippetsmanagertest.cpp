@@ -18,7 +18,7 @@
 #include "snippetsmanagertest.h"
 #include "../snippetsmanager.h"
 #include <KActionCollection>
-#include <qtest.h>
+#include <QTest>
 
 SnippetsManagerTest::SnippetsManagerTest(QObject *parent)
     : QObject(parent)

@@ -16,7 +16,7 @@
 */
 
 #include "searchruledatetest.h"
-#include <qtest.h>
+#include <QTest>
 #include "../searchrule/searchruledate.h"
 #include <KMime/Message>
 Q_DECLARE_METATYPE(MailCommon::SearchRule::Function)

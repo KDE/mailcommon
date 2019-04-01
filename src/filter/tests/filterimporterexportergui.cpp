@@ -19,10 +19,10 @@
 #include "filter/filterimporterexporter.h"
 #include "filter/mailfilter.h"
 
-#include <qapplication.h>
+#include <QApplication>
 #include <QVBoxLayout>
 #include <QMenu>
-#include <qmenubar.h>
+#include <QMenuBar>
 #include <QTextEdit>
 
 Q_DECLARE_METATYPE(MailCommon::FilterImporterExporter::FilterType)
