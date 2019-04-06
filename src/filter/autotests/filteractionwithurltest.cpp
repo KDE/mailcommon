@@ -98,7 +98,7 @@ void FilterActionWithUrlTest::shouldTestUrl_data()
     QTest::newRow("local") <<  QStringLiteral("ls") << QStringLiteral("ls");
     QTest::newRow("localwithargument") <<  QStringLiteral("ls -l") << QStringLiteral("ls -l");
     QTest::newRow("fullpathwithargument") <<  QStringLiteral("/usr/bin/ls -l") << QStringLiteral("/usr/bin/ls -l");
-    QTest::newRow("url") <<  QStringLiteral("file:///usr/bin/ls -l") << QStringLiteral("/usr/bin/ls -l");
+    QTest::newRow("url") <<  QStringLiteral("file:///usr/bin/ls -l") << QStringLiteral("file:///usr/bin/ls -l");
     QTest::newRow("url2") <<  QStringLiteral("/usr/bin/ls -l") << QStringLiteral("/usr/bin/ls -l");
 }
 
