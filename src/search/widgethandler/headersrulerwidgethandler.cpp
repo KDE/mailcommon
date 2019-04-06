@@ -17,7 +17,6 @@
 */
 
 #include "headersrulerwidgethandler.h"
-#include <PimCommon/MinimumComboBox>
 
 #include "search/searchpattern.h"
 
@@ -26,6 +25,7 @@
 
 #include <QStackedWidget>
 #include <QLabel>
+#include <QComboBox>
 
 using namespace MailCommon;
 
@@ -61,7 +61,8 @@ QWidget *HeadersRuleWidgetHandler::createFunctionWidget(
         return nullptr;
     }
 
-    PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
+    auto funcCombo = new QComboBox(functionStack);
+    funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("headerRuleFuncCombo"));
     for (int i = 0; i < HeadersFunctionCount; ++i) {
         if (!(isBalooSearch
@@ -106,8 +107,7 @@ QWidget *HeadersRuleWidgetHandler::createValueWidget(int number, QStackedWidget 
 SearchRule::Function HeadersRuleWidgetHandler::currentFunction(
     const QStackedWidget *functionStack) const
 {
-    const PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("headerRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("headerRuleFuncCombo"));
 
     if (funcCombo && funcCombo->currentIndex() >= 0) {
         return HeaderFunctions[funcCombo->currentIndex()].id;
@@ -189,7 +189,7 @@ bool HeadersRuleWidgetHandler::handlesField(const QByteArray &field) const
 void HeadersRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     // reset the function combo box
-    PimCommon::MinimumComboBox *funcCombo = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("headerRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("headerRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -232,7 +232,7 @@ bool HeadersRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWi
         }
     }
 
-    PimCommon::MinimumComboBox *funcCombo = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("headerRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("headerRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);

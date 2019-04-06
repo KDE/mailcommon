@@ -21,13 +21,12 @@
 #include "widgethandler/rulewidgethandlermanager.h"
 using MailCommon::RuleWidgetHandlerManager;
 #include "mailcommon_debug.h"
-#include <PimCommon/MinimumComboBox>
 
 #include <KLocalizedString>
 #include <QPushButton>
 #include <KLineEdit>
 #include <QIcon>
-
+#include <KComboBox>
 #include <QButtonGroup>
 #include <QByteArray>
 #include <QHBoxLayout>
@@ -41,7 +40,7 @@ using MailCommon::RuleWidgetHandlerManager;
 //       the value of the entries in the enum in SearchRuleWidget.
 
 #undef I18N_NOOP
-#define I18N_NOOP(t) 0, t
+#define I18N_NOOP(t) nullptr, t
 #undef I18N_NOOP2
 #define I18N_NOOP2(c, t) c, t
 
@@ -156,7 +155,8 @@ void SearchRuleWidget::initWidget(SearchPatternEdit::SearchModeType modeType)
     hlay->setContentsMargins(0, 0, 0, 0);
 
     // initialize the header field combo box
-    mRuleField = new PimCommon::MinimumComboBox(this);
+    mRuleField = new KComboBox(this);
+    mRuleField->setMinimumWidth(50);
     mRuleField->setObjectName(QStringLiteral("mRuleField"));
     mRuleField->setEditable(true);
     KLineEdit *edit = new KLineEdit;
@@ -205,7 +205,7 @@ void SearchRuleWidget::initWidget(SearchPatternEdit::SearchModeType modeType)
     // redirect focus to the header field combo box
     setFocusProxy(mRuleField);
 
-    connect(mRuleField, QOverload<const QString &>::of(&KComboBox::activated),
+    connect(mRuleField, QOverload<const QString &>::of(&QComboBox::activated),
             this, &SearchRuleWidget::slotRuleFieldChanged);
     connect(mRuleField, &QComboBox::editTextChanged,
             this, &SearchRuleWidget::slotRuleFieldChanged);

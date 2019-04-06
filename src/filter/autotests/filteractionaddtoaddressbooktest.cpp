@@ -21,7 +21,7 @@
 #include <QWidget>
 #include <QLabel>
 #include <klineedit.h>
-#include <pimcommon/minimumcombobox.h>
+#include <QComboBox>
 #include <libkdepimakonadi/tagwidgets.h>
 #include <AkonadiWidgets/CollectionComboBox>
 
@@ -39,7 +39,7 @@ void FilterActionAddToAddressBookTest::shouldHaveDefaultValue()
     MailCommon::FilterActionAddToAddressBook filter;
     QWidget *w = filter.createParamWidget(nullptr);
 
-    PimCommon::MinimumComboBox *headerCombo = w->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("HeaderComboBox"));
+    auto headerCombo = w->findChild<QComboBox *>(QStringLiteral("HeaderComboBox"));
     QVERIFY(headerCombo);
 
     QLabel *label = w->findChild<QLabel *>(QStringLiteral("label_with_category"));

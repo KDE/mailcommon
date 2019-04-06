@@ -19,8 +19,6 @@
 
 #include "filteractionaddtoaddressbook.h"
 
-#include "PimCommon/MinimumComboBox"
-
 #include <LibkdepimAkonadi/AddContactJob>
 #include <LibkdepimAkonadi/TagWidgets>
 
@@ -28,6 +26,7 @@
 #include <KContacts/Addressee>
 #include <KLocalizedString>
 #include <KEmailAddress>
+#include <KComboBox>
 
 #include <QGridLayout>
 #include <QLabel>
@@ -116,7 +115,8 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
     QWidget *widget = new QWidget(parent);
     QGridLayout *layout = new QGridLayout(widget);
 
-    PimCommon::MinimumComboBox *headerCombo = new PimCommon::MinimumComboBox(widget);
+    const auto headerCombo = new KComboBox(widget);
+    headerCombo->setMinimumWidth(50);
     headerCombo->setObjectName(QStringLiteral("HeaderComboBox"));
     layout->addWidget(headerCombo, 0, 0, 2, 1, Qt::AlignVCenter);
 
@@ -141,7 +141,7 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
                                         "If it is not accessible, the filter will fallback to the default address book."));
     layout->addWidget(collectionComboBox, 1, 2);
 
-    connect(headerCombo, QOverload<int>::of(&PimCommon::MinimumComboBox::currentIndexChanged), this, &FilterActionAddToAddressBook::filterActionModified);
+    connect(headerCombo, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &FilterActionAddToAddressBook::filterActionModified);
     connect(collectionComboBox, QOverload<int>::of(&Akonadi::CollectionComboBox::activated), this, &FilterActionAddToAddressBook::filterActionModified);
     connect(categoryEdit, SIGNAL(selectionChanged(QStringList)),
             this, SIGNAL(filterActionModified()));
@@ -153,7 +153,7 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
 
 void FilterActionAddToAddressBook::setParamWidgetValue(QWidget *paramWidget) const
 {
-    PimCommon::MinimumComboBox *headerCombo = paramWidget->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("HeaderComboBox"));
+    const auto headerCombo = paramWidget->findChild<KComboBox *>(QStringLiteral("HeaderComboBox"));
     Q_ASSERT(headerCombo);
     headerCombo->clear();
     headerCombo->addItem(mFromStr, FromHeader);
@@ -175,7 +175,7 @@ void FilterActionAddToAddressBook::setParamWidgetValue(QWidget *paramWidget) con
 
 void FilterActionAddToAddressBook::applyParamWidgetValue(QWidget *paramWidget)
 {
-    const PimCommon::MinimumComboBox *headerCombo = paramWidget->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("HeaderComboBox"));
+    const auto headerCombo = paramWidget->findChild<QComboBox *>(QStringLiteral("HeaderComboBox"));
     Q_ASSERT(headerCombo);
     mHeaderType = static_cast<HeaderType>(headerCombo->itemData(headerCombo->currentIndex()).toInt());
 
@@ -202,7 +202,7 @@ void FilterActionAddToAddressBook::applyParamWidgetValue(QWidget *paramWidget)
 
 void FilterActionAddToAddressBook::clearParamWidget(QWidget *paramWidget) const
 {
-    PimCommon::MinimumComboBox *headerCombo = paramWidget->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("HeaderComboBox"));
+    const auto headerCombo = paramWidget->findChild<QComboBox *>(QStringLiteral("HeaderComboBox"));
     Q_ASSERT(headerCombo);
     headerCombo->setCurrentIndex(0);
 

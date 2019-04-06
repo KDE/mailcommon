@@ -18,10 +18,9 @@
 
 #include "statusrulewidgethandler.h"
 #include "search/searchrule/searchrulestatus.h"
-#include <PimCommon/MinimumComboBox>
 
 #include <KIconLoader>
-
+#include <QComboBox>
 #include <QStackedWidget>
 
 using namespace MailCommon;
@@ -45,7 +44,8 @@ QWidget *StatusRuleWidgetHandler::createFunctionWidget(
         return nullptr;
     }
 
-    PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
+    auto *funcCombo = new QComboBox(functionStack);
+    funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("statusRuleFuncCombo"));
     for (int i = 0; i < StatusFunctionCount; ++i) {
         funcCombo->addItem(i18n(StatusFunctions[i].displayName));
@@ -64,7 +64,8 @@ QWidget *StatusRuleWidgetHandler::createValueWidget(int number, QStackedWidget *
         return nullptr;
     }
 
-    PimCommon::MinimumComboBox *statusCombo = new PimCommon::MinimumComboBox(valueStack);
+    auto *statusCombo = new QComboBox(valueStack);
+    statusCombo->setMinimumWidth(50);
     statusCombo->setObjectName(QStringLiteral("statusRuleValueCombo"));
     for (int i = 0; i < MailCommon::StatusValueCountWithoutHidden; ++i) {
         if (MailCommon::StatusValues[ i ].icon != nullptr) {
@@ -87,8 +88,7 @@ QWidget *StatusRuleWidgetHandler::createValueWidget(int number, QStackedWidget *
 SearchRule::Function StatusRuleWidgetHandler::currentFunction(
     const QStackedWidget *functionStack) const
 {
-    const PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("statusRuleFuncCombo"));
 
     if (funcCombo && funcCombo->currentIndex() >= 0) {
         return StatusFunctions[funcCombo->currentIndex()].id;
@@ -112,8 +112,7 @@ SearchRule::Function StatusRuleWidgetHandler::function(const QByteArray &field, 
 
 int StatusRuleWidgetHandler::currentStatusValue(const QStackedWidget *valueStack) const
 {
-    const PimCommon::MinimumComboBox *statusCombo
-        = valueStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleValueCombo"));
+    const auto statusCombo = valueStack->findChild<QComboBox*>(QStringLiteral("statusRuleValueCombo"));
 
     if (statusCombo) {
         return statusCombo->currentIndex();
@@ -166,8 +165,7 @@ bool StatusRuleWidgetHandler::handlesField(const QByteArray &field) const
 void StatusRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     // reset the function combo box
-    PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleFuncCombo"));
+    auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("statusRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -176,8 +174,7 @@ void StatusRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidge
     }
 
     // reset the status value combo box
-    PimCommon::MinimumComboBox *statusCombo
-        = valueStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleValueCombo"));
+    auto statusCombo = valueStack->findChild<QComboBox *>(QStringLiteral("statusRuleValueCombo"));
 
     if (statusCombo) {
         statusCombo->blockSignals(true);
@@ -204,8 +201,7 @@ bool StatusRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWid
         }
     }
 
-    PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("statusRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -227,8 +223,7 @@ bool StatusRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWid
         }
     }
 
-    PimCommon::MinimumComboBox *statusCombo
-        = valueStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("statusRuleValueCombo"));
+    const auto statusCombo = valueStack->findChild<QComboBox *>(QStringLiteral("statusRuleValueCombo"));
 
     if (statusCombo) {
         statusCombo->blockSignals(true);

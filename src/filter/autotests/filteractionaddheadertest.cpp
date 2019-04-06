@@ -22,7 +22,7 @@
 #include <KLineEdit>
 #include <QLabel>
 #include <QTest>
-#include <pimcommon/minimumcombobox.h>
+#include <QComboBox>
 
 FilterActionAddHeaderTest::FilterActionAddHeaderTest(QObject *parent)
     : QObject(parent)
@@ -38,7 +38,7 @@ void FilterActionAddHeaderTest::shouldCreateWidget()
     MailCommon::FilterActionAddHeader filter;
     QWidget *widget = filter.createParamWidget(nullptr);
     QVERIFY(widget);
-    PimCommon::MinimumComboBox *comboBox = widget->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("combo"));
+    auto comboBox = widget->findChild<QComboBox *>(QStringLiteral("combo"));
     QVERIFY(comboBox);
     QVERIFY(comboBox->isEditable());
     QLabel *label = widget->findChild<QLabel *>(QStringLiteral("label_value"));
@@ -62,7 +62,7 @@ void FilterActionAddHeaderTest::shouldClearWidget()
 {
     MailCommon::FilterActionAddHeader filter;
     QWidget *widget = filter.createParamWidget(nullptr);
-    PimCommon::MinimumComboBox *comboBox = widget->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("combo"));
+    auto comboBox = widget->findChild<QComboBox *>(QStringLiteral("combo"));
     KLineEdit *lineEdit = widget->findChild<KLineEdit *>(QStringLiteral("ledit"));
     comboBox->lineEdit()->setText(QStringLiteral("test"));
     lineEdit->setText(QStringLiteral("blo"));
@@ -198,7 +198,7 @@ void FilterActionAddHeaderTest::shouldAddValue()
     QWidget *widget = filter.createParamWidget(nullptr);
     filter.argsFromString(argsinput);
     filter.setParamWidgetValue(widget);
-    PimCommon::MinimumComboBox *comboBox = widget->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("combo"));
+    auto comboBox = widget->findChild<QComboBox *>(QStringLiteral("combo"));
     KLineEdit *lineEdit = widget->findChild<KLineEdit *>(QStringLiteral("ledit"));
     QCOMPARE(comboBox->lineEdit()->text(), resultheader);
     QCOMPARE(lineEdit->text(), resultvalue);

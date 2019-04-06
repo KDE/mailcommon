@@ -17,9 +17,7 @@
 */
 
 #include "encryptionwidgethandler.h"
-
-#include <PimCommon/MinimumComboBox>
-
+#include <QComboBox>
 #include <QStackedWidget>
 #include <QLabel>
 
@@ -52,7 +50,8 @@ QWidget *EncryptionWidgetHandler::createFunctionWidget(int number, QStackedWidge
         return nullptr;
     }
 
-    auto combo = new PimCommon::MinimumComboBox(functionStack);
+    auto combo = new QComboBox(functionStack);
+    combo->setMinimumWidth(50);
     combo->setObjectName(QStringLiteral("encryptionRuleFuncCombo"));
     for (int i = 0; i < EncryptionFunctionCount; ++i) {
         combo->addItem(i18n(EncryptionFunctions[i].displayName));
@@ -82,7 +81,7 @@ SearchRule::Function EncryptionWidgetHandler::function(const QByteArray &field, 
         return SearchRule::FuncNone;
     }
 
-    const auto combo = functionStack->findChild<KComboBox *>(QStringLiteral("encryptionRuleFuncCombo"));
+    const auto combo = functionStack->findChild<QComboBox *>(QStringLiteral("encryptionRuleFuncCombo"));
     if (combo && combo->currentIndex() >= 0) {
         return EncryptionFunctions[combo->currentIndex()].id;
     }
@@ -118,7 +117,7 @@ bool EncryptionWidgetHandler::handlesField(const QByteArray &field) const
 
 void EncryptionWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
-    const auto combo = functionStack->findChild<KComboBox *>(QStringLiteral("encryptionRuleFuncCombo"));
+    const auto combo = functionStack->findChild<QComboBox *>(QStringLiteral("encryptionRuleFuncCombo"));
     if (combo) {
         const bool blocked = combo->blockSignals(true);
         combo->setCurrentIndex(0);
@@ -137,7 +136,7 @@ bool EncryptionWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWid
     }
     update("<encryption>", functionStack, valueStack);
 
-    const auto combo = functionStack->findChild<KComboBox *>(QStringLiteral("encryptionRuleFuncCombo"));
+    const auto combo = functionStack->findChild<QComboBox *>(QStringLiteral("encryptionRuleFuncCombo"));
     if (combo) {
         const bool blocked = combo->blockSignals(true);
         for (int i = 0; i < EncryptionFunctionCount; ++i) {

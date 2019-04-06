@@ -19,12 +19,11 @@
 #include "messagerulewidgethandler.h"
 #include "search/searchpattern.h"
 
-#include <PimCommon/MinimumComboBox>
-
 #include <KLocalizedString>
 #include <KLineEdit>
 #include <QStackedWidget>
 #include <QLabel>
+#include <QComboBox>
 
 using namespace MailCommon;
 
@@ -53,7 +52,8 @@ QWidget *MessageRuleWidgetHandler::createFunctionWidget(
         return nullptr;
     }
 
-    PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
+    auto *funcCombo = new QComboBox(functionStack);
+    funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("messageRuleFuncCombo"));
     for (int i = 0; i < MessageFunctionCount; ++i) {
         if (!(isBalooSearch && (MessageFunctions[i].id == SearchRule::FuncHasAttachment || MessageFunctions[i].id == SearchRule::FuncHasNoAttachment))) {
@@ -96,8 +96,7 @@ QWidget *MessageRuleWidgetHandler::createValueWidget(int number, QStackedWidget 
 SearchRule::Function MessageRuleWidgetHandler::currentFunction(
     const QStackedWidget *functionStack) const
 {
-    const PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("messageRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("messageRuleFuncCombo"));
 
     if (funcCombo && funcCombo->currentIndex() >= 0) {
         return MessageFunctions[funcCombo->currentIndex()].id;
@@ -178,7 +177,7 @@ bool MessageRuleWidgetHandler::handlesField(const QByteArray &field) const
 void MessageRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     // reset the function combo box
-    PimCommon::MinimumComboBox *funcCombo = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("messageRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("messageRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -222,8 +221,7 @@ bool MessageRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWi
         }
     }
 
-    PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("messageRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("messageRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);

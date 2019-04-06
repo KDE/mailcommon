@@ -20,10 +20,11 @@
 #include "filteractionaddtag.h"
 #include "filter/filtermanager.h"
 #include "filter/dialog/filteractionmissingtagdialog.h"
-#include "PimCommon/MinimumComboBox"
 
 #include <QPointer>
-#include <Tag>
+#include <QComboBox>
+
+#include <AkonadiCore/Tag>
 
 using namespace MailCommon;
 
@@ -34,7 +35,6 @@ FilterAction *FilterActionAddTag::newAction()
 
 FilterActionAddTag::FilterActionAddTag(QObject *parent)
     : FilterAction(QStringLiteral("add tag"), i18n("Add Tag"), parent)
-    , mComboBox(nullptr)
 {
     mList = FilterManager::instance()->tagList();
     connect(FilterManager::instance(), &FilterManager::tagListingFinished, this, &FilterActionAddTag::slotTagListingFinished);
@@ -42,7 +42,8 @@ FilterActionAddTag::FilterActionAddTag(QObject *parent)
 
 QWidget *FilterActionAddTag::createParamWidget(QWidget *parent) const
 {
-    mComboBox = new PimCommon::MinimumComboBox(parent);
+    mComboBox = new QComboBox(parent);
+    mComboBox->setMinimumWidth(50);
     mComboBox->setEditable(false);
     QMapIterator<QUrl, QString> i(mList);
     while (i.hasNext()) {
@@ -52,27 +53,27 @@ QWidget *FilterActionAddTag::createParamWidget(QWidget *parent) const
 
     setParamWidgetValue(mComboBox);
 
-    connect(mComboBox, QOverload<int>::of(&PimCommon::MinimumComboBox::currentIndexChanged), this, &FilterActionAddTag::filterActionModified);
+    connect(mComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &FilterActionAddTag::filterActionModified);
 
     return mComboBox;
 }
 
 void FilterActionAddTag::applyParamWidgetValue(QWidget *paramWidget)
 {
-    PimCommon::MinimumComboBox *combo = static_cast<PimCommon::MinimumComboBox *>(paramWidget);
+    auto combo = static_cast<QComboBox*>(paramWidget);
     mParameter = combo->itemData(combo->currentIndex()).toString();
 }
 
 void FilterActionAddTag::setParamWidgetValue(QWidget *paramWidget) const
 {
-    const int index = static_cast<PimCommon::MinimumComboBox *>(paramWidget)->findData(mParameter);
+    const int index = static_cast<QComboBox*>(paramWidget)->findData(mParameter);
 
-    static_cast<PimCommon::MinimumComboBox *>(paramWidget)->setCurrentIndex(index < 0 ? 0 : index);
+    static_cast<QComboBox*>(paramWidget)->setCurrentIndex(index < 0 ? 0 : index);
 }
 
 void FilterActionAddTag::clearParamWidget(QWidget *paramWidget) const
 {
-    static_cast<PimCommon::MinimumComboBox *>(paramWidget)->setCurrentIndex(0);
+    static_cast<QComboBox*>(paramWidget)->setCurrentIndex(0);
 }
 
 bool FilterActionAddTag::isEmpty() const

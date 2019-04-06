@@ -24,7 +24,6 @@
 #include "util/mailutil.h"
 #include "filter/dialog/filteractionmissingtemplatedialog.h"
 
-#include <PimCommon/MinimumComboBox>
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
 #include <Akonadi/Contact/EmailAddressRequester>
@@ -34,6 +33,7 @@
 
 #include <KLocalizedString>
 #include <KLineEdit>
+#include <KComboBox>
 
 #include <QHBoxLayout>
 
@@ -105,7 +105,8 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
     lineEdit->setToolTip(i18n("The addressee to whom the message will be forwarded."));
     lineEdit->setWhatsThis(i18n("The filter will forward the message to the addressee entered here."));
 
-    PimCommon::MinimumComboBox *templateCombo = new PimCommon::MinimumComboBox(addressAndTemplate);
+    auto templateCombo = new KComboBox(addressAndTemplate);
+    templateCombo->setMinimumWidth(50);
     templateCombo->setObjectName(QStringLiteral("templateCombo"));
     layout->addWidget(templateCombo);
 
@@ -124,7 +125,7 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
     templateCombo->setToolTip(i18n("The template used when forwarding"));
     templateCombo->setWhatsThis(i18n("Set the forwarding template that will be used with this filter."));
 
-    connect(templateCombo, QOverload<int>::of(&PimCommon::MinimumComboBox::currentIndexChanged), this, &FilterActionForward::filterActionModified);
+    connect(templateCombo, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &FilterActionForward::filterActionModified);
     connect(addressRequester, &Akonadi::EmailAddressRequester::textChanged, this, &FilterActionForward::filterActionModified);
 
     return addressAndTemplate;
@@ -136,7 +137,7 @@ void FilterActionForward::applyParamWidgetValue(QWidget *paramWidget)
     Q_ASSERT(addressEdit);
     FilterActionWithAddress::applyParamWidgetValue(addressEdit);
 
-    const PimCommon::MinimumComboBox *templateCombo = paramWidget->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("templateCombo"));
+    const auto templateCombo = paramWidget->findChild<KComboBox *>(QStringLiteral("templateCombo"));
     Q_ASSERT(templateCombo);
 
     if (templateCombo->currentIndex() == 0) {
@@ -153,7 +154,7 @@ void FilterActionForward::setParamWidgetValue(QWidget *paramWidget) const
     Q_ASSERT(addressEdit);
     FilterActionWithAddress::setParamWidgetValue(addressEdit);
 
-    PimCommon::MinimumComboBox *templateCombo = paramWidget->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("templateCombo"));
+    const auto templateCombo = paramWidget->findChild<KComboBox *>(QStringLiteral("templateCombo"));
     Q_ASSERT(templateCombo);
 
     if (mTemplate.isEmpty()) {
@@ -174,7 +175,7 @@ void FilterActionForward::clearParamWidget(QWidget *paramWidget) const
     Q_ASSERT(addressEdit);
     FilterActionWithAddress::clearParamWidget(addressEdit);
 
-    PimCommon::MinimumComboBox *templateCombo = paramWidget->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("templateCombo"));
+    const auto templateCombo = paramWidget->findChild<KComboBox *>(QStringLiteral("templateCombo"));
     Q_ASSERT(templateCombo);
 
     templateCombo->setCurrentIndex(0);

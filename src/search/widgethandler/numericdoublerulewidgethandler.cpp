@@ -17,13 +17,13 @@
 */
 
 #include "numericdoublerulewidgethandler.h"
-#include <PimCommon/MinimumComboBox>
 #include "search/searchpattern.h"
 
 #include <KLocalizedString>
 
 #include <QDoubleSpinBox>
 #include <QStackedWidget>
+#include <QComboBox>
 
 using namespace MailCommon;
 
@@ -48,7 +48,8 @@ QWidget *NumericDoubleRuleWidgetHandler::createFunctionWidget(
         return nullptr;
     }
 
-    PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
+    auto funcCombo = new QComboBox(functionStack);
+    funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("numericDoubleRuleFuncCombo"));
     for (int i = 0; i < NumericFunctionCount; ++i) {
         funcCombo->addItem(i18n(NumericFunctions[i].displayName));
@@ -79,8 +80,7 @@ QWidget *NumericDoubleRuleWidgetHandler::createValueWidget(int number, QStackedW
 SearchRule::Function NumericDoubleRuleWidgetHandler::currentFunction(
     const QStackedWidget *functionStack) const
 {
-    const PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("numericDoubleRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("numericDoubleRuleFuncCombo"));
 
     if (funcCombo && funcCombo->currentIndex() >= 0) {
         return NumericFunctions[funcCombo->currentIndex()].id;
@@ -147,8 +147,7 @@ bool NumericDoubleRuleWidgetHandler::handlesField(const QByteArray &field) const
 void NumericDoubleRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     // reset the function combo box
-    PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("numericDoubleRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("numericDoubleRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -196,8 +195,7 @@ bool NumericDoubleRuleWidgetHandler::setRule(QStackedWidget *functionStack, QSta
         }
     }
 
-    PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("numericDoubleRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("numericDoubleRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);

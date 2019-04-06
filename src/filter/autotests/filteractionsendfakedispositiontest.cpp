@@ -18,7 +18,7 @@
 #include "filteractionsendfakedispositiontest.h"
 #include "../filteractions/filteractionsendfakedisposition.h"
 #include <QTest>
-#include <pimcommon/minimumcombobox.h>
+#include <QComboBox>
 
 FilterActionSendFakeDispositionTest::FilterActionSendFakeDispositionTest(QObject *parent)
     : QObject(parent)
@@ -35,7 +35,7 @@ void FilterActionSendFakeDispositionTest::shouldHaveDefaultValue()
     QWidget *w = filter.createParamWidget(nullptr);
     QCOMPARE(w->objectName(), QStringLiteral("combobox"));
 
-    PimCommon::MinimumComboBox *comboBox = dynamic_cast<PimCommon::MinimumComboBox *>(w);
+    auto comboBox = dynamic_cast<QComboBox *>(w);
     QVERIFY(comboBox);
     QVERIFY(!comboBox->isEditable());
     QVERIFY(comboBox->count() > 0);

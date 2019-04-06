@@ -19,7 +19,6 @@
 #include "tagrulewidgethandler.h"
 #include "search/searchpattern.h"
 #include "mailcommon_debug.h"
-#include <PimCommon/MinimumComboBox>
 
 #include <QIcon>
 #include <KLocalizedString>
@@ -33,6 +32,7 @@
 
 #include <QLineEdit>
 #include <QStackedWidget>
+#include <QComboBox>
 
 using namespace MailCommon;
 
@@ -40,17 +40,17 @@ class FillTagComboJob : public KJob
 {
     Q_OBJECT
 public:
-    explicit FillTagComboJob(KComboBox *combo, QObject *parent = nullptr);
+    explicit FillTagComboJob(QComboBox *combo, QObject *parent = nullptr);
     void start() override;
 private Q_SLOTS:
     void onDestroyed();
     void onTagsFetched(KJob *);
 
 private:
-    KComboBox *mComboBox = nullptr;
+    QComboBox *mComboBox = nullptr;
 };
 
-FillTagComboJob::FillTagComboJob(KComboBox *combo, QObject *parent)
+FillTagComboJob::FillTagComboJob(QComboBox *combo, QObject *parent)
     : KJob(parent)
     , mComboBox(combo)
 {
@@ -122,7 +122,8 @@ QWidget *TagRuleWidgetHandler::createFunctionWidget(
         return nullptr;
     }
 
-    PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
+    const auto funcCombo = new QComboBox(functionStack);
+    funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("tagRuleFuncCombo"));
     for (int i = 0; i < TagFunctionCount; ++i) {
         if (isBalooSearch) {
@@ -156,7 +157,8 @@ QWidget *TagRuleWidgetHandler::createValueWidget(int number, QStackedWidget *val
     }
 
     if (number == 1) {
-        PimCommon::MinimumComboBox *valueCombo = new PimCommon::MinimumComboBox(valueStack);
+        const auto valueCombo = new QComboBox(valueStack);
+        valueCombo->setMinimumWidth(50);
         valueCombo->setObjectName(QStringLiteral("tagRuleValueCombo"));
         valueCombo->setEditable(true);
         valueCombo->addItem(QString());   // empty entry for user input
@@ -181,8 +183,7 @@ SearchRule::Function TagRuleWidgetHandler::function(const QByteArray &field, con
         return SearchRule::FuncNone;
     }
 
-    const PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("tagRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("tagRuleFuncCombo"));
 
     if (funcCombo && funcCombo->currentIndex() >= 0) {
         return TagFunctions[funcCombo->currentIndex()].id;
@@ -212,8 +213,7 @@ QString TagRuleWidgetHandler::value(const QByteArray &field, const QStackedWidge
     }
 
     // Use combo box
-    const PimCommon::MinimumComboBox *tagCombo
-        = valueStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("tagRuleValueCombo"));
+    const auto tagCombo = valueStack->findChild<QComboBox *>(QStringLiteral("tagRuleValueCombo"));
 
     if (tagCombo) {
         return tagCombo->itemData(tagCombo->currentIndex()).toString();
@@ -241,8 +241,7 @@ bool TagRuleWidgetHandler::handlesField(const QByteArray &field) const
 void TagRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     // reset the function combo box
-    PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("tagRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("tagRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -263,7 +262,7 @@ void TagRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *
         valueStack->setCurrentWidget(lineEdit);
     }
 
-    PimCommon::MinimumComboBox *tagCombo = valueStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("tagRuleValueCombo"));
+    const auto tagCombo = valueStack->findChild<QComboBox *>(QStringLiteral("tagRuleValueCombo"));
     if (tagCombo) {
         tagCombo->blockSignals(true);
         tagCombo->setCurrentIndex(0);
@@ -297,8 +296,7 @@ bool TagRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidget
         }
     }
 
-    PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("tagRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("tagRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -326,8 +324,7 @@ bool TagRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidget
         }
     } else {
         // set combo box value
-        PimCommon::MinimumComboBox *tagCombo
-            = valueStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("tagRuleValueCombo"));
+        const auto tagCombo = valueStack->findChild<QComboBox *>(QStringLiteral("tagRuleValueCombo"));
 
         if (tagCombo) {
             tagCombo->blockSignals(true);

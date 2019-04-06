@@ -21,7 +21,8 @@
 #include <KLineEdit>
 #include <QLabel>
 #include <QWidget>
-#include <pimcommon/minimumcombobox.h>
+#include <QComboBox>
+
 FilterActionRewriteHeaderTest::FilterActionRewriteHeaderTest(QObject *parent)
     : QObject(parent)
 {
@@ -35,7 +36,7 @@ void FilterActionRewriteHeaderTest::shouldHaveDefaultValue()
 {
     MailCommon::FilterActionRewriteHeader filter;
     QWidget *w = filter.createParamWidget(nullptr);
-    PimCommon::MinimumComboBox *combo = w->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("combo"));
+    auto combo = w->findChild<QComboBox *>(QStringLiteral("combo"));
     QVERIFY(combo);
     QVERIFY(combo->count() > 0);
 

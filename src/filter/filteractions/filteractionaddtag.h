@@ -22,9 +22,9 @@
 
 #include "filteractionwithstringlist.h"
 
-namespace PimCommon {
-class MinimumComboBox;
-}
+#include <QPointer>
+
+class QComboBox;
 
 namespace MailCommon {
 //=============================================================================
@@ -62,7 +62,7 @@ private:
     void initializeTagList();
     mutable QMap<QUrl, QString> mList;
     QString mParameter;
-    mutable PimCommon::MinimumComboBox *mComboBox = nullptr;
+    mutable QPointer<QComboBox> mComboBox;
 };
 }
 

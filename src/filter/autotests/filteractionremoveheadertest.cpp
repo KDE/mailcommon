@@ -18,7 +18,7 @@
 #include "filteractionremoveheadertest.h"
 #include "../filteractions/filteractionremoveheader.h"
 #include <QTest>
-#include <pimcommon/minimumcombobox.h>
+#include <QComboBox>
 
 FilterActionRemoveHeaderTest::FilterActionRemoveHeaderTest(QObject *parent)
     : QObject(parent)
@@ -33,7 +33,7 @@ void FilterActionRemoveHeaderTest::shouldHaveDefaultValue()
 {
     MailCommon::FilterActionRemoveHeader filter;
     QWidget *w = filter.createParamWidget(nullptr);
-    PimCommon::MinimumComboBox *comboBox = dynamic_cast<PimCommon::MinimumComboBox *>(w);
+    const auto comboBox = dynamic_cast<QComboBox *>(w);
     QVERIFY(comboBox);
     QVERIFY(comboBox->isEditable());
     QVERIFY(comboBox->count() > 0);

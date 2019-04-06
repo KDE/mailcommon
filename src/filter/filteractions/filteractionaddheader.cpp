@@ -19,10 +19,9 @@
 
 #include "filteractionaddheader.h"
 
-#include <PimCommon/MinimumComboBox>
-
 #include <KLineEdit>
 #include <KLocalizedString>
+#include <KComboBox>
 
 #include <QComboBox>
 #include <QHBoxLayout>
@@ -77,7 +76,8 @@ QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
     layout->setSpacing(4);
     layout->setContentsMargins(0, 0, 0, 0);
 
-    PimCommon::MinimumComboBox *comboBox = new PimCommon::MinimumComboBox(widget);
+    KComboBox *comboBox = new KComboBox(widget);
+    comboBox->setMinimumWidth(50);
     comboBox->setObjectName(QStringLiteral("combo"));
     comboBox->setEditable(true);
     comboBox->setInsertPolicy(QComboBox::InsertAtBottom);
@@ -102,7 +102,7 @@ QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
 
     setParamWidgetValue(widget);
 
-    connect(comboBox, QOverload<int>::of(&PimCommon::MinimumComboBox::currentIndexChanged), this, &FilterActionAddHeader::filterActionModified);
+    connect(comboBox, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &FilterActionAddHeader::filterActionModified);
     connect(comboBox->lineEdit(), &QLineEdit::textChanged,
             this, &FilterAction::filterActionModified);
     connect(lineEdit, &QLineEdit::textChanged, this, &FilterActionAddHeader::filterActionModified);
@@ -114,7 +114,7 @@ void FilterActionAddHeader::setParamWidgetValue(QWidget *paramWidget) const
 {
     const int index = mParameterList.indexOf(mParameter);
 
-    PimCommon::MinimumComboBox *comboBox = paramWidget->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("combo"));
+    const auto comboBox = paramWidget->findChild<KComboBox *>(QStringLiteral("combo"));
     Q_ASSERT(comboBox);
     comboBox->clear();
     comboBox->addItems(mParameterList);
@@ -134,7 +134,7 @@ void FilterActionAddHeader::setParamWidgetValue(QWidget *paramWidget) const
 
 void FilterActionAddHeader::applyParamWidgetValue(QWidget *paramWidget)
 {
-    const PimCommon::MinimumComboBox *comboBox = paramWidget->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("combo"));
+    const auto comboBox = paramWidget->findChild<KComboBox *>(QStringLiteral("combo"));
     Q_ASSERT(comboBox);
     mParameter = comboBox->currentText();
 
@@ -145,7 +145,7 @@ void FilterActionAddHeader::applyParamWidgetValue(QWidget *paramWidget)
 
 void FilterActionAddHeader::clearParamWidget(QWidget *paramWidget) const
 {
-    PimCommon::MinimumComboBox *comboBox = paramWidget->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("combo"));
+    const auto comboBox = paramWidget->findChild<KComboBox *>(QStringLiteral("combo"));
     Q_ASSERT(comboBox);
     comboBox->setCurrentIndex(0);
 

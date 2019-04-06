@@ -19,10 +19,9 @@
 
 #include "filteractionremoveheader.h"
 
-#include "PimCommon/MinimumComboBox"
-
 #include <KLocalizedString>
 #include <QLineEdit>
+#include <KComboBox>
 
 using namespace MailCommon;
 
@@ -46,12 +45,13 @@ FilterActionRemoveHeader::FilterActionRemoveHeader(QObject *parent)
 
 QWidget *FilterActionRemoveHeader::createParamWidget(QWidget *parent) const
 {
-    PimCommon::MinimumComboBox *comboBox = new PimCommon::MinimumComboBox(parent);
+    auto comboBox = new KComboBox(parent);
     comboBox->setEditable(true);
+    comboBox->setMinimumWidth(50);
     comboBox->setInsertPolicy(QComboBox::InsertAtBottom);
     setParamWidgetValue(comboBox);
 
-    connect(comboBox, QOverload<int>::of(&PimCommon::MinimumComboBox::currentIndexChanged), this, &FilterActionRemoveHeader::filterActionModified);
+    connect(comboBox, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &FilterActionRemoveHeader::filterActionModified);
     connect(comboBox->lineEdit(), &QLineEdit::textChanged,
             this, &FilterAction::filterActionModified);
 
@@ -85,7 +85,7 @@ SearchRule::RequiredPart FilterActionRemoveHeader::requiredPart() const
 
 void FilterActionRemoveHeader::setParamWidgetValue(QWidget *paramWidget) const
 {
-    PimCommon::MinimumComboBox *comboBox = qobject_cast<PimCommon::MinimumComboBox *>(paramWidget);
+    const auto comboBox = qobject_cast<KComboBox *>(paramWidget);
     Q_ASSERT(comboBox);
 
     const int index = mParameterList.indexOf(mParameter);

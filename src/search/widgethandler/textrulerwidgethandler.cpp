@@ -17,12 +17,11 @@
 */
 
 #include "textrulerwidgethandler.h"
-#include <PimCommon/MinimumComboBox>
 
 #include "search/searchpattern.h"
 #include <KLineEdit>
 #include <KLocalizedString>
-
+#include <QComboBox>
 #include <QStackedWidget>
 
 using namespace MailCommon;
@@ -59,7 +58,8 @@ QWidget *TextRuleWidgetHandler::createFunctionWidget(
         return nullptr;
     }
 
-    PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
+    auto *funcCombo = new QComboBox(functionStack);
+    funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("textRuleFuncCombo"));
     for (int i = 0; i < TextFunctionCount; ++i) {
         funcCombo->addItem(i18n(TextFunctions[i].displayName));
@@ -101,8 +101,7 @@ QWidget *TextRuleWidgetHandler::createValueWidget(int number, QStackedWidget *va
 SearchRule::Function TextRuleWidgetHandler::currentFunction(
     const QStackedWidget *functionStack) const
 {
-    const PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("textRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("textRuleFuncCombo"));
 
     if (funcCombo && funcCombo->currentIndex() >= 0) {
         return TextFunctions[funcCombo->currentIndex()].id;
@@ -161,7 +160,7 @@ bool TextRuleWidgetHandler::handlesField(const QByteArray &) const
 void TextRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     // reset the function combo box
-    PimCommon::MinimumComboBox *funcCombo = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("textRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("textRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -198,7 +197,7 @@ bool TextRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidge
         }
     }
 
-    PimCommon::MinimumComboBox *funcCombo = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("textRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("textRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);

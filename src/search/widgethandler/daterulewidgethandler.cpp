@@ -19,14 +19,13 @@
 #include "daterulewidgethandler.h"
 #include "search/searchpattern.h"
 
-#include <PimCommon/MinimumComboBox>
-
 #include <KDateComboBox>
 #include <KLocalizedString>
 
 #include <QDate>
 #include <QObject>
 #include <QStackedWidget>
+#include <QComboBox>
 
 using namespace MailCommon;
 
@@ -53,7 +52,8 @@ QWidget *DateRuleWidgetHandler::createFunctionWidget(
         return nullptr;
     }
 
-    PimCommon::MinimumComboBox *funcCombo = new PimCommon::MinimumComboBox(functionStack);
+    auto funcCombo = new QComboBox(functionStack);
+    funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("dateRuleFuncCombo"));
     for (int i = 0; i < DateFunctionCount; ++i) {
         funcCombo->addItem(i18n(DateFunctions[i].displayName));
@@ -85,8 +85,7 @@ QWidget *DateRuleWidgetHandler::createValueWidget(int number, QStackedWidget *va
 SearchRule::Function DateRuleWidgetHandler::currentFunction(
     const QStackedWidget *functionStack) const
 {
-    const PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("dateRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("dateRuleFuncCombo"));
 
     if (funcCombo && funcCombo->currentIndex() >= 0) {
         return DateFunctions[funcCombo->currentIndex()].id;
@@ -153,8 +152,7 @@ bool DateRuleWidgetHandler::handlesField(const QByteArray &field) const
 void DateRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const
 {
     // reset the function combo box
-    PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("dateRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("dateRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
@@ -190,8 +188,7 @@ bool DateRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidge
         }
     }
 
-    PimCommon::MinimumComboBox *funcCombo
-        = functionStack->findChild<PimCommon::MinimumComboBox *>(QStringLiteral("dateRuleFuncCombo"));
+    const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("dateRuleFuncCombo"));
 
     if (funcCombo) {
         funcCombo->blockSignals(true);

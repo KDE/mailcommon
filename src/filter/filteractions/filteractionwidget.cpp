@@ -23,11 +23,11 @@
 #include "filter/filteractions/filteractiondict.h"
 #include "filter/filtermanager.h"
 #include "filter/mailfilter.h"
-#include <PimCommon/MinimumComboBox>
 
 #include <KLocalizedString>
 #include <QPushButton>
 #include <QIcon>
+#include <QComboBox>
 
 #include <QGridLayout>
 #include <QLabel>
@@ -66,7 +66,7 @@ public:
 
     FilterActionWidget *q;
     QList<MailCommon::FilterAction *> mActionList;
-    KComboBox *mComboBox = nullptr;
+    QComboBox *mComboBox = nullptr;
     QPushButton *mAdd = nullptr;
     QPushButton *mRemove = nullptr;
 
@@ -117,7 +117,8 @@ FilterActionWidget::FilterActionWidget(QWidget *parent)
     d->mLayout = new QGridLayout(widget);
     d->mLayout->setContentsMargins(0, 0, 0, 0);
 
-    d->mComboBox = new PimCommon::MinimumComboBox(widget);
+    d->mComboBox = new QComboBox(widget);
+    d->mComboBox->setMinimumWidth(50);
     d->mComboBox->setEditable(false);
     Q_ASSERT(d->mComboBox);
     d->mLayout->addWidget(d->mComboBox, 1, 1);
@@ -169,12 +170,12 @@ FilterActionWidget::FilterActionWidget(QWidget *parent)
     setFocusProxy(d->mComboBox);
 
     // now connect the combo box and the widget stack
-    connect(d->mComboBox, QOverload<int>::of(&KComboBox::activated),
+    connect(d->mComboBox, QOverload<int>::of(&QComboBox::activated),
             this, [this](int index) {
         d->slotFilterTypeChanged(index);
     });
 
-    connect(d->mComboBox, QOverload<int>::of(&KComboBox::activated), this, &FilterActionWidget::filterModified);
+    connect(d->mComboBox, QOverload<int>::of(&QComboBox::activated), this, &FilterActionWidget::filterModified);
 
     connect(d->mAdd, &QPushButton::clicked,
             this, [this]() {
