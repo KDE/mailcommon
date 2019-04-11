@@ -82,6 +82,7 @@ set_package_properties(Xsltproc PROPERTIES DESCRIPTION "XSLT processor from libx
 
 ########### Targets ###########
 remove_definitions( -DQT_NO_CAST_FROM_ASCII )
+option(KDEPIM_RUN_AKONADI_TEST "Enable autotest based on Akonadi." TRUE)
 
 # workaround for https://bugreports.qt.io/browse/QTBUG-74665 (bug in qt5.13 reevaluate it)
 if (${Qt5Widgets_VERSION} STRGREATER "5.13")
