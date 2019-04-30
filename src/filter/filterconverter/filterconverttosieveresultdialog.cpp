@@ -65,15 +65,11 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
     topLayout->addWidget(buttonBox);
 
     FilterconverttosievePurposeMenuWidget *purposeMenu = new FilterconverttosievePurposeMenuWidget(this, this);
-    if (purposeMenu->menu()) {
-        QPushButton *mShareButton = new QPushButton(i18n("Share..."), this);
-        mShareButton->setMenu(purposeMenu->menu());
-        mShareButton->setIcon(QIcon::fromTheme(QStringLiteral("document-share")));
-        purposeMenu->setEditorWidget(mEditor->editor());
-        buttonBox->addButton(mShareButton, QDialogButtonBox::ActionRole);
-    } else {
-        delete purposeMenu;
-    }
+    QPushButton *shareButton = new QPushButton(i18n("Share..."), this);
+    shareButton->setMenu(purposeMenu->menu());
+    shareButton->setIcon(QIcon::fromTheme(QStringLiteral("document-share")));
+    purposeMenu->setEditorWidget(mEditor->editor());
+    buttonBox->addButton(shareButton, QDialogButtonBox::ActionRole);
 
     readConfig();
 }
