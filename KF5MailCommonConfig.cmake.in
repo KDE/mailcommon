@@ -2,6 +2,7 @@
 include(CMakeFindDependencyMacro)
 find_dependency(KF5Akonadi "@AKONADI_VERSION@")
 find_dependency(KF5AkonadiMime "@AKONADIMIME_LIB_VERSION@")
+find_dependency(KF5Libkdepim "@LIBKDEPIM_LIB_VERSION@")
 find_dependency(KF5MessageComposer "@MESSAGELIB_LIB_VERSION@")
 find_dependency(KF5PimCommon "@MESSAGELIB_LIB_VERSION@")
 find_dependency(KF5Completion "@KF5_MIN_VERSION@")
