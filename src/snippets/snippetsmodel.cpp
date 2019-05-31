@@ -55,7 +55,7 @@ public:
     SnippetItem *parent() const;
 
 private:
-    QList<SnippetItem *> mChildItems;
+    QVector<SnippetItem *> mChildItems;
     SnippetItem *mParentItem = nullptr;
 
     bool mIsGroup = false;
