@@ -19,7 +19,7 @@
 #ifndef FILTERCONVERTTOSIEVE_H
 #define FILTERCONVERTTOSIEVE_H
 
-#include <QList>
+#include <QVector>
 
 namespace MailCommon {
 class MailFilter;
