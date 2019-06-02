@@ -21,7 +21,7 @@
 
 #include <QDialog>
 
-#include <QList>
+#include <QVector>
 
 class QPushButton;
 

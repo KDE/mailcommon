@@ -21,7 +21,7 @@
 
 #include "mailcommon_export.h"
 #include <QDomDocument>
-#include <QList>
+#include <QVector>
 #include <QStringList>
 
 class QFile;

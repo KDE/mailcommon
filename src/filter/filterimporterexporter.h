@@ -36,7 +36,7 @@
 #include <KSharedConfig>
 #include <QUrl>
 
-#include <QList>
+#include <QVector>
 #include <QStringList>
 
 class QWidget;
