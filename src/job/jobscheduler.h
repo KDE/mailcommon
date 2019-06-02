@@ -35,6 +35,7 @@
 #include <QObject>
 
 #include <QTimer>
+#include <QVector>
 
 #include "folderjob.h"
 #include <collection.h>
@@ -123,7 +124,7 @@ private:
     void restartTimer();
     void interruptCurrentTask();
     void runTaskNow(ScheduledTask *task);
-    typedef QList<ScheduledTask *> TaskList;
+    typedef QVector<ScheduledTask *> TaskList;
     void removeTask(TaskList::Iterator &it);
 private:
     TaskList mTaskList; // FIFO of tasks to be run
