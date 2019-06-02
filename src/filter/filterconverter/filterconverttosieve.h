@@ -26,13 +26,13 @@ class MailFilter;
 class FilterConvertToSieve
 {
 public:
-    FilterConvertToSieve(const QList<MailFilter *> &filters);
+    FilterConvertToSieve(const QVector<MailFilter *> &filters);
     ~FilterConvertToSieve();
 
     void convert();
 
 private:
-    QList<MailFilter *> mListFilters;
+    QVector<MailFilter *> mListFilters;
 };
 }
 #endif // FILTERCONVERTTOSIEVE_H

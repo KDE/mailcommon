@@ -54,7 +54,7 @@
 
 using namespace MailCommon;
 
-QList<MailFilter *> FilterImporterExporter::readFiltersFromConfig(
+QVector<MailFilter *> FilterImporterExporter::readFiltersFromConfig(
     const KSharedConfig::Ptr &config, QStringList &emptyFilters)
 {
     const KConfigGroup group = config->group("General");
@@ -62,7 +62,7 @@ QList<MailFilter *> FilterImporterExporter::readFiltersFromConfig(
     const int numFilters = group.readEntry("filters", 0);
 
     bool filterNeedUpdate = false;
-    QList<MailFilter *> filters;
+    QVector<MailFilter *> filters;
     for (int i = 0; i < numFilters; ++i) {
         const QString groupName = QStringLiteral("Filter #%1").arg(i);
 
@@ -94,7 +94,7 @@ QList<MailFilter *> FilterImporterExporter::readFiltersFromConfig(
     return filters;
 }
 
-void FilterImporterExporter::writeFiltersToConfig(const QList<MailFilter *> &filters, KSharedConfig::Ptr config, bool exportFiler)
+void FilterImporterExporter::writeFiltersToConfig(const QVector<MailFilter *> &filters, KSharedConfig::Ptr config, bool exportFiler)
 {
     // first, delete all filter groups:
     const QStringList filterGroups
@@ -157,7 +157,7 @@ FilterImporterExporter::~FilterImporterExporter()
     delete d;
 }
 
-QList<MailFilter *> FilterImporterExporter::importFilters(
+QVector<MailFilter *> FilterImporterExporter::importFilters(
     bool &canceled, FilterImporterExporter::FilterType type, const QString &filename)
 {
     QString fileName(filename);
@@ -205,7 +205,7 @@ QList<MailFilter *> FilterImporterExporter::importFilters(
             fileName = QFileDialog::getOpenFileName(d->mParent, title, defaultPath);
             if (fileName.isEmpty()) {
                 canceled = true;
-                return QList<MailFilter *>(); // cancel
+                return QVector<MailFilter *>(); // cancel
             }
         }
         file.setFileName(fileName);
@@ -214,11 +214,11 @@ QList<MailFilter *> FilterImporterExporter::importFilters(
                 d->mParent,
                 i18n("The selected file is not readable. "
                      "Your file access permissions might be insufficient."));
-            return QList<MailFilter *>();
+            return QVector<MailFilter *>();
         }
     }
 
-    QList<MailFilter *> imported;
+    QVector<MailFilter *> imported;
     QStringList emptyFilter;
 
     switch (type) {
@@ -264,7 +264,7 @@ QList<MailFilter *> FilterImporterExporter::importFilters(
             } else {
                 canceled = true;
                 delete selectThunderBirdFileDialog;
-                return QList<MailFilter *>();
+                return QVector<MailFilter *>();
             }
             delete selectThunderBirdFileDialog;
         } else {
@@ -274,7 +274,7 @@ QList<MailFilter *> FilterImporterExporter::importFilters(
                     d->mParent,
                     i18n("The selected file is not readable. "
                          "Your file access permissions might be insufficient."));
-                return QList<MailFilter *>();
+                return QVector<MailFilter *>();
             }
 
             MailCommon::FilterImporterThunderbird *thunderBirdFilter = new MailCommon::FilterImporterThunderbird(&file);
@@ -350,16 +350,16 @@ QList<MailFilter *> FilterImporterExporter::importFilters(
     QPointer<FilterSelectionDialog> dlg = new FilterSelectionDialog(d->mParent);
     dlg->setFilters(imported);
     if (dlg->exec() == QDialog::Accepted) {
-        const QList<MailFilter *> selected = dlg->selectedFilters();
+        const QVector<MailFilter *> selected = dlg->selectedFilters();
         delete dlg;
         return selected;
     }
     delete dlg;
     canceled = true;
-    return QList<MailFilter *>();
+    return QVector<MailFilter *>();
 }
 
-void FilterImporterExporter::exportFilters(const QList<MailFilter *> &filters, const QUrl &fileName, bool saveAll)
+void FilterImporterExporter::exportFilters(const QVector<MailFilter *> &filters, const QUrl &fileName, bool saveAll)
 {
     QUrl saveUrl;
     if (fileName.isEmpty()) {
@@ -381,7 +381,7 @@ void FilterImporterExporter::exportFilters(const QList<MailFilter *> &filters, c
         std::unique_ptr<FilterSelectionDialog> dlg(new FilterSelectionDialog(d->mParent));
         dlg->setFilters(filters);
         if (dlg->exec() == QDialog::Accepted && dlg) {
-            QList<MailFilter *> lst = dlg->selectedFilters();
+            QVector<MailFilter *> lst = dlg->selectedFilters();
             writeFiltersToConfig(lst, config, true);
             qDeleteAll(lst);
         }

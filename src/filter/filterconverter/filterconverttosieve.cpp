@@ -24,7 +24,7 @@
 
 using namespace MailCommon;
 
-FilterConvertToSieve::FilterConvertToSieve(const QList<MailFilter *> &filters)
+FilterConvertToSieve::FilterConvertToSieve(const QVector<MailFilter *> &filters)
     : mListFilters(filters)
 {
 }

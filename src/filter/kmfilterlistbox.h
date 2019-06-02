@@ -22,6 +22,7 @@
 #include "search/searchpattern.h"
 #include <QGroupBox>
 #include <QListWidgetItem>
+#include <QVector>
 class QListWidget;
 class QPushButton;
 class QModelIndex;
@@ -108,7 +109,7 @@ public:
      * after being warned about invalid filters. Otherwise, user is just warned.
      * @param wasCanceled If @c true then the operation was canceled.
      */
-    QList<MailCommon::MailFilter *> filtersForSaving(bool closeAfterSaving, bool &wasCanceled) const;
+    QVector<MailCommon::MailFilter *> filtersForSaving(bool closeAfterSaving, bool &wasCanceled) const;
 
     QStringList selectedFilterId(SearchRule::RequiredPart &requiredPart, const QString &resource) const;
 
@@ -147,7 +148,7 @@ Q_SIGNALS:
     /**
      * Emitted when a filter is deleted.
      */
-    void filterRemoved(const QList<MailCommon::MailFilter *> &filter);
+    void filterRemoved(const QVector<MailCommon::MailFilter *> &filter);
 
     /**
      * Emitted when a filter is updated (e.g. renamed).

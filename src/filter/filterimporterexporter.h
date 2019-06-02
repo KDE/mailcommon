@@ -82,26 +82,26 @@ public:
      * is asked from the user. The list to export is also
      * presented for confirmation/selection.
      */
-    void exportFilters(const QList<MailFilter *> &filters, const QUrl &fileName = QUrl(), bool saveAll = false);
+    void exportFilters(const QVector<MailFilter *> &filters, const QUrl &fileName = QUrl(), bool saveAll = false);
 
     /**
      * Imports filters. Ask the user where to import them from
      * and which filters to import.
      */
-    Q_REQUIRED_RESULT QList<MailFilter *> importFilters(
+    Q_REQUIRED_RESULT QVector<MailFilter *> importFilters(
         bool &canceled, FilterImporterExporter::FilterType type = FilterImporterExporter::KMailFilter, const QString &filename = QString());
 
     /**
      * Writes the given list of @p filters to the given @p config file.
      */
     static void writeFiltersToConfig(
-        const QList<MailFilter *> &filters, KSharedConfig::Ptr config, bool exportFilter = false);
+        const QVector<MailFilter *> &filters, KSharedConfig::Ptr config, bool exportFilter = false);
 
     /**
      * Reads a list of filters from the given @p config file.
      * Return list of empty filter
      */
-    static QList<MailFilter *> readFiltersFromConfig(const KSharedConfig::Ptr &config, QStringList &emptyFilter);
+    static QVector<MailFilter *> readFiltersFromConfig(const KSharedConfig::Ptr &config, QStringList &emptyFilter);
 
 private:
     //@cond PRIVATE

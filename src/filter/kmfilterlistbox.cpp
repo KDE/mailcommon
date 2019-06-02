@@ -373,16 +373,16 @@ void KMFilterListBox::applyFilterChanged(bool closeAfterSaving)
     // their widget's data into our filter list.
 
     bool wasCanceled = false;
-    const QList<MailFilter *> newFilters = filtersForSaving(closeAfterSaving, wasCanceled);
+    const QVector<MailFilter *> newFilters = filtersForSaving(closeAfterSaving, wasCanceled);
     if (!wasCanceled) {
         MailCommon::FilterManager::instance()->setFilters(newFilters);
     }
 }
 
-QList<MailFilter *> KMFilterListBox::filtersForSaving(bool closeAfterSaving, bool &wasCanceled) const
+QVector<MailFilter *> KMFilterListBox::filtersForSaving(bool closeAfterSaving, bool &wasCanceled) const
 {
     Q_EMIT const_cast<KMFilterListBox *>(this)->applyWidgets();  // signals aren't const
-    QList<MailFilter *> filters;
+    QVector<MailFilter *> filters;
     QStringList emptyFilters;
     QVector<MailCommon::InvalidFilterInfo> listInvalidFilters;
     const int numberOfFilter(mListWidget->count());
@@ -509,7 +509,7 @@ void KMFilterListBox::slotDelete()
     }
 
     const int oIdxSelItem = mListWidget->currentRow();
-    QList<MailCommon::MailFilter *> lst;
+    QVector<MailCommon::MailFilter *> lst;
 
     Q_EMIT resetWidgets();
 
@@ -793,7 +793,7 @@ void KMFilterListBox::loadFilterList(bool createDummyFilter)
     // clear both lists
     mListWidget->clear();
 
-    const QList<MailFilter *> filters = MailCommon::FilterManager::instance()->filters();
+    const QVector<MailFilter *> filters = MailCommon::FilterManager::instance()->filters();
     for (MailFilter *filter : filters) {
         QListWidgetFilterItem *item
             = new QListWidgetFilterItem(filter->pattern()->name(), mListWidget);

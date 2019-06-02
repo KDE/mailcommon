@@ -35,7 +35,7 @@ FilterImporterAbstract::~FilterImporterAbstract()
 {
 }
 
-QList<MailFilter *> FilterImporterAbstract::importFilter() const
+QVector<MailFilter *> FilterImporterAbstract::importFilter() const
 {
     return mListMailFilter;
 }

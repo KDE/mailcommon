@@ -97,7 +97,7 @@ void FilterSelectionDialog::readConfig()
     }
 }
 
-void FilterSelectionDialog::setFilters(const QList<MailFilter *> &filters)
+void FilterSelectionDialog::setFilters(const QVector<MailFilter *> &filters)
 {
     if (filters.isEmpty()) {
         mOkButton->setEnabled(false);
@@ -114,9 +114,9 @@ void FilterSelectionDialog::setFilters(const QList<MailFilter *> &filters)
     }
 }
 
-QList<MailFilter *> FilterSelectionDialog::selectedFilters() const
+QVector<MailFilter *> FilterSelectionDialog::selectedFilters() const
 {
-    QList<MailFilter *> filters;
+    QVector<MailFilter *> filters;
 
     const int filterCount = filtersListWidget->count();
     for (int i = 0; i < filterCount; ++i) {

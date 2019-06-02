@@ -34,7 +34,7 @@ class MAILCOMMON_EXPORT FilterImporterAbstract
 public:
     explicit FilterImporterAbstract(bool interactive = true);
     ~FilterImporterAbstract();
-    Q_REQUIRED_RESULT QList<MailFilter *> importFilter() const;
+    Q_REQUIRED_RESULT QVector<MailFilter *> importFilter() const;
     Q_REQUIRED_RESULT QStringList emptyFilter() const;
 
 protected:
@@ -42,7 +42,7 @@ protected:
     void createFilterAction(MailCommon::MailFilter *filter, const QString &actionName, const QString &value);
     bool loadDomElement(QDomDocument &doc, QFile *file);
 
-    QList<MailFilter *> mListMailFilter;
+    QVector<MailFilter *> mListMailFilter;
     QStringList mEmptyFilter;
 private:
     bool mInteractive;

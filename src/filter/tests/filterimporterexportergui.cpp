@@ -90,7 +90,7 @@ void FilterImporterExporterGui::importFilters(MailCommon::FilterImporterExporter
 {
     MailCommon::FilterImporterExporter importer(this);
     bool canceled = false;
-    const QList<MailCommon::MailFilter *> filters = importer.importFilters(canceled, type);
+    const QVector<MailCommon::MailFilter *> filters = importer.importFilters(canceled, type);
     if (canceled) {
         mTextEdit->setText(QStringLiteral("Canceled"));
         return;
