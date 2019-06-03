@@ -44,10 +44,6 @@
 #include <AgentInstance>
 #include <Collection>
 
-namespace Akonadi {
-class Item;
-}
-
 namespace MailCommon {
 /**
  * The Util namespace contains a collection of helper functions use in

@@ -21,7 +21,6 @@
 
 #include <KSyntaxHighlighting/Repository>
 #include <QDialog>
-class QTemporaryFile;
 namespace KPIMTextEdit {
 class PlainTextEditorWidget;
 }
