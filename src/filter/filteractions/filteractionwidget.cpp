@@ -28,6 +28,7 @@
 #include <QPushButton>
 #include <QIcon>
 #include <QComboBox>
+#include <QVector>
 
 #include <QGridLayout>
 #include <QLabel>
@@ -133,9 +134,9 @@ FilterActionWidget::FilterActionWidget(QWidget *parent)
     mainLayout->setSpacing(4);
 
     int index;
-    QList<FilterActionDesc *> list = MailCommon::FilterManager::filterActionDict()->list();
-    QList<FilterActionDesc *>::const_iterator it;
-    QList<FilterActionDesc *>::const_iterator end(list.constEnd());
+    QVector<FilterActionDesc *> list = MailCommon::FilterManager::filterActionDict()->list();
+    QVector<FilterActionDesc *>::const_iterator it;
+    QVector<FilterActionDesc *>::const_iterator end(list.constEnd());
     for (index = 0, it = list.constBegin(); it != end; ++it, ++index) {
         //create an instance:
         FilterAction *action = (*it)->create();
@@ -273,7 +274,7 @@ public:
     void regenerateActionListFromWidgets();
 
     FilterActionWidgetLister *q;
-    QList<MailCommon::FilterAction *> *mActionList = nullptr;
+    QVector<MailCommon::FilterAction *> *mActionList = nullptr;
 };
 
 void FilterActionWidgetLister::Private::regenerateActionListFromWidgets()
@@ -305,7 +306,7 @@ FilterActionWidgetLister::~FilterActionWidgetLister()
     delete d;
 }
 
-void FilterActionWidgetLister::setActionList(QList<FilterAction *> *list)
+void FilterActionWidgetLister::setActionList(QVector<FilterAction *> *list)
 {
     Q_ASSERT(list);
     if (d->mActionList && d->mActionList != list) {
@@ -342,10 +343,10 @@ void FilterActionWidgetLister::setActionList(QList<FilterAction *> *list)
 
     // load the actions into the widgets
     QList<QWidget *> widgetList = widgets();
-    QList<FilterAction *>::const_iterator aEnd(d->mActionList->constEnd());
+    QVector<FilterAction *>::const_iterator aEnd(d->mActionList->constEnd());
     QList<QWidget *>::ConstIterator wIt = widgetList.constBegin();
     QList<QWidget *>::ConstIterator wEnd = widgetList.constEnd();
-    for (QList<FilterAction *>::const_iterator aIt = d->mActionList->constBegin();
+    for (QVector<FilterAction *>::const_iterator aIt = d->mActionList->constBegin();
          (aIt != aEnd && wIt != wEnd); ++aIt, ++wIt) {
         connectWidget((*wIt), (*aIt));
     }

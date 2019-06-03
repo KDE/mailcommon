@@ -42,7 +42,7 @@ public:
     QString mLabel;
     QString mGid;
     MailCommon::TagWidget *mTagWidget = nullptr;
-    QList<MailCommon::Tag::Ptr> mTags;
+    QVector<MailCommon::Tag::Ptr> mTags;
     Akonadi::Tag mTag;
     QPushButton *mOkButton = nullptr;
 };
@@ -76,7 +76,7 @@ AddTagDialog::~AddTagDialog()
     delete d;
 }
 
-void AddTagDialog::setTags(const QList<MailCommon::Tag::Ptr> &tags)
+void AddTagDialog::setTags(const QVector<MailCommon::Tag::Ptr> &tags)
 {
     d->mTags = tags;
 }

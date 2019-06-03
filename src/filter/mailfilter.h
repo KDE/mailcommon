@@ -31,6 +31,7 @@
 #include <kmime/kmime_message.h>
 
 #include <QDataStream>
+#include <QVector>
 
 class KConfigGroup;
 
@@ -127,10 +128,10 @@ public:
     /** Provides a reference to the internal action list. If your used
       the @p setAction() and @p action() functions before, please
       convert to using myFilter->actions()->at() and friends now. */
-    QList<FilterAction *> *actions();
+    QVector<FilterAction *> *actions();
 
     /** Provides a reference to the internal action list. Const version. */
-    const QList<FilterAction *> *actions() const;
+    const QVector<FilterAction *> *actions() const;
 
     /** Provides a reference to the internal pattern. If you used the
       @p matches() function before, please convert to using
@@ -328,7 +329,7 @@ public:
 private:
     QString mIdentifier;
     SearchPattern mPattern;
-    QList<FilterAction *> mActions;
+    QVector<FilterAction *> mActions;
     QStringList mAccounts;
     QString mIcon;
     QString mToolbarName;

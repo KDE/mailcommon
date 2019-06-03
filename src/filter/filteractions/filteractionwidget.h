@@ -25,7 +25,7 @@
 #include "mailcommon_export.h"
 
 #include <Libkdepim/KWidgetLister>
-
+#include <QVector>
 namespace MailCommon {
 class FilterAction;
 class FilterActionWidget;
@@ -125,7 +125,7 @@ public:
     /**
      * Sets the @p list of filter actions, the lister will create FilterActionWidgets for.
      */
-    void setActionList(QList<MailCommon::FilterAction *> *list);
+    void setActionList(QVector<FilterAction *> *list);
 
     /**
      * Updates the action list according to the current action widget values.

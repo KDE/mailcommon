@@ -24,7 +24,7 @@
 
 #include <QMultiHash>
 #include <QString>
-
+#include <QVector>
 namespace MailCommon {
 class FilterAction;
 
@@ -89,7 +89,7 @@ public:
      * Provides read-only access to a list of all known filter
      * actions.
      */
-    MAILCOMMON_EXPORT const QList<FilterActionDesc *> &list() const;
+    MAILCOMMON_EXPORT const QVector<FilterActionDesc *> &list() const;
 
 protected:
     /**
@@ -99,7 +99,7 @@ protected:
     virtual void init();
 
 private:
-    QList<FilterActionDesc *> mList;
+    QVector<FilterActionDesc *> mList;
 };
 }
 

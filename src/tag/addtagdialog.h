@@ -21,6 +21,7 @@
 
 #include "mailcommon_export.h"
 #include "tag.h"
+#include <QVector>
 #include <QDialog>
 #include <AkonadiCore/Tag>
 #include <AkonadiCore/TagCreateJob>
@@ -36,7 +37,7 @@ public:
     explicit AddTagDialog(const QList<KActionCollection *> &actions, QWidget *parent = nullptr);
     ~AddTagDialog();
 
-    void setTags(const QList<MailCommon::Tag::Ptr> &tags);
+    void setTags(const QVector<MailCommon::Tag::Ptr> &tags);
     Q_REQUIRED_RESULT QString label() const;
     Q_REQUIRED_RESULT Akonadi::Tag tag() const;
 

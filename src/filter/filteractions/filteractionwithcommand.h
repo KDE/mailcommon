@@ -21,7 +21,7 @@
 #define MAILCOMMON_FILTERACTIONWITHCOMMAND_H
 
 #include "filteractionwithurl.h"
-
+#include <QVector>
 class QTemporaryFile;
 
 namespace MailCommon {
@@ -62,7 +62,7 @@ public:
      * the name of a tempfile holding the n'th message part, with n=0
      * meaning the body of the message.
      */
-    Q_REQUIRED_RESULT virtual QString substituteCommandLineArgsFor(const KMime::Message::Ptr &aMsg, QList<QTemporaryFile *> &aTempFileList) const;
+    Q_REQUIRED_RESULT virtual QString substituteCommandLineArgsFor(const KMime::Message::Ptr &aMsg, QVector<QTemporaryFile *> &aTempFileList) const;
 
     Q_REQUIRED_RESULT virtual ReturnCode genericProcess(ItemContext &context, bool filtering) const;
 };

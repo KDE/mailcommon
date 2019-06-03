@@ -20,7 +20,7 @@
 #define INVALIDFILTERLISTMODEL_H
 
 #include <QAbstractListModel>
-#include <QList>
+#include <QVector>
 #include "invalidfilterinfo.h"
 namespace MailCommon {
 class InvalidFilterListModel : public QAbstractListModel
@@ -41,7 +41,7 @@ public:
     Q_REQUIRED_RESULT int rowCount(const QModelIndex &parent = QModelIndex()) const override;
 
 private:
-    QList<MailCommon::InvalidFilterInfo> mInvalidFilterItems;
+    QVector<MailCommon::InvalidFilterInfo> mInvalidFilterItems;
 };
 }
 
