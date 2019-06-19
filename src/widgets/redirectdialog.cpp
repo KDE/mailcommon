@@ -44,7 +44,6 @@
 #include <QLabel>
 #include <QPushButton>
 #include <QTreeView>
-#include <QHBoxLayout>
 #include <QFormLayout>
 #include <QDialogButtonBox>
 #include <KGuiItem>

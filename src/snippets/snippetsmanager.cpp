@@ -28,7 +28,6 @@
 
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <KConfigGroup>
 #include <QIcon>
 
 #include <QAction>

@@ -26,7 +26,8 @@
 #include <KLocalizedString>
 #include <klistwidgetsearchline.h>
 #include <QPushButton>
-#include <QBoxLayout>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
 #include <QListWidget>
 #include <QShortcut>
 #include <KMessageBox>

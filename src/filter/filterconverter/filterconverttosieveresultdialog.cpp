@@ -28,12 +28,10 @@
 #include <KSyntaxHighlighting/Theme>
 
 #include <KSharedConfig>
-#include <KMessageBox>
 #include <KConfigGroup>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include <QTemporaryFile>
 
 using namespace MailCommon;
 
