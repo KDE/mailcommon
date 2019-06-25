@@ -232,7 +232,11 @@ void FolderSettings::writeConfig() const
     const QString res = resource();
     KConfigGroup configGroup(KernelIf->config(), configGroupName(mCollection));
 
-    configGroup.writeEntry("MailingListEnabled", mMailingListEnabled);
+    if (mMailingListEnabled) {
+        configGroup.writeEntry("MailingListEnabled", mMailingListEnabled);
+    } else {
+        configGroup.deleteEntry("MailingListEnabled");
+    }
     mMailingList.writeConfig(configGroup);
 
     configGroup.writeEntry("UseDefaultIdentity", mUseDefaultIdentity);
