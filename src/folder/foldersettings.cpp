@@ -239,9 +239,8 @@ void FolderSettings::writeConfig() const
     }
     mMailingList.writeConfig(configGroup);
 
-    configGroup.writeEntry("UseDefaultIdentity", mUseDefaultIdentity);
-
     if (!mUseDefaultIdentity) {
+        configGroup.writeEntry("UseDefaultIdentity", mUseDefaultIdentity);
         uint defaultIdentityId = -1;
 
         if (PimCommon::Util::isImapResource(res)) {
@@ -261,6 +260,7 @@ void FolderSettings::writeConfig() const
         }
     } else {
         configGroup.deleteEntry("Identity");
+        configGroup.deleteEntry("UseDefaultIdentity");
     }
 
     if (mPutRepliesInSameFolder) {
