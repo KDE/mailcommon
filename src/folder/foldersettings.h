@@ -133,12 +133,12 @@ private:
     bool mUseDefaultIdentity;
     uint mIdentity;
 
-    MessageViewer::Viewer::DisplayFormatMessage mFormatMessage;
+    MessageViewer::Viewer::DisplayFormatMessage mFormatMessage = MessageViewer::Viewer::Unknown;
     /** Should replies to messages in this folder be put in here? */
-    bool mPutRepliesInSameFolder;
+    bool mPutRepliesInSameFolder = false;
 
     /** Should this folder be hidden in the folder selection dialog? */
-    bool mHideInSelectionDialog;
+    bool mHideInSelectionDialog = false;
 
     /** shortcut associated with this folder or null, if none is configured. */
     QKeySequence mShortcut;

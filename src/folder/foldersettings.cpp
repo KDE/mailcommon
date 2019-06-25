@@ -63,9 +63,6 @@ QSharedPointer<FolderSettings> FolderSettings::forCollection(
 
 FolderSettings::FolderSettings(const Akonadi::Collection &col, bool writeconfig)
     : mCollection(col)
-    , mFormatMessage(MessageViewer::Viewer::Unknown)
-    , mPutRepliesInSameFolder(false)
-    , mHideInSelectionDialog(false)
     , mWriteConfig(writeconfig)
 {
     Q_ASSERT(col.isValid());
@@ -262,7 +259,11 @@ void FolderSettings::writeConfig() const
         configGroup.deleteEntry("Identity");
     }
 
-    configGroup.writeEntry("PutRepliesInSameFolder", mPutRepliesInSameFolder);
+    if (mPutRepliesInSameFolder) {
+        configGroup.writeEntry("PutRepliesInSameFolder", mPutRepliesInSameFolder);
+    } else {
+        configGroup.deleteEntry("PutRepliesInSameFolder");
+    }
     if (mHideInSelectionDialog) {
         configGroup.writeEntry("HideInSelectionDialog", mHideInSelectionDialog);
     } else {
