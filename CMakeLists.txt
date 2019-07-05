@@ -24,7 +24,7 @@ include(ECMQtDeclareLoggingCategory)
 include(ECMAddTests)
 
 
-set(QT_REQUIRED_VERSION "5.10.0")
+set(QT_REQUIRED_VERSION "5.11.0")
 
 set(MAILCOMMON_LIB_VERSION ${PIM_VERSION})
 set(AKONADIMIME_LIB_VERSION "5.11.40")
