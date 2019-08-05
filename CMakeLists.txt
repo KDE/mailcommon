@@ -43,7 +43,7 @@ set(KMAILTRANSPORT_LIB_VERSION "5.12.40")
 set(MAILIMPORTER_LIB_VERSION "5.12.40")
 set(LIBKDEPIM_LIB_VERSION "5.12.40")
 set(PIMCOMMON_LIB_VERSION "5.12.40")
-
+set(PHONON_LIB_VERSION "4.10.60")
 set(AKONADI_VERSION "5.12.40")
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets DBus Test Xml)
@@ -77,7 +77,7 @@ find_package(KF5MessageViewer ${MESSAGELIB_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5Mime ${KMIME_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5PimCommonAkonadi ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5TemplateParser ${MESSAGELIB_LIB_VERSION} CONFIG REQUIRED)
-find_package(Phonon4Qt5 CONFIG REQUIRED)
+find_package(Phonon4Qt5 ${PHONON_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5DesignerPlugin ${KF5_MIN_VERSION} CONFIG)
 set_package_properties(KF5DesignerPlugin PROPERTIES DESCRIPTION "KF5 designer plugin" TYPE OPTIONAL)
 
@@ -92,6 +92,7 @@ set_package_properties(Xsltproc PROPERTIES DESCRIPTION "XSLT processor from libx
 
 ########### Targets ###########
 remove_definitions( -DQT_NO_CAST_FROM_ASCII )
+add_definitions(-DQT_NO_FOREACH)
 option(KDEPIM_RUN_AKONADI_TEST "Enable autotest based on Akonadi." TRUE)
 
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
