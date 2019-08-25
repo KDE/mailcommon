@@ -11,15 +11,17 @@ if (POLICY CMP0053)
     cmake_policy(SET CMP0053 NEW)
 endif()
 set(LIBRARY_NAMELINK)
+
+include(KDEInstallDirs)
+include(KDECMakeSettings)
+include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+
 include(GenerateExportHeader)
 include(ECMGenerateHeaders)
 include(ECMGeneratePriFile)
 
 include(ECMSetupVersion)
 include(FeatureSummary)
-include(KDEInstallDirs)
-include(KDECMakeSettings)
-include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMQtDeclareLoggingCategory)
 include(ECMAddTests)
 
