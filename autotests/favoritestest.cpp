@@ -101,7 +101,7 @@ void FavoriteProxyTest::testReordering()
         const Akonadi::Collection favoriteCollection = index.data(EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         QVERIFY(favoriteCollection.isValid());
         collectionIds.push_back(favoriteCollection.id());
-        order.push_back(QStringLiteral("c") + QString::number(favoriteCollection.id()));
+        order.push_back(QLatin1Char('c') + QString::number(favoriteCollection.id()));
         labels << folderName;
     }
 
