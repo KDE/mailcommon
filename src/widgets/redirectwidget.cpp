@@ -100,7 +100,7 @@ void RedirectWidget::slotAddressSelection()
             addresses.prepend(mResendStr);
         }
 
-        mEdit->setText(addresses.join(QStringLiteral(", ")));
+        mEdit->setText(addresses.join(QLatin1String(", ")));
         mEdit->setModified(true);
     }
 }
