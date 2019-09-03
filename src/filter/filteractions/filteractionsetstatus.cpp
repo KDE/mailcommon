@@ -78,11 +78,11 @@ QString FilterActionSetStatus::sieveCode() const
 {
     QString flagCode;
     const QString parameter = argsAsString();
-    if (parameter == QLatin1String("R")) {
+    if (parameter == QLatin1Char('R')) {
         flagCode = QStringLiteral("\\\\Seen");
-    } else if (parameter == QLatin1String("D")) {
+    } else if (parameter == QLatin1Char('D')) {
         flagCode = QStringLiteral("\\\\Deleted");
-    } else if (parameter == QLatin1String("A")) {
+    } else if (parameter == QLatin1Char('A')) {
         flagCode = QStringLiteral("\\\\Answered");
     } else {
         qCDebug(MAILCOMMON_LOG) << " FilterActionSetStatus::sieveCode() unknown flags" << parameter;
