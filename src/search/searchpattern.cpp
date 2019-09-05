@@ -283,7 +283,7 @@ QString SearchPattern::asString() const
     QList<SearchRule::Ptr>::const_iterator it;
     QList<SearchRule::Ptr>::const_iterator endIt = constEnd();
     for (it = constBegin(); it != endIt; ++it) {
-        result += QStringLiteral("\n\t") + FilterLog::recode((*it)->asString());
+        result += QLatin1String("\n\t") + FilterLog::recode((*it)->asString());
     }
 
     return result;

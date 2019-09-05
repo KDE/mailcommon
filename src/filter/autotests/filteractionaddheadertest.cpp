@@ -54,7 +54,7 @@ void FilterActionAddHeaderTest::shouldAddValue_data()
     QTest::addColumn<QString>("resultheader");
     QTest::addColumn<QString>("resultvalue");
     QTest::newRow("empty") <<  QString() << QString() << QString();
-    QString val = QStringLiteral("bla") + QLatin1Char('\t') + QStringLiteral("blo");
+    QString val = QLatin1String("bla") + QLatin1Char('\t') + QLatin1String("blo");
     QTest::newRow("real value") <<  val << QStringLiteral("bla") << QStringLiteral("blo");
 }
 

@@ -335,7 +335,7 @@ QString BackupJob::subdirPathForCollection(const Akonadi::Collection &collection
     QString path = pathForCollection(collection);
     const int parentDirEndIndex = path.lastIndexOf(collection.name());
     Q_ASSERT(parentDirEndIndex != -1);
-    path = path.left(parentDirEndIndex);
+    path.truncate(parentDirEndIndex);
     path.append(QLatin1Char('.') + collection.name() + QLatin1String(".directory"));
     return path;
 }
