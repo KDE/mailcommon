@@ -441,7 +441,6 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
     mIcon = config.readEntry("Icon", "system-run");
     bAutoNaming = config.readEntry("AutomaticName", false);
     bEnabled = config.readEntry("Enabled", true);
-    QString actName, argsName;
 
     mActions.clear();
 
@@ -452,8 +451,8 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
     }
 
     for (int i = 0; i < numActions; ++i) {
-        actName.sprintf("action-name-%d", i);
-        argsName.sprintf("action-args-%d", i);
+        const QString actName = QStringLiteral("action-name-%1").arg(i);
+        const QString argsName = QStringLiteral("action-args-%1").arg(i);
         // get the action description...
         FilterActionDesc *desc = FilterManager::filterActionDict()->value(
             config.readEntry(actName, QString()));
@@ -570,16 +569,15 @@ void MailFilter::writeConfig(KConfigGroup &config, bool exportFilter) const
     config.writeEntry("AutomaticName", bAutoNaming);
     config.writeEntry("Applicability", static_cast<int>(mApplicability));
     config.writeEntry("Enabled", bEnabled);
-    QString key;
     int i;
 
     QVector<FilterAction *>::const_iterator it;
     QVector<FilterAction *>::const_iterator end(mActions.constEnd());
 
     for (i = 0, it = mActions.constBegin(); it != end; ++it, ++i) {
-        config.writeEntry(key.sprintf("action-name-%d", i),
+        config.writeEntry(QStringLiteral("action-name-%1").arg(i),
                           (*it)->name());
-        config.writeEntry(key.sprintf("action-args-%d", i),
+        config.writeEntry(QStringLiteral("action-args-%1").arg(i),
                           exportFilter ? (*it)->argsAsStringReal() : (*it)->argsAsString());
     }
     config.writeEntry("actions", i);
