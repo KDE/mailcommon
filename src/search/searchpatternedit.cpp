@@ -205,8 +205,13 @@ void SearchRuleWidget::initWidget(SearchPatternEdit::SearchModeType modeType)
     // redirect focus to the header field combo box
     setFocusProxy(mRuleField);
 
+#if QT_VERSION < QT_VERSION_CHECK(5, 14, 0)
     connect(mRuleField, QOverload<const QString &>::of(&QComboBox::activated),
             this, &SearchRuleWidget::slotRuleFieldChanged);
+#else
+    connect(mRuleField, &QComboBox::textActivated,
+            this, &SearchRuleWidget::slotRuleFieldChanged);
+#endif
     connect(mRuleField, &QComboBox::editTextChanged,
             this, &SearchRuleWidget::slotRuleFieldChanged);
     connect(mRuleField, &QComboBox::editTextChanged,
