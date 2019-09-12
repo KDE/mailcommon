@@ -24,6 +24,7 @@
 
 #include <Attribute>
 #include <Collection>
+#include <QDebug>
 
 namespace MailCommon {
 class MAILCOMMON_EXPORT ExpireCollectionAttribute : public Akonadi::Attribute
@@ -37,16 +38,16 @@ public:
      * must always be the last in the list (for bounds checking).
      */
     enum ExpireUnits {
-        ExpireNever,
-        ExpireDays,
-        ExpireWeeks,
-        ExpireMonths,
-        ExpireMaxUnits
+        ExpireNever = 0,
+        ExpireDays = 1,
+        ExpireWeeks = 2,
+        ExpireMonths = 3,
+        ExpireMaxUnits = 4
     };
 
     enum ExpireAction {
-        ExpireDelete,
-        ExpireMove
+        ExpireDelete = 0,
+        ExpireMove = 1
     };
 
     QByteArray type() const override;
@@ -54,7 +55,7 @@ public:
     QByteArray serialized() const override;
     void deserialize(const QByteArray &data) override;
 
-    void daysToExpire(int &unreadDays, int &readDays);
+    void daysToExpire(int &unreadDays, int &readDays) const;
 
     /**
      * Sets whether this folder automatically expires messages.
@@ -140,4 +141,5 @@ private:
     Akonadi::Collection::Id mExpireToFolderId;
 };
 }
+MAILCOMMON_EXPORT QDebug operator <<(QDebug d, const MailCommon::ExpireCollectionAttribute &t);
 #endif /* EXPIRATIONCOLLECTIONATTRIBUTE_H */

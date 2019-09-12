@@ -131,43 +131,40 @@ void CollectionExpiryPage::load(const Akonadi::Collection &collection)
     mCollection = collection;
     init();
 
-    bool mustDeleteExpirationAttribute = false;
-    MailCommon::ExpireCollectionAttribute *attr = MailCommon::Util::expirationCollectionAttribute(mCollection, mustDeleteExpirationAttribute);
-
-    // Load the values from the folder
-    bool expiryGloballyOn = attr->isAutoExpire();
-    int daysToExpireRead, daysToExpireUnread;
-    attr->daysToExpire(daysToExpireUnread, daysToExpireRead);
-
-    if (expiryGloballyOn
-        && attr->readExpireUnits() != ExpireCollectionAttribute::ExpireNever
-        && daysToExpireRead >= 0) {
-        expireReadMailCB->setChecked(true);
-        expireReadMailSB->setValue(daysToExpireRead);
-    }
-    if (expiryGloballyOn
-        && attr->unreadExpireUnits() != ExpireCollectionAttribute::ExpireNever
-        && daysToExpireUnread >= 0) {
-        expireUnreadMailCB->setChecked(true);
-        expireUnreadMailSB->setValue(daysToExpireUnread);
-    }
-
-    if (attr->expireAction() == ExpireCollectionAttribute::ExpireDelete) {
-        deletePermanentlyRB->setChecked(true);
-    } else {
-        moveToRB->setChecked(true);
-    }
-
-    Akonadi::Collection::Id destFolderID = attr->expireToFolderId();
-    if (destFolderID > 0) {
-        Akonadi::Collection destFolder = Kernel::self()->collectionFromId(destFolderID);
-        if (destFolder.isValid()) {
-            folderSelector->setCollection(destFolder);
+    const MailCommon::ExpireCollectionAttribute *attr = collection.attribute<MailCommon::ExpireCollectionAttribute>();
+    if (attr) {
+        // Load the values from the folder
+        bool expiryGloballyOn = attr->isAutoExpire();
+        int daysToExpireRead, daysToExpireUnread;
+        attr->daysToExpire(daysToExpireUnread, daysToExpireRead);
+        if (expiryGloballyOn
+                && attr->readExpireUnits() != ExpireCollectionAttribute::ExpireNever
+                && daysToExpireRead >= 0) {
+            expireReadMailCB->setChecked(true);
+            expireReadMailSB->setValue(daysToExpireRead);
         }
-    }
+        if (expiryGloballyOn
+                && attr->unreadExpireUnits() != ExpireCollectionAttribute::ExpireNever
+                && daysToExpireUnread >= 0) {
+            expireUnreadMailCB->setChecked(true);
+            expireUnreadMailSB->setValue(daysToExpireUnread);
+        }
 
-    if (mustDeleteExpirationAttribute) {
-        delete attr;
+        if (attr->expireAction() == ExpireCollectionAttribute::ExpireDelete) {
+            deletePermanentlyRB->setChecked(true);
+        } else {
+            moveToRB->setChecked(true);
+        }
+
+        Akonadi::Collection::Id destFolderID = attr->expireToFolderId();
+        if (destFolderID > 0) {
+            Akonadi::Collection destFolder = Kernel::self()->collectionFromId(destFolderID);
+            if (destFolder.isValid()) {
+                folderSelector->setCollection(destFolder);
+            }
+        }
+    } else {
+        deletePermanentlyRB->setChecked(true);
     }
     slotUpdateControls();
     mChanged = false;

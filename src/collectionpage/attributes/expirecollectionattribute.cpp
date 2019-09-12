@@ -160,7 +160,7 @@ int ExpireCollectionAttribute::daysToExpire(int number, ExpireCollectionAttribut
     return -1;
 }
 
-void ExpireCollectionAttribute::daysToExpire(int &unreadDays, int &readDays)
+void ExpireCollectionAttribute::daysToExpire(int &unreadDays, int &readDays) const
 {
     unreadDays = ExpireCollectionAttribute::daysToExpire(unreadExpireAge(), unreadExpireUnits());
     readDays = ExpireCollectionAttribute::daysToExpire(readExpireAge(), readExpireUnits());
@@ -172,10 +172,10 @@ QByteArray ExpireCollectionAttribute::serialized() const
     QDataStream s(&result, QIODevice::WriteOnly);
 
     s << mExpireToFolderId;
-    s << (int)mExpireAction;
-    s << (int)mReadExpireUnits;
+    s << static_cast<int>(mExpireAction);
+    s << static_cast<int>(mReadExpireUnits);
     s << mReadExpireAge;
-    s << (int)mUnreadExpireUnits;
+    s << static_cast<int>(mUnreadExpireUnits);
     s << mUnreadExpireAge;
     s << mExpireMessages;
 
@@ -188,14 +188,26 @@ void ExpireCollectionAttribute::deserialize(const QByteArray &data)
     s >> mExpireToFolderId;
     int action;
     s >> action;
-    mExpireAction = (ExpireCollectionAttribute::ExpireAction)action;
+    mExpireAction = static_cast<ExpireCollectionAttribute::ExpireAction>(action);
     int valUnitRead;
     s >> valUnitRead;
-    mReadExpireUnits = (ExpireCollectionAttribute::ExpireUnits)valUnitRead;
+    mReadExpireUnits = static_cast<ExpireCollectionAttribute::ExpireUnits>(valUnitRead);
     s >> mReadExpireAge;
-    int valUnitUread;
-    s >> valUnitUread;
-    mUnreadExpireUnits = (ExpireCollectionAttribute::ExpireUnits)valUnitUread;
+    int valUnitUnread;
+    s >> valUnitUnread;
+    mUnreadExpireUnits = static_cast<ExpireCollectionAttribute::ExpireUnits>(valUnitUnread);
     s >> mUnreadExpireAge;
     s >> mExpireMessages;
+}
+
+QDebug operator <<(QDebug d, const ExpireCollectionAttribute &t)
+{
+    d << " mExpireMessages " << t.isAutoExpire();
+    d << " mUnreadExpireAge " << t.unreadExpireAge();
+    d << " mReadExpireAge " << t.readExpireAge();
+    d << " mUnreadExpireUnits " << t.unreadExpireUnits();
+    d << " mReadExpireUnits " << t.readExpireUnits();
+    d << " mExpireAction " << t.expireAction();
+    d << " mExpireToFolderId " << t.expireToFolderId();
+    return d;
 }
