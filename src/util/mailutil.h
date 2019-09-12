@@ -91,7 +91,6 @@ Q_REQUIRED_RESULT MAILCOMMON_EXPORT QString convertFolderPathToCollectionStr(con
 MAILCOMMON_EXPORT void foundMailer(QStringList &lst, const QString &name);
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT QStringList foundMailer();
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isLocalCollection(const QString &resource);
-Q_REQUIRED_RESULT MAILCOMMON_EXPORT MailCommon::ExpireCollectionAttribute *expirationCollectionAttribute(const Akonadi::Collection &collection, bool &mustDeleteExpirationAttribute);
 }
 }
 

@@ -97,21 +97,16 @@ void FolderCollectionMonitor::expireAllCollection(const QAbstractItemModel *mode
             continue;
         }
 
-        bool mustDeleteExpirationAttribute = false;
-        MailCommon::ExpireCollectionAttribute *attr
-            = MailCommon::Util::expirationCollectionAttribute(
-                  collection, mustDeleteExpirationAttribute);
+        const MailCommon::ExpireCollectionAttribute *attr = collection.attribute<MailCommon::ExpireCollectionAttribute>();
+        if (attr) {
 
-        if (attr->isAutoExpire()) {
-            MailCommon::Util::expireOldMessages(collection, immediate);
-        }
+            if (attr->isAutoExpire()) {
+                MailCommon::Util::expireOldMessages(collection, immediate);
+            }
 
-        if (model->rowCount(index) > 0) {
-            expireAllCollection(model, immediate, index);
-        }
-
-        if (mustDeleteExpirationAttribute) {
-            delete attr;
+            if (model->rowCount(index) > 0) {
+                expireAllCollection(model, immediate, index);
+            }
         }
     }
 }

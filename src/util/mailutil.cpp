@@ -277,32 +277,3 @@ QStringList MailCommon::Util::foundMailer()
     }
     return lst;
 }
-
-MailCommon::ExpireCollectionAttribute *MailCommon::Util::expirationCollectionAttribute(const Akonadi::Collection &collection, bool &mustDeleteExpirationAttribute)
-{
-    Akonadi::Collection mutableCollection = collection;
-    MailCommon::ExpireCollectionAttribute *attr = nullptr;
-    if (mutableCollection.hasAttribute<MailCommon::ExpireCollectionAttribute>()) {
-        attr = mutableCollection.attribute<MailCommon::ExpireCollectionAttribute>();
-        mustDeleteExpirationAttribute = false;
-    } else {
-        attr = new MailCommon::ExpireCollectionAttribute();
-        KConfigGroup configGroup(KernelIf->config(),
-                                 MailCommon::FolderSettings::configGroupName(collection));
-
-        if (configGroup.hasKey("ExpireMessages")) {
-            attr->setAutoExpire(configGroup.readEntry("ExpireMessages", false));
-            attr->setReadExpireAge(configGroup.readEntry("ReadExpireAge", 3));
-            attr->setReadExpireUnits((MailCommon::ExpireCollectionAttribute::ExpireUnits)configGroup.readEntry("ReadExpireUnits", (int)MailCommon::ExpireCollectionAttribute::ExpireMonths));
-            attr->setUnreadExpireAge(configGroup.readEntry("UnreadExpireAge", 12));
-            attr->setUnreadExpireUnits((MailCommon::ExpireCollectionAttribute::ExpireUnits)configGroup.readEntry("UnreadExpireUnits", (int)MailCommon::ExpireCollectionAttribute::ExpireNever));
-            attr->setExpireAction(configGroup.readEntry("ExpireAction", "Delete") == QLatin1String("Move")
-                                  ? MailCommon::ExpireCollectionAttribute::ExpireMove
-                                  : MailCommon::ExpireCollectionAttribute::ExpireDelete);
-            attr->setExpireToFolderId(configGroup.readEntry("ExpireToFolder", -1));
-        }
-
-        mustDeleteExpirationAttribute = true;
-    }
-    return attr;
-}
