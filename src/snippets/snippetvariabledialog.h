@@ -33,12 +33,15 @@ class SnippetVariableDialog : public QDialog
     Q_OBJECT
 
 public:
-    SnippetVariableDialog(const QString &variableName, QMap<QString, QString> *variables, QWidget *parent = nullptr);
+    explicit SnippetVariableDialog(const QString &variableName, QMap<QString, QString> *variables, QWidget *parent = nullptr);
+    ~SnippetVariableDialog();
 
     Q_REQUIRED_RESULT QString variableValue() const;
     Q_REQUIRED_RESULT bool saveVariableIsChecked() const;
 
 private:
+    void writeConfig();
+    void readConfig();
     void slotAccepted();
     QString mVariableName;
     QMap<QString, QString> *mVariables = nullptr;

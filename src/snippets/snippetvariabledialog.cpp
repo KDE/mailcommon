@@ -27,11 +27,15 @@
 #include <QVBoxLayout>
 #include <QDialogButtonBox>
 #include <QPushButton>
+#include <KConfigGroup>
+#include <KSharedConfig>
 
 #include <kpimtextedit/plaintexteditorwidget.h>
 
 using namespace MailCommon;
-
+namespace {
+static const char myConfigGroupName[] = "SnippetVariableDialog";
+}
 SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<QString, QString> *variables, QWidget *parent)
     : QDialog(parent)
     , mVariableName(variableName)
@@ -73,6 +77,12 @@ SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<Q
     connect(buttonBox, &QDialogButtonBox::rejected, this, &SnippetVariableDialog::reject);
 
     mainLayout->addWidget(buttonBox);
+    readConfig();
+}
+
+SnippetVariableDialog::~SnippetVariableDialog()
+{
+    writeConfig();
 }
 
 QString SnippetVariableDialog::variableValue() const
@@ -94,4 +104,19 @@ void SnippetVariableDialog::slotAccepted()
     }
 
     accept();
+}
+
+void SnippetVariableDialog::writeConfig()
+{
+    KConfigGroup group(KSharedConfig::openConfig(), myConfigGroupName);
+    group.writeEntry("Size", size());
+}
+
+void SnippetVariableDialog::readConfig()
+{
+    KConfigGroup group(KSharedConfig::openConfig(), myConfigGroupName);
+    const QSize sizeDialog = group.readEntry("Size", QSize(300, 350));
+    if (sizeDialog.isValid()) {
+        resize(sizeDialog);
+    }
 }
