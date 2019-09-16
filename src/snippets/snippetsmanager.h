@@ -30,7 +30,6 @@ class KActionCollection;
 class QAbstractItemModel;
 class QAction;
 class QItemSelectionModel;
-class QTextEdit;
 namespace MailCommon {
 class MAILCOMMON_EXPORT SnippetsManager : public QObject
 {
@@ -64,9 +63,6 @@ public:
      * Destroys the snippets manager.
      */
     ~SnippetsManager();
-
-    void setEditor(QTextEdit *editor);
-
     /**
      * Returns the model that represents the snippets.
      */
@@ -122,14 +118,15 @@ public:
      * Returns the name of the currently selected snippet or snippet group.
      */
     QString selectedName() const;
+
 Q_SIGNALS:
     void insertSnippet();
+    void insertPlainText(const QString &snippetText);
+
 private:
     //@cond PRIVATE
     class Private;
     Private *const d;
-    Q_PRIVATE_SLOT(d, void insertSelectedSnippet())
-
     //@endcond
 };
 }

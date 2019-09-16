@@ -77,8 +77,6 @@ public:
     SnippetsModel *mModel = nullptr;
     QItemSelectionModel *mSelectionModel = nullptr;
     KActionCollection *mActionCollection = nullptr;
-    QTextEdit *mEditor = nullptr;
-
     QAction *mAddSnippetAction = nullptr;
     QAction *mEditSnippetAction = nullptr;
     QAction *mDeleteSnippetAction = nullptr;
@@ -337,10 +335,6 @@ void SnippetsManager::Private::deleteSnippetGroup()
 
 void SnippetsManager::Private::insertSelectedSnippet()
 {
-    if (!mEditor) {
-        return;
-    }
-
     if (!mSelectionModel->hasSelection()) {
         return;
     }
@@ -351,22 +345,18 @@ void SnippetsManager::Private::insertSelectedSnippet()
     }
 
     const QString text = replaceVariables(index.data(SnippetsModel::TextRole).toString());
-    mEditor->insertPlainText(text);
+    Q_EMIT q->insertPlainText(text);
 }
 
 void SnippetsManager::Private::insertActionSnippet()
 {
-    if (!mEditor) {
-        return;
-    }
-
     QAction *action = qobject_cast<QAction *>(q->sender());
     if (!action) {
         return;
     }
 
     const QString text = replaceVariables(action->property("snippetText").toString());
-    mEditor->insertPlainText(text);
+    Q_EMIT q->insertPlainText(text);
 }
 
 void SnippetsManager::Private::initializeActionCollection()
@@ -538,11 +528,6 @@ SnippetsManager::~SnippetsManager()
 {
     d->save();
     delete d;
-}
-
-void SnippetsManager::setEditor(QTextEdit *editor)
-{
-    d->mEditor = editor;
 }
 
 QAbstractItemModel *SnippetsManager::model() const
