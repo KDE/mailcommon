@@ -29,6 +29,7 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <QIcon>
+#include <QTextEdit>
 
 #include <QAction>
 #include <QPointer>
@@ -76,8 +77,7 @@ public:
     SnippetsModel *mModel = nullptr;
     QItemSelectionModel *mSelectionModel = nullptr;
     KActionCollection *mActionCollection = nullptr;
-    QObject *mEditor = nullptr;
-    QByteArray mEditorInsertMethod;
+    QTextEdit *mEditor = nullptr;
 
     QAction *mAddSnippetAction = nullptr;
     QAction *mEditSnippetAction = nullptr;
@@ -351,8 +351,7 @@ void SnippetsManager::Private::insertSelectedSnippet()
     }
 
     const QString text = replaceVariables(index.data(SnippetsModel::TextRole).toString());
-    QMetaObject::invokeMethod(mEditor, mEditorInsertMethod.constData(), Qt::DirectConnection,
-                              Q_ARG(QString, text));
+    mEditor->insertPlainText(text);
 }
 
 void SnippetsManager::Private::insertActionSnippet()
@@ -367,8 +366,7 @@ void SnippetsManager::Private::insertActionSnippet()
     }
 
     const QString text = replaceVariables(action->property("snippetText").toString());
-    QMetaObject::invokeMethod(mEditor, mEditorInsertMethod.constData(), Qt::DirectConnection,
-                              Q_ARG(QString, text));
+    mEditor->insertPlainText(text);
 }
 
 void SnippetsManager::Private::initializeActionCollection()
@@ -533,6 +531,7 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
 
     d->initializeActionCollection();
     d->selectionChanged();
+    connect(this, &SnippetsManager::insertSnippet, this, [this]() {d->insertSelectedSnippet();});
 }
 
 SnippetsManager::~SnippetsManager()
@@ -541,19 +540,9 @@ SnippetsManager::~SnippetsManager()
     delete d;
 }
 
-void SnippetsManager::setEditor(QObject *editor, const char *insertSnippetMethod, const char *dropSignal)
+void SnippetsManager::setEditor(QTextEdit *editor)
 {
     d->mEditor = editor;
-    d->mEditorInsertMethod = insertSnippetMethod;
-
-    if (dropSignal) {
-        const int index
-            = editor->metaObject()->indexOfSignal(
-                  QMetaObject::normalizedSignature(dropSignal + 1).data());  // skip the leading '2'
-        if (index != -1) {
-            connect(editor, dropSignal, this, SLOT(insertSelectedSnippet()));
-        }
-    }
 }
 
 QAbstractItemModel *SnippetsManager::model() const

@@ -30,7 +30,7 @@ class KActionCollection;
 class QAbstractItemModel;
 class QAction;
 class QItemSelectionModel;
-
+class QTextEdit;
 namespace MailCommon {
 class MAILCOMMON_EXPORT SnippetsManager : public QObject
 {
@@ -65,27 +65,7 @@ public:
      */
     ~SnippetsManager();
 
-    /**
-     * Sets the editor object the snippet manager will act on.
-     *
-     * @param editor The editor object
-     * @param insertSnippetMethod The name of the method will be executed to
-     *                            insert a snippet into the editor. This method
-     *                            must provide a single QString parameter.
-     * @param dropSignal The signature of the signal that is emitted by the editor
-     *                   object when a snippet has been dropped on it.
-     *
-     * Example usage:
-     *
-     * @code
-     *
-     *  KMComposerEditor *editor = ...
-     *
-     *  snippetsManager->setEditor( editor, "insertPlainText", SIGNAL( insertSnippet() ) );
-     *
-     * @endcode
-     */
-    void setEditor(QObject *editor, const char *insertSnippetMethod, const char *dropSignal);
+    void setEditor(QTextEdit *editor);
 
     /**
      * Returns the model that represents the snippets.
@@ -142,7 +122,8 @@ public:
      * Returns the name of the currently selected snippet or snippet group.
      */
     QString selectedName() const;
-
+Q_SIGNALS:
+    void insertSnippet();
 private:
     //@cond PRIVATE
     class Private;
