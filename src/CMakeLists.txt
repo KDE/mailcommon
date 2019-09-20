@@ -243,7 +243,6 @@ PRIVATE
   Phonon::phonon4qt5
   KF5::XmlGui
   KF5::KIOWidgets
-  KF5::WindowSystem
   KF5::IconThemes
   KF5::Archive
   KF5::ItemViews

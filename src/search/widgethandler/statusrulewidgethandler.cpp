@@ -19,8 +19,8 @@
 #include "statusrulewidgethandler.h"
 #include "search/searchrule/searchrulestatus.h"
 
-#include <KIconLoader>
 #include <QComboBox>
+#include <QIcon>
 #include <QStackedWidget>
 
 using namespace MailCommon;
@@ -70,7 +70,7 @@ QWidget *StatusRuleWidgetHandler::createValueWidget(int number, QStackedWidget *
     for (int i = 0; i < MailCommon::StatusValueCountWithoutHidden; ++i) {
         if (MailCommon::StatusValues[ i ].icon != nullptr) {
             statusCombo->addItem(
-                SmallIcon(QLatin1String(MailCommon::StatusValues[ i ].icon)),
+                QIcon::fromTheme(QLatin1String(MailCommon::StatusValues[ i ].icon)),
                 i18nc("message status", MailCommon::StatusValues[ i ].text));
         } else {
             statusCombo->addItem(

@@ -51,7 +51,6 @@ using MailCommon::FilterImporterExporter;
 #include <KMessageBox>
 #include <QPushButton>
 #include <QTabWidget>
-#include <KWindowSystem>
 #include <KIconButton>
 #include <QIcon>
 
@@ -104,11 +103,6 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     connect(buttonBox->button(QDialogButtonBox::Help), &QAbstractButton::clicked, this, &KMFilterDialog::slotHelp);
     setModal(false);
     okButton->setFocus();
-    KWindowSystem::setIcons(winId(),
-                            qApp->windowIcon().pixmap(IconSize(KIconLoader::Desktop),
-                                                      IconSize(KIconLoader::Desktop)),
-                            qApp->windowIcon().pixmap(IconSize(KIconLoader::Small),
-                                                      IconSize(KIconLoader::Small)));
     user1Button->setText(i18n("Import..."));
     user2Button->setText(i18n("Export..."));
     user3Button->setText(i18n("Convert to..."));
