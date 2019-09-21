@@ -39,19 +39,19 @@ public:
     bool isGroup() const;
 
     void setName(const QString &name);
-    QString name() const;
+    Q_REQUIRED_RESULT QString name() const;
 
     void setText(const QString &text);
-    QString text() const;
+    Q_REQUIRED_RESULT QString text() const;
 
     void setKeySequence(const QString &sequence);
-    QString keySequence() const;
+    Q_REQUIRED_RESULT QString keySequence() const;
 
     void appendChild(SnippetItem *child);
     void removeChild(SnippetItem *child);
     SnippetItem *child(int row) const;
-    int childCount() const;
-    int row() const;
+    Q_REQUIRED_RESULT int childCount() const;
+    Q_REQUIRED_RESULT int row() const;
     SnippetItem *parent() const;
 
 private:

@@ -112,12 +112,12 @@ public:
     /**
      * Returns whether the currently selected item is a snippet group.
      */
-    bool snippetGroupSelected() const;
+    Q_REQUIRED_RESULT bool snippetGroupSelected() const;
 
     /**
      * Returns the name of the currently selected snippet or snippet group.
      */
-    QString selectedName() const;
+    Q_REQUIRED_RESULT QString selectedName() const;
 
 Q_SIGNALS:
     void insertSnippet();
