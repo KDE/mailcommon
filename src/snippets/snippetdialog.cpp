@@ -20,9 +20,13 @@
 #include <QVBoxLayout>
 #include <QPushButton>
 #include <QDialogButtonBox>
+#include <KConfigGroup>
+#include <KSharedConfig>
 
 using namespace MailCommon;
-
+namespace {
+static const char myConfigGroupName[] = "SnippetDialog";
+}
 SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMode, QWidget *parent)
     : QDialog(parent)
     , mActionCollection(actionCollection)
@@ -51,12 +55,30 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
 
     mUi->groupWidget->setVisible(!inGroupMode);
     mUi->nameEdit->setFocus();
+    readConfig();
 }
 
 SnippetDialog::~SnippetDialog()
 {
+    writeConfig();
     delete mUi;
 }
+
+void SnippetDialog::writeConfig()
+{
+    KConfigGroup group(KSharedConfig::openConfig(), myConfigGroupName);
+    group.writeEntry("Size", size());
+}
+
+void SnippetDialog::readConfig()
+{
+    KConfigGroup group(KSharedConfig::openConfig(), myConfigGroupName);
+    const QSize sizeDialog = group.readEntry("Size", QSize(300, 350));
+    if (sizeDialog.isValid()) {
+        resize(sizeDialog);
+    }
+}
+
 
 void SnippetDialog::slotGroupChanged()
 {

@@ -55,6 +55,8 @@ private Q_SLOTS:
 
 private:
     bool snippetIsValid() const;
+    void writeConfig();
+    void readConfig();
 
     KActionCollection *mActionCollection = nullptr;
     Ui::SnippetDialog *mUi = nullptr;
