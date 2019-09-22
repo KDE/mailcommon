@@ -3,7 +3,7 @@ set(PIM_VERSION "5.12.43")
 
 project(mailcommon VERSION ${PIM_VERSION})
 
-set(KF5_MIN_VERSION "5.61.0")
+set(KF5_MIN_VERSION "5.62.0")
 
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${mailcommon_SOURCE_DIR}/cmake/modules/ ${ECM_MODULE_PATH})
@@ -80,15 +80,8 @@ find_package(KF5PimCommonAkonadi ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5TemplateParser ${MESSAGELIB_LIB_VERSION} CONFIG REQUIRED)
 find_package(Phonon4Qt5 ${PHONON_LIB_VERSION} CONFIG REQUIRED)
 
-set(USE_NEW_DESIGNERPLUGIN_MACRO false)
-if (ECM_VERSION VERSION_GREATER "5.61.0")
-       option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
-       add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Designer")
-       set(USE_NEW_DESIGNERPLUGIN_MACRO true)
-else()
-       find_package(KF5DesignerPlugin ${KF5_MIN_VERSION} CONFIG)
-       set_package_properties(KF5DesignerPlugin PROPERTIES DESCRIPTION "KF5 designer plugin" TYPE OPTIONAL)
-endif()
+option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
+add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Designer")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX MAILCOMMON
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailcommon_version.h"
