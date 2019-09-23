@@ -14,7 +14,8 @@
 #include "snippetdialog.h"
 
 #include "ui_snippetdialog.h"
-
+#include <MessageComposer/ConvertSnippetVariableMenu>
+#include <KPIMTextEdit/PlainTextEditor>
 #include <kactioncollection.h>
 #include <QDialog>
 #include <QVBoxLayout>
@@ -55,6 +56,11 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
 
     mUi->groupWidget->setVisible(!inGroupMode);
     mUi->nameEdit->setFocus();
+    MessageComposer::ConvertSnippetVariableMenu *variableMenu = new MessageComposer::ConvertSnippetVariableMenu(this, this);
+    mUi->pushButtonVariables->setMenu(variableMenu->menu());
+    connect(variableMenu, &MessageComposer::ConvertSnippetVariableMenu::insertVariable, this, [this](MessageComposer::ConvertSnippetVariablesUtil::VariableType type) {
+        mUi->snippetText->editor()->insertPlainText(MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(type));
+    });
     readConfig();
 }
 
