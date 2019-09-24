@@ -36,7 +36,7 @@ public:
     explicit SnippetItem(bool isGroup = false, SnippetItem *parent = nullptr);
     ~SnippetItem();
 
-    bool isGroup() const;
+    Q_REQUIRED_RESULT bool isGroup() const;
 
     void setName(const QString &name);
     Q_REQUIRED_RESULT QString name() const;
