@@ -170,6 +170,7 @@ void SnippetsManager::Private::createSnippet(const QString &text)
         mModel->setData(index, dlg->name(), SnippetsModel::NameRole);
         mModel->setData(index, dlg->text(), SnippetsModel::TextRole);
         mModel->setData(index, dlg->keySequence().toString(), SnippetsModel::KeySequenceRole);
+        mModel->setData(index, dlg->keyword(), SnippetsModel::KeywordRole);
 
         Q_EMIT mModel->updateActionCollection(QString(), dlg->name(), dlg->keySequence(), dlg->text());
         mDirty = true;
@@ -205,6 +206,7 @@ void SnippetsManager::Private::editSnippet()
     dlg->setGroupIndex(oldGroupIndex);
     dlg->setName(oldSnippetName);
     dlg->setText(index.data(SnippetsModel::TextRole).toString());
+    dlg->setKeyword(index.data(SnippetsModel::KeywordRole).toString());
     dlg->setKeySequence(
         QKeySequence::fromString(
             index.data(SnippetsModel::KeySequenceRole).toString()));
@@ -222,6 +224,7 @@ void SnippetsManager::Private::editSnippet()
         mModel->setData(index, dlg->name(), SnippetsModel::NameRole);
         mModel->setData(index, dlg->text(), SnippetsModel::TextRole);
         mModel->setData(index, dlg->keySequence().toString(), SnippetsModel::KeySequenceRole);
+        mModel->setData(index, dlg->keyword(), SnippetsModel::KeywordRole);
 
         Q_EMIT mModel->updateActionCollection(oldSnippetName, dlg->name(), dlg->keySequence(), dlg->text());
         mDirty = true;

@@ -85,7 +85,6 @@ void SnippetDialog::readConfig()
     }
 }
 
-
 void SnippetDialog::slotGroupChanged()
 {
     mOkButton->setEnabled(snippetIsValid());
@@ -119,6 +118,16 @@ void SnippetDialog::setKeySequence(const QKeySequence &sequence)
 QKeySequence SnippetDialog::keySequence() const
 {
     return mUi->keyWidget->keySequence();
+}
+
+void SnippetDialog::setKeyword(const QString &keyword)
+{
+    mUi->keyword->setText(keyword);
+}
+
+QString SnippetDialog::keyword() const
+{
+    return mUi->keyword->text();
 }
 
 void SnippetDialog::setGroupModel(QAbstractItemModel *model)

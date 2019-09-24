@@ -31,6 +31,7 @@ struct SnippetsInfo
     QString newName;
     QKeySequence keySequence;
     QString text;
+    QString keyword;
 };
 
 class SnippetsModel : public QAbstractItemModel
@@ -41,7 +42,8 @@ public:
         IsGroupRole = Qt::UserRole + 1, ///< Returns whether the index represents a group
         NameRole,                       ///< The name of a snippet or group
         TextRole,                       ///< The text of a snippet
-        KeySequenceRole                 ///< The key sequence to activate a snippet
+        KeySequenceRole,                ///< The key sequence to activate a snippet
+        KeywordRole,                        ///< The keyword which will replace by snippet
     };
 
     static SnippetsModel *instance();
@@ -91,7 +93,7 @@ Q_SIGNALS:
 private:
     void load();
     QModelIndex createGroup(const QString &groupName);
-    void createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence);
+    void createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword);
     SnippetItem *mRootItem = nullptr;
     QMap<QString, QString> mSavedVariables;
 };

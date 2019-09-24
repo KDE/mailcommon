@@ -44,6 +44,9 @@ public:
     void setKeySequence(const QKeySequence &sequence);
     Q_REQUIRED_RESULT QKeySequence keySequence() const;
 
+    void setKeyword(const QString &keyword);
+    Q_REQUIRED_RESULT QString keyword() const;
+
     void setGroupModel(QAbstractItemModel *model);
 
     void setGroupIndex(const QModelIndex &index);
