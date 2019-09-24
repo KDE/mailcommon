@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>517</width>
-    <height>722</height>
+    <width>468</width>
+    <height>188</height>
    </rect>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
@@ -97,7 +97,7 @@
         </property>
        </spacer>
       </item>
-      <item row="3" column="0">
+      <item row="6" column="0">
        <widget class="QLabel" name="keyWidgetLabel">
         <property name="text">
          <string>Sho&amp;rtcut:</string>
@@ -110,7 +110,7 @@
         </property>
        </widget>
       </item>
-      <item row="3" column="1" colspan="2">
+      <item row="6" column="1" colspan="2">
        <widget class="KKeySequenceWidget" name="keyWidget" native="true">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -122,6 +122,16 @@
       </item>
       <item row="0" column="1" colspan="2">
        <widget class="KComboBox" name="groupBox"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Keyword:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1" colspan="2">
+       <widget class="QLineEdit" name="lineEdit"/>
       </item>
      </layout>
     </widget>
