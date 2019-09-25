@@ -33,6 +33,8 @@ public:
     explicit SnippetWidget(KActionCollection *actionCollection, QWidget *parent = nullptr);
     ~SnippetWidget() override;
 
+    MailCommon::SnippetsManager *snippetsManager() const;
+
 protected:
     void contextMenuEvent(QContextMenuEvent *) override;
     void dropEvent(QDropEvent *) override;

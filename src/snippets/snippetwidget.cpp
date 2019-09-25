@@ -87,3 +87,8 @@ void SnippetWidget::dropEvent(QDropEvent *event)
     }
     QTreeView::dropEvent(event);
 }
+
+MailCommon::SnippetsManager *SnippetWidget::snippetsManager() const
+{
+    return mSnippetsManager;
+}
