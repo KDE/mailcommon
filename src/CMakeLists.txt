@@ -145,6 +145,7 @@ set(libmailcommon_snippets_SRCS
   snippets/snippetsmanager.cpp
   snippets/snippetsmodel.cpp
   snippets/snippetvariabledialog.cpp
+  snippets/snippetwidget.cpp
 )
 
 set(libmailcommon_tag_SRCS
@@ -408,6 +409,7 @@ ecm_generate_headers(MailCommon_Camelcasefilterimporter_HEADERS
 ecm_generate_headers(MailCommon_Camelcasesnippets_HEADERS
   HEADER_NAMES
   SnippetsManager
+  SnippetWidget
   REQUIRED_HEADERS MailCommon_snippets_HEADERS
   PREFIX MailCommon
   RELATIVE snippets
