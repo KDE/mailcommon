@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-set(PIM_VERSION "5.12.44")
+set(PIM_VERSION "5.12.45")
 
 project(mailcommon VERSION ${PIM_VERSION})
 

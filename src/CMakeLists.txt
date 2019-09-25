@@ -410,6 +410,7 @@ ecm_generate_headers(MailCommon_Camelcasesnippets_HEADERS
   HEADER_NAMES
   SnippetsManager
   SnippetWidget
+  SnippetsModel
   REQUIRED_HEADERS MailCommon_snippets_HEADERS
   PREFIX MailCommon
   RELATIVE snippets

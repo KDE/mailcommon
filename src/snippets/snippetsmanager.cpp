@@ -40,9 +40,9 @@ using namespace MailCommon;
 class Q_DECL_HIDDEN SnippetsManager::Private
 {
 public:
-    Private(SnippetsManager *qq, QWidget *parent)
+    Private(SnippetsManager *qq, QWidget *parentWidget)
         : q(qq)
-        , mParent(parent)
+        , mParent(parentWidget)
     {
     }
 
@@ -364,9 +364,11 @@ void SnippetsManager::Private::insertActionSnippet()
 
 void SnippetsManager::Private::initializeActionCollection()
 {
-    const QVector<SnippetsInfo> infos = mModel->snippetsInfo();
-    for (const SnippetsInfo &info : infos) {
-        initializeAction(info.newName, info.keySequence, info.text);
+    if (mActionCollection) {
+        const QVector<SnippetsInfo> infos = mModel->snippetsInfo();
+        for (const SnippetsInfo &info : infos) {
+            initializeAction(info.newName, info.keySequence, info.text);
+        }
     }
 }
 
@@ -388,7 +390,7 @@ void SnippetsManager::Private::initializeAction(const QString &newName, const QK
 void SnippetsManager::Private::updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text)
 {
     // remove previous action in case that the name changed
-    if (!oldName.isEmpty()) {
+    if (!oldName.isEmpty() && mActionCollection) {
         const QString actionName = i18nc("@action", "Snippet %1", oldName);
         const QString normalizedName = QString(actionName).replace(QLatin1Char(' '), QLatin1Char('_'));
 
@@ -459,9 +461,9 @@ void SnippetsManager::Private::save()
     mDirty = false;
 }
 
-SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *parent, QWidget *widget)
+SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *parent, QWidget *parentWidget)
     : QObject(parent)
-    , d(new Private(this, widget))
+    , d(new Private(this, parentWidget))
 {
     d->mModel = SnippetsModel::instance();
     connect(d->mModel, &SnippetsModel::updateActionCollection, this, [this](const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text) {

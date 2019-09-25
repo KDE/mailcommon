@@ -23,6 +23,7 @@
 
 #include <QAbstractItemModel>
 #include <QKeySequence>
+#include "mailcommon_export.h"
 namespace MailCommon {
 class SnippetItem;
 
@@ -34,7 +35,7 @@ struct SnippetsInfo
     QString keyword;
 };
 
-class SnippetsModel : public QAbstractItemModel
+class MAILCOMMON_EXPORT SnippetsModel : public QAbstractItemModel
 {
     Q_OBJECT
 public:
