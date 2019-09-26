@@ -12,8 +12,8 @@
  ***************************************************************************/
 
 #include "snippetdialog.h"
+#include "snippetwidget.h"
 
-#include "ui_snippetdialog.h"
 #include <MessageComposer/ConvertSnippetVariableMenu>
 #include <KPIMTextEdit/PlainTextEditor>
 #include <kactioncollection.h>
@@ -32,10 +32,11 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
     : QDialog(parent)
     , mActionCollection(actionCollection)
 {
-    mUi = new Ui::SnippetDialog;
-    QWidget *mainWidget = new QWidget(this);
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
-    mainLayout->addWidget(mainWidget);
+    mainLayout->setObjectName(QStringLiteral("mainLayout"));
+    mSnippetWidget = new SnippetWidget(this);
+
+    mainLayout->addWidget(mSnippetWidget);
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
@@ -44,30 +45,21 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
     connect(buttonBox, &QDialogButtonBox::accepted, this, &SnippetDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &SnippetDialog::reject);
     mainLayout->addWidget(buttonBox);
-    mUi->setupUi(mainWidget);
 
-    mUi->keyWidget->setCheckActionCollections(QList<KActionCollection *>() << actionCollection);
+
+    mSnippetWidget->setCheckActionCollections(QList<KActionCollection *>() << actionCollection);
     mOkButton->setEnabled(false);
 
-    connect(mUi->nameEdit, &KLineEdit::textChanged, this, &SnippetDialog::slotTextChanged);
-    connect(mUi->groupBox, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &SnippetDialog::slotGroupChanged);
+    connect(mSnippetWidget, &MailCommon::SnippetWidget::textChanged, this, &SnippetDialog::slotTextChanged);
+    connect(mSnippetWidget, &MailCommon::SnippetWidget::groupChanged, this, &SnippetDialog::slotGroupChanged);
 
-    mUi->snippetText->setMinimumSize(500, 300);
-
-    mUi->groupWidget->setVisible(!inGroupMode);
-    mUi->nameEdit->setFocus();
-    MessageComposer::ConvertSnippetVariableMenu *variableMenu = new MessageComposer::ConvertSnippetVariableMenu(this, this);
-    mUi->pushButtonVariables->setMenu(variableMenu->menu());
-    connect(variableMenu, &MessageComposer::ConvertSnippetVariableMenu::insertVariable, this, [this](MessageComposer::ConvertSnippetVariablesUtil::VariableType type) {
-        mUi->snippetText->editor()->insertPlainText(MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(type));
-    });
+    mSnippetWidget->setGroupSelected(inGroupMode);
     readConfig();
 }
 
 SnippetDialog::~SnippetDialog()
 {
     writeConfig();
-    delete mUi;
 }
 
 void SnippetDialog::writeConfig()
@@ -92,57 +84,57 @@ void SnippetDialog::slotGroupChanged()
 
 void SnippetDialog::setName(const QString &name)
 {
-    mUi->nameEdit->setText(name);
+    mSnippetWidget->setName(name);
 }
 
 QString SnippetDialog::name() const
 {
-    return mUi->nameEdit->text();
+    return mSnippetWidget->name();
 }
 
 void SnippetDialog::setText(const QString &text)
 {
-    mUi->snippetText->setPlainText(text);
+    mSnippetWidget->setText(text);
 }
 
 QString SnippetDialog::text() const
 {
-    return mUi->snippetText->toPlainText();
+    return mSnippetWidget->text();
 }
 
 void SnippetDialog::setKeySequence(const QKeySequence &sequence)
 {
-    mUi->keyWidget->setKeySequence(sequence);
+    mSnippetWidget->setKeySequence(sequence);
 }
 
 QKeySequence SnippetDialog::keySequence() const
 {
-    return mUi->keyWidget->keySequence();
+    return mSnippetWidget->keySequence();
 }
 
 void SnippetDialog::setKeyword(const QString &keyword)
 {
-    mUi->keyword->setText(keyword);
+    mSnippetWidget->setKeyword(keyword);
 }
 
 QString SnippetDialog::keyword() const
 {
-    return mUi->keyword->text();
+    return mSnippetWidget->keyword();
 }
 
 void SnippetDialog::setGroupModel(QAbstractItemModel *model)
 {
-    mUi->groupBox->setModel(model);
+   mSnippetWidget->setGroupModel(model);
 }
 
 void SnippetDialog::setGroupIndex(const QModelIndex &index)
 {
-    mUi->groupBox->setCurrentIndex(index.row());
+    mSnippetWidget->setGroupIndex(index);
 }
 
 QModelIndex SnippetDialog::groupIndex() const
 {
-    return mUi->groupBox->model()->index(mUi->groupBox->currentIndex(), 0);
+    return mSnippetWidget->groupIndex();
 }
 
 void SnippetDialog::slotTextChanged()
@@ -152,12 +144,5 @@ void SnippetDialog::slotTextChanged()
 
 bool SnippetDialog::snippetIsValid() const
 {
-    if (mUi->nameEdit->text().trimmed().isEmpty()) {
-        return false;
-    } else {
-        if (mUi->groupWidget->isVisible()) {
-            return !mUi->groupBox->currentText().trimmed().isEmpty();
-        }
-    }
-    return true;
+    return mSnippetWidget->snippetIsValid();
 }

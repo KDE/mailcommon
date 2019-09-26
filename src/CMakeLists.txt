@@ -145,6 +145,7 @@ set(libmailcommon_snippets_SRCS
   snippets/snippetsmanager.cpp
   snippets/snippetsmodel.cpp
   snippets/snippetvariabledialog.cpp
+  snippets/snippettreeview.cpp
   snippets/snippetwidget.cpp
 )
 
@@ -199,7 +200,7 @@ qt5_add_dbus_interfaces(libmailcommon_SRCS
   ${CMAKE_CURRENT_SOURCE_DIR}/dbusinterfaces/org.freedesktop.Akonadi.MailFilterAgent.xml
 )
 
-ki18n_wrap_ui(libmailcommon_SRCS filter/ui/filterconfigwidget.ui snippets/ui/snippetdialog.ui filter/ui/selectthunderbirdfilterfileswidget.ui)
+ki18n_wrap_ui(libmailcommon_SRCS filter/ui/filterconfigwidget.ui snippets/ui/snippetwidget.ui filter/ui/selectthunderbirdfilterfileswidget.ui)
 
 set(libmailcommon_SRCS ${libmailcommon_SRCS} filter/soundtestwidget.cpp)
 
@@ -409,8 +410,9 @@ ecm_generate_headers(MailCommon_Camelcasefilterimporter_HEADERS
 ecm_generate_headers(MailCommon_Camelcasesnippets_HEADERS
   HEADER_NAMES
   SnippetsManager
-  SnippetWidget
+  SnippetTreeView
   SnippetsModel
+  SnippetWidget
   REQUIRED_HEADERS MailCommon_snippets_HEADERS
   PREFIX MailCommon
   RELATIVE snippets

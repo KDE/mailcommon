@@ -16,10 +16,6 @@
 
 #include <QDialog>
 
-namespace Ui {
-class SnippetDialog;
-}
-
 class KActionCollection;
 
 class QAbstractItemModel;
@@ -27,6 +23,7 @@ class QModelIndex;
 class QPushButton;
 
 namespace MailCommon {
+class SnippetWidget;
 class SnippetDialog : public QDialog
 {
     Q_OBJECT
@@ -62,7 +59,7 @@ private:
     void readConfig();
 
     KActionCollection *mActionCollection = nullptr;
-    Ui::SnippetDialog *mUi = nullptr;
+    SnippetWidget *mSnippetWidget = nullptr;
     QPushButton *mOkButton = nullptr;
 };
 }

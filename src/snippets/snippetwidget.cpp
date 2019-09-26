@@ -1,94 +1,160 @@
-/***************************************************************************
- *   snippet feature from kdevelop/plugins/snippet/                        *
- *                                                                         *
- *   Copyright (C) 2007 by Robert Gruber                                   *
- *   rgruber@users.sourceforge.net                                         *
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- ***************************************************************************/
+/*
+   Copyright (c) 2019 Montel Laurent <montel@kde.org>
+
+   This library is free software; you can redistribute it and/or modify
+   it under the terms of the GNU Library General Public License as published
+   by the Free Software Foundation; either version 2 of the License or
+   ( at your option ) version 3 or, at the discretion of KDE e.V.
+   ( which shall act as a proxy as in section 14 of the GPLv3 ), any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Library General Public License for more details.
+
+   You should have received a copy of the GNU Library General Public License
+   along with this library; see the file COPYING.LIB.  If not, write to
+   the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+   Boston, MA 02110-1301, USA.
+*/
 
 #include "snippetwidget.h"
-#include "snippetsmanager.h"
+#include "ui_snippetwidget.h"
+#include <MessageComposer/ConvertSnippetVariableMenu>
+#include <KPIMTextEdit/PlainTextEditor>
 
-#include <kactioncollection.h>
-#include <KLocalizedString>
-
-#include <QMenu>
-#include <QContextMenuEvent>
-#include <QHeaderView>
+#include <KActionCollection>
+#include <KComboBox>
+#include <KLineEdit>
+#include <QAbstractListModel>
+#include <QVBoxLayout>
 using namespace MailCommon;
-SnippetWidget::SnippetWidget(KActionCollection *actionCollection, QWidget *parent)
-    : QTreeView(parent)
+
+class SnippetWidgetPrivate
 {
-    header()->hide();
-    setAcceptDrops(true);
-    setDragEnabled(true);
-    setRootIsDecorated(true);
-    setAlternatingRowColors(true);
-    mSnippetsManager = new MailCommon::SnippetsManager(actionCollection, this, this);
-    connect(mSnippetsManager, &MailCommon::SnippetsManager::insertPlainText, this, &SnippetWidget::insertSnippetText);
+public:
+    Ui::SnippetWidget mUi;
+    QWidget *wdg = nullptr;
+    bool isSelectedGroup = false;
+};
 
-    setModel(mSnippetsManager->model());
-    setSelectionModel(mSnippetsManager->selectionModel());
 
-    connect(this, &QAbstractItemView::activated,
-            mSnippetsManager->insertSnippetAction(), &QAction::trigger);
-    connect(mSnippetsManager->model(), &QAbstractItemModel::rowsInserted,
-            this, &QTreeView::expandAll);
-    connect(mSnippetsManager->model(), &QAbstractItemModel::rowsRemoved,
-            this, &QTreeView::expandAll);
+SnippetWidget::SnippetWidget(QWidget *parent)
+    : QWidget(parent),
+      d(new SnippetWidgetPrivate)
+{
+    QVBoxLayout *layout = new QVBoxLayout(this);
+    layout->setObjectName(QStringLiteral("mainlayout"));
+    layout->setContentsMargins(0, 0, 0, 0);
+    d->wdg = new QWidget(this);
+    d->mUi.setupUi(d->wdg);
+    layout->addWidget(d->wdg);
 
-    expandAll();
+    MessageComposer::ConvertSnippetVariableMenu *variableMenu = new MessageComposer::ConvertSnippetVariableMenu(this, this);
+    d->mUi.pushButtonVariables->setMenu(variableMenu->menu());
+    connect(variableMenu, &MessageComposer::ConvertSnippetVariableMenu::insertVariable, this, [this](MessageComposer::ConvertSnippetVariablesUtil::VariableType type) {
+        d->mUi.snippetText->editor()->insertPlainText(MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(type));
+    });
+
+    connect(d->mUi.nameEdit, &KLineEdit::textChanged, this, &SnippetWidget::textChanged);
+    connect(d->mUi.groupBox, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &SnippetWidget::groupChanged);
+
+    d->mUi.nameEdit->setFocus();
+    d->mUi.snippetText->setMinimumSize(500, 300);
 }
 
 SnippetWidget::~SnippetWidget()
 {
+    delete d;
 }
 
-void SnippetWidget::contextMenuEvent(QContextMenuEvent *event)
+void SnippetWidget::setName(const QString &name)
 {
-    QMenu popup;
+    d->mUi.nameEdit->setText(name);
+}
 
-    const bool itemSelected = mSnippetsManager->selectionModel()->hasSelection();
+QString SnippetWidget::name() const
+{
+    return d->mUi.nameEdit->text();
+}
 
-    bool canAddSnippet = true;
-    if (itemSelected) {
-        popup.setTitle(mSnippetsManager->selectedName());
-        if (mSnippetsManager->snippetGroupSelected()) {
-            popup.addAction(mSnippetsManager->editSnippetGroupAction());
-            popup.addAction(mSnippetsManager->deleteSnippetGroupAction());
-        } else {
-            canAddSnippet = false; // subsnippets are not permitted
-            popup.addAction(mSnippetsManager->addSnippetAction());
-            popup.addAction(mSnippetsManager->editSnippetAction());
-            popup.addAction(mSnippetsManager->deleteSnippetAction());
-            popup.addAction(mSnippetsManager->insertSnippetAction());
-        }
-        popup.addSeparator();
+void SnippetWidget::setText(const QString &text)
+{
+    d->mUi.snippetText->setPlainText(text);
+}
+
+QString SnippetWidget::text() const
+{
+    return d->mUi.snippetText->toPlainText();
+}
+
+void SnippetWidget::setKeySequence(const QKeySequence &sequence)
+{
+    d->mUi.keyWidget->setKeySequence(sequence);
+}
+
+QKeySequence SnippetWidget::keySequence() const
+{
+    return d->mUi.keyWidget->keySequence();
+}
+
+void SnippetWidget::setKeyword(const QString &keyword)
+{
+    d->mUi.keyword->setText(keyword);
+}
+
+QString SnippetWidget::keyword() const
+{
+    return d->mUi.keyword->text();
+}
+
+void SnippetWidget::setGroupModel(QAbstractItemModel *model)
+{
+    d->mUi.groupBox->setModel(model);
+}
+
+void SnippetWidget::setGroupIndex(const QModelIndex &index)
+{
+    d->mUi.groupBox->setCurrentIndex(index.row());
+}
+
+QModelIndex SnippetWidget::groupIndex() const
+{
+    return d->mUi.groupBox->model()->index(d->mUi.groupBox->currentIndex(), 0);
+}
+
+bool SnippetWidget::snippetIsValid() const
+{
+    if (d->mUi.nameEdit->text().trimmed().isEmpty()) {
+        return false;
     } else {
-        popup.setTitle(i18n("Text Snippets"));
+        if (d->mUi.groupWidget->isVisible()) {
+            return !d->mUi.groupBox->currentText().trimmed().isEmpty();
+        }
     }
-    if (canAddSnippet) {
-        popup.addAction(mSnippetsManager->addSnippetAction());
-    }
-    popup.addAction(mSnippetsManager->addSnippetGroupAction());
-
-    popup.exec(event->globalPos());
+    return true;
 }
 
-void SnippetWidget::dropEvent(QDropEvent *event)
+void SnippetWidget::setCheckActionCollections(const QList<KActionCollection *> &lst)
 {
-    if (event->source() == this) {
-        event->setDropAction(Qt::MoveAction);
-    }
-    QTreeView::dropEvent(event);
+    d->mUi.keyWidget->setCheckActionCollections(lst);
 }
 
-MailCommon::SnippetsManager *SnippetWidget::snippetsManager() const
+void SnippetWidget::setGroupSelected(bool inGroupMode)
 {
-    return mSnippetsManager;
+    d->isSelectedGroup = inGroupMode;
+    d->mUi.groupWidget->setVisible(!inGroupMode);
+}
+
+bool SnippetWidget::isGroupSelected() const
+{
+    return d->isSelectedGroup;
+}
+
+void SnippetWidget::clear()
+{
+    d->mUi.nameEdit->clear();
+    d->mUi.keyword->clear();
+    d->mUi.snippetText->clear();
+    d->mUi.keyWidget->setKeySequence({});
 }
