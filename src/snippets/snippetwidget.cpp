@@ -36,6 +36,7 @@ public:
     Ui::SnippetWidget mUi;
     QWidget *wdg = nullptr;
     bool isSelectedGroup = false;
+    bool wasChanged = false;
 };
 
 
@@ -56,11 +57,28 @@ SnippetWidget::SnippetWidget(QWidget *parent)
         d->mUi.snippetText->editor()->insertPlainText(MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(type));
     });
 
-    connect(d->mUi.nameEdit, &KLineEdit::textChanged, this, &SnippetWidget::textChanged);
-    connect(d->mUi.groupBox, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &SnippetWidget::groupChanged);
 
     d->mUi.nameEdit->setFocus();
     d->mUi.snippetText->setMinimumSize(500, 300);
+
+    connect(d->mUi.nameEdit, &KLineEdit::textChanged, this, [this](const QString &str) {
+        Q_EMIT textChanged(str);
+        d->wasChanged = true;
+    });
+
+    connect(d->mUi.groupBox, QOverload<int>::of(&KComboBox::currentIndexChanged), this, [this](int index) {
+        Q_EMIT groupChanged(index);
+        d->wasChanged = true;
+    });
+    connect(d->mUi.keyword, &KLineEdit::textChanged, this, [this]() {
+        d->wasChanged = true;
+    });
+    connect(d->mUi.snippetText->editor(), &KPIMTextEdit::PlainTextEditor::textChanged, this, [this]() {
+        d->wasChanged = true;
+    });
+    connect(d->mUi.keyWidget, &KKeySequenceWidget::keySequenceChanged, this, [this]() {
+        d->wasChanged = true;
+    });
 }
 
 SnippetWidget::~SnippetWidget()
@@ -157,4 +175,14 @@ void SnippetWidget::clear()
     d->mUi.keyword->clear();
     d->mUi.snippetText->clear();
     d->mUi.keyWidget->setKeySequence({});
+}
+
+bool SnippetWidget::wasChanged() const
+{
+    return d->wasChanged;
+}
+
+void SnippetWidget::setWasChanged(bool b)
+{
+    d->wasChanged = b;
 }

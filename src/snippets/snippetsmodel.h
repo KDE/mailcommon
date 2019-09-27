@@ -27,7 +27,7 @@
 namespace MailCommon {
 class SnippetItem;
 
-struct SnippetsInfo
+struct MAILCOMMON_EXPORT SnippetsInfo
 {
     QString newName;
     QKeySequence keySequence;

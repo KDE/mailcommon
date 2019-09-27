@@ -52,6 +52,9 @@ public:
 
     Q_REQUIRED_RESULT bool isGroupSelected() const;
     void clear();
+
+    Q_REQUIRED_RESULT bool wasChanged() const;
+    void setWasChanged(bool b);
 Q_SIGNALS:
     void textChanged(const QString &str);
     void groupChanged(int index);
