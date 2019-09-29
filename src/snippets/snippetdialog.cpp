@@ -46,7 +46,6 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
     connect(buttonBox, &QDialogButtonBox::rejected, this, &SnippetDialog::reject);
     mainLayout->addWidget(buttonBox);
 
-
     mSnippetWidget->setCheckActionCollections(QList<KActionCollection *>() << actionCollection);
     mOkButton->setEnabled(false);
 
@@ -124,7 +123,7 @@ QString SnippetDialog::keyword() const
 
 void SnippetDialog::setGroupModel(QAbstractItemModel *model)
 {
-   mSnippetWidget->setGroupModel(model);
+    mSnippetWidget->setGroupModel(model);
 }
 
 void SnippetDialog::setGroupIndex(const QModelIndex &index)

@@ -526,7 +526,9 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
 
     d->initializeActionCollection();
     d->selectionChanged();
-    connect(this, &SnippetsManager::insertSnippet, this, [this]() {d->insertSelectedSnippet();});
+    connect(this, &SnippetsManager::insertSnippet, this, [this]() {
+        d->insertSelectedSnippet();
+    });
 }
 
 SnippetsManager::~SnippetsManager()

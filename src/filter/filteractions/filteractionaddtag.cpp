@@ -60,20 +60,20 @@ QWidget *FilterActionAddTag::createParamWidget(QWidget *parent) const
 
 void FilterActionAddTag::applyParamWidgetValue(QWidget *paramWidget)
 {
-    auto combo = static_cast<QComboBox*>(paramWidget);
+    auto combo = static_cast<QComboBox *>(paramWidget);
     mParameter = combo->itemData(combo->currentIndex()).toString();
 }
 
 void FilterActionAddTag::setParamWidgetValue(QWidget *paramWidget) const
 {
-    const int index = static_cast<QComboBox*>(paramWidget)->findData(mParameter);
+    const int index = static_cast<QComboBox *>(paramWidget)->findData(mParameter);
 
-    static_cast<QComboBox*>(paramWidget)->setCurrentIndex(index < 0 ? 0 : index);
+    static_cast<QComboBox *>(paramWidget)->setCurrentIndex(index < 0 ? 0 : index);
 }
 
 void FilterActionAddTag::clearParamWidget(QWidget *paramWidget) const
 {
-    static_cast<QComboBox*>(paramWidget)->setCurrentIndex(0);
+    static_cast<QComboBox *>(paramWidget)->setCurrentIndex(0);
 }
 
 bool FilterActionAddTag::isEmpty() const

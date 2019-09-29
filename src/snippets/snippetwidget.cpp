@@ -39,10 +39,9 @@ public:
     bool wasChanged = false;
 };
 
-
 SnippetWidget::SnippetWidget(QWidget *parent)
-    : QWidget(parent),
-      d(new SnippetWidgetPrivate)
+    : QWidget(parent)
+    , d(new SnippetWidgetPrivate)
 {
     QVBoxLayout *layout = new QVBoxLayout(this);
     layout->setObjectName(QStringLiteral("mainlayout"));
@@ -56,7 +55,6 @@ SnippetWidget::SnippetWidget(QWidget *parent)
     connect(variableMenu, &MessageComposer::ConvertSnippetVariableMenu::insertVariable, this, [this](MessageComposer::ConvertSnippetVariablesUtil::VariableType type) {
         d->mUi.snippetText->editor()->insertPlainText(MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(type));
     });
-
 
     d->mUi.nameEdit->setFocus();
     d->mUi.snippetText->setMinimumSize(500, 300);

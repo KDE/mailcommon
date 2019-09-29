@@ -138,14 +138,14 @@ void CollectionExpiryPage::load(const Akonadi::Collection &collection)
         int daysToExpireRead, daysToExpireUnread;
         attr->daysToExpire(daysToExpireUnread, daysToExpireRead);
         if (expiryGloballyOn
-                && attr->readExpireUnits() != ExpireCollectionAttribute::ExpireNever
-                && daysToExpireRead >= 0) {
+            && attr->readExpireUnits() != ExpireCollectionAttribute::ExpireNever
+            && daysToExpireRead >= 0) {
             expireReadMailCB->setChecked(true);
             expireReadMailSB->setValue(daysToExpireRead);
         }
         if (expiryGloballyOn
-                && attr->unreadExpireUnits() != ExpireCollectionAttribute::ExpireNever
-                && daysToExpireUnread >= 0) {
+            && attr->unreadExpireUnits() != ExpireCollectionAttribute::ExpireNever
+            && daysToExpireUnread >= 0) {
             expireUnreadMailCB->setChecked(true);
             expireUnreadMailSB->setValue(daysToExpireUnread);
         }

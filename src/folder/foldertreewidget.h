@@ -65,8 +65,7 @@ public:
 
     explicit FolderTreeWidget(
         QWidget *parent = nullptr, KXMLGUIClient *xmlGuiClient = nullptr, TreeViewOptions options = (TreeViewOptions)(ShowUnreadCount
-                                                                                                                      |ShowCollectionStatisticAnimation),
-        FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelOptions optReadableProxy = FolderTreeWidgetProxyModel::None);
+                                                                                                                      |ShowCollectionStatisticAnimation), FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelOptions optReadableProxy = FolderTreeWidgetProxyModel::None);
     ~FolderTreeWidget();
 
     /**

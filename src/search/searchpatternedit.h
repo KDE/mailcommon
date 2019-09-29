@@ -174,8 +174,7 @@ public:
     * which will be used to initialize the widget.
     */
     explicit SearchRuleWidget(QWidget *parent = nullptr,
-                              MailCommon::SearchRule::Ptr aRule = MailCommon::SearchRule::Ptr(),
-                              SearchPatternEdit::SearchPatternEditOptions options = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None),
+                              MailCommon::SearchRule::Ptr aRule = MailCommon::SearchRule::Ptr(), SearchPatternEdit::SearchPatternEditOptions options = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None),
                               SearchPatternEdit::SearchModeType modeType = SearchPatternEdit::StandardMode);
 
     enum {
@@ -282,8 +281,7 @@ class SearchRuleWidgetLister : public KPIM::KWidgetLister
     friend class SearchPatternEdit;
 
 public:
-    explicit SearchRuleWidgetLister(QWidget *parent = nullptr, SearchPatternEdit::SearchPatternEditOptions opt = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None),
-                                    SearchPatternEdit::SearchModeType modeType = SearchPatternEdit::StandardMode);
+    explicit SearchRuleWidgetLister(QWidget *parent = nullptr, SearchPatternEdit::SearchPatternEditOptions opt = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None), SearchPatternEdit::SearchModeType modeType = SearchPatternEdit::StandardMode);
 
     ~SearchRuleWidgetLister() override;
 

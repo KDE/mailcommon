@@ -112,7 +112,7 @@ SearchRule::Function StatusRuleWidgetHandler::function(const QByteArray &field, 
 
 int StatusRuleWidgetHandler::currentStatusValue(const QStackedWidget *valueStack) const
 {
-    const auto statusCombo = valueStack->findChild<QComboBox*>(QStringLiteral("statusRuleValueCombo"));
+    const auto statusCombo = valueStack->findChild<QComboBox *>(QStringLiteral("statusRuleValueCombo"));
 
     if (statusCombo) {
         return statusCombo->currentIndex();
