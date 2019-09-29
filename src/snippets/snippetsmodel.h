@@ -74,7 +74,7 @@ public:
 
     Q_REQUIRED_RESULT Qt::DropActions supportedDropActions() const override;
 
-    void save();
+    void save(const QString &filename = QString());
 
     Q_REQUIRED_RESULT QMap<QString, QString> savedVariables() const;
     void setSavedVariables(const QMap<QString, QString> &savedVariables);

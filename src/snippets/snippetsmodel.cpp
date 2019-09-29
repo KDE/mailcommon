@@ -568,9 +568,9 @@ QMap<QString, QString> SnippetsModel::savedVariables() const
     return mSavedVariables;
 }
 
-void SnippetsModel::save()
+void SnippetsModel::save(const QString &filename)
 {
-    KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("kmailsnippetrc"), KConfig::NoGlobals);
+    KSharedConfig::Ptr config = KSharedConfig::openConfig(filename.isEmpty() ? QStringLiteral("kmailsnippetrc") : filename, KConfig::NoGlobals);
 
     // clear everything
     for (const QString &group : config->groupList()) {
