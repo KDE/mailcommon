@@ -465,10 +465,10 @@ QModelIndex SnippetsModel::createGroup(const QString &groupName)
     return groupIndex;
 }
 
-void SnippetsModel::load()
+void SnippetsModel::load(const QString &filename)
 {
     const KSharedConfig::Ptr config
-        = KSharedConfig::openConfig(QStringLiteral("kmailsnippetrc"), KConfig::NoGlobals);
+        = KSharedConfig::openConfig(filename.isEmpty() ? QStringLiteral("kmailsnippetrc") : filename, KConfig::NoGlobals);
 
     const KConfigGroup snippetPartGroup = config->group("SnippetPart");
 

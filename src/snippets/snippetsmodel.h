@@ -75,6 +75,7 @@ public:
     Q_REQUIRED_RESULT Qt::DropActions supportedDropActions() const override;
 
     void save(const QString &filename = QString());
+    void load(const QString &filename = QString());
 
     Q_REQUIRED_RESULT QMap<QString, QString> savedVariables() const;
     void setSavedVariables(const QMap<QString, QString> &savedVariables);
@@ -92,7 +93,6 @@ Q_SIGNALS:
     void updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text);
 
 private:
-    void load();
     QModelIndex createGroup(const QString &groupName);
     void createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword);
     SnippetItem *mRootItem = nullptr;
