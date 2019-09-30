@@ -56,6 +56,10 @@ SnippetWidget::SnippetWidget(QWidget *parent)
         d->mUi.snippetText->editor()->insertPlainText(MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(type));
     });
 
+    d->mUi.nameEdit->setTrapReturnKey(true);
+    d->mUi.keyword->setTrapReturnKey(true);
+    d->mUi.keyword->setClearButtonEnabled(true);
+    d->mUi.nameEdit->setClearButtonEnabled(true);
     d->mUi.nameEdit->setFocus();
     d->mUi.snippetText->setMinimumSize(500, 300);
 

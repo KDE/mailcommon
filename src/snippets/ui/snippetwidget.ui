@@ -31,9 +31,6 @@
      </item>
      <item row="0" column="1">
       <widget class="KLineEdit" name="nameEdit">
-       <property name="trapReturnKey" stdset="0">
-        <bool>true</bool>
-       </property>
       </widget>
      </item>
     </layout>
@@ -131,7 +128,7 @@
        </widget>
       </item>
       <item row="5" column="1" colspan="2">
-       <widget class="QLineEdit" name="keyword"/>
+       <widget class="KLineEdit" name="keyword"/>
       </item>
      </layout>
     </widget>
