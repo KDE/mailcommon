@@ -61,6 +61,7 @@ private:
     KActionCollection *mActionCollection = nullptr;
     SnippetWidget *mSnippetWidget = nullptr;
     QPushButton *mOkButton = nullptr;
+    bool mInGroupMode = false;
 };
 }
 #endif

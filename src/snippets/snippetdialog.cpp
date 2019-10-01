@@ -31,6 +31,7 @@ static const char myConfigGroupName[] = "SnippetDialog";
 SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMode, QWidget *parent)
     : QDialog(parent)
     , mActionCollection(actionCollection)
+    , mInGroupMode(inGroupMode)
 {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
@@ -52,13 +53,18 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
     connect(mSnippetWidget, &MailCommon::SnippetWidget::textChanged, this, &SnippetDialog::slotTextChanged);
     connect(mSnippetWidget, &MailCommon::SnippetWidget::groupChanged, this, &SnippetDialog::slotGroupChanged);
 
-    mSnippetWidget->setGroupSelected(inGroupMode);
-    readConfig();
+    mSnippetWidget->setGroupSelected(mInGroupMode);
+    if (!mInGroupMode) {
+        readConfig();
+    }
+
 }
 
 SnippetDialog::~SnippetDialog()
 {
-    writeConfig();
+    if (!mInGroupMode) {
+        writeConfig();
+    }
 }
 
 void SnippetDialog::writeConfig()
