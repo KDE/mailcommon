@@ -102,17 +102,16 @@ void FavoriteCollectionWidget::createMenu(KActionCollection *ac)
     static const int icon_sizes[] = { 16, 22, 32 /*, 48, 64, 128 */ };
 
     QActionGroup *grp = new QActionGroup(iconSizeMenu);
-    const int nbElement((int)(sizeof(icon_sizes) / sizeof(int)));
     QAction *act = nullptr;
-    for (int i = 0; i < nbElement; ++i) {
-        act = new QAction(QStringLiteral("%1x%2").arg(icon_sizes[ i ]).arg(icon_sizes[ i ]), iconSizeMenu);
+    for (int i  : icon_sizes) {
+        act = new QAction(QStringLiteral("%1x%2").arg(i).arg(i), iconSizeMenu);
         iconSizeMenu->addAction(act);
         act->setCheckable(true);
         grp->addAction(act);
-        if (iconSize().width() == icon_sizes[ i ]) {
+        if (iconSize().width() == i) {
             act->setChecked(true);
         }
-        act->setData(QVariant(icon_sizes[ i ]));
+        act->setData(QVariant(i));
         connect(act, &QAction::triggered, this, &FavoriteCollectionWidget::slotChangeIconSize);
     }
 

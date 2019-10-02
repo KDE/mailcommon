@@ -74,14 +74,11 @@ static struct _statusNames statusNames[] = {
     }
 };
 
-static const int numStatusNames
-    = sizeof statusNames / sizeof(struct _statusNames);
-
 QString englishNameForStatus(Akonadi::MessageStatus status)
 {
-    for (int i = 0; i < numStatusNames; ++i) {
-        if (statusNames[i].status == status) {
-            return QString::fromLatin1(statusNames[i].name);
+    for (const _statusNames &statusName : statusNames) {
+        if (statusName.status == status) {
+            return QString::fromLatin1(statusName.name);
         }
     }
     return QString();
@@ -103,9 +100,9 @@ SearchRuleStatus::SearchRuleStatus(Akonadi::MessageStatus status, Function func)
 
 Akonadi::MessageStatus SearchRuleStatus::statusFromEnglishName(const QString &aStatusString)
 {
-    for (int i = 0; i < numStatusNames; ++i) {
-        if (!aStatusString.compare(QString::fromLatin1(statusNames[i].name))) {
-            return statusNames[i].status;
+    for (const _statusNames &statusName : statusNames) {
+        if (!aStatusString.compare(QString::fromLatin1(statusName.name))) {
+            return statusName.status;
         }
     }
     Akonadi::MessageStatus unknown;
