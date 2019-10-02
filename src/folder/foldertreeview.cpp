@@ -159,15 +159,14 @@ void FolderTreeView::slotHeaderContextMenuRequested(const QPoint &pnt)
     static const int icon_sizes[] = { 16, 22, 32};
 
     QActionGroup *grp = new QActionGroup(&menu);
-    const int nbElement((int)(sizeof(icon_sizes) / sizeof(int)));
-    for (int i = 0; i < nbElement; ++i) {
-        act = menu.addAction(QStringLiteral("%1x%2").arg(icon_sizes[ i ]).arg(icon_sizes[ i ]));
+    for (int i : icon_sizes) {
+        act = menu.addAction(QStringLiteral("%1x%2").arg(i).arg(i));
         act->setCheckable(true);
         grp->addAction(act);
-        if (iconSize().width() == icon_sizes[ i ]) {
+        if (iconSize().width() == i) {
             act->setChecked(true);
         }
-        act->setData(QVariant(icon_sizes[ i ]));
+        act->setData(QVariant(i));
 
         connect(act, &QAction::triggered, this, &FolderTreeView::slotHeaderContextMenuChangeIconSize);
     }
