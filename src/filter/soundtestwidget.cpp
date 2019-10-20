@@ -18,7 +18,6 @@
 
 #include "soundtestwidget.h"
 
-#include <KIconLoader>
 #include <KLocalizedString>
 #include <KUrlRequester>
 #include <KLineEdit>
@@ -41,7 +40,6 @@ SoundTestWidget::SoundTestWidget(QWidget *parent)
 
     m_playButton = new QPushButton(this);
     m_playButton->setIcon(QIcon::fromTheme(QStringLiteral("arrow-right")));
-    m_playButton->setIconSize(QSize(KIconLoader::SizeSmall, KIconLoader::SizeSmall));
     m_playButton->setToolTip(i18n("Play"));
     layout->addWidget(m_playButton);
 

@@ -22,7 +22,6 @@
 #include "kernel/mailkernel.h"
 
 #include <QTreeView>
-#include <KIconLoader>
 #include <MessageComposer/ComposerLineEdit>
 
 #include <Akonadi/Contact/EmailAddressSelectionDialog>
@@ -50,7 +49,6 @@ RedirectWidget::RedirectWidget(QWidget *parent)
 
     QPushButton *BtnTo = new QPushButton(this);
     BtnTo->setIcon(QIcon::fromTheme(QStringLiteral("help-contents")));
-    BtnTo->setIconSize(QSize(KIconLoader::SizeSmall, KIconLoader::SizeSmall));
     BtnTo->setToolTip(i18n("Use the Address-Selection Dialog"));
     BtnTo->setWhatsThis(i18n("This button opens a separate dialog "
                              "where you can select recipients out "

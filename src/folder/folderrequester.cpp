@@ -34,7 +34,6 @@
 
 #include <CollectionFetchJob>
 
-#include <KIconLoader>
 #include <KLineEdit>
 #include <KLocalizedString>
 #include <QIcon>
@@ -73,7 +72,6 @@ FolderRequester::FolderRequester(QWidget *parent)
 
     QToolButton *button = new QToolButton(this);
     button->setIcon(QIcon::fromTheme(QStringLiteral("folder")));
-    button->setIconSize(QSize(KIconLoader::SizeSmall, KIconLoader::SizeSmall));
     hlay->addWidget(button);
     connect(button, &QToolButton::clicked, this, &FolderRequester::slotOpenDialog);
 
