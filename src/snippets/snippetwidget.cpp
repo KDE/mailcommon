@@ -177,6 +177,7 @@ void SnippetWidget::clear()
     d->mUi.keyword->clear();
     d->mUi.snippetText->clear();
     d->mUi.keyWidget->setKeySequence({});
+    d->mUi.subject->clear();
 }
 
 bool SnippetWidget::wasChanged() const
@@ -187,4 +188,14 @@ bool SnippetWidget::wasChanged() const
 void SnippetWidget::setWasChanged(bool b)
 {
     d->wasChanged = b;
+}
+
+QString SnippetWidget::subject() const
+{
+    return d->mUi.subject->text();
+}
+
+void SnippetWidget::setSubject(const QString &text)
+{
+    d->mUi.subject->setText(text);
 }

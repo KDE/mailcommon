@@ -57,6 +57,9 @@ public:
     Q_REQUIRED_RESULT int row() const;
     SnippetItem *parent() const;
 
+    Q_REQUIRED_RESULT QString subject() const;
+    void setSubject(const QString &subject);
+
 private:
     QVector<SnippetItem *> mChildItems;
     SnippetItem *mParentItem = nullptr;
@@ -66,6 +69,7 @@ private:
     QString mText;
     QString mKeySequence;
     QString mKeyword;
+    QString mSubject;
 };
 
 SnippetItem::SnippetItem(bool isGroup, SnippetItem *parent)
@@ -151,6 +155,16 @@ SnippetItem *SnippetItem::parent() const
     return mParentItem;
 }
 
+QString SnippetItem::subject() const
+{
+    return mSubject;
+}
+
+void SnippetItem::setSubject(const QString &subject)
+{
+    mSubject = subject;
+}
+
 int SnippetItem::row() const
 {
     if (mParentItem) {
@@ -209,6 +223,10 @@ bool SnippetsModel::setData(const QModelIndex &index, const QVariant &value, int
         item->setKeyword(value.toString());
         Q_EMIT dataChanged(index, index);
         return true;
+    case SubjectRole:
+        item->setSubject(value.toString());
+        Q_EMIT dataChanged(index, index);
+        return true;
     }
 
     return false;
@@ -235,6 +253,8 @@ QVariant SnippetsModel::data(const QModelIndex &index, int role) const
         return item->keySequence();
     case KeywordRole:
         return item->keyword();
+    case SubjectRole:
+        return item->subject();
     }
 
     return QVariant();
@@ -371,7 +391,7 @@ QMimeData *SnippetsModel::mimeData(const QModelIndexList &indexes) const
 
     QByteArray encodedData;
     QDataStream stream(&encodedData, QIODevice::WriteOnly);
-    stream << index.parent().internalId() << item->name() << item->text() << item->keySequence() << item->keyword();
+    stream << index.parent().internalId() << item->name() << item->text() << item->keySequence() << item->keyword() << item->subject();
 
     mimeData->setData(QStringLiteral("text/x-kmail-textsnippet"), encodedData);
     mimeData->setText(item->text());
@@ -433,7 +453,8 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
         QString text;
         QString keySequence;
         QString keyword;
-        stream >> id >> name >> text >> keySequence >> keyword;
+        QString subject;
+        stream >> id >> name >> text >> keySequence >> keyword >> subject;
 
         if (parent.internalId() == id) {
             return false;
@@ -447,6 +468,7 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
         setData(idx, text, SnippetsModel::TextRole);
         setData(idx, keySequence, SnippetsModel::KeySequenceRole);
         setData(idx, keyword, SnippetsModel::KeywordRole);
+        setData(idx, subject, SnippetsModel::SubjectRole);
         Q_EMIT dndDone();
         return true;
     }
@@ -495,8 +517,10 @@ void SnippetsModel::load(const QString &filename)
                 = group.readEntry(QStringLiteral("snippetKeySequence_%1").arg(j), QString());
             const QString snippetKeyword
                 = group.readEntry(QStringLiteral("snippetKeyword_%1").arg(j), QString());
+            const QString snippetSubject
+                = group.readEntry(QStringLiteral("snippetSubject_%1").arg(j), QString());
 
-            createSnippet(groupIndex, snippetName, snippetText, snippetKeySequence, snippetKeyword);
+            createSnippet(groupIndex, snippetName, snippetText, snippetKeySequence, snippetKeyword, snippetSubject);
         }
     }
 
@@ -514,7 +538,7 @@ void SnippetsModel::load(const QString &filename)
     }
 }
 
-void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword)
+void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword, const QString &snippetSubject)
 {
     insertRow(rowCount(groupIndex), groupIndex);
     const QModelIndex modelIndex = index(rowCount(groupIndex) - 1, 0, groupIndex);
@@ -523,6 +547,7 @@ void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &
     setData(modelIndex, snippetText, SnippetsModel::TextRole);
     setData(modelIndex, snippetKeySequence, SnippetsModel::KeySequenceRole);
     setData(modelIndex, snippetKeyword, SnippetsModel::KeywordRole);
+    setData(modelIndex, snippetSubject, SnippetsModel::SubjectRole);
 
     Q_EMIT updateActionCollection(QString(),
                                   snippetName,
@@ -552,10 +577,12 @@ QVector<SnippetsInfo> SnippetsModel::snippetsInfo() const
                 const QString snippetText = modelIndex.data(SnippetsModel::TextRole).toString();
                 const QString snippetKeySequence = modelIndex.data(SnippetsModel::KeySequenceRole).toString();
                 const QString snippetKeyword = modelIndex.data(SnippetsModel::KeywordRole).toString();
+                const QString snippetSubject = modelIndex.data(SnippetsModel::SubjectRole).toString();
                 info.text = snippetText;
                 info.newName = snippetName;
                 info.keyword = snippetKeyword;
                 info.keySequence = QKeySequence::fromString(snippetKeySequence);
+                info.subject = snippetSubject;
                 infos.append(info);
             }
         }
@@ -601,6 +628,7 @@ void SnippetsModel::save(const QString &filename)
                 const QString snippetText = modelIndex.data(SnippetsModel::TextRole).toString();
                 const QString snippetKeySequence = modelIndex.data(SnippetsModel::KeySequenceRole).toString();
                 const QString snippetKeyword = modelIndex.data(SnippetsModel::KeywordRole).toString();
+                const QString snippetSubject = modelIndex.data(SnippetsModel::SubjectRole).toString();
 
                 group.writeEntry(QStringLiteral("snippetName_%1").arg(j), snippetName);
                 if (!snippetText.isEmpty()) {
@@ -613,6 +641,10 @@ void SnippetsModel::save(const QString &filename)
                 if (!snippetKeyword.isEmpty()) {
                     group.writeEntry(QStringLiteral("snippetKeyword_%1").arg(j),
                                      snippetKeyword);
+                }
+                if (!snippetSubject.isEmpty()) {
+                    group.writeEntry(QStringLiteral("snippetSubject_%1").arg(j),
+                                     snippetSubject);
                 }
             }
         }

@@ -33,6 +33,7 @@ struct MAILCOMMON_EXPORT SnippetsInfo
     QKeySequence keySequence;
     QString text;
     QString keyword;
+    QString subject;
 };
 
 class MAILCOMMON_EXPORT SnippetsModel : public QAbstractItemModel
@@ -44,7 +45,8 @@ public:
         NameRole,                       ///< The name of a snippet or group
         TextRole,                       ///< The text of a snippet
         KeySequenceRole,                ///< The key sequence to activate a snippet
-        KeywordRole,                        ///< The keyword which will replace by snippet
+        KeywordRole,                    ///< The keyword which will replace by snippet
+        SubjectRole,                    ///< The subject of a snippet
     };
 
     static SnippetsModel *instance();
@@ -94,7 +96,7 @@ Q_SIGNALS:
 
 private:
     QModelIndex createGroup(const QString &groupName);
-    void createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword);
+    void createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword, const QString &snippetSubject);
     SnippetItem *mRootItem = nullptr;
     QMap<QString, QString> mSavedVariables;
 };

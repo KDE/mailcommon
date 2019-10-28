@@ -107,6 +107,16 @@ QString SnippetDialog::text() const
     return mSnippetWidget->text();
 }
 
+void SnippetDialog::setSubject(const QString &text)
+{
+    mSnippetWidget->setSubject(text);
+}
+
+QString SnippetDialog::subject() const
+{
+    return mSnippetWidget->subject();
+}
+
 void SnippetDialog::setKeySequence(const QKeySequence &sequence)
 {
     mSnippetWidget->setKeySequence(sequence);

@@ -38,6 +38,9 @@ public:
     void setText(const QString &text);
     Q_REQUIRED_RESULT QString text() const;
 
+    void setSubject(const QString &text);
+    Q_REQUIRED_RESULT QString subject() const;
+
     void setKeySequence(const QKeySequence &sequence);
     Q_REQUIRED_RESULT QKeySequence keySequence() const;
 

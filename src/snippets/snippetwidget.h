@@ -55,6 +55,10 @@ public:
 
     Q_REQUIRED_RESULT bool wasChanged() const;
     void setWasChanged(bool b);
+
+    void setSubject(const QString &text);
+    Q_REQUIRED_RESULT QString subject() const;
+
 Q_SIGNALS:
     void textChanged(const QString &str);
     void groupChanged(int index);
