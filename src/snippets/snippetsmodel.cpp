@@ -552,7 +552,8 @@ void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &
     Q_EMIT updateActionCollection(QString(),
                                   snippetName,
                                   QKeySequence::fromString(snippetKeySequence),
-                                  snippetText);
+                                  snippetText,
+                                  snippetSubject);
 }
 
 void SnippetsModel::setSavedVariables(const QMap<QString, QString> &savedVariables)

@@ -40,7 +40,7 @@ protected:
     void dropEvent(QDropEvent *) override;
 
 Q_SIGNALS:
-    void insertSnippetText(const QString &str);
+    void insertSubjectAndPlainText(const QString &subject, const QString &str);
 
 private:
     MailCommon::SnippetsManager *mSnippetsManager = nullptr;

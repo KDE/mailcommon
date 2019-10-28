@@ -107,7 +107,7 @@ public:
 
 Q_SIGNALS:
     void insertSnippet();
-    void insertPlainText(const QString &snippetText);
+    void insertSubjectAndPlainText(const QString &snippetSubject, const QString &snippetText);
 
 private:
     //@cond PRIVATE

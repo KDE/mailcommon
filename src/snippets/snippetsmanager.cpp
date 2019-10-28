@@ -65,8 +65,8 @@ public:
 
     void slotAddNewDndSnippset(const QString &);
 
-    void updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text);
-    void initializeAction(const QString &newName, const QKeySequence &keySequence, const QString &text);
+    void updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text, const QString &subject);
+    void initializeAction(const QString &newName, const QKeySequence &keySequence, const QString &text, const QString &subject);
     void initializeActionCollection();
 
     QString replaceVariables(const QString &text);
@@ -173,7 +173,7 @@ void SnippetsManager::Private::createSnippet(const QString &text)
         mModel->setData(index, dlg->keyword(), SnippetsModel::KeywordRole);
         mModel->setData(index, dlg->subject(), SnippetsModel::SubjectRole);
 
-        Q_EMIT mModel->updateActionCollection(QString(), dlg->name(), dlg->keySequence(), dlg->text());
+        Q_EMIT mModel->updateActionCollection(QString(), dlg->name(), dlg->keySequence(), dlg->text(), dlg->subject());
         mDirty = true;
         save();
     }
@@ -229,7 +229,7 @@ void SnippetsManager::Private::editSnippet()
         mModel->setData(index, dlg->keyword(), SnippetsModel::KeywordRole);
         mModel->setData(index, dlg->subject(), SnippetsModel::SubjectRole);
 
-        Q_EMIT mModel->updateActionCollection(oldSnippetName, dlg->name(), dlg->keySequence(), dlg->text());
+        Q_EMIT mModel->updateActionCollection(oldSnippetName, dlg->name(), dlg->keySequence(), dlg->text(), dlg->subject());
         mDirty = true;
         save();
     }
@@ -254,7 +254,7 @@ void SnippetsManager::Private::deleteSnippet()
 
     mModel->removeRow(index.row(), currentGroupIndex());
 
-    Q_EMIT mModel->updateActionCollection(snippetName, QString(), QKeySequence(), QString());
+    Q_EMIT mModel->updateActionCollection(snippetName, QString(), QKeySequence(), QString(), QString());
     mDirty = true;
     save();
 }
@@ -351,7 +351,8 @@ void SnippetsManager::Private::insertSelectedSnippet()
     }
 
     const QString text = replaceVariables(index.data(SnippetsModel::TextRole).toString());
-    Q_EMIT q->insertPlainText(text);
+    const QString subject = replaceVariables(index.data(SnippetsModel::SubjectRole).toString());
+    Q_EMIT q->insertSubjectAndPlainText(subject, text);
 }
 
 void SnippetsManager::Private::insertActionSnippet()
@@ -362,7 +363,8 @@ void SnippetsManager::Private::insertActionSnippet()
     }
 
     const QString text = replaceVariables(action->property("snippetText").toString());
-    Q_EMIT q->insertPlainText(text);
+    const QString subject = replaceVariables(action->property("snippetSubject").toString());
+    Q_EMIT q->insertSubjectAndPlainText(subject, text);
 }
 
 void SnippetsManager::Private::initializeActionCollection()
@@ -370,12 +372,12 @@ void SnippetsManager::Private::initializeActionCollection()
     if (mActionCollection) {
         const QVector<SnippetsInfo> infos = mModel->snippetsInfo();
         for (const SnippetsInfo &info : infos) {
-            initializeAction(info.newName, info.keySequence, info.text);
+            initializeAction(info.newName, info.keySequence, info.text, info.subject);
         }
     }
 }
 
-void SnippetsManager::Private::initializeAction(const QString &newName, const QKeySequence &keySequence, const QString &text)
+void SnippetsManager::Private::initializeAction(const QString &newName, const QKeySequence &keySequence, const QString &text, const QString &subject)
 {
     const QString actionName = i18nc("@action", "Snippet %1", newName);
     const QString normalizedName = QString(actionName).replace(QLatin1Char(' '), QLatin1Char('_'));
@@ -386,11 +388,12 @@ void SnippetsManager::Private::initializeAction(const QString &newName, const QK
         insertActionSnippet();
     });
     action->setProperty("snippetText", text);
+    action->setProperty("snippetSubject", subject);
     action->setText(actionName);
     mActionCollection->setDefaultShortcut(action, keySequence);
 }
 
-void SnippetsManager::Private::updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text)
+void SnippetsManager::Private::updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text, const QString &subject)
 {
     // remove previous action in case that the name changed
     if (!oldName.isEmpty() && mActionCollection) {
@@ -404,7 +407,7 @@ void SnippetsManager::Private::updateActionCollection(const QString &oldName, co
     }
 
     if (!newName.isEmpty()) {
-        initializeAction(newName, keySequence, text);
+        initializeAction(newName, keySequence, text, subject);
     }
 }
 
@@ -469,8 +472,8 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
     , d(new Private(this, parentWidget))
 {
     d->mModel = SnippetsModel::instance();
-    connect(d->mModel, &SnippetsModel::updateActionCollection, this, [this](const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text) {
-        d->updateActionCollection(oldName, newName, keySequence, text);
+    connect(d->mModel, &SnippetsModel::updateActionCollection, this, [this](const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text, const QString &subject) {
+        d->updateActionCollection(oldName, newName, keySequence, text, subject);
     });
     d->mSelectionModel = new QItemSelectionModel(d->mModel);
     d->mActionCollection = actionCollection;
