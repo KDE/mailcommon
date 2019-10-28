@@ -41,8 +41,6 @@ using MailCommon::RuleWidgetHandlerManager;
 
 #undef I18N_NOOP
 #define I18N_NOOP(t) nullptr, t
-#undef I18N_NOOP2
-#define I18N_NOOP2(c, t) c, t
 
 using namespace MailCommon;
 
@@ -64,9 +62,9 @@ static const struct {
     { "<age in days>", I18N_NOOP("Age in Days")   },
     { "<status>", I18N_NOOP("Message Status")        },
     { "<tag>", I18N_NOOP("Message Tag") },
-    { "Subject", I18N_NOOP2("Subject of an email.", "Subject")  },
+    { "Subject", I18NC_NOOP("Subject of an email.", "Subject")  },
     { "From", I18N_NOOP("From")  },
-    { "To", I18N_NOOP2("Receiver of an email.", "To")  },
+    { "To", I18NC_NOOP("Receiver of an email.", "To")  },
     { "CC", I18N_NOOP("CC")  },
     { "Reply-To", I18N_NOOP("Reply To")  },
     { "Organization", I18N_NOOP("Organization")  },

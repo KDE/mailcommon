@@ -28,25 +28,26 @@ namespace MailCommon {
 // The below are used in several places and here so they are accessible.
 struct MessageStatusInfo {
     const char *text;
+    const char *context;
     const char *icon;
 };
 
 // If you change the ordering here; also do it in the enum below
 static const MessageStatusInfo StatusValues[] = {
-    { I18N_NOOP2("message status", "Important"), "emblem-important"    },
-    { I18N_NOOP2("message status", "Action Item"), "mail-task"           },
-    { I18N_NOOP2("message status", "Unread"), "mail-unread"         },
-    { I18N_NOOP2("message status", "Read"), "mail-read"           },
-    { I18N_NOOP2("message status", "Deleted"), "mail-deleted"        },
-    { I18N_NOOP2("message status", "Replied"), "mail-replied"        },
-    { I18N_NOOP2("message status", "Forwarded"), "mail-forwarded"      },
-    { I18N_NOOP2("message status", "Queued"), "mail-queued"         },
-    { I18N_NOOP2("message status", "Sent"), "mail-sent"           },
-    { I18N_NOOP2("message status", "Watched"), "mail-thread-watch"   },
-    { I18N_NOOP2("message status", "Ignored"), "mail-thread-ignored" },
-    { I18N_NOOP2("message status", "Spam"), "mail-mark-junk"      },
-    { I18N_NOOP2("message status", "Ham"), "mail-mark-notjunk"   },
-    { I18N_NOOP2("message status", "Has Attachment"), "mail-attachment"     }  //must be last
+    { I18NC_NOOP("message status", "Important"), "emblem-important"    },
+    { I18NC_NOOP("message status", "Action Item"), "mail-task"           },
+    { I18NC_NOOP("message status", "Unread"), "mail-unread"         },
+    { I18NC_NOOP("message status", "Read"), "mail-read"           },
+    { I18NC_NOOP("message status", "Deleted"), "mail-deleted"        },
+    { I18NC_NOOP("message status", "Replied"), "mail-replied"        },
+    { I18NC_NOOP("message status", "Forwarded"), "mail-forwarded"      },
+    { I18NC_NOOP("message status", "Queued"), "mail-queued"         },
+    { I18NC_NOOP("message status", "Sent"), "mail-sent"           },
+    { I18NC_NOOP("message status", "Watched"), "mail-thread-watch"   },
+    { I18NC_NOOP("message status", "Ignored"), "mail-thread-ignored" },
+    { I18NC_NOOP("message status", "Spam"), "mail-mark-junk"      },
+    { I18NC_NOOP("message status", "Ham"), "mail-mark-notjunk"   },
+    { I18NC_NOOP("message status", "Has Attachment"), "mail-attachment"     }  //must be last
 };
 
 static const int StatusValueCount
