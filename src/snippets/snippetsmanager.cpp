@@ -354,7 +354,7 @@ void SnippetsManager::Private::insertSelectedSnippet()
 
     const QString text = replaceVariables(index.data(SnippetsModel::TextRole).toString());
     const QString subject = replaceVariables(index.data(SnippetsModel::SubjectRole).toString());
-    Q_EMIT q->insertSubjectAndPlainText(subject, text);
+    Q_EMIT q->insertSnippetInfo({subject, text});
 }
 
 void SnippetsManager::Private::insertActionSnippet()
@@ -366,7 +366,7 @@ void SnippetsManager::Private::insertActionSnippet()
 
     const QString text = replaceVariables(action->property("snippetText").toString());
     const QString subject = replaceVariables(action->property("snippetSubject").toString());
-    Q_EMIT q->insertSubjectAndPlainText(subject, text);
+    Q_EMIT q->insertSnippetInfo({subject, text});
 }
 
 void SnippetsManager::Private::initializeActionCollection()

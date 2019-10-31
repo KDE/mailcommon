@@ -30,7 +30,7 @@ SnippetTreeView::SnippetTreeView(KActionCollection *actionCollection, QWidget *p
     setRootIsDecorated(true);
     setAlternatingRowColors(true);
     mSnippetsManager = new MailCommon::SnippetsManager(actionCollection, this, this);
-    connect(mSnippetsManager, &MailCommon::SnippetsManager::insertSubjectAndPlainText, this, &SnippetTreeView::insertSubjectAndPlainText);
+    connect(mSnippetsManager, &MailCommon::SnippetsManager::insertSnippetInfo, this, &SnippetTreeView::insertSnippetInfo);
 
     setModel(mSnippetsManager->model());
     setSelectionModel(mSnippetsManager->selectionModel());

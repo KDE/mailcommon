@@ -32,6 +32,18 @@ class QAbstractItemModel;
 class QAction;
 class QItemSelectionModel;
 namespace MailCommon {
+
+struct MAILCOMMON_EXPORT SnippetInfo {
+    SnippetInfo(const QString &_subject, const QString &_text)
+        : subject(_subject),
+          text(_text)
+    {
+
+    }
+    QString subject;
+    QString text;
+};
+
 class MAILCOMMON_EXPORT SnippetsManager : public QObject
 {
     Q_OBJECT
@@ -108,7 +120,7 @@ public:
 
 Q_SIGNALS:
     void insertSnippet();
-    void insertSubjectAndPlainText(const QString &snippetSubject, const QString &snippetText);
+    void insertSnippetInfo(const SnippetInfo &info);
 
 private:
     //@cond PRIVATE

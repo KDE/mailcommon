@@ -24,6 +24,7 @@ class QContextMenuEvent;
 
 namespace MailCommon {
 class SnippetsManager;
+class SnippetInfo;
 /**
  * @author Robert Gruber
  */
@@ -41,7 +42,7 @@ protected:
     void dropEvent(QDropEvent *) override;
 
 Q_SIGNALS:
-    void insertSubjectAndPlainText(const QString &subject, const QString &str);
+    void insertSnippetInfo(const SnippetInfo &info);
 
 private:
     MailCommon::SnippetsManager *mSnippetsManager = nullptr;
