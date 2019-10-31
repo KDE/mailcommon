@@ -62,6 +62,15 @@ public:
     Q_REQUIRED_RESULT QString subject() const;
     void setSubject(const QString &subject);
 
+    Q_REQUIRED_RESULT QString to() const;
+    void setTo(const QString &to);
+
+    Q_REQUIRED_RESULT QString cc() const;
+    void setCc(const QString &cc);
+
+    Q_REQUIRED_RESULT QString bcc() const;
+    void setBcc(const QString &bcc);
+
 private:
     QVector<SnippetItem *> mChildItems;
     SnippetItem *mParentItem = nullptr;
@@ -72,6 +81,9 @@ private:
     QString mKeySequence;
     QString mKeyword;
     QString mSubject;
+    QString mTo;
+    QString mCc;
+    QString mBcc;
 };
 
 SnippetItem::SnippetItem(bool isGroup, SnippetItem *parent)
@@ -167,6 +179,36 @@ void SnippetItem::setSubject(const QString &subject)
     mSubject = subject;
 }
 
+QString SnippetItem::to() const
+{
+    return mTo;
+}
+
+void SnippetItem::setTo(const QString &to)
+{
+    mTo = to;
+}
+
+QString SnippetItem::cc() const
+{
+    return mCc;
+}
+
+void SnippetItem::setCc(const QString &cc)
+{
+    mCc = cc;
+}
+
+QString SnippetItem::bcc() const
+{
+    return mBcc;
+}
+
+void SnippetItem::setBcc(const QString &bcc)
+{
+    mBcc = bcc;
+}
+
 int SnippetItem::row() const
 {
     if (mParentItem) {
@@ -229,6 +271,18 @@ bool SnippetsModel::setData(const QModelIndex &index, const QVariant &value, int
         item->setSubject(value.toString());
         Q_EMIT dataChanged(index, index);
         return true;
+    case ToRole:
+        item->setTo(value.toString());
+        Q_EMIT dataChanged(index, index);
+        return true;
+    case CcRole:
+        item->setCc(value.toString());
+        Q_EMIT dataChanged(index, index);
+        return true;
+    case BccRole:
+        item->setBcc(value.toString());
+        Q_EMIT dataChanged(index, index);
+        return true;
     }
 
     return false;
@@ -257,6 +311,12 @@ QVariant SnippetsModel::data(const QModelIndex &index, int role) const
         return item->keyword();
     case SubjectRole:
         return item->subject();
+    case ToRole:
+        return item->to();
+    case CcRole:
+        return item->cc();
+    case BccRole:
+        return item->bcc();
     }
 
     return QVariant();
@@ -393,7 +453,15 @@ QMimeData *SnippetsModel::mimeData(const QModelIndexList &indexes) const
 
     QByteArray encodedData;
     QDataStream stream(&encodedData, QIODevice::WriteOnly);
-    stream << index.parent().internalId() << item->name() << item->text() << item->keySequence() << item->keyword() << item->subject();
+    stream << index.parent().internalId()
+           << item->name()
+           << item->text()
+           << item->keySequence()
+           << item->keyword()
+           << item->subject()
+           << item->to()
+           << item->cc()
+           << item->bcc();
 
     mimeData->setData(QStringLiteral("text/x-kmail-textsnippet"), encodedData);
     mimeData->setText(item->text());
@@ -456,7 +524,10 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
         QString keySequence;
         QString keyword;
         QString subject;
-        stream >> id >> name >> text >> keySequence >> keyword >> subject;
+        QString to;
+        QString cc;
+        QString bcc;
+        stream >> id >> name >> text >> keySequence >> keyword >> subject >> to >> cc >> bcc;
 
         if (parent.internalId() == id) {
             return false;
@@ -471,6 +542,9 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
         setData(idx, keySequence, SnippetsModel::KeySequenceRole);
         setData(idx, keyword, SnippetsModel::KeywordRole);
         setData(idx, subject, SnippetsModel::SubjectRole);
+        setData(idx, to, SnippetsModel::ToRole);
+        setData(idx, cc, SnippetsModel::CcRole);
+        setData(idx, bcc, SnippetsModel::BccRole);
         Q_EMIT dndDone();
         return true;
     }
@@ -517,12 +591,23 @@ void SnippetsModel::load(const QString &filename)
 
             const QString snippetKeySequence
                 = group.readEntry(QStringLiteral("snippetKeySequence_%1").arg(j), QString());
+
             const QString snippetKeyword
                 = group.readEntry(QStringLiteral("snippetKeyword_%1").arg(j), QString());
+
             const QString snippetSubject
                 = group.readEntry(QStringLiteral("snippetSubject_%1").arg(j), QString());
 
-            createSnippet(groupIndex, snippetName, snippetText, snippetKeySequence, snippetKeyword, snippetSubject);
+            const QString to
+                = group.readEntry(QStringLiteral("snippetTo_%1").arg(j), QString());
+
+            const QString cc
+                = group.readEntry(QStringLiteral("snippetCc_%1").arg(j), QString());
+
+            const QString bcc
+                = group.readEntry(QStringLiteral("snippetBcc_%1").arg(j), QString());
+
+            createSnippet(groupIndex, snippetName, snippetText, snippetKeySequence, snippetKeyword, snippetSubject, to, cc, bcc);
         }
     }
 
@@ -540,7 +625,8 @@ void SnippetsModel::load(const QString &filename)
     }
 }
 
-void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword, const QString &snippetSubject)
+void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword,
+                                  const QString &snippetSubject, const QString &to, const QString &cc, const QString &bcc)
 {
     insertRow(rowCount(groupIndex), groupIndex);
     const QModelIndex modelIndex = index(rowCount(groupIndex) - 1, 0, groupIndex);
@@ -551,11 +637,18 @@ void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &
     setData(modelIndex, snippetKeyword, SnippetsModel::KeywordRole);
     setData(modelIndex, snippetSubject, SnippetsModel::SubjectRole);
 
+    setData(modelIndex, to, SnippetsModel::ToRole);
+    setData(modelIndex, cc, SnippetsModel::CcRole);
+    setData(modelIndex, bcc, SnippetsModel::BccRole);
+
     Q_EMIT updateActionCollection(QString(),
                                   snippetName,
                                   QKeySequence::fromString(snippetKeySequence),
                                   snippetText,
-                                  snippetSubject);
+                                  snippetSubject,
+                                  to,
+                                  cc,
+                                  bcc);
 }
 
 void SnippetsModel::setSavedVariables(const QMap<QString, QString> &savedVariables)
@@ -581,11 +674,17 @@ QVector<SnippetsInfo> SnippetsModel::snippetsInfo() const
                 const QString snippetKeySequence = modelIndex.data(SnippetsModel::KeySequenceRole).toString();
                 const QString snippetKeyword = modelIndex.data(SnippetsModel::KeywordRole).toString();
                 const QString snippetSubject = modelIndex.data(SnippetsModel::SubjectRole).toString();
+                const QString snippetTo = modelIndex.data(SnippetsModel::ToRole).toString();
+                const QString snippetCc = modelIndex.data(SnippetsModel::CcRole).toString();
+                const QString snippetBcc = modelIndex.data(SnippetsModel::BccRole).toString();
                 info.text = snippetText;
                 info.newName = snippetName;
                 info.keyword = snippetKeyword;
                 info.keySequence = QKeySequence::fromString(snippetKeySequence);
                 info.subject = snippetSubject;
+                info.to = snippetTo;
+                info.cc = snippetCc;
+                info.bcc = snippetBcc;
                 infos.append(info);
             }
         }
@@ -632,6 +731,9 @@ void SnippetsModel::save(const QString &filename)
                 const QString snippetKeySequence = modelIndex.data(SnippetsModel::KeySequenceRole).toString();
                 const QString snippetKeyword = modelIndex.data(SnippetsModel::KeywordRole).toString();
                 const QString snippetSubject = modelIndex.data(SnippetsModel::SubjectRole).toString();
+                const QString snippetTo = modelIndex.data(SnippetsModel::ToRole).toString();
+                const QString snippetCc = modelIndex.data(SnippetsModel::CcRole).toString();
+                const QString snippetBcc = modelIndex.data(SnippetsModel::BccRole).toString();
 
                 group.writeEntry(QStringLiteral("snippetName_%1").arg(j), snippetName);
                 if (!snippetText.isEmpty()) {
@@ -648,6 +750,18 @@ void SnippetsModel::save(const QString &filename)
                 if (!snippetSubject.isEmpty()) {
                     group.writeEntry(QStringLiteral("snippetSubject_%1").arg(j),
                                      snippetSubject);
+                }
+                if (!snippetTo.isEmpty()) {
+                    group.writeEntry(QStringLiteral("snippetTo_%1").arg(j),
+                                     snippetTo);
+                }
+                if (!snippetCc.isEmpty()) {
+                    group.writeEntry(QStringLiteral("snippetCc_%1").arg(j),
+                                     snippetCc);
+                }
+                if (!snippetBcc.isEmpty()) {
+                    group.writeEntry(QStringLiteral("snippetBcc_%1").arg(j),
+                                     snippetBcc);
                 }
             }
         }

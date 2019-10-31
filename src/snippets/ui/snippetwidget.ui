@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>468</width>
-    <height>324</height>
+    <width>549</width>
+    <height>467</height>
    </rect>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
@@ -46,20 +46,27 @@
    <item>
     <widget class="QWidget" name="groupWidget" native="true">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="9" column="0">
-       <widget class="QLabel" name="keyWidgetLabel">
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>Sho&amp;rtcut:</string>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-        <property name="buddy">
-         <cstring>keyWidget</cstring>
+         <string>Subject:</string>
         </property>
        </widget>
       </item>
-      <item row="8" column="1" colspan="2">
+      <item row="11" column="1" colspan="2">
+       <widget class="KKeySequenceWidget" name="keyWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="KComboBox" name="groupBox"/>
+      </item>
+      <item row="10" column="1" colspan="2">
        <widget class="KLineEdit" name="keyword">
         <property name="urlDropsEnabled">
          <bool>false</bool>
@@ -72,7 +79,44 @@
         </property>
        </widget>
       </item>
-      <item row="5" column="2">
+      <item row="7" column="1">
+       <widget class="QPushButton" name="pushButtonVariables">
+        <property name="text">
+         <string>Variables</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="KLineEdit" name="subject">
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="urlDropsEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="trapEnterKeyEvent" stdset="0">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>To:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1" colspan="2">
+       <widget class="KPIMTextEdit::PlainTextEditorWidget" name="snippetText">
+        <property name="font">
+         <font>
+          <family>Courier</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
        <spacer name="horizontalSpacer">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -85,13 +129,30 @@
         </property>
        </spacer>
       </item>
-      <item row="4" column="1" colspan="2">
-       <widget class="KPIMTextEdit::PlainTextEditorWidget" name="snippetText">
-        <property name="font">
-         <font>
-          <family>Courier</family>
-          <pointsize>11</pointsize>
-         </font>
+      <item row="10" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Keyword:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Cc:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="keyWidgetLabel">
+        <property name="text">
+         <string>Sho&amp;rtcut:</string>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+        <property name="buddy">
+         <cstring>keyWidget</cstring>
         </property>
        </widget>
       </item>
@@ -105,7 +166,7 @@
         </property>
        </widget>
       </item>
-      <item row="4" column="0">
+      <item row="6" column="0">
        <widget class="QLabel" name="textLabel">
         <property name="text">
          <string>&amp;Snippet:</string>
@@ -121,49 +182,30 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="1" colspan="2">
-       <widget class="KComboBox" name="groupBox"/>
-      </item>
-      <item row="9" column="1" colspan="2">
-       <widget class="KKeySequenceWidget" name="keyWidget">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-       </widget>
-      </item>
-      <item row="8" column="0">
-       <widget class="QLabel" name="label">
-        <property name="text">
-         <string>Keyword:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="1">
-       <widget class="QPushButton" name="pushButtonVariables">
-        <property name="text">
-         <string>Variables</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="label_2">
-        <property name="text">
-         <string>Subject:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1" colspan="2">
-       <widget class="KLineEdit" name="subject">
+      <item row="3" column="1" colspan="2">
+       <widget class="QLineEdit" name="to">
         <property name="clearButtonEnabled">
          <bool>true</bool>
         </property>
-        <property name="urlDropsEnabled">
-         <bool>false</bool>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Bcc:</string>
         </property>
-        <property name="trapEnterKeyEvent" stdset="0">
+       </widget>
+      </item>
+      <item row="5" column="1" colspan="2">
+       <widget class="QLineEdit" name="bcc">
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" colspan="2">
+       <widget class="QLineEdit" name="cc">
+        <property name="clearButtonEnabled">
          <bool>true</bool>
         </property>
        </widget>

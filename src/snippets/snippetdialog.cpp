@@ -136,6 +136,36 @@ QString SnippetDialog::keyword() const
     return mSnippetWidget->keyword();
 }
 
+void SnippetDialog::setTo(const QString &keyword)
+{
+    mSnippetWidget->setTo(keyword);
+}
+
+QString SnippetDialog::to() const
+{
+    return mSnippetWidget->to();
+}
+
+void SnippetDialog::setCc(const QString &keyword)
+{
+    mSnippetWidget->setCc(keyword);
+}
+
+QString SnippetDialog::cc() const
+{
+    return mSnippetWidget->cc();
+}
+
+void SnippetDialog::setBcc(const QString &keyword)
+{
+    mSnippetWidget->setBcc(keyword);
+}
+
+QString SnippetDialog::bcc() const
+{
+    return mSnippetWidget->bcc();
+}
+
 void SnippetDialog::setGroupModel(QAbstractItemModel *model)
 {
     mSnippetWidget->setGroupModel(model);

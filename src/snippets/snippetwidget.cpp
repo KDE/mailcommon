@@ -128,6 +128,36 @@ QString SnippetWidget::keyword() const
     return d->mUi.keyword->text();
 }
 
+void SnippetWidget::setTo(const QString &keyword)
+{
+    d->mUi.to->setText(keyword);
+}
+
+QString SnippetWidget::to() const
+{
+    return d->mUi.to->text();
+}
+
+void SnippetWidget::setCc(const QString &keyword)
+{
+    d->mUi.cc->setText(keyword);
+}
+
+QString SnippetWidget::cc() const
+{
+    return d->mUi.cc->text();
+}
+
+void SnippetWidget::setBcc(const QString &keyword)
+{
+    d->mUi.bcc->setText(keyword);
+}
+
+QString SnippetWidget::bcc() const
+{
+    return d->mUi.bcc->text();
+}
+
 void SnippetWidget::setGroupModel(QAbstractItemModel *model)
 {
     d->mUi.groupBox->setModel(model);

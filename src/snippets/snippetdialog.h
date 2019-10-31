@@ -47,6 +47,15 @@ public:
     void setKeyword(const QString &keyword);
     Q_REQUIRED_RESULT QString keyword() const;
 
+    void setTo(const QString &keyword);
+    Q_REQUIRED_RESULT QString to() const;
+
+    void setCc(const QString &keyword);
+    Q_REQUIRED_RESULT QString cc() const;
+
+    void setBcc(const QString &keyword);
+    Q_REQUIRED_RESULT QString bcc() const;
+
     void setGroupModel(QAbstractItemModel *model);
 
     void setGroupIndex(const QModelIndex &index);
