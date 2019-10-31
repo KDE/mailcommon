@@ -57,7 +57,6 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
     if (!mInGroupMode) {
         readConfig();
     }
-
 }
 
 SnippetDialog::~SnippetDialog()

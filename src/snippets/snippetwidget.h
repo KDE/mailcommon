@@ -33,16 +33,22 @@ class MAILCOMMON_EXPORT SnippetWidget : public QWidget
 public:
     explicit SnippetWidget(QWidget *parent = nullptr);
     ~SnippetWidget();
+
     void setName(const QString &name);
     Q_REQUIRED_RESULT QString name() const;
+
     void setText(const QString &text);
     Q_REQUIRED_RESULT QString text() const;
+
     void setKeySequence(const QKeySequence &sequence);
     Q_REQUIRED_RESULT QKeySequence keySequence() const;
+
     void setKeyword(const QString &keyword);
     Q_REQUIRED_RESULT QString keyword() const;
+
     void setGroupModel(QAbstractItemModel *model);
     void setGroupIndex(const QModelIndex &index);
+
     Q_REQUIRED_RESULT QModelIndex groupIndex() const;
     Q_REQUIRED_RESULT bool snippetIsValid() const;
 
