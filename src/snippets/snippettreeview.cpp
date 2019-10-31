@@ -3,7 +3,7 @@
  *                                                                         *
  *   Copyright (C) 2007 by Robert Gruber                                   *
  *   rgruber@users.sourceforge.net                                         *
- *                                                                         *
+ *   Copyright (c) 2019 Montel Laurent <montel@kde.org>                    *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
  *   the Free Software Foundation; either version 2 of the License, or     *
