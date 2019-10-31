@@ -489,10 +489,6 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
 
         SnippetItem *item = static_cast<SnippetItem *>(parent.internalPointer());
 
-        if (!item->isGroup()) {
-            return false;
-        }
-
         QByteArray encodedData = data->data(QStringLiteral("text/x-kmail-textsnippet"));
         QDataStream stream(&encodedData, QIODevice::ReadOnly);
 
@@ -506,25 +502,35 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
         QString cc;
         QString bcc;
         stream >> id >> name >> text >> keySequence >> keyword >> subject >> to >> cc >> bcc;
-
         if (parent.internalId() == id) {
             return false;
         }
+        if (item->isGroup()) {
+            insertRow(rowCount(parent), parent);
 
-        insertRow(rowCount(parent), parent);
+            const QModelIndex idx = index(rowCount(parent) - 1, 0, parent);
 
-        const QModelIndex idx = index(rowCount(parent) - 1, 0, parent);
-
-        setData(idx, name, SnippetsModel::NameRole);
-        setData(idx, text, SnippetsModel::TextRole);
-        setData(idx, keySequence, SnippetsModel::KeySequenceRole);
-        setData(idx, keyword, SnippetsModel::KeywordRole);
-        setData(idx, subject, SnippetsModel::SubjectRole);
-        setData(idx, to, SnippetsModel::ToRole);
-        setData(idx, cc, SnippetsModel::CcRole);
-        setData(idx, bcc, SnippetsModel::BccRole);
-        Q_EMIT dndDone();
-        return true;
+            setData(idx, name, SnippetsModel::NameRole);
+            setData(idx, text, SnippetsModel::TextRole);
+            setData(idx, keySequence, SnippetsModel::KeySequenceRole);
+            setData(idx, keyword, SnippetsModel::KeywordRole);
+            setData(idx, subject, SnippetsModel::SubjectRole);
+            setData(idx, to, SnippetsModel::ToRole);
+            setData(idx, cc, SnippetsModel::CcRole);
+            setData(idx, bcc, SnippetsModel::BccRole);
+            Q_EMIT dndDone();
+            return true;
+        } else {
+            if (KMessageBox::Yes == KMessageBox::questionYesNo(nullptr, i18n("Do you want to update snippet?"), i18n("Update snippet"))) {
+                item->setText(text);
+                item->setSubject(subject);
+                item->setTo(to);
+                item->setCc(cc);
+                item->setBcc(bcc);
+                return true;
+            }
+            return false;
+        }
     } else if (data->hasFormat(QStringLiteral("text/plain"))) {
         if (column > 1) {
             return false;
