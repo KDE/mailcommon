@@ -27,6 +27,7 @@
 #include <QMimeData>
 #include <QDataStream>
 #include <QStringList>
+#include <QDebug>
 #include <KSharedConfig>
 #include <KConfigGroup>
 
@@ -477,31 +478,8 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
         return true;
     }
 
-    if (data->hasFormat(QStringLiteral("text/plain"))) {
-        if (column > 1) {
-            return false;
-        }
-        const QString encodedData = QString::fromUtf8(data->data(QStringLiteral("text/plain")));
+    if (data->hasFormat(QStringLiteral("text/x-kmail-textsnippet"))) {
         if (!parent.isValid()) {
-            Q_EMIT addNewDndSnippset(encodedData);
-            return false;
-        }
-        SnippetItem *item = static_cast<SnippetItem *>(parent.internalPointer());
-
-        if (item->isGroup()) {
-            Q_EMIT addNewDndSnippset(encodedData);
-        } else {
-            if (KMessageBox::Yes == KMessageBox::questionYesNo(nullptr, i18n("Do you want to update snippet?"), i18n("Update snippet"))) {
-                item->setText(encodedData);
-            }
-        }
-        return false;
-    } else {
-        if (!parent.isValid()) {
-            return false;
-        }
-
-        if (!data->hasFormat(QStringLiteral("text/x-kmail-textsnippet"))) {
             return false;
         }
 
@@ -547,7 +525,27 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
         setData(idx, bcc, SnippetsModel::BccRole);
         Q_EMIT dndDone();
         return true;
+    } else if (data->hasFormat(QStringLiteral("text/plain"))) {
+        if (column > 1) {
+            return false;
+        }
+        const QString encodedData = QString::fromUtf8(data->data(QStringLiteral("text/plain")));
+        if (!parent.isValid()) {
+            Q_EMIT addNewDndSnippset(encodedData);
+            return false;
+        }
+        SnippetItem *item = static_cast<SnippetItem *>(parent.internalPointer());
+
+        if (item->isGroup()) {
+            Q_EMIT addNewDndSnippset(encodedData);
+        } else {
+            if (KMessageBox::Yes == KMessageBox::questionYesNo(nullptr, i18n("Do you want to update snippet?"), i18n("Update snippet"))) {
+                item->setText(encodedData);
+            }
+        }
+        return false;
     }
+    return false;
 }
 
 Qt::DropActions SnippetsModel::supportedDropActions() const
