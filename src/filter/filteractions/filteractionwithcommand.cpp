@@ -144,7 +144,7 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Messa
 namespace {
 /**
  * Substitutes placeholders in the command line with the
- * content of the correspoding header in the message.
+ * content of the corresponding header in the message.
  * %{From} -> Joe Author <joe@acme.com>
  */
 void substituteMessageHeaders(const KMime::Message::Ptr &aMsg, QString &result)

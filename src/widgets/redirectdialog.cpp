@@ -157,7 +157,7 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
     // Combo boxes look better when they are the same size as other full width fields.
     formLayout->setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);
     // This is set to zero to avoid double margins between the
-    // three address fields, due to their addresss selection buttons.
+    // three address fields, due to their address selection buttons.
     formLayout->setVerticalSpacing(0);
     mainLayout->addLayout(formLayout);
 

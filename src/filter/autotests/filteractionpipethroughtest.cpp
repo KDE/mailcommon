@@ -35,7 +35,7 @@ void FilterActionPipeThroughTest::setOutput(FilterAction *filter, const QByteArr
 
 void FilterActionPipeThroughTest::testWithNoCommand()
 {
-    /* No command to exceute -> no output -> error
+    /* No command to execute -> no output -> error
      */
 
     FilterActionPipeThrough filter(this);

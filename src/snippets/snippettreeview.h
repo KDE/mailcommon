@@ -12,8 +12,8 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef MAILCOMMON_SNIPPETVIEW_H
-#define MAILCOMMON_SNIPPETVIEW_H
+#ifndef MAILCOMMON_SNIPPETTREEVIEW_H
+#define MAILCOMMON_SNIPPETTREEVIEW_H
 
 #include <QTreeView>
 #include "mailcommon_export.h"
