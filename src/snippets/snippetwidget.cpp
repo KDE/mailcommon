@@ -24,7 +24,7 @@
 #include <KPIMTextEdit/PlainTextEditor>
 
 #include <KActionCollection>
-#include <KComboBox>
+#include <QComboBox>
 #include <KLineEdit>
 #include <QAbstractListModel>
 #include <QVBoxLayout>
@@ -68,7 +68,7 @@ SnippetWidget::SnippetWidget(QWidget *parent)
         d->wasChanged = true;
     });
 
-    connect(d->mUi.groupBox, QOverload<int>::of(&KComboBox::currentIndexChanged), this, [this](int index) {
+    connect(d->mUi.groupBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, [this](int index) {
         Q_EMIT groupChanged(index);
         d->wasChanged = true;
     });
