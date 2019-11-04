@@ -629,8 +629,7 @@ void SnippetsModel::load(const QString &filename)
     }
 }
 
-void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword,
-                                  const QString &snippetSubject, const QString &to, const QString &cc, const QString &bcc)
+void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword, const QString &snippetSubject, const QString &to, const QString &cc, const QString &bcc)
 {
     insertRow(rowCount(groupIndex), groupIndex);
     const QModelIndex modelIndex = index(rowCount(groupIndex) - 1, 0, groupIndex);

@@ -32,17 +32,16 @@ class QAbstractItemModel;
 class QAction;
 class QItemSelectionModel;
 namespace MailCommon {
-
 struct MAILCOMMON_EXPORT SnippetInfo {
     SnippetInfo(const QString &_subject, const QString &_text, const QString &_to, const QString &_cc, const QString &_bcc)
-        : subject(_subject),
-          text(_text),
-          to(_to),
-          cc(_cc),
-          bcc(_bcc)
+        : subject(_subject)
+        , text(_text)
+        , to(_to)
+        , cc(_cc)
+        , bcc(_bcc)
     {
-
     }
+
     QString subject;
     QString text;
     QString to;

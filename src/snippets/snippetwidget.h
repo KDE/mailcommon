@@ -55,8 +55,6 @@ public:
     void setBcc(const QString &keyword);
     Q_REQUIRED_RESULT QString bcc() const;
 
-
-
     void setGroupModel(QAbstractItemModel *model);
     void setGroupIndex(const QModelIndex &index);
 
