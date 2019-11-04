@@ -220,6 +220,9 @@ void SnippetWidget::clear()
     d->mUi.snippetText->clear();
     d->mUi.keyWidget->setKeySequence({});
     d->mUi.subject->clear();
+    d->mUi.cc->clear();
+    d->mUi.to->clear();
+    d->mUi.bcc->clear();
 }
 
 bool SnippetWidget::wasChanged() const
