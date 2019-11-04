@@ -81,6 +81,18 @@ SnippetWidget::SnippetWidget(QWidget *parent)
     connect(d->mUi.keyWidget, &KKeySequenceWidget::keySequenceChanged, this, [this]() {
         d->wasChanged = true;
     });
+    connect(d->mUi.cc, &QLineEdit::textChanged, this, [this]() {
+        d->wasChanged = true;
+    });
+    connect(d->mUi.to, &QLineEdit::textChanged, this, [this]() {
+        d->wasChanged = true;
+    });
+    connect(d->mUi.bcc, &QLineEdit::textChanged, this, [this]() {
+        d->wasChanged = true;
+    });
+    connect(d->mUi.subject, &QLineEdit::textChanged, this, [this]() {
+        d->wasChanged = true;
+    });
 }
 
 SnippetWidget::~SnippetWidget()
