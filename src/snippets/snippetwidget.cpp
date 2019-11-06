@@ -240,6 +240,16 @@ QString SnippetWidget::subject() const
     return d->mUi.subject->text();
 }
 
+void SnippetWidget::setAttachment(const QString &keyword)
+{
+    d->mUi.attachment->setText(keyword);
+}
+
+QString SnippetWidget::attachment() const
+{
+    return d->mUi.attachment->text();
+}
+
 void SnippetWidget::setSubject(const QString &text)
 {
     d->mUi.subject->setText(text);

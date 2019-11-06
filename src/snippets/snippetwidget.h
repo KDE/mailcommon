@@ -74,6 +74,9 @@ public:
     void setSubject(const QString &text);
     Q_REQUIRED_RESULT QString subject() const;
 
+    void setAttachment(const QString &keyword);
+    Q_REQUIRED_RESULT QString attachment() const;
+
 Q_SIGNALS:
     void textChanged(const QString &str);
     void groupChanged(int index);

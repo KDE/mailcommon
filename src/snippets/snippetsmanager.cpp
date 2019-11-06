@@ -177,6 +177,7 @@ void SnippetsManager::Private::createSnippet(const QString &text)
         mModel->setData(index, dlg->to(), SnippetsModel::ToRole);
         mModel->setData(index, dlg->cc(), SnippetsModel::CcRole);
         mModel->setData(index, dlg->bcc(), SnippetsModel::BccRole);
+        mModel->setData(index, dlg->attachment(), SnippetsModel::AttachmentRole);
 
         Q_EMIT mModel->updateActionCollection(QString(), dlg->name(), dlg->keySequence(), dlg->text(), dlg->subject(), dlg->to(), dlg->cc(), dlg->bcc());
         mDirty = true;
@@ -217,6 +218,7 @@ void SnippetsManager::Private::editSnippet()
     dlg->setTo(index.data(SnippetsModel::ToRole).toString());
     dlg->setCc(index.data(SnippetsModel::CcRole).toString());
     dlg->setBcc(index.data(SnippetsModel::BccRole).toString());
+    dlg->setAttachment(index.data(SnippetsModel::AttachmentRole).toString());
     dlg->setKeySequence(
         QKeySequence::fromString(
             index.data(SnippetsModel::KeySequenceRole).toString()));
@@ -239,6 +241,7 @@ void SnippetsManager::Private::editSnippet()
         mModel->setData(index, dlg->to(), SnippetsModel::ToRole);
         mModel->setData(index, dlg->cc(), SnippetsModel::CcRole);
         mModel->setData(index, dlg->bcc(), SnippetsModel::BccRole);
+        mModel->setData(index, dlg->attachment(), SnippetsModel::AttachmentRole);
 
         Q_EMIT mModel->updateActionCollection(oldSnippetName, dlg->name(), dlg->keySequence(), dlg->text(), dlg->subject(), dlg->to(), dlg->cc(), dlg->bcc());
         mDirty = true;
@@ -366,6 +369,8 @@ void SnippetsManager::Private::insertSelectedSnippet()
     const QString to = index.data(SnippetsModel::ToRole).toString();
     const QString cc = index.data(SnippetsModel::CcRole).toString();
     const QString bcc = index.data(SnippetsModel::BccRole).toString();
+    const QString attachment = index.data(SnippetsModel::AttachmentRole).toString();
+    //TODO attachment
 
     Q_EMIT q->insertSnippetInfo({subject, text, to, cc, bcc});
 }

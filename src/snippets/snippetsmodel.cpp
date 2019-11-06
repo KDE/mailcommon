@@ -72,6 +72,9 @@ public:
     Q_REQUIRED_RESULT QString bcc() const;
     void setBcc(const QString &bcc);
 
+    Q_REQUIRED_RESULT QString attachment() const;
+    void setAttachment(const QString &attachment);
+
 private:
     QVector<SnippetItem *> mChildItems;
     SnippetItem *mParentItem = nullptr;
@@ -85,6 +88,7 @@ private:
     QString mTo;
     QString mCc;
     QString mBcc;
+    QString mAttachment;
 };
 
 SnippetItem::SnippetItem(bool isGroup, SnippetItem *parent)
@@ -210,6 +214,16 @@ void SnippetItem::setBcc(const QString &bcc)
     mBcc = bcc;
 }
 
+QString SnippetItem::attachment() const
+{
+    return mAttachment;
+}
+
+void SnippetItem::setAttachment(const QString &attachment)
+{
+    mAttachment = attachment;
+}
+
 int SnippetItem::row() const
 {
     if (mParentItem) {
@@ -284,6 +298,10 @@ bool SnippetsModel::setData(const QModelIndex &index, const QVariant &value, int
         item->setBcc(value.toString());
         Q_EMIT dataChanged(index, index);
         return true;
+    case AttachmentRole:
+        item->setAttachment(value.toString());
+        Q_EMIT dataChanged(index, index);
+        return true;
     }
 
     return false;
@@ -318,6 +336,8 @@ QVariant SnippetsModel::data(const QModelIndex &index, int role) const
         return item->cc();
     case BccRole:
         return item->bcc();
+    case AttachmentRole:
+        return item->attachment();
     }
 
     return QVariant();
@@ -501,7 +521,8 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
         QString to;
         QString cc;
         QString bcc;
-        stream >> id >> name >> text >> keySequence >> keyword >> subject >> to >> cc >> bcc;
+        QString attachment;
+        stream >> id >> name >> text >> keySequence >> keyword >> subject >> to >> cc >> bcc >> attachment;
         if (parent.internalId() == id) {
             return false;
         }
@@ -518,6 +539,7 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
             setData(idx, to, SnippetsModel::ToRole);
             setData(idx, cc, SnippetsModel::CcRole);
             setData(idx, bcc, SnippetsModel::BccRole);
+            setData(idx, attachment, SnippetsModel::AttachmentRole);
             Q_EMIT dndDone();
             return true;
         } else {
@@ -611,6 +633,10 @@ void SnippetsModel::load(const QString &filename)
             const QString bcc
                 = group.readEntry(QStringLiteral("snippetBcc_%1").arg(j), QString());
 
+            const QString attachment
+                = group.readEntry(QStringLiteral("snippetAttachment_%1").arg(j), QString());
+            //TODO
+
             createSnippet(groupIndex, snippetName, snippetText, snippetKeySequence, snippetKeyword, snippetSubject, to, cc, bcc);
         }
     }
@@ -643,6 +669,7 @@ void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &
     setData(modelIndex, to, SnippetsModel::ToRole);
     setData(modelIndex, cc, SnippetsModel::CcRole);
     setData(modelIndex, bcc, SnippetsModel::BccRole);
+    //TODO setData(modelIndex, attachment, SnippetsModel::AttachmentRole);
 
     Q_EMIT updateActionCollection(QString(),
                                   snippetName,
@@ -680,6 +707,7 @@ QVector<SnippetsInfo> SnippetsModel::snippetsInfo() const
                 const QString snippetTo = modelIndex.data(SnippetsModel::ToRole).toString();
                 const QString snippetCc = modelIndex.data(SnippetsModel::CcRole).toString();
                 const QString snippetBcc = modelIndex.data(SnippetsModel::BccRole).toString();
+                const QString snippetAttachment = modelIndex.data(SnippetsModel::AttachmentRole).toString();
                 info.text = snippetText;
                 info.newName = snippetName;
                 info.keyword = snippetKeyword;
@@ -688,6 +716,7 @@ QVector<SnippetsInfo> SnippetsModel::snippetsInfo() const
                 info.to = snippetTo;
                 info.cc = snippetCc;
                 info.bcc = snippetBcc;
+                info.attachment = snippetAttachment;
                 infos.append(info);
             }
         }
@@ -737,6 +766,7 @@ void SnippetsModel::save(const QString &filename)
                 const QString snippetTo = modelIndex.data(SnippetsModel::ToRole).toString();
                 const QString snippetCc = modelIndex.data(SnippetsModel::CcRole).toString();
                 const QString snippetBcc = modelIndex.data(SnippetsModel::BccRole).toString();
+                const QString snippetAttachment = modelIndex.data(SnippetsModel::AttachmentRole).toString();
 
                 group.writeEntry(QStringLiteral("snippetName_%1").arg(j), snippetName);
                 if (!snippetText.isEmpty()) {
@@ -765,6 +795,10 @@ void SnippetsModel::save(const QString &filename)
                 if (!snippetBcc.isEmpty()) {
                     group.writeEntry(QStringLiteral("snippetBcc_%1").arg(j),
                                      snippetBcc);
+                }
+                if (!snippetAttachment.isEmpty()) {
+                    group.writeEntry(QStringLiteral("snippetAttachment_%1").arg(j),
+                                     snippetAttachment);
                 }
             }
         }

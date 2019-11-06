@@ -166,6 +166,16 @@ QString SnippetDialog::bcc() const
     return mSnippetWidget->bcc();
 }
 
+void SnippetDialog::setAttachment(const QString &keyword)
+{
+    mSnippetWidget->setAttachment(keyword);
+}
+
+QString SnippetDialog::attachment() const
+{
+    return mSnippetWidget->attachment();
+}
+
 void SnippetDialog::setGroupModel(QAbstractItemModel *model)
 {
     mSnippetWidget->setGroupModel(model);

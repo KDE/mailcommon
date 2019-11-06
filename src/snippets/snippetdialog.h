@@ -61,6 +61,8 @@ public:
     void setGroupIndex(const QModelIndex &index);
     Q_REQUIRED_RESULT QModelIndex groupIndex() const;
 
+    void setAttachment(const QString &keyword);
+    Q_REQUIRED_RESULT QString attachment() const;
 private Q_SLOTS:
     void slotTextChanged();
     void slotGroupChanged();

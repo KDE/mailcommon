@@ -38,6 +38,7 @@ struct MAILCOMMON_EXPORT SnippetsInfo
     QString to;
     QString cc;
     QString bcc;
+    QString attachment;
 };
 
 class MAILCOMMON_EXPORT SnippetsModel : public QAbstractItemModel
@@ -54,7 +55,7 @@ public:
         ToRole,                         ///< The To of a snippet
         CcRole,                         ///< The Cc of a snippet
         BccRole,                        ///< The Cc of a snippet
-        Attachment,                     ///< The Attachment of a snippet
+        AttachmentRole,                 ///< The Attachment of a snippet
     };
 
     static SnippetsModel *instance();

@@ -11,7 +11,16 @@
    </rect>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
-   <property name="margin">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
     <number>0</number>
    </property>
    <item>
@@ -37,52 +46,12 @@
    <item>
     <widget class="QWidget" name="groupWidget" native="true">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="2" column="0">
-       <widget class="QLabel" name="label_2">
-        <property name="text">
-         <string>Subject:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="11" column="1" colspan="2">
-       <widget class="KKeySequenceWidget" name="keyWidget" native="true">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1" colspan="2">
-       <widget class="QComboBox" name="groupBox"/>
-      </item>
-      <item row="10" column="1" colspan="2">
-       <widget class="KLineEdit" name="keyword">
-        <property name="urlDropsEnabled" stdset="0">
-         <bool>false</bool>
-        </property>
-        <property name="trapEnterKeyEvent" stdset="0">
-         <bool>true</bool>
-        </property>
-        <property name="showClearButton" stdset="0">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="7" column="1">
-       <widget class="QPushButton" name="pushButtonVariables">
-        <property name="text">
-         <string>Variables</string>
-        </property>
-       </widget>
-      </item>
       <item row="2" column="1" colspan="2">
        <widget class="KLineEdit" name="subject">
-        <property name="clearButtonEnabled" stdset="0">
+        <property name="clearButtonEnabled">
          <bool>true</bool>
         </property>
-        <property name="urlDropsEnabled" stdset="0">
+        <property name="urlDropsEnabled">
          <bool>false</bool>
         </property>
         <property name="trapEnterKeyEvent" stdset="0">
@@ -90,24 +59,14 @@
         </property>
        </widget>
       </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_3">
+      <item row="11" column="0">
+       <widget class="QLabel" name="label">
         <property name="text">
-         <string>To:</string>
+         <string>Keyword:</string>
         </property>
        </widget>
       </item>
-      <item row="6" column="1" colspan="2">
-       <widget class="KPIMTextEdit::PlainTextEditorWidget" name="snippetText" native="true">
-        <property name="font">
-         <font>
-          <family>Courier</family>
-          <pointsize>11</pointsize>
-         </font>
-        </property>
-       </widget>
-      </item>
-      <item row="7" column="2">
+      <item row="8" column="2">
        <spacer name="horizontalSpacer">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -120,21 +79,14 @@
         </property>
        </spacer>
       </item>
-      <item row="10" column="0">
-       <widget class="QLabel" name="label">
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_3">
         <property name="text">
-         <string>Keyword:</string>
+         <string>To:</string>
         </property>
        </widget>
       </item>
-      <item row="4" column="0">
-       <widget class="QLabel" name="label_4">
-        <property name="text">
-         <string>Cc:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="11" column="0">
+      <item row="12" column="0">
        <widget class="QLabel" name="keyWidgetLabel">
         <property name="text">
          <string>Sho&amp;rtcut:</string>
@@ -147,13 +99,40 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="textLabelGroup">
-        <property name="text">
-         <string comment="Group to which the snippet belongs.">Group:</string>
+      <item row="12" column="1" colspan="2">
+       <widget class="KKeySequenceWidget" name="keyWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
         </property>
-        <property name="wordWrap">
-         <bool>false</bool>
+       </widget>
+      </item>
+      <item row="6" column="1" colspan="2">
+       <widget class="KPIMTextEdit::PlainTextEditorWidget" name="snippetText">
+        <property name="font">
+         <font>
+          <family>Courier</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" colspan="2">
+       <widget class="QLineEdit" name="cc">
+        <property name="placeholderText">
+         <string>Separate email with a comma</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Bcc:</string>
         </property>
        </widget>
       </item>
@@ -178,15 +157,35 @@
         <property name="placeholderText">
          <string>Separate email with a comma</string>
         </property>
-        <property name="clearButtonEnabled" stdset="0">
+        <property name="clearButtonEnabled">
          <bool>true</bool>
         </property>
        </widget>
       </item>
-      <item row="5" column="0">
-       <widget class="QLabel" name="label_5">
+      <item row="11" column="1" colspan="2">
+       <widget class="KLineEdit" name="keyword">
+        <property name="urlDropsEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="trapEnterKeyEvent" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="showClearButton" stdset="0">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QPushButton" name="pushButtonVariables">
         <property name="text">
-         <string>Bcc:</string>
+         <string>Variables</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Subject:</string>
         </property>
        </widget>
       </item>
@@ -195,20 +194,40 @@
         <property name="placeholderText">
          <string>Separate email with a comma</string>
         </property>
-        <property name="clearButtonEnabled" stdset="0">
+        <property name="clearButtonEnabled">
          <bool>true</bool>
         </property>
        </widget>
       </item>
-      <item row="4" column="1" colspan="2">
-       <widget class="QLineEdit" name="cc">
-        <property name="placeholderText">
-         <string>Separate email with a comma</string>
+      <item row="1" column="0">
+       <widget class="QLabel" name="textLabelGroup">
+        <property name="text">
+         <string comment="Group to which the snippet belongs.">Group:</string>
         </property>
-        <property name="clearButtonEnabled" stdset="0">
-         <bool>true</bool>
+        <property name="wordWrap">
+         <bool>false</bool>
         </property>
        </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Cc:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QComboBox" name="groupBox"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Attachment:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1" colspan="2">
+       <widget class="QLineEdit" name="attachment"/>
       </item>
      </layout>
     </widget>
