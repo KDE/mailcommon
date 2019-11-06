@@ -21,6 +21,7 @@
 #include "snippetselectattachmentwidget.h"
 #include <PimCommon/SimpleStringListEditor>
 #include <QVBoxLayout>
+#include <QFileDialog>
 
 using namespace MailCommon;
 SnippetSelectAttachmentWidget::SnippetSelectAttachmentWidget(QWidget *parent)
@@ -30,7 +31,7 @@ SnippetSelectAttachmentWidget::SnippetSelectAttachmentWidget(QWidget *parent)
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
     mainLayout->setContentsMargins(0, 0, 0, 0);
 
-    mEditor = new PimCommon::SimpleStringListEditor(this);
+    mEditor = new SnippetSelectorWidget(this);
     mEditor->setObjectName(QStringLiteral("editor"));
     mainLayout->addWidget(mEditor);
 }
@@ -48,4 +49,23 @@ void SnippetSelectAttachmentWidget::setAttachments(const QStringList &lst)
 QStringList SnippetSelectAttachmentWidget::attachments() const
 {
     return mEditor->stringList();
+}
+
+SnippetSelectorWidget::SnippetSelectorWidget(QWidget *parent)
+    : PimCommon::SimpleStringListEditor(parent, static_cast<PimCommon::SimpleStringListEditor::ButtonCode>(PimCommon::SimpleStringListEditor::Add | PimCommon::SimpleStringListEditor::Remove) )
+{
+}
+
+SnippetSelectorWidget::~SnippetSelectorWidget()
+{
+
+}
+
+
+void SnippetSelectorWidget::addNewEntry()
+{
+    const QStringList lst = QFileDialog::getOpenFileNames(this);
+    if (!lst.isEmpty()) {
+        appendStringList(lst);
+    }
 }

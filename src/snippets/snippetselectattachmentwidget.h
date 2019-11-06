@@ -22,12 +22,24 @@
 #define SNIPPETSELECTATTACHMENTWIDGET_H
 
 #include <QWidget>
-#include "mailcommon_export.h"
+#include "mailcommon_private_export.h"
+#include <PimCommon/SimpleStringListEditor>
 namespace PimCommon {
 class SimpleStringListEditor;
 }
 namespace MailCommon {
-class MAILCOMMON_EXPORT SnippetSelectAttachmentWidget : public QWidget
+
+class MAILCOMMON_TESTS_EXPORT SnippetSelectorWidget: public PimCommon::SimpleStringListEditor
+{
+    Q_OBJECT
+public:
+    explicit SnippetSelectorWidget(QWidget *parent = nullptr);
+    ~SnippetSelectorWidget();
+
+    void addNewEntry() override;
+};
+
+class MAILCOMMON_TESTS_EXPORT SnippetSelectAttachmentWidget : public QWidget
 {
     Q_OBJECT
 public:
@@ -37,7 +49,7 @@ public:
     void setAttachments(const QStringList &lst);
     Q_REQUIRED_RESULT QStringList attachments() const;
 private:
-    PimCommon::SimpleStringListEditor *mEditor = nullptr;
+    SnippetSelectorWidget *mEditor = nullptr;
 };
 }
 
