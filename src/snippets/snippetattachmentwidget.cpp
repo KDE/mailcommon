@@ -23,7 +23,7 @@
 #include <QHBoxLayout>
 #include <QLineEdit>
 #include <KLocalizedString>
-#include <QPushButton>
+#include <QToolButton>
 #include <QPointer>
 
 using namespace MailCommon;
@@ -40,15 +40,15 @@ SnippetAttachmentWidget::SnippetAttachmentWidget(QWidget *parent)
     layout->addWidget(mLineEdit);
     mLineEdit->setReadOnly(true);
 
-    QPushButton *button = new QPushButton(i18n("..."), this);
+    QToolButton *button = new QToolButton(this);
+    button->setText(i18n("..."));
     button->setObjectName(QStringLiteral("button"));
     layout->addWidget(button);
-    connect(button, &QPushButton::clicked, this, &SnippetAttachmentWidget::slotSelectAttachment);
+    connect(button, &QToolButton::clicked, this, &SnippetAttachmentWidget::slotSelectAttachment);
 }
 
 SnippetAttachmentWidget::~SnippetAttachmentWidget()
 {
-
 }
 
 void SnippetAttachmentWidget::setText(const QString &str)
@@ -69,8 +69,10 @@ void SnippetAttachmentWidget::clear()
 void SnippetAttachmentWidget::slotSelectAttachment()
 {
     QPointer<MailCommon::SnippetSelectAttachmentDialog> dlg = new MailCommon::SnippetSelectAttachmentDialog(this);
+    dlg->setAttachments(mLineEdit->text().split(QLatin1Char(',')));
     if (dlg->exec()) {
-        //TODO
+        mLineEdit->setText(dlg->attachments().join(QLatin1Char(',')));
+        Q_EMIT wasChanged();
     }
     delete dlg;
 }

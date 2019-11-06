@@ -28,8 +28,7 @@ namespace PimCommon {
 class SimpleStringListEditor;
 }
 namespace MailCommon {
-
-class MAILCOMMON_TESTS_EXPORT SnippetSelectorWidget: public PimCommon::SimpleStringListEditor
+class MAILCOMMON_TESTS_EXPORT SnippetSelectorWidget : public PimCommon::SimpleStringListEditor
 {
     Q_OBJECT
 public:

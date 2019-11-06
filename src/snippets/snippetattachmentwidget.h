@@ -18,7 +18,6 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #ifndef SNIPPETATTACHMENTWIDGET_H
 #define SNIPPETATTACHMENTWIDGET_H
 
@@ -37,6 +36,10 @@ public:
     void setText(const QString &str);
     Q_REQUIRED_RESULT QString text() const;
     void clear();
+
+Q_SIGNALS:
+    void wasChanged();
+
 private:
     void slotSelectAttachment();
     QLineEdit *mLineEdit = nullptr;

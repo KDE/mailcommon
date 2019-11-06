@@ -38,7 +38,6 @@ SnippetSelectAttachmentWidget::SnippetSelectAttachmentWidget(QWidget *parent)
 
 SnippetSelectAttachmentWidget::~SnippetSelectAttachmentWidget()
 {
-
 }
 
 void SnippetSelectAttachmentWidget::setAttachments(const QStringList &lst)
@@ -52,15 +51,13 @@ QStringList SnippetSelectAttachmentWidget::attachments() const
 }
 
 SnippetSelectorWidget::SnippetSelectorWidget(QWidget *parent)
-    : PimCommon::SimpleStringListEditor(parent, static_cast<PimCommon::SimpleStringListEditor::ButtonCode>(PimCommon::SimpleStringListEditor::Add | PimCommon::SimpleStringListEditor::Remove) )
+    : PimCommon::SimpleStringListEditor(parent, static_cast<PimCommon::SimpleStringListEditor::ButtonCode>(PimCommon::SimpleStringListEditor::Add | PimCommon::SimpleStringListEditor::Remove))
 {
 }
 
 SnippetSelectorWidget::~SnippetSelectorWidget()
 {
-
 }
-
 
 void SnippetSelectorWidget::addNewEntry()
 {

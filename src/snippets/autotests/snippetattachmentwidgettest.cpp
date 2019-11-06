@@ -23,12 +23,12 @@
 #include <QHBoxLayout>
 #include <QLineEdit>
 #include <QTest>
+#include <QToolButton>
 QTEST_MAIN(SnippetAttachmentWidgetTest)
 
 SnippetAttachmentWidgetTest::SnippetAttachmentWidgetTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void SnippetAttachmentWidgetTest::shouldHaveDefaultValues()
@@ -43,4 +43,8 @@ void SnippetAttachmentWidgetTest::shouldHaveDefaultValues()
     QVERIFY(mLineEdit);
     QVERIFY(mLineEdit->text().isEmpty());
     QVERIFY(mLineEdit->isReadOnly());
+
+    QToolButton *button = w.findChild<QToolButton *>(QStringLiteral("button"));
+    QVERIFY(button);
+    QVERIFY(!button->text().isEmpty());
 }

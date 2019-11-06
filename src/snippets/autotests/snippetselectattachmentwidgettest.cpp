@@ -18,7 +18,6 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #include "snippetselectattachmentwidgettest.h"
 #include "snippets/snippetselectattachmentwidget.h"
 #include <PimCommon/SimpleStringListEditor>
@@ -28,7 +27,6 @@ QTEST_MAIN(SnippetSelectAttachmentWidgetTest)
 SnippetSelectAttachmentWidgetTest::SnippetSelectAttachmentWidgetTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void SnippetSelectAttachmentWidgetTest::shouldHaveDefaultValues()

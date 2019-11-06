@@ -26,7 +26,6 @@ QTEST_MAIN(SnippetWidgetTest)
 SnippetWidgetTest::SnippetWidgetTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void SnippetWidgetTest::shouldHaveDefaultValues()
@@ -75,5 +74,4 @@ void SnippetWidgetTest::shouldClearWidget()
     QVERIFY(!w.snippetIsValid());
     QVERIFY(!w.isGroupSelected());
     QVERIFY(w.wasChanged());
-
 }

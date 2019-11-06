@@ -93,6 +93,9 @@ SnippetWidget::SnippetWidget(QWidget *parent)
     connect(d->mUi.subject, &QLineEdit::textChanged, this, [this]() {
         d->wasChanged = true;
     });
+    connect(d->mUi.attachment, &MailCommon::SnippetAttachmentWidget::wasChanged, this, [this]() {
+        d->wasChanged = true;
+    });
 }
 
 SnippetWidget::~SnippetWidget()
