@@ -223,6 +223,7 @@ void SnippetWidget::clear()
     d->mUi.cc->clear();
     d->mUi.to->clear();
     d->mUi.bcc->clear();
+    d->mUi.attachment->clear();
 }
 
 bool SnippetWidget::wasChanged() const

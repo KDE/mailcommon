@@ -147,6 +147,9 @@ set(libmailcommon_snippets_SRCS
   snippets/snippetvariabledialog.cpp
   snippets/snippettreeview.cpp
   snippets/snippetwidget.cpp
+  snippets/snippetattachmentwidget.cpp
+  snippets/snippetselectattachmentwidget.cpp
+  snippets/snippetselectattachmentdialog.cpp
 )
 
 set(libmailcommon_tag_SRCS
