@@ -23,6 +23,9 @@
 
 #include <QWidget>
 #include "mailcommon_export.h"
+namespace PimCommon {
+class SimpleStringListEditor;
+}
 namespace MailCommon {
 class MAILCOMMON_EXPORT SnippetSelectAttachmentWidget : public QWidget
 {
@@ -33,7 +36,8 @@ public:
 
     void setAttachments(const QStringList &lst);
     Q_REQUIRED_RESULT QStringList attachments() const;
-
+private:
+    PimCommon::SimpleStringListEditor *mEditor = nullptr;
 };
 }
 

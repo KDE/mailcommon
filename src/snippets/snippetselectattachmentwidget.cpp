@@ -19,6 +19,7 @@
 */
 
 #include "snippetselectattachmentwidget.h"
+#include <PimCommon/SimpleStringListEditor>
 #include <QVBoxLayout>
 
 using namespace MailCommon;
@@ -28,6 +29,10 @@ SnippetSelectAttachmentWidget::SnippetSelectAttachmentWidget(QWidget *parent)
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
     mainLayout->setContentsMargins(0, 0, 0, 0);
+
+    mEditor = new PimCommon::SimpleStringListEditor(this);
+    mEditor->setObjectName(QStringLiteral("editor"));
+    mainLayout->addWidget(mEditor);
 }
 
 SnippetSelectAttachmentWidget::~SnippetSelectAttachmentWidget()
@@ -37,11 +42,10 @@ SnippetSelectAttachmentWidget::~SnippetSelectAttachmentWidget()
 
 void SnippetSelectAttachmentWidget::setAttachments(const QStringList &lst)
 {
-    //TODO
+    mEditor->setStringList(lst);
 }
 
 QStringList SnippetSelectAttachmentWidget::attachments() const
 {
-    //TODO
-    return {};
+    return mEditor->stringList();
 }

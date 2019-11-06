@@ -227,7 +227,7 @@
        </widget>
       </item>
       <item row="7" column="1" colspan="2">
-       <widget class="QLineEdit" name="attachment"/>
+       <widget class="MailCommon::SnippetAttachmentWidget" name="attachment"/>
       </item>
      </layout>
     </widget>
@@ -240,6 +240,11 @@
    <extends>QLineEdit</extends>
    <header>klineedit.h</header>
   </customwidget>
+  <customwidget>
+   <class>MailCommon::SnippetAttachmentWidget</class>
+   <extends>QWidget</extends>
+   <header>snippets/snippetattachmentwidget.h</header>
+  </customwidget>	  
   <customwidget>
    <class>KPIMTextEdit::PlainTextEditorWidget</class>
    <extends>QWidget</extends>

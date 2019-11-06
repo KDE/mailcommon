@@ -21,6 +21,7 @@
 
 #include "snippetselectattachmentwidgettest.h"
 #include "snippets/snippetselectattachmentwidget.h"
+#include <PimCommon/SimpleStringListEditor>
 #include <QTest>
 #include <QVBoxLayout>
 QTEST_MAIN(SnippetSelectAttachmentWidgetTest)
@@ -36,4 +37,7 @@ void SnippetSelectAttachmentWidgetTest::shouldHaveDefaultValues()
     QVBoxLayout *mainLayout = w.findChild<QVBoxLayout *>(QStringLiteral("mainLayout"));
     QVERIFY(mainLayout);
     QCOMPARE(mainLayout->contentsMargins(), QMargins(0, 0, 0, 0));
+
+    PimCommon::SimpleStringListEditor *mEditor = w.findChild<PimCommon::SimpleStringListEditor *>(QStringLiteral("editor"));
+    QVERIFY(mEditor);
 }
