@@ -635,9 +635,7 @@ void SnippetsModel::load(const QString &filename)
 
             const QString attachment
                 = group.readEntry(QStringLiteral("snippetAttachment_%1").arg(j), QString());
-            //TODO
-
-            createSnippet(groupIndex, snippetName, snippetText, snippetKeySequence, snippetKeyword, snippetSubject, to, cc, bcc);
+            createSnippet(groupIndex, snippetName, snippetText, snippetKeySequence, snippetKeyword, snippetSubject, to, cc, bcc, attachment);
         }
     }
 
@@ -655,7 +653,7 @@ void SnippetsModel::load(const QString &filename)
     }
 }
 
-void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword, const QString &snippetSubject, const QString &to, const QString &cc, const QString &bcc)
+void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword, const QString &snippetSubject, const QString &to, const QString &cc, const QString &bcc, const QString &attachment)
 {
     insertRow(rowCount(groupIndex), groupIndex);
     const QModelIndex modelIndex = index(rowCount(groupIndex) - 1, 0, groupIndex);
@@ -669,7 +667,7 @@ void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &
     setData(modelIndex, to, SnippetsModel::ToRole);
     setData(modelIndex, cc, SnippetsModel::CcRole);
     setData(modelIndex, bcc, SnippetsModel::BccRole);
-    //TODO setData(modelIndex, attachment, SnippetsModel::AttachmentRole);
+    setData(modelIndex, attachment, SnippetsModel::AttachmentRole);
 
     Q_EMIT updateActionCollection(QString(),
                                   snippetName,
@@ -678,7 +676,8 @@ void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &
                                   snippetSubject,
                                   to,
                                   cc,
-                                  bcc);
+                                  bcc,
+                                  attachment);
 }
 
 void SnippetsModel::setSavedVariables(const QMap<QString, QString> &savedVariables)

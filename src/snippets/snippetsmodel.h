@@ -101,11 +101,11 @@ protected:
 Q_SIGNALS:
     void dndDone();
     void addNewDndSnippset(const QString &);
-    void updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text, const QString &subject, const QString &to, const QString &cc, const QString &bcc);
+    void updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text, const QString &subject, const QString &to, const QString &cc, const QString &bcc, const QString &attachment);
 
 private:
     QModelIndex createGroup(const QString &groupName);
-    void createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword, const QString &snippetSubject, const QString &to, const QString &cc, const QString &bcc);
+    void createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword, const QString &snippetSubject, const QString &to, const QString &cc, const QString &bcc, const QString &attachment);
     SnippetItem *mRootItem = nullptr;
     QMap<QString, QString> mSavedVariables;
 };
