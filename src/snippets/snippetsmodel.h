@@ -54,6 +54,7 @@ public:
         ToRole,                         ///< The To of a snippet
         CcRole,                         ///< The Cc of a snippet
         BccRole,                        ///< The Cc of a snippet
+        Attachment,                     ///< The Attachment of a snippet
     };
 
     static SnippetsModel *instance();
