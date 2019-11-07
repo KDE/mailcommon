@@ -69,7 +69,7 @@ void SnippetAttachmentWidget::clear()
 void SnippetAttachmentWidget::slotSelectAttachment()
 {
     QPointer<MailCommon::SnippetSelectAttachmentDialog> dlg = new MailCommon::SnippetSelectAttachmentDialog(this);
-    dlg->setAttachments(mLineEdit->text().split(QLatin1Char(',')));
+    dlg->setAttachments(mLineEdit->text().split(QLatin1Char(','), QString::SkipEmptyParts));
     if (dlg->exec()) {
         mLineEdit->setText(dlg->attachments().join(QLatin1Char(',')));
         Q_EMIT wasChanged();
