@@ -43,8 +43,10 @@ void SnippetAttachmentWidgetTest::shouldHaveDefaultValues()
     QVERIFY(mLineEdit);
     QVERIFY(mLineEdit->text().isEmpty());
     QVERIFY(mLineEdit->isReadOnly());
+    QVERIFY(!mLineEdit->placeholderText().isEmpty());
 
     QToolButton *button = w.findChild<QToolButton *>(QStringLiteral("button"));
     QVERIFY(button);
     QVERIFY(!button->text().isEmpty());
+    QVERIFY(!button->toolTip().isEmpty());
 }

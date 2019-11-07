@@ -37,12 +37,14 @@ SnippetAttachmentWidget::SnippetAttachmentWidget(QWidget *parent)
 
     mLineEdit = new QLineEdit(this);
     mLineEdit->setObjectName(QStringLiteral("lineedit"));
+    mLineEdit->setPlaceholderText(i18n("Click on button for selecting attachment file"));
     layout->addWidget(mLineEdit);
     mLineEdit->setReadOnly(true);
 
     QToolButton *button = new QToolButton(this);
-    button->setText(i18n("..."));
     button->setObjectName(QStringLiteral("button"));
+    button->setToolTip(i18n("Select Attachments"));
+    button->setText(i18n("..."));
     layout->addWidget(button);
     connect(button, &QToolButton::clicked, this, &SnippetAttachmentWidget::slotSelectAttachment);
 }
