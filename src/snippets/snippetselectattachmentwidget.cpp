@@ -22,6 +22,7 @@
 #include <PimCommon/SimpleStringListEditor>
 #include <QVBoxLayout>
 #include <QFileDialog>
+#include <KLocalizedString>
 
 using namespace MailCommon;
 SnippetSelectAttachmentWidget::SnippetSelectAttachmentWidget(QWidget *parent)
@@ -53,6 +54,7 @@ QStringList SnippetSelectAttachmentWidget::attachments() const
 SnippetSelectorWidget::SnippetSelectorWidget(QWidget *parent)
     : PimCommon::SimpleStringListEditor(parent, static_cast<PimCommon::SimpleStringListEditor::ButtonCode>(PimCommon::SimpleStringListEditor::Add | PimCommon::SimpleStringListEditor::Remove))
 {
+    setRemoveDialogLabel(i18n("Do you want to delete selected attachement?"));
 }
 
 SnippetSelectorWidget::~SnippetSelectorWidget()
