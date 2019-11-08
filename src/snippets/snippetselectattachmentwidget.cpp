@@ -54,7 +54,7 @@ QStringList SnippetSelectAttachmentWidget::attachments() const
 SnippetSelectorWidget::SnippetSelectorWidget(QWidget *parent)
     : PimCommon::SimpleStringListEditor(parent, static_cast<PimCommon::SimpleStringListEditor::ButtonCode>(PimCommon::SimpleStringListEditor::Add | PimCommon::SimpleStringListEditor::Remove))
 {
-    setRemoveDialogLabel(i18n("Do you want to delete selected attachement?"));
+    setRemoveDialogLabel(i18n("Do you want to delete selected attachment?"));
 }
 
 SnippetSelectorWidget::~SnippetSelectorWidget()

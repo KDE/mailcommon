@@ -104,7 +104,7 @@ void FilterActionPipeThroughTest::testWithMailOutput()
     /* Make sure that mail is not changed from output to KMIME::Message
      * and also no assemble changes the mail
      *
-     * Very important for not breake signatures from mails.
+     * Very important for not break signatures from mails.
      */
     QByteArray data
         = "From: Konqui <konqui@kde.org>\n"

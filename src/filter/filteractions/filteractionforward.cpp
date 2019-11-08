@@ -60,7 +60,7 @@ FilterAction::ReturnCode FilterActionForward::process(ItemContext &context, bool
     // which applies to sent messages
     if (MessageCore::StringUtil::addressIsInAddressList(mParameter,
                                                         QStringList(msg->to()->asUnicodeString()))) {
-        qCWarning(MAILCOMMON_LOG) << "Attempt to forward to receipient of original message, ignoring.";
+        qCWarning(MAILCOMMON_LOG) << "Attempt to forward to recipient of original message, ignoring.";
         return ErrorButGoOn;
     }
 #if 0 //PORT ME TO ASync

@@ -180,7 +180,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     if (FilterLog::instance()->isLogging()) {
         QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>") : QStringLiteral("<font color=#FF0000>0 = </font>"));
         msg += FilterLog::recode(asString());
-        // only log headers bcause messages and bodies can be pretty large
+        // only log headers because messages and bodies can be pretty large
         if (logContents) {
             msg += QLatin1String(" (<i>") + FilterLog::recode(msgContents) + QLatin1String("</i>)");
         }
