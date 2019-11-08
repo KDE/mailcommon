@@ -38,6 +38,10 @@ class IdentityCombo;
 class QVBoxLayout;
 namespace MailCommon {
 class FolderSettings;
+/**
+ * @brief The CollectionGeneralPage class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILCOMMON_EXPORT CollectionGeneralPage : public Akonadi::CollectionPropertiesPage
 {
     Q_OBJECT

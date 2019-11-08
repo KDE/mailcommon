@@ -33,7 +33,10 @@ class QRadioButton;
 
 namespace MailCommon {
 class FolderRequester;
-
+/**
+ * @brief The CollectionExpiryPage class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILCOMMON_EXPORT CollectionExpiryPage : public Akonadi::CollectionPropertiesPage
 {
     Q_OBJECT

@@ -22,6 +22,10 @@
 #include "filter/filterimporter/filterimporterabstract.h"
 class QFile;
 namespace MailCommon {
+/**
+ * @brief The FilterImporterGmail class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILCOMMON_EXPORT FilterImporterGmail : public FilterImporterAbstract
 {
 public:

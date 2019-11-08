@@ -27,7 +27,10 @@
 #include "mailcommon_export.h"
 namespace MailCommon {
 class SnippetItem;
-
+/**
+ * @brief The SnippetsInfo struct
+ * @author Laurent Montel <montel@kde.org>
+ */
 struct MAILCOMMON_EXPORT SnippetsInfo
 {
     QString newName;
@@ -41,6 +44,10 @@ struct MAILCOMMON_EXPORT SnippetsInfo
     QString attachment;
 };
 
+/**
+ * @brief The SnippetsModel class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILCOMMON_EXPORT SnippetsModel : public QAbstractItemModel
 {
     Q_OBJECT

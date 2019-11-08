@@ -36,6 +36,9 @@
 class KConfigGroup;
 
 namespace MailCommon {
+/**
+ * @brief The MailFilter class
+ */
 class MAILCOMMON_EXPORT MailFilter
 {
     friend MAILCOMMON_EXPORT QDataStream &operator<<(QDataStream &stream, const MailFilter &filter);

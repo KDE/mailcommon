@@ -33,6 +33,10 @@ using MessageCore::MailingList;
 #include <KIO/Job>
 
 namespace MailCommon {
+/**
+ * @brief The FolderSettings class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILCOMMON_EXPORT FolderSettings : public QObject
 {
     Q_OBJECT

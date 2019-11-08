@@ -27,7 +27,10 @@ class QFile;
 
 namespace MailCommon {
 class MailFilter;
-
+/**
+ * @brief The FilterImporterThunderbird class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILCOMMON_EXPORT FilterImporterThunderbird : public FilterImporterAbstract
 {
 public:

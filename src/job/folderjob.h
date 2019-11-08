@@ -35,6 +35,9 @@
 #include "mailcommon_export.h"
 
 namespace MailCommon {
+/**
+ * @brief The FolderJob class
+ */
 class MAILCOMMON_EXPORT FolderJob : public QObject
 {
     Q_OBJECT

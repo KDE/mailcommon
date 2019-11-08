@@ -25,6 +25,10 @@
 namespace MailCommon {
 class AccountConfigOrderDialogPrivate;
 class MailCommonSettings;
+/**
+ * @brief The AccountConfigOrderDialog class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILCOMMON_EXPORT AccountConfigOrderDialog : public QDialog
 {
     Q_OBJECT

@@ -32,6 +32,10 @@ class QAbstractItemModel;
 class QAction;
 class QItemSelectionModel;
 namespace MailCommon {
+/**
+ * @brief The SnippetInfo struct
+ * @author Laurent Montel <montel@kde.org>
+ */
 struct MAILCOMMON_EXPORT SnippetInfo {
     SnippetInfo(const QString &_subject, const QString &_text, const QString &_to, const QString &_cc, const QString &_bcc, const QString &_attachment)
         : subject(_subject)
@@ -50,7 +54,10 @@ struct MAILCOMMON_EXPORT SnippetInfo {
     QString bcc;
     QString attachment;
 };
-
+/**
+ * @brief The SnippetsManager class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILCOMMON_EXPORT SnippetsManager : public QObject
 {
     Q_OBJECT

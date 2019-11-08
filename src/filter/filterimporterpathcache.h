@@ -24,6 +24,10 @@
 #include <AkonadiCore/Collection>
 #include "mailcommon_export.h"
 namespace MailCommon {
+/**
+ * @brief The FilterImporterPathCache class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILCOMMON_EXPORT FilterImporterPathCache : public QObject
 {
     Q_OBJECT
