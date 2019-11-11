@@ -482,7 +482,8 @@ QMimeData *SnippetsModel::mimeData(const QModelIndexList &indexes) const
            << item->subject()
            << item->to()
            << item->cc()
-           << item->bcc();
+           << item->bcc()
+           << item->attachment();
 
     mimeData->setData(QStringLiteral("text/x-kmail-textsnippet"), encodedData);
     mimeData->setText(item->text());
