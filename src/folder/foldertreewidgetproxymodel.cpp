@@ -294,7 +294,7 @@ void FolderTreeWidgetProxyModel::updatePalette()
 void FolderTreeWidgetProxyModel::addContentMimeTypeInclusionFilter(const QString &mimeType)
 {
     d->includedMimeTypes << mimeType;
-    d->checker.setWantedMimeTypes(d->includedMimeTypes.toList());
+    d->checker.setWantedMimeTypes(d->includedMimeTypes.values());
     invalidateFilter();
 }
 }
