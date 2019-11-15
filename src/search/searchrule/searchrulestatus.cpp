@@ -162,14 +162,14 @@ void SearchRuleStatus::addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &empty
     emptyIsNotAnError = true;
     //TODO double check that isRead also works
     if (!mStatus.statusFlags().isEmpty()) {
-        EmailSearchTerm term(EmailSearchTerm::MessageStatus, mStatus.statusFlags().toList().first(), akonadiComparator());
+        EmailSearchTerm term(EmailSearchTerm::MessageStatus, mStatus.statusFlags().values().first(), akonadiComparator());
         term.setIsNegated(isNegated());
         groupTerm.addSubTerm(term);
     } else {
         //Special case Unread
         Akonadi::MessageStatus status;
         status.setRead(true);
-        EmailSearchTerm term(EmailSearchTerm::MessageStatus, status.statusFlags().toList().first(), akonadiComparator());
+        EmailSearchTerm term(EmailSearchTerm::MessageStatus, status.statusFlags().values().first(), akonadiComparator());
         term.setIsNegated(!isNegated());
         groupTerm.addSubTerm(term);
     }
