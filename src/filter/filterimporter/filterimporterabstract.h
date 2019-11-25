@@ -20,11 +20,11 @@
 #define MAILCOMMON_FILTERIMPORTER_FILTERIMPORTERABSTRACT_P_H
 
 #include "mailcommon_export.h"
-#include <QDomDocument>
 #include <QVector>
 #include <QStringList>
 
 class QFile;
+class QDomDocument;
 
 namespace MailCommon {
 class MailFilter;

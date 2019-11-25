@@ -23,6 +23,7 @@
 #include "filter/mailfilter.h"
 
 #include <QFile>
+#include <QDomDocument>
 
 using namespace MailCommon;
 
