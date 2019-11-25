@@ -23,6 +23,7 @@
 #include "mailcommon_export.h"
 
 class QFile;
+class QTextStream;
 
 namespace MailCommon {
 class MailFilter;

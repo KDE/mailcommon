@@ -20,7 +20,10 @@
 #define FILTERIMPORTERGMAIL_H
 
 #include "filter/filterimporter/filterimporterabstract.h"
+
 class QFile;
+class QDomElement;
+
 namespace MailCommon {
 /**
  * @brief The FilterImporterGmail class
