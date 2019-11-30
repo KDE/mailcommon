@@ -20,9 +20,10 @@
 #ifndef MAILCOMMON_FOLDERTREEWIDGETPROXYMODEL_H
 #define MAILCOMMON_FOLDERTREEWIDGETPROXYMODEL_H
 
+#include "mailcommon_export.h"
+
 #include <Collection>
 #include <EntityRightsFilterModel>
-#include "mailcommon_export.h"
 
 namespace MailCommon {
 /**
@@ -69,8 +70,9 @@ public:
     void readConfig();
 
     void setWarningThreshold(qreal threshold);
+
 protected:
-    bool acceptRow(int sourceRow, const QModelIndex &sourceParent) const override;
+    bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override;
 
 private:
     class Private;

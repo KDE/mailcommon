@@ -20,8 +20,8 @@
 #ifndef MAILCOMMON_ENTITYCOLLECTIONORDERPROXYMODEL_H
 #define MAILCOMMON_ENTITYCOLLECTIONORDERPROXYMODEL_H
 
-#include <EntityOrderProxyModel>
 #include "mailcommon_export.h"
+#include <EntityOrderProxyModel>
 
 namespace MailCommon {
 /**

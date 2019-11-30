@@ -126,7 +126,7 @@ Qt::ItemFlags FolderTreeWidgetProxyModel::flags(const QModelIndex &index) const
         if (!MailCommon::Util::isVirtualCollection(collection)) {
             const Akonadi::AgentInstance instance = Akonadi::AgentManager::self()->instance(collection.resource());
             if (instance.status() == Akonadi::AgentInstance::Broken) {
-                return KRecursiveFilterProxyModel::flags(sourceIndex) & ~(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
+                return QSortFilterProxyModel::flags(sourceIndex) & ~(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
             }
         }
         return Akonadi::EntityRightsFilterModel::flags(index);
@@ -190,7 +190,7 @@ bool FolderTreeWidgetProxyModel::hideOutboxFolder() const
     return d->hideOutboxFolder;
 }
 
-bool FolderTreeWidgetProxyModel::acceptRow(int sourceRow, const QModelIndex &sourceParent) const
+bool FolderTreeWidgetProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
 {
     const QModelIndex modelIndex = sourceModel()->index(sourceRow, 0, sourceParent);
 
@@ -221,7 +221,7 @@ bool FolderTreeWidgetProxyModel::acceptRow(int sourceRow, const QModelIndex &sou
         }
     }
 
-    return KRecursiveFilterProxyModel::acceptRow(sourceRow, sourceParent);
+    return EntityRightsFilterModel::filterAcceptsRow(sourceRow, sourceParent);
 }
 
 QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) const
