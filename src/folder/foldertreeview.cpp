@@ -392,7 +392,7 @@ void FolderTreeView::slotFocusPrevFolder()
 
 void FolderTreeView::slotFocusFirstFolder()
 {
-    const QModelIndex first = moveCursor(QAbstractItemView::MoveHome, nullptr);
+    const QModelIndex first = moveCursor(QAbstractItemView::MoveHome, Qt::NoModifier);
     if (first.isValid()) {
         setCurrentModelIndex(first);
     }
@@ -400,7 +400,7 @@ void FolderTreeView::slotFocusFirstFolder()
 
 void FolderTreeView::slotFocusLastFolder()
 {
-    const QModelIndex last = moveCursor(QAbstractItemView::MoveEnd, nullptr);
+    const QModelIndex last = moveCursor(QAbstractItemView::MoveEnd, Qt::NoModifier);
     if (last.isValid()) {
         setCurrentModelIndex(last);
     }
@@ -501,7 +501,7 @@ bool FolderTreeView::allowedToEnterFolder(const Akonadi::Collection &collection,
               i18n("Go to Next Unread Message"),
               KGuiItem(i18n("Go To")),
               KGuiItem(i18n("Do Not Go To")),   // defaults
-              QStringLiteral(":kmail_AskNextFolder"), nullptr);
+              QStringLiteral(":kmail_AskNextFolder"), KMessageBox::Option());
 
     return result == KMessageBox::Yes;
 }
@@ -548,7 +548,7 @@ bool FolderTreeView::isUnreadFolder(const QModelIndex &current, QModelIndex &ind
                                 KGuiItem(i18n("Go To")),
                                 KGuiItem(i18n("Do Not Go To")),         // defaults
                                 QStringLiteral(":kmail_AskNextFolder"),
-                                nullptr) == KMessageBox::No) {
+                                KMessageBox::Option()) == KMessageBox::No) {
                             return true; // assume selected (do not continue looping)
                         }
 
