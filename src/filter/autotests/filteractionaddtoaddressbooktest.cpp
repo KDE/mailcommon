@@ -20,7 +20,7 @@
 #include <QTest>
 #include <QWidget>
 #include <QLabel>
-#include <klineedit.h>
+#include <KLineEdit>
 #include <QComboBox>
 #include <libkdepimakonadi/tagwidgets.h>
 #include <AkonadiWidgets/CollectionComboBox>

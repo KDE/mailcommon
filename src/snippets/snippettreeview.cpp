@@ -14,7 +14,7 @@
 #include "snippettreeview.h"
 #include "snippetsmanager.h"
 
-#include <kactioncollection.h>
+#include <KActionCollection>
 #include <KLocalizedString>
 
 #include <QMenu>

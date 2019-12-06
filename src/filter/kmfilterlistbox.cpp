@@ -24,7 +24,7 @@
 #include "invalidfilters/invalidfilterinfo.h"
 #include "invalidfilters/invalidfilterdialog.h"
 #include <KLocalizedString>
-#include <klistwidgetsearchline.h>
+#include <KListWidgetSearchLine>
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QHBoxLayout>

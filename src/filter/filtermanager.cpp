@@ -24,7 +24,7 @@
 #include "filteractions/filteractiondict.h"
 #include "filterimporterexporter.h"
 #include "mailfilteragentinterface.h"
-#include <kconfiggroup.h>
+#include <KConfigGroup>
 #include <Monitor>
 #include <Tag>
 #include <TagFetchJob>

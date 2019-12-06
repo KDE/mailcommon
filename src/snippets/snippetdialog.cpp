@@ -16,7 +16,7 @@
 
 #include <MessageComposer/ConvertSnippetVariableMenu>
 #include <KPIMTextEdit/PlainTextEditor>
-#include <kactioncollection.h>
+#include <KActionCollection>
 #include <QDialog>
 #include <QVBoxLayout>
 #include <QPushButton>

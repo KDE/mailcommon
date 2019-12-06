@@ -37,9 +37,9 @@ using MailCommon::FilterLog;
 
 // other KDE headers
 #include <KLocalizedString>
-#include <kmessagebox.h>
-#include <kconfig.h>
-#include <kconfiggroup.h>
+#include <KMessageBox>
+#include <KConfig>
+#include <KConfigGroup>
 #include <krandom.h>
 #include <QPointer>
 
