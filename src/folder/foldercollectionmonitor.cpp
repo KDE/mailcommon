@@ -102,10 +102,10 @@ void FolderCollectionMonitor::expireAllCollection(const QAbstractItemModel *mode
             if (attr->isAutoExpire()) {
                 MailCommon::Util::expireOldMessages(collection, immediate);
             }
+        }
 
-            if (model->rowCount(index) > 0) {
-                expireAllCollection(model, immediate, index);
-            }
+        if (model->rowCount(index) > 0) {
+            expireAllCollection(model, immediate, index);
         }
     }
 }
