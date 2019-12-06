@@ -130,7 +130,7 @@ private:
     TaskList mTaskList; // FIFO of tasks to be run
 
     QTimer mTimer;
-    int mPendingImmediateTasks;
+    int mPendingImmediateTasks = 0;
 
     /// Information about the currently running job, if any
     ScheduledTask *mCurrentTask = nullptr;

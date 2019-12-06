@@ -63,9 +63,6 @@ using KPIM::BroadcastStatus;
 namespace MailCommon {
 ExpireJob::ExpireJob(const Akonadi::Collection &folder, bool immediate)
     : ScheduledJob(folder, immediate)
-    , mMaxUnreadTime(0)
-    , mMaxReadTime(0)
-    , mMoveToFolder(0)
 {
 }
 

@@ -56,8 +56,8 @@ private:
 
 private:
     Akonadi::Item::List mRemovedMsgs;
-    qint64 mMaxUnreadTime;
-    qint64 mMaxReadTime;
+    qint64 mMaxUnreadTime = 0;
+    qint64 mMaxReadTime = 0;
     Akonadi::Collection mMoveToFolder;
 };
 

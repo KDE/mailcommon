@@ -43,9 +43,6 @@ ScheduledTask::~ScheduledTask()
 JobScheduler::JobScheduler(QObject *parent)
     : QObject(parent)
     , mTimer(this)
-    , mPendingImmediateTasks(0)
-    , mCurrentTask(nullptr)
-    , mCurrentJob(nullptr)
 {
     connect(&mTimer, &QTimer::timeout, this, &JobScheduler::slotRunNextJob);
     // No need to start the internal timer yet, we wait for a task to be scheduled
