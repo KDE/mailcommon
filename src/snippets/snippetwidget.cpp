@@ -24,6 +24,7 @@
 #include <KPIMTextEdit/PlainTextEditor>
 
 #include <KActionCollection>
+#include <KLocalizedString>
 #include <QComboBox>
 #include <KLineEdit>
 #include <QAbstractListModel>
@@ -62,6 +63,11 @@ SnippetWidget::SnippetWidget(QWidget *parent)
     d->mUi.nameEdit->setClearButtonEnabled(true);
     d->mUi.nameEdit->setFocus();
     d->mUi.snippetText->setMinimumSize(500, 300);
+
+    d->mUi.keyword->setWhatsThis(i18n("Enter a keyword here to enable fast insertion of this snippet while writing "
+                                      "an email. For instance if you choose \"greeting\" as the keyword, you can then "
+                                      "type \\greeting in your email and then press the tab key, and it will be "
+                                      "replaced with the contents of this snippet."));
 
     connect(d->mUi.nameEdit, &KLineEdit::textChanged, this, [this](const QString &str) {
         Q_EMIT textChanged(str);
