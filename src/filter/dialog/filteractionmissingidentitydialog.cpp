@@ -37,7 +37,7 @@ FilterActionMissingIdentityDialog::FilterActionMissingIdentityDialog(const QStri
     : QDialog(parent)
 {
     setModal(true);
-    setWindowTitle(i18n("Select Identity"));
+    setWindowTitle(i18nc("@title:window", "Select Identity"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
     QLabel *label = new QLabel(this);

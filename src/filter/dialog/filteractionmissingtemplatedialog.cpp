@@ -37,7 +37,7 @@ FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(
     : QDialog(parent)
 {
     setModal(true);
-    setWindowTitle(i18n("Select Template"));
+    setWindowTitle(i18nc("@title:window", "Select Template"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
     QLabel *label = new QLabel(this);

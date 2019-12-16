@@ -36,7 +36,7 @@ FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QString
     : QDialog(parent)
 {
     setModal(true);
-    setWindowTitle(i18n("Select Account"));
+    setWindowTitle(i18nc("@title:window", "Select Account"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
     QLabel *label = new QLabel(this);

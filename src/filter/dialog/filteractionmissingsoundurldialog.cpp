@@ -34,7 +34,7 @@ FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QStri
     : QDialog(parent)
 {
     setModal(true);
-    setWindowTitle(i18n("Select sound"));
+    setWindowTitle(i18nc("@title:window", "Select sound"));
 
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 

@@ -38,7 +38,7 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
     : QDialog(parent)
 {
     setModal(true);
-    setWindowTitle(i18n("Select Tag"));
+    setWindowTitle(i18nc("@title:window", "Select Tag"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
     QLabel *label = new QLabel(i18n("Tag was \"%1\".", argsStr));

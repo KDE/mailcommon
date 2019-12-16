@@ -52,7 +52,7 @@ AddTagDialog::AddTagDialog(const QList<KActionCollection *> &actions, QWidget *p
     , d(new MailCommon::AddTagDialogPrivate)
 {
     setModal(true);
-    setWindowTitle(i18n("Add Tag"));
+    setWindowTitle(i18nc("@title:window", "Add Tag"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
     d->mTagWidget = new MailCommon::TagWidget(actions, this);

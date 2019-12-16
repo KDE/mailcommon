@@ -31,7 +31,7 @@ using namespace MailCommon;
 SelectThunderbirdFilterFilesDialog::SelectThunderbirdFilterFilesDialog(const QString &defaultSettingPath, QWidget *parent)
     : QDialog(parent)
 {
-    setWindowTitle(i18n("Select thunderbird filter files"));
+    setWindowTitle(i18nc("@title:window", "Select thunderbird filter files"));
     setModal(true);
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 

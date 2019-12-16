@@ -94,7 +94,7 @@ void FolderRequester::slotOpenDialog()
     }
 
     QPointer<FolderSelectionDialog> dlg(new FolderSelectionDialog(this, options));
-    dlg->setWindowTitle(i18n("Select Folder"));
+    dlg->setWindowTitle(i18nc("@title:window", "Select Folder"));
     dlg->setModal(false);
     dlg->setSelectedCollection(d->mCollection);
 

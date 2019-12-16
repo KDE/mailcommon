@@ -33,7 +33,7 @@ using namespace MailCommon;
 SnippetSelectAttachmentDialog::SnippetSelectAttachmentDialog(QWidget *parent)
     : QDialog(parent)
 {
-    setWindowTitle(i18n("Select Attachments"));
+    setWindowTitle(i18nc("@title:window", "Select Attachments"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
 

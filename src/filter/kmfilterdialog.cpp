@@ -85,7 +85,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     , mDoNotClose(false)
     , mIgnoreFilterUpdates(true)
 {
-    setWindowTitle(i18n("Filter Rules"));
+    setWindowTitle(i18nc("@title:window", "Filter Rules"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel | QDialogButtonBox::Help | QDialogButtonBox::Apply, this);

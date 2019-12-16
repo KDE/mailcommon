@@ -43,7 +43,7 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(
     , mListwidget(nullptr)
 {
     setModal(true);
-    setWindowTitle(i18n("Select Folder"));
+    setWindowTitle(i18nc("@title:window", "Select Folder"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
     QLabel *lab = new QLabel(i18n("Folder path was \"%1\".", argStr));

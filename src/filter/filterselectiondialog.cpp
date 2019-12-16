@@ -35,7 +35,7 @@ FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
 {
     setObjectName(QStringLiteral("filterselection"));
     setModal(true);
-    setWindowTitle(i18n("Select Filters"));
+    setWindowTitle(i18nc("@title:window", "Select Filters"));
     QVBoxLayout *top = new QVBoxLayout(this);
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);

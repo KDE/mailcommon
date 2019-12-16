@@ -71,7 +71,7 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(MailCommon::MailCommonSetting
     , d(new MailCommon::AccountConfigOrderDialogPrivate)
 {
     d->mSettings = settings;
-    setWindowTitle(i18n("Edit Accounts Order"));
+    setWindowTitle(i18nc("@title:window", "Edit Accounts Order"));
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 

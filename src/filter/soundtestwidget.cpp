@@ -72,7 +72,7 @@ void SoundTestWidget::openSoundDialog(KUrlRequester *)
 
     init = false;
     QFileDialog *fileDialog = m_urlRequester->fileDialog();
-    fileDialog->setWindowTitle(i18n("Select Sound File"));
+    fileDialog->setWindowTitle(i18nc("@title:window", "Select Sound File"));
 
     QStringList filters;
     filters << QStringLiteral("audio/x-wav")

@@ -31,7 +31,7 @@ using namespace MailCommon;
 InvalidFilterDialog::InvalidFilterDialog(QWidget *parent)
     : QDialog(parent)
 {
-    setWindowTitle(i18n("Invalid Filters"));
+    setWindowTitle(i18nc("@title:window", "Invalid Filters"));
     setWindowIcon(QIcon::fromTheme(QStringLiteral("kmail")));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
