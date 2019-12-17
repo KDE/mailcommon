@@ -18,14 +18,28 @@
 */
 
 #include "snippetcustomfileattachmentnamedialog.h"
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include "snippetcustomfileattachmentnamewidget.h"
+
 using namespace MailCommon;
 SnippetCustomFileAttachmentNameDialog::SnippetCustomFileAttachmentNameDialog(QWidget *parent)
     : QDialog(parent)
 {
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    mainLayout->setObjectName(QStringLiteral("mainLayout"));
 
+    mCustomWidget = new SnippetCustomFileAttachmentNameWidget(this);
+    mCustomWidget->setObjectName(QStringLiteral("mCustomWidget"));
+    mainLayout->addWidget(mCustomWidget);
 }
 
 SnippetCustomFileAttachmentNameDialog::~SnippetCustomFileAttachmentNameDialog()
 {
 
+}
+
+QString SnippetCustomFileAttachmentNameDialog::result() const
+{
+    return mCustomWidget->result();
 }

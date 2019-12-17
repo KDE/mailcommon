@@ -18,14 +18,29 @@
 */
 
 #include "snippetcustomfileattachmentnamewidget.h"
+#include <QHBoxLayout>
+#include <KLocalizedString>
+#include <QLineEdit>
 using namespace MailCommon;
 SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWidget *parent)
     : QWidget(parent)
 {
+    QHBoxLayout *mainLayout = new QHBoxLayout(this);
+    mainLayout->setObjectName(QStringLiteral("mainLayout"));
+    mainLayout->setContentsMargins(0, 0, 0, 0);
 
+    mLineEdit = new QLineEdit(this);
+    mLineEdit->setObjectName(QStringLiteral("mLineEdit"));
+    mainLayout->addWidget(mLineEdit);
 }
 
 SnippetCustomFileAttachmentNameWidget::~SnippetCustomFileAttachmentNameWidget()
 {
 
 }
+
+QString SnippetCustomFileAttachmentNameWidget::result() const
+{
+    return mLineEdit->text();
+}
+

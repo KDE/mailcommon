@@ -27,12 +27,18 @@
 class QLineEdit;
 
 namespace MailCommon {
+class SnippetCustomFileAttachmentNameWidget;
 class MAILCOMMON_TESTS_EXPORT SnippetCustomFileAttachmentNameDialog : public QDialog
 {
     Q_OBJECT
 public:
     explicit SnippetCustomFileAttachmentNameDialog(QWidget *parent = nullptr);
     ~SnippetCustomFileAttachmentNameDialog();
+
+    Q_REQUIRED_RESULT QString result() const;
+
+private:
+    SnippetCustomFileAttachmentNameWidget *mCustomWidget = nullptr;
 };
 }
 #endif // SNIPPETCUSTOMFILEATTACHMENTNAMEDIALOG_H
