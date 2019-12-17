@@ -22,3 +22,13 @@ ecm_add_test(snippetselectattachmentdialogtest.cpp
     NAME_PREFIX "mailcommon-snippets-"
     LINK_LIBRARIES Qt5::Test Qt5::Gui KF5::MailCommon
 )
+
+ecm_add_test(snippetcustomfileattachmentnamedialogtest.cpp
+    NAME_PREFIX "mailcommon-snippets-"
+    LINK_LIBRARIES Qt5::Test Qt5::Gui KF5::MailCommon
+)
+
+ecm_add_test(snippetcustomfileattachmentnamewidgettest.cpp
+    NAME_PREFIX "mailcommon-snippets-"
+    LINK_LIBRARIES Qt5::Test Qt5::Gui KF5::MailCommon
+)

@@ -150,6 +150,8 @@ set(libmailcommon_snippets_SRCS
   snippets/snippetattachmentwidget.cpp
   snippets/snippetselectattachmentwidget.cpp
   snippets/snippetselectattachmentdialog.cpp
+  snippets/snippetcustomfileattachmentnamewidget.cpp
+  snippets/snippetcustomfileattachmentnamedialog.cpp
 )
 
 set(libmailcommon_tag_SRCS
