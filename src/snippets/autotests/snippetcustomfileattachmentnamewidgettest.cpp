@@ -20,6 +20,7 @@
 #include "snippetcustomfileattachmentnamewidgettest.h"
 #include "snippets/snippetcustomfileattachmentnamewidget.h"
 #include <QLineEdit>
+#include <QPushButton>
 #include <QTest>
 #include <QVBoxLayout>
 QTEST_MAIN(SnippetCustomFileAttachmentNameWidgetTest)
@@ -41,4 +42,9 @@ void SnippetCustomFileAttachmentNameWidgetTest::shouldHaveDefaultValues()
     QLineEdit *mLineEdit = w.findChild<QLineEdit *>(QStringLiteral("mLineEdit"));
     QVERIFY(mLineEdit);
     QVERIFY(mLineEdit->text().isEmpty());
+
+    QPushButton *selectVariable = w.findChild<QPushButton *>(QStringLiteral("selectVariable"));
+    QVERIFY(selectVariable);
+    QVERIFY(!selectVariable->text().isEmpty());
+    QVERIFY(selectVariable->menu());
 }

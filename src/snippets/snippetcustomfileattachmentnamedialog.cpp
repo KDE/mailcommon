@@ -55,3 +55,8 @@ QString SnippetCustomFileAttachmentNameDialog::result() const
 {
     return mCustomWidget->result();
 }
+
+void SnippetCustomFileAttachmentNameDialog::setText(const QString &str)
+{
+    mCustomWidget->setText(str);
+}

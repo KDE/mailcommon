@@ -51,7 +51,7 @@ SnippetWidget::SnippetWidget(QWidget *parent)
     d->mUi.setupUi(d->wdg);
     layout->addWidget(d->wdg);
 
-    MessageComposer::ConvertSnippetVariableMenu *variableMenu = new MessageComposer::ConvertSnippetVariableMenu(this, this);
+    MessageComposer::ConvertSnippetVariableMenu *variableMenu = new MessageComposer::ConvertSnippetVariableMenu(false, this, this);
     d->mUi.pushButtonVariables->setMenu(variableMenu->menu());
     connect(variableMenu, &MessageComposer::ConvertSnippetVariableMenu::insertVariable, this, [this](MessageComposer::ConvertSnippetVariablesUtil::VariableType type) {
         d->mUi.snippetText->editor()->insertPlainText(MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(type) + QLatin1Char(' '));

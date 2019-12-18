@@ -18,9 +18,12 @@
 */
 
 #include "snippetcustomfileattachmentnamewidget.h"
+#include <MessageComposer/ConvertSnippetVariableMenu>
+#include <MessageComposer/ConvertSnippetVariablesJob>
 #include <QHBoxLayout>
 #include <KLocalizedString>
 #include <QLineEdit>
+#include <QPushButton>
 using namespace MailCommon;
 SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWidget *parent)
     : QWidget(parent)
@@ -32,6 +35,15 @@ SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWi
     mLineEdit = new QLineEdit(this);
     mLineEdit->setObjectName(QStringLiteral("mLineEdit"));
     mainLayout->addWidget(mLineEdit);
+
+    mConvertMenu = new MessageComposer::ConvertSnippetVariableMenu(true, mLineEdit, this);
+    mConvertMenu->setObjectName(QStringLiteral("mConvertMenu"));
+    connect(mConvertMenu, &MessageComposer::ConvertSnippetVariableMenu::insertVariable, this, &SnippetCustomFileAttachmentNameWidget::insertVariable);
+
+    QPushButton *selectVariable = new QPushButton(i18n("Variables"), this);
+    selectVariable->setObjectName(QStringLiteral("selectVariable"));
+    selectVariable->setMenu(mConvertMenu->menu());
+    mainLayout->addWidget(selectVariable);
 }
 
 SnippetCustomFileAttachmentNameWidget::~SnippetCustomFileAttachmentNameWidget()
@@ -39,8 +51,18 @@ SnippetCustomFileAttachmentNameWidget::~SnippetCustomFileAttachmentNameWidget()
 
 }
 
+void SnippetCustomFileAttachmentNameWidget::insertVariable(MessageComposer::ConvertSnippetVariablesUtil::VariableType variable)
+{
+    mLineEdit->insert(MessageComposer::ConvertSnippetVariablesJob::convertVariables(nullptr, MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(variable)));
+}
+
 QString SnippetCustomFileAttachmentNameWidget::result() const
 {
     return mLineEdit->text();
+}
+
+void SnippetCustomFileAttachmentNameWidget::setText(const QString &str)
+{
+    mLineEdit->setText(str);
 }
 

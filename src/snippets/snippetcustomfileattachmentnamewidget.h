@@ -22,8 +22,11 @@
 
 #include <QWidget>
 #include "mailcommon_private_export.h"
-
+#include <MessageComposer/ConvertSnippetVariablesUtil>
 class QLineEdit;
+namespace MessageComposer {
+class ConvertSnippetVariableMenu;
+}
 
 namespace MailCommon {
 class MAILCOMMON_TESTS_EXPORT SnippetCustomFileAttachmentNameWidget : public QWidget
@@ -33,8 +36,11 @@ public:
     explicit SnippetCustomFileAttachmentNameWidget(QWidget *parent = nullptr);
     ~SnippetCustomFileAttachmentNameWidget();
     Q_REQUIRED_RESULT QString result() const;
+    void setText(const QString &str);
 private:
+    void insertVariable(MessageComposer::ConvertSnippetVariablesUtil::VariableType variable);
     QLineEdit *mLineEdit = nullptr;
+    MessageComposer::ConvertSnippetVariableMenu *mConvertMenu = nullptr;
 };
 }
 

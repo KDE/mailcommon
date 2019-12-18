@@ -19,10 +19,12 @@
 */
 
 #include "snippetselectattachmentwidget.h"
+#include "snippetcustomfileattachmentnamedialog.h"
 #include <PimCommon/SimpleStringListEditor>
 #include <QVBoxLayout>
 #include <QFileDialog>
 #include <KLocalizedString>
+#include <QPointer>
 
 using namespace MailCommon;
 SnippetSelectAttachmentWidget::SnippetSelectAttachmentWidget(QWidget *parent)
@@ -73,6 +75,10 @@ void SnippetSelectorWidget::addNewEntry()
 
 QString SnippetSelectorWidget::customEntry(const QString &text)
 {
-    //TODO
+    QPointer<SnippetCustomFileAttachmentNameDialog> dlg = new SnippetCustomFileAttachmentNameDialog(this);
+    dlg->setText(text);
+    if (dlg->exec()) {
+        return dlg->result();
+    }
     return {};
 }

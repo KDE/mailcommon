@@ -37,6 +37,8 @@ public:
 
     Q_REQUIRED_RESULT QString result() const;
 
+    void setText(const QString &str);
+
 private:
     SnippetCustomFileAttachmentNameWidget *mCustomWidget = nullptr;
 };
