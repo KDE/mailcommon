@@ -28,7 +28,6 @@ QTEST_MAIN(SnippetCustomFileAttachmentNameWidgetTest)
 SnippetCustomFileAttachmentNameWidgetTest::SnippetCustomFileAttachmentNameWidgetTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void SnippetCustomFileAttachmentNameWidgetTest::shouldHaveDefaultValues()
@@ -37,7 +36,6 @@ void SnippetCustomFileAttachmentNameWidgetTest::shouldHaveDefaultValues()
     QHBoxLayout *mainLayout = w.findChild<QHBoxLayout *>(QStringLiteral("mainLayout"));
     QVERIFY(mainLayout);
     QCOMPARE(mainLayout->contentsMargins(), QMargins(0, 0, 0, 0));
-
 
     QLineEdit *mLineEdit = w.findChild<QLineEdit *>(QStringLiteral("mLineEdit"));
     QVERIFY(mLineEdit);

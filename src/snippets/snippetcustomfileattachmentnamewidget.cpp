@@ -48,7 +48,6 @@ SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWi
 
 SnippetCustomFileAttachmentNameWidget::~SnippetCustomFileAttachmentNameWidget()
 {
-
 }
 
 void SnippetCustomFileAttachmentNameWidget::insertVariable(MessageComposer::ConvertSnippetVariablesUtil::VariableType variable)
@@ -65,4 +64,3 @@ void SnippetCustomFileAttachmentNameWidget::setText(const QString &str)
 {
     mLineEdit->setText(str);
 }
-

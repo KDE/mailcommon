@@ -37,7 +37,7 @@ void SnippetSelectAttachmentDialogTest::shouldHaveDefaultValues()
     QVERIFY(!dlg.windowTitle().isEmpty());
 
     QVBoxLayout *mainLayout = dlg.findChild<QVBoxLayout *>(QStringLiteral("mainLayout"));
-    QVERIFY(mainLayout);    
+    QVERIFY(mainLayout);
 
     MailCommon::SnippetSelectAttachmentWidget *mAttachmentWidget = dlg.findChild<MailCommon::SnippetSelectAttachmentWidget *>(QStringLiteral("attachmentwidget"));
     QVERIFY(mAttachmentWidget);

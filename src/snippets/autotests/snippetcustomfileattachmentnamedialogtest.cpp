@@ -28,7 +28,6 @@ QTEST_MAIN(SnippetCustomFileAttachmentNameDialogTest)
 SnippetCustomFileAttachmentNameDialogTest::SnippetCustomFileAttachmentNameDialogTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void SnippetCustomFileAttachmentNameDialogTest::shouldHaveDefaultValues()

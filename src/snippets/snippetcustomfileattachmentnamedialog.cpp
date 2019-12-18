@@ -48,7 +48,6 @@ SnippetCustomFileAttachmentNameDialog::SnippetCustomFileAttachmentNameDialog(QWi
 
 SnippetCustomFileAttachmentNameDialog::~SnippetCustomFileAttachmentNameDialog()
 {
-
 }
 
 QString SnippetCustomFileAttachmentNameDialog::result() const
