@@ -18,11 +18,27 @@
 */
 
 #include "snippetcustomfileattachmentnamewidgettest.h"
+#include "snippets/snippetcustomfileattachmentnamewidget.h"
+#include <QLineEdit>
 #include <QTest>
+#include <QVBoxLayout>
 QTEST_MAIN(SnippetCustomFileAttachmentNameWidgetTest)
 
 SnippetCustomFileAttachmentNameWidgetTest::SnippetCustomFileAttachmentNameWidgetTest(QObject *parent)
     : QObject(parent)
 {
 
+}
+
+void SnippetCustomFileAttachmentNameWidgetTest::shouldHaveDefaultValues()
+{
+    MailCommon::SnippetCustomFileAttachmentNameWidget w;
+    QHBoxLayout *mainLayout = w.findChild<QHBoxLayout *>(QStringLiteral("mainLayout"));
+    QVERIFY(mainLayout);
+    QCOMPARE(mainLayout->contentsMargins(), QMargins(0, 0, 0, 0));
+
+
+    QLineEdit *mLineEdit = w.findChild<QLineEdit *>(QStringLiteral("mLineEdit"));
+    QVERIFY(mLineEdit);
+    QVERIFY(mLineEdit->text().isEmpty());
 }

@@ -28,6 +28,8 @@ class SnippetCustomFileAttachmentNameDialogTest : public QObject
 public:
     explicit SnippetCustomFileAttachmentNameDialogTest(QObject *parent = nullptr);
     ~SnippetCustomFileAttachmentNameDialogTest() = default;
+private Q_SLOTS:
+    void shouldHaveDefaultValues();
 };
 
 #endif // SNIPPETCUSTOMFILEATTACHMENTNAMEDIALOGTEST_H

@@ -28,6 +28,8 @@ class SnippetCustomFileAttachmentNameWidgetTest : public QObject
 public:
     explicit SnippetCustomFileAttachmentNameWidgetTest(QObject *parent = nullptr);
     ~SnippetCustomFileAttachmentNameWidgetTest() = default;
+private Q_SLOTS:
+    void shouldHaveDefaultValues();
 };
 
 #endif // SNIPPETCUSTOMFILEATTACHMENTNAMEWIDGETTEST_H

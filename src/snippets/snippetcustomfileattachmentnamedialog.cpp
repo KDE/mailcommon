@@ -18,7 +18,9 @@
 */
 
 #include "snippetcustomfileattachmentnamedialog.h"
+#include <QDialogButtonBox>
 #include <QHBoxLayout>
+#include <QPushButton>
 #include <QVBoxLayout>
 #include "snippetcustomfileattachmentnamewidget.h"
 
@@ -32,6 +34,16 @@ SnippetCustomFileAttachmentNameDialog::SnippetCustomFileAttachmentNameDialog(QWi
     mCustomWidget = new SnippetCustomFileAttachmentNameWidget(this);
     mCustomWidget->setObjectName(QStringLiteral("mCustomWidget"));
     mainLayout->addWidget(mCustomWidget);
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    buttonBox->setObjectName(QStringLiteral("button"));
+    QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
+    okButton->setDefault(true);
+    okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &SnippetCustomFileAttachmentNameDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &SnippetCustomFileAttachmentNameDialog::reject);
+
+    mainLayout->addWidget(buttonBox);
 }
 
 SnippetCustomFileAttachmentNameDialog::~SnippetCustomFileAttachmentNameDialog()
