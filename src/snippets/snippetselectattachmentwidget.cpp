@@ -77,8 +77,10 @@ QString SnippetSelectorWidget::customEntry(const QString &text)
 {
     QPointer<SnippetCustomFileAttachmentNameDialog> dlg = new SnippetCustomFileAttachmentNameDialog(this);
     dlg->setText(text);
+    QString result;
     if (dlg->exec()) {
-        return dlg->result();
+        result = dlg->result();
     }
-    return {};
+    delete dlg;
+    return result;
 }
