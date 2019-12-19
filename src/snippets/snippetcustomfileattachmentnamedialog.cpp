@@ -18,16 +18,20 @@
 */
 
 #include "snippetcustomfileattachmentnamedialog.h"
+#include "snippetcustomfileattachmentnamewidget.h"
+
 #include <QDialogButtonBox>
 #include <QHBoxLayout>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include "snippetcustomfileattachmentnamewidget.h"
+
+#include <KLocalizedString>
 
 using namespace MailCommon;
 SnippetCustomFileAttachmentNameDialog::SnippetCustomFileAttachmentNameDialog(QWidget *parent)
     : QDialog(parent)
 {
+    setWindowTitle(i18nc("@title:window", "Customize File Attachment"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
 

@@ -20,9 +20,11 @@
 #include "snippetcustomfileattachmentnamewidget.h"
 #include <MessageComposer/ConvertSnippetVariableMenu>
 #include <QHBoxLayout>
-#include <KLocalizedString>
 #include <QLineEdit>
 #include <QPushButton>
+
+#include <KLocalizedString>
+
 using namespace MailCommon;
 SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWidget *parent)
     : QWidget(parent)

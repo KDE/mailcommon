@@ -36,6 +36,8 @@ void SnippetCustomFileAttachmentNameDialogTest::shouldHaveDefaultValues()
     QVBoxLayout *mainLayout = dlg.findChild<QVBoxLayout *>(QStringLiteral("mainLayout"));
     QVERIFY(mainLayout);
 
+    QVERIFY(!dlg.windowTitle().isEmpty());
+
     MailCommon::SnippetCustomFileAttachmentNameWidget *mCustomWidget = dlg.findChild<MailCommon::SnippetCustomFileAttachmentNameWidget *>(QStringLiteral("mCustomWidget"));
     QVERIFY(mCustomWidget);
     mainLayout->addWidget(mCustomWidget);
