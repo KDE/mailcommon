@@ -33,7 +33,7 @@ SnippetCustomFileAttachmentNameWidgetTest::SnippetCustomFileAttachmentNameWidget
 void SnippetCustomFileAttachmentNameWidgetTest::shouldHaveDefaultValues()
 {
     MailCommon::SnippetCustomFileAttachmentNameWidget w;
-    QHBoxLayout *mainLayout = w.findChild<QHBoxLayout *>(QStringLiteral("mainLayout"));
+    QVBoxLayout *mainLayout = w.findChild<QVBoxLayout *>(QStringLiteral("mainLayout"));
     QVERIFY(mainLayout);
     QCOMPARE(mainLayout->contentsMargins(), QMargins(0, 0, 0, 0));
 
