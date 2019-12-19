@@ -19,7 +19,6 @@
 
 #include "snippetcustomfileattachmentnamewidget.h"
 #include <MessageComposer/ConvertSnippetVariableMenu>
-#include <MessageComposer/ConvertSnippetVariablesJob>
 #include <QHBoxLayout>
 #include <KLocalizedString>
 #include <QLineEdit>
@@ -52,7 +51,7 @@ SnippetCustomFileAttachmentNameWidget::~SnippetCustomFileAttachmentNameWidget()
 
 void SnippetCustomFileAttachmentNameWidget::insertVariable(MessageComposer::ConvertSnippetVariablesUtil::VariableType variable)
 {
-    mLineEdit->insert(MessageComposer::ConvertSnippetVariablesJob::convertVariables(nullptr, MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(variable)));
+    mLineEdit->insert(MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(variable));
 }
 
 QString SnippetCustomFileAttachmentNameWidget::result() const
