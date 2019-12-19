@@ -24,18 +24,37 @@
 #include <QPushButton>
 
 #include <KLocalizedString>
+#include <QLabel>
 
 using namespace MailCommon;
 SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWidget *parent)
     : QWidget(parent)
 {
-    QHBoxLayout *mainLayout = new QHBoxLayout(this);
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
     mainLayout->setContentsMargins(0, 0, 0, 0);
 
+    QHBoxLayout *lineEditLayout = new QHBoxLayout;
+    lineEditLayout->setObjectName(QStringLiteral("lineEditLayout"));
+    lineEditLayout->setContentsMargins(0, 0, 0, 0);
+
+
+    QLabel *label = new QLabel(i18n("Filename:"), this);
+    label->setObjectName(QStringLiteral("label"));
+    lineEditLayout->addWidget(label);
+
     mLineEdit = new QLineEdit(this);
     mLineEdit->setObjectName(QStringLiteral("mLineEdit"));
-    mainLayout->addWidget(mLineEdit);
+    lineEditLayout->addWidget(mLineEdit);
+
+
+    mainLayout->addLayout(lineEditLayout);
+
+
+    QHBoxLayout *convertMenuLayout = new QHBoxLayout;
+    convertMenuLayout->setObjectName(QStringLiteral("convertMenuLayout"));
+    convertMenuLayout->setContentsMargins(0, 0, 0, 0);
+    convertMenuLayout->addStretch(1);
 
     mConvertMenu = new MessageComposer::ConvertSnippetVariableMenu(true, mLineEdit, this);
     mConvertMenu->setObjectName(QStringLiteral("mConvertMenu"));
@@ -44,7 +63,9 @@ SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWi
     QPushButton *selectVariable = new QPushButton(i18n("Variables"), this);
     selectVariable->setObjectName(QStringLiteral("selectVariable"));
     selectVariable->setMenu(mConvertMenu->menu());
-    mainLayout->addWidget(selectVariable);
+    convertMenuLayout->addWidget(selectVariable);
+    mainLayout->addLayout(convertMenuLayout);
+    mainLayout->addStretch(1);
 }
 
 SnippetCustomFileAttachmentNameWidget::~SnippetCustomFileAttachmentNameWidget()

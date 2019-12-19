@@ -48,6 +48,8 @@ SnippetCustomFileAttachmentNameDialog::SnippetCustomFileAttachmentNameDialog(QWi
     connect(buttonBox, &QDialogButtonBox::rejected, this, &SnippetCustomFileAttachmentNameDialog::reject);
 
     mainLayout->addWidget(buttonBox);
+
+    resize(500, 150);
 }
 
 SnippetCustomFileAttachmentNameDialog::~SnippetCustomFileAttachmentNameDialog()
