@@ -22,7 +22,7 @@
 
 #include <QDialog>
 
-class KComboBox;
+class QComboBox;
 namespace MailCommon {
 class FilterActionMissingTemplateDialog : public QDialog
 {
@@ -35,7 +35,7 @@ public:
 private:
     void readConfig();
     void writeConfig();
-    KComboBox *mComboBoxTemplate = nullptr;
+    QComboBox *mComboBoxTemplate = nullptr;
 };
 }
 #endif // FILTERACTIONMISSINGTEMPLATEDIALOG_H

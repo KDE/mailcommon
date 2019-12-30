@@ -21,7 +21,7 @@
 
 #include <KSharedConfig>
 
-#include <KComboBox>
+#include <QComboBox>
 #include <KConfigGroup>
 #include <KLocalizedString>
 
@@ -47,7 +47,7 @@ FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(
                         filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
-    mComboBoxTemplate = new KComboBox(this);
+    mComboBoxTemplate = new QComboBox(this);
     mComboBoxTemplate->setObjectName(QStringLiteral("comboboxtemplate"));
     mComboBoxTemplate->addItems(templateList);
     mainLayout->addWidget(mComboBoxTemplate);

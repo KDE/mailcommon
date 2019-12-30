@@ -19,7 +19,7 @@
 
 #include "filteractionmissingtemplatedialogtest.h"
 #include "../filter/dialog/filteractionmissingtemplatedialog.h"
-#include <KComboBox>
+#include <QComboBox>
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QStandardPaths>
@@ -47,7 +47,7 @@ void FilterActionMissingTemplateDialogTest::shouldHaveDefaultValue()
     QVERIFY(label);
     QVERIFY(!label->text().isEmpty());
 
-    KComboBox *mComboBoxTemplate = dlg.findChild<KComboBox *>(QStringLiteral("comboboxtemplate"));
+    QComboBox *mComboBoxTemplate = dlg.findChild<QComboBox *>(QStringLiteral("comboboxtemplate"));
     QVERIFY(mComboBoxTemplate);
 }
 
