@@ -20,18 +20,22 @@
 #include "snippetcustomfileattachmentnamedialog.h"
 #include "snippetcustomfileattachmentnamewidget.h"
 
+#include <KConfigGroup>
 #include <QDialogButtonBox>
 #include <QHBoxLayout>
 #include <QPushButton>
 #include <QVBoxLayout>
 
 #include <KLocalizedString>
-
+#include <KSharedConfig>
+namespace {
+static const char myConfigGroupName[] = "SnippetCustomFileAttachmentNameDialog";
+}
 using namespace MailCommon;
 SnippetCustomFileAttachmentNameDialog::SnippetCustomFileAttachmentNameDialog(QWidget *parent)
     : QDialog(parent)
 {
-    setWindowTitle(i18nc("@title:window", "Customize File Attachment"));
+    setWindowTitle(i18nc("@title:window", "Customize File Name Attachment"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
 
@@ -49,11 +53,28 @@ SnippetCustomFileAttachmentNameDialog::SnippetCustomFileAttachmentNameDialog(QWi
 
     mainLayout->addWidget(buttonBox);
 
-    resize(500, 150);
+    readConfig();
 }
 
 SnippetCustomFileAttachmentNameDialog::~SnippetCustomFileAttachmentNameDialog()
 {
+    writeConfig();
+}
+
+void SnippetCustomFileAttachmentNameDialog::readConfig()
+{
+    KConfigGroup group(KSharedConfig::openConfig(), myConfigGroupName);
+
+    const QSize size = group.readEntry("Size", QSize(500, 150));
+    if (size.isValid()) {
+        resize(size);
+    }
+}
+
+void SnippetCustomFileAttachmentNameDialog::writeConfig()
+{
+    KConfigGroup group(KSharedConfig::openConfig(), myConfigGroupName);
+    group.writeEntry("Size", size());
 }
 
 QString SnippetCustomFileAttachmentNameDialog::result() const

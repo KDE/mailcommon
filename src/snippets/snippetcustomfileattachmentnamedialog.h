@@ -40,6 +40,8 @@ public:
     void setText(const QString &str);
 
 private:
+    void readConfig();
+    void writeConfig();
     SnippetCustomFileAttachmentNameWidget *mCustomWidget = nullptr;
 };
 }
