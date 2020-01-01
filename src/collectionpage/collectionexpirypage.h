@@ -1,5 +1,5 @@
 /*
-  Copyright (c) 2009-2019 Montel Laurent <montel@kde.org>
+  Copyright (c) 2009-2020 Laurent Montel <montel@kde.org>
   Copyright (c) 2013 Jonathan Marten <jjm@keelhaul.me.uk>
 
   This program is free software; you can redistribute it and/or modify it
