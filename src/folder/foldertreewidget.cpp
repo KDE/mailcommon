@@ -375,8 +375,8 @@ bool FolderTreeWidget::eventFilter(QObject *o, QEvent *e)
             const int filterLength(d->filter.length());
             if (filterLength > 0) {
                 d->filter.truncate(filterLength - 1);
+                applyFilter(d->filter);
             }
-            applyFilter(d->filter);
             return false;
         }
         case Qt::Key_Delete:
