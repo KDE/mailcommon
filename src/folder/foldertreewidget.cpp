@@ -137,6 +137,7 @@ FolderTreeWidget::FolderTreeWidget(
         d->label->hide();
     } else {
         d->filterFolderLineEdit->hide();
+        setAttribute(Qt::WA_InputMethodEnabled);
     }
 }
 
