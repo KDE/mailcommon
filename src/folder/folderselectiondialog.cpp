@@ -80,8 +80,7 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
         KGuiItem::assign(d->mUser1Button, KGuiItem(i18n("&New Subfolder..."), QStringLiteral("folder-new"),
                                                    i18n("Create a new subfolder under the currently selected folder")));
     }
-    FolderTreeWidget::TreeViewOptions opt = FolderTreeWidget::DontKeyFilter;
-    opt |= FolderTreeWidget::UseLineEditForFiltering;
+    FolderTreeWidget::TreeViewOptions opt = FolderTreeWidget::None;
     if (options & FolderSelectionDialog::ShowUnreadCount) {
         opt |= FolderTreeWidget::ShowUnreadCount;
     }

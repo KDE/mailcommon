@@ -137,6 +137,7 @@ FolderTreeWidget::FolderTreeWidget(
         d->label->hide();
     } else {
         d->filterFolderLineEdit->hide();
+        setAttribute(Qt::WA_InputMethodEnabled);
     }
 }
 
@@ -394,6 +395,12 @@ bool FolderTreeWidget::eventFilter(QObject *o, QEvent *e)
             break;
         }
         }
+    } else if (e->type() == QEvent::InputMethod) {
+        const QInputMethodEvent *const ime = static_cast<QInputMethodEvent *>(e);
+        d->filter += ime->commitString();
+        applyFilter(d->filter);
+        return false;
+
     }
     return false;
 }
