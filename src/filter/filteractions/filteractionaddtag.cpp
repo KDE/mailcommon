@@ -52,8 +52,11 @@ QWidget *FilterActionAddTag::createParamWidget(QWidget *parent) const
     }
 
     setParamWidgetValue(mComboBox);
-
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     connect(mComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &FilterActionAddTag::filterActionModified);
+#else
+    connect(mComboBox, QOverload<int, const QString &>::of(&QComboBox::currentIndexChanged), this, &FilterActionAddTag::filterActionModified);
+#endif
 
     return mComboBox;
 }

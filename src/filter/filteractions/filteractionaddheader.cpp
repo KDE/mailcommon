@@ -101,8 +101,11 @@ QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
     layout->addWidget(lineEdit, 1);
 
     setParamWidgetValue(widget);
-
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     connect(comboBox, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &FilterActionAddHeader::filterActionModified);
+#else
+    connect(comboBox, QOverload<int, const QString &>::of(&KComboBox::currentIndexChanged), this, &FilterActionAddHeader::filterActionModified);
+#endif
     connect(comboBox->lineEdit(), &QLineEdit::textChanged,
             this, &FilterAction::filterActionModified);
     connect(lineEdit, &QLineEdit::textChanged, this, &FilterActionAddHeader::filterActionModified);

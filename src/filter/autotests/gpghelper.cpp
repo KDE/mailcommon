@@ -74,7 +74,7 @@ GPGHelper::~GPGHelper()
     auto env = gpgshutdown.processEnvironment();
     env.insert(QStringLiteral("GNUPGHOME"), gnupgHome());
     gpgshutdown.setProcessEnvironment(env);
-    gpgshutdown.start(QStringLiteral("gpg-connect-agent"));
+    gpgshutdown.start(QStringLiteral("gpg-connect-agent"), QStringList());
     QVERIFY(gpgshutdown.waitForStarted());
     gpgshutdown.write("KILLAGENT");
     gpgshutdown.closeWriteChannel();

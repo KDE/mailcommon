@@ -40,9 +40,11 @@ QWidget *FilterActionSetTransport::createParamWidget(QWidget *parent) const
     MailTransport::TransportComboBox *transportCombobox = new MailTransport::TransportComboBox(parent);
     transportCombobox->setObjectName(QStringLiteral("transportcombobox"));
     setParamWidgetValue(transportCombobox);
-
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     connect(transportCombobox, QOverload<int>::of(&MailTransport::TransportComboBox::currentIndexChanged), this, &FilterActionSetTransport::filterActionModified);
-
+#else
+    connect(transportCombobox, QOverload<int, const QString &>::of(&MailTransport::TransportComboBox::currentIndexChanged), this, &FilterActionSetTransport::filterActionModified);
+#endif
     return transportCombobox;
 }
 

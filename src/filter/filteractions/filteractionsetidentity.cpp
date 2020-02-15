@@ -106,8 +106,11 @@ QWidget *FilterActionSetIdentity::createParamWidget(QWidget *parent) const
     comboBox->setObjectName(QStringLiteral("identitycombobox"));
     comboBox->setCurrentIdentity(mParameter);
 
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     connect(comboBox, QOverload<int>::of(&KIdentityManagement::IdentityCombo::currentIndexChanged), this, &FilterActionSetIdentity::filterActionModified);
-
+#else
+    connect(comboBox, QOverload<int, const QString &>::of(&KIdentityManagement::IdentityCombo::currentIndexChanged), this, &FilterActionSetIdentity::filterActionModified);
+#endif
     return comboBox;
 }
 

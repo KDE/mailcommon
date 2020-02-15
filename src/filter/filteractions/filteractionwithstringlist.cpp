@@ -36,8 +36,11 @@ QWidget *FilterActionWithStringList::createParamWidget(QWidget *parent) const
     comboBox->setEditable(false);
     comboBox->addItems(mParameterList);
     setParamWidgetValue(comboBox);
-
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     connect(comboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &FilterActionWithStringList::filterActionModified);
+#else
+    connect(comboBox, QOverload<int, const QString &>::of(&QComboBox::currentIndexChanged), this, &FilterActionWithStringList::filterActionModified);
+#endif
 
     return comboBox;
 }
