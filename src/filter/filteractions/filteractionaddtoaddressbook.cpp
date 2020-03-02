@@ -249,7 +249,11 @@ QString FilterActionAddToAddressBook::argsAsString() const
 
 void FilterActionAddToAddressBook::argsFromString(const QString &argsStr)
 {
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     const QStringList parts = argsStr.split(QLatin1Char('\t'), QString::KeepEmptyParts);
+#else
+    const QStringList parts = argsStr.split(QLatin1Char('\t'), Qt::KeepEmptyParts);
+#endif
     const QString firstElement = parts[ 0 ];
     if (firstElement == QLatin1String("From")) {
         mHeaderType = FromHeader;
