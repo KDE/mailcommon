@@ -24,7 +24,6 @@
 #include <QDialog>
 #include "mailcommon_private_export.h"
 
-class QLineEdit;
 
 namespace MailCommon {
 class SnippetCustomFileAttachmentNameWidget;

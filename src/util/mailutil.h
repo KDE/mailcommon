@@ -53,7 +53,6 @@ class KJob;
 class QString;
 
 namespace MailCommon {
-class ExpireCollectionAttribute;
 /**
  * The Util namespace contains a collection of helper functions use in
  * various places.
