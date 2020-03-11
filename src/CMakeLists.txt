@@ -198,13 +198,9 @@ kconfig_add_kcfg_files(libmailcommon_SRCS
 )
 
 
-if (ECM_VERSION VERSION_LESS "5.68.0")
-    ecm_qt_declare_logging_category(libmailcommon_SRCS HEADER mailcommon_debug.h IDENTIFIER MAILCOMMON_LOG CATEGORY_NAME org.kde.pim.mailcommon)
-else()
-    ecm_qt_declare_logging_category(libmailcommon_SRCS HEADER mailcommon_debug.h IDENTIFIER MAILCOMMON_LOG CATEGORY_NAME org.kde.pim.mailcommon
+ecm_qt_declare_logging_category(libmailcommon_SRCS HEADER mailcommon_debug.h IDENTIFIER MAILCOMMON_LOG CATEGORY_NAME org.kde.pim.mailcommon
         OLD_CATEGORY_NAMES log_mailcommon
         DESCRIPTION "mailcommon (mailcommon)" EXPORT MAILCOMMON)
-endif()
 
 set_source_files_properties(${CMAKE_CURRENT_SOURCE_DIR}/dbusinterfaces/org.freedesktop.Akonadi.MailFilterAgent.xml PROPERTIES INCLUDE "dbusoperators.h")
 
@@ -515,6 +511,4 @@ if(BUILD_DESIGNERPLUGIN)
     add_subdirectory(designer)
 endif()
 
-if (NOT ECM_VERSION VERSION_LESS "5.68.0")
-   ecm_qt_install_logging_categories(EXPORT MAILCOMMON FILE mailcommon.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
-endif()
+ecm_qt_install_logging_categories(EXPORT MAILCOMMON FILE mailcommon.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
