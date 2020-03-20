@@ -107,8 +107,6 @@ MDNAdviceDialog::MDNAdviceDialog(const QString &text, bool canDeny, QWidget *par
     user1Button = new QPushButton;
     buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
     connect(user1Button, &QPushButton::clicked, this, &MDNAdviceDialog::slotUser1Clicked);
-    connect(buttonBox, &QDialogButtonBox::accepted, this, &MDNAdviceDialog::accept);
-    connect(buttonBox, &QDialogButtonBox::rejected, this, &MDNAdviceDialog::reject);
     if (canDeny) {
         QPushButton *user2Button = new QPushButton;
         connect(user2Button, &QPushButton::clicked, this, &MDNAdviceDialog::slotUser2Clicked);
