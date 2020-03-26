@@ -140,11 +140,7 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
     collectionComboBox->setToolTip(i18n("This defines the preferred address book.\n"
                                         "If it is not accessible, the filter will fallback to the default address book."));
     layout->addWidget(collectionComboBox, 1, 2);
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     connect(headerCombo, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &FilterActionAddToAddressBook::filterActionModified);
-#else
-    connect(headerCombo, QOverload<int, const QString &>::of(&KComboBox::currentIndexChanged), this, &FilterActionAddToAddressBook::filterActionModified);
-#endif
     connect(collectionComboBox, QOverload<int>::of(&Akonadi::CollectionComboBox::activated), this, &FilterActionAddToAddressBook::filterActionModified);
     connect(categoryEdit, SIGNAL(selectionChanged(QStringList)),
             this, SIGNAL(filterActionModified()));
@@ -194,11 +190,7 @@ void FilterActionAddToAddressBook::applyParamWidgetValue(QWidget *paramWidget)
     // we use the previously 'stored' value from the 'collectionId' property
     if (collection.isValid()) {
         mCollectionId = collection.id();
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
         connect(collectionComboBox, QOverload<int>::of(&Akonadi::CollectionComboBox::currentIndexChanged), this, &FilterActionAddToAddressBook::filterActionModified);
-#else
-        connect(collectionComboBox, QOverload<int, const QString &>::of(&Akonadi::CollectionComboBox::currentIndexChanged), this, &FilterActionAddToAddressBook::filterActionModified);
-#endif
     } else {
         const QVariant value = collectionComboBox->property("collectionId");
         if (value.isValid()) {

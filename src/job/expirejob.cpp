@@ -80,10 +80,10 @@ void ExpireJob::execute()
 {
     mMaxUnreadTime = 0;
     mMaxReadTime = 0;
-    int unreadDays, readDays;
 
     const MailCommon::ExpireCollectionAttribute *expirationAttribute = mSrcFolder.attribute<MailCommon::ExpireCollectionAttribute>();
     if (expirationAttribute) {
+        int unreadDays, readDays;
         expirationAttribute->daysToExpire(unreadDays, readDays);
 
         if (unreadDays > 0) {

@@ -291,9 +291,7 @@ void FolderSettings::writeConfig() const
 
 void FolderSettings::setShortcut(const QKeySequence &sc)
 {
-    if (mShortcut != sc) {
-        mShortcut = sc;
-    }
+    mShortcut = sc;
 }
 
 const QKeySequence &FolderSettings::shortcut() const

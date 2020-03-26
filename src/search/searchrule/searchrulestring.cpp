@@ -178,13 +178,13 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
 
     bool rc = matchesInternal(msgContents);
     if (FilterLog::instance()->isLogging()) {
-        QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>") : QStringLiteral("<font color=#FF0000>0 = </font>"));
-        msg += FilterLog::recode(asString());
+        QString msgStr = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>") : QStringLiteral("<font color=#FF0000>0 = </font>"));
+        msgStr += FilterLog::recode(asString());
         // only log headers because messages and bodies can be pretty large
         if (logContents) {
-            msg += QLatin1String(" (<i>") + FilterLog::recode(msgContents) + QLatin1String("</i>)");
+            msgStr += QLatin1String(" (<i>") + FilterLog::recode(msgContents) + QLatin1String("</i>)");
         }
-        FilterLog::instance()->add(msg, FilterLog::RuleResult);
+        FilterLog::instance()->add(msgStr, FilterLog::RuleResult);
     }
     return rc;
 }

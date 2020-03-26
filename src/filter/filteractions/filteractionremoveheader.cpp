@@ -50,11 +50,7 @@ QWidget *FilterActionRemoveHeader::createParamWidget(QWidget *parent) const
     comboBox->setMinimumWidth(50);
     comboBox->setInsertPolicy(QComboBox::InsertAtBottom);
     setParamWidgetValue(comboBox);
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     connect(comboBox, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &FilterActionRemoveHeader::filterActionModified);
-#else
-    connect(comboBox, QOverload<int, const QString &>::of(&KComboBox::currentIndexChanged), this, &FilterActionRemoveHeader::filterActionModified);
-#endif
     connect(comboBox->lineEdit(), &QLineEdit::textChanged,
             this, &FilterAction::filterActionModified);
 
