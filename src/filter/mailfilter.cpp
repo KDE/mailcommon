@@ -137,8 +137,6 @@ QString MailFilter::name() const
 
 MailFilter::ReturnCode MailFilter::execActions(ItemContext &context, bool &stopIt, bool applyOnOutbound) const
 {
-    ReturnCode status = NoResult;
-
     QVector<FilterAction *>::const_iterator it(mActions.constBegin());
     QVector<FilterAction *>::const_iterator end(mActions.constEnd());
     for (; it != end; ++it) {
@@ -148,7 +146,7 @@ MailFilter::ReturnCode MailFilter::execActions(ItemContext &context, bool &stopI
             FilterLog::instance()->add(logText, FilterLog::AppliedAction);
         }
 
-        FilterAction::ReturnCode result = (*it)->process(context, applyOnOutbound);
+        const FilterAction::ReturnCode result = (*it)->process(context, applyOnOutbound);
 
         switch (result) {
         case FilterAction::CriticalError:
@@ -171,13 +169,9 @@ MailFilter::ReturnCode MailFilter::execActions(ItemContext &context, bool &stopI
         }
     }
 
-    if (status == NoResult) { // No filters matched, keep copy of message
-        status = GoOn;
-    }
-
     stopIt = stopProcessingHere();
 
-    return status;
+    return GoOn;
 }
 
 QVector<FilterAction *> *MailFilter::actions()

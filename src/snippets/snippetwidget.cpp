@@ -73,11 +73,7 @@ SnippetWidget::SnippetWidget(QWidget *parent)
         Q_EMIT textChanged(str);
         d->wasChanged = true;
     });
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     connect(d->mUi.groupBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, [this](int index) {
-#else
-    connect(d->mUi.groupBox, QOverload<int, const QString &>::of(&QComboBox::currentIndexChanged), this, [this](int index) {
-#endif
         Q_EMIT groupChanged(index);
         d->wasChanged = true;
     });

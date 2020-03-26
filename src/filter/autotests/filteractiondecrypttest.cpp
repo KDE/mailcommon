@@ -91,7 +91,7 @@ void FilterActionDecryptTest::shouldDecrypt()
 
     auto decrypted = newMsg->encodedContent();
     KMime::Message decryptedContent;
-    decryptedContent.setContent(newMsg->encodedContent());
+    decryptedContent.setContent(decrypted);
     decryptedContent.parse();
     KMime::Message expectedContent;
     expectedContent.setContent(content);
