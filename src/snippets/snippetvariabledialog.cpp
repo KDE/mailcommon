@@ -32,7 +32,7 @@
 #include <KConfigGroup>
 #include <KSharedConfig>
 
-#include <kpimtextedit/plaintexteditorwidget.h>
+#include <KPIMTextEdit/PlainTextEditorWidget>
 
 using namespace MailCommon;
 namespace {

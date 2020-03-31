@@ -47,16 +47,16 @@
 #include "kernel/mailkernel.h"
 #include "filter/dialog/filteractionmissingfolderdialog.h"
 
-#include "mailimporter/filterbalsa.h"
-#include "mailimporter/filterevolution.h"
-#include "mailimporter/filterevolution_v2.h"
-#include "mailimporter/filterevolution_v3.h"
-#include "mailimporter/filterclawsmail.h"
-#include "mailimporter/filtersylpheed.h"
-#include "mailimporter/filterthunderbird.h"
-#include "mailimporter/filteropera.h"
-#include "mailimporter/filtericedove.h"
-#include "mailimporter/othermailerutil.h"
+#include <MailImporter/FilterBalsa>
+#include <MailImporter/FilterEvolution>
+#include <MailImporter/FilterEvolution_v2>
+#include <MailImporter/FilterEvolution_v3>
+#include <MailImporter/FilterClawsMail>
+#include <MailImporter/FilterSylpheed>
+#include <MailImporter/FilterThunderbird>
+#include <MailImporter/FilterOpera>
+#include <MailImporter/FilterIcedove>
+#include <MailImporter/OtherMailerUtil>
 
 #include <MessageCore/StringUtil>
 

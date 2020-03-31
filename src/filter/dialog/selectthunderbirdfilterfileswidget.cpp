@@ -18,7 +18,7 @@
 
 #include "selectthunderbirdfilterfileswidget.h"
 #include "ui_selectthunderbirdfilterfileswidget.h"
-#include "mailimporter/filterthunderbird.h"
+#include <MailImporter/FilterThunderbird>
 #include <QAbstractButton>
 #include <QListWidgetItem>
 

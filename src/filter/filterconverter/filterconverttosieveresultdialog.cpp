@@ -17,8 +17,8 @@
 */
 
 #include "filterconverttosieveresultdialog.h"
-#include "kpimtextedit/plaintexteditor.h"
-#include "kpimtextedit/plaintexteditorwidget.h"
+#include <KPIMTextEdit/PlainTextEditor>
+#include <KPIMTextEdit/PlainTextEditorWidget>
 #include <PimCommon/PimUtil>
 #include "filterconverttosievepurposemenuwidget.h"
 

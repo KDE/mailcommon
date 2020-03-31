@@ -18,7 +18,7 @@
  */
 
 #include "filteractionsetidentity.h"
-#include "MessageCore/StringUtil"
+#include <MessageCore/StringUtil>
 
 #include "kernel/mailkernel.h"
 #include "filter/dialog/filteractionmissingidentitydialog.h"
