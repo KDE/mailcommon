@@ -28,7 +28,7 @@
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
 #include <MessageComposer/Util>
-#include <messageviewer/messageviewersettings.h>
+#include <MessageViewer/MessageViewerSettings>
 
 #include <KLocalizedString>
 

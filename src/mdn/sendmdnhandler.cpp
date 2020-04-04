@@ -28,7 +28,7 @@
 #include <MessageComposer/Util>
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
-#include <messageviewer/messageviewersettings.h>
+#include <MessageViewer/MessageViewerSettings>
 
 #include <Collection>
 #include <Item>

@@ -22,7 +22,7 @@
 #include <QLabel>
 #include <KLineEdit>
 #include <QComboBox>
-#include <libkdepimakonadi/tagwidgets.h>
+#include <LibkdepimAkonadi/TagWidgets>
 #include <AkonadiWidgets/CollectionComboBox>
 
 FilterActionAddToAddressBookTest::FilterActionAddToAddressBookTest(QObject *parent)

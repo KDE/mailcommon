@@ -24,9 +24,9 @@
 #include <MessageComposer/Util>
 using MessageComposer::MessageFactoryNG;
 
-#include <messageviewer/messageviewersettings.h>
+#include <MessageViewer/MessageViewerSettings>
 #ifndef QT_NO_CURSOR
-#include <libkdepim/kcursorsaver.h>
+#include <Libkdepim/KCursorSaver>
 #endif
 #include <MimeTreeParser/ObjectTreeParser>
 

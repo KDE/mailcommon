@@ -40,7 +40,7 @@
 #include "encryptionwidgethandler.h"
 #include "interfaces/rulewidgethandler.h"
 
-#include <messageviewer/stl_util.h>
+#include <MessageViewer/Stl_Util>
 
 #include <QObject>
 #include <QStackedWidget>
