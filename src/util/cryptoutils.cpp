@@ -164,7 +164,7 @@ void CryptoUtils::copyHeader(const KMime::Headers::Base *header, KMime::Message:
     if (!newHdr) {
         newHdr = new KMime::Headers::Generic(header->type());
     }
-    newHdr->fromUnicodeString(header->asUnicodeString(), "UTF-8");
+    newHdr->from7BitString(header->as7BitString(false));
     msg->appendHeader(newHdr);
 }
 
