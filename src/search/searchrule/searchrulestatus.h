@@ -27,8 +27,8 @@ namespace MailCommon {
 //TODO: Check if the below one is needed or not!
 // The below are used in several places and here so they are accessible.
 struct MessageStatusInfo {
-    const char *text;
     const char *context;
+    const char *text;
     const char *icon;
 };
 
