@@ -82,9 +82,6 @@ static const int SpecialRuleFieldsCount
 
 SearchRuleWidget::SearchRuleWidget(QWidget *parent, SearchRule::Ptr aRule, SearchPatternEdit::SearchPatternEditOptions options, SearchPatternEdit::SearchModeType modeType)
     : QWidget(parent)
-    , mRuleField(nullptr)
-    , mFunctionStack(nullptr)
-    , mValueStack(nullptr)
 {
     initFieldList(options);
     initWidget(modeType);
