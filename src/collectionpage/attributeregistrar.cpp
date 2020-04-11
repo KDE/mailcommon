@@ -17,7 +17,7 @@
     02110-1301, USA.
 */
 
-#include <AkonadiCore/NewMailNotifierAttribute>
+#include <Akonadi/KMime/NewMailNotifierAttribute>
 #include "collectionpage/attributes/expirecollectionattribute.h"
 
 #include <AkonadiCore/attributefactory.h>

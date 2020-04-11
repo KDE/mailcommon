@@ -32,7 +32,7 @@
 #include <Collection>
 #include <CollectionModifyJob>
 #include <EntityDisplayAttribute>
-#include <AkonadiCore/NewMailNotifierAttribute>
+#include <Akonadi/KMime/NewMailNotifierAttribute>
 #include <KIdentityManagement/IdentityCombo>
 #include <PimCommonAkonadi/ImapResourceCapabilitiesManager>
 

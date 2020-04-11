@@ -68,7 +68,7 @@
 #include <ItemFetchJob>
 #include <ItemFetchScope>
 #include <Akonadi/KMime/MessageParts>
-#include <AkonadiCore/NewMailNotifierAttribute>
+#include <Akonadi/KMime/NewMailNotifierAttribute>
 #include <AkonadiCore/ServerManager>
 
 #include <KMime/KMimeMessage>

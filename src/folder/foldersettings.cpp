@@ -22,7 +22,7 @@
 #include "util/mailutil.h"
 #include "util/resourcereadconfigfile.h"
 #include <PimCommon/PimUtil>
-#include <AkonadiCore/NewMailNotifierAttribute>
+#include <Akonadi/KMime/NewMailNotifierAttribute>
 #include "mailcommon_debug.h"
 #include <ItemFetchJob>
 #include <ItemFetchScope>
