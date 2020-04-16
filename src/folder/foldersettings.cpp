@@ -220,6 +220,8 @@ void FolderSettings::readConfig()
 
     mFormatMessage = static_cast<MessageViewer::Viewer::DisplayFormatMessage>(configGroup.readEntry("displayFormatOverride",
                                                                                                     static_cast<int>(MessageViewer::Viewer::UseGlobalSetting)));
+
+    mFolderHtmlLoadExtPreference = configGroup.readEntry("htmlLoadExternalOverride", false);
 }
 
 bool FolderSettings::isValid() const
@@ -287,6 +289,11 @@ void FolderSettings::writeConfig() const
             configGroup.writeEntry("displayFormatOverride", static_cast<int>(mFormatMessage));
         }
     }
+    if (mFolderHtmlLoadExtPreference) {
+        configGroup.writeEntry("htmlLoadExternalOverride", mFolderHtmlLoadExtPreference);
+    } else {
+        configGroup.deleteEntry("htmlLoadExternalOverride");
+    }
 }
 
 void FolderSettings::setShortcut(const QKeySequence &sc)
@@ -333,6 +340,16 @@ QString FolderSettings::resource() const
         return col.resource();
     }
     return resource;
+}
+
+bool FolderSettings::folderHtmlLoadExtPreference() const
+{
+    return mFolderHtmlLoadExtPreference;
+}
+
+void FolderSettings::setFolderHtmlLoadExtPreference(bool folderHtmlLoadExtPreference)
+{
+    mFolderHtmlLoadExtPreference = folderHtmlLoadExtPreference;
 }
 
 uint FolderSettings::fallBackIdentity() const

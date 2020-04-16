@@ -121,6 +121,9 @@ public:
     Q_REQUIRED_RESULT MessageViewer::Viewer::DisplayFormatMessage formatMessage() const;
     void setFormatMessage(MessageViewer::Viewer::DisplayFormatMessage formatMessage);
 
+    Q_REQUIRED_RESULT bool folderHtmlLoadExtPreference() const;
+    void setFolderHtmlLoadExtPreference(bool folderHtmlLoadExtPreference);
+
 protected Q_SLOTS:
     void slotIdentitiesChanged();
 
@@ -143,6 +146,8 @@ private:
 
     /** Should this folder be hidden in the folder selection dialog? */
     bool mHideInSelectionDialog = false;
+
+    bool mFolderHtmlLoadExtPreference = false;
 
     /** shortcut associated with this folder or null, if none is configured. */
     QKeySequence mShortcut;
