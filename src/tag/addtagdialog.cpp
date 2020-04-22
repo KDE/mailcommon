@@ -21,7 +21,7 @@
 #include "mailcommon_debug.h"
 
 #include <KLocalizedString>
-#include <KLineEdit>
+#include <QLineEdit>
 #include <KMessageBox>
 #include <KJob>
 
@@ -58,7 +58,7 @@ AddTagDialog::AddTagDialog(const QList<KActionCollection *> &actions, QWidget *p
     d->mTagWidget = new MailCommon::TagWidget(actions, this);
     mainLayout->addWidget(d->mTagWidget);
 
-    connect(d->mTagWidget->tagNameLineEdit(), &KLineEdit::textChanged, this, &AddTagDialog::slotTagNameChanged);
+    connect(d->mTagWidget->tagNameLineEdit(), &QLineEdit::textChanged, this, &AddTagDialog::slotTagNameChanged);
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     d->mOkButton = buttonBox->button(QDialogButtonBox::Ok);

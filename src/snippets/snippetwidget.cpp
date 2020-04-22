@@ -31,7 +31,7 @@
 #include <QVBoxLayout>
 using namespace MailCommon;
 
-class SnippetWidgetPrivate
+class Q_DECL_HIDDEN SnippetWidgetPrivate
 {
 public:
     Ui::SnippetWidget mUi;

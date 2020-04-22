@@ -18,6 +18,8 @@
 
 #include "tagwidget.h"
 
+#include <Libkdepim/LineEditCatchReturnKey>
+
 #include <QVBoxLayout>
 #include <QGridLayout>
 #include <QLabel>
@@ -26,7 +28,7 @@
 #include <KIconButton>
 #include <KKeySequenceWidget>
 #include <KActionCollection>
-#include <KLineEdit>
+#include <QLineEdit>
 #include <KLocalizedString>
 #include <QIcon>
 using namespace MailCommon;
@@ -34,21 +36,10 @@ class MailCommon::TagWidgetPrivate
 {
 public:
     TagWidgetPrivate()
-        : mTagNameLineEdit(nullptr)
-        , mTextColorCheck(nullptr)
-        , mBackgroundColorCheck(nullptr)
-        , mTextFontCheck(nullptr)
-        , mInToolbarCheck(nullptr)
-        , mTextColorCombo(nullptr)
-        , mBackgroundColorCombo(nullptr)
-        , mBoldCheckBox(nullptr)
-        , mItalicCheckBox(nullptr)
-        , mIconButton(nullptr)
-        , mKeySequenceWidget(nullptr)
     {
     }
 
-    KLineEdit *mTagNameLineEdit = nullptr;
+    QLineEdit *mTagNameLineEdit = nullptr;
 
     QCheckBox *mTextColorCheck = nullptr;
     QCheckBox *mBackgroundColorCheck = nullptr;
@@ -78,9 +69,9 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     settings->addLayout(spacer, 0, 0, 1, 2);
 
     //First row for renaming
-    d->mTagNameLineEdit = new KLineEdit(this);
+    d->mTagNameLineEdit = new QLineEdit(this);
     d->mTagNameLineEdit->setClearButtonEnabled(true);
-    d->mTagNameLineEdit->setTrapReturnKey(true);
+    new KPIM::LineEditCatchReturnKey(d->mTagNameLineEdit, this);
     settings->addWidget(d->mTagNameLineEdit, 1, 1);
 
     QLabel *namelabel = new QLabel(i18nc("@label:listbox Name of the tag", "Name:"),
@@ -88,7 +79,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     namelabel->setBuddy(d->mTagNameLineEdit);
     settings->addWidget(namelabel, 1, 0);
 
-    connect(d->mTagNameLineEdit, &KLineEdit::textChanged, this, &TagWidget::slotEmitChangeCheck);
+    connect(d->mTagNameLineEdit, &QLineEdit::textChanged, this, &TagWidget::slotEmitChangeCheck);
 
     //Second row for text color
     d->mTextColorCheck = new QCheckBox(i18n("Change te&xt color:"),
@@ -250,7 +241,7 @@ void TagWidget::recordTagSettings(MailCommon::Tag::Ptr tag)
     tag->inToolbar = d->mInToolbarCheck->isChecked();
 }
 
-KLineEdit *TagWidget::tagNameLineEdit() const
+QLineEdit *TagWidget::tagNameLineEdit() const
 {
     return d->mTagNameLineEdit;
 }

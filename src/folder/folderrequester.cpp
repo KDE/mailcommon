@@ -31,10 +31,11 @@
 #include "folderselectiondialog.h"
 #include "util/mailutil.h"
 #include "kernel/mailkernel.h"
-
+#include <Libkdepim/LineEditCatchReturnKey>
 #include <CollectionFetchJob>
 
-#include <KLineEdit>
+#include <QPointer>
+#include <QLineEdit>
 #include <KLocalizedString>
 #include <QIcon>
 
@@ -51,7 +52,7 @@ public:
     }
 
     Akonadi::Collection mCollection;
-    KLineEdit *mEdit = nullptr;
+    QLineEdit *mEdit = nullptr;
     bool mMustBeReadWrite = false;
     bool mShowOutbox = false;
     bool mNotCreateNewFolder = false;
@@ -64,9 +65,9 @@ FolderRequester::FolderRequester(QWidget *parent)
     QHBoxLayout *hlay = new QHBoxLayout(this);
     hlay->setContentsMargins(0, 0, 0, 0);
 
-    d->mEdit = new KLineEdit(this);
+    d->mEdit = new QLineEdit(this);
     d->mEdit->setPlaceholderText(i18n("Select Folder"));
-    d->mEdit->setTrapReturnKey(true);
+    new KPIM::LineEditCatchReturnKey(d->mEdit, this);
     d->mEdit->setReadOnly(true);
     hlay->addWidget(d->mEdit);
 

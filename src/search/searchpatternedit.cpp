@@ -22,9 +22,10 @@
 using MailCommon::RuleWidgetHandlerManager;
 #include "mailcommon_debug.h"
 
+#include <Libkdepim/LineEditCatchReturnKey>
 #include <KLocalizedString>
 #include <QPushButton>
-#include <KLineEdit>
+#include <QLineEdit>
 #include <QIcon>
 #include <KComboBox>
 #include <QButtonGroup>
@@ -154,7 +155,8 @@ void SearchRuleWidget::initWidget(SearchPatternEdit::SearchModeType modeType)
     mRuleField->setMinimumWidth(50);
     mRuleField->setObjectName(QStringLiteral("mRuleField"));
     mRuleField->setEditable(true);
-    KLineEdit *edit = new KLineEdit;
+    QLineEdit *edit = new QLineEdit;
+    new KPIM::LineEditCatchReturnKey(edit, this);
     edit->setPlaceholderText(i18n("Choose or type your own criteria"));
     mRuleField->setToolTip(i18n("Choose or type your own criteria"));
     edit->setClearButtonEnabled(true);

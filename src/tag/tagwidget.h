@@ -25,7 +25,7 @@
 
 #include <QWidget>
 
-class KLineEdit;
+class QLineEdit;
 class KColorCombo;
 class KIconButton;
 class KKeySequenceWidget;
@@ -43,7 +43,7 @@ public:
 
     void recordTagSettings(MailCommon::Tag::Ptr tag);
 
-    Q_REQUIRED_RESULT KLineEdit *tagNameLineEdit() const;
+    Q_REQUIRED_RESULT QLineEdit *tagNameLineEdit() const;
     Q_REQUIRED_RESULT QCheckBox *textColorCheck() const;
     Q_REQUIRED_RESULT QCheckBox *textFontCheck() const;
     Q_REQUIRED_RESULT QCheckBox *backgroundColorCheck() const;
