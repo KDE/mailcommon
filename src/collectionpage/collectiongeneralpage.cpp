@@ -35,6 +35,7 @@
 #include <Akonadi/KMime/NewMailNotifierAttribute>
 #include <KIdentityManagement/IdentityCombo>
 #include <PimCommonAkonadi/ImapResourceCapabilitiesManager>
+#include <Libkdepim/LineEditCatchReturnKey>
 
 #include <KColorScheme>
 #include <KLineEdit>
@@ -93,10 +94,10 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
         label = new QLabel(i18nc("@label:textbox Name of the folder.", "&Name:"), this);
         hl->addWidget(label);
 
-        mNameEdit = new KLineEdit(this);
-        mNameEdit->setTrapReturnKey(true);
+        mNameEdit = new QLineEdit(this);
+        new KPIM::LineEditCatchReturnKey(mNameEdit, this);
 
-        connect(mNameEdit, &KLineEdit::textChanged, this, &CollectionGeneralPage::slotNameChanged);
+        connect(mNameEdit, &QLineEdit::textChanged, this, &CollectionGeneralPage::slotNameChanged);
         label->setBuddy(mNameEdit);
         hl->addWidget(mNameEdit);
     }
