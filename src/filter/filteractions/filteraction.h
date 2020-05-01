@@ -184,7 +184,7 @@ public:
      * Automates the sending of MDNs from filter actions.
      */
     static void sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionType d, const QVector<KMime::MDN::DispositionModifier> &m
-                            = QVector<KMime::MDN::DispositionModifier>());
+                        = QVector<KMime::MDN::DispositionModifier>());
 
 Q_SIGNALS:
     /**

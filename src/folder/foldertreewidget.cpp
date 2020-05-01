@@ -400,7 +400,6 @@ bool FolderTreeWidget::eventFilter(QObject *o, QEvent *e)
         d->filter += ime->commitString();
         applyFilter(d->filter);
         return false;
-
     }
     return false;
 }

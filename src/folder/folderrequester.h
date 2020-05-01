@@ -33,7 +33,6 @@
 
 #include <Collection>
 
-
 #include <QWidget>
 
 class QKeyEvent;

@@ -38,7 +38,6 @@ SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWi
     lineEditLayout->setObjectName(QStringLiteral("lineEditLayout"));
     lineEditLayout->setContentsMargins(0, 0, 0, 0);
 
-
     QLabel *label = new QLabel(i18n("Filename:"), this);
     label->setObjectName(QStringLiteral("label"));
     lineEditLayout->addWidget(label);
@@ -47,9 +46,7 @@ SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWi
     mLineEdit->setObjectName(QStringLiteral("mLineEdit"));
     lineEditLayout->addWidget(mLineEdit);
 
-
     mainLayout->addLayout(lineEditLayout);
-
 
     QHBoxLayout *convertMenuLayout = new QHBoxLayout;
     convertMenuLayout->setObjectName(QStringLiteral("convertMenuLayout"));

@@ -24,7 +24,6 @@
 #include <QDialog>
 #include "mailcommon_private_export.h"
 
-
 namespace MailCommon {
 class SnippetCustomFileAttachmentNameWidget;
 class MAILCOMMON_TESTS_EXPORT SnippetCustomFileAttachmentNameDialog : public QDialog
