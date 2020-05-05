@@ -20,7 +20,9 @@
 #include "filteractionaddtoaddressbook.h"
 
 #include <LibkdepimAkonadi/AddContactJob>
-#include <LibkdepimAkonadi/TagWidgets>
+
+#include <AkonadiWidgets/TagSelectionDialog>
+#include <AkonadiWidgets/TagWidget>
 
 #include <CollectionComboBox>
 #include <KContacts/Addressee>
@@ -124,7 +126,7 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
     label->setObjectName(QStringLiteral("label_with_category"));
     layout->addWidget(label, 0, 1);
 
-    KPIM::TagWidget *categoryEdit = new KPIM::TagWidget(widget);
+    auto categoryEdit = new Akonadi::TagWidget(widget);
     categoryEdit->setObjectName(QStringLiteral("CategoryEdit"));
     layout->addWidget(categoryEdit, 0, 2);
 
@@ -142,12 +144,33 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
     layout->addWidget(collectionComboBox, 1, 2);
     connect(headerCombo, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &FilterActionAddToAddressBook::filterActionModified);
     connect(collectionComboBox, QOverload<int>::of(&Akonadi::CollectionComboBox::activated), this, &FilterActionAddToAddressBook::filterActionModified);
-    connect(categoryEdit, SIGNAL(selectionChanged(QStringList)),
-            this, SIGNAL(filterActionModified()));
+    connect(categoryEdit, &Akonadi::TagWidget::selectionChanged, this, &FilterActionAddToAddressBook::filterActionModified);
 
     setParamWidgetValue(widget);
 
     return widget;
+}
+
+namespace {
+
+Akonadi::Tag::List namesToTags(const QStringList &names)
+{
+    Akonadi::Tag::List tags;
+    tags.reserve(names.size());
+    std::transform(names.cbegin(), names.cend(), std::back_inserter(tags),
+                   [](const QString &name) { return Akonadi::Tag{name}; });
+    return tags;
+}
+
+QStringList tagsToNames(const Akonadi::Tag::List &tags)
+{
+    QStringList names;
+    names.reserve(tags.size());
+    std::transform(tags.cbegin(), tags.cend(), std::back_inserter(names),
+                   std::bind(&Akonadi::Tag::name, std::placeholders::_1));
+    return names;
+}
+
 }
 
 void FilterActionAddToAddressBook::setParamWidgetValue(QWidget *paramWidget) const
@@ -162,9 +185,9 @@ void FilterActionAddToAddressBook::setParamWidgetValue(QWidget *paramWidget) con
 
     headerCombo->setCurrentIndex(headerCombo->findData(mHeaderType));
 
-    KPIM::TagWidget *categoryEdit = paramWidget->findChild<KPIM::TagWidget *>(QStringLiteral("CategoryEdit"));
+    auto categoryEdit = paramWidget->findChild<Akonadi::TagWidget *>(QStringLiteral("CategoryEdit"));
     Q_ASSERT(categoryEdit);
-    categoryEdit->setSelection(mCategory.split(QLatin1Char(';')));
+    categoryEdit->setSelection(namesToTags(mCategory.split(QLatin1Char(';'))));
 
     Akonadi::CollectionComboBox *collectionComboBox = paramWidget->findChild<Akonadi::CollectionComboBox *>(QStringLiteral("AddressBookComboBox"));
     Q_ASSERT(collectionComboBox);
@@ -178,9 +201,9 @@ void FilterActionAddToAddressBook::applyParamWidgetValue(QWidget *paramWidget)
     Q_ASSERT(headerCombo);
     mHeaderType = static_cast<HeaderType>(headerCombo->itemData(headerCombo->currentIndex()).toInt());
 
-    const KPIM::TagWidget *categoryEdit = paramWidget->findChild<KPIM::TagWidget *>(QStringLiteral("CategoryEdit"));
+    const auto categoryEdit = paramWidget->findChild<Akonadi::TagWidget *>(QStringLiteral("CategoryEdit"));
     Q_ASSERT(categoryEdit);
-    mCategory = categoryEdit->selection().join(QLatin1Char(';'));
+    mCategory = tagsToNames(categoryEdit->selection()).join(QLatin1Char(';'));
 
     const Akonadi::CollectionComboBox *collectionComboBox = paramWidget->findChild<Akonadi::CollectionComboBox *>(QStringLiteral("AddressBookComboBox"));
     Q_ASSERT(collectionComboBox);
@@ -205,9 +228,9 @@ void FilterActionAddToAddressBook::clearParamWidget(QWidget *paramWidget) const
     Q_ASSERT(headerCombo);
     headerCombo->setCurrentIndex(0);
 
-    KPIM::TagWidget *categoryEdit = paramWidget->findChild<KPIM::TagWidget *>(QStringLiteral("CategoryEdit"));
+    auto categoryEdit = paramWidget->findChild<Akonadi::TagWidget *>(QStringLiteral("CategoryEdit"));
     Q_ASSERT(categoryEdit);
-    categoryEdit->setSelection(mCategory.split(QLatin1Char(';')));
+    categoryEdit->setSelection(namesToTags(mCategory.split(QLatin1Char(';'))));
 }
 
 QString FilterActionAddToAddressBook::argsAsString() const

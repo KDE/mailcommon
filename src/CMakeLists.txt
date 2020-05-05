@@ -240,6 +240,7 @@ PUBLIC
   KF5::PimCommonAkonadi
   KF5::Completion
 PRIVATE
+  KF5::AkonadiWidgets
   KF5::TextWidgets
   KF5::I18n
   KF5::LibkdepimAkonadi

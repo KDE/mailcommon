@@ -22,8 +22,9 @@
 #include <QLabel>
 #include <KLineEdit>
 #include <QComboBox>
-#include <LibkdepimAkonadi/TagWidgets>
+
 #include <AkonadiWidgets/CollectionComboBox>
+#include <AkonadiWidgets/TagWidget>
 
 FilterActionAddToAddressBookTest::FilterActionAddToAddressBookTest(QObject *parent)
     : QObject(parent)
@@ -45,7 +46,7 @@ void FilterActionAddToAddressBookTest::shouldHaveDefaultValue()
     QLabel *label = w->findChild<QLabel *>(QStringLiteral("label_with_category"));
     QVERIFY(label);
 
-    KPIM::TagWidget *categoryEdit = w->findChild<KPIM::TagWidget *>(QStringLiteral("CategoryEdit"));
+    auto categoryEdit = w->findChild<Akonadi::TagWidget *>(QStringLiteral("CategoryEdit"));
     QVERIFY(categoryEdit);
 
     label = w->findChild<QLabel *>(QStringLiteral("label_in_addressbook"));
