@@ -53,6 +53,7 @@ public:
 
     Akonadi::Collection mCollection;
     QLineEdit *mEdit = nullptr;
+    QString mSelectFolderTitleDialog;
     bool mMustBeReadWrite = false;
     bool mShowOutbox = false;
     bool mNotCreateNewFolder = false;
@@ -95,7 +96,7 @@ void FolderRequester::slotOpenDialog()
     }
 
     QPointer<FolderSelectionDialog> dlg(new FolderSelectionDialog(this, options));
-    dlg->setWindowTitle(i18nc("@title:window", "Select Folder"));
+    dlg->setWindowTitle(d->mSelectFolderTitleDialog.isEmpty() ? i18nc("@title:window", "Select Folder") : d->mSelectFolderTitleDialog);
     dlg->setModal(false);
     dlg->setSelectedCollection(d->mCollection);
 
@@ -200,5 +201,10 @@ void FolderRequester::setShowOutbox(bool show)
 void FolderRequester::setNotAllowToCreateNewFolder(bool notCreateNewFolder)
 {
     d->mNotCreateNewFolder = notCreateNewFolder;
+}
+
+void FolderRequester::setSelectFolderTitleDialog(const QString &title)
+{
+    d->mSelectFolderTitleDialog = title;
 }
 } // namespace MailCommon

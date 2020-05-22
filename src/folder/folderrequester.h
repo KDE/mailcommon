@@ -93,6 +93,8 @@ public:
 
     void setNotAllowToCreateNewFolder(bool notCreateNewFolder);
 
+    void setSelectFolderTitleDialog(const QString &title);
+
 protected Q_SLOTS:
     /**
      * Opens the folder dialog.
