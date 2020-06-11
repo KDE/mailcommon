@@ -28,12 +28,12 @@ QStringList FilterActionWithCrypto::getEncryptionKeysFromContent(const KMime::Me
 {
     if (protocol == GpgME::CMS && mGpgSmPath.isNull()) {
         const auto path = QStandardPaths::findExecutable(QStringLiteral("gpgsm"));
-        mGpgSmPath = path.isEmpty() ? QStringLiteral("") : path;
+        mGpgSmPath = path.isEmpty() ? QString() : path;
     } else if (protocol == GpgME::OpenPGP && mGpgPath.isNull()) {
         auto path = QStandardPaths::findExecutable(QStringLiteral("gpg2"));
         if (path.isEmpty()) {
             path = QStandardPaths::findExecutable(QStringLiteral("gpg"));
-            mGpgPath = path.isEmpty() ? QStringLiteral("") : path;
+            mGpgPath = path.isEmpty() ? QString() : path;
         } else {
             mGpgPath = path;
         }

@@ -70,7 +70,7 @@ public:
     explicit SnippetsModel(QObject *parent = nullptr);
     ~SnippetsModel() override;
 
-    Q_REQUIRED_RESULT bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole) override;
+    bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole) override;
 
     Q_REQUIRED_RESULT QVariant data(const QModelIndex &index, int role) const override;
 

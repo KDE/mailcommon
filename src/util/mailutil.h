@@ -67,7 +67,7 @@ Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isVirtualCollection(const QString &reso
 
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT QString fullCollectionPath(const Akonadi::Collection &collection, bool addAccountName = true);
 
-Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool showJobErrorMessage(KJob *job);
+MAILCOMMON_EXPORT bool showJobErrorMessage(KJob *job);
 
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT Akonadi::AgentInstance::List agentInstances(bool excludeMailTransport = true);
 

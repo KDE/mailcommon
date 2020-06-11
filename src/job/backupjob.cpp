@@ -237,8 +237,7 @@ void BackupJob::archiveNextMessage()
         return;
     }
 
-    Akonadi::Item item = mPendingMessages.front();
-    mPendingMessages.pop_front();
+    const Akonadi::Item item = mPendingMessages.takeFirst();
     qCDebug(MAILCOMMON_LOG) << "Fetching item with ID" << item.id() << "for folder" << mCurrentFolder.name();
 
     mCurrentJob = new Akonadi::ItemFetchJob(item);

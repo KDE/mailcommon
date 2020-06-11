@@ -24,7 +24,7 @@ class QContextMenuEvent;
 
 namespace MailCommon {
 class SnippetsManager;
-class SnippetInfo;
+struct SnippetInfo;
 /**
  * @author Robert Gruber
  */

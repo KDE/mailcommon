@@ -42,7 +42,7 @@ void FilterActionEncryptTest::shouldEncrypt_data()
 
     QDir testDir(QString::fromUtf8(TEST_PATH) + QStringLiteral("/gpgdata"));
     const auto tests = testDir.entryInfoList({ QStringLiteral("*.msg") }, QDir::Files, QDir::Name);
-    for (const auto test : tests) {
+    for (const auto &test : tests) {
         QFile plain(test.absoluteFilePath());
         QVERIFY(plain.open(QIODevice::ReadOnly));
         const auto plainData = plain.readAll();
@@ -98,7 +98,6 @@ void FilterActionEncryptTest::shouldEncrypt()
     QCOMPARE(newMsg->date()->asUnicodeString(), msg->date()->asUnicodeString());
     QCOMPARE(newMsg->subject()->asUnicodeString(), msg->subject()->asUnicodeString());
 
-    QString gpgexe;
     QByteArray resultContent;
     GPGHelper::CryptoType crypto;
     if (key.startsWith(QLatin1String("PGP"))) {

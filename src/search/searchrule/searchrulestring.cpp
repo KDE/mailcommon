@@ -150,7 +150,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     } else {
         // make sure to treat messages with multiple header lines for
         // the same header correctly
-        msgContents = QStringLiteral("");
+        msgContents.clear();
         if (auto hrd = msg->headerByType(field().constData())) {
             msgContents = hrd->asUnicodeString();
         }
@@ -159,7 +159,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     if (function() == FuncIsInAddressbook
         || function() == FuncIsNotInAddressbook) {
         // I think only the "from"-field makes sense.
-        msgContents = QStringLiteral("");
+        msgContents.clear();
         if (auto hrd = msg->headerByType(field().constData())) {
             msgContents = hrd->asUnicodeString();
         }
