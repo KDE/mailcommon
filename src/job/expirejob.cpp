@@ -31,8 +31,8 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 
-#include <Libkdepim/BroadcastStatus>
-using KPIM::BroadcastStatus;
+#include <PimCommon/BroadcastStatus>
+using PimCommon::BroadcastStatus;
 #include "mailcommon_debug.h"
 
 #include <KLocalizedString>

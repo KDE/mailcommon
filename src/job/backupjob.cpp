@@ -21,7 +21,7 @@
 
 #include "backupjob.h"
 
-#include <Libkdepim/BroadcastStatus>
+#include <PimCommon/BroadcastStatus>
 #include "mailcommon_debug.h"
 #include <CollectionDeleteJob>
 #include <CollectionFetchJob>
@@ -193,7 +193,7 @@ void BackupJob::finish()
     }
 
     const QString archivingStr(i18n("Archiving finished"));
-    KPIM::BroadcastStatus::instance()->setStatusMsg(archivingStr);
+    PimCommon::BroadcastStatus::instance()->setStatusMsg(archivingStr);
 
     if (mProgressItem) {
         mProgressItem->setStatus(archivingStr);
@@ -356,7 +356,7 @@ void BackupJob::archiveNextFolder()
     if (mProgressItem) {
         mProgressItem->setStatus(archivingStr);
     }
-    KPIM::BroadcastStatus::instance()->setStatusMsg(archivingStr);
+    PimCommon::BroadcastStatus::instance()->setStatusMsg(archivingStr);
 
     const QString folderName = mCurrentFolder.name();
     bool success = true;
