@@ -19,7 +19,7 @@
 
 #include "filteractionaddtoaddressbook.h"
 
-#include <LibkdepimAkonadi/AddContactJob>
+#include <Akonadi/Contact/AddContactJob>
 
 #include <AkonadiWidgets/TagSelectionDialog>
 #include <AkonadiWidgets/TagWidget>
@@ -99,7 +99,7 @@ FilterAction::ReturnCode FilterActionAddToAddressBook::process(ItemContext &cont
             contact.setCategories(mCategory.split(QLatin1Char(';')));
         }
 
-        KPIM::AddContactJob *job = new KPIM::AddContactJob(contact, Akonadi::Collection(mCollectionId));
+        Akonadi::AddContactJob *job = new Akonadi::AddContactJob(contact, Akonadi::Collection(mCollectionId));
         job->showMessageBox(false);
         job->start();
     }
