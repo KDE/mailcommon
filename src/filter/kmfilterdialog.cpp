@@ -106,7 +106,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     user1Button->setText(i18n("Import..."));
     user2Button->setText(i18n("Export..."));
     user3Button->setText(i18n("Convert to..."));
-    QMenu *menu = new QMenu();
+    QMenu *menu = new QMenu(this);
 
     QAction *act = new QAction(i18n("KMail filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::KMailFilter));
