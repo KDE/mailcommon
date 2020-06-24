@@ -857,7 +857,6 @@ void KMFilterListBox::swapNeighbouringFilters(int untouchedOne, int movedOne)
 
 QListWidgetFilterItem::QListWidgetFilterItem(const QString &text, QListWidget *parent)
     : QListWidgetItem(text, parent)
-    , mFilter(nullptr)
 {
 }
 
