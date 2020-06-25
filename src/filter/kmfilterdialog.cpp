@@ -148,7 +148,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
 
     user1Button->setMenu(menu);
 
-    menu = new QMenu();
+    menu = new QMenu(this);
 
     act = new QAction(i18n("Sieve script"), this);
     connect(act, &QAction::triggered, this, &KMFilterDialog::slotExportAsSieveScript);
