@@ -56,14 +56,7 @@ class Q_DECL_HIDDEN RedirectDialog::Private
 public:
     Private(RedirectDialog *qq, RedirectDialog::SendMode mode)
         : q(qq)
-        , mEditTo(nullptr)
-        , mEditCc(nullptr)
-        , mEditBcc(nullptr)
         , mSendMode(mode)
-        , mComboboxIdentity(nullptr)
-        , mTransportCombobox(nullptr)
-        , mUser1Button(nullptr)
-        , mUser2Button(nullptr)
     {
     }
 
@@ -77,7 +70,7 @@ public:
     void slotUser2();
     void slotAddressChanged(const QString &);
     QString redirectLabelType(TypeAddress type) const;
-    RedirectDialog *q = nullptr;
+    RedirectDialog * const q = nullptr;
     RedirectWidget *mEditTo = nullptr;
     RedirectWidget *mEditCc = nullptr;
     RedirectWidget *mEditBcc = nullptr;

@@ -31,7 +31,6 @@ class Q_DECL_HIDDEN EntityCollectionOrderProxyModel::EntityCollectionOrderProxyM
 {
 public:
     EntityCollectionOrderProxyModelPrivate()
-        : manualSortingActive(false)
     {
     }
 
@@ -83,7 +82,7 @@ public:
 
     QMap<Akonadi::Collection::Id, int> collectionRanks;
     QStringList topLevelOrder;
-    bool manualSortingActive;
+    bool manualSortingActive = false;
 };
 
 EntityCollectionOrderProxyModel::EntityCollectionOrderProxyModel(QObject *parent)

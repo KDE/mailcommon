@@ -46,19 +46,9 @@ static const mode_t archivePerms = S_IFREG | 0644;
 BackupJob::BackupJob(QWidget *parent)
     : QObject(parent)
     , mArchiveTime(QDateTime::currentDateTime())
-    , mArchiveType(Zip)
     , mRootFolder(0)
-    , mArchive(nullptr)
     , mParentWidget(parent)
-    , mArchivedMessages(0)
-    , mArchivedSize(0)
-    , mProgressItem(nullptr)
-    , mAborted(false)
-    , mDeleteFoldersAfterCompletion(false)
-    , mRecursive(true)
     , mCurrentFolder(Akonadi::Collection())
-    , mCurrentJob(nullptr)
-    , mDisplayMessageBox(true)
 {
 }
 

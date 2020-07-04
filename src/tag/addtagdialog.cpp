@@ -34,8 +34,6 @@ class MailCommon::AddTagDialogPrivate
 {
 public:
     AddTagDialogPrivate()
-        : mTagWidget(nullptr)
-        , mOkButton(nullptr)
     {
     }
 

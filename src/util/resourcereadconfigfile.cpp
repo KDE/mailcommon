@@ -26,7 +26,6 @@ class MailCommon::ResourceReadConfigFilePrivate
 {
 public:
     ResourceReadConfigFilePrivate()
-        : mConfig(nullptr)
     {
     }
 

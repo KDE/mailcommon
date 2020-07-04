@@ -104,23 +104,23 @@ private:
     QString mRealPath;
     QUrl mMailArchivePath;
     QDateTime mArchiveTime;
-    ArchiveType mArchiveType;
+    ArchiveType mArchiveType = Zip;
     Akonadi::Collection mRootFolder;
     KArchive *mArchive = nullptr;
     QWidget *mParentWidget = nullptr;
-    int mArchivedMessages;
-    uint mArchivedSize;
+    int mArchivedMessages = 0;
+    uint mArchivedSize = 0;
     QPointer<KPIM::ProgressItem> mProgressItem;
-    bool mAborted;
-    bool mDeleteFoldersAfterCompletion;
-    bool mRecursive;
+    bool mAborted = false;
+    bool mDeleteFoldersAfterCompletion = false;
+    bool mRecursive = true;
 
     Akonadi::Collection::List mPendingFolders;
     Akonadi::Collection::List mAllFolders;
     Akonadi::Collection mCurrentFolder;
     Akonadi::Item::List mPendingMessages;
     Akonadi::ItemFetchJob *mCurrentJob = nullptr;
-    bool mDisplayMessageBox = false;
+    bool mDisplayMessageBox = true;
 };
 }
 

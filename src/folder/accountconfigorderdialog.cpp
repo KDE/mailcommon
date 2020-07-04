@@ -52,10 +52,6 @@ class MailCommon::AccountConfigOrderDialogPrivate
 {
 public:
     AccountConfigOrderDialogPrivate()
-        : mListAccount(nullptr)
-        , mUpButton(nullptr)
-        , mDownButton(nullptr)
-        , mEnableAccountOrder(nullptr)
     {
     }
 

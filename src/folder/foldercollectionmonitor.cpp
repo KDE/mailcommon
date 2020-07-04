@@ -69,6 +69,7 @@ FolderCollectionMonitor::FolderCollectionMonitor(Akonadi::Session *session, QObj
 
 FolderCollectionMonitor::~FolderCollectionMonitor()
 {
+    qDebug() << "FolderCollectionMonitor::~FolderCollectionMonitor()  " << this;
     delete d;
 }
 
