@@ -39,9 +39,7 @@ class Q_DECL_HIDDEN FilterManager::Private
 public:
     Private(FilterManager *qq)
         : q(qq)
-        , mMailFilterAgentInterface(nullptr)
         , mMonitor(new Akonadi::Monitor)
-        , mInitialized(false)
     {
         const auto service = Akonadi::ServerManager::agentServiceName(Akonadi::ServerManager::Agent,
                                                                       QStringLiteral("akonadi_mailfilter_agent"));
@@ -58,7 +56,7 @@ public:
     static FilterManager *mInstance;
     static FilterActionDict *mFilterActionDict;
 
-    FilterManager *q;
+    FilterManager *const q;
     OrgFreedesktopAkonadiMailFilterAgentInterface *mMailFilterAgentInterface = nullptr;
     QVector<MailCommon::MailFilter *> mFilters;
     Akonadi::Monitor *mMonitor = nullptr;

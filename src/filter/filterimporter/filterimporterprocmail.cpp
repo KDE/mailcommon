@@ -29,7 +29,6 @@ using namespace MailCommon;
 
 FilterImporterProcmail::FilterImporterProcmail(QFile *file)
     : FilterImporterAbstract()
-    , mFilterCount(0)
 {
     QTextStream stream(file);
     readStream(stream);
@@ -37,7 +36,6 @@ FilterImporterProcmail::FilterImporterProcmail(QFile *file)
 
 FilterImporterProcmail::FilterImporterProcmail(QString string)
     : FilterImporterAbstract()
-    , mFilterCount(0)
 {
     QTextStream stream(&string);
     readStream(stream);

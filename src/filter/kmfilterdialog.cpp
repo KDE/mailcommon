@@ -81,9 +81,6 @@ using namespace MailCommon;
 
 KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollection, QWidget *parent, bool createDummyFilter)
     : QDialog(parent)
-    , mFilter(nullptr)
-    , mDoNotClose(false)
-    , mIgnoreFilterUpdates(true)
 {
     setWindowTitle(i18nc("@title:window", "Filter Rules"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);

@@ -248,7 +248,7 @@ protected:
     QPushButton *mRunNow = nullptr;
     QPushButton *mApplyButton = nullptr;
     bool mDoNotClose = false;
-    bool mIgnoreFilterUpdates = false;
+    bool mIgnoreFilterUpdates = true;
 };
 }
 

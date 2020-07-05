@@ -44,24 +44,22 @@ public:
     Private(FilterLog *qq)
         : q(qq)
         , mMaxLogSize(512 * 1024)
-        , mCurrentLogSize(0)
         , mAllowedTypes(FilterLog::Meta
                         |FilterLog::PatternDescription
                         |FilterLog::RuleResult
                         |FilterLog::PatternResult
                         |FilterLog::AppliedAction)
-        , mLogging(false)
     {
     }
 
     static FilterLog *mSelf;
 
-    FilterLog *q;
+    FilterLog *const q;
     QStringList mLogEntries;
     long mMaxLogSize;
-    long mCurrentLogSize;
+    long mCurrentLogSize = 0;
     int mAllowedTypes;
-    bool mLogging;
+    bool mLogging = false;
 
     void checkLogSize();
 };

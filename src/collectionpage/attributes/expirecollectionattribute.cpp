@@ -26,13 +26,6 @@
 using namespace MailCommon;
 
 ExpireCollectionAttribute::ExpireCollectionAttribute()
-    : mExpireMessages(false)
-    , mUnreadExpireAge(28)
-    , mReadExpireAge(14)
-    , mUnreadExpireUnits(ExpireNever)
-    , mReadExpireUnits(ExpireNever)
-    , mExpireAction(ExpireDelete)
-    , mExpireToFolderId(-1)
 {
 }
 

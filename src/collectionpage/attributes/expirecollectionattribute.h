@@ -132,13 +132,13 @@ public:
     bool operator==(const ExpireCollectionAttribute &other) const;
 private:
     static int daysToExpire(int number, ExpireCollectionAttribute::ExpireUnits units);
-    bool mExpireMessages;         // true if old messages are expired
-    int mUnreadExpireAge;         // Given in unreadExpireUnits
-    int mReadExpireAge;           // Given in readExpireUnits
-    ExpireCollectionAttribute::ExpireUnits mUnreadExpireUnits;
-    ExpireCollectionAttribute::ExpireUnits mReadExpireUnits;
-    ExpireCollectionAttribute::ExpireAction mExpireAction;
-    Akonadi::Collection::Id mExpireToFolderId;
+    bool mExpireMessages = false;         // true if old messages are expired
+    int mUnreadExpireAge = 28;         // Given in unreadExpireUnits
+    int mReadExpireAge = 14;           // Given in readExpireUnits
+    ExpireCollectionAttribute::ExpireUnits mUnreadExpireUnits = ExpireNever;
+    ExpireCollectionAttribute::ExpireUnits mReadExpireUnits = ExpireNever;
+    ExpireCollectionAttribute::ExpireAction mExpireAction = ExpireDelete;
+    Akonadi::Collection::Id mExpireToFolderId = -1;
 };
 }
 MAILCOMMON_EXPORT QDebug operator <<(QDebug d, const MailCommon::ExpireCollectionAttribute &t);

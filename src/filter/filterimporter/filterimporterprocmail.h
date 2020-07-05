@@ -40,7 +40,7 @@ private:
     Q_REQUIRED_RESULT MailCommon::MailFilter *parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter);
     void readStream(QTextStream &stream);
     Q_REQUIRED_RESULT QString createUniqFilterName();
-    int mFilterCount;
+    int mFilterCount = 0;
 };
 }
 
