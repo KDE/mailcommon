@@ -30,16 +30,13 @@
 
 #include "folderjob.h"
 
-#include <kio/global.h> //krazy:exclude=camelcase as there is no such
+#include <KIO/Global>
 
 using namespace MailCommon;
 
 //----------------------------------------------------------------------------
 FolderJob::FolderJob(QObject *parent)
     : QObject(parent)
-    , mErrorCode(0)
-    , mStarted(false)
-    , mCancellable(false)
 {
 }
 

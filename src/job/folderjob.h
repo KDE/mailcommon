@@ -100,10 +100,10 @@ protected:
     virtual void execute() = 0;
 
     Akonadi::Collection mSrcFolder;
-    int mErrorCode;
+    int mErrorCode = 0;
 
-    bool mStarted;
-    bool mCancellable;
+    bool mStarted = false;
+    bool mCancellable = false;
 };
 }
 
