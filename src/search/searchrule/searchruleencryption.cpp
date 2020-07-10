@@ -48,7 +48,7 @@ bool SearchRuleEncryption::matches(const Akonadi::Item &item) const
     }
     const auto msg = item.payload<KMime::Message::Ptr>();
 
-    bool rc = (shouldBeEncrypted == CryptoUtils::isEncrypted(msg.data()));
+    const bool rc = (shouldBeEncrypted == CryptoUtils::isEncrypted(msg.data()));
     if (FilterLog::instance()->isLogging()) {
         QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>")
                        : QStringLiteral("<font color=#FF0000>0 = </font>"));

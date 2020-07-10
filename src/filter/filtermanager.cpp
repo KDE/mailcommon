@@ -59,7 +59,7 @@ public:
     FilterManager *const q;
     OrgFreedesktopAkonadiMailFilterAgentInterface *mMailFilterAgentInterface = nullptr;
     QVector<MailCommon::MailFilter *> mFilters;
-    Akonadi::Monitor *mMonitor = nullptr;
+    Akonadi::Monitor * const mMonitor;
     bool mInitialized = false;
 };
 

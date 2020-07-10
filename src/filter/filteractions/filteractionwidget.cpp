@@ -46,10 +46,6 @@ class Q_DECL_HIDDEN FilterActionWidget::Private
 public:
     Private(FilterActionWidget *qq)
         : q(qq)
-        , mComboBox(nullptr)
-        , mAdd(nullptr)
-        , mRemove(nullptr)
-        , mLayout(nullptr)
     {
     }
 
@@ -65,7 +61,7 @@ public:
     void slotAddWidget();
     void slotRemoveWidget();
 
-    FilterActionWidget *q;
+    FilterActionWidget *const q;
     QList<MailCommon::FilterAction *> mActionList;
     QComboBox *mComboBox = nullptr;
     QPushButton *mAdd = nullptr;
@@ -273,7 +269,7 @@ public:
 
     void regenerateActionListFromWidgets();
 
-    FilterActionWidgetLister *q;
+    FilterActionWidgetLister *const q;
     QVector<MailCommon::FilterAction *> *mActionList = nullptr;
 };
 

@@ -42,7 +42,7 @@ using namespace MailCommon;
 struct InstanceStruct {
     QString name;
     QIcon icon;
-    bool isValid() const
+    Q_REQUIRED_RESULT bool isValid() const
     {
         return !name.isEmpty();
     }

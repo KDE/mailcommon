@@ -113,7 +113,7 @@ using namespace MailCommon;
 KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
     : QGroupBox(title, parent)
 {
-    QVBoxLayout *layout = new QVBoxLayout();
+    QVBoxLayout *layout = new QVBoxLayout(this);
 
     //----------- the list box
     mListWidget = new QListWidget(this);
@@ -202,7 +202,6 @@ KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
     mBtnRename->setWhatsThis(i18n(_wt_filterlist_rename));
 
     layout->addWidget(hb);
-    setLayout(layout);
 
     QShortcut *shortcut = new QShortcut(this);
     shortcut->setKey(Qt::Key_Delete);
