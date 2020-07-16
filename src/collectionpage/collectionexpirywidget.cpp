@@ -18,7 +18,7 @@
 
 
 #include "collectionexpirywidget.h"
-
+#include "kernel/mailkernel.h"
 #include "folderrequester.h"
 #include <KPluralHandlingSpinBox>
 #include <QGroupBox>
@@ -106,7 +106,7 @@ CollectionExpiryWidget::~CollectionExpiryWidget()
 
 void CollectionExpiryWidget::slotChanged()
 {
-    mChanged = true;
+    Q_EMIT configChanged();
 }
 
 void CollectionExpiryWidget::slotUpdateControls()
@@ -121,5 +121,48 @@ void CollectionExpiryWidget::slotUpdateControls()
 
     expireNowPB->setEnabled(showExpiryActions);
 
-    mChanged = true;
+    Q_EMIT configChanged();
+}
+
+void CollectionExpiryWidget::load(const MailCommon::CollectionExpirySettings &settings)
+{
+    if (settings.isValid()) {
+        // Load the values from the folder
+        bool expiryGloballyOn = settings.expiryGloballyOn;
+        if (expiryGloballyOn
+            && settings.mReadExpireUnits != ExpireCollectionAttribute::ExpireNever
+            && settings.daysToExpireRead >= 0) {
+            expireReadMailCB->setChecked(true);
+            expireReadMailSB->setValue(settings.daysToExpireRead);
+        }
+        if (expiryGloballyOn
+            && settings.mUnreadExpireUnits != ExpireCollectionAttribute::ExpireNever
+            && settings.daysToExpireUnread >= 0) {
+            expireUnreadMailCB->setChecked(true);
+            expireUnreadMailSB->setValue(settings.daysToExpireUnread);
+        }
+
+        if (settings.mExpireAction == ExpireCollectionAttribute::ExpireDelete) {
+            deletePermanentlyRB->setChecked(true);
+        } else {
+            moveToRB->setChecked(true);
+        }
+
+        Akonadi::Collection::Id destFolderID = settings.mExpireToFolderId;
+        if (destFolderID > 0) {
+            Akonadi::Collection destFolder = Kernel::self()->collectionFromId(destFolderID);
+            if (destFolder.isValid()) {
+                folderSelector->setCollection(destFolder);
+            }
+        }
+    } else {
+        deletePermanentlyRB->setChecked(true);
+    }
+    slotUpdateControls();
+}
+
+CollectionExpirySettings CollectionExpiryWidget::save()
+{
+    //TODO
+    return {};
 }
