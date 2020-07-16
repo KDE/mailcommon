@@ -164,6 +164,18 @@ CollectionExpirySettings CollectionExpiryWidget::save()
 {
     CollectionExpirySettings settings;
     settings.expiryGloballyOn = expireReadMailCB->isChecked() || expireUnreadMailCB->isChecked();
+    // we always write out days now
+    settings.daysToExpireRead = expireReadMailSB->value();
+    settings.daysToExpireUnread = expireUnreadMailSB->value();
+    settings.mReadExpireUnits = expireReadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays : MailCommon::ExpireCollectionAttribute::ExpireNever;
+    settings.mUnreadExpireUnits = expireUnreadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays : MailCommon::ExpireCollectionAttribute::ExpireNever;
+
+    if (deletePermanentlyRB->isChecked()) {
+        settings.mExpireAction = ExpireCollectionAttribute::ExpireDelete;
+    } else {
+        settings.mExpireAction = ExpireCollectionAttribute::ExpireMove;
+    }
+
 #if 0
     const bool enableGlobally = expireReadMailCB->isChecked() || expireUnreadMailCB->isChecked();
     const Akonadi::Collection expireToFolder = folderSelector->collection();
