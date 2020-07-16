@@ -33,6 +33,7 @@ class QRadioButton;
 
 namespace MailCommon {
 class FolderRequester;
+class CollectionExpiryWidget;
 /**
  * @brief The CollectionExpiryPage class
  * @author Laurent Montel <montel@kde.org>
@@ -62,6 +63,7 @@ private:
     void saveAndExpire(Akonadi::Collection &collection, bool saveSettings, bool _expirenow);
 
 private:
+    CollectionExpiryWidget *mCollectionExpiryWidget = nullptr;
     QCheckBox *expireReadMailCB = nullptr;
     KPluralHandlingSpinBox *expireReadMailSB = nullptr;
     QCheckBox *expireUnreadMailCB = nullptr;
