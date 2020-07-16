@@ -179,7 +179,7 @@ void CollectionExpiryPage::save(Akonadi::Collection &collection)
 
 void CollectionExpiryPage::saveAndExpire(Akonadi::Collection &collection, bool saveSettings, bool expireNow)
 {
-    bool enableGlobally = expireReadMailCB->isChecked() || expireUnreadMailCB->isChecked();
+    const bool enableGlobally = expireReadMailCB->isChecked() || expireUnreadMailCB->isChecked();
     const Akonadi::Collection expireToFolder = folderSelector->collection();
     if (enableGlobally && moveToRB->isChecked() && !expireToFolder.isValid()) {
         KMessageBox::error(this, i18n("Please select a folder to expire messages into.\nIf this is not done, expired messages will be permanently deleted."),
