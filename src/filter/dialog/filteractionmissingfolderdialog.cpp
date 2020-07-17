@@ -58,7 +58,7 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(
         mainLayout->addWidget(mListwidget);
         const int numberOfItems(list.count());
         for (int i = 0; i < numberOfItems; ++i) {
-            Akonadi::Collection col = list.at(i);
+            const Akonadi::Collection col = list.at(i);
             QListWidgetItem *item = new QListWidgetItem(MailCommon::Util::fullCollectionPath(col));
             item->setData(FilterActionMissingFolderDialog::IdentifyCollection, col.id());
             mListwidget->addItem(item);

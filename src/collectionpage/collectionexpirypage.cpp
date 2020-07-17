@@ -104,7 +104,7 @@ void CollectionExpiryPage::saveAndExpire(Akonadi::Collection &collection, bool s
 
 void CollectionExpiryPage::slotSaveAndExpire()
 {
-    saveAndExpire(mCollection, true, true);                          // save and start expire job
+    saveAndExpire(mCollection, true, true); // save and start expire job
 }
 
 void CollectionExpiryPage::slotChanged()
