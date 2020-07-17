@@ -18,9 +18,19 @@
 
 
 #include "collectionexpirywidget.h"
+#include "collectionexpiryjob.h"
 #include "kernel/mailkernel.h"
 #include "folderrequester.h"
+#include "attributes/expirecollectionattribute.h"
+#include "folder/foldersettings.h"
+#include "util/mailutil.h"
+#include "mailcommon_debug.h"
+
+#include <CollectionModifyJob>
+
+
 #include <KPluralHandlingSpinBox>
+#include <KMessageBox>
 #include <QGroupBox>
 #include <QRadioButton>
 #include <QVBoxLayout>
@@ -160,23 +170,8 @@ void CollectionExpiryWidget::load(const MailCommon::CollectionExpirySettings &se
     slotUpdateControls();
 }
 
-CollectionExpirySettings CollectionExpiryWidget::save()
+bool CollectionExpiryWidget::validateExpireFolder(bool expireNow)
 {
-    CollectionExpirySettings settings;
-    settings.expiryGloballyOn = expireReadMailCB->isChecked() || expireUnreadMailCB->isChecked();
-    // we always write out days now
-    settings.daysToExpireRead = expireReadMailSB->value();
-    settings.daysToExpireUnread = expireUnreadMailSB->value();
-    settings.mReadExpireUnits = expireReadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays : MailCommon::ExpireCollectionAttribute::ExpireNever;
-    settings.mUnreadExpireUnits = expireUnreadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays : MailCommon::ExpireCollectionAttribute::ExpireNever;
-
-    if (deletePermanentlyRB->isChecked()) {
-        settings.mExpireAction = ExpireCollectionAttribute::ExpireDelete;
-    } else {
-        settings.mExpireAction = ExpireCollectionAttribute::ExpireMove;
-    }
-
-#if 0
     const bool enableGlobally = expireReadMailCB->isChecked() || expireUnreadMailCB->isChecked();
     const Akonadi::Collection expireToFolder = folderSelector->collection();
     if (enableGlobally && moveToRB->isChecked() && !expireToFolder.isValid()) {
@@ -185,7 +180,12 @@ CollectionExpirySettings CollectionExpiryWidget::save()
         deletePermanentlyRB->setChecked(true);
         expireNow = false;                                // settings are not valid
     }
+    return expireNow;
+}
 
+MailCommon::ExpireCollectionAttribute *CollectionExpiryWidget::assignFolderAttribute(Akonadi::Collection &collection, bool &expireNow)
+{
+    const Akonadi::Collection expireToFolder = folderSelector->collection();
     MailCommon::ExpireCollectionAttribute *attribute = nullptr;
     if (expireToFolder.isValid() && moveToRB->isChecked()) {
         if (expireToFolder.id() == collection.id()) {
@@ -201,32 +201,49 @@ CollectionExpirySettings CollectionExpiryWidget::save()
     if (!attribute) {
         attribute = collection.attribute<MailCommon::ExpireCollectionAttribute>(Akonadi::Collection::AddIfMissing);
     }
+    return attribute;
+}
 
-    attribute->setAutoExpire(enableGlobally);
+CollectionExpirySettings CollectionExpiryWidget::settings() const
+{
+    CollectionExpirySettings settings;
+    settings.expiryGloballyOn = expireReadMailCB->isChecked() || expireUnreadMailCB->isChecked();
     // we always write out days now
-    attribute->setReadExpireAge(expireReadMailSB->value());
-    attribute->setUnreadExpireAge(expireUnreadMailSB->value());
-    attribute->setReadExpireUnits(expireReadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays
-                                  : MailCommon::ExpireCollectionAttribute::ExpireNever);
-    attribute->setUnreadExpireUnits(expireUnreadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays
-                                    : MailCommon::ExpireCollectionAttribute::ExpireNever);
+    settings.daysToExpireRead = expireReadMailSB->value();
+    settings.daysToExpireUnread = expireUnreadMailSB->value();
+    settings.mReadExpireUnits = expireReadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays : MailCommon::ExpireCollectionAttribute::ExpireNever;
+    settings.mUnreadExpireUnits = expireUnreadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays : MailCommon::ExpireCollectionAttribute::ExpireNever;
 
     if (deletePermanentlyRB->isChecked()) {
-        attribute->setExpireAction(ExpireCollectionAttribute::ExpireDelete);
+        settings.mExpireAction = ExpireCollectionAttribute::ExpireDelete;
     } else {
-        attribute->setExpireAction(ExpireCollectionAttribute::ExpireMove);
+        settings.mExpireAction = ExpireCollectionAttribute::ExpireMove;
     }
+    return settings;
+}
+
+void CollectionExpiryWidget::save(Akonadi::Collection &collection, bool saveSettings, bool expireNow)
+{
+    expireNow = validateExpireFolder(expireNow);
+    const CollectionExpirySettings collectionExpirySettings = settings();
+    MailCommon::ExpireCollectionAttribute *attribute = assignFolderAttribute(collection, expireNow);
+    attribute->setAutoExpire(collectionExpirySettings.expiryGloballyOn);
+    // we always write out days now
+    attribute->setReadExpireAge(collectionExpirySettings.daysToExpireRead);
+    attribute->setUnreadExpireAge(collectionExpirySettings.daysToExpireUnread);
+    attribute->setReadExpireUnits(collectionExpirySettings.mReadExpireUnits);
+    attribute->setUnreadExpireUnits(collectionExpirySettings.mUnreadExpireUnits);
+    attribute->setExpireAction(collectionExpirySettings.mExpireAction);
+
     if (saveSettings) {
-        Akonadi::CollectionModifyJob *job = new Akonadi::CollectionModifyJob(collection, this);
-        job->setProperty("expireNow", expireNow);
-        connect(job, &Akonadi::CollectionModifyJob::result, this, &CollectionExpiryPage::slotCollectionModified);
+        CollectionExpiryJob *job = new CollectionExpiryJob;
+        job->setExpireNow(expireNow);
+        job->setCollection(collection);
+        job->start();
     } else {
         if (expireNow) {
             MailCommon::Util::expireOldMessages(collection, true /*immediate*/);
         }
     }
-    mChanged = false;
-#endif
-    //TODO
-    return settings;
+    Q_EMIT configChanged(false);
 }

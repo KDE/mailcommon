@@ -26,6 +26,7 @@ class QCheckBox;
 class KPluralHandlingSpinBox;
 class QRadioButton;
 class QPushButton;
+class KJob;
 namespace MailCommon {
 class FolderRequester;
 struct MAILCOMMON_EXPORT CollectionExpirySettings
@@ -56,14 +57,18 @@ public:
     ~CollectionExpiryWidget();
 
     void load(const MailCommon::CollectionExpirySettings &settings);
-    Q_REQUIRED_RESULT MailCommon::CollectionExpirySettings save();
+    void save(Akonadi::Collection &collection, bool saveSettings, bool expireNow);
 Q_SIGNALS:
     void saveAndExpireRequested();
-    void configChanged();
+    void configChanged(bool changed = true);
 
 private:
+    Q_REQUIRED_RESULT bool validateExpireFolder(bool expireNow);
+    Q_REQUIRED_RESULT CollectionExpirySettings settings() const;
+    Q_REQUIRED_RESULT MailCommon::ExpireCollectionAttribute *assignFolderAttribute(Akonadi::Collection &collection, bool &expireNow);
     void slotChanged();
     void slotUpdateControls();
+    void slotCollectionModified(KJob *job);
     QCheckBox *expireReadMailCB = nullptr;
     KPluralHandlingSpinBox *expireReadMailSB = nullptr;
     QCheckBox *expireUnreadMailCB = nullptr;

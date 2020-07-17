@@ -98,6 +98,7 @@ set(libmailcommon_collection_SRCS
   collectionpage/collectionexpirypage.cpp
   collectionpage/collectionexpirywidget.cpp
   collectionpage/attributes/expirecollectionattribute.cpp
+  collectionpage/collectionexpiryjob.cpp
 )
 
 set(libmailcommon_folder_SRCS
