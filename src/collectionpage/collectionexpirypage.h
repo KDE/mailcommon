@@ -50,29 +50,13 @@ public:
     void load(const Akonadi::Collection &collection) override;
     void save(Akonadi::Collection &collection) override;
 
-protected:
-    void init();
-
-protected Q_SLOTS:
-    void slotUpdateControls();
-    void slotCollectionModified(KJob *job);
-    void slotChanged();
-    void slotSaveAndExpire();
-
 private:
     void saveAndExpire(Akonadi::Collection &collection, bool saveSettings, bool _expirenow);
-
-private:
+    void init();
+    void slotChanged();
+    void slotSaveAndExpire();
+    void slotConfigChanged(bool changed);
     CollectionExpiryWidget *mCollectionExpiryWidget = nullptr;
-    QCheckBox *expireReadMailCB = nullptr;
-    KPluralHandlingSpinBox *expireReadMailSB = nullptr;
-    QCheckBox *expireUnreadMailCB = nullptr;
-    KPluralHandlingSpinBox *expireUnreadMailSB = nullptr;
-    QRadioButton *moveToRB = nullptr;
-    FolderRequester *folderSelector = nullptr;
-    QRadioButton *deletePermanentlyRB = nullptr;
-    QPushButton *expireNowPB = nullptr;
-
     Akonadi::Collection mCollection;
     bool mChanged = false;
 };
