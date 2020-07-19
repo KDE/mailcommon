@@ -33,8 +33,7 @@ KMFilterAccountList::KMFilterAccountList(QWidget *parent)
     : QTreeWidget(parent)
 {
     setColumnCount(2);
-    QStringList headerNames;
-    headerNames << i18n("Account Name") << i18n("Type");
+    const QStringList headerNames{i18n("Account Name"), i18n("Type")};
     setHeaderItem(new QTreeWidgetItem(headerNames));
     setAllColumnsShowFocus(true);
     setFrameStyle(QFrame::WinPanel + QFrame::Sunken);
