@@ -116,7 +116,7 @@ void FolderTreeView::readConfig()
 {
     KConfigGroup myGroup(KernelIf->config(), "MainFolderView");
     int iIconSize = myGroup.readEntry("IconSize", iconSize().width());
-    if (iIconSize < 16 || iIconSize > 32) {
+    if ((iIconSize < 16) || (iIconSize > 32)) {
         iIconSize = 22;
     }
     setIconSize(QSize(iIconSize, iIconSize));

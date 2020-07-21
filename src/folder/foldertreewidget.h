@@ -59,7 +59,8 @@ public:
         UseDistinctSelectionModel = 4,
         ShowCollectionStatisticAnimation = 8,
         DontKeyFilter = 16,
-        HideStatistics = 32
+        HideStatistics = 32,
+        HideHeaderViewMenu = 64
     };
     Q_DECLARE_FLAGS(TreeViewOptions, TreeViewOption)
 

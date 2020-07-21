@@ -50,6 +50,7 @@
 #include <QLabel>
 #include <QPointer>
 #include <QVBoxLayout>
+#include <QHeaderView>
 
 namespace MailCommon {
 class Q_DECL_HIDDEN FolderTreeWidget::FolderTreeWidgetPrivate
@@ -102,6 +103,9 @@ FolderTreeWidget::FolderTreeWidget(
     if (!(options & HideStatistics)) {
         d->filterModel = new Akonadi::StatisticsProxyModel(this);
         d->filterModel->setSourceModel(KernelIf->collectionModel());
+    }
+    if (options & HideHeaderViewMenu) {
+        d->folderTreeView->header()->setContextMenuPolicy(Qt::NoContextMenu);
     }
 
     d->readableproxy = new FolderTreeWidgetProxyModel(this, optReadableProxy);
