@@ -25,8 +25,13 @@
 using MessageComposer::MessageFactoryNG;
 
 #include <MessageViewer/MessageViewerSettings>
+#include <kguiaddons_version.h>
+#if KGUIADDONS_VERSION < QT_VERSION_CHECK(5, 73, 0)
 #ifndef QT_NO_CURSOR
 #include <Libkdepim/KCursorSaver>
+#endif
+#else
+#include <KCursorSaver>
 #endif
 #include <MimeTreeParser/ObjectTreeParser>
 
@@ -263,8 +268,12 @@ int MDNAdviceHelper::requestAdviceOnMDN(const char *what)
 {
     for (int i = 0; i < numMdnMessageBoxes; ++i) {
         if (!qstrcmp(what, mdnMessageBoxes[i].dontAskAgainID)) {
+#if KGUIADDONS_VERSION < QT_VERSION_CHECK(5, 73, 0)
 #ifndef QT_NO_CURSOR
             const KPIM::KCursorSaver saver(Qt::ArrowCursor);
+#endif
+#else
+            KCursorSaver saver(Qt::ArrowCursor);
 #endif
             MessageComposer::MDNAdvice answer;
             answer = questionIgnoreSend(i18n(mdnMessageBoxes[i].text),

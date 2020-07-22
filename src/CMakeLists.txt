@@ -259,6 +259,7 @@ PRIVATE
   KF5::Archive
   KF5::ItemViews
   KF5::SyntaxHighlighting
+  KF5::GuiAddons
   Qt5::Xml
 )
 

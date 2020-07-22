@@ -58,6 +58,7 @@ find_package(KF5WidgetsAddons ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5XmlGui ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5DBusAddons ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5SyntaxHighlighting ${KF5_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5GuiAddons ${KF5_MIN_VERSION} CONFIG REQUIRED)
 
 find_package(KF5Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
 find_package(KF5AkonadiMime ${AKONADIMIME_LIB_VERSION} CONFIG REQUIRED)
