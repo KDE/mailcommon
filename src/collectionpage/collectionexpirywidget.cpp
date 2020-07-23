@@ -107,6 +107,8 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
     globalVBox->addWidget(expireNowPB, 0, Qt::AlignRight);
 
     globalVBox->addStretch(100);   // eat all superfluous space
+    deletePermanentlyRB->setChecked(true);
+    slotUpdateControls();
 }
 
 CollectionExpiryWidget::~CollectionExpiryWidget()
