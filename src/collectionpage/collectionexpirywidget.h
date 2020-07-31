@@ -58,13 +58,14 @@ public:
 
     void load(const MailCommon::CollectionExpirySettings &settings);
     void save(Akonadi::Collection &collection, bool saveSettings, bool expireNow);
+    void save(const CollectionExpirySettings &collectionExpirySettings, Akonadi::Collection &collection, bool saveSettings, bool expireNow);
+    Q_REQUIRED_RESULT CollectionExpirySettings settings() const;
 Q_SIGNALS:
     void saveAndExpireRequested();
     void configChanged(bool changed = true);
 
 private:
     Q_REQUIRED_RESULT bool validateExpireFolder(bool expireNow);
-    Q_REQUIRED_RESULT CollectionExpirySettings settings() const;
     Q_REQUIRED_RESULT MailCommon::ExpireCollectionAttribute *assignFolderAttribute(Akonadi::Collection &collection, bool &expireNow);
     void slotChanged();
     void slotUpdateControls();

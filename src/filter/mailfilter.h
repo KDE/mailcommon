@@ -123,7 +123,7 @@ public:
     Q_REQUIRED_RESULT bool readConfig(const KConfigGroup &config, bool interactive = false);
 
     /** Remove empty rules (and actions one day). */
-    Q_REQUIRED_RESULT QString purify(bool removeAction = true);
+    QString purify(bool removeAction = true);
 
     /** Check for empty pattern and action list. */
     bool isEmpty() const;

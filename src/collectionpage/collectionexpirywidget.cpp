@@ -224,10 +224,9 @@ CollectionExpirySettings CollectionExpiryWidget::settings() const
     return settings;
 }
 
-void CollectionExpiryWidget::save(Akonadi::Collection &collection, bool saveSettings, bool expireNow)
+void CollectionExpiryWidget::save(const CollectionExpirySettings &collectionExpirySettings, Akonadi::Collection &collection, bool saveSettings, bool expireNow)
 {
     expireNow = validateExpireFolder(expireNow);
-    const CollectionExpirySettings collectionExpirySettings = settings();
     MailCommon::ExpireCollectionAttribute *attribute = assignFolderAttribute(collection, expireNow);
     attribute->setAutoExpire(collectionExpirySettings.expiryGloballyOn);
     // we always write out days now
@@ -248,4 +247,10 @@ void CollectionExpiryWidget::save(Akonadi::Collection &collection, bool saveSett
         }
     }
     Q_EMIT configChanged(false);
+}
+
+void CollectionExpiryWidget::save(Akonadi::Collection &collection, bool saveSettings, bool expireNow)
+{
+    const CollectionExpirySettings collectionExpirySettings = settings();
+    save(collectionExpirySettings, collection, saveSettings, expireNow);
 }
