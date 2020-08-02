@@ -9,6 +9,8 @@
 #include "mailcommon_debug.h"
 #include <KProcess>
 #include <KShell>
+
+#include <QRegularExpression>
 #include <QTemporaryFile>
 
 using namespace MailCommon;
@@ -59,16 +61,14 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Messa
 {
     QString result = mParameter;
     QList<int> argList;
-    QRegExp r(QStringLiteral("%[0-9-]+"));
+    const QRegularExpression re(QStringLiteral("%([0-9-]+)"));
 
     // search for '%n'
-    int start = -1;
-    while ((start = r.indexIn(result, start + 1)) > 0) {
-        const int len = r.matchedLength();
-
+    QRegularExpressionMatchIterator iter = re.globalMatch(result);
+    while (iter.hasNext()) {
         // and save the encountered 'n' in a list.
         bool ok = false;
-        const int n = result.midRef(start + 1, len - 1).toInt(&ok);
+        const int n = iter.next().captured(1).toInt(&ok);
         if (ok) {
             argList.append(n);
         }
@@ -139,16 +139,19 @@ void substituteMessageHeaders(const KMime::Message::Ptr &aMsg, QString &result)
 {
     // Replace the %{foo} with the content of the foo header field.
     // If the header doesn't exist, remove the placeholder.
-    QRegExp header_rx(QStringLiteral("%\\{([a-z0-9-]+)\\}"), Qt::CaseInsensitive);
-    int idx = 0;
-    while ((idx = header_rx.indexIn(result, idx)) != -1) {
-        const KMime::Headers::Base *header = aMsg->headerByType(header_rx.cap(1).toLatin1().constData());
+    const QRegularExpression header_rx(QStringLiteral("%\\{([a-z0-9-]+)\\}"),
+                                       QRegularExpression::CaseInsensitiveOption);
+    int offset = 0;
+    QRegularExpressionMatch rmatch;
+    while (result.indexOf(header_rx, offset, &rmatch) != -1) {
+        const KMime::Headers::Base *header = aMsg->headerByType(rmatch.captured(1).toLatin1().constData());
         QString replacement;
         if (header) {
             replacement = KShell::quoteArg(QString::fromLatin1(header->as7BitString()));
         }
-        result.replace(idx, header_rx.matchedLength(), replacement);
-        idx += replacement.length();
+        const int start = rmatch.capturedStart(0);
+        result.replace(start, rmatch.capturedLength(0), replacement);
+        offset = start + replacement.size();
     }
 }
 

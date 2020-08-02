@@ -24,6 +24,7 @@
 #include <QAction>
 #include <QPointer>
 #include <QItemSelectionModel>
+#include <QRegularExpression>
 
 using namespace MailCommon;
 
@@ -435,8 +436,8 @@ QString SnippetsManager::Private::replaceVariables(const QString &text)
     int iEnd = -1;
     QMap<QString, QString> tempLocalVariables(localVariables);
     do {
-        //find the next variable by this QRegExp
-        iFound = text.indexOf(QRegExp(QLatin1String("\\$[A-Za-z-_0-9\\s]*\\$")), iEnd + 1);
+        //find the next variable by this regex
+        iFound = text.indexOf(QRegularExpression(QStringLiteral("\\$[A-Za-z\\-_0-9\\s]*\\$")), iEnd + 1);
         if (iFound >= 0) {
             iEnd = text.indexOf(QLatin1Char('$'), iFound + 1) + 1;
 

@@ -37,7 +37,7 @@ FilterActionRewriteHeader::FilterActionRewriteHeader(QObject *parent)
 
 bool FilterActionRewriteHeader::isEmpty() const
 {
-    return mParameter.isEmpty() || mRegExp.isEmpty();
+    return mParameter.isEmpty() || mRegex.pattern().isEmpty();
 }
 
 QString FilterActionRewriteHeader::informationAboutNotValidAction() const
@@ -46,7 +46,7 @@ QString FilterActionRewriteHeader::informationAboutNotValidAction() const
     if (mParameter.isEmpty()) {
         info = i18n("Header not defined");
     }
-    if (mRegExp.isEmpty()) {
+    if (mRegex.pattern().isEmpty()) {
         if (!info.isEmpty()) {
             info += QLatin1Char('\n');
         }
@@ -71,7 +71,7 @@ FilterAction::ReturnCode FilterActionRewriteHeader::process(ItemContext &context
 
     QString value = header->asUnicodeString();
     const QString oldValue = value;
-    const QString newValue = value.replace(mRegExp, mReplacementString);
+    const QString newValue = value.replace(mRegex, mReplacementString);
     if (newValue != oldValue) {
         msg->removeHeader(param.constData());
 
@@ -161,7 +161,7 @@ void FilterActionRewriteHeader::setParamWidgetValue(QWidget *paramWidget) const
 
     KLineEdit *regExpLineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("search"));
     Q_ASSERT(regExpLineEdit);
-    regExpLineEdit->setText(mRegExp.pattern());
+    regExpLineEdit->setText(mRegex.pattern());
 
     KLineEdit *lineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("replace"));
     Q_ASSERT(lineEdit);
@@ -176,7 +176,7 @@ void FilterActionRewriteHeader::applyParamWidgetValue(QWidget *paramWidget)
 
     const KLineEdit *regExpLineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("search"));
     Q_ASSERT(regExpLineEdit);
-    mRegExp.setPattern(regExpLineEdit->text());
+    mRegex.setPattern(regExpLineEdit->text());
 
     const KLineEdit *lineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("replace"));
     Q_ASSERT(lineEdit);
@@ -202,7 +202,7 @@ QString FilterActionRewriteHeader::argsAsString() const
 {
     QString result = mParameter;
     result += QLatin1Char('\t');
-    result += mRegExp.pattern();
+    result += mRegex.pattern();
     result += QLatin1Char('\t');
     result += mReplacementString;
 
@@ -223,7 +223,7 @@ void FilterActionRewriteHeader::argsFromString(const QString &argsStr)
     QString result;
 
     result = list[ 0 ];
-    mRegExp.setPattern(list[ 1 ]);
+    mRegex.setPattern(list[ 1 ]);
     mReplacementString = list[ 2 ];
 
     int index = mParameterList.indexOf(result);

@@ -12,7 +12,7 @@ using MailCommon::FilterLog;
 #include <QDateTime>
 #include <KMime/KMimeMessage>
 
-#include <QRegExp>
+#include <QRegularExpression>
 
 #include <algorithm>
 
@@ -88,14 +88,12 @@ bool SearchRuleNumerical::matchesInternal(long numericalValue, long numericalMsg
 
     case SearchRule::FuncRegExp:
     {
-        QRegExp regexp(contents(), Qt::CaseInsensitive);
-        return regexp.indexIn(msgContents) >= 0;
+        return msgContents.contains(QRegularExpression(contents(), QRegularExpression::CaseInsensitiveOption));
     }
 
     case SearchRule::FuncNotRegExp:
     {
-        QRegExp regexp(contents(), Qt::CaseInsensitive);
-        return regexp.indexIn(msgContents) < 0;
+        return !msgContents.contains(QRegularExpression(contents(), QRegularExpression::CaseInsensitiveOption));
     }
 
     case FuncIsGreater:

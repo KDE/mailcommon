@@ -18,7 +18,7 @@ using MailCommon::FilterLog;
 
 #include <KLocalizedString>
 
-#include <QRegExp>
+#include <QRegularExpression>
 
 #include <algorithm>
 #include <boost/bind.hpp>
@@ -259,14 +259,12 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
 
     case SearchRule::FuncRegExp:
     {
-        QRegExp regexp(contents(), Qt::CaseInsensitive);
-        return regexp.indexIn(msgContents) >= 0;
+        return msgContents.contains(QRegularExpression(contents(), QRegularExpression::CaseInsensitiveOption));
     }
 
     case SearchRule::FuncNotRegExp:
     {
-        QRegExp regexp(contents(), Qt::CaseInsensitive);
-        return regexp.indexIn(msgContents) < 0;
+        return !msgContents.contains(QRegularExpression(contents(), QRegularExpression::CaseInsensitiveOption));
     }
 
     case SearchRule::FuncStartWith:

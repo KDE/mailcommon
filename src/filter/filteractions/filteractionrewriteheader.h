@@ -10,7 +10,7 @@
 
 #include "filteractionwithstringlist.h"
 
-#include <QRegExp>
+#include <QRegularExpression>
 
 namespace MailCommon {
 //=============================================================================
@@ -40,7 +40,7 @@ public:
     Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
 
 private:
-    QRegExp mRegExp;
+    QRegularExpression mRegex;
     QString mReplacementString;
 };
 }
