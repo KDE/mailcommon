@@ -49,7 +49,7 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
     expireReadMailCB = new QCheckBox(this);
     expireReadMailCB->setText(i18n("Expire read messages after"));
     connect(expireReadMailCB, &QCheckBox::toggled, this, &CollectionExpiryWidget::slotUpdateControls);
-    daysBox->addWidget(expireReadMailCB, 0, 0, Qt::AlignLeft);
+    daysBox->addWidget(expireReadMailCB, 0, 0);
 
     expireReadMailSB = new KPluralHandlingSpinBox(this);
     expireReadMailSB->setMaximum(999999);
@@ -61,7 +61,7 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
     expireUnreadMailCB = new QCheckBox(this);
     expireUnreadMailCB->setText(i18n("Expire unread messages after"));
     connect(expireUnreadMailCB, &QCheckBox::toggled, this, &CollectionExpiryWidget::slotUpdateControls);
-    daysBox->addWidget(expireUnreadMailCB, 1, 0, Qt::AlignLeft);
+    daysBox->addWidget(expireUnreadMailCB, 1, 0);
 
     expireUnreadMailSB = new KPluralHandlingSpinBox(this);
     expireUnreadMailSB->setMaximum(99999);
