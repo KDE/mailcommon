@@ -56,7 +56,7 @@ public:
      * A helper method for the main matches() method.
      * Does the actual comparing.
      */
-    bool matchesInternal(const QDate &dateValue, const QDate &msgDate) const;
+    bool matchesInternal(QDate dateValue, QDate msgDate) const;
 
     /**
      * @copydoc SearchRule::addQueryTerms()

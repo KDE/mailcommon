@@ -22,7 +22,7 @@
 
 void FilterActionDecryptTest::initTestCase()
 {
-    mGpg = new GPGHelper(QString::fromUtf8(TEST_PATH) + QStringLiteral("/gpghome"));
+    mGpg = new GPGHelper(QLatin1String(TEST_PATH) + QStringLiteral("/gpghome"));
     QVERIFY(mGpg->isValid());
 }
 

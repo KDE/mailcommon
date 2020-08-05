@@ -323,8 +323,7 @@ void KMFilterListBox::slotUpdateFilterName()
         // auto-naming of patterns
         if (!p->isEmpty() && p->first() && !p->first()->field().trimmed().isEmpty()) {
             shouldBeName = QStringLiteral("<%1>: %2").
-                           arg(QString::fromLatin1(p->first()->field())).
-                           arg(p->first()->contents());
+                           arg(QString::fromLatin1(p->first()->field()), p->first()->contents());
         } else {
             shouldBeName = QLatin1Char('<') + i18n("unnamed") + QLatin1Char('>');
         }

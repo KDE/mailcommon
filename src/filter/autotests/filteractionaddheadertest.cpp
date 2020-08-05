@@ -97,7 +97,7 @@ void FilterActionAddHeaderTest::shouldNotExecuteActionWhenParameterIsEmpty()
     item.setPayload<KMime::Message::Ptr>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
-    filter.argsFromString(QStringLiteral(""));
+    filter.argsFromString(QLatin1String(""));
     QCOMPARE(filter.process(context, false), MailCommon::FilterAction::ErrorButGoOn);
     QCOMPARE(context.needsPayloadStore(), false);
     QCOMPARE(context.deleteItem(), false);

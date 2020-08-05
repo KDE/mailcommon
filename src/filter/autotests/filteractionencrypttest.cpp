@@ -22,7 +22,7 @@
 
 void FilterActionEncryptTest::initTestCase()
 {
-    mGpg = new GPGHelper(QString::fromUtf8(TEST_PATH) + QStringLiteral("/gpghome"));
+    mGpg = new GPGHelper(QStringLiteral(TEST_PATH) + QStringLiteral("/gpghome"));
     QVERIFY(mGpg->isValid());
 }
 
@@ -40,7 +40,7 @@ void FilterActionEncryptTest::shouldEncrypt_data()
     const auto smimeKey = QStringLiteral("SMIME:%1:0FDD972BCEFB5735DC7E8EE57DB7BA4E5FDBE218");
     const auto pgpKey = QStringLiteral("PGP:%1:818AE8DA30F81B0CEA4403BA358732559B8659B2");
 
-    QDir testDir(QString::fromUtf8(TEST_PATH) + QStringLiteral("/gpgdata"));
+    QDir testDir(QStringLiteral(TEST_PATH) + QStringLiteral("/gpgdata"));
     const auto tests = testDir.entryInfoList({ QStringLiteral("*.msg") }, QDir::Files, QDir::Name);
     for (const auto &test : tests) {
         QFile plain(test.absoluteFilePath());

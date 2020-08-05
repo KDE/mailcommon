@@ -60,7 +60,7 @@ bool SearchRuleDate::matches(const Akonadi::Item &item) const
     return rc;
 }
 
-bool SearchRuleDate::matchesInternal(const QDate &dateValue, const QDate &msgDate) const
+bool SearchRuleDate::matchesInternal(QDate dateValue, QDate msgDate) const
 {
     switch (function()) {
     case SearchRule::FuncEquals:

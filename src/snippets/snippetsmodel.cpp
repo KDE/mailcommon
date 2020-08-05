@@ -735,7 +735,8 @@ void SnippetsModel::save(const QString &filename)
     KSharedConfig::Ptr config = KSharedConfig::openConfig(filename.isEmpty() ? QStringLiteral("kmailsnippetrc") : filename, KConfig::NoGlobals);
 
     // clear everything
-    for (const QString &group : config->groupList()) {
+    const QStringList lst = config->groupList();
+    for (const QString &group : lst) {
         config->deleteGroup(group);
     }
 
