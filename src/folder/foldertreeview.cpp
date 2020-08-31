@@ -565,7 +565,7 @@ Akonadi::Collection FolderTreeView::currentFolder() const
 
 void FolderTreeView::mousePressEvent(QMouseEvent *e)
 {
-    const bool buttonPressedIsMiddle = (e->button() == Qt::MidButton);
+    const bool buttonPressedIsMiddle = (e->button() == Qt::MiddleButton);
     Q_EMIT newTabRequested(buttonPressedIsMiddle);
     EntityTreeView::mousePressEvent(e);
 }
