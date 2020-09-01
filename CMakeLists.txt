@@ -10,7 +10,6 @@ set(CMAKE_MODULE_PATH ${mailcommon_SOURCE_DIR}/cmake/modules/ ${ECM_MODULE_PATH}
 if (POLICY CMP0053)
     cmake_policy(SET CMP0053 NEW)
 endif()
-set(LIBRARY_NAMELINK)
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
