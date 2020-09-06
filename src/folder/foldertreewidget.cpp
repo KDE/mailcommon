@@ -44,10 +44,6 @@ namespace MailCommon {
 class Q_DECL_HIDDEN FolderTreeWidget::FolderTreeWidgetPrivate
 {
 public:
-    FolderTreeWidgetPrivate()
-    {
-    }
-
     QString filter;
     QString oldFilterStr;
     Akonadi::StatisticsProxyModel *filterModel = nullptr;

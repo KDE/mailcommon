@@ -39,10 +39,6 @@ struct InstanceStruct {
 class MailCommon::AccountConfigOrderDialogPrivate
 {
 public:
-    AccountConfigOrderDialogPrivate()
-    {
-    }
-
     QListWidget *mListAccount = nullptr;
     QPushButton *mUpButton = nullptr;
     QPushButton *mDownButton = nullptr;

@@ -27,10 +27,6 @@ using namespace MailCommon;
 class MailCommon::FolderCollectionMonitorPrivate
 {
 public:
-    FolderCollectionMonitorPrivate()
-    {
-    }
-
     Akonadi::ChangeRecorder *mMonitor = nullptr;
 };
 

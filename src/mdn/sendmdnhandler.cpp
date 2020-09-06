@@ -38,7 +38,7 @@ public:
     void handleMessages();
 
     SendMdnHandler * const q;
-    IKernel *mKernel = nullptr;
+    IKernel *const mKernel;
     QQueue<Akonadi::Item> mItemQueue;
     QTimer mTimer;
 };

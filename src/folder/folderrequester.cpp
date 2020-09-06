@@ -25,10 +25,6 @@ namespace MailCommon {
 class FolderRequesterPrivate
 {
 public:
-    FolderRequesterPrivate()
-    {
-    }
-
     Akonadi::Collection mCollection;
     QLineEdit *mEdit = nullptr;
     QString mSelectFolderTitleDialog;

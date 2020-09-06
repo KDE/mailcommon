@@ -93,7 +93,7 @@ private:
     ArchiveType mArchiveType = Zip;
     Akonadi::Collection mRootFolder;
     KArchive *mArchive = nullptr;
-    QWidget *mParentWidget = nullptr;
+    QWidget *const mParentWidget;
     int mArchivedMessages = 0;
     uint mArchivedSize = 0;
     QPointer<KPIM::ProgressItem> mProgressItem;

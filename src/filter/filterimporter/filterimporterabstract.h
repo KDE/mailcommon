@@ -33,7 +33,7 @@ protected:
     QVector<MailFilter *> mListMailFilter;
     QStringList mEmptyFilter;
 private:
-    bool mInteractive;
+    const bool mInteractive;
 };
 }
 

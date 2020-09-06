@@ -33,10 +33,6 @@ namespace MailCommon {
 class Q_DECL_HIDDEN FolderSelectionDialog::FolderSelectionDialogPrivate
 {
 public:
-    FolderSelectionDialogPrivate()
-    {
-    }
-
     FolderTreeWidget *folderTreeWidget = nullptr;
     QPushButton *mUser1Button = nullptr;
     QPushButton *mOkButton = nullptr;
