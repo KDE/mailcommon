@@ -85,7 +85,6 @@ static const int numMdnMessageBoxes
 
 MDNAdviceDialog::MDNAdviceDialog(const QString &text, bool canDeny, QWidget *parent)
     : QDialog(parent)
-    , m_result(MessageComposer::MDNIgnore)
 {
     setWindowTitle(i18nc("@title:window", "Message Disposition Notification Request"));
     QPushButton *user1Button = nullptr;

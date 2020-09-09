@@ -20,7 +20,7 @@ public:
     void convert();
 
 private:
-    QVector<MailFilter *> mListFilters;
+    const QVector<MailFilter *> mListFilters;
 };
 }
 #endif // FILTERCONVERTTOSIEVE_H

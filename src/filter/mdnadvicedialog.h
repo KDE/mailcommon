@@ -76,7 +76,7 @@ private:
     void slotUser1Clicked();
     void slotUser2Clicked();
     void slotYesClicked();
-    MessageComposer::MDNAdvice m_result;
+    MessageComposer::MDNAdvice m_result = MessageComposer::MDNIgnore;
 
 protected:
 

@@ -35,7 +35,7 @@ private Q_SLOTS:
     void onTagsFetched(KJob *);
 
 private:
-    QComboBox * mComboBox = nullptr;
+    QComboBox *mComboBox = nullptr;
 };
 
 FillTagComboJob::FillTagComboJob(QComboBox *combo, QObject *parent)

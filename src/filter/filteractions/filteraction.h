@@ -182,8 +182,8 @@ Q_SIGNALS:
     void filterActionModified();
 
 private:
-    QString mName;
-    QString mLabel;
+    const QString mName;
+    const QString mLabel;
 };
 }
 

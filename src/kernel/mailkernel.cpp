@@ -39,7 +39,7 @@ public:
         delete kernel;
     }
 
-    Kernel *kernel;
+    Kernel *const kernel;
 };
 
 Q_GLOBAL_STATIC(KernelPrivate, sInstance)

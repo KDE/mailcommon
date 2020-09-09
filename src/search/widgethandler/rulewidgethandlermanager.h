@@ -66,7 +66,7 @@ private:
     typedef QVector<const RuleWidgetHandler *>::iterator iterator;
 
     QVector<const RuleWidgetHandler *> mHandlers;
-    bool mIsBalooSearch;
+    bool mIsBalooSearch = false;
 };
 } // namespace MailCommon
 

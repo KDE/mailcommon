@@ -33,7 +33,6 @@ using namespace MailCommon;
 MailCommon::RuleWidgetHandlerManager *MailCommon::RuleWidgetHandlerManager::self = nullptr;
 
 MailCommon::RuleWidgetHandlerManager::RuleWidgetHandlerManager()
-    : mIsBalooSearch(false)
 {
     registerHandler(new MailCommon::TagRuleWidgetHandler());
     registerHandler(new MailCommon::DateRuleWidgetHandler());

@@ -32,7 +32,7 @@ private:
     void writeConfig();
     void readConfig();
     void slotAccepted();
-    QString mVariableName;
+    const QString mVariableName;
     QMap<QString, QString> *mVariables = nullptr;
     KPIMTextEdit::PlainTextEditorWidget *mVariableValueText = nullptr;
     QCheckBox *mSaveVariable = nullptr;
