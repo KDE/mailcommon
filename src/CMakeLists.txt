@@ -100,6 +100,7 @@ set(libmailcommon_collection_SRCS
   collectionpage/attributes/expirecollectionattribute.cpp
   collectionpage/collectionexpiryjob.cpp
   collectionpage/collectiontemplateswidget.cpp
+  collectionpage/collectionviewwidget.cpp
 )
 
 set(libmailcommon_folder_SRCS
@@ -250,6 +251,7 @@ PRIVATE
   KF5::MailImporter
   KF5::MessageCore
   KF5::TemplateParser
+  KF5::MessageList
   KF5::Mime
   KF5::Codecs
   KF5::MailTransport
@@ -399,6 +401,7 @@ ecm_generate_headers(MailCommon_Camelcasecollectionpage_HEADERS
   CollectionExpiryPage
   CollectionExpiryWidget
   CollectionTemplatesWidget
+  CollectionViewWidget
   REQUIRED_HEADERS MailCommon_collectionpage_HEADERS
   PREFIX MailCommon
   RELATIVE collectionpage
