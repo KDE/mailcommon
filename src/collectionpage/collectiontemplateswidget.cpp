@@ -55,7 +55,7 @@ CollectionTemplatesWidget::~CollectionTemplatesWidget()
 
 }
 
-void CollectionTemplatesWidget::save(const Akonadi::Collection &)
+void CollectionTemplatesWidget::save(Akonadi::Collection &)
 {
     if (mChanged && !mCollectionId.isEmpty()) {
         TemplateParser::Templates t(mCollectionId);

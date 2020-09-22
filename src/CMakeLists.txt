@@ -101,6 +101,7 @@ set(libmailcommon_collection_SRCS
   collectionpage/collectionexpiryjob.cpp
   collectionpage/collectiontemplateswidget.cpp
   collectionpage/collectionviewwidget.cpp
+  collectionpage/collectiongeneralwidget.cpp
 )
 
 set(libmailcommon_folder_SRCS
@@ -402,6 +403,7 @@ ecm_generate_headers(MailCommon_Camelcasecollectionpage_HEADERS
   CollectionExpiryWidget
   CollectionTemplatesWidget
   CollectionViewWidget
+  CollectionGeneralWidget
   REQUIRED_HEADERS MailCommon_collectionpage_HEADERS
   PREFIX MailCommon
   RELATIVE collectionpage
