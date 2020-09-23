@@ -10,7 +10,7 @@
 #include "util/mailutil_p.h"
 #include <KLocalizedString>
 #include <KIdentityManagement/IdentityCombo>
-#include <AkonadiCore/NewMailNotifierAttribute>
+#include <Akonadi/KMime/NewMailNotifierAttribute>
 #include <QFrame>
 #include <QCheckBox>
 #include <QVBoxLayout>

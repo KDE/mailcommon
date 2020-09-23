@@ -21,7 +21,7 @@
 #include <Collection>
 #include <CollectionModifyJob>
 #include <EntityDisplayAttribute>
-#include <Akonadi/KMime/NewMailNotifierAttribute>
+
 #include <KIdentityManagement/IdentityCombo>
 #include <PimCommonAkonadi/ImapResourceCapabilitiesManager>
 #include <Libkdepim/LineEditCatchReturnKey>
