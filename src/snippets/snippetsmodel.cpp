@@ -15,7 +15,6 @@
 #include <QMimeData>
 #include <QDataStream>
 #include <QStringList>
-#include <QDebug>
 #include <KSharedConfig>
 #include <KConfigGroup>
 

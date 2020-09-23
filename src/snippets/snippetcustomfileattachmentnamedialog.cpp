@@ -9,7 +9,6 @@
 
 #include <KConfigGroup>
 #include <QDialogButtonBox>
-#include <QHBoxLayout>
 #include <QPushButton>
 #include <QVBoxLayout>
 

@@ -13,7 +13,6 @@
 #include <KLocalizedString>
 #include <QComboBox>
 #include <KLineEdit>
-#include <QAbstractListModel>
 #include <QVBoxLayout>
 using namespace MailCommon;
 

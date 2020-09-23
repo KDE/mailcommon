@@ -9,7 +9,6 @@
 #include <QTest>
 #include <QWidget>
 #include <QLabel>
-#include <KLineEdit>
 #include <QComboBox>
 
 #include <AkonadiWidgets/CollectionComboBox>

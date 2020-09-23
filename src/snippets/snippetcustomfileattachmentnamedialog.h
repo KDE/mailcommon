@@ -7,7 +7,6 @@
 #ifndef SNIPPETCUSTOMFILEATTACHMENTNAMEDIALOG_H
 #define SNIPPETCUSTOMFILEATTACHMENTNAMEDIALOG_H
 
-#include <QObject>
 #include <QDialog>
 #include "mailcommon_private_export.h"
 

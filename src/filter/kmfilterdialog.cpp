@@ -44,7 +44,6 @@ using MailCommon::FilterImporterExporter;
 #include <KIconButton>
 #include <QIcon>
 
-#include <QApplication>
 #include <QButtonGroup>
 #include <QCheckBox>
 #include <QGridLayout>

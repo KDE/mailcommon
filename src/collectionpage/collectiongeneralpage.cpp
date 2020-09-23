@@ -27,10 +27,10 @@
 #include <Libkdepim/LineEditCatchReturnKey>
 
 #include <KColorScheme>
-#include <KLineEdit>
 #include <KLocalizedString>
 #include <KMessageBox>
 
+#include <QLineEdit>
 #include <QCheckBox>
 #include <QHBoxLayout>
 #include <QLabel>

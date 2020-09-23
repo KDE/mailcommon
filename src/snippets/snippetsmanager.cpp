@@ -19,7 +19,6 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <QIcon>
-#include <QTextEdit>
 
 #include <QAction>
 #include <QPointer>
