@@ -9,7 +9,6 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-
 #include "kmfilterdialog.h"
 #include "mailcommon_debug.h"
 #include "kmfilterlistbox.h"

@@ -140,13 +140,14 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
 }
 
 namespace {
-
 Akonadi::Tag::List namesToTags(const QStringList &names)
 {
     Akonadi::Tag::List tags;
     tags.reserve(names.size());
     std::transform(names.cbegin(), names.cend(), std::back_inserter(tags),
-                   [](const QString &name) { return Akonadi::Tag{name}; });
+                   [](const QString &name) {
+            return Akonadi::Tag{name};
+        });
     return tags;
 }
 
@@ -158,7 +159,6 @@ QStringList tagsToNames(const Akonadi::Tag::List &tags)
                    std::bind(&Akonadi::Tag::name, std::placeholders::_1));
     return names;
 }
-
 }
 
 void FilterActionAddToAddressBook::setParamWidgetValue(QWidget *paramWidget) const

@@ -16,12 +16,10 @@ using namespace MailCommon;
 CollectionExpiryJob::CollectionExpiryJob(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 CollectionExpiryJob::~CollectionExpiryJob()
 {
-
 }
 
 void CollectionExpiryJob::start()

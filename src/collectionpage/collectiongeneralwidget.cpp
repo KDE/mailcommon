@@ -88,13 +88,10 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
              "sender email address, signature and signing or encryption keys "
              "automatically. Identities can be set up in the main configuration "
              "dialog. (Settings -> Configure KMail)"));
-
-
 }
 
 CollectionGeneralWidget::~CollectionGeneralWidget()
 {
-
 }
 
 void CollectionGeneralWidget::addLine(QWidget *parent, QVBoxLayout *layout)
@@ -115,7 +112,6 @@ void CollectionGeneralWidget::slotIdentityCheckboxChanged()
     }
 }
 
-
 void CollectionGeneralWidget::save(Akonadi::Collection &collection)
 {
     if (!mNotifyOnNewMailCheckBox->isChecked()) {
@@ -132,7 +128,6 @@ void CollectionGeneralWidget::save(Akonadi::Collection &collection)
         mFolderCollection->setHideInSelectionDialog(mHideInSelectionDialogCheckBox->isChecked());
         mFolderCollection->writeConfig();
     }
-
 }
 
 void CollectionGeneralWidget::load(const Akonadi::Collection &col)
@@ -151,6 +146,4 @@ void CollectionGeneralWidget::load(const Akonadi::Collection &col)
     mKeepRepliesInSameFolderCheckBox->setChecked(keepInFolder);
     mKeepRepliesInSameFolderCheckBox->setEnabled(mFolderCollection->canCreateMessages());
     mHideInSelectionDialogCheckBox->setChecked(mFolderCollection->hideInSelectionDialog());
-
-
 }

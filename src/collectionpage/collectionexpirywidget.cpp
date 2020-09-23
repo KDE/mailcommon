@@ -4,7 +4,6 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-
 #include "collectionexpirywidget.h"
 #include "collectionexpiryjob.h"
 #include "kernel/mailkernel.h"
@@ -15,7 +14,6 @@
 #include "mailcommon_debug.h"
 
 #include <CollectionModifyJob>
-
 
 #include <KPluralHandlingSpinBox>
 #include <KMessageBox>
@@ -101,7 +99,6 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
 
 CollectionExpiryWidget::~CollectionExpiryWidget()
 {
-
 }
 
 void CollectionExpiryWidget::slotChanged()

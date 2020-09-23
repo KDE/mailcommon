@@ -87,14 +87,10 @@ bool SearchRuleNumerical::matchesInternal(long numericalValue, long numericalMsg
         return !msgContents.contains(contents(), Qt::CaseInsensitive);
 
     case SearchRule::FuncRegExp:
-    {
         return msgContents.contains(QRegularExpression(contents(), QRegularExpression::CaseInsensitiveOption));
-    }
 
     case SearchRule::FuncNotRegExp:
-    {
         return !msgContents.contains(QRegularExpression(contents(), QRegularExpression::CaseInsensitiveOption));
-    }
 
     case FuncIsGreater:
         return numericalMsgContents > numericalValue;

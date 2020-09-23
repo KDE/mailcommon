@@ -110,7 +110,6 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
 
 CollectionViewWidget::~CollectionViewWidget()
 {
-
 }
 
 void CollectionViewWidget::load(const Akonadi::Collection &col)

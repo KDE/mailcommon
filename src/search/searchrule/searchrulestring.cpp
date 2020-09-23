@@ -258,14 +258,10 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
         return !msgContents.contains(contents(), Qt::CaseInsensitive);
 
     case SearchRule::FuncRegExp:
-    {
         return msgContents.contains(QRegularExpression(contents(), QRegularExpression::CaseInsensitiveOption));
-    }
 
     case SearchRule::FuncNotRegExp:
-    {
         return !msgContents.contains(QRegularExpression(contents(), QRegularExpression::CaseInsensitiveOption));
-    }
 
     case SearchRule::FuncStartWith:
         return msgContents.startsWith(contents());

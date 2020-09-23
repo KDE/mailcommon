@@ -52,7 +52,6 @@ CollectionTemplatesWidget::CollectionTemplatesWidget(QWidget *parent)
 
 CollectionTemplatesWidget::~CollectionTemplatesWidget()
 {
-
 }
 
 void CollectionTemplatesWidget::save(Akonadi::Collection &)

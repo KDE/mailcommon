@@ -63,7 +63,7 @@ public:
 
     QColor brokenAccountColor;
     qreal threshold = 0.0;
-    FolderTreeWidgetProxyModel * const q;
+    FolderTreeWidgetProxyModel *const q;
     bool enableCheck = false;
     bool hideVirtualFolder = false;
     bool hideSpecificFolder = false;

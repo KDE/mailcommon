@@ -7,7 +7,6 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-
 #include "snippetsmanager.h"
 #include "mailcommon_debug.h"
 #include "snippetdialog.h"
@@ -63,7 +62,7 @@ public:
 
     void save();
 
-    SnippetsManager * const q = nullptr;
+    SnippetsManager *const q = nullptr;
     SnippetsModel *mModel = nullptr;
     QItemSelectionModel *mSelectionModel = nullptr;
     KActionCollection *mActionCollection = nullptr;

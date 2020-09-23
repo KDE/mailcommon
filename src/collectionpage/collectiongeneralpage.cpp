@@ -230,7 +230,6 @@ void CollectionGeneralPage::save(Collection &collection)
     } else {
         annotationsAttribute->setAnnotations(annotations);
     }
-
 }
 
 void CollectionGeneralPage::slotFolderContentsSelectionChanged(int)

@@ -70,7 +70,6 @@ void CollectionExpiryPage::load(const Akonadi::Collection &collection)
         settings.mExpireAction = attr->expireAction();
         settings.mExpireToFolderId = attr->expireToFolderId();
 
-
         mCollectionExpiryWidget->load(settings);
     } else {
         mCollectionExpiryWidget->load({});
