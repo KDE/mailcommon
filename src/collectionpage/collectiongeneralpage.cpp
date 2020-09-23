@@ -5,6 +5,7 @@
 */
 
 #include "collectiongeneralpage.h"
+#include "collectiongeneralwidget.h"
 #include "collectiontypeutil.h"
 
 #include "incidencesforwidget.h"
@@ -49,16 +50,6 @@ CollectionGeneralPage::~CollectionGeneralPage()
 {
 }
 
-void CollectionGeneralPage::addLine(QWidget *parent, QVBoxLayout *layout)
-{
-    QFrame *line = new QFrame(parent);
-    line->setGeometry(QRect(80, 150, 250, 20));
-    line->setFrameShape(QFrame::HLine);
-    line->setFrameShadow(QFrame::Sunken);
-    line->setFrameShape(QFrame::HLine);
-    layout->addWidget(line);
-}
-
 void CollectionGeneralPage::init(const Akonadi::Collection &collection)
 {
     mIsLocalSystemFolder = CommonKernel->isSystemFolderCollection(collection)
@@ -85,72 +76,8 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
         hl->addWidget(mNameEdit);
     }
 
-    // should new mail in this folder be ignored?
-    QHBoxLayout *hbl = new QHBoxLayout();
-    topLayout->addItem(hbl);
-    mNotifyOnNewMailCheckBox
-        = new QCheckBox(i18n("Act on new/unread mail in this folder"), this);
-    mNotifyOnNewMailCheckBox->setWhatsThis(
-        i18n("<qt><p>If this option is enabled then you will be notified about "
-             "new/unread mail in this folder. Moreover, going to the "
-             "next/previous folder with unread messages will stop at this "
-             "folder.</p>"
-             "<p>Uncheck this option if you do not want to be notified about "
-             "new/unread mail in this folder and if you want this folder to "
-             "be skipped when going to the next/previous folder with unread "
-             "messages. This is useful for ignoring any new/unread mail in "
-             "your trash and spam folder.</p></qt>"));
-    hbl->addWidget(mNotifyOnNewMailCheckBox);
-    // should replies to mails in this folder be kept in this same folder?
-    hbl = new QHBoxLayout();
-    topLayout->addItem(hbl);
-    mKeepRepliesInSameFolderCheckBox
-        = new QCheckBox(i18n("Keep replies in this folder"), this);
-    mKeepRepliesInSameFolderCheckBox->setWhatsThis(
-        i18n("Check this option if you want replies you write "
-             "to mails in this folder to be put in this same folder "
-             "after sending, instead of in the configured sent-mail folder."));
-    hbl->addWidget(mKeepRepliesInSameFolderCheckBox);
-    hbl->addStretch(1);
-    // should this folder be shown in the folder selection dialog?
-    hbl = new QHBoxLayout();
-    topLayout->addItem(hbl);
-    mHideInSelectionDialogCheckBox
-        = new QCheckBox(i18n("Hide this folder in the folder selection dialog"), this);
-    mHideInSelectionDialogCheckBox->setWhatsThis(
-        xi18nc("@info:whatsthis",
-               "Check this option if you do not want this folder "
-               "to be shown in folder selection dialogs, such as the <interface>"
-               "Jump to Folder</interface> dialog."));
-    hbl->addWidget(mHideInSelectionDialogCheckBox);
-    hbl->addStretch(1);
-
-    addLine(this, topLayout);
-    // use grid layout for the following combobox settings
-    QGridLayout *gl = new QGridLayout();
-    topLayout->addItem(gl);
-    gl->setColumnStretch(1, 100);   // make the second column use all available space
-    int row = -1;
-
-    // sender identity
-    ++row;
-    mUseDefaultIdentityCheckBox = new QCheckBox(i18n("Use &default identity"), this);
-    gl->addWidget(mUseDefaultIdentityCheckBox);
-    connect(mUseDefaultIdentityCheckBox, &QCheckBox::stateChanged, this, &CollectionGeneralPage::slotIdentityCheckboxChanged);
-    ++row;
-    label = new QLabel(i18n("&Sender identity:"), this);
-    gl->addWidget(label, row, 0);
-    mIdentityComboBox = new KIdentityManagement::IdentityCombo(KernelIf->identityManager(), this);
-    label->setBuddy(mIdentityComboBox);
-    gl->addWidget(mIdentityComboBox, row, 1);
-    mIdentityComboBox->setWhatsThis(
-        i18n("Select the sender identity to be used when writing new mail "
-             "or replying to mail in this folder. This means that if you are in "
-             "one of your work folders, you can make KMail use the corresponding "
-             "sender email address, signature and signing or encryption keys "
-             "automatically. Identities can be set up in the main configuration "
-             "dialog. (Settings -> Configure KMail)"));
-
+    mCollectionGeneralWidget = new CollectionGeneralWidget(this);
+    topLayout->addWidget(mCollectionGeneralWidget);
     // Only do make this settable, if the IMAP resource is enabled
     // and it's not the personal folders (those must not be changed)
     const QString collectionResource = collection.resource();
@@ -173,7 +100,9 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
 
         const PimCommon::CollectionTypeUtil::FolderContentsType folderType = collectionUtil.typeFromKolabName(annotations.value(PimCommon::CollectionTypeUtil::kolabFolderType()));
 
-        ++row;
+        int row = 0;
+        QGridLayout *gl = new QGridLayout();
+        topLayout->addItem(gl);
         mContentsComboBox = new PimCommon::ContentTypeWidget(this);
         gl->addWidget(mContentsComboBox, row, 0, 1, 2);
         mContentsComboBox->setCurrentIndex(contentsType);
@@ -215,6 +144,7 @@ void CollectionGeneralPage::load(const Akonadi::Collection &collection)
     mFolderCollection = FolderSettings::forCollection(collection);
     init(collection);
 
+    mCollectionGeneralWidget->load(collection);
     if (mNameEdit) {
         const QString displayName = collection.displayName();
 
@@ -222,20 +152,6 @@ void CollectionGeneralPage::load(const Akonadi::Collection &collection)
             mNameEdit->setText(displayName);
         }
     }
-
-    // folder identity
-    mIdentityComboBox->setCurrentIdentity(mFolderCollection->identity());
-    mUseDefaultIdentityCheckBox->setChecked(mFolderCollection->useDefaultIdentity());
-
-    // ignore new mail
-    mNotifyOnNewMailCheckBox->setChecked(!Util::ignoreNewMailInFolder(collection));
-
-    const bool keepInFolder = (mFolderCollection->canCreateMessages()
-                               && mFolderCollection->putRepliesInSameFolder());
-
-    mKeepRepliesInSameFolderCheckBox->setChecked(keepInFolder);
-    mKeepRepliesInSameFolderCheckBox->setEnabled(mFolderCollection->canCreateMessages());
-    mHideInSelectionDialogCheckBox->setChecked(mFolderCollection->hideInSelectionDialog());
 
     if (mContentsComboBox) {
         const PimCommon::CollectionAnnotationsAttribute *annotationsAttribute
@@ -278,13 +194,7 @@ void CollectionGeneralPage::save(Collection &collection)
             }
         }
     }
-
-    if (!mNotifyOnNewMailCheckBox->isChecked()) {
-        Akonadi::NewMailNotifierAttribute *newMailNotifierAttr = collection.attribute<Akonadi::NewMailNotifierAttribute>(Akonadi::Collection::AddIfMissing);
-        newMailNotifierAttr->setIgnoreNewMail(true);
-    } else {
-        collection.removeAttribute<Akonadi::NewMailNotifierAttribute>();
-    }
+    mCollectionGeneralWidget->save(collection);
 
     PimCommon::CollectionAnnotationsAttribute *annotationsAttribute
         = collection.attribute<PimCommon::CollectionAnnotationsAttribute>(Collection::AddIfMissing);
@@ -321,22 +231,6 @@ void CollectionGeneralPage::save(Collection &collection)
         annotationsAttribute->setAnnotations(annotations);
     }
 
-    if (mFolderCollection) {
-        mFolderCollection->setIdentity(mIdentityComboBox->currentIdentity());
-        mFolderCollection->setUseDefaultIdentity(mUseDefaultIdentityCheckBox->isChecked());
-
-        mFolderCollection->setPutRepliesInSameFolder(mKeepRepliesInSameFolderCheckBox->isChecked());
-        mFolderCollection->setHideInSelectionDialog(mHideInSelectionDialogCheckBox->isChecked());
-        mFolderCollection->writeConfig();
-    }
-}
-
-void CollectionGeneralPage::slotIdentityCheckboxChanged()
-{
-    mIdentityComboBox->setEnabled(!mUseDefaultIdentityCheckBox->isChecked());
-    if (mFolderCollection && mUseDefaultIdentityCheckBox->isChecked()) {
-        mIdentityComboBox->setCurrentIdentity(mFolderCollection->fallBackIdentity());
-    }
 }
 
 void CollectionGeneralPage::slotFolderContentsSelectionChanged(int)
