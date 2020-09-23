@@ -13,15 +13,9 @@
 #include <Collection>
 #include <CollectionPropertiesPage>
 
-class KPluralHandlingSpinBox;
-class KJob;
 
-class QCheckBox;
-class QPushButton;
-class QRadioButton;
 
 namespace MailCommon {
-class FolderRequester;
 class CollectionExpiryWidget;
 /**
  * @brief The CollectionExpiryPage class

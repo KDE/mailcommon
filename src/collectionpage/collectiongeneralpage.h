@@ -21,9 +21,7 @@ class IncidencesForWidget;
 class ContentTypeWidget;
 }
 namespace KIdentityManagement {
-class IdentityCombo;
 }
-class QVBoxLayout;
 namespace MailCommon {
 class FolderSettings;
 class CollectionGeneralWidget;
