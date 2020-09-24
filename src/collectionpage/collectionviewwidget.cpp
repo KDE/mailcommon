@@ -152,6 +152,9 @@ void CollectionViewWidget::load(const Akonadi::Collection &col)
 
 void CollectionViewWidget::save(Akonadi::Collection &col)
 {
+    if (!mFolderCollection) {
+        mFolderCollection = MailCommon::FolderSettings::forCollection(col);
+    }
     const int currentIndex = mShowSenderReceiverComboBox->currentIndex();
     if (mShowSenderReceiverValue != currentIndex) {
         if (currentIndex == 1) {

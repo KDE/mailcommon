@@ -114,6 +114,9 @@ void CollectionGeneralWidget::slotIdentityCheckboxChanged()
 
 void CollectionGeneralWidget::save(Akonadi::Collection &collection)
 {
+    if (!mFolderCollection) {
+        mFolderCollection = FolderSettings::forCollection(collection);
+    }
     if (!mNotifyOnNewMailCheckBox->isChecked()) {
         Akonadi::NewMailNotifierAttribute *newMailNotifierAttr = collection.attribute<Akonadi::NewMailNotifierAttribute>(Akonadi::Collection::AddIfMissing);
         newMailNotifierAttr->setIgnoreNewMail(true);

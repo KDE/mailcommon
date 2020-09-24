@@ -54,8 +54,11 @@ CollectionTemplatesWidget::~CollectionTemplatesWidget()
 {
 }
 
-void CollectionTemplatesWidget::save(Akonadi::Collection &)
+void CollectionTemplatesWidget::save(Akonadi::Collection &col)
 {
+    if (mCollectionId.isEmpty()) {
+        mCollectionId = QString::number(col.id());
+    }
     if (mChanged && !mCollectionId.isEmpty()) {
         TemplateParser::Templates t(mCollectionId);
         //qCDebug(KMAIL_LOG) << "use custom templates for folder" << fid <<":" << mCustom->isChecked();
