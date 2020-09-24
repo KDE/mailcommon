@@ -101,6 +101,11 @@ CollectionExpiryWidget::~CollectionExpiryWidget()
 {
 }
 
+void CollectionExpiryWidget::hideExpireNowButton()
+{
+    expireNowPB->setVisible(false);
+}
+
 void CollectionExpiryWidget::slotChanged()
 {
     Q_EMIT configChanged();
