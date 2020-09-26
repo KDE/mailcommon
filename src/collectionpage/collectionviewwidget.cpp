@@ -184,8 +184,10 @@ void CollectionViewWidget::save(Akonadi::Collection &col)
     } else {
         qCDebug(MAILCOMMON_LOG) << "No settings defined";
     }
-    mFolderCollection->setFormatMessage(formatMessage);
-    mFolderCollection->writeConfig();
+    if (formatMessage != MessageViewer::Viewer::Unknown) {
+        mFolderCollection->setFormatMessage(formatMessage);
+        mFolderCollection->writeConfig();
+    }
 }
 
 void CollectionViewWidget::slotSelectFolderAggregation()
