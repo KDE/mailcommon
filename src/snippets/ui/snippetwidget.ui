@@ -93,13 +93,7 @@
        </widget>
       </item>
       <item row="4" column="1" colspan="2">
-       <widget class="QLineEdit" name="cc">
-        <property name="placeholderText">
-         <string>Separate email with a comma</string>
-        </property>
-        <property name="clearButtonEnabled">
-         <bool>true</bool>
-        </property>
+       <widget class="Akonadi::EmailAddressRequester" name="cc">
        </widget>
       </item>
       <item row="3" column="0">
@@ -110,13 +104,7 @@
        </widget>
       </item>
       <item row="5" column="1" colspan="2">
-       <widget class="QLineEdit" name="bcc">
-        <property name="placeholderText">
-         <string>Separate email with a comma</string>
-        </property>
-        <property name="clearButtonEnabled">
-         <bool>true</bool>
-        </property>
+       <widget class="Akonadi::EmailAddressRequester" name="bcc">
        </widget>
       </item>
       <item row="4" column="0">
@@ -147,13 +135,7 @@
        </widget>
       </item>
       <item row="3" column="1" colspan="2">
-       <widget class="QLineEdit" name="to">
-        <property name="placeholderText">
-         <string>Separate email with a comma</string>
-        </property>
-        <property name="clearButtonEnabled">
-         <bool>true</bool>
-        </property>
+       <widget class="Akonadi::EmailAddressRequester" name="to">
        </widget>
       </item>
       <item row="2" column="1" colspan="2">
