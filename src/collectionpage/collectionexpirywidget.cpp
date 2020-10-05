@@ -244,3 +244,9 @@ void CollectionExpiryWidget::save(Akonadi::Collection &collection, bool saveSett
     const CollectionExpirySettings collectionExpirySettings = settings();
     save(collectionExpirySettings, collection, saveSettings, expireNow);
 }
+
+bool CollectionExpiryWidget::canHandle(const Akonadi::Collection &col)
+{
+    QSharedPointer<FolderSettings> fd = FolderSettings::forCollection(col, false);
+    return fd->canDeleteMessages() && !fd->isStructural() && !MailCommon::Util::isVirtualCollection(col);
+}

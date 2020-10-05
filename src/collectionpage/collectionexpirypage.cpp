@@ -33,8 +33,7 @@ CollectionExpiryPage::~CollectionExpiryPage()
 
 bool CollectionExpiryPage::canHandle(const Akonadi::Collection &col) const
 {
-    QSharedPointer<FolderSettings> fd = FolderSettings::forCollection(col, false);
-    return fd->canDeleteMessages() && !fd->isStructural() && !MailCommon::Util::isVirtualCollection(col);
+    return CollectionExpiryWidget::canHandle(col);
 }
 
 void CollectionExpiryPage::init()
