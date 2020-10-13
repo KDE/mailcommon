@@ -12,6 +12,7 @@
 #include "filter/mdnadvicedialog.h"
 #include "util/mailutil.h"
 #include "mailcommon_debug.h"
+#include "mdn/mdnadvicehelper.h"
 
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>

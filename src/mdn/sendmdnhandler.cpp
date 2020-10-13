@@ -11,6 +11,7 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 #include "filter/mdnadvicedialog.h"
+#include "mdnadvicehelper.h"
 #include "mailcommon_debug.h"
 #include <MessageComposer/Util>
 #include <MessageComposer/MessageFactoryNG>

@@ -174,6 +174,7 @@ set(libmailcommon_widget_SRCS
 set(libmailcommon_mdn_SRCS
   mdn/sendmdnhandler.cpp
   mdn/mdnstateattribute.cpp
+  mdn/mdnadvicehelper.cpp
 )
 
 set(libmailcommon_util_SRCS
