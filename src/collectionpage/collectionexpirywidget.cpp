@@ -29,6 +29,7 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
     : QWidget(parent)
 {
     QVBoxLayout *globalVBox = new QVBoxLayout(this);
+    globalVBox->setContentsMargins({});
 
     QGridLayout *daysBox = new QGridLayout;
 
