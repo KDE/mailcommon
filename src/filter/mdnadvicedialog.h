@@ -19,10 +19,10 @@ class MAILCOMMON_EXPORT MDNAdviceDialog : public QDialog
     Q_OBJECT
 
 public:
-    MDNAdviceDialog(const QString &text, bool canDeny, QWidget *parent = nullptr);
+    explicit MDNAdviceDialog(const QString &text, bool canDeny, QWidget *parent = nullptr);
     ~MDNAdviceDialog();
 
-    MessageComposer::MDNAdvice result() const;
+    Q_REQUIRED_RESULT MessageComposer::MDNAdvice result() const;
 
 private:
     void slotUser1Clicked();
@@ -30,10 +30,6 @@ private:
     void slotYesClicked();
     MessageComposer::MDNAdvice m_result = MessageComposer::MDNIgnore;
 
-protected:
-
-    // Reimplemented
-    void slotButtonClicked(int button);
 };
 }
 

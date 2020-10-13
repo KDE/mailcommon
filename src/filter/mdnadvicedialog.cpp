@@ -5,10 +5,7 @@
 */
 
 #include "mdnadvicedialog.h"
-#include "kernel/mailkernel.h"
 #include "mailcommon_debug.h"
-
-#include <MimeTreeParser/ObjectTreeParser>
 
 #include <KLocalizedString>
 #include <KMessageBox>
