@@ -201,8 +201,7 @@ int MDNAdviceHelper::requestAdviceOnMDN(const char *what)
     for (int i = 0; i < numMdnMessageBoxes; ++i) {
         if (!qstrcmp(what, mdnMessageBoxes[i].dontAskAgainID)) {
             KCursorSaver saver(Qt::ArrowCursor);
-            MessageComposer::MDNAdvice answer;
-            answer = questionIgnoreSend(i18n(mdnMessageBoxes[i].text),
+            const MessageComposer::MDNAdvice answer = questionIgnoreSend(i18n(mdnMessageBoxes[i].text),
                                         mdnMessageBoxes[i].canDeny);
             switch (answer) {
             case MessageComposer::MDNSend:
