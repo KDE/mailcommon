@@ -47,7 +47,6 @@ private Q_SLOTS:
 
 private:
     void fillComboBox();
-    void initializeTagList();
     mutable QMap<QUrl, QString> mList;
     QString mParameter;
     mutable QPointer<QComboBox> mComboBox;

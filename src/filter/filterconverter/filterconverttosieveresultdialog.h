@@ -29,8 +29,6 @@ private Q_SLOTS:
 private:
     void readConfig();
     void writeConfig();
-    void slotShareActionFinished(const QJsonObject &output, int error, const QString &message);
-    void slotInitializeShareMenu();
     KPIMTextEdit::PlainTextEditorWidget *mEditor = nullptr;
     KSyntaxHighlighting::Repository mSyntaxRepo;
 };

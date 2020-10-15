@@ -60,7 +60,6 @@ private:
     Q_REQUIRED_RESULT MailCommon::ExpireCollectionAttribute *assignFolderAttribute(Akonadi::Collection &collection, bool &expireNow);
     void slotChanged();
     void slotUpdateControls();
-    void slotCollectionModified(KJob *job);
     QCheckBox *expireReadMailCB = nullptr;
     KPluralHandlingSpinBox *expireReadMailSB = nullptr;
     QCheckBox *expireUnreadMailCB = nullptr;
