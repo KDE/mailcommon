@@ -116,13 +116,14 @@ void ExpireJob::itemFetchResult(KJob *job)
             continue;
         }
 
-        time_t maxTime = status.isRead() ? mMaxReadTime : mMaxUnreadTime;
 
-        if (!mb->date(false)) {
+        auto mailDate = mb->date(false);
+        if (!mailDate) {
             continue;
         }
 
-        if (mb->date()->dateTime().toSecsSinceEpoch() < maxTime) {
+        const time_t maxTime = status.isRead() ? mMaxReadTime : mMaxUnreadTime;
+        if (mailDate->dateTime().toSecsSinceEpoch() < maxTime) {
             mRemovedMsgs.append(item);
         }
     }
