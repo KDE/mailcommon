@@ -33,6 +33,7 @@ ExpireCollectionAttribute *ExpireCollectionAttribute::clone() const
     expireAttr->setReadExpireUnits(mReadExpireUnits);
     expireAttr->setExpireAction(mExpireAction);
     expireAttr->setExpireToFolderId(mExpireToFolderId);
+    expireAttr->setExpireMessagesWithValidDate(mExpireMessagesWithValidDate);
     return expireAttr;
 }
 
@@ -122,7 +123,8 @@ bool ExpireCollectionAttribute::operator==(const ExpireCollectionAttribute &othe
            && (mUnreadExpireUnits == other.unreadExpireUnits())
            && (mReadExpireUnits == other.readExpireUnits())
            && (mExpireAction == other.expireAction())
-           && (mExpireToFolderId == other.expireToFolderId());
+           && (mExpireToFolderId == other.expireToFolderId())
+            && (mExpireMessagesWithValidDate == other.expireMessagesWithValidDate());
 }
 
 int ExpireCollectionAttribute::daysToExpire(int number, ExpireCollectionAttribute::ExpireUnits units)
@@ -139,6 +141,16 @@ int ExpireCollectionAttribute::daysToExpire(int number, ExpireCollectionAttribut
         ;
     }
     return -1;
+}
+
+bool ExpireCollectionAttribute::expireMessagesWithValidDate() const
+{
+    return mExpireMessagesWithValidDate;
+}
+
+void ExpireCollectionAttribute::setExpireMessagesWithValidDate(bool expireMessagesWithValidDate)
+{
+    mExpireMessagesWithValidDate = expireMessagesWithValidDate;
 }
 
 void ExpireCollectionAttribute::daysToExpire(int &unreadDays, int &readDays) const
@@ -159,6 +171,7 @@ QByteArray ExpireCollectionAttribute::serialized() const
     s << static_cast<int>(mUnreadExpireUnits);
     s << mUnreadExpireAge;
     s << mExpireMessages;
+    s << mExpireMessagesWithValidDate;
 
     return result;
 }
@@ -179,6 +192,7 @@ void ExpireCollectionAttribute::deserialize(const QByteArray &data)
     mUnreadExpireUnits = static_cast<ExpireCollectionAttribute::ExpireUnits>(valUnitUnread);
     s >> mUnreadExpireAge;
     s >> mExpireMessages;
+    s >> mExpireMessagesWithValidDate;
 }
 
 QDebug operator <<(QDebug d, const ExpireCollectionAttribute &t)
@@ -190,5 +204,6 @@ QDebug operator <<(QDebug d, const ExpireCollectionAttribute &t)
     d << " mReadExpireUnits " << t.readExpireUnits();
     d << " mExpireAction " << t.expireAction();
     d << " mExpireToFolderId " << t.expireToFolderId();
+    d << " mExpireMessagesWithValidDate " << t.expireMessagesWithValidDate();
     return d;
 }

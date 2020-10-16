@@ -36,6 +36,7 @@ private:
     Akonadi::Item::List mRemovedMsgs;
     qint64 mMaxUnreadTime = 0;
     qint64 mMaxReadTime = 0;
+    bool mExpireMessagesWithoutInvalidDate = false;
     Akonadi::Collection mMoveToFolder;
 };
 

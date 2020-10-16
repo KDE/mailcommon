@@ -38,9 +38,9 @@ public:
         ExpireMove = 1
     };
 
-    QByteArray type() const override;
+    Q_REQUIRED_RESULT QByteArray type() const override;
     ExpireCollectionAttribute *clone() const override;
-    QByteArray serialized() const override;
+    Q_REQUIRED_RESULT QByteArray serialized() const override;
     void deserialize(const QByteArray &data) override;
 
     void daysToExpire(int &unreadDays, int &readDays) const;
@@ -53,7 +53,7 @@ public:
     /**
      * Returns true if this folder automatically expires old messages.
      */
-    bool isAutoExpire() const;
+    Q_REQUIRED_RESULT bool isAutoExpire() const;
 
     /**
      * Sets the maximum age for unread messages in this folder.
@@ -85,18 +85,18 @@ public:
      * Returns the age at which unread messages are expired.
      * Units are determined by unreadExpireUnits().
      */
-    int unreadExpireAge() const;
+    Q_REQUIRED_RESULT int unreadExpireAge() const;
 
     /**
      * Returns the age at which read messages are expired.
      * Units are determined by readExpireUnits().
      */
-    int readExpireAge() const;
+    Q_REQUIRED_RESULT int readExpireAge() const;
 
     /**
      * What should expiry do? Delete or move to another folder?
      */
-    ExpireAction expireAction() const;
+    Q_REQUIRED_RESULT ExpireAction expireAction() const;
     void setExpireAction(ExpireAction a);
 
     /**
@@ -109,15 +109,18 @@ public:
      * Units getUnreadExpireAge() is returned in.
      * 1 = days, 2 = weeks, 3 = months.
      */
-    ExpireUnits unreadExpireUnits() const;
+    Q_REQUIRED_RESULT ExpireUnits unreadExpireUnits() const;
 
     /**
      * Units getReadExpireAge() is returned in.
      * 1 = days, 2 = weeks, 3 = months.
      */
-    ExpireUnits readExpireUnits() const;
+    Q_REQUIRED_RESULT ExpireUnits readExpireUnits() const;
 
     bool operator==(const ExpireCollectionAttribute &other) const;
+    Q_REQUIRED_RESULT bool expireMessagesWithValidDate() const;
+    void setExpireMessagesWithValidDate(bool expireMessagesWithValidDate);
+
 private:
     static int daysToExpire(int number, ExpireCollectionAttribute::ExpireUnits units);
     bool mExpireMessages = false;         // true if old messages are expired
@@ -127,6 +130,7 @@ private:
     ExpireCollectionAttribute::ExpireUnits mReadExpireUnits = ExpireNever;
     ExpireCollectionAttribute::ExpireAction mExpireAction = ExpireDelete;
     Akonadi::Collection::Id mExpireToFolderId = -1;
+    bool mExpireMessagesWithValidDate = false;
 };
 }
 MAILCOMMON_EXPORT QDebug operator <<(QDebug d, const MailCommon::ExpireCollectionAttribute &t);

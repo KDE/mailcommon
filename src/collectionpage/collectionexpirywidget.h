@@ -30,6 +30,7 @@ struct MAILCOMMON_EXPORT CollectionExpirySettings
     }
 
     bool expiryGloballyOn = false;
+    bool expiryMessagesWithInvalidDate = false;
     int daysToExpireRead = -1;
     int daysToExpireUnread = -1;
     ExpireCollectionAttribute::ExpireUnits mUnreadExpireUnits = ExpireCollectionAttribute::ExpireNever;
@@ -60,14 +61,15 @@ private:
     Q_REQUIRED_RESULT MailCommon::ExpireCollectionAttribute *assignFolderAttribute(Akonadi::Collection &collection, bool &expireNow);
     void slotChanged();
     void slotUpdateControls();
-    QCheckBox *expireReadMailCB = nullptr;
-    KPluralHandlingSpinBox *expireReadMailSB = nullptr;
-    QCheckBox *expireUnreadMailCB = nullptr;
-    KPluralHandlingSpinBox *expireUnreadMailSB = nullptr;
-    QRadioButton *moveToRB = nullptr;
-    FolderRequester *folderSelector = nullptr;
-    QRadioButton *deletePermanentlyRB = nullptr;
-    QPushButton *expireNowPB = nullptr;
+    QCheckBox *mExpireReadMailCB = nullptr;
+    KPluralHandlingSpinBox *mExpireReadMailSB = nullptr;
+    QCheckBox *mExpireUnreadMailCB = nullptr;
+    KPluralHandlingSpinBox *mExpireUnreadMailSB = nullptr;
+    QRadioButton *mMoveToRB = nullptr;
+    FolderRequester *mFolderSelector = nullptr;
+    QRadioButton *mDeletePermanentlyRB = nullptr;
+    QPushButton *mExpireNowPB = nullptr;
+    QCheckBox *mExpireMailWithInvalidDateCB = nullptr;
 };
 }
 

@@ -38,7 +38,7 @@ using PimCommon::BroadcastStatus;
   - Expire All Folders                              [KMMainWidget::slotExpireAll()]
 */
 
-namespace MailCommon {
+using namespace MailCommon;
 ExpireJob::ExpireJob(const Akonadi::Collection &folder, bool immediate)
     : ScheduledJob(folder, immediate)
 {
@@ -62,6 +62,7 @@ void ExpireJob::execute()
     const MailCommon::ExpireCollectionAttribute *expirationAttribute = mSrcFolder.attribute<MailCommon::ExpireCollectionAttribute>();
     if (expirationAttribute) {
         int unreadDays, readDays;
+        mExpireMessagesWithoutInvalidDate = expirationAttribute->expireMessagesWithValidDate();
         expirationAttribute->daysToExpire(unreadDays, readDays);
 
         if (unreadDays > 0) {
@@ -119,12 +120,14 @@ void ExpireJob::itemFetchResult(KJob *job)
 
         auto mailDate = mb->date(false);
         if (!mailDate) {
-            continue;
-        }
-
-        const time_t maxTime = status.isRead() ? mMaxReadTime : mMaxUnreadTime;
-        if (mailDate->dateTime().toSecsSinceEpoch() < maxTime) {
-            mRemovedMsgs.append(item);
+            if (mExpireMessagesWithoutInvalidDate) {
+                mRemovedMsgs.append(item);
+            }
+        } else {
+            const time_t maxTime = status.isRead() ? mMaxReadTime : mMaxUnreadTime;
+            if (mailDate->dateTime().toSecsSinceEpoch() < maxTime) {
+                mRemovedMsgs.append(item);
+            }
         }
     }
 
@@ -266,5 +269,4 @@ void ExpireJob::slotExpireDone(KJob *job)
         BroadcastStatus::instance()->setStatusMsg(msg);
     }
     deleteLater();
-}
 }
