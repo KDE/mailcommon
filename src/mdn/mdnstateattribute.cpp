@@ -51,8 +51,6 @@ public:
             state = MDNFailed;
             break;
         case 'U':
-            state = MDNStateUnknown;
-            break;
         default:
             state = MDNStateUnknown;
             break;
