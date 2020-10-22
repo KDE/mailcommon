@@ -6,7 +6,6 @@
 */
 
 #include "filteractionstatus.h"
-#include <Akonadi/KMime/MessageStatus>
 #include <KLocalizedString>
 using namespace MailCommon;
 

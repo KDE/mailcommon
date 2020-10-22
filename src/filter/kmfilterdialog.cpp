@@ -16,7 +16,6 @@
 #include "filterimporterpathcache.h"
 #include "filteractions/filteractiondict.h"
 #include "filteractions/filteractionwidget.h"
-#include "filterimporterexporter.h"
 #include "filterselectiondialog.h"
 #include "kmfilteraccountlist.h"
 using MailCommon::FilterImporterExporter;

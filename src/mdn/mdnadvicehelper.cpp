@@ -9,7 +9,6 @@
 #include "mailcommon_debug.h"
 #include <MessageViewer/MessageViewerSettings>
 #include "filter/mdnadvicedialog.h"
-#include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/Util>
 #include <AkonadiCore/ItemModifyJob>
 #include <QPointer>

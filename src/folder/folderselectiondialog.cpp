@@ -13,7 +13,6 @@
 #include "foldertreewidgetproxymodel.h"
 #include "kernel/mailkernel.h"
 
-#include <Collection>
 #include <CollectionCreateJob>
 #include <EntityMimeTypeFilterModel>
 #include <EntityTreeModel>

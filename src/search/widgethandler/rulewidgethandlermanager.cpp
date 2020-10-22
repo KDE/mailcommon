@@ -22,7 +22,6 @@
 #include <QObject>
 #include <QStackedWidget>
 
-#include "search/searchpattern.h"
 
 #include <algorithm>
 using std::for_each;

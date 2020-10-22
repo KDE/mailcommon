@@ -5,7 +5,6 @@
 */
 
 #include "filterimporterexportergui.h"
-#include "filter/filterimporterexporter.h"
 #include "filter/mailfilter.h"
 
 #include <QApplication>

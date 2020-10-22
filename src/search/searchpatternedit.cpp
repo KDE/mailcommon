@@ -17,7 +17,6 @@ using MailCommon::RuleWidgetHandlerManager;
 #include <QIcon>
 #include <KComboBox>
 #include <QButtonGroup>
-#include <QByteArray>
 #include <QHBoxLayout>
 #include <QRadioButton>
 #include <QStackedWidget>

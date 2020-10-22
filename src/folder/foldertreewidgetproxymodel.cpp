@@ -13,7 +13,6 @@
 
 #include <AgentInstance>
 #include <AgentManager>
-#include <Collection>
 #include <EntityTreeModel>
 #include <MimeTypeChecker>
 

@@ -6,7 +6,6 @@
 
 #include "snippetselectattachmentwidget.h"
 #include "snippetcustomfileattachmentnamedialog.h"
-#include <PimCommon/SimpleStringListEditor>
 #include <QVBoxLayout>
 #include <QFileDialog>
 #include <KLocalizedString>

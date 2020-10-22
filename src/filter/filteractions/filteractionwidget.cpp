@@ -16,7 +16,6 @@
 #include <QPushButton>
 #include <QIcon>
 #include <QComboBox>
-#include <QVector>
 
 #include <QGridLayout>
 #include <QLabel>

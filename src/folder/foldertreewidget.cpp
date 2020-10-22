@@ -8,7 +8,6 @@
 #include "foldertreewidget.h"
 #include "entitycollectionorderproxymodel.h"
 #include "foldertreeview.h"
-#include "foldertreewidgetproxymodel.h"
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 

@@ -13,7 +13,6 @@
 #include <MessageComposer/ConvertSnippetVariableMenu>
 #include <KPIMTextEdit/PlainTextEditor>
 #include <KActionCollection>
-#include <QDialog>
 #include <QVBoxLayout>
 #include <QPushButton>
 #include <QDialogButtonBox>

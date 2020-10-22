@@ -9,7 +9,6 @@
 #include "filter/filtermanager.h"
 #include "filter/dialog/filteractionmissingtagdialog.h"
 
-#include <QPointer>
 #include <QComboBox>
 
 #include <AkonadiCore/Tag>
