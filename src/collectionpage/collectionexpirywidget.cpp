@@ -66,6 +66,7 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
 
     QGroupBox *actionsGroup = new QGroupBox(this);
     actionsGroup->setFlat(true); // for mutual exclusion of the radio buttons
+    globalVBox->addWidget(actionsGroup);
 
     QHBoxLayout *moveToHBox = new QHBoxLayout();
     moveToHBox->setContentsMargins(0, 0, 0, 0);
