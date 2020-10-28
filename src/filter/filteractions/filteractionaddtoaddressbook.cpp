@@ -146,7 +146,7 @@ Akonadi::Tag::List namesToTags(const QStringList &names)
     tags.reserve(names.size());
     std::transform(names.cbegin(), names.cend(), std::back_inserter(tags),
                    [](const QString &name) {
-            return Akonadi::Tag{name};
+            return Akonadi::Tag {name};
         });
     return tags;
 }

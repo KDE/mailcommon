@@ -29,7 +29,6 @@ private:
     void slotUser2Clicked();
     void slotYesClicked();
     MessageComposer::MDNAdvice m_result = MessageComposer::MDNIgnore;
-
 };
 }
 

@@ -124,7 +124,7 @@ bool ExpireCollectionAttribute::operator==(const ExpireCollectionAttribute &othe
            && (mReadExpireUnits == other.readExpireUnits())
            && (mExpireAction == other.expireAction())
            && (mExpireToFolderId == other.expireToFolderId())
-            && (mExpireMessagesWithValidDate == other.expireMessagesWithValidDate());
+           && (mExpireMessagesWithValidDate == other.expireMessagesWithValidDate());
 }
 
 int ExpireCollectionAttribute::daysToExpire(int number, ExpireCollectionAttribute::ExpireUnits units)

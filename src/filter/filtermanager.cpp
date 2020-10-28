@@ -228,7 +228,7 @@ void FilterManager::filter(const Akonadi::Item &item, FilterSet set, bool accoun
 
 void FilterManager::filter(const Akonadi::Collection &collection, FilterSet set) const
 {
-    filter(Akonadi::Collection::List{ collection }, set);
+    filter(Akonadi::Collection::List { collection }, set);
 }
 
 void FilterManager::filter(const Akonadi::Collection::List &collections, FilterSet set) const
@@ -244,7 +244,7 @@ void FilterManager::filter(const Akonadi::Collection::List &collections, FilterS
 
 void FilterManager::filter(const Akonadi::Collection &collection, const QStringList &listFilters) const
 {
-    filter(Akonadi::Collection::List{ collection }, listFilters);
+    filter(Akonadi::Collection::List { collection }, listFilters);
 }
 
 void FilterManager::filter(const Akonadi::Collection::List &collections, const QStringList &listFilters, FilterSet set) const

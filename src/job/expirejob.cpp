@@ -117,7 +117,6 @@ void ExpireJob::itemFetchResult(KJob *job)
             continue;
         }
 
-
         auto mailDate = mb->date(false);
         if (!mailDate) {
             if (mExpireMessagesWithoutInvalidDate) {

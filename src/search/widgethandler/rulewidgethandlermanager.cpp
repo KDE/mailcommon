@@ -22,7 +22,6 @@
 #include <QObject>
 #include <QStackedWidget>
 
-
 #include <algorithm>
 using std::for_each;
 using std::remove;

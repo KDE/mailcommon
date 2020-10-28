@@ -1,4 +1,3 @@
-
 /*
   SPDX-FileCopyrightText: 2020 Laurent Montel <montel@kde.org>
 
@@ -69,7 +68,6 @@ static const struct {
 
 static const int numMdnMessageBoxes
     = sizeof mdnMessageBoxes / sizeof *mdnMessageBoxes;
-
 
 MDNAdviceHelper *MDNAdviceHelper::s_instance = nullptr;
 MessageComposer::MDNAdvice MDNAdviceHelper::questionIgnoreSend(const QString &text, bool canDeny)
@@ -201,7 +199,7 @@ int MDNAdviceHelper::requestAdviceOnMDN(const char *what)
         if (!qstrcmp(what, mdnMessageBoxes[i].dontAskAgainID)) {
             KCursorSaver saver(Qt::ArrowCursor);
             const MessageComposer::MDNAdvice answer = questionIgnoreSend(i18n(mdnMessageBoxes[i].text),
-                                        mdnMessageBoxes[i].canDeny);
+                                                                         mdnMessageBoxes[i].canDeny);
             switch (answer) {
             case MessageComposer::MDNSend:
                 return 3;

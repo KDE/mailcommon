@@ -10,7 +10,6 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 
-
 #include <QDialogButtonBox>
 #include <QPushButton>
 
@@ -53,7 +52,6 @@ MessageComposer::MDNAdvice MDNAdviceDialog::result() const
 {
     return m_result;
 }
-
 
 void MDNAdviceDialog::slotUser1Clicked()
 {
