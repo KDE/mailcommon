@@ -55,7 +55,7 @@ void FillTagComboJob::onDestroyed()
 
 void FillTagComboJob::start()
 {
-    Akonadi::TagFetchJob *fetchJob = new Akonadi::TagFetchJob(this);
+    auto *fetchJob = new Akonadi::TagFetchJob(this);
     fetchJob->fetchScope().fetchAttribute<Akonadi::TagAttribute>();
     connect(fetchJob, &Akonadi::TagFetchJob::result, this, &FillTagComboJob::onTagsFetched);
 }
@@ -72,11 +72,11 @@ void FillTagComboJob::onTagsFetched(KJob *job)
         emitResult();
         return;
     }
-    Akonadi::TagFetchJob *fetchJob = static_cast<Akonadi::TagFetchJob *>(job);
+    auto *fetchJob = static_cast<Akonadi::TagFetchJob *>(job);
     const auto lst = fetchJob->tags();
     for (const Akonadi::Tag &tag : lst) {
         QString iconName = QStringLiteral("mail-tagged");
-        const Akonadi::TagAttribute *attr = tag.attribute<Akonadi::TagAttribute>();
+        const auto *attr = tag.attribute<Akonadi::TagAttribute>();
         if (attr) {
             if (!attr->iconName().isEmpty()) {
                 iconName = attr->iconName();
@@ -133,7 +133,7 @@ QWidget *TagRuleWidgetHandler::createFunctionWidget(
 QWidget *TagRuleWidgetHandler::createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const
 {
     if (number == 0) {
-        KLineEdit *lineEdit = new KLineEdit(valueStack);
+        auto *lineEdit = new KLineEdit(valueStack);
         lineEdit->setClearButtonEnabled(true);
         lineEdit->setTrapReturnKey(true);
         lineEdit->setObjectName(QStringLiteral("tagRuleRegExpLineEdit"));
@@ -151,7 +151,7 @@ QWidget *TagRuleWidgetHandler::createValueWidget(int number, QStackedWidget *val
         valueCombo->setEditable(true);
         valueCombo->addItem(QString());   // empty entry for user input
 
-        FillTagComboJob *job = new FillTagComboJob(valueCombo);
+        auto *job = new FillTagComboJob(valueCombo);
         job->start();
 
         valueCombo->adjustSize();
@@ -238,7 +238,7 @@ void TagRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *
     }
 
     // reset the status value combo box and reg exp line edit
-    KLineEdit *lineEdit
+    auto *lineEdit
         = valueStack->findChild<KLineEdit *>(QStringLiteral("tagRuleRegExpLineEdit"));
 
     if (lineEdit) {
@@ -300,7 +300,7 @@ bool TagRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidget
     // set the value
     if (func == SearchRule::FuncRegExp || func == SearchRule::FuncNotRegExp) {
         // set reg exp value
-        KLineEdit *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("tagRuleRegExpLineEdit"));
+        auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("tagRuleRegExpLineEdit"));
 
         if (lineEdit) {
             lineEdit->blockSignals(true);

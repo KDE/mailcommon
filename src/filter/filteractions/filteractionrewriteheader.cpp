@@ -96,7 +96,7 @@ SearchRule::RequiredPart FilterActionRewriteHeader::requiredPart() const
 QWidget *FilterActionRewriteHeader::createParamWidget(QWidget *parent) const
 {
     QWidget *widget = new QWidget(parent);
-    QHBoxLayout *layout = new QHBoxLayout(widget);
+    auto *layout = new QHBoxLayout(widget);
     layout->setSpacing(4);
     layout->setContentsMargins(0, 0, 0, 0);
 
@@ -117,7 +117,7 @@ QWidget *FilterActionRewriteHeader::createParamWidget(QWidget *parent) const
     label->setFixedWidth(label->sizeHint().width());
     layout->addWidget(label, 0);
 
-    KLineEdit *regExpLineEdit = new KLineEdit(widget);
+    auto *regExpLineEdit = new KLineEdit(widget);
     regExpLineEdit->setClearButtonEnabled(true);
     regExpLineEdit->setTrapReturnKey(true);
     regExpLineEdit->setObjectName(QStringLiteral("search"));
@@ -128,7 +128,7 @@ QWidget *FilterActionRewriteHeader::createParamWidget(QWidget *parent) const
     label->setObjectName(QStringLiteral("label_with"));
     layout->addWidget(label, 0);
 
-    KLineEdit *lineEdit = new KLineEdit(widget);
+    auto *lineEdit = new KLineEdit(widget);
     lineEdit->setObjectName(QStringLiteral("replace"));
     lineEdit->setClearButtonEnabled(true);
     lineEdit->setTrapReturnKey(true);
@@ -159,11 +159,11 @@ void FilterActionRewriteHeader::setParamWidgetValue(QWidget *paramWidget) const
         comboBox->setCurrentIndex(index);
     }
 
-    KLineEdit *regExpLineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("search"));
+    auto *regExpLineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("search"));
     Q_ASSERT(regExpLineEdit);
     regExpLineEdit->setText(mRegex.pattern());
 
-    KLineEdit *lineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("replace"));
+    auto *lineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("replace"));
     Q_ASSERT(lineEdit);
     lineEdit->setText(mReplacementString);
 }
@@ -189,11 +189,11 @@ void FilterActionRewriteHeader::clearParamWidget(QWidget *paramWidget) const
     Q_ASSERT(comboBox);
     comboBox->setCurrentIndex(0);
 
-    KLineEdit *regExpLineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("search"));
+    auto *regExpLineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("search"));
     Q_ASSERT(regExpLineEdit);
     regExpLineEdit->clear();
 
-    KLineEdit *lineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("replace"));
+    auto *lineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("replace"));
     Q_ASSERT(lineEdit);
     lineEdit->clear();
 }

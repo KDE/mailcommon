@@ -29,17 +29,17 @@ void FilterActionRewriteHeaderTest::shouldHaveDefaultValue()
     QVERIFY(combo);
     QVERIFY(combo->count() > 0);
 
-    QLabel *label = w->findChild<QLabel *>(QStringLiteral("label_replace"));
+    auto *label = w->findChild<QLabel *>(QStringLiteral("label_replace"));
     QVERIFY(label);
 
-    KLineEdit *regExpLineEdit = w->findChild<KLineEdit *>(QStringLiteral("search"));
+    auto *regExpLineEdit = w->findChild<KLineEdit *>(QStringLiteral("search"));
     QVERIFY(regExpLineEdit);
     QVERIFY(regExpLineEdit->text().isEmpty());
 
     label = w->findChild<QLabel *>(QStringLiteral("label_with"));
     QVERIFY(label);
 
-    KLineEdit *lineEdit = w->findChild<KLineEdit *>(QStringLiteral("replace"));
+    auto *lineEdit = w->findChild<KLineEdit *>(QStringLiteral("replace"));
     QVERIFY(lineEdit);
     QVERIFY(lineEdit->text().isEmpty());
 }

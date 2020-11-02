@@ -58,7 +58,7 @@ QWidget *MessageRuleWidgetHandler::createFunctionWidget(
 QWidget *MessageRuleWidgetHandler::createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const
 {
     if (number == 0) {
-        KLineEdit *lineEdit = new KLineEdit(valueStack);
+        auto *lineEdit = new KLineEdit(valueStack);
         lineEdit->setClearButtonEnabled(true);
         lineEdit->setTrapReturnKey(true);
 
@@ -174,7 +174,7 @@ void MessageRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidg
     }
 
     // reset the value widget
-    KLineEdit *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+    auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
     if (lineEdit) {
         lineEdit->blockSignals(true);
@@ -224,10 +224,10 @@ bool MessageRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWi
 
     if (func == SearchRule::FuncHasAttachment
         || func == SearchRule::FuncHasNoAttachment) {
-        QWidget *w = valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider"));
+        auto *w = valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider"));
         valueStack->setCurrentWidget(w);
     } else {
-        KLineEdit *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+        auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
         if (lineEdit) {
             lineEdit->blockSignals(true);
@@ -256,10 +256,10 @@ bool MessageRuleWidgetHandler::update(const QByteArray &field, QStackedWidget *f
     SearchRule::Function func = currentFunction(functionStack);
     if (func == SearchRule::FuncHasAttachment
         || func == SearchRule::FuncHasNoAttachment) {
-        QWidget *w = valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider"));
+        auto *w = valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider"));
         valueStack->setCurrentWidget(w);
     } else {
-        KLineEdit *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+        auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
         if (lineEdit) {
             valueStack->setCurrentWidget(lineEdit);

@@ -36,7 +36,7 @@ Tag::Ptr Tag::fromAkonadi(const Akonadi::Tag &akonadiTag)
     tag->iconName = QStringLiteral("mail-tagged");
     tag->inToolbar = false;
     tag->isImmutable = akonadiTag.isImmutable();
-    const Akonadi::TagAttribute *attr = akonadiTag.attribute<Akonadi::TagAttribute>();
+    const auto *attr = akonadiTag.attribute<Akonadi::TagAttribute>();
     if (attr) {
         if (!attr->iconName().isEmpty()) {
             tag->iconName = attr->iconName();
@@ -67,7 +67,7 @@ Akonadi::Tag Tag::saveToAkonadi(Tag::SaveFlags saveFlags) const
     } else {
         tag.setType(Akonadi::Tag::GENERIC);
     }
-    Akonadi::TagAttribute *attr = tag.attribute<Akonadi::TagAttribute>(Akonadi::Tag::AddIfMissing);
+    auto *attr = tag.attribute<Akonadi::TagAttribute>(Akonadi::Tag::AddIfMissing);
     attr->setDisplayName(tagName);
     attr->setIconName(iconName);
     attr->setInToolbar(inToolbar);

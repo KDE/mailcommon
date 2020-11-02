@@ -24,13 +24,13 @@ FilterConvertToSieveResultDialogTest::~FilterConvertToSieveResultDialogTest()
 void FilterConvertToSieveResultDialogTest::shouldHaveDefaultValue()
 {
     MailCommon::FilterConvertToSieveResultDialog dlg;
-    QDialogButtonBox *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
+    auto *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
     QVERIFY(buttonBox);
 
-    QPushButton *saveButton = dlg.findChild<QPushButton *>(QStringLiteral("savebutton"));
+    auto *saveButton = dlg.findChild<QPushButton *>(QStringLiteral("savebutton"));
     QVERIFY(saveButton);
 
-    KPIMTextEdit::PlainTextEditorWidget *editor = dlg.findChild<KPIMTextEdit::PlainTextEditorWidget *>(QStringLiteral("editor"));
+    auto *editor = dlg.findChild<KPIMTextEdit::PlainTextEditorWidget *>(QStringLiteral("editor"));
     QVERIFY(editor);
     QVERIFY(editor->toPlainText().isEmpty());
 }
@@ -39,7 +39,7 @@ void FilterConvertToSieveResultDialogTest::shouldAddCode()
 {
     MailCommon::FilterConvertToSieveResultDialog dlg;
 
-    KPIMTextEdit::PlainTextEditorWidget *editor = dlg.findChild<KPIMTextEdit::PlainTextEditorWidget *>(QStringLiteral("editor"));
+    auto *editor = dlg.findChild<KPIMTextEdit::PlainTextEditorWidget *>(QStringLiteral("editor"));
     QVERIFY(editor->toPlainText().isEmpty());
     const QString code = QStringLiteral("foo");
     dlg.setCode(code);

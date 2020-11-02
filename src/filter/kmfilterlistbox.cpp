@@ -101,7 +101,7 @@ using namespace MailCommon;
 KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
     : QGroupBox(title, parent)
 {
-    QVBoxLayout *layout = new QVBoxLayout(this);
+    auto *layout = new QVBoxLayout(this);
 
     //----------- the list box
     mListWidget = new QListWidget(this);
@@ -122,7 +122,7 @@ KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
 
     //----------- the first row of buttons
     QWidget *hb = new QWidget(this);
-    QHBoxLayout *hbHBoxLayout = new QHBoxLayout(hb);
+    auto *hbHBoxLayout = new QHBoxLayout(hb);
     hbHBoxLayout->setContentsMargins(0, 0, 0, 0);
     hbHBoxLayout->setSpacing(4);
 
@@ -191,7 +191,7 @@ KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
 
     layout->addWidget(hb);
 
-    QShortcut *shortcut = new QShortcut(this);
+    auto *shortcut = new QShortcut(this);
     shortcut->setKey(Qt::Key_Delete);
     connect(shortcut, &QShortcut::activated, this, &KMFilterListBox::slotDelete);
 
@@ -224,7 +224,7 @@ KMFilterListBox::~KMFilterListBox()
 bool KMFilterListBox::eventFilter(QObject *obj, QEvent *event)
 {
     if (event->type() == QEvent::KeyPress && obj == mSearchListWidget) {
-        QKeyEvent *key = static_cast<QKeyEvent *>(event);
+        auto *key = static_cast<QKeyEvent *>(event);
         if ((key->key() == Qt::Key_Enter) || (key->key() == Qt::Key_Return)) {
             event->accept();
             return true;
@@ -251,7 +251,7 @@ void KMFilterListBox::slotFilterEnabledChanged(QListWidgetItem *item)
         qCDebug(MAILCOMMON_LOG) << "Called while no filter is selected, ignoring.";
         return;
     }
-    QListWidgetFilterItem *itemFilter = static_cast<QListWidgetFilterItem *>(item);
+    auto *itemFilter = static_cast<QListWidgetFilterItem *>(item);
     MailCommon::MailFilter *filter = itemFilter->filter();
     filter->setEnabled((item->checkState() == Qt::Checked));
     Q_EMIT filterUpdated(filter);
@@ -271,7 +271,7 @@ void KMFilterListBox::createFilter(const QByteArray &field, const QString &value
 {
     SearchRule::Ptr newRule = SearchRule::createInstance(field, SearchRule::FuncContains, value);
 
-    MailFilter *newFilter = new MailFilter();
+    auto *newFilter = new MailFilter();
     newFilter->pattern()->append(newRule);
     newFilter->pattern()->setName(QStringLiteral("<%1>: %2").
                                   arg(QString::fromLatin1(field), value));
@@ -292,7 +292,7 @@ void KMFilterListBox::slotUpdateFilterName()
         qCDebug(MAILCOMMON_LOG) << "Called while no filter is selected, ignoring.";
         return;
     }
-    QListWidgetFilterItem *itemFilter = static_cast<QListWidgetFilterItem *>(item);
+    auto *itemFilter = static_cast<QListWidgetFilterItem *>(item);
     MailCommon::MailFilter *filter = itemFilter->filter();
 
     SearchPattern *p = filter->pattern();
@@ -364,9 +364,9 @@ QVector<MailFilter *> KMFilterListBox::filtersForSaving(bool closeAfterSaving, b
     QVector<MailCommon::InvalidFilterInfo> listInvalidFilters;
     const int numberOfFilter(mListWidget->count());
     for (int i = 0; i < numberOfFilter; ++i) {
-        QListWidgetFilterItem *itemFilter
+        auto *itemFilter
             = static_cast<QListWidgetFilterItem *>(mListWidget->item(i));
-        MailFilter *f = new MailFilter(*itemFilter->filter());   // deep copy
+        auto *f = new MailFilter(*itemFilter->filter());   // deep copy
 
         const QString information = f->purify();
         if (!f->isEmpty() && information.isEmpty()) {
@@ -406,7 +406,7 @@ void KMFilterListBox::slotSelectionChanged()
 void KMFilterListBox::slotSelected(int aIdx)
 {
     if (aIdx >= 0 && aIdx < mListWidget->count()) {
-        QListWidgetFilterItem *itemFilter
+        auto *itemFilter
             = static_cast<QListWidgetFilterItem *>(mListWidget->item(aIdx));
         MailFilter *f = itemFilter->filter();
 
@@ -441,7 +441,7 @@ void KMFilterListBox::slotCopy()
 
     // make sure that all changes are written to the filter before we copy it
     Q_EMIT applyWidgets();
-    QListWidgetFilterItem *itemFilter = static_cast<QListWidgetFilterItem *>(item);
+    auto *itemFilter = static_cast<QListWidgetFilterItem *>(item);
 
     MailFilter *filter = itemFilter->filter();
 
@@ -450,7 +450,7 @@ void KMFilterListBox::slotCopy()
     Q_ASSERT(filter);
 
     // inserts a copy of the current filter.
-    MailFilter *copyFilter = new MailFilter(*filter);
+    auto *copyFilter = new MailFilter(*filter);
     copyFilter->generateRandomIdentifier();
     copyFilter->setShortcut(QKeySequence());
 
@@ -466,7 +466,7 @@ void KMFilterListBox::slotDelete()
     }
     const bool uniqFilterSelected = (mListWidget->selectedItems().count() == 1);
 
-    QListWidgetFilterItem *itemFilter = static_cast<QListWidgetFilterItem *>(itemFirst);
+    auto *itemFilter = static_cast<QListWidgetFilterItem *>(itemFirst);
     MailCommon::MailFilter *filter = itemFilter->filter();
     const QString filterName = filter->pattern()->name();
     if (uniqFilterSelected) {
@@ -492,7 +492,7 @@ void KMFilterListBox::slotDelete()
 
     const QList<QListWidgetItem *> lstItems = mListWidget->selectedItems();
     for (QListWidgetItem *item : lstItems) {
-        QListWidgetFilterItem *itemFilter = static_cast<QListWidgetFilterItem *>(item);
+        auto *itemFilter = static_cast<QListWidgetFilterItem *>(item);
 
         MailCommon::MailFilter *filter = itemFilter->filter();
         lst << filter;
@@ -686,7 +686,7 @@ void KMFilterListBox::slotRename()
     if (!itemIsValid(item)) {
         return;
     }
-    QListWidgetFilterItem *itemFilter = static_cast<QListWidgetFilterItem *>(item);
+    auto *itemFilter = static_cast<QListWidgetFilterItem *>(item);
 
     bool okPressed = false;
     MailFilter *filter = itemFilter->filter();

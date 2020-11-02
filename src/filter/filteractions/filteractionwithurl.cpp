@@ -45,11 +45,11 @@ bool FilterActionWithUrl::isEmpty() const
 QWidget *FilterActionWithUrl::createParamWidget(QWidget *parent) const
 {
     QWidget *widget = new QWidget(parent);
-    QHBoxLayout *layout = new QHBoxLayout;
+    auto *layout = new QHBoxLayout;
     layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
     widget->setLayout(layout);
-    KUrlRequester *requester = new KUrlRequester(parent);
+    auto *requester = new KUrlRequester(parent);
     requester->setUrl(QUrl::fromLocalFile(mParameter));
     requester->setObjectName(QStringLiteral("requester"));
     layout->addWidget(requester);
@@ -71,7 +71,7 @@ void FilterActionWithUrl::slotHelp()
 
 void FilterActionWithUrl::applyParamWidgetValue(QWidget *paramWidget)
 {
-    KUrlRequester *requester = paramWidget->findChild<KUrlRequester *>(QStringLiteral("requester"));
+    auto *requester = paramWidget->findChild<KUrlRequester *>(QStringLiteral("requester"));
     Q_ASSERT(requester);
 
     mParameter = requester->text();
@@ -79,7 +79,7 @@ void FilterActionWithUrl::applyParamWidgetValue(QWidget *paramWidget)
 
 void FilterActionWithUrl::setParamWidgetValue(QWidget *paramWidget) const
 {
-    KUrlRequester *requester = paramWidget->findChild<KUrlRequester *>(QStringLiteral("requester"));
+    auto *requester = paramWidget->findChild<KUrlRequester *>(QStringLiteral("requester"));
     Q_ASSERT(requester);
 
     requester->setText(mParameter);
@@ -87,7 +87,7 @@ void FilterActionWithUrl::setParamWidgetValue(QWidget *paramWidget) const
 
 void FilterActionWithUrl::clearParamWidget(QWidget *paramWidget) const
 {
-    KUrlRequester *requester = paramWidget->findChild<KUrlRequester *>(QStringLiteral("requester"));
+    auto *requester = paramWidget->findChild<KUrlRequester *>(QStringLiteral("requester"));
     Q_ASSERT(requester);
     requester->clear();
 }

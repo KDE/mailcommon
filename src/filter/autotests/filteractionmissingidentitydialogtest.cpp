@@ -26,7 +26,7 @@ FilterActionMissingIdentityDialogTest::~FilterActionMissingIdentityDialogTest()
 
 void FilterActionMissingIdentityDialogTest::initTestCase()
 {
-    DummyKernel *kernel = new DummyKernel(nullptr);
+    auto *kernel = new DummyKernel(nullptr);
     CommonKernel->registerKernelIf(kernel);   //register KernelIf early, it is used by the Filter classes
     CommonKernel->registerSettingsIf(kernel);   //SettingsIf is used in FolderTreeWidget
 }
@@ -37,14 +37,14 @@ void FilterActionMissingIdentityDialogTest::shouldHaveDefaultValue()
     QVERIFY(dlg.isModal());
     QVERIFY(!dlg.windowTitle().isEmpty());
 
-    QLabel *label = dlg.findChild<QLabel *>(QStringLiteral("label"));
+    auto *label = dlg.findChild<QLabel *>(QStringLiteral("label"));
     QVERIFY(label);
     QVERIFY(!label->text().isEmpty());
 
-    KIdentityManagement::IdentityCombo *mComboBoxIdentity = dlg.findChild<KIdentityManagement::IdentityCombo *>(QStringLiteral("comboboxidentity"));
+    auto *mComboBoxIdentity = dlg.findChild<KIdentityManagement::IdentityCombo *>(QStringLiteral("comboboxidentity"));
     QVERIFY(mComboBoxIdentity);
 
-    QDialogButtonBox *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
+    auto *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
     QVERIFY(buttonBox);
 }
 

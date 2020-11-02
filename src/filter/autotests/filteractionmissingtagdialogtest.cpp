@@ -30,7 +30,7 @@ void FilterActionMissingTagDialogTest::shouldHaveDefaultValue()
     QVERIFY(dlg.isModal());
     QVERIFY(!dlg.windowTitle().isEmpty());
 
-    QLabel *label = dlg.findChild<QLabel *>(QStringLiteral("tagnamelabel"));
+    auto *label = dlg.findChild<QLabel *>(QStringLiteral("tagnamelabel"));
     QVERIFY(label);
     QVERIFY(!label->text().isEmpty());
 
@@ -38,13 +38,13 @@ void FilterActionMissingTagDialogTest::shouldHaveDefaultValue()
     QVERIFY(label);
     QVERIFY(!label->text().isEmpty());
 
-    QListWidget *mTagList = dlg.findChild<QListWidget *>(QStringLiteral("taglist"));
+    auto *mTagList = dlg.findChild<QListWidget *>(QStringLiteral("taglist"));
     QVERIFY(mTagList);
 
-    QDialogButtonBox *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
+    auto *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
     QVERIFY(buttonBox);
 
-    QPushButton *user1Button = dlg.findChild<QPushButton *>(QStringLiteral("addtag"));
+    auto *user1Button = dlg.findChild<QPushButton *>(QStringLiteral("addtag"));
     QVERIFY(user1Button);
     QVERIFY(!user1Button->text().isEmpty());
 }

@@ -18,8 +18,8 @@ using namespace MailCommon;
 CollectionTemplatesWidget::CollectionTemplatesWidget(QWidget *parent)
     : QWidget(parent)
 {
-    QVBoxLayout *topLayout = new QVBoxLayout(this);
-    QHBoxLayout *topItems = new QHBoxLayout;
+    auto *topLayout = new QVBoxLayout(this);
+    auto *topItems = new QHBoxLayout;
     topItems->setContentsMargins(0, 0, 0, 0);
     topLayout->addLayout(topItems);
 
@@ -38,7 +38,7 @@ CollectionTemplatesWidget::CollectionTemplatesWidget(QWidget *parent)
 
     topLayout->addWidget(mWidget);
 
-    QHBoxLayout *btns = new QHBoxLayout();
+    auto *btns = new QHBoxLayout();
     QPushButton *copyGlobal = new QPushButton(i18n("&Copy Global Templates"), this);
     copyGlobal->setEnabled(false);
     btns->addWidget(copyGlobal);

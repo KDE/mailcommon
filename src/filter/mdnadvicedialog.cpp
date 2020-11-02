@@ -25,7 +25,7 @@ MDNAdviceDialog::MDNAdviceDialog(const QString &text, bool canDeny, QWidget *par
     buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
     connect(user1Button, &QPushButton::clicked, this, &MDNAdviceDialog::slotUser1Clicked);
     if (canDeny) {
-        QPushButton *user2Button = new QPushButton;
+        auto *user2Button = new QPushButton;
         connect(user2Button, &QPushButton::clicked, this, &MDNAdviceDialog::slotUser2Clicked);
         buttonBox->addButton(user2Button, QDialogButtonBox::ActionRole);
         user2Button->setText(i18n("Send \"&denied\""));

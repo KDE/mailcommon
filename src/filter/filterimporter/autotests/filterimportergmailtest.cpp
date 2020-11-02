@@ -18,7 +18,7 @@ void FilterImporterGmailTest::initTestCase()
 {
     AkonadiTest::checkTestIsIsolated();
 
-    FilterTestKernel *kernel = new FilterTestKernel(this);
+    auto *kernel = new FilterTestKernel(this);
     CommonKernel->registerKernelIf(kernel);   //register KernelIf early, it is used by the Filter classes
     CommonKernel->registerSettingsIf(kernel);   //SettingsIf is used in FolderTreeWidget
 }

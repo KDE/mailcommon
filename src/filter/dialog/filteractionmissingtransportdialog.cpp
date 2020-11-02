@@ -23,7 +23,7 @@ FilterActionMissingTransportDialog::FilterActionMissingTransportDialog(const QSt
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Transport"));
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    auto *mainLayout = new QVBoxLayout(this);
 
     QLabel *label = new QLabel(this);
     label->setObjectName(QStringLiteral("label"));

@@ -58,12 +58,12 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
     mIsResourceFolder = (collection.parentCollection() == Akonadi::Collection::root());
     QLabel *label = nullptr;
 
-    QVBoxLayout *topLayout = new QVBoxLayout(this);
+    auto *topLayout = new QVBoxLayout(this);
 
     // Musn't be able to edit details for a non-resource, system folder.
     if ((!mIsLocalSystemFolder || mIsResourceFolder)
         && !mFolderCollection->isReadOnly()) {
-        QHBoxLayout *hl = new QHBoxLayout();
+        auto *hl = new QHBoxLayout();
         topLayout->addItem(hl);
         label = new QLabel(i18nc("@label:textbox Name of the folder.", "&Name:"), this);
         hl->addWidget(label);
@@ -84,7 +84,7 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
     if (CommonKernel->imapResourceManager()->hasAnnotationSupport(collectionResource)) {
         PimCommon::CollectionTypeUtil::FolderContentsType contentsType = PimCommon::CollectionTypeUtil::ContentsTypeMail;
 
-        const PimCommon::CollectionAnnotationsAttribute *annotationAttribute
+        const auto *annotationAttribute
             = collection.attribute<PimCommon::CollectionAnnotationsAttribute>();
 
         const QMap<QByteArray, QByteArray> annotations
@@ -101,7 +101,7 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
         const PimCommon::CollectionTypeUtil::FolderContentsType folderType = collectionUtil.typeFromKolabName(annotations.value(PimCommon::CollectionTypeUtil::kolabFolderType()));
 
         int row = 0;
-        QGridLayout *gl = new QGridLayout();
+        auto *gl = new QGridLayout();
         topLayout->addItem(gl);
         mContentsComboBox = new PimCommon::ContentTypeWidget(this);
         gl->addWidget(mContentsComboBox, row, 0, 1, 2);
@@ -154,7 +154,7 @@ void CollectionGeneralPage::load(const Akonadi::Collection &collection)
     }
 
     if (mContentsComboBox) {
-        const PimCommon::CollectionAnnotationsAttribute *annotationsAttribute
+        const auto *annotationsAttribute
             = collection.attribute<PimCommon::CollectionAnnotationsAttribute>();
 
         if (annotationsAttribute) {
@@ -196,7 +196,7 @@ void CollectionGeneralPage::save(Collection &collection)
     }
     mCollectionGeneralWidget->save(collection);
 
-    PimCommon::CollectionAnnotationsAttribute *annotationsAttribute
+    auto *annotationsAttribute
         = collection.attribute<PimCommon::CollectionAnnotationsAttribute>(Collection::AddIfMissing);
 
     QMap<QByteArray, QByteArray> annotations = annotationsAttribute->annotations();
@@ -218,7 +218,7 @@ void CollectionGeneralPage::save(Collection &collection)
         const QByteArray kolabName = collectionUtil.kolabNameFromType(type);
         if (!kolabName.isEmpty()) {
             const QString iconName = collectionUtil.iconNameFromContentsType(type);
-            Akonadi::EntityDisplayAttribute *attribute
+            auto *attribute
                 = collection.attribute<Akonadi::EntityDisplayAttribute>(Akonadi::Collection::AddIfMissing);
             attribute->setIconName(iconName);
             new Akonadi::CollectionModifyJob(collection);

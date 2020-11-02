@@ -134,7 +134,7 @@ void SearchRuleWidget::setPatternEditOptions(SearchPatternEdit::SearchPatternEdi
 
 void SearchRuleWidget::initWidget(SearchPatternEdit::SearchModeType modeType)
 {
-    QHBoxLayout *hlay = new QHBoxLayout(this);
+    auto *hlay = new QHBoxLayout(this);
     hlay->setContentsMargins(0, 0, 0, 0);
 
     // initialize the header field combo box
@@ -142,7 +142,7 @@ void SearchRuleWidget::initWidget(SearchPatternEdit::SearchModeType modeType)
     mRuleField->setMinimumWidth(50);
     mRuleField->setObjectName(QStringLiteral("mRuleField"));
     mRuleField->setEditable(true);
-    QLineEdit *edit = new QLineEdit;
+    auto *edit = new QLineEdit;
     new KPIM::LineEditCatchReturnKey(edit, this);
     edit->setPlaceholderText(i18n("Choose or type your own criteria"));
     mRuleField->setToolTip(i18n("Choose or type your own criteria"));
@@ -516,7 +516,7 @@ void SearchRuleWidgetLister::updateAddRemoveButton()
     QList<QWidget *>::ConstIterator wIt = widgetList.constBegin();
     QList<QWidget *>::ConstIterator wEnd = widgetList.constEnd();
     for (; wIt != wEnd; ++wIt) {
-        SearchRuleWidget *w = qobject_cast<SearchRuleWidget *>(*wIt);
+        auto *w = qobject_cast<SearchRuleWidget *>(*wIt);
         w->updateAddRemoveButton(addButtonEnabled, removeButtonEnabled);
     }
 }
@@ -543,7 +543,7 @@ QWidget *SearchRuleWidgetLister::createWidget(QWidget *parent)
 void SearchRuleWidgetLister::clearWidget(QWidget *aWidget)
 {
     if (aWidget) {
-        SearchRuleWidget *w = static_cast<SearchRuleWidget *>(aWidget);
+        auto *w = static_cast<SearchRuleWidget *>(aWidget);
         w->reset();
         reconnectWidget(w);
         updateAddRemoveButton();
@@ -599,7 +599,7 @@ void SearchPatternEdit::setPatternEditOptions(SearchPatternEdit::SearchPatternEd
 
 void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeType modeType)
 {
-    QVBoxLayout *layout = new QVBoxLayout(this);
+    auto *layout = new QVBoxLayout(this);
     layout->setContentsMargins(0, 0, 0, 0);
 
     const bool matchAllMessages = (options & MailCommon::SearchPatternEdit::MatchAllMessages);
@@ -624,7 +624,7 @@ void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeT
         layout->addWidget(mAllMessageRBtn);
     }
 
-    QButtonGroup *bg = new QButtonGroup(this);
+    auto *bg = new QButtonGroup(this);
     bg->addButton(mAllRBtn);
     bg->addButton(mAnyRBtn);
     if (matchAllMessages) {
@@ -724,7 +724,7 @@ void SearchPatternEdit::slotAutoNameHack()
 
 void SearchPatternEdit::slotRuleAdded(QWidget *newRuleWidget)
 {
-    SearchRuleWidget *srw = static_cast<SearchRuleWidget *>(newRuleWidget);
+    auto *srw = static_cast<SearchRuleWidget *>(newRuleWidget);
     connect(srw, &SearchRuleWidget::fieldChanged, this, &SearchPatternEdit::slotAutoNameHack);
     connect(srw, &SearchRuleWidget::contentsChanged, this, &SearchPatternEdit::slotAutoNameHack);
     connect(srw, &SearchRuleWidget::returnPressed, this, &SearchPatternEdit::returnPressed);

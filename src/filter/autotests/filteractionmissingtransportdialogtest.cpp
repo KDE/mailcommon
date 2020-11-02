@@ -29,13 +29,13 @@ void FilterActionMissingTransportDialogTest::shouldHaveDefaultValue()
     MailCommon::FilterActionMissingTransportDialog dlg(QStringLiteral("filename"));
     QVERIFY(!dlg.windowTitle().isEmpty());
     QVERIFY(dlg.isModal());
-    QDialogButtonBox *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
+    auto *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
     QVERIFY(buttonBox);
 
-    QLabel *label = dlg.findChild<QLabel *>(QStringLiteral("label"));
+    auto *label = dlg.findChild<QLabel *>(QStringLiteral("label"));
     QVERIFY(label);
     QVERIFY(!label->text().isEmpty());
-    MailTransport::TransportComboBox *mComboBoxTransport = dlg.findChild<MailTransport::TransportComboBox *>(QStringLiteral("comboboxtransport"));
+    auto *mComboBoxTransport = dlg.findChild<MailTransport::TransportComboBox *>(QStringLiteral("comboboxtransport"));
     QVERIFY(mComboBoxTransport);
 }
 

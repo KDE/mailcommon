@@ -31,7 +31,7 @@ void FilterActionAddToAddressBookTest::shouldHaveDefaultValue()
     auto headerCombo = w->findChild<QComboBox *>(QStringLiteral("HeaderComboBox"));
     QVERIFY(headerCombo);
 
-    QLabel *label = w->findChild<QLabel *>(QStringLiteral("label_with_category"));
+    auto *label = w->findChild<QLabel *>(QStringLiteral("label_with_category"));
     QVERIFY(label);
 
     auto categoryEdit = w->findChild<Akonadi::TagWidget *>(QStringLiteral("CategoryEdit"));
@@ -40,7 +40,7 @@ void FilterActionAddToAddressBookTest::shouldHaveDefaultValue()
     label = w->findChild<QLabel *>(QStringLiteral("label_in_addressbook"));
     QVERIFY(label);
 
-    Akonadi::CollectionComboBox *collectionComboBox = w->findChild<Akonadi::CollectionComboBox *>(QStringLiteral("AddressBookComboBox"));
+    auto *collectionComboBox = w->findChild<Akonadi::CollectionComboBox *>(QStringLiteral("AddressBookComboBox"));
     QVERIFY(collectionComboBox);
 }
 

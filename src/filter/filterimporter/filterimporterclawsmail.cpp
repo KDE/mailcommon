@@ -63,7 +63,7 @@ QString FilterImporterClawsMails::defaultFiltersSettingsPath()
 
 MailFilter *FilterImporterClawsMails::parseLine(const QString &line)
 {
-    MailFilter *filter = new MailFilter();
+    auto *filter = new MailFilter();
     QString tmp = line;
     //Enabled ?
     if (tmp.startsWith(QLatin1String("enabled"))) {

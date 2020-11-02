@@ -97,7 +97,7 @@ QPair< bool, KMime::MDN::SendingMode > MDNAdviceHelper::checkAndSetMDNInfo(
         // if already dealt with, don't do it again.
         return QPair< bool, KMime::MDN::SendingMode >(false, KMime::MDN::SentAutomatically);
     }
-    MailCommon::MDNStateAttribute *mdnStateAttr
+    auto *mdnStateAttr
         = new MailCommon::MDNStateAttribute(MailCommon::MDNStateAttribute::MDNStateUnknown);
 
     KMime::MDN::SendingMode s = KMime::MDN::SentAutomatically; // set to manual if asked user
@@ -166,7 +166,7 @@ QPair< bool, KMime::MDN::SendingMode > MDNAdviceHelper::checkAndSetMDNInfo(
     i.setRevision(item.revision());
     i.setMimeType(item.mimeType());
     i.addAttribute(mdnStateAttr);
-    Akonadi::ItemModifyJob *modify = new Akonadi::ItemModifyJob(i);
+    auto *modify = new Akonadi::ItemModifyJob(i);
     modify->setIgnorePayload(true);
     modify->disableRevisionCheck();
     return QPair< bool, KMime::MDN::SendingMode >(doSend, s);

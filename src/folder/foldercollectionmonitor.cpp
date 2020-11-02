@@ -82,7 +82,7 @@ void FolderCollectionMonitor::expireAllCollection(const QAbstractItemModel *mode
             continue;
         }
 
-        const MailCommon::ExpireCollectionAttribute *attr = collection.attribute<MailCommon::ExpireCollectionAttribute>();
+        const auto *attr = collection.attribute<MailCommon::ExpireCollectionAttribute>();
         if (attr) {
             if (attr->isAutoExpire()) {
                 MailCommon::Util::expireOldMessages(collection, immediate);
@@ -98,7 +98,7 @@ void FolderCollectionMonitor::expireAllCollection(const QAbstractItemModel *mode
 void FolderCollectionMonitor::expunge(const Akonadi::Collection &col, bool sync)
 {
     if (col.isValid()) {
-        Akonadi::ItemDeleteJob *job = new Akonadi::ItemDeleteJob(col, this);
+        auto *job = new Akonadi::ItemDeleteJob(col, this);
         connect(job, &Akonadi::ItemDeleteJob::result, this, &FolderCollectionMonitor::slotDeleteJob);
         if (sync) {
             job->exec();

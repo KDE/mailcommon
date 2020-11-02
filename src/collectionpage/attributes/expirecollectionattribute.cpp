@@ -25,7 +25,7 @@ QByteArray ExpireCollectionAttribute::type() const
 
 ExpireCollectionAttribute *ExpireCollectionAttribute::clone() const
 {
-    ExpireCollectionAttribute *expireAttr = new ExpireCollectionAttribute();
+    auto *expireAttr = new ExpireCollectionAttribute();
     expireAttr->setAutoExpire(mExpireMessages);
     expireAttr->setUnreadExpireAge(mUnreadExpireAge);
     expireAttr->setUnreadExpireUnits(mUnreadExpireUnits);

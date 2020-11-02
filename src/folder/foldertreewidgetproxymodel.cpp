@@ -43,7 +43,7 @@ public:
                     = q->sourceModel()->data(
                           firstIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
                 if (collectionFirst.isValid() && collectionFirst.hasAttribute<Akonadi::CollectionQuotaAttribute>()) {
-                    const Akonadi::CollectionQuotaAttribute *quota = collectionFirst.attribute<Akonadi::CollectionQuotaAttribute>();
+                    const auto *quota = collectionFirst.attribute<Akonadi::CollectionQuotaAttribute>();
 
                     if (quota->currentValue() > -1 && quota->maximumValue() > 0) {
                         percentage = (100.0 * quota->currentValue()) / quota->maximumValue();

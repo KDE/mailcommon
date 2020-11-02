@@ -60,11 +60,11 @@ FilterAction::ReturnCode FilterActionAddHeader::process(ItemContext &context, bo
 QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
 {
     QWidget *widget = new QWidget(parent);
-    QHBoxLayout *layout = new QHBoxLayout(widget);
+    auto *layout = new QHBoxLayout(widget);
     layout->setSpacing(4);
     layout->setContentsMargins(0, 0, 0, 0);
 
-    KComboBox *comboBox = new KComboBox(widget);
+    auto *comboBox = new KComboBox(widget);
     comboBox->setMinimumWidth(50);
     comboBox->setObjectName(QStringLiteral("combo"));
     comboBox->setEditable(true);
@@ -82,7 +82,7 @@ QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
     label->setFixedWidth(label->sizeHint().width());
     layout->addWidget(label, 0);
 
-    KLineEdit *lineEdit = new KLineEdit(widget);
+    auto *lineEdit = new KLineEdit(widget);
     lineEdit->setObjectName(QStringLiteral("ledit"));
     lineEdit->setTrapReturnKey(true);
     lineEdit->setClearButtonEnabled(true);
@@ -113,7 +113,7 @@ void FilterActionAddHeader::setParamWidgetValue(QWidget *paramWidget) const
         comboBox->setCurrentIndex(index);
     }
 
-    QLineEdit *lineEdit = paramWidget->findChild<QLineEdit *>(QStringLiteral("ledit"));
+    auto *lineEdit = paramWidget->findChild<QLineEdit *>(QStringLiteral("ledit"));
     Q_ASSERT(lineEdit);
 
     lineEdit->setText(mValue);
@@ -136,7 +136,7 @@ void FilterActionAddHeader::clearParamWidget(QWidget *paramWidget) const
     Q_ASSERT(comboBox);
     comboBox->setCurrentIndex(0);
 
-    QLineEdit *lineEdit = paramWidget->findChild<QLineEdit *>(QStringLiteral("ledit"));
+    auto *lineEdit = paramWidget->findChild<QLineEdit *>(QStringLiteral("ledit"));
     Q_ASSERT(lineEdit);
     lineEdit->clear();
 }

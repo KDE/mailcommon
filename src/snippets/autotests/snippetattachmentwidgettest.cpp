@@ -21,17 +21,17 @@ void SnippetAttachmentWidgetTest::shouldHaveDefaultValues()
 {
     MailCommon::SnippetAttachmentWidget w;
 
-    QHBoxLayout *layout = w.findChild<QHBoxLayout *>(QStringLiteral("layout"));
+    auto *layout = w.findChild<QHBoxLayout *>(QStringLiteral("layout"));
     QVERIFY(layout);
     QCOMPARE(layout->contentsMargins(), QMargins(0, 0, 0, 0));
 
-    QLineEdit *mLineEdit = w.findChild<QLineEdit *>(QStringLiteral("lineedit"));
+    auto *mLineEdit = w.findChild<QLineEdit *>(QStringLiteral("lineedit"));
     QVERIFY(mLineEdit);
     QVERIFY(mLineEdit->text().isEmpty());
     QVERIFY(mLineEdit->isReadOnly());
     QVERIFY(!mLineEdit->placeholderText().isEmpty());
 
-    QToolButton *button = w.findChild<QToolButton *>(QStringLiteral("button"));
+    auto *button = w.findChild<QToolButton *>(QStringLiteral("button"));
     QVERIFY(button);
     QVERIFY(!button->text().isEmpty());
     QVERIFY(!button->toolTip().isEmpty());

@@ -32,7 +32,7 @@ void FilterActionPlaySoundTest::shouldHaveDefaultValue()
     QWidget *w = filter.createParamWidget(nullptr);
     QVERIFY(w);
     QCOMPARE(w->objectName(), QStringLiteral("soundwidget"));
-    MailCommon::SoundTestWidget *soundTest = dynamic_cast<MailCommon::SoundTestWidget *>(w);
+    auto *soundTest = dynamic_cast<MailCommon::SoundTestWidget *>(w);
     QVERIFY(soundTest);
     QVERIFY(soundTest->url().isEmpty());
 }

@@ -49,7 +49,7 @@ private Q_SLOTS:
     {
         AkonadiTest::checkTestIsIsolated();
 
-        DummyKernel *kernel = new DummyKernel(nullptr);
+        auto *kernel = new DummyKernel(nullptr);
         CommonKernel->registerKernelIf(kernel);
         CommonKernel->registerSettingsIf(kernel);
 
@@ -106,7 +106,7 @@ private Q_SLOTS:
         QSignalSpy rATBRSpy_TopModel(mTopModel, &QAbstractItemModel::rowsAboutToBeRemoved);
 
         // Now delete it
-        Akonadi::CollectionDeleteJob *delJob = new Akonadi::CollectionDeleteJob(searchCol);
+        auto *delJob = new Akonadi::CollectionDeleteJob(searchCol);
         AKVERIFYEXEC(delJob);
 
         // Check it disappeared from the tree, as well as the toplevel item
@@ -142,7 +142,7 @@ private Q_SLOTS:
         // Create resources
         const int numResources = numFolders.count();
         for (int i = 1 /*first one already created*/; i < numResources; ++i) {
-            AgentInstanceCreateJob *agentCreateJob = new AgentInstanceCreateJob(agentType);
+            auto *agentCreateJob = new AgentInstanceCreateJob(agentType);
             AKVERIFYEXEC(agentCreateJob);
             const QString identifier = agentCreateJob->instance().identifier();
 
@@ -158,7 +158,7 @@ private Q_SLOTS:
                 Collection mailCollection;
                 mailCollection.setParentCollection(topLevelCollection);
                 mailCollection.setName(QStringLiteral("mailCollection_%1_%2").arg(i).arg(number));
-                CollectionCreateJob *collCreateJob = new CollectionCreateJob(mailCollection);
+                auto *collCreateJob = new CollectionCreateJob(mailCollection);
                 AKVERIFYEXEC(collCreateJob);
             }
             const int resourceRow = collectNames(mTopModel).indexOf("res" + QString::number(i + 1));
@@ -183,7 +183,7 @@ private Q_SLOTS:
             Collection mailCollection;
             mailCollection.setParentCollection(currentColl);
             mailCollection.setName(QStringLiteral("sub%1").arg(number+1));
-            CollectionCreateJob *collCreateJob = new CollectionCreateJob(mailCollection);
+            auto *collCreateJob = new CollectionCreateJob(mailCollection);
             AKVERIFYEXEC(collCreateJob);
             currentColl = collCreateJob->collection();
         }
@@ -198,7 +198,7 @@ private Q_SLOTS:
         QTest::qWait(100); // #### akonadi bug? Without this, a warning "Only resources can modify remote identifiers" appears
 
         // When moving the source folder (sub2) to the dest folder
-        CollectionMoveJob *collMoveJob = new CollectionMoveJob(currentColl, newParentCollection);
+        auto *collMoveJob = new CollectionMoveJob(currentColl, newParentCollection);
         AKVERIFYEXEC(collMoveJob);
 
         // wait for Akonadi::Monitor::collectionMoved

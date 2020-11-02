@@ -20,7 +20,7 @@ SnippetSelectAttachmentDialog::SnippetSelectAttachmentDialog(QWidget *parent)
     : QDialog(parent)
 {
     setWindowTitle(i18nc("@title:window", "Select Attachments"));
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    auto *mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
 
     mAttachmentWidget = new SnippetSelectAttachmentWidget(this);

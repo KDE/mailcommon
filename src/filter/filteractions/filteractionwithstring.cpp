@@ -23,7 +23,7 @@ bool FilterActionWithString::isEmpty() const
 
 QWidget *FilterActionWithString::createParamWidget(QWidget *parent) const
 {
-    KLineEdit *lineEdit = new KLineEdit(parent);
+    auto *lineEdit = new KLineEdit(parent);
     lineEdit->setClearButtonEnabled(true);
     lineEdit->setObjectName(QStringLiteral("lineedit"));
     lineEdit->setTrapReturnKey(true);

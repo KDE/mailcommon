@@ -24,10 +24,10 @@ void FilterActionExecTest::shouldHaveDefaultValue()
 {
     MailCommon::FilterActionExec filter;
     QWidget *w = filter.createParamWidget(nullptr);
-    KUrlRequester *requester = w->findChild<KUrlRequester *>(QStringLiteral("requester"));
+    auto *requester = w->findChild<KUrlRequester *>(QStringLiteral("requester"));
     QVERIFY(requester);
 
-    MailCommon::FilterActionWithUrlHelpButton *helpButton = w->findChild<MailCommon::FilterActionWithUrlHelpButton *>(QStringLiteral("helpbutton"));
+    auto *helpButton = w->findChild<MailCommon::FilterActionWithUrlHelpButton *>(QStringLiteral("helpbutton"));
     QVERIFY(helpButton);
 }
 

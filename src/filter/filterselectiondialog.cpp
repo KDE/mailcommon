@@ -24,7 +24,7 @@ FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     setObjectName(QStringLiteral("filterselection"));
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Filters"));
-    QVBoxLayout *top = new QVBoxLayout(this);
+    auto *top = new QVBoxLayout(this);
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
@@ -34,7 +34,7 @@ FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterSelectionDialog::reject);
 
     filtersListWidget = new QListWidget(this);
-    KListWidgetSearchLine *searchLine = new KListWidgetSearchLine(this, filtersListWidget);
+    auto *searchLine = new KListWidgetSearchLine(this, filtersListWidget);
     searchLine->setPlaceholderText(
         i18nc("@info Displayed grayed-out inside the textbox, verb to search",
               "Search"));
@@ -45,7 +45,7 @@ FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     filtersListWidget->setSortingEnabled(false);
     filtersListWidget->setSelectionMode(QAbstractItemView::NoSelection);
 
-    QHBoxLayout *const buttonLayout = new QHBoxLayout();
+    auto *const buttonLayout = new QHBoxLayout();
     top->addLayout(buttonLayout);
     selectAllButton = new QPushButton(i18n("Select All"), this);
     buttonLayout->addWidget(selectAllButton);

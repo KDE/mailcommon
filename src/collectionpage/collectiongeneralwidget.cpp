@@ -20,11 +20,11 @@ using namespace MailCommon;
 CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     : QWidget(parent)
 {
-    QVBoxLayout *topLayout = new QVBoxLayout(this);
+    auto *topLayout = new QVBoxLayout(this);
     topLayout->setObjectName(QStringLiteral("topLayout"));
     topLayout->setContentsMargins({});
     // should new mail in this folder be ignored?
-    QHBoxLayout *hbl = new QHBoxLayout();
+    auto *hbl = new QHBoxLayout();
     topLayout->addItem(hbl);
     mNotifyOnNewMailCheckBox
         = new QCheckBox(i18n("Act on new/unread mail in this folder"), this);
@@ -65,7 +65,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
 
     addLine(this, topLayout);
     // use grid layout for the following combobox settings
-    QGridLayout *gl = new QGridLayout();
+    auto *gl = new QGridLayout();
     topLayout->addItem(gl);
     gl->setColumnStretch(1, 100);   // make the second column use all available space
     int row = -1;
@@ -118,7 +118,7 @@ void CollectionGeneralWidget::save(Akonadi::Collection &collection)
         mFolderCollection = FolderSettings::forCollection(collection);
     }
     if (!mNotifyOnNewMailCheckBox->isChecked()) {
-        Akonadi::NewMailNotifierAttribute *newMailNotifierAttr = collection.attribute<Akonadi::NewMailNotifierAttribute>(Akonadi::Collection::AddIfMissing);
+        auto *newMailNotifierAttr = collection.attribute<Akonadi::NewMailNotifierAttribute>(Akonadi::Collection::AddIfMissing);
         newMailNotifierAttr->setIgnoreNewMail(true);
     } else {
         collection.removeAttribute<Akonadi::NewMailNotifierAttribute>();

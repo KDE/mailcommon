@@ -23,7 +23,7 @@ void FilterActionDeleteTest::shouldHaveDefaultValue()
     QWidget *w = filter.createParamWidget(nullptr);
     QVERIFY(w);
 
-    QLabel *lab = dynamic_cast<QLabel *>(w);
+    auto *lab = dynamic_cast<QLabel *>(w);
     QVERIFY(lab);
     QCOMPARE(lab->objectName(), QStringLiteral("label_delete"));
 }

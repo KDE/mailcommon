@@ -26,7 +26,7 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Tag"));
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    auto *mainLayout = new QVBoxLayout(this);
 
     QLabel *label = new QLabel(i18n("Tag was \"%1\".", argsStr));
     label->setObjectName(QStringLiteral("tagnamelabel"));
@@ -45,7 +45,7 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
     QMap<QUrl, QString>::const_iterator map = tagList.constBegin();
     const QMap<QUrl, QString>::const_iterator mapEnd = tagList.constEnd();
     for (; map != mapEnd; ++map) {
-        QListWidgetItem *item = new QListWidgetItem(map.value());
+        auto *item = new QListWidgetItem(map.value());
         item->setData(UrlData, map.key().toString());
         mTagList->addItem(item);
     }
@@ -57,7 +57,7 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
-    QPushButton *user1Button = new QPushButton(this);
+    auto *user1Button = new QPushButton(this);
     user1Button->setObjectName(QStringLiteral("addtag"));
     user1Button->setText(i18n("Add Tag..."));
     buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);

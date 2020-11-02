@@ -22,7 +22,7 @@ SnippetCustomFileAttachmentNameDialog::SnippetCustomFileAttachmentNameDialog(QWi
     : QDialog(parent)
 {
     setWindowTitle(i18nc("@title:window", "Customize File Name Attachment"));
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    auto *mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
 
     mCustomWidget = new SnippetCustomFileAttachmentNameWidget(this);

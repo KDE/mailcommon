@@ -27,10 +27,10 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
     : QDialog(parent)
 {
     setWindowTitle(i18nc("@title:window", "Convert to Sieve Script"));
-    QVBoxLayout *topLayout = new QVBoxLayout(this);
+    auto *topLayout = new QVBoxLayout(this);
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Close, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
-    QPushButton *saveButton = new QPushButton(this);
+    auto *saveButton = new QPushButton(this);
     buttonBox->addButton(saveButton, QDialogButtonBox::ActionRole);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterConvertToSieveResultDialog::reject);
     saveButton->setText(i18n("Save..."));
@@ -50,7 +50,7 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
     topLayout->addWidget(mEditor);
     topLayout->addWidget(buttonBox);
 
-    FilterconverttosievePurposeMenuWidget *purposeMenu = new FilterconverttosievePurposeMenuWidget(this, this);
+    auto *purposeMenu = new FilterconverttosievePurposeMenuWidget(this, this);
     QPushButton *shareButton = new QPushButton(i18n("Share..."), this);
     shareButton->setMenu(purposeMenu->menu());
     shareButton->setIcon(QIcon::fromTheme(QStringLiteral("document-share")));

@@ -199,7 +199,7 @@ void SearchPattern::importLegacyConfig(const KConfigGroup &config)
         // We simply toggle the last bit (xor with 0x1)... This assumes that
         // SearchRule::Function's come in adjacent pairs of pros and cons
         SearchRule::Function func = last()->function();
-        unsigned int intFunc = (unsigned int)func;
+        auto intFunc = (unsigned int)func;
         func = SearchRule::Function(intFunc ^ 0x1);
 
         last()->setFunction(func);

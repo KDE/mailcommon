@@ -44,7 +44,7 @@ FavoriteCollectionWidget::FavoriteCollectionWidget(MailCommon::MailCommonSetting
     d->settings = settings;
     setFocusPolicy(Qt::NoFocus);
 
-    Akonadi::CollectionStatisticsDelegate *delegate = new Akonadi::CollectionStatisticsDelegate(this);
+    auto *delegate = new Akonadi::CollectionStatisticsDelegate(this);
     delegate->setProgressAnimationEnabled(true);
 
     setItemDelegate(delegate);
@@ -89,7 +89,7 @@ void FavoriteCollectionWidget::createMenu(KActionCollection *ac)
 
     static const int icon_sizes[] = { 16, 22, 32 /*, 48, 64, 128 */ };
 
-    QActionGroup *grp = new QActionGroup(iconSizeMenu);
+    auto *grp = new QActionGroup(iconSizeMenu);
     QAction *act = nullptr;
     for (int i  : icon_sizes) {
         act = new QAction(QStringLiteral("%1x%2").arg(i).arg(i), iconSizeMenu);
@@ -130,7 +130,7 @@ void FavoriteCollectionWidget::createMenu(KActionCollection *ac)
 
 void FavoriteCollectionWidget::slotChangeMode(bool)
 {
-    QAction *act = qobject_cast< QAction * >(sender());
+    auto *act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }
@@ -165,7 +165,7 @@ void FavoriteCollectionWidget::changeViewMode(QListView::ViewMode mode)
 
 void FavoriteCollectionWidget::slotChangeIconSize(bool)
 {
-    QAction *act = qobject_cast< QAction * >(sender());
+    auto *act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }

@@ -362,7 +362,7 @@ void SnippetsManager::Private::insertSelectedSnippet()
 
 void SnippetsManager::Private::insertActionSnippet()
 {
-    QAction *action = qobject_cast<QAction *>(q->sender());
+    auto *action = qobject_cast<QAction *>(q->sender());
     if (!action) {
         return;
     }

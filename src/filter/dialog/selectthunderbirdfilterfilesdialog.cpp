@@ -21,7 +21,7 @@ SelectThunderbirdFilterFilesDialog::SelectThunderbirdFilterFilesDialog(const QSt
 {
     setWindowTitle(i18nc("@title:window", "Select thunderbird filter files"));
     setModal(true);
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    auto *mainLayout = new QVBoxLayout(this);
 
     mSelectFilterFilesWidget = new MailCommon::SelectThunderbirdFilterFilesWidget(defaultSettingPath, this);
     mainLayout->addWidget(mSelectFilterFilesWidget);

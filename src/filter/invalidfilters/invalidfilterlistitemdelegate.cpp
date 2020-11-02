@@ -52,19 +52,19 @@ void InvalidFilterListItemDelegate::paint(QPainter *painter, const QStyleOptionV
 QList<QWidget *> InvalidFilterListItemDelegate::createItemWidgets(const QModelIndex &) const
 {
     QLabel *label = new QLabel();
-    QToolButton *showInformationToolButton = new QToolButton();
+    auto *showInformationToolButton = new QToolButton();
     connect(showInformationToolButton, &QAbstractButton::clicked, this, &InvalidFilterListItemDelegate::slotShowDetails);
     return QList<QWidget *>() << label << showInformationToolButton;
 }
 
 void InvalidFilterListItemDelegate::updateItemWidgets(const QList<QWidget *> widgets, const QStyleOptionViewItem &option, const QPersistentModelIndex &index) const
 {
-    QLabel *label = static_cast<QLabel *>(widgets[0]);
+    auto *label = static_cast<QLabel *>(widgets[0]);
     const QAbstractItemModel *model = index.model();
     label->setText(model->data(index).toString());
     const QString details = model->data(index, InvalidFilterListModel::InformationRole).toString();
 
-    QToolButton *showInformationToolButton = static_cast<QToolButton *>(widgets[1]);
+    auto *showInformationToolButton = static_cast<QToolButton *>(widgets[1]);
     showInformationToolButton->setEnabled(!details.isEmpty());
     const int itemHeight = sizeHint(option, index).height();
     showInformationToolButton->setIcon(QIcon::fromTheme(QStringLiteral("help-hint")));

@@ -29,7 +29,7 @@ bool FilterActionWithFolder::isEmpty() const
 
 QWidget *FilterActionWithFolder::createParamWidget(QWidget *parent) const
 {
-    FolderRequester *requester = new FolderRequester(parent);
+    auto *requester = new FolderRequester(parent);
     requester->setShowOutbox(false);
     setParamWidgetValue(requester);
     requester->setObjectName(QStringLiteral("folderrequester"));

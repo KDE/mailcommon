@@ -26,7 +26,7 @@ using namespace MailCommon;
 CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     : QWidget(parent)
 {
-    QVBoxLayout *topLayout = new QVBoxLayout(this);
+    auto *topLayout = new QVBoxLayout(this);
     topLayout->setObjectName(QStringLiteral("topLayout"));
     topLayout->setContentsMargins({});
 
@@ -41,14 +41,14 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     mShowSenderReceiverComboBox->insertItem(1, i18nc("@item:inlistbox Show sender.", "Sender"));
     mShowSenderReceiverComboBox->insertItem(2, i18nc("@item:inlistbox Show receiver.", "Receiver"));
 
-    QHBoxLayout *senderReceiverColumnHLayout = new QHBoxLayout();
+    auto *senderReceiverColumnHLayout = new QHBoxLayout();
     senderReceiverColumnHLayout->addWidget(senderReceiverColumnLabel);
     senderReceiverColumnHLayout->addWidget(mShowSenderReceiverComboBox);
     topLayout->addLayout(senderReceiverColumnHLayout);
 
     // message list
     QGroupBox *messageListGroup = new QGroupBox(i18n("Message List"), this);
-    QVBoxLayout *messageListGroupLayout = new QVBoxLayout(messageListGroup);
+    auto *messageListGroupLayout = new QVBoxLayout(messageListGroup);
     topLayout->addWidget(messageListGroup);
 
     // message list aggregation
@@ -62,11 +62,11 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     aggregationLabel->setBuddy(mAggregationComboBox);
 
     using MessageList::Utils::AggregationConfigButton;
-    AggregationConfigButton *aggregationConfigButton = new AggregationConfigButton(messageListGroup, mAggregationComboBox);
+    auto *aggregationConfigButton = new AggregationConfigButton(messageListGroup, mAggregationComboBox);
     // Make sure any changes made in the aggregations configure dialog are reflected in the combo.
     connect(aggregationConfigButton, &AggregationConfigButton::configureDialogCompleted, this, &CollectionViewWidget::slotSelectFolderAggregation);
 
-    QHBoxLayout *aggregationLayout = new QHBoxLayout();
+    auto *aggregationLayout = new QHBoxLayout();
     aggregationLayout->addWidget(aggregationLabel, 1);
     aggregationLayout->addWidget(mAggregationComboBox, 1);
     aggregationLayout->addWidget(aggregationConfigButton, 0);
@@ -83,11 +83,11 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     themeLabel->setBuddy(mThemeComboBox);
 
     using MessageList::Utils::ThemeConfigButton;
-    ThemeConfigButton *themeConfigButton = new ThemeConfigButton(messageListGroup, mThemeComboBox);
+    auto *themeConfigButton = new ThemeConfigButton(messageListGroup, mThemeComboBox);
     // Make sure any changes made in the themes configure dialog are reflected in the combo.
     connect(themeConfigButton, &ThemeConfigButton::configureDialogCompleted, this, &CollectionViewWidget::slotSelectFolderTheme);
 
-    QHBoxLayout *themeLayout = new QHBoxLayout();
+    auto *themeLayout = new QHBoxLayout();
     themeLayout->addWidget(themeLabel, 1);
     themeLayout->addWidget(mThemeComboBox, 1);
     themeLayout->addWidget(themeConfigButton, 0);
@@ -95,7 +95,7 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
 
     // Message Default Format
     QGroupBox *messageFormatGroup = new QGroupBox(i18n("Message Default Format"), this);
-    QVBoxLayout *messageFormatGroupLayout = new QVBoxLayout(messageFormatGroup);
+    auto *messageFormatGroupLayout = new QVBoxLayout(messageFormatGroup);
     mPreferHtmlToText = new QRadioButton(i18n("Prefer HTML to text"), this);
     messageFormatGroupLayout->addWidget(mPreferHtmlToText);
     mPreferTextToHtml = new QRadioButton(i18n("Prefer text to HTML"), this);
@@ -158,10 +158,10 @@ void CollectionViewWidget::save(Akonadi::Collection &col)
     const int currentIndex = mShowSenderReceiverComboBox->currentIndex();
     if (mShowSenderReceiverValue != currentIndex) {
         if (currentIndex == 1) {
-            Akonadi::MessageFolderAttribute *messageFolder = col.attribute<Akonadi::MessageFolderAttribute>(Akonadi::Collection::AddIfMissing);
+            auto *messageFolder = col.attribute<Akonadi::MessageFolderAttribute>(Akonadi::Collection::AddIfMissing);
             messageFolder->setOutboundFolder(false);
         } else if (currentIndex == 2) {
-            Akonadi::MessageFolderAttribute *messageFolder = col.attribute<Akonadi::MessageFolderAttribute>(Akonadi::Collection::AddIfMissing);
+            auto *messageFolder = col.attribute<Akonadi::MessageFolderAttribute>(Akonadi::Collection::AddIfMissing);
             messageFolder->setOutboundFolder(true);
         } else {
             col.removeAttribute<Akonadi::MessageFolderAttribute>();

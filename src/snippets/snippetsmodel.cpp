@@ -248,7 +248,7 @@ bool SnippetsModel::setData(const QModelIndex &index, const QVariant &value, int
         return false;
     }
 
-    SnippetItem *item = static_cast<SnippetItem *>(index.internalPointer());
+    auto *item = static_cast<SnippetItem *>(index.internalPointer());
     Q_ASSERT(item);
 
     switch (role) {
@@ -299,7 +299,7 @@ QVariant SnippetsModel::data(const QModelIndex &index, int role) const
         return QVariant();
     }
 
-    SnippetItem *item = static_cast<SnippetItem *>(index.internalPointer());
+    auto *item = static_cast<SnippetItem *>(index.internalPointer());
 
     switch (role) {
     case Qt::DisplayRole:
@@ -371,7 +371,7 @@ QModelIndex SnippetsModel::parent(const QModelIndex &index) const
         return QModelIndex();
     }
 
-    SnippetItem *childItem = static_cast<SnippetItem *>(index.internalPointer());
+    auto *childItem = static_cast<SnippetItem *>(index.internalPointer());
     SnippetItem *parentItem = childItem->parent();
 
     if (parentItem == mRootItem) {
@@ -409,7 +409,7 @@ bool SnippetsModel::insertRows(int row, int count, const QModelIndex &parent)
 
     beginInsertRows(parent, row, row + count - 1);
     for (int i = 0; i < count; ++i) {
-        SnippetItem *snippet = new SnippetItem(!parent.isValid(), parentItem);
+        auto *snippet = new SnippetItem(!parent.isValid(), parentItem);
         parentItem->appendChild(snippet);
     }
     endInsertRows();
@@ -451,12 +451,12 @@ QMimeData *SnippetsModel::mimeData(const QModelIndexList &indexes) const
 
     const QModelIndex index = indexes.first();
 
-    SnippetItem *item = static_cast<SnippetItem *>(index.internalPointer());
+    auto *item = static_cast<SnippetItem *>(index.internalPointer());
     if (item->isGroup()) {
         return nullptr;
     }
 
-    QMimeData *mimeData = new QMimeData();
+    auto *mimeData = new QMimeData();
 
     QByteArray encodedData;
     QDataStream stream(&encodedData, QIODevice::WriteOnly);
@@ -494,7 +494,7 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
             return false;
         }
 
-        SnippetItem *item = static_cast<SnippetItem *>(parent.internalPointer());
+        auto *item = static_cast<SnippetItem *>(parent.internalPointer());
 
         QByteArray encodedData = data->data(QStringLiteral("text/x-kmail-textsnippet"));
         QDataStream stream(&encodedData, QIODevice::ReadOnly);
@@ -549,7 +549,7 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
             Q_EMIT addNewDndSnippset(encodedData);
             return false;
         }
-        SnippetItem *item = static_cast<SnippetItem *>(parent.internalPointer());
+        auto *item = static_cast<SnippetItem *>(parent.internalPointer());
 
         if (item->isGroup()) {
             Q_EMIT addNewDndSnippset(encodedData);

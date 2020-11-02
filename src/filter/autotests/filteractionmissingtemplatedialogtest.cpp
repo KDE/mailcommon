@@ -27,14 +27,14 @@ void FilterActionMissingTemplateDialogTest::shouldHaveDefaultValue()
     MailCommon::FilterActionMissingTemplateDialog dlg(QStringList(), QStringLiteral("filename"));
     QVERIFY(!dlg.windowTitle().isEmpty());
 
-    QDialogButtonBox *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
+    auto *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
     QVERIFY(buttonBox);
 
-    QLabel *label = dlg.findChild<QLabel *>(QStringLiteral("label"));
+    auto *label = dlg.findChild<QLabel *>(QStringLiteral("label"));
     QVERIFY(label);
     QVERIFY(!label->text().isEmpty());
 
-    QComboBox *mComboBoxTemplate = dlg.findChild<QComboBox *>(QStringLiteral("comboboxtemplate"));
+    auto *mComboBoxTemplate = dlg.findChild<QComboBox *>(QStringLiteral("comboboxtemplate"));
     QVERIFY(mComboBoxTemplate);
 }
 

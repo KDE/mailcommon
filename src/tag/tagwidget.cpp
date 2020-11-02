@@ -49,11 +49,11 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     : QWidget(parent)
     , d(new MailCommon::TagWidgetPrivate)
 {
-    QGridLayout *settings = new QGridLayout(this);
+    auto *settings = new QGridLayout(this);
     settings->setContentsMargins(0, 0, 0, 0);
 
     //Stretcher layout for adding some space after the label
-    QVBoxLayout *spacer = new QVBoxLayout();
+    auto *spacer = new QVBoxLayout();
     settings->addLayout(spacer, 0, 0, 1, 2);
 
     //First row for renaming
@@ -104,7 +104,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     d->mTextFontCheck = new QCheckBox(i18n("Change fo&nt:"), this);
     settings->addWidget(d->mTextFontCheck, 4, 0);
 
-    QVBoxLayout *fontLayout = new QVBoxLayout;
+    auto *fontLayout = new QVBoxLayout;
     settings->addLayout(fontLayout, 4, 1);
 
     d->mBoldCheckBox = new QCheckBox(i18n("&Bold"));

@@ -78,14 +78,14 @@ SearchRule::RequiredPart FilterActionForward::requiredPart() const
 QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
 {
     QWidget *addressAndTemplate = new QWidget(parent);
-    QHBoxLayout *layout = new QHBoxLayout(addressAndTemplate);
+    auto *layout = new QHBoxLayout(addressAndTemplate);
     layout->setContentsMargins(0, 0, 0, 0);
 
     QWidget *addressEdit = FilterActionWithAddress::createParamWidget(addressAndTemplate);
     addressEdit->setObjectName(QStringLiteral("addressEdit"));
     layout->addWidget(addressEdit);
 
-    Akonadi::EmailAddressRequester *addressRequester = qobject_cast<Akonadi::EmailAddressRequester *>(addressEdit);
+    auto *addressRequester = qobject_cast<Akonadi::EmailAddressRequester *>(addressEdit);
     Q_ASSERT(addressRequester);
     KLineEdit *lineEdit = addressRequester->lineEdit();
     lineEdit->setClearButtonEnabled(true);
@@ -120,7 +120,7 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
 
 void FilterActionForward::applyParamWidgetValue(QWidget *paramWidget)
 {
-    QWidget *addressEdit = paramWidget->findChild<QWidget *>(QStringLiteral("addressEdit"));
+    auto *addressEdit = paramWidget->findChild<QWidget *>(QStringLiteral("addressEdit"));
     Q_ASSERT(addressEdit);
     FilterActionWithAddress::applyParamWidgetValue(addressEdit);
 
@@ -137,7 +137,7 @@ void FilterActionForward::applyParamWidgetValue(QWidget *paramWidget)
 
 void FilterActionForward::setParamWidgetValue(QWidget *paramWidget) const
 {
-    QWidget *addressEdit = paramWidget->findChild<QWidget *>(QStringLiteral("addressEdit"));
+    auto *addressEdit = paramWidget->findChild<QWidget *>(QStringLiteral("addressEdit"));
     Q_ASSERT(addressEdit);
     FilterActionWithAddress::setParamWidgetValue(addressEdit);
 
@@ -158,7 +158,7 @@ void FilterActionForward::setParamWidgetValue(QWidget *paramWidget) const
 
 void FilterActionForward::clearParamWidget(QWidget *paramWidget) const
 {
-    QWidget *addressEdit = paramWidget->findChild<QWidget *>(QStringLiteral("addressEdit"));
+    auto *addressEdit = paramWidget->findChild<QWidget *>(QStringLiteral("addressEdit"));
     Q_ASSERT(addressEdit);
     FilterActionWithAddress::clearParamWidget(addressEdit);
 

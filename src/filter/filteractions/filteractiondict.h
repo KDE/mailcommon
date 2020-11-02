@@ -16,7 +16,7 @@
 namespace MailCommon {
 class FilterAction;
 
-typedef FilterAction *(*FilterActionNewFunc)(void);
+typedef FilterAction *(*FilterActionNewFunc)();
 
 /**
  * @short Auxiliary struct for FilterActionDict.

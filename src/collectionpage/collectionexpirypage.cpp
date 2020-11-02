@@ -38,7 +38,7 @@ bool CollectionExpiryPage::canHandle(const Akonadi::Collection &col) const
 
 void CollectionExpiryPage::init()
 {
-    QVBoxLayout *globalVBox = new QVBoxLayout(this);
+    auto *globalVBox = new QVBoxLayout(this);
     mCollectionExpiryWidget = new CollectionExpiryWidget(this);
     connect(mCollectionExpiryWidget, &CollectionExpiryWidget::saveAndExpireRequested, this, &CollectionExpiryPage::slotSaveAndExpire);
     connect(mCollectionExpiryWidget, &CollectionExpiryWidget::configChanged, this, &CollectionExpiryPage::slotConfigChanged);
@@ -56,7 +56,7 @@ void CollectionExpiryPage::load(const Akonadi::Collection &collection)
 {
     mCollection = collection;
     init();
-    const MailCommon::ExpireCollectionAttribute *attr = collection.attribute<MailCommon::ExpireCollectionAttribute>();
+    const auto *attr = collection.attribute<MailCommon::ExpireCollectionAttribute>();
     if (attr) {
         int daysToExpireRead, daysToExpireUnread;
         attr->daysToExpire(daysToExpireUnread, daysToExpireRead);

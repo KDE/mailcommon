@@ -21,10 +21,10 @@ InvalidFilterWidgetTest::~InvalidFilterWidgetTest()
 void InvalidFilterWidgetTest::shouldHaveDefaultValue()
 {
     MailCommon::InvalidFilterWidget w;
-    QLabel *lab = w.findChild<QLabel *>(QStringLiteral("label"));
+    auto *lab = w.findChild<QLabel *>(QStringLiteral("label"));
     QVERIFY(lab);
 
-    MailCommon::InvalidFilterListView *list = w.findChild<MailCommon::InvalidFilterListView *>(QStringLiteral("invalidfilterlist"));
+    auto *list = w.findChild<MailCommon::InvalidFilterListView *>(QStringLiteral("invalidfilterlist"));
     QVERIFY(list);
 }
 

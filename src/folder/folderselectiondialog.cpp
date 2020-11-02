@@ -47,7 +47,7 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
 
     d->mNotAllowToCreateNewFolder = (options & FolderSelectionDialog::NotAllowToCreateNewFolder);
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    auto *mainLayout = new QVBoxLayout(this);
     d->mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     d->mOkButton->setDefault(true);
     d->mOkButton->setAutoDefault(true);
@@ -191,7 +191,7 @@ void FolderSelectionDialog::slotAddChildFolder()
         Akonadi::Collection col;
         col.setName(name);
         col.parentCollection().setId(parentCol.id());
-        Akonadi::CollectionCreateJob *job = new Akonadi::CollectionCreateJob(col);
+        auto *job = new Akonadi::CollectionCreateJob(col);
         connect(job, &Akonadi::CollectionCreateJob::result, this, &FolderSelectionDialog::collectionCreationResult);
     }
 }

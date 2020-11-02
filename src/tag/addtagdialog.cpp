@@ -39,7 +39,7 @@ AddTagDialog::AddTagDialog(const QList<KActionCollection *> &actions, QWidget *p
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Add Tag"));
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    auto *mainLayout = new QVBoxLayout(this);
 
     d->mTagWidget = new MailCommon::TagWidget(actions, this);
     mainLayout->addWidget(d->mTagWidget);
@@ -88,7 +88,7 @@ void AddTagDialog::slotSave()
     MailCommon::Tag::Ptr tag(Tag::createDefaultTag(name));
     d->mTagWidget->recordTagSettings(tag);
     const Akonadi::Tag akonadiTag = tag->saveToAkonadi();
-    Akonadi::TagCreateJob *createJob = new Akonadi::TagCreateJob(akonadiTag, this);
+    auto *createJob = new Akonadi::TagCreateJob(akonadiTag, this);
     connect(createJob, &Akonadi::TagCreateJob::result, this, &AddTagDialog::onTagCreated);
 
     d->mLabel = name;
@@ -101,7 +101,7 @@ void AddTagDialog::onTagCreated(KJob *job)
         reject();
         return;
     }
-    Akonadi::TagCreateJob *createJob = static_cast<Akonadi::TagCreateJob *>(job);
+    auto *createJob = static_cast<Akonadi::TagCreateJob *>(job);
     d->mTag = createJob->tag();
     accept();
 }

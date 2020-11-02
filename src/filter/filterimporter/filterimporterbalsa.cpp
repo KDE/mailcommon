@@ -50,7 +50,7 @@ void FilterImporterBalsa::readConfig(KConfig *config)
 
 void FilterImporterBalsa::parseFilter(const KConfigGroup &grp)
 {
-    MailCommon::MailFilter *filter = new MailCommon::MailFilter();
+    auto *filter = new MailCommon::MailFilter();
     const QString name = grp.readEntry(QStringLiteral("Name"));
     filter->pattern()->setName(name);
     filter->setToolbarName(name);

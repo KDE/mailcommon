@@ -146,7 +146,7 @@ void FolderTreeView::slotHeaderContextMenuRequested(const QPoint &pnt)
 
     static const int icon_sizes[] = { 16, 22, 32};
 
-    QActionGroup *grp = new QActionGroup(&menu);
+    auto *grp = new QActionGroup(&menu);
     for (int i : icon_sizes) {
         act = menu.addAction(QStringLiteral("%1x%2").arg(i).arg(i));
         act->setCheckable(true);
@@ -199,7 +199,7 @@ void FolderTreeView::slotHeaderContextMenuRequested(const QPoint &pnt)
 
 void FolderTreeView::slotHeaderContextMenuChangeSortingPolicy(bool)
 {
-    QAction *act = qobject_cast< QAction * >(sender());
+    auto *act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }
@@ -249,7 +249,7 @@ void FolderTreeView::setSortingPolicy(FolderTreeWidget::SortingPolicy policy, bo
 
 void FolderTreeView::slotHeaderContextMenuChangeToolTipDisplayPolicy(bool)
 {
-    QAction *act = qobject_cast< QAction * >(sender());
+    auto *act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }
@@ -266,7 +266,7 @@ void FolderTreeView::slotHeaderContextMenuChangeToolTipDisplayPolicy(bool)
 
 void FolderTreeView::slotHeaderContextMenuChangeHeader(bool)
 {
-    QAction *act = qobject_cast< QAction * >(sender());
+    auto *act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }
@@ -292,7 +292,7 @@ void FolderTreeView::slotHeaderContextMenuChangeHeader(bool)
 
 void FolderTreeView::slotHeaderContextMenuChangeIconSize(bool)
 {
-    QAction *act = qobject_cast< QAction * >(sender());
+    auto *act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }

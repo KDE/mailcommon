@@ -28,10 +28,10 @@ using namespace MailCommon;
 CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
     : QWidget(parent)
 {
-    QVBoxLayout *globalVBox = new QVBoxLayout(this);
+    auto *globalVBox = new QVBoxLayout(this);
     globalVBox->setContentsMargins({});
 
-    QGridLayout *daysBox = new QGridLayout;
+    auto *daysBox = new QGridLayout;
 
     mExpireReadMailCB = new QCheckBox(i18n("Expire read messages after"), this);
     connect(mExpireReadMailCB, &QCheckBox::toggled, this, &CollectionExpiryWidget::slotUpdateControls);
@@ -64,11 +64,11 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
 
     globalVBox->addSpacing(30);
 
-    QGroupBox *actionsGroup = new QGroupBox(this);
+    auto *actionsGroup = new QGroupBox(this);
     actionsGroup->setFlat(true); // for mutual exclusion of the radio buttons
     globalVBox->addWidget(actionsGroup);
 
-    QHBoxLayout *moveToHBox = new QHBoxLayout();
+    auto *moveToHBox = new QHBoxLayout();
     moveToHBox->setContentsMargins(0, 0, 0, 0);
     moveToHBox->setSpacing(6);
 
@@ -233,7 +233,7 @@ void CollectionExpiryWidget::save(const CollectionExpirySettings &collectionExpi
     attribute->setExpireAction(collectionExpirySettings.mExpireAction);
 
     if (saveSettings) {
-        CollectionExpiryJob *job = new CollectionExpiryJob;
+        auto *job = new CollectionExpiryJob;
         job->setExpireNow(expireNow);
         job->setCollection(collection);
         job->start();

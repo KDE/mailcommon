@@ -17,11 +17,11 @@ using namespace MailCommon;
 SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWidget *parent)
     : QWidget(parent)
 {
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    auto *mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
     mainLayout->setContentsMargins(0, 0, 0, 0);
 
-    QHBoxLayout *lineEditLayout = new QHBoxLayout;
+    auto *lineEditLayout = new QHBoxLayout;
     lineEditLayout->setObjectName(QStringLiteral("lineEditLayout"));
     lineEditLayout->setContentsMargins(0, 0, 0, 0);
 
@@ -35,7 +35,7 @@ SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWi
 
     mainLayout->addLayout(lineEditLayout);
 
-    QHBoxLayout *convertMenuLayout = new QHBoxLayout;
+    auto *convertMenuLayout = new QHBoxLayout;
     convertMenuLayout->setObjectName(QStringLiteral("convertMenuLayout"));
     convertMenuLayout->setContentsMargins(0, 0, 0, 0);
     convertMenuLayout->addStretch(1);

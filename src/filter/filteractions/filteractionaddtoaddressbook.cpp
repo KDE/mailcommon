@@ -103,7 +103,7 @@ SearchRule::RequiredPart FilterActionAddToAddressBook::requiredPart() const
 QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
 {
     QWidget *widget = new QWidget(parent);
-    QGridLayout *layout = new QGridLayout(widget);
+    auto *layout = new QGridLayout(widget);
 
     const auto headerCombo = new KComboBox(widget);
     headerCombo->setMinimumWidth(50);
@@ -122,7 +122,7 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
     label->setObjectName(QStringLiteral("label_in_addressbook"));
     layout->addWidget(label, 1, 1);
 
-    Akonadi::CollectionComboBox *collectionComboBox = new Akonadi::CollectionComboBox(widget);
+    auto *collectionComboBox = new Akonadi::CollectionComboBox(widget);
     collectionComboBox->setMimeTypeFilter(QStringList() << KContacts::Addressee::mimeType());
     collectionComboBox->setAccessRightsFilter(Akonadi::Collection::CanCreateItem);
 
@@ -177,7 +177,7 @@ void FilterActionAddToAddressBook::setParamWidgetValue(QWidget *paramWidget) con
     Q_ASSERT(categoryEdit);
     categoryEdit->setSelection(namesToTags(mCategory.split(QLatin1Char(';'))));
 
-    Akonadi::CollectionComboBox *collectionComboBox = paramWidget->findChild<Akonadi::CollectionComboBox *>(QStringLiteral("AddressBookComboBox"));
+    auto *collectionComboBox = paramWidget->findChild<Akonadi::CollectionComboBox *>(QStringLiteral("AddressBookComboBox"));
     Q_ASSERT(collectionComboBox);
     collectionComboBox->setDefaultCollection(Akonadi::Collection(mCollectionId));
     collectionComboBox->setProperty("collectionId", mCollectionId);

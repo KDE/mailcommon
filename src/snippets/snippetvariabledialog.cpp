@@ -31,7 +31,7 @@ SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<Q
     , mVariables(variables)
 {
     setWindowTitle(i18nc("@title:window", "Enter Values for Variables"));
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    auto *mainLayout = new QVBoxLayout(this);
 
     QLabel *label = new QLabel(i18n("Enter the replacement values for '%1':", variableName), this);
     mainLayout->addWidget(label);

@@ -85,7 +85,7 @@ FilterAction::ReturnCode FilterActionDecrypt::process(ItemContext &context, bool
 QWidget *FilterActionDecrypt::createParamWidget(QWidget *parent) const
 {
     QWidget *w = new QWidget(parent);
-    QVBoxLayout *l = new QVBoxLayout(w);
+    auto *l = new QVBoxLayout(w);
 
     QLabel *lbl = new QLabel(w);
 

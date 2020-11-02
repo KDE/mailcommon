@@ -22,13 +22,13 @@ void SnippetSelectAttachmentDialogTest::shouldHaveDefaultValues()
     MailCommon::SnippetSelectAttachmentDialog dlg;
     QVERIFY(!dlg.windowTitle().isEmpty());
 
-    QVBoxLayout *mainLayout = dlg.findChild<QVBoxLayout *>(QStringLiteral("mainLayout"));
+    auto *mainLayout = dlg.findChild<QVBoxLayout *>(QStringLiteral("mainLayout"));
     QVERIFY(mainLayout);
 
-    MailCommon::SnippetSelectAttachmentWidget *mAttachmentWidget = dlg.findChild<MailCommon::SnippetSelectAttachmentWidget *>(QStringLiteral("attachmentwidget"));
+    auto *mAttachmentWidget = dlg.findChild<MailCommon::SnippetSelectAttachmentWidget *>(QStringLiteral("attachmentwidget"));
     QVERIFY(mAttachmentWidget);
 
-    QDialogButtonBox *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("button"));
+    auto *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("button"));
     QVERIFY(buttonBox);
     QCOMPARE(buttonBox->standardButtons(), {QDialogButtonBox::Ok | QDialogButtonBox::Cancel});
 }

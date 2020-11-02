@@ -52,7 +52,7 @@ QString FilterImporterGmail::createUniqFilterName()
 
 void FilterImporterGmail::parseFilters(const QDomElement &e)
 {
-    MailCommon::MailFilter *filter = new MailCommon::MailFilter();
+    auto *filter = new MailCommon::MailFilter();
     filter->setAutoNaming(true);
     const QString uniqName = createUniqFilterName();
     filter->pattern()->setName(uniqName);

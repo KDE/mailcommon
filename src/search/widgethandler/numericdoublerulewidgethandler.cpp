@@ -56,7 +56,7 @@ QWidget *NumericDoubleRuleWidgetHandler::createValueWidget(int number, QStackedW
         return nullptr;
     }
 
-    QDoubleSpinBox *numInput = new QDoubleSpinBox(valueStack);
+    auto *numInput = new QDoubleSpinBox(valueStack);
     numInput->setObjectName(QStringLiteral("QDoubleSpinBox"));
     QObject::connect(numInput, SIGNAL(valueChanged(double)),
                      receiver, SLOT(slotValueChanged()));
@@ -144,7 +144,7 @@ void NumericDoubleRuleWidgetHandler::reset(QStackedWidget *functionStack, QStack
     }
 
     // reset the value widget
-    QDoubleSpinBox *numInput = valueStack->findChild<QDoubleSpinBox *>(QStringLiteral("QDoubleSpinBox"));
+    auto *numInput = valueStack->findChild<QDoubleSpinBox *>(QStringLiteral("QDoubleSpinBox"));
 
     if (numInput) {
         numInput->blockSignals(true);
@@ -203,7 +203,7 @@ bool NumericDoubleRuleWidgetHandler::setRule(QStackedWidget *functionStack, QSta
         value = 0;
     }
 
-    QDoubleSpinBox *numInput = valueStack->findChild<QDoubleSpinBox *>(QStringLiteral("QDoubleSpinBox"));
+    auto *numInput = valueStack->findChild<QDoubleSpinBox *>(QStringLiteral("QDoubleSpinBox"));
 
     if (numInput) {
         initDoubleNumInput(numInput, rule->field());
@@ -227,7 +227,7 @@ bool NumericDoubleRuleWidgetHandler::update(const QByteArray &field, QStackedWid
     functionStack->setCurrentWidget(functionStack->findChild<QWidget *>(QStringLiteral("numericDoubleRuleFuncCombo")));
 
     // raise the correct value widget
-    QDoubleSpinBox *numInput = valueStack->findChild<QDoubleSpinBox *>(QStringLiteral("QDoubleSpinBox"));
+    auto *numInput = valueStack->findChild<QDoubleSpinBox *>(QStringLiteral("QDoubleSpinBox"));
 
     if (numInput) {
         initDoubleNumInput(numInput, field);

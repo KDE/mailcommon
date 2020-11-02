@@ -23,7 +23,7 @@ FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QStri
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select sound"));
 
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    auto *mainLayout = new QVBoxLayout(this);
 
     QLabel *label = new QLabel(i18n("Sound file was \"%1\".", argStr));
     label->setObjectName(QStringLiteral("oldlabel"));

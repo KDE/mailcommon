@@ -29,14 +29,14 @@ SnippetWidget::SnippetWidget(QWidget *parent)
     : QWidget(parent)
     , d(new SnippetWidgetPrivate)
 {
-    QVBoxLayout *layout = new QVBoxLayout(this);
+    auto *layout = new QVBoxLayout(this);
     layout->setObjectName(QStringLiteral("mainlayout"));
     layout->setContentsMargins(0, 0, 0, 0);
     d->wdg = new QWidget(this);
     d->mUi.setupUi(d->wdg);
     layout->addWidget(d->wdg);
 
-    MessageComposer::ConvertSnippetVariableMenu *variableMenu = new MessageComposer::ConvertSnippetVariableMenu(false, this, this);
+    auto *variableMenu = new MessageComposer::ConvertSnippetVariableMenu(false, this, this);
     d->mUi.pushButtonVariables->setMenu(variableMenu->menu());
     connect(variableMenu, &MessageComposer::ConvertSnippetVariableMenu::insertVariable, this, [this](MessageComposer::ConvertSnippetVariablesUtil::VariableType type) {
         d->mUi.snippetText->editor()->insertPlainText(MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(type) + QLatin1Char(' '));

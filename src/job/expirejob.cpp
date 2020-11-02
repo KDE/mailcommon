@@ -90,7 +90,7 @@ void ExpireJob::execute()
 
 void ExpireJob::slotDoWork()
 {
-    Akonadi::ItemFetchJob *job = new Akonadi::ItemFetchJob(mSrcFolder, this);
+    auto *job = new Akonadi::ItemFetchJob(mSrcFolder, this);
     job->fetchScope().fetchPayloadPart(Akonadi::MessagePart::Envelope);
     connect(job, &Akonadi::ItemFetchJob::result, this, &ExpireJob::itemFetchResult);
 }
@@ -151,7 +151,7 @@ void ExpireJob::done()
                 qCDebug(MAILCOMMON_LOG) << "ExpireJob: finished expiring in folder"
                                         << mSrcFolder.name()
                                         << count << "messages to remove.";
-                Akonadi::ItemDeleteJob *job = new Akonadi::ItemDeleteJob(mRemovedMsgs, this);
+                auto *job = new Akonadi::ItemDeleteJob(mRemovedMsgs, this);
                 connect(job, &Akonadi::ItemDeleteJob::result, this, &ExpireJob::slotExpireDone);
                 moving = true;
                 str = i18np("Removing 1 old message from folder %2...",
@@ -170,7 +170,7 @@ void ExpireJob::done()
                                             << mSrcFolder.name()
                                             << mRemovedMsgs.count() << "messages to move to"
                                             << mMoveToFolder.name();
-                    Akonadi::ItemMoveJob *job = new Akonadi::ItemMoveJob(mRemovedMsgs, mMoveToFolder, this);
+                    auto *job = new Akonadi::ItemMoveJob(mRemovedMsgs, mMoveToFolder, this);
                     connect(job, &Akonadi::ItemMoveJob::result, this, &ExpireJob::slotMoveDone);
                     moving = true;
                     str = i18np("Moving 1 old message from folder %2 to folder %3...",
@@ -194,7 +194,7 @@ void ExpireJob::slotMoveDone(KJob *job)
     if (job->error()) {
         qCCritical(MAILCOMMON_LOG) << job->error() << job->errorString();
     }
-    Akonadi::ItemMoveJob *itemjob = qobject_cast<Akonadi::ItemMoveJob *>(job);
+    auto *itemjob = qobject_cast<Akonadi::ItemMoveJob *>(job);
     if (itemjob) {
         const Akonadi::Item::List lst = itemjob->items();
         if (!lst.isEmpty()) {
@@ -206,7 +206,7 @@ void ExpireJob::slotMoveDone(KJob *job)
                 }
             }
             if (!newLst.isEmpty()) {
-                Akonadi::ItemModifyJob *modifyJob = new Akonadi::ItemModifyJob(newLst, this);
+                auto *modifyJob = new Akonadi::ItemModifyJob(newLst, this);
                 modifyJob->disableRevisionCheck();
                 connect(modifyJob, &Akonadi::ItemModifyJob::result, this, &ExpireJob::slotExpireDone);
             } else {
