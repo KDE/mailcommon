@@ -14,7 +14,6 @@ add_search_autotest(searchruletest
 )
 add_search_autotest(searchrulestatustest
     searchrulestatustest.cpp
-    ../searchrule/searchrulestatus.cpp
 )
 add_search_autotest(searchrulenumericaltest
     searchrulenumericaltest.cpp

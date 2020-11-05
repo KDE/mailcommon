@@ -28,7 +28,6 @@ ecm_qt_declare_logging_category(filter_common_SRCS HEADER mailcommon_debug.h IDE
 
 add_mailcommon_filter_test(itemcontexttest
     itemcontexttest.cpp
-    ../itemcontext.cpp
     ${filter_common_SRCS}
 )
 
@@ -279,5 +278,4 @@ add_mailcommon_filter_test(filteractionmissingidentitydialogtest
 
 add_mailcommon_filter_test(filterimporterpathcachetest
     filterimporterpathcachetest.cpp
-    ../filterimporterpathcache.cpp
     )

@@ -74,7 +74,7 @@ target_link_libraries(filteractionmissingtransportdialoggui
   KF5::MailTransport
 )
 
-set(filteractionmissingaccountdialoggui_SRCS filteractionmissingaccountdialoggui.cpp ../../../autotests/dummykernel.cpp ../../filter/kmfilteraccountlist.cpp ../dialog/filteractionmissingaccountdialog.cpp)
+set(filteractionmissingaccountdialoggui_SRCS filteractionmissingaccountdialoggui.cpp ../../../autotests/dummykernel.cpp  ../dialog/filteractionmissingaccountdialog.cpp)
 add_executable(filteractionmissingaccountdialoggui ${filteractionmissingaccountdialoggui_SRCS})
 ecm_mark_as_test(filteractionmissingaccountdialoggui)
 target_link_libraries(filteractionmissingaccountdialoggui
