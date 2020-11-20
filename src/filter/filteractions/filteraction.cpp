@@ -80,7 +80,7 @@ void FilterAction::clearParamWidget(QWidget *) const
 
 bool FilterAction::argsFromStringInteractive(const QString &argsStr, const QString &filterName)
 {
-    Q_UNUSED(filterName);
+    Q_UNUSED(filterName)
     argsFromString(argsStr);
     return false;
 }

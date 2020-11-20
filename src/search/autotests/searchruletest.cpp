@@ -19,7 +19,7 @@ public:
 
     bool matches(const Akonadi::Item &item) const override
     {
-        Q_UNUSED(item);
+        Q_UNUSED(item)
         return false;
     }
 

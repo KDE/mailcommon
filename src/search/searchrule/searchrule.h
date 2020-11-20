@@ -230,8 +230,8 @@ public:
      */
     virtual void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const
     {
-        Q_UNUSED(groupTerm);
-        Q_UNUSED(emptyIsNotAnError);
+        Q_UNUSED(groupTerm)
+        Q_UNUSED(emptyIsNotAnError)
     }
 
     QDataStream &operator>>(QDataStream &) const;

@@ -32,7 +32,7 @@ EncryptionWidgetHandler::~EncryptionWidgetHandler()
 
 QWidget *EncryptionWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const
 {
-    Q_UNUSED(isBalooSearch);
+    Q_UNUSED(isBalooSearch)
 
     if (number != 0) {
         return nullptr;
@@ -52,7 +52,7 @@ QWidget *EncryptionWidgetHandler::createFunctionWidget(int number, QStackedWidge
 
 QWidget *EncryptionWidgetHandler::createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const
 {
-    Q_UNUSED(receiver);
+    Q_UNUSED(receiver)
 
     if (number != 0) {
         return nullptr;
@@ -79,8 +79,8 @@ SearchRule::Function EncryptionWidgetHandler::function(const QByteArray &field, 
 
 QString EncryptionWidgetHandler::value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
 {
-    Q_UNUSED(functionStack);
-    Q_UNUSED(valueStack);
+    Q_UNUSED(functionStack)
+    Q_UNUSED(valueStack)
     if (!handlesField(field)) {
         return QString();
     }
@@ -89,8 +89,8 @@ QString EncryptionWidgetHandler::value(const QByteArray &field, const QStackedWi
 
 QString EncryptionWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
 {
-    Q_UNUSED(functionStack);
-    Q_UNUSED(valueStack);
+    Q_UNUSED(functionStack)
+    Q_UNUSED(valueStack)
     if (!handlesField(field)) {
         return QString();
     }
@@ -112,12 +112,12 @@ void EncryptionWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidge
         combo->blockSignals(blocked);
     }
 
-    Q_UNUSED(valueStack);
+    Q_UNUSED(valueStack)
 }
 
 bool EncryptionWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const SearchRule::Ptr rule, bool isBalooSearch) const
 {
-    Q_UNUSED(isBalooSearch);
+    Q_UNUSED(isBalooSearch)
     if (!rule || !handlesField(rule->field())) {
         reset(functionStack, valueStack);
         return false;

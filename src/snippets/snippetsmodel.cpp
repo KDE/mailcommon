@@ -479,7 +479,7 @@ QMimeData *SnippetsModel::mimeData(const QModelIndexList &indexes) const
 
 bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &parent)
 {
-    Q_UNUSED(row);
+    Q_UNUSED(row)
 
     if (action == Qt::IgnoreAction) {
         return true;

@@ -78,8 +78,8 @@ bool DummyKernel::showPopupAfterDnD()
 
 void DummyKernel::expunge(Akonadi::Collection::Id col, bool sync)
 {
-    Q_UNUSED(col);
-    Q_UNUSED(sync);
+    Q_UNUSED(col)
+    Q_UNUSED(sync)
 }
 
 qreal DummyKernel::closeToQuotaThreshold()
@@ -107,5 +107,5 @@ Akonadi::Collection::Id DummyKernel::lastSelectedFolder()
 
 void DummyKernel::setLastSelectedFolder(Akonadi::Collection::Id col)
 {
-    Q_UNUSED(col);
+    Q_UNUSED(col)
 }

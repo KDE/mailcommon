@@ -83,8 +83,8 @@ bool FilterTestKernel::showPopupAfterDnD()
 
 void FilterTestKernel::expunge(Akonadi::Collection::Id col, bool sync)
 {
-    Q_UNUSED(col);
-    Q_UNUSED(sync);
+    Q_UNUSED(col)
+    Q_UNUSED(sync)
 }
 
 qreal FilterTestKernel::closeToQuotaThreshold()
@@ -112,5 +112,5 @@ Akonadi::Collection::Id FilterTestKernel::lastSelectedFolder()
 
 void FilterTestKernel::setLastSelectedFolder(Akonadi::Collection::Id col)
 {
-    Q_UNUSED(col);
+    Q_UNUSED(col)
 }

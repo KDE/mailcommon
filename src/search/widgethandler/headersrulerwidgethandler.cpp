@@ -117,7 +117,7 @@ SearchRule::Function HeadersRuleWidgetHandler::function(const QByteArray &field,
 //---------------------------------------------------------------------------
 QString HeadersRuleWidgetHandler::currentValue(const QStackedWidget *valueStack, SearchRule::Function func) const
 {
-    Q_UNUSED(func);
+    Q_UNUSED(func)
 
     const KLineEdit *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 

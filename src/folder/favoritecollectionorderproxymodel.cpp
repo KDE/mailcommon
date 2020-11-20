@@ -23,6 +23,6 @@ FavoriteCollectionOrderProxyModel::~FavoriteCollectionOrderProxyModel()
 
 Akonadi::Collection FavoriteCollectionOrderProxyModel::parentCollection(const QModelIndex &index) const
 {
-    Q_UNUSED(index);
+    Q_UNUSED(index)
     return {};
 }
