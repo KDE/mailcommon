@@ -55,7 +55,7 @@ public:
     explicit FolderTreeWidget(
         QWidget *parent = nullptr, KXMLGUIClient *xmlGuiClient = nullptr, TreeViewOptions options = (TreeViewOptions)(ShowUnreadCount
                                                                                                                       |ShowCollectionStatisticAnimation), FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelOptions optReadableProxy = FolderTreeWidgetProxyModel::None);
-    ~FolderTreeWidget();
+    ~FolderTreeWidget() override;
 
     /**
      * The possible tooltip display policies.

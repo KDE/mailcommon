@@ -19,7 +19,7 @@ class MAILCOMMON_TESTS_EXPORT SnippetSelectorWidget : public PimCommon::SimpleSt
     Q_OBJECT
 public:
     explicit SnippetSelectorWidget(QWidget *parent = nullptr);
-    ~SnippetSelectorWidget();
+    ~SnippetSelectorWidget() override;
 
     void addNewEntry() override;
     QString customEntry(const QString &text) override;

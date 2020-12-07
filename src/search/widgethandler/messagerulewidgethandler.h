@@ -17,7 +17,7 @@ public:
     {
     }
 
-    ~MessageRuleWidgetHandler()
+    ~MessageRuleWidgetHandler() override
     {
     }
 
