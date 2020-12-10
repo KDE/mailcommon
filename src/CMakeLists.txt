@@ -255,7 +255,6 @@ PRIVATE
   KF5::TemplateParser
   KF5::MessageList
   KF5::Mime
-  KF5::Codecs
   KF5::MailTransport
   Phonon::phonon4qt5
   KF5::XmlGui
