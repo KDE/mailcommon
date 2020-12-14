@@ -18,7 +18,7 @@ using namespace MailCommon;
 static const struct {
     SearchRule::Function id;
     const char *displayName;
-} NumericFunctions[] = {
+} NumericDoubleFunctions[] = {
     { SearchRule::FuncEquals, I18N_NOOP("is equal to")         },
     { SearchRule::FuncNotEqual, I18N_NOOP("is not equal to")      },
     { SearchRule::FuncIsGreater, I18N_NOOP("is greater than")     },
@@ -26,8 +26,8 @@ static const struct {
     { SearchRule::FuncIsLess, I18N_NOOP("is less than")        },
     { SearchRule::FuncIsGreaterOrEqual, I18N_NOOP("is greater than or equal to") }
 };
-static const int NumericFunctionCount
-    = sizeof(NumericFunctions) / sizeof(*NumericFunctions);
+static const int NumericDoubleFunctionCount
+    = sizeof(NumericDoubleFunctions) / sizeof(*NumericDoubleFunctions);
 
 QWidget *NumericDoubleRuleWidgetHandler::createFunctionWidget(
     int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
@@ -39,7 +39,7 @@ QWidget *NumericDoubleRuleWidgetHandler::createFunctionWidget(
     auto funcCombo = new QComboBox(functionStack);
     funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("numericDoubleRuleFuncCombo"));
-    for (int i = 0; i < NumericFunctionCount; ++i) {
+    for (int i = 0; i < NumericDoubleFunctionCount; ++i) {
         funcCombo->addItem(i18n(NumericFunctions[i].displayName));
     }
     funcCombo->adjustSize();
@@ -177,7 +177,7 @@ bool NumericDoubleRuleWidgetHandler::setRule(QStackedWidget *functionStack, QSta
     // set the function
     const SearchRule::Function func = rule->function();
     int funcIndex = 0;
-    for (; funcIndex < NumericFunctionCount; ++funcIndex) {
+    for (; funcIndex < NumericDoubleFunctionCount; ++funcIndex) {
         if (func == NumericFunctions[funcIndex].id) {
             break;
         }
@@ -187,7 +187,7 @@ bool NumericDoubleRuleWidgetHandler::setRule(QStackedWidget *functionStack, QSta
 
     if (funcCombo) {
         funcCombo->blockSignals(true);
-        if (funcIndex < NumericFunctionCount) {
+        if (funcIndex < NumericDoubleFunctionCount) {
             funcCombo->setCurrentIndex(funcIndex);
         } else {
             funcCombo->setCurrentIndex(0);

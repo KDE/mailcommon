@@ -13,7 +13,7 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 namespace {
-static const char myConfigGroupName[] = "SnippetSelectAttachmentDialog";
+static const char mySnippetSelectAttachmentDialogGroupName[] = "SnippetSelectAttachmentDialog";
 }
 using namespace MailCommon;
 SnippetSelectAttachmentDialog::SnippetSelectAttachmentDialog(QWidget *parent)
@@ -57,13 +57,13 @@ QStringList SnippetSelectAttachmentDialog::attachments() const
 
 void SnippetSelectAttachmentDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), myConfigGroupName);
+    KConfigGroup group(KSharedConfig::openConfig(), mySnippetSelectAttachmentDialogGroupName);
     group.writeEntry("Size", size());
 }
 
 void SnippetSelectAttachmentDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), myConfigGroupName);
+    KConfigGroup group(KSharedConfig::openConfig(), mySnippetSelectAttachmentDialogGroupName);
     const QSize sizeDialog = group.readEntry("Size", QSize(300, 350));
     if (sizeDialog.isValid()) {
         resize(sizeDialog);

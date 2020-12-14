@@ -15,7 +15,7 @@
 #include <KLocalizedString>
 #include <KSharedConfig>
 namespace {
-static const char myConfigGroupName[] = "SnippetCustomFileAttachmentNameDialog";
+static const char mySnippetCustomFileAttachmentNameDialogGroupName[] = "SnippetCustomFileAttachmentNameDialog";
 }
 using namespace MailCommon;
 SnippetCustomFileAttachmentNameDialog::SnippetCustomFileAttachmentNameDialog(QWidget *parent)
@@ -49,7 +49,7 @@ SnippetCustomFileAttachmentNameDialog::~SnippetCustomFileAttachmentNameDialog()
 
 void SnippetCustomFileAttachmentNameDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), myConfigGroupName);
+    KConfigGroup group(KSharedConfig::openConfig(), mySnippetCustomFileAttachmentNameDialogGroupName);
 
     const QSize size = group.readEntry("Size", QSize(500, 150));
     if (size.isValid()) {
@@ -59,7 +59,7 @@ void SnippetCustomFileAttachmentNameDialog::readConfig()
 
 void SnippetCustomFileAttachmentNameDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), myConfigGroupName);
+    KConfigGroup group(KSharedConfig::openConfig(), mySnippetCustomFileAttachmentNameDialogGroupName);
     group.writeEntry("Size", size());
 }
 
