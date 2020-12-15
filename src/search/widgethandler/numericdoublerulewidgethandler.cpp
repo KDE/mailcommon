@@ -40,7 +40,7 @@ QWidget *NumericDoubleRuleWidgetHandler::createFunctionWidget(
     funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("numericDoubleRuleFuncCombo"));
     for (int i = 0; i < NumericDoubleFunctionCount; ++i) {
-        funcCombo->addItem(i18n(NumericFunctions[i].displayName));
+        funcCombo->addItem(i18n(NumericDoubleFunctions[i].displayName));
     }
     funcCombo->adjustSize();
     QObject::connect(funcCombo, SIGNAL(activated(int)),
@@ -71,7 +71,7 @@ SearchRule::Function NumericDoubleRuleWidgetHandler::currentFunction(
     const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("numericDoubleRuleFuncCombo"));
 
     if (funcCombo && funcCombo->currentIndex() >= 0) {
-        return NumericFunctions[funcCombo->currentIndex()].id;
+        return NumericDoubleFunctions[funcCombo->currentIndex()].id;
     }
 
     return SearchRule::FuncNone;
@@ -178,7 +178,7 @@ bool NumericDoubleRuleWidgetHandler::setRule(QStackedWidget *functionStack, QSta
     const SearchRule::Function func = rule->function();
     int funcIndex = 0;
     for (; funcIndex < NumericDoubleFunctionCount; ++funcIndex) {
-        if (func == NumericFunctions[funcIndex].id) {
+        if (func == NumericDoubleFunctions[funcIndex].id) {
             break;
         }
     }
