@@ -251,8 +251,6 @@ protected:
      */
     Akonadi::SearchTerm::Condition akonadiComparator() const;
 
-protected:
-    QString quote(const QString &content) const;
 private:
     static Function configValueToFunc(const char *);
     static QString functionToString(Function);

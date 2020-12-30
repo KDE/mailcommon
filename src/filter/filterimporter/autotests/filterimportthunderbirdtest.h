@@ -20,9 +20,6 @@ private Q_SLOTS:
     void testImportAndFilters();
     void testImportOrFilters();
     void testImportTypeFilters();
-
-private:
-    void initialize();
 };
 
 #endif // FILTERIMPORTTHUNDERBIRDTEST_H

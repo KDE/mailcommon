@@ -53,8 +53,6 @@ public:
 
     QString prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const;
 
-    bool handlesField(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const;
-
     void reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const;
 
     void setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const MailCommon::SearchRule::Ptr rule) const;
