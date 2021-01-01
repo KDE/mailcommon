@@ -2,7 +2,7 @@
   snippet feature from kdevelop/plugins/snippet/
 
   SPDX-FileCopyrightText: 2007 Robert Gruber <rgruber@users.sourceforge.net>
-  SPDX-FileCopyrightText: 2019-2020 Laurent Montel <montel@kde.org>
+  SPDX-FileCopyrightText: 2019-2021 Laurent Montel <montel@kde.org>
 
   SPDX-License-Identifier: GPL-2.0-or-later
 */
