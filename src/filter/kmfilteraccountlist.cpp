@@ -49,7 +49,7 @@ void KMFilterAccountList::updateAccountList(MailCommon::MailFilter *filter)
     const int nbAccount = lst.count();
     for (int i = 0; i < nbAccount; ++i) {
         const Akonadi::AgentInstance agent = lst.at(i);
-        auto *listItem = new QTreeWidgetItem(this, top);
+        auto listItem = new QTreeWidgetItem(this, top);
         listItem->setText(0, agent.name());
         listItem->setText(1, agent.type().name());
         listItem->setText(2, agent.identifier());
@@ -98,7 +98,7 @@ void KMFilterAccountList::applyOnAccount(const QStringList &lstAccount)
     const int nbAccount = lst.count();
     for (int i = 0; i < nbAccount; ++i) {
         const Akonadi::AgentInstance agent = lst.at(i);
-        auto *listItem = new QTreeWidgetItem(this, top);
+        auto listItem = new QTreeWidgetItem(this, top);
         listItem->setText(0, agent.name());
         listItem->setText(1, agent.type().name());
         listItem->setText(2, agent.identifier());

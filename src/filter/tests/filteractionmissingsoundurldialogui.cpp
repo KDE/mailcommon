@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
 
-    MailCommon::FilterActionMissingSoundUrlDialog *w = new MailCommon::FilterActionMissingSoundUrlDialog(QStringLiteral("filename"), QStringLiteral("argument"));
+    auto w = new MailCommon::FilterActionMissingSoundUrlDialog(QStringLiteral("filename"), QStringLiteral("argument"));
     w->exec();
     app.exec();
     delete w;

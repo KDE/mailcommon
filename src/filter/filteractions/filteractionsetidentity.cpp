@@ -63,7 +63,7 @@ FilterAction::ReturnCode FilterActionSetIdentity::process(ItemContext &context, 
         currentId = hrd->asUnicodeString().trimmed().toUInt();
     }
     if (currentId != mParameter) {
-        auto *header = new KMime::Headers::Generic("X-KMail-Identity");
+        auto header = new KMime::Headers::Generic("X-KMail-Identity");
         header->fromUnicodeString(QString::number(mParameter), "utf-8");
         if (applyOnOutbound) {
             msg->from()->fromUnicodeString(ident.fullEmailAddr(), "utf-8");
@@ -90,7 +90,7 @@ SearchRule::RequiredPart FilterActionSetIdentity::requiredPart() const
 
 QWidget *FilterActionSetIdentity::createParamWidget(QWidget *parent) const
 {
-    auto *comboBox = new KIdentityManagement::IdentityCombo(KernelIf->identityManager(), parent);
+    auto comboBox = new KIdentityManagement::IdentityCombo(KernelIf->identityManager(), parent);
     comboBox->setObjectName(QStringLiteral("identitycombobox"));
     comboBox->setCurrentIdentity(mParameter);
 
@@ -108,7 +108,7 @@ void FilterActionSetIdentity::applyParamWidgetValue(QWidget *paramWidget)
 
 void FilterActionSetIdentity::clearParamWidget(QWidget *paramWidget) const
 {
-    auto *comboBox = qobject_cast<KIdentityManagement::IdentityCombo *>(paramWidget);
+    auto comboBox = qobject_cast<KIdentityManagement::IdentityCombo *>(paramWidget);
     Q_ASSERT(comboBox);
 
     comboBox->setCurrentIndex(0);
@@ -116,7 +116,7 @@ void FilterActionSetIdentity::clearParamWidget(QWidget *paramWidget) const
 
 void FilterActionSetIdentity::setParamWidgetValue(QWidget *paramWidget) const
 {
-    auto *comboBox = qobject_cast<KIdentityManagement::IdentityCombo *>(paramWidget);
+    auto comboBox = qobject_cast<KIdentityManagement::IdentityCombo *>(paramWidget);
     Q_ASSERT(comboBox);
 
     comboBox->setCurrentIdentity(mParameter);

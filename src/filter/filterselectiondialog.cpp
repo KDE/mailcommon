@@ -24,9 +24,9 @@ FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     setObjectName(QStringLiteral("filterselection"));
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Filters"));
-    auto *top = new QVBoxLayout(this);
+    auto top = new QVBoxLayout(this);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     mOkButton->setDefault(true);
@@ -34,7 +34,7 @@ FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterSelectionDialog::reject);
 
     filtersListWidget = new QListWidget(this);
-    auto *searchLine = new KListWidgetSearchLine(this, filtersListWidget);
+    auto searchLine = new KListWidgetSearchLine(this, filtersListWidget);
     searchLine->setPlaceholderText(
         i18nc("@info Displayed grayed-out inside the textbox, verb to search",
               "Search"));
@@ -45,7 +45,7 @@ FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     filtersListWidget->setSortingEnabled(false);
     filtersListWidget->setSelectionMode(QAbstractItemView::NoSelection);
 
-    auto *const buttonLayout = new QHBoxLayout();
+    auto const buttonLayout = new QHBoxLayout();
     top->addLayout(buttonLayout);
     selectAllButton = new QPushButton(i18n("Select All"), this);
     buttonLayout->addWidget(selectAllButton);
@@ -96,7 +96,7 @@ void FilterSelectionDialog::setFilters(const QVector<MailFilter *> &filters)
     filtersListWidget->clear();
 
     for (const MailFilter *filter : filters) {
-        QListWidgetItem *item = new QListWidgetItem(filter->name(), filtersListWidget);
+        auto item = new QListWidgetItem(filter->name(), filtersListWidget);
         item->setFlags(Qt::ItemIsUserCheckable | Qt::ItemIsEnabled);
         item->setCheckState(Qt::Checked);
     }

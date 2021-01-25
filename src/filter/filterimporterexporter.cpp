@@ -45,7 +45,7 @@ QVector<MailFilter *> FilterImporterExporter::readFiltersFromConfig(
 
         const KConfigGroup group = config->group(groupName);
         bool update = false;
-        auto *filter = new MailFilter(group, true /*interactive*/, update);
+        auto filter = new MailFilter(group, true /*interactive*/, update);
         filter->purify();
         if (update) {
             filterNeedUpdate = true;
@@ -254,7 +254,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(
                 return QVector<MailFilter *>();
             }
 
-            auto *thunderBirdFilter = new MailCommon::FilterImporterThunderbird(&file);
+            auto thunderBirdFilter = new MailCommon::FilterImporterThunderbird(&file);
             imported = thunderBirdFilter->importFilter();
             emptyFilter = thunderBirdFilter->emptyFilter();
             delete thunderBirdFilter;

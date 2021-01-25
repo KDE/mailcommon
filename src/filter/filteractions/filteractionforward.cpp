@@ -77,15 +77,15 @@ SearchRule::RequiredPart FilterActionForward::requiredPart() const
 
 QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
 {
-    QWidget *addressAndTemplate = new QWidget(parent);
-    auto *layout = new QHBoxLayout(addressAndTemplate);
+    auto addressAndTemplate = new QWidget(parent);
+    auto layout = new QHBoxLayout(addressAndTemplate);
     layout->setContentsMargins(0, 0, 0, 0);
 
     QWidget *addressEdit = FilterActionWithAddress::createParamWidget(addressAndTemplate);
     addressEdit->setObjectName(QStringLiteral("addressEdit"));
     layout->addWidget(addressEdit);
 
-    auto *addressRequester = qobject_cast<Akonadi::EmailAddressRequester *>(addressEdit);
+    auto addressRequester = qobject_cast<Akonadi::EmailAddressRequester *>(addressEdit);
     Q_ASSERT(addressRequester);
     KLineEdit *lineEdit = addressRequester->lineEdit();
     lineEdit->setClearButtonEnabled(true);

@@ -32,7 +32,7 @@ QWidget *StatusRuleWidgetHandler::createFunctionWidget(
         return nullptr;
     }
 
-    auto *funcCombo = new QComboBox(functionStack);
+    auto funcCombo = new QComboBox(functionStack);
     funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("statusRuleFuncCombo"));
     for (int i = 0; i < StatusFunctionCount; ++i) {
@@ -52,7 +52,7 @@ QWidget *StatusRuleWidgetHandler::createValueWidget(int number, QStackedWidget *
         return nullptr;
     }
 
-    auto *statusCombo = new QComboBox(valueStack);
+    auto statusCombo = new QComboBox(valueStack);
     statusCombo->setMinimumWidth(50);
     statusCombo->setObjectName(QStringLiteral("statusRuleValueCombo"));
     for (int i = 0; i < MailCommon::StatusValueCountWithoutHidden; ++i) {

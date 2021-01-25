@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
 
-    MailCommon::FilterActionMissingTransportDialog *w = new MailCommon::FilterActionMissingTransportDialog(QStringLiteral("filename"));
+    auto w = new MailCommon::FilterActionMissingTransportDialog(QStringLiteral("filename"));
     w->exec();
     app.exec();
     delete w;

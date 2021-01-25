@@ -32,7 +32,7 @@ SearchRule::RequiredPart FilterActionDelete::requiredPart() const
 
 QWidget *FilterActionDelete::createParamWidget(QWidget *parent) const
 {
-    QLabel *lab = new QLabel(parent);
+    auto lab = new QLabel(parent);
     lab->setObjectName(QStringLiteral("label_delete"));
     QPalette pal = lab->palette();
     KColorScheme scheme(QPalette::Active, KColorScheme::View);

@@ -212,7 +212,7 @@ void FilterImporterSylpheed::parseActions(const QDomElement &e, MailCommon::Mail
 
 void FilterImporterSylpheed::parseFilters(const QDomElement &e)
 {
-    auto *filter = new MailCommon::MailFilter();
+    auto filter = new MailCommon::MailFilter();
     if (e.hasAttribute(QStringLiteral("enabled"))) {
         const QString attr = e.attribute(QStringLiteral("enabled"));
         if (attr == QLatin1String("false")) {

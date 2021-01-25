@@ -93,9 +93,9 @@ FilterActionWidget::FilterActionWidget(QWidget *parent)
     : QWidget(parent)
     , d(new Private(this))
 {
-    auto *mainLayout = new QHBoxLayout(this);
+    auto mainLayout = new QHBoxLayout(this);
     mainLayout->setContentsMargins(0, 0, 0, 0);
-    QWidget *widget = new QWidget(this);
+    auto widget = new QWidget(this);
     mainLayout->addWidget(widget);
 
     d->mLayout = new QGridLayout(widget);
@@ -339,7 +339,7 @@ void FilterActionWidgetLister::setActionList(QVector<FilterAction *> *list)
 
 void FilterActionWidgetLister::connectWidget(QWidget *widget, FilterAction *filterAction)
 {
-    auto *w = qobject_cast<FilterActionWidget *>(widget);
+    auto w = qobject_cast<FilterActionWidget *>(widget);
     if (filterAction) {
         w->setAction(filterAction);
     }
@@ -378,7 +378,7 @@ void FilterActionWidgetLister::updateAddRemoveButton()
     QList<QWidget *>::ConstIterator wIt = widgetList.constBegin();
     QList<QWidget *>::ConstIterator wEnd = widgetList.constEnd();
     for (; wIt != wEnd; ++wIt) {
-        auto *w = qobject_cast<FilterActionWidget *>(*wIt);
+        auto w = qobject_cast<FilterActionWidget *>(*wIt);
         w->updateAddRemoveButton(addButtonEnabled, removeButtonEnabled);
     }
 }
@@ -409,7 +409,7 @@ void FilterActionWidgetLister::reconnectWidget(FilterActionWidget *w)
 
 QWidget *FilterActionWidgetLister::createWidget(QWidget *parent)
 {
-    auto *w = new FilterActionWidget(parent);
+    auto w = new FilterActionWidget(parent);
     reconnectWidget(w);
     return w;
 }
@@ -417,7 +417,7 @@ QWidget *FilterActionWidgetLister::createWidget(QWidget *parent)
 void FilterActionWidgetLister::clearWidget(QWidget *widget)
 {
     if (widget) {
-        auto *w = static_cast<FilterActionWidget *>(widget);
+        auto w = static_cast<FilterActionWidget *>(widget);
         w->setAction(nullptr);
         w->disconnect(this);
         reconnectWidget(w);

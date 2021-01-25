@@ -24,9 +24,9 @@ FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QString
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Account"));
-    auto *mainLayout = new QVBoxLayout(this);
+    auto mainLayout = new QVBoxLayout(this);
 
-    QLabel *label = new QLabel(this);
+    auto label = new QLabel(this);
     label->setObjectName(QStringLiteral("label"));
     label->setText(i18n("Filter account is missing. "
                         "Please select account to use with filter \"%1\"",
@@ -38,7 +38,7 @@ FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QString
     mAccountList->applyOnAccount(lstAccount);
     mainLayout->addWidget(mAccountList);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);

@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
 
-    MailCommon::FilterActionMissingTemplateDialog *w = new MailCommon::FilterActionMissingTemplateDialog(QStringList(), QStringLiteral("argument"));
+    auto w = new MailCommon::FilterActionMissingTemplateDialog(QStringList(), QStringLiteral("argument"));
     w->exec();
     app.exec();
     delete w;

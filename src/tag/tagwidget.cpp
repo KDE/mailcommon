@@ -49,11 +49,11 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     : QWidget(parent)
     , d(new MailCommon::TagWidgetPrivate)
 {
-    auto *settings = new QGridLayout(this);
+    auto settings = new QGridLayout(this);
     settings->setContentsMargins(0, 0, 0, 0);
 
     //Stretcher layout for adding some space after the label
-    auto *spacer = new QVBoxLayout();
+    auto spacer = new QVBoxLayout();
     settings->addLayout(spacer, 0, 0, 1, 2);
 
     //First row for renaming
@@ -62,7 +62,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     new KPIM::LineEditCatchReturnKey(d->mTagNameLineEdit, this);
     settings->addWidget(d->mTagNameLineEdit, 1, 1);
 
-    QLabel *namelabel = new QLabel(i18nc("@label:listbox Name of the tag", "Name:"),
+    auto namelabel = new QLabel(i18nc("@label:listbox Name of the tag", "Name:"),
                                    this);
     namelabel->setBuddy(d->mTagNameLineEdit);
     settings->addWidget(namelabel, 1, 0);
@@ -104,7 +104,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     d->mTextFontCheck = new QCheckBox(i18n("Change fo&nt:"), this);
     settings->addWidget(d->mTextFontCheck, 4, 0);
 
-    auto *fontLayout = new QVBoxLayout;
+    auto fontLayout = new QVBoxLayout;
     settings->addLayout(fontLayout, 4, 1);
 
     d->mBoldCheckBox = new QCheckBox(i18n("&Bold"));
@@ -135,7 +135,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     connect(d->mIconButton, &KIconButton::iconChanged,
             this, &TagWidget::iconNameChanged);
 
-    QLabel *iconlabel = new QLabel(i18n("Message tag &icon:"),
+    auto iconlabel = new QLabel(i18n("Message tag &icon:"),
                                    this);
     iconlabel->setBuddy(d->mIconButton);
     settings->addWidget(iconlabel, 5, 0);
@@ -148,7 +148,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     //Sixth for shortcut
     d->mKeySequenceWidget = new KKeySequenceWidget(this);
     settings->addWidget(d->mKeySequenceWidget, 6, 1);
-    QLabel *sclabel = new QLabel(i18n("Shortc&ut:"), this);
+    auto sclabel = new QLabel(i18n("Shortc&ut:"), this);
     sclabel->setBuddy(d->mKeySequenceWidget);
     settings->addWidget(sclabel, 6, 0);
     if (!actionCollections.isEmpty()) {

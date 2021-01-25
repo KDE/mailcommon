@@ -31,9 +31,9 @@ SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<Q
     , mVariables(variables)
 {
     setWindowTitle(i18nc("@title:window", "Enter Values for Variables"));
-    auto *mainLayout = new QVBoxLayout(this);
+    auto mainLayout = new QVBoxLayout(this);
 
-    QLabel *label = new QLabel(i18n("Enter the replacement values for '%1':", variableName), this);
+    auto label = new QLabel(i18n("Enter the replacement values for '%1':", variableName), this);
     mainLayout->addWidget(label);
 
     mVariableValueText = new KPIMTextEdit::PlainTextEditorWidget(this);
@@ -58,7 +58,7 @@ SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<Q
     }
     mVariableValueText->setFocus();
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);

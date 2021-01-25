@@ -46,7 +46,7 @@ QWidget *TextRuleWidgetHandler::createFunctionWidget(
         return nullptr;
     }
 
-    auto *funcCombo = new QComboBox(functionStack);
+    auto funcCombo = new QComboBox(functionStack);
     funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("textRuleFuncCombo"));
     for (int i = 0; i < TextFunctionCount; ++i) {
@@ -63,7 +63,7 @@ QWidget *TextRuleWidgetHandler::createFunctionWidget(
 QWidget *TextRuleWidgetHandler::createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const
 {
     if (number == 0) {
-        auto *lineEdit = new KLineEdit(valueStack);
+        auto lineEdit = new KLineEdit(valueStack);
         lineEdit->setClearButtonEnabled(true);
         lineEdit->setTrapReturnKey(true);
         lineEdit->setObjectName(QStringLiteral("regExpLineEdit"));
@@ -76,7 +76,7 @@ QWidget *TextRuleWidgetHandler::createValueWidget(int number, QStackedWidget *va
 
     // blank QLabel to hide value widget for in-address-book rule
     if (number == 1) {
-        QLabel *label = new QLabel(valueStack);
+        auto label = new QLabel(valueStack);
         label->setObjectName(QStringLiteral("textRuleValueHider"));
         label->setBuddy(valueStack);
         return label;

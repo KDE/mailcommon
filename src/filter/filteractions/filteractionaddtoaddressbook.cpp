@@ -87,7 +87,7 @@ FilterAction::ReturnCode FilterActionAddToAddressBook::process(ItemContext &cont
             contact.setCategories(mCategory.split(QLatin1Char(';')));
         }
 
-        Akonadi::AddContactJob *job = new Akonadi::AddContactJob(contact, Akonadi::Collection(mCollectionId));
+        auto job = new Akonadi::AddContactJob(contact, Akonadi::Collection(mCollectionId));
         job->showMessageBox(false);
         job->start();
     }
@@ -102,15 +102,15 @@ SearchRule::RequiredPart FilterActionAddToAddressBook::requiredPart() const
 
 QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
 {
-    QWidget *widget = new QWidget(parent);
-    auto *layout = new QGridLayout(widget);
+    auto widget = new QWidget(parent);
+    auto layout = new QGridLayout(widget);
 
     const auto headerCombo = new KComboBox(widget);
     headerCombo->setMinimumWidth(50);
     headerCombo->setObjectName(QStringLiteral("HeaderComboBox"));
     layout->addWidget(headerCombo, 0, 0, 2, 1, Qt::AlignVCenter);
 
-    QLabel *label = new QLabel(i18n("with category"), widget);
+    auto label = new QLabel(i18n("with category"), widget);
     label->setObjectName(QStringLiteral("label_with_category"));
     layout->addWidget(label, 0, 1);
 
@@ -122,7 +122,7 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
     label->setObjectName(QStringLiteral("label_in_addressbook"));
     layout->addWidget(label, 1, 1);
 
-    auto *collectionComboBox = new Akonadi::CollectionComboBox(widget);
+    auto collectionComboBox = new Akonadi::CollectionComboBox(widget);
     collectionComboBox->setMimeTypeFilter(QStringList() << KContacts::Addressee::mimeType());
     collectionComboBox->setAccessRightsFilter(Akonadi::Collection::CanCreateItem);
 

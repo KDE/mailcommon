@@ -31,9 +31,9 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Folder"));
-    auto *mainLayout = new QVBoxLayout(this);
+    auto mainLayout = new QVBoxLayout(this);
 
-    QLabel *lab = new QLabel(i18n("Folder path was \"%1\".", argStr));
+    auto lab = new QLabel(i18n("Folder path was \"%1\".", argStr));
     lab->setObjectName(QStringLiteral("argumentlabel"));
     lab->setWordWrap(true);
     mainLayout->addWidget(lab);
@@ -47,7 +47,7 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(
         const int numberOfItems(list.count());
         for (int i = 0; i < numberOfItems; ++i) {
             const Akonadi::Collection col = list.at(i);
-            QListWidgetItem *item = new QListWidgetItem(MailCommon::Util::fullCollectionPath(col));
+            auto item = new QListWidgetItem(MailCommon::Util::fullCollectionPath(col));
             item->setData(FilterActionMissingFolderDialog::IdentifyCollection, col.id());
             mListwidget->addItem(item);
         }
@@ -55,7 +55,7 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(
         connect(mListwidget, &QListWidget::itemDoubleClicked, this, &FilterActionMissingFolderDialog::slotDoubleItemClicked);
     }
 
-    QLabel *label = new QLabel(this);
+    auto label = new QLabel(this);
     label->setObjectName(QStringLiteral("folderlabel"));
     label->setWordWrap(true);
     if (filtername.isEmpty()) {
@@ -71,7 +71,7 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(
     connect(mFolderRequester, &MailCommon::FolderRequester::folderChanged, this, &FilterActionMissingFolderDialog::slotFolderChanged);
     mainLayout->addWidget(mFolderRequester);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setDefault(true);

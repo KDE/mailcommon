@@ -14,7 +14,7 @@ int main(int argc, char **argv)
     QApplication app(argc, argv);
 
     QMap<QUrl, QString> map;
-    MailCommon::FilterActionMissingTagDialog *w = new MailCommon::FilterActionMissingTagDialog(map, QStringLiteral("filename"), QStringLiteral("argument"));
+    auto w = new MailCommon::FilterActionMissingTagDialog(map, QStringLiteral("filename"), QStringLiteral("argument"));
     w->exec();
     app.exec();
     delete w;

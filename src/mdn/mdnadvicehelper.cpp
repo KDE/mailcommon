@@ -166,7 +166,7 @@ QPair< bool, KMime::MDN::SendingMode > MDNAdviceHelper::checkAndSetMDNInfo(
     i.setRevision(item.revision());
     i.setMimeType(item.mimeType());
     i.addAttribute(mdnStateAttr);
-    auto *modify = new Akonadi::ItemModifyJob(i);
+    auto modify = new Akonadi::ItemModifyJob(i);
     modify->setIgnorePayload(true);
     modify->disableRevisionCheck();
     return QPair< bool, KMime::MDN::SendingMode >(doSend, s);

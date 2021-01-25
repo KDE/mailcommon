@@ -39,14 +39,14 @@ AddTagDialog::AddTagDialog(const QList<KActionCollection *> &actions, QWidget *p
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Add Tag"));
-    auto *mainLayout = new QVBoxLayout(this);
+    auto mainLayout = new QVBoxLayout(this);
 
     d->mTagWidget = new MailCommon::TagWidget(actions, this);
     mainLayout->addWidget(d->mTagWidget);
 
     connect(d->mTagWidget->tagNameLineEdit(), &QLineEdit::textChanged, this, &AddTagDialog::slotTagNameChanged);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     d->mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     d->mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &AddTagDialog::slotSave);
@@ -88,7 +88,7 @@ void AddTagDialog::slotSave()
     MailCommon::Tag::Ptr tag(Tag::createDefaultTag(name));
     d->mTagWidget->recordTagSettings(tag);
     const Akonadi::Tag akonadiTag = tag->saveToAkonadi();
-    auto *createJob = new Akonadi::TagCreateJob(akonadiTag, this);
+    auto createJob = new Akonadi::TagCreateJob(akonadiTag, this);
     connect(createJob, &Akonadi::TagCreateJob::result, this, &AddTagDialog::onTagCreated);
 
     d->mLabel = name;
@@ -101,7 +101,7 @@ void AddTagDialog::onTagCreated(KJob *job)
         reject();
         return;
     }
-    auto *createJob = static_cast<Akonadi::TagCreateJob *>(job);
+    auto createJob = static_cast<Akonadi::TagCreateJob *>(job);
     d->mTag = createJob->tag();
     accept();
 }

@@ -70,17 +70,17 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     : QDialog(parent)
 {
     setWindowTitle(i18nc("@title:window", "Filter Rules"));
-    auto *mainLayout = new QVBoxLayout(this);
+    auto mainLayout = new QVBoxLayout(this);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel | QDialogButtonBox::Help | QDialogButtonBox::Apply, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel | QDialogButtonBox::Help | QDialogButtonBox::Apply, this);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
-    auto *user1Button = new QPushButton(this);
+    auto user1Button = new QPushButton(this);
     buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
-    auto *user2Button = new QPushButton(this);
+    auto user2Button = new QPushButton(this);
     buttonBox->addButton(user2Button, QDialogButtonBox::ActionRole);
-    auto *user3Button = new QPushButton(this);
+    auto user3Button = new QPushButton(this);
     buttonBox->addButton(user3Button, QDialogButtonBox::ActionRole);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &KMFilterDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
@@ -90,9 +90,9 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     user1Button->setText(i18n("Import..."));
     user2Button->setText(i18n("Export..."));
     user3Button->setText(i18n("Convert to..."));
-    auto *menu = new QMenu(this);
+    auto menu = new QMenu(this);
 
-    QAction *act = new QAction(i18n("KMail filters"), this);
+    auto act = new QAction(i18n("KMail filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::KMailFilter));
     menu->addAction(act);
 
@@ -144,38 +144,38 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     mApplyButton = buttonBox->button(QDialogButtonBox::Apply);
     mApplyButton->setEnabled(false);
 
-    QWidget *w = new QWidget(this);
+    auto w = new QWidget(this);
     mainLayout->addWidget(w);
     mainLayout->addWidget(buttonBox);
-    auto *topVLayout = new QVBoxLayout(w);
+    auto topVLayout = new QVBoxLayout(w);
     topVLayout->setContentsMargins(0, 0, 0, 0);
-    auto *topLayout = new QHBoxLayout;
+    auto topLayout = new QHBoxLayout;
     topVLayout->addLayout(topLayout);
     topLayout->setContentsMargins(0, 0, 0, 0);
 
-    auto *splitter = new QSplitter;
+    auto splitter = new QSplitter;
     splitter->setChildrenCollapsible(false);
     topLayout->addWidget(splitter);
 
     mFilterList = new KMFilterListBox(i18n("Available Filters"), this);
     splitter->addWidget(mFilterList);
-    auto *tabWidget = new QTabWidget(this);
+    auto tabWidget = new QTabWidget(this);
     splitter->addWidget(tabWidget);
 
-    QWidget *page1 = new QWidget(tabWidget);
+    auto page1 = new QWidget(tabWidget);
     tabWidget->addTab(page1, i18nc("General mail filter settings.", "General"));
-    auto *hbl = new QHBoxLayout(page1);
+    auto hbl = new QHBoxLayout(page1);
 
-    QWidget *page2 = new QWidget(tabWidget);
+    auto page2 = new QWidget(tabWidget);
     tabWidget->addTab(page2, i18nc("Advanced mail filter settings.", "Advanced"));
-    auto *vbl2 = new QVBoxLayout(page2);
+    auto vbl2 = new QVBoxLayout(page2);
 
-    auto *vbl = new QVBoxLayout();
+    auto vbl = new QVBoxLayout();
     hbl->addLayout(vbl);
     hbl->setStretchFactor(vbl, 2);
 
-    QGroupBox *patternGroupBox = new QGroupBox(i18n("Filter Criteria"), page1);
-    auto *layout = new QHBoxLayout(patternGroupBox);
+    auto patternGroupBox = new QGroupBox(i18n("Filter Criteria"), page1);
+    auto layout = new QHBoxLayout(patternGroupBox);
     mPatternEdit
         = new MailCommon::SearchPatternEdit(
               patternGroupBox, MailCommon::SearchPatternEdit::MatchAllMessages);
@@ -183,8 +183,8 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
 
     vbl->addWidget(patternGroupBox, 0, Qt::AlignTop);
 
-    QGroupBox *agb = new QGroupBox(i18n("Filter Actions"), page1);
-    auto *layout2 = new QHBoxLayout;
+    auto agb = new QGroupBox(i18n("Filter Actions"), page1);
+    auto layout2 = new QHBoxLayout;
     mActionLister = new MailCommon::FilterActionWidgetLister(agb);
     layout2->addWidget(mActionLister);
     agb->setLayout(layout2);
@@ -192,15 +192,15 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
 
     mAdvOptsGroup = new QGroupBox(i18n("Advanced Options"), page2);
     {
-        auto *gl = new QGridLayout();
-        auto *vbl3 = new QVBoxLayout();
+        auto gl = new QGridLayout();
+        auto vbl3 = new QVBoxLayout();
         gl->addLayout(vbl3, 0, 0);
         vbl3->addStretch(1);
 
         mApplyOnIn = new QCheckBox(i18n("Apply this filter to incoming messages:"), mAdvOptsGroup);
         vbl3->addWidget(mApplyOnIn);
 
-        auto *bg = new QButtonGroup(mAdvOptsGroup);
+        auto bg = new QButtonGroup(mAdvOptsGroup);
 
         mApplyOnForAll = new QRadioButton(i18n("from all accounts"), mAdvOptsGroup);
         bg->addButton(mApplyOnForAll);
@@ -256,7 +256,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
             = new QCheckBox(i18n("Add this filter to the Apply Filter menu"), mAdvOptsGroup);
         gl->addWidget(mConfigureShortcut, 9, 0, 1, 2);
 
-        QLabel *keyButtonLabel = new QLabel(i18n("Shortcut:"), mAdvOptsGroup);
+        auto keyButtonLabel = new QLabel(i18n("Shortcut:"), mAdvOptsGroup);
         keyButtonLabel->setAlignment(Qt::AlignVCenter | Qt::AlignRight);
         gl->addWidget(keyButtonLabel, 9, 2, 1, 1);
 
@@ -272,8 +272,8 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
         gl->addWidget(mConfigureToolbar, 10, 0, 1, 4);
         mConfigureToolbar->setEnabled(false);
 
-        QWidget *hbox = new QWidget(mAdvOptsGroup);
-        auto *hboxHBoxLayout = new QHBoxLayout(hbox);
+        auto hbox = new QWidget(mAdvOptsGroup);
+        auto hboxHBoxLayout = new QHBoxLayout(hbox);
         hboxHBoxLayout->setContentsMargins(0, 0, 0, 0);
         mFilterActionLabel = new QLabel(i18n("Icon for this filter:"), hbox);
         hboxHBoxLayout->addWidget(mFilterActionLabel);
@@ -293,8 +293,8 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     }
     vbl2->addWidget(mAdvOptsGroup, 0, Qt::AlignTop);
 
-    auto *applySpecificFiltersLayout = new QHBoxLayout;
-    QLabel *lab = new QLabel(i18n("Run selected filter(s) on: "), this);
+    auto applySpecificFiltersLayout = new QHBoxLayout;
+    auto lab = new QLabel(i18n("Run selected filter(s) on: "), this);
     applySpecificFiltersLayout->addWidget(lab);
     mFolderRequester = new MailCommon::FolderRequester(this);
     mFolderRequester->setNotAllowToCreateNewFolder(true);
@@ -407,7 +407,7 @@ bool KMFilterDialog::event(QEvent *e)
     // With a shortcut override we can catch this before it gets to kactions.
     const bool shortCutOverride = (e->type() == QEvent::ShortcutOverride);
     if (shortCutOverride || e->type() == QEvent::KeyPress) {
-        auto *kev = static_cast<QKeyEvent * >(e);
+        auto kev = static_cast<QKeyEvent * >(e);
         if (kev->key() == Qt::Key_Escape) {
             e->ignore();
             return true;
@@ -462,7 +462,7 @@ void KMFilterDialog::slotRunFilters()
             i18n("No filters selected."));
         return;
     }
-    Akonadi::ItemFetchJob *job = new Akonadi::ItemFetchJob(mFolderRequester->collection(), this);
+    auto job = new Akonadi::ItemFetchJob(mFolderRequester->collection(), this);
     job->setProperty("requiredPart", QVariant::fromValue(requiredPart));
     job->setProperty("listFilters", QVariant::fromValue(selectedFiltersId));
 
@@ -474,7 +474,7 @@ void KMFilterDialog::slotRunFilters()
 
 void KMFilterDialog::slotFetchItemsForFolderDone(KJob *job)
 {
-    auto *fjob = qobject_cast<Akonadi::ItemFetchJob *>(job);
+    auto fjob = qobject_cast<Akonadi::ItemFetchJob *>(job);
     Q_ASSERT(fjob);
 
     QStringList filtersId;

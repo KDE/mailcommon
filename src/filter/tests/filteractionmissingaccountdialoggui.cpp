@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
 
-    MailCommon::FilterActionMissingAccountDialog *w = new MailCommon::FilterActionMissingAccountDialog(QStringList(), QStringLiteral("filename"));
+    auto w = new MailCommon::FilterActionMissingAccountDialog(QStringList(), QStringLiteral("filename"));
     w->exec();
     app.exec();
     delete w;

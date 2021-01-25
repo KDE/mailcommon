@@ -20,7 +20,7 @@ SnippetsManagerTest::~SnippetsManagerTest()
 
 void SnippetsManagerTest::shouldHaveDefaultValue()
 {
-    KActionCollection *collection = new KActionCollection(this);
+    auto collection = new KActionCollection(this);
     MailCommon::SnippetsManager snippetManager(collection, this);
     QVERIFY(snippetManager.deleteSnippetAction());
     QVERIFY(snippetManager.model());

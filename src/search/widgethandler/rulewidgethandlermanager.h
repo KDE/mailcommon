@@ -60,8 +60,8 @@ public:
     void update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const;
 
 private:
-    typedef QVector<const RuleWidgetHandler *>::const_iterator const_iterator;
-    typedef QVector<const RuleWidgetHandler *>::iterator iterator;
+    using const_iterator = QVector<const RuleWidgetHandler *>::const_iterator;
+    using iterator = QVector<const RuleWidgetHandler *>::iterator;
 
     QVector<const RuleWidgetHandler *> mHandlers;
     bool mIsBalooSearch = false;

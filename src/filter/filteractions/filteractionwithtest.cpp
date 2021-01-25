@@ -27,7 +27,7 @@ bool FilterActionWithTest::isEmpty() const
 
 QWidget *FilterActionWithTest::createParamWidget(QWidget *parent) const
 {
-    auto *soundWidget = new SoundTestWidget(parent);
+    auto soundWidget = new SoundTestWidget(parent);
     soundWidget->setUrl(mParameter);
     soundWidget->setObjectName(QStringLiteral("soundwidget"));
 

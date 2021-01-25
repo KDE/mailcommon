@@ -17,11 +17,11 @@ Q_DECLARE_METATYPE(MailCommon::FilterImporterExporter::FilterType)
 FilterImporterExporterGui::FilterImporterExporterGui(QWidget *parent)
     : QWidget(parent)
 {
-    auto *mainLayout = new QVBoxLayout(this);
-    auto *menuBar = new QMenuBar(this);
+    auto mainLayout = new QVBoxLayout(this);
+    auto menuBar = new QMenuBar(this);
     mainLayout->addWidget(menuBar);
     QMenu *menuFilter = menuBar->addMenu(QStringLiteral("filter"));
-    QAction *act = new QAction(QStringLiteral("KMail filters"), this);
+    auto act = new QAction(QStringLiteral("KMail filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::KMailFilter));
     menuFilter->addAction(act);
 
@@ -97,7 +97,7 @@ int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
 
-    auto *w = new FilterImporterExporterGui();
+    auto w = new FilterImporterExporterGui();
     w->resize(800, 600);
     w->show();
     app.exec();

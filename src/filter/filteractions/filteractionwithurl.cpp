@@ -44,12 +44,12 @@ bool FilterActionWithUrl::isEmpty() const
 
 QWidget *FilterActionWithUrl::createParamWidget(QWidget *parent) const
 {
-    QWidget *widget = new QWidget(parent);
-    auto *layout = new QHBoxLayout;
+    auto widget = new QWidget(parent);
+    auto layout = new QHBoxLayout;
     layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
     widget->setLayout(layout);
-    auto *requester = new KUrlRequester(parent);
+    auto requester = new KUrlRequester(parent);
     requester->setUrl(QUrl::fromLocalFile(mParameter));
     requester->setObjectName(QStringLiteral("requester"));
     layout->addWidget(requester);

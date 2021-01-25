@@ -52,19 +52,19 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(MailCommon::MailCommonSetting
 {
     d->mSettings = settings;
     setWindowTitle(i18nc("@title:window", "Edit Accounts Order"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    auto *mainLayout = new QVBoxLayout(this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto mainLayout = new QVBoxLayout(this);
 
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &AccountConfigOrderDialog::reject);
 
-    QWidget *page = new QWidget(this);
+    auto page = new QWidget(this);
     mainLayout->addWidget(page);
     mainLayout->addWidget(buttonBox);
 
-    auto *vbox = new QVBoxLayout;
+    auto vbox = new QVBoxLayout;
     vbox->setContentsMargins(0, 0, 0, 0);
     page->setLayout(vbox);
 
@@ -72,15 +72,15 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(MailCommon::MailCommonSetting
     connect(d->mEnableAccountOrder, &QCheckBox::clicked, this, &AccountConfigOrderDialog::slotEnableAccountOrder);
     vbox->addWidget(d->mEnableAccountOrder);
 
-    auto *vlay = new QHBoxLayout;
+    auto vlay = new QHBoxLayout;
     vbox->addLayout(vlay);
 
     d->mListAccount = new QListWidget(this);
     d->mListAccount->setDragDropMode(QAbstractItemView::InternalMove);
     vlay->addWidget(d->mListAccount);
 
-    QWidget *upDownBox = new QWidget(page);
-    auto *upDownBoxVBoxLayout = new QVBoxLayout(upDownBox);
+    auto upDownBox = new QWidget(page);
+    auto upDownBoxVBoxLayout = new QVBoxLayout(upDownBox);
     upDownBoxVBoxLayout->setContentsMargins(0, 0, 0, 0);
     d->mUpButton = new QPushButton(upDownBox);
     upDownBoxVBoxLayout->addWidget(d->mUpButton);
@@ -98,7 +98,7 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(MailCommon::MailCommonSetting
     d->mDownButton->setFocusPolicy(Qt::StrongFocus);
     d->mDownButton->setAutoRepeat(true);
 
-    QWidget *spacer = new QWidget(upDownBox);
+    auto spacer = new QWidget(upDownBox);
     upDownBoxVBoxLayout->addWidget(spacer);
     upDownBoxVBoxLayout->setStretchFactor(spacer, 100);
     vlay->addWidget(upDownBox);
@@ -210,7 +210,7 @@ void AccountConfigOrderDialog::init()
         const QString identifier(finalList.at(i));
         const InstanceStruct tmp = mapInstance.value(identifier);
         if (tmp.isValid()) {
-            auto *item = new QListWidgetItem(tmp.icon, tmp.name, d->mListAccount);
+            auto item = new QListWidgetItem(tmp.icon, tmp.name, d->mListAccount);
             item->setData(AccountConfigOrderDialog::IdentifierAccount, identifier);
             d->mListAccount->addItem(item);
         }

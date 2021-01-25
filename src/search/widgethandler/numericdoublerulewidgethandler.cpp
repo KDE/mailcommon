@@ -56,7 +56,7 @@ QWidget *NumericDoubleRuleWidgetHandler::createValueWidget(int number, QStackedW
         return nullptr;
     }
 
-    auto *numInput = new QDoubleSpinBox(valueStack);
+    auto numInput = new QDoubleSpinBox(valueStack);
     numInput->setObjectName(QStringLiteral("QDoubleSpinBox"));
     QObject::connect(numInput, SIGNAL(valueChanged(double)),
                      receiver, SLOT(slotValueChanged()));

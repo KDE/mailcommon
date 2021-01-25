@@ -25,7 +25,7 @@ FilterAction *FilterActionSetTransport::newAction()
 
 QWidget *FilterActionSetTransport::createParamWidget(QWidget *parent) const
 {
-    auto *transportCombobox = new MailTransport::TransportComboBox(parent);
+    auto transportCombobox = new MailTransport::TransportComboBox(parent);
     transportCombobox->setObjectName(QStringLiteral("transportcombobox"));
     setParamWidgetValue(transportCombobox);
     connect(transportCombobox, QOverload<int>::of(&MailTransport::TransportComboBox::currentIndexChanged), this, &FilterActionSetTransport::filterActionModified);
@@ -68,7 +68,7 @@ FilterAction::ReturnCode FilterActionSetTransport::process(ItemContext &context,
     }
 
     const KMime::Message::Ptr msg = context.item().payload<KMime::Message::Ptr>();
-    auto *header = new KMime::Headers::Generic("X-KMail-Transport");
+    auto header = new KMime::Headers::Generic("X-KMail-Transport");
     header->fromUnicodeString(argsAsString(), "utf-8");
     msg->setHeader(header);
     msg->assemble();
@@ -94,7 +94,7 @@ void FilterActionSetTransport::applyParamWidgetValue(QWidget *paramWidget)
 
 void FilterActionSetTransport::clearParamWidget(QWidget *paramWidget) const
 {
-    auto *comboBox = qobject_cast<MailTransport::TransportComboBox *>(paramWidget);
+    auto comboBox = qobject_cast<MailTransport::TransportComboBox *>(paramWidget);
     Q_ASSERT(comboBox);
 
     comboBox->setCurrentIndex(0);
@@ -102,7 +102,7 @@ void FilterActionSetTransport::clearParamWidget(QWidget *paramWidget) const
 
 void FilterActionSetTransport::setParamWidgetValue(QWidget *paramWidget) const
 {
-    auto *comboBox = qobject_cast<MailTransport::TransportComboBox *>(paramWidget);
+    auto comboBox = qobject_cast<MailTransport::TransportComboBox *>(paramWidget);
     Q_ASSERT(comboBox);
 
     comboBox->setCurrentTransport(mParameter);

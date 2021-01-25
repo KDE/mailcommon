@@ -84,10 +84,10 @@ FilterAction::ReturnCode FilterActionDecrypt::process(ItemContext &context, bool
 
 QWidget *FilterActionDecrypt::createParamWidget(QWidget *parent) const
 {
-    QWidget *w = new QWidget(parent);
-    auto *l = new QVBoxLayout(w);
+    auto w = new QWidget(parent);
+    auto l = new QVBoxLayout(w);
 
-    QLabel *lbl = new QLabel(w);
+    auto lbl = new QLabel(w);
 
     QPalette palette = lbl->palette();
     palette.setColor(lbl->foregroundRole(), KColorScheme(QPalette::Normal).foreground(KColorScheme::NegativeText).color());

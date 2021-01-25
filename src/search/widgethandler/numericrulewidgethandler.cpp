@@ -58,7 +58,7 @@ QWidget *NumericRuleWidgetHandler::createValueWidget(int number, QStackedWidget 
         return nullptr;
     }
 
-    auto *numInput = new KPluralHandlingSpinBox(valueStack);
+    auto numInput = new KPluralHandlingSpinBox(valueStack);
     numInput->setObjectName(QStringLiteral("KPluralHandlingSpinBox"));
     QObject::connect(numInput, SIGNAL(valueChanged(int)),
                      receiver, SLOT(slotValueChanged()));

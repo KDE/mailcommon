@@ -25,9 +25,9 @@ FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Template"));
-    auto *mainLayout = new QVBoxLayout(this);
+    auto mainLayout = new QVBoxLayout(this);
 
-    QLabel *label = new QLabel(this);
+    auto label = new QLabel(this);
     label->setObjectName(QStringLiteral("label"));
     label->setText(i18n("Filter template is missing. "
                         "Please select a template to use with filter \"%1\"",
@@ -39,7 +39,7 @@ FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(
     mComboBoxTemplate->addItems(templateList);
     mainLayout->addWidget(mComboBoxTemplate);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);

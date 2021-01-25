@@ -26,7 +26,7 @@ public:
     /**
      * Defines a pointer to a search rule.
      */
-    typedef std::shared_ptr<SearchRule> Ptr;
+    using Ptr = std::shared_ptr<SearchRule>;
 
     /**
      * Describes operators for comparison of field and contents.

@@ -23,9 +23,9 @@ FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QStri
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select sound"));
 
-    auto *mainLayout = new QVBoxLayout(this);
+    auto mainLayout = new QVBoxLayout(this);
 
-    QLabel *label = new QLabel(i18n("Sound file was \"%1\".", argStr));
+    auto label = new QLabel(i18n("Sound file was \"%1\".", argStr));
     label->setObjectName(QStringLiteral("oldlabel"));
     mainLayout->addWidget(label);
 
@@ -40,7 +40,7 @@ FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QStri
     mUrlWidget->setObjectName(QStringLiteral("urlwidget"));
     mainLayout->addWidget(mUrlWidget);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);

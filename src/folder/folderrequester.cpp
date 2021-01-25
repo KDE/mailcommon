@@ -37,7 +37,7 @@ FolderRequester::FolderRequester(QWidget *parent)
     : QWidget(parent)
     , d(new MailCommon::FolderRequesterPrivate)
 {
-    auto *hlay = new QHBoxLayout(this);
+    auto hlay = new QHBoxLayout(this);
     hlay->setContentsMargins(0, 0, 0, 0);
 
     d->mEdit = new QLineEdit(this);
@@ -46,7 +46,7 @@ FolderRequester::FolderRequester(QWidget *parent)
     d->mEdit->setReadOnly(true);
     hlay->addWidget(d->mEdit);
 
-    auto *button = new QToolButton(this);
+    auto button = new QToolButton(this);
     button->setIcon(QIcon::fromTheme(QStringLiteral("folder")));
     hlay->addWidget(button);
     connect(button, &QToolButton::clicked, this, &FolderRequester::slotOpenDialog);

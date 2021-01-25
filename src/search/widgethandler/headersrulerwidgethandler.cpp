@@ -69,7 +69,7 @@ QWidget *HeadersRuleWidgetHandler::createFunctionWidget(
 QWidget *HeadersRuleWidgetHandler::createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const
 {
     if (number == 0) {
-        auto *lineEdit = new KLineEdit(valueStack);
+        auto lineEdit = new KLineEdit(valueStack);
         lineEdit->setClearButtonEnabled(true);
         lineEdit->setTrapReturnKey(true);
         lineEdit->setObjectName(QStringLiteral("regExpLineEdit"));
@@ -82,7 +82,7 @@ QWidget *HeadersRuleWidgetHandler::createValueWidget(int number, QStackedWidget 
 
     // blank QLabel to hide value widget for in-address-book rule
     if (number == 1) {
-        QLabel *label = new QLabel(valueStack);
+        auto label = new QLabel(valueStack);
         label->setObjectName(QStringLiteral("headerRuleValueHider"));
         label->setBuddy(valueStack);
         return label;

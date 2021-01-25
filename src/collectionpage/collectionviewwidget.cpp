@@ -26,14 +26,14 @@ using namespace MailCommon;
 CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     : QWidget(parent)
 {
-    auto *topLayout = new QVBoxLayout(this);
+    auto topLayout = new QVBoxLayout(this);
     topLayout->setObjectName(QStringLiteral("topLayout"));
     topLayout->setContentsMargins({});
 
     // sender or receiver column
     const QString senderReceiverColumnTip = i18n("Show Sender/Receiver Column in List of Messages");
 
-    QLabel *senderReceiverColumnLabel = new QLabel(i18n("Sho&w column:"), this);
+    auto senderReceiverColumnLabel = new QLabel(i18n("Sho&w column:"), this);
     mShowSenderReceiverComboBox = new QComboBox(this);
     mShowSenderReceiverComboBox->setToolTip(senderReceiverColumnTip);
     senderReceiverColumnLabel->setBuddy(mShowSenderReceiverComboBox);
@@ -41,14 +41,14 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     mShowSenderReceiverComboBox->insertItem(1, i18nc("@item:inlistbox Show sender.", "Sender"));
     mShowSenderReceiverComboBox->insertItem(2, i18nc("@item:inlistbox Show receiver.", "Receiver"));
 
-    auto *senderReceiverColumnHLayout = new QHBoxLayout();
+    auto senderReceiverColumnHLayout = new QHBoxLayout();
     senderReceiverColumnHLayout->addWidget(senderReceiverColumnLabel);
     senderReceiverColumnHLayout->addWidget(mShowSenderReceiverComboBox);
     topLayout->addLayout(senderReceiverColumnHLayout);
 
     // message list
-    QGroupBox *messageListGroup = new QGroupBox(i18n("Message List"), this);
-    auto *messageListGroupLayout = new QVBoxLayout(messageListGroup);
+    auto messageListGroup = new QGroupBox(i18n("Message List"), this);
+    auto messageListGroupLayout = new QVBoxLayout(messageListGroup);
     topLayout->addWidget(messageListGroup);
 
     // message list aggregation
@@ -58,15 +58,15 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
 
     mAggregationComboBox = new MessageList::Utils::AggregationComboBox(messageListGroup);
 
-    QLabel *aggregationLabel = new QLabel(i18n("Aggregation"), messageListGroup);
+    auto aggregationLabel = new QLabel(i18n("Aggregation"), messageListGroup);
     aggregationLabel->setBuddy(mAggregationComboBox);
 
     using MessageList::Utils::AggregationConfigButton;
-    auto *aggregationConfigButton = new AggregationConfigButton(messageListGroup, mAggregationComboBox);
+    auto aggregationConfigButton = new AggregationConfigButton(messageListGroup, mAggregationComboBox);
     // Make sure any changes made in the aggregations configure dialog are reflected in the combo.
     connect(aggregationConfigButton, &AggregationConfigButton::configureDialogCompleted, this, &CollectionViewWidget::slotSelectFolderAggregation);
 
-    auto *aggregationLayout = new QHBoxLayout();
+    auto aggregationLayout = new QHBoxLayout();
     aggregationLayout->addWidget(aggregationLabel, 1);
     aggregationLayout->addWidget(mAggregationComboBox, 1);
     aggregationLayout->addWidget(aggregationConfigButton, 0);
@@ -79,23 +79,23 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
 
     mThemeComboBox = new MessageList::Utils::ThemeComboBox(messageListGroup);
 
-    QLabel *themeLabel = new QLabel(i18n("Theme"), messageListGroup);
+    auto themeLabel = new QLabel(i18n("Theme"), messageListGroup);
     themeLabel->setBuddy(mThemeComboBox);
 
     using MessageList::Utils::ThemeConfigButton;
-    auto *themeConfigButton = new ThemeConfigButton(messageListGroup, mThemeComboBox);
+    auto themeConfigButton = new ThemeConfigButton(messageListGroup, mThemeComboBox);
     // Make sure any changes made in the themes configure dialog are reflected in the combo.
     connect(themeConfigButton, &ThemeConfigButton::configureDialogCompleted, this, &CollectionViewWidget::slotSelectFolderTheme);
 
-    auto *themeLayout = new QHBoxLayout();
+    auto themeLayout = new QHBoxLayout();
     themeLayout->addWidget(themeLabel, 1);
     themeLayout->addWidget(mThemeComboBox, 1);
     themeLayout->addWidget(themeConfigButton, 0);
     messageListGroupLayout->addLayout(themeLayout);
 
     // Message Default Format
-    QGroupBox *messageFormatGroup = new QGroupBox(i18n("Message Default Format"), this);
-    auto *messageFormatGroupLayout = new QVBoxLayout(messageFormatGroup);
+    auto messageFormatGroup = new QGroupBox(i18n("Message Default Format"), this);
+    auto messageFormatGroupLayout = new QVBoxLayout(messageFormatGroup);
     mPreferHtmlToText = new QRadioButton(i18n("Prefer HTML to text"), this);
     messageFormatGroupLayout->addWidget(mPreferHtmlToText);
     mPreferTextToHtml = new QRadioButton(i18n("Prefer text to HTML"), this);

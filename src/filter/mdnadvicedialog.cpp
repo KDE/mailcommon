@@ -20,12 +20,12 @@ MDNAdviceDialog::MDNAdviceDialog(const QString &text, bool canDeny, QWidget *par
 {
     setWindowTitle(i18nc("@title:window", "Message Disposition Notification Request"));
     QPushButton *user1Button = nullptr;
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes, this);
     user1Button = new QPushButton;
     buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
     connect(user1Button, &QPushButton::clicked, this, &MDNAdviceDialog::slotUser1Clicked);
     if (canDeny) {
-        auto *user2Button = new QPushButton;
+        auto user2Button = new QPushButton;
         connect(user2Button, &QPushButton::clicked, this, &MDNAdviceDialog::slotUser2Clicked);
         buttonBox->addButton(user2Button, QDialogButtonBox::ActionRole);
         user2Button->setText(i18n("Send \"&denied\""));

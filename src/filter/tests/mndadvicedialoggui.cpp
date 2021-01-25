@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
 
-    MailCommon::MDNAdviceDialog *w = new MailCommon::MDNAdviceDialog(QStringLiteral("test mnda"), true);
+    auto w = new MailCommon::MDNAdviceDialog(QStringLiteral("test mnda"), true);
     MessageComposer::MDNAdvice rc = MessageComposer::MDNIgnore;
     if (w->exec()) {
         rc = w->result();

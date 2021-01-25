@@ -60,7 +60,7 @@ QWidget *DateRuleWidgetHandler::createValueWidget(int number, QStackedWidget *va
         return nullptr;
     }
 
-    auto *dateCombo = new KDateComboBox(valueStack);
+    auto dateCombo = new KDateComboBox(valueStack);
     dateCombo->setObjectName(QStringLiteral("KDateComboBox"));
     dateCombo->setOptions(KDateComboBox::SelectDate | KDateComboBox::DatePicker | KDateComboBox::DateKeywords);
     QObject::connect(dateCombo, SIGNAL(dateChanged(QDate)),

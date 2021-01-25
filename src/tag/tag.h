@@ -23,13 +23,13 @@ class MAILCOMMON_EXPORT Tag
     Q_GADGET
 public:
 
-    typedef QSharedPointer<Tag> Ptr;
+    using Ptr = QSharedPointer<Tag>;
     enum SaveFlag {
         TextColor = 1,
         BackgroundColor = 1 << 1,
         Font = 1 << 2
     };
-    typedef QFlags<SaveFlag> SaveFlags;
+    using SaveFlags = QFlags<SaveFlag>;
 
     // Returns true if two tags are equal
     Q_REQUIRED_RESULT bool operator==(const Tag &other) const;

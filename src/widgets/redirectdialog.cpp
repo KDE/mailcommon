@@ -101,8 +101,8 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
     , d(new Private(this, mode))
 {
     setWindowTitle(i18nc("@title:window", "Redirect Message"));
-    auto *topLayout = new QVBoxLayout(this);
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Cancel, this);
+    auto topLayout = new QVBoxLayout(this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Cancel, this);
     d->mUser1Button = new QPushButton(this);
     buttonBox->addButton(d->mUser1Button, QDialogButtonBox::ActionRole);
     d->mUser2Button = new QPushButton(this);
@@ -114,17 +114,17 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
         d->mUser2Button->setDefault(true);
     }
 
-    QWidget *mainWidget = new QWidget;
+    auto mainWidget = new QWidget;
     topLayout->addWidget(mainWidget);
     topLayout->addWidget(buttonBox);
 
-    auto *mainLayout = new QVBoxLayout;
+    auto mainLayout = new QVBoxLayout;
     mainWidget->setLayout(mainLayout);
     mainLayout->setContentsMargins(0, 0, 0, 0);
-    QLabel *LabelTo = new QLabel(i18n("Select the recipient addresses to redirect to:"));
+    auto LabelTo = new QLabel(i18n("Select the recipient addresses to redirect to:"));
     mainLayout->addWidget(LabelTo);
 
-    auto *formLayout = new QFormLayout;
+    auto formLayout = new QFormLayout;
     // Combo boxes look better when they are the same size as other full width fields.
     formLayout->setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);
     // This is set to zero to avoid double margins between the

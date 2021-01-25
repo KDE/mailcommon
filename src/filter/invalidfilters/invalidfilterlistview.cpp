@@ -12,9 +12,9 @@ using namespace MailCommon;
 InvalidFilterListView::InvalidFilterListView(QWidget *parent)
     : QListView(parent)
 {
-    auto *invalidFilterDelegate = new InvalidFilterListItemDelegate(this, this);
+    auto invalidFilterDelegate = new InvalidFilterListItemDelegate(this, this);
 
-    auto *invalidFilterListModel = new InvalidFilterListModel(this);
+    auto invalidFilterListModel = new InvalidFilterListModel(this);
     connect(invalidFilterDelegate, &InvalidFilterListItemDelegate::showDetails, this, &InvalidFilterListView::showDetails);
     //connect(this, SIGNAL(pressed(QModelIndex)), SIGNAL(hideInformationWidget()));
     setModel(invalidFilterListModel);

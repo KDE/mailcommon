@@ -44,7 +44,7 @@ FavoriteCollectionWidget::FavoriteCollectionWidget(MailCommon::MailCommonSetting
     d->settings = settings;
     setFocusPolicy(Qt::NoFocus);
 
-    auto *delegate = new Akonadi::CollectionStatisticsDelegate(this);
+    auto delegate = new Akonadi::CollectionStatisticsDelegate(this);
     delegate->setProgressAnimationEnabled(true);
 
     setItemDelegate(delegate);
@@ -84,12 +84,12 @@ void FavoriteCollectionWidget::updateMode()
 
 void FavoriteCollectionWidget::createMenu(KActionCollection *ac)
 {
-    KActionMenu *iconSizeMenu = new KActionMenu(i18n("Icon size"), this);
+    auto iconSizeMenu = new KActionMenu(i18n("Icon size"), this);
     ac->addAction(QStringLiteral("favorite_icon_size"), iconSizeMenu);
 
     static const int icon_sizes[] = { 16, 22, 32 /*, 48, 64, 128 */ };
 
-    auto *grp = new QActionGroup(iconSizeMenu);
+    auto grp = new QActionGroup(iconSizeMenu);
     QAction *act = nullptr;
     for (int i  : icon_sizes) {
         act = new QAction(QStringLiteral("%1x%2").arg(i).arg(i), iconSizeMenu);
@@ -103,7 +103,7 @@ void FavoriteCollectionWidget::createMenu(KActionCollection *ac)
         connect(act, &QAction::triggered, this, &FavoriteCollectionWidget::slotChangeIconSize);
     }
 
-    KActionMenu *modeFavoriteMenu = new KActionMenu(i18n("Mode"), this);
+    auto modeFavoriteMenu = new KActionMenu(i18n("Mode"), this);
     ac->addAction(QStringLiteral("favorite_mode"), modeFavoriteMenu);
 
     grp = new QActionGroup(modeFavoriteMenu);
@@ -130,7 +130,7 @@ void FavoriteCollectionWidget::createMenu(KActionCollection *ac)
 
 void FavoriteCollectionWidget::slotChangeMode(bool)
 {
-    auto *act = qobject_cast< QAction * >(sender());
+    auto act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }
@@ -165,7 +165,7 @@ void FavoriteCollectionWidget::changeViewMode(QListView::ViewMode mode)
 
 void FavoriteCollectionWidget::slotChangeIconSize(bool)
 {
-    auto *act = qobject_cast< QAction * >(sender());
+    auto act = qobject_cast< QAction * >(sender());
     if (!act) {
         return;
     }

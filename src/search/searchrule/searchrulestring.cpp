@@ -294,7 +294,7 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
         for (QStringList::ConstIterator it = addressList.constBegin(); (it != end); ++it) {
             const QString email(KEmailAddress::extractEmailAddress(*it).toLower());
             if (!email.isEmpty()) {
-                auto *job = new Akonadi::ContactSearchJob();
+                auto job = new Akonadi::ContactSearchJob();
                 job->setLimit(1);
                 job->setQuery(Akonadi::ContactSearchJob::Email, email);
                 job->exec();
@@ -315,7 +315,7 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
         for (QStringList::ConstIterator it = addressList.constBegin(); (it != end); ++it) {
             const QString email(KEmailAddress::extractEmailAddress(*it).toLower());
             if (!email.isEmpty()) {
-                auto *job = new Akonadi::ContactSearchJob();
+                auto job = new Akonadi::ContactSearchJob();
                 job->setLimit(1);
                 job->setQuery(Akonadi::ContactSearchJob::Email, email);
                 job->exec();
@@ -337,7 +337,7 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
         for (QStringList::ConstIterator it = addressList.constBegin(); it != end; ++it) {
             const QString email(KEmailAddress::extractEmailAddress(*it).toLower());
             if (!email.isEmpty()) {
-                auto *job = new Akonadi::ContactSearchJob();
+                auto job = new Akonadi::ContactSearchJob();
                 job->setQuery(Akonadi::ContactSearchJob::Email, email);
                 job->exec();
 
@@ -362,7 +362,7 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
         for (QStringList::ConstIterator it = addressList.constBegin(); it != end; ++it) {
             const QString email(KEmailAddress::extractEmailAddress(*it).toLower());
             if (!email.isEmpty()) {
-                auto *job = new Akonadi::ContactSearchJob();
+                auto job = new Akonadi::ContactSearchJob();
                 job->setQuery(Akonadi::ContactSearchJob::Email, email);
                 job->exec();
 

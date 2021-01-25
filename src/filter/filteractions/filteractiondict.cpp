@@ -80,7 +80,7 @@ FilterActionDict::FilterActionDict()
 void FilterActionDict::insert(FilterActionNewFunc aNewFunc)
 {
     FilterAction *action = aNewFunc();
-    auto *desc = new FilterActionDesc;
+    auto desc = new FilterActionDesc;
     desc->name = action->name();
     desc->label = action->label();
     desc->create = aNewFunc;

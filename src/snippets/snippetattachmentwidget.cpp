@@ -17,7 +17,7 @@ using namespace MailCommon;
 SnippetAttachmentWidget::SnippetAttachmentWidget(QWidget *parent)
     : QWidget(parent)
 {
-    auto *layout = new QHBoxLayout(this);
+    auto layout = new QHBoxLayout(this);
     layout->setObjectName(QStringLiteral("layout"));
     layout->setContentsMargins(0, 0, 0, 0);
 
@@ -27,7 +27,7 @@ SnippetAttachmentWidget::SnippetAttachmentWidget(QWidget *parent)
     layout->addWidget(mLineEdit);
     mLineEdit->setReadOnly(true);
 
-    auto *button = new QToolButton(this);
+    auto button = new QToolButton(this);
     button->setObjectName(QStringLiteral("button"));
     button->setToolTip(i18n("Select Attachments"));
     button->setText(i18n("..."));

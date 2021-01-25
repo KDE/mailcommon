@@ -59,12 +59,12 @@ FilterAction::ReturnCode FilterActionAddHeader::process(ItemContext &context, bo
 
 QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
 {
-    QWidget *widget = new QWidget(parent);
-    auto *layout = new QHBoxLayout(widget);
+    auto widget = new QWidget(parent);
+    auto layout = new QHBoxLayout(widget);
     layout->setSpacing(4);
     layout->setContentsMargins(0, 0, 0, 0);
 
-    auto *comboBox = new KComboBox(widget);
+    auto comboBox = new KComboBox(widget);
     comboBox->setMinimumWidth(50);
     comboBox->setObjectName(QStringLiteral("combo"));
     comboBox->setEditable(true);
@@ -77,12 +77,12 @@ QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
 
     layout->addWidget(comboBox, 0 /* stretch */);
 
-    QLabel *label = new QLabel(i18n("With value:"), widget);
+    auto label = new QLabel(i18n("With value:"), widget);
     label->setObjectName(QStringLiteral("label_value"));
     label->setFixedWidth(label->sizeHint().width());
     layout->addWidget(label, 0);
 
-    auto *lineEdit = new KLineEdit(widget);
+    auto lineEdit = new KLineEdit(widget);
     lineEdit->setObjectName(QStringLiteral("ledit"));
     lineEdit->setTrapReturnKey(true);
     lineEdit->setClearButtonEnabled(true);

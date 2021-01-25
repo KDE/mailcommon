@@ -24,7 +24,7 @@ CollectionExpiryJob::~CollectionExpiryJob()
 void CollectionExpiryJob::start()
 {
     if (mCollection.isValid()) {
-        auto *job = new Akonadi::CollectionModifyJob(mCollection, this);
+        auto job = new Akonadi::CollectionModifyJob(mCollection, this);
         connect(job, &Akonadi::CollectionModifyJob::result, this, &CollectionExpiryJob::slotCollectionModified);
     } else {
         qCWarning(MAILCOMMON_LOG) << "Collection is not valid";
@@ -52,7 +52,7 @@ void CollectionExpiryJob::slotCollectionModified(KJob *job)
 
     // trigger immediate expiry if there is something to do
     if (mExpireNow) {
-        auto *modifiedJob = qobject_cast<Akonadi::CollectionModifyJob *>(job);
+        auto modifiedJob = qobject_cast<Akonadi::CollectionModifyJob *>(job);
         if (modifiedJob) {
             MailCommon::Util::expireOldMessages(modifiedJob->collection(), true /*immediate*/);
         } else {

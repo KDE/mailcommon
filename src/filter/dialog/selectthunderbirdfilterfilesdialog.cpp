@@ -21,12 +21,12 @@ SelectThunderbirdFilterFilesDialog::SelectThunderbirdFilterFilesDialog(const QSt
 {
     setWindowTitle(i18nc("@title:window", "Select thunderbird filter files"));
     setModal(true);
-    auto *mainLayout = new QVBoxLayout(this);
+    auto mainLayout = new QVBoxLayout(this);
 
     mSelectFilterFilesWidget = new MailCommon::SelectThunderbirdFilterFilesWidget(defaultSettingPath, this);
     mainLayout->addWidget(mSelectFilterFilesWidget);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);

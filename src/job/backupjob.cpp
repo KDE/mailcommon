@@ -264,7 +264,7 @@ void BackupJob::itemFetchJobResult(KJob *job)
         qCWarning(MAILCOMMON_LOG) << job->errorString();
         abort(i18n("Downloading a message in folder '%1' failed.", mCurrentFolder.name()));
     } else {
-        auto *fetchJob = qobject_cast<Akonadi::ItemFetchJob *>(job);
+        auto fetchJob = qobject_cast<Akonadi::ItemFetchJob *>(job);
         Q_ASSERT(fetchJob);
         Q_ASSERT(fetchJob->items().size() == 1);
         processMessage(fetchJob->items().constFirst());
@@ -357,7 +357,7 @@ void BackupJob::archiveNextFolder()
                    mCurrentFolder.name()));
         return;
     }
-    auto *job = new Akonadi::ItemFetchJob(mCurrentFolder);
+    auto job = new Akonadi::ItemFetchJob(mCurrentFolder);
     job->setProperty("folderName", folderName);
     connect(job, &Akonadi::ItemFetchJob::result, this, &BackupJob::onArchiveNextFolderDone);
 }
@@ -371,7 +371,7 @@ void BackupJob::onArchiveNextFolderDone(KJob *job)
         return;
     }
 
-    auto *fetchJob = qobject_cast<Akonadi::ItemFetchJob *>(job);
+    auto fetchJob = qobject_cast<Akonadi::ItemFetchJob *>(job);
     mPendingMessages += fetchJob->items();
     archiveNextMessage();
 }

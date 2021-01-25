@@ -190,7 +190,7 @@ QString MailCommon::Util::realFolderPath(const QString &path)
 
 void MailCommon::Util::expireOldMessages(const Akonadi::Collection &collection, bool immediate)
 {
-    auto *task = new ScheduledExpireTask(collection, immediate);
+    auto task = new ScheduledExpireTask(collection, immediate);
     KernelIf->jobScheduler()->registerTask(task);
 }
 

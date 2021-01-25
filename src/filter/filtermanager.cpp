@@ -145,7 +145,7 @@ void FilterManager::slotServerStateChanged(Akonadi::ServerManager::State state)
 
 void FilterManager::updateTagList()
 {
-    auto *fetchJob = new Akonadi::TagFetchJob(this);
+    auto fetchJob = new Akonadi::TagFetchJob(this);
     fetchJob->fetchScope().fetchAttribute<Akonadi::TagAttribute>();
     connect(fetchJob, &Akonadi::TagFetchJob::result, this, &FilterManager::slotFinishedTagListing);
 }
@@ -167,7 +167,7 @@ void FilterManager::slotFinishedTagListing(KJob *job)
     if (job->error()) {
         qCWarning(MAILCOMMON_LOG) << "failed to retrieve tags " << job->errorString();
     }
-    auto *fetchJob = static_cast<Akonadi::TagFetchJob *>(job);
+    auto fetchJob = static_cast<Akonadi::TagFetchJob *>(job);
     const Akonadi::Tag::List lstTags = fetchJob->tags();
     for (const Akonadi::Tag &tag : lstTags) {
         d->mTagList.insert(tag.url(), tag.name());

@@ -20,11 +20,11 @@ using namespace MailCommon;
 CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     : QWidget(parent)
 {
-    auto *topLayout = new QVBoxLayout(this);
+    auto topLayout = new QVBoxLayout(this);
     topLayout->setObjectName(QStringLiteral("topLayout"));
     topLayout->setContentsMargins({});
     // should new mail in this folder be ignored?
-    auto *hbl = new QHBoxLayout();
+    auto hbl = new QHBoxLayout();
     topLayout->addItem(hbl);
     mNotifyOnNewMailCheckBox
         = new QCheckBox(i18n("Act on new/unread mail in this folder"), this);
@@ -65,7 +65,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
 
     addLine(this, topLayout);
     // use grid layout for the following combobox settings
-    auto *gl = new QGridLayout();
+    auto gl = new QGridLayout();
     topLayout->addItem(gl);
     gl->setColumnStretch(1, 100);   // make the second column use all available space
     int row = -1;
@@ -76,7 +76,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     gl->addWidget(mUseDefaultIdentityCheckBox);
     connect(mUseDefaultIdentityCheckBox, &QCheckBox::stateChanged, this, &CollectionGeneralWidget::slotIdentityCheckboxChanged);
     ++row;
-    QLabel *label = new QLabel(i18n("&Sender identity:"), this);
+    auto label = new QLabel(i18n("&Sender identity:"), this);
     gl->addWidget(label, row, 0);
     mIdentityComboBox = new KIdentityManagement::IdentityCombo(KernelIf->identityManager(), this);
     label->setBuddy(mIdentityComboBox);
@@ -96,7 +96,7 @@ CollectionGeneralWidget::~CollectionGeneralWidget()
 
 void CollectionGeneralWidget::addLine(QWidget *parent, QVBoxLayout *layout)
 {
-    QFrame *line = new QFrame(parent);
+    auto line = new QFrame(parent);
     line->setGeometry(QRect(80, 150, 250, 20));
     line->setFrameShape(QFrame::HLine);
     line->setFrameShadow(QFrame::Sunken);

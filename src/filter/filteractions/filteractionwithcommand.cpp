@@ -84,7 +84,7 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Messa
     for (QList<int>::ConstIterator it = argList.constBegin(); it != end; ++it) {
         // setup temp files with check for duplicate %n's
         if ((*it) != lastSeen) {
-            auto *tempFile = new QTemporaryFile();
+            auto tempFile = new QTemporaryFile();
             if (!tempFile->open()) {
                 delete tempFile;
                 qCDebug(MAILCOMMON_LOG) << "FilterActionWithCommand: Could not create temp file!";
@@ -178,7 +178,7 @@ FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &co
 
     // KProcess doesn't support a QProcess::launch() equivalent, so
     // we must use a temp file :-(
-    auto *inFile = new QTemporaryFile;
+    auto inFile = new QTemporaryFile;
     if (!inFile->open()) {
         delete inFile;
         return ErrorButGoOn;
@@ -253,7 +253,7 @@ FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &co
             }
             if (uid != newUid) {
                 aMsg->setFrozen(false);
-                auto *header = new KMime::Headers::Generic("X-UID");
+                auto header = new KMime::Headers::Generic("X-UID");
                 header->fromUnicodeString(uid, "utf-8");
                 aMsg->setHeader(header);
                 aMsg->assemble();

@@ -58,12 +58,12 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
     mIsResourceFolder = (collection.parentCollection() == Akonadi::Collection::root());
     QLabel *label = nullptr;
 
-    auto *topLayout = new QVBoxLayout(this);
+    auto topLayout = new QVBoxLayout(this);
 
     // Musn't be able to edit details for a non-resource, system folder.
     if ((!mIsLocalSystemFolder || mIsResourceFolder)
         && !mFolderCollection->isReadOnly()) {
-        auto *hl = new QHBoxLayout();
+        auto hl = new QHBoxLayout();
         topLayout->addItem(hl);
         label = new QLabel(i18nc("@label:textbox Name of the folder.", "&Name:"), this);
         hl->addWidget(label);
@@ -101,7 +101,7 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
         const PimCommon::CollectionTypeUtil::FolderContentsType folderType = collectionUtil.typeFromKolabName(annotations.value(PimCommon::CollectionTypeUtil::kolabFolderType()));
 
         int row = 0;
-        auto *gl = new QGridLayout();
+        auto gl = new QGridLayout();
         topLayout->addItem(gl);
         mContentsComboBox = new PimCommon::ContentTypeWidget(this);
         gl->addWidget(mContentsComboBox, row, 0, 1, 2);

@@ -28,13 +28,13 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
     , mActionCollection(actionCollection)
     , mInGroupMode(inGroupMode)
 {
-    auto *mainLayout = new QVBoxLayout(this);
+    auto mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
     mSnippetWidget = new SnippetWidget(this);
 
     mainLayout->addWidget(mSnippetWidget);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setDefault(true);
     mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);

@@ -26,9 +26,9 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Tag"));
-    auto *mainLayout = new QVBoxLayout(this);
+    auto mainLayout = new QVBoxLayout(this);
 
-    QLabel *label = new QLabel(i18n("Tag was \"%1\".", argsStr));
+    auto label = new QLabel(i18n("Tag was \"%1\".", argsStr));
     label->setObjectName(QStringLiteral("tagnamelabel"));
     mainLayout->addWidget(label);
 
@@ -45,7 +45,7 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
     QMap<QUrl, QString>::const_iterator map = tagList.constBegin();
     const QMap<QUrl, QString>::const_iterator mapEnd = tagList.constEnd();
     for (; map != mapEnd; ++map) {
-        auto *item = new QListWidgetItem(map.value());
+        auto item = new QListWidgetItem(map.value());
         item->setData(UrlData, map.key().toString());
         mTagList->addItem(item);
     }
@@ -53,11 +53,11 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
     connect(mTagList, &QListWidget::itemDoubleClicked, this, &FilterActionMissingTagDialog::accept);
     mainLayout->addWidget(mTagList);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
-    auto *user1Button = new QPushButton(this);
+    auto user1Button = new QPushButton(this);
     user1Button->setObjectName(QStringLiteral("addtag"));
     user1Button->setText(i18n("Add Tag..."));
     buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
@@ -103,7 +103,7 @@ void FilterActionMissingTagDialog::slotAddTag()
 {
     QPointer<MailCommon::AddTagDialog> dlg = new MailCommon::AddTagDialog(QList<KActionCollection *>(), this);
     if (dlg->exec()) {
-        QListWidgetItem *item = new QListWidgetItem(dlg->label());
+        auto item = new QListWidgetItem(dlg->label());
         item->setData(UrlData, dlg->tag().url().url());
         mTagList->addItem(item);
     }

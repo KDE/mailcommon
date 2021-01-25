@@ -95,8 +95,8 @@ SearchRule::RequiredPart FilterActionRewriteHeader::requiredPart() const
 
 QWidget *FilterActionRewriteHeader::createParamWidget(QWidget *parent) const
 {
-    QWidget *widget = new QWidget(parent);
-    auto *layout = new QHBoxLayout(widget);
+    auto widget = new QWidget(parent);
+    auto layout = new QHBoxLayout(widget);
     layout->setSpacing(4);
     layout->setContentsMargins(0, 0, 0, 0);
 
@@ -112,12 +112,12 @@ QWidget *FilterActionRewriteHeader::createParamWidget(QWidget *parent) const
     comp->insertItems(mParameterList);
     comp->setCompletionMode(KCompletion::CompletionPopupAuto);
 
-    QLabel *label = new QLabel(i18n("Replace:"), widget);
+    auto label = new QLabel(i18n("Replace:"), widget);
     label->setObjectName(QStringLiteral("label_replace"));
     label->setFixedWidth(label->sizeHint().width());
     layout->addWidget(label, 0);
 
-    auto *regExpLineEdit = new KLineEdit(widget);
+    auto regExpLineEdit = new KLineEdit(widget);
     regExpLineEdit->setClearButtonEnabled(true);
     regExpLineEdit->setTrapReturnKey(true);
     regExpLineEdit->setObjectName(QStringLiteral("search"));
@@ -128,7 +128,7 @@ QWidget *FilterActionRewriteHeader::createParamWidget(QWidget *parent) const
     label->setObjectName(QStringLiteral("label_with"));
     layout->addWidget(label, 0);
 
-    auto *lineEdit = new KLineEdit(widget);
+    auto lineEdit = new KLineEdit(widget);
     lineEdit->setObjectName(QStringLiteral("replace"));
     lineEdit->setClearButtonEnabled(true);
     lineEdit->setTrapReturnKey(true);

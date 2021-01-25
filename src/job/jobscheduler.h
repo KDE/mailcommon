@@ -112,7 +112,7 @@ private:
     void restartTimer();
     void interruptCurrentTask();
     void runTaskNow(ScheduledTask *task);
-    typedef QVector<ScheduledTask *> TaskList;
+    using TaskList = QVector<ScheduledTask *>;
     void removeTask(TaskList::Iterator &it);
 private:
     TaskList mTaskList; // FIFO of tasks to be run

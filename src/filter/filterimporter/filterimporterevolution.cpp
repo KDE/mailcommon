@@ -301,7 +301,7 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter, Mai
 
 void FilterImporterEvolution::parseFilters(const QDomElement &e)
 {
-    auto *filter = new MailCommon::MailFilter();
+    auto filter = new MailCommon::MailFilter();
     if (e.hasAttribute(QStringLiteral("enabled"))) {
         const QString attr = e.attribute(QStringLiteral("enabled"));
         if (attr == QLatin1String("false")) {

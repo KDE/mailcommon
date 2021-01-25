@@ -55,7 +55,7 @@ void FillTagComboJob::onDestroyed()
 
 void FillTagComboJob::start()
 {
-    auto *fetchJob = new Akonadi::TagFetchJob(this);
+    auto fetchJob = new Akonadi::TagFetchJob(this);
     fetchJob->fetchScope().fetchAttribute<Akonadi::TagAttribute>();
     connect(fetchJob, &Akonadi::TagFetchJob::result, this, &FillTagComboJob::onTagsFetched);
 }
@@ -72,7 +72,7 @@ void FillTagComboJob::onTagsFetched(KJob *job)
         emitResult();
         return;
     }
-    auto *fetchJob = static_cast<Akonadi::TagFetchJob *>(job);
+    auto fetchJob = static_cast<Akonadi::TagFetchJob *>(job);
     const auto lst = fetchJob->tags();
     for (const Akonadi::Tag &tag : lst) {
         QString iconName = QStringLiteral("mail-tagged");
@@ -133,7 +133,7 @@ QWidget *TagRuleWidgetHandler::createFunctionWidget(
 QWidget *TagRuleWidgetHandler::createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const
 {
     if (number == 0) {
-        auto *lineEdit = new KLineEdit(valueStack);
+        auto lineEdit = new KLineEdit(valueStack);
         lineEdit->setClearButtonEnabled(true);
         lineEdit->setTrapReturnKey(true);
         lineEdit->setObjectName(QStringLiteral("tagRuleRegExpLineEdit"));
@@ -151,7 +151,7 @@ QWidget *TagRuleWidgetHandler::createValueWidget(int number, QStackedWidget *val
         valueCombo->setEditable(true);
         valueCombo->addItem(QString());   // empty entry for user input
 
-        auto *job = new FillTagComboJob(valueCombo);
+        auto job = new FillTagComboJob(valueCombo);
         job->start();
 
         valueCombo->adjustSize();

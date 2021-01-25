@@ -64,9 +64,9 @@ static bool waitForPopulation(const QModelIndex &idx, EntityTreeModel *model, in
 
 EntityTreeModel *FavoriteProxyTest::createETM()
 {
-    auto *changeRecorder = new ChangeRecorder(this);
+    auto changeRecorder = new ChangeRecorder(this);
     changeRecorder->setCollectionMonitored(Collection::root());
-    auto *model = new EntityTreeModel(changeRecorder, this);
+    auto model = new EntityTreeModel(changeRecorder, this);
     model->setItemPopulationStrategy(Akonadi::EntityTreeModel::LazyPopulation);
     return model;
 }
@@ -97,10 +97,10 @@ void FavoriteProxyTest::testReordering()
     configGroup.writeEntry("FavoriteCollectionLabels", labels);
     configGroup.writeEntry("0", order);
 
-    auto *favoriteModel = new FavoriteCollectionsModel(model, configGroup, this);
+    auto favoriteModel = new FavoriteCollectionsModel(model, configGroup, this);
     QTRY_COMPARE(favoriteModel->rowCount(), 2);
 
-    auto *orderProxy = new FavoriteCollectionOrderProxyModel(this);
+    auto orderProxy = new FavoriteCollectionOrderProxyModel(this);
     orderProxy->setOrderConfig(configGroup);
     orderProxy->setSourceModel(favoriteModel);
     orderProxy->sort(0, Qt::AscendingOrder);
