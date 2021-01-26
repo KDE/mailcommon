@@ -7,23 +7,23 @@
 #include "mailutil.h"
 #include "mailutil_p.h"
 
-#include "mailcommon_debug.h"
 #include "calendarinterface.h"
-#include "job/expirejob.h"
-#include "folder/foldersettings.h"
-#include "pop3settings.h"
-#include "kernel/mailkernel.h"
 #include "filter/dialog/filteractionmissingfolderdialog.h"
+#include "folder/foldersettings.h"
+#include "job/expirejob.h"
+#include "kernel/mailkernel.h"
+#include "mailcommon_debug.h"
+#include "pop3settings.h"
 
 #include <MailImporter/FilterBalsa>
+#include <MailImporter/FilterClawsMail>
 #include <MailImporter/FilterEvolution>
 #include <MailImporter/FilterEvolution_v2>
 #include <MailImporter/FilterEvolution_v3>
-#include <MailImporter/FilterClawsMail>
+#include <MailImporter/FilterIcedove>
+#include <MailImporter/FilterOpera>
 #include <MailImporter/FilterSylpheed>
 #include <MailImporter/FilterThunderbird>
-#include <MailImporter/FilterOpera>
-#include <MailImporter/FilterIcedove>
 #include <MailImporter/OtherMailerUtil>
 
 #include <MessageCore/StringUtil>
@@ -31,23 +31,22 @@
 #include <MessageComposer/MessageHelper>
 
 #include <AgentManager>
-#include <entitymimetypefiltermodel.h>
-#include <EntityTreeModel>
-#include <ItemFetchJob>
-#include <ItemFetchScope>
 #include <Akonadi/KMime/MessageParts>
 #include <Akonadi/KMime/NewMailNotifierAttribute>
 #include <AkonadiCore/ServerManager>
+#include <EntityTreeModel>
+#include <ItemFetchJob>
+#include <ItemFetchScope>
+#include <entitymimetypefiltermodel.h>
 
 #include <KMime/KMimeMessage>
 
 #include <KColorScheme>
-#include <KJob>
 #include <KIO/JobUiDelegate>
+#include <KJob>
 #include <collectionpage/attributes/expirecollectionattribute.h>
 
-OrgKdeAkonadiPOP3SettingsInterface *MailCommon::Util::createPop3SettingsInterface(
-    const QString &ident)
+OrgKdeAkonadiPOP3SettingsInterface *MailCommon::Util::createPop3SettingsInterface(const QString &ident)
 {
     const auto service = Akonadi::ServerManager::agentServiceName(Akonadi::ServerManager::Resource, ident);
     return new OrgKdeAkonadiPOP3SettingsInterface(service, QStringLiteral("/Settings"), QDBusConnection::sessionBus());
@@ -78,8 +77,7 @@ QString MailCommon::Util::fullCollectionPath(const Akonadi::Collection &collecti
 {
     QString fullPath;
 
-    QModelIndex idx
-        = Akonadi::EntityTreeModel::modelIndexForCollection(KernelIf->collectionModel(), collection);
+    QModelIndex idx = Akonadi::EntityTreeModel::modelIndexForCollection(KernelIf->collectionModel(), collection);
     if (!idx.isValid()) {
         return fullPath;
     }
@@ -120,8 +118,7 @@ Akonadi::AgentInstance::List MailCommon::Util::agentInstances(bool excludeMailDi
 {
     Akonadi::AgentInstance::List relevantInstances;
     const Akonadi::AgentInstance::List agentList = Akonadi::AgentManager::self()->instances();
-    std::copy_if(agentList.cbegin(), agentList.cend(), std::back_inserter(relevantInstances),
-                 [excludeMailDispacher](const Akonadi::AgentInstance &instance) {
+    std::copy_if(agentList.cbegin(), agentList.cend(), std::back_inserter(relevantInstances), [excludeMailDispacher](const Akonadi::AgentInstance &instance) {
         return isMailAgent(instance, excludeMailDispacher);
     });
     return relevantInstances;
@@ -134,10 +131,8 @@ bool MailCommon::Util::isMailAgent(const Akonadi::AgentInstance &instance, bool 
     }
 
     const QStringList capabilities(instance.type().capabilities());
-    if (capabilities.contains(QLatin1String("Resource"))
-        && !capabilities.contains(QLatin1String("Virtual"))
-        && !capabilities.contains(QLatin1String("MailTransport"))
-        && !capabilities.contains(QLatin1String("Autostart"))) {
+    if (capabilities.contains(QLatin1String("Resource")) && !capabilities.contains(QLatin1String("Virtual"))
+        && !capabilities.contains(QLatin1String("MailTransport")) && !capabilities.contains(QLatin1String("Autostart"))) {
         return true;
     } else if (!excludeMailTransport && instance.identifier() == QLatin1String("akonadi_maildispatcher_agent")) {
         return true;
@@ -159,8 +154,7 @@ uint MailCommon::Util::folderIdentity(const Akonadi::Item &item)
         if (col.resource().isEmpty()) {
             col = CommonKernel->collectionFromId(col.id());
         }
-        const QSharedPointer<FolderSettings> fd
-            = FolderSettings::forCollection(col, false);
+        const QSharedPointer<FolderSettings> fd = FolderSettings::forCollection(col, false);
 
         id = fd->identity();
     }
@@ -183,7 +177,7 @@ QString MailCommon::Util::realFolderPath(const QString &path)
     realPath.remove(QStringLiteral(".directory"));
     realPath.replace(QLatin1String("/."), QStringLiteral("/"));
     if (!realPath.isEmpty() && (realPath.at(0) == QLatin1Char('.'))) {
-        realPath.remove(0, 1);   //remove first "."
+        realPath.remove(0, 1); // remove first "."
     }
     return realPath;
 }

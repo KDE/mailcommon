@@ -9,12 +9,16 @@
 
 #include <QDialog>
 class QListWidget;
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterActionMissingTagDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingTagDialog(const QMap<QUrl, QString> &templateList, const QString &filtername, const QString &argsStr, QWidget *parent = nullptr);
+    explicit FilterActionMissingTagDialog(const QMap<QUrl, QString> &templateList,
+                                          const QString &filtername,
+                                          const QString &argsStr,
+                                          QWidget *parent = nullptr);
     ~FilterActionMissingTagDialog();
     Q_REQUIRED_RESULT QString selectedTag() const;
 
@@ -23,9 +27,7 @@ private:
     void readConfig();
     void writeConfig();
 
-    enum TypeData {
-        UrlData = Qt::UserRole + 1
-    };
+    enum TypeData { UrlData = Qt::UserRole + 1 };
     QListWidget *mTagList = nullptr;
 };
 }

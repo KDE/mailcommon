@@ -10,7 +10,8 @@
 
 #include "filteractionwithaddress.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionRedirect - redirect to
 // Redirect message to another user

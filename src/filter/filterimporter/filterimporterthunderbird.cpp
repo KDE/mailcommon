@@ -6,10 +6,10 @@
 
 #include "filterimporterthunderbird.h"
 #include "filter/mailfilter.h"
-#include <MailImporter/FilterSeaMonkey>
-#include <MailImporter/FilterIcedove>
-#include <MailImporter/FilterThunderbird>
 #include "mailcommon_debug.h"
+#include <MailImporter/FilterIcedove>
+#include <MailImporter/FilterSeaMonkey>
+#include <MailImporter/FilterThunderbird>
 #include <QUrl>
 
 #include <QFile>
@@ -42,7 +42,7 @@ void FilterImporterThunderbird::readStream(QTextStream &stream)
         qCDebug(MAILCOMMON_LOG) << " line :" << line << " filter " << filter;
         filter = parseLine(stream, line, filter);
     }
-    //TODO show limit of action/condition
+    // TODO show limit of action/condition
     appendFilter(filter);
 }
 
@@ -77,7 +77,7 @@ MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream
             line = stream.readLine();
             if (line.startsWith(QLatin1String("actionValue="))) {
                 value = cleanArgument(line, QStringLiteral("actionValue="));
-                //change priority
+                // change priority
                 if (actionName == QLatin1String("Change priority")) {
                     QStringList lstValue;
                     lstValue << QStringLiteral("X-Priority");
@@ -100,7 +100,7 @@ MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream
                     if (url.isValid()) {
                         QString path = url.path();
                         if (path.startsWith(QLatin1Char('/'))) {
-                            path.remove(0, 1); //Remove '/'
+                            path.remove(0, 1); // Remove '/'
                         }
                         value = path;
                     }
@@ -132,9 +132,9 @@ MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream
     } else if (line.startsWith(QLatin1String("logging="))) {
         line = cleanArgument(line, QStringLiteral("logging="));
         if (line == QLatin1String("no")) {
-            //TODO
+            // TODO
         } else if (line == QLatin1String("yes")) {
-            //TODO
+            // TODO
         } else {
             qCDebug(MAILCOMMON_LOG) << " Logging option not implemented " << line;
         }
@@ -202,7 +202,7 @@ bool FilterImporterThunderbird::splitConditions(const QString &cond, MailCommon:
 
     QString str = cond.trimmed();
     str.remove(QLatin1Char('('));
-    str.remove(str.length() - 1, 1);   //remove last )
+    str.remove(str.length() - 1, 1); // remove last )
 
     const QStringList listOfCond = str.split(QLatin1Char(','));
     if (listOfCond.count() < 3) {
@@ -223,7 +223,7 @@ bool FilterImporterThunderbird::splitConditions(const QString &cond, MailCommon:
     } else if (field == QLatin1String("date")) {
         fieldName = "<date>";
     } else if (field == QLatin1String("priority")) {
-        //TODO
+        // TODO
     } else if (field == QLatin1String("status")) {
         fieldName = "<status>";
     } else if (field == QLatin1String("to")) {
@@ -237,21 +237,21 @@ bool FilterImporterThunderbird::splitConditions(const QString &cond, MailCommon:
     } else if (field == QLatin1String("age in days")) {
         fieldName = "<age in days>";
     } else if (field == QLatin1String("label")) {
-        //TODO
+        // TODO
     } else if (field == QLatin1String("tag")) {
         fieldName = "<tag>";
     } else if (field == QLatin1String("size")) {
         fieldName = "<size>";
     } else if (field == QLatin1String("from in ab")) {
-        //TODO
+        // TODO
     } else if (field == QLatin1String("junk status")) {
-        //TODO
+        // TODO
     } else if (field == QLatin1String("junk percent")) {
-        //TODO
+        // TODO
     } else if (field == QLatin1String("junk score origin")) {
-        //TODO
+        // TODO
     } else if (field == QLatin1String("has attachment status")) {
-        //TODO
+        // TODO
     }
 
     if (fieldName.isEmpty()) {
@@ -288,9 +288,9 @@ bool FilterImporterThunderbird::splitConditions(const QString &cond, MailCommon:
     } else if (function == QLatin1String("isn't")) {
         functionName = SearchRule::FuncNotEqual;
     } else if (function == QLatin1String("is empty")) {
-        //TODO
+        // TODO
     } else if (function == QLatin1String("isn't empty")) {
-        //TODO
+        // TODO
     } else if (function == QLatin1String("is before")) {
         functionName = SearchRule::FuncIsLess;
     } else if (function == QLatin1String("is after")) {
@@ -335,7 +335,7 @@ bool FilterImporterThunderbird::splitConditions(const QString &cond, MailCommon:
         }
     } else if (fieldName == "<size>") {
         int value = contents.toInt();
-        value = value * 1024; //Ko
+        value = value * 1024; // Ko
         contentsName = QString::number(value);
     } else if (fieldName == "<date>") {
         QLocale locale(QLocale::C);
@@ -347,7 +347,7 @@ bool FilterImporterThunderbird::splitConditions(const QString &cond, MailCommon:
 
     SearchRule::Ptr rule = SearchRule::createInstance(fieldName, functionName, contentsName);
     filter->pattern()->append(rule);
-    //qCDebug(MAILCOMMON_LOG) << " field :" << field << " function :" << function
+    // qCDebug(MAILCOMMON_LOG) << " field :" << field << " function :" << function
     //         << " contents :" << contents << " cond :" << cond;
     return true;
 }
@@ -386,7 +386,7 @@ QString FilterImporterThunderbird::extractActions(const QString &line, MailCommo
         value = QStringLiteral("R");
     } else if (line == QLatin1String("Mark unread")) {
         actionName = QStringLiteral("set status");
-        value = QStringLiteral("U");   //TODO verify
+        value = QStringLiteral("U"); // TODO verify
     } else if (line == QLatin1String("Copy to folder")) {
         actionName = QStringLiteral("copy");
     } else if (line == QLatin1String("AddTag")) {
@@ -394,7 +394,7 @@ QString FilterImporterThunderbird::extractActions(const QString &line, MailCommo
     } else if (line == QLatin1String("Delete")) {
         actionName = QStringLiteral("delete");
     } else if (line == QLatin1String("Change priority")) {
-        actionName = QStringLiteral("Change priority"); //Doesn't exist in kmail but we help us to importing
+        actionName = QStringLiteral("Change priority"); // Doesn't exist in kmail but we help us to importing
     } else if (line == QLatin1String("Ignore thread")) {
     } else if (line == QLatin1String("Ignore subthread")) {
     } else if (line == QLatin1String("Watch thread")) {
@@ -422,25 +422,25 @@ void FilterImporterThunderbird::extractType(const QString &line, MailCommon::Mai
     if (value == 1) {
         filter->setApplyOnInbound(true);
         filter->setApplyOnExplicit(false);
-        //Checking mail
+        // Checking mail
     } else if (value == 16) {
         filter->setApplyOnInbound(false);
         filter->setApplyOnExplicit(true);
-        //Manual mail
+        // Manual mail
     } else if (value == 17) {
         filter->setApplyOnInbound(true);
         filter->setApplyOnExplicit(true);
-        //Checking mail or manual
+        // Checking mail or manual
     } else if (value == 32) {
         filter->setApplyOnExplicit(false);
         filter->setApplyOnOutbound(true);
         filter->setApplyOnInbound(false);
-        //checking mail after classification
+        // checking mail after classification
     } else if (value == 48) {
         filter->setApplyOnExplicit(true);
         filter->setApplyOnOutbound(true);
         filter->setApplyOnInbound(false);
-        //checking mail after classification or manual check
+        // checking mail after classification or manual check
     } else {
         qCDebug(MAILCOMMON_LOG) << " type value is not valid :" << value;
     }
@@ -451,6 +451,6 @@ QString FilterImporterThunderbird::cleanArgument(const QString &line, const QStr
     QString str = line;
     str.remove(removeStr);
     str.remove(QStringLiteral("\""));
-    str.remove(str.length(), 1);   //remove last "
+    str.remove(str.length(), 1); // remove last "
     return str;
 }

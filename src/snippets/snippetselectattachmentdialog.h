@@ -7,9 +7,10 @@
 #ifndef SNIPPETSELECTATTACHMENTDIALOG_H
 #define SNIPPETSELECTATTACHMENTDIALOG_H
 
-#include <QDialog>
 #include "mailcommon_private_export.h"
-namespace MailCommon {
+#include <QDialog>
+namespace MailCommon
+{
 class SnippetSelectAttachmentWidget;
 class MAILCOMMON_TESTS_EXPORT SnippetSelectAttachmentDialog : public QDialog
 {

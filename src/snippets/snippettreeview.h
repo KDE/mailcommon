@@ -10,14 +10,15 @@
 #ifndef MAILCOMMON_SNIPPETTREEVIEW_H
 #define MAILCOMMON_SNIPPETTREEVIEW_H
 
-#include <QTreeView>
 #include "mailcommon_export.h"
+#include <QTreeView>
 
 class KActionCollection;
 
 class QContextMenuEvent;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class SnippetsManager;
 struct SnippetInfo;
 /**

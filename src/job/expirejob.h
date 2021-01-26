@@ -14,7 +14,8 @@
 
 class KJob;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class ExpireJob : public ScheduledJob
 {
     Q_OBJECT

@@ -17,7 +17,8 @@ class QKeyEvent;
 
 class KJob;
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * A widget that contains a QLineEdit which shows the current folder
  * and a button that fires a FolderSelectionDialog

@@ -7,11 +7,12 @@
 #ifndef INVALIDFILTERDIALOG_H
 #define INVALIDFILTERDIALOG_H
 
-#include "mailcommon_private_export.h"
 #include "invalidfilterinfo.h"
+#include "mailcommon_private_export.h"
 #include <QDialog>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class InvalidFilterWidget;
 class InvalidFilterInfoWidget;
 class MAILCOMMON_TESTS_EXPORT InvalidFilterDialog : public QDialog
@@ -22,6 +23,7 @@ public:
     ~InvalidFilterDialog();
 
     void setInvalidFilters(const QVector<InvalidFilterInfo> &lst);
+
 private:
     void writeConfig();
     void readConfig();

@@ -12,7 +12,8 @@
 
 #include <gpgme++/global.h>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterActionWithCrypto : public FilterAction
 {
     Q_OBJECT

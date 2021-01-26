@@ -7,10 +7,11 @@
 #ifndef SNIPPETCUSTOMFILEATTACHMENTNAMEDIALOG_H
 #define SNIPPETCUSTOMFILEATTACHMENTNAMEDIALOG_H
 
-#include <QDialog>
 #include "mailcommon_private_export.h"
+#include <QDialog>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class SnippetCustomFileAttachmentNameWidget;
 class MAILCOMMON_TESTS_EXPORT SnippetCustomFileAttachmentNameDialog : public QDialog
 {

@@ -9,21 +9,23 @@
 
 #include "mailcommon_export.h"
 
-#include <KSharedConfig>
 #include <KIO/Job>
+#include <KSharedConfig>
 
 #include <QModelIndex>
 #include <QObject>
 
 class QAbstractItemModel;
 
-namespace Akonadi {
+namespace Akonadi
+{
 class ChangeRecorder;
 class Collection;
 class Session;
 }
 
-namespace MailCommon {
+namespace MailCommon
+{
 class FolderCollectionMonitorPrivate;
 /**
  * @brief The FolderCollectionMonitor class

@@ -5,9 +5,12 @@
 */
 
 #include "foldercollectionmonitor.h"
-#include "util/mailutil.h"
+#include "collectionpage/attributes/expirecollectionattribute.h"
 #include "foldersettings.h"
 #include "mailcommon_debug.h"
+#include "util/mailutil.h"
+#include <Akonadi/KMime/MessageParts>
+#include <AkonadiCore/entityannotationsattribute.h>
 #include <ChangeRecorder>
 #include <Collection>
 #include <CollectionFetchScope>
@@ -16,9 +19,6 @@
 #include <ItemDeleteJob>
 #include <ItemFetchJob>
 #include <ItemFetchScope>
-#include "collectionpage/attributes/expirecollectionattribute.h"
-#include <Akonadi/KMime/MessageParts>
-#include <AkonadiCore/entityannotationsattribute.h>
 
 #include <KMime/KMimeMessage>
 
@@ -74,9 +74,7 @@ void FolderCollectionMonitor::expireAllCollection(const QAbstractItemModel *mode
     const int rowCount = model->rowCount(parentIndex);
     for (int row = 0; row < rowCount; ++row) {
         const QModelIndex index = model->index(row, 0, parentIndex);
-        const Akonadi::Collection collection
-            = model->data(
-                  index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const Akonadi::Collection collection = model->data(index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
         if (!collection.isValid() || Util::isVirtualCollection(collection)) {
             continue;

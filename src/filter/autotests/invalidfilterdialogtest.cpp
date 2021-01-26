@@ -6,10 +6,10 @@
 
 #include "invalidfilterdialogtest.h"
 #include "../filter/invalidfilters/invalidfilterdialog.h"
-#include <QTest>
-#include "../filter/invalidfilters/invalidfilterwidget.h"
 #include "../filter/invalidfilters/invalidfilterinfowidget.h"
+#include "../filter/invalidfilters/invalidfilterwidget.h"
 #include <QStandardPaths>
+#include <QTest>
 
 InvalidFilterDialogTest::InvalidFilterDialogTest(QObject *parent)
     : QObject(parent)

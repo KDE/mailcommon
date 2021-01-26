@@ -21,7 +21,8 @@
 // This is for debugging purposes only, don't commit with it.
 //#define DEBUG_SCHEDULER
 
-namespace MailCommon {
+namespace MailCommon
+{
 class FolderJob;
 class ScheduledJob;
 
@@ -37,7 +38,7 @@ public:
      * Creates a scheduled task for a given folder.
      * If @p immediate is true, the scheduler will run this task as soon
      * as possible (but won't interrupt a currently running job for it).
-    */
+     */
     ScheduledTask(const Akonadi::Collection &folder, bool immediate);
     virtual ~ScheduledTask();
 
@@ -49,7 +50,7 @@ public:
      * Otherwise (if the open() is delayed) an unrelated open() could happen first
      * and mess things up.
      * If for some reason (e.g. a folder is deleted) nothing should be done, return 0.
-    */
+     */
     virtual ScheduledJob *run() = 0;
 
     /**
@@ -62,7 +63,7 @@ public:
 
     /**
      * The folder which this task is supposed to handle, 0 if it was deleted meanwhile.
-    */
+     */
     Q_REQUIRED_RESULT Akonadi::Collection folder() const
     {
         return mCurrentFolder;
@@ -96,7 +97,7 @@ public:
     /**
      * Register a task to be done for a given folder. The ownership of the task is transferred
      * to the JobScheduler.
-    */
+     */
     void registerTask(ScheduledTask *task);
 
     // D-Bus calls, called from KMKernel
@@ -114,6 +115,7 @@ private:
     void runTaskNow(ScheduledTask *task);
     using TaskList = QVector<ScheduledTask *>;
     void removeTask(TaskList::Iterator &it);
+
 private:
     TaskList mTaskList; // FIFO of tasks to be run
 

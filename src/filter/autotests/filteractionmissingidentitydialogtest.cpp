@@ -5,14 +5,14 @@
 */
 
 #include "filteractionmissingidentitydialogtest.h"
-#include "../filter/dialog/filteractionmissingidentitydialog.h"
 #include "../../autotests/dummykernel.h"
 #include "../../kernel/mailkernel.h"
-#include <QDialogButtonBox>
-#include <QStandardPaths>
-#include <QLabel>
-#include <QTest>
+#include "../filter/dialog/filteractionmissingidentitydialog.h"
 #include <KIdentityManagement/IdentityCombo>
+#include <QDialogButtonBox>
+#include <QLabel>
+#include <QStandardPaths>
+#include <QTest>
 
 FilterActionMissingIdentityDialogTest::FilterActionMissingIdentityDialogTest(QObject *parent)
     : QObject(parent)
@@ -27,8 +27,8 @@ FilterActionMissingIdentityDialogTest::~FilterActionMissingIdentityDialogTest()
 void FilterActionMissingIdentityDialogTest::initTestCase()
 {
     auto kernel = new DummyKernel(nullptr);
-    CommonKernel->registerKernelIf(kernel);   //register KernelIf early, it is used by the Filter classes
-    CommonKernel->registerSettingsIf(kernel);   //SettingsIf is used in FolderTreeWidget
+    CommonKernel->registerKernelIf(kernel); // register KernelIf early, it is used by the Filter classes
+    CommonKernel->registerSettingsIf(kernel); // SettingsIf is used in FolderTreeWidget
 }
 
 void FilterActionMissingIdentityDialogTest::shouldHaveDefaultValue()

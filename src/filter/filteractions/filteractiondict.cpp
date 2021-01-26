@@ -13,8 +13,8 @@
 #include "filteractioncopy.h"
 #include "filteractiondecrypt.h"
 #include "filteractiondelete.h"
-#include "filteractionexec.h"
 #include "filteractionencrypt.h"
+#include "filteractionexec.h"
 #include "filteractionforward.h"
 #include "filteractionmove.h"
 #include "filteractionpipethrough.h"
@@ -72,7 +72,7 @@ void FilterActionDict::init()
 // The int in the QDict constructor (41) must be a prime
 // and should be greater than the double number of FilterAction types
 FilterActionDict::FilterActionDict()
-    : QMultiHash<QString, FilterActionDesc * >()
+    : QMultiHash<QString, FilterActionDesc *>()
 {
     init();
 }

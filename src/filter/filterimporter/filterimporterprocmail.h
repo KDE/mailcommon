@@ -13,7 +13,8 @@
 
 class QFile;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MailFilter;
 
 class FilterImporterProcmail : public FilterImporterAbstract

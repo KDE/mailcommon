@@ -11,7 +11,8 @@
 
 #include "mailcommon_private_export.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MailFilter;
 class MAILCOMMON_TESTS_EXPORT KMFilterAccountList : public QTreeWidget
 {

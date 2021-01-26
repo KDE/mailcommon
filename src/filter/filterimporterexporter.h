@@ -13,12 +13,13 @@
 #include <KSharedConfig>
 #include <QUrl>
 
-#include <QVector>
 #include <QStringList>
+#include <QVector>
 
 class QWidget;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MailFilter;
 
 /**
@@ -65,14 +66,13 @@ public:
      * Imports filters. Ask the user where to import them from
      * and which filters to import.
      */
-    Q_REQUIRED_RESULT QVector<MailFilter *> importFilters(
-        bool &canceled, FilterImporterExporter::FilterType type = FilterImporterExporter::KMailFilter, const QString &filename = QString());
+    Q_REQUIRED_RESULT QVector<MailFilter *>
+    importFilters(bool &canceled, FilterImporterExporter::FilterType type = FilterImporterExporter::KMailFilter, const QString &filename = QString());
 
     /**
      * Writes the given list of @p filters to the given @p config file.
      */
-    static void writeFiltersToConfig(
-        const QVector<MailFilter *> &filters, KSharedConfig::Ptr config, bool exportFilter = false);
+    static void writeFiltersToConfig(const QVector<MailFilter *> &filters, KSharedConfig::Ptr config, bool exportFilter = false);
 
     /**
      * Reads a list of filters from the given @p config file.

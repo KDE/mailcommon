@@ -6,8 +6,8 @@
 
 #include "itemcontexttest.h"
 #include "../itemcontext.h"
-#include <QTest>
 #include <AkonadiCore/Item>
+#include <QTest>
 ItemContextTest::ItemContextTest(QObject *parent)
     : QObject(parent)
 {

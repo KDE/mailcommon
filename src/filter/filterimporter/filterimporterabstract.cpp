@@ -4,14 +4,14 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#include "mailcommon_debug.h"
 #include "filterimporterabstract.h"
 #include "filter/filteractions/filteractiondict.h"
 #include "filter/filtermanager.h"
 #include "filter/mailfilter.h"
+#include "mailcommon_debug.h"
 
-#include <QFile>
 #include <QDomDocument>
+#include <QFile>
 
 using namespace MailCommon;
 
@@ -40,7 +40,7 @@ void FilterImporterAbstract::appendFilter(MailCommon::MailFilter *filter)
         return;
     }
 
-    //TODO verify number of condition
+    // TODO verify number of condition
     filter->purify();
     if (!filter->isEmpty()) {
         // the filter is valid:
@@ -84,8 +84,7 @@ bool FilterImporterAbstract::loadDomElement(QDomDocument &doc, QFile *file)
     int errorRow;
     int errorCol;
     if (!doc.setContent(file, &errorMsg, &errorRow, &errorCol)) {
-        qCDebug(MAILCOMMON_LOG) << "Unable to load document.Parse error in line " << errorRow
-                                << ", col " << errorCol << ": " << errorMsg;
+        qCDebug(MAILCOMMON_LOG) << "Unable to load document.Parse error in line " << errorRow << ", col " << errorCol << ": " << errorMsg;
         return false;
     }
     return true;

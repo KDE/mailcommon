@@ -7,8 +7,8 @@
 
 #include "filteractiondelete.h"
 
-#include <KLocalizedString>
 #include <KColorScheme>
+#include <KLocalizedString>
 
 #include <QLabel>
 

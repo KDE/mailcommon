@@ -5,17 +5,17 @@
 */
 
 #include "addtagdialog.h"
-#include "tag/tagwidget.h"
 #include "mailcommon_debug.h"
+#include "tag/tagwidget.h"
 
-#include <KLocalizedString>
-#include <QLineEdit>
-#include <KMessageBox>
 #include <KJob>
+#include <KLocalizedString>
+#include <KMessageBox>
+#include <QLineEdit>
 
-#include <QVBoxLayout>
 #include <QDialogButtonBox>
 #include <QPushButton>
+#include <QVBoxLayout>
 
 using namespace MailCommon;
 class MailCommon::AddTagDialogPrivate

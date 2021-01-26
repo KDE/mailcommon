@@ -4,12 +4,12 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 #include "searchrule.h"
-#include "searchrule/searchrulenumerical.h"
-#include "searchrule/searchruledate.h"
-#include "searchrule/searchrulestring.h"
-#include "searchrule/searchrulestatus.h"
-#include "searchrule/searchruleencryption.h"
 #include "mailcommon_debug.h"
+#include "searchrule/searchruledate.h"
+#include "searchrule/searchruleencryption.h"
+#include "searchrule/searchrulenumerical.h"
+#include "searchrule/searchrulestatus.h"
+#include "searchrule/searchrulestring.h"
 
 #include <KMime/KMimeMessage>
 
@@ -22,20 +22,28 @@
 
 using namespace MailCommon;
 
-static const char *const funcConfigNames[] = {
-    "contains", "contains-not",
-    "equals", "not-equal",
-    "regexp", "not-regexp",
-    "greater", "less-or-equal", "less", "greater-or-equal",
-    "is-in-addressbook", "is-not-in-addressbook",
-    "is-in-category", "is-not-in-category",
-    "has-attachment", "has-no-attachment",
-    "start-with", "not-start-with",
-    "end-with", "not-end-with"
-};
+static const char *const funcConfigNames[] = {"contains",
+                                              "contains-not",
+                                              "equals",
+                                              "not-equal",
+                                              "regexp",
+                                              "not-regexp",
+                                              "greater",
+                                              "less-or-equal",
+                                              "less",
+                                              "greater-or-equal",
+                                              "is-in-addressbook",
+                                              "is-not-in-addressbook",
+                                              "is-in-category",
+                                              "is-not-in-category",
+                                              "has-attachment",
+                                              "has-no-attachment",
+                                              "start-with",
+                                              "not-start-with",
+                                              "end-with",
+                                              "not-end-with"};
 
-static const int numFuncConfigNames
-    = sizeof funcConfigNames / sizeof *funcConfigNames;
+static const int numFuncConfigNames = sizeof funcConfigNames / sizeof *funcConfigNames;
 
 //==================================================
 //
@@ -110,7 +118,7 @@ SearchRule::Ptr SearchRule::createInstanceFromConfig(const KConfigGroup &config,
     Function func2 = configValueToFunc(config.readEntry(func + cIdx, QString()).toLatin1().constData());
     const QString &contents2 = config.readEntry(contents + cIdx, QString());
 
-    if (field2 == "<To or Cc>") {   // backwards compat
+    if (field2 == "<To or Cc>") { // backwards compat
         return SearchRule::createInstance("<recipients>", func2, contents2);
     } else {
         return SearchRule::createInstance(field2, func2, contents2);
@@ -282,32 +290,33 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         case FuncContainsNot:
         case FuncRegExp:
         case FuncNotRegExp:
-            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1String(mField), conditionToString(mFunction)) + QLatin1Char('"');
+            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1String(mField), conditionToString(mFunction))
+                + QLatin1Char('"');
             return;
         }
         code += QStringLiteral("size %1 %2K").arg(comparaison).arg(QString::number(mContents.toInt() + offset));
     } else if (mField == "<status>") {
-        //TODO ?
+        // TODO ?
         code += QLatin1Char('"') + i18n("<status> not implemented/supported") + QLatin1Char('"');
     } else if (mField == "<any header>") {
-        //TODO ?
+        // TODO ?
         code += QLatin1Char('"') + i18n("<any header> not implemented/supported") + QLatin1Char('"');
     } else if (mField == "contents") {
-        //TODO ?
+        // TODO ?
         code += QLatin1Char('"') + i18n("<contents> not implemented/supported") + QLatin1Char('"');
     } else if (mField == "<age in days>") {
-        //TODO ?
+        // TODO ?
         code += QLatin1Char('"') + i18n("<age in days> not implemented/supported") + QLatin1Char('"');
     } else if (mField == "<date>") {
-        //TODO ?
+        // TODO ?
         code += QLatin1Char('"') + i18n("<date> not implemented/supported") + QLatin1Char('"');
     } else if (mField == "<recipients>") {
-        //TODO ?
+        // TODO ?
         code += QLatin1Char('"') + i18n("<recipients> not implemented/supported") + QLatin1Char('"');
     } else if (mField == "<tag>") {
         code += QLatin1Char('"') + i18n("<Tag> is not supported") + QLatin1Char('"');
     } else if (mField == "<message>") {
-        //TODO ?
+        // TODO ?
         code += i18n("<message> not implemented/supported");
     } else if (mField == "<body>") {
         if (!requireModules.contains(QLatin1String("body"))) {
@@ -388,7 +397,8 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         case FuncIsNotInCategory:
         case FuncHasAttachment:
         case FuncHasNoAttachment:
-            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1String(mField), conditionToString(mFunction)) + QLatin1Char('"');
+            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1String(mField), conditionToString(mFunction))
+                + QLatin1Char('"');
             return;
         }
         code += (negative ? QStringLiteral("not ") : QString()) + QStringLiteral("body :text %1 \"%2\"").arg(comparaison, contentStr);
@@ -469,10 +479,12 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         case FuncIsNotInCategory:
         case FuncHasAttachment:
         case FuncHasNoAttachment:
-            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1String(mField), conditionToString(mFunction)) + QLatin1Char('"');
+            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1String(mField), conditionToString(mFunction))
+                + QLatin1Char('"');
             return;
         }
-        code += (negative ? QStringLiteral("not ") : QString()) + QStringLiteral("header %1 \"%2\" \"%3\"").arg(comparaison).arg(QLatin1String(mField)).arg(contentStr);
+        code += (negative ? QStringLiteral("not ") : QString())
+            + QStringLiteral("header %1 \"%2\" \"%3\"").arg(comparaison).arg(QLatin1String(mField)).arg(contentStr);
     }
 }
 
@@ -540,14 +552,14 @@ Akonadi::SearchTerm::Condition SearchRule::akonadiComparator() const
 
     case SearchRule::FuncRegExp:
     case SearchRule::FuncNotRegExp:
-        //TODO is this sufficient?
+        // TODO is this sufficient?
         return Akonadi::SearchTerm::CondContains;
 
     case SearchRule::FuncStartWith:
     case SearchRule::FuncNotStartWith:
     case SearchRule::FuncEndWith:
     case SearchRule::FuncNotEndWith:
-        //TODO is this sufficient?
+        // TODO is this sufficient?
         return Akonadi::SearchTerm::CondContains;
     default:
         qCDebug(MAILCOMMON_LOG) << "Unhandled function type: " << function();
@@ -575,7 +587,7 @@ bool SearchRule::isNegated() const
     return negate;
 }
 
-QDataStream &SearchRule::operator >>(QDataStream &s) const
+QDataStream &SearchRule::operator>>(QDataStream &s) const
 {
     s << mField << functionToString(mFunction) << mContents;
     return s;

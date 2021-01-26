@@ -5,25 +5,25 @@
 */
 
 #include "accountconfigorderdialog.h"
-#include "mailcommonsettings_base.h"
-#include <PimCommon/PimUtil>
-#include "util/mailutil.h"
 #include "mailcommon_debug.h"
+#include "mailcommonsettings_base.h"
+#include "util/mailutil.h"
 #include <KLocalizedString>
+#include <PimCommon/PimUtil>
+#include <QIcon>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include <QIcon>
 
 #include <AkonadiCore/AgentInstance>
 #include <AkonadiCore/AgentManager>
 
 #include <KMime/KMimeMessage>
 
-#include <QListWidget>
-#include <QHBoxLayout>
-#include <QCheckBox>
 #include <KConfigGroup>
+#include <QCheckBox>
 #include <QDialogButtonBox>
+#include <QHBoxLayout>
+#include <QListWidget>
 
 using namespace MailCommon;
 
@@ -86,7 +86,7 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(MailCommon::MailCommonSetting
     upDownBoxVBoxLayout->addWidget(d->mUpButton);
     d->mUpButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
     d->mUpButton->setToolTip(i18nc("Move selected account up.", "Up"));
-    d->mUpButton->setEnabled(false);   // b/c no item is selected yet
+    d->mUpButton->setEnabled(false); // b/c no item is selected yet
     d->mUpButton->setFocusPolicy(Qt::StrongFocus);
     d->mUpButton->setAutoRepeat(true);
 
@@ -94,7 +94,7 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(MailCommon::MailCommonSetting
     upDownBoxVBoxLayout->addWidget(d->mDownButton);
     d->mDownButton->setIcon(QIcon::fromTheme(QStringLiteral("go-down")));
     d->mDownButton->setToolTip(i18nc("Move selected account down.", "Down"));
-    d->mDownButton->setEnabled(false);   // b/c no item is selected yet
+    d->mDownButton->setEnabled(false); // b/c no item is selected yet
     d->mDownButton->setFocusPolicy(Qt::StrongFocus);
     d->mDownButton->setAutoRepeat(true);
 

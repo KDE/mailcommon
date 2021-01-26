@@ -7,10 +7,11 @@
 #ifndef COLLECTIONEXPIRYJOB_H
 #define COLLECTIONEXPIRYJOB_H
 
-#include <QObject>
 #include <AkonadiCore/Collection>
+#include <QObject>
 class KJob;
-namespace MailCommon {
+namespace MailCommon
+{
 class CollectionExpiryJob : public QObject
 {
     Q_OBJECT

@@ -11,16 +11,16 @@
 
 #include <MessageCore/MessageCoreSettings>
 
+#include <AkonadiWidgets/CollectionStatisticsDelegate>
+#include <KActionCollection>
+#include <KActionMenu>
 #include <KLocalizedString>
 #include <KXMLGUIClient>
-#include <KActionMenu>
-#include <KActionCollection>
-#include <AkonadiWidgets/CollectionStatisticsDelegate>
 
-#include <QPainter>
 #include <QFontDatabase>
-#include <QMouseEvent>
 #include <QMimeData>
+#include <QMouseEvent>
+#include <QPainter>
 
 using namespace MailCommon;
 
@@ -87,11 +87,11 @@ void FavoriteCollectionWidget::createMenu(KActionCollection *ac)
     auto iconSizeMenu = new KActionMenu(i18n("Icon size"), this);
     ac->addAction(QStringLiteral("favorite_icon_size"), iconSizeMenu);
 
-    static const int icon_sizes[] = { 16, 22, 32 /*, 48, 64, 128 */ };
+    static const int icon_sizes[] = {16, 22, 32 /*, 48, 64, 128 */};
 
     auto grp = new QActionGroup(iconSizeMenu);
     QAction *act = nullptr;
-    for (int i  : icon_sizes) {
+    for (int i : icon_sizes) {
         act = new QAction(QStringLiteral("%1x%2").arg(i).arg(i), iconSizeMenu);
         iconSizeMenu->addAction(act);
         act->setCheckable(true);
@@ -130,7 +130,7 @@ void FavoriteCollectionWidget::createMenu(KActionCollection *ac)
 
 void FavoriteCollectionWidget::slotChangeMode(bool)
 {
-    auto act = qobject_cast< QAction * >(sender());
+    auto act = qobject_cast<QAction *>(sender());
     if (!act) {
         return;
     }
@@ -165,7 +165,7 @@ void FavoriteCollectionWidget::changeViewMode(QListView::ViewMode mode)
 
 void FavoriteCollectionWidget::slotChangeIconSize(bool)
 {
-    auto act = qobject_cast< QAction * >(sender());
+    auto act = qobject_cast<QAction *>(sender());
     if (!act) {
         return;
     }

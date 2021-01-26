@@ -10,7 +10,8 @@
 
 #include "filteractionwithstringlist.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionSendFakeDisposition - send fake MDN
 // Sends a fake MDN or forces an ignore.

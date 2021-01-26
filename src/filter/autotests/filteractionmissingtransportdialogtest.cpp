@@ -9,8 +9,8 @@
 
 #include <QDialogButtonBox>
 #include <QLabel>
-#include <QTest>
 #include <QStandardPaths>
+#include <QTest>
 
 #include <MailTransport/TransportComboBox>
 

@@ -12,7 +12,8 @@
 #include <AkonadiCore/Item>
 
 class KConfigGroup;
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @short This class represents one search pattern rule.
  * Incoming mail is sent through the list of mail filter
@@ -66,8 +67,8 @@ public:
      * @brief Possible required parts.
      */
     enum RequiredPart {
-        Envelope = 0,   ///< Envelope
-        Header,         ///< Header
+        Envelope = 0, ///< Envelope
+        Header, ///< Header
         CompleteMessage ///< Whole message
     };
 

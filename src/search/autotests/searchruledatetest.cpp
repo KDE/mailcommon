@@ -5,9 +5,9 @@
 */
 
 #include "searchruledatetest.h"
-#include <QTest>
 #include "../searchrule/searchruledate.h"
 #include <KMime/Message>
+#include <QTest>
 Q_DECLARE_METATYPE(MailCommon::SearchRule::Function)
 SearchRuleDateTest::SearchRuleDateTest(QObject *parent)
     : QObject(parent)
@@ -44,26 +44,26 @@ void SearchRuleDateTest::shouldMatchDate_data()
     QTest::addColumn<QDate>("maildate");
     QTest::addColumn<QDate>("matchdate");
     QTest::addColumn<bool>("match");
-    QTest::newRow("equaldontmatch") << MailCommon::SearchRule::FuncEquals  << QDate(2015, 5, 5) << QDate(2015, 5, 6) << false;
-    QTest::newRow("equalmatch") << MailCommon::SearchRule::FuncEquals  << QDate(2015, 5, 5) << QDate(2015, 5, 5) << true;
-    QTest::newRow("notequalnotmatch") << MailCommon::SearchRule::FuncNotEqual  << QDate(2015, 5, 5) << QDate(2015, 5, 5) << false;
-    QTest::newRow("notequalmatch") << MailCommon::SearchRule::FuncNotEqual  << QDate(2015, 5, 5) << QDate(2015, 5, 6) << true;
+    QTest::newRow("equaldontmatch") << MailCommon::SearchRule::FuncEquals << QDate(2015, 5, 5) << QDate(2015, 5, 6) << false;
+    QTest::newRow("equalmatch") << MailCommon::SearchRule::FuncEquals << QDate(2015, 5, 5) << QDate(2015, 5, 5) << true;
+    QTest::newRow("notequalnotmatch") << MailCommon::SearchRule::FuncNotEqual << QDate(2015, 5, 5) << QDate(2015, 5, 5) << false;
+    QTest::newRow("notequalmatch") << MailCommon::SearchRule::FuncNotEqual << QDate(2015, 5, 5) << QDate(2015, 5, 6) << true;
 
-    QTest::newRow("isgreatermatch") << MailCommon::SearchRule::FuncIsGreater  << QDate(2015, 5, 5) << QDate(2015, 5, 4) << true;
-    QTest::newRow("isgreaternotmatch") << MailCommon::SearchRule::FuncIsGreater  << QDate(2015, 5, 5) << QDate(2015, 5, 6) << false;
-    QTest::newRow("isgreaternotmatchequalvalue") << MailCommon::SearchRule::FuncIsGreater  << QDate(2015, 5, 5) << QDate(2015, 5, 5) << false;
+    QTest::newRow("isgreatermatch") << MailCommon::SearchRule::FuncIsGreater << QDate(2015, 5, 5) << QDate(2015, 5, 4) << true;
+    QTest::newRow("isgreaternotmatch") << MailCommon::SearchRule::FuncIsGreater << QDate(2015, 5, 5) << QDate(2015, 5, 6) << false;
+    QTest::newRow("isgreaternotmatchequalvalue") << MailCommon::SearchRule::FuncIsGreater << QDate(2015, 5, 5) << QDate(2015, 5, 5) << false;
 
-    QTest::newRow("islessorequalmatch") << MailCommon::SearchRule::FuncIsLessOrEqual  << QDate(2015, 5, 5) << QDate(2015, 5, 6) << true;
-    QTest::newRow("islessorequalmatch equal") << MailCommon::SearchRule::FuncIsLessOrEqual  << QDate(2015, 5, 5) << QDate(2015, 5, 5) << true;
-    QTest::newRow("islessorequalnotmatch") << MailCommon::SearchRule::FuncIsLessOrEqual  << QDate(2015, 5, 7) << QDate(2015, 5, 5) << false;
+    QTest::newRow("islessorequalmatch") << MailCommon::SearchRule::FuncIsLessOrEqual << QDate(2015, 5, 5) << QDate(2015, 5, 6) << true;
+    QTest::newRow("islessorequalmatch equal") << MailCommon::SearchRule::FuncIsLessOrEqual << QDate(2015, 5, 5) << QDate(2015, 5, 5) << true;
+    QTest::newRow("islessorequalnotmatch") << MailCommon::SearchRule::FuncIsLessOrEqual << QDate(2015, 5, 7) << QDate(2015, 5, 5) << false;
 
-    QTest::newRow("islessmatch") << MailCommon::SearchRule::FuncIsLess  << QDate(2015, 5, 4) << QDate(2015, 5, 5) << true;
-    QTest::newRow("islessnotmatch") << MailCommon::SearchRule::FuncIsLess  << QDate(2015, 5, 5) << QDate(2015, 5, 4) << false;
-    QTest::newRow("islessnotmatchequalvalue") << MailCommon::SearchRule::FuncIsLess  << QDate(2015, 5, 5) << QDate(2015, 5, 5) << false;
+    QTest::newRow("islessmatch") << MailCommon::SearchRule::FuncIsLess << QDate(2015, 5, 4) << QDate(2015, 5, 5) << true;
+    QTest::newRow("islessnotmatch") << MailCommon::SearchRule::FuncIsLess << QDate(2015, 5, 5) << QDate(2015, 5, 4) << false;
+    QTest::newRow("islessnotmatchequalvalue") << MailCommon::SearchRule::FuncIsLess << QDate(2015, 5, 5) << QDate(2015, 5, 5) << false;
 
-    QTest::newRow("isgreaterorequalmatch") << MailCommon::SearchRule::FuncIsGreaterOrEqual  << QDate(2015, 5, 6) << QDate(2015, 5, 5) << true;
-    QTest::newRow("isgreaterorequalmatch equal") << MailCommon::SearchRule::FuncIsGreaterOrEqual  << QDate(2015, 5, 5) << QDate(2015, 5, 5) << true;
-    QTest::newRow("isgreaterorequalnotmatch") << MailCommon::SearchRule::FuncIsGreaterOrEqual  << QDate(2015, 5, 5) << QDate(2015, 5, 7) << false;
+    QTest::newRow("isgreaterorequalmatch") << MailCommon::SearchRule::FuncIsGreaterOrEqual << QDate(2015, 5, 6) << QDate(2015, 5, 5) << true;
+    QTest::newRow("isgreaterorequalmatch equal") << MailCommon::SearchRule::FuncIsGreaterOrEqual << QDate(2015, 5, 5) << QDate(2015, 5, 5) << true;
+    QTest::newRow("isgreaterorequalnotmatch") << MailCommon::SearchRule::FuncIsGreaterOrEqual << QDate(2015, 5, 5) << QDate(2015, 5, 7) << false;
 }
 
 void SearchRuleDateTest::shouldMatchDate()

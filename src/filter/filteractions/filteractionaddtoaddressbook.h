@@ -10,7 +10,8 @@
 
 #include "filteractionwithstringlist.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionAddToAddressBook
 // - add email address from header to address book
@@ -36,14 +37,9 @@ public:
     void argsFromString(const QString &argsStr) override;
 
     Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
+
 private:
-    enum HeaderType {
-        FromHeader,
-        ToHeader,
-        CcHeader,
-        BccHeader,
-        UnknownHeader
-    };
+    enum HeaderType { FromHeader, ToHeader, CcHeader, BccHeader, UnknownHeader };
 
     const QString mFromStr, mToStr, mCCStr, mBCCStr;
     HeaderType mHeaderType;

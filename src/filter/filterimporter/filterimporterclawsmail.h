@@ -13,7 +13,8 @@
 class QFile;
 class QTextStream;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MailFilter;
 
 class MAILCOMMON_EXPORT FilterImporterClawsMails : public FilterImporterAbstract
@@ -21,7 +22,7 @@ class MAILCOMMON_EXPORT FilterImporterClawsMails : public FilterImporterAbstract
 public:
     explicit FilterImporterClawsMails(QFile *file);
     FilterImporterClawsMails(QString string);
-    //Use for unittests
+    // Use for unittests
     FilterImporterClawsMails(bool interactive = false);
     ~FilterImporterClawsMails();
     static QString defaultFiltersSettingsPath();

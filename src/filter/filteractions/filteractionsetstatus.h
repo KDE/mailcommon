@@ -9,7 +9,8 @@
 #define MAILCOMMON_FILTERACTIONSETSTATUS_H
 
 #include "filteractionstatus.h"
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionSetStatus - set status to
 // Set the status of messages

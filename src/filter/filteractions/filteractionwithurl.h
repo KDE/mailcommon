@@ -11,7 +11,8 @@
 #include "filteraction.h"
 #include <QToolButton>
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @short Abstract base class for filter actions with a command line as parameter.
  *
@@ -96,6 +97,7 @@ public:
 
 protected:
     QString mParameter;
+
 private:
     mutable FilterActionWithUrlHelpButton *mHelpButton = nullptr;
 private Q_SLOTS:

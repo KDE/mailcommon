@@ -18,7 +18,8 @@ class QAbstractItemModel;
 class QModelIndex;
 class QPushButton;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class SnippetWidget;
 class SnippetDialog : public QDialog
 {

@@ -9,9 +9,9 @@
 #include "filter/itemcontext.h"
 
 #include <KLineEdit>
+#include <QComboBox>
 #include <QLabel>
 #include <QTest>
-#include <QComboBox>
 
 FilterActionAddHeaderTest::FilterActionAddHeaderTest(QObject *parent)
     : QObject(parent)
@@ -42,9 +42,9 @@ void FilterActionAddHeaderTest::shouldAddValue_data()
     QTest::addColumn<QString>("argsinput");
     QTest::addColumn<QString>("resultheader");
     QTest::addColumn<QString>("resultvalue");
-    QTest::newRow("empty") <<  QString() << QString() << QString();
+    QTest::newRow("empty") << QString() << QString() << QString();
     QString val = QLatin1String("bla") + QLatin1Char('\t') + QLatin1String("blo");
-    QTest::newRow("real value") <<  val << QStringLiteral("bla") << QStringLiteral("blo");
+    QTest::newRow("real value") << val << QStringLiteral("bla") << QStringLiteral("blo");
 }
 
 void FilterActionAddHeaderTest::shouldClearWidget()
@@ -110,21 +110,23 @@ void FilterActionAddHeaderTest::shouldNotExecuteActionWhenValueIsEmpty()
 
 void FilterActionAddHeaderTest::shouldAddNewHeaderWhenNotExistingHeader()
 {
-    const QByteArray data = "From: foo@kde.org\n"
-                            "To: foo@kde.org\n"
-                            "Subject: test\n"
-                            "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
-                            "MIME-Version: 1.0\n"
-                            "\n"
-                            "test";
-    const QByteArray output = "From: foo@kde.org\n"
-                              "To: foo@kde.org\n"
-                              "Subject: test\n"
-                              "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
-                              "MIME-Version: 1.0\n"
-                              "testheader: foo\n"
-                              "\n"
-                              "test";
+    const QByteArray data =
+        "From: foo@kde.org\n"
+        "To: foo@kde.org\n"
+        "Subject: test\n"
+        "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
+        "MIME-Version: 1.0\n"
+        "\n"
+        "test";
+    const QByteArray output =
+        "From: foo@kde.org\n"
+        "To: foo@kde.org\n"
+        "Subject: test\n"
+        "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
+        "MIME-Version: 1.0\n"
+        "testheader: foo\n"
+        "\n"
+        "test";
 
     MailCommon::FilterActionAddHeader filter(this);
     KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
@@ -144,22 +146,24 @@ void FilterActionAddHeaderTest::shouldAddNewHeaderWhenNotExistingHeader()
 
 void FilterActionAddHeaderTest::shouldReplaceHeaderWhenExistingHeader()
 {
-    const QByteArray data = "From: foo@kde.org\n"
-                            "To: foo@kde.org\n"
-                            "Subject: test\n"
-                            "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
-                            "MIME-Version: 1.0\n"
-                            "testheader: bla\n"
-                            "\n"
-                            "test";
-    const QByteArray output = "From: foo@kde.org\n"
-                              "To: foo@kde.org\n"
-                              "Subject: test\n"
-                              "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
-                              "MIME-Version: 1.0\n"
-                              "testheader: foo\n"
-                              "\n"
-                              "test";
+    const QByteArray data =
+        "From: foo@kde.org\n"
+        "To: foo@kde.org\n"
+        "Subject: test\n"
+        "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
+        "MIME-Version: 1.0\n"
+        "testheader: bla\n"
+        "\n"
+        "test";
+    const QByteArray output =
+        "From: foo@kde.org\n"
+        "To: foo@kde.org\n"
+        "Subject: test\n"
+        "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
+        "MIME-Version: 1.0\n"
+        "testheader: foo\n"
+        "\n"
+        "test";
 
     MailCommon::FilterActionAddHeader filter(this);
     KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());

@@ -13,10 +13,10 @@
 #include <AkonadiWidgets/TagWidget>
 
 #include <CollectionComboBox>
-#include <KContacts/Addressee>
-#include <KLocalizedString>
-#include <KEmailAddress>
 #include <KComboBox>
+#include <KContacts/Addressee>
+#include <KEmailAddress>
+#include <KLocalizedString>
 
 #include <QGridLayout>
 #include <QLabel>
@@ -127,8 +127,9 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
     collectionComboBox->setAccessRightsFilter(Akonadi::Collection::CanCreateItem);
 
     collectionComboBox->setObjectName(QStringLiteral("AddressBookComboBox"));
-    collectionComboBox->setToolTip(i18n("This defines the preferred address book.\n"
-                                        "If it is not accessible, the filter will fallback to the default address book."));
+    collectionComboBox->setToolTip(
+        i18n("This defines the preferred address book.\n"
+             "If it is not accessible, the filter will fallback to the default address book."));
     layout->addWidget(collectionComboBox, 1, 2);
     connect(headerCombo, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &FilterActionAddToAddressBook::filterActionModified);
     connect(collectionComboBox, QOverload<int>::of(&Akonadi::CollectionComboBox::activated), this, &FilterActionAddToAddressBook::filterActionModified);
@@ -139,15 +140,15 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
     return widget;
 }
 
-namespace {
+namespace
+{
 Akonadi::Tag::List namesToTags(const QStringList &names)
 {
     Akonadi::Tag::List tags;
     tags.reserve(names.size());
-    std::transform(names.cbegin(), names.cend(), std::back_inserter(tags),
-                   [](const QString &name) {
-            return Akonadi::Tag {name};
-        });
+    std::transform(names.cbegin(), names.cend(), std::back_inserter(tags), [](const QString &name) {
+        return Akonadi::Tag{name};
+    });
     return tags;
 }
 
@@ -155,8 +156,7 @@ QStringList tagsToNames(const Akonadi::Tag::List &tags)
 {
     QStringList names;
     names.reserve(tags.size());
-    std::transform(tags.cbegin(), tags.cend(), std::back_inserter(names),
-                   std::bind(&Akonadi::Tag::name, std::placeholders::_1));
+    std::transform(tags.cbegin(), tags.cend(), std::back_inserter(names), std::bind(&Akonadi::Tag::name, std::placeholders::_1));
     return names;
 }
 }
@@ -201,7 +201,10 @@ void FilterActionAddToAddressBook::applyParamWidgetValue(QWidget *paramWidget)
     // we use the previously 'stored' value from the 'collectionId' property
     if (collection.isValid()) {
         mCollectionId = collection.id();
-        connect(collectionComboBox, QOverload<int>::of(&Akonadi::CollectionComboBox::currentIndexChanged), this, &FilterActionAddToAddressBook::filterActionModified);
+        connect(collectionComboBox,
+                QOverload<int>::of(&Akonadi::CollectionComboBox::currentIndexChanged),
+                this,
+                &FilterActionAddToAddressBook::filterActionModified);
     } else {
         const QVariant value = collectionComboBox->property("collectionId");
         if (value.isValid()) {
@@ -257,7 +260,7 @@ void FilterActionAddToAddressBook::argsFromString(const QString &argsStr)
 #else
     const QStringList parts = argsStr.split(QLatin1Char('\t'), Qt::KeepEmptyParts);
 #endif
-    const QString firstElement = parts[ 0 ];
+    const QString firstElement = parts[0];
     if (firstElement == QLatin1String("From")) {
         mHeaderType = FromHeader;
     } else if (firstElement == QLatin1String("To")) {
@@ -270,13 +273,13 @@ void FilterActionAddToAddressBook::argsFromString(const QString &argsStr)
         mHeaderType = UnknownHeader;
     }
     if (parts.count() >= 2) {
-        mCollectionId = parts[ 1 ].toLongLong();
+        mCollectionId = parts[1].toLongLong();
     }
 
     if (parts.count() < 3) {
         mCategory.clear();
     } else {
-        mCategory = parts[ 2 ];
+        mCategory = parts[2];
     }
 }
 

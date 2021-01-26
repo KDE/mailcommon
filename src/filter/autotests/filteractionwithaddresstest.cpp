@@ -6,9 +6,9 @@
 
 #include "filteractionwithaddresstest.h"
 #include "../filteractions/filteractionwithaddress.h"
+#include <Akonadi/Contact/EmailAddressRequester>
 #include <QTest>
 #include <QWidget>
-#include <Akonadi/Contact/EmailAddressRequester>
 
 class TestFilterActionWithAddress : public MailCommon::FilterActionWithAddress
 {

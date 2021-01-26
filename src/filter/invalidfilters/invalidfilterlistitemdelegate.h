@@ -9,7 +9,8 @@
 
 #include <KWidgetItemDelegate>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class InvalidFilterListItemDelegate : public KWidgetItemDelegate
 {
     Q_OBJECT

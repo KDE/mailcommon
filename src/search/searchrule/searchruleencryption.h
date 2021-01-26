@@ -9,12 +9,12 @@
 
 #include "searchpattern.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 class SearchRuleEncryption : public SearchRule
 {
 public:
-    explicit SearchRuleEncryption(const QByteArray &field = {
-        }, Function func = FuncEquals, const QString &contents = {});
+    explicit SearchRuleEncryption(const QByteArray &field = {}, Function func = FuncEquals, const QString &contents = {});
     ~SearchRuleEncryption() override;
 
     bool isEmpty() const override;

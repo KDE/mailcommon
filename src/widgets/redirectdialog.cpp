@@ -19,12 +19,12 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 
+#include <KGuiItem>
+#include <QDialogButtonBox>
+#include <QFormLayout>
 #include <QLabel>
 #include <QPushButton>
 #include <QTreeView>
-#include <QFormLayout>
-#include <QDialogButtonBox>
-#include <KGuiItem>
 #include <QVBoxLayout>
 
 using namespace MailCommon;
@@ -38,11 +38,7 @@ public:
     {
     }
 
-    enum TypeAddress {
-        ResendTo,
-        ResendCc,
-        ResendBcc
-    };
+    enum TypeAddress { ResendTo, ResendCc, ResendBcc };
 
     void slotUser1();
     void slotUser2();
@@ -208,10 +204,7 @@ void RedirectDialog::accept()
 {
     const QString editTo = d->mEditTo->resend();
     if (editTo.isEmpty()) {
-        KMessageBox::sorry(
-            this,
-            i18n("You cannot redirect the message without an address."),
-            i18n("Empty Redirection Address"));
+        KMessageBox::sorry(this, i18n("You cannot redirect the message without an address."), i18n("Empty Redirection Address"));
     } else {
         done(QDialog::Accepted);
     }

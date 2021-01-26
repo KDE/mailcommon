@@ -8,20 +8,20 @@
 #include "filteractionforward.h"
 #include "mailcommon_debug.h"
 
+#include "filter/dialog/filteractionmissingtemplatedialog.h"
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
-#include "filter/dialog/filteractionmissingtemplatedialog.h"
 
+#include <Akonadi/Contact/EmailAddressRequester>
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
-#include <Akonadi/Contact/EmailAddressRequester>
 #include <MessageCore/StringUtil>
 #include <TemplateParser/CustomTemplates>
 #include <customtemplates_kfg.h>
 
-#include <KLocalizedString>
-#include <KLineEdit>
 #include <KComboBox>
+#include <KLineEdit>
+#include <KLocalizedString>
 
 #include <QHBoxLayout>
 
@@ -46,12 +46,11 @@ FilterAction::ReturnCode FilterActionForward::process(ItemContext &context, bool
     const KMime::Message::Ptr msg = context.item().payload<KMime::Message::Ptr>();
     // avoid endless loops when this action is used in a filter
     // which applies to sent messages
-    if (MessageCore::StringUtil::addressIsInAddressList(mParameter,
-                                                        QStringList(msg->to()->asUnicodeString()))) {
+    if (MessageCore::StringUtil::addressIsInAddressList(mParameter, QStringList(msg->to()->asUnicodeString()))) {
         qCWarning(MAILCOMMON_LOG) << "Attempt to forward to recipient of original message, ignoring.";
         return ErrorButGoOn;
     }
-#if 0 //PORT ME TO ASync
+#if 0 // PORT ME TO ASync
     MessageComposer::MessageFactoryNG factory(msg, context.item().id());
     factory.setIdentityManager(KernelIf->identityManager());
     factory.setFolderIdentity(Util::folderIdentity(context.item()));
@@ -103,8 +102,7 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
     const QStringList templateNames = SettingsIf->customTemplates();
     for (const QString &templateName : templateNames) {
         TemplateParser::CTemplates templat(templateName);
-        if (templat.type() == TemplateParser::CustomTemplates::TForward
-            || templat.type() == TemplateParser::CustomTemplates::TUniversal) {
+        if (templat.type() == TemplateParser::CustomTemplates::TForward || templat.type() == TemplateParser::CustomTemplates::TUniversal) {
             templateCombo->addItem(templateName);
         }
     }
@@ -170,7 +168,8 @@ void FilterActionForward::clearParamWidget(QWidget *paramWidget) const
 
 // We simply place a "@$$@" between the two parameters. The template is the last
 // parameter in the string, for compatibility reasons.
-namespace {
+namespace
+{
 inline const QString forwardFilterArgsSeperator()
 {
     return QStringLiteral("@$$@");
@@ -200,8 +199,7 @@ bool FilterActionForward::argsFromStringInteractive(const QString &argsStr, cons
         currentTemplateList << i18n("Default Template");
         for (const QString &templateName : templateNames) {
             TemplateParser::CTemplates templat(templateName);
-            if (templat.type() == TemplateParser::CustomTemplates::TForward
-                || templat.type() == TemplateParser::CustomTemplates::TUniversal) {
+            if (templat.type() == TemplateParser::CustomTemplates::TForward || templat.type() == TemplateParser::CustomTemplates::TUniversal) {
                 if (templateName == mTemplate) {
                     return false;
                 }

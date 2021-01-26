@@ -28,9 +28,10 @@ FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QString
 
     auto label = new QLabel(this);
     label->setObjectName(QStringLiteral("label"));
-    label->setText(i18n("Filter account is missing. "
-                        "Please select account to use with filter \"%1\"",
-                        filtername));
+    label->setText(
+        i18n("Filter account is missing. "
+             "Please select account to use with filter \"%1\"",
+             filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
     mAccountList = new MailCommon::KMFilterAccountList(this);

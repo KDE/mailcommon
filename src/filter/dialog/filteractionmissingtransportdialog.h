@@ -8,11 +8,13 @@
 #define FILTERACTIONMISSINGTRANSPORTDIALOG_H
 
 #include <QDialog>
-namespace MailTransport {
+namespace MailTransport
+{
 class TransportComboBox;
 }
 
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterActionMissingTransportDialog : public QDialog
 {
     Q_OBJECT

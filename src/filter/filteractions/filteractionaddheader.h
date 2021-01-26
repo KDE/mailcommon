@@ -10,7 +10,8 @@
 
 #include "filteractionwithstringlist.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionAddHeader - add header
 // Add a header with the given value.
@@ -40,6 +41,7 @@ public:
 
     bool isEmpty() const override;
     Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
+
 private:
     QString mValue;
 };

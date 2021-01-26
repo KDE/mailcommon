@@ -14,7 +14,8 @@
 #include <Collection>
 #include <QDebug>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MAILCOMMON_EXPORT ExpireCollectionAttribute : public Akonadi::Attribute
 {
 public:
@@ -25,18 +26,9 @@ public:
      * expireNever is used to switch off message expiry, and expireMaxUnits
      * must always be the last in the list (for bounds checking).
      */
-    enum ExpireUnits {
-        ExpireNever = 0,
-        ExpireDays = 1,
-        ExpireWeeks = 2,
-        ExpireMonths = 3,
-        ExpireMaxUnits = 4
-    };
+    enum ExpireUnits { ExpireNever = 0, ExpireDays = 1, ExpireWeeks = 2, ExpireMonths = 3, ExpireMaxUnits = 4 };
 
-    enum ExpireAction {
-        ExpireDelete = 0,
-        ExpireMove = 1
-    };
+    enum ExpireAction { ExpireDelete = 0, ExpireMove = 1 };
 
     Q_REQUIRED_RESULT QByteArray type() const override;
     ExpireCollectionAttribute *clone() const override;
@@ -123,9 +115,9 @@ public:
 
 private:
     static int daysToExpire(int number, ExpireCollectionAttribute::ExpireUnits units);
-    bool mExpireMessages = false;         // true if old messages are expired
-    int mUnreadExpireAge = 28;         // Given in unreadExpireUnits
-    int mReadExpireAge = 14;           // Given in readExpireUnits
+    bool mExpireMessages = false; // true if old messages are expired
+    int mUnreadExpireAge = 28; // Given in unreadExpireUnits
+    int mReadExpireAge = 14; // Given in readExpireUnits
     ExpireCollectionAttribute::ExpireUnits mUnreadExpireUnits = ExpireNever;
     ExpireCollectionAttribute::ExpireUnits mReadExpireUnits = ExpireNever;
     ExpireCollectionAttribute::ExpireAction mExpireAction = ExpireDelete;
@@ -133,5 +125,5 @@ private:
     bool mExpireMessagesWithValidDate = false;
 };
 }
-MAILCOMMON_EXPORT QDebug operator <<(QDebug d, const MailCommon::ExpireCollectionAttribute &t);
+MAILCOMMON_EXPORT QDebug operator<<(QDebug d, const MailCommon::ExpireCollectionAttribute &t);
 #endif /* EXPIRATIONCOLLECTIONATTRIBUTE_H */

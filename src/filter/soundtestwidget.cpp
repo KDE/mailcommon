@@ -6,17 +6,17 @@
 
 #include "soundtestwidget.h"
 
+#include <KLineEdit>
 #include <KLocalizedString>
 #include <KUrlRequester>
-#include <KLineEdit>
 #include <QIcon>
 #include <QUrl>
 
 #include <QHBoxLayout>
 #include <QPushButton>
 
-#include <phonon/mediaobject.h>
 #include <QStandardPaths>
+#include <phonon/mediaobject.h>
 
 using namespace MailCommon;
 
@@ -63,10 +63,7 @@ void SoundTestWidget::openSoundDialog(KUrlRequester *)
     fileDialog->setWindowTitle(i18nc("@title:window", "Select Sound File"));
 
     QStringList filters;
-    filters << QStringLiteral("audio/x-wav")
-            << QStringLiteral("audio/mpeg")
-            << QStringLiteral("application/ogg")
-            << QStringLiteral("audio/x-adpcm");
+    filters << QStringLiteral("audio/x-wav") << QStringLiteral("audio/mpeg") << QStringLiteral("application/ogg") << QStringLiteral("audio/x-adpcm");
 
     fileDialog->setMimeTypeFilters(filters);
 
@@ -96,9 +93,7 @@ void SoundTestWidget::playSound()
     }
 
     const QString file = QStringLiteral("file:");
-    const QString play = (parameter.startsWith(file)
-                          ? parameter.mid(file.length())
-                          : parameter);
+    const QString play = (parameter.startsWith(file) ? parameter.mid(file.length()) : parameter);
     Phonon::MediaObject *player = Phonon::createPlayer(Phonon::NotificationCategory, QUrl::fromLocalFile(play));
     player->play();
     connect(player, &Phonon::MediaObject::finished, player, &Phonon::MediaObject::deleteLater);

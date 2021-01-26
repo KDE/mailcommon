@@ -7,30 +7,30 @@
 
 #include "foldersettings.h"
 #include "kernel/mailkernel.h"
+#include "mailcommon_debug.h"
 #include "util/mailutil.h"
 #include "util/resourcereadconfigfile.h"
-#include <PimCommon/PimUtil>
 #include <Akonadi/KMime/NewMailNotifierAttribute>
-#include "mailcommon_debug.h"
+#include <CollectionModifyJob>
 #include <ItemFetchJob>
 #include <ItemFetchScope>
-#include <CollectionModifyJob>
+#include <PimCommon/PimUtil>
 
 using namespace Akonadi;
 
-#include <KIdentityManagement/IdentityManager>
 #include <KIdentityManagement/Identity>
+#include <KIdentityManagement/IdentityManager>
 
 #include <QMutex>
 #include <QMutexLocker>
 #include <QSharedPointer>
 
-namespace MailCommon {
+namespace MailCommon
+{
 static QMutex mapMutex;
-static QMap<Collection::Id, QSharedPointer<FolderSettings> > fcMap;
+static QMap<Collection::Id, QSharedPointer<FolderSettings>> fcMap;
 
-QSharedPointer<FolderSettings> FolderSettings::forCollection(
-    const Akonadi::Collection &coll, bool writeConfig)
+QSharedPointer<FolderSettings> FolderSettings::forCollection(const Akonadi::Collection &coll, bool writeConfig)
 {
     QMutexLocker lock(&mapMutex);
 
@@ -57,13 +57,12 @@ FolderSettings::FolderSettings(const Akonadi::Collection &col, bool writeconfig)
     mIdentity = KernelIf->identityManager()->defaultIdentity().uoid();
 
     readConfig();
-    connect(KernelIf->identityManager(), QOverload<>::of(&KIdentityManagement::IdentityManager::changed),
-            this, &FolderSettings::slotIdentitiesChanged);
+    connect(KernelIf->identityManager(), QOverload<>::of(&KIdentityManagement::IdentityManager::changed), this, &FolderSettings::slotIdentitiesChanged);
 }
 
 FolderSettings::~FolderSettings()
 {
-    //qCDebug(MAILCOMMON_LOG)<<" FolderCollection::~FolderCollection"<<this;
+    // qCDebug(MAILCOMMON_LOG)<<" FolderCollection::~FolderCollection"<<this;
     if (mWriteConfig) {
         writeConfig();
     }
@@ -88,7 +87,7 @@ void FolderSettings::clearCache()
 void FolderSettings::resetHtmlFormat()
 {
     QMutexLocker lock(&mapMutex);
-    QMap<Collection::Id, QSharedPointer<FolderSettings> >::const_iterator i = fcMap.constBegin();
+    QMap<Collection::Id, QSharedPointer<FolderSettings>>::const_iterator i = fcMap.constBegin();
     while (i != fcMap.constEnd()) {
         i.value()->setFormatMessage(MessageViewer::Viewer::UseGlobalSetting);
         ++i;
@@ -191,11 +190,11 @@ void FolderSettings::readConfig()
 
     if (configGroup.hasKey(QStringLiteral("IgnoreNewMail"))) {
         if (configGroup.readEntry(QStringLiteral("IgnoreNewMail"), false)) {
-            //migrate config.
+            // migrate config.
             auto *newMailNotifierAttr = mCollection.attribute<Akonadi::NewMailNotifierAttribute>(Akonadi::Collection::AddIfMissing);
             newMailNotifierAttr->setIgnoreNewMail(true);
             new Akonadi::CollectionModifyJob(mCollection, this);
-            //TODO verify if it works;
+            // TODO verify if it works;
         }
         configGroup.deleteEntry("IgnoreNewMail");
     }
@@ -206,8 +205,8 @@ void FolderSettings::readConfig()
         setShortcut(sc);
     }
 
-    mFormatMessage = static_cast<MessageViewer::Viewer::DisplayFormatMessage>(configGroup.readEntry("displayFormatOverride",
-                                                                                                    static_cast<int>(MessageViewer::Viewer::UseGlobalSetting)));
+    mFormatMessage = static_cast<MessageViewer::Viewer::DisplayFormatMessage>(
+        configGroup.readEntry("displayFormatOverride", static_cast<int>(MessageViewer::Viewer::UseGlobalSetting)));
 
     mFolderHtmlLoadExtPreference = configGroup.readEntry("htmlLoadExternalOverride", false);
 }
@@ -355,8 +354,7 @@ uint FolderSettings::fallBackIdentity() const
             identityId = remoteAccountIdent;
         }
     }
-    if (identityId != -1
-        && !KernelIf->identityManager()->identityForUoid(identityId).isNull()) {
+    if (identityId != -1 && !KernelIf->identityManager()->identityForUoid(identityId).isNull()) {
         return identityId;
     }
     return mIdentity;

@@ -9,7 +9,8 @@
 
 #include "searchpattern.h"
 #include <AkonadiCore/Item>
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @short This class represents a search pattern rule operating on numerical values.
  *

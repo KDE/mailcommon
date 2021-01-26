@@ -5,11 +5,11 @@
 */
 
 #include "filterimportergmail.h"
+#include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
-#include <QFile>
 #include <QDir>
 #include <QDomDocument>
-#include "filter/mailfilter.h"
+#include <QFile>
 
 using namespace MailCommon;
 
@@ -59,9 +59,7 @@ void FilterImporterGmail::parseFilters(const QDomElement &e)
     filter->setToolbarName(uniqName);
     filter->setEnabled(true);
     QByteArray fieldName;
-    for (QDomElement ruleFilter = e.firstChildElement();
-         !ruleFilter.isNull();
-         ruleFilter = ruleFilter.nextSiblingElement()) {
+    for (QDomElement ruleFilter = e.firstChildElement(); !ruleFilter.isNull(); ruleFilter = ruleFilter.nextSiblingElement()) {
         const QString tagName = ruleFilter.tagName();
         if (tagName == QLatin1String("category")) {
             if (ruleFilter.hasAttribute(QStringLiteral("term"))) {
@@ -85,7 +83,7 @@ void FilterImporterGmail::parseFilters(const QDomElement &e)
                 } else if (criteriaProperty == QLatin1String("hasAttachment")) {
                     fieldName = "<size>";
                 }
-                //Action
+                // Action
                 else if (criteriaProperty == QLatin1String("shouldArchive")) {
                 } else if (criteriaProperty == QLatin1String("shouldMarkAsRead")) {
                 } else if (criteriaProperty == QLatin1String("shouldStar")) {

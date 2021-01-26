@@ -9,8 +9,8 @@
 #include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
 
-#include <QFile>
 #include <QDir>
+#include <QFile>
 
 using namespace MailCommon;
 
@@ -45,9 +45,9 @@ void FilterImporterClawsMails::readStream(QTextStream &stream)
         qCDebug(MAILCOMMON_LOG) << " line :" << line << " filter " << filter;
 
         if (line.isEmpty()) {
-            //Nothing
+            // Nothing
         } else if (line.startsWith(QLatin1Char('[')) && line.endsWith(QLatin1Char(']'))) {
-            //TODO
+            // TODO
         } else {
             appendFilter(filter);
             filter = parseLine(line);
@@ -65,13 +65,13 @@ MailFilter *FilterImporterClawsMails::parseLine(const QString &line)
 {
     auto filter = new MailFilter();
     QString tmp = line;
-    //Enabled ?
+    // Enabled ?
     if (tmp.startsWith(QLatin1String("enabled"))) {
         filter->setEnabled(true);
         tmp.remove(QStringLiteral("enabled "));
     }
 
-    //Filter name
+    // Filter name
     if (tmp.startsWith(QLatin1String("rulename"))) {
         tmp.remove(QStringLiteral("rulename "));
         int pos;
@@ -79,14 +79,14 @@ MailFilter *FilterImporterClawsMails::parseLine(const QString &line)
         filter->pattern()->setName(name);
         filter->setToolbarName(name);
 
-        tmp = tmp.mid(pos + 2); //remove "\" "
+        tmp = tmp.mid(pos + 2); // remove "\" "
         qCDebug(MAILCOMMON_LOG) << " new tmp" << tmp;
     }
 
     tmp = extractConditions(tmp, filter);
 
     tmp = extractActions(tmp, filter);
-    //TODO
+    // TODO
     return filter;
 }
 
@@ -99,13 +99,13 @@ QString FilterImporterClawsMails::extractActions(const QString &line, MailFilter
 QString FilterImporterClawsMails::extractConditions(const QString &line, MailFilter *filter)
 {
     QByteArray fieldName;
-    //Action
+    // Action
     if (line.startsWith(QLatin1String("subject"))) {
         fieldName = "subject";
     } else if (line.startsWith(QLatin1String("age_lower"))) {
     }
     filter->pattern()->setOp(SearchPattern::OpAnd);
-    //TODO
+    // TODO
     return QString();
 }
 

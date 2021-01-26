@@ -16,17 +16,12 @@ using namespace MailCommon;
 static const struct {
     SearchRule::Function id;
     const char *displayName;
-} StatusFunctions[] = {
-    { SearchRule::FuncContains, I18N_NOOP("is")    },
-    { SearchRule::FuncContainsNot, I18N_NOOP("is not") }
-};
-static const int StatusFunctionCount
-    = sizeof(StatusFunctions) / sizeof(*StatusFunctions);
+} StatusFunctions[] = {{SearchRule::FuncContains, I18N_NOOP("is")}, {SearchRule::FuncContainsNot, I18N_NOOP("is not")}};
+static const int StatusFunctionCount = sizeof(StatusFunctions) / sizeof(*StatusFunctions);
 
 //---------------------------------------------------------------------------
 
-QWidget *StatusRuleWidgetHandler::createFunctionWidget(
-    int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
+QWidget *StatusRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
 {
     if (number != 0) {
         return nullptr;
@@ -39,8 +34,7 @@ QWidget *StatusRuleWidgetHandler::createFunctionWidget(
         funcCombo->addItem(i18n(StatusFunctions[i].displayName));
     }
     funcCombo->adjustSize();
-    QObject::connect(funcCombo, SIGNAL(activated(int)),
-                     receiver, SLOT(slotFunctionChanged()));
+    QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));
     return funcCombo;
 }
 
@@ -56,25 +50,20 @@ QWidget *StatusRuleWidgetHandler::createValueWidget(int number, QStackedWidget *
     statusCombo->setMinimumWidth(50);
     statusCombo->setObjectName(QStringLiteral("statusRuleValueCombo"));
     for (int i = 0; i < MailCommon::StatusValueCountWithoutHidden; ++i) {
-        if (MailCommon::StatusValues[ i ].icon != nullptr) {
-            statusCombo->addItem(
-                QIcon::fromTheme(QLatin1String(MailCommon::StatusValues[ i ].icon)),
-                i18nc("message status", MailCommon::StatusValues[ i ].text));
+        if (MailCommon::StatusValues[i].icon != nullptr) {
+            statusCombo->addItem(QIcon::fromTheme(QLatin1String(MailCommon::StatusValues[i].icon)), i18nc("message status", MailCommon::StatusValues[i].text));
         } else {
-            statusCombo->addItem(
-                i18nc("message status", MailCommon::StatusValues[ i ].text));
+            statusCombo->addItem(i18nc("message status", MailCommon::StatusValues[i].text));
         }
     }
     statusCombo->adjustSize();
-    QObject::connect(statusCombo, SIGNAL(activated(int)),
-                     receiver, SLOT(slotValueChanged()));
+    QObject::connect(statusCombo, SIGNAL(activated(int)), receiver, SLOT(slotValueChanged()));
     return statusCombo;
 }
 
 //---------------------------------------------------------------------------
 
-SearchRule::Function StatusRuleWidgetHandler::currentFunction(
-    const QStackedWidget *functionStack) const
+SearchRule::Function StatusRuleWidgetHandler::currentFunction(const QStackedWidget *functionStack) const
 {
     const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("statusRuleFuncCombo"));
 
@@ -119,7 +108,7 @@ QString StatusRuleWidgetHandler::value(const QByteArray &field, const QStackedWi
 
     const int status = currentStatusValue(valueStack);
     if (status != -1) {
-        return QString::fromLatin1(MailCommon::StatusValues[ status ].text);
+        return QString::fromLatin1(MailCommon::StatusValues[status].text);
     } else {
         return QString();
     }
@@ -135,7 +124,7 @@ QString StatusRuleWidgetHandler::prettyValue(const QByteArray &field, const QSta
 
     const int status = currentStatusValue(valueStack);
     if (status != -1) {
-        return i18nc("message status", MailCommon::StatusValues[ status ].text);
+        return i18nc("message status", MailCommon::StatusValues[status].text);
     } else {
         return QString();
     }
@@ -206,7 +195,7 @@ bool StatusRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWid
     const QString value = rule->contents();
     int valueIndex = 0;
     for (; valueIndex < MailCommon::StatusValueCountWithoutHidden; ++valueIndex) {
-        if (value == QString::fromLatin1(MailCommon::StatusValues[ valueIndex ].text)) {
+        if (value == QString::fromLatin1(MailCommon::StatusValues[valueIndex].text)) {
             break;
         }
     }

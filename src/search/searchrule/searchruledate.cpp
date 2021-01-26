@@ -9,8 +9,8 @@
 #include "filter/filterlog.h"
 using MailCommon::FilterLog;
 
-#include <KMime/KMimeMessage>
 #include <KLocalizedString>
+#include <KMime/KMimeMessage>
 using namespace MailCommon;
 
 SearchRuleDate::SearchRuleDate(const QByteArray &field, Function func, const QString &contents)
@@ -39,10 +39,9 @@ bool SearchRuleDate::matches(const Akonadi::Item &item) const
     const QDate dateValue = QDate::fromString(contents(), Qt::ISODate);
     bool rc = matchesInternal(dateValue, msgDate);
     if (FilterLog::instance()->isLogging()) {
-        QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>")
-                       : QStringLiteral("<font color=#FF0000>0 = </font>"));
+        QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>") : QStringLiteral("<font color=#FF0000>0 = </font>"));
         msg += FilterLog::recode(asString());
-        msg += QLatin1String(" ( <i>") + contents() + QLatin1String("</i> )"); //TODO change with locale?
+        msg += QLatin1String(" ( <i>") + contents() + QLatin1String("</i> )"); // TODO change with locale?
         FilterLog::instance()->add(msg, FilterLog::RuleResult);
     }
     return rc;
@@ -69,8 +68,7 @@ bool SearchRuleDate::matchesInternal(QDate dateValue, QDate msgDate) const
     case FuncIsGreaterOrEqual:
         return msgDate >= dateValue;
 
-    default:
-        ;
+    default:;
     }
     return false;
 }

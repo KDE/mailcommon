@@ -10,14 +10,14 @@
 using MailCommon::RuleWidgetHandlerManager;
 #include "mailcommon_debug.h"
 
-#include <Libkdepim/LineEditCatchReturnKey>
-#include <KLocalizedString>
-#include <QPushButton>
-#include <QLineEdit>
-#include <QIcon>
 #include <KComboBox>
+#include <KLocalizedString>
+#include <Libkdepim/LineEditCatchReturnKey>
 #include <QButtonGroup>
 #include <QHBoxLayout>
+#include <QIcon>
+#include <QLineEdit>
+#include <QPushButton>
 #include <QRadioButton>
 #include <QStackedWidget>
 
@@ -41,26 +41,23 @@ static const struct {
     {
         return i18nc(context, displayName);
     }
-} SpecialRuleFields[] = {
-    { "<message>", I18N_NOOP("Complete Message")       },
-    { "<body>", I18N_NOOP("Body of Message")          },
-    { "<any header>", I18N_NOOP("Anywhere in Headers")    },
-    { "<recipients>", I18N_NOOP("All Recipients")    },
-    { "<size>", I18N_NOOP("Size in Bytes") },
-    { "<age in days>", I18N_NOOP("Age in Days")   },
-    { "<status>", I18N_NOOP("Message Status")        },
-    { "<tag>", I18N_NOOP("Message Tag") },
-    { "Subject", I18NC_NOOP("Subject of an email.", "Subject")  },
-    { "From", I18N_NOOP("From")  },
-    { "To", I18NC_NOOP("Receiver of an email.", "To")  },
-    { "CC", I18N_NOOP("CC")  },
-    { "Reply-To", I18N_NOOP("Reply To")  },
-    { "Organization", I18N_NOOP("Organization")  },
-    { "<date>", I18N_NOOP("Date")  },
-    { "<encryption>", I18N_NOOP("Encryption") }
-};
-static const int SpecialRuleFieldsCount
-    = sizeof(SpecialRuleFields) / sizeof(*SpecialRuleFields);
+} SpecialRuleFields[] = {{"<message>", I18N_NOOP("Complete Message")},
+                         {"<body>", I18N_NOOP("Body of Message")},
+                         {"<any header>", I18N_NOOP("Anywhere in Headers")},
+                         {"<recipients>", I18N_NOOP("All Recipients")},
+                         {"<size>", I18N_NOOP("Size in Bytes")},
+                         {"<age in days>", I18N_NOOP("Age in Days")},
+                         {"<status>", I18N_NOOP("Message Status")},
+                         {"<tag>", I18N_NOOP("Message Tag")},
+                         {"Subject", I18NC_NOOP("Subject of an email.", "Subject")},
+                         {"From", I18N_NOOP("From")},
+                         {"To", I18NC_NOOP("Receiver of an email.", "To")},
+                         {"CC", I18N_NOOP("CC")},
+                         {"Reply-To", I18N_NOOP("Reply To")},
+                         {"Organization", I18N_NOOP("Organization")},
+                         {"<date>", I18N_NOOP("Date")},
+                         {"<encryption>", I18N_NOOP("Encryption")}};
+static const int SpecialRuleFieldsCount = sizeof(SpecialRuleFields) / sizeof(*SpecialRuleFields);
 
 //=============================================================================
 //
@@ -68,7 +65,10 @@ static const int SpecialRuleFieldsCount
 //
 //=============================================================================
 
-SearchRuleWidget::SearchRuleWidget(QWidget *parent, SearchRule::Ptr aRule, SearchPatternEdit::SearchPatternEditOptions options, SearchPatternEdit::SearchModeType modeType)
+SearchRuleWidget::SearchRuleWidget(QWidget *parent,
+                                   SearchRule::Ptr aRule,
+                                   SearchPatternEdit::SearchPatternEditOptions options,
+                                   SearchPatternEdit::SearchModeType modeType)
     : QWidget(parent)
 {
     initFieldList(options);
@@ -162,7 +162,7 @@ void SearchRuleWidget::initWidget(SearchPatternEdit::SearchModeType modeType)
 
     // initialize the function/value widget stack
     mFunctionStack = new QStackedWidget(this);
-    //Don't expand the widget in vertical direction
+    // Don't expand the widget in vertical direction
     mFunctionStack->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
 
     hlay->addWidget(mFunctionStack);
@@ -188,17 +188,12 @@ void SearchRuleWidget::initWidget(SearchPatternEdit::SearchModeType modeType)
     // redirect focus to the header field combo box
     setFocusProxy(mRuleField);
 
-    connect(mRuleField, &QComboBox::textActivated,
-            this, &SearchRuleWidget::slotRuleFieldChanged);
-    connect(mRuleField, &QComboBox::editTextChanged,
-            this, &SearchRuleWidget::slotRuleFieldChanged);
-    connect(mRuleField, &QComboBox::editTextChanged,
-            this, &SearchRuleWidget::fieldChanged);
+    connect(mRuleField, &QComboBox::textActivated, this, &SearchRuleWidget::slotRuleFieldChanged);
+    connect(mRuleField, &QComboBox::editTextChanged, this, &SearchRuleWidget::slotRuleFieldChanged);
+    connect(mRuleField, &QComboBox::editTextChanged, this, &SearchRuleWidget::fieldChanged);
 
-    connect(mAdd, &QAbstractButton::clicked,
-            this, &SearchRuleWidget::slotAddWidget);
-    connect(mRemove, &QAbstractButton::clicked,
-            this, &SearchRuleWidget::slotRemoveWidget);
+    connect(mAdd, &QAbstractButton::clicked, this, &SearchRuleWidget::slotAddWidget);
+    connect(mRemove, &QAbstractButton::clicked, this, &SearchRuleWidget::slotRemoveWidget);
 }
 
 void SearchRuleWidget::updateAddRemoveButton(bool addButtonEnabled, bool removeButtonEnabled)
@@ -228,7 +223,7 @@ void SearchRuleWidget::setRule(SearchRule::Ptr aRule)
 
     mRuleField->blockSignals(true);
 
-    if (i < 0) {   // not found -> user defined field
+    if (i < 0) { // not found -> user defined field
         mRuleField->setItemText(0, QString::fromLatin1(aRule->field()));
         i = 0;
     } else { // found in the list of predefined fields
@@ -245,11 +240,9 @@ SearchRule::Ptr SearchRuleWidget::rule() const
 {
     const QByteArray ruleField = ruleFieldToEnglish(mRuleField->currentText());
 
-    const SearchRule::Function function
-        = RuleWidgetHandlerManager::instance()->function(ruleField, mFunctionStack);
+    const SearchRule::Function function = RuleWidgetHandlerManager::instance()->function(ruleField, mFunctionStack);
 
-    const QString value
-        = RuleWidgetHandlerManager::instance()->value(ruleField, mFunctionStack, mValueStack);
+    const QString value = RuleWidgetHandlerManager::instance()->value(ruleField, mFunctionStack, mValueStack);
 
     return SearchRule::createInstance(ruleField, function, value);
 }
@@ -268,8 +261,7 @@ void SearchRuleWidget::slotFunctionChanged()
 {
     const QByteArray ruleField = ruleFieldToEnglish(mRuleField->currentText());
     RuleWidgetHandlerManager::instance()->update(ruleField, mFunctionStack, mValueStack);
-    const QString prettyValue
-        = RuleWidgetHandlerManager::instance()->prettyValue(ruleField, mFunctionStack, mValueStack);
+    const QString prettyValue = RuleWidgetHandlerManager::instance()->prettyValue(ruleField, mFunctionStack, mValueStack);
 
     Q_EMIT contentsChanged(prettyValue);
 }
@@ -278,8 +270,7 @@ void SearchRuleWidget::slotValueChanged()
 {
     const QByteArray ruleField = ruleFieldToEnglish(mRuleField->currentText());
 
-    const QString prettyValue
-        = RuleWidgetHandlerManager::instance()->prettyValue(ruleField, mFunctionStack, mValueStack);
+    const QString prettyValue = RuleWidgetHandlerManager::instance()->prettyValue(ruleField, mFunctionStack, mValueStack);
 
     Q_EMIT contentsChanged(prettyValue);
 }
@@ -345,7 +336,7 @@ void SearchRuleWidget::initFieldList(SearchPatternEdit::SearchPatternEditOptions
     const bool notShowTags = (options & MailCommon::SearchPatternEdit::NotShowTags);
 
     mFilterFieldList.clear();
-    mFilterFieldList.append(QString());   // empty entry for user input
+    mFilterFieldList.append(QString()); // empty entry for user input
 
     if (!headersOnly) {
         mFilterFieldList.append(SpecialRuleFields[Message].getLocalizedDisplayName());
@@ -389,8 +380,7 @@ void SearchRuleWidget::initFieldList(SearchPatternEdit::SearchPatternEditOptions
 
 void SearchRuleWidget::slotRuleFieldChanged(const QString &field)
 {
-    RuleWidgetHandlerManager::instance()->update(
-        ruleFieldToEnglish(field), mFunctionStack, mValueStack);
+    RuleWidgetHandlerManager::instance()->update(ruleFieldToEnglish(field), mFunctionStack, mValueStack);
 }
 
 //=============================================================================
@@ -431,7 +421,7 @@ void SearchRuleWidgetLister::setRuleList(QList<SearchRule::Ptr> *aList)
 
     mRuleList = aList;
 
-    if (!widgets().isEmpty()) {   // move this below next 'if'?
+    if (!widgets().isEmpty()) { // move this below next 'if'?
         widgets().constFirst()->blockSignals(true);
     }
 
@@ -459,8 +449,7 @@ void SearchRuleWidgetLister::setRuleList(QList<SearchRule::Ptr> *aList)
     QList<SearchRule::Ptr>::const_iterator rItEnd(mRuleList->constEnd());
     QList<QWidget *>::const_iterator wIt = widgetList.constBegin();
     QList<QWidget *>::const_iterator wItEnd = widgetList.constEnd();
-    for (rIt = mRuleList->constBegin();
-         rIt != rItEnd && wIt != wItEnd; ++rIt, ++wIt) {
+    for (rIt = mRuleList->constBegin(); rIt != rItEnd && wIt != wItEnd; ++rIt, ++wIt) {
         qobject_cast<SearchRuleWidget *>(*wIt)->setRule((*rIt));
     }
     for (; wIt != wItEnd; ++wIt) {
@@ -486,10 +475,8 @@ void SearchRuleWidgetLister::slotRemoveWidget(QWidget *w)
 
 void SearchRuleWidgetLister::reconnectWidget(SearchRuleWidget *w)
 {
-    connect(w, &SearchRuleWidget::addWidget,
-            this, &SearchRuleWidgetLister::slotAddWidget, Qt::UniqueConnection);
-    connect(w, &SearchRuleWidget::removeWidget,
-            this, &SearchRuleWidgetLister::slotRemoveWidget, Qt::UniqueConnection);
+    connect(w, &SearchRuleWidget::addWidget, this, &SearchRuleWidgetLister::slotAddWidget, Qt::UniqueConnection);
+    connect(w, &SearchRuleWidget::removeWidget, this, &SearchRuleWidgetLister::slotRemoveWidget, Qt::UniqueConnection);
 }
 
 void SearchRuleWidgetLister::updateAddRemoveButton()
@@ -529,8 +516,7 @@ void SearchRuleWidgetLister::reset()
 
 QWidget *SearchRuleWidgetLister::createWidget(QWidget *parent)
 {
-    auto *w
-        = new SearchRuleWidget(parent, SearchRule::Ptr(), mOptions, mTypeMode);
+    auto *w = new SearchRuleWidget(parent, SearchRule::Ptr(), mOptions, mTypeMode);
     reconnectWidget(w);
     return w;
 }
@@ -627,13 +613,10 @@ void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeT
     }
 
     //------------connect a few signals
-    connect(bg, QOverload<QAbstractButton *>::of(&QButtonGroup::buttonClicked),
-            this, &SearchPatternEdit::slotRadioClicked);
+    connect(bg, QOverload<QAbstractButton *>::of(&QButtonGroup::buttonClicked), this, &SearchPatternEdit::slotRadioClicked);
 
     //------------the list of SearchRuleWidget's
-    mRuleLister
-        = new SearchRuleWidgetLister(
-              this, options, modeType);
+    mRuleLister = new SearchRuleWidgetLister(this, options, modeType);
 
     mRuleLister->slotClear();
 
@@ -641,19 +624,15 @@ void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeT
         const int numberOfWidget(mRuleLister->widgets().count());
         for (int i = 0; i < numberOfWidget; ++i) {
             SearchRuleWidget *srw = static_cast<SearchRuleWidget *>(mRuleLister->widgets().at(i));
-            connect(srw, &SearchRuleWidget::fieldChanged,
-                    this, &SearchPatternEdit::slotAutoNameHack);
-            connect(srw, &SearchRuleWidget::contentsChanged,
-                    this, &SearchPatternEdit::slotAutoNameHack);
-            connect(srw, &SearchRuleWidget::returnPressed,
-                    this, &SearchPatternEdit::returnPressed);
+            connect(srw, &SearchRuleWidget::fieldChanged, this, &SearchPatternEdit::slotAutoNameHack);
+            connect(srw, &SearchRuleWidget::contentsChanged, this, &SearchPatternEdit::slotAutoNameHack);
+            connect(srw, &SearchRuleWidget::returnPressed, this, &SearchPatternEdit::returnPressed);
         }
     } else {
         qCDebug(MAILCOMMON_LOG) << "No first SearchRuleWidget, though slotClear() has been called!";
     }
 
-    connect(mRuleLister, QOverload<QWidget *>::of(&SearchRuleWidgetLister::widgetAdded),
-            this, &SearchPatternEdit::slotRuleAdded);
+    connect(mRuleLister, QOverload<QWidget *>::of(&SearchRuleWidgetLister::widgetAdded), this, &SearchPatternEdit::slotRuleAdded);
     connect(mRuleLister, QOverload<>::of(&SearchRuleWidgetLister::widgetRemoved), this, &SearchPatternEdit::patternChanged);
     connect(mRuleLister, &KPIM::KWidgetLister::clearWidgets, this, &SearchPatternEdit::patternChanged);
 

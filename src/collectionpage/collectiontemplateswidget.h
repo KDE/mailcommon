@@ -8,14 +8,16 @@
 #define COLLECTIONTEMPLATESWIDGET_H
 
 #include "mailcommon_export.h"
-#include <QWidget>
 #include <AkonadiCore/Collection>
+#include <QWidget>
 class QCheckBox;
-namespace TemplateParser {
+namespace TemplateParser
+{
 class TemplatesConfiguration;
 }
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @brief The CollectionTemplateWidget class
  * @author Laurent Montel <montel@kde.org>
@@ -28,6 +30,7 @@ public:
     ~CollectionTemplatesWidget();
     void save(Akonadi::Collection &);
     void load(const Akonadi::Collection &col);
+
 private:
     void slotCopyGlobal();
     void slotChanged();

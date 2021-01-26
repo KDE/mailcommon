@@ -12,8 +12,8 @@
 #include <KConfig>
 #include <KConfigGroup>
 
-#include <QFile>
 #include <QDir>
+#include <QFile>
 #include <QRegularExpression>
 
 using namespace MailCommon;
@@ -55,8 +55,8 @@ void FilterImporterBalsa::parseFilter(const KConfigGroup &grp)
     filter->pattern()->setName(name);
     filter->setToolbarName(name);
 
-    //TODO not implemented in kmail.
-    //const QString popupText = grp.readEntry(QStringLiteral("Popup-text"));
+    // TODO not implemented in kmail.
+    // const QString popupText = grp.readEntry(QStringLiteral("Popup-text"));
 
     const QString sound = grp.readEntry(QStringLiteral("Sound"));
     if (!sound.isEmpty()) {
@@ -84,7 +84,7 @@ void FilterImporterBalsa::parseCondition(const QString &condition, MailCommon::M
         conditionList = condition.split(QStringLiteral("AND"));
         filter->pattern()->setOp(SearchPattern::OpAnd);
     } else {
-        //no multi condition
+        // no multi condition
         conditionList << condition;
     }
     for (QString cond : qAsConst(conditionList)) {
@@ -95,7 +95,7 @@ void FilterImporterBalsa::parseCondition(const QString &condition, MailCommon::M
         }
         qCDebug(MAILCOMMON_LOG) << " cond" << cond;
 
-        //Date between
+        // Date between
         QByteArray fieldName;
         if (cond.startsWith(QLatin1String("DATE"))) {
             fieldName = "<date>";
@@ -111,8 +111,8 @@ void FilterImporterBalsa::parseCondition(const QString &condition, MailCommon::M
             qCDebug(MAILCOMMON_LOG) << " condition not implemented :" << cond;
         }
 
-        //SearchRule::Ptr rule = SearchRule::createInstance( fieldName, functionName, line );
-        //filter->pattern()->append( rule );
+        // SearchRule::Ptr rule = SearchRule::createInstance( fieldName, functionName, line );
+        // filter->pattern()->append( rule );
     }
 }
 
@@ -124,35 +124,35 @@ void FilterImporterBalsa::parseAction(int actionType, const QString &action, Mai
     case 0:
         break;
     case 1:
-        //Copy
+        // Copy
         actionName = QStringLiteral("copy");
         break;
     case 2:
-        //Move
+        // Move
         actionName = QStringLiteral("transfer");
         break;
     case 3:
-        //Print
-        //Not implemented in kmail
+        // Print
+        // Not implemented in kmail
         break;
     case 4:
-        //Execute
+        // Execute
         actionName = QStringLiteral("execute");
         break;
     case 5:
-        //Move to trash
+        // Move to trash
         actionName = QStringLiteral("transfer");
-        //Special !
+        // Special !
         break;
     case 6:
-        //Put color
+        // Put color
         break;
     default:
         qCDebug(MAILCOMMON_LOG) << " unknown parse action type " << actionType;
         break;
     }
     if (!actionName.isEmpty()) {
-        //TODO adapt actionStr
+        // TODO adapt actionStr
         createFilterAction(filter, actionName, actionStr);
     }
 }

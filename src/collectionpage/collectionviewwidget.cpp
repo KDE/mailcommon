@@ -6,21 +6,21 @@
 
 #include "collectionviewwidget.h"
 #include "mailcommon_debug.h"
-#include <QVBoxLayout>
 #include <KLocalizedString>
+#include <QVBoxLayout>
 
+#include <Akonadi/KMime/MessageFolderAttribute>
 #include <MessageList/AggregationComboBox>
 #include <MessageList/AggregationConfigButton>
 #include <MessageList/ThemeComboBox>
 #include <MessageList/ThemeConfigButton>
-#include <Akonadi/KMime/MessageFolderAttribute>
 
 #include <MessageViewer/Viewer>
 
-#include <QLabel>
+#include <QCheckBox>
 #include <QComboBox>
 #include <QGroupBox>
-#include <QCheckBox>
+#include <QLabel>
 #include <QRadioButton>
 using namespace MailCommon;
 CollectionViewWidget::CollectionViewWidget(QWidget *parent)

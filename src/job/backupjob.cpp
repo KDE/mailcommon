@@ -7,21 +7,21 @@
 
 #include "backupjob.h"
 
-#include <PimCommon/BroadcastStatus>
 #include "mailcommon_debug.h"
 #include <CollectionDeleteJob>
 #include <CollectionFetchJob>
 #include <CollectionFetchScope>
 #include <ItemFetchJob>
 #include <ItemFetchScope>
+#include <PimCommon/BroadcastStatus>
 
 #include <KMime/Message>
 
+#include <KIO/Global>
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KTar>
 #include <KZip>
-#include <KIO/Global>
 
 #include <QFileInfo>
 #include <QTimer>
@@ -86,8 +86,7 @@ bool BackupJob::queueFolders(const Akonadi::Collection &root)
         // in the mPendingFolders list before all second level children, so that the
         // directories for the first level are written before the directories in the
         // second level, in the archive file.
-        auto *job
-            = new Akonadi::CollectionFetchJob(root, Akonadi::CollectionFetchJob::FirstLevel);
+        auto *job = new Akonadi::CollectionFetchJob(root, Akonadi::CollectionFetchJob::FirstLevel);
         job->fetchScope().setAncestorRetrieval(Akonadi::CollectionFetchScope::All);
         job->exec();
         if (job->error()) {
@@ -178,14 +177,17 @@ void BackupJob::finish()
     }
 
     QFileInfo archiveFileInfo(mMailArchivePath.path());
-    QString text = i18n("Archiving folder '%1' successfully completed. "
-                        "The archive was written to the file '%2'.",
-                        mRealPath.isEmpty() ? mRootFolder.name() : mRealPath, mMailArchivePath.path());
-    text += QLatin1Char('\n') + i18np("1 message of size %2 was archived.",
-                                      "%1 messages with the total size of %2 were archived.",
-                                      mArchivedMessages, KIO::convertSize(mArchivedSize));
-    text += QLatin1Char('\n') + i18n("The archive file has a size of %1.",
-                                     KIO::convertSize(archiveFileInfo.size()));
+    QString text = i18n(
+        "Archiving folder '%1' successfully completed. "
+        "The archive was written to the file '%2'.",
+        mRealPath.isEmpty() ? mRootFolder.name() : mRealPath,
+        mMailArchivePath.path());
+    text += QLatin1Char('\n')
+        + i18np("1 message of size %2 was archived.",
+                "%1 messages with the total size of %2 were archived.",
+                mArchivedMessages,
+                KIO::convertSize(mArchivedSize));
+    text += QLatin1Char('\n') + i18n("The archive file has a size of %1.", KIO::convertSize(archiveFileInfo.size()));
     if (mDisplayMessageBox) {
         KMessageBox::information(mParentWidget, text, i18n("Archiving finished"));
     }
@@ -237,8 +239,7 @@ void BackupJob::processMessage(const Akonadi::Item &item)
     // PORT ME: user and group!
     qCDebug(MAILCOMMON_LOG) << "AKONDI PORT: disabled code here!";
     if (!mArchive->writeFile(fileName, messageData, archivePerms, QStringLiteral("user"), QStringLiteral("group"), mArchiveTime, mArchiveTime, mArchiveTime)) {
-        abort(i18n("Failed to write a message into the archive folder '%1'.",
-                   mCurrentFolder.name()));
+        abort(i18n("Failed to write a message into the archive folder '%1'.", mCurrentFolder.name()));
         return;
     }
 
@@ -353,8 +354,7 @@ void BackupJob::archiveNextFolder()
         }
     }
     if (!success) {
-        abort(i18n("Unable to create folder structure for folder '%1' within archive file.",
-                   mCurrentFolder.name()));
+        abort(i18n("Unable to create folder structure for folder '%1' within archive file.", mCurrentFolder.name()));
         return;
     }
     auto job = new Akonadi::ItemFetchJob(mCurrentFolder);
@@ -366,8 +366,7 @@ void BackupJob::onArchiveNextFolderDone(KJob *job)
 {
     if (job->error()) {
         qCWarning(MAILCOMMON_LOG) << job->errorString();
-        abort(i18n("Unable to get message list for folder %1.",
-                   job->property("folderName").toString()));
+        abort(i18n("Unable to get message list for folder %1.", job->property("folderName").toString()));
         return;
     }
 
@@ -386,8 +385,7 @@ void BackupJob::start()
     }
 
     switch (mArchiveType) {
-    case Zip:
-    {
+    case Zip: {
         KZip *zip = new KZip(mMailArchivePath.path());
         zip->setCompression(KZip::DeflateCompression);
         mArchive = zip;
@@ -410,11 +408,7 @@ void BackupJob::start()
         return;
     }
 
-    mProgressItem = KPIM::ProgressManager::createProgressItem(
-        QStringLiteral("BackupJob"),
-        i18n("Archiving"),
-        QString(),
-        true);
+    mProgressItem = KPIM::ProgressManager::createProgressItem(QStringLiteral("BackupJob"), i18n("Archiving"), QString(), true);
     mProgressItem->setUsesBusyIndicator(true);
     connect(mProgressItem.data(), &KPIM::ProgressItem::progressItemCanceled, this, &BackupJob::cancelJob);
 

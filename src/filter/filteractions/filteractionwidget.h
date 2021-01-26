@@ -15,7 +15,8 @@
 
 #include <Libkdepim/KWidgetLister>
 #include <QVector>
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterAction;
 class FilterActionWidget;
 

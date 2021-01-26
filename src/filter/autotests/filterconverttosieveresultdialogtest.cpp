@@ -6,11 +6,11 @@
 
 #include "filterconverttosieveresultdialogtest.h"
 #include "../filterconverter/filterconverttosieveresultdialog.h"
-#include <QDialogButtonBox>
-#include <QTest>
-#include <QPushButton>
 #include <KPIMTextEdit/PlainTextEditorWidget>
+#include <QDialogButtonBox>
+#include <QPushButton>
 #include <QStandardPaths>
+#include <QTest>
 FilterConvertToSieveResultDialogTest::FilterConvertToSieveResultDialogTest(QObject *parent)
     : QObject(parent)
 {

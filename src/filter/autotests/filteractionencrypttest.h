@@ -7,8 +7,8 @@
 #ifndef FILTERACTIONENCRYPTTEST_H_
 #define FILTERACTIONENCRYPTTEST_H_
 
-#include <QObject>
 #include "gpghelper.h"
+#include <QObject>
 
 class FilterActionEncryptTest : public QObject
 {

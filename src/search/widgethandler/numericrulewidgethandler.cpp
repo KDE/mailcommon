@@ -7,32 +7,28 @@
 #include "numericrulewidgethandler.h"
 #include "search/searchpattern.h"
 
-#include <KPluralHandlingSpinBox>
 #include <KLocalizedString>
+#include <KPluralHandlingSpinBox>
 
-#include <QStackedWidget>
 #include <QComboBox>
+#include <QStackedWidget>
 
 using namespace MailCommon;
 
 static const struct {
     SearchRule::Function id;
     const char *displayName;
-} NumericFunctions[] = {
-    { SearchRule::FuncEquals, I18N_NOOP("is equal to")         },
-    { SearchRule::FuncNotEqual, I18N_NOOP("is not equal to")      },
-    { SearchRule::FuncIsGreater, I18N_NOOP("is greater than")     },
-    { SearchRule::FuncIsLessOrEqual, I18N_NOOP("is less than or equal to") },
-    { SearchRule::FuncIsLess, I18N_NOOP("is less than")        },
-    { SearchRule::FuncIsGreaterOrEqual, I18N_NOOP("is greater than or equal to") }
-};
-static const int NumericFunctionCount
-    = sizeof(NumericFunctions) / sizeof(*NumericFunctions);
+} NumericFunctions[] = {{SearchRule::FuncEquals, I18N_NOOP("is equal to")},
+                        {SearchRule::FuncNotEqual, I18N_NOOP("is not equal to")},
+                        {SearchRule::FuncIsGreater, I18N_NOOP("is greater than")},
+                        {SearchRule::FuncIsLessOrEqual, I18N_NOOP("is less than or equal to")},
+                        {SearchRule::FuncIsLess, I18N_NOOP("is less than")},
+                        {SearchRule::FuncIsGreaterOrEqual, I18N_NOOP("is greater than or equal to")}};
+static const int NumericFunctionCount = sizeof(NumericFunctions) / sizeof(*NumericFunctions);
 
 //---------------------------------------------------------------------------
 
-QWidget *NumericRuleWidgetHandler::createFunctionWidget(
-    int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
+QWidget *NumericRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
 {
     if (number != 0) {
         return nullptr;
@@ -45,8 +41,7 @@ QWidget *NumericRuleWidgetHandler::createFunctionWidget(
         funcCombo->addItem(i18n(NumericFunctions[i].displayName));
     }
     funcCombo->adjustSize();
-    QObject::connect(funcCombo, SIGNAL(activated(int)),
-                     receiver, SLOT(slotFunctionChanged()));
+    QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));
     return funcCombo;
 }
 
@@ -60,15 +55,13 @@ QWidget *NumericRuleWidgetHandler::createValueWidget(int number, QStackedWidget 
 
     auto numInput = new KPluralHandlingSpinBox(valueStack);
     numInput->setObjectName(QStringLiteral("KPluralHandlingSpinBox"));
-    QObject::connect(numInput, SIGNAL(valueChanged(int)),
-                     receiver, SLOT(slotValueChanged()));
+    QObject::connect(numInput, SIGNAL(valueChanged(int)), receiver, SLOT(slotValueChanged()));
     return numInput;
 }
 
 //---------------------------------------------------------------------------
 
-SearchRule::Function NumericRuleWidgetHandler::currentFunction(
-    const QStackedWidget *functionStack) const
+SearchRule::Function NumericRuleWidgetHandler::currentFunction(const QStackedWidget *functionStack) const
 {
     const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("numericRuleFuncCombo"));
 

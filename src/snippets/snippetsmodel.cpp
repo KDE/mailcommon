@@ -9,13 +9,13 @@
 
 #include "snippetsmodel.h"
 
-#include <KMessageBox>
-#include <KLocalizedString>
-#include <QMimeData>
-#include <QDataStream>
-#include <QStringList>
-#include <KSharedConfig>
 #include <KConfigGroup>
+#include <KLocalizedString>
+#include <KMessageBox>
+#include <KSharedConfig>
+#include <QDataStream>
+#include <QMimeData>
+#include <QStringList>
 
 using namespace MailCommon;
 
@@ -438,9 +438,7 @@ bool SnippetsModel::removeRows(int row, int count, const QModelIndex &parent)
 
 QStringList SnippetsModel::mimeTypes() const
 {
-    return
-        QStringList() << QStringLiteral("text/x-kmail-textsnippet")
-                      << QStringLiteral("text/plain");
+    return QStringList() << QStringLiteral("text/x-kmail-textsnippet") << QStringLiteral("text/plain");
 }
 
 QMimeData *SnippetsModel::mimeData(const QModelIndexList &indexes) const
@@ -460,16 +458,8 @@ QMimeData *SnippetsModel::mimeData(const QModelIndexList &indexes) const
 
     QByteArray encodedData;
     QDataStream stream(&encodedData, QIODevice::WriteOnly);
-    stream << index.parent().internalId()
-           << item->name()
-           << item->text()
-           << item->keySequence()
-           << item->keyword()
-           << item->subject()
-           << item->to()
-           << item->cc()
-           << item->bcc()
-           << item->attachment();
+    stream << index.parent().internalId() << item->name() << item->text() << item->keySequence() << item->keyword() << item->subject() << item->to()
+           << item->cc() << item->bcc() << item->attachment();
 
     mimeData->setData(QStringLiteral("text/x-kmail-textsnippet"), encodedData);
     mimeData->setText(item->text());
@@ -578,16 +568,14 @@ QModelIndex SnippetsModel::createGroup(const QString &groupName)
 
 void SnippetsModel::load(const QString &filename)
 {
-    const KSharedConfig::Ptr config
-        = KSharedConfig::openConfig(filename.isEmpty() ? QStringLiteral("kmailsnippetrc") : filename, KConfig::NoGlobals);
+    const KSharedConfig::Ptr config = KSharedConfig::openConfig(filename.isEmpty() ? QStringLiteral("kmailsnippetrc") : filename, KConfig::NoGlobals);
 
     const KConfigGroup snippetPartGroup = config->group("SnippetPart");
 
     const int groupCount = snippetPartGroup.readEntry("snippetGroupCount", 0);
 
     for (int i = 0; i < groupCount; ++i) {
-        const KConfigGroup group
-            = config->group(QStringLiteral("SnippetGroup_%1").arg(i));
+        const KConfigGroup group = config->group(QStringLiteral("SnippetGroup_%1").arg(i));
 
         const QString groupName = group.readEntry("Name");
 
@@ -596,32 +584,23 @@ void SnippetsModel::load(const QString &filename)
 
         const int snippetCount = group.readEntry("snippetCount", 0);
         for (int j = 0; j < snippetCount; ++j) {
-            const QString snippetName
-                = group.readEntry(QStringLiteral("snippetName_%1").arg(j), QString());
+            const QString snippetName = group.readEntry(QStringLiteral("snippetName_%1").arg(j), QString());
 
-            const QString snippetText
-                = group.readEntry(QStringLiteral("snippetText_%1").arg(j), QString());
+            const QString snippetText = group.readEntry(QStringLiteral("snippetText_%1").arg(j), QString());
 
-            const QString snippetKeySequence
-                = group.readEntry(QStringLiteral("snippetKeySequence_%1").arg(j), QString());
+            const QString snippetKeySequence = group.readEntry(QStringLiteral("snippetKeySequence_%1").arg(j), QString());
 
-            const QString snippetKeyword
-                = group.readEntry(QStringLiteral("snippetKeyword_%1").arg(j), QString());
+            const QString snippetKeyword = group.readEntry(QStringLiteral("snippetKeyword_%1").arg(j), QString());
 
-            const QString snippetSubject
-                = group.readEntry(QStringLiteral("snippetSubject_%1").arg(j), QString());
+            const QString snippetSubject = group.readEntry(QStringLiteral("snippetSubject_%1").arg(j), QString());
 
-            const QString to
-                = group.readEntry(QStringLiteral("snippetTo_%1").arg(j), QString());
+            const QString to = group.readEntry(QStringLiteral("snippetTo_%1").arg(j), QString());
 
-            const QString cc
-                = group.readEntry(QStringLiteral("snippetCc_%1").arg(j), QString());
+            const QString cc = group.readEntry(QStringLiteral("snippetCc_%1").arg(j), QString());
 
-            const QString bcc
-                = group.readEntry(QStringLiteral("snippetBcc_%1").arg(j), QString());
+            const QString bcc = group.readEntry(QStringLiteral("snippetBcc_%1").arg(j), QString());
 
-            const QString attachment
-                = group.readEntry(QStringLiteral("snippetAttachment_%1").arg(j), QString());
+            const QString attachment = group.readEntry(QStringLiteral("snippetAttachment_%1").arg(j), QString());
             createSnippet(groupIndex, snippetName, snippetText, snippetKeySequence, snippetKeyword, snippetSubject, to, cc, bcc, attachment);
         }
     }
@@ -630,17 +609,23 @@ void SnippetsModel::load(const QString &filename)
     const int variablesCount = group.readEntry("variablesCount", 0);
 
     for (int i = 0; i < variablesCount; ++i) {
-        const QString variableKey
-            = group.readEntry(QStringLiteral("variableName_%1").arg(i), QString());
+        const QString variableKey = group.readEntry(QStringLiteral("variableName_%1").arg(i), QString());
 
-        const QString variableValue
-            = group.readEntry(QStringLiteral("variableValue_%1").arg(i), QString());
+        const QString variableValue = group.readEntry(QStringLiteral("variableValue_%1").arg(i), QString());
 
         mSavedVariables.insert(variableKey, variableValue);
     }
 }
 
-void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword, const QString &snippetSubject, const QString &to, const QString &cc, const QString &bcc,
+void SnippetsModel::createSnippet(const QModelIndex &groupIndex,
+                                  const QString &snippetName,
+                                  const QString &snippetText,
+                                  const QString &snippetKeySequence,
+                                  const QString &snippetKeyword,
+                                  const QString &snippetSubject,
+                                  const QString &to,
+                                  const QString &cc,
+                                  const QString &bcc,
                                   const QString &attachment)
 {
     insertRow(rowCount(groupIndex), groupIndex);
@@ -657,15 +642,7 @@ void SnippetsModel::createSnippet(const QModelIndex &groupIndex, const QString &
     setData(modelIndex, bcc, SnippetsModel::BccRole);
     setData(modelIndex, attachment, SnippetsModel::AttachmentRole);
 
-    Q_EMIT updateActionCollection(QString(),
-                                  snippetName,
-                                  QKeySequence::fromString(snippetKeySequence),
-                                  snippetText,
-                                  snippetSubject,
-                                  to,
-                                  cc,
-                                  bcc,
-                                  attachment);
+    Q_EMIT updateActionCollection(QString(), snippetName, QKeySequence::fromString(snippetKeySequence), snippetText, snippetSubject, to, cc, bcc, attachment);
 }
 
 void SnippetsModel::setSavedVariables(const QMap<QString, QString> &savedVariables)
@@ -761,32 +738,25 @@ void SnippetsModel::save(const QString &filename)
                     group.writeEntry(QStringLiteral("snippetText_%1").arg(j), snippetText);
                 }
                 if (!snippetKeySequence.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetKeySequence_%1").arg(j),
-                                     snippetKeySequence);
+                    group.writeEntry(QStringLiteral("snippetKeySequence_%1").arg(j), snippetKeySequence);
                 }
                 if (!snippetKeyword.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetKeyword_%1").arg(j),
-                                     snippetKeyword);
+                    group.writeEntry(QStringLiteral("snippetKeyword_%1").arg(j), snippetKeyword);
                 }
                 if (!snippetSubject.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetSubject_%1").arg(j),
-                                     snippetSubject);
+                    group.writeEntry(QStringLiteral("snippetSubject_%1").arg(j), snippetSubject);
                 }
                 if (!snippetTo.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetTo_%1").arg(j),
-                                     snippetTo);
+                    group.writeEntry(QStringLiteral("snippetTo_%1").arg(j), snippetTo);
                 }
                 if (!snippetCc.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetCc_%1").arg(j),
-                                     snippetCc);
+                    group.writeEntry(QStringLiteral("snippetCc_%1").arg(j), snippetCc);
                 }
                 if (!snippetBcc.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetBcc_%1").arg(j),
-                                     snippetBcc);
+                    group.writeEntry(QStringLiteral("snippetBcc_%1").arg(j), snippetBcc);
                 }
                 if (!snippetAttachment.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetAttachment_%1").arg(j),
-                                     snippetAttachment);
+                    group.writeEntry(QStringLiteral("snippetAttachment_%1").arg(j), snippetAttachment);
                 }
             }
         }

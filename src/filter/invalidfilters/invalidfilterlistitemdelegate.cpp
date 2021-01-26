@@ -6,12 +6,12 @@
 #include "invalidfilterlistitemdelegate.h"
 #include "invalidfilterlistmodel.h"
 
-#include <QIcon>
 #include <QAbstractItemView>
+#include <QIcon>
+#include <QLabel>
 #include <QPainter>
 #include <QPushButton>
 #include <QToolButton>
-#include <QLabel>
 
 using namespace MailCommon;
 
@@ -29,8 +29,7 @@ QSize InvalidFilterListItemDelegate::sizeHint(const QStyleOptionViewItem &option
     Q_UNUSED(index)
 
     const QStyle *style = itemView()->style();
-    const int buttonHeight = style->pixelMetric(QStyle::PM_ButtonMargin) * 2
-                             +style->pixelMetric(QStyle::PM_ButtonIconSize);
+    const int buttonHeight = style->pixelMetric(QStyle::PM_ButtonMargin) * 2 + style->pixelMetric(QStyle::PM_ButtonIconSize);
     const int fontHeight = option.fontMetrics.height();
     return QSize(100, qMax(buttonHeight, fontHeight));
 }
@@ -57,7 +56,9 @@ QList<QWidget *> InvalidFilterListItemDelegate::createItemWidgets(const QModelIn
     return QList<QWidget *>() << label << showInformationToolButton;
 }
 
-void InvalidFilterListItemDelegate::updateItemWidgets(const QList<QWidget *> widgets, const QStyleOptionViewItem &option, const QPersistentModelIndex &index) const
+void InvalidFilterListItemDelegate::updateItemWidgets(const QList<QWidget *> widgets,
+                                                      const QStyleOptionViewItem &option,
+                                                      const QPersistentModelIndex &index) const
 {
     auto label = static_cast<QLabel *>(widgets[0]);
     const QAbstractItemModel *model = index.model();
@@ -69,8 +70,7 @@ void InvalidFilterListItemDelegate::updateItemWidgets(const QList<QWidget *> wid
     const int itemHeight = sizeHint(option, index).height();
     showInformationToolButton->setIcon(QIcon::fromTheme(QStringLiteral("help-hint")));
     showInformationToolButton->resize(showInformationToolButton->sizeHint());
-    showInformationToolButton->move(option.rect.right() - showInformationToolButton->width(),
-                                    (itemHeight - showInformationToolButton->height()) / 2);
+    showInformationToolButton->move(option.rect.right() - showInformationToolButton->width(), (itemHeight - showInformationToolButton->height()) / 2);
 
     int labelWidth = option.rect.width();
     labelWidth -= showInformationToolButton->sizeHint().width();

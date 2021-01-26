@@ -9,8 +9,8 @@
 #include "filter/filterlog.h"
 using MailCommon::FilterLog;
 
-#include <QDateTime>
 #include <KMime/KMimeMessage>
+#include <QDateTime>
 
 #include <QRegularExpression>
 
@@ -57,8 +57,7 @@ bool SearchRuleNumerical::matches(const Akonadi::Item &item) const
     }
     bool rc = matchesInternal(numericalValue, numericalMsgContents, msgContents);
     if (FilterLog::instance()->isLogging()) {
-        QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>")
-                       : QStringLiteral("<font color=#FF0000>0 = </font>"));
+        QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>") : QStringLiteral("<font color=#FF0000>0 = </font>"));
         msg += FilterLog::recode(asString());
         msg += QLatin1String(" ( <i>") + QString::number(numericalMsgContents) + QLatin1String("</i> )");
         FilterLog::instance()->add(msg, FilterLog::RuleResult);
@@ -104,14 +103,13 @@ bool SearchRuleNumerical::matchesInternal(long numericalValue, long numericalMsg
     case FuncIsGreaterOrEqual:
         return numericalMsgContents >= numericalValue;
 
-    case FuncIsInAddressbook:  // since email-addresses are not numerical, I settle for false here
+    case FuncIsInAddressbook: // since email-addresses are not numerical, I settle for false here
         return false;
 
     case FuncIsNotInAddressbook:
         return false;
 
-    default:
-        ;
+    default:;
     }
 
     return false;

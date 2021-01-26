@@ -13,10 +13,12 @@
 #include <QDialog>
 
 class QCheckBox;
-namespace KPIMTextEdit {
+namespace KPIMTextEdit
+{
 class PlainTextEditorWidget;
 }
-namespace MailCommon {
+namespace MailCommon
+{
 class SnippetVariableDialog : public QDialog
 {
     Q_OBJECT

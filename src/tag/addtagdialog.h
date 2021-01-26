@@ -9,14 +9,15 @@
 
 #include "mailcommon_export.h"
 #include "tag.h"
-#include <QVector>
-#include <QDialog>
 #include <AkonadiCore/Tag>
 #include <AkonadiCore/TagCreateJob>
+#include <QDialog>
+#include <QVector>
 
 class KActionCollection;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class AddTagDialogPrivate;
 class MAILCOMMON_EXPORT AddTagDialog : public QDialog
 {

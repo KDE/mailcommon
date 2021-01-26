@@ -10,7 +10,8 @@
 
 #include "filteraction.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionSetTransport - set transport to...
 // Specify mail transport (smtp server) to be used when replying to a message

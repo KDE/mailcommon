@@ -11,11 +11,11 @@
 #include "mailfilter.h"
 
 // other kmail headers
+#include "dialog/filteractionmissingaccountdialog.h"
 #include "filteractions/filteraction.h"
 #include "filteractions/filteractiondict.h"
-#include "filtermanager.h"
 #include "filterlog.h"
-#include "dialog/filteractionmissingaccountdialog.h"
+#include "filtermanager.h"
 using MailCommon::FilterLog;
 
 #include <PimCommon/PimUtil>
@@ -24,12 +24,12 @@ using MailCommon::FilterLog;
 #include <AgentManager>
 
 // other KDE headers
-#include <KLocalizedString>
-#include <KMessageBox>
 #include <KConfig>
 #include <KConfigGroup>
-#include <krandom.h>
+#include <KLocalizedString>
+#include <KMessageBox>
 #include <QPointer>
+#include <krandom.h>
 
 #include <algorithm>
 #include <boost/bind.hpp>
@@ -129,8 +129,7 @@ MailFilter::ReturnCode MailFilter::execActions(ItemContext &context, bool &stopI
     QVector<FilterAction *>::const_iterator end(mActions.constEnd());
     for (; it != end; ++it) {
         if (FilterLog::instance()->isLogging()) {
-            const QString logText(i18n("<b>Applying filter action:</b> %1",
-                                       (*it)->displayString()));
+            const QString logText(i18n("<b>Applying filter action:</b> %1", (*it)->displayString()));
             FilterLog::instance()->add(logText, FilterLog::AppliedAction);
         }
 
@@ -139,16 +138,14 @@ MailFilter::ReturnCode MailFilter::execActions(ItemContext &context, bool &stopI
         switch (result) {
         case FilterAction::CriticalError:
             if (FilterLog::instance()->isLogging()) {
-                const QString logText = QStringLiteral("<font color=#FF0000>%1</font>")
-                                        .arg(i18n("A critical error occurred. Processing stops here."));
+                const QString logText = QStringLiteral("<font color=#FF0000>%1</font>").arg(i18n("A critical error occurred. Processing stops here."));
                 FilterLog::instance()->add(logText, FilterLog::AppliedAction);
             }
             // in case it's a critical error: return immediately!
             return CriticalError;
         case FilterAction::ErrorButGoOn:
             if (FilterLog::instance()->isLogging()) {
-                const QString logText = QStringLiteral("<font color=#FF0000>%1</font>")
-                                        .arg(i18n("A problem was found while applying this action."));
+                const QString logText = QStringLiteral("<font color=#FF0000>%1</font>").arg(i18n("A problem was found while applying this action."));
                 FilterLog::instance()->add(logText, FilterLog::AppliedAction);
             }
         case FilterAction::GoOn:
@@ -244,9 +241,9 @@ MailFilter::AccountType MailFilter::applicability() const
 
 SearchRule::RequiredPart MailFilter::requiredPart(const QString &id) const
 {
-    //find the required message part needed for the filter
-    //this can be either only the Envelope, all Header or the CompleteMessage
-    //Makes the assumption that  Envelope < Header < CompleteMessage
+    // find the required message part needed for the filter
+    // this can be either only the Envelope, all Header or the CompleteMessage
+    // Makes the assumption that  Envelope < Header < CompleteMessage
     int requiredPart = SearchRule::Envelope;
 
     if (!bEnabled || !applyOnAccount(id)) {
@@ -254,16 +251,18 @@ SearchRule::RequiredPart MailFilter::requiredPart(const QString &id) const
     }
 
     if (pattern()) {
-        requiredPart = qMax(requiredPart, static_cast<int>(pattern()->requiredPart()));    // no pattern means always matches?
+        requiredPart = qMax(requiredPart, static_cast<int>(pattern()->requiredPart())); // no pattern means always matches?
     }
 
     int requiredPartByActions = SearchRule::Envelope;
 
     QVector<FilterAction *> actionList = *actions();
     if (!actionList.isEmpty()) {
-        requiredPartByActions = (*std::max_element(actionList.constBegin(), actionList.constEnd(),
-                                                   boost::bind(&MailCommon::FilterAction::requiredPart, _1)
-                                                   < boost::bind(&MailCommon::FilterAction::requiredPart, _2)))->requiredPart();
+        requiredPartByActions =
+            (*std::max_element(actionList.constBegin(),
+                               actionList.constEnd(),
+                               boost::bind(&MailCommon::FilterAction::requiredPart, _1) < boost::bind(&MailCommon::FilterAction::requiredPart, _2)))
+                ->requiredPart();
     }
     requiredPart = qMax(requiredPart, requiredPartByActions);
 
@@ -406,8 +405,7 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
         bApplyOnOutbound = bool(sets.contains(QLatin1String("send-mail")));
         bApplyOnExplicit = bool(sets.contains(QLatin1String("manual-filtering")));
         bApplyOnAllFolders = bool(sets.contains(QLatin1String("all-folders")));
-        mApplicability = static_cast<AccountType>(config.readEntry(
-                                                      "Applicability", static_cast<int>(ButImap)));
+        mApplicability = static_cast<AccountType>(config.readEntry("Applicability", static_cast<int>(ButImap)));
     }
 
     bStopProcessingHere = config.readEntry("StopProcessingHere", true);
@@ -436,8 +434,7 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
         const QString actName = QStringLiteral("action-name-%1").arg(i);
         const QString argsName = QStringLiteral("action-args-%1").arg(i);
         // get the action description...
-        FilterActionDesc *desc = FilterManager::filterActionDict()->value(
-            config.readEntry(actName, QString()));
+        FilterActionDesc *desc = FilterManager::filterActionDict()->value(config.readEntry(actName, QString()));
         if (desc) {
             //...create an instance...
             FilterAction *fa = desc->create();
@@ -489,13 +486,11 @@ void MailFilter::generateSieveScript(QStringList &requiresModules, QString &code
     QVector<FilterAction *>::const_iterator it;
     QVector<FilterAction *>::const_iterator end(mActions.constEnd());
 
-    const QString indentationStr{
-        QStringLiteral("    ")
-    };
+    const QString indentationStr{QStringLiteral("    ")};
     code += QLatin1String(")\n{\n");
     bool firstAction = true;
     for (it = mActions.constBegin(); it != end; ++it) {
-        //Add endline here.
+        // Add endline here.
         if (firstAction) {
             firstAction = false;
         } else {
@@ -557,10 +552,8 @@ void MailFilter::writeConfig(KConfigGroup &config, bool exportFilter) const
     QVector<FilterAction *>::const_iterator end(mActions.constEnd());
 
     for (i = 0, it = mActions.constBegin(); it != end; ++it, ++i) {
-        config.writeEntry(QStringLiteral("action-name-%1").arg(i),
-                          (*it)->name());
-        config.writeEntry(QStringLiteral("action-args-%1").arg(i),
-                          exportFilter ? (*it)->argsAsStringReal() : (*it)->argsAsString());
+        config.writeEntry(QStringLiteral("action-name-%1").arg(i), (*it)->name());
+        config.writeEntry(QStringLiteral("action-args-%1").arg(i), exportFilter ? (*it)->argsAsStringReal() : (*it)->argsAsString());
     }
     config.writeEntry("actions", i);
     if (!mAccounts.isEmpty()) {
@@ -594,7 +587,7 @@ QString MailFilter::purify(bool removeAction)
         }
     }
 
-    if (!Akonadi::AgentManager::self()->instances().isEmpty()) {   // safety test to ensure that Akonadi system is ready
+    if (!Akonadi::AgentManager::self()->instances().isEmpty()) { // safety test to ensure that Akonadi system is ready
         // Remove invalid accounts from mAccounts - just to be tidy
         QStringList::Iterator it2 = mAccounts.begin();
         while (it2 != mAccounts.end()) {
@@ -610,8 +603,7 @@ QString MailFilter::purify(bool removeAction)
 
 bool MailFilter::isEmpty() const
 {
-    return (mPattern.isEmpty() && mActions.isEmpty())
-           || ((applicability() == Checked) && (bApplyOnInbound && mAccounts.isEmpty()));
+    return (mPattern.isEmpty() && mActions.isEmpty()) || ((applicability() == Checked) && (bApplyOnInbound && mAccounts.isEmpty()));
 }
 
 QString MailFilter::toolbarName() const
@@ -627,7 +619,7 @@ const QString MailFilter::asString() const
 {
     QString result;
 
-    result += QLatin1String("Filter name: ") + name() + QLatin1String(" (") + mIdentifier  + QLatin1String(")\n");
+    result += QLatin1String("Filter name: ") + name() + QLatin1String(" (") + mIdentifier + QLatin1String(")\n");
     result += mPattern.asString() + QLatin1Char('\n');
 
     result += QStringLiteral("Filter is %1\n").arg(bEnabled ? QStringLiteral("enabled") : QStringLiteral("disabled"));

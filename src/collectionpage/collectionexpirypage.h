@@ -13,7 +13,8 @@
 #include <Collection>
 #include <CollectionPropertiesPage>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class CollectionExpiryWidget;
 /**
  * @brief The CollectionExpiryPage class

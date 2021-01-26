@@ -8,19 +8,18 @@
 
 #include <KSharedConfig>
 
-#include <QComboBox>
 #include <KConfigGroup>
 #include <KLocalizedString>
+#include <QComboBox>
 
 #include <QDialogButtonBox>
-#include <QPushButton>
 #include <QLabel>
+#include <QPushButton>
 #include <QVBoxLayout>
 
 using namespace MailCommon;
 
-FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(
-    const QStringList &templateList, const QString &filtername, QWidget *parent)
+FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(const QStringList &templateList, const QString &filtername, QWidget *parent)
     : QDialog(parent)
 {
     setModal(true);
@@ -29,9 +28,10 @@ FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(
 
     auto label = new QLabel(this);
     label->setObjectName(QStringLiteral("label"));
-    label->setText(i18n("Filter template is missing. "
-                        "Please select a template to use with filter \"%1\"",
-                        filtername));
+    label->setText(
+        i18n("Filter template is missing. "
+             "Please select a template to use with filter \"%1\"",
+             filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
     mComboBoxTemplate = new QComboBox(this);

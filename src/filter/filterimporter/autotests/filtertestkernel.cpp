@@ -6,14 +6,14 @@
 
 #include "filtertestkernel.h"
 
+#include <AkonadiCore/changerecorder.h>
+#include <AkonadiCore/entitymimetypefiltermodel.h>
+#include <AkonadiCore/entitytreemodel.h>
+#include <AkonadiCore/session.h>
 #include <KIdentityManagement/kidentitymanagement/identitymanager.h>
+#include <KSharedConfig>
 #include <MessageComposer/AkonadiSender>
 #include <mailcommon/foldercollectionmonitor.h>
-#include <AkonadiCore/session.h>
-#include <AkonadiCore/entitytreemodel.h>
-#include <AkonadiCore/entitymimetypefiltermodel.h>
-#include <AkonadiCore/changerecorder.h>
-#include <KSharedConfig>
 
 FilterTestKernel::FilterTestKernel(QObject *parent)
     : QObject(parent)

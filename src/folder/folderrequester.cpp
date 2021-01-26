@@ -7,21 +7,22 @@
 
 #include "folderrequester.h"
 #include "folderselectiondialog.h"
-#include "util/mailutil.h"
 #include "kernel/mailkernel.h"
-#include <Libkdepim/LineEditCatchReturnKey>
+#include "util/mailutil.h"
 #include <CollectionFetchJob>
+#include <Libkdepim/LineEditCatchReturnKey>
 
-#include <QPointer>
-#include <QLineEdit>
 #include <KLocalizedString>
 #include <QIcon>
+#include <QLineEdit>
+#include <QPointer>
 
 #include <QHBoxLayout>
 #include <QKeyEvent>
 #include <QToolButton>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class FolderRequesterPrivate
 {
 public:
@@ -51,8 +52,7 @@ FolderRequester::FolderRequester(QWidget *parent)
     hlay->addWidget(button);
     connect(button, &QToolButton::clicked, this, &FolderRequester::slotOpenDialog);
 
-    setSizePolicy(QSizePolicy(QSizePolicy::MinimumExpanding,
-                              QSizePolicy::Fixed));
+    setSizePolicy(QSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Fixed));
     setFocusPolicy(Qt::StrongFocus);
 }
 
@@ -106,14 +106,13 @@ void FolderRequester::setCollection(const Akonadi::Collection &collection, bool 
     d->mCollection = collection;
     if (d->mCollection.isValid()) {
         if (fetchCollection) {
-            auto *job
-                = new Akonadi::CollectionFetchJob(d->mCollection, Akonadi::CollectionFetchJob::Base, this);
+            auto *job = new Akonadi::CollectionFetchJob(d->mCollection, Akonadi::CollectionFetchJob::Base, this);
 
             connect(job, &Akonadi::CollectionFetchJob::result, this, &FolderRequester::slotCollectionsReceived);
         } else {
             setCollectionFullPath(d->mCollection);
         }
-    } else if (!d->mMustBeReadWrite) {   // the Local Folders root node was selected
+    } else if (!d->mMustBeReadWrite) { // the Local Folders root node was selected
         d->mEdit->setText(i18n("Local Folders"));
     }
 

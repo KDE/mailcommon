@@ -9,10 +9,10 @@
 #include "mailcommon_debug.h"
 #include "util/cryptoutils.h"
 
-#include <QEventLoop>
-#include <QVBoxLayout>
 #include <QCheckBox>
+#include <QEventLoop>
 #include <QLabel>
+#include <QVBoxLayout>
 
 #include <KLocalizedString>
 
@@ -25,8 +25,8 @@
 #include <gpgme++/encryptionresult.h>
 #include <gpgme++/keylistresult.h>
 
-#include <Libkleo/KeySelectionCombo>
 #include <Libkleo/DefaultKeyFilter>
+#include <Libkleo/KeySelectionCombo>
 
 #include <MessageComposer/EncryptJob>
 
@@ -65,10 +65,8 @@ QString FilterActionEncrypt::argsAsString() const
         return {};
     }
 
-    const auto proto = ((mKey.protocol() == GpgME::OpenPGP) ? QStringLiteral("PGP")
-                        : QStringLiteral("SMIME"));
-    return QStringLiteral("%1:%2:%3").arg(proto, QString::number(int(mReencrypt)),
-                                          QString::fromLatin1(mKey.primaryFingerprint()));
+    const auto proto = ((mKey.protocol() == GpgME::OpenPGP) ? QStringLiteral("PGP") : QStringLiteral("SMIME"));
+    return QStringLiteral("%1:%2:%3").arg(proto, QString::number(int(mReencrypt)), QString::fromLatin1(mKey.primaryFingerprint()));
 }
 
 void FilterActionEncrypt::argsFromString(const QString &argsStr)
@@ -92,7 +90,7 @@ void FilterActionEncrypt::argsFromString(const QString &argsStr)
     auto listJob = proto->keyListJob(false, true, true);
 
     std::vector<GpgME::Key> keys;
-    auto result = listJob->exec({ fp }, true, keys);
+    auto result = listJob->exec({fp}, true, keys);
     listJob->deleteLater();
 
     if (result.error()) {
@@ -179,7 +177,7 @@ FilterAction::ReturnCode FilterActionEncrypt::process(ItemContext &context, bool
     MessageComposer::EncryptJob encrypt;
     encrypt.setContent(msg.data());
     encrypt.setCryptoMessageFormat(mKey.protocol() == GpgME::OpenPGP ? Kleo::OpenPGPMIMEFormat : Kleo::SMIMEFormat);
-    encrypt.setEncryptionKeys({ mKey });
+    encrypt.setEncryptionKeys({mKey});
     encrypt.exec();
     if (encrypt.error()) {
         qCWarning(MAILCOMMON_LOG) << "Encryption error:" << encrypt.errorString();
@@ -227,13 +225,11 @@ QWidget *FilterActionEncrypt::createParamWidget(QWidget *parent) const
 
     combo->setProperty(LISTING_FINISHED, false);
     combo->setProperty(IGNORE_KEY_CHANGE, false);
-    connect(combo, &Kleo::KeySelectionCombo::keyListingFinished,
-            combo, [combo] {
+    connect(combo, &Kleo::KeySelectionCombo::keyListingFinished, combo, [combo] {
         combo->setProperty(LISTING_FINISHED, true);
         combo->setProperty(IGNORE_KEY_CHANGE, true);
     });
-    connect(combo, &Kleo::KeySelectionCombo::currentKeyChanged,
-            this, [this, combo]() {
+    connect(combo, &Kleo::KeySelectionCombo::currentKeyChanged, this, [this, combo]() {
         // Ignore key change due to the combo box populating itself after
         // finish
         if (!combo->property(IGNORE_KEY_CHANGE).toBool()) {
@@ -247,8 +243,7 @@ QWidget *FilterActionEncrypt::createParamWidget(QWidget *parent) const
     auto chkBox = new QCheckBox(w);
     chkBox->setText(i18n("Re-encrypt encrypted emails with this key"));
     chkBox->setChecked(mReencrypt);
-    connect(chkBox, &QCheckBox::toggled,
-            this, &FilterActionEncrypt::filterActionModified);
+    connect(chkBox, &QCheckBox::toggled, this, &FilterActionEncrypt::filterActionModified);
     l->addWidget(chkBox);
 
     auto lbl = new QLabel(w);
@@ -257,10 +252,11 @@ QWidget *FilterActionEncrypt::createParamWidget(QWidget *parent) const
     lbl->setPalette(palette);
     lbl->setWordWrap(true);
     lbl->setText(i18n("<b>Warning:</b> Seckey necessary to read emails."));
-    lbl->setToolTip(i18n("<p>Once an email has been encrypted you will need a crypto setup with "
-                         "your secret key to access the contents again.</p>"
-                         "<p>If you keep emails stored on an email server and use several clients, "
-                         "each of them must be configured to enable decryption.</p>"));
+    lbl->setToolTip(
+        i18n("<p>Once an email has been encrypted you will need a crypto setup with "
+             "your secret key to access the contents again.</p>"
+             "<p>If you keep emails stored on an email server and use several clients, "
+             "each of them must be configured to enable decryption.</p>"));
     l->addWidget(lbl);
 
     return w;
@@ -286,8 +282,7 @@ void FilterActionEncrypt::applyParamWidgetValue(QWidget *paramWidget)
         // to this method being called on an un-populated combobox
         if (!combo->property(LISTING_FINISHED).toBool()) {
             QEventLoop ev;
-            connect(combo, &Kleo::KeySelectionCombo::keyListingFinished,
-                    &ev, &QEventLoop::quit, Qt::QueuedConnection);
+            connect(combo, &Kleo::KeySelectionCombo::keyListingFinished, &ev, &QEventLoop::quit, Qt::QueuedConnection);
             ev.exec();
         }
         mKey = combo->currentKey();

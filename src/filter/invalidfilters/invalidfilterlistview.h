@@ -7,11 +7,12 @@
 #ifndef INVALIDFILTERLISTVIEW_H
 #define INVALIDFILTERLISTVIEW_H
 
-#include <QListView>
 #include "invalidfilterinfo.h"
 #include "mailcommon_private_export.h"
+#include <QListView>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MAILCOMMON_TESTS_EXPORT InvalidFilterListView : public QListView
 {
     Q_OBJECT

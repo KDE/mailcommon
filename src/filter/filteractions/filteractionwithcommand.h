@@ -12,7 +12,8 @@
 #include <QVector>
 class QTemporaryFile;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterActionWithCommand : public FilterActionWithUrl
 {
     Q_OBJECT

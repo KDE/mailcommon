@@ -9,7 +9,8 @@
 
 #include <QObject>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterAction;
 }
 
@@ -28,6 +29,7 @@ private Q_SLOTS:
     void testXUidUnchange();
     void testXUidRemoved();
     void shouldRequiresPart();
+
 private:
     void setOutput(MailCommon::FilterAction *filter, const QByteArray &output);
 };

@@ -7,15 +7,17 @@
 #ifndef SNIPPETCUSTOMFILEATTACHMENTNAMEWIDGET_H
 #define SNIPPETCUSTOMFILEATTACHMENTNAMEWIDGET_H
 
-#include <QWidget>
 #include "mailcommon_private_export.h"
 #include <MessageComposer/ConvertSnippetVariablesUtil>
+#include <QWidget>
 class QLineEdit;
-namespace MessageComposer {
+namespace MessageComposer
+{
 class ConvertSnippetVariableMenu;
 }
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MAILCOMMON_TESTS_EXPORT SnippetCustomFileAttachmentNameWidget : public QWidget
 {
     Q_OBJECT
@@ -24,6 +26,7 @@ public:
     ~SnippetCustomFileAttachmentNameWidget();
     Q_REQUIRED_RESULT QString result() const;
     void setText(const QString &str);
+
 private:
     void insertVariable(MessageComposer::ConvertSnippetVariablesUtil::VariableType variable);
     QLineEdit *mLineEdit = nullptr;

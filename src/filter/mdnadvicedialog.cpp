@@ -34,14 +34,7 @@ MDNAdviceDialog::MDNAdviceDialog(const QString &text, bool canDeny, QWidget *par
     connect(buttonBox->button(QDialogButtonBox::Yes), &QPushButton::clicked, this, &MDNAdviceDialog::slotYesClicked);
     user1Button->setText(i18n("&Send"));
     buttonBox->button(QDialogButtonBox::Yes)->setShortcut(Qt::Key_Escape);
-    KMessageBox::createKMessageBox(
-        this, buttonBox,
-        QMessageBox::Question,
-        text,
-        QStringList(),
-        QString(),
-        nullptr,
-        KMessageBox::NoExec);
+    KMessageBox::createKMessageBox(this, buttonBox, QMessageBox::Question, text, QStringList(), QString(), nullptr, KMessageBox::NoExec);
 }
 
 MDNAdviceDialog::~MDNAdviceDialog()

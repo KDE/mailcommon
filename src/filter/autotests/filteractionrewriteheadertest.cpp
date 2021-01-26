@@ -5,12 +5,12 @@
 */
 
 #include "filteractionrewriteheadertest.h"
-#include <QTest>
 #include "../filteractions/filteractionrewriteheader.h"
 #include <KLineEdit>
-#include <QLabel>
-#include <QWidget>
 #include <QComboBox>
+#include <QLabel>
+#include <QTest>
+#include <QWidget>
 
 FilterActionRewriteHeaderTest::FilterActionRewriteHeaderTest(QObject *parent)
     : QObject(parent)
@@ -86,22 +86,24 @@ void FilterActionRewriteHeaderTest::shouldNotExecuteActionWhenValueIsEmpty()
 
 void FilterActionRewriteHeaderTest::shouldRewriteHeader()
 {
-    const QByteArray data = "From: foo@kde.org\n"
-                            "To: foo@kde.org\n"
-                            "Subject: test\n"
-                            "testheader: foo\n"
-                            "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
-                            "MIME-Version: 1.0\n"
-                            "\n"
-                            "test";
-    const QByteArray output = "From: foo@kde.org\n"
-                              "To: foo@kde.org\n"
-                              "Subject: test\n"
-                              "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
-                              "MIME-Version: 1.0\n"
-                              "testheader: bla\n"
-                              "\n"
-                              "test";
+    const QByteArray data =
+        "From: foo@kde.org\n"
+        "To: foo@kde.org\n"
+        "Subject: test\n"
+        "testheader: foo\n"
+        "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
+        "MIME-Version: 1.0\n"
+        "\n"
+        "test";
+    const QByteArray output =
+        "From: foo@kde.org\n"
+        "To: foo@kde.org\n"
+        "Subject: test\n"
+        "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
+        "MIME-Version: 1.0\n"
+        "testheader: bla\n"
+        "\n"
+        "test";
 
     MailCommon::FilterActionRewriteHeader filter(this);
     KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
@@ -119,13 +121,14 @@ void FilterActionRewriteHeaderTest::shouldRewriteHeader()
 
 void FilterActionRewriteHeaderTest::shouldNotRewriteHeaderWhenHeaderNotFound()
 {
-    const QByteArray data = "From: foo@kde.org\n"
-                            "To: foo@kde.org\n"
-                            "Subject: test\n"
-                            "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
-                            "MIME-Version: 1.0\n"
-                            "\n"
-                            "test";
+    const QByteArray data =
+        "From: foo@kde.org\n"
+        "To: foo@kde.org\n"
+        "Subject: test\n"
+        "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
+        "MIME-Version: 1.0\n"
+        "\n"
+        "test";
 
     MailCommon::FilterActionRewriteHeader filter(this);
     KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
@@ -143,14 +146,15 @@ void FilterActionRewriteHeaderTest::shouldNotRewriteHeaderWhenHeaderNotFound()
 
 void FilterActionRewriteHeaderTest::shouldNotRewriteHeaderWhenRegexpNotFound()
 {
-    const QByteArray data = "From: foo@kde.org\n"
-                            "To: foo@kde.org\n"
-                            "Subject: test\n"
-                            "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
-                            "MIME-Version: 1.0\n"
-                            "testheader: bla\n"
-                            "\n"
-                            "test";
+    const QByteArray data =
+        "From: foo@kde.org\n"
+        "To: foo@kde.org\n"
+        "Subject: test\n"
+        "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
+        "MIME-Version: 1.0\n"
+        "testheader: bla\n"
+        "\n"
+        "test";
 
     MailCommon::FilterActionRewriteHeader filter(this);
     KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());

@@ -14,21 +14,23 @@
 
 class OrgKdeAkonadiPOP3SettingsInterface;
 
-namespace Akonadi {
+namespace Akonadi
+{
 class Item;
 }
 class KJob;
 
 class QString;
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * The Util namespace contains a collection of helper functions use in
  * various places.
  */
-namespace Util {
-Q_REQUIRED_RESULT MAILCOMMON_EXPORT OrgKdeAkonadiPOP3SettingsInterface *createPop3SettingsInterface(
-    const QString &ident);
+namespace Util
+{
+Q_REQUIRED_RESULT MAILCOMMON_EXPORT OrgKdeAkonadiPOP3SettingsInterface *createPop3SettingsInterface(const QString &ident);
 
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isVirtualCollection(const Akonadi::Collection &col);
 
@@ -45,8 +47,8 @@ Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isMailAgent(const Akonadi::AgentInstanc
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isUnifiedMailboxesAgent(const Akonadi::Collection &col);
 
 /**
-   * Returns the identity of the folder that contains the given Akonadi::Item.
-   */
+ * Returns the identity of the folder that contains the given Akonadi::Item.
+ */
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT uint folderIdentity(const Akonadi::Item &item);
 
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT QString realFolderPath(const QString &path);

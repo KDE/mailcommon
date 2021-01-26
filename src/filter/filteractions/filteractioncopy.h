@@ -12,7 +12,8 @@
 
 class KJob;
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionCopy - copy into folder
 // Copy message into another mail folder

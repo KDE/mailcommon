@@ -50,7 +50,7 @@ void SearchRuleTest::shouldHaveDefaultValue()
 void SearchRuleTest::shouldAssignValue()
 {
     TestSearchRule searchrule;
-    //TODO
+    // TODO
 }
 
 QTEST_MAIN(SearchRuleTest)

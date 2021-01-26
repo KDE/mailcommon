@@ -6,16 +6,16 @@
 */
 
 #include "rulewidgethandlermanager.h"
-#include "textrulerwidgethandler.h"
-#include "statusrulewidgethandler.h"
-#include "messagerulewidgethandler.h"
-#include "numericrulewidgethandler.h"
-#include "tagrulewidgethandler.h"
 #include "daterulewidgethandler.h"
-#include "numericdoublerulewidgethandler.h"
-#include "headersrulerwidgethandler.h"
 #include "encryptionwidgethandler.h"
+#include "headersrulerwidgethandler.h"
 #include "interfaces/rulewidgethandler.h"
+#include "messagerulewidgethandler.h"
+#include "numericdoublerulewidgethandler.h"
+#include "numericrulewidgethandler.h"
+#include "statusrulewidgethandler.h"
+#include "tagrulewidgethandler.h"
+#include "textrulerwidgethandler.h"
 
 #include <MessageViewer/Stl_Util>
 
@@ -47,8 +47,7 @@ MailCommon::RuleWidgetHandlerManager::RuleWidgetHandlerManager()
 
 MailCommon::RuleWidgetHandlerManager::~RuleWidgetHandlerManager()
 {
-    for_each(mHandlers.begin(), mHandlers.end(),
-             MessageViewer::DeleteAndSetToZero<RuleWidgetHandler>());
+    for_each(mHandlers.begin(), mHandlers.end(), MessageViewer::DeleteAndSetToZero<RuleWidgetHandler>());
 }
 
 void MailCommon::RuleWidgetHandlerManager::setIsAkonadiSearch(bool isBalooSearch)
@@ -61,7 +60,7 @@ void MailCommon::RuleWidgetHandlerManager::registerHandler(const RuleWidgetHandl
     if (!handler) {
         return;
     }
-    unregisterHandler(handler);   // don't produce duplicates
+    unregisterHandler(handler); // don't produce duplicates
     mHandlers.push_back(handler);
 }
 
@@ -71,7 +70,8 @@ void MailCommon::RuleWidgetHandlerManager::unregisterHandler(const RuleWidgetHan
     mHandlers.erase(remove(mHandlers.begin(), mHandlers.end(), handler), mHandlers.end());
 }
 
-namespace {
+namespace
+{
 /**
  * Returns the number of immediate children of parent with the given object name.
  * Used by RuleWidgetHandlerManager::createWidgets().
@@ -94,9 +94,7 @@ void MailCommon::RuleWidgetHandlerManager::createWidgets(QStackedWidget *functio
     const_iterator end(mHandlers.constEnd());
     for (const_iterator it = mHandlers.constBegin(); it != end; ++it) {
         QWidget *w = nullptr;
-        for (int i = 0;
-             (w = (*it)->createFunctionWidget(i, functionStack, receiver, mIsBalooSearch));
-             ++i) {
+        for (int i = 0; (w = (*it)->createFunctionWidget(i, functionStack, receiver, mIsBalooSearch)); ++i) {
             if (childCount(functionStack, w->objectName()) < 2) {
                 // there wasn't already a widget with this name, so add this widget
                 functionStack->addWidget(w);
@@ -106,9 +104,7 @@ void MailCommon::RuleWidgetHandlerManager::createWidgets(QStackedWidget *functio
                 w = nullptr;
             }
         }
-        for (int i = 0;
-             (w = (*it)->createValueWidget(i, valueStack, receiver));
-             ++i) {
+        for (int i = 0; (w = (*it)->createValueWidget(i, valueStack, receiver)); ++i) {
             if (childCount(valueStack, w->objectName()) < 2) {
                 // there wasn't already a widget with this name, so add this widget
                 valueStack->addWidget(w);
@@ -121,8 +117,7 @@ void MailCommon::RuleWidgetHandlerManager::createWidgets(QStackedWidget *functio
     }
 }
 
-SearchRule::Function MailCommon::RuleWidgetHandlerManager::function(
-    const QByteArray &field, const QStackedWidget *functionStack) const
+SearchRule::Function MailCommon::RuleWidgetHandlerManager::function(const QByteArray &field, const QStackedWidget *functionStack) const
 {
     const_iterator end(mHandlers.constEnd());
     for (const_iterator it = mHandlers.constBegin(); it != end; ++it) {

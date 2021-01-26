@@ -153,7 +153,8 @@ bool MDNStateAttribute::operator==(const MDNStateAttribute &other) const
 }
 
 // Register the attribute when the library is loaded.
-namespace {
+namespace
+{
 bool dummyMDNStateAttribute()
 {
     using namespace MailCommon;

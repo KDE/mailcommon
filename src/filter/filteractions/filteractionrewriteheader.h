@@ -12,7 +12,8 @@
 
 #include <QRegularExpression>
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionRewriteHeader - rewrite header
 // Rewrite a header using a regexp.

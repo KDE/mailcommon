@@ -8,17 +8,17 @@
 #include "sendmdnhandler.h"
 
 #include "kernel/mailkernel.h"
-#include "util/mailutil.h"
-#include "mdnadvicehelper.h"
 #include "mailcommon_debug.h"
-#include <MessageComposer/Util>
+#include "mdnadvicehelper.h"
+#include "util/mailutil.h"
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
+#include <MessageComposer/Util>
 #include <MessageViewer/MessageViewerSettings>
 
+#include <Akonadi/KMime/MessageFlags>
 #include <Collection>
 #include <Item>
-#include <Akonadi/KMime/MessageFlags>
 
 #include <QQueue>
 #include <QTimer>
@@ -60,9 +60,7 @@ void SendMdnHandler::Private::handleMessages()
 
         const Akonadi::Collection collection = item.parentCollection();
         if (collection.isValid()
-            && (CommonKernel->folderIsSentMailFolder(collection)
-                || CommonKernel->folderIsTrash(collection)
-                || CommonKernel->folderIsDraftOrOutbox(collection)
+            && (CommonKernel->folderIsSentMailFolder(collection) || CommonKernel->folderIsTrash(collection) || CommonKernel->folderIsDraftOrOutbox(collection)
                 || CommonKernel->folderIsTemplates(collection))) {
             continue;
         }
@@ -72,8 +70,7 @@ void SendMdnHandler::Private::handleMessages()
             continue;
         }
 
-        const QPair<bool, KMime::MDN::SendingMode> mdnSend
-            = MDNAdviceHelper::instance()->checkAndSetMDNInfo(item, KMime::MDN::Displayed);
+        const QPair<bool, KMime::MDN::SendingMode> mdnSend = MDNAdviceHelper::instance()->checkAndSetMDNInfo(item, KMime::MDN::Displayed);
         if (mdnSend.first) {
             const int quote = MessageViewer::MessageViewerSettings::self()->quoteMessage();
 
@@ -81,8 +78,7 @@ void SendMdnHandler::Private::handleMessages()
             factory.setIdentityManager(mKernel->identityManager());
             factory.setFolderIdentity(MailCommon::Util::folderIdentity(item));
 
-            const KMime::Message::Ptr mdn
-                = factory.createMDN(KMime::MDN::ManualAction, KMime::MDN::Displayed, mdnSend.second, quote);
+            const KMime::Message::Ptr mdn = factory.createMDN(KMime::MDN::ManualAction, KMime::MDN::Displayed, mdnSend.second, quote);
             if (mdn) {
                 if (!mKernel->msgSender()->send(mdn)) {
                     qCDebug(MAILCOMMON_LOG) << "Sending failed.";
@@ -117,8 +113,7 @@ void SendMdnHandler::setItem(const Akonadi::Item &item)
 
     d->mItemQueue.enqueue(item);
 
-    if (MessageViewer::MessageViewerSettings::self()->delayedMarkAsRead()
-        && MessageViewer::MessageViewerSettings::self()->delayedMarkTime() != 0) {
+    if (MessageViewer::MessageViewerSettings::self()->delayedMarkAsRead() && MessageViewer::MessageViewerSettings::self()->delayedMarkTime() != 0) {
         d->mTimer.start(MessageViewer::MessageViewerSettings::self()->delayedMarkTime() * 1000);
         return;
     }

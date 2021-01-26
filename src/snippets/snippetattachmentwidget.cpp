@@ -6,11 +6,11 @@
 
 #include "snippetattachmentwidget.h"
 #include "snippetselectattachmentdialog.h"
+#include <KLocalizedString>
 #include <QHBoxLayout>
 #include <QLineEdit>
-#include <KLocalizedString>
-#include <QToolButton>
 #include <QPointer>
+#include <QToolButton>
 
 using namespace MailCommon;
 

@@ -18,7 +18,7 @@ FilterActionExec::FilterActionExec(QObject *parent)
 
 FilterAction::ReturnCode FilterActionExec::process(ItemContext &context, bool) const
 {
-    return FilterActionWithCommand::genericProcess(context, false);   // ignore output
+    return FilterActionWithCommand::genericProcess(context, false); // ignore output
 }
 
 SearchRule::RequiredPart FilterActionExec::requiredPart() const

@@ -5,8 +5,8 @@
 */
 
 #include "filterconverttosieve.h"
-#include "filterconverttosieveresultdialog.h"
 #include "filter/mailfilter.h"
+#include "filterconverttosieveresultdialog.h"
 
 #include <QPointer>
 

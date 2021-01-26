@@ -8,20 +8,22 @@
 #ifndef MAILCOMMON_FOLDERTREEVIEW_H
 #define MAILCOMMON_FOLDERTREEVIEW_H
 
-#include "mailcommon_export.h"
 #include "foldertreewidget.h"
 #include "mailcommon/mailutil.h"
+#include "mailcommon_export.h"
 
-#include <EntityTreeView>
 #include <Collection>
+#include <EntityTreeView>
 
 class QMouseEvent;
 
-namespace Akonadi {
+namespace Akonadi
+{
 class CollectionStatisticsDelegate;
 }
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * This is an enhanced EntityTreeView specially suited for the folders in KMail's
  * main folder widget.
@@ -56,11 +58,9 @@ public:
     void updatePalette();
 
     void keyboardSearch(const QString &) override;
+
 protected:
-    enum Move {
-        Next = 0,
-        Previous = 1
-    };
+    enum Move { Next = 0, Previous = 1 };
 
     void init(bool showUnreadCount);
     void selectModelIndex(const QModelIndex &);
@@ -93,10 +93,7 @@ Q_SIGNALS:
     void newTabRequested(bool);
 
 private:
-    enum SearchDirection {
-        ForwardSearch,
-        BackwardSearch
-    };
+    enum SearchDirection { ForwardSearch, BackwardSearch };
 
     QModelIndex indexAbove(const QModelIndex &current) const;
     QModelIndex indexBelow(const QModelIndex &current) const;

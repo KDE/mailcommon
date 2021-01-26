@@ -9,18 +9,16 @@
 #include <KLocalizedString>
 using namespace MailCommon;
 
-const Akonadi::MessageStatus MailCommon::FilterActionStatus::stati[] = {
-    Akonadi::MessageStatus::statusImportant(),
-    Akonadi::MessageStatus::statusRead(),
-    Akonadi::MessageStatus::statusUnread(),
-    Akonadi::MessageStatus::statusReplied(),
-    Akonadi::MessageStatus::statusForwarded(),
-    Akonadi::MessageStatus::statusWatched(),
-    Akonadi::MessageStatus::statusIgnored(),
-    Akonadi::MessageStatus::statusSpam(),
-    Akonadi::MessageStatus::statusHam(),
-    Akonadi::MessageStatus::statusToAct()
-};
+const Akonadi::MessageStatus MailCommon::FilterActionStatus::stati[] = {Akonadi::MessageStatus::statusImportant(),
+                                                                        Akonadi::MessageStatus::statusRead(),
+                                                                        Akonadi::MessageStatus::statusUnread(),
+                                                                        Akonadi::MessageStatus::statusReplied(),
+                                                                        Akonadi::MessageStatus::statusForwarded(),
+                                                                        Akonadi::MessageStatus::statusWatched(),
+                                                                        Akonadi::MessageStatus::statusIgnored(),
+                                                                        Akonadi::MessageStatus::statusSpam(),
+                                                                        Akonadi::MessageStatus::statusHam(),
+                                                                        Akonadi::MessageStatus::statusToAct()};
 
 const int MailCommon::FilterActionStatus::StatiCount = sizeof(MailCommon::FilterActionStatus::stati) / sizeof(Akonadi::MessageStatus);
 

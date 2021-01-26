@@ -8,10 +8,11 @@
 #ifndef MAILCOMMON_FOLDERJOB_H
 #define MAILCOMMON_FOLDERJOB_H
 
-#include <Collection>
 #include "mailcommon_export.h"
+#include <Collection>
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @brief The FolderJob class
  */

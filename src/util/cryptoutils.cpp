@@ -8,14 +8,14 @@
 #include "cryptoutils.h"
 #include "mailcommon_debug.h"
 
-#include <QGpgME/Protocol>
 #include <QGpgME/DecryptJob>
+#include <QGpgME/Protocol>
 #include <QGpgME/VerifyOpaqueJob>
 
-#include <gpgme++/decryptionresult.h>
-#include <gpgme++/verificationresult.h>
 #include <gpgme++/context.h>
+#include <gpgme++/decryptionresult.h>
 #include <gpgme++/gpgmepp_version.h>
+#include <gpgme++/verificationresult.h>
 
 using namespace MailCommon;
 
@@ -49,9 +49,7 @@ bool CryptoUtils::isInlinePGP(const KMime::Content *part)
 bool CryptoUtils::isPGP(const KMime::Content *part, bool allowOctetStream)
 {
     const auto ct = static_cast<KMime::Headers::ContentType *>(part->headerByType("Content-Type"));
-    return ct && (ct->isSubtype("pgp-encrypted")
-                  || ct->isSubtype("encrypted")
-                  || (allowOctetStream && ct->isMimeType("application/octet-stream")));
+    return ct && (ct->isSubtype("pgp-encrypted") || ct->isSubtype("encrypted") || (allowOctetStream && ct->isMimeType("application/octet-stream")));
 }
 
 bool CryptoUtils::isSMIME(const KMime::Content *part)
@@ -158,9 +156,7 @@ void CryptoUtils::copyHeader(const KMime::Headers::Base *header, KMime::Message:
 
 bool CryptoUtils::isContentHeader(const KMime::Headers::Base *header)
 {
-    return header->is("Content-Type")
-           || header->is("Content-Transfer-Encoding")
-           || header->is("Content-Disposition");
+    return header->is("Content-Type") || header->is("Content-Transfer-Encoding") || header->is("Content-Disposition");
 }
 
 KMime::Message::Ptr CryptoUtils::assembleMessage(const KMime::Message::Ptr &orig, const KMime::Content *newContent)

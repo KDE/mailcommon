@@ -5,92 +5,92 @@
 */
 
 #include "kmfilterlistbox.h"
-#include "mailfilter.h"
-#include "filtermanager.h"
 #include "filteractions/filteractiondict.h"
-#include <QInputDialog>
-#include "invalidfilters/invalidfilterinfo.h"
+#include "filtermanager.h"
 #include "invalidfilters/invalidfilterdialog.h"
-#include <KLocalizedString>
-#include <KListWidgetSearchLine>
-#include <QPushButton>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QListWidget>
-#include <QShortcut>
-#include <KMessageBox>
+#include "invalidfilters/invalidfilterinfo.h"
 #include "mailcommon_debug.h"
+#include "mailfilter.h"
+#include <KListWidgetSearchLine>
+#include <KLocalizedString>
+#include <KMessageBox>
+#include <QHBoxLayout>
+#include <QInputDialog>
 #include <QKeyEvent>
+#include <QListWidget>
 #include <QPointer>
+#include <QPushButton>
+#include <QShortcut>
+#include <QVBoxLayout>
 
 // What's this help texts
-const char _wt_filterlist[]
-    = I18N_NOOP("<qt><p>This is the list of defined filters. "
-                "They are processed top-to-bottom.</p>"
-                "<p>Click on any filter to edit it "
-                "using the controls in the right-hand half "
-                "of the dialog.</p></qt>");
+const char _wt_filterlist[] = I18N_NOOP(
+    "<qt><p>This is the list of defined filters. "
+    "They are processed top-to-bottom.</p>"
+    "<p>Click on any filter to edit it "
+    "using the controls in the right-hand half "
+    "of the dialog.</p></qt>");
 
-const char _wt_filterlist_new[]
-    = I18N_NOOP("<qt><p>Click this button to create a new filter.</p>"
-                "<p>The filter will be inserted just before the currently-"
-                "selected one, but you can always change that "
-                "later on.</p>"
-                "<p>If you have clicked this button accidentally, you can undo this "
-                "by clicking on the <em>Delete</em> button.</p></qt>");
+const char _wt_filterlist_new[] = I18N_NOOP(
+    "<qt><p>Click this button to create a new filter.</p>"
+    "<p>The filter will be inserted just before the currently-"
+    "selected one, but you can always change that "
+    "later on.</p>"
+    "<p>If you have clicked this button accidentally, you can undo this "
+    "by clicking on the <em>Delete</em> button.</p></qt>");
 
-const char _wt_filterlist_copy[]
-    = I18N_NOOP("<qt><p>Click this button to copy a filter.</p>"
-                "<p>If you have clicked this button accidentally, you can undo this "
-                "by clicking on the <em>Delete</em> button.</p></qt>");
+const char _wt_filterlist_copy[] = I18N_NOOP(
+    "<qt><p>Click this button to copy a filter.</p>"
+    "<p>If you have clicked this button accidentally, you can undo this "
+    "by clicking on the <em>Delete</em> button.</p></qt>");
 
-const char _wt_filterlist_delete[]
-    = I18N_NOOP("<qt><p>Click this button to <em>delete</em> the currently-"
-                "selected filter from the list above.</p>"
-                "<p>There is no way to get the filter back once "
-                "it is deleted, but you can always leave the "
-                "dialog by clicking <em>Cancel</em> to discard the "
-                "changes made.</p></qt>");
+const char _wt_filterlist_delete[] = I18N_NOOP(
+    "<qt><p>Click this button to <em>delete</em> the currently-"
+    "selected filter from the list above.</p>"
+    "<p>There is no way to get the filter back once "
+    "it is deleted, but you can always leave the "
+    "dialog by clicking <em>Cancel</em> to discard the "
+    "changes made.</p></qt>");
 
-const char _wt_filterlist_up[]
-    = I18N_NOOP("<qt><p>Click this button to move the currently-"
-                "selected filter <em>up</em> one in the list above.</p>"
-                "<p>This is useful since the order of the filters in the list "
-                "determines the order in which they are tried on messages: "
-                "The topmost filter gets tried first.</p>"
-                "<p>If you have clicked this button accidentally, you can undo this "
-                "by clicking on the <em>Down</em> button.</p></qt>");
+const char _wt_filterlist_up[] = I18N_NOOP(
+    "<qt><p>Click this button to move the currently-"
+    "selected filter <em>up</em> one in the list above.</p>"
+    "<p>This is useful since the order of the filters in the list "
+    "determines the order in which they are tried on messages: "
+    "The topmost filter gets tried first.</p>"
+    "<p>If you have clicked this button accidentally, you can undo this "
+    "by clicking on the <em>Down</em> button.</p></qt>");
 
-const char _wt_filterlist_down[]
-    = I18N_NOOP("<qt><p>Click this button to move the currently-"
-                "selected filter <em>down</em> one in the list above.</p>"
-                "<p>This is useful since the order of the filters in the list "
-                "determines the order in which they are tried on messages: "
-                "The topmost filter gets tried first.</p>"
-                "<p>If you have clicked this button accidentally, you can undo this "
-                "by clicking on the <em>Up</em> button.</p></qt>");
+const char _wt_filterlist_down[] = I18N_NOOP(
+    "<qt><p>Click this button to move the currently-"
+    "selected filter <em>down</em> one in the list above.</p>"
+    "<p>This is useful since the order of the filters in the list "
+    "determines the order in which they are tried on messages: "
+    "The topmost filter gets tried first.</p>"
+    "<p>If you have clicked this button accidentally, you can undo this "
+    "by clicking on the <em>Up</em> button.</p></qt>");
 
-const char _wt_filterlist_top[]
-    = I18N_NOOP("<qt><p>Click this button to move the currently-"
-                "selected filter to top of list.</p>"
-                "<p>This is useful since the order of the filters in the list "
-                "determines the order in which they are tried on messages: "
-                "The topmost filter gets tried first.</p></qt>");
+const char _wt_filterlist_top[] = I18N_NOOP(
+    "<qt><p>Click this button to move the currently-"
+    "selected filter to top of list.</p>"
+    "<p>This is useful since the order of the filters in the list "
+    "determines the order in which they are tried on messages: "
+    "The topmost filter gets tried first.</p></qt>");
 
-const char _wt_filterlist_bottom[]
-    = I18N_NOOP("<qt><p>Click this button to move the currently-"
-                "selected filter to bottom of list.</p>"
-                "<p>This is useful since the order of the filters in the list "
-                "determines the order in which they are tried on messages: "
-                "The topmost filter gets tried first.</p></qt>");
+const char _wt_filterlist_bottom[] = I18N_NOOP(
+    "<qt><p>Click this button to move the currently-"
+    "selected filter to bottom of list.</p>"
+    "<p>This is useful since the order of the filters in the list "
+    "determines the order in which they are tried on messages: "
+    "The topmost filter gets tried first.</p></qt>");
 
-const char _wt_filterlist_rename[]
-    = I18N_NOOP("<qt><p>Click this button to rename the currently-selected filter.</p>"
-                "<p>Filters are named automatically, as long as they start with "
-                "\"&lt;\".</p>"
-                "<p>If you have renamed a filter accidentally and want automatic "
-                "naming back, click this button and select <em>Clear</em> followed "
-                "by <em>OK</em> in the appearing dialog.</p></qt>");
+const char _wt_filterlist_rename[] = I18N_NOOP(
+    "<qt><p>Click this button to rename the currently-selected filter.</p>"
+    "<p>Filters are named automatically, as long as they start with "
+    "\"&lt;\".</p>"
+    "<p>If you have renamed a filter accidentally and want automatic "
+    "naming back, click this button and select <em>Clear</em> followed "
+    "by <em>OK</em> in the appearing dialog.</p></qt>");
 
 //=============================================================================
 //
@@ -109,13 +109,10 @@ KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
     mListWidget->setWhatsThis(i18n(_wt_filterlist));
     mListWidget->setDragDropMode(QAbstractItemView::InternalMove);
     mListWidget->setSelectionMode(QAbstractItemView::ExtendedSelection);
-    connect(mListWidget->model(), &QAbstractItemModel::rowsMoved,
-            this, &KMFilterListBox::slotRowsMoved);
+    connect(mListWidget->model(), &QAbstractItemModel::rowsMoved, this, &KMFilterListBox::slotRowsMoved);
 
     mSearchListWidget = new KListWidgetSearchLine(this, mListWidget);
-    mSearchListWidget->setPlaceholderText(
-        i18nc("@info Displayed grayed-out inside the textbox, verb to search",
-              "Search"));
+    mSearchListWidget->setPlaceholderText(i18nc("@info Displayed grayed-out inside the textbox, verb to search", "Search"));
     mSearchListWidget->installEventFilter(this);
     layout->addWidget(mSearchListWidget);
     layout->addWidget(mListWidget);
@@ -273,8 +270,7 @@ void KMFilterListBox::createFilter(const QByteArray &field, const QString &value
 
     auto newFilter = new MailFilter();
     newFilter->pattern()->append(newRule);
-    newFilter->pattern()->setName(QStringLiteral("<%1>: %2").
-                                  arg(QString::fromLatin1(field), value));
+    newFilter->pattern()->setName(QStringLiteral("<%1>: %2").arg(QString::fromLatin1(field), value));
 
     FilterActionDesc *desc = MailCommon::FilterManager::filterActionDict()->value(QStringLiteral("transfer"));
     if (desc) {
@@ -310,8 +306,7 @@ void KMFilterListBox::slotUpdateFilterName()
     if (filter->isAutoNaming()) {
         // auto-naming of patterns
         if (!p->isEmpty() && p->first() && !p->first()->field().trimmed().isEmpty()) {
-            shouldBeName = QStringLiteral("<%1>: %2").
-                           arg(QString::fromLatin1(p->first()->field()), p->first()->contents());
+            shouldBeName = QStringLiteral("<%1>: %2").arg(QString::fromLatin1(p->first()->field()), p->first()->contents());
         } else {
             shouldBeName = QLatin1Char('<') + i18n("unnamed") + QLatin1Char('>');
         }
@@ -358,15 +353,14 @@ void KMFilterListBox::applyFilterChanged(bool closeAfterSaving)
 
 QVector<MailFilter *> KMFilterListBox::filtersForSaving(bool closeAfterSaving, bool &wasCanceled) const
 {
-    Q_EMIT const_cast<KMFilterListBox *>(this)->applyWidgets();  // signals aren't const
+    Q_EMIT const_cast<KMFilterListBox *>(this)->applyWidgets(); // signals aren't const
     QVector<MailFilter *> filters;
     QStringList emptyFilters;
     QVector<MailCommon::InvalidFilterInfo> listInvalidFilters;
     const int numberOfFilter(mListWidget->count());
     for (int i = 0; i < numberOfFilter; ++i) {
-        auto *itemFilter
-            = static_cast<QListWidgetFilterItem *>(mListWidget->item(i));
-        auto f = new MailFilter(*itemFilter->filter());   // deep copy
+        auto *itemFilter = static_cast<QListWidgetFilterItem *>(mListWidget->item(i));
+        auto f = new MailFilter(*itemFilter->filter()); // deep copy
 
         const QString information = f->purify();
         if (!f->isEmpty() && information.isEmpty()) {
@@ -406,8 +400,7 @@ void KMFilterListBox::slotSelectionChanged()
 void KMFilterListBox::slotSelected(int aIdx)
 {
     if (aIdx >= 0 && aIdx < mListWidget->count()) {
-        auto *itemFilter
-            = static_cast<QListWidgetFilterItem *>(mListWidget->item(aIdx));
+        auto *itemFilter = static_cast<QListWidgetFilterItem *>(mListWidget->item(aIdx));
         MailFilter *f = itemFilter->filter();
 
         if (f) {
@@ -470,17 +463,11 @@ void KMFilterListBox::slotDelete()
     MailCommon::MailFilter *filter = itemFilter->filter();
     const QString filterName = filter->pattern()->name();
     if (uniqFilterSelected) {
-        if (KMessageBox::questionYesNo(
-                this,
-                i18n("Do you want to remove the filter \"%1\"?", filterName),
-                i18n("Remove Filter")) == KMessageBox::No) {
+        if (KMessageBox::questionYesNo(this, i18n("Do you want to remove the filter \"%1\"?", filterName), i18n("Remove Filter")) == KMessageBox::No) {
             return;
         }
     } else {
-        if (KMessageBox::questionYesNo(
-                this,
-                i18n("Do you want to remove selected filters?"),
-                i18n("Remove Filters")) == KMessageBox::No) {
+        if (KMessageBox::questionYesNo(this, i18n("Do you want to remove selected filters?"), i18n("Remove Filters")) == KMessageBox::No) {
             return;
         }
     }
@@ -577,11 +564,9 @@ QStringList KMFilterListBox::selectedFilterId(SearchRule::RequiredPart &required
         if (mListWidget->item(i)->isSelected() && !mListWidget->item(i)->isHidden()) {
             MailFilter *filter = static_cast<QListWidgetFilterItem *>(mListWidget->item(i))->filter();
             if (!filter->isEmpty()) {
-                const QString id
-                    = filter->identifier();
+                const QString id = filter->identifier();
                 listFilterId << id;
-                requiredPart = qMax(requiredPart,
-                                    static_cast<QListWidgetFilterItem *>(mListWidget->item(i))->filter()->requiredPart(resource));
+                requiredPart = qMax(requiredPart, static_cast<QListWidgetFilterItem *>(mListWidget->item(i))->filter()->requiredPart(resource));
             }
         }
     }
@@ -696,14 +681,12 @@ void KMFilterListBox::slotRename()
     Q_ASSERT(filter);
 
     // allow empty names - those will turn auto-naming on again
-    QString newName
-        = QInputDialog::getText(window(),
-                                i18n("Rename Filter"),
-                                i18n("Rename filter \"%1\" to:\n(leave the field empty for automatic naming)",
-                                     filter->pattern()->name()), /*label*/
-                                QLineEdit::Normal,
-                                filter->pattern()->name(), /* initial value */
-                                &okPressed);
+    QString newName = QInputDialog::getText(window(),
+                                            i18n("Rename Filter"),
+                                            i18n("Rename filter \"%1\" to:\n(leave the field empty for automatic naming)", filter->pattern()->name()), /*label*/
+                                            QLineEdit::Normal,
+                                            filter->pattern()->name(), /* initial value */
+                                            &okPressed);
 
     if (!okPressed) {
         return;
@@ -736,23 +719,16 @@ void KMFilterListBox::enableControls()
     const bool uniqFilterSelected = (numberOfSelectedItem == 1);
     const bool allItemSelected = (numberOfSelectedItem == numberOfElement);
 
-    mBtnUp->setEnabled(aFilterIsSelected && ((uniqFilterSelected && !theFirst)
-                                             || (!uniqFilterSelected)) && !allItemSelected);
-    mBtnDown->setEnabled(aFilterIsSelected
-                         && ((uniqFilterSelected && !theLast)
-                             || (!uniqFilterSelected)) && !allItemSelected);
+    mBtnUp->setEnabled(aFilterIsSelected && ((uniqFilterSelected && !theFirst) || (!uniqFilterSelected)) && !allItemSelected);
+    mBtnDown->setEnabled(aFilterIsSelected && ((uniqFilterSelected && !theLast) || (!uniqFilterSelected)) && !allItemSelected);
 
     mBtnCopy->setEnabled(aFilterIsSelected && uniqFilterSelected);
     mBtnDelete->setEnabled(aFilterIsSelected);
     mBtnRename->setEnabled(aFilterIsSelected && uniqFilterSelected);
 
-    mBtnTop->setEnabled(aFilterIsSelected
-                        && ((uniqFilterSelected && !theFirst)
-                            || (!uniqFilterSelected)) && !allItemSelected);
+    mBtnTop->setEnabled(aFilterIsSelected && ((uniqFilterSelected && !theFirst) || (!uniqFilterSelected)) && !allItemSelected);
 
-    mBtnBottom->setEnabled(aFilterIsSelected
-                           && ((uniqFilterSelected && !theLast)
-                               || (!uniqFilterSelected)) && !allItemSelected);
+    mBtnBottom->setEnabled(aFilterIsSelected && ((uniqFilterSelected && !theLast) || (!uniqFilterSelected)) && !allItemSelected);
     if (aFilterIsSelected) {
         mListWidget->scrollToItem(mListWidget->currentItem());
     }
@@ -772,8 +748,7 @@ void KMFilterListBox::loadFilterList(bool createDummyFilter)
 
     const QVector<MailFilter *> filters = MailCommon::FilterManager::instance()->filters();
     for (MailFilter *filter : filters) {
-        auto *item
-            = new QListWidgetFilterItem(filter->pattern()->name(), mListWidget);
+        auto *item = new QListWidgetFilterItem(filter->pattern()->name(), mListWidget);
         item->setFilter(new MailFilter(*filter));
         mListWidget->addItem(item);
     }
@@ -819,8 +794,7 @@ void KMFilterListBox::insertFilter(MailFilter *aFilter)
 
 void KMFilterListBox::appendFilter(MailFilter *aFilter)
 {
-    auto *item
-        = new QListWidgetFilterItem(aFilter->pattern()->name(), mListWidget);
+    auto *item = new QListWidgetFilterItem(aFilter->pattern()->name(), mListWidget);
 
     item->setFilter(aFilter);
     mListWidget->addItem(item);

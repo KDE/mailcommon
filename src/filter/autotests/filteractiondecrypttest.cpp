@@ -26,7 +26,7 @@ void FilterActionDecryptTest::shouldDecrypt_data()
     QTest::addColumn<QByteArray>("encrypted");
 
     QDir testDir(QString::fromUtf8(TEST_PATH) + QStringLiteral("/gpgdata"));
-    const auto tests = testDir.entryInfoList({ QStringLiteral("*.msg") }, QDir::Files, QDir::Name);
+    const auto tests = testDir.entryInfoList({QStringLiteral("*.msg")}, QDir::Files, QDir::Name);
     for (const auto &test : tests) {
         QFile plain(test.absoluteFilePath());
         QVERIFY(plain.open(QIODevice::ReadOnly));
@@ -34,16 +34,13 @@ void FilterActionDecryptTest::shouldDecrypt_data()
 
         QFile pgp(test.absoluteFilePath() + QStringLiteral(".pgp"));
         QVERIFY(pgp.open(QIODevice::ReadOnly));
-        QTest::newRow(QStringLiteral("PGP %1").arg(test.baseName()).toUtf8().constData())
-            << plainData << pgp.readAll();
+        QTest::newRow(QStringLiteral("PGP %1").arg(test.baseName()).toUtf8().constData()) << plainData << pgp.readAll();
 
         QFile smime(test.absoluteFilePath() + QStringLiteral(".smime"));
         QVERIFY(smime.open(QIODevice::ReadOnly));
-        QTest::newRow(QStringLiteral("SMIME %1").arg(test.baseName()).toUtf8().constData())
-            << plainData << smime.readAll();
+        QTest::newRow(QStringLiteral("SMIME %1").arg(test.baseName()).toUtf8().constData()) << plainData << smime.readAll();
 
-        QTest::newRow(QStringLiteral("PLAIN %1").arg(test.baseName()).toUtf8().constData())
-            << plainData << plainData;
+        QTest::newRow(QStringLiteral("PLAIN %1").arg(test.baseName()).toUtf8().constData()) << plainData << plainData;
     }
 }
 

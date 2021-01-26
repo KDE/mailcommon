@@ -7,10 +7,11 @@
 #ifndef ACCOUNTCONFIGORDERDIALOG_H
 #define ACCOUNTCONFIGORDERDIALOG_H
 
-#include <QDialog>
 #include "mailcommon_export.h"
+#include <QDialog>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class AccountConfigOrderDialogPrivate;
 class MailCommonSettings;
 /**
@@ -30,9 +31,7 @@ private:
     void slotMoveDown();
     void slotEnableControls();
     void slotEnableAccountOrder(bool state);
-    enum Type {
-        IdentifierAccount = Qt::UserRole + 1
-    };
+    enum Type { IdentifierAccount = Qt::UserRole + 1 };
 
     void writeConfig();
     void readConfig();

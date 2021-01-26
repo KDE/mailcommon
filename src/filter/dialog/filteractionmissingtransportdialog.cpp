@@ -6,13 +6,13 @@
 
 #include "filteractionmissingtransportdialog.h"
 
-#include <KSharedConfig>
 #include <KLocalizedString>
+#include <KSharedConfig>
 
 #include <QDialogButtonBox>
 #include <QLabel>
-#include <QVBoxLayout>
 #include <QPushButton>
+#include <QVBoxLayout>
 
 #include <MailTransport/TransportComboBox>
 
@@ -27,9 +27,10 @@ FilterActionMissingTransportDialog::FilterActionMissingTransportDialog(const QSt
 
     auto label = new QLabel(this);
     label->setObjectName(QStringLiteral("label"));
-    label->setText(i18n("Filter transport is missing. "
-                        "Please select a transport to use with filter \"%1\"",
-                        filtername));
+    label->setText(
+        i18n("Filter transport is missing. "
+             "Please select a transport to use with filter \"%1\"",
+             filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
     mComboBoxTransport = new MailTransport::TransportComboBox(this);

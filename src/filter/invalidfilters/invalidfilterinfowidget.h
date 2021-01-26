@@ -7,9 +7,10 @@
 #ifndef INVALIDFILTERINFOWIDGET_H
 #define INVALIDFILTERINFOWIDGET_H
 
-#include <KMessageWidget>
 #include "mailcommon_private_export.h"
-namespace MailCommon {
+#include <KMessageWidget>
+namespace MailCommon
+{
 class MAILCOMMON_TESTS_EXPORT InvalidFilterInfoWidget : public KMessageWidget
 {
     Q_OBJECT

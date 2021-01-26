@@ -4,8 +4,8 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#include <QApplication>
 #include "../filter/dialog/filteractionmissingtagdialog.h"
+#include <QApplication>
 #include <QMap>
 #include <QUrl>
 

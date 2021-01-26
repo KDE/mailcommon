@@ -6,8 +6,8 @@
 
 #include "filteractionplaysoundtest.h"
 #include "../filteractions/filteractionplaysound.h"
-#include <QTest>
 #include "filter/soundtestwidget.h"
+#include <QTest>
 
 FilterActionPlaySoundTest::FilterActionPlaySoundTest(QObject *parent)
     : QObject(parent)

@@ -12,7 +12,8 @@
 class QFile;
 class QDomElement;
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @brief The FilterImporterGmail class
  * @author Laurent Montel <montel@kde.org>
@@ -23,6 +24,7 @@ public:
     explicit FilterImporterGmail(QFile *file);
     ~FilterImporterGmail();
     static QString defaultFiltersSettingsPath();
+
 private:
     Q_REQUIRED_RESULT QString createUniqFilterName();
     void parseFilters(const QDomElement &e);

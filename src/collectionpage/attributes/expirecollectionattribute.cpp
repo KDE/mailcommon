@@ -117,14 +117,9 @@ ExpireCollectionAttribute::ExpireUnits ExpireCollectionAttribute::readExpireUnit
 
 bool ExpireCollectionAttribute::operator==(const ExpireCollectionAttribute &other) const
 {
-    return (mExpireMessages == other.isAutoExpire())
-           && (mUnreadExpireAge == other.unreadExpireAge())
-           && (mReadExpireAge == other.readExpireAge())
-           && (mUnreadExpireUnits == other.unreadExpireUnits())
-           && (mReadExpireUnits == other.readExpireUnits())
-           && (mExpireAction == other.expireAction())
-           && (mExpireToFolderId == other.expireToFolderId())
-           && (mExpireMessagesWithValidDate == other.expireMessagesWithValidDate());
+    return (mExpireMessages == other.isAutoExpire()) && (mUnreadExpireAge == other.unreadExpireAge()) && (mReadExpireAge == other.readExpireAge())
+        && (mUnreadExpireUnits == other.unreadExpireUnits()) && (mReadExpireUnits == other.readExpireUnits()) && (mExpireAction == other.expireAction())
+        && (mExpireToFolderId == other.expireToFolderId()) && (mExpireMessagesWithValidDate == other.expireMessagesWithValidDate());
 }
 
 int ExpireCollectionAttribute::daysToExpire(int number, ExpireCollectionAttribute::ExpireUnits units)
@@ -138,7 +133,7 @@ int ExpireCollectionAttribute::daysToExpire(int number, ExpireCollectionAttribut
         // rather than assuming 31day months.
         return number * 31;
     default: // this avoids a compiler warning (not handled enumeration values)
-        ;
+             ;
     }
     return -1;
 }
@@ -195,7 +190,7 @@ void ExpireCollectionAttribute::deserialize(const QByteArray &data)
     s >> mExpireMessagesWithValidDate;
 }
 
-QDebug operator <<(QDebug d, const ExpireCollectionAttribute &t)
+QDebug operator<<(QDebug d, const ExpireCollectionAttribute &t)
 {
     d << " mExpireMessages " << t.isAutoExpire();
     d << " mUnreadExpireAge " << t.unreadExpireAge();

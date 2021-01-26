@@ -19,7 +19,8 @@ class KActionCollection;
 class QAbstractItemModel;
 class QAction;
 class QItemSelectionModel;
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @brief The SnippetInfo struct
  * @author Laurent Montel <montel@kde.org>

@@ -5,8 +5,8 @@
 */
 
 #include "invalidfilterwidgettest.h"
-#include "../filter/invalidfilters/invalidfilterwidget.h"
 #include "../filter/invalidfilters/invalidfilterlistview.h"
+#include "../filter/invalidfilters/invalidfilterwidget.h"
 #include <QLabel>
 #include <QTest>
 InvalidFilterWidgetTest::InvalidFilterWidgetTest(QObject *parent)

@@ -5,22 +5,22 @@
 */
 
 #include "tagrulewidgethandler.h"
-#include "search/searchpattern.h"
 #include "mailcommon_debug.h"
+#include "search/searchpattern.h"
 
-#include <QIcon>
-#include <KLocalizedString>
-#include <KLineEdit>
 #include <KJob>
+#include <KLineEdit>
+#include <KLocalizedString>
+#include <QIcon>
 
 #include <Tag>
+#include <TagAttribute>
 #include <TagFetchJob>
 #include <TagFetchScope>
-#include <TagAttribute>
 
+#include <QComboBox>
 #include <QLineEdit>
 #include <QStackedWidget>
-#include <QComboBox>
 
 using namespace MailCommon;
 
@@ -90,21 +90,17 @@ void FillTagComboJob::onTagsFetched(KJob *job)
 static const struct {
     SearchRule::Function id;
     const char *displayName;
-} TagFunctions[] = {
-    { SearchRule::FuncContains, I18N_NOOP("contains")          },
-    { SearchRule::FuncContainsNot, I18N_NOOP("does not contain")   },
-    { SearchRule::FuncEquals, I18N_NOOP("equals")            },
-    { SearchRule::FuncNotEqual, I18N_NOOP("does not equal")     },
-    { SearchRule::FuncRegExp, I18N_NOOP("matches regular expr.") },
-    { SearchRule::FuncNotRegExp, I18N_NOOP("does not match reg. expr.") }
-};
-static const int TagFunctionCount
-    = sizeof(TagFunctions) / sizeof(*TagFunctions);
+} TagFunctions[] = {{SearchRule::FuncContains, I18N_NOOP("contains")},
+                    {SearchRule::FuncContainsNot, I18N_NOOP("does not contain")},
+                    {SearchRule::FuncEquals, I18N_NOOP("equals")},
+                    {SearchRule::FuncNotEqual, I18N_NOOP("does not equal")},
+                    {SearchRule::FuncRegExp, I18N_NOOP("matches regular expr.")},
+                    {SearchRule::FuncNotRegExp, I18N_NOOP("does not match reg. expr.")}};
+static const int TagFunctionCount = sizeof(TagFunctions) / sizeof(*TagFunctions);
 
 //---------------------------------------------------------------------------
 
-QWidget *TagRuleWidgetHandler::createFunctionWidget(
-    int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const
+QWidget *TagRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const
 {
     if (number != 0) {
         return nullptr;
@@ -123,8 +119,7 @@ QWidget *TagRuleWidgetHandler::createFunctionWidget(
         }
     }
     funcCombo->adjustSize();
-    QObject::connect(funcCombo, SIGNAL(activated(int)),
-                     receiver, SLOT(slotFunctionChanged()));
+    QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));
     return funcCombo;
 }
 
@@ -137,10 +132,8 @@ QWidget *TagRuleWidgetHandler::createValueWidget(int number, QStackedWidget *val
         lineEdit->setClearButtonEnabled(true);
         lineEdit->setTrapReturnKey(true);
         lineEdit->setObjectName(QStringLiteral("tagRuleRegExpLineEdit"));
-        QObject::connect(lineEdit, SIGNAL(textChanged(QString)),
-                         receiver, SLOT(slotValueChanged()));
-        QObject::connect(lineEdit, SIGNAL(returnPressed()),
-                         receiver, SLOT(slotReturnPressed()));
+        QObject::connect(lineEdit, SIGNAL(textChanged(QString)), receiver, SLOT(slotValueChanged()));
+        QObject::connect(lineEdit, SIGNAL(returnPressed()), receiver, SLOT(slotReturnPressed()));
         return lineEdit;
     }
 
@@ -149,14 +142,13 @@ QWidget *TagRuleWidgetHandler::createValueWidget(int number, QStackedWidget *val
         valueCombo->setMinimumWidth(50);
         valueCombo->setObjectName(QStringLiteral("tagRuleValueCombo"));
         valueCombo->setEditable(true);
-        valueCombo->addItem(QString());   // empty entry for user input
+        valueCombo->addItem(QString()); // empty entry for user input
 
         auto job = new FillTagComboJob(valueCombo);
         job->start();
 
         valueCombo->adjustSize();
-        QObject::connect(valueCombo, SIGNAL(activated(int)),
-                         receiver, SLOT(slotValueChanged()));
+        QObject::connect(valueCombo, SIGNAL(activated(int)), receiver, SLOT(slotValueChanged()));
         return valueCombo;
     }
 
@@ -190,8 +182,7 @@ QString TagRuleWidgetHandler::value(const QByteArray &field, const QStackedWidge
     SearchRule::Function func = function(field, functionStack);
     if (func == SearchRule::FuncRegExp || func == SearchRule::FuncNotRegExp) {
         // Use regexp line edit
-        const KLineEdit *lineEdit
-            = valueStack->findChild<KLineEdit *>(QStringLiteral("tagRuleRegExpLineEdit"));
+        const KLineEdit *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("tagRuleRegExpLineEdit"));
 
         if (lineEdit) {
             return lineEdit->text();
@@ -238,8 +229,7 @@ void TagRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget *
     }
 
     // reset the status value combo box and reg exp line edit
-    auto *lineEdit
-        = valueStack->findChild<KLineEdit *>(QStringLiteral("tagRuleRegExpLineEdit"));
+    auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("tagRuleRegExpLineEdit"));
 
     if (lineEdit) {
         lineEdit->blockSignals(true);

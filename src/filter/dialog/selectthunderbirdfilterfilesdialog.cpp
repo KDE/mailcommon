@@ -6,8 +6,8 @@
 
 #include "selectthunderbirdfilterfilesdialog.h"
 #include "selectthunderbirdfilterfileswidget.h"
-#include <KSharedConfig>
 #include <KLocalizedString>
+#include <KSharedConfig>
 
 #include <KConfigGroup>
 #include <QDialogButtonBox>

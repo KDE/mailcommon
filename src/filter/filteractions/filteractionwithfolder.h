@@ -10,7 +10,8 @@
 
 #include "filteraction.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @short Abstract base class for filter actions with a mail folder as parameter.
  *

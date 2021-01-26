@@ -8,26 +8,29 @@
 #ifndef MAILCOMMON_SEARCHPATTERN_H
 #define MAILCOMMON_SEARCHPATTERN_H
 
+#include "mailcommon/searchrule.h"
 #include "mailcommon_export.h"
 #include <KLocalizedString>
-#include "mailcommon/searchrule.h"
 
 #include <QList>
 #include <QString>
 
 #include <AkonadiCore/searchquery.h>
 
-namespace Akonadi {
+namespace Akonadi
+{
 class Item;
 }
 
-namespace KMime {
+namespace KMime
+{
 class Message;
 }
 
 class KConfigGroup;
 
-namespace MailCommon {
+namespace MailCommon
+{
 // Needed for MSVC 2010, as it seems to not implicit cast for a pointer anymore
 #ifdef _MSC_VER
 uint qHash(SearchRule::Ptr sr);
@@ -62,19 +65,9 @@ public:
      *  it's rules match, whereas a pattern with @p OpOr will match if
      *  any of it's rules matches.
      */
-    enum Operator {
-        OpAnd,
-        OpOr,
-        OpAll
-    };
+    enum Operator { OpAnd, OpOr, OpAll };
 
-    enum SparqlQueryError {
-        NoError = 0,
-        MissingCheck,
-        FolderEmptyOrNotIndexed,
-        EmptyResult,
-        NotEnoughCharacters
-    };
+    enum SparqlQueryError { NoError = 0, MissingCheck, FolderEmptyOrNotIndexed, EmptyResult, NotEnoughCharacters };
 
     /**
      * Constructor which provides a pattern with minimal, but

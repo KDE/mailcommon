@@ -9,11 +9,12 @@
 
 #include <QKeySequence>
 
+#include <AkonadiCore/tag.h>
 #include <QColor>
 #include <QSharedPointer>
-#include <AkonadiCore/tag.h>
 
-namespace MailCommon {
+namespace MailCommon
+{
 // Our own copy of the tag data.
 // Useful in the config dialog, because the user might cancel his changes,
 // in which case we don't write them back.
@@ -22,13 +23,8 @@ class MAILCOMMON_EXPORT Tag
 {
     Q_GADGET
 public:
-
     using Ptr = QSharedPointer<Tag>;
-    enum SaveFlag {
-        TextColor = 1,
-        BackgroundColor = 1 << 1,
-        Font = 1 << 2
-    };
+    enum SaveFlag { TextColor = 1, BackgroundColor = 1 << 1, Font = 1 << 2 };
     using SaveFlags = QFlags<SaveFlag>;
 
     // Returns true if two tags are equal

@@ -10,11 +10,11 @@
 #include <KListWidgetSearchLine>
 #include <QPushButton>
 
+#include <KConfigGroup>
+#include <KSharedConfig>
+#include <QDialogButtonBox>
 #include <QListWidget>
 #include <QVBoxLayout>
-#include <KSharedConfig>
-#include <KConfigGroup>
-#include <QDialogButtonBox>
 
 using namespace MailCommon;
 
@@ -35,9 +35,7 @@ FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
 
     filtersListWidget = new QListWidget(this);
     auto searchLine = new KListWidgetSearchLine(this, filtersListWidget);
-    searchLine->setPlaceholderText(
-        i18nc("@info Displayed grayed-out inside the textbox, verb to search",
-              "Search"));
+    searchLine->setPlaceholderText(i18nc("@info Displayed grayed-out inside the textbox, verb to search", "Search"));
 
     top->addWidget(searchLine);
     top->addWidget(filtersListWidget);
@@ -110,9 +108,9 @@ QVector<MailFilter *> FilterSelectionDialog::selectedFilters() const
     for (int i = 0; i < filterCount; ++i) {
         const QListWidgetItem *item = filtersListWidget->item(i);
         if (item->checkState() == Qt::Checked) {
-            filters << originalFilters[ i ];
+            filters << originalFilters[i];
         } else {
-            delete originalFilters[ i ];
+            delete originalFilters[i];
         }
     }
 

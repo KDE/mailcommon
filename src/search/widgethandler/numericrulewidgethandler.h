@@ -3,11 +3,13 @@
 
 #include "interfaces/rulewidgethandler.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 class NumericRuleWidgetHandler : public MailCommon::RuleWidgetHandler
 {
 public:
-    NumericRuleWidgetHandler() : MailCommon::RuleWidgetHandler()
+    NumericRuleWidgetHandler()
+        : MailCommon::RuleWidgetHandler()
     {
     }
 

@@ -95,8 +95,9 @@ QWidget *FilterActionDecrypt::createParamWidget(QWidget *parent) const
     lbl->setWordWrap(true);
 
     lbl->setText(i18n("<b>Warning:</b> Decrypted emails may be uploaded to a server!"));
-    lbl->setToolTip(i18n("<p>If the email folder that you are filtering into is connected to a remote "
-                         "account (like an IMAP-Server) the decrypted content will go there.</p>"));
+    lbl->setToolTip(
+        i18n("<p>If the email folder that you are filtering into is connected to a remote "
+             "account (like an IMAP-Server) the decrypted content will go there.</p>"));
     l->addWidget(lbl);
 
     return w;

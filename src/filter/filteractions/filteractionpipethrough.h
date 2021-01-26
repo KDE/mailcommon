@@ -10,7 +10,8 @@
 
 #include "filteractionwithcommand.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionPipeThrough - use external filter app
 // External message filter: executes a shell command with message

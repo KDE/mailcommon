@@ -15,7 +15,8 @@
 
 #include <QObject>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterActionDict;
 
 /**

@@ -6,9 +6,9 @@
 
 #include "filteractionsetstatustest.h"
 #include "../filteractions/filteractionsetstatus.h"
+#include <QComboBox>
 #include <QTest>
 #include <QWidget>
-#include <QComboBox>
 
 FilterActionSetStatusTest::FilterActionSetStatusTest(QObject *parent)
     : QObject(parent)

@@ -6,8 +6,8 @@
 
 #include "collectiontemplateswidget.h"
 
-#include <KLocalizedString>
 #include "templatesconfiguration_kfg.h"
+#include <KLocalizedString>
 
 #include <MailCommon/FolderSettings>
 #include <QCheckBox>
@@ -61,7 +61,7 @@ void CollectionTemplatesWidget::save(Akonadi::Collection &col)
     }
     if (mChanged) {
         TemplateParser::Templates t(mCollectionId);
-        //qCDebug(KMAIL_LOG) << "use custom templates for folder" << fid <<":" << mCustom->isChecked();
+        // qCDebug(KMAIL_LOG) << "use custom templates for folder" << fid <<":" << mCustom->isChecked();
         t.setUseCustomTemplates(mCustom->isChecked());
         t.save();
 

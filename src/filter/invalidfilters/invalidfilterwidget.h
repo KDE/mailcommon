@@ -7,11 +7,12 @@
 #ifndef INVALIDFILTERWIDGET_H
 #define INVALIDFILTERWIDGET_H
 
-#include <QWidget>
 #include "invalidfilterinfo.h"
 #include "mailcommon_export.h"
+#include <QWidget>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class InvalidFilterListView;
 /**
  * @brief The InvalidFilterWidget class
@@ -28,6 +29,7 @@ public:
 Q_SIGNALS:
     void showDetails(const QString &);
     void hideInformationWidget();
+
 private:
     InvalidFilterListView *mInvalidFilterListWidget = nullptr;
 };

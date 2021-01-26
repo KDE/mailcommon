@@ -7,9 +7,9 @@
 
 #include "filteractionremoveheader.h"
 
+#include <KComboBox>
 #include <KLocalizedString>
 #include <QLineEdit>
-#include <KComboBox>
 
 using namespace MailCommon;
 
@@ -21,12 +21,8 @@ FilterAction *FilterActionRemoveHeader::newAction()
 FilterActionRemoveHeader::FilterActionRemoveHeader(QObject *parent)
     : FilterActionWithStringList(QStringLiteral("remove header"), i18n("Remove Header"), parent)
 {
-    mParameterList << QString()
-                   << QStringLiteral("Reply-To")
-                   << QStringLiteral("Delivered-To")
-                   << QStringLiteral("X-KDE-PR-Message")
-                   << QStringLiteral("X-KDE-PR-Package")
-                   << QStringLiteral("X-KDE-PR-Keywords");
+    mParameterList << QString() << QStringLiteral("Reply-To") << QStringLiteral("Delivered-To") << QStringLiteral("X-KDE-PR-Message")
+                   << QStringLiteral("X-KDE-PR-Package") << QStringLiteral("X-KDE-PR-Keywords");
 
     mParameter = mParameterList.at(0);
 }
@@ -39,8 +35,7 @@ QWidget *FilterActionRemoveHeader::createParamWidget(QWidget *parent) const
     comboBox->setInsertPolicy(QComboBox::InsertAtBottom);
     setParamWidgetValue(comboBox);
     connect(comboBox, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &FilterActionRemoveHeader::filterActionModified);
-    connect(comboBox->lineEdit(), &QLineEdit::textChanged,
-            this, &FilterAction::filterActionModified);
+    connect(comboBox->lineEdit(), &QLineEdit::textChanged, this, &FilterAction::filterActionModified);
 
     return comboBox;
 }

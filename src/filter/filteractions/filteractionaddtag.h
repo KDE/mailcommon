@@ -14,7 +14,8 @@
 
 class QComboBox;
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionAddTag - append tag to message
 // Appends a tag to messages

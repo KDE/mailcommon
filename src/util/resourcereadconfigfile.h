@@ -7,11 +7,12 @@
 #ifndef RESOURCEREADCONFIGFILE_H
 #define RESOURCEREADCONFIGFILE_H
 
+#include "mailcommon_export.h"
 #include <KConfigGroup>
 #include <QString>
-#include "mailcommon_export.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 class ResourceReadConfigFilePrivate;
 class MAILCOMMON_EXPORT ResourceReadConfigFile
 {
@@ -20,6 +21,7 @@ public:
     ~ResourceReadConfigFile();
 
     KConfigGroup group(const QString &name) const;
+
 private:
     ResourceReadConfigFilePrivate *const d;
 };

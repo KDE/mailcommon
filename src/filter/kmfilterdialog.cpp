@@ -10,52 +10,52 @@
 */
 
 #include "kmfilterdialog.h"
-#include "mailcommon_debug.h"
 #include "kmfilterlistbox.h"
+#include "mailcommon_debug.h"
 
-#include "filterimporterpathcache.h"
 #include "filteractions/filteractiondict.h"
 #include "filteractions/filteractionwidget.h"
+#include "filterimporterpathcache.h"
 #include "filterselectiondialog.h"
 #include "kmfilteraccountlist.h"
 using MailCommon::FilterImporterExporter;
+#include "filterconverter/filterconverttosieve.h"
 #include "filtermanager.h"
 #include "folder/folderrequester.h"
 #include "kernel/mailkernel.h"
-#include "util/mailutil.h"
 #include "search/searchpatternedit.h"
-#include "filterconverter/filterconverttosieve.h"
+#include "util/mailutil.h"
 #include <PimCommon/PimUtil>
 
 #include <ItemFetchJob>
 
 #include <KConfigGroup>
 
+#include <KIconButton>
 #include <KIconLoader>
 #include <KJob>
 #include <KKeySequenceWidget>
 #include <KListWidgetSearchLine>
 #include <KLocalizedString>
 #include <KMessageBox>
+#include <QIcon>
 #include <QPushButton>
 #include <QTabWidget>
-#include <KIconButton>
-#include <QIcon>
 
 #include <QButtonGroup>
 #include <QCheckBox>
+#include <QDialogButtonBox>
 #include <QGridLayout>
+#include <QHBoxLayout>
+#include <QKeyEvent>
 #include <QLabel>
 #include <QMenu>
+#include <QPointer>
 #include <QRadioButton>
-#include <QTreeWidget>
-#include <QVBoxLayout>
 #include <QShortcut>
 #include <QSplitter>
-#include <QPointer>
-#include <QKeyEvent>
-#include <QHBoxLayout>
-#include <QDialogButtonBox>
+#include <QTreeWidget>
+#include <QVBoxLayout>
 
 Q_DECLARE_METATYPE(MailCommon::FilterImporterExporter::FilterType)
 using namespace MailCommon;
@@ -139,8 +139,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     menu->addAction(act);
     user3Button->setMenu(menu);
 
-    connect(user2Button, &QAbstractButton::clicked,
-            this, &KMFilterDialog::slotExportFilters);
+    connect(user2Button, &QAbstractButton::clicked, this, &KMFilterDialog::slotExportFilters);
     mApplyButton = buttonBox->button(QDialogButtonBox::Apply);
     mApplyButton->setEnabled(false);
 
@@ -176,9 +175,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
 
     auto patternGroupBox = new QGroupBox(i18n("Filter Criteria"), page1);
     auto layout = new QHBoxLayout(patternGroupBox);
-    mPatternEdit
-        = new MailCommon::SearchPatternEdit(
-              patternGroupBox, MailCommon::SearchPatternEdit::MatchAllMessages);
+    mPatternEdit = new MailCommon::SearchPatternEdit(patternGroupBox, MailCommon::SearchPatternEdit::MatchAllMessages);
     layout->addWidget(mPatternEdit);
 
     vbl->addWidget(patternGroupBox, 0, Qt::AlignTop);
@@ -206,13 +203,11 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
         bg->addButton(mApplyOnForAll);
         vbl3->addWidget(mApplyOnForAll);
 
-        mApplyOnForTraditional
-            = new QRadioButton(i18n("from all but online IMAP accounts"), mAdvOptsGroup);
+        mApplyOnForTraditional = new QRadioButton(i18n("from all but online IMAP accounts"), mAdvOptsGroup);
         bg->addButton(mApplyOnForTraditional);
         vbl3->addWidget(mApplyOnForTraditional);
 
-        mApplyOnForChecked
-            = new QRadioButton(i18n("from checked accounts only"), mAdvOptsGroup);
+        mApplyOnForChecked = new QRadioButton(i18n("from checked accounts only"), mAdvOptsGroup);
         bg->addButton(mApplyOnForChecked);
         vbl3->addWidget(mApplyOnForChecked);
         vbl3->addStretch(2);
@@ -220,8 +215,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
         mAccountList = new KMFilterAccountList(mAdvOptsGroup);
         gl->addWidget(mAccountList, 0, 1, 4, 3);
 
-        mApplyOnOut
-            = new QCheckBox(i18n("Apply this filter to &sent messages"), mAdvOptsGroup);
+        mApplyOnOut = new QCheckBox(i18n("Apply this filter to &sent messages"), mAdvOptsGroup);
         mApplyOnOut->setToolTip(
             i18n("<p>The filter will be triggered <b>after</b> the message is sent "
                  "and it will only affect the local copy of the message.</p>"
@@ -229,31 +223,28 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
                  "please use \"Apply this filter <b>before</b> sending messages\".</p>"));
         gl->addWidget(mApplyOnOut, 4, 0, 1, 4);
 
-        mApplyBeforeOut
-            = new QCheckBox(i18n("Apply this filter &before sending messages"), mAdvOptsGroup);
+        mApplyBeforeOut = new QCheckBox(i18n("Apply this filter &before sending messages"), mAdvOptsGroup);
         mApplyBeforeOut->setToolTip(
             i18n("<p>The filter will be triggered <b>before</b> the message is sent "
                  "and it will affect both the local copy and the sent copy of the message.</p>"
                  "<p>This is required if the recipient's copy also needs to be modified.</p>"));
         gl->addWidget(mApplyBeforeOut, 5, 0, 1, 4);
 
-        mApplyOnCtrlJ
-            = new QCheckBox(i18n("Apply this filter on manual &filtering"), mAdvOptsGroup);
+        mApplyOnCtrlJ = new QCheckBox(i18n("Apply this filter on manual &filtering"), mAdvOptsGroup);
         gl->addWidget(mApplyOnCtrlJ, 6, 0, 1, 4);
 
         mApplyOnAllFolders = new QCheckBox(i18n("Apply this filter on inbound emails in all folders"), mAdvOptsGroup);
-        mApplyOnAllFolders->setToolTip(i18n("<p>The filter will be applied on inbound emails from all folders "
-                                            "belonging to all accounts selected above. This is useful when using local filters "
-                                            "with IMAP accounts where new emails may have already been moved to different folders "
-                                            "by server-side filters.</p>"));
+        mApplyOnAllFolders->setToolTip(
+            i18n("<p>The filter will be applied on inbound emails from all folders "
+                 "belonging to all accounts selected above. This is useful when using local filters "
+                 "with IMAP accounts where new emails may have already been moved to different folders "
+                 "by server-side filters.</p>"));
         gl->addWidget(mApplyOnAllFolders, 7, 0, 1, 4);
 
-        mStopProcessingHere
-            = new QCheckBox(i18n("If this filter &matches, stop processing here"), mAdvOptsGroup);
+        mStopProcessingHere = new QCheckBox(i18n("If this filter &matches, stop processing here"), mAdvOptsGroup);
         gl->addWidget(mStopProcessingHere, 8, 0, 1, 4);
 
-        mConfigureShortcut
-            = new QCheckBox(i18n("Add this filter to the Apply Filter menu"), mAdvOptsGroup);
+        mConfigureShortcut = new QCheckBox(i18n("Add this filter to the Apply Filter menu"), mAdvOptsGroup);
         gl->addWidget(mConfigureShortcut, 9, 0, 1, 2);
 
         auto keyButtonLabel = new QLabel(i18n("Shortcut:"), mAdvOptsGroup);
@@ -267,8 +258,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
         mKeySeqWidget->setModifierlessAllowed(true);
         mKeySeqWidget->setCheckActionCollections(actionCollection);
 
-        mConfigureToolbar
-            = new QCheckBox(i18n("Additionally add this filter to the toolbar"), mAdvOptsGroup);
+        mConfigureToolbar = new QCheckBox(i18n("Additionally add this filter to the toolbar"), mAdvOptsGroup);
         gl->addWidget(mConfigureToolbar, 10, 0, 1, 4);
         mConfigureToolbar->setEnabled(false);
 
@@ -299,8 +289,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     mFolderRequester = new MailCommon::FolderRequester(this);
     mFolderRequester->setNotAllowToCreateNewFolder(true);
     applySpecificFiltersLayout->addWidget(mFolderRequester);
-    connect(mFolderRequester, &FolderRequester::folderChanged,
-            this, &KMFilterDialog::slotFolderChanged);
+    connect(mFolderRequester, &FolderRequester::folderChanged, this, &KMFilterDialog::slotFolderChanged);
     mRunNow = new QPushButton(i18n("Run Now"), this);
     mRunNow->setEnabled(false);
     applySpecificFiltersLayout->addWidget(mRunNow);
@@ -345,26 +334,20 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     connect(mPatternEdit, &MailCommon::SearchPatternEdit::maybeNameChanged, mFilterList, &KMFilterListBox::slotUpdateFilterName);
 
     // save filters on 'Apply' or 'OK'
-    connect(mApplyButton, &QAbstractButton::clicked,
-            this, &KMFilterDialog::slotApply);
+    connect(mApplyButton, &QAbstractButton::clicked, this, &KMFilterDialog::slotApply);
 
     // save dialog size on 'OK'
-    connect(okButton, &QAbstractButton::clicked,
-            this, &KMFilterDialog::slotSaveSize);
+    connect(okButton, &QAbstractButton::clicked, this, &KMFilterDialog::slotSaveSize);
 
     // destruct the dialog on close and Cancel
-    connect(buttonBox->button(QDialogButtonBox::Cancel), &QAbstractButton::clicked,
-            this, &KMFilterDialog::slotFinished);
+    connect(buttonBox->button(QDialogButtonBox::Cancel), &QAbstractButton::clicked, this, &KMFilterDialog::slotFinished);
 
     // disable closing when user wants to continue editing
-    connect(mFilterList, &KMFilterListBox::abortClosing,
-            this, &KMFilterDialog::slotDisableAccept);
+    connect(mFilterList, &KMFilterListBox::abortClosing, this, &KMFilterDialog::slotDisableAccept);
 
     connect(mFilterList, &KMFilterListBox::filterCreated, this, &KMFilterDialog::slotDialogUpdated);
-    connect(mFilterList, &KMFilterListBox::filterRemoved,
-            this, &KMFilterDialog::slotDialogUpdated);
-    connect(mFilterList, &KMFilterListBox::filterUpdated,
-            this, &KMFilterDialog::slotDialogUpdated);
+    connect(mFilterList, &KMFilterListBox::filterRemoved, this, &KMFilterDialog::slotDialogUpdated);
+    connect(mFilterList, &KMFilterListBox::filterUpdated, this, &KMFilterDialog::slotDialogUpdated);
     connect(mFilterList, &KMFilterListBox::filterOrderAltered, this, &KMFilterDialog::slotDialogUpdated);
     connect(mPatternEdit, &MailCommon::SearchPatternEdit::patternChanged, this, &KMFilterDialog::slotDialogUpdated);
     connect(mActionLister, QOverload<QWidget *>::of(&FilterActionWidgetLister::widgetAdded), this, &KMFilterDialog::slotDialogUpdated);
@@ -407,7 +390,7 @@ bool KMFilterDialog::event(QEvent *e)
     // With a shortcut override we can catch this before it gets to kactions.
     const bool shortCutOverride = (e->type() == QEvent::ShortcutOverride);
     if (shortCutOverride || e->type() == QEvent::KeyPress) {
-        auto kev = static_cast<QKeyEvent * >(e);
+        auto kev = static_cast<QKeyEvent *>(e);
         if (kev->key() == Qt::Key_Escape) {
             e->ignore();
             return true;
@@ -435,41 +418,31 @@ void KMFilterDialog::slotFolderChanged(const Akonadi::Collection &collection)
 void KMFilterDialog::slotRunFilters()
 {
     if (!mFolderRequester->collection().isValid()) {
-        KMessageBox::information(
-            this,
-            i18nc("@info",
-                  "Unable to apply this filter since there are no folders selected."),
-            i18n("No folder selected."));
+        KMessageBox::information(this, i18nc("@info", "Unable to apply this filter since there are no folders selected."), i18n("No folder selected."));
         return;
     }
 
     if (mApplyButton->isEnabled()) {
-        KMessageBox::information(
-            this,
-            i18nc("@info",
-                  "Some filters were changed and not saved yet. "
-                  "You must save your filters before they can be applied."),
-            i18n("Filters changed."));
+        KMessageBox::information(this,
+                                 i18nc("@info",
+                                       "Some filters were changed and not saved yet. "
+                                       "You must save your filters before they can be applied."),
+                                 i18n("Filters changed."));
         return;
     }
     SearchRule::RequiredPart requiredPart = SearchRule::Envelope;
     const QStringList selectedFiltersId = mFilterList->selectedFilterId(requiredPart, mFolderRequester->collection().resource());
     if (selectedFiltersId.isEmpty()) {
-        KMessageBox::information(
-            this,
-            i18nc("@info",
-                  "Unable to apply a filter since there are no filters currently selected."),
-            i18n("No filters selected."));
+        KMessageBox::information(this, i18nc("@info", "Unable to apply a filter since there are no filters currently selected."), i18n("No filters selected."));
         return;
     }
     auto job = new Akonadi::ItemFetchJob(mFolderRequester->collection(), this);
     job->setProperty("requiredPart", QVariant::fromValue(requiredPart));
     job->setProperty("listFilters", QVariant::fromValue(selectedFiltersId));
 
-    connect(job, &KJob::result,
-            this, &KMFilterDialog::slotFetchItemsForFolderDone);
+    connect(job, &KJob::result, this, &KMFilterDialog::slotFetchItemsForFolderDone);
 
-    mRunNow->setEnabled(false);   //Disable it
+    mRunNow->setEnabled(false); // Disable it
 }
 
 void KMFilterDialog::slotFetchItemsForFolderDone(KJob *job)
@@ -547,8 +520,7 @@ void KMFilterDialog::slotFilterSelected(MailFilter *aFilter)
     mApplyOnCtrlJ->setChecked(applyOnExplicit);
     mStopProcessingHere->setChecked(stopHere);
     mConfigureShortcut->setChecked(configureShortcut);
-    mKeySeqWidget->setKeySequence(shortcut,
-                                  KKeySequenceWidget::NoValidate);
+    mKeySeqWidget->setKeySequence(shortcut, KKeySequenceWidget::NoValidate);
     mConfigureToolbar->setChecked(configureToolbar);
     mFilterActionIconButton->setIcon(icon);
     mIgnoreFilterUpdates = false;
@@ -600,12 +572,9 @@ void KMFilterDialog::slotApplicabilityChanged()
         // Enable the apply button
         slotDialogUpdated();
 
-        qCDebug(MAILCOMMON_LOG) << "Setting filter to be applied at"
-                                << (mFilter->applyOnInbound() ? "incoming " : "")
-                                << (mFilter->applyOnOutbound() ? "outgoing " : "")
-                                << (mFilter->applyBeforeOutbound() ? "before_outgoing " : "")
-                                << (mFilter->applyOnAllFoldersInbound() ? "all folders inboud " : "")
-                                << (mFilter->applyOnExplicit() ? "explicit CTRL-J" : "");
+        qCDebug(MAILCOMMON_LOG) << "Setting filter to be applied at" << (mFilter->applyOnInbound() ? "incoming " : "")
+                                << (mFilter->applyOnOutbound() ? "outgoing " : "") << (mFilter->applyBeforeOutbound() ? "before_outgoing " : "")
+                                << (mFilter->applyOnAllFoldersInbound() ? "all folders inboud " : "") << (mFilter->applyOnExplicit() ? "explicit CTRL-J" : "");
     }
 }
 
@@ -709,14 +678,11 @@ void KMFilterDialog::importFilters(MailCommon::FilterImporterExporter::FilterTyp
     QVector<MailFilter *>::ConstIterator end(filters.constEnd());
 
     for (QVector<MailFilter *>::ConstIterator it = filters.constBegin(); it != end; ++it) {
-        mFilterList->appendFilter(*it);   // no need to deep copy, ownership passes to the list
+        mFilterList->appendFilter(*it); // no need to deep copy, ownership passes to the list
         listOfFilter << (*it)->name();
     }
 
-    KMessageBox::informationList(
-        this,
-        i18n("Filters which were imported:"),
-        listOfFilter);
+    KMessageBox::informationList(this, i18n("Filters which were imported:"), listOfFilter);
 }
 
 void KMFilterDialog::slotExportFilters()
@@ -724,9 +690,7 @@ void KMFilterDialog::slotExportFilters()
     bool wasCanceled = false;
     const QVector<MailFilter *> filters = mFilterList->filtersForSaving(false, wasCanceled);
     if (filters.isEmpty()) {
-        KMessageBox::information(
-            this,
-            i18n("Any filter found."));
+        KMessageBox::information(this, i18n("Any filter found."));
         return;
     }
     if (wasCanceled) {
@@ -753,15 +717,16 @@ void KMFilterDialog::slotDialogUpdated()
 void KMFilterDialog::slotExportAsSieveScript()
 {
     if (mApplyButton->isEnabled()) {
-        KMessageBox::information(
-            this,
-            i18nc("@info",
-                  "Some filters were changed and not saved yet.<br>"
-                  "You must save your filters before they can be exported."),
-            i18n("Filters changed."));
+        KMessageBox::information(this,
+                                 i18nc("@info",
+                                       "Some filters were changed and not saved yet.<br>"
+                                       "You must save your filters before they can be exported."),
+                                 i18n("Filters changed."));
         return;
     }
-    KMessageBox::information(this, i18n("We cannot convert all KMail filters to sieve scripts but we can try :)"), i18n("Convert KMail filters to sieve scripts"));
+    KMessageBox::information(this,
+                             i18n("We cannot convert all KMail filters to sieve scripts but we can try :)"),
+                             i18n("Convert KMail filters to sieve scripts"));
     bool wasCanceled = false;
     const QVector<MailFilter *> filters = mFilterList->filtersForSaving(false, wasCanceled);
     if (filters.isEmpty()) {

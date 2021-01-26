@@ -7,11 +7,12 @@
 #ifndef FILTERIMPORTERPATHCACHE_H
 #define FILTERIMPORTERPATHCACHE_H
 
-#include <QObject>
-#include <QHash>
-#include <AkonadiCore/Collection>
 #include "mailcommon_export.h"
-namespace MailCommon {
+#include <AkonadiCore/Collection>
+#include <QHash>
+#include <QObject>
+namespace MailCommon
+{
 /**
  * @brief The FilterImporterPathCache class
  * @author Laurent Montel <montel@kde.org>
@@ -29,6 +30,7 @@ public:
     Q_REQUIRED_RESULT Akonadi::Collection convertedFilterPath(const QString &original);
     void clear();
     Q_REQUIRED_RESULT int count() const;
+
 private:
     QHash<QString, Akonadi::Collection> mFilterCache;
 };

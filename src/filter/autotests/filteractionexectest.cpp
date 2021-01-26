@@ -5,9 +5,9 @@
 */
 
 #include "filteractionexectest.h"
-#include <QTest>
 #include "../filteractions/filteractionexec.h"
 #include "../filteractions/filteractionwithurl.h"
+#include <QTest>
 
 #include <KUrlRequester>
 

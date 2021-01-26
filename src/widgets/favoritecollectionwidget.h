@@ -15,7 +15,8 @@
 class KXMLGUIClient;
 class KActionCollection;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MailCommonSettings;
 /**
  * @brief The FavoriteCollectionWidget class

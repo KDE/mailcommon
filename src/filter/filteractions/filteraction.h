@@ -16,14 +16,15 @@
 #include <Collection>
 #include <Item>
 
-#include <KMime/MDN>
 #include <KMime/KMimeMessage>
+#include <KMime/MDN>
 
 #include <QObject>
 
 class QWidget;
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @short Abstract base class for mail filter actions.
  *
@@ -39,18 +40,17 @@ class MAILCOMMON_EXPORT FilterAction : public QObject
 {
     Q_OBJECT
 public:
-
     /**
      * Describes the possible return codes of filter processing:
      */
     enum ReturnCode {
         ErrorNeedComplete = 0x1, ///< Could not process because a complete message is needed.
-        GoOn = 0x2,              ///< Go on with applying filter actions.
-        ErrorButGoOn = 0x4,      ///< A non-critical error occurred
+        GoOn = 0x2, ///< Go on with applying filter actions.
+        ErrorButGoOn = 0x4, ///< A non-critical error occurred
         ///  (e.g. an invalid address in the 'forward' action),
         ///   but processing should continue.
-        CriticalError = 0x8      ///< A critical error occurred during processing
-                        ///  (e.g. "disk full").
+        CriticalError = 0x8 ///< A critical error occurred during processing
+                            ///  (e.g. "disk full").
     };
 
     /**
@@ -171,8 +171,9 @@ public:
     /**
      * Automates the sending of MDNs from filter actions.
      */
-    static void sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionType d, const QVector<KMime::MDN::DispositionModifier> &m
-                        = QVector<KMime::MDN::DispositionModifier>());
+    static void sendMDN(const Akonadi::Item &item,
+                        KMime::MDN::DispositionType d,
+                        const QVector<KMime::MDN::DispositionModifier> &m = QVector<KMime::MDN::DispositionModifier>());
 
 Q_SIGNALS:
     /**

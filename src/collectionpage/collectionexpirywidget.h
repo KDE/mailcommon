@@ -15,18 +15,15 @@ class KPluralHandlingSpinBox;
 class QRadioButton;
 class QPushButton;
 class KJob;
-namespace MailCommon {
-class FolderRequester;
-struct MAILCOMMON_EXPORT CollectionExpirySettings
+namespace MailCommon
 {
+class FolderRequester;
+struct MAILCOMMON_EXPORT CollectionExpirySettings {
     Q_REQUIRED_RESULT bool isValid() const
     {
-        return daysToExpireRead != -1
-               || daysToExpireUnread != -1
-               || mUnreadExpireUnits != ExpireCollectionAttribute::ExpireNever
-               || mReadExpireUnits != ExpireCollectionAttribute::ExpireNever
-               || mExpireAction != ExpireCollectionAttribute::ExpireDelete
-               || mExpireToFolderId != -1;
+        return daysToExpireRead != -1 || daysToExpireUnread != -1 || mUnreadExpireUnits != ExpireCollectionAttribute::ExpireNever
+            || mReadExpireUnits != ExpireCollectionAttribute::ExpireNever || mExpireAction != ExpireCollectionAttribute::ExpireDelete
+            || mExpireToFolderId != -1;
     }
 
     bool expiryGloballyOn = false;

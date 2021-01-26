@@ -17,7 +17,8 @@ class QObject;
 class QString;
 class QStackedWidget;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class RuleWidgetHandler;
 
 /**

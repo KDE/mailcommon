@@ -10,7 +10,8 @@
 
 #include "filteractionwithfolder.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionMove - move into folder
 // File message into another mail folder

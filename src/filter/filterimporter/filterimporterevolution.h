@@ -13,7 +13,8 @@
 
 class QFile;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MailFilter;
 
 class FilterImporterEvolution : public FilterImporterAbstract
@@ -22,11 +23,9 @@ public:
     explicit FilterImporterEvolution(QFile *file);
     ~FilterImporterEvolution();
     static QString defaultFiltersSettingsPath();
+
 private:
-    enum parseType {
-        PartType = 0,
-        ActionType = 1
-    };
+    enum parseType { PartType = 0, ActionType = 1 };
     void parseFilters(const QDomElement &e);
     void parsePartAction(const QDomElement &ruleFilter, MailCommon::MailFilter *filter, MailCommon::FilterImporterEvolution::parseType type);
 };

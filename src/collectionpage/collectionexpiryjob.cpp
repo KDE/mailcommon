@@ -5,8 +5,8 @@
 */
 
 #include "collectionexpiryjob.h"
-#include "util/mailutil.h"
 #include "mailcommon_debug.h"
+#include "util/mailutil.h"
 
 #include <AkonadiCore/CollectionModifyJob>
 

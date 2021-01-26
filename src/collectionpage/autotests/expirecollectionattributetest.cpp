@@ -5,8 +5,8 @@
 */
 
 #include "expirecollectionattributetest.h"
-#include <QTest>
 #include "../attributes/expirecollectionattribute.h"
+#include <QTest>
 
 Q_DECLARE_METATYPE(MailCommon::ExpireCollectionAttribute::ExpireUnits)
 Q_DECLARE_METATYPE(MailCommon::ExpireCollectionAttribute::ExpireAction)
@@ -30,7 +30,7 @@ void ExpireCollectionAttributeTest::shouldHaveDefaultValue()
     QCOMPARE(attr.expireAction(), MailCommon::ExpireCollectionAttribute::ExpireDelete);
     QCOMPARE(attr.unreadExpireUnits(), MailCommon::ExpireCollectionAttribute::ExpireNever);
     QCOMPARE(attr.readExpireUnits(), MailCommon::ExpireCollectionAttribute::ExpireNever);
-    QCOMPARE(attr.expireToFolderId(), (qint64) - 1);
+    QCOMPARE(attr.expireToFolderId(), (qint64)-1);
 }
 
 void ExpireCollectionAttributeTest::shouldAssignValue_data()
@@ -43,16 +43,16 @@ void ExpireCollectionAttributeTest::shouldAssignValue_data()
     QTest::addColumn<MailCommon::ExpireCollectionAttribute::ExpireAction>("expireaction");
     QTest::addColumn<Akonadi::Collection::Id>("akonadiid");
 
-    QTest::newRow("add autoexpire") << true << 28 << 14 << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireNever
-                                    << MailCommon::ExpireCollectionAttribute::ExpireDelete << qint64(5);
-    QTest::newRow("change action") << true << 28 << 14 << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireNever
-                                   << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(5);
+    QTest::newRow("add autoexpire") << true << 28 << 14 << MailCommon::ExpireCollectionAttribute::ExpireNever
+                                    << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireDelete << qint64(5);
+    QTest::newRow("change action") << true << 28 << 14 << MailCommon::ExpireCollectionAttribute::ExpireNever
+                                   << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(5);
     QTest::newRow("change age") << true << 150 << 1 << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireNever
                                 << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(5);
     QTest::newRow("change units") << true << 15 << 1 << MailCommon::ExpireCollectionAttribute::ExpireDays << MailCommon::ExpireCollectionAttribute::ExpireDays
                                   << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(5);
-    QTest::newRow("change units2") << true << 150 << 18 << MailCommon::ExpireCollectionAttribute::ExpireMonths << MailCommon::ExpireCollectionAttribute::ExpireWeeks
-                                   << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(6);
+    QTest::newRow("change units2") << true << 150 << 18 << MailCommon::ExpireCollectionAttribute::ExpireMonths
+                                   << MailCommon::ExpireCollectionAttribute::ExpireWeeks << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(6);
 }
 
 void ExpireCollectionAttributeTest::shouldAssignValue()
@@ -92,16 +92,16 @@ void ExpireCollectionAttributeTest::shouldCloneAttr_data()
     QTest::addColumn<MailCommon::ExpireCollectionAttribute::ExpireAction>("expireaction");
     QTest::addColumn<Akonadi::Collection::Id>("akonadiid");
 
-    QTest::newRow("add autoexpire") << true << 28 << 14 << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireNever
-                                    << MailCommon::ExpireCollectionAttribute::ExpireDelete << qint64(5);
-    QTest::newRow("change action") << true << 28 << 14 << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireNever
-                                   << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(5);
+    QTest::newRow("add autoexpire") << true << 28 << 14 << MailCommon::ExpireCollectionAttribute::ExpireNever
+                                    << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireDelete << qint64(5);
+    QTest::newRow("change action") << true << 28 << 14 << MailCommon::ExpireCollectionAttribute::ExpireNever
+                                   << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(5);
     QTest::newRow("change age") << true << 150 << 1 << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireNever
                                 << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(5);
     QTest::newRow("change units") << true << 15 << 1 << MailCommon::ExpireCollectionAttribute::ExpireDays << MailCommon::ExpireCollectionAttribute::ExpireDays
                                   << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(5);
-    QTest::newRow("change units2") << true << 150 << 18 << MailCommon::ExpireCollectionAttribute::ExpireMonths << MailCommon::ExpireCollectionAttribute::ExpireWeeks
-                                   << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(6);
+    QTest::newRow("change units2") << true << 150 << 18 << MailCommon::ExpireCollectionAttribute::ExpireMonths
+                                   << MailCommon::ExpireCollectionAttribute::ExpireWeeks << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(6);
 }
 
 void ExpireCollectionAttributeTest::shouldCloneAttr()
@@ -136,16 +136,16 @@ void ExpireCollectionAttributeTest::shouldSerializedValue_data()
     QTest::addColumn<MailCommon::ExpireCollectionAttribute::ExpireAction>("expireaction");
     QTest::addColumn<Akonadi::Collection::Id>("akonadiid");
 
-    QTest::newRow("add autoexpire") << true << 28 << 14 << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireNever
-                                    << MailCommon::ExpireCollectionAttribute::ExpireDelete << qint64(5);
-    QTest::newRow("change action") << true << 28 << 14 << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireNever
-                                   << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(5);
+    QTest::newRow("add autoexpire") << true << 28 << 14 << MailCommon::ExpireCollectionAttribute::ExpireNever
+                                    << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireDelete << qint64(5);
+    QTest::newRow("change action") << true << 28 << 14 << MailCommon::ExpireCollectionAttribute::ExpireNever
+                                   << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(5);
     QTest::newRow("change age") << true << 150 << 1 << MailCommon::ExpireCollectionAttribute::ExpireNever << MailCommon::ExpireCollectionAttribute::ExpireNever
                                 << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(5);
     QTest::newRow("change units") << true << 15 << 1 << MailCommon::ExpireCollectionAttribute::ExpireDays << MailCommon::ExpireCollectionAttribute::ExpireDays
                                   << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(5);
-    QTest::newRow("change units2") << true << 150 << 18 << MailCommon::ExpireCollectionAttribute::ExpireMonths << MailCommon::ExpireCollectionAttribute::ExpireWeeks
-                                   << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(6);
+    QTest::newRow("change units2") << true << 150 << 18 << MailCommon::ExpireCollectionAttribute::ExpireMonths
+                                   << MailCommon::ExpireCollectionAttribute::ExpireWeeks << MailCommon::ExpireCollectionAttribute::ExpireMove << qint64(6);
 }
 
 void ExpireCollectionAttributeTest::shouldSerializedValue()

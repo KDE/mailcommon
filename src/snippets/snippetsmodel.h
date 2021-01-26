@@ -10,17 +10,17 @@
 #ifndef MAILCOMMON_SNIPPETSMODEL_P_H
 #define MAILCOMMON_SNIPPETSMODEL_P_H
 
+#include "mailcommon_export.h"
 #include <QAbstractItemModel>
 #include <QKeySequence>
-#include "mailcommon_export.h"
-namespace MailCommon {
+namespace MailCommon
+{
 class SnippetItem;
 /**
  * @brief The SnippetsInfo struct
  * @author Laurent Montel <montel@kde.org>
  */
-struct MAILCOMMON_EXPORT SnippetsInfo
-{
+struct MAILCOMMON_EXPORT SnippetsInfo {
     QString newName;
     QKeySequence keySequence;
     QString text;
@@ -42,15 +42,15 @@ class MAILCOMMON_EXPORT SnippetsModel : public QAbstractItemModel
 public:
     enum Role {
         IsGroupRole = Qt::UserRole + 1, ///< Returns whether the index represents a group
-        NameRole,                       ///< The name of a snippet or group
-        TextRole,                       ///< The text of a snippet
-        KeySequenceRole,                ///< The key sequence to activate a snippet
-        KeywordRole,                    ///< The keyword which will replace by snippet
-        SubjectRole,                    ///< The subject of a snippet
-        ToRole,                         ///< The To of a snippet
-        CcRole,                         ///< The Cc of a snippet
-        BccRole,                        ///< The Cc of a snippet
-        AttachmentRole,                 ///< The Attachment of a snippet
+        NameRole, ///< The name of a snippet or group
+        TextRole, ///< The text of a snippet
+        KeySequenceRole, ///< The key sequence to activate a snippet
+        KeywordRole, ///< The keyword which will replace by snippet
+        SubjectRole, ///< The subject of a snippet
+        ToRole, ///< The To of a snippet
+        CcRole, ///< The Cc of a snippet
+        BccRole, ///< The Cc of a snippet
+        AttachmentRole, ///< The Attachment of a snippet
     };
 
     static SnippetsModel *instance();
@@ -96,11 +96,28 @@ protected:
 Q_SIGNALS:
     void dndDone();
     void addNewDndSnippset(const QString &);
-    void updateActionCollection(const QString &oldName, const QString &newName, const QKeySequence &keySequence, const QString &text, const QString &subject, const QString &to, const QString &cc, const QString &bcc, const QString &attachment);
+    void updateActionCollection(const QString &oldName,
+                                const QString &newName,
+                                const QKeySequence &keySequence,
+                                const QString &text,
+                                const QString &subject,
+                                const QString &to,
+                                const QString &cc,
+                                const QString &bcc,
+                                const QString &attachment);
 
 private:
     QModelIndex createGroup(const QString &groupName);
-    void createSnippet(const QModelIndex &groupIndex, const QString &snippetName, const QString &snippetText, const QString &snippetKeySequence, const QString &snippetKeyword, const QString &snippetSubject, const QString &to, const QString &cc, const QString &bcc, const QString &attachment);
+    void createSnippet(const QModelIndex &groupIndex,
+                       const QString &snippetName,
+                       const QString &snippetText,
+                       const QString &snippetKeySequence,
+                       const QString &snippetKeyword,
+                       const QString &snippetSubject,
+                       const QString &to,
+                       const QString &cc,
+                       const QString &bcc,
+                       const QString &attachment);
     SnippetItem *mRootItem = nullptr;
     QMap<QString, QString> mSavedVariables;
 };

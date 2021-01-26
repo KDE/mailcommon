@@ -13,7 +13,8 @@
 #include <QMultiHash>
 #include <QString>
 #include <QVector>
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterAction;
 
 using FilterActionNewFunc = FilterAction *(*)();

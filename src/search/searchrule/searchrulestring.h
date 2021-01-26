@@ -17,7 +17,8 @@
  * The string can be either a message header, or a pseudo header, such
  * as \<body\>
  */
-namespace MailCommon {
+namespace MailCommon
+{
 class SearchRuleString : public SearchRule
 {
 public:

@@ -6,11 +6,11 @@
 
 #include "filteractionmissingsoundurldialogtest.h"
 #include "../filter/dialog/filteractionmissingsoundurldialog.h"
-#include <QTest>
-#include <QStandardPaths>
+#include <KUrlRequester>
 #include <QDialogButtonBox>
 #include <QLabel>
-#include <KUrlRequester>
+#include <QStandardPaths>
+#include <QTest>
 
 FilterActionMissingSoundUrlDialogTest::FilterActionMissingSoundUrlDialogTest(QObject *parent)
     : QObject(parent)

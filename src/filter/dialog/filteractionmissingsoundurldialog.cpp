@@ -8,8 +8,8 @@
 
 #include <KConfigGroup>
 #include <KLocalizedString>
-#include <KUrlRequester>
 #include <KSharedConfig>
+#include <KUrlRequester>
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QPushButton>
@@ -31,9 +31,10 @@ FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QStri
 
     label = new QLabel(this);
     label->setObjectName(QStringLiteral("selectlabel"));
-    label->setText(i18n("Sound file is missing. "
-                        "Please select a sound to use with filter \"%1\"",
-                        filtername));
+    label->setText(
+        i18n("Sound file is missing. "
+             "Please select a sound to use with filter \"%1\"",
+             filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
     mUrlWidget = new KUrlRequester(this);

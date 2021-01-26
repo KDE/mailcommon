@@ -10,7 +10,8 @@
 
 #include "filteractionwithcommand.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionExec - execute command
 // Execute a shell command

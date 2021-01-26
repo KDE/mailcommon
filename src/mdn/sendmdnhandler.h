@@ -14,7 +14,8 @@
 
 #include <QObject>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class IKernel;
 
 /**

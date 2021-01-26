@@ -7,12 +7,13 @@
 #ifndef MDNADVICEHELPER_H
 #define MDNADVICEHELPER_H
 
-#include <QObject>
 #include "mailcommon/mdnstateattribute.h"
+#include <QObject>
 //#include <KMime/KMimeMessage>
 #include <MessageComposer/MessageFactoryNG>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MDNAdviceHelper : public QObject
 {
     Q_OBJECT
@@ -36,11 +37,9 @@ public:
      * Will also set the MailCommon::MDNStateAttribute on the given item
      * to what the user has selected.
      */
-    Q_REQUIRED_RESULT QPair<bool, KMime::MDN::SendingMode> checkAndSetMDNInfo(
-        const Akonadi::Item &item, KMime::MDN::DispositionType d, bool forceSend = false);
+    Q_REQUIRED_RESULT QPair<bool, KMime::MDN::SendingMode> checkAndSetMDNInfo(const Akonadi::Item &item, KMime::MDN::DispositionType d, bool forceSend = false);
 
-    Q_REQUIRED_RESULT MailCommon::MDNStateAttribute::MDNSentState dispositionToSentState(
-        KMime::MDN::DispositionType d);
+    Q_REQUIRED_RESULT MailCommon::MDNStateAttribute::MDNSentState dispositionToSentState(KMime::MDN::DispositionType d);
 
 private:
     explicit MDNAdviceHelper(QObject *parent = nullptr)

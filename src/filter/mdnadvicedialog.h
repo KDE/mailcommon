@@ -13,7 +13,8 @@
 
 #include <QDialog>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MAILCOMMON_EXPORT MDNAdviceDialog : public QDialog
 {
     Q_OBJECT

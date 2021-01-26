@@ -12,7 +12,8 @@
 
 #include <QDialog>
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @short A dialog to request information about message redirection from the user.
  *
@@ -30,10 +31,7 @@ public:
     /**
      * Describes the send mode.
      */
-    enum SendMode {
-        SendNow,
-        SendLater
-    };
+    enum SendMode { SendNow, SendLater };
 
     /**
      * Creates a new redirect dialog.
@@ -64,6 +62,7 @@ public:
 
     Q_REQUIRED_RESULT QString cc() const;
     Q_REQUIRED_RESULT QString bcc() const;
+
 protected:
     void accept() override;
 

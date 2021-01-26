@@ -22,7 +22,8 @@ class QAbstractButton;
 class QRadioButton;
 class QStackedWidget;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class SearchPatternEdit;
 
 /**
@@ -73,17 +74,15 @@ public:
     };
     Q_DECLARE_FLAGS(SearchPatternEditOptions, SearchPatternEditOption)
 
-    enum SearchModeType {
-        StandardMode = 0,
-        BalooMode = 1
-    };
+    enum SearchModeType { StandardMode = 0, BalooMode = 1 };
 
     /**
      * Constructor. The parent parameter is passed to the underlying
      * QGroupBox, as usual.
      */
-    explicit SearchPatternEdit(
-        QWidget *parent = nullptr, SearchPatternEditOptions options = (SearchPatternEditOptions)(None), SearchModeType modeType = StandardMode);
+    explicit SearchPatternEdit(QWidget *parent = nullptr,
+                               SearchPatternEditOptions options = (SearchPatternEditOptions)(None),
+                               SearchModeType modeType = StandardMode);
 
     ~SearchPatternEdit();
 
@@ -138,68 +137,52 @@ private:
 };
 
 /**
-* A widget to edit a single MailCommon::SearchRule.
-* It consists of an editable KComboBox for the field,
-* a read-only KComboBox for the function and
-* a QLineEdit for the content or the pattern (in case of regexps).
-* It manages the i18n itself, so field name should be in it's english form.
-*
-* To use, you essentially give it the reference to a MailCommon::SearchRule and
-* it does the rest. It will never delete the rule itself, as it assumes
-*  that something outside of it manages this.
-*
-* @short A widget to edit a single MailCommon::SearchRule.
-* @author Marc Mutz <mutz@kde.org>
-*/
+ * A widget to edit a single MailCommon::SearchRule.
+ * It consists of an editable KComboBox for the field,
+ * a read-only KComboBox for the function and
+ * a QLineEdit for the content or the pattern (in case of regexps).
+ * It manages the i18n itself, so field name should be in it's english form.
+ *
+ * To use, you essentially give it the reference to a MailCommon::SearchRule and
+ * it does the rest. It will never delete the rule itself, as it assumes
+ *  that something outside of it manages this.
+ *
+ * @short A widget to edit a single MailCommon::SearchRule.
+ * @author Marc Mutz <mutz@kde.org>
+ */
 class SearchRuleWidget : public QWidget
 {
     Q_OBJECT
 
 public:
     /**
-    * Constructor. You can give a MailCommon::SearchRule as parameter,
-    * which will be used to initialize the widget.
-    */
+     * Constructor. You can give a MailCommon::SearchRule as parameter,
+     * which will be used to initialize the widget.
+     */
     explicit SearchRuleWidget(QWidget *parent = nullptr,
-                              MailCommon::SearchRule::Ptr aRule = MailCommon::SearchRule::Ptr(), SearchPatternEdit::SearchPatternEditOptions options = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None),
+                              MailCommon::SearchRule::Ptr aRule = MailCommon::SearchRule::Ptr(),
+                              SearchPatternEdit::SearchPatternEditOptions options = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None),
                               SearchPatternEdit::SearchModeType modeType = SearchPatternEdit::StandardMode);
 
-    enum {
-        Message,
-        Body,
-        AnyHeader,
-        Recipients,
-        Size,
-        AgeInDays,
-        Status,
-        Tag,
-        Subject,
-        From,
-        To,
-        CC,
-        ReplyTo,
-        Organization,
-        Date,
-        Encryption
-    };
+    enum { Message, Body, AnyHeader, Recipients, Size, AgeInDays, Status, Tag, Subject, From, To, CC, ReplyTo, Organization, Date, Encryption };
 
     /**
-    * Sets the rule. The rule is accepted regardless of the return
-    * value of MailCommon::SearchRule::isEmpty. This widget makes a shallow
-    * copy of @p aRule and operates directly on it. If @p aRule is 0,
-    * resets itself, taks user input, but does essentially nothing.
-    * If you pass 0, you should probably disable it.
-    */
+     * Sets the rule. The rule is accepted regardless of the return
+     * value of MailCommon::SearchRule::isEmpty. This widget makes a shallow
+     * copy of @p aRule and operates directly on it. If @p aRule is 0,
+     * resets itself, taks user input, but does essentially nothing.
+     * If you pass 0, you should probably disable it.
+     */
     void setRule(MailCommon::SearchRule::Ptr aRule);
 
     /**
-    * Returns a reference to the currently-worked-on MailCommon::SearchRule.
-    */
+     * Returns a reference to the currently-worked-on MailCommon::SearchRule.
+     */
     MailCommon::SearchRule::Ptr rule() const;
 
     /**
-    * Resets the rule currently worked on and updates the widget accordingly.
-    */
+     * Resets the rule currently worked on and updates the widget accordingly.
+     */
     void reset();
 
     static int ruleFieldToId(const QString &i18nVal);
@@ -215,16 +198,16 @@ public Q_SLOTS:
 
 Q_SIGNALS:
     /**
-    * This signal is emitted whenever the user alters the field.
-    * The pseudo-headers <...> are returned in their i18n form, but
-    * stored in their English form in the rule.
-    */
+     * This signal is emitted whenever the user alters the field.
+     * The pseudo-headers <...> are returned in their i18n form, but
+     * stored in their English form in the rule.
+     */
     void fieldChanged(const QString &);
 
     /**
-    * This signal is emitted whenever the user alters the contents/value
-    * of the rule.
-    */
+     * This signal is emitted whenever the user alters the contents/value
+     * of the rule.
+     */
     void contentsChanged(const QString &);
 
     void returnPressed();
@@ -234,14 +217,14 @@ Q_SIGNALS:
 
 protected:
     /**
-    * Used internally to translate i18n-ized pseudo-headers back to English.
-    */
+     * Used internally to translate i18n-ized pseudo-headers back to English.
+     */
     static QByteArray ruleFieldToEnglish(const QString &i18nVal);
 
     /**
-    * Used internally to find the corresponding index into the field
-    * ComboBox. Returns the index if found or -1 if the search failed,
-    */
+     * Used internally to find the corresponding index into the field
+     * ComboBox. Returns the index if found or -1 if the search failed,
+     */
     int indexOfRuleField(const QByteArray &aName) const;
 
 protected Q_SLOTS:
@@ -268,7 +251,9 @@ class SearchRuleWidgetLister : public KPIM::KWidgetLister
     friend class SearchPatternEdit;
 
 public:
-    explicit SearchRuleWidgetLister(QWidget *parent = nullptr, SearchPatternEdit::SearchPatternEditOptions opt = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None), SearchPatternEdit::SearchModeType modeType = SearchPatternEdit::StandardMode);
+    explicit SearchRuleWidgetLister(QWidget *parent = nullptr,
+                                    SearchPatternEdit::SearchPatternEditOptions opt = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None),
+                                    SearchPatternEdit::SearchModeType modeType = SearchPatternEdit::StandardMode);
 
     ~SearchRuleWidgetLister() override;
 

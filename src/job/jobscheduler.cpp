@@ -6,7 +6,8 @@
 
 #include "jobscheduler.h"
 #include "mailcommon_debug.h"
-namespace MailCommon {
+namespace MailCommon
+{
 ScheduledTask::ScheduledTask(const Akonadi::Collection &folder, bool immediate)
     : mCurrentFolder(folder)
     , mImmediate(immediate)
@@ -62,8 +63,8 @@ void JobScheduler::registerTask(ScheduledTask *task)
         runTaskNow(task);
     } else {
 #ifdef DEBUG_SCHEDULER
-        qCDebug(MAILCOMMON_LOG) << "JobScheduler: adding task" << task << "(type" << task->taskTypeId()
-                                << ") for folder" << task->folder() << task->folder().name();
+        qCDebug(MAILCOMMON_LOG) << "JobScheduler: adding task" << task << "(type" << task->taskTypeId() << ") for folder" << task->folder()
+                                << task->folder().name();
 #endif
         mTaskList.append(task);
         if (immediate) {
@@ -114,7 +115,7 @@ void JobScheduler::slotRunNextJob()
 #endif
                 removeTask(it);
                 if (!mTaskList.isEmpty()) {
-                    slotRunNextJob();    // to avoid the mess with invalid iterators :)
+                    slotRunNextJob(); // to avoid the mess with invalid iterators :)
                 } else {
                     mTimer.stop();
                 }
@@ -129,7 +130,7 @@ void JobScheduler::slotRunNextJob()
         }
 
         if (!task) { // found nothing to run, i.e. folder was opened
-            return;    // Timer keeps running, i.e. try again in 1 minute
+            return; // Timer keeps running, i.e. try again in 1 minute
         }
 
         runTaskNow(task);
@@ -142,9 +143,9 @@ void JobScheduler::restartTimer()
         slotRunNextJob();
     } else {
 #ifdef DEBUG_SCHEDULER
-        mTimer.start(10000);   // 10 seconds
+        mTimer.start(10000); // 10 seconds
 #else
-        mTimer.start(1 * 60000);   // 1 minute
+        mTimer.start(1 * 60000); // 1 minute
 #endif
     }
 }
@@ -159,13 +160,10 @@ void JobScheduler::runTaskNow(ScheduledTask *task)
     mTimer.stop();
     mCurrentJob = mCurrentTask->run();
 #ifdef DEBUG_SCHEDULER
-    qCDebug(MAILCOMMON_LOG) << "JobScheduler: task" << mCurrentTask
-                            << "(type" << mCurrentTask->taskTypeId() << ")"
-                            << "for folder" << mCurrentTask->folder()->label()
-                            << "returned job" << mCurrentJob
-                            << (mCurrentJob ? mCurrentJob->className() : 0);
+    qCDebug(MAILCOMMON_LOG) << "JobScheduler: task" << mCurrentTask << "(type" << mCurrentTask->taskTypeId() << ")"
+                            << "for folder" << mCurrentTask->folder()->label() << "returned job" << mCurrentJob << (mCurrentJob ? mCurrentJob->className() : 0);
 #endif
-    if (!mCurrentJob) {   // nothing to do, e.g. folder deleted
+    if (!mCurrentJob) { // nothing to do, e.g. folder deleted
         delete mCurrentTask;
         mCurrentTask = nullptr;
         if (!mTaskList.isEmpty()) {

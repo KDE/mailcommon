@@ -59,7 +59,7 @@ void FilterImporterPathCacheTest::shouldNotDuplicateEntries()
     cache.insert(QStringLiteral("foo1"), Akonadi::Collection(4));
     QCOMPARE(cache.count(), 1);
 
-    //Add new one
+    // Add new one
     cache.insert(QStringLiteral("foo2"), Akonadi::Collection(4));
     QCOMPARE(cache.count(), 2);
 }
@@ -72,7 +72,7 @@ void FilterImporterPathCacheTest::shouldReturnValues()
     cache.insert(key, cached);
     QCOMPARE(cache.convertedFilterPath(key), cached);
 
-    //Use value in same key
+    // Use value in same key
     cached = Akonadi::Collection(5);
     cache.insert(key, cached);
     QCOMPARE(cache.convertedFilterPath(key), cached);

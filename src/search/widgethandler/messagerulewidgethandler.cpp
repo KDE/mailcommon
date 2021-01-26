@@ -7,11 +7,11 @@
 #include "messagerulewidgethandler.h"
 #include "search/searchpattern.h"
 
-#include <KLocalizedString>
 #include <KLineEdit>
-#include <QStackedWidget>
-#include <QLabel>
+#include <KLocalizedString>
 #include <QComboBox>
+#include <QLabel>
+#include <QStackedWidget>
 
 using namespace MailCommon;
 
@@ -21,20 +21,18 @@ static const struct {
     SearchRule::Function id;
     const char *displayName;
 } MessageFunctions[] = {
-    { SearchRule::FuncContains, I18N_NOOP("contains")          },
-    { SearchRule::FuncContainsNot, I18N_NOOP("does not contain")  },
-    { SearchRule::FuncRegExp, I18N_NOOP("matches regular expr.") },
-    { SearchRule::FuncNotRegExp, I18N_NOOP("does not match reg. expr.") },
-    { SearchRule::FuncHasAttachment, I18N_NOOP("has an attachment") },
-    { SearchRule::FuncHasNoAttachment, I18N_NOOP("has no attachment") },
+    {SearchRule::FuncContains, I18N_NOOP("contains")},
+    {SearchRule::FuncContainsNot, I18N_NOOP("does not contain")},
+    {SearchRule::FuncRegExp, I18N_NOOP("matches regular expr.")},
+    {SearchRule::FuncNotRegExp, I18N_NOOP("does not match reg. expr.")},
+    {SearchRule::FuncHasAttachment, I18N_NOOP("has an attachment")},
+    {SearchRule::FuncHasNoAttachment, I18N_NOOP("has no attachment")},
 };
-static const int MessageFunctionCount
-    = sizeof(MessageFunctions) / sizeof(*MessageFunctions);
+static const int MessageFunctionCount = sizeof(MessageFunctions) / sizeof(*MessageFunctions);
 
 //---------------------------------------------------------------------------
 
-QWidget *MessageRuleWidgetHandler::createFunctionWidget(
-    int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const
+QWidget *MessageRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const
 {
     if (number != 0) {
         return nullptr;
@@ -81,8 +79,7 @@ QWidget *MessageRuleWidgetHandler::createValueWidget(int number, QStackedWidget 
 
 //---------------------------------------------------------------------------
 
-SearchRule::Function MessageRuleWidgetHandler::currentFunction(
-    const QStackedWidget *functionStack) const
+SearchRule::Function MessageRuleWidgetHandler::currentFunction(const QStackedWidget *functionStack) const
 {
     const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("messageRuleFuncCombo"));
 
@@ -222,8 +219,7 @@ bool MessageRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWi
         functionStack->setCurrentWidget(funcCombo);
     }
 
-    if (func == SearchRule::FuncHasAttachment
-        || func == SearchRule::FuncHasNoAttachment) {
+    if (func == SearchRule::FuncHasAttachment || func == SearchRule::FuncHasNoAttachment) {
         auto *w = valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider"));
         valueStack->setCurrentWidget(w);
     } else {
@@ -254,8 +250,7 @@ bool MessageRuleWidgetHandler::update(const QByteArray &field, QStackedWidget *f
 
     // raise the correct value widget
     SearchRule::Function func = currentFunction(functionStack);
-    if (func == SearchRule::FuncHasAttachment
-        || func == SearchRule::FuncHasNoAttachment) {
+    if (func == SearchRule::FuncHasAttachment || func == SearchRule::FuncHasNoAttachment) {
         auto *w = valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider"));
         valueStack->setCurrentWidget(w);
     } else {

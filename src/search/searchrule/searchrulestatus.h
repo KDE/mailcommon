@@ -11,8 +11,9 @@
 
 #include "mailcommon/searchpattern.h"
 #include <Akonadi/KMime/MessageStatus>
-namespace MailCommon {
-//TODO: Check if the below one is needed or not!
+namespace MailCommon
+{
+// TODO: Check if the below one is needed or not!
 // The below are used in several places and here so they are accessible.
 struct MessageStatusInfo {
     const char *context;
@@ -22,24 +23,23 @@ struct MessageStatusInfo {
 
 // If you change the ordering here; also do it in the enum below
 static const MessageStatusInfo StatusValues[] = {
-    { I18NC_NOOP("message status", "Important"), "emblem-important"    },
-    { I18NC_NOOP("message status", "Action Item"), "mail-task"           },
-    { I18NC_NOOP("message status", "Unread"), "mail-unread"         },
-    { I18NC_NOOP("message status", "Read"), "mail-read"           },
-    { I18NC_NOOP("message status", "Deleted"), "mail-deleted"        },
-    { I18NC_NOOP("message status", "Replied"), "mail-replied"        },
-    { I18NC_NOOP("message status", "Forwarded"), "mail-forwarded"      },
-    { I18NC_NOOP("message status", "Queued"), "mail-queued"         },
-    { I18NC_NOOP("message status", "Sent"), "mail-sent"           },
-    { I18NC_NOOP("message status", "Watched"), "mail-thread-watch"   },
-    { I18NC_NOOP("message status", "Ignored"), "mail-thread-ignored" },
-    { I18NC_NOOP("message status", "Spam"), "mail-mark-junk"      },
-    { I18NC_NOOP("message status", "Ham"), "mail-mark-notjunk"   },
-    { I18NC_NOOP("message status", "Has Attachment"), "mail-attachment"     }  //must be last
+    {I18NC_NOOP("message status", "Important"), "emblem-important"},
+    {I18NC_NOOP("message status", "Action Item"), "mail-task"},
+    {I18NC_NOOP("message status", "Unread"), "mail-unread"},
+    {I18NC_NOOP("message status", "Read"), "mail-read"},
+    {I18NC_NOOP("message status", "Deleted"), "mail-deleted"},
+    {I18NC_NOOP("message status", "Replied"), "mail-replied"},
+    {I18NC_NOOP("message status", "Forwarded"), "mail-forwarded"},
+    {I18NC_NOOP("message status", "Queued"), "mail-queued"},
+    {I18NC_NOOP("message status", "Sent"), "mail-sent"},
+    {I18NC_NOOP("message status", "Watched"), "mail-thread-watch"},
+    {I18NC_NOOP("message status", "Ignored"), "mail-thread-ignored"},
+    {I18NC_NOOP("message status", "Spam"), "mail-mark-junk"},
+    {I18NC_NOOP("message status", "Ham"), "mail-mark-notjunk"},
+    {I18NC_NOOP("message status", "Has Attachment"), "mail-attachment"} // must be last
 };
 
-static const int StatusValueCount
-    = sizeof(StatusValues) / sizeof(MessageStatusInfo);
+static const int StatusValueCount = sizeof(StatusValues) / sizeof(MessageStatusInfo);
 // we want to show all status entries in the quick search bar, but only the
 // ones up to attachment in the search/filter dialog, because there the
 // attachment case is handled separately.
@@ -69,7 +69,7 @@ public:
 
     void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const override;
 
-    //Not possible to implement optimized form for status searching
+    // Not possible to implement optimized form for status searching
     using SearchRule::matches;
 
     static Akonadi::MessageStatus statusFromEnglishName(const QString &);

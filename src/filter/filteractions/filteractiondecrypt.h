@@ -10,7 +10,8 @@
 
 #include "filteractionwithcrypto.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterActionDecrypt : public FilterActionWithCrypto
 {
     Q_OBJECT

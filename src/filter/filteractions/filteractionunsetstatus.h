@@ -9,7 +9,8 @@
 #define FILTERACTIONUNSETSTATUS_H
 
 #include "filteractionstatus.h"
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterActionUnsetStatus : public FilterActionStatus
 {
     Q_OBJECT
@@ -23,6 +24,7 @@ public:
     Q_REQUIRED_RESULT QStringList sieveRequires() const override;
     Q_REQUIRED_RESULT bool isEmpty() const override;
     Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
+
 private:
     bool checkIsValid(int &index) const;
 };

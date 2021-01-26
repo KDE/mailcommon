@@ -6,13 +6,13 @@
 
 #include "snippetwidget.h"
 #include "ui_snippetwidget.h"
-#include <MessageComposer/ConvertSnippetVariableMenu>
 #include <KPIMTextEdit/PlainTextEditor>
+#include <MessageComposer/ConvertSnippetVariableMenu>
 
 #include <KActionCollection>
+#include <KLineEdit>
 #include <KLocalizedString>
 #include <QComboBox>
-#include <KLineEdit>
 #include <QVBoxLayout>
 using namespace MailCommon;
 
@@ -38,9 +38,12 @@ SnippetWidget::SnippetWidget(QWidget *parent)
 
     auto variableMenu = new MessageComposer::ConvertSnippetVariableMenu(false, this, this);
     d->mUi.pushButtonVariables->setMenu(variableMenu->menu());
-    connect(variableMenu, &MessageComposer::ConvertSnippetVariableMenu::insertVariable, this, [this](MessageComposer::ConvertSnippetVariablesUtil::VariableType type) {
-        d->mUi.snippetText->editor()->insertPlainText(MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(type) + QLatin1Char(' '));
-    });
+    connect(variableMenu,
+            &MessageComposer::ConvertSnippetVariableMenu::insertVariable,
+            this,
+            [this](MessageComposer::ConvertSnippetVariablesUtil::VariableType type) {
+                d->mUi.snippetText->editor()->insertPlainText(MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(type) + QLatin1Char(' '));
+            });
 
     d->mUi.nameEdit->setTrapReturnKey(true);
     d->mUi.keyword->setTrapReturnKey(true);
@@ -49,10 +52,11 @@ SnippetWidget::SnippetWidget(QWidget *parent)
     d->mUi.nameEdit->setFocus();
     d->mUi.snippetText->setMinimumSize(500, 300);
 
-    d->mUi.keyword->setWhatsThis(i18n("Enter a keyword here to enable fast insertion of this snippet while writing "
-                                      "an email. For instance if you choose \"greeting\" as the keyword, you can then "
-                                      "type \\greeting in your email and then press the tab key, and it will be "
-                                      "replaced with the contents of this snippet."));
+    d->mUi.keyword->setWhatsThis(
+        i18n("Enter a keyword here to enable fast insertion of this snippet while writing "
+             "an email. For instance if you choose \"greeting\" as the keyword, you can then "
+             "type \\greeting in your email and then press the tab key, and it will be "
+             "replaced with the contents of this snippet."));
 
     connect(d->mUi.nameEdit, &KLineEdit::textChanged, this, [this](const QString &str) {
         Q_EMIT textChanged(str);

@@ -5,16 +5,16 @@
 */
 
 #include "collectiongeneralwidget.h"
-#include "kernel/mailkernel.h"
 #include "folder/foldersettings.h"
+#include "kernel/mailkernel.h"
 #include "util/mailutil_p.h"
-#include <KLocalizedString>
-#include <KIdentityManagement/IdentityCombo>
 #include <Akonadi/KMime/NewMailNotifierAttribute>
-#include <QFrame>
+#include <KIdentityManagement/IdentityCombo>
+#include <KLocalizedString>
 #include <QCheckBox>
-#include <QVBoxLayout>
+#include <QFrame>
 #include <QLabel>
+#include <QVBoxLayout>
 using namespace MailCommon;
 
 CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
@@ -26,8 +26,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     // should new mail in this folder be ignored?
     auto hbl = new QHBoxLayout();
     topLayout->addItem(hbl);
-    mNotifyOnNewMailCheckBox
-        = new QCheckBox(i18n("Act on new/unread mail in this folder"), this);
+    mNotifyOnNewMailCheckBox = new QCheckBox(i18n("Act on new/unread mail in this folder"), this);
     mNotifyOnNewMailCheckBox->setWhatsThis(
         i18n("<qt><p>If this option is enabled then you will be notified about "
              "new/unread mail in this folder. Moreover, going to the "
@@ -42,8 +41,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     // should replies to mails in this folder be kept in this same folder?
     hbl = new QHBoxLayout();
     topLayout->addItem(hbl);
-    mKeepRepliesInSameFolderCheckBox
-        = new QCheckBox(i18n("Keep replies in this folder"), this);
+    mKeepRepliesInSameFolderCheckBox = new QCheckBox(i18n("Keep replies in this folder"), this);
     mKeepRepliesInSameFolderCheckBox->setWhatsThis(
         i18n("Check this option if you want replies you write "
              "to mails in this folder to be put in this same folder "
@@ -53,13 +51,11 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     // should this folder be shown in the folder selection dialog?
     hbl = new QHBoxLayout();
     topLayout->addItem(hbl);
-    mHideInSelectionDialogCheckBox
-        = new QCheckBox(i18n("Hide this folder in the folder selection dialog"), this);
-    mHideInSelectionDialogCheckBox->setWhatsThis(
-        xi18nc("@info:whatsthis",
-               "Check this option if you do not want this folder "
-               "to be shown in folder selection dialogs, such as the <interface>"
-               "Jump to Folder</interface> dialog."));
+    mHideInSelectionDialogCheckBox = new QCheckBox(i18n("Hide this folder in the folder selection dialog"), this);
+    mHideInSelectionDialogCheckBox->setWhatsThis(xi18nc("@info:whatsthis",
+                                                        "Check this option if you do not want this folder "
+                                                        "to be shown in folder selection dialogs, such as the <interface>"
+                                                        "Jump to Folder</interface> dialog."));
     hbl->addWidget(mHideInSelectionDialogCheckBox);
     hbl->addStretch(1);
 
@@ -67,7 +63,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     // use grid layout for the following combobox settings
     auto gl = new QGridLayout();
     topLayout->addItem(gl);
-    gl->setColumnStretch(1, 100);   // make the second column use all available space
+    gl->setColumnStretch(1, 100); // make the second column use all available space
     int row = -1;
 
     // sender identity
@@ -143,8 +139,7 @@ void CollectionGeneralWidget::load(const Akonadi::Collection &col)
     // ignore new mail
     mNotifyOnNewMailCheckBox->setChecked(!Util::ignoreNewMailInFolder(col));
 
-    const bool keepInFolder = (mFolderCollection->canCreateMessages()
-                               && mFolderCollection->putRepliesInSameFolder());
+    const bool keepInFolder = (mFolderCollection->canCreateMessages() && mFolderCollection->putRepliesInSameFolder());
 
     mKeepRepliesInSameFolderCheckBox->setChecked(keepInFolder);
     mKeepRepliesInSameFolderCheckBox->setEnabled(mFolderCollection->canCreateMessages());

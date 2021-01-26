@@ -14,7 +14,8 @@
 
 #include <Libkleo/KeyCache>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterActionEncrypt : public FilterActionWithCrypto
 {
     Q_OBJECT

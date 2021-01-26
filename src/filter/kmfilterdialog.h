@@ -12,11 +12,11 @@
 #ifndef MAILCOMMON_KMFILTERDIALOG_H
 #define MAILCOMMON_KMFILTERDIALOG_H
 
-#include "mailcommon_export.h"
-#include "mailcommon/filteraction.h"
 #include "filterimporterexporter.h"
-#include "mailfilter.h"
+#include "mailcommon/filteraction.h"
 #include "mailcommon/searchpattern.h"
+#include "mailcommon_export.h"
+#include "mailfilter.h"
 
 #include <QDialog>
 
@@ -32,7 +32,8 @@ class QLabel;
 class QPushButton;
 class QRadioButton;
 class QPushButton;
-namespace MailCommon {
+namespace MailCommon
+{
 class SearchPatternEdit;
 class FilterActionWidgetLister;
 class FolderRequester;
@@ -96,7 +97,8 @@ class KJob;
  * @author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>.
  * @see MailCommon::MailFilter KMFilterActionEdit SearchPatternEdit KMFilterListBox
  */
-namespace MailCommon {
+namespace MailCommon
+{
 class MAILCOMMON_EXPORT KMFilterDialog : public QDialog
 {
     Q_OBJECT

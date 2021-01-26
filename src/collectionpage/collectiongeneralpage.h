@@ -16,13 +16,16 @@ class QLineEdit;
 class QCheckBox;
 
 template<typename T> class QSharedPointer;
-namespace PimCommon {
+namespace PimCommon
+{
 class IncidencesForWidget;
 class ContentTypeWidget;
 }
-namespace KIdentityManagement {
+namespace KIdentityManagement
+{
 }
-namespace MailCommon {
+namespace MailCommon
+{
 class FolderSettings;
 class CollectionGeneralWidget;
 /**

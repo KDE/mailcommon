@@ -11,9 +11,9 @@
 #include <KLineEdit>
 #include <KLocalizedString>
 
-#include <QStackedWidget>
-#include <QLabel>
 #include <QComboBox>
+#include <QLabel>
+#include <QStackedWidget>
 
 using namespace MailCommon;
 
@@ -22,28 +22,24 @@ using namespace MailCommon;
 static const struct {
     SearchRule::Function id;
     const char *displayName;
-} HeaderFunctions[] = {
-    { SearchRule::FuncContains, I18N_NOOP("contains")          },
-    { SearchRule::FuncContainsNot, I18N_NOOP("does not contain")   },
-    { SearchRule::FuncEquals, I18N_NOOP("equals")            },
-    { SearchRule::FuncNotEqual, I18N_NOOP("does not equal")     },
-    { SearchRule::FuncStartWith, I18N_NOOP("starts with")         },
-    { SearchRule::FuncNotStartWith, I18N_NOOP("does not start with")},
-    { SearchRule::FuncEndWith, I18N_NOOP("ends with")           },
-    { SearchRule::FuncNotEndWith, I18N_NOOP("does not end with")  },
+} HeaderFunctions[] = {{SearchRule::FuncContains, I18N_NOOP("contains")},
+                       {SearchRule::FuncContainsNot, I18N_NOOP("does not contain")},
+                       {SearchRule::FuncEquals, I18N_NOOP("equals")},
+                       {SearchRule::FuncNotEqual, I18N_NOOP("does not equal")},
+                       {SearchRule::FuncStartWith, I18N_NOOP("starts with")},
+                       {SearchRule::FuncNotStartWith, I18N_NOOP("does not start with")},
+                       {SearchRule::FuncEndWith, I18N_NOOP("ends with")},
+                       {SearchRule::FuncNotEndWith, I18N_NOOP("does not end with")},
 
-    { SearchRule::FuncRegExp, I18N_NOOP("matches regular expr.") },
-    { SearchRule::FuncNotRegExp, I18N_NOOP("does not match reg. expr.") },
-    { SearchRule::FuncIsInAddressbook, I18N_NOOP("is in address book") },
-    { SearchRule::FuncIsNotInAddressbook, I18N_NOOP("is not in address book") }
-};
-static const int HeadersFunctionCount
-    = sizeof(HeaderFunctions) / sizeof(*HeaderFunctions);
+                       {SearchRule::FuncRegExp, I18N_NOOP("matches regular expr.")},
+                       {SearchRule::FuncNotRegExp, I18N_NOOP("does not match reg. expr.")},
+                       {SearchRule::FuncIsInAddressbook, I18N_NOOP("is in address book")},
+                       {SearchRule::FuncIsNotInAddressbook, I18N_NOOP("is not in address book")}};
+static const int HeadersFunctionCount = sizeof(HeaderFunctions) / sizeof(*HeaderFunctions);
 
 //---------------------------------------------------------------------------
 
-QWidget *HeadersRuleWidgetHandler::createFunctionWidget(
-    int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const
+QWidget *HeadersRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const
 {
     if (number != 0) {
         return nullptr;
@@ -53,14 +49,12 @@ QWidget *HeadersRuleWidgetHandler::createFunctionWidget(
     funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("headerRuleFuncCombo"));
     for (int i = 0; i < HeadersFunctionCount; ++i) {
-        if (!(isBalooSearch
-              && (HeaderFunctions[i].id == SearchRule::FuncIsInAddressbook || HeaderFunctions[i].id == SearchRule::FuncIsNotInAddressbook))) {
+        if (!(isBalooSearch && (HeaderFunctions[i].id == SearchRule::FuncIsInAddressbook || HeaderFunctions[i].id == SearchRule::FuncIsNotInAddressbook))) {
             funcCombo->addItem(i18n(HeaderFunctions[i].displayName));
         }
     }
     funcCombo->adjustSize();
-    QObject::connect(funcCombo, SIGNAL(activated(int)),
-                     receiver, SLOT(slotFunctionChanged()));
+    QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));
     return funcCombo;
 }
 
@@ -73,10 +67,8 @@ QWidget *HeadersRuleWidgetHandler::createValueWidget(int number, QStackedWidget 
         lineEdit->setClearButtonEnabled(true);
         lineEdit->setTrapReturnKey(true);
         lineEdit->setObjectName(QStringLiteral("regExpLineEdit"));
-        QObject::connect(lineEdit, SIGNAL(textChanged(QString)),
-                         receiver, SLOT(slotValueChanged()));
-        QObject::connect(lineEdit, SIGNAL(returnPressed()),
-                         receiver, SLOT(slotReturnPressed()));
+        QObject::connect(lineEdit, SIGNAL(textChanged(QString)), receiver, SLOT(slotValueChanged()));
+        QObject::connect(lineEdit, SIGNAL(returnPressed()), receiver, SLOT(slotReturnPressed()));
         return lineEdit;
     }
 
@@ -92,8 +84,7 @@ QWidget *HeadersRuleWidgetHandler::createValueWidget(int number, QStackedWidget 
 
 //---------------------------------------------------------------------------
 
-SearchRule::Function HeadersRuleWidgetHandler::currentFunction(
-    const QStackedWidget *functionStack) const
+SearchRule::Function HeadersRuleWidgetHandler::currentFunction(const QStackedWidget *functionStack) const
 {
     const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("headerRuleFuncCombo"));
 
@@ -207,8 +198,7 @@ bool HeadersRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWi
     }
 
     const SearchRule::Function func = rule->function();
-    if ((isBalooSearch
-         && (func == SearchRule::FuncIsInAddressbook || func == SearchRule::FuncIsNotInAddressbook))) {
+    if ((isBalooSearch && (func == SearchRule::FuncIsInAddressbook || func == SearchRule::FuncIsNotInAddressbook))) {
         reset(functionStack, valueStack);
         return false;
     }
@@ -233,13 +223,11 @@ bool HeadersRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWi
         functionStack->setCurrentWidget(funcCombo);
     }
 
-    if (func == SearchRule::FuncIsInAddressbook
-        || func == SearchRule::FuncIsNotInAddressbook) {
+    if (func == SearchRule::FuncIsInAddressbook || func == SearchRule::FuncIsNotInAddressbook) {
         auto *w = valueStack->findChild<QWidget *>(QStringLiteral("headerRuleValueHider"));
         valueStack->setCurrentWidget(w);
     } else {
-        auto *lineEdit
-            = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+        auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
         if (lineEdit) {
             lineEdit->blockSignals(true);
@@ -266,12 +254,10 @@ bool HeadersRuleWidgetHandler::update(const QByteArray &field, QStackedWidget *f
 
     // raise the correct value widget
     SearchRule::Function func = currentFunction(functionStack);
-    if (func == SearchRule::FuncIsInAddressbook
-        || func == SearchRule::FuncIsNotInAddressbook) {
+    if (func == SearchRule::FuncIsInAddressbook || func == SearchRule::FuncIsNotInAddressbook) {
         valueStack->setCurrentWidget(valueStack->findChild<QWidget *>(QStringLiteral("headerRuleValueHider")));
     } else {
-        auto *lineEdit
-            = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+        auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
         if (lineEdit) {
             valueStack->setCurrentWidget(lineEdit);

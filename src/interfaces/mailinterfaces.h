@@ -12,20 +12,24 @@
 
 #include <KSharedConfig>
 
-namespace MessageComposer {
+namespace MessageComposer
+{
 class MessageSender;
 }
 
-namespace Akonadi {
+namespace Akonadi
+{
 class ChangeRecorder;
 class EntityMimeTypeFilterModel;
 }
 
-namespace KIdentityManagement {
+namespace KIdentityManagement
+{
 class IdentityManager;
 }
 
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterDialog;
 class JobScheduler;
 

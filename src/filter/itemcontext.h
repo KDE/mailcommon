@@ -8,13 +8,14 @@
 #ifndef MAILCOMMON_ITEMCONTEXT_H
 #define MAILCOMMON_ITEMCONTEXT_H
 
-#include "mailcommon_export.h"
 #include "mailcommon/searchpattern.h"
+#include "mailcommon_export.h"
 
 #include <Collection>
 #include <Item>
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @short A helper class for the filtering process
  *
@@ -76,13 +77,7 @@ public:
     bool deleteItem() const;
 
 private:
-    enum ItemContextAction {
-        None = 0,
-        PlayloadStore = 1,
-        FlagStore = 2,
-        DeleteItem = 4,
-        FullPayload = 8
-    };
+    enum ItemContextAction { None = 0, PlayloadStore = 1, FlagStore = 2, DeleteItem = 4, FullPayload = 8 };
     Q_DECLARE_FLAGS(ItemContextActions, ItemContextAction)
 
     Akonadi::Item mItem;

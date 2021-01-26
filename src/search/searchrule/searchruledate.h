@@ -9,7 +9,8 @@
 
 #include "searchpattern.h"
 #include <AkonadiCore/Item>
-namespace MailCommon {
+namespace MailCommon
+{
 class SearchRuleDate : public SearchRule
 {
 public:

@@ -5,9 +5,9 @@
 */
 
 #include "filteractionmovetest.h"
-#include <QTest>
 #include "../filteractions/filteractionmove.h"
 #include "folder/folderrequester.h"
+#include <QTest>
 
 FilterActionMoveTest::FilterActionMoveTest(QObject *parent)
     : QObject(parent)

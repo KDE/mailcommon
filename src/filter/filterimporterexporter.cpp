@@ -5,19 +5,19 @@
 */
 
 #include "filterimporterexporter.h"
-#include "filterselectiondialog.h"
+#include "dialog/selectthunderbirdfilterfilesdialog.h"
 #include "filteractions/filteraction.h"
-#include "filtermanager.h"
-#include "mailfilter.h"
-#include "mailcommon_debug.h"
-#include "filterimporter/filterimporterthunderbird.h"
-#include "filterimporter/filterimporterevolution.h"
-#include "filterimporter/filterimportersylpheed.h"
-#include "filterimporter/filterimporterprocmail.h"
 #include "filterimporter/filterimporterbalsa.h"
 #include "filterimporter/filterimporterclawsmail.h"
+#include "filterimporter/filterimporterevolution.h"
 #include "filterimporter/filterimportergmail.h"
-#include "dialog/selectthunderbirdfilterfilesdialog.h"
+#include "filterimporter/filterimporterprocmail.h"
+#include "filterimporter/filterimportersylpheed.h"
+#include "filterimporter/filterimporterthunderbird.h"
+#include "filtermanager.h"
+#include "filterselectiondialog.h"
+#include "mailcommon_debug.h"
+#include "mailfilter.h"
 
 #include <MessageViewer/MessageViewerUtil>
 
@@ -25,14 +25,13 @@
 #include <KConfigGroup>
 #include <KListWidgetSearchLine>
 #include <KMessageBox>
-#include <QPushButton>
 #include <QFileDialog>
+#include <QPushButton>
 #include <QRegularExpression>
 
 using namespace MailCommon;
 
-QVector<MailFilter *> FilterImporterExporter::readFiltersFromConfig(
-    const KSharedConfig::Ptr &config, QStringList &emptyFilters)
+QVector<MailFilter *> FilterImporterExporter::readFiltersFromConfig(const KSharedConfig::Ptr &config, QStringList &emptyFilters)
 {
     const KConfigGroup group = config->group("General");
 
@@ -74,8 +73,7 @@ QVector<MailFilter *> FilterImporterExporter::readFiltersFromConfig(
 void FilterImporterExporter::writeFiltersToConfig(const QVector<MailFilter *> &filters, KSharedConfig::Ptr config, bool exportFiler)
 {
     // first, delete all filter groups:
-    const QStringList filterGroups
-        = config->groupList().filter(QRegularExpression(QStringLiteral("Filter #\\d+")));
+    const QStringList filterGroups = config->groupList().filter(QRegularExpression(QStringLiteral("Filter #\\d+")));
 
     for (const QString &group : filterGroups) {
         config->deleteGroup(group);
@@ -110,17 +108,15 @@ public:
     QWidget *mParent = nullptr;
 };
 
-void FilterImporterExporter::Private::warningInfoAboutInvalidFilter(
-    const QStringList &emptyFilters) const
+void FilterImporterExporter::Private::warningInfoAboutInvalidFilter(const QStringList &emptyFilters) const
 {
     if (!emptyFilters.isEmpty()) {
-        KMessageBox::informationList(
-            mParent,
-            i18n("The following filters have not been saved because they were invalid "
-                 "(e.g. containing no actions or no search rules)."),
-            emptyFilters,
-            QString(),
-            QStringLiteral("ShowInvalidFilterWarning"));
+        KMessageBox::informationList(mParent,
+                                     i18n("The following filters have not been saved because they were invalid "
+                                          "(e.g. containing no actions or no search rules)."),
+                                     emptyFilters,
+                                     QString(),
+                                     QStringLiteral("ShowInvalidFilterWarning"));
     }
 }
 
@@ -134,8 +130,7 @@ FilterImporterExporter::~FilterImporterExporter()
     delete d;
 }
 
-QVector<MailFilter *> FilterImporterExporter::importFilters(
-    bool &canceled, FilterImporterExporter::FilterType type, const QString &filename)
+QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, FilterImporterExporter::FilterType type, const QString &filename)
 {
     QString fileName(filename);
 
@@ -187,10 +182,9 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(
         }
         file.setFileName(fileName);
         if (!file.open(QIODevice::ReadOnly)) {
-            KMessageBox::error(
-                d->mParent,
-                i18n("The selected file is not readable. "
-                     "Your file access permissions might be insufficient."));
+            KMessageBox::error(d->mParent,
+                               i18n("The selected file is not readable. "
+                                    "Your file access permissions might be insufficient."));
             return QVector<MailFilter *>();
         }
     }
@@ -199,8 +193,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(
     QStringList emptyFilter;
 
     switch (type) {
-    case KMailFilter:
-    {
+    case KMailFilter: {
         const KSharedConfig::Ptr config = KSharedConfig::openConfig(fileName);
         imported = readFiltersFromConfig(config, emptyFilter);
         break;
@@ -225,13 +218,11 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(
                 for (const QString &url : lstFiles) {
                     QFile fileThunderbird(url);
                     if (!fileThunderbird.open(QIODevice::ReadOnly)) {
-                        KMessageBox::error(
-                            d->mParent,
-                            i18n("The selected file is not readable. "
-                                 "Your file access permissions might be insufficient."));
+                        KMessageBox::error(d->mParent,
+                                           i18n("The selected file is not readable. "
+                                                "Your file access permissions might be insufficient."));
                     } else {
-                        auto *thunderBirdFilter
-                            = new MailCommon::FilterImporterThunderbird(&fileThunderbird);
+                        auto *thunderBirdFilter = new MailCommon::FilterImporterThunderbird(&fileThunderbird);
 
                         imported.append(thunderBirdFilter->importFilter());
                         emptyFilter.append(thunderBirdFilter->emptyFilter());
@@ -247,10 +238,9 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(
         } else {
             file.setFileName(fileName);
             if (!file.open(QIODevice::ReadOnly)) {
-                KMessageBox::error(
-                    d->mParent,
-                    i18n("The selected file is not readable. "
-                         "Your file access permissions might be insufficient."));
+                KMessageBox::error(d->mParent,
+                                   i18n("The selected file is not readable. "
+                                        "Your file access permissions might be insufficient."));
                 return QVector<MailFilter *>();
             }
 
@@ -260,60 +250,48 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(
             delete thunderBirdFilter;
         }
         break;
-    case EvolutionFilter:
-    {
-        auto *filter
-            = new MailCommon::FilterImporterEvolution(&file);
+    case EvolutionFilter: {
+        auto *filter = new MailCommon::FilterImporterEvolution(&file);
 
         imported = filter->importFilter();
         emptyFilter = filter->emptyFilter();
         delete filter;
         break;
     }
-    case SylpheedFilter:
-    {
-        auto *filter
-            = new MailCommon::FilterImporterSylpheed(&file);
+    case SylpheedFilter: {
+        auto *filter = new MailCommon::FilterImporterSylpheed(&file);
 
         imported = filter->importFilter();
         emptyFilter = filter->emptyFilter();
         delete filter;
         break;
     }
-    case ProcmailFilter:
-    {
-        auto *filter
-            = new MailCommon::FilterImporterProcmail(&file);
+    case ProcmailFilter: {
+        auto *filter = new MailCommon::FilterImporterProcmail(&file);
 
         imported = filter->importFilter();
         emptyFilter = filter->emptyFilter();
         delete filter;
         break;
     }
-    case BalsaFilter:
-    {
-        auto *filter
-            = new MailCommon::FilterImporterBalsa(&file);
+    case BalsaFilter: {
+        auto *filter = new MailCommon::FilterImporterBalsa(&file);
 
         imported = filter->importFilter();
         emptyFilter = filter->emptyFilter();
         delete filter;
         break;
     }
-    case ClawsMailFilter:
-    {
-        auto *filter
-            = new MailCommon::FilterImporterClawsMails(&file);
+    case ClawsMailFilter: {
+        auto *filter = new MailCommon::FilterImporterClawsMails(&file);
 
         imported = filter->importFilter();
         emptyFilter = filter->emptyFilter();
         delete filter;
         break;
     }
-    case GmailFilter:
-    {
-        auto *filter
-            = new MailCommon::FilterImporterGmail(&file);
+    case GmailFilter: {
+        auto *filter = new MailCommon::FilterImporterGmail(&file);
 
         imported = filter->importFilter();
         emptyFilter = filter->emptyFilter();
@@ -340,10 +318,14 @@ void FilterImporterExporter::exportFilters(const QVector<MailFilter *> &filters,
 {
     QUrl saveUrl;
     if (fileName.isEmpty()) {
-        saveUrl = QFileDialog::getSaveFileUrl(d->mParent, i18n("Export Filters"), QUrl::fromLocalFile(QDir::homePath()), QString(), nullptr, QFileDialog::DontConfirmOverwrite);
+        saveUrl = QFileDialog::getSaveFileUrl(d->mParent,
+                                              i18n("Export Filters"),
+                                              QUrl::fromLocalFile(QDir::homePath()),
+                                              QString(),
+                                              nullptr,
+                                              QFileDialog::DontConfirmOverwrite);
 
-        if (saveUrl.isEmpty()
-            || !MessageViewer::Util::checkOverwrite(saveUrl, d->mParent)) {
+        if (saveUrl.isEmpty() || !MessageViewer::Util::checkOverwrite(saveUrl, d->mParent)) {
             qDeleteAll(filters);
             return;
         }
@@ -353,7 +335,7 @@ void FilterImporterExporter::exportFilters(const QVector<MailFilter *> &filters,
     KSharedConfig::Ptr config = KSharedConfig::openConfig(saveUrl.toLocalFile());
     if (saveAll) {
         writeFiltersToConfig(filters, config, true);
-        //qDeleteAll(filters);
+        // qDeleteAll(filters);
     } else {
         std::unique_ptr<FilterSelectionDialog> dlg(new FilterSelectionDialog(d->mParent));
         dlg->setFilters(filters);

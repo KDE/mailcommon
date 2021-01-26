@@ -16,7 +16,7 @@ InvalidFilterListView::InvalidFilterListView(QWidget *parent)
 
     auto invalidFilterListModel = new InvalidFilterListModel(this);
     connect(invalidFilterDelegate, &InvalidFilterListItemDelegate::showDetails, this, &InvalidFilterListView::showDetails);
-    //connect(this, SIGNAL(pressed(QModelIndex)), SIGNAL(hideInformationWidget()));
+    // connect(this, SIGNAL(pressed(QModelIndex)), SIGNAL(hideInformationWidget()));
     setModel(invalidFilterListModel);
     setItemDelegate(invalidFilterDelegate);
 }

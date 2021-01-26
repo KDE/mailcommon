@@ -8,15 +8,16 @@
 #ifndef MAILCOMMON_FOLDERTREEWIDGET_H
 #define MAILCOMMON_FOLDERTREEWIDGET_H
 
-#include "mailcommon_export.h"
 #include "foldertreewidgetproxymodel.h"
+#include "mailcommon_export.h"
 
 #include <Collection>
 
 #include <QAbstractItemView>
 #include <QWidget>
 
-namespace Akonadi {
+namespace Akonadi
+{
 class StatisticsProxyModel;
 }
 
@@ -25,7 +26,8 @@ class KXMLGUIClient;
 
 class QItemSelectionModel;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class EntityCollectionOrderProxyModel;
 class FolderTreeView;
 
@@ -52,26 +54,27 @@ public:
     };
     Q_DECLARE_FLAGS(TreeViewOptions, TreeViewOption)
 
-    explicit FolderTreeWidget(
-        QWidget *parent = nullptr, KXMLGUIClient *xmlGuiClient = nullptr, TreeViewOptions options = (TreeViewOptions)(ShowUnreadCount
-                                                                                                                      |ShowCollectionStatisticAnimation), FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelOptions optReadableProxy = FolderTreeWidgetProxyModel::None);
+    explicit FolderTreeWidget(QWidget *parent = nullptr,
+                              KXMLGUIClient *xmlGuiClient = nullptr,
+                              TreeViewOptions options = (TreeViewOptions)(ShowUnreadCount | ShowCollectionStatisticAnimation),
+                              FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelOptions optReadableProxy = FolderTreeWidgetProxyModel::None);
     ~FolderTreeWidget() override;
 
     /**
      * The possible tooltip display policies.
      */
     enum ToolTipDisplayPolicy {
-        DisplayAlways,           ///< Always display a tooltip when hovering over an item
-        DisplayWhenTextElided,   ///< Display the tooltip if the item text is actually elided
-        DisplayNever             ///< Nevery display tooltips
+        DisplayAlways, ///< Always display a tooltip when hovering over an item
+        DisplayWhenTextElided, ///< Display the tooltip if the item text is actually elided
+        DisplayNever ///< Nevery display tooltips
     };
 
     /**
      * The available sorting policies.
      */
     enum SortingPolicy {
-        SortByCurrentColumn,      ///< Columns are clickable, sorting is by the current column
-        SortByDragAndDropKey      ///< Columns are NOT clickable, sorting is done by drag and drop
+        SortByCurrentColumn, ///< Columns are clickable, sorting is by the current column
+        SortByDragAndDropKey ///< Columns are NOT clickable, sorting is done by drag and drop
     };
 
     void selectCollectionFolder(const Akonadi::Collection &col);

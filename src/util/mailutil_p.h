@@ -13,12 +13,14 @@
 #include <AgentInstance>
 #include <Collection>
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * The Util namespace contains a collection of helper functions use in
  * various places.
  */
-namespace Util {
+namespace Util
+{
 Q_REQUIRED_RESULT bool ignoreNewMailInFolder(const Akonadi::Collection &collection);
 }
 }

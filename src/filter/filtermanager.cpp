@@ -14,13 +14,14 @@
 #include <KConfigGroup>
 #include <Monitor>
 #include <Tag>
+#include <TagAttribute>
 #include <TagFetchJob>
 #include <TagFetchScope>
-#include <TagAttribute>
 
 #include <QTimer>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class Q_DECL_HIDDEN FilterManager::Private
 {
 public:
@@ -28,11 +29,9 @@ public:
         : q(qq)
         , mMonitor(new Akonadi::Monitor)
     {
-        const auto service = Akonadi::ServerManager::agentServiceName(Akonadi::ServerManager::Agent,
-                                                                      QStringLiteral("akonadi_mailfilter_agent"));
-        mMailFilterAgentInterface = new org::freedesktop::Akonadi::MailFilterAgent(service,
-                                                                                   QStringLiteral("/MailFilterAgent"),
-                                                                                   QDBusConnection::sessionBus(), q);
+        const auto service = Akonadi::ServerManager::agentServiceName(Akonadi::ServerManager::Agent, QStringLiteral("akonadi_mailfilter_agent"));
+        mMailFilterAgentInterface =
+            new org::freedesktop::Akonadi::MailFilterAgent(service, QStringLiteral("/MailFilterAgent"), QDBusConnection::sessionBus(), q);
     }
 
     void readConfig();
@@ -52,8 +51,8 @@ public:
 
 void FilterManager::Private::readConfig()
 {
-    KSharedConfig::Ptr config = KSharedConfig::openConfig(
-        Akonadi::ServerManager::addNamespace(QStringLiteral("akonadi_mailfilter_agent")) + QStringLiteral("rc"));
+    KSharedConfig::Ptr config =
+        KSharedConfig::openConfig(Akonadi::ServerManager::addNamespace(QStringLiteral("akonadi_mailfilter_agent")) + QStringLiteral("rc"));
     clear();
     QStringList emptyFilters;
     mFilters = FilterImporterExporter::readFiltersFromConfig(config, emptyFilters);
@@ -62,8 +61,8 @@ void FilterManager::Private::readConfig()
 
 void FilterManager::Private::writeConfig(bool withSync) const
 {
-    KSharedConfig::Ptr config = KSharedConfig::openConfig(
-        Akonadi::ServerManager::addNamespace(QStringLiteral("akonadi_mailfilter_agent")) + QStringLiteral("rc"));
+    KSharedConfig::Ptr config =
+        KSharedConfig::openConfig(Akonadi::ServerManager::addNamespace(QStringLiteral("akonadi_mailfilter_agent")) + QStringLiteral("rc"));
 
     // Now, write out the new stuff:
     FilterImporterExporter::writeFiltersToConfig(mFilters, config);
@@ -116,7 +115,7 @@ FilterManager::FilterManager()
     connect(d->mMonitor, &Akonadi::Monitor::tagRemoved, this, &FilterManager::slotTagRemoved);
     connect(d->mMonitor, &Akonadi::Monitor::tagChanged, this, &FilterManager::slotTagChanged);
 
-    qDBusRegisterMetaType<QList<qint64> >();
+    qDBusRegisterMetaType<QList<qint64>>();
     Akonadi::ServerManager::State state = Akonadi::ServerManager::self()->state();
     if (state == Akonadi::ServerManager::Running) {
         QTimer::singleShot(0, this, &FilterManager::slotReadConfig);
@@ -228,7 +227,7 @@ void FilterManager::filter(const Akonadi::Item &item, FilterSet set, bool accoun
 
 void FilterManager::filter(const Akonadi::Collection &collection, FilterSet set) const
 {
-    filter(Akonadi::Collection::List { collection }, set);
+    filter(Akonadi::Collection::List{collection}, set);
 }
 
 void FilterManager::filter(const Akonadi::Collection::List &collections, FilterSet set) const
@@ -244,7 +243,7 @@ void FilterManager::filter(const Akonadi::Collection::List &collections, FilterS
 
 void FilterManager::filter(const Akonadi::Collection &collection, const QStringList &listFilters) const
 {
-    filter(Akonadi::Collection::List { collection }, listFilters);
+    filter(Akonadi::Collection::List{collection}, listFilters);
 }
 
 void FilterManager::filter(const Akonadi::Collection::List &collections, const QStringList &listFilters, FilterSet set) const

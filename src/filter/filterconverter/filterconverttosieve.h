@@ -9,7 +9,8 @@
 
 #include <QVector>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MailFilter;
 class FilterConvertToSieve
 {

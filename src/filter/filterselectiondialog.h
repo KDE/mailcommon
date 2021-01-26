@@ -16,7 +16,8 @@ class QPushButton;
 class QListWidget;
 class QWidget;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MailFilter;
 
 class FilterSelectionDialog : public QDialog

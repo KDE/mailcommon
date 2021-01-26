@@ -21,26 +21,22 @@ using namespace MailCommon;
 static const struct {
     SearchRule::Function id;
     const char *displayName;
-} TextFunctions[] = {
-    { SearchRule::FuncContains, I18N_NOOP("contains")          },
-    { SearchRule::FuncContainsNot, I18N_NOOP("does not contain")   },
-    { SearchRule::FuncEquals, I18N_NOOP("equals")            },
-    { SearchRule::FuncNotEqual, I18N_NOOP("does not equal")     },
-    { SearchRule::FuncStartWith, I18N_NOOP("starts with")         },
-    { SearchRule::FuncNotStartWith, I18N_NOOP("does not start with")},
-    { SearchRule::FuncEndWith, I18N_NOOP("ends with")           },
-    { SearchRule::FuncNotEndWith, I18N_NOOP("does not end with")  },
+} TextFunctions[] = {{SearchRule::FuncContains, I18N_NOOP("contains")},
+                     {SearchRule::FuncContainsNot, I18N_NOOP("does not contain")},
+                     {SearchRule::FuncEquals, I18N_NOOP("equals")},
+                     {SearchRule::FuncNotEqual, I18N_NOOP("does not equal")},
+                     {SearchRule::FuncStartWith, I18N_NOOP("starts with")},
+                     {SearchRule::FuncNotStartWith, I18N_NOOP("does not start with")},
+                     {SearchRule::FuncEndWith, I18N_NOOP("ends with")},
+                     {SearchRule::FuncNotEndWith, I18N_NOOP("does not end with")},
 
-    { SearchRule::FuncRegExp, I18N_NOOP("matches regular expr.") },
-    { SearchRule::FuncNotRegExp, I18N_NOOP("does not match reg. expr.") }
-};
-static const int TextFunctionCount
-    = sizeof(TextFunctions) / sizeof(*TextFunctions);
+                     {SearchRule::FuncRegExp, I18N_NOOP("matches regular expr.")},
+                     {SearchRule::FuncNotRegExp, I18N_NOOP("does not match reg. expr.")}};
+static const int TextFunctionCount = sizeof(TextFunctions) / sizeof(*TextFunctions);
 
 //---------------------------------------------------------------------------
 
-QWidget *TextRuleWidgetHandler::createFunctionWidget(
-    int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
+QWidget *TextRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
 {
     if (number != 0) {
         return nullptr;
@@ -53,8 +49,7 @@ QWidget *TextRuleWidgetHandler::createFunctionWidget(
         funcCombo->addItem(i18n(TextFunctions[i].displayName));
     }
     funcCombo->adjustSize();
-    QObject::connect(funcCombo, SIGNAL(activated(int)),
-                     receiver, SLOT(slotFunctionChanged()));
+    QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));
     return funcCombo;
 }
 
@@ -67,10 +62,8 @@ QWidget *TextRuleWidgetHandler::createValueWidget(int number, QStackedWidget *va
         lineEdit->setClearButtonEnabled(true);
         lineEdit->setTrapReturnKey(true);
         lineEdit->setObjectName(QStringLiteral("regExpLineEdit"));
-        QObject::connect(lineEdit, SIGNAL(textChanged(QString)),
-                         receiver, SLOT(slotValueChanged()));
-        QObject::connect(lineEdit, SIGNAL(returnPressed()),
-                         receiver, SLOT(slotReturnPressed()));
+        QObject::connect(lineEdit, SIGNAL(textChanged(QString)), receiver, SLOT(slotValueChanged()));
+        QObject::connect(lineEdit, SIGNAL(returnPressed()), receiver, SLOT(slotReturnPressed()));
         return lineEdit;
     }
 
@@ -86,8 +79,7 @@ QWidget *TextRuleWidgetHandler::createValueWidget(int number, QStackedWidget *va
 
 //---------------------------------------------------------------------------
 
-SearchRule::Function TextRuleWidgetHandler::currentFunction(
-    const QStackedWidget *functionStack) const
+SearchRule::Function TextRuleWidgetHandler::currentFunction(const QStackedWidget *functionStack) const
 {
     const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("textRuleFuncCombo"));
 
@@ -109,7 +101,7 @@ SearchRule::Function TextRuleWidgetHandler::function(const QByteArray &, const Q
 
 QString TextRuleWidgetHandler::currentValue(const QStackedWidget *valueStack, SearchRule::Function) const
 {
-    //in other cases of func it is a lineedit
+    // in other cases of func it is a lineedit
     const KLineEdit *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
     if (lineEdit) {
@@ -197,8 +189,7 @@ bool TextRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidge
         funcCombo->blockSignals(false);
         functionStack->setCurrentWidget(funcCombo);
     }
-    auto *lineEdit
-        = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+    auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
     if (lineEdit) {
         lineEdit->blockSignals(true);
@@ -220,12 +211,10 @@ bool TextRuleWidgetHandler::update(const QByteArray &, QStackedWidget *functionS
 
     // raise the correct value widget
     SearchRule::Function func = currentFunction(functionStack);
-    if (func == SearchRule::FuncIsInAddressbook
-        || func == SearchRule::FuncIsNotInAddressbook) {
+    if (func == SearchRule::FuncIsInAddressbook || func == SearchRule::FuncIsNotInAddressbook) {
         valueStack->setCurrentWidget(valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider")));
     } else {
-        auto *lineEdit
-            = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+        auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
         if (lineEdit) {
             valueStack->setCurrentWidget(lineEdit);

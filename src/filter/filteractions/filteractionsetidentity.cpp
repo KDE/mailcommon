@@ -8,8 +8,8 @@
 #include "filteractionsetidentity.h"
 #include <MessageCore/StringUtil>
 
-#include "kernel/mailkernel.h"
 #include "filter/dialog/filteractionmissingidentitydialog.h"
+#include "kernel/mailkernel.h"
 
 #include <KIdentityManagement/Identity>
 #include <KIdentityManagement/IdentityCombo>
@@ -50,8 +50,7 @@ bool FilterActionSetIdentity::argsFromStringInteractive(const QString &argsStr, 
 
 FilterAction::ReturnCode FilterActionSetIdentity::process(ItemContext &context, bool applyOnOutbound) const
 {
-    const KIdentityManagement::Identity &ident
-        = KernelIf->identityManager()->identityForUoid(mParameter);
+    const KIdentityManagement::Identity &ident = KernelIf->identityManager()->identityForUoid(mParameter);
 
     if (ident.isNull()) {
         return ErrorButGoOn;

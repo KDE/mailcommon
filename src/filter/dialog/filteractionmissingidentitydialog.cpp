@@ -7,9 +7,9 @@
 #include "filteractionmissingidentitydialog.h"
 #include "kernel/mailkernel.h"
 
-#include <KSharedConfig>
 #include <KConfigGroup>
 #include <KLocalizedString>
+#include <KSharedConfig>
 
 #include <QDialogButtonBox>
 #include <QLabel>
@@ -29,9 +29,10 @@ FilterActionMissingIdentityDialog::FilterActionMissingIdentityDialog(const QStri
 
     auto label = new QLabel(this);
     label->setObjectName(QStringLiteral("label"));
-    label->setText(i18n("Filter identity is missing. "
-                        "Please select an identity to use with filter \"%1\"",
-                        filtername));
+    label->setText(
+        i18n("Filter identity is missing. "
+             "Please select an identity to use with filter \"%1\"",
+             filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
     mComboBoxIdentity = new KIdentityManagement::IdentityCombo(KernelIf->identityManager(), this);

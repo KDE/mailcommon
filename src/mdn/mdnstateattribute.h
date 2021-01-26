@@ -14,7 +14,8 @@
 
 #include <attribute.h>
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @short An Attribute that keeps track of the MDN state of a mail message.
  *
@@ -33,14 +34,14 @@ public:
      */
     enum MDNSentState {
         MDNStateUnknown, ///< The state is unknown.
-        MDNNone,         ///< No MDN has been set.
-        MDNIgnore,       ///< Ignore sending a MDN.
-        MDNDisplayed,    ///< The message has been displayed by the UA to someone reading the recipient's mailbox.
-        MDNDeleted,      ///< The message has been deleted.
-        MDNDispatched,   ///< The message has been sent somewhere in some manner without necessarily having been previously displayed to the user.
-        MDNProcessed,    ///< The message has been processed in some manner without being displayed to the user.
-        MDNDenied,       ///< The recipient does not wish the sender to be informed of the message's disposition.
-        MDNFailed        ///< A failure occurred that prevented the proper generation of an MDN.
+        MDNNone, ///< No MDN has been set.
+        MDNIgnore, ///< Ignore sending a MDN.
+        MDNDisplayed, ///< The message has been displayed by the UA to someone reading the recipient's mailbox.
+        MDNDeleted, ///< The message has been deleted.
+        MDNDispatched, ///< The message has been sent somewhere in some manner without necessarily having been previously displayed to the user.
+        MDNProcessed, ///< The message has been processed in some manner without being displayed to the user.
+        MDNDenied, ///< The recipient does not wish the sender to be informed of the message's disposition.
+        MDNFailed ///< A failure occurred that prevented the proper generation of an MDN.
     };
 
     /**

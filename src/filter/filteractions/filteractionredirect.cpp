@@ -6,8 +6,8 @@
  */
 
 #include "filteractionredirect.h"
-#include "mailcommon_debug.h"
 #include "kernel/mailkernel.h"
+#include "mailcommon_debug.h"
 #include "util/mailutil.h"
 
 #include <MessageComposer/MessageFactoryNG>

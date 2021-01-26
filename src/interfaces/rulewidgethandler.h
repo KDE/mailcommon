@@ -18,7 +18,8 @@ class QByteArray;
 class QString;
 class QObject;
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @short An interface to filter/search rule widget handlers
  */
@@ -36,7 +37,8 @@ public:
     Q_REQUIRED_RESULT virtual QString prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const = 0;
     Q_REQUIRED_RESULT virtual bool handlesField(const QByteArray &field) const = 0;
     virtual void reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const = 0;
-    Q_REQUIRED_RESULT virtual bool setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const MailCommon::SearchRule::Ptr rule, bool isAkonadiSearch) const = 0;
+    Q_REQUIRED_RESULT virtual bool
+    setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const MailCommon::SearchRule::Ptr rule, bool isAkonadiSearch) const = 0;
     Q_REQUIRED_RESULT virtual bool update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const = 0;
 };
 }

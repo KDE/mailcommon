@@ -8,10 +8,10 @@
 #include "filter/mailfilter.h"
 
 #include <QApplication>
-#include <QVBoxLayout>
 #include <QMenu>
 #include <QMenuBar>
 #include <QTextEdit>
+#include <QVBoxLayout>
 
 Q_DECLARE_METATYPE(MailCommon::FilterImporterExporter::FilterType)
 FilterImporterExporterGui::FilterImporterExporterGui(QWidget *parent)

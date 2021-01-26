@@ -8,12 +8,14 @@
 
 #include <MailCommon/MailInterfaces>
 
-namespace Akonadi {
+namespace Akonadi
+{
 class EntityTreeModel;
 class EntityMimeTypeFilterModel;
 }
 
-namespace MailCommon {
+namespace MailCommon
+{
 class FolderCollectionMonitor;
 }
 

@@ -9,28 +9,24 @@
 
 #include <KLocalizedString>
 
+#include <QComboBox>
 #include <QDoubleSpinBox>
 #include <QStackedWidget>
-#include <QComboBox>
 
 using namespace MailCommon;
 
 static const struct {
     SearchRule::Function id;
     const char *displayName;
-} NumericDoubleFunctions[] = {
-    { SearchRule::FuncEquals, I18N_NOOP("is equal to")         },
-    { SearchRule::FuncNotEqual, I18N_NOOP("is not equal to")      },
-    { SearchRule::FuncIsGreater, I18N_NOOP("is greater than")     },
-    { SearchRule::FuncIsLessOrEqual, I18N_NOOP("is less than or equal to") },
-    { SearchRule::FuncIsLess, I18N_NOOP("is less than")        },
-    { SearchRule::FuncIsGreaterOrEqual, I18N_NOOP("is greater than or equal to") }
-};
-static const int NumericDoubleFunctionCount
-    = sizeof(NumericDoubleFunctions) / sizeof(*NumericDoubleFunctions);
+} NumericDoubleFunctions[] = {{SearchRule::FuncEquals, I18N_NOOP("is equal to")},
+                              {SearchRule::FuncNotEqual, I18N_NOOP("is not equal to")},
+                              {SearchRule::FuncIsGreater, I18N_NOOP("is greater than")},
+                              {SearchRule::FuncIsLessOrEqual, I18N_NOOP("is less than or equal to")},
+                              {SearchRule::FuncIsLess, I18N_NOOP("is less than")},
+                              {SearchRule::FuncIsGreaterOrEqual, I18N_NOOP("is greater than or equal to")}};
+static const int NumericDoubleFunctionCount = sizeof(NumericDoubleFunctions) / sizeof(*NumericDoubleFunctions);
 
-QWidget *NumericDoubleRuleWidgetHandler::createFunctionWidget(
-    int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
+QWidget *NumericDoubleRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
 {
     if (number != 0) {
         return nullptr;
@@ -43,8 +39,7 @@ QWidget *NumericDoubleRuleWidgetHandler::createFunctionWidget(
         funcCombo->addItem(i18n(NumericDoubleFunctions[i].displayName));
     }
     funcCombo->adjustSize();
-    QObject::connect(funcCombo, SIGNAL(activated(int)),
-                     receiver, SLOT(slotFunctionChanged()));
+    QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));
     return funcCombo;
 }
 
@@ -58,15 +53,13 @@ QWidget *NumericDoubleRuleWidgetHandler::createValueWidget(int number, QStackedW
 
     auto numInput = new QDoubleSpinBox(valueStack);
     numInput->setObjectName(QStringLiteral("QDoubleSpinBox"));
-    QObject::connect(numInput, SIGNAL(valueChanged(double)),
-                     receiver, SLOT(slotValueChanged()));
+    QObject::connect(numInput, SIGNAL(valueChanged(double)), receiver, SLOT(slotValueChanged()));
     return numInput;
 }
 
 //---------------------------------------------------------------------------
 
-SearchRule::Function NumericDoubleRuleWidgetHandler::currentFunction(
-    const QStackedWidget *functionStack) const
+SearchRule::Function NumericDoubleRuleWidgetHandler::currentFunction(const QStackedWidget *functionStack) const
 {
     const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("numericDoubleRuleFuncCombo"));
 
@@ -167,7 +160,10 @@ void initDoubleNumInput(QDoubleSpinBox *numInput, const QByteArray &field)
 
 //---------------------------------------------------------------------------
 
-bool NumericDoubleRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const SearchRule::Ptr rule, bool /*isBalooSearch*/) const
+bool NumericDoubleRuleWidgetHandler::setRule(QStackedWidget *functionStack,
+                                             QStackedWidget *valueStack,
+                                             const SearchRule::Ptr rule,
+                                             bool /*isBalooSearch*/) const
 {
     if (!rule || !handlesField(rule->field())) {
         reset(functionStack, valueStack);

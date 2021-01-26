@@ -10,7 +10,8 @@
 
 #include "filteractionwithaddress.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionReplyTo - set Reply-To to
 // Set the Reply-to header in a message

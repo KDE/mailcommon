@@ -6,12 +6,13 @@
 
 #include "gpghelper.h"
 
-#include <QFileInfo>
 #include <QDebug>
+#include <QFileInfo>
 #include <QProcess>
 #include <QTest>
 
-namespace {
+namespace
+{
 bool copyRecursively(const QString &src, const QString &dest)
 {
     QFileInfo srcInfo(src);
@@ -102,26 +103,24 @@ QByteArray GPGHelper::runGpg(const QByteArray &in, GPGHelper::CryptoType crypto,
 
 QByteArray GPGHelper::decrypt(const QByteArray &enc, GPGHelper::CryptoType crypto) const
 {
-    return runGpg(enc, crypto, { QStringLiteral("-d") });
+    return runGpg(enc, crypto, {QStringLiteral("-d")});
 }
 
 QByteArray GPGHelper::encrypt(const QByteArray &dec, GPGHelper::CryptoType crypto) const
 {
-    return runGpg(dec, crypto, { QStringLiteral("-e") });
+    return runGpg(dec, crypto, {QStringLiteral("-e")});
 }
 
 QString GPGHelper::encryptionKeyFp(const QByteArray &enc, GPGHelper::CryptoType crypto) const
 {
-    const auto data = runGpg(enc, crypto, { QStringLiteral("--fingerprint"),
-                                            QStringLiteral("--with-colons") });
+    const auto data = runGpg(enc, crypto, {QStringLiteral("--fingerprint"), QStringLiteral("--with-colons")});
     int idx = data.indexOf("\nfpr:");
     if (idx == -1) {
         return {};
     }
 
     // Find first non-colon character after "fpr"
-    for (idx = idx + 4; idx < data.size() && data[idx] == ':'; ++idx) {
-    }
+    for (idx = idx + 4; idx < data.size() && data[idx] == ':'; ++idx) { }
     const int end = data.indexOf(':', idx);
 
     return QString::fromLatin1(data.constData() + idx, end - idx);

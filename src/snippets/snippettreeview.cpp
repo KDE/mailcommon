@@ -13,9 +13,9 @@
 #include <KActionCollection>
 #include <KLocalizedString>
 
-#include <QMenu>
 #include <QContextMenuEvent>
 #include <QHeaderView>
+#include <QMenu>
 using namespace MailCommon;
 SnippetTreeView::SnippetTreeView(KActionCollection *actionCollection, QWidget *parent)
     : QTreeView(parent)
@@ -31,12 +31,9 @@ SnippetTreeView::SnippetTreeView(KActionCollection *actionCollection, QWidget *p
     setModel(mSnippetsManager->model());
     setSelectionModel(mSnippetsManager->selectionModel());
 
-    connect(this, &QAbstractItemView::activated,
-            mSnippetsManager->insertSnippetAction(), &QAction::trigger);
-    connect(mSnippetsManager->model(), &QAbstractItemModel::rowsInserted,
-            this, &QTreeView::expandAll);
-    connect(mSnippetsManager->model(), &QAbstractItemModel::rowsRemoved,
-            this, &QTreeView::expandAll);
+    connect(this, &QAbstractItemView::activated, mSnippetsManager->insertSnippetAction(), &QAction::trigger);
+    connect(mSnippetsManager->model(), &QAbstractItemModel::rowsInserted, this, &QTreeView::expandAll);
+    connect(mSnippetsManager->model(), &QAbstractItemModel::rowsRemoved, this, &QTreeView::expandAll);
 
     expandAll();
 }

@@ -47,8 +47,8 @@ FilterAction::ReturnCode FilterActionUnsetStatus::process(ItemContext &context, 
     Akonadi::MessageStatus status;
     status.setStatusFromFlags(context.item().flags());
 
-    Akonadi::MessageStatus newStatus = FilterActionStatus::stati[ index - 1 ];
-    //Laurent unread status doesn't exist. And crash if we use "const Akonadi::Item::Flag flag = *(flags.begin());" etc. => if we unset "unread" we set read
+    Akonadi::MessageStatus newStatus = FilterActionStatus::stati[index - 1];
+    // Laurent unread status doesn't exist. And crash if we use "const Akonadi::Item::Flag flag = *(flags.begin());" etc. => if we unset "unread" we set read
     if (newStatus == Akonadi::MessageStatus::statusUnread()) {
         Akonadi::MessageStatus oldStatus = status;
         newStatus.setRead(true);

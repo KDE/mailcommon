@@ -11,7 +11,8 @@
 #include "mailcommon_export.h"
 #include <EntityOrderProxyModel>
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @brief The FavoriteCollectionOrderProxyModel class implements ordering of favorite collections.
  */

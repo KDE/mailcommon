@@ -4,12 +4,13 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#include <Akonadi/KMime/NewMailNotifierAttribute>
 #include "collectionpage/attributes/expirecollectionattribute.h"
+#include <Akonadi/KMime/NewMailNotifierAttribute>
 
 #include <AkonadiCore/attributefactory.h>
 
-namespace {
+namespace
+{
 // Anonymous namespace; function is invisible outside this file.
 bool dummy()
 {

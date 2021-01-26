@@ -8,18 +8,20 @@
 #ifndef MAILCOMMON_MAILKERNEL_H
 #define MAILCOMMON_MAILKERNEL_H
 
-#include "mailcommon_export.h"
 #include "mailcommon/mailinterfaces.h"
+#include "mailcommon_export.h"
 
-#include <Collection>
 #include <Akonadi/KMime/SpecialMailCollections>
+#include <Collection>
 #include <KSharedConfig>
 
 #include <QObject>
-namespace PimCommon {
+namespace PimCommon
+{
 class ImapResourceCapabilitiesManager;
 }
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * Deals with common mail application related operations. The required interfaces
  * MUST be registered before using it!
@@ -32,7 +34,6 @@ class MAILCOMMON_EXPORT Kernel : public QObject
 {
     Q_OBJECT
 public:
-
     virtual ~Kernel();
 
     static Kernel *self();
@@ -129,6 +130,7 @@ public:
     PimCommon::ImapResourceCapabilitiesManager *imapResourceManager() const;
 
     static QMap<QString, Akonadi::Collection::Id> pop3ResourceTargetCollection();
+
 private:
     void findCreateDefaultCollection(Akonadi::SpecialMailCollections::Type);
 

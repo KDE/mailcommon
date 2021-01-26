@@ -7,8 +7,8 @@
 
 #include "filteractionsendfakedisposition.h"
 
-#include <KLocalizedString>
 #include "mailcommon/mdnstateattribute.h"
+#include <KLocalizedString>
 
 using namespace MailCommon;
 
@@ -59,13 +59,13 @@ FilterAction::ReturnCode FilterActionSendFakeDisposition::process(ItemContext &c
         return ErrorButGoOn;
     }
 
-    if (index == 1) {   // ignore
+    if (index == 1) { // ignore
         if (context.item().hasAttribute<MailCommon::MDNStateAttribute>()) {
             context.item().attribute<MailCommon::MDNStateAttribute>()->setMDNState(MailCommon::MDNStateAttribute::MDNIgnore);
             context.setNeedsFlagStore();
         }
     } else { // send
-        sendMDN(context.item(), mdns[ index - 2 ]);    // skip first two entries: "" and "ignore"
+        sendMDN(context.item(), mdns[index - 2]); // skip first two entries: "" and "ignore"
     }
 
     return GoOn;
@@ -79,13 +79,13 @@ SearchRule::RequiredPart FilterActionSendFakeDisposition::requiredPart() const
 void FilterActionSendFakeDisposition::argsFromString(const QString &argsStr)
 {
     if (argsStr.length() == 1) {
-        if (argsStr[ 0 ] == QLatin1Char('I')) {   // ignore
+        if (argsStr[0] == QLatin1Char('I')) { // ignore
             mParameter = mParameterList.at(1);
             return;
         }
 
         for (int i = 0; i < numMDNs; ++i) {
-            if (char(mdns[ i ]) == argsStr[ 0 ]) {     // send
+            if (char(mdns[i]) == argsStr[0]) { // send
                 mParameter = mParameterList.at(i + 2);
                 return;
             }
@@ -102,7 +102,7 @@ QString FilterActionSendFakeDisposition::argsAsString() const
         return QString();
     }
 
-    return QString(QChar(index < 2 ? 'I' : char(mdns[ index - 2 ])));
+    return QString(QChar(index < 2 ? 'I' : char(mdns[index - 2])));
 }
 
 QString FilterActionSendFakeDisposition::displayString() const

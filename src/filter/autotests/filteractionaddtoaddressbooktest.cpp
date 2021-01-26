@@ -6,10 +6,10 @@
 
 #include "filteractionaddtoaddressbooktest.h"
 #include "../filteractions/filteractionaddtoaddressbook.h"
+#include <QComboBox>
+#include <QLabel>
 #include <QTest>
 #include <QWidget>
-#include <QLabel>
-#include <QComboBox>
 
 #include <AkonadiWidgets/CollectionComboBox>
 #include <AkonadiWidgets/TagWidget>

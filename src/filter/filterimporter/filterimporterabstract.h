@@ -8,13 +8,14 @@
 #define MAILCOMMON_FILTERIMPORTER_FILTERIMPORTERABSTRACT_P_H
 
 #include "mailcommon_export.h"
-#include <QVector>
 #include <QStringList>
+#include <QVector>
 
 class QFile;
 class QDomDocument;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MailFilter;
 
 class MAILCOMMON_EXPORT FilterImporterAbstract
@@ -32,6 +33,7 @@ protected:
 
     QVector<MailFilter *> mListMailFilter;
     QStringList mEmptyFilter;
+
 private:
     const bool mInteractive;
 };

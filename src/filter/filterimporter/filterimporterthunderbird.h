@@ -13,7 +13,8 @@
 
 class QFile;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MailFilter;
 /**
  * @brief The FilterImporterThunderbird class
@@ -29,6 +30,7 @@ public:
 
     static QString defaultIcedoveFiltersSettingsPath();
     static QString defaultSeaMonkeyFiltersSettingsPath();
+
 private:
     void readStream(QTextStream &stream);
     static QString cleanArgument(const QString &line, const QString &removeStr);

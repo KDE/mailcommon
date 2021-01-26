@@ -9,8 +9,8 @@
 #include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
 
-#include <QFile>
 #include <QDir>
+#include <QFile>
 
 using namespace MailCommon;
 
@@ -59,9 +59,7 @@ void FilterImporterSylpheed::parseConditions(const QDomElement &e, MailCommon::M
             qCDebug(MAILCOMMON_LOG) << " bool not defined: " << attr;
         }
     }
-    for (QDomElement ruleFilter = e.firstChildElement();
-         !ruleFilter.isNull();
-         ruleFilter = ruleFilter.nextSiblingElement()) {
+    for (QDomElement ruleFilter = e.firstChildElement(); !ruleFilter.isNull(); ruleFilter = ruleFilter.nextSiblingElement()) {
         QString contentsName;
         QByteArray fieldName;
         SearchRule::Function functionName = SearchRule::FuncNone;
@@ -100,11 +98,11 @@ void FilterImporterSylpheed::parseConditions(const QDomElement &e, MailCommon::M
             fieldName = "<body>";
             contentsName = ruleFilter.text();
         } else if (nexttag == QLatin1String("command-test")) {
-            //TODO
-            //Not implemented in kmail
+            // TODO
+            // Not implemented in kmail
         } else if (nexttag == QLatin1String("size")) {
             fieldName = "<size>";
-            contentsName = QString::number(ruleFilter.text().toInt() * 1024); //Stored as kb
+            contentsName = QString::number(ruleFilter.text().toInt() * 1024); // Stored as kb
         } else if (nexttag == QLatin1String("age")) {
             fieldName = "<age in days>";
             contentsName = ruleFilter.text();
@@ -112,15 +110,15 @@ void FilterImporterSylpheed::parseConditions(const QDomElement &e, MailCommon::M
             fieldName = "<status>";
             contentsName = QStringLiteral("Unread");
         } else if (nexttag == QLatin1String("mark")) {
-            //TODO
+            // TODO
         } else if (nexttag == QLatin1String("color-label")) {
-            //TODO
+            // TODO
         } else if (nexttag == QLatin1String("mime")) {
-            //TODO
+            // TODO
         } else if (nexttag == QLatin1String("account-id")) {
-            //TODO
+            // TODO
         } else if (nexttag == QLatin1String("target-folder")) {
-            //TODO
+            // TODO
         } else {
             qCDebug(MAILCOMMON_LOG) << " tag not recognize " << nexttag;
         }
@@ -161,9 +159,7 @@ void FilterImporterSylpheed::parseConditions(const QDomElement &e, MailCommon::M
 
 void FilterImporterSylpheed::parseActions(const QDomElement &e, MailCommon::MailFilter *filter)
 {
-    for (QDomElement ruleFilter = e.firstChildElement();
-         !ruleFilter.isNull();
-         ruleFilter = ruleFilter.nextSiblingElement()) {
+    for (QDomElement ruleFilter = e.firstChildElement(); !ruleFilter.isNull(); ruleFilter = ruleFilter.nextSiblingElement()) {
         QString actionName;
         const QString nexttag = ruleFilter.tagName();
         QString value = ruleFilter.text();
@@ -174,7 +170,7 @@ void FilterImporterSylpheed::parseActions(const QDomElement &e, MailCommon::Mail
             actionName = QStringLiteral("copy");
             value = ruleFilter.text();
         } else if (nexttag == QLatin1String("not-receive")) {
-            //TODO
+            // TODO
         } else if (nexttag == QLatin1String("delete")) {
             actionName = QStringLiteral("delete");
         } else if (nexttag == QLatin1String("exec")) {
@@ -184,9 +180,9 @@ void FilterImporterSylpheed::parseActions(const QDomElement &e, MailCommon::Mail
             actionName = QStringLiteral("filter app");
             value = ruleFilter.text();
         } else if (nexttag == QLatin1String("mark")) {
-            //FIXME add tag ?
+            // FIXME add tag ?
         } else if (nexttag == QLatin1String("color-label")) {
-            //TODO
+            // TODO
         } else if (nexttag == QLatin1String("mark-as-read")) {
             actionName = QStringLiteral("set status");
             value = QStringLiteral("R");
@@ -194,7 +190,7 @@ void FilterImporterSylpheed::parseActions(const QDomElement &e, MailCommon::Mail
             actionName = QStringLiteral("forward");
             value = ruleFilter.text();
         } else if (nexttag == QLatin1String("forward-as-attachment")) {
-            //TODO
+            // TODO
         } else if (nexttag == QLatin1String("redirect")) {
             actionName = QStringLiteral("redirect");
             value = ruleFilter.text();
@@ -240,9 +236,7 @@ void FilterImporterSylpheed::parseFilters(const QDomElement &e)
             qCDebug(MAILCOMMON_LOG) << " timing not defined: " << attr;
         }
     }
-    for (QDomElement ruleFilter = e.firstChildElement();
-         !ruleFilter.isNull();
-         ruleFilter = ruleFilter.nextSiblingElement()) {
+    for (QDomElement ruleFilter = e.firstChildElement(); !ruleFilter.isNull(); ruleFilter = ruleFilter.nextSiblingElement()) {
         const QString nexttag = ruleFilter.tagName();
         if (nexttag == QLatin1String("condition-list")) {
             parseConditions(ruleFilter, filter);

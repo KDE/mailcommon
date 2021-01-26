@@ -8,7 +8,8 @@
 #define FILTERACTIONMISSINGACCOUNTDIALOG_H
 
 #include <QDialog>
-namespace MailCommon {
+namespace MailCommon
+{
 class KMFilterAccountList;
 class FilterActionMissingAccountDialog : public QDialog
 {

@@ -7,12 +7,13 @@
 #ifndef SNIPPETWIDGET_H
 #define SNIPPETWIDGET_H
 
-#include <QWidget>
-#include <QAbstractItemModel>
 #include "mailcommon_export.h"
+#include <QAbstractItemModel>
+#include <QWidget>
 class KActionCollection;
 class SnippetWidgetPrivate;
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @brief The SnippetWidget class
  * @author Laurent Montel <montel@kde.org>
@@ -70,6 +71,7 @@ public:
 Q_SIGNALS:
     void textChanged(const QString &str);
     void groupChanged(int index);
+
 private:
     SnippetWidgetPrivate *const d;
 };

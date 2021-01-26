@@ -4,14 +4,14 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#include "mailcommon_debug.h"
 #include "filterimporterprocmail.h"
-#include <KLocalizedString>
 #include "filter/filtermanager.h"
 #include "filter/mailfilter.h"
+#include "mailcommon_debug.h"
+#include <KLocalizedString>
 
-#include <QFile>
 #include <QDir>
+#include <QFile>
 
 using namespace MailCommon;
 
@@ -59,10 +59,10 @@ MailCommon::MailFilter *FilterImporterProcmail::parseLine(QTextStream &stream, Q
 {
     Q_UNUSED(stream)
     if (line.isEmpty()) {
-        //Empty line
+        // Empty line
         return filter;
     } else if (line.startsWith(QLatin1Char('#'))) {
-        //Commented line
+        // Commented line
         return filter;
     } else if (line.startsWith(QLatin1String(":0"))) {
         appendFilter(filter);
@@ -90,24 +90,24 @@ MailCommon::MailFilter *FilterImporterProcmail::parseLine(QTextStream &stream, Q
         }
         SearchRule::Ptr rule = SearchRule::createInstance(fieldName, functionName, line);
         filter->pattern()->append(rule);
-        //Condition
+        // Condition
     } else if (line.startsWith(QLatin1Char('!'))) {
         line.remove(QLatin1Char('!'));
-        //Redirect email
+        // Redirect email
     } else if (line.startsWith(QLatin1Char('|'))) {
-        //Shell
+        // Shell
         const QString actionName(QStringLiteral("execute"));
         const QString value(line);
         createFilterAction(filter, actionName, value);
     } else if (line.startsWith(QLatin1Char('{'))) {
-        //Block
+        // Block
     } else if (line.startsWith(QLatin1Char('}'))) {
-        //End block
+        // End block
     } else {
         const QString actionName(QStringLiteral("transfer"));
         const QString value(line);
         createFilterAction(filter, actionName, value);
-        //Folder
+        // Folder
     }
 
     return filter;

@@ -14,14 +14,16 @@
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QListWidget>
+#include <QPointer>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include <QPointer>
 
 using namespace MailCommon;
 
-FilterActionMissingTagDialog::FilterActionMissingTagDialog(
-    const QMap<QUrl, QString> &tagList, const QString &filtername, const QString &argsStr, QWidget *parent)
+FilterActionMissingTagDialog::FilterActionMissingTagDialog(const QMap<QUrl, QString> &tagList,
+                                                           const QString &filtername,
+                                                           const QString &argsStr,
+                                                           QWidget *parent)
     : QDialog(parent)
 {
     setModal(true);
@@ -34,9 +36,10 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(
 
     label = new QLabel(this);
     label->setObjectName(QStringLiteral("filtername"));
-    label->setText(i18n("Filter tag is missing. "
-                        "Please select a tag to use with filter \"%1\"",
-                        filtername));
+    label->setText(
+        i18n("Filter tag is missing. "
+             "Please select a tag to use with filter \"%1\"",
+             filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
     mTagList = new QListWidget(this);

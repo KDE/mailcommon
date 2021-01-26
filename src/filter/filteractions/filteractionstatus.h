@@ -10,7 +10,8 @@
 #include "filteractionwithstringlist.h"
 #include <Akonadi/KMime/MessageStatus>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterActionStatus : public FilterActionWithStringList
 {
     Q_OBJECT

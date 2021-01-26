@@ -10,31 +10,27 @@
 #include <KDateComboBox>
 #include <KLocalizedString>
 
+#include <QComboBox>
 #include <QDate>
 #include <QObject>
 #include <QStackedWidget>
-#include <QComboBox>
 
 using namespace MailCommon;
 
 static const struct {
     SearchRule::Function id;
     const char *displayName;
-} DateFunctions[] = {
-    { SearchRule::FuncEquals, I18N_NOOP("is equal to")         },
-    { SearchRule::FuncNotEqual, I18N_NOOP("is not equal to")      },
-    { SearchRule::FuncIsGreater, I18N_NOOP("is after")     },
-    { SearchRule::FuncIsLessOrEqual, I18N_NOOP("is before or equal to") },
-    { SearchRule::FuncIsLess, I18N_NOOP("is before")        },
-    { SearchRule::FuncIsGreaterOrEqual, I18N_NOOP("is after or equal to") }
-};
-static const int DateFunctionCount
-    = sizeof(DateFunctions) / sizeof(*DateFunctions);
+} DateFunctions[] = {{SearchRule::FuncEquals, I18N_NOOP("is equal to")},
+                     {SearchRule::FuncNotEqual, I18N_NOOP("is not equal to")},
+                     {SearchRule::FuncIsGreater, I18N_NOOP("is after")},
+                     {SearchRule::FuncIsLessOrEqual, I18N_NOOP("is before or equal to")},
+                     {SearchRule::FuncIsLess, I18N_NOOP("is before")},
+                     {SearchRule::FuncIsGreaterOrEqual, I18N_NOOP("is after or equal to")}};
+static const int DateFunctionCount = sizeof(DateFunctions) / sizeof(*DateFunctions);
 
 //---------------------------------------------------------------------------
 
-QWidget *DateRuleWidgetHandler::createFunctionWidget(
-    int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
+QWidget *DateRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
 {
     if (number != 0) {
         return nullptr;
@@ -47,8 +43,7 @@ QWidget *DateRuleWidgetHandler::createFunctionWidget(
         funcCombo->addItem(i18n(DateFunctions[i].displayName));
     }
     funcCombo->adjustSize();
-    QObject::connect(funcCombo, SIGNAL(activated(int)),
-                     receiver, SLOT(slotFunctionChanged()));
+    QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));
     return funcCombo;
 }
 
@@ -63,15 +58,13 @@ QWidget *DateRuleWidgetHandler::createValueWidget(int number, QStackedWidget *va
     auto dateCombo = new KDateComboBox(valueStack);
     dateCombo->setObjectName(QStringLiteral("KDateComboBox"));
     dateCombo->setOptions(KDateComboBox::SelectDate | KDateComboBox::DatePicker | KDateComboBox::DateKeywords);
-    QObject::connect(dateCombo, SIGNAL(dateChanged(QDate)),
-                     receiver, SLOT(slotValueChanged()));
+    QObject::connect(dateCombo, SIGNAL(dateChanged(QDate)), receiver, SLOT(slotValueChanged()));
     return dateCombo;
 }
 
 //---------------------------------------------------------------------------
 
-SearchRule::Function DateRuleWidgetHandler::currentFunction(
-    const QStackedWidget *functionStack) const
+SearchRule::Function DateRuleWidgetHandler::currentFunction(const QStackedWidget *functionStack) const
 {
     const auto funcCombo = functionStack->findChild<QComboBox *>(QStringLiteral("dateRuleFuncCombo"));
 

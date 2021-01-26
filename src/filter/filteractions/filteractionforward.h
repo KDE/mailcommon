@@ -10,7 +10,8 @@
 
 #include "filteractionwithaddress.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionForward - forward to
 // Forward message to another user, with a defined template
@@ -33,6 +34,7 @@ public:
     Q_REQUIRED_RESULT bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
 
     Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
+
 private:
     mutable QString mTemplate;
 };

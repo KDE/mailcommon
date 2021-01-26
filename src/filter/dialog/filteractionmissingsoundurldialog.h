@@ -9,7 +9,8 @@
 
 #include <QDialog>
 class KUrlRequester;
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterActionMissingSoundUrlDialog : public QDialog
 {
     Q_OBJECT

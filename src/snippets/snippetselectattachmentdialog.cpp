@@ -12,7 +12,8 @@
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
-namespace {
+namespace
+{
 static const char mySnippetSelectAttachmentDialogGroupName[] = "SnippetSelectAttachmentDialog";
 }
 using namespace MailCommon;

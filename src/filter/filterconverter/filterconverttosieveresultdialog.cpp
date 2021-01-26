@@ -5,18 +5,18 @@
 */
 
 #include "filterconverttosieveresultdialog.h"
+#include "filterconverttosievepurposemenuwidget.h"
 #include <KPIMTextEdit/PlainTextEditor>
 #include <KPIMTextEdit/PlainTextEditorWidget>
 #include <PimCommon/PimUtil>
-#include "filterconverttosievepurposemenuwidget.h"
 
 #include <KLocalizedString>
 #include <KSyntaxHighlighting/Definition>
 #include <KSyntaxHighlighting/SyntaxHighlighter>
 #include <KSyntaxHighlighting/Theme>
 
-#include <KSharedConfig>
 #include <KConfigGroup>
+#include <KSharedConfig>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
@@ -44,9 +44,8 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
     mEditor->setObjectName(QStringLiteral("editor"));
     auto syntaxHighlighter = new KSyntaxHighlighting::SyntaxHighlighter(mEditor->editor()->document());
     syntaxHighlighter->setDefinition(mSyntaxRepo.definitionForName(QStringLiteral("Sieve")));
-    syntaxHighlighter->setTheme((palette().color(QPalette::Base).lightness() < 128)
-                                ? mSyntaxRepo.defaultTheme(KSyntaxHighlighting::Repository::DarkTheme)
-                                : mSyntaxRepo.defaultTheme(KSyntaxHighlighting::Repository::LightTheme));
+    syntaxHighlighter->setTheme((palette().color(QPalette::Base).lightness() < 128) ? mSyntaxRepo.defaultTheme(KSyntaxHighlighting::Repository::DarkTheme)
+                                                                                    : mSyntaxRepo.defaultTheme(KSyntaxHighlighting::Repository::LightTheme));
     topLayout->addWidget(mEditor);
     topLayout->addWidget(buttonBox);
 
@@ -68,8 +67,7 @@ FilterConvertToSieveResultDialog::~FilterConvertToSieveResultDialog()
 void FilterConvertToSieveResultDialog::slotSave()
 {
     const QString filter = i18n("Sieve Files (*.siv);;All Files (*)");
-    PimCommon::Util::saveTextAs(mEditor->editor()->toPlainText(), filter, this, QUrl(),
-                                i18nc("@title:window", "Convert to Script Sieve"));
+    PimCommon::Util::saveTextAs(mEditor->editor()->toPlainText(), filter, this, QUrl(), i18nc("@title:window", "Convert to Script Sieve"));
 }
 
 void FilterConvertToSieveResultDialog::setCode(const QString &code)

@@ -7,9 +7,10 @@
 #ifndef INVALIDFILTERINFO_H
 #define INVALIDFILTERINFO_H
 
-#include <QString>
 #include "mailcommon_private_export.h"
-namespace MailCommon {
+#include <QString>
+namespace MailCommon
+{
 class MAILCOMMON_TESTS_EXPORT InvalidFilterInfo
 {
 public:
@@ -24,7 +25,8 @@ public:
 
     void setInformation(const QString &information);
 
-    Q_REQUIRED_RESULT bool operator ==(const InvalidFilterInfo &other) const;
+    Q_REQUIRED_RESULT bool operator==(const InvalidFilterInfo &other) const;
+
 private:
     QString mName;
     QString mInformation;

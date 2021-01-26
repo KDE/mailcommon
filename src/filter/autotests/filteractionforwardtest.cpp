@@ -5,8 +5,8 @@
 */
 
 #include "filteractionforwardtest.h"
-#include <QTest>
 #include "../filteractions/filteractionforward.h"
+#include <QTest>
 
 FilterActionForwardTest::FilterActionForwardTest(QObject *parent)
     : QObject(parent)

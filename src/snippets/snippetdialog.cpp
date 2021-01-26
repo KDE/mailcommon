@@ -10,17 +10,18 @@
 #include "snippetdialog.h"
 #include "snippetwidget.h"
 
-#include <MessageComposer/ConvertSnippetVariableMenu>
-#include <KPIMTextEdit/PlainTextEditor>
 #include <KActionCollection>
-#include <QVBoxLayout>
-#include <QPushButton>
-#include <QDialogButtonBox>
 #include <KConfigGroup>
+#include <KPIMTextEdit/PlainTextEditor>
 #include <KSharedConfig>
+#include <MessageComposer/ConvertSnippetVariableMenu>
+#include <QDialogButtonBox>
+#include <QPushButton>
+#include <QVBoxLayout>
 
 using namespace MailCommon;
-namespace {
+namespace
+{
 static const char myConfigGroupName[] = "SnippetDialog";
 }
 SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMode, QWidget *parent)

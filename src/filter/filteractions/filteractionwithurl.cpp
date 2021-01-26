@@ -7,8 +7,8 @@
 
 #include "filteractionwithurl.h"
 
-#include <KUrlRequester>
 #include <KLocalizedString>
+#include <KUrlRequester>
 #include <QUrl>
 
 #include <QHBoxLayout>

@@ -5,23 +5,23 @@
 */
 
 #include "collectionexpirywidget.h"
-#include "collectionexpiryjob.h"
-#include "kernel/mailkernel.h"
-#include "folderrequester.h"
 #include "attributes/expirecollectionattribute.h"
+#include "collectionexpiryjob.h"
 #include "folder/foldersettings.h"
-#include "util/mailutil.h"
+#include "folderrequester.h"
+#include "kernel/mailkernel.h"
 #include "mailcommon_debug.h"
+#include "util/mailutil.h"
 
 #include <CollectionModifyJob>
 
-#include <KPluralHandlingSpinBox>
 #include <KMessageBox>
+#include <KPluralHandlingSpinBox>
+#include <QCheckBox>
 #include <QGroupBox>
+#include <QPushButton>
 #include <QRadioButton>
 #include <QVBoxLayout>
-#include <QCheckBox>
-#include <QPushButton>
 
 using namespace MailCommon;
 
@@ -96,7 +96,7 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
     connect(mExpireNowPB, &QPushButton::clicked, this, &CollectionExpiryWidget::saveAndExpireRequested);
     globalVBox->addWidget(mExpireNowPB, 0, Qt::AlignRight);
 
-    globalVBox->addStretch(100);   // eat all superfluous space
+    globalVBox->addStretch(100); // eat all superfluous space
     mDeletePermanentlyRB->setChecked(true);
     slotUpdateControls();
 }
@@ -134,15 +134,11 @@ void CollectionExpiryWidget::load(const MailCommon::CollectionExpirySettings &se
 {
     if (settings.isValid()) {
         bool expiryGloballyOn = settings.expiryGloballyOn;
-        if (expiryGloballyOn
-            && settings.mReadExpireUnits != ExpireCollectionAttribute::ExpireNever
-            && settings.daysToExpireRead >= 0) {
+        if (expiryGloballyOn && settings.mReadExpireUnits != ExpireCollectionAttribute::ExpireNever && settings.daysToExpireRead >= 0) {
             mExpireReadMailCB->setChecked(true);
             mExpireReadMailSB->setValue(settings.daysToExpireRead);
         }
-        if (expiryGloballyOn
-            && settings.mUnreadExpireUnits != ExpireCollectionAttribute::ExpireNever
-            && settings.daysToExpireUnread >= 0) {
+        if (expiryGloballyOn && settings.mUnreadExpireUnits != ExpireCollectionAttribute::ExpireNever && settings.daysToExpireUnread >= 0) {
             mExpireUnreadMailCB->setChecked(true);
             mExpireUnreadMailSB->setValue(settings.daysToExpireUnread);
         }
@@ -172,10 +168,11 @@ bool CollectionExpiryWidget::validateExpireFolder(bool expireNow)
     const bool enableGlobally = mExpireReadMailCB->isChecked() || mExpireUnreadMailCB->isChecked();
     const Akonadi::Collection expireToFolder = mFolderSelector->collection();
     if (enableGlobally && mMoveToRB->isChecked() && !expireToFolder.isValid()) {
-        KMessageBox::error(this, i18n("Please select a folder to expire messages into.\nIf this is not done, expired messages will be permanently deleted."),
+        KMessageBox::error(this,
+                           i18n("Please select a folder to expire messages into.\nIf this is not done, expired messages will be permanently deleted."),
                            i18n("No Folder Selected"));
         mDeletePermanentlyRB->setChecked(true);
-        expireNow = false;                                // settings are not valid
+        expireNow = false; // settings are not valid
     }
     return expireNow;
 }
@@ -186,10 +183,12 @@ MailCommon::ExpireCollectionAttribute *CollectionExpiryWidget::assignFolderAttri
     MailCommon::ExpireCollectionAttribute *attribute = nullptr;
     if (expireToFolder.isValid() && mMoveToRB->isChecked()) {
         if (expireToFolder.id() == collection.id()) {
-            KMessageBox::error(this, i18n("Please select a different folder than the current folder to expire messages into.\nIf this is not done, expired messages will be permanently deleted."),
+            KMessageBox::error(this,
+                               i18n("Please select a different folder than the current folder to expire messages into.\nIf this is not done, expired messages "
+                                    "will be permanently deleted."),
                                i18n("Wrong Folder Selected"));
             mDeletePermanentlyRB->setChecked(true);
-            expireNow = false;                                // settings are not valid
+            expireNow = false; // settings are not valid
         } else {
             attribute = collection.attribute<MailCommon::ExpireCollectionAttribute>(Akonadi::Collection::AddIfMissing);
             attribute->setExpireToFolderId(expireToFolder.id());
@@ -209,8 +208,10 @@ CollectionExpirySettings CollectionExpiryWidget::settings() const
     // we always write out days now
     settings.daysToExpireRead = mExpireReadMailSB->value();
     settings.daysToExpireUnread = mExpireUnreadMailSB->value();
-    settings.mReadExpireUnits = mExpireReadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays : MailCommon::ExpireCollectionAttribute::ExpireNever;
-    settings.mUnreadExpireUnits = mExpireUnreadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays : MailCommon::ExpireCollectionAttribute::ExpireNever;
+    settings.mReadExpireUnits =
+        mExpireReadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays : MailCommon::ExpireCollectionAttribute::ExpireNever;
+    settings.mUnreadExpireUnits =
+        mExpireUnreadMailCB->isChecked() ? MailCommon::ExpireCollectionAttribute::ExpireDays : MailCommon::ExpireCollectionAttribute::ExpireNever;
 
     if (mDeletePermanentlyRB->isChecked()) {
         settings.mExpireAction = ExpireCollectionAttribute::ExpireDelete;

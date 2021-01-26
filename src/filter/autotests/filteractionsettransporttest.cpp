@@ -1,7 +1,7 @@
 #include "filteractionsettransporttest.h"
 #include "../filteractions/filteractionsettransport.h"
-#include <QTest>
 #include <MailTransport/TransportComboBox>
+#include <QTest>
 
 FilterActionSetTransportTest::FilterActionSetTransportTest(QObject *parent)
     : QObject(parent)

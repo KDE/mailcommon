@@ -7,12 +7,13 @@
 #ifndef SNIPPETATTACHMENTWIDGET_H
 #define SNIPPETATTACHMENTWIDGET_H
 
-#include <QWidget>
 #include "mailcommon_private_export.h"
+#include <QWidget>
 
 class QLineEdit;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MAILCOMMON_TESTS_EXPORT SnippetAttachmentWidget : public QWidget
 {
     Q_OBJECT

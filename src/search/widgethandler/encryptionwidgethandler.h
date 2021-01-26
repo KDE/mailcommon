@@ -9,7 +9,8 @@
 
 #include "interfaces/rulewidgethandler.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 class EncryptionWidgetHandler : public RuleWidgetHandler
 {
 public:

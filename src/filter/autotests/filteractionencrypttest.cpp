@@ -30,16 +30,14 @@ void FilterActionEncryptTest::shouldEncrypt_data()
     const auto pgpKey = QStringLiteral("PGP:%1:818AE8DA30F81B0CEA4403BA358732559B8659B2");
 
     QDir testDir(QStringLiteral(TEST_PATH) + QStringLiteral("/gpgdata"));
-    const auto tests = testDir.entryInfoList({ QStringLiteral("*.msg") }, QDir::Files, QDir::Name);
+    const auto tests = testDir.entryInfoList({QStringLiteral("*.msg")}, QDir::Files, QDir::Name);
     for (const auto &test : tests) {
         QFile plain(test.absoluteFilePath());
         QVERIFY(plain.open(QIODevice::ReadOnly));
         const auto plainData = plain.readAll();
 
-        QTest::newRow(QStringLiteral("PGP %1").arg(test.baseName()).toUtf8().constData())
-            << pgpKey.arg(0) << plainData << plainData;
-        QTest::newRow(QStringLiteral("SMIME %1").arg(test.baseName()).toUtf8().constData())
-            << smimeKey.arg(0) << plainData << plainData;
+        QTest::newRow(QStringLiteral("PGP %1").arg(test.baseName()).toUtf8().constData()) << pgpKey.arg(0) << plainData << plainData;
+        QTest::newRow(QStringLiteral("SMIME %1").arg(test.baseName()).toUtf8().constData()) << smimeKey.arg(0) << plainData << plainData;
 
         QFile smimeFile(test.absoluteFilePath() + QStringLiteral(".smime"));
         QVERIFY(smimeFile.open(QIODevice::ReadOnly));
@@ -48,12 +46,9 @@ void FilterActionEncryptTest::shouldEncrypt_data()
         QVERIFY(pgpFile.open(QIODevice::ReadOnly));
         const auto pgpData = pgpFile.readAll();
 
-        QTest::newRow(QStringLiteral("PGP %1 re-encrypt").arg(test.baseName()).toUtf8().constData())
-            << pgpKey.arg(1) << smimeData << plainData;
-        QTest::newRow(QStringLiteral("SMIME %1 re-encrypt").arg(test.baseName()).toUtf8().constData())
-            << smimeKey.arg(1) << pgpData << plainData;
-        QTest::newRow(QStringLiteral("PGP %1 re-encrypt same key").arg(test.baseName()).toUtf8().constData())
-            << pgpKey.arg(1) << pgpData << plainData;
+        QTest::newRow(QStringLiteral("PGP %1 re-encrypt").arg(test.baseName()).toUtf8().constData()) << pgpKey.arg(1) << smimeData << plainData;
+        QTest::newRow(QStringLiteral("SMIME %1 re-encrypt").arg(test.baseName()).toUtf8().constData()) << smimeKey.arg(1) << pgpData << plainData;
+        QTest::newRow(QStringLiteral("PGP %1 re-encrypt same key").arg(test.baseName()).toUtf8().constData()) << pgpKey.arg(1) << pgpData << plainData;
     }
 }
 

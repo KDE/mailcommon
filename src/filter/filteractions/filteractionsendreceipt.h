@@ -10,7 +10,8 @@
 
 #include "filteractionwithnone.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionSendReceipt - send receipt
 // Return delivery receipt.

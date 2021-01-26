@@ -9,10 +9,12 @@
 
 #include <QDialog>
 
-namespace KIdentityManagement {
+namespace KIdentityManagement
+{
 class IdentityCombo;
 }
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterActionMissingIdentityDialog : public QDialog
 {
     Q_OBJECT

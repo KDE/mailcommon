@@ -6,20 +6,16 @@
 
 #include "encryptionwidgethandler.h"
 #include <QComboBox>
-#include <QStackedWidget>
 #include <QLabel>
+#include <QStackedWidget>
 
 using namespace MailCommon;
 
 static const struct {
     SearchRule::Function id;
     const char *displayName;
-} EncryptionFunctions[] = {
-    { SearchRule::FuncEquals, I18N_NOOP("is")         },
-    { SearchRule::FuncNotEqual, I18N_NOOP("is not")      }
-};
-static const int EncryptionFunctionCount
-    = sizeof(EncryptionFunctions) / sizeof(*EncryptionFunctions);
+} EncryptionFunctions[] = {{SearchRule::FuncEquals, I18N_NOOP("is")}, {SearchRule::FuncNotEqual, I18N_NOOP("is not")}};
+static const int EncryptionFunctionCount = sizeof(EncryptionFunctions) / sizeof(*EncryptionFunctions);
 
 EncryptionWidgetHandler::EncryptionWidgetHandler()
     : RuleWidgetHandler()
@@ -45,8 +41,7 @@ QWidget *EncryptionWidgetHandler::createFunctionWidget(int number, QStackedWidge
         combo->addItem(i18n(EncryptionFunctions[i].displayName));
     }
     combo->adjustSize();
-    QObject::connect(combo, SIGNAL(activated(int)),
-                     receiver, SLOT(slotFunctionChanged()));
+    QObject::connect(combo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));
     return combo;
 }
 

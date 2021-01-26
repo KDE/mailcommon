@@ -20,7 +20,8 @@ class KKeySequenceWidget;
 class QCheckBox;
 class KActionCollection;
 
-namespace MailCommon {
+namespace MailCommon
+{
 class TagWidgetPrivate;
 class MAILCOMMON_EXPORT TagWidget : public QWidget
 {

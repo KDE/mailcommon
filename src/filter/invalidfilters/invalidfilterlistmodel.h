@@ -7,18 +7,17 @@
 #ifndef INVALIDFILTERLISTMODEL_H
 #define INVALIDFILTERLISTMODEL_H
 
+#include "invalidfilterinfo.h"
 #include <QAbstractListModel>
 #include <QVector>
-#include "invalidfilterinfo.h"
-namespace MailCommon {
+namespace MailCommon
+{
 class InvalidFilterListModel : public QAbstractListModel
 {
     Q_OBJECT
 
 public:
-    enum Role {
-        InformationRole = Qt::UserRole + 1
-    };
+    enum Role { InformationRole = Qt::UserRole + 1 };
 
     explicit InvalidFilterListModel(QObject *parent = nullptr);
     ~InvalidFilterListModel() override;

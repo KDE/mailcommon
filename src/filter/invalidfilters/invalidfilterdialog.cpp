@@ -5,14 +5,14 @@
 */
 
 #include "invalidfilterdialog.h"
-#include "invalidfilterwidget.h"
 #include "invalidfilterinfowidget.h"
+#include "invalidfilterwidget.h"
 #include <KConfigGroup>
-#include <KSharedConfig>
-#include <QVBoxLayout>
 #include <KLocalizedString>
+#include <KSharedConfig>
 #include <QDialogButtonBox>
 #include <QPushButton>
+#include <QVBoxLayout>
 
 using namespace MailCommon;
 

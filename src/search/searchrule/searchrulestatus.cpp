@@ -17,50 +17,20 @@ struct _statusNames {
     Akonadi::MessageStatus status;
 };
 
-static struct _statusNames statusNames[] = {
-    {
-        "Important", Akonadi::MessageStatus::statusImportant()
-    },
-    {
-        "Unread", Akonadi::MessageStatus::statusUnread()
-    },
-    {
-        "Read", Akonadi::MessageStatus::statusRead()
-    },
-    {
-        "Deleted", Akonadi::MessageStatus::statusDeleted()
-    },
-    {
-        "Replied", Akonadi::MessageStatus::statusReplied()
-    },
-    {
-        "Forwarded", Akonadi::MessageStatus::statusForwarded()
-    },
-    {
-        "Queued", Akonadi::MessageStatus::statusQueued()
-    },
-    {
-        "Sent", Akonadi::MessageStatus::statusSent()
-    },
-    {
-        "Watched", Akonadi::MessageStatus::statusWatched()
-    },
-    {
-        "Ignored", Akonadi::MessageStatus::statusIgnored()
-    },
-    {
-        "Action Item", Akonadi::MessageStatus::statusToAct()
-    },
-    {
-        "Spam", Akonadi::MessageStatus::statusSpam()
-    },
-    {
-        "Ham", Akonadi::MessageStatus::statusHam()
-    },
-    {
-        "Has Attachment", Akonadi::MessageStatus::statusHasAttachment()
-    }
-};
+static struct _statusNames statusNames[] = {{"Important", Akonadi::MessageStatus::statusImportant()},
+                                            {"Unread", Akonadi::MessageStatus::statusUnread()},
+                                            {"Read", Akonadi::MessageStatus::statusRead()},
+                                            {"Deleted", Akonadi::MessageStatus::statusDeleted()},
+                                            {"Replied", Akonadi::MessageStatus::statusReplied()},
+                                            {"Forwarded", Akonadi::MessageStatus::statusForwarded()},
+                                            {"Queued", Akonadi::MessageStatus::statusQueued()},
+                                            {"Sent", Akonadi::MessageStatus::statusSent()},
+                                            {"Watched", Akonadi::MessageStatus::statusWatched()},
+                                            {"Ignored", Akonadi::MessageStatus::statusIgnored()},
+                                            {"Action Item", Akonadi::MessageStatus::statusToAct()},
+                                            {"Spam", Akonadi::MessageStatus::statusSpam()},
+                                            {"Ham", Akonadi::MessageStatus::statusHam()},
+                                            {"Has Attachment", Akonadi::MessageStatus::statusHasAttachment()}};
 
 QString englishNameForStatus(Akonadi::MessageStatus status)
 {
@@ -99,7 +69,7 @@ Akonadi::MessageStatus SearchRuleStatus::statusFromEnglishName(const QString &aS
 
 QString SearchRuleStatus::informationAboutNotValidRules() const
 {
-    //TODO
+    // TODO
     return QString();
 }
 
@@ -148,13 +118,13 @@ void SearchRuleStatus::addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &empty
 {
     using namespace Akonadi;
     emptyIsNotAnError = true;
-    //TODO double check that isRead also works
+    // TODO double check that isRead also works
     if (!mStatus.statusFlags().isEmpty()) {
         EmailSearchTerm term(EmailSearchTerm::MessageStatus, mStatus.statusFlags().values().first(), akonadiComparator());
         term.setIsNegated(isNegated());
         groupTerm.addSubTerm(term);
     } else {
-        //Special case Unread
+        // Special case Unread
         Akonadi::MessageStatus status;
         status.setRead(true);
         EmailSearchTerm term(EmailSearchTerm::MessageStatus, status.statusFlags().values().first(), akonadiComparator());

@@ -10,7 +10,8 @@
 
 #include "filteractionwithuoid.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionSetIdentity - set identity to
 // Specify Identity to be used when replying to a message

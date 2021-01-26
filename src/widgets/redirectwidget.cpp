@@ -8,15 +8,15 @@
 #include "redirectwidget.h"
 #include "kernel/mailkernel.h"
 
-#include <QTreeView>
 #include <MessageComposer/ComposerLineEdit>
+#include <QTreeView>
 
 #include <Akonadi/Contact/EmailAddressSelectionDialog>
 
-#include <QIcon>
-#include <QHBoxLayout>
-#include <QPushButton>
 #include <KLocalizedString>
+#include <QHBoxLayout>
+#include <QIcon>
+#include <QPushButton>
 
 using namespace MailCommon;
 
@@ -37,9 +37,10 @@ RedirectWidget::RedirectWidget(QWidget *parent)
     auto BtnTo = new QPushButton(this);
     BtnTo->setIcon(QIcon::fromTheme(QStringLiteral("help-contents")));
     BtnTo->setToolTip(i18n("Use the Address-Selection Dialog"));
-    BtnTo->setWhatsThis(i18n("This button opens a separate dialog "
-                             "where you can select recipients out "
-                             "of all available addresses."));
+    BtnTo->setWhatsThis(
+        i18n("This button opens a separate dialog "
+             "where you can select recipients out "
+             "of all available addresses."));
     hbox->addWidget(BtnTo);
     connect(BtnTo, &QAbstractButton::clicked, this, &RedirectWidget::slotAddressSelection);
 
@@ -66,8 +67,7 @@ void RedirectWidget::setFocus()
 
 void RedirectWidget::slotAddressSelection()
 {
-    std::unique_ptr<Akonadi::EmailAddressSelectionDialog> dlg(
-        new Akonadi::EmailAddressSelectionDialog(this));
+    std::unique_ptr<Akonadi::EmailAddressSelectionDialog> dlg(new Akonadi::EmailAddressSelectionDialog(this));
 
     dlg->view()->view()->setSelectionMode(QAbstractItemView::MultiSelection);
 

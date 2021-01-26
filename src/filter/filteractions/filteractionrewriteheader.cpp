@@ -7,9 +7,9 @@
 
 #include "filteractionrewriteheader.h"
 
+#include <KComboBox>
 #include <KLineEdit>
 #include <KLocalizedString>
-#include <KComboBox>
 
 #include <QHBoxLayout>
 #include <QLabel>
@@ -24,13 +24,8 @@ FilterAction *FilterActionRewriteHeader::newAction()
 FilterActionRewriteHeader::FilterActionRewriteHeader(QObject *parent)
     : FilterActionWithStringList(QStringLiteral("rewrite header"), i18n("Rewrite Header"), parent)
 {
-    mParameterList << QString()
-                   << QStringLiteral("Subject")
-                   << QStringLiteral("Reply-To")
-                   << QStringLiteral("Delivered-To")
-                   << QStringLiteral("X-KDE-PR-Message")
-                   << QStringLiteral("X-KDE-PR-Package")
-                   << QStringLiteral("X-KDE-PR-Keywords");
+    mParameterList << QString() << QStringLiteral("Subject") << QStringLiteral("Reply-To") << QStringLiteral("Delivered-To")
+                   << QStringLiteral("X-KDE-PR-Message") << QStringLiteral("X-KDE-PR-Package") << QStringLiteral("X-KDE-PR-Keywords");
 
     mParameter = mParameterList.at(0);
 }
@@ -66,7 +61,7 @@ FilterAction::ReturnCode FilterActionRewriteHeader::process(ItemContext &context
     const QByteArray param(mParameter.toLatin1());
     KMime::Headers::Base *header = msg->headerByType(param.constData());
     if (!header) {
-        return GoOn; //TODO: Maybe create a new header by type?
+        return GoOn; // TODO: Maybe create a new header by type?
     }
 
     QString value = header->asUnicodeString();
@@ -136,8 +131,7 @@ QWidget *FilterActionRewriteHeader::createParamWidget(QWidget *parent) const
 
     setParamWidgetValue(widget);
     connect(comboBox, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &FilterActionRewriteHeader::filterActionModified);
-    connect(comboBox->lineEdit(), &QLineEdit::textChanged,
-            this, &FilterAction::filterActionModified);
+    connect(comboBox->lineEdit(), &QLineEdit::textChanged, this, &FilterAction::filterActionModified);
     connect(regExpLineEdit, &KLineEdit::textChanged, this, &FilterActionRewriteHeader::filterActionModified);
     connect(lineEdit, &KLineEdit::textChanged, this, &FilterActionRewriteHeader::filterActionModified);
 
@@ -222,9 +216,9 @@ void FilterActionRewriteHeader::argsFromString(const QString &argsStr)
     }
     QString result;
 
-    result = list[ 0 ];
-    mRegex.setPattern(list[ 1 ]);
-    mReplacementString = list[ 2 ];
+    result = list[0];
+    mRegex.setPattern(list[1]);
+    mReplacementString = list[2];
 
     int index = mParameterList.indexOf(result);
     if (index < 0) {

@@ -129,7 +129,8 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Messa
     return result;
 }
 
-namespace {
+namespace
+{
 /**
  * Substitutes placeholders in the command line with the
  * content of the corresponding header in the message.
@@ -139,8 +140,7 @@ void substituteMessageHeaders(const KMime::Message::Ptr &aMsg, QString &result)
 {
     // Replace the %{foo} with the content of the foo header field.
     // If the header doesn't exist, remove the placeholder.
-    const QRegularExpression header_rx(QStringLiteral("%\\{([a-z0-9-]+)\\}"),
-                                       QRegularExpression::CaseInsensitiveOption);
+    const QRegularExpression header_rx(QStringLiteral("%\\{([a-z0-9-]+)\\}"), QRegularExpression::CaseInsensitiveOption);
     int offset = 0;
     QRegularExpressionMatch rmatch;
     while (result.indexOf(header_rx, offset, &rmatch) != -1) {

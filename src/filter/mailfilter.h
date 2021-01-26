@@ -13,8 +13,8 @@
 #include "mailcommon/filteraction.h"
 #include "mailcommon/searchpattern.h"
 
-#include <QKeySequence>
 #include <AkonadiCore/collection.h>
+#include <QKeySequence>
 
 #include <kmime/kmime_message.h>
 
@@ -23,7 +23,8 @@
 
 class KConfigGroup;
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @brief The MailFilter class
  */
@@ -44,9 +45,7 @@ public:
       @param NoResult For internal use only!
 
     */
-    enum ReturnCode {
-        NoResult, GoOn, CriticalError
-    };
+    enum ReturnCode { NoResult, GoOn, CriticalError };
 
     /** Account type codes used by setApplicability. They mean:
 
@@ -57,16 +56,14 @@ public:
       @param Checked apply to all accounts specified by setApplyOnAccount
 
     */
-    enum AccountType {
-        All, ButImap, Checked
-    };
+    enum AccountType { All, ButImap, Checked };
 
     /** Constructor that initializes basic settings. */
     MailFilter();
 
     /** Constructor that initializes from given config group.
-    * Filters are stored one by one in config groups, i.e.
-    * one filter, one group. */
+     * Filters are stored one by one in config groups, i.e.
+     * one filter, one group. */
     explicit MailFilter(const KConfigGroup &aConfig, bool internal, bool &needUpdate);
 
     /** Copy constructor. Constructs a deep copy of @p aFilter. */
@@ -79,8 +76,8 @@ public:
     void generateRandomIdentifier();
 
     /**
-    * Returns the unique identifier of this filter.
-    */
+     * Returns the unique identifier of this filter.
+     */
     Q_REQUIRED_RESULT QString identifier() const;
 
     /** Equivalent to @p pattern()->name(). @return name of the filter */
@@ -100,8 +97,8 @@ public:
     Q_REQUIRED_RESULT ReturnCode execActions(ItemContext &context, bool &stopIt, bool applyOnOutbound) const;
 
     /**
-    * Returns the required part from the item that is needed for the filter to
-    * operate. See @ref SearchRule::RequiredPart */
+     * Returns the required part from the item that is needed for the filter to
+     * operate. See @ref SearchRule::RequiredPart */
     Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart(const QString &id) const;
 
     /** Write contents to given config group. */
@@ -227,7 +224,7 @@ public:
     bool stopProcessingHere() const;
 
     /** Set whether this filter should be plugged into the filter menu.
-    */
+     */
     void setConfigureShortcut(bool aShort);
 
     /** @return true if this filter should be plugged into the filter menu,
@@ -249,17 +246,17 @@ public:
     bool configureToolbar() const;
 
     /** @return The toolbar name of this filter.
-    *  @see setToolbarName
-    */
+     *  @see setToolbarName
+     */
     QString toolbarName() const;
 
     /** This sets the toolbar name for this filter.
-    *  The toolbar name is the text to be displayed underneath the toolbar icon
-    *  for this filter. This is usually the same as name(),  expect when
-    *  explicitly set by this function.
-    *  This is useful if the normal filter mame is too long for the toolbar.
-    *  @see toolbarName, name
-    */
+     *  The toolbar name is the text to be displayed underneath the toolbar icon
+     *  for this filter. This is usually the same as name(),  expect when
+     *  explicitly set by this function.
+     *  This is useful if the normal filter mame is too long for the toolbar.
+     *  @see toolbarName, name
+     */
     void setToolbarName(const QString &toolbarName);
 
     /** Set the shortcut to be used if plugged into the filter menu
@@ -285,12 +282,12 @@ public:
     QString icon() const;
 
     /**
-    * Called from the filter manager when a folder is moved.
-    * Tests if the folder aFolder is used in any action. Changes it
-    * to aNewFolder folder in this case.
-    * @return true if a change in some action occurred,
-    * false if no action was affected.
-    */
+     * Called from the filter manager when a folder is moved.
+     * Tests if the folder aFolder is used in any action. Changes it
+     * to aNewFolder folder in this case.
+     * @return true if a change in some action occurred,
+     * false if no action was affected.
+     */
     void folderRemoved(const Akonadi::Collection &aFolder, const Akonadi::Collection &aNewFolder);
 
     /** Returns the filter in a human-readable form. useful for
@@ -305,11 +302,11 @@ public:
     void setAutoNaming(bool useAutomaticNames);
 
     /** @return Tells, if an automatic name is used for the filter
-    */
+     */
     bool isAutoNaming() const;
 
     /** Return if filter is enabled or not
-    */
+     */
     bool isEnabled() const;
     void setEnabled(bool);
 
@@ -317,6 +314,7 @@ public:
 
     void clearApplyOnAccount();
     void agentRemoved(const QString &identifier);
+
 private:
     QString mIdentifier;
     SearchPattern mPattern;

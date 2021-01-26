@@ -12,7 +12,8 @@
 #include <Collection>
 #include <EntityRightsFilterModel>
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @brief The FolderTreeWidgetProxyModel class
  * @author Laurent Montel <montel@kde.org>
@@ -22,16 +23,10 @@ class MAILCOMMON_EXPORT FolderTreeWidgetProxyModel : public Akonadi::EntityRight
     Q_OBJECT
 
 public:
-    enum FolderTreeWidgetProxyModelOption {
-        None = 0,
-        HideVirtualFolder = 1,
-        HideSpecificFolder = 2,
-        HideOutboxFolder = 4
-    };
+    enum FolderTreeWidgetProxyModelOption { None = 0, HideVirtualFolder = 1, HideSpecificFolder = 2, HideOutboxFolder = 4 };
     Q_DECLARE_FLAGS(FolderTreeWidgetProxyModelOptions, FolderTreeWidgetProxyModelOption)
 
-    explicit FolderTreeWidgetProxyModel(
-        QObject *parent = nullptr, FolderTreeWidgetProxyModelOptions = FolderTreeWidgetProxyModel::None);
+    explicit FolderTreeWidgetProxyModel(QObject *parent = nullptr, FolderTreeWidgetProxyModelOptions = FolderTreeWidgetProxyModel::None);
 
     ~FolderTreeWidgetProxyModel() override;
 

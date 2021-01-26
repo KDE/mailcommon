@@ -10,11 +10,13 @@
 
 #include "filteractionwithtest.h"
 
-namespace Phonon {
+namespace Phonon
+{
 class MediaObject;
 }
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionPlaySound - execute command
 // Execute a sound
@@ -32,6 +34,7 @@ public:
 
     Q_REQUIRED_RESULT bool isEmpty() const override;
     Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
+
 private:
     mutable Phonon::MediaObject *mPlayer = nullptr;
 };

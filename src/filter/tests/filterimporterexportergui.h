@@ -7,8 +7,8 @@
 #ifndef FILTERIMPORTEREXPORTERGUI_H
 #define FILTERIMPORTEREXPORTERGUI_H
 
-#include <QWidget>
 #include "filter/filterimporterexporter.h"
+#include <QWidget>
 class QTextEdit;
 class FilterImporterExporterGui : public QWidget
 {
@@ -18,6 +18,7 @@ public:
     ~FilterImporterExporterGui();
 private Q_SLOTS:
     void slotImportFilter(QAction *act);
+
 private:
     void importFilters(MailCommon::FilterImporterExporter::FilterType type);
     QTextEdit *mTextEdit = nullptr;

@@ -14,7 +14,8 @@
 
 #include <KLocalizedString>
 #include <KSharedConfig>
-namespace {
+namespace
+{
 static const char mySnippetCustomFileAttachmentNameDialogGroupName[] = "SnippetCustomFileAttachmentNameDialog";
 }
 using namespace MailCommon;

@@ -16,11 +16,12 @@ using MessageCore::MailingList;
 #include <Collection>
 #include <CollectionStatistics>
 
+#include <KIO/Job>
 #include <KSharedConfig>
 #include <QKeySequence>
-#include <KIO/Job>
 
-namespace MailCommon {
+namespace MailCommon
+{
 /**
  * @brief The FolderSettings class
  * @author Laurent Montel <montel@kde.org>
@@ -30,8 +31,7 @@ class MAILCOMMON_EXPORT FolderSettings : public QObject
     Q_OBJECT
 
 public:
-    static QSharedPointer<FolderSettings> forCollection(
-        const Akonadi::Collection &coll, bool writeConfig = true);
+    static QSharedPointer<FolderSettings> forCollection(const Akonadi::Collection &coll, bool writeConfig = true);
 
     ~FolderSettings();
 

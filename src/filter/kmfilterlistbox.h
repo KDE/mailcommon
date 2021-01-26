@@ -39,7 +39,8 @@ class KListWidgetSearchLine;
  * @see MailCommon::MailFilter KMFilterDialog KMFilterActionEdit SearchPatternEdit
  */
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MailFilter;
 
 class QListWidgetFilterItem : public QListWidgetItem
@@ -235,6 +236,7 @@ protected:
     QPushButton *mBtnBottom = nullptr;
     KListWidgetSearchLine *mSearchListWidget = nullptr;
     bool eventFilter(QObject *obj, QEvent *event) override;
+
 private:
     void applyFilterChanged(bool closeAfterSaving);
     void enableControls();

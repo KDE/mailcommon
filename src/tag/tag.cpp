@@ -5,10 +5,10 @@
 */
 #include "tag.h"
 
-#include <Tag>
-#include <TagAttribute>
 #include <QFont>
 #include <QGuiApplication>
+#include <Tag>
+#include <TagAttribute>
 
 #include <QUuid>
 using namespace MailCommon;
@@ -120,15 +120,9 @@ bool Tag::operator==(const Tag &other) const
         return id() == other.id();
     }
 #endif
-    return tagName == other.tagName
-           && textColor == other.textColor
-           && backgroundColor == other.backgroundColor
-           && isBold == other.isBold
-           && isItalic == other.isItalic
-           && iconName == other.iconName
-           && inToolbar == other.inToolbar
-           && shortcut.toString() == other.shortcut.toString()
-           && priority == other.priority;
+    return tagName == other.tagName && textColor == other.textColor && backgroundColor == other.backgroundColor && isBold == other.isBold
+        && isItalic == other.isItalic && iconName == other.iconName && inToolbar == other.inToolbar && shortcut.toString() == other.shortcut.toString()
+        && priority == other.priority;
 }
 
 bool Tag::operator!=(const Tag &other) const

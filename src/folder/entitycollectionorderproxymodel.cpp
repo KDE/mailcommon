@@ -7,14 +7,15 @@
 
 #include "entitycollectionorderproxymodel.h"
 #include "kernel/mailkernel.h"
-#include "util/mailutil.h"
 #include "mailcommon_debug.h"
+#include "util/mailutil.h"
+#include <AgentManager>
+#include <Akonadi/KMime/SpecialMailCollections>
 #include <Collection>
 #include <EntityTreeModel>
-#include <Akonadi/KMime/SpecialMailCollections>
-#include <AgentManager>
 
-namespace MailCommon {
+namespace MailCommon
+{
 class Q_DECL_HIDDEN EntityCollectionOrderProxyModel::EntityCollectionOrderProxyModelPrivate
 {
 public:
@@ -55,7 +56,7 @@ public:
                 const QString resource = collection.resource();
                 if (resource.isEmpty()) {
                     qCDebug(MAILCOMMON_LOG) << " collection has not resource: " << collection;
-                    //Don't save in collectionranks because we don't have resource name => pb.
+                    // Don't save in collectionranks because we don't have resource name => pb.
                     return rank;
                 }
                 const int order = topLevelOrder.indexOf(resource);
@@ -78,8 +79,14 @@ EntityCollectionOrderProxyModel::EntityCollectionOrderProxyModel(QObject *parent
     , d(new EntityCollectionOrderProxyModelPrivate())
 {
     setSortCaseSensitivity(Qt::CaseInsensitive);
-    connect(Akonadi::SpecialMailCollections::self(), &Akonadi::SpecialMailCollections::defaultCollectionsChanged, this, &EntityCollectionOrderProxyModel::slotSpecialCollectionsChanged);
-    connect(Akonadi::SpecialMailCollections::self(), &Akonadi::SpecialMailCollections::collectionsChanged, this, &EntityCollectionOrderProxyModel::slotSpecialCollectionsChanged);
+    connect(Akonadi::SpecialMailCollections::self(),
+            &Akonadi::SpecialMailCollections::defaultCollectionsChanged,
+            this,
+            &EntityCollectionOrderProxyModel::slotSpecialCollectionsChanged);
+    connect(Akonadi::SpecialMailCollections::self(),
+            &Akonadi::SpecialMailCollections::collectionsChanged,
+            this,
+            &EntityCollectionOrderProxyModel::slotSpecialCollectionsChanged);
 }
 
 EntityCollectionOrderProxyModel::~EntityCollectionOrderProxyModel()

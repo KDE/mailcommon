@@ -9,20 +9,21 @@
 
 #include "snippetvariabledialog.h"
 
-#include <KLocalizedString>
-#include <QMap>
-#include <QCheckBox>
-#include <QLabel>
-#include <QVBoxLayout>
-#include <QDialogButtonBox>
-#include <QPushButton>
 #include <KConfigGroup>
+#include <KLocalizedString>
 #include <KSharedConfig>
+#include <QCheckBox>
+#include <QDialogButtonBox>
+#include <QLabel>
+#include <QMap>
+#include <QPushButton>
+#include <QVBoxLayout>
 
 #include <KPIMTextEdit/PlainTextEditorWidget>
 
 using namespace MailCommon;
-namespace {
+namespace
+{
 static const char myConfigGroupName[] = "SnippetVariableDialog";
 }
 SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<QString, QString> *variables, QWidget *parent)
@@ -41,15 +42,13 @@ SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<Q
 
     mSaveVariable = new QCheckBox(i18n("Make value &default"), this);
     mSaveVariable->setChecked(false);
-    mSaveVariable->setToolTip(
-        i18nc("@info:tooltip",
-              "Enable this to save the value entered to the right "
-              "as the default value for this variable"));
-    mSaveVariable->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "If you enable this option, the value entered to the right will be saved. "
-              "If you use the same variable later, even in another snippet, the value entered "
-              "to the right will be the default value for that variable."));
+    mSaveVariable->setToolTip(i18nc("@info:tooltip",
+                                    "Enable this to save the value entered to the right "
+                                    "as the default value for this variable"));
+    mSaveVariable->setWhatsThis(i18nc("@info:whatsthis",
+                                      "If you enable this option, the value entered to the right will be saved. "
+                                      "If you use the same variable later, even in another snippet, the value entered "
+                                      "to the right will be the default value for that variable."));
     mainLayout->addWidget(mSaveVariable);
 
     if (mVariables->contains(variableName)) {

@@ -27,8 +27,7 @@ QStringList FilterActionWithCrypto::getEncryptionKeysFromContent(const KMime::Me
         }
     }
 
-    if ((protocol == GpgME::CMS && mGpgSmPath.isEmpty())
-        || (protocol == GpgME::OpenPGP && mGpgPath.isEmpty())) {
+    if ((protocol == GpgME::CMS && mGpgSmPath.isEmpty()) || (protocol == GpgME::OpenPGP && mGpgPath.isEmpty())) {
         return {};
     }
 
@@ -39,7 +38,7 @@ QStringList FilterActionWithCrypto::getEncryptionKeysFromContent(const KMime::Me
         gpg.setProgram(mGpgPath);
         // --list-packets will give us list of keys used to encrypt the message
         // --batch will prevent gpg from asking for decryption password (we don't need it yet)
-        gpg.setArguments({ QStringLiteral("--list-packets"), QStringLiteral("--batch") });
+        gpg.setArguments({QStringLiteral("--list-packets"), QStringLiteral("--batch")});
         gpg.start(QIODevice::ReadWrite);
         gpg.waitForStarted();
         gpg.write(msg->encodedContent());
@@ -62,10 +61,12 @@ QStringList FilterActionWithCrypto::getEncryptionKeysFromContent(const KMime::Me
         // --decrypt - the only way how to get the keys from gpgsm, sadly, is to decrypt the email
         // --status-fd 2 - make sure the status output is not mangled with the decrypted content
         // --assume-base64 - so that we don't have to decode it ourselves
-        gpg.setArguments({ QStringLiteral("--decrypt"),
-                           QStringLiteral("--status-fd"), QStringLiteral("2"),
-                           QStringLiteral("--debug-level"), QStringLiteral("basic"),
-                           QStringLiteral("--assume-base64") });
+        gpg.setArguments({QStringLiteral("--decrypt"),
+                          QStringLiteral("--status-fd"),
+                          QStringLiteral("2"),
+                          QStringLiteral("--debug-level"),
+                          QStringLiteral("basic"),
+                          QStringLiteral("--assume-base64")});
         gpg.start(QIODevice::ReadWrite);
         gpg.waitForStarted();
         gpg.write(msg->encodedBody()); // just the body!

@@ -28,7 +28,10 @@ QWidget *FilterActionSetTransport::createParamWidget(QWidget *parent) const
     auto transportCombobox = new MailTransport::TransportComboBox(parent);
     transportCombobox->setObjectName(QStringLiteral("transportcombobox"));
     setParamWidgetValue(transportCombobox);
-    connect(transportCombobox, QOverload<int>::of(&MailTransport::TransportComboBox::currentIndexChanged), this, &FilterActionSetTransport::filterActionModified);
+    connect(transportCombobox,
+            QOverload<int>::of(&MailTransport::TransportComboBox::currentIndexChanged),
+            this,
+            &FilterActionSetTransport::filterActionModified);
     return transportCombobox;
 }
 
@@ -62,7 +65,7 @@ FilterAction::ReturnCode FilterActionSetTransport::process(ItemContext &context,
     }
 
     const MailTransport::Transport *transport = MailTransport::TransportManager::self()->transportById(mParameter);
-    //Error if we don't have transport here.
+    // Error if we don't have transport here.
     if (!transport) {
         return ErrorButGoOn;
     }

@@ -34,21 +34,23 @@ void FilterActionReplyToTest::shouldHadReplyToHeader()
 {
     const QString replyTo = QStringLiteral("fooreply@kde.org");
 
-    const QByteArray data = "From: foo@kde.org\n"
-                            "To: foo@kde.org\n"
-                            "Subject: test\n"
-                            "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
-                            "MIME-Version: 1.0\n"
-                            "\n"
-                            "test";
-    const QByteArray output = "From: foo@kde.org\n"
-                              "To: foo@kde.org\n"
-                              "Subject: test\n"
-                              "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
-                              "MIME-Version: 1.0\n"
-                              "Reply-To: fooreply@kde.org\n"
-                              "\n"
-                              "test";
+    const QByteArray data =
+        "From: foo@kde.org\n"
+        "To: foo@kde.org\n"
+        "Subject: test\n"
+        "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
+        "MIME-Version: 1.0\n"
+        "\n"
+        "test";
+    const QByteArray output =
+        "From: foo@kde.org\n"
+        "To: foo@kde.org\n"
+        "Subject: test\n"
+        "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
+        "MIME-Version: 1.0\n"
+        "Reply-To: fooreply@kde.org\n"
+        "\n"
+        "test";
 
     MailCommon::FilterActionReplyTo filter(this);
     KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
@@ -68,22 +70,24 @@ void FilterActionReplyToTest::shouldReplaceReplyToHeader()
 {
     const QString replyTo = QStringLiteral("fooreply@kde.org");
 
-    const QByteArray data = "From: foo@kde.org\n"
-                            "To: foo@kde.org\n"
-                            "Subject: test\n"
-                            "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
-                            "MIME-Version: 1.0\n"
-                            "Reply-To: oldfooreply@kde.org\n"
-                            "\n"
-                            "test";
-    const QByteArray output = "From: foo@kde.org\n"
-                              "To: foo@kde.org\n"
-                              "Subject: test\n"
-                              "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
-                              "MIME-Version: 1.0\n"
-                              "Reply-To: fooreply@kde.org\n"
-                              "\n"
-                              "test";
+    const QByteArray data =
+        "From: foo@kde.org\n"
+        "To: foo@kde.org\n"
+        "Subject: test\n"
+        "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
+        "MIME-Version: 1.0\n"
+        "Reply-To: oldfooreply@kde.org\n"
+        "\n"
+        "test";
+    const QByteArray output =
+        "From: foo@kde.org\n"
+        "To: foo@kde.org\n"
+        "Subject: test\n"
+        "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
+        "MIME-Version: 1.0\n"
+        "Reply-To: fooreply@kde.org\n"
+        "\n"
+        "test";
 
     MailCommon::FilterActionReplyTo filter(this);
     KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
@@ -107,14 +111,15 @@ void FilterActionReplyToTest::shouldHaveRequiredPart()
 
 void FilterActionReplyToTest::shouldNotCreateReplyToWhenAddressIsEmpty()
 {
-    const QByteArray data = "From: foo@kde.org\n"
-                            "To: foo@kde.org\n"
-                            "Subject: test\n"
-                            "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
-                            "MIME-Version: 1.0\n"
-                            "Reply-To: oldfooreply@kde.org\n"
-                            "\n"
-                            "test";
+    const QByteArray data =
+        "From: foo@kde.org\n"
+        "To: foo@kde.org\n"
+        "Subject: test\n"
+        "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
+        "MIME-Version: 1.0\n"
+        "Reply-To: oldfooreply@kde.org\n"
+        "\n"
+        "test";
 
     MailCommon::FilterActionReplyTo filter(this);
     KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());

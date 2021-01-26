@@ -9,11 +9,13 @@
 
 #include "interfaces/rulewidgethandler.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 class MessageRuleWidgetHandler : public MailCommon::RuleWidgetHandler
 {
 public:
-    MessageRuleWidgetHandler() : MailCommon::RuleWidgetHandler()
+    MessageRuleWidgetHandler()
+        : MailCommon::RuleWidgetHandler()
     {
     }
 

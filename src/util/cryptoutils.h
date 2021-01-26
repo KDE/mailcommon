@@ -12,8 +12,10 @@
 
 #include <mailcommon_export.h>
 
-namespace MailCommon {
-namespace CryptoUtils {
+namespace MailCommon
+{
+namespace CryptoUtils
+{
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT KMime::Message::Ptr assembleMessage(const KMime::Message::Ptr &orig, const KMime::Content *newContent);
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT KMime::Message::Ptr decryptMessage(const KMime::Message::Ptr &decrypt, bool &wasEncrypted);
 

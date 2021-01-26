@@ -10,7 +10,8 @@
 
 #include "filteractionwithstringlist.h"
 
-namespace MailCommon {
+namespace MailCommon
+{
 //=============================================================================
 // FilterActionRemoveHeader - remove header
 // Remove all instances of the given header field.

@@ -10,9 +10,9 @@
 
 #include "attributes/expirecollectionattribute.h"
 #include "folder/foldersettings.h"
-#include "util/mailutil.h"
 #include "kernel/mailkernel.h"
 #include "mailcommon_debug.h"
+#include "util/mailutil.h"
 
 #include <KLocalizedString>
 #include <QVBoxLayout>
@@ -44,7 +44,7 @@ void CollectionExpiryPage::init()
     connect(mCollectionExpiryWidget, &CollectionExpiryWidget::configChanged, this, &CollectionExpiryPage::slotConfigChanged);
     globalVBox->addWidget(mCollectionExpiryWidget);
 
-    globalVBox->addStretch(100);   // eat all superfluous space
+    globalVBox->addStretch(100); // eat all superfluous space
 }
 
 void CollectionExpiryPage::slotConfigChanged(bool changed)

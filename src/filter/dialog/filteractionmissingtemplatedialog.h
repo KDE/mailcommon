@@ -10,7 +10,8 @@
 #include <QDialog>
 
 class QComboBox;
-namespace MailCommon {
+namespace MailCommon
+{
 class FilterActionMissingTemplateDialog : public QDialog
 {
     Q_OBJECT

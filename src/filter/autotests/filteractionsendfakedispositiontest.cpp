@@ -6,8 +6,8 @@
 
 #include "filteractionsendfakedispositiontest.h"
 #include "../filteractions/filteractionsendfakedisposition.h"
-#include <QTest>
 #include <QComboBox>
+#include <QTest>
 
 FilterActionSendFakeDispositionTest::FilterActionSendFakeDispositionTest(QObject *parent)
     : QObject(parent)

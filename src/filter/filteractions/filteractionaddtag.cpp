@@ -6,8 +6,8 @@
  */
 
 #include "filteractionaddtag.h"
-#include "filter/filtermanager.h"
 #include "filter/dialog/filteractionmissingtagdialog.h"
+#include "filter/filtermanager.h"
 
 #include <QComboBox>
 

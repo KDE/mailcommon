@@ -10,12 +10,12 @@
 #include <KConfigGroup>
 #include <KSharedConfig>
 
-#include <entitytreemodel.h>
-#include <control.h>
-#include <qtest_akonadi.h>
-#include <favoritecollectionsmodel.h>
-#include <favoritecollectionorderproxymodel.h>
 #include <changerecorder.h>
+#include <control.h>
+#include <entitytreemodel.h>
+#include <favoritecollectionorderproxymodel.h>
+#include <favoritecollectionsmodel.h>
+#include <qtest_akonadi.h>
 
 using namespace Akonadi;
 using namespace MailCommon;
@@ -27,6 +27,7 @@ class FavoriteProxyTest : public QObject
 private Q_SLOTS:
     void initTestCase();
     void testReordering();
+
 private:
     EntityTreeModel *createETM();
 };
@@ -82,7 +83,7 @@ void FavoriteProxyTest::testReordering()
     QList<Collection::Id> collectionIds;
     QStringList labels;
     QStringList order;
-    for (const QString &folderName : { QStringLiteral("res2"), QStringLiteral("res3") }) {
+    for (const QString &folderName : {QStringLiteral("res2"), QStringLiteral("res3")}) {
         const QModelIndex index = getIndex(folderName, model);
         QVERIFY(index.isValid());
         const Akonadi::Collection favoriteCollection = index.data(EntityTreeModel::CollectionRole).value<Akonadi::Collection>();

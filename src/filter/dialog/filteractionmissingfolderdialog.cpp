@@ -9,8 +9,8 @@
 #include "filter/kmfilteraccountlist.h"
 #include "folder/folderrequester.h"
 #include "kernel/mailkernel.h"
-#include "util/mailutil.h"
 #include "tag/addtagdialog.h"
+#include "util/mailutil.h"
 
 #include <EntityMimeTypeFilterModel>
 
@@ -18,15 +18,17 @@
 
 #include <KLocalizedString>
 
-#include <QVBoxLayout>
-#include <QLabel>
-#include <QListWidget>
 #include <KConfigGroup>
 #include <QDialogButtonBox>
+#include <QLabel>
+#include <QListWidget>
 #include <QPushButton>
+#include <QVBoxLayout>
 
-FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(
-    const Akonadi::Collection::List &list, const QString &filtername, const QString &argStr, QWidget *parent)
+FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(const Akonadi::Collection::List &list,
+                                                                 const QString &filtername,
+                                                                 const QString &argStr,
+                                                                 QWidget *parent)
     : QDialog(parent)
 {
     setModal(true);
@@ -61,9 +63,10 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(
     if (filtername.isEmpty()) {
         label->setText(i18n("Please select a folder"));
     } else {
-        label->setText(i18n("Filter folder is missing. "
-                            "Please select a folder to use with filter \"%1\"",
-                            filtername));
+        label->setText(
+            i18n("Filter folder is missing. "
+                 "Please select a folder to use with filter \"%1\"",
+                 filtername));
     }
     mainLayout->addWidget(label);
     mFolderRequester = new MailCommon::FolderRequester(this);
@@ -115,8 +118,7 @@ void FilterActionMissingFolderDialog::slotDoubleItemClicked(QListWidgetItem *ite
         return;
     }
 
-    const Akonadi::Collection::Id id
-        = item->data(FilterActionMissingFolderDialog::IdentifyCollection).toLongLong();
+    const Akonadi::Collection::Id id = item->data(FilterActionMissingFolderDialog::IdentifyCollection).toLongLong();
 
     mFolderRequester->setCollection(Akonadi::Collection(id));
     accept();
@@ -126,8 +128,7 @@ void FilterActionMissingFolderDialog::slotCurrentItemChanged()
 {
     QListWidgetItem *currentItem = mListwidget->currentItem();
     if (currentItem) {
-        const Akonadi::Collection::Id id
-            = currentItem->data(FilterActionMissingFolderDialog::IdentifyCollection).toLongLong();
+        const Akonadi::Collection::Id id = currentItem->data(FilterActionMissingFolderDialog::IdentifyCollection).toLongLong();
         mFolderRequester->setCollection(Akonadi::Collection(id));
     }
 }
@@ -137,7 +138,10 @@ Akonadi::Collection FilterActionMissingFolderDialog::selectedCollection() const
     return mFolderRequester->collection();
 }
 
-void FilterActionMissingFolderDialog::getPotentialFolders(const QAbstractItemModel *model, const QModelIndex &parentIndex, const QString &lastElement, Akonadi::Collection::List &list)
+void FilterActionMissingFolderDialog::getPotentialFolders(const QAbstractItemModel *model,
+                                                          const QModelIndex &parentIndex,
+                                                          const QString &lastElement,
+                                                          Akonadi::Collection::List &list)
 {
     const int rowCount = model->rowCount(parentIndex);
     for (int row = 0; row < rowCount; ++row) {
@@ -146,14 +150,12 @@ void FilterActionMissingFolderDialog::getPotentialFolders(const QAbstractItemMod
             getPotentialFolders(model, index, lastElement, list);
         }
         if (model->data(index).toString() == lastElement) {
-            list << model->data(
-                index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+            list << model->data(index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         }
     }
 }
 
-Akonadi::Collection::List FilterActionMissingFolderDialog::potentialCorrectFolders(
-    const QString &path, bool &exactPath)
+Akonadi::Collection::List FilterActionMissingFolderDialog::potentialCorrectFolders(const QString &path, bool &exactPath)
 {
     Akonadi::Collection::List lst;
     const QString realPath = MailCommon::Util::realFolderPath(path);
@@ -170,8 +172,7 @@ Akonadi::Collection::List FilterActionMissingFolderDialog::potentialCorrectFolde
             lastElement = realPath.right(realPath.length() - lastSlash - 1);
         }
 
-        FilterActionMissingFolderDialog::getPotentialFolders(
-            KernelIf->collectionModel(), QModelIndex(), lastElement, lst);
+        FilterActionMissingFolderDialog::getPotentialFolders(KernelIf->collectionModel(), QModelIndex(), lastElement, lst);
 
         const int numberOfItems(lst.count());
         for (int i = 0; i < numberOfItems; ++i) {

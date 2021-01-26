@@ -7,9 +7,9 @@
 
 #include "filteractionaddheader.h"
 
+#include <KComboBox>
 #include <KLineEdit>
 #include <KLocalizedString>
-#include <KComboBox>
 
 #include <QComboBox>
 #include <QHBoxLayout>
@@ -20,12 +20,8 @@ using namespace MailCommon;
 FilterActionAddHeader::FilterActionAddHeader(QObject *parent)
     : FilterActionWithStringList(QStringLiteral("add header"), i18n("Add Header"), parent)
 {
-    mParameterList << QString()
-                   << QStringLiteral("Reply-To")
-                   << QStringLiteral("Delivered-To")
-                   << QStringLiteral("X-KDE-PR-Message")
-                   << QStringLiteral("X-KDE-PR-Package")
-                   << QStringLiteral("X-KDE-PR-Keywords");
+    mParameterList << QString() << QStringLiteral("Reply-To") << QStringLiteral("Delivered-To") << QStringLiteral("X-KDE-PR-Message")
+                   << QStringLiteral("X-KDE-PR-Package") << QStringLiteral("X-KDE-PR-Keywords");
 
     mParameter = mParameterList.at(0);
 }
@@ -90,8 +86,7 @@ QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
 
     setParamWidgetValue(widget);
     connect(comboBox, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &FilterActionAddHeader::filterActionModified);
-    connect(comboBox->lineEdit(), &QLineEdit::textChanged,
-            this, &FilterAction::filterActionModified);
+    connect(comboBox->lineEdit(), &QLineEdit::textChanged, this, &FilterAction::filterActionModified);
     connect(lineEdit, &QLineEdit::textChanged, this, &FilterActionAddHeader::filterActionModified);
 
     return widget;
@@ -165,11 +160,11 @@ void FilterActionAddHeader::argsFromString(const QString &argsStr)
     const QStringList list = argsStr.split(QLatin1Char('\t'));
     QString result;
     if (list.count() < 2) {
-        result = list[ 0 ];
+        result = list[0];
         mValue.clear();
     } else {
-        result = list[ 0 ];
-        mValue = list[ 1 ];
+        result = list[0];
+        mValue = list[1];
     }
 
     int index = mParameterList.indexOf(result);

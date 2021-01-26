@@ -7,15 +7,17 @@
 #ifndef COLLECTIONGENERALWIDGET_H
 #define COLLECTIONGENERALWIDGET_H
 
-#include <QWidget>
 #include "mailcommon_export.h"
 #include <AkonadiCore/Collection>
+#include <QWidget>
 class QCheckBox;
 class QVBoxLayout;
-namespace KIdentityManagement {
+namespace KIdentityManagement
+{
 class IdentityCombo;
 }
-namespace MailCommon {
+namespace MailCommon
+{
 class FolderSettings;
 class MAILCOMMON_EXPORT CollectionGeneralWidget : public QWidget
 {
@@ -25,6 +27,7 @@ public:
     ~CollectionGeneralWidget();
     void save(Akonadi::Collection &);
     void load(const Akonadi::Collection &col);
+
 private:
     void addLine(QWidget *parent, QVBoxLayout *layout);
     void slotIdentityCheckboxChanged();

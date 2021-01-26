@@ -16,8 +16,8 @@ int main(int argc, char **argv)
     QApplication app(argc, argv);
     QStandardPaths::setTestModeEnabled(true);
     auto kernel = new DummyKernel(nullptr);
-    CommonKernel->registerKernelIf(kernel);   //register KernelIf early, it is used by the Filter classes
-    CommonKernel->registerSettingsIf(kernel);   //SettingsIf is used in FolderTreeWidget
+    CommonKernel->registerKernelIf(kernel); // register KernelIf early, it is used by the Filter classes
+    CommonKernel->registerSettingsIf(kernel); // SettingsIf is used in FolderTreeWidget
 
     QList<KActionCollection *> lstAction;
     auto dlg = new MailCommon::KMFilterDialog(lstAction, nullptr, true);

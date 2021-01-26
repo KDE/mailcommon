@@ -8,17 +8,17 @@
 
 #include <Libkdepim/LineEditCatchReturnKey>
 
-#include <QVBoxLayout>
-#include <QGridLayout>
-#include <QLabel>
-#include <QCheckBox>
+#include <KActionCollection>
 #include <KColorCombo>
 #include <KIconButton>
 #include <KKeySequenceWidget>
-#include <KActionCollection>
-#include <QLineEdit>
 #include <KLocalizedString>
+#include <QCheckBox>
+#include <QGridLayout>
 #include <QIcon>
+#include <QLabel>
+#include <QLineEdit>
+#include <QVBoxLayout>
 using namespace MailCommon;
 class MailCommon::TagWidgetPrivate
 {
@@ -52,26 +52,24 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     auto settings = new QGridLayout(this);
     settings->setContentsMargins(0, 0, 0, 0);
 
-    //Stretcher layout for adding some space after the label
+    // Stretcher layout for adding some space after the label
     auto spacer = new QVBoxLayout();
     settings->addLayout(spacer, 0, 0, 1, 2);
 
-    //First row for renaming
+    // First row for renaming
     d->mTagNameLineEdit = new QLineEdit(this);
     d->mTagNameLineEdit->setClearButtonEnabled(true);
     new KPIM::LineEditCatchReturnKey(d->mTagNameLineEdit, this);
     settings->addWidget(d->mTagNameLineEdit, 1, 1);
 
-    auto namelabel = new QLabel(i18nc("@label:listbox Name of the tag", "Name:"),
-                                   this);
+    auto namelabel = new QLabel(i18nc("@label:listbox Name of the tag", "Name:"), this);
     namelabel->setBuddy(d->mTagNameLineEdit);
     settings->addWidget(namelabel, 1, 0);
 
     connect(d->mTagNameLineEdit, &QLineEdit::textChanged, this, &TagWidget::slotEmitChangeCheck);
 
-    //Second row for text color
-    d->mTextColorCheck = new QCheckBox(i18n("Change te&xt color:"),
-                                       this);
+    // Second row for text color
+    d->mTextColorCheck = new QCheckBox(i18n("Change te&xt color:"), this);
     settings->addWidget(d->mTextColorCheck, 2, 0);
 
     d->mTextColorCombo = new KColorCombo(this);
@@ -79,28 +77,22 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     d->mTextColorCombo->setEnabled(false);
 
     connect(d->mTextColorCheck, &QCheckBox::toggled, d->mTextColorCombo, &KColorCombo::setEnabled);
-    connect(d->mTextColorCheck, &QCheckBox::stateChanged,
-            this, &TagWidget::slotEmitChangeCheck);
-    connect(d->mTextColorCombo, &KColorCombo::activated,
-            this, &TagWidget::slotEmitChangeCheck);
+    connect(d->mTextColorCheck, &QCheckBox::stateChanged, this, &TagWidget::slotEmitChangeCheck);
+    connect(d->mTextColorCombo, &KColorCombo::activated, this, &TagWidget::slotEmitChangeCheck);
 
-    //Third row for text background color
-    d->mBackgroundColorCheck = new QCheckBox(i18n("Change &background color:"),
-                                             this);
+    // Third row for text background color
+    d->mBackgroundColorCheck = new QCheckBox(i18n("Change &background color:"), this);
     settings->addWidget(d->mBackgroundColorCheck, 3, 0);
 
     d->mBackgroundColorCombo = new KColorCombo(this);
     settings->addWidget(d->mBackgroundColorCombo, 3, 1);
     d->mBackgroundColorCombo->setEnabled(false);
 
-    connect(d->mBackgroundColorCheck, &QAbstractButton::toggled,
-            d->mBackgroundColorCombo, &QWidget::setEnabled);
-    connect(d->mBackgroundColorCheck, &QCheckBox::stateChanged,
-            this, &TagWidget::slotEmitChangeCheck);
-    connect(d->mBackgroundColorCombo, &KColorCombo::activated,
-            this, &TagWidget::slotEmitChangeCheck);
+    connect(d->mBackgroundColorCheck, &QAbstractButton::toggled, d->mBackgroundColorCombo, &QWidget::setEnabled);
+    connect(d->mBackgroundColorCheck, &QCheckBox::stateChanged, this, &TagWidget::slotEmitChangeCheck);
+    connect(d->mBackgroundColorCombo, &KColorCombo::activated, this, &TagWidget::slotEmitChangeCheck);
 
-    //Fourth for font selection
+    // Fourth for font selection
     d->mTextFontCheck = new QCheckBox(i18n("Change fo&nt:"), this);
     settings->addWidget(d->mTextFontCheck, 4, 0);
 
@@ -115,37 +107,29 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     d->mItalicCheckBox->setEnabled(false);
     fontLayout->addWidget(d->mItalicCheckBox);
 
-    connect(d->mTextFontCheck, &QAbstractButton::toggled,
-            d->mBoldCheckBox, &QWidget::setEnabled);
-    connect(d->mTextFontCheck, &QAbstractButton::toggled,
-            d->mItalicCheckBox, &QWidget::setEnabled);
-    connect(d->mTextFontCheck, &QCheckBox::stateChanged,
-            this, &TagWidget::slotEmitChangeCheck);
-    connect(d->mBoldCheckBox, &QAbstractButton::toggled,
-            this, &TagWidget::slotEmitChangeCheck);
-    connect(d->mItalicCheckBox, &QAbstractButton::toggled,
-            this, &TagWidget::slotEmitChangeCheck);
+    connect(d->mTextFontCheck, &QAbstractButton::toggled, d->mBoldCheckBox, &QWidget::setEnabled);
+    connect(d->mTextFontCheck, &QAbstractButton::toggled, d->mItalicCheckBox, &QWidget::setEnabled);
+    connect(d->mTextFontCheck, &QCheckBox::stateChanged, this, &TagWidget::slotEmitChangeCheck);
+    connect(d->mBoldCheckBox, &QAbstractButton::toggled, this, &TagWidget::slotEmitChangeCheck);
+    connect(d->mItalicCheckBox, &QAbstractButton::toggled, this, &TagWidget::slotEmitChangeCheck);
 
-    //Fifth for toolbar icon
+    // Fifth for toolbar icon
     d->mIconButton = new KIconButton(this);
     d->mIconButton->setIconSize(16);
     d->mIconButton->setIconType(KIconLoader::NoGroup, KIconLoader::Action);
     d->mIconButton->setIcon(QIcon::fromTheme(QStringLiteral("mail-tagged")));
     settings->addWidget(d->mIconButton, 5, 1);
-    connect(d->mIconButton, &KIconButton::iconChanged,
-            this, &TagWidget::iconNameChanged);
+    connect(d->mIconButton, &KIconButton::iconChanged, this, &TagWidget::iconNameChanged);
 
-    auto iconlabel = new QLabel(i18n("Message tag &icon:"),
-                                   this);
+    auto iconlabel = new QLabel(i18n("Message tag &icon:"), this);
     iconlabel->setBuddy(d->mIconButton);
     settings->addWidget(iconlabel, 5, 0);
 
-    //We do not connect the checkbox to icon selector since icons are used in the
-    //menus as well
-    connect(d->mIconButton, &KIconButton::iconChanged,
-            this, &TagWidget::slotEmitChangeCheck);
+    // We do not connect the checkbox to icon selector since icons are used in the
+    // menus as well
+    connect(d->mIconButton, &KIconButton::iconChanged, this, &TagWidget::slotEmitChangeCheck);
 
-    //Sixth for shortcut
+    // Sixth for shortcut
     d->mKeySequenceWidget = new KKeySequenceWidget(this);
     settings->addWidget(d->mKeySequenceWidget, 6, 1);
     auto sclabel = new QLabel(i18n("Shortc&ut:"), this);
@@ -153,18 +137,15 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     settings->addWidget(sclabel, 6, 0);
     if (!actionCollections.isEmpty()) {
         d->mKeySequenceWidget->setCheckActionCollections(actionCollections);
-        connect(d->mKeySequenceWidget, &KKeySequenceWidget::keySequenceChanged,
-                this, &TagWidget::slotEmitChangeCheck);
+        connect(d->mKeySequenceWidget, &KKeySequenceWidget::keySequenceChanged, this, &TagWidget::slotEmitChangeCheck);
     } else {
         d->mKeySequenceWidget->setEnabled(false);
     }
 
-    //Seventh for Toolbar checkbox
-    d->mInToolbarCheck = new QCheckBox(i18n("Enable &toolbar button"),
-                                       this);
+    // Seventh for Toolbar checkbox
+    d->mInToolbarCheck = new QCheckBox(i18n("Enable &toolbar button"), this);
     settings->addWidget(d->mInToolbarCheck, 7, 0);
-    connect(d->mInToolbarCheck, &QCheckBox::stateChanged,
-            this, &TagWidget::slotEmitChangeCheck);
+    connect(d->mInToolbarCheck, &QCheckBox::stateChanged, this, &TagWidget::slotEmitChangeCheck);
 }
 
 TagWidget::~TagWidget()
