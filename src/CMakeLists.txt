@@ -234,6 +234,7 @@ qt5_add_dbus_interfaces(libmailcommon_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/dbusinter
 add_library(KF5MailCommon ${libmailcommon_SRCS})
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KF5MailCommon PROPERTIES UNITY_BUILD ON)
+    set_source_files_properties(${libmailcommon_search_SRCS} PROPERTIES SKIP_UNITY_BUILD_INCLUSION ON)
 endif()
 generate_export_header(KF5MailCommon BASE_NAME mailcommon)
 
