@@ -90,8 +90,6 @@ set_package_properties(Xsltproc PROPERTIES DESCRIPTION "XSLT processor from libx
 
 ########### Targets ###########
 remove_definitions( -DQT_NO_CAST_FROM_ASCII )
-add_definitions(-DQT_NO_FOREACH)
-add_definitions(-DQT_NO_KEYWORDS)
 option(KDEPIM_RUN_AKONADI_TEST "Enable autotest based on Akonadi." TRUE)
 
 # Not supported yet
