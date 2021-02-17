@@ -14,7 +14,7 @@ class SnippetSelectAttachmentDialogTest : public QObject
     Q_OBJECT
 public:
     explicit SnippetSelectAttachmentDialogTest(QObject *parent = nullptr);
-    ~SnippetSelectAttachmentDialogTest() = default;
+    ~SnippetSelectAttachmentDialogTest() override = default;
 private Q_SLOTS:
     void shouldHaveDefaultValues();
 };

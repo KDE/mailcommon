@@ -14,7 +14,7 @@ class SnippetCustomFileAttachmentNameWidgetTest : public QObject
     Q_OBJECT
 public:
     explicit SnippetCustomFileAttachmentNameWidgetTest(QObject *parent = nullptr);
-    ~SnippetCustomFileAttachmentNameWidgetTest() = default;
+    ~SnippetCustomFileAttachmentNameWidgetTest() override = default;
 private Q_SLOTS:
     void shouldHaveDefaultValues();
 };

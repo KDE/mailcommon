@@ -14,7 +14,7 @@ class SnippetWidgetTest : public QObject
     Q_OBJECT
 public:
     explicit SnippetWidgetTest(QObject *parent = nullptr);
-    ~SnippetWidgetTest() = default;
+    ~SnippetWidgetTest() override = default;
 private Q_SLOTS:
     void shouldHaveDefaultValues();
     void shouldClearWidget();

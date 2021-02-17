@@ -14,7 +14,7 @@ class SnippetSelectAttachmentWidgetTest : public QObject
     Q_OBJECT
 public:
     explicit SnippetSelectAttachmentWidgetTest(QObject *parent = nullptr);
-    ~SnippetSelectAttachmentWidgetTest() = default;
+    ~SnippetSelectAttachmentWidgetTest() override = default;
 private Q_SLOTS:
     void shouldHaveDefaultValues();
 };
