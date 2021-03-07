@@ -37,7 +37,7 @@ class MAILCOMMON_EXPORT FolderCollectionMonitor : public QObject
 
 public:
     explicit FolderCollectionMonitor(Akonadi::Session *session, QObject *parent = nullptr);
-    ~FolderCollectionMonitor();
+    ~FolderCollectionMonitor() override;
 
     Q_REQUIRED_RESULT Akonadi::ChangeRecorder *monitor() const;
     void expireAllFolders(bool immediate, QAbstractItemModel *collectionModel);

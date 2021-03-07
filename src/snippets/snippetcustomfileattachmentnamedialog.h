@@ -18,7 +18,7 @@ class MAILCOMMON_TESTS_EXPORT SnippetCustomFileAttachmentNameDialog : public QDi
     Q_OBJECT
 public:
     explicit SnippetCustomFileAttachmentNameDialog(QWidget *parent = nullptr);
-    ~SnippetCustomFileAttachmentNameDialog();
+    ~SnippetCustomFileAttachmentNameDialog() override;
 
     Q_REQUIRED_RESULT QString result() const;
 

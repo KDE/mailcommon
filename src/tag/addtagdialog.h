@@ -24,7 +24,7 @@ class MAILCOMMON_EXPORT AddTagDialog : public QDialog
     Q_OBJECT
 public:
     explicit AddTagDialog(const QList<KActionCollection *> &actions, QWidget *parent = nullptr);
-    ~AddTagDialog();
+    ~AddTagDialog() override;
 
     void setTags(const QVector<MailCommon::Tag::Ptr> &tags);
     Q_REQUIRED_RESULT QString label() const;

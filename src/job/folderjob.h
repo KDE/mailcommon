@@ -23,7 +23,7 @@ class MAILCOMMON_EXPORT FolderJob : public QObject
 public:
     explicit FolderJob(QObject *parent = nullptr);
 
-    virtual ~FolderJob();
+    ~FolderJob() override;
 
     /**
      * Start the job

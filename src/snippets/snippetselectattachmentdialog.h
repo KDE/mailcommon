@@ -17,7 +17,7 @@ class MAILCOMMON_TESTS_EXPORT SnippetSelectAttachmentDialog : public QDialog
     Q_OBJECT
 public:
     explicit SnippetSelectAttachmentDialog(QWidget *parent = nullptr);
-    ~SnippetSelectAttachmentDialog();
+    ~SnippetSelectAttachmentDialog() override;
 
     void setAttachments(const QStringList &lst);
     Q_REQUIRED_RESULT QStringList attachments() const;

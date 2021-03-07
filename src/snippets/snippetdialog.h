@@ -27,7 +27,7 @@ class SnippetDialog : public QDialog
 
 public:
     explicit SnippetDialog(KActionCollection *actionCollection, bool inGroupMode, QWidget *parent = nullptr);
-    ~SnippetDialog();
+    ~SnippetDialog() override;
 
     void setName(const QString &name);
     Q_REQUIRED_RESULT QString name() const;

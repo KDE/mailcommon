@@ -47,7 +47,7 @@ private:
     {
     }
 
-    virtual ~MDNAdviceHelper()
+    ~MDNAdviceHelper() override
     {
     }
 

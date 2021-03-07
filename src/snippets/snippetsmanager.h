@@ -64,7 +64,7 @@ public:
     /**
      * Destroys the snippets manager.
      */
-    ~SnippetsManager();
+    ~SnippetsManager() override;
     /**
      * Returns the model that represents the snippets.
      */

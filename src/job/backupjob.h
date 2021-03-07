@@ -48,7 +48,7 @@ public:
     enum ArchiveType { Zip = 0, Tar = 1, TarBz2 = 2, TarGz = 3 };
 
     explicit BackupJob(QWidget *parent = nullptr);
-    ~BackupJob();
+    ~BackupJob() override;
 
     void setRootFolder(const Akonadi::Collection &rootFolder);
     void setSaveLocation(const QUrl &savePath);

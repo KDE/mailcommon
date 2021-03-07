@@ -84,7 +84,7 @@ public:
                                SearchPatternEditOptions options = (SearchPatternEditOptions)(None),
                                SearchModeType modeType = StandardMode);
 
-    ~SearchPatternEdit();
+    ~SearchPatternEdit() override;
 
     void setPatternEditOptions(SearchPatternEdit::SearchPatternEditOptions options);
 

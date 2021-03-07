@@ -33,7 +33,7 @@ public:
     /**
      * Destroys the sound test widget.
      */
-    ~SoundTestWidget();
+    ~SoundTestWidget() override;
 
     /**
      * Sets the @p url of the sound file to play.

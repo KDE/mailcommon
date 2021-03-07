@@ -19,7 +19,7 @@ class MAILCOMMON_TESTS_EXPORT SnippetAttachmentWidget : public QWidget
     Q_OBJECT
 public:
     explicit SnippetAttachmentWidget(QWidget *parent = nullptr);
-    ~SnippetAttachmentWidget();
+    ~SnippetAttachmentWidget() override;
     void setText(const QString &str);
     Q_REQUIRED_RESULT QString text() const;
     void clear();

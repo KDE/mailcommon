@@ -29,7 +29,7 @@ class MAILCOMMON_EXPORT CollectionViewWidget : public QWidget
     Q_OBJECT
 public:
     explicit CollectionViewWidget(QWidget *parent = nullptr);
-    ~CollectionViewWidget();
+    ~CollectionViewWidget() override;
     void load(const Akonadi::Collection &col);
     void save(Akonadi::Collection &col);
 

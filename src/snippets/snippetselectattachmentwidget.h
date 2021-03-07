@@ -32,7 +32,7 @@ class MAILCOMMON_TESTS_EXPORT SnippetSelectAttachmentWidget : public QWidget
     Q_OBJECT
 public:
     explicit SnippetSelectAttachmentWidget(QWidget *parent = nullptr);
-    ~SnippetSelectAttachmentWidget();
+    ~SnippetSelectAttachmentWidget() override;
 
     void setAttachments(const QStringList &lst);
     Q_REQUIRED_RESULT QStringList attachments() const;

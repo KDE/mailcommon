@@ -47,7 +47,7 @@ class QListWidgetFilterItem : public QListWidgetItem
 {
 public:
     explicit QListWidgetFilterItem(const QString &text, QListWidget *parent = nullptr);
-    ~QListWidgetFilterItem();
+    ~QListWidgetFilterItem() override;
 
     void setFilter(MailCommon::MailFilter *filter);
     MailCommon::MailFilter *filter();

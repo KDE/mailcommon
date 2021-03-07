@@ -24,7 +24,7 @@ class MAILCOMMON_EXPORT CollectionGeneralWidget : public QWidget
     Q_OBJECT
 public:
     explicit CollectionGeneralWidget(QWidget *parent = nullptr);
-    ~CollectionGeneralWidget();
+    ~CollectionGeneralWidget() override;
     void save(Akonadi::Collection &);
     void load(const Akonadi::Collection &col);
 

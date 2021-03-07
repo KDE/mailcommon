@@ -41,7 +41,7 @@ class MAILCOMMON_EXPORT CollectionExpiryWidget : public QWidget
     Q_OBJECT
 public:
     explicit CollectionExpiryWidget(QWidget *parent = nullptr);
-    ~CollectionExpiryWidget();
+    ~CollectionExpiryWidget() override;
 
     void load(const MailCommon::CollectionExpirySettings &settings);
     void save(Akonadi::Collection &collection, bool saveSettings, bool expireNow);

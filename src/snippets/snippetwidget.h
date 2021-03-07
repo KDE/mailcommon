@@ -23,7 +23,7 @@ class MAILCOMMON_EXPORT SnippetWidget : public QWidget
     Q_OBJECT
 public:
     explicit SnippetWidget(QWidget *parent = nullptr);
-    ~SnippetWidget();
+    ~SnippetWidget() override;
 
     void setName(const QString &name);
     Q_REQUIRED_RESULT QString name() const;

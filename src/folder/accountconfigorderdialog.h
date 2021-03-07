@@ -23,7 +23,7 @@ class MAILCOMMON_EXPORT AccountConfigOrderDialog : public QDialog
     Q_OBJECT
 public:
     explicit AccountConfigOrderDialog(MailCommon::MailCommonSettings *settings, QWidget *parent);
-    ~AccountConfigOrderDialog();
+    ~AccountConfigOrderDialog() override;
 
 private:
     void slotOk();

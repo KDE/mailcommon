@@ -27,7 +27,7 @@ class MAILCOMMON_EXPORT CollectionTemplatesWidget : public QWidget
     Q_OBJECT
 public:
     explicit CollectionTemplatesWidget(QWidget *parent = nullptr);
-    ~CollectionTemplatesWidget();
+    ~CollectionTemplatesWidget() override;
     void save(Akonadi::Collection &);
     void load(const Akonadi::Collection &col);
 

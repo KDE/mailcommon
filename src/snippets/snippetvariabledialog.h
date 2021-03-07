@@ -25,7 +25,7 @@ class SnippetVariableDialog : public QDialog
 
 public:
     explicit SnippetVariableDialog(const QString &variableName, QMap<QString, QString> *variables, QWidget *parent = nullptr);
-    ~SnippetVariableDialog();
+    ~SnippetVariableDialog() override;
 
     Q_REQUIRED_RESULT QString variableValue() const;
     Q_REQUIRED_RESULT bool saveVariableIsChecked() const;

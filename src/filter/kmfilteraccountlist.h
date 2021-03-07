@@ -19,7 +19,7 @@ class MAILCOMMON_TESTS_EXPORT KMFilterAccountList : public QTreeWidget
     Q_OBJECT
 public:
     explicit KMFilterAccountList(QWidget *parent);
-    ~KMFilterAccountList();
+    ~KMFilterAccountList() override;
 
     void updateAccountList(MailCommon::MailFilter *filter);
     void applyOnAccount(MailCommon::MailFilter *filter);

@@ -21,7 +21,7 @@ class MAILCOMMON_EXPORT MDNAdviceDialog : public QDialog
 
 public:
     explicit MDNAdviceDialog(const QString &text, bool canDeny, QWidget *parent = nullptr);
-    ~MDNAdviceDialog();
+    ~MDNAdviceDialog() override;
 
     Q_REQUIRED_RESULT MessageComposer::MDNAdvice result() const;
 

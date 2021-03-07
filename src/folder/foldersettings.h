@@ -33,7 +33,7 @@ class MAILCOMMON_EXPORT FolderSettings : public QObject
 public:
     static QSharedPointer<FolderSettings> forCollection(const Akonadi::Collection &coll, bool writeConfig = true);
 
-    ~FolderSettings();
+    ~FolderSettings() override;
 
     void setCollection(const Akonadi::Collection &collection);
 
