@@ -50,7 +50,7 @@ SnippetCustomFileAttachmentNameDialog::~SnippetCustomFileAttachmentNameDialog()
 
 void SnippetCustomFileAttachmentNameDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), mySnippetCustomFileAttachmentNameDialogGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetCustomFileAttachmentNameDialogGroupName);
 
     const QSize size = group.readEntry("Size", QSize(500, 150));
     if (size.isValid()) {
@@ -60,7 +60,7 @@ void SnippetCustomFileAttachmentNameDialog::readConfig()
 
 void SnippetCustomFileAttachmentNameDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), mySnippetCustomFileAttachmentNameDialogGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetCustomFileAttachmentNameDialogGroupName);
     group.writeEntry("Size", size());
 }
 

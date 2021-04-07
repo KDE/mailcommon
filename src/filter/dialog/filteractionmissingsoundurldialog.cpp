@@ -65,7 +65,7 @@ QString FilterActionMissingSoundUrlDialog::soundUrl() const
 
 void FilterActionMissingSoundUrlDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingSoundUrlDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingSoundUrlDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -75,6 +75,6 @@ void FilterActionMissingSoundUrlDialog::readConfig()
 
 void FilterActionMissingSoundUrlDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingSoundUrlDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingSoundUrlDialog");
     group.writeEntry("Size", size());
 }

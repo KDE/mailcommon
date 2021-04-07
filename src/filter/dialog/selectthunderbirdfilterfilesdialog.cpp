@@ -55,7 +55,7 @@ void SelectThunderbirdFilterFilesDialog::setStartDir(const QUrl &url)
 
 void SelectThunderbirdFilterFilesDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "SelectThunderbirdFilterFilesDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "SelectThunderbirdFilterFilesDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -65,6 +65,6 @@ void SelectThunderbirdFilterFilesDialog::readConfig()
 
 void SelectThunderbirdFilterFilesDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "SelectThunderbirdFilterFilesDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "SelectThunderbirdFilterFilesDialog");
     group.writeEntry("Size", size());
 }

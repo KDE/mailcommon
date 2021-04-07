@@ -96,13 +96,13 @@ void SnippetVariableDialog::slotAccepted()
 
 void SnippetVariableDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), myConfigGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), myConfigGroupName);
     group.writeEntry("Size", size());
 }
 
 void SnippetVariableDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), myConfigGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), myConfigGroupName);
     const QSize sizeDialog = group.readEntry("Size", QSize(300, 350));
     if (sizeDialog.isValid()) {
         resize(sizeDialog);

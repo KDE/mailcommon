@@ -93,7 +93,7 @@ FilterActionMissingFolderDialog::~FilterActionMissingFolderDialog()
 
 void FilterActionMissingFolderDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingCollectionDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingCollectionDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -103,7 +103,7 @@ void FilterActionMissingFolderDialog::readConfig()
 
 void FilterActionMissingFolderDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingCollectionDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingCollectionDialog");
     group.writeEntry("Size", size());
 }
 

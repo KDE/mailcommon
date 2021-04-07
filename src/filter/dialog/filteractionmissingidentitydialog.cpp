@@ -59,7 +59,7 @@ FilterActionMissingIdentityDialog::~FilterActionMissingIdentityDialog()
 
 void FilterActionMissingIdentityDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingMissingIdentity");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingMissingIdentity");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -69,7 +69,7 @@ void FilterActionMissingIdentityDialog::readConfig()
 
 void FilterActionMissingIdentityDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingMissingIdentity");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingMissingIdentity");
     group.writeEntry("Size", size());
 }
 

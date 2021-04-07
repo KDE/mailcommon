@@ -80,7 +80,7 @@ FilterActionMissingTagDialog::~FilterActionMissingTagDialog()
 
 void FilterActionMissingTagDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingTagDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingTagDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -90,7 +90,7 @@ void FilterActionMissingTagDialog::readConfig()
 
 void FilterActionMissingTagDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingTagDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingTagDialog");
     group.writeEntry("Size", size());
 }
 

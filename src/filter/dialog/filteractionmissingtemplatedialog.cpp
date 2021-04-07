@@ -57,7 +57,7 @@ FilterActionMissingTemplateDialog::~FilterActionMissingTemplateDialog()
 
 void FilterActionMissingTemplateDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingTemplateDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingTemplateDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -67,7 +67,7 @@ void FilterActionMissingTemplateDialog::readConfig()
 
 void FilterActionMissingTemplateDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingTemplateDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingTemplateDialog");
     group.writeEntry("Size", size());
 }
 

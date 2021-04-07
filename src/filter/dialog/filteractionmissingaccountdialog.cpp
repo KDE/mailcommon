@@ -57,7 +57,7 @@ FilterActionMissingAccountDialog::~FilterActionMissingAccountDialog()
 
 void FilterActionMissingAccountDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingAccountDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingAccountDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -67,7 +67,7 @@ void FilterActionMissingAccountDialog::readConfig()
 
 void FilterActionMissingAccountDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingAccountDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingAccountDialog");
     group.writeEntry("Size", size());
 }
 

@@ -62,13 +62,13 @@ void InvalidFilterDialog::setInvalidFilters(const QVector<InvalidFilterInfo> &ls
 
 void InvalidFilterDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "InvalidFilterDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "InvalidFilterDialog");
     group.writeEntry("Size", size());
 }
 
 void InvalidFilterDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "InvalidFilterDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "InvalidFilterDialog");
     const QSize sizeDialog = group.readEntry("Size", QSize(400, 500));
     if (sizeDialog.isValid()) {
         resize(sizeDialog);

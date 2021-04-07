@@ -54,7 +54,7 @@ FilterActionMissingTransportDialog::~FilterActionMissingTransportDialog()
 
 void FilterActionMissingTransportDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingTransportDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingTransportDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -64,7 +64,7 @@ void FilterActionMissingTransportDialog::readConfig()
 
 void FilterActionMissingTransportDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterActionMissingTransportDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingTransportDialog");
     group.writeEntry("Size", size());
 }
 

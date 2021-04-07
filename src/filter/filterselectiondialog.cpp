@@ -70,13 +70,13 @@ void FilterSelectionDialog::reject()
 
 void FilterSelectionDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterSelectionDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterSelectionDialog");
     group.writeEntry("Size", size());
 }
 
 void FilterSelectionDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "FilterSelectionDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterSelectionDialog");
     const QSize sizeDialog = group.readEntry("Size", QSize(300, 350));
     if (sizeDialog.isValid()) {
         resize(sizeDialog);

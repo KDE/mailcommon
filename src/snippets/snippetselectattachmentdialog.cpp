@@ -58,13 +58,13 @@ QStringList SnippetSelectAttachmentDialog::attachments() const
 
 void SnippetSelectAttachmentDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), mySnippetSelectAttachmentDialogGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetSelectAttachmentDialogGroupName);
     group.writeEntry("Size", size());
 }
 
 void SnippetSelectAttachmentDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), mySnippetSelectAttachmentDialogGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetSelectAttachmentDialogGroupName);
     const QSize sizeDialog = group.readEntry("Size", QSize(300, 350));
     if (sizeDialog.isValid()) {
         resize(sizeDialog);
