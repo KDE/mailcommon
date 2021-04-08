@@ -75,11 +75,7 @@ void SearchRuleDateTest::shouldMatchDate()
     MailCommon::SearchRuleDate searchrule("<date>", function, matchdate.toString(Qt::ISODate));
 
     KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
-    msgPtr->date(true)->setDateTime(QDateTime(maildate));
-#else
     msgPtr->date(true)->setDateTime(QDateTime(maildate.startOfDay()));
-#endif
 
     Akonadi::Item item;
     item.setPayload<KMime::Message::Ptr>(msgPtr);
