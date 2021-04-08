@@ -14,7 +14,6 @@
 
 class QWidget;
 class QStackedWidget;
-class QByteArray;
 class QString;
 class QObject;
 
