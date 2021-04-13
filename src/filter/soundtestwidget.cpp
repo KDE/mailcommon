@@ -62,10 +62,9 @@ void SoundTestWidget::openSoundDialog(KUrlRequester *)
     QFileDialog *fileDialog = m_urlRequester->fileDialog();
     fileDialog->setWindowTitle(i18nc("@title:window", "Select Sound File"));
 
-    QStringList filters;
-    filters << QStringLiteral("audio/x-wav") << QStringLiteral("audio/mpeg") << QStringLiteral("application/ogg") << QStringLiteral("audio/x-adpcm");
+    const QStringList filters{QStringLiteral("audio/x-wav"), QStringLiteral("application/ogg"), QStringLiteral("audio/x-adpcm")};
 
-    fileDialog->setMimeTypeFilters(filters);
+    m_urlRequester->setMimeTypeFilters(filters);
 
     const QStringList soundDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("sound/"), QStandardPaths::LocateDirectory);
 
@@ -78,7 +77,7 @@ void SoundTestWidget::openSoundDialog(KUrlRequester *)
             dir = soundDir;
             if (dir.isReadable() && dir.count() > 2) {
                 soundURL.setPath(soundDir);
-                fileDialog->setDirectoryUrl(soundURL);
+                m_urlRequester->setUrl(soundURL);
                 break;
             }
         }
