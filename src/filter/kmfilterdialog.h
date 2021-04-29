@@ -20,7 +20,6 @@
 
 #include <QDialog>
 
-#include <QGroupBox>
 #include <QList>
 
 class KActionCollection;
@@ -32,6 +31,7 @@ class QLabel;
 class QPushButton;
 class QRadioButton;
 class QPushButton;
+class QGroupBox;
 namespace MailCommon
 {
 class SearchPatternEdit;

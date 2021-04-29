@@ -46,6 +46,7 @@ using MailCommon::FilterImporterExporter;
 #include <QCheckBox>
 #include <QDialogButtonBox>
 #include <QGridLayout>
+#include <QGroupBox>
 #include <QHBoxLayout>
 #include <QKeyEvent>
 #include <QLabel>
