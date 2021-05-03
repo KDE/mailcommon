@@ -277,7 +277,7 @@ target_include_directories(KF5MailCommon PUBLIC "$<BUILD_INTERFACE:${mailcommon_
 
 
 set_target_properties(KF5MailCommon PROPERTIES
-    VERSION ${MAILCOMMON_VERSION_STRING}
+    VERSION ${MAILCOMMON_VERSION}
     SOVERSION ${MAILCOMMON_SOVERSION}
     EXPORT_NAME MailCommon
 )
