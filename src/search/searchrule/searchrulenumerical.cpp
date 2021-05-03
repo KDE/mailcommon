@@ -37,7 +37,7 @@ bool SearchRuleNumerical::matches(const Akonadi::Item &item) const
         return false;
     }
 
-    const KMime::Message::Ptr msg = item.payload<KMime::Message::Ptr>();
+    const auto msg = item.payload<KMime::Message::Ptr>();
 
     QString msgContents;
     qint64 numericalMsgContents = 0;

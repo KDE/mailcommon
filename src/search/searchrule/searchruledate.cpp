@@ -33,7 +33,7 @@ bool SearchRuleDate::matches(const Akonadi::Item &item) const
     if (!item.hasPayload<KMime::Message::Ptr>()) {
         return false;
     }
-    const KMime::Message::Ptr msg = item.payload<KMime::Message::Ptr>();
+    const auto msg = item.payload<KMime::Message::Ptr>();
 
     const QDate msgDate = msg->date()->dateTime().date();
     const QDate dateValue = QDate::fromString(contents(), Qt::ISODate);

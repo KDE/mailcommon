@@ -26,7 +26,7 @@ FilterAction::ReturnCode FilterActionReplyTo::process(ItemContext &context, bool
     if (mParameter.isEmpty()) {
         return ErrorButGoOn;
     }
-    const KMime::Message::Ptr msg = context.item().payload<KMime::Message::Ptr>();
+    const auto msg = context.item().payload<KMime::Message::Ptr>();
     const QByteArray replyTo("Reply-To");
     KMime::Headers::Base *header = KMime::Headers::createHeader(replyTo);
     if (!header) {

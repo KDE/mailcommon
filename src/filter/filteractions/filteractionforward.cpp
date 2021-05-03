@@ -43,7 +43,7 @@ FilterAction::ReturnCode FilterActionForward::process(ItemContext &context, bool
         return ErrorButGoOn;
     }
 
-    const KMime::Message::Ptr msg = context.item().payload<KMime::Message::Ptr>();
+    const auto msg = context.item().payload<KMime::Message::Ptr>();
     // avoid endless loops when this action is used in a filter
     // which applies to sent messages
     if (MessageCore::StringUtil::addressIsInAddressList(mParameter, QStringList(msg->to()->asUnicodeString()))) {

@@ -56,7 +56,7 @@ FilterAction::ReturnCode FilterActionRewriteHeader::process(ItemContext &context
         return ErrorButGoOn;
     }
 
-    const KMime::Message::Ptr msg = context.item().payload<KMime::Message::Ptr>();
+    const auto msg = context.item().payload<KMime::Message::Ptr>();
 
     const QByteArray param(mParameter.toLatin1());
     KMime::Headers::Base *header = msg->headerByType(param.constData());

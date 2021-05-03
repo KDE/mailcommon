@@ -40,8 +40,7 @@ public:
             for (int row = 0; row < rowCount; row++) {
                 const QModelIndex firstIndex = q->mapToSource(index.model()->index(row, 0, index));
 
-                const Akonadi::Collection collectionFirst =
-                    q->sourceModel()->data(firstIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+                const auto collectionFirst = q->sourceModel()->data(firstIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
                 if (collectionFirst.isValid() && collectionFirst.hasAttribute<Akonadi::CollectionQuotaAttribute>()) {
                     const auto *quota = collectionFirst.attribute<Akonadi::CollectionQuotaAttribute>();
 
@@ -108,7 +107,7 @@ Qt::ItemFlags FolderTreeWidgetProxyModel::flags(const QModelIndex &index) const
     if (d->enableCheck) {
         const QModelIndex sourceIndex = mapToSource(index);
         const QModelIndex rowIndex = sourceIndex.sibling(sourceIndex.row(), 0);
-        const Akonadi::Collection collection = sourceModel()->data(rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const auto collection = sourceModel()->data(rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         if (!MailCommon::Util::isVirtualCollection(collection)) {
             const Akonadi::AgentInstance instance = Akonadi::AgentManager::self()->instance(collection.resource());
             if (instance.status() == Akonadi::AgentInstance::Broken) {
@@ -180,7 +179,7 @@ bool FolderTreeWidgetProxyModel::filterAcceptsRow(int sourceRow, const QModelInd
 {
     const QModelIndex modelIndex = sourceModel()->index(sourceRow, 0, sourceParent);
 
-    const Akonadi::Collection collection = sourceModel()->data(modelIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+    const auto collection = sourceModel()->data(modelIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
     if (!d->checker.isWantedCollection(collection)) {
         return false;
     }
@@ -212,7 +211,7 @@ QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) co
     if (role == Qt::ForegroundRole) {
         const QModelIndex sourceIndex = mapToSource(index);
         const QModelIndex rowIndex = sourceIndex.sibling(sourceIndex.row(), 0);
-        const Akonadi::Collection collection = sourceModel()->data(rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const auto collection = sourceModel()->data(rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
         if (!MailCommon::Util::isVirtualCollection(collection)) {
             const Akonadi::AgentInstance instance = Akonadi::AgentManager::self()->instance(collection.resource());
@@ -228,7 +227,7 @@ QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) co
     } else if (role == Qt::DisplayRole) {
         const QModelIndex sourceIndex = mapToSource(index);
         const QModelIndex rowIndex = sourceIndex.sibling(sourceIndex.row(), 0);
-        const Akonadi::Collection collection = sourceModel()->data(rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const auto collection = sourceModel()->data(rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         if (!MailCommon::Util::isVirtualCollection(collection)) {
             const Akonadi::AgentInstance instance = Akonadi::AgentManager::self()->instance(collection.resource());
             if (collection.parentCollection() == Akonadi::Collection::root()) {
@@ -244,7 +243,7 @@ QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) co
     } else if (role == Qt::DecorationRole) {
         const QModelIndex sourceIndex = mapToSource(index);
         const QModelIndex rowIndex = sourceIndex.sibling(sourceIndex.row(), 0);
-        const Akonadi::Collection collection = sourceModel()->data(rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const auto collection = sourceModel()->data(rowIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         if (!MailCommon::Util::isVirtualCollection(collection)) {
             if (collection.parentCollection() == Akonadi::Collection::root()) {
                 qreal percentage = 0.0;

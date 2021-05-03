@@ -70,7 +70,7 @@ FilterAction::ReturnCode FilterActionSetTransport::process(ItemContext &context,
         return ErrorButGoOn;
     }
 
-    const KMime::Message::Ptr msg = context.item().payload<KMime::Message::Ptr>();
+    const auto msg = context.item().payload<KMime::Message::Ptr>();
     auto header = new KMime::Headers::Generic("X-KMail-Transport");
     header->fromUnicodeString(argsAsString(), "utf-8");
     msg->setHeader(header);

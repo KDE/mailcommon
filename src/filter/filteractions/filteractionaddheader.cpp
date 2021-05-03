@@ -37,7 +37,7 @@ FilterAction::ReturnCode FilterActionAddHeader::process(ItemContext &context, bo
         return ErrorButGoOn;
     }
 
-    KMime::Message::Ptr msg = context.item().payload<KMime::Message::Ptr>();
+    auto msg = context.item().payload<KMime::Message::Ptr>();
 
     KMime::Headers::Base *header = KMime::Headers::createHeader(mParameter.toLatin1());
     if (!header) {

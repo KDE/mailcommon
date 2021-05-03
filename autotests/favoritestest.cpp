@@ -86,7 +86,7 @@ void FavoriteProxyTest::testReordering()
     for (const QString &folderName : {QStringLiteral("res2"), QStringLiteral("res3")}) {
         const QModelIndex index = getIndex(folderName, model);
         QVERIFY(index.isValid());
-        const Akonadi::Collection favoriteCollection = index.data(EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const auto favoriteCollection = index.data(EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         QVERIFY(favoriteCollection.isValid());
         collectionIds.push_back(favoriteCollection.id());
         order.push_back(QLatin1Char('c') + QString::number(favoriteCollection.id()));

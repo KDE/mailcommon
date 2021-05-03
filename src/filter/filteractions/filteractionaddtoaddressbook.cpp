@@ -51,7 +51,7 @@ FilterAction::ReturnCode FilterActionAddToAddressBook::process(ItemContext &cont
         return ErrorButGoOn;
     }
 
-    const KMime::Message::Ptr msg = context.item().payload<KMime::Message::Ptr>();
+    const auto msg = context.item().payload<KMime::Message::Ptr>();
 
     QString headerLine;
     switch (mHeaderType) {

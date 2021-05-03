@@ -109,7 +109,7 @@ void ExpireJob::itemFetchResult(KJob *job)
             continue;
         }
 
-        const KMime::Message::Ptr mb = item.payload<KMime::Message::Ptr>();
+        const auto mb = item.payload<KMime::Message::Ptr>();
         Akonadi::MessageStatus status;
         status.setStatusFromFlags(item.flags());
         if ((status.isImportant() || status.isToAct() || status.isWatched()) && SettingsIf->excludeImportantMailFromExpiry()) {

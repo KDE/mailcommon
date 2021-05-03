@@ -24,7 +24,7 @@ FilterActionSendReceipt::FilterActionSendReceipt(QObject *parent)
 
 FilterAction::ReturnCode FilterActionSendReceipt::process(ItemContext &context, bool) const
 {
-    const KMime::Message::Ptr msg = context.item().payload<KMime::Message::Ptr>();
+    const auto msg = context.item().payload<KMime::Message::Ptr>();
 
     MessageComposer::MessageFactoryNG factory(msg, context.item().id());
     factory.setFolderIdentity(Util::folderIdentity(context.item()));

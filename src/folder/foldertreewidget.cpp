@@ -215,7 +215,7 @@ Akonadi::Collection::List FolderTreeWidget::selectedCollections() const
     const QModelIndexList selectedIndexes = selectionModel->selectedIndexes();
     for (const QModelIndex &index : selectedIndexes) {
         if (index.isValid()) {
-            const Akonadi::Collection collection = index.model()->data(index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+            const auto collection = index.model()->data(index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
             if (collection.isValid()) {
                 collections.append(collection);
             }

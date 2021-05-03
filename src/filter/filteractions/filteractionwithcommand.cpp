@@ -169,7 +169,7 @@ void substituteCommandLineArgsForItem(const Akonadi::Item &item, QString &comman
 
 FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &context, bool withOutput) const
 {
-    const KMime::Message::Ptr aMsg = context.item().payload<KMime::Message::Ptr>();
+    const auto aMsg = context.item().payload<KMime::Message::Ptr>();
     Q_ASSERT(aMsg);
 
     if (mParameter.isEmpty()) {

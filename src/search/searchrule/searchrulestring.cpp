@@ -83,7 +83,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
         return false;
     }
 
-    const KMime::Message::Ptr msg = item.payload<KMime::Message::Ptr>();
+    const auto msg = item.payload<KMime::Message::Ptr>();
     Q_ASSERT(msg.data());
 
     if (!msg->hasHeader("From")) {

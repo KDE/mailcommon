@@ -169,7 +169,7 @@ private Q_SLOTS:
         // Given a source folder with 2 levels of parents (res1/sub1/sub2)
         const QStringList folderNames = collectNames(mCollectionModel);
         const QModelIndex res1Index = mCollectionModel->index(folderNames.indexOf("res1"), 0, QModelIndex());
-        const Collection topLevelCollection = res1Index.data(EntityTreeModel::CollectionRole).value<Collection>();
+        const auto topLevelCollection = res1Index.data(EntityTreeModel::CollectionRole).value<Collection>();
         QCOMPARE(topLevelCollection.name(), QStringLiteral("res1"));
         const int parentCount = 2;
         Collection currentColl = topLevelCollection;
@@ -186,7 +186,7 @@ private Q_SLOTS:
         // ... and a dest folder in another resource
         const QPersistentModelIndex res2Index = mCollectionModel->index(folderNames.indexOf("res2"), 0, QModelIndex());
         const int origRowCount = mCollectionModel->rowCount(res2Index);
-        const Collection newParentCollection = res2Index.data(EntityTreeModel::CollectionRole).value<Collection>();
+        const auto newParentCollection = res2Index.data(EntityTreeModel::CollectionRole).value<Collection>();
         QCOMPARE(newParentCollection.name(), QStringLiteral("res2"));
 
         QTest::qWait(100); // #### akonadi bug? Without this, a warning "Only resources can modify remote identifiers" appears
@@ -231,7 +231,7 @@ private:
             QModelIndex idx = model->index(row, 0, parent);
             QModelIndex col1idx = model->index(row, 1, parent);
             QCOMPARE(col1idx.sibling(col1idx.row(), 0), idx);
-            Collection collection = idx.data(EntityTreeModel::CollectionRole).value<Collection>();
+            auto collection = idx.data(EntityTreeModel::CollectionRole).value<Collection>();
             QVERIFY2(collection.isValid(), qPrintable(idx.data().toString()));
         }
     }

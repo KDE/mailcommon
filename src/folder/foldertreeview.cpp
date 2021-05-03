@@ -424,7 +424,7 @@ bool FolderTreeView::trySelectNextUnreadFolder(const QModelIndex &current, Searc
             return false;
         }
 
-        const Akonadi::Collection collection = index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const auto collection = index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         if (collection == Kernel::self()->trashCollectionFolder() || collection == Kernel::self()->outboxCollectionFolder()) {
             continue;
         }
@@ -491,7 +491,7 @@ bool FolderTreeView::isUnreadFolder(const QModelIndex &current, QModelIndex &ind
         }
 
         if (index.isValid()) {
-            const Akonadi::Collection collection = index.model()->data(current, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+            const auto collection = index.model()->data(current, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
             if (collection.isValid()) {
                 if (collection.statistics().unreadCount() > 0) {
@@ -537,7 +537,7 @@ Akonadi::Collection FolderTreeView::currentFolder() const
 {
     const QModelIndex current = currentIndex();
     if (current.isValid()) {
-        const Akonadi::Collection collection = current.model()->data(current, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const auto collection = current.model()->data(current, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         return collection;
     }
     return Akonadi::Collection();
