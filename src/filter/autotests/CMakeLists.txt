@@ -119,7 +119,7 @@ add_mailcommon_filter_test(filteractionwithaddresstest
 )
 
 if (KDEPIM_RUN_AKONADI_TEST)
-add_mailcommon_filter_akonadi_test(filteractionaddtoaddressbooktest
+add_mailcommon_filter_akonadi_test(filteractionaddtoaddressbooktest.cpp
     filteractionaddtoaddressbooktest.cpp
     ../filteractions/filteractionaddtoaddressbook.cpp
     ../filteractions/filteractionwithstringlist.cpp
