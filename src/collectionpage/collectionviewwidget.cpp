@@ -114,6 +114,7 @@ CollectionViewWidget::~CollectionViewWidget()
 
 void CollectionViewWidget::load(const Akonadi::Collection &col)
 {
+    mCurrentCollection = col;
     mFolderCollection = MailCommon::FolderSettings::forCollection(col);
     if (col.hasAttribute<Akonadi::MessageFolderAttribute>()) {
         const bool outboundFolder = col.attribute<Akonadi::MessageFolderAttribute>()->isOutboundFolder();
