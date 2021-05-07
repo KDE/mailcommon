@@ -210,7 +210,7 @@ ecm_qt_declare_logging_category(libmailcommon_SRCS HEADER mailcommon_debug.h IDE
 
 set_source_files_properties(${CMAKE_CURRENT_SOURCE_DIR}/dbusinterfaces/org.freedesktop.Akonadi.MailFilterAgent.xml PROPERTIES INCLUDE "dbusoperators.h")
 
-qt5_add_dbus_interfaces(libmailcommon_SRCS
+qt_add_dbus_interfaces(libmailcommon_SRCS
   ${CMAKE_CURRENT_SOURCE_DIR}/dbusinterfaces/org.freedesktop.Akonadi.MailFilterAgent.xml
 )
 
@@ -221,14 +221,14 @@ set(libmailcommon_SRCS ${libmailcommon_SRCS} filter/soundtestwidget.cpp)
 macro(add_resource_iface _kcfgFile _ifaceName _className)
   kcfg_generate_dbus_interface(${CMAKE_CURRENT_SOURCE_DIR}/${_kcfgFile} ${_ifaceName})
   string(TOLOWER ${_className} _codeFile)
-  qt5_add_dbus_interface(libmailcommon_SRCS
+  qt_add_dbus_interface(libmailcommon_SRCS
     ${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml ${_codeFile} ${_className}
   )
 endmacro()
 
 add_resource_iface(settings.kcfg org.kde.Akonadi.POP3.Settings Pop3Settings)
 
-qt5_add_dbus_interfaces(libmailcommon_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/dbusinterfaces/org.kde.Korganizer.Calendar.xml
+qt_add_dbus_interfaces(libmailcommon_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/dbusinterfaces/org.kde.Korganizer.Calendar.xml
 )
 
 add_library(KF5MailCommon ${libmailcommon_SRCS})
