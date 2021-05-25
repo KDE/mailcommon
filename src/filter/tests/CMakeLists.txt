@@ -1,6 +1,5 @@
 
-set(filterimporterexportergui_SRCS filterimporterexportergui.cpp)
-add_executable(filterimporterexportergui ${filterimporterexportergui_SRCS})
+add_executable(filterimporterexportergui filterimporterexportergui.cpp)
 ecm_mark_as_test(filterimporterexportergui)
 target_link_libraries(filterimporterexportergui
   Qt::Core
@@ -9,8 +8,7 @@ target_link_libraries(filterimporterexportergui
   KF5::I18n
 )
 
-set(invalidfilterdialoggui_SRCS invalidfilterdialoggui.cpp)
-add_executable(invalidfilterdialoggui ${invalidfilterdialoggui_SRCS})
+add_executable(invalidfilterdialoggui invalidfilterdialoggui.cpp)
 ecm_mark_as_test(invalidfilterdialoggui)
 target_link_libraries(invalidfilterdialoggui
   Qt::Core
@@ -19,8 +17,7 @@ target_link_libraries(invalidfilterdialoggui
   KF5::I18n
 )
 
-set(mndadvicedialoggui_SRCS mndadvicedialoggui.cpp)
-add_executable(mndadvicedialoggui ${mndadvicedialoggui_SRCS})
+add_executable(mndadvicedialoggui mndadvicedialoggui.cpp)
 ecm_mark_as_test(mndadvicedialoggui)
 target_link_libraries(mndadvicedialoggui
   Qt::Core
@@ -30,8 +27,7 @@ target_link_libraries(mndadvicedialoggui
 )
 
 
-set(kmfilterdialogtestgui_SRCS kmfilterdialogtestgui.cpp ../../../autotests/dummykernel.cpp)
-add_executable(kmfilterdialogtestgui ${kmfilterdialogtestgui_SRCS})
+add_executable(kmfilterdialogtestgui kmfilterdialogtestgui.cpp ../../../autotests/dummykernel.cpp)
 ecm_mark_as_test(kmfilterdialogtestgui)
 target_link_libraries(kmfilterdialogtestgui
   Qt::Core
@@ -40,8 +36,7 @@ target_link_libraries(kmfilterdialogtestgui
   KF5::I18n
 )
 
-set(filteractionmissingsoundurldialogui_SRCS filteractionmissingsoundurldialogui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingsoundurldialog.cpp)
-add_executable(filteractionmissingsoundurldialogui ${filteractionmissingsoundurldialogui_SRCS})
+add_executable(filteractionmissingsoundurldialogui filteractionmissingsoundurldialogui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingsoundurldialog.cpp)
 ecm_mark_as_test(filteractionmissingsoundurldialogui)
 target_link_libraries(filteractionmissingsoundurldialogui
   Qt::Core
@@ -51,8 +46,7 @@ target_link_libraries(filteractionmissingsoundurldialogui
   KF5::KIOWidgets
 )
 
-set(filteractionmissingtemplatedialoggui_SRCS filteractionmissingtemplatedialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtemplatedialog.cpp)
-add_executable(filteractionmissingtemplatedialoggui ${filteractionmissingtemplatedialoggui_SRCS})
+add_executable(filteractionmissingtemplatedialoggui filteractionmissingtemplatedialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtemplatedialog.cpp)
 ecm_mark_as_test(filteractionmissingtemplatedialoggui)
 target_link_libraries(filteractionmissingtemplatedialoggui
   Qt::Core
@@ -62,8 +56,7 @@ target_link_libraries(filteractionmissingtemplatedialoggui
   KF5::Completion
 )
 
-set(filteractionmissingtransportdialoggui_SRCS filteractionmissingtransportdialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtransportdialog.cpp)
-add_executable(filteractionmissingtransportdialoggui ${filteractionmissingtransportdialoggui_SRCS})
+add_executable(filteractionmissingtransportdialoggui filteractionmissingtransportdialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtransportdialog.cpp)
 ecm_mark_as_test(filteractionmissingtransportdialoggui)
 target_link_libraries(filteractionmissingtransportdialoggui
   Qt::Core
@@ -74,8 +67,7 @@ target_link_libraries(filteractionmissingtransportdialoggui
   KF5::MailTransport
 )
 
-set(filteractionmissingaccountdialoggui_SRCS filteractionmissingaccountdialoggui.cpp ../../../autotests/dummykernel.cpp  ../dialog/filteractionmissingaccountdialog.cpp)
-add_executable(filteractionmissingaccountdialoggui ${filteractionmissingaccountdialoggui_SRCS})
+add_executable(filteractionmissingaccountdialoggui filteractionmissingaccountdialoggui.cpp ../../../autotests/dummykernel.cpp  ../dialog/filteractionmissingaccountdialog.cpp)
 ecm_mark_as_test(filteractionmissingaccountdialoggui)
 target_link_libraries(filteractionmissingaccountdialoggui
   Qt::Core
@@ -85,8 +77,7 @@ target_link_libraries(filteractionmissingaccountdialoggui
   KF5::Completion
 )
 
-set(filteractionmissingtagdialoggui_SRCS filteractionmissingtagdialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtagdialog.cpp)
-add_executable(filteractionmissingtagdialoggui ${filteractionmissingtagdialoggui_SRCS})
+add_executable(filteractionmissingtagdialoggui filteractionmissingtagdialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtagdialog.cpp)
 ecm_mark_as_test(filteractionmissingtagdialoggui)
 target_link_libraries(filteractionmissingtagdialoggui
   Qt::Core
@@ -96,8 +87,7 @@ target_link_libraries(filteractionmissingtagdialoggui
   KF5::Completion
 )
 
-set(filteractionmissingidentitydialoggui_SRCS filteractionmissingidentitydialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingidentitydialog.cpp)
-add_executable(filteractionmissingidentitydialoggui ${filteractionmissingidentitydialoggui_SRCS})
+add_executable(filteractionmissingidentitydialoggui filteractionmissingidentitydialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingidentitydialog.cpp)
 ecm_mark_as_test(filteractionmissingidentitydialoggui)
 target_link_libraries(filteractionmissingidentitydialoggui
   Qt::Core
