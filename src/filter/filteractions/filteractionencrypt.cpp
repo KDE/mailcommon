@@ -83,8 +83,11 @@ void FilterActionEncrypt::argsFromString(const QString &argsStr)
         qCWarning(MAILCOMMON_LOG) << "Unknown protocol specified:" << protoStr;
         return;
     }
-
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 2)
+    mReencrypt = static_cast<bool>(QStringView(argsStr).mid(pos + 1, 1).toInt());
+#else
     mReencrypt = static_cast<bool>(argsStr.midRef(pos + 1, 1).toInt());
+#endif
 
     const auto fp = argsStr.mid(pos + 3);
     auto listJob = proto->keyListJob(false, true, true);
