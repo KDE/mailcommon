@@ -247,7 +247,7 @@ void CollectionGeneralPage::slotNameChanged(const QString &name)
         if (mColorName.isEmpty()) {
             const KColorScheme::BackgroundRole bgColorScheme(KColorScheme::NegativeBackground);
             KStatefulBrush bgBrush(KColorScheme::View, bgColorScheme);
-            mColorName = bgBrush.brush(this).color().name();
+            mColorName = bgBrush.brush(palette()).color().name();
         }
         styleSheet = QStringLiteral("QLineEdit{ background-color:%1 }").arg(mColorName);
     }
