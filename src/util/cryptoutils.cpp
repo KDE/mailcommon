@@ -169,7 +169,7 @@ KMime::Message::Ptr CryptoUtils::assembleMessage(const KMime::Message::Ptr &orig
     // Copy over headers from the original message, except for CT, CTE and CD
     // headers, we want to preserve those from the new content
     QVector<KMime::Headers::Base *> headers = orig->headers();
-    for (const auto hdr : qAsConst(headers)) {
+    for (const auto hdr : std::as_const(headers)) {
         if (isContentHeader(hdr)) {
             continue;
         }
@@ -179,7 +179,7 @@ KMime::Message::Ptr CryptoUtils::assembleMessage(const KMime::Message::Ptr &orig
 
     // Overwrite some headers by those provided by the new content
     headers = newContent->headers();
-    for (const auto hdr : qAsConst(headers)) {
+    for (const auto hdr : std::as_const(headers)) {
         if (isContentHeader(hdr)) {
             copyHeader(hdr, out);
         }

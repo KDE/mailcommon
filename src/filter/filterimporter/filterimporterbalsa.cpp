@@ -87,7 +87,7 @@ void FilterImporterBalsa::parseCondition(const QString &condition, MailCommon::M
         // no multi condition
         conditionList << condition;
     }
-    for (QString cond : qAsConst(conditionList)) {
+    for (QString cond : std::as_const(conditionList)) {
         cond = cond.trimmed();
         if (cond.startsWith(QLatin1String("NOT"))) {
             cond = cond.right(cond.length() - 3);

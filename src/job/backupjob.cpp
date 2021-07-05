@@ -108,7 +108,7 @@ bool BackupJob::queueFolders(const Akonadi::Collection &root)
 
 bool BackupJob::hasChildren(const Akonadi::Collection &collection) const
 {
-    for (const Akonadi::Collection &curCol : qAsConst(mAllFolders)) {
+    for (const Akonadi::Collection &curCol : std::as_const(mAllFolders)) {
         if (collection == curCol.parentCollection()) {
             return true;
         }
@@ -281,7 +281,7 @@ bool BackupJob::writeDirHelper(const QString &directoryPath)
 
 QString BackupJob::collectionName(const Akonadi::Collection &collection) const
 {
-    for (const Akonadi::Collection &curCol : qAsConst(mAllFolders)) {
+    for (const Akonadi::Collection &curCol : std::as_const(mAllFolders)) {
         if (curCol == collection) {
             return curCol.name();
         }

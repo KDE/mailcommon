@@ -76,7 +76,7 @@ void AddTagDialog::slotSave()
 {
     const QString name(d->mTagWidget->tagNameLineEdit()->text());
 
-    for (const MailCommon::Tag::Ptr &tag : qAsConst(d->mTags)) {
+    for (const MailCommon::Tag::Ptr &tag : std::as_const(d->mTags)) {
         if (tag->name() == name) {
             KMessageBox::error(this, i18n("Tag %1 already exists", name));
             d->mTagWidget->tagNameLineEdit()->setFocus();
