@@ -12,20 +12,18 @@
 #include <KIdentityManagement/IdentityCombo>
 #include <KLocalizedString>
 #include <QCheckBox>
+#include <QFormLayout>
 #include <QFrame>
 #include <QLabel>
-#include <QVBoxLayout>
 using namespace MailCommon;
 
 CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     : QWidget(parent)
 {
-    auto topLayout = new QVBoxLayout(this);
+    auto topLayout = new QFormLayout(this);
     topLayout->setObjectName(QStringLiteral("topLayout"));
     topLayout->setContentsMargins({});
     // should new mail in this folder be ignored?
-    auto hbl = new QHBoxLayout();
-    topLayout->addItem(hbl);
     mNotifyOnNewMailCheckBox = new QCheckBox(i18n("Act on new/unread mail in this folder"), this);
     mNotifyOnNewMailCheckBox->setWhatsThis(
         i18n("<qt><p>If this option is enabled then you will be notified about "
@@ -37,46 +35,29 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
              "be skipped when going to the next/previous folder with unread "
              "messages. This is useful for ignoring any new/unread mail in "
              "your trash and spam folder.</p></qt>"));
-    hbl->addWidget(mNotifyOnNewMailCheckBox);
+    topLayout->addRow(QString(), mNotifyOnNewMailCheckBox);
     // should replies to mails in this folder be kept in this same folder?
-    hbl = new QHBoxLayout();
-    topLayout->addItem(hbl);
     mKeepRepliesInSameFolderCheckBox = new QCheckBox(i18n("Keep replies in this folder"), this);
     mKeepRepliesInSameFolderCheckBox->setWhatsThis(
         i18n("Check this option if you want replies you write "
              "to mails in this folder to be put in this same folder "
              "after sending, instead of in the configured sent-mail folder."));
-    hbl->addWidget(mKeepRepliesInSameFolderCheckBox);
-    hbl->addStretch(1);
+    topLayout->addRow(QString(), mKeepRepliesInSameFolderCheckBox);
+
     // should this folder be shown in the folder selection dialog?
-    hbl = new QHBoxLayout();
-    topLayout->addItem(hbl);
     mHideInSelectionDialogCheckBox = new QCheckBox(i18n("Hide this folder in the folder selection dialog"), this);
     mHideInSelectionDialogCheckBox->setWhatsThis(xi18nc("@info:whatsthis",
                                                         "Check this option if you do not want this folder "
                                                         "to be shown in folder selection dialogs, such as the <interface>"
                                                         "Jump to Folder</interface> dialog."));
-    hbl->addWidget(mHideInSelectionDialogCheckBox);
-    hbl->addStretch(1);
-
-    addLine(this, topLayout);
-    // use grid layout for the following combobox settings
-    auto gl = new QGridLayout();
-    topLayout->addItem(gl);
-    gl->setColumnStretch(1, 100); // make the second column use all available space
-    int row = -1;
+    topLayout->addRow(QString(), mHideInSelectionDialogCheckBox);
 
     // sender identity
-    ++row;
     mUseDefaultIdentityCheckBox = new QCheckBox(i18n("Use &default identity"), this);
-    gl->addWidget(mUseDefaultIdentityCheckBox);
+    topLayout->addRow(QString(), mUseDefaultIdentityCheckBox);
     connect(mUseDefaultIdentityCheckBox, &QCheckBox::stateChanged, this, &CollectionGeneralWidget::slotIdentityCheckboxChanged);
-    ++row;
-    auto label = new QLabel(i18n("&Sender identity:"), this);
-    gl->addWidget(label, row, 0);
+
     mIdentityComboBox = new KIdentityManagement::IdentityCombo(KernelIf->identityManager(), this);
-    label->setBuddy(mIdentityComboBox);
-    gl->addWidget(mIdentityComboBox, row, 1);
     mIdentityComboBox->setWhatsThis(
         i18n("Select the sender identity to be used when writing new mail "
              "or replying to mail in this folder. This means that if you are in "
@@ -84,20 +65,11 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
              "sender email address, signature and signing or encryption keys "
              "automatically. Identities can be set up in the main configuration "
              "dialog. (Settings -> Configure KMail)"));
+    topLayout->addRow(i18n("&Sender identity:"), mIdentityComboBox);
 }
 
 CollectionGeneralWidget::~CollectionGeneralWidget()
 {
-}
-
-void CollectionGeneralWidget::addLine(QWidget *parent, QVBoxLayout *layout)
-{
-    auto line = new QFrame(parent);
-    line->setGeometry(QRect(80, 150, 250, 20));
-    line->setFrameShape(QFrame::HLine);
-    line->setFrameShadow(QFrame::Sunken);
-    line->setFrameShape(QFrame::HLine);
-    layout->addWidget(line);
 }
 
 void CollectionGeneralWidget::slotIdentityCheckboxChanged()

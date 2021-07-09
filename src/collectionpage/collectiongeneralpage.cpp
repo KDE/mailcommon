@@ -31,6 +31,8 @@
 #include <KMessageBox>
 
 #include <QCheckBox>
+#include <QFontDatabase>
+#include <QFormLayout>
 #include <QHBoxLayout>
 #include <QLabel>
 #include <QLineEdit>
@@ -59,23 +61,18 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
 
     auto topLayout = new QVBoxLayout(this);
 
-    // Mustn't be able to edit details for a non-resource, system folder.
-    if ((!mIsLocalSystemFolder || mIsResourceFolder) && !mFolderCollection->isReadOnly()) {
-        auto hl = new QHBoxLayout();
-        topLayout->addItem(hl);
-        label = new QLabel(i18nc("@label:textbox Name of the folder.", "&Name:"), this);
-        hl->addWidget(label);
-
-        mNameEdit = new QLineEdit(this);
-        new KPIM::LineEditCatchReturnKey(mNameEdit, this);
-
-        connect(mNameEdit, &QLineEdit::textChanged, this, &CollectionGeneralPage::slotNameChanged);
-        label->setBuddy(mNameEdit);
-        hl->addWidget(mNameEdit);
-    }
-
     mCollectionGeneralWidget = new CollectionGeneralWidget(this);
     topLayout->addWidget(mCollectionGeneralWidget);
+    auto innerLayout = qobject_cast<QFormLayout *>(mCollectionGeneralWidget->layout());
+
+    // Mustn't be able to edit details for a non-resource, system folder.
+    if ((!mIsLocalSystemFolder || mIsResourceFolder) && !mFolderCollection->isReadOnly()) {
+        mNameEdit = new QLineEdit(this);
+        new KPIM::LineEditCatchReturnKey(mNameEdit, this);
+        connect(mNameEdit, &QLineEdit::textChanged, this, &CollectionGeneralPage::slotNameChanged);
+        innerLayout->insertRow(0, i18nc("@label:textbox Name of the folder.", "Folder &Name:"), mNameEdit);
+    }
+
     // Only do make this settable, if the IMAP resource is enabled
     // and it's not the personal folders (those must not be changed)
     const QString collectionResource = collection.resource();
@@ -95,11 +92,8 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
         const PimCommon::CollectionTypeUtil::FolderContentsType folderType =
             collectionUtil.typeFromKolabName(annotations.value(PimCommon::CollectionTypeUtil::kolabFolderType()));
 
-        int row = 0;
-        auto gl = new QGridLayout();
-        topLayout->addItem(gl);
         mContentsComboBox = new PimCommon::ContentTypeWidget(this);
-        gl->addWidget(mContentsComboBox, row, 0, 1, 2);
+        innerLayout->addRow(PimCommon::ContentTypeWidget::labelName(), mContentsComboBox);
         mContentsComboBox->setCurrentIndex(contentsType);
 
         connect(mContentsComboBox, &PimCommon::ContentTypeWidget::activated, this, &CollectionGeneralPage::slotFolderContentsSelectionChanged);
@@ -113,23 +107,22 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
         // or if it's set to calendar or task (existing folder)
         const bool folderTypeComboboxEnabled =
             (folderType == PimCommon::CollectionTypeUtil::ContentsTypeCalendar || folderType == PimCommon::CollectionTypeUtil::ContentsTypeTask);
-        ++row;
-        mIncidencesForComboBox = new PimCommon::IncidencesForWidget(this);
-        gl->addWidget(mIncidencesForComboBox, row, 0, 1, 2);
+        if (folderTypeComboboxEnabled) {
+            mIncidencesForComboBox = new PimCommon::IncidencesForWidget(this);
+            innerLayout->addRow(PimCommon::IncidencesForWidget::labelName(), mIncidencesForComboBox);
 
-        mIncidencesForComboBox->setCurrentIndex(incidencesFor);
-        mIncidencesForComboBox->setEnabled(folderTypeComboboxEnabled);
+            mIncidencesForComboBox->setCurrentIndex(incidencesFor);
+        }
 
         mSharedSeenFlagsCheckBox = new QCheckBox(this);
         mSharedSeenFlagsCheckBox->setText(i18n("Share unread state with all users"));
         mSharedSeenFlagsCheckBox->setChecked(sharedSeen);
-        ++row;
-        gl->addWidget(mSharedSeenFlagsCheckBox, row, 0, 1, 1);
         mSharedSeenFlagsCheckBox->setWhatsThis(
             i18n("If enabled, the unread state of messages in this folder will be "
                  "the same for all users having access to this folder. If disabled "
                  "(the default), every user with access to this folder has their "
                  "own unread state."));
+        innerLayout->addRow(QString(), mSharedSeenFlagsCheckBox);
     }
 
     topLayout->addStretch(100); // eat all superfluous space

@@ -11,7 +11,7 @@
 #include <AkonadiCore/Collection>
 #include <QWidget>
 class QCheckBox;
-class QVBoxLayout;
+class QFormLayout;
 namespace KIdentityManagement
 {
 class IdentityCombo;
@@ -29,7 +29,6 @@ public:
     void load(const Akonadi::Collection &col);
 
 private:
-    void addLine(QWidget *parent, QVBoxLayout *layout);
     void slotIdentityCheckboxChanged();
     QCheckBox *mNotifyOnNewMailCheckBox = nullptr;
     QCheckBox *mKeepRepliesInSameFolderCheckBox = nullptr;

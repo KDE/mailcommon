@@ -7,6 +7,7 @@
 #include "collectionviewwidget.h"
 #include "mailcommon_debug.h"
 #include <KLocalizedString>
+#include <QFormLayout>
 #include <QVBoxLayout>
 
 #include <Akonadi/KMime/MessageFolderAttribute>
@@ -26,86 +27,62 @@ using namespace MailCommon;
 CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     : QWidget(parent)
 {
-    auto topLayout = new QVBoxLayout(this);
+    auto topLayout = new QFormLayout(this);
     topLayout->setObjectName(QStringLiteral("topLayout"));
     topLayout->setContentsMargins({});
 
     // sender or receiver column
     const QString senderReceiverColumnTip = i18n("Show Sender/Receiver Column in List of Messages");
 
-    auto senderReceiverColumnLabel = new QLabel(i18n("Sho&w column:"), this);
     mShowSenderReceiverComboBox = new QComboBox(this);
     mShowSenderReceiverComboBox->setToolTip(senderReceiverColumnTip);
-    senderReceiverColumnLabel->setBuddy(mShowSenderReceiverComboBox);
     mShowSenderReceiverComboBox->insertItem(0, i18nc("@item:inlistbox Show default value.", "Default"));
     mShowSenderReceiverComboBox->insertItem(1, i18nc("@item:inlistbox Show sender.", "Sender"));
     mShowSenderReceiverComboBox->insertItem(2, i18nc("@item:inlistbox Show receiver.", "Receiver"));
-
-    auto senderReceiverColumnHLayout = new QHBoxLayout();
-    senderReceiverColumnHLayout->addWidget(senderReceiverColumnLabel);
-    senderReceiverColumnHLayout->addWidget(mShowSenderReceiverComboBox);
-    topLayout->addLayout(senderReceiverColumnHLayout);
-
-    // message list
-    auto messageListGroup = new QGroupBox(i18n("Message List"), this);
-    auto messageListGroupLayout = new QVBoxLayout(messageListGroup);
-    topLayout->addWidget(messageListGroup);
+    topLayout->addRow(i18n("Sho&w column:"), mShowSenderReceiverComboBox);
 
     // message list aggregation
-    mUseDefaultAggregationCheckBox = new QCheckBox(i18n("Use default aggregation"), messageListGroup);
-    messageListGroupLayout->addWidget(mUseDefaultAggregationCheckBox);
+    mUseDefaultAggregationCheckBox = new QCheckBox(i18n("Use default message list aggregation:"), this);
     connect(mUseDefaultAggregationCheckBox, &QCheckBox::stateChanged, this, &CollectionViewWidget::slotAggregationCheckboxChanged);
+    topLayout->addRow(QString(), mUseDefaultAggregationCheckBox);
 
-    mAggregationComboBox = new MessageList::Utils::AggregationComboBox(messageListGroup);
-
-    auto aggregationLabel = new QLabel(i18n("Aggregation"), messageListGroup);
-    aggregationLabel->setBuddy(mAggregationComboBox);
+    mAggregationComboBox = new MessageList::Utils::AggregationComboBox(this);
 
     using MessageList::Utils::AggregationConfigButton;
-    auto aggregationConfigButton = new AggregationConfigButton(messageListGroup, mAggregationComboBox);
+    auto aggregationConfigButton = new AggregationConfigButton(this, mAggregationComboBox);
     // Make sure any changes made in the aggregations configure dialog are reflected in the combo.
     connect(aggregationConfigButton, &AggregationConfigButton::configureDialogCompleted, this, &CollectionViewWidget::slotSelectFolderAggregation);
 
-    auto aggregationLayout = new QHBoxLayout();
-    aggregationLayout->addWidget(aggregationLabel, 1);
+    auto aggregationLayout = new QHBoxLayout;
     aggregationLayout->addWidget(mAggregationComboBox, 1);
     aggregationLayout->addWidget(aggregationConfigButton, 0);
-    messageListGroupLayout->addLayout(aggregationLayout);
+    topLayout->addRow(QString(), aggregationLayout);
 
     // message list theme
-    mUseDefaultThemeCheckBox = new QCheckBox(i18n("Use default theme"), messageListGroup);
-    messageListGroupLayout->addWidget(mUseDefaultThemeCheckBox);
+    mUseDefaultThemeCheckBox = new QCheckBox(i18n("Use default message list theme"), this);
     connect(mUseDefaultThemeCheckBox, &QCheckBox::stateChanged, this, &CollectionViewWidget::slotThemeCheckboxChanged);
+    topLayout->addRow(QString(), mUseDefaultThemeCheckBox);
 
-    mThemeComboBox = new MessageList::Utils::ThemeComboBox(messageListGroup);
-
-    auto themeLabel = new QLabel(i18n("Theme"), messageListGroup);
-    themeLabel->setBuddy(mThemeComboBox);
+    mThemeComboBox = new MessageList::Utils::ThemeComboBox(this);
 
     using MessageList::Utils::ThemeConfigButton;
-    auto themeConfigButton = new ThemeConfigButton(messageListGroup, mThemeComboBox);
+    auto themeConfigButton = new ThemeConfigButton(this, mThemeComboBox);
     // Make sure any changes made in the themes configure dialog are reflected in the combo.
     connect(themeConfigButton, &ThemeConfigButton::configureDialogCompleted, this, &CollectionViewWidget::slotSelectFolderTheme);
 
-    auto themeLayout = new QHBoxLayout();
-    themeLayout->addWidget(themeLabel, 1);
+    auto themeLayout = new QHBoxLayout;
     themeLayout->addWidget(mThemeComboBox, 1);
     themeLayout->addWidget(themeConfigButton, 0);
-    messageListGroupLayout->addLayout(themeLayout);
+    topLayout->addRow(QString(), themeLayout);
 
     // Message Default Format
-    auto messageFormatGroup = new QGroupBox(i18n("Message Default Format"), this);
-    auto messageFormatGroupLayout = new QVBoxLayout(messageFormatGroup);
     mPreferHtmlToText = new QRadioButton(i18n("Prefer HTML to text"), this);
-    messageFormatGroupLayout->addWidget(mPreferHtmlToText);
+    topLayout->addRow(i18n("Message format:"), mPreferHtmlToText);
     mPreferTextToHtml = new QRadioButton(i18n("Prefer text to HTML"), this);
-    messageFormatGroupLayout->addWidget(mPreferTextToHtml);
+    topLayout->addRow(QString(), mPreferTextToHtml);
     mUseGlobalSettings = new QRadioButton(i18n("Use Global Settings"), this);
-    messageFormatGroupLayout->addWidget(mUseGlobalSettings);
+    topLayout->addRow(QString(), mUseGlobalSettings);
 
-    topLayout->addWidget(messageFormatGroup);
-
-    topLayout->addStretch(100);
 }
 
 CollectionViewWidget::~CollectionViewWidget()

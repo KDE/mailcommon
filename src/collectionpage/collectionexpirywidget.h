@@ -57,10 +57,7 @@ private:
     Q_REQUIRED_RESULT bool validateExpireFolder(bool expireNow);
     Q_REQUIRED_RESULT MailCommon::ExpireCollectionAttribute *assignFolderAttribute(Akonadi::Collection &collection, bool &expireNow);
     void slotChanged();
-    void slotUpdateControls();
-    QCheckBox *mExpireReadMailCB = nullptr;
     KPluralHandlingSpinBox *mExpireReadMailSB = nullptr;
-    QCheckBox *mExpireUnreadMailCB = nullptr;
     KPluralHandlingSpinBox *mExpireUnreadMailSB = nullptr;
     QRadioButton *mMoveToRB = nullptr;
     FolderRequester *mFolderSelector = nullptr;
