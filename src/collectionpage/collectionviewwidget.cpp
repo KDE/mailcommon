@@ -44,7 +44,7 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     // message list aggregation
     mUseDefaultAggregationCheckBox = new QCheckBox(i18n("Use default aggregation:"), this);
     connect(mUseDefaultAggregationCheckBox, &QCheckBox::stateChanged, this, &CollectionViewWidget::slotAggregationCheckboxChanged);
-    topLayout->addRow(i18n("Message list aggregation:"), mUseDefaultAggregationCheckBox);
+    topLayout->addRow(i18n("Messages aggregation:"), mUseDefaultAggregationCheckBox);
 
     mAggregationComboBox = new MessageList::Utils::AggregationComboBox(this);
 
@@ -77,13 +77,12 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
 
     // Message Default Format
     mPreferHtmlToText = new QRadioButton(i18n("Prefer HTML to text"), this);
-    topLayout->addRow(i18n("Message default format:"), mPreferHtmlToText);
+    topLayout->addRow(i18n("Message format:"), mPreferHtmlToText);
     mPreferTextToHtml = new QRadioButton(i18n("Prefer text to HTML"), this);
     topLayout->addRow(QString(), mPreferTextToHtml);
     mUseGlobalSettings = new QRadioButton(i18n("Use Global Settings"), this);
     topLayout->addRow(QString(), mUseGlobalSettings);
 
-    // topLayout->addStretch(100);
 }
 
 CollectionViewWidget::~CollectionViewWidget()
