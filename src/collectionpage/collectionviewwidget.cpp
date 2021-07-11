@@ -61,7 +61,7 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     // message list theme
     mUseDefaultThemeCheckBox = new QCheckBox(i18n("Use default theme"), this);
     connect(mUseDefaultThemeCheckBox, &QCheckBox::stateChanged, this, &CollectionViewWidget::slotThemeCheckboxChanged);
-    topLayout->addRow(i18n("Message list theme"), mUseDefaultThemeCheckBox);
+    topLayout->addRow(i18n("Message list theme:"), mUseDefaultThemeCheckBox);
 
     mThemeComboBox = new MessageList::Utils::ThemeComboBox(this);
 
@@ -77,7 +77,7 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
 
     // Message Default Format
     mPreferHtmlToText = new QRadioButton(i18n("Prefer HTML to text"), this);
-    topLayout->addRow(i18n("Message Default Format:"), mPreferHtmlToText);
+    topLayout->addRow(i18n("Message default format:"), mPreferHtmlToText);
     mPreferTextToHtml = new QRadioButton(i18n("Prefer text to HTML"), this);
     topLayout->addRow(QString(), mPreferTextToHtml);
     mUseGlobalSettings = new QRadioButton(i18n("Use Global Settings"), this);

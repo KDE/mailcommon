@@ -56,7 +56,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
 
     // sender identity
     mUseDefaultIdentityCheckBox = new QCheckBox(i18n("Use &default identity"), this);
-    topLayout->addRow(mUseDefaultIdentityCheckBox);
+    topLayout->addRow(QString(), mUseDefaultIdentityCheckBox);
     connect(mUseDefaultIdentityCheckBox, &QCheckBox::stateChanged, this, &CollectionGeneralWidget::slotIdentityCheckboxChanged);
 
     mIdentityComboBox = new KIdentityManagement::IdentityCombo(KernelIf->identityManager(), this);
