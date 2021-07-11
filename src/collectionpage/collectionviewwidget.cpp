@@ -53,7 +53,7 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     // Make sure any changes made in the aggregations configure dialog are reflected in the combo.
     connect(aggregationConfigButton, &AggregationConfigButton::configureDialogCompleted, this, &CollectionViewWidget::slotSelectFolderAggregation);
 
-    auto aggregationLayout = new QHBoxLayout();
+    auto aggregationLayout = new QHBoxLayout;
     aggregationLayout->addWidget(mAggregationComboBox, 1);
     aggregationLayout->addWidget(aggregationConfigButton, 0);
     topLayout->addRow(QString(), aggregationLayout);
@@ -70,14 +70,14 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     // Make sure any changes made in the themes configure dialog are reflected in the combo.
     connect(themeConfigButton, &ThemeConfigButton::configureDialogCompleted, this, &CollectionViewWidget::slotSelectFolderTheme);
 
-    auto themeLayout = new QHBoxLayout();
+    auto themeLayout = new QHBoxLayout;
     themeLayout->addWidget(mThemeComboBox, 1);
     themeLayout->addWidget(themeConfigButton, 0);
     topLayout->addRow(QString(), themeLayout);
 
     // Message Default Format
     mPreferHtmlToText = new QRadioButton(i18n("Prefer HTML to text"), this);
-    topLayout->addRow(i18n("Message format:"), mPreferHtmlToText);
+    topLayout->addRow(i18n("Default message format:"), mPreferHtmlToText);
     mPreferTextToHtml = new QRadioButton(i18n("Prefer text to HTML"), this);
     topLayout->addRow(QString(), mPreferTextToHtml);
     mUseGlobalSettings = new QRadioButton(i18n("Use Global Settings"), this);
