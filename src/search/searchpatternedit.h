@@ -170,7 +170,7 @@ public:
      * Sets the rule. The rule is accepted regardless of the return
      * value of MailCommon::SearchRule::isEmpty. This widget makes a shallow
      * copy of @p aRule and operates directly on it. If @p aRule is 0,
-     * resets itself, taks user input, but does essentially nothing.
+     * resets itself, takes user input, but does essentially nothing.
      * If you pass 0, you should probably disable it.
      */
     void setRule(MailCommon::SearchRule::Ptr aRule);

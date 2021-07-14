@@ -59,7 +59,7 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
 
     auto topLayout = new QVBoxLayout(this);
 
-    // Musn't be able to edit details for a non-resource, system folder.
+    // Mustn't be able to edit details for a non-resource, system folder.
     if ((!mIsLocalSystemFolder || mIsResourceFolder) && !mFolderCollection->isReadOnly()) {
         auto hl = new QHBoxLayout();
         topLayout->addItem(hl);

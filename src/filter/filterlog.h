@@ -131,7 +131,7 @@ Q_SIGNALS:
     void logEntryAdded(const QString &entry);
 
     /**
-     * This signal is emitted whenever the log has shrinked.
+     * This signal is emitted whenever the log has shrunk.
      */
     void logShrinked();
 

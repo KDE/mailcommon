@@ -184,7 +184,7 @@ public:
     const SearchPattern &operator=(const SearchPattern &aPattern);
 
     /**
-     * Writes the pattern into a byte array for persistance purposes.
+     * Writes the pattern into a byte array for persistence purposes.
      */
     QByteArray serialize() const;
 
