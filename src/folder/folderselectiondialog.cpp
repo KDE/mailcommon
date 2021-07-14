@@ -180,9 +180,10 @@ void FolderSelectionDialog::slotAddChildFolder()
 {
     Akonadi::Collection parentCol;
     if (canCreateCollection(parentCol)) {
-        const QString name = QInputDialog::getText(this, i18nc("@title:window", "New Folder"), i18nc("@label:textbox, name of a thing", "Name"));
+        bool ok = false;
+        const QString name = QInputDialog::getText(this, i18nc("@title:window", "New Folder"), i18nc("@label:textbox, name of a thing", "Name"), {}, {}, &ok);
 
-        if (name.isEmpty()) {
+        if (name.isEmpty() || !ok) {
             return;
         }
 
