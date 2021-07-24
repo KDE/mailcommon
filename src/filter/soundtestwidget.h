@@ -10,6 +10,11 @@
 
 #include <QWidget>
 
+namespace Phonon
+{
+class MediaObject;
+}
+
 class QPushButton;
 class KUrlRequester;
 
@@ -69,6 +74,7 @@ private:
     void slotUrlChanged(const QString &);
     KUrlRequester *m_urlRequester = nullptr;
     QPushButton *m_playButton = nullptr;
+    Phonon::MediaObject *m_player = nullptr;
 };
 }
 

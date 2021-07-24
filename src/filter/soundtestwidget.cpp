@@ -16,6 +16,7 @@
 #include <QPushButton>
 
 #include <QStandardPaths>
+#include <phonon/backendcapabilities.h>
 #include <phonon/mediaobject.h>
 
 using namespace MailCommon;
@@ -27,7 +28,7 @@ SoundTestWidget::SoundTestWidget(QWidget *parent)
     layout->setContentsMargins(0, 0, 0, 0);
 
     m_playButton = new QPushButton(this);
-    m_playButton->setIcon(QIcon::fromTheme(QStringLiteral("arrow-right")));
+    m_playButton->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-start")));
     m_playButton->setToolTip(i18n("Play"));
     layout->addWidget(m_playButton);
 
@@ -62,9 +63,7 @@ void SoundTestWidget::openSoundDialog(KUrlRequester *)
     QFileDialog *fileDialog = m_urlRequester->fileDialog();
     fileDialog->setWindowTitle(i18nc("@title:window", "Select Sound File"));
 
-    const QStringList filters{QStringLiteral("audio/x-wav"), QStringLiteral("application/ogg"), QStringLiteral("audio/x-adpcm")};
-
-    m_urlRequester->setMimeTypeFilters(filters);
+    m_urlRequester->setMimeTypeFilters(Phonon::BackendCapabilities::availableMimeTypes());
 
     const QStringList soundDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("sound/"), QStandardPaths::LocateDirectory);
 
@@ -93,9 +92,27 @@ void SoundTestWidget::playSound()
 
     const QString file = QStringLiteral("file:");
     const QString play = (parameter.startsWith(file) ? parameter.mid(file.length()) : parameter);
-    Phonon::MediaObject *player = Phonon::createPlayer(Phonon::NotificationCategory, QUrl::fromLocalFile(play));
-    player->play();
-    connect(player, &Phonon::MediaObject::finished, player, &Phonon::MediaObject::deleteLater);
+    if (m_player) {
+        if (m_player->state() == Phonon::PlayingState) {
+            m_player->pause();
+        } else {
+            m_player->setCurrentSource(QUrl::fromLocalFile(play));
+            m_player->play();
+        }
+    } else {
+        m_player = Phonon::createPlayer(Phonon::NotificationCategory, QUrl::fromLocalFile(play));
+        m_player->setParent(this);
+        m_player->play();
+        connect(m_player, &Phonon::MediaObject::stateChanged, this, [this](Phonon::State newState, Phonon::State) {
+            if (newState == Phonon::PlayingState) {
+                m_playButton->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-pause")));
+                m_playButton->setToolTip(i18n("Pause"));
+            } else {
+                m_playButton->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-start")));
+                m_playButton->setToolTip(i18n("Play"));
+            }
+        });
+    }
 }
 
 QString SoundTestWidget::url() const
