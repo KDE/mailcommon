@@ -135,7 +135,6 @@ protected Q_SLOTS:
     void slotApplicabilityChanged();
     void slotApplicableAccountsChanged();
     void slotStopProcessingButtonToggled(bool aChecked);
-    void slotConfigureShortcutButtonToggled(bool aChecked);
     void slotShortcutChanged(const QKeySequence &newSeq);
     void slotConfigureToolbarButtonToggled(bool aChecked);
     void slotFilterActionIconChanged(const QString &icon);
@@ -229,7 +228,6 @@ protected:
     QCheckBox *mStopProcessingHere = nullptr;
     QCheckBox *mConfigureShortcut = nullptr;
     QCheckBox *mConfigureToolbar = nullptr;
-    QLabel *mFilterActionLabel = nullptr;
     KIconButton *mFilterActionIconButton = nullptr;
     KKeySequenceWidget *mKeySeqWidget = nullptr;
     QGroupBox *mAdvOptsGroup = nullptr;
@@ -240,6 +238,7 @@ protected:
     QPushButton *mApplyButton = nullptr;
     bool mDoNotClose = false;
     bool mIgnoreFilterUpdates = true;
+    QWidget *mInMenuWidget = nullptr;
 };
 }
 

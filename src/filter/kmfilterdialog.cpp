@@ -45,6 +45,7 @@ using MailCommon::FilterImporterExporter;
 #include <QButtonGroup>
 #include <QCheckBox>
 #include <QDialogButtonBox>
+#include <QFormLayout>
 #include <QGridLayout>
 #include <QGroupBox>
 #include <QHBoxLayout>
@@ -174,44 +175,42 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     hbl->addLayout(vbl);
     hbl->setStretchFactor(vbl, 2);
 
-    auto patternGroupBox = new QGroupBox(i18n("Filter Criteria"), page1);
-    auto layout = new QHBoxLayout(patternGroupBox);
-    mPatternEdit = new MailCommon::SearchPatternEdit(patternGroupBox, MailCommon::SearchPatternEdit::MatchAllMessages);
-    layout->addWidget(mPatternEdit);
+    mPatternEdit = new MailCommon::SearchPatternEdit(page1, MailCommon::SearchPatternEdit::MatchAllMessages);
+    vbl->addWidget(mPatternEdit, 0, Qt::AlignTop);
 
-    vbl->addWidget(patternGroupBox, 0, Qt::AlignTop);
+    auto actionLabel = new QLabel(i18n("Filter actions:"), page1);
+    vbl->addWidget(actionLabel);
 
-    auto agb = new QGroupBox(i18n("Filter Actions"), page1);
-    auto layout2 = new QHBoxLayout;
-    mActionLister = new MailCommon::FilterActionWidgetLister(agb);
-    layout2->addWidget(mActionLister);
-    agb->setLayout(layout2);
-    vbl->addWidget(agb, 0, Qt::AlignTop);
+    mActionLister = new MailCommon::FilterActionWidgetLister(page1);
+    vbl->addWidget(mActionLister);
 
-    mAdvOptsGroup = new QGroupBox(i18n("Advanced Options"), page2);
+    mAdvOptsGroup = new QGroupBox(QString(), page2);
+    mAdvOptsGroup->setFlat(true);
+    mAdvOptsGroup->setContentsMargins({});
     {
         auto gl = new QGridLayout();
-        auto vbl3 = new QVBoxLayout();
-        gl->addLayout(vbl3, 0, 0);
-        vbl3->addStretch(1);
-
         mApplyOnIn = new QCheckBox(i18n("Apply this filter to incoming messages:"), mAdvOptsGroup);
-        vbl3->addWidget(mApplyOnIn);
+        gl->addWidget(mApplyOnIn, 0, 0);
+
+        auto radioGroupWidget = new QWidget(page2);
+        radioGroupWidget->setContentsMargins(20, 0, 0, 0);
+        gl->addWidget(radioGroupWidget, 1, 0);
+        auto vbl3 = new QVBoxLayout(radioGroupWidget);
 
         auto bg = new QButtonGroup(mAdvOptsGroup);
 
-        mApplyOnForAll = new QRadioButton(i18n("from all accounts"), mAdvOptsGroup);
+        mApplyOnForAll = new QRadioButton(i18n("From all accounts"), radioGroupWidget);
         bg->addButton(mApplyOnForAll);
         vbl3->addWidget(mApplyOnForAll);
 
-        mApplyOnForTraditional = new QRadioButton(i18n("from all but online IMAP accounts"), mAdvOptsGroup);
+        mApplyOnForTraditional = new QRadioButton(i18n("From all but online IMAP accounts"), radioGroupWidget);
         bg->addButton(mApplyOnForTraditional);
         vbl3->addWidget(mApplyOnForTraditional);
 
-        mApplyOnForChecked = new QRadioButton(i18n("from checked accounts only"), mAdvOptsGroup);
+        mApplyOnForChecked = new QRadioButton(i18n("From selected accounts only"), radioGroupWidget);
         bg->addButton(mApplyOnForChecked);
         vbl3->addWidget(mApplyOnForChecked);
-        vbl3->addStretch(2);
+        vbl3->addStretch(100);
 
         mAccountList = new KMFilterAccountList(mAdvOptsGroup);
         gl->addWidget(mAccountList, 0, 1, 4, 3);
@@ -222,17 +221,17 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
                  "and it will only affect the local copy of the message.</p>"
                  "<p>If the recipient's copy also needs to be modified, "
                  "please use \"Apply this filter <b>before</b> sending messages\".</p>"));
-        gl->addWidget(mApplyOnOut, 4, 0, 1, 4);
+        gl->addWidget(mApplyOnOut, 5, 0, 1, 4);
 
         mApplyBeforeOut = new QCheckBox(i18n("Apply this filter &before sending messages"), mAdvOptsGroup);
         mApplyBeforeOut->setToolTip(
             i18n("<p>The filter will be triggered <b>before</b> the message is sent "
                  "and it will affect both the local copy and the sent copy of the message.</p>"
                  "<p>This is required if the recipient's copy also needs to be modified.</p>"));
-        gl->addWidget(mApplyBeforeOut, 5, 0, 1, 4);
+        gl->addWidget(mApplyBeforeOut, 6, 0, 1, 4);
 
         mApplyOnCtrlJ = new QCheckBox(i18n("Apply this filter on manual &filtering"), mAdvOptsGroup);
-        gl->addWidget(mApplyOnCtrlJ, 6, 0, 1, 4);
+        gl->addWidget(mApplyOnCtrlJ, 7, 0, 1, 4);
 
         mApplyOnAllFolders = new QCheckBox(i18n("Apply this filter on inbound emails in all folders"), mAdvOptsGroup);
         mApplyOnAllFolders->setToolTip(
@@ -240,47 +239,46 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
                  "belonging to all accounts selected above. This is useful when using local filters "
                  "with IMAP accounts where new emails may have already been moved to different folders "
                  "by server-side filters.</p>"));
-        gl->addWidget(mApplyOnAllFolders, 7, 0, 1, 4);
+        gl->addWidget(mApplyOnAllFolders, 8, 0, 1, 4);
 
         mStopProcessingHere = new QCheckBox(i18n("If this filter &matches, stop processing here"), mAdvOptsGroup);
-        gl->addWidget(mStopProcessingHere, 8, 0, 1, 4);
+        gl->addWidget(mStopProcessingHere, 9, 0, 1, 4);
 
         mConfigureShortcut = new QCheckBox(i18n("Add this filter to the Apply Filter menu"), mAdvOptsGroup);
-        gl->addWidget(mConfigureShortcut, 9, 0, 1, 2);
+        gl->addWidget(mConfigureShortcut, 10, 0, 1, 2);
 
-        auto keyButtonLabel = new QLabel(i18n("Shortcut:"), mAdvOptsGroup);
-        keyButtonLabel->setAlignment(Qt::AlignVCenter | Qt::AlignRight);
-        gl->addWidget(keyButtonLabel, 9, 2, 1, 1);
+        mInMenuWidget = new QWidget(mAdvOptsGroup);
+        mInMenuWidget->setContentsMargins(20, 0, 0, 0);
+        gl->addWidget(mInMenuWidget, 11, 0, 1, 4);
+        auto inMenuLayout = new QFormLayout(mInMenuWidget);
 
-        mKeySeqWidget = new KKeySequenceWidget(mAdvOptsGroup);
+        connect(mConfigureShortcut, &QCheckBox::toggled, this, [this](bool aChecked) {
+            if (mFilter) {
+                mFilter->setConfigureShortcut(aChecked);
+                mInMenuWidget->setEnabled(aChecked);
+
+                // Enable the apply button
+                slotDialogUpdated();
+            }
+        });
+
+        mConfigureToolbar = new QCheckBox(i18n("Additionally add this filter to the toolbar"), mInMenuWidget);
+        inMenuLayout->addRow(mConfigureToolbar);
+
+        mKeySeqWidget = new KKeySequenceWidget(mInMenuWidget);
         mKeySeqWidget->setObjectName(QStringLiteral("FilterShortcutSelector"));
-        gl->addWidget(mKeySeqWidget, 9, 3, 1, 1);
-        mKeySeqWidget->setEnabled(false);
         mKeySeqWidget->setModifierlessAllowed(true);
         mKeySeqWidget->setCheckActionCollections(actionCollection);
+        inMenuLayout->addRow(i18n("Shortcut:"), mKeySeqWidget);
 
-        mConfigureToolbar = new QCheckBox(i18n("Additionally add this filter to the toolbar"), mAdvOptsGroup);
-        gl->addWidget(mConfigureToolbar, 10, 0, 1, 4);
-        mConfigureToolbar->setEnabled(false);
-
-        auto hbox = new QWidget(mAdvOptsGroup);
-        auto hboxHBoxLayout = new QHBoxLayout(hbox);
-        hboxHBoxLayout->setContentsMargins(0, 0, 0, 0);
-        mFilterActionLabel = new QLabel(i18n("Icon for this filter:"), hbox);
-        hboxHBoxLayout->addWidget(mFilterActionLabel);
-        mFilterActionLabel->setEnabled(false);
-
-        mFilterActionIconButton = new KIconButton(hbox);
-        hboxHBoxLayout->addWidget(mFilterActionIconButton);
-        mFilterActionLabel->setBuddy(mFilterActionIconButton);
+        mFilterActionIconButton = new KIconButton(mInMenuWidget);
         mFilterActionIconButton->setIconType(KIconLoader::NoGroup, KIconLoader::Action, false);
         mFilterActionIconButton->setIconSize(16);
         mFilterActionIconButton->setIcon(QIcon::fromTheme(QStringLiteral("system-run")));
-        mFilterActionIconButton->setEnabled(false);
-
-        gl->addWidget(hbox, 11, 0, 1, 4);
+        inMenuLayout->addRow(i18n("Icon for this filter:"), mFilterActionIconButton);
 
         mAdvOptsGroup->setLayout(gl);
+        mInMenuWidget->setEnabled(false);
     }
     vbl2->addWidget(mAdvOptsGroup, 0, Qt::AlignTop);
 
@@ -317,8 +315,6 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     // transfer changes from the 'stop processing here'
     // check box to the filter
     connect(mStopProcessingHere, &QCheckBox::toggled, this, &KMFilterDialog::slotStopProcessingButtonToggled);
-
-    connect(mConfigureShortcut, &QCheckBox::toggled, this, &KMFilterDialog::slotConfigureShortcutButtonToggled);
 
     connect(mKeySeqWidget, &KKeySequenceWidget::keySequenceChanged, this, &KMFilterDialog::slotShortcutChanged);
 
@@ -514,7 +510,7 @@ void KMFilterDialog::slotFilterSelected(MailFilter *aFilter)
     mApplyOnAllFolders->setChecked(applyOnAllFolders);
     mApplyOnForTraditional->setChecked(applyOnTraditional);
     mApplyOnForChecked->setChecked(!applyOnForAll && !applyOnTraditional);
-    mAccountList->setEnabled(mApplyOnForChecked->isEnabled() && mApplyOnForChecked->isChecked());
+    mAccountList->setVisible(mApplyOnForChecked->isEnabled() && mApplyOnForChecked->isChecked());
     slotUpdateAccountList();
     mApplyBeforeOut->setChecked(applyBeforeOut);
     mApplyOnOut->setChecked(applyOnOut);
@@ -563,7 +559,7 @@ void KMFilterDialog::slotApplicabilityChanged()
         mApplyOnForAll->setEnabled(mApplyOnIn->isChecked());
         mApplyOnForTraditional->setEnabled(mApplyOnIn->isChecked());
         mApplyOnForChecked->setEnabled(mApplyOnIn->isChecked());
-        mAccountList->setEnabled(mApplyOnForChecked->isEnabled() && mApplyOnForChecked->isChecked());
+        mAccountList->setVisible(mApplyOnForChecked->isEnabled() && mApplyOnForChecked->isChecked());
 
         // Advanced tab functionality - Update list of accounts this filter applies to
         if (!mApplyOnForAll->isChecked()) {
@@ -600,20 +596,6 @@ void KMFilterDialog::slotStopProcessingButtonToggled(bool aChecked)
 {
     if (mFilter) {
         mFilter->setStopProcessingHere(aChecked);
-
-        // Enable the apply button
-        slotDialogUpdated();
-    }
-}
-
-void KMFilterDialog::slotConfigureShortcutButtonToggled(bool aChecked)
-{
-    if (mFilter) {
-        mFilter->setConfigureShortcut(aChecked);
-        mKeySeqWidget->setEnabled(aChecked);
-        mConfigureToolbar->setEnabled(aChecked);
-        mFilterActionIconButton->setEnabled(aChecked);
-        mFilterActionLabel->setEnabled(aChecked);
 
         // Enable the apply button
         slotDialogUpdated();

@@ -14,6 +14,7 @@ using MailCommon::RuleWidgetHandlerManager;
 #include <KLocalizedString>
 #include <Libkdepim/LineEditCatchReturnKey>
 #include <QButtonGroup>
+#include <QFormLayout>
 #include <QHBoxLayout>
 #include <QIcon>
 #include <QLineEdit>
@@ -580,7 +581,7 @@ void SearchPatternEdit::setPatternEditOptions(SearchPatternEdit::SearchPatternEd
 
 void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeType modeType)
 {
-    auto layout = new QVBoxLayout(this);
+    auto layout = new QFormLayout(this);
     layout->setContentsMargins(0, 0, 0, 0);
 
     const bool matchAllMessages = (options & MailCommon::SearchPatternEdit::MatchAllMessages);
@@ -599,10 +600,10 @@ void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeT
         mAllMessageRBtn->setObjectName(QStringLiteral("mAllMessageRBtn"));
         mAllMessageRBtn->setChecked(false);
     }
-    layout->addWidget(mAllRBtn);
-    layout->addWidget(mAnyRBtn);
+    layout->addRow(i18n("Filter criteria:"), mAllRBtn);
+    layout->addRow(QString(), mAnyRBtn);
     if (matchAllMessages) {
-        layout->addWidget(mAllMessageRBtn);
+        layout->addRow(QString(), mAllMessageRBtn);
     }
 
     auto bg = new QButtonGroup(this);
@@ -636,7 +637,7 @@ void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeT
     connect(mRuleLister, QOverload<>::of(&SearchRuleWidgetLister::widgetRemoved), this, &SearchPatternEdit::patternChanged);
     connect(mRuleLister, &KPIM::KWidgetLister::clearWidgets, this, &SearchPatternEdit::patternChanged);
 
-    layout->addWidget(mRuleLister);
+    layout->addRow(mRuleLister);
 }
 
 void SearchPatternEdit::setSearchPattern(SearchPattern *aPattern)
