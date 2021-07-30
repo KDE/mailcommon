@@ -510,7 +510,7 @@ void KMFilterDialog::slotFilterSelected(MailFilter *aFilter)
     mApplyOnAllFolders->setChecked(applyOnAllFolders);
     mApplyOnForTraditional->setChecked(applyOnTraditional);
     mApplyOnForChecked->setChecked(!applyOnForAll && !applyOnTraditional);
-    mAccountList->setVisible(mApplyOnForChecked->isEnabled() && mApplyOnForChecked->isChecked());
+    mAccountList->setEnabled(mApplyOnForChecked->isEnabled() && mApplyOnForChecked->isChecked());
     slotUpdateAccountList();
     mApplyBeforeOut->setChecked(applyBeforeOut);
     mApplyOnOut->setChecked(applyOnOut);
@@ -559,7 +559,7 @@ void KMFilterDialog::slotApplicabilityChanged()
         mApplyOnForAll->setEnabled(mApplyOnIn->isChecked());
         mApplyOnForTraditional->setEnabled(mApplyOnIn->isChecked());
         mApplyOnForChecked->setEnabled(mApplyOnIn->isChecked());
-        mAccountList->setVisible(mApplyOnForChecked->isEnabled() && mApplyOnForChecked->isChecked());
+        mAccountList->setEnabled(mApplyOnForChecked->isEnabled() && mApplyOnForChecked->isChecked());
 
         // Advanced tab functionality - Update list of accounts this filter applies to
         if (!mApplyOnForAll->isChecked()) {
