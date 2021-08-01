@@ -48,7 +48,7 @@ SoundTestWidget::~SoundTestWidget()
 
 void SoundTestWidget::slotUrlChanged(const QString &url)
 {
-    m_playButton->setEnabled(!url.isEmpty());
+    m_playButton->setEnabled(!url.trimmed().isEmpty());
     Q_EMIT textChanged(url);
 }
 
