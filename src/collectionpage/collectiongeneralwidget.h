@@ -10,7 +10,6 @@
 #include <AkonadiCore/Collection>
 #include <QWidget>
 class QCheckBox;
-class QFormLayout;
 namespace KIdentityManagement
 {
 class IdentityCombo;

@@ -13,7 +13,6 @@ class QCheckBox;
 class KPluralHandlingSpinBox;
 class QRadioButton;
 class QPushButton;
-class KJob;
 namespace MailCommon
 {
 class FolderRequester;

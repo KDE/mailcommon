@@ -26,7 +26,6 @@ class KIconButton;
 class KKeySequenceWidget;
 
 class QCheckBox;
-class QLabel;
 class QPushButton;
 class QRadioButton;
 class QPushButton;
