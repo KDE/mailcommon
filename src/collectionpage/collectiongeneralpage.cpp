@@ -57,8 +57,6 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
     mIsLocalSystemFolder = CommonKernel->isSystemFolderCollection(collection) || Kernel::folderIsInbox(collection);
 
     mIsResourceFolder = (collection.parentCollection() == Akonadi::Collection::root());
-    QLabel *label = nullptr;
-
     auto topLayout = new QVBoxLayout(this);
 
     mCollectionGeneralWidget = new CollectionGeneralWidget(this);
