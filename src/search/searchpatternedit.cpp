@@ -558,7 +558,6 @@ void SearchRuleWidgetLister::regenerateRuleListFromWidgets()
 
 SearchPatternEdit::SearchPatternEdit(QWidget *parent, SearchPatternEditOptions options, SearchModeType modeType)
     : QWidget(parent)
-    , mAllMessageRBtn(nullptr)
 {
     setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     setObjectName(QStringLiteral("SearchPatternEdit"));
