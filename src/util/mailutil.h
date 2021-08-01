@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_MAILUTIL_H
-#define MAILCOMMON_MAILUTIL_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -64,4 +63,3 @@ Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isLocalCollection(const QString &resour
 }
 }
 
-#endif

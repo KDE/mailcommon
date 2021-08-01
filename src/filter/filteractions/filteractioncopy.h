@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONCOPY_H
-#define MAILCOMMON_FILTERACTIONCOPY_H
+#pragma once
 
 #include "filteractionwithfolder.h"
 
@@ -35,4 +34,3 @@ protected Q_SLOTS:
 };
 }
 
-#endif

@@ -4,8 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef FILTERACTIONMISSINGSOUNDURLDIALOG_H
-#define FILTERACTIONMISSINGSOUNDURLDIALOG_H
+#pragma once
 
 #include <QDialog>
 class KUrlRequester;
@@ -26,4 +25,3 @@ private:
 };
 }
 
-#endif // FILTERACTIONMISSINGSOUNDURLDIALOG_H

@@ -4,8 +4,7 @@
  *  SPDX-License-Identifier: GPL-2.0-only
  */
 
-#ifndef FILTERACTIONENCRYPTTEST_H_
-#define FILTERACTIONENCRYPTTEST_H_
+#pragma once
 
 #include "gpghelper.h"
 #include <QObject>
@@ -24,4 +23,3 @@ private:
     GPGHelper *mGpg = {};
 };
 
-#endif

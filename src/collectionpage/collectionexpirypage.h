@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef MAILCOMMON_COLLECTIONEXPIRYPAGE_H
-#define MAILCOMMON_COLLECTIONEXPIRYPAGE_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -46,4 +45,3 @@ private:
 AKONADI_COLLECTION_PROPERTIES_PAGE_FACTORY(CollectionExpiryPageFactory, CollectionExpiryPage)
 }
 
-#endif

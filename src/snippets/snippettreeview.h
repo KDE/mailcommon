@@ -7,8 +7,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_SNIPPETTREEVIEW_H
-#define MAILCOMMON_SNIPPETTREEVIEW_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include <QTreeView>
@@ -44,4 +43,3 @@ private:
     MailCommon::SnippetsManager *mSnippetsManager = nullptr;
 };
 }
-#endif

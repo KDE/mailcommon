@@ -5,8 +5,7 @@
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
  */
-#ifndef MAILCOMMON_MAILFILTER_H
-#define MAILCOMMON_MAILFILTER_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -340,4 +339,3 @@ MAILCOMMON_EXPORT QDataStream &operator<<(QDataStream &stream, const MailFilter 
 MAILCOMMON_EXPORT QDataStream &operator>>(QDataStream &stream, MailFilter &filter);
 }
 
-#endif /*MAILCOMMON_MAILFILTER_H*/

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KMFILTERLISTBOX_H
-#define KMFILTERLISTBOX_H
+#pragma once
 
 #include "search/searchpattern.h"
 #include <QGroupBox>
@@ -245,4 +244,3 @@ private:
     void swapNeighbouringFilters(int untouchedOne, int movedOne);
 };
 }
-#endif // KMFILTERLISTBOX_H

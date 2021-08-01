@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef NUMERICDOUBLERULEWIDGETHANDLER_H
-#define NUMERICDOUBLERULEWIDGETHANDLER_H
+#pragma once
 
 #include "interfaces/rulewidgethandler.h"
 
@@ -47,4 +46,3 @@ private:
 };
 }
 
-#endif // NUMERICDOUBLERULEWIDGETHANDLER_H

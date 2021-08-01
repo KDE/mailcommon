@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_ITEMCONTEXT_H
-#define MAILCOMMON_ITEMCONTEXT_H
+#pragma once
 
 #include "mailcommon/searchpattern.h"
 #include "mailcommon_export.h"
@@ -86,4 +85,3 @@ private:
 };
 }
 
-#endif

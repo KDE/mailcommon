@@ -4,8 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef FILTERACTIONMISSINGTEMPLATEDIALOG_H
-#define FILTERACTIONMISSINGTEMPLATEDIALOG_H
+#pragma once
 
 #include <QDialog>
 
@@ -26,4 +25,3 @@ private:
     QComboBox *mComboBoxTemplate = nullptr;
 };
 }
-#endif // FILTERACTIONMISSINGTEMPLATEDIALOG_H

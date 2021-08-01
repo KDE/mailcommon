@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONWITHTEST_H
-#define MAILCOMMON_FILTERACTIONWITHTEST_H
+#pragma once
 
 #include "filteraction.h"
 
@@ -71,4 +70,3 @@ protected:
 };
 }
 
-#endif

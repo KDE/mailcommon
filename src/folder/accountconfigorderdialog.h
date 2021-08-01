@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef ACCOUNTCONFIGORDERDIALOG_H
-#define ACCOUNTCONFIGORDERDIALOG_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include <QDialog>
@@ -40,4 +39,3 @@ private:
 };
 }
 
-#endif // ACCOUNTCONFIGORDERDIALOG_H

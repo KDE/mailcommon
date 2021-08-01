@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef FILTERACTIONWITHURLTEST_H
-#define FILTERACTIONWITHURLTEST_H
+#pragma once
 
 #include <QObject>
 
@@ -24,4 +23,3 @@ private Q_SLOTS:
     void shouldTestUrl();
 };
 
-#endif // FILTERACTIONWITHURLTEST_H

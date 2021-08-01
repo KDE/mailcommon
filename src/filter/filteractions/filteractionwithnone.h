@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONWITHNONE_H
-#define MAILCOMMON_FILTERACTIONWITHNONE_H
+#pragma once
 
 #include "filteraction.h"
 
@@ -53,4 +52,3 @@ public:
 };
 }
 
-#endif

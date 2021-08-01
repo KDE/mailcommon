@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef ADDTAGDIALOG_H
-#define ADDTAGDIALOG_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include "tag.h"
@@ -37,4 +36,3 @@ private:
     AddTagDialogPrivate *const d;
 };
 }
-#endif // ADDTAGDIALOG_H

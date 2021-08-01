@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONDICT_H
-#define MAILCOMMON_FILTERACTIONDICT_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -92,4 +91,3 @@ private:
 };
 }
 
-#endif

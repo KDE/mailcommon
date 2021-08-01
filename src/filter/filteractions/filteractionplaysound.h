@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONPLAYSOUND_H
-#define MAILCOMMON_FILTERACTIONPLAYSOUND_H
+#pragma once
 
 #include "filteractionwithtest.h"
 
@@ -40,4 +39,3 @@ private:
 };
 }
 
-#endif

@@ -7,8 +7,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_SNIPPETVARIABLEDIALOG_P_H
-#define MAILCOMMON_SNIPPETVARIABLEDIALOG_P_H
+#pragma once
 
 #include <QDialog>
 
@@ -41,4 +40,3 @@ private:
 };
 }
 
-#endif

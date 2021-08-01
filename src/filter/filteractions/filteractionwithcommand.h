@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONWITHCOMMAND_H
-#define MAILCOMMON_FILTERACTIONWITHCOMMAND_H
+#pragma once
 
 #include "filteractionwithurl.h"
 #include <QVector>
@@ -57,4 +56,3 @@ public:
 };
 }
 
-#endif

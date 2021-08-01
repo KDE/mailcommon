@@ -7,8 +7,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_SNIPPETSMANAGER_H
-#define MAILCOMMON_SNIPPETSMANAGER_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -133,4 +132,3 @@ private:
 };
 }
 
-#endif

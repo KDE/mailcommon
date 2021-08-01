@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONFORWARD_H
-#define MAILCOMMON_FILTERACTIONFORWARD_H
+#pragma once
 
 #include "filteractionwithaddress.h"
 
@@ -40,4 +39,3 @@ private:
 };
 }
 
-#endif

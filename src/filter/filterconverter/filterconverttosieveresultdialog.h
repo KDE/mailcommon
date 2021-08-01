@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef FILTERCONVERTTOSIEVERESULTDIALOG_H
-#define FILTERCONVERTTOSIEVERESULTDIALOG_H
+#pragma once
 
 #include <KSyntaxHighlighting/Repository>
 #include <QDialog>
@@ -36,4 +35,3 @@ private:
 };
 }
 
-#endif // FILTERCONVERTTOSIEVERESULTDIALOG_H

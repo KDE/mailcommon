@@ -5,8 +5,7 @@
 
   SPDX-License-Identifier: GPL-2.0-only
 */
-#ifndef MAILCOMMON_REDIRECTDIALOG_H
-#define MAILCOMMON_REDIRECTDIALOG_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -74,4 +73,3 @@ private:
 };
 }
 
-#endif

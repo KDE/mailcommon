@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef ITEMCONTEXTTEST_H
-#define ITEMCONTEXTTEST_H
+#pragma once
 
 #include <QObject>
 
@@ -22,4 +21,3 @@ private Q_SLOTS:
     void shouldAssignCollection();
 };
 
-#endif // ITEMCONTEXTTEST_H

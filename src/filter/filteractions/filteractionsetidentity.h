@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONSETIDENTITY_H
-#define MAILCOMMON_FILTERACTIONSETIDENTITY_H
+#pragma once
 
 #include "filteractionwithuoid.h"
 
@@ -33,4 +32,3 @@ public:
 };
 }
 
-#endif

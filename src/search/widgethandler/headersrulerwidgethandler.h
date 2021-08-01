@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef HEADERSRULERWIDGETHANDLER_H
-#define HEADERSRULERWIDGETHANDLER_H
+#pragma once
 
 #include "interfaces/rulewidgethandler.h"
 
@@ -46,4 +45,3 @@ private:
     QString currentValue(const QStackedWidget *valueStack, SearchRule::Function func) const;
 };
 }
-#endif // HEADERSRULERWIDGETHANDLER_H

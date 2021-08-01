@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_FOLDERSETTINGS_H
-#define MAILCOMMON_FOLDERSETTINGS_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include <MessageViewer/Viewer>
@@ -143,4 +142,3 @@ private:
 };
 }
 
-#endif

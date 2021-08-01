@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef RESOURCEREADCONFIGFILE_H
-#define RESOURCEREADCONFIGFILE_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include <KConfigGroup>
@@ -27,4 +26,3 @@ private:
 };
 }
 
-#endif // RESOURCEREADCONFIGFILE_H

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef COLLECTIONEXPIRYWIDGET_H
-#define COLLECTIONEXPIRYWIDGET_H
+#pragma once
 #include "mailcommon_export.h"
 
 #include <MailCommon/ExpireCollectionAttribute>
@@ -67,4 +66,3 @@ private:
 };
 }
 
-#endif // COLLECTIONEXPIRYWIDGET_H

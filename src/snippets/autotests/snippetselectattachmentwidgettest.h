@@ -4,8 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 */
 
-#ifndef SNIPPETSELECTATTACHMENTWIDGETTEST_H
-#define SNIPPETSELECTATTACHMENTWIDGETTEST_H
+#pragma once
 
 #include <QObject>
 
@@ -19,4 +18,3 @@ private Q_SLOTS:
     void shouldHaveDefaultValues();
 };
 
-#endif // SNIPPETSELECTATTACHMENTWIDGETTEST_H

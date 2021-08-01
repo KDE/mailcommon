@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef FILTERACTIONREMOVEHEADERTEST_H
-#define FILTERACTIONREMOVEHEADERTEST_H
+#pragma once
 
 #include <QObject>
 
@@ -26,4 +25,3 @@ private Q_SLOTS:
     void shouldHaveRequiredPart();
 };
 
-#endif // FILTERACTIONREMOVEHEADERTEST_H

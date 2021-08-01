@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTION_ENCRYPT_H_
-#define MAILCOMMON_FILTERACTION_ENCRYPT_H_
+#pragma once
 
 #include "filteractionwithcrypto.h"
 
@@ -52,4 +51,3 @@ private:
 };
 } // namespace MailCommon
 
-#endif

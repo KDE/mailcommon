@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONREWRITEHEADER_H
-#define MAILCOMMON_FILTERACTIONREWRITEHEADER_H
+#pragma once
 
 #include "filteractionwithstringlist.h"
 
@@ -46,4 +45,3 @@ private:
 };
 }
 
-#endif

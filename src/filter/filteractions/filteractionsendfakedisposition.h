@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONSENDFAKEDISPOSITION_H
-#define MAILCOMMON_FILTERACTIONSENDFAKEDISPOSITION_H
+#pragma once
 
 #include "filteractionwithstringlist.h"
 
@@ -35,4 +34,3 @@ public:
 };
 }
 
-#endif

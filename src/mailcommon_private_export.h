@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MAILCOMMONPRIVATE_EXPORT_H
-#define MAILCOMMONPRIVATE_EXPORT_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -18,4 +17,3 @@
 #define MAILCOMMON_TESTS_EXPORT
 #endif
 
-#endif

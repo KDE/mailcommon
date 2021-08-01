@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_INTERFACES_RULEWIDGETHANDLER_H
-#define MAILCOMMON_INTERFACES_RULEWIDGETHANDLER_H
+#pragma once
 
 #include "search/searchpattern.h"
 
@@ -42,4 +41,3 @@ public:
 };
 }
 
-#endif

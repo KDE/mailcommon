@@ -4,8 +4,7 @@
  * SPDX-License-Identifier: GPL-2.0-only
  */
 
-#ifndef MAILCOMMON_FOLDERREQUESTER_H
-#define MAILCOMMON_FOLDERREQUESTER_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -102,4 +101,3 @@ protected:
 };
 }
 
-#endif

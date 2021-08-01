@@ -4,8 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef FILTERACTIONMISSINGACCOUNTDIALOGTEST_H
-#define FILTERACTIONMISSINGACCOUNTDIALOGTEST_H
+#pragma once
 #include <QObject>
 
 class FilterActionMissingAccountDialogTest : public QObject
@@ -18,4 +17,3 @@ private Q_SLOTS:
     void shouldHaveDefaultValue();
 };
 
-#endif // FILTERACTIONMISSINGACCOUNTDIALOGTEST_H

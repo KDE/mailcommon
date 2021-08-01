@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTION_H
-#define MAILCOMMON_FILTERACTION_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include "searchpattern.h"
@@ -188,4 +187,3 @@ private:
 };
 }
 
-#endif

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef TAGRULEWIDGETHANDLER_H
-#define TAGRULEWIDGETHANDLER_H
+#pragma once
 
 #include "interfaces/rulewidgethandler.h"
 
@@ -43,4 +42,3 @@ public:
 };
 }
 
-#endif // TAGRULEWIDGETHANDLER_H

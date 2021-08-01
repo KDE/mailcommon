@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_TAGWIDGET_H
-#define MAILCOMMON_TAGWIDGET_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -62,4 +61,3 @@ private:
 };
 }
 
-#endif // MAILCOMMON_TAGWIDGET_H

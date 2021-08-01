@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_FOLDERTREEWIDGET_H
-#define MAILCOMMON_FOLDERTREEWIDGET_H
+#pragma once
 
 #include "foldertreewidgetproxymodel.h"
 #include "mailcommon_export.h"
@@ -126,4 +125,3 @@ private:
 };
 }
 
-#endif

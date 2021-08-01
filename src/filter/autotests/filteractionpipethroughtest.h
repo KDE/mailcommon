@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef FILTERACTIONPIPETHROUGH_TEST_H
-#define FILTERACTIONPIPETHROUGH_TEST_H
+#pragma once
 
 #include <QObject>
 
@@ -34,4 +33,3 @@ private:
     void setOutput(MailCommon::FilterAction *filter, const QByteArray &output);
 };
 
-#endif

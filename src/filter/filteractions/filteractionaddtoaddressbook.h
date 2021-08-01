@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONADDTOADDRESSBOOK_H
-#define MAILCOMMON_FILTERACTIONADDTOADDRESSBOOK_H
+#pragma once
 
 #include "filteractionwithstringlist.h"
 
@@ -48,4 +47,3 @@ private:
 };
 }
 
-#endif

@@ -5,8 +5,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_SENDMDNHANDLER_H
-#define MAILCOMMON_SENDMDNHANDLER_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -52,4 +51,3 @@ private:
 };
 }
 
-#endif

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef FILTERIMPORTERPATHCACHE_H
-#define FILTERIMPORTERPATHCACHE_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include <AkonadiCore/Collection>
@@ -36,4 +35,3 @@ private:
 };
 }
 
-#endif // FILTERIMPORTERPATHCACHE_H

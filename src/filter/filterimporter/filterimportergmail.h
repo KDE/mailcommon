@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef FILTERIMPORTERGMAIL_H
-#define FILTERIMPORTERGMAIL_H
+#pragma once
 
 #include "filter/filterimporter/filterimporterabstract.h"
 
@@ -32,4 +31,3 @@ private:
 };
 }
 
-#endif // FILTERIMPORTERGMAIL_H

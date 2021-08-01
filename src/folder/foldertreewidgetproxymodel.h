@@ -4,8 +4,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_FOLDERTREEWIDGETPROXYMODEL_H
-#define MAILCOMMON_FOLDERTREEWIDGETPROXYMODEL_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -62,4 +61,3 @@ private:
 };
 }
 
-#endif

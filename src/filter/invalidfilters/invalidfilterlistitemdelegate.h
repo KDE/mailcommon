@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef INVALIDFILTERLISTITEMDELEGATE_H
-#define INVALIDFILTERLISTITEMDELEGATE_H
+#pragma once
 
 #include <KWidgetItemDelegate>
 
@@ -31,4 +30,3 @@ Q_SIGNALS:
     void showDetails(const QString &details);
 };
 }
-#endif // INVALIDFILTERLISTITEMDELEGATE_H

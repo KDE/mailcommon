@@ -7,8 +7,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_SNIPPETDIALOG_P_H
-#define MAILCOMMON_SNIPPETDIALOG_P_H
+#pragma once
 
 #include <QDialog>
 
@@ -75,4 +74,3 @@ private:
     bool mInGroupMode = false;
 };
 }
-#endif

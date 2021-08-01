@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef INVALIDFILTERLISTMODEL_H
-#define INVALIDFILTERLISTMODEL_H
+#pragma once
 
 #include "invalidfilterinfo.h"
 #include <QAbstractListModel>
@@ -32,4 +31,3 @@ private:
 };
 }
 
-#endif // INVALIDFILTERLISTMODEL_H

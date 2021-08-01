@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_FOLDERTREEVIEW_H
-#define MAILCOMMON_FOLDERTREEVIEW_H
+#pragma once
 
 #include "foldertreewidget.h"
 #include "mailcommon/mailutil.h"
@@ -112,4 +111,3 @@ private:
 };
 }
 
-#endif

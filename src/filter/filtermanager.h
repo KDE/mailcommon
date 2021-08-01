@@ -4,8 +4,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_FILTERMANAGER_H
-#define MAILCOMMON_FILTERMANAGER_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include "mailfilter.h"
@@ -196,4 +195,3 @@ private:
 };
 }
 
-#endif

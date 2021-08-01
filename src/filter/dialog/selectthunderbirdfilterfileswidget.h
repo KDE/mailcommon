@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef SELECTTHUNDERBIRDFILTERFILESWIDGET_H
-#define SELECTTHUNDERBIRDFILTERFILESWIDGET_H
+#pragma once
 
 #include <QWidget>
 class QUrl;
@@ -40,4 +39,3 @@ private:
     Ui::SelectThunderbirdFilterFilesWidget *const ui;
 };
 }
-#endif // SELECTTHUNDERBIRDFILTERFILESWIDGET_H

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MDNADVICEHELPER_H
-#define MDNADVICEHELPER_H
+#pragma once
 
 #include "mailcommon/mdnstateattribute.h"
 #include <QObject>
@@ -58,4 +57,3 @@ private:
 };
 }
 
-#endif // MDNADVICEHELPER_H

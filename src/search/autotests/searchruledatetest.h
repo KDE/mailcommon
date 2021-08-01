@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef SEARCHRULEDATETEST_H
-#define SEARCHRULEDATETEST_H
+#pragma once
 
 #include <QObject>
 
@@ -23,4 +22,3 @@ private Q_SLOTS:
     void shouldMatchDate_data();
 };
 
-#endif // SEARCHRULEDATETEST_H

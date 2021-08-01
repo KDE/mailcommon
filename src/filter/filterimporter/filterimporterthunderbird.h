@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_FILTERIMPORTER_FILTERIMPORTERTHUNDERBIRD_P_H
-#define MAILCOMMON_FILTERIMPORTER_FILTERIMPORTERTHUNDERBIRD_P_H
+#pragma once
 
 #include "filter/filterimporter/filterimporterabstract.h"
 #include "mailcommon_export.h"
@@ -42,4 +41,3 @@ private:
 };
 }
 
-#endif /* FILTERIMPORTERTHUNDERBIRD_H */

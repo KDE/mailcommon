@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONDELETE_H
-#define MAILCOMMON_FILTERACTIONDELETE_H
+#pragma once
 
 #include "filteractionwithnone.h"
 
@@ -28,4 +27,3 @@ public:
 };
 }
 
-#endif

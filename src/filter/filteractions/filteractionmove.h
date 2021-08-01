@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONMOVE_H
-#define MAILCOMMON_FILTERACTIONMOVE_H
+#pragma once
 
 #include "filteractionwithfolder.h"
 
@@ -31,4 +30,3 @@ public:
 };
 }
 
-#endif

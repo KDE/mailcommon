@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef FILTERIMPORTBALSATEST_H
-#define FILTERIMPORTBALSATEST_H
+#pragma once
 #include <QObject>
 class FilterImportBalsatest : public QObject
 {
@@ -15,4 +14,3 @@ private Q_SLOTS:
     void testImportFilters();
 };
 
-#endif // FILTERIMPORTBALSATEST_H

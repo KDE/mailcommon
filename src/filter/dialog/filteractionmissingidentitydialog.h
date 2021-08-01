@@ -4,8 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef FILTERACTIONMISSINGIDENTITYDIALOG_H
-#define FILTERACTIONMISSINGIDENTITYDIALOG_H
+#pragma once
 
 #include <QDialog>
 
@@ -30,4 +29,3 @@ private:
 };
 }
 
-#endif // FILTERACTIONMISSINGIDENTITYDIALOG_H

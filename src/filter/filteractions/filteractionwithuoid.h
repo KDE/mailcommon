@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONWITHUOID_H
-#define MAILCOMMON_FILTERACTIONWITHUOID_H
+#pragma once
 
 #include "filteraction.h"
 
@@ -61,4 +60,3 @@ protected:
 };
 }
 
-#endif

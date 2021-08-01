@@ -4,8 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef FILTERACTIONMISSINGTRANSPORTDIALOG_H
-#define FILTERACTIONMISSINGTRANSPORTDIALOG_H
+#pragma once
 
 #include <QDialog>
 namespace MailTransport
@@ -30,4 +29,3 @@ private:
 };
 }
 
-#endif // FILTERACTIONMISSINGTRANSPORTDIALOG_H

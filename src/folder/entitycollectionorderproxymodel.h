@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_ENTITYCOLLECTIONORDERPROXYMODEL_H
-#define MAILCOMMON_ENTITYCOLLECTIONORDERPROXYMODEL_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include <EntityOrderProxyModel>
@@ -51,4 +50,3 @@ private:
 };
 }
 
-#endif

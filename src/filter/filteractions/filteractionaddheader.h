@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONADDHEADER_H
-#define MAILCOMMON_FILTERACTIONADDHEADER_H
+#pragma once
 
 #include "filteractionwithstringlist.h"
 
@@ -47,4 +46,3 @@ private:
 };
 }
 
-#endif

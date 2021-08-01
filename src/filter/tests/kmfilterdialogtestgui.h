@@ -4,7 +4,4 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef KMFILTERDIALOGTESTGUI_H
-#define KMFILTERDIALOGTESTGUI_H
-
-#endif // KMFILTERDIALOGTESTGUI_H
+#pragma once

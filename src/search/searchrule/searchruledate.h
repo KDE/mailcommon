@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef SEARCHRULEDATE_H
-#define SEARCHRULEDATE_H
+#pragma once
 
 #include "searchpattern.h"
 #include <AkonadiCore/Item>
@@ -55,4 +54,3 @@ public:
 };
 }
 
-#endif // SEARCHRULEDATE_H

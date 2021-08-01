@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONWITHURL_H
-#define MAILCOMMON_FILTERACTIONWITHURL_H
+#pragma once
 
 #include "filteraction.h"
 #include <QToolButton>
@@ -105,4 +104,3 @@ private Q_SLOTS:
 };
 }
 
-#endif

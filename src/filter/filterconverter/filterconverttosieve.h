@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef FILTERCONVERTTOSIEVE_H
-#define FILTERCONVERTTOSIEVE_H
+#pragma once
 
 #include <QVector>
 
@@ -24,4 +23,3 @@ private:
     const QVector<MailFilter *> mListFilters;
 };
 }
-#endif // FILTERCONVERTTOSIEVE_H

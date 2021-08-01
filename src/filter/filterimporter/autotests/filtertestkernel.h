@@ -3,8 +3,7 @@
 
   SPDX-License-Identifier: GPL-2.0-only
 */
-#ifndef FILTERTESTKERNEL_H
-#define FILTERTESTKERNEL_H
+#pragma once
 
 #include <MailCommon/MailInterfaces>
 
@@ -51,4 +50,3 @@ private:
     Akonadi::EntityMimeTypeFilterModel *mCollectionModel = nullptr;
 };
 
-#endif

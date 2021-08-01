@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef MAILCOMMON_FILTERLOG_H
-#define MAILCOMMON_FILTERLOG_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -150,4 +149,3 @@ private:
 };
 }
 
-#endif

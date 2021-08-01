@@ -8,8 +8,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_FILTERACTIONWIDGET_H
-#define MAILCOMMON_FILTERACTIONWIDGET_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -157,4 +156,3 @@ private:
 };
 }
 
-#endif

@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_SEARCHPATTERN_H
-#define MAILCOMMON_SEARCHPATTERN_H
+#pragma once
 
 #include "mailcommon/searchrule.h"
 #include "mailcommon_export.h"
@@ -220,4 +219,3 @@ private:
 
 Q_DECLARE_METATYPE(MailCommon::SearchRule::RequiredPart)
 
-#endif /* MAILCOMMON_SEARCHPATTERN_H_ */

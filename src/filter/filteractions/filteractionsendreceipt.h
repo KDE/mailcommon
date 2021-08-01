@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONSENDRECEIPT_H
-#define MAILCOMMON_FILTERACTIONSENDRECEIPT_H
+#pragma once
 
 #include "filteractionwithnone.h"
 
@@ -27,4 +26,3 @@ public:
 };
 }
 
-#endif

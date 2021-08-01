@@ -7,8 +7,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_SNIPPETSMODEL_P_H
-#define MAILCOMMON_SNIPPETSMODEL_P_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include <QAbstractItemModel>
@@ -124,4 +123,3 @@ private:
 }
 Q_DECLARE_TYPEINFO(MailCommon::SnippetsInfo, Q_MOVABLE_TYPE);
 
-#endif

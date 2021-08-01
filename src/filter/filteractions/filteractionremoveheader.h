@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONREMOVEHEADER_H
-#define MAILCOMMON_FILTERACTIONREMOVEHEADER_H
+#pragma once
 
 #include "filteractionwithstringlist.h"
 
@@ -33,4 +32,3 @@ public:
 };
 }
 
-#endif

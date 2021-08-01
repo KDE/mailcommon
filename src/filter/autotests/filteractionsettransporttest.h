@@ -1,5 +1,4 @@
-#ifndef FILTERACTIONSETTRANSPORTTEST_H
-#define FILTERACTIONSETTRANSPORTTEST_H
+#pragma once
 
 #include <QObject>
 
@@ -17,4 +16,3 @@ private Q_SLOTS:
     void shouldHaveSieveRequires();
 };
 
-#endif // FILTERACTIONSETTRANSPORTTEST_H

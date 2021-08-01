@@ -5,8 +5,7 @@
 
 */
 
-#ifndef REDIRECTWIDGET_H
-#define REDIRECTWIDGET_H
+#pragma once
 
 #include <QWidget>
 
@@ -37,4 +36,3 @@ private:
 };
 }
 
-#endif // REDIRECTWIDGET_H

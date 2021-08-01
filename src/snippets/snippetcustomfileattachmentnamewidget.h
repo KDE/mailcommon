@@ -4,8 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef SNIPPETCUSTOMFILEATTACHMENTNAMEWIDGET_H
-#define SNIPPETCUSTOMFILEATTACHMENTNAMEWIDGET_H
+#pragma once
 
 #include "mailcommon_private_export.h"
 #include <MessageComposer/ConvertSnippetVariablesUtil>
@@ -34,4 +33,3 @@ private:
 };
 }
 
-#endif // SNIPPETCUSTOMFILEATTACHMENTNAMEWIDGET_H

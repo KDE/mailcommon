@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef EXPIRECOLLECTIONATTRIBUTETEST_H
-#define EXPIRECOLLECTIONATTRIBUTETEST_H
+#pragma once
 
 #include <QObject>
 
@@ -26,4 +25,3 @@ private Q_SLOTS:
     void shouldHaveType();
 };
 
-#endif // EXPIRECOLLECTIONATTRIBUTETEST_H

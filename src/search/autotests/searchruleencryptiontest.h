@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef MAILCOMMON_SEARCH_SEARCHRULEENCRYPTIONTEST_H_
-#define MAILCOMMON_SEARCH_SEARCHRULEENCRYPTIONTEST_H_
+#pragma once
 
 #include <QObject>
 
@@ -20,4 +19,3 @@ private Q_SLOTS:
     void shouldMatchMessage_data();
 };
 
-#endif

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_FILTERIMPORTER_FILTERIMPORTERBALSA_P_H
-#define MAILCOMMON_FILTERIMPORTER_FILTERIMPORTERBALSA_P_H
+#pragma once
 
 #include "filterimporterabstract.h"
 
@@ -33,4 +32,3 @@ private:
 };
 }
 
-#endif // FILTERIMPORTERBALSA_H

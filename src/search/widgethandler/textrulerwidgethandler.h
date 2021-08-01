@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef TEXTRULERWIDGETHANDLER_H
-#define TEXTRULERWIDGETHANDLER_H
+#pragma once
 
 #include "interfaces/rulewidgethandler.h"
 
@@ -46,4 +45,3 @@ private:
     QString currentValue(const QStackedWidget *valueStack, SearchRule::Function func) const;
 };
 }
-#endif // TEXTRULERWIDGETHANDLER_H

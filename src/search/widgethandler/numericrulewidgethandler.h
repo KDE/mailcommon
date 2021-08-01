@@ -1,5 +1,4 @@
-#ifndef NUMERICRULEWIDGETHANDLER_H
-#define NUMERICRULEWIDGETHANDLER_H
+#pragma once
 
 #include "interfaces/rulewidgethandler.h"
 
@@ -40,4 +39,3 @@ private:
     QString currentValue(const QStackedWidget *valueStack) const;
 };
 }
-#endif // NUMERICRULEWIDGETHANDLER_H

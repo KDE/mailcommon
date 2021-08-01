@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef FILTERIMPORTCLAWMAILTEST_H
-#define FILTERIMPORTCLAWMAILTEST_H
+#pragma once
 #include <QObject>
 class FilterImportClawMailtest : public QObject
 {
@@ -15,4 +14,3 @@ private Q_SLOTS:
     void testImportFilters();
 };
 
-#endif // FILTERIMPORTCLAWMAILTEST_H

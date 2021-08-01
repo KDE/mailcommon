@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_MAILINTERFACES_H
-#define MAILCOMMON_MAILINTERFACES_H
+#pragma once
 
 #include <Collection>
 
@@ -94,4 +93,3 @@ public:
 };
 }
 
-#endif

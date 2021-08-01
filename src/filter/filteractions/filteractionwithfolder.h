@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONWITHFOLDER_H
-#define MAILCOMMON_FILTERACTIONWITHFOLDER_H
+#pragma once
 
 #include "filteraction.h"
 
@@ -90,4 +89,3 @@ protected:
 };
 }
 
-#endif

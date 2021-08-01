@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef INVALIDFILTERDIALOG_H
-#define INVALIDFILTERDIALOG_H
+#pragma once
 
 #include "invalidfilterinfo.h"
 #include "mailcommon_private_export.h"
@@ -31,4 +30,3 @@ private:
     InvalidFilterInfoWidget *mInvalidFilterInfoWidget = nullptr;
 };
 }
-#endif // INVALIDFILTERDIALOG_H

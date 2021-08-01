@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef SEARCHRULESTATUS_H
-#define SEARCHRULESTATUS_H
+#pragma once
 
 #include <AkonadiCore/Item>
 
@@ -81,4 +80,3 @@ private:
 };
 }
 
-#endif // SEARCHRULESTATUS_H

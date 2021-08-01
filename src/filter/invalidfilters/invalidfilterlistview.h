@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef INVALIDFILTERLISTVIEW_H
-#define INVALIDFILTERLISTVIEW_H
+#pragma once
 
 #include "invalidfilterinfo.h"
 #include "mailcommon_private_export.h"
@@ -25,4 +24,3 @@ Q_SIGNALS:
     void hideInformationWidget();
 };
 }
-#endif // INVALIDFILTERLISTVIEW_H

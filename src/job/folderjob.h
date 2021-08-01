@@ -5,8 +5,7 @@
  *  SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#ifndef MAILCOMMON_FOLDERJOB_H
-#define MAILCOMMON_FOLDERJOB_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include <Collection>
@@ -85,4 +84,3 @@ protected:
 };
 }
 
-#endif

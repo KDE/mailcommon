@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KMFILTERACCOUNTLIST_H
-#define KMFILTERACCOUNTLIST_H
+#pragma once
 
 #include <QTreeWidget>
 
@@ -29,4 +28,3 @@ public:
 };
 }
 
-#endif // KMFILTERACCOUNTLIST_H

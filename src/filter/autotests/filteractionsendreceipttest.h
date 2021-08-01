@@ -1,5 +1,4 @@
-#ifndef FILTERACTIONSENDRECEIPTTEST_H
-#define FILTERACTIONSENDRECEIPTTEST_H
+#pragma once
 
 #include <QObject>
 
@@ -14,4 +13,3 @@ private Q_SLOTS:
     void shouldSieveRequires();
 };
 
-#endif // FILTERACTIONSENDRECEIPTTEST_H

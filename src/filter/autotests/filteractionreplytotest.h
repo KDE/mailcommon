@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef FILTERACTIONREPLYTOTEST_H
-#define FILTERACTIONREPLYTOTEST_H
+#pragma once
 
 #include <QObject>
 
@@ -24,4 +23,3 @@ private Q_SLOTS:
     void shouldNotCreateReplyToWhenAddressIsEmpty();
 };
 
-#endif // FILTERACTIONREPLYTOTEST_H

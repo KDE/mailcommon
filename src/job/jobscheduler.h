@@ -4,8 +4,7 @@
  *  SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#ifndef MAILCOMMON_JOBSCHEDULER_H
-#define MAILCOMMON_JOBSCHEDULER_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -141,4 +140,3 @@ protected:
 };
 }
 
-#endif

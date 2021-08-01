@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_MAILUTIL_P_H
-#define MAILCOMMON_MAILUTIL_P_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include "mailutil.h"
@@ -25,4 +24,3 @@ Q_REQUIRED_RESULT bool ignoreNewMailInFolder(const Akonadi::Collection &collecti
 }
 }
 
-#endif

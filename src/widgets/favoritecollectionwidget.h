@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_FAVORITECOLLECTIONWIDGET_H
-#define MAILCOMMON_FAVORITECOLLECTIONWIDGET_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -60,4 +59,3 @@ private:
 };
 }
 
-#endif /* MAILCOMMON_FAVORITECOLLECTIONWIDGET_H */

@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_FOLDERSELECTIONDIALOG_H
-#define MAILCOMMON_FOLDERSELECTIONDIALOG_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -75,4 +74,3 @@ private:
 };
 }
 
-#endif

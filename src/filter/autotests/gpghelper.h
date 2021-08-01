@@ -4,8 +4,7 @@
  *  SPDX-License-Identifier: GPL-2.0-only
  */
 
-#ifndef GPGHELPER_H_
-#define GPGHELPER_H_
+#pragma once
 
 #include <QTemporaryDir>
 
@@ -36,4 +35,3 @@ private:
     QTemporaryDir mTmpDir;
 };
 
-#endif

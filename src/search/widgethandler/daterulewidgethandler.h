@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef DATERULEWIDGETHANDLER_H
-#define DATERULEWIDGETHANDLER_H
+#pragma once
 
 #include "interfaces/rulewidgethandler.h"
 
@@ -46,4 +45,3 @@ private:
     QString currentValue(const QStackedWidget *valueStack) const;
 };
 }
-#endif // DATERULEWIDGETHANDLER_H

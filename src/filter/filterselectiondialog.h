@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_FILTERSELECTIONDIALOG_H
-#define MAILCOMMON_FILTERSELECTIONDIALOG_H
+#pragma once
 
 #include <QDialog>
 
@@ -45,4 +44,3 @@ private:
     QPushButton *mOkButton = nullptr;
 };
 }
-#endif // FILTERSELECTIONDIALOG_H

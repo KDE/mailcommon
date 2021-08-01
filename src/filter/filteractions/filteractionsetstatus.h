@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONSETSTATUS_H
-#define MAILCOMMON_FILTERACTIONSETSTATUS_H
+#pragma once
 
 #include "filteractionstatus.h"
 namespace MailCommon
@@ -31,4 +30,3 @@ public:
 };
 }
 
-#endif

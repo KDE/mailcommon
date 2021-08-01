@@ -4,8 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 */
 
-#ifndef SNIPPETSELECTATTACHMENTWIDGET_H
-#define SNIPPETSELECTATTACHMENTWIDGET_H
+#pragma once
 
 #include "mailcommon_private_export.h"
 #include <PimCommon/SimpleStringListEditor>
@@ -42,4 +41,3 @@ private:
 };
 }
 
-#endif // SNIPPETSELECTATTACHMENTWIDGET_H

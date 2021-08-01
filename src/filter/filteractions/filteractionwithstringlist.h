@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONWITHSTRINGLIST_H
-#define MAILCOMMON_FILTERACTIONWITHSTRINGLIST_H
+#pragma once
 
 #include "filteractionwithstring.h"
 
@@ -74,4 +73,3 @@ protected:
 };
 }
 
-#endif

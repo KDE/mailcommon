@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef FILTERIMPORTTHUNDERBIRDTEST_H
-#define FILTERIMPORTTHUNDERBIRDTEST_H
+#pragma once
 #include <QObject>
 class FilterImportThunderbirdtest : public QObject
 {
@@ -22,4 +21,3 @@ private Q_SLOTS:
     void testImportTypeFilters();
 };
 
-#endif // FILTERIMPORTTHUNDERBIRDTEST_H

@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONEXEC_H
-#define MAILCOMMON_FILTERACTIONEXEC_H
+#pragma once
 
 #include "filteractionwithcommand.h"
 
@@ -28,4 +27,3 @@ public:
 };
 }
 
-#endif

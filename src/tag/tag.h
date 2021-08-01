@@ -2,8 +2,7 @@
 
    SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 */
-#ifndef MAILCOMMONTAG_H
-#define MAILCOMMONTAG_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -75,4 +74,3 @@ private:
 Q_DECLARE_OPERATORS_FOR_FLAGS(Tag::SaveFlags)
 }
 
-#endif

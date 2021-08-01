@@ -4,8 +4,7 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef COLLECTIONTEMPLATESWIDGET_H
-#define COLLECTIONTEMPLATESWIDGET_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include <AkonadiCore/Collection>
@@ -42,4 +41,3 @@ private:
 };
 }
 
-#endif // COLLECTIONTEMPLATESWIDGET_H

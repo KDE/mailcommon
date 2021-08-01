@@ -3,8 +3,7 @@
 
   SPDX-License-Identifier: GPL-2.0-only
 */
-#ifndef FILTERACTIONPLAYSOUNDTEST_H
-#define FILTERACTIONPLAYSOUNDTEST_H
+#pragma once
 
 #include <QObject>
 
@@ -21,4 +20,3 @@ private Q_SLOTS:
     void shouldSieveRequres();
 };
 
-#endif // FILTERACTIONPLAYSOUNDTEST_H

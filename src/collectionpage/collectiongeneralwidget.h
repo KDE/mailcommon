@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef COLLECTIONGENERALWIDGET_H
-#define COLLECTIONGENERALWIDGET_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include <AkonadiCore/Collection>
@@ -38,4 +37,3 @@ private:
     QSharedPointer<MailCommon::FolderSettings> mFolderCollection;
 };
 }
-#endif // COLLECTIONGENERALWIDGET_H

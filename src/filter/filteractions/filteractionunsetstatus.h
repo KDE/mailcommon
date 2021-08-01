@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef FILTERACTIONUNSETSTATUS_H
-#define FILTERACTIONUNSETSTATUS_H
+#pragma once
 
 #include "filteractionstatus.h"
 namespace MailCommon
@@ -30,4 +29,3 @@ private:
 };
 }
 
-#endif // FILTERACTIONUNSETSTATUS_H

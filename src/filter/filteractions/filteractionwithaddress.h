@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_FILTERACTIONWITHADDRESS_H
-#define MAILCOMMON_FILTERACTIONWITHADDRESS_H
+#pragma once
 
 #include "filteractionwithstring.h"
 
@@ -59,4 +58,3 @@ public:
 };
 }
 
-#endif

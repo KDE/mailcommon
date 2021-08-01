@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_SOUNDTESTWIDGET_H
-#define MAILCOMMON_SOUNDTESTWIDGET_H
+#pragma once
 
 #include <QWidget>
 
@@ -78,4 +77,3 @@ private:
 };
 }
 
-#endif

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MESSAGERULEWIDGETHANDLER_H
-#define MESSAGERULEWIDGETHANDLER_H
+#pragma once
 
 #include "interfaces/rulewidgethandler.h"
 
@@ -47,4 +46,3 @@ private:
 };
 }
 
-#endif // MESSAGERULEWIDGETHANDLER_H

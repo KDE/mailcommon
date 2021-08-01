@@ -4,8 +4,7 @@
 
   SPDX-License-Identifier: GPL-2.0-or-later
 */
-#ifndef FILTERACTIONSTATUS_H
-#define FILTERACTIONSTATUS_H
+#pragma once
 
 #include "filteractionwithstringlist.h"
 #include <Akonadi/KMime/MessageStatus>
@@ -30,4 +29,3 @@ public:
     static const int StatiCount;
 };
 }
-#endif // FILTERACTIONSTATUS_H

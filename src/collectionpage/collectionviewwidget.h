@@ -4,8 +4,7 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef COLLECTIONVIEWWIDGET_H
-#define COLLECTIONVIEWWIDGET_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include <MailCommon/FolderSettings>
@@ -53,4 +52,3 @@ private:
 };
 }
 
-#endif // COLLECTIONVIEWWIDGET_H

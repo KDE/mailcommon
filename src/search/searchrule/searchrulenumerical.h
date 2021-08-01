@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef SEARCHRULENUMERICAL_H
-#define SEARCHRULENUMERICAL_H
+#pragma once
 
 #include "searchpattern.h"
 #include <AkonadiCore/Item>
@@ -61,4 +60,3 @@ public:
     QString informationAboutNotValidRules() const override;
 };
 }
-#endif // SEARCHRULENUMERICAL_H

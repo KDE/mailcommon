@@ -4,8 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef SNIPPETCUSTOMFILEATTACHMENTNAMEDIALOG_H
-#define SNIPPETCUSTOMFILEATTACHMENTNAMEDIALOG_H
+#pragma once
 
 #include "mailcommon_private_export.h"
 #include <QDialog>
@@ -30,4 +29,3 @@ private:
     SnippetCustomFileAttachmentNameWidget *mCustomWidget = nullptr;
 };
 }
-#endif // SNIPPETCUSTOMFILEATTACHMENTNAMEDIALOG_H

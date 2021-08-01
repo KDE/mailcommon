@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef INVALIDFILTERINFO_H
-#define INVALIDFILTERINFO_H
+#pragma once
 
 #include "mailcommon_private_export.h"
 #include <QString>
@@ -34,4 +33,3 @@ private:
 }
 Q_DECLARE_TYPEINFO(MailCommon::InvalidFilterInfo, Q_MOVABLE_TYPE);
 
-#endif // INVALIDFILTERINFO_H

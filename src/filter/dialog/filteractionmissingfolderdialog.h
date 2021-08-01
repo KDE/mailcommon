@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_FILTERACTIONMISSINGFOLDERDIALOG_H
-#define MAILCOMMON_FILTERACTIONMISSINGFOLDERDIALOG_H
+#pragma once
 
 #include "mailcommon_private_export.h"
 #include <Collection>
@@ -52,4 +51,3 @@ private:
     QPushButton *mOkButton = nullptr;
 };
 
-#endif /* FILTERACTIONMISSINGFOLDERDIALOG_H */

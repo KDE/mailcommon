@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef SELECTTHUNDERBIRDFILTERFILESDIALOG_H
-#define SELECTTHUNDERBIRDFILTERFILESDIALOG_H
+#pragma once
 
 #include <QDialog>
 class QUrl;
@@ -31,4 +30,3 @@ private:
 };
 }
 
-#endif // SELECTTHUNDERBIRDFILTERFILESDIALOG_H

@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_MAILKERNEL_H
-#define MAILCOMMON_MAILKERNEL_H
+#pragma once
 
 #include "mailcommon/mailinterfaces.h"
 #include "mailcommon_export.h"
@@ -158,4 +157,3 @@ private:
 #define SettingsIf MailCommon::Kernel::self()->settingsIf()
 #define CommonKernel MailCommon::Kernel::self()
 
-#endif

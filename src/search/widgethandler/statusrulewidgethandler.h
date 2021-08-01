@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef STATUSRULEWIDGETHANDLER_H
-#define STATUSRULEWIDGETHANDLER_H
+#pragma once
 
 #include "interfaces/rulewidgethandler.h"
 
@@ -47,4 +46,3 @@ private:
 };
 }
 
-#endif // STATUSRULEWIDGETHANDLER_H

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef FILTERACTIONDELETETEST_H
-#define FILTERACTIONDELETETEST_H
+#pragma once
 
 #include <QObject>
 
@@ -24,4 +23,3 @@ private Q_SLOTS:
     void shouldDeleteItem();
 };
 
-#endif // FILTERACTIONDELETETEST_H

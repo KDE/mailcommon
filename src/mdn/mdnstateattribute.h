@@ -7,8 +7,7 @@
  *
  *****************************************************************************/
 
-#ifndef MailCommon_MDNSTATEATTRIBUTE_H
-#define MailCommon_MDNSTATEATTRIBUTE_H
+#pragma once
 
 #include "mailcommon_export.h"
 
@@ -103,4 +102,3 @@ private:
 };
 }
 
-#endif

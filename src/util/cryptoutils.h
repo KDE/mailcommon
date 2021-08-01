@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef MAILCOMMON_CRYPTOUTILS_H_
-#define MAILCOMMON_CRYPTOUTILS_H_
+#pragma once
 
 #include <KMime/Message>
 
@@ -30,4 +29,3 @@ Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isContentHeader(const KMime::Headers::B
 }
 }
 
-#endif

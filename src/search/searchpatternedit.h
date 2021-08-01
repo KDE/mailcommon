@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_SEARCHPATTERNEDIT_H
-#define MAILCOMMON_SEARCHPATTERNEDIT_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include "searchpattern.h"
@@ -280,4 +279,3 @@ private:
 };
 }
 
-#endif

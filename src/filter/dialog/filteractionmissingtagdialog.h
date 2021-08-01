@@ -4,8 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef FILTERACTIONMISSINGTAGDIALOG_H
-#define FILTERACTIONMISSINGTAGDIALOG_H
+#pragma once
 
 #include <QDialog>
 class QListWidget;
@@ -31,4 +30,3 @@ private:
     QListWidget *mTagList = nullptr;
 };
 }
-#endif // FILTERACTIONMISSINGTAGDIALOG_H

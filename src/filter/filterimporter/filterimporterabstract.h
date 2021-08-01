@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_FILTERIMPORTER_FILTERIMPORTERABSTRACT_P_H
-#define MAILCOMMON_FILTERIMPORTER_FILTERIMPORTERABSTRACT_P_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include <QStringList>
@@ -39,4 +38,3 @@ private:
 };
 }
 
-#endif // FILTERIMPORTERABSTRACT_H

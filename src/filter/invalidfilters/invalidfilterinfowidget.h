@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef INVALIDFILTERINFOWIDGET_H
-#define INVALIDFILTERINFOWIDGET_H
+#pragma once
 
 #include "mailcommon_private_export.h"
 #include <KMessageWidget>
@@ -22,4 +21,3 @@ public Q_SLOTS:
 };
 }
 
-#endif // INVALIDFILTERINFOWIDGET_H

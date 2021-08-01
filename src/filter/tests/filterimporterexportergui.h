@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef FILTERIMPORTEREXPORTERGUI_H
-#define FILTERIMPORTEREXPORTERGUI_H
+#pragma once
 
 #include "filter/filterimporterexporter.h"
 #include <QWidget>
@@ -24,4 +23,3 @@ private:
     QTextEdit *mTextEdit = nullptr;
 };
 
-#endif // FILTERIMPORTEREXPORTERGUI_H

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILCOMMON_SEARCH_SEARCHRULEENCRYPTION_H_
-#define MAILCOMMON_SEARCH_SEARCHRULEENCRYPTION_H_
+#pragma once
 
 #include "searchpattern.h"
 
@@ -23,4 +22,3 @@ public:
 };
 }
 
-#endif

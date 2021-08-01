@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef COLLECTIONEXPIRYJOB_H
-#define COLLECTIONEXPIRYJOB_H
+#pragma once
 
 #include <AkonadiCore/Collection>
 #include <QObject>
@@ -32,4 +31,3 @@ private:
 };
 }
 
-#endif // COLLECTIONEXPIRYJOB_H

@@ -3,8 +3,7 @@
 
   SPDX-License-Identifier: GPL-2.0-or-later
 */
-#ifndef SEARCHRULE_H
-#define SEARCHRULE_H
+#pragma once
 
 #include "mailcommon_export.h"
 #include <AkonadiCore/SearchQuery>
@@ -263,4 +262,3 @@ private:
 };
 }
 
-#endif // SEARCHRULE_H

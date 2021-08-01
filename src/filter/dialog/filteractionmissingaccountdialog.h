@@ -4,8 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef FILTERACTIONMISSINGACCOUNTDIALOG_H
-#define FILTERACTIONMISSINGACCOUNTDIALOG_H
+#pragma once
 
 #include <QDialog>
 namespace MailCommon
@@ -26,4 +25,3 @@ private:
     MailCommon::KMFilterAccountList *mAccountList = nullptr;
 };
 }
-#endif // FILTERACTIONMISSINGACCOUNTDIALOG_H

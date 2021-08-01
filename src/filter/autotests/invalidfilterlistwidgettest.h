@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef INVALIDFILTERLISTWIDGETTEST_H
-#define INVALIDFILTERLISTWIDGETTEST_H
+#pragma once
 
 #include <QObject>
 
@@ -20,4 +19,3 @@ private Q_SLOTS:
     void shouldAddInvalidFilters();
 };
 
-#endif // INVALIDFILTERLISTWIDGETTEST_H
