@@ -31,10 +31,7 @@
 #include <KMessageBox>
 
 #include <QCheckBox>
-#include <QFontDatabase>
 #include <QFormLayout>
-#include <QHBoxLayout>
-#include <QLabel>
 #include <QLineEdit>
 #include <QVBoxLayout>
 

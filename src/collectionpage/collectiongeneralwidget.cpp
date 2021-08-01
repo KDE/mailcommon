@@ -13,8 +13,6 @@
 #include <KLocalizedString>
 #include <QCheckBox>
 #include <QFormLayout>
-#include <QFrame>
-#include <QLabel>
 using namespace MailCommon;
 
 CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)

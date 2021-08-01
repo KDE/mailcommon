@@ -8,7 +8,6 @@
 #include "mailcommon_debug.h"
 #include <KLocalizedString>
 #include <QFormLayout>
-#include <QVBoxLayout>
 
 #include <Akonadi/KMime/MessageFolderAttribute>
 #include <MessageList/AggregationComboBox>
@@ -20,8 +19,6 @@
 
 #include <QCheckBox>
 #include <QComboBox>
-#include <QGroupBox>
-#include <QLabel>
 #include <QRadioButton>
 using namespace MailCommon;
 CollectionViewWidget::CollectionViewWidget(QWidget *parent)
