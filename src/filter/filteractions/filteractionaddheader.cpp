@@ -58,7 +58,7 @@ QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
     auto widget = new QWidget(parent);
     auto layout = new QHBoxLayout(widget);
     layout->setSpacing(4);
-    layout->setContentsMargins(0, 0, 0, 0);
+    layout->setContentsMargins({});
 
     auto comboBox = new KComboBox(widget);
     comboBox->setMinimumWidth(50);

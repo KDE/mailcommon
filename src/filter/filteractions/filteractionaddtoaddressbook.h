@@ -23,7 +23,7 @@ public:
     Q_REQUIRED_RESULT ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
     static FilterAction *newAction();
 
-    SearchRule::RequiredPart requiredPart() const override;
+    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart() const override;
 
     Q_REQUIRED_RESULT bool isEmpty() const override;
 

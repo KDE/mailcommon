@@ -17,7 +17,7 @@ SnippetSelectAttachmentWidget::SnippetSelectAttachmentWidget(QWidget *parent)
 {
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
-    mainLayout->setContentsMargins(0, 0, 0, 0);
+    mainLayout->setContentsMargins({});
 
     mEditor = new SnippetSelectorWidget(this);
     mEditor->setObjectName(QStringLiteral("editor"));

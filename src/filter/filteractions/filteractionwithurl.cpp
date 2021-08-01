@@ -46,7 +46,7 @@ QWidget *FilterActionWithUrl::createParamWidget(QWidget *parent) const
 {
     auto widget = new QWidget(parent);
     auto layout = new QHBoxLayout;
-    layout->setContentsMargins(0, 0, 0, 0);
+    layout->setContentsMargins({});
     layout->setSpacing(0);
     widget->setLayout(layout);
     auto requester = new KUrlRequester(parent);

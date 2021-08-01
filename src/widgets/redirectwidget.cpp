@@ -25,7 +25,7 @@ RedirectWidget::RedirectWidget(QWidget *parent)
 {
     auto hbox = new QHBoxLayout(this);
     hbox->setSpacing(0);
-    hbox->setContentsMargins(0, 0, 0, 0);
+    hbox->setContentsMargins({});
     hbox->setAlignment(Qt::AlignRight);
 
     mEdit = new MessageComposer::ComposerLineEdit(true);

@@ -73,7 +73,7 @@ FolderTreeWidget::FolderTreeWidget(QWidget *parent,
     connect(d->folderTreeView, &FolderTreeView::manualSortingChanged, this, &FolderTreeWidget::slotManualSortingChanged);
 
     auto lay = new QVBoxLayout(this);
-    lay->setContentsMargins(0, 0, 0, 0);
+    lay->setContentsMargins({});
 
     d->label = new QLabel(i18n("You can start typing to filter the list of folders."), this);
     lay->addWidget(d->label);

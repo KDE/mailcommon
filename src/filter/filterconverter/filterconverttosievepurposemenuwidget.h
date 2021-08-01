@@ -18,7 +18,7 @@ public:
     explicit FilterconverttosievePurposeMenuWidget(QWidget *parentWidget, QObject *parent = nullptr);
     ~FilterconverttosievePurposeMenuWidget() override;
 
-    QByteArray text() override;
+    Q_REQUIRED_RESULT QByteArray text() override;
     void setEditorWidget(KPIMTextEdit::PlainTextEditor *editor);
 
 private:

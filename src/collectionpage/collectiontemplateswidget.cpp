@@ -20,7 +20,7 @@ CollectionTemplatesWidget::CollectionTemplatesWidget(QWidget *parent)
 {
     auto topLayout = new QVBoxLayout(this);
     auto topItems = new QHBoxLayout;
-    topItems->setContentsMargins(0, 0, 0, 0);
+    topItems->setContentsMargins({});
     topLayout->addLayout(topItems);
 
     mCustom = new QCheckBox(i18n("&Use custom message templates in this folder"), this);

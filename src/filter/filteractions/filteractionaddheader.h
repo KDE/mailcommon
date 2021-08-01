@@ -26,7 +26,7 @@ public:
     void applyParamWidgetValue(QWidget *paramWidget) override;
     void clearParamWidget(QWidget *paramWidget) const override;
 
-    SearchRule::RequiredPart requiredPart() const override;
+    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart() const override;
 
     Q_REQUIRED_RESULT QString argsAsString() const override;
     void argsFromString(const QString &argsStr) override;
@@ -38,7 +38,7 @@ public:
     Q_REQUIRED_RESULT QStringList sieveRequires() const override;
     Q_REQUIRED_RESULT QString sieveCode() const override;
 
-    bool isEmpty() const override;
+    Q_REQUIRED_RESULT bool isEmpty() const override;
     Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
 
 private:

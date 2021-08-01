@@ -50,7 +50,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     , d(new MailCommon::TagWidgetPrivate)
 {
     auto settings = new QGridLayout(this);
-    settings->setContentsMargins(0, 0, 0, 0);
+    settings->setContentsMargins({});
 
     // Stretcher layout for adding some space after the label
     auto spacer = new QVBoxLayout();

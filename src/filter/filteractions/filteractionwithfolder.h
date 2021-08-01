@@ -70,7 +70,7 @@ public:
      */
     Q_REQUIRED_RESULT QString argsAsString() const override;
 
-    bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
+    Q_REQUIRED_RESULT bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
 
     Q_REQUIRED_RESULT QString argsAsStringReal() const override;
 

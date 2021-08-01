@@ -25,7 +25,7 @@ SoundTestWidget::SoundTestWidget(QWidget *parent)
     : QWidget(parent)
 {
     auto layout = new QHBoxLayout(this);
-    layout->setContentsMargins(0, 0, 0, 0);
+    layout->setContentsMargins({});
 
     m_playButton = new QPushButton(this);
     m_playButton->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-start")));

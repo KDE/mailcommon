@@ -65,7 +65,7 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(MailCommon::MailCommonSetting
     mainLayout->addWidget(buttonBox);
 
     auto vbox = new QVBoxLayout;
-    vbox->setContentsMargins(0, 0, 0, 0);
+    vbox->setContentsMargins({});
     page->setLayout(vbox);
 
     d->mEnableAccountOrder = new QCheckBox(i18n("Use custom order"), this);
@@ -81,7 +81,7 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(MailCommon::MailCommonSetting
 
     auto upDownBox = new QWidget(page);
     auto upDownBoxVBoxLayout = new QVBoxLayout(upDownBox);
-    upDownBoxVBoxLayout->setContentsMargins(0, 0, 0, 0);
+    upDownBoxVBoxLayout->setContentsMargins({});
     d->mUpButton = new QPushButton(upDownBox);
     upDownBoxVBoxLayout->addWidget(d->mUpButton);
     d->mUpButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));

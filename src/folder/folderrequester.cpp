@@ -39,7 +39,7 @@ FolderRequester::FolderRequester(QWidget *parent)
     , d(new MailCommon::FolderRequesterPrivate)
 {
     auto hlay = new QHBoxLayout(this);
-    hlay->setContentsMargins(0, 0, 0, 0);
+    hlay->setContentsMargins({});
 
     d->mEdit = new QLineEdit(this);
     d->mEdit->setPlaceholderText(i18n("Select Folder"));

@@ -136,7 +136,7 @@ void SearchRuleWidget::setPatternEditOptions(SearchPatternEdit::SearchPatternEdi
 void SearchRuleWidget::initWidget(SearchPatternEdit::SearchModeType modeType)
 {
     auto hlay = new QHBoxLayout(this);
-    hlay->setContentsMargins(0, 0, 0, 0);
+    hlay->setContentsMargins({});
 
     // initialize the header field combo box
     mRuleField = new KComboBox(this);
@@ -581,7 +581,7 @@ void SearchPatternEdit::setPatternEditOptions(SearchPatternEdit::SearchPatternEd
 void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeType modeType)
 {
     auto layout = new QFormLayout(this);
-    layout->setContentsMargins(0, 0, 0, 0);
+    layout->setContentsMargins({});
 
     const bool matchAllMessages = (options & MailCommon::SearchPatternEdit::MatchAllMessages);
     //------------the radio buttons

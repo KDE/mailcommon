@@ -27,7 +27,7 @@ public:
     explicit FilterSelectionDialog(QWidget *parent = nullptr);
     ~FilterSelectionDialog() override;
     void setFilters(const QVector<MailFilter *> &filters);
-    QVector<MailFilter *> selectedFilters() const;
+    Q_REQUIRED_RESULT QVector<MailFilter *> selectedFilters() const;
 
 public Q_SLOTS:
     void slotUnselectAllButton();

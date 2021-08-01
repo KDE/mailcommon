@@ -82,7 +82,7 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
     formLayout->addRow(actionsGroup);
 
     auto moveToHBox = new QHBoxLayout();
-    moveToHBox->setContentsMargins(0, 0, 0, 0);
+    moveToHBox->setContentsMargins({});
     moveToHBox->setSpacing(6);
 
     mMoveToRB = new QRadioButton(actionsGroup);

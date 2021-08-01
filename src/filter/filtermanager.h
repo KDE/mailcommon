@@ -50,13 +50,13 @@ public:
     /**
      * Returns whether the filter manager is in a usable state.
      */
-    bool isValid() const;
+    Q_REQUIRED_RESULT bool isValid() const;
 
     /**
      * Checks for existing filters with the @p name and extend the
      * "name" to "name (i)" until no match is found for i=1..n
      */
-    QString createUniqueFilterName(const QString &name) const;
+    Q_REQUIRED_RESULT QString createUniqueFilterName(const QString &name) const;
 
     /**
      * Returns the global filter action dictionary.

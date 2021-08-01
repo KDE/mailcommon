@@ -31,7 +31,7 @@ SnippetWidget::SnippetWidget(QWidget *parent)
 {
     auto layout = new QVBoxLayout(this);
     layout->setObjectName(QStringLiteral("mainlayout"));
-    layout->setContentsMargins(0, 0, 0, 0);
+    layout->setContentsMargins({});
     d->wdg = new QWidget(this);
     d->mUi.setupUi(d->wdg);
     layout->addWidget(d->wdg);

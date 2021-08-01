@@ -39,7 +39,7 @@ public:
         ClawsMailFilter = 6,
         IcedoveFilter = 7,
         GmailFilter = 8,
-        SeaMonkeyFilter = 9
+        SeaMonkeyFilter = 9,
     };
 
     /**

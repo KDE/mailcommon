@@ -24,7 +24,7 @@ public:
     void applyOnAccount(MailCommon::MailFilter *filter);
     void applyOnAccount(const QStringList &lst);
 
-    QStringList selectedAccount();
+    Q_REQUIRED_RESULT QStringList selectedAccount();
 };
 }
 

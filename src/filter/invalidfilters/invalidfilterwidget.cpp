@@ -14,9 +14,10 @@ using namespace MailCommon;
 
 InvalidFilterWidget::InvalidFilterWidget(QWidget *parent)
     : QWidget(parent)
+    , mInvalidFilterListWidget(new InvalidFilterListView(this))
 {
     auto vbox = new QVBoxLayout(this);
-    vbox->setContentsMargins(0, 0, 0, 0);
+    vbox->setContentsMargins({});
     auto lab =
         new QLabel(i18n("The following filters are invalid (e.g. containing no actions "
                         "or no search rules). Discard or edit invalid filters?"));
@@ -24,7 +25,6 @@ InvalidFilterWidget::InvalidFilterWidget(QWidget *parent)
     lab->setObjectName(QStringLiteral("label"));
     vbox->addWidget(lab);
 
-    mInvalidFilterListWidget = new InvalidFilterListView(this);
     mInvalidFilterListWidget->setObjectName(QStringLiteral("invalidfilterlist"));
     connect(mInvalidFilterListWidget, &InvalidFilterListView::showDetails, this, &InvalidFilterWidget::showDetails);
     connect(mInvalidFilterListWidget, &InvalidFilterListView::hideInformationWidget, this, &InvalidFilterWidget::hideInformationWidget);

@@ -120,7 +120,7 @@ KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
     //----------- the first row of buttons
     auto hb = new QWidget(this);
     auto hbHBoxLayout = new QHBoxLayout(hb);
-    hbHBoxLayout->setContentsMargins(0, 0, 0, 0);
+    hbHBoxLayout->setContentsMargins({});
     hbHBoxLayout->setSpacing(4);
 
     mBtnTop = new QPushButton(QString(), hb);
@@ -158,7 +158,7 @@ KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
     //----------- the second row of buttons
     hb = new QWidget(this);
     hbHBoxLayout = new QHBoxLayout(hb);
-    hbHBoxLayout->setContentsMargins(0, 0, 0, 0);
+    hbHBoxLayout->setContentsMargins({});
     hbHBoxLayout->setSpacing(4);
     mBtnNew = new QPushButton(hb);
     hbHBoxLayout->addWidget(mBtnNew);
@@ -831,7 +831,7 @@ void QListWidgetFilterItem::setFilter(MailCommon::MailFilter *filter)
     setCheckState(filter->isEnabled() ? Qt::Checked : Qt::Unchecked);
 }
 
-MailCommon::MailFilter *QListWidgetFilterItem::filter()
+MailCommon::MailFilter *QListWidgetFilterItem::filter() const
 {
     return mFilter;
 }

@@ -19,11 +19,11 @@ SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWi
 {
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
-    mainLayout->setContentsMargins(0, 0, 0, 0);
+    mainLayout->setContentsMargins({});
 
     auto lineEditLayout = new QHBoxLayout;
     lineEditLayout->setObjectName(QStringLiteral("lineEditLayout"));
-    lineEditLayout->setContentsMargins(0, 0, 0, 0);
+    lineEditLayout->setContentsMargins({});
 
     auto label = new QLabel(i18n("Filename:"), this);
     label->setObjectName(QStringLiteral("label"));
@@ -37,7 +37,7 @@ SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWi
 
     auto convertMenuLayout = new QHBoxLayout;
     convertMenuLayout->setObjectName(QStringLiteral("convertMenuLayout"));
-    convertMenuLayout->setContentsMargins(0, 0, 0, 0);
+    convertMenuLayout->setContentsMargins({});
     convertMenuLayout->addStretch(1);
 
     mConvertMenu = new MessageComposer::ConvertSnippetVariableMenu(true, mLineEdit, this);

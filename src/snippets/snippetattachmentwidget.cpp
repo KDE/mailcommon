@@ -19,7 +19,7 @@ SnippetAttachmentWidget::SnippetAttachmentWidget(QWidget *parent)
 {
     auto layout = new QHBoxLayout(this);
     layout->setObjectName(QStringLiteral("layout"));
-    layout->setContentsMargins(0, 0, 0, 0);
+    layout->setContentsMargins({});
 
     mLineEdit = new QLineEdit(this);
     mLineEdit->setObjectName(QStringLiteral("lineedit"));

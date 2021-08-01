@@ -92,12 +92,12 @@ FilterActionWidget::FilterActionWidget(QWidget *parent)
     , d(new Private(this))
 {
     auto mainLayout = new QHBoxLayout(this);
-    mainLayout->setContentsMargins(0, 0, 0, 0);
+    mainLayout->setContentsMargins({});
     auto widget = new QWidget(this);
     mainLayout->addWidget(widget);
 
     d->mLayout = new QGridLayout(widget);
-    d->mLayout->setContentsMargins(0, 0, 0, 0);
+    d->mLayout->setContentsMargins({});
 
     d->mComboBox = new QComboBox(widget);
     d->mComboBox->setMinimumWidth(50);

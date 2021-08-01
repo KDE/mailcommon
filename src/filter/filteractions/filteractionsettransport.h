@@ -21,7 +21,7 @@ class FilterActionSetTransport : public FilterAction
 public:
     explicit FilterActionSetTransport(QObject *parent = nullptr);
     ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
-    SearchRule::RequiredPart requiredPart() const override;
+    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart() const override;
     static FilterAction *newAction();
     QWidget *createParamWidget(QWidget *parent) const override;
     /**
@@ -39,7 +39,7 @@ public:
      */
     void clearParamWidget(QWidget *paramWidget) const override;
 
-    bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
+    Q_REQUIRED_RESULT bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
 
     /**
      * @copydoc FilterAction::argsFromString

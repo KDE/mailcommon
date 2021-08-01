@@ -149,10 +149,10 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     mainLayout->addWidget(w);
     mainLayout->addWidget(buttonBox);
     auto topVLayout = new QVBoxLayout(w);
-    topVLayout->setContentsMargins(0, 0, 0, 0);
+    topVLayout->setContentsMargins({});
     auto topLayout = new QHBoxLayout;
     topVLayout->addLayout(topLayout);
-    topLayout->setContentsMargins(0, 0, 0, 0);
+    topLayout->setContentsMargins({});
 
     auto splitter = new QSplitter;
     splitter->setChildrenCollapsible(false);
