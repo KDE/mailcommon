@@ -260,3 +260,23 @@ bool CollectionExpiryWidget::canHandle(const Akonadi::Collection &col)
     QSharedPointer<FolderSettings> fd = FolderSettings::forCollection(col, false);
     return fd->canDeleteMessages() && !fd->isStructural() && !MailCommon::Util::isVirtualCollection(col);
 }
+
+bool CollectionExpirySettings::isValid() const
+{
+    const bool valid = daysToExpireRead != -1 || daysToExpireUnread != -1 || mUnreadExpireUnits != ExpireCollectionAttribute::ExpireNever
+        || mReadExpireUnits != ExpireCollectionAttribute::ExpireNever || mExpireAction != ExpireCollectionAttribute::ExpireDelete || mExpireToFolderId != -1;
+    return valid;
+}
+
+QDebug operator<<(QDebug d, const CollectionExpirySettings &t)
+{
+    d << " expiryGloballyOn " << t.expiryGloballyOn;
+    d << " expiryMessagesWithInvalidDate " << t.expiryMessagesWithInvalidDate;
+    d << " daysToExpireRead " << t.daysToExpireRead;
+    d << " daysToExpireUnread " << t.daysToExpireUnread;
+    d << " mUnreadExpireUnits " << t.mUnreadExpireUnits;
+    d << " mReadExpireUnits " << t.mReadExpireUnits;
+    d << " mExpireAction " << t.mExpireAction;
+    d << " mExpireToFolderId " << t.mExpireToFolderId;
+    return d;
+}
