@@ -64,8 +64,8 @@ void CollectionExpiryPage::load(const Akonadi::Collection &collection)
         settings.expiryGloballyOn = attr->isAutoExpire();
         settings.daysToExpireRead = daysToExpireRead;
         settings.daysToExpireUnread = daysToExpireUnread;
-        settings.mUnreadExpireUnits = attr->readExpireUnits();
-        settings.mReadExpireUnits = attr->unreadExpireUnits();
+        settings.mUnreadExpireUnits = attr->unreadExpireUnits();
+        settings.mReadExpireUnits = attr->readExpireUnits();
         settings.mExpireAction = attr->expireAction();
         settings.mExpireToFolderId = attr->expireToFolderId();
 

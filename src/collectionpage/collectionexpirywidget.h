@@ -19,12 +19,7 @@ namespace MailCommon
 {
 class FolderRequester;
 struct MAILCOMMON_EXPORT CollectionExpirySettings {
-    Q_REQUIRED_RESULT bool isValid() const
-    {
-        return daysToExpireRead != -1 || daysToExpireUnread != -1 || mUnreadExpireUnits != ExpireCollectionAttribute::ExpireNever
-            || mReadExpireUnits != ExpireCollectionAttribute::ExpireNever || mExpireAction != ExpireCollectionAttribute::ExpireDelete
-            || mExpireToFolderId != -1;
-    }
+    Q_REQUIRED_RESULT bool isValid() const;
 
     bool expiryGloballyOn = false;
     bool expiryMessagesWithInvalidDate = false;
@@ -69,5 +64,6 @@ private:
     QCheckBox *mExpireMailWithInvalidDateCB = nullptr;
 };
 }
+MAILCOMMON_EXPORT QDebug operator<<(QDebug d, const MailCommon::CollectionExpirySettings &t);
 
 #endif // COLLECTIONEXPIRYWIDGET_H
