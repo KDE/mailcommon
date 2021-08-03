@@ -61,19 +61,21 @@ public:
 
 CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
     : QWidget(parent)
+    , mExpireReadMailSB(new DaysSpinBox(this))
+    , mExpireUnreadMailSB(new DaysSpinBox(this))
+    , mFolderSelector(new FolderRequester(this))
+    , mExpireNowPB(new QPushButton(i18n("Save Settings and Expire Now"), this))
+    , mExpireMailWithInvalidDateCB(new QCheckBox(i18n("Expire messages with invalid date"), this))
 {
     auto formLayout = new QFormLayout(this);
     formLayout->setContentsMargins({});
 
-    mExpireReadMailSB = new DaysSpinBox(this);
     connect(mExpireReadMailSB, qOverload<int>(&KPluralHandlingSpinBox::valueChanged), this, &CollectionExpiryWidget::slotChanged);
     formLayout->addRow(i18n("Expire read messages after:"), mExpireReadMailSB);
 
-    mExpireUnreadMailSB = new DaysSpinBox(this);
     connect(mExpireUnreadMailSB, qOverload<int>(&KPluralHandlingSpinBox::valueChanged), this, &CollectionExpiryWidget::slotChanged);
     formLayout->addRow(i18n("Expire unread messages after:"), mExpireUnreadMailSB);
 
-    mExpireMailWithInvalidDateCB = new QCheckBox(i18n("Expire messages with invalid date"), this);
     connect(mExpireMailWithInvalidDateCB, &QCheckBox::toggled, this, &CollectionExpiryWidget::slotChanged);
     formLayout->addRow(QString(), mExpireMailWithInvalidDateCB);
 
@@ -90,7 +92,6 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
     connect(mMoveToRB, &QRadioButton::toggled, this, &CollectionExpiryWidget::slotChanged);
     moveToHBox->addWidget(mMoveToRB);
 
-    mFolderSelector = new FolderRequester(this);
     mFolderSelector->setMustBeReadWrite(true);
     mFolderSelector->setShowOutbox(false);
     moveToHBox->addWidget(mFolderSelector);
@@ -103,7 +104,6 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
 
     formLayout->addRow(QString(), mDeletePermanentlyRB);
 
-    mExpireNowPB = new QPushButton(i18n("Save Settings and Expire Now"), this);
     connect(mExpireNowPB, &QPushButton::clicked, this, &CollectionExpiryWidget::saveAndExpireRequested);
     formLayout->addRow(QString(), mExpireNowPB);
 

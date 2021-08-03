@@ -50,13 +50,13 @@ private:
     Q_REQUIRED_RESULT bool validateExpireFolder(bool expireNow);
     Q_REQUIRED_RESULT MailCommon::ExpireCollectionAttribute *assignFolderAttribute(Akonadi::Collection &collection, bool &expireNow);
     void slotChanged();
-    KPluralHandlingSpinBox *mExpireReadMailSB = nullptr;
-    KPluralHandlingSpinBox *mExpireUnreadMailSB = nullptr;
+    KPluralHandlingSpinBox *const mExpireReadMailSB;
+    KPluralHandlingSpinBox *const mExpireUnreadMailSB;
     QRadioButton *mMoveToRB = nullptr;
-    FolderRequester *mFolderSelector = nullptr;
+    FolderRequester *const mFolderSelector;
     QRadioButton *mDeletePermanentlyRB = nullptr;
-    QPushButton *mExpireNowPB = nullptr;
-    QCheckBox *mExpireMailWithInvalidDateCB = nullptr;
+    QPushButton *const mExpireNowPB;
+    QCheckBox *const mExpireMailWithInvalidDateCB;
 };
 }
 MAILCOMMON_EXPORT QDebug operator<<(QDebug d, const MailCommon::CollectionExpirySettings &t);
