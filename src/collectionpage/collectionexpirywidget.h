@@ -60,4 +60,3 @@ private:
 };
 }
 MAILCOMMON_EXPORT QDebug operator<<(QDebug d, const MailCommon::CollectionExpirySettings &t);
-
