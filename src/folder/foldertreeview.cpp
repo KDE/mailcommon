@@ -273,7 +273,7 @@ void FolderTreeView::slotHeaderContextMenuChangeHeader(bool)
         return;
     }
 
-    if (id > header()->count()) {
+    if (id >= header()->count()) {
         return;
     }
 
