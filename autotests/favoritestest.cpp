@@ -111,7 +111,8 @@ void FavoriteProxyTest::testReordering()
     const QModelIndex firstRowIndex = orderProxy->index(0, 0);
     QVERIFY(firstRowIndex.isValid());
     QCOMPARE(firstRowIndex.data().toString(), QStringLiteral("res2"));
-    QVERIFY((orderProxy->flags(firstRowIndex) & Qt::ItemIsDropEnabled) == 0);
+    // we can drop emails
+    QVERIFY((orderProxy->flags(firstRowIndex) & Qt::ItemIsDropEnabled) != 0);
 }
 
 #include "favoritestest.moc"
