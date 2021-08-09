@@ -93,6 +93,7 @@ void FilterActionRewriteHeaderTest::shouldRewriteHeader()
         "testheader: foo\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "\n"
         "test";
     const QByteArray output =
@@ -101,6 +102,7 @@ void FilterActionRewriteHeaderTest::shouldRewriteHeader()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "testheader: bla\n"
         "\n"
         "test";
@@ -127,6 +129,7 @@ void FilterActionRewriteHeaderTest::shouldNotRewriteHeaderWhenHeaderNotFound()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "\n"
         "test";
 
@@ -152,6 +155,7 @@ void FilterActionRewriteHeaderTest::shouldNotRewriteHeaderWhenRegexpNotFound()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "testheader: bla\n"
         "\n"
         "test";

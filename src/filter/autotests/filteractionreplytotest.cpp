@@ -40,6 +40,7 @@ void FilterActionReplyToTest::shouldHadReplyToHeader()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "\n"
         "test";
     const QByteArray output =
@@ -48,6 +49,7 @@ void FilterActionReplyToTest::shouldHadReplyToHeader()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "Reply-To: fooreply@kde.org\n"
         "\n"
         "test";
@@ -76,6 +78,7 @@ void FilterActionReplyToTest::shouldReplaceReplyToHeader()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "Reply-To: oldfooreply@kde.org\n"
         "\n"
         "test";
@@ -85,6 +88,7 @@ void FilterActionReplyToTest::shouldReplaceReplyToHeader()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "Reply-To: fooreply@kde.org\n"
         "\n"
         "test";
@@ -117,6 +121,7 @@ void FilterActionReplyToTest::shouldNotCreateReplyToWhenAddressIsEmpty()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "Reply-To: oldfooreply@kde.org\n"
         "\n"
         "test";
