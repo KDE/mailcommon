@@ -61,9 +61,9 @@ private Q_SLOTS:
         mTopModel = mFolderTreeWidget->folderTreeView()->model();
 
         // One knut resource is already defined in the unittestenv, so that it's below "Search" in the ETM.
-        QTRY_COMPARE(mCollectionModel->rowCount(), 2);
-        QCOMPARE(mTopModel->rowCount(), 1); // Search doesn't appear yet
-        mFolderNames = QStringList{"res1"};
+        QTRY_COMPARE(mCollectionModel->rowCount(), 4);
+        QCOMPARE(mTopModel->rowCount(), 3); // Search doesn't appear yet
+        mFolderNames = QStringList{QStringLiteral("res3"), QStringLiteral("res1"), QStringLiteral("res2")};
         QCOMPARE(collectNames(mTopModel), mFolderNames);
     }
 
@@ -85,12 +85,11 @@ private Q_SLOTS:
         QVERIFY(searchCol.isValid());
 
         // Check it appeared in the tree, under a Search toplevel item
-        QTRY_COMPARE(mCollectionModel->rowCount(), 2);
-        QTRY_COMPARE(mTopModel->rowCount(), 2);
+        QTRY_COMPARE(mCollectionModel->rowCount(), 4);
+        QTRY_COMPARE(mTopModel->rowCount(), 4);
         const QStringList names = collectNames(mTopModel);
-        QCOMPARE(names,
-                 QStringList() << "res1"
-                               << "Search");
+        const QStringList expectedNames{"res3", "res1", "res2", "Search"};
+        QCOMPARE(names, expectedNames);
         const int rowOfSearch = names.indexOf("Search");
         const QModelIndex searchParent = mTopModel->index(rowOfSearch, 0);
         QCOMPARE(mTopModel->rowCount(searchParent), 1); // the actual child search folder
@@ -108,7 +107,7 @@ private Q_SLOTS:
         AKVERIFYEXEC(delJob);
 
         // Check it disappeared from the tree, as well as the toplevel item
-        QTRY_COMPARE(mTopModel->rowCount(), 1);
+        QTRY_COMPARE(mTopModel->rowCount(), 3);
         QCOMPARE(collectNames(mTopModel), mFolderNames);
         QCOMPARE(collectNames(mFolderTreeWidget->entityOrderProxy()), mFolderNames);
 
@@ -135,7 +134,7 @@ private Q_SLOTS:
 
         // Create resources
         const int numResources = numFolders.count();
-        for (int i = 1 /*first one already created*/; i < numResources; ++i) {
+        for (int i = 3 /*first three already created*/; i < numResources; ++i) {
             auto agentCreateJob = new AgentInstanceCreateJob(agentType);
             AKVERIFYEXEC(agentCreateJob);
             const QString identifier = agentCreateJob->instance().identifier();
