@@ -77,7 +77,8 @@ FilterAction::ReturnCode FilterActionAddToAddressBook::process(ItemContext &cont
     const QStringList emails = KEmailAddress::splitAddressList(headerLine);
 
     for (const QString &singleEmail : emails) {
-        QString name, email;
+        QString name;
+        QString email;
         KContacts::Addressee::parseEmailAddress(singleEmail, name, email);
 
         KContacts::Addressee contact;

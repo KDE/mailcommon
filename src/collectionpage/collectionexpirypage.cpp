@@ -58,7 +58,8 @@ void CollectionExpiryPage::load(const Akonadi::Collection &collection)
     init();
     const auto *attr = collection.attribute<MailCommon::ExpireCollectionAttribute>();
     if (attr) {
-        int daysToExpireRead, daysToExpireUnread;
+        int daysToExpireRead;
+        int daysToExpireUnread;
         attr->daysToExpire(daysToExpireUnread, daysToExpireRead);
         MailCommon::CollectionExpirySettings settings;
         settings.expiryGloballyOn = attr->isAutoExpire();
