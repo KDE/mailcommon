@@ -23,7 +23,7 @@ include(ECMQtDeclareLoggingCategory)
 include(ECMAddTests)
 
 
-set(QT_REQUIRED_VERSION "5.15.0")
+set(QT_REQUIRED_VERSION "5.15.2")
 
 set(MAILCOMMON_LIB_VERSION ${PIM_VERSION})
 set(AKONADIMIME_LIB_VERSION "5.18.40")
@@ -97,7 +97,7 @@ if (USE_UNITY_CMAKE_SUPPORT)
 endif()
 
 
-add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f00)
+add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f02)
 add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055600)
 
 ########### CMake Config Files ###########
