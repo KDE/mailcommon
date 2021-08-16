@@ -64,6 +64,7 @@ void FilterActionRemoveHeaderTest::shouldRemoveHeader()
         "testheader: foo\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "\n"
         "test";
     const QByteArray output =
@@ -72,6 +73,7 @@ void FilterActionRemoveHeaderTest::shouldRemoveHeader()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "\n"
         "test";
 
@@ -98,6 +100,7 @@ void FilterActionRemoveHeaderTest::shouldNotTryToRemoveHeaderWhenItDoesntExist()
         "testheader2: foo\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "\n"
         "test";
 
@@ -126,6 +129,7 @@ void FilterActionRemoveHeaderTest::shouldRemoveMultiHeader()
         "testheader: bla\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "\n"
         "test";
     const QByteArray output =
@@ -134,6 +138,7 @@ void FilterActionRemoveHeaderTest::shouldRemoveMultiHeader()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "\n"
         "test";
 

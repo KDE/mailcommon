@@ -116,6 +116,7 @@ void FilterActionAddHeaderTest::shouldAddNewHeaderWhenNotExistingHeader()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "\n"
         "test";
     const QByteArray output =
@@ -124,6 +125,7 @@ void FilterActionAddHeaderTest::shouldAddNewHeaderWhenNotExistingHeader()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "testheader: foo\n"
         "\n"
         "test";
@@ -152,6 +154,7 @@ void FilterActionAddHeaderTest::shouldReplaceHeaderWhenExistingHeader()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "testheader: bla\n"
         "\n"
         "test";
@@ -161,6 +164,7 @@ void FilterActionAddHeaderTest::shouldReplaceHeaderWhenExistingHeader()
         "Subject: test\n"
         "Date: Wed, 01 Apr 2015 09:33:01 +0200\n"
         "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=\"us-ascii\"\n"
         "testheader: foo\n"
         "\n"
         "test";
