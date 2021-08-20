@@ -72,7 +72,8 @@ QString FilterActionEncrypt::argsAsString() const
 void FilterActionEncrypt::argsFromString(const QString &argsStr)
 {
     const int pos = argsStr.indexOf(QLatin1Char(':'));
-    const auto protoStr = argsStr.leftRef(pos);
+    const QStringView strView(argsStr);
+    const auto protoStr = strView.left(pos);
 
     QGpgME::Protocol *proto = {};
     if (protoStr == QLatin1String("PGP")) {
