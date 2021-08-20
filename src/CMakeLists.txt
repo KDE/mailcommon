@@ -8,197 +8,8 @@ if(BUILD_TESTING)
    add_definitions(-DBUILD_TESTING)
 endif()
 
-set(libmailcommon_filter_SRCS
-  filter/kmfilteraccountlist.cpp
-  filter/kmfilterlistbox.cpp
-  filter/filterselectiondialog.cpp
-  filter/filterconverter/filterconverttosieve.cpp
-  filter/filterconverter/filterconverttosieveresultdialog.cpp
-  filter/filterconverter/filterconverttosievepurposemenuwidget.cpp
-  filter/filteractions/filteraction.cpp
-  filter/filteractions/filteractionaddheader.cpp
-  filter/filteractions/filteractionaddtag.cpp
-  filter/filteractions/filteractionaddtoaddressbook.cpp
-  filter/filteractions/filteractioncopy.cpp
-  filter/filteractions/filteractiondecrypt.cpp
-  filter/filteractions/filteractiondelete.cpp
-  filter/filteractions/filteractiondict.cpp
-  filter/filteractions/filteractionencrypt.cpp
-  filter/filteractions/filteractionexec.cpp
-  filter/filteractions/filteractionforward.cpp
-  filter/filteractions/filteractionmove.cpp
-  filter/filteractions/filteractionpipethrough.cpp
-  filter/filteractions/filteractionplaysound.cpp
-  filter/filteractions/filteractionredirect.cpp
-  filter/filteractions/filteractionremoveheader.cpp
-  filter/filteractions/filteractionreplyto.cpp
-  filter/filteractions/filteractionrewriteheader.cpp
-  filter/filteractions/filteractionsendfakedisposition.cpp
-  filter/filteractions/filteractionsendreceipt.cpp
-  filter/filteractions/filteractionsetidentity.cpp
-  filter/filteractions/filteractionsetstatus.cpp
-  filter/filteractions/filteractionstatus.cpp
-  filter/filteractions/filteractionunsetstatus.cpp
-  filter/filteractions/filteractionsettransport.cpp
-  filter/filteractions/filteractionwidget.cpp
-  filter/filteractions/filteractionwithaddress.cpp
-  filter/filteractions/filteractionwithcommand.cpp
-  filter/filteractions/filteractionwithcrypto.cpp
-  filter/filteractions/filteractionwithfolder.cpp
-  filter/filteractions/filteractionwithnone.cpp
-  filter/filteractions/filteractionwithstring.cpp
-  filter/filteractions/filteractionwithstringlist.cpp
-  filter/filteractions/filteractionwithtest.cpp
-  filter/filteractions/filteractionwithuoid.cpp
-  filter/filteractions/filteractionwithurl.cpp
-  filter/filterimporterexporter.cpp
-  filter/filterimporter/filterimporterabstract.cpp
-  filter/filterimporter/filterimporterevolution.cpp
-  filter/filterimporter/filterimportersylpheed.cpp
-  filter/filterimporter/filterimporterthunderbird.cpp
-  filter/filterimporter/filterimporterprocmail.cpp
-  filter/filterimporter/filterimporterbalsa.cpp
-  filter/filterimporter/filterimporterclawsmail.cpp
-  filter/filterimporter/filterimportergmail.cpp
-  filter/filterlog.cpp
-  filter/filtermanager.cpp
-  filter/itemcontext.cpp
-  filter/kmfilterdialog.cpp
-  filter/mailfilter.cpp
-  filter/mdnadvicedialog.cpp
-  filter/filterimporterpathcache.cpp
-)
-
-set(libmailcommon_filter_dialog
-    filter/dialog/selectthunderbirdfilterfilesdialog.cpp
-    filter/dialog/selectthunderbirdfilterfileswidget.cpp
-    filter/dialog/filteractionmissingfolderdialog.cpp
-    filter/dialog/filteractionmissingsoundurldialog.cpp
-    filter/dialog/filteractionmissingtagdialog.cpp
-    filter/dialog/filteractionmissingaccountdialog.cpp
-    filter/dialog/filteractionmissingtemplatedialog.cpp
-    filter/dialog/filteractionmissingtransportdialog.cpp
-    filter/dialog/filteractionmissingidentitydialog.cpp
-    )
 
 
-set(libmailcommon_invalidfilters 
-  filter/invalidfilters/invalidfilterdialog.cpp
-  filter/invalidfilters/invalidfilterlistview.cpp
-  filter/invalidfilters/invalidfilterwidget.cpp
-  filter/invalidfilters/invalidfilterinfo.cpp
-  filter/invalidfilters/invalidfilterlistitemdelegate.cpp
-  filter/invalidfilters/invalidfilterlistmodel.cpp
-  filter/invalidfilters/invalidfilterinfowidget.cpp
-)
-
-set(libmailcommon_collection_SRCS
-  collectionpage/attributeregistrar.cpp
-  collectionpage/collectiongeneralpage.cpp
-  collectionpage/collectionexpirypage.cpp
-  collectionpage/collectionexpirywidget.cpp
-  collectionpage/attributes/expirecollectionattribute.cpp
-  collectionpage/collectionexpiryjob.cpp
-  collectionpage/collectiontemplateswidget.cpp
-  collectionpage/collectionviewwidget.cpp
-  collectionpage/collectiongeneralwidget.cpp
-)
-
-set(libmailcommon_folder_SRCS
-  folder/foldersettings.cpp
-  folder/foldercollectionmonitor.cpp
-  folder/folderrequester.cpp
-  folder/folderselectiondialog.cpp
-  folder/foldertreeview.cpp
-  folder/foldertreewidget.cpp
-  folder/foldertreewidgetproxymodel.cpp
-  folder/entitycollectionorderproxymodel.cpp
-  folder/accountconfigorderdialog.cpp
-  folder/favoritecollectionorderproxymodel.cpp
-)
-
-set(libmailcommon_job_SRCS
-  job/jobscheduler.cpp
-  job/folderjob.cpp
-  job/expirejob.cpp
-  job/backupjob.cpp
-)
-
-set(libmailcommon_search_SRCS
-  search/widgethandler/rulewidgethandlermanager.cpp
-  search/searchpattern.cpp
-  search/searchpatternedit.cpp
-  search/widgethandler/encryptionwidgethandler.cpp
-  search/widgethandler/textrulerwidgethandler.cpp
-  search/widgethandler/statusrulewidgethandler.cpp
-  search/widgethandler/messagerulewidgethandler.cpp
-  search/widgethandler/tagrulewidgethandler.cpp
-  search/widgethandler/numericrulewidgethandler.cpp
-  search/widgethandler/daterulewidgethandler.cpp
-  search/widgethandler/numericdoublerulewidgethandler.cpp
-  search/widgethandler/headersrulerwidgethandler.cpp
-  search/searchrule/searchrulenumerical.cpp
-  search/searchrule/searchruledate.cpp
-  search/searchrule/searchrulestring.cpp 
-  search/searchrule/searchrulestatus.cpp
-  search/searchrule/searchruleencryption.cpp
-  search/searchrule/searchrule.cpp
-)
-
-set(libmailcommon_snippets_SRCS
-  snippets/snippetdialog.cpp
-  snippets/snippetsmanager.cpp
-  snippets/snippetsmodel.cpp
-  snippets/snippetvariabledialog.cpp
-  snippets/snippettreeview.cpp
-  snippets/snippetwidget.cpp
-  snippets/snippetattachmentwidget.cpp
-  snippets/snippetselectattachmentwidget.cpp
-  snippets/snippetselectattachmentdialog.cpp
-  snippets/snippetcustomfileattachmentnamewidget.cpp
-  snippets/snippetcustomfileattachmentnamedialog.cpp
-)
-
-set(libmailcommon_tag_SRCS
-  tag/tagwidget.cpp
-  tag/tag.cpp
-  tag/addtagdialog.cpp
-)
-
-set(libmailcommon_widget_SRCS
-  widgets/redirectdialog.cpp
-  widgets/redirectwidget.cpp
-  widgets/favoritecollectionwidget.cpp
-)
-
-set(libmailcommon_mdn_SRCS
-  mdn/sendmdnhandler.cpp
-  mdn/mdnstateattribute.cpp
-  mdn/mdnadvicehelper.cpp
-)
-
-set(libmailcommon_util_SRCS
-  util/cryptoutils.cpp
-  util/mailutil.cpp
-  util/resourcereadconfigfile.cpp
-)
-
-
-set(libmailcommon_SRCS
-  kernel/mailkernel.cpp
-  ${libmailcommon_filter_dialog}
-  ${libmailcommon_util_SRCS}
-  ${libmailcommon_mdn_SRCS}
-  ${libmailcommon_invalidfilters}
-  ${libmailcommon_widget_SRCS}
-  ${libmailcommon_tag_SRCS}
-  ${libmailcommon_snippets_SRCS}
-  ${libmailcommon_search_SRCS}
-  ${libmailcommon_job_SRCS}
-  ${libmailcommon_collection_SRCS}
-  ${libmailcommon_folder_SRCS}
-  ${libmailcommon_filter_SRCS}
-)
 kconfig_add_kcfg_files(libmailcommon_SRCS
     settings/mailcommonsettings_base.kcfgc
 )
@@ -231,15 +42,160 @@ add_resource_iface(settings.kcfg org.kde.Akonadi.POP3.Settings Pop3Settings)
 qt_add_dbus_interfaces(libmailcommon_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/dbusinterfaces/org.kde.Korganizer.Calendar.xml
 )
 
-add_library(KF5MailCommon ${libmailcommon_SRCS})
+add_library(KF5MailCommon)
+
+add_library(KF5::MailCommon ALIAS KF5MailCommon)
+
+target_sources(KF5MailCommon PRIVATE
+    filter/kmfilteraccountlist.cpp
+    filter/kmfilterlistbox.cpp
+    filter/filterselectiondialog.cpp
+    filter/filterconverter/filterconverttosieve.cpp
+    filter/filterconverter/filterconverttosieveresultdialog.cpp
+    filter/filterconverter/filterconverttosievepurposemenuwidget.cpp
+    filter/filteractions/filteraction.cpp
+    filter/filteractions/filteractionaddheader.cpp
+    filter/filteractions/filteractionaddtag.cpp
+    filter/filteractions/filteractionaddtoaddressbook.cpp
+    filter/filteractions/filteractioncopy.cpp
+    filter/filteractions/filteractiondecrypt.cpp
+    filter/filteractions/filteractiondelete.cpp
+    filter/filteractions/filteractiondict.cpp
+    filter/filteractions/filteractionencrypt.cpp
+    filter/filteractions/filteractionexec.cpp
+    filter/filteractions/filteractionforward.cpp
+    filter/filteractions/filteractionmove.cpp
+    filter/filteractions/filteractionpipethrough.cpp
+    filter/filteractions/filteractionplaysound.cpp
+    filter/filteractions/filteractionredirect.cpp
+    filter/filteractions/filteractionremoveheader.cpp
+    filter/filteractions/filteractionreplyto.cpp
+    filter/filteractions/filteractionrewriteheader.cpp
+    filter/filteractions/filteractionsendfakedisposition.cpp
+    filter/filteractions/filteractionsendreceipt.cpp
+    filter/filteractions/filteractionsetidentity.cpp
+    filter/filteractions/filteractionsetstatus.cpp
+    filter/filteractions/filteractionstatus.cpp
+    filter/filteractions/filteractionunsetstatus.cpp
+    filter/filteractions/filteractionsettransport.cpp
+    filter/filteractions/filteractionwidget.cpp
+    filter/filteractions/filteractionwithaddress.cpp
+    filter/filteractions/filteractionwithcommand.cpp
+    filter/filteractions/filteractionwithcrypto.cpp
+    filter/filteractions/filteractionwithfolder.cpp
+    filter/filteractions/filteractionwithnone.cpp
+    filter/filteractions/filteractionwithstring.cpp
+    filter/filteractions/filteractionwithstringlist.cpp
+    filter/filteractions/filteractionwithtest.cpp
+    filter/filteractions/filteractionwithuoid.cpp
+    filter/filteractions/filteractionwithurl.cpp
+    filter/filterimporterexporter.cpp
+    filter/filterimporter/filterimporterabstract.cpp
+    filter/filterimporter/filterimporterevolution.cpp
+    filter/filterimporter/filterimportersylpheed.cpp
+    filter/filterimporter/filterimporterthunderbird.cpp
+    filter/filterimporter/filterimporterprocmail.cpp
+    filter/filterimporter/filterimporterbalsa.cpp
+    filter/filterimporter/filterimporterclawsmail.cpp
+    filter/filterimporter/filterimportergmail.cpp
+    filter/filterlog.cpp
+    filter/filtermanager.cpp
+    filter/itemcontext.cpp
+    filter/kmfilterdialog.cpp
+    filter/mailfilter.cpp
+    filter/mdnadvicedialog.cpp
+    filter/filterimporterpathcache.cpp
+    filter/dialog/selectthunderbirdfilterfilesdialog.cpp
+    filter/dialog/selectthunderbirdfilterfileswidget.cpp
+    filter/dialog/filteractionmissingfolderdialog.cpp
+    filter/dialog/filteractionmissingsoundurldialog.cpp
+    filter/dialog/filteractionmissingtagdialog.cpp
+    filter/dialog/filteractionmissingaccountdialog.cpp
+    filter/dialog/filteractionmissingtemplatedialog.cpp
+    filter/dialog/filteractionmissingtransportdialog.cpp
+    filter/dialog/filteractionmissingidentitydialog.cpp
+    filter/invalidfilters/invalidfilterdialog.cpp
+    filter/invalidfilters/invalidfilterlistview.cpp
+    filter/invalidfilters/invalidfilterwidget.cpp
+    filter/invalidfilters/invalidfilterinfo.cpp
+    filter/invalidfilters/invalidfilterlistitemdelegate.cpp
+    filter/invalidfilters/invalidfilterlistmodel.cpp
+    filter/invalidfilters/invalidfilterinfowidget.cpp
+    collectionpage/attributeregistrar.cpp
+    collectionpage/collectiongeneralpage.cpp
+    collectionpage/collectionexpirypage.cpp
+    collectionpage/collectionexpirywidget.cpp
+    collectionpage/attributes/expirecollectionattribute.cpp
+    collectionpage/collectionexpiryjob.cpp
+    collectionpage/collectiontemplateswidget.cpp
+    collectionpage/collectionviewwidget.cpp
+    collectionpage/collectiongeneralwidget.cpp
+    folder/foldersettings.cpp
+    folder/foldercollectionmonitor.cpp
+    folder/folderrequester.cpp
+    folder/folderselectiondialog.cpp
+    folder/foldertreeview.cpp
+    folder/foldertreewidget.cpp
+    folder/foldertreewidgetproxymodel.cpp
+    folder/entitycollectionorderproxymodel.cpp
+    folder/accountconfigorderdialog.cpp
+    folder/favoritecollectionorderproxymodel.cpp
+    job/jobscheduler.cpp
+    job/folderjob.cpp
+    job/expirejob.cpp
+    job/backupjob.cpp
+    search/widgethandler/rulewidgethandlermanager.cpp
+    search/searchpattern.cpp
+    search/searchpatternedit.cpp
+    search/widgethandler/encryptionwidgethandler.cpp
+    search/widgethandler/textrulerwidgethandler.cpp
+    search/widgethandler/statusrulewidgethandler.cpp
+    search/widgethandler/messagerulewidgethandler.cpp
+    search/widgethandler/tagrulewidgethandler.cpp
+    search/widgethandler/numericrulewidgethandler.cpp
+    search/widgethandler/daterulewidgethandler.cpp
+    search/widgethandler/numericdoublerulewidgethandler.cpp
+    search/widgethandler/headersrulerwidgethandler.cpp
+    search/searchrule/searchrulenumerical.cpp
+    search/searchrule/searchruledate.cpp
+    search/searchrule/searchrulestring.cpp
+    search/searchrule/searchrulestatus.cpp
+    search/searchrule/searchruleencryption.cpp
+    search/searchrule/searchrule.cpp
+    snippets/snippetdialog.cpp
+    snippets/snippetsmanager.cpp
+    snippets/snippetsmodel.cpp
+    snippets/snippetvariabledialog.cpp
+    snippets/snippettreeview.cpp
+    snippets/snippetwidget.cpp
+    snippets/snippetattachmentwidget.cpp
+    snippets/snippetselectattachmentwidget.cpp
+    snippets/snippetselectattachmentdialog.cpp
+    snippets/snippetcustomfileattachmentnamewidget.cpp
+    snippets/snippetcustomfileattachmentnamedialog.cpp
+    tag/tagwidget.cpp
+    tag/tag.cpp
+    tag/addtagdialog.cpp
+    widgets/redirectdialog.cpp
+    widgets/redirectwidget.cpp
+    widgets/favoritecollectionwidget.cpp
+    mdn/sendmdnhandler.cpp
+    mdn/mdnstateattribute.cpp
+    mdn/mdnadvicehelper.cpp
+    util/cryptoutils.cpp
+    util/mailutil.cpp
+    util/resourcereadconfigfile.cpp
+    ${libmailcommon_SRCS}
+    kernel/mailkernel.cpp
+    )
+
+
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KF5MailCommon PROPERTIES UNITY_BUILD ON)
     set_source_files_properties(${libmailcommon_search_SRCS} PROPERTIES SKIP_UNITY_BUILD_INCLUSION ON)
 endif()
 generate_export_header(KF5MailCommon BASE_NAME mailcommon)
 
-
-add_library(KF5::MailCommon ALIAS KF5MailCommon)
 
 target_link_libraries(KF5MailCommon
 PUBLIC
