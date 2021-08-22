@@ -118,7 +118,6 @@ add_mailcommon_filter_test(filteractionwithaddresstest
     ${filter_common_SRCS}
 )
 
-if (KDEPIM_RUN_AKONADI_TEST)
 add_mailcommon_filter_akonadi_test(filteractionaddtoaddressbooktest.cpp
     filteractionaddtoaddressbooktest.cpp
     ../filteractions/filteractionaddtoaddressbook.cpp
@@ -126,7 +125,6 @@ add_mailcommon_filter_akonadi_test(filteractionaddtoaddressbooktest.cpp
     ../filteractions/filteractionwithstring.cpp
     ${filter_common_SRCS}
 )
-endif()
 
 add_mailcommon_filter_test(filteractionplaysoundtest
     filteractionplaysoundtest.cpp

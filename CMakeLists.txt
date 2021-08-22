@@ -91,7 +91,6 @@ set_package_properties(Xsltproc PROPERTIES DESCRIPTION "XSLT processor from libx
 
 ########### Targets ###########
 remove_definitions( -DQT_NO_CAST_FROM_ASCII )
-option(KDEPIM_RUN_AKONADI_TEST "Enable autotest based on Akonadi." TRUE)
 
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
