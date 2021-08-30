@@ -18,8 +18,8 @@ SelectThunderbirdFilterFilesWidget::SelectThunderbirdFilterFilesWidget(const QSt
     , ui(new Ui::SelectThunderbirdFilterFilesWidget)
 {
     ui->setupUi(this);
-    connect(ui->buttonGroup, QOverload<QAbstractButton *>::of(&QButtonGroup::buttonClicked), this, &SelectThunderbirdFilterFilesWidget::slotButtonClicked);
-    connect(ui->profiles, QOverload<int>::of(&KComboBox::currentIndexChanged), this, &SelectThunderbirdFilterFilesWidget::slotProfileChanged);
+    connect(ui->buttonGroup, qOverload<QAbstractButton *>(&QButtonGroup::buttonClicked), this, &SelectThunderbirdFilterFilesWidget::slotButtonClicked);
+    connect(ui->profiles, qOverload<int>(&KComboBox::currentIndexChanged), this, &SelectThunderbirdFilterFilesWidget::slotProfileChanged);
 
     ui->listFiles->setSelectionMode(QAbstractItemView::MultiSelection);
     QString defaultProfile;

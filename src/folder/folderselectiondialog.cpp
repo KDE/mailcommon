@@ -110,7 +110,7 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
     connect(d->folderTreeWidget->folderTreeWidgetProxyModel(), &QAbstractItemModel::rowsInserted, this, &FolderSelectionDialog::rowsInserted);
 
     connect(d->folderTreeWidget->folderTreeView(),
-            QOverload<const QModelIndex &>::of(&QAbstractItemView::doubleClicked),
+            qOverload<const QModelIndex &>(&QAbstractItemView::doubleClicked),
             this,
             &FolderSelectionDialog::slotDoubleClick);
 

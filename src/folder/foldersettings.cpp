@@ -57,7 +57,7 @@ FolderSettings::FolderSettings(const Akonadi::Collection &col, bool writeconfig)
     mIdentity = KernelIf->identityManager()->defaultIdentity().uoid();
 
     readConfig();
-    connect(KernelIf->identityManager(), QOverload<>::of(&KIdentityManagement::IdentityManager::changed), this, &FolderSettings::slotIdentitiesChanged);
+    connect(KernelIf->identityManager(), qOverload<>(&KIdentityManagement::IdentityManager::changed), this, &FolderSettings::slotIdentitiesChanged);
 }
 
 FolderSettings::~FolderSettings()

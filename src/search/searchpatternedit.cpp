@@ -613,7 +613,7 @@ void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeT
     }
 
     //------------connect a few signals
-    connect(bg, QOverload<QAbstractButton *>::of(&QButtonGroup::buttonClicked), this, &SearchPatternEdit::slotRadioClicked);
+    connect(bg, qOverload<QAbstractButton *>(&QButtonGroup::buttonClicked), this, &SearchPatternEdit::slotRadioClicked);
 
     //------------the list of SearchRuleWidget's
     mRuleLister = new SearchRuleWidgetLister(this, options, modeType);
@@ -632,8 +632,8 @@ void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeT
         qCDebug(MAILCOMMON_LOG) << "No first SearchRuleWidget, though slotClear() has been called!";
     }
 
-    connect(mRuleLister, QOverload<QWidget *>::of(&SearchRuleWidgetLister::widgetAdded), this, &SearchPatternEdit::slotRuleAdded);
-    connect(mRuleLister, QOverload<>::of(&SearchRuleWidgetLister::widgetRemoved), this, &SearchPatternEdit::patternChanged);
+    connect(mRuleLister, qOverload<QWidget *>(&SearchRuleWidgetLister::widgetAdded), this, &SearchPatternEdit::slotRuleAdded);
+    connect(mRuleLister, qOverload<>(&SearchRuleWidgetLister::widgetRemoved), this, &SearchPatternEdit::patternChanged);
     connect(mRuleLister, &KPIM::KWidgetLister::clearWidgets, this, &SearchPatternEdit::patternChanged);
 
     layout->addRow(mRuleLister);

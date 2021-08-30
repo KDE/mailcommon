@@ -347,8 +347,8 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     connect(mFilterList, &KMFilterListBox::filterUpdated, this, &KMFilterDialog::slotDialogUpdated);
     connect(mFilterList, &KMFilterListBox::filterOrderAltered, this, &KMFilterDialog::slotDialogUpdated);
     connect(mPatternEdit, &MailCommon::SearchPatternEdit::patternChanged, this, &KMFilterDialog::slotDialogUpdated);
-    connect(mActionLister, QOverload<QWidget *>::of(&FilterActionWidgetLister::widgetAdded), this, &KMFilterDialog::slotDialogUpdated);
-    connect(mActionLister, QOverload<QWidget *>::of(&FilterActionWidgetLister::widgetRemoved), this, &KMFilterDialog::slotDialogUpdated);
+    connect(mActionLister, qOverload<QWidget *>(&FilterActionWidgetLister::widgetAdded), this, &KMFilterDialog::slotDialogUpdated);
+    connect(mActionLister, qOverload<QWidget *>(&FilterActionWidgetLister::widgetRemoved), this, &KMFilterDialog::slotDialogUpdated);
     connect(mActionLister, &MailCommon::FilterActionWidgetLister::filterModified, this, &KMFilterDialog::slotDialogUpdated);
     connect(mActionLister, &MailCommon::FilterActionWidgetLister::clearWidgets, this, &KMFilterDialog::slotDialogUpdated);
     KConfigGroup myGroup(KernelIf->config(), "Geometry");

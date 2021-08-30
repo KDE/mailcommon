@@ -39,7 +39,7 @@ QWidget *FilterActionAddTag::createParamWidget(QWidget *parent) const
     }
 
     setParamWidgetValue(mComboBox);
-    connect(mComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &FilterActionAddTag::filterActionModified);
+    connect(mComboBox, qOverload<int>(&QComboBox::currentIndexChanged), this, &FilterActionAddTag::filterActionModified);
 
     return mComboBox;
 }

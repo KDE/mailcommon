@@ -93,7 +93,7 @@ QWidget *FilterActionSetIdentity::createParamWidget(QWidget *parent) const
     comboBox->setObjectName(QStringLiteral("identitycombobox"));
     comboBox->setCurrentIdentity(mParameter);
 
-    connect(comboBox, QOverload<int>::of(&KIdentityManagement::IdentityCombo::currentIndexChanged), this, &FilterActionSetIdentity::filterActionModified);
+    connect(comboBox, qOverload<int>(&KIdentityManagement::IdentityCombo::currentIndexChanged), this, &FilterActionSetIdentity::filterActionModified);
     return comboBox;
 }
 

@@ -62,7 +62,7 @@ SnippetWidget::SnippetWidget(QWidget *parent)
         Q_EMIT textChanged(str);
         d->wasChanged = true;
     });
-    connect(d->mUi.groupBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, [this](int index) {
+    connect(d->mUi.groupBox, qOverload<int>(&QComboBox::currentIndexChanged), this, [this](int index) {
         Q_EMIT groupChanged(index);
         d->wasChanged = true;
     });
