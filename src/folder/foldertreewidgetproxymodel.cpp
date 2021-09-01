@@ -35,19 +35,21 @@ public:
 
     bool checkQuotaExcedded(const QModelIndex &index, qreal &percentage)
     {
-        if (index.model()->hasChildren(index)) {
-            const int rowCount = index.model()->rowCount(index);
-            for (int row = 0; row < rowCount; row++) {
-                const QModelIndex firstIndex = q->mapToSource(index.model()->index(row, 0, index));
+        if (threshold >= 0.0) {
+            if (index.model()->hasChildren(index)) {
+                const int rowCount = index.model()->rowCount(index);
+                for (int row = 0; row < rowCount; row++) {
+                    const QModelIndex firstIndex = q->mapToSource(index.model()->index(row, 0, index));
 
-                const auto collectionFirst = q->sourceModel()->data(firstIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
-                if (collectionFirst.isValid() && collectionFirst.hasAttribute<Akonadi::CollectionQuotaAttribute>()) {
-                    const auto *quota = collectionFirst.attribute<Akonadi::CollectionQuotaAttribute>();
+                    const auto collectionFirst = q->sourceModel()->data(firstIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+                    if (collectionFirst.isValid() && collectionFirst.hasAttribute<Akonadi::CollectionQuotaAttribute>()) {
+                        const auto *quota = collectionFirst.attribute<Akonadi::CollectionQuotaAttribute>();
 
-                    if (quota->currentValue() > -1 && quota->maximumValue() > 0) {
-                        percentage = (100.0 * quota->currentValue()) / quota->maximumValue();
-                        if (percentage >= threshold) {
-                            return true;
+                        if (quota->currentValue() > -1 && quota->maximumValue() > 0) {
+                            percentage = (100.0 * quota->currentValue()) / quota->maximumValue();
+                            if (percentage >= threshold) {
+                                return true;
+                            }
                         }
                     }
                 }
@@ -60,7 +62,7 @@ public:
     Akonadi::MimeTypeChecker checker;
 
     QColor brokenAccountColor;
-    qreal threshold = 0.0;
+    qreal threshold = -1.0;
     FolderTreeWidgetProxyModel *const q;
     bool enableCheck = false;
     bool hideVirtualFolder = false;
