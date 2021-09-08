@@ -10,8 +10,8 @@
 #include "util/mailutil_p.h"
 
 #include <Akonadi/CollectionStatistics>
+#include <Akonadi/CollectionStatisticsDelegate>
 #include <Akonadi/EntityTreeModel>
-#include <CollectionStatisticsDelegate>
 
 #include <KConfigGroup>
 #include <KGuiItem>

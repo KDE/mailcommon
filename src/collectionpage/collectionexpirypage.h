@@ -10,7 +10,7 @@
 #include "mailcommon_export.h"
 
 #include <Akonadi/Collection>
-#include <CollectionPropertiesPage>
+#include <Akonadi/CollectionPropertiesPage>
 
 namespace MailCommon
 {

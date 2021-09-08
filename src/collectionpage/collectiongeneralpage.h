@@ -8,7 +8,7 @@
 
 #include "mailcommon_export.h"
 
-#include <CollectionPropertiesPage>
+#include <Akonadi/CollectionPropertiesPage>
 
 class QLineEdit;
 

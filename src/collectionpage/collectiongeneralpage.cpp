@@ -16,10 +16,10 @@
 #include <PimCommonAkonadi/ContentTypeWidget>
 
 #include <Akonadi/AgentManager>
+#include <Akonadi/AttributeFactory>
 #include <Akonadi/Collection>
+#include <Akonadi/CollectionModifyJob>
 #include <Akonadi/EntityDisplayAttribute>
-#include <AttributeFactory>
-#include <CollectionModifyJob>
 #include <PimCommon/PimUtil>
 
 #include <KIdentityManagement/IdentityCombo>

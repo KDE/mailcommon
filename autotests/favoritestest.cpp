@@ -11,9 +11,9 @@
 #include <KSharedConfig>
 
 #include <Akonadi/ChangeRecorder>
+#include <Akonadi/Control>
 #include <Akonadi/EntityTreeModel>
 #include <akonadi/qtest_akonadi.h>
-#include <control.h>
 #include <favoritecollectionorderproxymodel.h>
 #include <favoritecollectionsmodel.h>
 

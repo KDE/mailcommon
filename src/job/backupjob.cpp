@@ -8,11 +8,11 @@
 #include "backupjob.h"
 
 #include "mailcommon_debug.h"
+#include <Akonadi/CollectionDeleteJob>
 #include <Akonadi/CollectionFetchJob>
 #include <Akonadi/CollectionFetchScope>
 #include <Akonadi/ItemFetchJob>
 #include <Akonadi/ItemFetchScope>
-#include <CollectionDeleteJob>
 #include <PimCommon/BroadcastStatus>
 
 #include <KMime/Message>

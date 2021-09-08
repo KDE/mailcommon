@@ -12,7 +12,7 @@
 #include "mailcommon_export.h"
 
 #include <Akonadi/Collection>
-#include <EntityTreeView>
+#include <Akonadi/EntityTreeView>
 
 class QMouseEvent;
 

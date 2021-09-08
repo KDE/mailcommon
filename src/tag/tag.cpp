@@ -5,10 +5,10 @@
 */
 #include "tag.h"
 
+#include <Akonadi/Tag>
+#include <Akonadi/TagAttribute>
 #include <QFont>
 #include <QGuiApplication>
-#include <Tag>
-#include <TagAttribute>
 
 #include <QUuid>
 using namespace MailCommon;

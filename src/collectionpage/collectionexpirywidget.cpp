@@ -13,7 +13,7 @@
 #include "mailcommon_debug.h"
 #include "util/mailutil.h"
 
-#include <CollectionModifyJob>
+#include <Akonadi/CollectionModifyJob>
 
 #include <KMessageBox>
 #include <KPluralHandlingSpinBox>

@@ -13,10 +13,10 @@
 
 #include <Akonadi/AgentInstance>
 #include <Akonadi/AgentManager>
+#include <Akonadi/EntityMimeTypeFilterModel>
 #include <Akonadi/KMime/SpecialMailCollectionsDiscoveryJob>
 #include <Akonadi/KMime/SpecialMailCollectionsRequestJob>
 #include <QApplication>
-#include <entitymimetypefiltermodel.h>
 #include <util/resourcereadconfigfile.h>
 
 #include <KIdentityManagement/Identity>

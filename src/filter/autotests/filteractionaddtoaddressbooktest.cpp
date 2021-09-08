@@ -12,7 +12,7 @@
 #include <QWidget>
 
 #include <Akonadi/CollectionComboBox>
-#include <AkonadiWidgets/TagWidget>
+#include <Akonadi/TagWidget>
 
 FilterActionAddToAddressBookTest::FilterActionAddToAddressBookTest(QObject *parent)
     : QObject(parent)

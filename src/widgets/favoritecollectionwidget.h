@@ -9,7 +9,7 @@
 
 #include "mailcommon_export.h"
 
-#include <EntityListView>
+#include <Akonadi/EntityListView>
 
 class KXMLGUIClient;
 class KActionCollection;
