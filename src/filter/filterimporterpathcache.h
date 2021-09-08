@@ -7,7 +7,7 @@
 #pragma once
 
 #include "mailcommon_export.h"
-#include <AkonadiCore/Collection>
+#include <Akonadi/Collection>
 #include <QHash>
 #include <QObject>
 namespace MailCommon

@@ -9,16 +9,16 @@
 #include "foldersettings.h"
 #include "mailcommon_debug.h"
 #include "util/mailutil.h"
+#include <Akonadi/ChangeRecorder>
+#include <Akonadi/Collection>
+#include <Akonadi/CollectionFetchScope>
+#include <Akonadi/EntityAnnotationsAttribute>
+#include <Akonadi/EntityTreeModel>
+#include <Akonadi/Item>
+#include <Akonadi/ItemDeleteJob>
+#include <Akonadi/ItemFetchJob>
+#include <Akonadi/ItemFetchScope>
 #include <Akonadi/KMime/MessageParts>
-#include <AkonadiCore/entityannotationsattribute.h>
-#include <ChangeRecorder>
-#include <Collection>
-#include <CollectionFetchScope>
-#include <EntityTreeModel>
-#include <Item>
-#include <ItemDeleteJob>
-#include <ItemFetchJob>
-#include <ItemFetchScope>
 
 #include <KMime/KMimeMessage>
 

@@ -8,7 +8,7 @@
 
 #include "mailcommon_export.h"
 
-#include <Collection>
+#include <Akonadi/Collection>
 
 #include <QWidget>
 

@@ -15,11 +15,11 @@
 #include <PimCommonAkonadi/CollectionAnnotationsAttribute>
 #include <PimCommonAkonadi/ContentTypeWidget>
 
-#include <AgentManager>
+#include <Akonadi/AgentManager>
+#include <Akonadi/Collection>
+#include <Akonadi/EntityDisplayAttribute>
 #include <AttributeFactory>
-#include <Collection>
 #include <CollectionModifyJob>
-#include <EntityDisplayAttribute>
 #include <PimCommon/PimUtil>
 
 #include <KIdentityManagement/IdentityCombo>

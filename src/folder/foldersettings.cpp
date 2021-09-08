@@ -10,10 +10,10 @@
 #include "mailcommon_debug.h"
 #include "util/mailutil.h"
 #include "util/resourcereadconfigfile.h"
+#include <Akonadi/ItemFetchJob>
+#include <Akonadi/ItemFetchScope>
 #include <Akonadi/KMime/NewMailNotifierAttribute>
 #include <CollectionModifyJob>
-#include <ItemFetchJob>
-#include <ItemFetchScope>
 #include <PimCommon/PimUtil>
 
 using namespace Akonadi;

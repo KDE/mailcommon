@@ -6,7 +6,7 @@
 
 #include "filterimporterpathcachetest.h"
 #include "../filterimporterpathcache.h"
-#include <AkonadiCore/Collection>
+#include <Akonadi/Collection>
 #include <QTest>
 
 QTEST_MAIN(FilterImporterPathCacheTest)

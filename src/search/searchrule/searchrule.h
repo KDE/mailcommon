@@ -6,9 +6,9 @@
 #pragma once
 
 #include "mailcommon_export.h"
-#include <AkonadiCore/SearchQuery>
+#include <Akonadi/SearchQuery>
 
-#include <AkonadiCore/Item>
+#include <Akonadi/Item>
 
 class KConfigGroup;
 namespace MailCommon

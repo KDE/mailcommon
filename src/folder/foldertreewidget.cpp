@@ -14,16 +14,16 @@
 #include <PimCommon/PimUtil>
 #include <PimCommonAkonadi/ImapAclAttribute>
 
-#include <AkonadiCore/AttributeFactory>
-#include <AkonadiCore/ChangeRecorder>
-#include <AkonadiCore/Collection>
-#include <AkonadiCore/EntityMimeTypeFilterModel>
-#include <AkonadiCore/EntityTreeModel>
-#include <AkonadiCore/ItemFetchScope>
-#include <AkonadiCore/StatisticsProxyModel>
+#include <Akonadi/AttributeFactory>
+#include <Akonadi/ChangeRecorder>
+#include <Akonadi/Collection>
+#include <Akonadi/EntityMimeTypeFilterModel>
+#include <Akonadi/EntityTreeModel>
+#include <Akonadi/ItemFetchScope>
+#include <Akonadi/StatisticsProxyModel>
 
-#include <AkonadiWidgets/ETMViewStateSaver>
-#include <AkonadiWidgets/EntityTreeView>
+#include <Akonadi/ETMViewStateSaver>
+#include <Akonadi/EntityTreeView>
 
 #include <KMime/Message>
 

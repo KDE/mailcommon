@@ -11,7 +11,7 @@
 
 #include <MessageCore/MessageCoreSettings>
 
-#include <AkonadiWidgets/CollectionStatisticsDelegate>
+#include <Akonadi/CollectionStatisticsDelegate>
 #include <KActionCollection>
 #include <KActionMenu>
 #include <KLocalizedString>

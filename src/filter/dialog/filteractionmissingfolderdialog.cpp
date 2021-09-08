@@ -12,7 +12,7 @@
 #include "tag/addtagdialog.h"
 #include "util/mailutil.h"
 
-#include <EntityMimeTypeFilterModel>
+#include <Akonadi/EntityMimeTypeFilterModel>
 
 #include <KIdentityManagement/IdentityCombo>
 

@@ -7,7 +7,7 @@
 #include "collectionpage/attributes/expirecollectionattribute.h"
 #include <Akonadi/KMime/NewMailNotifierAttribute>
 
-#include <AkonadiCore/attributefactory.h>
+#include <Akonadi/AttributeFactory>
 
 namespace
 {

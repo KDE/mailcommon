@@ -11,7 +11,7 @@
 
 #include "mailcommon_export.h"
 
-#include <attribute.h>
+#include <akonadi/attribute.h>
 
 namespace MailCommon
 {

@@ -12,8 +12,8 @@
 #include <MessageCore/MailingList>
 using MessageCore::MailingList;
 
-#include <Collection>
-#include <CollectionStatistics>
+#include <Akonadi/Collection>
+#include <Akonadi/CollectionStatistics>
 
 #include <KIO/Job>
 #include <KSharedConfig>

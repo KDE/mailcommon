@@ -10,8 +10,8 @@
 
 #include <Libkdepim/ProgressManager>
 
-#include <Collection>
-#include <Item>
+#include <Akonadi/Collection>
+#include <Akonadi/Item>
 
 #include <QUrl>
 

@@ -7,7 +7,7 @@
 
 #pragma once
 
-#include <Collection>
+#include <Akonadi/Collection>
 
 #include <KSharedConfig>
 

@@ -8,7 +8,7 @@
 #pragma once
 
 #include "mailcommon_export.h"
-#include <EntityOrderProxyModel>
+#include <Akonadi/EntityOrderProxyModel>
 
 namespace MailCommon
 {

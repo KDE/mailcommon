@@ -11,8 +11,8 @@
 #include <PimCommon/PimUtil>
 #include <PimCommonAkonadi/ImapResourceCapabilitiesManager>
 
-#include <AgentInstance>
-#include <AgentManager>
+#include <Akonadi/AgentInstance>
+#include <Akonadi/AgentManager>
 #include <Akonadi/KMime/SpecialMailCollectionsDiscoveryJob>
 #include <Akonadi/KMime/SpecialMailCollectionsRequestJob>
 #include <QApplication>

@@ -8,8 +8,8 @@
 #include "mailfilter.h"
 #include "util/mailutil.h"
 
-#include <AkonadiCore/AgentInstance>
-#include <AkonadiCore/AgentType>
+#include <Akonadi/AgentInstance>
+#include <Akonadi/AgentType>
 
 #include <KLocalizedString>
 

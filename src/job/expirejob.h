@@ -8,8 +8,8 @@
 
 #include "jobscheduler.h"
 
-#include <Collection>
-#include <Item>
+#include <Akonadi/Collection>
+#include <Akonadi/Item>
 
 class KJob;
 

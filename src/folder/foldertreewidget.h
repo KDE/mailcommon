@@ -10,7 +10,7 @@
 #include "foldertreewidgetproxymodel.h"
 #include "mailcommon_export.h"
 
-#include <Collection>
+#include <Akonadi/Collection>
 
 #include <QAbstractItemView>
 #include <QWidget>

@@ -10,7 +10,7 @@ using MailCommon::FilterLog;
 
 #include <Akonadi/Contact/ContactSearchJob>
 
-#include <AkonadiCore/SearchQuery>
+#include <Akonadi/SearchQuery>
 
 #include <KMime/KMimeMessage>
 

@@ -10,12 +10,12 @@
 #include <KConfigGroup>
 #include <KSharedConfig>
 
-#include <changerecorder.h>
+#include <Akonadi/ChangeRecorder>
+#include <Akonadi/EntityTreeModel>
+#include <akonadi/qtest_akonadi.h>
 #include <control.h>
-#include <entitytreemodel.h>
 #include <favoritecollectionorderproxymodel.h>
 #include <favoritecollectionsmodel.h>
-#include <qtest_akonadi.h>
 
 using namespace Akonadi;
 using namespace MailCommon;

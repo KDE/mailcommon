@@ -14,7 +14,7 @@
 #include <QList>
 #include <QString>
 
-#include <AkonadiCore/searchquery.h>
+#include <Akonadi/SearchQuery>
 
 namespace Akonadi
 {

@@ -21,7 +21,7 @@ using MailCommon::FilterLog;
 #include <PimCommon/PimUtil>
 
 // KDEPIMLIBS headers
-#include <AgentManager>
+#include <Akonadi/AgentManager>
 
 // other KDE headers
 #include <KConfig>

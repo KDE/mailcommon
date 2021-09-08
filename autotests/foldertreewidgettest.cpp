@@ -6,22 +6,22 @@
 
 #undef QT_NO_CAST_FROM_ASCII
 
-#include <qtest_akonadi.h>
+#include <akonadi/qtest_akonadi.h>
 
-#include <AkonadiCore/Collection>
-#include <AkonadiCore/Item>
-#include <AkonadiCore/ItemFetchScope>
+#include <Akonadi/Collection>
+#include <Akonadi/Item>
+#include <Akonadi/ItemFetchScope>
 
-#include <AkonadiCore/AgentInstanceCreateJob>
-#include <AkonadiCore/AgentManager>
-#include <AkonadiCore/AgentType>
-#include <AkonadiCore/CollectionCreateJob>
-#include <AkonadiCore/CollectionDeleteJob>
-#include <AkonadiCore/CollectionFetchJob>
-#include <AkonadiCore/CollectionMoveJob>
-#include <AkonadiCore/EntityOrderProxyModel>
-#include <AkonadiCore/SearchCreateJob>
-#include <AkonadiCore/SearchQuery>
+#include <Akonadi/AgentInstanceCreateJob>
+#include <Akonadi/AgentManager>
+#include <Akonadi/AgentType>
+#include <Akonadi/CollectionCreateJob>
+#include <Akonadi/CollectionDeleteJob>
+#include <Akonadi/CollectionFetchJob>
+#include <Akonadi/CollectionMoveJob>
+#include <Akonadi/EntityOrderProxyModel>
+#include <Akonadi/SearchCreateJob>
+#include <Akonadi/SearchQuery>
 
 #include <KMime/Message>
 

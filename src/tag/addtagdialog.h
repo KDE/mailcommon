@@ -8,8 +8,8 @@
 
 #include "mailcommon_export.h"
 #include "tag.h"
-#include <AkonadiCore/Tag>
-#include <AkonadiCore/TagCreateJob>
+#include <Akonadi/Tag>
+#include <Akonadi/TagCreateJob>
 #include <QDialog>
 #include <QVector>
 

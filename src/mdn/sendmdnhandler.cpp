@@ -16,9 +16,9 @@
 #include <MessageComposer/Util>
 #include <MessageViewer/MessageViewerSettings>
 
+#include <Akonadi/Collection>
+#include <Akonadi/Item>
 #include <Akonadi/KMime/MessageFlags>
-#include <Collection>
-#include <Item>
 
 #include <QQueue>
 #include <QTimer>

@@ -7,7 +7,7 @@
 #pragma once
 
 #include "searchpattern.h"
-#include <AkonadiCore/Item>
+#include <Akonadi/Item>
 
 /**
  * @short This class represents a search pattern rule operating on a string.

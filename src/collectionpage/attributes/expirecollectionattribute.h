@@ -9,8 +9,8 @@
 
 #include "mailcommon_export.h"
 
-#include <Attribute>
-#include <Collection>
+#include <Akonadi/Attribute>
+#include <Akonadi/Collection>
 #include <QDebug>
 
 namespace MailCommon

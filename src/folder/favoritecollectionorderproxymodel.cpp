@@ -7,8 +7,8 @@
 
 #include "favoritecollectionorderproxymodel.h"
 #include "mailcommon_debug.h"
-#include <Collection>
-#include <EntityTreeModel>
+#include <Akonadi/Collection>
+#include <Akonadi/EntityTreeModel>
 
 using namespace MailCommon;
 

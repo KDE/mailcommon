@@ -9,9 +9,9 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil_p.h"
 
-#include <CollectionStatistics>
+#include <Akonadi/CollectionStatistics>
+#include <Akonadi/EntityTreeModel>
 #include <CollectionStatisticsDelegate>
-#include <EntityTreeModel>
 
 #include <KConfigGroup>
 #include <KGuiItem>

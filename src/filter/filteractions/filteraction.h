@@ -12,8 +12,8 @@
 
 #include "mailcommon/itemcontext.h"
 
-#include <Collection>
-#include <Item>
+#include <Akonadi/Collection>
+#include <Akonadi/Item>
 
 #include <KMime/KMimeMessage>
 #include <KMime/MDN>

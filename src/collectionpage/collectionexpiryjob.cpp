@@ -8,7 +8,7 @@
 #include "mailcommon_debug.h"
 #include "util/mailutil.h"
 
-#include <AkonadiCore/CollectionModifyJob>
+#include <Akonadi/CollectionModifyJob>
 
 using namespace MailCommon;
 

@@ -15,14 +15,14 @@ using PimCommon::BroadcastStatus;
 
 #include <KLocalizedString>
 
+#include <Akonadi/ItemDeleteJob>
+#include <Akonadi/ItemFetchJob>
+#include <Akonadi/ItemFetchScope>
+#include <Akonadi/ItemModifyJob>
+#include <Akonadi/ItemMoveJob>
 #include <Akonadi/KMime/MessageFlags>
 #include <Akonadi/KMime/MessageParts>
 #include <Akonadi/KMime/MessageStatus>
-#include <ItemDeleteJob>
-#include <ItemFetchJob>
-#include <ItemFetchScope>
-#include <ItemModifyJob>
-#include <ItemMoveJob>
 #include <KMime/Message>
 
 /*

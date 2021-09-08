@@ -10,8 +10,8 @@
 #include "mailcommon/searchpattern.h"
 #include "mailcommon_export.h"
 
-#include <Collection>
-#include <Item>
+#include <Akonadi/Collection>
+#include <Akonadi/Item>
 
 namespace MailCommon
 {

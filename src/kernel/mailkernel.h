@@ -10,8 +10,8 @@
 #include "mailcommon/mailinterfaces.h"
 #include "mailcommon_export.h"
 
+#include <Akonadi/Collection>
 #include <Akonadi/KMime/SpecialMailCollections>
-#include <Collection>
 #include <KSharedConfig>
 
 #include <QObject>

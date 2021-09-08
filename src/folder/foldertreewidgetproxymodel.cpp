@@ -11,10 +11,10 @@
 
 #include <MessageCore/MessageCoreSettings>
 
-#include <AgentInstance>
-#include <AgentManager>
-#include <EntityTreeModel>
-#include <MimeTypeChecker>
+#include <Akonadi/AgentInstance>
+#include <Akonadi/AgentManager>
+#include <Akonadi/EntityTreeModel>
+#include <Akonadi/MimeTypeChecker>
 
 #include <KColorScheme>
 #include <KLocalizedString>

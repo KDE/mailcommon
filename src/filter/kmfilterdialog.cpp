@@ -27,7 +27,7 @@ using MailCommon::FilterImporterExporter;
 #include "util/mailutil.h"
 #include <PimCommon/PimUtil>
 
-#include <ItemFetchJob>
+#include <Akonadi/ItemFetchJob>
 
 #include <KConfigGroup>
 

@@ -11,7 +11,7 @@
 
 #include <QComboBox>
 
-#include <AkonadiCore/Tag>
+#include <Akonadi/Tag>
 
 using namespace MailCommon;
 

@@ -30,13 +30,13 @@
 
 #include <MessageComposer/MessageHelper>
 
-#include <AgentManager>
+#include <Akonadi/AgentManager>
+#include <Akonadi/EntityTreeModel>
+#include <Akonadi/ItemFetchJob>
+#include <Akonadi/ItemFetchScope>
 #include <Akonadi/KMime/MessageParts>
 #include <Akonadi/KMime/NewMailNotifierAttribute>
-#include <AkonadiCore/ServerManager>
-#include <EntityTreeModel>
-#include <ItemFetchJob>
-#include <ItemFetchScope>
+#include <Akonadi/ServerManager>
 #include <entitymimetypefiltermodel.h>
 
 #include <KMime/KMimeMessage>

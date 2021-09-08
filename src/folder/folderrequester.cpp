@@ -9,7 +9,7 @@
 #include "folderselectiondialog.h"
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
-#include <CollectionFetchJob>
+#include <Akonadi/CollectionFetchJob>
 #include <Libkdepim/LineEditCatchReturnKey>
 
 #include <KLocalizedString>

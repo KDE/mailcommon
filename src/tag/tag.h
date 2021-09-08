@@ -8,7 +8,7 @@
 
 #include <QKeySequence>
 
-#include <AkonadiCore/tag.h>
+#include <Akonadi/Tag>
 #include <QColor>
 #include <QSharedPointer>
 

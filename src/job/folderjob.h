@@ -8,7 +8,7 @@
 #pragma once
 
 #include "mailcommon_export.h"
-#include <Collection>
+#include <Akonadi/Collection>
 
 namespace MailCommon
 {

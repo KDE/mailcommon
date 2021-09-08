@@ -11,7 +11,7 @@
 #include <QTest>
 #include <QWidget>
 
-#include <AkonadiWidgets/CollectionComboBox>
+#include <Akonadi/CollectionComboBox>
 #include <AkonadiWidgets/TagWidget>
 
 FilterActionAddToAddressBookTest::FilterActionAddToAddressBookTest(QObject *parent)

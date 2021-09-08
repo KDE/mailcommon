@@ -9,8 +9,8 @@
 #include "mailcommon_export.h"
 #include "mailfilter.h"
 
-#include <Item>
-#include <ServerManager>
+#include <Akonadi/Item>
+#include <Akonadi/ServerManager>
 
 #include <QObject>
 

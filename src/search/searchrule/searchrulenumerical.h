@@ -7,7 +7,7 @@
 #pragma once
 
 #include "searchpattern.h"
-#include <AkonadiCore/Item>
+#include <Akonadi/Item>
 namespace MailCommon
 {
 /**

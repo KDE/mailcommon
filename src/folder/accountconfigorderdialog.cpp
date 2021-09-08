@@ -14,8 +14,8 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 
-#include <AkonadiCore/AgentInstance>
-#include <AkonadiCore/AgentManager>
+#include <Akonadi/AgentInstance>
+#include <Akonadi/AgentManager>
 
 #include <KMime/KMimeMessage>
 

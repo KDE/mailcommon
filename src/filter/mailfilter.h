@@ -12,7 +12,7 @@
 #include "mailcommon/filteraction.h"
 #include "mailcommon/searchpattern.h"
 
-#include <AkonadiCore/collection.h>
+#include <Akonadi/Collection>
 #include <QKeySequence>
 
 #include <kmime/kmime_message.h>

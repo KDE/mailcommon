@@ -11,12 +11,12 @@
 #include "filteractions/filteractiondict.h"
 #include "filterimporterexporter.h"
 #include "mailfilteragentinterface.h"
+#include <Akonadi/Monitor>
+#include <Akonadi/TagFetchScope>
 #include <KConfigGroup>
-#include <Monitor>
 #include <Tag>
 #include <TagAttribute>
 #include <TagFetchJob>
-#include <TagFetchScope>
 
 #include <QTimer>
 

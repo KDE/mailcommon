@@ -8,8 +8,8 @@
 
 #include "mailcommon_export.h"
 
-#include <Collection>
-#include <EntityRightsFilterModel>
+#include <Akonadi/Collection>
+#include <Akonadi/EntityRightsFilterModel>
 
 namespace MailCommon
 {

@@ -9,7 +9,7 @@
 
 #include <QTest>
 
-#include <AkonadiCore/Item>
+#include <Akonadi/Item>
 #include <KMime/Message>
 
 Q_DECLARE_METATYPE(MailCommon::SearchRule::Function)

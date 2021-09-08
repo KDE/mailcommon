@@ -8,7 +8,7 @@
 #pragma once
 
 #include "mailcommon_private_export.h"
-#include <Collection>
+#include <Akonadi/Collection>
 
 #include <QDialog>
 

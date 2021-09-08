@@ -13,10 +13,10 @@
 #include <KLocalizedString>
 #include <QIcon>
 
+#include <Akonadi/TagFetchScope>
 #include <Tag>
 #include <TagAttribute>
 #include <TagFetchJob>
-#include <TagFetchScope>
 
 #include <QComboBox>
 #include <QLineEdit>

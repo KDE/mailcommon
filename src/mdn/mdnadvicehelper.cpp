@@ -7,7 +7,7 @@
 #include "mdnadvicehelper.h"
 #include "filter/mdnadvicedialog.h"
 #include "mailcommon_debug.h"
-#include <AkonadiCore/ItemModifyJob>
+#include <Akonadi/ItemModifyJob>
 #include <KLocalizedString>
 #include <MessageComposer/Util>
 #include <MessageViewer/MessageViewerSettings>
