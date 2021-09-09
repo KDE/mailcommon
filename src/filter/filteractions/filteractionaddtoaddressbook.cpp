@@ -10,7 +10,7 @@
 #include <Akonadi/Contact/AddContactJob>
 
 #include <Akonadi/TagSelectionDialog>
-#include <AkonadiWidgets/TagWidget>
+#include <Akonadi/TagWidget>
 
 #include <CollectionComboBox>
 #include <KComboBox>
