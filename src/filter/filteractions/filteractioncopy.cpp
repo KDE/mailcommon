@@ -10,7 +10,7 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 
-#include <ItemCopyJob>
+#include <Akonadi/ItemCopyJob>
 #include <KLocalizedString>
 
 using namespace MailCommon;

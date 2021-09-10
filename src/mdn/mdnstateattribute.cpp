@@ -9,7 +9,7 @@
 
 #include "mdnstateattribute.h"
 
-#include <akonadi/attributefactory.h>
+#include <Akonadi/AttributeFactory>
 
 #include <QByteArray>
 

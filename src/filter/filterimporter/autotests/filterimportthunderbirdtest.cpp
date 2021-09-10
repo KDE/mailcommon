@@ -7,8 +7,8 @@
 #include "../filterimporterthunderbird.h"
 #include "filter/mailfilter.h"
 #include "filtertestkernel.h"
-#include <AkonadiCore/qtest_akonadi.h>
 #include <MailCommon/MailKernel>
+#include <akonadi/qtest_akonadi.h>
 
 void FilterImportThunderbirdtest::initTestCase()
 {

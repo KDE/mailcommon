@@ -13,9 +13,9 @@
 #include "foldertreewidgetproxymodel.h"
 #include "kernel/mailkernel.h"
 
+#include <Akonadi/CollectionCreateJob>
 #include <Akonadi/EntityMimeTypeFilterModel>
 #include <Akonadi/EntityTreeModel>
-#include <CollectionCreateJob>
 
 #include <KLocalizedString>
 #include <KMessageBox>

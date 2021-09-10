@@ -12,7 +12,7 @@
 #include <Akonadi/TagSelectionDialog>
 #include <Akonadi/TagWidget>
 
-#include <CollectionComboBox>
+#include <Akonadi/CollectionComboBox>
 #include <KComboBox>
 #include <KContacts/Addressee>
 #include <KEmailAddress>

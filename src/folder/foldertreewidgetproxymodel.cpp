@@ -16,9 +16,9 @@
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/MimeTypeChecker>
 
+#include <Akonadi/CollectionQuotaAttribute>
 #include <KColorScheme>
 #include <KLocalizedString>
-#include <collectionquotaattribute.h>
 
 #include <QIcon>
 #include <QPalette>
