@@ -18,7 +18,6 @@
 #include <QDataStream>
 
 #include <algorithm>
-#include <boost/bind.hpp>
 
 using namespace MailCommon;
 

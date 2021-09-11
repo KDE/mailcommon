@@ -21,7 +21,6 @@ using MailCommon::FilterLog;
 #include <QRegularExpression>
 
 #include <algorithm>
-#include <boost/bind.hpp>
 
 using namespace MailCommon;
 SearchRuleString::SearchRuleString(const QByteArray &field, Function func, const QString &contents)
