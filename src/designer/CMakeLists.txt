@@ -1,6 +1,6 @@
 include(ECMAddQtDesignerPlugin)
 ecm_qtdesignerplugin_widget(MailCommon::SearchPatternEdit
-    INCLUDE_FILE "mailcommon/searchpatternedit.h"
+    INCLUDE_FILE "MailCommon/SearchPatternEdit"
     TOOLTIP "Search pattern editor (KDE-PIM)"
     WHATSTHIS "This widget is intended to be used in the filter configuration as well as in the message search dialogs."
     GROUP "Input (KDE-PIM)"
