@@ -24,7 +24,7 @@ QWidget *FilterActionWithStringList::createParamWidget(QWidget *parent) const
     comboBox->setEditable(false);
     comboBox->addItems(mParameterList);
     setParamWidgetValue(comboBox);
-    connect(comboBox, qOverload<int>(&QComboBox::currentIndexChanged), this, &FilterActionWithStringList::filterActionModified);
+    connect(comboBox, &QComboBox::currentIndexChanged, this, &FilterActionWithStringList::filterActionModified);
 
     return comboBox;
 }
