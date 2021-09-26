@@ -613,7 +613,7 @@ void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeT
     }
 
     //------------connect a few signals
-    connect(bg, qOverload<QAbstractButton *>(&QButtonGroup::buttonClicked), this, &SearchPatternEdit::slotRadioClicked);
+    connect(bg, &QButtonGroup::buttonClicked, this, &SearchPatternEdit::slotRadioClicked);
 
     //------------the list of SearchRuleWidget's
     mRuleLister = new SearchRuleWidgetLister(this, options, modeType);
