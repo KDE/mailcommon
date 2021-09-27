@@ -132,8 +132,8 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
         i18n("This defines the preferred address book.\n"
              "If it is not accessible, the filter will fallback to the default address book."));
     layout->addWidget(collectionComboBox, 1, 2);
-    connect(headerCombo, qOverload<int>(&KComboBox::currentIndexChanged), this, &FilterActionAddToAddressBook::filterActionModified);
-    connect(collectionComboBox, qOverload<int>(&Akonadi::CollectionComboBox::activated), this, &FilterActionAddToAddressBook::filterActionModified);
+    connect(headerCombo, &KComboBox::currentIndexChanged, this, &FilterActionAddToAddressBook::filterActionModified);
+    connect(collectionComboBox, &Akonadi::CollectionComboBox::activated, this, &FilterActionAddToAddressBook::filterActionModified);
     connect(categoryEdit, &Akonadi::TagWidget::selectionChanged, this, &FilterActionAddToAddressBook::filterActionModified);
 
     setParamWidgetValue(widget);
@@ -202,10 +202,7 @@ void FilterActionAddToAddressBook::applyParamWidgetValue(QWidget *paramWidget)
     // we use the previously 'stored' value from the 'collectionId' property
     if (collection.isValid()) {
         mCollectionId = collection.id();
-        connect(collectionComboBox,
-                qOverload<int>(&Akonadi::CollectionComboBox::currentIndexChanged),
-                this,
-                &FilterActionAddToAddressBook::filterActionModified);
+        connect(collectionComboBox, &Akonadi::CollectionComboBox::currentIndexChanged, this, &FilterActionAddToAddressBook::filterActionModified);
     } else {
         const QVariant value = collectionComboBox->property("collectionId");
         if (value.isValid()) {

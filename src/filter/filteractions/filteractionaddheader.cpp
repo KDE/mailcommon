@@ -85,7 +85,7 @@ QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
     layout->addWidget(lineEdit, 1);
 
     setParamWidgetValue(widget);
-    connect(comboBox, qOverload<int>(&KComboBox::currentIndexChanged), this, &FilterActionAddHeader::filterActionModified);
+    connect(comboBox, &KComboBox::currentIndexChanged, this, &FilterActionAddHeader::filterActionModified);
     connect(comboBox->lineEdit(), &QLineEdit::textChanged, this, &FilterAction::filterActionModified);
     connect(lineEdit, &QLineEdit::textChanged, this, &FilterActionAddHeader::filterActionModified);
 

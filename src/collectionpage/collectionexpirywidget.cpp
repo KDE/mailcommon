@@ -70,10 +70,10 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
     auto formLayout = new QFormLayout(this);
     formLayout->setContentsMargins({});
 
-    connect(mExpireReadMailSB, qOverload<int>(&KPluralHandlingSpinBox::valueChanged), this, &CollectionExpiryWidget::slotChanged);
+    connect(mExpireReadMailSB, &KPluralHandlingSpinBox::valueChanged, this, &CollectionExpiryWidget::slotChanged);
     formLayout->addRow(i18n("Expire read messages after:"), mExpireReadMailSB);
 
-    connect(mExpireUnreadMailSB, qOverload<int>(&KPluralHandlingSpinBox::valueChanged), this, &CollectionExpiryWidget::slotChanged);
+    connect(mExpireUnreadMailSB, &KPluralHandlingSpinBox::valueChanged, this, &CollectionExpiryWidget::slotChanged);
     formLayout->addRow(i18n("Expire unread messages after:"), mExpireUnreadMailSB);
 
     connect(mExpireMailWithInvalidDateCB, &QCheckBox::toggled, this, &CollectionExpiryWidget::slotChanged);

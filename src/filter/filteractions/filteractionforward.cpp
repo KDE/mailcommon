@@ -110,7 +110,7 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
     templateCombo->setEnabled(templateCombo->count() > 1);
     templateCombo->setToolTip(i18n("The template used when forwarding"));
     templateCombo->setWhatsThis(i18n("Set the forwarding template that will be used with this filter."));
-    connect(templateCombo, qOverload<int>(&KComboBox::currentIndexChanged), this, &FilterActionForward::filterActionModified);
+    connect(templateCombo, &KComboBox::currentIndexChanged, this, &FilterActionForward::filterActionModified);
     connect(addressRequester, &Akonadi::EmailAddressRequester::textChanged, this, &FilterActionForward::filterActionModified);
 
     return addressAndTemplate;
