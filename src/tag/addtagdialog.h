@@ -33,6 +33,6 @@ private:
     void slotSave();
     void slotTagNameChanged(const QString &text);
     void onTagCreated(KJob *job);
-    AddTagDialogPrivate *const d;
+    std::unique_ptr<AddTagDialogPrivate> const d;
 };
 }

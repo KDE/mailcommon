@@ -54,8 +54,8 @@ private:
     bool acceptEvent(QDropEvent *event) const;
     void createMenu(KActionCollection *ac);
 
-    class Private;
-    Private *const d;
+    class FavoriteCollectionWidgetPrivate;
+    std::unique_ptr<FavoriteCollectionWidgetPrivate> const d;
 };
 }
 

@@ -35,7 +35,7 @@ private:
     void writeConfig();
     void readConfig();
     void init();
-    AccountConfigOrderDialogPrivate *const d;
+    std::unique_ptr<AccountConfigOrderDialogPrivate> const d;
 };
 }
 

@@ -51,11 +51,7 @@ FolderCollectionMonitor::FolderCollectionMonitor(Akonadi::Session *session, QObj
     d->mMonitor->itemFetchScope().fetchAttribute<Akonadi::EntityAnnotationsAttribute>(true);
 }
 
-FolderCollectionMonitor::~FolderCollectionMonitor()
-{
-    qDebug() << "FolderCollectionMonitor::~FolderCollectionMonitor()  " << this;
-    delete d;
-}
+FolderCollectionMonitor::~FolderCollectionMonitor() = default;
 
 Akonadi::ChangeRecorder *FolderCollectionMonitor::monitor() const
 {

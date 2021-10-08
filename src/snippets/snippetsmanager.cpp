@@ -26,10 +26,10 @@
 
 using namespace MailCommon;
 
-class Q_DECL_HIDDEN SnippetsManager::Private
+class Q_DECL_HIDDEN SnippetsManager::SnippetsManagerPrivate
 {
 public:
-    Private(SnippetsManager *qq, QWidget *parentWidget)
+    SnippetsManagerPrivate(SnippetsManager *qq, QWidget *parentWidget)
         : q(qq)
         , mParent(parentWidget)
     {
@@ -92,7 +92,7 @@ public:
     bool mDirty = false;
 };
 
-QModelIndex SnippetsManager::Private::currentGroupIndex() const
+QModelIndex SnippetsManager::SnippetsManagerPrivate::currentGroupIndex() const
 {
     if (mSelectionModel->selectedIndexes().isEmpty()) {
         return QModelIndex();
@@ -106,7 +106,7 @@ QModelIndex SnippetsManager::Private::currentGroupIndex() const
     }
 }
 
-void SnippetsManager::Private::selectionChanged()
+void SnippetsManager::SnippetsManagerPrivate::selectionChanged()
 {
     const bool itemSelected = !mSelectionModel->selectedIndexes().isEmpty();
 
@@ -135,12 +135,12 @@ void SnippetsManager::Private::selectionChanged()
     }
 }
 
-void SnippetsManager::Private::addSnippet()
+void SnippetsManager::SnippetsManagerPrivate::addSnippet()
 {
     createSnippet();
 }
 
-void SnippetsManager::Private::createSnippet(const QString &text)
+void SnippetsManager::SnippetsManagerPrivate::createSnippet(const QString &text)
 {
     const bool noGroupAvailable = (mModel->rowCount() == 0);
 
@@ -196,17 +196,17 @@ void SnippetsManager::Private::createSnippet(const QString &text)
     delete dlg;
 }
 
-void SnippetsManager::Private::slotAddNewDndSnippset(const QString &text)
+void SnippetsManager::SnippetsManagerPrivate::slotAddNewDndSnippset(const QString &text)
 {
     createSnippet(text);
 }
 
-void SnippetsManager::Private::dndDone()
+void SnippetsManager::SnippetsManagerPrivate::dndDone()
 {
     mDirty = true;
 }
 
-void SnippetsManager::Private::editSnippet()
+void SnippetsManager::SnippetsManagerPrivate::editSnippet()
 {
     QModelIndex index = mSelectionModel->selectedIndexes().first();
     if (!index.isValid() || index.data(SnippetsModel::IsGroupRole).toBool()) {
@@ -266,7 +266,7 @@ void SnippetsManager::Private::editSnippet()
     delete dlg;
 }
 
-void SnippetsManager::Private::deleteSnippet()
+void SnippetsManager::SnippetsManagerPrivate::deleteSnippet()
 {
     const QModelIndex index = mSelectionModel->selectedIndexes().first();
 
@@ -290,7 +290,7 @@ void SnippetsManager::Private::deleteSnippet()
     save();
 }
 
-void SnippetsManager::Private::addSnippetGroup()
+void SnippetsManager::SnippetsManagerPrivate::addSnippetGroup()
 {
     QPointer<SnippetDialog> dlg = new SnippetDialog(mActionCollection, true, mParent);
     dlg->setWindowTitle(i18nc("@title:window", "Add Group"));
@@ -310,7 +310,7 @@ void SnippetsManager::Private::addSnippetGroup()
     delete dlg;
 }
 
-void SnippetsManager::Private::editSnippetGroup()
+void SnippetsManager::SnippetsManagerPrivate::editSnippetGroup()
 {
     const QModelIndex groupIndex = currentGroupIndex();
     if (!groupIndex.isValid() || !groupIndex.data(SnippetsModel::IsGroupRole).toBool()) {
@@ -335,7 +335,7 @@ void SnippetsManager::Private::editSnippetGroup()
     delete dlg;
 }
 
-void SnippetsManager::Private::deleteSnippetGroup()
+void SnippetsManager::SnippetsManagerPrivate::deleteSnippetGroup()
 {
     const QModelIndex groupIndex = currentGroupIndex();
     if (!groupIndex.isValid()) {
@@ -370,7 +370,7 @@ void SnippetsManager::Private::deleteSnippetGroup()
     save();
 }
 
-void SnippetsManager::Private::insertSelectedSnippet()
+void SnippetsManager::SnippetsManagerPrivate::insertSelectedSnippet()
 {
     if (!mSelectionModel->hasSelection()) {
         return;
@@ -390,7 +390,7 @@ void SnippetsManager::Private::insertSelectedSnippet()
     Q_EMIT q->insertSnippetInfo({subject, text, to, cc, bcc, attachment});
 }
 
-void SnippetsManager::Private::insertActionSnippet()
+void SnippetsManager::SnippetsManagerPrivate::insertActionSnippet()
 {
     auto action = qobject_cast<QAction *>(q->sender());
     if (!action) {
@@ -406,7 +406,7 @@ void SnippetsManager::Private::insertActionSnippet()
     Q_EMIT q->insertSnippetInfo({subject, text, to, cc, bcc, attachment});
 }
 
-void SnippetsManager::Private::initializeActionCollection()
+void SnippetsManager::SnippetsManagerPrivate::initializeActionCollection()
 {
     if (mActionCollection) {
         const QVector<SnippetsInfo> infos = mModel->snippetsInfo();
@@ -416,14 +416,14 @@ void SnippetsManager::Private::initializeActionCollection()
     }
 }
 
-void SnippetsManager::Private::initializeAction(const QString &newName,
-                                                const QKeySequence &keySequence,
-                                                const QString &text,
-                                                const QString &subject,
-                                                const QString &to,
-                                                const QString &cc,
-                                                const QString &bcc,
-                                                const QString &attachment)
+void SnippetsManager::SnippetsManagerPrivate::initializeAction(const QString &newName,
+                                                               const QKeySequence &keySequence,
+                                                               const QString &text,
+                                                               const QString &subject,
+                                                               const QString &to,
+                                                               const QString &cc,
+                                                               const QString &bcc,
+                                                               const QString &attachment)
 {
     const QString actionName = i18nc("@action", "Snippet %1", newName);
     const QString normalizedName = QString(actionName).replace(QLatin1Char(' '), QLatin1Char('_'));
@@ -442,15 +442,15 @@ void SnippetsManager::Private::initializeAction(const QString &newName,
     mActionCollection->setDefaultShortcut(action, keySequence);
 }
 
-void SnippetsManager::Private::updateActionCollection(const QString &oldName,
-                                                      const QString &newName,
-                                                      const QKeySequence &keySequence,
-                                                      const QString &text,
-                                                      const QString &subject,
-                                                      const QString &to,
-                                                      const QString &cc,
-                                                      const QString &bcc,
-                                                      const QString &attachment)
+void SnippetsManager::SnippetsManagerPrivate::updateActionCollection(const QString &oldName,
+                                                                     const QString &newName,
+                                                                     const QKeySequence &keySequence,
+                                                                     const QString &text,
+                                                                     const QString &subject,
+                                                                     const QString &to,
+                                                                     const QString &cc,
+                                                                     const QString &bcc,
+                                                                     const QString &attachment)
 {
     // remove previous action in case that the name changed
     if (!oldName.isEmpty() && mActionCollection) {
@@ -468,7 +468,7 @@ void SnippetsManager::Private::updateActionCollection(const QString &oldName,
     }
 }
 
-QString SnippetsManager::Private::replaceVariables(const QString &text)
+QString SnippetsManager::SnippetsManagerPrivate::replaceVariables(const QString &text)
 {
     QString result = text;
     QString variableName;
@@ -514,7 +514,7 @@ QString SnippetsManager::Private::replaceVariables(const QString &text)
     return result;
 }
 
-void SnippetsManager::Private::save()
+void SnippetsManager::SnippetsManagerPrivate::save()
 {
     if (!mDirty) {
         return;
@@ -526,7 +526,7 @@ void SnippetsManager::Private::save()
 
 SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *parent, QWidget *parentWidget)
     : QObject(parent)
-    , d(new Private(this, parentWidget))
+    , d(new SnippetsManagerPrivate(this, parentWidget))
 {
     d->mModel = SnippetsModel::instance();
     connect(d->mModel,
@@ -607,7 +607,6 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
 SnippetsManager::~SnippetsManager()
 {
     d->save();
-    delete d;
 }
 
 QAbstractItemModel *SnippetsManager::model() const

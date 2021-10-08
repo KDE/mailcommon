@@ -31,10 +31,7 @@ ResourceReadConfigFile::ResourceReadConfigFile(const QString &resourceName)
     d->mConfig = new KConfig(resourceName + QStringLiteral("rc"));
 }
 
-ResourceReadConfigFile::~ResourceReadConfigFile()
-{
-    delete d;
-}
+ResourceReadConfigFile::~ResourceReadConfigFile() = default;
 
 KConfigGroup ResourceReadConfigFile::group(const QString &name) const
 {

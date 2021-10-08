@@ -18,7 +18,7 @@ using namespace MailCommon;
 /**
  *  @internal
  */
-class Q_DECL_HIDDEN MDNStateAttribute::Private
+class Q_DECL_HIDDEN MDNStateAttribute::MDNStateAttributePrivate
 {
 public:
     MDNSentState dataToState(const QByteArray &data)
@@ -100,21 +100,18 @@ public:
 };
 
 MDNStateAttribute::MDNStateAttribute(MDNSentState state)
-    : d(new Private)
+    : d(new MDNStateAttributePrivate)
 {
     d->mSentState = d->stateToData(state);
 }
 
 MDNStateAttribute::MDNStateAttribute(const QByteArray &stateData)
-    : d(new Private)
+    : d(new MDNStateAttributePrivate)
 {
     d->mSentState = stateData;
 }
 
-MDNStateAttribute::~MDNStateAttribute()
-{
-    delete d;
-}
+MDNStateAttribute::~MDNStateAttribute() = default;
 
 MDNStateAttribute *MDNStateAttribute::clone() const
 {

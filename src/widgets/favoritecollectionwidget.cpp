@@ -24,10 +24,10 @@
 
 using namespace MailCommon;
 
-class Q_DECL_HIDDEN FavoriteCollectionWidget::Private
+class Q_DECL_HIDDEN FavoriteCollectionWidget::FavoriteCollectionWidgetPrivate
 {
 public:
-    Private()
+    FavoriteCollectionWidgetPrivate()
     {
     }
 
@@ -39,7 +39,7 @@ public:
 
 FavoriteCollectionWidget::FavoriteCollectionWidget(MailCommon::MailCommonSettings *settings, KXMLGUIClient *xmlGuiClient, QWidget *parent)
     : Akonadi::EntityListView(xmlGuiClient, parent)
-    , d(new Private)
+    , d(new FavoriteCollectionWidgetPrivate)
 {
     d->settings = settings;
     setFocusPolicy(Qt::NoFocus);
@@ -56,10 +56,7 @@ FavoriteCollectionWidget::FavoriteCollectionWidget(MailCommon::MailCommonSetting
     createMenu(xmlGuiClient->actionCollection());
 }
 
-FavoriteCollectionWidget::~FavoriteCollectionWidget()
-{
-    delete d;
-}
+FavoriteCollectionWidget::~FavoriteCollectionWidget() = default;
 
 void FavoriteCollectionWidget::mousePressEvent(QMouseEvent *e)
 {

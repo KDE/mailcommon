@@ -12,7 +12,7 @@
 #include "mailcommon_export.h"
 
 #include <QObject>
-
+#include <memory>
 class KActionCollection;
 
 class QAbstractItemModel;
@@ -126,8 +126,8 @@ Q_SIGNALS:
 
 private:
     //@cond PRIVATE
-    class Private;
-    Private *const d;
+    class SnippetsManagerPrivate;
+    std::unique_ptr<SnippetsManagerPrivate> const d;
     //@endcond
 };
 }

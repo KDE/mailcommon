@@ -116,7 +116,6 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(MailCommon::MailCommonSetting
 AccountConfigOrderDialog::~AccountConfigOrderDialog()
 {
     writeConfig();
-    delete d;
 }
 
 void AccountConfigOrderDialog::slotEnableAccountOrder(bool state)

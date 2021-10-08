@@ -12,6 +12,7 @@
 #include "mailcommon_export.h"
 
 #include <Akonadi/Attribute>
+#include <memory>
 
 namespace MailCommon
 {
@@ -96,8 +97,8 @@ public:
 
 private:
     //@cond PRIVATE
-    class Private;
-    Private *const d;
+    class MDNStateAttributePrivate;
+    std::unique_ptr<MDNStateAttributePrivate> const d;
     //@endcond
 };
 }

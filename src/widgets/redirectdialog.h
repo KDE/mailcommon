@@ -67,8 +67,8 @@ protected:
 
 private:
     //@cond PRIVATE
-    class Private;
-    Private *const d;
+    class RedirectDialogPrivate;
+    std::unique_ptr<RedirectDialogPrivate> const d;
     //@endcond
 };
 }

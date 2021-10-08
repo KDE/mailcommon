@@ -46,7 +46,7 @@ public Q_SLOTS:
 
 private:
     class EntityCollectionOrderProxyModelPrivate;
-    EntityCollectionOrderProxyModelPrivate *const d;
+    std::unique_ptr<EntityCollectionOrderProxyModelPrivate> const d;
 };
 }
 

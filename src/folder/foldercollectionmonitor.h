@@ -47,7 +47,7 @@ protected:
 
 private:
     void slotDeleteJob(KJob *job);
-    FolderCollectionMonitorPrivate *const d;
+    std::unique_ptr<FolderCollectionMonitorPrivate> const d;
 };
 }
 

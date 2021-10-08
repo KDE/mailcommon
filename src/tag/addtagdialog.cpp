@@ -57,10 +57,7 @@ AddTagDialog::AddTagDialog(const QList<KActionCollection *> &actions, QWidget *p
     mainLayout->addWidget(buttonBox);
 }
 
-AddTagDialog::~AddTagDialog()
-{
-    delete d;
-}
+AddTagDialog::~AddTagDialog() = default;
 
 void AddTagDialog::setTags(const QVector<MailCommon::Tag::Ptr> &tags)
 {

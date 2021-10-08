@@ -70,7 +70,7 @@ protected:
 
 private:
     class FolderSelectionDialogPrivate;
-    FolderSelectionDialogPrivate *const d;
+    std::unique_ptr<FolderSelectionDialogPrivate> const d;
 };
 }
 

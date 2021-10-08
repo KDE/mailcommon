@@ -118,7 +118,6 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
 FolderSelectionDialog::~FolderSelectionDialog()
 {
     writeConfig();
-    delete d;
 }
 
 void FolderSelectionDialog::slotFolderTreeWidgetContextMenuRequested(const QPoint &pos)

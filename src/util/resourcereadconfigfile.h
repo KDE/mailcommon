@@ -9,6 +9,7 @@
 #include "mailcommon_export.h"
 #include <KConfigGroup>
 #include <QString>
+#include <memory>
 
 namespace MailCommon
 {
@@ -22,7 +23,7 @@ public:
     KConfigGroup group(const QString &name) const;
 
 private:
-    ResourceReadConfigFilePrivate *const d;
+    std::unique_ptr<ResourceReadConfigFilePrivate> const d;
 };
 }
 

@@ -29,10 +29,10 @@
 
 using namespace MailCommon;
 
-class Q_DECL_HIDDEN RedirectDialog::Private
+class Q_DECL_HIDDEN RedirectDialog::RedirectDialogPrivate
 {
 public:
-    Private(RedirectDialog *qq, RedirectDialog::SendMode mode)
+    RedirectDialogPrivate(RedirectDialog *qq, RedirectDialog::SendMode mode)
         : q(qq)
         , mSendMode(mode)
     {
@@ -56,7 +56,7 @@ public:
     QPushButton *mUser2Button = nullptr;
 };
 
-QString RedirectDialog::Private::redirectLabelType(TypeAddress type) const
+QString RedirectDialog::RedirectDialogPrivate::redirectLabelType(TypeAddress type) const
 {
     QString label;
     switch (type) {
@@ -73,19 +73,19 @@ QString RedirectDialog::Private::redirectLabelType(TypeAddress type) const
     return label;
 }
 
-void RedirectDialog::Private::slotUser1()
+void RedirectDialog::RedirectDialogPrivate::slotUser1()
 {
     mSendMode = RedirectDialog::SendNow;
     q->accept();
 }
 
-void RedirectDialog::Private::slotUser2()
+void RedirectDialog::RedirectDialogPrivate::slotUser2()
 {
     mSendMode = RedirectDialog::SendLater;
     q->accept();
 }
 
-void RedirectDialog::Private::slotAddressChanged(const QString &text)
+void RedirectDialog::RedirectDialogPrivate::slotAddressChanged(const QString &text)
 {
     const bool textIsNotEmpty(!text.trimmed().isEmpty());
     mUser1Button->setEnabled(textIsNotEmpty);
@@ -94,7 +94,7 @@ void RedirectDialog::Private::slotAddressChanged(const QString &text)
 
 RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
     : QDialog(parent)
-    , d(new Private(this, mode))
+    , d(new RedirectDialogPrivate(this, mode))
 {
     setWindowTitle(i18nc("@title:window", "Redirect Message"));
     auto topLayout = new QVBoxLayout(this);
@@ -129,16 +129,16 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
     mainLayout->addLayout(formLayout);
 
     d->mEditTo = new RedirectWidget;
-    formLayout->addRow(d->redirectLabelType(RedirectDialog::Private::ResendTo), d->mEditTo);
+    formLayout->addRow(d->redirectLabelType(RedirectDialog::RedirectDialogPrivate::ResendTo), d->mEditTo);
 
     connect(d->mEditTo, &RedirectWidget::addressChanged, this, [this](const QString &str) {
         d->slotAddressChanged(str);
     });
 
     d->mEditCc = new RedirectWidget;
-    formLayout->addRow(d->redirectLabelType(RedirectDialog::Private::ResendCc), d->mEditCc);
+    formLayout->addRow(d->redirectLabelType(RedirectDialog::RedirectDialogPrivate::ResendCc), d->mEditCc);
     d->mEditBcc = new RedirectWidget;
-    formLayout->addRow(d->redirectLabelType(RedirectDialog::Private::ResendBcc), d->mEditBcc);
+    formLayout->addRow(d->redirectLabelType(RedirectDialog::RedirectDialogPrivate::ResendBcc), d->mEditBcc);
     d->mEditTo->setFocus();
 
     // Because the form layout vertical spacing was set to zero above,
@@ -165,10 +165,7 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
     d->mUser2Button->setEnabled(false);
 }
 
-RedirectDialog::~RedirectDialog()
-{
-    delete d;
-}
+RedirectDialog::~RedirectDialog() = default;
 
 QString RedirectDialog::to() const
 {

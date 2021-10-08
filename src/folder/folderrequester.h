@@ -97,7 +97,7 @@ protected:
     void setCollectionFullPath(const Akonadi::Collection &col);
 
 protected:
-    FolderRequesterPrivate *const d;
+    std::unique_ptr<FolderRequesterPrivate> const d;
 };
 }
 

@@ -92,10 +92,7 @@ SnippetWidget::SnippetWidget(QWidget *parent)
     });
 }
 
-SnippetWidget::~SnippetWidget()
-{
-    delete d;
-}
+SnippetWidget::~SnippetWidget() = default;
 
 void SnippetWidget::setName(const QString &name)
 {

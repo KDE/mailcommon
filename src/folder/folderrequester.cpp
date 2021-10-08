@@ -81,10 +81,7 @@ void FolderRequester::slotOpenDialog()
 }
 
 //-----------------------------------------------------------------------------
-FolderRequester::~FolderRequester()
-{
-    delete d;
-}
+FolderRequester::~FolderRequester() = default;
 
 Akonadi::Collection FolderRequester::collection() const
 {

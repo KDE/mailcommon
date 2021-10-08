@@ -94,7 +94,6 @@ EntityCollectionOrderProxyModel::~EntityCollectionOrderProxyModel()
     if (d->manualSortingActive) {
         saveOrder();
     }
-    delete d;
 }
 
 void EntityCollectionOrderProxyModel::slotSpecialCollectionsChanged()

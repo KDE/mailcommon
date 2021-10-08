@@ -72,7 +72,7 @@ Q_SIGNALS:
     void groupChanged(int index);
 
 private:
-    SnippetWidgetPrivate *const d;
+    std::unique_ptr<SnippetWidgetPrivate> const d;
 };
 }
 
