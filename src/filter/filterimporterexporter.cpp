@@ -105,7 +105,7 @@ public:
     }
 
     void warningInfoAboutInvalidFilter(const QStringList &emptyFilters) const;
-    QWidget *mParent = nullptr;
+    QWidget *const mParent;
 };
 
 void FilterImporterExporter::Private::warningInfoAboutInvalidFilter(const QStringList &emptyFilters) const
