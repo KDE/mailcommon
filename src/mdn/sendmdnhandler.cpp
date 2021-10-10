@@ -98,10 +98,7 @@ SendMdnHandler::SendMdnHandler(IKernel *kernel, QObject *parent)
     });
 }
 
-SendMdnHandler::~SendMdnHandler()
-{
-    delete d;
-}
+SendMdnHandler::~SendMdnHandler() = default;
 
 void SendMdnHandler::setItem(const Akonadi::Item &item)
 {

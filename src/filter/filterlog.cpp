@@ -16,10 +16,10 @@
 
 using namespace MailCommon;
 
-class Q_DECL_HIDDEN FilterLog::Private
+class Q_DECL_HIDDEN FilterLog::FilterLogPrivate
 {
 public:
-    Private(FilterLog *qq)
+    FilterLogPrivate(FilterLog *qq)
         : q(qq)
         , mMaxLogSize(512 * 1024)
         , mAllowedTypes(FilterLog::Meta | FilterLog::PatternDescription | FilterLog::RuleResult | FilterLog::PatternResult | FilterLog::AppliedAction)
@@ -38,7 +38,7 @@ public:
     void checkLogSize();
 };
 
-void FilterLog::Private::checkLogSize()
+void FilterLog::FilterLogPrivate::checkLogSize()
 {
     if (mCurrentLogSize > mMaxLogSize && mMaxLogSize > -1) {
         qCDebug(MAILCOMMON_LOG) << "Filter log: memory limit reached, starting to discard old items, size =" << QString::number(mCurrentLogSize);
@@ -60,25 +60,22 @@ void FilterLog::Private::checkLogSize()
     }
 }
 
-FilterLog *FilterLog::Private::mSelf = nullptr;
+FilterLog *FilterLog::FilterLogPrivate::mSelf = nullptr;
 
 FilterLog::FilterLog()
-    : d(new Private(this))
+    : d(new FilterLogPrivate(this))
 {
 }
 
-FilterLog::~FilterLog()
-{
-    delete d;
-}
+FilterLog::~FilterLog() = default;
 
 FilterLog *FilterLog::instance()
 {
-    if (!FilterLog::Private::mSelf) {
-        FilterLog::Private::mSelf = new FilterLog();
+    if (!FilterLog::FilterLogPrivate::mSelf) {
+        FilterLog::FilterLogPrivate::mSelf = new FilterLog();
     }
 
-    return FilterLog::Private::mSelf;
+    return FilterLog::FilterLogPrivate::mSelf;
 }
 
 bool FilterLog::isLogging() const

@@ -14,7 +14,7 @@
 
 #include <QStringList>
 #include <QVector>
-
+#include <memory>
 class QWidget;
 
 namespace MailCommon
@@ -83,8 +83,8 @@ private:
     //@cond PRIVATE
     Q_DISABLE_COPY(FilterImporterExporter)
 
-    class Private;
-    Private *const d;
+    class FilterImporterExporterPrivate;
+    std::unique_ptr<FilterImporterExporterPrivate> const d;
     //@endcond
 };
 }

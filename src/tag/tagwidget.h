@@ -57,7 +57,7 @@ Q_SIGNALS:
 
 private:
     void slotEmitChangeCheck();
-    TagWidgetPrivate *const d;
+    std::unique_ptr<TagWidgetPrivate> const d;
 };
 }
 

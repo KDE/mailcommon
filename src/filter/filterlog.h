@@ -10,7 +10,7 @@
 
 #include <QObject>
 #include <QStringList>
-
+#include <memory>
 namespace MailCommon
 {
 /**
@@ -143,8 +143,8 @@ private:
     //@cond PRIVATE
     FilterLog();
 
-    class Private;
-    Private *const d;
+    class FilterLogPrivate;
+    std::unique_ptr<FilterLogPrivate> const d;
     //@endcond
 };
 }

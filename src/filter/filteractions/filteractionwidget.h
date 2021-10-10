@@ -83,8 +83,8 @@ Q_SIGNALS:
 
 private:
     //@cond PRIVATE
-    class Private;
-    Private *const d;
+    class FilterActionWidgetPrivate;
+    std::unique_ptr<FilterActionWidgetPrivate> const d;
     //@endcond
 };
 
@@ -149,8 +149,8 @@ protected:
 
 private:
     //@cond PRIVATE
-    class Private;
-    Private *const d;
+    class FilterActionWidgetListerPrivate;
+    std::unique_ptr<FilterActionWidgetListerPrivate> const d;
     //@endcond
     void connectWidget(QWidget *widget, FilterAction *filterAction);
 };

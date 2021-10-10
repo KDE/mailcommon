@@ -14,7 +14,7 @@
 
 #include <QAbstractItemView>
 #include <QWidget>
-
+#include <memory>
 namespace Akonadi
 {
 class StatisticsProxyModel;
@@ -121,7 +121,7 @@ protected Q_SLOTS:
 private:
     bool eventFilter(QObject *o, QEvent *e) override;
     class FolderTreeWidgetPrivate;
-    FolderTreeWidgetPrivate *const d;
+    std::unique_ptr<FolderTreeWidgetPrivate> const d;
 };
 }
 

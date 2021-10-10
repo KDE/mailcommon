@@ -10,6 +10,7 @@
 
 #include <Akonadi/Collection>
 #include <Akonadi/EntityRightsFilterModel>
+#include <memory>
 
 namespace MailCommon
 {
@@ -56,8 +57,8 @@ protected:
     bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override;
 
 private:
-    class Private;
-    Private *const d;
+    class FolderTreeWidgetProxyModelPrivate;
+    std::unique_ptr<FolderTreeWidgetProxyModelPrivate> const d;
 };
 }
 

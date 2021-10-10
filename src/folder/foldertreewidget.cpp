@@ -128,10 +128,7 @@ FolderTreeWidget::FolderTreeWidget(QWidget *parent,
     }
 }
 
-FolderTreeWidget::~FolderTreeWidget()
-{
-    delete d;
-}
+FolderTreeWidget::~FolderTreeWidget() = default;
 
 void FolderTreeWidget::slotFilterFixedString(const QString &text)
 {

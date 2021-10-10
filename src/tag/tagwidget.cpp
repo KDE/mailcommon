@@ -148,10 +148,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     connect(d->mInToolbarCheck, &QCheckBox::stateChanged, this, &TagWidget::slotEmitChangeCheck);
 }
 
-TagWidget::~TagWidget()
-{
-    delete d;
-}
+TagWidget::~TagWidget() = default;
 
 void TagWidget::slotEmitChangeCheck()
 {

@@ -96,10 +96,10 @@ void FilterImporterExporter::writeFiltersToConfig(const QVector<MailFilter *> &f
     config->sync();
 }
 
-class Q_DECL_HIDDEN FilterImporterExporter::Private
+class Q_DECL_HIDDEN FilterImporterExporter::FilterImporterExporterPrivate
 {
 public:
-    Private(QWidget *parent)
+    FilterImporterExporterPrivate(QWidget *parent)
         : mParent(parent)
     {
     }
@@ -108,7 +108,7 @@ public:
     QWidget *const mParent;
 };
 
-void FilterImporterExporter::Private::warningInfoAboutInvalidFilter(const QStringList &emptyFilters) const
+void FilterImporterExporter::FilterImporterExporterPrivate::warningInfoAboutInvalidFilter(const QStringList &emptyFilters) const
 {
     if (!emptyFilters.isEmpty()) {
         KMessageBox::informationList(mParent,
@@ -121,14 +121,11 @@ void FilterImporterExporter::Private::warningInfoAboutInvalidFilter(const QStrin
 }
 
 FilterImporterExporter::FilterImporterExporter(QWidget *parent)
-    : d(new Private(parent))
+    : d(new FilterImporterExporterPrivate(parent))
 {
 }
 
-FilterImporterExporter::~FilterImporterExporter()
-{
-    delete d;
-}
+FilterImporterExporter::~FilterImporterExporter() = default;
 
 QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, FilterImporterExporter::FilterType type, const QString &filename)
 {

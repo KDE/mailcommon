@@ -28,15 +28,15 @@ using namespace MailCommon;
 //
 //=============================================================================
 
-class Q_DECL_HIDDEN FilterActionWidget::Private
+class Q_DECL_HIDDEN FilterActionWidget::FilterActionWidgetPrivate
 {
 public:
-    Private(FilterActionWidget *qq)
+    FilterActionWidgetPrivate(FilterActionWidget *qq)
         : q(qq)
     {
     }
 
-    ~Private()
+    ~FilterActionWidgetPrivate()
     {
         qDeleteAll(mActionList);
         mActionList.clear();
@@ -57,7 +57,7 @@ public:
     QGridLayout *mLayout = nullptr;
 };
 
-void FilterActionWidget::Private::setFilterAction(QWidget *widget)
+void FilterActionWidget::FilterActionWidgetPrivate::setFilterAction(QWidget *widget)
 {
     if (mLayout->itemAtPosition(1, 2)) {
         delete mLayout->itemAtPosition(1, 2)->widget();
@@ -70,26 +70,26 @@ void FilterActionWidget::Private::setFilterAction(QWidget *widget)
     }
 }
 
-void FilterActionWidget::Private::slotAddWidget()
+void FilterActionWidget::FilterActionWidgetPrivate::slotAddWidget()
 {
     Q_EMIT q->addFilterWidget(q);
     Q_EMIT q->filterModified();
 }
 
-void FilterActionWidget::Private::slotRemoveWidget()
+void FilterActionWidget::FilterActionWidgetPrivate::slotRemoveWidget()
 {
     Q_EMIT q->removeFilterWidget(q);
     Q_EMIT q->filterModified();
 }
 
-void FilterActionWidget::Private::slotFilterTypeChanged(int index)
+void FilterActionWidget::FilterActionWidgetPrivate::slotFilterTypeChanged(int index)
 {
     setFilterAction(index < mActionList.count() ? mActionList.at(index)->createParamWidget(q) : nullptr);
 }
 
 FilterActionWidget::FilterActionWidget(QWidget *parent)
     : QWidget(parent)
-    , d(new Private(this))
+    , d(new FilterActionWidgetPrivate(this))
 {
     auto mainLayout = new QHBoxLayout(this);
     mainLayout->setContentsMargins({});
@@ -170,10 +170,7 @@ FilterActionWidget::FilterActionWidget(QWidget *parent)
     d->mLayout->addWidget(d->mRemove, 1, 4);
 }
 
-FilterActionWidget::~FilterActionWidget()
-{
-    delete d;
-}
+FilterActionWidget::~FilterActionWidget() = default;
 
 void FilterActionWidget::updateAddRemoveButton(bool addButtonEnabled, bool removeButtonEnabled)
 {
@@ -240,10 +237,10 @@ FilterAction *FilterActionWidget::action() const
 //
 //=============================================================================
 
-class Q_DECL_HIDDEN FilterActionWidgetLister::Private
+class FilterActionWidgetLister::FilterActionWidgetListerPrivate
 {
 public:
-    Private(FilterActionWidgetLister *qq)
+    FilterActionWidgetListerPrivate(FilterActionWidgetLister *qq)
         : q(qq)
     {
     }
@@ -254,7 +251,7 @@ public:
     QVector<MailCommon::FilterAction *> *mActionList = nullptr;
 };
 
-void FilterActionWidgetLister::Private::regenerateActionListFromWidgets()
+void FilterActionWidgetLister::FilterActionWidgetListerPrivate::regenerateActionListFromWidgets()
 {
     if (!mActionList) {
         return;
@@ -274,14 +271,11 @@ void FilterActionWidgetLister::Private::regenerateActionListFromWidgets()
 
 FilterActionWidgetLister::FilterActionWidgetLister(QWidget *parent)
     : KWidgetLister(false, 1, MailFilter::filterActionsMaximumSize(), parent)
-    , d(new Private(this))
+    , d(new FilterActionWidgetListerPrivate(this))
 {
 }
 
-FilterActionWidgetLister::~FilterActionWidgetLister()
-{
-    delete d;
-}
+FilterActionWidgetLister::~FilterActionWidgetLister() = default;
 
 void FilterActionWidgetLister::setActionList(QVector<FilterAction *> *list)
 {

@@ -25,10 +25,10 @@
 
 namespace MailCommon
 {
-class FolderTreeWidgetProxyModel::Private
+class FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelPrivate
 {
 public:
-    Private(FolderTreeWidgetProxyModel *qq)
+    FolderTreeWidgetProxyModelPrivate(FolderTreeWidgetProxyModel *qq)
         : q(qq)
     {
     }
@@ -72,7 +72,7 @@ public:
 
 FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModel(QObject *parent, FolderTreeWidgetProxyModelOptions option)
     : Akonadi::EntityRightsFilterModel(parent)
-    , d(new Private(this))
+    , d(new FolderTreeWidgetProxyModelPrivate(this))
 {
     setDynamicSortFilter(true);
     setFilterCaseSensitivity(Qt::CaseInsensitive);
@@ -89,10 +89,7 @@ FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModel(QObject *parent, FolderTr
     readConfig();
 }
 
-FolderTreeWidgetProxyModel::~FolderTreeWidgetProxyModel()
-{
-    delete d;
-}
+FolderTreeWidgetProxyModel::~FolderTreeWidgetProxyModel() = default;
 
 void FolderTreeWidgetProxyModel::setWarningThreshold(qreal threshold)
 {
