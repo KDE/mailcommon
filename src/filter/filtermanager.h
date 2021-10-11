@@ -190,8 +190,8 @@ Q_SIGNALS:
 private:
     FilterManager();
 
-    class Private;
-    Private *const d;
+    class FilterManagerPrivate;
+    FilterManagerPrivate *const d;
 };
 }
 

@@ -22,10 +22,10 @@
 
 namespace MailCommon
 {
-class Q_DECL_HIDDEN FilterManager::Private
+class FilterManager::FilterManagerPrivate
 {
 public:
-    Private(FilterManager *qq)
+    FilterManagerPrivate(FilterManager *qq)
         : q(qq)
         , mMonitor(new Akonadi::Monitor)
     {
@@ -49,7 +49,7 @@ public:
     bool mInitialized = false;
 };
 
-void FilterManager::Private::readConfig()
+void FilterManager::FilterManagerPrivate::readConfig()
 {
     KSharedConfig::Ptr config =
         KSharedConfig::openConfig(Akonadi::ServerManager::addNamespace(QStringLiteral("akonadi_mailfilter_agent")) + QStringLiteral("rc"));
@@ -59,7 +59,7 @@ void FilterManager::Private::readConfig()
     Q_EMIT q->filtersChanged();
 }
 
-void FilterManager::Private::writeConfig(bool withSync) const
+void FilterManager::FilterManagerPrivate::writeConfig(bool withSync) const
 {
     KSharedConfig::Ptr config =
         KSharedConfig::openConfig(Akonadi::ServerManager::addNamespace(QStringLiteral("akonadi_mailfilter_agent")) + QStringLiteral("rc"));
@@ -73,7 +73,7 @@ void FilterManager::Private::writeConfig(bool withSync) const
     }
 }
 
-void FilterManager::Private::clear()
+void FilterManager::FilterManagerPrivate::clear()
 {
     qDeleteAll(mFilters);
     mFilters.clear();
@@ -82,29 +82,29 @@ void FilterManager::Private::clear()
 
 using namespace MailCommon;
 
-FilterManager *FilterManager::Private::mInstance = nullptr;
-FilterActionDict *FilterManager::Private::mFilterActionDict = nullptr;
+FilterManager *FilterManager::FilterManagerPrivate::mInstance = nullptr;
+FilterActionDict *FilterManager::FilterManagerPrivate::mFilterActionDict = nullptr;
 
 FilterManager *FilterManager::instance()
 {
-    if (!FilterManager::Private::mInstance) {
-        FilterManager::Private::mInstance = new FilterManager;
+    if (!FilterManager::FilterManagerPrivate::mInstance) {
+        FilterManager::FilterManagerPrivate::mInstance = new FilterManager;
     }
 
-    return FilterManager::Private::mInstance;
+    return FilterManager::FilterManagerPrivate::mInstance;
 }
 
 FilterActionDict *FilterManager::filterActionDict()
 {
-    if (!FilterManager::Private::mFilterActionDict) {
-        FilterManager::Private::mFilterActionDict = new FilterActionDict;
+    if (!FilterManager::FilterManagerPrivate::mFilterActionDict) {
+        FilterManager::FilterManagerPrivate::mFilterActionDict = new FilterActionDict;
     }
 
-    return FilterManager::Private::mFilterActionDict;
+    return FilterManager::FilterManagerPrivate::mFilterActionDict;
 }
 
 FilterManager::FilterManager()
-    : d(new Private(this))
+    : d(new FilterManagerPrivate(this))
 {
     updateTagList();
 

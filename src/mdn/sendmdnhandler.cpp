@@ -25,10 +25,10 @@
 
 using namespace MailCommon;
 
-class Q_DECL_HIDDEN SendMdnHandler::Private
+class Q_DECL_HIDDEN SendMdnHandler::SendMdnHandlerPrivate
 {
 public:
-    Private(SendMdnHandler *qq, IKernel *kernel)
+    SendMdnHandlerPrivate(SendMdnHandler *qq, IKernel *kernel)
         : q(qq)
         , mKernel(kernel)
     {
@@ -42,7 +42,7 @@ public:
     QTimer mTimer;
 };
 
-void SendMdnHandler::Private::handleMessages()
+void SendMdnHandler::SendMdnHandlerPrivate::handleMessages()
 {
     while (!mItemQueue.isEmpty()) {
         Akonadi::Item item = mItemQueue.dequeue();
@@ -90,7 +90,7 @@ void SendMdnHandler::Private::handleMessages()
 
 SendMdnHandler::SendMdnHandler(IKernel *kernel, QObject *parent)
     : QObject(parent)
-    , d(new Private(this, kernel))
+    , d(new SendMdnHandlerPrivate(this, kernel))
 {
     d->mTimer.setSingleShot(true);
     connect(&d->mTimer, &QTimer::timeout, this, [this]() {

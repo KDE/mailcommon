@@ -45,8 +45,8 @@ public:
 
 private:
     //@cond PRIVATE
-    class Private;
-    std::unique_ptr<Private> const d;
+    class SendMdnHandlerPrivate;
+    std::unique_ptr<SendMdnHandlerPrivate> const d;
     //@endcond
 };
 }
