@@ -76,7 +76,7 @@ public:
         SortByDragAndDropKey ///< Columns are NOT clickable, sorting is done by drag and drop
     };
 
-    void selectCollectionFolder(const Akonadi::Collection &col);
+    void selectCollectionFolder(const Akonadi::Collection &col, bool expand = true);
 
     void setSelectionMode(QAbstractItemView::SelectionMode mode);
 
