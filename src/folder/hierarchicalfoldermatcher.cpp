@@ -18,7 +18,7 @@ HierarchicalFolderMatcher::HierarchicalFolderMatcher()
 {
 }
 
-bool HierarchicalFolderMatcher::isNull()
+bool HierarchicalFolderMatcher::isNull() const
 {
     return filterRegExps.empty();
 }

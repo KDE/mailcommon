@@ -23,13 +23,13 @@ class HierarchicalFolderMatcher
 public:
     HierarchicalFolderMatcher();
 
-    bool isNull();
+    Q_REQUIRED_RESULT bool isNull() const;
 
     void setFilter(const QString &filter, Qt::CaseSensitivity caseSensitivity);
 
-    bool matches(const QAbstractItemModel *model, const QModelIndex &start, int role = Qt::DisplayRole);
+    Q_REQUIRED_RESULT bool matches(const QAbstractItemModel *model, const QModelIndex &start, int role = Qt::DisplayRole);
 
-    QModelIndex findFirstMatch(const QAbstractItemModel *model, const QModelIndex &start, int role = Qt::DisplayRole);
+    Q_REQUIRED_RESULT QModelIndex findFirstMatch(const QAbstractItemModel *model, const QModelIndex &start, int role = Qt::DisplayRole);
 
 private:
     std::vector<QRegularExpression> filterRegExps;
