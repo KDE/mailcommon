@@ -6,6 +6,7 @@
 */
 
 #include "entitycollectionorderproxymodel.h"
+#include "hierarchicalfoldermatcher_p.h"
 #include "kernel/mailkernel.h"
 #include "mailcommon_debug.h"
 #include "util/mailutil.h"
@@ -13,6 +14,8 @@
 #include <Akonadi/Collection>
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/KMime/SpecialMailCollections>
+
+#include <QRegularExpression>
 
 namespace MailCommon
 {
@@ -71,6 +74,7 @@ public:
 
     QMap<Akonadi::Collection::Id, int> collectionRanks;
     QStringList topLevelOrder;
+    HierarchicalFolderMatcher matcher;
     bool manualSortingActive = false;
 };
 
@@ -154,5 +158,20 @@ void EntityCollectionOrderProxyModel::setManualSortingActive(bool active)
 bool EntityCollectionOrderProxyModel::isManualSortingActive() const
 {
     return d->manualSortingActive;
+}
+
+void EntityCollectionOrderProxyModel::setFolderMatcher(const HierarchicalFolderMatcher &matcher)
+{
+    d->matcher = matcher;
+    invalidateFilter();
+}
+
+bool EntityCollectionOrderProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
+{
+    if (d->matcher.isNull()) {
+        return EntityOrderProxyModel::filterAcceptsRow(sourceRow, sourceParent);
+    }
+    QModelIndex sourceIndex = sourceModel()->index(sourceRow, filterKeyColumn(), sourceParent);
+    return d->matcher.matches(sourceModel(), sourceIndex, filterRole());
 }
 }

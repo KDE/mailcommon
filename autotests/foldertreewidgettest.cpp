@@ -202,6 +202,83 @@ private Q_SLOTS:
 #endif
     }
 
+    void testFiltering()
+    {
+        const auto model = mFolderTreeWidget->entityOrderProxy();
+        QCOMPARE(collectNamesRecursive(model), (QStringList{"res3", "res1", "sub1", "res2", "sub2"}));
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("sub"));
+        // matches all folders matching "sub"
+        QCOMPARE(collectNamesRecursive(model), (QStringList{"res1", "sub1", "res2", "sub2"}));
+        QCOMPARE(mFolderTreeWidget->currentIndex().data().toString(), "sub1");
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("res"));
+        // matches all folders matching "res"
+        QCOMPARE(collectNamesRecursive(model), (QStringList{"res3", "res1", "res2"}));
+        // "res1" is current because it became current when previous current "sub1" was filtered out
+        QCOMPARE(mFolderTreeWidget->currentIndex().data().toString(), "res1");
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("foo"));
+        // matches nothing
+        QCOMPARE(collectNamesRecursive(model), (QStringList{}));
+        QVERIFY(!mFolderTreeWidget->currentIndex().isValid());
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("res/sub"));
+        // matches folders matching "sub" with parents matching "res"
+        QCOMPARE(collectNamesRecursive(model), (QStringList{"res1", "sub1", "res2", "sub2"}));
+        QCOMPARE(mFolderTreeWidget->currentIndex().data().toString(), "sub1");
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("res/1"));
+        // matches folders matching "1" with parents matching "res"
+        QCOMPARE(collectNamesRecursive(model), (QStringList{"res1", "sub1"}));
+        QCOMPARE(mFolderTreeWidget->currentIndex().data().toString(), "sub1");
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("res/"));
+        // matches folders matching anything ("" always matches) with parents matching "res"
+        QCOMPARE(collectNamesRecursive(model), (QStringList{"res1", "sub1", "res2", "sub2"}));
+        QCOMPARE(mFolderTreeWidget->currentIndex().data().toString(), "sub1");
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("sub/"));
+        // matches nothing (there are no folders matching "sub" that have subfolders)
+        QCOMPARE(collectNamesRecursive(model), (QStringList{}));
+        QVERIFY(!mFolderTreeWidget->currentIndex().isValid());
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("/sub"));
+        // matches folders matching "sub" with parents matching anything
+        QCOMPARE(collectNamesRecursive(model), (QStringList{"res1", "sub1", "res2", "sub2"}));
+        QCOMPARE(mFolderTreeWidget->currentIndex().data().toString(), "sub1");
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("/res"));
+        // matches nothing (there are no subfolders matching "res")
+        QCOMPARE(collectNamesRecursive(model), (QStringList{}));
+        QVERIFY(!mFolderTreeWidget->currentIndex().isValid());
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("//sub"));
+        // matches nothing (there are no subsubfolders matching "sub")
+        QCOMPARE(collectNamesRecursive(model), (QStringList{}));
+        QVERIFY(!mFolderTreeWidget->currentIndex().isValid());
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("res//"));
+        // matches nothing (there are no folders matching "res" that have subsubfolders)
+        QCOMPARE(collectNamesRecursive(model), (QStringList{}));
+        QVERIFY(!mFolderTreeWidget->currentIndex().isValid());
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("1/1"));
+        // matches folders matching "1" with parents matching "1"
+        QCOMPARE(collectNamesRecursive(model), (QStringList{"res1", "sub1"}));
+        QCOMPARE(mFolderTreeWidget->currentIndex().data().toString(), "sub1");
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("2/"));
+        // matches folders matching anything with parents matching "2"
+        QCOMPARE(collectNamesRecursive(model), (QStringList{"res2", "sub2"}));
+        QCOMPARE(mFolderTreeWidget->currentIndex().data().toString(), "sub2");
+
+        mFolderTreeWidget->applyFilter(QStringLiteral("1/2"));
+        // matches nothing (there are no folders matching "2" with parents matching "1")
+        QCOMPARE(collectNamesRecursive(model), (QStringList{}));
+        QVERIFY(!mFolderTreeWidget->currentIndex().isValid());
+    }
+
 private:
     static Collection topLevelCollectionForResource(const QString &identifier)
     {
@@ -233,6 +310,18 @@ private:
             auto collection = idx.data(EntityTreeModel::CollectionRole).value<Collection>();
             QVERIFY2(collection.isValid(), qPrintable(idx.data().toString()));
         }
+    }
+
+    static QStringList collectNamesRecursive(const QAbstractItemModel *model, const QModelIndex &parent = QModelIndex{})
+    {
+        QStringList ret;
+        ret.reserve(model->rowCount(parent));
+        for (int row = 0; row < model->rowCount(parent); ++row) {
+            QModelIndex idx = model->index(row, 0, parent);
+            ret.append(idx.data().toString());
+            ret.append(collectNamesRecursive(model, idx));
+        }
+        return ret;
     }
 
     static QStringList collectNames(QAbstractItemModel *model);

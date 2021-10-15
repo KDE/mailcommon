@@ -140,6 +140,7 @@ target_sources(KF5MailCommon PRIVATE
     folder/entitycollectionorderproxymodel.cpp
     folder/accountconfigorderdialog.cpp
     folder/favoritecollectionorderproxymodel.cpp
+    folder/hierarchicalfoldermatcher.cpp
     job/jobscheduler.cpp
     job/folderjob.cpp
     job/expirejob.cpp

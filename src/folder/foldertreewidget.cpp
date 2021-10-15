@@ -8,6 +8,7 @@
 #include "foldertreewidget.h"
 #include "entitycollectionorderproxymodel.h"
 #include "foldertreeview.h"
+#include "hierarchicalfoldermatcher_p.h"
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 
@@ -311,16 +312,17 @@ void FolderTreeWidget::applyFilter(const QString &filter)
 {
     d->label->setText(filter.isEmpty() ? i18n("You can start typing to filter the list of folders.") : i18n("Path: (%1)", filter));
 
-    d->entityOrderProxy->setFilterWildcard(filter);
+    HierarchicalFolderMatcher matcher;
+    matcher.setFilter(filter, d->entityOrderProxy->filterCaseSensitivity());
+    d->entityOrderProxy->setFolderMatcher(matcher);
     d->folderTreeView->expandAll();
-    QAbstractItemModel *model = d->folderTreeView->model();
-    QModelIndex current = d->folderTreeView->currentIndex();
-    QModelIndex start = current.isValid() ? current : model->index(0, 0);
-    QModelIndexList list = model->match(start, Qt::DisplayRole, d->filter, 1 /* stop at first hit */, Qt::MatchContains | Qt::MatchWrap | Qt::MatchRecursive);
-    if (!list.isEmpty()) {
-        current = list.first();
-        d->folderTreeView->setCurrentIndex(current);
-        d->folderTreeView->scrollTo(current);
+    const QAbstractItemModel *const model = d->folderTreeView->model();
+    const QModelIndex current = d->folderTreeView->currentIndex();
+    const QModelIndex start = current.isValid() ? current : model->index(0, 0);
+    const QModelIndex firstMatch = matcher.findFirstMatch(model, start);
+    if (firstMatch.isValid()) {
+        d->folderTreeView->setCurrentIndex(firstMatch);
+        d->folderTreeView->scrollTo(firstMatch);
     }
 }
 

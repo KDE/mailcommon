@@ -12,6 +12,8 @@
 
 namespace MailCommon
 {
+class HierarchicalFolderMatcher;
+
 /**
  * @brief The EntityCollectionOrderProxyModel class implements ordering of mail collections.
  * It supports two modes: manual sorting and automatic sorting.
@@ -41,8 +43,13 @@ public:
     void clearRanks();
     void setTopLevelOrder(const QStringList &list);
 
+    void setFolderMatcher(const HierarchicalFolderMatcher &matcher);
+
 public Q_SLOTS:
     void slotSpecialCollectionsChanged();
+
+protected:
+    bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override;
 
 private:
     class EntityCollectionOrderProxyModelPrivate;
