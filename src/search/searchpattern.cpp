@@ -112,9 +112,7 @@ QString SearchPattern::purify(bool removeAction)
         --it;
         if ((*it)->isEmpty()) {
             if (removeAction) {
-#ifndef NDEBUG
                 qCDebug(MAILCOMMON_LOG) << "Removing" << (*it)->asString();
-#endif
                 if (!informationAboutNotValidPattern.isEmpty()) {
                     informationAboutNotValidPattern += QLatin1Char('\n');
                 }

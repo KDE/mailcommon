@@ -50,9 +50,7 @@ QVector<MailFilter *> FilterImporterExporter::readFiltersFromConfig(const KShare
             filterNeedUpdate = true;
         }
         if (filter->isEmpty()) {
-#ifndef NDEBUG
             qCDebug(MAILCOMMON_LOG) << "Filter" << filter->asString() << "is empty!";
-#endif
             emptyFilters << filter->name();
             delete filter;
         } else {
