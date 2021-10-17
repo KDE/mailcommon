@@ -11,9 +11,7 @@
 #include <QModelIndex>
 #include <QRegularExpression>
 
-namespace MailCommon
-{
-
+using namespace MailCommon;
 HierarchicalFolderMatcher::HierarchicalFolderMatcher()
 {
 }
@@ -98,6 +96,4 @@ QModelIndex HierarchicalFolderMatcher::findFirstMatch(const QAbstractItemModel *
     }
 
     return result;
-}
-
 }
