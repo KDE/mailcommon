@@ -77,7 +77,7 @@ public:
 
     void save();
 
-    SnippetsManager *const q = nullptr;
+    SnippetsManager *const q;
     SnippetsModel *mModel = nullptr;
     QItemSelectionModel *mSelectionModel = nullptr;
     KActionCollection *mActionCollection = nullptr;
