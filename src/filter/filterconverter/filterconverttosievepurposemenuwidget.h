@@ -11,6 +11,8 @@ namespace KPIMTextEdit
 {
 class PlainTextEditor;
 }
+namespace MailCommon
+{
 class FilterconverttosievePurposeMenuWidget : public PimCommon::PurposeMenuWidget
 {
     Q_OBJECT
@@ -24,4 +26,4 @@ public:
 private:
     KPIMTextEdit::PlainTextEditor *mEditor = nullptr;
 };
-
+}

@@ -17,9 +17,8 @@
 
 #include <QRegularExpression>
 
-namespace MailCommon
-{
-class Q_DECL_HIDDEN EntityCollectionOrderProxyModel::EntityCollectionOrderProxyModelPrivate
+using namespace MailCommon;
+class Q_DECL_HIDDEN MailCommon::EntityCollectionOrderProxyModel::EntityCollectionOrderProxyModelPrivate
 {
 public:
     EntityCollectionOrderProxyModelPrivate()
@@ -171,7 +170,6 @@ bool EntityCollectionOrderProxyModel::filterAcceptsRow(int sourceRow, const QMod
     if (d->matcher.isNull()) {
         return EntityOrderProxyModel::filterAcceptsRow(sourceRow, sourceParent);
     }
-    QModelIndex sourceIndex = sourceModel()->index(sourceRow, filterKeyColumn(), sourceParent);
+    const QModelIndex sourceIndex = sourceModel()->index(sourceRow, filterKeyColumn(), sourceParent);
     return d->matcher.matches(sourceModel(), sourceIndex, filterRole());
-}
 }

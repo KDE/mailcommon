@@ -28,9 +28,8 @@
 #include <QShowEvent>
 #include <QVBoxLayout>
 
-namespace MailCommon
-{
-class Q_DECL_HIDDEN FolderSelectionDialog::FolderSelectionDialogPrivate
+using namespace MailCommon;
+class Q_DECL_HIDDEN MailCommon::FolderSelectionDialog::FolderSelectionDialogPrivate
 {
 public:
     FolderTreeWidget *folderTreeWidget = nullptr;
@@ -273,5 +272,4 @@ void FolderSelectionDialog::writeConfig()
 void FolderSelectionDialog::hideEvent(QHideEvent *)
 {
     d->folderTreeWidget->clearFilter();
-}
 }

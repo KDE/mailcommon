@@ -6,8 +6,8 @@
 
 #include "jobscheduler.h"
 #include "mailcommon_debug.h"
-namespace MailCommon
-{
+using namespace MailCommon;
+
 ScheduledTask::ScheduledTask(const Akonadi::Collection &folder, bool immediate)
     : mCurrentFolder(folder)
     , mImmediate(immediate)
@@ -219,5 +219,4 @@ ScheduledJob::ScheduledJob(const Akonadi::Collection &folder, bool immediate)
 
 ScheduledJob::~ScheduledJob()
 {
-}
 }

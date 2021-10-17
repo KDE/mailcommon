@@ -23,8 +23,7 @@
 #include <QIcon>
 #include <QPalette>
 
-namespace MailCommon
-{
+using namespace MailCommon;
 class FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelPrivate
 {
 public:
@@ -269,5 +268,4 @@ void FolderTreeWidgetProxyModel::addContentMimeTypeInclusionFilter(const QString
     d->includedMimeTypes << mimeType;
     d->checker.setWantedMimeTypes(d->includedMimeTypes.values());
     invalidateFilter();
-}
 }

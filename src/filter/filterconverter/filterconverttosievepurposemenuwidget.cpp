@@ -5,7 +5,7 @@
 */
 #include "filterconverttosievepurposemenuwidget.h"
 #include <KPIMTextEdit/PlainTextEditor>
-
+using namespace MailCommon;
 FilterconverttosievePurposeMenuWidget::FilterconverttosievePurposeMenuWidget(QWidget *parentWidget, QObject *parent)
     : PimCommon::PurposeMenuWidget(parentWidget, parent)
 {

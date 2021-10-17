@@ -21,9 +21,9 @@
 #include <QKeyEvent>
 #include <QToolButton>
 
-namespace MailCommon
-{
-class FolderRequesterPrivate
+using namespace MailCommon;
+
+class MailCommon::FolderRequesterPrivate
 {
 public:
     Akonadi::Collection mCollection;
@@ -177,4 +177,3 @@ void FolderRequester::setSelectFolderTitleDialog(const QString &title)
 {
     d->mSelectFolderTitleDialog = title;
 }
-} // namespace MailCommon
