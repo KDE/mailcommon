@@ -7,7 +7,7 @@ class FilterActionSetTransportTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionSetTransportTest(QObject *parent = nullptr);
-    ~FilterActionSetTransportTest();
+    ~FilterActionSetTransportTest() override;
 
 private Q_SLOTS:
     void shouldBeEmpty();

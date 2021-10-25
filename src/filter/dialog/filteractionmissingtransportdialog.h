@@ -19,7 +19,7 @@ class FilterActionMissingTransportDialog : public QDialog
     Q_OBJECT
 public:
     explicit FilterActionMissingTransportDialog(const QString &filtername, QWidget *parent = nullptr);
-    ~FilterActionMissingTransportDialog();
+    ~FilterActionMissingTransportDialog() override;
     Q_REQUIRED_RESULT int selectedTransport() const;
 
 private:

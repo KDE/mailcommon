@@ -52,7 +52,7 @@ public:
     /**
      * Destroys the filter action widget.
      */
-    ~FilterActionWidget();
+    ~FilterActionWidget() override;
 
     /**
      * Sets the filter action.

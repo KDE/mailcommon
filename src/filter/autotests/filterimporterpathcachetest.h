@@ -13,7 +13,7 @@ class FilterImporterPathCacheTest : public QObject
     Q_OBJECT
 public:
     explicit FilterImporterPathCacheTest(QObject *parent = nullptr);
-    ~FilterImporterPathCacheTest();
+    ~FilterImporterPathCacheTest() override;
 private Q_SLOTS:
     void shouldReturnEmptyStringWhenListIsEmpty();
     void shouldNotStoreEmptyValue();

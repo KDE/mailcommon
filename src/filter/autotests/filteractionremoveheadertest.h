@@ -13,7 +13,7 @@ class FilterActionRemoveHeaderTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionRemoveHeaderTest(QObject *parent = nullptr);
-    ~FilterActionRemoveHeaderTest();
+    ~FilterActionRemoveHeaderTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldHaveSieveRequires();

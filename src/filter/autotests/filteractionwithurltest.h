@@ -13,7 +13,7 @@ class FilterActionWithUrlTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionWithUrlTest(QObject *parent = nullptr);
-    ~FilterActionWithUrlTest();
+    ~FilterActionWithUrlTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldClearWidget();

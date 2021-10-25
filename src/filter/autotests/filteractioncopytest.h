@@ -13,7 +13,7 @@ class FilterActionCopyTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionCopyTest(QObject *parent = nullptr);
-    ~FilterActionCopyTest();
+    ~FilterActionCopyTest() override;
 private Q_SLOTS:
     void shouldBeEmpty();
     void shouldHaveSieveRequires();

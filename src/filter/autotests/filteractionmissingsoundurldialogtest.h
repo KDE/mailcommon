@@ -13,7 +13,7 @@ class FilterActionMissingSoundUrlDialogTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionMissingSoundUrlDialogTest(QObject *parent = nullptr);
-    ~FilterActionMissingSoundUrlDialogTest();
+    ~FilterActionMissingSoundUrlDialogTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
 };

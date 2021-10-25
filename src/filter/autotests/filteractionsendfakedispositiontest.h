@@ -13,7 +13,7 @@ class FilterActionSendFakeDispositionTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionSendFakeDispositionTest(QObject *parent = nullptr);
-    ~FilterActionSendFakeDispositionTest();
+    ~FilterActionSendFakeDispositionTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldBeEmpty();

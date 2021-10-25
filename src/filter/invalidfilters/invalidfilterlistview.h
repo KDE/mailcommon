@@ -17,7 +17,7 @@ class MAILCOMMON_TESTS_EXPORT InvalidFilterListView : public QListView
     Q_OBJECT
 public:
     explicit InvalidFilterListView(QWidget *parent = nullptr);
-    ~InvalidFilterListView();
+    ~InvalidFilterListView() override;
     void setInvalidFilters(const QVector<MailCommon::InvalidFilterInfo> &lst);
 Q_SIGNALS:
     void showDetails(const QString &);

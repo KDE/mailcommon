@@ -13,7 +13,7 @@ class FilterActionMissingTemplateDialogTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionMissingTemplateDialogTest(QObject *parent = nullptr);
-    ~FilterActionMissingTemplateDialogTest();
+    ~FilterActionMissingTemplateDialogTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
 };

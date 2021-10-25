@@ -33,7 +33,7 @@ class MAILCOMMON_EXPORT Kernel : public QObject
 {
     Q_OBJECT
 public:
-    virtual ~Kernel();
+    ~Kernel() override;
 
     static Kernel *self();
 

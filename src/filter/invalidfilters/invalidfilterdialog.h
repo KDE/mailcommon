@@ -19,7 +19,7 @@ class MAILCOMMON_TESTS_EXPORT InvalidFilterDialog : public QDialog
     Q_OBJECT
 public:
     explicit InvalidFilterDialog(QWidget *parent = nullptr);
-    ~InvalidFilterDialog();
+    ~InvalidFilterDialog() override;
 
     void setInvalidFilters(const QVector<InvalidFilterInfo> &lst);
 

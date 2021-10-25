@@ -13,7 +13,7 @@ class FilterActionExecTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionExecTest(QObject *parent = nullptr);
-    ~FilterActionExecTest();
+    ~FilterActionExecTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldHaveRequirePart();

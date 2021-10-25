@@ -13,7 +13,7 @@ class FilterActionForwardTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionForwardTest(QObject *parent = nullptr);
-    ~FilterActionForwardTest();
+    ~FilterActionForwardTest() override;
 private Q_SLOTS:
     void shouldBeEmpty();
     void shouldRequiresPart();

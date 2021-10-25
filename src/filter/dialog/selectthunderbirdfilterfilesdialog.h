@@ -17,7 +17,7 @@ class SelectThunderbirdFilterFilesDialog : public QDialog
     Q_OBJECT
 public:
     explicit SelectThunderbirdFilterFilesDialog(const QString &defaultSettingPath, QWidget *parent);
-    ~SelectThunderbirdFilterFilesDialog();
+    ~SelectThunderbirdFilterFilesDialog() override;
 
     Q_REQUIRED_RESULT QStringList selectedFiles() const;
 

@@ -13,7 +13,7 @@ class FilterActionWithAddressTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionWithAddressTest(QObject *parent = nullptr);
-    ~FilterActionWithAddressTest();
+    ~FilterActionWithAddressTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldAssignValue();

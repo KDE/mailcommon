@@ -13,7 +13,7 @@ class FilterActionMissingTransportDialogTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionMissingTransportDialogTest(QObject *parent = nullptr);
-    ~FilterActionMissingTransportDialogTest();
+    ~FilterActionMissingTransportDialogTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
 };

@@ -18,7 +18,7 @@ public:
                                           const QString &filtername,
                                           const QString &argsStr,
                                           QWidget *parent = nullptr);
-    ~FilterActionMissingTagDialog();
+    ~FilterActionMissingTagDialog() override;
     Q_REQUIRED_RESULT QString selectedTag() const;
 
 private:

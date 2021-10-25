@@ -91,7 +91,7 @@ class MAILCOMMON_EXPORT JobScheduler : public QObject
     Q_OBJECT
 public:
     explicit JobScheduler(QObject *parent);
-    ~JobScheduler();
+    ~JobScheduler() override;
 
     /**
      * Register a task to be done for a given folder. The ownership of the task is transferred
@@ -133,7 +133,7 @@ class MAILCOMMON_EXPORT ScheduledJob : public FolderJob
 {
 public:
     ScheduledJob(const Akonadi::Collection &folder, bool immediate);
-    ~ScheduledJob();
+    ~ScheduledJob() override;
 
 protected:
     bool mImmediate;

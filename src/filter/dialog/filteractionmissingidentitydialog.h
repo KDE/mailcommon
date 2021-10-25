@@ -19,7 +19,7 @@ class FilterActionMissingIdentityDialog : public QDialog
     Q_OBJECT
 public:
     explicit FilterActionMissingIdentityDialog(const QString &filtername, QWidget *parent = nullptr);
-    ~FilterActionMissingIdentityDialog();
+    ~FilterActionMissingIdentityDialog() override;
     Q_REQUIRED_RESULT int selectedIdentity() const;
 
 private:

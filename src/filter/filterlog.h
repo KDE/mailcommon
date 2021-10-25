@@ -37,7 +37,7 @@ public:
     /**
      * Destroys the filter log.
      */
-    virtual ~FilterLog();
+    ~FilterLog() override;
 
     /**
      * Returns the single global instance of the filter log.

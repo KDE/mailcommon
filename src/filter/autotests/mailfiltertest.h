@@ -13,7 +13,7 @@ class MailFilterTest : public QObject
     Q_OBJECT
 public:
     explicit MailFilterTest(QObject *parent = nullptr);
-    ~MailFilterTest();
+    ~MailFilterTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldApplySettings();

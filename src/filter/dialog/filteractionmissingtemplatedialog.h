@@ -16,7 +16,7 @@ class FilterActionMissingTemplateDialog : public QDialog
     Q_OBJECT
 public:
     explicit FilterActionMissingTemplateDialog(const QStringList &templateList, const QString &filtername, QWidget *parent = nullptr);
-    ~FilterActionMissingTemplateDialog();
+    ~FilterActionMissingTemplateDialog() override;
     Q_REQUIRED_RESULT QString selectedTemplate() const;
 
 private:

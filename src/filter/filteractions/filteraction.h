@@ -63,7 +63,7 @@ public:
     /**
      * Destroys the filter action.
      */
-    virtual ~FilterAction();
+    ~FilterAction() override;
 
     /**
      * Returns i18n'd label, ie. the one which is presented in

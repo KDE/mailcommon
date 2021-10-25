@@ -13,7 +13,7 @@ class ItemContextTest : public QObject
     Q_OBJECT
 public:
     explicit ItemContextTest(QObject *parent = nullptr);
-    ~ItemContextTest();
+    ~ItemContextTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldAssignContext_data();

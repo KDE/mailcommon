@@ -13,7 +13,7 @@ class InvalidFilterDialogTest : public QObject
     Q_OBJECT
 public:
     explicit InvalidFilterDialogTest(QObject *parent = nullptr);
-    ~InvalidFilterDialogTest();
+    ~InvalidFilterDialogTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
 };

@@ -13,7 +13,7 @@ class InvalidFilterWidgetTest : public QObject
     Q_OBJECT
 public:
     explicit InvalidFilterWidgetTest(QObject *parent = nullptr);
-    ~InvalidFilterWidgetTest();
+    ~InvalidFilterWidgetTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
 };

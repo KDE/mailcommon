@@ -21,7 +21,7 @@ class RedirectWidget : public QWidget
     Q_OBJECT
 public:
     explicit RedirectWidget(QWidget *parent = nullptr);
-    ~RedirectWidget();
+    ~RedirectWidget() override;
 
     void setFocus();
     Q_REQUIRED_RESULT QString resend();

@@ -13,7 +13,7 @@ class FilterActionAddToAddressBookTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionAddToAddressBookTest(QObject *parent = nullptr);
-    ~FilterActionAddToAddressBookTest();
+    ~FilterActionAddToAddressBookTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldReportErrorWhenArgumentIsEmpty();

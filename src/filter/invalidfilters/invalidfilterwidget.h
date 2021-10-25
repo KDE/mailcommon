@@ -22,7 +22,7 @@ class MAILCOMMON_EXPORT InvalidFilterWidget : public QWidget
     Q_OBJECT
 public:
     explicit InvalidFilterWidget(QWidget *parent = nullptr);
-    ~InvalidFilterWidget();
+    ~InvalidFilterWidget() override;
 
     void setInvalidFilters(const QVector<MailCommon::InvalidFilterInfo> &lst);
 Q_SIGNALS:

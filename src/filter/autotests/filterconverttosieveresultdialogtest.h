@@ -13,7 +13,7 @@ class FilterConvertToSieveResultDialogTest : public QObject
     Q_OBJECT
 public:
     explicit FilterConvertToSieveResultDialogTest(QObject *parent = nullptr);
-    ~FilterConvertToSieveResultDialogTest();
+    ~FilterConvertToSieveResultDialogTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldAddCode();

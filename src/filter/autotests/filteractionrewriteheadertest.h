@@ -13,7 +13,7 @@ class FilterActionRewriteHeaderTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionRewriteHeaderTest(QObject *parent = nullptr);
-    ~FilterActionRewriteHeaderTest();
+    ~FilterActionRewriteHeaderTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldBeEmpty();

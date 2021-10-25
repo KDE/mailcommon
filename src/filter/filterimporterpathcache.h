@@ -23,7 +23,7 @@ public:
     static FilterImporterPathCache *self();
 
     explicit FilterImporterPathCache(QObject *parent = nullptr);
-    ~FilterImporterPathCache();
+    ~FilterImporterPathCache() override;
 
     void insert(const QString &original, const Akonadi::Collection &newValue);
     Q_REQUIRED_RESULT Akonadi::Collection convertedFilterPath(const QString &original);

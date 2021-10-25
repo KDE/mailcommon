@@ -13,7 +13,7 @@ class FilterActionRedirectTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionRedirectTest(QObject *parent = nullptr);
-    ~FilterActionRedirectTest();
+    ~FilterActionRedirectTest() override;
 private Q_SLOTS:
     void shouldBeEmpty();
     void shouldHaveRequiredPart();

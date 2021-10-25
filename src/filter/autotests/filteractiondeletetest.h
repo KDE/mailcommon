@@ -13,7 +13,7 @@ class FilterActionDeleteTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionDeleteTest(QObject *parent = nullptr);
-    ~FilterActionDeleteTest();
+    ~FilterActionDeleteTest() override;
 
 private Q_SLOTS:
     void shouldHaveDefaultValue();

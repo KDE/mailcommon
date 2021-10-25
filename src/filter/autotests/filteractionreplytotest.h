@@ -13,7 +13,7 @@ class FilterActionReplyToTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionReplyToTest(QObject *parent = nullptr);
-    ~FilterActionReplyToTest();
+    ~FilterActionReplyToTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldBeEmpty();

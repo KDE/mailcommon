@@ -13,7 +13,7 @@ class FilterActionSetStatusTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionSetStatusTest(QObject *parent = nullptr);
-    ~FilterActionSetStatusTest();
+    ~FilterActionSetStatusTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldHaveSieveRequires();

@@ -12,7 +12,7 @@ class FilterActionMissingAccountDialogTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionMissingAccountDialogTest(QObject *parent = nullptr);
-    ~FilterActionMissingAccountDialogTest();
+    ~FilterActionMissingAccountDialogTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
 };

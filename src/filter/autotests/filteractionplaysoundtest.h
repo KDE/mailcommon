@@ -12,7 +12,7 @@ class FilterActionPlaySoundTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionPlaySoundTest(QObject *parent = nullptr);
-    ~FilterActionPlaySoundTest();
+    ~FilterActionPlaySoundTest() override;
 private Q_SLOTS:
     void shouldBeValid();
     void shouldHaveDefaultValue();

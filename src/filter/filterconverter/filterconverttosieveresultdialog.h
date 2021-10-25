@@ -20,7 +20,7 @@ class FilterConvertToSieveResultDialog : public QDialog
     Q_OBJECT
 public:
     explicit FilterConvertToSieveResultDialog(QWidget *parent = nullptr);
-    ~FilterConvertToSieveResultDialog();
+    ~FilterConvertToSieveResultDialog() override;
 
     void setCode(const QString &code);
 

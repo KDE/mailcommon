@@ -31,7 +31,7 @@ public:
                                              const QString &filtername = QString(),
                                              const QString &argStr = QString(),
                                              QWidget *parent = nullptr);
-    ~FilterActionMissingFolderDialog();
+    ~FilterActionMissingFolderDialog() override;
 
     Q_REQUIRED_RESULT Akonadi::Collection selectedCollection() const;
     static Akonadi::Collection::List potentialCorrectFolders(const QString &path, bool &exactPath);

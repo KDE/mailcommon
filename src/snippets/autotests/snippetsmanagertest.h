@@ -13,7 +13,7 @@ class SnippetsManagerTest : public QObject
     Q_OBJECT
 public:
     explicit SnippetsManagerTest(QObject *parent = nullptr);
-    ~SnippetsManagerTest();
+    ~SnippetsManagerTest() override;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
 };

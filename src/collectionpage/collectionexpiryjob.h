@@ -16,7 +16,7 @@ class CollectionExpiryJob : public QObject
     Q_OBJECT
 public:
     explicit CollectionExpiryJob(QObject *parent = nullptr);
-    ~CollectionExpiryJob();
+    ~CollectionExpiryJob() override;
 
     void start();
 

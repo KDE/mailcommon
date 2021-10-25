@@ -37,7 +37,7 @@ class FilterActionWithUrlHelpButton : public QToolButton
     Q_OBJECT
 public:
     explicit FilterActionWithUrlHelpButton(QWidget *parent = nullptr);
-    ~FilterActionWithUrlHelpButton();
+    ~FilterActionWithUrlHelpButton() override;
 };
 
 class FilterActionWithUrl : public FilterAction

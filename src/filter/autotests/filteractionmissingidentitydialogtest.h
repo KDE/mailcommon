@@ -13,7 +13,7 @@ class FilterActionMissingIdentityDialogTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionMissingIdentityDialogTest(QObject *parent = nullptr);
-    ~FilterActionMissingIdentityDialogTest();
+    ~FilterActionMissingIdentityDialogTest() override;
 private Q_SLOTS:
     void initTestCase();
     void shouldHaveDefaultValue();

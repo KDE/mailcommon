@@ -13,7 +13,7 @@ class FilterActionMoveTest : public QObject
     Q_OBJECT
 public:
     explicit FilterActionMoveTest(QObject *parent = nullptr);
-    ~FilterActionMoveTest();
+    ~FilterActionMoveTest() override;
 private Q_SLOTS:
     void shouldHaveSieveRequires();
     void shouldHaveRequiresPart();
