@@ -17,7 +17,6 @@
 
 #include <Akonadi/AttributeFactory>
 #include <Akonadi/ChangeRecorder>
-#include <Akonadi/Collection>
 #include <Akonadi/EntityMimeTypeFilterModel>
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/ItemFetchScope>

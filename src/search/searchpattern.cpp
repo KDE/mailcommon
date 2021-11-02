@@ -16,7 +16,6 @@ using MailCommon::FilterLog;
 #include "mailcommon_debug.h"
 #include <Akonadi/Contact/ContactSearchJob>
 
-#include <Akonadi/SearchQuery>
 
 #include <KMime/KMimeMessage>
 
