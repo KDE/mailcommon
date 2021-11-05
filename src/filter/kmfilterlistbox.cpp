@@ -461,15 +461,12 @@ void KMFilterListBox::slotDelete()
 
     auto itemFilter = static_cast<QListWidgetFilterItem *>(itemFirst);
     MailCommon::MailFilter *filter = itemFilter->filter();
-    const QString filterName = filter->pattern()->name();
-    if (uniqFilterSelected) {
-        if (KMessageBox::questionYesNo(this, i18n("Do you want to remove the filter \"%1\"?", filterName), i18n("Remove Filter")) == KMessageBox::No) {
-            return;
-        }
-    } else {
-        if (KMessageBox::questionYesNo(this, i18n("Do you want to remove selected filters?"), i18n("Remove Filters")) == KMessageBox::No) {
-            return;
-        }
+    const QString question =
+        uniqFilterSelected ? i18n("Do you want to remove the filter \"%1\"?", filter->pattern()->name()) : i18n("Do you want to remove selected filters?");
+    const QString dialogTitle = uniqFilterSelected ? i18n("Remove Filter") : i18n("Remove Filters");
+    const int answer = KMessageBox::questionYesNo(this, question, dialogTitle, KStandardGuiItem::remove(), KStandardGuiItem::cancel());
+    if (answer == KMessageBox::No) {
+        return;
     }
 
     const int oIdxSelItem = mListWidget->currentRow();
