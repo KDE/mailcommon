@@ -23,75 +23,6 @@
 #include <QShortcut>
 #include <QVBoxLayout>
 
-// What's this help texts
-const char _wt_filterlist[] = I18N_NOOP(
-    "<qt><p>This is the list of defined filters. "
-    "They are processed top-to-bottom.</p>"
-    "<p>Click on any filter to edit it "
-    "using the controls in the right-hand half "
-    "of the dialog.</p></qt>");
-
-const char _wt_filterlist_new[] = I18N_NOOP(
-    "<qt><p>Click this button to create a new filter.</p>"
-    "<p>The filter will be inserted just before the currently-"
-    "selected one, but you can always change that "
-    "later on.</p>"
-    "<p>If you have clicked this button accidentally, you can undo this "
-    "by clicking on the <em>Delete</em> button.</p></qt>");
-
-const char _wt_filterlist_copy[] = I18N_NOOP(
-    "<qt><p>Click this button to copy a filter.</p>"
-    "<p>If you have clicked this button accidentally, you can undo this "
-    "by clicking on the <em>Delete</em> button.</p></qt>");
-
-const char _wt_filterlist_delete[] = I18N_NOOP(
-    "<qt><p>Click this button to <em>delete</em> the currently-"
-    "selected filter from the list above.</p>"
-    "<p>There is no way to get the filter back once "
-    "it is deleted, but you can always leave the "
-    "dialog by clicking <em>Cancel</em> to discard the "
-    "changes made.</p></qt>");
-
-const char _wt_filterlist_up[] = I18N_NOOP(
-    "<qt><p>Click this button to move the currently-"
-    "selected filter <em>up</em> one in the list above.</p>"
-    "<p>This is useful since the order of the filters in the list "
-    "determines the order in which they are tried on messages: "
-    "The topmost filter gets tried first.</p>"
-    "<p>If you have clicked this button accidentally, you can undo this "
-    "by clicking on the <em>Down</em> button.</p></qt>");
-
-const char _wt_filterlist_down[] = I18N_NOOP(
-    "<qt><p>Click this button to move the currently-"
-    "selected filter <em>down</em> one in the list above.</p>"
-    "<p>This is useful since the order of the filters in the list "
-    "determines the order in which they are tried on messages: "
-    "The topmost filter gets tried first.</p>"
-    "<p>If you have clicked this button accidentally, you can undo this "
-    "by clicking on the <em>Up</em> button.</p></qt>");
-
-const char _wt_filterlist_top[] = I18N_NOOP(
-    "<qt><p>Click this button to move the currently-"
-    "selected filter to top of list.</p>"
-    "<p>This is useful since the order of the filters in the list "
-    "determines the order in which they are tried on messages: "
-    "The topmost filter gets tried first.</p></qt>");
-
-const char _wt_filterlist_bottom[] = I18N_NOOP(
-    "<qt><p>Click this button to move the currently-"
-    "selected filter to bottom of list.</p>"
-    "<p>This is useful since the order of the filters in the list "
-    "determines the order in which they are tried on messages: "
-    "The topmost filter gets tried first.</p></qt>");
-
-const char _wt_filterlist_rename[] = I18N_NOOP(
-    "<qt><p>Click this button to rename the currently-selected filter.</p>"
-    "<p>Filters are named automatically, as long as they start with "
-    "\"&lt;\".</p>"
-    "<p>If you have renamed a filter accidentally and want automatic "
-    "naming back, click this button and select <em>Clear</em> followed "
-    "by <em>OK</em> in the appearing dialog.</p></qt>");
-
 //=============================================================================
 //
 // class KMFilterListBox (the filter list manipulator)
@@ -106,7 +37,12 @@ KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
     //----------- the list box
     mListWidget = new QListWidget(this);
     mListWidget->setMinimumWidth(150);
-    mListWidget->setWhatsThis(i18n(_wt_filterlist));
+    mListWidget->setWhatsThis(
+        i18n("<qt><p>This is the list of defined filters. "
+             "They are processed top-to-bottom.</p>"
+             "<p>Click on any filter to edit it "
+             "using the controls in the right-hand half "
+             "of the dialog.</p></qt>"));
     mListWidget->setDragDropMode(QAbstractItemView::InternalMove);
     mListWidget->setSelectionMode(QAbstractItemView::ExtendedSelection);
     connect(mListWidget->model(), &QAbstractItemModel::rowsMoved, this, &KMFilterListBox::slotRowsMoved);
@@ -148,10 +84,34 @@ KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
     mBtnDown->setToolTip(i18nc("Move selected filter down.", "Down"));
     mBtnTop->setToolTip(i18nc("Move selected filter to the top.", "Top"));
     mBtnBottom->setToolTip(i18nc("Move selected filter to the bottom.", "Bottom"));
-    mBtnUp->setWhatsThis(i18n(_wt_filterlist_up));
-    mBtnDown->setWhatsThis(i18n(_wt_filterlist_down));
-    mBtnBottom->setWhatsThis(i18n(_wt_filterlist_bottom));
-    mBtnTop->setWhatsThis(i18n(_wt_filterlist_top));
+    mBtnUp->setWhatsThis(
+        i18n("<qt><p>Click this button to move the currently-"
+             "selected filter <em>up</em> one in the list above.</p>"
+             "<p>This is useful since the order of the filters in the list "
+             "determines the order in which they are tried on messages: "
+             "The topmost filter gets tried first.</p>"
+             "<p>If you have clicked this button accidentally, you can undo this "
+             "by clicking on the <em>Down</em> button.</p></qt>"));
+    mBtnDown->setWhatsThis(
+        i18n("<qt><p>Click this button to move the currently-"
+             "selected filter <em>down</em> one in the list above.</p>"
+             "<p>This is useful since the order of the filters in the list "
+             "determines the order in which they are tried on messages: "
+             "The topmost filter gets tried first.</p>"
+             "<p>If you have clicked this button accidentally, you can undo this "
+             "by clicking on the <em>Up</em> button.</p></qt>"));
+    mBtnBottom->setWhatsThis(
+        i18n("<qt><p>Click this button to move the currently-"
+             "selected filter to bottom of list.</p>"
+             "<p>This is useful since the order of the filters in the list "
+             "determines the order in which they are tried on messages: "
+             "The topmost filter gets tried first.</p></qt>"));
+    mBtnTop->setWhatsThis(
+        i18n("<qt><p>Click this button to move the currently-"
+             "selected filter to top of list.</p>"
+             "<p>This is useful since the order of the filters in the list "
+             "determines the order in which they are tried on messages: "
+             "The topmost filter gets tried first.</p></qt>"));
 
     layout->addWidget(hb);
 
@@ -181,10 +141,31 @@ KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
     mBtnCopy->setToolTip(i18n("Copy"));
     mBtnDelete->setToolTip(i18n("Delete"));
     mBtnRename->setToolTip(i18n("Rename"));
-    mBtnNew->setWhatsThis(i18n(_wt_filterlist_new));
-    mBtnCopy->setWhatsThis(i18n(_wt_filterlist_copy));
-    mBtnDelete->setWhatsThis(i18n(_wt_filterlist_delete));
-    mBtnRename->setWhatsThis(i18n(_wt_filterlist_rename));
+    mBtnNew->setWhatsThis(
+        i18n("<qt><p>Click this button to create a new filter.</p>"
+             "<p>The filter will be inserted just before the currently-"
+             "selected one, but you can always change that "
+             "later on.</p>"
+             "<p>If you have clicked this button accidentally, you can undo this "
+             "by clicking on the <em>Delete</em> button.</p></qt>"));
+    mBtnCopy->setWhatsThis(
+        i18n("<qt><p>Click this button to copy a filter.</p>"
+             "<p>If you have clicked this button accidentally, you can undo this "
+             "by clicking on the <em>Delete</em> button.</p></qt>"));
+    mBtnDelete->setWhatsThis(
+        i18n("<qt><p>Click this button to <em>delete</em> the currently-"
+             "selected filter from the list above.</p>"
+             "<p>There is no way to get the filter back once "
+             "it is deleted, but you can always leave the "
+             "dialog by clicking <em>Cancel</em> to discard the "
+             "changes made.</p></qt>"));
+    mBtnRename->setWhatsThis(
+        i18n("<qt><p>Click this button to rename the currently-selected filter.</p>"
+             "<p>Filters are named automatically, as long as they start with "
+             "\"&lt;\".</p>"
+             "<p>If you have renamed a filter accidentally and want automatic "
+             "naming back, click this button and select <em>Clear</em> followed "
+             "by <em>OK</em> in the appearing dialog.</p></qt>"));
 
     layout->addWidget(hb);
 
