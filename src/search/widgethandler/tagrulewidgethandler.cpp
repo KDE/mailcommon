@@ -18,10 +18,15 @@
 #include <Akonadi/TagFetchJob>
 #include <Akonadi/TagFetchScope>
 
+#include "ki18n_version.h"
 #include <QComboBox>
 #include <QLineEdit>
 #include <QStackedWidget>
-
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+#include <klazylocalizedstring.h>
+#undef I18N_NOOP
+#define I18N_NOOP kli18n
+#endif
 using namespace MailCommon;
 
 class FillTagComboJob : public KJob
@@ -89,7 +94,11 @@ void FillTagComboJob::onTagsFetched(KJob *job)
 
 static const struct {
     SearchRule::Function id;
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
     const char *displayName;
+#else
+    const KLazyLocalizedString displayName;
+#endif
 } TagFunctions[] = {{SearchRule::FuncContains, I18N_NOOP("contains")},
                     {SearchRule::FuncContainsNot, I18N_NOOP("does not contain")},
                     {SearchRule::FuncEquals, I18N_NOOP("equals")},
@@ -112,10 +121,18 @@ QWidget *TagRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *
     for (int i = 0; i < TagFunctionCount; ++i) {
         if (isBalooSearch) {
             if (TagFunctions[i].id == SearchRule::FuncContains || TagFunctions[i].id == SearchRule::FuncContainsNot) {
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
                 funcCombo->addItem(i18n(TagFunctions[i].displayName));
+#else
+                funcCombo->addItem(KLocalizedString(TagFunctions[i].displayName).toString());
+#endif
             }
         } else {
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
             funcCombo->addItem(i18n(TagFunctions[i].displayName));
+#else
+            funcCombo->addItem(KLocalizedString(TagFunctions[i].displayName).toString());
+#endif
         }
     }
     funcCombo->adjustSize();

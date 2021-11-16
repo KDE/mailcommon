@@ -7,15 +7,24 @@
 #include "statusrulewidgethandler.h"
 #include "search/searchrule/searchrulestatus.h"
 
+#include "ki18n_version.h"
 #include <QComboBox>
 #include <QIcon>
 #include <QStackedWidget>
-
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+#include <klazylocalizedstring.h>
+#undef I18N_NOOP
+#define I18N_NOOP kli18n
+#endif
 using namespace MailCommon;
 
 static const struct {
     SearchRule::Function id;
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
     const char *displayName;
+#else
+    const KLazyLocalizedString displayName;
+#endif
 } StatusFunctions[] = {{SearchRule::FuncContains, I18N_NOOP("is")}, {SearchRule::FuncContainsNot, I18N_NOOP("is not")}};
 static const int StatusFunctionCount = sizeof(StatusFunctions) / sizeof(*StatusFunctions);
 
@@ -31,7 +40,11 @@ QWidget *StatusRuleWidgetHandler::createFunctionWidget(int number, QStackedWidge
     funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("statusRuleFuncCombo"));
     for (int i = 0; i < StatusFunctionCount; ++i) {
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         funcCombo->addItem(i18n(StatusFunctions[i].displayName));
+#else
+        funcCombo->addItem(KLocalizedString(StatusFunctions[i].displayName).toString());
+#endif
     }
     funcCombo->adjustSize();
     QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));

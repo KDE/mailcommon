@@ -11,17 +11,26 @@
 #include <KLineEdit>
 #include <KLocalizedString>
 
+#include "ki18n_version.h"
 #include <QComboBox>
 #include <QLabel>
 #include <QStackedWidget>
-
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+#include <klazylocalizedstring.h>
+#undef I18N_NOOP
+#define I18N_NOOP kli18n
+#endif
 using namespace MailCommon;
 
 // also see SearchRule::matches() and SearchRule::Function
 // if you change the following strings!
 static const struct {
     SearchRule::Function id;
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
     const char *displayName;
+#else
+    const KLazyLocalizedString displayName;
+#endif
 } HeaderFunctions[] = {{SearchRule::FuncContains, I18N_NOOP("contains")},
                        {SearchRule::FuncContainsNot, I18N_NOOP("does not contain")},
                        {SearchRule::FuncEquals, I18N_NOOP("equals")},
@@ -50,7 +59,11 @@ QWidget *HeadersRuleWidgetHandler::createFunctionWidget(int number, QStackedWidg
     funcCombo->setObjectName(QStringLiteral("headerRuleFuncCombo"));
     for (int i = 0; i < HeadersFunctionCount; ++i) {
         if (!(isBalooSearch && (HeaderFunctions[i].id == SearchRule::FuncIsInAddressbook || HeaderFunctions[i].id == SearchRule::FuncIsNotInAddressbook))) {
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
             funcCombo->addItem(i18n(HeaderFunctions[i].displayName));
+#else
+            funcCombo->addItem(KLocalizedString(HeaderFunctions[i].displayName).toString());
+#endif
         }
     }
     funcCombo->adjustSize();

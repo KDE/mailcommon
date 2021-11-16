@@ -14,13 +14,23 @@
 
 using namespace MailCommon;
 
+#include "ki18n_version.h"
 #include <QLabel>
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+#include <klazylocalizedstring.h>
+#undef I18N_NOOP
+#define I18N_NOOP kli18n
+#endif
 
 // also see SearchRule::matches() and SearchRule::Function
 // if you change the following strings!
 static const struct {
     SearchRule::Function id;
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
     const char *displayName;
+#else
+    const KLazyLocalizedString displayName;
+#endif
 } TextFunctions[] = {{SearchRule::FuncContains, I18N_NOOP("contains")},
                      {SearchRule::FuncContainsNot, I18N_NOOP("does not contain")},
                      {SearchRule::FuncEquals, I18N_NOOP("equals")},
@@ -46,7 +56,11 @@ QWidget *TextRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget 
     funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("textRuleFuncCombo"));
     for (int i = 0; i < TextFunctionCount; ++i) {
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         funcCombo->addItem(i18n(TextFunctions[i].displayName));
+#else
+        funcCombo->addItem(KLocalizedString(TextFunctions[i].displayName).toString());
+#endif
     }
     funcCombo->adjustSize();
     QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));

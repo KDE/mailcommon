@@ -10,16 +10,25 @@
 #include <KDateComboBox>
 #include <KLocalizedString>
 
+#include "ki18n_version.h"
 #include <QComboBox>
 #include <QDate>
 #include <QObject>
 #include <QStackedWidget>
-
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+#include <klazylocalizedstring.h>
+#undef I18N_NOOP
+#define I18N_NOOP kli18n
+#endif
 using namespace MailCommon;
 
 static const struct {
     SearchRule::Function id;
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
     const char *displayName;
+#else
+    const KLazyLocalizedString displayName;
+#endif
 } DateFunctions[] = {{SearchRule::FuncEquals, I18N_NOOP("is equal to")},
                      {SearchRule::FuncNotEqual, I18N_NOOP("is not equal to")},
                      {SearchRule::FuncIsGreater, I18N_NOOP("is after")},
@@ -40,7 +49,11 @@ QWidget *DateRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget 
     funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("dateRuleFuncCombo"));
     for (int i = 0; i < DateFunctionCount; ++i) {
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         funcCombo->addItem(i18n(DateFunctions[i].displayName));
+#else
+        funcCombo->addItem(KLocalizedString(DateFunctions[i].displayName).toString());
+#endif
     }
     funcCombo->adjustSize();
     QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));

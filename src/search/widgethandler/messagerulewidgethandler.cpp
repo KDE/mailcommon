@@ -7,19 +7,28 @@
 #include "messagerulewidgethandler.h"
 #include "search/searchpattern.h"
 
+#include "ki18n_version.h"
 #include <KLineEdit>
 #include <KLocalizedString>
 #include <QComboBox>
 #include <QLabel>
 #include <QStackedWidget>
-
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+#include <klazylocalizedstring.h>
+#undef I18N_NOOP
+#define I18N_NOOP kli18n
+#endif
 using namespace MailCommon;
 
 // also see SearchRule::matches() and SearchRule::Function
 // if you change the following strings!
 static const struct {
     SearchRule::Function id;
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
     const char *displayName;
+#else
+    const KLazyLocalizedString displayName;
+#endif
 } MessageFunctions[] = {
     {SearchRule::FuncContains, I18N_NOOP("contains")},
     {SearchRule::FuncContainsNot, I18N_NOOP("does not contain")},
@@ -43,7 +52,11 @@ QWidget *MessageRuleWidgetHandler::createFunctionWidget(int number, QStackedWidg
     funcCombo->setObjectName(QStringLiteral("messageRuleFuncCombo"));
     for (int i = 0; i < MessageFunctionCount; ++i) {
         if (!(isBalooSearch && (MessageFunctions[i].id == SearchRule::FuncHasAttachment || MessageFunctions[i].id == SearchRule::FuncHasNoAttachment))) {
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
             funcCombo->addItem(i18n(MessageFunctions[i].displayName));
+#else
+            funcCombo->addItem(KLocalizedString(MessageFunctions[i].displayName).toString());
+#endif
         }
     }
     funcCombo->adjustSize();

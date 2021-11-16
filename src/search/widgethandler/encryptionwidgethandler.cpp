@@ -5,15 +5,24 @@
 */
 
 #include "encryptionwidgethandler.h"
+#include "ki18n_version.h"
 #include <QComboBox>
 #include <QLabel>
 #include <QStackedWidget>
-
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+#include <klazylocalizedstring.h>
+#undef I18N_NOOP
+#define I18N_NOOP kli18n
+#endif
 using namespace MailCommon;
 
 static const struct {
     SearchRule::Function id;
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
     const char *displayName;
+#else
+    const KLazyLocalizedString displayName;
+#endif
 } EncryptionFunctions[] = {{SearchRule::FuncEquals, I18N_NOOP("is")}, {SearchRule::FuncNotEqual, I18N_NOOP("is not")}};
 static const int EncryptionFunctionCount = sizeof(EncryptionFunctions) / sizeof(*EncryptionFunctions);
 
@@ -38,7 +47,11 @@ QWidget *EncryptionWidgetHandler::createFunctionWidget(int number, QStackedWidge
     combo->setMinimumWidth(50);
     combo->setObjectName(QStringLiteral("encryptionRuleFuncCombo"));
     for (int i = 0; i < EncryptionFunctionCount; ++i) {
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         combo->addItem(i18n(EncryptionFunctions[i].displayName));
+#else
+        combo->addItem(KLocalizedString(EncryptionFunctions[i].displayName).toString());
+#endif
     }
     combo->adjustSize();
     QObject::connect(combo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));

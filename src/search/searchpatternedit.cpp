@@ -10,6 +10,7 @@
 using MailCommon::RuleWidgetHandlerManager;
 #include "mailcommon_debug.h"
 
+#include "ki18n_version.h"
 #include <KComboBox>
 #include <KLocalizedString>
 #include <Libkdepim/LineEditCatchReturnKey>
@@ -21,26 +22,35 @@ using MailCommon::RuleWidgetHandlerManager;
 #include <QPushButton>
 #include <QRadioButton>
 #include <QStackedWidget>
-
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+#include <klazylocalizedstring.h>
+#undef I18N_NOOP
+#define I18N_NOOP kli18n
+#endif
 // Definition of special rule field strings
 // Note: Also see SearchRule::matches() and ruleFieldToEnglish() if
 //       you change the following i18n-ized strings!
 // Note: The index of the values in the following array has to correspond to
 //       the value of the entries in the enum in SearchRuleWidget.
 
-#undef I18N_NOOP
-#define I18N_NOOP(t) nullptr, t
 
 using namespace MailCommon;
 
 static const struct {
     const char *internalName;
-    const char *context;
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
     const char *displayName;
+#else
+    const KLazyLocalizedString displayName;
+#endif
 
     QString getLocalizedDisplayName() const
     {
-        return i18nc(context, displayName);
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
+        return i18n(displayName);
+#else
+        return KLocalizedString(displayName).toString();
+#endif
     }
 } SpecialRuleFields[] = {{"<message>", I18N_NOOP("Complete Message")},
                          {"<body>", I18N_NOOP("Body of Message")},
@@ -50,9 +60,9 @@ static const struct {
                          {"<age in days>", I18N_NOOP("Age in Days")},
                          {"<status>", I18N_NOOP("Message Status")},
                          {"<tag>", I18N_NOOP("Message Tag")},
-                         {"Subject", I18NC_NOOP("Subject of an email.", "Subject")},
+                         {"Subject", I18N_NOOP("Subject")},
                          {"From", I18N_NOOP("From")},
-                         {"To", I18NC_NOOP("Receiver of an email.", "To")},
+                         {"To", I18N_NOOP("To")},
                          {"CC", I18N_NOOP("CC")},
                          {"Reply-To", I18N_NOOP("Reply To")},
                          {"Organization", I18N_NOOP("Organization")},
@@ -360,14 +370,14 @@ void SearchRuleWidget::initFieldList(SearchPatternEdit::SearchPatternEditOptions
     if (!notShowTags) {
         mFilterFieldList.append(SpecialRuleFields[Tag].getLocalizedDisplayName());
     }
-    mFilterFieldList.append(i18n(SpecialRuleFields[ReplyTo].displayName));
-    mFilterFieldList.append(i18n(SpecialRuleFields[Organization].displayName));
+    mFilterFieldList.append(SpecialRuleFields[ReplyTo].getLocalizedDisplayName());
+    mFilterFieldList.append(SpecialRuleFields[Organization].getLocalizedDisplayName());
 
     if (!notShowDate) {
-        mFilterFieldList.append(i18n(SpecialRuleFields[Date].displayName));
+        mFilterFieldList.append(SpecialRuleFields[Date].getLocalizedDisplayName());
     }
 
-    mFilterFieldList.append(i18n(SpecialRuleFields[Encryption].displayName));
+    mFilterFieldList.append(SpecialRuleFields[Encryption].getLocalizedDisplayName());
 
     // these others only represent message headers and you can add to
     // them as you like
