@@ -6,15 +6,15 @@
 
 #include "mdnadvicehelper.h"
 #include "filter/mdnadvicedialog.h"
-#include "ki18n_version.h"
 #include "mailcommon_debug.h"
 #include <Akonadi/ItemModifyJob>
 #include <KLocalizedString>
 #include <MessageComposer/Util>
 #include <MessageViewer/MessageViewerSettings>
 #include <QPointer>
+#include <ki18n_version.h>
 #if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
-#include <klazylocalizedstring.h>
+#include <KLazyLocalizedString>
 #undef I18N_NOOP
 #define I18N_NOOP kli18n
 #endif

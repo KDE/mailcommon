@@ -10,7 +10,6 @@
 using MailCommon::RuleWidgetHandlerManager;
 #include "mailcommon_debug.h"
 
-#include "ki18n_version.h"
 #include <KComboBox>
 #include <KLocalizedString>
 #include <Libkdepim/LineEditCatchReturnKey>
@@ -22,8 +21,9 @@ using MailCommon::RuleWidgetHandlerManager;
 #include <QPushButton>
 #include <QRadioButton>
 #include <QStackedWidget>
+#include <ki18n_version.h>
 #if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
-#include <klazylocalizedstring.h>
+#include <KLazyLocalizedString>
 #undef I18N_NOOP
 #define I18N_NOOP kli18n
 #endif
