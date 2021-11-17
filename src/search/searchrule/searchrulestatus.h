@@ -8,42 +8,17 @@
 
 #include <Akonadi/Item>
 
+#include "ki18n_version.h"
 #include "mailcommon/searchpattern.h"
 #include <Akonadi/KMime/MessageStatus>
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+#include <klazylocalizedstring.h>
+#undef I18NC_NOOP
+#define I18NC_NOOP kli18nc
+#endif
+
 namespace MailCommon
 {
-// TODO: Check if the below one is needed or not!
-// The below are used in several places and here so they are accessible.
-struct MessageStatusInfo {
-    const char *context;
-    const char *text;
-    const char *icon;
-};
-
-// If you change the ordering here; also do it in the enum below
-static const MessageStatusInfo StatusValues[] = {
-    {I18NC_NOOP("message status", "Important"), "emblem-important"},
-    {I18NC_NOOP("message status", "Action Item"), "mail-task"},
-    {I18NC_NOOP("message status", "Unread"), "mail-unread"},
-    {I18NC_NOOP("message status", "Read"), "mail-read"},
-    {I18NC_NOOP("message status", "Deleted"), "mail-deleted"},
-    {I18NC_NOOP("message status", "Replied"), "mail-replied"},
-    {I18NC_NOOP("message status", "Forwarded"), "mail-forwarded"},
-    {I18NC_NOOP("message status", "Queued"), "mail-queued"},
-    {I18NC_NOOP("message status", "Sent"), "mail-sent"},
-    {I18NC_NOOP("message status", "Watched"), "mail-thread-watch"},
-    {I18NC_NOOP("message status", "Ignored"), "mail-thread-ignored"},
-    {I18NC_NOOP("message status", "Spam"), "mail-mark-junk"},
-    {I18NC_NOOP("message status", "Ham"), "mail-mark-notjunk"},
-    {I18NC_NOOP("message status", "Has Attachment"), "mail-attachment"} // must be last
-};
-
-static const int StatusValueCount = sizeof(StatusValues) / sizeof(MessageStatusInfo);
-// we want to show all status entries in the quick search bar, but only the
-// ones up to attachment in the search/filter dialog, because there the
-// attachment case is handled separately.
-static const int StatusValueCountWithoutHidden = StatusValueCount - 1;
-
 /**
  *  This class represents a search to be performed against the status of a
  *  message. The status is represented by a bitfield.

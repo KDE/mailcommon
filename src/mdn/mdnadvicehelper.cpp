@@ -6,13 +6,18 @@
 
 #include "mdnadvicehelper.h"
 #include "filter/mdnadvicedialog.h"
+#include "ki18n_version.h"
 #include "mailcommon_debug.h"
 #include <Akonadi/ItemModifyJob>
 #include <KLocalizedString>
 #include <MessageComposer/Util>
 #include <MessageViewer/MessageViewerSettings>
 #include <QPointer>
-
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+#include <klazylocalizedstring.h>
+#undef I18N_NOOP
+#define I18N_NOOP kli18n
+#endif
 #include <KCursorSaver>
 using MessageComposer::MessageFactoryNG;
 using namespace MailCommon;
@@ -20,7 +25,11 @@ using namespace MailCommon;
 static const struct {
     const char *dontAskAgainID;
     bool canDeny;
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
     const char *text;
+#else
+    const KLazyLocalizedString text;
+#endif
 } mdnMessageBoxes[] = {
     {"mdnNormalAsk",
      true,
@@ -188,7 +197,11 @@ int MDNAdviceHelper::requestAdviceOnMDN(const char *what)
     for (int i = 0; i < numMdnMessageBoxes; ++i) {
         if (!qstrcmp(what, mdnMessageBoxes[i].dontAskAgainID)) {
             KCursorSaver saver(Qt::ArrowCursor);
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
             const MessageComposer::MDNAdvice answer = questionIgnoreSend(i18n(mdnMessageBoxes[i].text), mdnMessageBoxes[i].canDeny);
+#else
+            const MessageComposer::MDNAdvice answer = questionIgnoreSend(KLocalizedString(mdnMessageBoxes[i].text).toString(), mdnMessageBoxes[i].canDeny);
+#endif
             switch (answer) {
             case MessageComposer::MDNSend:
                 return 3;

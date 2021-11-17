@@ -28,6 +28,40 @@ static const struct {
 } StatusFunctions[] = {{SearchRule::FuncContains, I18N_NOOP("is")}, {SearchRule::FuncContainsNot, I18N_NOOP("is not")}};
 static const int StatusFunctionCount = sizeof(StatusFunctions) / sizeof(*StatusFunctions);
 
+struct MessageStatusInfo {
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
+    const char *context;
+    const char *text;
+#else
+    const KLazyLocalizedString text;
+#endif
+    const char *icon;
+};
+
+// If you change the ordering here; also do it in the enum below
+static const MessageStatusInfo StatusValues[] = {
+    {I18NC_NOOP("message status", "Important"), "emblem-important"},
+    {I18NC_NOOP("message status", "Action Item"), "mail-task"},
+    {I18NC_NOOP("message status", "Unread"), "mail-unread"},
+    {I18NC_NOOP("message status", "Read"), "mail-read"},
+    {I18NC_NOOP("message status", "Deleted"), "mail-deleted"},
+    {I18NC_NOOP("message status", "Replied"), "mail-replied"},
+    {I18NC_NOOP("message status", "Forwarded"), "mail-forwarded"},
+    {I18NC_NOOP("message status", "Queued"), "mail-queued"},
+    {I18NC_NOOP("message status", "Sent"), "mail-sent"},
+    {I18NC_NOOP("message status", "Watched"), "mail-thread-watch"},
+    {I18NC_NOOP("message status", "Ignored"), "mail-thread-ignored"},
+    {I18NC_NOOP("message status", "Spam"), "mail-mark-junk"},
+    {I18NC_NOOP("message status", "Ham"), "mail-mark-notjunk"},
+    {I18NC_NOOP("message status", "Has Attachment"), "mail-attachment"} // must be last
+};
+
+static const int StatusValueCount = sizeof(StatusValues) / sizeof(MessageStatusInfo);
+// we want to show all status entries in the quick search bar, but only the
+// ones up to attachment in the search/filter dialog, because there the
+// attachment case is handled separately.
+static const int StatusValueCountWithoutHidden = StatusValueCount - 1;
+
 //---------------------------------------------------------------------------
 
 QWidget *StatusRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
@@ -62,11 +96,19 @@ QWidget *StatusRuleWidgetHandler::createValueWidget(int number, QStackedWidget *
     auto statusCombo = new QComboBox(valueStack);
     statusCombo->setMinimumWidth(50);
     statusCombo->setObjectName(QStringLiteral("statusRuleValueCombo"));
-    for (int i = 0; i < MailCommon::StatusValueCountWithoutHidden; ++i) {
-        if (MailCommon::StatusValues[i].icon != nullptr) {
-            statusCombo->addItem(QIcon::fromTheme(QLatin1String(MailCommon::StatusValues[i].icon)), i18nc("message status", MailCommon::StatusValues[i].text));
+    for (int i = 0; i < StatusValueCountWithoutHidden; ++i) {
+        if (StatusValues[i].icon != nullptr) {
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
+            statusCombo->addItem(QIcon::fromTheme(QLatin1String(StatusValues[i].icon)), i18nc("message status", StatusValues[i].text));
+#else
+            statusCombo->addItem(QIcon::fromTheme(QLatin1String(StatusValues[i].icon)), KLocalizedString(StatusValues[i].text).toString());
+#endif
         } else {
-            statusCombo->addItem(i18nc("message status", MailCommon::StatusValues[i].text));
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
+            statusCombo->addItem(i18nc("message status", StatusValues[i].text));
+#else
+            statusCombo->addItem(KLocalizedString(StatusValues[i].text).toString());
+#endif
         }
     }
     statusCombo->adjustSize();
@@ -121,7 +163,11 @@ QString StatusRuleWidgetHandler::value(const QByteArray &field, const QStackedWi
 
     const int status = currentStatusValue(valueStack);
     if (status != -1) {
-        return QString::fromLatin1(MailCommon::StatusValues[status].text);
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
+        return QString::fromLatin1(StatusValues[status].text);
+#else
+        return KLocalizedString(StatusValues[status].text).untranslatedText();
+#endif
     } else {
         return QString();
     }
@@ -137,7 +183,11 @@ QString StatusRuleWidgetHandler::prettyValue(const QByteArray &field, const QSta
 
     const int status = currentStatusValue(valueStack);
     if (status != -1) {
-        return i18nc("message status", MailCommon::StatusValues[status].text);
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
+        return QString::fromLatin1(StatusValues[status].text);
+#else
+        return KLocalizedString(StatusValues[status].text).toString();
+#endif
     } else {
         return QString();
     }
@@ -207,17 +257,23 @@ bool StatusRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWid
     // set the value
     const QString value = rule->contents();
     int valueIndex = 0;
-    for (; valueIndex < MailCommon::StatusValueCountWithoutHidden; ++valueIndex) {
-        if (value == QString::fromLatin1(MailCommon::StatusValues[valueIndex].text)) {
+    for (; valueIndex < StatusValueCountWithoutHidden; ++valueIndex) {
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
+        if (value == QString::fromLatin1(StatusValues[valueIndex].text)) {
             break;
         }
+#else
+        if (value == KLocalizedString(StatusValues[valueIndex].text).untranslatedText()) {
+            break;
+        }
+#endif
     }
 
     const auto statusCombo = valueStack->findChild<QComboBox *>(QStringLiteral("statusRuleValueCombo"));
 
     if (statusCombo) {
         statusCombo->blockSignals(true);
-        if (valueIndex < MailCommon::StatusValueCountWithoutHidden) {
+        if (valueIndex < StatusValueCountWithoutHidden) {
             statusCombo->setCurrentIndex(valueIndex);
         } else {
             statusCombo->setCurrentIndex(0);
