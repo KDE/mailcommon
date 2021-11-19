@@ -17,18 +17,18 @@ public:
     {
     }
 
-    bool matches(const Akonadi::Item &item) const override
+    Q_REQUIRED_RESULT bool matches(const Akonadi::Item &item) const override
     {
         Q_UNUSED(item)
         return false;
     }
 
-    bool isEmpty() const override
+    Q_REQUIRED_RESULT bool isEmpty() const override
     {
         return false;
     }
 
-    MailCommon::SearchRule::RequiredPart requiredPart() const override
+    Q_REQUIRED_RESULT MailCommon::SearchRule::RequiredPart requiredPart() const override
     {
         return MailCommon::SearchRule::CompleteMessage;
     }

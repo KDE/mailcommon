@@ -43,7 +43,7 @@ public:
     void slotUser1();
     void slotUser2();
     void slotAddressChanged(const QString &);
-    QString redirectLabelType(TypeAddress type) const;
+    Q_REQUIRED_RESULT QString redirectLabelType(TypeAddress type) const;
     RedirectDialog *const q = nullptr;
     RedirectWidget *mEditTo = nullptr;
     RedirectWidget *mEditCc = nullptr;

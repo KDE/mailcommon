@@ -41,10 +41,10 @@ public:
 
     void appendChild(SnippetItem *child);
     void removeChild(SnippetItem *child);
-    SnippetItem *child(int row) const;
+    Q_REQUIRED_RESULT SnippetItem *child(int row) const;
     Q_REQUIRED_RESULT int childCount() const;
     Q_REQUIRED_RESULT int row() const;
-    SnippetItem *parent() const;
+    Q_REQUIRED_RESULT SnippetItem *parent() const;
 
     Q_REQUIRED_RESULT QString subject() const;
     void setSubject(const QString &subject);

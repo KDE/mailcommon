@@ -23,7 +23,7 @@ public:
         return GoOn;
     }
 
-    MailCommon::SearchRule::RequiredPart requiredPart() const override
+    Q_REQUIRED_RESULT MailCommon::SearchRule::RequiredPart requiredPart() const override
     {
         return MailCommon::SearchRule::CompleteMessage;
     }

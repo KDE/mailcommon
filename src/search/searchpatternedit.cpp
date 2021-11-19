@@ -44,7 +44,7 @@ static const struct {
     const KLazyLocalizedString displayName;
 #endif
 
-    QString getLocalizedDisplayName() const
+    Q_REQUIRED_RESULT QString getLocalizedDisplayName() const
     {
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         return i18n(displayName);
