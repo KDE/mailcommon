@@ -39,9 +39,9 @@
 #include <QPointer>
 #include <QVBoxLayout>
 
-namespace MailCommon
-{
-class Q_DECL_HIDDEN FolderTreeWidget::FolderTreeWidgetPrivate
+using namespace MailCommon;
+
+class Q_DECL_HIDDEN MailCommon::FolderTreeWidget::FolderTreeWidgetPrivate
 {
 public:
     QString filter;
@@ -380,5 +380,4 @@ bool FolderTreeWidget::eventFilter(QObject *o, QEvent *e)
         return false;
     }
     return false;
-}
 }
