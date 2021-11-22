@@ -575,6 +575,13 @@ void FolderTreeView::keyboardSearch(const QString &)
     // either because KMail has one-letter keyboard shortcuts.
 }
 
+void FolderTreeView::setEnableDragDrop(bool enabled)
+{
+#ifndef QT_NO_DRAGANDDROP
+    setDragDropMode(enabled ? QAbstractItemView::InternalMove : QAbstractItemView::NoDragDrop);
+#endif
+}
+
 QModelIndex FolderTreeView::indexBelow(const QModelIndex &current) const
 {
     // if we have children, return first child

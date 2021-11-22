@@ -58,6 +58,8 @@ public:
 
     void keyboardSearch(const QString &) override;
 
+    void setEnableDragDrop(bool enabled);
+
 protected:
     enum Move { Next = 0, Previous = 1 };
 

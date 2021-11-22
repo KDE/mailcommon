@@ -88,9 +88,7 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
     // Necessary otherwise we overwrite tooltip config for all application
     d->folderTreeWidget->folderTreeView()->disableSaveConfig();
     d->folderTreeWidget->folderTreeView()->setTooltipsPolicy(FolderTreeWidget::DisplayNever);
-#ifndef QT_NO_DRAGANDDROP
-    d->folderTreeWidget->folderTreeView()->setDragDropMode(QAbstractItemView::NoDragDrop);
-#endif
+    d->folderTreeWidget->folderTreeView()->setEnableDragDrop(false);
     mainLayout->addWidget(d->folderTreeWidget);
     mainLayout->addWidget(buttonBox);
 
