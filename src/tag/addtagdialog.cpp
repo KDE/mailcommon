@@ -21,9 +21,7 @@ using namespace MailCommon;
 class MailCommon::AddTagDialogPrivate
 {
 public:
-    AddTagDialogPrivate()
-    {
-    }
+    AddTagDialogPrivate() = default;
 
     QString mLabel;
     QString mGid;

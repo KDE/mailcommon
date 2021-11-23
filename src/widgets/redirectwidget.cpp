@@ -50,9 +50,7 @@ RedirectWidget::RedirectWidget(QWidget *parent)
     setFocusProxy(mEdit);
 }
 
-RedirectWidget::~RedirectWidget()
-{
-}
+RedirectWidget::~RedirectWidget() = default;
 
 QString RedirectWidget::resend()
 {

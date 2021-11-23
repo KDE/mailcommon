@@ -18,9 +18,7 @@ public:
     {
     }
 
-    ~MessageRuleWidgetHandler() override
-    {
-    }
+    ~MessageRuleWidgetHandler() override = default;
 
     QWidget *createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const override;
 

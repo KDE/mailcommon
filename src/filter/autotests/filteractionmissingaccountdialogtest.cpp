@@ -18,9 +18,7 @@ FilterActionMissingAccountDialogTest::FilterActionMissingAccountDialogTest(QObje
     QStandardPaths::setTestModeEnabled(true);
 }
 
-FilterActionMissingAccountDialogTest::~FilterActionMissingAccountDialogTest()
-{
-}
+FilterActionMissingAccountDialogTest::~FilterActionMissingAccountDialogTest() = default;
 
 void FilterActionMissingAccountDialogTest::shouldHaveDefaultValue()
 {

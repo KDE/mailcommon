@@ -13,9 +13,7 @@ FilterActionForwardTest::FilterActionForwardTest(QObject *parent)
 {
 }
 
-FilterActionForwardTest::~FilterActionForwardTest()
-{
-}
+FilterActionForwardTest::~FilterActionForwardTest() = default;
 
 void FilterActionForwardTest::shouldBeEmpty()
 {

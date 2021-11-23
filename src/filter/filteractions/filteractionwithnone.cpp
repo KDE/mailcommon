@@ -25,5 +25,5 @@ void FilterActionWithNone::argsFromString(const QString &)
 
 QString FilterActionWithNone::argsAsString() const
 {
-    return QString();
+    return {};
 }

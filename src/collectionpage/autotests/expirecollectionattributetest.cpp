@@ -17,9 +17,7 @@ ExpireCollectionAttributeTest::ExpireCollectionAttributeTest(QObject *parent)
     qRegisterMetaType<MailCommon::ExpireCollectionAttribute::ExpireAction>();
 }
 
-ExpireCollectionAttributeTest::~ExpireCollectionAttributeTest()
-{
-}
+ExpireCollectionAttributeTest::~ExpireCollectionAttributeTest() = default;
 
 void ExpireCollectionAttributeTest::shouldHaveDefaultValue()
 {

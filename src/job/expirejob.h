@@ -51,9 +51,7 @@ public:
     {
     }
 
-    ~ScheduledExpireTask() override
-    {
-    }
+    ~ScheduledExpireTask() override = default;
 
     ScheduledJob *run() override
     {

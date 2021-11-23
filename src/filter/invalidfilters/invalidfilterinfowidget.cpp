@@ -16,9 +16,7 @@ InvalidFilterInfoWidget::InvalidFilterInfoWidget(QWidget *parent)
     setWordWrap(true);
 }
 
-InvalidFilterInfoWidget::~InvalidFilterInfoWidget()
-{
-}
+InvalidFilterInfoWidget::~InvalidFilterInfoWidget() = default;
 
 void InvalidFilterInfoWidget::slotShowDetails(const QString &details)
 {

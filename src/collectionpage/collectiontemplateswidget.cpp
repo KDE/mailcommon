@@ -50,9 +50,7 @@ CollectionTemplatesWidget::CollectionTemplatesWidget(QWidget *parent)
     connect(copyGlobal, &QPushButton::clicked, this, &CollectionTemplatesWidget::slotCopyGlobal);
 }
 
-CollectionTemplatesWidget::~CollectionTemplatesWidget()
-{
-}
+CollectionTemplatesWidget::~CollectionTemplatesWidget() = default;
 
 void CollectionTemplatesWidget::save(Akonadi::Collection &col)
 {

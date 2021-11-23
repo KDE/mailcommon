@@ -23,9 +23,7 @@ using namespace MailCommon;
 class MailCommon::TagWidgetPrivate
 {
 public:
-    TagWidgetPrivate()
-    {
-    }
+    TagWidgetPrivate() = default;
 
     QLineEdit *mTagNameLineEdit = nullptr;
 

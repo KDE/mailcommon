@@ -95,7 +95,7 @@ qreal FilterTestKernel::closeToQuotaThreshold()
 QStringList FilterTestKernel::customTemplates()
 {
     Q_ASSERT(false);
-    return QStringList();
+    return {};
 }
 
 bool FilterTestKernel::excludeImportantMailFromExpiry()

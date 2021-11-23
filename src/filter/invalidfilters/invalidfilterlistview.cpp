@@ -21,9 +21,7 @@ InvalidFilterListView::InvalidFilterListView(QWidget *parent)
     setItemDelegate(invalidFilterDelegate);
 }
 
-InvalidFilterListView::~InvalidFilterListView()
-{
-}
+InvalidFilterListView::~InvalidFilterListView() = default;
 
 void InvalidFilterListView::setInvalidFilters(const QVector<MailCommon::InvalidFilterInfo> &lst)
 {

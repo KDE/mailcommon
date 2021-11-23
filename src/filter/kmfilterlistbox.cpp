@@ -195,9 +195,7 @@ KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
     enableControls();
 }
 
-KMFilterListBox::~KMFilterListBox()
-{
-}
+KMFilterListBox::~KMFilterListBox() = default;
 
 bool KMFilterListBox::eventFilter(QObject *obj, QEvent *event)
 {

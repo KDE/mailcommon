@@ -17,9 +17,7 @@ FilterActionRewriteHeaderTest::FilterActionRewriteHeaderTest(QObject *parent)
 {
 }
 
-FilterActionRewriteHeaderTest::~FilterActionRewriteHeaderTest()
-{
-}
+FilterActionRewriteHeaderTest::~FilterActionRewriteHeaderTest() = default;
 
 void FilterActionRewriteHeaderTest::shouldHaveDefaultValue()
 {

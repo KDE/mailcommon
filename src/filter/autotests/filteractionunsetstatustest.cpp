@@ -13,9 +13,7 @@ FilterActionUnsetStatusTest::FilterActionUnsetStatusTest(QObject *parent)
 {
 }
 
-FilterActionUnsetStatusTest::~FilterActionUnsetStatusTest()
-{
-}
+FilterActionUnsetStatusTest::~FilterActionUnsetStatusTest() = default;
 
 void FilterActionUnsetStatusTest::shouldHaveSieveRequires()
 {

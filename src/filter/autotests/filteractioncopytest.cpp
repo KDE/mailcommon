@@ -13,9 +13,7 @@ FilterActionCopyTest::FilterActionCopyTest(QObject *parent)
 {
 }
 
-FilterActionCopyTest::~FilterActionCopyTest()
-{
-}
+FilterActionCopyTest::~FilterActionCopyTest() = default;
 
 void FilterActionCopyTest::shouldBeEmpty()
 {

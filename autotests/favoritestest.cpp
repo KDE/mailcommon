@@ -43,7 +43,7 @@ static QModelIndex getIndex(const QString &string, EntityTreeModel *model)
 {
     QModelIndexList list = model->match(model->index(0, 0), Qt::DisplayRole, string, 1, Qt::MatchRecursive);
     if (list.isEmpty()) {
-        return QModelIndex();
+        return {};
     }
     return list.first();
 }

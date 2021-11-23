@@ -209,7 +209,7 @@ QString MailCommon::Util::convertFolderPathToCollectionStr(const QString &folder
 {
     Akonadi::Collection::Id newFolderId = MailCommon::Util::convertFolderPathToCollectionId(folder);
     if (newFolderId == -1) {
-        return QString();
+        return {};
     }
     return QString::number(newFolderId);
 }

@@ -13,9 +13,7 @@
 
 using namespace MailCommon;
 
-ExpireCollectionAttribute::ExpireCollectionAttribute()
-{
-}
+ExpireCollectionAttribute::ExpireCollectionAttribute() = default;
 
 QByteArray ExpireCollectionAttribute::type() const
 {

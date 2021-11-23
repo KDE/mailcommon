@@ -34,9 +34,7 @@ FilterActionWithAddressTest::FilterActionWithAddressTest(QObject *parent)
 {
 }
 
-FilterActionWithAddressTest::~FilterActionWithAddressTest()
-{
-}
+FilterActionWithAddressTest::~FilterActionWithAddressTest() = default;
 
 void FilterActionWithAddressTest::shouldHaveDefaultValue()
 {

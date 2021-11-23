@@ -33,9 +33,7 @@ FilterImporterClawsMails::FilterImporterClawsMails(bool interactive)
 {
 }
 
-FilterImporterClawsMails::~FilterImporterClawsMails()
-{
-}
+FilterImporterClawsMails::~FilterImporterClawsMails() = default;
 
 void FilterImporterClawsMails::readStream(QTextStream &stream)
 {
@@ -106,7 +104,7 @@ QString FilterImporterClawsMails::extractConditions(const QString &line, MailFil
     }
     filter->pattern()->setOp(SearchPattern::OpAnd);
     // TODO
-    return QString();
+    return {};
 }
 
 QString FilterImporterClawsMails::extractString(const QString &tmp, int &pos)

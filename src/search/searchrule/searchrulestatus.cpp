@@ -39,7 +39,7 @@ QString englishNameForStatus(Akonadi::MessageStatus status)
             return QString::fromLatin1(statusName.name);
         }
     }
-    return QString();
+    return {};
 }
 
 SearchRuleStatus::SearchRuleStatus(const QByteArray &field, Function func, const QString &aContents)
@@ -70,7 +70,7 @@ Akonadi::MessageStatus SearchRuleStatus::statusFromEnglishName(const QString &aS
 QString SearchRuleStatus::informationAboutNotValidRules() const
 {
     // TODO
-    return QString();
+    return {};
 }
 
 bool SearchRuleStatus::isEmpty() const

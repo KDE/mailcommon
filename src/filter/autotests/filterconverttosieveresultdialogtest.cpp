@@ -17,9 +17,7 @@ FilterConvertToSieveResultDialogTest::FilterConvertToSieveResultDialogTest(QObje
     QStandardPaths::setTestModeEnabled(true);
 }
 
-FilterConvertToSieveResultDialogTest::~FilterConvertToSieveResultDialogTest()
-{
-}
+FilterConvertToSieveResultDialogTest::~FilterConvertToSieveResultDialogTest() = default;
 
 void FilterConvertToSieveResultDialogTest::shouldHaveDefaultValue()
 {

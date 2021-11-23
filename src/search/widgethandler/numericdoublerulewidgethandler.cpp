@@ -104,7 +104,7 @@ QString NumericDoubleRuleWidgetHandler::currentValue(const QStackedWidget *value
         return QString::number(int(numInput->value() * 1024));
     }
 
-    return QString();
+    return {};
 }
 
 //---------------------------------------------------------------------------
@@ -112,7 +112,7 @@ QString NumericDoubleRuleWidgetHandler::currentValue(const QStackedWidget *value
 QString NumericDoubleRuleWidgetHandler::value(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
 
     return currentValue(valueStack);
@@ -123,7 +123,7 @@ QString NumericDoubleRuleWidgetHandler::value(const QByteArray &field, const QSt
 QString NumericDoubleRuleWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
 
     return currentValue(valueStack);

@@ -16,9 +16,7 @@ FilterImporterPathCacheTest::FilterImporterPathCacheTest(QObject *parent)
 {
 }
 
-FilterImporterPathCacheTest::~FilterImporterPathCacheTest()
-{
-}
+FilterImporterPathCacheTest::~FilterImporterPathCacheTest() = default;
 
 void FilterImporterPathCacheTest::shouldReturnEmptyStringWhenListIsEmpty()
 {

@@ -123,7 +123,7 @@ QString TextRuleWidgetHandler::currentValue(const QStackedWidget *valueStack, Se
     }
 
     // or anything else, like addressbook
-    return QString();
+    return {};
 }
 
 //---------------------------------------------------------------------------

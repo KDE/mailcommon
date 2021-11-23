@@ -30,9 +30,7 @@ FilterImporterThunderbird::FilterImporterThunderbird(QString string, bool intera
     readStream(stream);
 }
 
-FilterImporterThunderbird::~FilterImporterThunderbird()
-{
-}
+FilterImporterThunderbird::~FilterImporterThunderbird() = default;
 
 void FilterImporterThunderbird::readStream(QTextStream &stream)
 {
@@ -404,7 +402,7 @@ QString FilterImporterThunderbird::extractActions(const QString &line, MailCommo
         actionName = QStringLiteral("set Reply-To");
     } else if (line == QLatin1String("Stop execution")) {
         filter->setStopProcessingHere(true);
-        return QString();
+        return {};
     } else if (line == QLatin1String("Delete from Pop3 server")) {
     } else if (line == QLatin1String("JunkScore")) {
     } else if (line == QLatin1String("Fetch body from Pop3Server")) {

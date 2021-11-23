@@ -17,9 +17,7 @@ InvalidFilterDialogTest::InvalidFilterDialogTest(QObject *parent)
     QStandardPaths::setTestModeEnabled(true);
 }
 
-InvalidFilterDialogTest::~InvalidFilterDialogTest()
-{
-}
+InvalidFilterDialogTest::~InvalidFilterDialogTest() = default;
 
 void InvalidFilterDialogTest::shouldHaveDefaultValue()
 {

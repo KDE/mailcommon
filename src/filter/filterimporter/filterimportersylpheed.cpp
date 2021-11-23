@@ -38,9 +38,7 @@ FilterImporterSylpheed::FilterImporterSylpheed(QFile *file)
     }
 }
 
-FilterImporterSylpheed::~FilterImporterSylpheed()
-{
-}
+FilterImporterSylpheed::~FilterImporterSylpheed() = default;
 
 QString FilterImporterSylpheed::defaultFiltersSettingsPath()
 {

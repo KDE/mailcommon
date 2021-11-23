@@ -42,9 +42,7 @@ SoundTestWidget::SoundTestWidget(QWidget *parent)
     slotUrlChanged(m_urlRequester->lineEdit()->text());
 }
 
-SoundTestWidget::~SoundTestWidget()
-{
-}
+SoundTestWidget::~SoundTestWidget() = default;
 
 void SoundTestWidget::slotUrlChanged(const QString &url)
 {

@@ -237,7 +237,7 @@ public:
     QDataStream &operator>>(QDataStream &) const;
     virtual QString informationAboutNotValidRules() const
     {
-        return QString();
+        return {};
     }
 
 protected:

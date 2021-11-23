@@ -34,9 +34,7 @@ FilterActionWithUrlTest::FilterActionWithUrlTest(QObject *parent)
 {
 }
 
-FilterActionWithUrlTest::~FilterActionWithUrlTest()
-{
-}
+FilterActionWithUrlTest::~FilterActionWithUrlTest() = default;
 
 void FilterActionWithUrlTest::shouldHaveDefaultValue()
 {

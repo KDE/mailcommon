@@ -45,9 +45,7 @@ FilterActionEncrypt::FilterActionEncrypt(QObject *parent)
 {
 }
 
-FilterActionEncrypt::~FilterActionEncrypt()
-{
-}
+FilterActionEncrypt::~FilterActionEncrypt() = default;
 
 FilterAction *FilterActionEncrypt::newAction()
 {

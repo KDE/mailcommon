@@ -17,9 +17,7 @@ CollectionExpiryJob::CollectionExpiryJob(QObject *parent)
 {
 }
 
-CollectionExpiryJob::~CollectionExpiryJob()
-{
-}
+CollectionExpiryJob::~CollectionExpiryJob() = default;
 
 void CollectionExpiryJob::start()
 {

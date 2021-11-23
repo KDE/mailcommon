@@ -17,9 +17,7 @@ FilterConvertToSieve::FilterConvertToSieve(const QVector<MailFilter *> &filters)
 {
 }
 
-FilterConvertToSieve::~FilterConvertToSieve()
-{
-}
+FilterConvertToSieve::~FilterConvertToSieve() = default;
 
 void FilterConvertToSieve::convert()
 {

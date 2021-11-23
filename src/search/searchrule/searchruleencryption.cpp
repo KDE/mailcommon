@@ -17,9 +17,7 @@ SearchRuleEncryption::SearchRuleEncryption(const QByteArray &field, Function fun
 {
 }
 
-SearchRuleEncryption::~SearchRuleEncryption()
-{
-}
+SearchRuleEncryption::~SearchRuleEncryption() = default;
 
 bool SearchRuleEncryption::isEmpty() const
 {

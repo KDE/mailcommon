@@ -138,7 +138,7 @@ QString MailCommon::RuleWidgetHandlerManager::value(const QByteArray &field, con
             return val;
         }
     }
-    return QString();
+    return {};
 }
 
 QString MailCommon::RuleWidgetHandlerManager::prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
@@ -150,7 +150,7 @@ QString MailCommon::RuleWidgetHandlerManager::prettyValue(const QByteArray &fiel
             return val;
         }
     }
-    return QString();
+    return {};
 }
 
 void MailCommon::RuleWidgetHandlerManager::reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const

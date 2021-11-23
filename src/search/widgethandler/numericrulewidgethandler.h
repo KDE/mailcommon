@@ -12,9 +12,7 @@ public:
     {
     }
 
-    ~NumericRuleWidgetHandler() override
-    {
-    }
+    ~NumericRuleWidgetHandler() override = default;
 
     QWidget *createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const override;
 

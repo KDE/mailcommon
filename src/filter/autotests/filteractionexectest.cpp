@@ -16,9 +16,7 @@ FilterActionExecTest::FilterActionExecTest(QObject *parent)
 {
 }
 
-FilterActionExecTest::~FilterActionExecTest()
-{
-}
+FilterActionExecTest::~FilterActionExecTest() = default;
 
 void FilterActionExecTest::shouldHaveDefaultValue()
 {

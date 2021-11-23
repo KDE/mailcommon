@@ -58,11 +58,8 @@ SearchRule::SearchRule(const QByteArray &field, Function func, const QString &co
 }
 
 SearchRule::SearchRule(const SearchRule &other)
-    : mField(other.mField)
-    , mFunction(other.mFunction)
-    , mContents(other.mContents)
-{
-}
+
+    = default;
 
 const SearchRule &SearchRule::operator=(const SearchRule &other)
 {
@@ -136,9 +133,7 @@ SearchRule::Ptr SearchRule::createInstance(QDataStream &s)
     return createInstance(field, func, contents);
 }
 
-SearchRule::~SearchRule()
-{
-}
+SearchRule::~SearchRule() = default;
 
 SearchRule::Function SearchRule::configValueToFunc(const char *str)
 {

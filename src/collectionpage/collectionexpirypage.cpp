@@ -27,9 +27,7 @@ CollectionExpiryPage::CollectionExpiryPage(QWidget *parent)
     setPageTitle(i18nc("@title:tab Expiry settings for a folder.", "Expiry"));
 }
 
-CollectionExpiryPage::~CollectionExpiryPage()
-{
-}
+CollectionExpiryPage::~CollectionExpiryPage() = default;
 
 bool CollectionExpiryPage::canHandle(const Akonadi::Collection &col) const
 {

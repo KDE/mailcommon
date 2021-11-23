@@ -13,9 +13,7 @@ ItemContextTest::ItemContextTest(QObject *parent)
 {
 }
 
-ItemContextTest::~ItemContextTest()
-{
-}
+ItemContextTest::~ItemContextTest() = default;
 
 void ItemContextTest::shouldHaveDefaultValue()
 {

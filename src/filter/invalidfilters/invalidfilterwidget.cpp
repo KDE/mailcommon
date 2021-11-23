@@ -31,9 +31,7 @@ InvalidFilterWidget::InvalidFilterWidget(QWidget *parent)
     vbox->addWidget(mInvalidFilterListWidget);
 }
 
-InvalidFilterWidget::~InvalidFilterWidget()
-{
-}
+InvalidFilterWidget::~InvalidFilterWidget() = default;
 
 void InvalidFilterWidget::setInvalidFilters(const QVector<InvalidFilterInfo> &lst)
 {

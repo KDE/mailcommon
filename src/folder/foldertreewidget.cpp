@@ -198,13 +198,13 @@ Akonadi::Collection FolderTreeWidget::selectedCollection() const
     if (d->folderTreeView->selectionMode() == QAbstractItemView::SingleSelection) {
         Akonadi::Collection::List lstCollection = selectedCollections();
         if (lstCollection.isEmpty()) {
-            return Akonadi::Collection();
+            return {};
         } else {
             return lstCollection.at(0);
         }
     }
 
-    return Akonadi::Collection();
+    return {};
 }
 
 Akonadi::Collection::List FolderTreeWidget::selectedCollections() const

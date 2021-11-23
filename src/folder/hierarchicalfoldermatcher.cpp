@@ -12,9 +12,7 @@
 #include <QRegularExpression>
 
 using namespace MailCommon;
-HierarchicalFolderMatcher::HierarchicalFolderMatcher()
-{
-}
+HierarchicalFolderMatcher::HierarchicalFolderMatcher() = default;
 
 bool HierarchicalFolderMatcher::isNull() const
 {

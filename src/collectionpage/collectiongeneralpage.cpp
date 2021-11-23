@@ -45,9 +45,7 @@ CollectionGeneralPage::CollectionGeneralPage(QWidget *parent)
     setPageTitle(i18nc("@title:tab General settings for a folder.", "General"));
 }
 
-CollectionGeneralPage::~CollectionGeneralPage()
-{
-}
+CollectionGeneralPage::~CollectionGeneralPage() = default;
 
 void CollectionGeneralPage::init(const Akonadi::Collection &collection)
 {

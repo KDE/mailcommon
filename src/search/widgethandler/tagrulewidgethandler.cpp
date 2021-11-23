@@ -193,7 +193,7 @@ SearchRule::Function TagRuleWidgetHandler::function(const QByteArray &field, con
 QString TagRuleWidgetHandler::value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
 
     SearchRule::Function func = function(field, functionStack);
@@ -204,7 +204,7 @@ QString TagRuleWidgetHandler::value(const QByteArray &field, const QStackedWidge
         if (lineEdit) {
             return lineEdit->text();
         } else {
-            return QString();
+            return {};
         }
     }
 
@@ -214,7 +214,7 @@ QString TagRuleWidgetHandler::value(const QByteArray &field, const QStackedWidge
     if (tagCombo) {
         return tagCombo->itemData(tagCombo->currentIndex()).toString();
     } else {
-        return QString();
+        return {};
     }
 }
 

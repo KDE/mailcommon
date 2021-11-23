@@ -35,9 +35,7 @@ SnippetAttachmentWidget::SnippetAttachmentWidget(QWidget *parent)
     connect(button, &QToolButton::clicked, this, &SnippetAttachmentWidget::slotSelectAttachment);
 }
 
-SnippetAttachmentWidget::~SnippetAttachmentWidget()
-{
-}
+SnippetAttachmentWidget::~SnippetAttachmentWidget() = default;
 
 void SnippetAttachmentWidget::setText(const QString &str)
 {

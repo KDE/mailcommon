@@ -52,9 +52,7 @@ SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWi
     mainLayout->addStretch(1);
 }
 
-SnippetCustomFileAttachmentNameWidget::~SnippetCustomFileAttachmentNameWidget()
-{
-}
+SnippetCustomFileAttachmentNameWidget::~SnippetCustomFileAttachmentNameWidget() = default;
 
 void SnippetCustomFileAttachmentNameWidget::insertVariable(MessageComposer::ConvertSnippetVariablesUtil::VariableType variable)
 {

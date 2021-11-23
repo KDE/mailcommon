@@ -111,9 +111,7 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
     slotChanged();
 }
 
-CollectionExpiryWidget::~CollectionExpiryWidget()
-{
-}
+CollectionExpiryWidget::~CollectionExpiryWidget() = default;
 
 void CollectionExpiryWidget::hideExpireNowButton()
 {

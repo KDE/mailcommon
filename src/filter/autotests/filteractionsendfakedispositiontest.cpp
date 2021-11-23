@@ -14,9 +14,7 @@ FilterActionSendFakeDispositionTest::FilterActionSendFakeDispositionTest(QObject
 {
 }
 
-FilterActionSendFakeDispositionTest::~FilterActionSendFakeDispositionTest()
-{
-}
+FilterActionSendFakeDispositionTest::~FilterActionSendFakeDispositionTest() = default;
 
 void FilterActionSendFakeDispositionTest::shouldHaveDefaultValue()
 {

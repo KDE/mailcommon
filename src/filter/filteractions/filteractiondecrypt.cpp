@@ -28,9 +28,7 @@ FilterActionDecrypt::FilterActionDecrypt(QObject *parent)
 {
 }
 
-FilterActionDecrypt::~FilterActionDecrypt()
-{
-}
+FilterActionDecrypt::~FilterActionDecrypt() = default;
 
 FilterAction *FilterActionDecrypt::newAction()
 {

@@ -29,9 +29,7 @@ FilterImporterProcmail::FilterImporterProcmail(QString string)
     readStream(stream);
 }
 
-FilterImporterProcmail::~FilterImporterProcmail()
-{
-}
+FilterImporterProcmail::~FilterImporterProcmail() = default;
 
 void FilterImporterProcmail::readStream(QTextStream &stream)
 {

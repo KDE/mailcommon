@@ -14,9 +14,7 @@ FilterActionPlaySoundTest::FilterActionPlaySoundTest(QObject *parent)
 {
 }
 
-FilterActionPlaySoundTest::~FilterActionPlaySoundTest()
-{
-}
+FilterActionPlaySoundTest::~FilterActionPlaySoundTest() = default;
 
 void FilterActionPlaySoundTest::shouldBeValid()
 {

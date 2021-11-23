@@ -13,9 +13,7 @@ MDNStateAttributeTest::MDNStateAttributeTest(QObject *parent)
 {
 }
 
-MDNStateAttributeTest::~MDNStateAttributeTest()
-{
-}
+MDNStateAttributeTest::~MDNStateAttributeTest() = default;
 
 void MDNStateAttributeTest::shouldHaveDefaultValue()
 {

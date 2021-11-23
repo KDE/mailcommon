@@ -7,9 +7,7 @@
 #include "invalidfilterinfo.h"
 using namespace MailCommon;
 
-InvalidFilterInfo::InvalidFilterInfo()
-{
-}
+InvalidFilterInfo::InvalidFilterInfo() = default;
 
 InvalidFilterInfo::InvalidFilterInfo(const QString &name, const QString &information)
     : mName(name)

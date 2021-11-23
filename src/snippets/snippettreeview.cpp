@@ -38,9 +38,7 @@ SnippetTreeView::SnippetTreeView(KActionCollection *actionCollection, QWidget *p
     expandAll();
 }
 
-SnippetTreeView::~SnippetTreeView()
-{
-}
+SnippetTreeView::~SnippetTreeView() = default;
 
 void SnippetTreeView::contextMenuEvent(QContextMenuEvent *event)
 {

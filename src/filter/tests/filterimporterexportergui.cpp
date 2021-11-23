@@ -63,9 +63,7 @@ FilterImporterExporterGui::FilterImporterExporterGui(QWidget *parent)
     mainLayout->addWidget(mTextEdit);
 }
 
-FilterImporterExporterGui::~FilterImporterExporterGui()
-{
-}
+FilterImporterExporterGui::~FilterImporterExporterGui() = default;
 
 void FilterImporterExporterGui::slotImportFilter(QAction *act)
 {

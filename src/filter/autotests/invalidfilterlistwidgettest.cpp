@@ -14,9 +14,7 @@ InvalidFilterListWidgetTest::InvalidFilterListWidgetTest(QObject *parent)
 {
 }
 
-InvalidFilterListWidgetTest::~InvalidFilterListWidgetTest()
-{
-}
+InvalidFilterListWidgetTest::~InvalidFilterListWidgetTest() = default;
 
 void InvalidFilterListWidgetTest::shouldHaveDefaultValue()
 {

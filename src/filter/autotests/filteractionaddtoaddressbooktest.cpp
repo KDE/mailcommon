@@ -19,9 +19,7 @@ FilterActionAddToAddressBookTest::FilterActionAddToAddressBookTest(QObject *pare
 {
 }
 
-FilterActionAddToAddressBookTest::~FilterActionAddToAddressBookTest()
-{
-}
+FilterActionAddToAddressBookTest::~FilterActionAddToAddressBookTest() = default;
 
 void FilterActionAddToAddressBookTest::shouldHaveDefaultValue()
 {

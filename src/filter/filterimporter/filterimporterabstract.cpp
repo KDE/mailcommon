@@ -20,9 +20,7 @@ FilterImporterAbstract::FilterImporterAbstract(bool interactive)
 {
 }
 
-FilterImporterAbstract::~FilterImporterAbstract()
-{
-}
+FilterImporterAbstract::~FilterImporterAbstract() = default;
 
 QVector<MailFilter *> FilterImporterAbstract::importFilter() const
 {

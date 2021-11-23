@@ -19,9 +19,7 @@ FilterActionMissingTagDialogTest::FilterActionMissingTagDialogTest(QObject *pare
     QStandardPaths::setTestModeEnabled(true);
 }
 
-FilterActionMissingTagDialogTest::~FilterActionMissingTagDialogTest()
-{
-}
+FilterActionMissingTagDialogTest::~FilterActionMissingTagDialogTest() = default;
 
 void FilterActionMissingTagDialogTest::shouldHaveDefaultValue()
 {

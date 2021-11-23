@@ -95,7 +95,7 @@ public:
 QModelIndex SnippetsManager::SnippetsManagerPrivate::currentGroupIndex() const
 {
     if (mSelectionModel->selectedIndexes().isEmpty()) {
-        return QModelIndex();
+        return {};
     }
 
     const QModelIndex index = mSelectionModel->selectedIndexes().first();
@@ -495,7 +495,7 @@ QString SnippetsManager::SnippetsManagerPrivate::replaceVariables(const QString 
                         variableValue = dlg->variableValue();
                     } else {
                         delete dlg;
-                        return QString();
+                        return {};
                     }
                     delete dlg;
                 } else {
@@ -666,7 +666,7 @@ bool SnippetsManager::snippetGroupSelected() const
 QString SnippetsManager::selectedName() const
 {
     if (d->mSelectionModel->selectedIndexes().isEmpty()) {
-        return QString();
+        return {};
     }
 
     return d->mSelectionModel->selectedIndexes().first().data(SnippetsModel::NameRole).toString();

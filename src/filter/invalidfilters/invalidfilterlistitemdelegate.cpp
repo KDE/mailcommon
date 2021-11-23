@@ -20,9 +20,7 @@ InvalidFilterListItemDelegate::InvalidFilterListItemDelegate(QAbstractItemView *
 {
 }
 
-InvalidFilterListItemDelegate::~InvalidFilterListItemDelegate()
-{
-}
+InvalidFilterListItemDelegate::~InvalidFilterListItemDelegate() = default;
 
 QSize InvalidFilterListItemDelegate::sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
@@ -31,7 +29,7 @@ QSize InvalidFilterListItemDelegate::sizeHint(const QStyleOptionViewItem &option
     const QStyle *style = itemView()->style();
     const int buttonHeight = style->pixelMetric(QStyle::PM_ButtonMargin) * 2 + style->pixelMetric(QStyle::PM_ButtonIconSize);
     const int fontHeight = option.fontMetrics.height();
-    return QSize(100, qMax(buttonHeight, fontHeight));
+    return {100, qMax(buttonHeight, fontHeight)};
 }
 
 void InvalidFilterListItemDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const

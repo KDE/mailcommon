@@ -18,9 +18,7 @@ FilterActionMissingTemplateDialogTest::FilterActionMissingTemplateDialogTest(QOb
     QStandardPaths::setTestModeEnabled(true);
 }
 
-FilterActionMissingTemplateDialogTest::~FilterActionMissingTemplateDialogTest()
-{
-}
+FilterActionMissingTemplateDialogTest::~FilterActionMissingTemplateDialogTest() = default;
 
 void FilterActionMissingTemplateDialogTest::shouldHaveDefaultValue()
 {

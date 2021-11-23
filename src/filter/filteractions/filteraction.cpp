@@ -30,9 +30,7 @@ FilterAction::FilterAction(const QString &name, const QString &label, QObject *p
 {
 }
 
-FilterAction::~FilterAction()
-{
-}
+FilterAction::~FilterAction() = default;
 
 QString FilterAction::label() const
 {
@@ -51,7 +49,7 @@ bool FilterAction::isEmpty() const
 
 QString FilterAction::informationAboutNotValidAction() const
 {
-    return QString();
+    return {};
 }
 
 FilterAction *FilterAction::newAction()
@@ -127,7 +125,7 @@ void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionTyp
 
 QStringList FilterAction::sieveRequires() const
 {
-    return QStringList();
+    return {};
 }
 
 QString FilterAction::sieveCode() const

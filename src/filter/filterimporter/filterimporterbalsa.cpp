@@ -30,9 +30,7 @@ FilterImporterBalsa::FilterImporterBalsa()
 {
 }
 
-FilterImporterBalsa::~FilterImporterBalsa()
-{
-}
+FilterImporterBalsa::~FilterImporterBalsa() = default;
 
 QString FilterImporterBalsa::defaultFiltersSettingsPath()
 {

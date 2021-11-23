@@ -24,9 +24,7 @@ SnippetSelectAttachmentWidget::SnippetSelectAttachmentWidget(QWidget *parent)
     mainLayout->addWidget(mEditor);
 }
 
-SnippetSelectAttachmentWidget::~SnippetSelectAttachmentWidget()
-{
-}
+SnippetSelectAttachmentWidget::~SnippetSelectAttachmentWidget() = default;
 
 void SnippetSelectAttachmentWidget::setAttachments(const QStringList &lst)
 {
@@ -47,9 +45,7 @@ SnippetSelectorWidget::SnippetSelectorWidget(QWidget *parent)
     setRemoveDialogLabel(i18n("Do you want to delete selected attachment?"));
 }
 
-SnippetSelectorWidget::~SnippetSelectorWidget()
-{
-}
+SnippetSelectorWidget::~SnippetSelectorWidget() = default;
 
 void SnippetSelectorWidget::addNewEntry()
 {

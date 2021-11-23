@@ -74,7 +74,7 @@ void FilterActionMissingTemplateDialog::writeConfig()
 QString FilterActionMissingTemplateDialog::selectedTemplate() const
 {
     if (mComboBoxTemplate->currentIndex() == 0) {
-        return QString();
+        return {};
     } else {
         return mComboBoxTemplate->currentText();
     }

@@ -14,9 +14,7 @@ FilterActionRemoveHeaderTest::FilterActionRemoveHeaderTest(QObject *parent)
 {
 }
 
-FilterActionRemoveHeaderTest::~FilterActionRemoveHeaderTest()
-{
-}
+FilterActionRemoveHeaderTest::~FilterActionRemoveHeaderTest() = default;
 
 void FilterActionRemoveHeaderTest::shouldHaveDefaultValue()
 {

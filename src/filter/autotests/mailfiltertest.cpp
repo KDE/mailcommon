@@ -13,9 +13,7 @@ MailFilterTest::MailFilterTest(QObject *parent)
 {
 }
 
-MailFilterTest::~MailFilterTest()
-{
-}
+MailFilterTest::~MailFilterTest() = default;
 
 void MailFilterTest::shouldHaveDefaultValue()
 {

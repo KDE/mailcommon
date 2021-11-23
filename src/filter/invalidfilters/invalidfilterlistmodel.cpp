@@ -13,9 +13,7 @@ InvalidFilterListModel::InvalidFilterListModel(QObject *parent)
 {
 }
 
-InvalidFilterListModel::~InvalidFilterListModel()
-{
-}
+InvalidFilterListModel::~InvalidFilterListModel() = default;
 
 bool InvalidFilterListModel::insertRows(int row, int count, const QModelIndex &parent)
 {
@@ -73,7 +71,7 @@ QVariant InvalidFilterListModel::data(const QModelIndex &index, int role) const
         }
     }
 
-    return QVariant();
+    return {};
 }
 
 int InvalidFilterListModel::rowCount(const QModelIndex &parent) const

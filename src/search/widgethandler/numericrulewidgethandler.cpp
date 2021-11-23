@@ -106,7 +106,7 @@ QString NumericRuleWidgetHandler::currentValue(const QStackedWidget *valueStack)
         return QString::number(numInput->value());
     }
 
-    return QString();
+    return {};
 }
 
 //---------------------------------------------------------------------------
@@ -114,7 +114,7 @@ QString NumericRuleWidgetHandler::currentValue(const QStackedWidget *valueStack)
 QString NumericRuleWidgetHandler::value(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
 
     return currentValue(valueStack);
@@ -125,7 +125,7 @@ QString NumericRuleWidgetHandler::value(const QByteArray &field, const QStackedW
 QString NumericRuleWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
 
     return currentValue(valueStack);

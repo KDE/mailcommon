@@ -84,7 +84,7 @@ QString FilterActionStatus::argsAsString() const
 {
     const int index = mParameterList.indexOf(mParameter);
     if (index < 1) {
-        return QString();
+        return {};
     }
 
     return realStatusString(FilterActionStatus::stati[index - 1].statusStr());

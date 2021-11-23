@@ -13,9 +13,7 @@ FilterActionReplyToTest::FilterActionReplyToTest(QObject *parent)
 {
 }
 
-FilterActionReplyToTest::~FilterActionReplyToTest()
-{
-}
+FilterActionReplyToTest::~FilterActionReplyToTest() = default;
 
 void FilterActionReplyToTest::shouldHaveDefaultValue()
 {

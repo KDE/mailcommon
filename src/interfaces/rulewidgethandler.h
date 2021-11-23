@@ -24,9 +24,7 @@ namespace MailCommon
 class RuleWidgetHandler
 {
 public:
-    virtual ~RuleWidgetHandler()
-    {
-    }
+    virtual ~RuleWidgetHandler() = default;
 
     Q_REQUIRED_RESULT virtual QWidget *createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isAkonadiSearch) const = 0;
     Q_REQUIRED_RESULT virtual QWidget *createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const = 0;

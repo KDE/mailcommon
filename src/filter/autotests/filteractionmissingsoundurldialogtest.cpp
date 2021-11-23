@@ -18,9 +18,7 @@ FilterActionMissingSoundUrlDialogTest::FilterActionMissingSoundUrlDialogTest(QOb
     QStandardPaths::setTestModeEnabled(true);
 }
 
-FilterActionMissingSoundUrlDialogTest::~FilterActionMissingSoundUrlDialogTest()
-{
-}
+FilterActionMissingSoundUrlDialogTest::~FilterActionMissingSoundUrlDialogTest() = default;
 
 void FilterActionMissingSoundUrlDialogTest::shouldHaveDefaultValue()
 {

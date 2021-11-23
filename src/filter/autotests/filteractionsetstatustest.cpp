@@ -15,9 +15,7 @@ FilterActionSetStatusTest::FilterActionSetStatusTest(QObject *parent)
 {
 }
 
-FilterActionSetStatusTest::~FilterActionSetStatusTest()
-{
-}
+FilterActionSetStatusTest::~FilterActionSetStatusTest() = default;
 
 void FilterActionSetStatusTest::shouldHaveDefaultValue()
 {

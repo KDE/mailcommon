@@ -296,7 +296,7 @@ bool SnippetsModel::setData(const QModelIndex &index, const QVariant &value, int
 QVariant SnippetsModel::data(const QModelIndex &index, int role) const
 {
     if (!index.isValid()) {
-        return QVariant();
+        return {};
     }
 
     auto item = static_cast<SnippetItem *>(index.internalPointer());
@@ -326,7 +326,7 @@ QVariant SnippetsModel::data(const QModelIndex &index, int role) const
         return item->attachment();
     }
 
-    return QVariant();
+    return {};
 }
 
 Qt::ItemFlags SnippetsModel::flags(const QModelIndex &index) const
@@ -346,7 +346,7 @@ Qt::ItemFlags SnippetsModel::flags(const QModelIndex &index) const
 QModelIndex SnippetsModel::index(int row, int column, const QModelIndex &parent) const
 {
     if (!hasIndex(row, column, parent)) {
-        return QModelIndex();
+        return {};
     }
 
     SnippetItem *parentItem = nullptr;
@@ -361,21 +361,21 @@ QModelIndex SnippetsModel::index(int row, int column, const QModelIndex &parent)
     if (childItem) {
         return createIndex(row, column, childItem);
     } else {
-        return QModelIndex();
+        return {};
     }
 }
 
 QModelIndex SnippetsModel::parent(const QModelIndex &index) const
 {
     if (!index.isValid()) {
-        return QModelIndex();
+        return {};
     }
 
     auto childItem = static_cast<SnippetItem *>(index.internalPointer());
     SnippetItem *parentItem = childItem->parent();
 
     if (parentItem == mRootItem) {
-        return QModelIndex();
+        return {};
     }
 
     return createIndex(parentItem->row(), 0, parentItem);

@@ -18,9 +18,7 @@ FilterActionAddHeaderTest::FilterActionAddHeaderTest(QObject *parent)
 {
 }
 
-FilterActionAddHeaderTest::~FilterActionAddHeaderTest()
-{
-}
+FilterActionAddHeaderTest::~FilterActionAddHeaderTest() = default;
 
 void FilterActionAddHeaderTest::shouldCreateWidget()
 {

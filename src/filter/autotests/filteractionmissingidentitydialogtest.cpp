@@ -20,9 +20,7 @@ FilterActionMissingIdentityDialogTest::FilterActionMissingIdentityDialogTest(QOb
     QStandardPaths::setTestModeEnabled(true);
 }
 
-FilterActionMissingIdentityDialogTest::~FilterActionMissingIdentityDialogTest()
-{
-}
+FilterActionMissingIdentityDialogTest::~FilterActionMissingIdentityDialogTest() = default;
 
 void FilterActionMissingIdentityDialogTest::initTestCase()
 {

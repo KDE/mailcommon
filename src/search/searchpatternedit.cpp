@@ -409,9 +409,7 @@ SearchRuleWidgetLister::SearchRuleWidgetLister(QWidget *parent, SearchPatternEdi
     mOptions = options;
 }
 
-SearchRuleWidgetLister::~SearchRuleWidgetLister()
-{
-}
+SearchRuleWidgetLister::~SearchRuleWidgetLister() = default;
 
 void SearchRuleWidgetLister::setPatternEditOptions(SearchPatternEdit::SearchPatternEditOptions options)
 {
@@ -574,9 +572,7 @@ SearchPatternEdit::SearchPatternEdit(QWidget *parent, SearchPatternEditOptions o
     initLayout(options, modeType);
 }
 
-SearchPatternEdit::~SearchPatternEdit()
-{
-}
+SearchPatternEdit::~SearchPatternEdit() = default;
 
 void SearchPatternEdit::updateSearchPattern()
 {

@@ -99,10 +99,10 @@ QString FilterActionSendFakeDisposition::argsAsString() const
 {
     const int index = mParameterList.indexOf(mParameter);
     if (index < 1) {
-        return QString();
+        return {};
     }
 
-    return QString(QChar(index < 2 ? 'I' : char(mdns[index - 2])));
+    return {QChar(index < 2 ? 'I' : char(mdns[index - 2]))};
 }
 
 QString FilterActionSendFakeDisposition::displayString() const

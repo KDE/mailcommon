@@ -382,7 +382,7 @@ QString FolderSettings::mailingListPostAddress() const
             }
         }
     }
-    return QString();
+    return {};
 }
 
 void FolderSettings::setMailingListEnabled(bool enabled)

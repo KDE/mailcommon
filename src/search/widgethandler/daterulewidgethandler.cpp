@@ -109,7 +109,7 @@ QString DateRuleWidgetHandler::currentValue(const QStackedWidget *valueStack) co
         return dateInput->date().toString(Qt::ISODate);
     }
 
-    return QString();
+    return {};
 }
 
 //---------------------------------------------------------------------------
@@ -117,7 +117,7 @@ QString DateRuleWidgetHandler::currentValue(const QStackedWidget *valueStack) co
 QString DateRuleWidgetHandler::value(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
 
     return currentValue(valueStack);
@@ -128,7 +128,7 @@ QString DateRuleWidgetHandler::value(const QByteArray &field, const QStackedWidg
 QString DateRuleWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
 
     return currentValue(valueStack);

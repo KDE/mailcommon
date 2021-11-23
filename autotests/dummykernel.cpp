@@ -90,7 +90,7 @@ qreal DummyKernel::closeToQuotaThreshold()
 QStringList DummyKernel::customTemplates()
 {
     Q_ASSERT(false);
-    return QStringList();
+    return {};
 }
 
 bool DummyKernel::excludeImportantMailFromExpiry()

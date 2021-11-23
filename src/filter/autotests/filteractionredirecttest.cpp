@@ -13,9 +13,7 @@ FilterActionRedirectTest::FilterActionRedirectTest(QObject *parent)
 {
 }
 
-FilterActionRedirectTest::~FilterActionRedirectTest()
-{
-}
+FilterActionRedirectTest::~FilterActionRedirectTest() = default;
 
 void FilterActionRedirectTest::shouldBeEmpty()
 {

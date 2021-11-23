@@ -46,9 +46,7 @@ private:
     {
     }
 
-    ~MDNAdviceHelper() override
-    {
-    }
+    ~MDNAdviceHelper() override = default;
 
     Q_REQUIRED_RESULT int requestAdviceOnMDN(const char *what);
     MessageComposer::MDNAdvice questionIgnoreSend(const QString &text, bool canDeny);

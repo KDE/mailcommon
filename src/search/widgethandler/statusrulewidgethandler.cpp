@@ -158,7 +158,7 @@ int StatusRuleWidgetHandler::currentStatusValue(const QStackedWidget *valueStack
 QString StatusRuleWidgetHandler::value(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
 
     const int status = currentStatusValue(valueStack);
@@ -169,7 +169,7 @@ QString StatusRuleWidgetHandler::value(const QByteArray &field, const QStackedWi
         return KLocalizedString(StatusValues[status].text).untranslatedText();
 #endif
     } else {
-        return QString();
+        return {};
     }
 }
 
@@ -178,7 +178,7 @@ QString StatusRuleWidgetHandler::value(const QByteArray &field, const QStackedWi
 QString StatusRuleWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
 
     const int status = currentStatusValue(valueStack);
@@ -189,7 +189,7 @@ QString StatusRuleWidgetHandler::prettyValue(const QByteArray &field, const QSta
         return KLocalizedString(StatusValues[status].text).toString();
 #endif
     } else {
-        return QString();
+        return {};
     }
 }
 

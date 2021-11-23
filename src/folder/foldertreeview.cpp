@@ -36,9 +36,7 @@ FolderTreeView::FolderTreeView(KXMLGUIClient *xmlGuiClient, QWidget *parent, boo
     init(showUnreadCount);
 }
 
-FolderTreeView::~FolderTreeView()
-{
-}
+FolderTreeView::~FolderTreeView() = default;
 
 void FolderTreeView::disableSaveConfig()
 {
@@ -540,7 +538,7 @@ Akonadi::Collection FolderTreeView::currentFolder() const
         const auto collection = current.model()->data(current, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         return collection;
     }
-    return Akonadi::Collection();
+    return {};
 }
 
 void FolderTreeView::mousePressEvent(QMouseEvent *e)
@@ -598,7 +596,7 @@ QModelIndex FolderTreeView::indexBelow(const QModelIndex &current) const
     }
 
     if (!parent.isValid()) { // our parent is the tree root and we have no siblings
-        return QModelIndex(); // we reached the bottom of the tree
+        return {}; // we reached the bottom of the tree
     }
 
     // We are the last child, the next index to check is our uncle, parent's first sibling
@@ -623,7 +621,7 @@ QModelIndex FolderTreeView::indexBelow(const QModelIndex &current) const
         grandParent = model()->parent(currentParent);
     }
 
-    return QModelIndex(); // nothing found -> end of tree
+    return {}; // nothing found -> end of tree
 }
 
 QModelIndex FolderTreeView::lastChild(const QModelIndex &current) const
@@ -663,7 +661,7 @@ QModelIndex FolderTreeView::nextUnreadCollection(const QModelIndex &current, Sea
         }
 
         if (!index.isValid()) { // reach end or top of the model
-            return QModelIndex();
+            return {};
         }
 
         // check if the index is a collection
@@ -679,5 +677,5 @@ QModelIndex FolderTreeView::nextUnreadCollection(const QModelIndex &current, Sea
         }
     }
 
-    return QModelIndex(); // no unread collection found
+    return {}; // no unread collection found
 }

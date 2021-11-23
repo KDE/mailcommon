@@ -21,9 +21,7 @@ using namespace MailCommon;
 class Q_DECL_HIDDEN MailCommon::EntityCollectionOrderProxyModel::EntityCollectionOrderProxyModelPrivate
 {
 public:
-    EntityCollectionOrderProxyModelPrivate()
-    {
-    }
+    EntityCollectionOrderProxyModelPrivate() = default;
 
     int collectionRank(const Akonadi::Collection &collection)
     {

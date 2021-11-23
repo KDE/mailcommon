@@ -66,9 +66,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     topLayout->addRow(i18n("&Sender identity:"), mIdentityComboBox);
 }
 
-CollectionGeneralWidget::~CollectionGeneralWidget()
-{
-}
+CollectionGeneralWidget::~CollectionGeneralWidget() = default;
 
 void CollectionGeneralWidget::slotIdentityCheckboxChanged()
 {

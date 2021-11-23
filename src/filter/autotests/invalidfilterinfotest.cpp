@@ -14,9 +14,7 @@ InvalidFilterInfoTest::InvalidFilterInfoTest(QObject *parent)
 {
 }
 
-InvalidFilterInfoTest::~InvalidFilterInfoTest()
-{
-}
+InvalidFilterInfoTest::~InvalidFilterInfoTest() = default;
 
 void InvalidFilterInfoTest::shouldAddEmptyValue()
 {

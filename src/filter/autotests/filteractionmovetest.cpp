@@ -14,9 +14,7 @@ FilterActionMoveTest::FilterActionMoveTest(QObject *parent)
 {
 }
 
-FilterActionMoveTest::~FilterActionMoveTest()
-{
-}
+FilterActionMoveTest::~FilterActionMoveTest() = default;
 
 void FilterActionMoveTest::shouldHaveSieveRequires()
 {

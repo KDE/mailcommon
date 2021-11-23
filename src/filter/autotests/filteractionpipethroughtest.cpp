@@ -10,9 +10,7 @@
 
 using namespace MailCommon;
 
-FilterActionPipeThroughTest::FilterActionPipeThroughTest()
-{
-}
+FilterActionPipeThroughTest::FilterActionPipeThroughTest() = default;
 
 void FilterActionPipeThroughTest::setOutput(FilterAction *filter, const QByteArray &output)
 {

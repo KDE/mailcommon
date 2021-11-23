@@ -12,9 +12,7 @@ FilterImporterPathCache::FilterImporterPathCache(QObject *parent)
 {
 }
 
-FilterImporterPathCache::~FilterImporterPathCache()
-{
-}
+FilterImporterPathCache::~FilterImporterPathCache() = default;
 
 FilterImporterPathCache *FilterImporterPathCache::self()
 {

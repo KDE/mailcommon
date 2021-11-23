@@ -31,9 +31,7 @@ EncryptionWidgetHandler::EncryptionWidgetHandler()
 {
 }
 
-EncryptionWidgetHandler::~EncryptionWidgetHandler()
-{
-}
+EncryptionWidgetHandler::~EncryptionWidgetHandler() = default;
 
 QWidget *EncryptionWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isBalooSearch) const
 {
@@ -90,7 +88,7 @@ QString EncryptionWidgetHandler::value(const QByteArray &field, const QStackedWi
     Q_UNUSED(functionStack)
     Q_UNUSED(valueStack)
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
     return QStringLiteral("is encrypted"); // dummy value
 }
@@ -100,7 +98,7 @@ QString EncryptionWidgetHandler::prettyValue(const QByteArray &field, const QSta
     Q_UNUSED(functionStack)
     Q_UNUSED(valueStack)
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
 
     return i18n("is encrypted");

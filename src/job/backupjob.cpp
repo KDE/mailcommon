@@ -287,7 +287,7 @@ QString BackupJob::collectionName(const Akonadi::Collection &collection) const
         }
     }
     Q_ASSERT(false);
-    return QString();
+    return {};
 }
 
 QString BackupJob::pathForCollection(const Akonadi::Collection &collection) const

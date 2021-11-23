@@ -14,9 +14,7 @@ ScheduledTask::ScheduledTask(const Akonadi::Collection &folder, bool immediate)
 {
 }
 
-ScheduledTask::~ScheduledTask()
-{
-}
+ScheduledTask::~ScheduledTask() = default;
 
 JobScheduler::JobScheduler(QObject *parent)
     : QObject(parent)
@@ -217,6 +215,4 @@ ScheduledJob::ScheduledJob(const Akonadi::Collection &folder, bool immediate)
     mSrcFolder = folder;
 }
 
-ScheduledJob::~ScheduledJob()
-{
-}
+ScheduledJob::~ScheduledJob() = default;

@@ -17,9 +17,7 @@ FavoriteCollectionOrderProxyModel::FavoriteCollectionOrderProxyModel(QObject *pa
 {
 }
 
-FavoriteCollectionOrderProxyModel::~FavoriteCollectionOrderProxyModel()
-{
-}
+FavoriteCollectionOrderProxyModel::~FavoriteCollectionOrderProxyModel() = default;
 
 Akonadi::Collection FavoriteCollectionOrderProxyModel::parentCollection(const QModelIndex &index) const
 {

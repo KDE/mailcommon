@@ -13,9 +13,7 @@ SearchPatternTest::SearchPatternTest(QObject *parent)
 {
 }
 
-SearchPatternTest::~SearchPatternTest()
-{
-}
+SearchPatternTest::~SearchPatternTest() = default;
 
 void SearchPatternTest::shouldRuleRequirePart_data()
 {

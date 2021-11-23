@@ -8,9 +8,7 @@ FilterActionSetTransportTest::FilterActionSetTransportTest(QObject *parent)
 {
 }
 
-FilterActionSetTransportTest::~FilterActionSetTransportTest()
-{
-}
+FilterActionSetTransportTest::~FilterActionSetTransportTest() = default;
 
 void FilterActionSetTransportTest::shouldBeEmpty()
 {

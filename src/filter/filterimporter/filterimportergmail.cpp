@@ -36,9 +36,7 @@ FilterImporterGmail::FilterImporterGmail(QFile *file)
     }
 }
 
-FilterImporterGmail::~FilterImporterGmail()
-{
-}
+FilterImporterGmail::~FilterImporterGmail() = default;
 
 QString FilterImporterGmail::defaultFiltersSettingsPath()
 {

@@ -124,7 +124,7 @@ QString MessageRuleWidgetHandler::currentValue(const QStackedWidget *valueStack,
         return lineEdit->text();
     }
 
-    return QString();
+    return {};
 }
 
 //---------------------------------------------------------------------------
@@ -132,7 +132,7 @@ QString MessageRuleWidgetHandler::currentValue(const QStackedWidget *valueStack,
 QString MessageRuleWidgetHandler::value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
 
     SearchRule::Function func = currentFunction(functionStack);
@@ -150,7 +150,7 @@ QString MessageRuleWidgetHandler::value(const QByteArray &field, const QStackedW
 QString MessageRuleWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
 
     SearchRule::Function func = currentFunction(functionStack);

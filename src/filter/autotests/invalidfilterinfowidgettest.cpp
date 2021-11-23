@@ -13,9 +13,7 @@ InvalidFilterInfoWidgetTest::InvalidFilterInfoWidgetTest(QObject *parent)
 {
 }
 
-InvalidFilterInfoWidgetTest::~InvalidFilterInfoWidgetTest()
-{
-}
+InvalidFilterInfoWidgetTest::~InvalidFilterInfoWidgetTest() = default;
 
 void InvalidFilterInfoWidgetTest::shouldHaveDefaultValue()
 {

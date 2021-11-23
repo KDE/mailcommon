@@ -14,9 +14,7 @@ SnippetsManagerTest::SnippetsManagerTest(QObject *parent)
 {
 }
 
-SnippetsManagerTest::~SnippetsManagerTest()
-{
-}
+SnippetsManagerTest::~SnippetsManagerTest() = default;
 
 void SnippetsManagerTest::shouldHaveDefaultValue()
 {

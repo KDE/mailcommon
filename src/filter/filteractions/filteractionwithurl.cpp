@@ -23,9 +23,7 @@ FilterActionWithUrlHelpButton::FilterActionWithUrlHelpButton(QWidget *parent)
     setIcon(QIcon::fromTheme(QStringLiteral("help-hint")));
 }
 
-FilterActionWithUrlHelpButton::~FilterActionWithUrlHelpButton()
-{
-}
+FilterActionWithUrlHelpButton::~FilterActionWithUrlHelpButton() = default;
 
 FilterActionWithUrl::FilterActionWithUrl(const QString &name, const QString &label, QObject *parent)
     : FilterAction(name, label, parent)
@@ -33,9 +31,7 @@ FilterActionWithUrl::FilterActionWithUrl(const QString &name, const QString &lab
 {
 }
 
-FilterActionWithUrl::~FilterActionWithUrl()
-{
-}
+FilterActionWithUrl::~FilterActionWithUrl() = default;
 
 bool FilterActionWithUrl::isEmpty() const
 {

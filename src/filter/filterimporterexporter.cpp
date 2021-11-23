@@ -172,7 +172,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filt
             fileName = QFileDialog::getOpenFileName(d->mParent, title, defaultPath);
             if (fileName.isEmpty()) {
                 canceled = true;
-                return QVector<MailFilter *>(); // cancel
+                return {}; // cancel
             }
         }
         file.setFileName(fileName);
@@ -180,7 +180,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filt
             KMessageBox::error(d->mParent,
                                i18n("The selected file is not readable. "
                                     "Your file access permissions might be insufficient."));
-            return QVector<MailFilter *>();
+            return {};
         }
     }
 
@@ -227,7 +227,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filt
             } else {
                 canceled = true;
                 delete selectThunderBirdFileDialog;
-                return QVector<MailFilter *>();
+                return {};
             }
             delete selectThunderBirdFileDialog;
         } else {
@@ -236,7 +236,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filt
                 KMessageBox::error(d->mParent,
                                    i18n("The selected file is not readable. "
                                         "Your file access permissions might be insufficient."));
-                return QVector<MailFilter *>();
+                return {};
             }
 
             auto thunderBirdFilter = new MailCommon::FilterImporterThunderbird(&file);
@@ -306,7 +306,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filt
     }
     delete dlg;
     canceled = true;
-    return QVector<MailFilter *>();
+    return {};
 }
 
 void FilterImporterExporter::exportFilters(const QVector<MailFilter *> &filters, const QUrl &fileName, bool saveAll)

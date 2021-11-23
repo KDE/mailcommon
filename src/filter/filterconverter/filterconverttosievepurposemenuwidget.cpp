@@ -11,9 +11,7 @@ FilterconverttosievePurposeMenuWidget::FilterconverttosievePurposeMenuWidget(QWi
 {
 }
 
-FilterconverttosievePurposeMenuWidget::~FilterconverttosievePurposeMenuWidget()
-{
-}
+FilterconverttosievePurposeMenuWidget::~FilterconverttosievePurposeMenuWidget() = default;
 
 QByteArray FilterconverttosievePurposeMenuWidget::text()
 {

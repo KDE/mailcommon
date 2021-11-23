@@ -88,7 +88,7 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Messa
             if (!tempFile->open()) {
                 delete tempFile;
                 qCDebug(MAILCOMMON_LOG) << "FilterActionWithCommand: Could not create temp file!";
-                return QString();
+                return {};
             }
 
             aTempFileList.append(tempFile);

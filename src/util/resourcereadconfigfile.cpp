@@ -13,9 +13,7 @@ using namespace MailCommon;
 class MailCommon::ResourceReadConfigFilePrivate
 {
 public:
-    ResourceReadConfigFilePrivate()
-    {
-    }
+    ResourceReadConfigFilePrivate() = default;
 
     ~ResourceReadConfigFilePrivate()
     {
@@ -38,5 +36,5 @@ KConfigGroup ResourceReadConfigFile::group(const QString &name) const
     if (d->mConfig) {
         return d->mConfig->group(name);
     }
-    return KConfigGroup();
+    return {};
 }

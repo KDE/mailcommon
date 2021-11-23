@@ -27,9 +27,7 @@ using namespace MailCommon;
 class Q_DECL_HIDDEN FavoriteCollectionWidget::FavoriteCollectionWidgetPrivate
 {
 public:
-    FavoriteCollectionWidgetPrivate()
-    {
-    }
+    FavoriteCollectionWidgetPrivate() = default;
 
     QColor textColor;
     QAction *listMode = nullptr;

@@ -16,9 +16,7 @@ FilterActionWithTest::FilterActionWithTest(const QString &name, const QString &l
 {
 }
 
-FilterActionWithTest::~FilterActionWithTest()
-{
-}
+FilterActionWithTest::~FilterActionWithTest() = default;
 
 bool FilterActionWithTest::isEmpty() const
 {

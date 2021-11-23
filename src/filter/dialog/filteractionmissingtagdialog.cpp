@@ -99,7 +99,7 @@ QString FilterActionMissingTagDialog::selectedTag() const
     if (mTagList->currentItem()) {
         return mTagList->currentItem()->data(UrlData).toString();
     }
-    return QString();
+    return {};
 }
 
 void FilterActionMissingTagDialog::slotAddTag()

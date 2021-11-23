@@ -32,9 +32,7 @@ KMFilterAccountList::KMFilterAccountList(QWidget *parent)
     header()->setSectionsMovable(false);
 }
 
-KMFilterAccountList::~KMFilterAccountList()
-{
-}
+KMFilterAccountList::~KMFilterAccountList() = default;
 
 void KMFilterAccountList::updateAccountList(MailCommon::MailFilter *filter)
 {

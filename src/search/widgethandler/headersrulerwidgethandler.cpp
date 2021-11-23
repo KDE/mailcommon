@@ -130,7 +130,7 @@ QString HeadersRuleWidgetHandler::currentValue(const QStackedWidget *valueStack,
     }
 
     // or anything else, like addressbook
-    return QString();
+    return {};
 }
 
 //---------------------------------------------------------------------------
@@ -138,7 +138,7 @@ QString HeadersRuleWidgetHandler::currentValue(const QStackedWidget *valueStack,
 QString HeadersRuleWidgetHandler::value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
     SearchRule::Function func = currentFunction(functionStack);
     if (func == SearchRule::FuncIsInAddressbook) {
@@ -155,7 +155,7 @@ QString HeadersRuleWidgetHandler::value(const QByteArray &field, const QStackedW
 QString HeadersRuleWidgetHandler::prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const
 {
     if (!handlesField(field)) {
-        return QString();
+        return {};
     }
 
     SearchRule::Function func = currentFunction(functionStack);

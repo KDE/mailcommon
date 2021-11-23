@@ -20,9 +20,7 @@ FilterActionMissingTransportDialogTest::FilterActionMissingTransportDialogTest(Q
     QStandardPaths::setTestModeEnabled(true);
 }
 
-FilterActionMissingTransportDialogTest::~FilterActionMissingTransportDialogTest()
-{
-}
+FilterActionMissingTransportDialogTest::~FilterActionMissingTransportDialogTest() = default;
 
 void FilterActionMissingTransportDialogTest::shouldHaveDefaultValue()
 {

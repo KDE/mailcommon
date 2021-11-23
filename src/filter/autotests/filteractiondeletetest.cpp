@@ -13,9 +13,7 @@ FilterActionDeleteTest::FilterActionDeleteTest(QObject *parent)
 {
 }
 
-FilterActionDeleteTest::~FilterActionDeleteTest()
-{
-}
+FilterActionDeleteTest::~FilterActionDeleteTest() = default;
 
 void FilterActionDeleteTest::shouldHaveDefaultValue()
 {

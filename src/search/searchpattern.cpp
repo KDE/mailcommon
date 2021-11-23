@@ -46,9 +46,7 @@ SearchPattern::SearchPattern(const KConfigGroup &config)
     readConfig(config);
 }
 
-SearchPattern::~SearchPattern()
-{
-}
+SearchPattern::~SearchPattern() = default;
 
 bool SearchPattern::matches(const Akonadi::Item &item, bool ignoreBody) const
 {

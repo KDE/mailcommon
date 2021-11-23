@@ -38,9 +38,7 @@ FilterImporterEvolution::FilterImporterEvolution(QFile *file)
     }
 }
 
-FilterImporterEvolution::~FilterImporterEvolution()
-{
-}
+FilterImporterEvolution::~FilterImporterEvolution() = default;
 
 QString FilterImporterEvolution::defaultFiltersSettingsPath()
 {

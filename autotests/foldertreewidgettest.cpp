@@ -295,7 +295,7 @@ private:
         } else {
             qWarning() << job->errorString();
         }
-        return Collection();
+        return {};
     }
 
     // Check that every child of @p parent has a valid CollectionRole.
