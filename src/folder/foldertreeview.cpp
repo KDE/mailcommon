@@ -576,7 +576,7 @@ void FolderTreeView::keyboardSearch(const QString &)
 void FolderTreeView::setEnableDragDrop(bool enabled)
 {
 #ifndef QT_NO_DRAGANDDROP
-    setDragDropMode(enabled ? QAbstractItemView::InternalMove : QAbstractItemView::NoDragDrop);
+    setDragDropMode(enabled ? QAbstractItemView::DragDrop : QAbstractItemView::NoDragDrop);
 #endif
 }
 
