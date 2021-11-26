@@ -52,7 +52,7 @@ QWidget *DateRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget 
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         funcCombo->addItem(i18n(DateFunctions[i].displayName));
 #else
-        funcCombo->addItem(KLocalizedString(DateFunctions[i].displayName).toString());
+        funcCombo->addItem(DateFunctions[i].displayName.toString());
 #endif
     }
     funcCombo->adjustSize();

@@ -200,7 +200,7 @@ int MDNAdviceHelper::requestAdviceOnMDN(const char *what)
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
             const MessageComposer::MDNAdvice answer = questionIgnoreSend(i18n(mdnMessageBoxes[i].text), mdnMessageBoxes[i].canDeny);
 #else
-            const MessageComposer::MDNAdvice answer = questionIgnoreSend(KLocalizedString(mdnMessageBoxes[i].text).toString(), mdnMessageBoxes[i].canDeny);
+            const MessageComposer::MDNAdvice answer = questionIgnoreSend(mdnMessageBoxes[i].text.toString(), mdnMessageBoxes[i].canDeny);
 #endif
             switch (answer) {
             case MessageComposer::MDNSend:

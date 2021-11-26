@@ -48,7 +48,7 @@ QWidget *NumericDoubleRuleWidgetHandler::createFunctionWidget(int number, QStack
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         funcCombo->addItem(i18n(NumericDoubleFunctions[i].displayName));
 #else
-        funcCombo->addItem(KLocalizedString(NumericDoubleFunctions[i].displayName).toString());
+        funcCombo->addItem(NumericDoubleFunctions[i].displayName.toString());
 #endif
     }
     funcCombo->adjustSize();

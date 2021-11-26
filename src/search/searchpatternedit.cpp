@@ -49,7 +49,7 @@ static const struct {
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         return i18n(displayName);
 #else
-        return KLocalizedString(displayName).toString();
+        return displayName.toString();
 #endif
     }
 } SpecialRuleFields[] = {{"<message>", I18N_NOOP("Complete Message")},

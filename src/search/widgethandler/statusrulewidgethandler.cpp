@@ -77,7 +77,7 @@ QWidget *StatusRuleWidgetHandler::createFunctionWidget(int number, QStackedWidge
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         funcCombo->addItem(i18n(StatusFunctions[i].displayName));
 #else
-        funcCombo->addItem(KLocalizedString(StatusFunctions[i].displayName).toString());
+        funcCombo->addItem(StatusFunctions[i].displayName.toString());
 #endif
     }
     funcCombo->adjustSize();
@@ -101,13 +101,13 @@ QWidget *StatusRuleWidgetHandler::createValueWidget(int number, QStackedWidget *
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
             statusCombo->addItem(QIcon::fromTheme(QLatin1String(StatusValues[i].icon)), i18nc("message status", StatusValues[i].text));
 #else
-            statusCombo->addItem(QIcon::fromTheme(QLatin1String(StatusValues[i].icon)), KLocalizedString(StatusValues[i].text).toString());
+            statusCombo->addItem(QIcon::fromTheme(QLatin1String(StatusValues[i].icon)), StatusValues[i].text.toString());
 #endif
         } else {
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
             statusCombo->addItem(i18nc("message status", StatusValues[i].text));
 #else
-            statusCombo->addItem(KLocalizedString(StatusValues[i].text).toString());
+            statusCombo->addItem(StatusValues[i].text.toString());
 #endif
         }
     }
@@ -166,7 +166,7 @@ QString StatusRuleWidgetHandler::value(const QByteArray &field, const QStackedWi
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         return QString::fromLatin1(StatusValues[status].text);
 #else
-        return KLocalizedString(StatusValues[status].text).untranslatedText();
+        return StatusValues[status].text.untranslatedText();
 #endif
     } else {
         return {};
@@ -186,7 +186,7 @@ QString StatusRuleWidgetHandler::prettyValue(const QByteArray &field, const QSta
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         return QString::fromLatin1(StatusValues[status].text);
 #else
-        return KLocalizedString(StatusValues[status].text).toString();
+        return StatusValues[status].text.toString();
 #endif
     } else {
         return {};
@@ -263,7 +263,7 @@ bool StatusRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWid
             break;
         }
 #else
-        if (value == KLocalizedString(StatusValues[valueIndex].text).untranslatedText()) {
+        if (value == StatusValues[valueIndex].text.untranslatedText()) {
             break;
         }
 #endif

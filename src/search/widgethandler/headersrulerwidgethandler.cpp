@@ -62,7 +62,7 @@ QWidget *HeadersRuleWidgetHandler::createFunctionWidget(int number, QStackedWidg
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
             funcCombo->addItem(i18n(HeaderFunctions[i].displayName));
 #else
-            funcCombo->addItem(KLocalizedString(HeaderFunctions[i].displayName).toString());
+            funcCombo->addItem(HeaderFunctions[i].displayName.toString());
 #endif
         }
     }

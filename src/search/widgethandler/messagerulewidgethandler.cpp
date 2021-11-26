@@ -55,7 +55,7 @@ QWidget *MessageRuleWidgetHandler::createFunctionWidget(int number, QStackedWidg
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
             funcCombo->addItem(i18n(MessageFunctions[i].displayName));
 #else
-            funcCombo->addItem(KLocalizedString(MessageFunctions[i].displayName).toString());
+            funcCombo->addItem(MessageFunctions[i].displayName.toString());
 #endif
         }
     }

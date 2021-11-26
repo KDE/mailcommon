@@ -48,7 +48,7 @@ QWidget *EncryptionWidgetHandler::createFunctionWidget(int number, QStackedWidge
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         combo->addItem(i18n(EncryptionFunctions[i].displayName));
 #else
-        combo->addItem(KLocalizedString(EncryptionFunctions[i].displayName).toString());
+        combo->addItem(EncryptionFunctions[i].displayName.toString());
 #endif
     }
     combo->adjustSize();

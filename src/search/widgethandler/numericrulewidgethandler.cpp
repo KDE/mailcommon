@@ -50,7 +50,7 @@ QWidget *NumericRuleWidgetHandler::createFunctionWidget(int number, QStackedWidg
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         funcCombo->addItem(i18n(NumericFunctions[i].displayName));
 #else
-        funcCombo->addItem(KLocalizedString(NumericFunctions[i].displayName).toString());
+        funcCombo->addItem(NumericFunctions[i].displayName.toString());
 #endif
     }
     funcCombo->adjustSize();

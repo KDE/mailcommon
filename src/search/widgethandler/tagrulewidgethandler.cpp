@@ -124,14 +124,14 @@ QWidget *TagRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
                 funcCombo->addItem(i18n(TagFunctions[i].displayName));
 #else
-                funcCombo->addItem(KLocalizedString(TagFunctions[i].displayName).toString());
+                funcCombo->addItem(TagFunctions[i].displayName.toString());
 #endif
             }
         } else {
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
             funcCombo->addItem(i18n(TagFunctions[i].displayName));
 #else
-            funcCombo->addItem(KLocalizedString(TagFunctions[i].displayName).toString());
+            funcCombo->addItem(TagFunctions[i].displayName.toString());
 #endif
         }
     }

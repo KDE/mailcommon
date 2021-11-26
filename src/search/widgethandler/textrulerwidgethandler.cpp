@@ -59,7 +59,7 @@ QWidget *TextRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget 
 #if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         funcCombo->addItem(i18n(TextFunctions[i].displayName));
 #else
-        funcCombo->addItem(KLocalizedString(TextFunctions[i].displayName).toString());
+        funcCombo->addItem(TextFunctions[i].displayName.toString());
 #endif
     }
     funcCombo->adjustSize();
