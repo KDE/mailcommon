@@ -1,4 +1,5 @@
-
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: none
 add_executable(filterimporterexportergui filterimporterexportergui.cpp)
 ecm_mark_as_test(filterimporterexportergui)
 target_link_libraries(filterimporterexportergui

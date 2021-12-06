@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: none
 ecm_add_test(mdnstateattributetest.cpp
     TEST_NAME mdnattributetest
     NAME_PREFIX "mailcommon-mdn-"

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: none
 set(mailcommon_filter_test_LIBS Qt::Test Qt::Gui KF5::AkonadiCore KF5::AkonadiMime
                                 KF5::MailCommon KF5::PimCommon Phonon::phonon4qt5
                                 KF5::KIOWidgets KF5::IconThemes KF5::TemplateParser

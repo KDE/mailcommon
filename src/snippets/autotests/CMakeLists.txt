@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: none
 ecm_add_test(snippetsmanagertest.cpp
     NAME_PREFIX "mailcommon-snippets-"
     LINK_LIBRARIES Qt::Test Qt::Gui KF5::MailCommon KF5::XmlGui
