@@ -161,6 +161,7 @@ void CollectionViewWidget::save(Akonadi::Collection &col)
         mFolderCollection->setFormatMessage(formatMessage);
         mFolderCollection->writeConfig();
     }
+    mFolderCollection.reset();
 }
 
 void CollectionViewWidget::slotSelectFolderAggregation()

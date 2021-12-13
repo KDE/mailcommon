@@ -95,6 +95,7 @@ void CollectionGeneralWidget::save(Akonadi::Collection &collection)
         mFolderCollection->setHideInSelectionDialog(mHideInSelectionDialogCheckBox->isChecked());
         mFolderCollection->writeConfig();
     }
+    mFolderCollection.reset();
 }
 
 void CollectionGeneralWidget::load(const Akonadi::Collection &col)
