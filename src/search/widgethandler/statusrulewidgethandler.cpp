@@ -10,50 +10,36 @@
 #include <QComboBox>
 #include <QIcon>
 #include <QStackedWidget>
-#include <ki18n_version.h>
-#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
 #include <KLazyLocalizedString>
-#undef I18N_NOOP
-#define I18N_NOOP kli18n
-#endif
 using namespace MailCommon;
 
 static const struct {
     SearchRule::Function id;
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-    const char *displayName;
-#else
     const KLazyLocalizedString displayName;
-#endif
-} StatusFunctions[] = {{SearchRule::FuncContains, I18N_NOOP("is")}, {SearchRule::FuncContainsNot, I18N_NOOP("is not")}};
+} StatusFunctions[] = {{SearchRule::FuncContains, kli18n("is")}, {SearchRule::FuncContainsNot, kli18n("is not")}};
 static const int StatusFunctionCount = sizeof(StatusFunctions) / sizeof(*StatusFunctions);
 
 struct MessageStatusInfo {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-    const char *context;
-    const char *text;
-#else
     const KLazyLocalizedString text;
-#endif
     const char *icon;
 };
 
 // If you change the ordering here; also do it in the enum below
 static const MessageStatusInfo StatusValues[] = {
-    {I18NC_NOOP("message status", "Important"), "emblem-important"},
-    {I18NC_NOOP("message status", "Action Item"), "mail-task"},
-    {I18NC_NOOP("message status", "Unread"), "mail-unread"},
-    {I18NC_NOOP("message status", "Read"), "mail-read"},
-    {I18NC_NOOP("message status", "Deleted"), "mail-deleted"},
-    {I18NC_NOOP("message status", "Replied"), "mail-replied"},
-    {I18NC_NOOP("message status", "Forwarded"), "mail-forwarded"},
-    {I18NC_NOOP("message status", "Queued"), "mail-queued"},
-    {I18NC_NOOP("message status", "Sent"), "mail-sent"},
-    {I18NC_NOOP("message status", "Watched"), "mail-thread-watch"},
-    {I18NC_NOOP("message status", "Ignored"), "mail-thread-ignored"},
-    {I18NC_NOOP("message status", "Spam"), "mail-mark-junk"},
-    {I18NC_NOOP("message status", "Ham"), "mail-mark-notjunk"},
-    {I18NC_NOOP("message status", "Has Attachment"), "mail-attachment"} // must be last
+    {kli18nc("message status", "Important"), "emblem-important"},
+    {kli18nc("message status", "Action Item"), "mail-task"},
+    {kli18nc("message status", "Unread"), "mail-unread"},
+    {kli18nc("message status", "Read"), "mail-read"},
+    {kli18nc("message status", "Deleted"), "mail-deleted"},
+    {kli18nc("message status", "Replied"), "mail-replied"},
+    {kli18nc("message status", "Forwarded"), "mail-forwarded"},
+    {kli18nc("message status", "Queued"), "mail-queued"},
+    {kli18nc("message status", "Sent"), "mail-sent"},
+    {kli18nc("message status", "Watched"), "mail-thread-watch"},
+    {kli18nc("message status", "Ignored"), "mail-thread-ignored"},
+    {kli18nc("message status", "Spam"), "mail-mark-junk"},
+    {kli18nc("message status", "Ham"), "mail-mark-notjunk"},
+    {kli18nc("message status", "Has Attachment"), "mail-attachment"} // must be last
 };
 
 static const int StatusValueCount = sizeof(StatusValues) / sizeof(MessageStatusInfo);
@@ -74,11 +60,7 @@ QWidget *StatusRuleWidgetHandler::createFunctionWidget(int number, QStackedWidge
     funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("statusRuleFuncCombo"));
     for (int i = 0; i < StatusFunctionCount; ++i) {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-        funcCombo->addItem(i18n(StatusFunctions[i].displayName));
-#else
         funcCombo->addItem(StatusFunctions[i].displayName.toString());
-#endif
     }
     funcCombo->adjustSize();
     QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));
@@ -98,17 +80,9 @@ QWidget *StatusRuleWidgetHandler::createValueWidget(int number, QStackedWidget *
     statusCombo->setObjectName(QStringLiteral("statusRuleValueCombo"));
     for (int i = 0; i < StatusValueCountWithoutHidden; ++i) {
         if (StatusValues[i].icon != nullptr) {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-            statusCombo->addItem(QIcon::fromTheme(QLatin1String(StatusValues[i].icon)), i18nc("message status", StatusValues[i].text));
-#else
             statusCombo->addItem(QIcon::fromTheme(QLatin1String(StatusValues[i].icon)), StatusValues[i].text.toString());
-#endif
         } else {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-            statusCombo->addItem(i18nc("message status", StatusValues[i].text));
-#else
             statusCombo->addItem(StatusValues[i].text.toString());
-#endif
         }
     }
     statusCombo->adjustSize();

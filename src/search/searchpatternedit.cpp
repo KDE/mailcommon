@@ -21,12 +21,7 @@ using MailCommon::RuleWidgetHandlerManager;
 #include <QPushButton>
 #include <QRadioButton>
 #include <QStackedWidget>
-#include <ki18n_version.h>
-#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
 #include <KLazyLocalizedString>
-#undef I18N_NOOP
-#define I18N_NOOP kli18n
-#endif
 // Definition of special rule field strings
 // Note: Also see SearchRule::matches() and ruleFieldToEnglish() if
 //       you change the following i18n-ized strings!
@@ -38,36 +33,28 @@ using namespace MailCommon;
 
 static const struct {
     const char *internalName;
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-    const char *displayName;
-#else
     const KLazyLocalizedString displayName;
-#endif
 
     Q_REQUIRED_RESULT QString getLocalizedDisplayName() const
     {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-        return i18n(displayName);
-#else
         return displayName.toString();
-#endif
     }
-} SpecialRuleFields[] = {{"<message>", I18N_NOOP("Complete Message")},
-                         {"<body>", I18N_NOOP("Body of Message")},
-                         {"<any header>", I18N_NOOP("Anywhere in Headers")},
-                         {"<recipients>", I18N_NOOP("All Recipients")},
-                         {"<size>", I18N_NOOP("Size in Bytes")},
-                         {"<age in days>", I18N_NOOP("Age in Days")},
-                         {"<status>", I18N_NOOP("Message Status")},
-                         {"<tag>", I18N_NOOP("Message Tag")},
-                         {"Subject", I18N_NOOP("Subject")},
-                         {"From", I18N_NOOP("From")},
-                         {"To", I18N_NOOP("To")},
-                         {"CC", I18N_NOOP("CC")},
-                         {"Reply-To", I18N_NOOP("Reply To")},
-                         {"Organization", I18N_NOOP("Organization")},
-                         {"<date>", I18N_NOOP("Date")},
-                         {"<encryption>", I18N_NOOP("Encryption")}};
+} SpecialRuleFields[] = {{"<message>", kli18n("Complete Message")},
+                         {"<body>", kli18n("Body of Message")},
+                         {"<any header>", kli18n("Anywhere in Headers")},
+                         {"<recipients>", kli18n("All Recipients")},
+                         {"<size>", kli18n("Size in Bytes")},
+                         {"<age in days>", kli18n("Age in Days")},
+                         {"<status>", kli18n("Message Status")},
+                         {"<tag>", kli18n("Message Tag")},
+                         {"Subject", kli18n("Subject")},
+                         {"From", kli18n("From")},
+                         {"To", kli18n("To")},
+                         {"CC", kli18n("CC")},
+                         {"Reply-To", kli18n("Reply To")},
+                         {"Organization", kli18n("Organization")},
+                         {"<date>", kli18n("Date")},
+                         {"<encryption>", kli18n("Encryption")}};
 static const int SpecialRuleFieldsCount = sizeof(SpecialRuleFields) / sizeof(*SpecialRuleFields);
 
 //=============================================================================

@@ -12,30 +12,21 @@
 #include <QComboBox>
 #include <QLabel>
 #include <QStackedWidget>
-#include <ki18n_version.h>
-#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
 #include <KLazyLocalizedString>
-#undef I18N_NOOP
-#define I18N_NOOP kli18n
-#endif
 using namespace MailCommon;
 
 // also see SearchRule::matches() and SearchRule::Function
 // if you change the following strings!
 static const struct {
     SearchRule::Function id;
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-    const char *displayName;
-#else
     const KLazyLocalizedString displayName;
-#endif
 } MessageFunctions[] = {
-    {SearchRule::FuncContains, I18N_NOOP("contains")},
-    {SearchRule::FuncContainsNot, I18N_NOOP("does not contain")},
-    {SearchRule::FuncRegExp, I18N_NOOP("matches regular expr.")},
-    {SearchRule::FuncNotRegExp, I18N_NOOP("does not match reg. expr.")},
-    {SearchRule::FuncHasAttachment, I18N_NOOP("has an attachment")},
-    {SearchRule::FuncHasNoAttachment, I18N_NOOP("has no attachment")},
+    {SearchRule::FuncContains, kli18n("contains")},
+    {SearchRule::FuncContainsNot, kli18n("does not contain")},
+    {SearchRule::FuncRegExp, kli18n("matches regular expr.")},
+    {SearchRule::FuncNotRegExp, kli18n("does not match reg. expr.")},
+    {SearchRule::FuncHasAttachment, kli18n("has an attachment")},
+    {SearchRule::FuncHasNoAttachment, kli18n("has no attachment")},
 };
 static const int MessageFunctionCount = sizeof(MessageFunctions) / sizeof(*MessageFunctions);
 
@@ -52,11 +43,7 @@ QWidget *MessageRuleWidgetHandler::createFunctionWidget(int number, QStackedWidg
     funcCombo->setObjectName(QStringLiteral("messageRuleFuncCombo"));
     for (int i = 0; i < MessageFunctionCount; ++i) {
         if (!(isBalooSearch && (MessageFunctions[i].id == SearchRule::FuncHasAttachment || MessageFunctions[i].id == SearchRule::FuncHasNoAttachment))) {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-            funcCombo->addItem(i18n(MessageFunctions[i].displayName));
-#else
             funcCombo->addItem(MessageFunctions[i].displayName.toString());
-#endif
         }
     }
     funcCombo->adjustSize();

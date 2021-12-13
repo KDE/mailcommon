@@ -14,36 +14,27 @@
 #include <QComboBox>
 #include <QLabel>
 #include <QStackedWidget>
-#include <ki18n_version.h>
-#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
 #include <KLazyLocalizedString>
-#undef I18N_NOOP
-#define I18N_NOOP kli18n
-#endif
 using namespace MailCommon;
 
 // also see SearchRule::matches() and SearchRule::Function
 // if you change the following strings!
 static const struct {
     SearchRule::Function id;
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-    const char *displayName;
-#else
     const KLazyLocalizedString displayName;
-#endif
-} HeaderFunctions[] = {{SearchRule::FuncContains, I18N_NOOP("contains")},
-                       {SearchRule::FuncContainsNot, I18N_NOOP("does not contain")},
-                       {SearchRule::FuncEquals, I18N_NOOP("equals")},
-                       {SearchRule::FuncNotEqual, I18N_NOOP("does not equal")},
-                       {SearchRule::FuncStartWith, I18N_NOOP("starts with")},
-                       {SearchRule::FuncNotStartWith, I18N_NOOP("does not start with")},
-                       {SearchRule::FuncEndWith, I18N_NOOP("ends with")},
-                       {SearchRule::FuncNotEndWith, I18N_NOOP("does not end with")},
+} HeaderFunctions[] = {{SearchRule::FuncContains, kli18n("contains")},
+                       {SearchRule::FuncContainsNot, kli18n("does not contain")},
+                       {SearchRule::FuncEquals, kli18n("equals")},
+                       {SearchRule::FuncNotEqual, kli18n("does not equal")},
+                       {SearchRule::FuncStartWith, kli18n("starts with")},
+                       {SearchRule::FuncNotStartWith, kli18n("does not start with")},
+                       {SearchRule::FuncEndWith, kli18n("ends with")},
+                       {SearchRule::FuncNotEndWith, kli18n("does not end with")},
 
-                       {SearchRule::FuncRegExp, I18N_NOOP("matches regular expr.")},
-                       {SearchRule::FuncNotRegExp, I18N_NOOP("does not match reg. expr.")},
-                       {SearchRule::FuncIsInAddressbook, I18N_NOOP("is in address book")},
-                       {SearchRule::FuncIsNotInAddressbook, I18N_NOOP("is not in address book")}};
+                       {SearchRule::FuncRegExp, kli18n("matches regular expr.")},
+                       {SearchRule::FuncNotRegExp, kli18n("does not match reg. expr.")},
+                       {SearchRule::FuncIsInAddressbook, kli18n("is in address book")},
+                       {SearchRule::FuncIsNotInAddressbook, kli18n("is not in address book")}};
 static const int HeadersFunctionCount = sizeof(HeaderFunctions) / sizeof(*HeaderFunctions);
 
 //---------------------------------------------------------------------------
@@ -59,11 +50,7 @@ QWidget *HeadersRuleWidgetHandler::createFunctionWidget(int number, QStackedWidg
     funcCombo->setObjectName(QStringLiteral("headerRuleFuncCombo"));
     for (int i = 0; i < HeadersFunctionCount; ++i) {
         if (!(isBalooSearch && (HeaderFunctions[i].id == SearchRule::FuncIsInAddressbook || HeaderFunctions[i].id == SearchRule::FuncIsNotInAddressbook))) {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-            funcCombo->addItem(i18n(HeaderFunctions[i].displayName));
-#else
             funcCombo->addItem(HeaderFunctions[i].displayName.toString());
-#endif
         }
     }
     funcCombo->adjustSize();

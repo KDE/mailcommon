@@ -21,12 +21,7 @@
 #include <QComboBox>
 #include <QLineEdit>
 #include <QStackedWidget>
-#include <ki18n_version.h>
-#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
 #include <KLazyLocalizedString>
-#undef I18N_NOOP
-#define I18N_NOOP kli18n
-#endif
 using namespace MailCommon;
 
 class FillTagComboJob : public KJob
@@ -94,17 +89,13 @@ void FillTagComboJob::onTagsFetched(KJob *job)
 
 static const struct {
     SearchRule::Function id;
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-    const char *displayName;
-#else
     const KLazyLocalizedString displayName;
-#endif
-} TagFunctions[] = {{SearchRule::FuncContains, I18N_NOOP("contains")},
-                    {SearchRule::FuncContainsNot, I18N_NOOP("does not contain")},
-                    {SearchRule::FuncEquals, I18N_NOOP("equals")},
-                    {SearchRule::FuncNotEqual, I18N_NOOP("does not equal")},
-                    {SearchRule::FuncRegExp, I18N_NOOP("matches regular expr.")},
-                    {SearchRule::FuncNotRegExp, I18N_NOOP("does not match reg. expr.")}};
+} TagFunctions[] = {{SearchRule::FuncContains, kli18n("contains")},
+                    {SearchRule::FuncContainsNot, kli18n("does not contain")},
+                    {SearchRule::FuncEquals, kli18n("equals")},
+                    {SearchRule::FuncNotEqual, kli18n("does not equal")},
+                    {SearchRule::FuncRegExp, kli18n("matches regular expr.")},
+                    {SearchRule::FuncNotRegExp, kli18n("does not match reg. expr.")}};
 static const int TagFunctionCount = sizeof(TagFunctions) / sizeof(*TagFunctions);
 
 //---------------------------------------------------------------------------
@@ -121,18 +112,10 @@ QWidget *TagRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *
     for (int i = 0; i < TagFunctionCount; ++i) {
         if (isBalooSearch) {
             if (TagFunctions[i].id == SearchRule::FuncContains || TagFunctions[i].id == SearchRule::FuncContainsNot) {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-                funcCombo->addItem(i18n(TagFunctions[i].displayName));
-#else
                 funcCombo->addItem(TagFunctions[i].displayName.toString());
-#endif
             }
         } else {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-            funcCombo->addItem(i18n(TagFunctions[i].displayName));
-#else
             funcCombo->addItem(TagFunctions[i].displayName.toString());
-#endif
         }
     }
     funcCombo->adjustSize();

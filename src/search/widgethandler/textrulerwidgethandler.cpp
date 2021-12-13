@@ -15,33 +15,24 @@
 using namespace MailCommon;
 
 #include <QLabel>
-#include <ki18n_version.h>
-#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
 #include <KLazyLocalizedString>
-#undef I18N_NOOP
-#define I18N_NOOP kli18n
-#endif
 
 // also see SearchRule::matches() and SearchRule::Function
 // if you change the following strings!
 static const struct {
     SearchRule::Function id;
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-    const char *displayName;
-#else
     const KLazyLocalizedString displayName;
-#endif
-} TextFunctions[] = {{SearchRule::FuncContains, I18N_NOOP("contains")},
-                     {SearchRule::FuncContainsNot, I18N_NOOP("does not contain")},
-                     {SearchRule::FuncEquals, I18N_NOOP("equals")},
-                     {SearchRule::FuncNotEqual, I18N_NOOP("does not equal")},
-                     {SearchRule::FuncStartWith, I18N_NOOP("starts with")},
-                     {SearchRule::FuncNotStartWith, I18N_NOOP("does not start with")},
-                     {SearchRule::FuncEndWith, I18N_NOOP("ends with")},
-                     {SearchRule::FuncNotEndWith, I18N_NOOP("does not end with")},
+} TextFunctions[] = {{SearchRule::FuncContains, kli18n("contains")},
+                     {SearchRule::FuncContainsNot, kli18n("does not contain")},
+                     {SearchRule::FuncEquals, kli18n("equals")},
+                     {SearchRule::FuncNotEqual, kli18n("does not equal")},
+                     {SearchRule::FuncStartWith, kli18n("starts with")},
+                     {SearchRule::FuncNotStartWith, kli18n("does not start with")},
+                     {SearchRule::FuncEndWith, kli18n("ends with")},
+                     {SearchRule::FuncNotEndWith, kli18n("does not end with")},
 
-                     {SearchRule::FuncRegExp, I18N_NOOP("matches regular expr.")},
-                     {SearchRule::FuncNotRegExp, I18N_NOOP("does not match reg. expr.")}};
+                     {SearchRule::FuncRegExp, kli18n("matches regular expr.")},
+                     {SearchRule::FuncNotRegExp, kli18n("does not match reg. expr.")}};
 static const int TextFunctionCount = sizeof(TextFunctions) / sizeof(*TextFunctions);
 
 //---------------------------------------------------------------------------
@@ -56,11 +47,7 @@ QWidget *TextRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget 
     funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("textRuleFuncCombo"));
     for (int i = 0; i < TextFunctionCount; ++i) {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-        funcCombo->addItem(i18n(TextFunctions[i].displayName));
-#else
         funcCombo->addItem(TextFunctions[i].displayName.toString());
-#endif
     }
     funcCombo->adjustSize();
     QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));

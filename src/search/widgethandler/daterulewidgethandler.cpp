@@ -14,27 +14,18 @@
 #include <QDate>
 #include <QObject>
 #include <QStackedWidget>
-#include <ki18n_version.h>
-#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
 #include <KLazyLocalizedString>
-#undef I18N_NOOP
-#define I18N_NOOP kli18n
-#endif
 using namespace MailCommon;
 
 static const struct {
     SearchRule::Function id;
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-    const char *displayName;
-#else
     const KLazyLocalizedString displayName;
-#endif
-} DateFunctions[] = {{SearchRule::FuncEquals, I18N_NOOP("is equal to")},
-                     {SearchRule::FuncNotEqual, I18N_NOOP("is not equal to")},
-                     {SearchRule::FuncIsGreater, I18N_NOOP("is after")},
-                     {SearchRule::FuncIsLessOrEqual, I18N_NOOP("is before or equal to")},
-                     {SearchRule::FuncIsLess, I18N_NOOP("is before")},
-                     {SearchRule::FuncIsGreaterOrEqual, I18N_NOOP("is after or equal to")}};
+} DateFunctions[] = {{SearchRule::FuncEquals, kli18n("is equal to")},
+                     {SearchRule::FuncNotEqual, kli18n("is not equal to")},
+                     {SearchRule::FuncIsGreater, kli18n("is after")},
+                     {SearchRule::FuncIsLessOrEqual, kli18n("is before or equal to")},
+                     {SearchRule::FuncIsLess, kli18n("is before")},
+                     {SearchRule::FuncIsGreaterOrEqual, kli18n("is after or equal to")}};
 static const int DateFunctionCount = sizeof(DateFunctions) / sizeof(*DateFunctions);
 
 //---------------------------------------------------------------------------
@@ -49,11 +40,7 @@ QWidget *DateRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget 
     funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("dateRuleFuncCombo"));
     for (int i = 0; i < DateFunctionCount; ++i) {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-        funcCombo->addItem(i18n(DateFunctions[i].displayName));
-#else
         funcCombo->addItem(DateFunctions[i].displayName.toString());
-#endif
     }
     funcCombo->adjustSize();
     QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));

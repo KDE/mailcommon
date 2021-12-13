@@ -12,27 +12,18 @@
 #include <QComboBox>
 #include <QDoubleSpinBox>
 #include <QStackedWidget>
-#include <ki18n_version.h>
-#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
 #include <KLazyLocalizedString>
-#undef I18N_NOOP
-#define I18N_NOOP kli18n
-#endif
 using namespace MailCommon;
 
 static const struct {
     SearchRule::Function id;
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-    const char *displayName;
-#else
     const KLazyLocalizedString displayName;
-#endif
-} NumericDoubleFunctions[] = {{SearchRule::FuncEquals, I18N_NOOP("is equal to")},
-                              {SearchRule::FuncNotEqual, I18N_NOOP("is not equal to")},
-                              {SearchRule::FuncIsGreater, I18N_NOOP("is greater than")},
-                              {SearchRule::FuncIsLessOrEqual, I18N_NOOP("is less than or equal to")},
-                              {SearchRule::FuncIsLess, I18N_NOOP("is less than")},
-                              {SearchRule::FuncIsGreaterOrEqual, I18N_NOOP("is greater than or equal to")}};
+} NumericDoubleFunctions[] = {{SearchRule::FuncEquals, kli18n("is equal to")},
+                              {SearchRule::FuncNotEqual, kli18n("is not equal to")},
+                              {SearchRule::FuncIsGreater, kli18n("is greater than")},
+                              {SearchRule::FuncIsLessOrEqual, kli18n("is less than or equal to")},
+                              {SearchRule::FuncIsLess, kli18n("is less than")},
+                              {SearchRule::FuncIsGreaterOrEqual, kli18n("is greater than or equal to")}};
 static const int NumericDoubleFunctionCount = sizeof(NumericDoubleFunctions) / sizeof(*NumericDoubleFunctions);
 
 QWidget *NumericDoubleRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool /*isBalooSearch*/) const
@@ -45,11 +36,7 @@ QWidget *NumericDoubleRuleWidgetHandler::createFunctionWidget(int number, QStack
     funcCombo->setMinimumWidth(50);
     funcCombo->setObjectName(QStringLiteral("numericDoubleRuleFuncCombo"));
     for (int i = 0; i < NumericDoubleFunctionCount; ++i) {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-        funcCombo->addItem(i18n(NumericDoubleFunctions[i].displayName));
-#else
         funcCombo->addItem(NumericDoubleFunctions[i].displayName.toString());
-#endif
     }
     funcCombo->adjustSize();
     QObject::connect(funcCombo, SIGNAL(activated(int)), receiver, SLOT(slotFunctionChanged()));
