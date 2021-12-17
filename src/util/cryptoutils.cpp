@@ -14,7 +14,6 @@
 
 #include <gpgme++/context.h>
 #include <gpgme++/decryptionresult.h>
-#include <gpgme++/gpgmepp_version.h>
 #include <gpgme++/verificationresult.h>
 
 using namespace MailCommon;
@@ -109,12 +108,10 @@ KMime::Message::Ptr CryptoUtils::decryptMessage(const KMime::Message::Ptr &msg, 
     QByteArray outData;
     auto inData = multipart ? msg->encodedContent() : msg->decodedContent(); // decodedContent in fact returns decoded body
     auto decrypt = proto->decryptJob();
-#if GPGMEPP_VERSION_MAJOR > 1 || (GPGMEPP_VERSION_MAJOR == 1 && GPGMEPP_VERSION_MINOR >= 9)
     if (inlinePGP) {
         auto ctx = QGpgME::Job::context(decrypt);
         ctx->setDecryptionFlags(GpgME::Context::DecryptUnwrap);
     }
-#endif
     auto result = decrypt->exec(inData, outData);
     if (result.error()) {
         // unknown key, invalid algo, or general error
