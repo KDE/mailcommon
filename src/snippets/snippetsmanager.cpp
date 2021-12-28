@@ -162,7 +162,11 @@ void SnippetsManager::SnippetsManagerPrivate::createSnippet(const QString &text)
     dlg->setGroupIndex(currentGroupIndex());
     dlg->setText(text);
 
-    if (dlg->exec()) {
+    q->connect(dlg, &SnippetDialog::rejected, q, [dlg]() {
+        delete dlg;
+    });
+
+    q->connect(dlg, &SnippetDialog::accepted, q, [dlg, this]() {
         const QModelIndex groupIndex = dlg->groupIndex();
 
         if (!mModel->insertRow(mModel->rowCount(groupIndex), groupIndex)) {
@@ -192,8 +196,9 @@ void SnippetsManager::SnippetsManagerPrivate::createSnippet(const QString &text)
                                               dlg->attachment());
         mDirty = true;
         save();
-    }
-    delete dlg;
+        delete dlg;
+    });
+    dlg->show();
 }
 
 void SnippetsManager::SnippetsManagerPrivate::slotAddNewDndSnippset(const QString &text)
@@ -230,26 +235,29 @@ void SnippetsManager::SnippetsManagerPrivate::editSnippet()
     dlg->setBcc(index.data(SnippetsModel::BccRole).toString());
     dlg->setAttachment(index.data(SnippetsModel::AttachmentRole).toString());
     dlg->setKeySequence(QKeySequence::fromString(index.data(SnippetsModel::KeySequenceRole).toString()));
+    q->connect(dlg, &SnippetDialog::rejected, q, [dlg]() {
+        delete dlg;
+    });
 
-    if (dlg->exec()) {
+    q->connect(dlg, &SnippetDialog::accepted, q, [dlg, this, oldGroupIndex, index, oldSnippetName]() {
         const QModelIndex newGroupIndex = dlg->groupIndex();
-
+        QModelIndex oldIndex = index;
         if (oldGroupIndex != newGroupIndex) {
             mModel->removeRow(index.row(), oldGroupIndex);
             mModel->insertRow(mModel->rowCount(newGroupIndex), newGroupIndex);
 
-            index = mModel->index(mModel->rowCount(newGroupIndex) - 1, 0, newGroupIndex);
+            oldIndex = mModel->index(mModel->rowCount(newGroupIndex) - 1, 0, newGroupIndex);
         }
 
-        mModel->setData(index, dlg->name(), SnippetsModel::NameRole);
-        mModel->setData(index, dlg->text(), SnippetsModel::TextRole);
-        mModel->setData(index, dlg->keySequence().toString(), SnippetsModel::KeySequenceRole);
-        mModel->setData(index, dlg->keyword(), SnippetsModel::KeywordRole);
-        mModel->setData(index, dlg->subject(), SnippetsModel::SubjectRole);
-        mModel->setData(index, dlg->to(), SnippetsModel::ToRole);
-        mModel->setData(index, dlg->cc(), SnippetsModel::CcRole);
-        mModel->setData(index, dlg->bcc(), SnippetsModel::BccRole);
-        mModel->setData(index, dlg->attachment(), SnippetsModel::AttachmentRole);
+        mModel->setData(oldIndex, dlg->name(), SnippetsModel::NameRole);
+        mModel->setData(oldIndex, dlg->text(), SnippetsModel::TextRole);
+        mModel->setData(oldIndex, dlg->keySequence().toString(), SnippetsModel::KeySequenceRole);
+        mModel->setData(oldIndex, dlg->keyword(), SnippetsModel::KeywordRole);
+        mModel->setData(oldIndex, dlg->subject(), SnippetsModel::SubjectRole);
+        mModel->setData(oldIndex, dlg->to(), SnippetsModel::ToRole);
+        mModel->setData(oldIndex, dlg->cc(), SnippetsModel::CcRole);
+        mModel->setData(oldIndex, dlg->bcc(), SnippetsModel::BccRole);
+        mModel->setData(oldIndex, dlg->attachment(), SnippetsModel::AttachmentRole);
 
         Q_EMIT mModel->updateActionCollection(oldSnippetName,
                                               dlg->name(),
@@ -262,8 +270,9 @@ void SnippetsManager::SnippetsManagerPrivate::editSnippet()
                                               dlg->attachment());
         mDirty = true;
         save();
-    }
-    delete dlg;
+        delete dlg;
+    });
+    dlg->show();
 }
 
 void SnippetsManager::SnippetsManagerPrivate::deleteSnippet()
