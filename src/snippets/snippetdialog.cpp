@@ -22,7 +22,7 @@
 using namespace MailCommon;
 namespace
 {
-static const char myConfigGroupName[] = "SnippetDialog";
+static const char mySnippetDialogConfigGroupName[] = "SnippetDialog";
 }
 SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMode, QWidget *parent)
     : QDialog(parent)
@@ -64,13 +64,13 @@ SnippetDialog::~SnippetDialog()
 
 void SnippetDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), myConfigGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetDialogConfigGroupName);
     group.writeEntry("Size", size());
 }
 
 void SnippetDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), myConfigGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetDialogConfigGroupName);
     const QSize sizeDialog = group.readEntry("Size", QSize(300, 350));
     if (sizeDialog.isValid()) {
         resize(sizeDialog);

@@ -237,11 +237,11 @@ Akonadi::Collection::List FolderSelectionDialog::selectedCollections() const
     return d->folderTreeWidget->selectedCollections();
 }
 
-static const char myConfigGroupName[] = "FolderSelectionDialog";
+static const char myFilterConvertToSieveResultDialogGroupName[] = "FolderSelectionDialog";
 
 void FolderSelectionDialog::readConfig()
 {
-    KConfigGroup group(KernelIf->config(), myConfigGroupName);
+    KConfigGroup group(KernelIf->config(), myFilterConvertToSieveResultDialogGroupName);
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -258,7 +258,7 @@ void FolderSelectionDialog::readConfig()
 
 void FolderSelectionDialog::writeConfig()
 {
-    KConfigGroup group(KernelIf->config(), myConfigGroupName);
+    KConfigGroup group(KernelIf->config(), myFilterConvertToSieveResultDialogGroupName);
     group.writeEntry("Size", size());
 
     if (d->mUseGlobalSettings) {

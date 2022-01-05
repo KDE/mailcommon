@@ -75,11 +75,11 @@ void FilterConvertToSieveResultDialog::setCode(const QString &code)
     mEditor->editor()->setPlainText(code);
 }
 
-static const char myConfigGroupName[] = "FilterConvertToSieveResultDialog";
+static const char myFilterConvertToSieveResultDialogName[] = "FilterConvertToSieveResultDialog";
 
 void FilterConvertToSieveResultDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), myConfigGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterConvertToSieveResultDialogName);
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -89,7 +89,7 @@ void FilterConvertToSieveResultDialog::readConfig()
 
 void FilterConvertToSieveResultDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), myConfigGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterConvertToSieveResultDialogName);
     group.writeEntry("Size", size());
     group.sync();
 }

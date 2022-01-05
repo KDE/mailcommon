@@ -24,7 +24,7 @@
 using namespace MailCommon;
 namespace
 {
-static const char myConfigGroupName[] = "SnippetVariableDialog";
+static const char mySnippetVariableDialogConfigGroupName[] = "SnippetVariableDialog";
 }
 SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<QString, QString> *variables, QWidget *parent)
     : QDialog(parent)
@@ -96,13 +96,13 @@ void SnippetVariableDialog::slotAccepted()
 
 void SnippetVariableDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), myConfigGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetVariableDialogConfigGroupName);
     group.writeEntry("Size", size());
 }
 
 void SnippetVariableDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), myConfigGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetVariableDialogConfigGroupName);
     const QSize sizeDialog = group.readEntry("Size", QSize(300, 350));
     if (sizeDialog.isValid()) {
         resize(sizeDialog);
