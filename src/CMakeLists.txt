@@ -371,11 +371,11 @@ PRIVATE
   KF5::ItemViews
   KF5::SyntaxHighlighting
   KF5::GuiAddons
-  Qt::Xml
+  Qt${QT_MAJOR_VERSION}::Xml
 )
 
 
-target_include_directories(KF5MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/MailCommon/;${KDE_INSTALL_INCLUDEDIR_KF5}/mailcommon>")
+target_include_directories(KF5MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon/;${KDE_INSTALL_INCLUDEDIR_KF}/mailcommon>")
 target_include_directories(KF5MailCommon PUBLIC "$<BUILD_INTERFACE:${mailcommon_SOURCE_DIR}/src;${mailcommon_BINARY_DIR}/src;${mailcommon_SOURCE_DIR}/src/search;${mailcommon_SOURCE_DIR}/src/folder>")
 
 
@@ -574,7 +574,7 @@ ecm_generate_headers(MailCommon_Camelcasesearchrule_HEADERS
 
 ecm_generate_pri_file(BASE_NAME MailCommon
     LIB_NAME KF5MailCommon
-    DEPS "AkonadiCore AkonadiMime MessageComposer PimCommon" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/MailCommon
+    DEPS "AkonadiCore AkonadiMime MessageComposer PimCommon" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon
 )
 
 install(FILES
@@ -594,7 +594,7 @@ install(FILES
     ${MailCommon_Camelcasefilterimporter_HEADERS}
     ${MailCommon_Camelcasesnippets_HEADERS}
     ${MailCommon_Camelcasewidgets_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/MailCommon
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon
     COMPONENT Devel
 )
 
@@ -618,7 +618,7 @@ install(FILES
     ${MailCommon_filterimporter_HEADERS}
     ${MailCommon_snippets_HEADERS}
     ${MailCommon_widgets_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/mailcommon
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/mailcommon
     COMPONENT Devel
 )
 install(FILES

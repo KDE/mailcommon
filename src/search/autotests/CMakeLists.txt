@@ -4,7 +4,7 @@ macro(add_search_autotest _name)
     ecm_add_test(${ARGN}
         TEST_NAME ${_name}
         NAME_PREFIX "mailcommon-search-"
-        LINK_LIBRARIES Qt::Test Qt::Gui KF5::Mime KF5::AkonadiCore KF5::AkonadiMime KF5::MailCommon KF5::I18n
+        LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test Qt${QT_MAJOR_VERSION}::Gui KF5::Mime KF5::AkonadiCore KF5::AkonadiMime KF5::MailCommon KF5::I18n
     )
 endmacro()
 
