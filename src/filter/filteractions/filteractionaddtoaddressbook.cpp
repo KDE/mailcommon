@@ -17,7 +17,6 @@
 #include <KContacts/Addressee>
 #include <KEmailAddress>
 #include <KLocalizedString>
-#include <kcontacts_version.h>
 
 #include <QGridLayout>
 #include <QLabel>
@@ -84,13 +83,9 @@ FilterAction::ReturnCode FilterActionAddToAddressBook::process(ItemContext &cont
 
         KContacts::Addressee contact;
         contact.setNameFromString(name);
-#if KContacts_VERSION < QT_VERSION_CHECK(5, 88, 0)
-        contact.insertEmail(emailString, true);
-#else
         KContacts::Email email(emailString);
         email.setPreferred(true);
         contact.addEmail(email);
-#endif
         if (!mCategory.isEmpty()) {
             contact.setCategories(mCategory.split(QLatin1Char(';')));
         }
