@@ -137,11 +137,7 @@ QString StatusRuleWidgetHandler::value(const QByteArray &field, const QStackedWi
 
     const int status = currentStatusValue(valueStack);
     if (status != -1) {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-        return QString::fromLatin1(StatusValues[status].text);
-#else
         return StatusValues[status].text.untranslatedText();
-#endif
     } else {
         return {};
     }
@@ -157,11 +153,7 @@ QString StatusRuleWidgetHandler::prettyValue(const QByteArray &field, const QSta
 
     const int status = currentStatusValue(valueStack);
     if (status != -1) {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-        return QString::fromLatin1(StatusValues[status].text);
-#else
         return StatusValues[status].text.toString();
-#endif
     } else {
         return {};
     }
@@ -232,15 +224,9 @@ bool StatusRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWid
     const QString value = rule->contents();
     int valueIndex = 0;
     for (; valueIndex < StatusValueCountWithoutHidden; ++valueIndex) {
-#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
-        if (value == QString::fromLatin1(StatusValues[valueIndex].text)) {
-            break;
-        }
-#else
         if (value == StatusValues[valueIndex].text.untranslatedText()) {
             break;
         }
-#endif
     }
 
     const auto statusCombo = valueStack->findChild<QComboBox *>(QStringLiteral("statusRuleValueCombo"));
