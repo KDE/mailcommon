@@ -363,7 +363,7 @@ PRIVATE
   KF5::MessageList
   KF5::Mime
   KF5::MailTransport
-  Phonon::phonon4qt5
+  Phonon::phonon4qt${QT_MAJOR_VERSION}
   KF5::XmlGui
   KF5::KIOWidgets
   KF5::IconThemes
