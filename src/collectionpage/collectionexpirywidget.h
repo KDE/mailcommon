@@ -41,7 +41,7 @@ public:
     void save(const CollectionExpirySettings &collectionExpirySettings, Akonadi::Collection &collection, bool saveSettings, bool expireNow);
     Q_REQUIRED_RESULT CollectionExpirySettings settings() const;
     void hideExpireNowButton();
-    static Q_REQUIRED_RESULT bool canHandle(const Akonadi::Collection &col);
+    Q_REQUIRED_RESULT static bool canHandle(const Akonadi::Collection &col);
 Q_SIGNALS:
     void saveAndExpireRequested();
     void configChanged(bool changed = true);
