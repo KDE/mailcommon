@@ -375,7 +375,7 @@ PRIVATE
 )
 
 
-target_include_directories(KF5MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon/;${KDE_INSTALL_INCLUDEDIR_KF}/mailcommon>")
+target_include_directories(KF5MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon/>")
 target_include_directories(KF5MailCommon PUBLIC "$<BUILD_INTERFACE:${mailcommon_SOURCE_DIR}/src;${mailcommon_BINARY_DIR}/src;${mailcommon_SOURCE_DIR}/src/search;${mailcommon_SOURCE_DIR}/src/folder>")
 
 
@@ -594,7 +594,7 @@ install(FILES
     ${MailCommon_Camelcasefilterimporter_HEADERS}
     ${MailCommon_Camelcasesnippets_HEADERS}
     ${MailCommon_Camelcasewidgets_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon/MailCommon
     COMPONENT Devel
 )
 
@@ -618,9 +618,16 @@ install(FILES
     ${MailCommon_filterimporter_HEADERS}
     ${MailCommon_snippets_HEADERS}
     ${MailCommon_widgets_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/mailcommon
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon/mailcommon
     COMPONENT Devel
 )
+
+install(FILES
+    ${CMAKE_CURRENT_BINARY_DIR}/mailcommon_export.h
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon
+    COMPONENT Devel
+)
+
 install(FILES
     ${PRI_FILENAME}
     DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
