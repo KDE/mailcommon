@@ -17,7 +17,7 @@
 #include <MessageComposer/MessageSender>
 #include <MessageCore/StringUtil>
 #include <TemplateParser/CustomTemplates>
-#include <customtemplates_kfg.h>
+#include <templateparser/customtemplates_kfg.h>
 
 #include <KComboBox>
 #include <KLineEdit>

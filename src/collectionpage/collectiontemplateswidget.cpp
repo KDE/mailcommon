@@ -6,8 +6,8 @@
 
 #include "collectiontemplateswidget.h"
 
-#include "templatesconfiguration_kfg.h"
 #include <KLocalizedString>
+#include <templateparser/templatesconfiguration_kfg.h>
 
 #include <MailCommon/FolderSettings>
 #include <QCheckBox>
