@@ -6,14 +6,14 @@
 
 #include "collectiongeneralpage.h"
 #include "collectiongeneralwidget.h"
-#include <pimcommonakonadi/collectiontypeutil.h>
+#include <PimCommonAkonadi/CollectionTypeUtil>
 
 #include "folder/foldersettings.h"
 #include "kernel/mailkernel.h"
 #include "util/mailutil_p.h"
 #include <PimCommonAkonadi/CollectionAnnotationsAttribute>
 #include <PimCommonAkonadi/ContentTypeWidget>
-#include <pimcommonakonadi/incidencesforwidget.h>
+#include <PimCommonAkonadi/IncidencesForWidget>
 
 #include <Akonadi/AgentManager>
 #include <Akonadi/AttributeFactory>
