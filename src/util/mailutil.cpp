@@ -41,7 +41,6 @@
 
 #include <KMime/KMimeMessage>
 
-#include <KColorScheme>
 #include <KIO/JobUiDelegate>
 #include <KJob>
 #include <collectionpage/attributes/expirecollectionattribute.h>
