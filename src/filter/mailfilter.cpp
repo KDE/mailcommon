@@ -32,7 +32,6 @@ using MailCommon::FilterLog;
 #include <krandom.h>
 
 #include <algorithm>
-#include <boost/bind.hpp>
 
 using namespace MailCommon;
 
@@ -258,11 +257,9 @@ SearchRule::RequiredPart MailFilter::requiredPart(const QString &id) const
 
     QVector<FilterAction *> actionList = *actions();
     if (!actionList.isEmpty()) {
-        requiredPartByActions =
-            (*std::max_element(actionList.constBegin(),
-                               actionList.constEnd(),
-                               boost::bind(&MailCommon::FilterAction::requiredPart, _1) < boost::bind(&MailCommon::FilterAction::requiredPart, _2)))
-                ->requiredPart();
+        requiredPartByActions = (*std::max_element(actionList.constBegin(), actionList.constEnd(), [](auto *lhs, auto *rhs) {
+                                    return lhs->requiredPart() < rhs->requiredPart();
+                                }))->requiredPart();
     }
     requiredPart = qMax(requiredPart, requiredPartByActions);
 

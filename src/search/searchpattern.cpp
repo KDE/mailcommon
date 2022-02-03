@@ -24,7 +24,6 @@ using MailCommon::FilterLog;
 #include <QDataStream>
 
 #include <algorithm>
-#include <boost/bind.hpp>
 
 using namespace MailCommon;
 
@@ -93,10 +92,9 @@ SearchRule::RequiredPart SearchPattern::requiredPart() const
     SearchRule::RequiredPart reqPart = SearchRule::Envelope;
 
     if (!isEmpty()) {
-        reqPart = (*std::max_element(constBegin(),
-                                     constEnd(),
-                                     boost::bind(&MailCommon::SearchRule::requiredPart, _1) < boost::bind(&MailCommon::SearchRule::requiredPart, _2)))
-                      ->requiredPart();
+        reqPart = (*std::max_element(constBegin(), constEnd(), [](const auto &lhs, const auto &rhs) {
+                      return lhs->requiredPart() < rhs->requiredPart();
+                  }))->requiredPart();
     }
     return reqPart;
 }
