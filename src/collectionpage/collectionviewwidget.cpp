@@ -9,7 +9,7 @@
 #include <KLocalizedString>
 #include <QFormLayout>
 
-#include <Akonadi/KMime/MessageFolderAttribute>
+#include <Akonadi/MessageFolderAttribute>
 #include <MessageList/AggregationComboBox>
 #include <MessageList/AggregationConfigButton>
 #include <MessageList/ThemeComboBox>

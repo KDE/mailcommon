@@ -7,7 +7,7 @@
 
 #include "filteractionsetstatus.h"
 #include "mailcommon_debug.h"
-#include <Akonadi/KMime/MessageStatus>
+#include <Akonadi/MessageStatus>
 #include <KLocalizedString>
 using namespace MailCommon;
 

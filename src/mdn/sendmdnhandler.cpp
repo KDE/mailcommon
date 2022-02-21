@@ -18,7 +18,7 @@
 
 #include <Akonadi/Collection>
 #include <Akonadi/Item>
-#include <Akonadi/KMime/MessageFlags>
+#include <Akonadi/MessageFlags>
 
 #include <QQueue>
 #include <QTimer>

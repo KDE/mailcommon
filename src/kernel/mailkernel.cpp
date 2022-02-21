@@ -14,8 +14,8 @@
 #include <Akonadi/AgentInstance>
 #include <Akonadi/AgentManager>
 #include <Akonadi/EntityMimeTypeFilterModel>
-#include <Akonadi/KMime/SpecialMailCollectionsDiscoveryJob>
-#include <Akonadi/KMime/SpecialMailCollectionsRequestJob>
+#include <Akonadi/SpecialMailCollectionsDiscoveryJob>
+#include <Akonadi/SpecialMailCollectionsRequestJob>
 #include <QApplication>
 #include <util/resourcereadconfigfile.h>
 

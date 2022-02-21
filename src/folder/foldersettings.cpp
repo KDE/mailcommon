@@ -13,7 +13,7 @@
 #include <Akonadi/CollectionModifyJob>
 #include <Akonadi/ItemFetchJob>
 #include <Akonadi/ItemFetchScope>
-#include <Akonadi/KMime/NewMailNotifierAttribute>
+#include <Akonadi/NewMailNotifierAttribute>
 #include <PimCommon/PimUtil>
 
 using namespace Akonadi;

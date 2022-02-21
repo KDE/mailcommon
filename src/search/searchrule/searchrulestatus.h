@@ -9,7 +9,7 @@
 #include <Akonadi/Item>
 
 #include "mailcommon/searchpattern.h"
-#include <Akonadi/KMime/MessageStatus>
+#include <Akonadi/MessageStatus>
 #include <KLazyLocalizedString>
 
 namespace MailCommon

@@ -7,7 +7,7 @@
 #pragma once
 
 #include "filteractionwithstringlist.h"
-#include <Akonadi/KMime/MessageStatus>
+#include <Akonadi/MessageStatus>
 
 namespace MailCommon
 {

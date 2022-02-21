@@ -35,8 +35,8 @@
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/ItemFetchJob>
 #include <Akonadi/ItemFetchScope>
-#include <Akonadi/KMime/MessageParts>
-#include <Akonadi/KMime/NewMailNotifierAttribute>
+#include <Akonadi/MessageParts>
+#include <Akonadi/NewMailNotifierAttribute>
 #include <Akonadi/ServerManager>
 
 #include <KMime/KMimeMessage>

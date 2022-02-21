@@ -16,7 +16,7 @@
 
 #include <gpgme++/decryptionresult.h>
 
-#include <Akonadi/KMime/MessageFlags>
+#include <Akonadi/MessageFlags>
 
 #include <QLabel>
 #include <QVBoxLayout>

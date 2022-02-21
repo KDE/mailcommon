@@ -30,7 +30,7 @@
 
 #include <MessageComposer/EncryptJob>
 
-#include <Akonadi/KMime/MessageFlags>
+#include <Akonadi/MessageFlags>
 
 #include <KColorScheme>
 

@@ -8,7 +8,7 @@
 #include "folder/foldersettings.h"
 #include "kernel/mailkernel.h"
 #include "util/mailutil_p.h"
-#include <Akonadi/KMime/NewMailNotifierAttribute>
+#include <Akonadi/NewMailNotifierAttribute>
 #include <KIdentityManagement/IdentityCombo>
 #include <KLocalizedString>
 #include <QCheckBox>

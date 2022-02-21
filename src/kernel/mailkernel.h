@@ -11,7 +11,7 @@
 #include "mailcommon_export.h"
 
 #include <Akonadi/Collection>
-#include <Akonadi/KMime/SpecialMailCollections>
+#include <Akonadi/SpecialMailCollections>
 #include <KSharedConfig>
 
 #include <QObject>

@@ -20,9 +20,9 @@ using PimCommon::BroadcastStatus;
 #include <Akonadi/ItemFetchScope>
 #include <Akonadi/ItemModifyJob>
 #include <Akonadi/ItemMoveJob>
-#include <Akonadi/KMime/MessageFlags>
-#include <Akonadi/KMime/MessageParts>
-#include <Akonadi/KMime/MessageStatus>
+#include <Akonadi/MessageFlags>
+#include <Akonadi/MessageParts>
+#include <Akonadi/MessageStatus>
 #include <KMime/Message>
 
 /*
