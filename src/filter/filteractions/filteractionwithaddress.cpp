@@ -7,7 +7,7 @@
 
 #include "filteractionwithaddress.h"
 
-#include <Akonadi/Contact/EmailAddressRequester>
+#include <Akonadi/EmailAddressRequester>
 
 using namespace MailCommon;
 

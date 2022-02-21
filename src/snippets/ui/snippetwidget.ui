@@ -237,6 +237,11 @@
    <extends>QWidget</extends>
    <header>snippets/snippetattachmentwidget.h</header>
   </customwidget>
+  <customwidget>
+   <class>Akonadi::EmailAddressRequester</class>
+   <extends>QWidget</extends>
+   <header>Akonadi/EmailAddressRequester</header>
+  </customwidget>
  </customwidgets>
  <tabstops>
   <tabstop>nameEdit</tabstop>

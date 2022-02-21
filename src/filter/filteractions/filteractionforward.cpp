@@ -12,7 +12,7 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 
-#include <Akonadi/Contact/EmailAddressRequester>
+#include <Akonadi/EmailAddressRequester>
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
 #include <MessageCore/StringUtil>

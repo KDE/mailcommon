@@ -11,7 +11,7 @@
 #include <MessageComposer/ComposerLineEdit>
 #include <QTreeView>
 
-#include <Akonadi/Contact/EmailAddressSelectionDialog>
+#include <Akonadi/EmailAddressSelectionDialog>
 
 #include <KLocalizedString>
 #include <QHBoxLayout>

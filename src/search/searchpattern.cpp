@@ -14,8 +14,7 @@
 #include "searchrule/searchrulestring.h"
 using MailCommon::FilterLog;
 #include "mailcommon_debug.h"
-#include <Akonadi/Contact/ContactSearchJob>
-
+#include <Akonadi/ContactSearchJob>
 
 #include <KMime/KMimeMessage>
 

@@ -8,7 +8,7 @@
 #include "filter/filterlog.h"
 using MailCommon::FilterLog;
 
-#include <Akonadi/Contact/ContactSearchJob>
+#include <Akonadi/ContactSearchJob>
 
 #include <Akonadi/SearchQuery>
 

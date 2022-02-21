@@ -7,7 +7,7 @@
 
 #include "filteractionaddtoaddressbook.h"
 
-#include <Akonadi/Contact/AddContactJob>
+#include <Akonadi/AddContactJob>
 
 #include <Akonadi/TagSelectionDialog>
 #include <Akonadi/TagWidget>
