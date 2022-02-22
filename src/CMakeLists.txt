@@ -32,13 +32,12 @@ set(libmailcommon_SRCS ${libmailcommon_SRCS} filter/soundtestwidget.cpp)
 
 macro(add_resource_iface _kcfgFile _ifaceName _className)
   kcfg_generate_dbus_interface(${CMAKE_CURRENT_SOURCE_DIR}/${_kcfgFile} ${_ifaceName})
-  string(TOLOWER ${_className} _codeFile)
   qt_add_dbus_interface(libmailcommon_SRCS
-    ${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml ${_codeFile} ${_className}
+    ${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml ${_className}
   )
 endmacro()
 
-add_resource_iface(settings.kcfg org.kde.Akonadi.POP3.Settings Pop3Settings)
+add_resource_iface(settings.kcfg org.kde.Akonadi.POP3.Settings pop3settings)
 
 qt_add_dbus_interfaces(libmailcommon_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/dbusinterfaces/org.kde.Korganizer.Calendar.xml
 )
