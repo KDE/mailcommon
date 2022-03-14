@@ -84,7 +84,7 @@ void CollectionTemplatesWidget::slotChanged()
 void CollectionTemplatesWidget::load(const Akonadi::Collection &col)
 {
     const QSharedPointer<MailCommon::FolderSettings> fd = MailCommon::FolderSettings::forCollection(col, false);
-    if (!fd) {
+    if (fd.isNull()) {
         return;
     }
 

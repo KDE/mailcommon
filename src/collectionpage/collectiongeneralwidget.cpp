@@ -71,14 +71,14 @@ CollectionGeneralWidget::~CollectionGeneralWidget() = default;
 void CollectionGeneralWidget::slotIdentityCheckboxChanged()
 {
     mIdentityComboBox->setEnabled(!mUseDefaultIdentityCheckBox->isChecked());
-    if (mFolderCollection && mUseDefaultIdentityCheckBox->isChecked()) {
+    if (!mFolderCollection.isNull() && mUseDefaultIdentityCheckBox->isChecked()) {
         mIdentityComboBox->setCurrentIdentity(mFolderCollection->fallBackIdentity());
     }
 }
 
 void CollectionGeneralWidget::save(Akonadi::Collection &collection)
 {
-    if (!mFolderCollection) {
+    if (mFolderCollection.isNull()) {
         mFolderCollection = FolderSettings::forCollection(collection);
     }
     if (!mNotifyOnNewMailCheckBox->isChecked()) {
@@ -87,7 +87,7 @@ void CollectionGeneralWidget::save(Akonadi::Collection &collection)
     } else {
         collection.removeAttribute<Akonadi::NewMailNotifierAttribute>();
     }
-    if (mFolderCollection) {
+    if (!mFolderCollection.isNull()) {
         mFolderCollection->setIdentity(mIdentityComboBox->currentIdentity());
         mFolderCollection->setUseDefaultIdentity(mUseDefaultIdentityCheckBox->isChecked());
 

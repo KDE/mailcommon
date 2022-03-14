@@ -190,7 +190,7 @@ bool FolderTreeWidgetProxyModel::filterAcceptsRow(int sourceRow, const QModelInd
 
     if (d->hideSpecificFolder) {
         const QSharedPointer<FolderSettings> col = FolderSettings::forCollection(collection, false);
-        if (col && col->hideInSelectionDialog()) {
+        if (!col.isNull() && col->hideInSelectionDialog()) {
             return false;
         }
     }

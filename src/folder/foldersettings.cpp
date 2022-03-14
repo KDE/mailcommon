@@ -36,7 +36,7 @@ QSharedPointer<FolderSettings> FolderSettings::forCollection(const Akonadi::Coll
 
     QSharedPointer<FolderSettings> sptr = fcMap.value(coll.id());
 
-    if (!sptr) {
+    if (sptr.isNull()) {
         sptr = QSharedPointer<FolderSettings>(new FolderSettings(coll, writeConfig));
         fcMap.insert(coll.id(), sptr);
     } else {
