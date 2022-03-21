@@ -56,4 +56,3 @@ private:
     std::unique_ptr<EntityCollectionOrderProxyModelPrivate> const d;
 };
 }
-

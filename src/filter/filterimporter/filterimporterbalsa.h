@@ -31,4 +31,3 @@ private:
     void parseAction(int actionType, const QString &action, MailCommon::MailFilter *filter);
 };
 }
-

@@ -51,4 +51,3 @@ public:
     Q_REQUIRED_RESULT QString displayString() const override;
 };
 }
-

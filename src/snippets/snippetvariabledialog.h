@@ -39,4 +39,3 @@ private:
     QCheckBox *mSaveVariable = nullptr;
 };
 }
-

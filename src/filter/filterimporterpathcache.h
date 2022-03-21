@@ -34,4 +34,3 @@ private:
     QHash<QString, Akonadi::Collection> mFilterCache;
 };
 }
-

@@ -28,4 +28,3 @@ private:
     KIdentityManagement::IdentityCombo *mComboBoxIdentity = nullptr;
 };
 }
-

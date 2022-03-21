@@ -31,4 +31,3 @@ private:
     MessageComposer::MDNAdvice m_result = MessageComposer::MDNIgnore;
 };
 }
-

@@ -32,4 +32,3 @@ private:
 };
 }
 Q_DECLARE_TYPEINFO(MailCommon::InvalidFilterInfo, Q_MOVABLE_TYPE);
-

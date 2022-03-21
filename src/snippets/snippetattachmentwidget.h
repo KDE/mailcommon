@@ -31,4 +31,3 @@ private:
     QLineEdit *mLineEdit = nullptr;
 };
 }
-

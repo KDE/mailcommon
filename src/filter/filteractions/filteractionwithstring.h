@@ -78,4 +78,3 @@ protected:
     QString mParameter;
 };
 }
-

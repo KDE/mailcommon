@@ -43,4 +43,3 @@ private:
     int currentStatusValue(const QStackedWidget *valueStack) const;
 };
 }
-

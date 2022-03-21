@@ -9,10 +9,10 @@
 
 #include <KLocalizedString>
 
+#include <KLazyLocalizedString>
 #include <QComboBox>
 #include <QDoubleSpinBox>
 #include <QStackedWidget>
-#include <KLazyLocalizedString>
 using namespace MailCommon;
 
 static const struct {

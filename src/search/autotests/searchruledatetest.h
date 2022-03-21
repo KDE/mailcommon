@@ -21,4 +21,3 @@ private Q_SLOTS:
     void shouldMatchDate();
     void shouldMatchDate_data();
 };
-

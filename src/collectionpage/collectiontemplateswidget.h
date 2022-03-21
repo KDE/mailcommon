@@ -40,4 +40,3 @@ private:
     bool mChanged = false;
 };
 }
-

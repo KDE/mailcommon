@@ -36,4 +36,3 @@ private:
     void readStream(QTextStream &stream);
 };
 }
-

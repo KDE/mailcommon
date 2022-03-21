@@ -26,4 +26,3 @@ protected:
     Akonadi::Collection parentCollection(const QModelIndex &index) const override;
 };
 }
-

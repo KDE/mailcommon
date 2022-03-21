@@ -54,4 +54,3 @@ private:
     static MDNAdviceHelper *s_instance;
 };
 }
-

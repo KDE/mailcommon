@@ -51,4 +51,3 @@ private:
     int mShowSenderReceiverValue = -1;
 };
 }
-

@@ -49,4 +49,3 @@ private:
     Akonadi::MessageStatus mStatus;
 };
 }
-

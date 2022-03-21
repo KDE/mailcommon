@@ -7,12 +7,12 @@
 #include "messagerulewidgethandler.h"
 #include "search/searchpattern.h"
 
+#include <KLazyLocalizedString>
 #include <KLineEdit>
 #include <KLocalizedString>
 #include <QComboBox>
 #include <QLabel>
 #include <QStackedWidget>
-#include <KLazyLocalizedString>
 using namespace MailCommon;
 
 // also see SearchRule::matches() and SearchRule::Function

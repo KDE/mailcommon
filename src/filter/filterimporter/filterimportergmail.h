@@ -30,4 +30,3 @@ private:
     int mFilterCount = 0;
 };
 }
-

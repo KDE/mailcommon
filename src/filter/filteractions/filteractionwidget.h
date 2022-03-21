@@ -155,4 +155,3 @@ private:
     void connectWidget(QWidget *widget, FilterAction *filterAction);
 };
 }
-

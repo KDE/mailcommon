@@ -86,4 +86,3 @@ public:
     virtual ~ISettings() = default;
 };
 }
-

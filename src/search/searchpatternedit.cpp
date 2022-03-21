@@ -11,6 +11,7 @@ using MailCommon::RuleWidgetHandlerManager;
 #include "mailcommon_debug.h"
 
 #include <KComboBox>
+#include <KLazyLocalizedString>
 #include <KLocalizedString>
 #include <Libkdepim/LineEditCatchReturnKey>
 #include <QButtonGroup>
@@ -21,13 +22,11 @@ using MailCommon::RuleWidgetHandlerManager;
 #include <QPushButton>
 #include <QRadioButton>
 #include <QStackedWidget>
-#include <KLazyLocalizedString>
 // Definition of special rule field strings
 // Note: Also see SearchRule::matches() and ruleFieldToEnglish() if
 //       you change the following i18n-ized strings!
 // Note: The index of the values in the following array has to correspond to
 //       the value of the entries in the enum in SearchRuleWidget.
-
 
 using namespace MailCommon;
 

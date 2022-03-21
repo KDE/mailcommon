@@ -278,4 +278,3 @@ private:
     SearchPatternEdit::SearchModeType mTypeMode;
 };
 }
-

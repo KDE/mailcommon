@@ -124,4 +124,3 @@ private:
     std::unique_ptr<FolderTreeWidgetPrivate> const d;
 };
 }
-

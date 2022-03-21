@@ -239,4 +239,3 @@ protected:
     QWidget *mInMenuWidget = nullptr;
 };
 }
-

@@ -22,4 +22,3 @@ private:
     void importFilters(MailCommon::FilterImporterExporter::FilterType type);
     QTextEdit *mTextEdit = nullptr;
 };
-

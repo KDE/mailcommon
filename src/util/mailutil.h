@@ -62,4 +62,3 @@ Q_REQUIRED_RESULT MAILCOMMON_EXPORT QStringList foundMailer();
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isLocalCollection(const QString &resource);
 }
 }
-

@@ -33,4 +33,3 @@ public:
     Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
 };
 }
-

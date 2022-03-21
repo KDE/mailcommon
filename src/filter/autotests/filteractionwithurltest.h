@@ -22,4 +22,3 @@ private Q_SLOTS:
     void shouldTestUrl_data();
     void shouldTestUrl();
 };
-

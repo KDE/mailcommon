@@ -10,11 +10,11 @@
 #include <KDateComboBox>
 #include <KLocalizedString>
 
+#include <KLazyLocalizedString>
 #include <QComboBox>
 #include <QDate>
 #include <QObject>
 #include <QStackedWidget>
-#include <KLazyLocalizedString>
 using namespace MailCommon;
 
 static const struct {

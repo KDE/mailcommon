@@ -100,4 +100,3 @@ protected:
     std::unique_ptr<FolderRequesterPrivate> const d;
 };
 }
-

@@ -28,4 +28,3 @@ MAILCOMMON_EXPORT void copyHeader(const KMime::Headers::Base *header, KMime::Mes
 Q_REQUIRED_RESULT MAILCOMMON_EXPORT bool isContentHeader(const KMime::Headers::Base *header);
 }
 }
-

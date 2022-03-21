@@ -32,4 +32,3 @@ private:
     MessageComposer::ConvertSnippetVariableMenu *mConvertMenu = nullptr;
 };
 }
-

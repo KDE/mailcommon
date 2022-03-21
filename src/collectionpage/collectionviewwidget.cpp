@@ -79,7 +79,6 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     topLayout->addRow(QString(), mPreferTextToHtml);
     mUseGlobalSettings = new QRadioButton(i18n("Use Global Settings"), this);
     topLayout->addRow(QString(), mUseGlobalSettings);
-
 }
 
 CollectionViewWidget::~CollectionViewWidget() = default;

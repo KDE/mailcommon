@@ -50,4 +50,3 @@ private:
     QListWidget *mListwidget = nullptr;
     QPushButton *mOkButton = nullptr;
 };
-

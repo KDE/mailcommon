@@ -218,4 +218,3 @@ private:
 }
 
 Q_DECLARE_METATYPE(MailCommon::SearchRule::RequiredPart)
-

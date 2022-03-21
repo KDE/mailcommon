@@ -27,4 +27,3 @@ private:
     SnippetSelectAttachmentWidget *mAttachmentWidget = nullptr;
 };
 }
-

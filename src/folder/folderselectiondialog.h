@@ -73,4 +73,3 @@ private:
     std::unique_ptr<FolderSelectionDialogPrivate> const d;
 };
 }
-

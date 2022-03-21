@@ -29,4 +29,3 @@ private:
     void parseActions(const QDomElement &e, MailCommon::MailFilter *filter);
 };
 }
-

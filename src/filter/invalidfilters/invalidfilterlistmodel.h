@@ -30,4 +30,3 @@ private:
     QVector<MailCommon::InvalidFilterInfo> mInvalidFilterItems;
 };
 }
-

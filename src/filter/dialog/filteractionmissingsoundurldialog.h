@@ -24,4 +24,3 @@ private:
     KUrlRequester *mUrlWidget = nullptr;
 };
 }
-

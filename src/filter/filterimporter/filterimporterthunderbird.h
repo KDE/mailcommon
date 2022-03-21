@@ -40,4 +40,3 @@ private:
     MailFilter *parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter);
 };
 }
-

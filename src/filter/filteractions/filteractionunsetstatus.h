@@ -28,4 +28,3 @@ private:
     bool checkIsValid(int &index) const;
 };
 }
-

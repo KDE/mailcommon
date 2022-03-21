@@ -58,4 +58,3 @@ private:
     std::unique_ptr<FavoriteCollectionWidgetPrivate> const d;
 };
 }
-

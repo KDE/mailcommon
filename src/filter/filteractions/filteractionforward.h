@@ -38,4 +38,3 @@ private:
     mutable QString mTemplate;
 };
 }
-

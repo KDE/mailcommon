@@ -43,4 +43,3 @@ private:
     QString currentValue(const QStackedWidget *valueStack) const;
 };
 }
-

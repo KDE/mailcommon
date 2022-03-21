@@ -76,4 +76,3 @@ private:
     Phonon::MediaObject *m_player = nullptr;
 };
 }
-

@@ -20,4 +20,3 @@ public Q_SLOTS:
     void slotShowDetails(const QString &details);
 };
 }
-

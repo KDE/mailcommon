@@ -261,4 +261,3 @@ private:
     QString mContents;
 };
 }
-

@@ -33,4 +33,3 @@ protected Q_SLOTS:
     void jobFinished(KJob *job);
 };
 }
-

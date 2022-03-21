@@ -156,4 +156,3 @@ private:
 #define FilterIf MailCommon::Kernel::self()->filterIf()
 #define SettingsIf MailCommon::Kernel::self()->settingsIf()
 #define CommonKernel MailCommon::Kernel::self()
-

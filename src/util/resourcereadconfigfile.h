@@ -26,4 +26,3 @@ private:
     std::unique_ptr<ResourceReadConfigFilePrivate> const d;
 };
 }
-

@@ -14,7 +14,8 @@ class QLineEdit;
 
 class QCheckBox;
 
-template<typename T> class QSharedPointer;
+template<typename T>
+class QSharedPointer;
 namespace PimCommon
 {
 class IncidencesForWidget;
@@ -64,4 +65,3 @@ private:
 
 AKONADI_COLLECTION_PROPERTIES_PAGE_FACTORY(CollectionGeneralPageFactory, CollectionGeneralPage)
 }
-

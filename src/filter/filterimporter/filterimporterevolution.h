@@ -29,4 +29,3 @@ private:
     void parsePartAction(const QDomElement &ruleFilter, MailCommon::MailFilter *filter, MailCommon::FilterImporterEvolution::parseType type);
 };
 }
-

@@ -105,4 +105,3 @@ private:
     bool mDisplayMessageBox = true;
 };
 }
-

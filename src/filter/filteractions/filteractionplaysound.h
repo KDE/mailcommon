@@ -38,4 +38,3 @@ private:
     mutable Phonon::MediaObject *mPlayer = nullptr;
 };
 }
-

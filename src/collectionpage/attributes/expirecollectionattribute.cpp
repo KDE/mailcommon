@@ -131,7 +131,7 @@ int ExpireCollectionAttribute::daysToExpire(int number, ExpireCollectionAttribut
         // rather than assuming 31day months.
         return number * 31;
     default: // this avoids a compiler warning (not handled enumeration values)
-             ;
+        ;
     }
     return -1;
 }

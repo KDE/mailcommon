@@ -27,4 +27,3 @@ public:
     QString value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const override;
 };
 }
-

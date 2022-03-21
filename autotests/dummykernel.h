@@ -43,4 +43,3 @@ private:
     Akonadi::EntityTreeModel *mEntityTreeModel = nullptr;
     Akonadi::EntityMimeTypeFilterModel *mCollectionModel = nullptr;
 };
-

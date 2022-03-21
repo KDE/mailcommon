@@ -338,4 +338,3 @@ private:
 MAILCOMMON_EXPORT QDataStream &operator<<(QDataStream &stream, const MailFilter &filter);
 MAILCOMMON_EXPORT QDataStream &operator>>(QDataStream &stream, MailFilter &filter);
 }
-

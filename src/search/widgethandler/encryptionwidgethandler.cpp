@@ -5,10 +5,10 @@
 */
 
 #include "encryptionwidgethandler.h"
+#include <KLazyLocalizedString>
 #include <QComboBox>
 #include <QLabel>
 #include <QStackedWidget>
-#include <KLazyLocalizedString>
 using namespace MailCommon;
 
 static const struct {

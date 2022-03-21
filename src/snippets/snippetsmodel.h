@@ -122,4 +122,3 @@ private:
 };
 }
 Q_DECLARE_TYPEINFO(MailCommon::SnippetsInfo, Q_MOVABLE_TYPE);
-

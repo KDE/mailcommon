@@ -26,4 +26,3 @@ public:
     Q_REQUIRED_RESULT QString sieveCode() const override;
 };
 }
-

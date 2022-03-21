@@ -57,4 +57,3 @@ public:
     void clearParamWidget(QWidget *paramWidget) const override;
 };
 }
-

@@ -8,12 +8,12 @@
 #include "filter/mdnadvicedialog.h"
 #include "mailcommon_debug.h"
 #include <Akonadi/ItemModifyJob>
+#include <KCursorSaver>
+#include <KLazyLocalizedString>
 #include <KLocalizedString>
 #include <MessageComposer/Util>
 #include <MessageViewer/MessageViewerSettings>
 #include <QPointer>
-#include <KLazyLocalizedString>
-#include <KCursorSaver>
 using MessageComposer::MessageFactoryNG;
 using namespace MailCommon;
 

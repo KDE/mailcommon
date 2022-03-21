@@ -7,10 +7,10 @@
 #include "statusrulewidgethandler.h"
 #include "search/searchrule/searchrulestatus.h"
 
+#include <KLazyLocalizedString>
 #include <QComboBox>
 #include <QIcon>
 #include <QStackedWidget>
-#include <KLazyLocalizedString>
 using namespace MailCommon;
 
 static const struct {

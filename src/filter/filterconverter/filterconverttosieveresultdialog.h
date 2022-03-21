@@ -34,4 +34,3 @@ private:
     KSyntaxHighlighting::Repository mSyntaxRepo;
 };
 }
-

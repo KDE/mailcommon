@@ -18,10 +18,10 @@
 #include <Akonadi/TagFetchJob>
 #include <Akonadi/TagFetchScope>
 
+#include <KLazyLocalizedString>
 #include <QComboBox>
 #include <QLineEdit>
 #include <QStackedWidget>
-#include <KLazyLocalizedString>
 using namespace MailCommon;
 
 class FillTagComboJob : public KJob

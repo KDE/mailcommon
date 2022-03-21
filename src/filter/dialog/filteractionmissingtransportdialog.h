@@ -28,4 +28,3 @@ private:
     MailTransport::TransportComboBox *mComboBoxTransport = nullptr;
 };
 }
-

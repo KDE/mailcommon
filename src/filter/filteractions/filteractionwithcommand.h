@@ -55,4 +55,3 @@ public:
     Q_REQUIRED_RESULT virtual ReturnCode genericProcess(ItemContext &context, bool filtering) const;
 };
 }
-

@@ -186,4 +186,3 @@ private:
     const QString mLabel;
 };
 }
-

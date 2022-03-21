@@ -139,4 +139,3 @@ protected:
     bool mImmediate;
 };
 }
-

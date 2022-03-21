@@ -18,4 +18,3 @@ private Q_SLOTS:
     void shouldBeEmpty();
     void shouldRequiresPart();
 };
-

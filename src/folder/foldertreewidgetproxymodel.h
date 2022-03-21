@@ -61,4 +61,3 @@ private:
     std::unique_ptr<FolderTreeWidgetProxyModelPrivate> const d;
 };
 }
-

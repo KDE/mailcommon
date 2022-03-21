@@ -21,4 +21,3 @@ public:
     SearchRule::RequiredPart requiredPart() const override;
 };
 }
-

@@ -27,4 +27,3 @@ public:
     Q_REQUIRED_RESULT QStringList selectedAccount();
 };
 }
-

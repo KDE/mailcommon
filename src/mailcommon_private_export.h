@@ -16,4 +16,3 @@
 #else /* not compiling tests */
 #define MAILCOMMON_TESTS_EXPORT
 #endif
-

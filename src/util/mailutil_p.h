@@ -23,4 +23,3 @@ namespace Util
 Q_REQUIRED_RESULT bool ignoreNewMailInFolder(const Akonadi::Collection &collection);
 }
 }
-

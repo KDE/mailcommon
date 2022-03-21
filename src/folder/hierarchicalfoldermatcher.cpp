@@ -25,19 +25,14 @@ void HierarchicalFolderMatcher::setFilter(const QString &filter, Qt::CaseSensiti
     if (filter.isEmpty()) {
         return;
     }
-    const auto patternOptions = caseSensitivity == Qt::CaseInsensitive ?
-        QRegularExpression::CaseInsensitiveOption :
-        QRegularExpression::NoPatternOption;
+    const auto patternOptions = caseSensitivity == Qt::CaseInsensitive ? QRegularExpression::CaseInsensitiveOption : QRegularExpression::NoPatternOption;
     const auto parts = filter.split(QLatin1Char('/'));
-    std::transform(std::begin(parts), std::end(parts),
-                    std::back_inserter(filterRegExps),
-                    [patternOptions](const auto &part) {
-                        // QRegularExpression::wildcardToRegularExpression() returns a fully anchored
-                        // regular expression, but we want to check for substring matches; wrap
-                        // the user's filter part into '*' to fix this
-                        return QRegularExpression{QRegularExpression::wildcardToRegularExpression(
-                            QLatin1Char('*') + part + QLatin1Char('*')), patternOptions};
-                    });
+    std::transform(std::begin(parts), std::end(parts), std::back_inserter(filterRegExps), [patternOptions](const auto &part) {
+        // QRegularExpression::wildcardToRegularExpression() returns a fully anchored
+        // regular expression, but we want to check for substring matches; wrap
+        // the user's filter part into '*' to fix this
+        return QRegularExpression{QRegularExpression::wildcardToRegularExpression(QLatin1Char('*') + part + QLatin1Char('*')), patternOptions};
+    });
 }
 
 bool HierarchicalFolderMatcher::matches(const QAbstractItemModel *model, const QModelIndex &start, int role)

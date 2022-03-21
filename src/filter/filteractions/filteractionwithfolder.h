@@ -88,4 +88,3 @@ protected:
     Akonadi::Collection mFolder;
 };
 }
-

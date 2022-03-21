@@ -11,10 +11,10 @@
 #include <KLineEdit>
 #include <KLocalizedString>
 
+#include <KLazyLocalizedString>
 #include <QComboBox>
 #include <QLabel>
 #include <QStackedWidget>
-#include <KLazyLocalizedString>
 using namespace MailCommon;
 
 // also see SearchRule::matches() and SearchRule::Function

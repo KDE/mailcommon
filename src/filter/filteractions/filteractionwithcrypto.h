@@ -28,4 +28,3 @@ private:
     mutable QString mGpgPath;
 };
 } // namespace MailCommon
-

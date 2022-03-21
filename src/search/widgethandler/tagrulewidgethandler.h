@@ -39,4 +39,3 @@ public:
     bool update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const override;
 };
 }
-

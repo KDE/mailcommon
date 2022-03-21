@@ -83,4 +83,3 @@ protected:
     bool mCancellable = false;
 };
 }
-

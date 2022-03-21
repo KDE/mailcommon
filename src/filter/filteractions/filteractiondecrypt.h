@@ -31,4 +31,3 @@ public:
     Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
 };
 } // namespace MailCommon
-

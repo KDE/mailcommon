@@ -90,4 +90,3 @@ private:
     QVector<FilterActionDesc *> mList;
 };
 }
-

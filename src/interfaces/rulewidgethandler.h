@@ -38,4 +38,3 @@ public:
     Q_REQUIRED_RESULT virtual bool update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const = 0;
 };
 }
-

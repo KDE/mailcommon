@@ -14,8 +14,8 @@
 
 using namespace MailCommon;
 
-#include <QLabel>
 #include <KLazyLocalizedString>
+#include <QLabel>
 
 // also see SearchRule::matches() and SearchRule::Function
 // if you change the following strings!

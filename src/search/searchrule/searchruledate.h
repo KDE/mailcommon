@@ -53,4 +53,3 @@ public:
     QString informationAboutNotValidRules() const override;
 };
 }
-
