@@ -111,6 +111,8 @@ public:
 protected:
     void changeToolTipsPolicyConfig(ToolTipDisplayPolicy);
 
+    Q_REQUIRED_RESULT bool event(QEvent *e) override;
+
 protected Q_SLOTS:
     void slotChangeTooltipsPolicy(FolderTreeWidget::ToolTipDisplayPolicy);
     void slotManualSortingChanged(bool);
