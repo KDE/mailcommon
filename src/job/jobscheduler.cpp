@@ -14,6 +14,16 @@ ScheduledTask::ScheduledTask(const Akonadi::Collection &folder, bool immediate)
 {
 }
 
+Akonadi::Collection ScheduledTask::folder() const
+{
+    return mCurrentFolder;
+}
+
+bool ScheduledTask::isImmediate() const
+{
+    return mImmediate;
+}
+
 ScheduledTask::~ScheduledTask() = default;
 
 JobScheduler::JobScheduler(QObject *parent)

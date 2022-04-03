@@ -70,9 +70,9 @@ private:
     void archiveNextMessage();
     bool queueFolders(const Akonadi::Collection &root);
     void processMessage(const Akonadi::Item &item);
-    QString pathForCollection(const Akonadi::Collection &collection) const;
-    QString subdirPathForCollection(const Akonadi::Collection &collection) const;
-    bool hasChildren(const Akonadi::Collection &collection) const;
+    Q_REQUIRED_RESULT QString pathForCollection(const Akonadi::Collection &collection) const;
+    Q_REQUIRED_RESULT QString subdirPathForCollection(const Akonadi::Collection &collection) const;
+    Q_REQUIRED_RESULT bool hasChildren(const Akonadi::Collection &collection) const;
     void finish();
     void abort(const QString &errorMessage);
     bool writeDirHelper(const QString &directoryPath);
@@ -81,7 +81,7 @@ private:
     // Some Collection's don't have the name fetched. However, in mAllFolders,
     // we have a list of Collection's that have that information in them, so
     // we can just look it up there.
-    QString collectionName(const Akonadi::Collection &collection) const;
+    Q_REQUIRED_RESULT QString collectionName(const Akonadi::Collection &collection) const;
 
     QString mRealPath;
     QUrl mMailArchivePath;

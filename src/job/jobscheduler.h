@@ -63,19 +63,13 @@ public:
     /**
      * The folder which this task is supposed to handle, 0 if it was deleted meanwhile.
      */
-    Q_REQUIRED_RESULT Akonadi::Collection folder() const
-    {
-        return mCurrentFolder;
-    }
+    Q_REQUIRED_RESULT Akonadi::Collection folder() const;
 
-    Q_REQUIRED_RESULT bool isImmediate() const
-    {
-        return mImmediate;
-    }
+    Q_REQUIRED_RESULT bool isImmediate() const;
 
 private:
-    Akonadi::Collection mCurrentFolder;
-    bool mImmediate;
+    const Akonadi::Collection mCurrentFolder;
+    const bool mImmediate;
 };
 
 /**
