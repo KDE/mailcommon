@@ -17,6 +17,7 @@
 #include <KLocalizedString>
 #include <KXMLGUIClient>
 
+#include <QApplication>
 #include <QFontDatabase>
 #include <QMimeData>
 #include <QMouseEvent>
@@ -33,6 +34,7 @@ public:
     QAction *listMode = nullptr;
     QAction *iconMode = nullptr;
     MailCommonSettings *settings = nullptr;
+    Akonadi::CollectionStatisticsDelegate *delegate = nullptr;
 };
 
 FavoriteCollectionWidget::FavoriteCollectionWidget(MailCommon::MailCommonSettings *settings, KXMLGUIClient *xmlGuiClient, QWidget *parent)
@@ -42,19 +44,27 @@ FavoriteCollectionWidget::FavoriteCollectionWidget(MailCommon::MailCommonSetting
     d->settings = settings;
     setFocusPolicy(Qt::NoFocus);
 
-    auto delegate = new Akonadi::CollectionStatisticsDelegate(this);
-    delegate->setProgressAnimationEnabled(true);
+    d->delegate = new Akonadi::CollectionStatisticsDelegate(this);
+    d->delegate->setProgressAnimationEnabled(true);
 
-    setItemDelegate(delegate);
+    setItemDelegate(d->delegate);
 
-    delegate->setUnreadCountShown(true);
+    d->delegate->setUnreadCountShown(true);
 
     readConfig();
 
     createMenu(xmlGuiClient->actionCollection());
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+    connect(qApp, &QApplication::paletteChanged, this, &FavoriteCollectionWidget::updatePalette);
+#endif
 }
 
 FavoriteCollectionWidget::~FavoriteCollectionWidget() = default;
+
+void FavoriteCollectionWidget::updatePalette()
+{
+    d->delegate->updatePalette();
+}
 
 void FavoriteCollectionWidget::mousePressEvent(QMouseEvent *e)
 {
@@ -305,4 +315,14 @@ void FavoriteCollectionWidget::startDrag(Qt::DropActions supportedActions)
 {
     // skip EntityListView logic (we want to reorder favorites, not trigger moving/copying of actual folders)
     QListView::startDrag(supportedActions);
+}
+
+bool FavoriteCollectionWidget::event(QEvent *e)
+{
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    if (e->type() == QEvent::ApplicationPaletteChange) {
+        updatePalette();
+    }
+#endif
+    return Akonadi::EntityListView::event(e);
 }
