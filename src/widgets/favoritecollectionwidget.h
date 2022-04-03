@@ -47,12 +47,14 @@ protected:
     void startDrag(Qt::DropActions) override;
 
     void mousePressEvent(QMouseEvent *e) override;
+    Q_REQUIRED_RESULT bool event(QEvent *e) override;
 Q_SIGNALS:
     void newTabRequested(bool);
 
 private:
     bool acceptEvent(QDropEvent *event) const;
     void createMenu(KActionCollection *ac);
+    void updatePalette();
 
     class FavoriteCollectionWidgetPrivate;
     std::unique_ptr<FavoriteCollectionWidgetPrivate> const d;
