@@ -52,7 +52,8 @@ void FilterActionDict::init()
     insert(FilterActionSendFakeDisposition::newAction);
     insert(FilterActionSetTransport::newAction);
     insert(FilterActionReplyTo::newAction);
-    insert(FilterActionForward::newAction);
+    // Laurent disable for the moment as async doesn't work
+    // PORT TO ASYNC insert(FilterActionForward::newAction);
     insert(FilterActionRedirect::newAction);
     insert(FilterActionSendReceipt::newAction);
     insert(FilterActionExec::newAction);
