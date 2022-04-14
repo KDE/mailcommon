@@ -431,7 +431,8 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
         const QString actName = QStringLiteral("action-name-%1").arg(i);
         const QString argsName = QStringLiteral("action-args-%1").arg(i);
         // get the action description...
-        FilterActionDesc *desc = FilterManager::filterActionDict()->value(config.readEntry(actName, QString()));
+        const QString resultActName = config.readEntry(actName, QString());
+        FilterActionDesc *desc = FilterManager::filterActionDict()->value(resultActName);
         if (desc) {
             //...create an instance...
             FilterAction *fa = desc->create();
@@ -455,10 +456,9 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
                 }
             }
         } else {
-            KMessageBox::information(nullptr /* app-global modal dialog box */,
-                                     i18n("<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br />Ignoring it.</qt>",
-                                          config.readEntry(actName, QString()),
-                                          mPattern.name()));
+            KMessageBox::information(
+                nullptr /* app-global modal dialog box */,
+                i18n("<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br />Ignoring it.</qt>", resultActName, mPattern.name()));
         }
     }
 
