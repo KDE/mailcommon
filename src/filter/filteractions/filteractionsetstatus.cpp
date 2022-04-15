@@ -43,7 +43,7 @@ FilterAction::ReturnCode FilterActionSetStatus::process(ItemContext &context, bo
     status.setStatusFromFlags(context.item().flags());
 
     Akonadi::MessageStatus oldStatus = status;
-    const Akonadi::MessageStatus newStatus = FilterActionStatus::stati[index - 1];
+    const Akonadi::MessageStatus newStatus = FilterActionStatus::statuses[index - 1];
     if (newStatus == Akonadi::MessageStatus::statusUnread()) {
         status.setRead(false);
     } else {

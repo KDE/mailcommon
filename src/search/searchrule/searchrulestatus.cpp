@@ -97,7 +97,7 @@ bool SearchRuleStatus::matches(const Akonadi::Item &item) const
         }
         break;
     // FIXME what about the remaining funcs, how can they make sense for
-    // stati?
+    // statuses?
     default:
         break;
     }

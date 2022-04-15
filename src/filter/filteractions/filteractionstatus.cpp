@@ -9,24 +9,24 @@
 #include <KLocalizedString>
 using namespace MailCommon;
 
-const Akonadi::MessageStatus MailCommon::FilterActionStatus::stati[] = {Akonadi::MessageStatus::statusImportant(),
-                                                                        Akonadi::MessageStatus::statusRead(),
-                                                                        Akonadi::MessageStatus::statusUnread(),
-                                                                        Akonadi::MessageStatus::statusReplied(),
-                                                                        Akonadi::MessageStatus::statusForwarded(),
-                                                                        Akonadi::MessageStatus::statusWatched(),
-                                                                        Akonadi::MessageStatus::statusIgnored(),
-                                                                        Akonadi::MessageStatus::statusSpam(),
-                                                                        Akonadi::MessageStatus::statusHam(),
-                                                                        Akonadi::MessageStatus::statusToAct()};
+const Akonadi::MessageStatus MailCommon::FilterActionStatus::statuses[] = {Akonadi::MessageStatus::statusImportant(),
+                                                                           Akonadi::MessageStatus::statusRead(),
+                                                                           Akonadi::MessageStatus::statusUnread(),
+                                                                           Akonadi::MessageStatus::statusReplied(),
+                                                                           Akonadi::MessageStatus::statusForwarded(),
+                                                                           Akonadi::MessageStatus::statusWatched(),
+                                                                           Akonadi::MessageStatus::statusIgnored(),
+                                                                           Akonadi::MessageStatus::statusSpam(),
+                                                                           Akonadi::MessageStatus::statusHam(),
+                                                                           Akonadi::MessageStatus::statusToAct()};
 
-const int MailCommon::FilterActionStatus::StatiCount = sizeof(MailCommon::FilterActionStatus::stati) / sizeof(Akonadi::MessageStatus);
+const int MailCommon::FilterActionStatus::StatiCount = sizeof(MailCommon::FilterActionStatus::statuses) / sizeof(Akonadi::MessageStatus);
 
 FilterActionStatus::FilterActionStatus(const QString &name, const QString &label, QObject *parent)
     : FilterActionWithStringList(name, label, parent)
 {
     // if you change this list, also update
-    // FilterActionSetStatus::stati above
+    // FilterActionSetStatus::statuses above
     mParameterList.append(QString());
     mParameterList.append(i18nc("msg status", "Important"));
     mParameterList.append(i18nc("msg status", "Read"));
@@ -69,7 +69,7 @@ void FilterActionStatus::argsFromString(const QString &argsStr)
         Akonadi::MessageStatus status;
 
         for (int i = 0; i < FilterActionStatus::StatiCount; ++i) {
-            status = stati[i];
+            status = statuses[i];
             if (realStatusString(status.statusStr()) == QLatin1String(argsStr.toLatin1())) {
                 mParameter = mParameterList.at(i + 1);
                 return;
@@ -87,7 +87,7 @@ QString FilterActionStatus::argsAsString() const
         return {};
     }
 
-    return realStatusString(FilterActionStatus::stati[index - 1].statusStr());
+    return realStatusString(FilterActionStatus::statuses[index - 1].statusStr());
 }
 
 QString FilterActionStatus::displayString() const

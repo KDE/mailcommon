@@ -25,7 +25,7 @@ public:
     static QString realStatusString(const QString &statusStr);
     Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
 
-    static const Akonadi::MessageStatus stati[];
+    static const Akonadi::MessageStatus statuses[];
     static const int StatiCount;
 };
 }
