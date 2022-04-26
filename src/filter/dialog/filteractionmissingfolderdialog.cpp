@@ -61,11 +61,11 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(const Akonadi::
     label->setObjectName(QStringLiteral("folderlabel"));
     label->setWordWrap(true);
     if (filtername.isEmpty()) {
-        label->setText(i18n("Please select a folder"));
+        label->setText(i18n("Please select a folder:"));
     } else {
         label->setText(
             i18n("Filter folder is missing. "
-                 "Please select a folder to use with filter \"%1\"",
+                 "Please select a folder to use with filter \"%1\":",
                  filtername));
     }
     mainLayout->addWidget(label);
@@ -73,6 +73,7 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(const Akonadi::
     mFolderRequester->setObjectName(QStringLiteral("folderrequester"));
     connect(mFolderRequester, &MailCommon::FolderRequester::folderChanged, this, &FilterActionMissingFolderDialog::slotFolderChanged);
     mainLayout->addWidget(mFolderRequester);
+    mainLayout->addItem(new QSpacerItem(1, 1, QSizePolicy::Expanding, QSizePolicy::Expanding));
 
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));

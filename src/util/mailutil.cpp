@@ -191,7 +191,7 @@ Akonadi::Collection::Id MailCommon::Util::convertFolderPathToCollectionId(const 
 {
     Akonadi::Collection::Id newFolderId = -1;
     bool exactPath = false;
-    Akonadi::Collection::List lst = FilterActionMissingFolderDialog::potentialCorrectFolders(folder, exactPath);
+    const Akonadi::Collection::List lst = FilterActionMissingFolderDialog::potentialCorrectFolders(folder, exactPath);
     if (lst.count() == 1 && exactPath) {
         newFolderId = lst.at(0).id();
     } else {
