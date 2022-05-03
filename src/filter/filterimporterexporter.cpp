@@ -26,6 +26,7 @@
 #include <KListWidgetSearchLine>
 #include <KMessageBox>
 #include <QFileDialog>
+#include <QPointer>
 #include <QPushButton>
 #include <QRegularExpression>
 
