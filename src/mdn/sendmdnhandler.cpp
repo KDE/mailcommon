@@ -9,8 +9,8 @@
 
 #include "kernel/mailkernel.h"
 #include "mailcommon_debug.h"
-#include "mdnadvicehelper.h"
 #include "util/mailutil.h"
+#include <MessageComposer/MDNAdviceHelper>
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
 #include <MessageComposer/Util>
@@ -70,7 +70,7 @@ void SendMdnHandler::SendMdnHandlerPrivate::handleMessages()
             continue;
         }
 
-        const QPair<bool, KMime::MDN::SendingMode> mdnSend = MDNAdviceHelper::instance()->checkAndSetMDNInfo(item, KMime::MDN::Displayed);
+        const QPair<bool, KMime::MDN::SendingMode> mdnSend = MessageComposer::MDNAdviceHelper::instance()->checkAndSetMDNInfo(item, KMime::MDN::Displayed);
         if (mdnSend.first) {
             const int quote = MessageViewer::MessageViewerSettings::self()->quoteMessage();
 

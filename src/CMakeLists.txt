@@ -103,7 +103,6 @@ target_sources(KF5MailCommon PRIVATE
     filter/itemcontext.cpp
     filter/kmfilterdialog.cpp
     filter/mailfilter.cpp
-    filter/mdnadvicedialog.cpp
     filter/filterimporterpathcache.cpp
     filter/dialog/selectthunderbirdfilterfilesdialog.cpp
     filter/dialog/selectthunderbirdfilterfileswidget.cpp
@@ -181,8 +180,6 @@ target_sources(KF5MailCommon PRIVATE
     widgets/redirectwidget.cpp
     widgets/favoritecollectionwidget.cpp
     mdn/sendmdnhandler.cpp
-    mdn/mdnstateattribute.cpp
-    mdn/mdnadvicehelper.cpp
     util/cryptoutils.cpp
     util/mailutil.cpp
     util/resourcereadconfigfile.cpp
@@ -195,7 +192,6 @@ target_sources(KF5MailCommon PRIVATE
     filter/filterselectiondialog.h
     filter/kmfilteraccountlist.h
     filter/filterlog.h
-    filter/mdnadvicedialog.h
     filter/dialog/filteractionmissingidentitydialog.h
     filter/dialog/filteractionmissingtemplatedialog.h
     filter/dialog/filteractionmissingaccountdialog.h
@@ -330,9 +326,7 @@ target_sources(KF5MailCommon PRIVATE
     util/mailutil.h
     util/cryptoutils.h
     util/resourcereadconfigfile.h
-    mdn/mdnstateattribute.h
     mdn/sendmdnhandler.h
-    mdn/mdnadvicehelper.h
     )
 
 
@@ -396,7 +390,6 @@ if (BUILD_TESTING)
    add_subdirectory(snippets/autotests)
    add_subdirectory(filter/tests) 
    add_subdirectory(search/autotests)
-   add_subdirectory(mdn/autotests/)
 endif()
 
 ecm_generate_headers(MailCommon_CamelCase_HEADERS
@@ -495,7 +488,6 @@ ecm_generate_headers(MailCommon_Camelcasefilteraction_HEADERS
 ecm_generate_headers(MailCommon_Camelcasemdn_HEADERS
   HEADER_NAMES
   SendMdnHandler
-  MDNStateAttribute
   REQUIRED_HEADERS MailCommon_mdn_HEADERS
   PREFIX MailCommon
   RELATIVE mdn

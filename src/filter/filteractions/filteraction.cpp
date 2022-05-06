@@ -9,10 +9,10 @@
 #include "filteraction.h"
 
 #include "../kernel/mailkernel.h"
-#include "filter/mdnadvicedialog.h"
 #include "mailcommon_debug.h"
-#include "mdn/mdnadvicehelper.h"
 #include "util/mailutil.h"
+#include <MessageComposer/MDNAdviceDialog>
+#include <MessageComposer/MDNAdviceHelper>
 
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
@@ -100,7 +100,7 @@ void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionTyp
         return;
     }
 
-    const QPair<bool, KMime::MDN::SendingMode> mdnSend = MDNAdviceHelper::instance()->checkAndSetMDNInfo(item, type, true);
+    const QPair<bool, KMime::MDN::SendingMode> mdnSend = MessageComposer::MDNAdviceHelper::instance()->checkAndSetMDNInfo(item, type, true);
     if (mdnSend.first) {
         const int quote = MessageViewer::MessageViewerSettings::self()->quoteMessage();
         QString receiptTo;
