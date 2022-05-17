@@ -180,6 +180,8 @@ target_sources(KF5MailCommon PRIVATE
     widgets/redirectwidget.cpp
     widgets/favoritecollectionwidget.cpp
     mdn/sendmdnhandler.cpp
+    mdn/mdnwarningwidgetjob.h
+    mdn/mdnwarningwidgetjob.cpp
     util/cryptoutils.cpp
     util/mailutil.cpp
     util/resourcereadconfigfile.cpp
