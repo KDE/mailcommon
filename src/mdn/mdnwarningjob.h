@@ -32,6 +32,9 @@ public:
 
     Q_REQUIRED_RESULT bool canStart() const;
 
+Q_SIGNALS:
+    void showWarning();
+
 private:
     void modifyItem();
     Akonadi::Item mItem;
