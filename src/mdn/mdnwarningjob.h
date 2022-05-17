@@ -18,12 +18,12 @@ class IKernel;
  * @brief The MDNWarningWidgetJob class
  * @author Laurent Montel <montel@kde.org>
  */
-class MAILCOMMON_EXPORT MDNWarningWidgetJob : public QObject
+class MAILCOMMON_EXPORT MDNWarningJob : public QObject
 {
     Q_OBJECT
 public:
-    explicit MDNWarningWidgetJob(IKernel *kernel, QObject *parent = nullptr);
-    ~MDNWarningWidgetJob() override;
+    explicit MDNWarningJob(IKernel *kernel, QObject *parent = nullptr);
+    ~MDNWarningJob() override;
 
     void start();
 

@@ -180,8 +180,8 @@ target_sources(KF5MailCommon PRIVATE
     widgets/redirectwidget.cpp
     widgets/favoritecollectionwidget.cpp
     mdn/sendmdnhandler.cpp
-    mdn/mdnwarningwidgetjob.h
-    mdn/mdnwarningwidgetjob.cpp
+    mdn/mdnwarningjob.h
+    mdn/mdnwarningjob.cpp
     util/cryptoutils.cpp
     util/mailutil.cpp
     util/resourcereadconfigfile.cpp
@@ -490,6 +490,7 @@ ecm_generate_headers(MailCommon_Camelcasefilteraction_HEADERS
 ecm_generate_headers(MailCommon_Camelcasemdn_HEADERS
   HEADER_NAMES
   SendMdnHandler
+  MDNWarningJob
   REQUIRED_HEADERS MailCommon_mdn_HEADERS
   PREFIX MailCommon
   RELATIVE mdn

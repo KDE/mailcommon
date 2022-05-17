@@ -4,7 +4,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#include "mdnwarningwidgetjob.h"
+#include "mdnwarningjob.h"
 #include "kernel/mailkernel.h"
 #include "mailcommon_debug.h"
 #include "util/mailutil.h"
@@ -16,17 +16,17 @@
 #include <MessageComposer/Util>
 #include <MessageViewer/MessageViewerSettings>
 using namespace MailCommon;
-MDNWarningWidgetJob::MDNWarningWidgetJob(IKernel *kernel, QObject *parent)
+MDNWarningJob::MDNWarningJob(IKernel *kernel, QObject *parent)
     : QObject{parent}
     , mKernel(kernel)
 {
 }
 
-MDNWarningWidgetJob::~MDNWarningWidgetJob()
+MDNWarningJob::~MDNWarningJob()
 {
 }
 
-void MDNWarningWidgetJob::start()
+void MDNWarningJob::start()
 {
     if (!canStart()) {
         deleteLater();
@@ -63,22 +63,22 @@ void MDNWarningWidgetJob::start()
     }
 }
 
-const Akonadi::Item &MDNWarningWidgetJob::item() const
+const Akonadi::Item &MDNWarningJob::item() const
 {
     return mItem;
 }
 
-void MDNWarningWidgetJob::setItem(const Akonadi::Item &newItem)
+void MDNWarningJob::setItem(const Akonadi::Item &newItem)
 {
     mItem = newItem;
 }
 
-bool MDNWarningWidgetJob::canStart() const
+bool MDNWarningJob::canStart() const
 {
     return mItem.isValid();
 }
 
-void MDNWarningWidgetJob::modifyItem()
+void MDNWarningJob::modifyItem()
 {
     auto mdnStateAttr = new MessageComposer::MDNStateAttribute(MessageComposer::MDNStateAttribute::MDNStateUnknown);
     // create a minimal version of item with just the attribute we want to change
