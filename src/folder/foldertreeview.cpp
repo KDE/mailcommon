@@ -19,6 +19,7 @@
 #include <KMessageBox>
 #include <QMenu>
 
+#include <QActionGroup>
 #include <QHeaderView>
 #include <QMouseEvent>
 

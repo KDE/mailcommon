@@ -17,6 +17,7 @@
 #include <KLocalizedString>
 #include <KXMLGUIClient>
 
+#include <QActionGroup>
 #include <QApplication>
 #include <QFontDatabase>
 #include <QMimeData>

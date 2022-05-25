@@ -21,6 +21,7 @@ using MailCommon::FilterLog;
 #include <KConfigGroup>
 
 #include <QDataStream>
+#include <QIODevice>
 
 #include <algorithm>
 

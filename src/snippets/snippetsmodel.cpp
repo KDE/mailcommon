@@ -14,6 +14,7 @@
 #include <KMessageBox>
 #include <KSharedConfig>
 #include <QDataStream>
+#include <QIODevice>
 #include <QMimeData>
 #include <QStringList>
 

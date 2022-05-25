@@ -59,7 +59,7 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(const QMap<QUrl, QStr
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
-    okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
+    okButton->setShortcut(QKeySequence{Qt::CTRL | Qt::Key_Return});
     auto user1Button = new QPushButton(this);
     user1Button->setObjectName(QStringLiteral("addtag"));
     user1Button->setText(i18n("Add Tag..."));
