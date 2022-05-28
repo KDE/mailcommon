@@ -30,5 +30,5 @@ void SnippetSelectAttachmentDialogTest::shouldHaveDefaultValues()
 
     auto *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("button"));
     QVERIFY(buttonBox);
-    QCOMPARE(buttonBox->standardButtons(), {QDialogButtonBox::Ok | QDialogButtonBox::Cancel});
+    QCOMPARE(buttonBox->standardButtons(), QDialogButtonBox::StandardButtons{QDialogButtonBox::Ok | QDialogButtonBox::Cancel});
 }
