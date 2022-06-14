@@ -8,7 +8,6 @@
 #include "kernel/mailkernel.h"
 #include "mailcommon_debug.h"
 #include "util/mailutil.h"
-#include <Akonadi/Item>
 #include <Akonadi/ItemModifyJob>
 #include <MessageComposer/MDNAdviceHelper>
 #include <MessageComposer/MDNStateAttribute>
