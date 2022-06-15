@@ -149,6 +149,20 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     }
 
     bool rc = matchesInternal(msgContents);
+    if (!rc) {
+        // Try to search endwith for emails => remove >
+        // Bug 455273
+        if ((qstricmp(field().constData(), "to") == 0) || (qstricmp(field().constData(), "cc") == 0) || (qstricmp(field().constData(), "bcc") == 0)
+            || (qstricmp(field().constData(), "from") == 0) || (qstricmp(field().constData(), "reply-to") == 0)) {
+            if (function() == SearchRule::FuncEndWith || function() == SearchRule::FuncNotEndWith) {
+                QString newContents = msgContents;
+                if (newContents.endsWith(QLatin1Char('>'))) {
+                    newContents.chop(1);
+                    rc = matchesInternal(newContents);
+                }
+            }
+        }
+    }
     if (FilterLog::instance()->isLogging()) {
         QString msgStr = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>") : QStringLiteral("<font color=#FF0000>0 = </font>"));
         msgStr += FilterLog::recode(asString());
