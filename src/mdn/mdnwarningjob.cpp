@@ -9,8 +9,8 @@
 #include "mailcommon_debug.h"
 #include "util/mailutil.h"
 #include <Akonadi/ItemModifyJob>
+#include <Akonadi/MDNStateAttribute>
 #include <MessageComposer/MDNAdviceHelper>
-#include <MessageComposer/MDNStateAttribute>
 #include <MessageComposer/MessageSender>
 #include <MessageComposer/Util>
 #include <MessageViewer/MessageViewerSettings>
@@ -79,7 +79,7 @@ bool MDNWarningJob::canStart() const
 
 void MDNWarningJob::modifyItem()
 {
-    auto mdnStateAttr = new MessageComposer::MDNStateAttribute(MessageComposer::MDNStateAttribute::MDNStateUnknown);
+    auto mdnStateAttr = new Akonadi::MDNStateAttribute(Akonadi::MDNStateAttribute::MDNStateUnknown);
     // create a minimal version of item with just the attribute we want to change
     Akonadi::Item i(mItem.id());
     i.setRevision(mItem.revision());

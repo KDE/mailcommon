@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
-set(PIM_VERSION "5.20.41")
+set(PIM_VERSION "5.20.42")
 
 project(mailcommon VERSION ${PIM_VERSION})
 
@@ -37,7 +37,7 @@ add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt 
 set(QT_REQUIRED_VERSION "5.15.2")
 
 set(MAILCOMMON_LIB_VERSION ${PIM_VERSION})
-set(AKONADIMIME_LIB_VERSION "5.20.40")
+set(AKONADIMIME_LIB_VERSION "5.20.41")
 set(AKONADICONTACT_LIB_VERSION "5.20.40")
 set(MESSAGELIB_LIB_VERSION "5.20.42")
 set(KMIME_LIB_VERSION "5.20.40")
