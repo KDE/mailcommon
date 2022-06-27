@@ -9,6 +9,7 @@
 #include "mailcommon_export.h"
 #include <Akonadi/Item>
 #include <MailCommon/MailKernel>
+#include <MessageComposer/MDNAdviceHelper>
 #include <QObject>
 
 namespace MailCommon
@@ -36,7 +37,7 @@ Q_SIGNALS:
     void showWarning();
 
 private:
-    void modifyItem();
+    Q_REQUIRED_RESULT QPair<bool, KMime::MDN::SendingMode> modifyItem();
     Akonadi::Item mItem;
     IKernel *const mKernel = nullptr;
 };

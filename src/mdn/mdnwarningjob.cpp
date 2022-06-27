@@ -10,7 +10,6 @@
 #include "util/mailutil.h"
 #include <Akonadi/ItemModifyJob>
 #include <Akonadi/MDNStateAttribute>
-#include <MessageComposer/MDNAdviceHelper>
 #include <MessageComposer/MessageSender>
 #include <MessageComposer/Util>
 #include <MessageViewer/MessageViewerSettings>
@@ -45,6 +44,8 @@ void MDNWarningJob::start()
         return;
     }
 
+    // TODO modifyItem();
+
     const QPair<bool, KMime::MDN::SendingMode> mdnSend = MessageComposer::MDNAdviceHelper::instance()->checkAndSetMDNInfo(mItem, KMime::MDN::Displayed);
     if (mdnSend.first) {
         const int quote = MessageViewer::MessageViewerSettings::self()->quoteMessage();
@@ -77,10 +78,27 @@ bool MDNWarningJob::canStart() const
     return mItem.isValid();
 }
 
-void MDNWarningJob::modifyItem()
+QPair<bool, KMime::MDN::SendingMode> MDNWarningJob::modifyItem()
 {
+    QPair<bool, KMime::MDN::SendingMode> result;
+    const KMime::Message::Ptr msg = MessageComposer::Util::message(mItem);
     auto mdnStateAttr = new Akonadi::MDNStateAttribute(Akonadi::MDNStateAttribute::MDNStateUnknown);
     // create a minimal version of item with just the attribute we want to change
+#if 0
+    // RFC 2298: An MDN MUST NOT be generated in response to an MDN.
+    if (MessageComposer::Util::findTypeInMessage(msg.data(), "message", "disposition-notification")) {
+        mdnStateAttr->setMDNState(Akonadi::MDNStateAttribute::MDNIgnore);
+    } else if (mode == 0) { // ignore
+        doSend = false;
+        mdnStateAttr->setMDNState(Akonadi::MDNStateAttribute::MDNIgnore);
+    } else if (mode == 2) { // denied
+        doSend = true;
+        mdnStateAttr->setMDNState(Akonadi::MDNStateAttribute::MDNDenied);
+    } else if (mode == 3) { // the user wants to send. let's make sure we can, according to the RFC.
+        doSend = true;
+        mdnStateAttr->setMDNState(dispositionToSentState(d));
+    }
+#endif
     Akonadi::Item i(mItem.id());
     i.setRevision(mItem.revision());
     i.setMimeType(mItem.mimeType());
@@ -88,4 +106,5 @@ void MDNWarningJob::modifyItem()
     auto modify = new Akonadi::ItemModifyJob(i);
     modify->setIgnorePayload(true);
     modify->disableRevisionCheck();
+    return result;
 }
