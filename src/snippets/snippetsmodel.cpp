@@ -521,7 +521,8 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
             Q_EMIT dndDone();
             return true;
         } else {
-            if (KMessageBox::Yes == KMessageBox::questionYesNo(nullptr, i18n("Do you want to update snippet?"), i18n("Update snippet"))) {
+            if (KMessageBox::Yes
+                == KMessageBox::questionYesNo(nullptr, i18n("Do you want to update snippet?"), i18n("Update snippet"), KGuiItem(i18n("Update")))) {
                 item->setText(text);
                 item->setSubject(subject);
                 item->setTo(to);
