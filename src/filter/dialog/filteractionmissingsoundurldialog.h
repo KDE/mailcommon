@@ -21,6 +21,6 @@ public:
 private:
     void readConfig();
     void writeConfig();
-    KUrlRequester *mUrlWidget = nullptr;
+    KUrlRequester *const mUrlWidget;
 };
 }

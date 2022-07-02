@@ -25,6 +25,7 @@ using namespace MailCommon;
 
 FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *parent)
     : QDialog(parent)
+    , mEditor(new KPIMTextEdit::PlainTextEditorWidget(this))
 {
     setWindowTitle(i18nc("@title:window", "Convert to Sieve Script"));
     auto topLayout = new QVBoxLayout(this);
@@ -39,7 +40,6 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
     setModal(true);
     connect(saveButton, &QPushButton::clicked, this, &FilterConvertToSieveResultDialog::slotSave);
 
-    mEditor = new KPIMTextEdit::PlainTextEditorWidget;
     mEditor->editor()->setSpellCheckingSupport(false);
     mEditor->setObjectName(QStringLiteral("editor"));
     auto syntaxHighlighter = new KSyntaxHighlighting::SyntaxHighlighter(mEditor->editor()->document());

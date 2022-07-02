@@ -19,6 +19,7 @@ using namespace MailCommon;
 
 FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QString &filtername, const QString &argStr, QWidget *parent)
     : QDialog(parent)
+    , mUrlWidget(new KUrlRequester(this))
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select sound"));
@@ -37,7 +38,6 @@ FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QStri
              filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
-    mUrlWidget = new KUrlRequester(this);
     mUrlWidget->setObjectName(QStringLiteral("urlwidget"));
     mainLayout->addWidget(mUrlWidget);
 

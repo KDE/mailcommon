@@ -18,12 +18,12 @@ using namespace MailCommon;
 
 SelectThunderbirdFilterFilesDialog::SelectThunderbirdFilterFilesDialog(const QString &defaultSettingPath, QWidget *parent)
     : QDialog(parent)
+    , mSelectFilterFilesWidget(new MailCommon::SelectThunderbirdFilterFilesWidget(defaultSettingPath, this))
 {
     setWindowTitle(i18nc("@title:window", "Select thunderbird filter files"));
     setModal(true);
     auto mainLayout = new QVBoxLayout(this);
 
-    mSelectFilterFilesWidget = new MailCommon::SelectThunderbirdFilterFilesWidget(defaultSettingPath, this);
     mainLayout->addWidget(mSelectFilterFilesWidget);
 
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);

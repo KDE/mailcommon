@@ -22,6 +22,6 @@ public:
 private:
     void readConfig();
     void writeConfig();
-    QComboBox *mComboBoxTemplate = nullptr;
+    QComboBox *const mComboBoxTemplate;
 };
 }

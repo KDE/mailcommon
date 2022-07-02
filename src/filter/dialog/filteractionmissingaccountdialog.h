@@ -22,6 +22,6 @@ public:
 private:
     void readConfig();
     void writeConfig();
-    MailCommon::KMFilterAccountList *mAccountList = nullptr;
+    MailCommon::KMFilterAccountList *const mAccountList;
 };
 }

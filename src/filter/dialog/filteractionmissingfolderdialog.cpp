@@ -30,6 +30,7 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(const Akonadi::
                                                                  const QString &argStr,
                                                                  QWidget *parent)
     : QDialog(parent)
+    , mFolderRequester(new MailCommon::FolderRequester(this))
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Folder"));
@@ -69,7 +70,6 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(const Akonadi::
                  filtername));
     }
     mainLayout->addWidget(label);
-    mFolderRequester = new MailCommon::FolderRequester(this);
     mFolderRequester->setObjectName(QStringLiteral("folderrequester"));
     connect(mFolderRequester, &MailCommon::FolderRequester::folderChanged, this, &FilterActionMissingFolderDialog::slotFolderChanged);
     mainLayout->addWidget(mFolderRequester);

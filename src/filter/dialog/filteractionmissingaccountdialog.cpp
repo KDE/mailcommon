@@ -21,6 +21,7 @@ using namespace MailCommon;
 
 FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QStringList &lstAccount, const QString &filtername, QWidget *parent)
     : QDialog(parent)
+    , mAccountList(new MailCommon::KMFilterAccountList(this))
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Account"));
@@ -34,7 +35,6 @@ FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QString
              filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
-    mAccountList = new MailCommon::KMFilterAccountList(this);
     mAccountList->setObjectName(QStringLiteral("accountlist"));
     mAccountList->applyOnAccount(lstAccount);
     mainLayout->addWidget(mAccountList);

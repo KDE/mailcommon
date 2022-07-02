@@ -20,6 +20,7 @@ using namespace MailCommon;
 
 FilterActionMissingTransportDialog::FilterActionMissingTransportDialog(const QString &filtername, QWidget *parent)
     : QDialog(parent)
+    , mComboBoxTransport(new MailTransport::TransportComboBox(this))
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Transport"));
@@ -33,7 +34,6 @@ FilterActionMissingTransportDialog::FilterActionMissingTransportDialog(const QSt
              filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
-    mComboBoxTransport = new MailTransport::TransportComboBox(this);
     mComboBoxTransport->setObjectName(QStringLiteral("comboboxtransport"));
     mainLayout->addWidget(mComboBoxTransport);
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);

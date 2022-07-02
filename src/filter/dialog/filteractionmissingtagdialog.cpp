@@ -25,6 +25,7 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(const QMap<QUrl, QStr
                                                            const QString &argsStr,
                                                            QWidget *parent)
     : QDialog(parent)
+    , mTagList(new QListWidget(this))
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Tag"));
@@ -42,7 +43,6 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(const QMap<QUrl, QStr
              filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
-    mTagList = new QListWidget(this);
     mTagList->setObjectName(QStringLiteral("taglist"));
 
     QMap<QUrl, QString>::const_iterator map = tagList.constBegin();

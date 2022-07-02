@@ -30,7 +30,7 @@ private Q_SLOTS:
 private:
     void readConfig();
     void writeConfig();
-    KPIMTextEdit::PlainTextEditorWidget *mEditor = nullptr;
+    KPIMTextEdit::PlainTextEditorWidget *const mEditor;
     KSyntaxHighlighting::Repository mSyntaxRepo;
 };
 }

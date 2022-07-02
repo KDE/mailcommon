@@ -21,6 +21,7 @@ using namespace MailCommon;
 
 FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(const QStringList &templateList, const QString &filtername, QWidget *parent)
     : QDialog(parent)
+    , mComboBoxTemplate(new QComboBox(this))
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Template"));
@@ -34,7 +35,6 @@ FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(const QStri
              filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
-    mComboBoxTemplate = new QComboBox(this);
     mComboBoxTemplate->setObjectName(QStringLiteral("comboboxtemplate"));
     mComboBoxTemplate->addItems(templateList);
     mainLayout->addWidget(mComboBoxTemplate);

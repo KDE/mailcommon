@@ -46,7 +46,7 @@ private:
 private:
     void writeConfig();
     void readConfig();
-    MailCommon::FolderRequester *mFolderRequester = nullptr;
+    MailCommon::FolderRequester *const mFolderRequester;
     QListWidget *mListwidget = nullptr;
     QPushButton *mOkButton = nullptr;
 };
