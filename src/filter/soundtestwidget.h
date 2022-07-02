@@ -71,8 +71,8 @@ private:
     void playSound();
     void openSoundDialog(KUrlRequester *);
     void slotUrlChanged(const QString &);
-    KUrlRequester *m_urlRequester = nullptr;
-    QPushButton *m_playButton = nullptr;
+    KUrlRequester *const m_urlRequester;
+    QPushButton *const m_playButton;
     Phonon::MediaObject *m_player = nullptr;
 };
 }

@@ -23,16 +23,16 @@ using namespace MailCommon;
 
 SoundTestWidget::SoundTestWidget(QWidget *parent)
     : QWidget(parent)
+    , m_playButton(new QPushButton(this))
+    , m_urlRequester(new KUrlRequester(this))
 {
     auto layout = new QHBoxLayout(this);
     layout->setContentsMargins({});
 
-    m_playButton = new QPushButton(this);
     m_playButton->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-start")));
     m_playButton->setToolTip(i18n("Play"));
     layout->addWidget(m_playButton);
 
-    m_urlRequester = new KUrlRequester(this);
     layout->addWidget(m_urlRequester);
 
     connect(m_playButton, &QPushButton::clicked, this, &SoundTestWidget::playSound);

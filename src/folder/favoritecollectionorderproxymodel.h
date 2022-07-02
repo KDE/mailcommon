@@ -23,6 +23,6 @@ public:
     ~FavoriteCollectionOrderProxyModel() override;
 
 protected:
-    Akonadi::Collection parentCollection(const QModelIndex &index) const override;
+    Q_REQUIRED_RESULT Akonadi::Collection parentCollection(const QModelIndex &index) const override;
 };
 }

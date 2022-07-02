@@ -20,6 +20,9 @@ using namespace MailCommon;
 
 FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     : QDialog(parent)
+    , filtersListWidget(new QListWidget(this))
+    , selectAllButton(new QPushButton(i18n("Select All"), this))
+    , unselectAllButton(new QPushButton(i18n("Unselect All"), this))
 {
     setObjectName(QStringLiteral("filterselection"));
     setModal(true);
@@ -33,7 +36,6 @@ FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     connect(buttonBox, &QDialogButtonBox::accepted, this, &FilterSelectionDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterSelectionDialog::reject);
 
-    filtersListWidget = new QListWidget(this);
     auto searchLine = new KListWidgetSearchLine(this, filtersListWidget);
     searchLine->setPlaceholderText(i18nc("@info Displayed grayed-out inside the textbox, verb to search", "Search"));
 
@@ -45,9 +47,7 @@ FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
 
     auto const buttonLayout = new QHBoxLayout();
     top->addLayout(buttonLayout);
-    selectAllButton = new QPushButton(i18n("Select All"), this);
     buttonLayout->addWidget(selectAllButton);
-    unselectAllButton = new QPushButton(i18n("Unselect All"), this);
     buttonLayout->addWidget(unselectAllButton);
     top->addWidget(buttonBox);
 

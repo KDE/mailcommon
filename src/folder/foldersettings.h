@@ -87,7 +87,7 @@ public:
 
     void setMailingList(const MailingList &mlist);
 
-    MailingList mailingList() const;
+    Q_REQUIRED_RESULT MailingList mailingList() const;
 
     /**
      * Returns true if the replies to mails from this folder should be

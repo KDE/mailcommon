@@ -61,7 +61,10 @@ public:
     void setEnableDragDrop(bool enabled);
 
 protected:
-    enum Move { Next = 0, Previous = 1 };
+    enum Move {
+        Next = 0,
+        Previous = 1,
+    };
 
     void init(bool showUnreadCount);
     void selectModelIndex(const QModelIndex &);

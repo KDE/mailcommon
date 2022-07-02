@@ -37,10 +37,10 @@ public Q_SLOTS:
 private:
     void writeConfig();
     void readConfig();
-    QListWidget *filtersListWidget = nullptr;
+    QListWidget *const filtersListWidget;
     QVector<MailFilter *> originalFilters;
-    QPushButton *selectAllButton = nullptr;
-    QPushButton *unselectAllButton = nullptr;
+    QPushButton *const selectAllButton;
+    QPushButton *const unselectAllButton;
     QPushButton *mOkButton = nullptr;
 };
 }

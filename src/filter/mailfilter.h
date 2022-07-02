@@ -55,7 +55,11 @@ public:
       @param Checked apply to all accounts specified by setApplyOnAccount
 
     */
-    enum AccountType { All, ButImap, Checked };
+    enum AccountType {
+        All,
+        ButImap,
+        Checked,
+    };
 
     /** Constructor that initializes basic settings. */
     MailFilter();
