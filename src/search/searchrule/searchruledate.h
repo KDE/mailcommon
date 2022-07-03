@@ -24,7 +24,7 @@ public:
     /**
      * @copydoc SearchRule::isEmpty()
      */
-    bool isEmpty() const override;
+    Q_REQUIRED_RESULT bool isEmpty() const override;
 
     /**
      * @copydoc SearchRule::matches()
@@ -34,7 +34,7 @@ public:
     /**
      * @copydoc SearchRule::requiredPart()
      */
-    RequiredPart requiredPart() const override;
+    Q_REQUIRED_RESULT RequiredPart requiredPart() const override;
 
     // Optimized matching not implemented, will use the unoptimized matching
     // from SearchRule
@@ -50,6 +50,6 @@ public:
      * @copydoc SearchRule::addQueryTerms()
      */
     void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const override;
-    QString informationAboutNotValidRules() const override;
+    Q_REQUIRED_RESULT QString informationAboutNotValidRules() const override;
 };
 }

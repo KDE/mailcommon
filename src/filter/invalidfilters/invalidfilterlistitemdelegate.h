@@ -24,9 +24,10 @@ public:
     Q_REQUIRED_RESULT QList<QWidget *> createItemWidgets(const QModelIndex &) const override;
 
     void updateItemWidgets(const QList<QWidget *> widgets, const QStyleOptionViewItem &option, const QPersistentModelIndex &index) const override;
-private Q_SLOTS:
-    void slotShowDetails();
 Q_SIGNALS:
     void showDetails(const QString &details);
+
+private:
+    void slotShowDetails();
 };
 }

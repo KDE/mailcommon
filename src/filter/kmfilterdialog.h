@@ -186,11 +186,9 @@ protected Q_SLOTS:
 
     void slotFolderChanged(const Akonadi::Collection &);
 
-private Q_SLOTS:
+private:
     void slotExportAsSieveScript();
     void slotHelp();
-
-private:
     void importFilters(MailCommon::FilterImporterExporter::FilterType type);
 
 protected:

@@ -64,9 +64,19 @@ public:
      *  it's rules match, whereas a pattern with @p OpOr will match if
      *  any of it's rules matches.
      */
-    enum Operator { OpAnd, OpOr, OpAll };
+    enum Operator {
+        OpAnd,
+        OpOr,
+        OpAll,
+    };
 
-    enum SparqlQueryError { NoError = 0, MissingCheck, FolderEmptyOrNotIndexed, EmptyResult, NotEnoughCharacters };
+    enum SparqlQueryError {
+        NoError = 0,
+        MissingCheck,
+        FolderEmptyOrNotIndexed,
+        EmptyResult,
+        NotEnoughCharacters,
+    };
 
     /**
      * Constructor which provides a pattern with minimal, but

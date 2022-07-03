@@ -26,7 +26,7 @@ public:
 private:
     void writeConfig();
     void readConfig();
-    InvalidFilterWidget *mInvalidFilterWidget = nullptr;
-    InvalidFilterInfoWidget *mInvalidFilterInfoWidget = nullptr;
+    InvalidFilterWidget *const mInvalidFilterWidget;
+    InvalidFilterInfoWidget *const mInvalidFilterInfoWidget;
 };
 }

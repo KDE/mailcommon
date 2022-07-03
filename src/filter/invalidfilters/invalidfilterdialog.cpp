@@ -18,6 +18,8 @@ using namespace MailCommon;
 
 InvalidFilterDialog::InvalidFilterDialog(QWidget *parent)
     : QDialog(parent)
+    , mInvalidFilterWidget(new InvalidFilterWidget(this))
+    , mInvalidFilterInfoWidget(new InvalidFilterInfoWidget(this))
 {
     setWindowTitle(i18nc("@title:window", "Invalid Filters"));
     setWindowIcon(QIcon::fromTheme(QStringLiteral("kmail")));
@@ -36,11 +38,9 @@ InvalidFilterDialog::InvalidFilterDialog(QWidget *parent)
     auto vbox = new QVBoxLayout;
     vbox->setContentsMargins({});
     w->setLayout(vbox);
-    mInvalidFilterWidget = new InvalidFilterWidget(this);
     mInvalidFilterWidget->setObjectName(QStringLiteral("invalid_filter_widget"));
     vbox->addWidget(mInvalidFilterWidget);
 
-    mInvalidFilterInfoWidget = new InvalidFilterInfoWidget(this);
     mInvalidFilterInfoWidget->setObjectName(QStringLiteral("invalid_filter_infowidget"));
     vbox->addWidget(mInvalidFilterInfoWidget);
     connect(mInvalidFilterWidget, &InvalidFilterWidget::showDetails, mInvalidFilterInfoWidget, &InvalidFilterInfoWidget::slotShowDetails);

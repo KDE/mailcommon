@@ -121,10 +121,10 @@ private:
     Akonadi::Collection mCollection;
 
     /** Mailing list attributes */
-    bool mMailingListEnabled;
+    bool mMailingListEnabled = false;
     MailingList mMailingList;
 
-    bool mUseDefaultIdentity;
+    bool mUseDefaultIdentity = true;
     uint mIdentity;
 
     MessageViewer::Viewer::DisplayFormatMessage mFormatMessage = MessageViewer::Viewer::Unknown;
@@ -138,6 +138,6 @@ private:
 
     /** shortcut associated with this folder or null, if none is configured. */
     QKeySequence mShortcut;
-    bool mWriteConfig;
+    bool mWriteConfig = true;
 };
 }

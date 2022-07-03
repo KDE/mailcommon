@@ -30,7 +30,8 @@ class FillTagComboJob : public KJob
 public:
     explicit FillTagComboJob(QComboBox *combo, QObject *parent = nullptr);
     void start() override;
-private Q_SLOTS:
+
+private:
     void onDestroyed();
     void onTagsFetched(KJob *);
 

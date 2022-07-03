@@ -162,7 +162,7 @@ public:
      */
     void endUpdate();
 
-    QMap<QUrl, QString> tagList() const;
+    Q_REQUIRED_RESULT QMap<QUrl, QString> tagList() const;
 
     bool initialized() const;
 

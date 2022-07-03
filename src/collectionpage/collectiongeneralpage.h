@@ -46,7 +46,7 @@ public:
 protected:
     void init(const Akonadi::Collection &);
 
-private Q_SLOTS:
+private:
     void slotFolderContentsSelectionChanged(int);
     void slotNameChanged(const QString &name);
 

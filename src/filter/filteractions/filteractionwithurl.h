@@ -99,7 +99,8 @@ protected:
 
 private:
     mutable FilterActionWithUrlHelpButton *mHelpButton = nullptr;
-private Q_SLOTS:
+
+private:
     void slotHelp();
 };
 }

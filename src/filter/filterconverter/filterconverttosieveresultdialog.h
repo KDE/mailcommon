@@ -24,10 +24,8 @@ public:
 
     void setCode(const QString &code);
 
-private Q_SLOTS:
-    void slotSave();
-
 private:
+    void slotSave();
     void readConfig();
     void writeConfig();
     KPIMTextEdit::PlainTextEditorWidget *const mEditor;

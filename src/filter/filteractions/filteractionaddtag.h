@@ -42,7 +42,8 @@ public:
     void clearParamWidget(QWidget *paramWidget) const override;
 
     Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
-private Q_SLOTS:
+
+private:
     void slotTagListingFinished();
 
 private:

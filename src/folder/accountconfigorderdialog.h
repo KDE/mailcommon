@@ -30,7 +30,9 @@ private:
     void slotMoveDown();
     void slotEnableControls();
     void slotEnableAccountOrder(bool state);
-    enum Type { IdentifierAccount = Qt::UserRole + 1 };
+    enum Type {
+        IdentifierAccount = Qt::UserRole + 1,
+    };
 
     void writeConfig();
     void readConfig();

@@ -48,28 +48,28 @@ public:
     /**
      * @copydoc SearchRule::isEmpty()
      */
-    bool isEmpty() const override;
+    Q_REQUIRED_RESULT bool isEmpty() const override;
 
     /**
      * @copydoc SearchRule::requiredPart()
      */
-    RequiredPart requiredPart() const override;
+    Q_REQUIRED_RESULT RequiredPart requiredPart() const override;
 
     /**
      * @copydoc SearchRule::matches()
      */
-    bool matches(const Akonadi::Item &item) const override;
+    Q_REQUIRED_RESULT bool matches(const Akonadi::Item &item) const override;
 
     /**
      * A helper method for the main matches() method.
      * Does the actual comparing.
      */
-    bool matchesInternal(const QString &contents) const;
+    Q_REQUIRED_RESULT bool matchesInternal(const QString &contents) const;
 
     /**
      * @copydoc SearchRule::addQueryTerms()
      */
     void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const override;
-    QString informationAboutNotValidRules() const override;
+    Q_REQUIRED_RESULT QString informationAboutNotValidRules() const override;
 };
 }

@@ -59,11 +59,10 @@ public:
 
     void setAttachment(const QString &keyword);
     Q_REQUIRED_RESULT QString attachment() const;
-private Q_SLOTS:
-    void slotTextChanged();
-    void slotGroupChanged();
 
 private:
+    void slotTextChanged();
+    void slotGroupChanged();
     bool snippetIsValid() const;
     void writeConfig();
     void readConfig();
