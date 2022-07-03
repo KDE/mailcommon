@@ -28,7 +28,7 @@ public:
 
 private:
     void insertVariable(MessageComposer::ConvertSnippetVariablesUtil::VariableType variable);
-    QLineEdit *mLineEdit = nullptr;
+    QLineEdit *const mLineEdit;
     MessageComposer::ConvertSnippetVariableMenu *mConvertMenu = nullptr;
 };
 }

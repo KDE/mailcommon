@@ -30,6 +30,7 @@ SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<Q
     : QDialog(parent)
     , mVariableName(variableName)
     , mVariables(variables)
+    , mVariableValueText(new KPIMTextEdit::PlainTextEditorWidget(this))
 {
     setWindowTitle(i18nc("@title:window", "Enter Values for Variables"));
     auto mainLayout = new QVBoxLayout(this);
@@ -37,7 +38,6 @@ SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<Q
     auto label = new QLabel(i18n("Enter the replacement values for '%1':", variableName), this);
     mainLayout->addWidget(label);
 
-    mVariableValueText = new KPIMTextEdit::PlainTextEditorWidget(this);
     mainLayout->addWidget(mVariableValueText);
 
     mSaveVariable = new QCheckBox(i18n("Make value &default"), this);

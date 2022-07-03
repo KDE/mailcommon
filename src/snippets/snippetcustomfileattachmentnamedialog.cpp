@@ -21,12 +21,12 @@ static const char mySnippetCustomFileAttachmentNameDialogGroupName[] = "SnippetC
 using namespace MailCommon;
 SnippetCustomFileAttachmentNameDialog::SnippetCustomFileAttachmentNameDialog(QWidget *parent)
     : QDialog(parent)
+    , mCustomWidget(new SnippetCustomFileAttachmentNameWidget(this))
 {
     setWindowTitle(i18nc("@title:window", "Customize File Name Attachment"));
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
 
-    mCustomWidget = new SnippetCustomFileAttachmentNameWidget(this);
     mCustomWidget->setObjectName(QStringLiteral("mCustomWidget"));
     mainLayout->addWidget(mCustomWidget);
 

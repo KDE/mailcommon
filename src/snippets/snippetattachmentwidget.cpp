@@ -16,12 +16,12 @@ using namespace MailCommon;
 
 SnippetAttachmentWidget::SnippetAttachmentWidget(QWidget *parent)
     : QWidget(parent)
+    , mLineEdit(new QLineEdit(this))
 {
     auto layout = new QHBoxLayout(this);
     layout->setObjectName(QStringLiteral("layout"));
     layout->setContentsMargins({});
 
-    mLineEdit = new QLineEdit(this);
     mLineEdit->setObjectName(QStringLiteral("lineedit"));
     mLineEdit->setPlaceholderText(i18n("Click on button for selecting attachment file"));
     layout->addWidget(mLineEdit);

@@ -14,12 +14,12 @@
 using namespace MailCommon;
 SnippetSelectAttachmentWidget::SnippetSelectAttachmentWidget(QWidget *parent)
     : QWidget(parent)
+    , mEditor(new SnippetSelectorWidget(this))
 {
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
     mainLayout->setContentsMargins({});
 
-    mEditor = new SnippetSelectorWidget(this);
     mEditor->setObjectName(QStringLiteral("editor"));
     mainLayout->addWidget(mEditor);
 }

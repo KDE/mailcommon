@@ -27,11 +27,11 @@ static const char mySnippetDialogConfigGroupName[] = "SnippetDialog";
 SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMode, QWidget *parent)
     : QDialog(parent)
     , mActionCollection(actionCollection)
+    , mSnippetWidget(new SnippetWidget(this))
     , mInGroupMode(inGroupMode)
 {
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
-    mSnippetWidget = new SnippetWidget(this);
 
     mainLayout->addWidget(mSnippetWidget);
 

@@ -19,12 +19,12 @@ static const char mySnippetSelectAttachmentDialogGroupName[] = "SnippetSelectAtt
 using namespace MailCommon;
 SnippetSelectAttachmentDialog::SnippetSelectAttachmentDialog(QWidget *parent)
     : QDialog(parent)
+    , mAttachmentWidget(new SnippetSelectAttachmentWidget(this))
 {
     setWindowTitle(i18nc("@title:window", "Select Attachments"));
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
 
-    mAttachmentWidget = new SnippetSelectAttachmentWidget(this);
     mAttachmentWidget->setObjectName(QStringLiteral("attachmentwidget"));
     mainLayout->addWidget(mAttachmentWidget);
 

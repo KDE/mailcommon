@@ -24,6 +24,6 @@ public:
 private:
     void writeConfig();
     void readConfig();
-    SnippetSelectAttachmentWidget *mAttachmentWidget = nullptr;
+    SnippetSelectAttachmentWidget *const mAttachmentWidget;
 };
 }

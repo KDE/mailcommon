@@ -26,6 +26,6 @@ public:
 private:
     void readConfig();
     void writeConfig();
-    SnippetCustomFileAttachmentNameWidget *mCustomWidget = nullptr;
+    SnippetCustomFileAttachmentNameWidget *const mCustomWidget;
 };
 }

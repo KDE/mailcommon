@@ -35,7 +35,7 @@ private:
     void slotAccepted();
     const QString mVariableName;
     QMap<QString, QString> *mVariables = nullptr;
-    KPIMTextEdit::PlainTextEditorWidget *mVariableValueText = nullptr;
+    KPIMTextEdit::PlainTextEditorWidget *const mVariableValueText;
     QCheckBox *mSaveVariable = nullptr;
 };
 }

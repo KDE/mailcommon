@@ -37,6 +37,6 @@ public:
     Q_REQUIRED_RESULT QStringList attachments() const;
 
 private:
-    SnippetSelectorWidget *mEditor = nullptr;
+    SnippetSelectorWidget *const mEditor;
 };
 }

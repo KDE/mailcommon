@@ -22,13 +22,13 @@ using namespace MailCommon;
 
 RedirectWidget::RedirectWidget(QWidget *parent)
     : QWidget(parent)
+    , mEdit(new MessageComposer::ComposerLineEdit(true))
 {
     auto hbox = new QHBoxLayout(this);
     hbox->setSpacing(0);
     hbox->setContentsMargins({});
     hbox->setAlignment(Qt::AlignRight);
 
-    mEdit = new MessageComposer::ComposerLineEdit(true);
     mEdit->setRecentAddressConfig(KernelIf->config().data());
     mEdit->setMinimumWidth(300);
     mEdit->setClearButtonEnabled(true);

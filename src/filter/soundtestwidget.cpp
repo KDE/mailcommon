@@ -23,8 +23,8 @@ using namespace MailCommon;
 
 SoundTestWidget::SoundTestWidget(QWidget *parent)
     : QWidget(parent)
-    , m_playButton(new QPushButton(this))
     , m_urlRequester(new KUrlRequester(this))
+    , m_playButton(new QPushButton(this))
 {
     auto layout = new QHBoxLayout(this);
     layout->setContentsMargins({});

@@ -16,6 +16,7 @@
 using namespace MailCommon;
 SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWidget *parent)
     : QWidget(parent)
+    , mLineEdit(new QLineEdit(this))
 {
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
@@ -29,7 +30,6 @@ SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWi
     label->setObjectName(QStringLiteral("label"));
     lineEditLayout->addWidget(label);
 
-    mLineEdit = new QLineEdit(this);
     mLineEdit->setObjectName(QStringLiteral("mLineEdit"));
     lineEditLayout->addWidget(mLineEdit);
 

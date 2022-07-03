@@ -38,7 +38,11 @@ public:
     {
     }
 
-    enum TypeAddress { ResendTo, ResendCc, ResendBcc };
+    enum TypeAddress {
+        ResendTo,
+        ResendCc,
+        ResendBcc,
+    };
 
     void slotUser1();
     void slotUser2();

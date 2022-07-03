@@ -28,6 +28,6 @@ Q_SIGNALS:
 
 private:
     void slotSelectAttachment();
-    QLineEdit *mLineEdit = nullptr;
+    QLineEdit *const mLineEdit;
 };
 }

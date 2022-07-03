@@ -31,7 +31,7 @@ Q_SIGNALS:
 
 private:
     void slotAddressSelection();
-    MessageComposer::ComposerLineEdit *mEdit = nullptr;
+    MessageComposer::ComposerLineEdit *const mEdit;
     QString mResendStr;
 };
 }
