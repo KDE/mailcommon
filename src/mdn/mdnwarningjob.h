@@ -23,6 +23,12 @@ class MAILCOMMON_EXPORT MDNWarningJob : public QObject
 {
     Q_OBJECT
 public:
+    enum ResponseMDN {
+        Unknown = 0,
+        MDNIgnore,
+        Denied,
+        Send,
+    };
     explicit MDNWarningJob(IKernel *kernel, QObject *parent = nullptr);
     ~MDNWarningJob() override;
 
@@ -33,12 +39,16 @@ public:
 
     Q_REQUIRED_RESULT bool canStart() const;
 
+    Q_REQUIRED_RESULT ResponseMDN response() const;
+    void setResponse(ResponseMDN newResponse);
+
 Q_SIGNALS:
     void showWarning();
 
 private:
     Q_REQUIRED_RESULT QPair<bool, KMime::MDN::SendingMode> modifyItem();
     Akonadi::Item mItem;
+    ResponseMDN mResponse = Unknown;
     IKernel *const mKernel = nullptr;
 };
 }

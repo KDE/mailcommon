@@ -75,7 +75,7 @@ void MDNWarningJob::setItem(const Akonadi::Item &newItem)
 
 bool MDNWarningJob::canStart() const
 {
-    return mItem.isValid();
+    return mItem.isValid() && (mResponse != Unknown);
 }
 
 QPair<bool, KMime::MDN::SendingMode> MDNWarningJob::modifyItem()
@@ -85,6 +85,7 @@ QPair<bool, KMime::MDN::SendingMode> MDNWarningJob::modifyItem()
     auto mdnStateAttr = new Akonadi::MDNStateAttribute(Akonadi::MDNStateAttribute::MDNStateUnknown);
     // create a minimal version of item with just the attribute we want to change
 #if 0
+    bool doSend = false;
     // RFC 2298: An MDN MUST NOT be generated in response to an MDN.
     if (MessageComposer::Util::findTypeInMessage(msg.data(), "message", "disposition-notification")) {
         mdnStateAttr->setMDNState(Akonadi::MDNStateAttribute::MDNIgnore);
@@ -107,4 +108,14 @@ QPair<bool, KMime::MDN::SendingMode> MDNWarningJob::modifyItem()
     modify->setIgnorePayload(true);
     modify->disableRevisionCheck();
     return result;
+}
+
+MDNWarningJob::ResponseMDN MDNWarningJob::response() const
+{
+    return mResponse;
+}
+
+void MDNWarningJob::setResponse(ResponseMDN newResponse)
+{
+    mResponse = newResponse;
 }
