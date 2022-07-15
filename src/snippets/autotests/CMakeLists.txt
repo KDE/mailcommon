@@ -1,36 +1,19 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
-ecm_add_test(snippetsmanagertest.cpp
-    NAME_PREFIX "mailcommon-snippets-"
-    LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test Qt${QT_MAJOR_VERSION}::Gui KF5::MailCommon KF5::XmlGui
-)
+macro(add_snippets _source)
+     get_filename_component(_name ${_source} NAME_WE)
+     ecm_add_test(${_source} ${_name}.h
+         TEST_NAME ${_name}
+         NAME_PREFIX "mailcommon-filter-"
+         LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test Qt${QT_MAJOR_VERSION}::Gui KF5::MailCommon KF5::XmlGui
+     )
 
-ecm_add_test(snippetwidgettest.cpp
-    NAME_PREFIX "mailcommon-snippets-"
-    LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test Qt${QT_MAJOR_VERSION}::Gui KF5::MailCommon KF5::XmlGui
-)
+endmacro()
 
-ecm_add_test(snippetattachmentwidgettest.cpp
-    NAME_PREFIX "mailcommon-snippets-"
-    LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test Qt${QT_MAJOR_VERSION}::Gui KF5::MailCommon
-)
-
-ecm_add_test(snippetselectattachmentwidgettest.cpp
-    NAME_PREFIX "mailcommon-snippets-"
-    LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test Qt${QT_MAJOR_VERSION}::Gui KF5::MailCommon
-)
-
-ecm_add_test(snippetselectattachmentdialogtest.cpp
-    NAME_PREFIX "mailcommon-snippets-"
-    LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test Qt${QT_MAJOR_VERSION}::Gui KF5::MailCommon
-)
-
-ecm_add_test(snippetcustomfileattachmentnamedialogtest.cpp
-    NAME_PREFIX "mailcommon-snippets-"
-    LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test Qt${QT_MAJOR_VERSION}::Gui KF5::MailCommon
-)
-
-ecm_add_test(snippetcustomfileattachmentnamewidgettest.cpp
-    NAME_PREFIX "mailcommon-snippets-"
-    LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test Qt${QT_MAJOR_VERSION}::Gui KF5::MailCommon
-)
+add_snippets(snippetsmanagertest.cpp)
+add_snippets(snippetwidgettest.cpp)
+add_snippets(snippetattachmentwidgettest.cpp)
+add_snippets(snippetselectattachmentwidgettest.cpp)
+add_snippets(snippetselectattachmentdialogtest.cpp)
+add_snippets(snippetcustomfileattachmentnamedialogtest.cpp)
+add_snippets(snippetcustomfileattachmentnamewidgettest.cpp)
