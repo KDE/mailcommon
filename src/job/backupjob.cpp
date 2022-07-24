@@ -152,7 +152,7 @@ void BackupJob::abort(const QString &errorMessage)
     text += QLatin1Char('\n') + errorMessage;
     Q_EMIT error(text);
     if (mDisplayMessageBox) {
-        KMessageBox::sorry(mParentWidget, text, i18n("Archiving failed"));
+        KMessageBox::error(mParentWidget, text, i18n("Archiving failed"));
     }
     deleteLater();
     // Clean up archive file here?

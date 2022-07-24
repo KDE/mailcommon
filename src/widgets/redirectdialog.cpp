@@ -205,7 +205,7 @@ void RedirectDialog::accept()
 {
     const QString editTo = d->mEditTo->resend();
     if (editTo.isEmpty()) {
-        KMessageBox::sorry(this, i18n("You cannot redirect the message without an address."), i18n("Empty Redirection Address"));
+        KMessageBox::error(this, i18n("You cannot redirect the message without an address."), i18n("Empty Redirection Address"));
     } else {
         done(QDialog::Accepted);
     }
