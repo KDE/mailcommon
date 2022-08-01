@@ -42,9 +42,6 @@ public:
     Q_REQUIRED_RESULT ResponseMDN response() const;
     void setResponse(ResponseMDN newResponse);
 
-Q_SIGNALS:
-    void showWarning();
-
 private:
     Q_REQUIRED_RESULT QPair<bool, KMime::MDN::SendingMode> modifyItem();
     Akonadi::Item mItem;
