@@ -61,6 +61,8 @@ void MDNWarningJob::start()
             }
         }
     }
+    Q_EMIT finished();
+    deleteLater();
 }
 
 const Akonadi::Item &MDNWarningJob::item() const
