@@ -44,9 +44,9 @@ void MDNWarningJob::start()
         return;
     }
 
-    // TODO modifyItem();
+    const QPair<bool, KMime::MDN::SendingMode> mdnSend = modifyItem();
 
-    const QPair<bool, KMime::MDN::SendingMode> mdnSend = MessageComposer::MDNAdviceHelper::instance()->checkAndSetMDNInfo(mItem, KMime::MDN::Displayed);
+    // const QPair<bool, KMime::MDN::SendingMode> mdnSend = MessageComposer::MDNAdviceHelper::instance()->checkAndSetMDNInfo(mItem, KMime::MDN::Displayed);
     if (mdnSend.first) {
         const int quote = MessageViewer::MessageViewerSettings::self()->quoteMessage();
 
@@ -86,6 +86,7 @@ QPair<bool, KMime::MDN::SendingMode> MDNWarningJob::modifyItem()
     const KMime::Message::Ptr msg = MessageComposer::Util::message(mItem);
     auto mdnStateAttr = new Akonadi::MDNStateAttribute(Akonadi::MDNStateAttribute::MDNStateUnknown);
     // create a minimal version of item with just the attribute we want to change
+    // FIXME!
 #if 0
     bool doSend = false;
     // RFC 2298: An MDN MUST NOT be generated in response to an MDN.
