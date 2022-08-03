@@ -10,6 +10,7 @@
 #include "util/mailutil.h"
 #include <Akonadi/ItemModifyJob>
 #include <Akonadi/MDNStateAttribute>
+#include <MessageComposer/MDNAdviceHelper>
 #include <MessageComposer/MessageSender>
 #include <MessageComposer/Util>
 #include <MessageViewer/MessageViewerSettings>
@@ -98,8 +99,9 @@ QPair<bool, KMime::MDN::SendingMode> MDNWarningJob::modifyItem()
         mdnStateAttr->setMDNState(Akonadi::MDNStateAttribute::MDNDenied);
     } else if (mResponse == Send) { // the user wants to send. let's make sure we can, according to the RFC.
         doSend = true;
-        // FIXME mdnStateAttr->setMDNState(dispositionToSentState(d));
+        mdnStateAttr->setMDNState(MessageComposer::MDNAdviceHelper::dispositionToSentState(KMime::MDN::Displayed));
     }
+    // QPair<bool, KMime::MDN::SendingMode>(doSend, s)
     result.first = doSend;
     // TODO result.second = doSend;
     Akonadi::Item i(mItem.id());
