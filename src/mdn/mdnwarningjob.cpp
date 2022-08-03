@@ -86,23 +86,22 @@ QPair<bool, KMime::MDN::SendingMode> MDNWarningJob::modifyItem()
     const KMime::Message::Ptr msg = MessageComposer::Util::message(mItem);
     auto mdnStateAttr = new Akonadi::MDNStateAttribute(Akonadi::MDNStateAttribute::MDNStateUnknown);
     // create a minimal version of item with just the attribute we want to change
-    // FIXME!
-#if 0
     bool doSend = false;
     // RFC 2298: An MDN MUST NOT be generated in response to an MDN.
     if (MessageComposer::Util::findTypeInMessage(msg.data(), "message", "disposition-notification")) {
         mdnStateAttr->setMDNState(Akonadi::MDNStateAttribute::MDNIgnore);
-    } else if (mode == 0) { // ignore
+    } else if (mResponse == MDNIgnore) { // ignore
         doSend = false;
         mdnStateAttr->setMDNState(Akonadi::MDNStateAttribute::MDNIgnore);
-    } else if (mode == 2) { // denied
+    } else if (mResponse == Denied) { // denied
         doSend = true;
         mdnStateAttr->setMDNState(Akonadi::MDNStateAttribute::MDNDenied);
-    } else if (mode == 3) { // the user wants to send. let's make sure we can, according to the RFC.
+    } else if (mResponse == Send) { // the user wants to send. let's make sure we can, according to the RFC.
         doSend = true;
-        mdnStateAttr->setMDNState(dispositionToSentState(d));
+        // FIXME mdnStateAttr->setMDNState(dispositionToSentState(d));
     }
-#endif
+    result.first = doSend;
+    // TODO result.second = doSend;
     Akonadi::Item i(mItem.id());
     i.setRevision(mItem.revision());
     i.setMimeType(mItem.mimeType());
