@@ -42,6 +42,9 @@ public:
     Q_REQUIRED_RESULT ResponseMDN response() const;
     void setResponse(ResponseMDN newResponse);
 
+    Q_REQUIRED_RESULT KMime::MDN::SendingMode sendingMode() const;
+    void setSendingMode(KMime::MDN::SendingMode newSendingMode);
+
 Q_SIGNALS:
     void finished();
 
@@ -49,6 +52,7 @@ private:
     Q_REQUIRED_RESULT QPair<bool, KMime::MDN::SendingMode> modifyItem();
     Akonadi::Item mItem;
     ResponseMDN mResponse = Unknown;
+    KMime::MDN::SendingMode mSendingMode = KMime::MDN::SendingMode::SentAutomatically;
     IKernel *const mKernel = nullptr;
 };
 }

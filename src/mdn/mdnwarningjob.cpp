@@ -47,7 +47,6 @@ void MDNWarningJob::start()
 
     const QPair<bool, KMime::MDN::SendingMode> mdnSend = modifyItem();
 
-    // const QPair<bool, KMime::MDN::SendingMode> mdnSend = MessageComposer::MDNAdviceHelper::instance()->checkAndSetMDNInfo(mItem, KMime::MDN::Displayed);
     if (mdnSend.first) {
         const int quote = MessageViewer::MessageViewerSettings::self()->quoteMessage();
 
@@ -101,9 +100,8 @@ QPair<bool, KMime::MDN::SendingMode> MDNWarningJob::modifyItem()
         doSend = true;
         mdnStateAttr->setMDNState(MessageComposer::MDNAdviceHelper::dispositionToSentState(KMime::MDN::Displayed));
     }
-    // QPair<bool, KMime::MDN::SendingMode>(doSend, s)
     result.first = doSend;
-    // TODO result.second = doSend;
+    result.second = mSendingMode;
     Akonadi::Item i(mItem.id());
     i.setRevision(mItem.revision());
     i.setMimeType(mItem.mimeType());
@@ -112,6 +110,16 @@ QPair<bool, KMime::MDN::SendingMode> MDNWarningJob::modifyItem()
     modify->setIgnorePayload(true);
     modify->disableRevisionCheck();
     return result;
+}
+
+KMime::MDN::SendingMode MDNWarningJob::sendingMode() const
+{
+    return mSendingMode;
+}
+
+void MDNWarningJob::setSendingMode(KMime::MDN::SendingMode newSendingMode)
+{
+    mSendingMode = newSendingMode;
 }
 
 MDNWarningJob::ResponseMDN MDNWarningJob::response() const
