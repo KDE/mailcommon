@@ -28,6 +28,7 @@ MDNWarningJob::~MDNWarningJob()
 void MDNWarningJob::start()
 {
     if (!canStart()) {
+        qCWarning(MAILCOMMON_LOG) << " Impossible to start MDNWarningJob";
         deleteLater();
         return;
     }
@@ -35,17 +36,20 @@ void MDNWarningJob::start()
     if (collection.isValid()
         && (CommonKernel->folderIsSentMailFolder(collection) || CommonKernel->folderIsTrash(collection) || CommonKernel->folderIsDraftOrOutbox(collection)
             || CommonKernel->folderIsTemplates(collection))) {
+        qCWarning(MAILCOMMON_LOG) << " It's not a valid collection";
         deleteLater();
         return;
     }
 
     const KMime::Message::Ptr message = MessageComposer::Util::message(mItem);
     if (!message) {
+        qCWarning(MAILCOMMON_LOG) << " It's not a valid message";
         deleteLater();
         return;
     }
 
     const QPair<bool, KMime::MDN::SendingMode> mdnSend = modifyItem();
+    qCDebug(MAILCOMMON_LOG) << " Send " << mdnSend.first << " mdnSend.sendmode " << mdnSend.second;
 
     if (mdnSend.first) {
         const int quote = MessageViewer::MessageViewerSettings::self()->quoteMessage();
