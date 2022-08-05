@@ -48,7 +48,7 @@ void MDNWarningJob::start()
         return;
     }
 
-    const QPair<bool, KMime::MDN::SendingMode> mdnSend = modifyItem();
+    const QPair<bool, KMime::MDN::SendingMode> mdnSend = modifyItem(message);
     qCDebug(MAILCOMMON_LOG) << " Send " << mdnSend.first << " mdnSend.sendmode " << mdnSend.second;
 
     if (mdnSend.first) {
@@ -84,10 +84,9 @@ bool MDNWarningJob::canStart() const
     return mItem.isValid() && (mResponse != Unknown);
 }
 
-QPair<bool, KMime::MDN::SendingMode> MDNWarningJob::modifyItem()
+QPair<bool, KMime::MDN::SendingMode> MDNWarningJob::modifyItem(const KMime::Message::Ptr &msg)
 {
     QPair<bool, KMime::MDN::SendingMode> result;
-    const KMime::Message::Ptr msg = MessageComposer::Util::message(mItem);
     auto mdnStateAttr = new Akonadi::MDNStateAttribute(Akonadi::MDNStateAttribute::MDNStateUnknown);
     // create a minimal version of item with just the attribute we want to change
     bool doSend = false;
