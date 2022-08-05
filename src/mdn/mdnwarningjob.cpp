@@ -10,7 +10,6 @@
 #include "util/mailutil.h"
 #include <Akonadi/ItemModifyJob>
 #include <Akonadi/MDNStateAttribute>
-#include <MessageComposer/MDNAdviceHelper>
 #include <MessageComposer/MessageSender>
 #include <MessageComposer/Util>
 #include <MessageViewer/MessageViewerSettings>
