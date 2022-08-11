@@ -10,26 +10,33 @@ endmacro()
 
 add_search_autotest(searchpatterntest
     searchpatterntest.cpp
+    searchpatterntest.h
 )
 add_search_autotest(searchruletest
     searchruletest.cpp
+    searchruletest.h
 )
 add_search_autotest(searchrulestatustest
     searchrulestatustest.cpp
+    searchrulestatustest.h
 )
 add_search_autotest(searchrulenumericaltest
     searchrulenumericaltest.cpp
+    searchrulenumericaltest.h
     ../searchrule/searchrulenumerical.cpp
 )
 add_search_autotest(searchruledatetest
     searchruledatetest.cpp
+    searchruledatetest.h
     ../searchrule/searchruledate.cpp
 )
 add_search_autotest(searchrulestringtest
     searchrulestringtest.cpp
+    searchrulestringtest.h
     ../searchrule/searchrulestring.cpp
 )
 add_search_autotest(searchruleencryptiontest
     searchruleencryptiontest.cpp
+    searchruleencryptiontest.h
     ../searchrule/searchruleencryption.cpp
 )
