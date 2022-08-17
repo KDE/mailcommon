@@ -5,7 +5,7 @@ macro(add_snippets _source)
      ecm_add_test(${_source} ${_name}.h
          TEST_NAME ${_name}
          NAME_PREFIX "mailcommon-filter-"
-         LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test Qt${QT_MAJOR_VERSION}::Gui KF5::MailCommon KF5::XmlGui
+         LINK_LIBRARIES Qt::Test Qt::Gui KF5::MailCommon KF5::XmlGui
      )
 
 endmacro()

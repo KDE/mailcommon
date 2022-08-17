@@ -364,7 +364,7 @@ PRIVATE
   KF5::ItemViews
   KF5::SyntaxHighlighting
   KF5::GuiAddons
-  Qt${QT_MAJOR_VERSION}::Xml
+  Qt::Xml
 )
 
 
