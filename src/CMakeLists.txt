@@ -380,7 +380,7 @@ set_target_properties(KF5MailCommon PROPERTIES
 
 install(TARGETS
     KF5MailCommon
-    EXPORT KF5MailCommonTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS}
+    EXPORT KF5MailCommonTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
 )
 
 if (BUILD_TESTING)
