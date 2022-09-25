@@ -20,8 +20,6 @@
 #include <Akonadi/ItemFetchScope>
 #include <Akonadi/MessageParts>
 
-#include <KMime/KMimeMessage>
-
 using namespace MailCommon;
 
 class MailCommon::FolderCollectionMonitorPrivate

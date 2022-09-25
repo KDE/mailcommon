@@ -12,7 +12,6 @@
 
 #include <KActionCollection>
 #include <KConfigGroup>
-#include <KPIMTextEdit/PlainTextEditor>
 #include <KSharedConfig>
 #include <MessageComposer/ConvertSnippetVariableMenu>
 #include <QDialogButtonBox>

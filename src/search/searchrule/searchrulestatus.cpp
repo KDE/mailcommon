@@ -8,8 +8,6 @@
 #include "filter/filterlog.h"
 using MailCommon::FilterLog;
 
-#include <KMime/KMimeMessage>
-
 using namespace MailCommon;
 
 struct _statusNames {

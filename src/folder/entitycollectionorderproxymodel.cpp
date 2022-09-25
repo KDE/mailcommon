@@ -15,8 +15,6 @@
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/SpecialMailCollections>
 
-#include <QRegularExpression>
-
 using namespace MailCommon;
 class Q_DECL_HIDDEN MailCommon::EntityCollectionOrderProxyModel::EntityCollectionOrderProxyModelPrivate
 {

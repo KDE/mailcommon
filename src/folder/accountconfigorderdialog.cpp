@@ -17,8 +17,6 @@
 #include <Akonadi/AgentInstance>
 #include <Akonadi/AgentManager>
 
-#include <KMime/KMimeMessage>
-
 #include <KConfigGroup>
 #include <QCheckBox>
 #include <QDialogButtonBox>

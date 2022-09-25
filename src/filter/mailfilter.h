@@ -15,8 +15,6 @@
 #include <Akonadi/Collection>
 #include <QKeySequence>
 
-#include <KMime/KMimeMessage>
-
 #include <QDataStream>
 #include <QVector>
 

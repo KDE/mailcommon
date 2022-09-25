@@ -15,7 +15,6 @@ using MessageCore::MailingList;
 #include <Akonadi/Collection>
 #include <Akonadi/CollectionStatistics>
 
-#include <KIO/Job>
 #include <KSharedConfig>
 #include <QKeySequence>
 

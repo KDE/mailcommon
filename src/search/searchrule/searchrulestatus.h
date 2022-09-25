@@ -10,7 +10,6 @@
 
 #include "mailcommon/searchpattern.h"
 #include <Akonadi/MessageStatus>
-#include <KLazyLocalizedString>
 
 namespace MailCommon
 {

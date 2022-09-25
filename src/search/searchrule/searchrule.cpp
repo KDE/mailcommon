@@ -11,8 +11,6 @@
 #include "searchrule/searchrulestatus.h"
 #include "searchrule/searchrulestring.h"
 
-#include <KMime/KMimeMessage>
-
 #include <KConfigGroup>
 
 #include <QDataStream>

@@ -23,7 +23,6 @@
 #include <Akonadi/EntityDisplayAttribute>
 #include <PimCommon/PimUtil>
 
-#include <KIdentityManagement/IdentityCombo>
 #include <Libkdepim/LineEditCatchReturnKey>
 #include <PimCommonAkonadi/ImapResourceCapabilitiesManager>
 

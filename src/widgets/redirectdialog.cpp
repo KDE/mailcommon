@@ -12,7 +12,6 @@
 
 #include <KIdentityManagement/Identity>
 #include <KIdentityManagement/IdentityCombo>
-#include <KIdentityManagement/IdentityManager>
 
 #include <MailTransport/TransportComboBox>
 

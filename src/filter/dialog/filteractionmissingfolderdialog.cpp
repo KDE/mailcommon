@@ -14,8 +14,6 @@
 
 #include <Akonadi/EntityMimeTypeFilterModel>
 
-#include <KIdentityManagement/IdentityCombo>
-
 #include <KLocalizedString>
 
 #include <KConfigGroup>
