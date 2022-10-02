@@ -1,0 +1,3048 @@
+# Translation of libmailcommon.po into Serbian.
+# Toplica Tanaskovic <toptan@kde.org.yu>, 2003, 2004.
+# Marko Rosic <roske@kde.org.yu>, 2003.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2004, 2005, 2006, 2007, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017.
+# Slobodan Simic <slsimic@gmail.com>, 2005, 2007, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: libmailcommon\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-06-13 02:16+0200\n"
+"PO-Revision-Date: 2017-12-15 12:38+0100\n"
+"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr@ijekavianlatin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+"X-Associated-UI-Catalogs: kmail kxmlgui5 kconfigwidgets5 kwidgetsaddons5_qt "
+"kdelibs4support\n"
+
+#: collectionpage/collectionexpirypage.cpp:47
+#, kde-format
+msgctxt "@title:tab Expiry settings for a folder."
+msgid "Expiry"
+msgstr "Zastarevanje"
+
+#: collectionpage/collectionexpirypage.cpp:67
+#, kde-format
+msgid "Expire read messages after"
+msgstr "Pročitane poruke zastarevaju nakon"
+
+#: collectionpage/collectionexpirypage.cpp:74
+#: collectionpage/collectionexpirypage.cpp:86
+#, kde-format
+msgctxt "Expire messages after %1"
+msgid " day"
+msgid_plural " days"
+msgstr[0] " dan"
+msgstr[1] " dana"
+msgstr[2] " dana"
+msgstr[3] " dan"
+
+#: collectionpage/collectionexpirypage.cpp:79
+#, kde-format
+msgid "Expire unread messages after"
+msgstr "Nepročitane poruke zastarevaju nakon"
+
+#: collectionpage/collectionexpirypage.cpp:103
+#, kde-format
+msgid "Move expired messages to:"
+msgstr "Premesti zastarele poruke u:"
+
+#: collectionpage/collectionexpirypage.cpp:115
+#, kde-format
+msgid "Delete expired messages permanently"
+msgstr "Trajno obriši zastarele poruke"
+
+#: collectionpage/collectionexpirypage.cpp:122
+#, kde-format
+msgid "Save Settings and Expire Now"
+msgstr "Sačuvaj postavke i izbaci zastarele sada"
+
+#: collectionpage/collectionexpirypage.cpp:185
+#, kde-format
+msgid ""
+"Please select a folder to expire messages into.\n"
+"If this is not done, expired messages will be permanently deleted."
+msgstr ""
+"Izaberite fasciklu u koju treba izbaciti zastarele poruke.\n"
+"Ako to ne učinite, zastarele poruke će biti trajno obrisane."
+
+#: collectionpage/collectionexpirypage.cpp:186
+#, kde-format
+msgid "No Folder Selected"
+msgstr "Fascikla nije izabrana"
+
+#: collectionpage/collectionexpirypage.cpp:194
+#, kde-format
+msgid ""
+"Please select a different folder than the current folder to expire messages "
+"into.\n"
+"If this is not done, expired messages will be permanently deleted."
+msgstr ""
+"Izaberite neku drugu fasciklu u koju treba izbaciti zastarele poruke.\n"
+"Ako to ne učinite, zastarele poruke će biti trajno obrisane."
+
+#: collectionpage/collectionexpirypage.cpp:195
+#, kde-format
+msgid "Wrong Folder Selected"
+msgstr "Izabrana pogrešna fascikla"
+
+#: collectionpage/collectiongeneralpage.cpp:62
+#, kde-format
+msgctxt "@title:tab General settings for a folder."
+msgid "General"
+msgstr "Opšte"
+
+#: collectionpage/collectiongeneralpage.cpp:94
+#, kde-format
+msgctxt "@label:textbox Name of the folder."
+msgid "&Name:"
+msgstr "&Ime:"
+
+#: collectionpage/collectiongeneralpage.cpp:109
+#, kde-format
+msgid "Act on new/unread mail in this folder"
+msgstr "Obavesti o novoj pošti u ovoj fascikli"
+
+#: collectionpage/collectiongeneralpage.cpp:111
+#, kde-format
+msgid ""
+"<qt><p>If this option is enabled then you will be notified about new/unread "
+"mail in this folder. Moreover, going to the next/previous folder with unread "
+"messages will stop at this folder.</p><p>Uncheck this option if you do not "
+"want to be notified about new/unread mail in this folder and if you want "
+"this folder to be skipped when going to the next/previous folder with unread "
+"messages. This is useful for ignoring any new/unread mail in your trash and "
+"spam folder.</p></qt>"
+msgstr ""
+"<qt><p>Ako je ova opcija uključena, bićete obavešteni o novoj i nepročitanoj "
+"pošti u ovoj fascikli.</p><p>Ispraznite kućicu ako ne želite obaveštenja o "
+"novoj i nepročitanoj pošti, i ako hoćete da ova fascikla bude preskočena pri "
+"skoku na sledeću ili prethodnu nepročitanu poruku. Ovo je korisno za "
+"ignorisanje poruka u fasciklama smeća ili spama.</p></qt>"
+
+#: collectionpage/collectiongeneralpage.cpp:125
+#, kde-format
+msgid "Keep replies in this folder"
+msgstr "Čuvaj odgovore u ovoj fascikli"
+
+#: collectionpage/collectiongeneralpage.cpp:127
+#, kde-format
+msgid ""
+"Check this option if you want replies you write to mails in this folder to "
+"be put in this same folder after sending, instead of in the configured sent-"
+"mail folder."
+msgstr ""
+"Uključite ovu opciju ako želite da odgovori koje pišete na poruke u ovoj "
+"fascikli budu takođe stavljeni u nju posle slanja, umesto u podešenu "
+"fasciklu za poslatu poštu."
+
+#: collectionpage/collectiongeneralpage.cpp:136
+#, kde-format
+msgid "Hide this folder in the folder selection dialog"
+msgstr "Sakrij ovu fasciklu u dijalogu za izbor fascikli"
+
+#: collectionpage/collectiongeneralpage.cpp:139
+#, kde-kuit-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this option if you do not want this folder to be shown in folder "
+"selection dialogs, such as the <interface>Jump to Folder</interface> dialog."
+msgstr ""
+"Izaberite ovu opciju ukoliko ne želite da se ova fascikla prikazuje u "
+"dijalozima za izbor fascikli (kao što je <interface>Skok na fasciklu</"
+"interface>)."
+
+#: collectionpage/collectiongeneralpage.cpp:154
+#, kde-format
+msgid "Use &default identity"
+msgstr "Podrazumijevani identitet"
+
+#: collectionpage/collectiongeneralpage.cpp:158
+#, kde-format
+msgid "&Sender identity:"
+msgstr "Identitet &pošiljaoca:"
+
+#: collectionpage/collectiongeneralpage.cpp:164
+#, kde-format
+msgid ""
+"Select the sender identity to be used when writing new mail or replying to "
+"mail in this folder. This means that if you are in one of your work folders, "
+"you can make KMail use the corresponding sender email address, signature and "
+"signing or encryption keys automatically. Identities can be set up in the "
+"main configuration dialog. (Settings -> Configure KMail)"
+msgstr ""
+"Izaberite identitet pošiljaoca koji se koristi kada pišete novu poruku ili "
+"odgovarate na poruku iz ove fascikle. Ovo znači da će, prema fascikli u "
+"kojoj se nalazite, K‑pošta automatski koristiti odgovarajuću adresu e‑pošte "
+"pošiljaoca, potpis i ključeve za potpisivanje i šifrovanje. Identiteti se "
+"mogu postaviti u glavnom dijalogu za podešavanje (Podešavanje→Podesi "
+"K‑poštu...)."
+
+#: collectionpage/collectiongeneralpage.cpp:216
+#, kde-format
+msgid "Share unread state with all users"
+msgstr "Deli stanje nepročitanosti sa svim korisnicima"
+
+#: collectionpage/collectiongeneralpage.cpp:221
+#, kde-format
+msgid ""
+"If enabled, the unread state of messages in this folder will be the same for "
+"all users having access to this folder. If disabled (the default), every "
+"user with access to this folder has their own unread state."
+msgstr ""
+"Ako je uključeno, nepročitano stanje poruke u ovoj fascikli biće isto za sve "
+"korisnike koji imaju pristup ovoj fascikli. Ako je isključeno "
+"(podrazumevano), svaki korisnik koji ima pristup fascikli imaće sopstveno "
+"stanje nepročitanosti poruke."
+
+#: collectionpage/collectiongeneralpage.cpp:367
+#, kde-format
+msgid ""
+"You have configured this folder to contain groupware information. That means "
+"that this folder will disappear once the configuration dialog is closed."
+msgstr ""
+"Podesili ste ovu fasciklu da sadrži grupverske podatke. To znači da će "
+"fascikla nestati čim se dijalog za podešavanje zatvori."
+
+# >> @title:window
+#: filter/dialog/filteractionmissingaccountdialog.cpp:39
+#, fuzzy, kde-format
+#| msgid "Select Account"
+msgctxt "@title:window"
+msgid "Select Account"
+msgstr "Izbor naloga"
+
+#: filter/dialog/filteractionmissingaccountdialog.cpp:44
+#, kde-format
+msgid ""
+"Filter account is missing. Please select account to use with filter \"%1\""
+msgstr "Nedostaje nalog filtera. Izaberite željeni nalog za filter „%1“."
+
+# >> @title:window
+#: filter/dialog/filteractionmissingfolderdialog.cpp:46
+#: folder/folderrequester.cpp:99
+#, fuzzy, kde-format
+#| msgid "Select Folder"
+msgctxt "@title:window"
+msgid "Select Folder"
+msgstr "Izbor fascikle"
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:49
+#, kde-format
+msgid "Folder path was \"%1\"."
+msgstr "Putanja fascikle je „%1“."
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:54
+#, kde-format
+msgid "The following folders can be used for this filter:"
+msgstr "Sledeće fascikle mogu se upotrebiti za ovaj filter:"
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:75
+#: folder/folderrequester.cpp:153 folder/folderrequester.cpp:171
+#, kde-format
+msgid "Please select a folder"
+msgstr "Izaberite fasciklu"
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:77
+#, kde-format
+msgid ""
+"Filter folder is missing. Please select a folder to use with filter \"%1\""
+msgstr "Nedostaje fascikla filtera. Izaberite željenu fasciklu za filter „%1“."
+
+# >> @title:window
+#: filter/dialog/filteractionmissingidentitydialog.cpp:40
+#, fuzzy, kde-format
+#| msgid "Select Identity"
+msgctxt "@title:window"
+msgid "Select Identity"
+msgstr "Izbor identiteta"
+
+#: filter/dialog/filteractionmissingidentitydialog.cpp:45
+#, kde-format
+msgid ""
+"Filter identity is missing. Please select an identity to use with filter "
+"\"%1\""
+msgstr ""
+"Nedostaje identitet filtera. Izaberite željeni identitet za filter „%1“."
+
+# >> @title:window
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:37
+#, fuzzy, kde-format
+#| msgid "Select sound"
+msgctxt "@title:window"
+msgid "Select sound"
+msgstr "Izbor zvuka"
+
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:41
+#, kde-format
+msgid "Sound file was \"%1\"."
+msgstr "Fajl zvuka je „%1“."
+
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:47
+#, kde-format
+msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
+msgstr "Nedostaje fajl zvuka. Izaberite željeni zvuk za filter „%1“."
+
+# >> @title:window
+#: filter/dialog/filteractionmissingtagdialog.cpp:41
+#, fuzzy, kde-format
+#| msgid "Select Tag"
+msgctxt "@title:window"
+msgid "Select Tag"
+msgstr "Izbor oznake"
+
+#: filter/dialog/filteractionmissingtagdialog.cpp:44
+#, kde-format
+msgid "Tag was \"%1\"."
+msgstr "Oznaka je „%1“."
+
+#: filter/dialog/filteractionmissingtagdialog.cpp:50
+#, kde-format
+msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
+msgstr "Nedostaje oznaka filtera. Izaberite željenu oznaku za filter „%1“."
+
+#: filter/dialog/filteractionmissingtagdialog.cpp:75
+#, kde-format
+msgid "Add Tag..."
+msgstr "Dodaj oznaku..."
+
+# >> @title:window
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:40
+#, fuzzy, kde-format
+#| msgid "Select Template"
+msgctxt "@title:window"
+msgid "Select Template"
+msgstr "Izbor šablona"
+
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:45
+#, kde-format
+msgid ""
+"Filter template is missing. Please select a template to use with filter "
+"\"%1\""
+msgstr "Nedostaje šablon filtera. Izaberite željeni šablon za filter „%1“."
+
+# >> @title:window
+#: filter/dialog/filteractionmissingtransportdialog.cpp:38
+#, fuzzy, kde-format
+#| msgid "Select Transport"
+msgctxt "@title:window"
+msgid "Select Transport"
+msgstr "Izbor transporta"
+
+#: filter/dialog/filteractionmissingtransportdialog.cpp:43
+#, kde-format
+msgid ""
+"Filter transport is missing. Please select a transport to use with filter "
+"\"%1\""
+msgstr ""
+"Nedostaje transport filtera. Izaberite željeni transport za filter „%1“."
+
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:34
+#, fuzzy, kde-format
+#| msgid "Select thunderbird filter files"
+msgctxt "@title:window"
+msgid "Select thunderbird filter files"
+msgstr "Izbor Thunderbirdovih filterskih fajlova"
+
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:43
+#, kde-format
+msgid " (default)"
+msgstr " (podrazumevano)"
+
+#: filter/filteractions/filteraction.cpp:146
+#, kde-format
+msgid "### \"action '%1' not supported\""
+msgstr "### „radnja ‘%1’ nije podržana“"
+
+#: filter/filteractions/filteractionaddheader.cpp:33
+#, kde-format
+msgid "Add Header"
+msgstr "Dodaj zaglavlje"
+
+#: filter/filteractions/filteractionaddheader.cpp:92
+#, kde-format
+msgid "With value:"
+msgstr "sa vrednošću:"
+
+#: filter/filteractions/filteractionaddheader.cpp:219
+#, kde-format
+msgid "The header name was missing."
+msgstr "Nedostaje ime zaglavlja."
+
+#: filter/filteractions/filteractionaddheader.cpp:225
+#, kde-format
+msgid "The header value was missing."
+msgstr "Nedostaje vrednost zaglavlja."
+
+#: filter/filteractions/filteractionaddtag.cpp:37
+#, kde-format
+msgid "Add Tag"
+msgstr "Dodaj oznaku"
+
+#: filter/filteractions/filteractionaddtag.cpp:163
+#, kde-format
+msgid "No tag selected."
+msgstr "Oznaka nije izabrana."
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:44
+#, kde-format
+msgid "Add to Address Book"
+msgstr "Dodaj u adresar"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:45
+#, kde-format
+msgctxt "Email sender"
+msgid "From"
+msgstr "od"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:46
+#, kde-format
+msgctxt "Email recipient"
+msgid "To"
+msgstr "za"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:47
+#: search/searchpatternedit.cpp:69
+#, kde-format
+msgid "CC"
+msgstr "CC"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:48
+#, kde-format
+msgid "BCC"
+msgstr "BCC"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:51
+#, kde-format
+msgid "KMail Filter"
+msgstr "K‑poštin filter"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:125
+#, kde-format
+msgid "with category"
+msgstr "sa kategorijom"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:133
+#, kde-format
+msgid "in address book"
+msgstr "u adresar"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:142
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>This defines the preferred address book.<br />If it is not accessible, "
+#| "the filter will fallback to the default address book.</p>"
+msgid ""
+"This defines the preferred address book.\n"
+"If it is not accessible, the filter will fallback to the default address "
+"book."
+msgstr ""
+"<p>Ovim se zadaje željeni adresar. Ako nije dostupan, filter će spasti na "
+"podrazumevani adresar.</p>"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:299
+#, kde-format
+msgid "Header type selected is unknown."
+msgstr "Izabran je nepoznat tip zaglavlja."
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:305
+#, kde-format
+msgid "No addressbook selected."
+msgstr "Adresar nije izabran."
+
+#: filter/filteractions/filteractioncopy.cpp:31
+#, kde-format
+msgid "Copy Into Folder"
+msgstr "Kopiraj u fasciklu"
+
+#: filter/filteractions/filteractioncopy.cpp:80
+#: filter/filteractions/filteractionmove.cpp:78
+#, kde-format
+msgid "Folder destination was not defined."
+msgstr "Nije definisana odredišna fascikla."
+
+#: filter/filteractions/filteractiondecrypt.cpp:39
+#: filter/filteractions/filteractiondecrypt.cpp:54
+#, kde-format
+msgid "Decrypt"
+msgstr "Dešifruj"
+
+#: filter/filteractions/filteractiondecrypt.cpp:109
+#, kde-format
+msgid "<b>Warning:</b> Decrypted emails may be uploaded to a server!"
+msgstr "<b>Upozorenje:</b> dešifrovane poruke mogu biti otpremljene na server."
+
+#: filter/filteractions/filteractiondecrypt.cpp:110
+#, kde-format
+msgid ""
+"<p>If the email folder that you are filtering into is connected to a remote "
+"account (like an IMAP-Server) the decrypted content will go there.</p>"
+msgstr ""
+"<p>Ako je fascikla e‑pošte koju filtrirate povezana sa udaljenim nalogom "
+"(npr. na IMAP serveru) dešifrovani sadržaj će se pojaviti i tamo.</p>"
+
+#: filter/filteractions/filteractiondelete.cpp:30
+#, kde-format
+msgid "Delete Message"
+msgstr "Obriši poruku"
+
+#: filter/filteractions/filteractiondelete.cpp:53
+#, kde-format
+msgid "Be careful, mails will be removed."
+msgstr "Pazite, poruke će biti uklonjene."
+
+#: filter/filteractions/filteractionencrypt.cpp:55
+#, kde-format
+msgid "Encrypt"
+msgstr "Šifruj"
+
+#: filter/filteractions/filteractionencrypt.cpp:222
+#, kde-format
+msgid "No encryption key has been selected"
+msgstr "Nije nađen nijedan ključ za šifrovanje."
+
+#: filter/filteractions/filteractionencrypt.cpp:260
+#, kde-format
+msgid "Re-encrypt encrypted emails with this key"
+msgstr "Ponovo šifruj već šifrovane poruke ovim ključem"
+
+#: filter/filteractions/filteractionencrypt.cpp:271
+#, kde-format
+msgid "<b>Warning:</b> Seckey necessary to read emails."
+msgstr "<b>Upozorenje:</b> tajni ključ neophodan za čitanje poruka."
+
+#: filter/filteractions/filteractionencrypt.cpp:272
+#, kde-format
+msgid ""
+"<p>Once an email has been encrypted you will need a crypto setup with your "
+"secret key to access the contents again.</p><p>If you keep emails stored on "
+"an email server and use several clients, each of them must be configured to "
+"enable decryption.</p>"
+msgstr ""
+"<p>Pošto se poruka šifruje, trebaće vam postava šifrovanja sa vašim tajnim "
+"ključem da biste mogli naknadno da pristupite sadržaju.</p><p>Ako držite "
+"poruke na serveru e‑pošte i koristite više klijenata, svaki od njih mora da "
+"bude podešen za šifrovanje.</p>"
+
+#: filter/filteractions/filteractionexec.cpp:27
+#, kde-format
+msgid "Execute Command"
+msgstr "Izvrši naredbu"
+
+#: filter/filteractions/filteractionexec.cpp:48
+#, kde-format
+msgid "Missing command."
+msgstr "Nedostaje naredba."
+
+#: filter/filteractions/filteractionforward.cpp:48
+#, kde-format
+msgctxt "Forward directly not with a command"
+msgid "Forward To"
+msgstr "Prosledi"
+
+#: filter/filteractions/filteractionforward.cpp:105
+#, kde-format
+msgid "The addressee to whom the message will be forwarded."
+msgstr "Primalac kome će poruka biti prosleđena."
+
+#: filter/filteractions/filteractionforward.cpp:106
+#, kde-format
+msgid "The filter will forward the message to the addressee entered here."
+msgstr "Filter prosleđuje poruku ovde unesenom primaocu."
+
+#: filter/filteractions/filteractionforward.cpp:113
+#: filter/filteractions/filteractionforward.cpp:212
+#, kde-format
+msgid "Default Template"
+msgstr "Podrazumevani šablon"
+
+#: filter/filteractions/filteractionforward.cpp:125
+#, kde-format
+msgid "The template used when forwarding"
+msgstr "Podrazumevani šablon pri prosleđivanju."
+
+#: filter/filteractions/filteractionforward.cpp:126
+#, kde-format
+msgid "Set the forwarding template that will be used with this filter."
+msgstr "Zadajte šablon za prosleđivanje koji će koristiti ovaj filter."
+
+#: filter/filteractions/filteractionforward.cpp:241
+#, kde-format
+msgid "Forward to %1 with default template"
+msgstr "Prosledi na %1 sa podrazumevanim šablonom"
+
+#: filter/filteractions/filteractionforward.cpp:243
+#, kde-format
+msgid "Forward to %1 with template %2"
+msgstr "Prosledi na %1 sa šablonom %2"
+
+#: filter/filteractions/filteractionforward.cpp:249
+#: filter/filteractions/filteractionreplyto.cpp:63
+#, kde-format
+msgid "Email address was not defined."
+msgstr "Adresa e‑pošte nije definisana."
+
+#: filter/filteractions/filteractionmove.cpp:35
+#, kde-format
+msgid "Move Into Folder"
+msgstr "Premesti u fasciklu"
+
+#: filter/filteractions/filteractionpipethrough.cpp:32
+#, kde-format
+msgctxt "pipe through with command"
+msgid "Pipe Through"
+msgstr "Provuci"
+
+#: filter/filteractions/filteractionpipethrough.cpp:48
+#, kde-format
+msgid "No action defined."
+msgstr "Radnja nije definisana."
+
+#: filter/filteractions/filteractionplaysound.cpp:34
+#, kde-format
+msgid "Play Sound"
+msgstr "Pusti zvuk"
+
+#: filter/filteractions/filteractionplaysound.cpp:90
+#, kde-format
+msgid "Sound file was not defined."
+msgstr "Nije definisan fajl zvuka."
+
+#: filter/filteractions/filteractionredirect.cpp:39
+#, kde-format
+msgid "Redirect To"
+msgstr "Preusmeri"
+
+#: filter/filteractions/filteractionredirect.cpp:83
+#, kde-format
+msgid "Email address was missing."
+msgstr "Nedostaje adresa e‑pošte."
+
+#: filter/filteractions/filteractionremoveheader.cpp:34
+#, kde-format
+msgid "Remove Header"
+msgstr "Ukloni zaglavlje"
+
+#: filter/filteractions/filteractionremoveheader.cpp:113
+#, kde-format
+msgid "Header name undefined."
+msgstr "Nedefinisano ime zaglavlja."
+
+#: filter/filteractions/filteractionreplyto.cpp:32
+#, kde-format
+msgid "Set Reply-To To"
+msgstr "Postavi odgovor‑na na"
+
+#: filter/filteractions/filteractionrewriteheader.cpp:37
+#, kde-format
+msgid "Rewrite Header"
+msgstr "Preradi zaglavlje"
+
+#: filter/filteractions/filteractionrewriteheader.cpp:59
+#, kde-format
+msgid "Header not defined"
+msgstr "Zaglavlje nije definisano."
+
+#: filter/filteractions/filteractionrewriteheader.cpp:65
+#, kde-format
+msgid "Search string is empty."
+msgstr "Niska za traženje je prazna."
+
+#: filter/filteractions/filteractionrewriteheader.cpp:127
+#, kde-format
+msgid "Replace:"
+msgstr "Zameni:"
+
+#: filter/filteractions/filteractionrewriteheader.cpp:138
+#, kde-format
+msgid "With:"
+msgstr "sa:"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:40
+#, kde-format
+msgid "Send Fake MDN"
+msgstr "Pošalji lažni MDN"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:45
+#, kde-format
+msgctxt "MDN type"
+msgid "Ignore"
+msgstr "ignorisana"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:46
+#, kde-format
+msgctxt "MDN type"
+msgid "Displayed"
+msgstr "prikazana"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:47
+#, kde-format
+msgctxt "MDN type"
+msgid "Deleted"
+msgstr "obrisana"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:48
+#, kde-format
+msgctxt "MDN type"
+msgid "Dispatched"
+msgstr "otposlata"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:49
+#, kde-format
+msgctxt "MDN type"
+msgid "Processed"
+msgstr "obrađena"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:50
+#, kde-format
+msgctxt "MDN type"
+msgid "Denied"
+msgstr "odbijena"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:51
+#, kde-format
+msgctxt "MDN type"
+msgid "Failed"
+msgstr "neuspela"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:127
+#, kde-format
+msgid "Fake type undefined."
+msgstr "Lažni tip nije definisan."
+
+#: filter/filteractions/filteractionsendreceipt.cpp:33
+#, kde-format
+msgid "Confirm Delivery"
+msgstr "Potvrdi isporuku"
+
+#: filter/filteractions/filteractionsetidentity.cpp:41
+#, kde-format
+msgid "Set Identity To"
+msgstr "Postavi identitet na"
+
+#: filter/filteractions/filteractionsetstatus.cpp:32
+#, kde-format
+msgid "Mark As"
+msgstr "Obeleži kao"
+
+#: filter/filteractions/filteractionsetstatus.cpp:44
+#, kde-format
+msgid "Status not specified."
+msgstr "Stanje nije navedeno."
+
+#: filter/filteractions/filteractionsettransport.cpp:48
+#, kde-format
+msgid "Set Transport To"
+msgstr "Postavi transport na"
+
+#: filter/filteractions/filteractionsettransport.cpp:154
+#, kde-format
+msgid "Mail transport not defined."
+msgstr "Transport pošte nije definisan."
+
+#: filter/filteractions/filteractionstatus.cpp:46
+#, kde-format
+msgctxt "msg status"
+msgid "Important"
+msgstr "važna"
+
+#: filter/filteractions/filteractionstatus.cpp:47
+#, kde-format
+msgctxt "msg status"
+msgid "Read"
+msgstr "pročitana"
+
+#: filter/filteractions/filteractionstatus.cpp:48
+#, kde-format
+msgctxt "msg status"
+msgid "Unread"
+msgstr "nepročitana"
+
+#: filter/filteractions/filteractionstatus.cpp:49
+#, kde-format
+msgctxt "msg status"
+msgid "Replied"
+msgstr "odgovorena"
+
+#: filter/filteractions/filteractionstatus.cpp:50
+#, kde-format
+msgctxt "msg status"
+msgid "Forwarded"
+msgstr "prosleđena"
+
+#: filter/filteractions/filteractionstatus.cpp:51
+#, kde-format
+msgctxt "msg status"
+msgid "Watched"
+msgstr "nadgledana"
+
+#: filter/filteractions/filteractionstatus.cpp:52
+#, kde-format
+msgctxt "msg status"
+msgid "Ignored"
+msgstr "ignorisana"
+
+#: filter/filteractions/filteractionstatus.cpp:53
+#, kde-format
+msgctxt "msg status"
+msgid "Spam"
+msgstr "spam"
+
+#: filter/filteractions/filteractionstatus.cpp:54
+#, kde-format
+msgctxt "msg status"
+msgid "Ham"
+msgstr "ham"
+
+#: filter/filteractions/filteractionstatus.cpp:55
+#, kde-format
+msgctxt "msg status"
+msgid "Action Item"
+msgstr "stavka radnje"
+
+#: filter/filteractions/filteractionstatus.cpp:115
+#, kde-format
+msgid "Status is missing."
+msgstr "Nedostaje stanje."
+
+#: filter/filteractions/filteractionunsetstatus.cpp:31
+#, kde-format
+msgctxt "action: to unset the status"
+msgid "Unset Status"
+msgstr "Ukloni stanje"
+
+#: filter/filteractions/filteractionunsetstatus.cpp:49
+#, kde-format
+msgid "Status not defined."
+msgstr "Stanje nije definisano."
+
+#: filter/filteractions/filteractionwidget.cpp:86
+#, kde-format
+msgid "Please select an action."
+msgstr "Izaberite radnju."
+
+#: filter/filteractions/filteractionwithurl.cpp:34
+#, kde-format
+msgid "Help"
+msgstr "Pomoć"
+
+# literal-segment: headername
+#: filter/filteractions/filteractionwithurl.cpp:80
+#, kde-format
+msgid "You can get specific header when you use %{headername}."
+msgstr "Možete da zadate određeno zaglavlje pomoću %{headername}."
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:41
+#, kde-format
+msgctxt "@title:window"
+msgid "Convert to Sieve Script"
+msgstr "Pretvaranje u sito skriptu"
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:48
+#, kde-format
+msgid "Save..."
+msgstr "Sačuvaj..."
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:66
+#, fuzzy, kde-format
+#| msgid "Save..."
+msgid "Share..."
+msgstr "Sačuvaj..."
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:82
+#, kde-format
+msgid "Sieve Files (*.siv);;All Files (*)"
+msgstr "sito fajlovi (*.siv);;svi fajlovi (*)"
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
+#, kde-format
+msgctxt "@title:window"
+msgid "Convert to Script Sieve"
+msgstr "Pretvaranje u sito skriptu"
+
+#: filter/filterimporter/filterimportergmail.cpp:63
+#, kde-format
+msgid "Gmail filter %1"
+msgstr "GMailovi filter %1"
+
+#: filter/filterimporter/filterimporterprocmail.cpp:69
+#, kde-format
+msgid "Procmail filter %1"
+msgstr "Procmailovi filter %1"
+
+#: filter/filterimporterexporter.cpp:142
+#, kde-format
+msgid ""
+"The following filters have not been saved because they were invalid (e.g. "
+"containing no actions or no search rules)."
+msgstr ""
+"Sledeći filteri nisu sačuvani zato što nisu dobri (npr. ne sadrže nijednu "
+"radnju ili nijedno pravilo pretrage)."
+
+# >> @title:window
+#: filter/filterimporterexporter.cpp:172
+#, kde-format
+msgid "Import KMail Filters"
+msgstr "Uvoz K‑poštinih filtera"
+
+# >> @title:window
+#: filter/filterimporterexporter.cpp:180
+#, kde-format
+msgid "Import Evolution Filters"
+msgstr "Uvoz Evolucijinih filtera"
+
+# >> @title:window
+#: filter/filterimporterexporter.cpp:184
+#, kde-format
+msgid "Import Sylpheed Filters"
+msgstr "Uvoz Sylpheedovih filtera"
+
+# >> @title:window
+#: filter/filterimporterexporter.cpp:188
+#, kde-format
+msgid "Import Procmail Filters"
+msgstr "Uvoz Procmailovih filtera"
+
+# >> @title:window
+#: filter/filterimporterexporter.cpp:192
+#, kde-format
+msgid "Import Balsa Filters"
+msgstr "Uvoz Balsinih filtera"
+
+# >> @title:window
+#: filter/filterimporterexporter.cpp:196
+#, kde-format
+msgid "Import Claws Mail Filters"
+msgstr "Uvoz Claws Mailovih filtera"
+
+# >> @title:window
+#: filter/filterimporterexporter.cpp:200
+#, kde-format
+msgid "Import Gmail Filters"
+msgstr "Uvoz GMailovih filtera"
+
+#: filter/filterimporterexporter.cpp:215 filter/filterimporterexporter.cpp:253
+#: filter/filterimporterexporter.cpp:275
+#, kde-format
+msgid ""
+"The selected file is not readable. Your file access permissions might be "
+"insufficient."
+msgstr "Izabrani fajl nije čitljiv. Možda nemate dovoljne dozvole za pristup."
+
+# >> @title:window
+#: filter/filterimporterexporter.cpp:366
+#, kde-format
+msgid "Export Filters"
+msgstr "Izvoz filterâ̂"
+
+# >> @title:window
+#: filter/filterselectiondialog.cpp:38
+#, fuzzy, kde-format
+#| msgid "Select Filters"
+msgctxt "@title:window"
+msgid "Select Filters"
+msgstr "Izbor filterâ̂"
+
+#: filter/filterselectiondialog.cpp:52 filter/kmfilterlistbox.cpp:130
+#: folder/foldertreewidget.cpp:99
+#, kde-format
+msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
+msgid "Search"
+msgstr "traži"
+
+#: filter/filterselectiondialog.cpp:62
+#, kde-format
+msgid "Select All"
+msgstr "Izaberi sve"
+
+#: filter/filterselectiondialog.cpp:64
+#, kde-format
+msgid "Unselect All"
+msgstr "Poništi sav izbor"
+
+#: filter/invalidfilters/invalidfilterdialog.cpp:34
+#, fuzzy, kde-format
+#| msgid "Invalid Filters"
+msgctxt "@title:window"
+msgid "Invalid Filters"
+msgstr "Loši filteri"
+
+#: filter/invalidfilters/invalidfilterdialog.cpp:45
+#, kde-format
+msgid "Discard"
+msgstr "Odbaci"
+
+#: filter/invalidfilters/invalidfilterwidget.cpp:32
+#, kde-format
+msgid ""
+"The following filters are invalid (e.g. containing no actions or no search "
+"rules). Discard or edit invalid filters?"
+msgstr ""
+"Sledeći filteri su loši (npr. ne sadrže nijednu radnju ili nijedno pravilo "
+"pretrage). Želite li da ih odbacite ili uredite?"
+
+# >> @title:column
+#: filter/kmfilteraccountlist.cpp:37
+#, kde-format
+msgid "Account Name"
+msgstr "ime naloga"
+
+# >> @title:column
+#: filter/kmfilteraccountlist.cpp:37
+#, kde-format
+msgid "Type"
+msgstr "tip"
+
+#: filter/kmfilterdialog.cpp:88
+#, fuzzy, kde-format
+#| msgid "Filter Rules"
+msgctxt "@title:window"
+msgid "Filter Rules"
+msgstr "Pravila filtera"
+
+#: filter/kmfilterdialog.cpp:106
+#, kde-format
+msgid "Import..."
+msgstr "Uvezi..."
+
+#: filter/kmfilterdialog.cpp:107
+#, kde-format
+msgid "Export..."
+msgstr "Izvezi..."
+
+#: filter/kmfilterdialog.cpp:108
+#, kde-format
+msgid "Convert to..."
+msgstr "Pretvori u..."
+
+#: filter/kmfilterdialog.cpp:111
+#, kde-format
+msgid "KMail filters"
+msgstr "K‑poštini filteri"
+
+#: filter/kmfilterdialog.cpp:115
+#, kde-format
+msgid "Thunderbird filters"
+msgstr "Thunderbirdovi filteri"
+
+#: filter/kmfilterdialog.cpp:119
+#, kde-format
+msgid "Evolution filters"
+msgstr "Evolucijini filteri"
+
+#: filter/kmfilterdialog.cpp:123
+#, kde-format
+msgid "Sylpheed filters"
+msgstr "Sylpheedovi filteri"
+
+#: filter/kmfilterdialog.cpp:127
+#, kde-format
+msgid "Procmail filters"
+msgstr "Procmailovi filteri"
+
+#: filter/kmfilterdialog.cpp:131
+#, kde-format
+msgid "Balsa filters"
+msgstr "Balsini filteri"
+
+#: filter/kmfilterdialog.cpp:135
+#, kde-format
+msgid "Claws Mail filters"
+msgstr "Claws Mailovi filteri"
+
+# rewrite-msgid: /Mail//
+#: filter/kmfilterdialog.cpp:139
+#, kde-format
+msgid "Icedove Mail filters"
+msgstr "Ledogolubicini filteri"
+
+#: filter/kmfilterdialog.cpp:145
+#, kde-format
+msgid "Gmail filters"
+msgstr "GMailovi filteri"
+
+#: filter/kmfilterdialog.cpp:153
+#, kde-format
+msgid "Sieve script"
+msgstr "Sito skripta"
+
+#: filter/kmfilterdialog.cpp:176
+#, kde-format
+msgid "Available Filters"
+msgstr "Dostupni filteri"
+
+#: filter/kmfilterdialog.cpp:182
+#, kde-format
+msgctxt "General mail filter settings."
+msgid "General"
+msgstr "Opšte"
+
+#: filter/kmfilterdialog.cpp:186
+#, kde-format
+msgctxt "Advanced mail filter settings."
+msgid "Advanced"
+msgstr "Napredno"
+
+#: filter/kmfilterdialog.cpp:193
+#, kde-format
+msgid "Filter Criteria"
+msgstr "Kriterijumi filtera"
+
+#: filter/kmfilterdialog.cpp:202
+#, kde-format
+msgid "Filter Actions"
+msgstr "Radnje filtera"
+
+#: filter/kmfilterdialog.cpp:209
+#, kde-format
+msgid "Advanced Options"
+msgstr "Napredne opcije"
+
+#: filter/kmfilterdialog.cpp:216
+#, kde-format
+msgid "Apply this filter to incoming messages:"
+msgstr "Primeni ovaj filter na dolazne poruke:"
+
+#: filter/kmfilterdialog.cpp:221
+#, kde-format
+msgid "from all accounts"
+msgstr "sa svih naloga"
+
+#: filter/kmfilterdialog.cpp:226
+#, kde-format
+msgid "from all but online IMAP accounts"
+msgstr "sa svih osim IMAP nalog na vezi"
+
+#: filter/kmfilterdialog.cpp:231
+#, kde-format
+msgid "from checked accounts only"
+msgstr "samo sa označenih naloga"
+
+#: filter/kmfilterdialog.cpp:240
+#, kde-format
+msgid "Apply this filter to &sent messages"
+msgstr "Primeni ovaj filter na po&slate poruke"
+
+#: filter/kmfilterdialog.cpp:242
+#, kde-format
+msgid ""
+"<p>The filter will be triggered <b>after</b> the message is sent and it will "
+"only affect the local copy of the message.</p><p>If the recipient's copy "
+"also needs to be modified, please use \"Apply this filter <b>before</b> "
+"sending messages\".</p>"
+msgstr ""
+"<p>Filter će biti okinut <b>posle</b> slanja poruke, čime će uticati samo na "
+"lokalnu kopiju poruke.</p><p>Ako treba izmeniti i primaočevu kopiju poruke, "
+"izaberite <i>Primeni ovaj filter pre slanja poruka</i>.</p>"
+
+#: filter/kmfilterdialog.cpp:249
+#, kde-format
+msgid "Apply this filter &before sending messages"
+msgstr "Primeni ovaj filter &pre slanja poruka"
+
+#: filter/kmfilterdialog.cpp:251
+#, kde-format
+msgid ""
+"<p>The filter will be triggered <b>before</b> the message is sent and it "
+"will affect both the local copy and the sent copy of the message.</p><p>This "
+"is required if the recipient's copy also needs to be modified.</p>"
+msgstr ""
+"<p>Filter će biti okinut <b>pre</b> slanja poruke, i uticaće i na lokalnu "
+"kopiju i na poslatu kopiju poruke.</p><p>Ovo je neophodno kada treba "
+"izmeniti i primaočevu kopiju.</p>"
+
+#: filter/kmfilterdialog.cpp:257
+#, kde-format
+msgid "Apply this filter on manual &filtering"
+msgstr "Primeni ovaj filter pri &ručnom filtriranju"
+
+#: filter/kmfilterdialog.cpp:260
+#, kde-format
+msgid "Apply this filter on inbound emails in all folders"
+msgstr "Primeni ovaj filter na dolazne poruke u svim fasciklama"
+
+#: filter/kmfilterdialog.cpp:261
+#, kde-format
+msgid ""
+"<p>The filter will be applied on inbound emails from all folders belonging "
+"to all accounts selected above. This is useful when using local filters with "
+"IMAP accounts where new emails may have already been moved to different "
+"folders by server-side filters.</p>"
+msgstr ""
+"<p>Filter će biti primenjen na dolazne poruke u svim fasciklama koje "
+"pripadaju svim iznad izabranim nalozima. Ovo je korisno kada koristite "
+"lokalne filtere nad IMAP nalozima gde poruke mogu da budu već premeštene u "
+"druge fascikle preko filtera na serveru.</p>"
+
+#: filter/kmfilterdialog.cpp:268
+#, kde-format
+msgid "If this filter &matches, stop processing here"
+msgstr "&Ako ovaj filter poklopi, zaustavi dalju obradu"
+
+#: filter/kmfilterdialog.cpp:272
+#, kde-format
+msgid "Add this filter to the Apply Filter menu"
+msgstr "Dodaj ovaj filter u meni „Primeni filtere“"
+
+#: filter/kmfilterdialog.cpp:275
+#, kde-format
+msgid "Shortcut:"
+msgstr "Prečica:"
+
+#: filter/kmfilterdialog.cpp:287
+#, kde-format
+msgid "Additionally add this filter to the toolbar"
+msgstr "Takođe dodaj ovaj filter na traku alatki"
+
+#: filter/kmfilterdialog.cpp:294
+#, kde-format
+msgid "Icon for this filter:"
+msgstr "Ikonica za ovaj filter:"
+
+#: filter/kmfilterdialog.cpp:313
+#, kde-format
+msgid "Run selected filter(s) on: "
+msgstr "Izvrši izabrane filtere nad:"
+
+#: filter/kmfilterdialog.cpp:320
+#, kde-format
+msgid "Run Now"
+msgstr "Izvrši sada"
+
+#: filter/kmfilterdialog.cpp:457
+#, kde-format
+msgctxt "@info"
+msgid "Unable to apply this filter since there are no folders selected."
+msgstr "Ne mogu da primenim ovaj filter zato što nema izabranih fascikli."
+
+# >> @title:window
+#: filter/kmfilterdialog.cpp:458
+#, kde-format
+msgid "No folder selected."
+msgstr "Nema izabranih fascikli"
+
+#: filter/kmfilterdialog.cpp:466
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Some filters were changed and not saved yet. You must save your filters "
+"before they can be applied."
+msgstr ""
+"Neki filteri su izmenjeni ali još nisu sačuvani. Morate ih sačuvati da bi se "
+"mogli primeniti."
+
+# >> @title:window
+#: filter/kmfilterdialog.cpp:468 filter/kmfilterdialog.cpp:777
+#, kde-format
+msgid "Filters changed."
+msgstr "Filteri izmenjeni"
+
+#: filter/kmfilterdialog.cpp:477
+#, kde-format
+msgctxt "@info"
+msgid "Unable to apply a filter since there are no filters currently selected."
+msgstr ""
+"Ne mogu da primenim filter zato što trenutno nijedan filter nije izabran."
+
+# >> @title:window
+#: filter/kmfilterdialog.cpp:478 filter/kmfilterdialog.cpp:796
+#, kde-format
+msgid "No filters selected."
+msgstr "Nema izabranih filtera"
+
+#: filter/kmfilterdialog.cpp:721
+#, kde-format
+msgid "No filter was imported."
+msgstr "Nije uvezen nijedan filter."
+
+#: filter/kmfilterdialog.cpp:734
+#, kde-format
+msgid "Filters which were imported:"
+msgstr "Uvezeni filteri:"
+
+#: filter/kmfilterdialog.cpp:745
+#, kde-format
+msgid "Any filter found."
+msgstr "Nije nađen nijedan filter."
+
+#: filter/kmfilterdialog.cpp:775
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Some filters were changed and not saved yet.<br>You must save your filters "
+"before they can be exported."
+msgstr ""
+"Neki filteri su izmenjeni ali još nisu sačuvani. Morate ih sačuvati da bi se "
+"mogli izvesti."
+
+#: filter/kmfilterdialog.cpp:780
+#, kde-format
+msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
+msgstr ""
+"Ne možemo da pretvorimo sve K‑poštine filtere u sito skripte, ali možemo da "
+"se potrudimo :)"
+
+# >> @title:window
+#: filter/kmfilterdialog.cpp:780 filter/kmfilterdialog.cpp:796
+#, kde-format
+msgid "Convert KMail filters to sieve scripts"
+msgstr "Pretvaranje K‑poštinih filtera u sito skripte"
+
+#: filter/kmfilterlistbox.cpp:40
+#, kde-format
+msgid ""
+"<qt><p>This is the list of defined filters. They are processed top-to-bottom."
+"</p><p>Click on any filter to edit it using the controls in the right-hand "
+"half of the dialog.</p></qt>"
+msgstr ""
+"<qt><p>Ovo je spisak definisanih filtera. Obrađuje se od vrha ka dnu.</"
+"p><p>Kliknite na neki filter da biste ga uredili, pomoću kontrola na desnoj "
+"strani dijaloga.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:47
+#, kde-format
+msgid ""
+"<qt><p>Click this button to create a new filter.</p><p>The filter will be "
+"inserted just before the currently-selected one, but you can always change "
+"that later on.</p><p>If you have clicked this button accidentally, you can "
+"undo this by clicking on the <em>Delete</em> button.</p></qt>"
+msgstr ""
+"<qt><p>Kliknite na ovo dugme da napravite novi filter.</p><p>Filter će biti "
+"umetnut odmah ispred trenutno izabranog, ali redosled uvek možete kasnije "
+"promeniti.</p><p>Ako ste slučajno kliknuli na ovo dugme, možete to opozvati "
+"klikom na dugme <i>Obriši</i>.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:55
+#, kde-format
+msgid ""
+"<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
+"button accidentally, you can undo this by clicking on the <em>Delete</em> "
+"button.</p></qt>"
+msgstr ""
+"<qt><p>Kliknite na ovo dugme da kopirate filter.</p><p>Ako ste slučajno "
+"kliknuli na ovo dugme, možete to opozvati klikom na dugme <i>Obriši</i>.</"
+"p></qt>"
+
+#: filter/kmfilterlistbox.cpp:60
+#, kde-format
+msgid ""
+"<qt><p>Click this button to <em>delete</em> the currently-selected filter "
+"from the list above.</p><p>There is no way to get the filter back once it is "
+"deleted, but you can always leave the dialog by clicking <em>Cancel</em> to "
+"discard the changes made.</p></qt>"
+msgstr ""
+"<qt><p>Kliknite na ovo dugme da <em>obrišete</em> trenutno izabrani filter "
+"na gornjem spisku.</p><p>Filter ne možete povratiti posle brisanja, ali "
+"možete napustiti dijalog klikom na <i>Odustani</i> da odbacite sve načinjene "
+"izmene.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:68
+#, kde-format
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter <em>up</em> "
+"one in the list above.</p><p>This is useful since the order of the filters "
+"in the list determines the order in which they are tried on messages: The "
+"topmost filter gets tried first.</p><p>If you have clicked this button "
+"accidentally, you can undo this by clicking on the <em>Down</em> button.</"
+"p></qt>"
+msgstr ""
+"<qt><p>Kliknite na ovo dugme da pomerite trenutno izabrani filter "
+"<em>nagore</em> kroz spisak.</p><p>Ovo je korisno zato što redosled filtera "
+"na spisku određuje redosled kojim se primenjuju na poruke: prvo se "
+"primenjuje najviši filter.</p><p>Ako ste slučajno kliknuli na ovo dugme, "
+"možete to opozvati klikom na dugme <i>Dolje</i>.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:77
+#, kde-format
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter <em>down</em> "
+"one in the list above.</p><p>This is useful since the order of the filters "
+"in the list determines the order in which they are tried on messages: The "
+"topmost filter gets tried first.</p><p>If you have clicked this button "
+"accidentally, you can undo this by clicking on the <em>Up</em> button.</p></"
+"qt>"
+msgstr ""
+"<qt><p>Kliknite na ovo dugme da pomerite trenutno izabrani filter "
+"<em>nadole</em> kroz spisak.</p><p>Ovo je korisno zato što redosled filtera "
+"na spisku određuje redosled kojim se primenjuju na poruke: prvo se "
+"primenjuje najviši filter.</p><p>Ako ste slučajno kliknuli na ovo dugme, "
+"možete to opozvati klikom na dugme <i>Gore</i>.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:86
+#, kde-format
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter to top of "
+"list.</p><p>This is useful since the order of the filters in the list "
+"determines the order in which they are tried on messages: The topmost filter "
+"gets tried first.</p></qt>"
+msgstr ""
+"<qt><p>Kliknite na ovo dugme da pomerite trenutno izabrani filter na vrh "
+"spiska.</p><p>Ovo je korisno zato što redosled filtera na spisku određuje "
+"redosled kojim se primenjuju na poruke: prvo se primenjuje najviši filter.</"
+"p></qt>"
+
+#: filter/kmfilterlistbox.cpp:93
+#, kde-format
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter to bottom of "
+"list.</p><p>This is useful since the order of the filters in the list "
+"determines the order in which they are tried on messages: The topmost filter "
+"gets tried first.</p></qt>"
+msgstr ""
+"<qt><p>Kliknite na ovo dugme da pomerite trenutno izabrani filter na dno "
+"spiska.</p><p>Ovo je korisno zato što redosled filtera na spisku određuje "
+"redosled kojim se primenjuju na poruke: prvo se primenjuje najviši filter.</"
+"p></qt>"
+
+#: filter/kmfilterlistbox.cpp:100
+#, kde-format
+msgid ""
+"<qt><p>Click this button to rename the currently-selected filter.</"
+"p><p>Filters are named automatically, as long as they start with \"&lt;\".</"
+"p><p>If you have renamed a filter accidentally and want automatic naming "
+"back, click this button and select <em>Clear</em> followed by <em>OK</em> in "
+"the appearing dialog.</p></qt>"
+msgstr ""
+"<qt><p>Kliknite na ovo dugme da preimenujete trenutno izabrani filter.</"
+"p><p>Filteri se automatski imenuju kada počinju sa „&lt;“.</p><p>Ako ste "
+"slučajno preimenovali filter i želite ponovo automatsko imenovanje, klinite "
+"na ovo dugme i izaberite <i>Očisti</i> pa zatim <i>U redu</i> u dijalogu "
+"koji se pojavi.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:162
+#, kde-format
+msgctxt "Move selected filter up."
+msgid "Up"
+msgstr "Gore"
+
+#: filter/kmfilterlistbox.cpp:163
+#, kde-format
+msgctxt "Move selected filter down."
+msgid "Down"
+msgstr "Dolje"
+
+#: filter/kmfilterlistbox.cpp:164
+#, kde-format
+msgctxt "Move selected filter to the top."
+msgid "Top"
+msgstr "Vrh"
+
+#: filter/kmfilterlistbox.cpp:165
+#, kde-format
+msgctxt "Move selected filter to the bottom."
+msgid "Bottom"
+msgstr "Dno"
+
+#: filter/kmfilterlistbox.cpp:195
+#, kde-format
+msgctxt "@action:button in filter list manipulator"
+msgid "New"
+msgstr "Novi"
+
+#: filter/kmfilterlistbox.cpp:196
+#, kde-format
+msgid "Copy"
+msgstr "Kopiraj"
+
+#: filter/kmfilterlistbox.cpp:197
+#, kde-format
+msgid "Delete"
+msgstr "Obriši"
+
+#: filter/kmfilterlistbox.cpp:198
+#, kde-format
+msgid "Rename"
+msgstr "Preimenuj"
+
+#: filter/kmfilterlistbox.cpp:330
+#, kde-format
+msgid "unnamed"
+msgstr "bezimeni"
+
+#: filter/kmfilterlistbox.cpp:489
+#, kde-format
+msgid "Do you want to remove the filter \"%1\"?"
+msgstr "Želite li da uklonite filter „%1“?"
+
+# >> @title:window
+#: filter/kmfilterlistbox.cpp:490
+#, kde-format
+msgid "Remove Filter"
+msgstr "Uklanjanje filtera"
+
+#: filter/kmfilterlistbox.cpp:496
+#, kde-format
+msgid "Do you want to remove selected filters?"
+msgstr "Želite li da uklonite izabrane filtere?"
+
+# >> @title:window
+#: filter/kmfilterlistbox.cpp:497
+#, kde-format
+msgid "Remove Filters"
+msgstr "Uklanjanje filtera"
+
+# >> @title:window
+#: filter/kmfilterlistbox.cpp:715
+#, kde-format
+msgid "Rename Filter"
+msgstr "Preimenovanje filtera"
+
+#: filter/kmfilterlistbox.cpp:716
+#, kde-format
+msgid ""
+"Rename filter \"%1\" to:\n"
+"(leave the field empty for automatic naming)"
+msgstr ""
+"Preimenuj filter \"%1\" u:\n"
+"(ostavite prazno polje za automatsko imenovanje)"
+
+#: filter/mailfilter.cpp:144
+#, kde-format
+msgid "<b>Applying filter action:</b> %1"
+msgstr "<b>Primenjujem radnju filtera:</b> %1"
+
+#: filter/mailfilter.cpp:155
+#, kde-format
+msgid "A critical error occurred. Processing stops here."
+msgstr "Kritična greška, obrada obustavljena."
+
+#: filter/mailfilter.cpp:163
+#, kde-format
+msgid "A problem was found while applying this action."
+msgstr "Došlo je do problema tokom primene ove radnje."
+
+#: filter/mailfilter.cpp:444
+#, kde-format
+msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
+msgstr "<qt>Previše filterskih radnji u filterskom pravilu <b>%1</b>?</qt>"
+
+#: filter/mailfilter.cpp:477
+#, kde-format
+msgid ""
+"<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
+">Ignoring it.</qt>"
+msgstr ""
+"<qt>Nepoznata filterska radnja <b>%1</b><br />u filterskom pravilu <b>%2</b>."
+"<br />Ignorišem je.</qt>"
+
+#: filter/mailfilter.cpp:591
+#, kde-format
+msgid "Any action defined."
+msgstr "Nije definisana nijedna radnja."
+
+#: filter/mdnadvicedialog.cpp:55
+#, kde-format
+msgid ""
+"This message contains a request to return a notification about your "
+"reception of the message.\n"
+"You can either ignore the request or let the mail program send a \"denied\" "
+"or normal response."
+msgstr ""
+"Ova poruka sadrži zahtev za slanje obaveštenja o tome kako ste je primili.\n"
+"Možete ili zanemariti ovaj zahtev ili reći poštanskom programu da pošalje "
+"odgovor „odbijeno“ ili normalan odgovor."
+
+#: filter/mdnadvicedialog.cpp:62
+#, kde-format
+msgid ""
+"This message contains a request to send a notification about your reception "
+"of the message.\n"
+"It contains a processing instruction that is marked as \"required\", but "
+"which is unknown to the mail program.\n"
+"You can either ignore the request or let the mail program send a \"failed\" "
+"response."
+msgstr ""
+"Ova poruka sadrži zahtev za slanje obaveštenja o tome kako ste je primili.\n"
+"Sadrži obradnu instrukciju označenu kao „neophodna“, ali nepoznatu "
+"poštanskom programu.\n"
+"Možete ili zanemariti ovaj zahtev ili reći poštanskom programu da pošalje "
+"odgovor „neuspelo“."
+
+#: filter/mdnadvicedialog.cpp:71
+#, kde-format
+msgid ""
+"This message contains a request to send a notification about your reception "
+"of the message,\n"
+"but it is requested to send the notification to more than one address.\n"
+"You can either ignore the request or let the mail program send a \"denied\" "
+"or normal response."
+msgstr ""
+"Ova poruka sadrži zahtev za slanje obaveštenja o tome kako ste je primili,\n"
+"i to tako da se obaveštenje pošalje na više od jedne adrese.\n"
+"Možete ili zanemariti ovaj zahtev ili reći poštanskom programu da pošalje "
+"odgovor „odbijeno“ ili normalan odgovor."
+
+#: filter/mdnadvicedialog.cpp:80
+#, kde-format
+msgid ""
+"This message contains a request to send a notification about your reception "
+"of the message,\n"
+"but there is no return-path set.\n"
+"You can either ignore the request or let the mail program send a \"denied\" "
+"or normal response."
+msgstr ""
+"Ova poruka sadrži zahtev za slanje obaveštenja o tome kako ste je primili,\n"
+"ali nije postavljena uzvratna putanja.\n"
+"Možete ili zanemariti ovaj zahtev ili reći poštanskom programu da pošalje "
+"odgovor „odbijeno“ ili normalan odgovor."
+
+#: filter/mdnadvicedialog.cpp:88
+#, kde-format
+msgid ""
+"This message contains a request to send a notification about your reception "
+"of the message,\n"
+"but the return-path address differs from the address the notification was "
+"requested to be sent to.\n"
+"You can either ignore the request or let the mail program send a \"denied\" "
+"or normal response."
+msgstr ""
+"Ova poruka sadrži zahtev za slanje obaveštenja o tome kako ste je primili,\n"
+"ali se adresa u uzvratnoj putanji razlikuje od adrese na koju je traženo "
+"obaveštenje.\n"
+"Možete ili zanemariti ovaj zahtev ili reći poštanskom programu da pošalje "
+"odgovor „odbijeno“ ili normalan odgovor."
+
+#: filter/mdnadvicedialog.cpp:104
+#, fuzzy, kde-format
+#| msgid "Message Disposition Notification Request"
+msgctxt "@title:window"
+msgid "Message Disposition Notification Request"
+msgstr "Zahtev za obaveštenje o raspoređivanju poruke"
+
+#: filter/mdnadvicedialog.cpp:114
+#, kde-format
+msgid "Send \"&denied\""
+msgstr "Pošalji „&odbijeno“"
+
+#: filter/mdnadvicedialog.cpp:116
+#, kde-format
+msgid "&Ignore"
+msgstr "&Ignoriši"
+
+#: filter/mdnadvicedialog.cpp:118
+#, kde-format
+msgid "&Send"
+msgstr "&Pošalji"
+
+#: filter/soundtestwidget.cpp:43
+#, kde-format
+msgid "Play"
+msgstr "Pusti"
+
+# >> @title:window
+#: filter/soundtestwidget.cpp:75
+#, fuzzy, kde-format
+#| msgid "Select Sound File"
+msgctxt "@title:window"
+msgid "Select Sound File"
+msgstr "Izbor zvučnog fajla"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: filter/ui/filterconfigwidget.ui:19
+#, kde-format
+msgid "Name:"
+msgstr "Ime:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: filter/ui/filterconfigwidget.ui:45
+#, kde-format
+msgid "Criteria"
+msgstr "Kriterijumi"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: filter/ui/filterconfigwidget.ui:87
+#, kde-format
+msgid "Actions"
+msgstr "Radnje"
+
+# >> @title:group
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: filter/ui/filterconfigwidget.ui:129
+#, kde-format
+msgid "Apply options"
+msgstr "Primena opcija"
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyToIncomingCB)
+#: filter/ui/filterconfigwidget.ui:138
+#, kde-format
+msgid "Apply to incoming messages"
+msgstr "Primeni na dolazne poruke"
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyToSentCB)
+#: filter/ui/filterconfigwidget.ui:145
+#, kde-format
+msgid "Apply to sent messages"
+msgstr "Primeni na poslate poruke"
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyBeforeSendCB)
+#: filter/ui/filterconfigwidget.ui:152
+#, kde-format
+msgid "Apply before sending messages"
+msgstr "Primeni pre slanja poruka"
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyManuallyCB)
+#: filter/ui/filterconfigwidget.ui:159
+#, kde-format
+msgid "Apply on manual filtering"
+msgstr "Primeni pri ručnom filtriranju"
+
+#. i18n: ectx: property (text), widget (QCheckBox, stopIfMatchesCB)
+#: filter/ui/filterconfigwidget.ui:169
+#, kde-format
+msgid "Stop processing if matches"
+msgstr "Zaustavi obradu po poklapanju"
+
+#. i18n: ectx: property (text), widget (QRadioButton, selectFile)
+#: filter/ui/selectthunderbirdfilterfileswidget.ui:29
+#, kde-format
+msgid "Select File:"
+msgstr "Fajl:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, selectFromConfig)
+#: filter/ui/selectthunderbirdfilterfileswidget.ui:45
+#, kde-format
+msgid "Select file from config:"
+msgstr "Fajla iz postave:"
+
+# >> @title:window
+#: folder/accountconfigorderdialog.cpp:74
+#, fuzzy, kde-format
+#| msgid "Edit Accounts Order"
+msgctxt "@title:window"
+msgid "Edit Accounts Order"
+msgstr "Uređivanje redosleda naloga"
+
+#: folder/accountconfigorderdialog.cpp:91
+#, kde-format
+msgid "Use custom order"
+msgstr "Poseban redosled"
+
+#: folder/accountconfigorderdialog.cpp:108
+#, kde-format
+msgctxt "Move selected account up."
+msgid "Up"
+msgstr "Gore"
+
+#: folder/accountconfigorderdialog.cpp:116
+#, kde-format
+msgctxt "Move selected account down."
+msgid "Down"
+msgstr "Dolje"
+
+# >> @title:window
+#: folder/folderrequester.cpp:70
+#, kde-format
+msgid "Select Folder"
+msgstr "Izbor fascikle"
+
+#: folder/folderrequester.cpp:143
+#, kde-format
+msgid "Local Folders"
+msgstr "Lokalne fascikle"
+
+#: folder/folderselectiondialog.cpp:80 folder/folderselectiondialog.cpp:146
+#, kde-format
+msgid "&New Subfolder..."
+msgstr "&Nova potfascikla..."
+
+#: folder/folderselectiondialog.cpp:81
+#, kde-format
+msgid "Create a new subfolder under the currently selected folder"
+msgstr "Napravi novu potfasciklu unutar trenutno izabrane fascikle"
+
+#: folder/folderselectiondialog.cpp:201
+#, kde-format
+msgctxt "@title:window"
+msgid "New Folder"
+msgstr "Nova fascikla"
+
+#: folder/folderselectiondialog.cpp:202
+#, kde-format
+msgctxt "@label:textbox, name of a thing"
+msgid "Name"
+msgstr "Ime"
+
+#: folder/folderselectiondialog.cpp:221
+#, kde-format
+msgid "Could not create folder: %1"
+msgstr "Ne mogu da napravim fasciklu: %1"
+
+#: folder/folderselectiondialog.cpp:222
+#, kde-format
+msgid "Folder creation failed"
+msgstr "Neuspešno pravljenje fascikle"
+
+#: folder/foldertreeview.cpp:147
+#, kde-format
+msgid "View Columns"
+msgstr "Prikaz kolona"
+
+#: folder/foldertreeview.cpp:157
+#, kde-format
+msgid "Icon Size"
+msgstr "Veličina ikonica"
+
+#: folder/foldertreeview.cpp:173
+#, kde-format
+msgid "Display Tooltips"
+msgstr "Prikazuj oblačiće"
+
+#: folder/foldertreeview.cpp:177
+#, kde-format
+msgctxt "@action:inmenu Always display tooltips"
+msgid "Always"
+msgstr "uvijek"
+
+#: folder/foldertreeview.cpp:184
+#, kde-format
+msgctxt "@action:inmenu Never display tooltips."
+msgid "Never"
+msgstr "nikada"
+
+#: folder/foldertreeview.cpp:191
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Sort Items"
+msgstr "Ređaj stavke"
+
+#: folder/foldertreeview.cpp:195
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Automatically, by Current Column"
+msgstr "automatski, po trenutnoj koloni"
+
+#: folder/foldertreeview.cpp:202
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Manually, by Drag And Drop"
+msgstr "ručno, prevlačenjem"
+
+#: folder/foldertreeview.cpp:500 folder/foldertreeview.cpp:545
+#, kde-format
+msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
+msgstr "<qt>Na sledeću nepročitanu poruku u fascikli <b>%1</b>?</qt>"
+
+#: folder/foldertreeview.cpp:501 folder/foldertreeview.cpp:547
+#, kde-format
+msgid "Go to Next Unread Message"
+msgstr "Idi na sledeću nepročitanu poruku"
+
+#: folder/foldertreeview.cpp:502 folder/foldertreeview.cpp:548
+#, kde-format
+msgid "Go To"
+msgstr "Idi"
+
+#: folder/foldertreeview.cpp:503 folder/foldertreeview.cpp:549
+#, kde-format
+msgid "Do Not Go To"
+msgstr "Ne idi"
+
+#: folder/foldertreewidget.cpp:91 folder/foldertreewidget.cpp:331
+#, kde-format
+msgid "You can start typing to filter the list of folders."
+msgstr "Počnite sa kucanjem radi filtriranja liste fascikli."
+
+#: folder/foldertreewidget.cpp:332
+#, kde-format
+msgid "Path: (%1)"
+msgstr "Putanja: (%1)"
+
+#: folder/foldertreewidgetproxymodel.cpp:259
+#, kde-format
+msgid "%1 (Offline)"
+msgstr "%1 (van veze)"
+
+#: folder/foldertreewidgetproxymodel.cpp:263
+#, kde-format
+msgid "%1 (Reached %2% quota)"
+msgstr ""
+
+#: job/backupjob.cpp:119
+#, kde-format
+msgid "Unable to retrieve folder list."
+msgstr "Ne mogu da dobavim spisak fascikli."
+
+#: job/backupjob.cpp:146
+#, kde-format
+msgid "The operation was canceled by the user."
+msgstr "Korisnik je otkazao postupak."
+
+#: job/backupjob.cpp:176
+#, kde-format
+msgid "Failed to archive the folder '%1'."
+msgstr "Ne mogu da arhiviram fasciklu „%1“."
+
+#: job/backupjob.cpp:180
+#, kde-format
+msgid "Archiving failed"
+msgstr "Arhiviranje propalo"
+
+#: job/backupjob.cpp:190
+#, kde-format
+msgid "Unable to finalize the archive file."
+msgstr "Ne mogu da dovršim fajl arhive."
+
+#: job/backupjob.cpp:195 job/backupjob.cpp:214
+#, kde-format
+msgid "Archiving finished"
+msgstr "Arhiviranje završeno"
+
+#: job/backupjob.cpp:205
+#, kde-format
+msgid ""
+"Archiving folder '%1' successfully completed. The archive was written to the "
+"file '%2'."
+msgstr ""
+"Arhiviranje fascikle „%1“ uspešno je završeno. Arhiva je upisana u fajl „%2“."
+
+#: job/backupjob.cpp:208
+#, kde-format
+msgid "1 message of size %2 was archived."
+msgid_plural "%1 messages with the total size of %2 were archived."
+msgstr[0] "Arhivirana je %1 poruka ukupne veličine %2."
+msgstr[1] "Arhivirane su %1 poruke ukupne veličine %2."
+msgstr[2] "Arhivirano je %1 poruka ukupne veličine %2."
+msgstr[3] "Arhivirana je jedna poruka veličine %2."
+
+#: job/backupjob.cpp:211
+#, kde-format
+msgid "The archive file has a size of %1."
+msgstr "Fajl arhive je veličine %1."
+
+#: job/backupjob.cpp:264
+#, kde-format
+msgid "Failed to write a message into the archive folder '%1'."
+msgstr "Ne mogu da upišem poruku u fasciklu arhive „%1“."
+
+#: job/backupjob.cpp:289
+#, kde-format
+msgid "Downloading a message in folder '%1' failed."
+msgstr "Preuzimanje poruke u fasciklu %1 nije uspelo."
+
+#: job/backupjob.cpp:355
+#, kde-format
+msgid "Archiving folder %1"
+msgstr "Arhiviram fasciklu %1"
+
+#: job/backupjob.cpp:380
+#, kde-format
+msgid "Unable to create folder structure for folder '%1' within archive file."
+msgstr ""
+"Ne mogu da napravim strukturu fascikli za fasciklu „%1“ u fajlu arhive."
+
+#: job/backupjob.cpp:393
+#, kde-format
+msgid "Unable to get message list for folder %1."
+msgstr "Ne mogu da dobavim spisak poruka za fasciklu %1."
+
+#: job/backupjob.cpp:433
+#, kde-format
+msgid "Unable to open archive for writing."
+msgstr "Ne mogu da otvorim arhivu za pisanje."
+
+#: job/backupjob.cpp:439
+#, kde-format
+msgid "Archiving"
+msgstr "Arhiviram"
+
+#: job/expirejob.cpp:176
+#, kde-format
+msgid "Removing 1 old message from folder %2..."
+msgid_plural "Removing %1 old messages from folder %2..."
+msgstr[0] "Uklanjam %1 staru poruku iz fascikle %2..."
+msgstr[1] "Uklanjam %1 stare poruke iz fascikle %2..."
+msgstr[2] "Uklanjam %1 starih poruka iz fascikle %2..."
+msgstr[3] "Uklanjam 1 staru poruku iz fascikle %2..."
+
+#: job/expirejob.cpp:183
+#, kde-format
+msgid "Cannot expire messages from folder %1: destination folder %2 not found"
+msgstr ""
+"Ne mogu da uklonim zastarele poruke iz fascikle %1: odredišna fascikla %2 "
+"nije nađena"
+
+#: job/expirejob.cpp:195
+#, kde-format
+msgid "Moving 1 old message from folder %2 to folder %3..."
+msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgstr[0] "Premeštam %1 staru poruku iz fascikle %2 u fasciklu %3..."
+msgstr[1] "Premeštam %1 stare poruke iz fascikle %2 u fasciklu %3..."
+msgstr[2] "Premeštam %1 starih poruka iz fascikle %2 u fasciklu %3..."
+msgstr[3] "Premeštam 1 staru poruku iz fascikle %2 u fasciklu %3..."
+
+#: job/expirejob.cpp:254
+#, kde-format
+msgid "Removed 1 old message from folder %2."
+msgid_plural "Removed %1 old messages from folder %2."
+msgstr[0] "Uklonjena %1 stara poruka iz fascikle %2."
+msgstr[1] "Uklonjene %1 stare poruke iz fascikle %2."
+msgstr[2] "Uklonjeno %1 starih poruka iz fascikle %2."
+msgstr[3] "Uklonjena 1 stara poruka iz fascikle %2."
+
+#: job/expirejob.cpp:259
+#, kde-format
+msgid "Moved 1 old message from folder %2 to folder %3."
+msgid_plural "Moved %1 old messages from folder %2 to folder %3."
+msgstr[0] "Premeštena %1 stara poruka iz fascikle %2 u fasciklu %3."
+msgstr[1] "Premeštene %1 stare poruke iz fascikle %2 u fasciklu %3."
+msgstr[2] "Premešteno %1 starih poruka iz fascikle %2 u fasciklu %3."
+msgstr[3] "Premeštena 1 stara poruka iz fascikle %2 u fasciklu %3."
+
+#: job/expirejob.cpp:267
+#, kde-format
+msgid "Removing old messages from folder %1 was canceled."
+msgstr "Uklanjanje starih poruka iz fascikle %1 je otkazano."
+
+#: job/expirejob.cpp:270
+#, kde-format
+msgid "Moving old messages from folder %1 to folder %2 was canceled."
+msgstr "Premeštanje starih poruka iz fascikle %1 u fasciklu %2 je otkazano."
+
+#: job/expirejob.cpp:278
+#, kde-format
+msgid "Removing old messages from folder %1 failed."
+msgstr "Uklanjanje starih poruka iz fascikle %1 nije uspelo."
+
+#: job/expirejob.cpp:281
+#, kde-format
+msgid "Moving old messages from folder %1 to folder %2 failed."
+msgstr "Premeštanje starih poruka iz fascikle %1 u fasciklu %2 nije uspelo."
+
+#: kernel/mailkernel.cpp:206 kernel/mailkernel.cpp:230
+#, kde-format
+msgid "You do not have read/write permission to your inbox folder."
+msgstr "Nemate dozvolu za čitanje-pisanje u fasciklu svog prijemnog sandučeta."
+
+#: kernel/mailkernel.cpp:252
+#, kde-format
+msgid "The Email program encountered a fatal error and will terminate now"
+msgstr ""
+"E‑poštanski program je naišao na kobnu grešku i sada će obustaviti rad."
+
+#: kernel/mailkernel.cpp:254
+#, kde-format
+msgid ""
+"The Email program encountered a fatal error and will terminate now.\n"
+"The error was:\n"
+"%1"
+msgstr ""
+"E‑poštanski program je naišao na kobnu grešku i sada će obustaviti rad.\n"
+"Prijavljena greška:\n"
+"%1"
+
+#: search/searchpattern.cpp:265
+#, kde-format
+msgctxt "name used for a virgin filter"
+msgid "unknown"
+msgstr "nepoznat"
+
+#: search/searchpattern.cpp:273
+#, kde-format
+msgid "(match any of the following)"
+msgstr "(uklopi bilo šta od sledećeg)"
+
+#: search/searchpattern.cpp:276
+#, kde-format
+msgid "(match all of the following)"
+msgstr "(uklopi sve od sledećeg)"
+
+#: search/searchpattern.cpp:279
+#, kde-format
+msgid "(match all messages)"
+msgstr "(uklopi sve poruke)"
+
+#: search/searchpatternedit.cpp:58
+#, kde-format
+msgid "Complete Message"
+msgstr "celokupna poruka"
+
+#: search/searchpatternedit.cpp:59
+#, kde-format
+msgid "Body of Message"
+msgstr "telo poruke"
+
+#: search/searchpatternedit.cpp:60
+#, kde-format
+msgid "Anywhere in Headers"
+msgstr "negde u zaglavljima"
+
+#: search/searchpatternedit.cpp:61
+#, kde-format
+msgid "All Recipients"
+msgstr "svi primaoci"
+
+#: search/searchpatternedit.cpp:62
+#, kde-format
+msgid "Size in Bytes"
+msgstr "veličina u bajtovima"
+
+#: search/searchpatternedit.cpp:63
+#, kde-format
+msgid "Age in Days"
+msgstr "starost u danima"
+
+#: search/searchpatternedit.cpp:64
+#, kde-format
+msgid "Message Status"
+msgstr "stanje poruke"
+
+#: search/searchpatternedit.cpp:65
+#, kde-format
+msgid "Message Tag"
+msgstr "oznaka poruke"
+
+#: search/searchpatternedit.cpp:66
+#, kde-format
+msgctxt "Subject of an email."
+msgid "Subject"
+msgstr "tema"
+
+#: search/searchpatternedit.cpp:67
+#, kde-format
+msgid "From"
+msgstr "od"
+
+#: search/searchpatternedit.cpp:68
+#, kde-format
+msgctxt "Receiver of an email."
+msgid "To"
+msgstr "za"
+
+#: search/searchpatternedit.cpp:70
+#, kde-format
+msgid "Reply To"
+msgstr "odgovor na"
+
+#: search/searchpatternedit.cpp:71
+#, kde-format
+msgid "Organization"
+msgstr "organizacija"
+
+#: search/searchpatternedit.cpp:72
+#, kde-format
+msgid "Date"
+msgstr "datum"
+
+#: search/searchpatternedit.cpp:73
+#, kde-format
+msgid "Encryption"
+msgstr "šifrovanje"
+
+#: search/searchpatternedit.cpp:160 search/searchpatternedit.cpp:161
+#, kde-format
+msgid "Choose or type your own criteria"
+msgstr "Izaberite ili unesite sopstvene kriterijume."
+
+#: search/searchpatternedit.cpp:621
+#, kde-format
+msgid "Match a&ll of the following"
+msgstr "Uklopi &sve od sledećeg"
+
+#: search/searchpatternedit.cpp:622
+#, kde-format
+msgid "Match an&y of the following"
+msgstr "Uklopi &bilo šta od sledećeg"
+
+#: search/searchpatternedit.cpp:624
+#, kde-format
+msgid "Match all messages"
+msgstr "Uklopi sve poruke"
+
+#: search/searchrule/searchrule.cpp:189
+#, kde-format
+msgid "equal"
+msgstr "jednako"
+
+#: search/searchrule/searchrule.cpp:192
+#, kde-format
+msgid "not equal"
+msgstr "nije jednako"
+
+#: search/searchrule/searchrule.cpp:195
+#, kde-format
+msgid "is greater"
+msgstr "veće"
+
+#: search/searchrule/searchrule.cpp:198
+#, kde-format
+msgid "is less or equal"
+msgstr "manje ili jednako"
+
+#: search/searchrule/searchrule.cpp:201
+#, kde-format
+msgid "is less"
+msgstr "manje"
+
+#: search/searchrule/searchrule.cpp:204
+#, kde-format
+msgid "is greater or equal"
+msgstr "veće ili jednako"
+
+#: search/searchrule/searchrule.cpp:207
+#, kde-format
+msgid "is in addressbook"
+msgstr "u adresaru"
+
+#: search/searchrule/searchrule.cpp:210
+#, kde-format
+msgid "is not in addressbook"
+msgstr "nije u adresaru"
+
+#: search/searchrule/searchrule.cpp:213 search/searchrule/searchrule.cpp:216
+#, kde-format
+msgid "is in category"
+msgstr "u kategoriji"
+
+#: search/searchrule/searchrule.cpp:219
+#: search/widgethandler/messagerulewidgethandler.cpp:40
+#: search/widgethandler/messagerulewidgethandler.cpp:160
+#, kde-format
+msgid "has an attachment"
+msgstr "ima prilog"
+
+#: search/searchrule/searchrule.cpp:222
+#, kde-format
+msgid "has not an attachment"
+msgstr "nema prilog"
+
+#: search/searchrule/searchrule.cpp:225
+#, kde-format
+msgid "start with"
+msgstr "počinje sa"
+
+#: search/searchrule/searchrule.cpp:228
+#, kde-format
+msgid "not start with"
+msgstr "ne počinje sa"
+
+#: search/searchrule/searchrule.cpp:231
+#, kde-format
+msgid "end with"
+msgstr "završava se sa"
+
+#: search/searchrule/searchrule.cpp:234
+#, kde-format
+msgid "not end with"
+msgstr "ne završava se sa"
+
+#: search/searchrule/searchrule.cpp:237
+#, kde-format
+msgid "none"
+msgstr "ništa"
+
+#: search/searchrule/searchrule.cpp:240
+#: search/widgethandler/headersrulerwidgethandler.cpp:38
+#: search/widgethandler/messagerulewidgethandler.cpp:36
+#: search/widgethandler/tagrulewidgethandler.cpp:106
+#: search/widgethandler/textrulerwidgethandler.cpp:37
+#, kde-format
+msgid "contains"
+msgstr "sadrži"
+
+#: search/searchrule/searchrule.cpp:243
+#, kde-format
+msgid "not contains"
+msgstr "ne sadrži"
+
+#: search/searchrule/searchrule.cpp:246
+#, kde-format
+msgid "has regexp"
+msgstr "ima regiz"
+
+#: search/searchrule/searchrule.cpp:249
+#, kde-format
+msgid "not regexp"
+msgstr "nije regiz"
+
+#: search/searchrule/searchrule.cpp:263
+#, kde-format
+msgid "size equals not supported"
+msgstr "„veličina jednaka“ nije podržano"
+
+#: search/searchrule/searchrule.cpp:266
+#, kde-format
+msgid "size not equals not supported"
+msgstr "„veličina nije jednaka“ nije podržano"
+
+#: search/searchrule/searchrule.cpp:297 search/searchrule/searchrule.cpp:403
+#: search/searchrule/searchrule.cpp:484
+#, kde-format
+msgid "\"%1\" is not supported with condition \"%2\""
+msgstr "„%1“ nije podržano sa uslovom „%2“"
+
+#: search/searchrule/searchrule.cpp:303
+#, kde-format
+msgid "<status> not implemented/supported"
+msgstr "<status> nije izvedeno/podržano"
+
+# literal-segment: any header
+#: search/searchrule/searchrule.cpp:306
+#, kde-format
+msgid "<any header> not implemented/supported"
+msgstr "<any header> nije izvedeno/podržano"
+
+#: search/searchrule/searchrule.cpp:309
+#, kde-format
+msgid "<contents> not implemented/supported"
+msgstr "<contents> nije izvedeno/podržano"
+
+#: search/searchrule/searchrule.cpp:312
+#, kde-format
+msgid "<age in days> not implemented/supported"
+msgstr "<age in days> nije izvedeno/podržano"
+
+#: search/searchrule/searchrule.cpp:315
+#, kde-format
+msgid "<date> not implemented/supported"
+msgstr "<date> nije izvedeno/podržano"
+
+#: search/searchrule/searchrule.cpp:318
+#, kde-format
+msgid "<recipients> not implemented/supported"
+msgstr "<recipients> nije izvedeno/podržano"
+
+#: search/searchrule/searchrule.cpp:320
+#, kde-format
+msgid "<Tag> is not supported"
+msgstr "<tag> nije podržano"
+
+#: search/searchrule/searchrule.cpp:323
+#, kde-format
+msgid "<message> not implemented/supported"
+msgstr "<message> nije izvedeno/podržano"
+
+#: search/searchrule/searchruledate.cpp:35
+#, kde-format
+msgid "Date is not valid."
+msgstr "Datum nije dobar."
+
+#: search/searchrule/searchrulenumerical.cpp:157
+#, kde-format
+msgid "Content is not a number."
+msgstr "Sadržaj nije broj."
+
+#: search/searchrule/searchrulestatus.h:37
+#, kde-format
+msgctxt "message status"
+msgid "Important"
+msgstr "važna"
+
+#: search/searchrule/searchrulestatus.h:38
+#, kde-format
+msgctxt "message status"
+msgid "Action Item"
+msgstr "stavka radnje"
+
+#: search/searchrule/searchrulestatus.h:39
+#, kde-format
+msgctxt "message status"
+msgid "Unread"
+msgstr "nepročitana"
+
+#: search/searchrule/searchrulestatus.h:40
+#, kde-format
+msgctxt "message status"
+msgid "Read"
+msgstr "pročitana"
+
+#: search/searchrule/searchrulestatus.h:41
+#, kde-format
+msgctxt "message status"
+msgid "Deleted"
+msgstr "obrisana"
+
+#: search/searchrule/searchrulestatus.h:42
+#, kde-format
+msgctxt "message status"
+msgid "Replied"
+msgstr "odgovorena"
+
+#: search/searchrule/searchrulestatus.h:43
+#, kde-format
+msgctxt "message status"
+msgid "Forwarded"
+msgstr "prosleđena"
+
+#: search/searchrule/searchrulestatus.h:44
+#, kde-format
+msgctxt "message status"
+msgid "Queued"
+msgstr "pripravna"
+
+#: search/searchrule/searchrulestatus.h:45
+#, kde-format
+msgctxt "message status"
+msgid "Sent"
+msgstr "poslata"
+
+#: search/searchrule/searchrulestatus.h:46
+#, kde-format
+msgctxt "message status"
+msgid "Watched"
+msgstr "nadgledana"
+
+#: search/searchrule/searchrulestatus.h:47
+#, kde-format
+msgctxt "message status"
+msgid "Ignored"
+msgstr "ignorisana"
+
+#: search/searchrule/searchrulestatus.h:48
+#, kde-format
+msgctxt "message status"
+msgid "Spam"
+msgstr "spam"
+
+#: search/searchrule/searchrulestatus.h:49
+#, kde-format
+msgctxt "message status"
+msgid "Ham"
+msgstr "ham"
+
+#: search/searchrule/searchrulestatus.h:50
+#, kde-format
+msgctxt "message status"
+msgid "Has Attachment"
+msgstr "sa prilogom"
+
+#: search/searchrule/searchrulestring.cpp:249
+#, kde-format
+msgid "String is empty."
+msgstr "Niska je prazna."
+
+#: search/widgethandler/daterulewidgethandler.cpp:36
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:34
+#: search/widgethandler/numericrulewidgethandler.cpp:34
+#, kde-format
+msgid "is equal to"
+msgstr "jednako"
+
+#: search/widgethandler/daterulewidgethandler.cpp:37
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:35
+#: search/widgethandler/numericrulewidgethandler.cpp:35
+#, kde-format
+msgid "is not equal to"
+msgstr "nije jednako"
+
+#: search/widgethandler/daterulewidgethandler.cpp:38
+#, kde-format
+msgid "is after"
+msgstr "posle"
+
+#: search/widgethandler/daterulewidgethandler.cpp:39
+#, kde-format
+msgid "is before or equal to"
+msgstr "pre ili jednako"
+
+#: search/widgethandler/daterulewidgethandler.cpp:40
+#, kde-format
+msgid "is before"
+msgstr "pre"
+
+#: search/widgethandler/daterulewidgethandler.cpp:41
+#, kde-format
+msgid "is after or equal to"
+msgstr "posle ili jednako"
+
+#: search/widgethandler/encryptionwidgethandler.cpp:30
+#: search/widgethandler/statusrulewidgethandler.cpp:32
+#, kde-format
+msgid "is"
+msgstr "je"
+
+#: search/widgethandler/encryptionwidgethandler.cpp:31
+#: search/widgethandler/statusrulewidgethandler.cpp:33
+#, kde-format
+msgid "is not"
+msgstr "nije"
+
+#: search/widgethandler/encryptionwidgethandler.cpp:73
+#, kde-format
+msgid "encrypted"
+msgstr "šifrovano"
+
+#: search/widgethandler/encryptionwidgethandler.cpp:110
+#, kde-format
+msgid "is encrypted"
+msgstr "šifrovano"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:39
+#: search/widgethandler/messagerulewidgethandler.cpp:37
+#: search/widgethandler/tagrulewidgethandler.cpp:107
+#: search/widgethandler/textrulerwidgethandler.cpp:38
+#, kde-format
+msgid "does not contain"
+msgstr "ne sadrži"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:40
+#: search/widgethandler/tagrulewidgethandler.cpp:108
+#: search/widgethandler/textrulerwidgethandler.cpp:39
+#, kde-format
+msgid "equals"
+msgstr "jednako"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:41
+#: search/widgethandler/tagrulewidgethandler.cpp:109
+#: search/widgethandler/textrulerwidgethandler.cpp:40
+#, kde-format
+msgid "does not equal"
+msgstr "nije jednako"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:42
+#: search/widgethandler/textrulerwidgethandler.cpp:41
+#, kde-format
+msgid "starts with"
+msgstr "počinje sa"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:43
+#: search/widgethandler/textrulerwidgethandler.cpp:42
+#, kde-format
+msgid "does not start with"
+msgstr "ne počinje sa"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:44
+#: search/widgethandler/textrulerwidgethandler.cpp:43
+#, kde-format
+msgid "ends with"
+msgstr "završava se sa"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:45
+#: search/widgethandler/textrulerwidgethandler.cpp:44
+#, kde-format
+msgid "does not end with"
+msgstr "ne završava se sa"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:47
+#: search/widgethandler/messagerulewidgethandler.cpp:38
+#: search/widgethandler/tagrulewidgethandler.cpp:110
+#: search/widgethandler/textrulerwidgethandler.cpp:46
+#, kde-format
+msgid "matches regular expr."
+msgstr "poklapa reg. iz."
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:48
+#: search/widgethandler/messagerulewidgethandler.cpp:39
+#: search/widgethandler/tagrulewidgethandler.cpp:111
+#: search/widgethandler/textrulerwidgethandler.cpp:47
+#, kde-format
+msgid "does not match reg. expr."
+msgstr "ne poklapa reg. iz."
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:49
+#: search/widgethandler/headersrulerwidgethandler.cpp:172
+#, kde-format
+msgid "is in address book"
+msgstr "u adresaru"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:50
+#: search/widgethandler/headersrulerwidgethandler.cpp:174
+#, kde-format
+msgid "is not in address book"
+msgstr "nije u adresaru"
+
+#: search/widgethandler/messagerulewidgethandler.cpp:41
+#: search/widgethandler/messagerulewidgethandler.cpp:162
+#, kde-format
+msgid "has no attachment"
+msgstr "nema prilog"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:36
+#: search/widgethandler/numericrulewidgethandler.cpp:36
+#, kde-format
+msgid "is greater than"
+msgstr "veće od"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:37
+#: search/widgethandler/numericrulewidgethandler.cpp:37
+#, kde-format
+msgid "is less than or equal to"
+msgstr "manje od ili jednako"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:38
+#: search/widgethandler/numericrulewidgethandler.cpp:38
+#, kde-format
+msgid "is less than"
+msgstr "manje od"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:39
+#: search/widgethandler/numericrulewidgethandler.cpp:39
+#, kde-format
+msgid "is greater than or equal to"
+msgstr "veće od ili jednako"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:176
+#, kde-format
+msgctxt "spinbox suffix: unit for kilobyte"
+msgid " kB"
+msgstr " kB"
+
+#: search/widgethandler/numericrulewidgethandler.cpp:176
+#, kde-format
+msgctxt "Unit suffix where units are days."
+msgid " day"
+msgid_plural " days"
+msgstr[0] " dan"
+msgstr[1] " dana"
+msgstr[2] " dana"
+msgstr[3] " dan"
+
+#: snippets/snippetattachmentwidget.cpp:40
+#, kde-format
+msgid "Click on button for selecting attachment file"
+msgstr ""
+
+# >> @title:window
+#: snippets/snippetattachmentwidget.cpp:46
+#: snippets/snippetselectattachmentwidget.cpp:70
+#, fuzzy, kde-format
+#| msgid "Select Account"
+msgid "Select Attachments"
+msgstr "Izbor naloga"
+
+#: snippets/snippetattachmentwidget.cpp:47
+#, fuzzy, kde-format
+#| msgid "Save..."
+msgid "..."
+msgstr "Sačuvaj..."
+
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:38
+#, kde-format
+msgctxt "@title:window"
+msgid "Customize File Name Attachment"
+msgstr ""
+
+#: snippets/snippetcustomfileattachmentnamewidget.cpp:41
+#, fuzzy, kde-format
+#| msgid "Rename"
+msgid "Filename:"
+msgstr "Preimenuj"
+
+# >> @title:window
+#: snippets/snippetcustomfileattachmentnamewidget.cpp:60
+#, fuzzy, kde-format
+#| msgid "Enter Values for Variables"
+msgid "Insert Variables"
+msgstr "Unos vrednosti za promenljive"
+
+# >> @title:window
+#: snippets/snippetselectattachmentdialog.cpp:36
+#, fuzzy, kde-format
+#| msgid "Select Account"
+msgctxt "@title:window"
+msgid "Select Attachments"
+msgstr "Izbor naloga"
+
+#: snippets/snippetselectattachmentwidget.cpp:61
+#, fuzzy, kde-format
+#| msgid "Do you want to remove selected filters?"
+msgid "Do you want to delete selected attachment?"
+msgstr "Želite li da uklonite izabrane filtere?"
+
+#: snippets/snippetsmanager.cpp:152
+#, kde-format
+msgid "General"
+msgstr "Opšte"
+
+#: snippets/snippetsmanager.cpp:158
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Snippet"
+msgstr "Dodavanje isečka"
+
+#: snippets/snippetsmanager.cpp:211
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit Snippet"
+msgstr "Uređivanje isečka"
+
+#: snippets/snippetsmanager.cpp:262
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Do you really want to remove snippet \"%1\"?<nl/><warning>There is no way to "
+"undo the removal.</warning>"
+msgstr ""
+"Želite li zaista da uklonite isečak „%1“?<nl/><warning>Uklanjanje se ne može "
+"opozvati.</warning>"
+
+#: snippets/snippetsmanager.cpp:279
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Group"
+msgstr "Dodavanje grupe"
+
+#: snippets/snippetsmanager.cpp:304
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit Group"
+msgstr "Uređivanje grupe"
+
+#: snippets/snippetsmanager.cpp:334
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Do you really want to remove group \"%1\" along with all its snippets?<nl/"
+"><warning>There is no way to undo the removal.</warning>"
+msgstr ""
+"Želite li zaista da uklonite grupu „%1“ sa svim njenim isečcima?<nl/"
+"><warning>Uklanjanje se ne može opozvati.</warning>"
+
+#: snippets/snippetsmanager.cpp:344
+#, kde-format
+msgctxt "@info"
+msgid "Do you really want to remove group \"%1\"?"
+msgstr "Želite li zaista da uklonite grupu „%1“?"
+
+#: snippets/snippetsmanager.cpp:404 snippets/snippetsmanager.cpp:426
+#, kde-format
+msgctxt "@action"
+msgid "Snippet %1"
+msgstr "Isečak %1"
+
+#: snippets/snippetsmanager.cpp:507
+#, kde-format
+msgid "Add Snippet..."
+msgstr "Dodaj isečak..."
+
+#: snippets/snippetsmanager.cpp:509
+#, kde-format
+msgid "Edit Snippet..."
+msgstr "Uredi isečak..."
+
+#: snippets/snippetsmanager.cpp:511
+#, kde-format
+msgid "Remove Snippet"
+msgstr "Ukloni isečak"
+
+#: snippets/snippetsmanager.cpp:514
+#, kde-format
+msgid "Add Group..."
+msgstr "Dodaj grupu..."
+
+#: snippets/snippetsmanager.cpp:516
+#, kde-format
+msgid "Rename Group..."
+msgstr "Preimenuj grupu..."
+
+#: snippets/snippetsmanager.cpp:518
+#, kde-format
+msgid "Remove Group"
+msgstr "Ukloni grupu"
+
+#: snippets/snippetsmanager.cpp:521
+#, kde-format
+msgid "Insert Snippet"
+msgstr "Umetni isečak"
+
+#: snippets/snippetsmodel.cpp:547 snippets/snippetsmodel.cpp:571
+#, kde-format
+msgid "Do you want to update snippet?"
+msgstr "Želite li da ažurirate isečak?"
+
+# >> @title:window
+#: snippets/snippetsmodel.cpp:547 snippets/snippetsmodel.cpp:571
+#, fuzzy, kde-format
+#| msgid "Rename snippet"
+msgid "Update snippet"
+msgstr "Preimenovanje isečka"
+
+#: snippets/snippettreeview.cpp:73
+#, fuzzy, kde-format
+#| msgid "Insert Snippet"
+msgid "Text Snippets"
+msgstr "Umetni isečak"
+
+# >> @title:window
+#: snippets/snippetvariabledialog.cpp:46
+#, fuzzy, kde-format
+#| msgid "Enter Values for Variables"
+msgctxt "@title:window"
+msgid "Enter Values for Variables"
+msgstr "Unos vrednosti za promenljive"
+
+#: snippets/snippetvariabledialog.cpp:49
+#, kde-format
+msgid "Enter the replacement values for '%1':"
+msgstr "Unesite vrednost zamene za „%1“:"
+
+#: snippets/snippetvariabledialog.cpp:55
+#, kde-format
+msgid "Make value &default"
+msgstr "Postavi kao po&drazumevanu"
+
+#: snippets/snippetvariabledialog.cpp:59
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"Enable this to save the value entered to the right as the default value for "
+"this variable"
+msgstr ""
+"Uključite ovo da biste sačuvali vrednost unesenu desno kao podrazumevanu za "
+"ovu promenljivu."
+
+#: snippets/snippetvariabledialog.cpp:63
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"If you enable this option, the value entered to the right will be saved. If "
+"you use the same variable later, even in another snippet, the value entered "
+"to the right will be the default value for that variable."
+msgstr ""
+"Ako uključite ovu opciju, vrednost koju unesete desno biće sačuvana. Ako "
+"koristite istu promenljivu kasnije, čak i u drugom isečku, vrednost unesena "
+"desno biće podrazumevana za tu promenljivu."
+
+#: snippets/snippetwidget.cpp:67
+#, kde-format
+msgid ""
+"Enter a keyword here to enable fast insertion of this snippet while writing "
+"an email. For instance if you choose \"greeting\" as the keyword, you can "
+"then type \\greeting in your email and then press the tab key, and it will "
+"be replaced with the contents of this snippet."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: snippets/ui/snippetwidget.ui:31
+#, kde-format
+msgid "&Name:"
+msgstr "&Ime:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabelGroup)
+#: snippets/ui/snippetwidget.ui:52
+#, kde-format
+msgctxt "Group to which the snippet belongs."
+msgid "Group:"
+msgstr "Grupa:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: snippets/ui/snippetwidget.ui:65
+#, fuzzy, kde-format
+#| msgctxt "message status"
+#| msgid "Has Attachment"
+msgid "Attachments:"
+msgstr "sa prilogom"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel)
+#: snippets/ui/snippetwidget.ui:82
+#, kde-format
+msgid "&Snippet:"
+msgstr "&Isečak:"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, cc)
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, bcc)
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, to)
+#: snippets/ui/snippetwidget.ui:98 snippets/ui/snippetwidget.ui:115
+#: snippets/ui/snippetwidget.ui:152
+#, kde-format
+msgid "Separate email with a comma"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: snippets/ui/snippetwidget.ui:108
+#, fuzzy, kde-format
+#| msgctxt "Email recipient"
+#| msgid "To"
+msgid "To:"
+msgstr "za"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: snippets/ui/snippetwidget.ui:125
+#, kde-format
+msgid "Cc:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: snippets/ui/snippetwidget.ui:132
+#, kde-format
+msgid "Keyword:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
+#: snippets/ui/snippetwidget.ui:139
+#, kde-format
+msgid "Sho&rtcut:"
+msgstr "&Prečica:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: snippets/ui/snippetwidget.ui:185
+#, kde-format
+msgid "Bcc:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: snippets/ui/snippetwidget.ui:208
+#, fuzzy, kde-format
+#| msgctxt "Subject of an email."
+#| msgid "Subject"
+msgid "Subject:"
+msgstr "tema"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
+#: snippets/ui/snippetwidget.ui:215
+#, kde-format
+msgid "Variables"
+msgstr ""
+
+#: tag/addtagdialog.cpp:55
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgctxt "@title:window"
+msgid "Add Tag"
+msgstr "Dodaj oznaku"
+
+#: tag/addtagdialog.cpp:95
+#, kde-format
+msgid "Tag %1 already exists"
+msgstr "Oznaka %1 već postoji."
+
+#: tag/tagwidget.cpp:77
+#, kde-format
+msgctxt "@label:listbox Name of the tag"
+msgid "Name:"
+msgstr "Ime:"
+
+#: tag/tagwidget.cpp:85
+#, kde-format
+msgid "Change te&xt color:"
+msgstr "Boja &teksta:"
+
+#: tag/tagwidget.cpp:100
+#, kde-format
+msgid "Change &background color:"
+msgstr "Boja &pozadine:"
+
+#: tag/tagwidget.cpp:116
+#, kde-format
+msgid "Change fo&nt:"
+msgstr "&Font:"
+
+#: tag/tagwidget.cpp:122
+#, kde-format
+msgid "&Bold"
+msgstr "&Podebljano"
+
+#: tag/tagwidget.cpp:126
+#, kde-format
+msgid "&Italics"
+msgstr "&Kurzivno"
+
+#: tag/tagwidget.cpp:150
+#, kde-format
+msgid "Message tag &icon:"
+msgstr "&Ikonica oznake poruke:"
+
+#: tag/tagwidget.cpp:163
+#, kde-format
+msgid "Shortc&ut:"
+msgstr "&Prečica:"
+
+#: tag/tagwidget.cpp:175
+#, kde-format
+msgid "Enable &toolbar button"
+msgstr "&Dugme na traci alatki"
+
+#: widgets/favoritecollectionwidget.cpp:99
+#, kde-format
+msgid "Icon size"
+msgstr "Veličina ikonica"
+
+#: widgets/favoritecollectionwidget.cpp:118
+#, kde-format
+msgid "Mode"
+msgstr "Režim"
+
+#: widgets/favoritecollectionwidget.cpp:122
+#, kde-format
+msgid "List Mode"
+msgstr "Režim liste"
+
+#: widgets/favoritecollectionwidget.cpp:132
+#, kde-format
+msgid "Icon Mode"
+msgstr "Režim ikonica"
+
+#: widgets/favoritecollectionwidget.cpp:243
+#, kde-format
+msgid "Drop your favorite folders here..."
+msgstr "Prevucite ovde omiljene fascikle..."
+
+#: widgets/redirectdialog.cpp:97
+#, kde-format
+msgid "Resend-To:"
+msgstr "Ponovi‑za:"
+
+#: widgets/redirectdialog.cpp:100
+#, kde-format
+msgid "Resend-Cc:"
+msgstr "Ponovi-CC:"
+
+#: widgets/redirectdialog.cpp:103
+#, kde-format
+msgid "Resend-Bcc:"
+msgstr "Ponovi-BCC:"
+
+# >> @title:window
+#: widgets/redirectdialog.cpp:132
+#, fuzzy, kde-format
+#| msgid "Redirect Message"
+msgctxt "@title:window"
+msgid "Redirect Message"
+msgstr "Preusmeravanje poruke"
+
+#: widgets/redirectdialog.cpp:153
+#, kde-format
+msgid "Select the recipient addresses to redirect to:"
+msgstr "Izaberite adrese primalaca za preusmeravanje:"
+
+#: widgets/redirectdialog.cpp:182
+#, kde-format
+msgid "Identity:"
+msgstr "Identitet:"
+
+#: widgets/redirectdialog.cpp:186
+#, kde-format
+msgid "Transport:"
+msgstr "Transport:"
+
+#: widgets/redirectdialog.cpp:188
+#, kde-format
+msgid "&Send Now"
+msgstr "&Pošalji sada"
+
+#: widgets/redirectdialog.cpp:189
+#, kde-format
+msgid "Send &Later"
+msgstr "Pošalji &kasnije"
+
+#: widgets/redirectdialog.cpp:242
+#, kde-format
+msgid "You cannot redirect the message without an address."
+msgstr "Ne možete preusmeriti poruku bez adrese."
+
+#: widgets/redirectdialog.cpp:243
+#, kde-format
+msgid "Empty Redirection Address"
+msgstr "Prazna adresa preusmeravanja"
+
+#: widgets/redirectwidget.cpp:52
+#, kde-format
+msgid "Use the Address-Selection Dialog"
+msgstr "Dijalog za izbor adresa"
+
+#: widgets/redirectwidget.cpp:53
+#, kde-format
+msgid ""
+"This button opens a separate dialog where you can select recipients out of "
+"all available addresses."
+msgstr ""
+"Ovo dugme otvara zaseban dijalog u kome možete izabrati primaoce iz svih "
+"dostupnih adresa."

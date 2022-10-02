@@ -1,0 +1,3408 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sairan Kikkarin <sairan@computer.org>, 2011, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-26 00:46+0000\n"
+"PO-Revision-Date: 2013-11-01 04:30+0600\n"
+"Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
+"Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.2\n"
+
+#: collectionpage/collectionexpirypage.cpp:27
+#, kde-format
+msgctxt "@title:tab Expiry settings for a folder."
+msgid "Expiry"
+msgstr "Ескіру"
+
+#: collectionpage/collectionexpirywidget.cpp:36
+#, kde-format
+msgctxt "Expire messages after %1"
+msgid " day"
+msgid_plural " days"
+msgstr[0] " күн"
+
+#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:43
+#: collectionpage/collectionexpirywidget.cpp:55
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu Never display tooltips."
+#| msgid "Never"
+msgid "Never"
+msgstr "Ешқашан"
+
+#: collectionpage/collectionexpirywidget.cpp:67
+#, kde-format
+msgid "Save Settings and Expire Now"
+msgstr "Баптауларды сақтау да ескірген қылу"
+
+#: collectionpage/collectionexpirywidget.cpp:68
+#, fuzzy, kde-format
+#| msgid "Expire read messages after"
+msgid "Expire messages with invalid date"
+msgstr "Оқылған, келесі мерзім өткен соң:"
+
+#: collectionpage/collectionexpirywidget.cpp:74
+#, fuzzy, kde-format
+#| msgid "Expire read messages after"
+msgid "Expire read messages after:"
+msgstr "Оқылған, келесі мерзім өткен соң:"
+
+#: collectionpage/collectionexpirywidget.cpp:77
+#, fuzzy, kde-format
+#| msgid "Expire unread messages after"
+msgid "Expire unread messages after:"
+msgstr "Оқылмаған, келесі мерзім өткен соң:"
+
+#: collectionpage/collectionexpirywidget.cpp:91
+#, kde-format
+msgid "Move expired messages to:"
+msgstr "Оқылғанды келесіге жылжыту:"
+
+#: collectionpage/collectionexpirywidget.cpp:102
+#, kde-format
+msgid "Delete expired messages permanently"
+msgstr "Ескірген хаттар мүлдем жойылсын"
+
+#: collectionpage/collectionexpirywidget.cpp:173
+#, kde-format
+msgid ""
+"Please select a folder to expire messages into.\n"
+"If this is not done, expired messages will be permanently deleted."
+msgstr ""
+"Ескірген хаттарға қапшықты арнаңыз.\n"
+"Оны істемесеңіз, ескіргендер мүлдем өшіріледі."
+
+#: collectionpage/collectionexpirywidget.cpp:174
+#, kde-format
+msgid "No Folder Selected"
+msgstr "Қапшық таңдалмаған"
+
+#: collectionpage/collectionexpirywidget.cpp:188
+#, kde-format
+msgid ""
+"Please select a different folder than the current folder to expire messages "
+"into.\n"
+"If this is not done, expired messages will be permanently deleted."
+msgstr ""
+"Ескі хаттарды сақтау үшін назардағыдан басқа қапшығын таңдаңыз.\n"
+"Оны істемесеңіз, ескіргендер мүлдем өшіріледі."
+
+#: collectionpage/collectionexpirywidget.cpp:190
+#, kde-format
+msgid "Wrong Folder Selected"
+msgstr "Таңдағаныңыз дұрыс емес"
+
+#: collectionpage/collectiongeneralpage.cpp:45
+#, kde-format
+msgctxt "@title:tab General settings for a folder."
+msgid "General"
+msgstr "Жалпы"
+
+#: collectionpage/collectiongeneralpage.cpp:66
+#, fuzzy, kde-format
+#| msgid "Rename..."
+msgctxt "@label:textbox Name of the folder."
+msgid "Folder &Name:"
+msgstr "Атын өзгерту..."
+
+#: collectionpage/collectiongeneralpage.cpp:111
+#, kde-format
+msgid "Share unread state with all users"
+msgstr "\"Оқылмаған\" күйі бүкіл пайдаланушыларға ортақ болсын"
+
+#: collectionpage/collectiongeneralpage.cpp:114
+#, kde-format
+msgid ""
+"If enabled, the unread state of messages in this folder will be the same for "
+"all users having access to this folder. If disabled (the default), every "
+"user with access to this folder has their own unread state."
+msgstr ""
+"Белгіленсе, бұл қапшықтағы хаттардың \"Оқылмаған\" күйі бүкіл бұған қатнауға "
+"рұқсаты бар пайдаланушыл үшін ортақ болады. Әйтпесе (әдетттегідей), әрбірі "
+"жеке күйіне ие болады."
+
+#: collectionpage/collectiongeneralpage.cpp:214
+#, kde-format
+msgid ""
+"You have configured this folder to contain groupware information. That means "
+"that this folder will disappear once the configuration dialog is closed."
+msgstr ""
+"Бұл қапшық топтық іс мәліметті жазылатын деп белгіледіңіз. Ол, баптау "
+"диалогы жабылған соң, қапшық ғайып болдады дегені."
+
+#: collectionpage/collectiongeneralwidget.cpp:25
+#, kde-format
+msgid "Act on new/unread mail in this folder"
+msgstr "Бұл қапшықтағы жаңа/оқылмаған хат туралы ескертілсін"
+
+#: collectionpage/collectiongeneralwidget.cpp:27
+#, kde-format
+msgid ""
+"<qt><p>If this option is enabled then you will be notified about new/unread "
+"mail in this folder. Moreover, going to the next/previous folder with unread "
+"messages will stop at this folder.</p><p>Uncheck this option if you do not "
+"want to be notified about new/unread mail in this folder and if you want "
+"this folder to be skipped when going to the next/previous folder with unread "
+"messages. This is useful for ignoring any new/unread mail in your trash and "
+"spam folder.</p></qt>"
+msgstr ""
+"<qt><p>Егер бұл амал рұқсат етілсе, осы қапшықта жаңа/оқылмаған хат бар "
+"туралы құлақтандыру жасалады. Сонымен қатар, алдыңғы/келесі оқылмағандары "
+"бар қапшықта ауысу осы қапшықта тоқтатылады.</p><p>Бұл амал рұқсат етілмесе, "
+"аталған құлақтандыру жасалмайды, және алдыңғы/келесі оқылмағандары бар "
+"қапшықта ауысқанда бұл қапшыта тоқтамайды. Бұл өшірілгендерге не спамға "
+"арналған қапшықтардағы оқылмаған хаттарды елемеуге пайдалы.</p></qt>"
+
+#: collectionpage/collectiongeneralwidget.cpp:38
+#, kde-format
+msgid "Keep replies in this folder"
+msgstr "Осы қапшықта жауаптар сақталсын"
+
+#: collectionpage/collectiongeneralwidget.cpp:40
+#, kde-format
+msgid ""
+"Check this option if you want replies you write to mails in this folder to "
+"be put in this same folder after sending, instead of in the configured sent-"
+"mail folder."
+msgstr ""
+"Осы қапшықтағы хаттарға жауаптар, жіберілген пошта қапшығына сақталғаннын "
+"орнына, өзінде қалсын десеңіз осы параметрді таңдаңыз."
+
+#: collectionpage/collectiongeneralwidget.cpp:46
+#, kde-format
+msgid "Hide this folder in the folder selection dialog"
+msgstr "Қапшық таңдау диалогында бұл қапшық жасырылсын"
+
+#: collectionpage/collectiongeneralwidget.cpp:48
+#, kde-kuit-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this option if you do not want this folder to be shown in folder "
+"selection dialogs, such as the <interface>Jump to Folder</interface> dialog."
+msgstr ""
+"\"Қапшық, <interface>Қапшыққа ауысу</interface> секілді қапшық таңдау "
+"диалогында көрсетілмесін десеңіз - осыны белгілеңіз."
+
+#: collectionpage/collectiongeneralwidget.cpp:54
+#, kde-format
+msgid "Use &default identity"
+msgstr "&Әдетті іс-әлпеті қолдансын"
+
+#: collectionpage/collectiongeneralwidget.cpp:60
+#, kde-format
+msgid ""
+"Select the sender identity to be used when writing new mail or replying to "
+"mail in this folder. This means that if you are in one of your work folders, "
+"you can make KMail use the corresponding sender email address, signature and "
+"signing or encryption keys automatically. Identities can be set up in the "
+"main configuration dialog. (Settings -> Configure KMail)"
+msgstr ""
+"Жаңа хаттарды жіберуге немесе осы қапшықтағы хаттарға жауап беруге "
+"қолданатын жіберушінің іс-әлпетін таңдаңыз. Сонда, осы жұмыс қапшықтарының "
+"біреуінде болсаңыз, KMail сол қапшыққа сәйкесті жіберушінің эл.пошта "
+"адресін, оның қолтаңбасын, қолтаңбалау және шифрлау кілттерін автоматты "
+"түрде қолданады. Іс-әлпеттері KMail баптау диалогында орнатылады. (Баптау -> "
+"KMail баптаулары)"
+
+#: collectionpage/collectiongeneralwidget.cpp:66
+#, kde-format
+msgid "&Sender identity:"
+msgstr "&Жіберушінің іс-әлпеті:"
+
+#: collectionpage/collectiontemplateswidget.cpp:26
+#, fuzzy, kde-format
+#| msgid "Keep replies in this folder"
+msgid "&Use custom message templates in this folder"
+msgstr "Осы қапшықта жауаптар сақталсын"
+
+#: collectionpage/collectiontemplateswidget.cpp:42
+#, kde-format
+msgid "&Copy Global Templates"
+msgstr ""
+
+#: collectionpage/collectionviewwidget.cpp:32
+#, kde-format
+msgid "Show Sender/Receiver Column in List of Messages"
+msgstr ""
+
+#: collectionpage/collectionviewwidget.cpp:36
+#, fuzzy, kde-format
+#| msgid " (default)"
+msgctxt "@item:inlistbox Show default value."
+msgid "Default"
+msgstr " (default)"
+
+#: collectionpage/collectionviewwidget.cpp:37
+#, fuzzy, kde-format
+#| msgid "&Send"
+msgctxt "@item:inlistbox Show sender."
+msgid "Sender"
+msgstr "&Жіберу"
+
+#: collectionpage/collectionviewwidget.cpp:38
+#, kde-format
+msgctxt "@item:inlistbox Show receiver."
+msgid "Receiver"
+msgstr ""
+
+#: collectionpage/collectionviewwidget.cpp:39
+#, fuzzy, kde-format
+#| msgid "Shortcut:"
+msgid "Sho&w column:"
+msgstr "Тіркесімі:"
+
+#: collectionpage/collectionviewwidget.cpp:42
+#, fuzzy, kde-format
+#| msgid "Use &default identity"
+msgid "Use default message list aggregation:"
+msgstr "&Әдетті іс-әлпеті қолдансын"
+
+#: collectionpage/collectionviewwidget.cpp:59
+#, fuzzy, kde-format
+#| msgid "Use &default identity"
+msgid "Use default message list theme"
+msgstr "&Әдетті іс-әлпеті қолдансын"
+
+#: collectionpage/collectionviewwidget.cpp:76
+#, kde-format
+msgid "Prefer HTML to text"
+msgstr ""
+
+#: collectionpage/collectionviewwidget.cpp:77
+#, fuzzy, kde-format
+#| msgid "Message Status"
+msgid "Message format:"
+msgstr "Хаттың жағдайы"
+
+#: collectionpage/collectionviewwidget.cpp:78
+#, kde-format
+msgid "Prefer text to HTML"
+msgstr ""
+
+#: collectionpage/collectionviewwidget.cpp:80
+#, kde-format
+msgid "Use Global Settings"
+msgstr ""
+
+#: filter/dialog/filteractionmissingaccountdialog.cpp:27
+#, fuzzy, kde-format
+#| msgid "Select Account"
+msgctxt "@title:window"
+msgid "Select Account"
+msgstr "Тіркелгіні таңдау"
+
+#: filter/dialog/filteractionmissingaccountdialog.cpp:33
+#, kde-format
+msgid ""
+"Filter account is missing. Please select account to use with filter \"%1\""
+msgstr ""
+"Сүзгілеу үшін тіркелгі келтірілмеген. \"%1\" деген сүзгіні пайдаланатын "
+"тіркелгіні таңдаңыз"
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:34
+#: folder/folderrequester.cpp:73
+#, fuzzy, kde-format
+#| msgid "Select Folder"
+msgctxt "@title:window"
+msgid "Select Folder"
+msgstr "Қапшықты таңдау"
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:37
+#, kde-format
+msgid "Folder path was \"%1\"."
+msgstr "Болған қапшықтың жолы: \"%1\""
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:42
+#, kde-format
+msgid "The following folders can be used for this filter:"
+msgstr "Бұл сүзгіні қолдану үшін келесі қапшықтар болады:"
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:63
+#, fuzzy, kde-format
+#| msgid "Please select a folder"
+msgid "Please select a folder:"
+msgstr "Қапшықты таңдаңыз"
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:66
+#, fuzzy, kde-format
+#| msgid ""
+#| "Filter folder is missing. Please select a folder to use with filter \"%1\""
+msgid ""
+"Filter folder is missing. Please select a folder to use with filter \"%1\":"
+msgstr ""
+"Сүзгілейтін қапшық келтірілмеген. \"%1\" дегенмен сүзгілейтін қапшықты "
+"таңдаңыз"
+
+#: filter/dialog/filteractionmissingidentitydialog.cpp:27
+#, fuzzy, kde-format
+#| msgid "Select Identity"
+msgctxt "@title:window"
+msgid "Select Identity"
+msgstr "Іс-әлпетін таңдау"
+
+#: filter/dialog/filteractionmissingidentitydialog.cpp:33
+#, kde-format
+msgid ""
+"Filter identity is missing. Please select an identity to use with filter "
+"\"%1\""
+msgstr ""
+"Сүзгілейтін іс-әлпеті келтірілмеген. \"%1\" дегенмен сүзгілейтін іс-әлпетін "
+"таңдаңыз"
+
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:25
+#, fuzzy, kde-format
+#| msgid "Select sound"
+msgctxt "@title:window"
+msgid "Select sound"
+msgstr "Дыбысты таңдау"
+
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:29
+#, kde-format
+msgid "Sound file was \"%1\"."
+msgstr "Болған дыбыс файлы: \"%1\"."
+
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:36
+#, kde-format
+msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
+msgstr "Дыбыс файлы жоқ. \"%1\" сүзгімен қолданатын дыбысты таңдаңыз"
+
+#: filter/dialog/filteractionmissingtagdialog.cpp:31
+#, fuzzy, kde-format
+#| msgid "Select Tag"
+msgctxt "@title:window"
+msgid "Select Tag"
+msgstr "Тег-белгіні таңдау"
+
+#: filter/dialog/filteractionmissingtagdialog.cpp:34
+#, kde-format
+msgid "Tag was \"%1\"."
+msgstr "Болған тег-белгісі: \"%1\""
+
+#: filter/dialog/filteractionmissingtagdialog.cpp:41
+#, kde-format
+msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
+msgstr ""
+"Сүзгілейтін белгісі келтірілмеген. \"%1\" дегенмен сүзгілейтін белгіні "
+"таңдаңыз"
+
+#: filter/dialog/filteractionmissingtagdialog.cpp:65
+#, kde-format
+msgid "Add Tag..."
+msgstr "Белгіні қосу..."
+
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:27
+#, fuzzy, kde-format
+#| msgid "Select Template"
+msgctxt "@title:window"
+msgid "Select Template"
+msgstr "Үлгісін таңдау"
+
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:33
+#, kde-format
+msgid ""
+"Filter template is missing. Please select a template to use with filter "
+"\"%1\""
+msgstr ""
+"Сүзгілейтін үлгі келтірілмеген. \"%1\" дегенмен сүзгілейтін үлгісін таңдаңыз"
+
+#: filter/dialog/filteractionmissingtransportdialog.cpp:26
+#, fuzzy, kde-format
+#| msgid "Select Transport"
+msgctxt "@title:window"
+msgid "Select Transport"
+msgstr "Тасымалдау әдісін таңдау"
+
+#: filter/dialog/filteractionmissingtransportdialog.cpp:32
+#, kde-format
+msgid ""
+"Filter transport is missing. Please select a transport to use with filter "
+"\"%1\""
+msgstr ""
+"Сүзгілейтін тасымалдау әдісі келтірілмеген. \"%1\" дегенмен сүзгілейтін "
+"тасымалдау\n"
+"әдісін таңдаңыз"
+
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:23
+#, fuzzy, kde-format
+#| msgid "Select thunderbird filter files"
+msgctxt "@title:window"
+msgid "Select thunderbird filter files"
+msgstr "Thunderbird сүзгі файлдарын таңдау"
+
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:31
+#, kde-format
+msgid " (default)"
+msgstr " (default)"
+
+#: filter/filteractions/filteraction.cpp:133
+#, fuzzy, kde-format
+#| msgid "### \"%1 not supported\""
+msgid "### \"action '%1' not supported\""
+msgstr "### \"%1 қолдауы жоқ\""
+
+#: filter/filteractions/filteractionaddheader.cpp:21
+#, kde-format
+msgid "Add Header"
+msgstr "Айдарды қосу"
+
+#: filter/filteractions/filteractionaddheader.cpp:76
+#, kde-format
+msgid "With value:"
+msgstr "Мәні:"
+
+#: filter/filteractions/filteractionaddheader.cpp:202
+#, kde-format
+msgid "The header name was missing."
+msgstr ""
+
+#: filter/filteractions/filteractionaddheader.cpp:208
+#, kde-format
+msgid "The header value was missing."
+msgstr ""
+
+#: filter/filteractions/filteractionaddtag.cpp:24
+#, kde-format
+msgid "Add Tag"
+msgstr "Белгіні қосу"
+
+#: filter/filteractions/filteractionaddtag.cpp:150
+#, fuzzy, kde-format
+#| msgid "No filters selected."
+msgid "No tag selected."
+msgstr "Сүзгі таңдалмаған."
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:32
+#, kde-format
+msgid "Add to Address Book"
+msgstr "Адрестік кітапшасына қосу"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:33
+#, kde-format
+msgctxt "Email sender"
+msgid "From"
+msgstr "Кімден"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:34
+#, kde-format
+msgctxt "Email recipient"
+msgid "To"
+msgstr "Кімге"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:35
+#: search/searchpatternedit.cpp:52
+#, kde-format
+msgid "CC"
+msgstr "Көшірме кімге"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:36
+#, kde-format
+msgid "BCC"
+msgstr "Жасырып кімге"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:39
+#, kde-format
+msgid "KMail Filter"
+msgstr "KMail сүзгісі"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:116
+#, kde-format
+msgid "with category"
+msgstr "санаты"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:124
+#, kde-format
+msgid "in address book"
+msgstr "келесі адр.кітапшада:"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:134
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>This defines the preferred address book.<br />If it is not accessible, "
+#| "the filter will fallback to the default address book.</p>"
+msgid ""
+"This defines the preferred address book.\n"
+"If it is not accessible, the filter will fallback to the default address "
+"book."
+msgstr ""
+"<p>Бұл алдымен қолданатын адрестік кітапшаны белгілейді.<br />Ол қол "
+"жеткізбесе, онда әдетті адрестік кітапшаға ауысады.</p>"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:286
+#, kde-format
+msgid "Header type selected is unknown."
+msgstr ""
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:292
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgid "No addressbook selected."
+msgstr "Қапшық таңдалмаған."
+
+#: filter/filteractions/filteractioncopy.cpp:19
+#, kde-format
+msgid "Copy Into Folder"
+msgstr "Көшірмелейтін қапшық"
+
+#: filter/filteractions/filteractioncopy.cpp:68
+#: filter/filteractions/filteractionmove.cpp:66
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgid "Folder destination was not defined."
+msgstr "Қапшықты құру жаңылысы"
+
+#: filter/filteractions/filteractiondecrypt.cpp:27
+#: filter/filteractions/filteractiondecrypt.cpp:40
+#, kde-format
+msgid "Decrypt"
+msgstr ""
+
+#: filter/filteractions/filteractiondecrypt.cpp:95
+#, kde-format
+msgid "<b>Warning:</b> Decrypted emails may be uploaded to a server!"
+msgstr ""
+
+#: filter/filteractions/filteractiondecrypt.cpp:97
+#, kde-format
+msgid ""
+"<p>If the email folder that you are filtering into is connected to a remote "
+"account (like an IMAP-Server) the decrypted content will go there.</p>"
+msgstr ""
+
+#: filter/filteractions/filteractiondelete.cpp:18
+#, kde-format
+msgid "Delete Message"
+msgstr "Хатты жою"
+
+#: filter/filteractions/filteractiondelete.cpp:41
+#, kde-format
+msgid "Be careful, mails will be removed."
+msgstr "Абайлаңыз, хаттар өшіріледі."
+
+#: filter/filteractions/filteractionencrypt.cpp:43
+#, kde-format
+msgid "Encrypt"
+msgstr ""
+
+#: filter/filteractions/filteractionencrypt.cpp:206
+#, kde-format
+msgid "No encryption key has been selected"
+msgstr ""
+
+#: filter/filteractions/filteractionencrypt.cpp:242
+#, kde-format
+msgid "Re-encrypt encrypted emails with this key"
+msgstr ""
+
+#: filter/filteractions/filteractionencrypt.cpp:252
+#, kde-format
+msgid "<b>Warning:</b> Seckey necessary to read emails."
+msgstr ""
+
+#: filter/filteractions/filteractionencrypt.cpp:254
+#, kde-format
+msgid ""
+"<p>Once an email has been encrypted you will need a crypto setup with your "
+"secret key to access the contents again.</p><p>If you keep emails stored on "
+"an email server and use several clients, each of them must be configured to "
+"enable decryption.</p>"
+msgstr ""
+
+#: filter/filteractions/filteractionexec.cpp:15
+#, kde-format
+msgid "Execute Command"
+msgstr "Команданы орындау"
+
+#: filter/filteractions/filteractionexec.cpp:36
+#, kde-format
+msgid "Missing command."
+msgstr ""
+
+#: filter/filteractions/filteractionforward.cpp:36
+#, kde-format
+msgctxt "Forward directly not with a command"
+msgid "Forward To"
+msgstr "Қайда қайта жіберу:"
+
+#: filter/filteractions/filteractionforward.cpp:92
+#, kde-format
+msgid "The addressee to whom the message will be forwarded."
+msgstr "Басқаға жіберілгенде қай адреске жіберіледі."
+
+#: filter/filteractions/filteractionforward.cpp:93
+#, kde-format
+msgid "The filter will forward the message to the addressee entered here."
+msgstr "Сүзгі хатты осында көрсетілгенге қайта жібермек."
+
+#: filter/filteractions/filteractionforward.cpp:100
+#: filter/filteractions/filteractionforward.cpp:199
+#, kde-format
+msgid "Default Template"
+msgstr "Әдетті үлгі"
+
+#: filter/filteractions/filteractionforward.cpp:111
+#, kde-format
+msgid "The template used when forwarding"
+msgstr "Басқаға жібергенде қолданатын үлгісі"
+
+#: filter/filteractions/filteractionforward.cpp:112
+#, kde-format
+msgid "Set the forwarding template that will be used with this filter."
+msgstr "Сүзгі басқаға жібергенде қолданатын үлгісін орнатыңыз."
+
+#: filter/filteractions/filteractionforward.cpp:227
+#, kde-format
+msgid "Forward to %1 with default template"
+msgstr "%1 дегенді әдетті үлгсімен басқаға жіберу"
+
+#: filter/filteractions/filteractionforward.cpp:229
+#, kde-format
+msgid "Forward to %1 with template %2"
+msgstr "%1 дегенді %2 үлгісімен басқаға жіберу"
+
+#: filter/filteractions/filteractionforward.cpp:235
+#: filter/filteractions/filteractionreplyto.cpp:51
+#, kde-format
+msgid "Email address was not defined."
+msgstr ""
+
+#: filter/filteractions/filteractionmove.cpp:23
+#, kde-format
+msgid "Move Into Folder"
+msgstr "Салатын қапшық"
+
+#: filter/filteractions/filteractionpipethrough.cpp:20
+#, kde-format
+msgctxt "pipe through with command"
+msgid "Pipe Through"
+msgstr "Жіберетін арна:"
+
+#: filter/filteractions/filteractionpipethrough.cpp:36
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgid "No action defined."
+msgstr "Қапшықты құру жаңылысы"
+
+#: filter/filteractions/filteractionplaysound.cpp:22
+#, kde-format
+msgid "Play Sound"
+msgstr "Дыбысты орындау"
+
+#: filter/filteractions/filteractionplaysound.cpp:77
+#, fuzzy, kde-format
+#| msgid "Sound file was \"%1\"."
+msgid "Sound file was not defined."
+msgstr "Болған дыбыс файлы: \"%1\"."
+
+#: filter/filteractions/filteractionredirect.cpp:27
+#, kde-format
+msgid "Redirect To"
+msgstr "Келесіге бағыттау"
+
+#: filter/filteractions/filteractionredirect.cpp:71
+#, kde-format
+msgid "Email address was missing."
+msgstr ""
+
+#: filter/filteractions/filteractionremoveheader.cpp:22
+#, kde-format
+msgid "Remove Header"
+msgstr "Айдарды өшіру"
+
+#: filter/filteractions/filteractionremoveheader.cpp:96
+#, kde-format
+msgid "Header name undefined."
+msgstr ""
+
+#: filter/filteractions/filteractionreplyto.cpp:20
+#, kde-format
+msgid "Set Reply-To To"
+msgstr "Жауап беру адресі"
+
+#: filter/filteractions/filteractionrewriteheader.cpp:25
+#, kde-format
+msgid "Rewrite Header"
+msgstr "Айдарды қайта жазу"
+
+#: filter/filteractions/filteractionrewriteheader.cpp:42
+#, fuzzy, kde-format
+#| msgid "Sound file was \"%1\"."
+msgid "Header not defined"
+msgstr "Болған дыбыс файлы: \"%1\"."
+
+#: filter/filteractions/filteractionrewriteheader.cpp:48
+#, kde-format
+msgid "Search string is empty."
+msgstr ""
+
+#: filter/filteractions/filteractionrewriteheader.cpp:110
+#, kde-format
+msgid "Replace:"
+msgstr "Алмастыру:"
+
+#: filter/filteractions/filteractionrewriteheader.cpp:121
+#, kde-format
+msgid "With:"
+msgstr "Мынамен:"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:28
+#, kde-format
+msgid "Send Fake MDN"
+msgstr "Жалған хабарлау"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:33
+#, kde-format
+msgctxt "MDN type"
+msgid "Ignore"
+msgstr "Елемеу"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:34
+#, kde-format
+msgctxt "MDN type"
+msgid "Displayed"
+msgstr "Көрсетілген"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:35
+#, kde-format
+msgctxt "MDN type"
+msgid "Deleted"
+msgstr "Өшірілген"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:36
+#, kde-format
+msgctxt "MDN type"
+msgid "Dispatched"
+msgstr "Қайта жіберілген"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:37
+#, kde-format
+msgctxt "MDN type"
+msgid "Processed"
+msgstr "Қарастырылған"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:38
+#, kde-format
+msgctxt "MDN type"
+msgid "Denied"
+msgstr "Жетті"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:39
+#, kde-format
+msgctxt "MDN type"
+msgid "Failed"
+msgstr "Жеткізу қатесі"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:115
+#, kde-format
+msgid "Fake type undefined."
+msgstr ""
+
+#: filter/filteractions/filteractionsendreceipt.cpp:21
+#, kde-format
+msgid "Confirm Delivery"
+msgstr "Жеткізуді құптау"
+
+#: filter/filteractions/filteractionsetidentity.cpp:29
+#, kde-format
+msgid "Set Identity To"
+msgstr "Іс-әлпеті"
+
+#: filter/filteractions/filteractionsetstatus.cpp:20
+#, kde-format
+msgid "Mark As"
+msgstr "Былай деп белгілеу"
+
+#: filter/filteractions/filteractionsetstatus.cpp:32
+#, kde-format
+msgid "Status not specified."
+msgstr ""
+
+#: filter/filteractions/filteractionsettransport.cpp:36
+#, kde-format
+msgid "Set Transport To"
+msgstr "Тасымалдау әдісі "
+
+#: filter/filteractions/filteractionsettransport.cpp:142
+#, fuzzy, kde-format
+#| msgid "Sound file was \"%1\"."
+msgid "Mail transport not defined."
+msgstr "Болған дыбыс файлы: \"%1\"."
+
+#: filter/filteractions/filteractionstatus.cpp:31
+#, kde-format
+msgctxt "msg status"
+msgid "Important"
+msgstr "Маңызды"
+
+#: filter/filteractions/filteractionstatus.cpp:32
+#, kde-format
+msgctxt "msg status"
+msgid "Read"
+msgstr "Оқылған"
+
+#: filter/filteractions/filteractionstatus.cpp:33
+#, kde-format
+msgctxt "msg status"
+msgid "Unread"
+msgstr "Оқылмаған"
+
+#: filter/filteractions/filteractionstatus.cpp:34
+#, kde-format
+msgctxt "msg status"
+msgid "Replied"
+msgstr "Жауап берілген"
+
+#: filter/filteractions/filteractionstatus.cpp:35
+#, kde-format
+msgctxt "msg status"
+msgid "Forwarded"
+msgstr "Басқаға жіберілген"
+
+#: filter/filteractions/filteractionstatus.cpp:36
+#, kde-format
+msgctxt "msg status"
+msgid "Watched"
+msgstr "Қаралған"
+
+#: filter/filteractions/filteractionstatus.cpp:37
+#, kde-format
+msgctxt "msg status"
+msgid "Ignored"
+msgstr "Мән берілмеген"
+
+#: filter/filteractions/filteractionstatus.cpp:38
+#, kde-format
+msgctxt "msg status"
+msgid "Spam"
+msgstr "Спам"
+
+#: filter/filteractions/filteractionstatus.cpp:39
+#, kde-format
+msgctxt "msg status"
+msgid "Ham"
+msgstr "Құнды"
+
+#: filter/filteractions/filteractionstatus.cpp:40
+#, kde-format
+msgctxt "msg status"
+msgid "Action Item"
+msgstr "Амал күтетін"
+
+#: filter/filteractions/filteractionstatus.cpp:100
+#, kde-format
+msgid "Status is missing."
+msgstr ""
+
+#: filter/filteractions/filteractionunsetstatus.cpp:19
+#, kde-format
+msgctxt "action: to unset the status"
+msgid "Unset Status"
+msgstr "Хаттың жағдайын анықтамау"
+
+#: filter/filteractions/filteractionunsetstatus.cpp:37
+#, fuzzy, kde-format
+#| msgid "Sound file was \"%1\"."
+msgid "Status not defined."
+msgstr "Болған дыбыс файлы: \"%1\"."
+
+#: filter/filteractions/filteractionwidget.cpp:69
+#, kde-format
+msgid "Please select an action."
+msgstr "Әрекетті таңдаңыз."
+
+#: filter/filteractions/filteractionwithurl.cpp:22
+#, kde-format
+msgid "Help"
+msgstr ""
+
+#: filter/filteractions/filteractionwithurl.cpp:64
+#, kde-format
+msgid "You can get specific header when you use %{headername}."
+msgstr ""
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:30
+#, fuzzy, kde-format
+#| msgid "Convert to sieve script"
+msgctxt "@title:window"
+msgid "Convert to Sieve Script"
+msgstr "Sieve скриптіне аудару"
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
+#, kde-format
+msgid "Save..."
+msgstr "Сақтау..."
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:53
+#, fuzzy, kde-format
+#| msgid "Save..."
+msgid "Share..."
+msgstr "Сақтау..."
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:69
+#, fuzzy, kde-format
+#| msgid ""
+#| "*.siv|sieve files (*.siv)\n"
+#| "*|all files (*)"
+msgid "Sieve Files (*.siv);;All Files (*)"
+msgstr ""
+"*.siv|sieve файлдары (*.siv)\n"
+"*|бүкіл файлдар (*)"
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:70
+#, fuzzy, kde-format
+#| msgid "Convert to sieve script"
+msgctxt "@title:window"
+msgid "Convert to Script Sieve"
+msgstr "Sieve скриптіне аудару"
+
+#: filter/filterimporter/filterimportergmail.cpp:48
+#, fuzzy, kde-format
+#| msgid "KMail filters"
+msgid "Gmail filter %1"
+msgstr "KMail сүзгілері"
+
+#: filter/filterimporter/filterimporterprocmail.cpp:53
+#, fuzzy, kde-format
+#| msgid "Procmail filters"
+msgid "Procmail filter %1"
+msgstr "Procmail сүзгілері"
+
+#: filter/filterimporterexporter.cpp:114
+#, kde-format
+msgid ""
+"The following filters have not been saved because they were invalid (e.g. "
+"containing no actions or no search rules)."
+msgstr ""
+"Келесі сүзгілер жарамсыз болғандықтан (мысалы, әрекеті немесе іздеу ережесі "
+"жоқтығынан) сақталмады."
+
+#: filter/filterimporterexporter.cpp:140
+#, kde-format
+msgid "Import KMail Filters"
+msgstr "KMail сүзгілерін импорттау"
+
+#: filter/filterimporterexporter.cpp:148
+#, kde-format
+msgid "Import Evolution Filters"
+msgstr "Evolution сүзгілерін импорттау"
+
+#: filter/filterimporterexporter.cpp:152
+#, kde-format
+msgid "Import Sylpheed Filters"
+msgstr "Sylpheed сүзгілерін импорттау"
+
+#: filter/filterimporterexporter.cpp:156
+#, kde-format
+msgid "Import Procmail Filters"
+msgstr "Procmail сүзгілерін импорттау"
+
+#: filter/filterimporterexporter.cpp:160
+#, kde-format
+msgid "Import Balsa Filters"
+msgstr "Balsa сүзгілерін импорттау"
+
+#: filter/filterimporterexporter.cpp:164
+#, kde-format
+msgid "Import Claws Mail Filters"
+msgstr "ClawsMail сүзгілерін импорттау"
+
+#: filter/filterimporterexporter.cpp:168
+#, fuzzy, kde-format
+#| msgid "Import KMail Filters"
+msgid "Import Gmail Filters"
+msgstr "KMail сүзгілерін импорттау"
+
+#: filter/filterimporterexporter.cpp:182 filter/filterimporterexporter.cpp:218
+#: filter/filterimporterexporter.cpp:238
+#, kde-format
+msgid ""
+"The selected file is not readable. Your file access permissions might be "
+"insufficient."
+msgstr "Таңдалған деген файл оқылмады. Құқығыңыз жеткілікті емес болуы мүмкін."
+
+#: filter/filterimporterexporter.cpp:318
+#, kde-format
+msgid "Export Filters"
+msgstr "Сүзгілерді экспорттау"
+
+#: filter/filterselectiondialog.cpp:24
+#, kde-format
+msgid "Select All"
+msgstr "Бүкілін таңдау"
+
+#: filter/filterselectiondialog.cpp:25
+#, kde-format
+msgid "Unselect All"
+msgstr "Барлығынан айну"
+
+#: filter/filterselectiondialog.cpp:29
+#, fuzzy, kde-format
+#| msgid "Select Filters"
+msgctxt "@title:window"
+msgid "Select Filters"
+msgstr "Сүзгіні таңдау"
+
+#: filter/filterselectiondialog.cpp:40 filter/kmfilterlistbox.cpp:51
+#: folder/foldertreewidget.cpp:85
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "@info/plain Displayed grayed-out inside the textbox, verb to search"
+#| msgid "Search"
+msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
+msgid "Search"
+msgstr "Іздеу"
+
+#: filter/invalidfilters/invalidfilterdialog.cpp:24
+#, fuzzy, kde-format
+#| msgid "Available Filters"
+msgctxt "@title:window"
+msgid "Invalid Filters"
+msgstr "Бар сүзгілер"
+
+#: filter/invalidfilters/invalidfilterdialog.cpp:35
+#, kde-format
+msgid "Discard"
+msgstr "Лақтырып тасталды"
+
+#: filter/invalidfilters/invalidfilterwidget.cpp:22
+#, kde-format
+msgid ""
+"The following filters are invalid (e.g. containing no actions or no search "
+"rules). Discard or edit invalid filters?"
+msgstr ""
+"Келесі сүзгілер жарамсыз (мысалы, әрекеті немесе іздеу ережесі жоқтығынан). "
+"Оларды ысырып тастайсыз ба, әлде түзейсіз бе?"
+
+#: filter/kmfilteraccountlist.cpp:24
+#, kde-format
+msgid "Account Name"
+msgstr "Тіркелгінің атауы"
+
+#: filter/kmfilteraccountlist.cpp:24
+#, kde-format
+msgid "Type"
+msgstr "Түрі"
+
+#: filter/kmfilterdialog.cpp:74
+#, fuzzy, kde-format
+#| msgid "Filter Rules"
+msgctxt "@title:window"
+msgid "Filter Rules"
+msgstr "Сүзгі ережелері"
+
+#: filter/kmfilterdialog.cpp:92
+#, kde-format
+msgid "Import..."
+msgstr "Импорт..."
+
+#: filter/kmfilterdialog.cpp:93
+#, kde-format
+msgid "Export..."
+msgstr "Экспорт..."
+
+#: filter/kmfilterdialog.cpp:94
+#, kde-format
+msgid "Convert to..."
+msgstr "Мынаған аудару..."
+
+#: filter/kmfilterdialog.cpp:97
+#, kde-format
+msgid "KMail filters"
+msgstr "KMail сүзгілері"
+
+#: filter/kmfilterdialog.cpp:101
+#, kde-format
+msgid "Thunderbird filters"
+msgstr "Thunderbird сүзгілері"
+
+#: filter/kmfilterdialog.cpp:105
+#, kde-format
+msgid "Evolution filters"
+msgstr "Evolution сүзгілері"
+
+#: filter/kmfilterdialog.cpp:109
+#, kde-format
+msgid "Sylpheed filters"
+msgstr "Sylpheed сүзгілері"
+
+#: filter/kmfilterdialog.cpp:113
+#, kde-format
+msgid "Procmail filters"
+msgstr "Procmail сүзгілері"
+
+#: filter/kmfilterdialog.cpp:117
+#, kde-format
+msgid "Balsa filters"
+msgstr "Balsa сүзгілері"
+
+#: filter/kmfilterdialog.cpp:121
+#, kde-format
+msgid "Claws Mail filters"
+msgstr "ClawsMail сүзгілері"
+
+#: filter/kmfilterdialog.cpp:125
+#, fuzzy, kde-format
+#| msgid "KMail filters"
+msgid "Icedove Mail filters"
+msgstr "KMail сүзгілері"
+
+#: filter/kmfilterdialog.cpp:131
+#, fuzzy, kde-format
+#| msgid "KMail filters"
+msgid "Gmail filters"
+msgstr "KMail сүзгілері"
+
+#: filter/kmfilterdialog.cpp:139
+#, kde-format
+msgid "Sieve script"
+msgstr "Sieve скрипті"
+
+#: filter/kmfilterdialog.cpp:161
+#, kde-format
+msgid "Available Filters"
+msgstr "Бар сүзгілер"
+
+#: filter/kmfilterdialog.cpp:167
+#, kde-format
+msgctxt "General mail filter settings."
+msgid "General"
+msgstr "Жалпы"
+
+#: filter/kmfilterdialog.cpp:171
+#, kde-format
+msgctxt "Advanced mail filter settings."
+msgid "Advanced"
+msgstr "Жетелеу"
+
+#: filter/kmfilterdialog.cpp:181
+#, fuzzy, kde-format
+#| msgid "Filter Actions"
+msgid "Filter actions:"
+msgstr "Сүзгі әрекеттері"
+
+#: filter/kmfilterdialog.cpp:192
+#, kde-format
+msgid "Apply this filter to incoming messages:"
+msgstr "Келген хаттарға осы сүзгі қолданылсын:"
+
+#: filter/kmfilterdialog.cpp:202
+#, fuzzy, kde-format
+#| msgid "from all accounts"
+msgid "From all accounts"
+msgstr "барлық тіркелгілерден"
+
+#: filter/kmfilterdialog.cpp:206
+#, fuzzy, kde-format
+#| msgid "from all but online IMAP accounts"
+msgid "From all but online IMAP accounts"
+msgstr "IMAP-тан басқа барлық тіркелгілерден"
+
+#: filter/kmfilterdialog.cpp:210
+#, fuzzy, kde-format
+#| msgid "from checked accounts only"
+msgid "From selected accounts only"
+msgstr "тек белгіленген тіркелгілерден"
+
+#: filter/kmfilterdialog.cpp:218
+#, kde-format
+msgid "Apply this filter to &sent messages"
+msgstr "Осы сүзгі &жіберілген хаттарға қолданылсын"
+
+#: filter/kmfilterdialog.cpp:220
+#, kde-format
+msgid ""
+"<p>The filter will be triggered <b>after</b> the message is sent and it will "
+"only affect the local copy of the message.</p><p>If the recipient's copy "
+"also needs to be modified, please use \"Apply this filter <b>before</b> "
+"sending messages\".</p>"
+msgstr ""
+"<p>Сүзгі хат жіберуден <b>кейін</b> қолданады да, ол тек жергілікті данасына "
+"ғана тиеді.</p><p>Егер қабылдаушының данасын да өзгерту қажет болса, онда "
+"\"Осы сүзгі жіберу алдында қолданылсын\" дегенді таңдаңыз.</p>"
+
+#: filter/kmfilterdialog.cpp:226
+#, kde-format
+msgid "Apply this filter &before sending messages"
+msgstr "Осы сүзгі жіберу &алдында қолданылсын"
+
+#: filter/kmfilterdialog.cpp:228
+#, kde-format
+msgid ""
+"<p>The filter will be triggered <b>before</b> the message is sent and it "
+"will affect both the local copy and the sent copy of the message.</p><p>This "
+"is required if the recipient's copy also needs to be modified.</p>"
+msgstr ""
+"<p>Сүзгі хат жіберер <b>алдында</b> қолданады да, ол жергілікті данасына мен "
+"жіберілгеннің көшірмесіне тиеді.</p><p>Бұл қабылдаушының данасын да өзгерту "
+"қажет болғанда керек амал.</p>"
+
+#: filter/kmfilterdialog.cpp:233
+#, kde-format
+msgid "Apply this filter on manual &filtering"
+msgstr "Қолмен &сүзгілегенде қолданылсын"
+
+#: filter/kmfilterdialog.cpp:236
+#, fuzzy, kde-format
+#| msgid "Apply this filter on manual &filtering"
+msgid "Apply this filter on inbound emails in all folders"
+msgstr "Қолмен &сүзгілегенде қолданылсын"
+
+#: filter/kmfilterdialog.cpp:238
+#, kde-format
+msgid ""
+"<p>The filter will be applied on inbound emails from all folders belonging "
+"to all accounts selected above. This is useful when using local filters with "
+"IMAP accounts where new emails may have already been moved to different "
+"folders by server-side filters.</p>"
+msgstr ""
+
+#: filter/kmfilterdialog.cpp:244
+#, kde-format
+msgid "If this filter &matches, stop processing here"
+msgstr "Сүзгі &сәйкес келгенде өңдеу тоқталсын"
+
+#: filter/kmfilterdialog.cpp:247
+#, kde-format
+msgid "Add this filter to the Apply Filter menu"
+msgstr "Бұл сүзгі 'Сүзгіні қолдану' мәзіріне қосылсын"
+
+#: filter/kmfilterdialog.cpp:265
+#, kde-format
+msgid "Additionally add this filter to the toolbar"
+msgstr "Бұл сүзгі құралдар панеліне қосылсын"
+
+#: filter/kmfilterdialog.cpp:272
+#, kde-format
+msgid "Shortcut:"
+msgstr "Тіркесімі:"
+
+#: filter/kmfilterdialog.cpp:278
+#, kde-format
+msgid "Icon for this filter:"
+msgstr "Сүзгінің таңбашасы:"
+
+#: filter/kmfilterdialog.cpp:286
+#, kde-format
+msgid "Run selected filter(s) on: "
+msgstr "Таңдалған сүзгілерді мынаған қолдану:"
+
+#: filter/kmfilterdialog.cpp:292
+#, kde-format
+msgid "Run Now"
+msgstr "Қазір жегу"
+
+#: filter/kmfilterdialog.cpp:418
+#, kde-format
+msgctxt "@info"
+msgid "Unable to apply this filter since there are no folders selected."
+msgstr "Қаптық таңдалмағаннан сүзгі іске аспады."
+
+#: filter/kmfilterdialog.cpp:418
+#, kde-format
+msgid "No folder selected."
+msgstr "Қапшық таңдалмаған."
+
+#: filter/kmfilterdialog.cpp:425
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Some filters were changed and not saved yet. You must save your filters "
+"before they can be applied."
+msgstr ""
+"Кейбір сүзгілер өзгертіліп әлі сақталмаған. Қолдану алдында сақтау керек."
+
+#: filter/kmfilterdialog.cpp:427 filter/kmfilterdialog.cpp:707
+#, kde-format
+msgid "Filters changed."
+msgstr "Сүзгілер өзгертілген."
+
+#: filter/kmfilterdialog.cpp:433
+#, kde-format
+msgctxt "@info"
+msgid "Unable to apply a filter since there are no filters currently selected."
+msgstr "Сүзгі таңдалмағаннан ешбір сүзгі іске аспады."
+
+#: filter/kmfilterdialog.cpp:433 filter/kmfilterdialog.cpp:728
+#, kde-format
+msgid "No filters selected."
+msgstr "Сүзгі таңдалмаған."
+
+#: filter/kmfilterdialog.cpp:657
+#, kde-format
+msgid "No filter was imported."
+msgstr "Ешбір сүзгі импортталмады"
+
+#: filter/kmfilterdialog.cpp:668
+#, kde-format
+msgid "Filters which were imported:"
+msgstr "Импортталған сүзгілер:"
+
+#: filter/kmfilterdialog.cpp:676
+#, kde-format
+msgid "Any filter found."
+msgstr ""
+
+#: filter/kmfilterdialog.cpp:705
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Some filters were changed and not saved yet. You must save your filters "
+#| "before they can be exported."
+msgctxt "@info"
+msgid ""
+"Some filters were changed and not saved yet.<br>You must save your filters "
+"before they can be exported."
+msgstr ""
+"Кейбір сүзгілер өзгертіліп әлі сақталмаған. Экспорттау алдында сақтау керек."
+
+#: filter/kmfilterdialog.cpp:711
+#, kde-format
+msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
+msgstr ""
+"KMail сүзгілері түгелдей sieve скрипттеріне аударылмайды, бірақ талпынып "
+"көріңіз :)"
+
+#: filter/kmfilterdialog.cpp:712 filter/kmfilterdialog.cpp:728
+#, kde-format
+msgid "Convert KMail filters to sieve scripts"
+msgstr "KMail сүзгілерін sieve скрипттеріне аудару"
+
+#: filter/kmfilterlistbox.cpp:41
+#, kde-format
+msgid ""
+"<qt><p>This is the list of defined filters. They are processed top-to-bottom."
+"</p><p>Click on any filter to edit it using the controls in the right-hand "
+"half of the dialog.</p></qt>"
+msgstr ""
+"<qt><p>Бұл дайын сүзгілер тізімі. Олар жоғарыдан бастап төменге қарай іске "
+"қосылады.</p><p>Өзгерту үшін, керек сүзгіні түртіп, оң жағындағы "
+"батырмаларды қолданыңыз.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:83
+#, kde-format
+msgctxt "Move selected filter up."
+msgid "Up"
+msgstr "Жоғары"
+
+#: filter/kmfilterlistbox.cpp:84
+#, kde-format
+msgctxt "Move selected filter down."
+msgid "Down"
+msgstr "Төмен"
+
+#: filter/kmfilterlistbox.cpp:85
+#, kde-format
+msgctxt "Move selected filter to the top."
+msgid "Top"
+msgstr "Жоғарға"
+
+#: filter/kmfilterlistbox.cpp:86
+#, kde-format
+msgctxt "Move selected filter to the bottom."
+msgid "Bottom"
+msgstr "Төменге"
+
+#: filter/kmfilterlistbox.cpp:88
+#, kde-format
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter <em>up</em> "
+"one in the list above.</p><p>This is useful since the order of the filters "
+"in the list determines the order in which they are tried on messages: The "
+"topmost filter gets tried first.</p><p>If you have clicked this button "
+"accidentally, you can undo this by clicking on the <em>Down</em> button.</"
+"p></qt>"
+msgstr ""
+"<qt><p>Таңдалған сүзгіні тізімі бойынша <em>жоғарлату</em> үшін осы "
+"батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға қолдану "
+"кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</p><p>Егер бұл "
+"батырманы байқамай басып қалсаңыз, <em>Төмендету</em> батырмасын басып "
+"сүзгіні қайтаруға болады.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:96
+#, kde-format
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter <em>down</em> "
+"one in the list above.</p><p>This is useful since the order of the filters "
+"in the list determines the order in which they are tried on messages: The "
+"topmost filter gets tried first.</p><p>If you have clicked this button "
+"accidentally, you can undo this by clicking on the <em>Up</em> button.</p></"
+"qt>"
+msgstr ""
+"<qt><p>Таңдалған сүзгіні тізімі бойынша <em>төмендету</em> үшін осы "
+"батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға қолдану "
+"кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</p><p>Егер бұл "
+"батырманы байқамай басып қалсаңыз, <em>Жоғарлату</em> батырмасын басып "
+"сүзгіні қайтаруға болады.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:104
+#, kde-format
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter to bottom of "
+"list.</p><p>This is useful since the order of the filters in the list "
+"determines the order in which they are tried on messages: The topmost filter "
+"gets tried first.</p></qt>"
+msgstr ""
+"<qt><p>Таңдалған сүзгіні тізімінің <em>ең төменіне</em> шығару үшін осы "
+"батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға қолдану "
+"кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:110
+#, kde-format
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter to top of "
+"list.</p><p>This is useful since the order of the filters in the list "
+"determines the order in which they are tried on messages: The topmost filter "
+"gets tried first.</p></qt>"
+msgstr ""
+"<qt><p>Таңдалған сүзгіні тізімінің <em>ең жоғарына</em> шығару үшін осы "
+"батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға қолдану "
+"кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:140
+#, kde-format
+msgctxt "@action:button in filter list manipulator"
+msgid "New"
+msgstr "Жаңа"
+
+#: filter/kmfilterlistbox.cpp:141
+#, kde-format
+msgid "Copy"
+msgstr "Көшіріп алу"
+
+#: filter/kmfilterlistbox.cpp:142
+#, kde-format
+msgid "Delete"
+msgstr "Өшіру"
+
+#: filter/kmfilterlistbox.cpp:143
+#, fuzzy, kde-format
+#| msgid "Rename..."
+msgid "Rename"
+msgstr "Атын өзгерту..."
+
+#: filter/kmfilterlistbox.cpp:145
+#, kde-format
+msgid ""
+"<qt><p>Click this button to create a new filter.</p><p>The filter will be "
+"inserted just before the currently-selected one, but you can always change "
+"that later on.</p><p>If you have clicked this button accidentally, you can "
+"undo this by clicking on the <em>Delete</em> button.</p></qt>"
+msgstr ""
+"<qt><p>Жаңа сүзгіні құру үшін осы батырманы басыңыз.</p><p> Ол таңдалған "
+"сүзгінің алдына енгізіледі. Оның кезектегі орнын әрқашанда өзгерте аласыз.</"
+"p><p>Егер бұл батырманы байқамай басып қалсаңыз, <em>Өшіру</em> батырмасын "
+"басып, сүзгіні құрудан бас тартуға болады.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:152
+#, kde-format
+msgid ""
+"<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
+"button accidentally, you can undo this by clicking on the <em>Delete</em> "
+"button.</p></qt>"
+msgstr ""
+"<qt><p>Сүзгінің көшірмесін жасау үшін осы батырманы басыңыз.</p><p>Егер бұл "
+"батырманы байқамай басып қалсаңыз, <em>Өшіру</em> батырмасын басып сүзгінің "
+"көшірмесін құрудан бас тартуға болады.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:156
+#, kde-format
+msgid ""
+"<qt><p>Click this button to <em>delete</em> the currently-selected filter "
+"from the list above.</p><p>There is no way to get the filter back once it is "
+"deleted, but you can always leave the dialog by clicking <em>Cancel</em> to "
+"discard the changes made.</p></qt>"
+msgstr ""
+"<qt><p>Осы батырманы бассаңыз таңдалған сүзгі тізімнен <em>өшіріледі</em>.</"
+"p><p>Бұдан кейін өшірілген сүзгіні қайтаруға болмайды, бірақ Сіз әрқашанда "
+"<em>Қайту</em> батырмасын басып, диалогтан шығып, бүкіл өзгертулерден бас "
+"тарта аласыз.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:163
+#, kde-format
+msgid ""
+"<qt><p>Click this button to rename the currently-selected filter.</"
+"p><p>Filters are named automatically, as long as they start with \"&lt;\".</"
+"p><p>If you have renamed a filter accidentally and want automatic naming "
+"back, click this button and select <em>Clear</em> followed by <em>OK</em> in "
+"the appearing dialog.</p></qt>"
+msgstr ""
+"<qt><p>Таңдалған сүзгіні қайта атау үшін осы батырманы басыңыз.</"
+"p><p>Сүзгінің атауы \"&lt;\" дегеннен басталатын болса ол атау автоматты "
+"түрде берілген.</p><p>Егер бұны байқамай басып қалып, автоматты түрде атауды "
+"қайтарғыңыз келсе осы батырманы қайта басып, <em>Тазалау</em> дегенді, содан "
+"кейін көрінген диалогта <em>OK</em> дегенді басыңыз.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:290
+#, kde-format
+msgid "unnamed"
+msgstr "атаусыз"
+
+#: filter/kmfilterlistbox.cpp:444
+#, kde-format
+msgid "Do you want to remove the filter \"%1\"?"
+msgstr "\"%1\" деген сүзгіні шын өшірмексіз бе?"
+
+#: filter/kmfilterlistbox.cpp:444
+#, kde-format
+msgid "Do you want to remove selected filters?"
+msgstr "Таңдалған сүзгілерді шын өшірмексіз бе?"
+
+#: filter/kmfilterlistbox.cpp:445
+#, kde-format
+msgid "Remove Filter"
+msgstr "Сүзгіні өшіру"
+
+#: filter/kmfilterlistbox.cpp:445
+#, kde-format
+msgid "Remove Filters"
+msgstr "Сүзгілерді өшіру"
+
+#: filter/kmfilterlistbox.cpp:661
+#, kde-format
+msgid "Rename Filter"
+msgstr "Сүзгіні қайта атау"
+
+#: filter/kmfilterlistbox.cpp:662
+#, kde-format
+msgid ""
+"Rename filter \"%1\" to:\n"
+"(leave the field empty for automatic naming)"
+msgstr ""
+"\"%1\" сүзгіcін қайта атау:\n"
+"(автоматты түрде атау үшін өрісті бос қалдырыңыз)"
+
+#: filter/mailfilter.cpp:131
+#, kde-format
+msgid "<b>Applying filter action:</b> %1"
+msgstr "<b>Сүзгі әрекетін қолдану:</b> %1"
+
+#: filter/mailfilter.cpp:140
+#, kde-format
+msgid "A critical error occurred. Processing stops here."
+msgstr "Дағдарысты қате пайда болды. Өңдеу тоқтатылды."
+
+#: filter/mailfilter.cpp:147
+#, kde-format
+msgid "A problem was found while applying this action."
+msgstr "Әрекетті орындау кезінде қате пайда болды."
+
+#: filter/mailfilter.cpp:427
+#, kde-format
+msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
+msgstr "<qt><b>%1</b> сүзгі ережесінде әрекеттер тым көп.</qt>"
+
+#: filter/mailfilter.cpp:461
+#, kde-format
+msgid ""
+"<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
+">Ignoring it.</qt>"
+msgstr ""
+"<qt><b>%2</b> сүзгі ережесінде<br /> <b>%1</b> әрекеті беймәлім.<br /> "
+"Әрекет еленбей қалдырылды.</qt>"
+
+#: filter/mailfilter.cpp:569
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgid "Any action defined."
+msgstr "Қапшықты құру жаңылысы"
+
+#: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
+#, kde-format
+msgid "Play"
+msgstr "Айдау"
+
+#: filter/soundtestwidget.cpp:62
+#, fuzzy, kde-format
+#| msgid "Select Sound File"
+msgctxt "@title:window"
+msgid "Select Sound File"
+msgstr "Дыбыс файлын таңдаңыз"
+
+#: filter/soundtestwidget.cpp:107
+#, kde-format
+msgid "Pause"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: filter/ui/filterconfigwidget.ui:19
+#, kde-format
+msgid "Name:"
+msgstr "Атауы:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: filter/ui/filterconfigwidget.ui:45
+#, kde-format
+msgid "Criteria"
+msgstr "Шарт"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: filter/ui/filterconfigwidget.ui:87
+#, kde-format
+msgid "Actions"
+msgstr "Амалдар"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: filter/ui/filterconfigwidget.ui:129
+#, kde-format
+msgid "Apply options"
+msgstr "Параметрлерін іске асыру"
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyToIncomingCB)
+#: filter/ui/filterconfigwidget.ui:138
+#, kde-format
+msgid "Apply to incoming messages"
+msgstr "Келген хаттарға қолданылсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyToSentCB)
+#: filter/ui/filterconfigwidget.ui:145
+#, kde-format
+msgid "Apply to sent messages"
+msgstr "Жіберілген хаттарға қолданылсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyBeforeSendCB)
+#: filter/ui/filterconfigwidget.ui:152
+#, kde-format
+msgid "Apply before sending messages"
+msgstr "Жіберу алдында қолданылсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyManuallyCB)
+#: filter/ui/filterconfigwidget.ui:159
+#, kde-format
+msgid "Apply on manual filtering"
+msgstr "Қолмен сүзгілегенде қолданылсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, stopIfMatchesCB)
+#: filter/ui/filterconfigwidget.ui:169
+#, kde-format
+msgid "Stop processing if matches"
+msgstr "Сәйкес келсе ісі тоқтасын"
+
+#. i18n: ectx: property (text), widget (QRadioButton, selectFile)
+#: filter/ui/selectthunderbirdfilterfileswidget.ui:29
+#, kde-format
+msgid "Select File:"
+msgstr "Файлды таңдау"
+
+#. i18n: ectx: property (text), widget (QRadioButton, selectFromConfig)
+#: filter/ui/selectthunderbirdfilterfileswidget.ui:45
+#, kde-format
+msgid "Select file from config:"
+msgstr "Баптау файлынан таңдау:"
+
+#: folder/accountconfigorderdialog.cpp:52
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit Accounts Order"
+msgstr ""
+
+#: folder/accountconfigorderdialog.cpp:69
+#, kde-format
+msgid "Use custom order"
+msgstr ""
+
+#: folder/accountconfigorderdialog.cpp:86
+#, fuzzy, kde-format
+#| msgctxt "Move selected filter up."
+#| msgid "Up"
+msgctxt "Move selected account up."
+msgid "Up"
+msgstr "Жоғары"
+
+#: folder/accountconfigorderdialog.cpp:94
+#, fuzzy, kde-format
+#| msgctxt "Move selected filter down."
+#| msgid "Down"
+msgctxt "Move selected account down."
+msgid "Down"
+msgstr "Төмен"
+
+#: folder/folderrequester.cpp:45
+#, kde-format
+msgid "Select Folder"
+msgstr "Қапшықты таңдау"
+
+#: folder/folderrequester.cpp:113
+#, kde-format
+msgid "Local Folders"
+msgstr "Жергілікті қапшықтар"
+
+#: folder/folderrequester.cpp:123 folder/folderrequester.cpp:141
+#, kde-format
+msgid "Please select a folder"
+msgstr "Қапшықты таңдаңыз"
+
+#: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
+#, kde-format
+msgid "&New Subfolder..."
+msgstr "&Жаңа ішкі қапшық..."
+
+#: folder/folderselectiondialog.cpp:64
+#, kde-format
+msgid "Create a new subfolder under the currently selected folder"
+msgstr "Таңдалған қапшықта жаңа ішкі қапшықты құру"
+
+#: folder/folderselectiondialog.cpp:177
+#, kde-format
+msgctxt "@title:window"
+msgid "New Folder"
+msgstr "Жаңа қапшық"
+
+#: folder/folderselectiondialog.cpp:177
+#, kde-format
+msgctxt "@label:textbox, name of a thing"
+msgid "Name"
+msgstr "Атауы"
+
+#: folder/folderselectiondialog.cpp:194
+#, kde-format
+msgid "Could not create folder: %1"
+msgstr "Қапшық құрылмады: %1"
+
+#: folder/folderselectiondialog.cpp:194
+#, kde-format
+msgid "Folder creation failed"
+msgstr "Қапшықты құру жаңылысы"
+
+#: folder/foldertreeview.cpp:128
+#, kde-format
+msgid "View Columns"
+msgstr "Бағандар"
+
+#: folder/foldertreeview.cpp:138
+#, kde-format
+msgid "Icon Size"
+msgstr "Таңбаша өлшемі"
+
+#: folder/foldertreeview.cpp:154
+#, kde-format
+msgid "Display Tooltips"
+msgstr "Ишараларды көрсету"
+
+#: folder/foldertreeview.cpp:158
+#, kde-format
+msgctxt "@action:inmenu Always display tooltips"
+msgid "Always"
+msgstr "Әрқашанда жіберу"
+
+#: folder/foldertreeview.cpp:165
+#, kde-format
+msgctxt "@action:inmenu Never display tooltips."
+msgid "Never"
+msgstr "Ешқашан"
+
+#: folder/foldertreeview.cpp:172
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Sort Items"
+msgstr "Реттеу"
+
+#: folder/foldertreeview.cpp:176
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Automatically, by Current Column"
+msgstr "Авто, назардағы баған бойынша"
+
+#: folder/foldertreeview.cpp:183
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Manually, by Drag And Drop"
+msgstr "Қолмен, сүйреп апарып"
+
+#: folder/foldertreeview.cpp:473 folder/foldertreeview.cpp:515
+#, kde-format
+msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
+msgstr "<qt><b>%1</b> қапшығындағы келесі оқылмаған хатқа өту керек пе?</qt>"
+
+#: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
+#, kde-format
+msgid "Go to Next Unread Message"
+msgstr "Келесі оқылмаған хатқа өту"
+
+#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
+#, kde-format
+msgid "Go To"
+msgstr "Өту"
+
+#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
+#, kde-format
+msgid "Do Not Go To"
+msgstr "Керегі жоқ"
+
+#: folder/foldertreewidget.cpp:79 folder/foldertreewidget.cpp:316
+#, kde-format
+msgid "You can start typing to filter the list of folders."
+msgstr "Алғашқы әріптері бойынша қапшықтар тізімін қысқарту."
+
+#: folder/foldertreewidget.cpp:316
+#, kde-format
+msgid "Path: (%1)"
+msgstr "Жолы: (%1)"
+
+#: folder/foldertreewidgetproxymodel.cpp:233
+#, kde-format
+msgid "%1 (Offline)"
+msgstr "%1 (Желіден тыс)"
+
+#: folder/foldertreewidgetproxymodel.cpp:237
+#, kde-format
+msgid "%1 (Reached %2% quota)"
+msgstr ""
+
+#: job/backupjob.cpp:94
+#, kde-format
+msgid "Unable to retrieve folder list."
+msgstr "Қапшықтар тізімі алынбады."
+
+#: job/backupjob.cpp:121
+#, kde-format
+msgid "The operation was canceled by the user."
+msgstr "Амалды пайдаланушысы доғарды. "
+
+#: job/backupjob.cpp:151
+#, kde-format
+msgid "Failed to archive the folder '%1'."
+msgstr "'%1' қапшығын архивтеу жаңылысы."
+
+#: job/backupjob.cpp:155
+#, kde-format
+msgid "Archiving failed"
+msgstr "Архивтеу жаңылысы"
+
+#: job/backupjob.cpp:165
+#, kde-format
+msgid "Unable to finalize the archive file."
+msgstr "Архив файлы бітірілмеді."
+
+#: job/backupjob.cpp:170 job/backupjob.cpp:192
+#, kde-format
+msgid "Archiving finished"
+msgstr "Архивтеу бітті"
+
+#: job/backupjob.cpp:181
+#, kde-format
+msgid ""
+"Archiving folder '%1' successfully completed. The archive was written to the "
+"file '%2'."
+msgstr "'%1' қапшығын архивтеу сәтті бітті. Архиві '%2' деген файлға жазылды."
+
+#: job/backupjob.cpp:186
+#, kde-format
+msgid "1 message of size %2 was archived."
+msgid_plural "%1 messages with the total size of %2 were archived."
+msgstr[0] "Жалпы өлшемі %2, жалпы саны %1 хат архивтелді."
+
+#: job/backupjob.cpp:190
+#, kde-format
+msgid "The archive file has a size of %1."
+msgstr "Архив файлдың өлшемі %1 болды."
+
+#: job/backupjob.cpp:242
+#, kde-format
+msgid "Failed to write a message into the archive folder '%1'."
+msgstr "'%1' архив қапшығына хатты жазу жаңылысы."
+
+#: job/backupjob.cpp:266
+#, kde-format
+msgid "Downloading a message in folder '%1' failed."
+msgstr "%1 қапшығынағы хатты жүктеу жаңылысы."
+
+#: job/backupjob.cpp:332
+#, kde-format
+msgid "Archiving folder %1"
+msgstr "%1 қапшығын архивтеу"
+
+#: job/backupjob.cpp:357
+#, kde-format
+msgid "Unable to create folder structure for folder '%1' within archive file."
+msgstr "Архив файлында '%1' қапшығы үшін қапшық құрылымы құрылмады."
+
+#: job/backupjob.cpp:369
+#, kde-format
+msgid "Unable to get message list for folder %1."
+msgstr "%1 қапшығының хаттар тізімі алдынбады."
+
+#: job/backupjob.cpp:407
+#, kde-format
+msgid "Unable to open archive for writing."
+msgstr "Архив жазуға ашылмады."
+
+#: job/backupjob.cpp:411
+#, kde-format
+msgid "Archiving"
+msgstr "Архивтеу"
+
+#: job/expirejob.cpp:155
+#, kde-format
+msgid "Removing 1 old message from folder %2..."
+msgid_plural "Removing %1 old messages from folder %2..."
+msgstr[0] "%1 ескі хатты %2 қапшығынан өшіру..."
+
+#: job/expirejob.cpp:161
+#, kde-format
+msgid "Cannot expire messages from folder %1: destination folder %2 not found"
+msgstr ""
+"%1 қапшығынан ескі хаттар алынбады: оларға арналған %2 қапшығы табылмады"
+
+#: job/expirejob.cpp:172
+#, kde-format
+msgid "Moving 1 old message from folder %2 to folder %3..."
+msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgstr[0] "%2 қапшығынан %3 қапшығына %1 ескі хатты жылжыту..."
+
+#: job/expirejob.cpp:233
+#, kde-format
+msgid "Removed 1 old message from folder %2."
+msgid_plural "Removed %1 old messages from folder %2."
+msgstr[0] "%1 ескі хат %2 қапшығынан өшірілді."
+
+#: job/expirejob.cpp:235
+#, kde-format
+msgid "Moved 1 old message from folder %2 to folder %3."
+msgid_plural "Moved %1 old messages from folder %2 to folder %3."
+msgstr[0] "%1 ескі хат %2 қапшығынан %3 қапшығына жылжытылды."
+
+#: job/expirejob.cpp:245
+#, kde-format
+msgid "Removing old messages from folder %1 was canceled."
+msgstr "%1 қапшығынан ескі хаттарды өшіру доғарылды."
+
+#: job/expirejob.cpp:248
+#, kde-format
+msgid "Moving old messages from folder %1 to folder %2 was canceled."
+msgstr "Ескі хаттарды %1 қапшығынан %2 қапшығына жылжыту доғарылды."
+
+#: job/expirejob.cpp:257
+#, kde-format
+msgid "Removing old messages from folder %1 failed."
+msgstr "%1 қапшығынан ескі хаттар өшірілмеді."
+
+#: job/expirejob.cpp:259
+#, kde-format
+msgid "Moving old messages from folder %1 to folder %2 failed."
+msgstr "%1 қапшығынан %2 қапшығына ескірген хаттарды жылжыту жаңылсы."
+
+#: kernel/mailkernel.cpp:179 kernel/mailkernel.cpp:201
+#, kde-format
+msgid "You do not have read/write permission to your inbox folder."
+msgstr "Кіріс қапшығыңызға оқу/жазуға рұқсатыңыз жоқ."
+
+#: kernel/mailkernel.cpp:230
+#, kde-format
+msgid "The Email program encountered a fatal error and will terminate now"
+msgstr "KMail түзелмейтін қатеге тап болып қазір доғарылады"
+
+#: kernel/mailkernel.cpp:233
+#, kde-format
+msgid ""
+"The Email program encountered a fatal error and will terminate now.\n"
+"The error was:\n"
+"%1"
+msgstr ""
+"KMail түзелмейтін қатеге тап болып қазір доғарылады.\n"
+"Қатесі:\n"
+"%1"
+
+#: search/searchpattern.cpp:239
+#, kde-format
+msgctxt "name used for a virgin filter"
+msgid "unknown"
+msgstr "беймәлім"
+
+#: search/searchpattern.cpp:247
+#, kde-format
+msgid "(match any of the following)"
+msgstr "(кез келген шартпен сәйкес келеді)"
+
+#: search/searchpattern.cpp:250
+#, kde-format
+msgid "(match all of the following)"
+msgstr "(барлық шартпен сәйкес келеді) "
+
+#: search/searchpattern.cpp:253
+#, kde-format
+msgid "(match all messages)"
+msgstr "(бүкіл хаттар сәйкесті)"
+
+#: search/searchpatternedit.cpp:41
+msgid "Complete Message"
+msgstr "Хат толығымен"
+
+#: search/searchpatternedit.cpp:42
+msgid "Body of Message"
+msgstr "Хат беті"
+
+#: search/searchpatternedit.cpp:43
+msgid "Anywhere in Headers"
+msgstr "Бүкіл айдарларында"
+
+#: search/searchpatternedit.cpp:44
+msgid "All Recipients"
+msgstr "Бүкіл алушыларда"
+
+#: search/searchpatternedit.cpp:45
+msgid "Size in Bytes"
+msgstr "Байттағы өлшемі"
+
+#: search/searchpatternedit.cpp:46
+msgid "Age in Days"
+msgstr "Күндер мерзімі"
+
+#: search/searchpatternedit.cpp:47
+msgid "Message Status"
+msgstr "Хаттың жағдайы"
+
+#: search/searchpatternedit.cpp:48
+msgid "Message Tag"
+msgstr "Хат белгісі"
+
+#: search/searchpatternedit.cpp:49
+#, fuzzy
+#| msgctxt "Subject of an email."
+#| msgid "Subject"
+msgid "Subject"
+msgstr "Тақырыбы"
+
+#: search/searchpatternedit.cpp:50
+msgid "From"
+msgstr "Кімден"
+
+#: search/searchpatternedit.cpp:51
+#, fuzzy
+#| msgctxt "Email recipient"
+#| msgid "To"
+msgid "To"
+msgstr "Кімге"
+
+#: search/searchpatternedit.cpp:53
+msgid "Reply To"
+msgstr "Жауап беру"
+
+#: search/searchpatternedit.cpp:54
+msgid "Organization"
+msgstr "Ұйымы"
+
+#: search/searchpatternedit.cpp:55
+msgid "Date"
+msgstr "Күні"
+
+#: search/searchpatternedit.cpp:56
+msgid "Encryption"
+msgstr ""
+
+#: search/searchpatternedit.cpp:144 search/searchpatternedit.cpp:145
+#, kde-format
+msgid "Choose or type your own criteria"
+msgstr "Өзінің шартыңыздың түрін таңдаңыз"
+
+#: search/searchpatternedit.cpp:580
+#, kde-format
+msgid "Match a&ll of the following"
+msgstr "Б&үкіл келесі шарттарға сәйкес келетін"
+
+#: search/searchpatternedit.cpp:581
+#, kde-format
+msgid "Match an&y of the following"
+msgstr "&Кез келген келесі шартарға сәйкес келетіндерді"
+
+#: search/searchpatternedit.cpp:583
+#, kde-format
+msgid "Match all messages"
+msgstr "Бүкіл хаттар сәйкесті"
+
+#: search/searchpatternedit.cpp:594
+#, fuzzy, kde-format
+#| msgid "Filter Criteria"
+msgid "Filter criteria:"
+msgstr "Сүзгі шарты"
+
+#: search/searchrule/searchrule.cpp:177
+#, kde-format
+msgid "equal"
+msgstr "келесіге тең:"
+
+#: search/searchrule/searchrule.cpp:180
+#, kde-format
+msgid "not equal"
+msgstr "келесіге тең емес:"
+
+#: search/searchrule/searchrule.cpp:183
+#, kde-format
+msgid "is greater"
+msgstr "мынадан артық:"
+
+#: search/searchrule/searchrule.cpp:186
+#, kde-format
+msgid "is less or equal"
+msgstr "мынадан кем не тең:"
+
+#: search/searchrule/searchrule.cpp:189
+#, kde-format
+msgid "is less"
+msgstr "мынадан кем:"
+
+#: search/searchrule/searchrule.cpp:192
+#, kde-format
+msgid "is greater or equal"
+msgstr "мынадан артық не тең:"
+
+#: search/searchrule/searchrule.cpp:195
+#, kde-format
+msgid "is in addressbook"
+msgstr "адрестік кітапшасындағы"
+
+#: search/searchrule/searchrule.cpp:198
+#, kde-format
+msgid "is not in addressbook"
+msgstr "адрестік кітапшасында жоғы"
+
+#: search/searchrule/searchrule.cpp:201 search/searchrule/searchrule.cpp:204
+#, kde-format
+msgid "is in category"
+msgstr "санатта бар"
+
+#: search/searchrule/searchrule.cpp:207
+#: search/widgethandler/messagerulewidgethandler.cpp:28
+#: search/widgethandler/messagerulewidgethandler.cpp:145
+#, kde-format
+msgid "has an attachment"
+msgstr "тіркемесі бар"
+
+#: search/searchrule/searchrule.cpp:210
+#, kde-format
+msgid "has not an attachment"
+msgstr "тіркемесі жоғы"
+
+#: search/searchrule/searchrule.cpp:213
+#, kde-format
+msgid "start with"
+msgstr "мынамен басталатын:"
+
+#: search/searchrule/searchrule.cpp:216
+#, kde-format
+msgid "not start with"
+msgstr "мынамен басталмайтын:"
+
+#: search/searchrule/searchrule.cpp:219
+#, kde-format
+msgid "end with"
+msgstr "мынамен аяқталатын:"
+
+#: search/searchrule/searchrule.cpp:222
+#, kde-format
+msgid "not end with"
+msgstr "мынамен аяқталмайтын:"
+
+#: search/searchrule/searchrule.cpp:225
+#, kde-format
+msgid "none"
+msgstr "жоқ"
+
+#: search/searchrule/searchrule.cpp:228
+#: search/widgethandler/headersrulerwidgethandler.cpp:25
+#: search/widgethandler/messagerulewidgethandler.cpp:24
+#: search/widgethandler/tagrulewidgethandler.cpp:94
+#: search/widgethandler/textrulerwidgethandler.cpp:25
+#, kde-format
+msgid "contains"
+msgstr "мазмұнында бары:"
+
+#: search/searchrule/searchrule.cpp:231
+#, kde-format
+msgid "not contains"
+msgstr "мазмұнында жоғы:"
+
+#: search/searchrule/searchrule.cpp:234
+#, kde-format
+msgid "has regexp"
+msgstr "үлгі өрнегі бар"
+
+#: search/searchrule/searchrule.cpp:237
+#, kde-format
+msgid "not regexp"
+msgstr "үлгі өрнегі емес"
+
+#: search/searchrule/searchrule.cpp:251
+#, kde-format
+msgid "size equals not supported"
+msgstr "өлшемі теңін қолдауы жоқ"
+
+#: search/searchrule/searchrule.cpp:254
+#, kde-format
+msgid "size not equals not supported"
+msgstr "өлшемі тең емесін қолдауы жоқ"
+
+#: search/searchrule/searchrule.cpp:285 search/searchrule/searchrule.cpp:392
+#: search/searchrule/searchrule.cpp:474
+#, kde-format
+msgid "\"%1\" is not supported with condition \"%2\""
+msgstr "\"%2\" шартты \"%1\" дегеннің қолдауы жоқ"
+
+#: search/searchrule/searchrule.cpp:292
+#, kde-format
+msgid "<status> not implemented/supported"
+msgstr "<status> іске асырылмаған/қолдауы жоқ"
+
+#: search/searchrule/searchrule.cpp:295
+#, kde-format
+msgid "<any header> not implemented/supported"
+msgstr "<any header> іске асырылмаған/қолдауы жоқ"
+
+#: search/searchrule/searchrule.cpp:298
+#, kde-format
+msgid "<contents> not implemented/supported"
+msgstr "<contents> іске асырылмаған/қолдауы жоқ"
+
+#: search/searchrule/searchrule.cpp:301
+#, kde-format
+msgid "<age in days> not implemented/supported"
+msgstr "<age in days> іске асырылмаған/қолдауы жоқ"
+
+#: search/searchrule/searchrule.cpp:304
+#, kde-format
+msgid "<date> not implemented/supported"
+msgstr "<date> іске асырылмаған/қолдауы жоқ"
+
+#: search/searchrule/searchrule.cpp:307
+#, kde-format
+msgid "<recipients> not implemented/supported"
+msgstr "<recipients> іске асырылмаған/қолдауы жоқ"
+
+#: search/searchrule/searchrule.cpp:309
+#, kde-format
+msgid "<Tag> is not supported"
+msgstr "<Tag> дегеннің қолдауы жоқ"
+
+#: search/searchrule/searchrule.cpp:312
+#, kde-format
+msgid "<message> not implemented/supported"
+msgstr "<message> іске асырылмаған/қолдауы жоқ"
+
+#: search/searchrule/searchruledate.cpp:23
+#, kde-format
+msgid "Date is not valid."
+msgstr ""
+
+#: search/searchrule/searchrulenumerical.cpp:137
+#, kde-format
+msgid "Content is not a number."
+msgstr ""
+
+#: search/searchrule/searchrulestring.cpp:235
+#, kde-format
+msgid "String is empty."
+msgstr ""
+
+#: search/widgethandler/daterulewidgethandler.cpp:23
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:21
+#: search/widgethandler/numericrulewidgethandler.cpp:21
+msgid "is equal to"
+msgstr "мынаған тең:"
+
+#: search/widgethandler/daterulewidgethandler.cpp:24
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:22
+#: search/widgethandler/numericrulewidgethandler.cpp:22
+msgid "is not equal to"
+msgstr "мынаған тең емес:"
+
+#: search/widgethandler/daterulewidgethandler.cpp:25
+msgid "is after"
+msgstr "мынадан кейін:"
+
+#: search/widgethandler/daterulewidgethandler.cpp:26
+msgid "is before or equal to"
+msgstr "мынаның алдында не бірдей:"
+
+#: search/widgethandler/daterulewidgethandler.cpp:27
+msgid "is before"
+msgstr "мынаның алдында:"
+
+#: search/widgethandler/daterulewidgethandler.cpp:28
+msgid "is after or equal to"
+msgstr "мынадан кейін не бірдей:"
+
+#: search/widgethandler/encryptionwidgethandler.cpp:17
+#: search/widgethandler/statusrulewidgethandler.cpp:19
+msgid "is"
+msgstr "мынау:"
+
+#: search/widgethandler/encryptionwidgethandler.cpp:17
+#: search/widgethandler/statusrulewidgethandler.cpp:19
+msgid "is not"
+msgstr "мынау емес:"
+
+#: search/widgethandler/encryptionwidgethandler.cpp:54
+#, kde-format
+msgid "encrypted"
+msgstr ""
+
+#: search/widgethandler/encryptionwidgethandler.cpp:91
+#, kde-format
+msgid "is encrypted"
+msgstr ""
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:26
+#: search/widgethandler/messagerulewidgethandler.cpp:25
+#: search/widgethandler/tagrulewidgethandler.cpp:95
+#: search/widgethandler/textrulerwidgethandler.cpp:26
+msgid "does not contain"
+msgstr "мазмұнында жоғы:"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:27
+#: search/widgethandler/tagrulewidgethandler.cpp:96
+#: search/widgethandler/textrulerwidgethandler.cpp:27
+msgid "equals"
+msgstr "дәл келесі:"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:28
+#: search/widgethandler/tagrulewidgethandler.cpp:97
+#: search/widgethandler/textrulerwidgethandler.cpp:28
+msgid "does not equal"
+msgstr "дәл келесі емес:"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:29
+#: search/widgethandler/textrulerwidgethandler.cpp:29
+msgid "starts with"
+msgstr "мынамен басталатын:"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:30
+#: search/widgethandler/textrulerwidgethandler.cpp:30
+msgid "does not start with"
+msgstr "мынамен басталмайтын:"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:31
+#: search/widgethandler/textrulerwidgethandler.cpp:31
+msgid "ends with"
+msgstr "мынамен аяқталатын:"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:32
+#: search/widgethandler/textrulerwidgethandler.cpp:32
+msgid "does not end with"
+msgstr "мынамен аяқталмайтын:"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:34
+#: search/widgethandler/messagerulewidgethandler.cpp:26
+#: search/widgethandler/tagrulewidgethandler.cpp:98
+#: search/widgethandler/textrulerwidgethandler.cpp:34
+msgid "matches regular expr."
+msgstr "сәйкесті үлгі өрнегі"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:35
+#: search/widgethandler/messagerulewidgethandler.cpp:27
+#: search/widgethandler/tagrulewidgethandler.cpp:99
+#: search/widgethandler/textrulerwidgethandler.cpp:35
+msgid "does not match reg. expr."
+msgstr "сәйкес келмейтін үлгі өрнегі"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:36
+#: search/widgethandler/headersrulerwidgethandler.cpp:151
+#, kde-format
+msgid "is in address book"
+msgstr "адрес кітапшасындағы"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:37
+#: search/widgethandler/headersrulerwidgethandler.cpp:153
+#, kde-format
+msgid "is not in address book"
+msgstr "адрес кітапшасында жоғы"
+
+#: search/widgethandler/messagerulewidgethandler.cpp:29
+#: search/widgethandler/messagerulewidgethandler.cpp:147
+#, kde-format
+msgid "has no attachment"
+msgstr "тіркемесі жоқ"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:23
+#: search/widgethandler/numericrulewidgethandler.cpp:23
+msgid "is greater than"
+msgstr "мынадан артық:"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:24
+#: search/widgethandler/numericrulewidgethandler.cpp:24
+msgid "is less than or equal to"
+msgstr "мынадан кем не тең:"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:25
+#: search/widgethandler/numericrulewidgethandler.cpp:25
+msgid "is less than"
+msgstr "мынадан кем:"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:26
+#: search/widgethandler/numericrulewidgethandler.cpp:26
+msgid "is greater than or equal to"
+msgstr "мынадан артық не тең:"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:157
+#, kde-format
+msgctxt "spinbox suffix: unit for kilobyte"
+msgid " kB"
+msgstr " кБ"
+
+#: search/widgethandler/numericrulewidgethandler.cpp:157
+#, fuzzy, kde-format
+#| msgctxt "Expire messages after %1"
+#| msgid " day"
+#| msgid_plural " days"
+msgctxt "Unit suffix where units are days."
+msgid " day"
+msgid_plural " days"
+msgstr[0] " күн"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:29
+msgctxt "message status"
+msgid "Important"
+msgstr "Маңызды"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:30
+msgctxt "message status"
+msgid "Action Item"
+msgstr "Амал күтетін"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:31
+msgctxt "message status"
+msgid "Unread"
+msgstr "Оқылмаған"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:32
+msgctxt "message status"
+msgid "Read"
+msgstr "Оқылған"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:33
+msgctxt "message status"
+msgid "Deleted"
+msgstr "Өшірілген"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:34
+msgctxt "message status"
+msgid "Replied"
+msgstr "Жауап берілген"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:35
+msgctxt "message status"
+msgid "Forwarded"
+msgstr "Басқаға жіберілген"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:36
+msgctxt "message status"
+msgid "Queued"
+msgstr "Кезекке қойылған"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:37
+msgctxt "message status"
+msgid "Sent"
+msgstr "Жіберілген"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:38
+msgctxt "message status"
+msgid "Watched"
+msgstr "Каралған"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:39
+msgctxt "message status"
+msgid "Ignored"
+msgstr "Елемеген"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:40
+msgctxt "message status"
+msgid "Spam"
+msgstr "Спам"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:41
+msgctxt "message status"
+msgid "Ham"
+msgstr "Құнды"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:42
+msgctxt "message status"
+msgid "Has Attachment"
+msgstr "Тіркемесі бар"
+
+#: snippets/snippetattachmentwidget.cpp:26
+#, kde-format
+msgid "Click on button for selecting attachment file"
+msgstr ""
+
+#: snippets/snippetattachmentwidget.cpp:32
+#: snippets/snippetselectattachmentwidget.cpp:52
+#, fuzzy, kde-format
+#| msgid "Remove Attachments"
+msgid "Select Attachments"
+msgstr "Тіркемелерді өшіру"
+
+#: snippets/snippetattachmentwidget.cpp:33
+#, fuzzy, kde-format
+#| msgid "Save..."
+msgid "..."
+msgstr "Сақтау..."
+
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:26
+#, fuzzy, kde-format
+#| msgid "Remove Attachments"
+msgctxt "@title:window"
+msgid "Customize File Name Attachment"
+msgstr "Тіркемелерді өшіру"
+
+#: snippets/snippetcustomfileattachmentnamewidget.cpp:29
+#, fuzzy, kde-format
+#| msgid "Rename..."
+msgid "Filename:"
+msgstr "Атын өзгерту..."
+
+#: snippets/snippetcustomfileattachmentnamewidget.cpp:47
+#, fuzzy, kde-format
+#| msgid "Enter Values for Variables"
+msgid "Insert Variables"
+msgstr "Айнымалыларының мәндерін келтіру"
+
+#: snippets/snippetselectattachmentdialog.cpp:24
+#, fuzzy, kde-format
+#| msgid "Remove Attachments"
+msgctxt "@title:window"
+msgid "Select Attachments"
+msgstr "Тіркемелерді өшіру"
+
+#: snippets/snippetselectattachmentwidget.cpp:45
+#, fuzzy, kde-format
+#| msgid "Do you want to remove selected filters?"
+msgid "Do you want to delete selected attachment?"
+msgstr "Таңдалған сүзгілерді шын өшірмексіз бе?"
+
+#: snippets/snippetsmanager.cpp:154
+#, kde-format
+msgid "General"
+msgstr "Жалпы"
+
+#: snippets/snippetsmanager.cpp:160
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Snippet"
+msgstr "Үзіндіні қосу"
+
+#: snippets/snippetsmanager.cpp:226
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit Snippet"
+msgstr "Үзіндіні өңдеу"
+
+#: snippets/snippetsmanager.cpp:286
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Do you really want to remove snippet \"%1\"?<nl/><warning>There is no way to "
+"undo the removal.</warning>"
+msgstr ""
+"\"%1\" үзіндісін шын өшірмексіз бе?<nl/><warning>Өшіргеннен қайту амалы "
+"болмайды.</warning>"
+
+#: snippets/snippetsmanager.cpp:305
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Group"
+msgstr "Топты қосу"
+
+#: snippets/snippetsmanager.cpp:330
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit Group"
+msgstr "Топты өзгерту"
+
+#: snippets/snippetsmanager.cpp:359
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Do you really want to remove group \"%1\" along with all its snippets?<nl/"
+"><warning>There is no way to undo the removal.</warning>"
+msgstr ""
+"\"%1\" тобын, ондағы үзінділерімен қоса, шын өшірмексіз бе?<nl/"
+"><warning>Өшіргеннен қайту амалы болмайды.</warning>"
+
+#: snippets/snippetsmanager.cpp:369
+#, kde-format
+msgctxt "@info"
+msgid "Do you really want to remove group \"%1\"?"
+msgstr "Шынымен \"%1\" топбын құртпақсыз ба?"
+
+#: snippets/snippetsmanager.cpp:437 snippets/snippetsmanager.cpp:466
+#, kde-format
+msgctxt "@action"
+msgid "Snippet %1"
+msgstr "%1 үзіндісі"
+
+#: snippets/snippetsmanager.cpp:558
+#, kde-format
+msgid "Add Snippet..."
+msgstr "Үзіндіні қосу..."
+
+#: snippets/snippetsmanager.cpp:560
+#, kde-format
+msgid "Edit Snippet..."
+msgstr "Үзіндіні өзгерту..."
+
+#: snippets/snippetsmanager.cpp:562
+#, kde-format
+msgid "Remove Snippet"
+msgstr "Үзіндіні өшіру"
+
+#: snippets/snippetsmanager.cpp:565
+#, kde-format
+msgid "Add Group..."
+msgstr "Топты қосу..."
+
+#: snippets/snippetsmanager.cpp:567
+#, kde-format
+msgid "Rename Group..."
+msgstr "Топтың атын өзгерту..."
+
+#: snippets/snippetsmanager.cpp:569
+#, kde-format
+msgid "Remove Group"
+msgstr "Топты өшіру"
+
+#: snippets/snippetsmanager.cpp:572
+#, kde-format
+msgid "Insert Snippet"
+msgstr "Үзіндіні ендіру"
+
+#: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:549
+#, fuzzy, kde-format
+#| msgid "Do you want to remove the filter \"%1\"?"
+msgid "Do you want to update snippet?"
+msgstr "\"%1\" деген сүзгіні шын өшірмексіз бе?"
+
+#: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:549
+#, fuzzy, kde-format
+#| msgid "Remove Snippet"
+msgid "Update snippet"
+msgstr "Үзіндіні өшіру"
+
+#: snippets/snippetsmodel.cpp:525
+#, fuzzy, kde-format
+#| msgid "Remove Snippet"
+msgid "Update"
+msgstr "Үзіндіні өшіру"
+
+#: snippets/snippettreeview.cpp:64
+#, fuzzy, kde-format
+#| msgid "Insert Snippet"
+msgid "Text Snippets"
+msgstr "Үзіндіні ендіру"
+
+#: snippets/snippetvariabledialog.cpp:35
+#, fuzzy, kde-format
+#| msgid "Enter Values for Variables"
+msgctxt "@title:window"
+msgid "Enter Values for Variables"
+msgstr "Айнымалыларының мәндерін келтіру"
+
+#: snippets/snippetvariabledialog.cpp:38
+#, kde-format
+msgid "Enter the replacement values for '%1':"
+msgstr "'%1' дегеннің мәндерін ауыстырыңыз:"
+
+#: snippets/snippetvariabledialog.cpp:43
+#, kde-format
+msgid "Make value &default"
+msgstr "Ә&деттіге қайту"
+
+#: snippets/snippetvariabledialog.cpp:46
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"Enable this to save the value entered to the right as the default value for "
+"this variable"
+msgstr ""
+"Оң жақта келтірілгенді әдетті мән і ретінде сақтау үшін - осыны белгілеңіз."
+
+#: snippets/snippetvariabledialog.cpp:49
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"If you enable this option, the value entered to the right will be saved. If "
+"you use the same variable later, even in another snippet, the value entered "
+"to the right will be the default value for that variable."
+msgstr ""
+"Егерде бұны рұқсат етсеңіз, оң жақтағы мән сақталады. Кейін сондай "
+"айнымалыны қолданғанда, мейлі басқа үзіндімен болса да, келтіргеніңіз әдетті "
+"мән болады."
+
+#: snippets/snippetwidget.cpp:56
+#, kde-format
+msgid ""
+"Enter a keyword here to enable fast insertion of this snippet while writing "
+"an email. For instance if you choose \"greeting\" as the keyword, you can "
+"then type \\greeting in your email and then press the tab key, and it will "
+"be replaced with the contents of this snippet."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: snippets/ui/snippetwidget.ui:31
+#, kde-format
+msgid "&Name:"
+msgstr "&Атауы:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabelGroup)
+#: snippets/ui/snippetwidget.ui:52
+#, kde-format
+msgctxt "Group to which the snippet belongs."
+msgid "Group:"
+msgstr "Тобы:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: snippets/ui/snippetwidget.ui:65
+#, fuzzy, kde-format
+#| msgctxt "message status"
+#| msgid "Has Attachment"
+msgid "Attachments:"
+msgstr "Тіркемесі бар"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel)
+#: snippets/ui/snippetwidget.ui:82
+#, kde-format
+msgid "&Snippet:"
+msgstr "Үзінді:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: snippets/ui/snippetwidget.ui:102
+#, fuzzy, kde-format
+#| msgctxt "Receiver of an email."
+#| msgid "To"
+msgid "To:"
+msgstr "Кімге"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: snippets/ui/snippetwidget.ui:113
+#, kde-format
+msgid "Cc:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: snippets/ui/snippetwidget.ui:120
+#, kde-format
+msgid "Keyword:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
+#: snippets/ui/snippetwidget.ui:127
+#, fuzzy, kde-format
+#| msgid "Shortcut:"
+msgid "Sho&rtcut:"
+msgstr "Тіркесімі:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: snippets/ui/snippetwidget.ui:164
+#, kde-format
+msgid "Bcc:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: snippets/ui/snippetwidget.ui:184
+#, fuzzy, kde-format
+#| msgctxt "Subject of an email."
+#| msgid "Subject"
+msgid "Subject:"
+msgstr "Тақырыбы"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
+#: snippets/ui/snippetwidget.ui:191
+#, kde-format
+msgid "Variables"
+msgstr ""
+
+#: tag/addtagdialog.cpp:39
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgctxt "@title:window"
+msgid "Add Tag"
+msgstr "Белгіні қосу"
+
+#: tag/addtagdialog.cpp:76
+#, kde-format
+msgid "Tag %1 already exists"
+msgstr "\"%1\" деген тег бар екен"
+
+#: tag/tagwidget.cpp:63
+#, kde-format
+msgctxt "@label:listbox Name of the tag"
+msgid "Name:"
+msgstr "Атауы:"
+
+#: tag/tagwidget.cpp:70
+#, kde-format
+msgid "Change te&xt color:"
+msgstr "&Мәтіннің түсін өзгерту:"
+
+#: tag/tagwidget.cpp:82
+#, kde-format
+msgid "Change &background color:"
+msgstr "&Аясының түсін өзгерту:"
+
+#: tag/tagwidget.cpp:94
+#, kde-format
+msgid "Change fo&nt:"
+msgstr "Қар&іпін өзгерту:"
+
+#: tag/tagwidget.cpp:100
+#, kde-format
+msgid "&Bold"
+msgstr ""
+
+#: tag/tagwidget.cpp:104
+#, kde-format
+msgid "&Italics"
+msgstr ""
+
+#: tag/tagwidget.cpp:122
+#, kde-format
+msgid "Message tag &icon:"
+msgstr "Хат белгі &таңбашасы:"
+
+#: tag/tagwidget.cpp:133
+#, kde-format
+msgid "Shortc&ut:"
+msgstr "Тірке&сімі:"
+
+#: tag/tagwidget.cpp:144
+#, kde-format
+msgid "Enable &toolbar button"
+msgstr "&Құралдар панелінде батырмасы болын"
+
+#: widgets/favoritecollectionwidget.cpp:93
+#, kde-format
+msgid "Icon size"
+msgstr "Таңбаша өлшемі"
+
+#: widgets/favoritecollectionwidget.cpp:112
+#, kde-format
+msgid "Mode"
+msgstr "Күйі"
+
+#: widgets/favoritecollectionwidget.cpp:116
+#, kde-format
+msgid "List Mode"
+msgstr "Тізімді күйі"
+
+#: widgets/favoritecollectionwidget.cpp:126
+#, kde-format
+msgid "Icon Mode"
+msgstr "Таңбашалы күйі"
+
+#: widgets/favoritecollectionwidget.cpp:237
+#, kde-format
+msgid "Drop your favorite folders here..."
+msgstr "Таңдамалы қапшықтарыңызды осында тастаңыз..."
+
+#: widgets/redirectdialog.cpp:67
+#, kde-format
+msgid "Resend-To:"
+msgstr ""
+
+#: widgets/redirectdialog.cpp:70
+#, kde-format
+msgid "Resend-Cc:"
+msgstr ""
+
+#: widgets/redirectdialog.cpp:73
+#, kde-format
+msgid "Resend-Bcc:"
+msgstr ""
+
+#: widgets/redirectdialog.cpp:102
+#, fuzzy, kde-format
+#| msgid "Redirect Message"
+msgctxt "@title:window"
+msgid "Redirect Message"
+msgstr "Хатты баскаға жіберу"
+
+#: widgets/redirectdialog.cpp:123
+#, fuzzy, kde-format
+#| msgid "Select the recipient &addresses to redirect to:"
+msgid "Select the recipient addresses to redirect to:"
+msgstr "Басқаға жіберу үшін &адресті таңдаңыз:"
+
+#: widgets/redirectdialog.cpp:152
+#, kde-format
+msgid "Identity:"
+msgstr "Іс-әлпеті:"
+
+#: widgets/redirectdialog.cpp:156
+#, kde-format
+msgid "Transport:"
+msgstr "Тасымалдауы:"
+
+#: widgets/redirectdialog.cpp:158
+#, kde-format
+msgid "&Send Now"
+msgstr "&Қазір жіберу"
+
+#: widgets/redirectdialog.cpp:159
+#, kde-format
+msgid "Send &Later"
+msgstr "&Кейінірек жіберу"
+
+#: widgets/redirectdialog.cpp:207
+#, kde-format
+msgid "You cannot redirect the message without an address."
+msgstr "Адресін көрсетпей хатты басқаға жібере алмайсыз."
+
+#: widgets/redirectdialog.cpp:207
+#, kde-format
+msgid "Empty Redirection Address"
+msgstr "Басқаға жіберетін адрес жоқ"
+
+#: widgets/redirectwidget.cpp:39
+#, kde-format
+msgid "Use the Address-Selection Dialog"
+msgstr "Адрес таңдау диалогы"
+
+#: widgets/redirectwidget.cpp:41
+#, kde-format
+msgid ""
+"This button opens a separate dialog where you can select recipients out of "
+"all available addresses."
+msgstr ""
+"Бұл батырма бар адрестерден керек алушының таңдауға арналған диалогын ашады."
+
+#, fuzzy
+#~| msgid "Message Disposition Notification Request"
+#~ msgctxt "@title:window"
+#~ msgid "Message Disposition Notification Request"
+#~ msgstr "Хатпен не істегені туралы хабарламаны сұрау"
+
+#~ msgid "Send \"&denied\""
+#~ msgstr "\"Ж&етті\" дегенді жіберу"
+
+#~ msgid "&Ignore"
+#~ msgstr "&Елемеу"
+
+#~ msgid "&Send"
+#~ msgstr "&Жіберу"
+
+#~ msgid ""
+#~ "This message contains a request to return a notification about your "
+#~ "reception of the message.\n"
+#~ "You can either ignore the request or let the mail program send a \"denied"
+#~ "\" or normal response."
+#~ msgstr ""
+#~ "Хатта поштаны алғаныңыз туралы хабарлама сұралған.\n"
+#~ "Cұрауды елемеуге болады немесе пошта бағдарламасы \"бас тарту\" туралы не "
+#~ "кәдімгі жауапты бере алады."
+
+#~ msgid ""
+#~ "This message contains a request to send a notification about your "
+#~ "reception of the message.\n"
+#~ "It contains a processing instruction that is marked as \"required\", but "
+#~ "which is unknown to the mail program.\n"
+#~ "You can either ignore the request or let the mail program send a \"failed"
+#~ "\" response."
+#~ msgstr ""
+#~ "Хатта поштаны алғаныңыз туралы хабарлама сұралған.\n"
+#~ "Ол \"қажетті\" деп белгіленген, бірақ түрі пошта бағдарламасына "
+#~ "беймәлім.\n"
+#~ "Cұрауды елемеуге немесе пошта бағдарламасына \"жаңылыс\" деген хабарлама "
+#~ "жіберуді тапсыруға болады."
+
+#~ msgid ""
+#~ "This message contains a request to send a notification about your "
+#~ "reception of the message,\n"
+#~ "but it is requested to send the notification to more than one address.\n"
+#~ "You can either ignore the request or let the mail program send a \"denied"
+#~ "\" or normal response."
+#~ msgstr ""
+#~ "Хатта поштаны алғаныңыз туралы хабарлама сұралған,\n"
+#~ "бірақ хабарламаны бірнеше адреске жіберу талап етілген.\n"
+#~ "Cұрауды елемеуге болады немесе пошта бағдарламасына \"бас тарту\" туралы "
+#~ "хабарламаны не кәдімгі жауапты беруді тапсыруға болады."
+
+#~ msgid ""
+#~ "This message contains a request to send a notification about your "
+#~ "reception of the message,\n"
+#~ "but there is no return-path set.\n"
+#~ "You can either ignore the request or let the mail program send a \"denied"
+#~ "\" or normal response."
+#~ msgstr ""
+#~ "Хатта поштаны алғаныңыз туралы хабарлама сұралған,\n"
+#~ "бірақ қайтару жолы көрсетілмеген.\n"
+#~ "Cұрауды елемеуге болады немесе пошта бағдарламасына \"бас тарту\" туралы "
+#~ "хабарламаны не кәдімгі жауапты беруді тапсыруға болады."
+
+#~ msgid ""
+#~ "This message contains a request to send a notification about your "
+#~ "reception of the message,\n"
+#~ "but the return-path address differs from the address the notification was "
+#~ "requested to be sent to.\n"
+#~ "You can either ignore the request or let the mail program send a \"denied"
+#~ "\" or normal response."
+#~ msgstr ""
+#~ "Хатта поштаны алғаныңыз туралы хабарлама сұралған,\n"
+#~ "бірақ қайтару жол адресі мен хабарлама жіберу адресі екі бөлек.\n"
+#~ "Cұрауды елемеуге болады немесе пошта бағдарламасына \"бас тарту\" туралы "
+#~ "хабарламаны не кәдімгі жауапты беруді тапсыруға болады."
+
+#~ msgctxt "Receiver of an email."
+#~ msgid "To"
+#~ msgstr "Кімге"
+
+#~ msgid "Advanced Options"
+#~ msgstr "Жетелеу параметрлері"
+
+#~ msgctxt "@label:textbox Name of the folder."
+#~ msgid "&Name:"
+#~ msgstr "&Атауы:"
+
+#, fuzzy
+#~| msgid "Message Tag"
+#~ msgid "Message List"
+#~ msgstr "Хат белгісі"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Aggregation"
+#~ msgstr "Ұйымы"
+
+#, fuzzy
+#~| msgid "No filter was imported."
+#~ msgid "File was shared."
+#~ msgstr "Ешбір сүзгі импортталмады"
+
+#~ msgid ""
+#~ "<qt><p>Check this button to force the confirmation dialog to be displayed."
+#~ "</p><p>This is useful if you have defined a ruleset that tags messages to "
+#~ "be downloaded later. Without the possibility to force the dialog popup, "
+#~ "these messages could never be downloaded if no other large messages were "
+#~ "waiting on the server, or if you wanted to change the ruleset to tag the "
+#~ "messages differently.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Құптау диалогын шақыру.</p><p>Егер сіз кейінге қалдырылған "
+#~ "хаттарды жүктеу үшін ережелер жиынын таңдасаңыз бұл өте пайдалы. Егер осы "
+#~ "диалог көрсетілмесе, осы хаттар серверде қала берер еді, егер жаңа хат "
+#~ "келмесе немесе хатты басқаша белгілейтін жаңа ереже жиынын көрсеткіңіз "
+#~ "келсе.</p></qt>"
+
+#~ msgctxt "type of folder content"
+#~ msgid "Mail"
+#~ msgstr "Пошта"
+
+#~ msgctxt "type of folder content"
+#~ msgid "Calendar"
+#~ msgstr "Күнтізбе"
+
+#~ msgctxt "type of folder content"
+#~ msgid "Contacts"
+#~ msgstr "Контакттар"
+
+#~ msgctxt "type of folder content"
+#~ msgid "Notes"
+#~ msgstr "Жазбалар"
+
+#~ msgctxt "type of folder content"
+#~ msgid "Tasks"
+#~ msgstr "Тапсырмалар"
+
+#~ msgctxt "type of folder content"
+#~ msgid "Journal"
+#~ msgstr "Күнделік"
+
+#~ msgctxt "type of folder content"
+#~ msgid "Configuration"
+#~ msgstr "Баптау"
+
+#~ msgctxt "type of folder content"
+#~ msgid "Freebusy"
+#~ msgstr "Бос/Істе"
+
+#~ msgctxt "type of folder content"
+#~ msgid "Files"
+#~ msgstr "Файлдар"
+
+#~ msgctxt "type of folder content"
+#~ msgid "Unknown"
+#~ msgstr "Беймәлім"
+
+#~ msgid "&Folder contents:"
+#~ msgstr "Қа&пшықтың мазмұны:"
+
+#~ msgid "Generate free/&busy and activate alarms for:"
+#~ msgstr "&Бос/бос емес деп белгілеп ескерту белсендіру:"
+
+#~ msgid "Nobody"
+#~ msgstr "Ешкім"
+
+#~ msgid "Admins of This Folder"
+#~ msgstr "Әкімшілері үшін"
+
+#~ msgid "All Readers of This Folder"
+#~ msgstr "Барлығы үшін"
+
+#~ msgid ""
+#~ "This setting defines which users sharing this folder should get \"busy\" "
+#~ "periods in their freebusy lists and should see the alarms for the events "
+#~ "or tasks in this folder. The setting applies to Calendar and Task folders "
+#~ "only (for tasks, this setting is only used for alarms).\n"
+#~ "\n"
+#~ "Example use cases: if the boss shares a folder with his secretary, only "
+#~ "the boss should be marked as busy for his meetings, so he should select "
+#~ "\"Admins\", since the secretary has no admin rights on the folder.\n"
+#~ "On the other hand if a working group shares a Calendar for group "
+#~ "meetings, all readers of the folders should be marked as busy for "
+#~ "meetings.\n"
+#~ "A company-wide folder with optional events in it would use \"Nobody\" "
+#~ "since it is not known who will go to those events."
+#~ msgstr ""
+#~ "Бұл параметр осы қапшықтың пайдаланушылардың қайсы үшін оқиғалар \"бос "
+#~ "емес\" уақыт деп белгіленетінін және осы қапшықтағы оқиғалар мен "
+#~ "тапсырмалар туралы ескерту кімге көрсетілетінін анықтайды. Параметр тек "
+#~ "күнтізбе және тапсырма қапшықтарында қолданылады (тапсырмалар үшін бұл "
+#~ "параметр тек ескерту үшін қолданылады.)\n"
+#~ "\n"
+#~ "Мысалы: егер бастық пен хатшысы қапшықты ортақтасып қолданатын болса және "
+#~ "бұл қапшықтағы оқиға бастықтың уақыты ғана күнтізбесінде бос емес деп "
+#~ "белгіленетін болса, онда бастық \"Әкімшілері үшін\" дегенді таңдау керек, "
+#~ "өйткені ол ғана қапшық әкімшісі болып табылады.\n"
+#~ "Басқа мысал: күнтізбені жұмыс тобы бірлесіп қолданғанда, жиналысты "
+#~ "жоспарлағанда, \"Барлығы үшін\" деп барлық жұмыс тобының мүшелерінің "
+#~ "уақыты бос емес деп белгіленуі тиіс.\n"
+#~ "Ал жалпы компаниялық оқиғасын жоспарлайтын қапшық үшін,\"Ешкім\" дегенін "
+#~ "таңдау керек, себебі бұл оқиғаларға кімнің қатысатыны алдын-ала белгісіз."
+
+#~ msgid "Sh&ortcut:"
+#~ msgstr "Тіркесімі:"
+
+#~ msgid "Edit..."
+#~ msgstr "Өзгерту..."
+
+#~ msgid "Import Thunderbird Filters"
+#~ msgstr "Thunderbird сүзгілерін импорттау"
+
+#, fuzzy
+#~| msgid "Import Sylpheed Filters"
+#~ msgid "Import Icedove Filters"
+#~ msgstr "Sylpheed сүзгілерін импорттау"
+
+#~ msgid "Beep"
+#~ msgstr "Шиқыл"
+
+#~ msgid "Add Filter"
+#~ msgstr "Сүзгіні қосу"
+
+#~ msgid "Edit Filter"
+#~ msgstr "Сүзгіні өзгерту"
+
+#~ msgid "Do you really want to remove filter <b>%1</b>?"
+#~ msgstr "<b>%1\"</b> деген сүзгіні шын өшірмексіз бе?"
+
+#~ msgid "Add"
+#~ msgstr "Қосу"
+
+#~ msgid "Edit"
+#~ msgstr "Өзгерту"
+
+#~ msgid "Remove"
+#~ msgstr "Өшіру"
+
+#~ msgid "Move Up"
+#~ msgstr "Жоғарлату"
+
+#~ msgid "Move Down"
+#~ msgstr "Төмендету"
+
+#~ msgid "Create Todo/Reminder"
+#~ msgstr "Іс/Еске түсіруді жоспарлау"
+
+#~ msgid "Attach inline without attachments"
+#~ msgstr "Тіркемелемей, бетіне енгізу"
+
+#~ msgid "Attach &inline"
+#~ msgstr "Б&етіне тіркемелеу"
+
+#~ msgid "Attach as &link"
+#~ msgstr "&Сілтеме түрінде тіркемелеу"
+
+#~ msgid "How should the email be attached?"
+#~ msgstr "Эл.поштаны қалай тіркемелеу?"
+
+#~ msgctxt "Unit suffix where units are days."
+#~ msgid " days"
+#~ msgstr " күн"
+
+#~ msgid ""
+#~ "From: %1\n"
+#~ "To: %2\n"
+#~ "Subject: %3"
+#~ msgstr ""
+#~ "Кімге: %1\n"
+#~ "Кімден: %2\n"
+#~ "Тақырыбы: %3"
+
+#~ msgid "Removing attachments from an email might invalidate its signature."
+#~ msgstr "Эл.поштанның тіркемесін өшірген оның қолтаңбалауын бұзуы мүмкін."
+
+#~ msgid "Mail: %1"
+#~ msgstr "Пошта: %1"
+
+#~ msgid "Search..."
+#~ msgstr "Іздеу..."
+
+#~ msgid "Select Multiple Folders"
+#~ msgstr "Бірнеше қапшықты таңдау"
+
+#~ msgid "is not in category"
+#~ msgstr "санатта жоқ"
+
+#~ msgid "Include this folder in mail checks"
+#~ msgstr "Осы қапшық поштаны тексерілетіндерге кірсін"
+
+#~ msgid ""
+#~ "<qt><p>If this option is enabled this folder will be included while "
+#~ "checking new emails.</p><p>Uncheck this option if you want to skip this "
+#~ "folder while checking new emails.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Бұны рұқсат етсе, жаңа пошта тексерлетіндерге осы қапшық та кіреді."
+#~ "</p><p>Тексерілетіндерге кірмесін десеңіз - белгісн алып тастаңыз..</p></"
+#~ "qt>"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "When Text Obscured"
+#~ msgstr "Мәтін көрінбейтін болса"
+
+#~ msgid "Mail Expiry Properties"
+#~ msgstr "Поштаның ескіру мерзім қасиеттері"
+
+#~ msgid ""
+#~ "Note: Expiry action will be applied immediately after confirming settings."
+#~ msgstr ""
+#~ "Ескерту: ескіргенде істейтін амал кұптаудан кейін бірден атқарылады."
+
+#~ msgid "Please select a folder to expire messages into."
+#~ msgstr "Ескірген хаттарды салатын қапшықты таңдаңыз."
+
+#~ msgid "&User identifier:"
+#~ msgstr "&Пайдаланушының идентификаторы:"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "The User Identifier is the login of the user on the IMAP server. This can "
+#~ "be a simple user name or the full email address of the user; the login "
+#~ "for your own account on the server will tell you which one it is."
+#~ msgstr ""
+#~ "IMAP-серверге кіру үшін пайдаланушының идентификаторы. Бұл тек "
+#~ "пайдаланушының атауы немесе оның эл.пошта адресі болуы мүмкін - сервердің "
+#~ "шақыру жазуы керегін анықтайды."
+
+#~ msgctxt "select an email address"
+#~ msgid "Se&lect..."
+#~ msgstr "&Таңдау..."
+
+#~ msgid "Permissions"
+#~ msgstr "Рұқсаттары"
+
+#~ msgid ""
+#~ "<b>Note: </b>Renaming requires write permissions on the parent folder."
+#~ msgstr ""
+#~ "<b>Ескерту: </b>Атуын өзгерту үшін аталық қапшығына жазу рұқсаты керек."
+
+#~ msgid "Add Entry..."
+#~ msgstr "Жазуды қосу..."
+
+#~ msgid "Edit Entry..."
+#~ msgstr "Жазуын өзгерту..."
+
+#~ msgid "Remove Entry"
+#~ msgstr "Жазуды өшіру"
+
+#~ msgid "Add ACL"
+#~ msgstr "ACL қосу"
+
+#~ msgid "Edit ACL"
+#~ msgstr "ACL өзгерту"
+
+#~ msgid ""
+#~ "Do you really want to remove your own permissions for this folder? You "
+#~ "will not be able to access it afterwards."
+#~ msgstr ""
+#~ "Өзіңіздің бұл қапшыққа қатынау рұқсатыңызды өшіргіңіз келгені шын ба? "
+#~ "Бұдан кейін Сіз қапшыққа қатынай алмайсыз."
+
+#~ msgctxt "Permissions"
+#~ msgid "None"
+#~ msgstr "Жоқ"
+
+#~ msgctxt "Permissions"
+#~ msgid "Read"
+#~ msgstr "Оқу"
+
+#~ msgctxt "Permissions"
+#~ msgid "Append"
+#~ msgstr "Жалғау"
+
+#~ msgctxt "Permissions"
+#~ msgid "Write"
+#~ msgstr "Жазу"
+
+#~ msgctxt "Permissions"
+#~ msgid "All"
+#~ msgstr "Бүкіл"
+
+#~ msgid "Custom Permissions (%1)"
+#~ msgstr "Қалаған рұқсаттар (%1)"
+
+#~ msgid "Resource type '%1' is not available."
+#~ msgstr "'%1' ресурс түрі қол жеткізбейді."
+
+#~ msgid "Resource '%1' is already set up."
+#~ msgstr "'%1' ресурсы бұрын орнатылған екен."
+
+#~ msgid "Creating resource instance for '%1'..."
+#~ msgstr "'%1' дегеннің ресурс данасын құру"
+
+#~ msgid "Configuring resource instance..."
+#~ msgstr "Ресурс данасын баптау..."
+
+#~ msgid "Unable to configure resource instance."
+#~ msgstr "Ресурс данасы баптауға келмеді."
+
+#~ msgid "Could not convert value of setting '%1' to required type %2."
+#~ msgstr "'%1' параметрі %2 түріне қажетті мәніне келмеді."
+
+#~ msgid "Could not set setting '%1': %2"
+#~ msgstr "'%1' параметрі орнатылмады: %2"
+
+#~ msgid "Resource setup completed."
+#~ msgstr "Ресурсты орнату бітті."
+
+#~ msgid "Failed to create resource instance: %1"
+#~ msgstr "Ресурс данасын құруы жаңылды: %1"
+
+#~ msgid " bytes"
+#~ msgstr " байт"
+
+#, fuzzy
+#~| msgid "From"
+#~ msgid "From:"
+#~ msgstr "Кімден"
+
+#~ msgctxt "message status"
+#~ msgid "New"
+#~ msgstr "Жаңа"
+
+#~ msgid "Unknown folder '%1'"
+#~ msgstr "'%1' беймәлім қапшығы"
+
+#~ msgid "Filtering message %1 of %2"
+#~ msgstr "%1 / %2 хатты сүзгілеу"
+
+#~ msgid "Unable to process messages: "
+#~ msgstr "Өңдеуі мүмкін емес хаттар: "
+
+#~ msgid "<b>Evaluating filter rules:</b> "
+#~ msgstr "<b>Сүзгі ережесін тексеру:</b> "
+
+#~ msgid "<b>Filter rules have matched.</b>"
+#~ msgstr "<b>Сүзгі ережесімен сәйкес келеді.</b>"
