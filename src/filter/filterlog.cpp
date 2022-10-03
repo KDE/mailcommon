@@ -7,7 +7,6 @@
 #include "filterlog.h"
 
 #include "mailcommon_debug.h"
-#include "messagecomposer/util.h"
 
 #include <QFile>
 #include <QTime>

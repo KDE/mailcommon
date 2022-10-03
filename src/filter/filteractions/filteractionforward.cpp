@@ -10,7 +10,6 @@
 
 #include "filter/dialog/filteractionmissingtemplatedialog.h"
 #include "kernel/mailkernel.h"
-#include "util/mailutil.h"
 
 #include <Akonadi/EmailAddressRequester>
 #include <MessageComposer/MessageFactoryNG>

@@ -15,7 +15,6 @@
 #include "filteractiondelete.h"
 #include "filteractionencrypt.h"
 #include "filteractionexec.h"
-#include "filteractionforward.h"
 #include "filteractionmove.h"
 #include "filteractionpipethrough.h"
 #include "filteractionplaysound.h"

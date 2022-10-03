@@ -11,7 +11,6 @@
 
 #include "folder/foldersettings.h"
 #include "kernel/mailkernel.h"
-#include "util/mailutil_p.h"
 #include <PimCommonAkonadi/CollectionAnnotationsAttribute>
 #include <PimCommonAkonadi/ContentTypeWidget>
 #include <PimCommonAkonadi/IncidencesForWidget>

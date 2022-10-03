@@ -7,8 +7,6 @@
 
 #include "foldersettings.h"
 #include "kernel/mailkernel.h"
-#include "mailcommon_debug.h"
-#include "util/mailutil.h"
 #include "util/resourcereadconfigfile.h"
 #include <Akonadi/CollectionModifyJob>
 #include <Akonadi/ItemFetchJob>

@@ -6,8 +6,6 @@
 */
 
 #include "expirecollectionattribute.h"
-#include "folder/foldersettings.h"
-#include "kernel/mailkernel.h"
 
 #include <QDataStream>
 

@@ -10,7 +10,6 @@
 #include "foldertreeview.h"
 #include "hierarchicalfoldermatcher_p.h"
 #include "kernel/mailkernel.h"
-#include "util/mailutil.h"
 
 #include <PimCommon/PimUtil>
 #include <PimCommonAkonadi/ImapAclAttribute>

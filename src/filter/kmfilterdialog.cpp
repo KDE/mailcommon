@@ -13,7 +13,6 @@
 #include "kmfilterlistbox.h"
 #include "mailcommon_debug.h"
 
-#include "filteractions/filteractiondict.h"
 #include "filteractions/filteractionwidget.h"
 #include "filterimporterpathcache.h"
 #include "filterselectiondialog.h"
@@ -24,7 +23,6 @@ using MailCommon::FilterImporterExporter;
 #include "folder/folderrequester.h"
 #include "kernel/mailkernel.h"
 #include "search/searchpatternedit.h"
-#include "util/mailutil.h"
 #include <PimCommon/PimUtil>
 
 #include <Akonadi/ItemFetchJob>

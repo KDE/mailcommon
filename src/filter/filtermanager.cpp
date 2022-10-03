@@ -7,7 +7,6 @@
 #include "filtermanager.h"
 #include "mailcommon_debug.h"
 
-#include "filteractions/filteraction.h"
 #include "filteractions/filteractiondict.h"
 #include "filterimporterexporter.h"
 #include "mailfilteragentinterface.h"

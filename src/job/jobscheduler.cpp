@@ -5,7 +5,6 @@
  */
 
 #include "jobscheduler.h"
-#include "mailcommon_debug.h"
 using namespace MailCommon;
 
 ScheduledTask::ScheduledTask(const Akonadi::Collection &folder, bool immediate)

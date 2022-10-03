@@ -5,7 +5,6 @@
 */
 
 #include "statusrulewidgethandler.h"
-#include "search/searchrule/searchrulestatus.h"
 
 #include <KLazyLocalizedString>
 #include <QComboBox>

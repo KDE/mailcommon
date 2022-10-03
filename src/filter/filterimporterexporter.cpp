@@ -6,7 +6,6 @@
 
 #include "filterimporterexporter.h"
 #include "dialog/selectthunderbirdfilterfilesdialog.h"
-#include "filteractions/filteraction.h"
 #include "filterimporter/filterimporterbalsa.h"
 #include "filterimporter/filterimporterclawsmail.h"
 #include "filterimporter/filterimporterevolution.h"
@@ -14,7 +13,6 @@
 #include "filterimporter/filterimporterprocmail.h"
 #include "filterimporter/filterimportersylpheed.h"
 #include "filterimporter/filterimporterthunderbird.h"
-#include "filtermanager.h"
 #include "filterselectiondialog.h"
 #include "mailcommon_debug.h"
 #include "mailfilter.h"

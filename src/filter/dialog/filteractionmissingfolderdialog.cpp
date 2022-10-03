@@ -6,10 +6,8 @@
 */
 
 #include "filteractionmissingfolderdialog.h"
-#include "filter/kmfilteraccountlist.h"
 #include "folder/folderrequester.h"
 #include "kernel/mailkernel.h"
-#include "tag/addtagdialog.h"
 #include "util/mailutil.h"
 
 #include <Akonadi/EntityMimeTypeFilterModel>

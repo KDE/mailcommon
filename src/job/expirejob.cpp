@@ -7,7 +7,6 @@
 #include "expirejob.h"
 #include "collectionpage/attributes/expirecollectionattribute.h"
 #include "kernel/mailkernel.h"
-#include "util/mailutil.h"
 
 #include <PimCommon/BroadcastStatus>
 using PimCommon::BroadcastStatus;

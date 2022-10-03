@@ -6,7 +6,6 @@
 
 #include "textrulerwidgethandler.h"
 
-#include "search/searchpattern.h"
 #include <KLineEdit>
 #include <KLocalizedString>
 #include <QComboBox>

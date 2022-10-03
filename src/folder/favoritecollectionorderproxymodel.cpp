@@ -6,7 +6,6 @@
 */
 
 #include "favoritecollectionorderproxymodel.h"
-#include "mailcommon_debug.h"
 #include <Akonadi/Collection>
 #include <Akonadi/EntityTreeModel>
 

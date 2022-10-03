@@ -8,10 +8,6 @@
 
 #include "searchpattern.h"
 #include "filter/filterlog.h"
-#include "searchrule/searchruledate.h"
-#include "searchrule/searchrulenumerical.h"
-#include "searchrule/searchrulestatus.h"
-#include "searchrule/searchrulestring.h"
 using MailCommon::FilterLog;
 #include "mailcommon_debug.h"
 #include <Akonadi/ContactSearchJob>

@@ -5,7 +5,6 @@
 */
 
 #include "filterimporterclawsmail.h"
-#include "filter/filtermanager.h"
 #include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
 

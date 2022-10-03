@@ -5,7 +5,6 @@
 */
 
 #include "daterulewidgethandler.h"
-#include "search/searchpattern.h"
 
 #include <KDateComboBox>
 #include <KLocalizedString>

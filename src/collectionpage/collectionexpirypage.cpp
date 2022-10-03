@@ -9,10 +9,6 @@
 #include "collectionexpirywidget.h"
 
 #include "attributes/expirecollectionattribute.h"
-#include "folder/foldersettings.h"
-#include "kernel/mailkernel.h"
-#include "mailcommon_debug.h"
-#include "util/mailutil.h"
 
 #include <KLocalizedString>
 #include <QVBoxLayout>

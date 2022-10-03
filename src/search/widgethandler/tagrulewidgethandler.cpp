@@ -6,7 +6,6 @@
 
 #include "tagrulewidgethandler.h"
 #include "mailcommon_debug.h"
-#include "search/searchpattern.h"
 
 #include <KJob>
 #include <KLineEdit>
