@@ -19,7 +19,10 @@
 #include <KIdentityManagement/IdentityCombo>
 
 using namespace MailCommon;
-
+namespace
+{
+static const char myFilterActionMissingIdentityDialogConfigGroupName[] = "FilterActionMissingIdentityDialog";
+}
 FilterActionMissingIdentityDialog::FilterActionMissingIdentityDialog(const QString &filtername, QWidget *parent)
     : QDialog(parent)
 {
@@ -59,7 +62,7 @@ FilterActionMissingIdentityDialog::~FilterActionMissingIdentityDialog()
 
 void FilterActionMissingIdentityDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingMissingIdentity");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingIdentityDialogConfigGroupName);
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -69,7 +72,7 @@ void FilterActionMissingIdentityDialog::readConfig()
 
 void FilterActionMissingIdentityDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingMissingIdentity");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingIdentityDialogConfigGroupName);
     group.writeEntry("Size", size());
 }
 

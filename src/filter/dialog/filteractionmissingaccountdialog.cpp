@@ -18,6 +18,10 @@
 #include <QVBoxLayout>
 
 using namespace MailCommon;
+namespace
+{
+static const char myFilterActionMissingAccountDialogConfigGroupName[] = "FilterActionMissingAccountDialog";
+}
 
 FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QStringList &lstAccount, const QString &filtername, QWidget *parent)
     : QDialog(parent)
@@ -57,7 +61,7 @@ FilterActionMissingAccountDialog::~FilterActionMissingAccountDialog()
 
 void FilterActionMissingAccountDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingAccountDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingAccountDialogConfigGroupName);
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -67,7 +71,7 @@ void FilterActionMissingAccountDialog::readConfig()
 
 void FilterActionMissingAccountDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingAccountDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingAccountDialogConfigGroupName);
     group.writeEntry("Size", size());
 }
 

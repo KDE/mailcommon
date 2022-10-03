@@ -16,6 +16,10 @@
 #include <QVBoxLayout>
 
 using namespace MailCommon;
+namespace
+{
+static const char myFilterActionMissingSoundUrlDialogGroupName[] = "FilterActionMissingSoundUrlDialog";
+}
 
 FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QString &filtername, const QString &argStr, QWidget *parent)
     : QDialog(parent)
@@ -65,7 +69,7 @@ QString FilterActionMissingSoundUrlDialog::soundUrl() const
 
 void FilterActionMissingSoundUrlDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingSoundUrlDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingSoundUrlDialogGroupName);
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -75,6 +79,6 @@ void FilterActionMissingSoundUrlDialog::readConfig()
 
 void FilterActionMissingSoundUrlDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingSoundUrlDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingSoundUrlDialogGroupName);
     group.writeEntry("Size", size());
 }

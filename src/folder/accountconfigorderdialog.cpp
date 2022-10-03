@@ -24,7 +24,10 @@
 #include <QListWidget>
 
 using namespace MailCommon;
-
+namespace
+{
+static const char myAccountConfigOrderDialogName[] = "AccountConfigOrderDialog";
+}
 struct InstanceStruct {
     QString name;
     QIcon icon;
@@ -234,7 +237,7 @@ void AccountConfigOrderDialog::slotOk()
 
 void AccountConfigOrderDialog::readConfig()
 {
-    KConfigGroup accountConfigDialog(d->mSettings->config(), "AccountConfigOrderDialog");
+    KConfigGroup accountConfigDialog(d->mSettings->config(), myAccountConfigOrderDialogName);
     const QSize size = accountConfigDialog.readEntry("Size", QSize(600, 400));
     if (size.isValid()) {
         resize(size);
@@ -243,7 +246,7 @@ void AccountConfigOrderDialog::readConfig()
 
 void AccountConfigOrderDialog::writeConfig()
 {
-    KConfigGroup accountConfigDialog(d->mSettings->config(), "AccountConfigOrderDialog");
+    KConfigGroup accountConfigDialog(d->mSettings->config(), myAccountConfigOrderDialogName);
     accountConfigDialog.writeEntry("Size", size());
     accountConfigDialog.sync();
 }

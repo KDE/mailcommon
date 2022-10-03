@@ -15,7 +15,10 @@
 #include <QVBoxLayout>
 
 using namespace MailCommon;
-
+namespace
+{
+static const char mySelectThunderbirdFilterFilesDialogGroupName[] = "SelectThunderbirdFilterFilesDialog";
+}
 SelectThunderbirdFilterFilesDialog::SelectThunderbirdFilterFilesDialog(const QString &defaultSettingPath, QWidget *parent)
     : QDialog(parent)
     , mSelectFilterFilesWidget(new MailCommon::SelectThunderbirdFilterFilesWidget(defaultSettingPath, this))
@@ -55,7 +58,7 @@ void SelectThunderbirdFilterFilesDialog::setStartDir(const QUrl &url)
 
 void SelectThunderbirdFilterFilesDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "SelectThunderbirdFilterFilesDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), mySelectThunderbirdFilterFilesDialogGroupName);
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -65,6 +68,6 @@ void SelectThunderbirdFilterFilesDialog::readConfig()
 
 void SelectThunderbirdFilterFilesDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "SelectThunderbirdFilterFilesDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), mySelectThunderbirdFilterFilesDialogGroupName);
     group.writeEntry("Size", size());
 }

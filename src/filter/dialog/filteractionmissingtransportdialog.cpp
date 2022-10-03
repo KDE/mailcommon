@@ -17,7 +17,10 @@
 #include <MailTransport/TransportComboBox>
 
 using namespace MailCommon;
-
+namespace
+{
+static const char myFilterActionMissingTransportDialogGroupName[] = "FilterActionMissingTransportDialog";
+}
 FilterActionMissingTransportDialog::FilterActionMissingTransportDialog(const QString &filtername, QWidget *parent)
     : QDialog(parent)
     , mComboBoxTransport(new MailTransport::TransportComboBox(this))
@@ -54,7 +57,7 @@ FilterActionMissingTransportDialog::~FilterActionMissingTransportDialog()
 
 void FilterActionMissingTransportDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingTransportDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingTransportDialogGroupName);
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -64,7 +67,7 @@ void FilterActionMissingTransportDialog::readConfig()
 
 void FilterActionMissingTransportDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingTransportDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingTransportDialogGroupName);
     group.writeEntry("Size", size());
 }
 

@@ -15,7 +15,10 @@
 #include <QVBoxLayout>
 
 using namespace MailCommon;
-
+namespace
+{
+static const char myInvalidFilterDialogName[] = "InvalidFilterDialog";
+}
 InvalidFilterDialog::InvalidFilterDialog(QWidget *parent)
     : QDialog(parent)
     , mInvalidFilterWidget(new InvalidFilterWidget(this))
@@ -62,13 +65,13 @@ void InvalidFilterDialog::setInvalidFilters(const QVector<InvalidFilterInfo> &ls
 
 void InvalidFilterDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "InvalidFilterDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myInvalidFilterDialogName);
     group.writeEntry("Size", size());
 }
 
 void InvalidFilterDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "InvalidFilterDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myInvalidFilterDialogName);
     const QSize sizeDialog = group.readEntry("Size", QSize(400, 500));
     if (sizeDialog.isValid()) {
         resize(sizeDialog);

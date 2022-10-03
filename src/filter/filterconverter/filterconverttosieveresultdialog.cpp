@@ -22,7 +22,10 @@
 #include <QVBoxLayout>
 
 using namespace MailCommon;
-
+namespace
+{
+static const char myFilterConvertToSieveResultDialogName[] = "FilterConvertToSieveResultDialog";
+}
 FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *parent)
     : QDialog(parent)
     , mEditor(new KPIMTextEdit::PlainTextEditorWidget(this))
@@ -74,8 +77,6 @@ void FilterConvertToSieveResultDialog::setCode(const QString &code)
 {
     mEditor->editor()->setPlainText(code);
 }
-
-static const char myFilterConvertToSieveResultDialogName[] = "FilterConvertToSieveResultDialog";
 
 void FilterConvertToSieveResultDialog::readConfig()
 {

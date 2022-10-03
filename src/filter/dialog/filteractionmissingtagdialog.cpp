@@ -19,6 +19,10 @@
 #include <QVBoxLayout>
 
 using namespace MailCommon;
+namespace
+{
+static const char myFilterActionMissingTagDialogGroupName[] = "FilterActionMissingTagDialog";
+}
 
 FilterActionMissingTagDialog::FilterActionMissingTagDialog(const QMap<QUrl, QString> &tagList,
                                                            const QString &filtername,
@@ -80,7 +84,7 @@ FilterActionMissingTagDialog::~FilterActionMissingTagDialog()
 
 void FilterActionMissingTagDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingTagDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingTagDialogGroupName);
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -90,7 +94,7 @@ void FilterActionMissingTagDialog::readConfig()
 
 void FilterActionMissingTagDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingTagDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingTagDialogGroupName);
     group.writeEntry("Size", size());
 }
 

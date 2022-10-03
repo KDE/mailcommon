@@ -18,7 +18,10 @@
 #include <QVBoxLayout>
 
 using namespace MailCommon;
-
+namespace
+{
+static const char myFilterActionMissingTemplateDialogGroupName[] = "FilterActionMissingTemplateDialog";
+}
 FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(const QStringList &templateList, const QString &filtername, QWidget *parent)
     : QDialog(parent)
     , mComboBoxTemplate(new QComboBox(this))
@@ -57,7 +60,7 @@ FilterActionMissingTemplateDialog::~FilterActionMissingTemplateDialog()
 
 void FilterActionMissingTemplateDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingTemplateDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingTemplateDialogGroupName);
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -67,7 +70,7 @@ void FilterActionMissingTemplateDialog::readConfig()
 
 void FilterActionMissingTemplateDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingTemplateDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingTemplateDialogGroupName);
     group.writeEntry("Size", size());
 }
 

@@ -22,6 +22,10 @@
 #include <QListWidget>
 #include <QPushButton>
 #include <QVBoxLayout>
+namespace
+{
+static const char myFilterActionMissingCollectionDialogConfigGroupName[] = "FilterActionMissingCollectionDialog";
+}
 
 FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(const Akonadi::Collection::List &list,
                                                                  const QString &filtername,
@@ -92,7 +96,7 @@ FilterActionMissingFolderDialog::~FilterActionMissingFolderDialog()
 
 void FilterActionMissingFolderDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingCollectionDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingCollectionDialogConfigGroupName);
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -102,7 +106,7 @@ void FilterActionMissingFolderDialog::readConfig()
 
 void FilterActionMissingFolderDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterActionMissingCollectionDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingCollectionDialogConfigGroupName);
     group.writeEntry("Size", size());
 }
 

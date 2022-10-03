@@ -17,7 +17,10 @@
 #include <QVBoxLayout>
 
 using namespace MailCommon;
-
+namespace
+{
+static const char myFilterSelectionDialogName[] = "FilterSelectionDialog";
+}
 FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     : QDialog(parent)
     , filtersListWidget(new QListWidget(this))
@@ -70,13 +73,13 @@ void FilterSelectionDialog::reject()
 
 void FilterSelectionDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterSelectionDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterSelectionDialogName);
     group.writeEntry("Size", size());
 }
 
 void FilterSelectionDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "FilterSelectionDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterSelectionDialogName);
     const QSize sizeDialog = group.readEntry("Size", QSize(300, 350));
     if (sizeDialog.isValid()) {
         resize(sizeDialog);
