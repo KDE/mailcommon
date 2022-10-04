@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-26 00:46+0000\n"
+"POT-Creation-Date: 2022-10-04 00:45+0000\n"
 "PO-Revision-Date: 2013-11-01 04:30+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -17,62 +17,62 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 1.2\n"
 
-#: collectionpage/collectionexpirypage.cpp:27
+#: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
 msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "Ескіру"
 
-#: collectionpage/collectionexpirywidget.cpp:36
+#: collectionpage/collectionexpirywidget.cpp:35
 #, kde-format
 msgctxt "Expire messages after %1"
 msgid " day"
 msgid_plural " days"
 msgstr[0] " күн"
 
-#: collectionpage/collectionexpirywidget.cpp:37
-#: collectionpage/collectionexpirywidget.cpp:43
-#: collectionpage/collectionexpirywidget.cpp:55
+#: collectionpage/collectionexpirywidget.cpp:36
+#: collectionpage/collectionexpirywidget.cpp:42
+#: collectionpage/collectionexpirywidget.cpp:54
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu Never display tooltips."
 #| msgid "Never"
 msgid "Never"
 msgstr "Ешқашан"
 
-#: collectionpage/collectionexpirywidget.cpp:67
+#: collectionpage/collectionexpirywidget.cpp:66
 #, kde-format
 msgid "Save Settings and Expire Now"
 msgstr "Баптауларды сақтау да ескірген қылу"
 
-#: collectionpage/collectionexpirywidget.cpp:68
+#: collectionpage/collectionexpirywidget.cpp:67
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
 msgid "Expire messages with invalid date"
 msgstr "Оқылған, келесі мерзім өткен соң:"
 
-#: collectionpage/collectionexpirywidget.cpp:74
+#: collectionpage/collectionexpirywidget.cpp:73
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
 msgid "Expire read messages after:"
 msgstr "Оқылған, келесі мерзім өткен соң:"
 
-#: collectionpage/collectionexpirywidget.cpp:77
+#: collectionpage/collectionexpirywidget.cpp:76
 #, fuzzy, kde-format
 #| msgid "Expire unread messages after"
 msgid "Expire unread messages after:"
 msgstr "Оқылмаған, келесі мерзім өткен соң:"
 
-#: collectionpage/collectionexpirywidget.cpp:91
+#: collectionpage/collectionexpirywidget.cpp:90
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "Оқылғанды келесіге жылжыту:"
 
-#: collectionpage/collectionexpirywidget.cpp:102
+#: collectionpage/collectionexpirywidget.cpp:101
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "Ескірген хаттар мүлдем жойылсын"
 
-#: collectionpage/collectionexpirywidget.cpp:173
+#: collectionpage/collectionexpirywidget.cpp:172
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -81,12 +81,12 @@ msgstr ""
 "Ескірген хаттарға қапшықты арнаңыз.\n"
 "Оны істемесеңіз, ескіргендер мүлдем өшіріледі."
 
-#: collectionpage/collectionexpirywidget.cpp:174
+#: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
 msgid "No Folder Selected"
 msgstr "Қапшық таңдалмаған"
 
-#: collectionpage/collectionexpirywidget.cpp:188
+#: collectionpage/collectionexpirywidget.cpp:187
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -96,30 +96,30 @@ msgstr ""
 "Ескі хаттарды сақтау үшін назардағыдан басқа қапшығын таңдаңыз.\n"
 "Оны істемесеңіз, ескіргендер мүлдем өшіріледі."
 
-#: collectionpage/collectionexpirywidget.cpp:190
+#: collectionpage/collectionexpirywidget.cpp:189
 #, kde-format
 msgid "Wrong Folder Selected"
 msgstr "Таңдағаныңыз дұрыс емес"
 
-#: collectionpage/collectiongeneralpage.cpp:45
+#: collectionpage/collectiongeneralpage.cpp:44
 #, kde-format
 msgctxt "@title:tab General settings for a folder."
 msgid "General"
 msgstr "Жалпы"
 
-#: collectionpage/collectiongeneralpage.cpp:66
+#: collectionpage/collectiongeneralpage.cpp:65
 #, fuzzy, kde-format
 #| msgid "Rename..."
 msgctxt "@label:textbox Name of the folder."
 msgid "Folder &Name:"
 msgstr "Атын өзгерту..."
 
-#: collectionpage/collectiongeneralpage.cpp:111
+#: collectionpage/collectiongeneralpage.cpp:110
 #, kde-format
 msgid "Share unread state with all users"
 msgstr "\"Оқылмаған\" күйі бүкіл пайдаланушыларға ортақ болсын"
 
-#: collectionpage/collectiongeneralpage.cpp:114
+#: collectionpage/collectiongeneralpage.cpp:113
 #, kde-format
 msgid ""
 "If enabled, the unread state of messages in this folder will be the same for "
@@ -130,7 +130,7 @@ msgstr ""
 "рұқсаты бар пайдаланушыл үшін ортақ болады. Әйтпесе (әдетттегідей), әрбірі "
 "жеке күйіне ие болады."
 
-#: collectionpage/collectiongeneralpage.cpp:214
+#: collectionpage/collectiongeneralpage.cpp:213
 #, kde-format
 msgid ""
 "You have configured this folder to contain groupware information. That means "
@@ -293,14 +293,14 @@ msgstr ""
 msgid "Use Global Settings"
 msgstr ""
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:27
+#: filter/dialog/filteractionmissingaccountdialog.cpp:31
 #, fuzzy, kde-format
 #| msgid "Select Account"
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "Тіркелгіні таңдау"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:33
+#: filter/dialog/filteractionmissingaccountdialog.cpp:37
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
@@ -308,7 +308,7 @@ msgstr ""
 "Сүзгілеу үшін тіркелгі келтірілмеген. \"%1\" деген сүзгіні пайдаланатын "
 "тіркелгіні таңдаңыз"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:34
+#: filter/dialog/filteractionmissingfolderdialog.cpp:36
 #: folder/folderrequester.cpp:73
 #, fuzzy, kde-format
 #| msgid "Select Folder"
@@ -316,23 +316,23 @@ msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Қапшықты таңдау"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:37
+#: filter/dialog/filteractionmissingfolderdialog.cpp:39
 #, kde-format
 msgid "Folder path was \"%1\"."
 msgstr "Болған қапшықтың жолы: \"%1\""
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:42
+#: filter/dialog/filteractionmissingfolderdialog.cpp:44
 #, kde-format
 msgid "The following folders can be used for this filter:"
 msgstr "Бұл сүзгіні қолдану үшін келесі қапшықтар болады:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:63
+#: filter/dialog/filteractionmissingfolderdialog.cpp:65
 #, fuzzy, kde-format
 #| msgid "Please select a folder"
 msgid "Please select a folder:"
 msgstr "Қапшықты таңдаңыз"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:66
+#: filter/dialog/filteractionmissingfolderdialog.cpp:68
 #, fuzzy, kde-format
 #| msgid ""
 #| "Filter folder is missing. Please select a folder to use with filter \"%1\""
@@ -342,14 +342,14 @@ msgstr ""
 "Сүзгілейтін қапшық келтірілмеген. \"%1\" дегенмен сүзгілейтін қапшықты "
 "таңдаңыз"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:27
+#: filter/dialog/filteractionmissingidentitydialog.cpp:30
 #, fuzzy, kde-format
 #| msgid "Select Identity"
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "Іс-әлпетін таңдау"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:33
+#: filter/dialog/filteractionmissingidentitydialog.cpp:36
 #, kde-format
 msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
@@ -358,55 +358,55 @@ msgstr ""
 "Сүзгілейтін іс-әлпеті келтірілмеген. \"%1\" дегенмен сүзгілейтін іс-әлпетін "
 "таңдаңыз"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:25
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:29
 #, fuzzy, kde-format
 #| msgid "Select sound"
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "Дыбысты таңдау"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:29
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:33
 #, kde-format
 msgid "Sound file was \"%1\"."
 msgstr "Болған дыбыс файлы: \"%1\"."
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:36
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:40
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr "Дыбыс файлы жоқ. \"%1\" сүзгімен қолданатын дыбысты таңдаңыз"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:31
+#: filter/dialog/filteractionmissingtagdialog.cpp:35
 #, fuzzy, kde-format
 #| msgid "Select Tag"
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Тег-белгіні таңдау"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:34
+#: filter/dialog/filteractionmissingtagdialog.cpp:38
 #, kde-format
 msgid "Tag was \"%1\"."
 msgstr "Болған тег-белгісі: \"%1\""
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:41
+#: filter/dialog/filteractionmissingtagdialog.cpp:45
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
 "Сүзгілейтін белгісі келтірілмеген. \"%1\" дегенмен сүзгілейтін белгіні "
 "таңдаңыз"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:65
+#: filter/dialog/filteractionmissingtagdialog.cpp:69
 #, kde-format
 msgid "Add Tag..."
 msgstr "Белгіні қосу..."
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:27
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:30
 #, fuzzy, kde-format
 #| msgid "Select Template"
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "Үлгісін таңдау"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:33
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:36
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
@@ -414,14 +414,14 @@ msgid ""
 msgstr ""
 "Сүзгілейтін үлгі келтірілмеген. \"%1\" дегенмен сүзгілейтін үлгісін таңдаңыз"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:26
+#: filter/dialog/filteractionmissingtransportdialog.cpp:29
 #, fuzzy, kde-format
 #| msgid "Select Transport"
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "Тасымалдау әдісін таңдау"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:32
+#: filter/dialog/filteractionmissingtransportdialog.cpp:35
 #, kde-format
 msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
@@ -431,7 +431,7 @@ msgstr ""
 "тасымалдау\n"
 "әдісін таңдаңыз"
 
-#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:23
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:26
 #, fuzzy, kde-format
 #| msgid "Select thunderbird filter files"
 msgctxt "@title:window"
@@ -626,49 +626,49 @@ msgstr "Команданы орындау"
 msgid "Missing command."
 msgstr ""
 
-#: filter/filteractions/filteractionforward.cpp:36
+#: filter/filteractions/filteractionforward.cpp:35
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
 msgstr "Қайда қайта жіберу:"
 
-#: filter/filteractions/filteractionforward.cpp:92
+#: filter/filteractions/filteractionforward.cpp:91
 #, kde-format
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Басқаға жіберілгенде қай адреске жіберіледі."
 
-#: filter/filteractions/filteractionforward.cpp:93
+#: filter/filteractions/filteractionforward.cpp:92
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
 msgstr "Сүзгі хатты осында көрсетілгенге қайта жібермек."
 
-#: filter/filteractions/filteractionforward.cpp:100
-#: filter/filteractions/filteractionforward.cpp:199
+#: filter/filteractions/filteractionforward.cpp:99
+#: filter/filteractions/filteractionforward.cpp:198
 #, kde-format
 msgid "Default Template"
 msgstr "Әдетті үлгі"
 
-#: filter/filteractions/filteractionforward.cpp:111
+#: filter/filteractions/filteractionforward.cpp:110
 #, kde-format
 msgid "The template used when forwarding"
 msgstr "Басқаға жібергенде қолданатын үлгісі"
 
-#: filter/filteractions/filteractionforward.cpp:112
+#: filter/filteractions/filteractionforward.cpp:111
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
 msgstr "Сүзгі басқаға жібергенде қолданатын үлгісін орнатыңыз."
 
-#: filter/filteractions/filteractionforward.cpp:227
+#: filter/filteractions/filteractionforward.cpp:226
 #, kde-format
 msgid "Forward to %1 with default template"
 msgstr "%1 дегенді әдетті үлгсімен басқаға жіберу"
 
-#: filter/filteractions/filteractionforward.cpp:229
+#: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
 msgid "Forward to %1 with template %2"
 msgstr "%1 дегенді %2 үлгісімен басқаға жіберу"
 
-#: filter/filteractions/filteractionforward.cpp:235
+#: filter/filteractions/filteractionforward.cpp:234
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."
@@ -928,25 +928,25 @@ msgstr ""
 msgid "You can get specific header when you use %{headername}."
 msgstr ""
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:30
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:33
 #, fuzzy, kde-format
 #| msgid "Convert to sieve script"
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Sieve скриптіне аудару"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:40
 #, kde-format
 msgid "Save..."
 msgstr "Сақтау..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:53
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:56
 #, fuzzy, kde-format
 #| msgid "Save..."
 msgid "Share..."
 msgstr "Сақтау..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:69
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:72
 #, fuzzy, kde-format
 #| msgid ""
 #| "*.siv|sieve files (*.siv)\n"
@@ -956,7 +956,7 @@ msgstr ""
 "*.siv|sieve файлдары (*.siv)\n"
 "*|бүкіл файлдар (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:70
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:73
 #, fuzzy, kde-format
 #| msgid "Convert to sieve script"
 msgctxt "@title:window"
@@ -969,13 +969,13 @@ msgstr "Sieve скриптіне аудару"
 msgid "Gmail filter %1"
 msgstr "KMail сүзгілері"
 
-#: filter/filterimporter/filterimporterprocmail.cpp:53
+#: filter/filterimporter/filterimporterprocmail.cpp:52
 #, fuzzy, kde-format
 #| msgid "Procmail filters"
 msgid "Procmail filter %1"
 msgstr "Procmail сүзгілері"
 
-#: filter/filterimporterexporter.cpp:114
+#: filter/filterimporterexporter.cpp:112
 #, kde-format
 msgid ""
 "The following filters have not been saved because they were invalid (e.g. "
@@ -984,74 +984,74 @@ msgstr ""
 "Келесі сүзгілер жарамсыз болғандықтан (мысалы, әрекеті немесе іздеу ережесі "
 "жоқтығынан) сақталмады."
 
-#: filter/filterimporterexporter.cpp:140
+#: filter/filterimporterexporter.cpp:138
 #, kde-format
 msgid "Import KMail Filters"
 msgstr "KMail сүзгілерін импорттау"
 
-#: filter/filterimporterexporter.cpp:148
+#: filter/filterimporterexporter.cpp:146
 #, kde-format
 msgid "Import Evolution Filters"
 msgstr "Evolution сүзгілерін импорттау"
 
-#: filter/filterimporterexporter.cpp:152
+#: filter/filterimporterexporter.cpp:150
 #, kde-format
 msgid "Import Sylpheed Filters"
 msgstr "Sylpheed сүзгілерін импорттау"
 
-#: filter/filterimporterexporter.cpp:156
+#: filter/filterimporterexporter.cpp:154
 #, kde-format
 msgid "Import Procmail Filters"
 msgstr "Procmail сүзгілерін импорттау"
 
-#: filter/filterimporterexporter.cpp:160
+#: filter/filterimporterexporter.cpp:158
 #, kde-format
 msgid "Import Balsa Filters"
 msgstr "Balsa сүзгілерін импорттау"
 
-#: filter/filterimporterexporter.cpp:164
+#: filter/filterimporterexporter.cpp:162
 #, kde-format
 msgid "Import Claws Mail Filters"
 msgstr "ClawsMail сүзгілерін импорттау"
 
-#: filter/filterimporterexporter.cpp:168
+#: filter/filterimporterexporter.cpp:166
 #, fuzzy, kde-format
 #| msgid "Import KMail Filters"
 msgid "Import Gmail Filters"
 msgstr "KMail сүзгілерін импорттау"
 
-#: filter/filterimporterexporter.cpp:182 filter/filterimporterexporter.cpp:218
-#: filter/filterimporterexporter.cpp:238
+#: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
+#: filter/filterimporterexporter.cpp:236
 #, kde-format
 msgid ""
 "The selected file is not readable. Your file access permissions might be "
 "insufficient."
 msgstr "Таңдалған деген файл оқылмады. Құқығыңыз жеткілікті емес болуы мүмкін."
 
-#: filter/filterimporterexporter.cpp:318
+#: filter/filterimporterexporter.cpp:316
 #, kde-format
 msgid "Export Filters"
 msgstr "Сүзгілерді экспорттау"
 
-#: filter/filterselectiondialog.cpp:24
+#: filter/filterselectiondialog.cpp:27
 #, kde-format
 msgid "Select All"
 msgstr "Бүкілін таңдау"
 
-#: filter/filterselectiondialog.cpp:25
+#: filter/filterselectiondialog.cpp:28
 #, kde-format
 msgid "Unselect All"
 msgstr "Барлығынан айну"
 
-#: filter/filterselectiondialog.cpp:29
+#: filter/filterselectiondialog.cpp:32
 #, fuzzy, kde-format
 #| msgid "Select Filters"
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Сүзгіні таңдау"
 
-#: filter/filterselectiondialog.cpp:40 filter/kmfilterlistbox.cpp:51
-#: folder/foldertreewidget.cpp:85
+#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:51
+#: folder/foldertreewidget.cpp:84
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "@info/plain Displayed grayed-out inside the textbox, verb to search"
@@ -1060,14 +1060,14 @@ msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "Іздеу"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:24
+#: filter/invalidfilters/invalidfilterdialog.cpp:27
 #, fuzzy, kde-format
 #| msgid "Available Filters"
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "Бар сүзгілер"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:35
+#: filter/invalidfilters/invalidfilterdialog.cpp:38
 #, kde-format
 msgid "Discard"
 msgstr "Лақтырып тасталды"
@@ -1091,132 +1091,132 @@ msgstr "Тіркелгінің атауы"
 msgid "Type"
 msgstr "Түрі"
 
-#: filter/kmfilterdialog.cpp:74
+#: filter/kmfilterdialog.cpp:72
 #, fuzzy, kde-format
 #| msgid "Filter Rules"
 msgctxt "@title:window"
 msgid "Filter Rules"
 msgstr "Сүзгі ережелері"
 
-#: filter/kmfilterdialog.cpp:92
+#: filter/kmfilterdialog.cpp:90
 #, kde-format
 msgid "Import..."
 msgstr "Импорт..."
 
-#: filter/kmfilterdialog.cpp:93
+#: filter/kmfilterdialog.cpp:91
 #, kde-format
 msgid "Export..."
 msgstr "Экспорт..."
 
-#: filter/kmfilterdialog.cpp:94
+#: filter/kmfilterdialog.cpp:92
 #, kde-format
 msgid "Convert to..."
 msgstr "Мынаған аудару..."
 
-#: filter/kmfilterdialog.cpp:97
+#: filter/kmfilterdialog.cpp:95
 #, kde-format
 msgid "KMail filters"
 msgstr "KMail сүзгілері"
 
-#: filter/kmfilterdialog.cpp:101
+#: filter/kmfilterdialog.cpp:99
 #, kde-format
 msgid "Thunderbird filters"
 msgstr "Thunderbird сүзгілері"
 
-#: filter/kmfilterdialog.cpp:105
+#: filter/kmfilterdialog.cpp:103
 #, kde-format
 msgid "Evolution filters"
 msgstr "Evolution сүзгілері"
 
-#: filter/kmfilterdialog.cpp:109
+#: filter/kmfilterdialog.cpp:107
 #, kde-format
 msgid "Sylpheed filters"
 msgstr "Sylpheed сүзгілері"
 
-#: filter/kmfilterdialog.cpp:113
+#: filter/kmfilterdialog.cpp:111
 #, kde-format
 msgid "Procmail filters"
 msgstr "Procmail сүзгілері"
 
-#: filter/kmfilterdialog.cpp:117
+#: filter/kmfilterdialog.cpp:115
 #, kde-format
 msgid "Balsa filters"
 msgstr "Balsa сүзгілері"
 
-#: filter/kmfilterdialog.cpp:121
+#: filter/kmfilterdialog.cpp:119
 #, kde-format
 msgid "Claws Mail filters"
 msgstr "ClawsMail сүзгілері"
 
-#: filter/kmfilterdialog.cpp:125
+#: filter/kmfilterdialog.cpp:123
 #, fuzzy, kde-format
 #| msgid "KMail filters"
 msgid "Icedove Mail filters"
 msgstr "KMail сүзгілері"
 
-#: filter/kmfilterdialog.cpp:131
+#: filter/kmfilterdialog.cpp:129
 #, fuzzy, kde-format
 #| msgid "KMail filters"
 msgid "Gmail filters"
 msgstr "KMail сүзгілері"
 
-#: filter/kmfilterdialog.cpp:139
+#: filter/kmfilterdialog.cpp:137
 #, kde-format
 msgid "Sieve script"
 msgstr "Sieve скрипті"
 
-#: filter/kmfilterdialog.cpp:161
+#: filter/kmfilterdialog.cpp:159
 #, kde-format
 msgid "Available Filters"
 msgstr "Бар сүзгілер"
 
-#: filter/kmfilterdialog.cpp:167
+#: filter/kmfilterdialog.cpp:165
 #, kde-format
 msgctxt "General mail filter settings."
 msgid "General"
 msgstr "Жалпы"
 
-#: filter/kmfilterdialog.cpp:171
+#: filter/kmfilterdialog.cpp:169
 #, kde-format
 msgctxt "Advanced mail filter settings."
 msgid "Advanced"
 msgstr "Жетелеу"
 
-#: filter/kmfilterdialog.cpp:181
+#: filter/kmfilterdialog.cpp:179
 #, fuzzy, kde-format
 #| msgid "Filter Actions"
 msgid "Filter actions:"
 msgstr "Сүзгі әрекеттері"
 
-#: filter/kmfilterdialog.cpp:192
+#: filter/kmfilterdialog.cpp:190
 #, kde-format
 msgid "Apply this filter to incoming messages:"
 msgstr "Келген хаттарға осы сүзгі қолданылсын:"
 
-#: filter/kmfilterdialog.cpp:202
+#: filter/kmfilterdialog.cpp:200
 #, fuzzy, kde-format
 #| msgid "from all accounts"
 msgid "From all accounts"
 msgstr "барлық тіркелгілерден"
 
-#: filter/kmfilterdialog.cpp:206
+#: filter/kmfilterdialog.cpp:204
 #, fuzzy, kde-format
 #| msgid "from all but online IMAP accounts"
 msgid "From all but online IMAP accounts"
 msgstr "IMAP-тан басқа барлық тіркелгілерден"
 
-#: filter/kmfilterdialog.cpp:210
+#: filter/kmfilterdialog.cpp:208
 #, fuzzy, kde-format
 #| msgid "from checked accounts only"
 msgid "From selected accounts only"
 msgstr "тек белгіленген тіркелгілерден"
 
-#: filter/kmfilterdialog.cpp:218
+#: filter/kmfilterdialog.cpp:216
 #, kde-format
 msgid "Apply this filter to &sent messages"
 msgstr "Осы сүзгі &жіберілген хаттарға қолданылсын"
 
-#: filter/kmfilterdialog.cpp:220
+#: filter/kmfilterdialog.cpp:218
 #, kde-format
 msgid ""
 "<p>The filter will be triggered <b>after</b> the message is sent and it will "
@@ -1228,12 +1228,12 @@ msgstr ""
 "ғана тиеді.</p><p>Егер қабылдаушының данасын да өзгерту қажет болса, онда "
 "\"Осы сүзгі жіберу алдында қолданылсын\" дегенді таңдаңыз.</p>"
 
-#: filter/kmfilterdialog.cpp:226
+#: filter/kmfilterdialog.cpp:224
 #, kde-format
 msgid "Apply this filter &before sending messages"
 msgstr "Осы сүзгі жіберу &алдында қолданылсын"
 
-#: filter/kmfilterdialog.cpp:228
+#: filter/kmfilterdialog.cpp:226
 #, kde-format
 msgid ""
 "<p>The filter will be triggered <b>before</b> the message is sent and it "
@@ -1244,18 +1244,18 @@ msgstr ""
 "жіберілгеннің көшірмесіне тиеді.</p><p>Бұл қабылдаушының данасын да өзгерту "
 "қажет болғанда керек амал.</p>"
 
-#: filter/kmfilterdialog.cpp:233
+#: filter/kmfilterdialog.cpp:231
 #, kde-format
 msgid "Apply this filter on manual &filtering"
 msgstr "Қолмен &сүзгілегенде қолданылсын"
 
-#: filter/kmfilterdialog.cpp:236
+#: filter/kmfilterdialog.cpp:234
 #, fuzzy, kde-format
 #| msgid "Apply this filter on manual &filtering"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "Қолмен &сүзгілегенде қолданылсын"
 
-#: filter/kmfilterdialog.cpp:238
+#: filter/kmfilterdialog.cpp:236
 #, kde-format
 msgid ""
 "<p>The filter will be applied on inbound emails from all folders belonging "
@@ -1264,53 +1264,53 @@ msgid ""
 "folders by server-side filters.</p>"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:244
+#: filter/kmfilterdialog.cpp:242
 #, kde-format
 msgid "If this filter &matches, stop processing here"
 msgstr "Сүзгі &сәйкес келгенде өңдеу тоқталсын"
 
-#: filter/kmfilterdialog.cpp:247
+#: filter/kmfilterdialog.cpp:245
 #, kde-format
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Бұл сүзгі 'Сүзгіні қолдану' мәзіріне қосылсын"
 
-#: filter/kmfilterdialog.cpp:265
+#: filter/kmfilterdialog.cpp:263
 #, kde-format
 msgid "Additionally add this filter to the toolbar"
 msgstr "Бұл сүзгі құралдар панеліне қосылсын"
 
-#: filter/kmfilterdialog.cpp:272
+#: filter/kmfilterdialog.cpp:270
 #, kde-format
 msgid "Shortcut:"
 msgstr "Тіркесімі:"
 
-#: filter/kmfilterdialog.cpp:278
+#: filter/kmfilterdialog.cpp:276
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Сүзгінің таңбашасы:"
 
-#: filter/kmfilterdialog.cpp:286
+#: filter/kmfilterdialog.cpp:284
 #, kde-format
 msgid "Run selected filter(s) on: "
 msgstr "Таңдалған сүзгілерді мынаған қолдану:"
 
-#: filter/kmfilterdialog.cpp:292
+#: filter/kmfilterdialog.cpp:290
 #, kde-format
 msgid "Run Now"
 msgstr "Қазір жегу"
 
-#: filter/kmfilterdialog.cpp:418
+#: filter/kmfilterdialog.cpp:416
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Қаптық таңдалмағаннан сүзгі іске аспады."
 
-#: filter/kmfilterdialog.cpp:418
+#: filter/kmfilterdialog.cpp:416
 #, kde-format
 msgid "No folder selected."
 msgstr "Қапшық таңдалмаған."
 
-#: filter/kmfilterdialog.cpp:425
+#: filter/kmfilterdialog.cpp:423
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1319,38 +1319,38 @@ msgid ""
 msgstr ""
 "Кейбір сүзгілер өзгертіліп әлі сақталмаған. Қолдану алдында сақтау керек."
 
-#: filter/kmfilterdialog.cpp:427 filter/kmfilterdialog.cpp:707
+#: filter/kmfilterdialog.cpp:425 filter/kmfilterdialog.cpp:705
 #, kde-format
 msgid "Filters changed."
 msgstr "Сүзгілер өзгертілген."
 
-#: filter/kmfilterdialog.cpp:433
+#: filter/kmfilterdialog.cpp:431
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Сүзгі таңдалмағаннан ешбір сүзгі іске аспады."
 
-#: filter/kmfilterdialog.cpp:433 filter/kmfilterdialog.cpp:728
+#: filter/kmfilterdialog.cpp:431 filter/kmfilterdialog.cpp:726
 #, kde-format
 msgid "No filters selected."
 msgstr "Сүзгі таңдалмаған."
 
-#: filter/kmfilterdialog.cpp:657
+#: filter/kmfilterdialog.cpp:655
 #, kde-format
 msgid "No filter was imported."
 msgstr "Ешбір сүзгі импортталмады"
 
-#: filter/kmfilterdialog.cpp:668
+#: filter/kmfilterdialog.cpp:666
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Импортталған сүзгілер:"
 
-#: filter/kmfilterdialog.cpp:676
+#: filter/kmfilterdialog.cpp:674
 #, kde-format
 msgid "Any filter found."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:705
+#: filter/kmfilterdialog.cpp:703
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1363,14 +1363,14 @@ msgid ""
 msgstr ""
 "Кейбір сүзгілер өзгертіліп әлі сақталмаған. Экспорттау алдында сақтау керек."
 
-#: filter/kmfilterdialog.cpp:711
+#: filter/kmfilterdialog.cpp:709
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "KMail сүзгілері түгелдей sieve скрипттеріне аударылмайды, бірақ талпынып "
 "көріңіз :)"
 
-#: filter/kmfilterdialog.cpp:712 filter/kmfilterdialog.cpp:728
+#: filter/kmfilterdialog.cpp:710 filter/kmfilterdialog.cpp:726
 #, kde-format
 msgid "Convert KMail filters to sieve scripts"
 msgstr "KMail сүзгілерін sieve скрипттеріне аудару"
@@ -1697,18 +1697,18 @@ msgstr "Файлды таңдау"
 msgid "Select file from config:"
 msgstr "Баптау файлынан таңдау:"
 
-#: folder/accountconfigorderdialog.cpp:52
+#: folder/accountconfigorderdialog.cpp:55
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr ""
 
-#: folder/accountconfigorderdialog.cpp:69
+#: folder/accountconfigorderdialog.cpp:72
 #, kde-format
 msgid "Use custom order"
 msgstr ""
 
-#: folder/accountconfigorderdialog.cpp:86
+#: folder/accountconfigorderdialog.cpp:89
 #, fuzzy, kde-format
 #| msgctxt "Move selected filter up."
 #| msgid "Up"
@@ -1716,7 +1716,7 @@ msgctxt "Move selected account up."
 msgid "Up"
 msgstr "Жоғары"
 
-#: folder/accountconfigorderdialog.cpp:94
+#: folder/accountconfigorderdialog.cpp:97
 #, fuzzy, kde-format
 #| msgctxt "Move selected filter down."
 #| msgid "Down"
@@ -1836,12 +1836,12 @@ msgstr "Өту"
 msgid "Do Not Go To"
 msgstr "Керегі жоқ"
 
-#: folder/foldertreewidget.cpp:79 folder/foldertreewidget.cpp:316
+#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:315
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "Алғашқы әріптері бойынша қапшықтар тізімін қысқарту."
 
-#: folder/foldertreewidget.cpp:316
+#: folder/foldertreewidget.cpp:315
 #, kde-format
 msgid "Path: (%1)"
 msgstr "Жолы: (%1)"
@@ -1939,52 +1939,52 @@ msgstr "Архив жазуға ашылмады."
 msgid "Archiving"
 msgstr "Архивтеу"
 
-#: job/expirejob.cpp:155
+#: job/expirejob.cpp:154
 #, kde-format
 msgid "Removing 1 old message from folder %2..."
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "%1 ескі хатты %2 қапшығынан өшіру..."
 
-#: job/expirejob.cpp:161
+#: job/expirejob.cpp:160
 #, kde-format
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr ""
 "%1 қапшығынан ескі хаттар алынбады: оларға арналған %2 қапшығы табылмады"
 
-#: job/expirejob.cpp:172
+#: job/expirejob.cpp:171
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
 msgstr[0] "%2 қапшығынан %3 қапшығына %1 ескі хатты жылжыту..."
 
-#: job/expirejob.cpp:233
+#: job/expirejob.cpp:232
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "%1 ескі хат %2 қапшығынан өшірілді."
 
-#: job/expirejob.cpp:235
+#: job/expirejob.cpp:234
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "%1 ескі хат %2 қапшығынан %3 қапшығына жылжытылды."
 
-#: job/expirejob.cpp:245
+#: job/expirejob.cpp:244
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
 msgstr "%1 қапшығынан ескі хаттарды өшіру доғарылды."
 
-#: job/expirejob.cpp:248
+#: job/expirejob.cpp:247
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Ескі хаттарды %1 қапшығынан %2 қапшығына жылжыту доғарылды."
 
-#: job/expirejob.cpp:257
+#: job/expirejob.cpp:256
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
 msgstr "%1 қапшығынан ескі хаттар өшірілмеді."
 
-#: job/expirejob.cpp:259
+#: job/expirejob.cpp:258
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "%1 қапшығынан %2 қапшығына ескірген хаттарды жылжыту жаңылсы."
@@ -2010,23 +2010,23 @@ msgstr ""
 "Қатесі:\n"
 "%1"
 
-#: search/searchpattern.cpp:239
+#: search/searchpattern.cpp:235
 #, kde-format
 msgctxt "name used for a virgin filter"
 msgid "unknown"
 msgstr "беймәлім"
 
-#: search/searchpattern.cpp:247
+#: search/searchpattern.cpp:243
 #, kde-format
 msgid "(match any of the following)"
 msgstr "(кез келген шартпен сәйкес келеді)"
 
-#: search/searchpattern.cpp:250
+#: search/searchpattern.cpp:246
 #, kde-format
 msgid "(match all of the following)"
 msgstr "(барлық шартпен сәйкес келеді) "
 
-#: search/searchpattern.cpp:253
+#: search/searchpattern.cpp:249
 #, kde-format
 msgid "(match all messages)"
 msgstr "(бүкіл хаттар сәйкесті)"
@@ -2208,8 +2208,8 @@ msgstr "жоқ"
 #: search/searchrule/searchrule.cpp:228
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
-#: search/widgethandler/tagrulewidgethandler.cpp:94
-#: search/widgethandler/textrulerwidgethandler.cpp:25
+#: search/widgethandler/tagrulewidgethandler.cpp:93
+#: search/widgethandler/textrulerwidgethandler.cpp:24
 #, kde-format
 msgid "contains"
 msgstr "мазмұнында бары:"
@@ -2300,41 +2300,41 @@ msgstr ""
 msgid "String is empty."
 msgstr ""
 
-#: search/widgethandler/daterulewidgethandler.cpp:23
+#: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
 #: search/widgethandler/numericrulewidgethandler.cpp:21
 msgid "is equal to"
 msgstr "мынаған тең:"
 
-#: search/widgethandler/daterulewidgethandler.cpp:24
+#: search/widgethandler/daterulewidgethandler.cpp:23
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:22
 #: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is not equal to"
 msgstr "мынаған тең емес:"
 
-#: search/widgethandler/daterulewidgethandler.cpp:25
+#: search/widgethandler/daterulewidgethandler.cpp:24
 msgid "is after"
 msgstr "мынадан кейін:"
 
-#: search/widgethandler/daterulewidgethandler.cpp:26
+#: search/widgethandler/daterulewidgethandler.cpp:25
 msgid "is before or equal to"
 msgstr "мынаның алдында не бірдей:"
 
-#: search/widgethandler/daterulewidgethandler.cpp:27
+#: search/widgethandler/daterulewidgethandler.cpp:26
 msgid "is before"
 msgstr "мынаның алдында:"
 
-#: search/widgethandler/daterulewidgethandler.cpp:28
+#: search/widgethandler/daterulewidgethandler.cpp:27
 msgid "is after or equal to"
 msgstr "мынадан кейін не бірдей:"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:17
-#: search/widgethandler/statusrulewidgethandler.cpp:19
+#: search/widgethandler/statusrulewidgethandler.cpp:18
 msgid "is"
 msgstr "мынау:"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:17
-#: search/widgethandler/statusrulewidgethandler.cpp:19
+#: search/widgethandler/statusrulewidgethandler.cpp:18
 msgid "is not"
 msgstr "мынау емес:"
 
@@ -2350,54 +2350,54 @@ msgstr ""
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:26
 #: search/widgethandler/messagerulewidgethandler.cpp:25
-#: search/widgethandler/tagrulewidgethandler.cpp:95
-#: search/widgethandler/textrulerwidgethandler.cpp:26
+#: search/widgethandler/tagrulewidgethandler.cpp:94
+#: search/widgethandler/textrulerwidgethandler.cpp:25
 msgid "does not contain"
 msgstr "мазмұнында жоғы:"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:27
-#: search/widgethandler/tagrulewidgethandler.cpp:96
-#: search/widgethandler/textrulerwidgethandler.cpp:27
+#: search/widgethandler/tagrulewidgethandler.cpp:95
+#: search/widgethandler/textrulerwidgethandler.cpp:26
 msgid "equals"
 msgstr "дәл келесі:"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:28
-#: search/widgethandler/tagrulewidgethandler.cpp:97
-#: search/widgethandler/textrulerwidgethandler.cpp:28
+#: search/widgethandler/tagrulewidgethandler.cpp:96
+#: search/widgethandler/textrulerwidgethandler.cpp:27
 msgid "does not equal"
 msgstr "дәл келесі емес:"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:29
-#: search/widgethandler/textrulerwidgethandler.cpp:29
+#: search/widgethandler/textrulerwidgethandler.cpp:28
 msgid "starts with"
 msgstr "мынамен басталатын:"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:30
-#: search/widgethandler/textrulerwidgethandler.cpp:30
+#: search/widgethandler/textrulerwidgethandler.cpp:29
 msgid "does not start with"
 msgstr "мынамен басталмайтын:"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:31
-#: search/widgethandler/textrulerwidgethandler.cpp:31
+#: search/widgethandler/textrulerwidgethandler.cpp:30
 msgid "ends with"
 msgstr "мынамен аяқталатын:"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:32
-#: search/widgethandler/textrulerwidgethandler.cpp:32
+#: search/widgethandler/textrulerwidgethandler.cpp:31
 msgid "does not end with"
 msgstr "мынамен аяқталмайтын:"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:34
 #: search/widgethandler/messagerulewidgethandler.cpp:26
-#: search/widgethandler/tagrulewidgethandler.cpp:98
-#: search/widgethandler/textrulerwidgethandler.cpp:34
+#: search/widgethandler/tagrulewidgethandler.cpp:97
+#: search/widgethandler/textrulerwidgethandler.cpp:33
 msgid "matches regular expr."
 msgstr "сәйкесті үлгі өрнегі"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:35
 #: search/widgethandler/messagerulewidgethandler.cpp:27
-#: search/widgethandler/tagrulewidgethandler.cpp:99
-#: search/widgethandler/textrulerwidgethandler.cpp:35
+#: search/widgethandler/tagrulewidgethandler.cpp:98
+#: search/widgethandler/textrulerwidgethandler.cpp:34
 msgid "does not match reg. expr."
 msgstr "сәйкес келмейтін үлгі өрнегі"
 
@@ -2455,72 +2455,72 @@ msgid " day"
 msgid_plural " days"
 msgstr[0] " күн"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:29
+#: search/widgethandler/statusrulewidgethandler.cpp:28
 msgctxt "message status"
 msgid "Important"
 msgstr "Маңызды"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:30
+#: search/widgethandler/statusrulewidgethandler.cpp:29
 msgctxt "message status"
 msgid "Action Item"
 msgstr "Амал күтетін"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:31
+#: search/widgethandler/statusrulewidgethandler.cpp:30
 msgctxt "message status"
 msgid "Unread"
 msgstr "Оқылмаған"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:32
+#: search/widgethandler/statusrulewidgethandler.cpp:31
 msgctxt "message status"
 msgid "Read"
 msgstr "Оқылған"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:33
+#: search/widgethandler/statusrulewidgethandler.cpp:32
 msgctxt "message status"
 msgid "Deleted"
 msgstr "Өшірілген"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:34
+#: search/widgethandler/statusrulewidgethandler.cpp:33
 msgctxt "message status"
 msgid "Replied"
 msgstr "Жауап берілген"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:35
+#: search/widgethandler/statusrulewidgethandler.cpp:34
 msgctxt "message status"
 msgid "Forwarded"
 msgstr "Басқаға жіберілген"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:36
+#: search/widgethandler/statusrulewidgethandler.cpp:35
 msgctxt "message status"
 msgid "Queued"
 msgstr "Кезекке қойылған"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:37
+#: search/widgethandler/statusrulewidgethandler.cpp:36
 msgctxt "message status"
 msgid "Sent"
 msgstr "Жіберілген"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:38
+#: search/widgethandler/statusrulewidgethandler.cpp:37
 msgctxt "message status"
 msgid "Watched"
 msgstr "Каралған"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:39
+#: search/widgethandler/statusrulewidgethandler.cpp:38
 msgctxt "message status"
 msgid "Ignored"
 msgstr "Елемеген"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:40
+#: search/widgethandler/statusrulewidgethandler.cpp:39
 msgctxt "message status"
 msgid "Spam"
 msgstr "Спам"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:41
+#: search/widgethandler/statusrulewidgethandler.cpp:40
 msgctxt "message status"
 msgid "Ham"
 msgstr "Құнды"
 
-#: search/widgethandler/statusrulewidgethandler.cpp:42
+#: search/widgethandler/statusrulewidgethandler.cpp:41
 msgctxt "message status"
 msgid "Has Attachment"
 msgstr "Тіркемесі бар"
