@@ -6,8 +6,8 @@
 */
 
 #include "expirecollectionattribute.h"
-
 #include <QDataStream>
+#include <QIODevice>
 
 using namespace MailCommon;
 
