@@ -9,7 +9,7 @@
 
 #include "mailcommon_export.h"
 #include <Akonadi/Collection>
-
+#include <QObject>
 namespace MailCommon
 {
 /**
