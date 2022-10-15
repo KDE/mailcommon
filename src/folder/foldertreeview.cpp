@@ -22,6 +22,7 @@
 #include <QActionGroup>
 #include <QHeaderView>
 #include <QMouseEvent>
+#include <kwidgetsaddons_version.h>
 
 using namespace MailCommon;
 
@@ -469,15 +470,23 @@ bool FolderTreeView::allowedToEnterFolder(const Akonadi::Collection &collection,
     // warn user that going to next folder - but keep track of
     // whether he wishes to be notified again in "AskNextFolder"
     // parameter (kept in the config file for kmail)
+#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
+    const int result = KMessageBox::questionTwoActions(const_cast<FolderTreeView *>(this),
+#else
     const int result = KMessageBox::questionYesNo(const_cast<FolderTreeView *>(this),
-                                                  i18n("<qt>Go to the next unread message in folder <b>%1</b>?</qt>", collection.name()),
-                                                  i18n("Go to Next Unread Message"),
-                                                  KGuiItem(i18n("Go To")),
-                                                  KGuiItem(i18n("Do Not Go To")), // defaults
-                                                  QStringLiteral(":kmail_AskNextFolder"),
-                                                  KMessageBox::Option());
+#endif
+                                                       i18n("<qt>Go to the next unread message in folder <b>%1</b>?</qt>", collection.name()),
+                                                       i18n("Go to Next Unread Message"),
+                                                       KGuiItem(i18n("Go To")),
+                                                       KGuiItem(i18n("Do Not Go To")), // defaults
+                                                       QStringLiteral(":kmail_AskNextFolder"),
+                                                       KMessageBox::Option());
 
+#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
+    return result == KMessageBox::ButtonCode::PrimaryAction;
+#else
     return result == KMessageBox::Yes;
+#endif
 }
 
 bool FolderTreeView::isUnreadFolder(const QModelIndex &current, QModelIndex &index, FolderTreeView::Move move, bool confirm)
@@ -511,14 +520,23 @@ bool FolderTreeView::isUnreadFolder(const QModelIndex &current, QModelIndex &ind
                         // warn user that going to next folder - but keep track of
                         // whether he wishes to be notified again in "AskNextFolder"
                         // parameter (kept in the config file for kmail)
+#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
+                        if (KMessageBox::questionTwoActions(this,
+#else
                         if (KMessageBox::questionYesNo(this,
-                                                       i18n("<qt>Go to the next unread message in folder <b>%1</b>?</qt>", collection.name()),
-                                                       i18n("Go to Next Unread Message"),
-                                                       KGuiItem(i18n("Go To")),
-                                                       KGuiItem(i18n("Do Not Go To")), // defaults
-                                                       QStringLiteral(":kmail_AskNextFolder"),
-                                                       KMessageBox::Option())
+
+#endif
+                                                            i18n("<qt>Go to the next unread message in folder <b>%1</b>?</qt>", collection.name()),
+                                                            i18n("Go to Next Unread Message"),
+                                                            KGuiItem(i18n("Go To")),
+                                                            KGuiItem(i18n("Do Not Go To")), // defaults
+                                                            QStringLiteral(":kmail_AskNextFolder"),
+                                                            KMessageBox::Option())
+#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
+                            == KMessageBox::ButtonCode::SecondaryAction) {
+#else
                             == KMessageBox::No) {
+#endif
                             return true; // assume selected (do not continue looping)
                         }
 

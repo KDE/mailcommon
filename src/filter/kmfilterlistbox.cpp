@@ -22,6 +22,7 @@
 #include <QPushButton>
 #include <QShortcut>
 #include <QVBoxLayout>
+#include <kwidgetsaddons_version.h>
 
 //=============================================================================
 //
@@ -443,8 +444,16 @@ void KMFilterListBox::slotDelete()
     const QString question =
         uniqFilterSelected ? i18n("Do you want to remove the filter \"%1\"?", filter->pattern()->name()) : i18n("Do you want to remove selected filters?");
     const QString dialogTitle = uniqFilterSelected ? i18n("Remove Filter") : i18n("Remove Filters");
+#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
+    const int answer = KMessageBox::questionTwoActions(this, question, dialogTitle, KStandardGuiItem::remove(), KStandardGuiItem::cancel());
+#else
     const int answer = KMessageBox::questionYesNo(this, question, dialogTitle, KStandardGuiItem::remove(), KStandardGuiItem::cancel());
+#endif
+#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
+    if (answer == KMessageBox::ButtonCode::SecondaryAction) {
+#else
     if (answer == KMessageBox::No) {
+#endif
         return;
     }
 
