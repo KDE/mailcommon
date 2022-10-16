@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-04 00:45+0000\n"
+"POT-Creation-Date: 2022-10-16 00:47+0000\n"
 "PO-Revision-Date: 2014-04-11 22:49+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -1064,7 +1064,7 @@ msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Επιλογή φίλτρων"
 
-#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:51
+#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:52
 #: folder/foldertreewidget.cpp:84
 #, fuzzy, kde-format
 #| msgctxt ""
@@ -1392,7 +1392,7 @@ msgstr ""
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Μετατροπή των φίλτρων KMail σε σενάρια sieve"
 
-#: filter/kmfilterlistbox.cpp:41
+#: filter/kmfilterlistbox.cpp:42
 #, kde-format
 msgid ""
 "<qt><p>This is the list of defined filters. They are processed top-to-bottom."
@@ -1404,31 +1404,31 @@ msgstr ""
 "επεξεργαστείτε χρησιμοποιώντας τα χειριστήρια στο δεξί μισό του διαλόγου.</"
 "p></qt>"
 
-#: filter/kmfilterlistbox.cpp:83
+#: filter/kmfilterlistbox.cpp:84
 #, kde-format
 msgctxt "Move selected filter up."
 msgid "Up"
 msgstr "Πάνω"
 
-#: filter/kmfilterlistbox.cpp:84
+#: filter/kmfilterlistbox.cpp:85
 #, kde-format
 msgctxt "Move selected filter down."
 msgid "Down"
 msgstr "Κάτω"
 
-#: filter/kmfilterlistbox.cpp:85
+#: filter/kmfilterlistbox.cpp:86
 #, kde-format
 msgctxt "Move selected filter to the top."
 msgid "Top"
 msgstr "Πάνω"
 
-#: filter/kmfilterlistbox.cpp:86
+#: filter/kmfilterlistbox.cpp:87
 #, kde-format
 msgctxt "Move selected filter to the bottom."
 msgid "Bottom"
 msgstr "Κάτω"
 
-#: filter/kmfilterlistbox.cpp:88
+#: filter/kmfilterlistbox.cpp:89
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>up</em> "
@@ -1445,7 +1445,7 @@ msgstr ""
 "αυτό το κουμπί κατά λάθος, μπορείτε να ακυρώσετε την ενέργεια κάνοντας κλικ "
 "στο κουμπί <em>Κάτω</em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:96
+#: filter/kmfilterlistbox.cpp:97
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>down</em> "
@@ -1462,7 +1462,7 @@ msgstr ""
 "αυτό το κουμπί κατά λάθος, μπορείτε να ακυρώσετε την ενέργεια κάνοντας κλικ "
 "στο κουμπί <em>Πάνω</em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:104
+#: filter/kmfilterlistbox.cpp:105
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to bottom of "
@@ -1475,7 +1475,7 @@ msgstr ""
 "λίστα είναι και η σειρά με την οποία εφαρμόζονται στα μηνύματα: Τα πιο πάνω "
 "μηνύματα εφαρμόζονται πρώτα.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:110
+#: filter/kmfilterlistbox.cpp:111
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to top of "
@@ -1488,29 +1488,29 @@ msgstr ""
 "στη λίστα είναι και η σειρά με την οποία εφαρμόζονται στα μηνύματα: Τα πιο "
 "πάνω μηνύματα εφαρμόζονται πρώτα.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:140
+#: filter/kmfilterlistbox.cpp:141
 #, kde-format
 msgctxt "@action:button in filter list manipulator"
 msgid "New"
 msgstr "Νέο"
 
-#: filter/kmfilterlistbox.cpp:141
+#: filter/kmfilterlistbox.cpp:142
 #, kde-format
 msgid "Copy"
 msgstr "Αντιγραφή"
 
-#: filter/kmfilterlistbox.cpp:142
+#: filter/kmfilterlistbox.cpp:143
 #, kde-format
 msgid "Delete"
 msgstr "Διαγραφή"
 
-#: filter/kmfilterlistbox.cpp:143
+#: filter/kmfilterlistbox.cpp:144
 #, fuzzy, kde-format
 #| msgid "Rename..."
 msgid "Rename"
 msgstr "Μετονομασία..."
 
-#: filter/kmfilterlistbox.cpp:145
+#: filter/kmfilterlistbox.cpp:146
 #, kde-format
 msgid ""
 "<qt><p>Click this button to create a new filter.</p><p>The filter will be "
@@ -1524,7 +1524,7 @@ msgstr ""
 "μπορείτε να ακυρώσετε την ενέργεια κάνοντας κλικ στο κουμπί <em>Διαγραφή</"
 "em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:152
+#: filter/kmfilterlistbox.cpp:153
 #, kde-format
 msgid ""
 "<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
@@ -1535,7 +1535,7 @@ msgstr ""
 "πατήσατε κατά λάθος αυτό το κουμπί, μπορείτε να ακυρώσετε την ενέργεια "
 "κάνοντας κλικ στο κουμπί <em>Διαγραφή</em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:156
+#: filter/kmfilterlistbox.cpp:157
 #, kde-format
 msgid ""
 "<qt><p>Click this button to <em>delete</em> the currently-selected filter "
@@ -1549,7 +1549,7 @@ msgstr ""
 "κάνοντας κλικ στο <em>Ακύρωση</em> για να απορρίψετε τις αλλαγές που έχουν "
 "γίνει.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:163
+#: filter/kmfilterlistbox.cpp:164
 #, kde-format
 msgid ""
 "<qt><p>Click this button to rename the currently-selected filter.</"
@@ -1564,37 +1564,37 @@ msgstr ""
 "ονομασία, κάντε κλικ σε αυτό το κουμπί και επιλέξτε <em>Καθαρισμός</em> και "
 "<em>Εντάξει</em> στο διάλογο που θα εμφανιστεί.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:290
+#: filter/kmfilterlistbox.cpp:291
 #, kde-format
 msgid "unnamed"
 msgstr "ανώνυμο"
 
-#: filter/kmfilterlistbox.cpp:444
+#: filter/kmfilterlistbox.cpp:445
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "Επιθυμείτε την αφαίρεση του φίλτρου «%1»;"
 
-#: filter/kmfilterlistbox.cpp:444
+#: filter/kmfilterlistbox.cpp:445
 #, kde-format
 msgid "Do you want to remove selected filters?"
 msgstr "Επιθυμείτε την αφαίρεση των επιλεγμένων φίλτρων;"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Remove Filter"
 msgstr "Αφαίρεση φίλτρου"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Remove Filters"
 msgstr "Αφαίρεση των φίλτρων"
 
-#: filter/kmfilterlistbox.cpp:661
+#: filter/kmfilterlistbox.cpp:670
 #, kde-format
 msgid "Rename Filter"
 msgstr "Μετονομασία του φίλτρου"
 
-#: filter/kmfilterlistbox.cpp:662
+#: filter/kmfilterlistbox.cpp:671
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
@@ -1795,68 +1795,68 @@ msgstr "Αδύνατη η δημιουργία του φακέλου: %1"
 msgid "Folder creation failed"
 msgstr "Η δημιουργία του φακέλου απέτυχε"
 
-#: folder/foldertreeview.cpp:128
+#: folder/foldertreeview.cpp:129
 #, kde-format
 msgid "View Columns"
 msgstr "Προβολή στηλών"
 
-#: folder/foldertreeview.cpp:138
+#: folder/foldertreeview.cpp:139
 #, kde-format
 msgid "Icon Size"
 msgstr "Μέγεθος εικονιδίων"
 
-#: folder/foldertreeview.cpp:154
+#: folder/foldertreeview.cpp:155
 #, kde-format
 msgid "Display Tooltips"
 msgstr "Εμφάνιση υποδείξεων"
 
-#: folder/foldertreeview.cpp:158
+#: folder/foldertreeview.cpp:159
 #, kde-format
 msgctxt "@action:inmenu Always display tooltips"
 msgid "Always"
 msgstr "Πάντα"
 
-#: folder/foldertreeview.cpp:165
+#: folder/foldertreeview.cpp:166
 #, kde-format
 msgctxt "@action:inmenu Never display tooltips."
 msgid "Never"
 msgstr "Ποτέ"
 
-#: folder/foldertreeview.cpp:172
+#: folder/foldertreeview.cpp:173
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Sort Items"
 msgstr "Ταξινόμηση αντικειμένων"
 
-#: folder/foldertreeview.cpp:176
+#: folder/foldertreeview.cpp:177
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
 msgstr "Αυτόματα, κατά τρέχουσα στήλη"
 
-#: folder/foldertreeview.cpp:183
+#: folder/foldertreeview.cpp:184
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
 msgstr "Χειροκίνητα, με σύρσιμο και απόθεση"
 
-#: folder/foldertreeview.cpp:473 folder/foldertreeview.cpp:515
+#: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:529
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr ""
 "<qt>Μετάβαση στο επόμενο μη αναγνωσμένο μήνυμα στο φάκελο <b>%1</b>;</qt>"
 
-#: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
+#: folder/foldertreeview.cpp:479 folder/foldertreeview.cpp:530
 #, kde-format
 msgid "Go to Next Unread Message"
 msgstr "Μετάβαση στο επόμενο μη αναγνωσμένο μήνυμα"
 
-#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
+#: folder/foldertreeview.cpp:480 folder/foldertreeview.cpp:531
 #, kde-format
 msgid "Go To"
 msgstr "Μετάβαση στο"
 
-#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
+#: folder/foldertreeview.cpp:481 folder/foldertreeview.cpp:532
 #, kde-format
 msgid "Do Not Go To"
 msgstr "Να μη γίνει μετάβαση στο"
@@ -2710,19 +2710,22 @@ msgstr "Αφαίρεση ομάδας"
 msgid "Insert Snippet"
 msgstr "Εισαγωγή αποσπάσματος"
 
-#: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:549
+#: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:534
+#: snippets/snippetsmodel.cpp:562 snippets/snippetsmodel.cpp:567
 #, fuzzy, kde-format
 #| msgid "Do you want to remove the filter \"%1\"?"
 msgid "Do you want to update snippet?"
 msgstr "Επιθυμείτε την αφαίρεση του φίλτρου «%1»;"
 
-#: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:549
+#: snippets/snippetsmodel.cpp:529 snippets/snippetsmodel.cpp:534
+#: snippets/snippetsmodel.cpp:563 snippets/snippetsmodel.cpp:567
 #, fuzzy, kde-format
 #| msgid "Remove Snippet"
 msgid "Update snippet"
 msgstr "Αφαίρεση αποσπάσματος"
 
-#: snippets/snippetsmodel.cpp:525
+#: snippets/snippetsmodel.cpp:530 snippets/snippetsmodel.cpp:534
+#: snippets/snippetsmodel.cpp:564
 #, fuzzy, kde-format
 #| msgid "Remove Snippet"
 msgid "Update"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-04 00:45+0000\n"
+"POT-Creation-Date: 2022-10-16 00:47+0000\n"
 "PO-Revision-Date: 2014-01-31 19:29+0100\n"
 "Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
 "Language-Team: bs <bs@kde.org>\n"
@@ -1059,7 +1059,7 @@ msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Izaberite filtere"
 
-#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:51
+#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:52
 #: folder/foldertreewidget.cpp:84
 #, fuzzy, kde-format
 #| msgctxt ""
@@ -1387,7 +1387,7 @@ msgstr ""
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Konvertuj KMail filtere u filter skripte"
 
-#: filter/kmfilterlistbox.cpp:41
+#: filter/kmfilterlistbox.cpp:42
 #, kde-format
 msgid ""
 "<qt><p>This is the list of defined filters. They are processed top-to-bottom."
@@ -1398,31 +1398,31 @@ msgstr ""
 "dolje.</p><p>Kliknite na neki filter da ga izmijenite koristeći kontrole u "
 "desnoj polovini dijaloga.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:83
+#: filter/kmfilterlistbox.cpp:84
 #, kde-format
 msgctxt "Move selected filter up."
 msgid "Up"
 msgstr "Gore"
 
-#: filter/kmfilterlistbox.cpp:84
+#: filter/kmfilterlistbox.cpp:85
 #, kde-format
 msgctxt "Move selected filter down."
 msgid "Down"
 msgstr "Dole"
 
-#: filter/kmfilterlistbox.cpp:85
+#: filter/kmfilterlistbox.cpp:86
 #, kde-format
 msgctxt "Move selected filter to the top."
 msgid "Top"
 msgstr "Vrh"
 
-#: filter/kmfilterlistbox.cpp:86
+#: filter/kmfilterlistbox.cpp:87
 #, kde-format
 msgctxt "Move selected filter to the bottom."
 msgid "Bottom"
 msgstr "Dno"
 
-#: filter/kmfilterlistbox.cpp:88
+#: filter/kmfilterlistbox.cpp:89
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>up</em> "
@@ -1439,7 +1439,7 @@ msgstr ""
 "dugme, možete poništiti njegov efekat klikanjem na dugme <em>Dolje</em>.</"
 "p></qt>"
 
-#: filter/kmfilterlistbox.cpp:96
+#: filter/kmfilterlistbox.cpp:97
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>down</em> "
@@ -1456,7 +1456,7 @@ msgstr ""
 "dugme, možete poništiti njegov efekat klikanjem na dugme <em>Gore</em>.</p></"
 "qt>"
 
-#: filter/kmfilterlistbox.cpp:104
+#: filter/kmfilterlistbox.cpp:105
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to bottom of "
@@ -1469,7 +1469,7 @@ msgstr ""
 "kojim oni se pokušavaju nad porukama: Filter pri vrhu se prvi pokušava.</p></"
 "qt>"
 
-#: filter/kmfilterlistbox.cpp:110
+#: filter/kmfilterlistbox.cpp:111
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to top of "
@@ -1482,29 +1482,29 @@ msgstr ""
 "kojim oni se pokušavaju nad porukama: Filter pri vrhu se prvi pokušava.</p></"
 "qt>"
 
-#: filter/kmfilterlistbox.cpp:140
+#: filter/kmfilterlistbox.cpp:141
 #, kde-format
 msgctxt "@action:button in filter list manipulator"
 msgid "New"
 msgstr "Novo"
 
-#: filter/kmfilterlistbox.cpp:141
+#: filter/kmfilterlistbox.cpp:142
 #, kde-format
 msgid "Copy"
 msgstr "Kopiraj"
 
-#: filter/kmfilterlistbox.cpp:142
+#: filter/kmfilterlistbox.cpp:143
 #, kde-format
 msgid "Delete"
 msgstr "Obriši"
 
-#: filter/kmfilterlistbox.cpp:143
+#: filter/kmfilterlistbox.cpp:144
 #, fuzzy, kde-format
 #| msgid "Rename..."
 msgid "Rename"
 msgstr "Promijeni ime..."
 
-#: filter/kmfilterlistbox.cpp:145
+#: filter/kmfilterlistbox.cpp:146
 #, kde-format
 msgid ""
 "<qt><p>Click this button to create a new filter.</p><p>The filter will be "
@@ -1517,7 +1517,7 @@ msgstr ""
 "promijeniti.</p><p>Ako ste slučajno pritisnuli ovo dugme, možete ga "
 "poništiti klikajući na dugme <em>Obriši</em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:152
+#: filter/kmfilterlistbox.cpp:153
 #, kde-format
 msgid ""
 "<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
@@ -1528,7 +1528,7 @@ msgstr ""
 "pritisnuli ovo dugme, možete ga poništiti klikajući na dugme <em>Obriši</em>."
 "dugme</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:156
+#: filter/kmfilterlistbox.cpp:157
 #, kde-format
 msgid ""
 "<qt><p>Click this button to <em>delete</em> the currently-selected filter "
@@ -1541,7 +1541,7 @@ msgstr ""
 "ali možete uvijek izaći iz ovog dijaloga klikajući na <em>Odustani</em> da "
 "poništite napravljene izmjene.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:163
+#: filter/kmfilterlistbox.cpp:164
 #, kde-format
 msgid ""
 "<qt><p>Click this button to rename the currently-selected filter.</"
@@ -1556,38 +1556,38 @@ msgstr ""
 "imenovanje, kliknite na ovo dugme i odaberite <em>Očisti</em>, pa zatim "
 "<em>U redu</em> u prikazanom dijalogu.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:290
+#: filter/kmfilterlistbox.cpp:291
 #, kde-format
 msgid "unnamed"
 msgstr "Bez naziva"
 
-#: filter/kmfilterlistbox.cpp:444
+#: filter/kmfilterlistbox.cpp:445
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "Da li želite da obrišete filter \"%1\"?"
 
-#: filter/kmfilterlistbox.cpp:444
+#: filter/kmfilterlistbox.cpp:445
 #, fuzzy, kde-format
 #| msgid "Do you want to remove selected filters?"
 msgid "Do you want to remove selected filters?"
 msgstr "Da li želite da obrišete izabrani filter \"%1\"?"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Remove Filter"
 msgstr "Ukloni filter"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Remove Filters"
 msgstr "Ukloni filtere"
 
-#: filter/kmfilterlistbox.cpp:661
+#: filter/kmfilterlistbox.cpp:670
 #, kde-format
 msgid "Rename Filter"
 msgstr "Promijeni ime filtera"
 
-#: filter/kmfilterlistbox.cpp:662
+#: filter/kmfilterlistbox.cpp:671
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
@@ -1788,67 +1788,67 @@ msgstr "Ne mogu da napravim direktorij: %1"
 msgid "Folder creation failed"
 msgstr "Neuspjelo stvaranje direktorija"
 
-#: folder/foldertreeview.cpp:128
+#: folder/foldertreeview.cpp:129
 #, kde-format
 msgid "View Columns"
 msgstr "Pregledaj kolone"
 
-#: folder/foldertreeview.cpp:138
+#: folder/foldertreeview.cpp:139
 #, kde-format
 msgid "Icon Size"
 msgstr "Veličina ikone"
 
-#: folder/foldertreeview.cpp:154
+#: folder/foldertreeview.cpp:155
 #, kde-format
 msgid "Display Tooltips"
 msgstr "Prikaži savjete"
 
-#: folder/foldertreeview.cpp:158
+#: folder/foldertreeview.cpp:159
 #, kde-format
 msgctxt "@action:inmenu Always display tooltips"
 msgid "Always"
 msgstr "Uvijek"
 
-#: folder/foldertreeview.cpp:165
+#: folder/foldertreeview.cpp:166
 #, kde-format
 msgctxt "@action:inmenu Never display tooltips."
 msgid "Never"
 msgstr "Nikad"
 
-#: folder/foldertreeview.cpp:172
+#: folder/foldertreeview.cpp:173
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Sort Items"
 msgstr "Sortiraj stavke"
 
-#: folder/foldertreeview.cpp:176
+#: folder/foldertreeview.cpp:177
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
 msgstr "Automatski, po trenutnoj koloni"
 
-#: folder/foldertreeview.cpp:183
+#: folder/foldertreeview.cpp:184
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
 msgstr "Ručno, prevlačenjem i ispuštanjem"
 
-#: folder/foldertreeview.cpp:473 folder/foldertreeview.cpp:515
+#: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:529
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr "<qt>Idi na sljedeću nepročitanu poruku u fasciklu <b>%1</b>?</qt>"
 
-#: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
+#: folder/foldertreeview.cpp:479 folder/foldertreeview.cpp:530
 #, kde-format
 msgid "Go to Next Unread Message"
 msgstr "Idi na sljedeću nepročitanu poruku"
 
-#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
+#: folder/foldertreeview.cpp:480 folder/foldertreeview.cpp:531
 #, kde-format
 msgid "Go To"
 msgstr "Idi na"
 
-#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
+#: folder/foldertreeview.cpp:481 folder/foldertreeview.cpp:532
 #, kde-format
 msgid "Do Not Go To"
 msgstr "Ne idi"
@@ -2704,19 +2704,22 @@ msgstr "Ukloni grupu"
 msgid "Insert Snippet"
 msgstr "Umetni isječak"
 
-#: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:549
+#: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:534
+#: snippets/snippetsmodel.cpp:562 snippets/snippetsmodel.cpp:567
 #, fuzzy, kde-format
 #| msgid "Do you want to remove the filter \"%1\"?"
 msgid "Do you want to update snippet?"
 msgstr "Da li želite da obrišete filter \"%1\"?"
 
-#: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:549
+#: snippets/snippetsmodel.cpp:529 snippets/snippetsmodel.cpp:534
+#: snippets/snippetsmodel.cpp:563 snippets/snippetsmodel.cpp:567
 #, fuzzy, kde-format
 #| msgid "Remove Snippet"
 msgid "Update snippet"
 msgstr "Ukloni isječak"
 
-#: snippets/snippetsmodel.cpp:525
+#: snippets/snippetsmodel.cpp:530 snippets/snippetsmodel.cpp:534
+#: snippets/snippetsmodel.cpp:564
 #, fuzzy, kde-format
 #| msgid "Remove Snippet"
 msgid "Update"
