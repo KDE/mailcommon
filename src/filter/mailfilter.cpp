@@ -28,8 +28,8 @@ using MailCommon::FilterLog;
 #include <KConfigGroup>
 #include <KLocalizedString>
 #include <KMessageBox>
+#include <KRandom>
 #include <QPointer>
-#include <krandom.h>
 
 #include <algorithm>
 
