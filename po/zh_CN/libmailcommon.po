@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:47+0000\n"
-"PO-Revision-Date: 2022-10-02 15:49\n"
+"PO-Revision-Date: 2022-10-19 13:23\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -212,13 +212,13 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
-msgstr ""
+msgstr "发件人"
 
 #: collectionpage/collectionviewwidget.cpp:38
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
-msgstr ""
+msgstr "收件人"
 
 #: collectionpage/collectionviewwidget.cpp:39
 #, kde-format
@@ -2549,6 +2549,9 @@ msgid ""
 "then type \\greeting in your email and then press the tab key, and it will "
 "be replaced with the contents of this snippet."
 msgstr ""
+"在此处输入关键字，以便在编写电子邮件时快速插入该片断。例如，如果您选"
+"择“greeting”作为关键词，您可以在您的邮件中输入 \\greeting 然后按下 Tab 键，该"
+"关键词将会被片断的内容代替。"
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
 #: snippets/ui/snippetwidget.ui:31
@@ -2567,7 +2570,7 @@ msgstr "分组："
 #: snippets/ui/snippetwidget.ui:65
 #, kde-format
 msgid "Attachments:"
-msgstr ""
+msgstr "附件："
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel)
 #: snippets/ui/snippetwidget.ui:82
@@ -2579,19 +2582,19 @@ msgstr "片断(&S)："
 #: snippets/ui/snippetwidget.ui:102
 #, kde-format
 msgid "To:"
-msgstr ""
+msgstr "收件人："
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: snippets/ui/snippetwidget.ui:113
 #, kde-format
 msgid "Cc:"
-msgstr ""
+msgstr "抄送："
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: snippets/ui/snippetwidget.ui:120
 #, kde-format
 msgid "Keyword:"
-msgstr ""
+msgstr "关键词："
 
 #. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
 #: snippets/ui/snippetwidget.ui:127
@@ -2603,7 +2606,7 @@ msgstr "快捷键(&R)："
 #: snippets/ui/snippetwidget.ui:164
 #, kde-format
 msgid "Bcc:"
-msgstr ""
+msgstr "密送："
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: snippets/ui/snippetwidget.ui:184
