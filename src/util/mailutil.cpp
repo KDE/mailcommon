@@ -100,6 +100,34 @@ QString MailCommon::Util::fullCollectionPath(const Akonadi::Collection &collecti
     return fullPath;
 }
 
+QString MailCommon::Util::fullCollectionRemoveIdPath(const Akonadi::Collection &collection, bool addAccountName)
+{
+    QString fullPath;
+
+    QModelIndex idx = Akonadi::EntityTreeModel::modelIndexForCollection(KernelIf->collectionModel(), collection);
+    if (!idx.isValid()) {
+        return fullPath;
+    }
+
+    fullPath = idx.data().toString();
+    idx = idx.parent();
+    while (idx != QModelIndex()) {
+        const QString tmp = idx.data(Akonadi::EntityTreeModel::RemoteIdRole).toString() + QLatin1Char('/') + fullPath;
+        idx = idx.parent();
+        if (idx != QModelIndex()) {
+            fullPath = tmp;
+        } else {
+            if (!addAccountName) {
+                break;
+            } else {
+                fullPath = tmp;
+                break;
+            }
+        }
+    }
+    return fullPath;
+}
+
 bool MailCommon::Util::showJobErrorMessage(KJob *job)
 {
     if (job->error()) {

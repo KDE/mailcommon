@@ -50,7 +50,7 @@ QString FilterActionCopy::sieveCode() const
 {
     QString path;
     if (KernelIf->collectionModel()) {
-        path = MailCommon::Util::fullCollectionPath(mFolder);
+        path = MailCommon::Util::fullCollectionRemoveIdPath(mFolder);
     } else {
         path = QString::number(mFolder.id());
     }
