@@ -36,8 +36,7 @@ void FilterConvertToSieve::convert()
         }
         result = requireStr + code;
     }
-    QPointer<FilterConvertToSieveResultDialog> dlg = new FilterConvertToSieveResultDialog;
-    dlg->setCode(result);
-    dlg->exec();
-    delete dlg;
+    FilterConvertToSieveResultDialog dlg;
+    dlg.setCode(result);
+    dlg.exec();
 }
