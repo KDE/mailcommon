@@ -1884,7 +1884,7 @@ msgstr "El fitxer d'arxiu té una mida de %1."
 #: job/backupjob.cpp:242
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
-msgstr "No s'ha pogut escriure un missatge a la carpeta d'arxiu «%1»."
+msgstr "No s'ha pogut escriure un missatge a dins de la carpeta d'arxiu «%1»."
 
 #: job/backupjob.cpp:266
 #, kde-format
@@ -1936,9 +1936,10 @@ msgstr ""
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
-msgstr[0] "S'està movent un missatge antic de la carpeta %2 a la carpeta %3..."
+msgstr[0] ""
+"S'està movent un missatge antic des de la carpeta %2 cap a la carpeta %3..."
 msgstr[1] ""
-"S'està movent %1 missatges antics de la carpeta %2 a la carpeta %3..."
+"S'està movent %1 missatges antics des de la carpeta %2 cap a la carpeta %3..."
 
 #: job/expirejob.cpp:232
 #, kde-format
@@ -1951,8 +1952,10 @@ msgstr[1] "S'han eliminat %1 missatges antics de la carpeta %2."
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
-msgstr[0] "S'ha mogut un missatge antic de la carpeta %2 a la carpeta %3."
-msgstr[1] "S'han mogut %1 missatges antics de la carpeta %2 a la carpeta %3."
+msgstr[0] ""
+"S'ha mogut un missatge antic des de la carpeta %2 cap a la carpeta %3."
+msgstr[1] ""
+"S'han mogut %1 missatges antics des de la carpeta %2 cap a la carpeta %3."
 
 #: job/expirejob.cpp:244
 #, kde-format
@@ -1963,8 +1966,8 @@ msgstr "S'ha cancel·lat la supressió de missatges antics de la carpeta %1."
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
-"S'ha cancel·lat el trasllat dels missatges antics de la carpeta %1 a la "
-"carpeta %2."
+"S'ha cancel·lat el trasllat dels missatges antics des de la carpeta %1 cap a "
+"la carpeta %2."
 
 #: job/expirejob.cpp:256
 #, kde-format
@@ -1974,7 +1977,9 @@ msgstr "No s'han pogut suprimir els missatges antics de la carpeta %1."
 #: job/expirejob.cpp:258
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
-msgstr "Ha fallat el trasllat dels missatges de la carpeta %1 a la carpeta %2."
+msgstr ""
+"Ha fallat el trasllat dels missatges des de la carpeta %1 cap a la carpeta "
+"%2."
 
 #: kernel/mailkernel.cpp:179 kernel/mailkernel.cpp:201
 #, kde-format
