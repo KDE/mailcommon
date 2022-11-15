@@ -17,7 +17,6 @@
 #include <QIODevice>
 #include <QMimeData>
 #include <QStringList>
-#include <kwidgetsaddons_version.h>
 
 using namespace MailCommon;
 
@@ -522,17 +521,12 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
             Q_EMIT dndDone();
             return true;
         } else {
-#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
             if (KMessageBox::ButtonCode::PrimaryAction
                 == KMessageBox::questionTwoActions(nullptr,
                                                    i18n("Do you want to update snippet?"),
                                                    i18n("Update snippet"),
                                                    KGuiItem(i18n("Update")),
                                                    KStandardGuiItem::cancel())) {
-#else
-            if (KMessageBox::Yes
-                == KMessageBox::questionYesNo(nullptr, i18n("Do you want to update snippet?"), i18n("Update snippet"), KGuiItem(i18n("Update")))) {
-#endif
                 item->setText(text);
                 item->setSubject(subject);
                 item->setTo(to);
@@ -556,16 +550,12 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
         if (item->isGroup()) {
             Q_EMIT addNewDndSnippset(encodedData);
         } else {
-#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
             if (KMessageBox::ButtonCode::PrimaryAction
                 == KMessageBox::questionTwoActions(nullptr,
                                                    i18n("Do you want to update snippet?"),
                                                    i18n("Update snippet"),
                                                    KGuiItem(i18n("Update")),
                                                    KStandardGuiItem::cancel())) {
-#else
-            if (KMessageBox::Yes == KMessageBox::questionYesNo(nullptr, i18n("Do you want to update snippet?"), i18n("Update snippet"))) {
-#endif
                 item->setText(encodedData);
             }
         }
