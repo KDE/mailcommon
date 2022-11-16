@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:47+0000\n"
+"POT-Creation-Date: 2022-11-16 00:48+0000\n"
 "PO-Revision-Date: 2022-07-01 20:09+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -1043,7 +1043,7 @@ msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Sélectionner des filtres"
 
-#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:52
+#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:51
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
@@ -1362,7 +1362,7 @@ msgstr ""
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Convertir les filtres de KMail en scripts « Sieve » "
 
-#: filter/kmfilterlistbox.cpp:42
+#: filter/kmfilterlistbox.cpp:41
 #, kde-format
 msgid ""
 "<qt><p>This is the list of defined filters. They are processed top-to-bottom."
@@ -1373,31 +1373,31 @@ msgstr ""
 "bas.</p><p>Cliquez sur un filtre pour le modifier en utilisant les contrôles "
 "dans la moitié droite de la boîte de dialogue.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:84
+#: filter/kmfilterlistbox.cpp:83
 #, kde-format
 msgctxt "Move selected filter up."
 msgid "Up"
 msgstr "En haut"
 
-#: filter/kmfilterlistbox.cpp:85
+#: filter/kmfilterlistbox.cpp:84
 #, kde-format
 msgctxt "Move selected filter down."
 msgid "Down"
 msgstr "En bas"
 
-#: filter/kmfilterlistbox.cpp:86
+#: filter/kmfilterlistbox.cpp:85
 #, kde-format
 msgctxt "Move selected filter to the top."
 msgid "Top"
 msgstr "Tout en haut"
 
-#: filter/kmfilterlistbox.cpp:87
+#: filter/kmfilterlistbox.cpp:86
 #, kde-format
 msgctxt "Move selected filter to the bottom."
 msgid "Bottom"
 msgstr "Tout en bas"
 
-#: filter/kmfilterlistbox.cpp:89
+#: filter/kmfilterlistbox.cpp:88
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>up</em> "
@@ -1414,7 +1414,7 @@ msgstr ""
 "en premier.</p><p>Si vous avez cliqué sur ce bouton accidentellement, vous "
 "pouvez annuler ceci en cliquant sur le bouton <em>Bas</em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:97
+#: filter/kmfilterlistbox.cpp:96
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>down</em> "
@@ -1432,7 +1432,7 @@ msgstr ""
 "accidentellement, vous pouvez annuler ceci en cliquant sur le bouton "
 "<em>Haut</em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:105
+#: filter/kmfilterlistbox.cpp:104
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to bottom of "
@@ -1446,7 +1446,7 @@ msgstr ""
 "les messages : le filtre le plus en haut est celui essayé en premier.</p></"
 "qt>"
 
-#: filter/kmfilterlistbox.cpp:111
+#: filter/kmfilterlistbox.cpp:110
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to top of "
@@ -1460,28 +1460,28 @@ msgstr ""
 "les messages : le filtre le plus en haut est celui essayé en premier.</p></"
 "qt>"
 
-#: filter/kmfilterlistbox.cpp:141
+#: filter/kmfilterlistbox.cpp:140
 #, kde-format
 msgctxt "@action:button in filter list manipulator"
 msgid "New"
 msgstr "Nouveau"
 
-#: filter/kmfilterlistbox.cpp:142
+#: filter/kmfilterlistbox.cpp:141
 #, kde-format
 msgid "Copy"
 msgstr "Copier"
 
-#: filter/kmfilterlistbox.cpp:143
+#: filter/kmfilterlistbox.cpp:142
 #, kde-format
 msgid "Delete"
 msgstr "Supprimer"
 
-#: filter/kmfilterlistbox.cpp:144
+#: filter/kmfilterlistbox.cpp:143
 #, kde-format
 msgid "Rename"
 msgstr "Renommer"
 
-#: filter/kmfilterlistbox.cpp:146
+#: filter/kmfilterlistbox.cpp:145
 #, kde-format
 msgid ""
 "<qt><p>Click this button to create a new filter.</p><p>The filter will be "
@@ -1495,7 +1495,7 @@ msgstr ""
 "accidentellement, vous pouvez annuler ceci en cliquant sur le bouton "
 "<em>Effacer</em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:153
+#: filter/kmfilterlistbox.cpp:152
 #, kde-format
 msgid ""
 "<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
@@ -1506,7 +1506,7 @@ msgstr ""
 "cliqué sur ce bouton accidentellement, vous pouvez annuler ceci en cliquant "
 "sur le bouton <em>Effacer</em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:157
+#: filter/kmfilterlistbox.cpp:156
 #, kde-format
 msgid ""
 "<qt><p>Click this button to <em>delete</em> the currently-selected filter "
@@ -1520,7 +1520,7 @@ msgstr ""
 "quitter la boîte de dialogue en cliquant le bouton <em>Annuler</em> pour "
 "annuler les modifications effectuées.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:164
+#: filter/kmfilterlistbox.cpp:163
 #, kde-format
 msgid ""
 "<qt><p>Click this button to rename the currently-selected filter.</"
@@ -1536,37 +1536,37 @@ msgstr ""
 "cliquez sur ce bouton et sélectionnez <em>Effacer</em> suivi de <em>Ok</em> "
 "dans la boîte de dialogue qui apparaîtra.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:291
+#: filter/kmfilterlistbox.cpp:290
 #, kde-format
 msgid "unnamed"
 msgstr "sans nom"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:444
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "Voulez-vous supprimer le filtre « %1 » ?"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:444
 #, kde-format
 msgid "Do you want to remove selected filters?"
 msgstr "Voulez-vous supprimer les filtres sélectionnés ?"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:445
 #, kde-format
 msgid "Remove Filter"
 msgstr "Supprimer un filtre"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:445
 #, kde-format
 msgid "Remove Filters"
 msgstr "Supprimer des filtres"
 
-#: filter/kmfilterlistbox.cpp:670
+#: filter/kmfilterlistbox.cpp:661
 #, kde-format
 msgid "Rename Filter"
 msgstr "Renommer un filtre"
 
-#: filter/kmfilterlistbox.cpp:671
+#: filter/kmfilterlistbox.cpp:662
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
@@ -1761,67 +1761,67 @@ msgstr "Impossible de créer un dossier : %1"
 msgid "Folder creation failed"
 msgstr "La création du dossier a échoué"
 
-#: folder/foldertreeview.cpp:129
+#: folder/foldertreeview.cpp:128
 #, kde-format
 msgid "View Columns"
 msgstr "Afficher les colonnes"
 
-#: folder/foldertreeview.cpp:139
+#: folder/foldertreeview.cpp:138
 #, kde-format
 msgid "Icon Size"
 msgstr "Taille des icônes"
 
-#: folder/foldertreeview.cpp:155
+#: folder/foldertreeview.cpp:154
 #, kde-format
 msgid "Display Tooltips"
 msgstr "Afficher les infobulles"
 
-#: folder/foldertreeview.cpp:159
+#: folder/foldertreeview.cpp:158
 #, kde-format
 msgctxt "@action:inmenu Always display tooltips"
 msgid "Always"
 msgstr "Toujours"
 
-#: folder/foldertreeview.cpp:166
+#: folder/foldertreeview.cpp:165
 #, kde-format
 msgctxt "@action:inmenu Never display tooltips."
 msgid "Never"
 msgstr "Jamais"
 
-#: folder/foldertreeview.cpp:173
+#: folder/foldertreeview.cpp:172
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Sort Items"
 msgstr "Trier les éléments"
 
-#: folder/foldertreeview.cpp:177
+#: folder/foldertreeview.cpp:176
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
 msgstr "Automatiquement, par la colonne actuelle"
 
-#: folder/foldertreeview.cpp:184
+#: folder/foldertreeview.cpp:183
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
 msgstr "Manuellement, par glisser-déposer"
 
-#: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:529
+#: folder/foldertreeview.cpp:473 folder/foldertreeview.cpp:515
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr "<qt>Aller au message suivant non lu dans le dossier <b>%1</b> ?</qt>"
 
-#: folder/foldertreeview.cpp:479 folder/foldertreeview.cpp:530
+#: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
 msgid "Go to Next Unread Message"
 msgstr "Aller au message suivant non lu"
 
-#: folder/foldertreeview.cpp:480 folder/foldertreeview.cpp:531
+#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, kde-format
 msgid "Go To"
 msgstr "Aller à"
 
-#: folder/foldertreeview.cpp:481 folder/foldertreeview.cpp:532
+#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
 msgid "Do Not Go To"
 msgstr "Ne pas aller à"
@@ -2668,20 +2668,17 @@ msgstr "Supprimer un groupe"
 msgid "Insert Snippet"
 msgstr "Insérer un fragment"
 
-#: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:534
-#: snippets/snippetsmodel.cpp:562 snippets/snippetsmodel.cpp:567
+#: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
 #, kde-format
 msgid "Do you want to update snippet?"
 msgstr "Voulez-vous mettre à jour le fragment ?"
 
-#: snippets/snippetsmodel.cpp:529 snippets/snippetsmodel.cpp:534
-#: snippets/snippetsmodel.cpp:563 snippets/snippetsmodel.cpp:567
+#: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
 #, kde-format
 msgid "Update snippet"
 msgstr "Mettre à jour le fragment"
 
-#: snippets/snippetsmodel.cpp:530 snippets/snippetsmodel.cpp:534
-#: snippets/snippetsmodel.cpp:564
+#: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
 #, kde-format
 msgid "Update"
 msgstr "Mettre à jour"

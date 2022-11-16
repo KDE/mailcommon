@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:47+0000\n"
+"POT-Creation-Date: 2022-11-16 00:48+0000\n"
 "PO-Revision-Date: 2022-09-01 07:35+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -1026,7 +1026,7 @@ msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Hautatu iragazkiak"
 
-#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:52
+#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:51
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
@@ -1344,7 +1344,7 @@ msgstr ""
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Bihurtu KMail iragazkiak bahetzeko gidoi"
 
-#: filter/kmfilterlistbox.cpp:42
+#: filter/kmfilterlistbox.cpp:41
 #, kde-format
 msgid ""
 "<qt><p>This is the list of defined filters. They are processed top-to-bottom."
@@ -1355,31 +1355,31 @@ msgstr ""
 "dira.</p><p>Klikatu edozein iragazkitan hura editatzeko, elkarrizketa-"
 "koadroaren eskuin aldeko erdiko aginteak erabiliz.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:84
+#: filter/kmfilterlistbox.cpp:83
 #, kde-format
 msgctxt "Move selected filter up."
 msgid "Up"
 msgstr "Gora"
 
-#: filter/kmfilterlistbox.cpp:85
+#: filter/kmfilterlistbox.cpp:84
 #, kde-format
 msgctxt "Move selected filter down."
 msgid "Down"
 msgstr "Behera"
 
-#: filter/kmfilterlistbox.cpp:86
+#: filter/kmfilterlistbox.cpp:85
 #, kde-format
 msgctxt "Move selected filter to the top."
 msgid "Top"
 msgstr "Goian"
 
-#: filter/kmfilterlistbox.cpp:87
+#: filter/kmfilterlistbox.cpp:86
 #, kde-format
 msgctxt "Move selected filter to the bottom."
 msgid "Bottom"
 msgstr "Behean"
 
-#: filter/kmfilterlistbox.cpp:89
+#: filter/kmfilterlistbox.cpp:88
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>up</em> "
@@ -1395,7 +1395,7 @@ msgstr ""
 "iragazkiarekin saiatzen da aurrena.</p><p>Botoi hau nahi gabe sakatu baduzu, "
 "<em>Behera</em> botoian klik eginez desegin dezakezu.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:97
+#: filter/kmfilterlistbox.cpp:96
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>down</em> "
@@ -1411,7 +1411,7 @@ msgstr ""
 "Gaineko iragazkiarekin saiatzen da aurrena.</p><p>Botoi hau nahi gabe sakatu "
 "baduzu, <em>Gora</em> botoian klik eginez desegin dezakezu.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:105
+#: filter/kmfilterlistbox.cpp:104
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to bottom of "
@@ -1424,7 +1424,7 @@ msgstr ""
 "zehazten baitu mezuetan haiekin saiatzeko hurrenkera: Gaineko iragazkiarekin "
 "saiatzen da aurrena.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:111
+#: filter/kmfilterlistbox.cpp:110
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to top of "
@@ -1437,28 +1437,28 @@ msgstr ""
 "zehazten baitu mezuetan haiekin saiatzeko hurrenkera: Gaineko iragazkiarekin "
 "saiatzen da aurrena.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:141
+#: filter/kmfilterlistbox.cpp:140
 #, kde-format
 msgctxt "@action:button in filter list manipulator"
 msgid "New"
 msgstr "Berria"
 
-#: filter/kmfilterlistbox.cpp:142
+#: filter/kmfilterlistbox.cpp:141
 #, kde-format
 msgid "Copy"
 msgstr "Kopiatu"
 
-#: filter/kmfilterlistbox.cpp:143
+#: filter/kmfilterlistbox.cpp:142
 #, kde-format
 msgid "Delete"
 msgstr "Ezabatu"
 
-#: filter/kmfilterlistbox.cpp:144
+#: filter/kmfilterlistbox.cpp:143
 #, kde-format
 msgid "Rename"
 msgstr "Berrizendatu"
 
-#: filter/kmfilterlistbox.cpp:146
+#: filter/kmfilterlistbox.cpp:145
 #, kde-format
 msgid ""
 "<qt><p>Click this button to create a new filter.</p><p>The filter will be "
@@ -1471,7 +1471,7 @@ msgstr ""
 "dezakezu.</p><p>Botoi honi nahi gabe klik egin badiozu, <em>Ezabatu</em> "
 "botoian klik eginez desegin dezakezu.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:153
+#: filter/kmfilterlistbox.cpp:152
 #, kde-format
 msgid ""
 "<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
@@ -1482,7 +1482,7 @@ msgstr ""
 "nahi gabe klik egin baduzu, <em>Ezabatu</em> botoian klik eginez desegin "
 "dezakezu.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:157
+#: filter/kmfilterlistbox.cpp:156
 #, kde-format
 msgid ""
 "<qt><p>Click this button to <em>delete</em> the currently-selected filter "
@@ -1495,7 +1495,7 @@ msgstr ""
 "modurik, baina beti duzu <em>Utzi</em> sakatuz elkarrizketa-koadrotik "
 "aldaketak baztertuz ateratzeko aukera.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:164
+#: filter/kmfilterlistbox.cpp:163
 #, kde-format
 msgid ""
 "<qt><p>Click this button to rename the currently-selected filter.</"
@@ -1510,37 +1510,37 @@ msgstr ""
 "automatikoa nahi baduzu, egin klik botoi honi eta hautatu <em>Garbitu</em> "
 "eta ondoren <em>Ados</em> agertzen den elkarrizketa-koadroan.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:291
+#: filter/kmfilterlistbox.cpp:290
 #, kde-format
 msgid "unnamed"
 msgstr "izengabea"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:444
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "«%1» iragazkia kendu nahi duzu?"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:444
 #, kde-format
 msgid "Do you want to remove selected filters?"
 msgstr "Aukeratutako iragazkia kendu nahi duzu?"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:445
 #, kde-format
 msgid "Remove Filter"
 msgstr "Kendu iragazkia"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:445
 #, kde-format
 msgid "Remove Filters"
 msgstr "Kendu iragazkiak"
 
-#: filter/kmfilterlistbox.cpp:670
+#: filter/kmfilterlistbox.cpp:661
 #, kde-format
 msgid "Rename Filter"
 msgstr "Berrizendatu iragazkia"
 
-#: filter/kmfilterlistbox.cpp:671
+#: filter/kmfilterlistbox.cpp:662
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
@@ -1735,67 +1735,67 @@ msgstr "Ezin izan du karpeta sortu: %1"
 msgid "Folder creation failed"
 msgstr "Karpeta sortzea huts egin du"
 
-#: folder/foldertreeview.cpp:129
+#: folder/foldertreeview.cpp:128
 #, kde-format
 msgid "View Columns"
 msgstr "Ikusi zutabeak"
 
-#: folder/foldertreeview.cpp:139
+#: folder/foldertreeview.cpp:138
 #, kde-format
 msgid "Icon Size"
 msgstr "Ikonoen neurria"
 
-#: folder/foldertreeview.cpp:155
+#: folder/foldertreeview.cpp:154
 #, kde-format
 msgid "Display Tooltips"
 msgstr "Azaldu tresna-argibideak"
 
-#: folder/foldertreeview.cpp:159
+#: folder/foldertreeview.cpp:158
 #, kde-format
 msgctxt "@action:inmenu Always display tooltips"
 msgid "Always"
 msgstr "Beti"
 
-#: folder/foldertreeview.cpp:166
+#: folder/foldertreeview.cpp:165
 #, kde-format
 msgctxt "@action:inmenu Never display tooltips."
 msgid "Never"
 msgstr "Inoiz ez"
 
-#: folder/foldertreeview.cpp:173
+#: folder/foldertreeview.cpp:172
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Sort Items"
 msgstr "Sailkatu elementuak"
 
-#: folder/foldertreeview.cpp:177
+#: folder/foldertreeview.cpp:176
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
 msgstr "Automatikoki, uneko zutabearen arabera"
 
-#: folder/foldertreeview.cpp:184
+#: folder/foldertreeview.cpp:183
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
 msgstr "Eskuz, arrastatu eta jareginez"
 
-#: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:529
+#: folder/foldertreeview.cpp:473 folder/foldertreeview.cpp:515
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr "<qt><b>%1</b> karpetan irakurri gabeko hurrengo mezura joan?</qt>"
 
-#: folder/foldertreeview.cpp:479 folder/foldertreeview.cpp:530
+#: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
 msgid "Go to Next Unread Message"
 msgstr "Joan irakurri gabeko hurrengo mezura"
 
-#: folder/foldertreeview.cpp:480 folder/foldertreeview.cpp:531
+#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, kde-format
 msgid "Go To"
 msgstr "Joan hona"
 
-#: folder/foldertreeview.cpp:481 folder/foldertreeview.cpp:532
+#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
 msgid "Do Not Go To"
 msgstr "Ez joan hona"
@@ -2628,20 +2628,17 @@ msgstr "Kendu taldea"
 msgid "Insert Snippet"
 msgstr "Sartu testu-zatia"
 
-#: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:534
-#: snippets/snippetsmodel.cpp:562 snippets/snippetsmodel.cpp:567
+#: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
 #, kde-format
 msgid "Do you want to update snippet?"
 msgstr "Testu-zatia eguneratu nahi duzu?"
 
-#: snippets/snippetsmodel.cpp:529 snippets/snippetsmodel.cpp:534
-#: snippets/snippetsmodel.cpp:563 snippets/snippetsmodel.cpp:567
+#: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
 #, kde-format
 msgid "Update snippet"
 msgstr "Eguneratu testu-zatia"
 
-#: snippets/snippetsmodel.cpp:530 snippets/snippetsmodel.cpp:534
-#: snippets/snippetsmodel.cpp:564
+#: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
 #, kde-format
 msgid "Update"
 msgstr "Eguneratu"
