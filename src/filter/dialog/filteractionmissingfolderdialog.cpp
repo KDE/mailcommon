@@ -15,11 +15,13 @@
 #include <KLocalizedString>
 
 #include <KConfigGroup>
+#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QListWidget>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QWindow>
 namespace
 {
 static const char myFilterActionMissingCollectionDialogConfigGroupName[] = "FilterActionMissingCollectionDialog";
@@ -94,18 +96,18 @@ FilterActionMissingFolderDialog::~FilterActionMissingFolderDialog()
 
 void FilterActionMissingFolderDialog::readConfig()
 {
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(500, 300));
     KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingCollectionDialogConfigGroupName);
-
-    const QSize size = group.readEntry("Size", QSize(500, 300));
-    if (size.isValid()) {
-        resize(size);
-    }
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void FilterActionMissingFolderDialog::writeConfig()
 {
     KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingCollectionDialogConfigGroupName);
-    group.writeEntry("Size", size());
+    KWindowConfig::saveWindowSize(windowHandle(), group);
+    group.sync();
 }
 
 void FilterActionMissingFolderDialog::slotFolderChanged(const Akonadi::Collection &col)

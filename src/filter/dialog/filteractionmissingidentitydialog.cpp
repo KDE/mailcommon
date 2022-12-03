@@ -11,10 +11,12 @@
 #include <KLocalizedString>
 #include <KSharedConfig>
 
+#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QWindow>
 
 #include <KIdentityManagement/IdentityCombo>
 
@@ -62,18 +64,18 @@ FilterActionMissingIdentityDialog::~FilterActionMissingIdentityDialog()
 
 void FilterActionMissingIdentityDialog::readConfig()
 {
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(500, 300));
     KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingIdentityDialogConfigGroupName);
-
-    const QSize size = group.readEntry("Size", QSize(500, 300));
-    if (size.isValid()) {
-        resize(size);
-    }
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void FilterActionMissingIdentityDialog::writeConfig()
 {
     KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingIdentityDialogConfigGroupName);
-    group.writeEntry("Size", size());
+    KWindowConfig::saveWindowSize(windowHandle(), group);
+    group.sync();
 }
 
 int FilterActionMissingIdentityDialog::selectedIdentity() const

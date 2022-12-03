@@ -17,9 +17,11 @@
 
 #include <KConfigGroup>
 #include <KSharedConfig>
+#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QWindow>
 
 using namespace MailCommon;
 namespace
@@ -80,17 +82,16 @@ void FilterConvertToSieveResultDialog::setCode(const QString &code)
 
 void FilterConvertToSieveResultDialog::readConfig()
 {
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(500, 300));
     KConfigGroup group(KSharedConfig::openStateConfig(), myFilterConvertToSieveResultDialogName);
-
-    const QSize size = group.readEntry("Size", QSize(500, 300));
-    if (size.isValid()) {
-        resize(size);
-    }
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void FilterConvertToSieveResultDialog::writeConfig()
 {
     KConfigGroup group(KSharedConfig::openStateConfig(), myFilterConvertToSieveResultDialogName);
-    group.writeEntry("Size", size());
+    KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
 }

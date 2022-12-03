@@ -10,10 +10,12 @@
 #include <KLocalizedString>
 #include <KSharedConfig>
 #include <KUrlRequester>
+#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QWindow>
 
 using namespace MailCommon;
 namespace
@@ -69,16 +71,16 @@ QString FilterActionMissingSoundUrlDialog::soundUrl() const
 
 void FilterActionMissingSoundUrlDialog::readConfig()
 {
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(500, 300));
     KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingSoundUrlDialogGroupName);
-
-    const QSize size = group.readEntry("Size", QSize(500, 300));
-    if (size.isValid()) {
-        resize(size);
-    }
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void FilterActionMissingSoundUrlDialog::writeConfig()
 {
     KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingSoundUrlDialogGroupName);
-    group.writeEntry("Size", size());
+    KWindowConfig::saveWindowSize(windowHandle(), group);
+    group.sync();
 }

@@ -12,10 +12,12 @@
 #include <KSharedConfig>
 
 #include <KConfigGroup>
+#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QWindow>
 
 using namespace MailCommon;
 namespace
@@ -61,18 +63,18 @@ FilterActionMissingAccountDialog::~FilterActionMissingAccountDialog()
 
 void FilterActionMissingAccountDialog::readConfig()
 {
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(500, 300));
     KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingAccountDialogConfigGroupName);
-
-    const QSize size = group.readEntry("Size", QSize(500, 300));
-    if (size.isValid()) {
-        resize(size);
-    }
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void FilterActionMissingAccountDialog::writeConfig()
 {
     KConfigGroup group(KSharedConfig::openStateConfig(), myFilterActionMissingAccountDialogConfigGroupName);
-    group.writeEntry("Size", size());
+    KWindowConfig::saveWindowSize(windowHandle(), group);
+    group.sync();
 }
 
 QStringList FilterActionMissingAccountDialog::selectedAccount() const

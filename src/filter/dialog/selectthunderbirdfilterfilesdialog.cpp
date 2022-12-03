@@ -10,9 +10,11 @@
 #include <KSharedConfig>
 
 #include <KConfigGroup>
+#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QWindow>
 
 using namespace MailCommon;
 namespace
@@ -58,16 +60,16 @@ void SelectThunderbirdFilterFilesDialog::setStartDir(const QUrl &url)
 
 void SelectThunderbirdFilterFilesDialog::readConfig()
 {
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(500, 300));
     KConfigGroup group(KSharedConfig::openStateConfig(), mySelectThunderbirdFilterFilesDialogGroupName);
-
-    const QSize size = group.readEntry("Size", QSize(500, 300));
-    if (size.isValid()) {
-        resize(size);
-    }
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void SelectThunderbirdFilterFilesDialog::writeConfig()
 {
     KConfigGroup group(KSharedConfig::openStateConfig(), mySelectThunderbirdFilterFilesDialogGroupName);
-    group.writeEntry("Size", size());
+    KWindowConfig::saveWindowSize(windowHandle(), group);
+    group.sync();
 }
