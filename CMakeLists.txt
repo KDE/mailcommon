@@ -110,7 +110,7 @@ if (USE_UNITY_CMAKE_SUPPORT)
 endif()
 
 
-ecm_set_disabled_deprecation_versions(QT 5.15.2  KF 5.100.0)
+ecm_set_disabled_deprecation_versions(QT 5.15.2  KF 5.101.0)
 
 
 ########### CMake Config Files ###########
