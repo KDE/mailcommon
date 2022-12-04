@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-16 00:48+0000\n"
+"POT-Creation-Date: 2022-12-04 00:47+0000\n"
 "PO-Revision-Date: 2022-07-01 20:09+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -303,13 +303,13 @@ msgstr "Préférer le format texte au format « HTML »"
 msgid "Use Global Settings"
 msgstr "Utiliser la configuration globale"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:31
+#: filter/dialog/filteractionmissingaccountdialog.cpp:33
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "Sélectionner un compte"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:37
+#: filter/dialog/filteractionmissingaccountdialog.cpp:39
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
@@ -317,29 +317,29 @@ msgstr ""
 "Le compte du filtre est absent. Veuillez choisir un compte à utiliser avec "
 "le filtre « %1 »"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:36
+#: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:73
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Sélectionner un dossier"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:39
+#: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #, kde-format
 msgid "Folder path was \"%1\"."
 msgstr "L'emplacement du dossier était « %1 »."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:44
+#: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
 msgid "The following folders can be used for this filter:"
 msgstr "Les dossiers suivants peuvent être utilisés pour ce filtre :"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:65
+#: filter/dialog/filteractionmissingfolderdialog.cpp:67
 #, kde-format
 msgid "Please select a folder:"
 msgstr "Veuillez sélectionner un dossier :"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:68
+#: filter/dialog/filteractionmissingfolderdialog.cpp:70
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
@@ -347,13 +347,13 @@ msgstr ""
 "Le dossier du filtre est absent. Veuillez sélectionner un dossier à utiliser "
 "avec le filtre « %1 » :"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:30
+#: filter/dialog/filteractionmissingidentitydialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "Sélectionner une identité"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:36
+#: filter/dialog/filteractionmissingidentitydialog.cpp:38
 #, kde-format
 msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
@@ -362,54 +362,54 @@ msgstr ""
 "L'identité du filtre est absente. Veuillez choisir une identité à utiliser "
 "avec le filtre « %1 »"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:29
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "Sélectionner un son"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:33
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:35
 #, kde-format
 msgid "Sound file was \"%1\"."
 msgstr "Le fichier de son était « %1 »."
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:40
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr ""
 "Le fichier de son est absent. Veuillez sélectionner un son à utiliser avec "
 "le filtre « %1 »"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:35
+#: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Sélectionner une étiquette"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:38
+#: filter/dialog/filteractionmissingtagdialog.cpp:40
 #, kde-format
 msgid "Tag was \"%1\"."
 msgstr "L'étiquette était « %1 »."
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:45
+#: filter/dialog/filteractionmissingtagdialog.cpp:47
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
 "L'étiquette du filtre est absente. Veuillez choisir une étiquette à utiliser "
 "avec le filtre « %1 »"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:69
+#: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
 msgid "Add Tag..."
 msgstr "Ajouter une étiquette..."
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:30
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "Sélectionner un modèle"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:36
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:38
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
@@ -418,13 +418,13 @@ msgstr ""
 "Le modèle du filtre est absent. Veuillez choisir un modèle à utiliser avec "
 "le filtre « %1 »"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:29
+#: filter/dialog/filteractionmissingtransportdialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "Sélectionner un transport"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:35
+#: filter/dialog/filteractionmissingtransportdialog.cpp:37
 #, kde-format
 msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
@@ -433,7 +433,7 @@ msgstr ""
 "Le transport du filtre est absent. Veuillez choisir un transport à utiliser "
 "avec le filtre « %1 »"
 
-#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:26
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
@@ -931,28 +931,28 @@ msgstr ""
 "Vous pouvez obtenir une en-tête spécifique quand vous utilisez %{non d'en-"
 "tête}."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:33
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:35
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Convertir en un script Sieve"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:40
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:42
 #, kde-format
 msgid "Save..."
 msgstr "Enregistrer..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:56
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:58
 #, kde-format
 msgid "Share..."
 msgstr "Partager…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:72
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:74
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr "Fichiers sieve (*.siv);;Tous les fichiers (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:73
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:75
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"

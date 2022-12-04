@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-16 00:48+0000\n"
+"POT-Creation-Date: 2022-12-04 00:47+0000\n"
 "PO-Revision-Date: 2022-09-01 07:35+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -291,13 +291,13 @@ msgstr "Hobetsi testua HTMLrekiko"
 msgid "Use Global Settings"
 msgstr "Erabili ezarpen orokorrak"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:31
+#: filter/dialog/filteractionmissingaccountdialog.cpp:33
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "Hautatu kontua"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:37
+#: filter/dialog/filteractionmissingaccountdialog.cpp:39
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
@@ -305,29 +305,29 @@ msgstr ""
 "Kontu-iragazkia falta da. Mesedez, hautatu «%1» iragazkiarekin erabili "
 "beharreko kontua"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:36
+#: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:73
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Hautatu karpeta"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:39
+#: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #, kde-format
 msgid "Folder path was \"%1\"."
 msgstr "Karpetaren bide-izena «%1» zen."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:44
+#: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
 msgid "The following folders can be used for this filter:"
 msgstr "Ondoko karpetak erabil daitezke iragazki horretarako:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:65
+#: filter/dialog/filteractionmissingfolderdialog.cpp:67
 #, kde-format
 msgid "Please select a folder:"
 msgstr "Mesedez, hautatu karpeta bat:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:68
+#: filter/dialog/filteractionmissingfolderdialog.cpp:70
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
@@ -335,13 +335,13 @@ msgstr ""
 "Iragazki karpeta falta da. Mesedez, hautatu «%1» iragazkiarekin erabiltzeko "
 "karpeta bat;"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:30
+#: filter/dialog/filteractionmissingidentitydialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "Hautatu nortasuna"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:36
+#: filter/dialog/filteractionmissingidentitydialog.cpp:38
 #, kde-format
 msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
@@ -350,54 +350,54 @@ msgstr ""
 "Nortasun-iragazkia falta da. Mesedez, hautatu «%1» nortasunarekin "
 "erabiltzeko nortasun bat"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:29
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "Hautatu soinua"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:33
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:35
 #, kde-format
 msgid "Sound file was \"%1\"."
 msgstr "Soinu fitxategia «%1» zen."
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:40
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr ""
 "Soinu-fitxategia falta da. Mesedez, hautatu «%1» iragazkiarekin erabiltzeko "
 "soinu bat"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:35
+#: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Hautatu etiketa"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:38
+#: filter/dialog/filteractionmissingtagdialog.cpp:40
 #, kde-format
 msgid "Tag was \"%1\"."
 msgstr "Etiketa «%1» zen."
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:45
+#: filter/dialog/filteractionmissingtagdialog.cpp:47
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
 "Etiketa-iragazkia falta da. Mesedez, hautatu «%1» iragazkiarekin erabiltzeko "
 "etiketa bat"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:69
+#: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
 msgid "Add Tag..."
 msgstr "Gehitu etiketa..."
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:30
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "Hautatu txantiloia"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:36
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:38
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
@@ -406,13 +406,13 @@ msgstr ""
 "Txantiloi-iragazkia falta da. Mesedez, hautatu «%1» iragazkiarekin "
 "erabiltzeko txantiloi bat."
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:29
+#: filter/dialog/filteractionmissingtransportdialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "Hautatu garraioa"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:35
+#: filter/dialog/filteractionmissingtransportdialog.cpp:37
 #, kde-format
 msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
@@ -421,7 +421,7 @@ msgstr ""
 "Garraio-iragazkia falta da. Mesedez, hautatu «%1» iragazkiarekin erabiltzeko "
 "garraio bat"
 
-#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:26
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
@@ -914,28 +914,28 @@ msgstr "Laguntza"
 msgid "You can get specific header when you use %{headername}."
 msgstr "Berariazko goiburua lor dezakezu  %{headername} erabilita."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:33
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:35
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Bihurtu bahetzeko gidoi"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:40
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:42
 #, kde-format
 msgid "Save..."
 msgstr "Gorde..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:56
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:58
 #, kde-format
 msgid "Share..."
 msgstr "Partekatu..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:72
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:74
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr "Bahetzeko fitxategiak (*.siv);;Fitxategi denak (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:73
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:75
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"

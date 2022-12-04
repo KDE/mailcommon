@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-16 00:48+0000\n"
+"POT-Creation-Date: 2022-12-04 00:47+0000\n"
 "PO-Revision-Date: 2022-02-17 11:52+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -284,20 +284,20 @@ msgstr ""
 msgid "Use Global Settings"
 msgstr ""
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:31
+#: filter/dialog/filteractionmissingaccountdialog.cpp:33
 #, fuzzy, kde-format
 #| msgid "Select Account"
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "Alegeți contul"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:37
+#: filter/dialog/filteractionmissingaccountdialog.cpp:39
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr "Contul filtrului lipsește. Alegeți un cont de folosit cu filtrul „%1”"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:36
+#: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:73
 #, fuzzy, kde-format
 #| msgid "Select Folder"
@@ -305,23 +305,23 @@ msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Alege dosarul"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:39
+#: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #, kde-format
 msgid "Folder path was \"%1\"."
 msgstr "Calea dosarului era „%1”."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:44
+#: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
 msgid "The following folders can be used for this filter:"
 msgstr "Următoarele dosare pot fi folosite pentru acest filtru:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:65
+#: filter/dialog/filteractionmissingfolderdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Please select a folder"
 msgid "Please select a folder:"
 msgstr "Alegeți un dosar"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:68
+#: filter/dialog/filteractionmissingfolderdialog.cpp:70
 #, fuzzy, kde-format
 #| msgid ""
 #| "Filter folder is missing. Please select a folder to use with filter \"%1\""
@@ -330,14 +330,14 @@ msgid ""
 msgstr ""
 "Dosarul filtrului lipsește. Alegeți un dosar de folosit cu filtrul „%1”"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:30
+#: filter/dialog/filteractionmissingidentitydialog.cpp:32
 #, fuzzy, kde-format
 #| msgid "Select Identity"
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "Alegeți identitatea"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:36
+#: filter/dialog/filteractionmissingidentitydialog.cpp:38
 #, kde-format
 msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
@@ -346,55 +346,55 @@ msgstr ""
 "Identitatea filtrului lipsește. Alegeți o identitate de folosit cu filtrul "
 "„%1”"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:29
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:31
 #, fuzzy, kde-format
 #| msgid "Select sound"
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "Alegeți sunetul"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:33
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:35
 #, kde-format
 msgid "Sound file was \"%1\"."
 msgstr "Fișierul de sunet era „%1”."
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:40
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr ""
 "Fișierul de sunet lipsește. Alegeți un sunet de folosit cu filtrul „%1”"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:35
+#: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, fuzzy, kde-format
 #| msgid "Select Tag"
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Alegeți marcajul"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:38
+#: filter/dialog/filteractionmissingtagdialog.cpp:40
 #, kde-format
 msgid "Tag was \"%1\"."
 msgstr "Marcajul era „%1”."
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:45
+#: filter/dialog/filteractionmissingtagdialog.cpp:47
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
 "Marcajul filtrului lipsește. Alegeți un marcaj de folosit cu filtrul „%1”"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:69
+#: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
 msgid "Add Tag..."
 msgstr "Adăugare marcaj..."
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:30
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, fuzzy, kde-format
 #| msgid "Select Template"
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "Alegeți șablonul"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:36
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:38
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
@@ -402,14 +402,14 @@ msgid ""
 msgstr ""
 "Șablonul de filtru lipsește. Alegeți un șablon de folosit cu filtrul „%1”."
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:29
+#: filter/dialog/filteractionmissingtransportdialog.cpp:31
 #, fuzzy, kde-format
 #| msgid "Select Transport"
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "Alegeți transportul"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:35
+#: filter/dialog/filteractionmissingtransportdialog.cpp:37
 #, kde-format
 msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
@@ -418,7 +418,7 @@ msgstr ""
 "Transportul filtrului lipsește. Alegeți un transport de folosit cu filtrul "
 "„%1”"
 
-#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:26
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
 #, fuzzy, kde-format
 #| msgid "Select thunderbird filter files"
 msgctxt "@title:window"
@@ -915,30 +915,30 @@ msgstr ""
 msgid "You can get specific header when you use %{headername}."
 msgstr ""
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:33
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:35
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr ""
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:40
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:42
 #, fuzzy, kde-format
 #| msgid "Rename..."
 msgid "Save..."
 msgstr "Redenumire..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:56
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:58
 #, fuzzy, kde-format
 #| msgid "Rename..."
 msgid "Share..."
 msgstr "Redenumire..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:72
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:74
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr ""
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:73
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:75
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
