@@ -12,9 +12,11 @@
 
 #include <KConfigGroup>
 #include <KSharedConfig>
+#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QListWidget>
 #include <QVBoxLayout>
+#include <QWindow>
 
 using namespace MailCommon;
 namespace
@@ -71,19 +73,20 @@ void FilterSelectionDialog::reject()
     QDialog::reject();
 }
 
+void FilterSelectionDialog::readConfig()
+{
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(300, 350));
+    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterSelectionDialogName);
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
+}
+
 void FilterSelectionDialog::writeConfig()
 {
     KConfigGroup group(KSharedConfig::openStateConfig(), myFilterSelectionDialogName);
-    group.writeEntry("Size", size());
-}
-
-void FilterSelectionDialog::readConfig()
-{
-    KConfigGroup group(KSharedConfig::openStateConfig(), myFilterSelectionDialogName);
-    const QSize sizeDialog = group.readEntry("Size", QSize(300, 350));
-    if (sizeDialog.isValid()) {
-        resize(sizeDialog);
-    }
+    KWindowConfig::saveWindowSize(windowHandle(), group);
+    group.sync();
 }
 
 void FilterSelectionDialog::setFilters(const QVector<MailFilter *> &filters)

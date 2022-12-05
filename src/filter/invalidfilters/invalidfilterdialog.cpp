@@ -10,9 +10,11 @@
 #include <KConfigGroup>
 #include <KLocalizedString>
 #include <KSharedConfig>
+#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QWindow>
 
 using namespace MailCommon;
 namespace
@@ -63,17 +65,18 @@ void InvalidFilterDialog::setInvalidFilters(const QVector<InvalidFilterInfo> &ls
     mInvalidFilterWidget->setInvalidFilters(lst);
 }
 
+void InvalidFilterDialog::readConfig()
+{
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(400, 500));
+    KConfigGroup group(KSharedConfig::openStateConfig(), myInvalidFilterDialogName);
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
+}
+
 void InvalidFilterDialog::writeConfig()
 {
     KConfigGroup group(KSharedConfig::openStateConfig(), myInvalidFilterDialogName);
-    group.writeEntry("Size", size());
-}
-
-void InvalidFilterDialog::readConfig()
-{
-    KConfigGroup group(KSharedConfig::openStateConfig(), myInvalidFilterDialogName);
-    const QSize sizeDialog = group.readEntry("Size", QSize(400, 500));
-    if (sizeDialog.isValid()) {
-        resize(sizeDialog);
-    }
+    KWindowConfig::saveWindowSize(windowHandle(), group);
+    group.sync();
 }

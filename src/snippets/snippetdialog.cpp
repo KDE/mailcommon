@@ -13,10 +13,12 @@
 #include <KActionCollection>
 #include <KConfigGroup>
 #include <KSharedConfig>
+#include <KWindowConfig>
 #include <MessageComposer/ConvertSnippetVariableMenu>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QWindow>
 
 using namespace MailCommon;
 namespace
@@ -61,19 +63,20 @@ SnippetDialog::~SnippetDialog()
     }
 }
 
+void SnippetDialog::readConfig()
+{
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(300, 350));
+    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetDialogConfigGroupName);
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
+}
+
 void SnippetDialog::writeConfig()
 {
     KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetDialogConfigGroupName);
-    group.writeEntry("Size", size());
-}
-
-void SnippetDialog::readConfig()
-{
-    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetDialogConfigGroupName);
-    const QSize sizeDialog = group.readEntry("Size", QSize(300, 350));
-    if (sizeDialog.isValid()) {
-        resize(sizeDialog);
-    }
+    KWindowConfig::saveWindowSize(windowHandle(), group);
+    group.sync();
 }
 
 void SnippetDialog::slotGroupChanged()

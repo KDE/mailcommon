@@ -9,9 +9,11 @@
 #include <KConfigGroup>
 #include <KLocalizedString>
 #include <KSharedConfig>
+#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QWindow>
 namespace
 {
 static const char mySnippetSelectAttachmentDialogGroupName[] = "SnippetSelectAttachmentDialog";
@@ -56,17 +58,18 @@ QStringList SnippetSelectAttachmentDialog::attachments() const
     return mAttachmentWidget->attachments();
 }
 
+void SnippetSelectAttachmentDialog::readConfig()
+{
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(300, 350));
+    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetSelectAttachmentDialogGroupName);
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
+}
+
 void SnippetSelectAttachmentDialog::writeConfig()
 {
     KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetSelectAttachmentDialogGroupName);
-    group.writeEntry("Size", size());
-}
-
-void SnippetSelectAttachmentDialog::readConfig()
-{
-    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetSelectAttachmentDialogGroupName);
-    const QSize sizeDialog = group.readEntry("Size", QSize(300, 350));
-    if (sizeDialog.isValid()) {
-        resize(sizeDialog);
-    }
+    KWindowConfig::saveWindowSize(windowHandle(), group);
+    group.sync();
 }

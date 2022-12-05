@@ -12,12 +12,14 @@
 #include <KConfigGroup>
 #include <KLocalizedString>
 #include <KSharedConfig>
+#include <KWindowConfig>
 #include <QCheckBox>
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QMap>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QWindow>
 
 #include <KPIMTextEdit/PlainTextEditorWidget>
 
@@ -94,17 +96,18 @@ void SnippetVariableDialog::slotAccepted()
     accept();
 }
 
+void SnippetVariableDialog::readConfig()
+{
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(300, 350));
+    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetVariableDialogConfigGroupName);
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
+}
+
 void SnippetVariableDialog::writeConfig()
 {
     KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetVariableDialogConfigGroupName);
-    group.writeEntry("Size", size());
-}
-
-void SnippetVariableDialog::readConfig()
-{
-    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetVariableDialogConfigGroupName);
-    const QSize sizeDialog = group.readEntry("Size", QSize(300, 350));
-    if (sizeDialog.isValid()) {
-        resize(sizeDialog);
-    }
+    KWindowConfig::saveWindowSize(windowHandle(), group);
+    group.sync();
 }

@@ -18,10 +18,12 @@
 #include <Akonadi/AgentManager>
 
 #include <KConfigGroup>
+#include <KWindowConfig>
 #include <QCheckBox>
 #include <QDialogButtonBox>
 #include <QHBoxLayout>
 #include <QListWidget>
+#include <QWindow>
 
 using namespace MailCommon;
 namespace
@@ -237,16 +239,16 @@ void AccountConfigOrderDialog::slotOk()
 
 void AccountConfigOrderDialog::readConfig()
 {
-    KConfigGroup accountConfigDialog(d->mSettings->config(), myAccountConfigOrderDialogName);
-    const QSize size = accountConfigDialog.readEntry("Size", QSize(600, 400));
-    if (size.isValid()) {
-        resize(size);
-    }
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(500, 150));
+    KConfigGroup group(KSharedConfig::openStateConfig(), myAccountConfigOrderDialogName);
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void AccountConfigOrderDialog::writeConfig()
 {
-    KConfigGroup accountConfigDialog(d->mSettings->config(), myAccountConfigOrderDialogName);
-    accountConfigDialog.writeEntry("Size", size());
-    accountConfigDialog.sync();
+    KConfigGroup group(KSharedConfig::openStateConfig(), myAccountConfigOrderDialogName);
+    KWindowConfig::saveWindowSize(windowHandle(), group);
+    group.sync();
 }

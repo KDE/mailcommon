@@ -14,6 +14,8 @@
 
 #include <KLocalizedString>
 #include <KSharedConfig>
+#include <KWindowConfig>
+#include <QWindow>
 namespace
 {
 static const char mySnippetCustomFileAttachmentNameDialogGroupName[] = "SnippetCustomFileAttachmentNameDialog";
@@ -50,18 +52,18 @@ SnippetCustomFileAttachmentNameDialog::~SnippetCustomFileAttachmentNameDialog()
 
 void SnippetCustomFileAttachmentNameDialog::readConfig()
 {
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(500, 150));
     KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetCustomFileAttachmentNameDialogGroupName);
-
-    const QSize size = group.readEntry("Size", QSize(500, 150));
-    if (size.isValid()) {
-        resize(size);
-    }
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void SnippetCustomFileAttachmentNameDialog::writeConfig()
 {
     KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetCustomFileAttachmentNameDialogGroupName);
-    group.writeEntry("Size", size());
+    KWindowConfig::saveWindowSize(windowHandle(), group);
+    group.sync();
 }
 
 QString SnippetCustomFileAttachmentNameDialog::result() const
