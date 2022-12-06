@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-04 00:47+0000\n"
+"POT-Creation-Date: 2022-12-06 00:46+0000\n"
 "PO-Revision-Date: 2022-07-13 12:18+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -978,36 +978,36 @@ msgstr "선택한 파일을 읽을 수 없습니다. 파일 접근 권한이 부
 msgid "Export Filters"
 msgstr "필터 내보내기"
 
-#: filter/filterselectiondialog.cpp:27
+#: filter/filterselectiondialog.cpp:29
 #, kde-format
 msgid "Select All"
 msgstr "모두 선택"
 
-#: filter/filterselectiondialog.cpp:28
+#: filter/filterselectiondialog.cpp:30
 #, kde-format
 msgid "Unselect All"
 msgstr "모두 선택 해제"
 
-#: filter/filterselectiondialog.cpp:32
+#: filter/filterselectiondialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "필터 선택"
 
-#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:51
+#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:51
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "검색"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:27
+#: filter/invalidfilters/invalidfilterdialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "잘못된 필터"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:38
+#: filter/invalidfilters/invalidfilterdialog.cpp:40
 #, kde-format
 msgid "Discard"
 msgstr "무시"
@@ -1621,24 +1621,24 @@ msgstr "파일 선택:"
 msgid "Select file from config:"
 msgstr "설정에서 파일 선택:"
 
-#: folder/accountconfigorderdialog.cpp:55
+#: folder/accountconfigorderdialog.cpp:57
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "계정 순서 편집"
 
-#: folder/accountconfigorderdialog.cpp:72
+#: folder/accountconfigorderdialog.cpp:74
 #, kde-format
 msgid "Use custom order"
 msgstr "사용자 정의 순서 사용"
 
-#: folder/accountconfigorderdialog.cpp:89
+#: folder/accountconfigorderdialog.cpp:91
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "위로 이동"
 
-#: folder/accountconfigorderdialog.cpp:97
+#: folder/accountconfigorderdialog.cpp:99
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
@@ -2452,7 +2452,7 @@ msgstr "첨부 파일 선택"
 msgid "..."
 msgstr "..."
 
-#: snippets/snippetcustomfileattachmentnamedialog.cpp:26
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
@@ -2468,7 +2468,7 @@ msgstr "파일 이름:"
 msgid "Insert Variables"
 msgstr "변수 삽입"
 
-#: snippets/snippetselectattachmentdialog.cpp:24
+#: snippets/snippetselectattachmentdialog.cpp:26
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2595,23 +2595,23 @@ msgstr "업데이트"
 msgid "Text Snippets"
 msgstr "텍스트 스니펫"
 
-#: snippets/snippetvariabledialog.cpp:35
+#: snippets/snippetvariabledialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "변수의 값을 입력하십시오"
 
-#: snippets/snippetvariabledialog.cpp:38
+#: snippets/snippetvariabledialog.cpp:40
 #, kde-format
 msgid "Enter the replacement values for '%1':"
 msgstr "'%1'의 대체 값 입력:"
 
-#: snippets/snippetvariabledialog.cpp:43
+#: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgid "Make value &default"
 msgstr "기본값으로 값 사용(&D)"
 
-#: snippets/snippetvariabledialog.cpp:46
+#: snippets/snippetvariabledialog.cpp:48
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2619,7 +2619,7 @@ msgid ""
 "this variable"
 msgstr "이 옵션을 사용하면 오른쪽에 입력한 값을 변수의 기본값으로 사용합니다"
 
-#: snippets/snippetvariabledialog.cpp:49
+#: snippets/snippetvariabledialog.cpp:51
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""

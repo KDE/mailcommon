@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-04 00:47+0000\n"
+"POT-Creation-Date: 2022-12-06 00:46+0000\n"
 "PO-Revision-Date: 2022-07-11 18:40+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -999,36 +999,36 @@ msgstr ""
 msgid "Export Filters"
 msgstr "Vientisuodattimet"
 
-#: filter/filterselectiondialog.cpp:27
+#: filter/filterselectiondialog.cpp:29
 #, kde-format
 msgid "Select All"
 msgstr "Valitse kaikki"
 
-#: filter/filterselectiondialog.cpp:28
+#: filter/filterselectiondialog.cpp:30
 #, kde-format
 msgid "Unselect All"
 msgstr "Poista kaikki valinnat"
 
-#: filter/filterselectiondialog.cpp:32
+#: filter/filterselectiondialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Valitse suodattimet"
 
-#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:51
+#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:51
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "Etsi"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:27
+#: filter/invalidfilters/invalidfilterdialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "Virheelliset suodattimet"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:38
+#: filter/invalidfilters/invalidfilterdialog.cpp:40
 #, kde-format
 msgid "Discard"
 msgstr "Hylkää"
@@ -1649,24 +1649,24 @@ msgstr "Valitse tiedosto:"
 msgid "Select file from config:"
 msgstr "Valitse tiedosto asetuksista:"
 
-#: folder/accountconfigorderdialog.cpp:55
+#: folder/accountconfigorderdialog.cpp:57
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "Muuta tilien järjestystä"
 
-#: folder/accountconfigorderdialog.cpp:72
+#: folder/accountconfigorderdialog.cpp:74
 #, kde-format
 msgid "Use custom order"
 msgstr "Käytä omaa järjestystä"
 
-#: folder/accountconfigorderdialog.cpp:89
+#: folder/accountconfigorderdialog.cpp:91
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "Ylemmäs"
 
-#: folder/accountconfigorderdialog.cpp:97
+#: folder/accountconfigorderdialog.cpp:99
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
@@ -2488,7 +2488,7 @@ msgstr "Valitse liitteet"
 msgid "..."
 msgstr "…"
 
-#: snippets/snippetcustomfileattachmentnamedialog.cpp:26
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
@@ -2504,7 +2504,7 @@ msgstr "Tiedostonimi:"
 msgid "Insert Variables"
 msgstr "Lisää muuttujia"
 
-#: snippets/snippetselectattachmentdialog.cpp:24
+#: snippets/snippetselectattachmentdialog.cpp:26
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2631,23 +2631,23 @@ msgstr "Virkistä"
 msgid "Text Snippets"
 msgstr "Tekstileikkeet"
 
-#: snippets/snippetvariabledialog.cpp:35
+#: snippets/snippetvariabledialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Anna muuttujien arvot"
 
-#: snippets/snippetvariabledialog.cpp:38
+#: snippets/snippetvariabledialog.cpp:40
 #, kde-format
 msgid "Enter the replacement values for '%1':"
 msgstr "Anna ”%1”:n korvaavat arvot:"
 
-#: snippets/snippetvariabledialog.cpp:43
+#: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgid "Make value &default"
 msgstr "Tee arvosta &oletus"
 
-#: snippets/snippetvariabledialog.cpp:46
+#: snippets/snippetvariabledialog.cpp:48
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2656,7 +2656,7 @@ msgid ""
 msgstr ""
 "Valitse tämä tallentaaksesi oikealle merkityn arvon muuttujan oletusarvoksi"
 
-#: snippets/snippetvariabledialog.cpp:49
+#: snippets/snippetvariabledialog.cpp:51
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""

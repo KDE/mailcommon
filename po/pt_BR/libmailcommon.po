@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-04 00:47+0000\n"
+"POT-Creation-Date: 2022-12-06 00:46+0000\n"
 "PO-Revision-Date: 2022-07-12 11:58-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -1012,36 +1012,36 @@ msgstr ""
 msgid "Export Filters"
 msgstr "Exportar filtros"
 
-#: filter/filterselectiondialog.cpp:27
+#: filter/filterselectiondialog.cpp:29
 #, kde-format
 msgid "Select All"
 msgstr "Selecionar tudo"
 
-#: filter/filterselectiondialog.cpp:28
+#: filter/filterselectiondialog.cpp:30
 #, kde-format
 msgid "Unselect All"
 msgstr "Desmarcar tudo"
 
-#: filter/filterselectiondialog.cpp:32
+#: filter/filterselectiondialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Selecionar filtros"
 
-#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:51
+#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:51
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "Pesquisar"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:27
+#: filter/invalidfilters/invalidfilterdialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "Filtros inválidos"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:38
+#: filter/invalidfilters/invalidfilterdialog.cpp:40
 #, kde-format
 msgid "Discard"
 msgstr "Descartar"
@@ -1667,24 +1667,24 @@ msgstr "Selecionar arquivo:"
 msgid "Select file from config:"
 msgstr "Selecionar arquivo da configuração:"
 
-#: folder/accountconfigorderdialog.cpp:55
+#: folder/accountconfigorderdialog.cpp:57
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "Editar a ordem das contas"
 
-#: folder/accountconfigorderdialog.cpp:72
+#: folder/accountconfigorderdialog.cpp:74
 #, kde-format
 msgid "Use custom order"
 msgstr "Usar uma ordem personalizada"
 
-#: folder/accountconfigorderdialog.cpp:89
+#: folder/accountconfigorderdialog.cpp:91
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "Para cima"
 
-#: folder/accountconfigorderdialog.cpp:97
+#: folder/accountconfigorderdialog.cpp:99
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
@@ -2512,7 +2512,7 @@ msgstr "Selecionar anexos"
 msgid "..."
 msgstr "..."
 
-#: snippets/snippetcustomfileattachmentnamedialog.cpp:26
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
@@ -2528,7 +2528,7 @@ msgstr "Nome do arquivo:"
 msgid "Insert Variables"
 msgstr "Inserir variáveis"
 
-#: snippets/snippetselectattachmentdialog.cpp:24
+#: snippets/snippetselectattachmentdialog.cpp:26
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2655,23 +2655,23 @@ msgstr "Atualizar"
 msgid "Text Snippets"
 msgstr "Trechos de texto"
 
-#: snippets/snippetvariabledialog.cpp:35
+#: snippets/snippetvariabledialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Indicar valores das variáveis"
 
-#: snippets/snippetvariabledialog.cpp:38
+#: snippets/snippetvariabledialog.cpp:40
 #, kde-format
 msgid "Enter the replacement values for '%1':"
 msgstr "Indique os valores de substituição de '%1':"
 
-#: snippets/snippetvariabledialog.cpp:43
+#: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgid "Make value &default"
 msgstr "&Definir como padrão"
 
-#: snippets/snippetvariabledialog.cpp:46
+#: snippets/snippetvariabledialog.cpp:48
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2681,7 +2681,7 @@ msgstr ""
 "Habilite esta opção para salvar o valor indicado à direita como padrão para "
 "esta variável"
 
-#: snippets/snippetvariabledialog.cpp:49
+#: snippets/snippetvariabledialog.cpp:51
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-04 00:47+0000\n"
+"POT-Creation-Date: 2022-12-06 00:46+0000\n"
 "PO-Revision-Date: 2019-05-14 22:35+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
@@ -993,38 +993,38 @@ msgstr "選取的檔案無法讀取。您的檔案存取權限可能有不足。
 msgid "Export Filters"
 msgstr "匯出過濾器"
 
-#: filter/filterselectiondialog.cpp:27
+#: filter/filterselectiondialog.cpp:29
 #, kde-format
 msgid "Select All"
 msgstr "全部選擇"
 
-#: filter/filterselectiondialog.cpp:28
+#: filter/filterselectiondialog.cpp:30
 #, kde-format
 msgid "Unselect All"
 msgstr "取消全選"
 
-#: filter/filterselectiondialog.cpp:32
+#: filter/filterselectiondialog.cpp:34
 #, fuzzy, kde-format
 #| msgid "Select Filters"
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "選擇過濾器"
 
-#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:51
+#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:51
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "搜尋"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:27
+#: filter/invalidfilters/invalidfilterdialog.cpp:29
 #, fuzzy, kde-format
 #| msgid "Invalid Filters"
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "不正確的過濾器"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:38
+#: filter/invalidfilters/invalidfilterdialog.cpp:40
 #, kde-format
 msgid "Discard"
 msgstr "丟棄"
@@ -1624,25 +1624,25 @@ msgstr "選擇檔案："
 msgid "Select file from config:"
 msgstr "從設定中選擇檔案："
 
-#: folder/accountconfigorderdialog.cpp:55
+#: folder/accountconfigorderdialog.cpp:57
 #, fuzzy, kde-format
 #| msgid "Edit Accounts Order"
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "編輯帳號順序"
 
-#: folder/accountconfigorderdialog.cpp:72
+#: folder/accountconfigorderdialog.cpp:74
 #, kde-format
 msgid "Use custom order"
 msgstr "使用自訂順序"
 
-#: folder/accountconfigorderdialog.cpp:89
+#: folder/accountconfigorderdialog.cpp:91
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "向上"
 
-#: folder/accountconfigorderdialog.cpp:97
+#: folder/accountconfigorderdialog.cpp:99
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
@@ -2463,7 +2463,7 @@ msgstr "選擇帳號"
 msgid "..."
 msgstr "儲存..."
 
-#: snippets/snippetcustomfileattachmentnamedialog.cpp:26
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, fuzzy, kde-format
 #| msgid "Select Account"
 msgctxt "@title:window"
@@ -2482,7 +2482,7 @@ msgstr "重新命名..."
 msgid "Insert Variables"
 msgstr "輸入變數值"
 
-#: snippets/snippetselectattachmentdialog.cpp:24
+#: snippets/snippetselectattachmentdialog.cpp:26
 #, fuzzy, kde-format
 #| msgid "Select Account"
 msgctxt "@title:window"
@@ -2613,24 +2613,24 @@ msgstr "移除片段"
 msgid "Text Snippets"
 msgstr "插入片段"
 
-#: snippets/snippetvariabledialog.cpp:35
+#: snippets/snippetvariabledialog.cpp:37
 #, fuzzy, kde-format
 #| msgid "Enter Values for Variables"
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "輸入變數值"
 
-#: snippets/snippetvariabledialog.cpp:38
+#: snippets/snippetvariabledialog.cpp:40
 #, kde-format
 msgid "Enter the replacement values for '%1':"
 msgstr "輸入 %1 的取代值："
 
-#: snippets/snippetvariabledialog.cpp:43
+#: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgid "Make value &default"
 msgstr "設成預設(&D)"
 
-#: snippets/snippetvariabledialog.cpp:46
+#: snippets/snippetvariabledialog.cpp:48
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2638,7 +2638,7 @@ msgid ""
 "this variable"
 msgstr "開啟此項目將輸入的值儲存為此變數的預設值"
 
-#: snippets/snippetvariabledialog.cpp:49
+#: snippets/snippetvariabledialog.cpp:51
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""

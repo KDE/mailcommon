@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-04 00:47+0000\n"
+"POT-Creation-Date: 2022-12-06 00:46+0000\n"
 "PO-Revision-Date: 2014-09-04 12:28+0200\n"
 "Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -1043,38 +1043,38 @@ msgstr ""
 msgid "Export Filters"
 msgstr "Szűrők exportálása"
 
-#: filter/filterselectiondialog.cpp:27
+#: filter/filterselectiondialog.cpp:29
 #, kde-format
 msgid "Select All"
 msgstr "Összes kijelölése"
 
-#: filter/filterselectiondialog.cpp:28
+#: filter/filterselectiondialog.cpp:30
 #, kde-format
 msgid "Unselect All"
 msgstr "A kijelölések megszüntetése"
 
-#: filter/filterselectiondialog.cpp:32
+#: filter/filterselectiondialog.cpp:34
 #, fuzzy, kde-format
 #| msgid "Select Filters"
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Szűrők kiválasztása"
 
-#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:51
+#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:51
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "Keresés"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:27
+#: filter/invalidfilters/invalidfilterdialog.cpp:29
 #, fuzzy, kde-format
 #| msgid "Available Filters"
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "Elérhető szűrők"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:38
+#: filter/invalidfilters/invalidfilterdialog.cpp:40
 #, kde-format
 msgid "Discard"
 msgstr "Eldobás"
@@ -1710,25 +1710,25 @@ msgstr "Fájl kiválasztása:"
 msgid "Select file from config:"
 msgstr "Fájl kiválasztása a beállításból:"
 
-#: folder/accountconfigorderdialog.cpp:55
+#: folder/accountconfigorderdialog.cpp:57
 #, fuzzy, kde-format
 #| msgid "Edit Accounts Order"
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "Fióksorrend szerkesztése"
 
-#: folder/accountconfigorderdialog.cpp:72
+#: folder/accountconfigorderdialog.cpp:74
 #, kde-format
 msgid "Use custom order"
 msgstr "Egyéni sorrend használata"
 
-#: folder/accountconfigorderdialog.cpp:89
+#: folder/accountconfigorderdialog.cpp:91
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "Fel"
 
-#: folder/accountconfigorderdialog.cpp:97
+#: folder/accountconfigorderdialog.cpp:99
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
@@ -2565,7 +2565,7 @@ msgstr "Mellékletek eltávolítása"
 msgid "..."
 msgstr "Mentés…"
 
-#: snippets/snippetcustomfileattachmentnamedialog.cpp:26
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, fuzzy, kde-format
 #| msgid "Remove Attachments"
 msgctxt "@title:window"
@@ -2584,7 +2584,7 @@ msgstr "Átnevezés…"
 msgid "Insert Variables"
 msgstr "Adja meg a változó értékét"
 
-#: snippets/snippetselectattachmentdialog.cpp:24
+#: snippets/snippetselectattachmentdialog.cpp:26
 #, fuzzy, kde-format
 #| msgid "Remove Attachments"
 msgctxt "@title:window"
@@ -2717,24 +2717,24 @@ msgstr "Töredék eltávolítása"
 msgid "Text Snippets"
 msgstr "Töredék beszúrása"
 
-#: snippets/snippetvariabledialog.cpp:35
+#: snippets/snippetvariabledialog.cpp:37
 #, fuzzy, kde-format
 #| msgid "Enter Values for Variables"
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Adja meg a változó értékét"
 
-#: snippets/snippetvariabledialog.cpp:38
+#: snippets/snippetvariabledialog.cpp:40
 #, kde-format
 msgid "Enter the replacement values for '%1':"
 msgstr "Adja meg a(z) „%1” helyettesítési értékeit:"
 
-#: snippets/snippetvariabledialog.cpp:43
+#: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgid "Make value &default"
 msgstr "Az érték &alapértelmezetté tétele"
 
-#: snippets/snippetvariabledialog.cpp:46
+#: snippets/snippetvariabledialog.cpp:48
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2744,7 +2744,7 @@ msgstr ""
 "Jelölje be ezt, ha a jobb oldalon megadott értéket el szeretné menteni a "
 "változó alapértelmezett értékének"
 
-#: snippets/snippetvariabledialog.cpp:49
+#: snippets/snippetvariabledialog.cpp:51
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-04 00:47+0000\n"
+"POT-Creation-Date: 2022-12-06 00:46+0000\n"
 "PO-Revision-Date: 2013-11-01 04:30+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1033,24 +1033,24 @@ msgstr "Таңдалған деген файл оқылмады. Құқығың�
 msgid "Export Filters"
 msgstr "Сүзгілерді экспорттау"
 
-#: filter/filterselectiondialog.cpp:27
+#: filter/filterselectiondialog.cpp:29
 #, kde-format
 msgid "Select All"
 msgstr "Бүкілін таңдау"
 
-#: filter/filterselectiondialog.cpp:28
+#: filter/filterselectiondialog.cpp:30
 #, kde-format
 msgid "Unselect All"
 msgstr "Барлығынан айну"
 
-#: filter/filterselectiondialog.cpp:32
+#: filter/filterselectiondialog.cpp:34
 #, fuzzy, kde-format
 #| msgid "Select Filters"
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Сүзгіні таңдау"
 
-#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:51
+#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:51
 #: folder/foldertreewidget.cpp:84
 #, fuzzy, kde-format
 #| msgctxt ""
@@ -1060,14 +1060,14 @@ msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "Іздеу"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:27
+#: filter/invalidfilters/invalidfilterdialog.cpp:29
 #, fuzzy, kde-format
 #| msgid "Available Filters"
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "Бар сүзгілер"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:38
+#: filter/invalidfilters/invalidfilterdialog.cpp:40
 #, kde-format
 msgid "Discard"
 msgstr "Лақтырып тасталды"
@@ -1697,18 +1697,18 @@ msgstr "Файлды таңдау"
 msgid "Select file from config:"
 msgstr "Баптау файлынан таңдау:"
 
-#: folder/accountconfigorderdialog.cpp:55
+#: folder/accountconfigorderdialog.cpp:57
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr ""
 
-#: folder/accountconfigorderdialog.cpp:72
+#: folder/accountconfigorderdialog.cpp:74
 #, kde-format
 msgid "Use custom order"
 msgstr ""
 
-#: folder/accountconfigorderdialog.cpp:89
+#: folder/accountconfigorderdialog.cpp:91
 #, fuzzy, kde-format
 #| msgctxt "Move selected filter up."
 #| msgid "Up"
@@ -1716,7 +1716,7 @@ msgctxt "Move selected account up."
 msgid "Up"
 msgstr "Жоғары"
 
-#: folder/accountconfigorderdialog.cpp:97
+#: folder/accountconfigorderdialog.cpp:99
 #, fuzzy, kde-format
 #| msgctxt "Move selected filter down."
 #| msgid "Down"
@@ -2543,7 +2543,7 @@ msgstr "Тіркемелерді өшіру"
 msgid "..."
 msgstr "Сақтау..."
 
-#: snippets/snippetcustomfileattachmentnamedialog.cpp:26
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, fuzzy, kde-format
 #| msgid "Remove Attachments"
 msgctxt "@title:window"
@@ -2562,7 +2562,7 @@ msgstr "Атын өзгерту..."
 msgid "Insert Variables"
 msgstr "Айнымалыларының мәндерін келтіру"
 
-#: snippets/snippetselectattachmentdialog.cpp:24
+#: snippets/snippetselectattachmentdialog.cpp:26
 #, fuzzy, kde-format
 #| msgid "Remove Attachments"
 msgctxt "@title:window"
@@ -2695,24 +2695,24 @@ msgstr "Үзіндіні өшіру"
 msgid "Text Snippets"
 msgstr "Үзіндіні ендіру"
 
-#: snippets/snippetvariabledialog.cpp:35
+#: snippets/snippetvariabledialog.cpp:37
 #, fuzzy, kde-format
 #| msgid "Enter Values for Variables"
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Айнымалыларының мәндерін келтіру"
 
-#: snippets/snippetvariabledialog.cpp:38
+#: snippets/snippetvariabledialog.cpp:40
 #, kde-format
 msgid "Enter the replacement values for '%1':"
 msgstr "'%1' дегеннің мәндерін ауыстырыңыз:"
 
-#: snippets/snippetvariabledialog.cpp:43
+#: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgid "Make value &default"
 msgstr "Ә&деттіге қайту"
 
-#: snippets/snippetvariabledialog.cpp:46
+#: snippets/snippetvariabledialog.cpp:48
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2721,7 +2721,7 @@ msgid ""
 msgstr ""
 "Оң жақта келтірілгенді әдетті мән і ретінде сақтау үшін - осыны белгілеңіз."
 
-#: snippets/snippetvariabledialog.cpp:49
+#: snippets/snippetvariabledialog.cpp:51
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
