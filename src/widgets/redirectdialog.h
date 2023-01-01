@@ -1,7 +1,7 @@
 /*  -*- mode: C++ -*-
 
   SPDX-FileCopyrightText: 2003 Andreas Gungl <a.gungl@gmx.de>
-  SPDX-FileCopyrightText: 2014-2022 Laurent Montel <montel@kde.org>
+  SPDX-FileCopyrightText: 2014-2023 Laurent Montel <montel@kde.org>
 
   SPDX-License-Identifier: GPL-2.0-only
 */
