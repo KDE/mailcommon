@@ -347,7 +347,6 @@ PUBLIC
   KF5::Completion
 PRIVATE
   Gpgmepp
-  QGpgme
   KF5::AkonadiWidgets
   KF5::TextWidgets
   KF5::I18n
@@ -368,6 +367,12 @@ PRIVATE
   KF5::GuiAddons
   Qt::Xml
 )
+
+if (QT_MAJOR_VERSION STREQUAL "6")
+    target_link_libraries(KF5MailCommon PRIVATE QGpgmeQt6)
+else()
+    target_link_libraries(KF5MailCommon PRIVATE QGpgme)
+endif()
 
 
 target_include_directories(KF5MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon/>")
