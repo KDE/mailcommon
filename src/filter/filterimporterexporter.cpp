@@ -216,7 +216,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filt
                                            i18n("The selected file is not readable. "
                                                 "Your file access permissions might be insufficient."));
                     } else {
-                        auto *thunderBirdFilter = new MailCommon::FilterImporterThunderbird(&fileThunderbird);
+                        auto thunderBirdFilter = new MailCommon::FilterImporterThunderbird(&fileThunderbird);
 
                         imported.append(thunderBirdFilter->importFilter());
                         emptyFilter.append(thunderBirdFilter->emptyFilter());
@@ -245,7 +245,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filt
         }
         break;
     case EvolutionFilter: {
-        auto *filter = new MailCommon::FilterImporterEvolution(&file);
+        auto filter = new MailCommon::FilterImporterEvolution(&file);
 
         imported = filter->importFilter();
         emptyFilter = filter->emptyFilter();
@@ -253,7 +253,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filt
         break;
     }
     case SylpheedFilter: {
-        auto *filter = new MailCommon::FilterImporterSylpheed(&file);
+        auto filter = new MailCommon::FilterImporterSylpheed(&file);
 
         imported = filter->importFilter();
         emptyFilter = filter->emptyFilter();
@@ -261,7 +261,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filt
         break;
     }
     case ProcmailFilter: {
-        auto *filter = new MailCommon::FilterImporterProcmail(&file);
+        auto filter = new MailCommon::FilterImporterProcmail(&file);
 
         imported = filter->importFilter();
         emptyFilter = filter->emptyFilter();
@@ -269,7 +269,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filt
         break;
     }
     case BalsaFilter: {
-        auto *filter = new MailCommon::FilterImporterBalsa(&file);
+        auto filter = new MailCommon::FilterImporterBalsa(&file);
 
         imported = filter->importFilter();
         emptyFilter = filter->emptyFilter();
@@ -277,7 +277,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filt
         break;
     }
     case ClawsMailFilter: {
-        auto *filter = new MailCommon::FilterImporterClawsMails(&file);
+        auto filter = new MailCommon::FilterImporterClawsMails(&file);
 
         imported = filter->importFilter();
         emptyFilter = filter->emptyFilter();
@@ -285,7 +285,7 @@ QVector<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filt
         break;
     }
     case GmailFilter: {
-        auto *filter = new MailCommon::FilterImporterGmail(&file);
+        auto filter = new MailCommon::FilterImporterGmail(&file);
 
         imported = filter->importFilter();
         emptyFilter = filter->emptyFilter();

@@ -511,7 +511,7 @@ void SearchRuleWidgetLister::reset()
 
 QWidget *SearchRuleWidgetLister::createWidget(QWidget *parent)
 {
-    auto *w = new SearchRuleWidget(parent, SearchRule::Ptr(), mOptions, mTypeMode);
+    auto w = new SearchRuleWidget(parent, SearchRule::Ptr(), mOptions, mTypeMode);
     reconnectWidget(w);
     return w;
 }

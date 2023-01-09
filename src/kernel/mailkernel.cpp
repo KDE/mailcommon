@@ -165,7 +165,7 @@ void Kernel::initFolders()
     findCreateDefaultCollection(Akonadi::SpecialMailCollections::Trash);
     findCreateDefaultCollection(Akonadi::SpecialMailCollections::Templates);
 
-    auto *job = new Akonadi::SpecialMailCollectionsDiscoveryJob(this);
+    auto job = new Akonadi::SpecialMailCollectionsDiscoveryJob(this);
     job->start();
     // we don't connect to the job directly: it will register stuff into SpecialMailCollections, which will Q_EMIT signals.
 }
@@ -179,7 +179,7 @@ void Kernel::findCreateDefaultCollection(Akonadi::SpecialMailCollections::Type t
             emergencyExit(i18n("You do not have read/write permission to your inbox folder."));
         }
     } else {
-        auto *job = new Akonadi::SpecialMailCollectionsRequestJob(this);
+        auto job = new Akonadi::SpecialMailCollectionsRequestJob(this);
 
         connect(job, &Akonadi::SpecialMailCollectionsRequestJob::result, this, &Kernel::createDefaultCollectionDone);
 

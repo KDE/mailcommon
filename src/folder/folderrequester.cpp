@@ -103,7 +103,7 @@ void FolderRequester::setCollection(const Akonadi::Collection &collection, bool 
     d->mCollection = collection;
     if (d->mCollection.isValid()) {
         if (fetchCollection) {
-            auto *job = new Akonadi::CollectionFetchJob(d->mCollection, Akonadi::CollectionFetchJob::Base, this);
+            auto job = new Akonadi::CollectionFetchJob(d->mCollection, Akonadi::CollectionFetchJob::Base, this);
 
             connect(job, &Akonadi::CollectionFetchJob::result, this, &FolderRequester::slotCollectionsReceived);
         } else {

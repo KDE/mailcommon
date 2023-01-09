@@ -86,7 +86,7 @@ bool BackupJob::queueFolders(const Akonadi::Collection &root)
         // in the mPendingFolders list before all second level children, so that the
         // directories for the first level are written before the directories in the
         // second level, in the archive file.
-        auto *job = new Akonadi::CollectionFetchJob(root, Akonadi::CollectionFetchJob::FirstLevel);
+        auto job = new Akonadi::CollectionFetchJob(root, Akonadi::CollectionFetchJob::FirstLevel);
         job->fetchScope().setAncestorRetrieval(Akonadi::CollectionFetchScope::All);
         job->exec();
         if (job->error()) {

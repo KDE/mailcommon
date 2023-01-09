@@ -724,7 +724,7 @@ void KMFilterListBox::loadFilterList(bool createDummyFilter)
 
     const QVector<MailFilter *> filters = MailCommon::FilterManager::instance()->filters();
     for (MailFilter *filter : filters) {
-        auto *item = new QListWidgetFilterItem(filter->pattern()->name(), mListWidget);
+        auto item = new QListWidgetFilterItem(filter->pattern()->name(), mListWidget);
         item->setFilter(new MailFilter(*filter));
         mListWidget->addItem(item);
     }
@@ -770,7 +770,7 @@ void KMFilterListBox::insertFilter(MailFilter *aFilter)
 
 void KMFilterListBox::appendFilter(MailFilter *aFilter)
 {
-    auto *item = new QListWidgetFilterItem(aFilter->pattern()->name(), mListWidget);
+    auto item = new QListWidgetFilterItem(aFilter->pattern()->name(), mListWidget);
 
     item->setFilter(aFilter);
     mListWidget->addItem(item);
