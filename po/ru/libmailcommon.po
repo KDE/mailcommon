@@ -4,13 +4,13 @@
 # Alexander Potashev <aspotashev@gmail.com>, 2011, 2014, 2015, 2016, 2017.
 # Julia Dronova <juliette.tux@gmail.com>, 2012.
 # Alexander Lakhin <exclusion@gmail.com>, 2013.
-# Alexander Yavorsky <kekcuha@gmail.com>, 2018, 2019, 2020, 2021, 2022.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2018, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:47+0000\n"
-"PO-Revision-Date: 2022-10-02 19:54+0300\n"
+"PO-Revision-Date: 2023-01-12 11:19+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -224,10 +224,9 @@ msgid "&Sender identity:"
 msgstr "Профиль о&тправителя:"
 
 #: collectionpage/collectiontemplateswidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Keep replies in this folder"
+#, kde-format
 msgid "&Use custom message templates in this folder"
-msgstr "Помещать ответы в эту же папку"
+msgstr "Использовать а этой папке &пользовательские шаблоны писем"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
