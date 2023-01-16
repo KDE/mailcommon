@@ -3,7 +3,7 @@
 set(mailcommon_filter_test_LIBS Qt::Test Qt::Gui KF5::AkonadiCore KF5::AkonadiMime
                                 KF5::MailCommon KF5::PimCommon Phonon::phonon4qt${QT_MAJOR_VERSION}
                                 KF5::KIOWidgets KF5::IconThemes KF5::TemplateParser
-                                KF5::MailTransport KF5::I18n KF5::SyntaxHighlighting
+                                KF5::MailTransport KF5::I18n KF5::SyntaxHighlighting KF5::Codecs
 )
 
 if (KF5_USE_PURPOSE)
