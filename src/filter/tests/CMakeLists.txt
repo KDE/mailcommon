@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
-add_executable(filterimporterexportergui filterimporterexportergui.cpp)
+add_executable(filterimporterexportergui filterimporterexportergui.cpp filterimporterexportergui.h)
 ecm_mark_as_test(filterimporterexportergui)
 target_link_libraries(filterimporterexportergui
   Qt::Core
@@ -18,7 +18,7 @@ target_link_libraries(invalidfilterdialoggui
   KF5::I18n
 )
 
-add_executable(kmfilterdialogtestgui kmfilterdialogtestgui.cpp ../../../autotests/dummykernel.cpp)
+add_executable(kmfilterdialogtestgui kmfilterdialogtestgui.cpp ../../../autotests/dummykernel.cpp kmfilterdialogtestgui.h)
 ecm_mark_as_test(kmfilterdialogtestgui)
 target_link_libraries(kmfilterdialogtestgui
   Qt::Core
