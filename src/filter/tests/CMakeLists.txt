@@ -6,7 +6,7 @@ target_link_libraries(filterimporterexportergui
   Qt::Core
   Qt::Gui
   KF5::MailCommon
-  KF5::I18n
+  KF${KF_MAJOR_VERSION}::I18n
 )
 
 add_executable(invalidfilterdialoggui invalidfilterdialoggui.cpp)
@@ -15,7 +15,7 @@ target_link_libraries(invalidfilterdialoggui
   Qt::Core
   Qt::Gui
   KF5::MailCommon
-  KF5::I18n
+  KF${KF_MAJOR_VERSION}::I18n
 )
 
 add_executable(kmfilterdialogtestgui kmfilterdialogtestgui.cpp ../../../autotests/dummykernel.cpp kmfilterdialogtestgui.h)
@@ -24,7 +24,7 @@ target_link_libraries(kmfilterdialogtestgui
   Qt::Core
   Qt::Gui
   KF5::MailCommon
-  KF5::I18n
+  KF${KF_MAJOR_VERSION}::I18n
 )
 
 add_executable(filteractionmissingsoundurldialogui filteractionmissingsoundurldialogui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingsoundurldialog.cpp)
@@ -33,8 +33,8 @@ target_link_libraries(filteractionmissingsoundurldialogui
   Qt::Core
   Qt::Gui
   KF5::MailCommon
-  KF5::I18n
-  KF5::KIOWidgets
+  KF${KF_MAJOR_VERSION}::I18n
+  KF${KF_MAJOR_VERSION}::KIOWidgets
 )
 
 add_executable(filteractionmissingtemplatedialoggui filteractionmissingtemplatedialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtemplatedialog.cpp)
@@ -43,8 +43,8 @@ target_link_libraries(filteractionmissingtemplatedialoggui
   Qt::Core
   Qt::Gui
   KF5::MailCommon
-  KF5::I18n
-  KF5::Completion
+  KF${KF_MAJOR_VERSION}::I18n
+  KF${KF_MAJOR_VERSION}::Completion
 )
 
 add_executable(filteractionmissingtransportdialoggui filteractionmissingtransportdialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtransportdialog.cpp)
@@ -53,8 +53,8 @@ target_link_libraries(filteractionmissingtransportdialoggui
   Qt::Core
   Qt::Gui
   KF5::MailCommon
-  KF5::I18n
-  KF5::Completion
+  KF${KF_MAJOR_VERSION}::I18n
+  KF${KF_MAJOR_VERSION}::Completion
   KF5::MailTransport
 )
 
@@ -64,8 +64,8 @@ target_link_libraries(filteractionmissingaccountdialoggui
   Qt::Core
   Qt::Gui
   KF5::MailCommon
-  KF5::I18n
-  KF5::Completion
+  KF${KF_MAJOR_VERSION}::I18n
+  KF${KF_MAJOR_VERSION}::Completion
 )
 
 add_executable(filteractionmissingtagdialoggui filteractionmissingtagdialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtagdialog.cpp)
@@ -74,8 +74,8 @@ target_link_libraries(filteractionmissingtagdialoggui
   Qt::Core
   Qt::Gui
   KF5::MailCommon
-  KF5::I18n
-  KF5::Completion
+  KF${KF_MAJOR_VERSION}::I18n
+  KF${KF_MAJOR_VERSION}::Completion
 )
 
 add_executable(filteractionmissingidentitydialoggui filteractionmissingidentitydialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingidentitydialog.cpp)
@@ -84,6 +84,6 @@ target_link_libraries(filteractionmissingidentitydialoggui
   Qt::Core
   Qt::Gui
   KF5::MailCommon
-  KF5::I18n
-  KF5::Completion
+  KF${KF_MAJOR_VERSION}::I18n
+  KF${KF_MAJOR_VERSION}::Completion
 )

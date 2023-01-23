@@ -344,12 +344,12 @@ PUBLIC
   KF5::Libkdepim
   KF5::MessageComposer
   KF5::PimCommonAkonadi
-  KF5::Completion
+  KF${KF_MAJOR_VERSION}::Completion
 PRIVATE
   Gpgmepp
   KF5::AkonadiWidgets
-  KF5::TextWidgets
-  KF5::I18n
+  KF${KF_MAJOR_VERSION}::TextWidgets
+  KF${KF_MAJOR_VERSION}::I18n
   KF5::MessageViewer
   KF5::MailImporter
   KF5::MessageCore
@@ -358,14 +358,14 @@ PRIVATE
   KF5::Mime
   KF5::MailTransport
   Phonon::phonon4qt${QT_MAJOR_VERSION}
-  KF5::XmlGui
-  KF5::KIOWidgets
-  KF5::IconThemes
-  KF5::Archive
-  KF5::ItemViews
-  KF5::SyntaxHighlighting
-  KF5::GuiAddons
-  KF5::Codecs
+  KF${KF_MAJOR_VERSION}::XmlGui
+  KF${KF_MAJOR_VERSION}::KIOWidgets
+  KF${KF_MAJOR_VERSION}::IconThemes
+  KF${KF_MAJOR_VERSION}::Archive
+  KF${KF_MAJOR_VERSION}::ItemViews
+  KF${KF_MAJOR_VERSION}::SyntaxHighlighting
+  KF${KF_MAJOR_VERSION}::GuiAddons
+  KF${KF_MAJOR_VERSION}::Codecs
   Qt::Xml
 )
 

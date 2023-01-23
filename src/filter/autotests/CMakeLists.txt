@@ -2,12 +2,12 @@
 # SPDX-FileCopyrightText: none
 set(mailcommon_filter_test_LIBS Qt::Test Qt::Gui KF5::AkonadiCore KF5::AkonadiMime
                                 KF5::MailCommon KF5::PimCommon Phonon::phonon4qt${QT_MAJOR_VERSION}
-                                KF5::KIOWidgets KF5::IconThemes KF5::TemplateParser
-                                KF5::MailTransport KF5::I18n KF5::SyntaxHighlighting KF5::Codecs
+                                KF${KF_MAJOR_VERSION}::KIOWidgets KF${KF_MAJOR_VERSION}::IconThemes KF5::TemplateParser
+                                KF5::MailTransport KF${KF_MAJOR_VERSION}::I18n KF${KF_MAJOR_VERSION}::SyntaxHighlighting KF${KF_MAJOR_VERSION}::Codecs
 )
 
 if (KF5_USE_PURPOSE)
-    set(mailcommon_filter_test_LIBS ${mailcommon_filter_test_LIBS} KF5::Purpose KF5::PurposeWidgets)
+    set(mailcommon_filter_test_LIBS ${mailcommon_filter_test_LIBS} KF${KF_MAJOR_VERSION}::Purpose KF${KF_MAJOR_VERSION}::PurposeWidgets)
 endif()
 
 add_definitions(-DTEST_PATH=\"${CMAKE_CURRENT_SOURCE_DIR}\")
