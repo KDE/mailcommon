@@ -5,6 +5,7 @@ Dependencies:
 - 'on': ['Linux/Qt5', 'FreeBSD/Qt5', 'Windows/Qt5']
   'require':
     'frameworks/extra-cmake-modules': '@latest'
+    'frameworks/karchive': '@latest'
     'frameworks/kcodecs': '@latest'
     'pim/akonadi' : '@same'
     'pim/akonadi-mime' : '@same'
@@ -19,6 +20,7 @@ Dependencies:
   'require':
     'frameworks/extra-cmake-modules': '@latest-kf6'
     'frameworks/kcodecs': '@latest-kf6'
+    'frameworks/karchive': '@latest-kf6'
     'pim/akonadi' : '@latest-kf6'
     'pim/akonadi-mime' : '@latest-kf6'
     'pim/kmailtransport' : '@latest-kf6'
