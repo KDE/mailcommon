@@ -35,7 +35,6 @@ if (QT_MAJOR_VERSION STREQUAL "6")
     set(KF_MIN_VERSION "5.240.0")
     set(KF_MAJOR_VERSION "6")
 else()
-    set(KF_MIN_VERSION "5.100.0")
     set(KF_MAJOR_VERSION "5")
 endif()
 
@@ -123,7 +122,7 @@ if (USE_UNITY_CMAKE_SUPPORT)
 endif()
 
 
-ecm_set_disabled_deprecation_versions(QT 5.15.2  KF 5.102.0)
+ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.102.0)
 
 
 ########### CMake Config Files ###########
