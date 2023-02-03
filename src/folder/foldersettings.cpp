@@ -217,6 +217,9 @@ bool FolderSettings::isValid() const
 void FolderSettings::writeConfig() const
 {
     const QString res = resource();
+    if (res.isEmpty()) {
+        return;
+    }
     KConfigGroup configGroup(KernelIf->config(), configGroupName(mCollection));
 
     if (mMailingListEnabled) {
@@ -320,9 +323,10 @@ QString FolderSettings::resource() const
     const QString resource = mCollection.resource();
     if (resource.isEmpty()) {
         const Collection col = CommonKernel->collectionFromId(mCollection.id());
-        Q_ASSERT(col.isValid());
-        Q_ASSERT(!col.resource().isEmpty());
-        return col.resource();
+        if (col.isValid()) {
+            Q_ASSERT(!col.resource().isEmpty());
+            return col.resource();
+        }
     }
     return resource;
 }
