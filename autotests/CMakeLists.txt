@@ -3,7 +3,7 @@
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR})
 
 add_akonadi_isolated_test(foldertreewidgettest.cpp)
-target_link_libraries(foldertreewidgettest KF5::Mime KF5::AkonadiWidgets KF5::MailCommon)
+target_link_libraries(foldertreewidgettest KPim${KF_MAJOR_VERSION}::Mime KF5::AkonadiWidgets KF5::MailCommon)
 
 add_akonadi_isolated_test(favoritestest.cpp)
-target_link_libraries(favoritestest KF5::Mime KF5::AkonadiWidgets KF5::MailCommon)
+target_link_libraries(favoritestest KPim${KF_MAJOR_VERSION}::Mime KF5::AkonadiWidgets KF5::MailCommon)

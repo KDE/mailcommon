@@ -355,7 +355,7 @@ PRIVATE
   KF5::MessageCore
   KF5::TemplateParser
   KF5::MessageList
-  KF5::Mime
+  KPim${KF_MAJOR_VERSION}::Mime
   KF5::MailTransport
   Phonon::phonon4qt${QT_MAJOR_VERSION}
   KF${KF_MAJOR_VERSION}::XmlGui
