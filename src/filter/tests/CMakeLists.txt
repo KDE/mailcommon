@@ -55,7 +55,7 @@ target_link_libraries(filteractionmissingtransportdialoggui
   KPim${KF_MAJOR_VERSION}::MailCommon
   KF${KF_MAJOR_VERSION}::I18n
   KF${KF_MAJOR_VERSION}::Completion
-  KF5::MailTransport
+  KPim${KF_MAJOR_VERSION}::MailTransport
 )
 
 add_executable(filteractionmissingaccountdialoggui filteractionmissingaccountdialoggui.cpp ../../../autotests/dummykernel.cpp  ../dialog/filteractionmissingaccountdialog.cpp)

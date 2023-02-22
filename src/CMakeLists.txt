@@ -340,7 +340,7 @@ generate_export_header(KPim${KF_MAJOR_VERSION}MailCommon BASE_NAME mailcommon)
 target_link_libraries(KPim${KF_MAJOR_VERSION}MailCommon
 PUBLIC
   KF5::AkonadiCore
-  KF5::AkonadiMime
+  KPim${KF_MAJOR_VERSION}::AkonadiMime
   KPim${KF_MAJOR_VERSION}::Libkdepim
   KF5::MessageComposer
   KF5::PimCommonAkonadi
@@ -356,7 +356,7 @@ PRIVATE
   KF5::TemplateParser
   KF5::MessageList
   KPim${KF_MAJOR_VERSION}::Mime
-  KF5::MailTransport
+  KPim${KF_MAJOR_VERSION}::MailTransport
   Phonon::phonon4qt${QT_MAJOR_VERSION}
   KF${KF_MAJOR_VERSION}::XmlGui
   KF${KF_MAJOR_VERSION}::KIOWidgets
