@@ -165,6 +165,7 @@ if (BUILD_QCH)
     set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim${KF_MAJOR_VERSION}MailCommonQchTargets.cmake\")")
 endif()
 
+if (QT_MAJOR_VERSION STREQUAL "5")
 ##
 # TODO: Backwards compatiblity. Remove in next major version
 ##
@@ -192,5 +193,5 @@ install(EXPORT KPim${KF_MAJOR_VERSION}MailCommonTargets
     FILE KPim${KF_MAJOR_VERSION}MailCommonTargets.cmake
     NAMESPACE KF5::
 )
-
+endif()
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
