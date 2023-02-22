@@ -168,7 +168,7 @@ endif()
 ##
 # TODO: Backwards compatiblity. Remove in next major version
 ##
-set(CMAKECONFIG_INSTALL_DIR_KF5 "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}MailCommon")
+set(CMAKECONFIG_INSTALL_DIR_KF5 "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5MailCommon")
 set(MAILCOMMON_KF5_COMPAT TRUE)
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimMailCommonConfig.cmake.in"
