@@ -42,11 +42,11 @@ add_resource_iface(settings.kcfg org.kde.Akonadi.POP3.Settings pop3settings)
 qt_add_dbus_interfaces(libmailcommon_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/dbusinterfaces/org.kde.Korganizer.Calendar.xml
 )
 
-add_library(KF5MailCommon)
+add_library(KPim${KF_MAJOR_VERSION}MailCommon)
 
-add_library(KF5::MailCommon ALIAS KF5MailCommon)
+add_library(KPim${KF_MAJOR_VERSION}::MailCommon ALIAS KPim${KF_MAJOR_VERSION}MailCommon)
 
-target_sources(KF5MailCommon PRIVATE
+target_sources(KPim${KF_MAJOR_VERSION}MailCommon PRIVATE
     filter/kmfilteraccountlist.cpp
     filter/kmfilterlistbox.cpp
     filter/filterselectiondialog.cpp
@@ -331,13 +331,13 @@ target_sources(KF5MailCommon PRIVATE
 
 
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KF5MailCommon PROPERTIES UNITY_BUILD ON)
+    set_target_properties(KPim${KF_MAJOR_VERSION}MailCommon PROPERTIES UNITY_BUILD ON)
     set_source_files_properties(${libmailcommon_search_SRCS} PROPERTIES SKIP_UNITY_BUILD_INCLUSION ON)
 endif()
-generate_export_header(KF5MailCommon BASE_NAME mailcommon)
+generate_export_header(KPim${KF_MAJOR_VERSION}MailCommon BASE_NAME mailcommon)
 
 
-target_link_libraries(KF5MailCommon
+target_link_libraries(KPim${KF_MAJOR_VERSION}MailCommon
 PUBLIC
   KF5::AkonadiCore
   KF5::AkonadiMime
@@ -351,7 +351,7 @@ PRIVATE
   KF${KF_MAJOR_VERSION}::TextWidgets
   KF${KF_MAJOR_VERSION}::I18n
   KF5::MessageViewer
-  KF5::MailImporter
+  KPim${KF_MAJOR_VERSION}::MailImporter
   KF5::MessageCore
   KF5::TemplateParser
   KF5::MessageList
@@ -370,25 +370,25 @@ PRIVATE
 )
 
 if (QT_MAJOR_VERSION STREQUAL "6")
-    target_link_libraries(KF5MailCommon PRIVATE QGpgmeQt6)
+    target_link_libraries(KPim${KF_MAJOR_VERSION}MailCommon PRIVATE QGpgmeQt6)
 else()
-    target_link_libraries(KF5MailCommon PRIVATE QGpgme)
+    target_link_libraries(KPim${KF_MAJOR_VERSION}MailCommon PRIVATE QGpgme)
 endif()
 
 
-target_include_directories(KF5MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon/>")
-target_include_directories(KF5MailCommon PUBLIC "$<BUILD_INTERFACE:${mailcommon_SOURCE_DIR}/src;${mailcommon_BINARY_DIR}/src;${mailcommon_SOURCE_DIR}/src/search;${mailcommon_SOURCE_DIR}/src/folder>")
+target_include_directories(KPim${KF_MAJOR_VERSION}MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}//MailCommon/>")
+target_include_directories(KPim${KF_MAJOR_VERSION}MailCommon PUBLIC "$<BUILD_INTERFACE:${mailcommon_SOURCE_DIR}/src;${mailcommon_BINARY_DIR}/src;${mailcommon_SOURCE_DIR}/src/search;${mailcommon_SOURCE_DIR}/src/folder>")
 
 
-set_target_properties(KF5MailCommon PROPERTIES
+set_target_properties(KPim${KF_MAJOR_VERSION}MailCommon PROPERTIES
     VERSION ${MAILCOMMON_VERSION}
     SOVERSION ${MAILCOMMON_SOVERSION}
     EXPORT_NAME MailCommon
 )
 
 install(TARGETS
-    KF5MailCommon
-    EXPORT KF5MailCommonTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
+    KPim${KF_MAJOR_VERSION}MailCommon
+    EXPORT KPim${KF_MAJOR_VERSION}MailCommonTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
 )
 
 if (BUILD_TESTING)
@@ -572,8 +572,8 @@ ecm_generate_headers(MailCommon_Camelcasesearchrule_HEADERS
 )
 
 ecm_generate_pri_file(BASE_NAME MailCommon
-    LIB_NAME KF5MailCommon
-    DEPS "AkonadiCore AkonadiMime MessageComposer PimCommon" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon
+    LIB_NAME KPim${KF_MAJOR_VERSION}MailCommon
+    DEPS "AkonadiCore AkonadiMime MessageComposer PimCommon" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}//MailCommon
 )
 
 install(FILES
@@ -593,7 +593,7 @@ install(FILES
     ${MailCommon_Camelcasefilterimporter_HEADERS}
     ${MailCommon_Camelcasesnippets_HEADERS}
     ${MailCommon_Camelcasewidgets_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon/MailCommon
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}//MailCommon/MailCommon
     COMPONENT Devel
 )
 
@@ -617,13 +617,13 @@ install(FILES
     ${MailCommon_filterimporter_HEADERS}
     ${MailCommon_snippets_HEADERS}
     ${MailCommon_widgets_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon/mailcommon
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}//MailCommon/mailcommon
     COMPONENT Devel
 )
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/mailcommon_export.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}//MailCommon
     COMPONENT Devel
 )
 
@@ -637,9 +637,9 @@ endif()
 
 if (BUILD_QCH)
     ecm_add_qch(
-        KF5MailCommon_QCH
-        NAME KF5MailCommon
-        BASE_NAME KF5MailCommon
+        KPim${KF_MAJOR_VERSION}MailCommon_QCH
+        NAME KPim${KF_MAJOR_VERSION}MailCommon
+        BASE_NAME KPim${KF_MAJOR_VERSION}MailCommon
         VERSION ${PIM_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API

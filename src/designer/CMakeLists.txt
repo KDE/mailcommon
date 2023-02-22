@@ -14,7 +14,7 @@ ecm_add_qtdesignerplugin(mailcommonwidgets
     WIDGETS
     MailCommon::SearchPatternEdit
     LINK_LIBRARIES
-    KF5::MailCommon
+    KPim${KF_MAJOR_VERSION}::MailCommon
     KPim${KF_MAJOR_VERSION}::Libkdepim
     KF${KF_MAJOR_VERSION}::I18n
     INSTALL_DESTINATION "${KDE_INSTALL_QTPLUGINDIR}/designer"

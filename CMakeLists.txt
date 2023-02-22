@@ -89,7 +89,7 @@ find_package(KF${KF_MAJOR_VERSION}Codecs ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
 find_package(KF5AkonadiMime ${AKONADIMIME_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim${KF_MAJOR_VERSION}Libkdepim ${LIBKDEPIM_LIB_VERSION} CONFIG REQUIRED)
-find_package(KF5MailImporter ${MAILIMPORTER_LIB_VERSION} CONFIG REQUIRED)
+find_package(KPim${KF_MAJOR_VERSION}MailImporter ${MAILIMPORTER_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5MailTransport ${KMAILTRANSPORT_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5MessageComposer ${MESSAGELIB_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5MessageList ${MESSAGELIB_LIB_VERSION} CONFIG REQUIRED)
@@ -106,7 +106,7 @@ add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Des
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX MAILCOMMON
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailcommon_version.h"
-                        PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5MailCommonConfigVersion.cmake"
+                        PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailCommonConfigVersion.cmake"
                         SOVERSION 5
 )
 
@@ -126,26 +126,26 @@ ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.103.0)
 
 
 ########### CMake Config Files ###########
-set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5MailCommon")
-
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}MailCommon")
+set(MAILCOMMON_KF5_COMPAT FALSE)
 configure_package_config_file(
-  "${CMAKE_CURRENT_SOURCE_DIR}/KF5MailCommonConfig.cmake.in"
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5MailCommonConfig.cmake"
+  "${CMAKE_CURRENT_SOURCE_DIR}/KPimMailCommonConfig.cmake.in"
+  "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailCommonConfig.cmake"
   INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
 )
 
 install(FILES
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5MailCommonConfig.cmake"
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5MailCommonConfigVersion.cmake"
+  "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailCommonConfig.cmake"
+  "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailCommonConfigVersion.cmake"
   DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
   COMPONENT Devel
 )
 
-install(EXPORT KF5MailCommonTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5MailCommonTargets.cmake NAMESPACE KF5::)
+install(EXPORT KPim${KF_MAJOR_VERSION}MailCommonTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim${KF_MAJOR_VERSION}MailCommonTargets.cmake NAMESPACE KPim${KF_MAJOR_VERSION}::)
 
 install(FILES
    ${CMAKE_CURRENT_BINARY_DIR}/mailcommon_version.h
-  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailCommon COMPONENT Devel
+  DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailCommon COMPONENT Devel
 )
 
 add_subdirectory(src)
@@ -157,12 +157,40 @@ ki18n_install(po)
 
 if (BUILD_QCH)
     ecm_install_qch_export(
-        TARGETS KF5MailCommon_QCH
-        FILE KF5MailCommonQchTargets.cmake
+        TARGETS KPim${KF_MAJOR_VERSION}MailCommon_QCH
+        FILE KPim${KF_MAJOR_VERSION}MailCommonQchTargets.cmake
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KF5MailCommonQchTargets.cmake\")")
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim${KF_MAJOR_VERSION}MailCommonQchTargets.cmake\")")
 endif()
+
+##
+# TODO: Backwards compatiblity. Remove in next major version
+##
+set(CMAKECONFIG_INSTALL_DIR_KF5 "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5MailCommon")
+set(MAILCOMMON_KF5_COMPAT TRUE)
+configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/KPimMailCommonConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailCommonConfig.cmake"
+    INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR_KF5}
+)
+
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailCommonConfig.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    COMPONENT Devel
+)
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailCommonConfigVersion.cmake"
+    RENAME "KF5MailCommonConfigVersion.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    COMPONENT Devel
+)
+install(EXPORT KPim${KF_MAJOR_VERSION}MailCommonTargets
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    FILE KPim${KF_MAJOR_VERSION}MailCommonTargets.cmake
+    NAMESPACE KF5::
+)
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
