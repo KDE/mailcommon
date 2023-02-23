@@ -371,6 +371,7 @@ PRIVATE
 
 if (QT_MAJOR_VERSION STREQUAL "6")
     target_link_libraries(KPim${KF_MAJOR_VERSION}MailCommon PRIVATE QGpgmeQt6)
+    target_link_libraries(KPim${KF_MAJOR_VERSION}MailCommon PRIVATE Qt6::Core5Compat)
 else()
     target_link_libraries(KPim${KF_MAJOR_VERSION}MailCommon PRIVATE QGpgme)
 endif()
