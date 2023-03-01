@@ -342,7 +342,7 @@ PUBLIC
   KF5::AkonadiCore
   KPim${KF_MAJOR_VERSION}::AkonadiMime
   KPim${KF_MAJOR_VERSION}::Libkdepim
-  KF5::MessageComposer
+  KPim${KF_MAJOR_VERSION}::MessageComposer
   KF5::PimCommonAkonadi
   KF${KF_MAJOR_VERSION}::Completion
 PRIVATE
@@ -350,11 +350,11 @@ PRIVATE
   KF5::AkonadiWidgets
   KF${KF_MAJOR_VERSION}::TextWidgets
   KF${KF_MAJOR_VERSION}::I18n
-  KF5::MessageViewer
+  KPim${KF_MAJOR_VERSION}::MessageViewer
   KPim${KF_MAJOR_VERSION}::MailImporter
-  KF5::MessageCore
-  KF5::TemplateParser
-  KF5::MessageList
+  KPim${KF_MAJOR_VERSION}::MessageCore
+  KPim${KF_MAJOR_VERSION}::TemplateParser
+  KPim${KF_MAJOR_VERSION}::MessageList
   KPim${KF_MAJOR_VERSION}::Mime
   KPim${KF_MAJOR_VERSION}::MailTransport
   Phonon::phonon4qt${QT_MAJOR_VERSION}
