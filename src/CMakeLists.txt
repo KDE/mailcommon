@@ -339,7 +339,7 @@ generate_export_header(KPim${KF_MAJOR_VERSION}MailCommon BASE_NAME mailcommon)
 
 target_link_libraries(KPim${KF_MAJOR_VERSION}MailCommon
 PUBLIC
-  KF5::AkonadiCore
+  KPim${KF_MAJOR_VERSION}::AkonadiCore
   KPim${KF_MAJOR_VERSION}::AkonadiMime
   KPim${KF_MAJOR_VERSION}::Libkdepim
   KPim${KF_MAJOR_VERSION}::MessageComposer
@@ -347,7 +347,7 @@ PUBLIC
   KF${KF_MAJOR_VERSION}::Completion
 PRIVATE
   Gpgmepp
-  KF5::AkonadiWidgets
+  KPim${KF_MAJOR_VERSION}::AkonadiWidgets
   KF${KF_MAJOR_VERSION}::TextWidgets
   KF${KF_MAJOR_VERSION}::I18n
   KPim${KF_MAJOR_VERSION}::MessageViewer
