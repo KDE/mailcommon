@@ -6,10 +6,6 @@ set(mailcommon_filter_test_LIBS Qt::Test Qt::Gui KPim${KF_MAJOR_VERSION}::Akonad
                                 KPim${KF_MAJOR_VERSION}::MailTransport KF${KF_MAJOR_VERSION}::I18n KF${KF_MAJOR_VERSION}::SyntaxHighlighting KF${KF_MAJOR_VERSION}::Codecs
 )
 
-if (KF5_USE_PURPOSE)
-    set(mailcommon_filter_test_LIBS ${mailcommon_filter_test_LIBS} KF${KF_MAJOR_VERSION}::Purpose KF${KF_MAJOR_VERSION}::PurposeWidgets)
-endif()
-
 add_definitions(-DTEST_PATH=\"${CMAKE_CURRENT_SOURCE_DIR}\")
 
 macro(add_mailcommon_filter_test _name)
