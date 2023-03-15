@@ -343,7 +343,7 @@ PUBLIC
   KPim${KF_MAJOR_VERSION}::AkonadiMime
   KPim${KF_MAJOR_VERSION}::Libkdepim
   KPim${KF_MAJOR_VERSION}::MessageComposer
-  KF5::PimCommonAkonadi
+  KPim${KF_MAJOR_VERSION}::PimCommonAkonadi
   KF${KF_MAJOR_VERSION}::Completion
 PRIVATE
   Gpgmepp
