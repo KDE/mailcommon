@@ -5,6 +5,7 @@ find_dependency(KPim@KF_MAJOR_VERSION@AkonadiMime "@AKONADIMIME_LIB_VERSION@")
 find_dependency(KPim@KF_MAJOR_VERSION@Libkdepim "@LIBKDEPIM_LIB_VERSION@")
 find_dependency(KPim@KF_MAJOR_VERSION@MessageComposer "@MESSAGELIB_LIB_VERSION@")
 find_dependency(KPim@KF_MAJOR_VERSION@PimCommon "@PIMCOMMON_LIB_VERSION@")
+find_dependency(KPim@KF_MAJOR_VERSION@PimCommonAkonadi "@PIMCOMMON_LIB_VERSION@")
 find_dependency(KF@KF_MAJOR_VERSION@Completion "@KF_MIN_VERSION@")
 
 if (@MAILCOMMON_KF5_COMPAT@)
