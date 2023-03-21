@@ -9,7 +9,7 @@
 
 #include <KMime/Message>
 
-#include <mailcommon_export.h>
+#include "mailcommon_export.h"
 
 namespace MailCommon
 {

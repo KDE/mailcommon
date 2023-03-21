@@ -377,7 +377,7 @@ else()
 endif()
 
 
-target_include_directories(KPim${KF_MAJOR_VERSION}MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}//MailCommon/>")
+target_include_directories(KPim${KF_MAJOR_VERSION}MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailCommon/>")
 target_include_directories(KPim${KF_MAJOR_VERSION}MailCommon PUBLIC "$<BUILD_INTERFACE:${mailcommon_SOURCE_DIR}/src;${mailcommon_BINARY_DIR}/src;${mailcommon_SOURCE_DIR}/src/search;${mailcommon_SOURCE_DIR}/src/folder>")
 
 
@@ -619,12 +619,6 @@ install(FILES
     ${MailCommon_snippets_HEADERS}
     ${MailCommon_widgets_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}//MailCommon/mailcommon
-    COMPONENT Devel
-)
-
-install(FILES
-    ${CMAKE_CURRENT_BINARY_DIR}/mailcommon_export.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}//MailCommon
     COMPONENT Devel
 )
 
