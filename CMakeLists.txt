@@ -126,10 +126,24 @@ endif()
 
 ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.104.0)
 
+add_subdirectory(src)
+if(BUILD_TESTING)
+    add_subdirectory(autotests)
+endif()
 
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}MailCommon")
 set(MAILCOMMON_KF5_COMPAT FALSE)
+if (BUILD_QCH)
+    ecm_install_qch_export(
+        TARGETS KPim${KF_MAJOR_VERSION}MailCommon_QCH
+        FILE KPim${KF_MAJOR_VERSION}MailCommonQchTargets.cmake
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+        COMPONENT Devel
+    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim${KF_MAJOR_VERSION}MailCommonQchTargets.cmake\")")
+endif()
+
 configure_package_config_file(
   "${CMAKE_CURRENT_SOURCE_DIR}/KPimMailCommonConfig.cmake.in"
   "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailCommonConfig.cmake"
@@ -150,22 +164,8 @@ install(FILES
   DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailCommon COMPONENT Devel
 )
 
-add_subdirectory(src)
-if(BUILD_TESTING)
-    add_subdirectory(autotests)
-endif()
 kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 ki18n_install(po)
-
-if (BUILD_QCH)
-    ecm_install_qch_export(
-        TARGETS KPim${KF_MAJOR_VERSION}MailCommon_QCH
-        FILE KPim${KF_MAJOR_VERSION}MailCommonQchTargets.cmake
-        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-        COMPONENT Devel
-    )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim${KF_MAJOR_VERSION}MailCommonQchTargets.cmake\")")
-endif()
 
 if (BUILD_WITH_COMPAT_LIBS)
 if (QT_MAJOR_VERSION STREQUAL "5")
@@ -196,6 +196,15 @@ install(EXPORT KPim${KF_MAJOR_VERSION}MailCommonTargets
     FILE KPim${KF_MAJOR_VERSION}MailCommonTargets.cmake
     NAMESPACE KF5::
 )
+
+if (BUILD_QCH)
+    install(FILES
+        "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailCommonQchTargets.cmake"
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+        COMPONENT Devel
+    )
 endif()
 endif()
+endif()
+
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
