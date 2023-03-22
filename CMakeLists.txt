@@ -196,6 +196,13 @@ install(EXPORT KPim${KF_MAJOR_VERSION}MailCommonTargets
     FILE KPim${KF_MAJOR_VERSION}MailCommonTargets.cmake
     NAMESPACE KF5::
 )
+if (BUILD_QCH)
+    install(FILES
+        "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailCommonQchTargets.cmake"
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+        COMPONENT Devel
+    )
+endif()
 endif()
 endif()
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
