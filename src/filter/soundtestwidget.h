@@ -56,12 +56,6 @@ public:
 
 Q_SIGNALS:
     /**
-     * This signal is emitted when the user clicked
-     * the Play button.
-     */
-    void testPressed();
-
-    /**
      * This signal is emitted when the user
      * enters a new URL.
      */
