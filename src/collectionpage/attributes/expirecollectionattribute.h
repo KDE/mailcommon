@@ -113,7 +113,7 @@ public:
     void setExpireMessagesWithValidDate(bool expireMessagesWithValidDate);
 
 private:
-    static int daysToExpire(int number, ExpireCollectionAttribute::ExpireUnits units);
+    static MAILCOMMON_NO_EXPORT int daysToExpire(int number, ExpireCollectionAttribute::ExpireUnits units);
     bool mExpireMessages = false; // true if old messages are expired
     int mUnreadExpireAge = 28; // Given in unreadExpireUnits
     int mReadExpireAge = 14; // Given in readExpireUnits

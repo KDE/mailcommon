@@ -32,11 +32,11 @@ public:
     void save(Akonadi::Collection &collection) override;
 
 private:
-    void saveAndExpire(Akonadi::Collection &collection, bool saveSettings, bool _expirenow);
-    void init();
-    void slotChanged();
-    void slotSaveAndExpire();
-    void slotConfigChanged(bool changed);
+    MAILCOMMON_NO_EXPORT void saveAndExpire(Akonadi::Collection &collection, bool saveSettings, bool _expirenow);
+    MAILCOMMON_NO_EXPORT void init();
+    MAILCOMMON_NO_EXPORT void slotChanged();
+    MAILCOMMON_NO_EXPORT void slotSaveAndExpire();
+    MAILCOMMON_NO_EXPORT void slotConfigChanged(bool changed);
     CollectionExpiryWidget *mCollectionExpiryWidget = nullptr;
     Akonadi::Collection mCollection;
     bool mChanged = false;

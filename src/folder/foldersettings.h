@@ -114,8 +114,8 @@ protected Q_SLOTS:
     void slotIdentitiesChanged();
 
 private:
-    explicit FolderSettings(const Akonadi::Collection &col, bool writeconfig);
-    QString resource() const;
+    explicit MAILCOMMON_NO_EXPORT FolderSettings(const Akonadi::Collection &col, bool writeconfig);
+    MAILCOMMON_NO_EXPORT QString resource() const;
 
     Akonadi::Collection mCollection;
 

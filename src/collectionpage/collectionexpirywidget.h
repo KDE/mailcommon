@@ -47,9 +47,9 @@ Q_SIGNALS:
     void configChanged(bool changed = true);
 
 private:
-    Q_REQUIRED_RESULT bool validateExpireFolder(bool expireNow);
-    Q_REQUIRED_RESULT MailCommon::ExpireCollectionAttribute *assignFolderAttribute(Akonadi::Collection &collection, bool &expireNow);
-    void slotChanged();
+    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT bool validateExpireFolder(bool expireNow);
+    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT MailCommon::ExpireCollectionAttribute *assignFolderAttribute(Akonadi::Collection &collection, bool &expireNow);
+    MAILCOMMON_NO_EXPORT void slotChanged();
     KPluralHandlingSpinBox *const mExpireReadMailSB;
     KPluralHandlingSpinBox *const mExpireUnreadMailSB;
     QRadioButton *mMoveToRB = nullptr;

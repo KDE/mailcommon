@@ -56,7 +56,7 @@ Q_SIGNALS:
     void iconNameChanged(const QString &);
 
 private:
-    void slotEmitChangeCheck();
+    MAILCOMMON_NO_EXPORT void slotEmitChangeCheck();
     std::unique_ptr<TagWidgetPrivate> const d;
 };
 }

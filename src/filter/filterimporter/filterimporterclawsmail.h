@@ -30,9 +30,9 @@ public:
     Q_REQUIRED_RESULT MailFilter *parseLine(const QString &line);
 
 private:
-    Q_REQUIRED_RESULT QString extractString(const QString &tmp, int &pos);
-    Q_REQUIRED_RESULT QString extractConditions(const QString &line, MailFilter *filter);
-    Q_REQUIRED_RESULT QString extractActions(const QString &line, MailFilter *filter);
-    void readStream(QTextStream &stream);
+    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString extractString(const QString &tmp, int &pos);
+    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString extractConditions(const QString &line, MailFilter *filter);
+    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString extractActions(const QString &line, MailFilter *filter);
+    MAILCOMMON_NO_EXPORT void readStream(QTextStream &stream);
 };
 }

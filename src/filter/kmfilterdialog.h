@@ -187,9 +187,9 @@ protected Q_SLOTS:
     void slotFolderChanged(const Akonadi::Collection &);
 
 private:
-    void slotExportAsSieveScript();
-    void slotHelp();
-    void importFilters(MailCommon::FilterImporterExporter::FilterType type);
+    MAILCOMMON_NO_EXPORT void slotExportAsSieveScript();
+    MAILCOMMON_NO_EXPORT void slotHelp();
+    MAILCOMMON_NO_EXPORT void importFilters(MailCommon::FilterImporterExporter::FilterType type);
 
 protected:
     bool event(QEvent *e) override;

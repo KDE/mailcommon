@@ -33,10 +33,10 @@ public:
     void save(Akonadi::Collection &col);
 
 private:
-    void slotSelectFolderAggregation();
-    void slotSelectFolderTheme();
-    void slotThemeCheckboxChanged();
-    void slotAggregationCheckboxChanged();
+    MAILCOMMON_NO_EXPORT void slotSelectFolderAggregation();
+    MAILCOMMON_NO_EXPORT void slotSelectFolderTheme();
+    MAILCOMMON_NO_EXPORT void slotThemeCheckboxChanged();
+    MAILCOMMON_NO_EXPORT void slotAggregationCheckboxChanged();
     QSharedPointer<MailCommon::FolderSettings> mFolderCollection;
     QCheckBox *mIconsCheckBox = nullptr;
     QComboBox *mShowSenderReceiverComboBox = nullptr;

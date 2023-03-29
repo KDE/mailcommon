@@ -106,17 +106,17 @@ Q_SIGNALS:
                                 const QString &attachment);
 
 private:
-    QModelIndex createGroup(const QString &groupName);
-    void createSnippet(const QModelIndex &groupIndex,
-                       const QString &snippetName,
-                       const QString &snippetText,
-                       const QString &snippetKeySequence,
-                       const QString &snippetKeyword,
-                       const QString &snippetSubject,
-                       const QString &to,
-                       const QString &cc,
-                       const QString &bcc,
-                       const QString &attachment);
+    MAILCOMMON_NO_EXPORT QModelIndex createGroup(const QString &groupName);
+    MAILCOMMON_NO_EXPORT void createSnippet(const QModelIndex &groupIndex,
+                                            const QString &snippetName,
+                                            const QString &snippetText,
+                                            const QString &snippetKeySequence,
+                                            const QString &snippetKeyword,
+                                            const QString &snippetSubject,
+                                            const QString &to,
+                                            const QString &cc,
+                                            const QString &bcc,
+                                            const QString &attachment);
     SnippetItem *mRootItem = nullptr;
     QMap<QString, QString> mSavedVariables;
 };

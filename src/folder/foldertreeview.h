@@ -99,14 +99,14 @@ Q_SIGNALS:
 private:
     enum SearchDirection { ForwardSearch, BackwardSearch };
 
-    QModelIndex indexAbove(const QModelIndex &current) const;
-    QModelIndex indexBelow(const QModelIndex &current) const;
-    QModelIndex lastChild(const QModelIndex &current) const;
-    QModelIndex nextUnreadCollection(const QModelIndex &current, SearchDirection direction) const;
+    MAILCOMMON_NO_EXPORT QModelIndex indexAbove(const QModelIndex &current) const;
+    MAILCOMMON_NO_EXPORT QModelIndex indexBelow(const QModelIndex &current) const;
+    MAILCOMMON_NO_EXPORT QModelIndex lastChild(const QModelIndex &current) const;
+    MAILCOMMON_NO_EXPORT QModelIndex nextUnreadCollection(const QModelIndex &current, SearchDirection direction) const;
 
-    bool ignoreUnreadFolder(const Akonadi::Collection &, bool) const;
-    bool allowedToEnterFolder(const Akonadi::Collection &, bool) const;
-    bool trySelectNextUnreadFolder(const QModelIndex &, SearchDirection, bool);
+    MAILCOMMON_NO_EXPORT bool ignoreUnreadFolder(const Akonadi::Collection &, bool) const;
+    MAILCOMMON_NO_EXPORT bool allowedToEnterFolder(const Akonadi::Collection &, bool) const;
+    MAILCOMMON_NO_EXPORT bool trySelectNextUnreadFolder(const QModelIndex &, SearchDirection, bool);
 
     FolderTreeWidget::ToolTipDisplayPolicy mToolTipDisplayPolicy;
     FolderTreeWidget::SortingPolicy mSortingPolicy;

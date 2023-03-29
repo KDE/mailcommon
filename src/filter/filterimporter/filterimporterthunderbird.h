@@ -31,12 +31,12 @@ public:
     static QString defaultSeaMonkeyFiltersSettingsPath();
 
 private:
-    void readStream(QTextStream &stream);
-    static QString cleanArgument(const QString &line, const QString &removeStr);
-    void extractConditions(const QString &line, MailCommon::MailFilter *filter);
-    Q_REQUIRED_RESULT QString extractActions(const QString &line, MailFilter *filter, QString &value);
-    void extractType(const QString &line, MailCommon::MailFilter *filter);
-    Q_REQUIRED_RESULT bool splitConditions(const QString &cond, MailCommon::MailFilter *filter);
-    MailFilter *parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter);
+    MAILCOMMON_NO_EXPORT void readStream(QTextStream &stream);
+    static MAILCOMMON_NO_EXPORT QString cleanArgument(const QString &line, const QString &removeStr);
+    MAILCOMMON_NO_EXPORT void extractConditions(const QString &line, MailCommon::MailFilter *filter);
+    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString extractActions(const QString &line, MailFilter *filter, QString &value);
+    MAILCOMMON_NO_EXPORT void extractType(const QString &line, MailCommon::MailFilter *filter);
+    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT bool splitConditions(const QString &cond, MailCommon::MailFilter *filter);
+    MAILCOMMON_NO_EXPORT MailFilter *parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter);
 };
 }

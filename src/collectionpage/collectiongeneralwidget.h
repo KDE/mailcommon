@@ -27,7 +27,7 @@ public:
     void load(const Akonadi::Collection &col);
 
 private:
-    void slotIdentityCheckboxChanged();
+    MAILCOMMON_NO_EXPORT void slotIdentityCheckboxChanged();
     QCheckBox *mNotifyOnNewMailCheckBox = nullptr;
     QCheckBox *mKeepRepliesInSameFolderCheckBox = nullptr;
     QCheckBox *mHideInSelectionDialogCheckBox = nullptr;

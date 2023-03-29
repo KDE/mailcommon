@@ -254,7 +254,7 @@ protected:
 private:
     static Function configValueToFunc(const char *);
     static QString functionToString(Function);
-    QString conditionToString(Function function);
+    MAILCOMMON_NO_EXPORT QString conditionToString(Function function);
 
     QByteArray mField;
     Function mFunction;

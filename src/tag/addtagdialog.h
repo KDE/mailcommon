@@ -30,9 +30,9 @@ public:
     Q_REQUIRED_RESULT Akonadi::Tag tag() const;
 
 private:
-    void slotSave();
-    void slotTagNameChanged(const QString &text);
-    void onTagCreated(KJob *job);
+    MAILCOMMON_NO_EXPORT void slotSave();
+    MAILCOMMON_NO_EXPORT void slotTagNameChanged(const QString &text);
+    MAILCOMMON_NO_EXPORT void onTagCreated(KJob *job);
     std::unique_ptr<AddTagDialogPrivate> const d;
 };
 }

@@ -53,8 +53,8 @@ Q_SIGNALS:
 
 private:
     bool acceptEvent(QDropEvent *event) const;
-    void createMenu(KActionCollection *ac);
-    void updatePalette();
+    MAILCOMMON_NO_EXPORT void createMenu(KActionCollection *ac);
+    MAILCOMMON_NO_EXPORT void updatePalette();
 
     class FavoriteCollectionWidgetPrivate;
     std::unique_ptr<FavoriteCollectionWidgetPrivate> const d;

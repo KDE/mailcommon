@@ -63,25 +63,25 @@ Q_SIGNALS:
     void error(const QString &);
 
 private:
-    void itemFetchJobResult(KJob *job);
-    void cancelJob();
-    void archiveNextFolder();
-    void onArchiveNextFolderDone(KJob *job);
-    void archiveNextMessage();
-    bool queueFolders(const Akonadi::Collection &root);
-    void processMessage(const Akonadi::Item &item);
-    Q_REQUIRED_RESULT QString pathForCollection(const Akonadi::Collection &collection) const;
-    Q_REQUIRED_RESULT QString subdirPathForCollection(const Akonadi::Collection &collection) const;
-    Q_REQUIRED_RESULT bool hasChildren(const Akonadi::Collection &collection) const;
-    void finish();
-    void abort(const QString &errorMessage);
-    bool writeDirHelper(const QString &directoryPath);
+    MAILCOMMON_NO_EXPORT void itemFetchJobResult(KJob *job);
+    MAILCOMMON_NO_EXPORT void cancelJob();
+    MAILCOMMON_NO_EXPORT void archiveNextFolder();
+    MAILCOMMON_NO_EXPORT void onArchiveNextFolderDone(KJob *job);
+    MAILCOMMON_NO_EXPORT void archiveNextMessage();
+    MAILCOMMON_NO_EXPORT bool queueFolders(const Akonadi::Collection &root);
+    MAILCOMMON_NO_EXPORT void processMessage(const Akonadi::Item &item);
+    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString pathForCollection(const Akonadi::Collection &collection) const;
+    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString subdirPathForCollection(const Akonadi::Collection &collection) const;
+    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT bool hasChildren(const Akonadi::Collection &collection) const;
+    MAILCOMMON_NO_EXPORT void finish();
+    MAILCOMMON_NO_EXPORT void abort(const QString &errorMessage);
+    MAILCOMMON_NO_EXPORT bool writeDirHelper(const QString &directoryPath);
 
     // Helper function to return the name of the given collection.
     // Some Collection's don't have the name fetched. However, in mAllFolders,
     // we have a list of Collection's that have that information in them, so
     // we can just look it up there.
-    Q_REQUIRED_RESULT QString collectionName(const Akonadi::Collection &collection) const;
+    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString collectionName(const Akonadi::Collection &collection) const;
 
     QString mRealPath;
     QUrl mMailArchivePath;

@@ -25,7 +25,7 @@ public:
     static QString defaultFiltersSettingsPath();
 
 private:
-    Q_REQUIRED_RESULT QString createUniqFilterName();
+    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString createUniqFilterName();
     void parseFilters(const QDomElement &e);
     int mFilterCount = 0;
 };

@@ -99,15 +99,15 @@ public:
 
 private:
     // Called by a timer to run the next job
-    void slotRunNextJob();
+    MAILCOMMON_NO_EXPORT void slotRunNextJob();
 
     // Called when the current job terminates
-    void slotJobFinished();
-    void restartTimer();
-    void interruptCurrentTask();
-    void runTaskNow(ScheduledTask *task);
+    MAILCOMMON_NO_EXPORT void slotJobFinished();
+    MAILCOMMON_NO_EXPORT void restartTimer();
+    MAILCOMMON_NO_EXPORT void interruptCurrentTask();
+    MAILCOMMON_NO_EXPORT void runTaskNow(ScheduledTask *task);
     using TaskList = QVector<ScheduledTask *>;
-    void removeTask(TaskList::Iterator &it);
+    MAILCOMMON_NO_EXPORT void removeTask(TaskList::Iterator &it);
 
 private:
     TaskList mTaskList; // FIFO of tasks to be run

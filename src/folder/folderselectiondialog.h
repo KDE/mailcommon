@@ -51,12 +51,12 @@ public:
     Q_REQUIRED_RESULT Akonadi::Collection::List selectedCollections() const;
 
 private Q_SLOTS:
-    void slotSelectionChanged();
-    void slotAddChildFolder();
-    void collectionCreationResult(KJob *);
-    void rowsInserted(const QModelIndex &col, int, int);
-    void slotDoubleClick(const QModelIndex &);
-    void slotFolderTreeWidgetContextMenuRequested(const QPoint &);
+    MAILCOMMON_NO_EXPORT void slotSelectionChanged();
+    MAILCOMMON_NO_EXPORT void slotAddChildFolder();
+    MAILCOMMON_NO_EXPORT void collectionCreationResult(KJob *);
+    MAILCOMMON_NO_EXPORT void rowsInserted(const QModelIndex &col, int, int);
+    MAILCOMMON_NO_EXPORT void slotDoubleClick(const QModelIndex &);
+    MAILCOMMON_NO_EXPORT void slotFolderTreeWidgetContextMenuRequested(const QPoint &);
 
 protected:
     void focusTreeView();

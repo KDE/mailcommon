@@ -49,7 +49,7 @@ Q_SIGNALS:
     void finished();
 
 private:
-    Q_REQUIRED_RESULT QPair<bool, KMime::MDN::SendingMode> modifyItem(const KMime::Message::Ptr &msg);
+    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QPair<bool, KMime::MDN::SendingMode> modifyItem(const KMime::Message::Ptr &msg);
     Akonadi::Item mItem;
     ResponseMDN mResponse = Unknown;
     KMime::MDN::SendingMode mSendingMode = KMime::MDN::SendingMode::SentAutomatically;

@@ -25,18 +25,18 @@ public:
     ~AccountConfigOrderDialog() override;
 
 private:
-    void slotOk();
-    void slotMoveUp();
-    void slotMoveDown();
-    void slotEnableControls();
-    void slotEnableAccountOrder(bool state);
+    MAILCOMMON_NO_EXPORT void slotOk();
+    MAILCOMMON_NO_EXPORT void slotMoveUp();
+    MAILCOMMON_NO_EXPORT void slotMoveDown();
+    MAILCOMMON_NO_EXPORT void slotEnableControls();
+    MAILCOMMON_NO_EXPORT void slotEnableAccountOrder(bool state);
     enum Type {
         IdentifierAccount = Qt::UserRole + 1,
     };
 
-    void writeConfig();
-    void readConfig();
-    void init();
+    MAILCOMMON_NO_EXPORT void writeConfig();
+    MAILCOMMON_NO_EXPORT void readConfig();
+    MAILCOMMON_NO_EXPORT void init();
     std::unique_ptr<AccountConfigOrderDialogPrivate> const d;
 };
 }

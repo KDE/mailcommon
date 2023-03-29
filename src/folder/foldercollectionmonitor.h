@@ -46,7 +46,7 @@ protected:
     void expireAllCollection(const QAbstractItemModel *model, bool immediate, const QModelIndex &parentIndex = QModelIndex());
 
 private:
-    void slotDeleteJob(KJob *job);
+    MAILCOMMON_NO_EXPORT void slotDeleteJob(KJob *job);
     std::unique_ptr<FolderCollectionMonitorPrivate> const d;
 };
 }

@@ -141,7 +141,7 @@ Q_SIGNALS:
 
 private:
     //@cond PRIVATE
-    FilterLog();
+    MAILCOMMON_NO_EXPORT FilterLog();
 
     class FilterLogPrivate;
     std::unique_ptr<FilterLogPrivate> const d;

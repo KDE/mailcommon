@@ -31,8 +31,8 @@ public:
     void load(const Akonadi::Collection &col);
 
 private:
-    void slotCopyGlobal();
-    void slotChanged();
+    MAILCOMMON_NO_EXPORT void slotCopyGlobal();
+    MAILCOMMON_NO_EXPORT void slotChanged();
     QCheckBox *mCustom = nullptr;
     TemplateParser::TemplatesConfiguration *mWidget = nullptr;
     QString mCollectionId;

@@ -168,14 +168,14 @@ public:
 
     void cleanup();
 private Q_SLOTS:
-    void slotServerStateChanged(Akonadi::ServerManager::State);
-    void slotFinishedTagListing(KJob *);
-    void slotReadConfig();
-    void updateTagList();
+    MAILCOMMON_NO_EXPORT void slotServerStateChanged(Akonadi::ServerManager::State);
+    MAILCOMMON_NO_EXPORT void slotFinishedTagListing(KJob *);
+    MAILCOMMON_NO_EXPORT void slotReadConfig();
+    MAILCOMMON_NO_EXPORT void updateTagList();
 
-    void slotTagAdded(const Akonadi::Tag &);
-    void slotTagChanged(const Akonadi::Tag &);
-    void slotTagRemoved(const Akonadi::Tag &);
+    MAILCOMMON_NO_EXPORT void slotTagAdded(const Akonadi::Tag &);
+    MAILCOMMON_NO_EXPORT void slotTagChanged(const Akonadi::Tag &);
+    MAILCOMMON_NO_EXPORT void slotTagRemoved(const Akonadi::Tag &);
 
 Q_SIGNALS:
     /**
@@ -188,7 +188,7 @@ Q_SIGNALS:
     void loadingFiltersDone();
 
 private:
-    FilterManager();
+    MAILCOMMON_NO_EXPORT FilterManager();
 
     class FilterManagerPrivate;
     FilterManagerPrivate *const d;
