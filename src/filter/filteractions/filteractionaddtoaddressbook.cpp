@@ -90,7 +90,7 @@ FilterAction::ReturnCode FilterActionAddToAddressBook::process(ItemContext &cont
             contact.setCategories(mCategory.split(QLatin1Char(';')));
         }
 
-        auto job = new Akonadi::AddContactJob(contact, Akonadi::Collection(mCollectionId));
+        auto job = new ContactEditor::AddContactJob(contact, Akonadi::Collection(mCollectionId));
         job->showMessageBox(false);
         job->start();
     }

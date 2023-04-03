@@ -366,6 +366,7 @@ PRIVATE
   KF${KF_MAJOR_VERSION}::SyntaxHighlighting
   KF${KF_MAJOR_VERSION}::GuiAddons
   KF${KF_MAJOR_VERSION}::Codecs
+  KPim${KF_MAJOR_VERSION}::ContactEditor
   Qt::Xml
 )
 
