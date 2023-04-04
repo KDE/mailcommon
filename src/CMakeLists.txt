@@ -42,11 +42,11 @@ add_resource_iface(settings.kcfg org.kde.Akonadi.POP3.Settings pop3settings)
 qt_add_dbus_interfaces(libmailcommon_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/dbusinterfaces/org.kde.Korganizer.Calendar.xml
 )
 
-add_library(KPim${KF_MAJOR_VERSION}MailCommon)
+add_library(KPim6MailCommon)
 
-add_library(KPim${KF_MAJOR_VERSION}::MailCommon ALIAS KPim${KF_MAJOR_VERSION}MailCommon)
+add_library(KPim6::MailCommon ALIAS KPim6MailCommon)
 
-target_sources(KPim${KF_MAJOR_VERSION}MailCommon PRIVATE
+target_sources(KPim6MailCommon PRIVATE
     filter/kmfilteraccountlist.cpp
     filter/kmfilterlistbox.cpp
     filter/filterselectiondialog.cpp
@@ -331,66 +331,66 @@ target_sources(KPim${KF_MAJOR_VERSION}MailCommon PRIVATE
 
 
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KPim${KF_MAJOR_VERSION}MailCommon PROPERTIES UNITY_BUILD ON)
+    set_target_properties(KPim6MailCommon PROPERTIES UNITY_BUILD ON)
     set_source_files_properties(${libmailcommon_search_SRCS} PROPERTIES SKIP_UNITY_BUILD_INCLUSION ON)
 endif()
-generate_export_header(KPim${KF_MAJOR_VERSION}MailCommon BASE_NAME mailcommon)
+generate_export_header(KPim6MailCommon BASE_NAME mailcommon)
 
 
-target_link_libraries(KPim${KF_MAJOR_VERSION}MailCommon
+target_link_libraries(KPim6MailCommon
 PUBLIC
-  KPim${KF_MAJOR_VERSION}::AkonadiCore
-  KPim${KF_MAJOR_VERSION}::AkonadiMime
-  KPim${KF_MAJOR_VERSION}::Libkdepim
-  KPim${KF_MAJOR_VERSION}::MessageComposer
-  KPim${KF_MAJOR_VERSION}::PimCommonAkonadi
-  KF${KF_MAJOR_VERSION}::Completion
+  KPim6::AkonadiCore
+  KPim6::AkonadiMime
+  KPim6::Libkdepim
+  KPim6::MessageComposer
+  KPim6::PimCommonAkonadi
+  KF6::Completion
 PRIVATE
   Gpgmepp
-  KPim${KF_MAJOR_VERSION}::AkonadiWidgets
-  KF${KF_MAJOR_VERSION}::TextWidgets
-  KF${KF_MAJOR_VERSION}::I18n
-  KPim${KF_MAJOR_VERSION}::MessageViewer
-  KPim${KF_MAJOR_VERSION}::MailImporter
-  KPim${KF_MAJOR_VERSION}::MessageCore
-  KPim${KF_MAJOR_VERSION}::TemplateParser
-  KPim${KF_MAJOR_VERSION}::MessageList
-  KPim${KF_MAJOR_VERSION}::Mime
-  KPim${KF_MAJOR_VERSION}::MailTransport
+  KPim6::AkonadiWidgets
+  KF6::TextWidgets
+  KF6::I18n
+  KPim6::MessageViewer
+  KPim6::MailImporter
+  KPim6::MessageCore
+  KPim6::TemplateParser
+  KPim6::MessageList
+  KPim6::Mime
+  KPim6::MailTransport
   Phonon::phonon4qt${QT_MAJOR_VERSION}
-  KF${KF_MAJOR_VERSION}::XmlGui
-  KF${KF_MAJOR_VERSION}::KIOWidgets
-  KF${KF_MAJOR_VERSION}::IconThemes
-  KF${KF_MAJOR_VERSION}::Archive
-  KF${KF_MAJOR_VERSION}::ItemViews
-  KF${KF_MAJOR_VERSION}::SyntaxHighlighting
-  KF${KF_MAJOR_VERSION}::GuiAddons
-  KF${KF_MAJOR_VERSION}::Codecs
-  KPim${KF_MAJOR_VERSION}::ContactEditor
+  KF6::XmlGui
+  KF6::KIOWidgets
+  KF6::IconThemes
+  KF6::Archive
+  KF6::ItemViews
+  KF6::SyntaxHighlighting
+  KF6::GuiAddons
+  KF6::Codecs
+  KPim6::ContactEditor
   Qt::Xml
 )
 
 if (QT_MAJOR_VERSION STREQUAL "6")
-    target_link_libraries(KPim${KF_MAJOR_VERSION}MailCommon PRIVATE QGpgmeQt6)
-    target_link_libraries(KPim${KF_MAJOR_VERSION}MailCommon PRIVATE Qt6::Core5Compat)
+    target_link_libraries(KPim6MailCommon PRIVATE QGpgmeQt6)
+    target_link_libraries(KPim6MailCommon PRIVATE Qt6::Core5Compat)
 else()
-    target_link_libraries(KPim${KF_MAJOR_VERSION}MailCommon PRIVATE QGpgme)
+    target_link_libraries(KPim6MailCommon PRIVATE QGpgme)
 endif()
 
 
-target_include_directories(KPim${KF_MAJOR_VERSION}MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailCommon/>")
-target_include_directories(KPim${KF_MAJOR_VERSION}MailCommon PUBLIC "$<BUILD_INTERFACE:${mailcommon_SOURCE_DIR}/src;${mailcommon_BINARY_DIR}/src;${mailcommon_SOURCE_DIR}/src/search;${mailcommon_SOURCE_DIR}/src/folder>")
+target_include_directories(KPim6MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/MailCommon/>")
+target_include_directories(KPim6MailCommon PUBLIC "$<BUILD_INTERFACE:${mailcommon_SOURCE_DIR}/src;${mailcommon_BINARY_DIR}/src;${mailcommon_SOURCE_DIR}/src/search;${mailcommon_SOURCE_DIR}/src/folder>")
 
 
-set_target_properties(KPim${KF_MAJOR_VERSION}MailCommon PROPERTIES
+set_target_properties(KPim6MailCommon PROPERTIES
     VERSION ${MAILCOMMON_VERSION}
     SOVERSION ${MAILCOMMON_SOVERSION}
     EXPORT_NAME MailCommon
 )
 
 install(TARGETS
-    KPim${KF_MAJOR_VERSION}MailCommon
-    EXPORT KPim${KF_MAJOR_VERSION}MailCommonTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
+    KPim6MailCommon
+    EXPORT KPim6MailCommonTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
 )
 
 if (BUILD_TESTING)
@@ -574,8 +574,8 @@ ecm_generate_headers(MailCommon_Camelcasesearchrule_HEADERS
 )
 
 ecm_generate_pri_file(BASE_NAME MailCommon
-    LIB_NAME KPim${KF_MAJOR_VERSION}MailCommon
-    DEPS "AkonadiCore AkonadiMime MessageComposer PimCommon" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}//MailCommon
+    LIB_NAME KPim6MailCommon
+    DEPS "AkonadiCore AkonadiMime MessageComposer PimCommon" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim6//MailCommon
 )
 
 install(FILES
@@ -595,7 +595,7 @@ install(FILES
     ${MailCommon_Camelcasefilterimporter_HEADERS}
     ${MailCommon_Camelcasesnippets_HEADERS}
     ${MailCommon_Camelcasewidgets_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}//MailCommon/MailCommon
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6//MailCommon/MailCommon
     COMPONENT Devel
 )
 
@@ -619,7 +619,7 @@ install(FILES
     ${MailCommon_filterimporter_HEADERS}
     ${MailCommon_snippets_HEADERS}
     ${MailCommon_widgets_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}//MailCommon/mailcommon
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6//MailCommon/mailcommon
     COMPONENT Devel
 )
 
@@ -633,9 +633,9 @@ endif()
 
 if (BUILD_QCH)
     ecm_add_qch(
-        KPim${KF_MAJOR_VERSION}MailCommon_QCH
-        NAME KPim${KF_MAJOR_VERSION}MailCommon
-        BASE_NAME KPim${KF_MAJOR_VERSION}MailCommon
+        KPim6MailCommon_QCH
+        NAME KPim6MailCommon
+        BASE_NAME KPim6MailCommon
         VERSION ${PIM_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
@@ -657,9 +657,9 @@ if (BUILD_QCH)
         #MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
         #IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
         LINK_QCHS
-            Qt${QT_MAJOR_VERSION}Core_QCH
-            Qt${QT_MAJOR_VERSION}Gui_QCH
-            Qt${QT_MAJOR_VERSION}Widgets_QCH
+            Qt6Core_QCH
+            Qt6Gui_QCH
+            Qt6Widgets_QCH
         INCLUDE_DIRS
             ${CMAKE_CURRENT_BINARY_DIR}
         BLANK_MACROS
