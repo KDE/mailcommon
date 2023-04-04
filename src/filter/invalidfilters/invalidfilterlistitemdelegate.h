@@ -22,11 +22,7 @@ public:
     void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override;
 
     Q_REQUIRED_RESULT QList<QWidget *> createItemWidgets(const QModelIndex &) const override;
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    void updateItemWidgets(const QList<QWidget *> widgets, const QStyleOptionViewItem &option, const QPersistentModelIndex &index) const override;
-#else
     void updateItemWidgets(const QList<QWidget *> &widgets, const QStyleOptionViewItem &option, const QPersistentModelIndex &index) const override;
-#endif
 Q_SIGNALS:
     void showDetails(const QString &details);
 

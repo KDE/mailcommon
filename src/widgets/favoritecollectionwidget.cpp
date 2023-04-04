@@ -55,9 +55,6 @@ FavoriteCollectionWidget::FavoriteCollectionWidget(MailCommon::MailCommonSetting
     readConfig();
 
     createMenu(xmlGuiClient->actionCollection());
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    connect(qApp, &QApplication::paletteChanged, this, &FavoriteCollectionWidget::updatePalette);
-#endif
 }
 
 FavoriteCollectionWidget::~FavoriteCollectionWidget() = default;
@@ -320,10 +317,8 @@ void FavoriteCollectionWidget::startDrag(Qt::DropActions supportedActions)
 
 bool FavoriteCollectionWidget::event(QEvent *e)
 {
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
     if (e->type() == QEvent::ApplicationPaletteChange) {
         updatePalette();
     }
-#endif
     return Akonadi::EntityListView::event(e);
 }

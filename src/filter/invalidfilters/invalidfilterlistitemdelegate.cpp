@@ -54,15 +54,9 @@ QList<QWidget *> InvalidFilterListItemDelegate::createItemWidgets(const QModelIn
     return QList<QWidget *>() << label << showInformationToolButton;
 }
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-void InvalidFilterListItemDelegate::updateItemWidgets(const QList<QWidget *> widgets,
-                                                      const QStyleOptionViewItem &option,
-                                                      const QPersistentModelIndex &index) const
-#else
 void InvalidFilterListItemDelegate::updateItemWidgets(const QList<QWidget *> &widgets,
                                                       const QStyleOptionViewItem &option,
                                                       const QPersistentModelIndex &index) const
-#endif
 {
     auto label = static_cast<QLabel *>(widgets[0]);
     const QAbstractItemModel *model = index.model();

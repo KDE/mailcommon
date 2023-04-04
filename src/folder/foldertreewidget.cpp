@@ -126,9 +126,6 @@ FolderTreeWidget::FolderTreeWidget(QWidget *parent,
         d->filterFolderLineEdit->hide();
         setAttribute(Qt::WA_InputMethodEnabled);
     }
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    connect(qApp, &QApplication::paletteChanged, this, &FolderTreeWidget::slotGeneralPaletteChanged);
-#endif
 }
 
 FolderTreeWidget::~FolderTreeWidget() = default;
@@ -387,10 +384,8 @@ bool FolderTreeWidget::eventFilter(QObject *o, QEvent *e)
 
 bool FolderTreeWidget::event(QEvent *e)
 {
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
     if (e->type() == QEvent::ApplicationPaletteChange) {
         slotGeneralPaletteChanged();
     }
-#endif
     return QWidget::event(e);
 }
