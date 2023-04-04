@@ -93,7 +93,7 @@ bool FilterAction::folderRemoved(const Akonadi::Collection &, const Akonadi::Col
     return false;
 }
 
-void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionType type, const QVector<KMime::MDN::DispositionModifier> &modifiers)
+void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionType type, const QList<KMime::MDN::DispositionModifier> &modifiers)
 {
     const KMime::Message::Ptr msg = MessageComposer::Util::message(item);
     if (!msg) {

@@ -172,7 +172,7 @@ public:
      */
     static void sendMDN(const Akonadi::Item &item,
                         KMime::MDN::DispositionType d,
-                        const QVector<KMime::MDN::DispositionModifier> &m = QVector<KMime::MDN::DispositionModifier>());
+                        const QList<KMime::MDN::DispositionModifier> &m = QList<KMime::MDN::DispositionModifier>());
 
 Q_SIGNALS:
     /**

@@ -164,7 +164,7 @@ KMime::Message::Ptr CryptoUtils::assembleMessage(const KMime::Message::Ptr &orig
     out->parse();
 
     // remove default explicit content headers added by KMime::Content::parse()
-    QVector<KMime::Headers::Base *> headers = out->headers();
+    QList<KMime::Headers::Base *> headers = out->headers();
     for (const auto hdr : std::as_const(headers)) {
         if (isContentHeader(hdr)) {
             out->removeHeader(hdr->type());

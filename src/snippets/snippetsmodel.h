@@ -85,7 +85,7 @@ public:
     Q_REQUIRED_RESULT QMap<QString, QString> savedVariables() const;
     void setSavedVariables(const QMap<QString, QString> &savedVariables);
 
-    Q_REQUIRED_RESULT QVector<SnippetsInfo> snippetsInfo() const;
+    Q_REQUIRED_RESULT QList<SnippetsInfo> snippetsInfo() const;
 
 protected:
     bool insertRows(int row, int count, const QModelIndex &parent = QModelIndex()) override;

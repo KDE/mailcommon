@@ -92,7 +92,7 @@ void FilterActionDict::insert(FilterActionNewFunc aNewFunc)
     delete action;
 }
 
-const QVector<FilterActionDesc *> &FilterActionDict::list() const
+const QList<FilterActionDesc *> &FilterActionDict::list() const
 {
     return mList;
 }

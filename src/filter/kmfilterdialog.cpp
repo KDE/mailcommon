@@ -646,7 +646,7 @@ void KMFilterDialog::importFilters(MailCommon::FilterImporterExporter::FilterTyp
     MailCommon::FilterImporterPathCache::self()->clear();
     FilterImporterExporter importer(this);
     bool canceled = false;
-    QVector<MailFilter *> filters = importer.importFilters(canceled, type);
+    QList<MailFilter *> filters = importer.importFilters(canceled, type);
     if (canceled) {
         return;
     }
@@ -656,9 +656,9 @@ void KMFilterDialog::importFilters(MailCommon::FilterImporterExporter::FilterTyp
         return;
     }
     QStringList listOfFilter;
-    QVector<MailFilter *>::ConstIterator end(filters.constEnd());
+    QList<MailFilter *>::ConstIterator end(filters.constEnd());
 
-    for (QVector<MailFilter *>::ConstIterator it = filters.constBegin(); it != end; ++it) {
+    for (QList<MailFilter *>::ConstIterator it = filters.constBegin(); it != end; ++it) {
         mFilterList->appendFilter(*it); // no need to deep copy, ownership passes to the list
         listOfFilter << (*it)->name();
     }
@@ -669,7 +669,7 @@ void KMFilterDialog::importFilters(MailCommon::FilterImporterExporter::FilterTyp
 void KMFilterDialog::slotExportFilters()
 {
     bool wasCanceled = false;
-    const QVector<MailFilter *> filters = mFilterList->filtersForSaving(false, wasCanceled);
+    const QList<MailFilter *> filters = mFilterList->filtersForSaving(false, wasCanceled);
     if (filters.isEmpty()) {
         KMessageBox::information(this, i18n("Any filter found."));
         return;
@@ -709,7 +709,7 @@ void KMFilterDialog::slotExportAsSieveScript()
                              i18n("We cannot convert all KMail filters to sieve scripts but we can try :)"),
                              i18n("Convert KMail filters to sieve scripts"));
     bool wasCanceled = false;
-    const QVector<MailFilter *> filters = mFilterList->filtersForSaving(false, wasCanceled);
+    const QList<MailFilter *> filters = mFilterList->filtersForSaving(false, wasCanceled);
     if (filters.isEmpty()) {
         return;
     }
@@ -717,7 +717,7 @@ void KMFilterDialog::slotExportAsSieveScript()
         QPointer<FilterSelectionDialog> dlg = new FilterSelectionDialog(this);
         dlg->setFilters(filters);
         if (dlg->exec() == QDialog::Accepted) {
-            QVector<MailFilter *> lst = dlg->selectedFilters();
+            QList<MailFilter *> lst = dlg->selectedFilters();
             if (!lst.isEmpty()) {
                 FilterConvertToSieve convert(lst);
                 convert.convert();

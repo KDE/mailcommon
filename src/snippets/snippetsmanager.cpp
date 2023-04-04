@@ -418,7 +418,7 @@ void SnippetsManager::SnippetsManagerPrivate::insertActionSnippet()
 void SnippetsManager::SnippetsManagerPrivate::initializeActionCollection()
 {
     if (mActionCollection) {
-        const QVector<SnippetsInfo> infos = mModel->snippetsInfo();
+        const QList<SnippetsInfo> infos = mModel->snippetsInfo();
         for (const SnippetsInfo &info : infos) {
             initializeAction(info.newName, info.keySequence, info.text, info.subject, info.to, info.cc, info.bcc, info.attachment);
         }

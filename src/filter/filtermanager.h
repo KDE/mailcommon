@@ -133,7 +133,7 @@ public:
      * write everything back into the configuration. The filter manager
      * takes ownership of the filters in the list.
      */
-    void appendFilters(const QVector<MailCommon::MailFilter *> &filters, bool replaceIfNameExists = false);
+    void appendFilters(const QList<MailCommon::MailFilter *> &filters, bool replaceIfNameExists = false);
 
     /**
      * Removes the given @p filter from the list.
@@ -145,12 +145,12 @@ public:
      * Replace the list of filters of the filter manager with the given list of @p filters.
      * The manager takes ownership of the filters.
      */
-    void setFilters(const QVector<MailCommon::MailFilter *> &filters);
+    void setFilters(const QList<MailCommon::MailFilter *> &filters);
 
     /**
      * Returns the filter list of the manager.
      */
-    QVector<MailCommon::MailFilter *> filters() const;
+    QList<MailCommon::MailFilter *> filters() const;
 
     /**
      * Should be called at the beginning of an filter list update.

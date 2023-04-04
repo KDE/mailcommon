@@ -23,7 +23,7 @@ InvalidFilterListView::InvalidFilterListView(QWidget *parent)
 
 InvalidFilterListView::~InvalidFilterListView() = default;
 
-void InvalidFilterListView::setInvalidFilters(const QVector<MailCommon::InvalidFilterInfo> &lst)
+void InvalidFilterListView::setInvalidFilters(const QList<MailCommon::InvalidFilterInfo> &lst)
 {
     for (const MailCommon::InvalidFilterInfo &info : lst) {
         model()->insertRow(0);

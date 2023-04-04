@@ -115,9 +115,9 @@ FilterActionWidget::FilterActionWidget(QWidget *parent)
     mainLayout->setSpacing(4);
 
     int index;
-    QVector<FilterActionDesc *> list = MailCommon::FilterManager::filterActionDict()->list();
-    QVector<FilterActionDesc *>::const_iterator it;
-    QVector<FilterActionDesc *>::const_iterator end(list.constEnd());
+    QList<FilterActionDesc *> list = MailCommon::FilterManager::filterActionDict()->list();
+    QList<FilterActionDesc *>::const_iterator it;
+    QList<FilterActionDesc *>::const_iterator end(list.constEnd());
     for (index = 0, it = list.constBegin(); it != end; ++it, ++index) {
         // create an instance:
         FilterAction *action = (*it)->create();
@@ -248,7 +248,7 @@ public:
     void regenerateActionListFromWidgets();
 
     FilterActionWidgetLister *const q;
-    QVector<MailCommon::FilterAction *> *mActionList = nullptr;
+    QList<MailCommon::FilterAction *> *mActionList = nullptr;
 };
 
 void FilterActionWidgetLister::FilterActionWidgetListerPrivate::regenerateActionListFromWidgets()
@@ -277,7 +277,7 @@ FilterActionWidgetLister::FilterActionWidgetLister(QWidget *parent)
 
 FilterActionWidgetLister::~FilterActionWidgetLister() = default;
 
-void FilterActionWidgetLister::setActionList(QVector<FilterAction *> *list)
+void FilterActionWidgetLister::setActionList(QList<FilterAction *> *list)
 {
     Q_ASSERT(list);
     if (d->mActionList && d->mActionList != list) {
@@ -313,10 +313,10 @@ void FilterActionWidgetLister::setActionList(QVector<FilterAction *> *list)
 
     // load the actions into the widgets
     QList<QWidget *> widgetList = widgets();
-    QVector<FilterAction *>::const_iterator aEnd(d->mActionList->constEnd());
+    QList<FilterAction *>::const_iterator aEnd(d->mActionList->constEnd());
     QList<QWidget *>::ConstIterator wIt = widgetList.constBegin();
     QList<QWidget *>::ConstIterator wEnd = widgetList.constEnd();
-    for (QVector<FilterAction *>::const_iterator aIt = d->mActionList->constBegin(); (aIt != aEnd && wIt != wEnd); ++aIt, ++wIt) {
+    for (QList<FilterAction *>::const_iterator aIt = d->mActionList->constBegin(); (aIt != aEnd && wIt != wEnd); ++aIt, ++wIt) {
         connectWidget((*wIt), (*aIt));
     }
     widgets().constFirst()->blockSignals(false);

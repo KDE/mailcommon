@@ -60,7 +60,7 @@ InvalidFilterDialog::~InvalidFilterDialog()
     writeConfig();
 }
 
-void InvalidFilterDialog::setInvalidFilters(const QVector<InvalidFilterInfo> &lst)
+void InvalidFilterDialog::setInvalidFilters(const QList<InvalidFilterInfo> &lst)
 {
     mInvalidFilterWidget->setInvalidFilters(lst);
 }

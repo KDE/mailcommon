@@ -8,7 +8,7 @@
 
 #include <QDialog>
 
-#include <QVector>
+#include <QList>
 
 class QPushButton;
 
@@ -26,8 +26,8 @@ class FilterSelectionDialog : public QDialog
 public:
     explicit FilterSelectionDialog(QWidget *parent = nullptr);
     ~FilterSelectionDialog() override;
-    void setFilters(const QVector<MailFilter *> &filters);
-    Q_REQUIRED_RESULT QVector<MailFilter *> selectedFilters() const;
+    void setFilters(const QList<MailFilter *> &filters);
+    Q_REQUIRED_RESULT QList<MailFilter *> selectedFilters() const;
 
 public Q_SLOTS:
     void slotUnselectAllButton();
@@ -38,7 +38,7 @@ private:
     void writeConfig();
     void readConfig();
     QListWidget *const filtersListWidget;
-    QVector<MailFilter *> originalFilters;
+    QList<MailFilter *> originalFilters;
     QPushButton *const selectAllButton;
     QPushButton *const unselectAllButton;
     QPushButton *mOkButton = nullptr;

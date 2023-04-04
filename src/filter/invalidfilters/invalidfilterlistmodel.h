@@ -8,7 +8,7 @@
 
 #include "invalidfilterinfo.h"
 #include <QAbstractListModel>
-#include <QVector>
+#include <QList>
 namespace MailCommon
 {
 class InvalidFilterListModel : public QAbstractListModel
@@ -27,6 +27,6 @@ public:
     Q_REQUIRED_RESULT int rowCount(const QModelIndex &parent = QModelIndex()) const override;
 
 private:
-    QVector<MailCommon::InvalidFilterInfo> mInvalidFilterItems;
+    QList<MailCommon::InvalidFilterInfo> mInvalidFilterItems;
 };
 }

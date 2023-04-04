@@ -10,8 +10,8 @@
 
 #include <QObject>
 
+#include <QList>
 #include <QTimer>
-#include <QVector>
 
 #include "folderjob.h"
 #include <Akonadi/Collection>
@@ -106,7 +106,7 @@ private:
     MAILCOMMON_NO_EXPORT void restartTimer();
     MAILCOMMON_NO_EXPORT void interruptCurrentTask();
     MAILCOMMON_NO_EXPORT void runTaskNow(ScheduledTask *task);
-    using TaskList = QVector<ScheduledTask *>;
+    using TaskList = QList<ScheduledTask *>;
     MAILCOMMON_NO_EXPORT void removeTask(TaskList::Iterator &it);
 
 private:

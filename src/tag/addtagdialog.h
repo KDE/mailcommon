@@ -11,7 +11,7 @@
 #include <Akonadi/Tag>
 #include <Akonadi/TagCreateJob>
 #include <QDialog>
-#include <QVector>
+#include <QList>
 
 class KActionCollection;
 
@@ -25,7 +25,7 @@ public:
     explicit AddTagDialog(const QList<KActionCollection *> &actions, QWidget *parent = nullptr);
     ~AddTagDialog() override;
 
-    void setTags(const QVector<MailCommon::Tag::Ptr> &tags);
+    void setTags(const QList<MailCommon::Tag::Ptr> &tags);
     Q_REQUIRED_RESULT QString label() const;
     Q_REQUIRED_RESULT Akonadi::Tag tag() const;
 

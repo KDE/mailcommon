@@ -21,7 +21,7 @@ public:
     explicit InvalidFilterDialog(QWidget *parent = nullptr);
     ~InvalidFilterDialog() override;
 
-    void setInvalidFilters(const QVector<InvalidFilterInfo> &lst);
+    void setInvalidFilters(const QList<InvalidFilterInfo> &lst);
 
 private:
     void writeConfig();

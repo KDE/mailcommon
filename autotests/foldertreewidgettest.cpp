@@ -126,8 +126,8 @@ private Q_SLOTS:
     {
         // Test creating more knut resources.
         // This tests that ETM and proxies on top update correctly, and it tests toplevel collection order.
-        const QVector<int> numFolders{1, 5, 2};
-        QVector<Collection> topLevelCollections;
+        const QList<int> numFolders{1, 5, 2};
+        QList<Collection> topLevelCollections;
         const AgentType agentType = AgentManager::self()->type(QStringLiteral("akonadi_knut_resource"));
         QVERIFY(agentType.isValid());
         mFolderNames = QStringList{"res3", "res1", "res2"}; // according to resourceOrder above (the folder names are defined in testdata-res*.xml)

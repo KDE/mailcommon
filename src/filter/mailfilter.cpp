@@ -76,7 +76,7 @@ MailFilter::MailFilter(const MailFilter &aFilter)
     mIcon = aFilter.icon();
     mShortcut = aFilter.shortcut();
 
-    QVectorIterator<FilterAction *> it(aFilter.mActions);
+    QListIterator<FilterAction *> it(aFilter.mActions);
     while (it.hasNext()) {
         FilterAction *action = it.next();
         FilterActionDesc *desc = FilterManager::filterActionDict()->value(action->name());
@@ -124,8 +124,8 @@ QString MailFilter::name() const
 
 MailFilter::ReturnCode MailFilter::execActions(ItemContext &context, bool &stopIt, bool applyOnOutbound) const
 {
-    QVector<FilterAction *>::const_iterator it(mActions.constBegin());
-    QVector<FilterAction *>::const_iterator end(mActions.constEnd());
+    QList<FilterAction *>::const_iterator it(mActions.constBegin());
+    QList<FilterAction *>::const_iterator end(mActions.constEnd());
     for (; it != end; ++it) {
         if (FilterLog::instance()->isLogging()) {
             const QString logText(i18n("<b>Applying filter action:</b> %1", (*it)->displayString()));
@@ -158,12 +158,12 @@ MailFilter::ReturnCode MailFilter::execActions(ItemContext &context, bool &stopI
     return GoOn;
 }
 
-QVector<FilterAction *> *MailFilter::actions()
+QList<FilterAction *> *MailFilter::actions()
 {
     return &mActions;
 }
 
-const QVector<FilterAction *> *MailFilter::actions() const
+const QList<FilterAction *> *MailFilter::actions() const
 {
     return &mActions;
 }
@@ -255,7 +255,7 @@ SearchRule::RequiredPart MailFilter::requiredPart(const QString &id) const
 
     int requiredPartByActions = SearchRule::Envelope;
 
-    QVector<FilterAction *> actionList = *actions();
+    QList<FilterAction *> actionList = *actions();
     if (!actionList.isEmpty()) {
         requiredPartByActions = (*std::max_element(actionList.constBegin(), actionList.constEnd(), [](auto *lhs, auto *rhs) {
                                     return lhs->requiredPart() < rhs->requiredPart();
@@ -273,7 +273,7 @@ void MailFilter::agentRemoved(const QString &identifier)
 
 void MailFilter::folderRemoved(const Akonadi::Collection &aFolder, const Akonadi::Collection &aNewFolder)
 {
-    QVectorIterator<FilterAction *> it(mActions);
+    QListIterator<FilterAction *> it(mActions);
     while (it.hasNext()) {
         it.next()->folderRemoved(aFolder, aNewFolder);
     }
@@ -480,8 +480,8 @@ void MailFilter::generateSieveScript(QStringList &requiresModules, QString &code
 {
     mPattern.generateSieveScript(requiresModules, code);
 
-    QVector<FilterAction *>::const_iterator it;
-    QVector<FilterAction *>::const_iterator end(mActions.constEnd());
+    QList<FilterAction *>::const_iterator it;
+    QList<FilterAction *>::const_iterator end(mActions.constEnd());
 
     const QString indentationStr{QStringLiteral("    ")};
     code += QLatin1String(")\n{\n");
@@ -545,8 +545,8 @@ void MailFilter::writeConfig(KConfigGroup &config, bool exportFilter) const
     config.writeEntry("Enabled", bEnabled);
     int i;
 
-    QVector<FilterAction *>::const_iterator it;
-    QVector<FilterAction *>::const_iterator end(mActions.constEnd());
+    QList<FilterAction *>::const_iterator it;
+    QList<FilterAction *>::const_iterator end(mActions.constEnd());
 
     for (i = 0, it = mActions.constBegin(); it != end; ++it, ++i) {
         config.writeEntry(QStringLiteral("action-name-%1").arg(i), (*it)->name());
@@ -568,7 +568,7 @@ QString MailFilter::purify(bool removeAction)
         }
         informationAboutNotValidAction += i18n("Any action defined.");
     } else {
-        QVectorIterator<FilterAction *> it(mActions);
+        QListIterator<FilterAction *> it(mActions);
         it.toBack();
         while (it.hasPrevious()) {
             FilterAction *action = it.previous();
@@ -621,8 +621,8 @@ const QString MailFilter::asString() const
 
     result += QStringLiteral("Filter is %1\n").arg(bEnabled ? QStringLiteral("enabled") : QStringLiteral("disabled"));
 
-    QVector<FilterAction *>::const_iterator it(mActions.constBegin());
-    QVector<FilterAction *>::const_iterator end(mActions.constEnd());
+    QList<FilterAction *>::const_iterator it(mActions.constBegin());
+    QList<FilterAction *>::const_iterator end(mActions.constEnd());
     for (; it != end; ++it) {
         result += QStringLiteral("    action: ");
         result += (*it)->label();
@@ -677,7 +677,7 @@ QDataStream &MailCommon::operator<<(QDataStream &stream, const MailCommon::MailF
     stream << filter.mPattern.serialize();
 
     stream << filter.mActions.count();
-    QVectorIterator<FilterAction *> it(filter.mActions);
+    QListIterator<FilterAction *> it(filter.mActions);
     while (it.hasNext()) {
         const FilterAction *action = it.next();
         stream << action->name();

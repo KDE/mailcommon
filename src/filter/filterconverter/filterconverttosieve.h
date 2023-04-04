@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <QVector>
+#include <QList>
 
 namespace MailCommon
 {
@@ -14,12 +14,12 @@ class MailFilter;
 class FilterConvertToSieve
 {
 public:
-    FilterConvertToSieve(const QVector<MailFilter *> &filters);
+    FilterConvertToSieve(const QList<MailFilter *> &filters);
     ~FilterConvertToSieve();
 
     void convert();
 
 private:
-    const QVector<MailFilter *> mListFilters;
+    const QList<MailFilter *> mListFilters;
 };
 }

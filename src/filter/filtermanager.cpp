@@ -43,7 +43,7 @@ public:
 
     FilterManager *const q;
     OrgFreedesktopAkonadiMailFilterAgentInterface *mMailFilterAgentInterface = nullptr;
-    QVector<MailCommon::MailFilter *> mFilters;
+    QList<MailCommon::MailFilter *> mFilters;
     Akonadi::Monitor *const mMonitor;
     bool mInitialized = false;
 };
@@ -279,7 +279,7 @@ void FilterManager::filter(const Akonadi::Item::List &messages, SearchRule::Requ
     d->mMailFilterAgentInterface->applySpecificFilters(itemIds, static_cast<int>(requiredPart), listFilters);
 }
 
-void FilterManager::setFilters(const QVector<MailCommon::MailFilter *> &filters)
+void FilterManager::setFilters(const QList<MailCommon::MailFilter *> &filters)
 {
     beginUpdate();
     d->clear();
@@ -287,12 +287,12 @@ void FilterManager::setFilters(const QVector<MailCommon::MailFilter *> &filters)
     endUpdate();
 }
 
-QVector<MailCommon::MailFilter *> FilterManager::filters() const
+QList<MailCommon::MailFilter *> FilterManager::filters() const
 {
     return d->mFilters;
 }
 
-void FilterManager::appendFilters(const QVector<MailCommon::MailFilter *> &filters, bool replaceIfNameExists)
+void FilterManager::appendFilters(const QList<MailCommon::MailFilter *> &filters, bool replaceIfNameExists)
 {
     beginUpdate();
     if (replaceIfNameExists) {

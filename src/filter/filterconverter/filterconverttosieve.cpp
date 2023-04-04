@@ -12,7 +12,7 @@
 
 using namespace MailCommon;
 
-FilterConvertToSieve::FilterConvertToSieve(const QVector<MailFilter *> &filters)
+FilterConvertToSieve::FilterConvertToSieve(const QList<MailFilter *> &filters)
     : mListFilters(filters)
 {
 }

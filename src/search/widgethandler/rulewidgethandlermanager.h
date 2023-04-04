@@ -10,7 +10,7 @@
 #include "search/searchpattern.h"
 
 #include <QByteArray>
-#include <QVector>
+#include <QList>
 
 class QObject;
 class QString;
@@ -60,10 +60,10 @@ public:
     void update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const;
 
 private:
-    using const_iterator = QVector<const RuleWidgetHandler *>::const_iterator;
-    using iterator = QVector<const RuleWidgetHandler *>::iterator;
+    using const_iterator = QList<const RuleWidgetHandler *>::const_iterator;
+    using iterator = QList<const RuleWidgetHandler *>::iterator;
 
-    QVector<const RuleWidgetHandler *> mHandlers;
+    QList<const RuleWidgetHandler *> mHandlers;
     bool mIsBalooSearch = false;
 };
 } // namespace MailCommon

@@ -46,7 +46,7 @@ static KMime::Content *findMimeNodeForIndex(KMime::Content *node, int &index)
         return node;
     }
 
-    const QVector<KMime::Content *> lstContents = node->contents();
+    const QList<KMime::Content *> lstContents = node->contents();
     for (KMime::Content *child : lstContents) {
         KMime::Content *result = findMimeNodeForIndex(child, --index);
         if (result) {
@@ -57,7 +57,7 @@ static KMime::Content *findMimeNodeForIndex(KMime::Content *node, int &index)
     return nullptr;
 }
 
-QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Message::Ptr &aMsg, QVector<QTemporaryFile *> &aTempFileList) const
+QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Message::Ptr &aMsg, QList<QTemporaryFile *> &aTempFileList) const
 {
     QString result = mParameter;
     QList<int> argList;
@@ -184,7 +184,7 @@ FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &co
         return ErrorButGoOn;
     }
 
-    QVector<QTemporaryFile *> atmList;
+    QList<QTemporaryFile *> atmList;
     atmList.append(inFile);
 
     QString commandLine = substituteCommandLineArgsFor(aMsg, atmList);

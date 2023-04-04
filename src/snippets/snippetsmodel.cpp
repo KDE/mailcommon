@@ -63,7 +63,7 @@ public:
     void setAttachment(const QString &attachment);
 
 private:
-    QVector<SnippetItem *> mChildItems;
+    QList<SnippetItem *> mChildItems;
     SnippetItem *mParentItem = nullptr;
 
     bool mIsGroup = false;
@@ -661,9 +661,9 @@ void SnippetsModel::setSavedVariables(const QMap<QString, QString> &savedVariabl
     mSavedVariables = savedVariables;
 }
 
-QVector<SnippetsInfo> SnippetsModel::snippetsInfo() const
+QList<SnippetsInfo> SnippetsModel::snippetsInfo() const
 {
-    QVector<SnippetsInfo> infos;
+    QList<SnippetsInfo> infos;
     const int groupCount = rowCount();
 
     for (int i = 0; i < groupCount; ++i) {

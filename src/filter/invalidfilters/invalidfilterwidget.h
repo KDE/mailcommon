@@ -24,7 +24,7 @@ public:
     explicit InvalidFilterWidget(QWidget *parent = nullptr);
     ~InvalidFilterWidget() override;
 
-    void setInvalidFilters(const QVector<MailCommon::InvalidFilterInfo> &lst);
+    void setInvalidFilters(const QList<MailCommon::InvalidFilterInfo> &lst);
 Q_SIGNALS:
     void showDetails(const QString &);
     void hideInformationWidget();

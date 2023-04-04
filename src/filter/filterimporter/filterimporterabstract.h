@@ -7,8 +7,8 @@
 #pragma once
 
 #include "mailcommon_export.h"
+#include <QList>
 #include <QStringList>
-#include <QVector>
 
 class QFile;
 class QDomDocument;
@@ -22,7 +22,7 @@ class MAILCOMMON_EXPORT FilterImporterAbstract
 public:
     explicit FilterImporterAbstract(bool interactive = true);
     ~FilterImporterAbstract();
-    Q_REQUIRED_RESULT QVector<MailFilter *> importFilter() const;
+    Q_REQUIRED_RESULT QList<MailFilter *> importFilter() const;
     Q_REQUIRED_RESULT QStringList emptyFilter() const;
 
 protected:
@@ -30,7 +30,7 @@ protected:
     void createFilterAction(MailCommon::MailFilter *filter, const QString &actionName, const QString &value);
     bool loadDomElement(QDomDocument &doc, QFile *file);
 
-    QVector<MailFilter *> mListMailFilter;
+    QList<MailFilter *> mListMailFilter;
     QStringList mEmptyFilter;
 
 private:

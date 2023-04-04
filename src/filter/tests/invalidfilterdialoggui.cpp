@@ -13,7 +13,7 @@ int main(int argc, char **argv)
     QApplication app(argc, argv);
 
     auto w = new MailCommon::InvalidFilterDialog();
-    QVector<MailCommon::InvalidFilterInfo> infoLst;
+    QList<MailCommon::InvalidFilterInfo> infoLst;
     for (int i = 0; i < 10; ++i) {
         MailCommon::InvalidFilterInfo info;
         info.setInformation(QStringLiteral("information %1").arg(i));

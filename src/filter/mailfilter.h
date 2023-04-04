@@ -16,7 +16,7 @@
 #include <QKeySequence>
 
 #include <QDataStream>
-#include <QVector>
+#include <QList>
 
 class KConfigGroup;
 
@@ -117,10 +117,10 @@ public:
     /** Provides a reference to the internal action list. If your used
       the @p setAction() and @p action() functions before, please
       convert to using myFilter->actions()->at() and friends now. */
-    QVector<FilterAction *> *actions();
+    QList<FilterAction *> *actions();
 
     /** Provides a reference to the internal action list. Const version. */
-    const QVector<FilterAction *> *actions() const;
+    const QList<FilterAction *> *actions() const;
 
     /** Provides a reference to the internal pattern. If you used the
       @p matches() function before, please convert to using
@@ -319,7 +319,7 @@ public:
 private:
     QString mIdentifier;
     SearchPattern mPattern;
-    QVector<FilterAction *> mActions;
+    QList<FilterAction *> mActions;
     QStringList mAccounts;
     QString mIcon;
     QString mToolbarName;

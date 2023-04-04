@@ -25,7 +25,7 @@ void InvalidFilterListWidgetTest::shouldHaveDefaultValue()
 void InvalidFilterListWidgetTest::shouldAddInvalidFilters()
 {
     MailCommon::InvalidFilterListView w;
-    QVector<MailCommon::InvalidFilterInfo> lst;
+    QList<MailCommon::InvalidFilterInfo> lst;
     lst.append(MailCommon::InvalidFilterInfo(QStringLiteral("foo"), QStringLiteral("bla")));
     lst.append(MailCommon::InvalidFilterInfo(QStringLiteral("foo1"), QStringLiteral("bla1")));
     lst.append(MailCommon::InvalidFilterInfo(QStringLiteral("foo2"), QStringLiteral("bla2")));
