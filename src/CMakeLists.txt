@@ -357,7 +357,7 @@ PRIVATE
   KPim6::MessageList
   KPim6::Mime
   KPim6::MailTransport
-  Phonon::phonon4qt${QT_MAJOR_VERSION}
+  Phonon::phonon4qt6
   KF6::XmlGui
   KF6::KIOWidgets
   KF6::IconThemes
@@ -370,12 +370,8 @@ PRIVATE
   Qt::Xml
 )
 
-if (QT_MAJOR_VERSION STREQUAL "6")
-    target_link_libraries(KPim6MailCommon PRIVATE QGpgmeQt6)
-    target_link_libraries(KPim6MailCommon PRIVATE Qt6::Core5Compat)
-else()
-    target_link_libraries(KPim6MailCommon PRIVATE QGpgme)
-endif()
+target_link_libraries(KPim6MailCommon PRIVATE QGpgmeQt6)
+target_link_libraries(KPim6MailCommon PRIVATE Qt6::Core5Compat)
 
 
 target_include_directories(KPim6MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/MailCommon/>")

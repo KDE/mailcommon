@@ -10,7 +10,7 @@ ecm_qtdesignerplugin_widget(MailCommon::SearchPatternEdit
 
 ecm_add_qtdesignerplugin(mailcommonwidgets
     NAME KDEPimMailCommonWidgets
-    OUTPUT_NAME mailcommon${QT_MAJOR_VERSION}widgets
+    OUTPUT_NAME mailcommon6widgets
     WIDGETS
     MailCommon::SearchPatternEdit
     LINK_LIBRARIES

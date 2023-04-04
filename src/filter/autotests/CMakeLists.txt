@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
 set(mailcommon_filter_test_LIBS Qt::Test Qt::Gui KPim6::AkonadiCore KPim6::AkonadiMime
-                                KPim6::MailCommon KPim6::PimCommon Phonon::phonon4qt${QT_MAJOR_VERSION}
+                                KPim6::MailCommon KPim6::PimCommon Phonon::phonon4qt6
                                 KF6::KIOWidgets KF6::IconThemes KPim6::TemplateParser
                                 KPim6::ContactEditor
                                 KPim6::MailTransport KF6::I18n KF6::SyntaxHighlighting KF6::Codecs
