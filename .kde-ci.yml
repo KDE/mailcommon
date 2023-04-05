@@ -16,16 +16,3 @@ Dependencies:
     'pim/messagelib' : '@same'
     'pim/pimcommon' : '@same'
 
-- 'on': ['Linux/Qt6', 'FreeBSD/Qt6', 'Windows/Qt6']
-  'require':
-    'frameworks/extra-cmake-modules': '@latest-kf6'
-    'frameworks/kcodecs': '@latest-kf6'
-    'frameworks/karchive': '@latest-kf6'
-    'pim/akonadi' : '@latest-kf6'
-    'pim/akonadi-mime' : '@latest-kf6'
-    'pim/kmailtransport' : '@latest-kf6'
-    'pim/kmime' : '@latest-kf6'
-    'pim/libkdepim' : '@latest-kf6'
-    'pim/mailimporter' : '@latest-kf6'
-    'pim/messagelib' : '@latest-kf6'
-    'pim/pimcommon' : '@latest-kf6'
