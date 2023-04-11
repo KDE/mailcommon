@@ -83,6 +83,7 @@ find_package(KPim6PimCommonAkonadi ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6TemplateParser ${MESSAGELIB_LIB_VERSION} CONFIG REQUIRED)
 find_package(Phonon4Qt6 ${PHONON_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6ContactEditor ${AKONADICONTACT_LIB_VERSION} CONFIG REQUIRED)
+find_package(KPim6IdentityManagement ${KMIME_LIB_VERSION} CONFIG REQUIRED)
 
 option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
 add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Designer")

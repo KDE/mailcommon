@@ -9,7 +9,7 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil_p.h"
 #include <Akonadi/NewMailNotifierAttribute>
-#include <KIdentityManagement/IdentityCombo>
+#include <KIdentityManagementWidgets/IdentityCombo>
 #include <KLocalizedString>
 #include <QCheckBox>
 #include <QFormLayout>
@@ -55,7 +55,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     topLayout->addRow(QString(), mUseDefaultIdentityCheckBox);
     connect(mUseDefaultIdentityCheckBox, &QCheckBox::stateChanged, this, &CollectionGeneralWidget::slotIdentityCheckboxChanged);
 
-    mIdentityComboBox = new KIdentityManagement::IdentityCombo(KernelIf->identityManager(), this);
+    mIdentityComboBox = new KIdentityManagementWidgets::IdentityCombo(KernelIf->identityManager(), this);
     mIdentityComboBox->setWhatsThis(
         i18n("Select the sender identity to be used when writing new mail "
              "or replying to mail in this folder. This means that if you are in "

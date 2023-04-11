@@ -8,7 +8,7 @@
 #include "../../autotests/dummykernel.h"
 #include "../../kernel/mailkernel.h"
 #include "../filter/dialog/filteractionmissingidentitydialog.h"
-#include <KIdentityManagement/IdentityCombo>
+#include <KIdentityManagementWidgets/IdentityCombo>
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QStandardPaths>
@@ -39,7 +39,7 @@ void FilterActionMissingIdentityDialogTest::shouldHaveDefaultValue()
     QVERIFY(label);
     QVERIFY(!label->text().isEmpty());
 
-    auto *mComboBoxIdentity = dlg.findChild<KIdentityManagement::IdentityCombo *>(QStringLiteral("comboboxidentity"));
+    auto *mComboBoxIdentity = dlg.findChild<KIdentityManagementWidgets::IdentityCombo *>(QStringLiteral("comboboxidentity"));
     QVERIFY(mComboBoxIdentity);
 
     auto *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));

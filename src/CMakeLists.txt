@@ -346,6 +346,7 @@ PUBLIC
   KPim6::PimCommonAkonadi
   KF6::Completion
 PRIVATE
+  KPim6::IdentityManagementWidgets
   Gpgmepp
   KPim6::AkonadiWidgets
   KF6::TextWidgets

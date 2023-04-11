@@ -8,7 +8,7 @@
 
 #include <QDialog>
 
-namespace KIdentityManagement
+namespace KIdentityManagementWidgets
 {
 class IdentityCombo;
 }
@@ -25,6 +25,6 @@ public:
 private:
     void writeConfig();
     void readConfig();
-    KIdentityManagement::IdentityCombo *mComboBoxIdentity = nullptr;
+    KIdentityManagementWidgets::IdentityCombo *mComboBoxIdentity = nullptr;
 };
 }

@@ -11,7 +11,7 @@
 #include "redirectwidget.h"
 
 #include <KIdentityManagement/Identity>
-#include <KIdentityManagement/IdentityCombo>
+#include <KIdentityManagementWidgets/IdentityCombo>
 
 #include <MailTransport/TransportComboBox>
 
@@ -53,7 +53,7 @@ public:
     RedirectWidget *mEditBcc = nullptr;
 
     RedirectDialog::SendMode mSendMode;
-    KIdentityManagement::IdentityCombo *mComboboxIdentity = nullptr;
+    KIdentityManagementWidgets::IdentityCombo *mComboboxIdentity = nullptr;
     MailTransport::TransportComboBox *mTransportCombobox = nullptr;
     QPushButton *mUser1Button = nullptr;
     QPushButton *mUser2Button = nullptr;
@@ -148,7 +148,7 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
     // it is necessary to explicitly add spacing between the combo boxes.
     // The layout default spacing is copied from the main layout.
     formLayout->addItem(new QSpacerItem(1, mainLayout->spacing(), QSizePolicy::Fixed, QSizePolicy::Fixed));
-    d->mComboboxIdentity = new KIdentityManagement::IdentityCombo(KernelIf->identityManager());
+    d->mComboboxIdentity = new KIdentityManagementWidgets::IdentityCombo(KernelIf->identityManager());
     formLayout->addRow(i18n("Identity:"), d->mComboboxIdentity);
 
     formLayout->addItem(new QSpacerItem(1, mainLayout->spacing(), QSizePolicy::Fixed, QSizePolicy::Fixed));

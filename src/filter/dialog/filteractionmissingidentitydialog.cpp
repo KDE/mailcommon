@@ -18,7 +18,7 @@
 #include <QVBoxLayout>
 #include <QWindow>
 
-#include <KIdentityManagement/IdentityCombo>
+#include <KIdentityManagementWidgets/IdentityCombo>
 
 using namespace MailCommon;
 namespace
@@ -40,7 +40,7 @@ FilterActionMissingIdentityDialog::FilterActionMissingIdentityDialog(const QStri
              filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
-    mComboBoxIdentity = new KIdentityManagement::IdentityCombo(KernelIf->identityManager(), this);
+    mComboBoxIdentity = new KIdentityManagementWidgets::IdentityCombo(KernelIf->identityManager(), this);
     mComboBoxIdentity->setObjectName(QStringLiteral("comboboxidentity"));
     mainLayout->addWidget(mComboBoxIdentity);
 

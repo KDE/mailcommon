@@ -12,8 +12,8 @@
 #include "kernel/mailkernel.h"
 
 #include <KIdentityManagement/Identity>
-#include <KIdentityManagement/IdentityCombo>
 #include <KIdentityManagement/IdentityManager>
+#include <KIdentityManagementWidgets/IdentityCombo>
 
 #include <KLocalizedString>
 #include <QPointer>
@@ -89,17 +89,17 @@ SearchRule::RequiredPart FilterActionSetIdentity::requiredPart() const
 
 QWidget *FilterActionSetIdentity::createParamWidget(QWidget *parent) const
 {
-    auto comboBox = new KIdentityManagement::IdentityCombo(KernelIf->identityManager(), parent);
+    auto comboBox = new KIdentityManagementWidgets::IdentityCombo(KernelIf->identityManager(), parent);
     comboBox->setObjectName(QStringLiteral("identitycombobox"));
     comboBox->setCurrentIdentity(mParameter);
 
-    connect(comboBox, qOverload<int>(&KIdentityManagement::IdentityCombo::currentIndexChanged), this, &FilterActionSetIdentity::filterActionModified);
+    connect(comboBox, qOverload<int>(&KIdentityManagementWidgets::IdentityCombo::currentIndexChanged), this, &FilterActionSetIdentity::filterActionModified);
     return comboBox;
 }
 
 void FilterActionSetIdentity::applyParamWidgetValue(QWidget *paramWidget)
 {
-    const KIdentityManagement::IdentityCombo *comboBox = qobject_cast<KIdentityManagement::IdentityCombo *>(paramWidget);
+    const KIdentityManagementWidgets::IdentityCombo *comboBox = qobject_cast<KIdentityManagementWidgets::IdentityCombo *>(paramWidget);
     Q_ASSERT(comboBox);
 
     mParameter = comboBox->currentIdentity();
@@ -107,7 +107,7 @@ void FilterActionSetIdentity::applyParamWidgetValue(QWidget *paramWidget)
 
 void FilterActionSetIdentity::clearParamWidget(QWidget *paramWidget) const
 {
-    auto comboBox = qobject_cast<KIdentityManagement::IdentityCombo *>(paramWidget);
+    auto comboBox = qobject_cast<KIdentityManagementWidgets::IdentityCombo *>(paramWidget);
     Q_ASSERT(comboBox);
 
     comboBox->setCurrentIndex(0);
@@ -115,7 +115,7 @@ void FilterActionSetIdentity::clearParamWidget(QWidget *paramWidget) const
 
 void FilterActionSetIdentity::setParamWidgetValue(QWidget *paramWidget) const
 {
-    auto comboBox = qobject_cast<KIdentityManagement::IdentityCombo *>(paramWidget);
+    auto comboBox = qobject_cast<KIdentityManagementWidgets::IdentityCombo *>(paramWidget);
     Q_ASSERT(comboBox);
 
     comboBox->setCurrentIdentity(mParameter);

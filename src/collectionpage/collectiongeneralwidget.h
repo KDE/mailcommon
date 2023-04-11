@@ -10,7 +10,7 @@
 #include <Akonadi/Collection>
 #include <QWidget>
 class QCheckBox;
-namespace KIdentityManagement
+namespace KIdentityManagementWidgets
 {
 class IdentityCombo;
 }
@@ -32,7 +32,7 @@ private:
     QCheckBox *mKeepRepliesInSameFolderCheckBox = nullptr;
     QCheckBox *mHideInSelectionDialogCheckBox = nullptr;
     QCheckBox *mUseDefaultIdentityCheckBox = nullptr;
-    KIdentityManagement::IdentityCombo *mIdentityComboBox = nullptr;
+    KIdentityManagementWidgets::IdentityCombo *mIdentityComboBox = nullptr;
     QSharedPointer<MailCommon::FolderSettings> mFolderCollection;
 };
 }
