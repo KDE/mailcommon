@@ -40,6 +40,7 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
     buttonBox->addButton(saveButton, QDialogButtonBox::ActionRole);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterConvertToSieveResultDialog::reject);
     saveButton->setText(i18n("Save..."));
+    saveButton->setIcon(QIcon::fromTheme("document-save"));
     saveButton->setObjectName(QStringLiteral("savebutton"));
     saveButton->setDefault(true);
     setModal(true);
