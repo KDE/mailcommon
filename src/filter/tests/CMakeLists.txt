@@ -18,7 +18,7 @@ target_link_libraries(invalidfilterdialoggui
   KF6::I18n
 )
 
-add_executable(kmfilterdialogtestgui kmfilterdialogtestgui.cpp ../../../autotests/dummykernel.cpp kmfilterdialogtestgui.h)
+add_executable(kmfilterdialogtestgui kmfilterdialogtestgui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h kmfilterdialogtestgui.h)
 ecm_mark_as_test(kmfilterdialogtestgui)
 target_link_libraries(kmfilterdialogtestgui
   Qt::Core
@@ -27,7 +27,7 @@ target_link_libraries(kmfilterdialogtestgui
   KF6::I18n
 )
 
-add_executable(filteractionmissingsoundurldialogui filteractionmissingsoundurldialogui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingsoundurldialog.cpp)
+add_executable(filteractionmissingsoundurldialogui filteractionmissingsoundurldialogui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h ../dialog/filteractionmissingsoundurldialog.cpp)
 ecm_mark_as_test(filteractionmissingsoundurldialogui)
 target_link_libraries(filteractionmissingsoundurldialogui
   Qt::Core
@@ -37,7 +37,7 @@ target_link_libraries(filteractionmissingsoundurldialogui
   KF6::KIOWidgets
 )
 
-add_executable(filteractionmissingtemplatedialoggui filteractionmissingtemplatedialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtemplatedialog.cpp)
+add_executable(filteractionmissingtemplatedialoggui filteractionmissingtemplatedialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h ../dialog/filteractionmissingtemplatedialog.cpp)
 ecm_mark_as_test(filteractionmissingtemplatedialoggui)
 target_link_libraries(filteractionmissingtemplatedialoggui
   Qt::Core
@@ -47,7 +47,7 @@ target_link_libraries(filteractionmissingtemplatedialoggui
   KF6::Completion
 )
 
-add_executable(filteractionmissingtransportdialoggui filteractionmissingtransportdialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtransportdialog.cpp)
+add_executable(filteractionmissingtransportdialoggui filteractionmissingtransportdialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h ../dialog/filteractionmissingtransportdialog.cpp)
 ecm_mark_as_test(filteractionmissingtransportdialoggui)
 target_link_libraries(filteractionmissingtransportdialoggui
   Qt::Core
@@ -58,7 +58,7 @@ target_link_libraries(filteractionmissingtransportdialoggui
   KPim6::MailTransport
 )
 
-add_executable(filteractionmissingaccountdialoggui filteractionmissingaccountdialoggui.cpp ../../../autotests/dummykernel.cpp  ../dialog/filteractionmissingaccountdialog.cpp)
+add_executable(filteractionmissingaccountdialoggui filteractionmissingaccountdialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h  ../dialog/filteractionmissingaccountdialog.cpp)
 ecm_mark_as_test(filteractionmissingaccountdialoggui)
 target_link_libraries(filteractionmissingaccountdialoggui
   Qt::Core
@@ -68,7 +68,7 @@ target_link_libraries(filteractionmissingaccountdialoggui
   KF6::Completion
 )
 
-add_executable(filteractionmissingtagdialoggui filteractionmissingtagdialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingtagdialog.cpp)
+add_executable(filteractionmissingtagdialoggui filteractionmissingtagdialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h ../dialog/filteractionmissingtagdialog.cpp)
 ecm_mark_as_test(filteractionmissingtagdialoggui)
 target_link_libraries(filteractionmissingtagdialoggui
   Qt::Core
@@ -78,7 +78,7 @@ target_link_libraries(filteractionmissingtagdialoggui
   KF6::Completion
 )
 
-add_executable(filteractionmissingidentitydialoggui filteractionmissingidentitydialoggui.cpp ../../../autotests/dummykernel.cpp ../dialog/filteractionmissingidentitydialog.cpp)
+add_executable(filteractionmissingidentitydialoggui filteractionmissingidentitydialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h ../dialog/filteractionmissingidentitydialog.cpp)
 ecm_mark_as_test(filteractionmissingidentitydialoggui)
 target_link_libraries(filteractionmissingidentitydialoggui
   Qt::Core

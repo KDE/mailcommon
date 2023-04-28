@@ -26,7 +26,7 @@ set(filter_common_SRCS)
 ecm_qt_declare_logging_category(filter_common_SRCS HEADER mailcommon_debug.h IDENTIFIER MAILCOMMON_LOG CATEGORY_NAME org.kde.pim.mailcommon)
 
 add_mailcommon_filter_test(itemcontexttest
-    itemcontexttest.cpp
+    itemcontexttest.cpp itemcontexttest.h
     ${filter_common_SRCS}
 )
 
@@ -59,7 +59,7 @@ add_mailcommon_filter_test(filteractiondeletetest
 add_mailcommon_filter_test(filteractionencrypttest
     filteractionencrypttest.cpp
     filteractionencrypttest.h
-    gpghelper.cpp
+    gpghelper.cpp gpghelper.h
     ../filteractions/filteractionencrypt.cpp
     ../filteractions/filteractionwithcrypto.cpp
     ${filter_common_SRCS}
@@ -68,7 +68,7 @@ add_mailcommon_filter_test(filteractionencrypttest
 add_mailcommon_filter_test(filteractiondecrypttest
     filteractiondecrypttest.cpp
     filteractiondecrypttest.h
-    gpghelper.cpp
+    gpghelper.cpp gpghelper.h
     ../filteractions/filteractiondecrypt.cpp
     ../filteractions/filteractionwithcrypto.cpp
     ${filter_common_SRCS}
@@ -305,7 +305,7 @@ add_mailcommon_filter_test(filteractionmissingidentitydialogtest
     filteractionmissingidentitydialogtest.cpp
     filteractionmissingidentitydialogtest.h
     ../dialog/filteractionmissingidentitydialog.cpp
-    ../../../autotests/dummykernel.cpp
+    ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h
     )
 
 add_mailcommon_filter_test(filterimporterpathcachetest
