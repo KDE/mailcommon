@@ -10,7 +10,7 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 #include <Akonadi/CollectionFetchJob>
-#include <Libkdepim/LineEditCatchReturnKey>
+#include <KLineEditEventHandler>
 
 #include <KLocalizedString>
 #include <QIcon>
@@ -43,7 +43,7 @@ FolderRequester::FolderRequester(QWidget *parent)
 
     d->mEdit = new QLineEdit(this);
     d->mEdit->setPlaceholderText(i18n("Select Folder"));
-    new KPIM::LineEditCatchReturnKey(d->mEdit, this);
+    KLineEditEventHandler::catchReturnKey(d->mEdit);
     d->mEdit->setReadOnly(true);
     hlay->addWidget(d->mEdit);
 

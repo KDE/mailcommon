@@ -6,7 +6,7 @@
 
 #include "tagwidget.h"
 
-#include <Libkdepim/LineEditCatchReturnKey>
+#include <KLineEditEventHandler>
 
 #include <KActionCollection>
 #include <KColorCombo>
@@ -57,7 +57,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     // First row for renaming
     d->mTagNameLineEdit = new QLineEdit(this);
     d->mTagNameLineEdit->setClearButtonEnabled(true);
-    new KPIM::LineEditCatchReturnKey(d->mTagNameLineEdit, this);
+    KLineEditEventHandler::catchReturnKey(d->mTagNameLineEdit);
     settings->addWidget(d->mTagNameLineEdit, 1, 1);
 
     auto namelabel = new QLabel(i18nc("@label:listbox Name of the tag", "Name:"), this);

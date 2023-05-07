@@ -12,8 +12,8 @@ using MailCommon::RuleWidgetHandlerManager;
 
 #include <KComboBox>
 #include <KLazyLocalizedString>
+#include <KLineEditEventHandler>
 #include <KLocalizedString>
-#include <Libkdepim/LineEditCatchReturnKey>
 #include <QButtonGroup>
 #include <QFormLayout>
 #include <QHBoxLayout>
@@ -140,7 +140,7 @@ void SearchRuleWidget::initWidget(SearchPatternEdit::SearchModeType modeType)
     mRuleField->setObjectName(QStringLiteral("mRuleField"));
     mRuleField->setEditable(true);
     auto edit = new QLineEdit;
-    new KPIM::LineEditCatchReturnKey(edit, this);
+    KLineEditEventHandler::catchReturnKey(edit);
     edit->setPlaceholderText(i18n("Choose or type your own criteria"));
     mRuleField->setToolTip(i18n("Choose or type your own criteria"));
     edit->setClearButtonEnabled(true);

@@ -22,7 +22,7 @@
 #include <Akonadi/EntityDisplayAttribute>
 #include <PimCommon/PimUtil>
 
-#include <Libkdepim/LineEditCatchReturnKey>
+#include <KLineEditEventHandler>
 #include <PimCommonAkonadi/ImapResourceCapabilitiesManager>
 
 #include <KColorScheme>
@@ -60,7 +60,7 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
     // Mustn't be able to edit details for a non-resource, system folder.
     if ((!mIsLocalSystemFolder || mIsResourceFolder) && !mFolderCollection->isReadOnly()) {
         mNameEdit = new QLineEdit(this);
-        new KPIM::LineEditCatchReturnKey(mNameEdit, this);
+        KLineEditEventHandler::catchReturnKey(mNameEdit);
         connect(mNameEdit, &QLineEdit::textChanged, this, &CollectionGeneralPage::slotNameChanged);
         innerLayout->insertRow(0, i18nc("@label:textbox Name of the folder.", "Folder &Name:"), mNameEdit);
     }
