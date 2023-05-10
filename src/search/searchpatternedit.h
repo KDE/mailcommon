@@ -270,9 +270,9 @@ protected:
     QWidget *createWidget(QWidget *parent) override;
 
 private:
-    void reconnectWidget(SearchRuleWidget *w);
-    void updateAddRemoveButton();
-    void regenerateRuleListFromWidgets();
+    MAILCOMMON_NO_EXPORT void reconnectWidget(SearchRuleWidget *w);
+    MAILCOMMON_NO_EXPORT void updateAddRemoveButton();
+    MAILCOMMON_NO_EXPORT void regenerateRuleListFromWidgets();
     QList<MailCommon::SearchRule::Ptr> *mRuleList = nullptr;
     SearchPatternEdit::SearchPatternEditOptions mOptions;
     SearchPatternEdit::SearchModeType mTypeMode;

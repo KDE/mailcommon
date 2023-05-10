@@ -215,7 +215,7 @@ private:
      * readConfig, which detects legacy configurations and also makes sure
      * that this method is called from an initialized object.
      */
-    void importLegacyConfig(const KConfigGroup &config);
+    MAILCOMMON_NO_EXPORT void importLegacyConfig(const KConfigGroup &config);
 
     /**
      * Initializes the object. Clears the list of rules, sets the name
