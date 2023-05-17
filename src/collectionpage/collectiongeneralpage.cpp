@@ -11,7 +11,7 @@
 
 #include "folder/foldersettings.h"
 #include "kernel/mailkernel.h"
-#include <PimCommonAkonadi/CollectionAnnotationsAttribute>
+#include <Akonadi/CollectionAnnotationsAttribute>
 #include <PimCommonAkonadi/ContentTypeWidget>
 #include <PimCommonAkonadi/IncidencesForWidget>
 
@@ -71,7 +71,7 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
     if (CommonKernel->imapResourceManager()->hasAnnotationSupport(collectionResource)) {
         PimCommon::CollectionTypeUtil::FolderContentsType contentsType = PimCommon::CollectionTypeUtil::ContentsTypeMail;
 
-        const auto *annotationAttribute = collection.attribute<PimCommon::CollectionAnnotationsAttribute>();
+        const auto *annotationAttribute = collection.attribute<Akonadi::CollectionAnnotationsAttribute>();
 
         const QMap<QByteArray, QByteArray> annotations = (annotationAttribute ? annotationAttribute->annotations() : QMap<QByteArray, QByteArray>());
 
@@ -135,7 +135,7 @@ void CollectionGeneralPage::load(const Akonadi::Collection &collection)
     }
 
     if (mContentsComboBox) {
-        const auto *annotationsAttribute = collection.attribute<PimCommon::CollectionAnnotationsAttribute>();
+        const auto *annotationsAttribute = collection.attribute<Akonadi::CollectionAnnotationsAttribute>();
 
         if (annotationsAttribute) {
             const QMap<QByteArray, QByteArray> annotations = annotationsAttribute->annotations();
@@ -171,7 +171,7 @@ void CollectionGeneralPage::save(Collection &collection)
     }
     mCollectionGeneralWidget->save(collection);
 
-    auto *annotationsAttribute = collection.attribute<PimCommon::CollectionAnnotationsAttribute>(Collection::AddIfMissing);
+    auto *annotationsAttribute = collection.attribute<Akonadi::CollectionAnnotationsAttribute>(Collection::AddIfMissing);
 
     QMap<QByteArray, QByteArray> annotations = annotationsAttribute->annotations();
     if (mSharedSeenFlagsCheckBox && mSharedSeenFlagsCheckBox->isEnabled()) {
@@ -197,7 +197,7 @@ void CollectionGeneralPage::save(Collection &collection)
         }
     }
     if (annotations.isEmpty()) {
-        collection.removeAttribute<PimCommon::CollectionAnnotationsAttribute>();
+        collection.removeAttribute<Akonadi::CollectionAnnotationsAttribute>();
     } else {
         annotationsAttribute->setAnnotations(annotations);
     }
