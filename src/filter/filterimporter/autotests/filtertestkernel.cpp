@@ -10,7 +10,7 @@
 #include <Akonadi/EntityMimeTypeFilterModel>
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/Session>
-#include <KIdentityManagement/IdentityManager>
+#include <KIdentityManagementCore/IdentityManager>
 #include <KSharedConfig>
 #include <MessageComposer/AkonadiSender>
 #include <mailcommon/foldercollectionmonitor.h>
@@ -19,7 +19,7 @@ FilterTestKernel::FilterTestKernel(QObject *parent)
     : QObject(parent)
 {
     mMessageSender = new MessageComposer::AkonadiSender(this);
-    mIdentityManager = new KIdentityManagement::IdentityManager(true, this);
+    mIdentityManager = new KIdentityManagementCore::IdentityManager(true, this);
     auto session = new Akonadi::Session("Filter Kernel ETM", this);
     mFolderCollectionMonitor = new MailCommon::FolderCollectionMonitor(session, this);
 
@@ -35,7 +35,7 @@ FilterTestKernel::FilterTestKernel(QObject *parent)
     mCollectionModel->setSortCaseSensitivity(Qt::CaseInsensitive);
 }
 
-KIdentityManagement::IdentityManager *FilterTestKernel::identityManager()
+KIdentityManagementCore::IdentityManager *FilterTestKernel::identityManager()
 {
     return mIdentityManager;
 }

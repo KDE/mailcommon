@@ -21,7 +21,7 @@ namespace PimCommon
 class IncidencesForWidget;
 class ContentTypeWidget;
 }
-namespace KIdentityManagement
+namespace KIdentityManagementCore
 {
 }
 namespace MailCommon

@@ -22,7 +22,7 @@ class ChangeRecorder;
 class EntityMimeTypeFilterModel;
 }
 
-namespace KIdentityManagement
+namespace KIdentityManagementCore
 {
 class IdentityManager;
 }
@@ -46,7 +46,7 @@ public:
     /**
      * Return the pointer to the identity manager.
      */
-    virtual KIdentityManagement::IdentityManager *identityManager() = 0;
+    virtual KIdentityManagementCore::IdentityManager *identityManager() = 0;
 
     virtual KSharedConfig::Ptr config() = 0;
     virtual void syncConfig() = 0;

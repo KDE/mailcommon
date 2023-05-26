@@ -24,7 +24,7 @@ class FilterTestKernel : public QObject, public MailCommon::IKernel, public Mail
 public:
     explicit FilterTestKernel(QObject *parent = nullptr);
 
-    KIdentityManagement::IdentityManager *identityManager() override;
+    KIdentityManagementCore::IdentityManager *identityManager() override;
     MessageComposer::MessageSender *msgSender() override;
 
     Akonadi::EntityMimeTypeFilterModel *collectionModel() const override;
@@ -43,7 +43,7 @@ public:
     void expunge(Akonadi::Collection::Id col, bool sync) override;
 
 private:
-    KIdentityManagement::IdentityManager *mIdentityManager = nullptr;
+    KIdentityManagementCore::IdentityManager *mIdentityManager = nullptr;
     MessageComposer::MessageSender *mMessageSender = nullptr;
     MailCommon::FolderCollectionMonitor *mFolderCollectionMonitor = nullptr;
     Akonadi::EntityTreeModel *mEntityTreeModel = nullptr;

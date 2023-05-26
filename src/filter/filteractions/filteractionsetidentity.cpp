@@ -11,8 +11,8 @@
 #include "filter/dialog/filteractionmissingidentitydialog.h"
 #include "kernel/mailkernel.h"
 
-#include <KIdentityManagement/Identity>
-#include <KIdentityManagement/IdentityManager>
+#include <KIdentityManagementCore/Identity>
+#include <KIdentityManagementCore/IdentityManager>
 #include <KIdentityManagementWidgets/IdentityCombo>
 
 #include <KLocalizedString>
@@ -50,7 +50,7 @@ bool FilterActionSetIdentity::argsFromStringInteractive(const QString &argsStr, 
 
 FilterAction::ReturnCode FilterActionSetIdentity::process(ItemContext &context, bool applyOnOutbound) const
 {
-    const KIdentityManagement::Identity &ident = KernelIf->identityManager()->identityForUoid(mParameter);
+    const KIdentityManagementCore::Identity &ident = KernelIf->identityManager()->identityForUoid(mParameter);
 
     if (ident.isNull()) {
         return ErrorButGoOn;

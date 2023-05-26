@@ -10,7 +10,7 @@
 
 #include "redirectwidget.h"
 
-#include <KIdentityManagement/Identity>
+#include <KIdentityManagementCore/Identity>
 #include <KIdentityManagementWidgets/IdentityCombo>
 
 #include <MailTransport/TransportComboBox>
