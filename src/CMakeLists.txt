@@ -362,6 +362,7 @@ PRIVATE
   KF6::XmlGui
   KF6::KIOWidgets
   KF6::IconThemes
+  KF6::IconWidgets
   KF6::Archive
   KF6::ItemViews
   KF6::SyntaxHighlighting
