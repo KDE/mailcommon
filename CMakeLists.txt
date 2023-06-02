@@ -46,7 +46,7 @@ set(PIMCOMMON_LIB_VERSION "5.240.40")
 set(PHONON_LIB_VERSION "4.11.1")
 set(AKONADI_VERSION "5.240.40")
 
-find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets DBus Test Xml)
+find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets DBus Xml)
 
 set(GPGMEPP_LIB_VERSION "1.16.0")
 find_package(Gpgmepp ${GPGMEPP_LIB_VERSION} CONFIG REQUIRED)
@@ -110,6 +110,7 @@ ecm_set_disabled_deprecation_versions(QT 6.5  KF 5.240.0)
 
 add_subdirectory(src)
 if(BUILD_TESTING)
+    find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Test)
     add_subdirectory(autotests)
 endif()
 
