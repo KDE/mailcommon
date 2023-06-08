@@ -1,16 +1,16 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Xosé <xosecalvo@gmail.com>, 2011, 2012, 2013, 2014.
 # Marce Villarino <mvillarino@kde-espana.es>, 2012, 2013, 2014.
 # Adrian Chaves Fernandez <adriyetichaves@gmail.com>, 2013, 2015, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-21 00:49+0000\n"
-"PO-Revision-Date: 2019-11-26 23:20+0100\n"
+"PO-Revision-Date: 2023-06-07 10:42+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.08.3\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -37,9 +37,7 @@ msgstr[1] " días"
 #: collectionpage/collectionexpirywidget.cpp:36
 #: collectionpage/collectionexpirywidget.cpp:42
 #: collectionpage/collectionexpirywidget.cpp:54
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu Never display tooltips."
-#| msgid "Never"
+#, kde-format
 msgid "Never"
 msgstr "Nunca"
 
@@ -49,22 +47,19 @@ msgid "Save Settings and Expire Now"
 msgstr "Gardar a configuración e caducar agora"
 
 #: collectionpage/collectionexpirywidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Expire read messages after"
+#, kde-format
 msgid "Expire messages with invalid date"
-msgstr "Facer caducar as mensaxes lidas despois de"
+msgstr "Facer caducar as mensaxes cunha data incorrecta"
 
 #: collectionpage/collectionexpirywidget.cpp:73
-#, fuzzy, kde-format
-#| msgid "Expire read messages after"
+#, kde-format
 msgid "Expire read messages after:"
-msgstr "Facer caducar as mensaxes lidas despois de"
+msgstr "Facer caducar as mensaxes lidas despois de:"
 
 #: collectionpage/collectionexpirywidget.cpp:76
-#, fuzzy, kde-format
-#| msgid "Expire unread messages after"
+#, kde-format
 msgid "Expire unread messages after:"
-msgstr "Facer caducar as mensaxes sen ler despois de"
+msgstr "Facer caducar as mensaxes sen ler despois de:"
 
 #: collectionpage/collectionexpirywidget.cpp:90
 #, kde-format
@@ -112,11 +107,10 @@ msgid "General"
 msgstr "Xeral"
 
 #: collectionpage/collectiongeneralpage.cpp:65
-#, fuzzy, kde-format
-#| msgid "Rename"
+#, kde-format
 msgctxt "@label:textbox Name of the folder."
 msgid "Folder &Name:"
-msgstr "Cambiar o nome"
+msgstr "&Nome do cartafol:"
 
 #: collectionpage/collectiongeneralpage.cpp:110
 #, kde-format
@@ -229,83 +223,75 @@ msgid "&Sender identity:"
 msgstr "Identidade do &remitente:"
 
 #: collectionpage/collectiontemplateswidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Keep replies in this folder"
+#, kde-format
 msgid "&Use custom message templates in this folder"
-msgstr "Manter as respostas neste cartafol"
+msgstr "&Usar os modelos de mensaxe personalizados deste cartafol"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
 msgid "&Copy Global Templates"
-msgstr ""
+msgstr "&Copiar os modelos globais"
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
-msgstr ""
+msgstr "Mostrar a columna de remitente/destinatario na lista de mensaxes"
 
 #: collectionpage/collectionviewwidget.cpp:36
-#, fuzzy, kde-format
-#| msgid " (default)"
+#, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
-msgstr " (predeterminado)"
+msgstr "Predeterminado"
 
 #: collectionpage/collectionviewwidget.cpp:37
-#, fuzzy, kde-format
-#| msgid "&Send"
+#, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
-msgstr "&Enviar"
+msgstr "Remitente"
 
 #: collectionpage/collectionviewwidget.cpp:38
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
-msgstr ""
+msgstr "Destino"
 
 #: collectionpage/collectionviewwidget.cpp:39
-#, fuzzy, kde-format
-#| msgid "Sho&rtcut:"
+#, kde-format
 msgid "Sho&w column:"
-msgstr "A&tallo:"
+msgstr "&Mostrar a columna:"
 
 #: collectionpage/collectionviewwidget.cpp:42
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgid "Use default message list aggregation:"
-msgstr "Empregar a i&dentidade predeterminada"
+msgstr "Usar a agrupación predeterminada da lista de mensaxes:"
 
 #: collectionpage/collectionviewwidget.cpp:59
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgid "Use default message list theme"
-msgstr "Empregar a i&dentidade predeterminada"
+msgstr "Usar o tema predeterminado da lista de mensaxes"
 
 #: collectionpage/collectionviewwidget.cpp:76
 #, kde-format
 msgid "Prefer HTML to text"
-msgstr ""
+msgstr "Preferir HTML a texto"
 
 #: collectionpage/collectionviewwidget.cpp:77
-#, fuzzy, kde-format
-#| msgid "Message Status"
+#, kde-format
 msgid "Message format:"
-msgstr "Estado da mensaxe"
+msgstr "Formato das mensaxes:"
 
 #: collectionpage/collectionviewwidget.cpp:78
 #, kde-format
 msgid "Prefer text to HTML"
-msgstr ""
+msgstr "Preferir texto a HTML"
 
 #: collectionpage/collectionviewwidget.cpp:80
 #, kde-format
 msgid "Use Global Settings"
-msgstr ""
+msgstr "Empregar as opcións globais"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
-#, fuzzy, kde-format
-#| msgid "Select Account"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "Seleccionar unha conta"
@@ -319,8 +305,7 @@ msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:73
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Escoller un cartafol"
@@ -336,23 +321,19 @@ msgid "The following folders can be used for this filter:"
 msgstr "Pódense empregar os cartafoles seguintes con este filtro:"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Please select a folder"
+#, kde-format
 msgid "Please select a folder:"
-msgstr "Por favor, escolla un cartafol"
+msgstr "Escolla un cartafol:"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:70
-#, fuzzy, kde-format
-#| msgid ""
-#| "Filter folder is missing. Please select a folder to use with filter \"%1\""
+#, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
 msgstr ""
-"Falta o cartafol do filtro. Escolla un cartafol para empregar co filtro «%1»"
+"Falta o cartafol do filtro. Escolla un cartafol para empregar co filtro «%1»:"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Identity"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "Escoller a identidade"
@@ -367,8 +348,7 @@ msgstr ""
 "filtro «%1»."
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
-#, fuzzy, kde-format
-#| msgid "Select sound"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "Seleccionar un son"
@@ -384,8 +364,7 @@ msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr "Falta ficheiro de son. Escolla un son para empregar co filtro «%1»"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
-#, fuzzy, kde-format
-#| msgid "Select Tag"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Escoller unha etiqueta"
@@ -408,8 +387,7 @@ msgid "Add Tag..."
 msgstr "Engadir unha etiqueta…"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Template"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "Escoler o modelo"
@@ -423,8 +401,7 @@ msgstr ""
 "Falta o modelo de filtro. Seleccione un modelo para usar co filtro «%1»."
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
-#, fuzzy, kde-format
-#| msgid "Select Transport"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "Escoller o transporte"
@@ -439,8 +416,7 @@ msgstr ""
 "«%1»"
 
 #: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
-#, fuzzy, kde-format
-#| msgid "Select thunderbird filter files"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
 msgstr "Seleccionar os ficheiros de filtro de Thunderbird"
@@ -1038,8 +1014,7 @@ msgid "Unselect All"
 msgstr "Anular toda a selección"
 
 #: filter/filterselectiondialog.cpp:34
-#, fuzzy, kde-format
-#| msgid "Select Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Seleccionar filtros"
@@ -1052,8 +1027,7 @@ msgid "Search"
 msgstr "Buscar"
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Invalid Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "Filtros incorrectos"
@@ -1083,8 +1057,7 @@ msgid "Type"
 msgstr "Tipo"
 
 #: filter/kmfilterdialog.cpp:72
-#, fuzzy, kde-format
-#| msgid "Filter Rules"
+#, kde-format
 msgctxt "@title:window"
 msgid "Filter Rules"
 msgstr "Regras de filtrado"
@@ -1172,10 +1145,9 @@ msgid "Advanced"
 msgstr "Avanzado"
 
 #: filter/kmfilterdialog.cpp:182
-#, fuzzy, kde-format
-#| msgid "Filter Actions"
+#, kde-format
 msgid "Filter actions:"
-msgstr "Accións de filtrado"
+msgstr "Accións de filtrado:"
 
 #: filter/kmfilterdialog.cpp:193
 #, kde-format
@@ -1183,22 +1155,19 @@ msgid "Apply this filter to incoming messages:"
 msgstr "Aplicar este filtro ás mensaxes entrantes:"
 
 #: filter/kmfilterdialog.cpp:203
-#, fuzzy, kde-format
-#| msgid "from all accounts"
+#, kde-format
 msgid "From all accounts"
-msgstr "de todas as contas"
+msgstr "De todas as contas"
 
 #: filter/kmfilterdialog.cpp:207
-#, fuzzy, kde-format
-#| msgid "from all but online IMAP accounts"
+#, kde-format
 msgid "From all but online IMAP accounts"
-msgstr "de todas as contas excepto as IMAP en liña"
+msgstr "De todas as contas excepto as de IMAP por Internet"
 
 #: filter/kmfilterdialog.cpp:211
-#, fuzzy, kde-format
-#| msgid "from checked accounts only"
+#, kde-format
 msgid "From selected accounts only"
-msgstr "só desde as contas marcadas"
+msgstr "Só das contas seleccionadas"
 
 #: filter/kmfilterdialog.cpp:219
 #, kde-format
@@ -1527,7 +1496,7 @@ msgid ""
 "back, click this button and select <em>Clear</em> followed by <em>OK</em> in "
 "the appearing dialog.</p></qt>"
 msgstr ""
-"<qt> <p>Prema este botón renomear o filtro selecionado.</p> <p>Os filtros "
+"<qt> <p>Prema este botón renomear o filtro seleccionado.</p> <p>Os filtros "
 "reciben un nome automaticamente se comezan por «&lt;».</p> <p> Se renomeou "
 "un filtro por accidente e quere recuperar o seu nome predeterminado, "
 "seleccione <em>Baleirar</em> seguido de <em>Aceptar</em> no diálogo que "
@@ -1613,8 +1582,7 @@ msgid "Play"
 msgstr "Reproducir"
 
 #: filter/soundtestwidget.cpp:62
-#, fuzzy, kde-format
-#| msgid "Select Sound File"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Sound File"
 msgstr "Escoller un ficheiro de son"
@@ -1622,7 +1590,7 @@ msgstr "Escoller un ficheiro de son"
 #: filter/soundtestwidget.cpp:107
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "Pausar"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: filter/ui/filterconfigwidget.ui:19
@@ -1691,8 +1659,7 @@ msgid "Select file from config:"
 msgstr "Seleccionar un ficheiro da configuración:"
 
 #: folder/accountconfigorderdialog.cpp:57
-#, fuzzy, kde-format
-#| msgid "Edit Accounts Order"
+#, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "Editar a orde das contas"
@@ -2070,9 +2037,6 @@ msgid "Message Tag"
 msgstr "Etiqueta de mensaxe"
 
 #: search/searchpatternedit.cpp:49
-#, fuzzy
-#| msgctxt "Subject of an email."
-#| msgid "Subject"
 msgid "Subject"
 msgstr "Asunto"
 
@@ -2081,9 +2045,6 @@ msgid "From"
 msgstr "De"
 
 #: search/searchpatternedit.cpp:51
-#, fuzzy
-#| msgctxt "Email recipient"
-#| msgid "To"
 msgid "To"
 msgstr "Para"
 
@@ -2124,10 +2085,9 @@ msgid "Match all messages"
 msgstr "Coincidir con todas as mensaxes"
 
 #: search/searchpatternedit.cpp:594
-#, fuzzy, kde-format
-#| msgid "Filter Criteria"
+#, kde-format
 msgid "Filter criteria:"
-msgstr "Criterio de filtrado"
+msgstr "Criterio do filtro:"
 
 #: search/searchrule/searchrule.cpp:177
 #, kde-format
@@ -2546,27 +2506,23 @@ msgid "..."
 msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
-#, fuzzy, kde-format
-#| msgid "Select Attachments"
+#, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
-msgstr "Seleccionar os anexos"
+msgstr "Personalizar o nome de ficheiro do anexo"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Rename"
+#, kde-format
 msgid "Filename:"
-msgstr "Cambiar o nome"
+msgstr "Nome de ficheiro:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, fuzzy, kde-format
-#| msgid "Variables"
+#, kde-format
 msgid "Insert Variables"
-msgstr "Variábeis"
+msgstr "Inserir variábeis"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
-#, fuzzy, kde-format
-#| msgid "Select Attachments"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
 msgstr "Seleccionar os anexos"
@@ -2683,10 +2639,9 @@ msgid "Update snippet"
 msgstr "Actualizar o fragmento"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, fuzzy, kde-format
-#| msgid "Update snippet"
+#, kde-format
 msgid "Update"
-msgstr "Actualizar o fragmento"
+msgstr "Actualizar"
 
 #: snippets/snippettreeview.cpp:64
 #, kde-format
@@ -2694,8 +2649,7 @@ msgid "Text Snippets"
 msgstr "Fragmentos de texto"
 
 #: snippets/snippetvariabledialog.cpp:37
-#, fuzzy, kde-format
-#| msgid "Enter Values for Variables"
+#, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Insira os valores das variábeis"
@@ -2740,6 +2694,10 @@ msgid ""
 "then type \\greeting in your email and then press the tab key, and it will "
 "be replaced with the contents of this snippet."
 msgstr ""
+"Escriba unha palabra clave para activar a inserción rápida deste fragmento "
+"cando escriba unha mensaxe. Por exemplo, se escolle «saúdo» como palabra "
+"clave, poderá escribir \\saúdo nunha mensaxe e premer o tabulador para "
+"substituír a palabra clave polo contido deste fragmento."
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
 #: snippets/ui/snippetwidget.ui:31
@@ -2756,10 +2714,9 @@ msgstr "Grupo:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: snippets/ui/snippetwidget.ui:65
-#, fuzzy, kde-format
-#| msgid "Attachment:"
+#, kde-format
 msgid "Attachments:"
-msgstr "Anexo:"
+msgstr "Anexos:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel)
 #: snippets/ui/snippetwidget.ui:82
@@ -2810,8 +2767,7 @@ msgid "Variables"
 msgstr "Variábeis"
 
 #: tag/addtagdialog.cpp:39
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgctxt "@title:window"
 msgid "Add Tag"
 msgstr "Engadir unha etiqueta"
@@ -2908,8 +2864,7 @@ msgid "Resend-Bcc:"
 msgstr "Reenviar a copia agochada a:"
 
 #: widgets/redirectdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Redirect Message"
+#, kde-format
 msgctxt "@title:window"
 msgid "Redirect Message"
 msgstr "Encamiñar a mensaxe"
