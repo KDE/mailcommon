@@ -264,3 +264,5 @@ void ExpireJob::slotExpireDone(KJob *job)
     }
     deleteLater();
 }
+
+#include "moc_expirejob.cpp"

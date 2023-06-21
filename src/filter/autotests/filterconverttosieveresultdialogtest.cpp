@@ -45,3 +45,5 @@ void FilterConvertToSieveResultDialogTest::shouldAddCode()
 }
 
 QTEST_MAIN(FilterConvertToSieveResultDialogTest)
+
+#include "moc_filterconverttosieveresultdialogtest.cpp"

@@ -249,3 +249,5 @@ void SnippetWidget::setSubject(const QString &text)
 {
     d->mUi.subject->setText(text);
 }
+
+#include "moc_snippetwidget.cpp"

@@ -98,3 +98,5 @@ void ItemContextTest::shouldAssignCollection()
 }
 
 QTEST_MAIN(ItemContextTest)
+
+#include "moc_itemcontexttest.cpp"

@@ -61,3 +61,5 @@ void FilterActionDeleteTest::shouldDeleteItem()
 }
 
 QTEST_MAIN(FilterActionDeleteTest)
+
+#include "moc_filteractiondeletetest.cpp"

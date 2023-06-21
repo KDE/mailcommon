@@ -33,3 +33,5 @@ void SnippetCustomFileAttachmentNameWidgetTest::shouldHaveDefaultValues()
     QVERIFY(!selectVariable->text().isEmpty());
     QVERIFY(selectVariable->menu());
 }
+
+#include "moc_snippetcustomfileattachmentnamewidgettest.cpp"

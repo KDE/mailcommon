@@ -54,3 +54,5 @@ void SearchRuleTest::shouldAssignValue()
 }
 
 QTEST_MAIN(SearchRuleTest)
+
+#include "moc_searchruletest.cpp"

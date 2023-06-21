@@ -48,3 +48,5 @@ void FilterActionPlaySoundTest::shouldSieveRequres()
 }
 
 QTEST_MAIN(FilterActionPlaySoundTest)
+
+#include "moc_filteractionplaysoundtest.cpp"

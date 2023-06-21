@@ -23,3 +23,5 @@ void FilterImportEvolutiontest::testImportFilters()
 }
 
 QTEST_AKONADIMAIN(FilterImportEvolutiontest)
+
+#include "moc_filterimportevolutiontest.cpp"

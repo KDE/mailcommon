@@ -272,3 +272,5 @@ FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &co
 
     return GoOn;
 }
+
+#include "moc_filteractionwithcommand.cpp"

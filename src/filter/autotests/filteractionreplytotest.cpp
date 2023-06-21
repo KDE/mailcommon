@@ -139,3 +139,5 @@ void FilterActionReplyToTest::shouldNotCreateReplyToWhenAddressIsEmpty()
 }
 
 QTEST_MAIN(FilterActionReplyToTest)
+
+#include "moc_filteractionreplytotest.cpp"

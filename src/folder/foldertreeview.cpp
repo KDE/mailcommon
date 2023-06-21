@@ -680,3 +680,5 @@ QModelIndex FolderTreeView::nextUnreadCollection(const QModelIndex &current, Sea
 
     return {}; // no unread collection found
 }
+
+#include "moc_foldertreeview.cpp"

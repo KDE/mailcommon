@@ -115,3 +115,5 @@ void FilterActionEncryptTest::shouldEncrypt()
 }
 
 QTEST_MAIN(FilterActionEncryptTest)
+
+#include "moc_filteractionencrypttest.cpp"

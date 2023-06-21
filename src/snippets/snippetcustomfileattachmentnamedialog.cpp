@@ -75,3 +75,5 @@ void SnippetCustomFileAttachmentNameDialog::setText(const QString &str)
 {
     mCustomWidget->setText(str);
 }
+
+#include "moc_snippetcustomfileattachmentnamedialog.cpp"

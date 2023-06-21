@@ -38,3 +38,5 @@ void FilterActionMissingTransportDialogTest::shouldHaveDefaultValue()
 }
 
 QTEST_MAIN(FilterActionMissingTransportDialogTest)
+
+#include "moc_filteractionmissingtransportdialogtest.cpp"

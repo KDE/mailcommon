@@ -27,3 +27,5 @@ QString FilterActionWithNone::argsAsString() const
 {
     return {};
 }
+
+#include "moc_filteractionwithnone.cpp"

@@ -81,3 +81,5 @@ void FilterActionAddToAddressBookTest::shouldRequiresPart()
 }
 
 QTEST_MAIN(FilterActionAddToAddressBookTest)
+
+#include "moc_filteractionaddtoaddressbooktest.cpp"

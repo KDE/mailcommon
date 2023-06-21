@@ -35,3 +35,5 @@ QString FilterActionPipeThrough::informationAboutNotValidAction() const
 {
     return i18n("No action defined.");
 }
+
+#include "moc_filteractionpipethrough.cpp"

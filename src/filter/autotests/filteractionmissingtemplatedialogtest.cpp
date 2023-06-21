@@ -37,3 +37,5 @@ void FilterActionMissingTemplateDialogTest::shouldHaveDefaultValue()
 }
 
 QTEST_MAIN(FilterActionMissingTemplateDialogTest)
+
+#include "moc_filteractionmissingtemplatedialogtest.cpp"

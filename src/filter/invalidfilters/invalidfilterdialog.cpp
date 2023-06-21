@@ -80,3 +80,5 @@ void InvalidFilterDialog::writeConfig()
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
 }
+
+#include "moc_invalidfilterdialog.cpp"

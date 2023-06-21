@@ -206,3 +206,5 @@ void FilterActionAddHeaderTest::shouldRequiresSieve()
 }
 
 QTEST_MAIN(FilterActionAddHeaderTest)
+
+#include "moc_filteractionaddheadertest.cpp"

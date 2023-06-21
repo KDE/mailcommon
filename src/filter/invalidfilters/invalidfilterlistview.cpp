@@ -33,3 +33,5 @@ void InvalidFilterListView::setInvalidFilters(const QList<MailCommon::InvalidFil
     }
     model()->sort(Qt::DisplayRole);
 }
+
+#include "moc_invalidfilterlistview.cpp"

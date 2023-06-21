@@ -269,3 +269,5 @@ void FolderTreeWidgetProxyModel::addContentMimeTypeInclusionFilter(const QString
     d->checker.setWantedMimeTypes(d->includedMimeTypes.values());
     invalidateFilter();
 }
+
+#include "moc_foldertreewidgetproxymodel.cpp"

@@ -161,3 +161,5 @@ void FilterActionRemoveHeaderTest::shouldHaveRequiredPart()
 }
 
 QTEST_MAIN(FilterActionRemoveHeaderTest)
+
+#include "moc_filteractionremoveheadertest.cpp"

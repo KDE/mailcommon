@@ -102,3 +102,5 @@ void FilterActionWithUrlTest::shouldTestUrl()
 }
 
 QTEST_MAIN(FilterActionWithUrlTest)
+
+#include "moc_filteractionwithurltest.cpp"

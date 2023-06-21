@@ -79,3 +79,5 @@ int InvalidFilterListModel::rowCount(const QModelIndex &parent) const
     Q_UNUSED(parent)
     return mInvalidFilterItems.count();
 }
+
+#include "moc_invalidfilterlistmodel.cpp"

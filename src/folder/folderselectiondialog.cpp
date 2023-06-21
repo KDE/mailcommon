@@ -273,3 +273,5 @@ void FolderSelectionDialog::hideEvent(QHideEvent *)
 {
     d->folderTreeWidget->clearFilter();
 }
+
+#include "moc_folderselectiondialog.cpp"

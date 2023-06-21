@@ -37,3 +37,5 @@ QString FilterActionWithUOID::displayString() const
 {
     return label() + QLatin1String(" \"") + argsAsString().toHtmlEscaped() + QLatin1String("\"");
 }
+
+#include "moc_filteractionwithuoid.cpp"

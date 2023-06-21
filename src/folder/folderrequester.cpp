@@ -177,3 +177,5 @@ void FolderRequester::setSelectFolderTitleDialog(const QString &title)
 {
     d->mSelectFolderTitleDialog = title;
 }
+
+#include "moc_folderrequester.cpp"

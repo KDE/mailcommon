@@ -41,3 +41,5 @@ void FilterActionSendFakeDispositionTest::shouldHaveRequiredPart()
 }
 
 QTEST_MAIN(FilterActionSendFakeDispositionTest)
+
+#include "moc_filteractionsendfakedispositiontest.cpp"

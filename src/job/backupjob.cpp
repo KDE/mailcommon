@@ -419,3 +419,5 @@ void BackupJob::setDisplayMessageBox(bool display)
 {
     mDisplayMessageBox = display;
 }
+
+#include "moc_backupjob.cpp"

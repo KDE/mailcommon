@@ -25,3 +25,5 @@ void FilterconverttosievePurposeMenuWidget::setEditorWidget(KPIMTextEdit::PlainT
 {
     mEditor = editor;
 }
+
+#include "moc_filterconverttosievepurposemenuwidget.cpp"

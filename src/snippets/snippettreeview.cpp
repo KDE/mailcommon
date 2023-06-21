@@ -83,3 +83,5 @@ MailCommon::SnippetsManager *SnippetTreeView::snippetsManager() const
 {
     return mSnippetsManager;
 }
+
+#include "moc_snippettreeview.cpp"

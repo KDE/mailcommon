@@ -73,3 +73,5 @@ void SnippetSelectAttachmentDialog::writeConfig()
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
 }
+
+#include "moc_snippetselectattachmentdialog.cpp"

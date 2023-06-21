@@ -62,3 +62,5 @@ void SnippetAttachmentWidget::slotSelectAttachment()
     }
     delete dlg;
 }
+
+#include "moc_snippetattachmentwidget.cpp"

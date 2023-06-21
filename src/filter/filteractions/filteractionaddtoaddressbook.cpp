@@ -293,3 +293,5 @@ QString FilterActionAddToAddressBook::informationAboutNotValidAction() const
     }
     return result;
 }
+
+#include "moc_filteractionaddtoaddressbook.cpp"

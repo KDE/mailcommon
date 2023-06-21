@@ -30,3 +30,5 @@ void FilterActionForwardTest::shouldRequiresPart()
 }
 
 QTEST_MAIN(FilterActionForwardTest)
+
+#include "moc_filteractionforwardtest.cpp"

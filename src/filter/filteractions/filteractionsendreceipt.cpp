@@ -51,3 +51,5 @@ FilterAction *FilterActionSendReceipt::newAction()
 {
     return new FilterActionSendReceipt;
 }
+
+#include "moc_filteractionsendreceipt.cpp"

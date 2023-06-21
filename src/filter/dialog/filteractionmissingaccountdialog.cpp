@@ -104,3 +104,5 @@ bool FilterActionMissingAccountDialog::allAccountExist(const QStringList &lst)
     }
     return true;
 }
+
+#include "moc_filteractionmissingaccountdialog.cpp"

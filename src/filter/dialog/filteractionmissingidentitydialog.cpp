@@ -82,3 +82,5 @@ int FilterActionMissingIdentityDialog::selectedIdentity() const
 {
     return mComboBoxIdentity->currentIdentity();
 }
+
+#include "moc_filteractionmissingidentitydialog.cpp"

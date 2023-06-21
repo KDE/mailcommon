@@ -59,3 +59,5 @@ void CollectionExpiryJob::slotCollectionModified(KJob *job)
     }
     deleteLater();
 }
+
+#include "moc_collectionexpiryjob.cpp"

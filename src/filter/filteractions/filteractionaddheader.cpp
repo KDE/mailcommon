@@ -212,3 +212,5 @@ QString FilterActionAddHeader::informationAboutNotValidAction() const
     }
     return result;
 }
+
+#include "moc_filteractionaddheader.cpp"

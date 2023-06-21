@@ -23,3 +23,5 @@ Akonadi::Collection FavoriteCollectionOrderProxyModel::parentCollection(const QM
     Q_UNUSED(index)
     return {};
 }
+
+#include "moc_favoritecollectionorderproxymodel.cpp"

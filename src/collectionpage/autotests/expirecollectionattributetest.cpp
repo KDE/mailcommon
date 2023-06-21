@@ -176,3 +176,5 @@ void ExpireCollectionAttributeTest::shouldHaveType()
 }
 
 QTEST_MAIN(ExpireCollectionAttributeTest)
+
+#include "moc_expirecollectionattributetest.cpp"

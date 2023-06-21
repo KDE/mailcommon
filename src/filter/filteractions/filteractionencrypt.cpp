@@ -299,3 +299,5 @@ bool FilterActionEncrypt::reencrypt() const
 {
     return mReencrypt;
 }
+
+#include "moc_filteractionencrypt.cpp"

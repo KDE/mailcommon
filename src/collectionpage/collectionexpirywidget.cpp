@@ -277,3 +277,5 @@ QDebug operator<<(QDebug d, const CollectionExpirySettings &t)
     d << " mExpireToFolderId " << t.mExpireToFolderId;
     return d;
 }
+
+#include "moc_collectionexpirywidget.cpp"

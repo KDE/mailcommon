@@ -34,3 +34,5 @@ void SnippetsManagerTest::shouldHaveDefaultValue()
 }
 
 QTEST_MAIN(SnippetsManagerTest)
+
+#include "moc_snippetsmanagertest.cpp"

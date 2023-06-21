@@ -140,3 +140,5 @@ void FilterSelectionDialog::slotSelectAllButton()
         item->setCheckState(Qt::Checked);
     }
 }
+
+#include "moc_filterselectiondialog.cpp"

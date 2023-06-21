@@ -239,3 +239,5 @@ void CollectionGeneralPage::slotNameChanged(const QString &name)
     setStyleSheet(styleSheet);
 #endif
 }
+
+#include "moc_collectiongeneralpage.cpp"

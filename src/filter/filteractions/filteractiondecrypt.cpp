@@ -100,3 +100,5 @@ QWidget *FilterActionDecrypt::createParamWidget(QWidget *parent) const
 
     return w;
 }
+
+#include "moc_filteractiondecrypt.cpp"

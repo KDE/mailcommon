@@ -790,3 +790,5 @@ void SnippetsModel::save(const QString &filename)
     }
     config->sync();
 }
+
+#include "moc_snippetsmodel.cpp"

@@ -143,3 +143,5 @@ Akonadi::Tag Tag::tag() const
 {
     return mTag;
 }
+
+#include "moc_tag.cpp"

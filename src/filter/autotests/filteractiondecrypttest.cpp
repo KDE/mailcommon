@@ -91,3 +91,5 @@ void FilterActionDecryptTest::shouldDecrypt()
 }
 
 QTEST_MAIN(FilterActionDecryptTest)
+
+#include "moc_filteractiondecrypttest.cpp"

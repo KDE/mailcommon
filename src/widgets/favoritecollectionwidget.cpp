@@ -322,3 +322,5 @@ bool FavoriteCollectionWidget::event(QEvent *e)
     }
     return Akonadi::EntityListView::event(e);
 }
+
+#include "moc_favoritecollectionwidget.cpp"

@@ -28,3 +28,5 @@ void FilterImporterGmailTest::testImportFilters()
 }
 
 QTEST_AKONADIMAIN(FilterImporterGmailTest)
+
+#include "moc_filterimportergmailtest.cpp"

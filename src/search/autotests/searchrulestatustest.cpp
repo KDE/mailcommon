@@ -50,3 +50,5 @@ void SearchRuleStatusTest::shouldBeEmpty()
 }
 
 QTEST_MAIN(SearchRuleStatusTest)
+
+#include "moc_searchrulestatustest.cpp"

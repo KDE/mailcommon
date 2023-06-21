@@ -51,3 +51,5 @@ QString FilterActionDelete::sieveCode() const
 {
     return QStringLiteral("discard;");
 }
+
+#include "moc_filteractiondelete.cpp"

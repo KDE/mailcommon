@@ -27,3 +27,5 @@ void InvalidFilterWidgetTest::shouldHaveDefaultValue()
 }
 
 QTEST_MAIN(InvalidFilterWidgetTest)
+
+#include "moc_invalidfilterwidgettest.cpp"

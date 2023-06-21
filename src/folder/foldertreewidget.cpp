@@ -389,3 +389,5 @@ bool FolderTreeWidget::event(QEvent *e)
     }
     return QWidget::event(e);
 }
+
+#include "moc_foldertreewidget.cpp"

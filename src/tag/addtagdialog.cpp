@@ -110,3 +110,5 @@ Akonadi::Tag AddTagDialog::tag() const
 {
     return d->mTag;
 }
+
+#include "moc_addtagdialog.cpp"

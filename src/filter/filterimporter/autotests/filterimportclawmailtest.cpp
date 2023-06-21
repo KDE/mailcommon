@@ -30,3 +30,5 @@ void FilterImportClawMailtest::testImportFilters()
 }
 
 QTEST_AKONADIMAIN(FilterImportClawMailtest)
+
+#include "moc_filterimportclawmailtest.cpp"

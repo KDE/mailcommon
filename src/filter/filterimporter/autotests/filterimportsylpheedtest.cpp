@@ -23,3 +23,5 @@ void FilterImportSylpheedtest::testImportFilters()
 }
 
 QTEST_AKONADIMAIN(FilterImportSylpheedtest)
+
+#include "moc_filterimportsylpheedtest.cpp"

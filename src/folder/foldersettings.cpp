@@ -435,3 +435,5 @@ void FolderSettings::setHideInSelectionDialog(bool hide)
     mHideInSelectionDialog = hide;
 }
 }
+
+#include "moc_foldersettings.cpp"

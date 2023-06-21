@@ -47,3 +47,5 @@ void FilterActionSetStatusTest::shouldRequiresPart()
 }
 
 QTEST_MAIN(FilterActionSetStatusTest)
+
+#include "moc_filteractionsetstatustest.cpp"

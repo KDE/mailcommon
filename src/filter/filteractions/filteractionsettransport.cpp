@@ -141,3 +141,5 @@ QString FilterActionSetTransport::informationAboutNotValidAction() const
 {
     return i18n("Mail transport not defined.");
 }
+
+#include "moc_filteractionsettransport.cpp"

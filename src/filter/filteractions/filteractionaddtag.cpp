@@ -150,3 +150,5 @@ QString FilterActionAddTag::informationAboutNotValidAction() const
     const QString info = name() + QLatin1Char('\n') + i18n("No tag selected.");
     return info;
 }
+
+#include "moc_filteractionaddtag.cpp"

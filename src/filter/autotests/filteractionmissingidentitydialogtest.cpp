@@ -47,3 +47,5 @@ void FilterActionMissingIdentityDialogTest::shouldHaveDefaultValue()
 }
 
 QTEST_MAIN(FilterActionMissingIdentityDialogTest)
+
+#include "moc_filteractionmissingidentitydialogtest.cpp"

@@ -95,3 +95,5 @@ QString FilterActionRemoveHeader::informationAboutNotValidAction() const
 {
     return i18n("Header name undefined.");
 }
+
+#include "moc_filteractionremoveheader.cpp"

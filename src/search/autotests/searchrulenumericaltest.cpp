@@ -62,3 +62,5 @@ void SearchRuleNumericalTest::shouldMatchNumericalsize()
 }
 
 QTEST_MAIN(SearchRuleNumericalTest)
+
+#include "moc_searchrulenumericaltest.cpp"

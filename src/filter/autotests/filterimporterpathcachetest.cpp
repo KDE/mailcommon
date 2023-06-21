@@ -75,3 +75,5 @@ void FilterImporterPathCacheTest::shouldReturnValues()
     cache.insert(key, cached);
     QCOMPARE(cache.convertedFilterPath(key), cached);
 }
+
+#include "moc_filterimporterpathcachetest.cpp"

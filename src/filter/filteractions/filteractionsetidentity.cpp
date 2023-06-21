@@ -120,3 +120,5 @@ void FilterActionSetIdentity::setParamWidgetValue(QWidget *paramWidget) const
 
     comboBox->setCurrentIdentity(mParameter);
 }
+
+#include "moc_filteractionsetidentity.cpp"

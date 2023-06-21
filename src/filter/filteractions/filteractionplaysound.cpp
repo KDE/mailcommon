@@ -76,3 +76,5 @@ QString FilterActionPlaySound::informationAboutNotValidAction() const
 {
     return i18n("Sound file was not defined.");
 }
+
+#include "moc_filteractionplaysound.cpp"

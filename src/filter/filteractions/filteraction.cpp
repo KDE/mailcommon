@@ -132,3 +132,5 @@ QString FilterAction::sieveCode() const
 {
     return i18n("### \"action '%1' not supported\"", name());
 }
+
+#include "moc_filteraction.cpp"

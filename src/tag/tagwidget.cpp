@@ -259,3 +259,5 @@ KKeySequenceWidget *TagWidget::keySequenceWidget() const
 {
     return d->mKeySequenceWidget;
 }
+
+#include "moc_tagwidget.cpp"

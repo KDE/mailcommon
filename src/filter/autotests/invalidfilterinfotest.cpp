@@ -56,3 +56,5 @@ void InvalidFilterInfoTest::shouldBeEqual()
 }
 
 QTEST_MAIN(InvalidFilterInfoTest)
+
+#include "moc_invalidfilterinfotest.cpp"

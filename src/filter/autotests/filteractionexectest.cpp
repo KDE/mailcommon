@@ -36,3 +36,5 @@ void FilterActionExecTest::shouldHaveRequirePart()
 }
 
 QTEST_MAIN(FilterActionExecTest)
+
+#include "moc_filteractionexectest.cpp"

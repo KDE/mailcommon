@@ -34,3 +34,5 @@ void FilterActionCopyTest::shouldHaveRequiresPart()
 }
 
 QTEST_MAIN(FilterActionCopyTest)
+
+#include "moc_filteractioncopytest.cpp"

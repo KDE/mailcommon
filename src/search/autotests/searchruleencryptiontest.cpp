@@ -162,3 +162,5 @@ void SearchRuleEncryptionTest::shouldMatchMessage()
 }
 
 QTEST_MAIN(SearchRuleEncryptionTest)
+
+#include "moc_searchruleencryptiontest.cpp"

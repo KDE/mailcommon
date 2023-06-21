@@ -37,3 +37,5 @@ void InvalidFilterWidget::setInvalidFilters(const QList<InvalidFilterInfo> &lst)
 {
     mInvalidFilterListWidget->setInvalidFilters(lst);
 }
+
+#include "moc_invalidfilterwidget.cpp"

@@ -42,3 +42,5 @@ void FilterImportProcmailtest::testImportFilters()
 }
 
 QTEST_AKONADIMAIN(FilterImportProcmailtest)
+
+#include "moc_filterimportprocmailtest.cpp"

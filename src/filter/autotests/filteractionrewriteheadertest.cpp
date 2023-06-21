@@ -179,3 +179,5 @@ void FilterActionRewriteHeaderTest::shouldHaveRequiredPart()
 }
 
 QTEST_MAIN(FilterActionRewriteHeaderTest)
+
+#include "moc_filteractionrewriteheadertest.cpp"

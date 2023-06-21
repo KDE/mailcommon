@@ -50,3 +50,5 @@ QString FilterActionReplyTo::informationAboutNotValidAction() const
 {
     return i18n("Email address was not defined.");
 }
+
+#include "moc_filteractionreplyto.cpp"

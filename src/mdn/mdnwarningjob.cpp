@@ -133,3 +133,5 @@ void MDNWarningJob::setResponse(ResponseMDN newResponse)
 {
     mResponse = newResponse;
 }
+
+#include "moc_mdnwarningjob.cpp"

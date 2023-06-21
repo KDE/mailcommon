@@ -61,3 +61,5 @@ void SnippetWidgetTest::shouldClearWidget()
     QVERIFY(!w.isGroupSelected());
     QVERIFY(w.wasChanged());
 }
+
+#include "moc_snippetwidgettest.cpp"

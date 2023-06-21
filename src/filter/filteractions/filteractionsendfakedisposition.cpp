@@ -114,3 +114,5 @@ QString FilterActionSendFakeDisposition::informationAboutNotValidAction() const
 {
     return i18n("Fake type undefined.");
 }
+
+#include "moc_filteractionsendfakedisposition.cpp"

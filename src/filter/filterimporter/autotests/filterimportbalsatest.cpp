@@ -23,3 +23,5 @@ void FilterImportBalsatest::testImportFilters()
 }
 
 QTEST_AKONADIMAIN(FilterImportBalsatest)
+
+#include "moc_filterimportbalsatest.cpp"

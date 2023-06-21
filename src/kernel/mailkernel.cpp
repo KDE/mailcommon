@@ -387,3 +387,5 @@ QMap<QString, Akonadi::Collection::Id> Kernel::pop3ResourceTargetCollection()
     return mapIdentifierCollectionId;
 }
 }
+
+#include "moc_mailkernel.cpp"

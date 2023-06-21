@@ -48,3 +48,5 @@ void FilterActionMissingTagDialogTest::shouldHaveDefaultValue()
 }
 
 QTEST_MAIN(FilterActionMissingTagDialogTest)
+
+#include "moc_filteractionmissingtagdialogtest.cpp"

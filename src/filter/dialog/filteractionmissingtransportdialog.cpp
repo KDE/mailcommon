@@ -77,3 +77,5 @@ int FilterActionMissingTransportDialog::selectedTransport() const
 {
     return mComboBoxTransport->currentTransportId();
 }
+
+#include "moc_filteractionmissingtransportdialog.cpp"

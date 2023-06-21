@@ -43,3 +43,5 @@ void FilterImporterPathCache::clear()
 {
     mFilterCache.clear();
 }
+
+#include "moc_filterimporterpathcache.cpp"

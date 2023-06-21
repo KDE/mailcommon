@@ -83,3 +83,5 @@ void SearchRuleDateTest::shouldMatchDate()
 }
 
 QTEST_MAIN(SearchRuleDateTest)
+
+#include "moc_searchruledatetest.cpp"

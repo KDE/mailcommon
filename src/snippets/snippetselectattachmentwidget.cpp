@@ -66,3 +66,5 @@ QString SnippetSelectorWidget::customEntry(const QString &text)
     delete dlg;
     return result;
 }
+
+#include "moc_snippetselectattachmentwidget.cpp"

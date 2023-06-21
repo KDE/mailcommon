@@ -116,3 +116,5 @@ void SelectThunderbirdFilterFilesWidget::setStartDir(const QUrl &url)
     ui->fileUrl->setFilter(QStringLiteral("*.dat"));
     ui->fileUrl->setStartDir(url);
 }
+
+#include "moc_selectthunderbirdfilterfileswidget.cpp"

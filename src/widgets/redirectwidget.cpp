@@ -87,3 +87,5 @@ void RedirectWidget::slotAddressSelection()
         mEdit->setModified(true);
     }
 }
+
+#include "moc_redirectwidget.cpp"

@@ -44,3 +44,5 @@ void MailFilterTest::shouldApplySettings()
 }
 
 QTEST_MAIN(MailFilterTest)
+
+#include "moc_mailfiltertest.cpp"

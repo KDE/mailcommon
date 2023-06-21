@@ -84,3 +84,5 @@ void FilterActionMissingSoundUrlDialog::writeConfig()
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
 }
+
+#include "moc_filteractionmissingsoundurldialog.cpp"

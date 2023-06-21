@@ -34,3 +34,5 @@ void InvalidFilterListWidgetTest::shouldAddInvalidFilters()
 }
 
 QTEST_MAIN(InvalidFilterListWidgetTest)
+
+#include "moc_invalidfilterlistwidgettest.cpp"

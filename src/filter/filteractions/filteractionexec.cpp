@@ -35,3 +35,5 @@ QString FilterActionExec::informationAboutNotValidAction() const
 {
     return i18n("Missing command.");
 }
+
+#include "moc_filteractionexec.cpp"

@@ -67,3 +67,5 @@ void SearchPatternTest::shouldRuleRequirePart()
 }
 
 QTEST_MAIN(SearchPatternTest)
+
+#include "moc_searchpatterntest.cpp"

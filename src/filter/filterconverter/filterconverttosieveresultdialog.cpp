@@ -96,3 +96,5 @@ void FilterConvertToSieveResultDialog::writeConfig()
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
 }
+
+#include "moc_filterconverttosieveresultdialog.cpp"

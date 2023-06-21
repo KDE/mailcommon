@@ -28,3 +28,5 @@ void FilterActionRedirectTest::shouldHaveRequiredPart()
 }
 
 QTEST_MAIN(FilterActionRedirectTest)
+
+#include "moc_filteractionredirecttest.cpp"

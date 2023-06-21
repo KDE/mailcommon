@@ -198,3 +198,5 @@ bool SnippetDialog::snippetIsValid() const
 {
     return mSnippetWidget->snippetIsValid();
 }
+
+#include "moc_snippetdialog.cpp"

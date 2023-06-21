@@ -189,3 +189,5 @@ QString FilterLog::recode(const QString &plain)
 {
     return plain.toHtmlEscaped();
 }
+
+#include "moc_filterlog.cpp"

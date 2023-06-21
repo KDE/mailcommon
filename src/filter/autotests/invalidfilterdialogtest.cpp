@@ -32,3 +32,5 @@ void InvalidFilterDialogTest::shouldHaveDefaultValue()
 }
 
 QTEST_MAIN(InvalidFilterDialogTest)
+
+#include "moc_invalidfilterdialogtest.cpp"

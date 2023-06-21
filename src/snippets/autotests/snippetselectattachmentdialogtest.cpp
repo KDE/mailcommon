@@ -32,3 +32,5 @@ void SnippetSelectAttachmentDialogTest::shouldHaveDefaultValues()
     QVERIFY(buttonBox);
     QCOMPARE(buttonBox->standardButtons(), QDialogButtonBox::StandardButtons{QDialogButtonBox::Ok | QDialogButtonBox::Cancel});
 }
+
+#include "moc_snippetselectattachmentdialogtest.cpp"

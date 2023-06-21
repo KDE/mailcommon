@@ -114,3 +114,5 @@ void FilterTestKernel::setLastSelectedFolder(Akonadi::Collection::Id col)
 {
     Q_UNUSED(col)
 }
+
+#include "moc_filtertestkernel.cpp"

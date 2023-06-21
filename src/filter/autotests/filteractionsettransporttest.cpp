@@ -44,3 +44,5 @@ void FilterActionSetTransportTest::shouldHaveSieveRequires()
 }
 
 QTEST_MAIN(FilterActionSetTransportTest)
+
+#include "moc_filteractionsettransporttest.cpp"

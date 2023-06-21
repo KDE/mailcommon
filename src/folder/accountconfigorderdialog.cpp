@@ -252,3 +252,5 @@ void AccountConfigOrderDialog::writeConfig()
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
 }
+
+#include "moc_accountconfigorderdialog.cpp"

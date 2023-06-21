@@ -31,3 +31,5 @@ void FilterActionSendReceiptTest::shouldSieveRequires()
 }
 
 QTEST_MAIN(FilterActionSendReceiptTest)
+
+#include "moc_filteractionsendreceipttest.cpp"

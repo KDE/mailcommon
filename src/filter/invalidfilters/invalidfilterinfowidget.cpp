@@ -23,3 +23,5 @@ void InvalidFilterInfoWidget::slotShowDetails(const QString &details)
     setText(details);
     animatedShow();
 }
+
+#include "moc_invalidfilterinfowidget.cpp"

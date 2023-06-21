@@ -84,3 +84,5 @@ QString FilterActionMissingTemplateDialog::selectedTemplate() const
         return mComboBoxTemplate->currentText();
     }
 }
+
+#include "moc_filteractionmissingtemplatedialog.cpp"

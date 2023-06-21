@@ -330,3 +330,5 @@ void FilterManager::endUpdate()
     d->mMailFilterAgentInterface->reload();
     Q_EMIT filtersChanged();
 }
+
+#include "moc_filtermanager.cpp"

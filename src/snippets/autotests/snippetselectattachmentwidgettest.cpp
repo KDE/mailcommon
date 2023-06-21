@@ -25,3 +25,5 @@ void SnippetSelectAttachmentWidgetTest::shouldHaveDefaultValues()
     auto *mEditor = w.findChild<PimCommon::SimpleStringListEditor *>(QStringLiteral("editor"));
     QVERIFY(mEditor);
 }
+
+#include "moc_snippetselectattachmentwidgettest.cpp"

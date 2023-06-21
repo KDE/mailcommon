@@ -73,3 +73,5 @@ void SelectThunderbirdFilterFilesDialog::writeConfig()
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
 }
+
+#include "moc_selectthunderbirdfilterfilesdialog.cpp"

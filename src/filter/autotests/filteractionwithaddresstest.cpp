@@ -64,3 +64,5 @@ void FilterActionWithAddressTest::shouldRequiresPart()
 }
 
 QTEST_MAIN(FilterActionWithAddressTest)
+
+#include "moc_filteractionwithaddresstest.cpp"

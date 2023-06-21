@@ -99,3 +99,5 @@ void CollectionTemplatesWidget::load(const Akonadi::Collection &col)
     mWidget->loadFromFolder(mCollectionId, mIdentity);
     mChanged = false;
 }
+
+#include "moc_collectiontemplateswidget.cpp"

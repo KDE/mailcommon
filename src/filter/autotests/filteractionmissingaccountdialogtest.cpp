@@ -38,3 +38,5 @@ void FilterActionMissingAccountDialogTest::shouldHaveDefaultValue()
 }
 
 QTEST_MAIN(FilterActionMissingAccountDialogTest)
+
+#include "moc_filteractionmissingaccountdialogtest.cpp"

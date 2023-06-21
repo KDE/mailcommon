@@ -36,3 +36,5 @@ void SnippetAttachmentWidgetTest::shouldHaveDefaultValues()
     QVERIFY(!button->text().isEmpty());
     QVERIFY(!button->toolTip().isEmpty());
 }
+
+#include "moc_snippetattachmentwidgettest.cpp"

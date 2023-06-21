@@ -696,3 +696,5 @@ void SearchPatternEdit::slotRuleAdded(QWidget *newRuleWidget)
     connect(srw, &SearchRuleWidget::returnPressed, this, &SearchPatternEdit::returnPressed);
     Q_EMIT patternChanged();
 }
+
+#include "moc_searchpatternedit.cpp"

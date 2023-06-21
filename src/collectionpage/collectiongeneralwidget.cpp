@@ -114,3 +114,5 @@ void CollectionGeneralWidget::load(const Akonadi::Collection &col)
     mKeepRepliesInSameFolderCheckBox->setEnabled(mFolderCollection->canCreateMessages());
     mHideInSelectionDialogCheckBox->setChecked(mFolderCollection->hideInSelectionDialog());
 }
+
+#include "moc_collectiongeneralwidget.cpp"

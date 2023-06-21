@@ -41,3 +41,5 @@ void FilterActionMissingSoundUrlDialogTest::shouldHaveDefaultValue()
 }
 
 QTEST_MAIN(FilterActionMissingSoundUrlDialogTest)
+
+#include "moc_filteractionmissingsoundurldialogtest.cpp"

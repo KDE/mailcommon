@@ -93,3 +93,5 @@ void CollectionExpiryPage::slotChanged()
 {
     mChanged = true;
 }
+
+#include "moc_collectionexpirypage.cpp"

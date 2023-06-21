@@ -39,3 +39,5 @@ void FilterActionMoveTest::shouldHaveDefaultValue()
 }
 
 QTEST_MAIN(FilterActionMoveTest)
+
+#include "moc_filteractionmovetest.cpp"

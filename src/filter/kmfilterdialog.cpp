@@ -739,3 +739,5 @@ void KMFilterDialog::slotHelp()
 {
     PimCommon::Util::invokeHelp(QStringLiteral("kmail2/filters.html"));
 }
+
+#include "moc_kmfilterdialog.cpp"

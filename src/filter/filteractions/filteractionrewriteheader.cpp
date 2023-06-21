@@ -228,3 +228,5 @@ void FilterActionRewriteHeader::argsFromString(const QString &argsStr)
 
     mParameter = mParameterList.at(index);
 }
+
+#include "moc_filteractionrewriteheader.cpp"

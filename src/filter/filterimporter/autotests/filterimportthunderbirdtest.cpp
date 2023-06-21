@@ -200,3 +200,5 @@ void FilterImportThunderbirdtest::testImportTypeFilters()
 }
 
 QTEST_AKONADIMAIN(FilterImportThunderbirdtest)
+
+#include "moc_filterimportthunderbirdtest.cpp"

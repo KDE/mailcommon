@@ -74,3 +74,5 @@ void SearchRuleStringTest::shouldBeEmpty()
 }
 
 QTEST_MAIN(SearchRuleStringTest)
+
+#include "moc_searchrulestringtest.cpp"

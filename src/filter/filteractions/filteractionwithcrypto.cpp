@@ -89,3 +89,5 @@ QStringList FilterActionWithCrypto::getEncryptionKeysFromContent(const KMime::Me
 
     return keyIds;
 }
+
+#include "moc_filteractionwithcrypto.cpp"

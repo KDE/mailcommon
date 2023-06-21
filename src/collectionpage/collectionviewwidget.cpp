@@ -186,3 +186,5 @@ void CollectionViewWidget::slotThemeCheckboxChanged()
 {
     mThemeComboBox->setEnabled(!mUseDefaultThemeCheckBox->isChecked());
 }
+
+#include "moc_collectionviewwidget.cpp"

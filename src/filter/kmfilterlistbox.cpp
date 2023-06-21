@@ -811,3 +811,5 @@ MailCommon::MailFilter *QListWidgetFilterItem::filter() const
 {
     return mFilter;
 }
+
+#include "moc_kmfilterlistbox.cpp"

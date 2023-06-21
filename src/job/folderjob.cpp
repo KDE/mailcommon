@@ -54,3 +54,5 @@ void FolderJob::setCancellable(bool b)
 {
     mCancellable = b;
 }
+
+#include "moc_folderjob.cpp"

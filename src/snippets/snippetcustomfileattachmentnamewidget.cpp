@@ -68,3 +68,5 @@ void SnippetCustomFileAttachmentNameWidget::setText(const QString &str)
 {
     mLineEdit->setText(str);
 }
+
+#include "moc_snippetcustomfileattachmentnamewidget.cpp"

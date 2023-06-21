@@ -99,3 +99,5 @@ QString FilterActionStatus::informationAboutNotValidAction() const
 {
     return i18n("Status is missing.");
 }
+
+#include "moc_filteractionstatus.cpp"

@@ -126,3 +126,5 @@ QStringList KMFilterAccountList::selectedAccount()
     }
     return lstAccount;
 }
+
+#include "moc_kmfilteraccountlist.cpp"

@@ -233,3 +233,5 @@ QString FilterActionForward::informationAboutNotValidAction() const
 {
     return i18n("Email address was not defined.");
 }
+
+#include "moc_filteractionforward.cpp"

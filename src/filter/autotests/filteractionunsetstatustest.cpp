@@ -28,3 +28,5 @@ void FilterActionUnsetStatusTest::shouldRequiresPart()
 }
 
 QTEST_MAIN(FilterActionUnsetStatusTest)
+
+#include "moc_filteractionunsetstatustest.cpp"

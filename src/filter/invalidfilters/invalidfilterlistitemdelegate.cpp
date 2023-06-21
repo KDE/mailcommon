@@ -85,3 +85,5 @@ void InvalidFilterListItemDelegate::slotShowDetails()
         Q_EMIT showDetails(information);
     }
 }
+
+#include "moc_invalidfilterlistitemdelegate.cpp"

@@ -169,3 +169,5 @@ bool EntityCollectionOrderProxyModel::filterAcceptsRow(int sourceRow, const QMod
     const QModelIndex sourceIndex = sourceModel()->index(sourceRow, filterKeyColumn(), sourceParent);
     return d->matcher.matches(sourceModel(), sourceIndex, filterRole());
 }
+
+#include "moc_entitycollectionorderproxymodel.cpp"

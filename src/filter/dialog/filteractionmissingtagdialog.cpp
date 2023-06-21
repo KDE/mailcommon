@@ -118,3 +118,5 @@ void FilterActionMissingTagDialog::slotAddTag()
     }
     delete dlg;
 }
+
+#include "moc_filteractionmissingtagdialog.cpp"

@@ -104,3 +104,5 @@ void FolderCollectionMonitor::slotDeleteJob(KJob *job)
 {
     Util::showJobErrorMessage(job);
 }
+
+#include "moc_foldercollectionmonitor.cpp"

@@ -225,3 +225,5 @@ ScheduledJob::ScheduledJob(const Akonadi::Collection &folder, bool immediate)
 }
 
 ScheduledJob::~ScheduledJob() = default;
+
+#include "moc_jobscheduler.cpp"

@@ -362,3 +362,5 @@ void FilterActionPipeThroughTest::testXUidChange()
 }
 
 QTEST_MAIN(FilterActionPipeThroughTest)
+
+#include "moc_filteractionpipethroughtest.cpp"

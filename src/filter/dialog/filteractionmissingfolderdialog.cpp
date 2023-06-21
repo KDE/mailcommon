@@ -187,3 +187,5 @@ Akonadi::Collection::List FilterActionMissingFolderDialog::potentialCorrectFolde
     }
     return lst;
 }
+
+#include "moc_filteractionmissingfolderdialog.cpp"
