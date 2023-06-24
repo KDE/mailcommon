@@ -198,7 +198,7 @@ msgstr ""
 #: collectionpage/collectiongeneralwidget.cpp:54
 #, kde-format
 msgid "Use &default identity"
-msgstr "Empregar a i&dentidade predeterminada"
+msgstr "Usar a i&dentidade predeterminada"
 
 #: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
@@ -209,13 +209,12 @@ msgid ""
 "signing or encryption keys automatically. Identities can be set up in the "
 "main configuration dialog. (Settings -> Configure KMail)"
 msgstr ""
-"Escolla a identidade do remitente a empregar cando se escriba correo novo ou "
-"se responda ao correo deste cartafol. Isto ven a significar que se está nun "
-"dos seus cartafoles de traballo, pode facer que KMail empregue "
-"automaticamente o correspondente enderezo do remitente de correo, da "
-"sinatura e das chaves de cifrado e sinatura. As identidades pódense "
-"estabelecer no diálogo de configuración principal. (Opcións -> Configurar "
-"KMail)"
+"Escolla a identidade do remitente a usar cando se escriba correo novo ou se "
+"responda ao correo deste cartafol. Isto ven a significar que se está nun dos "
+"seus cartafoles de traballo, pode facer que KMail use automaticamente o "
+"correspondente enderezo do remitente de correo, da sinatura e das chaves de "
+"cifrado e sinatura. As identidades pódense definir no diálogo de "
+"configuración principal. (Opcións -> Configurar KMail)"
 
 #: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
@@ -235,7 +234,7 @@ msgstr "&Copiar os modelos globais"
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
-msgstr "Mostrar a columna de remitente/destinatario na lista de mensaxes"
+msgstr "Amosar a columna de remitente/destinatario na lista de mensaxes"
 
 #: collectionpage/collectionviewwidget.cpp:36
 #, kde-format
@@ -258,7 +257,7 @@ msgstr "Destino"
 #: collectionpage/collectionviewwidget.cpp:39
 #, kde-format
 msgid "Sho&w column:"
-msgstr "&Mostrar a columna:"
+msgstr "&Amosar a columna:"
 
 #: collectionpage/collectionviewwidget.cpp:42
 #, kde-format
@@ -288,7 +287,7 @@ msgstr "Preferir texto a HTML"
 #: collectionpage/collectionviewwidget.cpp:80
 #, kde-format
 msgid "Use Global Settings"
-msgstr "Empregar as opcións globais"
+msgstr "Usar as opcións globais"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
 #, kde-format
@@ -300,8 +299,7 @@ msgstr "Seleccionar unha conta"
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
-msgstr ""
-"Falta a conta do filtro. Escolla unha conte para empregar co filtro «%1»"
+msgstr "Falta a conta do filtro. Escolla unha conte para usar co filtro «%1»"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:73
@@ -318,7 +316,7 @@ msgstr "A ruta do cartafol era «%1»."
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
 msgid "The following folders can be used for this filter:"
-msgstr "Pódense empregar os cartafoles seguintes con este filtro:"
+msgstr "Pódense usar os cartafoles seguintes con este filtro:"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:67
 #, kde-format
@@ -330,7 +328,7 @@ msgstr "Escolla un cartafol:"
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
 msgstr ""
-"Falta o cartafol do filtro. Escolla un cartafol para empregar co filtro «%1»:"
+"Falta o cartafol do filtro. Escolla un cartafol para usar co filtro «%1»:"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
 #, kde-format
@@ -344,8 +342,8 @@ msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
 "\"%1\""
 msgstr ""
-"Falta a identidade do filtro. Escolla unha identidade para empregar co "
-"filtro «%1»."
+"Falta a identidade do filtro. Escolla unha identidade para usar co filtro "
+"«%1»."
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
 #, kde-format
@@ -361,7 +359,7 @@ msgstr "O ficheiro de son era «%1»."
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
-msgstr "Falta ficheiro de son. Escolla un son para empregar co filtro «%1»"
+msgstr "Falta ficheiro de son. Escolla un son para usar co filtro «%1»"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
@@ -378,8 +376,7 @@ msgstr "A etiqueta era «%1»."
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
-"Falta a etiqueta do filtro. Escolla unha etiqueta para empregar co filtro "
-"«%1»"
+"Falta a etiqueta do filtro. Escolla unha etiqueta para usar co filtro «%1»"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
@@ -412,8 +409,7 @@ msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
 "\"%1\""
 msgstr ""
-"Falta o transporte do filtro. Escolla un transporte para empregar co filtro "
-"«%1»"
+"Falta o transporte do filtro. Escolla un transporte para usar co filtro «%1»"
 
 #: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
 #, kde-format
@@ -640,7 +636,7 @@ msgstr "O modelo empregado para os reenvíos"
 #: filter/filteractions/filteractionforward.cpp:111
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
-msgstr "Escolla o modelo de reenvío que desexa empregar con este filtro."
+msgstr "Escolla o modelo de reenvío que desexa usar con este filtro."
 
 #: filter/filteractions/filteractionforward.cpp:226
 #, kde-format
@@ -707,7 +703,7 @@ msgstr "Non se definiu o nome da cabeceira."
 #: filter/filteractions/filteractionreplyto.cpp:20
 #, kde-format
 msgid "Set Reply-To To"
-msgstr "Estabelecer a Resposta a como"
+msgstr "Definir a Resposta a como"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:25
 #, kde-format
@@ -749,7 +745,7 @@ msgstr "Ignorar"
 #, kde-format
 msgctxt "MDN type"
 msgid "Displayed"
-msgstr "Mostrada"
+msgstr "Amosada"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:35
 #, kde-format
@@ -794,7 +790,7 @@ msgstr "Confirmar a entrega"
 #: filter/filteractions/filteractionsetidentity.cpp:29
 #, kde-format
 msgid "Set Identity To"
-msgstr "Estabelecer a identidade como"
+msgstr "Definir a identidade como"
 
 #: filter/filteractions/filteractionsetstatus.cpp:20
 #, kde-format
@@ -809,7 +805,7 @@ msgstr "Non se indicou o estado."
 #: filter/filteractions/filteractionsettransport.cpp:36
 #, kde-format
 msgid "Set Transport To"
-msgstr "Estabelecer o transporte como"
+msgstr "Definir o transporte como"
 
 #: filter/filteractions/filteractionsettransport.cpp:142
 #, kde-format
@@ -911,7 +907,7 @@ msgstr "Pode obter unha cabeceira concreta usando «%{headername}»."
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
-msgstr "Converter nun script de sieve"
+msgstr "Converter nun guión de sieve"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:42
 #, kde-format
@@ -932,7 +928,7 @@ msgstr "Ficheiros de Sieve (*.siv);;Todos os ficheiros (*)"
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
-msgstr "Converter nun script de Sieve"
+msgstr "Converter nun guión de Sieve"
 
 #: filter/filterimporter/filterimportergmail.cpp:48
 #, kde-format
@@ -1125,7 +1121,7 @@ msgstr "Filtros de Gmail"
 #: filter/kmfilterdialog.cpp:140
 #, kde-format
 msgid "Sieve script"
-msgstr "Script de Sieve"
+msgstr "Guión de Sieve"
 
 #: filter/kmfilterdialog.cpp:162
 #, kde-format
@@ -1184,8 +1180,7 @@ msgid ""
 msgstr ""
 "<p>O filtro actívase <b>despois</b> de se enviar a mensaxe e só afecta a "
 "copia local da mensaxe.</p><p>Se tamén hai que modificar a copia do "
-"destinatario, empregue «Aplicar este filtro <b>antes</b> de enviar mensaxes»."
-"</p>"
+"destinatario, use «Aplicar este filtro <b>antes</b> de enviar mensaxes».</p>"
 
 #: filter/kmfilterdialog.cpp:227
 #, kde-format
@@ -1329,13 +1324,13 @@ msgstr ""
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
-"Non podemos converter todos os filtros de KMail en scripts de sieve pero "
+"Non podemos converter todos os filtros de KMail en guións de sieve pero "
 "podémolo intentar :)"
 
 #: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
 #, kde-format
 msgid "Convert KMail filters to sieve scripts"
-msgstr "Converter os filtros de KMail en scripts de sieve"
+msgstr "Converter os filtros de KMail en guións de sieve"
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1384,9 +1379,9 @@ msgid ""
 msgstr ""
 "<qt><p>Prema este botón para <em>subir</em> o filtro seleccionado na lista "
 "de enriba.</p><p>Isto é útil xa que a orde dos filtros na lista determina a "
-"orde en que se van empregando nas mensaxes. O primeiro en probarse é o de "
-"enriba de todo.</p><p>Se premeu este botón accidentalmente pode desfacer a "
-"acción premendo o botón <em>Baixar</em>.</p></qt>"
+"orde en que se van usando nas mensaxes. O primeiro en probarse é o de enriba "
+"de todo.</p><p>Se premeu este botón accidentalmente pode desfacer a acción "
+"premendo o botón <em>Baixar</em>.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:96
 #, kde-format
@@ -1400,9 +1395,9 @@ msgid ""
 msgstr ""
 "<qt><p>Prema este botón para <em>baixar</em> o filtro seleccionado na lista "
 "de enriba.</p><p>Isto é útil xa que a orde dos filtros determina a orde en "
-"que se empregan nas mensaxes. O filtro de enriba de todo é o primeiro en "
-"empregarse.</p><p>Se premeu este botón por accidente, pode desfacer a acción "
-"premendo o botón <em>Subir</em>.</p></qt>"
+"que se usan nas mensaxes. O filtro de enriba de todo é o primeiro en usarse."
+"</p><p>Se premeu este botón por accidente, pode desfacer a acción premendo o "
+"botón <em>Subir</em>.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:104
 #, kde-format
@@ -1415,7 +1410,7 @@ msgstr ""
 "<qt><p>Prema este botón para subir o filtro seleccionado para o fondo da "
 "lista.</p><p>Isto é útil porque a orde dos filtros na lista determina a orde "
 "na que se proban nas mensaxes: O filtro de enriba de todo é o primeiro en "
-"empregarse.</p></qt>"
+"usarse.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:110
 #, kde-format
@@ -1428,7 +1423,7 @@ msgstr ""
 "<qt><p>Prema este botón para subir o filtro seleccionado para o cumio da "
 "lista.</p><p>Isto é útil porque a orde dos filtros na lista determina a orde "
 "na que se proban nas mensaxes: O filtro de enriba de todo é o primeiro en "
-"empregarse.</p></qt>"
+"usarse.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:140
 #, kde-format
@@ -1667,7 +1662,7 @@ msgstr "Editar a orde das contas"
 #: folder/accountconfigorderdialog.cpp:74
 #, kde-format
 msgid "Use custom order"
-msgstr "Empregar unha orde personalizada"
+msgstr "Usar unha orde personalizada"
 
 #: folder/accountconfigorderdialog.cpp:91
 #, kde-format
@@ -1741,7 +1736,7 @@ msgstr "Tamaño das iconas"
 #: folder/foldertreeview.cpp:154
 #, kde-format
 msgid "Display Tooltips"
-msgstr "Mostrar informacións emerxentes"
+msgstr "Amosar informacións emerxentes"
 
 #: folder/foldertreeview.cpp:158
 #, kde-format
@@ -2682,9 +2677,9 @@ msgid ""
 "you use the same variable later, even in another snippet, the value entered "
 "to the right will be the default value for that variable."
 msgstr ""
-"Se activa esta opción, gardarase o valor inserido á dereita. Se emprega a "
-"mesma variábel máis tarde, mesmo noutro fragmento, o valor inserido á "
-"dereita será o valor predeterminado desa variábel."
+"Se activa esta opción, gardarase o valor inserido á dereita. Se usa a mesma "
+"variábel máis tarde, mesmo noutro fragmento, o valor inserido á dereita será "
+"o valor predeterminado desa variábel."
 
 #: snippets/snippetwidget.cpp:56
 #, kde-format
@@ -2907,7 +2902,7 @@ msgstr "O enderezo de encamiñamento está baleiro"
 #: widgets/redirectwidget.cpp:39
 #, kde-format
 msgid "Use the Address-Selection Dialog"
-msgstr "Empregar o diálogo de selección de enderezos"
+msgstr "Usar o diálogo de selección de enderezos"
 
 #: widgets/redirectwidget.cpp:41
 #, kde-format
