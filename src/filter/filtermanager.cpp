@@ -29,6 +29,7 @@ public:
         , mMonitor(new Akonadi::Monitor)
     {
         const auto service = Akonadi::ServerManager::agentServiceName(Akonadi::ServerManager::Agent, QStringLiteral("akonadi_mailfilter_agent"));
+        qDebug() << " service ********************** " << service;
         mMailFilterAgentInterface =
             new org::freedesktop::Akonadi::MailFilterAgent(service, QStringLiteral("/MailFilterAgent"), QDBusConnection::sessionBus(), q);
     }
@@ -265,6 +266,7 @@ void FilterManager::filter(const Akonadi::Item::List &messages, FilterManager::F
         itemIds << item.id();
     }
 
+    qDebug() << " DXDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD";
     d->mMailFilterAgentInterface->filterItems(itemIds, static_cast<int>(set));
 }
 

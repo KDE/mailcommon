@@ -368,7 +368,7 @@ PRIVATE
   KF6::SyntaxHighlighting
   KF6::GuiAddons
   KF6::Codecs
-  KPim6::ContactEditor
+  KPim6::AkonadiContactWidgets
   Qt::Xml
 )
 
