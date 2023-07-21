@@ -171,7 +171,7 @@ void MessageRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidg
     }
 
     // reset the value widget
-    auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+    auto lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
     if (lineEdit) {
         lineEdit->blockSignals(true);
@@ -220,10 +220,10 @@ bool MessageRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWi
     }
 
     if (func == SearchRule::FuncHasAttachment || func == SearchRule::FuncHasNoAttachment) {
-        auto *w = valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider"));
+        auto w = valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider"));
         valueStack->setCurrentWidget(w);
     } else {
-        auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+        auto lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
         if (lineEdit) {
             lineEdit->blockSignals(true);
@@ -251,10 +251,10 @@ bool MessageRuleWidgetHandler::update(const QByteArray &field, QStackedWidget *f
     // raise the correct value widget
     SearchRule::Function func = currentFunction(functionStack);
     if (func == SearchRule::FuncHasAttachment || func == SearchRule::FuncHasNoAttachment) {
-        auto *w = valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider"));
+        auto w = valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider"));
         valueStack->setCurrentWidget(w);
     } else {
-        auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+        auto lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
         if (lineEdit) {
             valueStack->setCurrentWidget(lineEdit);

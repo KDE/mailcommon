@@ -149,7 +149,7 @@ void TextRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget 
     }
 
     // reset the value widget
-    auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+    auto lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
     if (lineEdit) {
         lineEdit->blockSignals(true);
         lineEdit->clear();
@@ -189,7 +189,7 @@ bool TextRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidge
         funcCombo->blockSignals(false);
         functionStack->setCurrentWidget(funcCombo);
     }
-    auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+    auto lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
     if (lineEdit) {
         lineEdit->blockSignals(true);
@@ -214,7 +214,7 @@ bool TextRuleWidgetHandler::update(const QByteArray &, QStackedWidget *functionS
     if (func == SearchRule::FuncIsInAddressbook || func == SearchRule::FuncIsNotInAddressbook) {
         valueStack->setCurrentWidget(valueStack->findChild<QWidget *>(QStringLiteral("textRuleValueHider")));
     } else {
-        auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+        auto lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
         if (lineEdit) {
             valueStack->setCurrentWidget(lineEdit);

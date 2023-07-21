@@ -41,7 +41,7 @@ void FilterActionWithAddressTest::shouldHaveDefaultValue()
     TestFilterActionWithAddress filter;
     QWidget *w = filter.createParamWidget(nullptr);
     QCOMPARE(w->objectName(), QStringLiteral("emailaddressrequester"));
-    auto *requester = dynamic_cast<Akonadi::EmailAddressRequester *>(w);
+    auto requester = dynamic_cast<Akonadi::EmailAddressRequester *>(w);
     QVERIFY(requester);
     QVERIFY(filter.isEmpty());
 }
@@ -50,7 +50,7 @@ void FilterActionWithAddressTest::shouldAssignValue()
 {
     TestFilterActionWithAddress filter;
     QWidget *w = filter.createParamWidget(nullptr);
-    auto *requester = dynamic_cast<Akonadi::EmailAddressRequester *>(w);
+    auto requester = dynamic_cast<Akonadi::EmailAddressRequester *>(w);
     filter.argsFromString(QStringLiteral("foo"));
     filter.setParamWidgetValue(w);
     QVERIFY(!filter.isEmpty());

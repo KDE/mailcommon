@@ -40,9 +40,9 @@ void FilterActionWithUrlTest::shouldHaveDefaultValue()
 {
     TestFilterActionWithUrl filter;
     QWidget *w = filter.createParamWidget(nullptr);
-    auto *requester = w->findChild<KUrlRequester *>(QStringLiteral("requester"));
+    auto requester = w->findChild<KUrlRequester *>(QStringLiteral("requester"));
     QVERIFY(requester);
-    auto *toolButton = w->findChild<QToolButton *>(QStringLiteral("helpbutton"));
+    auto toolButton = w->findChild<QToolButton *>(QStringLiteral("helpbutton"));
     QVERIFY(toolButton);
 }
 
@@ -50,7 +50,7 @@ void FilterActionWithUrlTest::shouldClearWidget()
 {
     TestFilterActionWithUrl filter;
     QWidget *w = filter.createParamWidget(nullptr);
-    auto *requester = w->findChild<KUrlRequester *>(QStringLiteral("requester"));
+    auto requester = w->findChild<KUrlRequester *>(QStringLiteral("requester"));
     requester->setUrl(QUrl::fromLocalFile(QStringLiteral("/foo/bla")));
     QVERIFY(!requester->url().isEmpty());
     filter.clearParamWidget(w);
@@ -61,7 +61,7 @@ void FilterActionWithUrlTest::shouldAddValue()
 {
     TestFilterActionWithUrl filter;
     QWidget *w = filter.createParamWidget(nullptr);
-    auto *requester = w->findChild<KUrlRequester *>(QStringLiteral("requester"));
+    auto requester = w->findChild<KUrlRequester *>(QStringLiteral("requester"));
     filter.argsFromString(QStringLiteral("/foo"));
     filter.setParamWidgetValue(w);
     QCOMPARE(requester->lineEdit()->text(), QStringLiteral("/foo"));

@@ -28,9 +28,9 @@ void FilterActionAddHeaderTest::shouldCreateWidget()
     auto comboBox = widget->findChild<QComboBox *>(QStringLiteral("combo"));
     QVERIFY(comboBox);
     QVERIFY(comboBox->isEditable());
-    auto *label = widget->findChild<QLabel *>(QStringLiteral("label_value"));
+    auto label = widget->findChild<QLabel *>(QStringLiteral("label_value"));
     QVERIFY(label);
-    auto *lineEdit = widget->findChild<KLineEdit *>(QStringLiteral("ledit"));
+    auto lineEdit = widget->findChild<KLineEdit *>(QStringLiteral("ledit"));
     QVERIFY(lineEdit);
     QVERIFY(lineEdit->text().isEmpty());
 }
@@ -50,7 +50,7 @@ void FilterActionAddHeaderTest::shouldClearWidget()
     MailCommon::FilterActionAddHeader filter;
     QWidget *widget = filter.createParamWidget(nullptr);
     auto comboBox = widget->findChild<QComboBox *>(QStringLiteral("combo"));
-    auto *lineEdit = widget->findChild<KLineEdit *>(QStringLiteral("ledit"));
+    auto lineEdit = widget->findChild<KLineEdit *>(QStringLiteral("ledit"));
     comboBox->lineEdit()->setText(QStringLiteral("test"));
     lineEdit->setText(QStringLiteral("blo"));
     filter.clearParamWidget(widget);
@@ -194,7 +194,7 @@ void FilterActionAddHeaderTest::shouldAddValue()
     filter.argsFromString(argsinput);
     filter.setParamWidgetValue(widget);
     auto comboBox = widget->findChild<QComboBox *>(QStringLiteral("combo"));
-    auto *lineEdit = widget->findChild<KLineEdit *>(QStringLiteral("ledit"));
+    auto lineEdit = widget->findChild<KLineEdit *>(QStringLiteral("ledit"));
     QCOMPARE(comboBox->lineEdit()->text(), resultheader);
     QCOMPARE(lineEdit->text(), resultvalue);
 }

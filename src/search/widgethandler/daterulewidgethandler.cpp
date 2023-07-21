@@ -141,7 +141,7 @@ void DateRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidget 
     }
 
     // reset the value widget
-    auto *dateInput = valueStack->findChild<KDateComboBox *>(QStringLiteral("KDateComboBox"));
+    auto dateInput = valueStack->findChild<KDateComboBox *>(QStringLiteral("KDateComboBox"));
 
     if (dateInput) {
         dateInput->blockSignals(true);
@@ -184,7 +184,7 @@ bool DateRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWidge
     // set the value
     const QString value = rule->contents();
 
-    auto *dateInput = valueStack->findChild<KDateComboBox *>(QStringLiteral("KDateComboBox"));
+    auto dateInput = valueStack->findChild<KDateComboBox *>(QStringLiteral("KDateComboBox"));
 
     if (dateInput) {
         dateInput->blockSignals(true);
@@ -207,7 +207,7 @@ bool DateRuleWidgetHandler::update(const QByteArray &field, QStackedWidget *func
     functionStack->setCurrentWidget(functionStack->findChild<QWidget *>(QStringLiteral("dateRuleFuncCombo")));
 
     // raise the correct value widget
-    auto *dateInput = valueStack->findChild<KDateComboBox *>(QStringLiteral("KDateComboBox"));
+    auto dateInput = valueStack->findChild<KDateComboBox *>(QStringLiteral("KDateComboBox"));
 
     if (dateInput) {
         valueStack->setCurrentWidget(dateInput);

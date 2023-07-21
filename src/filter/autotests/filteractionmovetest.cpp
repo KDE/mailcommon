@@ -33,7 +33,7 @@ void FilterActionMoveTest::shouldHaveDefaultValue()
     MailCommon::FilterActionMove filter;
     QWidget *w = filter.createParamWidget(nullptr);
     QVERIFY(w);
-    auto *requester = dynamic_cast<MailCommon::FolderRequester *>(w);
+    auto requester = dynamic_cast<MailCommon::FolderRequester *>(w);
     QVERIFY(requester);
     QCOMPARE(requester->objectName(), QStringLiteral("folderrequester"));
 }

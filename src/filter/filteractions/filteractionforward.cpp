@@ -117,7 +117,7 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
 
 void FilterActionForward::applyParamWidgetValue(QWidget *paramWidget)
 {
-    auto *addressEdit = paramWidget->findChild<QWidget *>(QStringLiteral("addressEdit"));
+    auto addressEdit = paramWidget->findChild<QWidget *>(QStringLiteral("addressEdit"));
     Q_ASSERT(addressEdit);
     FilterActionWithAddress::applyParamWidgetValue(addressEdit);
 
@@ -134,7 +134,7 @@ void FilterActionForward::applyParamWidgetValue(QWidget *paramWidget)
 
 void FilterActionForward::setParamWidgetValue(QWidget *paramWidget) const
 {
-    auto *addressEdit = paramWidget->findChild<QWidget *>(QStringLiteral("addressEdit"));
+    auto addressEdit = paramWidget->findChild<QWidget *>(QStringLiteral("addressEdit"));
     Q_ASSERT(addressEdit);
     FilterActionWithAddress::setParamWidgetValue(addressEdit);
 
@@ -155,7 +155,7 @@ void FilterActionForward::setParamWidgetValue(QWidget *paramWidget) const
 
 void FilterActionForward::clearParamWidget(QWidget *paramWidget) const
 {
-    auto *addressEdit = paramWidget->findChild<QWidget *>(QStringLiteral("addressEdit"));
+    auto addressEdit = paramWidget->findChild<QWidget *>(QStringLiteral("addressEdit"));
     Q_ASSERT(addressEdit);
     FilterActionWithAddress::clearParamWidget(addressEdit);
 

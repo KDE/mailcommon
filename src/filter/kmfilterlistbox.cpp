@@ -379,7 +379,7 @@ void KMFilterListBox::slotSelectionChanged()
 void KMFilterListBox::slotSelected(int aIdx)
 {
     if (aIdx >= 0 && aIdx < mListWidget->count()) {
-        auto *itemFilter = static_cast<QListWidgetFilterItem *>(mListWidget->item(aIdx));
+        auto itemFilter = static_cast<QListWidgetFilterItem *>(mListWidget->item(aIdx));
         MailFilter *f = itemFilter->filter();
 
         if (f) {
