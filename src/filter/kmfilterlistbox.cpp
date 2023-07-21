@@ -338,7 +338,7 @@ QList<MailFilter *> KMFilterListBox::filtersForSaving(bool closeAfterSaving, boo
     QList<MailCommon::InvalidFilterInfo> listInvalidFilters;
     const int numberOfFilter(mListWidget->count());
     for (int i = 0; i < numberOfFilter; ++i) {
-        auto *itemFilter = static_cast<QListWidgetFilterItem *>(mListWidget->item(i));
+        auto itemFilter = static_cast<QListWidgetFilterItem *>(mListWidget->item(i));
         auto f = new MailFilter(*itemFilter->filter()); // deep copy
 
         const QString information = f->purify();

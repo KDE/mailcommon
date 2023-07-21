@@ -35,14 +35,14 @@ void FilterActionMissingIdentityDialogTest::shouldHaveDefaultValue()
     QVERIFY(dlg.isModal());
     QVERIFY(!dlg.windowTitle().isEmpty());
 
-    auto *label = dlg.findChild<QLabel *>(QStringLiteral("label"));
+    auto label = dlg.findChild<QLabel *>(QStringLiteral("label"));
     QVERIFY(label);
     QVERIFY(!label->text().isEmpty());
 
-    auto *mComboBoxIdentity = dlg.findChild<KIdentityManagementWidgets::IdentityCombo *>(QStringLiteral("comboboxidentity"));
+    auto mComboBoxIdentity = dlg.findChild<KIdentityManagementWidgets::IdentityCombo *>(QStringLiteral("comboboxidentity"));
     QVERIFY(mComboBoxIdentity);
 
-    auto *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
+    auto buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
     QVERIFY(buttonBox);
 }
 

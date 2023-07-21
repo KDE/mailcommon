@@ -18,11 +18,11 @@ SnippetSelectAttachmentWidgetTest::SnippetSelectAttachmentWidgetTest(QObject *pa
 void SnippetSelectAttachmentWidgetTest::shouldHaveDefaultValues()
 {
     MailCommon::SnippetSelectAttachmentWidget w;
-    auto *mainLayout = w.findChild<QVBoxLayout *>(QStringLiteral("mainLayout"));
+    auto mainLayout = w.findChild<QVBoxLayout *>(QStringLiteral("mainLayout"));
     QVERIFY(mainLayout);
     QCOMPARE(mainLayout->contentsMargins(), QMargins(0, 0, 0, 0));
 
-    auto *mEditor = w.findChild<PimCommon::SimpleStringListEditor *>(QStringLiteral("editor"));
+    auto mEditor = w.findChild<PimCommon::SimpleStringListEditor *>(QStringLiteral("editor"));
     QVERIFY(mEditor);
 }
 

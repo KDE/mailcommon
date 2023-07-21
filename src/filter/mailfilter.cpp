@@ -257,7 +257,7 @@ SearchRule::RequiredPart MailFilter::requiredPart(const QString &id) const
 
     QList<FilterAction *> actionList = *actions();
     if (!actionList.isEmpty()) {
-        requiredPartByActions = (*std::max_element(actionList.constBegin(), actionList.constEnd(), [](auto *lhs, auto *rhs) {
+        requiredPartByActions = (*std::max_element(actionList.constBegin(), actionList.constEnd(), [](auto lhs, auto rhs) {
                                     return lhs->requiredPart() < rhs->requiredPart();
                                 }))->requiredPart();
     }
