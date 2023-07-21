@@ -108,7 +108,7 @@ void FilterActionAddHeader::setParamWidgetValue(QWidget *paramWidget) const
         comboBox->setCurrentIndex(index);
     }
 
-    auto *lineEdit = paramWidget->findChild<QLineEdit *>(QStringLiteral("ledit"));
+    auto lineEdit = paramWidget->findChild<QLineEdit *>(QStringLiteral("ledit"));
     Q_ASSERT(lineEdit);
 
     lineEdit->setText(mValue);
@@ -131,7 +131,7 @@ void FilterActionAddHeader::clearParamWidget(QWidget *paramWidget) const
     Q_ASSERT(comboBox);
     comboBox->setCurrentIndex(0);
 
-    auto *lineEdit = paramWidget->findChild<QLineEdit *>(QStringLiteral("ledit"));
+    auto lineEdit = paramWidget->findChild<QLineEdit *>(QStringLiteral("ledit"));
     Q_ASSERT(lineEdit);
     lineEdit->clear();
 }

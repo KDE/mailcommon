@@ -74,7 +74,7 @@ void FolderCollectionMonitor::expireAllCollection(const QAbstractItemModel *mode
             continue;
         }
 
-        const auto *attr = collection.attribute<MailCommon::ExpireCollectionAttribute>();
+        const auto attr = collection.attribute<MailCommon::ExpireCollectionAttribute>();
         if (attr) {
             if (attr->isAutoExpire()) {
                 MailCommon::Util::expireOldMessages(collection, immediate);

@@ -189,7 +189,7 @@ void FolderSettings::readConfig()
     if (configGroup.hasKey(QStringLiteral("IgnoreNewMail"))) {
         if (configGroup.readEntry(QStringLiteral("IgnoreNewMail"), false)) {
             // migrate config.
-            auto *newMailNotifierAttr = mCollection.attribute<Akonadi::NewMailNotifierAttribute>(Akonadi::Collection::AddIfMissing);
+            auto newMailNotifierAttr = mCollection.attribute<Akonadi::NewMailNotifierAttribute>(Akonadi::Collection::AddIfMissing);
             newMailNotifierAttr->setIgnoreNewMail(true);
             new Akonadi::CollectionModifyJob(mCollection, this);
             // TODO verify if it works;

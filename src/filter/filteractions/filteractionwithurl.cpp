@@ -67,7 +67,7 @@ void FilterActionWithUrl::slotHelp()
 
 void FilterActionWithUrl::applyParamWidgetValue(QWidget *paramWidget)
 {
-    auto *requester = paramWidget->findChild<KUrlRequester *>(QStringLiteral("requester"));
+    auto requester = paramWidget->findChild<KUrlRequester *>(QStringLiteral("requester"));
     Q_ASSERT(requester);
 
     mParameter = requester->text();
@@ -75,7 +75,7 @@ void FilterActionWithUrl::applyParamWidgetValue(QWidget *paramWidget)
 
 void FilterActionWithUrl::setParamWidgetValue(QWidget *paramWidget) const
 {
-    auto *requester = paramWidget->findChild<KUrlRequester *>(QStringLiteral("requester"));
+    auto requester = paramWidget->findChild<KUrlRequester *>(QStringLiteral("requester"));
     Q_ASSERT(requester);
 
     requester->setText(mParameter);
@@ -83,7 +83,7 @@ void FilterActionWithUrl::setParamWidgetValue(QWidget *paramWidget) const
 
 void FilterActionWithUrl::clearParamWidget(QWidget *paramWidget) const
 {
-    auto *requester = paramWidget->findChild<KUrlRequester *>(QStringLiteral("requester"));
+    auto requester = paramWidget->findChild<KUrlRequester *>(QStringLiteral("requester"));
     Q_ASSERT(requester);
     requester->clear();
 }

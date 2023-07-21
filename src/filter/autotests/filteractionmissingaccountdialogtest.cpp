@@ -26,14 +26,14 @@ void FilterActionMissingAccountDialogTest::shouldHaveDefaultValue()
     QVERIFY(!dlg.windowTitle().isEmpty());
     QVERIFY(dlg.isModal());
 
-    auto *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
+    auto buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
     QVERIFY(buttonBox);
 
-    auto *label = dlg.findChild<QLabel *>(QStringLiteral("label"));
+    auto label = dlg.findChild<QLabel *>(QStringLiteral("label"));
     QVERIFY(label);
     QVERIFY(!label->text().isEmpty());
 
-    auto *mAccountList = dlg.findChild<MailCommon::KMFilterAccountList *>(QStringLiteral("accountlist"));
+    auto mAccountList = dlg.findChild<MailCommon::KMFilterAccountList *>(QStringLiteral("accountlist"));
     QVERIFY(mAccountList);
 }
 

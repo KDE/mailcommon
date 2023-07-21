@@ -139,7 +139,7 @@ void NumericRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidg
     }
 
     // reset the value widget
-    auto *numInput = valueStack->findChild<KPluralHandlingSpinBox *>(QStringLiteral("KPluralHandlingSpinBox"));
+    auto numInput = valueStack->findChild<KPluralHandlingSpinBox *>(QStringLiteral("KPluralHandlingSpinBox"));
 
     if (numInput) {
         numInput->blockSignals(true);
@@ -196,7 +196,7 @@ bool NumericRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWi
         value = 0;
     }
 
-    auto *numInput = valueStack->findChild<KPluralHandlingSpinBox *>(QStringLiteral("KPluralHandlingSpinBox"));
+    auto numInput = valueStack->findChild<KPluralHandlingSpinBox *>(QStringLiteral("KPluralHandlingSpinBox"));
 
     if (numInput) {
         initNumInput(numInput, rule->field());
@@ -220,7 +220,7 @@ bool NumericRuleWidgetHandler::update(const QByteArray &field, QStackedWidget *f
     functionStack->setCurrentWidget(functionStack->findChild<QWidget *>(QStringLiteral("numericRuleFuncCombo")));
 
     // raise the correct value widget
-    auto *numInput = valueStack->findChild<KPluralHandlingSpinBox *>(QStringLiteral("KPluralHandlingSpinBox"));
+    auto numInput = valueStack->findChild<KPluralHandlingSpinBox *>(QStringLiteral("KPluralHandlingSpinBox"));
 
     if (numInput) {
         initNumInput(numInput, field);

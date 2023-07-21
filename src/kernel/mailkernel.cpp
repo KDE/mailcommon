@@ -194,7 +194,7 @@ void Kernel::createDefaultCollectionDone(KJob *job)
         return;
     }
 
-    auto *requestJob = qobject_cast<Akonadi::SpecialMailCollectionsRequestJob *>(job);
+    auto requestJob = qobject_cast<Akonadi::SpecialMailCollectionsRequestJob *>(job);
 
     const Akonadi::Collection col = requestJob->collection();
     if (!(col.rights() & Akonadi::Collection::AllRights)) {

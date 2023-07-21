@@ -177,7 +177,7 @@ void HeadersRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidg
     }
 
     // reset the value widget
-    auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+    auto lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
     if (lineEdit) {
         lineEdit->blockSignals(true);
         lineEdit->clear();
@@ -224,10 +224,10 @@ bool HeadersRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWi
     }
 
     if (func == SearchRule::FuncIsInAddressbook || func == SearchRule::FuncIsNotInAddressbook) {
-        auto *w = valueStack->findChild<QWidget *>(QStringLiteral("headerRuleValueHider"));
+        auto w = valueStack->findChild<QWidget *>(QStringLiteral("headerRuleValueHider"));
         valueStack->setCurrentWidget(w);
     } else {
-        auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+        auto lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
         if (lineEdit) {
             lineEdit->blockSignals(true);
@@ -257,7 +257,7 @@ bool HeadersRuleWidgetHandler::update(const QByteArray &field, QStackedWidget *f
     if (func == SearchRule::FuncIsInAddressbook || func == SearchRule::FuncIsNotInAddressbook) {
         valueStack->setCurrentWidget(valueStack->findChild<QWidget *>(QStringLiteral("headerRuleValueHider")));
     } else {
-        auto *lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
+        auto lineEdit = valueStack->findChild<KLineEdit *>(QStringLiteral("regExpLineEdit"));
 
         if (lineEdit) {
             valueStack->setCurrentWidget(lineEdit);

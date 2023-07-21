@@ -27,7 +27,7 @@ void FilterActionSetTransportTest::shouldHaveDefaultValue()
     QWidget *w = filter.createParamWidget(nullptr);
     QCOMPARE(w->objectName(), QStringLiteral("transportcombobox"));
 
-    auto *transportCombobox = dynamic_cast<MailTransport::TransportComboBox *>(w);
+    auto transportCombobox = dynamic_cast<MailTransport::TransportComboBox *>(w);
     QVERIFY(transportCombobox);
 }
 

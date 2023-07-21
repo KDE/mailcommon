@@ -153,11 +153,11 @@ void FilterActionRewriteHeader::setParamWidgetValue(QWidget *paramWidget) const
         comboBox->setCurrentIndex(index);
     }
 
-    auto *regExpLineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("search"));
+    auto regExpLineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("search"));
     Q_ASSERT(regExpLineEdit);
     regExpLineEdit->setText(mRegex.pattern());
 
-    auto *lineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("replace"));
+    auto lineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("replace"));
     Q_ASSERT(lineEdit);
     lineEdit->setText(mReplacementString);
 }
@@ -183,11 +183,11 @@ void FilterActionRewriteHeader::clearParamWidget(QWidget *paramWidget) const
     Q_ASSERT(comboBox);
     comboBox->setCurrentIndex(0);
 
-    auto *regExpLineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("search"));
+    auto regExpLineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("search"));
     Q_ASSERT(regExpLineEdit);
     regExpLineEdit->clear();
 
-    auto *lineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("replace"));
+    auto lineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("replace"));
     Q_ASSERT(lineEdit);
     lineEdit->clear();
 }

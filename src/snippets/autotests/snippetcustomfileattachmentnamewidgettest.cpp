@@ -20,15 +20,15 @@ SnippetCustomFileAttachmentNameWidgetTest::SnippetCustomFileAttachmentNameWidget
 void SnippetCustomFileAttachmentNameWidgetTest::shouldHaveDefaultValues()
 {
     MailCommon::SnippetCustomFileAttachmentNameWidget w;
-    auto *mainLayout = w.findChild<QVBoxLayout *>(QStringLiteral("mainLayout"));
+    auto mainLayout = w.findChild<QVBoxLayout *>(QStringLiteral("mainLayout"));
     QVERIFY(mainLayout);
     QCOMPARE(mainLayout->contentsMargins(), QMargins(0, 0, 0, 0));
 
-    auto *mLineEdit = w.findChild<QLineEdit *>(QStringLiteral("mLineEdit"));
+    auto mLineEdit = w.findChild<QLineEdit *>(QStringLiteral("mLineEdit"));
     QVERIFY(mLineEdit);
     QVERIFY(mLineEdit->text().isEmpty());
 
-    auto *selectVariable = w.findChild<QPushButton *>(QStringLiteral("selectVariable"));
+    auto selectVariable = w.findChild<QPushButton *>(QStringLiteral("selectVariable"));
     QVERIFY(selectVariable);
     QVERIFY(!selectVariable->text().isEmpty());
     QVERIFY(selectVariable->menu());

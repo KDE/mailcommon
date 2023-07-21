@@ -180,7 +180,7 @@ void FilterActionAddToAddressBook::setParamWidgetValue(QWidget *paramWidget) con
     Q_ASSERT(categoryEdit);
     categoryEdit->setSelection(namesToTags(mCategory.split(QLatin1Char(';'))));
 
-    auto *collectionComboBox = paramWidget->findChild<Akonadi::CollectionComboBox *>(QStringLiteral("AddressBookComboBox"));
+    auto collectionComboBox = paramWidget->findChild<Akonadi::CollectionComboBox *>(QStringLiteral("AddressBookComboBox"));
     Q_ASSERT(collectionComboBox);
     collectionComboBox->setDefaultCollection(Akonadi::Collection(mCollectionId));
     collectionComboBox->setProperty("collectionId", mCollectionId);

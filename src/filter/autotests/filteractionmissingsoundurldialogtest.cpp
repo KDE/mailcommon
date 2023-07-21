@@ -25,10 +25,10 @@ void FilterActionMissingSoundUrlDialogTest::shouldHaveDefaultValue()
     MailCommon::FilterActionMissingSoundUrlDialog dlg(QStringLiteral("filename"), QStringLiteral("arg"));
     QVERIFY(!dlg.windowTitle().isEmpty());
 
-    auto *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
+    auto buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonbox"));
     QVERIFY(buttonBox);
 
-    auto *label = dlg.findChild<QLabel *>(QStringLiteral("oldlabel"));
+    auto label = dlg.findChild<QLabel *>(QStringLiteral("oldlabel"));
     QVERIFY(label);
     QVERIFY(!label->text().isEmpty());
 
@@ -36,7 +36,7 @@ void FilterActionMissingSoundUrlDialogTest::shouldHaveDefaultValue()
     QVERIFY(label);
     QVERIFY(!label->text().isEmpty());
 
-    auto *mUrlWidget = dlg.findChild<KUrlRequester *>(QStringLiteral("urlwidget"));
+    auto mUrlWidget = dlg.findChild<KUrlRequester *>(QStringLiteral("urlwidget"));
     QVERIFY(mUrlWidget);
 }
 
