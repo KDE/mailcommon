@@ -31,4 +31,4 @@ private:
     QString mInformation;
 };
 }
-Q_DECLARE_TYPEINFO(MailCommon::InvalidFilterInfo, Q_MOVABLE_TYPE);
+Q_DECLARE_TYPEINFO(MailCommon::InvalidFilterInfo, Q_RELOCATABLE_TYPE);

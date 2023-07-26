@@ -121,4 +121,4 @@ private:
     QMap<QString, QString> mSavedVariables;
 };
 }
-Q_DECLARE_TYPEINFO(MailCommon::SnippetsInfo, Q_MOVABLE_TYPE);
+Q_DECLARE_TYPEINFO(MailCommon::SnippetsInfo, Q_RELOCATABLE_TYPE);
