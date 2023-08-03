@@ -345,6 +345,7 @@ PUBLIC
   KPim${KF_MAJOR_VERSION}::MessageComposer
   KPim${KF_MAJOR_VERSION}::PimCommonAkonadi
   KF${KF_MAJOR_VERSION}::Completion
+  KPim${KF_MAJOR_VERSION}::MailTransport
 PRIVATE
   Gpgmepp
   KPim${KF_MAJOR_VERSION}::AkonadiWidgets
@@ -356,7 +357,6 @@ PRIVATE
   KPim${KF_MAJOR_VERSION}::TemplateParser
   KPim${KF_MAJOR_VERSION}::MessageList
   KPim${KF_MAJOR_VERSION}::Mime
-  KPim${KF_MAJOR_VERSION}::MailTransport
   Phonon::phonon4qt${QT_MAJOR_VERSION}
   KF${KF_MAJOR_VERSION}::XmlGui
   KF${KF_MAJOR_VERSION}::KIOWidgets
