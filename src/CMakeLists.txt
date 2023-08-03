@@ -440,6 +440,7 @@ ecm_generate_headers(MailCommon_Camelcasefolder_HEADERS
   FolderSelectionDialog
   FolderTreeWidgetProxyModel
   FavoriteCollectionOrderProxyModel
+  EntityCollectionOrderProxyModel
   REQUIRED_HEADERS MailCommon_folder_HEADERS
   PREFIX MailCommon
   RELATIVE folder
