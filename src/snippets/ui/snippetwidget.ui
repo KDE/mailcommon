@@ -67,7 +67,7 @@
        </widget>
       </item>
       <item row="6" column="1" colspan="2">
-       <widget class="KPIMTextEdit::PlainTextEditorWidget" name="snippetText">
+       <widget class="TextCustomEditor::PlainTextEditorWidget" name="snippetText">
         <property name="font">
          <font>
           <family>Courier</family>
@@ -217,9 +217,9 @@
    <header>klineedit.h</header>
   </customwidget>
   <customwidget>
-   <class>KPIMTextEdit::PlainTextEditorWidget</class>
+   <class>TextCustomEditor::PlainTextEditorWidget</class>
    <extends>QWidget</extends>
-   <header>kpimtextedit/plaintexteditorwidget.h</header>
+   <header>textcustomeditor/plaintexteditorwidget.h</header>
   </customwidget>
   <customwidget>
    <class>KKeySequenceWidget</class>

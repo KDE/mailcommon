@@ -6,9 +6,9 @@
 
 #include "filterconverttosieveresultdialog.h"
 #include "filterconverttosievepurposemenuwidget.h"
-#include <KPIMTextEdit/PlainTextEditor>
-#include <KPIMTextEdit/PlainTextEditorWidget>
 #include <PimCommon/PimUtil>
+#include <TextCustomEditor/PlainTextEditor>
+#include <TextCustomEditor/PlainTextEditorWidget>
 
 #include <KLocalizedString>
 #include <KSyntaxHighlighting/Definition>
@@ -30,7 +30,7 @@ static const char myFilterConvertToSieveResultDialogName[] = "FilterConvertToSie
 }
 FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *parent)
     : QDialog(parent)
-    , mEditor(new KPIMTextEdit::PlainTextEditorWidget(this))
+    , mEditor(new TextCustomEditor::PlainTextEditorWidget(this))
 {
     setWindowTitle(i18nc("@title:window", "Convert to Sieve Script"));
     auto topLayout = new QVBoxLayout(this);

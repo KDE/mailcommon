@@ -6,8 +6,8 @@
 
 #include "snippetwidget.h"
 #include "ui_snippetwidget.h"
-#include <KPIMTextEdit/PlainTextEditor>
 #include <MessageComposer/ConvertSnippetVariableMenu>
+#include <TextCustomEditor/PlainTextEditor>
 
 #include <KActionCollection>
 #include <KLineEdit>
@@ -69,7 +69,7 @@ SnippetWidget::SnippetWidget(QWidget *parent)
     connect(d->mUi.keyword, &KLineEdit::textChanged, this, [this]() {
         d->wasChanged = true;
     });
-    connect(d->mUi.snippetText->editor(), &KPIMTextEdit::PlainTextEditor::textChanged, this, [this]() {
+    connect(d->mUi.snippetText->editor(), &TextCustomEditor::PlainTextEditor::textChanged, this, [this]() {
         d->wasChanged = true;
     });
     connect(d->mUi.keyWidget, &KKeySequenceWidget::keySequenceChanged, this, [this]() {

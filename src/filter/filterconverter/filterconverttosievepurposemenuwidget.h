@@ -7,7 +7,7 @@
 #pragma once
 
 #include <PimCommon/PurposeMenuWidget>
-namespace KPIMTextEdit
+namespace TextCustomEditor
 {
 class PlainTextEditor;
 }
@@ -21,9 +21,9 @@ public:
     ~FilterconverttosievePurposeMenuWidget() override;
 
     Q_REQUIRED_RESULT QByteArray text() override;
-    void setEditorWidget(KPIMTextEdit::PlainTextEditor *editor);
+    void setEditorWidget(TextCustomEditor::PlainTextEditor *editor);
 
 private:
-    KPIMTextEdit::PlainTextEditor *mEditor = nullptr;
+    TextCustomEditor::PlainTextEditor *mEditor = nullptr;
 };
 }

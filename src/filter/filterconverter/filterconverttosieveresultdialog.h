@@ -8,7 +8,7 @@
 
 #include <KSyntaxHighlighting/Repository>
 #include <QDialog>
-namespace KPIMTextEdit
+namespace TextCustomEditor
 {
 class PlainTextEditorWidget;
 }
@@ -28,7 +28,7 @@ private:
     void slotSave();
     void readConfig();
     void writeConfig();
-    KPIMTextEdit::PlainTextEditorWidget *const mEditor;
+    TextCustomEditor::PlainTextEditorWidget *const mEditor;
     KSyntaxHighlighting::Repository mSyntaxRepo;
 };
 }

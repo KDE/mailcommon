@@ -12,7 +12,7 @@
 #include <QDialog>
 
 class QCheckBox;
-namespace KPIMTextEdit
+namespace TextCustomEditor
 {
 class PlainTextEditorWidget;
 }
@@ -35,7 +35,7 @@ private:
     void slotAccepted();
     const QString mVariableName;
     QMap<QString, QString> *mVariables = nullptr;
-    KPIMTextEdit::PlainTextEditorWidget *const mVariableValueText;
+    TextCustomEditor::PlainTextEditorWidget *const mVariableValueText;
     QCheckBox *mSaveVariable = nullptr;
 };
 }

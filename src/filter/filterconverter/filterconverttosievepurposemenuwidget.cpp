@@ -4,7 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 #include "filterconverttosievepurposemenuwidget.h"
-#include <KPIMTextEdit/PlainTextEditor>
+#include <TextCustomEditor/PlainTextEditor>
 using namespace MailCommon;
 FilterconverttosievePurposeMenuWidget::FilterconverttosievePurposeMenuWidget(QWidget *parentWidget, QObject *parent)
     : PimCommon::PurposeMenuWidget(parentWidget, parent)
@@ -21,7 +21,7 @@ QByteArray FilterconverttosievePurposeMenuWidget::text()
     return {};
 }
 
-void FilterconverttosievePurposeMenuWidget::setEditorWidget(KPIMTextEdit::PlainTextEditor *editor)
+void FilterconverttosievePurposeMenuWidget::setEditorWidget(TextCustomEditor::PlainTextEditor *editor)
 {
     mEditor = editor;
 }

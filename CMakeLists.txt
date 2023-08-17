@@ -45,6 +45,7 @@ set(PIMCOMMON_LIB_VERSION "5.240.40")
 
 set(PHONON_LIB_VERSION "4.11.1")
 set(AKONADI_VERSION "5.240.40")
+set(KTEXTADDONS_MIN_VERSION "1.4.42")
 
 find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets DBus Xml)
 
@@ -84,6 +85,7 @@ find_package(KPim6TemplateParser ${MESSAGELIB_LIB_VERSION} CONFIG REQUIRED)
 find_package(Phonon4Qt6 ${PHONON_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6AkonadiContactWidgets ${AKONADICONTACT_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6IdentityManagementCore ${KMIME_LIB_VERSION} CONFIG REQUIRED)
+find_package(KF6TextCustomEditor ${KTEXTADDONS_MIN_VERSION} CONFIG REQUIRED)
 
 option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
 add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Designer")

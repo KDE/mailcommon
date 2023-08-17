@@ -370,6 +370,7 @@ PRIVATE
   KF6::Codecs
   KPim6::AkonadiContactWidgets
   Qt::Xml
+  KF6::TextCustomEditor
 )
 
 target_link_libraries(KPim6MailCommon PRIVATE QGpgmeQt6)

@@ -21,7 +21,7 @@
 #include <QVBoxLayout>
 #include <QWindow>
 
-#include <KPIMTextEdit/PlainTextEditorWidget>
+#include <TextCustomEditor/PlainTextEditorWidget>
 
 using namespace MailCommon;
 namespace
@@ -32,7 +32,7 @@ SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<Q
     : QDialog(parent)
     , mVariableName(variableName)
     , mVariables(variables)
-    , mVariableValueText(new KPIMTextEdit::PlainTextEditorWidget(this))
+    , mVariableValueText(new TextCustomEditor::PlainTextEditorWidget(this))
 {
     setWindowTitle(i18nc("@title:window", "Enter Values for Variables"));
     auto mainLayout = new QVBoxLayout(this);
