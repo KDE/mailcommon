@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-21 00:49+0000\n"
-"PO-Revision-Date: 2023-07-04 00:55+0300\n"
+"PO-Revision-Date: 2023-09-03 21:36+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.07.70\n"
+"X-Generator: Lokalize 23.11.70\n"
 "X-POOTLE-MTIME: 1413111382.000000\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
@@ -46,7 +46,7 @@ msgstr "Asla"
 #: collectionpage/collectionexpirywidget.cpp:66
 #, kde-format
 msgid "Save Settings and Expire Now"
-msgstr "Ayarları kaydet ve Şimdi Sürelerini Doldur"
+msgstr "Ayarları Kaydet ve Şimdi Sürelerini Doldur"
 
 #: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
@@ -56,12 +56,12 @@ msgstr "Geçersiz tarihli iletilerin süresini doldur"
 #: collectionpage/collectionexpirywidget.cpp:73
 #, kde-format
 msgid "Expire read messages after:"
-msgstr "Okunmuş iletileri şu tarihten sonra süresini doldur:"
+msgstr "Okunan iletilerin son kullanma tarihi:"
 
 #: collectionpage/collectionexpirywidget.cpp:76
 #, kde-format
 msgid "Expire unread messages after:"
-msgstr "Okunmamış iletileri şu tarihten sonra süresini doldur:"
+msgstr "Okunmayan iletilerin son kullanma tarihi:"
 
 #: collectionpage/collectionexpirywidget.cpp:90
 #, kde-format
@@ -79,7 +79,7 @@ msgid ""
 "Please select a folder to expire messages into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
-"Süresi dolan iletiler için bir dizin belirtin.\n"
+"Süresi dolan iletiler için bir klasör seçin.\n"
 "Bu işlem yapılmazsa süresi dolan iletiler kalıcı olarak silinecektir."
 
 #: collectionpage/collectionexpirywidget.cpp:173
@@ -94,7 +94,7 @@ msgid ""
 "into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
-"Süresi dolan iletiler için bu dizinden farklı bir dizin belirtin.\n"
+"Süresi dolan iletiler için bu klasörden başka bir klasör seçin.\n"
 "Bu işlem yapılmazsa süresi dolan iletiler kalıcı olarak silinecektir."
 
 #: collectionpage/collectionexpirywidget.cpp:189
@@ -117,7 +117,7 @@ msgstr "Klasör &Adı:"
 #: collectionpage/collectiongeneralpage.cpp:110
 #, kde-format
 msgid "Share unread state with all users"
-msgstr "Okunmamış durumunu tüm kullanıcılarla paylaş"
+msgstr "Okunmadı durumunu tüm kullanıcılarla paylaş"
 
 #: collectionpage/collectiongeneralpage.cpp:113
 #, kde-format
@@ -126,9 +126,9 @@ msgid ""
 "all users having access to this folder. If disabled (the default), every "
 "user with access to this folder has their own unread state."
 msgstr ""
-"Etkin ise bu klasördeki iletilerin okunmamış durumu bu klasörü paylaşan tüm "
+"Etkinse bu klasördeki iletilerin okunmadı durumu bu klasörü paylaşan tüm "
 "kullanıcılar için aynı olacaktır. Etkin değilse (öntanımlı) bu klasöre "
-"erişebilen herkes kendi bağımsız okunmamış durumuna sahip olur."
+"erişebilen herkes kendi bağımsız okunmadı durumuna sahip olur."
 
 #: collectionpage/collectiongeneralpage.cpp:213
 #, kde-format
@@ -143,7 +143,7 @@ msgstr ""
 #: collectionpage/collectiongeneralwidget.cpp:25
 #, kde-format
 msgid "Act on new/unread mail in this folder"
-msgstr "Bu dizindeki yeni/okunmamış postada eylem yap"
+msgstr "Bu klasördeki yeni/okunmayan postada eylem gerçekleştir"
 
 #: collectionpage/collectiongeneralwidget.cpp:27
 #, kde-format
@@ -156,13 +156,13 @@ msgid ""
 "messages. This is useful for ignoring any new/unread mail in your trash and "
 "spam folder.</p></qt>"
 msgstr ""
-"<qt><p>Bu seçenek etkin olduğunda bu dizindeki yeni/okunmamış posta için "
-"bildirim alırsınız. Ayrıca okunmamış iletileri bulunan sonraki/önceki "
+"<qt><p>Bu seçenek etkinleştirilmişse bu klasördeki yeni/okunmayan posta için "
+"bildirim alırsınız. Ayrıca okunmayan iletileri bulunan sonraki/önceki "
 "klasörlere gitmek bu klasörde duracaktır.</p><p>Eğer bu klasördeki yeni/"
-"okunmamış postalar hakkında bilgilendirilmek istemiyor ve okunmamış "
+"okunmayan postalar hakkında bilgilendirilmek istemiyor ve okunmayan "
 "iletileri bulunan sonraki/önceki klasöre giderken bu klasörün atlanmasını "
 "istiyorsanız bu seçeneğin işaretini kaldırın. Bu işlem çöp ve istenmeyen "
-"klasörünüzdeki yeni/okunmamış postayı yok saymak için kullanışlıdır.</p></qt>"
+"klasörünüzdeki yeni/okunmayan postayı yok saymak için kullanışlıdır.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
 #, kde-format
@@ -750,31 +750,31 @@ msgstr "Yok Say"
 #, kde-format
 msgctxt "MDN type"
 msgid "Displayed"
-msgstr "Gösterilmiş"
+msgstr "Gösterilen"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:35
 #, kde-format
 msgctxt "MDN type"
 msgid "Deleted"
-msgstr "Silinmiş"
+msgstr "Silinen"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:36
 #, kde-format
 msgctxt "MDN type"
 msgid "Dispatched"
-msgstr "Yollanmış"
+msgstr "Yollanan"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:37
 #, kde-format
 msgctxt "MDN type"
 msgid "Processed"
-msgstr "İşlenmiş"
+msgstr "İşlenen"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:38
 #, kde-format
 msgctxt "MDN type"
 msgid "Denied"
-msgstr "Reddedilmiş"
+msgstr "Reddedilen"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:39
 #, kde-format
@@ -790,17 +790,17 @@ msgstr "Sahte tür tanımlanmamış."
 #: filter/filteractions/filteractionsendreceipt.cpp:21
 #, kde-format
 msgid "Confirm Delivery"
-msgstr "Ulaşma Onayı"
+msgstr "Teslim Onayı"
 
 #: filter/filteractions/filteractionsetidentity.cpp:29
 #, kde-format
 msgid "Set Identity To"
-msgstr "Kimliği Ayarla"
+msgstr "Kimliği Şuna Ayarla"
 
 #: filter/filteractions/filteractionsetstatus.cpp:20
 #, kde-format
 msgid "Mark As"
-msgstr "İşaretle"
+msgstr "Şöyle İmle"
 
 #: filter/filteractions/filteractionsetstatus.cpp:32
 #, kde-format
@@ -810,7 +810,7 @@ msgstr "Durum belirtilmemiş."
 #: filter/filteractions/filteractionsettransport.cpp:36
 #, kde-format
 msgid "Set Transport To"
-msgstr "Ulaşımı Şuna Ayarla"
+msgstr "Taşımayı Şuna Ayarla"
 
 #: filter/filteractions/filteractionsettransport.cpp:142
 #, kde-format
@@ -827,49 +827,49 @@ msgstr "Önemli"
 #, kde-format
 msgctxt "msg status"
 msgid "Read"
-msgstr "Okunmuş"
+msgstr "Okunan"
 
 #: filter/filteractions/filteractionstatus.cpp:33
 #, kde-format
 msgctxt "msg status"
 msgid "Unread"
-msgstr "Okunmamış"
+msgstr "Okunmayan"
 
 #: filter/filteractions/filteractionstatus.cpp:34
 #, kde-format
 msgctxt "msg status"
 msgid "Replied"
-msgstr "Yanıtlanmış"
+msgstr "Yanıtlanan"
 
 #: filter/filteractions/filteractionstatus.cpp:35
 #, kde-format
 msgctxt "msg status"
 msgid "Forwarded"
-msgstr "İletilmiş"
+msgstr "İletilen"
 
 #: filter/filteractions/filteractionstatus.cpp:36
 #, kde-format
 msgctxt "msg status"
 msgid "Watched"
-msgstr "İzlenmiş"
+msgstr "İzlenen"
 
 #: filter/filteractions/filteractionstatus.cpp:37
 #, kde-format
 msgctxt "msg status"
 msgid "Ignored"
-msgstr "Yok Sayılmış"
+msgstr "Yok Sayılan"
 
 #: filter/filteractions/filteractionstatus.cpp:38
 #, kde-format
 msgctxt "msg status"
 msgid "Spam"
-msgstr "İstenmeyen Posta"
+msgstr "İstenmeyen"
 
 #: filter/filteractions/filteractionstatus.cpp:39
 #, kde-format
 msgctxt "msg status"
 msgid "Ham"
-msgstr "İşlenmemiş"
+msgstr "İşlenmeyen"
 
 #: filter/filteractions/filteractionstatus.cpp:40
 #, kde-format
@@ -1680,7 +1680,7 @@ msgstr "Aşağı"
 #: folder/folderrequester.cpp:45
 #, kde-format
 msgid "Select Folder"
-msgstr "Dizin Seç"
+msgstr "Klasör Seç"
 
 #: folder/folderrequester.cpp:113
 #, kde-format
@@ -1690,23 +1690,23 @@ msgstr "Yerel Klasörler"
 #: folder/folderrequester.cpp:123 folder/folderrequester.cpp:141
 #, kde-format
 msgid "Please select a folder"
-msgstr "Lütfen bir dizin seçin"
+msgstr "Lütfen bir klasör seçin"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
 #, kde-format
 msgid "&New Subfolder..."
-msgstr "Ye&ni Alt Dizin..."
+msgstr "Ye&ni Alt Klasör..."
 
 #: folder/folderselectiondialog.cpp:64
 #, kde-format
 msgid "Create a new subfolder under the currently selected folder"
-msgstr "Seçili dizinin altına yeni bir alt dizin oluştur"
+msgstr "Seçili klasörün altına yeni bir klasör oluştur"
 
 #: folder/folderselectiondialog.cpp:177
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
-msgstr "Yeni Dizin"
+msgstr "Yeni Klasör"
 
 #: folder/folderselectiondialog.cpp:177
 #, kde-format
@@ -1717,12 +1717,12 @@ msgstr "Ad"
 #: folder/folderselectiondialog.cpp:194
 #, kde-format
 msgid "Could not create folder: %1"
-msgstr "Dizin oluşturulamadı: %1"
+msgstr "Klasör oluşturulamadı: %1"
 
 #: folder/folderselectiondialog.cpp:194
 #, kde-format
 msgid "Folder creation failed"
-msgstr "Takvim dizini oluşturma işlemi başarısız oldu"
+msgstr "Klasör oluşturulamadı"
 
 #: folder/foldertreeview.cpp:128
 #, kde-format
@@ -1772,7 +1772,7 @@ msgstr "El ile, Sürükle ve Bırak ile"
 #: folder/foldertreeview.cpp:473 folder/foldertreeview.cpp:515
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
-msgstr "<qt><b>%1</b> klasöründeki sonraki okunmamış iletiye gidilsin mi?</qt>"
+msgstr "<qt><b>%1</b> klasöründeki sonraki okunmayan iletiye gidilsin mi?</qt>"
 
 #: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
@@ -1899,8 +1899,8 @@ msgstr "Arşivleme"
 #, kde-format
 msgid "Removing 1 old message from folder %2..."
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "%2 dizininden 1 eski ileti kaldırılıyor..."
-msgstr[1] "%2 dizininden %1 eski ileti kaldırılıyor..."
+msgstr[0] "%2 klasöründen 1 eski ileti kaldırılıyor..."
+msgstr[1] "%2 klasöründen %1 eski ileti kaldırılıyor..."
 
 #: job/expirejob.cpp:160
 #, kde-format
@@ -1912,42 +1912,42 @@ msgstr ""
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
-msgstr[0] "%2 dizinindeki 1 eski ileti %3 dizinine taşınıyor..."
-msgstr[1] "%2 dizinindeki %1 eski ileti %3 dizinine taşınıyor..."
+msgstr[0] "%2 klasöründeki 1 eski ileti %3 dizinine taşınıyor..."
+msgstr[1] "%2 klasöründeki %1 eski ileti %3 dizinine taşınıyor..."
 
 #: job/expirejob.cpp:232
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
-msgstr[0] "%2 dizininden 1 eski ileti kaldırıldı."
-msgstr[1] "%2 dizininden %1 eski ileti kaldırıldı."
+msgstr[0] "%2 klasöründen 1 eski ileti kaldırıldı."
+msgstr[1] "%2 klasöründen %1 eski ileti kaldırıldı."
 
 #: job/expirejob.cpp:234
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
-msgstr[0] "%2 dizinindeki 1 eski ileti %3 dizinine taşındı."
-msgstr[1] "%2 dizinindeki %1 eski ileti %3 dizinine taşındı."
+msgstr[0] "%2 klasöründeki 1 eski ileti %3 klasörüne taşındı."
+msgstr[1] "%2 dizinindeki %1 eski ileti %3 klasörüne taşındı."
 
 #: job/expirejob.cpp:244
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
-msgstr "%1 dizinindeki eski iletilerin kaldırılması iptal edildi."
+msgstr "%1 klasöründeki eski iletilerin kaldırılması iptal edildi."
 
 #: job/expirejob.cpp:247
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
-msgstr "%1 dizinindeki eski iletilerin %2 dizinine taşınması iptal edildi."
+msgstr "%1 klasöründeki eski iletilerin %2 klasörüne taşınması iptal edildi."
 
 #: job/expirejob.cpp:256
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
-msgstr "%1 dizinindeki eski iletilerin kaldırılması başarısız oldu."
+msgstr "%1 klasöründeki eski iletilerin kaldırılması başarısız oldu."
 
 #: job/expirejob.cpp:258
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
-msgstr "%1 dizinindeki eski iletilerin %2 dizinine taşınması başarısız oldu."
+msgstr "%1 klasöründeki eski iletilerin %2 klasörüne taşınması başarısız oldu."
 
 #: kernel/mailkernel.cpp:179 kernel/mailkernel.cpp:201
 #, kde-format
@@ -2419,47 +2419,47 @@ msgstr "Eylem Ögesi"
 #: search/widgethandler/statusrulewidgethandler.cpp:30
 msgctxt "message status"
 msgid "Unread"
-msgstr "Okunmamış"
+msgstr "Okunmayan"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:31
 msgctxt "message status"
 msgid "Read"
-msgstr "Okunmuş"
+msgstr "Okunan"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:32
 msgctxt "message status"
 msgid "Deleted"
-msgstr "Silinmiş"
+msgstr "Silinen"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:33
 msgctxt "message status"
 msgid "Replied"
-msgstr "Yanıtlanmış"
+msgstr "Yanıtlanan"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:34
 msgctxt "message status"
 msgid "Forwarded"
-msgstr "Yönlendirilmiş"
+msgstr "Yönlendirilen"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:35
 msgctxt "message status"
 msgid "Queued"
-msgstr "Kuyruğa Alınmış"
+msgstr "Kuyruğa Alınan"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:36
 msgctxt "message status"
 msgid "Sent"
-msgstr "Gönderilmiş"
+msgstr "Gönderilen"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:37
 msgctxt "message status"
 msgid "Watched"
-msgstr "İzlenmiş"
+msgstr "İzlenen"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:38
 msgctxt "message status"
 msgid "Ignored"
-msgstr "Yok Sayılmış"
+msgstr "Yok Sayılan"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:39
 msgctxt "message status"
