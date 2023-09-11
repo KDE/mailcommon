@@ -12,7 +12,10 @@ namespace TextCustomEditor
 {
 class PlainTextEditorWidget;
 }
-
+namespace PimCommon
+{
+class PurposeMenuMessageWidget;
+}
 namespace MailCommon
 {
 class FilterConvertToSieveResultDialog : public QDialog
@@ -29,6 +32,7 @@ private:
     void readConfig();
     void writeConfig();
     TextCustomEditor::PlainTextEditorWidget *const mEditor;
+    PimCommon::PurposeMenuMessageWidget *const mPurposeMenuMessageWidget;
     KSyntaxHighlighting::Repository mSyntaxRepo;
 };
 }

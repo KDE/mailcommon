@@ -7,6 +7,7 @@
 #include "filterconverttosieveresultdialog.h"
 #include "filterconverttosievepurposemenuwidget.h"
 #include <PimCommon/PimUtil>
+#include <PimCommon/PurposeMenuMessageWidget>
 #include <TextCustomEditor/PlainTextEditor>
 #include <TextCustomEditor/PlainTextEditorWidget>
 
@@ -31,6 +32,7 @@ static const char myFilterConvertToSieveResultDialogName[] = "FilterConvertToSie
 FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *parent)
     : QDialog(parent)
     , mEditor(new TextCustomEditor::PlainTextEditorWidget(this))
+    , mPurposeMenuMessageWidget(new PimCommon::PurposeMenuMessageWidget(this))
 {
     setWindowTitle(i18nc("@title:window", "Convert to Sieve Script"));
     auto topLayout = new QVBoxLayout(this);
@@ -52,10 +54,16 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
     syntaxHighlighter->setDefinition(mSyntaxRepo.definitionForName(QStringLiteral("Sieve")));
     syntaxHighlighter->setTheme((palette().color(QPalette::Base).lightness() < 128) ? mSyntaxRepo.defaultTheme(KSyntaxHighlighting::Repository::DarkTheme)
                                                                                     : mSyntaxRepo.defaultTheme(KSyntaxHighlighting::Repository::LightTheme));
+    topLayout->addWidget(mPurposeMenuMessageWidget);
     topLayout->addWidget(mEditor);
     topLayout->addWidget(buttonBox);
 
     auto purposeMenu = new FilterconverttosievePurposeMenuWidget(this, this);
+    connect(purposeMenu, &FilterconverttosievePurposeMenuWidget::shareError, mPurposeMenuMessageWidget, &PimCommon::PurposeMenuMessageWidget::slotShareError);
+    connect(purposeMenu,
+            &FilterconverttosievePurposeMenuWidget::shareSuccess,
+            mPurposeMenuMessageWidget,
+            &PimCommon::PurposeMenuMessageWidget::slotShareSuccess);
     auto shareButton = new QPushButton(i18n("Share..."), this);
     shareButton->setMenu(purposeMenu->menu());
     shareButton->setIcon(QIcon::fromTheme(QStringLiteral("document-share")));
