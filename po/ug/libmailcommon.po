@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-21 00:49+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -398,6 +398,11 @@ msgstr ""
 #, kde-format
 msgid " (default)"
 msgstr " (كۆڭۈلدىكى)"
+
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
+#, kde-format
+msgid "Thunderbird File (*.dat)"
+msgstr ""
 
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
@@ -876,24 +881,24 @@ msgstr ""
 msgid "You can get specific header when you use %{headername}."
 msgstr ""
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:35
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr ""
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:42
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save..."
 msgstr "ساقلاش…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:59
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Save..."
 msgid "Share..."
 msgstr "ساقلاش…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:75
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, fuzzy, kde-format
 #| msgid ""
 #| "*.siv|sieve files (*.siv)\n"
@@ -903,7 +908,7 @@ msgstr ""
 "*.siv|sieve ھۆججەتلىرى (*.siv)\n"
 "*|بارلىق ھۆججەتلەر (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:76
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
@@ -1720,12 +1725,12 @@ msgstr "يۆتكەل"
 msgid "Do Not Go To"
 msgstr ""
 
-#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:315
+#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr ""
 
-#: folder/foldertreewidget.cpp:315
+#: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "Path: (%1)"
 msgstr ""
@@ -2740,27 +2745,27 @@ msgstr "تېزلەتمە(&U):"
 msgid "Enable &toolbar button"
 msgstr ""
 
-#: widgets/favoritecollectionwidget.cpp:93
+#: widgets/favoritecollectionwidget.cpp:90
 #, kde-format
 msgid "Icon size"
 msgstr "سىنبەلگە چوڭلۇقى"
 
-#: widgets/favoritecollectionwidget.cpp:112
+#: widgets/favoritecollectionwidget.cpp:109
 #, kde-format
 msgid "Mode"
 msgstr "ھالىتى"
 
-#: widgets/favoritecollectionwidget.cpp:116
+#: widgets/favoritecollectionwidget.cpp:113
 #, kde-format
 msgid "List Mode"
 msgstr "تىزىش ھالىتى"
 
-#: widgets/favoritecollectionwidget.cpp:126
+#: widgets/favoritecollectionwidget.cpp:123
 #, kde-format
 msgid "Icon Mode"
 msgstr ""
 
-#: widgets/favoritecollectionwidget.cpp:237
+#: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
 msgid "Drop your favorite folders here..."
 msgstr ""

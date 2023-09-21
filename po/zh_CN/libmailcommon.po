@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-21 00:49+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2023-09-16 10:09\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -381,6 +381,12 @@ msgstr "选择 thunderbird 过滤器文件"
 #, kde-format
 msgid " (default)"
 msgstr " (默认)"
+
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
+#, fuzzy, kde-format
+#| msgid "Thunderbird filters"
+msgid "Thunderbird File (*.dat)"
+msgstr "Thunderbird 过滤器"
 
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
@@ -853,30 +859,30 @@ msgstr "帮助"
 msgid "You can get specific header when you use %{headername}."
 msgstr "当您使用 %{headername} 时，可以得到特定的头部。"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:35
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "转换成 Sieve 脚本"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:42
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save..."
 msgstr "保存..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:59
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, kde-format
 msgid "Share..."
 msgstr "分享..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:75
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr ""
 "*.siv|筛选文件 (*.siv)\n"
 "*|所有文件 (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:76
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
@@ -1675,12 +1681,12 @@ msgstr "转到"
 msgid "Do Not Go To"
 msgstr "不转到"
 
-#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:315
+#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr ""
 
-#: folder/foldertreewidget.cpp:315
+#: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "Path: (%1)"
 msgstr "路径：(%1)"
@@ -2674,27 +2680,27 @@ msgstr "快捷键(&U)："
 msgid "Enable &toolbar button"
 msgstr "启用工具栏按钮(&T)"
 
-#: widgets/favoritecollectionwidget.cpp:93
+#: widgets/favoritecollectionwidget.cpp:90
 #, kde-format
 msgid "Icon size"
 msgstr "图标大小"
 
-#: widgets/favoritecollectionwidget.cpp:112
+#: widgets/favoritecollectionwidget.cpp:109
 #, kde-format
 msgid "Mode"
 msgstr "模式"
 
-#: widgets/favoritecollectionwidget.cpp:116
+#: widgets/favoritecollectionwidget.cpp:113
 #, kde-format
 msgid "List Mode"
 msgstr "列表模式"
 
-#: widgets/favoritecollectionwidget.cpp:126
+#: widgets/favoritecollectionwidget.cpp:123
 #, kde-format
 msgid "Icon Mode"
 msgstr "图标模式"
 
-#: widgets/favoritecollectionwidget.cpp:237
+#: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
 msgid "Drop your favorite folders here..."
 msgstr "将收藏的文件夹拖拽到此处..."

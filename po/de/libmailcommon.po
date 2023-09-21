@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-21 00:49+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2023-01-24 22:31+0100\n"
 "Last-Translator: Jannick Kuhr <opensource@kuhr.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -438,6 +438,12 @@ msgstr "Thunderbird-Filterdateien auswählen"
 #, kde-format
 msgid " (default)"
 msgstr " (Standard)"
+
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
+#, fuzzy, kde-format
+#| msgid "Thunderbird filters"
+msgid "Thunderbird File (*.dat)"
+msgstr "Thunderbird-Filter"
 
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
@@ -929,28 +935,28 @@ msgstr ""
 "Sie können einen bestimmten Vorspann benutzen, wenn Sie %{headername} "
 "eingeben."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:35
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Umwandlung in Sieve-Skript"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:42
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save..."
 msgstr "Speichern ..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:59
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, kde-format
 msgid "Share..."
 msgstr "Freigeben ..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:75
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr "Sieve-Dateien (*.siv);;Alle Dateien (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:76
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
@@ -1826,12 +1832,12 @@ msgstr "Dorthin gehen"
 msgid "Do Not Go To"
 msgstr "Nicht dorthin gehen"
 
-#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:315
+#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "Geben Sie hier Text ein, um die Ordnerliste zu filtern."
 
-#: folder/foldertreewidget.cpp:315
+#: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "Path: (%1)"
 msgstr "Pfad: (%1)"
@@ -2860,27 +2866,27 @@ msgstr "&Kurzbefehl:"
 msgid "Enable &toolbar button"
 msgstr "&Werkzeugleisten-Knopf aktivieren"
 
-#: widgets/favoritecollectionwidget.cpp:93
+#: widgets/favoritecollectionwidget.cpp:90
 #, kde-format
 msgid "Icon size"
 msgstr "Symbolgröße"
 
-#: widgets/favoritecollectionwidget.cpp:112
+#: widgets/favoritecollectionwidget.cpp:109
 #, kde-format
 msgid "Mode"
 msgstr "Modus"
 
-#: widgets/favoritecollectionwidget.cpp:116
+#: widgets/favoritecollectionwidget.cpp:113
 #, kde-format
 msgid "List Mode"
 msgstr "Listenmodus"
 
-#: widgets/favoritecollectionwidget.cpp:126
+#: widgets/favoritecollectionwidget.cpp:123
 #, kde-format
 msgid "Icon Mode"
 msgstr "Symbolmodus"
 
-#: widgets/favoritecollectionwidget.cpp:237
+#: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
 msgid "Drop your favorite folders here..."
 msgstr "Bevorzugte Ordner hier hineinziehen ..."
