@@ -3,14 +3,14 @@
 # Xosé <xosecalvo@gmail.com>, 2011, 2012, 2013, 2014.
 # Marce Villarino <mvillarino@kde-espana.es>, 2012, 2013, 2014.
 # Adrian Chaves Fernandez <adriyetichaves@gmail.com>, 2013, 2015, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019, 2023.
+# SPDX-FileCopyrightText: 2023 Adrián Chaves (Gallaecio)
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2023-08-06 05:38+0200\n"
+"PO-Revision-Date: 2023-09-24 15:02+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 23.08.1\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -115,7 +115,7 @@ msgstr "&Nome do cartafol:"
 #: collectionpage/collectiongeneralpage.cpp:110
 #, kde-format
 msgid "Share unread state with all users"
-msgstr "Compartir o estado de non lido con todos os usuarios"
+msgstr "Compartir o estado de non lido con todas as persoas usuarias"
 
 #: collectionpage/collectiongeneralpage.cpp:113
 #, kde-format
@@ -124,10 +124,10 @@ msgid ""
 "all users having access to this folder. If disabled (the default), every "
 "user with access to this folder has their own unread state."
 msgstr ""
-"Se activa esta opción o estado de non lido das mensaxes deste cartafol será "
-"o mesmo para todos os usuarios que teñan acceso ao cartafol. Se desactiva "
-"esta opción (valor predeterminado), cada usuario con acceso a este cartafol "
-"dispón do seu propio estado de non lido."
+"Se escolle esta opción o estado de non lido das mensaxes deste cartafol será "
+"o mesmo para todas as persoas usuarias que teñan acceso ao cartafol. Se "
+"desactiva esta opción (valor predeterminado), cada persoa usuaria con acceso "
+"a este cartafol dispón do seu propio estado de non lido."
 
 #: collectionpage/collectiongeneralpage.cpp:213
 #, kde-format
@@ -423,10 +423,9 @@ msgid " (default)"
 msgstr " (predeterminado)"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgid "Thunderbird File (*.dat)"
-msgstr "Filtros de Thunderbird"
+msgstr "Ficheiro de Thunderbird (*.dat)"
 
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
@@ -556,8 +555,8 @@ msgid ""
 "account (like an IMAP-Server) the decrypted content will go there.</p>"
 msgstr ""
 "<p>Se o cartafol de correo electrónico no que está a filtrar está conectado "
-"a unha conta remota (como un servidor de IMAP) o contido descifrado "
-"enviarase a el.</p>"
+"a unha conta remota (como un servidor de IMAP) o contido descifrado irá nel."
+"</p>"
 
 #: filter/filteractions/filteractiondelete.cpp:18
 #, kde-format
@@ -637,12 +636,12 @@ msgstr "Modelo predeterminado"
 #: filter/filteractions/filteractionforward.cpp:110
 #, kde-format
 msgid "The template used when forwarding"
-msgstr "O modelo empregado para os reenvíos"
+msgstr "O modelo para reenvíos."
 
 #: filter/filteractions/filteractionforward.cpp:111
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
-msgstr "Escolla o modelo de reenvío que desexa usar con este filtro."
+msgstr "Defina o modelo de reenvío que queira usar con este filtro."
 
 #: filter/filteractions/filteractionforward.cpp:226
 #, kde-format
@@ -887,7 +886,7 @@ msgstr "Falta o estado."
 #, kde-format
 msgctxt "action: to unset the status"
 msgid "Unset Status"
-msgstr "Retirar o estado"
+msgstr "Anular a definición do estado"
 
 #: filter/filteractions/filteractionunsetstatus.cpp:37
 #, kde-format
@@ -897,7 +896,7 @@ msgstr "Non se definiu o estado."
 #: filter/filteractions/filteractionwidget.cpp:69
 #, kde-format
 msgid "Please select an action."
-msgstr "Por favor, escolla unha acción."
+msgstr "Escolla unha acción."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
 #, kde-format
@@ -1225,7 +1224,7 @@ msgstr ""
 "<p>O filtro aplicarase ás mensaxes entrantes de todos os cartafoles que "
 "pertenzan a calquera das contas seleccionadas enriba. Isto é útil ao usar "
 "filtros locais con contas de IMAP, xa que as novas mensaxes é posíbel que xa "
-"as enviasen os filtros do lado do servidor a un cartafol distinto.</p>"
+"as movesen os filtros do lado do servidor a un cartafol distinto.</p>"
 
 #: filter/kmfilterdialog.cpp:245
 #, kde-format
@@ -1267,7 +1266,8 @@ msgstr "Executar agora"
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
-"Non se pode aplicar este filtro porque non hai ningún cartafol seleccionado."
+"Non é posíbel aplicar este filtro porque non hai ningún cartafol "
+"seleccionado."
 
 #: filter/kmfilterdialog.cpp:419
 #, kde-format
@@ -1294,7 +1294,7 @@ msgstr "Cambiáronse os filtros."
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
-"Non se pode aplicar un filtro porque non hai ningún filtro seleccionado."
+"Non é posíbel aplicar un filtro porque non hai ningún filtro seleccionado."
 
 #: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
 #, kde-format
@@ -1450,7 +1450,7 @@ msgstr "Eliminar"
 #: filter/kmfilterlistbox.cpp:143
 #, kde-format
 msgid "Rename"
-msgstr "Cambiar o nome"
+msgstr "Renomear"
 
 #: filter/kmfilterlistbox.cpp:145
 #, kde-format
@@ -1545,7 +1545,7 @@ msgstr ""
 #: filter/mailfilter.cpp:131
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
-msgstr "<b>Estase a aplicar a acción de filtrado:</b> %1"
+msgstr "<b>Aplicando a acción de filtrado:</b> %1"
 
 #: filter/mailfilter.cpp:140
 #, kde-format
@@ -1627,7 +1627,7 @@ msgstr "Aplicar ao correo entrante."
 #: filter/ui/filterconfigwidget.ui:145
 #, kde-format
 msgid "Apply to sent messages"
-msgstr "Aplicar ao correo saínte."
+msgstr "Aplicar ás mensaxes enviadas."
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyBeforeSendCB)
 #: filter/ui/filterconfigwidget.ui:152
@@ -1695,7 +1695,7 @@ msgstr "Cartafoles locais"
 #: folder/folderrequester.cpp:123 folder/folderrequester.cpp:141
 #, kde-format
 msgid "Please select a folder"
-msgstr "Por favor, escolla un cartafol"
+msgstr "Escolla un cartafol"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
 #, kde-format
@@ -1722,7 +1722,7 @@ msgstr "Nome"
 #: folder/folderselectiondialog.cpp:194
 #, kde-format
 msgid "Could not create folder: %1"
-msgstr "Non se puido crear o cartafol: %1"
+msgstr "Non foi posíbel crear o cartafol: %1"
 
 #: folder/folderselectiondialog.cpp:194
 #, kde-format
@@ -1742,7 +1742,7 @@ msgstr "Tamaño das iconas"
 #: folder/foldertreeview.cpp:154
 #, kde-format
 msgid "Display Tooltips"
-msgstr "Amosar informacións emerxentes"
+msgstr "Amosar indicacións emerxentes"
 
 #: folder/foldertreeview.cpp:158
 #, kde-format
@@ -1772,7 +1772,7 @@ msgstr "Automaticamente, pola columna actual"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
-msgstr "Manualmente, arrastrando"
+msgstr "Manualmente, arrastrando e soltando"
 
 #: folder/foldertreeview.cpp:473 folder/foldertreeview.cpp:515
 #, kde-format
@@ -1817,12 +1817,12 @@ msgstr "%1 (acadouse a cota do %2%)"
 #: job/backupjob.cpp:94
 #, kde-format
 msgid "Unable to retrieve folder list."
-msgstr "Non se pode obter a lista de cartafoles."
+msgstr "Non é posíbel obter a lista de cartafoles."
 
 #: job/backupjob.cpp:121
 #, kde-format
 msgid "The operation was canceled by the user."
-msgstr "O usuario cancelou a operación."
+msgstr "A persoa usuaria cancelou a operación."
 
 #: job/backupjob.cpp:151
 #, kde-format
@@ -1832,12 +1832,12 @@ msgstr "Non se puido arquivar o cartafol «%1»."
 #: job/backupjob.cpp:155
 #, kde-format
 msgid "Archiving failed"
-msgstr "Fallou o arquivado"
+msgstr "Produciuse un erro ao arquivar"
 
 #: job/backupjob.cpp:165
 #, kde-format
 msgid "Unable to finalize the archive file."
-msgstr "Non se pode finalizar o ficheiro de arquivo."
+msgstr "Non é posíbel finalizar o ficheiro de arquivo."
 
 #: job/backupjob.cpp:170 job/backupjob.cpp:192
 #, kde-format
@@ -1878,24 +1878,24 @@ msgstr "Fallou a descarga dunha mensaxe no cartafol «%1»."
 #: job/backupjob.cpp:332
 #, kde-format
 msgid "Archiving folder %1"
-msgstr "Estase a arquivar o cartafol %1"
+msgstr "Arquivando o cartafol %1"
 
 #: job/backupjob.cpp:357
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr ""
-"Non se pode crear a estrutura de cartafoles do cartafol «%1» dentro do "
+"Non é posíbel crear a estrutura de cartafoles do cartafol «%1» dentro do "
 "ficheiro de arquivo."
 
 #: job/backupjob.cpp:369
 #, kde-format
 msgid "Unable to get message list for folder %1."
-msgstr "Non se pode obter a lista de mensaxes do cartafol %1."
+msgstr "Non é posíbel obter a lista de mensaxes do cartafol %1."
 
 #: job/backupjob.cpp:407
 #, kde-format
 msgid "Unable to open archive for writing."
-msgstr "Non se pode abrir o arquivo para escribir nel."
+msgstr "Non é posíbel abrir o arquivo para escribir nel."
 
 #: job/backupjob.cpp:411
 #, kde-format
@@ -1906,24 +1906,22 @@ msgstr "Arquivado"
 #, kde-format
 msgid "Removing 1 old message from folder %2..."
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "Estase a retirar unha mensaxe vella do cartafol %2…"
-msgstr[1] "Estanse a retirar %1 mensaxes vellas do cartafol %2…"
+msgstr[0] "Retirando unha mensaxe vella do cartafol %2…"
+msgstr[1] "Retirando %1 mensaxes vellas do cartafol %2…"
 
 #: job/expirejob.cpp:160
 #, kde-format
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr ""
-"Non se pode facer caducar as mensaxes do cartafol %1: non se atopou o "
+"Non é posíbel facer caducar as mensaxes do cartafol %1: non se atopou o "
 "cartafol de destino %2"
 
 #: job/expirejob.cpp:171
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
-msgstr[0] ""
-"Estase a mover unha mensaxe vella do cartafol %2 para o cartafol %3…"
-msgstr[1] ""
-"Estanse a mover %1 mensaxes vellas do cartafol %2 para o cartafol %3…"
+msgstr[0] "Movendo unha mensaxe vella do cartafol %2 para o cartafol %3…"
+msgstr[1] "Movendo %1 mensaxes vellas do cartafol %2 para o cartafol %3…"
 
 #: job/expirejob.cpp:232
 #, kde-format
@@ -2070,11 +2068,13 @@ msgstr "Cifrado"
 msgid "Choose or type your own criteria"
 msgstr "Escolla ou escriba o seu propio criterio."
 
+# skip-rule: proposta-gl-dous-puntos-finais
 #: search/searchpatternedit.cpp:580
 #, kde-format
 msgid "Match a&ll of the following"
 msgstr "Atopar to&do o seguinte:"
 
+# skip-rule: proposta-gl-dous-puntos-finais
 #: search/searchpatternedit.cpp:581
 #, kde-format
 msgid "Match an&y of the following"
@@ -2697,7 +2697,7 @@ msgid ""
 msgstr ""
 "Escriba unha palabra clave para activar a inserción rápida deste fragmento "
 "cando escriba unha mensaxe. Por exemplo, se escolle «saúdo» como palabra "
-"clave, poderá escribir \\saúdo nunha mensaxe e premer o tabulador para "
+"clave, poderá escribir \\saúdo nunha mensaxe e premer a tecla Tab para "
 "substituír a palabra clave polo contido deste fragmento."
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
