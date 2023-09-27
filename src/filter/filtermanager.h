@@ -164,7 +164,7 @@ public:
 
     Q_REQUIRED_RESULT QMap<QUrl, QString> tagList() const;
 
-    bool initialized() const;
+    Q_REQUIRED_RESULT bool initialized() const;
 
     void cleanup();
 private Q_SLOTS:

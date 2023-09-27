@@ -148,13 +148,13 @@ public:
       outbound messages, false otherwise.
       @see setApplyOnOutbound applyOnInbound setApplyOnInbound
     */
-    bool applyOnOutbound() const;
+    Q_REQUIRED_RESULT bool applyOnOutbound() const;
 
     /** @return TRUE if this filter should be applied on
       outbound messages before they are sent, FALSE otherwise.
       @see setApplyOnOutbound applyOnInbound setApplyOnInbound
     */
-    bool applyBeforeOutbound() const;
+    Q_REQUIRED_RESULT bool applyBeforeOutbound() const;
 
     /** Set whether this filter should be applied on
       inbound messages (@p aApply == true) or not.
@@ -166,7 +166,7 @@ public:
       inbound messages, false otherwise.
       @see setApplyOnOutbound applyOnOutbound setApplyOnInbound
     */
-    bool applyOnInbound() const;
+    Q_REQUIRED_RESULT bool applyOnInbound() const;
 
     /** Set whether this filter should be applied on
       explicit (CTRL-J) filtering (@p aApply == true) or not.
@@ -178,7 +178,7 @@ public:
       explicit (CTRL-J) filtering, false otherwise.
       @see setApplyOnOutbound applyOnOutbound setApplyOnInbound
     */
-    bool applyOnExplicit() const;
+    Q_REQUIRED_RESULT bool applyOnExplicit() const;
 
     /** Set whether this filter should be applied on
       inbound messages for all accounts (@p aApply == All) or
@@ -197,7 +197,7 @@ public:
     /** Returns whether the filter should be applied on inbound emails in all
       folders, not just Inbox.
     */
-    bool applyOnAllFoldersInbound() const;
+    Q_REQUIRED_RESULT bool applyOnAllFoldersInbound() const;
 
     /** @return true if this filter should be applied on
       inbound messages for all accounts, or false if this filter
@@ -205,7 +205,7 @@ public:
       Only applicable to filters that are applied on inbound messages.
       @see setApplicability
     */
-    AccountType applicability() const;
+    Q_REQUIRED_RESULT AccountType applicability() const;
 
     /** Set whether this filter should be applied on
       inbound messages for the account with id (@p id).
@@ -219,7 +219,7 @@ public:
       inbound messages from the account with id (@p id), false otherwise.
       @see setApplicability
     */
-    bool applyOnAccount(const QString &id) const;
+    Q_REQUIRED_RESULT bool applyOnAccount(const QString &id) const;
 
     void setStopProcessingHere(bool aStop);
     bool stopProcessingHere() const;
@@ -232,7 +232,7 @@ public:
       false otherwise.
       @see setConfigureShortcut
     */
-    bool configureShortcut() const;
+    Q_REQUIRED_RESULT bool configureShortcut() const;
 
     /** Set whether this filter should be plugged into the toolbar.
       This can be done only if a shortcut is defined.
@@ -244,7 +244,7 @@ public:
       false otherwise.
       @see setConfigureToolbar
     */
-    bool configureToolbar() const;
+    Q_REQUIRED_RESULT bool configureToolbar() const;
 
     /** @return The toolbar name of this filter.
      *  @see setToolbarName
@@ -280,7 +280,7 @@ public:
     /** @return The name of the icon to be used.
       @see setIcon
     */
-    QString icon() const;
+    Q_REQUIRED_RESULT QString icon() const;
 
     /**
      * Called from the filter manager when a folder is moved.
@@ -304,11 +304,11 @@ public:
 
     /** @return Tells, if an automatic name is used for the filter
      */
-    bool isAutoNaming() const;
+    Q_REQUIRED_RESULT bool isAutoNaming() const;
 
     /** Return if filter is enabled or not
      */
-    bool isEnabled() const;
+    Q_REQUIRED_RESULT bool isEnabled() const;
     void setEnabled(bool);
 
     void generateSieveScript(QStringList &requiresModules, QString &code);
