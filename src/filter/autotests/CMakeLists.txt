@@ -312,3 +312,8 @@ add_mailcommon_filter_test(filterimporterpathcachetest
     filterimporterpathcachetest.cpp
     filterimporterpathcachetest.h
     )
+
+add_mailcommon_filter_test(filterlogtest
+    filterlogtest.cpp
+    filterlogtest.h
+    )
