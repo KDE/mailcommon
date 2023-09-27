@@ -265,7 +265,6 @@ void FilterManager::filter(const Akonadi::Item::List &messages, FilterManager::F
         itemIds << item.id();
     }
 
-    qDebug() << " DXDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD";
     d->mMailFilterAgentInterface->filterItems(itemIds, static_cast<int>(set));
 }
 
