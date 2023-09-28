@@ -276,6 +276,7 @@ void FilterManager::filter(const Akonadi::Item::List &messages, SearchRule::Requ
     for (const Akonadi::Item &item : messages) {
         itemIds << item.id();
     }
+    qDebug() << " XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
     d->mMailFilterAgentInterface->applySpecificFilters(itemIds, static_cast<int>(requiredPart), listFilters);
 }
 
