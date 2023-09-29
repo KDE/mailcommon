@@ -573,11 +573,6 @@ ecm_generate_headers(MailCommon_Camelcasesearchrule_HEADERS
   RELATIVE search/searchrule
 )
 
-ecm_generate_pri_file(BASE_NAME MailCommon
-    LIB_NAME KPim6MailCommon
-    DEPS "AkonadiCore AkonadiMime MessageComposer PimCommon" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim6//MailCommon
-)
-
 install(FILES
     ${MailCommon_Camelcasesearchrule_HEADERS}
     ${MailCommon_CamelCase_HEADERS}
@@ -622,10 +617,6 @@ install(FILES
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6//MailCommon/mailcommon
     COMPONENT Devel
 )
-
-install(FILES
-    ${PRI_FILENAME}
-    DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
 if(BUILD_DESIGNERPLUGIN)
     add_subdirectory(designer)
