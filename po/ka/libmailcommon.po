@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-21 00:49+0000\n"
-"PO-Revision-Date: 2022-12-04 07:19+0100\n"
+"PO-Revision-Date: 2023-10-04 19:02+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -75,6 +75,8 @@ msgid ""
 "Please select a folder to expire messages into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
+"აირჩიეთ საქაღალდე, სადაც შეტყობინებები ამოიწურებიან.\n"
+"თუ ამას არ გააკეთებთ, ამოწურული შეტყობინებები ავტომატურად წაიშლება."
 
 #: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
@@ -88,6 +90,8 @@ msgid ""
 "into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
+"შეტყობინებების ამოსაწურად მიმდინარისგან განსხვავებული საქაღალდე აირჩიეთ.\n"
+"თუ ამას არ გააკეთებთ, ამოწურული შეტყობინებები სამუდამოდ წაიშლება."
 
 #: collectionpage/collectionexpirywidget.cpp:189
 #, kde-format
@@ -109,7 +113,7 @@ msgstr "საქაღალდის &სახელი:"
 #: collectionpage/collectiongeneralpage.cpp:110
 #, kde-format
 msgid "Share unread state with all users"
-msgstr ""
+msgstr "წაუკითხავობის მდგომარეობის ყველა მომხმარებელთან გაზიარება"
 
 #: collectionpage/collectiongeneralpage.cpp:113
 #, kde-format
@@ -118,6 +122,10 @@ msgid ""
 "all users having access to this folder. If disabled (the default), every "
 "user with access to this folder has their own unread state."
 msgstr ""
+"თუ ჩართულია, შეტყობინებების წაუკითხავობის სტატუსი ამ საქაღალდეში იგივე "
+"იქნება ყველა მომხმარებლისთვის, რომელსაც მასზე წვდომა გათიშულია. თუ "
+"გამორთულია (ნაგულისხმევი), თითოეულ მომხმარებელს, რომელსაც ამ საქაღალდეზე "
+"წვდომა აქვს, წაუკითხავობის საკუთარი სტატუსი ექნება."
 
 #: collectionpage/collectiongeneralpage.cpp:213
 #, kde-format
@@ -125,11 +133,13 @@ msgid ""
 "You have configured this folder to contain groupware information. That means "
 "that this folder will disappear once the configuration dialog is closed."
 msgstr ""
+"თქვენ მიუთითეთ, რომ ეს საქაღალდე groupware-ის ინფორმაციის შესანახად იქნება "
+"გამოყენებული. ეს ნიშნავს, რომ ის გაქრება, როცა მორგების ფანჯარას დახურავთ."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
 #, kde-format
 msgid "Act on new/unread mail in this folder"
-msgstr ""
+msgstr "ქმედება ამ საქაღალდეში არსებულ ახალ/წაუკითხავ ელფოსტაზე"
 
 #: collectionpage/collectiongeneralwidget.cpp:27
 #, kde-format
@@ -142,11 +152,19 @@ msgid ""
 "messages. This is useful for ignoring any new/unread mail in your trash and "
 "spam folder.</p></qt>"
 msgstr ""
+"<qt><p>თუ ეს პარამეტრი ჩართულია, ამ საქაღალდეში ახალი/წაუკითხავი ელფოსტის "
+"შესახებ გაფრთხილებებს მიიღებთ. უფრო მეტიც, შემდეგ/წინა საქაღალდეზე გადასვლა, "
+"რომლებშიც წაუკითხავი შეტყობინებებია, ამ საქაღალდეზე გაჩერდება.</"
+"p><p>გამორთეთ ეს პარამეტრი, თუ არ გნებავთ ამ საქაღალდეში ახალი/წაუკითხავი "
+"შეტყობინებების შესახებ გაფრთხილების მიღება და თუ გნებავთ, ეს საქაღალდე "
+"გამოტოვოთ, როცა შემდეგ/წინა საქაღალდეზე გადახვალთ, წაუკითხავი "
+"შეტყობინებებით. ეს სასარგებლოა ახალი/წაუკითხავი შეტყობინებების იგნორისთვის "
+"ნაგვის ყუთისა და სპამის საქაღალდეებში.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
 #, kde-format
 msgid "Keep replies in this folder"
-msgstr ""
+msgstr "პასუხების ამავე საქაღალდეში დატოვება"
 
 #: collectionpage/collectiongeneralwidget.cpp:40
 #, kde-format
@@ -155,11 +173,14 @@ msgid ""
 "be put in this same folder after sending, instead of in the configured sent-"
 "mail folder."
 msgstr ""
+"ჩართეთ ეს პარამეტრი, თუ გნებავთ, პასუხები, რომლებსაც წერთ, გაგზავნის შემდეგ "
+"იგივე საქაღალდეში იყოს შენახული, მითითებული გაგზავნილი ელფოსტის საქაღალდის "
+"მაგიერ."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
 #, kde-format
 msgid "Hide this folder in the folder selection dialog"
-msgstr ""
+msgstr "ამ საქაღალდის საქაღალდის არჩევნის ფანჯარაში დამალვა"
 
 #: collectionpage/collectiongeneralwidget.cpp:48
 #, kde-kuit-format
@@ -168,11 +189,13 @@ msgid ""
 "Check this option if you do not want this folder to be shown in folder "
 "selection dialogs, such as the <interface>Jump to Folder</interface> dialog."
 msgstr ""
+"ჩართეთ ეს პარამეტრი, თუ არ გნებავთ, ეს საქაღალდე საქაღალდის არჩევის "
+"ფანჯრებში, როგორიცაა <interface>საქაღალდეზე გადასვლა</interface>, გამოჩნდეს."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
 #, kde-format
 msgid "Use &default identity"
-msgstr ""
+msgstr "&ნაგულისხმევი იდენტიფიკატორის გამოყენება"
 
 #: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
@@ -183,26 +206,32 @@ msgid ""
 "signing or encryption keys automatically. Identities can be set up in the "
 "main configuration dialog. (Settings -> Configure KMail)"
 msgstr ""
+"აირჩიეთ გამგზავნის იდენტიფიკატორი, რომელიც ახალი ელფოსტის დაწერისას ან ამ "
+"საქაღალდეში ელფოსტაზე პასუხისას გამოიყენება. ეს ნიშნავს, რომ თუ თქვენ ხართ "
+"თქვენს ერთ-ერთ სამუშაო საქაღალდეში, შეგიძლიათ, KMail-ს აიძულოთ, შესაბამისი "
+"გამგზავნის ელფოსტის მისამართი, ხელმოწერა და ციფრული ხელმოწერა ავტომატურად "
+"დააყენოს. იდენტიფიკატორები მთავარი კონფიგურაციის ფანჯრიდან შეგიძლიათ, "
+"მოირგოთ. (მორგება -> KMail-ის მორგება)"
 
 #: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
 msgid "&Sender identity:"
-msgstr ""
+msgstr "&გამომგზავნის იდენტიფიკატორი:"
 
 #: collectionpage/collectiontemplateswidget.cpp:26
 #, kde-format
 msgid "&Use custom message templates in this folder"
-msgstr ""
+msgstr "&ამ საქაღალდეში მომხმარებლის შეტყობინების ნიმუშების გამყენება"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
 msgid "&Copy Global Templates"
-msgstr ""
+msgstr "&გლობალური ნიმუშების კოპირება"
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
-msgstr ""
+msgstr "შეტყობინებების სიაში გამგზავნ/მიმღების სვეტის ჩვენება"
 
 #: collectionpage/collectionviewwidget.cpp:36
 #, kde-format
@@ -230,17 +259,17 @@ msgstr "სვეტის &ჩვენება:"
 #: collectionpage/collectionviewwidget.cpp:42
 #, kde-format
 msgid "Use default message list aggregation:"
-msgstr ""
+msgstr "ნაგულისხმევი შეტყობინებების სიის აგრეგაციის გამოყენება:"
 
 #: collectionpage/collectionviewwidget.cpp:59
 #, kde-format
 msgid "Use default message list theme"
-msgstr ""
+msgstr "ნაგულისხმევი შეტყობინებების სიის თემის გამოყენება"
 
 #: collectionpage/collectionviewwidget.cpp:76
 #, kde-format
 msgid "Prefer HTML to text"
-msgstr ""
+msgstr "ტექსტს HTML მირჩევნია"
 
 #: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
@@ -250,12 +279,12 @@ msgstr "შეტყობინების ფორმატი:"
 #: collectionpage/collectionviewwidget.cpp:78
 #, kde-format
 msgid "Prefer text to HTML"
-msgstr ""
+msgstr "HTML-ს ტექსტი მირჩევნია"
 
 #: collectionpage/collectionviewwidget.cpp:80
 #, kde-format
 msgid "Use Global Settings"
-msgstr ""
+msgstr "გლობალური პარამეტრების გამოყენება"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
 #, kde-format
@@ -268,6 +297,8 @@ msgstr "აირჩიეთ ანგარიში"
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr ""
+"ფილტრი account ვერ ვიპოვე. აირჩიეთ ანგარიში, რომელიც გნებავთ, გამოიყენოთ "
+"ფილტრთან \"%1\""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:73
@@ -279,12 +310,12 @@ msgstr "აირჩიეთ საქაღალდე"
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #, kde-format
 msgid "Folder path was \"%1\"."
-msgstr ""
+msgstr "საქაღალდის ბილიკი იყო \"%1\"."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
 msgid "The following folders can be used for this filter:"
-msgstr ""
+msgstr "ამ ფილტრისთვის შეგიძლიათ შემდეგი საქაღალდეები გამოიყენოთ:"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:67
 #, kde-format
@@ -296,12 +327,14 @@ msgstr "აირჩიეთ საქაღალდე:"
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
 msgstr ""
+"ფილტრი folder ვერ ვიპოვე. აირჩიეთ საქაღლდე, რომელიც გნებავთ, გამოიყენოთ "
+"ფილტრთან \"%1\":"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
-msgstr ""
+msgstr "აირჩიეთ იდენტიფიკატორი"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:38
 #, kde-format
@@ -309,22 +342,24 @@ msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
 "\"%1\""
 msgstr ""
+"ფილტრი identity ვერ ვიპოვე. აირჩიეთ იდენტიფიკატორი, რომელიც გნებავთ, "
+"გამოიყენოთ ფილტრთან \"%1\""
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
-msgstr ""
+msgstr "აირჩიეთ ხმა"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
 #, kde-format
 msgid "Sound file was \"%1\"."
-msgstr ""
+msgstr "ხმის ფაილი იყო \"%1\"."
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
-msgstr ""
+msgstr "ხმის ფაილი ვერ ვიპოვე. აირჩიეთ ხმა, რომელსაც \"%1\" ფილტრი გამოიყენებს"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
@@ -341,6 +376,8 @@ msgstr "ჭდე იყო \"%1\"."
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
+"ფილტრი tag ვერ ვიპოვე. აირჩიეთ ჭდე, რომელიც გნებავთ, გამოიყენოთ ფილტრთან "
+"\"%1\""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
@@ -359,6 +396,8 @@ msgid ""
 "Filter template is missing. Please select a template to use with filter "
 "\"%1\""
 msgstr ""
+"ფილტრი template ვერ ვიპოვე. აირჩიეთ ნიმუში, რომელიც გნებავთ, გამოიყენოთ "
+"ფილტრთან \"%1\""
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
 #, kde-format
@@ -372,12 +411,14 @@ msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
 "\"%1\""
 msgstr ""
+"ფილტრი transport ვერ ვიპოვე. აირჩიეთ ტრანსპორტი, რომელიც გნებავთ, გამოიყენოთ "
+"ფილტრთან \"%1\""
 
 #: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
-msgstr ""
+msgstr "აირჩიეთ Thunderbird-ის ფილტრის ფაილები"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:31
 #, kde-format
@@ -387,7 +428,7 @@ msgstr " (ნაგულისხმები)"
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
 msgid "### \"action '%1' not supported\""
-msgstr ""
+msgstr "### \"ქმედება '%1' მხარდაჭერილი არაა\""
 
 #: filter/filteractions/filteractionaddheader.cpp:21
 #, kde-format
@@ -402,12 +443,12 @@ msgstr "მნიშვნელობით:"
 #: filter/filteractions/filteractionaddheader.cpp:202
 #, kde-format
 msgid "The header name was missing."
-msgstr ""
+msgstr "აკლია თავსართის სახელი."
 
 #: filter/filteractions/filteractionaddheader.cpp:208
 #, kde-format
 msgid "The header value was missing."
-msgstr ""
+msgstr "აკლია თავსართის მნიშვნელობა."
 
 #: filter/filteractions/filteractionaddtag.cpp:24
 #, kde-format
@@ -469,16 +510,18 @@ msgid ""
 "If it is not accessible, the filter will fallback to the default address "
 "book."
 msgstr ""
+"ეს აღწერს რჩეულ მისამართების წიგნს.\n"
+"თუ ის ხელმისაწვდომი არაა, ფილტრი ნაგულისხმევ მისამართების წიგნზე გადაირთვება."
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:286
 #, kde-format
 msgid "Header type selected is unknown."
-msgstr ""
+msgstr "არჩეული თავსართის ტიპი უცნობია."
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:292
 #, kde-format
 msgid "No addressbook selected."
-msgstr ""
+msgstr "მისამართების წიგნი არჩეული არაა."
 
 #: filter/filteractions/filteractioncopy.cpp:19
 #, kde-format
@@ -500,7 +543,7 @@ msgstr "გაშიფვრა"
 #: filter/filteractions/filteractiondecrypt.cpp:95
 #, kde-format
 msgid "<b>Warning:</b> Decrypted emails may be uploaded to a server!"
-msgstr ""
+msgstr "<b>გაფრთხილება:</b> შეიძლება, სერვერზე, გაშიფრული ელფოსტები აიტვირთა!"
 
 #: filter/filteractions/filteractiondecrypt.cpp:97
 #, kde-format
@@ -508,6 +551,8 @@ msgid ""
 "<p>If the email folder that you are filtering into is connected to a remote "
 "account (like an IMAP-Server) the decrypted content will go there.</p>"
 msgstr ""
+"<p>თუ ელფოსტის საქაღალდე, რომელსაც ფილტრავთ, დაშორებულ ანგარიშზეა მიბმული "
+"(მაგ: IMAP სერვერი) გაშიფრული შემცველობა იქაც გადავა.</p>"
 
 #: filter/filteractions/filteractiondelete.cpp:18
 #, kde-format
@@ -532,12 +577,13 @@ msgstr "დაშიფვრის გასაღები არჩეულ�
 #: filter/filteractions/filteractionencrypt.cpp:242
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
-msgstr ""
+msgstr "დაშიფრული ელფოსტების თავიდან დაშიფვრა ამ გასაღებით"
 
 #: filter/filteractions/filteractionencrypt.cpp:252
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
 msgstr ""
+"<b>გაფრთხილება:</b> ელფოსტის წასაკითხად აუცილებელია უსაფრთხოების გასაღები."
 
 #: filter/filteractions/filteractionencrypt.cpp:254
 #, kde-format
@@ -547,6 +593,9 @@ msgid ""
 "an email server and use several clients, each of them must be configured to "
 "enable decryption.</p>"
 msgstr ""
+"<p>როცა ელფოსტა დაიშიფრება, შემცველობასთან წვდომისთვის კრიპტოს თქვენი "
+"გასაღებით მორგება დაგჭირდებათ.</p><p>თუ თქვენს ელფოსტას სერვერზე ინახავთ და "
+"რამდენიმე კლიენტს იყენებთ, გაშიფვრის ჩართვა თითოეულ მათგანზე დაგჭირდებათ.</p>"
 
 #: filter/filteractions/filteractionexec.cpp:15
 #, kde-format
@@ -567,12 +616,12 @@ msgstr "გადაგზავნა"
 #: filter/filteractions/filteractionforward.cpp:91
 #, kde-format
 msgid "The addressee to whom the message will be forwarded."
-msgstr ""
+msgstr "მიმღები, ვისთანაც შეტყობინება გადაიგზავნება."
 
 #: filter/filteractions/filteractionforward.cpp:92
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
-msgstr ""
+msgstr "ფილტრი შეტყობინებას აქ შეყვანილ მომღებთან გადააგზავნის."
 
 #: filter/filteractions/filteractionforward.cpp:99
 #: filter/filteractions/filteractionforward.cpp:198
@@ -583,28 +632,29 @@ msgstr "ნაგულისხმევი შაბლონი"
 #: filter/filteractions/filteractionforward.cpp:110
 #, kde-format
 msgid "The template used when forwarding"
-msgstr ""
+msgstr "გადაგზავნისას გამოყენებული ნიმუში"
 
 #: filter/filteractions/filteractionforward.cpp:111
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
 msgstr ""
+"ჩართეთ გადაგზავნის ნიმუში, რომელიც ამ ფილტრთან ერთად იქნება გამოყენებული."
 
 #: filter/filteractions/filteractionforward.cpp:226
 #, kde-format
 msgid "Forward to %1 with default template"
-msgstr ""
+msgstr "%1-თან გადაგზავნა ნაგულისხმევი ნიმუშით"
 
 #: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
 msgid "Forward to %1 with template %2"
-msgstr ""
+msgstr "%1-თან გადაგზავნა ნიმუშით %2"
 
 #: filter/filteractions/filteractionforward.cpp:234
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."
-msgstr ""
+msgstr "ელფოსტის მისამართი აღწერილი არაა."
 
 #: filter/filteractions/filteractionmove.cpp:23
 #, kde-format
@@ -615,12 +665,12 @@ msgstr "საქაღალდეში გადატანა"
 #, kde-format
 msgctxt "pipe through with command"
 msgid "Pipe Through"
-msgstr ""
+msgstr "გადამისამართება ბრძანების გავლით"
 
 #: filter/filteractions/filteractionpipethrough.cpp:36
 #, kde-format
 msgid "No action defined."
-msgstr ""
+msgstr "ქმედება აღწერილი არაა."
 
 #: filter/filteractions/filteractionplaysound.cpp:22
 #, kde-format
@@ -630,7 +680,7 @@ msgstr "ხმის დაკვრა"
 #: filter/filteractions/filteractionplaysound.cpp:77
 #, kde-format
 msgid "Sound file was not defined."
-msgstr ""
+msgstr "ხმის ფაილი აღწერილი არაა."
 
 #: filter/filteractions/filteractionredirect.cpp:27
 #, kde-format
@@ -640,7 +690,7 @@ msgstr "დამისამართება"
 #: filter/filteractions/filteractionredirect.cpp:71
 #, kde-format
 msgid "Email address was missing."
-msgstr ""
+msgstr "ელფოსტის მისამართი აკლია."
 
 #: filter/filteractions/filteractionremoveheader.cpp:22
 #, kde-format
@@ -650,27 +700,27 @@ msgstr "თავსართის წაშლა"
 #: filter/filteractions/filteractionremoveheader.cpp:96
 #, kde-format
 msgid "Header name undefined."
-msgstr ""
+msgstr "თავსართის სახელი აღწერილი არაა."
 
 #: filter/filteractions/filteractionreplyto.cpp:20
 #, kde-format
 msgid "Set Reply-To To"
-msgstr ""
+msgstr "დააყენეთ საპასუხო მისამართი"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:25
 #, kde-format
 msgid "Rewrite Header"
-msgstr ""
+msgstr "თავსართის გადაწერა"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:42
 #, kde-format
 msgid "Header not defined"
-msgstr ""
+msgstr "თავსართი აღწერილი არაა"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:48
 #, kde-format
 msgid "Search string is empty."
-msgstr ""
+msgstr "ძებნის სტრიქონი ცარიელია."
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
 #, kde-format
@@ -680,12 +730,12 @@ msgstr "ჩანაცვლება:"
 #: filter/filteractions/filteractionrewriteheader.cpp:121
 #, kde-format
 msgid "With:"
-msgstr ""
+msgstr "რით:"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:28
 #, kde-format
 msgid "Send Fake MDN"
-msgstr ""
+msgstr "ცრუ MDN-ის გაგზავნა"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:33
 #, kde-format
@@ -697,7 +747,7 @@ msgstr "იგნორი"
 #, kde-format
 msgctxt "MDN type"
 msgid "Displayed"
-msgstr ""
+msgstr "ნაჩვენებია"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:35
 #, kde-format
@@ -709,7 +759,7 @@ msgstr "წაშლილია"
 #, kde-format
 msgctxt "MDN type"
 msgid "Dispatched"
-msgstr ""
+msgstr "გაგზავნილები"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:37
 #, kde-format
@@ -732,17 +782,17 @@ msgstr "შეცდომით"
 #: filter/filteractions/filteractionsendfakedisposition.cpp:115
 #, kde-format
 msgid "Fake type undefined."
-msgstr ""
+msgstr "ცრუ ტიპი აღწერილი არაა."
 
 #: filter/filteractions/filteractionsendreceipt.cpp:21
 #, kde-format
 msgid "Confirm Delivery"
-msgstr ""
+msgstr "მიწოდების დადასტურება"
 
 #: filter/filteractions/filteractionsetidentity.cpp:29
 #, kde-format
 msgid "Set Identity To"
-msgstr ""
+msgstr "იდენტიფიკატორის დაყენება"
 
 #: filter/filteractions/filteractionsetstatus.cpp:20
 #, kde-format
@@ -752,17 +802,17 @@ msgstr "დანიშვნა, როგორც"
 #: filter/filteractions/filteractionsetstatus.cpp:32
 #, kde-format
 msgid "Status not specified."
-msgstr ""
+msgstr "სტატუსი მითითებული არაა."
 
 #: filter/filteractions/filteractionsettransport.cpp:36
 #, kde-format
 msgid "Set Transport To"
-msgstr ""
+msgstr "ტრანსპორტის დაყენება"
 
 #: filter/filteractions/filteractionsettransport.cpp:142
 #, kde-format
 msgid "Mail transport not defined."
-msgstr ""
+msgstr "ელფოსტის ტრანსპორტი აღწერილი არა."
 
 #: filter/filteractions/filteractionstatus.cpp:31
 #, kde-format
@@ -798,7 +848,7 @@ msgstr "გადაგზავნილი"
 #, kde-format
 msgctxt "msg status"
 msgid "Watched"
-msgstr ""
+msgstr "ვუყურებ"
 
 #: filter/filteractions/filteractionstatus.cpp:37
 #, kde-format
@@ -816,7 +866,7 @@ msgstr "სპამი"
 #, kde-format
 msgctxt "msg status"
 msgid "Ham"
-msgstr ""
+msgstr "სპამი არაა"
 
 #: filter/filteractions/filteractionstatus.cpp:40
 #, kde-format
@@ -827,18 +877,18 @@ msgstr "ქმედების ელემენტი"
 #: filter/filteractions/filteractionstatus.cpp:100
 #, kde-format
 msgid "Status is missing."
-msgstr ""
+msgstr "სტატუსი უცნობია."
 
 #: filter/filteractions/filteractionunsetstatus.cpp:19
 #, kde-format
 msgctxt "action: to unset the status"
 msgid "Unset Status"
-msgstr ""
+msgstr "სტატუსის მოხსნა"
 
 #: filter/filteractions/filteractionunsetstatus.cpp:37
 #, kde-format
 msgid "Status not defined."
-msgstr ""
+msgstr "სტატუსი აღწერილი არაა."
 
 #: filter/filteractions/filteractionwidget.cpp:69
 #, kde-format
@@ -853,13 +903,13 @@ msgstr "დახმარება"
 #: filter/filteractions/filteractionwithurl.cpp:64
 #, kde-format
 msgid "You can get specific header when you use %{headername}."
-msgstr ""
+msgstr "მითითებული თავსართის მიღება შეგიძლიათ, როცა იყენებთ %{headername}"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:35
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
-msgstr ""
+msgstr "Sieve-ის სკრიპტში გადაყვანა"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:42
 #, kde-format
@@ -880,7 +930,7 @@ msgstr "Sieve -ის ფაილები (*.siv);;ყველა ფაი�
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
-msgstr ""
+msgstr "Sieve-ის სკრიპტში გადაყვანა"
 
 #: filter/filterimporter/filterimportergmail.cpp:48
 #, kde-format
@@ -890,7 +940,7 @@ msgstr "Gmail -ის ფილტრი %1"
 #: filter/filterimporter/filterimporterprocmail.cpp:52
 #, kde-format
 msgid "Procmail filter %1"
-msgstr ""
+msgstr "ფილტრი Procmail %1"
 
 #: filter/filterimporterexporter.cpp:112
 #, kde-format
@@ -898,41 +948,43 @@ msgid ""
 "The following filters have not been saved because they were invalid (e.g. "
 "containing no actions or no search rules)."
 msgstr ""
+"შემდეგი ფილტრები არ შენახულა, რადგან ისინი არასწორია (მაგ: არ შეიცავენ "
+"ქმედებებს ან ძებნის წესებს)."
 
 #: filter/filterimporterexporter.cpp:138
 #, kde-format
 msgid "Import KMail Filters"
-msgstr ""
+msgstr "KMail -ის ფილტრების შემოტანა"
 
 #: filter/filterimporterexporter.cpp:146
 #, kde-format
 msgid "Import Evolution Filters"
-msgstr ""
+msgstr "Evolution -ის ფილტრების შემოტანა"
 
 #: filter/filterimporterexporter.cpp:150
 #, kde-format
 msgid "Import Sylpheed Filters"
-msgstr ""
+msgstr "Sylpheed -ის ფილტრების შემოტანა"
 
 #: filter/filterimporterexporter.cpp:154
 #, kde-format
 msgid "Import Procmail Filters"
-msgstr ""
+msgstr "Procmail -ის ფილტრების შემოტანა"
 
 #: filter/filterimporterexporter.cpp:158
 #, kde-format
 msgid "Import Balsa Filters"
-msgstr ""
+msgstr "Balsa -ის ფილტრების შემოტანა"
 
 #: filter/filterimporterexporter.cpp:162
 #, kde-format
 msgid "Import Claws Mail Filters"
-msgstr ""
+msgstr "Claws Mail -ის ფილტრების შემოტანა"
 
 #: filter/filterimporterexporter.cpp:166
 #, kde-format
 msgid "Import Gmail Filters"
-msgstr ""
+msgstr "Gmail -ის ფილტრების შემოტანა"
 
 #: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
 #: filter/filterimporterexporter.cpp:236
@@ -941,6 +993,8 @@ msgid ""
 "The selected file is not readable. Your file access permissions might be "
 "insufficient."
 msgstr ""
+"მონიშნული ფაილი წაკითხვადი არაა. შეიძლება, ფაილზე თქვენი წვდომელი საკმარისი "
+"არაა."
 
 #: filter/filterimporterexporter.cpp:316
 #, kde-format
@@ -987,6 +1041,8 @@ msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
 msgstr ""
+"შემდეგი ფილტრები არასწორია (მაგ: არ შეიცავენ ქმედებებს ან ძებნის წესებს). "
+"მოვაცილო ისინი თუ ჩაასწორებთ არასწორ ფილტრებს?"
 
 #: filter/kmfilteraccountlist.cpp:24
 #, kde-format
@@ -1017,7 +1073,7 @@ msgstr "გატანა..."
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
 msgid "Convert to..."
-msgstr ""
+msgstr "გადაყვანა..."
 
 #: filter/kmfilterdialog.cpp:98
 #, kde-format
@@ -1094,7 +1150,7 @@ msgstr "ფილტრის ქმედებები:"
 #: filter/kmfilterdialog.cpp:193
 #, kde-format
 msgid "Apply this filter to incoming messages:"
-msgstr ""
+msgstr "ამ ფილტრის გადატარება შემომავალ ელფოსტაზე:"
 
 #: filter/kmfilterdialog.cpp:203
 #, kde-format
@@ -1104,7 +1160,7 @@ msgstr "ყველა ანგარიშიდან"
 #: filter/kmfilterdialog.cpp:207
 #, kde-format
 msgid "From all but online IMAP accounts"
-msgstr ""
+msgstr "ყველა, მაგრამ არა ონლაინ-IMAP ანგარიშებზე"
 
 #: filter/kmfilterdialog.cpp:211
 #, kde-format
@@ -1114,7 +1170,7 @@ msgstr "მხოლოდ მონიშნული ანგარიშე�
 #: filter/kmfilterdialog.cpp:219
 #, kde-format
 msgid "Apply this filter to &sent messages"
-msgstr ""
+msgstr "ამ ფილტრის გადატარება &გაგზავნილ შეტყობინებებზე"
 
 #: filter/kmfilterdialog.cpp:221
 #, kde-format
@@ -1124,11 +1180,15 @@ msgid ""
 "also needs to be modified, please use \"Apply this filter <b>before</b> "
 "sending messages\".</p>"
 msgstr ""
+"<p>ეს ფილტრი ტრიგერდება მას <b>შემდეგ</b>, როცა შეტყობინება გაეშვება და ის "
+"მხოლოდ შეტყობინების ლოკალურ ასლს შეეეხება. </p><p>თუ გჭირდებათ მიმღების "
+"ასლის შეცვლაც, გამოიყენეთ \"ამ ფილტრის შეტყობინებებზე <b>გაგზავნამდე</b> "
+"გადატარება\".</p>"
 
 #: filter/kmfilterdialog.cpp:227
 #, kde-format
 msgid "Apply this filter &before sending messages"
-msgstr ""
+msgstr "&ამ ფილტრის შეტყობინებების გაგზავნამდე გადატარება"
 
 #: filter/kmfilterdialog.cpp:229
 #, kde-format
@@ -1137,16 +1197,19 @@ msgid ""
 "will affect both the local copy and the sent copy of the message.</p><p>This "
 "is required if the recipient's copy also needs to be modified.</p>"
 msgstr ""
+"<p>ფილტრი დატრიგერდება <b>მანამდე</b>, სანამ შეტყობინება გაიგზავნება და ის "
+"შეეხება ორივე ასლს, ლოკალურსაც და გაგზავნილსაც.</p><p>ეს აუცილებელია, თუ "
+"მიმღების ასლიც უნდა შეიცვალოს.</p>"
 
 #: filter/kmfilterdialog.cpp:234
 #, kde-format
 msgid "Apply this filter on manual &filtering"
-msgstr ""
+msgstr "ამ ფილტრის &ხელით გაფილტვრისას გადატარება"
 
 #: filter/kmfilterdialog.cpp:237
 #, kde-format
 msgid "Apply this filter on inbound emails in all folders"
-msgstr ""
+msgstr "ამ ფილტრის შემომავალ ელფოსტაზე, ყველა საქაღალდეში, გადატარება"
 
 #: filter/kmfilterdialog.cpp:239
 #, kde-format
@@ -1156,21 +1219,25 @@ msgid ""
 "IMAP accounts where new emails may have already been moved to different "
 "folders by server-side filters.</p>"
 msgstr ""
+"<p>ფილტრი გადატარდება შემომავალ ელფოსტაზე ყველა საქაღალდეში, რომლებიც ზემოთ "
+"ჩამოთვლილ ანგარიშებს ეკუთვნის. ეს გამოგადგებათ, როცა ლოკალურ ფილტრებს IMAP-"
+"ზე იყენებთ, სადაც ელფოსტა შეიძლება უკვე სხვა საქაღალდეში იყოს გადატანილი, "
+"სერვერის-მხარეს არსებული ფილტრებით.</p>"
 
 #: filter/kmfilterdialog.cpp:245
 #, kde-format
 msgid "If this filter &matches, stop processing here"
-msgstr ""
+msgstr "თუ ეს ფილტრი &ემთხვევა, დამუშავება აქ შეწყდება"
 
 #: filter/kmfilterdialog.cpp:248
 #, kde-format
 msgid "Add this filter to the Apply Filter menu"
-msgstr ""
+msgstr "ამ ფილტრის გადასატარებელი ფილტრების მენიუში ჩამატება"
 
 #: filter/kmfilterdialog.cpp:266
 #, kde-format
 msgid "Additionally add this filter to the toolbar"
-msgstr ""
+msgstr "დამატებით, ამ ფილტრის პანელზე დამატება"
 
 #: filter/kmfilterdialog.cpp:273
 #, kde-format
@@ -1180,12 +1247,12 @@ msgstr "მალსახმობი:"
 #: filter/kmfilterdialog.cpp:279
 #, kde-format
 msgid "Icon for this filter:"
-msgstr ""
+msgstr "ხატულა ამ ფილტრისთვის:"
 
 #: filter/kmfilterdialog.cpp:287
 #, kde-format
 msgid "Run selected filter(s) on: "
-msgstr ""
+msgstr "მონიშვნული ფილტრების სამიზნე; "
 
 #: filter/kmfilterdialog.cpp:293
 #, kde-format
@@ -1197,6 +1264,7 @@ msgstr "ახლა გაშვება"
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
+"ამ ფილტრის გადატარება შეუძლებელია, რადგან საქაღალდეები მონიშნული არ გაქვთ."
 
 #: filter/kmfilterdialog.cpp:419
 #, kde-format
@@ -1210,6 +1278,8 @@ msgid ""
 "Some filters were changed and not saved yet. You must save your filters "
 "before they can be applied."
 msgstr ""
+"ზოგიერთი ფილტრი შეიცვალა და ჯერ შენახული არაა. ფილტრის გადასატარებლად ჯერ ის "
+"უნდა შეინახოთ."
 
 #: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
 #, kde-format
@@ -1221,6 +1291,8 @@ msgstr "ფილტრები შეიცვალა."
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
+"ამ ფილტრის გადატარება შეუძლებელია, რადგან, ამჟამად, ფილტრები მონიშნული არ "
+"გაქვთ."
 
 #: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
 #, kde-format
@@ -1230,17 +1302,17 @@ msgstr "ფილტრები არჩეული არაა."
 #: filter/kmfilterdialog.cpp:658
 #, kde-format
 msgid "No filter was imported."
-msgstr ""
+msgstr "ფილტრი არ შემოტანილა."
 
 #: filter/kmfilterdialog.cpp:669
 #, kde-format
 msgid "Filters which were imported:"
-msgstr ""
+msgstr "ფილტრები, რომლებიც შემოტანილია:"
 
 #: filter/kmfilterdialog.cpp:677
 #, kde-format
 msgid "Any filter found."
-msgstr ""
+msgstr "ნებისმიერი ნაპოვნი ფილტრი."
 
 #: filter/kmfilterdialog.cpp:706
 #, kde-format
@@ -1249,16 +1321,20 @@ msgid ""
 "Some filters were changed and not saved yet.<br>You must save your filters "
 "before they can be exported."
 msgstr ""
+"ზოგიერთი ფილტრი შეიცვალა და ჯერ შენახული არაა. <br>ფილტრის გასატანად ჯერ ის "
+"უნდა შეინახოთ."
 
 #: filter/kmfilterdialog.cpp:712
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
+"ჩვენ არ შეგვიძლია ყველა KMail-ის ფილტრის Sieve-ის სკრიპტებში გადაყვანა, "
+"მაგრამ, შეგვიძლია, ვცადოთ :)"
 
 #: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
 #, kde-format
 msgid "Convert KMail filters to sieve scripts"
-msgstr ""
+msgstr "KMail-ის ფილტრების Sieve-ის სკრიპტებში გადაყვანა"
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1267,6 +1343,9 @@ msgid ""
 "</p><p>Click on any filter to edit it using the controls in the right-hand "
 "half of the dialog.</p></qt>"
 msgstr ""
+"<qt><p>ეს აღწერილი ფილტრების სიაა. ისინი ზემოდან-ქვემოთ მუშავდება.</"
+"p><p>დააწკაპუნეთ ნებისმიერ ფილტრზე მისი ამ ფანჯრის მარჯვენა ნახევარში "
+"ჩასასწორებლად.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:83
 #, kde-format
@@ -1302,6 +1381,12 @@ msgid ""
 "accidentally, you can undo this by clicking on the <em>Down</em> button.</"
 "p></qt>"
 msgstr ""
+"<qt><p>დააწკაპუნეთ ამ ღილაკზე ამჟამად მონიშნული ფილტრის ზემორე სიაში ერთი "
+"პუნქტით <em>ზემოთ</em> ასაწევად.</p><p>ეს სასარგებლოა, რადგან ფილტრების "
+"მიმდევრობა საში განსაზღვრავს, რა მიმდევრობით მოხდება ფილტრების გადატარების "
+"ცდა შეტყობინებაზე: ცდა ყველაზე ზემოდან იწყება.</p><p>თუ ამ ღილაკზე "
+"შემთხვევით დააწკაპუნეთ, ამ ქმედების გაუქმება <em>ქვემოთ</em> ჩამოტანის "
+"ღილაკზე დაწკაპუნებით შეგიძლიათ.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:96
 #, kde-format
@@ -1313,6 +1398,12 @@ msgid ""
 "accidentally, you can undo this by clicking on the <em>Up</em> button.</p></"
 "qt>"
 msgstr ""
+"<qt><p>დააწკაპუნეთ ამ ღილაკზე ამჟამად მონიშნული ფილტრის ზემორე სიაში ერთი "
+"პუნქტით <em>ქვემოთ</em> დასაწევად.</p><p>ეს სასარგებლოა, რადგან ფილტრების "
+"მიმდევრობა საში განსაზღვრავს, რა მიმდევრობით მოხდება ფილტრების გადატარების "
+"ცდა შეტყობინებაზე: ცდა ყველაზე ზემოდან იწყება.</p><p>თუ ამ ღილაკზე "
+"შემთხვევით დააწკაპუნეთ, ამ ქმედების გაუქმება <em>ზემოთ</em> ატანის ღილაკზე "
+"დაწკაპუნებით შეგიძლიათ.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:104
 #, kde-format
@@ -1322,6 +1413,10 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
+"<qt><p>დააწკაპუნეთ ამ ღილაკზე ამჟამად მონიშნული ფილტრის სიის ბოლოში "
+"ჩასატანად.</p><p>ეს სასარგებლოა, რადგან ფილტრების მიმდევრობა საში "
+"განსაზღვრავს, რა მიმდევრობით მოხდება ფილტრების გადატარების ცდა "
+"შეტყობინებაზე: ცდა ყველაზე ზემოდან იწყება</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:110
 #, kde-format
@@ -1331,6 +1426,10 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
+"<qt><p>დააწკაპუნეთ ამ ღილაკზე ამჟამად მონიშნული ფილტრის სიის თავში ასატანად."
+"</p><p>ეს სასარგებლოა, რადგან ფილტრების მიმდევრობა საში განსაზღვრავს, რა "
+"მიმდევრობით მოხდება ფილტრების გადატარების ცდა შეტყობინებაზე: ცდა ყველაზე "
+"ზემოდან იწყება</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:140
 #, kde-format
@@ -1361,6 +1460,10 @@ msgid ""
 "that later on.</p><p>If you have clicked this button accidentally, you can "
 "undo this by clicking on the <em>Delete</em> button.</p></qt>"
 msgstr ""
+"<qt><p>დააწკაპუნეთ ამ ღილაკზე ახალი ფილტრის შესაქმნელად.</p><p>ფილტრი "
+"ჩაისმება ამჟამად-მონიშნულის ქვემოთ, მაგრამ ამის შეცვლა ყოველთვის შეგიძლიათ, "
+"მოგვიანებით.</p><p>თუ ამ ღილაკზე შემთხვევით დააწკაპუნეთ, ქმედების გაუქმება "
+"<em>წაშლის</em> ღილაკით შეგიძლიათ.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:152
 #, kde-format
@@ -1369,6 +1472,9 @@ msgid ""
 "button accidentally, you can undo this by clicking on the <em>Delete</em> "
 "button.</p></qt>"
 msgstr ""
+"<qt><p>ფილტრის დასაკოპირებლად ამ ღილაკზე დააწკაპუნეთ.</p><p>თუ ამ ღილაკზე "
+"შემთხვევით დააწკაპუნეთ, ქმედების გაუქმება <em>წაშლის</em> ღილაკით შეგიძლიათ."
+"</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:156
 #, kde-format
@@ -1378,6 +1484,10 @@ msgid ""
 "deleted, but you can always leave the dialog by clicking <em>Cancel</em> to "
 "discard the changes made.</p></qt>"
 msgstr ""
+"<qt><p>დააწკაპუნეთ ამ ღილაკზე ზემოთა სიაში მონიშნული ფილტრის <em>წასაშლელად</"
+"em>.</p><p>ფილტრს მას შემდეგ, რაც წაშლით, ვეღარ დაიბრუნებთ, მაგრამ ყოველთვის "
+"შეგიძლიათ გახვიდეთ ფანჯრიდან <em>გაუქმების</em> ღილაკით, რაც ცვლილებებს "
+"გააუქმებს.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:163
 #, kde-format
@@ -1388,6 +1498,11 @@ msgid ""
 "back, click this button and select <em>Clear</em> followed by <em>OK</em> in "
 "the appearing dialog.</p></qt>"
 msgstr ""
+"<qt><p>დააწკაპუნეთ ამ ღილაკზე ამჟამად მონიშნული ფილტრის სახელის შესაცვლელად."
+"</p><p>ფილტრებს სახელები ავტომატურად ვირჩევთ, სანამ ისინი \"&lt;\"-ით იწყება."
+"</p><p>თუ ფილტრს სახელი შემთხვევით გადაარქვით და გნებავთ, ავტომატური "
+"დასახელება დაიბრუნოთ, დააწექით ამ ღილაკს და აირჩიეთ <em>გასუფთავება</em>, "
+"შემდეგ კი <em>დიახ</em> ფანჯარაში, რომელიც გამოჩნდება.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:290
 #, kde-format
@@ -1397,12 +1512,12 @@ msgstr "უსახელო"
 #: filter/kmfilterlistbox.cpp:444
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
-msgstr ""
+msgstr "მართლა გნებავთ, წაშალოთ ფილტრი \"%1\"?"
 
 #: filter/kmfilterlistbox.cpp:444
 #, kde-format
 msgid "Do you want to remove selected filters?"
-msgstr ""
+msgstr "მართლა გნებავთ მონიშნული ფილტრების წაშლა?"
 
 #: filter/kmfilterlistbox.cpp:445
 #, kde-format
@@ -1412,12 +1527,12 @@ msgstr "ფილტრის წაშლა"
 #: filter/kmfilterlistbox.cpp:445
 #, kde-format
 msgid "Remove Filters"
-msgstr ""
+msgstr "ფილტრების წაშლა"
 
 #: filter/kmfilterlistbox.cpp:661
 #, kde-format
 msgid "Rename Filter"
-msgstr ""
+msgstr "ფილტრის სახელის გადარქმევა"
 
 #: filter/kmfilterlistbox.cpp:662
 #, kde-format
@@ -1425,26 +1540,28 @@ msgid ""
 "Rename filter \"%1\" to:\n"
 "(leave the field empty for automatic naming)"
 msgstr ""
+"ფილტრის \"%1\" სახელის გადარქმევა სახელზე:\n"
+"(ავტომატური სახელისთვის ეს ველი ცარიელი დატოვეთ)"
 
 #: filter/mailfilter.cpp:131
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
-msgstr ""
+msgstr "<b>მიმდინარეობს ფილტრის ქმედების გადატარება:</b> %1"
 
 #: filter/mailfilter.cpp:140
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
-msgstr ""
+msgstr "აღმოჩენილია კრიტიკული შეცდომა. დამუშავება აქ დასრულდა."
 
 #: filter/mailfilter.cpp:147
 #, kde-format
 msgid "A problem was found while applying this action."
-msgstr ""
+msgstr "ამ ქმედების გადატარებისას აღმოჩენილია პრობლემა."
 
 #: filter/mailfilter.cpp:427
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
-msgstr ""
+msgstr "<qt>მეტისმეტად ბევრი ფილტრის ქმედება ფილტრის წესში <b>%1</b>.</qt>"
 
 #: filter/mailfilter.cpp:461
 #, kde-format
@@ -1452,11 +1569,13 @@ msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
 ">Ignoring it.</qt>"
 msgstr ""
+"<qt>უცნობი ფილტრის ქმედება <b>%1</b><br />ფილტრის წესში <b>%2</b>.<br /"
+">გამოტოვება.</qt>"
 
 #: filter/mailfilter.cpp:569
 #, kde-format
 msgid "Any action defined."
-msgstr ""
+msgstr "ნებისმიერი აღწერილი ქმედება."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
 #, kde-format
@@ -1496,37 +1615,37 @@ msgstr "ქმედებები"
 #: filter/ui/filterconfigwidget.ui:129
 #, kde-format
 msgid "Apply options"
-msgstr ""
+msgstr "პარამეტრების გადატარება"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyToIncomingCB)
 #: filter/ui/filterconfigwidget.ui:138
 #, kde-format
 msgid "Apply to incoming messages"
-msgstr ""
+msgstr "შემომავალ შეტყობინებებზე გადატარება"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyToSentCB)
 #: filter/ui/filterconfigwidget.ui:145
 #, kde-format
 msgid "Apply to sent messages"
-msgstr ""
+msgstr "გაგზავნილ შეტყობინებებზე გადატარება"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyBeforeSendCB)
 #: filter/ui/filterconfigwidget.ui:152
 #, kde-format
 msgid "Apply before sending messages"
-msgstr ""
+msgstr "შეტყობინებების გაგზავნამდე გადატარება"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyManuallyCB)
 #: filter/ui/filterconfigwidget.ui:159
 #, kde-format
 msgid "Apply on manual filtering"
-msgstr ""
+msgstr "ხელით ფილტრზე გადატარება"
 
 #. i18n: ectx: property (text), widget (QCheckBox, stopIfMatchesCB)
 #: filter/ui/filterconfigwidget.ui:169
 #, kde-format
 msgid "Stop processing if matches"
-msgstr ""
+msgstr "შეჩერება დამთხვევის შემთხვევაში"
 
 #. i18n: ectx: property (text), widget (QRadioButton, selectFile)
 #: filter/ui/selectthunderbirdfilterfileswidget.ui:29
@@ -1538,18 +1657,18 @@ msgstr "აირჩიეთ ფაილი:"
 #: filter/ui/selectthunderbirdfilterfileswidget.ui:45
 #, kde-format
 msgid "Select file from config:"
-msgstr ""
+msgstr "აირჩიეთ ფაილი კონფიგურაციიდან:"
 
 #: folder/accountconfigorderdialog.cpp:57
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
-msgstr ""
+msgstr "ანგარიშების მიმდევრობის ჩასწორება"
 
 #: folder/accountconfigorderdialog.cpp:74
 #, kde-format
 msgid "Use custom order"
-msgstr ""
+msgstr "მიმდევრობის ხელით მითითება"
 
 #: folder/accountconfigorderdialog.cpp:91
 #, kde-format
@@ -1576,7 +1695,7 @@ msgstr "ლოკალური საქაღალდეები"
 #: folder/folderrequester.cpp:123 folder/folderrequester.cpp:141
 #, kde-format
 msgid "Please select a folder"
-msgstr ""
+msgstr "აირჩიეთ საქაღალდე"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
 #, kde-format
@@ -1586,7 +1705,7 @@ msgstr "&ქვესაქაღალდის შექმნა...."
 #: folder/folderselectiondialog.cpp:64
 #, kde-format
 msgid "Create a new subfolder under the currently selected folder"
-msgstr ""
+msgstr "ამჟამად არჩეულ საქაღალდეში ახალი ქვესაქაღალდის შექმნა"
 
 #: folder/folderselectiondialog.cpp:177
 #, kde-format
@@ -1623,7 +1742,7 @@ msgstr "ხატულების ზომა"
 #: folder/foldertreeview.cpp:154
 #, kde-format
 msgid "Display Tooltips"
-msgstr ""
+msgstr "მინიშნებების ჩვენება"
 
 #: folder/foldertreeview.cpp:158
 #, kde-format
@@ -1647,18 +1766,18 @@ msgstr "ჩანაწერების დალაგება"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
-msgstr ""
+msgstr "ავტომატურად, მიმდინარე სვეტით"
 
 #: folder/foldertreeview.cpp:183
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
-msgstr ""
+msgstr "ხელით, გადათრევა-დაგდებით"
 
 #: folder/foldertreeview.cpp:473 folder/foldertreeview.cpp:515
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
-msgstr ""
+msgstr "<qt>გადავიდე შემდეგ წაუკითხავ შეტყობინებაზე საქაღლდეში <b>%1</b>?</qt>"
 
 #: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
@@ -1673,12 +1792,12 @@ msgstr "გადასვლა"
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
 msgid "Do Not Go To"
-msgstr ""
+msgstr "არ გადახვიდე"
 
 #: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:315
 #, kde-format
 msgid "You can start typing to filter the list of folders."
-msgstr ""
+msgstr "საქაღალდეების გასაფილტრად შეგიძლიათ კრეფა დაიწყოთ."
 
 #: folder/foldertreewidget.cpp:315
 #, kde-format
@@ -1693,22 +1812,22 @@ msgstr "%1 (გათიშულია)"
 #: folder/foldertreewidgetproxymodel.cpp:237
 #, kde-format
 msgid "%1 (Reached %2% quota)"
-msgstr ""
+msgstr "%1 (მიღწეულია კვოტის %2%)"
 
 #: job/backupjob.cpp:94
 #, kde-format
 msgid "Unable to retrieve folder list."
-msgstr ""
+msgstr "საქაღალდეების სიის მიღება შეუძლებელია."
 
 #: job/backupjob.cpp:121
 #, kde-format
 msgid "The operation was canceled by the user."
-msgstr ""
+msgstr "ოპერაცია გაუქმებულია მომხმარებლის მიერ."
 
 #: job/backupjob.cpp:151
 #, kde-format
 msgid "Failed to archive the folder '%1'."
-msgstr ""
+msgstr "საქაღალდის ('%1') დაარქივება ჩავარდა."
 
 #: job/backupjob.cpp:155
 #, kde-format
@@ -1718,7 +1837,7 @@ msgstr "არქივაციის შეცდომა"
 #: job/backupjob.cpp:165
 #, kde-format
 msgid "Unable to finalize the archive file."
-msgstr ""
+msgstr "არქივის ფაილის დასრულება შეუძლებელია."
 
 #: job/backupjob.cpp:170 job/backupjob.cpp:192
 #, kde-format
@@ -1731,116 +1850,124 @@ msgid ""
 "Archiving folder '%1' successfully completed. The archive was written to the "
 "file '%2'."
 msgstr ""
+"დაარქივება საქაღალდისთვის '%1' წარმატებით დასრულდა. არქივი ჩაწერილია ფაილში "
+"'%2'."
 
 #: job/backupjob.cpp:186
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "დაარქივებულია %2 ზომის მქონე 1 შეტყობინება."
+msgstr[1] "დაარქივებულია ჯამში %2 ზომის მქონე %1 შეტყობინება."
 
 #: job/backupjob.cpp:190
 #, kde-format
 msgid "The archive file has a size of %1."
-msgstr ""
+msgstr "არქივის ფაილის ზომა %1-ის ტოლია."
 
 #: job/backupjob.cpp:242
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
-msgstr ""
+msgstr "არქივის საქაღალდეში '%1' შეტყობინების ჩაწერა ჩავარდა."
 
 #: job/backupjob.cpp:266
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
-msgstr ""
+msgstr "შეტყობინების გადმოწერა საქაღალდეში '%1' ჩავარდა."
 
 #: job/backupjob.cpp:332
 #, kde-format
 msgid "Archiving folder %1"
-msgstr ""
+msgstr "მიმდინარეობს საქაღალდის (%1) დაარქივება"
 
 #: job/backupjob.cpp:357
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr ""
+"არქივის ფაილში საქაღალდის სტრუქტურის შექმნა საქაღალდისთვის '%1' შეუძლებელია."
 
 #: job/backupjob.cpp:369
 #, kde-format
 msgid "Unable to get message list for folder %1."
-msgstr ""
+msgstr "შეტყობინებების სიის მიღება საქაღალდისთვის %1 შეუძლებელია."
 
 #: job/backupjob.cpp:407
 #, kde-format
 msgid "Unable to open archive for writing."
-msgstr ""
+msgstr "არქივის ჩასაწერად გახსნა შეუძლებელია."
 
 #: job/backupjob.cpp:411
 #, kde-format
 msgid "Archiving"
-msgstr ""
+msgstr "არქივირება"
 
 #: job/expirejob.cpp:154
 #, kde-format
 msgid "Removing 1 old message from folder %2..."
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "იშლება 1 ძველი შეტყობინება საქაღალდიდან %2..."
+msgstr[1] "იშლება %1 ძველი შეტყობინება საქაღალდიდან %2..."
 
 #: job/expirejob.cpp:160
 #, kde-format
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr ""
+"საქაღალდიდან %1 შეტყობინებების ამოწურვა შეუძლებელია: სამიზნე საქაღალდე %2 "
+"ვერ ვიპოვე"
 
 #: job/expirejob.cpp:171
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
 msgstr[0] ""
+"მიმდინარეობს 1 ძველი შეტყობინების გადატანა საქაღალდიდან %2 საქაღალდეში %3..."
 msgstr[1] ""
+"მიმდინარეობს %1 ძველი შეტყობინების გადატანა საქაღალდიდან %2 საქაღალდეში %3..."
 
 #: job/expirejob.cpp:232
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "წაიშალა 1 ძველი შეტყობინება საქაღალდიდან %2."
+msgstr[1] "წაიშალა %1 ძველი შეტყობინება საქაღალდიდან %2."
 
 #: job/expirejob.cpp:234
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "გადატანილია 1 ძველი შეტყობინება საქაღალდიდან %2 საქაღალდეში %3."
+msgstr[1] "გადატანილია %1 ძველი შეტყობინება საქაღალდიდან %2 საქაღალდეში %3."
 
 #: job/expirejob.cpp:244
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
-msgstr ""
+msgstr "ძველი შეტყობინებების წაშლა საქაღალდიდან %1 გაუქმდა."
 
 #: job/expirejob.cpp:247
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
-msgstr ""
+msgstr "ძველი შეტყობინებების გადატანა საქაღალდიდან %1 საქაღალდეში %2 გაუქმდა."
 
 #: job/expirejob.cpp:256
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
-msgstr ""
+msgstr "საქაღალდიდან %1 ძველი შეტყობინებების წაშლა ჩავარდა."
 
 #: job/expirejob.cpp:258
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
-msgstr ""
+msgstr "ძველი შეტყობინებების გადატანა საქაღალდიდან %1 საქაღალდეში %2 ჩავარდა."
 
 #: kernel/mailkernel.cpp:179 kernel/mailkernel.cpp:201
 #, kde-format
 msgid "You do not have read/write permission to your inbox folder."
 msgstr ""
+"თქვენი შემომავალი ელფოსტის საქაღალდეში ჩაწერა/წაკითხვის წვდომა არ გაგაჩნიათ."
 
 #: kernel/mailkernel.cpp:230
 #, kde-format
 msgid "The Email program encountered a fatal error and will terminate now"
-msgstr ""
+msgstr "ელფოსტის პროგრამამ აღმოაჩინა ფატალური შეცდომა და მუშაობას ამთავრებს"
 
 #: kernel/mailkernel.cpp:233
 #, kde-format
@@ -1849,6 +1976,9 @@ msgid ""
 "The error was:\n"
 "%1"
 msgstr ""
+"ელფოსტის პროგრამამ აღმოაჩინა ფატალური შეცდომა და მუშაობას ამთავრებს.\n"
+"შეცდომა იყო:\n"
+"%1"
 
 #: search/searchpattern.cpp:235
 #, kde-format
@@ -1859,17 +1989,17 @@ msgstr "უცნობი"
 #: search/searchpattern.cpp:243
 #, kde-format
 msgid "(match any of the following)"
-msgstr ""
+msgstr "(ემთხვევა ნებისმიერს შემდეგიდან)"
 
 #: search/searchpattern.cpp:246
 #, kde-format
 msgid "(match all of the following)"
-msgstr ""
+msgstr "(ემთხვევა ყველა შემდეგს)"
 
 #: search/searchpattern.cpp:249
 #, kde-format
 msgid "(match all messages)"
-msgstr ""
+msgstr "(ყველა შეტყობინების დამთხვევა)"
 
 #: search/searchpatternedit.cpp:41
 msgid "Complete Message"
@@ -1885,7 +2015,7 @@ msgstr "სადმე თავსართებში"
 
 #: search/searchpatternedit.cpp:44
 msgid "All Recipients"
-msgstr ""
+msgstr "ყველა მიმღები"
 
 #: search/searchpatternedit.cpp:45
 msgid "Size in Bytes"
@@ -1893,7 +2023,7 @@ msgstr "ზომა ბაიტებში"
 
 #: search/searchpatternedit.cpp:46
 msgid "Age in Days"
-msgstr ""
+msgstr "ასაკი დღეებში"
 
 #: search/searchpatternedit.cpp:47
 msgid "Message Status"
@@ -1934,27 +2064,27 @@ msgstr "დაშიფვრა"
 #: search/searchpatternedit.cpp:144 search/searchpatternedit.cpp:145
 #, kde-format
 msgid "Choose or type your own criteria"
-msgstr ""
+msgstr "აირჩიეთ ან აკრიფეთ თქვენი პირობა"
 
 #: search/searchpatternedit.cpp:580
 #, kde-format
 msgid "Match a&ll of the following"
-msgstr ""
+msgstr "დაემთხვეს &ყველაფერი შემდეგიდან"
 
 #: search/searchpatternedit.cpp:581
 #, kde-format
 msgid "Match an&y of the following"
-msgstr ""
+msgstr "დამეთხვეს &ნებისმიერი რამ შემდეგიდან"
 
 #: search/searchpatternedit.cpp:583
 #, kde-format
 msgid "Match all messages"
-msgstr ""
+msgstr "ყველა შეტყობინების დამთხვევა"
 
 #: search/searchpatternedit.cpp:594
 #, kde-format
 msgid "Filter criteria:"
-msgstr ""
+msgstr "ფილტრის პირობა:"
 
 #: search/searchrule/searchrule.cpp:177
 #, kde-format
@@ -2031,12 +2161,12 @@ msgstr "მთავრდება"
 #: search/searchrule/searchrule.cpp:222
 #, kde-format
 msgid "not end with"
-msgstr ""
+msgstr "არ მთავრდება"
 
 #: search/searchrule/searchrule.cpp:225
 #, kde-format
 msgid "none"
-msgstr ""
+msgstr "არა"
 
 #: search/searchrule/searchrule.cpp:228
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
@@ -2055,83 +2185,83 @@ msgstr "არ შეიცავს"
 #: search/searchrule/searchrule.cpp:234
 #, kde-format
 msgid "has regexp"
-msgstr ""
+msgstr "აქვს რეგგამოსი"
 
 #: search/searchrule/searchrule.cpp:237
 #, kde-format
 msgid "not regexp"
-msgstr ""
+msgstr "არ აქვს რეგგამოსი"
 
 #: search/searchrule/searchrule.cpp:251
 #, kde-format
 msgid "size equals not supported"
-msgstr ""
+msgstr "ზომის ტოლობა მხარდაჭერილი არაა"
 
 #: search/searchrule/searchrule.cpp:254
 #, kde-format
 msgid "size not equals not supported"
-msgstr ""
+msgstr "ზომის უტოლობა მხარდაჭერილი არაა"
 
 #: search/searchrule/searchrule.cpp:285 search/searchrule/searchrule.cpp:392
 #: search/searchrule/searchrule.cpp:474
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
-msgstr ""
+msgstr "\"%1\" პირობით \"%2\" მხარდაჭერილი არაა"
 
 #: search/searchrule/searchrule.cpp:292
 #, kde-format
 msgid "<status> not implemented/supported"
-msgstr ""
+msgstr "<status> განხორციელებული/მხარდაჭერილი არაა"
 
 #: search/searchrule/searchrule.cpp:295
 #, kde-format
 msgid "<any header> not implemented/supported"
-msgstr ""
+msgstr "<any header> განხორციელებული/მხარდაჭერილი არაა"
 
 #: search/searchrule/searchrule.cpp:298
 #, kde-format
 msgid "<contents> not implemented/supported"
-msgstr ""
+msgstr "<contents> განხორციელებული/მხარდაჭერილი არაა"
 
 #: search/searchrule/searchrule.cpp:301
 #, kde-format
 msgid "<age in days> not implemented/supported"
-msgstr ""
+msgstr "<age in days> განხორციელებული/მხარდაჭერილი არაა"
 
 #: search/searchrule/searchrule.cpp:304
 #, kde-format
 msgid "<date> not implemented/supported"
-msgstr ""
+msgstr "<date> განხორციელებული/მხარდაჭერილი არაა"
 
 #: search/searchrule/searchrule.cpp:307
 #, kde-format
 msgid "<recipients> not implemented/supported"
-msgstr ""
+msgstr "<recipients> განხორციელებული/მხარდაჭერილი არაა"
 
 #: search/searchrule/searchrule.cpp:309
 #, kde-format
 msgid "<Tag> is not supported"
-msgstr ""
+msgstr "<Tag> მხარდაჭერილი არაა"
 
 #: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<message> not implemented/supported"
-msgstr ""
+msgstr "<message> განხორციელებული/მხარდაჭერილი არაა"
 
 #: search/searchrule/searchruledate.cpp:23
 #, kde-format
 msgid "Date is not valid."
-msgstr ""
+msgstr "თარიღი არასწორია."
 
 #: search/searchrule/searchrulenumerical.cpp:137
 #, kde-format
 msgid "Content is not a number."
-msgstr ""
+msgstr "შემცველობა რიცხვი არაა."
 
 #: search/searchrule/searchrulestring.cpp:235
 #, kde-format
 msgid "String is empty."
-msgstr ""
+msgstr "სტრიქონი ცარიელია."
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
@@ -2225,14 +2355,14 @@ msgstr "არ მთავრდება"
 #: search/widgethandler/tagrulewidgethandler.cpp:97
 #: search/widgethandler/textrulerwidgethandler.cpp:33
 msgid "matches regular expr."
-msgstr ""
+msgstr "ემთხვევა რეგგამოსს."
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:35
 #: search/widgethandler/messagerulewidgethandler.cpp:27
 #: search/widgethandler/tagrulewidgethandler.cpp:98
 #: search/widgethandler/textrulerwidgethandler.cpp:34
 msgid "does not match reg. expr."
-msgstr ""
+msgstr "არ ემთხვევა რეგგამოსს."
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:36
 #: search/widgethandler/headersrulerwidgethandler.cpp:151
@@ -2250,7 +2380,7 @@ msgstr "არ არის მისამართების წიგნშ
 #: search/widgethandler/messagerulewidgethandler.cpp:147
 #, kde-format
 msgid "has no attachment"
-msgstr ""
+msgstr "არ აქვს მიმაგრებები"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:23
 #: search/widgethandler/numericrulewidgethandler.cpp:23
@@ -2260,7 +2390,7 @@ msgstr "მეტი, ვიდრე"
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:24
 #: search/widgethandler/numericrulewidgethandler.cpp:24
 msgid "is less than or equal to"
-msgstr ""
+msgstr "ნაკლებია ან ტოლია"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:25
 #: search/widgethandler/numericrulewidgethandler.cpp:25
@@ -2270,7 +2400,7 @@ msgstr "ნაკლები, ვიდრე"
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:26
 #: search/widgethandler/numericrulewidgethandler.cpp:26
 msgid "is greater than or equal to"
-msgstr ""
+msgstr "მეტია ან ტოლია"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:157
 #, kde-format
@@ -2334,7 +2464,7 @@ msgstr "გაგზავნილია"
 #: search/widgethandler/statusrulewidgethandler.cpp:37
 msgctxt "message status"
 msgid "Watched"
-msgstr ""
+msgstr "ვუყურებ"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:38
 msgctxt "message status"
@@ -2349,7 +2479,7 @@ msgstr "სპამი"
 #: search/widgethandler/statusrulewidgethandler.cpp:40
 msgctxt "message status"
 msgid "Ham"
-msgstr ""
+msgstr "სპამი არაა"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:41
 msgctxt "message status"
@@ -2359,13 +2489,13 @@ msgstr "აქვს მიმაგრებები"
 #: snippets/snippetattachmentwidget.cpp:26
 #, kde-format
 msgid "Click on button for selecting attachment file"
-msgstr ""
+msgstr "მიმაგრებული ფაილის მოსანიშნად ამ ღილაკზე დააწკაპუნეთ"
 
 #: snippets/snippetattachmentwidget.cpp:32
 #: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgid "Select Attachments"
-msgstr ""
+msgstr "აირჩიეთ მიმაგრებული ფაილები"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
@@ -2376,7 +2506,7 @@ msgstr "..."
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
-msgstr ""
+msgstr "ფაილის სახელის მიმაგრების მორგება"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
 #, kde-format
@@ -2386,18 +2516,18 @@ msgstr "ფაილის სახელი:"
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
 #, kde-format
 msgid "Insert Variables"
-msgstr ""
+msgstr "ჩასვით ცვლადები"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
-msgstr ""
+msgstr "აირჩიეთ მიმაგრებული ფაილები"
 
 #: snippets/snippetselectattachmentwidget.cpp:45
 #, kde-format
 msgid "Do you want to delete selected attachment?"
-msgstr ""
+msgstr "მართლა გნებავთ მონიშნული მიმაგრებების წაშლა?"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2408,13 +2538,13 @@ msgstr "ზოგადი"
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Snippet"
-msgstr ""
+msgstr "ფრაგმენტის დამატება"
 
 #: snippets/snippetsmanager.cpp:226
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Snippet"
-msgstr ""
+msgstr "ფრაგმენტის ჩსწორება"
 
 #: snippets/snippetsmanager.cpp:286
 #, kde-kuit-format
@@ -2458,7 +2588,7 @@ msgstr "ნამდვილად გნებავთ მითითებ�
 #, kde-format
 msgctxt "@action"
 msgid "Snippet %1"
-msgstr ""
+msgstr "ფრაგმენტი %1"
 
 #: snippets/snippetsmanager.cpp:558
 #, kde-format
@@ -2493,17 +2623,17 @@ msgstr "ჯგუფის წაშლა"
 #: snippets/snippetsmanager.cpp:572
 #, kde-format
 msgid "Insert Snippet"
-msgstr ""
+msgstr "ფრაგმენტის ჩასმა"
 
 #: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
 #, kde-format
 msgid "Do you want to update snippet?"
-msgstr ""
+msgstr "მართლა გნებავთ ფრაგმენტის განახლება?"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
 #, kde-format
 msgid "Update snippet"
-msgstr ""
+msgstr "ფრაგმენტის განახლება"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
 #, kde-format
@@ -2519,17 +2649,17 @@ msgstr "ტექსტური ნაწყვეტები"
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
-msgstr ""
+msgstr "შეიყვანეთ ცვლადის მნიშვნელობები"
 
 #: snippets/snippetvariabledialog.cpp:40
 #, kde-format
 msgid "Enter the replacement values for '%1':"
-msgstr ""
+msgstr "შეიყვანეთ '%1'-ის ჩასანაცვლებელი მნიშვნელობები:"
 
 #: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgid "Make value &default"
-msgstr ""
+msgstr "მნიშვნელობის ნაგულისხმევად გამოყენება"
 
 #: snippets/snippetvariabledialog.cpp:48
 #, kde-format
@@ -2538,6 +2668,8 @@ msgid ""
 "Enable this to save the value entered to the right as the default value for "
 "this variable"
 msgstr ""
+"ჩართეთ ეს, რათა შეინახოთ მნიშვნელობა, რომელიც ამ ცვლადის ნაგულისხმევი "
+"მნიშვნელობის მარჯვნივ შეიყვანეთ"
 
 #: snippets/snippetvariabledialog.cpp:51
 #, kde-format
@@ -2547,6 +2679,9 @@ msgid ""
 "you use the same variable later, even in another snippet, the value entered "
 "to the right will be the default value for that variable."
 msgstr ""
+"თუ ამ პარამეტრს ჩართავთ, მნიშვნელობა, რომელსაც მარჯვნივ შეიყვანთ, შეინახება. "
+"თუ იგივე ცვლადს მოგვიანებით გამოიყენებთ, თუნდაც სხვა ფრაგმენტში, მარჯვნივ "
+"შეყვანილი მნიშვნელობა ცვლადისთვის ნაგულისხმევი მნიშვნელობა იქნება."
 
 #: snippets/snippetwidget.cpp:56
 #, kde-format
@@ -2580,7 +2715,7 @@ msgstr "მიმაგრებული ფაილები:"
 #: snippets/ui/snippetwidget.ui:82
 #, kde-format
 msgid "&Snippet:"
-msgstr ""
+msgstr "&ფრაგმენტ:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: snippets/ui/snippetwidget.ui:102
@@ -2669,7 +2804,7 @@ msgstr "&დახრილები"
 #: tag/tagwidget.cpp:122
 #, kde-format
 msgid "Message tag &icon:"
-msgstr ""
+msgstr "შეტყობინების ჭდის &ხატულა:"
 
 #: tag/tagwidget.cpp:133
 #, kde-format
@@ -2679,7 +2814,7 @@ msgstr "&მალსახმობი:"
 #: tag/tagwidget.cpp:144
 #, kde-format
 msgid "Enable &toolbar button"
-msgstr ""
+msgstr "&ხელსაწყოების პანელის ღილაკების ჩართვა"
 
 #: widgets/favoritecollectionwidget.cpp:93
 #, kde-format
@@ -2704,22 +2839,22 @@ msgstr "ხატულის რეჟიმი"
 #: widgets/favoritecollectionwidget.cpp:237
 #, kde-format
 msgid "Drop your favorite folders here..."
-msgstr ""
+msgstr "დააგდეთ აქ თქვენი რჩეული საქაღალდეები..."
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format
 msgid "Resend-To:"
-msgstr ""
+msgstr "თავიდანგაგზავნა-ვის:"
 
 #: widgets/redirectdialog.cpp:70
 #, kde-format
 msgid "Resend-Cc:"
-msgstr ""
+msgstr "თავიდანგაგზავნა-ასლი:"
 
 #: widgets/redirectdialog.cpp:73
 #, kde-format
 msgid "Resend-Bcc:"
-msgstr ""
+msgstr "თავიდანგაგზავნა-ფარულიასლი:"
 
 #: widgets/redirectdialog.cpp:102
 #, kde-format
@@ -2730,7 +2865,7 @@ msgstr "შეტყობინების გადამისამარ�
 #: widgets/redirectdialog.cpp:123
 #, kde-format
 msgid "Select the recipient addresses to redirect to:"
-msgstr ""
+msgstr "აირჩიეთ გადასაგზავნი მიმღების მისამართი:"
 
 #: widgets/redirectdialog.cpp:152
 #, kde-format
@@ -2755,17 +2890,17 @@ msgstr "&მოგვიანებით გაგზავნა"
 #: widgets/redirectdialog.cpp:207
 #, kde-format
 msgid "You cannot redirect the message without an address."
-msgstr ""
+msgstr "შეტყობინების გადამისამართება მისამართის გარეშე არ შეგიძლიათ."
 
 #: widgets/redirectdialog.cpp:207
 #, kde-format
 msgid "Empty Redirection Address"
-msgstr ""
+msgstr "ცარიელი გადამისამართების მისამართი"
 
 #: widgets/redirectwidget.cpp:39
 #, kde-format
 msgid "Use the Address-Selection Dialog"
-msgstr ""
+msgstr "მისამართის-არჩევის დიალოდის გამოყენება"
 
 #: widgets/redirectwidget.cpp:41
 #, kde-format
@@ -2773,3 +2908,5 @@ msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr ""
+"ეს ღილაკი ხსნის ცალკე ფანჯარას, სადაც მიმღებები ყველა ხელმისაწვდომი "
+"მისამართიდან შეგიძლიათ, აირჩიოთ."
