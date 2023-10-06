@@ -35,10 +35,10 @@ public:
 
     ~EntityCollectionOrderProxyModel() override;
 
-    Q_REQUIRED_RESULT bool lessThan(const QModelIndex &left, const QModelIndex &right) const override;
+    [[nodiscard]] bool lessThan(const QModelIndex &left, const QModelIndex &right) const override;
 
     void setManualSortingActive(bool active);
-    Q_REQUIRED_RESULT bool isManualSortingActive() const;
+    [[nodiscard]] bool isManualSortingActive() const;
 
     void clearRanks();
     void setTopLevelOrder(const QStringList &list);

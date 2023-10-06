@@ -34,7 +34,7 @@ static const struct {
     const char *internalName;
     const KLazyLocalizedString displayName;
 
-    Q_REQUIRED_RESULT QString getLocalizedDisplayName() const
+    [[nodiscard]] QString getLocalizedDisplayName() const
     {
         return displayName.toString();
     }

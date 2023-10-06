@@ -29,9 +29,9 @@ public:
 
     enum ExpireAction { ExpireDelete = 0, ExpireMove = 1 };
 
-    Q_REQUIRED_RESULT QByteArray type() const override;
+    [[nodiscard]] QByteArray type() const override;
     ExpireCollectionAttribute *clone() const override;
-    Q_REQUIRED_RESULT QByteArray serialized() const override;
+    [[nodiscard]] QByteArray serialized() const override;
     void deserialize(const QByteArray &data) override;
 
     void daysToExpire(int &unreadDays, int &readDays) const;
@@ -44,7 +44,7 @@ public:
     /**
      * Returns true if this folder automatically expires old messages.
      */
-    Q_REQUIRED_RESULT bool isAutoExpire() const;
+    [[nodiscard]] bool isAutoExpire() const;
 
     /**
      * Sets the maximum age for unread messages in this folder.
@@ -76,18 +76,18 @@ public:
      * Returns the age at which unread messages are expired.
      * Units are determined by unreadExpireUnits().
      */
-    Q_REQUIRED_RESULT int unreadExpireAge() const;
+    [[nodiscard]] int unreadExpireAge() const;
 
     /**
      * Returns the age at which read messages are expired.
      * Units are determined by readExpireUnits().
      */
-    Q_REQUIRED_RESULT int readExpireAge() const;
+    [[nodiscard]] int readExpireAge() const;
 
     /**
      * What should expiry do? Delete or move to another folder?
      */
-    Q_REQUIRED_RESULT ExpireAction expireAction() const;
+    [[nodiscard]] ExpireAction expireAction() const;
     void setExpireAction(ExpireAction a);
 
     /**
@@ -100,16 +100,16 @@ public:
      * Units getUnreadExpireAge() is returned in.
      * 1 = days, 2 = weeks, 3 = months.
      */
-    Q_REQUIRED_RESULT ExpireUnits unreadExpireUnits() const;
+    [[nodiscard]] ExpireUnits unreadExpireUnits() const;
 
     /**
      * Units getReadExpireAge() is returned in.
      * 1 = days, 2 = weeks, 3 = months.
      */
-    Q_REQUIRED_RESULT ExpireUnits readExpireUnits() const;
+    [[nodiscard]] ExpireUnits readExpireUnits() const;
 
     bool operator==(const ExpireCollectionAttribute &other) const;
-    Q_REQUIRED_RESULT bool expireMessagesWithValidDate() const;
+    [[nodiscard]] bool expireMessagesWithValidDate() const;
     void setExpireMessagesWithValidDate(bool expireMessagesWithValidDate);
 
 private:

@@ -49,7 +49,7 @@ public:
 
     void restoreHeaderState(const QByteArray &data);
 
-    Q_REQUIRED_RESULT Akonadi::Collection currentFolder() const;
+    [[nodiscard]] Akonadi::Collection currentFolder() const;
 
     void disableSaveConfig();
     void readConfig();

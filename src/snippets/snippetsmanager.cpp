@@ -35,7 +35,7 @@ public:
     {
     }
 
-    Q_REQUIRED_RESULT QModelIndex currentGroupIndex() const;
+    [[nodiscard]] QModelIndex currentGroupIndex() const;
 
     void selectionChanged();
     void dndDone();

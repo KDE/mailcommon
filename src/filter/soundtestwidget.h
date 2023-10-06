@@ -47,7 +47,7 @@ public:
     /**
      * Returns the url of the sound file to play.
      */
-    Q_REQUIRED_RESULT QString url() const;
+    [[nodiscard]] QString url() const;
 
     /**
      * Clears the url of the sound file to play.

@@ -19,7 +19,7 @@ public:
     explicit SelectThunderbirdFilterFilesDialog(const QString &defaultSettingPath, QWidget *parent);
     ~SelectThunderbirdFilterFilesDialog() override;
 
-    Q_REQUIRED_RESULT QStringList selectedFiles() const;
+    [[nodiscard]] QStringList selectedFiles() const;
 
     void setStartDir(const QUrl &);
 

@@ -26,13 +26,13 @@ class FilterActionPlaySound : public FilterActionWithTest
 public:
     FilterActionPlaySound();
     ~FilterActionPlaySound() override;
-    Q_REQUIRED_RESULT ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
-    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart() const override;
+    [[nodiscard]] ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    [[nodiscard]] SearchRule::RequiredPart requiredPart() const override;
     static FilterAction *newAction();
-    Q_REQUIRED_RESULT bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
+    [[nodiscard]] bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
 
-    Q_REQUIRED_RESULT bool isEmpty() const override;
-    Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
+    [[nodiscard]] bool isEmpty() const override;
+    [[nodiscard]] QString informationAboutNotValidAction() const override;
 
 private:
     mutable Phonon::MediaObject *mPlayer = nullptr;

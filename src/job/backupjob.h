@@ -70,9 +70,9 @@ private:
     MAILCOMMON_NO_EXPORT void archiveNextMessage();
     MAILCOMMON_NO_EXPORT bool queueFolders(const Akonadi::Collection &root);
     MAILCOMMON_NO_EXPORT void processMessage(const Akonadi::Item &item);
-    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString pathForCollection(const Akonadi::Collection &collection) const;
-    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString subdirPathForCollection(const Akonadi::Collection &collection) const;
-    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT bool hasChildren(const Akonadi::Collection &collection) const;
+    [[nodiscard]] MAILCOMMON_NO_EXPORT QString pathForCollection(const Akonadi::Collection &collection) const;
+    [[nodiscard]] MAILCOMMON_NO_EXPORT QString subdirPathForCollection(const Akonadi::Collection &collection) const;
+    [[nodiscard]] MAILCOMMON_NO_EXPORT bool hasChildren(const Akonadi::Collection &collection) const;
     MAILCOMMON_NO_EXPORT void finish();
     MAILCOMMON_NO_EXPORT void abort(const QString &errorMessage);
     MAILCOMMON_NO_EXPORT bool writeDirHelper(const QString &directoryPath);
@@ -81,7 +81,7 @@ private:
     // Some Collection's don't have the name fetched. However, in mAllFolders,
     // we have a list of Collection's that have that information in them, so
     // we can just look it up there.
-    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString collectionName(const Akonadi::Collection &collection) const;
+    [[nodiscard]] MAILCOMMON_NO_EXPORT QString collectionName(const Akonadi::Collection &collection) const;
 
     QString mRealPath;
     QUrl mMailArchivePath;

@@ -20,7 +20,7 @@ class FilterActionWithCrypto : public FilterAction
 protected:
     using FilterAction::FilterAction;
 
-    Q_REQUIRED_RESULT QStringList getEncryptionKeysFromContent(const KMime::Message::Ptr &msg, GpgME::Protocol proto) const;
+    [[nodiscard]] QStringList getEncryptionKeysFromContent(const KMime::Message::Ptr &msg, GpgME::Protocol proto) const;
 
 private:
     // cached values

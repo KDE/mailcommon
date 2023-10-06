@@ -59,33 +59,33 @@ public:
 
     bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole) override;
 
-    Q_REQUIRED_RESULT QVariant data(const QModelIndex &index, int role) const override;
+    [[nodiscard]] QVariant data(const QModelIndex &index, int role) const override;
 
-    Q_REQUIRED_RESULT Qt::ItemFlags flags(const QModelIndex &index) const override;
+    [[nodiscard]] Qt::ItemFlags flags(const QModelIndex &index) const override;
 
-    Q_REQUIRED_RESULT QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const override;
+    [[nodiscard]] QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const override;
 
-    Q_REQUIRED_RESULT QModelIndex parent(const QModelIndex &index) const override;
+    [[nodiscard]] QModelIndex parent(const QModelIndex &index) const override;
 
-    Q_REQUIRED_RESULT int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+    [[nodiscard]] int rowCount(const QModelIndex &parent = QModelIndex()) const override;
 
-    Q_REQUIRED_RESULT int columnCount(const QModelIndex &parent = QModelIndex()) const override;
+    [[nodiscard]] int columnCount(const QModelIndex &parent = QModelIndex()) const override;
 
-    Q_REQUIRED_RESULT QStringList mimeTypes() const override;
+    [[nodiscard]] QStringList mimeTypes() const override;
 
-    Q_REQUIRED_RESULT QMimeData *mimeData(const QModelIndexList &indexes) const override;
+    [[nodiscard]] QMimeData *mimeData(const QModelIndexList &indexes) const override;
 
-    Q_REQUIRED_RESULT bool dropMimeData(const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &parent) override;
+    [[nodiscard]] bool dropMimeData(const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &parent) override;
 
-    Q_REQUIRED_RESULT Qt::DropActions supportedDropActions() const override;
+    [[nodiscard]] Qt::DropActions supportedDropActions() const override;
 
     void save(const QString &filename = QString());
     void load(const QString &filename = QString());
 
-    Q_REQUIRED_RESULT QMap<QString, QString> savedVariables() const;
+    [[nodiscard]] QMap<QString, QString> savedVariables() const;
     void setSavedVariables(const QMap<QString, QString> &savedVariables);
 
-    Q_REQUIRED_RESULT QList<SnippetsInfo> snippetsInfo() const;
+    [[nodiscard]] QList<SnippetsInfo> snippetsInfo() const;
 
 protected:
     bool insertRows(int row, int count, const QModelIndex &parent = QModelIndex()) override;

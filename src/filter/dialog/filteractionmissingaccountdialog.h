@@ -16,7 +16,7 @@ class FilterActionMissingAccountDialog : public QDialog
 public:
     explicit FilterActionMissingAccountDialog(const QStringList &lstAccount, const QString &filtername, QWidget *parent = nullptr);
     ~FilterActionMissingAccountDialog() override;
-    Q_REQUIRED_RESULT QStringList selectedAccount() const;
+    [[nodiscard]] QStringList selectedAccount() const;
     static bool allAccountExist(const QStringList &lst);
 
 private:

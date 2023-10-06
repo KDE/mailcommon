@@ -26,9 +26,9 @@ public:
     ~FilterImporterPathCache() override;
 
     void insert(const QString &original, const Akonadi::Collection &newValue);
-    Q_REQUIRED_RESULT Akonadi::Collection convertedFilterPath(const QString &original);
+    [[nodiscard]] Akonadi::Collection convertedFilterPath(const QString &original);
     void clear();
-    Q_REQUIRED_RESULT int count() const;
+    [[nodiscard]] int count() const;
 
 private:
     QHash<QString, Akonadi::Collection> mFilterCache;

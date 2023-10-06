@@ -20,7 +20,7 @@ public:
     explicit SnippetAttachmentWidget(QWidget *parent = nullptr);
     ~SnippetAttachmentWidget() override;
     void setText(const QString &str);
-    Q_REQUIRED_RESULT QString text() const;
+    [[nodiscard]] QString text() const;
     void clear();
 
 Q_SIGNALS:

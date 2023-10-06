@@ -39,7 +39,7 @@ public:
     /**
      * @copydoc FilterAction::createParamWidget
      */
-    Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
+    [[nodiscard]] QWidget *createParamWidget(QWidget *parent) const override;
 
     /**
      * @copydoc FilterAction::applyParamWidgetValue

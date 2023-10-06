@@ -33,7 +33,7 @@ static const char myAccountConfigOrderDialogName[] = "AccountConfigOrderDialog";
 struct InstanceStruct {
     QString name;
     QIcon icon;
-    Q_REQUIRED_RESULT bool isValid() const
+    [[nodiscard]] bool isValid() const
     {
         return !name.isEmpty();
     }

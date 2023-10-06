@@ -48,19 +48,19 @@ public:
     /**
      * Returns the addresses for the redirection.
      */
-    Q_REQUIRED_RESULT QString to() const;
+    [[nodiscard]] QString to() const;
 
     /**
      * Returns the send mode.
      */
-    Q_REQUIRED_RESULT SendMode sendMode() const;
+    [[nodiscard]] SendMode sendMode() const;
 
-    Q_REQUIRED_RESULT int transportId() const;
+    [[nodiscard]] int transportId() const;
 
-    Q_REQUIRED_RESULT int identity() const;
+    [[nodiscard]] int identity() const;
 
-    Q_REQUIRED_RESULT QString cc() const;
-    Q_REQUIRED_RESULT QString bcc() const;
+    [[nodiscard]] QString cc() const;
+    [[nodiscard]] QString bcc() const;
 
 protected:
     void accept() override;

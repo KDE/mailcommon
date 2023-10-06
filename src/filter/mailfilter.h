@@ -79,10 +79,10 @@ public:
     /**
      * Returns the unique identifier of this filter.
      */
-    Q_REQUIRED_RESULT QString identifier() const;
+    [[nodiscard]] QString identifier() const;
 
     /** Equivalent to @p pattern()->name(). @return name of the filter */
-    Q_REQUIRED_RESULT QString name() const;
+    [[nodiscard]] QString name() const;
 
     /** Execute the filter action(s) on the given message.
       Returns:
@@ -95,18 +95,18 @@ public:
       stop the filtering of this message.
       @param applyOnOutbound Defines whether to apply the rules on the outbound.
     */
-    Q_REQUIRED_RESULT ReturnCode execActions(ItemContext &context, bool &stopIt, bool applyOnOutbound) const;
+    [[nodiscard]] ReturnCode execActions(ItemContext &context, bool &stopIt, bool applyOnOutbound) const;
 
     /**
      * Returns the required part from the item that is needed for the filter to
      * operate. See @ref SearchRule::RequiredPart */
-    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart(const QString &id) const;
+    [[nodiscard]] SearchRule::RequiredPart requiredPart(const QString &id) const;
 
     /** Write contents to given config group. */
     void writeConfig(KConfigGroup &config, bool exportFilter) const;
 
     /** Initialize from given config group. */
-    Q_REQUIRED_RESULT bool readConfig(const KConfigGroup &config, bool interactive = false);
+    [[nodiscard]] bool readConfig(const KConfigGroup &config, bool interactive = false);
 
     /** Remove empty rules (and actions one day). */
     QString purify(bool removeAction = true);
@@ -125,7 +125,7 @@ public:
     /** Provides a reference to the internal pattern. If you used the
       @p matches() function before, please convert to using
       myFilter->pattern()->matches() now. */
-    Q_REQUIRED_RESULT SearchPattern *pattern();
+    [[nodiscard]] SearchPattern *pattern();
 
     /** Provides a reference to the internal pattern. If you used the
       @p matches() function before, please convert to using
@@ -148,13 +148,13 @@ public:
       outbound messages, false otherwise.
       @see setApplyOnOutbound applyOnInbound setApplyOnInbound
     */
-    Q_REQUIRED_RESULT bool applyOnOutbound() const;
+    [[nodiscard]] bool applyOnOutbound() const;
 
     /** @return TRUE if this filter should be applied on
       outbound messages before they are sent, FALSE otherwise.
       @see setApplyOnOutbound applyOnInbound setApplyOnInbound
     */
-    Q_REQUIRED_RESULT bool applyBeforeOutbound() const;
+    [[nodiscard]] bool applyBeforeOutbound() const;
 
     /** Set whether this filter should be applied on
       inbound messages (@p aApply == true) or not.
@@ -166,7 +166,7 @@ public:
       inbound messages, false otherwise.
       @see setApplyOnOutbound applyOnOutbound setApplyOnInbound
     */
-    Q_REQUIRED_RESULT bool applyOnInbound() const;
+    [[nodiscard]] bool applyOnInbound() const;
 
     /** Set whether this filter should be applied on
       explicit (CTRL-J) filtering (@p aApply == true) or not.
@@ -178,7 +178,7 @@ public:
       explicit (CTRL-J) filtering, false otherwise.
       @see setApplyOnOutbound applyOnOutbound setApplyOnInbound
     */
-    Q_REQUIRED_RESULT bool applyOnExplicit() const;
+    [[nodiscard]] bool applyOnExplicit() const;
 
     /** Set whether this filter should be applied on
       inbound messages for all accounts (@p aApply == All) or
@@ -197,7 +197,7 @@ public:
     /** Returns whether the filter should be applied on inbound emails in all
       folders, not just Inbox.
     */
-    Q_REQUIRED_RESULT bool applyOnAllFoldersInbound() const;
+    [[nodiscard]] bool applyOnAllFoldersInbound() const;
 
     /** @return true if this filter should be applied on
       inbound messages for all accounts, or false if this filter
@@ -205,7 +205,7 @@ public:
       Only applicable to filters that are applied on inbound messages.
       @see setApplicability
     */
-    Q_REQUIRED_RESULT AccountType applicability() const;
+    [[nodiscard]] AccountType applicability() const;
 
     /** Set whether this filter should be applied on
       inbound messages for the account with id (@p id).
@@ -219,7 +219,7 @@ public:
       inbound messages from the account with id (@p id), false otherwise.
       @see setApplicability
     */
-    Q_REQUIRED_RESULT bool applyOnAccount(const QString &id) const;
+    [[nodiscard]] bool applyOnAccount(const QString &id) const;
 
     void setStopProcessingHere(bool aStop);
     bool stopProcessingHere() const;
@@ -232,7 +232,7 @@ public:
       false otherwise.
       @see setConfigureShortcut
     */
-    Q_REQUIRED_RESULT bool configureShortcut() const;
+    [[nodiscard]] bool configureShortcut() const;
 
     /** Set whether this filter should be plugged into the toolbar.
       This can be done only if a shortcut is defined.
@@ -244,7 +244,7 @@ public:
       false otherwise.
       @see setConfigureToolbar
     */
-    Q_REQUIRED_RESULT bool configureToolbar() const;
+    [[nodiscard]] bool configureToolbar() const;
 
     /** @return The toolbar name of this filter.
      *  @see setToolbarName
@@ -280,7 +280,7 @@ public:
     /** @return The name of the icon to be used.
       @see setIcon
     */
-    Q_REQUIRED_RESULT QString icon() const;
+    [[nodiscard]] QString icon() const;
 
     /**
      * Called from the filter manager when a folder is moved.
@@ -304,11 +304,11 @@ public:
 
     /** @return Tells, if an automatic name is used for the filter
      */
-    Q_REQUIRED_RESULT bool isAutoNaming() const;
+    [[nodiscard]] bool isAutoNaming() const;
 
     /** Return if filter is enabled or not
      */
-    Q_REQUIRED_RESULT bool isEnabled() const;
+    [[nodiscard]] bool isEnabled() const;
     void setEnabled(bool);
 
     void generateSieveScript(QStringList &requiresModules, QString &code);

@@ -46,7 +46,7 @@ public:
      * Returns the target collection the item should be moved to, or an invalid
      * collection if the item should not be moved at all.
      */
-    Q_REQUIRED_RESULT Akonadi::Collection moveTargetCollection() const;
+    [[nodiscard]] Akonadi::Collection moveTargetCollection() const;
 
     /**
      * Marks that the item's payload has been changed and needs to be written back.
@@ -56,7 +56,7 @@ public:
     /**
      * Returns whether the item's payload needs to be written back.
      */
-    Q_REQUIRED_RESULT bool needsPayloadStore() const;
+    [[nodiscard]] bool needsPayloadStore() const;
 
     /**
      * Marks that the item's flags has been changed and needs to be written back.
@@ -66,14 +66,14 @@ public:
     /**
      * Returns whether the item's flags needs to be written back.
      */
-    Q_REQUIRED_RESULT bool needsFlagStore() const;
+    [[nodiscard]] bool needsFlagStore() const;
 
     /** Returns true if the full payload was requested for the item or not.
      * Full payload is needed to change the headers or the body */
-    Q_REQUIRED_RESULT bool needsFullPayload() const;
+    [[nodiscard]] bool needsFullPayload() const;
 
     void setDeleteItem();
-    Q_REQUIRED_RESULT bool deleteItem() const;
+    [[nodiscard]] bool deleteItem() const;
 
 private:
     enum ItemContextAction { None = 0, PlayloadStore = 1, FlagStore = 2, DeleteItem = 4, FullPayload = 8 };

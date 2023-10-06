@@ -33,7 +33,7 @@ public:
                                              QWidget *parent = nullptr);
     ~FilterActionMissingFolderDialog() override;
 
-    Q_REQUIRED_RESULT Akonadi::Collection selectedCollection() const;
+    [[nodiscard]] Akonadi::Collection selectedCollection() const;
     static Akonadi::Collection::List potentialCorrectFolders(const QString &path, bool &exactPath);
 
 private:

@@ -20,7 +20,7 @@ public:
     explicit FilterconverttosievePurposeMenuWidget(QWidget *parentWidget, QObject *parent = nullptr);
     ~FilterconverttosievePurposeMenuWidget() override;
 
-    Q_REQUIRED_RESULT QByteArray text() override;
+    [[nodiscard]] QByteArray text() override;
     void setEditorWidget(TextCustomEditor::PlainTextEditor *editor);
 
 private:

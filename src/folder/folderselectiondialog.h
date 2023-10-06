@@ -43,12 +43,12 @@ public:
     ~FolderSelectionDialog() override;
 
     void setSelectionMode(QAbstractItemView::SelectionMode mode);
-    Q_REQUIRED_RESULT QAbstractItemView::SelectionMode selectionMode() const;
+    [[nodiscard]] QAbstractItemView::SelectionMode selectionMode() const;
 
-    Q_REQUIRED_RESULT Akonadi::Collection selectedCollection() const;
+    [[nodiscard]] Akonadi::Collection selectedCollection() const;
     void setSelectedCollection(const Akonadi::Collection &collection);
 
-    Q_REQUIRED_RESULT Akonadi::Collection::List selectedCollections() const;
+    [[nodiscard]] Akonadi::Collection::List selectedCollections() const;
 
 private Q_SLOTS:
     MAILCOMMON_NO_EXPORT void slotSelectionChanged();

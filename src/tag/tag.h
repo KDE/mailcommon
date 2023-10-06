@@ -27,15 +27,15 @@ public:
     using SaveFlags = QFlags<SaveFlag>;
 
     // Returns true if two tags are equal
-    Q_REQUIRED_RESULT bool operator==(const Tag &other) const;
+    [[nodiscard]] bool operator==(const Tag &other) const;
 
-    Q_REQUIRED_RESULT bool operator!=(const Tag &other) const;
+    [[nodiscard]] bool operator!=(const Tag &other) const;
 
     static Ptr createDefaultTag(const QString &name);
     // expects a tag with all attributes fetched
     static Ptr fromAkonadi(const Akonadi::Tag &tag);
 
-    Q_REQUIRED_RESULT Akonadi::Tag saveToAkonadi(SaveFlags saveFlags = SaveFlags(TextColor | BackgroundColor | Font)) const;
+    [[nodiscard]] Akonadi::Tag saveToAkonadi(SaveFlags saveFlags = SaveFlags(TextColor | BackgroundColor | Font)) const;
 
     // Compare, based on priority
     static bool compare(const Ptr &tag1, const Ptr &tag2);

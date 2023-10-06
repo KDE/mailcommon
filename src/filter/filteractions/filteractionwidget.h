@@ -72,7 +72,7 @@ public:
      * change during editing. Therefore the widget always creates a new
      * action object from the data in the combo box and returns that.
      */
-    Q_REQUIRED_RESULT MailCommon::FilterAction *action() const;
+    [[nodiscard]] MailCommon::FilterAction *action() const;
 
     void updateAddRemoveButton(bool addButtonEnabled, bool removeButtonEnabled);
 

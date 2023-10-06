@@ -23,7 +23,7 @@ class SelectThunderbirdFilterFilesWidget : public QWidget
 public:
     explicit SelectThunderbirdFilterFilesWidget(const QString &defaultSettingPath, QWidget *parent = nullptr);
     ~SelectThunderbirdFilterFilesWidget() override;
-    Q_REQUIRED_RESULT QStringList selectedFiles() const;
+    [[nodiscard]] QStringList selectedFiles() const;
 
     void setStartDir(const QUrl &);
 

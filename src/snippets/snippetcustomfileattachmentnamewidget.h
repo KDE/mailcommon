@@ -23,7 +23,7 @@ class MAILCOMMON_TESTS_EXPORT SnippetCustomFileAttachmentNameWidget : public QWi
 public:
     explicit SnippetCustomFileAttachmentNameWidget(QWidget *parent = nullptr);
     ~SnippetCustomFileAttachmentNameWidget() override;
-    Q_REQUIRED_RESULT QString result() const;
+    [[nodiscard]] QString result() const;
     void setText(const QString &str);
 
 private:

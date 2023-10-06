@@ -38,12 +38,12 @@ public:
     /**
      * @copydoc FilterAction::isEmpty
      */
-    Q_REQUIRED_RESULT bool isEmpty() const override;
+    [[nodiscard]] bool isEmpty() const override;
 
     /**
      * @copydoc FilterAction::createParamWidget
      */
-    Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
+    [[nodiscard]] QWidget *createParamWidget(QWidget *parent) const override;
 
     /**
      * @copydoc FilterAction::applyParamWidgetValue
@@ -68,21 +68,21 @@ public:
     /**
      * @copydoc FilterAction::argsAsString
      */
-    Q_REQUIRED_RESULT QString argsAsString() const override;
+    [[nodiscard]] QString argsAsString() const override;
 
-    Q_REQUIRED_RESULT bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
+    [[nodiscard]] bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
 
-    Q_REQUIRED_RESULT QString argsAsStringReal() const override;
+    [[nodiscard]] QString argsAsStringReal() const override;
 
     /**
      * @copydoc FilterAction::displayString
      */
-    Q_REQUIRED_RESULT QString displayString() const override;
+    [[nodiscard]] QString displayString() const override;
 
     /**
      * @copydoc FilterAction::folderRemoved
      */
-    Q_REQUIRED_RESULT bool folderRemoved(const Akonadi::Collection &aFolder, const Akonadi::Collection &aNewFolder) override;
+    [[nodiscard]] bool folderRemoved(const Akonadi::Collection &aFolder, const Akonadi::Collection &aNewFolder) override;
 
 protected:
     Akonadi::Collection mFolder;

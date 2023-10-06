@@ -26,8 +26,8 @@ public:
     explicit SnippetVariableDialog(const QString &variableName, QMap<QString, QString> *variables, QWidget *parent = nullptr);
     ~SnippetVariableDialog() override;
 
-    Q_REQUIRED_RESULT QString variableValue() const;
-    Q_REQUIRED_RESULT bool saveVariableIsChecked() const;
+    [[nodiscard]] QString variableValue() const;
+    [[nodiscard]] bool saveVariableIsChecked() const;
 
 private:
     void writeConfig();

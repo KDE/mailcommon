@@ -17,7 +17,7 @@ namespace MailCommon
 {
 class FolderRequester;
 struct MAILCOMMON_EXPORT CollectionExpirySettings {
-    Q_REQUIRED_RESULT bool isValid() const;
+    [[nodiscard]] bool isValid() const;
 
     bool expiryGloballyOn = false;
     bool expiryMessagesWithInvalidDate = false;
@@ -39,16 +39,16 @@ public:
     void load(const MailCommon::CollectionExpirySettings &settings);
     void save(Akonadi::Collection &collection, bool saveSettings, bool expireNow);
     void save(const CollectionExpirySettings &collectionExpirySettings, Akonadi::Collection &collection, bool saveSettings, bool expireNow);
-    Q_REQUIRED_RESULT CollectionExpirySettings settings() const;
+    [[nodiscard]] CollectionExpirySettings settings() const;
     void hideExpireNowButton();
-    Q_REQUIRED_RESULT static bool canHandle(const Akonadi::Collection &col);
+    [[nodiscard]] static bool canHandle(const Akonadi::Collection &col);
 Q_SIGNALS:
     void saveAndExpireRequested();
     void configChanged(bool changed = true);
 
 private:
-    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT bool validateExpireFolder(bool expireNow);
-    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT MailCommon::ExpireCollectionAttribute *assignFolderAttribute(Akonadi::Collection &collection, bool &expireNow);
+    [[nodiscard]] MAILCOMMON_NO_EXPORT bool validateExpireFolder(bool expireNow);
+    [[nodiscard]] MAILCOMMON_NO_EXPORT MailCommon::ExpireCollectionAttribute *assignFolderAttribute(Akonadi::Collection &collection, bool &expireNow);
     MAILCOMMON_NO_EXPORT void slotChanged();
     KPluralHandlingSpinBox *const mExpireReadMailSB;
     KPluralHandlingSpinBox *const mExpireUnreadMailSB;

@@ -50,13 +50,13 @@ public:
     /**
      * Returns whether the filter manager is in a usable state.
      */
-    Q_REQUIRED_RESULT bool isValid() const;
+    [[nodiscard]] bool isValid() const;
 
     /**
      * Checks for existing filters with the @p name and extend the
      * "name" to "name (i)" until no match is found for i=1..n
      */
-    Q_REQUIRED_RESULT QString createUniqueFilterName(const QString &name) const;
+    [[nodiscard]] QString createUniqueFilterName(const QString &name) const;
 
     /**
      * Returns the global filter action dictionary.
@@ -162,9 +162,9 @@ public:
      */
     void endUpdate();
 
-    Q_REQUIRED_RESULT QMap<QUrl, QString> tagList() const;
+    [[nodiscard]] QMap<QUrl, QString> tagList() const;
 
-    Q_REQUIRED_RESULT bool initialized() const;
+    [[nodiscard]] bool initialized() const;
 
     void cleanup();
 private Q_SLOTS:

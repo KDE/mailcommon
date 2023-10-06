@@ -26,40 +26,40 @@ public:
     explicit SnippetItem(bool isGroup = false, SnippetItem *parent = nullptr);
     ~SnippetItem();
 
-    Q_REQUIRED_RESULT bool isGroup() const;
+    [[nodiscard]] bool isGroup() const;
 
     void setName(const QString &name);
-    Q_REQUIRED_RESULT QString name() const;
+    [[nodiscard]] QString name() const;
 
     void setText(const QString &text);
-    Q_REQUIRED_RESULT QString text() const;
+    [[nodiscard]] QString text() const;
 
     void setKeyword(const QString &text);
-    Q_REQUIRED_RESULT QString keyword() const;
+    [[nodiscard]] QString keyword() const;
 
     void setKeySequence(const QString &sequence);
-    Q_REQUIRED_RESULT QString keySequence() const;
+    [[nodiscard]] QString keySequence() const;
 
     void appendChild(SnippetItem *child);
     void removeChild(SnippetItem *child);
-    Q_REQUIRED_RESULT SnippetItem *child(int row) const;
-    Q_REQUIRED_RESULT int childCount() const;
-    Q_REQUIRED_RESULT int row() const;
-    Q_REQUIRED_RESULT SnippetItem *parent() const;
+    [[nodiscard]] SnippetItem *child(int row) const;
+    [[nodiscard]] int childCount() const;
+    [[nodiscard]] int row() const;
+    [[nodiscard]] SnippetItem *parent() const;
 
-    Q_REQUIRED_RESULT QString subject() const;
+    [[nodiscard]] QString subject() const;
     void setSubject(const QString &subject);
 
-    Q_REQUIRED_RESULT QString to() const;
+    [[nodiscard]] QString to() const;
     void setTo(const QString &to);
 
-    Q_REQUIRED_RESULT QString cc() const;
+    [[nodiscard]] QString cc() const;
     void setCc(const QString &cc);
 
-    Q_REQUIRED_RESULT QString bcc() const;
+    [[nodiscard]] QString bcc() const;
     void setBcc(const QString &bcc);
 
-    Q_REQUIRED_RESULT QString attachment() const;
+    [[nodiscard]] QString attachment() const;
     void setAttachment(const QString &attachment);
 
 private:

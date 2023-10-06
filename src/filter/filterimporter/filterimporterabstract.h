@@ -22,8 +22,8 @@ class MAILCOMMON_EXPORT FilterImporterAbstract
 public:
     explicit FilterImporterAbstract(bool interactive = true);
     ~FilterImporterAbstract();
-    Q_REQUIRED_RESULT QList<MailFilter *> importFilter() const;
-    Q_REQUIRED_RESULT QStringList emptyFilter() const;
+    [[nodiscard]] QList<MailFilter *> importFilter() const;
+    [[nodiscard]] QStringList emptyFilter() const;
 
 protected:
     void appendFilter(MailCommon::MailFilter *filter);

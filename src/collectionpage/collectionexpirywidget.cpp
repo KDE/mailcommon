@@ -36,7 +36,7 @@ public:
         setSpecialValueText(i18n("Never"));
     }
 
-    Q_REQUIRED_RESULT QString textFromValue(int value) const override
+    [[nodiscard]] QString textFromValue(int value) const override
     {
         if (value == 0) {
             return i18n("Never");
@@ -44,7 +44,7 @@ public:
         return KPluralHandlingSpinBox::textFromValue(value);
     }
 
-    Q_REQUIRED_RESULT int valueFromText(const QString &text) const override
+    [[nodiscard]] int valueFromText(const QString &text) const override
     {
         return KPluralHandlingSpinBox::valueFromText(text);
     }

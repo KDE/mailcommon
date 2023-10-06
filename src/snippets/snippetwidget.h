@@ -25,47 +25,47 @@ public:
     ~SnippetWidget() override;
 
     void setName(const QString &name);
-    Q_REQUIRED_RESULT QString name() const;
+    [[nodiscard]] QString name() const;
 
     void setText(const QString &text);
-    Q_REQUIRED_RESULT QString text() const;
+    [[nodiscard]] QString text() const;
 
     void setKeySequence(const QKeySequence &sequence);
-    Q_REQUIRED_RESULT QKeySequence keySequence() const;
+    [[nodiscard]] QKeySequence keySequence() const;
 
     void setKeyword(const QString &keyword);
-    Q_REQUIRED_RESULT QString keyword() const;
+    [[nodiscard]] QString keyword() const;
 
     void setTo(const QString &keyword);
-    Q_REQUIRED_RESULT QString to() const;
+    [[nodiscard]] QString to() const;
 
     void setCc(const QString &keyword);
-    Q_REQUIRED_RESULT QString cc() const;
+    [[nodiscard]] QString cc() const;
 
     void setBcc(const QString &keyword);
-    Q_REQUIRED_RESULT QString bcc() const;
+    [[nodiscard]] QString bcc() const;
 
     void setGroupModel(QAbstractItemModel *model);
     void setGroupIndex(const QModelIndex &index);
 
-    Q_REQUIRED_RESULT QModelIndex groupIndex() const;
-    Q_REQUIRED_RESULT bool snippetIsValid() const;
+    [[nodiscard]] QModelIndex groupIndex() const;
+    [[nodiscard]] bool snippetIsValid() const;
 
     void setCheckActionCollections(const QList<KActionCollection *> &lst);
 
     void setGroupSelected(bool b);
 
-    Q_REQUIRED_RESULT bool isGroupSelected() const;
+    [[nodiscard]] bool isGroupSelected() const;
     void clear();
 
-    Q_REQUIRED_RESULT bool wasChanged() const;
+    [[nodiscard]] bool wasChanged() const;
     void setWasChanged(bool b);
 
     void setSubject(const QString &text);
-    Q_REQUIRED_RESULT QString subject() const;
+    [[nodiscard]] QString subject() const;
 
     void setAttachment(const QString &keyword);
-    Q_REQUIRED_RESULT QString attachment() const;
+    [[nodiscard]] QString attachment() const;
 
 Q_SIGNALS:
     void textChanged(const QString &str);

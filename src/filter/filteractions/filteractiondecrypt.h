@@ -20,14 +20,14 @@ public:
 
     static FilterAction *newAction();
 
-    Q_REQUIRED_RESULT QString displayString() const override;
+    [[nodiscard]] QString displayString() const override;
 
-    Q_REQUIRED_RESULT QString argsAsString() const override;
+    [[nodiscard]] QString argsAsString() const override;
     void argsFromString(const QString &argsStr) override;
 
-    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart() const override;
-    Q_REQUIRED_RESULT FilterAction::ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    [[nodiscard]] SearchRule::RequiredPart requiredPart() const override;
+    [[nodiscard]] FilterAction::ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
 
-    Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
+    [[nodiscard]] QWidget *createParamWidget(QWidget *parent) const override;
 };
 } // namespace MailCommon

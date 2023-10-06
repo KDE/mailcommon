@@ -37,12 +37,12 @@ public:
     /**
      * @copydoc FilterAction::isEmpty
      */
-    Q_REQUIRED_RESULT bool isEmpty() const override;
+    [[nodiscard]] bool isEmpty() const override;
 
     /**
      * @copydoc FilterAction::createParamWidget
      */
-    Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
+    [[nodiscard]] QWidget *createParamWidget(QWidget *parent) const override;
 
     /**
      * @copydoc FilterAction::applyParamWidgetValue
@@ -67,12 +67,12 @@ public:
     /**
      * @copydoc FilterAction::argsAsString
      */
-    Q_REQUIRED_RESULT QString argsAsString() const override;
+    [[nodiscard]] QString argsAsString() const override;
 
     /**
      * @copydoc FilterAction::displayString
      */
-    Q_REQUIRED_RESULT QString displayString() const override;
+    [[nodiscard]] QString displayString() const override;
 
 protected:
     QString mParameter;

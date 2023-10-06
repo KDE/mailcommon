@@ -29,36 +29,36 @@ public:
     ~SnippetDialog() override;
 
     void setName(const QString &name);
-    Q_REQUIRED_RESULT QString name() const;
+    [[nodiscard]] QString name() const;
 
     void setText(const QString &text);
-    Q_REQUIRED_RESULT QString text() const;
+    [[nodiscard]] QString text() const;
 
     void setSubject(const QString &text);
-    Q_REQUIRED_RESULT QString subject() const;
+    [[nodiscard]] QString subject() const;
 
     void setKeySequence(const QKeySequence &sequence);
-    Q_REQUIRED_RESULT QKeySequence keySequence() const;
+    [[nodiscard]] QKeySequence keySequence() const;
 
     void setKeyword(const QString &keyword);
-    Q_REQUIRED_RESULT QString keyword() const;
+    [[nodiscard]] QString keyword() const;
 
     void setTo(const QString &keyword);
-    Q_REQUIRED_RESULT QString to() const;
+    [[nodiscard]] QString to() const;
 
     void setCc(const QString &keyword);
-    Q_REQUIRED_RESULT QString cc() const;
+    [[nodiscard]] QString cc() const;
 
     void setBcc(const QString &keyword);
-    Q_REQUIRED_RESULT QString bcc() const;
+    [[nodiscard]] QString bcc() const;
 
     void setGroupModel(QAbstractItemModel *model);
 
     void setGroupIndex(const QModelIndex &index);
-    Q_REQUIRED_RESULT QModelIndex groupIndex() const;
+    [[nodiscard]] QModelIndex groupIndex() const;
 
     void setAttachment(const QString &keyword);
-    Q_REQUIRED_RESULT QString attachment() const;
+    [[nodiscard]] QString attachment() const;
 
 private:
     void slotTextChanged();

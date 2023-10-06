@@ -20,6 +20,6 @@ namespace MailCommon
  */
 namespace Util
 {
-Q_REQUIRED_RESULT bool ignoreNewMailInFolder(const Akonadi::Collection &collection);
+[[nodiscard]] bool ignoreNewMailInFolder(const Akonadi::Collection &collection);
 }
 }

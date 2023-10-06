@@ -25,9 +25,9 @@ public:
     static QString defaultFiltersSettingsPath();
 
 private:
-    Q_REQUIRED_RESULT MailCommon::MailFilter *parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter);
+    [[nodiscard]] MailCommon::MailFilter *parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter);
     void readStream(QTextStream &stream);
-    Q_REQUIRED_RESULT QString createUniqFilterName();
+    [[nodiscard]] QString createUniqFilterName();
     int mFilterCount = 0;
 };
 }

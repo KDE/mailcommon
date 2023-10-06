@@ -38,7 +38,7 @@ public:
     /**
      * @copydoc FilterAction::isEmpty
      */
-    Q_REQUIRED_RESULT bool isEmpty() const override;
+    [[nodiscard]] bool isEmpty() const override;
 
     /**
      * @copydoc FilterAction::argsFromString
@@ -48,12 +48,12 @@ public:
     /**
      * @copydoc FilterAction::argsAsString
      */
-    Q_REQUIRED_RESULT QString argsAsString() const override;
+    [[nodiscard]] QString argsAsString() const override;
 
     /**
      * @copydoc FilterAction::displayString
      */
-    Q_REQUIRED_RESULT QString displayString() const override;
+    [[nodiscard]] QString displayString() const override;
 
 protected:
     uint mParameter;

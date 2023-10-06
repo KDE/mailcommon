@@ -47,7 +47,7 @@ protected:
     void startDrag(Qt::DropActions) override;
 
     void mousePressEvent(QMouseEvent *e) override;
-    Q_REQUIRED_RESULT bool event(QEvent *e) override;
+    [[nodiscard]] bool event(QEvent *e) override;
 Q_SIGNALS:
     void newTabRequested(bool);
 

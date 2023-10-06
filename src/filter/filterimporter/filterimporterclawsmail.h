@@ -27,12 +27,12 @@ public:
     static QString defaultFiltersSettingsPath();
 
     // the returned mail filter instance will be owned by the caller, who must ensure to delete it at some point
-    Q_REQUIRED_RESULT MailFilter *parseLine(const QString &line);
+    [[nodiscard]] MailFilter *parseLine(const QString &line);
 
 private:
-    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString extractString(const QString &tmp, int &pos);
-    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString extractConditions(const QString &line, MailFilter *filter);
-    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QString extractActions(const QString &line, MailFilter *filter);
+    [[nodiscard]] MAILCOMMON_NO_EXPORT QString extractString(const QString &tmp, int &pos);
+    [[nodiscard]] MAILCOMMON_NO_EXPORT QString extractConditions(const QString &line, MailFilter *filter);
+    [[nodiscard]] MAILCOMMON_NO_EXPORT QString extractActions(const QString &line, MailFilter *filter);
     MAILCOMMON_NO_EXPORT void readStream(QTextStream &stream);
 };
 }

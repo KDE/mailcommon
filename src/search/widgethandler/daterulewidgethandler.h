@@ -39,7 +39,7 @@ public:
     bool update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const override;
 
 private:
-    Q_REQUIRED_RESULT SearchRule::Function currentFunction(const QStackedWidget *functionStack) const;
-    Q_REQUIRED_RESULT QString currentValue(const QStackedWidget *valueStack) const;
+    [[nodiscard]] SearchRule::Function currentFunction(const QStackedWidget *functionStack) const;
+    [[nodiscard]] QString currentValue(const QStackedWidget *valueStack) const;
 };
 }

@@ -63,7 +63,7 @@ public:
     /**
      * Returns whether the filter log is currently active.
      */
-    Q_REQUIRED_RESULT bool isLogging() const;
+    [[nodiscard]] bool isLogging() const;
 
     /**
      * Sets the maximum @p size of the log in bytes.
@@ -73,7 +73,7 @@ public:
     /**
      * Returns the maximum size of the log in bytes.
      */
-    Q_REQUIRED_RESULT long maxLogSize() const;
+    [[nodiscard]] long maxLogSize() const;
 
     /**
      * Sets whether a given content @p type will be @p enabled for logging.
@@ -83,7 +83,7 @@ public:
     /**
      * Returns whether the given content @p type is enabled for logging.
      */
-    Q_REQUIRED_RESULT bool isContentTypeEnabled(ContentType type) const;
+    [[nodiscard]] bool isContentTypeEnabled(ContentType type) const;
 
     /**
      * Adds the given log @p entry under the given content @p type to the log.
@@ -103,7 +103,7 @@ public:
     /**
      * Returns the list of log entries.
      */
-    Q_REQUIRED_RESULT QStringList logEntries() const;
+    [[nodiscard]] QStringList logEntries() const;
 
     /**
      * Saves the log to the file with the given @p fileName.

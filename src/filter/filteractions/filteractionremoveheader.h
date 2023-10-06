@@ -20,14 +20,14 @@ class FilterActionRemoveHeader : public FilterActionWithStringList
     Q_OBJECT
 public:
     explicit FilterActionRemoveHeader(QObject *parent = nullptr);
-    Q_REQUIRED_RESULT ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
-    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart() const override;
-    Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
+    [[nodiscard]] ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
+    [[nodiscard]] SearchRule::RequiredPart requiredPart() const override;
+    [[nodiscard]] QWidget *createParamWidget(QWidget *parent) const override;
     void setParamWidgetValue(QWidget *paramWidget) const override;
-    Q_REQUIRED_RESULT QStringList sieveRequires() const override;
-    Q_REQUIRED_RESULT QString sieveCode() const override;
+    [[nodiscard]] QStringList sieveRequires() const override;
+    [[nodiscard]] QString sieveCode() const override;
 
     static FilterAction *newAction();
-    Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
+    [[nodiscard]] QString informationAboutNotValidAction() const override;
 };
 }

@@ -19,7 +19,7 @@ public:
     explicit SnippetCustomFileAttachmentNameDialog(QWidget *parent = nullptr);
     ~SnippetCustomFileAttachmentNameDialog() override;
 
-    Q_REQUIRED_RESULT QString result() const;
+    [[nodiscard]] QString result() const;
 
     void setText(const QString &str);
 

@@ -34,7 +34,7 @@ public:
     ~SnippetSelectAttachmentWidget() override;
 
     void setAttachments(const QStringList &lst);
-    Q_REQUIRED_RESULT QStringList attachments() const;
+    [[nodiscard]] QStringList attachments() const;
 
 private:
     SnippetSelectorWidget *const mEditor;

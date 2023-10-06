@@ -27,7 +27,7 @@ public:
     explicit FilterSelectionDialog(QWidget *parent = nullptr);
     ~FilterSelectionDialog() override;
     void setFilters(const QList<MailFilter *> &filters);
-    Q_REQUIRED_RESULT QList<MailFilter *> selectedFilters() const;
+    [[nodiscard]] QList<MailFilter *> selectedFilters() const;
 
 public Q_SLOTS:
     void slotUnselectAllButton();

@@ -29,19 +29,19 @@ public:
 
     static FilterAction *newAction();
 
-    Q_REQUIRED_RESULT bool isEmpty() const override;
+    [[nodiscard]] bool isEmpty() const override;
 
     void argsFromString(const QString &argsStr) override;
-    Q_REQUIRED_RESULT QString argsAsString() const override;
-    Q_REQUIRED_RESULT QString displayString() const override;
-    Q_REQUIRED_RESULT bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
+    [[nodiscard]] QString argsAsString() const override;
+    [[nodiscard]] QString displayString() const override;
+    [[nodiscard]] bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
 
-    Q_REQUIRED_RESULT QWidget *createParamWidget(QWidget *parent) const override;
+    [[nodiscard]] QWidget *createParamWidget(QWidget *parent) const override;
     void applyParamWidgetValue(QWidget *paramWidget) override;
     void setParamWidgetValue(QWidget *paramWidget) const override;
     void clearParamWidget(QWidget *paramWidget) const override;
 
-    Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
+    [[nodiscard]] QString informationAboutNotValidAction() const override;
 
 private:
     void slotTagListingFinished();

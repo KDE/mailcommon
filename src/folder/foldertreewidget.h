@@ -80,25 +80,25 @@ public:
 
     void setSelectionMode(QAbstractItemView::SelectionMode mode);
 
-    Q_REQUIRED_RESULT QAbstractItemView::SelectionMode selectionMode() const;
+    [[nodiscard]] QAbstractItemView::SelectionMode selectionMode() const;
 
-    Q_REQUIRED_RESULT QItemSelectionModel *selectionModel() const;
+    [[nodiscard]] QItemSelectionModel *selectionModel() const;
 
-    Q_REQUIRED_RESULT QModelIndex currentIndex() const;
+    [[nodiscard]] QModelIndex currentIndex() const;
 
-    Q_REQUIRED_RESULT Akonadi::Collection selectedCollection() const;
+    [[nodiscard]] Akonadi::Collection selectedCollection() const;
 
-    Q_REQUIRED_RESULT Akonadi::Collection::List selectedCollections() const;
+    [[nodiscard]] Akonadi::Collection::List selectedCollections() const;
 
-    Q_REQUIRED_RESULT FolderTreeView *folderTreeView() const;
+    [[nodiscard]] FolderTreeView *folderTreeView() const;
 
-    Q_REQUIRED_RESULT Akonadi::StatisticsProxyModel *statisticsProxyModel() const;
+    [[nodiscard]] Akonadi::StatisticsProxyModel *statisticsProxyModel() const;
 
-    Q_REQUIRED_RESULT FolderTreeWidgetProxyModel *folderTreeWidgetProxyModel() const;
+    [[nodiscard]] FolderTreeWidgetProxyModel *folderTreeWidgetProxyModel() const;
 
-    Q_REQUIRED_RESULT EntityCollectionOrderProxyModel *entityOrderProxy() const;
+    [[nodiscard]] EntityCollectionOrderProxyModel *entityOrderProxy() const;
 
-    Q_REQUIRED_RESULT QLineEdit *filterFolderLineEdit() const;
+    [[nodiscard]] QLineEdit *filterFolderLineEdit() const;
     void applyFilter(const QString &);
     void clearFilter();
 
@@ -111,7 +111,7 @@ public:
 protected:
     void changeToolTipsPolicyConfig(ToolTipDisplayPolicy);
 
-    Q_REQUIRED_RESULT bool event(QEvent *e) override;
+    [[nodiscard]] bool event(QEvent *e) override;
 
 protected Q_SLOTS:
     void slotChangeTooltipsPolicy(FolderTreeWidget::ToolTipDisplayPolicy);

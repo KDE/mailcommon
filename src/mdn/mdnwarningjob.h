@@ -34,22 +34,22 @@ public:
 
     void start();
 
-    Q_REQUIRED_RESULT const Akonadi::Item &item() const;
+    [[nodiscard]] const Akonadi::Item &item() const;
     void setItem(const Akonadi::Item &newItem);
 
-    Q_REQUIRED_RESULT bool canStart() const;
+    [[nodiscard]] bool canStart() const;
 
-    Q_REQUIRED_RESULT ResponseMDN response() const;
+    [[nodiscard]] ResponseMDN response() const;
     void setResponse(ResponseMDN newResponse);
 
-    Q_REQUIRED_RESULT KMime::MDN::SendingMode sendingMode() const;
+    [[nodiscard]] KMime::MDN::SendingMode sendingMode() const;
     void setSendingMode(KMime::MDN::SendingMode newSendingMode);
 
 Q_SIGNALS:
     void finished();
 
 private:
-    Q_REQUIRED_RESULT MAILCOMMON_NO_EXPORT QPair<bool, KMime::MDN::SendingMode> modifyItem(const KMime::Message::Ptr &msg);
+    [[nodiscard]] MAILCOMMON_NO_EXPORT QPair<bool, KMime::MDN::SendingMode> modifyItem(const KMime::Message::Ptr &msg);
     Akonadi::Item mItem;
     ResponseMDN mResponse = Unknown;
     KMime::MDN::SendingMode mSendingMode = KMime::MDN::SendingMode::SentAutomatically;

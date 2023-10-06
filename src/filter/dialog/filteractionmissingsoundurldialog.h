@@ -16,7 +16,7 @@ class FilterActionMissingSoundUrlDialog : public QDialog
 public:
     explicit FilterActionMissingSoundUrlDialog(const QString &filtername, const QString &argStr, QWidget *parent = nullptr);
     ~FilterActionMissingSoundUrlDialog() override;
-    Q_REQUIRED_RESULT QString soundUrl() const;
+    [[nodiscard]] QString soundUrl() const;
 
 private:
     void readConfig();

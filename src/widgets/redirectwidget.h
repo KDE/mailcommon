@@ -24,7 +24,7 @@ public:
     ~RedirectWidget() override;
 
     void setFocus();
-    Q_REQUIRED_RESULT QString resend();
+    [[nodiscard]] QString resend();
 
 Q_SIGNALS:
     void addressChanged(const QString &);

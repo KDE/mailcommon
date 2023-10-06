@@ -16,15 +16,15 @@ public:
     InvalidFilterInfo();
     InvalidFilterInfo(const QString &name, const QString &information);
 
-    Q_REQUIRED_RESULT QString information() const;
+    [[nodiscard]] QString information() const;
 
-    Q_REQUIRED_RESULT QString name() const;
+    [[nodiscard]] QString name() const;
 
     void setName(const QString &name);
 
     void setInformation(const QString &information);
 
-    Q_REQUIRED_RESULT bool operator==(const InvalidFilterInfo &other) const;
+    [[nodiscard]] bool operator==(const InvalidFilterInfo &other) const;
 
 private:
     QString mName;

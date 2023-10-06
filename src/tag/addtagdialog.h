@@ -26,8 +26,8 @@ public:
     ~AddTagDialog() override;
 
     void setTags(const QList<MailCommon::Tag::Ptr> &tags);
-    Q_REQUIRED_RESULT QString label() const;
-    Q_REQUIRED_RESULT Akonadi::Tag tag() const;
+    [[nodiscard]] QString label() const;
+    [[nodiscard]] Akonadi::Tag tag() const;
 
 private:
     MAILCOMMON_NO_EXPORT void slotSave();

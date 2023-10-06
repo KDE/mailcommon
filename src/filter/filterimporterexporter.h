@@ -65,7 +65,7 @@ public:
      * Imports filters. Ask the user where to import them from
      * and which filters to import.
      */
-    Q_REQUIRED_RESULT QList<MailFilter *>
+    [[nodiscard]] QList<MailFilter *>
     importFilters(bool &canceled, FilterImporterExporter::FilterType type = FilterImporterExporter::KMailFilter, const QString &filename = QString());
 
     /**

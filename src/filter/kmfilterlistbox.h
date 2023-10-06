@@ -49,7 +49,7 @@ public:
     ~QListWidgetFilterItem() override;
 
     void setFilter(MailCommon::MailFilter *filter);
-    Q_REQUIRED_RESULT MailCommon::MailFilter *filter() const;
+    [[nodiscard]] MailCommon::MailFilter *filter() const;
 
 private:
     MailCommon::MailFilter *mFilter = nullptr;

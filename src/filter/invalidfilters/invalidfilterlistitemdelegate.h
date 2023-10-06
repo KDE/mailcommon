@@ -17,11 +17,11 @@ public:
     explicit InvalidFilterListItemDelegate(QAbstractItemView *itemView, QObject *parent = nullptr);
     ~InvalidFilterListItemDelegate() override;
 
-    Q_REQUIRED_RESULT QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override;
+    [[nodiscard]] QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override;
 
     void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override;
 
-    Q_REQUIRED_RESULT QList<QWidget *> createItemWidgets(const QModelIndex &) const override;
+    [[nodiscard]] QList<QWidget *> createItemWidgets(const QModelIndex &) const override;
     void updateItemWidgets(const QList<QWidget *> &widgets, const QStyleOptionViewItem &option, const QPersistentModelIndex &index) const override;
 Q_SIGNALS:
     void showDetails(const QString &details);

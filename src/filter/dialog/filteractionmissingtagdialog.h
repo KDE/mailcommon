@@ -19,7 +19,7 @@ public:
                                           const QString &argsStr,
                                           QWidget *parent = nullptr);
     ~FilterActionMissingTagDialog() override;
-    Q_REQUIRED_RESULT QString selectedTag() const;
+    [[nodiscard]] QString selectedTag() const;
 
 private:
     void slotAddTag();

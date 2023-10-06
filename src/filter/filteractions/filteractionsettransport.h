@@ -21,7 +21,7 @@ class FilterActionSetTransport : public FilterAction
 public:
     explicit FilterActionSetTransport(QObject *parent = nullptr);
     ReturnCode process(ItemContext &context, bool applyOnOutbound) const override;
-    Q_REQUIRED_RESULT SearchRule::RequiredPart requiredPart() const override;
+    [[nodiscard]] SearchRule::RequiredPart requiredPart() const override;
     static FilterAction *newAction();
     QWidget *createParamWidget(QWidget *parent) const override;
     /**
@@ -39,7 +39,7 @@ public:
      */
     void clearParamWidget(QWidget *paramWidget) const override;
 
-    Q_REQUIRED_RESULT bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
+    [[nodiscard]] bool argsFromStringInteractive(const QString &argsStr, const QString &filterName) override;
 
     /**
      * @copydoc FilterAction::argsFromString
@@ -48,17 +48,17 @@ public:
     /**
      * @copydoc FilterAction::isEmpty
      */
-    Q_REQUIRED_RESULT bool isEmpty() const override;
+    [[nodiscard]] bool isEmpty() const override;
     /**
      * @copydoc FilterAction::argsAsString
      */
-    Q_REQUIRED_RESULT QString argsAsString() const override;
+    [[nodiscard]] QString argsAsString() const override;
 
     /**
      * @copydoc FilterAction::displayString
      */
-    Q_REQUIRED_RESULT QString displayString() const override;
-    Q_REQUIRED_RESULT QString informationAboutNotValidAction() const override;
+    [[nodiscard]] QString displayString() const override;
+    [[nodiscard]] QString informationAboutNotValidAction() const override;
 
 protected:
     int mParameter;

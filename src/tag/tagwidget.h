@@ -31,21 +31,21 @@ public:
 
     void recordTagSettings(MailCommon::Tag::Ptr tag);
 
-    Q_REQUIRED_RESULT QLineEdit *tagNameLineEdit() const;
-    Q_REQUIRED_RESULT QCheckBox *textColorCheck() const;
-    Q_REQUIRED_RESULT QCheckBox *textFontCheck() const;
-    Q_REQUIRED_RESULT QCheckBox *backgroundColorCheck() const;
-    Q_REQUIRED_RESULT QCheckBox *inToolBarCheck() const;
+    [[nodiscard]] QLineEdit *tagNameLineEdit() const;
+    [[nodiscard]] QCheckBox *textColorCheck() const;
+    [[nodiscard]] QCheckBox *textFontCheck() const;
+    [[nodiscard]] QCheckBox *backgroundColorCheck() const;
+    [[nodiscard]] QCheckBox *inToolBarCheck() const;
 
-    Q_REQUIRED_RESULT KColorCombo *textColorCombo() const;
-    Q_REQUIRED_RESULT KColorCombo *backgroundColorCombo() const;
+    [[nodiscard]] KColorCombo *textColorCombo() const;
+    [[nodiscard]] KColorCombo *backgroundColorCombo() const;
 
-    Q_REQUIRED_RESULT QCheckBox *textBoldCheck() const;
-    Q_REQUIRED_RESULT QCheckBox *textItalicCheck() const;
+    [[nodiscard]] QCheckBox *textBoldCheck() const;
+    [[nodiscard]] QCheckBox *textItalicCheck() const;
 
-    Q_REQUIRED_RESULT KIconButton *iconButton() const;
+    [[nodiscard]] KIconButton *iconButton() const;
 
-    Q_REQUIRED_RESULT KKeySequenceWidget *keySequenceWidget() const;
+    [[nodiscard]] KKeySequenceWidget *keySequenceWidget() const;
 
     void setTagTextColor(const QColor &color);
     void setTagBackgroundColor(const QColor &color);

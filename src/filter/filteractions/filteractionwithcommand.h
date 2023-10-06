@@ -50,8 +50,8 @@ public:
      * the name of a tempfile holding the n'th message part, with n=0
      * meaning the body of the message.
      */
-    Q_REQUIRED_RESULT virtual QString substituteCommandLineArgsFor(const KMime::Message::Ptr &aMsg, QList<QTemporaryFile *> &aTempFileList) const;
+    [[nodiscard]] virtual QString substituteCommandLineArgsFor(const KMime::Message::Ptr &aMsg, QList<QTemporaryFile *> &aTempFileList) const;
 
-    Q_REQUIRED_RESULT virtual ReturnCode genericProcess(ItemContext &context, bool filtering) const;
+    [[nodiscard]] virtual ReturnCode genericProcess(ItemContext &context, bool filtering) const;
 };
 }

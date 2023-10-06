@@ -20,7 +20,7 @@ class FilterActionMissingTransportDialog : public QDialog
 public:
     explicit FilterActionMissingTransportDialog(const QString &filtername, QWidget *parent = nullptr);
     ~FilterActionMissingTransportDialog() override;
-    Q_REQUIRED_RESULT int selectedTransport() const;
+    [[nodiscard]] int selectedTransport() const;
 
 private:
     void writeConfig();

@@ -26,15 +26,15 @@ class RuleWidgetHandler
 public:
     virtual ~RuleWidgetHandler() = default;
 
-    Q_REQUIRED_RESULT virtual QWidget *createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isAkonadiSearch) const = 0;
-    Q_REQUIRED_RESULT virtual QWidget *createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const = 0;
-    Q_REQUIRED_RESULT virtual MailCommon::SearchRule::Function function(const QByteArray &field, const QStackedWidget *functionStack) const = 0;
-    Q_REQUIRED_RESULT virtual QString value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const = 0;
-    Q_REQUIRED_RESULT virtual QString prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const = 0;
-    Q_REQUIRED_RESULT virtual bool handlesField(const QByteArray &field) const = 0;
+    [[nodiscard]] virtual QWidget *createFunctionWidget(int number, QStackedWidget *functionStack, const QObject *receiver, bool isAkonadiSearch) const = 0;
+    [[nodiscard]] virtual QWidget *createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const = 0;
+    [[nodiscard]] virtual MailCommon::SearchRule::Function function(const QByteArray &field, const QStackedWidget *functionStack) const = 0;
+    [[nodiscard]] virtual QString value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const = 0;
+    [[nodiscard]] virtual QString prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const = 0;
+    [[nodiscard]] virtual bool handlesField(const QByteArray &field) const = 0;
     virtual void reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const = 0;
-    Q_REQUIRED_RESULT virtual bool
+    [[nodiscard]] virtual bool
     setRule(QStackedWidget *functionStack, QStackedWidget *valueStack, const MailCommon::SearchRule::Ptr rule, bool isAkonadiSearch) const = 0;
-    Q_REQUIRED_RESULT virtual bool update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const = 0;
+    [[nodiscard]] virtual bool update(const QByteArray &field, QStackedWidget *functionStack, QStackedWidget *valueStack) const = 0;
 };
 }
