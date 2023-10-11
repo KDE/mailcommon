@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2023-09-16 10:09\n"
+"PO-Revision-Date: 2023-10-10 14:25\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/mailcommon/libmailcommon.pot\n"
-"X-Crowdin-File-ID: 3799\n"
+"X-Crowdin-File: /kf6-trunk/messages/mailcommon/libmailcommon.pot\n"
+"X-Crowdin-File-ID: 45535\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -383,10 +383,9 @@ msgid " (default)"
 msgstr " (默认)"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgid "Thunderbird File (*.dat)"
-msgstr "Thunderbird 过滤器"
+msgstr ""
 
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
