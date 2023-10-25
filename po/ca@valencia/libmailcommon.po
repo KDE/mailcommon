@@ -158,11 +158,11 @@ msgid ""
 "spam folder.</p></qt>"
 msgstr ""
 "<qt><p>Si esta opció està habilitada, se vos notificarà de missatges nous/"
-"sense llegir en esta carpeta. D'altra banda, anant fins a la carpeta següent/"
-"anterior amb missatges sense llegir es pararà en esta carpeta.</p><p> "
+"sense llegir en esta carpeta. D'altra banda, anant fins a la carpeta següent "
+"o anterior amb missatges sense llegir es pararà en esta carpeta.</p><p> "
 "Desactiveu esta opció si no voleu ser notificat sobre els correus nous/sense "
-"llegir en esta carpeta i si voleu que esta carpeta s'ometa en anar fins a la "
-"carpeta següent/anterior amb missatges sense llegir. Açò és útil per a "
+"llegir en esta carpeta i si voleu que esta carpeta s'ometa en anar cap a la "
+"carpeta següent o anterior amb missatges sense llegir. Açò és útil per a "
 "ignorar qualsevol correu nou/sense llegir en la paperera i en la carpeta de "
 "correu brossa.</p></qt>"
 
@@ -1793,7 +1793,8 @@ msgstr "Manualment, arrossegant i deixant anar"
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr ""
-"<qt>Voleu anar al següent missatge sense llegir en la carpeta <b>%1</b>?</qt>"
+"<qt>Voleu anar fins al següent missatge sense llegir en la carpeta <b>%1</b>?"
+"</qt>"
 
 #: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
