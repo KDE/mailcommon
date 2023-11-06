@@ -91,7 +91,7 @@ void FolderTreeView::writeConfig()
         return;
     }
 
-    KConfigGroup myGroup(KernelIf->config(), QLatin1String("MainFolderView"));
+    KConfigGroup myGroup(KernelIf->config(), QStringLiteral("MainFolderView"));
     myGroup.writeEntry("IconSize", iconSize().width());
     myGroup.writeEntry("ToolTipDisplayPolicy", (int)mToolTipDisplayPolicy);
     myGroup.writeEntry("SortingPolicy", (int)mSortingPolicy);
@@ -99,7 +99,7 @@ void FolderTreeView::writeConfig()
 
 void FolderTreeView::readConfig()
 {
-    KConfigGroup myGroup(KernelIf->config(), QLatin1String("MainFolderView"));
+    KConfigGroup myGroup(KernelIf->config(), QStringLiteral("MainFolderView"));
     int iIconSize = myGroup.readEntry("IconSize", iconSize().width());
     if ((iIconSize < 16) || (iIconSize > 32)) {
         iIconSize = 22;

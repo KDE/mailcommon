@@ -107,7 +107,7 @@ FolderTreeWidget::FolderTreeWidget(QWidget *parent,
     d->entityOrderProxy = new EntityCollectionOrderProxyModel(this);
     d->entityOrderProxy->setSourceModel(d->readableproxy);
     d->entityOrderProxy->setFilterCaseSensitivity(Qt::CaseInsensitive);
-    KConfigGroup grp(KernelIf->config(), QLatin1String("CollectionTreeOrder"));
+    KConfigGroup grp(KernelIf->config(), QStringLiteral("CollectionTreeOrder"));
     d->entityOrderProxy->setOrderConfig(grp);
     d->folderTreeView->setModel(d->entityOrderProxy);
 
@@ -252,7 +252,7 @@ void FolderTreeWidget::readConfig()
     d->readableproxy->setWarningThreshold(SettingsIf->closeToQuotaThreshold());
     d->readableproxy->readConfig();
 
-    KConfigGroup readerConfig(KernelIf->config(), QLatin1String("AccountOrder"));
+    KConfigGroup readerConfig(KernelIf->config(), QStringLiteral("AccountOrder"));
     QStringList listOrder;
     if (readerConfig.readEntry("EnableAccountOrder", true)) {
         listOrder = readerConfig.readEntry("order", QStringList());

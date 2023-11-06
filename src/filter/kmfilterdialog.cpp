@@ -352,7 +352,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     connect(mActionLister, qOverload<QWidget *>(&FilterActionWidgetLister::widgetRemoved), this, &KMFilterDialog::slotDialogUpdated);
     connect(mActionLister, &MailCommon::FilterActionWidgetLister::filterModified, this, &KMFilterDialog::slotDialogUpdated);
     connect(mActionLister, &MailCommon::FilterActionWidgetLister::clearWidgets, this, &KMFilterDialog::slotDialogUpdated);
-    KConfigGroup myGroup(KernelIf->config(), QLatin1String("Geometry"));
+    KConfigGroup myGroup(KernelIf->config(), QStringLiteral("Geometry"));
     const QSize size = myGroup.readEntry("filterDialogSize", QSize());
     if (size != QSize()) {
         resize(size);
@@ -465,7 +465,7 @@ void KMFilterDialog::slotFetchItemsForFolderDone(KJob *job)
 void KMFilterDialog::slotSaveSize()
 {
     mFilterList->slotAccepted();
-    KConfigGroup myGroup(KernelIf->config(), QLatin1String("Geometry"));
+    KConfigGroup myGroup(KernelIf->config(), QStringLiteral("Geometry"));
     myGroup.writeEntry("filterDialogSize", size());
     myGroup.sync();
 }
