@@ -69,14 +69,14 @@ void InvalidFilterDialog::readConfig()
 {
     create(); // ensure a window is created
     windowHandle()->resize(QSize(400, 500));
-    KConfigGroup group(KSharedConfig::openStateConfig(), myInvalidFilterDialogName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1String(myInvalidFilterDialogName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void InvalidFilterDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), myInvalidFilterDialogName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1String(myInvalidFilterDialogName));
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
 }

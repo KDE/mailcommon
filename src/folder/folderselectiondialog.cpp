@@ -241,7 +241,7 @@ static const char myFilterConvertToSieveResultDialogGroupName[] = "FolderSelecti
 
 void FolderSelectionDialog::readConfig()
 {
-    KConfigGroup group(KernelIf->config(), myFilterConvertToSieveResultDialogGroupName);
+    KConfigGroup group(KernelIf->config(), QLatin1String(myFilterConvertToSieveResultDialogGroupName));
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -258,7 +258,7 @@ void FolderSelectionDialog::readConfig()
 
 void FolderSelectionDialog::writeConfig()
 {
-    KConfigGroup group(KernelIf->config(), myFilterConvertToSieveResultDialogGroupName);
+    KConfigGroup group(KernelIf->config(), QLatin1String(myFilterConvertToSieveResultDialogGroupName));
     group.writeEntry("Size", size());
 
     if (d->mUseGlobalSettings) {

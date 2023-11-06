@@ -93,7 +93,7 @@ void FavoriteProxyTest::testReordering()
         labels << folderName;
     }
 
-    KConfigGroup configGroup(KSharedConfig::openConfig(), "favoritecollectionsmodeltest");
+    KConfigGroup configGroup(KSharedConfig::openConfig(), QLatin1String("favoritecollectionsmodeltest"));
     configGroup.writeEntry("FavoriteCollectionIds", collectionIds);
     configGroup.writeEntry("FavoriteCollectionLabels", labels);
     configGroup.writeEntry("0", order);

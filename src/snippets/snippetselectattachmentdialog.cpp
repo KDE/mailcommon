@@ -62,14 +62,14 @@ void SnippetSelectAttachmentDialog::readConfig()
 {
     create(); // ensure a window is created
     windowHandle()->resize(QSize(300, 350));
-    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetSelectAttachmentDialogGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1String(mySnippetSelectAttachmentDialogGroupName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void SnippetSelectAttachmentDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), mySnippetSelectAttachmentDialogGroupName);
+    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1String(mySnippetSelectAttachmentDialogGroupName));
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
 }
