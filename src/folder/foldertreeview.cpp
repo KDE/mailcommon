@@ -28,12 +28,14 @@ using namespace MailCommon;
 FolderTreeView::FolderTreeView(QWidget *parent, bool showUnreadCount)
     : Akonadi::EntityTreeView(parent)
 {
+    setProperty("_breeze_force_frame", false);
     init(showUnreadCount);
 }
 
 FolderTreeView::FolderTreeView(KXMLGUIClient *xmlGuiClient, QWidget *parent, bool showUnreadCount)
     : Akonadi::EntityTreeView(xmlGuiClient, parent)
 {
+    setProperty("_breeze_force_frame", false);
     init(showUnreadCount);
 }
 
