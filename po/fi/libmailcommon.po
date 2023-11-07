@@ -1,6 +1,6 @@
 # Copyright © 2011, 2012 This_file_is_part_of_KDE
 # This file is distributed under the same license as the kdepim package.
-# Tommi Nieminen <translator@legisign.org>, 2011, 2012, 2013, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
+# Tommi Nieminen <translator@legisign.org>, 2011, 2012, 2013, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2012, 2013, 2014, 2015.
 # Jiri Grönroos <jiri.gronroos+kde@iki.fi>, 2012.
 #
@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2022-07-11 18:40+0300\n"
+"POT-Creation-Date: 2023-11-07 02:43+0000\n"
+"PO-Revision-Date: 2023-10-12 18:30+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-12-01 22:25:11+0000\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -426,10 +426,9 @@ msgid " (default)"
 msgstr " (oletus)"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgid "Thunderbird File (*.dat)"
-msgstr "Thunderbird-suodattimet"
+msgstr "Thunderbird-tiedosto (*.dat)"
 
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
@@ -1725,69 +1724,69 @@ msgstr "Ei voitu luoda kansiota: %1"
 msgid "Folder creation failed"
 msgstr "Kansion luominen epäonnistui"
 
-#: folder/foldertreeview.cpp:128
+#: folder/foldertreeview.cpp:130
 #, kde-format
 msgid "View Columns"
 msgstr "Näytä sarakkeet"
 
-#: folder/foldertreeview.cpp:138
+#: folder/foldertreeview.cpp:140
 #, kde-format
 msgid "Icon Size"
 msgstr "Kuvakkeen koko"
 
-#: folder/foldertreeview.cpp:154
+#: folder/foldertreeview.cpp:156
 #, kde-format
 msgid "Display Tooltips"
 msgstr "Näytä työkaluvihjeet"
 
-#: folder/foldertreeview.cpp:158
+#: folder/foldertreeview.cpp:160
 #, kde-format
 msgctxt "@action:inmenu Always display tooltips"
 msgid "Always"
 msgstr "Aina"
 
-#: folder/foldertreeview.cpp:165
+#: folder/foldertreeview.cpp:167
 #, kde-format
 msgctxt "@action:inmenu Never display tooltips."
 msgid "Never"
 msgstr "Ei koskaan"
 
-#: folder/foldertreeview.cpp:172
+#: folder/foldertreeview.cpp:174
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Sort Items"
 msgstr "Lajittele tietueet"
 
-#: folder/foldertreeview.cpp:176
+#: folder/foldertreeview.cpp:178
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
 msgstr "Automaattisesti nykyisen sarakkeen mukaan"
 
-#: folder/foldertreeview.cpp:183
+#: folder/foldertreeview.cpp:185
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
 msgstr "Käsin vetämällä ja pudottamalla"
 
-#: folder/foldertreeview.cpp:473 folder/foldertreeview.cpp:515
+#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr ""
 "<qt>Siirrytäänkö seuraavaan lukematta olevaan viestiin kansiossa <b>%1</b>?</"
 "qt>"
 
-#: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
+#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
 msgid "Go to Next Unread Message"
 msgstr "Siirry seuraavaan lukematta olevaan viestiin"
 
-#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
+#: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
 #, kde-format
 msgid "Go To"
 msgstr "Siirry"
 
-#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
+#: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
 #, kde-format
 msgid "Do Not Go To"
 msgstr "Älä siirry"
