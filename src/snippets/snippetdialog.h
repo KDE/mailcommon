@@ -67,7 +67,6 @@ private:
     void writeConfig();
     void readConfig();
 
-    KActionCollection *mActionCollection = nullptr;
     SnippetWidget *const mSnippetWidget;
     QPushButton *mOkButton = nullptr;
     bool mInGroupMode = false;

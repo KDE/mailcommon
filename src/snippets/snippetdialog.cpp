@@ -27,7 +27,6 @@ static const char mySnippetDialogConfigGroupName[] = "SnippetDialog";
 }
 SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMode, QWidget *parent)
     : QDialog(parent)
-    , mActionCollection(actionCollection)
     , mSnippetWidget(new SnippetWidget(this))
     , mInGroupMode(inGroupMode)
 {

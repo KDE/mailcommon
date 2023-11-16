@@ -38,7 +38,6 @@ private:
     MAILCOMMON_NO_EXPORT void slotThemeCheckboxChanged();
     MAILCOMMON_NO_EXPORT void slotAggregationCheckboxChanged();
     QSharedPointer<MailCommon::FolderSettings> mFolderCollection;
-    QCheckBox *mIconsCheckBox = nullptr;
     QComboBox *mShowSenderReceiverComboBox = nullptr;
     QCheckBox *mUseDefaultAggregationCheckBox = nullptr;
     MessageList::Utils::AggregationComboBox *mAggregationComboBox = nullptr;
