@@ -374,7 +374,6 @@ PRIVATE
 )
 
 target_link_libraries(KPim6MailCommon PRIVATE QGpgmeQt6)
-target_link_libraries(KPim6MailCommon PRIVATE Qt6::Core5Compat)
 
 
 target_include_directories(KPim6MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/MailCommon/>")

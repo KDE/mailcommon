@@ -51,7 +51,6 @@ find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets DBus Xml)
 set(GPGMEPP_LIB_VERSION "1.16.0")
 find_package(Gpgmepp ${GPGMEPP_LIB_VERSION} CONFIG REQUIRED)
 find_package(QGpgmeQt6 ${GPGME_REQUIRED_VERSION} CONFIG REQUIRED)
-find_package(Qt6Core5Compat)
 
 find_package(KF6Archive ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6Completion ${KF_MIN_VERSION} CONFIG REQUIRED)
