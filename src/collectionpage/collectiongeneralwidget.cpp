@@ -19,7 +19,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     : QWidget(parent)
 {
     auto topLayout = new QFormLayout(this);
-    topLayout->setObjectName(QStringLiteral("topLayout"));
+    topLayout->setObjectName(QLatin1StringView("topLayout"));
     topLayout->setContentsMargins({});
     // should new mail in this folder be ignored?
     mNotifyOnNewMailCheckBox = new QCheckBox(i18n("Act on new/unread mail in this folder"), this);

@@ -43,7 +43,7 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
     : QDialog(parent)
     , d(new FolderSelectionDialogPrivate())
 {
-    setObjectName(QStringLiteral("folder dialog"));
+    setObjectName(QLatin1StringView("folder dialog"));
 
     d->mNotAllowToCreateNewFolder = (options & FolderSelectionDialog::NotAllowToCreateNewFolder);
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);

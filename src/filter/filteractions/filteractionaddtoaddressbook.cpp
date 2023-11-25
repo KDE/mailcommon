@@ -110,26 +110,26 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
 
     const auto headerCombo = new KComboBox(widget);
     headerCombo->setMinimumWidth(50);
-    headerCombo->setObjectName(QStringLiteral("HeaderComboBox"));
+    headerCombo->setObjectName(QLatin1StringView("HeaderComboBox"));
     layout->addWidget(headerCombo, 0, 0, 2, 1, Qt::AlignVCenter);
 
     auto label = new QLabel(i18n("with category"), widget);
-    label->setObjectName(QStringLiteral("label_with_category"));
+    label->setObjectName(QLatin1StringView("label_with_category"));
     layout->addWidget(label, 0, 1);
 
     auto categoryEdit = new Akonadi::TagWidget(widget);
-    categoryEdit->setObjectName(QStringLiteral("CategoryEdit"));
+    categoryEdit->setObjectName(QLatin1StringView("CategoryEdit"));
     layout->addWidget(categoryEdit, 0, 2);
 
     label = new QLabel(i18n("in address book"), widget);
-    label->setObjectName(QStringLiteral("label_in_addressbook"));
+    label->setObjectName(QLatin1StringView("label_in_addressbook"));
     layout->addWidget(label, 1, 1);
 
     auto collectionComboBox = new Akonadi::CollectionComboBox(widget);
     collectionComboBox->setMimeTypeFilter(QStringList() << KContacts::Addressee::mimeType());
     collectionComboBox->setAccessRightsFilter(Akonadi::Collection::CanCreateItem);
 
-    collectionComboBox->setObjectName(QStringLiteral("AddressBookComboBox"));
+    collectionComboBox->setObjectName(QLatin1StringView("AddressBookComboBox"));
     collectionComboBox->setToolTip(
         i18n("This defines the preferred address book.\n"
              "If it is not accessible, the filter will fallback to the default address book."));

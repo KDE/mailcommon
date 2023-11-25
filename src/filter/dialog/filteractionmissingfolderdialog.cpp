@@ -39,12 +39,12 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(const Akonadi::
     auto mainLayout = new QVBoxLayout(this);
 
     auto lab = new QLabel(i18n("Folder path was \"%1\".", argStr));
-    lab->setObjectName(QStringLiteral("argumentlabel"));
+    lab->setObjectName(QLatin1StringView("argumentlabel"));
     lab->setWordWrap(true);
     mainLayout->addWidget(lab);
     if (!list.isEmpty()) {
         lab = new QLabel(i18n("The following folders can be used for this filter:"));
-        lab->setObjectName(QStringLiteral("label"));
+        lab->setObjectName(QLatin1StringView("label"));
         lab->setWordWrap(true);
         mainLayout->addWidget(lab);
         mListwidget = new QListWidget(this);
@@ -61,7 +61,7 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(const Akonadi::
     }
 
     auto label = new QLabel(this);
-    label->setObjectName(QStringLiteral("folderlabel"));
+    label->setObjectName(QLatin1StringView("folderlabel"));
     label->setWordWrap(true);
     if (filtername.isEmpty()) {
         label->setText(i18n("Please select a folder:"));
@@ -72,13 +72,13 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(const Akonadi::
                  filtername));
     }
     mainLayout->addWidget(label);
-    mFolderRequester->setObjectName(QStringLiteral("folderrequester"));
+    mFolderRequester->setObjectName(QLatin1StringView("folderrequester"));
     connect(mFolderRequester, &MailCommon::FolderRequester::folderChanged, this, &FilterActionMissingFolderDialog::slotFolderChanged);
     mainLayout->addWidget(mFolderRequester);
     mainLayout->addItem(new QSpacerItem(1, 1, QSizePolicy::Expanding, QSizePolicy::Expanding));
 
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    buttonBox->setObjectName(QStringLiteral("buttonbox"));
+    buttonBox->setObjectName(QLatin1StringView("buttonbox"));
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setDefault(true);
     mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);

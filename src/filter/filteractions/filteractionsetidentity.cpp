@@ -90,7 +90,7 @@ SearchRule::RequiredPart FilterActionSetIdentity::requiredPart() const
 QWidget *FilterActionSetIdentity::createParamWidget(QWidget *parent) const
 {
     auto comboBox = new KIdentityManagementWidgets::IdentityCombo(KernelIf->identityManager(), parent);
-    comboBox->setObjectName(QStringLiteral("identitycombobox"));
+    comboBox->setObjectName(QLatin1StringView("identitycombobox"));
     comboBox->setCurrentIdentity(mParameter);
 
     connect(comboBox, &KIdentityManagementWidgets::IdentityCombo::currentIndexChanged, this, &FilterActionSetIdentity::filterActionModified);

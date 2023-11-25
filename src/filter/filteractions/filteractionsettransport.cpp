@@ -26,7 +26,7 @@ FilterAction *FilterActionSetTransport::newAction()
 QWidget *FilterActionSetTransport::createParamWidget(QWidget *parent) const
 {
     auto transportCombobox = new MailTransport::TransportComboBox(parent);
-    transportCombobox->setObjectName(QStringLiteral("transportcombobox"));
+    transportCombobox->setObjectName(QLatin1StringView("transportcombobox"));
     setParamWidgetValue(transportCombobox);
     connect(transportCombobox, &MailTransport::TransportComboBox::currentIndexChanged, this, &FilterActionSetTransport::filterActionModified);
     return transportCombobox;

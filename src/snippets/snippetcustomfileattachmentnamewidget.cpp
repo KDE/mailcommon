@@ -19,33 +19,33 @@ SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWi
     , mLineEdit(new QLineEdit(this))
 {
     auto mainLayout = new QVBoxLayout(this);
-    mainLayout->setObjectName(QStringLiteral("mainLayout"));
+    mainLayout->setObjectName(QLatin1StringView("mainLayout"));
     mainLayout->setContentsMargins({});
 
     auto lineEditLayout = new QHBoxLayout;
-    lineEditLayout->setObjectName(QStringLiteral("lineEditLayout"));
+    lineEditLayout->setObjectName(QLatin1StringView("lineEditLayout"));
     lineEditLayout->setContentsMargins({});
 
     auto label = new QLabel(i18n("Filename:"), this);
-    label->setObjectName(QStringLiteral("label"));
+    label->setObjectName(QLatin1StringView("label"));
     lineEditLayout->addWidget(label);
 
-    mLineEdit->setObjectName(QStringLiteral("mLineEdit"));
+    mLineEdit->setObjectName(QLatin1StringView("mLineEdit"));
     lineEditLayout->addWidget(mLineEdit);
 
     mainLayout->addLayout(lineEditLayout);
 
     auto convertMenuLayout = new QHBoxLayout;
-    convertMenuLayout->setObjectName(QStringLiteral("convertMenuLayout"));
+    convertMenuLayout->setObjectName(QLatin1StringView("convertMenuLayout"));
     convertMenuLayout->setContentsMargins({});
     convertMenuLayout->addStretch(1);
 
     mConvertMenu = new MessageComposer::ConvertSnippetVariableMenu(true, mLineEdit, this);
-    mConvertMenu->setObjectName(QStringLiteral("mConvertMenu"));
+    mConvertMenu->setObjectName(QLatin1StringView("mConvertMenu"));
     connect(mConvertMenu, &MessageComposer::ConvertSnippetVariableMenu::insertVariable, this, &SnippetCustomFileAttachmentNameWidget::insertVariable);
 
     auto selectVariable = new QPushButton(i18n("Insert Variables"), this);
-    selectVariable->setObjectName(QStringLiteral("selectVariable"));
+    selectVariable->setObjectName(QLatin1StringView("selectVariable"));
     selectVariable->setMenu(mConvertMenu->menu());
     convertMenuLayout->addWidget(selectVariable);
     mainLayout->addLayout(convertMenuLayout);

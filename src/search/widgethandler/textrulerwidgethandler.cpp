@@ -44,7 +44,7 @@ QWidget *TextRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget 
 
     auto funcCombo = new QComboBox(functionStack);
     funcCombo->setMinimumWidth(50);
-    funcCombo->setObjectName(QStringLiteral("textRuleFuncCombo"));
+    funcCombo->setObjectName(QLatin1StringView("textRuleFuncCombo"));
     for (int i = 0; i < TextFunctionCount; ++i) {
         funcCombo->addItem(TextFunctions[i].displayName.toString());
     }
@@ -61,7 +61,7 @@ QWidget *TextRuleWidgetHandler::createValueWidget(int number, QStackedWidget *va
         auto lineEdit = new KLineEdit(valueStack);
         lineEdit->setClearButtonEnabled(true);
         lineEdit->setTrapReturnKey(true);
-        lineEdit->setObjectName(QStringLiteral("regExpLineEdit"));
+        lineEdit->setObjectName(QLatin1StringView("regExpLineEdit"));
         QObject::connect(lineEdit, SIGNAL(textChanged(QString)), receiver, SLOT(slotValueChanged()));
         QObject::connect(lineEdit, SIGNAL(returnPressed()), receiver, SLOT(slotReturnPressed()));
         return lineEdit;
@@ -70,7 +70,7 @@ QWidget *TextRuleWidgetHandler::createValueWidget(int number, QStackedWidget *va
     // blank QLabel to hide value widget for in-address-book rule
     if (number == 1) {
         auto label = new QLabel(valueStack);
-        label->setObjectName(QStringLiteral("textRuleValueHider"));
+        label->setObjectName(QLatin1StringView("textRuleValueHider"));
         label->setBuddy(valueStack);
         return label;
     }

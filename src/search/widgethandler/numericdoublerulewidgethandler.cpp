@@ -34,7 +34,7 @@ QWidget *NumericDoubleRuleWidgetHandler::createFunctionWidget(int number, QStack
 
     auto funcCombo = new QComboBox(functionStack);
     funcCombo->setMinimumWidth(50);
-    funcCombo->setObjectName(QStringLiteral("numericDoubleRuleFuncCombo"));
+    funcCombo->setObjectName(QLatin1StringView("numericDoubleRuleFuncCombo"));
     for (int i = 0; i < NumericDoubleFunctionCount; ++i) {
         funcCombo->addItem(NumericDoubleFunctions[i].displayName.toString());
     }
@@ -52,7 +52,7 @@ QWidget *NumericDoubleRuleWidgetHandler::createValueWidget(int number, QStackedW
     }
 
     auto numInput = new QDoubleSpinBox(valueStack);
-    numInput->setObjectName(QStringLiteral("QDoubleSpinBox"));
+    numInput->setObjectName(QLatin1StringView("QDoubleSpinBox"));
     QObject::connect(numInput, SIGNAL(valueChanged(double)), receiver, SLOT(slotValueChanged()));
     return numInput;
 }

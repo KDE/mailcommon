@@ -20,7 +20,7 @@ QWidget *FilterActionWithAddress::createParamWidget(QWidget *parent) const
 {
     auto requester = new Akonadi::EmailAddressRequester(parent);
     requester->setText(mParameter);
-    requester->setObjectName(QStringLiteral("emailaddressrequester"));
+    requester->setObjectName(QLatin1StringView("emailaddressrequester"));
     requester->setText(mParameter);
 
     connect(requester, &Akonadi::EmailAddressRequester::textChanged, this, &FilterActionWithAddress::filterActionModified);

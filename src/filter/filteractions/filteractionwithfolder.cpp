@@ -32,7 +32,7 @@ QWidget *FilterActionWithFolder::createParamWidget(QWidget *parent) const
     auto requester = new FolderRequester(parent);
     requester->setShowOutbox(false);
     setParamWidgetValue(requester);
-    requester->setObjectName(QStringLiteral("folderrequester"));
+    requester->setObjectName(QLatin1StringView("folderrequester"));
 
     connect(requester, &FolderRequester::folderChanged, this, &FilterActionWithFolder::filterActionModified);
 

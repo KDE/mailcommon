@@ -37,19 +37,19 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
     setWindowTitle(i18nc("@title:window", "Convert to Sieve Script"));
     auto topLayout = new QVBoxLayout(this);
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Close, this);
-    buttonBox->setObjectName(QStringLiteral("buttonbox"));
+    buttonBox->setObjectName(QLatin1StringView("buttonbox"));
     auto saveButton = new QPushButton(this);
     buttonBox->addButton(saveButton, QDialogButtonBox::ActionRole);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FilterConvertToSieveResultDialog::reject);
     saveButton->setText(i18n("Save..."));
     saveButton->setIcon(QIcon::fromTheme("document-save"));
-    saveButton->setObjectName(QStringLiteral("savebutton"));
+    saveButton->setObjectName(QLatin1StringView("savebutton"));
     saveButton->setDefault(true);
     setModal(true);
     connect(saveButton, &QPushButton::clicked, this, &FilterConvertToSieveResultDialog::slotSave);
 
     mEditor->editor()->setSpellCheckingSupport(false);
-    mEditor->setObjectName(QStringLiteral("editor"));
+    mEditor->setObjectName(QLatin1StringView("editor"));
     auto syntaxHighlighter = new KSyntaxHighlighting::SyntaxHighlighter(mEditor->editor()->document());
     syntaxHighlighter->setDefinition(mSyntaxRepo.definitionForName(QStringLiteral("Sieve")));
     syntaxHighlighter->setTheme((palette().color(QPalette::Base).lightness() < 128) ? mSyntaxRepo.defaultTheme(KSyntaxHighlighting::Repository::DarkTheme)

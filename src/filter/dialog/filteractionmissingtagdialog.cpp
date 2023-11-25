@@ -38,18 +38,18 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(const QMap<QUrl, QStr
     auto mainLayout = new QVBoxLayout(this);
 
     auto label = new QLabel(i18n("Tag was \"%1\".", argsStr));
-    label->setObjectName(QStringLiteral("tagnamelabel"));
+    label->setObjectName(QLatin1StringView("tagnamelabel"));
     mainLayout->addWidget(label);
 
     label = new QLabel(this);
-    label->setObjectName(QStringLiteral("filtername"));
+    label->setObjectName(QLatin1StringView("filtername"));
     label->setText(
         i18n("Filter tag is missing. "
              "Please select a tag to use with filter \"%1\"",
              filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
-    mTagList->setObjectName(QStringLiteral("taglist"));
+    mTagList->setObjectName(QLatin1StringView("taglist"));
 
     QMap<QUrl, QString>::const_iterator map = tagList.constBegin();
     const QMap<QUrl, QString>::const_iterator mapEnd = tagList.constEnd();
@@ -63,11 +63,11 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(const QMap<QUrl, QStr
     mainLayout->addWidget(mTagList);
 
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    buttonBox->setObjectName(QStringLiteral("buttonbox"));
+    buttonBox->setObjectName(QLatin1StringView("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setShortcut(QKeySequence{Qt::CTRL | Qt::Key_Return});
     auto user1Button = new QPushButton(this);
-    user1Button->setObjectName(QStringLiteral("addtag"));
+    user1Button->setObjectName(QLatin1StringView("addtag"));
     user1Button->setText(i18n("Add Tag..."));
     buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
 

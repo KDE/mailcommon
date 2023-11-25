@@ -40,7 +40,7 @@ QWidget *MessageRuleWidgetHandler::createFunctionWidget(int number, QStackedWidg
 
     auto funcCombo = new QComboBox(functionStack);
     funcCombo->setMinimumWidth(50);
-    funcCombo->setObjectName(QStringLiteral("messageRuleFuncCombo"));
+    funcCombo->setObjectName(QLatin1StringView("messageRuleFuncCombo"));
     for (int i = 0; i < MessageFunctionCount; ++i) {
         if (!(isBalooSearch && (MessageFunctions[i].id == SearchRule::FuncHasAttachment || MessageFunctions[i].id == SearchRule::FuncHasNoAttachment))) {
             funcCombo->addItem(MessageFunctions[i].displayName.toString());
@@ -60,7 +60,7 @@ QWidget *MessageRuleWidgetHandler::createValueWidget(int number, QStackedWidget 
         lineEdit->setClearButtonEnabled(true);
         lineEdit->setTrapReturnKey(true);
 
-        lineEdit->setObjectName(QStringLiteral("regExpLineEdit"));
+        lineEdit->setObjectName(QLatin1StringView("regExpLineEdit"));
         QObject::connect(lineEdit, SIGNAL(textChanged(QString)), receiver, SLOT(slotValueChanged()));
         QObject::connect(lineEdit, SIGNAL(returnPressed()), receiver, SLOT(slotReturnPressed()));
         return lineEdit;
@@ -69,7 +69,7 @@ QWidget *MessageRuleWidgetHandler::createValueWidget(int number, QStackedWidget 
     // blank QLabel to hide value widget for has-attachment rule
     if (number == 1) {
         auto label = new QLabel(valueStack);
-        label->setObjectName(QStringLiteral("textRuleValueHider"));
+        label->setObjectName(QLatin1StringView("textRuleValueHider"));
         label->setBuddy(valueStack);
         return label;
     }

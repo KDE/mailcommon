@@ -137,7 +137,7 @@ void SearchRuleWidget::initWidget(SearchPatternEdit::SearchModeType modeType)
     // initialize the header field combo box
     mRuleField = new KComboBox(this);
     mRuleField->setMinimumWidth(50);
-    mRuleField->setObjectName(QStringLiteral("mRuleField"));
+    mRuleField->setObjectName(QLatin1StringView("mRuleField"));
     mRuleField->setEditable(true);
     auto edit = new QLineEdit;
     KLineEditEventHandler::catchReturnKey(edit);
@@ -554,7 +554,7 @@ SearchPatternEdit::SearchPatternEdit(QWidget *parent, SearchPatternEditOptions o
     : QWidget(parent)
 {
     setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-    setObjectName(QStringLiteral("SearchPatternEdit"));
+    setObjectName(QLatin1StringView("SearchPatternEdit"));
     initLayout(options, modeType);
 }
 
@@ -583,12 +583,12 @@ void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeT
         mAllMessageRBtn = new QRadioButton(i18n("Match all messages"), this);
     }
 
-    mAllRBtn->setObjectName(QStringLiteral("mAllRBtn"));
+    mAllRBtn->setObjectName(QLatin1StringView("mAllRBtn"));
     mAllRBtn->setChecked(true);
-    mAnyRBtn->setObjectName(QStringLiteral("mAnyRBtn"));
+    mAnyRBtn->setObjectName(QLatin1StringView("mAnyRBtn"));
     mAnyRBtn->setChecked(false);
     if (matchAllMessages) {
-        mAllMessageRBtn->setObjectName(QStringLiteral("mAllMessageRBtn"));
+        mAllMessageRBtn->setObjectName(QLatin1StringView("mAllMessageRBtn"));
         mAllMessageRBtn->setChecked(false);
     }
     layout->addRow(i18n("Filter criteria:"), mAllRBtn);

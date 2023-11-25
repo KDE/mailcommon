@@ -57,7 +57,7 @@ QWidget *StatusRuleWidgetHandler::createFunctionWidget(int number, QStackedWidge
 
     auto funcCombo = new QComboBox(functionStack);
     funcCombo->setMinimumWidth(50);
-    funcCombo->setObjectName(QStringLiteral("statusRuleFuncCombo"));
+    funcCombo->setObjectName(QLatin1StringView("statusRuleFuncCombo"));
     for (int i = 0; i < StatusFunctionCount; ++i) {
         funcCombo->addItem(StatusFunctions[i].displayName.toString());
     }
@@ -76,7 +76,7 @@ QWidget *StatusRuleWidgetHandler::createValueWidget(int number, QStackedWidget *
 
     auto statusCombo = new QComboBox(valueStack);
     statusCombo->setMinimumWidth(50);
-    statusCombo->setObjectName(QStringLiteral("statusRuleValueCombo"));
+    statusCombo->setObjectName(QLatin1StringView("statusRuleValueCombo"));
     for (int i = 0; i < StatusValueCountWithoutHidden; ++i) {
         if (StatusValues[i].icon != nullptr) {
             statusCombo->addItem(QIcon::fromTheme(QLatin1String(StatusValues[i].icon)), StatusValues[i].text.toString());

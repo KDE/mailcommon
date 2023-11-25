@@ -25,7 +25,7 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     : QWidget(parent)
 {
     auto topLayout = new QFormLayout(this);
-    topLayout->setObjectName(QStringLiteral("topLayout"));
+    topLayout->setObjectName(QLatin1StringView("topLayout"));
     topLayout->setContentsMargins({});
 
     // sender or receiver column

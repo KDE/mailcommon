@@ -20,7 +20,7 @@ QWidget *FilterActionWithStringList::createParamWidget(QWidget *parent) const
 {
     auto comboBox = new QComboBox(parent);
     comboBox->setMinimumWidth(50);
-    comboBox->setObjectName(QStringLiteral("combobox"));
+    comboBox->setObjectName(QLatin1StringView("combobox"));
     comboBox->setEditable(false);
     comboBox->addItems(mParameterList);
     setParamWidgetValue(comboBox);

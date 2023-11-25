@@ -34,19 +34,19 @@ FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QString
     auto mainLayout = new QVBoxLayout(this);
 
     auto label = new QLabel(this);
-    label->setObjectName(QStringLiteral("label"));
+    label->setObjectName(QLatin1StringView("label"));
     label->setText(
         i18n("Filter account is missing. "
              "Please select account to use with filter \"%1\"",
              filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
-    mAccountList->setObjectName(QStringLiteral("accountlist"));
+    mAccountList->setObjectName(QLatin1StringView("accountlist"));
     mAccountList->applyOnAccount(lstAccount);
     mainLayout->addWidget(mAccountList);
 
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    buttonBox->setObjectName(QStringLiteral("buttonbox"));
+    buttonBox->setObjectName(QLatin1StringView("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);

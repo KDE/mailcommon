@@ -33,22 +33,22 @@ FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QStri
     auto mainLayout = new QVBoxLayout(this);
 
     auto label = new QLabel(i18n("Sound file was \"%1\".", argStr));
-    label->setObjectName(QStringLiteral("oldlabel"));
+    label->setObjectName(QLatin1StringView("oldlabel"));
     mainLayout->addWidget(label);
 
     label = new QLabel(this);
-    label->setObjectName(QStringLiteral("selectlabel"));
+    label->setObjectName(QLatin1StringView("selectlabel"));
     label->setText(
         i18n("Sound file is missing. "
              "Please select a sound to use with filter \"%1\"",
              filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
-    mUrlWidget->setObjectName(QStringLiteral("urlwidget"));
+    mUrlWidget->setObjectName(QLatin1StringView("urlwidget"));
     mainLayout->addWidget(mUrlWidget);
 
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    buttonBox->setObjectName(QStringLiteral("buttonbox"));
+    buttonBox->setObjectName(QLatin1StringView("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);

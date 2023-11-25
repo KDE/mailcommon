@@ -22,10 +22,10 @@ InvalidFilterWidget::InvalidFilterWidget(QWidget *parent)
         new QLabel(i18n("The following filters are invalid (e.g. containing no actions "
                         "or no search rules). Discard or edit invalid filters?"));
     lab->setWordWrap(true);
-    lab->setObjectName(QStringLiteral("label"));
+    lab->setObjectName(QLatin1StringView("label"));
     vbox->addWidget(lab);
 
-    mInvalidFilterListWidget->setObjectName(QStringLiteral("invalidfilterlist"));
+    mInvalidFilterListWidget->setObjectName(QLatin1StringView("invalidfilterlist"));
     connect(mInvalidFilterListWidget, &InvalidFilterListView::showDetails, this, &InvalidFilterWidget::showDetails);
     connect(mInvalidFilterListWidget, &InvalidFilterListView::hideInformationWidget, this, &InvalidFilterWidget::hideInformationWidget);
     vbox->addWidget(mInvalidFilterListWidget);

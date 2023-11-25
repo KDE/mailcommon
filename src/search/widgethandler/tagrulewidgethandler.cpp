@@ -108,7 +108,7 @@ QWidget *TagRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget *
 
     const auto funcCombo = new QComboBox(functionStack);
     funcCombo->setMinimumWidth(50);
-    funcCombo->setObjectName(QStringLiteral("tagRuleFuncCombo"));
+    funcCombo->setObjectName(QLatin1StringView("tagRuleFuncCombo"));
     for (int i = 0; i < TagFunctionCount; ++i) {
         if (isBalooSearch) {
             if (TagFunctions[i].id == SearchRule::FuncContains || TagFunctions[i].id == SearchRule::FuncContainsNot) {
@@ -131,7 +131,7 @@ QWidget *TagRuleWidgetHandler::createValueWidget(int number, QStackedWidget *val
         auto lineEdit = new KLineEdit(valueStack);
         lineEdit->setClearButtonEnabled(true);
         lineEdit->setTrapReturnKey(true);
-        lineEdit->setObjectName(QStringLiteral("tagRuleRegExpLineEdit"));
+        lineEdit->setObjectName(QLatin1StringView("tagRuleRegExpLineEdit"));
         QObject::connect(lineEdit, SIGNAL(textChanged(QString)), receiver, SLOT(slotValueChanged()));
         QObject::connect(lineEdit, SIGNAL(returnPressed()), receiver, SLOT(slotReturnPressed()));
         return lineEdit;
@@ -140,7 +140,7 @@ QWidget *TagRuleWidgetHandler::createValueWidget(int number, QStackedWidget *val
     if (number == 1) {
         const auto valueCombo = new QComboBox(valueStack);
         valueCombo->setMinimumWidth(50);
-        valueCombo->setObjectName(QStringLiteral("tagRuleValueCombo"));
+        valueCombo->setObjectName(QLatin1StringView("tagRuleValueCombo"));
         valueCombo->setEditable(true);
         valueCombo->addItem(QString()); // empty entry for user input
 

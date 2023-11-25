@@ -27,13 +27,13 @@ SnippetCustomFileAttachmentNameDialog::SnippetCustomFileAttachmentNameDialog(QWi
 {
     setWindowTitle(i18nc("@title:window", "Customize File Name Attachment"));
     auto mainLayout = new QVBoxLayout(this);
-    mainLayout->setObjectName(QStringLiteral("mainLayout"));
+    mainLayout->setObjectName(QLatin1StringView("mainLayout"));
 
-    mCustomWidget->setObjectName(QStringLiteral("mCustomWidget"));
+    mCustomWidget->setObjectName(QLatin1StringView("mCustomWidget"));
     mainLayout->addWidget(mCustomWidget);
 
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    buttonBox->setObjectName(QStringLiteral("button"));
+    buttonBox->setObjectName(QLatin1StringView("button"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);

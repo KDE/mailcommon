@@ -17,10 +17,10 @@ SnippetSelectAttachmentWidget::SnippetSelectAttachmentWidget(QWidget *parent)
     , mEditor(new SnippetSelectorWidget(this))
 {
     auto mainLayout = new QVBoxLayout(this);
-    mainLayout->setObjectName(QStringLiteral("mainLayout"));
+    mainLayout->setObjectName(QLatin1StringView("mainLayout"));
     mainLayout->setContentsMargins({});
 
-    mEditor->setObjectName(QStringLiteral("editor"));
+    mEditor->setObjectName(QLatin1StringView("editor"));
     mainLayout->addWidget(mEditor);
 }
 

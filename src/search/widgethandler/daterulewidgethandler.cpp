@@ -37,7 +37,7 @@ QWidget *DateRuleWidgetHandler::createFunctionWidget(int number, QStackedWidget 
 
     auto funcCombo = new QComboBox(functionStack);
     funcCombo->setMinimumWidth(50);
-    funcCombo->setObjectName(QStringLiteral("dateRuleFuncCombo"));
+    funcCombo->setObjectName(QLatin1StringView("dateRuleFuncCombo"));
     for (int i = 0; i < DateFunctionCount; ++i) {
         funcCombo->addItem(DateFunctions[i].displayName.toString());
     }
@@ -55,7 +55,7 @@ QWidget *DateRuleWidgetHandler::createValueWidget(int number, QStackedWidget *va
     }
 
     auto dateCombo = new KDateComboBox(valueStack);
-    dateCombo->setObjectName(QStringLiteral("KDateComboBox"));
+    dateCombo->setObjectName(QLatin1StringView("KDateComboBox"));
     dateCombo->setOptions(KDateComboBox::SelectDate | KDateComboBox::DatePicker | KDateComboBox::DateKeywords);
     QObject::connect(dateCombo, SIGNAL(dateChanged(QDate)), receiver, SLOT(slotValueChanged()));
     return dateCombo;

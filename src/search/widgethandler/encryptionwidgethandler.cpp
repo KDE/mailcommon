@@ -34,7 +34,7 @@ QWidget *EncryptionWidgetHandler::createFunctionWidget(int number, QStackedWidge
 
     auto combo = new QComboBox(functionStack);
     combo->setMinimumWidth(50);
-    combo->setObjectName(QStringLiteral("encryptionRuleFuncCombo"));
+    combo->setObjectName(QLatin1StringView("encryptionRuleFuncCombo"));
     for (int i = 0; i < EncryptionFunctionCount; ++i) {
         combo->addItem(EncryptionFunctions[i].displayName.toString());
     }
@@ -52,7 +52,7 @@ QWidget *EncryptionWidgetHandler::createValueWidget(int number, QStackedWidget *
     }
 
     auto lbl = new QLabel(i18n("encrypted"), valueStack);
-    lbl->setObjectName(QStringLiteral("encryptionRuleValueLabel"));
+    lbl->setObjectName(QLatin1StringView("encryptionRuleValueLabel"));
     return lbl;
 }
 

@@ -29,7 +29,7 @@ FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     , selectAllButton(new QPushButton(i18n("Select All"), this))
     , unselectAllButton(new QPushButton(i18n("Unselect All"), this))
 {
-    setObjectName(QStringLiteral("filterselection"));
+    setObjectName(QLatin1StringView("filterselection"));
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Filters"));
     auto top = new QVBoxLayout(this);

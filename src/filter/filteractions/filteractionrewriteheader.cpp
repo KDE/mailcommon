@@ -98,7 +98,7 @@ QWidget *FilterActionRewriteHeader::createParamWidget(QWidget *parent) const
     auto comboBox = new KComboBox(widget);
     comboBox->setMinimumWidth(50);
     comboBox->setEditable(true);
-    comboBox->setObjectName(QStringLiteral("combo"));
+    comboBox->setObjectName(QLatin1StringView("combo"));
     comboBox->setInsertPolicy(QComboBox::InsertAtBottom);
     layout->addWidget(comboBox, 0 /* stretch */);
 
@@ -108,23 +108,23 @@ QWidget *FilterActionRewriteHeader::createParamWidget(QWidget *parent) const
     comp->setCompletionMode(KCompletion::CompletionPopupAuto);
 
     auto label = new QLabel(i18n("Replace:"), widget);
-    label->setObjectName(QStringLiteral("label_replace"));
+    label->setObjectName(QLatin1StringView("label_replace"));
     label->setFixedWidth(label->sizeHint().width());
     layout->addWidget(label, 0);
 
     auto regExpLineEdit = new KLineEdit(widget);
     regExpLineEdit->setClearButtonEnabled(true);
     regExpLineEdit->setTrapReturnKey(true);
-    regExpLineEdit->setObjectName(QStringLiteral("search"));
+    regExpLineEdit->setObjectName(QLatin1StringView("search"));
     layout->addWidget(regExpLineEdit, 1);
 
     label = new QLabel(i18n("With:"), widget);
     label->setFixedWidth(label->sizeHint().width());
-    label->setObjectName(QStringLiteral("label_with"));
+    label->setObjectName(QLatin1StringView("label_with"));
     layout->addWidget(label, 0);
 
     auto lineEdit = new KLineEdit(widget);
-    lineEdit->setObjectName(QStringLiteral("replace"));
+    lineEdit->setObjectName(QLatin1StringView("replace"));
     lineEdit->setClearButtonEnabled(true);
     lineEdit->setTrapReturnKey(true);
     layout->addWidget(lineEdit, 1);

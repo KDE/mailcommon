@@ -47,7 +47,7 @@ QWidget *HeadersRuleWidgetHandler::createFunctionWidget(int number, QStackedWidg
 
     auto funcCombo = new QComboBox(functionStack);
     funcCombo->setMinimumWidth(50);
-    funcCombo->setObjectName(QStringLiteral("headerRuleFuncCombo"));
+    funcCombo->setObjectName(QLatin1StringView("headerRuleFuncCombo"));
     for (int i = 0; i < HeadersFunctionCount; ++i) {
         if (!(isBalooSearch && (HeaderFunctions[i].id == SearchRule::FuncIsInAddressbook || HeaderFunctions[i].id == SearchRule::FuncIsNotInAddressbook))) {
             funcCombo->addItem(HeaderFunctions[i].displayName.toString());
@@ -66,7 +66,7 @@ QWidget *HeadersRuleWidgetHandler::createValueWidget(int number, QStackedWidget 
         auto lineEdit = new KLineEdit(valueStack);
         lineEdit->setClearButtonEnabled(true);
         lineEdit->setTrapReturnKey(true);
-        lineEdit->setObjectName(QStringLiteral("regExpLineEdit"));
+        lineEdit->setObjectName(QLatin1StringView("regExpLineEdit"));
         QObject::connect(lineEdit, SIGNAL(textChanged(QString)), receiver, SLOT(slotValueChanged()));
         QObject::connect(lineEdit, SIGNAL(returnPressed()), receiver, SLOT(slotReturnPressed()));
         return lineEdit;
@@ -75,7 +75,7 @@ QWidget *HeadersRuleWidgetHandler::createValueWidget(int number, QStackedWidget 
     // blank QLabel to hide value widget for in-address-book rule
     if (number == 1) {
         auto label = new QLabel(valueStack);
-        label->setObjectName(QStringLiteral("headerRuleValueHider"));
+        label->setObjectName(QLatin1StringView("headerRuleValueHider"));
         label->setBuddy(valueStack);
         return label;
     }

@@ -32,17 +32,17 @@ FilterActionMissingTransportDialog::FilterActionMissingTransportDialog(const QSt
     auto mainLayout = new QVBoxLayout(this);
 
     auto label = new QLabel(this);
-    label->setObjectName(QStringLiteral("label"));
+    label->setObjectName(QLatin1StringView("label"));
     label->setText(
         i18n("Filter transport is missing. "
              "Please select a transport to use with filter \"%1\"",
              filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
-    mComboBoxTransport->setObjectName(QStringLiteral("comboboxtransport"));
+    mComboBoxTransport->setObjectName(QLatin1StringView("comboboxtransport"));
     mainLayout->addWidget(mComboBoxTransport);
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    buttonBox->setObjectName(QStringLiteral("buttonbox"));
+    buttonBox->setObjectName(QLatin1StringView("buttonbox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);

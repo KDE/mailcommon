@@ -60,7 +60,7 @@ FilterAction *FilterAction::newAction()
 QWidget *FilterAction::createParamWidget(QWidget *parent) const
 {
     auto w = new QWidget(parent);
-    w->setObjectName(QStringLiteral("empty_widget"));
+    w->setObjectName(QLatin1StringView("empty_widget"));
     return w;
 }
 

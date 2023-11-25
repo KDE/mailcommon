@@ -19,7 +19,7 @@ using namespace MailCommon;
 CollectionExpiryPage::CollectionExpiryPage(QWidget *parent)
     : CollectionPropertiesPage(parent)
 {
-    setObjectName(QStringLiteral("MailCommon::CollectionExpiryPage"));
+    setObjectName(QLatin1StringView("MailCommon::CollectionExpiryPage"));
     setPageTitle(i18nc("@title:tab Expiry settings for a folder.", "Expiry"));
 }
 

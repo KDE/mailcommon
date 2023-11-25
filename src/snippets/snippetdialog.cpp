@@ -31,7 +31,7 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
     , mInGroupMode(inGroupMode)
 {
     auto mainLayout = new QVBoxLayout(this);
-    mainLayout->setObjectName(QStringLiteral("mainLayout"));
+    mainLayout->setObjectName(QLatin1StringView("mainLayout"));
 
     mainLayout->addWidget(mSnippetWidget);
 

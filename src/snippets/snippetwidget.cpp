@@ -30,7 +30,7 @@ SnippetWidget::SnippetWidget(QWidget *parent)
     , d(new SnippetWidgetPrivate)
 {
     auto layout = new QVBoxLayout(this);
-    layout->setObjectName(QStringLiteral("mainlayout"));
+    layout->setObjectName(QLatin1StringView("mainlayout"));
     layout->setContentsMargins({});
     d->wdg = new QWidget(this);
     d->mUi.setupUi(d->wdg);

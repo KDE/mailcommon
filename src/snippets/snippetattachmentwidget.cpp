@@ -19,16 +19,16 @@ SnippetAttachmentWidget::SnippetAttachmentWidget(QWidget *parent)
     , mLineEdit(new QLineEdit(this))
 {
     auto layout = new QHBoxLayout(this);
-    layout->setObjectName(QStringLiteral("layout"));
+    layout->setObjectName(QLatin1StringView("layout"));
     layout->setContentsMargins({});
 
-    mLineEdit->setObjectName(QStringLiteral("lineedit"));
+    mLineEdit->setObjectName(QLatin1StringView("lineedit"));
     mLineEdit->setPlaceholderText(i18n("Click on button for selecting attachment file"));
     layout->addWidget(mLineEdit);
     mLineEdit->setReadOnly(true);
 
     auto button = new QToolButton(this);
-    button->setObjectName(QStringLiteral("button"));
+    button->setObjectName(QLatin1StringView("button"));
     button->setToolTip(i18n("Select Attachments"));
     button->setText(i18n("..."));
     layout->addWidget(button);

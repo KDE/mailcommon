@@ -25,7 +25,7 @@ QWidget *FilterActionWithString::createParamWidget(QWidget *parent) const
 {
     auto lineEdit = new KLineEdit(parent);
     lineEdit->setClearButtonEnabled(true);
-    lineEdit->setObjectName(QStringLiteral("lineedit"));
+    lineEdit->setObjectName(QLatin1StringView("lineedit"));
     lineEdit->setTrapReturnKey(true);
     lineEdit->setText(mParameter);
 

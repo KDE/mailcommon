@@ -25,13 +25,13 @@ SnippetSelectAttachmentDialog::SnippetSelectAttachmentDialog(QWidget *parent)
 {
     setWindowTitle(i18nc("@title:window", "Select Attachments"));
     auto mainLayout = new QVBoxLayout(this);
-    mainLayout->setObjectName(QStringLiteral("mainLayout"));
+    mainLayout->setObjectName(QLatin1StringView("mainLayout"));
 
-    mAttachmentWidget->setObjectName(QStringLiteral("attachmentwidget"));
+    mAttachmentWidget->setObjectName(QLatin1StringView("attachmentwidget"));
     mainLayout->addWidget(mAttachmentWidget);
 
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    buttonBox->setObjectName(QStringLiteral("button"));
+    buttonBox->setObjectName(QLatin1StringView("button"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);

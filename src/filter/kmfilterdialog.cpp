@@ -267,7 +267,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
         inMenuLayout->addRow(mConfigureToolbar);
 
         mKeySeqWidget = new KKeySequenceWidget(mInMenuWidget);
-        mKeySeqWidget->setObjectName(QStringLiteral("FilterShortcutSelector"));
+        mKeySeqWidget->setObjectName(QLatin1StringView("FilterShortcutSelector"));
         mKeySeqWidget->setModifierlessAllowed(true);
         mKeySeqWidget->setCheckActionCollections(actionCollection);
         inMenuLayout->addRow(i18n("Shortcut:"), mKeySeqWidget);

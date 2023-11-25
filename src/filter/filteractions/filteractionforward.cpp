@@ -80,7 +80,7 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
     layout->setContentsMargins({});
 
     QWidget *addressEdit = FilterActionWithAddress::createParamWidget(addressAndTemplate);
-    addressEdit->setObjectName(QStringLiteral("addressEdit"));
+    addressEdit->setObjectName(QLatin1StringView("addressEdit"));
     layout->addWidget(addressEdit);
 
     auto addressRequester = qobject_cast<Akonadi::EmailAddressRequester *>(addressEdit);
@@ -93,7 +93,7 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
 
     auto templateCombo = new KComboBox(addressAndTemplate);
     templateCombo->setMinimumWidth(50);
-    templateCombo->setObjectName(QStringLiteral("templateCombo"));
+    templateCombo->setObjectName(QLatin1StringView("templateCombo"));
     layout->addWidget(templateCombo);
 
     templateCombo->addItem(i18n("Default Template"));

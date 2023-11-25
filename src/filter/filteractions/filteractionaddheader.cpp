@@ -62,7 +62,7 @@ QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
 
     auto comboBox = new KComboBox(widget);
     comboBox->setMinimumWidth(50);
-    comboBox->setObjectName(QStringLiteral("combo"));
+    comboBox->setObjectName(QLatin1StringView("combo"));
     comboBox->setEditable(true);
     comboBox->setInsertPolicy(QComboBox::InsertAtBottom);
 
@@ -74,12 +74,12 @@ QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
     layout->addWidget(comboBox, 0 /* stretch */);
 
     auto label = new QLabel(i18n("With value:"), widget);
-    label->setObjectName(QStringLiteral("label_value"));
+    label->setObjectName(QLatin1StringView("label_value"));
     label->setFixedWidth(label->sizeHint().width());
     layout->addWidget(label, 0);
 
     auto lineEdit = new KLineEdit(widget);
-    lineEdit->setObjectName(QStringLiteral("ledit"));
+    lineEdit->setObjectName(QLatin1StringView("ledit"));
     lineEdit->setTrapReturnKey(true);
     lineEdit->setClearButtonEnabled(true);
     layout->addWidget(lineEdit, 1);
