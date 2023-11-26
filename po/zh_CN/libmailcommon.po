@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-21 00:49+0000\n"
-"PO-Revision-Date: 2023-11-19 03:44\n"
+"PO-Revision-Date: 2023-11-25 02:33\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -872,9 +872,7 @@ msgstr "分享..."
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:75
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
-msgstr ""
-"*.siv|筛选文件 (*.siv)\n"
-"*|所有文件 (*)"
+msgstr "过滤文件 (*.siv);;所有文件 (*)"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:76
 #, kde-format
@@ -1067,7 +1065,7 @@ msgstr "Gmail 过滤器"
 #: filter/kmfilterdialog.cpp:140
 #, kde-format
 msgid "Sieve script"
-msgstr "筛选脚本"
+msgstr "过滤脚本"
 
 #: filter/kmfilterdialog.cpp:162
 #, kde-format
@@ -1141,7 +1139,7 @@ msgstr ""
 #: filter/kmfilterdialog.cpp:234
 #, kde-format
 msgid "Apply this filter on manual &filtering"
-msgstr "在手动筛选时应用此过滤器(&F)"
+msgstr "在手动过滤时应用此过滤器(&F)"
 
 #: filter/kmfilterdialog.cpp:237
 #, kde-format
@@ -1402,7 +1400,7 @@ msgstr "您想要删除过滤器“%1”吗？"
 #: filter/kmfilterlistbox.cpp:444
 #, kde-format
 msgid "Do you want to remove selected filters?"
-msgstr "您想要删除所选筛选器吗？"
+msgstr "您想要删除所选过滤器吗？"
 
 #: filter/kmfilterlistbox.cpp:445
 #, kde-format
@@ -1429,7 +1427,7 @@ msgstr ""
 #: filter/mailfilter.cpp:131
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
-msgstr "<b>应用筛选器操作：</b> %1"
+msgstr "<b>应用过滤器操作：</b> %1"
 
 #: filter/mailfilter.cpp:140
 #, kde-format
