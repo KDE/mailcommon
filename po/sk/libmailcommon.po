@@ -1,20 +1,20 @@
 # translation of libmailcommon.po to Slovak
 # Richard Fric <Richard.Fric@kdemail.net>, 2010.
-# Roman Paholík <wizzardsk@gmail.com>, 2012, 2013, 2014, 2015, 2016, 2017.
+# SPDX-FileCopyrightText: 2012, 2013, 2014, 2015, 2016, 2017, 2023 Roman Paholík <wizzardsk@gmail.com>
 # Matej Mrenica <matejm98mthw@gmail.com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-21 00:49+0000\n"
-"PO-Revision-Date: 2019-11-18 12:53+0100\n"
-"Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
-"Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2023-12-11 18:57+0100\n"
+"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.11.80\n"
+"X-Generator: Lokalize 23.08.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
@@ -115,7 +115,7 @@ msgstr "Všeobecné"
 #| msgid "Rename"
 msgctxt "@label:textbox Name of the folder."
 msgid "Folder &Name:"
-msgstr "Premenovať"
+msgstr "Názov priečinka:"
 
 #: collectionpage/collectiongeneralpage.cpp:110
 #, kde-format
@@ -235,7 +235,7 @@ msgstr "Ponechať odpovede v tomto priečinku"
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
 msgid "&Copy Global Templates"
-msgstr ""
+msgstr "Kopírovať globálne šablóny"
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
@@ -247,26 +247,25 @@ msgstr ""
 #| msgid " (default)"
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
-msgstr " (predvolené)"
+msgstr "Predvolené"
 
 #: collectionpage/collectionviewwidget.cpp:37
-#, fuzzy, kde-format
-#| msgid "&Send"
+#, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
-msgstr "&Poslať"
+msgstr "Odosielateľ"
 
 #: collectionpage/collectionviewwidget.cpp:38
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
-msgstr ""
+msgstr "Príjemca"
 
 #: collectionpage/collectionviewwidget.cpp:39
 #, fuzzy, kde-format
 #| msgid "Sho&rtcut:"
 msgid "Sho&w column:"
-msgstr "Skratka:"
+msgstr "Zobraziť stĺpec '%1'"
 
 #: collectionpage/collectionviewwidget.cpp:42
 #, fuzzy, kde-format
@@ -297,9 +296,9 @@ msgid "Prefer text to HTML"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:80
-#, kde-format
+#, fuzzy, kde-format
 msgid "Use Global Settings"
-msgstr ""
+msgstr "Použiť globálne nastavenia"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
 #, fuzzy, kde-format
@@ -1079,8 +1078,7 @@ msgid "Type"
 msgstr "Typ"
 
 #: filter/kmfilterdialog.cpp:72
-#, fuzzy, kde-format
-#| msgid "Filter Rules"
+#, kde-format
 msgctxt "@title:window"
 msgid "Filter Rules"
 msgstr "Pravidlá filtra"
@@ -1615,9 +1613,9 @@ msgid "Select Sound File"
 msgstr "Vybrať zvukový súbor"
 
 #: filter/soundtestwidget.cpp:107
-#, kde-format
+#, fuzzy, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "Pozastaviť"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: filter/ui/filterconfigwidget.ui:19
@@ -2552,7 +2550,7 @@ msgstr "Vyberte prílohy"
 #, fuzzy, kde-format
 #| msgid "Rename"
 msgid "Filename:"
-msgstr "Premenovať"
+msgstr "Názov súboru:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
 #, fuzzy, kde-format
@@ -2561,8 +2559,7 @@ msgid "Insert Variables"
 msgstr "Premenné"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
-#, fuzzy, kde-format
-#| msgid "Select Attachments"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
 msgstr "Vyberte prílohy"
@@ -2682,7 +2679,7 @@ msgstr "Aktualizovať úryvok"
 #, fuzzy, kde-format
 #| msgid "Update snippet"
 msgid "Update"
-msgstr "Aktualizovať úryvok"
+msgstr "Aktualizovať"
 
 #: snippets/snippettreeview.cpp:64
 #, kde-format
@@ -2752,10 +2749,9 @@ msgstr "Skupina:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: snippets/ui/snippetwidget.ui:65
-#, fuzzy, kde-format
-#| msgid "Attachment:"
+#, kde-format
 msgid "Attachments:"
-msgstr "Príloha:"
+msgstr "Prílohy:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel)
 #: snippets/ui/snippetwidget.ui:82
@@ -2806,8 +2802,7 @@ msgid "Variables"
 msgstr "Premenné"
 
 #: tag/addtagdialog.cpp:39
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgctxt "@title:window"
 msgid "Add Tag"
 msgstr "Pridať značku"
