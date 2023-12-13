@@ -3,26 +3,27 @@
 #
 # Franklin Weng <franklin at goodhorse dot idv dot tw>, 2010, 2011, 2012, 2013, 2014, 2015.
 # pan93412 <pan93412@gmail.com>, 2019.
+# SPDX-FileCopyrightText: 2023 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-07 02:43+0000\n"
-"PO-Revision-Date: 2019-05-14 22:35+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"PO-Revision-Date: 2023-12-13 02:38+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 19.04.1\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
 msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
-msgstr "逾期時間"
+msgstr "過期"
 
 #: collectionpage/collectionexpirywidget.cpp:35
 #, kde-format
@@ -34,34 +35,29 @@ msgstr[0] " 天"
 #: collectionpage/collectionexpirywidget.cpp:36
 #: collectionpage/collectionexpirywidget.cpp:42
 #: collectionpage/collectionexpirywidget.cpp:54
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu Never display tooltips."
-#| msgid "Never"
+#, kde-format
 msgid "Never"
 msgstr "永不"
 
 #: collectionpage/collectionexpirywidget.cpp:66
 #, kde-format
 msgid "Save Settings and Expire Now"
-msgstr "儲存設定並即刻判斷逾期"
+msgstr "儲存設定並現在標為過期"
 
 #: collectionpage/collectionexpirywidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Expire read messages after"
+#, kde-format
 msgid "Expire messages with invalid date"
-msgstr "已讀信件在多久後設為過期信件："
+msgstr "將日期無效的訊息標為過期"
 
 #: collectionpage/collectionexpirywidget.cpp:73
-#, fuzzy, kde-format
-#| msgid "Expire read messages after"
+#, kde-format
 msgid "Expire read messages after:"
-msgstr "已讀信件在多久後設為過期信件："
+msgstr "已讀信件在多久後標為過期："
 
 #: collectionpage/collectionexpirywidget.cpp:76
-#, fuzzy, kde-format
-#| msgid "Expire unread messages after"
+#, kde-format
 msgid "Expire unread messages after:"
-msgstr "未讀信件在多久後設為過期信件："
+msgstr "未讀信件在多久後標為過期："
 
 #: collectionpage/collectionexpirywidget.cpp:90
 #, kde-format
@@ -79,8 +75,8 @@ msgid ""
 "Please select a folder to expire messages into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
-"請選擇逾期的信件要放在哪個資料夾。\n"
-"若未設定，則逾期的信件會永久刪除。"
+"請選擇過期信件要放在哪個資料夾。\n"
+"若未設定，則過期的信件會永久刪除。"
 
 #: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
@@ -94,8 +90,8 @@ msgid ""
 "into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
-"請選擇逾期的信件要放在哪個（與現在不同的）資料夾。\n"
-"若未設定，則逾期的信件會永久刪除。"
+"請選擇過期的信件要放在哪個（與現在不同的）資料夾。\n"
+"若未設定，則過期的信件會永久刪除。"
 
 #: collectionpage/collectionexpirywidget.cpp:189
 #, kde-format
@@ -109,11 +105,10 @@ msgid "General"
 msgstr "一般"
 
 #: collectionpage/collectiongeneralpage.cpp:65
-#, fuzzy, kde-format
-#| msgid "Rename..."
+#, kde-format
 msgctxt "@label:textbox Name of the folder."
 msgid "Folder &Name:"
-msgstr "重新命名..."
+msgstr "資料夾名稱(&N)："
 
 #: collectionpage/collectiongeneralpage.cpp:110
 #, kde-format
@@ -211,83 +206,75 @@ msgid "&Sender identity:"
 msgstr "寄件人身份(&S)："
 
 #: collectionpage/collectiontemplateswidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Keep replies in this folder"
+#, kde-format
 msgid "&Use custom message templates in this folder"
-msgstr "將回覆的信件也放在此資料夾"
+msgstr "使用這個資料夾裡的自訂信件樣本"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
 msgid "&Copy Global Templates"
-msgstr ""
+msgstr "複製全域樣本(&C)"
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
-msgstr ""
+msgstr "在信件列表顯示寄件者/收件者欄位"
 
 #: collectionpage/collectionviewwidget.cpp:36
-#, fuzzy, kde-format
-#| msgid " (default)"
+#, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
-msgstr " (預設)"
+msgstr "預設"
 
 #: collectionpage/collectionviewwidget.cpp:37
-#, fuzzy, kde-format
-#| msgid "&Send"
+#, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
-msgstr "送出(&S)"
+msgstr "寄件者"
 
 #: collectionpage/collectionviewwidget.cpp:38
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
-msgstr ""
+msgstr "收件者"
 
 #: collectionpage/collectionviewwidget.cpp:39
-#, fuzzy, kde-format
-#| msgid "Shortcut:"
+#, kde-format
 msgid "Sho&w column:"
-msgstr "捷徑："
+msgstr "顯示欄位(&W)："
 
 #: collectionpage/collectionviewwidget.cpp:42
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgid "Use default message list aggregation:"
-msgstr "使用預設身份(&D)"
+msgstr "使用預設信件列表集合方式："
 
 #: collectionpage/collectionviewwidget.cpp:59
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgid "Use default message list theme"
-msgstr "使用預設身份(&D)"
+msgstr "使用預設信件列表主題"
 
 #: collectionpage/collectionviewwidget.cpp:76
 #, kde-format
 msgid "Prefer HTML to text"
-msgstr ""
+msgstr "偏好使用 HTML 而非純文字"
 
 #: collectionpage/collectionviewwidget.cpp:77
-#, fuzzy, kde-format
-#| msgid "Message Status"
+#, kde-format
 msgid "Message format:"
-msgstr "信件狀態"
+msgstr "信件格式："
 
 #: collectionpage/collectionviewwidget.cpp:78
 #, kde-format
 msgid "Prefer text to HTML"
-msgstr ""
+msgstr "偏好使用純文字而非 HTML"
 
 #: collectionpage/collectionviewwidget.cpp:80
 #, kde-format
 msgid "Use Global Settings"
-msgstr ""
+msgstr "使用全域設定"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
-#, fuzzy, kde-format
-#| msgid "Select Account"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "選擇帳號"
@@ -300,8 +287,7 @@ msgstr "過濾器帳號已遺失。請選擇過濾器 \"%1\" 要使用的帳號"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:73
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "選擇資料夾"
@@ -317,22 +303,18 @@ msgid "The following folders can be used for this filter:"
 msgstr "以下資料夾可以使用此過濾器："
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Please select a folder"
+#, kde-format
 msgid "Please select a folder:"
-msgstr "請選擇一個資料夾"
+msgstr "請選擇一個資料夾："
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:70
-#, fuzzy, kde-format
-#| msgid ""
-#| "Filter folder is missing. Please select a folder to use with filter \"%1\""
+#, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
-msgstr "過濾的資料夾已遺失。請選擇過濾器 \"%1\" 要使用的資料夾"
+msgstr "缺乏過濾器資料夾。請選擇過濾器 \"%1\" 要使用的資料夾："
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Identity"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "選擇身份"
@@ -345,8 +327,7 @@ msgid ""
 msgstr "過濾器身份已遺失。請選擇過濾器 \"%1\" 要使用的身份"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
-#, fuzzy, kde-format
-#| msgid "Select sound"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "選擇音效"
@@ -362,8 +343,7 @@ msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr "音效檔已遺失。請選擇過濾器 \"%1\" 要使用的音效檔"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
-#, fuzzy, kde-format
-#| msgid "Select Tag"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "選擇標籤"
@@ -384,8 +364,7 @@ msgid "Add Tag..."
 msgstr "新增標籤..."
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Template"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "選擇樣本"
@@ -398,8 +377,7 @@ msgid ""
 msgstr "過濾器樣本已遺失。請選擇過濾器 \"%1\" 要使用的樣本"
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
-#, fuzzy, kde-format
-#| msgid "Select Transport"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "選擇傳輸"
@@ -412,11 +390,10 @@ msgid ""
 msgstr "過濾器傳輸已遺失。請選擇過濾器 \"%1\" 要使用的傳輸"
 
 #: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
-#, fuzzy, kde-format
-#| msgid "Select thunderbird filter files"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
-msgstr "選擇 Thunderbird 過濾器檔"
+msgstr "選擇 Thunderbird 過濾器檔案"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:31
 #, kde-format
@@ -424,10 +401,9 @@ msgid " (default)"
 msgstr " (預設)"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgid "Thunderbird File (*.dat)"
-msgstr "Thunderbird 過濾器"
+msgstr "Thunderbird 檔案 (*.dat)"
 
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
@@ -508,16 +484,14 @@ msgid "in address book"
 msgstr "在通訊錄內"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:134
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p>This defines the preferred address book.<br />If it is not accessible, "
-#| "the filter will fallback to the default address book.</p>"
+#, kde-format
 msgid ""
 "This defines the preferred address book.\n"
 "If it is not accessible, the filter will fallback to the default address "
 "book."
 msgstr ""
-"<p>這選項定義預設的通訊錄。<br />若無法存取，則過濾器會回到預設的通訊錄。</p>"
+"此選項定義偏好的通訊錄。\n"
+"若其無法存取，則過濾器會改成使用預設的通訊錄。"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:286
 #, kde-format
@@ -544,12 +518,12 @@ msgstr "資料夾目標未定義。"
 #: filter/filteractions/filteractiondecrypt.cpp:40
 #, kde-format
 msgid "Decrypt"
-msgstr ""
+msgstr "解密"
 
 #: filter/filteractions/filteractiondecrypt.cpp:95
 #, kde-format
 msgid "<b>Warning:</b> Decrypted emails may be uploaded to a server!"
-msgstr ""
+msgstr "<b>警告：</b>可能會上傳已解密的郵件到伺服器上！"
 
 #: filter/filteractions/filteractiondecrypt.cpp:97
 #, kde-format
@@ -557,6 +531,8 @@ msgid ""
 "<p>If the email folder that you are filtering into is connected to a remote "
 "account (like an IMAP-Server) the decrypted content will go there.</p>"
 msgstr ""
+"<p>如果您的過濾器的目的地連線到遠端帳號的資料夾（如一個 IMAP 伺服器）則已解密"
+"的內容也會被傳上去。</p>"
 
 #: filter/filteractions/filteractiondelete.cpp:18
 #, kde-format
@@ -571,22 +547,22 @@ msgstr "小心，信件將被移除。"
 #: filter/filteractions/filteractionencrypt.cpp:43
 #, kde-format
 msgid "Encrypt"
-msgstr ""
+msgstr "加密"
 
 #: filter/filteractions/filteractionencrypt.cpp:206
 #, kde-format
 msgid "No encryption key has been selected"
-msgstr ""
+msgstr "未選取加密金鑰"
 
 #: filter/filteractions/filteractionencrypt.cpp:242
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
-msgstr ""
+msgstr "使用這個金鑰將已加密的郵件重新加密"
 
 #: filter/filteractions/filteractionencrypt.cpp:252
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
-msgstr ""
+msgstr "<b>警告：</b>需要 Seckey 才能閱讀郵件。"
 
 #: filter/filteractions/filteractionencrypt.cpp:254
 #, kde-format
@@ -596,6 +572,9 @@ msgid ""
 "an email server and use several clients, each of them must be configured to "
 "enable decryption.</p>"
 msgstr ""
+"<p>郵件被加密後您將會需要設定好加密系統和您的私鑰才能重新存取內容。</p><p>如"
+"果您將郵件儲存在郵件伺服器上且使用多個用戶端，它們全部都會需要設定好才能進行"
+"解密。</p>"
 
 #: filter/filteractions/filteractionexec.cpp:15
 #, kde-format
@@ -605,7 +584,7 @@ msgstr "執行命令"
 #: filter/filteractions/filteractionexec.cpp:36
 #, kde-format
 msgid "Missing command."
-msgstr ""
+msgstr "缺乏指令。"
 
 #: filter/filteractions/filteractionforward.cpp:35
 #, kde-format
@@ -704,7 +683,7 @@ msgstr "標頭名稱未定義。"
 #: filter/filteractions/filteractionreplyto.cpp:20
 #, kde-format
 msgid "Set Reply-To To"
-msgstr "設定「回信地址」欄位"
+msgstr "設定「回覆地址」欄位"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:25
 #, kde-format
@@ -905,11 +884,10 @@ msgid "You can get specific header when you use %{headername}."
 msgstr "您使用 %{headername} 可以取得特定標頭。"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
-#, fuzzy, kde-format
-#| msgid "Convert to sieve script"
+#, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
-msgstr "轉換為  Sieve 文稿"
+msgstr "轉換為 Sieve 文稿"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
@@ -917,16 +895,14 @@ msgid "Save..."
 msgstr "儲存..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Save..."
+#, kde-format
 msgid "Share..."
-msgstr "儲存..."
+msgstr "分享..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
-#, fuzzy, kde-format
-#| msgid "*.siv;;sieve files (*.siv);;all files (*)"
+#, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
-msgstr "*.siv;;sieve 檔 (*.siv);;所有檔案 (*)"
+msgstr "Sieve 檔 (*.siv);;所有檔案 (*)"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
 #, kde-format
@@ -1010,8 +986,7 @@ msgid "Unselect All"
 msgstr "取消全選"
 
 #: filter/filterselectiondialog.cpp:34
-#, fuzzy, kde-format
-#| msgid "Select Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "選擇過濾器"
@@ -1024,11 +999,10 @@ msgid "Search"
 msgstr "搜尋"
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Invalid Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
-msgstr "不正確的過濾器"
+msgstr "無效的過濾器"
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:40
 #, kde-format
@@ -1055,8 +1029,7 @@ msgid "Type"
 msgstr "類型"
 
 #: filter/kmfilterdialog.cpp:72
-#, fuzzy, kde-format
-#| msgid "Filter Rules"
+#, kde-format
 msgctxt "@title:window"
 msgid "Filter Rules"
 msgstr "過濾規則"
@@ -1117,8 +1090,7 @@ msgid "Icedove Mail filters"
 msgstr "Icedove 郵件過濾器"
 
 #: filter/kmfilterdialog.cpp:132
-#, fuzzy, kde-format
-#| msgid "GMail filters"
+#, kde-format
 msgid "Gmail filters"
 msgstr "Gmail 過濾器"
 
@@ -1145,10 +1117,9 @@ msgid "Advanced"
 msgstr "進階"
 
 #: filter/kmfilterdialog.cpp:182
-#, fuzzy, kde-format
-#| msgid "Filter Actions"
+#, kde-format
 msgid "Filter actions:"
-msgstr "過濾器動作"
+msgstr "過濾器動作："
 
 #: filter/kmfilterdialog.cpp:193
 #, kde-format
@@ -1156,22 +1127,19 @@ msgid "Apply this filter to incoming messages:"
 msgstr "對新進信件套用此過濾器："
 
 #: filter/kmfilterdialog.cpp:203
-#, fuzzy, kde-format
-#| msgid "from all accounts"
+#, kde-format
 msgid "From all accounts"
 msgstr "從所有帳號來的信件"
 
 #: filter/kmfilterdialog.cpp:207
-#, fuzzy, kde-format
-#| msgid "from all but online IMAP accounts"
+#, kde-format
 msgid "From all but online IMAP accounts"
 msgstr "除了 IMAP 帳號外的信件"
 
 #: filter/kmfilterdialog.cpp:211
-#, fuzzy, kde-format
-#| msgid "from checked accounts only"
+#, kde-format
 msgid "From selected accounts only"
-msgstr "只針對勾選的帳號的信件"
+msgstr "只針對已選的帳號的信件"
 
 #: filter/kmfilterdialog.cpp:219
 #, kde-format
@@ -1210,10 +1178,9 @@ msgid "Apply this filter on manual &filtering"
 msgstr "在手動過濾清單中套用此一過濾器"
 
 #: filter/kmfilterdialog.cpp:237
-#, fuzzy, kde-format
-#| msgid "Apply this filter on manual &filtering"
+#, kde-format
 msgid "Apply this filter on inbound emails in all folders"
-msgstr "在手動過濾清單中套用此一過濾器"
+msgstr "套用這個過濾器在所有資料夾裡收到的信件"
 
 #: filter/kmfilterdialog.cpp:239
 #, kde-format
@@ -1223,6 +1190,9 @@ msgid ""
 "IMAP accounts where new emails may have already been moved to different "
 "folders by server-side filters.</p>"
 msgstr ""
+"<p>這個過濾器會被套用到以上選取的所有帳號的所有資料夾中所收到的電子郵件。這在"
+"為 IMAP 帳號使用本地過濾器時很有用，因為伺服器上可能已經有過濾器將新郵件移到"
+"不同的資料夾去了。</p>"
 
 #: filter/kmfilterdialog.cpp:245
 #, kde-format
@@ -1307,7 +1277,7 @@ msgstr "已匯入的過濾器："
 #: filter/kmfilterdialog.cpp:677
 #, kde-format
 msgid "Any filter found."
-msgstr ""
+msgstr "任何找到的過濾器。"
 
 #: filter/kmfilterdialog.cpp:706
 #, kde-format
@@ -1422,10 +1392,9 @@ msgid "Delete"
 msgstr "刪除"
 
 #: filter/kmfilterlistbox.cpp:143
-#, fuzzy, kde-format
-#| msgid "Rename..."
+#, kde-format
 msgid "Rename"
-msgstr "重新命名..."
+msgstr "重新命名"
 
 #: filter/kmfilterlistbox.cpp:145
 #, kde-format
@@ -1542,10 +1511,9 @@ msgstr ""
 "qt>"
 
 #: filter/mailfilter.cpp:569
-#, fuzzy, kde-format
-#| msgid "No action defined."
+#, kde-format
 msgid "Any action defined."
-msgstr "動作未定義。"
+msgstr "任何已定義的動作。"
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
 #, kde-format
@@ -1553,8 +1521,7 @@ msgid "Play"
 msgstr "播放"
 
 #: filter/soundtestwidget.cpp:62
-#, fuzzy, kde-format
-#| msgid "Select Sound File"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Sound File"
 msgstr "選擇聲音檔案"
@@ -1562,7 +1529,7 @@ msgstr "選擇聲音檔案"
 #: filter/soundtestwidget.cpp:107
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "暫停"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: filter/ui/filterconfigwidget.ui:19
@@ -1631,8 +1598,7 @@ msgid "Select file from config:"
 msgstr "從設定中選擇檔案："
 
 #: folder/accountconfigorderdialog.cpp:57
-#, fuzzy, kde-format
-#| msgid "Edit Accounts Order"
+#, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "編輯帳號順序"
@@ -1784,7 +1750,7 @@ msgstr "%1（離線）"
 #: folder/foldertreewidgetproxymodel.cpp:237
 #, kde-format
 msgid "%1 (Reached %2% quota)"
-msgstr ""
+msgstr "%1 (已達到 %2% 限制)"
 
 #: job/backupjob.cpp:94
 #, kde-format
@@ -1993,20 +1959,14 @@ msgid "Message Tag"
 msgstr "信件標籤"
 
 #: search/searchpatternedit.cpp:49
-#, fuzzy
-#| msgctxt "Subject of an email."
-#| msgid "Subject"
 msgid "Subject"
-msgstr "主題"
+msgstr "主旨"
 
 #: search/searchpatternedit.cpp:50
 msgid "From"
 msgstr "寄件者"
 
 #: search/searchpatternedit.cpp:51
-#, fuzzy
-#| msgctxt "Email recipient"
-#| msgid "To"
 msgid "To"
 msgstr "收件者"
 
@@ -2024,7 +1984,7 @@ msgstr "日期"
 
 #: search/searchpatternedit.cpp:56
 msgid "Encryption"
-msgstr ""
+msgstr "加密"
 
 #: search/searchpatternedit.cpp:144 search/searchpatternedit.cpp:145
 #, kde-format
@@ -2047,10 +2007,9 @@ msgid "Match all messages"
 msgstr "比對所有信件"
 
 #: search/searchpatternedit.cpp:594
-#, fuzzy, kde-format
-#| msgid "Filter Criteria"
+#, kde-format
 msgid "Filter criteria:"
-msgstr "過濾標準"
+msgstr "過濾基準："
 
 #: search/searchrule/searchrule.cpp:177
 #, kde-format
@@ -2270,12 +2229,12 @@ msgstr "不是"
 #: search/widgethandler/encryptionwidgethandler.cpp:54
 #, kde-format
 msgid "encrypted"
-msgstr ""
+msgstr "已加密"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:91
 #, kde-format
 msgid "is encrypted"
-msgstr ""
+msgstr "已加密"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:26
 #: search/widgethandler/messagerulewidgethandler.cpp:25
@@ -2454,52 +2413,45 @@ msgstr "含附件"
 #: snippets/snippetattachmentwidget.cpp:26
 #, kde-format
 msgid "Click on button for selecting attachment file"
-msgstr ""
+msgstr "點擊按鈕以選取附件檔案"
 
 #: snippets/snippetattachmentwidget.cpp:32
 #: snippets/snippetselectattachmentwidget.cpp:52
-#, fuzzy, kde-format
-#| msgid "Select Account"
+#, kde-format
 msgid "Select Attachments"
-msgstr "選擇帳號"
+msgstr "選擇附件"
 
 #: snippets/snippetattachmentwidget.cpp:33
-#, fuzzy, kde-format
-#| msgid "Save..."
+#, kde-format
 msgid "..."
-msgstr "儲存..."
+msgstr "..."
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
-#, fuzzy, kde-format
-#| msgid "Select Account"
+#, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
-msgstr "選擇帳號"
+msgstr "自訂檔名附件"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Rename..."
+#, kde-format
 msgid "Filename:"
-msgstr "重新命名..."
+msgstr "檔案名稱："
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, fuzzy, kde-format
-#| msgid "Enter Values for Variables"
+#, kde-format
 msgid "Insert Variables"
-msgstr "輸入變數值"
+msgstr "插入變數"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
-#, fuzzy, kde-format
-#| msgid "Select Account"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
-msgstr "選擇帳號"
+msgstr "選擇附件"
 
 #: snippets/snippetselectattachmentwidget.cpp:45
-#, fuzzy, kde-format
-#| msgid "Do you want to remove selected filters?"
+#, kde-format
 msgid "Do you want to delete selected attachment?"
-msgstr "您確定要移除選取的過濾器嗎？"
+msgstr "您確定要移除選取的附件嗎？"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2596,32 +2548,27 @@ msgid "Insert Snippet"
 msgstr "插入片段"
 
 #: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
-#, fuzzy, kde-format
-#| msgid "Do you want to remove the filter \"%1\"?"
+#, kde-format
 msgid "Do you want to update snippet?"
-msgstr "您確定要移除過濾器 \"%1\" 嗎？"
+msgstr "您確定要更新片段嗎？"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgid "Update snippet"
-msgstr "移除片段"
+msgstr "更新片段"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgid "Update"
-msgstr "移除片段"
+msgstr "更新"
 
 #: snippets/snippettreeview.cpp:64
-#, fuzzy, kde-format
-#| msgid "Insert Snippet"
+#, kde-format
 msgid "Text Snippets"
-msgstr "插入片段"
+msgstr "文字片段"
 
 #: snippets/snippetvariabledialog.cpp:37
-#, fuzzy, kde-format
-#| msgid "Enter Values for Variables"
+#, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "輸入變數值"
@@ -2663,6 +2610,9 @@ msgid ""
 "then type \\greeting in your email and then press the tab key, and it will "
 "be replaced with the contents of this snippet."
 msgstr ""
+"在此輸入關鍵字，之後在撰寫郵件時就可以用這個關鍵字快速插入這個片段。舉例來"
+"說，如果您的關鍵字是 \"greeting\"，您可以在您的郵件中輸入 \\greeting 並按下 "
+"Tab 鍵，然後它就會被取代成該片段的內容。"
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
 #: snippets/ui/snippetwidget.ui:31
@@ -2679,11 +2629,9 @@ msgstr "群組："
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: snippets/ui/snippetwidget.ui:65
-#, fuzzy, kde-format
-#| msgctxt "message status"
-#| msgid "Has Attachment"
+#, kde-format
 msgid "Attachments:"
-msgstr "含附件"
+msgstr "附件："
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel)
 #: snippets/ui/snippetwidget.ui:82
@@ -2693,54 +2641,48 @@ msgstr "片段(&S)："
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: snippets/ui/snippetwidget.ui:102
-#, fuzzy, kde-format
-#| msgctxt "Email recipient"
-#| msgid "To"
+#, kde-format
 msgid "To:"
-msgstr "收件者"
+msgstr "收件者："
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: snippets/ui/snippetwidget.ui:113
 #, kde-format
 msgid "Cc:"
-msgstr ""
+msgstr "副本："
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: snippets/ui/snippetwidget.ui:120
 #, kde-format
 msgid "Keyword:"
-msgstr ""
+msgstr "關鍵字："
 
 #. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
 #: snippets/ui/snippetwidget.ui:127
-#, fuzzy, kde-format
-#| msgid "Shortcut:"
+#, kde-format
 msgid "Sho&rtcut:"
-msgstr "捷徑："
+msgstr "捷徑(&R)："
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: snippets/ui/snippetwidget.ui:164
 #, kde-format
 msgid "Bcc:"
-msgstr ""
+msgstr "密件副本："
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: snippets/ui/snippetwidget.ui:184
-#, fuzzy, kde-format
-#| msgctxt "Subject of an email."
-#| msgid "Subject"
+#, kde-format
 msgid "Subject:"
-msgstr "主題"
+msgstr "主旨："
 
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
 #: snippets/ui/snippetwidget.ui:191
 #, kde-format
 msgid "Variables"
-msgstr ""
+msgstr "變數"
 
 #: tag/addtagdialog.cpp:39
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgctxt "@title:window"
 msgid "Add Tag"
 msgstr "新增標籤"
@@ -2774,12 +2716,12 @@ msgstr "改變字型(&N)："
 #: tag/tagwidget.cpp:100
 #, kde-format
 msgid "&Bold"
-msgstr ""
+msgstr "粗體(&B)"
 
 #: tag/tagwidget.cpp:104
 #, kde-format
 msgid "&Italics"
-msgstr ""
+msgstr "斜體(&I)"
 
 #: tag/tagwidget.cpp:122
 #, kde-format
@@ -2837,17 +2779,15 @@ msgid "Resend-Bcc:"
 msgstr "重新傳送密件副本："
 
 #: widgets/redirectdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Redirect Message"
+#, kde-format
 msgctxt "@title:window"
 msgid "Redirect Message"
-msgstr "導向信件"
+msgstr "重新導向信件"
 
 #: widgets/redirectdialog.cpp:123
-#, fuzzy, kde-format
-#| msgid "Select the recipient addresses to redirect:"
+#, kde-format
 msgid "Select the recipient addresses to redirect to:"
-msgstr "請選擇您要將信件導向到哪個位址："
+msgstr "請選擇您要將信件重新導向到哪個位址："
 
 #: widgets/redirectdialog.cpp:152
 #, kde-format
