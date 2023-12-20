@@ -61,7 +61,7 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Messa
 {
     QString result = mParameter;
     QList<int> argList;
-    const QRegularExpression re(QStringLiteral("%([0-9-]+)"));
+    static const QRegularExpression re(QStringLiteral("%([0-9-]+)"));
 
     // search for '%n'
     QRegularExpressionMatchIterator iter = re.globalMatch(result);
