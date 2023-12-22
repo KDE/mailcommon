@@ -391,9 +391,9 @@ void SearchPattern::generateSieveScript(QStringList &requiresModules, QString &c
 #ifdef _MSC_VER
 namespace MailCommon
 {
-uint qHash(SearchRule::Ptr sr)
+size_t qHash(SearchRule::Ptr sr, size_t seed) noexcept
 {
-    return ::qHash(sr.get());
+    return ::qHash(sr.get(), seed);
 }
 }
 #endif
