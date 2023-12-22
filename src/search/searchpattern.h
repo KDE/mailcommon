@@ -30,11 +30,6 @@ class KConfigGroup;
 
 namespace MailCommon
 {
-// Needed for MSVC 2010, as it seems to not implicit cast for a pointer anymore
-#ifdef _MSC_VER
-uint qHash(SearchRule::Ptr sr);
-#endif
-
 // ------------------------------------------------------------------------
 
 /** This class is an abstraction of a search over messages.  It is
