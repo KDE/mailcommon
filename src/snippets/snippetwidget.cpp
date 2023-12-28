@@ -184,7 +184,7 @@ bool SnippetWidget::snippetIsValid() const
     if (d->mUi.nameEdit->text().trimmed().isEmpty()) {
         return false;
     } else {
-        if (d->mUi.groupWidget->isVisible()) {
+        if (d->mUi.formLayout->isRowVisible(1)) {
             return !d->mUi.groupBox->currentText().trimmed().isEmpty();
         }
     }
@@ -199,7 +199,10 @@ void SnippetWidget::setCheckActionCollections(const QList<KActionCollection *> &
 void SnippetWidget::setGroupSelected(bool inGroupMode)
 {
     d->isSelectedGroup = inGroupMode;
-    d->mUi.groupWidget->setVisible(!inGroupMode);
+    // Set all the other row but name to invisible
+    for (int i = 1; i < d->mUi.formLayout->rowCount(); i++) {
+        d->mUi.formLayout->setRowVisible(i, !inGroupMode);
+    }
 }
 
 bool SnippetWidget::isGroupSelected() const
