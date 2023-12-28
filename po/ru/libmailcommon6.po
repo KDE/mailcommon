@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-07 02:43+0000\n"
-"PO-Revision-Date: 2023-01-12 11:19+0300\n"
+"PO-Revision-Date: 2023-12-27 10:03+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -432,12 +432,10 @@ msgstr "Выбор файлов фильтров Thunderbird"
 msgid " (default)"
 msgstr " (по умолчанию)"
 
-# BUGME: please add ellipsis because this opens a file open dialog --aspotashev
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgid "Thunderbird File (*.dat)"
-msgstr "Фильтры Thunderbird"
+msgstr "Файл Thunderbird (*.dat)"
 
 # Not using guillemets because this line goes into the Sieve script. --aspotashev
 #: filter/filteractions/filteraction.cpp:133
@@ -469,7 +467,7 @@ msgstr "Не указано значение заголовка."
 #: filter/filteractions/filteractionaddtag.cpp:24
 #, kde-format
 msgid "Add Tag"
-msgstr "Добавить метку"
+msgstr "Добавить метку…"
 
 #: filter/filteractions/filteractionaddtag.cpp:150
 #, kde-format
