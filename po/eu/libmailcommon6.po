@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-07 02:43+0000\n"
+"POT-Creation-Date: 2023-12-29 01:37+0000\n"
 "PO-Revision-Date: 2023-09-21 19:14+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -2705,71 +2705,71 @@ msgstr ""
 "testu-zati honekin ordezkatuko da."
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: snippets/ui/snippetwidget.ui:31
+#: snippets/ui/snippetwidget.ui:32
 #, kde-format
 msgid "&Name:"
 msgstr "Ize&na:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabelGroup)
-#: snippets/ui/snippetwidget.ui:52
+#: snippets/ui/snippetwidget.ui:50
 #, kde-format
 msgctxt "Group to which the snippet belongs."
 msgid "Group:"
 msgstr "Taldea:"
 
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: snippets/ui/snippetwidget.ui:65
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: snippets/ui/snippetwidget.ui:69
 #, kde-format
-msgid "Attachments:"
-msgstr "Eranskinak:"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel)
-#: snippets/ui/snippetwidget.ui:82
-#, kde-format
-msgid "&Snippet:"
-msgstr "Te&stu-zatia:"
+msgid "Subject:"
+msgstr "Gaia:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: snippets/ui/snippetwidget.ui:102
+#: snippets/ui/snippetwidget.ui:88
 #, kde-format
 msgid "To:"
 msgstr "Nori:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: snippets/ui/snippetwidget.ui:113
+#: snippets/ui/snippetwidget.ui:101
 #, kde-format
 msgid "Cc:"
 msgstr "Cc:"
 
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: snippets/ui/snippetwidget.ui:114
+#, kde-format
+msgid "Bcc:"
+msgstr "Bcc:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel)
+#: snippets/ui/snippetwidget.ui:127
+#, kde-format
+msgid "&Snippet:"
+msgstr "Te&stu-zatia:"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
+#: snippets/ui/snippetwidget.ui:157
+#, kde-format
+msgid "Variables"
+msgstr "Aldagaiak"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: snippets/ui/snippetwidget.ui:181
+#, kde-format
+msgid "Attachments:"
+msgstr "Eranskinak:"
+
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: snippets/ui/snippetwidget.ui:120
+#: snippets/ui/snippetwidget.ui:193
 #, kde-format
 msgid "Keyword:"
 msgstr "Gako-hitza:"
 
 #. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
-#: snippets/ui/snippetwidget.ui:127
+#: snippets/ui/snippetwidget.ui:212
 #, kde-format
 msgid "Sho&rtcut:"
 msgstr "Laste&rbidea:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: snippets/ui/snippetwidget.ui:164
-#, kde-format
-msgid "Bcc:"
-msgstr "Bcc:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: snippets/ui/snippetwidget.ui:184
-#, kde-format
-msgid "Subject:"
-msgstr "Gaia:"
-
-#. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
-#: snippets/ui/snippetwidget.ui:191
-#, kde-format
-msgid "Variables"
-msgstr "Aldagaiak"
 
 #: tag/addtagdialog.cpp:39
 #, kde-format

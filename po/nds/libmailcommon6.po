@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-07 02:43+0000\n"
+"POT-Creation-Date: 2023-12-29 01:37+0000\n"
 "PO-Revision-Date: 2014-09-18 22:35+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -2753,34 +2753,28 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: snippets/ui/snippetwidget.ui:31
+#: snippets/ui/snippetwidget.ui:32
 #, kde-format
 msgid "&Name:"
 msgstr "&Naam:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabelGroup)
-#: snippets/ui/snippetwidget.ui:52
+#: snippets/ui/snippetwidget.ui:50
 #, kde-format
 msgctxt "Group to which the snippet belongs."
 msgid "Group:"
 msgstr "Koppel:"
 
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: snippets/ui/snippetwidget.ui:65
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: snippets/ui/snippetwidget.ui:69
 #, fuzzy, kde-format
-#| msgctxt "message status"
-#| msgid "Has Attachment"
-msgid "Attachments:"
-msgstr "Hett en Bilaag"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel)
-#: snippets/ui/snippetwidget.ui:82
-#, kde-format
-msgid "&Snippet:"
-msgstr "&Snippel:"
+#| msgctxt "Subject of an email."
+#| msgid "Subject"
+msgid "Subject:"
+msgstr "Bedraap"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: snippets/ui/snippetwidget.ui:102
+#: snippets/ui/snippetwidget.ui:88
 #, fuzzy, kde-format
 #| msgctxt "Receiver of an email."
 #| msgid "To"
@@ -2788,43 +2782,49 @@ msgid "To:"
 msgstr "Na"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: snippets/ui/snippetwidget.ui:113
+#: snippets/ui/snippetwidget.ui:101
 #, kde-format
 msgid "Cc:"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: snippets/ui/snippetwidget.ui:114
+#, kde-format
+msgid "Bcc:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel)
+#: snippets/ui/snippetwidget.ui:127
+#, kde-format
+msgid "&Snippet:"
+msgstr "&Snippel:"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
+#: snippets/ui/snippetwidget.ui:157
+#, kde-format
+msgid "Variables"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: snippets/ui/snippetwidget.ui:181
+#, fuzzy, kde-format
+#| msgctxt "message status"
+#| msgid "Has Attachment"
+msgid "Attachments:"
+msgstr "Hett en Bilaag"
+
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: snippets/ui/snippetwidget.ui:120
+#: snippets/ui/snippetwidget.ui:193
 #, kde-format
 msgid "Keyword:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
-#: snippets/ui/snippetwidget.ui:127
+#: snippets/ui/snippetwidget.ui:212
 #, fuzzy, kde-format
 #| msgid "Shortcut:"
 msgid "Sho&rtcut:"
 msgstr "Tastkombinatschoon:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: snippets/ui/snippetwidget.ui:164
-#, kde-format
-msgid "Bcc:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: snippets/ui/snippetwidget.ui:184
-#, fuzzy, kde-format
-#| msgctxt "Subject of an email."
-#| msgid "Subject"
-msgid "Subject:"
-msgstr "Bedraap"
-
-#. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
-#: snippets/ui/snippetwidget.ui:191
-#, kde-format
-msgid "Variables"
-msgstr ""
 
 #: tag/addtagdialog.cpp:39
 #, fuzzy, kde-format

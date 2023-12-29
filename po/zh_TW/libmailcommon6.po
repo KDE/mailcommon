@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-07 02:43+0000\n"
+"POT-Creation-Date: 2023-12-29 01:37+0000\n"
 "PO-Revision-Date: 2023-12-13 02:38+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -2615,71 +2615,71 @@ msgstr ""
 "Tab 鍵，然後它就會被取代成該片段的內容。"
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: snippets/ui/snippetwidget.ui:31
+#: snippets/ui/snippetwidget.ui:32
 #, kde-format
 msgid "&Name:"
 msgstr "名稱(&N)："
 
 #. i18n: ectx: property (text), widget (QLabel, textLabelGroup)
-#: snippets/ui/snippetwidget.ui:52
+#: snippets/ui/snippetwidget.ui:50
 #, kde-format
 msgctxt "Group to which the snippet belongs."
 msgid "Group:"
 msgstr "群組："
 
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: snippets/ui/snippetwidget.ui:65
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: snippets/ui/snippetwidget.ui:69
 #, kde-format
-msgid "Attachments:"
-msgstr "附件："
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel)
-#: snippets/ui/snippetwidget.ui:82
-#, kde-format
-msgid "&Snippet:"
-msgstr "片段(&S)："
+msgid "Subject:"
+msgstr "主旨："
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: snippets/ui/snippetwidget.ui:102
+#: snippets/ui/snippetwidget.ui:88
 #, kde-format
 msgid "To:"
 msgstr "收件者："
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: snippets/ui/snippetwidget.ui:113
+#: snippets/ui/snippetwidget.ui:101
 #, kde-format
 msgid "Cc:"
 msgstr "副本："
 
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: snippets/ui/snippetwidget.ui:114
+#, kde-format
+msgid "Bcc:"
+msgstr "密件副本："
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel)
+#: snippets/ui/snippetwidget.ui:127
+#, kde-format
+msgid "&Snippet:"
+msgstr "片段(&S)："
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
+#: snippets/ui/snippetwidget.ui:157
+#, kde-format
+msgid "Variables"
+msgstr "變數"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: snippets/ui/snippetwidget.ui:181
+#, kde-format
+msgid "Attachments:"
+msgstr "附件："
+
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: snippets/ui/snippetwidget.ui:120
+#: snippets/ui/snippetwidget.ui:193
 #, kde-format
 msgid "Keyword:"
 msgstr "關鍵字："
 
 #. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
-#: snippets/ui/snippetwidget.ui:127
+#: snippets/ui/snippetwidget.ui:212
 #, kde-format
 msgid "Sho&rtcut:"
 msgstr "捷徑(&R)："
-
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: snippets/ui/snippetwidget.ui:164
-#, kde-format
-msgid "Bcc:"
-msgstr "密件副本："
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: snippets/ui/snippetwidget.ui:184
-#, kde-format
-msgid "Subject:"
-msgstr "主旨："
-
-#. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
-#: snippets/ui/snippetwidget.ui:191
-#, kde-format
-msgid "Variables"
-msgstr "變數"
 
 #: tag/addtagdialog.cpp:39
 #, kde-format

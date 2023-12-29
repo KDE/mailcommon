@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-07 02:43+0000\n"
+"POT-Creation-Date: 2023-12-29 01:37+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -2617,76 +2617,76 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: snippets/ui/snippetwidget.ui:31
+#: snippets/ui/snippetwidget.ui:32
 #, kde-format
 msgid "&Name:"
 msgstr "ئاتى(&N):"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabelGroup)
-#: snippets/ui/snippetwidget.ui:52
+#: snippets/ui/snippetwidget.ui:50
 #, kde-format
 msgctxt "Group to which the snippet belongs."
 msgid "Group:"
 msgstr "گۇرۇپپا:"
 
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: snippets/ui/snippetwidget.ui:65
-#, fuzzy, kde-format
-#| msgctxt "message status"
-#| msgid "Has Attachment"
-msgid "Attachments:"
-msgstr "قوشۇلما بار"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel)
-#: snippets/ui/snippetwidget.ui:82
-#, kde-format
-msgid "&Snippet:"
-msgstr "پۇرۇچ(&S):"
-
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: snippets/ui/snippetwidget.ui:102
-#, kde-format
-msgid "To:"
-msgstr "تاپشۇرۇپ ئالغۇچى"
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: snippets/ui/snippetwidget.ui:113
-#, kde-format
-msgid "Cc:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: snippets/ui/snippetwidget.ui:120
-#, kde-format
-msgid "Keyword:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
-#: snippets/ui/snippetwidget.ui:127
-#, fuzzy, kde-format
-#| msgid "Shortcut:"
-msgid "Sho&rtcut:"
-msgstr "تېزلەتمە:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: snippets/ui/snippetwidget.ui:164
-#, kde-format
-msgid "Bcc:"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: snippets/ui/snippetwidget.ui:184
+#: snippets/ui/snippetwidget.ui:69
 #, fuzzy, kde-format
 #| msgctxt "Subject of an email."
 #| msgid "Subject"
 msgid "Subject:"
 msgstr "تېما"
 
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: snippets/ui/snippetwidget.ui:88
+#, kde-format
+msgid "To:"
+msgstr "تاپشۇرۇپ ئالغۇچى"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: snippets/ui/snippetwidget.ui:101
+#, kde-format
+msgid "Cc:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: snippets/ui/snippetwidget.ui:114
+#, kde-format
+msgid "Bcc:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel)
+#: snippets/ui/snippetwidget.ui:127
+#, kde-format
+msgid "&Snippet:"
+msgstr "پۇرۇچ(&S):"
+
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
-#: snippets/ui/snippetwidget.ui:191
+#: snippets/ui/snippetwidget.ui:157
 #, kde-format
 msgid "Variables"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: snippets/ui/snippetwidget.ui:181
+#, fuzzy, kde-format
+#| msgctxt "message status"
+#| msgid "Has Attachment"
+msgid "Attachments:"
+msgstr "قوشۇلما بار"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: snippets/ui/snippetwidget.ui:193
+#, kde-format
+msgid "Keyword:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
+#: snippets/ui/snippetwidget.ui:212
+#, fuzzy, kde-format
+#| msgid "Shortcut:"
+msgid "Sho&rtcut:"
+msgstr "تېزلەتمە:"
 
 #: tag/addtagdialog.cpp:39
 #, kde-format
