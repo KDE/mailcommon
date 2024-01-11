@@ -301,7 +301,7 @@ add_mailcommon_filter_test(filteractionmissingtagdialogtest
     ../dialog/filteractionmissingtagdialog.cpp
     )
 
-add_mailcommon_filter_test(filteractionmissingidentitydialogtest
+add_mailcommon_filter_akonadi_test(
     filteractionmissingidentitydialogtest.cpp
     filteractionmissingidentitydialogtest.h
     ../dialog/filteractionmissingidentitydialog.cpp
