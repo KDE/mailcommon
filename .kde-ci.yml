@@ -15,3 +15,7 @@ Dependencies:
     'pim/mailimporter' : '@same'
     'pim/messagelib' : '@same'
     'pim/pimcommon' : '@same'
+
+Options:
+  cmake-options: "-DAKONADI_RUN_MYSQL_ISOLATED_TESTS=FALSE -DAKONADI_RUN_PGSQL_ISOLATED_TESTS=FALSE -DAKONADI_RUN_SQLITE_ISOLATED_TESTS=FALSE"
+  require-passing-tests-on: [ 'Linux', 'FreeBSD', 'Windows' ]      
