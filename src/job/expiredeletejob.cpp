@@ -100,3 +100,5 @@ void ExpireDeleteJob::finished()
     Q_EMIT expireDeleteDone();
     deleteLater();
 }
+
+#include "moc_expiredeletejob.cpp"
