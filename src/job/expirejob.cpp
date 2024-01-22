@@ -6,6 +6,7 @@
 
 #include "expirejob.h"
 #include "collectionpage/attributes/expirecollectionattribute.h"
+#include "expiredeletejob.h"
 #include "kernel/mailkernel.h"
 
 #include <PimCommon/BroadcastStatus>
@@ -136,9 +137,8 @@ void ExpireJob::done()
 {
     QString str;
     bool moving = false;
-
     if (!mRemovedMsgs.isEmpty()) {
-        int count = mRemovedMsgs.count();
+        const int count = mRemovedMsgs.count();
 
         // The command shouldn't kill us because it opens the folder
         mCancellable = false;
@@ -148,10 +148,13 @@ void ExpireJob::done()
             if (expirationAttribute->expireAction() == MailCommon::ExpireCollectionAttribute::ExpireDelete) {
                 // Expire by deletion, i.e. move to null target folder
                 qCDebug(MAILCOMMON_LOG) << "ExpireJob: finished expiring in folder" << mSrcFolder.name() << count << "messages to remove.";
-                auto job = new Akonadi::ItemDeleteJob(mRemovedMsgs, this);
-                connect(job, &Akonadi::ItemDeleteJob::result, this, &ExpireJob::slotExpireDone);
+                auto job = new ExpireDeleteJob(this);
+                job->setRemovedMsgs(mRemovedMsgs);
+                job->setSourceFolderName(mSrcFolder.name());
+                connect(job, &ExpireDeleteJob::expireDeleteDone, this, &ExpireJob::slotExpireDeleteDone);
                 moving = true;
                 str = i18np("Removing 1 old message from folder %2...", "Removing %1 old messages from folder %2...", count, mSrcFolder.name());
+                job->start();
             } else {
                 // Expire by moving
                 mMoveToFolder = Kernel::self()->collectionFromId(expirationAttribute->expireToFolderId());
@@ -223,7 +226,6 @@ void ExpireJob::slotExpireDone(KJob *job)
 
     QString msg;
     const int error = job->error();
-
     const MailCommon::ExpireCollectionAttribute *expirationAttribute = mSrcFolder.attribute<MailCommon::ExpireCollectionAttribute>();
     if (expirationAttribute) {
         switch (error) {
@@ -262,6 +264,11 @@ void ExpireJob::slotExpireDone(KJob *job)
 
         BroadcastStatus::instance()->setStatusMsg(msg);
     }
+    deleteLater();
+}
+
+void ExpireJob::slotExpireDeleteDone()
+{
     deleteLater();
 }
 

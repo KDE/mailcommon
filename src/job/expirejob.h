@@ -31,6 +31,7 @@ private:
     void slotMoveDone(KJob *job);
     void itemFetchResult(KJob *job);
     void done();
+    void slotExpireDeleteDone();
 
 private:
     Akonadi::Item::List mRemovedMsgs;
