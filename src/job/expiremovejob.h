@@ -6,6 +6,7 @@
 
 #pragma once
 
+#include <Akonadi/Item>
 #include <QObject>
 
 class ExpireMoveJob : public QObject
@@ -14,4 +15,15 @@ class ExpireMoveJob : public QObject
 public:
     explicit ExpireMoveJob(QObject *parent = nullptr);
     ~ExpireMoveJob() override;
+
+    [[nodiscard]] Akonadi::Item::List removedMsgs() const;
+    void setRemovedMsgs(const Akonadi::Item::List &newRemovedMsgs);
+
+    void start();
+
+Q_SIGNALS:
+    void expireMovedDone();
+
+private:
+    Akonadi::Item::List mRemovedMsgs;
 };

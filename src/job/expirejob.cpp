@@ -145,15 +145,16 @@ void ExpireJob::done()
 
         const MailCommon::ExpireCollectionAttribute *expirationAttribute = mSrcFolder.attribute<MailCommon::ExpireCollectionAttribute>();
         if (expirationAttribute) {
+            const QString srcFolderName{mSrcFolder.name()};
             if (expirationAttribute->expireAction() == MailCommon::ExpireCollectionAttribute::ExpireDelete) {
                 // Expire by deletion, i.e. move to null target folder
-                qCDebug(MAILCOMMON_LOG) << "ExpireJob: finished expiring in folder" << mSrcFolder.name() << count << "messages to remove.";
+                qCDebug(MAILCOMMON_LOG) << "ExpireJob: finished expiring in folder" << srcFolderName << count << "messages to remove.";
                 auto job = new ExpireDeleteJob(this);
                 job->setRemovedMsgs(mRemovedMsgs);
-                job->setSourceFolderName(mSrcFolder.name());
+                job->setSourceFolderName(srcFolderName);
                 connect(job, &ExpireDeleteJob::expireDeleteDone, this, &ExpireJob::slotExpireDeleteDone);
                 moving = true;
-                str = i18np("Removing 1 old message from folder %2...", "Removing %1 old messages from folder %2...", count, mSrcFolder.name());
+                str = i18np("Removing 1 old message from folder %2...", "Removing %1 old messages from folder %2...", count, srcFolderName);
                 job->start();
             } else {
                 // Expire by moving
@@ -162,11 +163,11 @@ void ExpireJob::done()
                     str = i18n(
                         "Cannot expire messages from folder %1: destination "
                         "folder %2 not found",
-                        mSrcFolder.name(),
+                        srcFolderName,
                         expirationAttribute->expireToFolderId());
                     qCWarning(MAILCOMMON_LOG) << str;
                 } else {
-                    qCDebug(MAILCOMMON_LOG) << "ExpireJob: finished expiring in folder" << mSrcFolder.name() << mRemovedMsgs.count() << "messages to move to"
+                    qCDebug(MAILCOMMON_LOG) << "ExpireJob: finished expiring in folder" << srcFolderName << mRemovedMsgs.count() << "messages to move to"
                                             << mMoveToFolder.name();
                     auto job = new Akonadi::ItemMoveJob(mRemovedMsgs, mMoveToFolder, this);
                     connect(job, &Akonadi::ItemMoveJob::result, this, &ExpireJob::slotMoveDone);
@@ -174,7 +175,7 @@ void ExpireJob::done()
                     str = i18np("Moving 1 old message from folder %2 to folder %3...",
                                 "Moving %1 old messages from folder %2 to folder %3...",
                                 count,
-                                mSrcFolder.name(),
+                                srcFolderName,
                                 mMoveToFolder.name());
                 }
             }
