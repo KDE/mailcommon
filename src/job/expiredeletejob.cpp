@@ -75,6 +75,9 @@ void ExpireDeleteJob::slotExpireDone(KJob *job)
         break;
     }
 
+    // TODO cancel all job when user cancel it.
+    // Return when we have an error.
+
     mRunningJobs.removeOne(job);
     if (mRunningJobs.isEmpty()) {
         finished();
