@@ -176,7 +176,7 @@ void BackupJob::finish()
         mProgressItem = nullptr;
     }
 
-    QFileInfo archiveFileInfo(mMailArchivePath.path());
+    const QFileInfo archiveFileInfo(mMailArchivePath.path());
     QString text = i18n(
         "Archiving folder '%1' successfully completed. "
         "The archive was written to the file '%2'.",
