@@ -193,6 +193,8 @@ void ExpireJob::slotMoveDone(KJob *job)
 {
     if (job->error()) {
         qCCritical(MAILCOMMON_LOG) << job->error() << job->errorString();
+        deleteLater();
+        return;
     }
     auto itemjob = qobject_cast<Akonadi::ItemMoveJob *>(job);
     if (itemjob) {
