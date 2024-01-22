@@ -145,6 +145,10 @@ target_sources(KPim6MailCommon PRIVATE
     job/expirejob.cpp
     job/expiredeletejob.h
     job/expiredeletejob.cpp
+
+    job/expiremovejob.h
+    job/expiremovejob.cpp
+
     job/backupjob.cpp
     search/widgethandler/rulewidgethandlermanager.cpp
     search/searchpattern.cpp
