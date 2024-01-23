@@ -70,6 +70,9 @@ void ExpireMoveJob::setMoveToFolder(const Akonadi::Collection &newMoveToFolder)
 
 void ExpireMoveJob::slotMoveDone(KJob *job)
 {
+    if (job->error()) {
+        qCCritical(MAILCOMMON_LOG) << job->error() << job->errorString();
+    }
     // TODO
 
     mRunningJobs.removeOne(job);
