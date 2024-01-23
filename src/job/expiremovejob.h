@@ -21,9 +21,16 @@ public:
 
     void start();
 
+    [[nodiscard]] Akonadi::Collection moveToFolder() const;
+    void setMoveToFolder(const Akonadi::Collection &newMoveToFolder);
+
 Q_SIGNALS:
     void expireMovedDone();
 
 private:
+    void slotMoveDone(KJob *job);
+    void finished();
+    Akonadi::Collection mMoveToFolder;
     Akonadi::Item::List mRemovedMsgs;
+    QList<KJob *> mRunningJobs;
 };
