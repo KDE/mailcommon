@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:37+0000\n"
+"POT-Creation-Date: 2024-01-23 00:38+0000\n"
 "PO-Revision-Date: 2023-12-18 01:45+0100\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -1941,21 +1941,38 @@ msgstr "Das Archiv kann nicht zum Schreiben geöffnet werden."
 msgid "Archiving"
 msgstr "Archivierung läuft"
 
-#: job/expirejob.cpp:154
+#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
+#, kde-format
+msgid "Removed 1 old message from folder %2."
+msgid_plural "Removed %1 old messages from folder %2."
+msgstr[0] "1 alte Nachricht aus Ordner %2 gelöscht."
+msgstr[1] "%1 alte Nachrichten aus Ordner %2 gelöscht."
+
+#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#, kde-format
+msgid "Removing old messages from folder %1 was canceled."
+msgstr "Löschen alter Nachrichten aus Ordner %1 abgebrochen."
+
+#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#, kde-format
+msgid "Removing old messages from folder %1 failed."
+msgstr "Das Löschen der alten Nachrichten in Ordner %1 ist fehlgeschlagen."
+
+#: job/expirejob.cpp:157
 #, kde-format
 msgid "Removing 1 old message from folder %2..."
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "1 alte Nachricht wird aus Ordner %2 gelöscht ..."
 msgstr[1] "%1 alte Nachrichten werden aus Ordner %2 gelöscht ..."
 
-#: job/expirejob.cpp:160
+#: job/expirejob.cpp:164
 #, kde-format
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr ""
 "Die alten Nachrichten aus dem Ordner %1 können nicht gelöscht werden: Der "
 "Ordner %2 wurde nicht gefunden."
 
-#: job/expirejob.cpp:171
+#: job/expirejob.cpp:175
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
@@ -1963,37 +1980,20 @@ msgstr[0] "1 alte Nachricht wird aus Ordner %2 nach Ordner %3 verschoben ..."
 msgstr[1] ""
 "%1 alte Nachrichten werden aus Ordner %2 nach Ordner %3 verschoben ..."
 
-#: job/expirejob.cpp:232
-#, kde-format
-msgid "Removed 1 old message from folder %2."
-msgid_plural "Removed %1 old messages from folder %2."
-msgstr[0] "1 alte Nachricht aus Ordner %2 gelöscht."
-msgstr[1] "%1 alte Nachrichten aus Ordner %2 gelöscht."
-
-#: job/expirejob.cpp:234
+#: job/expirejob.cpp:239
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "1 alte Nachricht von Ordner %2 nach Ordner %3 verschoben."
 msgstr[1] "%1 alte Nachrichten von Ordner %2 nach Ordner %3 verschoben."
 
-#: job/expirejob.cpp:244
-#, kde-format
-msgid "Removing old messages from folder %1 was canceled."
-msgstr "Löschen alter Nachrichten aus Ordner %1 abgebrochen."
-
-#: job/expirejob.cpp:247
+#: job/expirejob.cpp:252
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 "Verschieben alter Nachrichten von Ordner %1 nach Ordner %2 abgebrochen."
 
-#: job/expirejob.cpp:256
-#, kde-format
-msgid "Removing old messages from folder %1 failed."
-msgstr "Das Löschen der alten Nachrichten in Ordner %1 ist fehlgeschlagen."
-
-#: job/expirejob.cpp:258
+#: job/expirejob.cpp:263
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr ""
