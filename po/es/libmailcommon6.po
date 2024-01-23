@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:37+0000\n"
+"POT-Creation-Date: 2024-01-23 02:29+0000\n"
 "PO-Revision-Date: 2023-10-02 22:16+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -1915,59 +1915,59 @@ msgstr "No se pudo abrir el archivo comprimido para escritura."
 msgid "Archiving"
 msgstr "Archivando"
 
-#: job/expirejob.cpp:154
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
-msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "Eliminando 1 mensaje antiguo de la carpeta %2..."
-msgstr[1] "Eliminando %1 mensajes antiguos de la carpeta %2..."
-
-#: job/expirejob.cpp:160
-#, kde-format
-msgid "Cannot expire messages from folder %1: destination folder %2 not found"
-msgstr ""
-"No se puede hacer caducar los mensajes de la carpeta %1: no se encuentra la "
-"carpeta destino %2"
-
-#: job/expirejob.cpp:171
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
-msgstr[0] "Moviendo 1 mensaje antiguo de la carpeta %2 a la carpeta %3..."
-msgstr[1] "Moviendo %1 mensajes antiguos de la carpeta %2 a la carpeta %3..."
-
-#: job/expirejob.cpp:232
+#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "Eliminado 1 mensaje antiguo de la carpeta %2."
 msgstr[1] "Eliminados %1 mensajes antiguos de la carpeta %2."
 
-#: job/expirejob.cpp:234
+#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#, kde-format
+msgid "Removing old messages from folder %1 was canceled."
+msgstr "Se canceló la eliminación de mensajes antiguos de la carpeta %1."
+
+#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#, kde-format
+msgid "Removing old messages from folder %1 failed."
+msgstr "La eliminación de los mensajes antiguos de la carpeta %1 ha fallado."
+
+#: job/expirejob.cpp:157
+#, kde-format
+msgid "Removing 1 old message from folder %2..."
+msgid_plural "Removing %1 old messages from folder %2..."
+msgstr[0] "Eliminando 1 mensaje antiguo de la carpeta %2..."
+msgstr[1] "Eliminando %1 mensajes antiguos de la carpeta %2..."
+
+#: job/expirejob.cpp:164
+#, kde-format
+msgid "Cannot expire messages from folder %1: destination folder %2 not found"
+msgstr ""
+"No se puede hacer caducar los mensajes de la carpeta %1: no se encuentra la "
+"carpeta destino %2"
+
+#: job/expirejob.cpp:175
+#, kde-format
+msgid "Moving 1 old message from folder %2 to folder %3..."
+msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgstr[0] "Moviendo 1 mensaje antiguo de la carpeta %2 a la carpeta %3..."
+msgstr[1] "Moviendo %1 mensajes antiguos de la carpeta %2 a la carpeta %3..."
+
+#: job/expirejob.cpp:239
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Movido 1 mensaje antiguo de la carpeta %2 a la carpeta %3."
 msgstr[1] "Movidos %1 mensajes antiguos de la carpeta %2 a la carpeta %3."
 
-#: job/expirejob.cpp:244
-#, kde-format
-msgid "Removing old messages from folder %1 was canceled."
-msgstr "Se canceló la eliminación de mensajes antiguos de la carpeta %1."
-
-#: job/expirejob.cpp:247
+#: job/expirejob.cpp:252
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 "Se canceló el movimiento de mensajes antiguos de la carpeta %1 a la carpeta "
 "%2."
 
-#: job/expirejob.cpp:256
-#, kde-format
-msgid "Removing old messages from folder %1 failed."
-msgstr "La eliminación de los mensajes antiguos de la carpeta %1 ha fallado."
-
-#: job/expirejob.cpp:258
+#: job/expirejob.cpp:263
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr ""

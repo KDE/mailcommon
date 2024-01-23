@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:37+0000\n"
+"POT-Creation-Date: 2024-01-23 02:29+0000\n"
 "PO-Revision-Date: 2014-09-18 22:35+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -1941,21 +1941,38 @@ msgstr "Archiev lett sik nich schrieven."
 msgid "Archiving"
 msgstr "An't Archiveren"
 
-#: job/expirejob.cpp:154
+#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
+#, kde-format
+msgid "Removed 1 old message from folder %2."
+msgid_plural "Removed %1 old messages from folder %2."
+msgstr[0] "1 ool Naricht ut Orner \"%2\" wegdaan."
+msgstr[1] "%1 ole Narichten ut Orner \"%2\" wegdaan."
+
+#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#, kde-format
+msgid "Removing old messages from folder %1 was canceled."
+msgstr "Wegdoon vun ole Narichten ut Orner \"%1\" wöör afbraken."
+
+#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#, kde-format
+msgid "Removing old messages from folder %1 failed."
+msgstr "Wegdoon vun ole Narichten ut Orner \"%1\" fehlslaan."
+
+#: job/expirejob.cpp:157
 #, kde-format
 msgid "Removing 1 old message from folder %2..."
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "1 ool Naricht warrt ut Orner \"%2\" wegdaan..."
 msgstr[1] "%1 ole Narichten warrt ut Orner \"%2\" wegdaan..."
 
-#: job/expirejob.cpp:160
+#: job/expirejob.cpp:164
 #, kde-format
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr ""
 "Ole Narichten laat sik nich ut Orner \"%1\" wegdoon: Teelorner \"%2\" lett "
 "sik nich finnen"
 
-#: job/expirejob.cpp:171
+#: job/expirejob.cpp:175
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
@@ -1963,37 +1980,20 @@ msgstr[0] "1 ool Naricht warrt ut Orner \"%2\" na Orner \"%3\" verschaven..."
 msgstr[1] ""
 "%1 ole Narichten warrt ut Orner \"%2\" na Orner \"%3\" verschaven..."
 
-#: job/expirejob.cpp:232
-#, kde-format
-msgid "Removed 1 old message from folder %2."
-msgid_plural "Removed %1 old messages from folder %2."
-msgstr[0] "1 ool Naricht ut Orner \"%2\" wegdaan."
-msgstr[1] "%1 ole Narichten ut Orner \"%2\" wegdaan."
-
-#: job/expirejob.cpp:234
+#: job/expirejob.cpp:239
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "1 ool Naricht ut Orner \"%2\" na Orner \"%3\" verschaven."
 msgstr[1] "%1 ole Narichten ut Orner \"%2\" na Orner \"%3\" verschaven."
 
-#: job/expirejob.cpp:244
-#, kde-format
-msgid "Removing old messages from folder %1 was canceled."
-msgstr "Wegdoon vun ole Narichten ut Orner \"%1\" wöör afbraken."
-
-#: job/expirejob.cpp:247
+#: job/expirejob.cpp:252
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 "Verschuven vun ole Narichten ut Orner \"%1\" na Orner \"%2\" wöör afbraken."
 
-#: job/expirejob.cpp:256
-#, kde-format
-msgid "Removing old messages from folder %1 failed."
-msgstr "Wegdoon vun ole Narichten ut Orner \"%1\" fehlslaan."
-
-#: job/expirejob.cpp:258
+#: job/expirejob.cpp:263
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr ""

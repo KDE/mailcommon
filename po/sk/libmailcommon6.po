@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:37+0000\n"
+"POT-Creation-Date: 2024-01-23 02:29+0000\n"
 "PO-Revision-Date: 2019-11-18 12:53+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -1937,30 +1937,7 @@ msgstr "Nepodarilo sa otvoriť archív pre zápis."
 msgid "Archiving"
 msgstr "Archivovanie"
 
-#: job/expirejob.cpp:154
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
-msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "Odstraňovanie 1 starej správy z priečinka %2..."
-msgstr[1] "Odstraňovanie %1 starých správ z priečinka %2..."
-msgstr[2] "Odstraňovanie %1 starých správ z priečinka %2..."
-
-#: job/expirejob.cpp:160
-#, kde-format
-msgid "Cannot expire messages from folder %1: destination folder %2 not found"
-msgstr ""
-"Nemožno skončiť platnosť správ z priečinka %1: cieľový priečinok %2 sa "
-"nenašiel"
-
-#: job/expirejob.cpp:171
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
-msgstr[0] "Presúvam 1 starú správu z priečinka %2 do priečinka %3..."
-msgstr[1] "Presúvam %1 staré správy z priečinka %2 do priečinka %3..."
-msgstr[2] "Presúvam %1 starých správ z priečinka %2 do priečinka %3..."
-
-#: job/expirejob.cpp:232
+#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
@@ -1968,7 +1945,40 @@ msgstr[0] "Odstránená 1 stará správa z priečinka %2."
 msgstr[1] "Odstránené %1 staré správy z priečinka %2."
 msgstr[2] "Odstránených %1 starých správ z priečinka %2."
 
-#: job/expirejob.cpp:234
+#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#, kde-format
+msgid "Removing old messages from folder %1 was canceled."
+msgstr "Odstraňovanie starých správ z priečinka %1 bolo zrušené."
+
+#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#, kde-format
+msgid "Removing old messages from folder %1 failed."
+msgstr "Odstraňovanie starých správ z priečinka %1 zlyhalo."
+
+#: job/expirejob.cpp:157
+#, kde-format
+msgid "Removing 1 old message from folder %2..."
+msgid_plural "Removing %1 old messages from folder %2..."
+msgstr[0] "Odstraňovanie 1 starej správy z priečinka %2..."
+msgstr[1] "Odstraňovanie %1 starých správ z priečinka %2..."
+msgstr[2] "Odstraňovanie %1 starých správ z priečinka %2..."
+
+#: job/expirejob.cpp:164
+#, kde-format
+msgid "Cannot expire messages from folder %1: destination folder %2 not found"
+msgstr ""
+"Nemožno skončiť platnosť správ z priečinka %1: cieľový priečinok %2 sa "
+"nenašiel"
+
+#: job/expirejob.cpp:175
+#, kde-format
+msgid "Moving 1 old message from folder %2 to folder %3..."
+msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgstr[0] "Presúvam 1 starú správu z priečinka %2 do priečinka %3..."
+msgstr[1] "Presúvam %1 staré správy z priečinka %2 do priečinka %3..."
+msgstr[2] "Presúvam %1 starých správ z priečinka %2 do priečinka %3..."
+
+#: job/expirejob.cpp:239
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
@@ -1976,22 +1986,12 @@ msgstr[0] "Presunutá 1 stará správa z priečinka %2 do priečinka %3."
 msgstr[1] "Presunuté %1 staré správy z priečinka %2 do priečinka %3."
 msgstr[2] "Presunutých %1 starých správ z priečinka %2 do priečinka %3."
 
-#: job/expirejob.cpp:244
-#, kde-format
-msgid "Removing old messages from folder %1 was canceled."
-msgstr "Odstraňovanie starých správ z priečinka %1 bolo zrušené."
-
-#: job/expirejob.cpp:247
+#: job/expirejob.cpp:252
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Presun starých správ z priečinka %1 do priečinka %2 bol zrušený."
 
-#: job/expirejob.cpp:256
-#, kde-format
-msgid "Removing old messages from folder %1 failed."
-msgstr "Odstraňovanie starých správ z priečinka %1 zlyhalo."
-
-#: job/expirejob.cpp:258
+#: job/expirejob.cpp:263
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Presun starých správ z priečinka %1 do priečinka %2 zlyhal."

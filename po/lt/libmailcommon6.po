@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:37+0000\n"
+"POT-Creation-Date: 2024-01-23 02:29+0000\n"
 "PO-Revision-Date: 2015-12-29 20:55+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
@@ -1841,30 +1841,7 @@ msgstr ""
 msgid "Archiving"
 msgstr "Archyvavimas"
 
-#: job/expirejob.cpp:154
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
-msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: job/expirejob.cpp:160
-#, kde-format
-msgid "Cannot expire messages from folder %1: destination folder %2 not found"
-msgstr ""
-
-#: job/expirejob.cpp:171
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: job/expirejob.cpp:232
+#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
@@ -1873,7 +1850,40 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: job/expirejob.cpp:234
+#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#, kde-format
+msgid "Removing old messages from folder %1 was canceled."
+msgstr ""
+
+#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#, kde-format
+msgid "Removing old messages from folder %1 failed."
+msgstr ""
+
+#: job/expirejob.cpp:157
+#, kde-format
+msgid "Removing 1 old message from folder %2..."
+msgid_plural "Removing %1 old messages from folder %2..."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: job/expirejob.cpp:164
+#, kde-format
+msgid "Cannot expire messages from folder %1: destination folder %2 not found"
+msgstr ""
+
+#: job/expirejob.cpp:175
+#, kde-format
+msgid "Moving 1 old message from folder %2 to folder %3..."
+msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: job/expirejob.cpp:239
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
@@ -1882,22 +1892,12 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: job/expirejob.cpp:244
-#, kde-format
-msgid "Removing old messages from folder %1 was canceled."
-msgstr ""
-
-#: job/expirejob.cpp:247
+#: job/expirejob.cpp:252
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 
-#: job/expirejob.cpp:256
-#, kde-format
-msgid "Removing old messages from folder %1 failed."
-msgstr ""
-
-#: job/expirejob.cpp:258
+#: job/expirejob.cpp:263
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr ""

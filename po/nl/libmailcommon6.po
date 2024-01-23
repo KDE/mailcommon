@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:37+0000\n"
+"POT-Creation-Date: 2024-01-23 02:29+0000\n"
 "PO-Revision-Date: 2023-09-21 22:29+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -1915,57 +1915,57 @@ msgstr "Het openen van een archief voor schrijven lukt niet."
 msgid "Archiving"
 msgstr "Archiveren"
 
-#: job/expirejob.cpp:154
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
-msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "1 oud bericht wordt uit de map %2 verwijderd..."
-msgstr[1] "%1 oude berichten worden uit de map %2 verwijderd..."
-
-#: job/expirejob.cpp:160
-#, kde-format
-msgid "Cannot expire messages from folder %1: destination folder %2 not found"
-msgstr ""
-"Kan geen berichten laten verlopen van map %1: de bestemmingsmap %2 werd niet "
-"gevonden"
-
-#: job/expirejob.cpp:171
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
-msgstr[0] "Bezig 1 oud bericht uit map %2 te verplaatsen naar map %3..."
-msgstr[1] "Bezig %1 oude berichten uit map %2 te verplaatsen naar map %3..."
-
-#: job/expirejob.cpp:232
+#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "1 oud bericht uit map %2 verwijderd."
 msgstr[1] "%1 oude berichten uit map %2 verwijderd."
 
-#: job/expirejob.cpp:234
+#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#, kde-format
+msgid "Removing old messages from folder %1 was canceled."
+msgstr "Verwijdering van oude berichten uit map %1 werd geannuleerd."
+
+#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#, kde-format
+msgid "Removing old messages from folder %1 failed."
+msgstr "Het verwijderen van oude berichten uit map %1 is mislukt."
+
+#: job/expirejob.cpp:157
+#, kde-format
+msgid "Removing 1 old message from folder %2..."
+msgid_plural "Removing %1 old messages from folder %2..."
+msgstr[0] "1 oud bericht wordt uit de map %2 verwijderd..."
+msgstr[1] "%1 oude berichten worden uit de map %2 verwijderd..."
+
+#: job/expirejob.cpp:164
+#, kde-format
+msgid "Cannot expire messages from folder %1: destination folder %2 not found"
+msgstr ""
+"Kan geen berichten laten verlopen van map %1: de bestemmingsmap %2 werd niet "
+"gevonden"
+
+#: job/expirejob.cpp:175
+#, kde-format
+msgid "Moving 1 old message from folder %2 to folder %3..."
+msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgstr[0] "Bezig 1 oud bericht uit map %2 te verplaatsen naar map %3..."
+msgstr[1] "Bezig %1 oude berichten uit map %2 te verplaatsen naar map %3..."
+
+#: job/expirejob.cpp:239
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "1 oud bericht uit map %2 verplaatst naar map %3."
 msgstr[1] "%1 oude berichten uit map %2 verplaatst naar map %3."
 
-#: job/expirejob.cpp:244
-#, kde-format
-msgid "Removing old messages from folder %1 was canceled."
-msgstr "Verwijdering van oude berichten uit map %1 werd geannuleerd."
-
-#: job/expirejob.cpp:247
+#: job/expirejob.cpp:252
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Verplaatsing van oude berichten van map %1 naar %2 werd geannuleerd."
 
-#: job/expirejob.cpp:256
-#, kde-format
-msgid "Removing old messages from folder %1 failed."
-msgstr "Het verwijderen van oude berichten uit map %1 is mislukt."
-
-#: job/expirejob.cpp:258
+#: job/expirejob.cpp:263
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Het verplaatsen van oude berichten van map %1 naar %2 is mislukt."

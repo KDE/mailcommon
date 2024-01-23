@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:37+0000\n"
+"POT-Creation-Date: 2024-01-23 02:29+0000\n"
 "PO-Revision-Date: 2022-08-03 10:15+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -1887,55 +1887,55 @@ msgstr "Kunde inte öppna arkiv för skrivning."
 msgid "Archiving"
 msgstr "Arkiverar"
 
-#: job/expirejob.cpp:154
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
-msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "Tar bort 1 gammalt brev från korgen %2..."
-msgstr[1] "Tar bort %1 gamla brev från korgen %2..."
-
-#: job/expirejob.cpp:160
-#, kde-format
-msgid "Cannot expire messages from folder %1: destination folder %2 not found"
-msgstr "Kan inte låta brev från %1 utgå: Målkorgen %2 hittades inte."
-
-#: job/expirejob.cpp:171
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
-msgstr[0] "Flyttar 1 gammalt brev från korgen %2 till korgen %3..."
-msgstr[1] "Flyttar %1 gamla brev från korgen %2 till korgen %3..."
-
-#: job/expirejob.cpp:232
+#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "Tog bort 1 gammalt brev från korgen %2."
 msgstr[1] "Tog bort %1 gamla brev från korgen %2."
 
-#: job/expirejob.cpp:234
+#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#, kde-format
+msgid "Removing old messages from folder %1 was canceled."
+msgstr "Borttag av gamla brev från korgen %1 avbröts."
+
+#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#, kde-format
+msgid "Removing old messages from folder %1 failed."
+msgstr "Misslyckades med att ta bort gamla brev från korgen %1."
+
+#: job/expirejob.cpp:157
+#, kde-format
+msgid "Removing 1 old message from folder %2..."
+msgid_plural "Removing %1 old messages from folder %2..."
+msgstr[0] "Tar bort 1 gammalt brev från korgen %2..."
+msgstr[1] "Tar bort %1 gamla brev från korgen %2..."
+
+#: job/expirejob.cpp:164
+#, kde-format
+msgid "Cannot expire messages from folder %1: destination folder %2 not found"
+msgstr "Kan inte låta brev från %1 utgå: Målkorgen %2 hittades inte."
+
+#: job/expirejob.cpp:175
+#, kde-format
+msgid "Moving 1 old message from folder %2 to folder %3..."
+msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgstr[0] "Flyttar 1 gammalt brev från korgen %2 till korgen %3..."
+msgstr[1] "Flyttar %1 gamla brev från korgen %2 till korgen %3..."
+
+#: job/expirejob.cpp:239
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Flyttade 1 gammalt brev från korgen %2 till korgen %3."
 msgstr[1] "Flyttade %1 gamla brev från korgen %2 till korgen %3."
 
-#: job/expirejob.cpp:244
-#, kde-format
-msgid "Removing old messages from folder %1 was canceled."
-msgstr "Borttag av gamla brev från korgen %1 avbröts."
-
-#: job/expirejob.cpp:247
+#: job/expirejob.cpp:252
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Förflyttning av gamla brev från korgen %1 till korgen %2 avbröts."
 
-#: job/expirejob.cpp:256
-#, kde-format
-msgid "Removing old messages from folder %1 failed."
-msgstr "Misslyckades med att ta bort gamla brev från korgen %1."
-
-#: job/expirejob.cpp:258
+#: job/expirejob.cpp:263
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Misslyckades med att flytta brev från korgen %1 till korgen %2."

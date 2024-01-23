@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:37+0000\n"
+"POT-Creation-Date: 2024-01-23 02:29+0000\n"
 "PO-Revision-Date: 2024-01-03 14:17+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -1901,57 +1901,57 @@ msgstr "Ne eblas malfermi arkivon por skribado."
 msgid "Archiving"
 msgstr "Arkivado"
 
-#: job/expirejob.cpp:154
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
-msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "Forigante 1 malnovan mesaĝon el dosierujo %2..."
-msgstr[1] "Forigante %1 malnovajn mesaĝojn el dosierujo %2..."
-
-#: job/expirejob.cpp:160
-#, kde-format
-msgid "Cannot expire messages from folder %1: destination folder %2 not found"
-msgstr ""
-"Ne povas eksvalidigi mesaĝojn el dosierujo %1: celdosierujo %2 ne trovita"
-
-#: job/expirejob.cpp:171
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
-msgstr[0] "Movante 1 malnovan mesaĝon de dosierujo %2 al dosierujo %3..."
-msgstr[1] "Movante %1 malnovajn mesaĝojn de dosierujo %2 al dosierujo %3..."
-
-#: job/expirejob.cpp:232
+#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "Forigis 1 malnovan mesaĝon de dosierujo %2."
 msgstr[1] "Forigis %1 malnovajn mesaĝojn de dosierujo %2."
 
-#: job/expirejob.cpp:234
+#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#, kde-format
+msgid "Removing old messages from folder %1 was canceled."
+msgstr "Forigo de malnovaj mesaĝoj el dosierujo %1 estis nuligita."
+
+#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#, kde-format
+msgid "Removing old messages from folder %1 failed."
+msgstr "Forigo de malnovaj mesaĝoj el dosierujo %1 malsukcesis."
+
+#: job/expirejob.cpp:157
+#, kde-format
+msgid "Removing 1 old message from folder %2..."
+msgid_plural "Removing %1 old messages from folder %2..."
+msgstr[0] "Forigante 1 malnovan mesaĝon el dosierujo %2..."
+msgstr[1] "Forigante %1 malnovajn mesaĝojn el dosierujo %2..."
+
+#: job/expirejob.cpp:164
+#, kde-format
+msgid "Cannot expire messages from folder %1: destination folder %2 not found"
+msgstr ""
+"Ne povas eksvalidigi mesaĝojn el dosierujo %1: celdosierujo %2 ne trovita"
+
+#: job/expirejob.cpp:175
+#, kde-format
+msgid "Moving 1 old message from folder %2 to folder %3..."
+msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgstr[0] "Movante 1 malnovan mesaĝon de dosierujo %2 al dosierujo %3..."
+msgstr[1] "Movante %1 malnovajn mesaĝojn de dosierujo %2 al dosierujo %3..."
+
+#: job/expirejob.cpp:239
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Movis 1 malnovan mesaĝon de dosierujo %2 al dosierujo %3."
 msgstr[1] "Movis %1 malnovajn mesaĝojn de dosierujo %2 al dosierujo %3."
 
-#: job/expirejob.cpp:244
-#, kde-format
-msgid "Removing old messages from folder %1 was canceled."
-msgstr "Forigo de malnovaj mesaĝoj el dosierujo %1 estis nuligita."
-
-#: job/expirejob.cpp:247
+#: job/expirejob.cpp:252
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 "Movi malnovajn mesaĝojn de la dosierujo %1 al la dosierujo %2 estis nuligita."
 
-#: job/expirejob.cpp:256
-#, kde-format
-msgid "Removing old messages from folder %1 failed."
-msgstr "Forigo de malnovaj mesaĝoj el dosierujo %1 malsukcesis."
-
-#: job/expirejob.cpp:258
+#: job/expirejob.cpp:263
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr ""
