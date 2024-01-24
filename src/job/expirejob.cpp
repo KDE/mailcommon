@@ -186,9 +186,9 @@ void ExpireJob::done()
                 }
             }
         }
-    }
-    if (!str.isEmpty()) {
-        BroadcastStatus::instance()->setStatusMsg(str);
+        if (!str.isEmpty()) {
+            BroadcastStatus::instance()->setStatusMsg(str);
+        }
     }
 
     if (!moving) {
