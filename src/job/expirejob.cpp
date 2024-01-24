@@ -57,11 +57,10 @@ void ExpireJob::kill()
 
 void ExpireJob::execute()
 {
-    mMaxUnreadTime = 0;
-    mMaxReadTime = 0;
-
     const MailCommon::ExpireCollectionAttribute *expirationAttribute = mSrcFolder.attribute<MailCommon::ExpireCollectionAttribute>();
     if (expirationAttribute) {
+        mMaxUnreadTime = 0;
+        mMaxReadTime = 0;
         int unreadDays;
         int readDays;
         mExpireMessagesWithoutInvalidDate = expirationAttribute->expireMessagesWithValidDate();
@@ -173,7 +172,7 @@ void ExpireJob::done()
 
                     auto job = new ExpireMoveJob(this);
                     job->setRemovedMsgs(mRemovedMsgs);
-                    job->setSrcFolderName(mSrcFolder.name());
+                    job->setSrcFolderName(srcFolderName);
                     job->setMoveToFolder(mMoveToFolder);
                     connect(job, &ExpireMoveJob::expireMovedDone, this, &ExpireJob::slotExpireDeleteDone);
                     job->start();
