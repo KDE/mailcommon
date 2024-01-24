@@ -24,12 +24,17 @@ public:
     [[nodiscard]] Akonadi::Collection moveToFolder() const;
     void setMoveToFolder(const Akonadi::Collection &newMoveToFolder);
 
+    [[nodiscard]] QString srcFolderName() const;
+    void setSrcFolderName(const QString &newSrcFolderName);
+
 Q_SIGNALS:
     void expireMovedDone();
 
 private:
     void slotMoveDone(KJob *job);
+    void slotExpireDone(KJob *job);
     void finished();
+    QString mSrcFolderName;
     Akonadi::Collection mMoveToFolder;
     Akonadi::Item::List mRemovedMsgs;
     QList<KJob *> mRunningJobs;
