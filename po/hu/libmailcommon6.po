@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-23 02:29+0000\n"
+"POT-Creation-Date: 2024-01-25 02:22+0000\n"
 "PO-Revision-Date: 2024-01-20 00:04+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -1915,19 +1915,19 @@ msgstr "Nem sikerült megnyitni írásra az archívumot."
 msgid "Archiving"
 msgstr "Archiválás"
 
-#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
+#: job/expiredeletejob.cpp:66
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "1 régi üzenet eltávolítva a(z) %2 mappából."
 msgstr[1] "%1 régi üzenet eltávolítva a(z) %2 mappából."
 
-#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
 msgstr "A régi üzenetek eltávolítása (%1 mappa) félbe lett szakítva."
 
-#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
 msgstr "Nem sikerült eltávolítani a régi üzeneteket a(z) %1 mappából."
@@ -1946,28 +1946,28 @@ msgstr ""
 "Nem sikerült eltávolítani az elévült üzeneteket a(z) %1 mappából: a célmappa "
 "(%2) nem található"
 
-#: job/expirejob.cpp:175
+#: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
 msgstr[0] "1 régi üzenet áthelyezése a(z) %2 mappából a(z) %3 mappába…"
 msgstr[1] "%1 régi üzenet áthelyezése a(z) %2 mappából a(z) %3 mappába…"
 
-#: job/expirejob.cpp:239
+#: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "1 régi üzenet áthelyezve a(z) %2 mappából a(z) %3 mappába."
 msgstr[1] "%1 régi üzenet áthelyezve a(z) %2 mappából a(z) %3 mappába."
 
-#: job/expirejob.cpp:252
+#: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 "A régi üzenetek átmozgatása (a(z) %1 mappából a(z) %2 mappába) félbe lett "
 "szakítva."
 
-#: job/expirejob.cpp:263
+#: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr ""

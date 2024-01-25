@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-23 02:29+0000\n"
+"POT-Creation-Date: 2024-01-25 02:22+0000\n"
 "PO-Revision-Date: 2023-09-21 17:35+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -1901,7 +1901,7 @@ msgstr "Arhiva ni mogoče odpreti za pisanje."
 msgid "Archiving"
 msgstr "Arhiviranje"
 
-#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
+#: job/expiredeletejob.cpp:66
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
@@ -1910,12 +1910,12 @@ msgstr[1] "%1 stari sporočili odstranjeni iz mape %2."
 msgstr[2] "%1 stara sporočila odstranjena iz mape %2."
 msgstr[3] "%1 starih sporočil odstranjeno iz mape %2."
 
-#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
 msgstr "Odstranjevanje starih sporočil iz mape %1 je bilo preklicano."
 
-#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
 msgstr "Odstranjevanje starih sporočil iz mape %1 ni uspelo."
@@ -1936,7 +1936,7 @@ msgstr ""
 "Sporočil iz mape %1 ni mogoče označiti kot pretečenih: ciljne mape %2 ni "
 "bilo mogoče najti"
 
-#: job/expirejob.cpp:175
+#: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
@@ -1945,7 +1945,7 @@ msgstr[1] "Premikanje %1 starih sporočil iz mape %2 v mapo %3..."
 msgstr[2] "Premikanje %1 starih sporočil iz mape %2 v mapo %3..."
 msgstr[3] "Premikanje %1 starih sporočil iz mape %2 v mapo %3..."
 
-#: job/expirejob.cpp:239
+#: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
@@ -1954,12 +1954,12 @@ msgstr[1] "%1 stari sporočili premaknjeni iz mape %2 v mapo %3."
 msgstr[2] "%1 stara sporočila premaknjena iz mape %2 v mapo %3."
 msgstr[3] "%1 starih sporočil premaknjenih iz mape %2 v mapo %3."
 
-#: job/expirejob.cpp:252
+#: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Premikanje starih sporočil iz mape %1 v mapo %2 je bilo preklicano."
 
-#: job/expirejob.cpp:263
+#: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Premikanje starih sporočil iz mape %1 v mapo %2 ni uspelo."

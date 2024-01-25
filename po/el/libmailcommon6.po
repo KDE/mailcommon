@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-23 02:29+0000\n"
+"POT-Creation-Date: 2024-01-25 02:22+0000\n"
 "PO-Revision-Date: 2014-04-11 22:49+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -1975,19 +1975,19 @@ msgstr "Αδυναμία ανοίγματος αρχειοθήκης προς ε
 msgid "Archiving"
 msgstr "Αρχειοθέτηση"
 
-#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
+#: job/expiredeletejob.cpp:66
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "Αφαιρέθηκε 1 παλιό μήνυμα από το φάκελο %2."
 msgstr[1] "Αφαιρέθηκαν %1 παλιά μηνύματα από το φάκελο %2."
 
-#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
 msgstr "Η μετακίνηση των παλιών μηνυμάτων από το φάκελο %1 ακυρώθηκε."
 
-#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
 msgstr "Η αφαίρεση των παλιών μηνυμάτων από τον φάκελο %1 απέτυχε."
@@ -2005,27 +2005,27 @@ msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr ""
 "Αδύνατη η λήξη μηνυμάτων του φακέλου %1: Ο φάκελος προορισμού %2 δεν βρέθηκε"
 
-#: job/expirejob.cpp:175
+#: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
 msgstr[0] "Μετακίνηση 1 παλιού μηνύματος από το φάκελο %2 στο φάκελο %3..."
 msgstr[1] "Μετακίνηση %1 παλαιών μηνυμάτων από το φάκελο %2 στο φάκελο %3..."
 
-#: job/expirejob.cpp:239
+#: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Μετακινήθηκε 1 παλιό μήνυμα από το φάκελο %2 στο φάκελο %3."
 msgstr[1] "Μετακινήθηκαν %1 παλιά μηνύματα από το φάκελο %2 στο φάκελο %3."
 
-#: job/expirejob.cpp:252
+#: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 "Η μετακίνηση των παλιών μηνυμάτων από το φάκελο %1 στο φάκελο %2 ακυρώθηκε."
 
-#: job/expirejob.cpp:263
+#: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr ""

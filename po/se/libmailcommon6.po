@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-23 02:29+0000\n"
+"POT-Creation-Date: 2024-01-25 02:22+0000\n"
 "PO-Revision-Date: 2009-10-09 13:24+0200\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -1811,19 +1811,19 @@ msgstr ""
 msgid "Archiving"
 msgstr ""
 
-#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
+#: job/expiredeletejob.cpp:66
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "Válddii eret ovtta boares reivve %2 máhpas."
 msgstr[1] "Válddii eret %1 boares reivve %2 máhpas."
 
-#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
 msgstr "Gaskkalduhtii váldit eret reivviid %1-máhpas."
 
-#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
 msgstr "Filtii váldit eret reivviid %1-máhpas."
@@ -1840,26 +1840,26 @@ msgstr[1] "Váldimin eret %1 boares reivve %2 máhpas …"
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr "Ii sáhte boarásmahttit reivviid %1 máhpas: ulbmilmáhppa %2 ii gávdno"
 
-#: job/expirejob.cpp:175
+#: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
 msgstr[0] "Sirdimin ovtta boares reivve %2 máhpas %3 máhppii …"
 msgstr[1] "Sirdimin %1 boares reivve %2 máhpas %3 máhppii …"
 
-#: job/expirejob.cpp:239
+#: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Sirddii ovtta boares reivve %2 máhpas %3 máhppii."
 msgstr[1] "Sirddii %1 boares reivve %2 máhpas %3 máhppii."
 
-#: job/expirejob.cpp:252
+#: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 
-#: job/expirejob.cpp:263
+#: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Filtii sirdit boares reivviid %1 máhpas %2 máhppii."
