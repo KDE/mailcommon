@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-23 00:38+0000\n"
+"POT-Creation-Date: 2024-01-25 00:37+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -1961,7 +1961,7 @@ msgstr "Не могу да отворим архиву за писање."
 msgid "Archiving"
 msgstr "Архивирам"
 
-#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
+#: job/expiredeletejob.cpp:66
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
@@ -1970,12 +1970,12 @@ msgstr[1] "Уклоњене %1 старе поруке из фасцикле %2.
 msgstr[2] "Уклоњено %1 старих порука из фасцикле %2."
 msgstr[3] "Уклоњена 1 стара порука из фасцикле %2."
 
-#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
 msgstr "Уклањање старих порука из фасцикле %1 је отказано."
 
-#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
 msgstr "Уклањање старих порука из фасцикле %1 није успело."
@@ -1996,7 +1996,7 @@ msgstr ""
 "Не могу да уклоним застареле поруке из фасцикле %1: одредишна фасцикла %2 "
 "није нађена"
 
-#: job/expirejob.cpp:175
+#: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
@@ -2005,7 +2005,7 @@ msgstr[1] "Премештам %1 старе поруке из фасцикле %
 msgstr[2] "Премештам %1 старих порука из фасцикле %2 у фасциклу %3..."
 msgstr[3] "Премештам 1 стару поруку из фасцикле %2 у фасциклу %3..."
 
-#: job/expirejob.cpp:239
+#: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
@@ -2014,12 +2014,12 @@ msgstr[1] "Премештене %1 старе поруке из фасцикле
 msgstr[2] "Премештено %1 старих порука из фасцикле %2 у фасциклу %3."
 msgstr[3] "Премештена 1 стара порука из фасцикле %2 у фасциклу %3."
 
-#: job/expirejob.cpp:252
+#: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Премештање старих порука из фасцикле %1 у фасциклу %2 је отказано."
 
-#: job/expirejob.cpp:263
+#: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Премештање старих порука из фасцикле %1 у фасциклу %2 није успело."

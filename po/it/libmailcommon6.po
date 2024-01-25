@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-23 00:38+0000\n"
+"POT-Creation-Date: 2024-01-25 00:37+0000\n"
 "PO-Revision-Date: 2023-09-21 13:33+0200\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -1918,19 +1918,19 @@ msgstr "Impossibile aprire l'archivio per la scrittura."
 msgid "Archiving"
 msgstr "Archiviazione"
 
-#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
+#: job/expiredeletejob.cpp:66
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "Rimosso 1 messaggio vecchio dalla cartella %2."
 msgstr[1] "Rimossi %1 messaggi vecchi dalla cartella %2."
 
-#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
 msgstr "Annullata cancellazione vecchi messaggi dalla cartella %1."
 
-#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
 msgstr "Cancellazione vecchi messaggi dalla cartella %1 non riuscita."
@@ -1949,7 +1949,7 @@ msgstr ""
 "Impossibile effettuare la scadenza dei messaggi della cartella %1: cartella "
 "di destinazione %2 non trovata"
 
-#: job/expirejob.cpp:175
+#: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
@@ -1958,20 +1958,20 @@ msgstr[0] ""
 msgstr[1] ""
 "Spostamento di %1 vecchi messaggi dalla cartella %2 alla cartella %3..."
 
-#: job/expirejob.cpp:239
+#: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Spostato 1 vecchio messaggio dalla cartella %2 alla cartella %3."
 msgstr[1] "Spostati %1 vecchi messaggi dalla cartella %2 alla cartella %3."
 
-#: job/expirejob.cpp:252
+#: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 "Spostamento vecchi messaggi dalla cartella %1 alla cartella %2 annullato."
 
-#: job/expirejob.cpp:263
+#: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr ""

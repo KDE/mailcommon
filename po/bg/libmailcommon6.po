@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-23 00:38+0000\n"
+"POT-Creation-Date: 2024-01-25 00:37+0000\n"
 "PO-Revision-Date: 2023-09-24 22:20+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: \n"
@@ -1916,19 +1916,19 @@ msgstr "Не може да се отвори архив за писане."
 msgid "Archiving"
 msgstr "Архивиране"
 
-#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
+#: job/expiredeletejob.cpp:66
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "Премахнато 1 старо съобщение от папка %2."
 msgstr[1] "Премахнати %1 стари съобщения от папка %2."
 
-#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
 msgstr "Премахването на стари съобщения от папка %1 бе отменено."
 
-#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
 msgstr "Премахването на стари съобщения от папка %1 е неуспешно."
@@ -1947,26 +1947,26 @@ msgstr ""
 "Не могат да се бракуват съобщенията от папка %1: целевата папка %2 не е "
 "намерена"
 
-#: job/expirejob.cpp:175
+#: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
 msgstr[0] "Преместване на 1 старо съобщение от папка %2 в папка %3..."
 msgstr[1] "Преместване на %1 стари съобщения от папка %2 в папка %3..."
 
-#: job/expirejob.cpp:239
+#: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Преместено 1 старо съобщение от папка %2 в папка %3."
 msgstr[1] "Преместихте%1 стари съобщения от папка %2 в папка %3."
 
-#: job/expirejob.cpp:252
+#: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Преместването на стари съобщения от папка %1 в папка %2 бе отменено."
 
-#: job/expirejob.cpp:263
+#: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Преместването на стари съобщения от папка %1 в папка %2 е неуспешно."

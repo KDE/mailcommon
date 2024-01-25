@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-23 00:38+0000\n"
+"POT-Creation-Date: 2024-01-25 00:37+0000\n"
 "PO-Revision-Date: 2023-09-24 15:02+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -1902,19 +1902,19 @@ msgstr "Non é posíbel abrir o arquivo para escribir nel."
 msgid "Archiving"
 msgstr "Arquivado"
 
-#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
+#: job/expiredeletejob.cpp:66
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "Retirouse unha mensaxe vella do cartafol %2."
 msgstr[1] "Retiráronse %1 mensaxes vellas do cartafol %2."
 
-#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
 msgstr "Cancelouse a retirada de mensaxes vellas do cartafol %1."
 
-#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
 msgstr "Fallou a retirada de mensaxes vellas do cartafol %1."
@@ -1933,27 +1933,27 @@ msgstr ""
 "Non é posíbel facer caducar as mensaxes do cartafol %1: non se atopou o "
 "cartafol de destino %2"
 
-#: job/expirejob.cpp:175
+#: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
 msgstr[0] "Movendo unha mensaxe vella do cartafol %2 para o cartafol %3…"
 msgstr[1] "Movendo %1 mensaxes vellas do cartafol %2 para o cartafol %3…"
 
-#: job/expirejob.cpp:239
+#: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Moveuse unha mensaxe vella do cartafol %2 para o cartafol %3."
 msgstr[1] "Movéronse %1 mensaxes vellas do cartafol %2 para o cartafol %3."
 
-#: job/expirejob.cpp:252
+#: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 "Cancelouse o traslado das mensaxes antigas do cartafol %1 para o cartafol %2."
 
-#: job/expirejob.cpp:263
+#: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr ""

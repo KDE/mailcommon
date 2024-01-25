@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-23 00:38+0000\n"
+"POT-Creation-Date: 2024-01-25 00:37+0000\n"
 "PO-Revision-Date: 2023-09-21 13:25+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -1914,7 +1914,7 @@ msgstr "Не вдалося відкрити файл архіву для зап
 msgid "Archiving"
 msgstr "Архівування"
 
-#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
+#: job/expiredeletejob.cpp:66
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
@@ -1923,12 +1923,12 @@ msgstr[1] "Вилучено %1 старих повідомлення з теки
 msgstr[2] "Вилучено %1 старих повідомлень з теки %2."
 msgstr[3] "Вилучено одне старе повідомлення з теки %2."
 
-#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
 msgstr "Вилучення старих повідомлень з теки %1 було скасовано."
 
-#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
 msgstr "Помилка під час вилученні старих повідомлень з теки %1."
@@ -1949,7 +1949,7 @@ msgstr ""
 "Не вдається вилучити застарілі повідомлення з теки %1: не знайдено теку "
 "призначення %2"
 
-#: job/expirejob.cpp:175
+#: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
@@ -1958,7 +1958,7 @@ msgstr[1] "Пересування %1 старих повідомлень з те
 msgstr[2] "Пересування %1 старих повідомлень з теки %2 до теки %3…"
 msgstr[3] "Пересування одного старого повідомлення з теки %2 до теки %3…"
 
-#: job/expirejob.cpp:239
+#: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
@@ -1967,12 +1967,12 @@ msgstr[1] "Пересунуто %1 старих повідомлення з те
 msgstr[2] "Пересунуто %1 старих повідомлень з теки %2 до теки %3."
 msgstr[3] "Пересунуто одне старе повідомлення з теки %2 до теки %3."
 
-#: job/expirejob.cpp:252
+#: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Пересування старих повідомлень з теки %1 до теки %2 було скасовано."
 
-#: job/expirejob.cpp:263
+#: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Помилка при пересуванні старих повідомлень з теки %1 до теки %2."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-23 00:38+0000\n"
+"POT-Creation-Date: 2024-01-25 00:37+0000\n"
 "PO-Revision-Date: 2014-01-31 19:29+0100\n"
 "Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
 "Language-Team: bs <bs@kde.org>\n"
@@ -1967,7 +1967,7 @@ msgstr "Nije moguće otvoriti arhivu za pisanje."
 msgid "Archiving"
 msgstr "Arhiviranje"
 
-#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
+#: job/expiredeletejob.cpp:66
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
@@ -1975,12 +1975,12 @@ msgstr[0] "Uklonjena %1 stara poruka iz direktorija %2."
 msgstr[1] "Uklonjene %1 stare poruke iz direktorija %2."
 msgstr[2] "Uklonjeno %1 starih poruka iz direktorija %2."
 
-#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
 msgstr "Uklanjanje starih poruka iz fascikla %1 je prekinuto."
 
-#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
 msgstr "Uklanjanje starih poruka iz fascikla %1 nije uspjelo."
@@ -2000,7 +2000,7 @@ msgstr ""
 "Ne mogu napraviti istek poruka iz fascikla %1: odredišni fascikl %2 ne "
 "postoji"
 
-#: job/expirejob.cpp:175
+#: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
@@ -2008,7 +2008,7 @@ msgstr[0] "Pomijeranje %1 stare poruke iz direktorija %2 u direktorij %3..."
 msgstr[1] "Pomijeranje %1 stare poruke iz direktorija %2 u direktorij %3..."
 msgstr[2] "Pomijeranje %1 starih poruka iz direktorija %2 u direktorij %3..."
 
-#: job/expirejob.cpp:239
+#: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
@@ -2016,12 +2016,12 @@ msgstr[0] "Pomjerena %1 stara poruka iz direktorija %2 u direktorij %3."
 msgstr[1] "Pomjerene %1 stare poruke iz direktorija %2 u direktorij %3."
 msgstr[2] "Pomjereno %1 starih poruka iz direktorija %2 u direktorij %3."
 
-#: job/expirejob.cpp:252
+#: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Premještanje starih poruka iz fascikla %1 u fascikl %2 je prekinuto."
 
-#: job/expirejob.cpp:263
+#: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Premještanje starih poruka iz fascikla %1 u fascikl %2 nije uspjelo."

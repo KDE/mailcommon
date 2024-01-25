@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-23 00:38+0000\n"
+"POT-Creation-Date: 2024-01-25 00:37+0000\n"
 "PO-Revision-Date: 2020-08-08 16:45+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -1912,19 +1912,19 @@ msgstr "Kan ikke åbne arkiv til skrivning."
 msgid "Archiving"
 msgstr "Arkivering"
 
-#: job/expiredeletejob.cpp:66 job/expirejob.cpp:237
+#: job/expiredeletejob.cpp:66
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "Fjernede 1 gammelt brev fra mappen %2."
 msgstr[1] "Fjernede %1 gamle breve fra mappen %2."
 
-#: job/expiredeletejob.cpp:70 job/expirejob.cpp:249
+#: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
 msgstr "Fjernelse af gamle breve fra mappen %1 blev annulleret."
 
-#: job/expiredeletejob.cpp:74 job/expirejob.cpp:261
+#: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
 msgstr "Fjernelse af gamle breve fra mappen %1 mislykkedes."
@@ -1941,26 +1941,26 @@ msgstr[1] "Fjerner %1 gamle breve fra mappen %2..."
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr "Kan ikke lade breve fra mappen %1 udløbe: målmappen %2 ikke fundet"
 
-#: job/expirejob.cpp:175
+#: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
 msgstr[0] "Flytter 1 gammelt brev fra mappen %2 til mappen %3..."
 msgstr[1] "Flytter %1 gamle breve fra mappen %2 til mappen %3..."
 
-#: job/expirejob.cpp:239
+#: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Flyttede 1 gammelt brev mappen %2 til mappen %3."
 msgstr[1] "Flyttede %1 gamle breve mappen %2 til mappen %3."
 
-#: job/expirejob.cpp:252
+#: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Flytning af gamle breve fra mappen %1 til mappen %2 blev annulleret."
 
-#: job/expirejob.cpp:263
+#: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Flytning af gamle breve fra mappen %1 til mappen %2 mislykkedes."
