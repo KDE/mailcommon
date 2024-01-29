@@ -38,7 +38,7 @@ bool SearchRuleEncryption::matches(const Akonadi::Item &item) const
     if (FilterLog::instance()->isLogging()) {
         QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>") : QStringLiteral("<font color=#FF0000>0 = </font>"));
         msg += FilterLog::recode(asString());
-        msg += QLatin1String(" ( <i>") + contents() + QLatin1String("</i> )"); // TODO change with locale?
+        msg += QLatin1StringView(" ( <i>") + contents() + QLatin1String("</i> )"); // TODO change with locale?
         FilterLog::instance()->add(msg, FilterLog::RuleResult);
     }
     return rc;

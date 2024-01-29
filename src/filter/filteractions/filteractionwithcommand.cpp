@@ -120,7 +120,7 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Messa
         // returns "0 and 1 and %1", so we must call .arg as
         // many times as there are %n's, regardless of their multiplicity.
         if ((*it) == -1) {
-            result.replace(QLatin1String("%-1"), tempFileName);
+            result.replace(QLatin1StringView("%-1"), tempFileName);
         } else {
             result = result.arg(tempFileName);
         }
@@ -162,8 +162,8 @@ void substituteMessageHeaders(const KMime::Message::Ptr &aMsg, QString &result)
  */
 void substituteCommandLineArgsForItem(const Akonadi::Item &item, QString &commandLine)
 {
-    commandLine.replace(QLatin1String("%{itemurl}"), item.url(Akonadi::Item::UrlWithMimeType).url());
-    commandLine.replace(QLatin1String("%{itemid}"), QString::number(item.id()));
+    commandLine.replace(QLatin1StringView("%{itemurl}"), item.url(Akonadi::Item::UrlWithMimeType).url());
+    commandLine.replace(QLatin1StringView("%{itemid}"), QString::number(item.id()));
 }
 }
 
@@ -203,7 +203,7 @@ FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &co
     // the user may have specified. In the long run, we
     // shouldn't be using tempfiles at all for this class, due
     // to security aspects. (mmutz)
-    commandLine = QLatin1Char('(') + commandLine + QLatin1String(") <") + inFile->fileName();
+    commandLine = QLatin1Char('(') + commandLine + QLatin1StringView(") <") + inFile->fileName();
 
     // write message to file
     QString tempFileName = inFile->fileName();

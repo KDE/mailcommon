@@ -61,7 +61,7 @@ QString FilterActionWithString::argsAsString() const
 
 QString FilterActionWithString::displayString() const
 {
-    return label() + QLatin1String(" \"") + argsAsString().toHtmlEscaped() + QLatin1String("\"");
+    return label() + QLatin1StringView(" \"") + argsAsString().toHtmlEscaped() + QLatin1String("\"");
 }
 
 #include "moc_filteractionwithstring.cpp"

@@ -59,12 +59,12 @@ bool MailCommon::Util::isVirtualCollection(const Akonadi::Collection &collection
 
 bool MailCommon::Util::isVirtualCollection(const QString &resource)
 {
-    if (resource == QLatin1String("akonadi_search_resource")) {
+    if (resource == QLatin1StringView("akonadi_search_resource")) {
         return true;
     }
 
     const auto type = Akonadi::AgentManager::self()->type(resource);
-    return type.capabilities().contains(QLatin1String("Virtual"));
+    return type.capabilities().contains(QLatin1StringView("Virtual"));
 }
 
 bool MailCommon::Util::isLocalCollection(const QString &resource)
@@ -159,10 +159,10 @@ bool MailCommon::Util::isMailAgent(const Akonadi::AgentInstance &instance, bool 
     }
 
     const QStringList capabilities(instance.type().capabilities());
-    if (capabilities.contains(QLatin1String("Resource")) && !capabilities.contains(QLatin1String("Virtual"))
-        && !capabilities.contains(QLatin1String("MailTransport")) && !capabilities.contains(QLatin1String("Autostart"))) {
+    if (capabilities.contains(QLatin1StringView("Resource")) && !capabilities.contains(QLatin1String("Virtual"))
+        && !capabilities.contains(QLatin1StringView("MailTransport")) && !capabilities.contains(QLatin1String("Autostart"))) {
         return true;
-    } else if (!excludeMailTransport && instance.identifier() == QLatin1String("akonadi_maildispatcher_agent")) {
+    } else if (!excludeMailTransport && instance.identifier() == QLatin1StringView("akonadi_maildispatcher_agent")) {
         return true;
     }
 
@@ -171,7 +171,7 @@ bool MailCommon::Util::isMailAgent(const Akonadi::AgentInstance &instance, bool 
 
 bool MailCommon::Util::isUnifiedMailboxesAgent(const Akonadi::Collection &col)
 {
-    return col.resource() == QLatin1String("akonadi_unifiedmailbox_agent");
+    return col.resource() == QLatin1StringView("akonadi_unifiedmailbox_agent");
 }
 
 uint MailCommon::Util::folderIdentity(const Akonadi::Item &item)
@@ -203,7 +203,7 @@ QString MailCommon::Util::realFolderPath(const QString &path)
 {
     QString realPath(path);
     realPath.remove(QStringLiteral(".directory"));
-    realPath.replace(QLatin1String("/."), QStringLiteral("/"));
+    realPath.replace(QLatin1StringView("/."), QStringLiteral("/"));
     if (!realPath.isEmpty() && (realPath.at(0) == QLatin1Char('.'))) {
         realPath.remove(0, 1); // remove first "."
     }

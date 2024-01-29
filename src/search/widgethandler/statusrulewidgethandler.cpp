@@ -79,7 +79,7 @@ QWidget *StatusRuleWidgetHandler::createValueWidget(int number, QStackedWidget *
     statusCombo->setObjectName(QLatin1StringView("statusRuleValueCombo"));
     for (int i = 0; i < StatusValueCountWithoutHidden; ++i) {
         if (StatusValues[i].icon != nullptr) {
-            statusCombo->addItem(QIcon::fromTheme(QLatin1String(StatusValues[i].icon)), StatusValues[i].text.toString());
+            statusCombo->addItem(QIcon::fromTheme(QLatin1StringView(StatusValues[i].icon)), StatusValues[i].text.toString());
         } else {
             statusCombo->addItem(StatusValues[i].text.toString());
         }

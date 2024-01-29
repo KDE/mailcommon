@@ -54,14 +54,14 @@ void SnippetCustomFileAttachmentNameDialog::readConfig()
 {
     create(); // ensure a window is created
     windowHandle()->resize(QSize(500, 150));
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1String(mySnippetCustomFileAttachmentNameDialogGroupName));
+    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySnippetCustomFileAttachmentNameDialogGroupName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void SnippetCustomFileAttachmentNameDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1String(mySnippetCustomFileAttachmentNameDialogGroupName));
+    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySnippetCustomFileAttachmentNameDialogGroupName));
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
 }

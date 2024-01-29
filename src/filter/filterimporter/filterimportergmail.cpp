@@ -29,7 +29,7 @@ FilterImporterGmail::FilterImporterGmail(QFile *file)
     }
     for (QDomElement e = filters.firstChildElement(); !e.isNull(); e = e.nextSiblingElement()) {
         const QString tag = e.tagName();
-        if (tag == QLatin1String("entry")) {
+        if (tag == QLatin1StringView("entry")) {
             qCDebug(MAILCOMMON_LOG) << " filter found !";
             parseFilters(e);
         }
@@ -59,36 +59,36 @@ void FilterImporterGmail::parseFilters(const QDomElement &e)
     QByteArray fieldName;
     for (QDomElement ruleFilter = e.firstChildElement(); !ruleFilter.isNull(); ruleFilter = ruleFilter.nextSiblingElement()) {
         const QString tagName = ruleFilter.tagName();
-        if (tagName == QLatin1String("category")) {
+        if (tagName == QLatin1StringView("category")) {
             if (ruleFilter.hasAttribute(QStringLiteral("term"))) {
-                if (ruleFilter.attribute(QStringLiteral("term")) != QLatin1String("filter")) {
+                if (ruleFilter.attribute(QStringLiteral("term")) != QLatin1StringView("filter")) {
                     continue;
                 }
             }
-        } else if (tagName == QLatin1String("apps:property")) {
+        } else if (tagName == QLatin1StringView("apps:property")) {
             if (ruleFilter.hasAttribute(QStringLiteral("name"))) {
                 const QString criteriaProperty = ruleFilter.attribute(QStringLiteral("name"));
                 qCDebug(MAILCOMMON_LOG) << " ruleFilter.attribute" << criteriaProperty;
                 // Criterial
-                if (criteriaProperty == QLatin1String("from")) {
+                if (criteriaProperty == QLatin1StringView("from")) {
                     fieldName = "from";
-                } else if (criteriaProperty == QLatin1String("to")) {
+                } else if (criteriaProperty == QLatin1StringView("to")) {
                     fieldName = "to";
-                } else if (criteriaProperty == QLatin1String("subject")) {
+                } else if (criteriaProperty == QLatin1StringView("subject")) {
                     fieldName = "subject";
-                } else if (criteriaProperty == QLatin1String("hasTheWord")) {
-                } else if (criteriaProperty == QLatin1String("doesNotHaveTheWord")) {
-                } else if (criteriaProperty == QLatin1String("hasAttachment")) {
+                } else if (criteriaProperty == QLatin1StringView("hasTheWord")) {
+                } else if (criteriaProperty == QLatin1StringView("doesNotHaveTheWord")) {
+                } else if (criteriaProperty == QLatin1StringView("hasAttachment")) {
                     fieldName = "<size>";
                 }
                 // Action
-                else if (criteriaProperty == QLatin1String("shouldArchive")) {
-                } else if (criteriaProperty == QLatin1String("shouldMarkAsRead")) {
-                } else if (criteriaProperty == QLatin1String("shouldStar")) {
-                } else if (criteriaProperty == QLatin1String("label")) {
-                } else if (criteriaProperty == QLatin1String("forwardTo")) {
-                } else if (criteriaProperty == QLatin1String("shouldTrash")) {
-                } else if (criteriaProperty == QLatin1String("neverSpam")) {
+                else if (criteriaProperty == QLatin1StringView("shouldArchive")) {
+                } else if (criteriaProperty == QLatin1StringView("shouldMarkAsRead")) {
+                } else if (criteriaProperty == QLatin1StringView("shouldStar")) {
+                } else if (criteriaProperty == QLatin1StringView("label")) {
+                } else if (criteriaProperty == QLatin1StringView("forwardTo")) {
+                } else if (criteriaProperty == QLatin1StringView("shouldTrash")) {
+                } else if (criteriaProperty == QLatin1StringView("neverSpam")) {
                 } else {
                     qCDebug(MAILCOMMON_LOG) << " unknown item " << criteriaProperty;
                 }

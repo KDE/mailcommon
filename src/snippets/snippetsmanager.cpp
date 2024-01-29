@@ -494,7 +494,7 @@ QString SnippetsManager::SnippetsManagerPrivate::replaceVariables(const QString 
 
             variableName = text.mid(iFound, iEnd - iFound);
 
-            if (variableName != QLatin1String("$$")) { // if not double-delimiter
+            if (variableName != QLatin1StringView("$$")) { // if not double-delimiter
                 if (!localVariables.contains(variableName)) { // and not already in map
                     QPointer<SnippetVariableDialog> dlg = new SnippetVariableDialog(variableName, &tempLocalVariables, mParent);
                     if (dlg->exec()) {

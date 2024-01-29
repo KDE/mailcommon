@@ -350,8 +350,8 @@ bool Kernel::folderIsSentMailFolder(const Akonadi::Collection &col)
 bool Kernel::folderIsInbox(const Akonadi::Collection &collection)
 {
     const QString collectionRemoteIdLower = collection.remoteId().toLower();
-    if (collectionRemoteIdLower == QLatin1String("inbox") || collectionRemoteIdLower == QLatin1String("/inbox")
-        || collectionRemoteIdLower == QLatin1String(".inbox") || collectionRemoteIdLower == QLatin1String("|inbox")) {
+    if (collectionRemoteIdLower == QLatin1StringView("inbox") || collectionRemoteIdLower == QLatin1String("/inbox")
+        || collectionRemoteIdLower == QLatin1StringView(".inbox") || collectionRemoteIdLower == QLatin1String("|inbox")) {
         return true;
     }
     // Fix order. Remoteid is not "inbox" when translated

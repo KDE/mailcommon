@@ -134,7 +134,7 @@ QString FilterActionSetTransport::displayString() const
             mTransportName = listNames.at(index);
         }
     }
-    return label() + QLatin1String(" \"") + (mTransportName.isEmpty() ? argsAsString().toHtmlEscaped() : mTransportName) + QLatin1String("\"");
+    return label() + QLatin1StringView(" \"") + (mTransportName.isEmpty() ? argsAsString().toHtmlEscaped() : mTransportName) + QLatin1String("\"");
 }
 
 QString FilterActionSetTransport::informationAboutNotValidAction() const

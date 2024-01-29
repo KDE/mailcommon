@@ -282,7 +282,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         case FuncContainsNot:
         case FuncRegExp:
         case FuncNotRegExp:
-            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1String(mField), conditionToString(mFunction))
+            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1StringView(mField), conditionToString(mFunction))
                 + QLatin1Char('"');
             return;
         }
@@ -311,7 +311,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         // TODO ?
         code += i18n("<message> not implemented/supported");
     } else if (mField == "<body>") {
-        if (!requireModules.contains(QLatin1String("body"))) {
+        if (!requireModules.contains(QLatin1StringView("body"))) {
             requireModules << QStringLiteral("body");
         }
         QString comparison;
@@ -335,12 +335,12 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
             break;
         case FuncRegExp:
             comparison = QStringLiteral(":regex");
-            if (!requireModules.contains(QLatin1String("regex"))) {
+            if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
             break;
         case FuncNotRegExp:
-            if (!requireModules.contains(QLatin1String("regex"))) {
+            if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
@@ -348,14 +348,14 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
             break;
         case FuncStartWith:
             comparison = QStringLiteral(":regex");
-            if (!requireModules.contains(QLatin1String("regex"))) {
+            if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
             contentStr = QLatin1Char('^') + contentStr;
             break;
         case FuncNotStartWith:
             comparison = QStringLiteral(":regex");
-            if (!requireModules.contains(QLatin1String("regex"))) {
+            if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
@@ -364,7 +364,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
             break;
         case FuncEndWith:
             comparison = QStringLiteral(":regex");
-            if (!requireModules.contains(QLatin1String("regex"))) {
+            if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
@@ -372,7 +372,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
             break;
         case FuncNotEndWith:
             comparison = QStringLiteral(":regex");
-            if (!requireModules.contains(QLatin1String("regex"))) {
+            if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
@@ -389,7 +389,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         case FuncIsNotInCategory:
         case FuncHasAttachment:
         case FuncHasNoAttachment:
-            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1String(mField), conditionToString(mFunction))
+            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1StringView(mField), conditionToString(mFunction))
                 + QLatin1Char('"');
             return;
         }
@@ -416,12 +416,12 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
             break;
         case FuncRegExp:
             comparison = QStringLiteral(":regex");
-            if (!requireModules.contains(QLatin1String("regex"))) {
+            if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
             break;
         case FuncNotRegExp:
-            if (!requireModules.contains(QLatin1String("regex"))) {
+            if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
@@ -429,14 +429,14 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
             break;
         case FuncStartWith:
             comparison = QStringLiteral(":regex");
-            if (!requireModules.contains(QLatin1String("regex"))) {
+            if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
             contentStr = QLatin1Char('^') + contentStr;
             break;
         case FuncNotStartWith:
             comparison = QStringLiteral(":regex");
-            if (!requireModules.contains(QLatin1String("regex"))) {
+            if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
@@ -445,7 +445,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
             break;
         case FuncEndWith:
             comparison = QStringLiteral(":regex");
-            if (!requireModules.contains(QLatin1String("regex"))) {
+            if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
@@ -453,7 +453,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
             break;
         case FuncNotEndWith:
             comparison = QStringLiteral(":regex");
-            if (!requireModules.contains(QLatin1String("regex"))) {
+            if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
@@ -471,12 +471,12 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         case FuncIsNotInCategory:
         case FuncHasAttachment:
         case FuncHasNoAttachment:
-            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1String(mField), conditionToString(mFunction))
+            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1StringView(mField), conditionToString(mFunction))
                 + QLatin1Char('"');
             return;
         }
         code += (negative ? QStringLiteral("not ") : QString())
-            + QStringLiteral("header %1 \"%2\" \"%3\"").arg(comparison).arg(QLatin1String(mField)).arg(contentStr);
+            + QStringLiteral("header %1 \"%2\" \"%3\"").arg(comparison).arg(QLatin1StringView(mField)).arg(contentStr);
     }
 }
 
@@ -512,9 +512,9 @@ QString SearchRule::contents() const
 
 const QString SearchRule::asString() const
 {
-    QString result = QLatin1String("\"") + QString::fromLatin1(mField) + QLatin1String("\" <");
+    QString result = QLatin1StringView("\"") + QString::fromLatin1(mField) + QLatin1String("\" <");
     result += functionToString(mFunction);
-    result += QLatin1String("> \"") + mContents + QLatin1String("\"");
+    result += QLatin1StringView("> \"") + mContents + QLatin1String("\"");
 
     return result;
 }

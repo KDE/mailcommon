@@ -130,11 +130,11 @@ void SearchPattern::readConfig(const KConfigGroup &config)
     }
 
     const QString op = config.readEntry("operator");
-    if (op == QLatin1String("or")) {
+    if (op == QLatin1StringView("or")) {
         mOperator = OpOr;
-    } else if (op == QLatin1String("and")) {
+    } else if (op == QLatin1StringView("and")) {
         mOperator = OpAnd;
-    } else if (op == QLatin1String("all")) {
+    } else if (op == QLatin1StringView("all")) {
         mOperator = OpAll;
     }
 
@@ -161,7 +161,7 @@ void SearchPattern::importLegacyConfig(const KConfigGroup &config)
     append(rule);
 
     const QString sOperator = config.readEntry("operator");
-    if (sOperator == QLatin1String("ignore")) {
+    if (sOperator == QLatin1StringView("ignore")) {
         return;
     }
 
@@ -172,12 +172,12 @@ void SearchPattern::importLegacyConfig(const KConfigGroup &config)
     }
     append(rule);
 
-    if (sOperator == QLatin1String("or")) {
+    if (sOperator == QLatin1StringView("or")) {
         mOperator = OpOr;
         return;
     }
     // This is the interesting case...
-    if (sOperator == QLatin1String("unless")) { // meaning "and not", ie we need to...
+    if (sOperator == QLatin1StringView("unless")) { // meaning "and not", ie we need to...
         // ...invert the function (e.g. "equals" <-> "doesn't equal")
         // We simply toggle the last bit (xor with 0x1)... This assumes that
         // SearchRule::Function's come in adjacent pairs of pros and cons
@@ -253,7 +253,7 @@ QString SearchPattern::asString() const
     QList<SearchRule::Ptr>::const_iterator it;
     QList<SearchRule::Ptr>::const_iterator endIt = constEnd();
     for (it = constBegin(); it != endIt; ++it) {
-        result += QLatin1String("\n\t") + FilterLog::recode((*it)->asString());
+        result += QLatin1StringView("\n\t") + FilterLog::recode((*it)->asString());
     }
 
     return result;
@@ -346,11 +346,11 @@ QDataStream &SearchPattern::operator<<(QDataStream &s)
 {
     QString op;
     s >> op;
-    if (op == QLatin1String("and")) {
+    if (op == QLatin1StringView("and")) {
         setOp(OpAnd);
-    } else if (op == QLatin1String("or")) {
+    } else if (op == QLatin1StringView("or")) {
         setOp(OpOr);
-    } else if (op == QLatin1String("all")) {
+    } else if (op == QLatin1StringView("all")) {
         setOp(OpAll);
     }
 
@@ -363,16 +363,16 @@ QDataStream &SearchPattern::operator<<(QDataStream &s)
 
 void SearchPattern::generateSieveScript(QStringList &requiresModules, QString &code)
 {
-    code += QLatin1String("\n#") + mName + QLatin1Char('\n');
+    code += QLatin1StringView("\n#") + mName + QLatin1Char('\n');
     switch (mOperator) {
     case OpOr:
-        code += QLatin1String("if anyof (");
+        code += QLatin1StringView("if anyof (");
         break;
     case OpAnd:
-        code += QLatin1String("if allof (");
+        code += QLatin1StringView("if allof (");
         break;
     case OpAll:
-        code += QLatin1String("if (true) {");
+        code += QLatin1StringView("if (true) {");
         return;
     }
 
@@ -381,7 +381,7 @@ void SearchPattern::generateSieveScript(QStringList &requiresModules, QString &c
     int i = 0;
     for (it = constBegin(); it != endIt && i < filterRulesMaximumSize(); ++i, ++it) {
         if (i != 0) {
-            code += QLatin1String("\n, ");
+            code += QLatin1StringView("\n, ");
         }
         (*it)->generateSieveScript(requiresModules, code);
     }

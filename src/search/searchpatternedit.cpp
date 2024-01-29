@@ -300,11 +300,11 @@ int SearchRuleWidget::ruleFieldToId(const QString &i18nVal)
 static QString displayNameFromInternalName(const QString &internal)
 {
     for (int i = 0; i < SpecialRuleFieldsCount; ++i) {
-        if (internal == QLatin1String(SpecialRuleFields[i].internalName)) {
+        if (internal == QLatin1StringView(SpecialRuleFields[i].internalName)) {
             return SpecialRuleFields[i].getLocalizedDisplayName();
         }
     }
-    return QLatin1String(internal.toLatin1());
+    return QLatin1StringView(internal.toLatin1());
 }
 
 int SearchRuleWidget::indexOfRuleField(const QByteArray &aName) const
@@ -313,7 +313,7 @@ int SearchRuleWidget::indexOfRuleField(const QByteArray &aName) const
         return -1;
     }
 
-    const QString i18n_aName = displayNameFromInternalName(QLatin1String(aName));
+    const QString i18n_aName = displayNameFromInternalName(QLatin1StringView(aName));
     const int nbRuleField = mRuleField->count();
     for (int i = 1; i < nbRuleField; ++i) {
         if (mRuleField->itemText(i) == i18n_aName) {

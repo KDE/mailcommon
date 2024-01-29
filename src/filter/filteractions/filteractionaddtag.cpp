@@ -142,7 +142,7 @@ QString FilterActionAddTag::argsAsString() const
 
 QString FilterActionAddTag::displayString() const
 {
-    return label() + QLatin1String(" \"") + argsAsString().toHtmlEscaped() + QLatin1String("\"");
+    return label() + QLatin1StringView(" \"") + argsAsString().toHtmlEscaped() + QLatin1String("\"");
 }
 
 QString FilterActionAddTag::informationAboutNotValidAction() const

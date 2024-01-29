@@ -61,25 +61,25 @@ MailCommon::MailFilter *FilterImporterProcmail::parseLine(QTextStream &stream, Q
     } else if (line.startsWith(QLatin1Char('#'))) {
         // Commented line
         return filter;
-    } else if (line.startsWith(QLatin1String(":0"))) {
+    } else if (line.startsWith(QLatin1StringView(":0"))) {
         appendFilter(filter);
         filter = new MailFilter();
         const QString uniqName = createUniqFilterName();
         filter->pattern()->setName(uniqName);
         filter->setToolbarName(uniqName);
-    } else if (line.startsWith(QLatin1String("* "))) {
+    } else if (line.startsWith(QLatin1StringView("* "))) {
         line.remove(0, 2);
         QByteArray fieldName;
         SearchRule::Function functionName = SearchRule::FuncRegExp;
-        if (line.startsWith(QLatin1String("^From:"))) {
+        if (line.startsWith(QLatin1StringView("^From:"))) {
             line.remove(QStringLiteral("^From:"));
             fieldName = "from";
-        } else if (line.startsWith(QLatin1String("^Subject:"))) {
+        } else if (line.startsWith(QLatin1StringView("^Subject:"))) {
             line.remove(QStringLiteral("^Subject:"));
             fieldName = "subject";
-        } else if (line.startsWith(QLatin1String("^Sender:"))) {
+        } else if (line.startsWith(QLatin1StringView("^Sender:"))) {
             line.remove(QStringLiteral("^Sender:"));
-        } else if (line.startsWith(QLatin1String("^(To|Cc):"))) {
+        } else if (line.startsWith(QLatin1StringView("^(To|Cc):"))) {
             line.remove(QStringLiteral("^(To|Cc):"));
             fieldName = "<recipients>";
         } else {

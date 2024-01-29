@@ -61,39 +61,39 @@ QString FilterImporterThunderbird::defaultThunderbirdFiltersSettingsPath()
 
 MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter)
 {
-    if (line.startsWith(QLatin1String("name="))) {
+    if (line.startsWith(QLatin1StringView("name="))) {
         appendFilter(filter);
         filter = new MailFilter();
         line = cleanArgument(line, QStringLiteral("name="));
         filter->pattern()->setName(line);
         filter->setToolbarName(line);
-    } else if (line.startsWith(QLatin1String("action="))) {
+    } else if (line.startsWith(QLatin1StringView("action="))) {
         line = cleanArgument(line, QStringLiteral("action="));
         QString value;
         QString actionName = extractActions(line, filter, value);
         if (!stream.atEnd()) {
             line = stream.readLine();
-            if (line.startsWith(QLatin1String("actionValue="))) {
+            if (line.startsWith(QLatin1StringView("actionValue="))) {
                 value = cleanArgument(line, QStringLiteral("actionValue="));
                 // change priority
-                if (actionName == QLatin1String("Change priority")) {
+                if (actionName == QLatin1StringView("Change priority")) {
                     QStringList lstValue;
                     lstValue << QStringLiteral("X-Priority");
-                    if (value == QLatin1String("Highest")) {
+                    if (value == QLatin1StringView("Highest")) {
                         value = QStringLiteral("1 (Highest)");
-                    } else if (value == QLatin1String("High")) {
+                    } else if (value == QLatin1StringView("High")) {
                         value = QStringLiteral("2 (High)");
-                    } else if (value == QLatin1String("Normal")) {
+                    } else if (value == QLatin1StringView("Normal")) {
                         value = QStringLiteral("3 (Normal)");
-                    } else if (value == QLatin1String("Low")) {
+                    } else if (value == QLatin1StringView("Low")) {
                         value = QStringLiteral("4 (Low)");
-                    } else if (value == QLatin1String("Lowest")) {
+                    } else if (value == QLatin1StringView("Lowest")) {
                         value = QStringLiteral("5 (Lowest)");
                     }
                     lstValue << value;
                     value = lstValue.join(QLatin1Char('\t'));
                     actionName = QStringLiteral("add header");
-                } else if (actionName == QLatin1String("copy") || actionName == QLatin1String("transfer")) {
+                } else if (actionName == QLatin1StringView("copy") || actionName == QLatin1String("transfer")) {
                     QUrl url = QUrl::fromLocalFile(value);
                     if (url.isValid()) {
                         QString path = url.path();
@@ -111,27 +111,27 @@ MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream
         } else {
             createFilterAction(filter, actionName, value);
         }
-    } else if (line.startsWith(QLatin1String("enabled="))) {
+    } else if (line.startsWith(QLatin1StringView("enabled="))) {
         line = cleanArgument(line, QStringLiteral("enabled="));
-        if (line == QLatin1String("no")) {
+        if (line == QLatin1StringView("no")) {
             filter->setEnabled(false);
         }
-    } else if (line.startsWith(QLatin1String("condition="))) {
+    } else if (line.startsWith(QLatin1StringView("condition="))) {
         line = cleanArgument(line, QStringLiteral("condition="));
         extractConditions(line, filter);
-    } else if (line.startsWith(QLatin1String("type="))) {
+    } else if (line.startsWith(QLatin1StringView("type="))) {
         line = cleanArgument(line, QStringLiteral("type="));
         extractType(line, filter);
-    } else if (line.startsWith(QLatin1String("version="))) {
+    } else if (line.startsWith(QLatin1StringView("version="))) {
         line = cleanArgument(line, QStringLiteral("version="));
         if (line.toInt() != 9) {
             qCDebug(MAILCOMMON_LOG) << " thunderbird filter version different of 9 need to look at if it changed";
         }
-    } else if (line.startsWith(QLatin1String("logging="))) {
+    } else if (line.startsWith(QLatin1StringView("logging="))) {
         line = cleanArgument(line, QStringLiteral("logging="));
-        if (line == QLatin1String("no")) {
+        if (line == QLatin1StringView("no")) {
             // TODO
-        } else if (line == QLatin1String("yes")) {
+        } else if (line == QLatin1StringView("yes")) {
             // TODO
         } else {
             qCDebug(MAILCOMMON_LOG) << " Logging option not implemented " << line;
@@ -144,7 +144,7 @@ MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream
 
 void FilterImporterThunderbird::extractConditions(const QString &line, MailCommon::MailFilter *filter)
 {
-    if (line.startsWith(QLatin1String("AND"))) {
+    if (line.startsWith(QLatin1StringView("AND"))) {
         filter->pattern()->setOp(SearchPattern::OpAnd);
         const QStringList conditionsList = line.split(QStringLiteral("AND "));
         const int numberOfCond(conditionsList.count());
@@ -153,7 +153,7 @@ void FilterImporterThunderbird::extractConditions(const QString &line, MailCommo
                 splitConditions(conditionsList.at(i), filter);
             }
         }
-    } else if (line.startsWith(QLatin1String("OR"))) {
+    } else if (line.startsWith(QLatin1StringView("OR"))) {
         filter->pattern()->setOp(SearchPattern::OpOr);
         const QStringList conditionsList = line.split(QStringLiteral("OR "));
         const int numberOfCond(conditionsList.count());
@@ -162,7 +162,7 @@ void FilterImporterThunderbird::extractConditions(const QString &line, MailCommo
                 splitConditions(conditionsList.at(i), filter);
             }
         }
-    } else if (line.startsWith(QLatin1String("ALL"))) {
+    } else if (line.startsWith(QLatin1StringView("ALL"))) {
         filter->pattern()->setOp(SearchPattern::OpAll);
     } else {
         qCDebug(MAILCOMMON_LOG) << " missing extract condition" << line;
@@ -212,43 +212,43 @@ bool FilterImporterThunderbird::splitConditions(const QString &cond, MailCommon:
     const QString contents = listOfCond.at(2);
 
     QByteArray fieldName;
-    if (field == QLatin1String("subject")) {
+    if (field == QLatin1StringView("subject")) {
         fieldName = "subject";
-    } else if (field == QLatin1String("from")) {
+    } else if (field == QLatin1StringView("from")) {
         fieldName = "from";
-    } else if (field == QLatin1String("body")) {
+    } else if (field == QLatin1StringView("body")) {
         fieldName = "<body>";
-    } else if (field == QLatin1String("date")) {
+    } else if (field == QLatin1StringView("date")) {
         fieldName = "<date>";
-    } else if (field == QLatin1String("priority")) {
+    } else if (field == QLatin1StringView("priority")) {
         // TODO
-    } else if (field == QLatin1String("status")) {
+    } else if (field == QLatin1StringView("status")) {
         fieldName = "<status>";
-    } else if (field == QLatin1String("to")) {
+    } else if (field == QLatin1StringView("to")) {
         fieldName = "to";
-    } else if (field == QLatin1String("cc")) {
+    } else if (field == QLatin1StringView("cc")) {
         fieldName = "cc";
-    } else if (field == QLatin1String("to or cc")) {
+    } else if (field == QLatin1StringView("to or cc")) {
         fieldName = "<recipients>";
-    } else if (field == QLatin1String("all addresses")) {
+    } else if (field == QLatin1StringView("all addresses")) {
         fieldName = "<recipients>";
-    } else if (field == QLatin1String("age in days")) {
+    } else if (field == QLatin1StringView("age in days")) {
         fieldName = "<age in days>";
-    } else if (field == QLatin1String("label")) {
+    } else if (field == QLatin1StringView("label")) {
         // TODO
-    } else if (field == QLatin1String("tag")) {
+    } else if (field == QLatin1StringView("tag")) {
         fieldName = "<tag>";
-    } else if (field == QLatin1String("size")) {
+    } else if (field == QLatin1StringView("size")) {
         fieldName = "<size>";
-    } else if (field == QLatin1String("from in ab")) {
+    } else if (field == QLatin1StringView("from in ab")) {
         // TODO
-    } else if (field == QLatin1String("junk status")) {
+    } else if (field == QLatin1StringView("junk status")) {
         // TODO
-    } else if (field == QLatin1String("junk percent")) {
+    } else if (field == QLatin1StringView("junk percent")) {
         // TODO
-    } else if (field == QLatin1String("junk score origin")) {
+    } else if (field == QLatin1StringView("junk score origin")) {
         // TODO
-    } else if (field == QLatin1String("has attachment status")) {
+    } else if (field == QLatin1StringView("has attachment status")) {
         // TODO
     }
 
@@ -277,41 +277,41 @@ bool FilterImporterThunderbird::splitConditions(const QString &cond, MailCommon:
     */
     SearchRule::Function functionName = SearchRule::FuncNone;
 
-    if (function == QLatin1String("contains")) {
+    if (function == QLatin1StringView("contains")) {
         functionName = SearchRule::FuncContains;
-    } else if (function == QLatin1String("doesn't contain")) {
+    } else if (function == QLatin1StringView("doesn't contain")) {
         functionName = SearchRule::FuncContainsNot;
-    } else if (function == QLatin1String("is")) {
+    } else if (function == QLatin1StringView("is")) {
         functionName = SearchRule::FuncEquals;
-    } else if (function == QLatin1String("isn't")) {
+    } else if (function == QLatin1StringView("isn't")) {
         functionName = SearchRule::FuncNotEqual;
-    } else if (function == QLatin1String("is empty")) {
+    } else if (function == QLatin1StringView("is empty")) {
         // TODO
-    } else if (function == QLatin1String("isn't empty")) {
+    } else if (function == QLatin1StringView("isn't empty")) {
         // TODO
-    } else if (function == QLatin1String("is before")) {
+    } else if (function == QLatin1StringView("is before")) {
         functionName = SearchRule::FuncIsLess;
-    } else if (function == QLatin1String("is after")) {
+    } else if (function == QLatin1StringView("is after")) {
         functionName = SearchRule::FuncIsGreater;
-    } else if (function == QLatin1String("is higher than")) {
+    } else if (function == QLatin1StringView("is higher than")) {
         functionName = SearchRule::FuncIsGreater;
-    } else if (function == QLatin1String("is lower than")) {
+    } else if (function == QLatin1StringView("is lower than")) {
         functionName = SearchRule::FuncIsLess;
-    } else if (function == QLatin1String("begins with")) {
+    } else if (function == QLatin1StringView("begins with")) {
         functionName = SearchRule::FuncStartWith;
-    } else if (function == QLatin1String("ends with")) {
+    } else if (function == QLatin1StringView("ends with")) {
         functionName = SearchRule::FuncEndWith;
-    } else if (function == QLatin1String("is in ab")) {
+    } else if (function == QLatin1StringView("is in ab")) {
         functionName = SearchRule::FuncIsInAddressbook;
-    } else if (function == QLatin1String("isn't in ab")) {
+    } else if (function == QLatin1StringView("isn't in ab")) {
         functionName = SearchRule::FuncIsNotInAddressbook;
-    } else if (function == QLatin1String("is greater than")) {
+    } else if (function == QLatin1StringView("is greater than")) {
         functionName = SearchRule::FuncIsGreater;
-    } else if (function == QLatin1String("is less than")) {
+    } else if (function == QLatin1StringView("is less than")) {
         functionName = SearchRule::FuncIsLess;
-    } else if (function == QLatin1String("matches")) {
+    } else if (function == QLatin1StringView("matches")) {
         functionName = SearchRule::FuncEquals;
-    } else if (function == QLatin1String("doesn't match")) {
+    } else if (function == QLatin1StringView("doesn't match")) {
         functionName = SearchRule::FuncNotEqual;
     }
 
@@ -320,13 +320,13 @@ bool FilterImporterThunderbird::splitConditions(const QString &cond, MailCommon:
     }
     QString contentsName;
     if (fieldName == "<status>") {
-        if (contents == QLatin1String("read")) {
+        if (contents == QLatin1StringView("read")) {
             contentsName = QStringLiteral("Read");
-        } else if (contents == QLatin1String("unread")) {
+        } else if (contents == QLatin1StringView("unread")) {
             contentsName = QStringLiteral("Unread");
-        } else if (contents == QLatin1String("new")) {
+        } else if (contents == QLatin1StringView("new")) {
             contentsName = QStringLiteral("New");
-        } else if (contents == QLatin1String("forwarded")) {
+        } else if (contents == QLatin1StringView("forwarded")) {
             contentsName = QStringLiteral("Forwarded");
         } else {
             qCDebug(MAILCOMMON_LOG) << " contents for status not implemented " << contents;
@@ -375,38 +375,38 @@ QString FilterImporterThunderbird::extractActions(const QString &line, MailCommo
      */
 
     QString actionName;
-    if (line == QLatin1String("Move to folder")) {
+    if (line == QLatin1StringView("Move to folder")) {
         actionName = QStringLiteral("transfer");
-    } else if (line == QLatin1String("Forward")) {
+    } else if (line == QLatin1StringView("Forward")) {
         actionName = QStringLiteral("forward");
-    } else if (line == QLatin1String("Mark read")) {
+    } else if (line == QLatin1StringView("Mark read")) {
         actionName = QStringLiteral("set status");
         value = QStringLiteral("R");
-    } else if (line == QLatin1String("Mark unread")) {
+    } else if (line == QLatin1StringView("Mark unread")) {
         actionName = QStringLiteral("set status");
         value = QStringLiteral("U"); // TODO verify
-    } else if (line == QLatin1String("Copy to folder")) {
+    } else if (line == QLatin1StringView("Copy to folder")) {
         actionName = QStringLiteral("copy");
-    } else if (line == QLatin1String("AddTag")) {
+    } else if (line == QLatin1StringView("AddTag")) {
         actionName = QStringLiteral("add tag");
-    } else if (line == QLatin1String("Delete")) {
+    } else if (line == QLatin1StringView("Delete")) {
         actionName = QStringLiteral("delete");
-    } else if (line == QLatin1String("Change priority")) {
+    } else if (line == QLatin1StringView("Change priority")) {
         actionName = QStringLiteral("Change priority"); // Doesn't exist in kmail but we help us to importing
-    } else if (line == QLatin1String("Ignore thread")) {
-    } else if (line == QLatin1String("Ignore subthread")) {
-    } else if (line == QLatin1String("Watch thread")) {
-    } else if (line == QLatin1String("Mark flagged")) {
-    } else if (line == QLatin1String("Label")) {
-    } else if (line == QLatin1String("Reply")) {
+    } else if (line == QLatin1StringView("Ignore thread")) {
+    } else if (line == QLatin1StringView("Ignore subthread")) {
+    } else if (line == QLatin1StringView("Watch thread")) {
+    } else if (line == QLatin1StringView("Mark flagged")) {
+    } else if (line == QLatin1StringView("Label")) {
+    } else if (line == QLatin1StringView("Reply")) {
         actionName = QStringLiteral("set Reply-To");
-    } else if (line == QLatin1String("Stop execution")) {
+    } else if (line == QLatin1StringView("Stop execution")) {
         filter->setStopProcessingHere(true);
         return {};
-    } else if (line == QLatin1String("Delete from Pop3 server")) {
-    } else if (line == QLatin1String("JunkScore")) {
-    } else if (line == QLatin1String("Fetch body from Pop3Server")) {
-    } else if (line == QLatin1String("Custom")) {
+    } else if (line == QLatin1StringView("Delete from Pop3 server")) {
+    } else if (line == QLatin1StringView("JunkScore")) {
+    } else if (line == QLatin1StringView("Fetch body from Pop3Server")) {
+    } else if (line == QLatin1StringView("Custom")) {
     }
     if (actionName.isEmpty()) {
         qCDebug(MAILCOMMON_LOG) << QStringLiteral(" missing convert method: %1").arg(line);

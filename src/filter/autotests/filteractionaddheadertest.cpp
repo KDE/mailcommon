@@ -41,7 +41,7 @@ void FilterActionAddHeaderTest::shouldAddValue_data()
     QTest::addColumn<QString>("resultheader");
     QTest::addColumn<QString>("resultvalue");
     QTest::newRow("empty") << QString() << QString() << QString();
-    QString val = QLatin1String("bla") + QLatin1Char('\t') + QLatin1String("blo");
+    QString val = QLatin1StringView("bla") + QLatin1Char('\t') + QLatin1String("blo");
     QTest::newRow("real value") << val << QStringLiteral("bla") << QStringLiteral("blo");
 }
 
@@ -84,7 +84,7 @@ void FilterActionAddHeaderTest::shouldNotExecuteActionWhenParameterIsEmpty()
     item.setPayload<KMime::Message::Ptr>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
-    filter.argsFromString(QLatin1String(""));
+    filter.argsFromString(QLatin1StringView(""));
     QCOMPARE(filter.process(context, false), MailCommon::FilterAction::ErrorButGoOn);
     QCOMPARE(context.needsPayloadStore(), false);
     QCOMPARE(context.deleteItem(), false);

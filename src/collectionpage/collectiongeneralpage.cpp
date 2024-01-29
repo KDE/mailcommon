@@ -79,7 +79,7 @@ void CollectionGeneralPage::init(const Akonadi::Collection &collection)
 
         PimCommon::CollectionTypeUtil collectionUtil;
         const PimCommon::CollectionTypeUtil::IncidencesFor incidencesFor =
-            collectionUtil.incidencesForFromString(QLatin1String(annotations.value(PimCommon::CollectionTypeUtil::kolabIncidencesFor())));
+            collectionUtil.incidencesForFromString(QLatin1StringView(annotations.value(PimCommon::CollectionTypeUtil::kolabIncidencesFor())));
 
         const PimCommon::CollectionTypeUtil::FolderContentsType folderType =
             collectionUtil.typeFromKolabName(annotations.value(PimCommon::CollectionTypeUtil::kolabFolderType()));

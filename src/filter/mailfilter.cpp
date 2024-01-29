@@ -397,11 +397,11 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
         bApplyOnAllFolders = false;
         mApplicability = ButImap;
     } else {
-        bApplyBeforeOutbound = bool(sets.contains(QLatin1String("before-send-mail")));
-        bApplyOnInbound = bool(sets.contains(QLatin1String("check-mail")));
-        bApplyOnOutbound = bool(sets.contains(QLatin1String("send-mail")));
-        bApplyOnExplicit = bool(sets.contains(QLatin1String("manual-filtering")));
-        bApplyOnAllFolders = bool(sets.contains(QLatin1String("all-folders")));
+        bApplyBeforeOutbound = bool(sets.contains(QLatin1StringView("before-send-mail")));
+        bApplyOnInbound = bool(sets.contains(QLatin1StringView("check-mail")));
+        bApplyOnOutbound = bool(sets.contains(QLatin1StringView("send-mail")));
+        bApplyOnExplicit = bool(sets.contains(QLatin1StringView("manual-filtering")));
+        bApplyOnAllFolders = bool(sets.contains(QLatin1StringView("all-folders")));
         mApplicability = static_cast<AccountType>(config.readEntry("Applicability", static_cast<int>(ButImap)));
     }
 
@@ -484,7 +484,7 @@ void MailFilter::generateSieveScript(QStringList &requiresModules, QString &code
     QList<FilterAction *>::const_iterator end(mActions.constEnd());
 
     const QString indentationStr{QStringLiteral("    ")};
-    code += QLatin1String(")\n{\n");
+    code += QLatin1StringView(")\n{\n");
     bool firstAction = true;
     for (it = mActions.constBegin(); it != end; ++it) {
         // Add endline here.
@@ -504,7 +504,7 @@ void MailFilter::generateSieveScript(QStringList &requiresModules, QString &code
     if (bStopProcessingHere) {
         code += QLatin1Char('\n') + indentationStr + QStringLiteral("stop;");
     }
-    code += QLatin1String("\n}\n");
+    code += QLatin1StringView("\n}\n");
 }
 
 void MailFilter::writeConfig(KConfigGroup &config, bool exportFilter) const
@@ -616,7 +616,7 @@ const QString MailFilter::asString() const
 {
     QString result;
 
-    result += QLatin1String("Filter name: ") + name() + QLatin1String(" (") + mIdentifier + QLatin1String(")\n");
+    result += QLatin1StringView("Filter name: ") + name() + QLatin1String(" (") + mIdentifier + QLatin1String(")\n");
     result += mPattern.asString() + QLatin1Char('\n');
 
     result += QStringLiteral("Filter is %1\n").arg(bEnabled ? QStringLiteral("enabled") : QStringLiteral("disabled"));

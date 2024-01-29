@@ -61,7 +61,7 @@ void FilterActionEncryptTest::shouldEncrypt()
     MailCommon::FilterActionEncrypt action(this);
     action.argsFromString(key);
     QVERIFY(!action.key().isNull());
-    QCOMPARE(action.reencrypt(), key.contains(QLatin1String(":1:")));
+    QCOMPARE(action.reencrypt(), key.contains(QLatin1StringView(":1:")));
 
     auto msg = KMime::Message::Ptr::create();
     msg->setContent(content);
@@ -84,7 +84,7 @@ void FilterActionEncryptTest::shouldEncrypt()
 
     QByteArray resultContent;
     GPGHelper::CryptoType crypto;
-    if (key.startsWith(QLatin1String("PGP"))) {
+    if (key.startsWith(QLatin1StringView("PGP"))) {
         QCOMPARE(newMsg->contentType()->mimeType(), QByteArray("multipart/encrypted"));
         resultContent = newMsg->encodedContent();
         crypto = GPGHelper::OpenPGP;

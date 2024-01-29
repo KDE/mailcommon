@@ -77,14 +77,14 @@ void FilterSelectionDialog::readConfig()
 {
     create(); // ensure a window is created
     windowHandle()->resize(QSize(300, 350));
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1String(myFilterSelectionDialogName));
+    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterSelectionDialogName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void FilterSelectionDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1String(myFilterSelectionDialogName));
+    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterSelectionDialogName));
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
 }

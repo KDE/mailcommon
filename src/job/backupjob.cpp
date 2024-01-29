@@ -234,7 +234,7 @@ void BackupJob::processMessage(const Akonadi::Item &item)
     const QByteArray messageData = message->encodedContent();
     const qint64 messageSize = messageData.size();
     const QString messageName = QString::number(item.id());
-    const QString fileName = pathForCollection(mCurrentFolder) + QLatin1String("/cur/") + messageName;
+    const QString fileName = pathForCollection(mCurrentFolder) + QLatin1StringView("/cur/") + messageName;
 
     // PORT ME: user and group!
     qCDebug(MAILCOMMON_LOG) << "AKONDI PORT: disabled code here!";
@@ -297,11 +297,11 @@ QString BackupJob::pathForCollection(const Akonadi::Collection &collection) cons
     if (collection != mRootFolder) {
         Q_ASSERT(curCol.isValid());
         while (curCol != mRootFolder) {
-            fullPath.prepend(QLatin1Char('.') + collectionName(curCol) + QLatin1String(".directory/"));
+            fullPath.prepend(QLatin1Char('.') + collectionName(curCol) + QLatin1StringView(".directory/"));
             curCol = curCol.parentCollection();
         }
         Q_ASSERT(curCol == mRootFolder);
-        fullPath.prepend(QLatin1Char('.') + collectionName(curCol) + QLatin1String(".directory/"));
+        fullPath.prepend(QLatin1Char('.') + collectionName(curCol) + QLatin1StringView(".directory/"));
     }
     return fullPath;
 }
@@ -312,7 +312,7 @@ QString BackupJob::subdirPathForCollection(const Akonadi::Collection &collection
     const int parentDirEndIndex = path.lastIndexOf(collection.name());
     Q_ASSERT(parentDirEndIndex != -1);
     path.truncate(parentDirEndIndex);
-    path.append(QLatin1Char('.') + collection.name() + QLatin1String(".directory"));
+    path.append(QLatin1Char('.') + collection.name() + QLatin1StringView(".directory"));
     return path;
 }
 
@@ -345,11 +345,11 @@ void BackupJob::archiveNextFolder()
     if (success) {
         if (!writeDirHelper(pathForCollection(mCurrentFolder))) {
             success = false;
-        } else if (!writeDirHelper(pathForCollection(mCurrentFolder) + QLatin1String("/cur"))) {
+        } else if (!writeDirHelper(pathForCollection(mCurrentFolder) + QLatin1StringView("/cur"))) {
             success = false;
-        } else if (!writeDirHelper(pathForCollection(mCurrentFolder) + QLatin1String("/new"))) {
+        } else if (!writeDirHelper(pathForCollection(mCurrentFolder) + QLatin1StringView("/new"))) {
             success = false;
-        } else if (!writeDirHelper(pathForCollection(mCurrentFolder) + QLatin1String("/tmp"))) {
+        } else if (!writeDirHelper(pathForCollection(mCurrentFolder) + QLatin1StringView("/tmp"))) {
             success = false;
         }
     }

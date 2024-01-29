@@ -257,13 +257,13 @@ void FilterActionAddToAddressBook::argsFromString(const QString &argsStr)
 {
     const QStringList parts = argsStr.split(QLatin1Char('\t'), Qt::KeepEmptyParts);
     const QString firstElement = parts[0];
-    if (firstElement == QLatin1String("From")) {
+    if (firstElement == QLatin1StringView("From")) {
         mHeaderType = FromHeader;
-    } else if (firstElement == QLatin1String("To")) {
+    } else if (firstElement == QLatin1StringView("To")) {
         mHeaderType = ToHeader;
-    } else if (firstElement == QLatin1String("CC")) {
+    } else if (firstElement == QLatin1StringView("CC")) {
         mHeaderType = CcHeader;
-    } else if (firstElement == QLatin1String("BCC")) {
+    } else if (firstElement == QLatin1StringView("BCC")) {
         mHeaderType = BccHeader;
     } else {
         mHeaderType = UnknownHeader;

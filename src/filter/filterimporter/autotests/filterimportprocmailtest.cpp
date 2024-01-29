@@ -22,7 +22,7 @@ void FilterImportProcmailtest::initTestCase()
 void FilterImportProcmailtest::testImportFilters()
 {
 #if 0
-    const QString filter = QLatin1String("version=\"9\"\n"
+    const QString filter = QLatin1StringView("version=\"9\"\n"
                                          "logging=\"no\"\n"
                                          "name=\"Match All Messages\"\n"
                                          "enabled=\"yes\"\n"

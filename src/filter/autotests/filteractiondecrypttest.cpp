@@ -11,7 +11,7 @@
 
 void FilterActionDecryptTest::initTestCase()
 {
-    mGpg = new GPGHelper(QLatin1String(TEST_PATH) + QStringLiteral("/gpghome"));
+    mGpg = new GPGHelper(QLatin1StringView(TEST_PATH) + QStringLiteral("/gpghome"));
     QVERIFY(mGpg->isValid());
 }
 

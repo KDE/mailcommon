@@ -379,7 +379,7 @@ QString FolderSettings::mailingListPostAddress() const
             // We check for isEmpty because before 3.3 postAddress was just an
             // email@kde.org and that leaves protocol() field in the qurl class
             const QString protocol = (*it).scheme();
-            if (protocol == QLatin1String("mailto") || protocol.isEmpty()) {
+            if (protocol == QLatin1StringView("mailto") || protocol.isEmpty()) {
                 return (*it).path();
             }
         }

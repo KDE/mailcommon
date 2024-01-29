@@ -74,9 +74,9 @@ void FilterActionEncrypt::argsFromString(const QString &argsStr)
     const auto protoStr = strView.left(pos);
 
     QGpgME::Protocol *proto = {};
-    if (protoStr == QLatin1String("PGP")) {
+    if (protoStr == QLatin1StringView("PGP")) {
         proto = QGpgME::openpgp();
-    } else if (protoStr == QLatin1String("SMIME")) {
+    } else if (protoStr == QLatin1StringView("SMIME")) {
         proto = QGpgME::smime();
     } else {
         qCWarning(MAILCOMMON_LOG) << "Unknown protocol specified:" << protoStr;

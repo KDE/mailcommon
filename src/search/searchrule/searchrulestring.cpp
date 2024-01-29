@@ -111,8 +111,8 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
                 || matchesInternal(msg->bcc()->asUnicodeString());
         }
         msgContents = msg->to()->asUnicodeString();
-        msgContents += QLatin1String(", ") + msg->cc()->asUnicodeString();
-        msgContents += QLatin1String(", ") + msg->bcc()->asUnicodeString();
+        msgContents += QLatin1StringView(", ") + msg->cc()->asUnicodeString();
+        msgContents += QLatin1StringView(", ") + msg->bcc()->asUnicodeString();
     } else if (qstricmp(field().constData(), "<tag>") == 0) {
         // port?
         //     const Nepomuk2::Resource res( item.url() );
@@ -168,7 +168,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
         msgStr += FilterLog::recode(asString());
         // only log headers because messages and bodies can be pretty large
         if (logContents) {
-            msgStr += QLatin1String(" (<i>") + FilterLog::recode(msgContents) + QLatin1String("</i>)");
+            msgStr += QLatin1StringView(" (<i>") + FilterLog::recode(msgContents) + QLatin1String("</i>)");
         }
         FilterLog::instance()->add(msgStr, FilterLog::RuleResult);
     }

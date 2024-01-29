@@ -86,7 +86,7 @@ void SelectThunderbirdFilterFilesWidget::slotProfileChanged(int index)
         QDir dirMail(subMailPath);
         const QStringList subDirMail = dirMail.entryList(QDir::AllDirs | QDir::NoDotAndDotDot, QDir::Name);
         for (const QString &file : subDirMail) {
-            const QString filterFile(subMailPath + QLatin1Char('/') + file + QLatin1String("/msgFilterRules.dat"));
+            const QString filterFile(subMailPath + QLatin1Char('/') + file + QLatin1StringView("/msgFilterRules.dat"));
             if (QFile(filterFile).exists()) {
                 listFilterFiles << filterFile;
             }

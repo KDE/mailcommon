@@ -63,13 +63,13 @@ MailFilter *FilterImporterClawsMails::parseLine(const QString &line)
     auto filter = new MailFilter();
     QString tmp = line;
     // Enabled ?
-    if (tmp.startsWith(QLatin1String("enabled"))) {
+    if (tmp.startsWith(QLatin1StringView("enabled"))) {
         filter->setEnabled(true);
         tmp.remove(QStringLiteral("enabled "));
     }
 
     // Filter name
-    if (tmp.startsWith(QLatin1String("rulename"))) {
+    if (tmp.startsWith(QLatin1StringView("rulename"))) {
         tmp.remove(QStringLiteral("rulename "));
         int pos;
         const QString name = extractString(tmp, pos);
@@ -97,9 +97,9 @@ QString FilterImporterClawsMails::extractConditions(const QString &line, MailFil
 {
     QByteArray fieldName;
     // Action
-    if (line.startsWith(QLatin1String("subject"))) {
+    if (line.startsWith(QLatin1StringView("subject"))) {
         fieldName = "subject";
-    } else if (line.startsWith(QLatin1String("age_lower"))) {
+    } else if (line.startsWith(QLatin1StringView("age_lower"))) {
     }
     filter->pattern()->setOp(SearchPattern::OpAnd);
     // TODO

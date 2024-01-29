@@ -185,13 +185,13 @@ void AccountConfigOrderDialog::init()
         InstanceStruct instanceStruct;
         instanceStruct.name = instance.name();
         if (PimCommon::Util::isImapResource(identifier)) {
-            instanceStruct.name += QLatin1String(" (IMAP)");
-        } else if (identifier.startsWith(QLatin1String("akonadi_maildir_resource"))) {
-            instanceStruct.name += QLatin1String(" (Maildir)");
-        } else if (identifier.startsWith(QLatin1String("akonadi_mailbox_resource"))) {
-            instanceStruct.name += QLatin1String(" (Mailbox)");
-        } else if (identifier.startsWith(QLatin1String("akonadi_mixedmaildir_resource"))) {
-            instanceStruct.name += QLatin1String(" (Mixedmaildir)");
+            instanceStruct.name += QLatin1StringView(" (IMAP)");
+        } else if (identifier.startsWith(QLatin1StringView("akonadi_maildir_resource"))) {
+            instanceStruct.name += QLatin1StringView(" (Maildir)");
+        } else if (identifier.startsWith(QLatin1StringView("akonadi_mailbox_resource"))) {
+            instanceStruct.name += QLatin1StringView(" (Mailbox)");
+        } else if (identifier.startsWith(QLatin1StringView("akonadi_mixedmaildir_resource"))) {
+            instanceStruct.name += QLatin1StringView(" (Mixedmaildir)");
         } else {
             qCDebug(MAILCOMMON_LOG) << " Unknown resource type " << identifier;
         }
@@ -241,14 +241,14 @@ void AccountConfigOrderDialog::readConfig()
 {
     create(); // ensure a window is created
     windowHandle()->resize(QSize(500, 150));
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1String(myAccountConfigOrderDialogName));
+    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myAccountConfigOrderDialogName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void AccountConfigOrderDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1String(myAccountConfigOrderDialogName));
+    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myAccountConfigOrderDialogName));
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
 }

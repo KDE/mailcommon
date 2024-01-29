@@ -70,7 +70,7 @@ void FilterActionStatus::argsFromString(const QString &argsStr)
 
         for (int i = 0; i < FilterActionStatus::StatiCount; ++i) {
             status = statuses[i];
-            if (realStatusString(status.statusStr()) == QLatin1String(argsStr.toLatin1())) {
+            if (realStatusString(status.statusStr()) == QLatin1StringView(argsStr.toLatin1())) {
                 mParameter = mParameterList.at(i + 1);
                 return;
             }
@@ -92,7 +92,7 @@ QString FilterActionStatus::argsAsString() const
 
 QString FilterActionStatus::displayString() const
 {
-    return label() + QLatin1String(" \"") + mParameter + QLatin1String("\"");
+    return label() + QLatin1StringView(" \"") + mParameter + QLatin1String("\"");
 }
 
 QString FilterActionStatus::informationAboutNotValidAction() const
