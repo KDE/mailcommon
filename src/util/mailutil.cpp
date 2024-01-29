@@ -41,10 +41,10 @@
 
 #include <KMime/KMimeMessage>
 
+#include "collectionpage/attributes/expirecollectionattribute.h"
 #include <KIO/Job>
 #include <KIO/JobUiDelegate>
 #include <KJob>
-#include <collectionpage/attributes/expirecollectionattribute.h>
 
 OrgKdeAkonadiPOP3SettingsInterface *MailCommon::Util::createPop3SettingsInterface(const QString &ident)
 {

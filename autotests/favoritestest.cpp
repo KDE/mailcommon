@@ -10,12 +10,12 @@
 #include <KConfigGroup>
 #include <KSharedConfig>
 
+#include "favoritecollectionorderproxymodel.h"
 #include <Akonadi/ChangeRecorder>
 #include <Akonadi/Control>
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/FavoriteCollectionsModel>
 #include <akonadi/qtest_akonadi.h>
-#include <favoritecollectionorderproxymodel.h>
 
 using namespace Akonadi;
 using namespace MailCommon;

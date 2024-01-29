@@ -6,6 +6,7 @@
 
 #include "filtertestkernel.h"
 
+#include "mailcommon/foldercollectionmonitor.h"
 #include <Akonadi/ChangeRecorder>
 #include <Akonadi/EntityMimeTypeFilterModel>
 #include <Akonadi/EntityTreeModel>
@@ -13,7 +14,6 @@
 #include <KIdentityManagementCore/IdentityManager>
 #include <KSharedConfig>
 #include <MessageComposer/AkonadiSender>
-#include <mailcommon/foldercollectionmonitor.h>
 
 FilterTestKernel::FilterTestKernel(QObject *parent)
     : QObject(parent)

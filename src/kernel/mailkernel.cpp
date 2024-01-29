@@ -11,13 +11,13 @@
 #include <PimCommon/PimUtil>
 #include <PimCommonAkonadi/ImapResourceCapabilitiesManager>
 
+#include "util/resourcereadconfigfile.h"
 #include <Akonadi/AgentInstance>
 #include <Akonadi/AgentManager>
 #include <Akonadi/EntityMimeTypeFilterModel>
 #include <Akonadi/SpecialMailCollectionsDiscoveryJob>
 #include <Akonadi/SpecialMailCollectionsRequestJob>
 #include <QApplication>
-#include <util/resourcereadconfigfile.h>
 
 #include <KIdentityManagementCore/Identity>
 #include <KIdentityManagementCore/IdentityManager>
