@@ -25,9 +25,18 @@ public:
      * expireNever is used to switch off message expiry, and expireMaxUnits
      * must always be the last in the list (for bounds checking).
      */
-    enum ExpireUnits { ExpireNever = 0, ExpireDays = 1, ExpireWeeks = 2, ExpireMonths = 3, ExpireMaxUnits = 4 };
+    enum ExpireUnits {
+        ExpireNever = 0,
+        ExpireDays = 1,
+        ExpireWeeks = 2,
+        ExpireMonths = 3,
+        ExpireMaxUnits = 4,
+    };
 
-    enum ExpireAction { ExpireDelete = 0, ExpireMove = 1 };
+    enum ExpireAction {
+        ExpireDelete = 0,
+        ExpireMove = 1,
+    };
 
     [[nodiscard]] QByteArray type() const override;
     ExpireCollectionAttribute *clone() const override;
