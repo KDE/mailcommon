@@ -33,7 +33,7 @@ public:
 private:
     MAILCOMMON_NO_EXPORT void slotCopyGlobal();
     MAILCOMMON_NO_EXPORT void slotChanged();
-    QCheckBox *mCustom = nullptr;
+    QCheckBox *const mCustom;
     TemplateParser::TemplatesConfiguration *mWidget = nullptr;
     QString mCollectionId;
     uint mIdentity = 0;

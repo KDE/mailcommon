@@ -17,13 +17,13 @@
 using namespace MailCommon;
 CollectionTemplatesWidget::CollectionTemplatesWidget(QWidget *parent)
     : QWidget(parent)
+    , mCustom(new QCheckBox(i18n("&Use custom message templates in this folder"), this))
 {
     auto topLayout = new QVBoxLayout(this);
     auto topItems = new QHBoxLayout;
     topItems->setContentsMargins({});
     topLayout->addLayout(topItems);
 
-    mCustom = new QCheckBox(i18n("&Use custom message templates in this folder"), this);
     connect(mCustom, &QCheckBox::clicked, this, &CollectionTemplatesWidget::slotChanged);
     topItems->addWidget(mCustom, Qt::AlignLeft);
 
