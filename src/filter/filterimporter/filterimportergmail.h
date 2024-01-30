@@ -22,7 +22,7 @@ class MAILCOMMON_EXPORT FilterImporterGmail : public FilterImporterAbstract
 public:
     explicit FilterImporterGmail(QFile *file);
     ~FilterImporterGmail();
-    static QString defaultFiltersSettingsPath();
+    [[nodiscard]] static QString defaultFiltersSettingsPath();
 
 private:
     [[nodiscard]] MAILCOMMON_NO_EXPORT QString createUniqFilterName();

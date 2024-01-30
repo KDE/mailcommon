@@ -21,7 +21,7 @@ class FilterImporterEvolution : public FilterImporterAbstract
 public:
     explicit FilterImporterEvolution(QFile *file);
     ~FilterImporterEvolution();
-    static QString defaultFiltersSettingsPath();
+    [[nodiscard]] static QString defaultFiltersSettingsPath();
 
 private:
     enum parseType {

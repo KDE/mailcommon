@@ -21,7 +21,7 @@ class FilterImporterSylpheed : public FilterImporterAbstract
 public:
     explicit FilterImporterSylpheed(QFile *file);
     ~FilterImporterSylpheed();
-    static QString defaultFiltersSettingsPath();
+    [[nodiscard]] static QString defaultFiltersSettingsPath();
 
 private:
     void parseFilters(const QDomElement &e);

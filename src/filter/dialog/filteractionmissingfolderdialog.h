@@ -34,7 +34,7 @@ public:
     ~FilterActionMissingFolderDialog() override;
 
     [[nodiscard]] Akonadi::Collection selectedCollection() const;
-    static Akonadi::Collection::List potentialCorrectFolders(const QString &path, bool &exactPath);
+    [[nodiscard]] static Akonadi::Collection::List potentialCorrectFolders(const QString &path, bool &exactPath);
 
 private:
     void slotCurrentItemChanged();

@@ -25,14 +25,14 @@ public:
     explicit FilterImporterThunderbird(QFile *file, bool interactive = true);
     FilterImporterThunderbird(QString string, bool interactive = true);
     ~FilterImporterThunderbird();
-    static QString defaultThunderbirdFiltersSettingsPath();
+    [[nodiscard]] static QString defaultThunderbirdFiltersSettingsPath();
 
-    static QString defaultIcedoveFiltersSettingsPath();
-    static QString defaultSeaMonkeyFiltersSettingsPath();
+    [[nodiscard]] static QString defaultIcedoveFiltersSettingsPath();
+    [[nodiscard]] static QString defaultSeaMonkeyFiltersSettingsPath();
 
 private:
     MAILCOMMON_NO_EXPORT void readStream(QTextStream &stream);
-    static MAILCOMMON_NO_EXPORT QString cleanArgument(const QString &line, const QString &removeStr);
+    [[nodiscard]] static MAILCOMMON_NO_EXPORT QString cleanArgument(const QString &line, const QString &removeStr);
     MAILCOMMON_NO_EXPORT void extractConditions(const QString &line, MailCommon::MailFilter *filter);
     [[nodiscard]] MAILCOMMON_NO_EXPORT QString extractActions(const QString &line, MailFilter *filter, QString &value);
     MAILCOMMON_NO_EXPORT void extractType(const QString &line, MailCommon::MailFilter *filter);

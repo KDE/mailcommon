@@ -22,7 +22,7 @@ public:
     explicit FilterImporterProcmail(QFile *file);
     FilterImporterProcmail(QString string);
     ~FilterImporterProcmail();
-    static QString defaultFiltersSettingsPath();
+    [[nodiscard]] static QString defaultFiltersSettingsPath();
 
 private:
     [[nodiscard]] MailCommon::MailFilter *parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter);

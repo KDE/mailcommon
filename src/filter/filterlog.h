@@ -116,7 +116,7 @@ public:
      * Returns an escaped version of the log which can be used
      * in a HTML document.
      */
-    static QString recode(const QString &plain);
+    [[nodiscard]] static QString recode(const QString &plain);
 
     /**
      * Dumps the log to console. Used for debugging.

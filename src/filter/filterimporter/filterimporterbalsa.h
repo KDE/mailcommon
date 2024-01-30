@@ -22,7 +22,7 @@ public:
     explicit FilterImporterBalsa(QFile *file);
     FilterImporterBalsa();
     ~FilterImporterBalsa();
-    static QString defaultFiltersSettingsPath();
+    [[nodiscard]] static QString defaultFiltersSettingsPath();
     void readConfig(KConfig *config);
 
 private:

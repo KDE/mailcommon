@@ -150,7 +150,7 @@ public:
     /**
      * Returns the filter list of the manager.
      */
-    QList<MailCommon::MailFilter *> filters() const;
+    [[nodiscard]] QList<MailCommon::MailFilter *> filters() const;
 
     /**
      * Should be called at the beginning of an filter list update.
