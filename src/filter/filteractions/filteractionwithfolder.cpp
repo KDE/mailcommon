@@ -118,7 +118,7 @@ QString FilterActionWithFolder::displayString() const
         result = MailCommon::Util::fullCollectionPath(CommonKernel->collectionFromId(mFolder.id()));
     }
 
-    return label() + QLatin1StringView(" \"") + result.toHtmlEscaped() + QLatin1String("\"");
+    return label() + QLatin1StringView(" \"") + result.toHtmlEscaped() + QLatin1StringView("\"");
 }
 
 bool FilterActionWithFolder::folderRemoved(const Akonadi::Collection &oldFolder, const Akonadi::Collection &newFolder)

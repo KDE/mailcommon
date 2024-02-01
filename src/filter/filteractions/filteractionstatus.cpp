@@ -92,7 +92,7 @@ QString FilterActionStatus::argsAsString() const
 
 QString FilterActionStatus::displayString() const
 {
-    return label() + QLatin1StringView(" \"") + mParameter + QLatin1String("\"");
+    return label() + QLatin1StringView(" \"") + mParameter + QLatin1StringView("\"");
 }
 
 QString FilterActionStatus::informationAboutNotValidAction() const

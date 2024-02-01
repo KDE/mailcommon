@@ -159,8 +159,8 @@ bool MailCommon::Util::isMailAgent(const Akonadi::AgentInstance &instance, bool 
     }
 
     const QStringList capabilities(instance.type().capabilities());
-    if (capabilities.contains(QLatin1StringView("Resource")) && !capabilities.contains(QLatin1String("Virtual"))
-        && !capabilities.contains(QLatin1StringView("MailTransport")) && !capabilities.contains(QLatin1String("Autostart"))) {
+    if (capabilities.contains(QLatin1StringView("Resource")) && !capabilities.contains(QLatin1StringView("Virtual"))
+        && !capabilities.contains(QLatin1StringView("MailTransport")) && !capabilities.contains(QLatin1StringView("Autostart"))) {
         return true;
     } else if (!excludeMailTransport && instance.identifier() == QLatin1StringView("akonadi_maildispatcher_agent")) {
         return true;

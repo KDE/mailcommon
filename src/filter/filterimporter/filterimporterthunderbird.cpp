@@ -93,7 +93,7 @@ MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream
                     lstValue << value;
                     value = lstValue.join(QLatin1Char('\t'));
                     actionName = QStringLiteral("add header");
-                } else if (actionName == QLatin1StringView("copy") || actionName == QLatin1String("transfer")) {
+                } else if (actionName == QLatin1StringView("copy") || actionName == QLatin1StringView("transfer")) {
                     QUrl url = QUrl::fromLocalFile(value);
                     if (url.isValid()) {
                         QString path = url.path();

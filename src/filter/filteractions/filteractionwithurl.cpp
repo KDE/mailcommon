@@ -100,7 +100,7 @@ QString FilterActionWithUrl::argsAsString() const
 
 QString FilterActionWithUrl::displayString() const
 {
-    return label() + QLatin1StringView(" \"") + argsAsString().toHtmlEscaped() + QLatin1String("\"");
+    return label() + QLatin1StringView(" \"") + argsAsString().toHtmlEscaped() + QLatin1StringView("\"");
 }
 
 #include "moc_filteractionwithurl.cpp"

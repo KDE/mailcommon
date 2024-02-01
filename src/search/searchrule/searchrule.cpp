@@ -512,9 +512,9 @@ QString SearchRule::contents() const
 
 const QString SearchRule::asString() const
 {
-    QString result = QLatin1StringView("\"") + QString::fromLatin1(mField) + QLatin1String("\" <");
+    QString result = QLatin1StringView("\"") + QString::fromLatin1(mField) + QLatin1StringView("\" <");
     result += functionToString(mFunction);
-    result += QLatin1StringView("> \"") + mContents + QLatin1String("\"");
+    result += QLatin1StringView("> \"") + mContents + QLatin1StringView("\"");
 
     return result;
 }

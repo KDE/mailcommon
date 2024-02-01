@@ -35,7 +35,7 @@ QString FilterActionWithUOID::argsAsString() const
 
 QString FilterActionWithUOID::displayString() const
 {
-    return label() + QLatin1StringView(" \"") + argsAsString().toHtmlEscaped() + QLatin1String("\"");
+    return label() + QLatin1StringView(" \"") + argsAsString().toHtmlEscaped() + QLatin1StringView("\"");
 }
 
 #include "moc_filteractionwithuoid.cpp"

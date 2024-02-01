@@ -168,7 +168,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
         msgStr += FilterLog::recode(asString());
         // only log headers because messages and bodies can be pretty large
         if (logContents) {
-            msgStr += QLatin1StringView(" (<i>") + FilterLog::recode(msgContents) + QLatin1String("</i>)");
+            msgStr += QLatin1StringView(" (<i>") + FilterLog::recode(msgContents) + QLatin1StringView("</i>)");
         }
         FilterLog::instance()->add(msgStr, FilterLog::RuleResult);
     }

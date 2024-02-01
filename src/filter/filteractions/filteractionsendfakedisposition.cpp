@@ -107,7 +107,7 @@ QString FilterActionSendFakeDisposition::argsAsString() const
 
 QString FilterActionSendFakeDisposition::displayString() const
 {
-    return label() + QLatin1StringView(" \"") + mParameter + QLatin1String("\"");
+    return label() + QLatin1StringView(" \"") + mParameter + QLatin1StringView("\"");
 }
 
 QString FilterActionSendFakeDisposition::informationAboutNotValidAction() const
