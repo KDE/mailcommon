@@ -24,8 +24,8 @@ public:
     void setText(const QString &str);
 
 private:
-    void readConfig();
-    void writeConfig();
+    MAILCOMMON_NO_EXPORT void readConfig();
+    MAILCOMMON_NO_EXPORT void writeConfig();
     SnippetCustomFileAttachmentNameWidget *const mCustomWidget;
 };
 }

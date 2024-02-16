@@ -24,11 +24,11 @@ public:
 
     QWidget *createValueWidget(int number, QStackedWidget *valueStack, const QObject *receiver) const override;
 
-    SearchRule::Function function(const QByteArray &field, const QStackedWidget *functionStack) const override;
+    [[nodiscard]] SearchRule::Function function(const QByteArray &field, const QStackedWidget *functionStack) const override;
 
-    QString value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const override;
+    [[nodiscard]] QString value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const override;
 
-    QString prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const override;
+    [[nodiscard]] QString prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const override;
 
     bool handlesField(const QByteArray &field) const override;
 

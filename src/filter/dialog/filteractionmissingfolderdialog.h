@@ -37,15 +37,15 @@ public:
     [[nodiscard]] static Akonadi::Collection::List potentialCorrectFolders(const QString &path, bool &exactPath);
 
 private:
-    void slotCurrentItemChanged();
-    void slotFolderChanged(const Akonadi::Collection &col);
-    void slotDoubleItemClicked(QListWidgetItem *item);
-    static void getPotentialFolders(const QAbstractItemModel *model, const QModelIndex &parentIndex, const QString &realPath, Akonadi::Collection::List &list);
+    MAILCOMMON_NO_EXPORT void slotCurrentItemChanged();
+    MAILCOMMON_NO_EXPORT void slotFolderChanged(const Akonadi::Collection &col);
+    MAILCOMMON_NO_EXPORT void slotDoubleItemClicked(QListWidgetItem *item);
+    MAILCOMMON_NO_EXPORT static void
+    getPotentialFolders(const QAbstractItemModel *model, const QModelIndex &parentIndex, const QString &realPath, Akonadi::Collection::List &list);
+    MAILCOMMON_NO_EXPORT void writeConfig();
+    MAILCOMMON_NO_EXPORT void readConfig();
     enum collectionEnum { IdentifyCollection = Qt::UserRole + 1 };
 
-private:
-    void writeConfig();
-    void readConfig();
     MailCommon::FolderRequester *const mFolderRequester;
     QListWidget *mListwidget = nullptr;
     QPushButton *mOkButton = nullptr;

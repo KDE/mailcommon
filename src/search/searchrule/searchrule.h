@@ -205,7 +205,7 @@ public:
      * @li \<status\>: Try to match against status of message (status).
      * @li \<tag\>: Try to match against message tags.
      */
-    QByteArray field() const;
+    [[nodiscard]] QByteArray field() const;
 
     /**
      * Set the @p contents of the rule.
@@ -218,12 +218,12 @@ public:
     /**
      * Returns the contents of the rule.
      */
-    QString contents() const;
+    [[nodiscard]] QString contents() const;
 
     /**
      * Returns the rule as string for debugging purpose
      */
-    const QString asString() const;
+    [[nodiscard]] const QString asString() const;
 
     /**
      * Adds query terms to the given term group.
@@ -244,16 +244,16 @@ protected:
     /**
      * Helper that returns whether the rule has a negated function.
      */
-    bool isNegated() const;
+    [[nodiscard]] bool isNegated() const;
 
     /**
      * Converts the rule function into the corresponding Akonadi query operator.
      */
-    Akonadi::SearchTerm::Condition akonadiComparator() const;
+    [[nodiscard]] Akonadi::SearchTerm::Condition akonadiComparator() const;
 
 private:
-    static Function configValueToFunc(const char *);
-    static QString functionToString(Function);
+    MAILCOMMON_NO_EXPORT static Function configValueToFunc(const char *);
+    MAILCOMMON_NO_EXPORT static QString functionToString(Function);
     MAILCOMMON_NO_EXPORT QString conditionToString(Function function);
 
     QByteArray mField;

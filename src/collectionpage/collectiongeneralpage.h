@@ -50,7 +50,6 @@ private:
     MAILCOMMON_NO_EXPORT void slotFolderContentsSelectionChanged(int);
     MAILCOMMON_NO_EXPORT void slotNameChanged(const QString &name);
 
-private:
     QString mColorName;
 
     CollectionGeneralWidget *mCollectionGeneralWidget = nullptr;

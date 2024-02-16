@@ -49,9 +49,9 @@ public:
 
     MailCommon::SearchRule::Function function(const QByteArray &field, const QStackedWidget *functionStack) const;
 
-    QString value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const;
+    [[nodiscard]] QString value(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const;
 
-    QString prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const;
+    [[nodiscard]] QString prettyValue(const QByteArray &field, const QStackedWidget *functionStack, const QStackedWidget *valueStack) const;
 
     void reset(QStackedWidget *functionStack, QStackedWidget *valueStack) const;
 

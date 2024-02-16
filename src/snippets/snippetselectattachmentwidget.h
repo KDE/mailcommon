@@ -23,7 +23,7 @@ public:
     ~SnippetSelectorWidget() override;
 
     void addNewEntry() override;
-    QString customEntry(const QString &text) override;
+    [[nodiscard]] QString customEntry(const QString &text) override;
 };
 
 class MAILCOMMON_TESTS_EXPORT SnippetSelectAttachmentWidget : public QWidget

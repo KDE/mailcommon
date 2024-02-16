@@ -17,7 +17,7 @@ class ResourceReadConfigFilePrivate;
 class MAILCOMMON_EXPORT ResourceReadConfigFile
 {
 public:
-    ResourceReadConfigFile(const QString &resourceName);
+    explicit ResourceReadConfigFile(const QString &resourceName);
     ~ResourceReadConfigFile();
 
     KConfigGroup group(const QString &name) const;

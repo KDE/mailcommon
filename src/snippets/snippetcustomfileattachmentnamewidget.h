@@ -27,7 +27,7 @@ public:
     void setText(const QString &str);
 
 private:
-    void insertVariable(MessageComposer::ConvertSnippetVariablesUtil::VariableType variable);
+    MAILCOMMON_NO_EXPORT void insertVariable(MessageComposer::ConvertSnippetVariablesUtil::VariableType variable);
     QLineEdit *const mLineEdit;
     MessageComposer::ConvertSnippetVariableMenu *mConvertMenu = nullptr;
 };

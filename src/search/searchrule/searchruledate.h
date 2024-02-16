@@ -44,7 +44,7 @@ public:
      * A helper method for the main matches() method.
      * Does the actual comparing.
      */
-    bool matchesInternal(QDate dateValue, QDate msgDate) const;
+    [[nodiscard]] bool matchesInternal(QDate dateValue, QDate msgDate) const;
 
     /**
      * @copydoc SearchRule::addQueryTerms()

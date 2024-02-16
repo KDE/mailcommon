@@ -113,7 +113,7 @@ public:
      * method whenever the user had had control of the rules outside of
      * this class. (e.g. after editing it with SearchPatternEdit).
      */
-    QString purify(bool removeAction = true);
+    [[nodiscard]] QString purify(bool removeAction = true);
 
     /**
      * Reads a search pattern from a KConfigGroup. If it does not find
@@ -141,7 +141,7 @@ public:
     /**
      * Returns the name of the search pattern.
      */
-    QString name() const
+    [[nodiscard]] QString name() const
     {
         return mName;
     }
@@ -158,7 +158,7 @@ public:
     /**
      * Returns the filter operator.
      */
-    SearchPattern::Operator op() const
+    [[nodiscard]] SearchPattern::Operator op() const
     {
         return mOperator;
     }
@@ -175,7 +175,7 @@ public:
     /**
      * Returns the pattern as string. For debugging.
      */
-    QString asString() const;
+    [[nodiscard]] QString asString() const;
 
     /**
      * Returns the pattern as akonadi query
@@ -190,7 +190,7 @@ public:
     /**
      * Writes the pattern into a byte array for persistence purposes.
      */
-    QByteArray serialize() const;
+    [[nodiscard]] QByteArray serialize() const;
 
     /**
      * Constructs the pattern from a byte array serialization.
@@ -216,7 +216,7 @@ private:
      * Initializes the object. Clears the list of rules, sets the name
      * to "<i18n("unnamed")>", and the boolean operator to @p OpAnd.
      */
-    void init();
+    MAILCOMMON_NO_EXPORT void init();
     QString mName;
     Operator mOperator;
 };

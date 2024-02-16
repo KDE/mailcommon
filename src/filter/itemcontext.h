@@ -76,7 +76,13 @@ public:
     [[nodiscard]] bool deleteItem() const;
 
 private:
-    enum ItemContextAction { None = 0, PlayloadStore = 1, FlagStore = 2, DeleteItem = 4, FullPayload = 8 };
+    enum ItemContextAction {
+        None = 0,
+        PlayloadStore = 1,
+        FlagStore = 2,
+        DeleteItem = 4,
+        FullPayload = 8,
+    };
     Q_DECLARE_FLAGS(ItemContextActions, ItemContextAction)
 
     Akonadi::Item mItem;

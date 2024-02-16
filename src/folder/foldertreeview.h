@@ -97,7 +97,10 @@ Q_SIGNALS:
     void newTabRequested(bool);
 
 private:
-    enum SearchDirection { ForwardSearch, BackwardSearch };
+    enum SearchDirection {
+        ForwardSearch,
+        BackwardSearch,
+    };
 
     MAILCOMMON_NO_EXPORT QModelIndex indexAbove(const QModelIndex &current) const;
     MAILCOMMON_NO_EXPORT QModelIndex indexBelow(const QModelIndex &current) const;

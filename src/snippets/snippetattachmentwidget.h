@@ -27,7 +27,7 @@ Q_SIGNALS:
     void wasChanged();
 
 private:
-    void slotSelectAttachment();
+    MAILCOMMON_NO_EXPORT void slotSelectAttachment();
     QLineEdit *const mLineEdit;
 };
 }

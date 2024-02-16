@@ -121,13 +121,11 @@ Q_SIGNALS:
 
     void returnPressed();
 
-private Q_SLOTS:
-    void slotRadioClicked(QAbstractButton *aRBtn);
-    void slotAutoNameHack();
-    void slotRuleAdded(QWidget *widget);
-
 private:
-    void initLayout(SearchPatternEditOptions options, SearchModeType modeType);
+    MAILCOMMON_NO_EXPORT void slotRuleAdded(QWidget *widget);
+    MAILCOMMON_NO_EXPORT void slotAutoNameHack();
+    MAILCOMMON_NO_EXPORT void slotRadioClicked(QAbstractButton *aRBtn);
+    MAILCOMMON_NO_EXPORT void initLayout(SearchPatternEditOptions options, SearchModeType modeType);
     MailCommon::SearchPattern *mPattern = nullptr;
     QRadioButton *mAllRBtn = nullptr;
     QRadioButton *mAnyRBtn = nullptr;
