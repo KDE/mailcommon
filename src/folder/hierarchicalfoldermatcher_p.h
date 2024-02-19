@@ -7,8 +7,7 @@
 
 #pragma once
 
-#include <Qt>
-
+#include <QString>
 #include <vector>
 
 class QAbstractItemModel;
