@@ -108,7 +108,7 @@ endif()
 
 
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
-ecm_set_disabled_deprecation_versions(QT 6.6.0 KF 6.0.0)
+ecm_set_disabled_deprecation_versions(QT 6.6.1 KF 6.0.0)
 
 add_subdirectory(src)
 if(BUILD_TESTING)
