@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-31 00:38+0000\n"
-"PO-Revision-Date: 2024-02-24 22:19+0300\n"
+"PO-Revision-Date: 2024-03-08 23:17+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.04.70\n"
+"X-Generator: Lokalize 24.02.0\n"
 "X-POOTLE-MTIME: 1413111382.000000\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
@@ -61,7 +61,7 @@ msgstr "Okunan iletilerin son kullanma tarihi:"
 #: collectionpage/collectionexpirywidget.cpp:76
 #, kde-format
 msgid "Expire unread messages after:"
-msgstr "Okunmayan iletilerin son kullanma tarihi:"
+msgstr "Okunmamış iletilerin son kullanma tarihi:"
 
 #: collectionpage/collectionexpirywidget.cpp:90
 #, kde-format
@@ -143,7 +143,7 @@ msgstr ""
 #: collectionpage/collectiongeneralwidget.cpp:25
 #, kde-format
 msgid "Act on new/unread mail in this folder"
-msgstr "Bu klasördeki yeni/okunmayan postada eylem gerçekleştir"
+msgstr "Bu klasördeki yeni/okunmamış postada eylem gerçekleştir"
 
 #: collectionpage/collectiongeneralwidget.cpp:27
 #, kde-format
@@ -156,13 +156,13 @@ msgid ""
 "messages. This is useful for ignoring any new/unread mail in your trash and "
 "spam folder.</p></qt>"
 msgstr ""
-"<qt><p>Bu seçenek etkinleştirilmişse bu klasördeki yeni/okunmayan posta için "
-"bildirim alırsınız. Ayrıca okunmayan iletileri bulunan sonraki/önceki "
+"<qt><p>Bu seçenek etkinleştirilmişse bu klasördeki yeni/okunmamış posta için "
+"bildirim alırsınız. Ayrıca okunmamış iletileri bulunan sonraki/önceki "
 "klasörlere gitmek bu klasörde duracaktır.</p><p>Eğer bu klasördeki yeni/"
-"okunmayan postalar hakkında bilgilendirilmek istemiyor ve okunmayan "
+"okunmamış postalar hakkında bilgilendirilmek istemiyor ve okunmamış "
 "iletileri bulunan sonraki/önceki klasöre giderken bu klasörün atlanmasını "
 "istiyorsanız bu seçeneğin işaretini kaldırın. Bu işlem çöp ve istenmeyen "
-"klasörünüzdeki yeni/okunmayan postayı yok saymak için kullanışlıdır.</p></qt>"
+"klasörünüzdeki yeni/okunmamış postayı yok saymak için kullanışlıdır.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
 #, kde-format
@@ -838,7 +838,7 @@ msgstr "Okunan"
 #, kde-format
 msgctxt "msg status"
 msgid "Unread"
-msgstr "Okunmayan"
+msgstr "Okunmamış"
 
 #: filter/filteractions/filteractionstatus.cpp:34
 #, kde-format
@@ -1777,12 +1777,12 @@ msgstr "El ile, Sürükle ve Bırak ile"
 #: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
-msgstr "<qt><b>%1</b> klasöründeki sonraki okunmayan iletiye gidilsin mi?</qt>"
+msgstr "<qt><b>%1</b> klasöründeki sonraki okunmamış iletiye gidilsin mi?</qt>"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
 msgid "Go to Next Unread Message"
-msgstr "Sonraki Okunmayan İletiye Git"
+msgstr "Sonraki Okunmamış İletiye Git"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
 #, kde-format
@@ -2424,7 +2424,7 @@ msgstr "Eylem Ögesi"
 #: search/widgethandler/statusrulewidgethandler.cpp:30
 msgctxt "message status"
 msgid "Unread"
-msgstr "Okunmayan"
+msgstr "Okunmamış"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:31
 msgctxt "message status"
@@ -2548,8 +2548,8 @@ msgid ""
 "Do you really want to remove snippet \"%1\"?<nl/><warning>There is no way to "
 "undo the removal.</warning>"
 msgstr ""
-"Gerçekten \"%1\" kod parçacığını kaldırmak istiyor musunuz?<nl/"
-"><warning>Kaldırma işlemini geri almak mümkün değildir.</warning>"
+"\"%1\" kod parçacığını kaldırmayı gerçekten istiyor musunuz?<nl/"
+"><warning>Kaldırma işlemi geri alınamaz.</warning>"
 
 #: snippets/snippetsmanager.cpp:305
 #, kde-format
@@ -2570,14 +2570,14 @@ msgid ""
 "Do you really want to remove group \"%1\" along with all its snippets?<nl/"
 "><warning>There is no way to undo the removal.</warning>"
 msgstr ""
-"Gerçekten \"%1\" grubunu tüm kod parçacıkları ile kaldırmak istiyor musunuz?"
-"<nl/><warning>Kaldırma işlemini geri almak mümkün değildir.</warning>"
+"\"%1\" grubunu tüm kod parçacıkları ile kaldırmayı gerçekten istiyor musunuz?"
+"<nl/><warning>Kaldırma işlemi geri alınamaz.</warning>"
 
 #: snippets/snippetsmanager.cpp:369
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to remove group \"%1\"?"
-msgstr "Gerçekten \"%1\" grubunu silmek istiyor musunuz?"
+msgstr "\"%1\" grubunu silmeyi gerçekten istiyor musunuz?"
 
 #: snippets/snippetsmanager.cpp:437 snippets/snippetsmanager.cpp:466
 #, kde-format
