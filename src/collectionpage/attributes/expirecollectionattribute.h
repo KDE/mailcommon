@@ -102,7 +102,7 @@ public:
     /**
      * If expiry should move to folder, return the ID of that folder
      */
-    Akonadi::Collection::Id expireToFolderId() const;
+    [[nodiscard]] Akonadi::Collection::Id expireToFolderId() const;
     void setExpireToFolderId(Akonadi::Collection::Id id);
 
     /**
@@ -117,7 +117,7 @@ public:
      */
     [[nodiscard]] ExpireUnits readExpireUnits() const;
 
-    bool operator==(const ExpireCollectionAttribute &other) const;
+    [[nodiscard]] bool operator==(const ExpireCollectionAttribute &other) const;
     [[nodiscard]] bool expireMessagesWithValidDate() const;
     void setExpireMessagesWithValidDate(bool expireMessagesWithValidDate);
 
