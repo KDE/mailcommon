@@ -17,7 +17,7 @@
 
 #include <KMime/Message>
 
-#include <KIO/Global>
+#include <KFormat>
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KTar>
@@ -182,12 +182,13 @@ void BackupJob::finish()
         "The archive was written to the file '%2'.",
         mRealPath.isEmpty() ? mRootFolder.name() : mRealPath,
         mMailArchivePath.path());
+    KFormat format;
     text += QLatin1Char('\n')
         + i18np("1 message of size %2 was archived.",
                 "%1 messages with the total size of %2 were archived.",
                 mArchivedMessages,
-                KIO::convertSize(mArchivedSize));
-    text += QLatin1Char('\n') + i18n("The archive file has a size of %1.", KIO::convertSize(archiveFileInfo.size()));
+                format.formatByteSize(mArchivedSize));
+    text += QLatin1Char('\n') + i18n("The archive file has a size of %1.", format.formatByteSize(archiveFileInfo.size()));
     if (mDisplayMessageBox) {
         KMessageBox::information(mParentWidget, text, i18n("Archiving finished"));
     }
