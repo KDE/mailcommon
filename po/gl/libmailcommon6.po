@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2023-09-24 15:02+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -1839,7 +1839,7 @@ msgstr "Produciuse un erro ao arquivar"
 msgid "Unable to finalize the archive file."
 msgstr "Non é posíbel finalizar o ficheiro de arquivo."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:192
+#: job/backupjob.cpp:170 job/backupjob.cpp:193
 #, kde-format
 msgid "Archiving finished"
 msgstr "Rematou o arquivado"
@@ -1853,51 +1853,51 @@ msgstr ""
 "Completouse satisfactoriamente o arquivado do cartafol «%1». O arquivo "
 "escribiuse no ficheiro «%2»."
 
-#: job/backupjob.cpp:186
+#: job/backupjob.cpp:187
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
 msgstr[0] "Arquivouse unha mensaxe dun tamaño de %2."
 msgstr[1] "Arquiváronse %1 mensaxes cun tamaño total de %2."
 
-#: job/backupjob.cpp:190
+#: job/backupjob.cpp:191
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "O ficheiro de arquivo ten un tamaño de %1."
 
-#: job/backupjob.cpp:242
+#: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "Non foi posíbel escribir unha mensaxe no cartafol de arquivo «%1»."
 
-#: job/backupjob.cpp:266
+#: job/backupjob.cpp:267
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr "Fallou a descarga dunha mensaxe no cartafol «%1»."
 
-#: job/backupjob.cpp:332
+#: job/backupjob.cpp:333
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "Arquivando o cartafol %1"
 
-#: job/backupjob.cpp:357
+#: job/backupjob.cpp:358
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr ""
 "Non é posíbel crear a estrutura de cartafoles do cartafol «%1» dentro do "
 "ficheiro de arquivo."
 
-#: job/backupjob.cpp:369
+#: job/backupjob.cpp:370
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "Non é posíbel obter a lista de mensaxes do cartafol %1."
 
-#: job/backupjob.cpp:407
+#: job/backupjob.cpp:408
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "Non é posíbel abrir o arquivo para escribir nel."
 
-#: job/backupjob.cpp:411
+#: job/backupjob.cpp:412
 #, kde-format
 msgid "Archiving"
 msgstr "Arquivado"

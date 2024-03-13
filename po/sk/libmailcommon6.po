@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2019-11-18 12:53+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -1873,7 +1873,7 @@ msgstr "Archivácia zlyhala"
 msgid "Unable to finalize the archive file."
 msgstr "Nemožno dokončiť archívny súbor."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:192
+#: job/backupjob.cpp:170 job/backupjob.cpp:193
 #, kde-format
 msgid "Archiving finished"
 msgstr "Archivácia ukončená"
@@ -1887,7 +1887,7 @@ msgstr ""
 "Archivácia priečinka '%1' úspešne dokončená. Archív bol zapísaný do súboru "
 "'%2'."
 
-#: job/backupjob.cpp:186
+#: job/backupjob.cpp:187
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
@@ -1895,44 +1895,44 @@ msgstr[0] "1 správa s veľkosťou %2 bola archivovaná."
 msgstr[1] "%1 správy s celkovou veľkosťou %2 bolo archivovaných."
 msgstr[2] "%1 správ s celkovou veľkosťou %2 bolo archivovaných."
 
-#: job/backupjob.cpp:190
+#: job/backupjob.cpp:191
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Archívny súbor má veľkosť %1."
 
-#: job/backupjob.cpp:242
+#: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "Zlyhal zápis správy do archívneho priečinka '%1'."
 
-#: job/backupjob.cpp:266
+#: job/backupjob.cpp:267
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr "Stiahnutie správy v priečinku '%1' zlyhalo."
 
-#: job/backupjob.cpp:332
+#: job/backupjob.cpp:333
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "Archivovanie priečinka %1"
 
-#: job/backupjob.cpp:357
+#: job/backupjob.cpp:358
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr ""
 "Nie je možné vytvoriť štruktúru priečinka pre priečinok '%1' v súbore "
 "archívu."
 
-#: job/backupjob.cpp:369
+#: job/backupjob.cpp:370
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "Nie je možné získať zoznam správ pre priečinok %1."
 
-#: job/backupjob.cpp:407
+#: job/backupjob.cpp:408
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "Nepodarilo sa otvoriť archív pre zápis."
 
-#: job/backupjob.cpp:411
+#: job/backupjob.cpp:412
 #, kde-format
 msgid "Archiving"
 msgstr "Archivovanie"

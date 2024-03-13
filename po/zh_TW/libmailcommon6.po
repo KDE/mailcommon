@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2023-12-13 02:38+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -1777,7 +1777,7 @@ msgstr "封存失敗"
 msgid "Unable to finalize the archive file."
 msgstr "無法結束封存動作。"
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:192
+#: job/backupjob.cpp:170 job/backupjob.cpp:193
 #, kde-format
 msgid "Archiving finished"
 msgstr "封存已完成。"
@@ -1789,48 +1789,48 @@ msgid ""
 "file '%2'."
 msgstr "封存資料夾 %1 已完成。此檔案寫入 %2。"
 
-#: job/backupjob.cpp:186
+#: job/backupjob.cpp:187
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
 msgstr[0] "總共封存了 %1 封信件，大小共 %2。"
 
-#: job/backupjob.cpp:190
+#: job/backupjob.cpp:191
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "封存大小為 %1。"
 
-#: job/backupjob.cpp:242
+#: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "將信件寫入封存資料夾 %1 時失敗。"
 
-#: job/backupjob.cpp:266
+#: job/backupjob.cpp:267
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr "下載資料夾 %1 內的信件失敗。"
 
-#: job/backupjob.cpp:332
+#: job/backupjob.cpp:333
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "封存資料夾 %1 中"
 
-#: job/backupjob.cpp:357
+#: job/backupjob.cpp:358
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr "無法在封存內建立資料夾 %1 的結構。"
 
-#: job/backupjob.cpp:369
+#: job/backupjob.cpp:370
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "無法從資料夾 %1 中取得信件列表。"
 
-#: job/backupjob.cpp:407
+#: job/backupjob.cpp:408
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "無法開啟封存以寫入。"
 
-#: job/backupjob.cpp:411
+#: job/backupjob.cpp:412
 #, kde-format
 msgid "Archiving"
 msgstr "封存中"

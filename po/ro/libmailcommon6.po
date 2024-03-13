@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2022-02-17 11:52+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -1845,7 +1845,7 @@ msgstr "Arhivare eșuată"
 msgid "Unable to finalize the archive file."
 msgstr "Fișierul-arhivă nu poate fi finalizat."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:192
+#: job/backupjob.cpp:170 job/backupjob.cpp:193
 #, kde-format
 msgid "Archiving finished"
 msgstr "Arhivare încheiată"
@@ -1859,7 +1859,7 @@ msgstr ""
 "Arhivarea dosarului „%1” s-a încheiat cu succes. Arhiva a fost scrisă în "
 "fișierul „%2”"
 
-#: job/backupjob.cpp:186
+#: job/backupjob.cpp:187
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
@@ -1867,44 +1867,44 @@ msgstr[0] "A fost arhivat 1 mesaj cu dimensiunea de %2"
 msgstr[1] "Au fost arhivate %1 mesaje cu dimensiunea totală de %2"
 msgstr[2] "Au fost arhivate %1 de mesaje cu dimensiunea totală de %2"
 
-#: job/backupjob.cpp:190
+#: job/backupjob.cpp:191
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Fișierul-arhivă are dimensiunea de %1."
 
-#: job/backupjob.cpp:242
+#: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "Scrierea unui mesaj în dosarul de arhivă „%1” a eșuat."
 
-#: job/backupjob.cpp:266
+#: job/backupjob.cpp:267
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr "Descărcarea unui mesaj în dosarul „%1” a eșuat."
 
-#: job/backupjob.cpp:332
+#: job/backupjob.cpp:333
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "Se arhivează dosarul %1"
 
-#: job/backupjob.cpp:357
+#: job/backupjob.cpp:358
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr ""
 "Nu s-a putut crea structura de dosare pentru dosarul „%1” în cadrul "
 "fișierului-arhivă."
 
-#: job/backupjob.cpp:369
+#: job/backupjob.cpp:370
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "Nu se poate obține lista mesajelor pentru dosarul %1."
 
-#: job/backupjob.cpp:407
+#: job/backupjob.cpp:408
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "Arhiva nu poate fi deschisă pentru scriere."
 
-#: job/backupjob.cpp:411
+#: job/backupjob.cpp:412
 #, kde-format
 msgid "Archiving"
 msgstr "Se arhivează"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2020-08-08 16:45+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -1851,7 +1851,7 @@ msgstr "Arkivering mislykkedes"
 msgid "Unable to finalize the archive file."
 msgstr "Kunne ikke initialisere arkivfilen."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:192
+#: job/backupjob.cpp:170 job/backupjob.cpp:193
 #, kde-format
 msgid "Archiving finished"
 msgstr "Arkivering gennemført"
@@ -1865,49 +1865,49 @@ msgstr ""
 "Arkivering af mappen \"%1\" blev gennemført. Arkivet blev skrevet til filen "
 "\"%2\"."
 
-#: job/backupjob.cpp:186
+#: job/backupjob.cpp:187
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
 msgstr[0] "1 brev med størrelsen %2 blev arkiveret."
 msgstr[1] "%1 breve med samlet størrelse på %2 blev arkiveret."
 
-#: job/backupjob.cpp:190
+#: job/backupjob.cpp:191
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Arkivfilen har en størrelse på %1."
 
-#: job/backupjob.cpp:242
+#: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "Kunne ikke skrive et brev ind i arkivmappen \"%1\"."
 
-#: job/backupjob.cpp:266
+#: job/backupjob.cpp:267
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr "Download af et brev i mappen \"%1\" mislykkedes."
 
-#: job/backupjob.cpp:332
+#: job/backupjob.cpp:333
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "Arkiverer mappen %1"
 
-#: job/backupjob.cpp:357
+#: job/backupjob.cpp:358
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr "Kan ikke oprette mappestrukturen for mappen \"%1\" indeni arkivfilen."
 
-#: job/backupjob.cpp:369
+#: job/backupjob.cpp:370
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "Kan ikke hente brevlisten for mappen %1."
 
-#: job/backupjob.cpp:407
+#: job/backupjob.cpp:408
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "Kan ikke åbne arkiv til skrivning."
 
-#: job/backupjob.cpp:411
+#: job/backupjob.cpp:412
 #, kde-format
 msgid "Archiving"
 msgstr "Arkivering"

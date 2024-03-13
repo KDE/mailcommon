@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2023-12-18 01:45+0100\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -1877,7 +1877,7 @@ msgstr "Archivierung fehlgeschlagen"
 msgid "Unable to finalize the archive file."
 msgstr "Fehler beim Finalisieren der Archivdatei."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:192
+#: job/backupjob.cpp:170 job/backupjob.cpp:193
 #, kde-format
 msgid "Archiving finished"
 msgstr "Archivierung abgeschlossen."
@@ -1891,52 +1891,52 @@ msgstr ""
 "Die Archivierung des Ordners „%1“ wurde erfolgreich abgeschlossen. Das "
 "Archiv wurde in die Datei „%2“ gespeichert."
 
-#: job/backupjob.cpp:186
+#: job/backupjob.cpp:187
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
 msgstr[0] "1 Nachricht der Größe %2 wurde archiviert."
 msgstr[1] "%1 Nachrichten mit der Gesamtgröße von %2 wurden archiviert."
 
-#: job/backupjob.cpp:190
+#: job/backupjob.cpp:191
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Die Archivdatei hat eine Gesamtgröße von %1."
 
-#: job/backupjob.cpp:242
+#: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "Fehler beim Schreiben einer Nachricht in den Archiv-Ordner „%1“."
 
-#: job/backupjob.cpp:266
+#: job/backupjob.cpp:267
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr ""
 "Das Herunterladen einer Nachricht in den Ordner „%1“ ist fehlgeschlagen."
 
-#: job/backupjob.cpp:332
+#: job/backupjob.cpp:333
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "Der Ordner „%1“ wird archiviert."
 
-#: job/backupjob.cpp:357
+#: job/backupjob.cpp:358
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr ""
 "Fehler beim Erzeugen der Ordnerstruktur für den Ordner „%1“ innerhalb der "
 "Archivdatei."
 
-#: job/backupjob.cpp:369
+#: job/backupjob.cpp:370
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "Fehler beim Holen der Nachrichtenliste für den Ordner „%1“."
 
-#: job/backupjob.cpp:407
+#: job/backupjob.cpp:408
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "Das Archiv kann nicht zum Schreiben geöffnet werden."
 
-#: job/backupjob.cpp:411
+#: job/backupjob.cpp:412
 #, kde-format
 msgid "Archiving"
 msgstr "Archivierung läuft"

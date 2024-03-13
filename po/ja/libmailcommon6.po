@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2012-01-28 16:25-0800\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -1840,7 +1840,7 @@ msgstr "アーカイブに失敗"
 msgid "Unable to finalize the archive file."
 msgstr ""
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:192
+#: job/backupjob.cpp:170 job/backupjob.cpp:193
 #, kde-format
 msgid "Archiving finished"
 msgstr "アーカイブ終了"
@@ -1852,40 +1852,40 @@ msgid ""
 "file '%2'."
 msgstr ""
 
-#: job/backupjob.cpp:186
+#: job/backupjob.cpp:187
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
 msgstr[0] ""
 
-#: job/backupjob.cpp:190
+#: job/backupjob.cpp:191
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "アーカイブファイルのサイズは %1。"
 
-#: job/backupjob.cpp:242
+#: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr ""
 
-#: job/backupjob.cpp:266
+#: job/backupjob.cpp:267
 #, fuzzy, kde-format
 #| msgid "Removing old messages from folder %1 failed."
 msgid "Downloading a message in folder '%1' failed."
 msgstr ""
 "フォルダ <resource>%1</resource> の古いメッセージを削除できませんでした。"
 
-#: job/backupjob.cpp:332
+#: job/backupjob.cpp:333
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "フォルダ %1 をアーカイブ中"
 
-#: job/backupjob.cpp:357
+#: job/backupjob.cpp:358
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr ""
 
-#: job/backupjob.cpp:369
+#: job/backupjob.cpp:370
 #, fuzzy, kde-format
 #| msgid "Removed 1 old message from folder %2."
 #| msgid_plural "Removed %1 old messages from folder %2."
@@ -1893,12 +1893,12 @@ msgid "Unable to get message list for folder %1."
 msgstr ""
 "フォルダ <resource>%2</resource> の 1 件の古いメッセージを削除しました。"
 
-#: job/backupjob.cpp:407
+#: job/backupjob.cpp:408
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "アーカイブを書き込みのために開くことができません"
 
-#: job/backupjob.cpp:411
+#: job/backupjob.cpp:412
 #, kde-format
 msgid "Archiving"
 msgstr "アーカイブ中"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2024-01-23 13:59+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -1838,7 +1838,7 @@ msgstr "Arhiviranje ni uspelo"
 msgid "Unable to finalize the archive file."
 msgstr "Ni mogoče dokončati datoteke arhiva."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:192
+#: job/backupjob.cpp:170 job/backupjob.cpp:193
 #, kde-format
 msgid "Archiving finished"
 msgstr "Arhiviranje zaključeno"
@@ -1852,7 +1852,7 @@ msgstr ""
 "Arhiviranje mape »%1« je bilo uspešno zaključeno. Arhiv je bil zapisan v "
 "datoteko »%2«."
 
-#: job/backupjob.cpp:186
+#: job/backupjob.cpp:187
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
@@ -1861,42 +1861,42 @@ msgstr[1] "Arhivirano sta bili %1 sporočili v skupni velikosti %2."
 msgstr[2] "Arhivirana so bila %1 sporočila v skupni velikosti %2."
 msgstr[3] "Arhivirano je bilo %1 sporočil v skupni velikosti %2."
 
-#: job/backupjob.cpp:190
+#: job/backupjob.cpp:191
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Datoteka arhiva je velika %1."
 
-#: job/backupjob.cpp:242
+#: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "Zapis sporočila v arhivsko mapo »%1« ni uspel."
 
-#: job/backupjob.cpp:266
+#: job/backupjob.cpp:267
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr "Prejemanje sporočila v mapo »%1« ni uspelo."
 
-#: job/backupjob.cpp:332
+#: job/backupjob.cpp:333
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "Arhiviranje mape %1"
 
-#: job/backupjob.cpp:357
+#: job/backupjob.cpp:358
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr "Znotraj datoteke arhiva ni mogoče ustvariti zgradbe map za mapo »%1«."
 
-#: job/backupjob.cpp:369
+#: job/backupjob.cpp:370
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "Ni mogoče pridobiti seznama sporočil za mapo %1."
 
-#: job/backupjob.cpp:407
+#: job/backupjob.cpp:408
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "Arhiva ni mogoče odpreti za pisanje."
 
-#: job/backupjob.cpp:411
+#: job/backupjob.cpp:412
 #, kde-format
 msgid "Archiving"
 msgstr "Arhiviranje"

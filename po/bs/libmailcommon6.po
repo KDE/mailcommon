@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2014-01-31 19:29+0100\n"
 "Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
 "Language-Team: bs <bs@kde.org>\n"
@@ -1904,7 +1904,7 @@ msgstr "Arhiviranje neuspjelo"
 msgid "Unable to finalize the archive file."
 msgstr "Nije moguće dovršiti arhivsku datoteku."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:192
+#: job/backupjob.cpp:170 job/backupjob.cpp:193
 #, kde-format
 msgid "Archiving finished"
 msgstr "Arhiviranje dovršeno"
@@ -1917,7 +1917,7 @@ msgid ""
 msgstr ""
 "Arhivski direktorij '%1' uspješno završen. Arhiva je upisana u datoteku '%2'."
 
-#: job/backupjob.cpp:186
+#: job/backupjob.cpp:187
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
@@ -1925,44 +1925,44 @@ msgstr[0] "%1 poruka veličine %2 je arhivirana."
 msgstr[1] "%1 poruke sa ukupnom veličinom od %2 su arhivirane."
 msgstr[2] "%1 poruka sa ukupnom veličinom od %2 je arhivirano."
 
-#: job/backupjob.cpp:190
+#: job/backupjob.cpp:191
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Arhivirane datoteke imaju veličinu od %1."
 
-#: job/backupjob.cpp:242
+#: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "Nije uspjelo upisivanje poruke u arhivirani direktorij '%1'."
 
-#: job/backupjob.cpp:266
+#: job/backupjob.cpp:267
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr "Preuzimanje poruke u direktorij '%1' nije uspjelo."
 
-#: job/backupjob.cpp:332
+#: job/backupjob.cpp:333
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "Arhiviranje direktorija %1"
 
-#: job/backupjob.cpp:357
+#: job/backupjob.cpp:358
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr ""
 "Nije moguće stvoriti strukturu direktorija za direktorij '%1' bez "
 "arhiviranih datoteka."
 
-#: job/backupjob.cpp:369
+#: job/backupjob.cpp:370
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "Neuspjelo dobavljanje liste poruka za fasciklu %1."
 
-#: job/backupjob.cpp:407
+#: job/backupjob.cpp:408
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "Nije moguće otvoriti arhivu za pisanje."
 
-#: job/backupjob.cpp:411
+#: job/backupjob.cpp:412
 #, kde-format
 msgid "Archiving"
 msgstr "Arhiviranje"

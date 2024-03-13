@@ -1,17 +1,17 @@
 # Translation of libmailcommon6.po to Catalan (Valencian)
-# Copyright (C) 2011-2023 This_file_is_part_of_KDE
+# Copyright (C) 2011-2024 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Manuel Tortosa <manutortosa@chakra-project.org>, 2011.
-# Josep M. Ferrer <txemaq@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# Josep M. Ferrer <txemaq@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2011, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
-"PO-Revision-Date: 2023-09-22 11:30+0200\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
+"PO-Revision-Date: 2024-03-10 12:40+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -1861,7 +1861,7 @@ msgstr "No s'ha pogut fer l'arxivament"
 msgid "Unable to finalize the archive file."
 msgstr "No s'ha pogut finalitzar el fitxer d'arxiu."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:192
+#: job/backupjob.cpp:170 job/backupjob.cpp:193
 #, kde-format
 msgid "Archiving finished"
 msgstr "L'arxivament ha finalitzat"
@@ -1875,51 +1875,51 @@ msgstr ""
 "L'arxivament de la carpeta «%1» ha finalitzat correctament. L'arxiu s'ha "
 "escrit en el fitxer «%2»."
 
-#: job/backupjob.cpp:186
+#: job/backupjob.cpp:187
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
 msgstr[0] "S'ha arxivat 1 missatge de mida %2."
 msgstr[1] "S'han arxivat %1 missatges amb una mida total de %2."
 
-#: job/backupjob.cpp:190
+#: job/backupjob.cpp:191
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "El fitxer d'arxiu té una mida de %1."
 
-#: job/backupjob.cpp:242
+#: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "No s'ha pogut escriure un missatge a dins de la carpeta d'arxiu «%1»."
 
-#: job/backupjob.cpp:266
+#: job/backupjob.cpp:267
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr "No s'ha pogut baixar un missatge en la carpeta «%1»."
 
-#: job/backupjob.cpp:332
+#: job/backupjob.cpp:333
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "Arxivament de la carpeta %1"
 
-#: job/backupjob.cpp:357
+#: job/backupjob.cpp:358
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr ""
 "No s'ha pogut crear l'estructura de carpeta per a la carpeta «%1» en el "
 "fitxer d'arxiu."
 
-#: job/backupjob.cpp:369
+#: job/backupjob.cpp:370
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "No s'ha pogut obtindre la llista de missatges per a la carpeta %1."
 
-#: job/backupjob.cpp:407
+#: job/backupjob.cpp:408
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "No s'ha pogut obrir l'arxiu per a escriptura."
 
-#: job/backupjob.cpp:411
+#: job/backupjob.cpp:412
 #, kde-format
 msgid "Archiving"
 msgstr "Arxivament"
