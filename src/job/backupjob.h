@@ -68,14 +68,14 @@ private:
     MAILCOMMON_NO_EXPORT void archiveNextFolder();
     MAILCOMMON_NO_EXPORT void onArchiveNextFolderDone(KJob *job);
     MAILCOMMON_NO_EXPORT void archiveNextMessage();
-    MAILCOMMON_NO_EXPORT bool queueFolders(const Akonadi::Collection &root);
+    [[nodiscard]] MAILCOMMON_NO_EXPORT bool queueFolders(const Akonadi::Collection &root);
     MAILCOMMON_NO_EXPORT void processMessage(const Akonadi::Item &item);
     [[nodiscard]] MAILCOMMON_NO_EXPORT QString pathForCollection(const Akonadi::Collection &collection) const;
     [[nodiscard]] MAILCOMMON_NO_EXPORT QString subdirPathForCollection(const Akonadi::Collection &collection) const;
     [[nodiscard]] MAILCOMMON_NO_EXPORT bool hasChildren(const Akonadi::Collection &collection) const;
     MAILCOMMON_NO_EXPORT void finish();
     MAILCOMMON_NO_EXPORT void abort(const QString &errorMessage);
-    MAILCOMMON_NO_EXPORT bool writeDirHelper(const QString &directoryPath);
+    [[nodiscard]] MAILCOMMON_NO_EXPORT bool writeDirHelper(const QString &directoryPath);
 
     // Helper function to return the name of the given collection.
     // Some Collection's don't have the name fetched. However, in mAllFolders,

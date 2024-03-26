@@ -33,7 +33,6 @@ private:
     void done();
     void slotExpireDeleteDone();
 
-private:
     Akonadi::Item::List mRemovedMsgs;
     qint64 mMaxUnreadTime = 0;
     qint64 mMaxReadTime = 0;

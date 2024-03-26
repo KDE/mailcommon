@@ -67,48 +67,48 @@ public:
     /**
      * Returns the model that represents the snippets.
      */
-    QAbstractItemModel *model() const;
+    [[nodiscard]] QAbstractItemModel *model() const;
 
     /**
      * Returns the selection model that is used by the manager to select the
      * snippet or snippet group to work on.
      */
-    QItemSelectionModel *selectionModel() const;
+    [[nodiscard]] QItemSelectionModel *selectionModel() const;
 
     /**
      * Returns the action that handles adding new snippets.
      */
-    QAction *addSnippetAction() const;
+    [[nodiscard]] QAction *addSnippetAction() const;
 
     /**
      * Returns the action that handles editing the currently selected snippet.
      */
-    QAction *editSnippetAction() const;
+    [[nodiscard]] QAction *editSnippetAction() const;
 
     /**
      * Returns the action that handles deleting the currently selected snippet.
      */
-    QAction *deleteSnippetAction() const;
+    [[nodiscard]] QAction *deleteSnippetAction() const;
 
     /**
      * Returns the action that handles adding new snippet groups.
      */
-    QAction *addSnippetGroupAction() const;
+    [[nodiscard]] QAction *addSnippetGroupAction() const;
 
     /**
      * Returns the action that handles editing the currently selected snippet group.
      */
-    QAction *editSnippetGroupAction() const;
+    [[nodiscard]] QAction *editSnippetGroupAction() const;
 
     /**
      * Returns the action that handles deleting the currently selected snippet group.
      */
-    QAction *deleteSnippetGroupAction() const;
+    [[nodiscard]] QAction *deleteSnippetGroupAction() const;
 
     /**
      * Returns the action that handles inserting a snippet into the editor.
      */
-    QAction *insertSnippetAction() const;
+    [[nodiscard]] QAction *insertSnippetAction() const;
 
     /**
      * Returns whether the currently selected item is a snippet group.

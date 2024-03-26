@@ -42,9 +42,9 @@ public:
     // Compare, based on name
     static bool compareName(const Ptr &tag1, const Ptr &tag2);
 
-    qint64 id() const;
-    QString name() const;
-    Akonadi::Tag tag() const;
+    [[nodiscard]] qint64 id() const;
+    [[nodiscard]] QString name() const;
+    [[nodiscard]] Akonadi::Tag tag() const;
 
     QString tagName;
     QColor textColor;

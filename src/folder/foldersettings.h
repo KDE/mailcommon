@@ -115,7 +115,7 @@ protected Q_SLOTS:
 
 private:
     explicit MAILCOMMON_NO_EXPORT FolderSettings(const Akonadi::Collection &col, bool writeconfig);
-    MAILCOMMON_NO_EXPORT QString resource() const;
+    [[nodiscard]] MAILCOMMON_NO_EXPORT QString resource() const;
 
     Akonadi::Collection mCollection;
 
