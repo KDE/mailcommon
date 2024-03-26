@@ -30,7 +30,10 @@ public:
     /**
      * Describes the send mode.
      */
-    enum SendMode { SendNow, SendLater };
+    enum SendMode {
+        SendNow,
+        SendLater,
+    };
 
     /**
      * Creates a new redirect dialog.
