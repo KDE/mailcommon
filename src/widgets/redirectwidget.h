@@ -23,7 +23,7 @@ public:
     explicit RedirectWidget(QWidget *parent = nullptr);
     ~RedirectWidget() override;
 
-    void setFocus();
+    void forceFocus();
     [[nodiscard]] QString resend();
 
 Q_SIGNALS:

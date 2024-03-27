@@ -58,7 +58,7 @@ QString RedirectWidget::resend()
     return mResendStr;
 }
 
-void RedirectWidget::setFocus()
+void RedirectWidget::forceFocus()
 {
     mEdit->setFocus();
 }
