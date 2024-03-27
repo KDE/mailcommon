@@ -73,7 +73,10 @@ public:
     };
     Q_DECLARE_FLAGS(SearchPatternEditOptions, SearchPatternEditOption)
 
-    enum SearchModeType { StandardMode = 0, BalooMode = 1 };
+    enum SearchModeType {
+        StandardMode = 0,
+        BalooMode = 1,
+    };
 
     /**
      * Constructor. The parent parameter is passed to the underlying
