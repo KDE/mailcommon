@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-13 00:38+0000\n"
+"POT-Creation-Date: 2024-03-27 00:38+0000\n"
 "PO-Revision-Date: 2022-08-03 10:15+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -226,63 +226,63 @@ msgstr "An&vänd egna brevmallar i korgen"
 msgid "&Copy Global Templates"
 msgstr "&Kopiera allmänna mallar"
 
+#: collectionpage/collectionviewwidget.cpp:27
+#, kde-format
+msgid "Use default message list aggregation:"
+msgstr "Använd standardsammanställning för brevlista:"
+
+#: collectionpage/collectionviewwidget.cpp:29
+#, kde-format
+msgid "Use default message list theme"
+msgstr "Använd standardtema för brevlista"
+
+#: collectionpage/collectionviewwidget.cpp:31
+#, kde-format
+msgid "Prefer HTML to text"
+msgstr "Föredra HTML före text"
+
 #: collectionpage/collectionviewwidget.cpp:32
+#, kde-format
+msgid "Prefer text to HTML"
+msgstr "Föredra text före HTML"
+
+#: collectionpage/collectionviewwidget.cpp:33
+#, kde-format
+msgid "Use Global Settings"
+msgstr "Använd globala inställningar"
+
+#: collectionpage/collectionviewwidget.cpp:40
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
 msgstr "Visa kolumn med avsändare och mottagare i brevlistan"
 
-#: collectionpage/collectionviewwidget.cpp:36
+#: collectionpage/collectionviewwidget.cpp:43
 #, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
 msgstr "Förval"
 
-#: collectionpage/collectionviewwidget.cpp:37
+#: collectionpage/collectionviewwidget.cpp:44
 #, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
 msgstr "Avsändare"
 
-#: collectionpage/collectionviewwidget.cpp:38
+#: collectionpage/collectionviewwidget.cpp:45
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
 msgstr "Mottagare"
 
-#: collectionpage/collectionviewwidget.cpp:39
+#: collectionpage/collectionviewwidget.cpp:46
 #, kde-format
 msgid "Sho&w column:"
 msgstr "&Visa kolumn:"
-
-#: collectionpage/collectionviewwidget.cpp:42
-#, kde-format
-msgid "Use default message list aggregation:"
-msgstr "Använd standardsammanställning för brevlista:"
-
-#: collectionpage/collectionviewwidget.cpp:59
-#, kde-format
-msgid "Use default message list theme"
-msgstr "Använd standardtema för brevlista"
-
-#: collectionpage/collectionviewwidget.cpp:76
-#, kde-format
-msgid "Prefer HTML to text"
-msgstr "Föredra HTML före text"
 
 #: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
 msgid "Message format:"
 msgstr "Brevformat:"
-
-#: collectionpage/collectionviewwidget.cpp:78
-#, kde-format
-msgid "Prefer text to HTML"
-msgstr "Föredra text före HTML"
-
-#: collectionpage/collectionviewwidget.cpp:80
-#, kde-format
-msgid "Use Global Settings"
-msgstr "Använd globala inställningar"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
 #, kde-format

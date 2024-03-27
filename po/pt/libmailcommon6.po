@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-13 00:38+0000\n"
+"POT-Creation-Date: 2024-03-27 00:38+0000\n"
 "PO-Revision-Date: 2022-07-04 13:16+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -238,63 +238,63 @@ msgstr "&Usar os modelos de mensagens personalizadas nesta pasta"
 msgid "&Copy Global Templates"
 msgstr "&Copiar os Modelos Globais"
 
+#: collectionpage/collectionviewwidget.cpp:27
+#, kde-format
+msgid "Use default message list aggregation:"
+msgstr "Usar a agregação predefinida da lista de mensagens:"
+
+#: collectionpage/collectionviewwidget.cpp:29
+#, kde-format
+msgid "Use default message list theme"
+msgstr "Usar o tema predefinido da lista de mensagens"
+
+#: collectionpage/collectionviewwidget.cpp:31
+#, kde-format
+msgid "Prefer HTML to text"
+msgstr "Preferir o HTML ao texto"
+
 #: collectionpage/collectionviewwidget.cpp:32
+#, kde-format
+msgid "Prefer text to HTML"
+msgstr "Preferir o texto ao HTML"
+
+#: collectionpage/collectionviewwidget.cpp:33
+#, kde-format
+msgid "Use Global Settings"
+msgstr "Usar a Configuração Global"
+
+#: collectionpage/collectionviewwidget.cpp:40
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
 msgstr "Mostrar a Coluna do Remetente/Destinatário na Lista de Mensagens"
 
-#: collectionpage/collectionviewwidget.cpp:36
+#: collectionpage/collectionviewwidget.cpp:43
 #, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
 msgstr "Predefinição"
 
-#: collectionpage/collectionviewwidget.cpp:37
+#: collectionpage/collectionviewwidget.cpp:44
 #, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
 msgstr "Remetente"
 
-#: collectionpage/collectionviewwidget.cpp:38
+#: collectionpage/collectionviewwidget.cpp:45
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
 msgstr "Destinatário"
 
-#: collectionpage/collectionviewwidget.cpp:39
+#: collectionpage/collectionviewwidget.cpp:46
 #, kde-format
 msgid "Sho&w column:"
 msgstr "&Mostrar a coluna:"
-
-#: collectionpage/collectionviewwidget.cpp:42
-#, kde-format
-msgid "Use default message list aggregation:"
-msgstr "Usar a agregação predefinida da lista de mensagens:"
-
-#: collectionpage/collectionviewwidget.cpp:59
-#, kde-format
-msgid "Use default message list theme"
-msgstr "Usar o tema predefinido da lista de mensagens"
-
-#: collectionpage/collectionviewwidget.cpp:76
-#, kde-format
-msgid "Prefer HTML to text"
-msgstr "Preferir o HTML ao texto"
 
 #: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
 msgid "Message format:"
 msgstr "Formato da mensagem:"
-
-#: collectionpage/collectionviewwidget.cpp:78
-#, kde-format
-msgid "Prefer text to HTML"
-msgstr "Preferir o texto ao HTML"
-
-#: collectionpage/collectionviewwidget.cpp:80
-#, kde-format
-msgid "Use Global Settings"
-msgstr "Usar a Configuração Global"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
 #, kde-format

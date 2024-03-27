@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-13 00:38+0000\n"
+"POT-Creation-Date: 2024-03-27 00:38+0000\n"
 "PO-Revision-Date: 2024-01-20 00:04+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -229,63 +229,63 @@ msgstr "Egyéni üzenetsablonok has&ználata ebben a mappában"
 msgid "&Copy Global Templates"
 msgstr "A globális sablonok más&olása"
 
+#: collectionpage/collectionviewwidget.cpp:27
+#, kde-format
+msgid "Use default message list aggregation:"
+msgstr "Alapértelmezett üzenetlista-összesítés használata:"
+
+#: collectionpage/collectionviewwidget.cpp:29
+#, kde-format
+msgid "Use default message list theme"
+msgstr "Alapértelmezett üzenetlista-téma használata"
+
+#: collectionpage/collectionviewwidget.cpp:31
+#, kde-format
+msgid "Prefer HTML to text"
+msgstr "Inkább HTML, mint szöveg"
+
 #: collectionpage/collectionviewwidget.cpp:32
+#, kde-format
+msgid "Prefer text to HTML"
+msgstr "Inkább szöveg, mint HTML"
+
+#: collectionpage/collectionviewwidget.cpp:33
+#, kde-format
+msgid "Use Global Settings"
+msgstr "Globális beállítások használata"
+
+#: collectionpage/collectionviewwidget.cpp:40
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
 msgstr "Feladó/Címzett oszlop megjelenítése az üzenetlistában"
 
-#: collectionpage/collectionviewwidget.cpp:36
+#: collectionpage/collectionviewwidget.cpp:43
 #, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
 msgstr "Alapértelmezett"
 
-#: collectionpage/collectionviewwidget.cpp:37
+#: collectionpage/collectionviewwidget.cpp:44
 #, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
 msgstr "Feladó"
 
-#: collectionpage/collectionviewwidget.cpp:38
+#: collectionpage/collectionviewwidget.cpp:45
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
 msgstr "Címzett"
 
-#: collectionpage/collectionviewwidget.cpp:39
+#: collectionpage/collectionviewwidget.cpp:46
 #, kde-format
 msgid "Sho&w column:"
 msgstr "Oszlop &megjelenítése:"
-
-#: collectionpage/collectionviewwidget.cpp:42
-#, kde-format
-msgid "Use default message list aggregation:"
-msgstr "Alapértelmezett üzenetlista-összesítés használata:"
-
-#: collectionpage/collectionviewwidget.cpp:59
-#, kde-format
-msgid "Use default message list theme"
-msgstr "Alapértelmezett üzenetlista-téma használata"
-
-#: collectionpage/collectionviewwidget.cpp:76
-#, kde-format
-msgid "Prefer HTML to text"
-msgstr "Inkább HTML, mint szöveg"
 
 #: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
 msgid "Message format:"
 msgstr "Üzenetformátum:"
-
-#: collectionpage/collectionviewwidget.cpp:78
-#, kde-format
-msgid "Prefer text to HTML"
-msgstr "Inkább szöveg, mint HTML"
-
-#: collectionpage/collectionviewwidget.cpp:80
-#, kde-format
-msgid "Use Global Settings"
-msgstr "Globális beállítások használata"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
 #, kde-format

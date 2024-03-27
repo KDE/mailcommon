@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-13 00:38+0000\n"
+"POT-Creation-Date: 2024-03-27 00:38+0000\n"
 "PO-Revision-Date: 2024-01-03 14:17+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -230,63 +230,63 @@ msgstr "&Uzi personajn mesaĝajn ŝablonojn en ĉi tiu dosierujo"
 msgid "&Copy Global Templates"
 msgstr "&Kopii Ĉieajn Ŝablonojn"
 
+#: collectionpage/collectionviewwidget.cpp:27
+#, kde-format
+msgid "Use default message list aggregation:"
+msgstr "Uzi defaŭltan mesaĝlistan agregadon:"
+
+#: collectionpage/collectionviewwidget.cpp:29
+#, kde-format
+msgid "Use default message list theme"
+msgstr "Uzi defaŭltan mesaĝlistan etoson"
+
+#: collectionpage/collectionviewwidget.cpp:31
+#, kde-format
+msgid "Prefer HTML to text"
+msgstr "Prefere HTML al teksto"
+
 #: collectionpage/collectionviewwidget.cpp:32
+#, kde-format
+msgid "Prefer text to HTML"
+msgstr "Prefere tekston al HTML"
+
+#: collectionpage/collectionviewwidget.cpp:33
+#, kde-format
+msgid "Use Global Settings"
+msgstr "Uzi Ĉieajn Agordojn"
+
+#: collectionpage/collectionviewwidget.cpp:40
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
 msgstr "Montri Sendantan/ricevantan Kolumnon en Listo de Mesaĝoj"
 
-#: collectionpage/collectionviewwidget.cpp:36
+#: collectionpage/collectionviewwidget.cpp:43
 #, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
 msgstr "Defaŭlte"
 
-#: collectionpage/collectionviewwidget.cpp:37
+#: collectionpage/collectionviewwidget.cpp:44
 #, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
 msgstr "Sendanto"
 
-#: collectionpage/collectionviewwidget.cpp:38
+#: collectionpage/collectionviewwidget.cpp:45
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
 msgstr "Ricevilo"
 
-#: collectionpage/collectionviewwidget.cpp:39
+#: collectionpage/collectionviewwidget.cpp:46
 #, kde-format
 msgid "Sho&w column:"
 msgstr "Montr&i kolumnon:"
-
-#: collectionpage/collectionviewwidget.cpp:42
-#, kde-format
-msgid "Use default message list aggregation:"
-msgstr "Uzi defaŭltan mesaĝlistan agregadon:"
-
-#: collectionpage/collectionviewwidget.cpp:59
-#, kde-format
-msgid "Use default message list theme"
-msgstr "Uzi defaŭltan mesaĝlistan etoson"
-
-#: collectionpage/collectionviewwidget.cpp:76
-#, kde-format
-msgid "Prefer HTML to text"
-msgstr "Prefere HTML al teksto"
 
 #: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
 msgid "Message format:"
 msgstr "Formato de mesaĝo:"
-
-#: collectionpage/collectionviewwidget.cpp:78
-#, kde-format
-msgid "Prefer text to HTML"
-msgstr "Prefere tekston al HTML"
-
-#: collectionpage/collectionviewwidget.cpp:80
-#, kde-format
-msgid "Use Global Settings"
-msgstr "Uzi Ĉieajn Agordojn"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
 #, kde-format
