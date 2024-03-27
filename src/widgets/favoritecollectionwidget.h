@@ -52,7 +52,7 @@ Q_SIGNALS:
     void newTabRequested(bool);
 
 private:
-    bool acceptEvent(QDropEvent *event) const;
+    [[nodiscard]] bool acceptEvent(QDropEvent *event) const;
     MAILCOMMON_NO_EXPORT void createMenu(KActionCollection *ac);
     MAILCOMMON_NO_EXPORT void updatePalette();
 
