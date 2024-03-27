@@ -113,14 +113,14 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
         d->mUser2Button->setDefault(true);
     }
 
-    auto mainWidget = new QWidget;
+    auto mainWidget = new QWidget(this);
     topLayout->addWidget(mainWidget);
     topLayout->addWidget(buttonBox);
 
     auto mainLayout = new QVBoxLayout;
     mainWidget->setLayout(mainLayout);
     mainLayout->setContentsMargins({});
-    auto LabelTo = new QLabel(i18n("Select the recipient addresses to redirect to:"));
+    auto LabelTo = new QLabel(i18n("Select the recipient addresses to redirect to:"), this);
     mainLayout->addWidget(LabelTo);
 
     auto formLayout = new QFormLayout;
@@ -131,18 +131,18 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
     formLayout->setVerticalSpacing(0);
     mainLayout->addLayout(formLayout);
 
-    d->mEditTo = new RedirectWidget;
+    d->mEditTo = new RedirectWidget(this);
     formLayout->addRow(d->redirectLabelType(RedirectDialog::RedirectDialogPrivate::ResendTo), d->mEditTo);
 
     connect(d->mEditTo, &RedirectWidget::addressChanged, this, [this](const QString &str) {
         d->slotAddressChanged(str);
     });
 
-    d->mEditCc = new RedirectWidget;
+    d->mEditCc = new RedirectWidget(this);
     formLayout->addRow(d->redirectLabelType(RedirectDialog::RedirectDialogPrivate::ResendCc), d->mEditCc);
-    d->mEditBcc = new RedirectWidget;
+    d->mEditBcc = new RedirectWidget(this);
     formLayout->addRow(d->redirectLabelType(RedirectDialog::RedirectDialogPrivate::ResendBcc), d->mEditBcc);
-    d->mEditTo->setFocus();
+    d->mEditTo->forceFocus();
 
     // Because the form layout vertical spacing was set to zero above,
     // it is necessary to explicitly add spacing between the combo boxes.

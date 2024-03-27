@@ -22,7 +22,7 @@ using namespace MailCommon;
 
 RedirectWidget::RedirectWidget(QWidget *parent)
     : QWidget(parent)
-    , mEdit(new MessageComposer::ComposerLineEdit(true))
+    , mEdit(new MessageComposer::ComposerLineEdit(true, this))
 {
     auto hbox = new QHBoxLayout(this);
     hbox->setSpacing(0);
