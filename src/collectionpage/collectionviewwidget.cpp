@@ -46,7 +46,11 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     topLayout->addRow(i18n("Sho&w column:"), mShowSenderReceiverComboBox);
 
     // message list aggregation
+#if QT_VERSION < QT_VERSION_CHECK(6, 7, 0)
     connect(mUseDefaultAggregationCheckBox, &QCheckBox::stateChanged, this, &CollectionViewWidget::slotAggregationCheckboxChanged);
+#else
+    connect(mUseDefaultAggregationCheckBox, &QCheckBox::checkStateChanged, this, &CollectionViewWidget::slotAggregationCheckboxChanged);
+#endif
     topLayout->addRow(QString(), mUseDefaultAggregationCheckBox);
 
     using MessageList::Utils::AggregationConfigButton;
@@ -60,7 +64,11 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     topLayout->addRow(QString(), aggregationLayout);
 
     // message list theme
+#if QT_VERSION < QT_VERSION_CHECK(6, 7, 0)
     connect(mUseDefaultThemeCheckBox, &QCheckBox::stateChanged, this, &CollectionViewWidget::slotThemeCheckboxChanged);
+#else
+    connect(mUseDefaultThemeCheckBox, &QCheckBox::checkStateChanged, this, &CollectionViewWidget::slotThemeCheckboxChanged);
+#endif
     topLayout->addRow(QString(), mUseDefaultThemeCheckBox);
 
     using MessageList::Utils::ThemeConfigButton;
