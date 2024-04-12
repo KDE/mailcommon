@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-27 00:38+0000\n"
+"POT-Creation-Date: 2024-04-12 00:38+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -209,7 +209,7 @@ msgstr ""
 msgid "Use &default identity"
 msgstr "Podrazumevani identitet"
 
-#: collectionpage/collectiongeneralwidget.cpp:60
+#: collectionpage/collectiongeneralwidget.cpp:64
 #, kde-format
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
@@ -225,7 +225,7 @@ msgstr ""
 "mogu postaviti u glavnom dijalogu za podešavanje (Podešavanje→Podesi "
 "K‑poštu...)."
 
-#: collectionpage/collectiongeneralwidget.cpp:66
+#: collectionpage/collectiongeneralwidget.cpp:70
 #, kde-format
 msgid "&Sender identity:"
 msgstr "Identitet &pošiljaoca:"
@@ -297,7 +297,7 @@ msgstr ""
 msgid "Sho&w column:"
 msgstr "&Prečica:"
 
-#: collectionpage/collectionviewwidget.cpp:77
+#: collectionpage/collectionviewwidget.cpp:85
 #, fuzzy, kde-format
 #| msgid "Message Tag"
 msgid "Message format:"
@@ -2881,37 +2881,37 @@ msgstr "Ime:"
 msgid "Change te&xt color:"
 msgstr "Boja &teksta:"
 
-#: tag/tagwidget.cpp:82
+#: tag/tagwidget.cpp:86
 #, kde-format
 msgid "Change &background color:"
 msgstr "Boja &pozadine:"
 
-#: tag/tagwidget.cpp:94
+#: tag/tagwidget.cpp:102
 #, kde-format
 msgid "Change fo&nt:"
 msgstr "&Font:"
 
-#: tag/tagwidget.cpp:100
+#: tag/tagwidget.cpp:108
 #, kde-format
 msgid "&Bold"
 msgstr "&Podebljano"
 
-#: tag/tagwidget.cpp:104
+#: tag/tagwidget.cpp:112
 #, kde-format
 msgid "&Italics"
 msgstr "&Kurzivno"
 
-#: tag/tagwidget.cpp:122
+#: tag/tagwidget.cpp:134
 #, kde-format
 msgid "Message tag &icon:"
 msgstr "&Ikonica oznake poruke:"
 
-#: tag/tagwidget.cpp:133
+#: tag/tagwidget.cpp:145
 #, kde-format
 msgid "Shortc&ut:"
 msgstr "&Prečica:"
 
-#: tag/tagwidget.cpp:144
+#: tag/tagwidget.cpp:156
 #, kde-format
 msgid "Enable &toolbar button"
 msgstr "&Dugme na traci alatki"

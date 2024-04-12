@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-27 00:38+0000\n"
+"POT-Creation-Date: 2024-04-12 00:38+0000\n"
 "PO-Revision-Date: 2023-09-24 11:48+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -197,7 +197,7 @@ msgstr ""
 msgid "Use &default identity"
 msgstr "&ნაგულისხმევი იდენტიფიკატორის გამოყენება"
 
-#: collectionpage/collectiongeneralwidget.cpp:60
+#: collectionpage/collectiongeneralwidget.cpp:64
 #, kde-format
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
@@ -213,7 +213,7 @@ msgstr ""
 "დააყენოს. იდენტიფიკატორები მთავარი კონფიგურაციის ფანჯრიდან შეგიძლიათ, "
 "მოირგოთ. (მორგება -> KMail-ის მორგება)"
 
-#: collectionpage/collectiongeneralwidget.cpp:66
+#: collectionpage/collectiongeneralwidget.cpp:70
 #, kde-format
 msgid "&Sender identity:"
 msgstr "&გამომგზავნის იდენტიფიკატორი:"
@@ -281,7 +281,7 @@ msgstr "მიმღები"
 msgid "Sho&w column:"
 msgstr "სვეტის &ჩვენება:"
 
-#: collectionpage/collectionviewwidget.cpp:77
+#: collectionpage/collectionviewwidget.cpp:85
 #, kde-format
 msgid "Message format:"
 msgstr "შეტყობინების ფორმატი:"
@@ -2790,37 +2790,37 @@ msgstr "სახელი:"
 msgid "Change te&xt color:"
 msgstr "&ტექსტის ფერის შეცვლა:"
 
-#: tag/tagwidget.cpp:82
+#: tag/tagwidget.cpp:86
 #, kde-format
 msgid "Change &background color:"
 msgstr "&ფონის შეცვლა:"
 
-#: tag/tagwidget.cpp:94
+#: tag/tagwidget.cpp:102
 #, kde-format
 msgid "Change fo&nt:"
 msgstr "ფ&ონტის შეცვლა:"
 
-#: tag/tagwidget.cpp:100
+#: tag/tagwidget.cpp:108
 #, kde-format
 msgid "&Bold"
 msgstr "&სქელი"
 
-#: tag/tagwidget.cpp:104
+#: tag/tagwidget.cpp:112
 #, kde-format
 msgid "&Italics"
 msgstr "&დახრილები"
 
-#: tag/tagwidget.cpp:122
+#: tag/tagwidget.cpp:134
 #, kde-format
 msgid "Message tag &icon:"
 msgstr "შეტყობინების ჭდის &ხატულა:"
 
-#: tag/tagwidget.cpp:133
+#: tag/tagwidget.cpp:145
 #, kde-format
 msgid "Shortc&ut:"
 msgstr "&მალსახმობი:"
 
-#: tag/tagwidget.cpp:144
+#: tag/tagwidget.cpp:156
 #, kde-format
 msgid "Enable &toolbar button"
 msgstr "&ხელსაწყოების პანელის ღილაკების ჩართვა"

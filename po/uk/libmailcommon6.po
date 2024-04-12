@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-27 00:38+0000\n"
+"POT-Creation-Date: 2024-04-12 00:38+0000\n"
 "PO-Revision-Date: 2023-09-21 13:25+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -205,7 +205,7 @@ msgstr ""
 msgid "Use &default identity"
 msgstr "Використовувати &типовий профіль"
 
-#: collectionpage/collectiongeneralwidget.cpp:60
+#: collectionpage/collectiongeneralwidget.cpp:64
 #, kde-format
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
@@ -221,7 +221,7 @@ msgstr ""
 "налаштувати у головному діалоговому вікні налаштувань програми (Параметри -> "
 "Налаштувати KMail)."
 
-#: collectionpage/collectiongeneralwidget.cpp:66
+#: collectionpage/collectiongeneralwidget.cpp:70
 #, kde-format
 msgid "&Sender identity:"
 msgstr "П&рофіль відправника:"
@@ -289,7 +289,7 @@ msgstr "Отримувач"
 msgid "Sho&w column:"
 msgstr "П&оказувати стовпчик:"
 
-#: collectionpage/collectionviewwidget.cpp:77
+#: collectionpage/collectionviewwidget.cpp:85
 #, kde-format
 msgid "Message format:"
 msgstr "Формат повідомлень:"
@@ -2809,37 +2809,37 @@ msgstr "Назва:"
 msgid "Change te&xt color:"
 msgstr "Змінити колір тек&сту:"
 
-#: tag/tagwidget.cpp:82
+#: tag/tagwidget.cpp:86
 #, kde-format
 msgid "Change &background color:"
 msgstr "З&мінити колір тла:"
 
-#: tag/tagwidget.cpp:94
+#: tag/tagwidget.cpp:102
 #, kde-format
 msgid "Change fo&nt:"
 msgstr "Змінити шри&фт:"
 
-#: tag/tagwidget.cpp:100
+#: tag/tagwidget.cpp:108
 #, kde-format
 msgid "&Bold"
 msgstr "&Жирний"
 
-#: tag/tagwidget.cpp:104
+#: tag/tagwidget.cpp:112
 #, kde-format
 msgid "&Italics"
 msgstr "&Курсив"
 
-#: tag/tagwidget.cpp:122
+#: tag/tagwidget.cpp:134
 #, kde-format
 msgid "Message tag &icon:"
 msgstr "&Піктограма мітки листа:"
 
-#: tag/tagwidget.cpp:133
+#: tag/tagwidget.cpp:145
 #, kde-format
 msgid "Shortc&ut:"
 msgstr "Скороч&ення:"
 
-#: tag/tagwidget.cpp:144
+#: tag/tagwidget.cpp:156
 #, kde-format
 msgid "Enable &toolbar button"
 msgstr "Увімкнути кнопку на &панелі"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-27 00:38+0000\n"
+"POT-Creation-Date: 2024-04-12 00:38+0000\n"
 "PO-Revision-Date: 2019-11-18 12:53+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -205,7 +205,7 @@ msgstr ""
 msgid "Use &default identity"
 msgstr "Použiť predvolenú identitu"
 
-#: collectionpage/collectiongeneralwidget.cpp:60
+#: collectionpage/collectiongeneralwidget.cpp:64
 #, kde-format
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
@@ -221,7 +221,7 @@ msgstr ""
 "šifrovacie kľúče automaticky. Identity možno nastaviť v hlavnom "
 "konfiguračnom dialógu. (Nastavenie -> Nastaviť KMail)"
 
-#: collectionpage/collectiongeneralwidget.cpp:66
+#: collectionpage/collectiongeneralwidget.cpp:70
 #, kde-format
 msgid "&Sender identity:"
 msgstr "Identita odo&sielateľa:"
@@ -295,7 +295,7 @@ msgstr ""
 msgid "Sho&w column:"
 msgstr "Skratka:"
 
-#: collectionpage/collectionviewwidget.cpp:77
+#: collectionpage/collectionviewwidget.cpp:85
 #, fuzzy, kde-format
 #| msgid "Message Status"
 msgid "Message format:"
@@ -2834,37 +2834,37 @@ msgstr "Názov:"
 msgid "Change te&xt color:"
 msgstr "Zmeniť farbu textu:"
 
-#: tag/tagwidget.cpp:82
+#: tag/tagwidget.cpp:86
 #, kde-format
 msgid "Change &background color:"
 msgstr "Zmeniť farbu pozadia:"
 
-#: tag/tagwidget.cpp:94
+#: tag/tagwidget.cpp:102
 #, kde-format
 msgid "Change fo&nt:"
 msgstr "Zmeniť písmo:"
 
-#: tag/tagwidget.cpp:100
+#: tag/tagwidget.cpp:108
 #, kde-format
 msgid "&Bold"
 msgstr "&Tučné"
 
-#: tag/tagwidget.cpp:104
+#: tag/tagwidget.cpp:112
 #, kde-format
 msgid "&Italics"
 msgstr "Kurzíva"
 
-#: tag/tagwidget.cpp:122
+#: tag/tagwidget.cpp:134
 #, kde-format
 msgid "Message tag &icon:"
 msgstr "Ikona značky správy:"
 
-#: tag/tagwidget.cpp:133
+#: tag/tagwidget.cpp:145
 #, kde-format
 msgid "Shortc&ut:"
 msgstr "Skrat&ka:"
 
-#: tag/tagwidget.cpp:144
+#: tag/tagwidget.cpp:156
 #, kde-format
 msgid "Enable &toolbar button"
 msgstr "Povoliť tlačidlo panelu nástrojov"

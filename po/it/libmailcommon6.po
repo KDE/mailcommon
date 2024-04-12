@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-27 00:38+0000\n"
+"POT-Creation-Date: 2024-04-12 00:38+0000\n"
 "PO-Revision-Date: 2023-09-21 13:33+0200\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -204,7 +204,7 @@ msgstr ""
 msgid "Use &default identity"
 msgstr "Utilizza l'i&dentità predefinita"
 
-#: collectionpage/collectiongeneralwidget.cpp:60
+#: collectionpage/collectiongeneralwidget.cpp:64
 #, kde-format
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
@@ -220,7 +220,7 @@ msgstr ""
 "corrispondente. Le identità possono essere configurate nella finestra di "
 "configurazione principale. (Impostazioni → Configura KMail)"
 
-#: collectionpage/collectiongeneralwidget.cpp:66
+#: collectionpage/collectiongeneralwidget.cpp:70
 #, kde-format
 msgid "&Sender identity:"
 msgstr "Identità &mittente:"
@@ -288,7 +288,7 @@ msgstr "Destinatario"
 msgid "Sho&w column:"
 msgstr "M&ostra colonna:"
 
-#: collectionpage/collectionviewwidget.cpp:77
+#: collectionpage/collectionviewwidget.cpp:85
 #, kde-format
 msgid "Message format:"
 msgstr "Formato del messaggio:"
@@ -2808,37 +2808,37 @@ msgstr "Nome:"
 msgid "Change te&xt color:"
 msgstr "Cambia colo&re del testo:"
 
-#: tag/tagwidget.cpp:82
+#: tag/tagwidget.cpp:86
 #, kde-format
 msgid "Change &background color:"
 msgstr "Modifica il co&lore di sfondo:"
 
-#: tag/tagwidget.cpp:94
+#: tag/tagwidget.cpp:102
 #, kde-format
 msgid "Change fo&nt:"
 msgstr "Ca&mbia caratteri:"
 
-#: tag/tagwidget.cpp:100
+#: tag/tagwidget.cpp:108
 #, kde-format
 msgid "&Bold"
 msgstr "&Grassetto"
 
-#: tag/tagwidget.cpp:104
+#: tag/tagwidget.cpp:112
 #, kde-format
 msgid "&Italics"
 msgstr "&Corsivo"
 
-#: tag/tagwidget.cpp:122
+#: tag/tagwidget.cpp:134
 #, kde-format
 msgid "Message tag &icon:"
 msgstr "&Icona etichetta messaggio:"
 
-#: tag/tagwidget.cpp:133
+#: tag/tagwidget.cpp:145
 #, kde-format
 msgid "Shortc&ut:"
 msgstr "Scorcia&toia:"
 
-#: tag/tagwidget.cpp:144
+#: tag/tagwidget.cpp:156
 #, kde-format
 msgid "Enable &toolbar button"
 msgstr "Abilita pulsan&te della barra degli strumenti"
