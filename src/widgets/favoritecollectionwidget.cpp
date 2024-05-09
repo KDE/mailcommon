@@ -231,7 +231,7 @@ void FavoriteCollectionWidget::paintEvent(QPaintEvent *event)
         }
         p.setPen(d->textColor);
 
-        p.drawText(QRect(0, 0, width(), height()), Qt::AlignCenter, i18n("Drop your favorite folders here..."));
+        p.drawText(QRect(0, 0, width(), height()), Qt::AlignCenter, i18n("Drop your favorite folders here…"));
     } else {
         Akonadi::EntityListView::paintEvent(event);
     }

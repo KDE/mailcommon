@@ -154,7 +154,7 @@ void ExpireJob::done()
                 job->setSourceFolderName(srcFolderName);
                 connect(job, &ExpireDeleteJob::expireDeleteDone, this, &ExpireJob::slotExpireDeleteDone);
                 moving = true;
-                str = i18np("Removing 1 old message from folder %2...", "Removing %1 old messages from folder %2...", count, srcFolderName);
+                str = i18np("Removing 1 old message from folder %2…", "Removing %1 old messages from folder %2...", count, srcFolderName);
                 job->start();
             } else {
                 // Expire by moving
@@ -177,8 +177,8 @@ void ExpireJob::done()
                     connect(job, &ExpireMoveJob::expireMovedDone, this, &ExpireJob::slotExpireDeleteDone);
                     job->start();
                     moving = true;
-                    str = i18np("Moving 1 old message from folder %2 to folder %3...",
-                                "Moving %1 old messages from folder %2 to folder %3...",
+                    str = i18np("Moving 1 old message from folder %2 to folder %3…",
+                                "Moving %1 old messages from folder %2 to folder %3…",
                                 count,
                                 srcFolderName,
                                 mMoveToFolder.name());

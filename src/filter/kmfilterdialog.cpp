@@ -87,11 +87,11 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     connect(buttonBox->button(QDialogButtonBox::Help), &QAbstractButton::clicked, this, &KMFilterDialog::slotHelp);
     setModal(false);
     okButton->setFocus();
-    user1Button->setText(i18n("Import..."));
+    user1Button->setText(i18n("Import…"));
     user1Button->setIcon(QIcon::fromTheme("document-import"));
-    user2Button->setText(i18n("Export..."));
+    user2Button->setText(i18n("Export…"));
     user2Button->setIcon(QIcon::fromTheme("document-export"));
-    user3Button->setText(i18n("Convert to..."));
+    user3Button->setText(i18n("Convert to…"));
     user3Button->setIcon(QIcon::fromTheme("document-save-as"));
     auto menu = new QMenu(this);
 

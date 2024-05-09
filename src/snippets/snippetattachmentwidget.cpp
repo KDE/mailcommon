@@ -30,7 +30,7 @@ SnippetAttachmentWidget::SnippetAttachmentWidget(QWidget *parent)
     auto button = new QToolButton(this);
     button->setObjectName(QLatin1StringView("button"));
     button->setToolTip(i18n("Select Attachments"));
-    button->setText(i18n("..."));
+    button->setText(i18n("…"));
     layout->addWidget(button);
     connect(button, &QToolButton::clicked, this, &SnippetAttachmentWidget::slotSelectAttachment);
 }

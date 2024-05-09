@@ -68,7 +68,7 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(const QMap<QUrl, QStr
     okButton->setShortcut(QKeySequence{Qt::CTRL | Qt::Key_Return});
     auto user1Button = new QPushButton(this);
     user1Button->setObjectName(QLatin1StringView("addtag"));
-    user1Button->setText(i18n("Add Tag..."));
+    user1Button->setText(i18n("Add Tag…"));
     buttonBox->addButton(user1Button, QDialogButtonBox::ActionRole);
 
     connect(user1Button, &QPushButton::clicked, this, &FilterActionMissingTagDialog::slotAddTag);
