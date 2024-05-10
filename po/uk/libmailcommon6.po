@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2023-09-21 13:25+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -390,9 +390,10 @@ msgstr ""
 "використано фільтр «%1»."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Додати мітку…"
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Додати мітку"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -932,13 +933,14 @@ msgstr "Перетворення на скрипт фільтрування"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "Зберегти…"
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
-msgid "Share..."
-msgstr "Оприлюднити…"
+#, fuzzy, kde-format
+#| msgid "Share"
+msgid "Share…"
+msgstr "Оприлюднити"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -1080,18 +1082,21 @@ msgid "Filter Rules"
 msgstr "Правила фільтрування"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Імпортувати…"
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Експортувати…"
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "Перетворити на…"
 
 #: filter/kmfilterdialog.cpp:98
@@ -1711,8 +1716,9 @@ msgid "Please select a folder"
 msgstr "Будь ласка, виберіть теку"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "С&творити підтеку…"
 
 #: folder/folderselectiondialog.cpp:64
@@ -1934,8 +1940,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Помилка під час вилученні старих повідомлень з теки %1."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Вилучення %1 старого повідомлення з теки %2…"
 msgstr[1] "Вилучення %1 старих повідомлень з теки %2…"
@@ -1950,9 +1958,11 @@ msgstr ""
 "призначення %2"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Пересування %1 старого повідомлення з теки %2 до теки %3…"
 msgstr[1] "Пересування %1 старих повідомлень з теки %2 до теки %3…"
 msgstr[2] "Пересування %1 старих повідомлень з теки %2 до теки %3…"
@@ -2522,8 +2532,8 @@ msgstr "Виберіть долучення"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
-msgstr "…"
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2614,14 +2624,18 @@ msgid "Snippet %1"
 msgstr "Фрагмент %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "Додати фрагмент…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "Додати фрагмент"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "Змінити фрагмент…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "Змінити фрагмент"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2629,13 +2643,16 @@ msgid "Remove Snippet"
 msgstr "Вилучити фрагмент"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "Додати групу…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "Додати групу"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Перейменувати групу…"
 
 #: snippets/snippetsmanager.cpp:569
@@ -2865,8 +2882,9 @@ msgid "Icon Mode"
 msgstr "Режим піктограм"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "Скиньте сюди ваші улюблені теки…"
 
 #: widgets/redirectdialog.cpp:67
@@ -2938,6 +2956,27 @@ msgid ""
 msgstr ""
 "Натискання цієї кнопки відкриває окреме діалогове вікно, де можна буде "
 "вибрати адресатів зі всіх наявних адрес."
+
+#~ msgid "Add Tag..."
+#~ msgstr "Додати мітку…"
+
+#~ msgid "Save..."
+#~ msgstr "Зберегти…"
+
+#~ msgid "Share..."
+#~ msgstr "Оприлюднити…"
+
+#~ msgid "..."
+#~ msgstr "…"
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Додати фрагмент…"
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "Змінити фрагмент…"
+
+#~ msgid "Add Group..."
+#~ msgstr "Додати групу…"
 
 #~ msgctxt "@title:window"
 #~ msgid "Message Disposition Notification Request"
@@ -3043,9 +3082,6 @@ msgstr ""
 
 #~ msgid "There was a problem sharing the document: %1"
 #~ msgstr "Під час спроби оприлюднити документ виникли проблеми: %1"
-
-#~ msgid "Share"
-#~ msgstr "Оприлюднити"
 
 #~ msgid "File was shared."
 #~ msgstr "Файл було оприлюднено."

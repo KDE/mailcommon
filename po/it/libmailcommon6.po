@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2023-09-21 13:33+0200\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -383,9 +383,10 @@ msgstr ""
 "Etichetta del filtro assente. Seleziona un'etichetta da usare col filtro «%1»"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Aggiungi etichetta..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Aggiungi etichetta"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -924,13 +925,14 @@ msgstr "Converti in script Sieve"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "Salva..."
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
-msgid "Share..."
-msgstr "Condividi..."
+#, fuzzy, kde-format
+#| msgid "Share"
+msgid "Share…"
+msgstr "Condividi"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -1072,18 +1074,21 @@ msgid "Filter Rules"
 msgstr "Regole di filtro"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
-msgstr "Importa..."
+#, fuzzy, kde-format
+#| msgid "&Import"
+msgid "Import…"
+msgstr "&Importa"
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Esporta..."
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "Converti in..."
 
 #: filter/kmfilterdialog.cpp:98
@@ -1712,8 +1717,9 @@ msgid "Please select a folder"
 msgstr "Seleziona una cartella"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "&Nuova sottocartella..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1936,8 +1942,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Cancellazione vecchi messaggi dalla cartella %1 non riuscita."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Rimozione di 1 vecchio messaggio dalla cartella %2..."
 msgstr[1] "Rimozione di %1 vecchi messaggi dalla cartella %2..."
@@ -1950,9 +1958,11 @@ msgstr ""
 "di destinazione %2 non trovata"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] ""
 "Spostamento di 1 vecchio messaggio dalla cartella %2 alla cartella %3..."
 msgstr[1] ""
@@ -2520,8 +2530,8 @@ msgstr "Seleziona allegati"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
-msgstr "..."
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2612,14 +2622,18 @@ msgid "Snippet %1"
 msgstr "Frammento %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "Aggiungi frammento..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "Aggiungi frammento"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "Modifica frammento..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "Modifica frammento"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2627,13 +2641,16 @@ msgid "Remove Snippet"
 msgstr "Rimuovi frammento"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "Aggiungi gruppo..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "Aggiungi gruppo"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Rinomina gruppo..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2864,8 +2881,9 @@ msgid "Icon Mode"
 msgstr "Modalita icone"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "Trascina qui le tue cartelle preferite..."
 
 #: widgets/redirectdialog.cpp:67
@@ -2937,6 +2955,30 @@ msgid ""
 msgstr ""
 "Questo pulsante apre una finestra separata dove puoi selezionare i "
 "destinatari da tutti gli indirizzi disponibili."
+
+#~ msgid "Add Tag..."
+#~ msgstr "Aggiungi etichetta..."
+
+#~ msgid "Save..."
+#~ msgstr "Salva..."
+
+#~ msgid "Share..."
+#~ msgstr "Condividi..."
+
+#~ msgid "Import..."
+#~ msgstr "Importa..."
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Aggiungi frammento..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "Modifica frammento..."
+
+#~ msgid "Add Group..."
+#~ msgstr "Aggiungi gruppo..."
 
 #~ msgctxt "@title:window"
 #~ msgid "Message Disposition Notification Request"
@@ -3047,9 +3089,6 @@ msgstr ""
 #~ msgid "There was a problem sharing the document: %1"
 #~ msgstr ""
 #~ "Si è verificato un problema durante la condivisione del documento: %1"
-
-#~ msgid "Share"
-#~ msgstr "Condividi"
 
 #~ msgid "File was shared."
 #~ msgstr "Il file è stato condiviso."
@@ -8400,9 +8439,6 @@ msgstr ""
 
 #~ msgid "VCard Viewer"
 #~ msgstr "Visualizzatore di vCard"
-
-#~ msgid "&Import"
-#~ msgstr "&Importa"
 
 #~ msgid "&Next Card"
 #~ msgstr "Card &successiva"

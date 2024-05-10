@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2024-03-21 22:57+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -384,9 +384,10 @@ msgstr ""
 "seçin"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Etiket Ekle..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Etiket Ekle"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -921,12 +922,13 @@ msgstr "Sieve Betiğine Dönüştür"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "Kaydet..."
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
-msgid "Share..."
+#, fuzzy, kde-format
+#| msgid "Share..."
+msgid "Share…"
 msgstr "Paylaş..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1068,18 +1070,21 @@ msgid "Filter Rules"
 msgstr "Süzgeç Kuralları"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "İçe Aktar..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Dışa Aktar..."
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "Dönüştür..."
 
 #: filter/kmfilterdialog.cpp:98
@@ -1698,8 +1703,9 @@ msgid "Please select a folder"
 msgstr "Lütfen bir klasör seçin"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "Ye&ni Alt Klasör..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1918,8 +1924,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "%1 klasöründeki eski iletilerin kaldırılması başarısız oldu."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "%2 klasöründen 1 eski ileti kaldırılıyor..."
 msgstr[1] "%2 klasöründen %1 eski ileti kaldırılıyor..."
@@ -1931,9 +1939,11 @@ msgstr ""
 "%1 klasöründeki iletiler geçersiz kılınamadı: %2 hedef klasörü bulunamadı"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "%2 klasöründeki 1 eski ileti %3 dizinine taşınıyor..."
 msgstr[1] "%2 klasöründeki %1 eski ileti %3 dizinine taşınıyor..."
 
@@ -2494,8 +2504,8 @@ msgstr "Ekler Seç"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
-msgstr "..."
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2586,14 +2596,18 @@ msgid "Snippet %1"
 msgstr "Kod Parçacığı: %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "Kod Parçacığı Ekle..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "Kod Parçacığı Ekle"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "Kod Parçacığını Düzenle..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "Kod Parçacığını Düzenle"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2601,13 +2615,16 @@ msgid "Remove Snippet"
 msgstr "Kod Parçacığını Kaldır"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "Grup Ekle..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "Grup Ekle"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Grubu Yeniden Adlandır..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2835,8 +2852,9 @@ msgid "Icon Mode"
 msgstr "Simge Kipi"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "Sık kullanılan klasörleri buraya bırakın..."
 
 #: widgets/redirectdialog.cpp:67
@@ -2908,3 +2926,21 @@ msgid ""
 msgstr ""
 "Bu düğme kullanılabilir adreslerden alıcıları seçebileceğiniz ayrı bir "
 "iletişim kutusu açar."
+
+#~ msgid "Add Tag..."
+#~ msgstr "Etiket Ekle..."
+
+#~ msgid "Save..."
+#~ msgstr "Kaydet..."
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Kod Parçacığı Ekle..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "Kod Parçacığını Düzenle..."
+
+#~ msgid "Add Group..."
+#~ msgstr "Grup Ekle..."

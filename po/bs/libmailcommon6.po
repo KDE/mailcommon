@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2014-01-31 19:29+0100\n"
 "Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
 "Language-Team: bs <bs@kde.org>\n"
@@ -405,9 +405,10 @@ msgstr ""
 "\"%1\""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Dodaj oznaku..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Dodaj oznaku"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, fuzzy, kde-format
@@ -952,13 +953,13 @@ msgstr "Konvertuj u Sieve filter"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "Snimi..."
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Save..."
-msgid "Share..."
+msgid "Share…"
 msgstr "Snimi..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1114,18 +1115,21 @@ msgid "Filter Rules"
 msgstr "Pravila filtriranja"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Uvezi..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Izvezi..."
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "Konvertuj u..."
 
 #: filter/kmfilterdialog.cpp:98
@@ -1763,8 +1767,9 @@ msgid "Please select a folder"
 msgstr "Izaberite direkorij"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "&Novi poddirektorij..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1986,8 +1991,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Uklanjanje starih poruka iz fascikla %1 nije uspjelo."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Uklanjanje %1 staru poruke iz direktorija %2..."
 msgstr[1] "Uklanjanje %1 stare poruke iz direktorija %2..."
@@ -2001,9 +2008,11 @@ msgstr ""
 "postoji"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Pomijeranje %1 stare poruke iz direktorija %2 u direktorij %3..."
 msgstr[1] "Pomijeranje %1 stare poruke iz direktorija %2 u direktorij %3..."
 msgstr[2] "Pomijeranje %1 starih poruka iz direktorija %2 u direktorij %3..."
@@ -2577,10 +2586,9 @@ msgid "Select Attachments"
 msgstr "Ukloni priloge"
 
 #: snippets/snippetattachmentwidget.cpp:33
-#, fuzzy, kde-format
-#| msgid "Save..."
-msgid "..."
-msgstr "Snimi..."
+#, kde-format
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, fuzzy, kde-format
@@ -2676,14 +2684,18 @@ msgid "Snippet %1"
 msgstr "Isječak %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "Dodaj isječak..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "Dodaj isječak"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "Iymijeni isječak..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "Uredi isječak"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2691,13 +2703,16 @@ msgid "Remove Snippet"
 msgstr "Ukloni isječak"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "Dodaj grupu..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "Dodaj grupu"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Preimenuj grupu..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2935,8 +2950,9 @@ msgid "Icon Mode"
 msgstr "Režim ikone"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "Stavite vaše omiljene foldere ovdje..."
 
 #: widgets/redirectdialog.cpp:67
@@ -3010,6 +3026,26 @@ msgid ""
 msgstr ""
 "Ovo dugme otvara poseban dijalog u kome možete izabrati primaoce iz svih "
 "dostupnih adresa."
+
+#~ msgid "Add Tag..."
+#~ msgstr "Dodaj oznaku..."
+
+#~ msgid "Save..."
+#~ msgstr "Snimi..."
+
+#, fuzzy
+#~| msgid "Save..."
+#~ msgid "..."
+#~ msgstr "Snimi..."
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Dodaj isječak..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "Iymijeni isječak..."
+
+#~ msgid "Add Group..."
+#~ msgstr "Dodaj grupu..."
 
 #, fuzzy
 #~| msgid "Message Disposition Notification Request"

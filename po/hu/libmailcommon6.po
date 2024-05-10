@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2024-01-20 00:04+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -383,9 +383,10 @@ msgstr ""
 "használathoz"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Címke hozzáadása…"
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Címke hozzáadása"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -925,12 +926,13 @@ msgstr "Átalakítás sieve parancsfájlra"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "Mentés…"
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
-msgid "Share..."
+#, fuzzy, kde-format
+#| msgid "Share..."
+msgid "Share…"
 msgstr "Megosztás…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1073,18 +1075,21 @@ msgid "Filter Rules"
 msgstr "Szűrési szabályok"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Importálás…"
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Exportálás…"
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "Átalakítás erre…"
 
 #: filter/kmfilterdialog.cpp:98
@@ -1710,8 +1715,9 @@ msgid "Please select a folder"
 msgstr "Válasszon ki egy mappát"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "Ú&j almappa…"
 
 #: folder/folderselectiondialog.cpp:64
@@ -1933,8 +1939,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Nem sikerült eltávolítani a régi üzeneteket a(z) %1 mappából."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "1 régi üzenet eltávolítása a(z) %2 mappából…"
 msgstr[1] "%1 régi üzenet eltávolítása a(z) %2 mappából…"
@@ -1947,9 +1955,11 @@ msgstr ""
 "(%2) nem található"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "1 régi üzenet áthelyezése a(z) %2 mappából a(z) %3 mappába…"
 msgstr[1] "%1 régi üzenet áthelyezése a(z) %2 mappából a(z) %3 mappába…"
 
@@ -2513,8 +2523,8 @@ msgstr "Mellékletek kiválasztása"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
-msgstr "…"
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2605,14 +2615,18 @@ msgid "Snippet %1"
 msgstr "Töredék %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "Töredék hozzáadása…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "Töredék hozzáadása"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "Töredék szerkesztése…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "Töredék szerkesztése"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2620,13 +2634,16 @@ msgid "Remove Snippet"
 msgstr "Töredék eltávolítása"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "Csoport hozzáadása…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "Csoport hozzáadása"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Csoport átnevezése…"
 
 #: snippets/snippetsmanager.cpp:569
@@ -2855,8 +2872,9 @@ msgid "Icon Mode"
 msgstr "Ikon mód"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "Ejtse ide a kedvenc mappáit…"
 
 #: widgets/redirectdialog.cpp:67
@@ -2928,6 +2946,24 @@ msgid ""
 msgstr ""
 "Ezzel a gombbal megnyitható egy új ablak, amelyben kiválaszthatók a "
 "címzettek az ismert címek közül."
+
+#~ msgid "Add Tag..."
+#~ msgstr "Címke hozzáadása…"
+
+#~ msgid "Save..."
+#~ msgstr "Mentés…"
+
+#~ msgid "..."
+#~ msgstr "…"
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Töredék hozzáadása…"
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "Töredék szerkesztése…"
+
+#~ msgid "Add Group..."
+#~ msgstr "Csoport hozzáadása…"
 
 #, fuzzy
 #~| msgid "Message Disposition Notification Request"

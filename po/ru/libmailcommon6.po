@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2023-12-27 10:03+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -386,10 +386,12 @@ msgstr ""
 "Для фильтра не указана метка. Выберите метку для использования с фильтром "
 "«%1»."
 
+# BUGME: please split strings for @title:window and action --aspotashev
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Добавить метку..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Добавить метку…"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -934,12 +936,13 @@ msgstr "Преобразование в сценарий Sieve"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "Сохранить..."
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
-msgid "Share..."
+#, fuzzy, kde-format
+#| msgid "Share..."
+msgid "Share…"
 msgstr "Опубликовать..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1081,18 +1084,21 @@ msgid "Filter Rules"
 msgstr "Правила фильтрации"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Импорт..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Экспорт..."
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "Преобразовать в..."
 
 # BUGME: please add ellipsis because this opens a file open dialog --aspotashev
@@ -1720,8 +1726,9 @@ msgid "Please select a folder"
 msgstr "(выберите папку)"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "&Создать подпапку..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1943,8 +1950,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Не удалось удалить устаревшие письма из папки %1."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Удаление %1 устаревшего письма из папки %2..."
 msgstr[1] "Удаление %1 устаревших писем из папки %2..."
@@ -1959,9 +1968,11 @@ msgstr ""
 "назначения %2"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Перемещение %1 устаревшего письма из папки %2 в папку %3..."
 msgstr[1] "Перемещение %1 устаревших писем из папки %2 в папку %3..."
 msgstr[2] "Перемещение %1 устаревших писем из папки %2 в папку %3..."
@@ -2531,8 +2542,8 @@ msgstr "Выбор вложений"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
-msgstr "..."
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2622,14 +2633,18 @@ msgid "Snippet %1"
 msgstr "Фраза %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "Добавить фразу..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "Создание фразы"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "Изменить фразу..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "Изменение фразы"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2637,13 +2652,16 @@ msgid "Remove Snippet"
 msgstr "Удалить фразу"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "Создать группу..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "Создание группы"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Переименовать группу..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2873,8 +2891,9 @@ msgid "Icon Mode"
 msgstr "Значки"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "Переместите избранные папки сюда..."
 
 #: widgets/redirectdialog.cpp:67
@@ -2946,6 +2965,24 @@ msgid ""
 msgstr ""
 "Открыть отдельное окно, чтобы выбрать получателей среди всех доступных "
 "адресов."
+
+#~ msgid "Add Tag..."
+#~ msgstr "Добавить метку..."
+
+#~ msgid "Save..."
+#~ msgstr "Сохранить..."
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Добавить фразу..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "Изменить фразу..."
+
+#~ msgid "Add Group..."
+#~ msgstr "Создать группу..."
 
 #~ msgctxt "@title:window"
 #~ msgid "Message Disposition Notification Request"

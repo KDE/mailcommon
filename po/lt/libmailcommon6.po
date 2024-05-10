@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2015-12-29 20:55+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
@@ -366,8 +366,9 @@ msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
 msgstr "Pridėti žymą"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
@@ -900,15 +901,14 @@ msgid "Convert to Sieve Script"
 msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
-#, fuzzy, kde-format
-#| msgid "Rename..."
-msgid "Save..."
-msgstr "Pervadinti..."
+#, kde-format
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Rename..."
-msgid "Share..."
+msgid "Share…"
 msgstr "Pervadinti..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1055,18 +1055,20 @@ msgid "Filter Rules"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Importuoti..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Eksportuoti..."
 
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
-msgid "Convert to..."
+msgid "Convert to…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
@@ -1639,8 +1641,9 @@ msgid "Please select a folder"
 msgstr "Pasirinkite aplanką"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "&Naujas poaplankis..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1862,7 +1865,7 @@ msgstr ""
 
 #: job/expirejob.cpp:157
 #, kde-format
-msgid "Removing 1 old message from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] ""
 msgstr[1] ""
@@ -1876,8 +1879,8 @@ msgstr ""
 
 #: job/expirejob.cpp:180
 #, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -2469,10 +2472,9 @@ msgid "Select Attachments"
 msgstr "Parinkti paskyrą"
 
 #: snippets/snippetattachmentwidget.cpp:33
-#, fuzzy, kde-format
-#| msgid "Rename..."
-msgid "..."
-msgstr "Pervadinti..."
+#, kde-format
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, fuzzy, kde-format
@@ -2562,14 +2564,18 @@ msgid "Snippet %1"
 msgstr "Iškarpa %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
 msgstr "Pridėti iškarpą"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr ""
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Edit Snippet…"
+msgstr "Pridėti iškarpą"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2577,13 +2583,16 @@ msgid "Remove Snippet"
 msgstr "Pašalinti iškarpas"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
 msgstr "Pridėti grupę"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Pervadinti grupę..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2817,7 +2826,7 @@ msgstr "Ženkliuko dydis"
 
 #: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
-msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr ""
 
 #: widgets/redirectdialog.cpp:67
@@ -2888,6 +2897,25 @@ msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr ""
+
+#~ msgid "Add Tag..."
+#~ msgstr "Pridėti žymą"
+
+#, fuzzy
+#~| msgid "Rename..."
+#~ msgid "Save..."
+#~ msgstr "Pervadinti..."
+
+#, fuzzy
+#~| msgid "Rename..."
+#~ msgid "..."
+#~ msgstr "Pervadinti..."
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Pridėti iškarpą"
+
+#~ msgid "Add Group..."
+#~ msgstr "Pridėti grupę"
 
 #~ msgid "&Ignore"
 #~ msgstr "&Ignoruoti"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2023-12-13 02:38+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -359,9 +359,10 @@ msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr "過濾器標籤已遺失。請選擇過濾器 \"%1\" 要使用的標籤"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "新增標籤..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "新增標籤"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -891,12 +892,13 @@ msgstr "轉換為 Sieve 文稿"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "儲存..."
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
-msgid "Share..."
+#, fuzzy, kde-format
+#| msgid "Share..."
+msgid "Share…"
 msgstr "分享..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1035,18 +1037,21 @@ msgid "Filter Rules"
 msgstr "過濾規則"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "匯入..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "匯出..."
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "轉換為..."
 
 #: filter/kmfilterdialog.cpp:98
@@ -1636,8 +1641,9 @@ msgid "Please select a folder"
 msgstr "請選擇一個資料夾"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "新資料夾(&N)..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1852,8 +1858,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "移除資料夾 %1 的舊信件失敗。"
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "移除資料夾 %2 中 %1 封舊信件..."
 
@@ -1863,9 +1871,11 @@ msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr "找不到資料夾 %2，無法移動資料夾 %1 中的舊信件。"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "將 %1 封舊信件從資料夾 %2 移動到 %3 中..."
 
 #: job/expiremovejob.cpp:127
@@ -2423,8 +2433,8 @@ msgstr "選擇附件"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
-msgstr "..."
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2513,14 +2523,18 @@ msgid "Snippet %1"
 msgstr "片段 %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "新增片段..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "新增片段"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "編輯片段..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "編輯片段"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2528,13 +2542,16 @@ msgid "Remove Snippet"
 msgstr "移除片段"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "新增群組..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "新增群組"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "重新命名群組..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2759,8 +2776,9 @@ msgid "Icon Mode"
 msgstr "圖示模式"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "在此選擇您的最愛資料夾..."
 
 #: widgets/redirectdialog.cpp:67
@@ -2830,6 +2848,24 @@ msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr "這個按鍵會另外開啟一個對話框，讓您選擇收件者的地址。"
+
+#~ msgid "Add Tag..."
+#~ msgstr "新增標籤..."
+
+#~ msgid "Save..."
+#~ msgstr "儲存..."
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Add Snippet..."
+#~ msgstr "新增片段..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "編輯片段..."
+
+#~ msgid "Add Group..."
+#~ msgstr "新增群組..."
 
 #, fuzzy
 #~| msgid "Message Disposition Notification Request"

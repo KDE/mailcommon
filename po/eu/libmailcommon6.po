@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2023-09-21 19:14+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -387,9 +387,10 @@ msgstr ""
 "etiketa bat"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Gehitu etiketa..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Gehitu etiketa"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -927,12 +928,13 @@ msgstr "Bihurtu bahetzeko gidoi"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "Gorde..."
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
-msgid "Share..."
+#, fuzzy, kde-format
+#| msgid "Share..."
+msgid "Share…"
 msgstr "Partekatu..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1075,18 +1077,21 @@ msgid "Filter Rules"
 msgstr "Iragazte arauak"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Inportatu..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Esportatu..."
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "Bihurtu..."
 
 #: filter/kmfilterdialog.cpp:98
@@ -1709,8 +1714,9 @@ msgid "Please select a folder"
 msgstr "Mesedez, hautatu karpeta bat"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "Azpikarpeta &berria..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1929,8 +1935,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Mezu zaharrak %1 karpetatik kentzea huts egin du."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "%2 karpetatik mezu zahar 1 kentzen..."
 msgstr[1] "%2 karpetatik %1 mezu zahar kentzen..."
@@ -1942,9 +1950,11 @@ msgstr ""
 "Ezin ditu %1 karpetako mezuak iraungi: ez du aurkitu jomugako %2 karpeta"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Mezu zahar 1 %2 karpetatik %3 karpetara eramaten..."
 msgstr[1] "%1 mezu zahar %2 karpetatik %3 karpetara eramaten..."
 
@@ -2507,8 +2517,8 @@ msgstr "Hautatu eranskinak"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
-msgstr "..."
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2599,14 +2609,18 @@ msgid "Snippet %1"
 msgstr "%1 testu-zatia"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "Gehitu testu-zatia..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "Gehitu testu-zatia"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "Editatu testu-zatia..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "Editatu testu-zatia"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2614,13 +2628,16 @@ msgid "Remove Snippet"
 msgstr "Kendu testu-zatia"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "Gehitu taldea..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "Gehitu taldea"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Berrizendatu taldea..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2849,8 +2866,9 @@ msgid "Icon Mode"
 msgstr "Ikono modua"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "Zure karpeta gogokoak hemen jaregin..."
 
 #: widgets/redirectdialog.cpp:67
@@ -2922,6 +2940,24 @@ msgid ""
 msgstr ""
 "Botoi honek, erabilgarri dauden helbide guztien artetik hartzaileak "
 "aukeratzeko elkarrizketa-koadro bereizi bat irekitzen du."
+
+#~ msgid "Add Tag..."
+#~ msgstr "Gehitu etiketa..."
+
+#~ msgid "Save..."
+#~ msgstr "Gorde..."
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Gehitu testu-zatia..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "Editatu testu-zatia..."
+
+#~ msgid "Add Group..."
+#~ msgstr "Gehitu taldea..."
 
 #~ msgid "&Ignore"
 #~ msgstr "&Ez ikusi egin"

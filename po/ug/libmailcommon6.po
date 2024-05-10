@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -357,7 +357,7 @@ msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
-msgid "Add Tag..."
+msgid "Add Tag…"
 msgstr ""
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
@@ -889,13 +889,13 @@ msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "ساقلاش…"
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Save..."
-msgid "Share..."
+msgid "Share…"
 msgstr "ساقلاش…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1045,18 +1045,20 @@ msgid "Filter Rules"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "ئەكىر…"
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "چىقار…"
 
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
-msgid "Convert to..."
+msgid "Convert to…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
@@ -1629,8 +1631,9 @@ msgid "Please select a folder"
 msgstr "قىسقۇچتىن بىرنى تاللاڭ."
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "يېڭى تارماق مۇندەرىجە(&N)…"
 
 #: folder/folderselectiondialog.cpp:64
@@ -1846,7 +1849,7 @@ msgstr ""
 
 #: job/expirejob.cpp:157
 #, kde-format
-msgid "Removing 1 old message from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] ""
 
@@ -1857,8 +1860,8 @@ msgstr ""
 
 #: job/expirejob.cpp:180
 #, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] ""
 
 #: job/expiremovejob.cpp:127
@@ -2423,10 +2426,9 @@ msgid "Select Attachments"
 msgstr "قوشۇلمىنى چىقىرىۋېتىش"
 
 #: snippets/snippetattachmentwidget.cpp:33
-#, fuzzy, kde-format
-#| msgid "Save..."
-msgid "..."
-msgstr "ساقلاش…"
+#, kde-format
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, fuzzy, kde-format
@@ -2517,14 +2519,18 @@ msgid "Snippet %1"
 msgstr "پۇرۇچ %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "پۇرۇچ قوشۇش…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "پۇرۇچ قوشۇش"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "پۇرۇچ تەھرىرلەش…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "پۇرۇچ تەھرىرلەش"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2532,13 +2538,16 @@ msgid "Remove Snippet"
 msgstr "پۇرۇچنى چىقىرىۋېتىش"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "گۇرۇپپا قوش…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "گۇرۇپپا قوش"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "گۇرۇپپا ئاتىنى ئۆزگەرتىش…"
 
 #: snippets/snippetsmanager.cpp:569
@@ -2767,7 +2776,7 @@ msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
-msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr ""
 
 #: widgets/redirectdialog.cpp:67
@@ -2838,6 +2847,23 @@ msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr ""
+
+#~ msgid "Save..."
+#~ msgstr "ساقلاش…"
+
+#, fuzzy
+#~| msgid "Save..."
+#~ msgid "..."
+#~ msgstr "ساقلاش…"
+
+#~ msgid "Add Snippet..."
+#~ msgstr "پۇرۇچ قوشۇش…"
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "پۇرۇچ تەھرىرلەش…"
+
+#~ msgid "Add Group..."
+#~ msgstr "گۇرۇپپا قوش…"
 
 #~ msgid "&Ignore"
 #~ msgstr "پەرۋا قىلما(&I)"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2023-10-08 23:39+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -364,9 +364,10 @@ msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr "필터 태그가 없습니다. \"%1\" 필터에 사용할 태그를 선택하십시오"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "태그 추가..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "태그 추가"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -897,12 +898,13 @@ msgstr "Sieve 스크립트로 변환"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "저장..."
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
-msgid "Share..."
+#, fuzzy, kde-format
+#| msgid "Share..."
+msgid "Share…"
 msgstr "공유..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1043,18 +1045,21 @@ msgid "Filter Rules"
 msgstr "필터 규칙"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "가져오기..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "내보내기..."
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "다음으로 변환..."
 
 #: filter/kmfilterdialog.cpp:98
@@ -1665,8 +1670,9 @@ msgid "Please select a folder"
 msgstr "폴더를 선택하십시오"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "새 하위 폴더(&N)..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1882,8 +1888,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "%1 폴더에서 오래된 메시지를 삭제할 수 없습니다."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "%2 폴더에서 오래된 메시지 %1개 삭제 중..."
 
@@ -1894,9 +1902,11 @@ msgstr ""
 "%1 폴더의 오래된 메시지를 정리할 수 없음: 대상 폴더 %2을(를) 찾을 수 없음"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "%2 폴더의 오래된 메시지 %1개를 폴더 %3(으)로 이동하는 중..."
 
 #: job/expiremovejob.cpp:127
@@ -2454,8 +2464,8 @@ msgstr "첨부 파일 선택"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
-msgstr "..."
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2546,14 +2556,18 @@ msgid "Snippet %1"
 msgstr "스니펫 %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "스니펫 추가..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "스니펫 추가"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "스니펫 편집..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "스니펫 편집"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2561,13 +2575,16 @@ msgid "Remove Snippet"
 msgstr "스니펫 삭제"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "그룹 추가..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "그룹 추가"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "그룹 이름 바꾸기..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2792,8 +2809,9 @@ msgid "Icon Mode"
 msgstr "아이콘 모드"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "즐겨찾는 폴더를 끌어 놓으십시오..."
 
 #: widgets/redirectdialog.cpp:67
@@ -2865,6 +2883,24 @@ msgid ""
 msgstr ""
 "이 단추를 누르면 사용 가능한 주소 중 받는 사람을 선택할 수 있는 대화 상자를 "
 "표시합니다."
+
+#~ msgid "Add Tag..."
+#~ msgstr "태그 추가..."
+
+#~ msgid "Save..."
+#~ msgstr "저장..."
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Add Snippet..."
+#~ msgstr "스니펫 추가..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "스니펫 편집..."
+
+#~ msgid "Add Group..."
+#~ msgstr "그룹 추가..."
 
 #~ msgctxt "@title:window"
 #~ msgid "Message Disposition Notification Request"

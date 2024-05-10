@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2022-02-17 11:52+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -383,9 +383,10 @@ msgstr ""
 "Marcajul filtrului lipsește. Alegeți un marcaj de folosit cu filtrul „%1”"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Adăugare marcaj..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Adaugă marcaj"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, fuzzy, kde-format
@@ -928,15 +929,14 @@ msgid "Convert to Sieve Script"
 msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
-#, fuzzy, kde-format
-#| msgid "Rename..."
-msgid "Save..."
-msgstr "Redenumire..."
+#, kde-format
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Rename..."
-msgid "Share..."
+msgid "Share…"
 msgstr "Redenumire..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1088,18 +1088,20 @@ msgid "Filter Rules"
 msgstr "Reguli de filtrare"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Import..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Export..."
 
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
-msgid "Convert to..."
+msgid "Convert to…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
@@ -1704,8 +1706,9 @@ msgid "Please select a folder"
 msgstr "Alegeți un dosar"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "Subdosar &nou..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1928,8 +1931,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Ștergerea mesajelor vechi din dosarul %1 a eșuat."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Șterg 1 mesaj vechi din dosarul %2..."
 msgstr[1] "Șterg %1 mesaje vechi din dosarul %2..."
@@ -1942,9 +1947,11 @@ msgstr ""
 "Nu am putut expira mesajele din dosarul %1: nu am găsit dosarul destinație %2"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Se mută 1 mesaj vechi din dosarul %2 în dosarul %3..."
 msgstr[1] "Se mută %1 mesaje vechi din dosarul %2 în dosarul %3..."
 msgstr[2] "Se mută %1 de mesaje vechi din dosarul %2 în dosarul %3..."
@@ -2530,8 +2537,8 @@ msgstr "Alegeți atașamentele"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
-msgstr "…"
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, fuzzy, kde-format
@@ -2623,14 +2630,18 @@ msgid "Snippet %1"
 msgstr "Fragment %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "Adăugare fragment..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "Adaugă fragment"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "Modificare fragment..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "Modifică fragmentul"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2638,13 +2649,16 @@ msgid "Remove Snippet"
 msgstr "Elimină fragmentul"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "Adaugă grup…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "Adaugă grup"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Redenumește grupul…"
 
 #: snippets/snippetsmanager.cpp:569
@@ -2879,8 +2893,9 @@ msgid "Icon Mode"
 msgstr "Dimensiune pictogramă"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "Lăsați aici dosarele favorite..."
 
 #: widgets/redirectdialog.cpp:67
@@ -2953,6 +2968,26 @@ msgid ""
 msgstr ""
 "Acest buton deschide un dialog separat în care puteți alege destinatarii "
 "dintre toate adresele disponibile."
+
+#~ msgid "Add Tag..."
+#~ msgstr "Adăugare marcaj..."
+
+#, fuzzy
+#~| msgid "Rename..."
+#~ msgid "Save..."
+#~ msgstr "Redenumire..."
+
+#~ msgid "..."
+#~ msgstr "…"
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Adăugare fragment..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "Modificare fragment..."
+
+#~ msgid "Add Group..."
+#~ msgstr "Adaugă grup…"
 
 #, fuzzy
 #~| msgid "Message Disposition Notification Request"

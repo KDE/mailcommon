@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2012-01-28 16:25-0800\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -370,7 +370,7 @@ msgstr ""
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, fuzzy, kde-format
 #| msgid "Add Tag"
-msgid "Add Tag..."
+msgid "Add Tag…"
 msgstr "タグを追加"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
@@ -917,15 +917,14 @@ msgid "Convert to Sieve Script"
 msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
-msgid "Save..."
-msgstr "グループの名前変更..."
+#, kde-format
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Rename Group..."
-msgid "Share..."
+msgid "Share…"
 msgstr "グループの名前変更..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1081,18 +1080,18 @@ msgstr "アクション"
 #, fuzzy, kde-format
 #| msgctxt "message status"
 #| msgid "Important"
-msgid "Import..."
+msgid "Import…"
 msgstr "重要"
 
 #: filter/kmfilterdialog.cpp:92
 #, fuzzy, kde-format
 #| msgid "Edit..."
-msgid "Export..."
+msgid "Export…"
 msgstr "編集..."
 
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
-msgid "Convert to..."
+msgid "Convert to…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
@@ -1696,8 +1695,9 @@ msgid "Please select a folder"
 msgstr "フォルダを選択してください"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "新しいサブフォルダ(&N)..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1920,8 +1920,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "フォルダ “%1” の古いメッセージを削除できませんでした。"
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "フォルダ “%2” の %1 件の古いメッセージを削除中..."
 
@@ -1933,9 +1935,11 @@ msgstr ""
 "見つかりません"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "フォルダ “%2” の %1 件の古いメッセージをフォルダ “%3” に移動中..."
 
 #: job/expiremovejob.cpp:127
@@ -2509,10 +2513,9 @@ msgid "Select Attachments"
 msgstr "すべて選択"
 
 #: snippets/snippetattachmentwidget.cpp:33
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
-msgid "..."
-msgstr "グループの名前変更..."
+#, kde-format
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, fuzzy, kde-format
@@ -2604,14 +2607,18 @@ msgid "Snippet %1"
 msgstr "定型表現 %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "定型表現を追加..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "定型表現を追加"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "定型表現を編集..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "定型表現を編集"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2619,13 +2626,16 @@ msgid "Remove Snippet"
 msgstr "定型表現を削除"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "グループを追加..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "グループを追加"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "グループの名前変更..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2858,7 +2868,7 @@ msgstr "アイコンサイズ"
 
 #: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
-msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr ""
 
 #: widgets/redirectdialog.cpp:67
@@ -2932,3 +2942,27 @@ msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr ""
+
+#, fuzzy
+#~| msgid "Add Tag"
+#~ msgid "Add Tag..."
+#~ msgstr "タグを追加"
+
+#, fuzzy
+#~| msgid "Rename Group..."
+#~ msgid "Save..."
+#~ msgstr "グループの名前変更..."
+
+#, fuzzy
+#~| msgid "Rename Group..."
+#~ msgid "..."
+#~ msgstr "グループの名前変更..."
+
+#~ msgid "Add Snippet..."
+#~ msgstr "定型表現を追加..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "定型表現を編集..."
+
+#~ msgid "Add Group..."
+#~ msgstr "グループを追加..."

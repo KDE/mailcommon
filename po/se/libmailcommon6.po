@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2009-10-09 13:24+0200\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -345,7 +345,7 @@ msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
-msgid "Add Tag..."
+msgid "Add Tag…"
 msgstr ""
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
@@ -869,12 +869,12 @@ msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
+msgid "Save…"
 msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, kde-format
-msgid "Share..."
+msgid "Share…"
 msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1013,18 +1013,20 @@ msgid "Filter Rules"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Sisafievrrit …"
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Olggosfievrrit …"
 
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
-msgid "Convert to..."
+msgid "Convert to…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
@@ -1611,8 +1613,9 @@ msgid "Please select a folder"
 msgstr "Válljes máhpa"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "&Ođđa vuollemáhppa …"
 
 #: folder/folderselectiondialog.cpp:64
@@ -1829,8 +1832,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Filtii váldit eret reivviid %1-máhpas."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Váldimin eret ovtta boares reivve %2 máhpas …"
 msgstr[1] "Váldimin eret %1 boares reivve %2 máhpas …"
@@ -1841,9 +1846,11 @@ msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr "Ii sáhte boarásmahttit reivviid %1 máhpas: ulbmilmáhppa %2 ii gávdno"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Sirdimin ovtta boares reivve %2 máhpas %3 máhppii …"
 msgstr[1] "Sirdimin %1 boares reivve %2 máhpas %3 máhppii …"
 
@@ -2401,7 +2408,7 @@ msgstr ""
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
+msgid "…"
 msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
@@ -2490,12 +2497,12 @@ msgstr ""
 
 #: snippets/snippetsmanager.cpp:558
 #, kde-format
-msgid "Add Snippet..."
+msgid "Add Snippet…"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:560
 #, kde-format
-msgid "Edit Snippet..."
+msgid "Edit Snippet…"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:562
@@ -2505,12 +2512,12 @@ msgstr ""
 
 #: snippets/snippetsmanager.cpp:565
 #, kde-format
-msgid "Add Group..."
+msgid "Add Group…"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:567
 #, kde-format
-msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:569
@@ -2731,7 +2738,7 @@ msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
-msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr ""
 
 #: widgets/redirectdialog.cpp:67

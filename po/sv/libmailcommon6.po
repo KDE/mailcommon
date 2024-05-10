@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2022-08-03 10:15+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -371,9 +371,10 @@ msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr "Filteretikett saknas. Välj en etikett att använda med filtret \"%1\"."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Lägg till etikett..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Lägg till etikett"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -906,13 +907,14 @@ msgstr "Konvertera till Sieve-skript"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "Spara..."
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
-msgid "Share..."
-msgstr "Dela..."
+#, fuzzy, kde-format
+#| msgid "Share"
+msgid "Share…"
+msgstr "Dela"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -1054,18 +1056,21 @@ msgid "Filter Rules"
 msgstr "Filterregler"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Importera..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Exportera..."
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "Konvertera till..."
 
 #: filter/kmfilterdialog.cpp:98
@@ -1685,8 +1690,9 @@ msgid "Please select a folder"
 msgstr "Välj en korg"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "&Ny underkorg..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1905,8 +1911,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Misslyckades med att ta bort gamla brev från korgen %1."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Tar bort 1 gammalt brev från korgen %2..."
 msgstr[1] "Tar bort %1 gamla brev från korgen %2..."
@@ -1917,9 +1925,11 @@ msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr "Kan inte låta brev från %1 utgå: Målkorgen %2 hittades inte."
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Flyttar 1 gammalt brev från korgen %2 till korgen %3..."
 msgstr[1] "Flyttar %1 gamla brev från korgen %2 till korgen %3..."
 
@@ -2482,8 +2492,8 @@ msgstr "Välj bilagor"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
-msgstr "..."
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2574,14 +2584,18 @@ msgid "Snippet %1"
 msgstr "Textsnutt %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "Lägg till textsnutt..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "Lägg till textsnutt"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "Redigera textsnutt..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "Redigera textsnutt"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2589,13 +2603,16 @@ msgid "Remove Snippet"
 msgstr "Ta bort textsnutt"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "Lägg till grupp..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "Lägg till grupp"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Byt namn på grupp..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2824,8 +2841,9 @@ msgid "Icon Mode"
 msgstr "Ikonläge"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "Släpp favoritkorgar här..."
 
 #: widgets/redirectdialog.cpp:67
@@ -2897,6 +2915,27 @@ msgid ""
 msgstr ""
 "Den här knappen visar en separat dialogruta där du kan välja mottagare bland "
 "alla tillgängliga adresser."
+
+#~ msgid "Add Tag..."
+#~ msgstr "Lägg till etikett..."
+
+#~ msgid "Save..."
+#~ msgstr "Spara..."
+
+#~ msgid "Share..."
+#~ msgstr "Dela..."
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Lägg till textsnutt..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "Redigera textsnutt..."
+
+#~ msgid "Add Group..."
+#~ msgstr "Lägg till grupp..."
 
 #~ msgctxt "@title:window"
 #~ msgid "Message Disposition Notification Request"
@@ -3003,9 +3042,6 @@ msgstr ""
 
 #~ msgid "There was a problem sharing the document: %1"
 #~ msgstr "Ett problem uppstod när dokumentet skulle delas: %1"
-
-#~ msgid "Share"
-#~ msgstr "Dela"
 
 #~ msgid "File was shared."
 #~ msgstr "Filen delades."

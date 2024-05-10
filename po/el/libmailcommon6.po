@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2014-04-11 22:49+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -407,9 +407,10 @@ msgstr ""
 "χρησιμοποιηθεί με το φίλτρο «%1»"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Προσθήκη ετικέτας..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Προσθήκη ετικέτας"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, fuzzy, kde-format
@@ -955,13 +956,13 @@ msgstr "Μετατροπή σε σενάριο sieve"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "Αποθήκευση..."
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Save..."
-msgid "Share..."
+msgid "Share…"
 msgstr "Αποθήκευση..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1119,18 +1120,21 @@ msgid "Filter Rules"
 msgstr "Κανόνες φίλτρου"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Εισαγωγή..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Εξαγωγή..."
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "Μετατροπή σε..."
 
 #: filter/kmfilterdialog.cpp:98
@@ -1770,8 +1774,9 @@ msgid "Please select a folder"
 msgstr "Παρακαλώ επιλέξτε ένα φάκελο"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "&Νέος υποφάκελος..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1993,8 +1998,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Η αφαίρεση των παλιών μηνυμάτων από τον φάκελο %1 απέτυχε."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Διαγραφή 1 παλιού μηνύματος από το φάκελο %2..."
 msgstr[1] "Αφαίρεση %1 παλαιών μηνυμάτων από τον φάκελο %2..."
@@ -2006,9 +2013,11 @@ msgstr ""
 "Αδύνατη η λήξη μηνυμάτων του φακέλου %1: Ο φάκελος προορισμού %2 δεν βρέθηκε"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Μετακίνηση 1 παλιού μηνύματος από το φάκελο %2 στο φάκελο %3..."
 msgstr[1] "Μετακίνηση %1 παλαιών μηνυμάτων από το φάκελο %2 στο φάκελο %3..."
 
@@ -2582,10 +2591,9 @@ msgid "Select Attachments"
 msgstr "Αφαίρεση των συνημμένων"
 
 #: snippets/snippetattachmentwidget.cpp:33
-#, fuzzy, kde-format
-#| msgid "Save..."
-msgid "..."
-msgstr "Αποθήκευση..."
+#, kde-format
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, fuzzy, kde-format
@@ -2682,14 +2690,18 @@ msgid "Snippet %1"
 msgstr "Απόσπασμα %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "Προσθήκη αποσπάσματος..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "Προσθήκη αποσπάσματος"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "Επεξεργασία αποσπάσματος..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "Επεξεργασία αποσπάσματος"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2697,13 +2709,16 @@ msgid "Remove Snippet"
 msgstr "Αφαίρεση αποσπάσματος"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "Προσθήκη ομάδας..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "Προσθήκη ομάδας"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Μετονομασία ομάδας..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2944,8 +2959,9 @@ msgid "Icon Mode"
 msgstr "Μέγεθος εικονιδίων"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "Ρίψη των προτιμώμενων φακέλων σας εδώ..."
 
 #: widgets/redirectdialog.cpp:67
@@ -3021,6 +3037,26 @@ msgid ""
 msgstr ""
 "Αυτό το κουμπί ανοίγει ένα ξεχωριστό διάλογο όπου μπορείτε να επιλέξετε "
 "παραλήπτες από όλες τις διαθέσιμες διευθύνσεις."
+
+#~ msgid "Add Tag..."
+#~ msgstr "Προσθήκη ετικέτας..."
+
+#~ msgid "Save..."
+#~ msgstr "Αποθήκευση..."
+
+#, fuzzy
+#~| msgid "Save..."
+#~ msgid "..."
+#~ msgstr "Αποθήκευση..."
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Προσθήκη αποσπάσματος..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "Επεξεργασία αποσπάσματος..."
+
+#~ msgid "Add Group..."
+#~ msgstr "Προσθήκη ομάδας..."
 
 #, fuzzy
 #~| msgid "Message Disposition Notification Request"

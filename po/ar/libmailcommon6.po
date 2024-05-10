@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2024-04-04 12:07+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -350,9 +350,10 @@ msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr "وسم التّرشيح ناقص. رجاءً اختر وسمًا لاستخدامه مع المرشّح ”%1“"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "أضف وسمًا..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "أضف وسمًا"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -877,12 +878,13 @@ msgstr "التّحويل إلى سكربت «سِف»"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "احفظ..."
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
-msgid "Share..."
+#, fuzzy, kde-format
+#| msgid "Share..."
+msgid "Share…"
 msgstr "شارِك..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1021,18 +1023,21 @@ msgid "Filter Rules"
 msgstr "قواعد المرشّحات"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "استورد..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "صدّر..."
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "حوّل إلى..."
 
 #: filter/kmfilterdialog.cpp:98
@@ -1597,8 +1602,9 @@ msgid "Please select a folder"
 msgstr "رجاءً اختر مجلّدًا"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "مجلّد فرعيّ ج&ديد..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1824,7 +1830,7 @@ msgstr ""
 
 #: job/expirejob.cpp:157
 #, kde-format
-msgid "Removing 1 old message from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] ""
 msgstr[1] ""
@@ -1840,8 +1846,8 @@ msgstr ""
 
 #: job/expirejob.cpp:180
 #, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -2411,8 +2417,8 @@ msgstr "حدد المرفقات"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
-msgstr "…"
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2503,14 +2509,18 @@ msgid "Snippet %1"
 msgstr "ال&قصاصة %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "أضف قصاصة..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "أضف قصاصة"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "حرّر القصاصة..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "حرّر القصاصة"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2518,13 +2528,16 @@ msgid "Remove Snippet"
 msgstr "أزل القصاصة"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "أضف مجموعة..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "أضف مجموعة"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "أعد تسمية المجموعة..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2745,7 +2758,7 @@ msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
-msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr ""
 
 #: widgets/redirectdialog.cpp:67
@@ -2815,6 +2828,24 @@ msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr ""
+
+#~ msgid "Add Tag..."
+#~ msgstr "أضف وسمًا..."
+
+#~ msgid "Save..."
+#~ msgstr "احفظ..."
+
+#~ msgid "..."
+#~ msgstr "…"
+
+#~ msgid "Add Snippet..."
+#~ msgstr "أضف قصاصة..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "حرّر القصاصة..."
+
+#~ msgid "Add Group..."
+#~ msgstr "أضف مجموعة..."
 
 #~ msgid "&Ignore"
 #~ msgstr "تجا&هل"

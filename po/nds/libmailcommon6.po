@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2014-09-18 22:35+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -394,9 +394,10 @@ msgstr ""
 "Filter-Slötelwoort fehlt. Bitte en Slötelwoort för Filter \"%1\" utsöken."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Slötelwoort tofögen..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Slötelwoort tofögen"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, fuzzy, kde-format
@@ -939,13 +940,13 @@ msgstr "Na Sieve-Skript ümwanneln"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "Sekern..."
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Save..."
-msgid "Share..."
+msgid "Share…"
 msgstr "Sekern..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1100,18 +1101,21 @@ msgid "Filter Rules"
 msgstr "Filterregeln"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Importeren..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Exporteren..."
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "Ümwanneln na..."
 
 #: filter/kmfilterdialog.cpp:98
@@ -1738,8 +1742,9 @@ msgid "Please select a folder"
 msgstr "Bitte en Orner utsöken"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "&Nieg Ünnerorner..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1959,8 +1964,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Wegdoon vun ole Narichten ut Orner \"%1\" fehlslaan."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "1 ool Naricht warrt ut Orner \"%2\" wegdaan..."
 msgstr[1] "%1 ole Narichten warrt ut Orner \"%2\" wegdaan..."
@@ -1973,9 +1980,11 @@ msgstr ""
 "sik nich finnen"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "1 ool Naricht warrt ut Orner \"%2\" na Orner \"%3\" verschaven..."
 msgstr[1] ""
 "%1 ole Narichten warrt ut Orner \"%2\" na Orner \"%3\" verschaven..."
@@ -2547,10 +2556,9 @@ msgid "Select Attachments"
 msgstr "Bilagen wegmaken"
 
 #: snippets/snippetattachmentwidget.cpp:33
-#, fuzzy, kde-format
-#| msgid "Save..."
-msgid "..."
-msgstr "Sekern..."
+#, kde-format
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, fuzzy, kde-format
@@ -2646,14 +2654,18 @@ msgid "Snippet %1"
 msgstr "Snippel %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "Snippel tofögen..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "Snippel tofögen"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "Snippel bewerken..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "Snippel bewerken"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2661,13 +2673,16 @@ msgid "Remove Snippet"
 msgstr "Snippel wegmaken"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "Koppel tofögen..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "Koppel tofögen"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Koppel ümnömen..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2905,8 +2920,9 @@ msgid "Icon Mode"
 msgstr "Lüttbildansicht"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "Dien vörtrocken Ornern hierhen trecken..."
 
 #: widgets/redirectdialog.cpp:67
@@ -2980,6 +2996,26 @@ msgid ""
 msgstr ""
 "Disse Knoop maakt en niegen Dialoog op, binnen den Du Adressaten ut all "
 "verföögbore Adressen utsöken kannst."
+
+#~ msgid "Add Tag..."
+#~ msgstr "Slötelwoort tofögen..."
+
+#~ msgid "Save..."
+#~ msgstr "Sekern..."
+
+#, fuzzy
+#~| msgid "Save..."
+#~ msgid "..."
+#~ msgstr "Sekern..."
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Snippel tofögen..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "Snippel bewerken..."
+
+#~ msgid "Add Group..."
+#~ msgstr "Koppel tofögen..."
 
 #, fuzzy
 #~| msgid "Message Disposition Notification Request"

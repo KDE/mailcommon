@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2024-01-03 14:17+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -380,9 +380,10 @@ msgstr ""
 "Filtrila etikedo mankas. Bonvolu elekti etikedon por uzi kun filtrilo \"%1\""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Aldoni etikedon..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Aldoni Etikedon"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -916,12 +917,13 @@ msgstr "Konverti al Sieve Script"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "Konservi..."
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
-msgid "Share..."
+#, fuzzy, kde-format
+#| msgid "Share..."
+msgid "Share…"
 msgstr "Kunhavigi..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1064,18 +1066,21 @@ msgid "Filter Rules"
 msgstr "Filtrilaj Reguloj"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Importi..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Eksporti..."
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "Konverti al..."
 
 #: filter/kmfilterdialog.cpp:98
@@ -1699,8 +1704,9 @@ msgid "Please select a folder"
 msgstr "Bonvolu elekti dosierujon"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "&Nova subdosierujo..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1919,8 +1925,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Forigo de malnovaj mesaĝoj el dosierujo %1 malsukcesis."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Forigante 1 malnovan mesaĝon el dosierujo %2..."
 msgstr[1] "Forigante %1 malnovajn mesaĝojn el dosierujo %2..."
@@ -1932,9 +1940,11 @@ msgstr ""
 "Ne povas eksvalidigi mesaĝojn el dosierujo %1: celdosierujo %2 ne trovita"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Movante 1 malnovan mesaĝon de dosierujo %2 al dosierujo %3..."
 msgstr[1] "Movante %1 malnovajn mesaĝojn de dosierujo %2 al dosierujo %3..."
 
@@ -2497,8 +2507,8 @@ msgstr "Elekti Aldonaĵojn"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
-msgstr "..."
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2589,14 +2599,18 @@ msgid "Snippet %1"
 msgstr "Fragmento %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "Aldoni fragmenton..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "Aldoni Fragmenton"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "Redakti fragmenton..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "Redakti Fragmenton"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2604,13 +2618,16 @@ msgid "Remove Snippet"
 msgstr "Forigi Fragmenton"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "Aldoni grupon..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "Aldoni Grupon"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Alinomi grupon..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2839,8 +2856,9 @@ msgid "Icon Mode"
 msgstr "Piktogram-Reĝimo"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "Faligu viajn plej ŝatatajn dosierujojn ĉi tie..."
 
 #: widgets/redirectdialog.cpp:67
@@ -2912,3 +2930,21 @@ msgid ""
 msgstr ""
 "Ĉi tiu butono malfermas apartan dialogon kie vi povas elekti ricevantojn el "
 "ĉiuj disponeblaj adresoj."
+
+#~ msgid "Add Tag..."
+#~ msgstr "Aldoni etikedon..."
+
+#~ msgid "Save..."
+#~ msgstr "Konservi..."
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Aldoni fragmenton..."
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "Redakti fragmenton..."
+
+#~ msgid "Add Group..."
+#~ msgstr "Aldoni grupon..."

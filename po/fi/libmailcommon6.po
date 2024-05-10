@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2023-10-12 18:30+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -380,9 +380,10 @@ msgstr ""
 "Suodattimen luokitus puuttuu. Valitse suodattimelle ”%1” käytettävä luokitus"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Lisää luokitus…"
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Lisää luokitus"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -917,12 +918,13 @@ msgstr "Muunna Sieve-komentosarjaksi"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
-msgstr "Tallenna…"
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
-msgid "Share..."
+#, fuzzy, kde-format
+#| msgid "Share..."
+msgid "Share…"
 msgstr "Jaa…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1065,18 +1067,21 @@ msgid "Filter Rules"
 msgstr "Suodatussäännöt"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Tuo…"
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Vie…"
 
 #: filter/kmfilterdialog.cpp:94
-#, kde-format
-msgid "Convert to..."
+#, fuzzy, kde-format
+#| msgid "Convert to..."
+msgid "Convert to…"
 msgstr "Muunna muotoon…"
 
 #: filter/kmfilterdialog.cpp:98
@@ -1693,8 +1698,9 @@ msgid "Please select a folder"
 msgstr "Valitse kansio"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "&Uusi alikansio…"
 
 #: folder/folderselectiondialog.cpp:64
@@ -1914,8 +1920,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Vanhojen viestien siirto kansiosta %1 epäonnistui."
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Poistetaan 1 vanha viesti kansiosta %2…"
 msgstr[1] "Poistetaan %1 vanhaa viestiä kansiosta %2…"
@@ -1926,9 +1934,11 @@ msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr "Kansion %1 viestejä ei voi vanhentaa: kohdekansiota %2 ei löytynyt"
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Siirretään 1 vanha viesti kansiosta %2 kansioon %3…"
 msgstr[1] "Siirretään %1 vanhaa viestiä kansiosta %2 kansioon %3…"
 
@@ -2490,8 +2500,8 @@ msgstr "Valitse liitteet"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
-msgstr "…"
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2582,14 +2592,18 @@ msgid "Snippet %1"
 msgstr "Leike %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
-msgstr "Lisää leike…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Snippet"
+msgid "Add Snippet…"
+msgstr "Lisää leike"
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr "Muokkaa leikettä…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgid "Edit Snippet…"
+msgstr "Muokkaa leikettä"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2597,13 +2611,16 @@ msgid "Remove Snippet"
 msgstr "Poista leike"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
-msgstr "Lisää ryhmä…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Group"
+msgid "Add Group…"
+msgstr "Lisää ryhmä"
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Muuta ryhmän nimeä…"
 
 #: snippets/snippetsmanager.cpp:569
@@ -2831,8 +2848,9 @@ msgid "Icon Mode"
 msgstr "Kuvaketila"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, kde-format
-msgid "Drop your favorite folders here..."
+#, fuzzy, kde-format
+#| msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr "Pudota suosikkikansiosi tähän…"
 
 #: widgets/redirectdialog.cpp:67
@@ -2904,6 +2922,24 @@ msgid ""
 msgstr ""
 "Tämä painike avaa erillisien ikkunan, missä voit valita vastaanottajat "
 "saatavilla olevista osoitteista."
+
+#~ msgid "Add Tag..."
+#~ msgstr "Lisää luokitus…"
+
+#~ msgid "Save..."
+#~ msgstr "Tallenna…"
+
+#~ msgid "..."
+#~ msgstr "…"
+
+#~ msgid "Add Snippet..."
+#~ msgstr "Lisää leike…"
+
+#~ msgid "Edit Snippet..."
+#~ msgstr "Muokkaa leikettä…"
+
+#~ msgid "Add Group..."
+#~ msgstr "Lisää ryhmä…"
 
 #~ msgctxt "@title:window"
 #~ msgid "Message Disposition Notification Request"

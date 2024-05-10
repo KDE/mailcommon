@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2010-12-26 08:49+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -352,7 +352,7 @@ msgstr ""
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, fuzzy, kde-format
 #| msgid "Add Entry..."
-msgid "Add Tag..."
+msgid "Add Tag…"
 msgstr "ਐਂਟਰੀ ਸ਼ਾਮਲ..."
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
@@ -883,12 +883,12 @@ msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
-msgid "Save..."
+msgid "Save…"
 msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, kde-format
-msgid "Share..."
+msgid "Share…"
 msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1036,17 +1036,17 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:90
 #, kde-format
-msgid "Import..."
+msgid "Import…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:92
 #, kde-format
-msgid "Export..."
+msgid "Export…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
-msgid "Convert to..."
+msgid "Convert to…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
@@ -1626,7 +1626,7 @@ msgstr ""
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
 #, kde-format
-msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr ""
 
 #: folder/folderselectiondialog.cpp:64
@@ -1844,7 +1844,7 @@ msgstr ""
 
 #: job/expirejob.cpp:157
 #, kde-format
-msgid "Removing 1 old message from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] ""
 msgstr[1] ""
@@ -1856,8 +1856,8 @@ msgstr ""
 
 #: job/expirejob.cpp:180
 #, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -2419,7 +2419,7 @@ msgstr "ਚੁਣੋ(&l)..."
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
-msgid "..."
+msgid "…"
 msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
@@ -2511,13 +2511,14 @@ msgstr ""
 
 #: snippets/snippetsmanager.cpp:558
 #, kde-format
-msgid "Add Snippet..."
+msgid "Add Snippet…"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Remove Entry"
+msgid "Edit Snippet…"
+msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2526,12 +2527,12 @@ msgstr ""
 
 #: snippets/snippetsmanager.cpp:565
 #, kde-format
-msgid "Add Group..."
+msgid "Add Group…"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:567
 #, kde-format
-msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:569
@@ -2758,7 +2759,7 @@ msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
-msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr ""
 
 #: widgets/redirectdialog.cpp:67
@@ -2829,6 +2830,11 @@ msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr ""
+
+#, fuzzy
+#~| msgid "Add Entry..."
+#~ msgid "Add Tag..."
+#~ msgstr "ਐਂਟਰੀ ਸ਼ਾਮਲ..."
 
 #~ msgctxt "@label:textbox Name of the folder."
 #~ msgid "&Name:"

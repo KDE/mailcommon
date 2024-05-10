@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-12 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2011-12-28 12:28-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -360,9 +360,10 @@ msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, kde-format
-msgid "Add Tag..."
-msgstr "Cuir Clib Leis..."
+#, fuzzy, kde-format
+#| msgid "Add Tag"
+msgid "Add Tag…"
+msgstr "Cuir Clib Leis"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, fuzzy, kde-format
@@ -894,15 +895,14 @@ msgid "Convert to Sieve Script"
 msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
-#, fuzzy, kde-format
-#| msgid "Rename..."
-msgid "Save..."
-msgstr "Athainmnigh..."
+#, kde-format
+msgid "Save…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Rename..."
-msgid "Share..."
+msgid "Share…"
 msgstr "Athainmnigh..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
@@ -1048,18 +1048,20 @@ msgid "Filter Rules"
 msgstr "Rialacha Scagtha"
 
 #: filter/kmfilterdialog.cpp:90
-#, kde-format
-msgid "Import..."
+#, fuzzy, kde-format
+#| msgid "Import..."
+msgid "Import…"
 msgstr "Iompórtáil..."
 
 #: filter/kmfilterdialog.cpp:92
-#, kde-format
-msgid "Export..."
+#, fuzzy, kde-format
+#| msgid "Export..."
+msgid "Export…"
 msgstr "Easpórtáil..."
 
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
-msgid "Convert to..."
+msgid "Convert to…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
@@ -1635,8 +1637,9 @@ msgid "Please select a folder"
 msgstr ""
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder..."
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgid "&New Subfolder…"
 msgstr "Fofhillteán &Nua..."
 
 #: folder/folderselectiondialog.cpp:64
@@ -1856,8 +1859,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr ""
 
 #: job/expirejob.cpp:157
-#, kde-format
-msgid "Removing 1 old message from folder %2..."
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2..."
+#| msgid_plural "Removing %1 old messages from folder %2..."
+msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "%1 seanteachtaireacht á baint as fillteán %2..."
 msgstr[1] "%1 sheanteachtaireacht á mbaint as fillteán %2..."
@@ -1871,9 +1876,11 @@ msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr ""
 
 #: job/expirejob.cpp:180
-#, kde-format
-msgid "Moving 1 old message from folder %2 to folder %3..."
-msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, fuzzy, kde-format
+#| msgid "Moving 1 old message from folder %2 to folder %3..."
+#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "%1 seanteachtaireacht á bogadh ó fhillteán %2 go dtí fillteán %3..."
 msgstr[1] ""
 "%1 sheanteachtaireacht á mbogadh ó fhillteán %2 go dtí fillteán %3..."
@@ -2465,10 +2472,9 @@ msgid "Select Attachments"
 msgstr "Bain Iatáin"
 
 #: snippets/snippetattachmentwidget.cpp:33
-#, fuzzy, kde-format
-#| msgid "Rename..."
-msgid "..."
-msgstr "Athainmnigh..."
+#, kde-format
+msgid "…"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, fuzzy, kde-format
@@ -2559,13 +2565,15 @@ msgid "Snippet %1"
 msgstr "Blúire %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
-msgid "Add Snippet..."
+#, fuzzy, kde-format
+#| msgid "Add Snippet..."
+msgid "Add Snippet…"
 msgstr "Cuir Blúire Leis..."
 
 #: snippets/snippetsmanager.cpp:560
-#, kde-format
-msgid "Edit Snippet..."
+#, fuzzy, kde-format
+#| msgid "Edit Snippet..."
+msgid "Edit Snippet…"
 msgstr "Cuir Blúire in Eagar..."
 
 #: snippets/snippetsmanager.cpp:562
@@ -2574,13 +2582,15 @@ msgid "Remove Snippet"
 msgstr "Bain Blúire"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
-msgid "Add Group..."
+#, fuzzy, kde-format
+#| msgid "Add Group..."
+msgid "Add Group…"
 msgstr "Cuir Grúpa Leis..."
 
 #: snippets/snippetsmanager.cpp:567
-#, kde-format
-msgid "Rename Group..."
+#, fuzzy, kde-format
+#| msgid "Rename Group..."
+msgid "Rename Group…"
 msgstr "Athainmnigh Grúpa..."
 
 #: snippets/snippetsmanager.cpp:569
@@ -2815,7 +2825,7 @@ msgstr "Méid na nDeilbhíní"
 
 #: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
-msgid "Drop your favorite folders here..."
+msgid "Drop your favorite folders here…"
 msgstr ""
 
 #: widgets/redirectdialog.cpp:67
@@ -2886,6 +2896,19 @@ msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr ""
+
+#~ msgid "Add Tag..."
+#~ msgstr "Cuir Clib Leis..."
+
+#, fuzzy
+#~| msgid "Rename..."
+#~ msgid "Save..."
+#~ msgstr "Athainmnigh..."
+
+#, fuzzy
+#~| msgid "Rename..."
+#~ msgid "..."
+#~ msgstr "Athainmnigh..."
 
 #~ msgid "&Ignore"
 #~ msgstr "Déan neamha&ird de"
