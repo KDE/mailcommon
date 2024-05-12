@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Hannie Dumoleyn <hannie@kde.nl>, 2010, 2011.
-# SPDX-FileCopyrightText: 2010, 2011, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023 Freek de Kruijf <freekdekruijf@kde.nl>
+# SPDX-FileCopyrightText: 2010, 2011, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Freek de Kruijf <freekdekruijf@kde.nl>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-10 00:39+0000\n"
-"PO-Revision-Date: 2023-09-21 22:29+0200\n"
+"PO-Revision-Date: 2024-05-10 11:22+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.1\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -382,10 +382,9 @@ msgstr ""
 "Filteren op tag ontbreekt. Selecteer een te gebruiken tag met filter \"%1\""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgid "Add Tag…"
-msgstr "Tag toevoegen"
+msgstr "Tag toevoegen…"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -926,13 +925,12 @@ msgstr "Naar Sieve-script converteren"
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save…"
-msgstr ""
+msgstr "Opslaan…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Share"
+#, kde-format
 msgid "Share…"
-msgstr "Delen"
+msgstr "Delen…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -1074,22 +1072,19 @@ msgid "Filter Rules"
 msgstr "Filterregels"
 
 #: filter/kmfilterdialog.cpp:90
-#, fuzzy, kde-format
-#| msgid "Import..."
+#, kde-format
 msgid "Import…"
-msgstr "Importeren..."
+msgstr "Importeren…"
 
 #: filter/kmfilterdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "Export..."
+#, kde-format
 msgid "Export…"
-msgstr "Exporteren..."
+msgstr "Exporteren…"
 
 #: filter/kmfilterdialog.cpp:94
-#, fuzzy, kde-format
-#| msgid "Convert to..."
+#, kde-format
 msgid "Convert to…"
-msgstr "Converteren naar..."
+msgstr "Converteren naar…"
 
 #: filter/kmfilterdialog.cpp:98
 #, kde-format
@@ -1716,10 +1711,9 @@ msgid "Please select a folder"
 msgstr "Selecteer een map"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgid "&New Subfolder…"
-msgstr "&Nieuwe submap..."
+msgstr "&Nieuwe submap…"
 
 #: folder/folderselectiondialog.cpp:64
 #, kde-format
@@ -1939,9 +1933,7 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Het verwijderen van oude berichten uit map %1 is mislukt."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "1 oud bericht wordt uit de map %2 verwijderd..."
@@ -1955,13 +1947,11 @@ msgstr ""
 "gevonden"
 
 #: job/expirejob.cpp:180
-#, fuzzy, kde-format
-#| msgid "Moving 1 old message from folder %2 to folder %3..."
-#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] "Bezig 1 oud bericht uit map %2 te verplaatsen naar map %3..."
-msgstr[1] "Bezig %1 oude berichten uit map %2 te verplaatsen naar map %3..."
+msgstr[0] "Bezig 1 oud bericht uit map %2 te verplaatsen naar map %3…"
+msgstr[1] "Bezig %1 oude berichten uit map %2 te verplaatsen naar map %3…"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
@@ -2522,7 +2512,7 @@ msgstr "Bijlagen selecteren"
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2613,18 +2603,14 @@ msgid "Snippet %1"
 msgstr "Fragment %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Snippet"
+#, kde-format
 msgid "Add Snippet…"
-msgstr "Fragment toevoegen"
+msgstr "Fragment toevoegen…"
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Edit Snippet"
+#, kde-format
 msgid "Edit Snippet…"
-msgstr "Fragment bewerken"
+msgstr "Fragment bewerken…"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2632,17 +2618,14 @@ msgid "Remove Snippet"
 msgstr "Fragment verwijderen"
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Group"
+#, kde-format
 msgid "Add Group…"
-msgstr "Groep toevoegen"
+msgstr "Groep toevoegen…"
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
+#, kde-format
 msgid "Rename Group…"
-msgstr "Groep hernoemen..."
+msgstr "Groep hernoemen…"
 
 #: snippets/snippetsmanager.cpp:569
 #, kde-format
@@ -2872,10 +2855,9 @@ msgid "Icon Mode"
 msgstr "Pictogrammodus"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, fuzzy, kde-format
-#| msgid "Drop your favorite folders here..."
+#, kde-format
 msgid "Drop your favorite folders here…"
-msgstr "Laat uw favoriete mappen hierin vallen..."
+msgstr "Laat uw favoriete mappen hierin los…"
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format

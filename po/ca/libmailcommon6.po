@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-10 00:39+0000\n"
-"PO-Revision-Date: 2024-03-10 12:40+0100\n"
+"PO-Revision-Date: 2024-05-10 12:05+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -385,10 +385,9 @@ msgstr ""
 "«%1»"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgid "Add Tag…"
-msgstr "Afegeix una etiqueta"
+msgstr "Afegeix una etiqueta…"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -932,13 +931,12 @@ msgstr "Converteix a un script de «Sieve»"
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save…"
-msgstr ""
+msgstr "Desa…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Share..."
+#, kde-format
 msgid "Share…"
-msgstr "Comparteix..."
+msgstr "Comparteix…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -1080,22 +1078,19 @@ msgid "Filter Rules"
 msgstr "Regles de filtratge"
 
 #: filter/kmfilterdialog.cpp:90
-#, fuzzy, kde-format
-#| msgid "Import..."
+#, kde-format
 msgid "Import…"
-msgstr "Importa..."
+msgstr "Importa…"
 
 #: filter/kmfilterdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "Export..."
+#, kde-format
 msgid "Export…"
-msgstr "Exporta..."
+msgstr "Exporta…"
 
 #: filter/kmfilterdialog.cpp:94
-#, fuzzy, kde-format
-#| msgid "Convert to..."
+#, kde-format
 msgid "Convert to…"
-msgstr "Converteix a..."
+msgstr "Converteix a…"
 
 #: filter/kmfilterdialog.cpp:98
 #, kde-format
@@ -1720,10 +1715,9 @@ msgid "Please select a folder"
 msgstr "Seleccioneu una carpeta"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgid "&New Subfolder…"
-msgstr "Subcarpeta &nova..."
+msgstr "Subcarpeta &nova…"
 
 #: folder/folderselectiondialog.cpp:64
 #, kde-format
@@ -1944,12 +1938,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Ha fallat la supressió dels missatges antics de la carpeta %1."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "S'està eliminant un missatge antic de la carpeta %2..."
+msgstr[0] "S'està eliminant un missatge antic de la carpeta %2…"
 msgstr[1] "S'està eliminant %1 missatges antics de la carpeta %2..."
 
 #: job/expirejob.cpp:164
@@ -1960,14 +1952,11 @@ msgstr ""
 "carpeta de destinació %2"
 
 #: job/expirejob.cpp:180
-#, fuzzy, kde-format
-#| msgid "Moving 1 old message from folder %2 to folder %3..."
-#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] "S'està movent un missatge antic de la carpeta %2 a la carpeta %3..."
-msgstr[1] ""
-"S'està movent %1 missatges antics de la carpeta %2 a la carpeta %3..."
+msgstr[0] "S'està movent un missatge antic de la carpeta %2 a la carpeta %3…"
+msgstr[1] "S'està movent %1 missatges antics de la carpeta %2 a la carpeta %3…"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
@@ -2533,7 +2522,7 @@ msgstr "Selecciona els adjunts"
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2624,18 +2613,14 @@ msgid "Snippet %1"
 msgstr "Retall %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Snippet"
+#, kde-format
 msgid "Add Snippet…"
-msgstr "Afegeix un retall"
+msgstr "Afegeix un retall…"
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Edit Snippet"
+#, kde-format
 msgid "Edit Snippet…"
-msgstr "Edita el retall"
+msgstr "Edita el retall…"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2643,17 +2628,14 @@ msgid "Remove Snippet"
 msgstr "Elimina el retall"
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Group"
+#, kde-format
 msgid "Add Group…"
-msgstr "Afegeix un grup"
+msgstr "Afegeix un grup…"
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
+#, kde-format
 msgid "Rename Group…"
-msgstr "Reanomena el grup..."
+msgstr "Reanomena el grup…"
 
 #: snippets/snippetsmanager.cpp:569
 #, kde-format
@@ -2882,10 +2864,9 @@ msgid "Icon Mode"
 msgstr "Mode d'icona"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, fuzzy, kde-format
-#| msgid "Drop your favorite folders here..."
+#, kde-format
 msgid "Drop your favorite folders here…"
-msgstr "Deixeu anar aquí les carpetes preferides..."
+msgstr "Deixeu anar aquí les carpetes preferides…"
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format

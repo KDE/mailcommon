@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# g.sora <g.sora@tiscali.it>, 2011, 2012, 2013, 2020, 2021, 2022, 2023.
+# g.sora <g.sora@tiscali.it>, 2011, 2012, 2013, 2020, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-10 00:39+0000\n"
-"PO-Revision-Date: 2023-09-21 10:53+0200\n"
+"PO-Revision-Date: 2024-05-10 12:51+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -383,10 +383,9 @@ msgstr ""
 "filtro \"%1\""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgid "Add Tag…"
-msgstr "Adde etiquetta"
+msgstr "Adde etiquetta…"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -927,11 +926,10 @@ msgstr "Converte a script de sieve"
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save…"
-msgstr ""
+msgstr "Salveguarda…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Share..."
+#, kde-format
 msgid "Share…"
 msgstr "Comparti..."
 
@@ -1075,20 +1073,17 @@ msgid "Filter Rules"
 msgstr "Regulas de filtro"
 
 #: filter/kmfilterdialog.cpp:90
-#, fuzzy, kde-format
-#| msgid "Import..."
+#, kde-format
 msgid "Import…"
 msgstr "Importa..."
 
 #: filter/kmfilterdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "Export..."
+#, kde-format
 msgid "Export…"
 msgstr "Exporta..."
 
 #: filter/kmfilterdialog.cpp:94
-#, fuzzy, kde-format
-#| msgid "Convert to..."
+#, kde-format
 msgid "Convert to…"
 msgstr "Converte a..."
 
@@ -1717,8 +1712,7 @@ msgid "Please select a folder"
 msgstr "Pro favor selige un dossier"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgid "&New Subfolder…"
 msgstr "&Nove sub-dossier..."
 
@@ -1939,9 +1933,7 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Le remover de vetule messages ex dossier %1 falleva."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Il remove 1 vetule message ex dossier %2..."
@@ -1955,9 +1947,7 @@ msgstr ""
 "trovate"
 
 #: job/expirejob.cpp:180
-#, fuzzy, kde-format
-#| msgid "Moving 1 old message from folder %2 to folder %3..."
-#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Movente 1 vetere message ex dossier %2 a dossier %3 ..."
@@ -2523,7 +2513,7 @@ msgstr "Selige attachamentos"
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2614,18 +2604,14 @@ msgid "Snippet %1"
 msgstr "Fragmento %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Snippet"
+#, kde-format
 msgid "Add Snippet…"
-msgstr "Adde fragmento"
+msgstr "Adde fragmento..."
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Edit Snippet"
+#, kde-format
 msgid "Edit Snippet…"
-msgstr "Modifica fragmento"
+msgstr "Modifica fragmento…"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2633,15 +2619,12 @@ msgid "Remove Snippet"
 msgstr "Remove Fragmento"
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Group"
+#, kde-format
 msgid "Add Group…"
-msgstr "Adde Gruppo"
+msgstr "Adde Gruppo..."
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
+#, kde-format
 msgid "Rename Group…"
 msgstr "Renomina Gruppo ..."
 
@@ -2873,10 +2856,9 @@ msgid "Icon Mode"
 msgstr "Modo de Icone"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, fuzzy, kde-format
-#| msgid "Drop your favorite folders here..."
+#, kde-format
 msgid "Drop your favorite folders here…"
-msgstr "lassa cader tu dossieres favorite hic..."
+msgstr "Abandona tu dossieres favorite hic..."
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format

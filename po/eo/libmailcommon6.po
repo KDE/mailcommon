@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-10 00:39+0000\n"
-"PO-Revision-Date: 2024-01-03 14:17+0100\n"
+"PO-Revision-Date: 2024-05-10 09:14+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -380,10 +380,9 @@ msgstr ""
 "Filtrila etikedo mankas. Bonvolu elekti etikedon por uzi kun filtrilo \"%1\""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgid "Add Tag…"
-msgstr "Aldoni Etikedon"
+msgstr "Aldoni Etikedon…"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -918,13 +917,12 @@ msgstr "Konverti al Sieve Script"
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save…"
-msgstr ""
+msgstr "Konservi…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Share..."
+#, kde-format
 msgid "Share…"
-msgstr "Kunhavigi..."
+msgstr "Kunhavigi…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -1004,7 +1002,7 @@ msgstr ""
 #: filter/filterimporterexporter.cpp:316
 #, kde-format
 msgid "Export Filters"
-msgstr "Eksporti Filtrilojn"
+msgstr "Elporti Filtrilojn"
 
 #: filter/filterselectiondialog.cpp:29
 #, kde-format
@@ -1066,22 +1064,19 @@ msgid "Filter Rules"
 msgstr "Filtrilaj Reguloj"
 
 #: filter/kmfilterdialog.cpp:90
-#, fuzzy, kde-format
-#| msgid "Import..."
+#, kde-format
 msgid "Import…"
-msgstr "Importi..."
+msgstr "Enporti…"
 
 #: filter/kmfilterdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "Export..."
+#, kde-format
 msgid "Export…"
-msgstr "Eksporti..."
+msgstr "Elporti…"
 
 #: filter/kmfilterdialog.cpp:94
-#, fuzzy, kde-format
-#| msgid "Convert to..."
+#, kde-format
 msgid "Convert to…"
-msgstr "Konverti al..."
+msgstr "Konverti al…"
 
 #: filter/kmfilterdialog.cpp:98
 #, kde-format
@@ -1350,8 +1345,8 @@ msgid ""
 "half of the dialog.</p></qt>"
 msgstr ""
 "<qt><p>Jen la listo de difinitaj filtriloj. Ili estas prilaboritaj supre-"
-"malsupre.</p><p>Alklaku iun ajn filtrilon por redakti ĝin uzante la "
-"kontrolojn en la dekstra duono de la dialogo.</p></qt>"
+"malsupre.</p><p>Alklaku iun ajn filtrilon por redakti ĝin uzante la regilojn "
+"en la dekstra duono de la dialogo.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:83
 #, kde-format
@@ -1704,10 +1699,9 @@ msgid "Please select a folder"
 msgstr "Bonvolu elekti dosierujon"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgid "&New Subfolder…"
-msgstr "&Nova subdosierujo..."
+msgstr "&Nova Subdosierujo…"
 
 #: folder/folderselectiondialog.cpp:64
 #, kde-format
@@ -1925,13 +1919,11 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Forigo de malnovaj mesaĝoj el dosierujo %1 malsukcesis."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "Forigante 1 malnovan mesaĝon el dosierujo %2..."
-msgstr[1] "Forigante %1 malnovajn mesaĝojn el dosierujo %2..."
+msgstr[0] "Forigante 1 malnovan mesaĝon el dosierujo %2…"
+msgstr[1] "Forigante %1 malnovajn mesaĝojn el dosierujo %2…"
 
 #: job/expirejob.cpp:164
 #, kde-format
@@ -1940,13 +1932,11 @@ msgstr ""
 "Ne povas eksvalidigi mesaĝojn el dosierujo %1: celdosierujo %2 ne trovita"
 
 #: job/expirejob.cpp:180
-#, fuzzy, kde-format
-#| msgid "Moving 1 old message from folder %2 to folder %3..."
-#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] "Movante 1 malnovan mesaĝon de dosierujo %2 al dosierujo %3..."
-msgstr[1] "Movante %1 malnovajn mesaĝojn de dosierujo %2 al dosierujo %3..."
+msgstr[0] "Movante 1 malnovan mesaĝon de dosierujo %2 al dosierujo %3…"
+msgstr[1] "Movante %1 malnovajn mesaĝojn de dosierujo %2 al dosierujo %3…"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
@@ -2508,7 +2498,7 @@ msgstr "Elekti Aldonaĵojn"
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2599,18 +2589,14 @@ msgid "Snippet %1"
 msgstr "Fragmento %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Snippet"
+#, kde-format
 msgid "Add Snippet…"
-msgstr "Aldoni Fragmenton"
+msgstr "Aldoni Fragmenton…"
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Edit Snippet"
+#, kde-format
 msgid "Edit Snippet…"
-msgstr "Redakti Fragmenton"
+msgstr "Redakti Fragmenton…"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2618,17 +2604,14 @@ msgid "Remove Snippet"
 msgstr "Forigi Fragmenton"
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Group"
+#, kde-format
 msgid "Add Group…"
-msgstr "Aldoni Grupon"
+msgstr "Aldoni Grupon…"
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
+#, kde-format
 msgid "Rename Group…"
-msgstr "Alinomi grupon..."
+msgstr "Alinomi Grupon…"
 
 #: snippets/snippetsmanager.cpp:569
 #, kde-format
@@ -2856,10 +2839,9 @@ msgid "Icon Mode"
 msgstr "Piktogram-Reĝimo"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, fuzzy, kde-format
-#| msgid "Drop your favorite folders here..."
+#, kde-format
 msgid "Drop your favorite folders here…"
-msgstr "Faligu viajn plej ŝatatajn dosierujojn ĉi tie..."
+msgstr "Faligu viajn plej ŝatatajn dosierujojn ĉi tie…"
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format
@@ -2930,21 +2912,3 @@ msgid ""
 msgstr ""
 "Ĉi tiu butono malfermas apartan dialogon kie vi povas elekti ricevantojn el "
 "ĉiuj disponeblaj adresoj."
-
-#~ msgid "Add Tag..."
-#~ msgstr "Aldoni etikedon..."
-
-#~ msgid "Save..."
-#~ msgstr "Konservi..."
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Add Snippet..."
-#~ msgstr "Aldoni fragmenton..."
-
-#~ msgid "Edit Snippet..."
-#~ msgstr "Redakti fragmenton..."
-
-#~ msgid "Add Group..."
-#~ msgstr "Aldoni grupon..."

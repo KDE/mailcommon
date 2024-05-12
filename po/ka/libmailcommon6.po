@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-10 00:39+0000\n"
-"PO-Revision-Date: 2023-09-24 11:48+0200\n"
+"PO-Revision-Date: 2024-05-10 07:32+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -380,10 +380,9 @@ msgstr ""
 "\"%1\""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgid "Add Tag…"
-msgstr "ჭდის დამატება"
+msgstr "ჭდის დამატება…"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -920,13 +919,12 @@ msgstr "Sieve-ის სკრიპტში გადაყვანა"
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save…"
-msgstr ""
+msgstr "შენახვა…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Share..."
+#, kde-format
 msgid "Share…"
-msgstr "გაზიარება..."
+msgstr "გაზიარება…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -1068,22 +1066,19 @@ msgid "Filter Rules"
 msgstr "ფილტრის წესები"
 
 #: filter/kmfilterdialog.cpp:90
-#, fuzzy, kde-format
-#| msgid "Import..."
+#, kde-format
 msgid "Import…"
-msgstr "&შემოტანა..."
+msgstr "შემოტანა…"
 
 #: filter/kmfilterdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "Export..."
+#, kde-format
 msgid "Export…"
-msgstr "გატანა..."
+msgstr "გატანა…"
 
 #: filter/kmfilterdialog.cpp:94
-#, fuzzy, kde-format
-#| msgid "Convert to..."
+#, kde-format
 msgid "Convert to…"
-msgstr "გადაყვანა..."
+msgstr "გადაყვანა…"
 
 #: filter/kmfilterdialog.cpp:98
 #, kde-format
@@ -1708,10 +1703,9 @@ msgid "Please select a folder"
 msgstr "აირჩიეთ საქაღალდე"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgid "&New Subfolder…"
-msgstr "&ქვესაქაღალდის შექმნა...."
+msgstr "ახალი &ქვესაქაღალდე.…"
 
 #: folder/folderselectiondialog.cpp:64
 #, kde-format
@@ -1930,13 +1924,11 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "საქაღალდიდან %1 ძველი შეტყობინებების წაშლა ჩავარდა."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "იშლება 1 ძველი შეტყობინება საქაღალდიდან %2..."
-msgstr[1] "იშლება %1 ძველი შეტყობინება საქაღალდიდან %2..."
+msgstr[0] "იშლება 1 ძველი შეტყობინება საქაღალდიდან %2…"
+msgstr[1] "იშლება %1 ძველი შეტყობინება საქაღალდიდან %2…"
 
 #: job/expirejob.cpp:164
 #, kde-format
@@ -1946,15 +1938,13 @@ msgstr ""
 "ვერ ვიპოვე"
 
 #: job/expirejob.cpp:180
-#, fuzzy, kde-format
-#| msgid "Moving 1 old message from folder %2 to folder %3..."
-#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] ""
-"მიმდინარეობს 1 ძველი შეტყობინების გადატანა საქაღალდიდან %2 საქაღალდეში %3..."
+"მიმდინარეობს 1 ძველი შეტყობინების გადატანა საქაღალდიდან %2 საქაღალდეში %3…"
 msgstr[1] ""
-"მიმდინარეობს %1 ძველი შეტყობინების გადატანა საქაღალდიდან %2 საქაღალდეში %3..."
+"მიმდინარეობს %1 ძველი შეტყობინების გადატანა საქაღალდიდან %2 საქაღალდეში %3…"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
@@ -2515,7 +2505,7 @@ msgstr "აირჩიეთ მიმაგრებული ფაილე�
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2606,18 +2596,14 @@ msgid "Snippet %1"
 msgstr "ფრაგმენტი %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Snippet"
+#, kde-format
 msgid "Add Snippet…"
-msgstr "ფრაგმენტის დამატება"
+msgstr "ფრაგმენტის დამატება…"
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Edit Snippet"
+#, kde-format
 msgid "Edit Snippet…"
-msgstr "ფრაგმენტის ჩსწორება"
+msgstr "ფრაგმენტის ჩასწორება…"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2625,17 +2611,14 @@ msgid "Remove Snippet"
 msgstr "ნაწყვეტის წაშლა"
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Group"
+#, kde-format
 msgid "Add Group…"
-msgstr "ჯგუფის დამატება"
+msgstr "ჯგუფის დამატება…"
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
+#, kde-format
 msgid "Rename Group…"
-msgstr "ჯგუფის გადარქმევა..."
+msgstr "ჯგუფის გადარქმევა…"
 
 #: snippets/snippetsmanager.cpp:569
 #, kde-format
@@ -2863,10 +2846,9 @@ msgid "Icon Mode"
 msgstr "ხატულის რეჟიმი"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, fuzzy, kde-format
-#| msgid "Drop your favorite folders here..."
+#, kde-format
 msgid "Drop your favorite folders here…"
-msgstr "დააგდეთ აქ თქვენი რჩეული საქაღალდეები..."
+msgstr "დააგდეთ აქ თქვენი რჩეული საქაღალდეები…"
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format
