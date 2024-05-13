@@ -8,20 +8,20 @@
 # Marta Rybczyńska <kde-i18n@rybczynska.net>, 2007, 2008, 2009, 2010, 2012, 2013.
 # Artur Chłond <eugenewolfe@o2.pl>, 2010.
 # EuGene Wolfe <eugene@blackwaterczestochowa.pl>, 2011.
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-12 00:38+0000\n"
-"PO-Revision-Date: 2023-09-24 08:05+0200\n"
+"PO-Revision-Date: 2024-05-12 08:58+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
@@ -394,14 +394,14 @@ msgstr "Dodaj znacznik..."
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
-msgstr "Wybierz szablon"
+msgstr "Wybierz wzorzec"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:38
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
 "\"%1\""
-msgstr "Brakuje szablonu filtra. Wybierz szablon do użycia z filtrem \"%1\""
+msgstr "Brakuje wzorca filtra. Wybierz wzorzec do użycia z filtrem \"%1\""
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
 #, kde-format
@@ -637,7 +637,7 @@ msgstr "Ten filtr przekaże wiadomość na podany adres."
 #: filter/filteractions/filteractionforward.cpp:198
 #, kde-format
 msgid "Default Template"
-msgstr "Domyślny szablon"
+msgstr "Domyślny wzorzec"
 
 #: filter/filteractions/filteractionforward.cpp:110
 #, kde-format
@@ -647,17 +647,17 @@ msgstr "Szablon używany do przekazywania wiadomości"
 #: filter/filteractions/filteractionforward.cpp:111
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
-msgstr "Ustaw szablon przekazywania wiadomości dla tego filtra."
+msgstr "Ustaw wzorzec przekazywania wiadomości dla tego filtra."
 
 #: filter/filteractions/filteractionforward.cpp:226
 #, kde-format
 msgid "Forward to %1 with default template"
-msgstr "Przekaż do %1, używając domyślnego szablonu"
+msgstr "Przekaż do %1, używając domyślnego wzorca"
 
 #: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
 msgid "Forward to %1 with template %2"
-msgstr "Przekaż do %1, używając szablonu %2"
+msgstr "Przekaż do %1, używając wzorca %2"
 
 #: filter/filteractions/filteractionforward.cpp:234
 #: filter/filteractions/filteractionreplyto.cpp:51
