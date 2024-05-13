@@ -8,20 +8,20 @@
 # Marta Rybczyńska <kde-i18n@rybczynska.net>, 2007, 2008, 2009, 2010, 2012, 2013.
 # Artur Chłond <eugenewolfe@o2.pl>, 2010.
 # EuGene Wolfe <eugene@blackwaterczestochowa.pl>, 2011.
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-10 00:39+0000\n"
-"PO-Revision-Date: 2023-09-24 08:05+0200\n"
+"PO-Revision-Date: 2024-05-12 08:58+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
@@ -386,23 +386,22 @@ msgstr ""
 "wykorzystywać filtr."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgid "Add Tag…"
-msgstr "Dodaj znacznik"
+msgstr "Dodaj znacznik…"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
-msgstr "Wybierz szablon"
+msgstr "Wybierz wzorzec"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:38
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
 "\"%1\""
-msgstr "Brakuje szablonu filtra. Wybierz szablon do użycia z filtrem \"%1\""
+msgstr "Brakuje wzorca filtra. Wybierz wzorzec do użycia z filtrem \"%1\""
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
 #, kde-format
@@ -638,7 +637,7 @@ msgstr "Ten filtr przekaże wiadomość na podany adres."
 #: filter/filteractions/filteractionforward.cpp:198
 #, kde-format
 msgid "Default Template"
-msgstr "Domyślny szablon"
+msgstr "Domyślny wzorzec"
 
 #: filter/filteractions/filteractionforward.cpp:110
 #, kde-format
@@ -648,17 +647,17 @@ msgstr "Szablon używany do przekazywania wiadomości"
 #: filter/filteractions/filteractionforward.cpp:111
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
-msgstr "Ustaw szablon przekazywania wiadomości dla tego filtra."
+msgstr "Ustaw wzorzec przekazywania wiadomości dla tego filtra."
 
 #: filter/filteractions/filteractionforward.cpp:226
 #, kde-format
 msgid "Forward to %1 with default template"
-msgstr "Przekaż do %1, używając domyślnego szablonu"
+msgstr "Przekaż do %1, używając domyślnego wzorca"
 
 #: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
 msgid "Forward to %1 with template %2"
-msgstr "Przekaż do %1, używając szablonu %2"
+msgstr "Przekaż do %1, używając wzorca %2"
 
 #: filter/filteractions/filteractionforward.cpp:234
 #: filter/filteractions/filteractionreplyto.cpp:51
@@ -924,13 +923,12 @@ msgstr "Przekształć na skrypt Sieve"
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save…"
-msgstr ""
+msgstr "Zapisz…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Shared"
+#, kde-format
 msgid "Share…"
-msgstr "Dzielone"
+msgstr "Udostępnij…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -1072,22 +1070,19 @@ msgid "Filter Rules"
 msgstr "Zasady filtrowania"
 
 #: filter/kmfilterdialog.cpp:90
-#, fuzzy, kde-format
-#| msgid "&Import"
+#, kde-format
 msgid "Import…"
-msgstr "&Importuj"
+msgstr "Zaimportuj…"
 
 #: filter/kmfilterdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "Export..."
+#, kde-format
 msgid "Export…"
-msgstr "Wyeksportuj..."
+msgstr "Wyeksportuj…"
 
 #: filter/kmfilterdialog.cpp:94
-#, fuzzy, kde-format
-#| msgid "Convert to..."
+#, kde-format
 msgid "Convert to…"
-msgstr "Przekształć na..."
+msgstr "Przekształć na…"
 
 #: filter/kmfilterdialog.cpp:98
 #, kde-format
@@ -1712,10 +1707,9 @@ msgid "Please select a folder"
 msgstr "Wybierz katalog"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgid "&New Subfolder…"
-msgstr "&Nowy podkatalog..."
+msgstr "&Nowy podkatalog…"
 
 #: folder/folderselectiondialog.cpp:64
 #, kde-format
@@ -1938,9 +1932,7 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Usuwanie starych wiadomości z katalogu %1 nie powiodło się."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Usuwanie %1 przedawnionej wiadomości z katalogu %2..."
@@ -1955,17 +1947,15 @@ msgstr ""
 "katalogu %2"
 
 #: job/expirejob.cpp:180
-#, fuzzy, kde-format
-#| msgid "Moving 1 old message from folder %2 to folder %3..."
-#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] ""
-"Przenoszenie %1 przedawnionej wiadomości z katalogu %2 do katalogu %3..."
+"Przenoszenie %1 przedawnionej wiadomości z katalogu %2 do katalogu %3…"
 msgstr[1] ""
-"Przenoszenie %1 przedawnionych wiadomości z katalogu %2 do katalogu %3..."
+"Przenoszenie %1 przedawnionych wiadomości z katalogu %2 do katalogu %3…"
 msgstr[2] ""
-"Przenoszenie %1 przedawnionych wiadomości z katalogu %2 do katalogu %3..."
+"Przenoszenie %1 przedawnionych wiadomości z katalogu %2 do katalogu %3…"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
@@ -2531,7 +2521,7 @@ msgstr "Wybierz załączniki"
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2622,18 +2612,14 @@ msgid "Snippet %1"
 msgstr "Wstawka %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Snippet"
+#, kde-format
 msgid "Add Snippet…"
-msgstr "Dodaj wstawkę"
+msgstr "Dodaj wstawkę…"
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Edit Snippet"
+#, kde-format
 msgid "Edit Snippet…"
-msgstr "Zmień wstawkę"
+msgstr "Zmień wstawkę…"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2641,17 +2627,14 @@ msgid "Remove Snippet"
 msgstr "Usuń wstawkę"
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Group"
+#, kde-format
 msgid "Add Group…"
-msgstr "Dodaj grupę"
+msgstr "Dodaj grupę…"
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
+#, kde-format
 msgid "Rename Group…"
-msgstr "Przemianuj grupę..."
+msgstr "Zmień nazwę grupy…"
 
 #: snippets/snippetsmanager.cpp:569
 #, kde-format
@@ -2880,10 +2863,9 @@ msgid "Icon Mode"
 msgstr "Tryb ikon"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, fuzzy, kde-format
-#| msgid "Drop your favorite folders here..."
+#, kde-format
 msgid "Drop your favorite folders here…"
-msgstr "Upuść tutaj swoje ulubione katalogi..."
+msgstr "Upuść tutaj swoje ulubione katalogi…"
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format
