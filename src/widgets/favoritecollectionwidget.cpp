@@ -110,7 +110,7 @@ void FavoriteCollectionWidget::createMenu(KActionCollection *ac)
     ac->addAction(QStringLiteral("favorite_mode"), modeFavoriteMenu);
 
     grp = new QActionGroup(modeFavoriteMenu);
-    d->listMode = new QAction(i18n("List Mode"), modeFavoriteMenu);
+    d->listMode = new QAction(i18nc("@action", "List Mode"), modeFavoriteMenu);
     modeFavoriteMenu->addAction(d->listMode);
     d->listMode->setCheckable(true);
     grp->addAction(d->listMode);
@@ -120,7 +120,7 @@ void FavoriteCollectionWidget::createMenu(KActionCollection *ac)
     d->listMode->setData(QVariant(MailCommon::MailCommonSettings::EnumFavoriteCollectionViewMode::ListMode));
     connect(d->listMode, &QAction::triggered, this, &FavoriteCollectionWidget::slotChangeMode);
 
-    d->iconMode = new QAction(i18n("Icon Mode"), modeFavoriteMenu);
+    d->iconMode = new QAction(i18nc("@action", "Icon Mode"), modeFavoriteMenu);
     modeFavoriteMenu->addAction(d->iconMode);
     grp->addAction(d->iconMode);
     d->iconMode->setCheckable(true);

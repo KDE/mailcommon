@@ -95,41 +95,41 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     user3Button->setIcon(QIcon::fromTheme("document-save-as"));
     auto menu = new QMenu(this);
 
-    auto act = new QAction(i18n("KMail filters"), this);
+    auto act = new QAction(i18nc("@action", "KMail filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::KMailFilter));
     menu->addAction(act);
 
-    act = new QAction(i18n("Thunderbird filters"), this);
+    act = new QAction(i18nc("@action", "Thunderbird filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::ThunderBirdFilter));
     menu->addAction(act);
 
-    act = new QAction(i18n("Evolution filters"), this);
+    act = new QAction(i18nc("@action", "Evolution filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::EvolutionFilter));
     menu->addAction(act);
 
-    act = new QAction(i18n("Sylpheed filters"), this);
+    act = new QAction(i18nc("@action", "Sylpheed filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::SylpheedFilter));
     menu->addAction(act);
 
-    act = new QAction(i18n("Procmail filters"), this);
+    act = new QAction(i18nc("@action", "Procmail filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::ProcmailFilter));
     menu->addAction(act);
 
-    act = new QAction(i18n("Balsa filters"), this);
+    act = new QAction(i18nc("@action", "Balsa filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::BalsaFilter));
     menu->addAction(act);
 
-    act = new QAction(i18n("Claws Mail filters"), this);
+    act = new QAction(i18nc("@action", "Claws Mail filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::ClawsMailFilter));
     menu->addAction(act);
 
-    act = new QAction(i18n("Icedove Mail filters"), this);
+    act = new QAction(i18nc("@action", "Icedove Mail filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::IcedoveFilter));
     menu->addAction(act);
 
     connect(menu, &QMenu::triggered, this, &KMFilterDialog::slotImportFilter);
 
-    act = new QAction(i18n("Gmail filters"), this);
+    act = new QAction(i18nc("@action", "Gmail filters"), this);
     act->setData(QVariant::fromValue(MailCommon::FilterImporterExporter::GmailFilter));
     menu->addAction(act);
 
@@ -137,7 +137,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
 
     menu = new QMenu(this);
 
-    act = new QAction(i18n("Sieve script"), this);
+    act = new QAction(i18nc("@action", "Sieve script"), this);
     connect(act, &QAction::triggered, this, &KMFilterDialog::slotExportAsSieveScript);
     menu->addAction(act);
     user3Button->setMenu(menu);
