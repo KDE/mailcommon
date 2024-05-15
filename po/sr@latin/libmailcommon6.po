@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-15 00:39+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -1127,53 +1127,73 @@ msgid "Convert to…"
 msgstr "Pretvori u..."
 
 #: filter/kmfilterdialog.cpp:98
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "KMail filters"
+msgctxt "@action"
 msgid "KMail filters"
 msgstr "K‑poštini filteri"
 
 #: filter/kmfilterdialog.cpp:102
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Thunderbird filters"
+msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Thunderbirdovi filteri"
 
 #: filter/kmfilterdialog.cpp:106
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Evolution filters"
+msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Evolucijini filteri"
 
 #: filter/kmfilterdialog.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sylpheed filters"
+msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Sylpheedovi filteri"
 
 #: filter/kmfilterdialog.cpp:114
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Procmail filters"
+msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Procmailovi filteri"
 
 #: filter/kmfilterdialog.cpp:118
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Balsa filters"
+msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Balsini filteri"
 
 #: filter/kmfilterdialog.cpp:122
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Claws Mail filters"
+msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Claws Mailovi filteri"
 
 # rewrite-msgid: /Mail//
 #: filter/kmfilterdialog.cpp:126
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Icedove Mail filters"
+msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Ledogolubicini filteri"
 
 #: filter/kmfilterdialog.cpp:132
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Gmail filters"
+msgctxt "@action"
 msgid "Gmail filters"
 msgstr "GMailovi filteri"
 
 #: filter/kmfilterdialog.cpp:140
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sieve script"
+msgctxt "@action"
 msgid "Sieve script"
 msgstr "Sito skripta"
 
@@ -2688,6 +2708,7 @@ msgstr "Isečak %1"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Snippet"
+msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "Dodavanje isečka"
 
@@ -2695,11 +2716,14 @@ msgstr "Dodavanje isečka"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Edit Snippet"
+msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "Uređivanje isečka"
 
 #: snippets/snippetsmanager.cpp:562
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Snippet"
+msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Ukloni isečak"
 
@@ -2707,22 +2731,28 @@ msgstr "Ukloni isečak"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Group"
+msgctxt "@action"
 msgid "Add Group…"
 msgstr "Dodavanje grupe"
 
 #: snippets/snippetsmanager.cpp:567
 #, fuzzy, kde-format
 #| msgid "Rename Group..."
+msgctxt "@action"
 msgid "Rename Group…"
 msgstr "Preimenuj grupu..."
 
 #: snippets/snippetsmanager.cpp:569
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Group"
+msgctxt "@action"
 msgid "Remove Group"
 msgstr "Ukloni grupu"
 
 #: snippets/snippetsmanager.cpp:572
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Snippet"
+msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "Umetni isečak"
 
@@ -2942,12 +2972,16 @@ msgid "Mode"
 msgstr "Režim"
 
 #: widgets/favoritecollectionwidget.cpp:113
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "List Mode"
+msgctxt "@action"
 msgid "List Mode"
 msgstr "Režim liste"
 
 #: widgets/favoritecollectionwidget.cpp:123
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Icon Mode"
+msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Režim ikonica"
 

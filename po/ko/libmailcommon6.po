@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-15 00:39+0000\n"
 "PO-Revision-Date: 2023-10-08 23:39+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -1063,52 +1063,72 @@ msgid "Convert to…"
 msgstr "다음으로 변환..."
 
 #: filter/kmfilterdialog.cpp:98
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "KMail filters"
+msgctxt "@action"
 msgid "KMail filters"
 msgstr "KMail 필터"
 
 #: filter/kmfilterdialog.cpp:102
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Thunderbird filters"
+msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Thunderbird 필터"
 
 #: filter/kmfilterdialog.cpp:106
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Evolution filters"
+msgctxt "@action"
 msgid "Evolution filters"
 msgstr "에볼루션 필터"
 
 #: filter/kmfilterdialog.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sylpheed filters"
+msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "실피드 필터"
 
 #: filter/kmfilterdialog.cpp:114
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Procmail filters"
+msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Procmail 필터"
 
 #: filter/kmfilterdialog.cpp:118
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Balsa filters"
+msgctxt "@action"
 msgid "Balsa filters"
 msgstr "발사 필터"
 
 #: filter/kmfilterdialog.cpp:122
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Claws Mail filters"
+msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Claws Mail 필터"
 
 #: filter/kmfilterdialog.cpp:126
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Icedove Mail filters"
+msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Icedove 메일 필터"
 
 #: filter/kmfilterdialog.cpp:132
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Gmail filters"
+msgctxt "@action"
 msgid "Gmail filters"
 msgstr "GMail 필터"
 
 #: filter/kmfilterdialog.cpp:140
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sieve script"
+msgctxt "@action"
 msgid "Sieve script"
 msgstr "Sieve 스크립트"
 
@@ -2559,6 +2579,7 @@ msgstr "스니펫 %1"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Snippet"
+msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "스니펫 추가"
 
@@ -2566,11 +2587,14 @@ msgstr "스니펫 추가"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Edit Snippet"
+msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "스니펫 편집"
 
 #: snippets/snippetsmanager.cpp:562
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Snippet"
+msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "스니펫 삭제"
 
@@ -2578,22 +2602,28 @@ msgstr "스니펫 삭제"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Group"
+msgctxt "@action"
 msgid "Add Group…"
 msgstr "그룹 추가"
 
 #: snippets/snippetsmanager.cpp:567
 #, fuzzy, kde-format
 #| msgid "Rename Group..."
+msgctxt "@action"
 msgid "Rename Group…"
 msgstr "그룹 이름 바꾸기..."
 
 #: snippets/snippetsmanager.cpp:569
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Group"
+msgctxt "@action"
 msgid "Remove Group"
 msgstr "그룹 삭제"
 
 #: snippets/snippetsmanager.cpp:572
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Snippet"
+msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "스니펫 삽입"
 
@@ -2799,12 +2829,16 @@ msgid "Mode"
 msgstr "모드"
 
 #: widgets/favoritecollectionwidget.cpp:113
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "List Mode"
+msgctxt "@action"
 msgid "List Mode"
 msgstr "목록 모드"
 
 #: widgets/favoritecollectionwidget.cpp:123
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Icon Mode"
+msgctxt "@action"
 msgid "Icon Mode"
 msgstr "아이콘 모드"
 

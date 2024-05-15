@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-15 00:39+0000\n"
 "PO-Revision-Date: 2014-09-18 22:35+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -1119,54 +1119,72 @@ msgid "Convert to…"
 msgstr "Ümwanneln na..."
 
 #: filter/kmfilterdialog.cpp:98
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "KMail filters"
+msgctxt "@action"
 msgid "KMail filters"
 msgstr "KMail-Filter"
 
 #: filter/kmfilterdialog.cpp:102
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Thunderbird filters"
+msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Thunderbird-Filtern"
 
 #: filter/kmfilterdialog.cpp:106
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Evolution filters"
+msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Evolution-Filtern"
 
 #: filter/kmfilterdialog.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sylpheed filters"
+msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Sylpheed-Filtern"
 
 #: filter/kmfilterdialog.cpp:114
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Procmail filters"
+msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Procmail-Filtern"
 
 #: filter/kmfilterdialog.cpp:118
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Balsa filters"
+msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Balsa-Filtern"
 
 #: filter/kmfilterdialog.cpp:122
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Claws Mail filters"
+msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Claws-Mail-Filtern"
 
 #: filter/kmfilterdialog.cpp:126
 #, fuzzy, kde-format
 #| msgid "KMail filters"
+msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "KMail-Filter"
 
 #: filter/kmfilterdialog.cpp:132
 #, fuzzy, kde-format
 #| msgid "KMail filters"
+msgctxt "@action"
 msgid "Gmail filters"
 msgstr "KMail-Filter"
 
 #: filter/kmfilterdialog.cpp:140
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sieve script"
+msgctxt "@action"
 msgid "Sieve script"
 msgstr "Sieve-Skript"
 
@@ -2657,6 +2675,7 @@ msgstr "Snippel %1"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Snippet"
+msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "Snippel tofögen"
 
@@ -2664,11 +2683,14 @@ msgstr "Snippel tofögen"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Edit Snippet"
+msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "Snippel bewerken"
 
 #: snippets/snippetsmanager.cpp:562
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Snippet"
+msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Snippel wegmaken"
 
@@ -2676,22 +2698,28 @@ msgstr "Snippel wegmaken"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Group"
+msgctxt "@action"
 msgid "Add Group…"
 msgstr "Koppel tofögen"
 
 #: snippets/snippetsmanager.cpp:567
 #, fuzzy, kde-format
 #| msgid "Rename Group..."
+msgctxt "@action"
 msgid "Rename Group…"
 msgstr "Koppel ümnömen..."
 
 #: snippets/snippetsmanager.cpp:569
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Group"
+msgctxt "@action"
 msgid "Remove Group"
 msgstr "Koppel wegmaken"
 
 #: snippets/snippetsmanager.cpp:572
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Snippet"
+msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "Snippel infögen"
 
@@ -2910,12 +2938,16 @@ msgid "Mode"
 msgstr "Bedriefoort"
 
 #: widgets/favoritecollectionwidget.cpp:113
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "List Mode"
+msgctxt "@action"
 msgid "List Mode"
 msgstr "Listansicht"
 
 #: widgets/favoritecollectionwidget.cpp:123
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Icon Mode"
+msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Lüttbildansicht"
 

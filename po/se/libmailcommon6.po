@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-15 00:39+0000\n"
 "PO-Revision-Date: 2009-10-09 13:24+0200\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -1030,52 +1030,66 @@ msgid "Convert to…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Available Filters"
+msgctxt "@action"
 msgid "KMail filters"
-msgstr ""
+msgstr "Filterčoakkáldat"
 
 #: filter/kmfilterdialog.cpp:102
 #, kde-format
+msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:106
 #, kde-format
+msgctxt "@action"
 msgid "Evolution filters"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:110
 #, kde-format
+msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:114
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Available Filters"
+msgctxt "@action"
 msgid "Procmail filters"
-msgstr ""
+msgstr "Filterčoakkáldat"
 
 #: filter/kmfilterdialog.cpp:118
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Available Filters"
+msgctxt "@action"
 msgid "Balsa filters"
-msgstr ""
+msgstr "Filterčoakkáldat"
 
 #: filter/kmfilterdialog.cpp:122
 #, kde-format
+msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:126
 #, kde-format
+msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:132
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Available Filters"
+msgctxt "@action"
 msgid "Gmail filters"
-msgstr ""
+msgstr "Filterčoakkáldat"
 
 #: filter/kmfilterdialog.cpp:140
 #, kde-format
+msgctxt "@action"
 msgid "Sieve script"
 msgstr ""
 
@@ -2497,36 +2511,43 @@ msgstr ""
 
 #: snippets/snippetsmanager.cpp:558
 #, kde-format
+msgctxt "@action"
 msgid "Add Snippet…"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:560
 #, kde-format
+msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
+msgctxt "@action"
 msgid "Remove Snippet"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:565
 #, kde-format
+msgctxt "@action"
 msgid "Add Group…"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:567
 #, kde-format
+msgctxt "@action"
 msgid "Rename Group…"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:569
 #, kde-format
+msgctxt "@action"
 msgid "Remove Group"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:572
 #, kde-format
+msgctxt "@action"
 msgid "Insert Snippet"
 msgstr ""
 
@@ -2728,13 +2749,16 @@ msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:113
 #, kde-format
+msgctxt "@action"
 msgid "List Mode"
 msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:123
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Icon Size"
+msgctxt "@action"
 msgid "Icon Mode"
-msgstr ""
+msgstr "Govašsturrodat"
 
 #: widgets/favoritecollectionwidget.cpp:234
 #, kde-format

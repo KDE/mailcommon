@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-15 00:39+0000\n"
 "PO-Revision-Date: 2023-10-12 16:43+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -1055,52 +1055,72 @@ msgid "Convert to…"
 msgstr "Převést do..."
 
 #: filter/kmfilterdialog.cpp:98
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "KMail filters"
+msgctxt "@action"
 msgid "KMail filters"
 msgstr "Filtry KMailu"
 
 #: filter/kmfilterdialog.cpp:102
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Thunderbird filters"
+msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Filtry Thunderbirdu"
 
 #: filter/kmfilterdialog.cpp:106
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Evolution filters"
+msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Filtry Evolution"
 
 #: filter/kmfilterdialog.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sylpheed filters"
+msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Filtry Sylpheed"
 
 #: filter/kmfilterdialog.cpp:114
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Procmail filters"
+msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Filtry Procmailu"
 
 #: filter/kmfilterdialog.cpp:118
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Balsa filters"
+msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Filtry Balsa"
 
 #: filter/kmfilterdialog.cpp:122
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Claws Mail filters"
+msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Filtry Claws Mail"
 
 #: filter/kmfilterdialog.cpp:126
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Icedove Mail filters"
+msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Filtry Icedove"
 
 #: filter/kmfilterdialog.cpp:132
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Gmail filters"
+msgctxt "@action"
 msgid "Gmail filters"
 msgstr "Filtry Gmailu"
 
 #: filter/kmfilterdialog.cpp:140
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sieve script"
+msgctxt "@action"
 msgid "Sieve script"
 msgstr "Skript Sieve"
 
@@ -2547,6 +2567,7 @@ msgstr "Úryvek %1"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Snippet"
+msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "Přidat úryvek"
 
@@ -2554,11 +2575,14 @@ msgstr "Přidat úryvek"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Edit Snippet"
+msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "Upravit úryvek"
 
 #: snippets/snippetsmanager.cpp:562
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Snippet"
+msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Odstranit ústřižek"
 
@@ -2566,22 +2590,28 @@ msgstr "Odstranit ústřižek"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Group"
+msgctxt "@action"
 msgid "Add Group…"
 msgstr "Přidat skupinu"
 
 #: snippets/snippetsmanager.cpp:567
 #, fuzzy, kde-format
 #| msgid "Rename Group..."
+msgctxt "@action"
 msgid "Rename Group…"
 msgstr "Přejmenovat skupinu..."
 
 #: snippets/snippetsmanager.cpp:569
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Group"
+msgctxt "@action"
 msgid "Remove Group"
 msgstr "Odstranit skupinu"
 
 #: snippets/snippetsmanager.cpp:572
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Snippet"
+msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "Vložit ústřižek"
 
@@ -2787,12 +2817,16 @@ msgid "Mode"
 msgstr "Režim"
 
 #: widgets/favoritecollectionwidget.cpp:113
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "List Mode"
+msgctxt "@action"
 msgid "List Mode"
 msgstr "Jednoduchý režim"
 
 #: widgets/favoritecollectionwidget.cpp:123
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Icon Mode"
+msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Režim ikon"
 

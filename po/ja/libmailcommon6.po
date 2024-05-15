@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-15 00:39+0000\n"
 "PO-Revision-Date: 2012-01-28 16:25-0800\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -1097,59 +1097,69 @@ msgstr ""
 #: filter/kmfilterdialog.cpp:98
 #, fuzzy, kde-format
 #| msgid "KMail Filter"
+msgctxt "@action"
 msgid "KMail filters"
 msgstr "KMail フィルタ"
 
 #: filter/kmfilterdialog.cpp:102
 #, fuzzy, kde-format
 #| msgid "Import Filters"
+msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "フィルタをインポート"
 
 #: filter/kmfilterdialog.cpp:106
 #, fuzzy, kde-format
 #| msgid "Export Filters"
+msgctxt "@action"
 msgid "Evolution filters"
 msgstr "フィルタをエクスポート"
 
 #: filter/kmfilterdialog.cpp:110
 #, fuzzy, kde-format
 #| msgid "Select Filters"
+msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "フィルタを選択"
 
 #: filter/kmfilterdialog.cpp:114
 #, fuzzy, kde-format
 #| msgid "KMail Filter"
+msgctxt "@action"
 msgid "Procmail filters"
 msgstr "KMail フィルタ"
 
 #: filter/kmfilterdialog.cpp:118
 #, fuzzy, kde-format
 #| msgid "KMail Filter"
+msgctxt "@action"
 msgid "Balsa filters"
 msgstr "KMail フィルタ"
 
 #: filter/kmfilterdialog.cpp:122
 #, fuzzy, kde-format
 #| msgid "KMail Filter"
+msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "KMail フィルタ"
 
 #: filter/kmfilterdialog.cpp:126
 #, fuzzy, kde-format
 #| msgid "KMail Filter"
+msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "KMail フィルタ"
 
 #: filter/kmfilterdialog.cpp:132
 #, fuzzy, kde-format
 #| msgid "KMail Filter"
+msgctxt "@action"
 msgid "Gmail filters"
 msgstr "KMail フィルタ"
 
 #: filter/kmfilterdialog.cpp:140
 #, kde-format
+msgctxt "@action"
 msgid "Sieve script"
 msgstr ""
 
@@ -2610,6 +2620,7 @@ msgstr "定型表現 %1"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Snippet"
+msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "定型表現を追加"
 
@@ -2617,11 +2628,14 @@ msgstr "定型表現を追加"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Edit Snippet"
+msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "定型表現を編集"
 
 #: snippets/snippetsmanager.cpp:562
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Snippet"
+msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "定型表現を削除"
 
@@ -2629,22 +2643,28 @@ msgstr "定型表現を削除"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Group"
+msgctxt "@action"
 msgid "Add Group…"
 msgstr "グループを追加"
 
 #: snippets/snippetsmanager.cpp:567
 #, fuzzy, kde-format
 #| msgid "Rename Group..."
+msgctxt "@action"
 msgid "Rename Group…"
 msgstr "グループの名前変更..."
 
 #: snippets/snippetsmanager.cpp:569
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Group"
+msgctxt "@action"
 msgid "Remove Group"
 msgstr "グループを削除"
 
 #: snippets/snippetsmanager.cpp:572
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Snippet"
+msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "定型表現を挿入"
 
@@ -2857,12 +2877,14 @@ msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:113
 #, kde-format
+msgctxt "@action"
 msgid "List Mode"
 msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:123
 #, fuzzy, kde-format
 #| msgid "Icon Size"
+msgctxt "@action"
 msgid "Icon Mode"
 msgstr "アイコンサイズ"
 

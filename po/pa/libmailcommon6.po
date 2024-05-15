@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-15 00:39+0000\n"
 "PO-Revision-Date: 2010-12-26 08:49+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -1052,57 +1052,69 @@ msgstr ""
 #: filter/kmfilterdialog.cpp:98
 #, fuzzy, kde-format
 #| msgid "Remove Entry"
+msgctxt "@action"
 msgid "KMail filters"
 msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: filter/kmfilterdialog.cpp:102
 #, fuzzy, kde-format
 #| msgid "Remove Entry"
+msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: filter/kmfilterdialog.cpp:106
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Entry"
+msgctxt "@action"
 msgid "Evolution filters"
-msgstr ""
+msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: filter/kmfilterdialog.cpp:110
 #, fuzzy, kde-format
 #| msgid "Remove Entry"
+msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: filter/kmfilterdialog.cpp:114
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Entry"
+msgctxt "@action"
 msgid "Procmail filters"
-msgstr ""
+msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: filter/kmfilterdialog.cpp:118
 #, fuzzy, kde-format
 #| msgid "Remove Entry"
+msgctxt "@action"
 msgid "Balsa filters"
 msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: filter/kmfilterdialog.cpp:122
 #, fuzzy, kde-format
 #| msgid "Remove Entry"
+msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: filter/kmfilterdialog.cpp:126
 #, fuzzy, kde-format
 #| msgid "Remove Entry"
+msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: filter/kmfilterdialog.cpp:132
 #, fuzzy, kde-format
 #| msgid "Remove Entry"
+msgctxt "@action"
 msgid "Gmail filters"
 msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: filter/kmfilterdialog.cpp:140
 #, kde-format
+msgctxt "@action"
 msgid "Sieve script"
 msgstr ""
 
@@ -2510,40 +2522,52 @@ msgid "Snippet %1"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:558
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Entry"
+msgctxt "@action"
 msgid "Add Snippet…"
-msgstr ""
+msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: snippets/snippetsmanager.cpp:560
 #, fuzzy, kde-format
 #| msgid "Remove Entry"
+msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: snippets/snippetsmanager.cpp:562
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Entry"
+msgctxt "@action"
 msgid "Remove Snippet"
-msgstr ""
+msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: snippets/snippetsmanager.cpp:565
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add Entry..."
+msgctxt "@action"
 msgid "Add Group…"
-msgstr ""
+msgstr "ਐਂਟਰੀ ਸ਼ਾਮਲ..."
 
 #: snippets/snippetsmanager.cpp:567
 #, kde-format
+msgctxt "@action"
 msgid "Rename Group…"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:569
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Entry"
+msgctxt "@action"
 msgid "Remove Group"
-msgstr ""
+msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: snippets/snippetsmanager.cpp:572
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Entry"
+msgctxt "@action"
 msgid "Insert Snippet"
-msgstr ""
+msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
 #, kde-format
@@ -2749,11 +2773,13 @@ msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:113
 #, kde-format
+msgctxt "@action"
 msgid "List Mode"
 msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:123
 #, kde-format
+msgctxt "@action"
 msgid "Icon Mode"
 msgstr ""
 
@@ -2923,9 +2949,6 @@ msgstr ""
 
 #~ msgid "Edit Entry..."
 #~ msgstr "ਐਂਟਰੀ ਸੋਧ..."
-
-#~ msgid "Remove Entry"
-#~ msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #~ msgid "Add ACL"
 #~ msgstr "ACL ਸ਼ਾਮਲ"

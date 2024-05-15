@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-15 00:39+0000\n"
 "PO-Revision-Date: 2011-12-28 12:28-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -1065,54 +1065,71 @@ msgid "Convert to…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "KMail filters"
+msgctxt "@action"
 msgid "KMail filters"
 msgstr "Scagairí KMail"
 
 #: filter/kmfilterdialog.cpp:102
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Thunderbird filters"
+msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Scagairí Thunderbird"
 
 #: filter/kmfilterdialog.cpp:106
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Evolution filters"
+msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Scagairí Evolution"
 
 #: filter/kmfilterdialog.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sylpheed filters"
+msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Scagairí Sylpheed"
 
 #: filter/kmfilterdialog.cpp:114
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Procmail filters"
+msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Scagairí Procmail"
 
 #: filter/kmfilterdialog.cpp:118
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Balsa filters"
+msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Scagairí Balsa"
 
 #: filter/kmfilterdialog.cpp:122
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Claws Mail filters"
+msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Scagairí Claws"
 
 #: filter/kmfilterdialog.cpp:126
 #, fuzzy, kde-format
 #| msgid "KMail filters"
+msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Scagairí KMail"
 
 #: filter/kmfilterdialog.cpp:132
 #, fuzzy, kde-format
 #| msgid "KMail filters"
+msgctxt "@action"
 msgid "Gmail filters"
 msgstr "Scagairí KMail"
 
 #: filter/kmfilterdialog.cpp:140
 #, kde-format
+msgctxt "@action"
 msgid "Sieve script"
 msgstr ""
 
@@ -2567,39 +2584,49 @@ msgstr "Blúire %1"
 #: snippets/snippetsmanager.cpp:558
 #, fuzzy, kde-format
 #| msgid "Add Snippet..."
+msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "Cuir Blúire Leis..."
 
 #: snippets/snippetsmanager.cpp:560
 #, fuzzy, kde-format
 #| msgid "Edit Snippet..."
+msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "Cuir Blúire in Eagar..."
 
 #: snippets/snippetsmanager.cpp:562
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Snippet"
+msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Bain Blúire"
 
 #: snippets/snippetsmanager.cpp:565
 #, fuzzy, kde-format
 #| msgid "Add Group..."
+msgctxt "@action"
 msgid "Add Group…"
 msgstr "Cuir Grúpa Leis..."
 
 #: snippets/snippetsmanager.cpp:567
 #, fuzzy, kde-format
 #| msgid "Rename Group..."
+msgctxt "@action"
 msgid "Rename Group…"
 msgstr "Athainmnigh Grúpa..."
 
 #: snippets/snippetsmanager.cpp:569
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Group"
+msgctxt "@action"
 msgid "Remove Group"
 msgstr "Bain Grúpa"
 
 #: snippets/snippetsmanager.cpp:572
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Snippet"
+msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "Ionsáigh Blúire"
 
@@ -2814,12 +2841,14 @@ msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:113
 #, kde-format
+msgctxt "@action"
 msgid "List Mode"
 msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:123
 #, fuzzy, kde-format
 #| msgid "Icon Size"
+msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Méid na nDeilbhíní"
 

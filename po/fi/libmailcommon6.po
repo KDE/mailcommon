@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-15 00:39+0000\n"
 "PO-Revision-Date: 2023-10-12 18:30+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -1085,52 +1085,72 @@ msgid "Convert to…"
 msgstr "Muunna muotoon…"
 
 #: filter/kmfilterdialog.cpp:98
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "KMail filters"
+msgctxt "@action"
 msgid "KMail filters"
 msgstr "KMail-suodattimet"
 
 #: filter/kmfilterdialog.cpp:102
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Thunderbird filters"
+msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Thunderbird-suodattimet"
 
 #: filter/kmfilterdialog.cpp:106
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Evolution filters"
+msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Evolution-suodattimet"
 
 #: filter/kmfilterdialog.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sylpheed filters"
+msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Sylpheed-suodattimet"
 
 #: filter/kmfilterdialog.cpp:114
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Procmail filters"
+msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Procmail-suodattimet"
 
 #: filter/kmfilterdialog.cpp:118
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Balsa filters"
+msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Balsa-suodattimet"
 
 #: filter/kmfilterdialog.cpp:122
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Claws Mail filters"
+msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Claws Mail -suodattimet"
 
 #: filter/kmfilterdialog.cpp:126
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Icedove Mail filters"
+msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Icedove Mail -suodattimet"
 
 #: filter/kmfilterdialog.cpp:132
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Gmail filters"
+msgctxt "@action"
 msgid "Gmail filters"
 msgstr "GMail-suodattimet"
 
 #: filter/kmfilterdialog.cpp:140
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sieve script"
+msgctxt "@action"
 msgid "Sieve script"
 msgstr "Sieve-komentosarja"
 
@@ -2595,6 +2615,7 @@ msgstr "Leike %1"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Snippet"
+msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "Lisää leike"
 
@@ -2602,11 +2623,14 @@ msgstr "Lisää leike"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Edit Snippet"
+msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "Muokkaa leikettä"
 
 #: snippets/snippetsmanager.cpp:562
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Snippet"
+msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Poista leike"
 
@@ -2614,22 +2638,28 @@ msgstr "Poista leike"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Group"
+msgctxt "@action"
 msgid "Add Group…"
 msgstr "Lisää ryhmä"
 
 #: snippets/snippetsmanager.cpp:567
 #, fuzzy, kde-format
 #| msgid "Rename Group..."
+msgctxt "@action"
 msgid "Rename Group…"
 msgstr "Muuta ryhmän nimeä…"
 
 #: snippets/snippetsmanager.cpp:569
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Group"
+msgctxt "@action"
 msgid "Remove Group"
 msgstr "Poista ryhmä"
 
 #: snippets/snippetsmanager.cpp:572
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Snippet"
+msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "Lisää leike"
 
@@ -2838,12 +2868,16 @@ msgid "Mode"
 msgstr "Tila"
 
 #: widgets/favoritecollectionwidget.cpp:113
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "List Mode"
+msgctxt "@action"
 msgid "List Mode"
 msgstr "Luettelotila"
 
 #: widgets/favoritecollectionwidget.cpp:123
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Icon Mode"
+msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Kuvaketila"
 

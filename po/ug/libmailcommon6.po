@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-15 00:39+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -1062,54 +1062,70 @@ msgid "Convert to…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@action"
 msgid "KMail filters"
-msgstr ""
+msgstr "سۈزگۈچنى چىقىرىۋەت"
 
 #: filter/kmfilterdialog.cpp:102
 #, kde-format
+msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:106
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Available Filters"
+msgctxt "@action"
 msgid "Evolution filters"
-msgstr ""
+msgstr "ئىشلەتكىلى بولىدىغان سۈزگۈچلەر"
 
 #: filter/kmfilterdialog.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Folder"
+msgctxt "@action"
 msgid "Sylpheed filters"
-msgstr ""
+msgstr "قىسقۇچ تاللا"
 
 #: filter/kmfilterdialog.cpp:114
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@action"
 msgid "Procmail filters"
-msgstr ""
+msgstr "سۈزگۈچنى چىقىرىۋەت"
 
 #: filter/kmfilterdialog.cpp:118
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@action"
 msgid "Balsa filters"
-msgstr ""
+msgstr "سۈزگۈچنى چىقىرىۋەت"
 
 #: filter/kmfilterdialog.cpp:122
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@action"
 msgid "Claws Mail filters"
-msgstr ""
+msgstr "سۈزگۈچنى چىقىرىۋەت"
 
 #: filter/kmfilterdialog.cpp:126
 #, fuzzy, kde-format
 #| msgid "Remove Filter"
+msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "سۈزگۈچنى چىقىرىۋەت"
 
 #: filter/kmfilterdialog.cpp:132
 #, fuzzy, kde-format
 #| msgid "Remove Filter"
+msgctxt "@action"
 msgid "Gmail filters"
 msgstr "سۈزگۈچنى چىقىرىۋەت"
 
 #: filter/kmfilterdialog.cpp:140
 #, kde-format
+msgctxt "@action"
 msgid "Sieve script"
 msgstr ""
 
@@ -2522,6 +2538,7 @@ msgstr "پۇرۇچ %1"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Snippet"
+msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "پۇرۇچ قوشۇش"
 
@@ -2529,11 +2546,14 @@ msgstr "پۇرۇچ قوشۇش"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Edit Snippet"
+msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "پۇرۇچ تەھرىرلەش"
 
 #: snippets/snippetsmanager.cpp:562
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Snippet"
+msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "پۇرۇچنى چىقىرىۋېتىش"
 
@@ -2541,22 +2561,28 @@ msgstr "پۇرۇچنى چىقىرىۋېتىش"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Group"
+msgctxt "@action"
 msgid "Add Group…"
 msgstr "گۇرۇپپا قوش"
 
 #: snippets/snippetsmanager.cpp:567
 #, fuzzy, kde-format
 #| msgid "Rename Group..."
+msgctxt "@action"
 msgid "Rename Group…"
 msgstr "گۇرۇپپا ئاتىنى ئۆزگەرتىش…"
 
 #: snippets/snippetsmanager.cpp:569
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Group"
+msgctxt "@action"
 msgid "Remove Group"
 msgstr "گۇرۇپپىنى چىقىرىۋەت"
 
 #: snippets/snippetsmanager.cpp:572
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Snippet"
+msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "پۇرۇچ قىستۇرۇش"
 
@@ -2765,14 +2791,18 @@ msgid "Mode"
 msgstr "ھالىتى"
 
 #: widgets/favoritecollectionwidget.cpp:113
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "List Mode"
+msgctxt "@action"
 msgid "List Mode"
 msgstr "تىزىش ھالىتى"
 
 #: widgets/favoritecollectionwidget.cpp:123
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Icon Size"
+msgctxt "@action"
 msgid "Icon Mode"
-msgstr ""
+msgstr "سىنبەلگە چوڭلۇقى"
 
 #: widgets/favoritecollectionwidget.cpp:234
 #, kde-format

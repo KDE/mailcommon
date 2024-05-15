@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-15 00:39+0000\n"
 "PO-Revision-Date: 2014-04-11 22:49+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -1138,54 +1138,72 @@ msgid "Convert to…"
 msgstr "Μετατροπή σε..."
 
 #: filter/kmfilterdialog.cpp:98
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "KMail filters"
+msgctxt "@action"
 msgid "KMail filters"
 msgstr "Φίλτρα KMail"
 
 #: filter/kmfilterdialog.cpp:102
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Thunderbird filters"
+msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Φίλτρα Thunderbird"
 
 #: filter/kmfilterdialog.cpp:106
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Evolution filters"
+msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Φίλτρα Evolution"
 
 #: filter/kmfilterdialog.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sylpheed filters"
+msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Φίλτρα Sylpheed"
 
 #: filter/kmfilterdialog.cpp:114
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Procmail filters"
+msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Φίλτρα Procmail"
 
 #: filter/kmfilterdialog.cpp:118
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Balsa filters"
+msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Φίλτρα Balsa"
 
 #: filter/kmfilterdialog.cpp:122
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Claws Mail filters"
+msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Φίλτρα αλληλογραφίας Claws"
 
 #: filter/kmfilterdialog.cpp:126
 #, fuzzy, kde-format
 #| msgid "KMail filters"
+msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Φίλτρα KMail"
 
 #: filter/kmfilterdialog.cpp:132
 #, fuzzy, kde-format
 #| msgid "KMail filters"
+msgctxt "@action"
 msgid "Gmail filters"
 msgstr "Φίλτρα KMail"
 
 #: filter/kmfilterdialog.cpp:140
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sieve script"
+msgctxt "@action"
 msgid "Sieve script"
 msgstr "Σενάριο sieve"
 
@@ -2693,6 +2711,7 @@ msgstr "Απόσπασμα %1"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Snippet"
+msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "Προσθήκη αποσπάσματος"
 
@@ -2700,11 +2719,14 @@ msgstr "Προσθήκη αποσπάσματος"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Edit Snippet"
+msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "Επεξεργασία αποσπάσματος"
 
 #: snippets/snippetsmanager.cpp:562
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Snippet"
+msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Αφαίρεση αποσπάσματος"
 
@@ -2712,22 +2734,28 @@ msgstr "Αφαίρεση αποσπάσματος"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Group"
+msgctxt "@action"
 msgid "Add Group…"
 msgstr "Προσθήκη ομάδας"
 
 #: snippets/snippetsmanager.cpp:567
 #, fuzzy, kde-format
 #| msgid "Rename Group..."
+msgctxt "@action"
 msgid "Rename Group…"
 msgstr "Μετονομασία ομάδας..."
 
 #: snippets/snippetsmanager.cpp:569
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Group"
+msgctxt "@action"
 msgid "Remove Group"
 msgstr "Αφαίρεση ομάδας"
 
 #: snippets/snippetsmanager.cpp:572
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Snippet"
+msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "Εισαγωγή αποσπάσματος"
 
@@ -2949,12 +2977,14 @@ msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:113
 #, kde-format
+msgctxt "@action"
 msgid "List Mode"
 msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:123
 #, fuzzy, kde-format
 #| msgid "Icon Size"
+msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Μέγεθος εικονιδίων"
 
