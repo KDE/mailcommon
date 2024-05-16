@@ -61,7 +61,9 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
         d->mUser1Button->setAutoDefault(false);
         buttonBox->addButton(d->mUser1Button, QDialogButtonBox::ActionRole);
         KGuiItem::assign(d->mUser1Button,
-                         KGuiItem(i18n("&New Subfolder…"), QStringLiteral("folder-new"), i18n("Create a new subfolder under the currently selected folder")));
+                         KGuiItem(i18nc("@action:button", "&New Subfolder…"),
+                                  QStringLiteral("folder-new"),
+                                  i18n("Create a new subfolder under the currently selected folder")));
     }
     FolderTreeWidget::TreeViewOptions opt = FolderTreeWidget::None;
     if (options & FolderSelectionDialog::ShowUnreadCount) {

@@ -525,7 +525,7 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
                 == KMessageBox::questionTwoActions(nullptr,
                                                    i18n("Do you want to update snippet?"),
                                                    i18n("Update snippet"),
-                                                   KGuiItem(i18n("Update")),
+                                                   KGuiItem(i18nc("@action:button", "Update")),
                                                    KStandardGuiItem::cancel())) {
                 item->setText(text);
                 item->setSubject(subject);
@@ -554,7 +554,7 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
                 == KMessageBox::questionTwoActions(nullptr,
                                                    i18n("Do you want to update snippet?"),
                                                    i18n("Update snippet"),
-                                                   KGuiItem(i18n("Update")),
+                                                   KGuiItem(i18nc("@action:button", "Update")),
                                                    KStandardGuiItem::cancel())) {
                 item->setText(encodedData);
             }

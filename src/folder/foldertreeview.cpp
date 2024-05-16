@@ -474,8 +474,8 @@ bool FolderTreeView::allowedToEnterFolder(const Akonadi::Collection &collection,
     const int result = KMessageBox::questionTwoActions(const_cast<FolderTreeView *>(this),
                                                        i18n("<qt>Go to the next unread message in folder <b>%1</b>?</qt>", collection.name()),
                                                        i18n("Go to Next Unread Message"),
-                                                       KGuiItem(i18n("Go To")),
-                                                       KGuiItem(i18n("Do Not Go To")), // defaults
+                                                       KGuiItem(i18nc("@action:button", "Go To")),
+                                                       KGuiItem(i18nc("@action:button", "Do Not Go To")), // defaults
                                                        QStringLiteral(":kmail_AskNextFolder"),
                                                        KMessageBox::Option());
 
@@ -516,8 +516,8 @@ bool FolderTreeView::isUnreadFolder(const QModelIndex &current, QModelIndex &ind
                         if (KMessageBox::questionTwoActions(this,
                                                             i18n("<qt>Go to the next unread message in folder <b>%1</b>?</qt>", collection.name()),
                                                             i18n("Go to Next Unread Message"),
-                                                            KGuiItem(i18n("Go To")),
-                                                            KGuiItem(i18n("Do Not Go To")), // defaults
+                                                            KGuiItem(i18nc("@action:button", "Go To")),
+                                                            KGuiItem(i18nc("@action:button", "Do Not Go To")), // defaults
                                                             QStringLiteral(":kmail_AskNextFolder"),
                                                             KMessageBox::Option())
                             == KMessageBox::ButtonCode::SecondaryAction) {
