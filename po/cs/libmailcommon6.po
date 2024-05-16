@@ -364,10 +364,9 @@ msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgid "Add Tag…"
-msgstr "Přidat značku"
+msgstr ""
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -894,10 +893,9 @@ msgid "Save…"
 msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Share..."
+#, kde-format
 msgid "Share…"
-msgstr "Sdílet..."
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -1037,92 +1035,79 @@ msgid "Filter Rules"
 msgstr "Pravidla filtru"
 
 #: filter/kmfilterdialog.cpp:90
-#, fuzzy, kde-format
-#| msgid "Import..."
+#, kde-format
 msgid "Import…"
-msgstr "Importovat..."
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "Export..."
+#, kde-format
 msgid "Export…"
-msgstr "Exportovat..."
+msgstr "Exportovat…"
 
 #: filter/kmfilterdialog.cpp:94
-#, fuzzy, kde-format
-#| msgid "Convert to..."
+#, kde-format
 msgid "Convert to…"
-msgstr "Převést do..."
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
-#, fuzzy, kde-format
-#| msgid "KMail filters"
+#, kde-format
 msgctxt "@action"
 msgid "KMail filters"
-msgstr "Filtry KMailu"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
-msgstr "Filtry Thunderbirdu"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:106
-#, fuzzy, kde-format
-#| msgid "Evolution filters"
+#, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
-msgstr "Filtry Evolution"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:110
-#, fuzzy, kde-format
-#| msgid "Sylpheed filters"
+#, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
-msgstr "Filtry Sylpheed"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:114
-#, fuzzy, kde-format
-#| msgid "Procmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
-msgstr "Filtry Procmailu"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:118
-#, fuzzy, kde-format
-#| msgid "Balsa filters"
+#, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
-msgstr "Filtry Balsa"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:122
-#, fuzzy, kde-format
-#| msgid "Claws Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
-msgstr "Filtry Claws Mail"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "Icedove Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
-msgstr "Filtry Icedove"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:132
-#, fuzzy, kde-format
-#| msgid "Gmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
-msgstr "Filtry Gmailu"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:140
-#, fuzzy, kde-format
-#| msgid "Sieve script"
+#, kde-format
 msgctxt "@action"
 msgid "Sieve script"
-msgstr "Skript Sieve"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:162
 #, kde-format
@@ -1668,10 +1653,9 @@ msgid "Please select a folder"
 msgstr "Prosím vyberte složku"
 
 #: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgid "&New Subfolder…"
-msgstr "&Nová podřízená složka..."
+msgstr ""
 
 #: folder/folderselectiondialog.cpp:64
 #, kde-format
@@ -1891,14 +1875,12 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Odstranění starých zpráv ze složky %1 se nezdařilo."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "Odstraňuji 1 starou zprávu ze složky %2..."
-msgstr[1] "Odstraňuji %1 staré zprávy ze složky %2..."
-msgstr[2] "Odstraňuji %1 starých zpráv ze složky %2..."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: job/expirejob.cpp:164
 #, kde-format
@@ -1906,14 +1888,12 @@ msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr "Zprávy ve složce %1 nemohou vypršet: nenalezena cílová složka %2"
 
 #: job/expirejob.cpp:180
-#, fuzzy, kde-format
-#| msgid "Moving 1 old message from folder %2 to folder %3..."
-#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] "Přesunuji 1 starou zprávu ze složky %2 do %3..."
-msgstr[1] "Přesunuji %1 staré zprávy ze složky %2 do %3..."
-msgstr[2] "Přesunuji %1 starých zpráv ze složky %2 do %3..."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: job/expiremovejob.cpp:127
 #, kde-format
@@ -2475,7 +2455,7 @@ msgstr "Vyberte přílohy"
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2564,56 +2544,46 @@ msgid "Snippet %1"
 msgstr "Úryvek %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
-msgstr "Přidat úryvek"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Edit Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
-msgstr "Upravit úryvek"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:562
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
-msgstr "Odstranit ústřižek"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Group"
+#, kde-format
 msgctxt "@action"
 msgid "Add Group…"
-msgstr "Přidat skupinu"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
+#, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
-msgstr "Přejmenovat skupinu..."
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:569
-#, fuzzy, kde-format
-#| msgid "Remove Group"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Group"
-msgstr "Odstranit skupinu"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:572
-#, fuzzy, kde-format
-#| msgid "Insert Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
-msgstr "Vložit ústřižek"
+msgstr ""
 
 #: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
 #, kde-format
@@ -2817,18 +2787,16 @@ msgid "Mode"
 msgstr "Režim"
 
 #: widgets/favoritecollectionwidget.cpp:113
-#, fuzzy, kde-format
-#| msgid "List Mode"
+#, kde-format
 msgctxt "@action"
 msgid "List Mode"
-msgstr "Jednoduchý režim"
+msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:123
-#, fuzzy, kde-format
-#| msgid "Icon Mode"
+#, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
-msgstr "Režim ikon"
+msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
@@ -2904,21 +2872,3 @@ msgid ""
 msgstr ""
 "Toto tlačítko otvírá zvláštní dialog pro výběr příjemců ze všech dostupných "
 "adres."
-
-#~ msgid "Add Tag..."
-#~ msgstr "Přidat značku..."
-
-#~ msgid "Save..."
-#~ msgstr "Uložit..."
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Add Snippet..."
-#~ msgstr "Přidat ústřižek..."
-
-#~ msgid "Edit Snippet..."
-#~ msgstr "Upravit ústřižek..."
-
-#~ msgid "Add Group..."
-#~ msgstr "Přidat skupinu..."

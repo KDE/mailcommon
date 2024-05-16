@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-15 00:39+0000\n"
-"PO-Revision-Date: 2024-05-10 06:26+0200\n"
+"PO-Revision-Date: 2024-05-15 10:27+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -114,7 +114,7 @@ msgstr "Splošno"
 #, kde-format
 msgctxt "@label:textbox Name of the folder."
 msgid "Folder &Name:"
-msgstr "&Ime mape:"
+msgstr "Ime mape:"
 
 #: collectionpage/collectiongeneralpage.cpp:110
 #, kde-format
@@ -199,7 +199,7 @@ msgstr ""
 #: collectionpage/collectiongeneralwidget.cpp:54
 #, kde-format
 msgid "Use &default identity"
-msgstr "Uporabi &privzeto istovetnost"
+msgstr "Uporabi privzeto istovetnost"
 
 #: collectionpage/collectiongeneralwidget.cpp:64
 #, kde-format
@@ -229,7 +229,7 @@ msgstr "V tej mapi &uporabite predloge sporočil po meri"
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
 msgid "&Copy Global Templates"
-msgstr "&Kopiraj globalne predloge"
+msgstr "Kopiraj globalne predloge"
 
 #: collectionpage/collectionviewwidget.cpp:27
 #, kde-format
@@ -282,7 +282,7 @@ msgstr "Prejemnik"
 #: collectionpage/collectionviewwidget.cpp:46
 #, kde-format
 msgid "Sho&w column:"
-msgstr "Po&kaži stolpec:"
+msgstr "Pokaži stolpec:"
 
 #: collectionpage/collectionviewwidget.cpp:85
 #, kde-format
@@ -1080,71 +1080,61 @@ msgid "Convert to…"
 msgstr "Pretvori v…"
 
 #: filter/kmfilterdialog.cpp:98
-#, fuzzy, kde-format
-#| msgid "KMail filters"
+#, kde-format
 msgctxt "@action"
 msgid "KMail filters"
 msgstr "Filtri za KMail"
 
 #: filter/kmfilterdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Filtri za Thunderbird"
 
 #: filter/kmfilterdialog.cpp:106
-#, fuzzy, kde-format
-#| msgid "Evolution filters"
+#, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Filtri za Evolution"
 
 #: filter/kmfilterdialog.cpp:110
-#, fuzzy, kde-format
-#| msgid "Sylpheed filters"
+#, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Filtri za Sylpheed"
 
 #: filter/kmfilterdialog.cpp:114
-#, fuzzy, kde-format
-#| msgid "Procmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Filtri za Procmail"
 
 #: filter/kmfilterdialog.cpp:118
-#, fuzzy, kde-format
-#| msgid "Balsa filters"
+#, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Filtri za Balsa"
 
 #: filter/kmfilterdialog.cpp:122
-#, fuzzy, kde-format
-#| msgid "Claws Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Filtri za Claws Mail"
 
 #: filter/kmfilterdialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "Icedove Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Filtri e-pošte za Icedove"
 
 #: filter/kmfilterdialog.cpp:132
-#, fuzzy, kde-format
-#| msgid "Gmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
 msgstr "Filtri za Gmail"
 
 #: filter/kmfilterdialog.cpp:140
-#, fuzzy, kde-format
-#| msgid "Sieve script"
+#, kde-format
 msgctxt "@action"
 msgid "Sieve script"
 msgstr "Skript Sieve"
@@ -1212,7 +1202,7 @@ msgstr ""
 #: filter/kmfilterdialog.cpp:227
 #, kde-format
 msgid "Apply this filter &before sending messages"
-msgstr "Uveljavi ta filter &pred pošiljanjem sporočil"
+msgstr "Uveljavi ta filter pred pošiljanjem sporočil"
 
 #: filter/kmfilterdialog.cpp:229
 #, kde-format
@@ -2099,7 +2089,7 @@ msgstr "Ujema naj se z vsemi nas&lednjimi"
 #: search/searchpatternedit.cpp:581
 #, kde-format
 msgid "Match an&y of the following"
-msgstr "Ujema naj se z &enim izmed naslednjih"
+msgstr "Ujema naj se z enim izmed naslednjih"
 
 #: search/searchpatternedit.cpp:583
 #, kde-format
@@ -2618,50 +2608,43 @@ msgid "Snippet %1"
 msgstr "Izrezek %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, fuzzy, kde-format
-#| msgid "Add Snippet…"
+#, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
-msgstr "Dodaj izrezek…"
+msgstr "Dodaj izrezek..."
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgid "Edit Snippet…"
+#, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
-msgstr "Uredi izrezek…"
+msgstr "Uredi izrezek..."
 
 #: snippets/snippetsmanager.cpp:562
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Odstrani izrezek"
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
-#| msgid "Add Group…"
+#, kde-format
 msgctxt "@action"
 msgid "Add Group…"
-msgstr "Dodaj skupino…"
+msgstr "Dodaj skupino..."
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgid "Rename Group…"
+#, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
-msgstr "Preimenuj skupino…"
+msgstr "Preimenuj skupino..."
 
 #: snippets/snippetsmanager.cpp:569
-#, fuzzy, kde-format
-#| msgid "Remove Group"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Group"
 msgstr "Odstrani skupino"
 
 #: snippets/snippetsmanager.cpp:572
-#, fuzzy, kde-format
-#| msgid "Insert Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "Vstavi izrezek"
@@ -2700,7 +2683,7 @@ msgstr "Vnesite nadomestne vrednosti za »%1«:"
 #: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgid "Make value &default"
-msgstr "Ta vrednost naj bo &privzeta"
+msgstr "Ta vrednost naj bo privzeta"
 
 #: snippets/snippetvariabledialog.cpp:48
 #, kde-format
@@ -2741,7 +2724,7 @@ msgstr ""
 #: snippets/ui/snippetwidget.ui:32
 #, kde-format
 msgid "&Name:"
-msgstr "&Ime:"
+msgstr "Ime:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabelGroup)
 #: snippets/ui/snippetwidget.ui:50
@@ -2778,7 +2761,7 @@ msgstr "Bkp:"
 #: snippets/ui/snippetwidget.ui:127
 #, kde-format
 msgid "&Snippet:"
-msgstr "I&zrezek:"
+msgstr "Izrezek:"
 
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
 #: snippets/ui/snippetwidget.ui:157
@@ -2802,7 +2785,7 @@ msgstr "Ključna beseda:"
 #: snippets/ui/snippetwidget.ui:212
 #, kde-format
 msgid "Sho&rtcut:"
-msgstr "&Bližnjica:"
+msgstr "Bližnjica:"
 
 #: tag/addtagdialog.cpp:39
 #, kde-format
@@ -2824,12 +2807,12 @@ msgstr "Ime:"
 #: tag/tagwidget.cpp:70
 #, kde-format
 msgid "Change te&xt color:"
-msgstr "Spremeni barvo &besedila:"
+msgstr "Spremeni barvo besedila:"
 
 #: tag/tagwidget.cpp:86
 #, kde-format
 msgid "Change &background color:"
-msgstr "Spremeni barvo &ozadja:"
+msgstr "Spremeni &barvo ozadja:"
 
 #: tag/tagwidget.cpp:102
 #, kde-format
@@ -2839,12 +2822,12 @@ msgstr "Spreme&ni pisavo:"
 #: tag/tagwidget.cpp:108
 #, kde-format
 msgid "&Bold"
-msgstr "&Krepko"
+msgstr "Krepko"
 
 #: tag/tagwidget.cpp:112
 #, kde-format
 msgid "&Italics"
-msgstr "&Ležeče"
+msgstr "Ležeče"
 
 #: tag/tagwidget.cpp:134
 #, kde-format
@@ -2854,7 +2837,7 @@ msgstr "&Ikona oznake sporočila:"
 #: tag/tagwidget.cpp:145
 #, kde-format
 msgid "Shortc&ut:"
-msgstr "Bli&žnjica:"
+msgstr "Bližnjica:"
 
 #: tag/tagwidget.cpp:156
 #, kde-format
@@ -2872,15 +2855,13 @@ msgid "Mode"
 msgstr "Način"
 
 #: widgets/favoritecollectionwidget.cpp:113
-#, fuzzy, kde-format
-#| msgid "List Mode"
+#, kde-format
 msgctxt "@action"
 msgid "List Mode"
 msgstr "Način seznama"
 
 #: widgets/favoritecollectionwidget.cpp:123
-#, fuzzy, kde-format
-#| msgid "Icon Mode"
+#, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Način ikon"
@@ -2929,12 +2910,12 @@ msgstr "Prenos:"
 #: widgets/redirectdialog.cpp:158
 #, kde-format
 msgid "&Send Now"
-msgstr "Pošlji &zdaj"
+msgstr "Pošlji zdaj"
 
 #: widgets/redirectdialog.cpp:159
 #, kde-format
 msgid "Send &Later"
-msgstr "Pošlji &kasneje"
+msgstr "Pošlji kasneje"
 
 #: widgets/redirectdialog.cpp:207
 #, kde-format
