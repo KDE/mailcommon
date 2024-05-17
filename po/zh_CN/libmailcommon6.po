@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -1591,34 +1591,42 @@ msgstr "本地文件夹"
 msgid "Please select a folder"
 msgstr "选择选择一个文件夹"
 
-#: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
-msgid "&New Subfolder…"
-msgstr ""
-
 #: folder/folderselectiondialog.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "New Folder"
+msgctxt "@action:button"
+msgid "&New Subfolder…"
+msgstr "新建文件夹"
+
+#: folder/folderselectiondialog.cpp:66
 #, kde-format
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "在当前所选文件夹下创建新子文件夹"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:126
+#, kde-format
+msgid "&New Subfolder…"
+msgstr ""
+
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "新建文件夹"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "名称"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "无法创建文件夹：%1"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Folder creation failed"
 msgstr "文件夹创建失败"
@@ -1679,12 +1687,16 @@ msgid "Go to Next Unread Message"
 msgstr "跳转到下一封未读的信件"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go To"
+msgctxt "@action:button"
 msgid "Go To"
 msgstr "转到"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Do Not Go To"
+msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "不转到"
 
@@ -2516,9 +2528,11 @@ msgid "Update snippet"
 msgstr "更新代码段"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update snippet"
+msgctxt "@action:button"
 msgid "Update"
-msgstr ""
+msgstr "更新代码段"
 
 #: snippets/snippettreeview.cpp:64
 #, kde-format
@@ -2758,12 +2772,16 @@ msgid "Transport:"
 msgstr "传输："
 
 #: widgets/redirectdialog.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Send Now"
+msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "现在发送(&S)"
 
 #: widgets/redirectdialog.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Send &Later"
+msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "稍后发送(&L)"
 

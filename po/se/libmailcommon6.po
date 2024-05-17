@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
 "PO-Revision-Date: 2009-10-09 13:24+0200\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -1626,35 +1626,42 @@ msgstr "Báikkalaš máhpat"
 msgid "Please select a folder"
 msgstr "Válljes máhpa"
 
-#: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
+#: folder/folderselectiondialog.cpp:64
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgctxt "@action:button"
+msgid "&New Subfolder…"
+msgstr "&Ođđa vuollemáhppa …"
+
+#: folder/folderselectiondialog.cpp:66
+#, kde-format
+msgid "Create a new subfolder under the currently selected folder"
+msgstr ""
+
+#: folder/folderselectiondialog.cpp:126
 #, fuzzy, kde-format
 #| msgid "&New Subfolder..."
 msgid "&New Subfolder…"
 msgstr "&Ođđa vuollemáhppa …"
 
-#: folder/folderselectiondialog.cpp:64
-#, kde-format
-msgid "Create a new subfolder under the currently selected folder"
-msgstr ""
-
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Ođđa máhppa"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr ""
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr ""
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Folder creation failed"
 msgstr ""
@@ -1715,12 +1722,15 @@ msgid "Go to Next Unread Message"
 msgstr "Mana boahtte logakeahtes reivii"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go To"
+msgctxt "@action:button"
 msgid "Go To"
 msgstr "Mana dása"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
 #, kde-format
+msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr ""
 
@@ -2563,6 +2573,7 @@ msgstr ""
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
 #, kde-format
+msgctxt "@action:button"
 msgid "Update"
 msgstr ""
 
@@ -2803,11 +2814,13 @@ msgstr ""
 
 #: widgets/redirectdialog.cpp:158
 #, kde-format
+msgctxt "@action:button"
 msgid "&Send Now"
 msgstr ""
 
 #: widgets/redirectdialog.cpp:159
 #, kde-format
+msgctxt "@action:button"
 msgid "Send &Later"
 msgstr ""
 

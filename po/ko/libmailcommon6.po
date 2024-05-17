@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
 "PO-Revision-Date: 2023-10-08 23:39+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -1689,35 +1689,42 @@ msgstr "로컬 폴더"
 msgid "Please select a folder"
 msgstr "폴더를 선택하십시오"
 
-#: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
+#: folder/folderselectiondialog.cpp:64
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgctxt "@action:button"
+msgid "&New Subfolder…"
+msgstr "새 하위 폴더(&N)..."
+
+#: folder/folderselectiondialog.cpp:66
+#, kde-format
+msgid "Create a new subfolder under the currently selected folder"
+msgstr "현재 선택된 폴더 아래에 새 하위 폴더 만들기"
+
+#: folder/folderselectiondialog.cpp:126
 #, fuzzy, kde-format
 #| msgid "&New Subfolder..."
 msgid "&New Subfolder…"
 msgstr "새 하위 폴더(&N)..."
 
-#: folder/folderselectiondialog.cpp:64
-#, kde-format
-msgid "Create a new subfolder under the currently selected folder"
-msgstr "현재 선택된 폴더 아래에 새 하위 폴더 만들기"
-
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "새 폴더"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "이름"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "폴더를 만들 수 없음: %1"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Folder creation failed"
 msgstr "폴더 생성 실패"
@@ -1779,12 +1786,16 @@ msgid "Go to Next Unread Message"
 msgstr "다음 읽지 않은 메시지로 이동"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go To"
+msgctxt "@action:button"
 msgid "Go To"
 msgstr "이동"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Do Not Go To"
+msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "이동하지 않음"
 
@@ -2638,7 +2649,9 @@ msgid "Update snippet"
 msgstr "스니펫 업데이트"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update"
+msgctxt "@action:button"
 msgid "Update"
 msgstr "업데이트"
 
@@ -2885,12 +2898,16 @@ msgid "Transport:"
 msgstr "전송:"
 
 #: widgets/redirectdialog.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Send Now"
+msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "지금 보내기(&S)"
 
 #: widgets/redirectdialog.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Send &Later"
+msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "나중에 보내기(&L)"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
 "PO-Revision-Date: 2024-05-16 00:21+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -1718,35 +1718,42 @@ msgstr "Carpetas locales"
 msgid "Please select a folder"
 msgstr "Seleccione una carpeta"
 
-#: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
+#: folder/folderselectiondialog.cpp:64
+#, fuzzy, kde-format
+#| msgid "&New Subfolder…"
+msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "&Nueva subcarpeta..."
 
-#: folder/folderselectiondialog.cpp:64
+#: folder/folderselectiondialog.cpp:66
 #, kde-format
 msgid "Create a new subfolder under the currently selected folder"
 msgstr ""
 "Crea una nueva subcarpeta debajo de la carpeta seleccionada en ese momento"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:126
+#, kde-format
+msgid "&New Subfolder…"
+msgstr "&Nueva subcarpeta..."
+
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Nueva carpeta"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Nombre"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "No se ha podido crear la carpeta: %1"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Folder creation failed"
 msgstr "La creación de la carpeta ha fallado"
@@ -1807,12 +1814,16 @@ msgid "Go to Next Unread Message"
 msgstr "Ir al siguiente mensaje por leer"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go To"
+msgctxt "@action:button"
 msgid "Go To"
 msgstr "Ir a"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Do Not Go To"
+msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "No ir a"
 
@@ -2670,7 +2681,9 @@ msgid "Update snippet"
 msgstr "Actualizar el fragmento"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update"
+msgctxt "@action:button"
 msgid "Update"
 msgstr "Actualizar"
 
@@ -2919,12 +2932,16 @@ msgid "Transport:"
 msgstr "Transporte:"
 
 #: widgets/redirectdialog.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Send Now"
+msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "En&viar ahora"
 
 #: widgets/redirectdialog.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Send &Later"
+msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "Enviar d&espués"
 

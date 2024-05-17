@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
 "PO-Revision-Date: 2023-09-21 19:14+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -1733,35 +1733,42 @@ msgstr "Karpetak lokalak"
 msgid "Please select a folder"
 msgstr "Mesedez, hautatu karpeta bat"
 
-#: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
+#: folder/folderselectiondialog.cpp:64
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgctxt "@action:button"
+msgid "&New Subfolder…"
+msgstr "Azpikarpeta &berria..."
+
+#: folder/folderselectiondialog.cpp:66
+#, kde-format
+msgid "Create a new subfolder under the currently selected folder"
+msgstr "Sortu azpikarpeta bat unean hautatutako karpetaren barruan"
+
+#: folder/folderselectiondialog.cpp:126
 #, fuzzy, kde-format
 #| msgid "&New Subfolder..."
 msgid "&New Subfolder…"
 msgstr "Azpikarpeta &berria..."
 
-#: folder/folderselectiondialog.cpp:64
-#, kde-format
-msgid "Create a new subfolder under the currently selected folder"
-msgstr "Sortu azpikarpeta bat unean hautatutako karpetaren barruan"
-
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Karpeta berria"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Izena"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Ezin izan du karpeta sortu: %1"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Folder creation failed"
 msgstr "Karpeta sortzea huts egin du"
@@ -1822,12 +1829,16 @@ msgid "Go to Next Unread Message"
 msgstr "Joan irakurri gabeko hurrengo mezura"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go To"
+msgctxt "@action:button"
 msgid "Go To"
 msgstr "Joan hona"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Do Not Go To"
+msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Ez joan hona"
 
@@ -2691,7 +2702,9 @@ msgid "Update snippet"
 msgstr "Eguneratu testu-zatia"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update"
+msgctxt "@action:button"
 msgid "Update"
 msgstr "Eguneratu"
 
@@ -2942,12 +2955,16 @@ msgid "Transport:"
 msgstr "Garraioa:"
 
 #: widgets/redirectdialog.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Send Now"
+msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "&Bidali orain"
 
 #: widgets/redirectdialog.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Send &Later"
+msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "Bidali &geroago"
 

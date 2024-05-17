@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
 "PO-Revision-Date: 2023-10-12 18:30+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -1717,35 +1717,42 @@ msgstr "Paikalliset kansiot"
 msgid "Please select a folder"
 msgstr "Valitse kansio"
 
-#: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
+#: folder/folderselectiondialog.cpp:64
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgctxt "@action:button"
+msgid "&New Subfolder…"
+msgstr "&Uusi alikansio…"
+
+#: folder/folderselectiondialog.cpp:66
+#, kde-format
+msgid "Create a new subfolder under the currently selected folder"
+msgstr "Luo uusi alikansio valitun kansion alle"
+
+#: folder/folderselectiondialog.cpp:126
 #, fuzzy, kde-format
 #| msgid "&New Subfolder..."
 msgid "&New Subfolder…"
 msgstr "&Uusi alikansio…"
 
-#: folder/folderselectiondialog.cpp:64
-#, kde-format
-msgid "Create a new subfolder under the currently selected folder"
-msgstr "Luo uusi alikansio valitun kansion alle"
-
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Uusi kansio"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Nimi"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Ei voitu luoda kansiota: %1"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Folder creation failed"
 msgstr "Kansion luominen epäonnistui"
@@ -1808,12 +1815,16 @@ msgid "Go to Next Unread Message"
 msgstr "Siirry seuraavaan lukematta olevaan viestiin"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go To"
+msgctxt "@action:button"
 msgid "Go To"
 msgstr "Siirry"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Do Not Go To"
+msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Älä siirry"
 
@@ -2674,7 +2685,9 @@ msgid "Update snippet"
 msgstr "Virkistä leike"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update"
+msgctxt "@action:button"
 msgid "Update"
 msgstr "Virkistä"
 
@@ -2924,12 +2937,16 @@ msgid "Transport:"
 msgstr "Postinvälitys:"
 
 #: widgets/redirectdialog.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Send Now"
+msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "&Lähetä heti"
 
 #: widgets/redirectdialog.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Send &Later"
+msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "Lähetä &myöhemmin"
 

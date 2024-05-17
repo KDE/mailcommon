@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
 "PO-Revision-Date: 2024-05-15 23:12+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -1721,34 +1721,41 @@ msgstr "Локални папки"
 msgid "Please select a folder"
 msgstr "Моля, изберете папка"
 
-#: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
+#: folder/folderselectiondialog.cpp:64
+#, fuzzy, kde-format
+#| msgid "&New Subfolder…"
+msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "&Нова подпапка..."
 
-#: folder/folderselectiondialog.cpp:64
+#: folder/folderselectiondialog.cpp:66
 #, kde-format
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "Създаване на нова подпапка под текущо избраната папка"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:126
+#, kde-format
+msgid "&New Subfolder…"
+msgstr "&Нова подпапка..."
+
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Нова папка"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Име"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Грешка при създаване на папката: %1"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Folder creation failed"
 msgstr "Неуспешно създаване на папка"
@@ -1810,12 +1817,16 @@ msgid "Go to Next Unread Message"
 msgstr "Към следващото непрочетено съобщение"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go To"
+msgctxt "@action:button"
 msgid "Go To"
 msgstr "Навигация"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Do Not Go To"
+msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Да не се отива на"
 
@@ -2666,7 +2677,9 @@ msgid "Update snippet"
 msgstr "Актуализиране на фрагмент"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update"
+msgctxt "@action:button"
 msgid "Update"
 msgstr "Актуализиране"
 
@@ -2915,12 +2928,16 @@ msgid "Transport:"
 msgstr "Транспорт:"
 
 #: widgets/redirectdialog.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Send Now"
+msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "Изпра&щане сега"
 
 #: widgets/redirectdialog.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Send &Later"
+msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "Изпращане &по-късно"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
 "PO-Revision-Date: 2024-05-10 17:04+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -1655,34 +1655,41 @@ msgstr "本地資料夾"
 msgid "Please select a folder"
 msgstr "請選擇一個資料夾"
 
-#: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
-#, kde-format
+#: folder/folderselectiondialog.cpp:64
+#, fuzzy, kde-format
+#| msgid "&New Subfolder…"
+msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "新增子資料夾(&N)…"
 
-#: folder/folderselectiondialog.cpp:64
+#: folder/folderselectiondialog.cpp:66
 #, kde-format
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "在目前資料夾下新增子資料夾"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:126
+#, kde-format
+msgid "&New Subfolder…"
+msgstr "新增子資料夾(&N)…"
+
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "新資料夾"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "名稱"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "無法建立資料夾：%1"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Folder creation failed"
 msgstr "資料夾建立失敗"
@@ -1743,12 +1750,16 @@ msgid "Go to Next Unread Message"
 msgstr "到下一封未讀信件"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go To"
+msgctxt "@action:button"
 msgid "Go To"
 msgstr "跳到"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Do Not Go To"
+msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "不要"
 
@@ -2592,7 +2603,9 @@ msgid "Update snippet"
 msgstr "更新片段"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update"
+msgctxt "@action:button"
 msgid "Update"
 msgstr "更新"
 
@@ -2838,12 +2851,16 @@ msgid "Transport:"
 msgstr "傳輸："
 
 #: widgets/redirectdialog.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Send Now"
+msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "立即傳送(&S)"
 
 #: widgets/redirectdialog.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Send &Later"
+msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "稍後傳送(&L)"
 

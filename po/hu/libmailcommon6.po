@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
 "PO-Revision-Date: 2024-01-20 00:04+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -1734,35 +1734,42 @@ msgstr "Helyi mappák"
 msgid "Please select a folder"
 msgstr "Válasszon ki egy mappát"
 
-#: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
+#: folder/folderselectiondialog.cpp:64
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgctxt "@action:button"
+msgid "&New Subfolder…"
+msgstr "Ú&j almappa…"
+
+#: folder/folderselectiondialog.cpp:66
+#, kde-format
+msgid "Create a new subfolder under the currently selected folder"
+msgstr "Új almappa létrehozása a jelenleg kiválasztott mappa alá"
+
+#: folder/folderselectiondialog.cpp:126
 #, fuzzy, kde-format
 #| msgid "&New Subfolder..."
 msgid "&New Subfolder…"
 msgstr "Ú&j almappa…"
 
-#: folder/folderselectiondialog.cpp:64
-#, kde-format
-msgid "Create a new subfolder under the currently selected folder"
-msgstr "Új almappa létrehozása a jelenleg kiválasztott mappa alá"
-
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Új mappa"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Név"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Nem sikerült létrehozni ezt a mappát: %1"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Folder creation failed"
 msgstr "A mappa létrehozása nem sikerült"
@@ -1825,12 +1832,16 @@ msgid "Go to Next Unread Message"
 msgstr "Ugrás a következő olvasatlan üzenetre"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go To"
+msgctxt "@action:button"
 msgid "Go To"
 msgstr "Ugrás"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Do Not Go To"
+msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Ne ugorjon"
 
@@ -2697,7 +2708,9 @@ msgid "Update snippet"
 msgstr "Töredék frissítése"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update"
+msgctxt "@action:button"
 msgid "Update"
 msgstr "Frissítés"
 
@@ -2948,12 +2961,16 @@ msgid "Transport:"
 msgstr "Átvitel:"
 
 #: widgets/redirectdialog.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Send Now"
+msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "&Küldés most"
 
 #: widgets/redirectdialog.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Send &Later"
+msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "Kü&ldés később"
 

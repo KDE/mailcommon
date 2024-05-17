@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
 "PO-Revision-Date: 2013-03-28 14:37+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -1631,36 +1631,44 @@ msgstr ""
 msgid "Please select a folder"
 msgstr ""
 
-#: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
+#: folder/folderselectiondialog.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "New Folder"
+msgctxt "@action:button"
+msgid "&New Subfolder…"
+msgstr "नवीन संचयीका"
+
+#: folder/folderselectiondialog.cpp:66
+#, kde-format
+msgid "Create a new subfolder under the currently selected folder"
+msgstr ""
+
+#: folder/folderselectiondialog.cpp:126
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "New Folder"
 msgid "&New Subfolder…"
 msgstr "नवीन संचयीका"
 
-#: folder/folderselectiondialog.cpp:64
-#, kde-format
-msgid "Create a new subfolder under the currently selected folder"
-msgstr ""
-
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "नवीन संचयीका"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "नाव"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr ""
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Folder creation failed"
 msgstr ""
@@ -1721,12 +1729,15 @@ msgid "Go to Next Unread Message"
 msgstr ""
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go To"
+msgctxt "@action:button"
 msgid "Go To"
 msgstr "येथे जा"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
 #, kde-format
+msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr ""
 
@@ -2585,6 +2596,7 @@ msgstr ""
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
 #, kde-format
+msgctxt "@action:button"
 msgid "Update"
 msgstr ""
 
@@ -2830,14 +2842,18 @@ msgid "Transport:"
 msgstr "वाहतूक :"
 
 #: widgets/redirectdialog.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Send"
+msgctxt "@action:button"
 msgid "&Send Now"
-msgstr ""
+msgstr "पाठवा (&S)"
 
 #: widgets/redirectdialog.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Send"
+msgctxt "@action:button"
 msgid "Send &Later"
-msgstr ""
+msgstr "पाठवा (&S)"
 
 #: widgets/redirectdialog.cpp:207
 #, kde-format
@@ -2873,9 +2889,6 @@ msgstr ""
 
 #~ msgid "&Ignore"
 #~ msgstr "दुर्लक्ष करा (&I)"
-
-#~ msgid "&Send"
-#~ msgstr "पाठवा (&S)"
 
 #~ msgctxt "Receiver of an email."
 #~ msgid "To"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
 "PO-Revision-Date: 2015-12-29 20:55+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
@@ -1657,35 +1657,42 @@ msgstr "Vietiniai aplankai"
 msgid "Please select a folder"
 msgstr "Pasirinkite aplanką"
 
-#: folder/folderselectiondialog.cpp:64 folder/folderselectiondialog.cpp:124
+#: folder/folderselectiondialog.cpp:64
+#, fuzzy, kde-format
+#| msgid "&New Subfolder..."
+msgctxt "@action:button"
+msgid "&New Subfolder…"
+msgstr "&Naujas poaplankis..."
+
+#: folder/folderselectiondialog.cpp:66
+#, kde-format
+msgid "Create a new subfolder under the currently selected folder"
+msgstr "Sukurti naują poaplankį šiuo metu pažymėtame aplanke"
+
+#: folder/folderselectiondialog.cpp:126
 #, fuzzy, kde-format
 #| msgid "&New Subfolder..."
 msgid "&New Subfolder…"
 msgstr "&Naujas poaplankis..."
 
-#: folder/folderselectiondialog.cpp:64
-#, kde-format
-msgid "Create a new subfolder under the currently selected folder"
-msgstr "Sukurti naują poaplankį šiuo metu pažymėtame aplanke"
-
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Naujas aplankas"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:179
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Pavadinimas"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Nepavyko sukurti aplanko: %1"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:196
 #, kde-format
 msgid "Folder creation failed"
 msgstr "Nepavyko sukurti aplanko"
@@ -1746,12 +1753,15 @@ msgid "Go to Next Unread Message"
 msgstr ""
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go To"
+msgctxt "@action:button"
 msgid "Go To"
 msgstr "Eiti į"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
 #, kde-format
+msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr ""
 
@@ -2646,6 +2656,7 @@ msgstr "Pašalinti iškarpas"
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
 #, fuzzy, kde-format
 #| msgid "Remove Snippet"
+msgctxt "@action:button"
 msgid "Update"
 msgstr "Pašalinti iškarpas"
 
@@ -2896,12 +2907,16 @@ msgid "Transport:"
 msgstr "Protokolas:"
 
 #: widgets/redirectdialog.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Send Now"
+msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "&Siųsti dabar"
 
 #: widgets/redirectdialog.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Send &Later"
+msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "Siųsti &vėliau"
 
