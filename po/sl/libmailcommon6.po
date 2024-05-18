@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-17 00:39+0000\n"
-"PO-Revision-Date: 2024-05-15 10:27+0200\n"
+"PO-Revision-Date: 2024-05-17 07:33+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -1706,8 +1706,7 @@ msgid "Please select a folder"
 msgstr "Izberite mapo"
 
 #: folder/folderselectiondialog.cpp:64
-#, fuzzy, kde-format
-#| msgid "&New Subfolder…"
+#, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "&Nova podmapa…"
@@ -1801,15 +1800,13 @@ msgid "Go to Next Unread Message"
 msgstr "Pojdi na naslednje neprebrano sporočilo"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, fuzzy, kde-format
-#| msgid "Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Go To"
-msgstr "Pojdi"
+msgstr "Pojdi na"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, fuzzy, kde-format
-#| msgid "Do Not Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Ne pojdi"
@@ -2622,13 +2619,13 @@ msgstr "Izrezek %1"
 #, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
-msgstr "Dodaj izrezek..."
+msgstr "Dodaj izrezek…"
 
 #: snippets/snippetsmanager.cpp:560
 #, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
-msgstr "Uredi izrezek..."
+msgstr "Uredi izrezek…"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2640,13 +2637,13 @@ msgstr "Odstrani izrezek"
 #, kde-format
 msgctxt "@action"
 msgid "Add Group…"
-msgstr "Dodaj skupino..."
+msgstr "Dodaj skupino…"
 
 #: snippets/snippetsmanager.cpp:567
 #, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
-msgstr "Preimenuj skupino..."
+msgstr "Preimenuj skupino…"
 
 #: snippets/snippetsmanager.cpp:569
 #, kde-format
@@ -2671,11 +2668,10 @@ msgid "Update snippet"
 msgstr "Osveži izrezek"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, fuzzy, kde-format
-#| msgid "Update"
+#, kde-format
 msgctxt "@action:button"
 msgid "Update"
-msgstr "Osveži"
+msgstr "Posodobi"
 
 #: snippets/snippettreeview.cpp:64
 #, kde-format
@@ -2921,15 +2917,13 @@ msgid "Transport:"
 msgstr "Prenos:"
 
 #: widgets/redirectdialog.cpp:158
-#, fuzzy, kde-format
-#| msgid "&Send Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "Pošlji zdaj"
 
 #: widgets/redirectdialog.cpp:159
-#, fuzzy, kde-format
-#| msgid "Send &Later"
+#, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "Pošlji kasneje"
