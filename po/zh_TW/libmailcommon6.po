@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-17 00:39+0000\n"
-"PO-Revision-Date: 2024-05-10 17:04+0900\n"
+"PO-Revision-Date: 2024-05-18 17:34+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -1050,71 +1050,61 @@ msgid "Convert to…"
 msgstr "轉換為…"
 
 #: filter/kmfilterdialog.cpp:98
-#, fuzzy, kde-format
-#| msgid "KMail filters"
+#, kde-format
 msgctxt "@action"
 msgid "KMail filters"
 msgstr "KMail 過濾器"
 
 #: filter/kmfilterdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Thunderbird 過濾器"
 
 #: filter/kmfilterdialog.cpp:106
-#, fuzzy, kde-format
-#| msgid "Evolution filters"
+#, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Evolution 過濾器"
 
 #: filter/kmfilterdialog.cpp:110
-#, fuzzy, kde-format
-#| msgid "Sylpheed filters"
+#, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Sylpheed 過濾器"
 
 #: filter/kmfilterdialog.cpp:114
-#, fuzzy, kde-format
-#| msgid "Procmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Procmail 過濾器"
 
 #: filter/kmfilterdialog.cpp:118
-#, fuzzy, kde-format
-#| msgid "Balsa filters"
+#, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Balsa 過濾器"
 
 #: filter/kmfilterdialog.cpp:122
-#, fuzzy, kde-format
-#| msgid "Claws Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Claws Mail 過濾器"
 
 #: filter/kmfilterdialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "Icedove Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Icedove 郵件過濾器"
 
 #: filter/kmfilterdialog.cpp:132
-#, fuzzy, kde-format
-#| msgid "Gmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
 msgstr "Gmail 過濾器"
 
 #: filter/kmfilterdialog.cpp:140
-#, fuzzy, kde-format
-#| msgid "Sieve script"
+#, kde-format
 msgctxt "@action"
 msgid "Sieve script"
 msgstr "Sieve 文稿"
@@ -1656,8 +1646,7 @@ msgid "Please select a folder"
 msgstr "請選擇一個資料夾"
 
 #: folder/folderselectiondialog.cpp:64
-#, fuzzy, kde-format
-#| msgid "&New Subfolder…"
+#, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "新增子資料夾(&N)…"
@@ -1750,18 +1739,16 @@ msgid "Go to Next Unread Message"
 msgstr "到下一封未讀信件"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, fuzzy, kde-format
-#| msgid "Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "跳到"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, fuzzy, kde-format
-#| msgid "Do Not Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
-msgstr "不要"
+msgstr "不要前往"
 
 #: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:312
 #, kde-format
@@ -2544,50 +2531,43 @@ msgid "Snippet %1"
 msgstr "片段 %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, fuzzy, kde-format
-#| msgid "Add Snippet…"
+#, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "新增片段…"
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgid "Edit Snippet…"
+#, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "編輯片段…"
 
 #: snippets/snippetsmanager.cpp:562
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "移除片段"
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
-#| msgid "Add Group…"
+#, kde-format
 msgctxt "@action"
 msgid "Add Group…"
 msgstr "新增群組…"
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgid "Rename Group…"
+#, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
 msgstr "重新命名群組…"
 
 #: snippets/snippetsmanager.cpp:569
-#, fuzzy, kde-format
-#| msgid "Remove Group"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Group"
 msgstr "移除群組"
 
 #: snippets/snippetsmanager.cpp:572
-#, fuzzy, kde-format
-#| msgid "Insert Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "插入片段"
@@ -2603,8 +2583,7 @@ msgid "Update snippet"
 msgstr "更新片段"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, fuzzy, kde-format
-#| msgid "Update"
+#, kde-format
 msgctxt "@action:button"
 msgid "Update"
 msgstr "更新"
@@ -2796,15 +2775,13 @@ msgid "Mode"
 msgstr "模式"
 
 #: widgets/favoritecollectionwidget.cpp:113
-#, fuzzy, kde-format
-#| msgid "List Mode"
+#, kde-format
 msgctxt "@action"
 msgid "List Mode"
 msgstr "列表模式"
 
 #: widgets/favoritecollectionwidget.cpp:123
-#, fuzzy, kde-format
-#| msgid "Icon Mode"
+#, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "圖示模式"
@@ -2851,15 +2828,13 @@ msgid "Transport:"
 msgstr "傳輸："
 
 #: widgets/redirectdialog.cpp:158
-#, fuzzy, kde-format
-#| msgid "&Send Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "立即傳送(&S)"
 
 #: widgets/redirectdialog.cpp:159
-#, fuzzy, kde-format
-#| msgid "Send &Later"
+#, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "稍後傳送(&L)"

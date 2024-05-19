@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-17 00:39+0000\n"
-"PO-Revision-Date: 2024-05-10 13:57+0300\n"
+"PO-Revision-Date: 2024-05-18 21:36+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -1079,74 +1079,64 @@ msgid "Convert to…"
 msgstr "Şuna Dönüştür…"
 
 #: filter/kmfilterdialog.cpp:98
-#, fuzzy, kde-format
-#| msgid "KMail filters"
+#, kde-format
 msgctxt "@action"
 msgid "KMail filters"
-msgstr "K Posta süzgeçleri"
+msgstr "K Posta Süzgeçleri"
 
 #: filter/kmfilterdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
-msgstr "Thunderbird süzgeçleri"
+msgstr "Thunderbird Süzgeçleri"
 
 #: filter/kmfilterdialog.cpp:106
-#, fuzzy, kde-format
-#| msgid "Evolution filters"
+#, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
-msgstr "Evolution süzgeçleri"
+msgstr "Evolution Süzgeçleri"
 
 #: filter/kmfilterdialog.cpp:110
-#, fuzzy, kde-format
-#| msgid "Sylpheed filters"
+#, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
-msgstr "Sylpheed süzgeçleri"
+msgstr "Sylpheed Süzgeçleri"
 
 #: filter/kmfilterdialog.cpp:114
-#, fuzzy, kde-format
-#| msgid "Procmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
-msgstr "Procmail süzgeçleri"
+msgstr "Procmail Süzgeçleri"
 
 #: filter/kmfilterdialog.cpp:118
-#, fuzzy, kde-format
-#| msgid "Balsa filters"
+#, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
-msgstr "Balsa süzgeçleri"
+msgstr "Balsa Süzgeçleri"
 
 #: filter/kmfilterdialog.cpp:122
-#, fuzzy, kde-format
-#| msgid "Claws Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
-msgstr "Claws Posta süzgeçleri"
+msgstr "Claws Posta Süzgeçleri"
 
 #: filter/kmfilterdialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "Icedove Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
-msgstr "Icedove E-posta süzgeçleri"
+msgstr "Icedove E-posta Süzgeçleri"
 
 #: filter/kmfilterdialog.cpp:132
-#, fuzzy, kde-format
-#| msgid "Gmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
-msgstr "GMail süzgeçleri"
+msgstr "Gmail Süzgeçleri"
 
 #: filter/kmfilterdialog.cpp:140
-#, fuzzy, kde-format
-#| msgid "Sieve script"
+#, kde-format
 msgctxt "@action"
 msgid "Sieve script"
-msgstr "Sieve betiği"
+msgstr "Sieve Betiği"
 
 #: filter/kmfilterdialog.cpp:162
 #, kde-format
@@ -1714,8 +1704,7 @@ msgid "Please select a folder"
 msgstr "Lütfen bir klasör seçin"
 
 #: folder/folderselectiondialog.cpp:64
-#, fuzzy, kde-format
-#| msgid "&New Subfolder…"
+#, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "Ye&ni Alt Klasör…"
@@ -1808,15 +1797,13 @@ msgid "Go to Next Unread Message"
 msgstr "Sonraki Okunmamış İletiye Git"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, fuzzy, kde-format
-#| msgid "Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Git"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, fuzzy, kde-format
-#| msgid "Do Not Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Gitme"
@@ -2613,53 +2600,46 @@ msgid "Snippet %1"
 msgstr "Kod Parçacığı: %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, fuzzy, kde-format
-#| msgid "Add Snippet…"
+#, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "Kod Parçacığı Ekle…"
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgid "Edit Snippet…"
+#, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "Kod Parçacığını Düzenle…"
 
 #: snippets/snippetsmanager.cpp:562
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Kod Parçacığını Kaldır"
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
-#| msgid "Add Group…"
+#, kde-format
 msgctxt "@action"
 msgid "Add Group…"
 msgstr "Grup Ekle…"
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgid "Rename Group…"
+#, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
 msgstr "Grubu Yeniden Adlandır…"
 
 #: snippets/snippetsmanager.cpp:569
-#, fuzzy, kde-format
-#| msgid "Remove Group"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Group"
 msgstr "Grubu Kaldır"
 
 #: snippets/snippetsmanager.cpp:572
-#, fuzzy, kde-format
-#| msgid "Insert Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
-msgstr "Kod Parçacığı İliştir"
+msgstr "Kod Parçacığı Ekle"
 
 #: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
 #, kde-format
@@ -2672,8 +2652,7 @@ msgid "Update snippet"
 msgstr "Kırpmayı güncelle"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, fuzzy, kde-format
-#| msgid "Update"
+#, kde-format
 msgctxt "@action:button"
 msgid "Update"
 msgstr "Güncelle"
@@ -2868,15 +2847,13 @@ msgid "Mode"
 msgstr "Kip"
 
 #: widgets/favoritecollectionwidget.cpp:113
-#, fuzzy, kde-format
-#| msgid "List Mode"
+#, kde-format
 msgctxt "@action"
 msgid "List Mode"
 msgstr "Liste Kipi"
 
 #: widgets/favoritecollectionwidget.cpp:123
-#, fuzzy, kde-format
-#| msgid "Icon Mode"
+#, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Simge Kipi"
@@ -2923,15 +2900,13 @@ msgid "Transport:"
 msgstr "Taşıma:"
 
 #: widgets/redirectdialog.cpp:158
-#, fuzzy, kde-format
-#| msgid "&Send Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "&Şimdi Gönder"
 
 #: widgets/redirectdialog.cpp:159
-#, fuzzy, kde-format
-#| msgid "Send &Later"
+#, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "&Sonra Gönder"
