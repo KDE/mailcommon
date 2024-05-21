@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-17 00:39+0000\n"
-"PO-Revision-Date: 2024-05-15 10:35+0200\n"
+"PO-Revision-Date: 2024-05-20 15:00+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -210,7 +210,7 @@ msgstr ""
 "Selige le identitate de mittente que sia usate quando on scribe nove e-posta "
 "o on responde a e-posta in iste dossier. Isto significa que si tu es in un "
 "de tu dossier de travalio, tu pote facer que KMail usa le correspondente "
-"adresse de e-posta de mittente,signatura e claves de signatura o cryption "
+"adresse de e-posta de mittente,signatura e claves de signatura o cryptation "
 "automaticamente. Identitates pote esser configurate in le principal dialogo "
 "de configuration. (Preferentias-> Configura KMail)"
 
@@ -1722,8 +1722,7 @@ msgid "Please select a folder"
 msgstr "Pro favor selige un dossier"
 
 #: folder/folderselectiondialog.cpp:64
-#, fuzzy, kde-format
-#| msgid "&New Subfolder…"
+#, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "&Nove sub-dossier..."
@@ -1816,15 +1815,13 @@ msgid "Go to Next Unread Message"
 msgstr "Vade a proxime message non legite"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, fuzzy, kde-format
-#| msgid "Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Vade a"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, fuzzy, kde-format
-#| msgid "Do Not Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Non vade a"
@@ -2677,8 +2674,7 @@ msgid "Update snippet"
 msgstr "Actulisa fragmento"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, fuzzy, kde-format
-#| msgid "Update"
+#, kde-format
 msgctxt "@action:button"
 msgid "Update"
 msgstr "Actualisa"
@@ -2929,15 +2925,13 @@ msgid "Transport:"
 msgstr "Transporto:"
 
 #: widgets/redirectdialog.cpp:158
-#, fuzzy, kde-format
-#| msgid "&Send Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "&Invia Nunc"
 
 #: widgets/redirectdialog.cpp:159
-#, fuzzy, kde-format
-#| msgid "Send &Later"
+#, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "Invia p&lus tarde"
