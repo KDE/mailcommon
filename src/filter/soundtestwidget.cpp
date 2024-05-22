@@ -30,7 +30,7 @@ SoundTestWidget::SoundTestWidget(QWidget *parent)
     layout->setContentsMargins({});
 
     m_playButton->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-start")));
-    m_playButton->setToolTip(i18n("Play"));
+    m_playButton->setToolTip(i18nc("@info:tooltip", "Play"));
     layout->addWidget(m_playButton);
 
     layout->addWidget(m_urlRequester);
@@ -104,10 +104,10 @@ void SoundTestWidget::playSound()
         connect(m_player, &Phonon::MediaObject::stateChanged, this, [this](Phonon::State newState, Phonon::State) {
             if (newState == Phonon::PlayingState) {
                 m_playButton->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-pause")));
-                m_playButton->setToolTip(i18n("Pause"));
+                m_playButton->setToolTip(i18nc("@info:tooltip", "Pause"));
             } else {
                 m_playButton->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-start")));
-                m_playButton->setToolTip(i18n("Play"));
+                m_playButton->setToolTip(i18nc("@info:tooltip", "Play"));
             }
         });
     }

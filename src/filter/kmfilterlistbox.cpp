@@ -138,9 +138,9 @@ KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
 
     hbHBoxLayout->addWidget(mBtnRename);
     mBtnNew->setToolTip(i18nc("@action:button in filter list manipulator", "New"));
-    mBtnCopy->setToolTip(i18n("Copy"));
-    mBtnDelete->setToolTip(i18n("Delete"));
-    mBtnRename->setToolTip(i18n("Rename"));
+    mBtnCopy->setToolTip(i18nc("@info:tooltip", "Copy"));
+    mBtnDelete->setToolTip(i18nc("@info:tooltip", "Delete"));
+    mBtnRename->setToolTip(i18nc("@info:tooltip", "Rename"));
     mBtnNew->setWhatsThis(
         i18n("<qt><p>Click this button to create a new filter.</p>"
              "<p>The filter will be inserted just before the currently-"

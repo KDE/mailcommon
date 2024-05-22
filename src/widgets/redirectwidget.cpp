@@ -36,7 +36,7 @@ RedirectWidget::RedirectWidget(QWidget *parent)
 
     auto BtnTo = new QPushButton(this);
     BtnTo->setIcon(QIcon::fromTheme(QStringLiteral("help-contents")));
-    BtnTo->setToolTip(i18n("Use the Address-Selection Dialog"));
+    BtnTo->setToolTip(i18nc("@info:tooltip", "Use the Address-Selection Dialog"));
     BtnTo->setWhatsThis(
         i18n("This button opens a separate dialog "
              "where you can select recipients out "

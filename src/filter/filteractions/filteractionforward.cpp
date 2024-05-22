@@ -88,7 +88,7 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
     KLineEdit *lineEdit = addressRequester->lineEdit();
     lineEdit->setClearButtonEnabled(true);
     lineEdit->setTrapReturnKey(true);
-    lineEdit->setToolTip(i18n("The addressee to whom the message will be forwarded."));
+    lineEdit->setToolTip(i18nc("@info:tooltip", "The addressee to whom the message will be forwarded."));
     lineEdit->setWhatsThis(i18n("The filter will forward the message to the addressee entered here."));
 
     auto templateCombo = new KComboBox(addressAndTemplate);
@@ -107,7 +107,7 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
     }
 
     templateCombo->setEnabled(templateCombo->count() > 1);
-    templateCombo->setToolTip(i18n("The template used when forwarding"));
+    templateCombo->setToolTip(i18nc("@info:tooltip", "The template used when forwarding"));
     templateCombo->setWhatsThis(i18n("Set the forwarding template that will be used with this filter."));
     connect(templateCombo, &KComboBox::currentIndexChanged, this, &FilterActionForward::filterActionModified);
     connect(addressRequester, &Akonadi::EmailAddressRequester::textChanged, this, &FilterActionForward::filterActionModified);
