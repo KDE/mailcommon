@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-17 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2023-10-08 23:39+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -600,7 +600,9 @@ msgid "Forward To"
 msgstr "다음으로 전달"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The addressee to whom the message will be forwarded."
+msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "메시지를 전달할 메일 주소입니다."
 
@@ -616,7 +618,9 @@ msgid "Default Template"
 msgstr "기본 템플릿"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The template used when forwarding"
+msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "전달할 때 사용할 템플릿"
 
@@ -881,7 +885,9 @@ msgid "Please select an action."
 msgstr "동작을 선택하십시오."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Help"
+msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "도움말"
 
@@ -1433,17 +1439,23 @@ msgid "New"
 msgstr "새로 만들기"
 
 #: filter/kmfilterlistbox.cpp:141
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "복사"
 
 #: filter/kmfilterlistbox.cpp:142
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "삭제"
 
 #: filter/kmfilterlistbox.cpp:143
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Rename"
+msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "이름 바꾸기"
 
@@ -1570,7 +1582,9 @@ msgid "Any action defined."
 msgstr "동작이 정의되었습니다."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Play"
+msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "재생"
 
@@ -1581,7 +1595,9 @@ msgid "Select Sound File"
 msgstr "소리 파일 선택"
 
 #: filter/soundtestwidget.cpp:107
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Pause"
+msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr "일시 정지"
 
@@ -2058,8 +2074,15 @@ msgstr "날짜"
 msgid "Encryption"
 msgstr "암호화"
 
-#: search/searchpatternedit.cpp:144 search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:144
 #, kde-format
+msgid "Choose or type your own criteria"
+msgstr "조건을 선택하거나 입력하십시오"
+
+#: search/searchpatternedit.cpp:145
+#, fuzzy, kde-format
+#| msgid "Choose or type your own criteria"
+msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "조건을 선택하거나 입력하십시오"
 
@@ -2488,8 +2511,9 @@ msgid "Click on button for selecting attachment file"
 msgstr "첨부 파일을 선택하려면 단추를 클릭하십시오"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Attachments"
+msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "첨부 파일 선택"
 
@@ -2524,6 +2548,11 @@ msgstr "첨부 파일 선택"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "선택한 첨부 파일을 삭제하시겠습니까?"
+
+#: snippets/snippetselectattachmentwidget.cpp:52
+#, kde-format
+msgid "Select Attachments"
+msgstr "첨부 파일 선택"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2922,7 +2951,9 @@ msgid "Empty Redirection Address"
 msgstr "빈 전달 주소"
 
 #: widgets/redirectwidget.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use the Address-Selection Dialog"
+msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "주소 선택 대화 상자 사용"
 

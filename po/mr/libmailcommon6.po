@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-17 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2013-03-28 14:37+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -584,6 +584,7 @@ msgstr ""
 
 #: filter/filteractions/filteractionforward.cpp:91
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr ""
 
@@ -600,6 +601,7 @@ msgstr ""
 
 #: filter/filteractions/filteractionforward.cpp:110
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr ""
 
@@ -865,6 +867,7 @@ msgstr ""
 
 #: filter/filteractions/filteractionwithurl.cpp:22
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Help"
 msgstr ""
 
@@ -1386,18 +1389,23 @@ msgid "New"
 msgstr "नवीन"
 
 #: filter/kmfilterlistbox.cpp:141
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "प्रत करा"
 
 #: filter/kmfilterlistbox.cpp:142
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "काढून टाका"
 
 #: filter/kmfilterlistbox.cpp:143
 #, fuzzy, kde-format
 #| msgid "Rename..."
+msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "नाव बदला..."
 
@@ -1508,6 +1516,7 @@ msgstr ""
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Play"
 msgstr ""
 
@@ -1520,6 +1529,7 @@ msgstr "फाईल निवडा :"
 
 #: filter/soundtestwidget.cpp:107
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr ""
 
@@ -2003,8 +2013,14 @@ msgstr "दिनांक"
 msgid "Encryption"
 msgstr ""
 
-#: search/searchpatternedit.cpp:144 search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:144
 #, kde-format
+msgid "Choose or type your own criteria"
+msgstr ""
+
+#: search/searchpatternedit.cpp:145
+#, kde-format
+msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr ""
 
@@ -2440,10 +2456,11 @@ msgid "Click on button for selecting attachment file"
 msgstr ""
 
 #: snippets/snippetattachmentwidget.cpp:32
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@info:tooltip"
 msgid "Select Attachments"
-msgstr ""
+msgstr "सर्व निवडा"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
@@ -2476,6 +2493,11 @@ msgstr ""
 #: snippets/snippetselectattachmentwidget.cpp:45
 #, kde-format
 msgid "Do you want to delete selected attachment?"
+msgstr ""
+
+#: snippets/snippetselectattachmentwidget.cpp:52
+#, kde-format
+msgid "Select Attachments"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:154
@@ -2867,6 +2889,7 @@ msgstr ""
 
 #: widgets/redirectwidget.cpp:39
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr ""
 

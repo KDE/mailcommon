@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-17 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2023-10-12 16:43+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -591,7 +591,9 @@ msgid "Forward To"
 msgstr "Předat dál na"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The addressee to whom the message will be forwarded."
+msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Adresát, kterému bude zpráva přeposlána."
 
@@ -607,7 +609,9 @@ msgid "Default Template"
 msgstr "Výchozí šablona"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The template used when forwarding"
+msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Šablona zprávy pro přeposlání"
 
@@ -872,7 +876,9 @@ msgid "Please select an action."
 msgstr "Prosím vyberte činnost."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Help"
+msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Nápověda"
 
@@ -1393,17 +1399,23 @@ msgid "New"
 msgstr "Nový"
 
 #: filter/kmfilterlistbox.cpp:141
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Kopírovat"
 
 #: filter/kmfilterlistbox.cpp:142
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Smazat"
 
 #: filter/kmfilterlistbox.cpp:143
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Rename"
+msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Přejmenovat"
 
@@ -1533,7 +1545,9 @@ msgid "Any action defined."
 msgstr ""
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Play"
+msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Přehrát"
 
@@ -1544,7 +1558,9 @@ msgid "Select Sound File"
 msgstr "Vyberte zvukový soubor"
 
 #: filter/soundtestwidget.cpp:107
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Pause"
+msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr "Pozastavit"
 
@@ -2023,8 +2039,14 @@ msgstr "Datum"
 msgid "Encryption"
 msgstr "Šifrování"
 
-#: search/searchpatternedit.cpp:144 search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:144
 #, kde-format
+msgid "Choose or type your own criteria"
+msgstr ""
+
+#: search/searchpatternedit.cpp:145
+#, kde-format
+msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr ""
 
@@ -2455,8 +2477,9 @@ msgid "Click on button for selecting attachment file"
 msgstr "Kliknutím na toto tlačítko vyberete soubor přílohy"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Attachments"
+msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Vyberte přílohy"
 
@@ -2491,6 +2514,11 @@ msgstr "Vyberte přílohy"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Přejete si smazat smazat vybranou přílohu?"
+
+#: snippets/snippetselectattachmentwidget.cpp:52
+#, kde-format
+msgid "Select Attachments"
+msgstr "Vyberte přílohy"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2871,7 +2899,9 @@ msgid "Empty Redirection Address"
 msgstr "Prázdná adresa přesměrování"
 
 #: widgets/redirectwidget.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use the Address-Selection Dialog"
+msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "Použít dialog pro výběr adres"
 

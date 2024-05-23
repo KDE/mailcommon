@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-17 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2024-05-17 16:46+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian\n"
@@ -634,7 +634,9 @@ msgid "Forward To"
 msgstr "Переслати до"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The addressee to whom the message will be forwarded."
+msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Отримувач, якому буде спрямовано повідомлення."
 
@@ -650,7 +652,9 @@ msgid "Default Template"
 msgstr "Типовий шаблон"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The template used when forwarding"
+msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Шаблон, який буде використано для пересилання"
 
@@ -915,7 +919,9 @@ msgid "Please select an action."
 msgstr "Будь ласка, виберіть дію."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Help"
+msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Довідка"
 
@@ -1461,17 +1467,23 @@ msgid "New"
 msgstr "Створити"
 
 #: filter/kmfilterlistbox.cpp:141
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Копіювати"
 
 #: filter/kmfilterlistbox.cpp:142
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Вилучити"
 
 #: filter/kmfilterlistbox.cpp:143
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Rename"
+msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Перейменувати"
 
@@ -1601,7 +1613,9 @@ msgid "Any action defined."
 msgstr "Дію не визначено."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Play"
+msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Відтворити"
 
@@ -1612,7 +1626,9 @@ msgid "Select Sound File"
 msgstr "Вибір звукового файла"
 
 #: filter/soundtestwidget.cpp:107
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Pause"
+msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr "Призупинити"
 
@@ -2100,8 +2116,15 @@ msgstr "Дата"
 msgid "Encryption"
 msgstr "Шифрування"
 
-#: search/searchpatternedit.cpp:144 search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:144
 #, kde-format
+msgid "Choose or type your own criteria"
+msgstr "Виберіть або вкажіть ваші власні критерії"
+
+#: search/searchpatternedit.cpp:145
+#, fuzzy, kde-format
+#| msgid "Choose or type your own criteria"
+msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Виберіть або вкажіть ваші власні критерії"
 
@@ -2533,8 +2556,9 @@ msgid "Click on button for selecting attachment file"
 msgstr "Натисніть кнопку, щоб вибрати файл долучення"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Attachments"
+msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Виберіть долучення"
 
@@ -2569,6 +2593,11 @@ msgstr "Виберіть долучення"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Хочете вилучити позначене долучення?"
+
+#: snippets/snippetselectattachmentwidget.cpp:52
+#, kde-format
+msgid "Select Attachments"
+msgstr "Виберіть долучення"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2956,7 +2985,9 @@ msgid "Empty Redirection Address"
 msgstr "Порожня адреса переспрямування"
 
 #: widgets/redirectwidget.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use the Address-Selection Dialog"
+msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "Скористатись діалоговим вікном для вибору адрес"
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-17 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2024-05-17 17:14+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -625,7 +625,9 @@ msgid "Forward To"
 msgstr "Препращане до"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The addressee to whom the message will be forwarded."
+msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Адресатът, на когото ще бъде препратено съобщението."
 
@@ -641,7 +643,9 @@ msgid "Default Template"
 msgstr "Шаблон по подразбиране"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The template used when forwarding"
+msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Шаблонът, използван при препращане"
 
@@ -906,7 +910,9 @@ msgid "Please select an action."
 msgstr "Моля, изберете действие."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Help"
+msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Помощ"
 
@@ -1457,17 +1463,23 @@ msgid "New"
 msgstr "Ново"
 
 #: filter/kmfilterlistbox.cpp:141
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Копиране"
 
 #: filter/kmfilterlistbox.cpp:142
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Изтриване"
 
 #: filter/kmfilterlistbox.cpp:143
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Rename"
+msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Преименуване"
 
@@ -1602,7 +1614,9 @@ msgid "Any action defined."
 msgstr "Всяко действие, дефинирано."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Play"
+msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Старт"
 
@@ -1613,7 +1627,9 @@ msgid "Select Sound File"
 msgstr "Избиране на звуков файл"
 
 #: filter/soundtestwidget.cpp:107
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Pause"
+msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr "Пауза"
 
@@ -2092,8 +2108,15 @@ msgstr "Дата"
 msgid "Encryption"
 msgstr "Криптиране"
 
-#: search/searchpatternedit.cpp:144 search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:144
 #, kde-format
+msgid "Choose or type your own criteria"
+msgstr "Изберете или въведете свои собствени критерии"
+
+#: search/searchpatternedit.cpp:145
+#, fuzzy, kde-format
+#| msgid "Choose or type your own criteria"
+msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Изберете или въведете свои собствени критерии"
 
@@ -2523,8 +2546,9 @@ msgid "Click on button for selecting attachment file"
 msgstr "Щракнете върху бутона за избор на прикачен файл"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Attachments"
+msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Избиране на прикачени файлове"
 
@@ -2559,6 +2583,11 @@ msgstr "Избиране на прикачени файлове"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Искате ли да изтриете избрания прикачен файл?"
+
+#: snippets/snippetselectattachmentwidget.cpp:52
+#, kde-format
+msgid "Select Attachments"
+msgstr "Избиране на прикачени файлове"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2946,7 +2975,9 @@ msgid "Empty Redirection Address"
 msgstr "Празен адрес за пренасочване"
 
 #: widgets/redirectwidget.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use the Address-Selection Dialog"
+msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "Използвайте диалоговия прозорец за избор на адрес"
 

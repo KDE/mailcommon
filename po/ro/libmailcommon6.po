@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-17 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2022-02-17 11:52+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -626,7 +626,9 @@ msgid "Forward To"
 msgstr "Înaintează către"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The addressee to whom the message will be forwarded."
+msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Destinatarul căruia îi va fi înaintat mesajul"
 
@@ -642,7 +644,9 @@ msgid "Default Template"
 msgstr "Șablon implicit"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The template used when forwarding"
+msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Șablonul utilizat la înaintare"
 
@@ -914,6 +918,7 @@ msgstr "Selectați o acțiune."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Help"
 msgstr ""
 
@@ -1471,18 +1476,23 @@ msgid "New"
 msgstr "Nou"
 
 #: filter/kmfilterlistbox.cpp:141
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Copiază"
 
 #: filter/kmfilterlistbox.cpp:142
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Șterge"
 
 #: filter/kmfilterlistbox.cpp:143
 #, fuzzy, kde-format
 #| msgid "Rename..."
+msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Redenumire..."
 
@@ -1599,6 +1609,7 @@ msgstr "Creare dosar eșuată"
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Play"
 msgstr ""
 
@@ -1611,6 +1622,7 @@ msgstr "Selectează fișier de sunet"
 
 #: filter/soundtestwidget.cpp:107
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr ""
 
@@ -2110,8 +2122,15 @@ msgstr "Dată"
 msgid "Encryption"
 msgstr "Criptare"
 
-#: search/searchpatternedit.cpp:144 search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:144
 #, kde-format
+msgid "Choose or type your own criteria"
+msgstr "Alegeți sau tastați propriul criteriu"
+
+#: search/searchpatternedit.cpp:145
+#, fuzzy, kde-format
+#| msgid "Choose or type your own criteria"
+msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Alegeți sau tastați propriul criteriu"
 
@@ -2558,8 +2577,9 @@ msgid "Click on button for selecting attachment file"
 msgstr ""
 
 #: snippets/snippetattachmentwidget.cpp:32
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Attachments"
+msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Alegeți atașamentele"
 
@@ -2595,6 +2615,11 @@ msgstr "Alegeți atașamentele"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Doriți să ștergeți atașamentul ales?"
+
+#: snippets/snippetselectattachmentwidget.cpp:52
+#, kde-format
+msgid "Select Attachments"
+msgstr "Alegeți atașamentele"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -3001,7 +3026,9 @@ msgid "Empty Redirection Address"
 msgstr "Adresă de redirectare goală"
 
 #: widgets/redirectwidget.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use the Address-Selection Dialog"
+msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "Folosește dialogul de alegere a adresei"
 

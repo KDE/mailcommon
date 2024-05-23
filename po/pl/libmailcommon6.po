@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-17 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2024-05-12 08:58+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -624,7 +624,9 @@ msgid "Forward To"
 msgstr "Przekaż do"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The addressee to whom the message will be forwarded."
+msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Odbiorca przekazywanej wiadomości."
 
@@ -640,7 +642,9 @@ msgid "Default Template"
 msgstr "Domyślny wzorzec"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The template used when forwarding"
+msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Szablon używany do przekazywania wiadomości"
 
@@ -905,7 +909,9 @@ msgid "Please select an action."
 msgstr "Wybierz działanie."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Help"
+msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Pomoc"
 
@@ -1467,17 +1473,22 @@ msgid "New"
 msgstr "Nowy"
 
 #: filter/kmfilterlistbox.cpp:141
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Skopiuj"
 
 #: filter/kmfilterlistbox.cpp:142
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Usuń"
 
 #: filter/kmfilterlistbox.cpp:143
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Rename"
+msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Zmień nazwę"
 
@@ -1607,7 +1618,9 @@ msgid "Any action defined."
 msgstr "Dowolne określone działanie."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Play"
+msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Odtwórz"
 
@@ -1618,7 +1631,9 @@ msgid "Select Sound File"
 msgstr "Wybierz plik dźwiękowy"
 
 #: filter/soundtestwidget.cpp:107
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Pause"
+msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr "Wstrzymaj"
 
@@ -2112,8 +2127,15 @@ msgstr "Data"
 msgid "Encryption"
 msgstr "Szyfrowanie"
 
-#: search/searchpatternedit.cpp:144 search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:144
 #, kde-format
+msgid "Choose or type your own criteria"
+msgstr "Wybierz lub wpisz swoje własne warunki"
+
+#: search/searchpatternedit.cpp:145
+#, fuzzy, kde-format
+#| msgid "Choose or type your own criteria"
+msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Wybierz lub wpisz swoje własne warunki"
 
@@ -2544,8 +2566,9 @@ msgid "Click on button for selecting attachment file"
 msgstr "Naciśnij przycisk, aby wybrać załącznik"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Attachments"
+msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Wybierz załączniki"
 
@@ -2580,6 +2603,11 @@ msgstr "Wybierz załączniki"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Czy chcesz usunąć wybrany załącznik?"
+
+#: snippets/snippetselectattachmentwidget.cpp:52
+#, kde-format
+msgid "Select Attachments"
+msgstr "Wybierz załączniki"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2979,7 +3007,9 @@ msgid "Empty Redirection Address"
 msgstr "Pusty adres przekierowania"
 
 #: widgets/redirectwidget.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use the Address-Selection Dialog"
+msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "Użyj okna dialogowego wyboru adresów"
 
@@ -2991,6 +3021,9 @@ msgid ""
 msgstr ""
 "Ten przycisk otwiera osobne okno dialogowe, w którym można wybrać odbiorców "
 "ze zbioru wszystkich dostępnych adresów."
+
+#~ msgid "Delete"
+#~ msgstr "Usuń"
 
 #~ msgid "Add Tag..."
 #~ msgstr "Dodaj znacznik..."
@@ -10561,10 +10594,6 @@ msgstr ""
 #~ msgctxt "@info:tooltip"
 #~ msgid "Download Later"
 #~ msgstr "Pobierz później"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Delete"
-#~ msgstr "Usuń"
 
 #~ msgctxt "@info"
 #~ msgid ""

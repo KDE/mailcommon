@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-17 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2012-01-28 16:25-0800\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -609,6 +609,7 @@ msgstr "転送先"
 
 #: filter/filteractions/filteractionforward.cpp:91
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr ""
 
@@ -624,7 +625,9 @@ msgid "Default Template"
 msgstr "デフォルトのテンプレート"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The template used when forwarding"
+msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "転送用テンプレート"
 
@@ -902,6 +905,7 @@ msgstr "アクションを選択してください"
 
 #: filter/filteractions/filteractionwithurl.cpp:22
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Help"
 msgstr ""
 
@@ -1452,6 +1456,7 @@ msgstr "新規"
 
 #: filter/kmfilterlistbox.cpp:141
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr ""
 
@@ -1459,12 +1464,14 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgctxt "message status"
 #| msgid "Deleted"
+msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "削除済み"
 
 #: filter/kmfilterlistbox.cpp:143
 #, fuzzy, kde-format
 #| msgid "Rename Group..."
+msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "グループの名前変更..."
 
@@ -1583,6 +1590,7 @@ msgstr "フォルダの作成に失敗"
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Play"
 msgstr ""
 
@@ -1595,6 +1603,7 @@ msgstr "フィルタを選択"
 
 #: filter/soundtestwidget.cpp:107
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr ""
 
@@ -2089,8 +2098,14 @@ msgstr ""
 msgid "Encryption"
 msgstr ""
 
-#: search/searchpatternedit.cpp:144 search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:144
 #, kde-format
+msgid "Choose or type your own criteria"
+msgstr ""
+
+#: search/searchpatternedit.cpp:145
+#, kde-format
+msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr ""
 
@@ -2527,9 +2542,9 @@ msgid "Click on button for selecting attachment file"
 msgstr ""
 
 #: snippets/snippetattachmentwidget.cpp:32
-#: snippets/snippetselectattachmentwidget.cpp:52
 #, fuzzy, kde-format
 #| msgid "Select All"
+msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "すべて選択"
 
@@ -2569,6 +2584,12 @@ msgstr "すべて選択"
 #| msgid "Do you really want to remove filter <b>%1</b>?"
 msgid "Do you want to delete selected attachment?"
 msgstr "本当にフィルタ %1 を削除しますか？"
+
+#: snippets/snippetselectattachmentwidget.cpp:52
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgid "Select Attachments"
+msgstr "すべて選択"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2971,6 +2992,7 @@ msgstr ""
 
 #: widgets/redirectwidget.cpp:39
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr ""
 

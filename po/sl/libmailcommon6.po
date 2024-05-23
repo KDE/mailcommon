@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-17 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2024-05-17 07:33+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -619,7 +619,9 @@ msgid "Forward To"
 msgstr "Posreduj"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The addressee to whom the message will be forwarded."
+msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Prejemnik, kateremu bo posredovano sporočilo."
 
@@ -635,7 +637,9 @@ msgid "Default Template"
 msgstr "Privzeta predloga"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The template used when forwarding"
+msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Predloga za posredovanje"
 
@@ -900,7 +904,9 @@ msgid "Please select an action."
 msgstr "Izberite dejanje."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Help"
+msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Pomoč"
 
@@ -1446,17 +1452,23 @@ msgid "New"
 msgstr "Nov"
 
 #: filter/kmfilterlistbox.cpp:141
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Kopiraj"
 
 #: filter/kmfilterlistbox.cpp:142
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Izbriši"
 
 #: filter/kmfilterlistbox.cpp:143
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Rename"
+msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Preimenuj"
 
@@ -1586,7 +1598,9 @@ msgid "Any action defined."
 msgstr "Katerokoli dejanje ni določeno."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Play"
+msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Predvajaj"
 
@@ -1597,7 +1611,9 @@ msgid "Select Sound File"
 msgstr "Izberite zvočno datoteko"
 
 #: filter/soundtestwidget.cpp:107
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Pause"
+msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr "Premor"
 
@@ -2084,8 +2100,15 @@ msgstr "Datum"
 msgid "Encryption"
 msgstr "Šifiranje"
 
-#: search/searchpatternedit.cpp:144 search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:144
 #, kde-format
+msgid "Choose or type your own criteria"
+msgstr "Izberite ali vnesite lastne pogoje"
+
+#: search/searchpatternedit.cpp:145
+#, fuzzy, kde-format
+#| msgid "Choose or type your own criteria"
+msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Izberite ali vnesite lastne pogoje"
 
@@ -2517,8 +2540,9 @@ msgid "Click on button for selecting attachment file"
 msgstr "Kliknite na gumb za izbiro datoteke kot priloge"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Attachments"
+msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Izbira prilog"
 
@@ -2553,6 +2577,11 @@ msgstr "Odstranitev prilog"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Ali želite izbrisati izbrano prilogo?"
+
+#: snippets/snippetselectattachmentwidget.cpp:52
+#, kde-format
+msgid "Select Attachments"
+msgstr "Izbira prilog"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2939,7 +2968,9 @@ msgid "Empty Redirection Address"
 msgstr "Prazen naslov preusmeritve"
 
 #: widgets/redirectwidget.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use the Address-Selection Dialog"
+msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "Uporabi okno za izbiranje naslovov"
 

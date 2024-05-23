@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-17 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2024-05-17 21:28+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -618,7 +618,9 @@ msgid "Forward To"
 msgstr "Reenviar a"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The addressee to whom the message will be forwarded."
+msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "O destinatario ao que se lle reenvía a mensaxe."
 
@@ -634,7 +636,9 @@ msgid "Default Template"
 msgstr "Modelo predeterminado"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The template used when forwarding"
+msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "O modelo para reenvíos."
 
@@ -899,7 +903,9 @@ msgid "Please select an action."
 msgstr "Escolla unha acción."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Help"
+msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Axuda"
 
@@ -1448,17 +1454,23 @@ msgid "New"
 msgstr "Novo"
 
 #: filter/kmfilterlistbox.cpp:141
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Copiar"
 
 #: filter/kmfilterlistbox.cpp:142
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Eliminar"
 
 #: filter/kmfilterlistbox.cpp:143
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Rename"
+msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Renomear"
 
@@ -1588,7 +1600,9 @@ msgid "Any action defined."
 msgstr "Calquera acción definida."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Play"
+msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Reproducir"
 
@@ -1599,7 +1613,9 @@ msgid "Select Sound File"
 msgstr "Escoller un ficheiro de son"
 
 #: filter/soundtestwidget.cpp:107
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Pause"
+msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr "Pausar"
 
@@ -2081,8 +2097,15 @@ msgstr "Data"
 msgid "Encryption"
 msgstr "Cifrado"
 
-#: search/searchpatternedit.cpp:144 search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:144
 #, kde-format
+msgid "Choose or type your own criteria"
+msgstr "Escolla ou escriba o seu propio criterio."
+
+#: search/searchpatternedit.cpp:145
+#, fuzzy, kde-format
+#| msgid "Choose or type your own criteria"
+msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Escolla ou escriba o seu propio criterio."
 
@@ -2514,8 +2537,9 @@ msgid "Click on button for selecting attachment file"
 msgstr "Prema o botón para seleccionar o ficheiro anexo"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Attachments"
+msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Seleccionar os anexos"
 
@@ -2550,6 +2574,11 @@ msgstr "Seleccionar os anexos"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Quere eliminar o anexo seleccionado?"
+
+#: snippets/snippetselectattachmentwidget.cpp:52
+#, kde-format
+msgid "Select Attachments"
+msgstr "Seleccionar os anexos"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2936,7 +2965,9 @@ msgid "Empty Redirection Address"
 msgstr "O enderezo de encamiñamento está baleiro"
 
 #: widgets/redirectwidget.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use the Address-Selection Dialog"
+msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "Usar o diálogo de selección de enderezos"
 
