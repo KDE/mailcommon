@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-23 00:39+0000\n"
-"PO-Revision-Date: 2024-05-17 07:33+0200\n"
+"PO-Revision-Date: 2024-05-23 09:37+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -619,11 +619,10 @@ msgid "Forward To"
 msgstr "Posreduj"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, fuzzy, kde-format
-#| msgid "The addressee to whom the message will be forwarded."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
-msgstr "Prejemnik, kateremu bo posredovano sporočilo."
+msgstr "Prejemnik komur bo sporočilo posredovano."
 
 #: filter/filteractions/filteractionforward.cpp:92
 #, kde-format
@@ -637,11 +636,10 @@ msgid "Default Template"
 msgstr "Privzeta predloga"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, fuzzy, kde-format
-#| msgid "The template used when forwarding"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
-msgstr "Predloga za posredovanje"
+msgstr "Predloga uporabljena za posredovanja"
 
 #: filter/filteractions/filteractionforward.cpp:111
 #, kde-format
@@ -904,8 +902,7 @@ msgid "Please select an action."
 msgstr "Izberite dejanje."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, fuzzy, kde-format
-#| msgid "Help"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Pomoč"
@@ -1452,22 +1449,19 @@ msgid "New"
 msgstr "Nov"
 
 #: filter/kmfilterlistbox.cpp:141
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Kopiraj"
 
 #: filter/kmfilterlistbox.cpp:142
-#, fuzzy, kde-format
-#| msgid "Delete"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Izbriši"
 
 #: filter/kmfilterlistbox.cpp:143
-#, fuzzy, kde-format
-#| msgid "Rename"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Preimenuj"
@@ -1598,8 +1592,7 @@ msgid "Any action defined."
 msgstr "Katerokoli dejanje ni določeno."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Predvajaj"
@@ -1611,8 +1604,7 @@ msgid "Select Sound File"
 msgstr "Izberite zvočno datoteko"
 
 #: filter/soundtestwidget.cpp:107
-#, fuzzy, kde-format
-#| msgid "Pause"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr "Premor"
@@ -2106,11 +2098,10 @@ msgid "Choose or type your own criteria"
 msgstr "Izberite ali vnesite lastne pogoje"
 
 #: search/searchpatternedit.cpp:145
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
-msgstr "Izberite ali vnesite lastne pogoje"
+msgstr "Izberite ali vnesite vaše lastne kriterije"
 
 #: search/searchpatternedit.cpp:580
 #, kde-format
@@ -2540,11 +2531,10 @@ msgid "Click on button for selecting attachment file"
 msgstr "Kliknite na gumb za izbiro datoteke kot priloge"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Attachments"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
-msgstr "Izbira prilog"
+msgstr "Izberite priloge"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
@@ -2968,11 +2958,10 @@ msgid "Empty Redirection Address"
 msgstr "Prazen naslov preusmeritve"
 
 #: widgets/redirectwidget.cpp:39
-#, fuzzy, kde-format
-#| msgid "Use the Address-Selection Dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
-msgstr "Uporabi okno za izbiranje naslovov"
+msgstr "Uporabi pogovorno okno izbiranja naslovov"
 
 #: widgets/redirectwidget.cpp:41
 #, kde-format

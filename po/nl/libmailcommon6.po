@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-23 00:39+0000\n"
-"PO-Revision-Date: 2024-05-17 10:31+0200\n"
+"PO-Revision-Date: 2024-05-23 10:23+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -625,8 +625,7 @@ msgid "Forward To"
 msgstr "Doorsturen naar"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, fuzzy, kde-format
-#| msgid "The addressee to whom the message will be forwarded."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "De geadresseerde aan wie het bericht wordt doorgestuurd."
@@ -644,8 +643,7 @@ msgid "Default Template"
 msgstr "Standaard sjabloon"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, fuzzy, kde-format
-#| msgid "The template used when forwarding"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Het gebruikte sjabloon voor doorsturen"
@@ -911,8 +909,7 @@ msgid "Please select an action."
 msgstr "Selecteer een actie."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, fuzzy, kde-format
-#| msgid "Help"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Help"
@@ -1464,22 +1461,19 @@ msgid "New"
 msgstr "Nieuw"
 
 #: filter/kmfilterlistbox.cpp:141
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Kopiëren"
 
 #: filter/kmfilterlistbox.cpp:142
-#, fuzzy, kde-format
-#| msgid "Delete"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Verwijderen"
 
 #: filter/kmfilterlistbox.cpp:143
-#, fuzzy, kde-format
-#| msgid "Rename"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Hernoemen"
@@ -1613,8 +1607,7 @@ msgid "Any action defined."
 msgstr "Elke gedefinieerde actie."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Afspelen"
@@ -1626,8 +1619,7 @@ msgid "Select Sound File"
 msgstr "Geluidsbestand selecteren"
 
 #: filter/soundtestwidget.cpp:107
-#, fuzzy, kde-format
-#| msgid "Pause"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr "Pauzeren"
@@ -2113,8 +2105,7 @@ msgid "Choose or type your own criteria"
 msgstr "Kies of type uw eigen criteria"
 
 #: search/searchpatternedit.cpp:145
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Kies of type uw eigen criteria"
@@ -2545,8 +2536,7 @@ msgid "Click on button for selecting attachment file"
 msgstr "Op knop drukken om bestand als bijlage te selecteren"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Attachments"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Bijlagen selecteren"
@@ -2976,8 +2966,7 @@ msgid "Empty Redirection Address"
 msgstr "Omleidadres leeg maken"
 
 #: widgets/redirectwidget.cpp:39
-#, fuzzy, kde-format
-#| msgid "Use the Address-Selection Dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "Gebruik de dialoog Adresselectie"
