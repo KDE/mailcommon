@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-23 00:39+0000\n"
-"PO-Revision-Date: 2024-05-17 04:51+0200\n"
+"PO-Revision-Date: 2024-05-24 16:36+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -619,8 +619,7 @@ msgid "Forward To"
 msgstr "გადაგზავნა"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, fuzzy, kde-format
-#| msgid "The addressee to whom the message will be forwarded."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "მიმღები, ვისთანაც შეტყობინება გადაიგზავნება."
@@ -637,8 +636,7 @@ msgid "Default Template"
 msgstr "ნაგულისხმევი შაბლონი"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, fuzzy, kde-format
-#| msgid "The template used when forwarding"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "გადაგზავნისას გამოყენებული ნიმუში"
@@ -905,8 +903,7 @@ msgid "Please select an action."
 msgstr "აირჩიეთ ქმედება."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, fuzzy, kde-format
-#| msgid "Help"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "დახმარება"
@@ -1459,22 +1456,19 @@ msgid "New"
 msgstr "ახალი"
 
 #: filter/kmfilterlistbox.cpp:141
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "კოპირება"
 
 #: filter/kmfilterlistbox.cpp:142
-#, fuzzy, kde-format
-#| msgid "Delete"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "წაშლა"
 
 #: filter/kmfilterlistbox.cpp:143
-#, fuzzy, kde-format
-#| msgid "Rename"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "გადარქმევა"
@@ -1605,8 +1599,7 @@ msgid "Any action defined."
 msgstr "ნებისმიერი აღწერილი ქმედება."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "დაკვრა"
@@ -1618,8 +1611,7 @@ msgid "Select Sound File"
 msgstr "ხმოვანი ფაილის არჩევა"
 
 #: filter/soundtestwidget.cpp:107
-#, fuzzy, kde-format
-#| msgid "Pause"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr "შეჩერება"
@@ -2106,8 +2098,7 @@ msgid "Choose or type your own criteria"
 msgstr "აირჩიეთ ან აკრიფეთ თქვენი პირობა"
 
 #: search/searchpatternedit.cpp:145
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "აირჩიეთ ან აკრიფეთ თქვენი პირობა"
@@ -2538,8 +2529,7 @@ msgid "Click on button for selecting attachment file"
 msgstr "მიმაგრებული ფაილის მოსანიშნად ამ ღილაკზე დააწკაპუნეთ"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Attachments"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "აირჩიეთ მიმაგრებული ფაილები"
@@ -2966,8 +2956,7 @@ msgid "Empty Redirection Address"
 msgstr "ცარიელი გადამისამართების მისამართი"
 
 #: widgets/redirectwidget.cpp:39
-#, fuzzy, kde-format
-#| msgid "Use the Address-Selection Dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "მისამართის-არჩევის დიალოდის გამოყენება"
