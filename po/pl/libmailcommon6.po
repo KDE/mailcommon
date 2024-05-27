@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-23 00:39+0000\n"
-"PO-Revision-Date: 2024-05-12 08:58+0200\n"
+"PO-Revision-Date: 2024-05-26 12:26+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -22,8 +22,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 23.08.5\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10"
+" || n%100>=20) ? 1 : 2);\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -624,7 +624,7 @@ msgid "Forward To"
 msgstr "Przekaż do"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "The addressee to whom the message will be forwarded."
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
@@ -642,7 +642,7 @@ msgid "Default Template"
 msgstr "Domyślny wzorzec"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "The template used when forwarding"
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
@@ -909,7 +909,7 @@ msgid "Please select an action."
 msgstr "Wybierz działanie."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Help"
 msgctxt "@info:tooltip"
 msgid "Help"
@@ -1091,70 +1091,70 @@ msgid "Convert to…"
 msgstr "Przekształć na…"
 
 #: filter/kmfilterdialog.cpp:98
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "KMail filters"
 msgctxt "@action"
 msgid "KMail filters"
 msgstr "Filtry KMail"
 
 #: filter/kmfilterdialog.cpp:102
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Thunderbird filters"
 msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Filtry Thunderbird"
 
 #: filter/kmfilterdialog.cpp:106
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Evolution filters"
 msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Filtry Evolution"
 
 #: filter/kmfilterdialog.cpp:110
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Sylpheed filters"
 msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Filtry Sylpheed"
 
 #: filter/kmfilterdialog.cpp:114
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Procmail filters"
 msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Filtry Procmail"
 
 #: filter/kmfilterdialog.cpp:118
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Balsa filters"
 msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Filtry Balsa"
 
 #: filter/kmfilterdialog.cpp:122
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Claws Mail filters"
 msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Filtry Poczty Claws"
 
 #: filter/kmfilterdialog.cpp:126
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Icedove Mail filters"
 msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Filtry Poczty Icedove"
 
 #: filter/kmfilterdialog.cpp:132
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Gmail filters"
 msgctxt "@action"
 msgid "Gmail filters"
 msgstr "Filtry Gmail"
 
 #: filter/kmfilterdialog.cpp:140
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Sieve script"
 msgctxt "@action"
 msgid "Sieve script"
@@ -1473,7 +1473,7 @@ msgid "New"
 msgstr "Nowy"
 
 #: filter/kmfilterlistbox.cpp:141
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Copy"
 msgctxt "@info:tooltip"
 msgid "Copy"
@@ -1486,7 +1486,7 @@ msgid "Delete"
 msgstr "Usuń"
 
 #: filter/kmfilterlistbox.cpp:143
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Rename"
 msgctxt "@info:tooltip"
 msgid "Rename"
@@ -1618,7 +1618,7 @@ msgid "Any action defined."
 msgstr "Dowolne określone działanie."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Play"
 msgctxt "@info:tooltip"
 msgid "Play"
@@ -1631,7 +1631,7 @@ msgid "Select Sound File"
 msgstr "Wybierz plik dźwiękowy"
 
 #: filter/soundtestwidget.cpp:107
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Pause"
 msgctxt "@info:tooltip"
 msgid "Pause"
@@ -1742,7 +1742,7 @@ msgid "Please select a folder"
 msgstr "Wybierz katalog"
 
 #: folder/folderselectiondialog.cpp:64
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "&New Subfolder…"
 msgctxt "@action:button"
 msgid "&New Subfolder…"
@@ -1838,14 +1838,14 @@ msgid "Go to Next Unread Message"
 msgstr "Przejdź do następnej nieprzeczytanej wiadomości"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Go To"
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Przejdź do"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Do Not Go To"
 msgctxt "@action:button"
 msgid "Do Not Go To"
@@ -2133,7 +2133,7 @@ msgid "Choose or type your own criteria"
 msgstr "Wybierz lub wpisz swoje własne warunki"
 
 #: search/searchpatternedit.cpp:145
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Choose or type your own criteria"
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
@@ -2566,7 +2566,7 @@ msgid "Click on button for selecting attachment file"
 msgstr "Naciśnij przycisk, aby wybrać załącznik"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Select Attachments"
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
@@ -2671,49 +2671,49 @@ msgid "Snippet %1"
 msgstr "Wstawka %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Add Snippet…"
 msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "Dodaj wstawkę…"
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Edit Snippet…"
 msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "Zmień wstawkę…"
 
 #: snippets/snippetsmanager.cpp:562
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Remove Snippet"
 msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Usuń wstawkę"
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Add Group…"
 msgctxt "@action"
 msgid "Add Group…"
 msgstr "Dodaj grupę…"
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Rename Group…"
 msgctxt "@action"
 msgid "Rename Group…"
-msgstr "Zmień nazwę grupy…"
+msgstr "Przemianuj grupę…"
 
 #: snippets/snippetsmanager.cpp:569
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Remove Group"
 msgctxt "@action"
 msgid "Remove Group"
 msgstr "Usuń grupę"
 
 #: snippets/snippetsmanager.cpp:572
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Insert Snippet"
 msgctxt "@action"
 msgid "Insert Snippet"
@@ -2730,7 +2730,7 @@ msgid "Update snippet"
 msgstr "Uaktualnij wstawkę"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Update"
 msgctxt "@action:button"
 msgid "Update"
@@ -2928,14 +2928,14 @@ msgid "Mode"
 msgstr "Tryb"
 
 #: widgets/favoritecollectionwidget.cpp:113
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "List Mode"
 msgctxt "@action"
 msgid "List Mode"
 msgstr "Tryb spisu"
 
 #: widgets/favoritecollectionwidget.cpp:123
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Icon Mode"
 msgctxt "@action"
 msgid "Icon Mode"
@@ -2983,14 +2983,14 @@ msgid "Transport:"
 msgstr "Usługa pocztowa:"
 
 #: widgets/redirectdialog.cpp:158
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "&Send Now"
 msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "Wyślij &teraz"
 
 #: widgets/redirectdialog.cpp:159
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Send &Later"
 msgctxt "@action:button"
 msgid "Send &Later"
@@ -3007,7 +3007,7 @@ msgid "Empty Redirection Address"
 msgstr "Pusty adres przekierowania"
 
 #: widgets/redirectwidget.cpp:39
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Use the Address-Selection Dialog"
 msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
@@ -15501,3 +15501,4 @@ msgstr ""
 
 #~ msgid "Message List - Date Field"
 #~ msgstr "Lista wiadomości - pole daty"
+
