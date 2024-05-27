@@ -113,7 +113,7 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
     headerCombo->setObjectName(QLatin1StringView("HeaderComboBox"));
     layout->addWidget(headerCombo, 0, 0, 2, 1, Qt::AlignVCenter);
 
-    auto label = new QLabel(i18n("with category"), widget);
+    auto label = new QLabel(i18nc("@label:textbox", "with category"), widget);
     label->setObjectName(QLatin1StringView("label_with_category"));
     layout->addWidget(label, 0, 1);
 
@@ -121,7 +121,7 @@ QWidget *FilterActionAddToAddressBook::createParamWidget(QWidget *parent) const
     categoryEdit->setObjectName(QLatin1StringView("CategoryEdit"));
     layout->addWidget(categoryEdit, 0, 2);
 
-    label = new QLabel(i18n("in address book"), widget);
+    label = new QLabel(i18nc("@label:textbox", "in address book"), widget);
     label->setObjectName(QLatin1StringView("label_in_addressbook"));
     layout->addWidget(label, 1, 1);
 

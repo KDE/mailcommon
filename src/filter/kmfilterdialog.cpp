@@ -179,7 +179,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     mPatternEdit = new MailCommon::SearchPatternEdit(page1, MailCommon::SearchPatternEdit::MatchAllMessages);
     vbl->addWidget(mPatternEdit, 0, Qt::AlignTop);
 
-    auto actionLabel = new QLabel(i18n("Filter actions:"), page1);
+    auto actionLabel = new QLabel(i18nc("@label:textbox", "Filter actions:"), page1);
     vbl->addWidget(actionLabel);
 
     mActionLister = new MailCommon::FilterActionWidgetLister(page1);
@@ -284,7 +284,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     vbl2->addWidget(mAdvOptsGroup, 0, Qt::AlignTop);
 
     auto applySpecificFiltersLayout = new QHBoxLayout;
-    auto lab = new QLabel(i18n("Run selected filter(s) on: "), this);
+    auto lab = new QLabel(i18nc("@label:textbox", "Run selected filter(s) on: "), this);
     applySpecificFiltersLayout->addWidget(lab);
     mFolderRequester = new MailCommon::FolderRequester(this);
     mFolderRequester->setNotAllowToCreateNewFolder(true);

@@ -66,7 +66,7 @@ void FilterActionWidget::FilterActionWidgetPrivate::setFilterAction(QWidget *wid
     if (widget) {
         mLayout->addWidget(widget, 1, 2);
     } else {
-        mLayout->addWidget(new QLabel(i18n("Please select an action."), q), 1, 2);
+        mLayout->addWidget(new QLabel(i18nc("@label:textbox", "Please select an action."), q), 1, 2);
     }
 }
 

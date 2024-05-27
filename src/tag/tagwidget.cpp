@@ -131,7 +131,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     settings->addWidget(d->mIconButton, 5, 1);
     connect(d->mIconButton, &KIconButton::iconChanged, this, &TagWidget::iconNameChanged);
 
-    auto iconlabel = new QLabel(i18n("Message tag &icon:"), this);
+    auto iconlabel = new QLabel(i18nc("@label:textbox", "Message tag &icon:"), this);
     iconlabel->setBuddy(d->mIconButton);
     settings->addWidget(iconlabel, 5, 0);
 
@@ -142,7 +142,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     // Sixth for shortcut
     d->mKeySequenceWidget = new KKeySequenceWidget(this);
     settings->addWidget(d->mKeySequenceWidget, 6, 1);
-    auto sclabel = new QLabel(i18n("Shortc&ut:"), this);
+    auto sclabel = new QLabel(i18nc("@label:textbox", "Shortc&ut:"), this);
     sclabel->setBuddy(d->mKeySequenceWidget);
     settings->addWidget(sclabel, 6, 0);
     if (!actionCollections.isEmpty()) {

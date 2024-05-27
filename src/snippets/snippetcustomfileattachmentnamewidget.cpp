@@ -26,7 +26,7 @@ SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWi
     lineEditLayout->setObjectName(QLatin1StringView("lineEditLayout"));
     lineEditLayout->setContentsMargins({});
 
-    auto label = new QLabel(i18n("Filename:"), this);
+    auto label = new QLabel(i18nc("@label:textbox", "Filename:"), this);
     label->setObjectName(QLatin1StringView("label"));
     lineEditLayout->addWidget(label);
 

@@ -73,7 +73,7 @@ QWidget *FilterActionAddHeader::createParamWidget(QWidget *parent) const
 
     layout->addWidget(comboBox, 0 /* stretch */);
 
-    auto label = new QLabel(i18n("With value:"), widget);
+    auto label = new QLabel(i18nc("@label:textbox", "With value:"), widget);
     label->setObjectName(QLatin1StringView("label_value"));
     label->setFixedWidth(label->sizeHint().width());
     layout->addWidget(label, 0);

@@ -38,12 +38,12 @@ FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(const Akonadi::
     setWindowTitle(i18nc("@title:window", "Select Folder"));
     auto mainLayout = new QVBoxLayout(this);
 
-    auto lab = new QLabel(i18n("Folder path was \"%1\".", argStr));
+    auto lab = new QLabel(i18nc("@label:textbox", "Folder path was \"%1\".", argStr));
     lab->setObjectName(QLatin1StringView("argumentlabel"));
     lab->setWordWrap(true);
     mainLayout->addWidget(lab);
     if (!list.isEmpty()) {
-        lab = new QLabel(i18n("The following folders can be used for this filter:"));
+        lab = new QLabel(i18nc("@label:textbox", "The following folders can be used for this filter:"));
         lab->setObjectName(QLatin1StringView("label"));
         lab->setWordWrap(true);
         mainLayout->addWidget(lab);

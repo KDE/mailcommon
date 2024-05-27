@@ -37,7 +37,7 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(const QMap<QUrl, QStr
     setWindowTitle(i18nc("@title:window", "Select Tag"));
     auto mainLayout = new QVBoxLayout(this);
 
-    auto label = new QLabel(i18n("Tag was \"%1\".", argsStr));
+    auto label = new QLabel(i18nc("@label:textbox", "Tag was \"%1\".", argsStr));
     label->setObjectName(QLatin1StringView("tagnamelabel"));
     mainLayout->addWidget(label);
 

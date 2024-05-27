@@ -107,7 +107,7 @@ QWidget *FilterActionRewriteHeader::createParamWidget(QWidget *parent) const
     comp->insertItems(mParameterList);
     comp->setCompletionMode(KCompletion::CompletionPopupAuto);
 
-    auto label = new QLabel(i18n("Replace:"), widget);
+    auto label = new QLabel(i18nc("@label:textbox", "Replace:"), widget);
     label->setObjectName(QLatin1StringView("label_replace"));
     label->setFixedWidth(label->sizeHint().width());
     layout->addWidget(label, 0);
@@ -118,7 +118,7 @@ QWidget *FilterActionRewriteHeader::createParamWidget(QWidget *parent) const
     regExpLineEdit->setObjectName(QLatin1StringView("search"));
     layout->addWidget(regExpLineEdit, 1);
 
-    label = new QLabel(i18n("With:"), widget);
+    label = new QLabel(i18nc("@label:textbox", "With:"), widget);
     label->setFixedWidth(label->sizeHint().width());
     label->setObjectName(QLatin1StringView("label_with"));
     layout->addWidget(label, 0);

@@ -51,7 +51,7 @@ QWidget *EncryptionWidgetHandler::createValueWidget(int number, QStackedWidget *
         return nullptr;
     }
 
-    auto lbl = new QLabel(i18n("encrypted"), valueStack);
+    auto lbl = new QLabel(i18nc("@label:textbox", "encrypted"), valueStack);
     lbl->setObjectName(QLatin1StringView("encryptionRuleValueLabel"));
     return lbl;
 }

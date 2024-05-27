@@ -75,7 +75,7 @@ FolderTreeWidget::FolderTreeWidget(QWidget *parent,
     auto lay = new QVBoxLayout(this);
     lay->setContentsMargins({});
 
-    d->label = new QLabel(i18n("You can start typing to filter the list of folders."), this);
+    d->label = new QLabel(i18nc("@label:textbox", "You can start typing to filter the list of folders."), this);
     lay->addWidget(d->label);
 
     d->filterFolderLineEdit = new QLineEdit(this);

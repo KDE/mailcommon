@@ -32,7 +32,7 @@ FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QStri
 
     auto mainLayout = new QVBoxLayout(this);
 
-    auto label = new QLabel(i18n("Sound file was \"%1\".", argStr));
+    auto label = new QLabel(i18nc("@label:textbox", "Sound file was \"%1\".", argStr));
     label->setObjectName(QLatin1StringView("oldlabel"));
     mainLayout->addWidget(label);
 
