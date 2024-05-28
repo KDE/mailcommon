@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
+"POT-Creation-Date: 2024-05-28 00:39+0000\n"
 "PO-Revision-Date: 2014-04-11 22:49+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -327,12 +327,16 @@ msgid "Select Folder"
 msgstr "Επιλογή φακέλου"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder path was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Η διαδρομή του φακέλου ήταν «%1»."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The following folders can be used for this filter:"
+msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Οι παρακάτω φάκελοι μπορούν να χρησιμοποιηθούν για αυτό το φίλτρο: "
 
@@ -376,7 +380,9 @@ msgid "Select sound"
 msgstr "Επιλογή ήχου"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sound file was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "Το αρχείο ήχου ήταν «%1»."
 
@@ -395,7 +401,9 @@ msgid "Select Tag"
 msgstr "Επιλογή ετικέτας"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Tag was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Η ετικέτα ήταν «%1»."
 
@@ -473,7 +481,9 @@ msgid "Add Header"
 msgstr "Προσθήκη κεφαλίδας"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "With value:"
+msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Με τιμή:"
 
@@ -532,12 +542,16 @@ msgid "KMail Filter"
 msgstr "Φίλτρο KMail"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "with category"
+msgctxt "@label:textbox"
 msgid "with category"
 msgstr "με κατηγορία"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "in address book"
+msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "στο βιβλίο διευθύνσεων"
 
@@ -767,12 +781,16 @@ msgid "Search string is empty."
 msgstr ""
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Replace:"
+msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Αντικατάσταση:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "With:"
+msgctxt "@label:textbox"
 msgid "With:"
 msgstr "Με:"
 
@@ -937,7 +955,9 @@ msgid "Status not defined."
 msgstr "Το αρχείο ήχου ήταν «%1»."
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Please select an action."
+msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Παρακαλώ επιλέξτε μια ενέργεια."
 
@@ -1099,7 +1119,11 @@ msgid "Discard"
 msgstr "Απόρριψη"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The following filters are invalid (e.g. containing no actions or no "
+#| "search rules). Discard or edit invalid filters?"
+msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
@@ -1232,6 +1256,7 @@ msgstr "Για προχωρημένους"
 #: filter/kmfilterdialog.cpp:182
 #, fuzzy, kde-format
 #| msgid "Filter Actions"
+msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Ενέργειες φίλτρου"
 
@@ -1340,7 +1365,9 @@ msgid "Icon for this filter:"
 msgstr "Εικονίδιο για αυτό το φίλτρο:"
 
 #: filter/kmfilterdialog.cpp:287
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run selected filter(s) on: "
+msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Εκτέλεση επιλεγμένων φίλτρων στο: "
 
@@ -1914,7 +1941,14 @@ msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Να μη γίνει μετάβαση στο"
 
-#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:312
+#: folder/foldertreewidget.cpp:78
+#, fuzzy, kde-format
+#| msgid "You can start typing to filter the list of folders."
+msgctxt "@label:textbox"
+msgid "You can start typing to filter the list of folders."
+msgstr "Αρχίστε την πληκτρολόγηση για το φιλτράρισμα της λίστας φακέλων."
+
+#: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "Αρχίστε την πληκτρολόγηση για το φιλτράρισμα της λίστας φακέλων."
@@ -2444,6 +2478,7 @@ msgstr "δεν είναι"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
 #, kde-format
+msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr ""
 
@@ -2654,6 +2689,7 @@ msgstr "Αφαίρεση των συνημμένων"
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
 #, fuzzy, kde-format
 #| msgid "Rename..."
+msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "Μετονομασία..."
 
@@ -2829,7 +2865,9 @@ msgid "Enter Values for Variables"
 msgstr "Εισαγωγή τιμών μεταβλητών"
 
 #: snippets/snippetvariabledialog.cpp:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enter the replacement values for '%1':"
+msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Εισάγετε τις τιμές αντικατάστασης για το «%1»."
 
@@ -2988,12 +3026,16 @@ msgid "&Italics"
 msgstr ""
 
 #: tag/tagwidget.cpp:134
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Message tag &icon:"
+msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Ε&ικονίδιο ετικέτας μηνύματος:"
 
 #: tag/tagwidget.cpp:145
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Shortc&ut:"
+msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "Συντόμε&υση:"
 
@@ -3057,6 +3099,7 @@ msgstr "Ανακατεύθυνση μηνύματος"
 #: widgets/redirectdialog.cpp:123
 #, fuzzy, kde-format
 #| msgid "Select the recipient &addresses to redirect to:"
+msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr ""
 "Επιλέξτε τις διευθύνσεις π&αραληπτών στους οποίους θα γίνει ανακατεύθυνση:"

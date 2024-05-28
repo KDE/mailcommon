@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
-"PO-Revision-Date: 2024-05-17 17:14+0200\n"
+"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"PO-Revision-Date: 2024-05-27 14:24+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -311,12 +311,16 @@ msgid "Select Folder"
 msgstr "Избиране на папка"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder path was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Пътят на папката беше \"%1\"."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The following folders can be used for this filter:"
+msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Следните папки могат да се използват за този филтър:"
 
@@ -355,7 +359,9 @@ msgid "Select sound"
 msgstr "Избиране на звук"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sound file was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "Звуковият файл беше \"%1\"."
 
@@ -373,7 +379,9 @@ msgid "Select Tag"
 msgstr "Избиране на етикет"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Tag was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Етикетът беше \"%1\"."
 
@@ -446,7 +454,9 @@ msgid "Add Header"
 msgstr "Добавяне на заглавна част"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "With value:"
+msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Със стойност:"
 
@@ -504,12 +514,16 @@ msgid "KMail Filter"
 msgstr "KMail филтър"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "with category"
+msgctxt "@label:textbox"
 msgid "with category"
 msgstr "с категория"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "in address book"
+msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "в адресната книга"
 
@@ -625,8 +639,7 @@ msgid "Forward To"
 msgstr "Препращане до"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, fuzzy, kde-format
-#| msgid "The addressee to whom the message will be forwarded."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Адресатът, на когото ще бъде препратено съобщението."
@@ -643,8 +656,7 @@ msgid "Default Template"
 msgstr "Шаблон по подразбиране"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, fuzzy, kde-format
-#| msgid "The template used when forwarding"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Шаблонът, използван при препращане"
@@ -737,12 +749,16 @@ msgid "Search string is empty."
 msgstr "Низът за търсене е празен."
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Replace:"
+msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Заместване:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "With:"
+msgctxt "@label:textbox"
 msgid "With:"
 msgstr "С:"
 
@@ -905,13 +921,14 @@ msgid "Status not defined."
 msgstr "Състояние не е дефинирано."
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Please select an action."
+msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Моля, изберете действие."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, fuzzy, kde-format
-#| msgid "Help"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Помощ"
@@ -1053,7 +1070,11 @@ msgid "Discard"
 msgstr "Отхвърляне"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The following filters are invalid (e.g. containing no actions or no "
+#| "search rules). Discard or edit invalid filters?"
+msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
@@ -1170,7 +1191,9 @@ msgid "Advanced"
 msgstr "Допълнителни"
 
 #: filter/kmfilterdialog.cpp:182
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Filter actions:"
+msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Филтърни действия:"
 
@@ -1278,7 +1301,9 @@ msgid "Icon for this filter:"
 msgstr "Икона за този филтър:"
 
 #: filter/kmfilterdialog.cpp:287
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run selected filter(s) on: "
+msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Изпълняване на избрания филтър върху: "
 
@@ -1463,22 +1488,19 @@ msgid "New"
 msgstr "Ново"
 
 #: filter/kmfilterlistbox.cpp:141
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Копиране"
 
 #: filter/kmfilterlistbox.cpp:142
-#, fuzzy, kde-format
-#| msgid "Delete"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Изтриване"
 
 #: filter/kmfilterlistbox.cpp:143
-#, fuzzy, kde-format
-#| msgid "Rename"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Преименуване"
@@ -1614,8 +1636,7 @@ msgid "Any action defined."
 msgstr "Всяко действие, дефинирано."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Старт"
@@ -1627,8 +1648,7 @@ msgid "Select Sound File"
 msgstr "Избиране на звуков файл"
 
 #: filter/soundtestwidget.cpp:107
-#, fuzzy, kde-format
-#| msgid "Pause"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr "Пауза"
@@ -1843,7 +1863,14 @@ msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Да не се отива на"
 
-#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:312
+#: folder/foldertreewidget.cpp:78
+#, fuzzy, kde-format
+#| msgid "You can start typing to filter the list of folders."
+msgctxt "@label:textbox"
+msgid "You can start typing to filter the list of folders."
+msgstr "Можете да започнете да пишете, за да филтрирате списъка с папки."
+
+#: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "Можете да започнете да пишете, за да филтрирате списъка с папки."
@@ -2114,8 +2141,7 @@ msgid "Choose or type your own criteria"
 msgstr "Изберете или въведете свои собствени критерии"
 
 #: search/searchpatternedit.cpp:145
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Изберете или въведете свои собствени критерии"
@@ -2356,7 +2382,9 @@ msgid "is not"
 msgstr "не е"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "encrypted"
+msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "криптиран"
 
@@ -2546,8 +2574,7 @@ msgid "Click on button for selecting attachment file"
 msgstr "Щракнете върху бутона за избор на прикачен файл"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Attachments"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Избиране на прикачени файлове"
@@ -2564,7 +2591,9 @@ msgid "Customize File Name Attachment"
 msgstr "Задаване на персонализирано име на прикачен файл"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Filename:"
+msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "Име на файл:"
 
@@ -2720,7 +2749,9 @@ msgid "Enter Values for Variables"
 msgstr "Въведете стойности за променливи"
 
 #: snippets/snippetvariabledialog.cpp:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enter the replacement values for '%1':"
+msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Въведете заместващите стойности за '%1':"
 
@@ -2875,12 +2906,16 @@ msgid "&Italics"
 msgstr "&Курсив"
 
 #: tag/tagwidget.cpp:134
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Message tag &icon:"
+msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Икона на тага на съобщение:"
 
 #: tag/tagwidget.cpp:145
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Shortc&ut:"
+msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "Пряк пъ&т:"
 
@@ -2938,7 +2973,9 @@ msgid "Redirect Message"
 msgstr "Пренасочване на съобщение"
 
 #: widgets/redirectdialog.cpp:123
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select the recipient addresses to redirect to:"
+msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr "Избиране на адресите на получателя за пренасочване:"
 
@@ -2975,11 +3012,10 @@ msgid "Empty Redirection Address"
 msgstr "Празен адрес за пренасочване"
 
 #: widgets/redirectwidget.cpp:39
-#, fuzzy, kde-format
-#| msgid "Use the Address-Selection Dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
-msgstr "Използвайте диалоговия прозорец за избор на адрес"
+msgstr "Използване на диалоговия прозорец за избор на адрес"
 
 #: widgets/redirectwidget.cpp:41
 #, kde-format

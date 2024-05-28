@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
+"POT-Creation-Date: 2024-05-28 00:39+0000\n"
 "PO-Revision-Date: 2020-08-08 16:45+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -316,12 +316,16 @@ msgid "Select Folder"
 msgstr "Vælg mappe"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder path was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Mappestien var \"%1\"."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The following folders can be used for this filter:"
+msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Følgende mapper kan bruges til dette filter:"
 
@@ -362,7 +366,9 @@ msgid "Select sound"
 msgstr "Vælg lyd"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sound file was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "Lydfilen var \"%1\"."
 
@@ -378,7 +384,9 @@ msgid "Select Tag"
 msgstr "Vælg mærke"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Tag was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Mærket var \"%1\""
 
@@ -450,7 +458,9 @@ msgid "Add Header"
 msgstr "Tilføj header"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "With value:"
+msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Med værdi:"
 
@@ -508,12 +518,16 @@ msgid "KMail Filter"
 msgstr "KMail-filter"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "with category"
+msgctxt "@label:textbox"
 msgid "with category"
 msgstr "med kategorien"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "in address book"
+msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "i adressebog"
 
@@ -741,12 +755,16 @@ msgid "Search string is empty."
 msgstr "Søgestrengen er tom."
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Replace:"
+msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Erstat:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "With:"
+msgctxt "@label:textbox"
 msgid "With:"
 msgstr "Med:"
 
@@ -909,7 +927,9 @@ msgid "Status not defined."
 msgstr "Status ikke angivet."
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Please select an action."
+msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Vælg en handling."
 
@@ -1057,7 +1077,11 @@ msgid "Discard"
 msgstr "Kassér"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The following filters are invalid (e.g. containing no actions or no "
+#| "search rules). Discard or edit invalid filters?"
+msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
@@ -1189,6 +1213,7 @@ msgstr "Avanceret"
 #: filter/kmfilterdialog.cpp:182
 #, fuzzy, kde-format
 #| msgid "Filter Actions"
+msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Filterhandlinger"
 
@@ -1298,7 +1323,9 @@ msgid "Icon for this filter:"
 msgstr "Ikon for dette filter:"
 
 #: filter/kmfilterdialog.cpp:287
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run selected filter(s) on: "
+msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Kør valgte filtre på: "
 
@@ -1858,7 +1885,14 @@ msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Gå ikke til"
 
-#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:312
+#: folder/foldertreewidget.cpp:78
+#, fuzzy, kde-format
+#| msgid "You can start typing to filter the list of folders."
+msgctxt "@label:textbox"
+msgid "You can start typing to filter the list of folders."
+msgstr "Begynd at skrive for at filtrere listen over mapper."
+
+#: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "Begynd at skrive for at filtrere listen over mapper."
@@ -2378,7 +2412,9 @@ msgid "is not"
 msgstr "er ikke"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "encrypted"
+msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "krypteret"
 
@@ -2586,7 +2622,9 @@ msgid "Customize File Name Attachment"
 msgstr "Tilpas filnavn på bilag"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Filename:"
+msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "Filnavn:"
 
@@ -2753,7 +2791,9 @@ msgid "Enter Values for Variables"
 msgstr "Angiv værdier for variable"
 
 #: snippets/snippetvariabledialog.cpp:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enter the replacement values for '%1':"
+msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Angiv erstatningsværdier for \"%1\":"
 
@@ -2908,12 +2948,16 @@ msgid "&Italics"
 msgstr "&Kursiv"
 
 #: tag/tagwidget.cpp:134
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Message tag &icon:"
+msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "&Ikon for brevmærke:"
 
 #: tag/tagwidget.cpp:145
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Shortc&ut:"
+msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "Gen&vej:"
 
@@ -2974,7 +3018,9 @@ msgid "Redirect Message"
 msgstr "Omdirigér brev"
 
 #: widgets/redirectdialog.cpp:123
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select the recipient addresses to redirect to:"
+msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr "Vælg de modtageradresser der skal omdirigeres til:"
 

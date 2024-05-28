@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
+"POT-Creation-Date: 2024-05-28 00:39+0000\n"
 "PO-Revision-Date: 2012-01-28 16:25-0800\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -299,11 +299,13 @@ msgstr "フォルダを選択"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
+msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr ""
 
@@ -341,9 +343,11 @@ msgid "Select sound"
 msgstr "すべて選択"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "No Folder Selected"
+msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
-msgstr ""
+msgstr "フォルダが選択されていません"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
@@ -359,6 +363,7 @@ msgstr "デフォルトのテンプレート"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr ""
 
@@ -432,6 +437,7 @@ msgstr "フィルタを追加"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
 #, kde-format
+msgctxt "@label:textbox"
 msgid "With value:"
 msgstr ""
 
@@ -491,12 +497,14 @@ msgstr "KMail フィルタ"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
 #, kde-format
+msgctxt "@label:textbox"
 msgid "with category"
 msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
 #, fuzzy, kde-format
 #| msgid "Add to Address Book"
+msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "アドレス帳に追加"
 
@@ -726,11 +734,13 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgctxt "message status"
 #| msgid "Replied"
+msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "返信済み"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
 #, kde-format
+msgctxt "@label:textbox"
 msgid "With:"
 msgstr ""
 
@@ -899,7 +909,9 @@ msgid "Status not defined."
 msgstr "フォルダが選択されていません"
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Please select an action."
+msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "アクションを選択してください"
 
@@ -1058,6 +1070,7 @@ msgstr ""
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
 #, kde-format
+msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
@@ -1190,6 +1203,7 @@ msgstr "アクション"
 #: filter/kmfilterdialog.cpp:182
 #, fuzzy, kde-format
 #| msgid "Actions"
+msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "アクション"
 
@@ -1292,6 +1306,7 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:287
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr ""
 
@@ -1824,7 +1839,14 @@ msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "移動しない"
 
-#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:312
+#: folder/foldertreewidget.cpp:78
+#, fuzzy, kde-format
+#| msgid "You can start typing to filter the list of folders."
+msgctxt "@label:textbox"
+msgid "You can start typing to filter the list of folders."
+msgstr "文字列を入力してフォルダのリストをフィルタできます。"
+
+#: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "文字列を入力してフォルダのリストをフィルタできます。"
@@ -2351,6 +2373,7 @@ msgstr ""
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
 #, kde-format
+msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr ""
 
@@ -2563,6 +2586,7 @@ msgstr "すべて選択"
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
 #, fuzzy, kde-format
 #| msgid "Rename Group..."
+msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "グループの名前変更..."
 
@@ -2733,6 +2757,7 @@ msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:40
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr ""
 
@@ -2883,12 +2908,14 @@ msgstr ""
 
 #: tag/tagwidget.cpp:134
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr ""
 
 #: tag/tagwidget.cpp:145
 #, fuzzy, kde-format
 #| msgid "Sh&ortcut:"
+msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "ショートカット(&O):"
 
@@ -2951,6 +2978,7 @@ msgstr "削除済み"
 
 #: widgets/redirectdialog.cpp:123
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr ""
 

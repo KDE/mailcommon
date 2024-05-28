@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
+"POT-Creation-Date: 2024-05-28 00:39+0000\n"
 "PO-Revision-Date: 2014-01-31 19:29+0100\n"
 "Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
 "Language-Team: bs <bs@kde.org>\n"
@@ -325,12 +325,16 @@ msgid "Select Folder"
 msgstr "Izbor direktorija"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder path was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Dio datoteke je \"%1\"."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The following folders can be used for this filter:"
+msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Sljedeće datoteke se koriste za ovaj filter:"
 
@@ -374,7 +378,9 @@ msgid "Select sound"
 msgstr "Izaberite zvuk"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sound file was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "Zvučna datoteka je \"%1\"."
 
@@ -393,7 +399,9 @@ msgid "Select Tag"
 msgstr "Izaberi oznaku"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Tag was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Oznaka je  \"%1\"."
 
@@ -471,7 +479,9 @@ msgid "Add Header"
 msgstr "Dodaj zaglavlje"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "With value:"
+msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Sa vrijednošću:"
 
@@ -530,12 +540,16 @@ msgid "KMail Filter"
 msgstr "KMail Filter"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "with category"
+msgctxt "@label:textbox"
 msgid "with category"
 msgstr "sa kategorijom"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "in address book"
+msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "u adresar"
 
@@ -764,12 +778,16 @@ msgid "Search string is empty."
 msgstr ""
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Replace:"
+msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Zamijeni:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "With:"
+msgctxt "@label:textbox"
 msgid "With:"
 msgstr "Sa:"
 
@@ -934,7 +952,9 @@ msgid "Status not defined."
 msgstr "Zvučna datoteka je \"%1\"."
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Please select an action."
+msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Molim izaberite akciju."
 
@@ -1094,7 +1114,11 @@ msgid "Discard"
 msgstr "Odbaci"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The following filters are invalid (e.g. containing no actions or no "
+#| "search rules). Discard or edit invalid filters?"
+msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
@@ -1227,6 +1251,7 @@ msgstr "Napredno"
 #: filter/kmfilterdialog.cpp:182
 #, fuzzy, kde-format
 #| msgid "Filter Actions"
+msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Akcije filtera"
 
@@ -1333,7 +1358,9 @@ msgid "Icon for this filter:"
 msgstr "Ikona za ovaj filter:"
 
 #: filter/kmfilterdialog.cpp:287
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run selected filter(s) on: "
+msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Pokrenite izabrane filtere: "
 
@@ -1906,7 +1933,14 @@ msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Ne idi"
 
-#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:312
+#: folder/foldertreewidget.cpp:78
+#, fuzzy, kde-format
+#| msgid "You can start typing to filter the list of folders."
+msgctxt "@label:textbox"
+msgid "You can start typing to filter the list of folders."
+msgstr "Možete početi tipkati za filtriranje liste direktorija."
+
+#: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "Možete početi tipkati za filtriranje liste direktorija."
@@ -2435,6 +2469,7 @@ msgstr "nije"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
 #, kde-format
+msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr ""
 
@@ -2649,6 +2684,7 @@ msgstr "Ukloni priloge"
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
 #, fuzzy, kde-format
 #| msgid "Rename..."
+msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "Promijeni ime..."
 
@@ -2823,7 +2859,9 @@ msgid "Enter Values for Variables"
 msgstr "Unesite vrijednosti promjenljivih"
 
 #: snippets/snippetvariabledialog.cpp:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enter the replacement values for '%1':"
+msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Unesite zamjenske vrijednosti za '%1':"
 
@@ -2981,12 +3019,16 @@ msgid "&Italics"
 msgstr ""
 
 #: tag/tagwidget.cpp:134
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Message tag &icon:"
+msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "&Ikona oznake poruke"
 
 #: tag/tagwidget.cpp:145
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Shortc&ut:"
+msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "P&rečica:"
 
@@ -3050,6 +3092,7 @@ msgstr "Preusmjeri poruku"
 #: widgets/redirectdialog.cpp:123
 #, fuzzy, kde-format
 #| msgid "Select the recipient &addresses to redirect to:"
+msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr "Izaberite &adrese primalaca kojima treba preusmjeriti:"
 

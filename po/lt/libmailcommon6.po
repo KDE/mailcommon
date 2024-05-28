@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
+"POT-Creation-Date: 2024-05-28 00:39+0000\n"
 "PO-Revision-Date: 2015-12-29 20:55+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
@@ -297,11 +297,13 @@ msgstr "Pasirinkite aplanką"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
+msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr ""
 
@@ -340,6 +342,7 @@ msgstr "Pasirinkite aplanką"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr ""
 
@@ -357,6 +360,7 @@ msgstr "Pasirinkite aplanką"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr ""
 
@@ -428,7 +432,9 @@ msgid "Add Header"
 msgstr "Pridėti antraštę"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "With value:"
+msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Su reikšme:"
 
@@ -488,11 +494,14 @@ msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
 #, kde-format
+msgctxt "@label:textbox"
 msgid "with category"
 msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "in address book"
+msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "adresų knygele"
 
@@ -712,12 +721,16 @@ msgid "Search string is empty."
 msgstr ""
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Replace:"
+msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Pakeisti:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "With:"
+msgctxt "@label:textbox"
 msgid "With:"
 msgstr "Su:"
 
@@ -882,7 +895,9 @@ msgid "Status not defined."
 msgstr "Nepavyko sukurti aplanko"
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Please select an action."
+msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Prašome pasirinkti veiksmą."
 
@@ -1036,6 +1051,7 @@ msgstr "Atmesti"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
 #, kde-format
+msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
@@ -1163,6 +1179,7 @@ msgstr "Išsamiau"
 #: filter/kmfilterdialog.cpp:182
 #, fuzzy, kde-format
 #| msgid "Filter Criteria"
+msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Filtravimo kriterijus"
 
@@ -1259,6 +1276,7 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:287
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr ""
 
@@ -1775,7 +1793,14 @@ msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr ""
 
-#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:312
+#: folder/foldertreewidget.cpp:78
+#, fuzzy, kde-format
+#| msgid "You can start typing to filter the list of folders."
+msgctxt "@label:textbox"
+msgid "You can start typing to filter the list of folders."
+msgstr "Galite pradėti rinkti tekstą, kad filtruoti aplankų sąrašą."
+
+#: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "Galite pradėti rinkti tekstą, kad filtruoti aplankų sąrašą."
@@ -2314,6 +2339,7 @@ msgstr "nėra"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
 #, kde-format
+msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr ""
 
@@ -2529,6 +2555,7 @@ msgstr "Parinkti paskyrą"
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
 #, fuzzy, kde-format
 #| msgid "Rename..."
+msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "Pervadinti..."
 
@@ -2696,6 +2723,7 @@ msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:40
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr ""
 
@@ -2848,12 +2876,16 @@ msgid "&Italics"
 msgstr ""
 
 #: tag/tagwidget.cpp:134
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Message tag &icon:"
+msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Laiško gairės &ženkliukas:"
 
 #: tag/tagwidget.cpp:145
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Shortc&ut:"
+msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "Kombinacija"
 
@@ -2915,6 +2947,7 @@ msgstr "Ištrinti laišką"
 
 #: widgets/redirectdialog.cpp:123
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr ""
 

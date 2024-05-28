@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
+"POT-Creation-Date: 2024-05-28 00:39+0000\n"
 "PO-Revision-Date: 2024-01-20 00:04+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -309,12 +309,16 @@ msgid "Select Folder"
 msgstr "Mappa kiválasztása"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder path was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "A mappaútvonal ez volt: „%1”."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The following folders can be used for this filter:"
+msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "A következő mappák használhatók ehhez a szűrőhöz:"
 
@@ -353,7 +357,9 @@ msgid "Select sound"
 msgstr "Hang kiválasztása"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sound file was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "A hangfájl ez volt: „%1”."
 
@@ -371,7 +377,9 @@ msgid "Select Tag"
 msgstr "Címke kiválasztása"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Tag was \"%1\"."
+msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "A címke „%1” volt."
 
@@ -445,7 +453,9 @@ msgid "Add Header"
 msgstr "Fejléc hozzáadása"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "With value:"
+msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Ezzel az értékkel:"
 
@@ -503,12 +513,16 @@ msgid "KMail Filter"
 msgstr "KMail szűrő"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "with category"
+msgctxt "@label:textbox"
 msgid "with category"
 msgstr "kategóriával"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "in address book"
+msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "a címjegyzékben"
 
@@ -740,12 +754,16 @@ msgid "Search string is empty."
 msgstr "A keresőszöveg üres."
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Replace:"
+msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Csere:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "With:"
+msgctxt "@label:textbox"
 msgid "With:"
 msgstr "Ezzel:"
 
@@ -908,7 +926,9 @@ msgid "Status not defined."
 msgstr "Az állapot nem definiált."
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Please select an action."
+msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Válasszon egy műveletet."
 
@@ -1056,7 +1076,11 @@ msgid "Discard"
 msgstr "Eldobás"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The following filters are invalid (e.g. containing no actions or no "
+#| "search rules). Discard or edit invalid filters?"
+msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
@@ -1186,7 +1210,9 @@ msgid "Advanced"
 msgstr "Speciális"
 
 #: filter/kmfilterdialog.cpp:182
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Filter actions:"
+msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Szűrőműveletek:"
 
@@ -1293,7 +1319,9 @@ msgid "Icon for this filter:"
 msgstr "A szűrő ikonja:"
 
 #: filter/kmfilterdialog.cpp:287
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run selected filter(s) on: "
+msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "A kijelölt szűrők futtatása ezen: "
 
@@ -1861,7 +1889,14 @@ msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Ne ugorjon"
 
-#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:312
+#: folder/foldertreewidget.cpp:78
+#, fuzzy, kde-format
+#| msgid "You can start typing to filter the list of folders."
+msgctxt "@label:textbox"
+msgid "You can start typing to filter the list of folders."
+msgstr "A gépelés elkezdésével szűrheti a mappák listáját."
+
+#: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "A gépelés elkezdésével szűrheti a mappák listáját."
@@ -2380,7 +2415,9 @@ msgid "is not"
 msgstr "nem ="
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "encrypted"
+msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "titkosított"
 
@@ -2588,7 +2625,9 @@ msgid "Customize File Name Attachment"
 msgstr "Fájlnév-melléklet testre szabása"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Filename:"
+msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "Fájlnév:"
 
@@ -2755,7 +2794,9 @@ msgid "Enter Values for Variables"
 msgstr "Adja meg a változók értékét"
 
 #: snippets/snippetvariabledialog.cpp:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enter the replacement values for '%1':"
+msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Adja meg a(z) „%1” helyettesítési értékeit:"
 
@@ -2909,12 +2950,16 @@ msgid "&Italics"
 msgstr "&Dőlt"
 
 #: tag/tagwidget.cpp:134
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Message tag &icon:"
+msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Üzenet címke &ikon:"
 
 #: tag/tagwidget.cpp:145
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Shortc&ut:"
+msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "&Gyorsbillentyű:"
 
@@ -2975,7 +3020,9 @@ msgid "Redirect Message"
 msgstr "Üzenet átirányítása"
 
 #: widgets/redirectdialog.cpp:123
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select the recipient addresses to redirect to:"
+msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr "Válassza ki az átirányítási címzettek címeit:"
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
+"POT-Creation-Date: 2024-05-28 00:39+0000\n"
 "PO-Revision-Date: 2021-01-13 17:59+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -286,11 +286,13 @@ msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
+msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr ""
 
@@ -326,6 +328,7 @@ msgstr ""
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr ""
 
@@ -342,6 +345,7 @@ msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr ""
 
@@ -409,6 +413,7 @@ msgstr ""
 
 #: filter/filteractions/filteractionaddheader.cpp:76
 #, kde-format
+msgctxt "@label:textbox"
 msgid "With value:"
 msgstr ""
 
@@ -467,11 +472,13 @@ msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
 #, kde-format
+msgctxt "@label:textbox"
 msgid "with category"
 msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
 #, kde-format
+msgctxt "@label:textbox"
 msgid "in address book"
 msgstr ""
 
@@ -689,11 +696,13 @@ msgstr ""
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr ""
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
 #, kde-format
+msgctxt "@label:textbox"
 msgid "With:"
 msgstr ""
 
@@ -856,9 +865,11 @@ msgid "Status not defined."
 msgstr ""
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Please select a folder"
+msgctxt "@label:textbox"
 msgid "Please select an action."
-msgstr ""
+msgstr "Vel ei mappe"
 
 #: filter/filteractions/filteractionwithurl.cpp:22
 #, fuzzy, kde-format
@@ -1001,7 +1012,11 @@ msgid "Discard"
 msgstr "Forkast"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The following filters are invalid (e.g. containing no actions or no "
+#| "search rules). Discard or edit invalid filters?"
+msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
@@ -1124,6 +1139,7 @@ msgstr "Avansert"
 
 #: filter/kmfilterdialog.cpp:182
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr ""
 
@@ -1227,6 +1243,7 @@ msgstr "Ikon for dette filteret:"
 
 #: filter/kmfilterdialog.cpp:287
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr ""
 
@@ -1769,7 +1786,14 @@ msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Ikkje gå til"
 
-#: folder/foldertreewidget.cpp:78 folder/foldertreewidget.cpp:312
+#: folder/foldertreewidget.cpp:78
+#, fuzzy, kde-format
+#| msgid "You can start typing to filter the list of folders."
+msgctxt "@label:textbox"
+msgid "You can start typing to filter the list of folders."
+msgstr "Du kan begynna å skriva for å filtrera lista over mapper."
+
+#: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "Du kan begynna å skriva for å filtrera lista over mapper."
@@ -2277,9 +2301,11 @@ msgid "is not"
 msgstr ""
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Encrypt"
+msgctxt "@label:textbox"
 msgid "encrypted"
-msgstr ""
+msgstr "Krypter"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:91
 #, kde-format
@@ -2484,9 +2510,11 @@ msgid "Customize File Name Attachment"
 msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Rename"
+msgctxt "@label:textbox"
 msgid "Filename:"
-msgstr ""
+msgstr "Endra namn"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
 #, kde-format
@@ -2637,6 +2665,7 @@ msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:40
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr ""
 
@@ -2781,12 +2810,16 @@ msgid "&Italics"
 msgstr ""
 
 #: tag/tagwidget.cpp:134
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Message tag &icon:"
+msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Merkelapp&ikon:"
 
 #: tag/tagwidget.cpp:145
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Shortc&ut:"
+msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "Snø&ggtast:"
 
@@ -2847,6 +2880,7 @@ msgstr ""
 
 #: widgets/redirectdialog.cpp:123
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr ""
 
