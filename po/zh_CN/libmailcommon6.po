@@ -275,11 +275,10 @@ msgid "Select Folder"
 msgstr "选择文件夹"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
-#, fuzzy, kde-format
-#| msgid "Folder path was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
-msgstr "文件夹路径为“%1”。"
+msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
@@ -318,11 +317,10 @@ msgid "Select sound"
 msgstr "选择声音"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
-#, fuzzy, kde-format
-#| msgid "Sound file was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
-msgstr "声音文件为“%1”。"
+msgstr ""
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
@@ -336,11 +334,10 @@ msgid "Select Tag"
 msgstr "选择标签"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
-#, fuzzy, kde-format
-#| msgid "Tag was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
-msgstr "标签为“%1”。"
+msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:47
 #, kde-format
@@ -405,11 +402,10 @@ msgid "Add Header"
 msgstr "添加信头"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
-#, fuzzy, kde-format
-#| msgid "With value:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
-msgstr "赋值："
+msgstr ""
 
 #: filter/filteractions/filteractionaddheader.cpp:202
 #, kde-format
@@ -465,18 +461,16 @@ msgid "KMail Filter"
 msgstr "KMail 过滤器"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
-#, fuzzy, kde-format
-#| msgid "with category"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
-msgstr "带有分类"
+msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
-#, fuzzy, kde-format
-#| msgid "in address book"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
-msgstr "在地址簿中"
+msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:134
 #, kde-format
@@ -691,18 +685,16 @@ msgid "Search string is empty."
 msgstr "搜索字符串为空。"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
-#, fuzzy, kde-format
-#| msgid "Replace:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
-msgstr "替换："
+msgstr ""
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
-#, fuzzy, kde-format
-#| msgid "With:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
-msgstr "使用："
+msgstr ""
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:28
 #, kde-format
@@ -863,11 +855,10 @@ msgid "Status not defined."
 msgstr "状态未定义。"
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, fuzzy, kde-format
-#| msgid "Please select an action."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
-msgstr "请选择操作。"
+msgstr ""
 
 #: filter/filteractions/filteractionwithurl.cpp:22
 #, kde-format
@@ -2230,11 +2221,10 @@ msgid "is not"
 msgstr "不是"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "encrypted"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
-msgstr "已加密"
+msgstr ""
 
 #: search/widgethandler/encryptionwidgethandler.cpp:91
 #, kde-format
@@ -2591,11 +2581,10 @@ msgid "Enter Values for Variables"
 msgstr "为变量输入值"
 
 #: snippets/snippetvariabledialog.cpp:40
-#, fuzzy, kde-format
-#| msgid "Enter the replacement values for '%1':"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
-msgstr "为“%1”输入替换值："
+msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:45
 #, kde-format
@@ -2741,18 +2730,16 @@ msgid "&Italics"
 msgstr "斜体(&I)"
 
 #: tag/tagwidget.cpp:134
-#, fuzzy, kde-format
-#| msgid "Message tag &icon:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
-msgstr "信件标记图标(&I)："
+msgstr ""
 
 #: tag/tagwidget.cpp:145
-#, fuzzy, kde-format
-#| msgid "Shortc&ut:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
-msgstr "快捷键(&U)："
+msgstr ""
 
 #: tag/tagwidget.cpp:156
 #, kde-format
@@ -2808,11 +2795,10 @@ msgid "Redirect Message"
 msgstr "转发信件"
 
 #: widgets/redirectdialog.cpp:123
-#, fuzzy, kde-format
-#| msgid "Select the recipient addresses to redirect to:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
-msgstr "选择自动转发的收信地址："
+msgstr ""
 
 #: widgets/redirectdialog.cpp:152
 #, kde-format
