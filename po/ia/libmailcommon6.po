@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-28 00:39+0000\n"
-"PO-Revision-Date: 2024-05-23 10:15+0200\n"
+"PO-Revision-Date: 2024-05-29 14:23+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -309,15 +309,13 @@ msgid "Select Folder"
 msgstr "Selige dossier"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
-#, fuzzy, kde-format
-#| msgid "Folder path was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Percurso de dossier esseva \"%1\"."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
-#, fuzzy, kde-format
-#| msgid "The following folders can be used for this filter:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Le sequente dossieres pote esser usate con iste filtro:"
@@ -357,8 +355,7 @@ msgid "Select sound"
 msgstr "Selige Sono"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
-#, fuzzy, kde-format
-#| msgid "Sound file was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "File de sono esseva \"%1\"."
@@ -377,8 +374,7 @@ msgid "Select Tag"
 msgstr "Selige etiquetta"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
-#, fuzzy, kde-format
-#| msgid "Tag was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Etiquetta esseva \"%1\"."
@@ -452,8 +448,7 @@ msgid "Add Header"
 msgstr "Adde capite"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
-#, fuzzy, kde-format
-#| msgid "With value:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Con valor:"
@@ -512,15 +507,13 @@ msgid "KMail Filter"
 msgstr "Filtro de KMail"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
-#, fuzzy, kde-format
-#| msgid "with category"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
 msgstr "con categoria"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
-#, fuzzy, kde-format
-#| msgid "in address book"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "in adressario"
@@ -751,15 +744,13 @@ msgid "Search string is empty."
 msgstr "Le catena de cerca es vacue."
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
-#, fuzzy, kde-format
-#| msgid "Replace:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Reimplacia:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
-#, fuzzy, kde-format
-#| msgid "With:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
 msgstr "Con:"
@@ -923,8 +914,7 @@ msgid "Status not defined."
 msgstr "Stato non definite."
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, fuzzy, kde-format
-#| msgid "Please select an action."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Pro favor tu selige un action."
@@ -1071,10 +1061,7 @@ msgid "Discard"
 msgstr "Abandona"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
-#, fuzzy, kde-format
-#| msgid ""
-#| "The following filters are invalid (e.g. containing no actions or no "
-#| "search rules). Discard or edit invalid filters?"
+#, kde-format
 msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
@@ -1192,8 +1179,7 @@ msgid "Advanced"
 msgstr "Avantiate"
 
 #: filter/kmfilterdialog.cpp:182
-#, fuzzy, kde-format
-#| msgid "Filter actions:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Actiones de filtro:"
@@ -1304,8 +1290,7 @@ msgid "Icon for this filter:"
 msgstr "Icone pro iste filtro:"
 
 #: filter/kmfilterdialog.cpp:287
-#, fuzzy, kde-format
-#| msgid "Run selected filter(s) on: "
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Executa filtro(s) seligite sur: "
@@ -1863,8 +1848,7 @@ msgid "Do Not Go To"
 msgstr "Non vade a"
 
 #: folder/foldertreewidget.cpp:78
-#, fuzzy, kde-format
-#| msgid "You can start typing to filter the list of folders."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
 msgstr "Tu pote initiar typar per filtrar le lista de dossieres."
@@ -2382,8 +2366,7 @@ msgid "is not"
 msgstr "non es"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "encrypted"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "cryptate"
@@ -2591,8 +2574,7 @@ msgid "Customize File Name Attachment"
 msgstr "Personalisa attachamento de nomine de file"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Filename:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "Nomine de file:"
@@ -2749,8 +2731,7 @@ msgid "Enter Values for Variables"
 msgstr "Inserta valores pro variabiles"
 
 #: snippets/snippetvariabledialog.cpp:40
-#, fuzzy, kde-format
-#| msgid "Enter the replacement values for '%1':"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Inserta le valores de reimplaciamento pro '%1:"
@@ -2907,15 +2888,13 @@ msgid "&Italics"
 msgstr "&Italics"
 
 #: tag/tagwidget.cpp:134
-#, fuzzy, kde-format
-#| msgid "Message tag &icon:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "&Icone de etiquetta de message:"
 
 #: tag/tagwidget.cpp:145
-#, fuzzy, kde-format
-#| msgid "Shortc&ut:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "Via &breve:"
@@ -2974,8 +2953,7 @@ msgid "Redirect Message"
 msgstr "Redirige message"
 
 #: widgets/redirectdialog.cpp:123
-#, fuzzy, kde-format
-#| msgid "Select the recipient addresses to redirect to:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr "Selige le adresses de destinatario ubi rediriger los:"
