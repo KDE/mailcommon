@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Stefan Asserhall <stefan.asserhall@bredband.net>, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2024 Stefan Asserhall <stefan.asserhall@bredband.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-12 00:38+0000\n"
-"PO-Revision-Date: 2022-08-03 10:15+0200\n"
+"PO-Revision-Date: 2024-06-08 14:51+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.08.1\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -414,10 +414,9 @@ msgid " (default)"
 msgstr " (förval)"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgid "Thunderbird File (*.dat)"
-msgstr "Thunderbird-filter"
+msgstr "Thunderbird-fil (*.dat)"
 
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
