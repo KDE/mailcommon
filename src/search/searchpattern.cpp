@@ -12,7 +12,7 @@ using MailCommon::FilterLog;
 #include "mailcommon_debug.h"
 #include <Akonadi/ContactSearchJob>
 
-#include <KMime/KMimeMessage>
+#include <KMime/Message>
 
 #include <KConfigGroup>
 

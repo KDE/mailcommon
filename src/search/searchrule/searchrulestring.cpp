@@ -12,7 +12,7 @@ using MailCommon::FilterLog;
 
 #include <Akonadi/SearchQuery>
 
-#include <KMime/KMimeMessage>
+#include <KMime/Message>
 
 #include <KEmailAddress>
 

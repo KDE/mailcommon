@@ -39,7 +39,7 @@
 #include <Akonadi/NewMailNotifierAttribute>
 #include <Akonadi/ServerManager>
 
-#include <KMime/KMimeMessage>
+#include <KMime/Message>
 
 #include <KIO/Job>
 #include <KIO/JobUiDelegate>

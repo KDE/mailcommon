@@ -15,8 +15,8 @@
 #include <Akonadi/Collection>
 #include <Akonadi/Item>
 
-#include <KMime/KMimeMessage>
 #include <KMime/MDN>
+#include <KMime/Message>
 
 #include <QObject>
 

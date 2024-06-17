@@ -9,7 +9,7 @@
 #include "filter/filterlog.h"
 using MailCommon::FilterLog;
 
-#include <KMime/KMimeMessage>
+#include <KMime/Message>
 #include <QDateTime>
 
 #include <QRegularExpression>
