@@ -39,7 +39,7 @@ CollectionTemplatesWidget::CollectionTemplatesWidget(QWidget *parent)
     topLayout->addWidget(mWidget);
 
     auto btns = new QHBoxLayout();
-    auto copyGlobal = new QPushButton(i18n("&Copy Global Templates"), this);
+    auto copyGlobal = new QPushButton(i18nc("@action:button", "&Copy Global Templates"), this);
     copyGlobal->setEnabled(false);
     btns->addWidget(copyGlobal);
     topLayout->addLayout(btns);

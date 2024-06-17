@@ -64,7 +64,7 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
             &FilterconverttosievePurposeMenuWidget::shareSuccess,
             mPurposeMenuMessageWidget,
             &PimCommon::PurposeMenuMessageWidget::slotShareSuccess);
-    auto shareButton = new QPushButton(i18n("Share…"), this);
+    auto shareButton = new QPushButton(i18nc("@action:button", "Share…"), this);
     shareButton->setMenu(purposeMenu->menu());
     shareButton->setIcon(QIcon::fromTheme(QStringLiteral("document-share")));
     purposeMenu->setEditorWidget(mEditor->editor());

@@ -44,7 +44,7 @@ SnippetCustomFileAttachmentNameWidget::SnippetCustomFileAttachmentNameWidget(QWi
     mConvertMenu->setObjectName(QLatin1StringView("mConvertMenu"));
     connect(mConvertMenu, &MessageComposer::ConvertSnippetVariableMenu::insertVariable, this, &SnippetCustomFileAttachmentNameWidget::insertVariable);
 
-    auto selectVariable = new QPushButton(i18n("Insert Variables"), this);
+    auto selectVariable = new QPushButton(i18nc("@action:button", "Insert Variables"), this);
     selectVariable->setObjectName(QLatin1StringView("selectVariable"));
     selectVariable->setMenu(mConvertMenu->menu());
     convertMenuLayout->addWidget(selectVariable);

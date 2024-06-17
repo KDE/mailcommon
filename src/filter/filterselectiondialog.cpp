@@ -26,8 +26,8 @@ static const char myFilterSelectionDialogName[] = "FilterSelectionDialog";
 FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     : QDialog(parent)
     , filtersListWidget(new QListWidget(this))
-    , selectAllButton(new QPushButton(i18n("Select All"), this))
-    , unselectAllButton(new QPushButton(i18n("Unselect All"), this))
+    , selectAllButton(new QPushButton(i18nc("@action:button", "Select All"), this))
+    , unselectAllButton(new QPushButton(i18nc("@action:button", "Unselect All"), this))
 {
     setObjectName(QLatin1StringView("filterselection"));
     setModal(true);

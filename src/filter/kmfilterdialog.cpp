@@ -290,7 +290,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     mFolderRequester->setNotAllowToCreateNewFolder(true);
     applySpecificFiltersLayout->addWidget(mFolderRequester);
     connect(mFolderRequester, &FolderRequester::folderChanged, this, &KMFilterDialog::slotFolderChanged);
-    mRunNow = new QPushButton(i18n("Run Now"), this);
+    mRunNow = new QPushButton(i18nc("@action:button", "Run Now"), this);
     mRunNow->setEnabled(false);
     applySpecificFiltersLayout->addWidget(mRunNow);
     connect(mRunNow, &QPushButton::clicked, this, &KMFilterDialog::slotRunFilters);

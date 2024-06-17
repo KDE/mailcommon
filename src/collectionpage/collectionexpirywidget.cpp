@@ -63,7 +63,7 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
     , mExpireReadMailSB(new DaysSpinBox(this))
     , mExpireUnreadMailSB(new DaysSpinBox(this))
     , mFolderSelector(new FolderRequester(this))
-    , mExpireNowPB(new QPushButton(i18n("Save Settings and Expire Now"), this))
+    , mExpireNowPB(new QPushButton(i18nc("@action:button", "Save Settings and Expire Now"), this))
     , mExpireMailWithInvalidDateCB(new QCheckBox(i18n("Expire messages with invalid date"), this))
 {
     auto formLayout = new QFormLayout(this);
