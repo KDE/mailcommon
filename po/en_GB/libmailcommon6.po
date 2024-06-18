@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2024-05-30 16:22+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -41,7 +41,9 @@ msgid "Never"
 msgstr "Never"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Settings and Expire Now"
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Save Settings and Expire Now"
 
@@ -224,7 +226,9 @@ msgid "&Use custom message templates in this folder"
 msgstr "&Use custom message templates in this folder"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Copy Global Templates"
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "&Copy Global Templates"
 
@@ -931,7 +935,9 @@ msgid "Save…"
 msgstr "Save…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Share…"
+msgctxt "@action:button"
 msgid "Share…"
 msgstr "Share…"
 
@@ -1016,12 +1022,16 @@ msgid "Export Filters"
 msgstr "Export Filters"
 
 #: filter/filterselectiondialog.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "Select All"
 
 #: filter/filterselectiondialog.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unselect All"
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Unselect All"
 
@@ -1282,7 +1292,9 @@ msgid "Run selected filter(s) on: "
 msgstr "Run selected filter(s) on: "
 
 #: filter/kmfilterdialog.cpp:293
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run Now"
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Run Now"
 
@@ -2558,7 +2570,9 @@ msgid "Filename:"
 msgstr "Filename:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Variables"
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Insert Variables"
 

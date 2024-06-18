@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -50,7 +50,9 @@ msgid "Never"
 msgstr "никада"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Settings and Expire Now"
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Сачувај поставке и избаци застареле сада"
 
@@ -237,6 +239,7 @@ msgstr "Чувај одговоре у овој фасцикли"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr ""
 
@@ -979,6 +982,7 @@ msgstr ""
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Save..."
+msgctxt "@action:button"
 msgid "Share…"
 msgstr "Сачувај..."
 
@@ -1069,12 +1073,16 @@ msgid "Export Filters"
 msgstr "Извоз филтера̂"
 
 #: filter/filterselectiondialog.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "Изабери све"
 
 #: filter/filterselectiondialog.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unselect All"
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Поништи сав избор"
 
@@ -1362,7 +1370,9 @@ msgid "Run selected filter(s) on: "
 msgstr "Изврши изабране филтере над:"
 
 #: filter/kmfilterdialog.cpp:293
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run Now"
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Изврши сада"
 
@@ -2695,6 +2705,7 @@ msgstr "Преименуј"
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
 #, fuzzy, kde-format
 #| msgid "Enter Values for Variables"
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Унос вредности за променљиве"
 

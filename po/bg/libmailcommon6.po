@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2024-05-30 21:00+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -39,7 +39,9 @@ msgid "Never"
 msgstr "Никога"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Settings and Expire Now"
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Запазване на настройките и бракуване сега"
 
@@ -227,7 +229,9 @@ msgid "&Use custom message templates in this folder"
 msgstr "Запазване на отговорите в тази папка"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Copy Global Templates"
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "&Копиране на глобалните шаблони"
 
@@ -941,7 +945,9 @@ msgid "Save…"
 msgstr "Запазване…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Share…"
+msgctxt "@action:button"
 msgid "Share…"
 msgstr "Споделяне..."
 
@@ -1026,12 +1032,16 @@ msgid "Export Filters"
 msgstr "Експортиране на филтри"
 
 #: filter/filterselectiondialog.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "Избиране Всички"
 
 #: filter/filterselectiondialog.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unselect All"
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Размаркиране на всички"
 
@@ -1293,7 +1303,9 @@ msgid "Run selected filter(s) on: "
 msgstr "Изпълняване на избрания филтър върху: "
 
 #: filter/kmfilterdialog.cpp:293
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run Now"
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Изпълнение сега"
 
@@ -2578,7 +2590,9 @@ msgid "Filename:"
 msgstr "Име на файл:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Variables"
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Вмъкване на променливи"
 

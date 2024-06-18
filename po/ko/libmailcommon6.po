@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2023-10-08 23:39+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -38,7 +38,9 @@ msgid "Never"
 msgstr "하지 않음"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Settings and Expire Now"
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "설정을 저장하고 지금 정리"
 
@@ -216,7 +218,9 @@ msgid "&Use custom message templates in this folder"
 msgstr "이 폴더에 사용자 정의 메시지 템플릿 사용(&U)"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Copy Global Templates"
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "전역 템플릿 복사(&C)"
 
@@ -930,6 +934,7 @@ msgstr ""
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Share..."
+msgctxt "@action:button"
 msgid "Share…"
 msgstr "공유..."
 
@@ -1012,12 +1017,16 @@ msgid "Export Filters"
 msgstr "필터 내보내기"
 
 #: filter/filterselectiondialog.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "모두 선택"
 
 #: filter/filterselectiondialog.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unselect All"
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "모두 선택 해제"
 
@@ -1294,7 +1303,9 @@ msgid "Run selected filter(s) on: "
 msgstr "선택한 필터를 다음에 실행:"
 
 #: filter/kmfilterdialog.cpp:293
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run Now"
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr "지금 실행"
 
@@ -2573,7 +2584,9 @@ msgid "Filename:"
 msgstr "파일 이름:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Variables"
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "변수 삽입"
 

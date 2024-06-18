@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2010-12-26 08:49+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -40,6 +40,7 @@ msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:66
 #, kde-format
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr ""
 
@@ -197,6 +198,7 @@ msgstr "ਦਿੱਤੇ ਜਵਾਬ ਇਸ ਫੋਲਡਰ ਵਿੱਚ ਰੱ�
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr ""
 
@@ -902,6 +904,7 @@ msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, kde-format
+msgctxt "@action:button"
 msgid "Share…"
 msgstr ""
 
@@ -991,13 +994,16 @@ msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 #: filter/filterselectiondialog.cpp:29
 #, fuzzy, kde-format
 #| msgid "Se&lect..."
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "ਚੁਣੋ(&l)..."
 
 #: filter/filterselectiondialog.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Se&lect..."
+msgctxt "@action:button"
 msgid "Unselect All"
-msgstr ""
+msgstr "ਚੁਣੋ(&l)..."
 
 #: filter/filterselectiondialog.cpp:34
 #, fuzzy, kde-format
@@ -1258,6 +1264,7 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:293
 #, kde-format
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr ""
 
@@ -2493,6 +2500,7 @@ msgstr "ਐਂਟਰੀ ਹਟਾਓ"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
 #, kde-format
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr ""
 

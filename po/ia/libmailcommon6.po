@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2024-05-29 14:23+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -39,7 +39,9 @@ msgid "Never"
 msgstr "Nunquam"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Settings and Expire Now"
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Salvegiarda preferentias e expira nunc"
 
@@ -225,7 +227,9 @@ msgid "&Use custom message templates in this folder"
 msgstr "&Usa patronos de message personalisate in iste dossier"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Copy Global Templates"
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "&Copia patronos global"
 
@@ -942,7 +946,9 @@ msgid "Save…"
 msgstr "Salveguarda…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Share…"
+msgctxt "@action:button"
 msgid "Share…"
 msgstr "Comparti..."
 
@@ -1027,12 +1033,16 @@ msgid "Export Filters"
 msgstr "Exporta filtros"
 
 #: filter/filterselectiondialog.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "Selige toto"
 
 #: filter/filterselectiondialog.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unselect All"
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Annulla toto"
 
@@ -1296,7 +1306,9 @@ msgid "Run selected filter(s) on: "
 msgstr "Executa filtro(s) seligite sur: "
 
 #: filter/kmfilterdialog.cpp:293
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run Now"
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Executa nunc"
 
@@ -2580,7 +2592,9 @@ msgid "Filename:"
 msgstr "Nomine de file:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Variables"
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Inserta variabiles"
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2023-11-07 21:27+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
@@ -40,6 +40,7 @@ msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:66
 #, kde-format
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr ""
 
@@ -195,6 +196,7 @@ msgstr ""
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr ""
 
@@ -885,6 +887,7 @@ msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, kde-format
+msgctxt "@action:button"
 msgid "Share…"
 msgstr ""
 
@@ -966,11 +969,13 @@ msgstr ""
 
 #: filter/filterselectiondialog.cpp:29
 #, kde-format
+msgctxt "@action:button"
 msgid "Select All"
 msgstr ""
 
 #: filter/filterselectiondialog.cpp:30
 #, kde-format
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr ""
 
@@ -1219,6 +1224,7 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:293
 #, kde-format
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr ""
 
@@ -2442,6 +2448,7 @@ msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
 #, kde-format
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr ""
 

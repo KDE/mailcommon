@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2011-12-28 12:28-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -45,6 +45,7 @@ msgstr "Riamh"
 
 #: collectionpage/collectionexpirywidget.cpp:66
 #, kde-format
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr ""
 
@@ -201,6 +202,7 @@ msgstr ""
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr ""
 
@@ -921,6 +923,7 @@ msgstr ""
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Rename..."
+msgctxt "@action:button"
 msgid "Share…"
 msgstr "Athainmnigh..."
 
@@ -1004,12 +1007,16 @@ msgid "Export Filters"
 msgstr "Easpórtáil Scagairí"
 
 #: filter/filterselectiondialog.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "Roghnaigh Uile"
 
 #: filter/filterselectiondialog.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unselect All"
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Díroghnaigh Uile"
 
@@ -1278,7 +1285,9 @@ msgid "Run selected filter(s) on: "
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:293
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run Now"
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Rith Anois"
 
@@ -2563,6 +2572,7 @@ msgstr "Athainmnigh..."
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
 #, fuzzy, kde-format
 #| msgid "Enter Values for Variables"
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Iontráil Luachanna ar Athróga"
 

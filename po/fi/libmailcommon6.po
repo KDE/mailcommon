@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2023-10-12 18:30+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -45,7 +45,9 @@ msgid "Never"
 msgstr "Ei koskaan"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Settings and Expire Now"
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Tallenna asetukset ja vanhenna nyt"
 
@@ -228,7 +230,9 @@ msgid "&Use custom message templates in this folder"
 msgstr "Käytä tässä kansiossa &mukautettuja viestimalleja"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Copy Global Templates"
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "K&opioi yleiset mallit"
 
@@ -950,6 +954,7 @@ msgstr ""
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Share..."
+msgctxt "@action:button"
 msgid "Share…"
 msgstr "Jaa…"
 
@@ -1033,12 +1038,16 @@ msgid "Export Filters"
 msgstr "Vientisuodattimet"
 
 #: filter/filterselectiondialog.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "Valitse kaikki"
 
 #: filter/filterselectiondialog.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unselect All"
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Poista kaikki valinnat"
 
@@ -1318,7 +1327,9 @@ msgid "Run selected filter(s) on: "
 msgstr "Suorita valitut suodattimet kohteelle: "
 
 #: filter/kmfilterdialog.cpp:293
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run Now"
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Suorita nyt"
 
@@ -2609,7 +2620,9 @@ msgid "Filename:"
 msgstr "Tiedostonimi:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Variables"
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Lisää muuttujia"
 

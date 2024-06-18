@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2024-01-20 00:04+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -41,7 +41,9 @@ msgid "Never"
 msgstr "Soha"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Settings and Expire Now"
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Beállítások mentése és lejárat most"
 
@@ -225,7 +227,9 @@ msgid "&Use custom message templates in this folder"
 msgstr "Egyéni üzenetsablonok has&ználata ebben a mappában"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Copy Global Templates"
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "A globális sablonok más&olása"
 
@@ -958,6 +962,7 @@ msgstr ""
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Share..."
+msgctxt "@action:button"
 msgid "Share…"
 msgstr "Megosztás…"
 
@@ -1042,12 +1047,16 @@ msgid "Export Filters"
 msgstr "Szűrők exportálása"
 
 #: filter/filterselectiondialog.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "Összes kijelölése"
 
 #: filter/filterselectiondialog.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unselect All"
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "A kijelölések megszüntetése"
 
@@ -1326,7 +1335,9 @@ msgid "Run selected filter(s) on: "
 msgstr "A kijelölt szűrők futtatása ezen: "
 
 #: filter/kmfilterdialog.cpp:293
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run Now"
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Futtatás most"
 
@@ -2632,7 +2643,9 @@ msgid "Filename:"
 msgstr "Fájlnév:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Variables"
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Változók beszúrása"
 

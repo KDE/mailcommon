@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2020-01-01 12:34+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -41,7 +41,9 @@ msgid "Never"
 msgstr "Mitte kunagi"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Settings and Expire Now"
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Salvesta seadistused ja kustuta kohe"
 
@@ -228,6 +230,7 @@ msgstr "Vastused jäetakse sellesse kausta"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr ""
 
@@ -954,6 +957,7 @@ msgstr ""
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Share..."
+msgctxt "@action:button"
 msgid "Share…"
 msgstr "Jaga ..."
 
@@ -1037,12 +1041,16 @@ msgid "Export Filters"
 msgstr "Filtrite eksport"
 
 #: filter/filterselectiondialog.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "Vali kõik"
 
 #: filter/filterselectiondialog.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unselect All"
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Tühista kõik valikud"
 
@@ -1323,7 +1331,9 @@ msgid "Run selected filter(s) on: "
 msgstr "Valitud filtri(te) käivitamine: "
 
 #: filter/kmfilterdialog.cpp:293
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run Now"
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Käivita kohe"
 
@@ -2623,7 +2633,9 @@ msgid "Filename:"
 msgstr "Failinimi:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Variables"
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Muutujate lisamine"
 

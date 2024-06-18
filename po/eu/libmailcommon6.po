@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2024-05-20 23:12+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -42,7 +42,9 @@ msgid "Never"
 msgstr "Inoiz ez"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Settings and Expire Now"
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Gorde ezarpenak eta orain iraungi"
 
@@ -229,7 +231,9 @@ msgid "&Use custom message templates in this folder"
 msgstr "&Erabili norberak finkatutako mezu txantiloiak karpeta honetan"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Copy Global Templates"
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "&Kopiatu txantiloi orokorrak"
 
@@ -957,7 +961,9 @@ msgid "Save…"
 msgstr "Gorde…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Share…"
+msgctxt "@action:button"
 msgid "Share…"
 msgstr "Partekatu..."
 
@@ -1042,12 +1048,16 @@ msgid "Export Filters"
 msgstr "Esportatu iragazkiak"
 
 #: filter/filterselectiondialog.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "Hautatu dena"
 
 #: filter/filterselectiondialog.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unselect All"
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Desautatu dena"
 
@@ -1313,7 +1323,9 @@ msgid "Run selected filter(s) on: "
 msgstr "Exekutatu hautatutako iragazkia(k) hemen:"
 
 #: filter/kmfilterdialog.cpp:293
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run Now"
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Exekutatu orain"
 
@@ -2603,7 +2615,9 @@ msgid "Filename:"
 msgstr "Fitxategi-izena:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Insert Variables"
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Sartu aldagaiak"
 

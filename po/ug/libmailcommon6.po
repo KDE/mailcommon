@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -41,6 +41,7 @@ msgstr "ھەرگىز"
 
 #: collectionpage/collectionexpirywidget.cpp:66
 #, kde-format
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr ""
 
@@ -197,6 +198,7 @@ msgstr ""
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr ""
 
@@ -913,6 +915,7 @@ msgstr ""
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Save..."
+msgctxt "@action:button"
 msgid "Share…"
 msgstr "ساقلاش…"
 
@@ -1001,12 +1004,16 @@ msgid "Export Filters"
 msgstr ""
 
 #: filter/filterselectiondialog.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "ھەممىنى تاللا"
 
 #: filter/filterselectiondialog.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unselect All"
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "ھەممىنى تاللىما"
 
@@ -1270,9 +1277,11 @@ msgid "Run selected filter(s) on: "
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:293
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Send Now"
+msgctxt "@action:button"
 msgid "Run Now"
-msgstr ""
+msgstr "ھازىر ئەۋەت(&S)"
 
 #: filter/kmfilterdialog.cpp:419
 #, kde-format
@@ -2514,6 +2523,7 @@ msgstr "ئات ئۆزگەرت…"
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
 #, fuzzy, kde-format
 #| msgid "Insert Snippet"
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "پۇرۇچ قىستۇرۇش"
 

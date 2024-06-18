@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2014-09-18 22:35+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -42,7 +42,9 @@ msgid "Never"
 msgstr "Nienich"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Settings and Expire Now"
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Instellen nu sekern un na Aflööp kieken"
 
@@ -231,6 +233,7 @@ msgstr "Antwoorden binnen dissen Orner wohren"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr ""
 
@@ -971,6 +974,7 @@ msgstr ""
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Save..."
+msgctxt "@action:button"
 msgid "Share…"
 msgstr "Sekern..."
 
@@ -1064,12 +1068,16 @@ msgid "Export Filters"
 msgstr "Filtern exporteren"
 
 #: filter/filterselectiondialog.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "All utsöken"
 
 #: filter/filterselectiondialog.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unselect All"
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "All afkören"
 
@@ -1351,7 +1359,9 @@ msgid "Run selected filter(s) on: "
 msgstr "Utsöcht Filtern bruken för: "
 
 #: filter/kmfilterdialog.cpp:293
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Run Now"
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Nu utföhren"
 
@@ -2661,6 +2671,7 @@ msgstr "Ümnömen..."
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
 #, fuzzy, kde-format
 #| msgid "Enter Values for Variables"
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Weerten för Variabeln ingeven"
 

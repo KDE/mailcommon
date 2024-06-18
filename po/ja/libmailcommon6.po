@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:39+0000\n"
+"POT-Creation-Date: 2024-06-18 00:40+0000\n"
 "PO-Revision-Date: 2012-01-28 16:25-0800\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -46,6 +46,7 @@ msgstr "表示しない"
 
 #: collectionpage/collectionexpirywidget.cpp:66
 #, kde-format
+msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr ""
 
@@ -211,6 +212,7 @@ msgstr "返信をこのフォルダに保存"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
+msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr ""
 
@@ -940,6 +942,7 @@ msgstr ""
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Rename Group..."
+msgctxt "@action:button"
 msgid "Share…"
 msgstr "グループの名前変更..."
 
@@ -1029,13 +1032,16 @@ msgid "Export Filters"
 msgstr "フィルタをエクスポート"
 
 #: filter/filterselectiondialog.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:button"
 msgid "Select All"
 msgstr "すべて選択"
 
 #: filter/filterselectiondialog.cpp:30
 #, fuzzy, kde-format
 #| msgid "Select All"
+msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "すべて選択"
 
@@ -1313,6 +1319,7 @@ msgstr ""
 #: filter/kmfilterdialog.cpp:293
 #, fuzzy, kde-format
 #| msgid "&Send Now"
+msgctxt "@action:button"
 msgid "Run Now"
 msgstr "今すぐ送信(&S)"
 
@@ -2593,6 +2600,7 @@ msgstr "グループの名前変更..."
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
 #, fuzzy, kde-format
 #| msgid "Insert Snippet"
+msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "定型表現を挿入"
 
