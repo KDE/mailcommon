@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-18 00:40+0000\n"
-"PO-Revision-Date: 2024-05-28 06:05+0200\n"
+"PO-Revision-Date: 2024-06-18 06:04+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -40,8 +40,7 @@ msgid "Never"
 msgstr "არასდროს"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, fuzzy, kde-format
-#| msgid "Save Settings and Expire Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "პარამეტრების შენახვა და ვადის ახლავე გასვლა"
@@ -226,8 +225,7 @@ msgid "&Use custom message templates in this folder"
 msgstr "&ამ საქაღალდეში მომხმარებლის შეტყობინების ნიმუშების გამყენება"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
-#, fuzzy, kde-format
-#| msgid "&Copy Global Templates"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "&გლობალური ნიმუშების კოპირება"
@@ -939,8 +937,7 @@ msgid "Save…"
 msgstr "შენახვა…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Share…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "გაზიარება…"
@@ -1026,15 +1023,13 @@ msgid "Export Filters"
 msgstr "ფილტრების გატანა"
 
 #: filter/filterselectiondialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "ყველას მონიშვნა"
 
 #: filter/filterselectiondialog.cpp:30
-#, fuzzy, kde-format
-#| msgid "Unselect All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "მონიშვნის ყველაფერზე მოხსნა"
@@ -1296,8 +1291,7 @@ msgid "Run selected filter(s) on: "
 msgstr "მონიშვნული ფილტრების სამიზნე; "
 
 #: filter/kmfilterdialog.cpp:293
-#, fuzzy, kde-format
-#| msgid "Run Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "ახლა გაშვება"
@@ -2584,8 +2578,7 @@ msgid "Filename:"
 msgstr "ფაილის სახელი:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, fuzzy, kde-format
-#| msgid "Insert Variables"
+#, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "ჩასვით ცვლადები"

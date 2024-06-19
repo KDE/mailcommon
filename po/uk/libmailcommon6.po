@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-18 00:40+0000\n"
-"PO-Revision-Date: 2024-05-28 09:33+0300\n"
+"PO-Revision-Date: 2024-06-18 08:38+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian\n"
 "Language: uk\n"
@@ -44,8 +44,7 @@ msgid "Never"
 msgstr "Ніколи"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, fuzzy, kde-format
-#| msgid "Save Settings and Expire Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Зберегти параметри та архівувати зараз"
@@ -234,8 +233,7 @@ msgid "&Use custom message templates in this folder"
 msgstr "&Використовувати власні шаблони повідомлень у цій теці"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
-#, fuzzy, kde-format
-#| msgid "&Copy Global Templates"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "&Копіювати глобальні шаблони"
@@ -953,8 +951,7 @@ msgid "Save…"
 msgstr "Зберегти…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Share…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "Оприлюднити…"
@@ -1040,18 +1037,16 @@ msgid "Export Filters"
 msgstr "Експорт фільтрів"
 
 #: filter/filterselectiondialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr "Вибрати всі"
+msgstr "Позначити все"
 
 #: filter/filterselectiondialog.cpp:30
-#, fuzzy, kde-format
-#| msgid "Unselect All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
-msgstr "Скасувати вибір всього"
+msgstr "Зняти позначення з усіх"
 
 #: filter/filterselectiondialog.cpp:34
 #, kde-format
@@ -1310,11 +1305,10 @@ msgid "Run selected filter(s) on: "
 msgstr "Використати позначені фільтри для: "
 
 #: filter/kmfilterdialog.cpp:293
-#, fuzzy, kde-format
-#| msgid "Run Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
-msgstr "Використати"
+msgstr "Запустити зараз"
 
 #: filter/kmfilterdialog.cpp:419
 #, kde-format
@@ -2602,8 +2596,7 @@ msgid "Filename:"
 msgstr "Назва файла:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, fuzzy, kde-format
-#| msgid "Insert Variables"
+#, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Вставити змінні"

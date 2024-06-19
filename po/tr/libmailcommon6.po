@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-18 00:40+0000\n"
-"PO-Revision-Date: 2024-05-29 13:03+0300\n"
+"PO-Revision-Date: 2024-06-18 13:00+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -44,8 +44,7 @@ msgid "Never"
 msgstr "Asla"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, fuzzy, kde-format
-#| msgid "Save Settings and Expire Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Ayarları Kaydet ve Şimdi Sürelerini Doldur"
@@ -230,8 +229,7 @@ msgid "&Use custom message templates in this folder"
 msgstr "Özel &ileti şablonlarını bu klasörde tut"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
-#, fuzzy, kde-format
-#| msgid "&Copy Global Templates"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "Global Şablonları Ko&pyala"
@@ -938,8 +936,7 @@ msgid "Save…"
 msgstr "Kaydet…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Share…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "Paylaş…"
@@ -1024,18 +1021,16 @@ msgid "Export Filters"
 msgstr "Süzgeçleri Dışa Aktar"
 
 #: filter/filterselectiondialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Tümünü Seç"
 
 #: filter/filterselectiondialog.cpp:30
-#, fuzzy, kde-format
-#| msgid "Unselect All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
-msgstr "Tümünü Bırak"
+msgstr "Tümünün Seçimini Kaldır"
 
 #: filter/filterselectiondialog.cpp:34
 #, kde-format
@@ -1294,8 +1289,7 @@ msgid "Run selected filter(s) on: "
 msgstr "Seçili süzgeçleri çalıştır: "
 
 #: filter/kmfilterdialog.cpp:293
-#, fuzzy, kde-format
-#| msgid "Run Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Şimdi Çalıştır"
@@ -2570,8 +2564,7 @@ msgid "Filename:"
 msgstr "Dosya adı:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, fuzzy, kde-format
-#| msgid "Insert Variables"
+#, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Değişkenler Ekle"
