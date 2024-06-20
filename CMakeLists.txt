@@ -97,12 +97,12 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX MAILCOMMON
 
 
 ########### Targets ###########
-remove_definitions( -DQT_NO_CAST_FROM_ASCII )
+remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
 set(COMPILE_WITH_UNITY_CMAKE_SUPPORT OFF)
-if (USE_UNITY_CMAKE_SUPPORT)
+if(USE_UNITY_CMAKE_SUPPORT)
     set(COMPILE_WITH_UNITY_CMAKE_SUPPORT ON)
 endif()
 
@@ -118,13 +118,13 @@ endif()
 
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6MailCommon")
-if (BUILD_QCH)
+if(BUILD_QCH)
     ecm_install_qch_export(
         TARGETS KPim6MailCommon_QCH
         FILE KPim6MailCommonQchTargets.cmake
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
-    )
+)
     set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6MailCommonQchTargets.cmake\")")
 endif()
 

@@ -2,8 +2,8 @@
 # SPDX-FileCopyrightText: none
 add_definitions(-DTRANSLATION_DOMAIN=\"libmailcommon6\")
 
-#add_definitions( -DQT_NO_CAST_FROM_ASCII )
-#add_definitions( -DQT_NO_CAST_TO_ASCII )
+#add_definitions(-DQT_NO_CAST_FROM_ASCII)
+#add_definitions(-DQT_NO_CAST_TO_ASCII)
 
 if(BUILD_TESTING)
    add_definitions(-DBUILD_TESTING)
@@ -34,7 +34,7 @@ macro(add_resource_iface _kcfgFile _ifaceName _className)
   kcfg_generate_dbus_interface(${CMAKE_CURRENT_SOURCE_DIR}/${_kcfgFile} ${_ifaceName})
   qt_add_dbus_interface(libmailcommon_SRCS
     ${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml ${_className}
-  )
+)
 endmacro()
 
 add_resource_iface(settings.kcfg org.kde.Akonadi.POP3.Settings pop3settings)
@@ -333,10 +333,10 @@ target_sources(KPim6MailCommon PRIVATE
     util/mailutil.h
     util/cryptoutils.h
     util/resourcereadconfigfile.h
-    )
+)
 
 
-if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
+if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KPim6MailCommon PROPERTIES UNITY_BUILD ON)
     set_source_files_properties(${libmailcommon_search_SRCS} PROPERTIES SKIP_UNITY_BUILD_INCLUSION ON)
 endif()
@@ -397,12 +397,12 @@ install(TARGETS
     EXPORT KPim6MailCommonTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
 )
 
-if (BUILD_TESTING)
+if(BUILD_TESTING)
    add_subdirectory(filter/filterimporter/autotests)
    add_subdirectory(collectionpage/autotests)
    add_subdirectory(filter/autotests)
    add_subdirectory(snippets/autotests)
-   add_subdirectory(filter/tests) 
+   add_subdirectory(filter/tests)
    add_subdirectory(search/autotests)
 endif()
 
@@ -627,7 +627,7 @@ if(BUILD_DESIGNERPLUGIN)
     add_subdirectory(designer)
 endif()
 
-if (BUILD_QCH)
+if(BUILD_QCH)
     ecm_add_qch(
         KPim6MailCommon_QCH
         NAME KPim6MailCommon
@@ -663,7 +663,7 @@ if (BUILD_QCH)
         TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         COMPONENT Devel
-    )
+)
 endif()
 
 ecm_qt_install_logging_categories(EXPORT MAILCOMMON FILE mailcommon.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})

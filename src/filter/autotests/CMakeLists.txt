@@ -14,7 +14,7 @@ macro(add_mailcommon_filter_test _name)
         TEST_NAME ${_name}
         NAME_PREFIX "mailcommon-filter-"
         LINK_LIBRARIES ${mailcommon_filter_test_LIBS}
-    )
+)
 endmacro()
 
 macro(add_mailcommon_filter_akonadi_test _name _sources)
@@ -275,45 +275,45 @@ add_mailcommon_filter_test(filteractionmissingsoundurldialogtest
     filteractionmissingsoundurldialogtest.cpp
     filteractionmissingsoundurldialogtest.h
     ../dialog/filteractionmissingsoundurldialog.cpp
-    )
+)
 
 add_mailcommon_filter_test(filteractionmissingtemplatedialogtest
     filteractionmissingtemplatedialogtest.cpp
     filteractionmissingtemplatedialogtest.h
     ../dialog/filteractionmissingtemplatedialog.cpp
-    )
+)
 
 add_mailcommon_filter_test(filteractionmissingtransportdialogtest
     filteractionmissingtransportdialogtest.cpp
     filteractionmissingtransportdialogtest.h
     ../dialog/filteractionmissingtransportdialog.cpp
-    )
+)
 
 add_mailcommon_filter_test(filteractionmissingaccountdialogtest
     filteractionmissingaccountdialogtest.cpp
     filteractionmissingaccountdialogtest.h
     ../dialog/filteractionmissingaccountdialog.cpp
-    )
+)
 
 add_mailcommon_filter_test(filteractionmissingtagdialogtest
     filteractionmissingtagdialogtest.cpp
     filteractionmissingtagdialogtest.h
     ../dialog/filteractionmissingtagdialog.cpp
-    )
+)
 
 add_mailcommon_filter_akonadi_test(
     filteractionmissingidentitydialogtest.cpp
     filteractionmissingidentitydialogtest.h
     ../dialog/filteractionmissingidentitydialog.cpp
     ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h
-    )
+)
 
 add_mailcommon_filter_test(filterimporterpathcachetest
     filterimporterpathcachetest.cpp
     filterimporterpathcachetest.h
-    )
+)
 
 add_mailcommon_filter_test(filterlogtest
     filterlogtest.cpp
     filterlogtest.h
-    )
+)

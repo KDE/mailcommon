@@ -6,7 +6,7 @@ macro(add_snippets _source)
          TEST_NAME ${_name}
          NAME_PREFIX "mailcommon-filter-"
          LINK_LIBRARIES Qt::Test Qt::Gui KPim6::MailCommon KF6::XmlGui
-     )
+    )
 
 endmacro()
 
