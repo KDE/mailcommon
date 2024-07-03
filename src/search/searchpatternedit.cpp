@@ -141,7 +141,7 @@ void SearchRuleWidget::initWidget(SearchPatternEdit::SearchModeType modeType)
     mRuleField->setEditable(true);
     auto edit = new QLineEdit;
     KLineEditEventHandler::catchReturnKey(edit);
-    edit->setPlaceholderText(i18n("Choose or type your own criteria"));
+    edit->setPlaceholderText(i18nc("@info:placeholder", "Choose or type your own criteria"));
     mRuleField->setToolTip(i18nc("@info:tooltip", "Choose or type your own criteria"));
     edit->setClearButtonEnabled(true);
     mRuleField->setLineEdit(edit);

@@ -23,7 +23,7 @@ SnippetAttachmentWidget::SnippetAttachmentWidget(QWidget *parent)
     layout->setContentsMargins({});
 
     mLineEdit->setObjectName(QLatin1StringView("lineedit"));
-    mLineEdit->setPlaceholderText(i18n("Click on button for selecting attachment file"));
+    mLineEdit->setPlaceholderText(i18nc("@info:placeholder", "Click on button for selecting attachment file"));
     layout->addWidget(mLineEdit);
     mLineEdit->setReadOnly(true);
 

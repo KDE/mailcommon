@@ -42,7 +42,7 @@ FolderRequester::FolderRequester(QWidget *parent)
     hlay->setContentsMargins({});
 
     d->mEdit = new QLineEdit(this);
-    d->mEdit->setPlaceholderText(i18n("Select Folder"));
+    d->mEdit->setPlaceholderText(i18nc("@info:placeholder", "Select Folder"));
     KLineEditEventHandler::catchReturnKey(d->mEdit);
     d->mEdit->setReadOnly(true);
     hlay->addWidget(d->mEdit);
