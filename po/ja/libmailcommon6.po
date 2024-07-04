@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-18 00:40+0000\n"
+"POT-Creation-Date: 2024-07-04 00:39+0000\n"
 "PO-Revision-Date: 2012-01-28 16:25-0800\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -1721,7 +1721,9 @@ msgid "Down"
 msgstr "下へ移動"
 
 #: folder/folderrequester.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Folder"
+msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "フォルダを選択"
 
@@ -2129,6 +2131,7 @@ msgstr ""
 
 #: search/searchpatternedit.cpp:144
 #, kde-format
+msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr ""
 
@@ -2568,6 +2571,7 @@ msgstr "添付あり"
 
 #: snippets/snippetattachmentwidget.cpp:26
 #, kde-format
+msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr ""
 

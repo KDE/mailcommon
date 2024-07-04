@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-18 00:40+0000\n"
+"POT-Creation-Date: 2024-07-04 00:39+0000\n"
 "PO-Revision-Date: 2015-12-29 20:55+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
@@ -1680,7 +1680,9 @@ msgid "Down"
 msgstr "Žemyn"
 
 #: folder/folderrequester.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Folder"
+msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Pasirinkite aplanką"
 
@@ -2085,6 +2087,7 @@ msgstr ""
 
 #: search/searchpatternedit.cpp:144
 #, kde-format
+msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr ""
 
@@ -2539,6 +2542,7 @@ msgstr "Turi priedą"
 
 #: snippets/snippetattachmentwidget.cpp:26
 #, kde-format
+msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr ""
 

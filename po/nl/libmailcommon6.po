@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-18 00:40+0000\n"
+"POT-Creation-Date: 2024-07-04 00:39+0000\n"
 "PO-Revision-Date: 2024-06-19 11:16+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -1733,7 +1733,9 @@ msgid "Down"
 msgstr "Omlaag"
 
 #: folder/folderrequester.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Folder"
+msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Map selecteren"
 
@@ -2125,7 +2127,9 @@ msgid "Encryption"
 msgstr "Versleuteling"
 
 #: search/searchpatternedit.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Choose or type your own criteria"
+msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Kies of type uw eigen criteria"
 
@@ -2557,7 +2561,9 @@ msgid "Has Attachment"
 msgstr "Heeft bijlage"
 
 #: snippets/snippetattachmentwidget.cpp:26
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Click on button for selecting attachment file"
+msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr "Op knop drukken om bestand als bijlage te selecteren"
 

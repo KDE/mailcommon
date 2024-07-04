@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-18 00:40+0000\n"
+"POT-Creation-Date: 2024-07-04 00:39+0000\n"
 "PO-Revision-Date: 2024-06-18 19:59+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -1720,7 +1720,9 @@ msgid "Down"
 msgstr "Baixar"
 
 #: folder/folderrequester.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Folder"
+msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Escoller un cartafol"
 
@@ -2115,7 +2117,9 @@ msgid "Encryption"
 msgstr "Cifrado"
 
 #: search/searchpatternedit.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Choose or type your own criteria"
+msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Escolla ou escriba o seu propio criterio."
 
@@ -2549,7 +2553,9 @@ msgid "Has Attachment"
 msgstr "Contén un anexo"
 
 #: snippets/snippetattachmentwidget.cpp:26
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Click on button for selecting attachment file"
+msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr "Prema o botón para seleccionar o ficheiro anexo"
 

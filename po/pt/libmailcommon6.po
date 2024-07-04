@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-18 00:40+0000\n"
+"POT-Creation-Date: 2024-07-04 00:39+0000\n"
 "PO-Revision-Date: 2022-07-04 13:16+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -1784,7 +1784,9 @@ msgid "Down"
 msgstr "Descer"
 
 #: folder/folderrequester.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Folder"
+msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Seleccionar a Pasta"
 
@@ -2184,7 +2186,9 @@ msgid "Encryption"
 msgstr "Encriptação"
 
 #: search/searchpatternedit.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Choose or type your own criteria"
+msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Escolha ou escreva os seus próprios critérios"
 
@@ -2618,7 +2622,9 @@ msgid "Has Attachment"
 msgstr "Tem um Anexo"
 
 #: snippets/snippetattachmentwidget.cpp:26
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Click on button for selecting attachment file"
+msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr "Carregue no botão para seleccionar o ficheiro do anexo"
 

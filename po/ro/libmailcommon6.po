@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-18 00:40+0000\n"
+"POT-Creation-Date: 2024-07-04 00:39+0000\n"
 "PO-Revision-Date: 2022-02-17 11:52+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -1756,7 +1756,9 @@ msgid "Down"
 msgstr "Jos"
 
 #: folder/folderrequester.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Folder"
+msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Alege dosarul"
 
@@ -2166,7 +2168,9 @@ msgid "Encryption"
 msgstr "Criptare"
 
 #: search/searchpatternedit.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Choose or type your own criteria"
+msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Alegeți sau tastați propriul criteriu"
 
@@ -2618,6 +2622,7 @@ msgstr "Are atașament"
 
 #: snippets/snippetattachmentwidget.cpp:26
 #, kde-format
+msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr ""
 

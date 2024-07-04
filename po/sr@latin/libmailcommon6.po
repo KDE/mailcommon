@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-18 00:40+0000\n"
+"POT-Creation-Date: 2024-07-04 00:39+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -1819,7 +1819,9 @@ msgstr "Dole"
 
 # >> @title:window
 #: folder/folderrequester.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Folder"
+msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Izbor fascikle"
 
@@ -2234,7 +2236,9 @@ msgid "Encryption"
 msgstr "šifrovanje"
 
 #: search/searchpatternedit.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Choose or type your own criteria"
+msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Izaberite ili unesite sopstvene kriterijume."
 
@@ -2673,6 +2677,7 @@ msgstr "sa prilogom"
 
 #: snippets/snippetattachmentwidget.cpp:26
 #, kde-format
+msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr ""
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-18 00:40+0000\n"
+"POT-Creation-Date: 2024-07-04 00:39+0000\n"
 "PO-Revision-Date: 2023-10-08 23:39+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -1730,7 +1730,9 @@ msgid "Down"
 msgstr "아래로 이동"
 
 #: folder/folderrequester.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Folder"
+msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "폴더 선택"
 
@@ -2121,7 +2123,9 @@ msgid "Encryption"
 msgstr "암호화"
 
 #: search/searchpatternedit.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Choose or type your own criteria"
+msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "조건을 선택하거나 입력하십시오"
 
@@ -2554,7 +2558,9 @@ msgid "Has Attachment"
 msgstr "첨부 파일 포함"
 
 #: snippets/snippetattachmentwidget.cpp:26
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Click on button for selecting attachment file"
+msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr "첨부 파일을 선택하려면 단추를 클릭하십시오"
 

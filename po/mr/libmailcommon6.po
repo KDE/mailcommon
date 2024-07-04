@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-18 00:40+0000\n"
+"POT-Creation-Date: 2024-07-04 00:39+0000\n"
 "PO-Revision-Date: 2013-03-28 14:37+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -1651,9 +1651,11 @@ msgid "Down"
 msgstr "खाली"
 
 #: folder/folderrequester.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select File:"
+msgctxt "@info:placeholder"
 msgid "Select Folder"
-msgstr ""
+msgstr "फाईल निवडा :"
 
 #: folder/folderrequester.cpp:113
 #, kde-format
@@ -2045,6 +2047,7 @@ msgstr ""
 
 #: search/searchpatternedit.cpp:144
 #, kde-format
+msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr ""
 
@@ -2483,6 +2486,7 @@ msgstr ""
 
 #: snippets/snippetattachmentwidget.cpp:26
 #, kde-format
+msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr ""
 
