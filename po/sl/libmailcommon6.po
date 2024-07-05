@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-04 00:39+0000\n"
-"PO-Revision-Date: 2024-06-18 09:35+0200\n"
+"PO-Revision-Date: 2024-07-04 10:43+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -1718,8 +1718,7 @@ msgid "Down"
 msgstr "Dol"
 
 #: folder/folderrequester.cpp:45
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Izberite mapo"
@@ -2120,11 +2119,10 @@ msgid "Encryption"
 msgstr "Šifiranje"
 
 #: search/searchpatternedit.cpp:144
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
-msgstr "Izberite ali vnesite lastne pogoje"
+msgstr "Izberite ali vnesite lastne kriterije"
 
 #: search/searchpatternedit.cpp:145
 #, kde-format
@@ -2556,11 +2554,10 @@ msgid "Has Attachment"
 msgstr "Ima prilogo"
 
 #: snippets/snippetattachmentwidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Click on button for selecting attachment file"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
-msgstr "Kliknite na gumb za izbiro datoteke kot priloge"
+msgstr "Kliknite na gumb za izbiro datoteke priloge"
 
 #: snippets/snippetattachmentwidget.cpp:32
 #, kde-format

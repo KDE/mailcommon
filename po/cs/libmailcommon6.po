@@ -1,7 +1,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Lukáš Tinkl <ltinkl@redhat.com>, 2010, 2011, 2012.
-# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2023 Vít Pelčák <vit@pelcak.org>
+# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2023, 2024 Vít Pelčák <vit@pelcak.org>
 # Tomáš Chvátal <tomas.chvatal@gmail.com>, 2012, 2013.
 # SPDX-FileCopyrightText: 2021, 2022, 2024 Vit Pelcak <vit@pelcak.org>
 #
@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-04 00:39+0000\n"
-"PO-Revision-Date: 2024-06-18 16:10+0200\n"
-"Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
+"PO-Revision-Date: 2024-07-04 14:39+0200\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -1665,11 +1665,10 @@ msgid "Down"
 msgstr "Dolů"
 
 #: folder/folderrequester.cpp:45
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
-msgstr "Vybrat složku"
+msgstr "Vyberte složku"
 
 #: folder/folderrequester.cpp:113
 #, kde-format
@@ -2062,7 +2061,7 @@ msgstr "Šifrování"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
-msgstr ""
+msgstr "Vyberte nebo nepište vlastní kritéria"
 
 #: search/searchpatternedit.cpp:145
 #, kde-format
@@ -2493,8 +2492,7 @@ msgid "Has Attachment"
 msgstr "Má přílohu"
 
 #: snippets/snippetattachmentwidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Click on button for selecting attachment file"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr "Kliknutím na toto tlačítko vyberete soubor přílohy"

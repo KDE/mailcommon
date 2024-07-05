@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-04 00:39+0000\n"
-"PO-Revision-Date: 2024-05-28 14:42+0200\n"
+"PO-Revision-Date: 2024-07-04 14:01+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -1738,8 +1738,7 @@ msgid "Down"
 msgstr "Baixa"
 
 #: folder/folderrequester.cpp:45
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Selecció d'una carpeta"
@@ -2134,8 +2133,7 @@ msgid "Encryption"
 msgstr "Encriptatge"
 
 #: search/searchpatternedit.cpp:144
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Escolliu o teclegeu els vostres propis criteris"
@@ -2572,8 +2570,7 @@ msgid "Has Attachment"
 msgstr "Té un adjunt"
 
 #: snippets/snippetattachmentwidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Click on button for selecting attachment file"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr "Feu clic al botó per a seleccionar un fitxer adjunt"

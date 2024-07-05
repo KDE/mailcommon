@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-04 00:39+0000\n"
-"PO-Revision-Date: 2024-06-18 23:07+0200\n"
+"PO-Revision-Date: 2024-07-05 02:22+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -1731,8 +1731,7 @@ msgid "Down"
 msgstr "Bajar"
 
 #: folder/folderrequester.cpp:45
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Seleccionar carpeta"
@@ -2132,8 +2131,7 @@ msgid "Encryption"
 msgstr "Cifrado"
 
 #: search/searchpatternedit.cpp:144
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Elija o escriba su propio criterio"
@@ -2566,11 +2564,10 @@ msgid "Has Attachment"
 msgstr "Tiene adjunto"
 
 #: snippets/snippetattachmentwidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Click on button for selecting attachment file"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
-msgstr "Pulse el botón para seleccionar el archivo a adjuntar"
+msgstr "Pulse el botón para seleccionar el archivo que se adjuntará"
 
 #: snippets/snippetattachmentwidget.cpp:32
 #, kde-format
