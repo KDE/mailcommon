@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-04 00:39+0000\n"
-"PO-Revision-Date: 2024-06-25 17:48+0200\n"
+"PO-Revision-Date: 2024-07-05 15:58+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -946,7 +946,7 @@ msgstr "Запазване…"
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr "Споделяне..."
+msgstr "Споделяне…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -1093,17 +1093,17 @@ msgstr "Правила за филтриране"
 #: filter/kmfilterdialog.cpp:90
 #, kde-format
 msgid "Import…"
-msgstr "Импортиране..."
+msgstr "Импортиране…"
 
 #: filter/kmfilterdialog.cpp:92
 #, kde-format
 msgid "Export…"
-msgstr "Експортиране..."
+msgstr "Експортиране…"
 
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
 msgid "Convert to…"
-msgstr "Конвертиране в..."
+msgstr "Конвертиране в…"
 
 #: filter/kmfilterdialog.cpp:98
 #, kde-format
@@ -1732,8 +1732,7 @@ msgid "Down"
 msgstr "Down"
 
 #: folder/folderrequester.cpp:45
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Избор на папка"
@@ -1752,7 +1751,7 @@ msgstr "Моля, изберете папка"
 #, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
-msgstr "&Нова подпапка..."
+msgstr "&Нова подпапка…"
 
 #: folder/folderselectiondialog.cpp:66
 #, kde-format
@@ -1762,7 +1761,7 @@ msgstr "Създаване на нова подпапка под текущо и
 #: folder/folderselectiondialog.cpp:126
 #, kde-format
 msgid "&New Subfolder…"
-msgstr "&Нова подпапка..."
+msgstr "&Нова подпапка…"
 
 #: folder/folderselectiondialog.cpp:179
 #, kde-format
@@ -1988,7 +1987,7 @@ msgstr "Премахването на стари съобщения от пап�
 #, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "Премахване на 1 старо съобщение от папка %2..."
+msgstr[0] "Премахване на 1 старо съобщение от папка %2…"
 msgstr[1] "Премахване на %1 стари съобщения от папка %2..."
 
 #: job/expirejob.cpp:164
@@ -2002,8 +2001,8 @@ msgstr ""
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] "Преместване на 1 старо съобщение от папка %2 в папка %3..."
-msgstr[1] "Преместване на %1 стари съобщения от папка %2 в папка %3..."
+msgstr[0] "Преместване на 1 старо съобщение от папка %2 в папка %3…"
+msgstr[1] "Преместване на %1 стари съобщения от папка %2 в папка %3…"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
@@ -2126,11 +2125,10 @@ msgid "Encryption"
 msgstr "Криптиране"
 
 #: search/searchpatternedit.cpp:144
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
-msgstr "Изберете или въведете свои собствени критерии"
+msgstr "Изберете или въведете ваши собствени критерии"
 
 #: search/searchpatternedit.cpp:145
 #, kde-format
@@ -2560,8 +2558,7 @@ msgid "Has Attachment"
 msgstr "Има прикачен файл"
 
 #: snippets/snippetattachmentwidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Click on button for selecting attachment file"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr "Щракнете върху бутона за избор на прикачен файл"
@@ -2939,7 +2936,7 @@ msgstr "Режим икони"
 #: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
 msgid "Drop your favorite folders here…"
-msgstr "Завлечете любимите си папки тук..."
+msgstr "Завлечете любимите си папки тук…"
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format
