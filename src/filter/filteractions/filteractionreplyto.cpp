@@ -32,7 +32,7 @@ FilterAction::ReturnCode FilterActionReplyTo::process(ItemContext &context, bool
     if (!header) {
         header = new KMime::Headers::Generic(replyTo.constData());
     }
-    header->fromUnicodeString(mParameter, "utf-8");
+    header->fromUnicodeString(mParameter);
     msg->setHeader(header);
     msg->assemble();
 

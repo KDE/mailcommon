@@ -63,9 +63,9 @@ FilterAction::ReturnCode FilterActionSetIdentity::process(ItemContext &context, 
     }
     if (currentId != mParameter) {
         auto header = new KMime::Headers::Generic("X-KMail-Identity");
-        header->fromUnicodeString(QString::number(mParameter), "utf-8");
+        header->fromUnicodeString(QString::number(mParameter));
         if (applyOnOutbound) {
-            msg->from()->fromUnicodeString(ident.fullEmailAddr(), "utf-8");
+            msg->from()->fromUnicodeString(ident.fullEmailAddr());
             if (!ident.bcc().isEmpty()) {
                 const auto mailboxes = KMime::Types::Mailbox::listFromUnicodeString(ident.bcc());
                 for (const KMime::Types::Mailbox &mailbox : mailboxes) {

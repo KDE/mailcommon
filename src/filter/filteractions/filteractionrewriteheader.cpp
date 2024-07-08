@@ -74,7 +74,7 @@ FilterAction::ReturnCode FilterActionRewriteHeader::process(ItemContext &context
         if (!newheader) {
             newheader = new KMime::Headers::Generic(param.constData());
         }
-        newheader->fromUnicodeString(newValue, "utf-8");
+        newheader->fromUnicodeString(newValue);
         msg->setHeader(newheader);
         msg->assemble();
 

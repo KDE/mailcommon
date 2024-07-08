@@ -43,7 +43,7 @@ FilterAction::ReturnCode FilterActionAddHeader::process(ItemContext &context, bo
     if (!header) {
         header = new KMime::Headers::Generic(mParameter.toLatin1().constData());
     }
-    header->fromUnicodeString(mValue, "utf-8");
+    header->fromUnicodeString(mValue);
 
     msg->setHeader(header);
     msg->assemble();

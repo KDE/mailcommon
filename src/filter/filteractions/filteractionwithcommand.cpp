@@ -254,7 +254,7 @@ FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &co
             if (uid != newUid) {
                 aMsg->setFrozen(false);
                 auto header = new KMime::Headers::Generic("X-UID");
-                header->fromUnicodeString(uid, "utf-8");
+                header->fromUnicodeString(uid);
                 aMsg->setHeader(header);
                 aMsg->assemble();
             }
