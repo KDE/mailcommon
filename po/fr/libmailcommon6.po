@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-04 00:39+0000\n"
-"PO-Revision-Date: 2024-06-26 13:11+0200\n"
+"PO-Revision-Date: 2024-07-05 10:33+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -1757,8 +1757,7 @@ msgid "Down"
 msgstr "Bas"
 
 #: folder/folderrequester.cpp:45
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Sélectionner un dossier"
@@ -2164,11 +2163,10 @@ msgid "Encryption"
 msgstr "Chiffrement"
 
 #: search/searchpatternedit.cpp:144
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
-msgstr "Choisissez ou saisissez votre propre critère"
+msgstr "Sélectionnez ou saisissez votre propre critère"
 
 #: search/searchpatternedit.cpp:145
 #, kde-format
@@ -2598,11 +2596,10 @@ msgid "Has Attachment"
 msgstr "Possède une pièce jointe"
 
 #: snippets/snippetattachmentwidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Click on button for selecting attachment file"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
-msgstr "Cliquer sur le bouton pour sélectionner la pièce jointe"
+msgstr "Cliquez sur le bouton pour sélectionner une pièce jointe"
 
 #: snippets/snippetattachmentwidget.cpp:32
 #, kde-format
