@@ -64,7 +64,7 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Messa
     static const QRegularExpression re(QStringLiteral("%([0-9-]+)"));
 
     // search for '%n'
-    QRegularExpressionMatchIterator iter = re.globalMatch(result);
+    QRegularExpressionMatchIterator iter = re.globalMatchView(result);
     while (iter.hasNext()) {
         // and save the encountered 'n' in a list.
         bool ok = false;
