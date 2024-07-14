@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-04 00:39+0000\n"
-"PO-Revision-Date: 2024-05-20 23:12+0200\n"
+"PO-Revision-Date: 2024-07-13 12:09+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -42,8 +42,7 @@ msgid "Never"
 msgstr "Inoiz ez"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, fuzzy, kde-format
-#| msgid "Save Settings and Expire Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Gorde ezarpenak eta orain iraungi"
@@ -231,8 +230,7 @@ msgid "&Use custom message templates in this folder"
 msgstr "&Erabili norberak finkatutako mezu txantiloiak karpeta honetan"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
-#, fuzzy, kde-format
-#| msgid "&Copy Global Templates"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "&Kopiatu txantiloi orokorrak"
@@ -317,15 +315,13 @@ msgid "Select Folder"
 msgstr "Hautatu karpeta"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
-#, fuzzy, kde-format
-#| msgid "Folder path was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
-msgstr "Karpetaren bide-izena «%1» zen."
+msgstr "Karpetaren bide-izena \"%1\" zen."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
-#, fuzzy, kde-format
-#| msgid "The following folders can be used for this filter:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Ondoko karpetak erabil daitezke iragazki horretarako:"
@@ -365,8 +361,7 @@ msgid "Select sound"
 msgstr "Hautatu soinua"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
-#, fuzzy, kde-format
-#| msgid "Sound file was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "Soinu fitxategia «%1» zen."
@@ -385,8 +380,7 @@ msgid "Select Tag"
 msgstr "Hautatu etiketa"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
-#, fuzzy, kde-format
-#| msgid "Tag was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Etiketa «%1» zen."
@@ -460,11 +454,10 @@ msgid "Add Header"
 msgstr "Gehitu goiburua"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
-#, fuzzy, kde-format
-#| msgid "With value:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
-msgstr "Balioarekin:"
+msgstr "Balio honekin:"
 
 #: filter/filteractions/filteractionaddheader.cpp:202
 #, kde-format
@@ -520,15 +513,13 @@ msgid "KMail Filter"
 msgstr "KMail iragazkia"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
-#, fuzzy, kde-format
-#| msgid "with category"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
 msgstr "kategoriarekin"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
-#, fuzzy, kde-format
-#| msgid "in address book"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "helbide-liburuan"
@@ -647,11 +638,10 @@ msgid "Forward To"
 msgstr "Birbidali Nori"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, fuzzy, kde-format
-#| msgid "The addressee to whom the message will be forwarded."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
-msgstr "Mezua birbidaliko zaion horren helbidea."
+msgstr "Mezua birbidaliko zaion hartzailea."
 
 #: filter/filteractions/filteractionforward.cpp:92
 #, kde-format
@@ -665,11 +655,10 @@ msgid "Default Template"
 msgstr "Txantiloi lehenetsia"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, fuzzy, kde-format
-#| msgid "The template used when forwarding"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
-msgstr "Birbidaltzean erabilitako txantiloia"
+msgstr "Birbidaltzeko erabilitako txantiloia"
 
 #: filter/filteractions/filteractionforward.cpp:111
 #, kde-format
@@ -759,15 +748,13 @@ msgid "Search string is empty."
 msgstr "Bilatzeko katea hutsik dago."
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
-#, fuzzy, kde-format
-#| msgid "Replace:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Ordeztu:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
-#, fuzzy, kde-format
-#| msgid "With:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
 msgstr "Honekin:"
@@ -931,15 +918,13 @@ msgid "Status not defined."
 msgstr "Egoera definitu gabe."
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, fuzzy, kde-format
-#| msgid "Please select an action."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Mesedez, aukeratu ekintza bat."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, fuzzy, kde-format
-#| msgid "Help"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Laguntza"
@@ -961,8 +946,7 @@ msgid "Save…"
 msgstr "Gorde…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Share…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "Partekatu..."
@@ -1048,18 +1032,16 @@ msgid "Export Filters"
 msgstr "Esportatu iragazkiak"
 
 #: filter/filterselectiondialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Hautatu dena"
 
 #: filter/filterselectiondialog.cpp:30
-#, fuzzy, kde-format
-#| msgid "Unselect All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
-msgstr "Desautatu dena"
+msgstr "Deshautatu dena"
 
 #: filter/filterselectiondialog.cpp:34
 #, kde-format
@@ -1086,10 +1068,7 @@ msgid "Discard"
 msgstr "Baztertu"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
-#, fuzzy, kde-format
-#| msgid ""
-#| "The following filters are invalid (e.g. containing no actions or no "
-#| "search rules). Discard or edit invalid filters?"
+#, kde-format
 msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
@@ -1207,8 +1186,7 @@ msgid "Advanced"
 msgstr "Aurreratua"
 
 #: filter/kmfilterdialog.cpp:182
-#, fuzzy, kde-format
-#| msgid "Filter actions:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Iragazte ekintzak:"
@@ -1316,15 +1294,13 @@ msgid "Icon for this filter:"
 msgstr "Iragazki honetarako ikonoa:"
 
 #: filter/kmfilterdialog.cpp:287
-#, fuzzy, kde-format
-#| msgid "Run selected filter(s) on: "
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Exekutatu hautatutako iragazkia(k) hemen:"
 
 #: filter/kmfilterdialog.cpp:293
-#, fuzzy, kde-format
-#| msgid "Run Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Exekutatu orain"
@@ -1505,22 +1481,19 @@ msgid "New"
 msgstr "Berria"
 
 #: filter/kmfilterlistbox.cpp:141
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Kopiatu"
 
 #: filter/kmfilterlistbox.cpp:142
-#, fuzzy, kde-format
-#| msgid "Delete"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Ezabatu"
 
 #: filter/kmfilterlistbox.cpp:143
-#, fuzzy, kde-format
-#| msgid "Rename"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Berrizendatu"
@@ -1651,8 +1624,7 @@ msgid "Any action defined."
 msgstr "Definitutako edozein ekintza."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Jo"
@@ -1664,8 +1636,7 @@ msgid "Select Sound File"
 msgstr "Hautatu soinu-fitxategia"
 
 #: filter/soundtestwidget.cpp:107
-#, fuzzy, kde-format
-#| msgid "Pause"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr "Eten"
@@ -1760,8 +1731,7 @@ msgid "Down"
 msgstr "Behera"
 
 #: folder/folderrequester.cpp:45
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Hautatu karpeta"
@@ -1882,8 +1852,7 @@ msgid "Do Not Go To"
 msgstr "Ez joan hona"
 
 #: folder/foldertreewidget.cpp:78
-#, fuzzy, kde-format
-#| msgid "You can start typing to filter the list of folders."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
 msgstr "Karpeten zerrenda iragazteko tekleatzen has zaitezke."
@@ -2153,15 +2122,13 @@ msgid "Encryption"
 msgstr "Zifratzea"
 
 #: search/searchpatternedit.cpp:144
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Hautatu edo tekleatu zure irizpide propioa"
 
 #: search/searchpatternedit.cpp:145
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Hautatu edo tekleatu zure irizpide propioa"
@@ -2402,8 +2369,7 @@ msgid "is not"
 msgstr "ez da"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "encrypted"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "zifratuta"
@@ -2589,15 +2555,13 @@ msgid "Has Attachment"
 msgstr "Eranskina du"
 
 #: snippets/snippetattachmentwidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Click on button for selecting attachment file"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr "Egin klik botoiari eranskin fitxategia hautatzeko"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Attachments"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Hautatu eranskinak"
@@ -2614,15 +2578,13 @@ msgid "Customize File Name Attachment"
 msgstr "Egokitu eranskinaren fitxategi-izena"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Filename:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "Fitxategi-izena:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, fuzzy, kde-format
-#| msgid "Insert Variables"
+#, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Sartu aldagaiak"
@@ -2774,11 +2736,10 @@ msgid "Enter Values for Variables"
 msgstr "Aldagaien balioak sartzea"
 
 #: snippets/snippetvariabledialog.cpp:40
-#, fuzzy, kde-format
-#| msgid "Enter the replacement values for '%1':"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
-msgstr "Sartu «%1»(e)ren ordezko balioa:"
+msgstr "Sartu \"%1\" ordezkatzeko balioak:"
 
 #: snippets/snippetvariabledialog.cpp:45
 #, kde-format
@@ -2930,15 +2891,13 @@ msgid "&Italics"
 msgstr "&Etzana"
 
 #: tag/tagwidget.cpp:134
-#, fuzzy, kde-format
-#| msgid "Message tag &icon:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Mezu-etiketaren &ikonoa:"
 
 #: tag/tagwidget.cpp:145
-#, fuzzy, kde-format
-#| msgid "Shortc&ut:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "&Lasterbidea:"
@@ -2997,8 +2956,7 @@ msgid "Redirect Message"
 msgstr "Mezua birbideratzea"
 
 #: widgets/redirectdialog.cpp:123
-#, fuzzy, kde-format
-#| msgid "Select the recipient addresses to redirect to:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr "Aukeratu zein hartzaileren helbidera birbideratu:"
@@ -3036,8 +2994,7 @@ msgid "Empty Redirection Address"
 msgstr "Birbideratzeko helbiderik gabe"
 
 #: widgets/redirectwidget.cpp:39
-#, fuzzy, kde-format
-#| msgid "Use the Address-Selection Dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "Erabili Helbidea aukeratzeko elkarrizketa-koadroa"
