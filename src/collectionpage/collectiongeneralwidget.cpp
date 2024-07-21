@@ -53,11 +53,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     // sender identity
     mUseDefaultIdentityCheckBox = new QCheckBox(i18n("Use &default identity"), this);
     topLayout->addRow(QString(), mUseDefaultIdentityCheckBox);
-#if QT_VERSION < QT_VERSION_CHECK(6, 7, 0)
-    connect(mUseDefaultIdentityCheckBox, &QCheckBox::stateChanged, this, &CollectionGeneralWidget::slotIdentityCheckboxChanged);
-#else
     connect(mUseDefaultIdentityCheckBox, &QCheckBox::checkStateChanged, this, &CollectionGeneralWidget::slotIdentityCheckboxChanged);
-#endif
 
     mIdentityComboBox = new KIdentityManagementWidgets::IdentityCombo(KernelIf->identityManager(), this);
     mIdentityComboBox->setWhatsThis(

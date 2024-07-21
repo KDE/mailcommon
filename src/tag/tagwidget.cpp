@@ -75,11 +75,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     d->mTextColorCombo->setEnabled(false);
 
     connect(d->mTextColorCheck, &QCheckBox::toggled, d->mTextColorCombo, &KColorCombo::setEnabled);
-#if QT_VERSION < QT_VERSION_CHECK(6, 7, 0)
-    connect(d->mTextColorCheck, &QCheckBox::stateChanged, this, &TagWidget::slotEmitChangeCheck);
-#else
     connect(d->mTextColorCheck, &QCheckBox::checkStateChanged, this, &TagWidget::slotEmitChangeCheck);
-#endif
     connect(d->mTextColorCombo, &KColorCombo::activated, this, &TagWidget::slotEmitChangeCheck);
 
     // Third row for text background color
@@ -91,11 +87,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     d->mBackgroundColorCombo->setEnabled(false);
 
     connect(d->mBackgroundColorCheck, &QAbstractButton::toggled, d->mBackgroundColorCombo, &QWidget::setEnabled);
-#if QT_VERSION < QT_VERSION_CHECK(6, 7, 0)
-    connect(d->mBackgroundColorCheck, &QCheckBox::stateChanged, this, &TagWidget::slotEmitChangeCheck);
-#else
     connect(d->mBackgroundColorCheck, &QCheckBox::checkStateChanged, this, &TagWidget::slotEmitChangeCheck);
-#endif
     connect(d->mBackgroundColorCombo, &KColorCombo::activated, this, &TagWidget::slotEmitChangeCheck);
 
     // Fourth for font selection
@@ -115,11 +107,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
 
     connect(d->mTextFontCheck, &QAbstractButton::toggled, d->mBoldCheckBox, &QWidget::setEnabled);
     connect(d->mTextFontCheck, &QAbstractButton::toggled, d->mItalicCheckBox, &QWidget::setEnabled);
-#if QT_VERSION < QT_VERSION_CHECK(6, 7, 0)
-    connect(d->mTextFontCheck, &QCheckBox::stateChanged, this, &TagWidget::slotEmitChangeCheck);
-#else
     connect(d->mTextFontCheck, &QCheckBox::checkStateChanged, this, &TagWidget::slotEmitChangeCheck);
-#endif
     connect(d->mBoldCheckBox, &QAbstractButton::toggled, this, &TagWidget::slotEmitChangeCheck);
     connect(d->mItalicCheckBox, &QAbstractButton::toggled, this, &TagWidget::slotEmitChangeCheck);
 
@@ -155,11 +143,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     // Seventh for Toolbar checkbox
     d->mInToolbarCheck = new QCheckBox(i18n("Enable &toolbar button"), this);
     settings->addWidget(d->mInToolbarCheck, 7, 0);
-#if QT_VERSION < QT_VERSION_CHECK(6, 7, 0)
-    connect(d->mInToolbarCheck, &QCheckBox::stateChanged, this, &TagWidget::slotEmitChangeCheck);
-#else
     connect(d->mInToolbarCheck, &QCheckBox::checkStateChanged, this, &TagWidget::slotEmitChangeCheck);
-#endif
 }
 
 TagWidget::~TagWidget() = default;
