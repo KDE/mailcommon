@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-04 00:39+0000\n"
+"POT-Creation-Date: 2024-07-22 00:40+0000\n"
 "PO-Revision-Date: 2014-09-18 22:35+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -204,7 +204,7 @@ msgstr ""
 msgid "Use &default identity"
 msgstr "Stan&dardidentiteet bruken"
 
-#: collectionpage/collectiongeneralwidget.cpp:64
+#: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
@@ -220,7 +220,7 @@ msgstr ""
 "Identiteten kannst Du binnen den Instellendialoog inrichten (Instellen -> "
 "KMail instellen)."
 
-#: collectionpage/collectiongeneralwidget.cpp:70
+#: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
 msgid "&Sender identity:"
 msgstr "&Senner-Identiteet:"
@@ -295,7 +295,7 @@ msgstr ""
 msgid "Sho&w column:"
 msgstr "Tastkombinatschoon:"
 
-#: collectionpage/collectionviewwidget.cpp:85
+#: collectionpage/collectionviewwidget.cpp:77
 #, fuzzy, kde-format
 #| msgid "Message Status"
 msgid "Message format:"
@@ -2984,41 +2984,41 @@ msgstr "Naam:"
 msgid "Change te&xt color:"
 msgstr "Te&xtklöör ännern:"
 
-#: tag/tagwidget.cpp:86
+#: tag/tagwidget.cpp:82
 #, kde-format
 msgid "Change &background color:"
 msgstr "&Achtergrundklöör ännern:"
 
-#: tag/tagwidget.cpp:102
+#: tag/tagwidget.cpp:94
 #, kde-format
 msgid "Change fo&nt:"
 msgstr "S&chriftoort ännern:"
 
-#: tag/tagwidget.cpp:108
+#: tag/tagwidget.cpp:100
 #, kde-format
 msgid "&Bold"
 msgstr ""
 
-#: tag/tagwidget.cpp:112
+#: tag/tagwidget.cpp:104
 #, kde-format
 msgid "&Italics"
 msgstr ""
 
-#: tag/tagwidget.cpp:134
+#: tag/tagwidget.cpp:122
 #, fuzzy, kde-format
 #| msgid "Message tag &icon:"
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Narichten&mark:"
 
-#: tag/tagwidget.cpp:145
+#: tag/tagwidget.cpp:133
 #, fuzzy, kde-format
 #| msgid "Shortc&ut:"
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "Tast&kombinatschoon:"
 
-#: tag/tagwidget.cpp:156
+#: tag/tagwidget.cpp:144
 #, kde-format
 msgid "Enable &toolbar button"
 msgstr "Knoop op &Warktüüchbalken"

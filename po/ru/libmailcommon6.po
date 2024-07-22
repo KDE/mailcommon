@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-04 00:39+0000\n"
+"POT-Creation-Date: 2024-07-22 00:40+0000\n"
 "PO-Revision-Date: 2023-12-27 10:03+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -204,7 +204,7 @@ msgstr ""
 msgid "Use &default identity"
 msgstr "Использовать &профиль по умолчанию"
 
-#: collectionpage/collectiongeneralwidget.cpp:64
+#: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
@@ -220,7 +220,7 @@ msgstr ""
 "подписывания автоматически. Профили могут быть установлены в главном окне "
 "настройки. (Настройка -> Настроить KMail)"
 
-#: collectionpage/collectiongeneralwidget.cpp:70
+#: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
 msgid "&Sender identity:"
 msgstr "Профиль о&тправителя:"
@@ -290,7 +290,7 @@ msgstr "Получатель"
 msgid "Sho&w column:"
 msgstr "&Показать столбец:"
 
-#: collectionpage/collectionviewwidget.cpp:85
+#: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
 msgid "Message format:"
 msgstr "Формат письма по умолчанию:"
@@ -2967,41 +2967,41 @@ msgstr "&Название:"
 msgid "Change te&xt color:"
 msgstr "&Изменить цвет текста"
 
-#: tag/tagwidget.cpp:86
+#: tag/tagwidget.cpp:82
 #, kde-format
 msgid "Change &background color:"
 msgstr "Изменить цвет &фона:"
 
-#: tag/tagwidget.cpp:102
+#: tag/tagwidget.cpp:94
 #, kde-format
 msgid "Change fo&nt:"
 msgstr "И&зменить шрифт"
 
-#: tag/tagwidget.cpp:108
+#: tag/tagwidget.cpp:100
 #, kde-format
 msgid "&Bold"
 msgstr "Полу&жирный"
 
-#: tag/tagwidget.cpp:112
+#: tag/tagwidget.cpp:104
 #, kde-format
 msgid "&Italics"
 msgstr "&Курсив"
 
-#: tag/tagwidget.cpp:134
+#: tag/tagwidget.cpp:122
 #, fuzzy, kde-format
 #| msgid "Message tag &icon:"
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "З&начок метки:"
 
-#: tag/tagwidget.cpp:145
+#: tag/tagwidget.cpp:133
 #, fuzzy, kde-format
 #| msgid "Shortc&ut:"
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "&Комбинация клавиш:"
 
-#: tag/tagwidget.cpp:156
+#: tag/tagwidget.cpp:144
 #, kde-format
 msgid "Enable &toolbar button"
 msgstr "Доб&авить кнопку на панель инструментов"

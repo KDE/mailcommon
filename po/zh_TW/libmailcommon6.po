@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-04 00:39+0000\n"
+"POT-Creation-Date: 2024-07-22 00:40+0000\n"
 "PO-Revision-Date: 2024-07-05 15:38+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -189,7 +189,7 @@ msgstr ""
 msgid "Use &default identity"
 msgstr "使用預設身份(&D)"
 
-#: collectionpage/collectiongeneralwidget.cpp:64
+#: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
@@ -201,7 +201,7 @@ msgstr ""
 "您可以選擇要用哪一個身份做為寄件者，包括簽名檔、電子簽章與加密等等的設定都會"
 "套用您所選擇的身份的設定。"
 
-#: collectionpage/collectiongeneralwidget.cpp:70
+#: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
 msgid "&Sender identity:"
 msgstr "寄件人身份(&S)："
@@ -270,7 +270,7 @@ msgstr "收件者"
 msgid "Sho&w column:"
 msgstr "顯示欄位(&W)："
 
-#: collectionpage/collectionviewwidget.cpp:85
+#: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
 msgid "Message format:"
 msgstr "信件格式："
@@ -2780,39 +2780,39 @@ msgstr "名稱："
 msgid "Change te&xt color:"
 msgstr "改變文字顏色(&X)："
 
-#: tag/tagwidget.cpp:86
+#: tag/tagwidget.cpp:82
 #, kde-format
 msgid "Change &background color:"
 msgstr "變更背景顏色(&B)："
 
-#: tag/tagwidget.cpp:102
+#: tag/tagwidget.cpp:94
 #, kde-format
 msgid "Change fo&nt:"
 msgstr "改變字型(&N)："
 
-#: tag/tagwidget.cpp:108
+#: tag/tagwidget.cpp:100
 #, kde-format
 msgid "&Bold"
 msgstr "粗體(&B)"
 
-#: tag/tagwidget.cpp:112
+#: tag/tagwidget.cpp:104
 #, kde-format
 msgid "&Italics"
 msgstr "斜體(&I)"
 
-#: tag/tagwidget.cpp:134
+#: tag/tagwidget.cpp:122
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "信件標籤圖示(&I)："
 
-#: tag/tagwidget.cpp:145
+#: tag/tagwidget.cpp:133
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "快捷鍵(&U)："
 
-#: tag/tagwidget.cpp:156
+#: tag/tagwidget.cpp:144
 #, kde-format
 msgid "Enable &toolbar button"
 msgstr "開啟工具列按鈕(&T)"

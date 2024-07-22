@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-04 00:39+0000\n"
+"POT-Creation-Date: 2024-07-22 00:40+0000\n"
 "PO-Revision-Date: 2011-12-28 12:28-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -180,7 +180,7 @@ msgstr ""
 msgid "Use &default identity"
 msgstr "Úsái&d an t-aitheantas réamhshocraithe"
 
-#: collectionpage/collectiongeneralwidget.cpp:64
+#: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
@@ -190,7 +190,7 @@ msgid ""
 "main configuration dialog. (Settings -> Configure KMail)"
 msgstr ""
 
-#: collectionpage/collectiongeneralwidget.cpp:70
+#: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
 msgid "&Sender identity:"
 msgstr "A&itheantas an tseoltóra:"
@@ -264,7 +264,7 @@ msgstr ""
 msgid "Sho&w column:"
 msgstr "Aicearra:"
 
-#: collectionpage/collectionviewwidget.cpp:85
+#: collectionpage/collectionviewwidget.cpp:77
 #, fuzzy, kde-format
 #| msgid "Message Status"
 msgid "Message format:"
@@ -2869,41 +2869,41 @@ msgstr "Ainm:"
 msgid "Change te&xt color:"
 msgstr "Athraigh dath an téa&cs:"
 
-#: tag/tagwidget.cpp:86
+#: tag/tagwidget.cpp:82
 #, kde-format
 msgid "Change &background color:"
 msgstr "Athraigh &dath an chúlra:"
 
-#: tag/tagwidget.cpp:102
+#: tag/tagwidget.cpp:94
 #, kde-format
 msgid "Change fo&nt:"
 msgstr "Athraigh a&n chló:"
 
-#: tag/tagwidget.cpp:108
+#: tag/tagwidget.cpp:100
 #, kde-format
 msgid "&Bold"
 msgstr ""
 
-#: tag/tagwidget.cpp:112
+#: tag/tagwidget.cpp:104
 #, kde-format
 msgid "&Italics"
 msgstr ""
 
-#: tag/tagwidget.cpp:134
+#: tag/tagwidget.cpp:122
 #, fuzzy, kde-format
 #| msgid "Message Status"
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Stádas na Teachtaireachta"
 
-#: tag/tagwidget.cpp:145
+#: tag/tagwidget.cpp:133
 #, fuzzy, kde-format
 #| msgid "Shortc&ut:"
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "&Aicearra:"
 
-#: tag/tagwidget.cpp:156
+#: tag/tagwidget.cpp:144
 #, kde-format
 msgid "Enable &toolbar button"
 msgstr ""

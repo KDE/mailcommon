@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-04 00:39+0000\n"
+"POT-Creation-Date: 2024-07-22 00:40+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -173,7 +173,7 @@ msgstr ""
 msgid "Use &default identity"
 msgstr "使用默认身份(&D)"
 
-#: collectionpage/collectiongeneralwidget.cpp:64
+#: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
@@ -183,7 +183,7 @@ msgid ""
 "main configuration dialog. (Settings -> Configure KMail)"
 msgstr ""
 
-#: collectionpage/collectiongeneralwidget.cpp:70
+#: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
 msgid "&Sender identity:"
 msgstr "发件人身份(&S)："
@@ -252,7 +252,7 @@ msgstr "收件人"
 msgid "Sho&w column:"
 msgstr ""
 
-#: collectionpage/collectionviewwidget.cpp:85
+#: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
 msgid "Message format:"
 msgstr ""
@@ -2719,39 +2719,39 @@ msgstr "名称："
 msgid "Change te&xt color:"
 msgstr "更改文本颜色(&X)："
 
-#: tag/tagwidget.cpp:86
+#: tag/tagwidget.cpp:82
 #, kde-format
 msgid "Change &background color:"
 msgstr "更改背景颜色(&B)："
 
-#: tag/tagwidget.cpp:102
+#: tag/tagwidget.cpp:94
 #, kde-format
 msgid "Change fo&nt:"
 msgstr "更改字体(&N)："
 
-#: tag/tagwidget.cpp:108
+#: tag/tagwidget.cpp:100
 #, kde-format
 msgid "&Bold"
 msgstr "粗体(&B)"
 
-#: tag/tagwidget.cpp:112
+#: tag/tagwidget.cpp:104
 #, kde-format
 msgid "&Italics"
 msgstr "斜体(&I)"
 
-#: tag/tagwidget.cpp:134
+#: tag/tagwidget.cpp:122
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr ""
 
-#: tag/tagwidget.cpp:145
+#: tag/tagwidget.cpp:133
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr ""
 
-#: tag/tagwidget.cpp:156
+#: tag/tagwidget.cpp:144
 #, kde-format
 msgid "Enable &toolbar button"
 msgstr "启用工具栏按钮(&T)"

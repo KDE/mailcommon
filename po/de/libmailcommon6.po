@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-04 00:39+0000\n"
+"POT-Creation-Date: 2024-07-22 00:40+0000\n"
 "PO-Revision-Date: 2023-12-21 14:38+0100\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -215,7 +215,7 @@ msgstr ""
 msgid "Use &default identity"
 msgstr "&Standard-Identität verwenden"
 
-#: collectionpage/collectiongeneralwidget.cpp:64
+#: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
@@ -230,7 +230,7 @@ msgstr ""
 "oder Verschlüsselungsschlüssel automatisch auswählen. Identitäten werden im "
 "Haupteinrichtungsdialog festgelegt. (Einstellungen -> KMail einrichten)"
 
-#: collectionpage/collectiongeneralwidget.cpp:70
+#: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
 msgid "&Sender identity:"
 msgstr "Absender-&Identität:"
@@ -300,7 +300,7 @@ msgstr "Empfänger"
 msgid "Sho&w column:"
 msgstr "Spal&te anzeigen:"
 
-#: collectionpage/collectionviewwidget.cpp:85
+#: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
 msgid "Message format:"
 msgstr "Nachrichtenformat:"
@@ -2981,41 +2981,41 @@ msgstr "Name:"
 msgid "Change te&xt color:"
 msgstr "Text&farbe ändern:"
 
-#: tag/tagwidget.cpp:86
+#: tag/tagwidget.cpp:82
 #, kde-format
 msgid "Change &background color:"
 msgstr "Hintergrundfarbe ä&ndern:"
 
-#: tag/tagwidget.cpp:102
+#: tag/tagwidget.cpp:94
 #, kde-format
 msgid "Change fo&nt:"
 msgstr "&Schriftart ändern:"
 
-#: tag/tagwidget.cpp:108
+#: tag/tagwidget.cpp:100
 #, kde-format
 msgid "&Bold"
 msgstr "&Fett"
 
-#: tag/tagwidget.cpp:112
+#: tag/tagwidget.cpp:104
 #, kde-format
 msgid "&Italics"
 msgstr "&Kursiv"
 
-#: tag/tagwidget.cpp:134
+#: tag/tagwidget.cpp:122
 #, fuzzy, kde-format
 #| msgid "Message tag &icon:"
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Markierungs-S&ymbol:"
 
-#: tag/tagwidget.cpp:145
+#: tag/tagwidget.cpp:133
 #, fuzzy, kde-format
 #| msgid "Shortc&ut:"
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "&Kurzbefehl:"
 
-#: tag/tagwidget.cpp:156
+#: tag/tagwidget.cpp:144
 #, kde-format
 msgid "Enable &toolbar button"
 msgstr "&Werkzeugleisten-Knopf aktivieren"
