@@ -17,7 +17,7 @@
 using namespace MailCommon;
 CollectionTemplatesWidget::CollectionTemplatesWidget(QWidget *parent)
     : QWidget(parent)
-    , mCustom(new QCheckBox(i18n("&Use custom message templates in this folder"), this))
+    , mCustom(new QCheckBox(i18nc("@option:check", "&Use custom message templates in this folder"), this))
 {
     auto topLayout = new QVBoxLayout(this);
     auto topItems = new QHBoxLayout;

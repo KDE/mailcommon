@@ -71,7 +71,7 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(MailCommon::MailCommonSetting
     vbox->setContentsMargins({});
     page->setLayout(vbox);
 
-    d->mEnableAccountOrder = new QCheckBox(i18n("Use custom order"), this);
+    d->mEnableAccountOrder = new QCheckBox(i18nc("@option:check", "Use custom order"), this);
     connect(d->mEnableAccountOrder, &QCheckBox::clicked, this, &AccountConfigOrderDialog::slotEnableAccountOrder);
     vbox->addWidget(d->mEnableAccountOrder);
 

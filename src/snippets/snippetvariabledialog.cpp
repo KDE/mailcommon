@@ -42,7 +42,7 @@ SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<Q
 
     mainLayout->addWidget(mVariableValueText);
 
-    mSaveVariable = new QCheckBox(i18n("Make value &default"), this);
+    mSaveVariable = new QCheckBox(i18nc("@option:check", "Make value &default"), this);
     mSaveVariable->setChecked(false);
     mSaveVariable->setToolTip(i18nc("@info:tooltip",
                                     "Enable this to save the value entered to the right "

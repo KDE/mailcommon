@@ -22,7 +22,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     topLayout->setObjectName(QLatin1StringView("topLayout"));
     topLayout->setContentsMargins({});
     // should new mail in this folder be ignored?
-    mNotifyOnNewMailCheckBox = new QCheckBox(i18n("Act on new/unread mail in this folder"), this);
+    mNotifyOnNewMailCheckBox = new QCheckBox(i18nc("@option:check", "Act on new/unread mail in this folder"), this);
     mNotifyOnNewMailCheckBox->setWhatsThis(
         i18n("<qt><p>If this option is enabled then you will be notified about "
              "new/unread mail in this folder. Moreover, going to the "
@@ -35,7 +35,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
              "your trash and spam folder.</p></qt>"));
     topLayout->addRow(QString(), mNotifyOnNewMailCheckBox);
     // should replies to mails in this folder be kept in this same folder?
-    mKeepRepliesInSameFolderCheckBox = new QCheckBox(i18n("Keep replies in this folder"), this);
+    mKeepRepliesInSameFolderCheckBox = new QCheckBox(i18nc("@option:check", "Keep replies in this folder"), this);
     mKeepRepliesInSameFolderCheckBox->setWhatsThis(
         i18n("Check this option if you want replies you write "
              "to mails in this folder to be put in this same folder "
@@ -43,7 +43,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     topLayout->addRow(QString(), mKeepRepliesInSameFolderCheckBox);
 
     // should this folder be shown in the folder selection dialog?
-    mHideInSelectionDialogCheckBox = new QCheckBox(i18n("Hide this folder in the folder selection dialog"), this);
+    mHideInSelectionDialogCheckBox = new QCheckBox(i18nc("@option:check", "Hide this folder in the folder selection dialog"), this);
     mHideInSelectionDialogCheckBox->setWhatsThis(xi18nc("@info:whatsthis",
                                                         "Check this option if you do not want this folder "
                                                         "to be shown in folder selection dialogs, such as the <interface>"
@@ -51,7 +51,7 @@ CollectionGeneralWidget::CollectionGeneralWidget(QWidget *parent)
     topLayout->addRow(QString(), mHideInSelectionDialogCheckBox);
 
     // sender identity
-    mUseDefaultIdentityCheckBox = new QCheckBox(i18n("Use &default identity"), this);
+    mUseDefaultIdentityCheckBox = new QCheckBox(i18nc("@option:check", "Use &default identity"), this);
     topLayout->addRow(QString(), mUseDefaultIdentityCheckBox);
     connect(mUseDefaultIdentityCheckBox, &QCheckBox::checkStateChanged, this, &CollectionGeneralWidget::slotIdentityCheckboxChanged);
 

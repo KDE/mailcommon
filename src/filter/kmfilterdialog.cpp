@@ -190,7 +190,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
     mAdvOptsGroup->setContentsMargins({});
     {
         auto gl = new QGridLayout();
-        mApplyOnIn = new QCheckBox(i18n("Apply this filter to incoming messages:"), mAdvOptsGroup);
+        mApplyOnIn = new QCheckBox(i18nc("@option:check", "Apply this filter to incoming messages:"), mAdvOptsGroup);
         gl->addWidget(mApplyOnIn, 0, 0);
 
         auto radioGroupWidget = new QWidget(page2);
@@ -216,7 +216,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
         mAccountList = new KMFilterAccountList(mAdvOptsGroup);
         gl->addWidget(mAccountList, 0, 1, 4, 3);
 
-        mApplyOnOut = new QCheckBox(i18n("Apply this filter to &sent messages"), mAdvOptsGroup);
+        mApplyOnOut = new QCheckBox(i18nc("@option:check", "Apply this filter to &sent messages"), mAdvOptsGroup);
         mApplyOnOut->setToolTip(
             i18n("<p>The filter will be triggered <b>after</b> the message is sent "
                  "and it will only affect the local copy of the message.</p>"
@@ -224,17 +224,17 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
                  "please use \"Apply this filter <b>before</b> sending messages\".</p>"));
         gl->addWidget(mApplyOnOut, 5, 0, 1, 4);
 
-        mApplyBeforeOut = new QCheckBox(i18n("Apply this filter &before sending messages"), mAdvOptsGroup);
+        mApplyBeforeOut = new QCheckBox(i18nc("@option:check", "Apply this filter &before sending messages"), mAdvOptsGroup);
         mApplyBeforeOut->setToolTip(
             i18n("<p>The filter will be triggered <b>before</b> the message is sent "
                  "and it will affect both the local copy and the sent copy of the message.</p>"
                  "<p>This is required if the recipient's copy also needs to be modified.</p>"));
         gl->addWidget(mApplyBeforeOut, 6, 0, 1, 4);
 
-        mApplyOnCtrlJ = new QCheckBox(i18n("Apply this filter on manual &filtering"), mAdvOptsGroup);
+        mApplyOnCtrlJ = new QCheckBox(i18nc("@option:check", "Apply this filter on manual &filtering"), mAdvOptsGroup);
         gl->addWidget(mApplyOnCtrlJ, 7, 0, 1, 4);
 
-        mApplyOnAllFolders = new QCheckBox(i18n("Apply this filter on inbound emails in all folders"), mAdvOptsGroup);
+        mApplyOnAllFolders = new QCheckBox(i18nc("@option:check", "Apply this filter on inbound emails in all folders"), mAdvOptsGroup);
         mApplyOnAllFolders->setToolTip(
             i18n("<p>The filter will be applied on inbound emails from all folders "
                  "belonging to all accounts selected above. This is useful when using local filters "
@@ -242,10 +242,10 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
                  "by server-side filters.</p>"));
         gl->addWidget(mApplyOnAllFolders, 8, 0, 1, 4);
 
-        mStopProcessingHere = new QCheckBox(i18n("If this filter &matches, stop processing here"), mAdvOptsGroup);
+        mStopProcessingHere = new QCheckBox(i18nc("@option:check", "If this filter &matches, stop processing here"), mAdvOptsGroup);
         gl->addWidget(mStopProcessingHere, 9, 0, 1, 4);
 
-        mConfigureShortcut = new QCheckBox(i18n("Add this filter to the Apply Filter menu"), mAdvOptsGroup);
+        mConfigureShortcut = new QCheckBox(i18nc("@option:check", "Add this filter to the Apply Filter menu"), mAdvOptsGroup);
         gl->addWidget(mConfigureShortcut, 10, 0, 1, 2);
 
         mInMenuWidget = new QWidget(mAdvOptsGroup);
@@ -263,7 +263,7 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
             }
         });
 
-        mConfigureToolbar = new QCheckBox(i18n("Additionally add this filter to the toolbar"), mInMenuWidget);
+        mConfigureToolbar = new QCheckBox(i18nc("@option:check", "Additionally add this filter to the toolbar"), mInMenuWidget);
         inMenuLayout->addRow(mConfigureToolbar);
 
         mKeySeqWidget = new KKeySequenceWidget(mInMenuWidget);

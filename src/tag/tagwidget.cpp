@@ -67,7 +67,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     connect(d->mTagNameLineEdit, &QLineEdit::textChanged, this, &TagWidget::slotEmitChangeCheck);
 
     // Second row for text color
-    d->mTextColorCheck = new QCheckBox(i18n("Change te&xt color:"), this);
+    d->mTextColorCheck = new QCheckBox(i18nc("@option:check", "Change te&xt color:"), this);
     settings->addWidget(d->mTextColorCheck, 2, 0);
 
     d->mTextColorCombo = new KColorCombo(this);
@@ -79,7 +79,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     connect(d->mTextColorCombo, &KColorCombo::activated, this, &TagWidget::slotEmitChangeCheck);
 
     // Third row for text background color
-    d->mBackgroundColorCheck = new QCheckBox(i18n("Change &background color:"), this);
+    d->mBackgroundColorCheck = new QCheckBox(i18nc("@option:check", "Change &background color:"), this);
     settings->addWidget(d->mBackgroundColorCheck, 3, 0);
 
     d->mBackgroundColorCombo = new KColorCombo(this);
@@ -91,17 +91,17 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     connect(d->mBackgroundColorCombo, &KColorCombo::activated, this, &TagWidget::slotEmitChangeCheck);
 
     // Fourth for font selection
-    d->mTextFontCheck = new QCheckBox(i18n("Change fo&nt:"), this);
+    d->mTextFontCheck = new QCheckBox(i18nc("@option:check", "Change fo&nt:"), this);
     settings->addWidget(d->mTextFontCheck, 4, 0);
 
     auto fontLayout = new QVBoxLayout;
     settings->addLayout(fontLayout, 4, 1);
 
-    d->mBoldCheckBox = new QCheckBox(i18n("&Bold"));
+    d->mBoldCheckBox = new QCheckBox(i18nc("@option:check", "&Bold"));
     d->mBoldCheckBox->setEnabled(false);
     fontLayout->addWidget(d->mBoldCheckBox);
 
-    d->mItalicCheckBox = new QCheckBox(i18n("&Italics"));
+    d->mItalicCheckBox = new QCheckBox(i18nc("@option:check", "&Italics"));
     d->mItalicCheckBox->setEnabled(false);
     fontLayout->addWidget(d->mItalicCheckBox);
 
@@ -141,7 +141,7 @@ TagWidget::TagWidget(const QList<KActionCollection *> &actionCollections, QWidge
     }
 
     // Seventh for Toolbar checkbox
-    d->mInToolbarCheck = new QCheckBox(i18n("Enable &toolbar button"), this);
+    d->mInToolbarCheck = new QCheckBox(i18nc("@option:check", "Enable &toolbar button"), this);
     settings->addWidget(d->mInToolbarCheck, 7, 0);
     connect(d->mInToolbarCheck, &QCheckBox::checkStateChanged, this, &TagWidget::slotEmitChangeCheck);
 }
