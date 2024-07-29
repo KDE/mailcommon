@@ -28,9 +28,9 @@ CollectionViewWidget::CollectionViewWidget(QWidget *parent)
     , mAggregationComboBox(new MessageList::Utils::AggregationComboBox(this))
     , mUseDefaultThemeCheckBox(new QCheckBox(i18nc("@option:check", "Use default message list theme"), this))
     , mThemeComboBox(new MessageList::Utils::ThemeComboBox(this))
-    , mPreferHtmlToText(new QRadioButton(i18n("Prefer HTML to text"), this))
-    , mPreferTextToHtml(new QRadioButton(i18n("Prefer text to HTML"), this))
-    , mUseGlobalSettings(new QRadioButton(i18n("Use Global Settings"), this))
+    , mPreferHtmlToText(new QRadioButton(i18nc("@option:radio", "Prefer HTML to text"), this))
+    , mPreferTextToHtml(new QRadioButton(i18nc("@option:radio", "Prefer text to HTML"), this))
+    , mUseGlobalSettings(new QRadioButton(i18nc("@option:radio", "Use Global Settings"), this))
 {
     auto topLayout = new QFormLayout(this);
     topLayout->setObjectName(QLatin1StringView("topLayout"));

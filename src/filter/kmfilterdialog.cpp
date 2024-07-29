@@ -200,15 +200,15 @@ KMFilterDialog::KMFilterDialog(const QList<KActionCollection *> &actionCollectio
 
         auto bg = new QButtonGroup(mAdvOptsGroup);
 
-        mApplyOnForAll = new QRadioButton(i18n("From all accounts"), radioGroupWidget);
+        mApplyOnForAll = new QRadioButton(i18nc("@option:radio", "From all accounts"), radioGroupWidget);
         bg->addButton(mApplyOnForAll);
         vbl3->addWidget(mApplyOnForAll);
 
-        mApplyOnForTraditional = new QRadioButton(i18n("From all but online IMAP accounts"), radioGroupWidget);
+        mApplyOnForTraditional = new QRadioButton(i18nc("@option:radio", "From all but online IMAP accounts"), radioGroupWidget);
         bg->addButton(mApplyOnForTraditional);
         vbl3->addWidget(mApplyOnForTraditional);
 
-        mApplyOnForChecked = new QRadioButton(i18n("From selected accounts only"), radioGroupWidget);
+        mApplyOnForChecked = new QRadioButton(i18nc("@option:radio", "From selected accounts only"), radioGroupWidget);
         bg->addButton(mApplyOnForChecked);
         vbl3->addWidget(mApplyOnForChecked);
         vbl3->addStretch(100);

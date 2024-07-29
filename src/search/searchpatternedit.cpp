@@ -577,10 +577,10 @@ void SearchPatternEdit::initLayout(SearchPatternEditOptions options, SearchModeT
 
     const bool matchAllMessages = (options & MailCommon::SearchPatternEdit::MatchAllMessages);
     //------------the radio buttons
-    mAllRBtn = new QRadioButton(i18n("Match a&ll of the following"), this);
-    mAnyRBtn = new QRadioButton(i18n("Match an&y of the following"), this);
+    mAllRBtn = new QRadioButton(i18nc("@option:radio", "Match a&ll of the following"), this);
+    mAnyRBtn = new QRadioButton(i18nc("@option:radio", "Match an&y of the following"), this);
     if (matchAllMessages) {
-        mAllMessageRBtn = new QRadioButton(i18n("Match all messages"), this);
+        mAllMessageRBtn = new QRadioButton(i18nc("@option:radio", "Match all messages"), this);
     }
 
     mAllRBtn->setObjectName(QLatin1StringView("mAllRBtn"));
