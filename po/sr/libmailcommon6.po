@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-22 00:40+0000\n"
+"POT-Creation-Date: 2024-07-30 00:42+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -59,6 +59,7 @@ msgstr "Сачувај поставке и избаци застареле са�
 #: collectionpage/collectionexpirywidget.cpp:67
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
+msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Прочитане поруке застаревају након"
 
@@ -153,7 +154,9 @@ msgstr ""
 "фасцикла нестати чим се дијалог за подешавање затвори."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Act on new/unread mail in this folder"
+msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr "Обавести о новој пошти у овој фасцикли"
 
@@ -175,7 +178,9 @@ msgstr ""
 "игнорисање порука у фасциклама смећа или спама.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "Чувај одговоре у овој фасцикли"
 
@@ -191,7 +196,9 @@ msgstr ""
 "за послату пошту."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide this folder in the folder selection dialog"
+msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "Сакриј ову фасциклу у дијалогу за избор фасцикли"
 
@@ -207,7 +214,9 @@ msgstr ""
 "interface>)."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "Подразумевани идентитет"
 
@@ -234,6 +243,7 @@ msgstr "Идентитет &пошиљаоца:"
 #: collectionpage/collectiontemplateswidget.cpp:20
 #, fuzzy, kde-format
 #| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "Чувај одговоре у овој фасцикли"
 
@@ -245,26 +255,31 @@ msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:27
 #, kde-format
+msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, kde-format
+msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
+msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr ""
 
@@ -1259,30 +1274,37 @@ msgid "Filter actions:"
 msgstr "Радње филтера"
 
 #: filter/kmfilterdialog.cpp:193
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to incoming messages:"
+msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Примени овај филтер на долазне поруке:"
 
 #: filter/kmfilterdialog.cpp:203
 #, fuzzy, kde-format
 #| msgid "from all accounts"
+msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "са свих налога"
 
 #: filter/kmfilterdialog.cpp:207
 #, fuzzy, kde-format
 #| msgid "from all but online IMAP accounts"
+msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "са свих осим ИМАП налог на вези"
 
 #: filter/kmfilterdialog.cpp:211
 #, fuzzy, kde-format
 #| msgid "from checked accounts only"
+msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "само са означених налога"
 
 #: filter/kmfilterdialog.cpp:219
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to &sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "Примени овај филтер на по&слате поруке"
 
@@ -1299,7 +1321,9 @@ msgstr ""
 "изаберите <i>Примени овај филтер пре слања порука</i>.</p>"
 
 #: filter/kmfilterdialog.cpp:227
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter &before sending messages"
+msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "Примени овај филтер &пре слања порука"
 
@@ -1315,12 +1339,16 @@ msgstr ""
 "изменити и примаочеву копију.</p>"
 
 #: filter/kmfilterdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on manual &filtering"
+msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "Примени овај филтер при &ручном филтрирању"
 
 #: filter/kmfilterdialog.cpp:237
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on inbound emails in all folders"
+msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "Примени овај филтер на долазне поруке у свим фасциклама"
 
@@ -1338,17 +1366,23 @@ msgstr ""
 "друге фасцикле преко филтера на серверу.</p>"
 
 #: filter/kmfilterdialog.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "If this filter &matches, stop processing here"
+msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "&Ако овај филтер поклопи, заустави даљу обраду"
 
 #: filter/kmfilterdialog.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add this filter to the Apply Filter menu"
+msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Додај овај филтер у мени „Примени филтере“"
 
 #: filter/kmfilterdialog.cpp:266
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Additionally add this filter to the toolbar"
+msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Такође додај овај филтер на траку алатки"
 
@@ -1800,7 +1834,9 @@ msgid "Edit Accounts Order"
 msgstr "Уређивање редоследа налога"
 
 #: folder/accountconfigorderdialog.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use custom order"
+msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "Посебан редослед"
 
@@ -2249,17 +2285,23 @@ msgid "Choose or type your own criteria"
 msgstr "Изаберите или унесите сопствене критеријуме."
 
 #: search/searchpatternedit.cpp:580
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match a&ll of the following"
+msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "Уклопи &све од следећег"
 
 #: search/searchpatternedit.cpp:581
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match an&y of the following"
+msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "Уклопи &било шта од следећег"
 
 #: search/searchpatternedit.cpp:583
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match all messages"
+msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Уклопи све поруке"
 
@@ -2890,7 +2932,9 @@ msgid "Enter the replacement values for '%1':"
 msgstr "Унесите вредност замене за „%1“:"
 
 #: snippets/snippetvariabledialog.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Make value &default"
+msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Постави као по&дразумевану"
 
@@ -3017,27 +3061,37 @@ msgid "Name:"
 msgstr "Име:"
 
 #: tag/tagwidget.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change te&xt color:"
+msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "Боја &текста:"
 
 #: tag/tagwidget.cpp:82
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change &background color:"
+msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "Боја &позадине:"
 
 #: tag/tagwidget.cpp:94
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change fo&nt:"
+msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "&Фонт:"
 
 #: tag/tagwidget.cpp:100
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Bold"
+msgctxt "@option:check"
 msgid "&Bold"
 msgstr "&Подебљано"
 
 #: tag/tagwidget.cpp:104
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Italics"
+msgctxt "@option:check"
 msgid "&Italics"
 msgstr "&Курзивно"
 
@@ -3056,7 +3110,9 @@ msgid "Shortc&ut:"
 msgstr "&Пречица:"
 
 #: tag/tagwidget.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enable &toolbar button"
+msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "&Дугме на траци алатки"
 

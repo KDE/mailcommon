@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-22 00:40+0000\n"
+"POT-Creation-Date: 2024-07-30 00:42+0000\n"
 "PO-Revision-Date: 2024-06-08 12:09+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -51,7 +51,9 @@ msgid "Save Settings and Expire Now"
 msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Expire messages with invalid date"
+msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "اجعل الرّسائل ذات التاريخ الفاسد تنقضي"
 
@@ -134,6 +136,7 @@ msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:25
 #, kde-format
+msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr ""
 
@@ -150,7 +153,9 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "أبقِ الرّدود في هذا المجلّد"
 
@@ -165,7 +170,9 @@ msgstr ""
 "المجلّد) أن تبقى في ذات المجلّد بعد إرسالها بدلًا من مجلّد البريد المرسل المضبوط."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide this folder in the folder selection dialog"
+msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "أخفِ هذا المجلّد في حواريّ اختيار المجلّدات"
 
@@ -178,7 +185,9 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "استخدم الهويّة المب&دئيّة"
 
@@ -198,7 +207,9 @@ msgid "&Sender identity:"
 msgstr "هويّة المر&سل:"
 
 #: collectionpage/collectiontemplateswidget.cpp:20
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Use custom message templates in this folder"
+msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "ا&ستخدم قوالب رسائل مخصّصة في هذا المجلد"
 
@@ -210,27 +221,37 @@ msgid "&Copy Global Templates"
 msgstr "ا&نسخ القوالب العموميّة"
 
 #: collectionpage/collectionviewwidget.cpp:27
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use default message list aggregation:"
+msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "استخدم تجميعة قائمة الرسائل المب&دئيّة"
 
 #: collectionpage/collectionviewwidget.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use default message list theme"
+msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "استخدم سمة قائمة الرسائل المب&دئيّة"
 
 #: collectionpage/collectionviewwidget.cpp:31
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Prefer HTML to text"
+msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr "فضّل HTML على النّص الصّرف"
 
 #: collectionpage/collectionviewwidget.cpp:32
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Prefer text to HTML"
+msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr "فضّل النّص الصّرف على HTML"
 
 #: collectionpage/collectionviewwidget.cpp:33
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use Global Settings"
+msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr "استخدم الإعدادات العموميّة"
 
@@ -1147,27 +1168,37 @@ msgid "Filter actions:"
 msgstr "إجراءات المرشّحات:"
 
 #: filter/kmfilterdialog.cpp:193
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to incoming messages:"
+msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "طبّق هذا المرشّح على الرّسائل الواردة:"
 
 #: filter/kmfilterdialog.cpp:203
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "From all accounts"
+msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "من كلّ الحسابات"
 
 #: filter/kmfilterdialog.cpp:207
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "From all but online IMAP accounts"
+msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "من كلّ الحسابات عدا حسابات الإنترنت IMAP"
 
 #: filter/kmfilterdialog.cpp:211
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "From selected accounts only"
+msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "من الحسابات المحدّدة فقط"
 
 #: filter/kmfilterdialog.cpp:219
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to &sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "طبّق هذا المرشّح على الرّسائل المر&سلة"
 
@@ -1181,7 +1212,9 @@ msgid ""
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:227
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter &before sending messages"
+msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "طبّق هذا المرشّح &قبل إرسال الرّسائل"
 
@@ -1194,14 +1227,18 @@ msgid ""
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply on manual filtering"
+msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
-msgstr ""
+msgstr "طبق على الترشيح اليدوي"
 
 #: filter/kmfilterdialog.cpp:237
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to incoming messages:"
+msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
-msgstr ""
+msgstr "طبّق هذا المرشّح على الرّسائل الواردة:"
 
 #: filter/kmfilterdialog.cpp:239
 #, kde-format
@@ -1214,18 +1251,23 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:245
 #, kde-format
+msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add this filter to the Apply Filter menu"
+msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "أضف هذا المرشّح إلى قائمة «طبّق مرشّح»"
 
 #: filter/kmfilterdialog.cpp:266
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add this filter to the Apply Filter menu"
+msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
-msgstr ""
+msgstr "أضف هذا المرشّح إلى قائمة «طبّق مرشّح»"
 
 #: filter/kmfilterdialog.cpp:273
 #, kde-format
@@ -1612,7 +1654,9 @@ msgid "Edit Accounts Order"
 msgstr "حرر ترتيب الحسابات"
 
 #: folder/accountconfigorderdialog.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use custom order"
+msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "استخدم ترتيب مخصص"
 
@@ -2046,17 +2090,23 @@ msgid "Choose or type your own criteria"
 msgstr "اختر أو اكتب معيارك الخاص"
 
 #: search/searchpatternedit.cpp:580
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match a&ll of the following"
+msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "طابق &جميع التالي"
 
 #: search/searchpatternedit.cpp:581
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match an&y of the following"
+msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "طابق أ&ي من التالي"
 
 #: search/searchpatternedit.cpp:583
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match all messages"
+msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "طابق كلّ الرّسائل"
 
@@ -2660,6 +2710,7 @@ msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:45
 #, kde-format
+msgctxt "@option:check"
 msgid "Make value &default"
 msgstr ""
 
@@ -2774,27 +2825,36 @@ msgid "Name:"
 msgstr "الاسم:"
 
 #: tag/tagwidget.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change fo&nt:"
+msgctxt "@option:check"
 msgid "Change te&xt color:"
-msgstr ""
+msgstr "غيّر ال&خط:"
 
 #: tag/tagwidget.cpp:82
 #, kde-format
+msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr ""
 
 #: tag/tagwidget.cpp:94
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change fo&nt:"
+msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "غيّر ال&خط:"
 
 #: tag/tagwidget.cpp:100
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Bold"
+msgctxt "@option:check"
 msgid "&Bold"
 msgstr "&ثخين"
 
 #: tag/tagwidget.cpp:104
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Italics"
+msgctxt "@option:check"
 msgid "&Italics"
 msgstr "&مائل"
 
@@ -2812,6 +2872,7 @@ msgstr "الا&ختصار:"
 
 #: tag/tagwidget.cpp:144
 #, kde-format
+msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr ""
 

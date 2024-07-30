@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-22 00:40+0000\n"
+"POT-Creation-Date: 2024-07-30 00:42+0000\n"
 "PO-Revision-Date: 2024-01-20 00:04+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -48,7 +48,9 @@ msgid "Save Settings and Expire Now"
 msgstr "Beállítások mentése és lejárat most"
 
 #: collectionpage/collectionexpirywidget.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Expire messages with invalid date"
+msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Érvénytelen dátumú üzenetek lejárata"
 
@@ -141,7 +143,9 @@ msgstr ""
 "következtében a mappa el fog tűnni, miután bezárta ezt a beállítóablakot."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Act on new/unread mail in this folder"
+msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr "Értesítés, ha új vagy olvasatlan üzenet van a mappában"
 
@@ -165,7 +169,9 @@ msgstr ""
 "törölt és kéretlen üzeneteket tartalmazó mappákban.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "A válaszok megőrzése ebben a mappában"
 
@@ -181,7 +187,9 @@ msgstr ""
 "mappába kerüljön, hanem ugyanide, ebbe a mappába."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide this folder in the folder selection dialog"
+msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "A mappa elrejtése a mappaválasztó ablakban"
 
@@ -197,7 +205,9 @@ msgstr ""
 "párbeszédablakban."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "Az &alapértelmezett azonosító használata"
 
@@ -222,7 +232,9 @@ msgid "&Sender identity:"
 msgstr "A feladó a&zonosítója:"
 
 #: collectionpage/collectiontemplateswidget.cpp:20
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Use custom message templates in this folder"
+msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "Egyéni üzenetsablonok has&ználata ebben a mappában"
 
@@ -234,27 +246,37 @@ msgid "&Copy Global Templates"
 msgstr "A globális sablonok más&olása"
 
 #: collectionpage/collectionviewwidget.cpp:27
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use default message list aggregation:"
+msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "Alapértelmezett üzenetlista-összesítés használata:"
 
 #: collectionpage/collectionviewwidget.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use default message list theme"
+msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "Alapértelmezett üzenetlista-téma használata"
 
 #: collectionpage/collectionviewwidget.cpp:31
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Prefer HTML to text"
+msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr "Inkább HTML, mint szöveg"
 
 #: collectionpage/collectionviewwidget.cpp:32
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Prefer text to HTML"
+msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr "Inkább szöveg, mint HTML"
 
 #: collectionpage/collectionviewwidget.cpp:33
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use Global Settings"
+msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr "Globális beállítások használata"
 
@@ -1226,27 +1248,37 @@ msgid "Filter actions:"
 msgstr "Szűrőműveletek:"
 
 #: filter/kmfilterdialog.cpp:193
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to incoming messages:"
+msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Szűrő alkalmazása a bejövő üzenetekre:"
 
 #: filter/kmfilterdialog.cpp:203
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "From all accounts"
+msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "Minden fiókból"
 
 #: filter/kmfilterdialog.cpp:207
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "From all but online IMAP accounts"
+msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "Mindegyik azonosítónál, kivéve az IMAP-osakat"
 
 #: filter/kmfilterdialog.cpp:211
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "From selected accounts only"
+msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "Csak a megjelölt azonosítóknál"
 
 #: filter/kmfilterdialog.cpp:219
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to &sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "A szűrő alkalmazása az &elküldött üzenetekre"
 
@@ -1264,7 +1296,9 @@ msgstr ""
 "üzenetekre <b>elküldés előtt</b>” lehetőséget.</p>"
 
 #: filter/kmfilterdialog.cpp:227
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter &before sending messages"
+msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "A szűrő alkalmazása az üzenetekre &elküldés előtt"
 
@@ -1280,12 +1314,16 @@ msgstr ""
 "p><p>Ez kötelező akkor, ha a címzettek példányát is módosítani szükséges.</p>"
 
 #: filter/kmfilterdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on manual &filtering"
+msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "Alkalmazás csak kéz&i szűrésnél"
 
 #: filter/kmfilterdialog.cpp:237
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on inbound emails in all folders"
+msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "Szűrő alkalmazása az összes mappa összes bejövő e-mailjére"
 
@@ -1303,17 +1341,23 @@ msgstr ""
 "mappákba kiszolgáló oldali szűrőkkel.</p>"
 
 #: filter/kmfilterdialog.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "If this filter &matches, stop processing here"
+msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "Illeszkedés &esetén álljon meg a feldolgozás"
 
 #: filter/kmfilterdialog.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add this filter to the Apply Filter menu"
+msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "A szűrő hozzáadása „A szűrők alkalmazása” menüpontba"
 
 #: filter/kmfilterdialog.cpp:266
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Additionally add this filter to the toolbar"
+msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Továbbá a szűrő hozzáadása az eszköztárhoz"
 
@@ -1758,7 +1802,9 @@ msgid "Edit Accounts Order"
 msgstr "Fióksorrend szerkesztése"
 
 #: folder/accountconfigorderdialog.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use custom order"
+msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "Egyéni sorrend használata"
 
@@ -2195,17 +2241,23 @@ msgid "Choose or type your own criteria"
 msgstr "Válassza ki vagy gépelje be a saját kritériumait"
 
 #: search/searchpatternedit.cpp:580
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match a&ll of the following"
+msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "Illeszkedés a következők &mindegyikéhez"
 
 #: search/searchpatternedit.cpp:581
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match an&y of the following"
+msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "Illeszkedés a következők legalább &egyikéhez"
 
 #: search/searchpatternedit.cpp:583
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match all messages"
+msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Illeszkedés minden üzenethez"
 
@@ -2820,7 +2872,9 @@ msgid "Enter the replacement values for '%1':"
 msgstr "Adja meg a(z) „%1” helyettesítési értékeit:"
 
 #: snippets/snippetvariabledialog.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Make value &default"
+msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Az érték &alapértelmezetté tétele"
 
@@ -2944,27 +2998,37 @@ msgid "Name:"
 msgstr "Név:"
 
 #: tag/tagwidget.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change te&xt color:"
+msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "&Szövegszín módosítása:"
 
 #: tag/tagwidget.cpp:82
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change &background color:"
+msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "&Háttérszín módosítása:"
 
 #: tag/tagwidget.cpp:94
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change fo&nt:"
+msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "&Betűkészlet módosítása:"
 
 #: tag/tagwidget.cpp:100
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Bold"
+msgctxt "@option:check"
 msgid "&Bold"
 msgstr "&Félkövér"
 
 #: tag/tagwidget.cpp:104
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Italics"
+msgctxt "@option:check"
 msgid "&Italics"
 msgstr "&Dőlt"
 
@@ -2983,7 +3047,9 @@ msgid "Shortc&ut:"
 msgstr "&Gyorsbillentyű:"
 
 #: tag/tagwidget.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enable &toolbar button"
+msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Eszköztárgomb &engedélyezése"
 

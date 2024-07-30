@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-22 00:40+0000\n"
+"POT-Creation-Date: 2024-07-30 00:42+0000\n"
 "PO-Revision-Date: 2020-08-08 16:45+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -50,6 +50,7 @@ msgstr "Gem indstillinger og lad udløbe nu"
 #: collectionpage/collectionexpirywidget.cpp:67
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
+msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Lad læste breve udløbe efter"
 
@@ -143,7 +144,9 @@ msgstr ""
 "betyder at mappen vil forsvinde, så snart indstillingsdialogen lukkes."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Act on new/unread mail in this folder"
+msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr "Handling ved ny/ulæst e-mail i denne mappe"
 
@@ -167,7 +170,9 @@ msgstr ""
 "papirkurv og spam.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "Behold svar i denne mappe"
 
@@ -183,7 +188,9 @@ msgstr ""
 "den mappe der er indstillet til sendte e-mails."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide this folder in the folder selection dialog"
+msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "Skjul denne mappe i mappevalgsdialogen"
 
@@ -198,7 +205,9 @@ msgstr ""
 "mappevalgsdialoger, såsom <interface>Gå til mappe</interface>-dialogen."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "Brug &standardidentitet"
 
@@ -226,6 +235,7 @@ msgstr "&Afsenderidentitet:"
 #: collectionpage/collectiontemplateswidget.cpp:20
 #, fuzzy, kde-format
 #| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "Behold svar i denne mappe"
 
@@ -238,27 +248,32 @@ msgstr ""
 #: collectionpage/collectionviewwidget.cpp:27
 #, fuzzy, kde-format
 #| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "Brug &standardidentitet"
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, fuzzy, kde-format
 #| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "Brug &standardidentitet"
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
+msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr ""
 
@@ -1226,30 +1241,37 @@ msgid "Filter actions:"
 msgstr "Filterhandlinger"
 
 #: filter/kmfilterdialog.cpp:193
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to incoming messages:"
+msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Anvend dette filter på indkommende breve:"
 
 #: filter/kmfilterdialog.cpp:203
 #, fuzzy, kde-format
 #| msgid "from all accounts"
+msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "fra alle konti"
 
 #: filter/kmfilterdialog.cpp:207
 #, fuzzy, kde-format
 #| msgid "from all but online IMAP accounts"
+msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "fra alle undtagen online IMAP-konti"
 
 #: filter/kmfilterdialog.cpp:211
 #, fuzzy, kde-format
 #| msgid "from checked accounts only"
+msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "kun fra markerede konti"
 
 #: filter/kmfilterdialog.cpp:219
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to &sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "Anvend dette filter på &sendte breve"
 
@@ -1267,7 +1289,9 @@ msgstr ""
 "</p>"
 
 #: filter/kmfilterdialog.cpp:227
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter &before sending messages"
+msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "Anvend dette filter &før afsendelse af breve"
 
@@ -1283,12 +1307,16 @@ msgstr ""
 "hvis modtagerens kopi også skal ændres.</p>"
 
 #: filter/kmfilterdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on manual &filtering"
+msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "Anvend dette filter ved manuel &filtrering"
 
 #: filter/kmfilterdialog.cpp:237
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on inbound emails in all folders"
+msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "Anvend dette filter ved indkommende e-mails i alle mapper"
 
@@ -1306,17 +1334,23 @@ msgstr ""
 "flyttet til andre mapper af filtre på server-siden.</p>"
 
 #: filter/kmfilterdialog.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "If this filter &matches, stop processing here"
+msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "Stands behandlingen her, hvis dette filter &matcher"
 
 #: filter/kmfilterdialog.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add this filter to the Apply Filter menu"
+msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Føj dette filter til menuen \"Anvend filter\""
 
 #: filter/kmfilterdialog.cpp:266
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Additionally add this filter to the toolbar"
+msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Føj ydermere dette filter til værktøjslinjen"
 
@@ -1755,7 +1789,9 @@ msgid "Edit Accounts Order"
 msgstr "Redigér kontorækkefølge"
 
 #: folder/accountconfigorderdialog.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use custom order"
+msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "Anvend brugerdefineret rækkefølge"
 
@@ -2190,17 +2226,23 @@ msgid "Choose or type your own criteria"
 msgstr "Vælg eller skriv dine egne kriterier"
 
 #: search/searchpatternedit.cpp:580
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match a&ll of the following"
+msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "Match a&lle følgende"
 
 #: search/searchpatternedit.cpp:581
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match an&y of the following"
+msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "Matcher e&n af følgende"
 
 #: search/searchpatternedit.cpp:583
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match all messages"
+msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Match alle breve"
 
@@ -2816,7 +2858,9 @@ msgid "Enter the replacement values for '%1':"
 msgstr "Angiv erstatningsværdier for \"%1\":"
 
 #: snippets/snippetvariabledialog.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Make value &default"
+msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Gør værdi til &standard"
 
@@ -2941,27 +2985,37 @@ msgid "Name:"
 msgstr "Navn:"
 
 #: tag/tagwidget.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change te&xt color:"
+msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "Skift te&kstfarve:"
 
 #: tag/tagwidget.cpp:82
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change &background color:"
+msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "Skift &baggrundsfarve:"
 
 #: tag/tagwidget.cpp:94
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change fo&nt:"
+msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "Skift skriftty&pe:"
 
 #: tag/tagwidget.cpp:100
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Bold"
+msgctxt "@option:check"
 msgid "&Bold"
 msgstr "&Fed"
 
 #: tag/tagwidget.cpp:104
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Italics"
+msgctxt "@option:check"
 msgid "&Italics"
 msgstr "&Kursiv"
 
@@ -2980,7 +3034,9 @@ msgid "Shortc&ut:"
 msgstr "Gen&vej:"
 
 #: tag/tagwidget.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enable &toolbar button"
+msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Aktivér værk&tøjslinjeknap"
 

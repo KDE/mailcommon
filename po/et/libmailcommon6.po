@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-22 00:40+0000\n"
+"POT-Creation-Date: 2024-07-30 00:42+0000\n"
 "PO-Revision-Date: 2020-01-01 12:34+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -50,6 +50,7 @@ msgstr "Salvesta seadistused ja kustuta kohe"
 #: collectionpage/collectionexpirywidget.cpp:67
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
+msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Loetud kirjad määratakse aegunuks pärast"
 
@@ -143,7 +144,9 @@ msgstr ""
 "see kaust kaob peale seadistuste dialoogi sulgemist."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Act on new/unread mail in this folder"
+msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr "Tegutsemine uue/lugemata kirja saabumisel kausta"
 
@@ -167,7 +170,9 @@ msgstr ""
 "rämpsposti kaustas.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "Vastused jäetakse sellesse kausta"
 
@@ -182,7 +187,9 @@ msgstr ""
 "pärast saatmist samasse kausta, mitte vaikimisi saadetud kirjade kausta."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide this folder in the folder selection dialog"
+msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "Kausta ei näidata kausta valimise dialoogis"
 
@@ -197,7 +204,9 @@ msgstr ""
 "<interface>Liigu kausta</interface> dialoogis."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "Vaikei&dentiteedi kasutamine"
 
@@ -225,6 +234,7 @@ msgstr "&Saatja identiteet:"
 #: collectionpage/collectiontemplateswidget.cpp:20
 #, fuzzy, kde-format
 #| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "Vastused jäetakse sellesse kausta"
 
@@ -237,27 +247,32 @@ msgstr ""
 #: collectionpage/collectionviewwidget.cpp:27
 #, fuzzy, kde-format
 #| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "Vaikei&dentiteedi kasutamine"
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, fuzzy, kde-format
 #| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "Vaikei&dentiteedi kasutamine"
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
+msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr ""
 
@@ -1220,30 +1235,37 @@ msgid "Filter actions:"
 msgstr "Filtri toimingud"
 
 #: filter/kmfilterdialog.cpp:193
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to incoming messages:"
+msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Filter rakendatakse sisenevatele kirjadele:"
 
 #: filter/kmfilterdialog.cpp:203
 #, fuzzy, kde-format
 #| msgid "from all accounts"
+msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "kõigis kontodes"
 
 #: filter/kmfilterdialog.cpp:207
 #, fuzzy, kde-format
 #| msgid "from all but online IMAP accounts"
+msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "kõigis kontodes, välja arvatud IMAP kontod"
 
 #: filter/kmfilterdialog.cpp:211
 #, fuzzy, kde-format
 #| msgid "from checked accounts only"
+msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "ainult märgitud kontodes"
 
 #: filter/kmfilterdialog.cpp:219
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to &sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "Filter rakendatakse &saadetud kirjadele"
 
@@ -1260,7 +1282,9 @@ msgstr ""
 "tuleb valida \"Filtri rakendamine <b>enne</b> kirjade saatmist\".</p>"
 
 #: filter/kmfilterdialog.cpp:227
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter &before sending messages"
+msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "Filter rakendatakse &enne kirjade saatmist"
 
@@ -1276,12 +1300,16 @@ msgstr ""
 "tuleb ka saaja koopiat.</p>"
 
 #: filter/kmfilterdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on manual &filtering"
+msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "&Filter rakendatakse käsitsi filtreerimisel"
 
 #: filter/kmfilterdialog.cpp:237
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on inbound emails in all folders"
+msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "Filter rakendatakse kõigi kaustade saabuvatele kirjadele"
 
@@ -1299,17 +1327,23 @@ msgstr ""
 "tulemusel liigutatud mõnda teise kausta.</p>"
 
 #: filter/kmfilterdialog.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "If this filter &matches, stop processing here"
+msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "K&ui filter sobib, peatatakse filtrite läbimine"
 
 #: filter/kmfilterdialog.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add this filter to the Apply Filter menu"
+msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Filter lisatakse menüüsse 'Rakenda filtritoimingud'"
 
 #: filter/kmfilterdialog.cpp:266
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Additionally add this filter to the toolbar"
+msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Filter lisatakse ka tööriistaribale"
 
@@ -1748,7 +1782,9 @@ msgid "Edit Accounts Order"
 msgstr "Kontode järjestuse muutmine"
 
 #: folder/accountconfigorderdialog.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use custom order"
+msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "Kohandatud järjekorra kasutamine"
 
@@ -2184,17 +2220,23 @@ msgid "Choose or type your own criteria"
 msgstr "Vali või kirjuta oma kriteerium"
 
 #: search/searchpatternedit.cpp:580
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match a&ll of the following"
+msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "&Kõik järgnevad sobivad"
 
 #: search/searchpatternedit.cpp:581
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match an&y of the following"
+msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "&Mõni järgnevatest sobib"
 
 #: search/searchpatternedit.cpp:583
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match all messages"
+msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Kõik kirjad sobivad"
 
@@ -2810,7 +2852,9 @@ msgid "Enter the replacement values for '%1':"
 msgstr "Sisesta %1 asendusväärtus:"
 
 #: snippets/snippetvariabledialog.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Make value &default"
+msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Kasutamine &vaikeväärtusena"
 
@@ -2933,27 +2977,37 @@ msgid "Name:"
 msgstr "Nimi:"
 
 #: tag/tagwidget.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change te&xt color:"
+msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "Te&ksti värvi muutmine:"
 
 #: tag/tagwidget.cpp:82
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change &background color:"
+msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "Tausta&värvi muutmine:"
 
 #: tag/tagwidget.cpp:94
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change fo&nt:"
+msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "&Fondi muutmine:"
 
 #: tag/tagwidget.cpp:100
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Bold"
+msgctxt "@option:check"
 msgid "&Bold"
 msgstr "&Rasvane kiri"
 
 #: tag/tagwidget.cpp:104
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Italics"
+msgctxt "@option:check"
 msgid "&Italics"
 msgstr "&Kaldkiri"
 
@@ -2972,7 +3026,9 @@ msgid "Shortc&ut:"
 msgstr "K&iirklahv:"
 
 #: tag/tagwidget.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enable &toolbar button"
+msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "&Tööriistariba nupu lubamine"
 

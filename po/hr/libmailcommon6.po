@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail 0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-22 00:40+0000\n"
+"POT-Creation-Date: 2024-07-30 00:42+0000\n"
 "PO-Revision-Date: 2010-07-22 11:22+0200\n"
 "Last-Translator: Marko Dimjasevic <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -51,6 +51,7 @@ msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
+msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr ""
 
@@ -133,6 +134,7 @@ msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:25
 #, kde-format
+msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr ""
 
@@ -150,6 +152,7 @@ msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:38
 #, kde-format
+msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr ""
 
@@ -163,6 +166,7 @@ msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:46
 #, kde-format
+msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr ""
 
@@ -176,6 +180,7 @@ msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:54
 #, kde-format
+msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr ""
 
@@ -196,6 +201,7 @@ msgstr ""
 
 #: collectionpage/collectiontemplateswidget.cpp:20
 #, kde-format
+msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr ""
 
@@ -207,26 +213,31 @@ msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:27
 #, kde-format
+msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, kde-format
+msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
+msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr ""
 
@@ -1136,26 +1147,31 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:193
 #, kde-format
+msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:203
 #, kde-format
+msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:207
 #, kde-format
+msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:211
 #, kde-format
+msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:219
 #, kde-format
+msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr ""
 
@@ -1170,6 +1186,7 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:227
 #, kde-format
+msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr ""
 
@@ -1183,11 +1200,13 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:234
 #, kde-format
+msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:237
 #, kde-format
+msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr ""
 
@@ -1202,16 +1221,19 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:245
 #, kde-format
+msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:248
 #, kde-format
+msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:266
 #, kde-format
+msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr ""
 
@@ -1599,6 +1621,7 @@ msgstr ""
 
 #: folder/accountconfigorderdialog.cpp:74
 #, kde-format
+msgctxt "@option:check"
 msgid "Use custom order"
 msgstr ""
 
@@ -2025,16 +2048,19 @@ msgstr ""
 
 #: search/searchpatternedit.cpp:580
 #, kde-format
+msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr ""
 
 #: search/searchpatternedit.cpp:581
 #, kde-format
+msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr ""
 
 #: search/searchpatternedit.cpp:583
 #, kde-format
+msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr ""
 
@@ -2630,6 +2656,7 @@ msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:45
 #, kde-format
+msgctxt "@option:check"
 msgid "Make value &default"
 msgstr ""
 
@@ -2745,26 +2772,31 @@ msgstr ""
 
 #: tag/tagwidget.cpp:70
 #, kde-format
+msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr ""
 
 #: tag/tagwidget.cpp:82
 #, kde-format
+msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr ""
 
 #: tag/tagwidget.cpp:94
 #, kde-format
+msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr ""
 
 #: tag/tagwidget.cpp:100
 #, kde-format
+msgctxt "@option:check"
 msgid "&Bold"
 msgstr ""
 
 #: tag/tagwidget.cpp:104
 #, kde-format
+msgctxt "@option:check"
 msgid "&Italics"
 msgstr ""
 
@@ -2782,6 +2814,7 @@ msgstr ""
 
 #: tag/tagwidget.cpp:144
 #, kde-format
+msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr ""
 

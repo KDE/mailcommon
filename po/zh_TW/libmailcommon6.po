@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-22 00:40+0000\n"
+"POT-Creation-Date: 2024-07-30 00:42+0000\n"
 "PO-Revision-Date: 2024-07-05 15:38+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -46,7 +46,9 @@ msgid "Save Settings and Expire Now"
 msgstr "儲存設定並現在標為過期"
 
 #: collectionpage/collectionexpirywidget.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Expire messages with invalid date"
+msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "將日期無效的訊息標為過期"
 
@@ -135,7 +137,9 @@ msgstr ""
 "您已設定此資料夾內含群組資訊，那表示此設定對話框關閉後，此資料夾就會消失。"
 
 #: collectionpage/collectiongeneralwidget.cpp:25
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Act on new/unread mail in this folder"
+msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr "通知資料夾內有新的或未讀的信件"
 
@@ -156,7 +160,9 @@ msgstr ""
 "p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "將回覆的信件也放在此資料夾"
 
@@ -170,7 +176,9 @@ msgstr ""
 "這個選項勾選的話，您回覆的信件也會放在這個資料夾，而不是放到寄件備份中。"
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide this folder in the folder selection dialog"
+msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "在資料夾選取對話框中隱藏此資料夾"
 
@@ -185,7 +193,9 @@ msgstr ""
 "話框）中不會顯示此資料夾。"
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "使用預設身份(&D)"
 
@@ -207,7 +217,9 @@ msgid "&Sender identity:"
 msgstr "寄件人身份(&S)："
 
 #: collectionpage/collectiontemplateswidget.cpp:20
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Use custom message templates in this folder"
+msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "使用這個資料夾裡的自訂信件樣本"
 
@@ -218,27 +230,37 @@ msgid "&Copy Global Templates"
 msgstr "複製全域樣本(&C)"
 
 #: collectionpage/collectionviewwidget.cpp:27
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use default message list aggregation:"
+msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "使用預設信件列表集合方式："
 
 #: collectionpage/collectionviewwidget.cpp:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use default message list theme"
+msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "使用預設信件列表主題"
 
 #: collectionpage/collectionviewwidget.cpp:31
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Prefer HTML to text"
+msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr "偏好使用 HTML 而非純文字"
 
 #: collectionpage/collectionviewwidget.cpp:32
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Prefer text to HTML"
+msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr "偏好使用純文字而非 HTML"
 
 #: collectionpage/collectionviewwidget.cpp:33
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use Global Settings"
+msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr "使用全域設定"
 
@@ -1152,27 +1174,37 @@ msgid "Filter actions:"
 msgstr "過濾器動作："
 
 #: filter/kmfilterdialog.cpp:193
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to incoming messages:"
+msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "對新進信件套用此過濾器："
 
 #: filter/kmfilterdialog.cpp:203
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "From all accounts"
+msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "從所有帳號來的信件"
 
 #: filter/kmfilterdialog.cpp:207
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "From all but online IMAP accounts"
+msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "除了 IMAP 帳號外的信件"
 
 #: filter/kmfilterdialog.cpp:211
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "From selected accounts only"
+msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "只針對已選的帳號的信件"
 
 #: filter/kmfilterdialog.cpp:219
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to &sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "對發送出去的信件套用此過濾器"
 
@@ -1188,7 +1220,9 @@ msgstr ""
 "收件者的複本也要跟著修改，請改用「發送信件之前先套用此過濾器」。</p>"
 
 #: filter/kmfilterdialog.cpp:227
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter &before sending messages"
+msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "發送信件之前先套用此過濾器(&B)"
 
@@ -1203,12 +1237,16 @@ msgstr ""
 "p><p>若是收件者的複本也要跟著修改，就需要此選項。</p>"
 
 #: filter/kmfilterdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on manual &filtering"
+msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "在手動過濾清單中套用此一過濾器"
 
 #: filter/kmfilterdialog.cpp:237
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on inbound emails in all folders"
+msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "套用這個過濾器在所有資料夾裡收到的信件"
 
@@ -1225,17 +1263,23 @@ msgstr ""
 "不同的資料夾去了。</p>"
 
 #: filter/kmfilterdialog.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "If this filter &matches, stop processing here"
+msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "假如符合這個過濾器，則停止傳送(&M)"
 
 #: filter/kmfilterdialog.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add this filter to the Apply Filter menu"
+msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "將此過濾器加入套用清單中"
 
 #: filter/kmfilterdialog.cpp:266
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Additionally add this filter to the toolbar"
+msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "將這個過濾器放到工具列上"
 
@@ -1641,7 +1685,9 @@ msgid "Edit Accounts Order"
 msgstr "編輯帳號順序"
 
 #: folder/accountconfigorderdialog.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use custom order"
+msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "使用自訂順序"
 
@@ -2051,17 +2097,23 @@ msgid "Choose or type your own criteria"
 msgstr "選擇或輸入您的條件"
 
 #: search/searchpatternedit.cpp:580
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match a&ll of the following"
+msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "符合下列全部規則(&L)"
 
 #: search/searchpatternedit.cpp:581
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match an&y of the following"
+msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "符合下列任一規則(&Y)"
 
 #: search/searchpatternedit.cpp:583
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match all messages"
+msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "比對所有信件"
 
@@ -2656,7 +2708,9 @@ msgid "Enter the replacement values for '%1':"
 msgstr "輸入 %1 的取代值："
 
 #: snippets/snippetvariabledialog.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Make value &default"
+msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "設成預設(&D)"
 
@@ -2776,27 +2830,37 @@ msgid "Name:"
 msgstr "名稱："
 
 #: tag/tagwidget.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change te&xt color:"
+msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "改變文字顏色(&X)："
 
 #: tag/tagwidget.cpp:82
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change &background color:"
+msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "變更背景顏色(&B)："
 
 #: tag/tagwidget.cpp:94
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change fo&nt:"
+msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "改變字型(&N)："
 
 #: tag/tagwidget.cpp:100
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Bold"
+msgctxt "@option:check"
 msgid "&Bold"
 msgstr "粗體(&B)"
 
 #: tag/tagwidget.cpp:104
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Italics"
+msgctxt "@option:check"
 msgid "&Italics"
 msgstr "斜體(&I)"
 
@@ -2813,7 +2877,9 @@ msgid "Shortc&ut:"
 msgstr "快捷鍵(&U)："
 
 #: tag/tagwidget.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enable &toolbar button"
+msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "開啟工具列按鈕(&T)"
 

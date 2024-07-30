@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-22 00:40+0000\n"
+"POT-Creation-Date: 2024-07-30 00:42+0000\n"
 "PO-Revision-Date: 2014-01-31 19:29+0100\n"
 "Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
 "Language-Team: bs <bs@kde.org>\n"
@@ -54,6 +54,7 @@ msgstr "Sačuvaj postavke i isticanje sada"
 #: collectionpage/collectionexpirywidget.cpp:67
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
+msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Izbaci pročitane poruke nakon"
 
@@ -149,7 +150,9 @@ msgstr ""
 "će ovaj folder nestati kada se dialog konfiguracije zatvori."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Act on new/unread mail in this folder"
+msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr "Obavijesti o novoj/nepročitanoj pošti u ovom direkoriju"
 
@@ -172,7 +175,9 @@ msgstr ""
 "qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "&Briši stare poruke u ovom fasciklu"
 
@@ -188,7 +193,9 @@ msgstr ""
 "fasciklu za odlaznu poštu."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide this folder in the folder selection dialog"
+msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "Sakrijte ovaj direktorij u prozoru za izbor direktorija"
 
@@ -204,7 +211,9 @@ msgstr ""
 "prozor."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "Koristiti &podrazumijevani identitet"
 
@@ -231,6 +240,7 @@ msgstr "Identitet pošiljao&ca:"
 #: collectionpage/collectiontemplateswidget.cpp:20
 #, fuzzy, kde-format
 #| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "&Briši stare poruke u ovom fasciklu"
 
@@ -243,27 +253,32 @@ msgstr ""
 #: collectionpage/collectionviewwidget.cpp:27
 #, fuzzy, kde-format
 #| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "Koristiti &podrazumijevani identitet"
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, fuzzy, kde-format
 #| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "Koristiti &podrazumijevani identitet"
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
+msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr ""
 
@@ -1264,30 +1279,37 @@ msgid "Filter actions:"
 msgstr "Akcije filtera"
 
 #: filter/kmfilterdialog.cpp:193
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to incoming messages:"
+msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Primijeni ovaj filter na dolazeće poruke:"
 
 #: filter/kmfilterdialog.cpp:203
 #, fuzzy, kde-format
 #| msgid "from all accounts"
+msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "iz svih naloga"
 
 #: filter/kmfilterdialog.cpp:207
 #, fuzzy, kde-format
 #| msgid "from all but online IMAP accounts"
+msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "iz svih osim IMAP naloga na vezi"
 
 #: filter/kmfilterdialog.cpp:211
 #, fuzzy, kde-format
 #| msgid "from checked accounts only"
+msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "samo iz označenih naloga"
 
 #: filter/kmfilterdialog.cpp:219
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to &sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "Primijeni ovaj filter na po&slate poruke"
 
@@ -1305,7 +1327,9 @@ msgstr ""
 "filter<b>prije</b>slanja poruka\".</p>"
 
 #: filter/kmfilterdialog.cpp:227
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter &before sending messages"
+msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "Primijeni ovaj filter &prije slanja poruka"
 
@@ -1321,13 +1345,16 @@ msgstr ""
 "kopija primaoca također treba biti promjenjena.</p>"
 
 #: filter/kmfilterdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on manual &filtering"
+msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "Primijeni ovaj filter pri ručnom &filtriranju"
 
 #: filter/kmfilterdialog.cpp:237
 #, fuzzy, kde-format
 #| msgid "Apply this filter on manual &filtering"
+msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "Primijeni ovaj filter pri ručnom &filtriranju"
 
@@ -1341,17 +1368,23 @@ msgid ""
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "If this filter &matches, stop processing here"
+msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "Ako ovaj filter &pogodi, završi obradu ovdje"
 
 #: filter/kmfilterdialog.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add this filter to the Apply Filter menu"
+msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Dodaj ovaj filter na meni Primijeni filter"
 
 #: filter/kmfilterdialog.cpp:266
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Additionally add this filter to the toolbar"
+msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Takođe dodaj ovaj filter u traku sa alatom"
 
@@ -1800,6 +1833,7 @@ msgstr ""
 
 #: folder/accountconfigorderdialog.cpp:74
 #, kde-format
+msgctxt "@option:check"
 msgid "Use custom order"
 msgstr ""
 
@@ -2246,17 +2280,23 @@ msgid "Choose or type your own criteria"
 msgstr "Odaberite ili navedite vlastiti kriterij"
 
 #: search/searchpatternedit.cpp:580
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match a&ll of the following"
+msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "Nađi &sve od navedenog"
 
 #: search/searchpatternedit.cpp:581
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match an&y of the following"
+msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "Nađi &bilo šta od navedenog"
 
 #: search/searchpatternedit.cpp:583
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match all messages"
+msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Posloži sve poruke"
 
@@ -2882,7 +2922,9 @@ msgid "Enter the replacement values for '%1':"
 msgstr "Unesite zamjenske vrijednosti za '%1':"
 
 #: snippets/snippetvariabledialog.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Make value &default"
+msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Vrijednost &kao podrazumijevana"
 
@@ -3010,27 +3052,35 @@ msgid "Name:"
 msgstr "Ime:"
 
 #: tag/tagwidget.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change te&xt color:"
+msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "Promijeni boju tek&sta:"
 
 #: tag/tagwidget.cpp:82
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change &background color:"
+msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "Promijeni &boju pozadine:"
 
 #: tag/tagwidget.cpp:94
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change fo&nt:"
+msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "Promje&ni slova:"
 
 #: tag/tagwidget.cpp:100
 #, kde-format
+msgctxt "@option:check"
 msgid "&Bold"
 msgstr ""
 
 #: tag/tagwidget.cpp:104
 #, kde-format
+msgctxt "@option:check"
 msgid "&Italics"
 msgstr ""
 
@@ -3049,7 +3099,9 @@ msgid "Shortc&ut:"
 msgstr "P&rečica:"
 
 #: tag/tagwidget.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enable &toolbar button"
+msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Omogući dugme alatne &trake"
 

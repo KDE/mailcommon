@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-22 00:40+0000\n"
+"POT-Creation-Date: 2024-07-30 00:42+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -45,6 +45,7 @@ msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
+msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr ""
 
@@ -127,6 +128,7 @@ msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:25
 #, kde-format
+msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr ""
 
@@ -144,6 +146,7 @@ msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:38
 #, kde-format
+msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr ""
 
@@ -157,6 +160,7 @@ msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:46
 #, kde-format
+msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr ""
 
@@ -169,7 +173,9 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "使用默认身份(&D)"
 
@@ -190,6 +196,7 @@ msgstr "发件人身份(&S)："
 
 #: collectionpage/collectiontemplateswidget.cpp:20
 #, kde-format
+msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr ""
 
@@ -201,26 +208,31 @@ msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:27
 #, kde-format
+msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, kde-format
+msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
+msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr ""
 
@@ -1125,27 +1137,34 @@ msgid "Filter actions:"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:193
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to incoming messages:"
+msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "应用此过滤器到传入邮件："
 
 #: filter/kmfilterdialog.cpp:203
 #, kde-format
+msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:207
 #, kde-format
+msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:211
 #, kde-format
+msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:219
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to &sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "应用过滤器到已发送邮件(&S)"
 
@@ -1159,7 +1178,9 @@ msgid ""
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:227
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter &before sending messages"
+msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "在发送信件之前应用此过滤器(&B)"
 
@@ -1172,12 +1193,16 @@ msgid ""
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on manual &filtering"
+msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "在手动过滤时应用此过滤器(&F)"
 
 #: filter/kmfilterdialog.cpp:237
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on inbound emails in all folders"
+msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "应用此过滤器到所有文件夹中的入站电子邮件"
 
@@ -1191,19 +1216,25 @@ msgid ""
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "If this filter &matches, stop processing here"
+msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "如果此过滤器匹配，在此处停止处理"
 
 #: filter/kmfilterdialog.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add this filter to the Apply Filter menu"
+msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "添加此过滤器到“应用过滤器”菜单"
 
 #: filter/kmfilterdialog.cpp:266
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add this filter to the Apply Filter menu"
+msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
-msgstr ""
+msgstr "添加此过滤器到“应用过滤器”菜单"
 
 #: filter/kmfilterdialog.cpp:273
 #, kde-format
@@ -1587,7 +1618,9 @@ msgid "Edit Accounts Order"
 msgstr "编辑账户顺序"
 
 #: folder/accountconfigorderdialog.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use custom order"
+msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "使用自定义顺序"
 
@@ -1994,17 +2027,23 @@ msgid "Choose or type your own criteria"
 msgstr ""
 
 #: search/searchpatternedit.cpp:580
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match a&ll of the following"
+msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "匹配以下全部条件(&L)"
 
 #: search/searchpatternedit.cpp:581
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match an&y of the following"
+msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "匹配以下任何条件(&Y)"
 
 #: search/searchpatternedit.cpp:583
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match all messages"
+msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "匹配所有信件"
 
@@ -2597,7 +2636,9 @@ msgid "Enter the replacement values for '%1':"
 msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Make value &default"
+msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "设为默认值(&D)"
 
@@ -2715,27 +2756,37 @@ msgid "Name:"
 msgstr "名称："
 
 #: tag/tagwidget.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change te&xt color:"
+msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "更改文本颜色(&X)："
 
 #: tag/tagwidget.cpp:82
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change &background color:"
+msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "更改背景颜色(&B)："
 
 #: tag/tagwidget.cpp:94
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change fo&nt:"
+msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "更改字体(&N)："
 
 #: tag/tagwidget.cpp:100
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Bold"
+msgctxt "@option:check"
 msgid "&Bold"
 msgstr "粗体(&B)"
 
 #: tag/tagwidget.cpp:104
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Italics"
+msgctxt "@option:check"
 msgid "&Italics"
 msgstr "斜体(&I)"
 
@@ -2752,7 +2803,9 @@ msgid "Shortc&ut:"
 msgstr ""
 
 #: tag/tagwidget.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enable &toolbar button"
+msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "启用工具栏按钮(&T)"
 

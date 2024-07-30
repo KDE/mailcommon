@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-22 00:40+0000\n"
+"POT-Creation-Date: 2024-07-30 00:42+0000\n"
 "PO-Revision-Date: 2013-11-01 04:30+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -49,6 +49,7 @@ msgstr "Баптауларды сақтау да ескірген қылу"
 #: collectionpage/collectionexpirywidget.cpp:67
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
+msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Оқылған, келесі мерзім өткен соң:"
 
@@ -142,7 +143,9 @@ msgstr ""
 "диалогы жабылған соң, қапшық ғайып болдады дегені."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Act on new/unread mail in this folder"
+msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr "Бұл қапшықтағы жаңа/оқылмаған хат туралы ескертілсін"
 
@@ -165,7 +168,9 @@ msgstr ""
 "арналған қапшықтардағы оқылмаған хаттарды елемеуге пайдалы.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "Осы қапшықта жауаптар сақталсын"
 
@@ -180,7 +185,9 @@ msgstr ""
 "орнына, өзінде қалсын десеңіз осы параметрді таңдаңыз."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide this folder in the folder selection dialog"
+msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "Қапшық таңдау диалогында бұл қапшық жасырылсын"
 
@@ -195,7 +202,9 @@ msgstr ""
 "диалогында көрсетілмесін десеңіз - осыны белгілеңіз."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "&Әдетті іс-әлпеті қолдансын"
 
@@ -223,6 +232,7 @@ msgstr "&Жіберушінің іс-әлпеті:"
 #: collectionpage/collectiontemplateswidget.cpp:20
 #, fuzzy, kde-format
 #| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "Осы қапшықта жауаптар сақталсын"
 
@@ -235,27 +245,32 @@ msgstr ""
 #: collectionpage/collectionviewwidget.cpp:27
 #, fuzzy, kde-format
 #| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "&Әдетті іс-әлпеті қолдансын"
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, fuzzy, kde-format
 #| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "&Әдетті іс-әлпеті қолдансын"
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
+msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr ""
 
@@ -1255,30 +1270,37 @@ msgid "Filter actions:"
 msgstr "Сүзгі әрекеттері"
 
 #: filter/kmfilterdialog.cpp:193
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to incoming messages:"
+msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Келген хаттарға осы сүзгі қолданылсын:"
 
 #: filter/kmfilterdialog.cpp:203
 #, fuzzy, kde-format
 #| msgid "from all accounts"
+msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "барлық тіркелгілерден"
 
 #: filter/kmfilterdialog.cpp:207
 #, fuzzy, kde-format
 #| msgid "from all but online IMAP accounts"
+msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "IMAP-тан басқа барлық тіркелгілерден"
 
 #: filter/kmfilterdialog.cpp:211
 #, fuzzy, kde-format
 #| msgid "from checked accounts only"
+msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "тек белгіленген тіркелгілерден"
 
 #: filter/kmfilterdialog.cpp:219
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to &sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "Осы сүзгі &жіберілген хаттарға қолданылсын"
 
@@ -1295,7 +1317,9 @@ msgstr ""
 "\"Осы сүзгі жіберу алдында қолданылсын\" дегенді таңдаңыз.</p>"
 
 #: filter/kmfilterdialog.cpp:227
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter &before sending messages"
+msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "Осы сүзгі жіберу &алдында қолданылсын"
 
@@ -1311,13 +1335,16 @@ msgstr ""
 "қажет болғанда керек амал.</p>"
 
 #: filter/kmfilterdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on manual &filtering"
+msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "Қолмен &сүзгілегенде қолданылсын"
 
 #: filter/kmfilterdialog.cpp:237
 #, fuzzy, kde-format
 #| msgid "Apply this filter on manual &filtering"
+msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "Қолмен &сүзгілегенде қолданылсын"
 
@@ -1331,17 +1358,23 @@ msgid ""
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "If this filter &matches, stop processing here"
+msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "Сүзгі &сәйкес келгенде өңдеу тоқталсын"
 
 #: filter/kmfilterdialog.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add this filter to the Apply Filter menu"
+msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Бұл сүзгі 'Сүзгіні қолдану' мәзіріне қосылсын"
 
 #: filter/kmfilterdialog.cpp:266
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Additionally add this filter to the toolbar"
+msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Бұл сүзгі құралдар панеліне қосылсын"
 
@@ -1783,6 +1816,7 @@ msgstr ""
 
 #: folder/accountconfigorderdialog.cpp:74
 #, kde-format
+msgctxt "@option:check"
 msgid "Use custom order"
 msgstr ""
 
@@ -2215,17 +2249,23 @@ msgid "Choose or type your own criteria"
 msgstr "Өзінің шартыңыздың түрін таңдаңыз"
 
 #: search/searchpatternedit.cpp:580
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match a&ll of the following"
+msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "Б&үкіл келесі шарттарға сәйкес келетін"
 
 #: search/searchpatternedit.cpp:581
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match an&y of the following"
+msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "&Кез келген келесі шартарға сәйкес келетіндерді"
 
 #: search/searchpatternedit.cpp:583
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match all messages"
+msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Бүкіл хаттар сәйкесті"
 
@@ -2849,7 +2889,9 @@ msgid "Enter the replacement values for '%1':"
 msgstr "'%1' дегеннің мәндерін ауыстырыңыз:"
 
 #: snippets/snippetvariabledialog.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Make value &default"
+msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Ә&деттіге қайту"
 
@@ -2976,27 +3018,35 @@ msgid "Name:"
 msgstr "Атауы:"
 
 #: tag/tagwidget.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change te&xt color:"
+msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "&Мәтіннің түсін өзгерту:"
 
 #: tag/tagwidget.cpp:82
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change &background color:"
+msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "&Аясының түсін өзгерту:"
 
 #: tag/tagwidget.cpp:94
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change fo&nt:"
+msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "Қар&іпін өзгерту:"
 
 #: tag/tagwidget.cpp:100
 #, kde-format
+msgctxt "@option:check"
 msgid "&Bold"
 msgstr ""
 
 #: tag/tagwidget.cpp:104
 #, kde-format
+msgctxt "@option:check"
 msgid "&Italics"
 msgstr ""
 
@@ -3015,7 +3065,9 @@ msgid "Shortc&ut:"
 msgstr "Тірке&сімі:"
 
 #: tag/tagwidget.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enable &toolbar button"
+msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "&Құралдар панелінде батырмасы болын"
 

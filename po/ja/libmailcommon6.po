@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-22 00:40+0000\n"
+"POT-Creation-Date: 2024-07-30 00:42+0000\n"
 "PO-Revision-Date: 2012-01-28 16:25-0800\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -53,6 +53,7 @@ msgstr ""
 #: collectionpage/collectionexpirywidget.cpp:67
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
+msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "次の日数より古い既読メッセージを整理する"
 
@@ -143,6 +144,7 @@ msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:25
 #, kde-format
+msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr ""
 
@@ -159,7 +161,9 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "返信をこのフォルダに保存"
 
@@ -173,6 +177,7 @@ msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:46
 #, kde-format
+msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr ""
 
@@ -185,9 +190,11 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Folder"
+msgctxt "@option:check"
 msgid "Use &default identity"
-msgstr ""
+msgstr "フォルダを選択"
 
 #: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
@@ -207,6 +214,7 @@ msgstr ""
 #: collectionpage/collectiontemplateswidget.cpp:20
 #, fuzzy, kde-format
 #| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "返信をこのフォルダに保存"
 
@@ -217,28 +225,34 @@ msgid "&Copy Global Templates"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:27
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Default Template"
+msgctxt "@option:check"
 msgid "Use default message list aggregation:"
-msgstr ""
+msgstr "デフォルトのテンプレート"
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, fuzzy, kde-format
 #| msgid "Default Template"
+msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "デフォルトのテンプレート"
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
+msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr ""
 
@@ -1216,27 +1230,32 @@ msgstr "アクション"
 #: filter/kmfilterdialog.cpp:193
 #, fuzzy, kde-format
 #| msgid "Apply to incoming messages"
+msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "受信メッセージに適用"
 
 #: filter/kmfilterdialog.cpp:203
 #, kde-format
+msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:207
 #, kde-format
+msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:211
 #, kde-format
+msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:219
 #, fuzzy, kde-format
 #| msgid "Apply to sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "送信メッセージに適用"
 
@@ -1252,6 +1271,7 @@ msgstr ""
 #: filter/kmfilterdialog.cpp:227
 #, fuzzy, kde-format
 #| msgid "Apply to sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "送信メッセージに適用"
 
@@ -1266,12 +1286,14 @@ msgstr ""
 #: filter/kmfilterdialog.cpp:234
 #, fuzzy, kde-format
 #| msgid "Apply to sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "送信メッセージに適用"
 
 #: filter/kmfilterdialog.cpp:237
 #, fuzzy, kde-format
 #| msgid "Apply to sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "送信メッセージに適用"
 
@@ -1286,16 +1308,20 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:245
 #, kde-format
+msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply to sent messages"
+msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
-msgstr ""
+msgstr "送信メッセージに適用"
 
 #: filter/kmfilterdialog.cpp:266
 #, kde-format
+msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr ""
 
@@ -1704,6 +1730,7 @@ msgstr ""
 
 #: folder/accountconfigorderdialog.cpp:74
 #, kde-format
+msgctxt "@option:check"
 msgid "Use custom order"
 msgstr ""
 
@@ -2143,16 +2170,19 @@ msgstr ""
 
 #: search/searchpatternedit.cpp:580
 #, kde-format
+msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr ""
 
 #: search/searchpatternedit.cpp:581
 #, kde-format
+msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr ""
 
 #: search/searchpatternedit.cpp:583
 #, kde-format
+msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr ""
 
@@ -2775,6 +2805,7 @@ msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:45
 #, kde-format
+msgctxt "@option:check"
 msgid "Make value &default"
 msgstr ""
 
@@ -2895,26 +2926,31 @@ msgstr "名前:"
 
 #: tag/tagwidget.cpp:70
 #, kde-format
+msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr ""
 
 #: tag/tagwidget.cpp:82
 #, kde-format
+msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr ""
 
 #: tag/tagwidget.cpp:94
 #, kde-format
+msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr ""
 
 #: tag/tagwidget.cpp:100
 #, kde-format
+msgctxt "@option:check"
 msgid "&Bold"
 msgstr ""
 
 #: tag/tagwidget.cpp:104
 #, kde-format
+msgctxt "@option:check"
 msgid "&Italics"
 msgstr ""
 
@@ -2933,6 +2969,7 @@ msgstr "ショートカット(&O):"
 
 #: tag/tagwidget.cpp:144
 #, kde-format
+msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr ""
 

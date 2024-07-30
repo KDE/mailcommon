@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-22 00:40+0000\n"
+"POT-Creation-Date: 2024-07-30 00:42+0000\n"
 "PO-Revision-Date: 2014-09-13 18:15+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -49,6 +49,7 @@ msgstr "Lagre innstillinger og kjør foreldelse nå"
 
 #: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
+msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr ""
 
@@ -141,7 +142,9 @@ msgstr ""
 "at denne mappa kommer til å forsvinne når oppsettsdialogen lukkes."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Act on new/unread mail in this folder"
+msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr "Bruk på ny/ulest e-post i denne mappa"
 
@@ -165,7 +168,9 @@ msgstr ""
 "papirkurv eller søppelpostmappe.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "Behold svar i denne mappa"
 
@@ -181,7 +186,9 @@ msgstr ""
 "valgte mappa for sendt e-post."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide this folder in the folder selection dialog"
+msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "Skjul denne mappa i dialogvinduet for mappevalg"
 
@@ -196,7 +203,9 @@ msgstr ""
 "mappevalg, slik som <interface>Hopp til mappe</interface>-dialogen."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use &default identity"
+msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "Bruk stan&dardidentitet"
 
@@ -221,9 +230,11 @@ msgid "&Sender identity:"
 msgstr "Avsender&identitet:"
 
 #: collectionpage/collectiontemplateswidget.cpp:20
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Keep replies in this folder"
+msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
-msgstr ""
+msgstr "Behold svar i denne mappa"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
@@ -233,26 +244,31 @@ msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:27
 #, kde-format
+msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, kde-format
+msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
+msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
+msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr ""
 
@@ -1198,27 +1214,34 @@ msgid "Filter actions:"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:193
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to incoming messages:"
+msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Bruk dette filteret på innkommende meldinger"
 
 #: filter/kmfilterdialog.cpp:203
 #, kde-format
+msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:207
 #, kde-format
+msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:211
 #, kde-format
+msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:219
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter to &sent messages"
+msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "Bruk filteret på &sendte meldinger"
 
@@ -1235,7 +1258,9 @@ msgstr ""
 "endres, så bruk «Bruk filteret <b>før</b> meldiger sendes.</p>"
 
 #: filter/kmfilterdialog.cpp:227
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter &before sending messages"
+msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "&Bruk filteret før meldinger sendes"
 
@@ -1251,14 +1276,18 @@ msgstr ""
 "mottakerens kopi også må endres.</p>"
 
 #: filter/kmfilterdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on manual &filtering"
+msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "Bruk &filteret ved manuell filtrering"
 
 #: filter/kmfilterdialog.cpp:237
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Apply this filter on manual &filtering"
+msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
-msgstr ""
+msgstr "Bruk &filteret ved manuell filtrering"
 
 #: filter/kmfilterdialog.cpp:239
 #, kde-format
@@ -1270,17 +1299,23 @@ msgid ""
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "If this filter &matches, stop processing here"
+msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "Stopp behandling her hvis dette filteret &passer"
 
 #: filter/kmfilterdialog.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Add this filter to the Apply Filter menu"
+msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Legg dette filteret til menyen «Bruk filter»"
 
 #: filter/kmfilterdialog.cpp:266
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Additionally add this filter to the toolbar"
+msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Legg også dette filteret på verktøylinja"
 
@@ -1721,7 +1756,9 @@ msgid "Edit Accounts Order"
 msgstr ""
 
 #: folder/accountconfigorderdialog.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use custom order"
+msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "Bruk selvvalgt rekkefølge"
 
@@ -2149,17 +2186,23 @@ msgid "Choose or type your own criteria"
 msgstr "Velg eller tast inn dine egne kriterier"
 
 #: search/searchpatternedit.cpp:580
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match a&ll of the following"
+msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "Pass til a&lle de følgende"
 
 #: search/searchpatternedit.cpp:581
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match an&y of the following"
+msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "Pass med &en eller flere av de følgende"
 
 #: search/searchpatternedit.cpp:583
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Match all messages"
+msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Treff alle meldinger"
 
@@ -2772,7 +2815,9 @@ msgid "Enter the replacement values for '%1':"
 msgstr "Skriv inn erstatningsverdier for «%1»:"
 
 #: snippets/snippetvariabledialog.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Make value &default"
+msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Gjør verdien til  stan&dard"
 
@@ -2892,27 +2937,36 @@ msgid "Name:"
 msgstr "Navn:"
 
 #: tag/tagwidget.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change te&xt color:"
+msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "Endre te&kstfarge:"
 
 #: tag/tagwidget.cpp:82
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change &background color:"
+msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "Endre &bakgrunnsfarge:"
 
 #: tag/tagwidget.cpp:94
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change fo&nt:"
+msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "E&ndre skrift:"
 
 #: tag/tagwidget.cpp:100
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Bold"
+msgctxt "@option:check"
 msgid "&Bold"
 msgstr "&Halvfet"
 
 #: tag/tagwidget.cpp:104
 #, kde-format
+msgctxt "@option:check"
 msgid "&Italics"
 msgstr ""
 
@@ -2931,7 +2985,9 @@ msgid "Shortc&ut:"
 msgstr "Sn&arvei:"
 
 #: tag/tagwidget.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Enable &toolbar button"
+msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Slå på verk&tøylinjeknapp"
 
