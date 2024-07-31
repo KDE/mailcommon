@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-30 00:42+0000\n"
-"PO-Revision-Date: 2024-07-04 21:28+0300\n"
+"PO-Revision-Date: 2024-07-30 09:48+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
-"Language-Team: Ukrainian\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -50,8 +50,7 @@ msgid "Save Settings and Expire Now"
 msgstr "Зберегти параметри та архівувати зараз"
 
 #: collectionpage/collectionexpirywidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Expire messages with invalid date"
+#, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Вважати застарілими повідомлення із некоректною датою"
@@ -147,8 +146,7 @@ msgstr ""
 "групі. Це означає, що тека зникне відразу після закриття діалогового вікна."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
-#, fuzzy, kde-format
-#| msgid "Act on new/unread mail in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr "Виконувати дію для нових/непрочитаних листів у цій теці"
@@ -174,8 +172,7 @@ msgstr ""
 "нових/непрочитаних листів у теці смітника чи теці для спаму.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, fuzzy, kde-format
-#| msgid "Keep replies in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "Залишати відповіді в цій теці"
@@ -192,8 +189,7 @@ msgstr ""
 "надісланих повідомлень."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, fuzzy, kde-format
-#| msgid "Hide this folder in the folder selection dialog"
+#, kde-format
 msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "Сховати цю теку у діалоговому вікні вибирання тек"
@@ -210,8 +206,7 @@ msgstr ""
 "теки</interface>."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "Використовувати &типовий профіль"
@@ -238,8 +233,7 @@ msgid "&Sender identity:"
 msgstr "П&рофіль відправника:"
 
 #: collectionpage/collectiontemplateswidget.cpp:20
-#, fuzzy, kde-format
-#| msgid "&Use custom message templates in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "&Використовувати власні шаблони повідомлень у цій теці"
@@ -251,36 +245,31 @@ msgid "&Copy Global Templates"
 msgstr "&Копіювати глобальні шаблони"
 
 #: collectionpage/collectionviewwidget.cpp:27
-#, fuzzy, kde-format
-#| msgid "Use default message list aggregation:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "Використовувати типове складання у списку листування:"
 
 #: collectionpage/collectionviewwidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Use default message list theme"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "Використовувати типову тему списку повідомлень"
 
 #: collectionpage/collectionviewwidget.cpp:31
-#, fuzzy, kde-format
-#| msgid "Prefer HTML to text"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr "Надавати перевагу HTML над текстом"
 
 #: collectionpage/collectionviewwidget.cpp:32
-#, fuzzy, kde-format
-#| msgid "Prefer text to HTML"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr "Надавати перевагу тексту над HTML"
 
 #: collectionpage/collectionviewwidget.cpp:33
-#, fuzzy, kde-format
-#| msgid "Use Global Settings"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr "Використовувати загальні параметри"
@@ -1219,36 +1208,31 @@ msgid "Filter actions:"
 msgstr "Дії фільтра:"
 
 #: filter/kmfilterdialog.cpp:193
-#, fuzzy, kde-format
-#| msgid "Apply this filter to incoming messages:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Застосувати цей фільтр до вхідних повідомлень:"
 
 #: filter/kmfilterdialog.cpp:203
-#, fuzzy, kde-format
-#| msgid "From all accounts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "зі всіх облікових записів"
 
 #: filter/kmfilterdialog.cpp:207
-#, fuzzy, kde-format
-#| msgid "From all but online IMAP accounts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "зі всіх, крім мережних облікових записів IMAP"
 
 #: filter/kmfilterdialog.cpp:211
-#, fuzzy, kde-format
-#| msgid "From selected accounts only"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "лише з позначених облікових записів"
 
 #: filter/kmfilterdialog.cpp:219
-#, fuzzy, kde-format
-#| msgid "Apply this filter to &sent messages"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "Застосувати цей фільтр до відіс&ланих повідомлень"
@@ -1267,8 +1251,7 @@ msgstr ""
 "варіант «Застосувати цей фільтр <b>до</b> надсилання повідомлень».</p>"
 
 #: filter/kmfilterdialog.cpp:227
-#, fuzzy, kde-format
-#| msgid "Apply this filter &before sending messages"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "Застосувати цей фільтр &до надсилання повідомлень"
@@ -1285,15 +1268,13 @@ msgstr ""
 "варіант слід використовувати, якщо копію отримувача також слід змінити.</p>"
 
 #: filter/kmfilterdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Apply this filter on manual &filtering"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "Застосувати цей фільтр до &фільтрування вручну"
 
 #: filter/kmfilterdialog.cpp:237
-#, fuzzy, kde-format
-#| msgid "Apply this filter on inbound emails in all folders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "Застосувати цей фільтр до вхідних повідомлень в усіх теках"
@@ -1312,22 +1293,19 @@ msgstr ""
 "могло бути пересунуто до інших тек за допомогою фільтрів на боці сервера.</p>"
 
 #: filter/kmfilterdialog.cpp:245
-#, fuzzy, kde-format
-#| msgid "If this filter &matches, stop processing here"
+#, kde-format
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "За ві&дповідності зупинити фільтрування"
 
 #: filter/kmfilterdialog.cpp:248
-#, fuzzy, kde-format
-#| msgid "Add this filter to the Apply Filter menu"
+#, kde-format
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Додати до меню «Застосувати фільтр»"
 
 #: filter/kmfilterdialog.cpp:266
-#, fuzzy, kde-format
-#| msgid "Additionally add this filter to the toolbar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Додатково додати цей фільтр у пенал"
@@ -1760,8 +1738,7 @@ msgid "Edit Accounts Order"
 msgstr "Зміна порядку облікових записів"
 
 #: folder/accountconfigorderdialog.cpp:74
-#, fuzzy, kde-format
-#| msgid "Use custom order"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "Використовувати нетиповий порядок"
@@ -2193,22 +2170,19 @@ msgid "Choose or type your own criteria"
 msgstr "Виберіть або вкажіть ваші власні критерії"
 
 #: search/searchpatternedit.cpp:580
-#, fuzzy, kde-format
-#| msgid "Match a&ll of the following"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "Відповідає вс&ім наступним"
 
 #: search/searchpatternedit.cpp:581
-#, fuzzy, kde-format
-#| msgid "Match an&y of the following"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "Відповідає б&удь-якому з наступного"
 
 #: search/searchpatternedit.cpp:583
-#, fuzzy, kde-format
-#| msgid "Match all messages"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Відповідає всім повідомленням"
@@ -2809,8 +2783,7 @@ msgid "Enter the replacement values for '%1':"
 msgstr "Введіть значення для заміни «%1»:"
 
 #: snippets/snippetvariabledialog.cpp:45
-#, fuzzy, kde-format
-#| msgid "Make value &default"
+#, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Встановити значення як &типове"
@@ -2936,36 +2909,31 @@ msgid "Name:"
 msgstr "Назва:"
 
 #: tag/tagwidget.cpp:70
-#, fuzzy, kde-format
-#| msgid "Change te&xt color:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "Змінити колір тек&сту:"
 
 #: tag/tagwidget.cpp:82
-#, fuzzy, kde-format
-#| msgid "Change &background color:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "З&мінити колір тла:"
 
 #: tag/tagwidget.cpp:94
-#, fuzzy, kde-format
-#| msgid "Change fo&nt:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "Змінити шри&фт:"
 
 #: tag/tagwidget.cpp:100
-#, fuzzy, kde-format
-#| msgid "&Bold"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Bold"
 msgstr "&Жирний"
 
 #: tag/tagwidget.cpp:104
-#, fuzzy, kde-format
-#| msgid "&Italics"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Italics"
 msgstr "&Курсив"
@@ -2983,8 +2951,7 @@ msgid "Shortc&ut:"
 msgstr "Скороч&ення:"
 
 #: tag/tagwidget.cpp:144
-#, fuzzy, kde-format
-#| msgid "Enable &toolbar button"
+#, kde-format
 msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Увімкнути кнопку на &панелі"

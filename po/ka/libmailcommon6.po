@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-30 00:42+0000\n"
-"PO-Revision-Date: 2024-07-04 05:55+0200\n"
+"PO-Revision-Date: 2024-07-30 06:47+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -46,8 +46,7 @@ msgid "Save Settings and Expire Now"
 msgstr "პარამეტრების შენახვა და ვადის ახლავე გასვლა"
 
 #: collectionpage/collectionexpirywidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Expire messages with invalid date"
+#, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "არასწორი თარიღის მქონე შეტყობინებების ვადა"
@@ -140,8 +139,7 @@ msgstr ""
 "გამოყენებული. ეს ნიშნავს, რომ ის გაქრება, როცა მორგების ფანჯარას დახურავთ."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
-#, fuzzy, kde-format
-#| msgid "Act on new/unread mail in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr "ქმედება ამ საქაღალდეში არსებულ ახალ/წაუკითხავ ელფოსტაზე"
@@ -167,8 +165,7 @@ msgstr ""
 "ნაგვის ყუთისა და სპამის საქაღალდეებში.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, fuzzy, kde-format
-#| msgid "Keep replies in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "პასუხების ამავე საქაღალდეში დატოვება"
@@ -185,8 +182,7 @@ msgstr ""
 "მაგიერ."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, fuzzy, kde-format
-#| msgid "Hide this folder in the folder selection dialog"
+#, kde-format
 msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "ამ საქაღალდის საქაღალდის არჩევნის ფანჯარაში დამალვა"
@@ -202,8 +198,7 @@ msgstr ""
 "ფანჯრებში, როგორიცაა <interface>საქაღალდეზე გადასვლა</interface>, გამოჩნდეს."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "&ნაგულისხმევი იდენტიფიკატორის გამოყენება"
@@ -230,8 +225,7 @@ msgid "&Sender identity:"
 msgstr "&გამომგზავნის იდენტიფიკატორი:"
 
 #: collectionpage/collectiontemplateswidget.cpp:20
-#, fuzzy, kde-format
-#| msgid "&Use custom message templates in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "&ამ საქაღალდეში მომხმარებლის შეტყობინების ნიმუშების გამყენება"
@@ -243,36 +237,31 @@ msgid "&Copy Global Templates"
 msgstr "&გლობალური ნიმუშების კოპირება"
 
 #: collectionpage/collectionviewwidget.cpp:27
-#, fuzzy, kde-format
-#| msgid "Use default message list aggregation:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "ნაგულისხმევი შეტყობინებების სიის აგრეგაციის გამოყენება:"
 
 #: collectionpage/collectionviewwidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Use default message list theme"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "ნაგულისხმევი შეტყობინებების სიის თემის გამოყენება"
 
 #: collectionpage/collectionviewwidget.cpp:31
-#, fuzzy, kde-format
-#| msgid "Prefer HTML to text"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr "ტექსტს HTML მირჩევნია"
 
 #: collectionpage/collectionviewwidget.cpp:32
-#, fuzzy, kde-format
-#| msgid "Prefer text to HTML"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr "HTML-ს ტექსტი მირჩევნია"
 
 #: collectionpage/collectionviewwidget.cpp:33
-#, fuzzy, kde-format
-#| msgid "Use Global Settings"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr "გლობალური პარამეტრების გამოყენება"
@@ -1205,36 +1194,31 @@ msgid "Filter actions:"
 msgstr "ფილტრის ქმედებები:"
 
 #: filter/kmfilterdialog.cpp:193
-#, fuzzy, kde-format
-#| msgid "Apply this filter to incoming messages:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "ამ ფილტრის გადატარება შემომავალ ელფოსტაზე:"
 
 #: filter/kmfilterdialog.cpp:203
-#, fuzzy, kde-format
-#| msgid "From all accounts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "ყველა ანგარიშიდან"
 
 #: filter/kmfilterdialog.cpp:207
-#, fuzzy, kde-format
-#| msgid "From all but online IMAP accounts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "ყველა, მაგრამ არა ონლაინ-IMAP ანგარიშებზე"
 
 #: filter/kmfilterdialog.cpp:211
-#, fuzzy, kde-format
-#| msgid "From selected accounts only"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "მხოლოდ მონიშნული ანგარიშებიდან"
 
 #: filter/kmfilterdialog.cpp:219
-#, fuzzy, kde-format
-#| msgid "Apply this filter to &sent messages"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "ამ ფილტრის გადატარება &გაგზავნილ შეტყობინებებზე"
@@ -1253,8 +1237,7 @@ msgstr ""
 "გადატარება\".</p>"
 
 #: filter/kmfilterdialog.cpp:227
-#, fuzzy, kde-format
-#| msgid "Apply this filter &before sending messages"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "&ამ ფილტრის შეტყობინებების გაგზავნამდე გადატარება"
@@ -1271,15 +1254,13 @@ msgstr ""
 "მიმღების ასლიც უნდა შეიცვალოს.</p>"
 
 #: filter/kmfilterdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Apply this filter on manual &filtering"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "ამ ფილტრის &ხელით გაფილტვრისას გადატარება"
 
 #: filter/kmfilterdialog.cpp:237
-#, fuzzy, kde-format
-#| msgid "Apply this filter on inbound emails in all folders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "ამ ფილტრის შემომავალ ელფოსტაზე, ყველა საქაღალდეში, გადატარება"
@@ -1298,22 +1279,19 @@ msgstr ""
 "სერვერის-მხარეს არსებული ფილტრებით.</p>"
 
 #: filter/kmfilterdialog.cpp:245
-#, fuzzy, kde-format
-#| msgid "If this filter &matches, stop processing here"
+#, kde-format
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "თუ ეს ფილტრი &ემთხვევა, დამუშავება აქ შეწყდება"
 
 #: filter/kmfilterdialog.cpp:248
-#, fuzzy, kde-format
-#| msgid "Add this filter to the Apply Filter menu"
+#, kde-format
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "ამ ფილტრის გადასატარებელი ფილტრების მენიუში ჩამატება"
 
 #: filter/kmfilterdialog.cpp:266
-#, fuzzy, kde-format
-#| msgid "Additionally add this filter to the toolbar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "დამატებით, ამ ფილტრის პანელზე დამატება"
@@ -1752,8 +1730,7 @@ msgid "Edit Accounts Order"
 msgstr "ანგარიშების მიმდევრობის ჩასწორება"
 
 #: folder/accountconfigorderdialog.cpp:74
-#, fuzzy, kde-format
-#| msgid "Use custom order"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "მიმდევრობის ხელით მითითება"
@@ -2177,22 +2154,19 @@ msgid "Choose or type your own criteria"
 msgstr "აირჩიეთ ან აკრიფეთ თქვენი პირობა"
 
 #: search/searchpatternedit.cpp:580
-#, fuzzy, kde-format
-#| msgid "Match a&ll of the following"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "დაემთხვეს &ყველაფერი შემდეგიდან"
 
 #: search/searchpatternedit.cpp:581
-#, fuzzy, kde-format
-#| msgid "Match an&y of the following"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "დამეთხვეს &ნებისმიერი რამ შემდეგიდან"
 
 #: search/searchpatternedit.cpp:583
-#, fuzzy, kde-format
-#| msgid "Match all messages"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "ყველა შეტყობინების დამთხვევა"
@@ -2791,8 +2765,7 @@ msgid "Enter the replacement values for '%1':"
 msgstr "შეიყვანეთ '%1'-ის ჩასანაცვლებელი მნიშვნელობები:"
 
 #: snippets/snippetvariabledialog.cpp:45
-#, fuzzy, kde-format
-#| msgid "Make value &default"
+#, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "მნიშვნელობის ნაგულისხმევად გამოყენება"
@@ -2917,36 +2890,31 @@ msgid "Name:"
 msgstr "სახელი:"
 
 #: tag/tagwidget.cpp:70
-#, fuzzy, kde-format
-#| msgid "Change te&xt color:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "&ტექსტის ფერის შეცვლა:"
 
 #: tag/tagwidget.cpp:82
-#, fuzzy, kde-format
-#| msgid "Change &background color:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "&ფონის შეცვლა:"
 
 #: tag/tagwidget.cpp:94
-#, fuzzy, kde-format
-#| msgid "Change fo&nt:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "ფ&ონტის შეცვლა:"
 
 #: tag/tagwidget.cpp:100
-#, fuzzy, kde-format
-#| msgid "&Bold"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Bold"
 msgstr "&სქელი"
 
 #: tag/tagwidget.cpp:104
-#, fuzzy, kde-format
-#| msgid "&Italics"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Italics"
 msgstr "&დახრილები"
@@ -2964,8 +2932,7 @@ msgid "Shortc&ut:"
 msgstr "&მალსახმობი:"
 
 #: tag/tagwidget.cpp:144
-#, fuzzy, kde-format
-#| msgid "Enable &toolbar button"
+#, kde-format
 msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "&ხელსაწყოების პანელის ღილაკების ჩართვა"
