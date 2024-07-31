@@ -135,7 +135,7 @@ QList<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filter
             QString defaultPath;
             switch (type) {
             case KMailFilter:
-                title = i18n("Import KMail Filters");
+                title = i18nc("@title:window", "Import KMail Filters");
                 defaultPath = QDir::homePath();
                 break;
             case ThunderBirdFilter:
@@ -143,27 +143,27 @@ QList<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filter
             case SeaMonkeyFilter:
                 break;
             case EvolutionFilter:
-                title = i18n("Import Evolution Filters");
+                title = i18nc("@title:window", "Import Evolution Filters");
                 defaultPath = MailCommon::FilterImporterEvolution::defaultFiltersSettingsPath();
                 break;
             case SylpheedFilter:
-                title = i18n("Import Sylpheed Filters");
+                title = i18nc("@title:window", "Import Sylpheed Filters");
                 defaultPath = MailCommon::FilterImporterSylpheed::defaultFiltersSettingsPath();
                 break;
             case ProcmailFilter:
-                title = i18n("Import Procmail Filters");
+                title = i18nc("@title:window", "Import Procmail Filters");
                 defaultPath = MailCommon::FilterImporterProcmail::defaultFiltersSettingsPath();
                 break;
             case BalsaFilter:
-                title = i18n("Import Balsa Filters");
+                title = i18nc("@title:window", "Import Balsa Filters");
                 defaultPath = MailCommon::FilterImporterBalsa::defaultFiltersSettingsPath();
                 break;
             case ClawsMailFilter:
-                title = i18n("Import Claws Mail Filters");
+                title = i18nc("@title:window", "Import Claws Mail Filters");
                 defaultPath = MailCommon::FilterImporterClawsMails::defaultFiltersSettingsPath();
                 break;
             case GmailFilter:
-                title = i18n("Import Gmail Filters");
+                title = i18nc("@title:window", "Import Gmail Filters");
                 defaultPath = MailCommon::FilterImporterGmail::defaultFiltersSettingsPath();
                 break;
             }
@@ -313,7 +313,7 @@ void FilterImporterExporter::exportFilters(const QList<MailFilter *> &filters, c
     QUrl saveUrl;
     if (fileName.isEmpty()) {
         saveUrl = QFileDialog::getSaveFileUrl(d->mParent,
-                                              i18n("Export Filters"),
+                                              i18nc("@title:window", "Export Filters"),
                                               QUrl::fromLocalFile(QDir::homePath()),
                                               QString(),
                                               nullptr,

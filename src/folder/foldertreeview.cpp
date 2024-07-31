@@ -473,7 +473,7 @@ bool FolderTreeView::allowedToEnterFolder(const Akonadi::Collection &collection,
     // parameter (kept in the config file for kmail)
     const int result = KMessageBox::questionTwoActions(const_cast<FolderTreeView *>(this),
                                                        i18n("<qt>Go to the next unread message in folder <b>%1</b>?</qt>", collection.name()),
-                                                       i18n("Go to Next Unread Message"),
+                                                       i18nc("@title:window", "Go to Next Unread Message"),
                                                        KGuiItem(i18nc("@action:button", "Go To")),
                                                        KGuiItem(i18nc("@action:button", "Do Not Go To")), // defaults
                                                        QStringLiteral(":kmail_AskNextFolder"),
@@ -515,7 +515,7 @@ bool FolderTreeView::isUnreadFolder(const QModelIndex &current, QModelIndex &ind
                         // parameter (kept in the config file for kmail)
                         if (KMessageBox::questionTwoActions(this,
                                                             i18n("<qt>Go to the next unread message in folder <b>%1</b>?</qt>", collection.name()),
-                                                            i18n("Go to Next Unread Message"),
+                                                            i18nc("@title:window", "Go to Next Unread Message"),
                                                             KGuiItem(i18nc("@action:button", "Go To")),
                                                             KGuiItem(i18nc("@action:button", "Do Not Go To")), // defaults
                                                             QStringLiteral(":kmail_AskNextFolder"),

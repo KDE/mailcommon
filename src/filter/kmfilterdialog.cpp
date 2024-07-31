@@ -416,7 +416,9 @@ void KMFilterDialog::slotFolderChanged(const Akonadi::Collection &collection)
 void KMFilterDialog::slotRunFilters()
 {
     if (!mFolderRequester->collection().isValid()) {
-        KMessageBox::information(this, i18nc("@info", "Unable to apply this filter since there are no folders selected."), i18n("No folder selected."));
+        KMessageBox::information(this,
+                                 i18nc("@info", "Unable to apply this filter since there are no folders selected."),
+                                 i18nc("@title:window", "No folder selected."));
         return;
     }
 
@@ -425,13 +427,15 @@ void KMFilterDialog::slotRunFilters()
                                  i18nc("@info",
                                        "Some filters were changed and not saved yet. "
                                        "You must save your filters before they can be applied."),
-                                 i18n("Filters changed."));
+                                 i18nc("@title:window", "Filters changed."));
         return;
     }
     SearchRule::RequiredPart requiredPart = SearchRule::Envelope;
     const QStringList selectedFiltersId = mFilterList->selectedFilterId(requiredPart, mFolderRequester->collection().resource());
     if (selectedFiltersId.isEmpty()) {
-        KMessageBox::information(this, i18nc("@info", "Unable to apply a filter since there are no filters currently selected."), i18n("No filters selected."));
+        KMessageBox::information(this,
+                                 i18nc("@info", "Unable to apply a filter since there are no filters currently selected."),
+                                 i18nc("@title:window", "No filters selected."));
         return;
     }
     auto job = new Akonadi::ItemFetchJob(mFolderRequester->collection(), this);
@@ -705,12 +709,12 @@ void KMFilterDialog::slotExportAsSieveScript()
                                  i18nc("@info",
                                        "Some filters were changed and not saved yet.<br>"
                                        "You must save your filters before they can be exported."),
-                                 i18n("Filters changed."));
+                                 i18nc("@title:window", "Filters changed."));
         return;
     }
     KMessageBox::information(this,
                              i18n("We cannot convert all KMail filters to sieve scripts but we can try :)"),
-                             i18n("Convert KMail filters to sieve scripts"));
+                             i18nc("@title:window", "Convert KMail filters to sieve scripts"));
     bool wasCanceled = false;
     const QList<MailFilter *> filters = mFilterList->filtersForSaving(false, wasCanceled);
     if (filters.isEmpty()) {
@@ -726,7 +730,7 @@ void KMFilterDialog::slotExportAsSieveScript()
                 convert.convert();
                 qDeleteAll(lst);
             } else {
-                KMessageBox::information(this, i18n("No filters selected."), i18n("Convert KMail filters to sieve scripts"));
+                KMessageBox::information(this, i18n("No filters selected."), i18nc("@title:window", "Convert KMail filters to sieve scripts"));
             }
         }
         delete dlg;

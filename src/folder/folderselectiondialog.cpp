@@ -193,7 +193,7 @@ void FolderSelectionDialog::slotAddChildFolder()
 void FolderSelectionDialog::collectionCreationResult(KJob *job)
 {
     if (job->error()) {
-        KMessageBox::error(this, i18n("Could not create folder: %1", job->errorString()), i18n("Folder creation failed"));
+        KMessageBox::error(this, i18n("Could not create folder: %1", job->errorString()), i18nc("@title:window", "Folder creation failed"));
     }
 }
 

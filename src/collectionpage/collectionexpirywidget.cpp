@@ -170,7 +170,7 @@ bool CollectionExpiryWidget::validateExpireFolder(bool expireNow)
     if (enableGlobally && mMoveToRB->isChecked() && !expireToFolder.isValid()) {
         KMessageBox::error(this,
                            i18n("Please select a folder to expire messages into.\nIf this is not done, expired messages will be permanently deleted."),
-                           i18n("No Folder Selected"));
+                           i18nc("@title:window", "No Folder Selected"));
         mDeletePermanentlyRB->setChecked(true);
         expireNow = false; // settings are not valid
     }
@@ -186,7 +186,7 @@ MailCommon::ExpireCollectionAttribute *CollectionExpiryWidget::assignFolderAttri
             KMessageBox::error(this,
                                i18n("Please select a different folder than the current folder to expire messages into.\nIf this is not done, expired messages "
                                     "will be permanently deleted."),
-                               i18n("Wrong Folder Selected"));
+                               i18nc("@title:window", "Wrong Folder Selected"));
             mDeletePermanentlyRB->setChecked(true);
             expireNow = false; // settings are not valid
         } else {

@@ -442,7 +442,7 @@ void KMFilterListBox::slotDelete()
     MailCommon::MailFilter *filter = itemFilter->filter();
     const QString question =
         uniqFilterSelected ? i18n("Do you want to remove the filter \"%1\"?", filter->pattern()->name()) : i18n("Do you want to remove selected filters?");
-    const QString dialogTitle = uniqFilterSelected ? i18n("Remove Filter") : i18n("Remove Filters");
+    const QString dialogTitle = uniqFilterSelected ? i18nc("@title:window", "Remove Filter") : i18nc("@title:window", "Remove Filters");
     const int answer = KMessageBox::questionTwoActions(this, question, dialogTitle, KStandardGuiItem::remove(), KStandardGuiItem::cancel());
     if (answer == KMessageBox::ButtonCode::SecondaryAction) {
         return;

@@ -152,7 +152,7 @@ void BackupJob::abort(const QString &errorMessage)
     text += QLatin1Char('\n') + errorMessage;
     Q_EMIT error(text);
     if (mDisplayMessageBox) {
-        KMessageBox::error(mParentWidget, text, i18n("Archiving failed"));
+        KMessageBox::error(mParentWidget, text, i18nc("@title:window", "Archiving failed"));
     }
     deleteLater();
     // Clean up archive file here?
@@ -190,7 +190,7 @@ void BackupJob::finish()
                 format.formatByteSize(mArchivedSize));
     text += QLatin1Char('\n') + i18n("The archive file has a size of %1.", format.formatByteSize(archiveFileInfo.size()));
     if (mDisplayMessageBox) {
-        KMessageBox::information(mParentWidget, text, i18n("Archiving finished"));
+        KMessageBox::information(mParentWidget, text, i18nc("@title:window", "Archiving finished"));
     }
 
     if (mDeleteFoldersAfterCompletion) {

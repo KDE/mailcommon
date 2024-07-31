@@ -49,7 +49,7 @@ SnippetSelectorWidget::~SnippetSelectorWidget() = default;
 
 void SnippetSelectorWidget::addNewEntry()
 {
-    const QStringList lst = QFileDialog::getOpenFileNames(this, i18n("Select Attachments"));
+    const QStringList lst = QFileDialog::getOpenFileNames(this, i18nc("@title:window", "Select Attachments"));
     if (!lst.isEmpty()) {
         appendStringList(lst);
     }
