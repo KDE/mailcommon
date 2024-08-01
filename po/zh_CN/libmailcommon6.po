@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:42+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -77,7 +77,9 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "No Folder Selected"
+msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "未选中文件夹"
 
@@ -90,7 +92,9 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Wrong Folder Selected"
+msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "选中错误的文件夹"
 
@@ -931,37 +935,51 @@ msgid ""
 msgstr ""
 
 #: filter/filterimporterexporter.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import KMail Filters"
+msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "导入 KMail 过滤器"
 
 #: filter/filterimporterexporter.cpp:146
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Evolution Filters"
+msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "导入 Evolution 过滤器"
 
 #: filter/filterimporterexporter.cpp:150
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Sylpheed Filters"
+msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "导入 Sylpheed 过滤器"
 
 #: filter/filterimporterexporter.cpp:154
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Procmail Filters"
+msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "导入 Procmail 过滤器"
 
 #: filter/filterimporterexporter.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Balsa Filters"
+msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "导入 Balsa 过滤器"
 
 #: filter/filterimporterexporter.cpp:162
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Claws Mail Filters"
+msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "导入 Claws Mail 过滤器"
 
 #: filter/filterimporterexporter.cpp:166
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Gmail Filters"
+msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "导入 Gmail 过滤器"
 
@@ -974,7 +992,9 @@ msgid ""
 msgstr ""
 
 #: filter/filterimporterexporter.cpp:316
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Export Filters"
+msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "导出过滤器"
 
@@ -1258,18 +1278,20 @@ msgctxt "@action:button"
 msgid "Run Now"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:419
-#, kde-format
+#: filter/kmfilterdialog.cpp:421
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "未选中文件夹。"
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1277,38 +1299,42 @@ msgid ""
 "before they can be applied."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
-#, kde-format
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#, fuzzy, kde-format
+#| msgid "Filters changed."
+msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "过滤器已修改。"
 
-#: filter/kmfilterdialog.cpp:434
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:438
+#, fuzzy, kde-format
+#| msgid "No filters selected."
+msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "未选中过滤器。"
 
-#: filter/kmfilterdialog.cpp:658
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "未导入过滤器。"
 
-#: filter/kmfilterdialog.cpp:669
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:706
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1316,15 +1342,23 @@ msgid ""
 "before they can be exported."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Convert to Sieve Script"
+msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
-msgstr ""
+msgstr "转换成 Sieve 脚本"
+
+#: filter/kmfilterdialog.cpp:733
+#, kde-format
+msgid "No filters selected."
+msgstr "未选中过滤器。"
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1474,12 +1508,16 @@ msgid "Do you want to remove selected filters?"
 msgstr "您想要删除所选过滤器吗？"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "删除过滤器"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filters"
+msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "删除过滤器"
 
@@ -1686,7 +1724,9 @@ msgid "Could not create folder: %1"
 msgstr "无法创建文件夹：%1"
 
 #: folder/folderselectiondialog.cpp:196
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "文件夹创建失败"
 
@@ -1741,7 +1781,9 @@ msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr ""
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go to Next Unread Message"
+msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "跳转到下一封未读的信件"
 
@@ -1799,7 +1841,9 @@ msgid "Failed to archive the folder '%1'."
 msgstr "无法归档文件夹：%1"
 
 #: job/backupjob.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Archiving failed"
+msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "归档失败"
 
@@ -1808,7 +1852,7 @@ msgstr "归档失败"
 msgid "Unable to finalize the archive file."
 msgstr ""
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:193
+#: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
 msgstr "归档完成"
@@ -1830,6 +1874,13 @@ msgstr[0] ""
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr ""
+
+#: job/backupjob.cpp:193
+#, fuzzy, kde-format
+#| msgid "Archiving finished"
+msgctxt "@title:window"
+msgid "Archiving finished"
+msgstr "归档完成"
 
 #: job/backupjob.cpp:243
 #, kde-format
@@ -2488,6 +2539,7 @@ msgid "Insert Variables"
 msgstr ""
 
 #: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2496,11 +2548,6 @@ msgstr ""
 #: snippets/snippetselectattachmentwidget.cpp:45
 #, kde-format
 msgid "Do you want to delete selected attachment?"
-msgstr ""
-
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
-msgid "Select Attachments"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:154
@@ -2608,7 +2655,9 @@ msgid "Do you want to update snippet?"
 msgstr "您真地想更新片段吗？"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update snippet"
+msgctxt "@title:window"
 msgid "Update snippet"
 msgstr "更新代码段"
 
@@ -2891,7 +2940,9 @@ msgid "You cannot redirect the message without an address."
 msgstr "您不能重定向没有地址的邮件。"
 
 #: widgets/redirectdialog.cpp:207
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Redirection Address"
+msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "清空自动转发地址"
 

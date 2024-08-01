@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:42+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2022-02-17 11:52+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -85,7 +85,9 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "No Folder Selected"
+msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Nici un dosar selectat"
 
@@ -102,7 +104,9 @@ msgstr ""
 "Alegeți un dosar diferit de cel actual în care să fie expirate mesajele."
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Wrong Folder Selected"
+msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "Dosar greșit ales"
 
@@ -1015,38 +1019,51 @@ msgstr ""
 "conțin acțiuni sau reguli de căutare)."
 
 #: filter/filterimporterexporter.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import KMail Filters"
+msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Importă filtre KMail"
 
 #: filter/filterimporterexporter.cpp:146
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Evolution Filters"
+msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Importă filtre Evolution"
 
 #: filter/filterimporterexporter.cpp:150
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Sylpheed Filters"
+msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Importă filtre Sylpheed"
 
 #: filter/filterimporterexporter.cpp:154
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Procmail Filters"
+msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Importă filtre Procmail"
 
 #: filter/filterimporterexporter.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Balsa Filters"
+msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Importă filtre Balsa"
 
 #: filter/filterimporterexporter.cpp:162
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Claws Mail Filters"
+msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Importă filtre Claws Mail"
 
 #: filter/filterimporterexporter.cpp:166
 #, fuzzy, kde-format
 #| msgid "Import KMail Filters"
+msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "Importă filtre KMail"
 
@@ -1061,7 +1078,9 @@ msgstr ""
 "pot fi insuficiente."
 
 #: filter/filterimporterexporter.cpp:316
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Export Filters"
+msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Exportă filtre"
 
@@ -1382,18 +1401,20 @@ msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Rulează acum"
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Acest filtru nu poate fi aplicat deoarece nu au fost alese dosare."
 
-#: filter/kmfilterdialog.cpp:419
-#, kde-format
+#: filter/kmfilterdialog.cpp:421
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Niciun dosar ales."
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1403,38 +1424,42 @@ msgstr ""
 "Unele filtre au fost modificate și încă nu sunt salvate. Trebuie să vă "
 "salvați filtrele înainte ca acestea să poată fi aplicate."
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
-#, kde-format
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#, fuzzy, kde-format
+#| msgid "Filters changed."
+msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filtre modificate."
 
-#: filter/kmfilterdialog.cpp:434
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Nu se poate aplica un filtru deoarece nu sunt filtre alese momentan."
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:438
+#, fuzzy, kde-format
+#| msgid "No filters selected."
+msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Niciun filtru ales."
 
-#: filter/kmfilterdialog.cpp:658
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Nu a fost importat niciun filtru."
 
-#: filter/kmfilterdialog.cpp:669
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Filtrele importate:"
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:706
+#: filter/kmfilterdialog.cpp:710
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1448,15 +1473,21 @@ msgstr ""
 "Unele filtre au fost modificate și încă nu sunt salvate. Trebuie să vă "
 "salvați filtrele înainte ca acestea să poată fi aplicate."
 
-#: filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
 #, kde-format
+msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr ""
+
+#: filter/kmfilterdialog.cpp:733
+#, kde-format
+msgid "No filters selected."
+msgstr "Niciun filtru ales."
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1617,12 +1648,16 @@ msgid "Do you want to remove selected filters?"
 msgstr "Doriți să eliminați filtrele alese?"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Elimină filtru"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filters"
+msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Elimină filtrele"
 
@@ -1842,7 +1877,9 @@ msgid "Could not create folder: %1"
 msgstr "Nu pot crea dosarul: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Creare dosar eșuată"
 
@@ -1897,7 +1934,9 @@ msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr "<qt>Trec la următorul mesaj necitit din dosarul <b>%1</b>?</qt>"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go to Next Unread Message"
+msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Salt la următorul mesaj necitit"
 
@@ -1958,7 +1997,9 @@ msgid "Failed to archive the folder '%1'."
 msgstr "Dosarul „%1” nu a putut fi arhivat."
 
 #: job/backupjob.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Archiving failed"
+msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Arhivare eșuată"
 
@@ -1967,7 +2008,7 @@ msgstr "Arhivare eșuată"
 msgid "Unable to finalize the archive file."
 msgstr "Fișierul-arhivă nu poate fi finalizat."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:193
+#: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
 msgstr "Arhivare încheiată"
@@ -1993,6 +2034,13 @@ msgstr[2] "Au fost arhivate %1 de mesaje cu dimensiunea totală de %2"
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Fișierul-arhivă are dimensiunea de %1."
+
+#: job/backupjob.cpp:193
+#, fuzzy, kde-format
+#| msgid "Archiving finished"
+msgctxt "@title:window"
+msgid "Archiving finished"
+msgstr "Arhivare încheiată"
 
 #: job/backupjob.cpp:243
 #, kde-format
@@ -2700,6 +2748,7 @@ msgid "Insert Variables"
 msgstr "Introduceți variabilele"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2709,11 +2758,6 @@ msgstr "Alegeți atașamentele"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Doriți să ștergeți atașamentul ales?"
-
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
-msgid "Select Attachments"
-msgstr "Alegeți atașamentele"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2837,6 +2881,7 @@ msgstr "Doriți să eliminați filtrul „%1”?"
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
 #, fuzzy, kde-format
 #| msgid "Remove Snippet"
+msgctxt "@title:window"
 msgid "Update snippet"
 msgstr "Elimină fragmentul"
 
@@ -3134,7 +3179,9 @@ msgid "You cannot redirect the message without an address."
 msgstr "Nu puteți redirecta un mesaj fără o adresă."
 
 #: widgets/redirectdialog.cpp:207
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Redirection Address"
+msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "Adresă de redirectare goală"
 
@@ -3153,6 +3200,9 @@ msgid ""
 msgstr ""
 "Acest buton deschide un dialog separat în care puteți alege destinatarii "
 "dintre toate adresele disponibile."
+
+#~ msgid "Select Attachments"
+#~ msgstr "Alegeți atașamentele"
 
 #~ msgid "Add Tag..."
 #~ msgstr "Adăugare marcaj..."

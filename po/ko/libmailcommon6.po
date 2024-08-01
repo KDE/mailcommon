@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:42+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2023-10-08 23:39+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -81,7 +81,9 @@ msgstr ""
 "폴더를 지정하지 않으면 정리된 메시지를 삭제합니다."
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "No Folder Selected"
+msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "선택한 폴더 없음"
 
@@ -96,7 +98,9 @@ msgstr ""
 "폴더를 지정하지 않으면 정리된 메시지를 삭제합니다."
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Wrong Folder Selected"
+msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "잘못된 폴더 선택함"
 
@@ -991,37 +995,51 @@ msgstr ""
 "이 없음)"
 
 #: filter/filterimporterexporter.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import KMail Filters"
+msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "KMail 필터 가져오기"
 
 #: filter/filterimporterexporter.cpp:146
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Evolution Filters"
+msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "에볼루션 필터 가져오기"
 
 #: filter/filterimporterexporter.cpp:150
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Sylpheed Filters"
+msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "실피드 필터 가져오기"
 
 #: filter/filterimporterexporter.cpp:154
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Procmail Filters"
+msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Procmail 필터 가져오기"
 
 #: filter/filterimporterexporter.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Balsa Filters"
+msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "발사 필터 가져오기"
 
 #: filter/filterimporterexporter.cpp:162
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Claws Mail Filters"
+msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Claws Mail 필터 가져오기"
 
 #: filter/filterimporterexporter.cpp:166
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Gmail Filters"
+msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "GMail 필터 가져오기"
 
@@ -1034,7 +1052,9 @@ msgid ""
 msgstr "선택한 파일을 읽을 수 없습니다. 파일 접근 권한이 부족할 수도 있습니다."
 
 #: filter/filterimporterexporter.cpp:316
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Export Filters"
+msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "필터 내보내기"
 
@@ -1353,18 +1373,20 @@ msgctxt "@action:button"
 msgid "Run Now"
 msgstr "지금 실행"
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "폴더를 선택하지 않아서 필터를 적용할 수 없습니다."
 
-#: filter/kmfilterdialog.cpp:419
-#, kde-format
+#: filter/kmfilterdialog.cpp:421
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "폴더가 선택되지 않았습니다."
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1374,38 +1396,42 @@ msgstr ""
 "일부 필터가 변경되었고 저장되지 않았습니다. 필터를 적용하기 전에 저장해야 합"
 "니다."
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
-#, kde-format
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#, fuzzy, kde-format
+#| msgid "Filters changed."
+msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "필터가 변경되지 않았습니다."
 
-#: filter/kmfilterdialog.cpp:434
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "필터를 선택하지 않아서 필터를 적용할 수 없습니다."
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:438
+#, fuzzy, kde-format
+#| msgid "No filters selected."
+msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "필터를 선택하지 않았습니다."
 
-#: filter/kmfilterdialog.cpp:658
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "가져온 필터가 없습니다."
 
-#: filter/kmfilterdialog.cpp:669
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "다음 필터를 가져왔습니다:"
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr "필터를 찾았습니다."
 
-#: filter/kmfilterdialog.cpp:706
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1415,16 +1441,23 @@ msgstr ""
 "일부 필터가 변경되었고 저장되지 않았습니다.<br>필터를 내보내기 전에 저장해야 "
 "합니다."
 
-#: filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "모든 KMail 필터를 Sieve 스크립트로 변환할 수 없지만 최선을 다하겠습니다 :)"
 
-#: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#, fuzzy, kde-format
+#| msgid "Convert KMail filters to sieve scripts"
+msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "KMail 필터를 Sieve 스크립트로 변환"
+
+#: filter/kmfilterdialog.cpp:733
+#, kde-format
+msgid "No filters selected."
+msgstr "필터를 선택하지 않았습니다."
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1607,12 +1640,16 @@ msgid "Do you want to remove selected filters?"
 msgstr "선택한 필터를 삭제하시겠습니까?"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "필터 삭제"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filters"
+msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "필터 삭제"
 
@@ -1828,7 +1865,9 @@ msgid "Could not create folder: %1"
 msgstr "폴더를 만들 수 없음: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "폴더 생성 실패"
 
@@ -1884,7 +1923,9 @@ msgstr ""
 "<qt>폴더 <b>%1</b>에 있는 다음 읽지 않은 메시지로 이동하시겠습니까?</qt>"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go to Next Unread Message"
+msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "다음 읽지 않은 메시지로 이동"
 
@@ -1945,7 +1986,9 @@ msgid "Failed to archive the folder '%1'."
 msgstr "'%1' 폴더를 압축할 수 없습니다."
 
 #: job/backupjob.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Archiving failed"
+msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "압축 작업 실패"
 
@@ -1954,7 +1997,7 @@ msgstr "압축 작업 실패"
 msgid "Unable to finalize the archive file."
 msgstr "압축 파일을 마무리할 수 없습니다."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:193
+#: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
 msgstr "압축 완료"
@@ -1976,6 +2019,13 @@ msgstr[0] "메시지 %1개(총 크기 %2)를 압축 파일로 저장했습니다
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "압축 파일의 크기는 %1입니다."
+
+#: job/backupjob.cpp:193
+#, fuzzy, kde-format
+#| msgid "Archiving finished"
+msgctxt "@title:window"
+msgid "Archiving finished"
+msgstr "압축 완료"
 
 #: job/backupjob.cpp:243
 #, kde-format
@@ -2649,6 +2699,7 @@ msgid "Insert Variables"
 msgstr "변수 삽입"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2658,11 +2709,6 @@ msgstr "첨부 파일 선택"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "선택한 첨부 파일을 삭제하시겠습니까?"
-
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
-msgid "Select Attachments"
-msgstr "첨부 파일 선택"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2783,7 +2829,9 @@ msgid "Do you want to update snippet?"
 msgstr "스니펫을 업데이트하시겠습니까?"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update snippet"
+msgctxt "@title:window"
 msgid "Update snippet"
 msgstr "스니펫 업데이트"
 
@@ -3078,7 +3126,9 @@ msgid "You cannot redirect the message without an address."
 msgstr "주소를 입력하지 않고 메시지를 전달할 수 없습니다."
 
 #: widgets/redirectdialog.cpp:207
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Redirection Address"
+msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "빈 전달 주소"
 
@@ -3097,6 +3147,9 @@ msgid ""
 msgstr ""
 "이 단추를 누르면 사용 가능한 주소 중 받는 사람을 선택할 수 있는 대화 상자를 "
 "표시합니다."
+
+#~ msgid "Select Attachments"
+#~ msgstr "첨부 파일 선택"
 
 #~ msgid "Add Tag..."
 #~ msgstr "태그 추가..."

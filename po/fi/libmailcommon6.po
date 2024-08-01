@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:42+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2023-10-12 18:30+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -88,7 +88,9 @@ msgstr ""
 "Ellei tätä tehdä, vanhennetut viestit poistetaan pysyvästi."
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "No Folder Selected"
+msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Kansiota ei valittu"
 
@@ -103,7 +105,9 @@ msgstr ""
 "Ellei tätä tehdä, vanhennetut viestit poistetaan pysyvästi."
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Wrong Folder Selected"
+msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "Väärä kansio valittu"
 
@@ -1011,37 +1015,51 @@ msgstr ""
 "(esim. eivät sisältäneet toimenpiteitä tai hakusääntöjä)."
 
 #: filter/filterimporterexporter.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import KMail Filters"
+msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Tuo KMail-suodattimia"
 
 #: filter/filterimporterexporter.cpp:146
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Evolution Filters"
+msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Tuo Evolution-suodattimia"
 
 #: filter/filterimporterexporter.cpp:150
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Sylpheed Filters"
+msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Tuo Sylpheed-suodattimia"
 
 #: filter/filterimporterexporter.cpp:154
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Procmail Filters"
+msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Tuo Procmail-suodattimia"
 
 #: filter/filterimporterexporter.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Balsa Filters"
+msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Tuo Balsa-suodattimia"
 
 #: filter/filterimporterexporter.cpp:162
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Claws Mail Filters"
+msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Tuo Claws Mail -suodattimia"
 
 #: filter/filterimporterexporter.cpp:166
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Gmail Filters"
+msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "Tuo Gmail-suodattimia"
 
@@ -1055,7 +1073,9 @@ msgstr ""
 "Valittua tiedostoa ei voi lukea. Oikeutesi tiedostoon eivät ehkä riitä."
 
 #: filter/filterimporterexporter.cpp:316
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Export Filters"
+msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Vientisuodattimet"
 
@@ -1377,18 +1397,20 @@ msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Suorita nyt"
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Tätä suodatinta ei voi käyttää, koska kansioita ei ole valittu."
 
-#: filter/kmfilterdialog.cpp:419
-#, kde-format
+#: filter/kmfilterdialog.cpp:421
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Kansiota ei ole valittu."
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1398,38 +1420,42 @@ msgstr ""
 "Joitakin suodattimia on muutettu eikä vielä tallennettu. Suodattimet on "
 "tallennettava ennen kuin niitä voi käyttää."
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
-#, kde-format
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#, fuzzy, kde-format
+#| msgid "Filters changed."
+msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Suodattimia muutettu."
 
-#: filter/kmfilterdialog.cpp:434
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Suodatinta ei voi käyttää, koska ainoaakaan ei ole valittu."
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:438
+#, fuzzy, kde-format
+#| msgid "No filters selected."
+msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Suodattimia ei ole valittu."
 
-#: filter/kmfilterdialog.cpp:658
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Yhtään suodatinta ei tuotu."
 
-#: filter/kmfilterdialog.cpp:669
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Tuodut suodattimet:"
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr "Mikä tahansa löytynyt suodatin."
 
-#: filter/kmfilterdialog.cpp:706
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1439,17 +1465,24 @@ msgstr ""
 "Joitakin suodattimia on muutettu eikä vielä tallennettu.<br>Suodattimet on "
 "tallennettava ennen kuin niitä voi viedä."
 
-#: filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Kaikkia KMail-suodattimia ei voi muuntaa sieve-komentosarjoiksi, mutta "
 "yritetään :)"
 
-#: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#, fuzzy, kde-format
+#| msgid "Convert KMail filters to sieve scripts"
+msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Muunna KMail-suodattimet sieve-komentosarjoiksi"
+
+#: filter/kmfilterdialog.cpp:733
+#, kde-format
+msgid "No filters selected."
+msgstr "Suodattimia ei ole valittu."
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1635,12 +1668,16 @@ msgid "Do you want to remove selected filters?"
 msgstr "Haluatko poistaa valitut suodattimet?"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Poista suodatin"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filters"
+msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Poista suodattimet"
 
@@ -1856,7 +1893,9 @@ msgid "Could not create folder: %1"
 msgstr "Ei voitu luoda kansiota: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Kansion luominen epäonnistui"
 
@@ -1913,7 +1952,9 @@ msgstr ""
 "qt>"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go to Next Unread Message"
+msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Siirry seuraavaan lukematta olevaan viestiin"
 
@@ -1974,7 +2015,9 @@ msgid "Failed to archive the folder '%1'."
 msgstr "Kansion ”%1” arkistointi epäonnistui."
 
 #: job/backupjob.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Archiving failed"
+msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Arkistointi epäonnistui"
 
@@ -1983,7 +2026,7 @@ msgstr "Arkistointi epäonnistui"
 msgid "Unable to finalize the archive file."
 msgstr "Arkistotiedostoa ei voitu viimeistellä."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:193
+#: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
 msgstr "Arkistointi valmis"
@@ -2006,6 +2049,13 @@ msgstr[1] "Arkistoitiin %1 viestiä, joiden yhteiskoko oli %2."
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Arkistotiedoston koko on %1."
+
+#: job/backupjob.cpp:193
+#, fuzzy, kde-format
+#| msgid "Archiving finished"
+msgctxt "@title:window"
+msgid "Archiving finished"
+msgstr "Arkistointi valmis"
 
 #: job/backupjob.cpp:243
 #, kde-format
@@ -2685,6 +2735,7 @@ msgid "Insert Variables"
 msgstr "Lisää muuttujia"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2694,11 +2745,6 @@ msgstr "Valitse liitteet"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Haluatko poistaa valitun liitteen?"
-
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
-msgid "Select Attachments"
-msgstr "Valitse liitteet"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2819,7 +2865,9 @@ msgid "Do you want to update snippet?"
 msgstr "Haluatko päivittää tämän leikkeen?"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update snippet"
+msgctxt "@title:window"
 msgid "Update snippet"
 msgstr "Virkistä leike"
 
@@ -3117,7 +3165,9 @@ msgid "You cannot redirect the message without an address."
 msgstr "Et voi uudelleenohjata viestiä osoitteetta."
 
 #: widgets/redirectdialog.cpp:207
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Redirection Address"
+msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "Tyhjä uudelleenohjausosoite"
 
@@ -3136,6 +3186,9 @@ msgid ""
 msgstr ""
 "Tämä painike avaa erillisien ikkunan, missä voit valita vastaanottajat "
 "saatavilla olevista osoitteista."
+
+#~ msgid "Select Attachments"
+#~ msgstr "Valitse liitteet"
 
 #~ msgid "Add Tag..."
 #~ msgstr "Lisää luokitus…"

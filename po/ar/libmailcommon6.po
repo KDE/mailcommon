@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:42+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2024-06-08 12:09+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -85,7 +85,9 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "No Folder Selected"
+msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "لم تُحدّد مجلّدًا"
 
@@ -98,7 +100,9 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Wrong Folder Selected"
+msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "حُدّد مجلّد خطأ"
 
@@ -955,37 +959,51 @@ msgstr ""
 "بحث)."
 
 #: filter/filterimporterexporter.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import KMail Filters"
+msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "استيراد مرشّحات «بريدك»"
 
 #: filter/filterimporterexporter.cpp:146
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Evolution Filters"
+msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "استيراد مرشّحات «إفلوشن»"
 
 #: filter/filterimporterexporter.cpp:150
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Sylpheed Filters"
+msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "استيراد مرشّحات Sylpheed"
 
 #: filter/filterimporterexporter.cpp:154
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Gmail Filters"
+msgctxt "@title:window"
 msgid "Import Procmail Filters"
-msgstr ""
+msgstr "استيراد مرشّحات Gmail"
 
 #: filter/filterimporterexporter.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Balsa Filters"
+msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "استيراد مرشّحات Balsa"
 
 #: filter/filterimporterexporter.cpp:162
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Claws Mail Filters"
+msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "استيراد مرشّحات «بريد كلاوس»"
 
 #: filter/filterimporterexporter.cpp:166
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Gmail Filters"
+msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "استيراد مرشّحات Gmail"
 
@@ -998,7 +1016,9 @@ msgid ""
 msgstr ""
 
 #: filter/filterimporterexporter.cpp:316
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Export Filters"
+msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "تصدير مرشّحات"
 
@@ -1292,18 +1312,20 @@ msgctxt "@action:button"
 msgid "Run Now"
 msgstr "شغّل الآن"
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:419
-#, kde-format
+#: filter/kmfilterdialog.cpp:421
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "لم تُحدّد مجلّدًا."
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1311,38 +1333,41 @@ msgid ""
 "before they can be applied."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
 #, kde-format
+msgctxt "@title:window"
 msgid "Filters changed."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:434
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:438
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgctxt "@title:window"
 msgid "No filters selected."
-msgstr ""
+msgstr "لم تُحدّد مجلّدًا."
 
-#: filter/kmfilterdialog.cpp:658
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:669
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:706
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1350,14 +1375,22 @@ msgid ""
 "before they can be exported."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Convert to Sieve Script"
+msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
+msgstr "التّحويل إلى سكربت «سِف»"
+
+#: filter/kmfilterdialog.cpp:733
+#, kde-format
+msgid "No filters selected."
 msgstr ""
 
 #: filter/kmfilterlistbox.cpp:41
@@ -1508,12 +1541,16 @@ msgid "Do you want to remove selected filters?"
 msgstr "أتريد إزالة المرشّحات المحدّدة؟"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "إزالة المرشّح"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filters"
+msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "إزالة المرشّحات"
 
@@ -1723,7 +1760,9 @@ msgid "Could not create folder: %1"
 msgstr "تعذّر إنشاء المجلّد: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "فشل إنشاء المجلّد"
 
@@ -1779,6 +1818,7 @@ msgstr ""
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
+msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr ""
 
@@ -1836,7 +1876,9 @@ msgid "Failed to archive the folder '%1'."
 msgstr "فشلت أرشفة المجلّد ’%1‘."
 
 #: job/backupjob.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Archiving failed"
+msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "فشلت الأرشفة"
 
@@ -1845,7 +1887,7 @@ msgstr "فشلت الأرشفة"
 msgid "Unable to finalize the archive file."
 msgstr "تعذّر إنهاء ملفّ الأرشيف."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:193
+#: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
 msgstr "انتهت الأرشفة"
@@ -1872,6 +1914,13 @@ msgstr[5] ""
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr ""
+
+#: job/backupjob.cpp:193
+#, fuzzy, kde-format
+#| msgid "Archiving finished"
+msgctxt "@title:window"
+msgid "Archiving finished"
+msgstr "انتهت الأرشفة"
 
 #: job/backupjob.cpp:243
 #, kde-format
@@ -2557,6 +2606,7 @@ msgid "Insert Variables"
 msgstr "المتغيّرات"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2566,11 +2616,6 @@ msgstr "حدد المرفقات"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "أتريد إزالة المرفقات المحدّدة؟"
-
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
-msgid "Select Attachments"
-msgstr "حدد المرفقات"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2681,9 +2726,12 @@ msgid "Do you want to update snippet?"
 msgstr ""
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Edit Snippet"
+msgctxt "@title:window"
 msgid "Update snippet"
-msgstr ""
+msgstr "حرّر القصاصة"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
 #, kde-format
@@ -2959,6 +3007,7 @@ msgstr ""
 
 #: widgets/redirectdialog.cpp:207
 #, kde-format
+msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr ""
 
@@ -2974,6 +3023,9 @@ msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr ""
+
+#~ msgid "Select Attachments"
+#~ msgstr "حدد المرفقات"
 
 #~ msgid "Add Tag..."
 #~ msgstr "أضف وسمًا..."

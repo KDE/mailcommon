@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:42+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2019-11-18 12:53+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -87,7 +87,9 @@ msgstr ""
 "Ak to nie je urobené, vypršané správy budú permanentne vymazané."
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "No Folder Selected"
+msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Nebol vybraný žiaden priečinok"
 
@@ -103,7 +105,9 @@ msgstr ""
 "Ak to nie je urobené, vypršané správy budú permanentne vymazané."
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Wrong Folder Selected"
+msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "Bol vybraný zlý priečinok"
 
@@ -1027,37 +1031,51 @@ msgstr ""
 "žiadne akcie alebo pravidlá pre hľadanie)."
 
 #: filter/filterimporterexporter.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import KMail Filters"
+msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Importovať KMail filtre"
 
 #: filter/filterimporterexporter.cpp:146
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Evolution Filters"
+msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Importovať Evolution filtre"
 
 #: filter/filterimporterexporter.cpp:150
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Sylpheed Filters"
+msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Importovať Sylpheed filtre"
 
 #: filter/filterimporterexporter.cpp:154
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Procmail Filters"
+msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Importovať Procmail filtre"
 
 #: filter/filterimporterexporter.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Balsa Filters"
+msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Importovať filtre Balsa"
 
 #: filter/filterimporterexporter.cpp:162
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Claws Mail Filters"
+msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Importovať filtre Claws Mail"
 
 #: filter/filterimporterexporter.cpp:166
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Gmail Filters"
+msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "Importovať GMail filtre"
 
@@ -1072,7 +1090,9 @@ msgstr ""
 "nedostatočné."
 
 #: filter/filterimporterexporter.cpp:316
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Export Filters"
+msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Exportovať filtre"
 
@@ -1395,19 +1415,21 @@ msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Spustiť teraz"
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
 "Nemožno použiť tento filter, pretože tam nie sú žiadne vybrané priečinky."
 
-#: filter/kmfilterdialog.cpp:419
-#, kde-format
+#: filter/kmfilterdialog.cpp:421
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Nebol vybraný žiadny priečinok"
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1417,38 +1439,42 @@ msgstr ""
 "Niektoré filtre boli zmenené, ale ešte nie uložené. Musíte uložiť vaše "
 "filtre predtým, než môžu byť použité."
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
-#, kde-format
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#, fuzzy, kde-format
+#| msgid "Filters changed."
+msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filtre sa zmenili."
 
-#: filter/kmfilterdialog.cpp:434
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Nemožno použiť filter, pretože nie sú žiadne filtre aktuálne vybrané."
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:438
+#, fuzzy, kde-format
+#| msgid "No filters selected."
+msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Nebol vybraný žiadny priečinok"
 
-#: filter/kmfilterdialog.cpp:658
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Žiadny filter nebol importovaný."
 
-#: filter/kmfilterdialog.cpp:669
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Filtre, ktoré boli importované:"
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr "Bol nájdený akýkoľvek filter."
 
-#: filter/kmfilterdialog.cpp:706
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1458,17 +1484,24 @@ msgstr ""
 "Niektoré filtre boli zmenené, ale ešte nie uložené.<br> Musíte uložiť vaše "
 "filtre predtým, než môžu byť exportované."
 
-#: filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Nemôžeme skonvertovať všetky filtre KMail do sieve skriptov, ale môžeme to "
 "skúsiť :)"
 
-#: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#, fuzzy, kde-format
+#| msgid "Convert KMail filters to sieve scripts"
+msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Konvertovať filtre KMail na sieve skripty"
+
+#: filter/kmfilterdialog.cpp:733
+#, kde-format
+msgid "No filters selected."
+msgstr "Nebol vybraný žiadny priečinok"
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1659,12 +1692,16 @@ msgid "Do you want to remove selected filters?"
 msgstr "Chcete odstrániť  vybrané filtre?"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Odstrániť filter"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filters"
+msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Odstrániť filtre"
 
@@ -1881,7 +1918,9 @@ msgid "Could not create folder: %1"
 msgstr "Nie je možné vytvoriť priečinok: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Nepodarilo sa vytvoriť zložku"
 
@@ -1937,7 +1976,9 @@ msgstr ""
 "<qt>Prejsť na nasledujúcu neprečítanú správu v priečinku <b>%1</b>?</qt>"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go to Next Unread Message"
+msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Prejsť na nasledujúcu neprečítanú správu"
 
@@ -1998,7 +2039,9 @@ msgid "Failed to archive the folder '%1'."
 msgstr "Zlyhala archivácia priečinka '%1'. "
 
 #: job/backupjob.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Archiving failed"
+msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Archivácia zlyhala"
 
@@ -2007,7 +2050,7 @@ msgstr "Archivácia zlyhala"
 msgid "Unable to finalize the archive file."
 msgstr "Nemožno dokončiť archívny súbor."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:193
+#: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
 msgstr "Archivácia ukončená"
@@ -2033,6 +2076,13 @@ msgstr[2] "%1 správ s celkovou veľkosťou %2 bolo archivovaných."
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Archívny súbor má veľkosť %1."
+
+#: job/backupjob.cpp:193
+#, fuzzy, kde-format
+#| msgid "Archiving finished"
+msgctxt "@title:window"
+msgid "Archiving finished"
+msgstr "Archivácia ukončená"
 
 #: job/backupjob.cpp:243
 #, kde-format
@@ -2727,6 +2777,7 @@ msgid "Insert Variables"
 msgstr "Premenné"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentwidget.cpp:52
 #, fuzzy, kde-format
 #| msgid "Select Attachments"
 msgctxt "@title:window"
@@ -2737,11 +2788,6 @@ msgstr "Vyberte prílohy"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Chcete odstrániť vybranú prílohu?"
-
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
-msgid "Select Attachments"
-msgstr "Vyberte prílohy"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2862,7 +2908,9 @@ msgid "Do you want to update snippet?"
 msgstr "Chcete aktualizovať úryvok?"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update snippet"
+msgctxt "@title:window"
 msgid "Update snippet"
 msgstr "Aktualizovať úryvok"
 
@@ -3161,7 +3209,9 @@ msgid "You cannot redirect the message without an address."
 msgstr "Nemôžete presmerovať správu bez adresy."
 
 #: widgets/redirectdialog.cpp:207
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Redirection Address"
+msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "Prázdna adresa presmerovania"
 
@@ -3180,6 +3230,9 @@ msgid ""
 msgstr ""
 "Toto tlačidlo otvorí osobitný dialóg, kde si môžete vybrať príjemcov zo "
 "všetkých dostupných adries."
+
+#~ msgid "Select Attachments"
+#~ msgstr "Vyberte prílohy"
 
 #~ msgid "Add Tag..."
 #~ msgstr "Pridať značku..."

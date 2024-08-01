@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:42+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2013-03-28 14:37+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -81,6 +81,7 @@ msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
+msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr ""
 
@@ -94,6 +95,7 @@ msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:189
 #, kde-format
+msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr ""
 
@@ -951,38 +953,51 @@ msgid ""
 msgstr ""
 
 #: filter/filterimporterexporter.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Import KMail Filters"
-msgstr ""
+msgstr "गाळणी काढून टाका"
 
 #: filter/filterimporterexporter.cpp:146
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Import Evolution Filters"
-msgstr ""
+msgstr "गाळणी काढून टाका"
 
 #: filter/filterimporterexporter.cpp:150
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select File:"
+msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
-msgstr ""
+msgstr "फाईल निवडा :"
 
 #: filter/filterimporterexporter.cpp:154
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Import Procmail Filters"
-msgstr ""
+msgstr "गाळणी काढून टाका"
 
 #: filter/filterimporterexporter.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Import Balsa Filters"
-msgstr ""
+msgstr "गाळणी काढून टाका"
 
 #: filter/filterimporterexporter.cpp:162
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
-msgstr ""
+msgstr "गाळणी काढून टाका"
 
 #: filter/filterimporterexporter.cpp:166
 #, fuzzy, kde-format
 #| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "गाळणी काढून टाका"
 
@@ -995,9 +1010,11 @@ msgid ""
 msgstr ""
 
 #: filter/filterimporterexporter.cpp:316
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Export Filters"
-msgstr ""
+msgstr "गाळणी काढून टाका"
 
 #: filter/filterselectiondialog.cpp:29
 #, fuzzy, kde-format
@@ -1289,18 +1306,19 @@ msgctxt "@action:button"
 msgid "Run Now"
 msgstr "आता चालवा"
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:421
 #, kde-format
+msgctxt "@title:window"
 msgid "No folder selected."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1308,38 +1326,40 @@ msgid ""
 "before they can be applied."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
 #, kde-format
+msgctxt "@title:window"
 msgid "Filters changed."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:434
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
+#: filter/kmfilterdialog.cpp:438
 #, kde-format
+msgctxt "@title:window"
 msgid "No filters selected."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:658
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:669
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:706
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1347,14 +1367,20 @@ msgid ""
 "before they can be exported."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
 #, kde-format
+msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
+msgstr ""
+
+#: filter/kmfilterdialog.cpp:733
+#, kde-format
+msgid "No filters selected."
 msgstr ""
 
 #: filter/kmfilterlistbox.cpp:41
@@ -1508,14 +1534,18 @@ msgid "Do you want to remove selected filters?"
 msgstr ""
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "गाळणी काढून टाका"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Remove Filters"
-msgstr ""
+msgstr "गाळणी काढून टाका"
 
 #: filter/kmfilterlistbox.cpp:661
 #, kde-format
@@ -1730,6 +1760,7 @@ msgstr ""
 
 #: folder/folderselectiondialog.cpp:196
 #, kde-format
+msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr ""
 
@@ -1785,6 +1816,7 @@ msgstr ""
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
+msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr ""
 
@@ -1843,16 +1875,18 @@ msgid "Failed to archive the folder '%1'."
 msgstr ""
 
 #: job/backupjob.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Archiving"
+msgctxt "@title:window"
 msgid "Archiving failed"
-msgstr ""
+msgstr "संग्रह करत आहे"
 
 #: job/backupjob.cpp:165
 #, kde-format
 msgid "Unable to finalize the archive file."
 msgstr ""
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:193
+#: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
 msgstr ""
@@ -1875,6 +1909,13 @@ msgstr[1] ""
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr ""
+
+#: job/backupjob.cpp:193
+#, fuzzy, kde-format
+#| msgid "Archiving"
+msgctxt "@title:window"
+msgid "Archiving finished"
+msgstr "संग्रह करत आहे"
 
 #: job/backupjob.cpp:243
 #, kde-format
@@ -2551,6 +2592,7 @@ msgid "Insert Variables"
 msgstr ""
 
 #: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2559,11 +2601,6 @@ msgstr ""
 #: snippets/snippetselectattachmentwidget.cpp:45
 #, kde-format
 msgid "Do you want to delete selected attachment?"
-msgstr ""
-
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
-msgid "Select Attachments"
 msgstr ""
 
 #: snippets/snippetsmanager.cpp:154
@@ -2679,6 +2716,7 @@ msgstr ""
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
 #, kde-format
+msgctxt "@title:window"
 msgid "Update snippet"
 msgstr ""
 
@@ -2962,6 +3000,7 @@ msgstr ""
 
 #: widgets/redirectdialog.cpp:207
 #, kde-format
+msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr ""
 

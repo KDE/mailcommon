@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:42+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2024-07-30 09:48+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -86,7 +86,9 @@ msgstr ""
 "вилучено."
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "No Folder Selected"
+msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Теку не вказано"
 
@@ -103,7 +105,9 @@ msgstr ""
 "вилучено."
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Wrong Folder Selected"
+msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "Вказано помилкову теку"
 
@@ -998,37 +1002,51 @@ msgstr ""
 "містять дій або правил для пошуку)."
 
 #: filter/filterimporterexporter.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import KMail Filters"
+msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Імпортування фільтрів KMail"
 
 #: filter/filterimporterexporter.cpp:146
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Evolution Filters"
+msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Імпортування фільтрів Evolution"
 
 #: filter/filterimporterexporter.cpp:150
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Sylpheed Filters"
+msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Імпортування фільтрів Sylpheed"
 
 #: filter/filterimporterexporter.cpp:154
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Procmail Filters"
+msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Імпортування фільтрів Procmail"
 
 #: filter/filterimporterexporter.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Balsa Filters"
+msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Імпортування фільтрів Balsa"
 
 #: filter/filterimporterexporter.cpp:162
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Claws Mail Filters"
+msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Імпортування фільтрів Claws Mail"
 
 #: filter/filterimporterexporter.cpp:166
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Gmail Filters"
+msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "Імпортування фільтрів Gmail"
 
@@ -1043,7 +1061,9 @@ msgstr ""
 "недостатньо."
 
 #: filter/filterimporterexporter.cpp:316
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Export Filters"
+msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Експорт фільтрів"
 
@@ -1332,18 +1352,20 @@ msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Запустити зараз"
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Не вдалося застосувати цей фільтр, оскільки не позначено жодної теки."
 
-#: filter/kmfilterdialog.cpp:419
-#, kde-format
+#: filter/kmfilterdialog.cpp:421
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Не позначено теки."
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1353,38 +1375,42 @@ msgstr ""
 "Деякі з фільтрів було змінено і не збережено. Вам слід зберегти внесені "
 "зміни перед застосуванням фільтрів."
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
-#, kde-format
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#, fuzzy, kde-format
+#| msgid "Filters changed."
+msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Фільтри змінено."
 
-#: filter/kmfilterdialog.cpp:434
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Не вдалося застосувати фільтр, оскільки не позначено жодного фільтра."
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:438
+#, fuzzy, kde-format
+#| msgid "No filters selected."
+msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Не позначено фільтра."
 
-#: filter/kmfilterdialog.cpp:658
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Не імпортовано жодного фільтра."
 
-#: filter/kmfilterdialog.cpp:669
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Фільтри, які було імпортовано:"
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr "Не знайдено жодного фільтра."
 
-#: filter/kmfilterdialog.cpp:706
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1394,17 +1420,24 @@ msgstr ""
 "Деякі з фільтрів було змінено і не збережено.<br>Вам слід зберегти внесені "
 "зміни до експортування фільтрів."
 
-#: filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Ми не можемо перетворити усі фільтри KMail на скрипти фільтрування, але ми "
 "можемо спробувати. :)"
 
-#: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#, fuzzy, kde-format
+#| msgid "Convert KMail filters to sieve scripts"
+msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Перетворення фільтрів KMail на скрипти фільтрування"
+
+#: filter/kmfilterdialog.cpp:733
+#, kde-format
+msgid "No filters selected."
+msgstr "Не позначено фільтра."
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1590,12 +1623,16 @@ msgid "Do you want to remove selected filters?"
 msgstr "Бажаєте вилучити позначені фільтри?"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Вилучити фільтр"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filters"
+msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Вилучити фільтри"
 
@@ -1805,7 +1842,9 @@ msgid "Could not create folder: %1"
 msgstr "Не вдалося створити теку: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Помилка створення теки"
 
@@ -1860,7 +1899,9 @@ msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr "<qt>До наступного непрочитаного у теці <b>%1</b>?</qt>"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go to Next Unread Message"
+msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "До наступного непрочитаного"
 
@@ -1918,7 +1959,9 @@ msgid "Failed to archive the folder '%1'."
 msgstr "Не вдалося створити архів теки «%1»."
 
 #: job/backupjob.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Archiving failed"
+msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Помилка архівування"
 
@@ -1927,7 +1970,7 @@ msgstr "Помилка архівування"
 msgid "Unable to finalize the archive file."
 msgstr "Не вдалося завершити запис файла архіву."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:193
+#: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
 msgstr "Архівування завершено"
@@ -1952,6 +1995,13 @@ msgstr[3] "До архіву було додано %1 повідомлення �
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Розмір файла архіву дорівнює %1."
+
+#: job/backupjob.cpp:193
+#, fuzzy, kde-format
+#| msgid "Archiving finished"
+msgctxt "@title:window"
+msgid "Archiving finished"
+msgstr "Архівування завершено"
 
 #: job/backupjob.cpp:243
 #, kde-format
@@ -2631,6 +2681,7 @@ msgid "Insert Variables"
 msgstr "Вставити змінні"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2640,11 +2691,6 @@ msgstr "Виберіть долучення"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Хочете вилучити позначене долучення?"
-
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
-msgid "Select Attachments"
-msgstr "Виберіть долучення"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2755,7 +2801,9 @@ msgid "Do you want to update snippet?"
 msgstr "Хочете оновити фрагмент?"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update snippet"
+msgctxt "@title:window"
 msgid "Update snippet"
 msgstr "Оновити фрагмент"
 
@@ -3038,7 +3086,9 @@ msgid "You cannot redirect the message without an address."
 msgstr "Ви не можете переспрямувати повідомлення без зазначення адреси."
 
 #: widgets/redirectdialog.cpp:207
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Redirection Address"
+msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "Порожня адреса переспрямування"
 
@@ -3056,6 +3106,9 @@ msgid ""
 msgstr ""
 "Натискання цієї кнопки відкриває окреме діалогове вікно, де можна буде "
 "вибрати адресатів зі всіх наявних адрес."
+
+#~ msgid "Select Attachments"
+#~ msgstr "Виберіть долучення"
 
 #~ msgid "Add Tag..."
 #~ msgstr "Додати мітку…"

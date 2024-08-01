@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:42+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2024-07-13 12:09+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -84,7 +84,9 @@ msgstr ""
 "Horrelakorik egiten ez bada, iraungitako mezuak betiko ezabatuko dira."
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "No Folder Selected"
+msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Ez da karpetarik hautatu"
 
@@ -100,7 +102,9 @@ msgstr ""
 "Horrelakorik egiten ez bada, iraungitako mezuak betiko ezabatuko dira."
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Wrong Folder Selected"
+msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "Okerreko karpeta hautatu da"
 
@@ -1004,37 +1008,51 @@ msgstr ""
 "bilaketa araurik ez zutelako)."
 
 #: filter/filterimporterexporter.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import KMail Filters"
+msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Inportatu KMail iragazkiak"
 
 #: filter/filterimporterexporter.cpp:146
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Evolution Filters"
+msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Inportatu Evolution iragazkiak"
 
 #: filter/filterimporterexporter.cpp:150
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Sylpheed Filters"
+msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Inportatu Sylpheed iragazkiak"
 
 #: filter/filterimporterexporter.cpp:154
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Procmail Filters"
+msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Inportatu Procmail iragazkiak"
 
 #: filter/filterimporterexporter.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Balsa Filters"
+msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Inportatu Balsa iragazkiak"
 
 #: filter/filterimporterexporter.cpp:162
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Claws Mail Filters"
+msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Inportatu Claws Mail iragazkiak"
 
 #: filter/filterimporterexporter.cpp:166
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Gmail Filters"
+msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "Inportatu Gmail iragazkiak"
 
@@ -1049,7 +1067,9 @@ msgstr ""
 "dituzun baimenak nahikoa ez izatea."
 
 #: filter/filterimporterexporter.cpp:316
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Export Filters"
+msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Esportatu iragazkiak"
 
@@ -1349,18 +1369,20 @@ msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Exekutatu orain"
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Ezin ditu iragazki hauek erabili karpetarik ez delako hautatu."
 
-#: filter/kmfilterdialog.cpp:419
-#, kde-format
+#: filter/kmfilterdialog.cpp:421
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Ez da karpetarik hautatu."
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1370,12 +1392,14 @@ msgstr ""
 "Iragazki batzuk aldatu dira baina ez dira oraindik gorde. Zure iragazkiak "
 "gorde behar dituzu haiek ezarri ahal izateko."
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
-#, kde-format
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#, fuzzy, kde-format
+#| msgid "Filters changed."
+msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Iragazkiak aldatu dira."
 
-#: filter/kmfilterdialog.cpp:434
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
@@ -1383,27 +1407,29 @@ msgstr ""
 "Ezin du iragazki bat erabili une honetan ez dagoelako hautatutako "
 "iragazkirik."
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:438
+#, fuzzy, kde-format
+#| msgid "No filters selected."
+msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Ez da iragazkirik hautatu."
 
-#: filter/kmfilterdialog.cpp:658
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Ez da iragazkirik inportatu."
 
-#: filter/kmfilterdialog.cpp:669
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Inportatu diren iragazkiak:"
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr "Aurkitutako edozein iragazki."
 
-#: filter/kmfilterdialog.cpp:706
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1413,17 +1439,24 @@ msgstr ""
 "Iragazki batzuk aldatu dira baina ez dira oraindik gorde.<br>Zure iragazkiak "
 "gorde behar dituzu haiek ezarri ahal izateko."
 
-#: filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Ezin ditugu KMail-eko iragazki guztiak bahetzeko gidoi bihurtu, baina saia "
 "gaitezke :)"
 
-#: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#, fuzzy, kde-format
+#| msgid "Convert KMail filters to sieve scripts"
+msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Bihurtu KMail iragazkiak bahetzeko gidoi"
+
+#: filter/kmfilterdialog.cpp:733
+#, kde-format
+msgid "No filters selected."
+msgstr "Ez da iragazkirik hautatu."
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1610,12 +1643,16 @@ msgid "Do you want to remove selected filters?"
 msgstr "Aukeratutako iragazkia kendu nahi duzu?"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Kendu iragazkia"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filters"
+msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Kendu iragazkiak"
 
@@ -1826,7 +1863,9 @@ msgid "Could not create folder: %1"
 msgstr "Ezin izan du karpeta sortu: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Karpeta sortzea huts egin du"
 
@@ -1881,7 +1920,9 @@ msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr "<qt><b>%1</b> karpetan irakurri gabeko hurrengo mezura joan?</qt>"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go to Next Unread Message"
+msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Joan irakurri gabeko hurrengo mezura"
 
@@ -1939,7 +1980,9 @@ msgid "Failed to archive the folder '%1'."
 msgstr "«%1» karpeta artxibatzea huts egin du."
 
 #: job/backupjob.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Archiving failed"
+msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Artxibatzea huts egin du"
 
@@ -1948,7 +1991,7 @@ msgstr "Artxibatzea huts egin du"
 msgid "Unable to finalize the archive file."
 msgstr "Ezin izan du fitxategia artxibatzen bukatu."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:193
+#: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
 msgstr "Artxibatzen bukatu du"
@@ -1972,6 +2015,13 @@ msgstr[1] "%2 neurriko %1 mezu artxibatu dira."
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Artxibu-fitxategiak %1(e)ko neurria du."
+
+#: job/backupjob.cpp:193
+#, fuzzy, kde-format
+#| msgid "Archiving finished"
+msgctxt "@title:window"
+msgid "Archiving finished"
+msgstr "Artxibatzen bukatu du"
 
 #: job/backupjob.cpp:243
 #, kde-format
@@ -2642,6 +2692,7 @@ msgid "Insert Variables"
 msgstr "Sartu aldagaiak"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2651,11 +2702,6 @@ msgstr "Hautatu eranskinak"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Hautatutako eranskina ezabatu nahi duzu?"
-
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
-msgid "Select Attachments"
-msgstr "Hautatu eranskinak"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2766,7 +2812,9 @@ msgid "Do you want to update snippet?"
 msgstr "Testu-zatia eguneratu nahi duzu?"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update snippet"
+msgctxt "@title:window"
 msgid "Update snippet"
 msgstr "Eguneratu testu-zatia"
 
@@ -3055,7 +3103,9 @@ msgid "You cannot redirect the message without an address."
 msgstr "Ezin duzu helbiderik gabe mezua birbideratu."
 
 #: widgets/redirectdialog.cpp:207
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Redirection Address"
+msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "Birbideratzeko helbiderik gabe"
 
@@ -3073,6 +3123,9 @@ msgid ""
 msgstr ""
 "Botoi honek, erabilgarri dauden helbide guztien artetik hartzaileak "
 "aukeratzeko elkarrizketa-koadro bereizi bat irekitzen du."
+
+#~ msgid "Select Attachments"
+#~ msgstr "Hautatu eranskinak"
 
 #~ msgid "Add Tag..."
 #~ msgstr "Gehitu etiketa..."

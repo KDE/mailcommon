@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:42+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2024-07-30 21:06+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -81,7 +81,9 @@ msgstr ""
 "Se tio ne estas farita, eksvalidiĝintaj mesaĝoj estos konstante forigitaj."
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "No Folder Selected"
+msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Neniu dosierujo Elektita"
 
@@ -97,7 +99,9 @@ msgstr ""
 "Se tio ne estas farita, eksvalidiĝintaj mesaĝoj estos konstante forigitaj."
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Wrong Folder Selected"
+msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "Malĝusta dosierujo Elektita"
 
@@ -982,37 +986,51 @@ msgstr ""
 "enhavantaj neniujn agojn aŭ neniujn serĉregulojn)."
 
 #: filter/filterimporterexporter.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import KMail Filters"
+msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Importi KMail-Filtrilojn"
 
 #: filter/filterimporterexporter.cpp:146
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Evolution Filters"
+msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Importi Evoluajn Filtrilojn"
 
 #: filter/filterimporterexporter.cpp:150
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Sylpheed Filters"
+msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Importi Sylpheed Filtrilojn"
 
 #: filter/filterimporterexporter.cpp:154
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Procmail Filters"
+msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Importi Procmail Filtrilojn"
 
 #: filter/filterimporterexporter.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Balsa Filters"
+msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Importi Balsajn Filtrilojn"
 
 #: filter/filterimporterexporter.cpp:162
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Claws Mail Filters"
+msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Importi Claws-Poŝtfiltrilojn"
 
 #: filter/filterimporterexporter.cpp:166
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Gmail Filters"
+msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "Importi Gmail-filtrilojn"
 
@@ -1027,7 +1045,9 @@ msgstr ""
 "nesufiĉaj."
 
 #: filter/filterimporterexporter.cpp:316
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Export Filters"
+msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Elporti Filtrilojn"
 
@@ -1317,18 +1337,20 @@ msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Ruli Nun"
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Ne eblas apliki ĉi tiun filtrilon ĉar ne estas elektitaj dosierujoj."
 
-#: filter/kmfilterdialog.cpp:419
-#, kde-format
+#: filter/kmfilterdialog.cpp:421
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Neniu dosierujo elektita."
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1338,38 +1360,42 @@ msgstr ""
 "Iuj filtriloj estis ŝanĝitaj kaj ankoraŭ ne konservitaj. Vi devas konservi "
 "viajn filtrilojn antaŭ ol ili povas esti aplikataj."
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
-#, kde-format
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#, fuzzy, kde-format
+#| msgid "Filters changed."
+msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filtriloj ŝanĝitaj."
 
-#: filter/kmfilterdialog.cpp:434
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Ne eblas apliki filtrilon ĉar ne estas filtriloj nuntempe elektitaj."
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:438
+#, fuzzy, kde-format
+#| msgid "No filters selected."
+msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Neniuj filtriloj elektitaj."
 
-#: filter/kmfilterdialog.cpp:658
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Neniu filtrilo estis importita."
 
-#: filter/kmfilterdialog.cpp:669
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Filtriloj kiuj estis importitaj:"
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr "Ajna filtrilo trovita."
 
-#: filter/kmfilterdialog.cpp:706
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1379,17 +1405,24 @@ msgstr ""
 "Kelkaj filtriloj estis ŝanĝitaj kaj ankoraŭ ne konservitaj.<br>Vi devas "
 "konservi viajn filtrilojn antaŭ ol ili povas esti eksportitaj."
 
-#: filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Ni ne povas konverti ĉiujn KMail-filtrilojn al kribri skriptoj sed ni povas "
 "provi :)"
 
-#: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#, fuzzy, kde-format
+#| msgid "Convert KMail filters to sieve scripts"
+msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Konverti KMail-filtrilojn al kribri skriptoj"
+
+#: filter/kmfilterdialog.cpp:733
+#, kde-format
+msgid "No filters selected."
+msgstr "Neniuj filtriloj elektitaj."
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1578,12 +1611,16 @@ msgid "Do you want to remove selected filters?"
 msgstr "Ĉu vi volas forigi elektitajn filtrilojn?"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Forigi Filtrilon"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filters"
+msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Forigi Filtrilojn"
 
@@ -1793,7 +1830,9 @@ msgid "Could not create folder: %1"
 msgstr "Ne eblis krei dosierujon: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Kreado de dosierujoj malsukcesis"
 
@@ -1848,7 +1887,9 @@ msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr "<qt>Iri al la sekva nelegita mesaĝo en dosierujo <b>%1</b>?</qt>"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go to Next Unread Message"
+msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Iri al Sekva Nelegita Mesaĝo"
 
@@ -1906,7 +1947,9 @@ msgid "Failed to archive the folder '%1'."
 msgstr "Malsukcesis arkivi la dosierujon '%1'."
 
 #: job/backupjob.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Archiving failed"
+msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Arkivado malsukcesis"
 
@@ -1915,7 +1958,7 @@ msgstr "Arkivado malsukcesis"
 msgid "Unable to finalize the archive file."
 msgstr "Ne eblas fini la arkivan dosieron."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:193
+#: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
 msgstr "Arkivado finiĝis"
@@ -1940,6 +1983,13 @@ msgstr[1] "%1 mesaĝoj kun entuta grandeco de %2 estis arkivitaj."
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "La arkiva dosiero havas grandecon de %1."
+
+#: job/backupjob.cpp:193
+#, fuzzy, kde-format
+#| msgid "Archiving finished"
+msgctxt "@title:window"
+msgid "Archiving finished"
+msgstr "Arkivado finiĝis"
 
 #: job/backupjob.cpp:243
 #, kde-format
@@ -2606,6 +2656,7 @@ msgid "Insert Variables"
 msgstr "Enmeti Variablojn"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2615,11 +2666,6 @@ msgstr "Elekti Aldonaĵojn"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Ĉu vi volas forigi elektitan aldonaĵon?"
-
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
-msgid "Select Attachments"
-msgstr "Elekti Aldonaĵojn"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2730,7 +2776,9 @@ msgid "Do you want to update snippet?"
 msgstr "Ĉu vi volas ĝisdatigi fragmenton?"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update snippet"
+msgctxt "@title:window"
 msgid "Update snippet"
 msgstr "Ĝisdatigi fragmenton"
 
@@ -3012,7 +3060,9 @@ msgid "You cannot redirect the message without an address."
 msgstr "Vi ne povas alidirekti la mesaĝon sen adreso."
 
 #: widgets/redirectdialog.cpp:207
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Redirection Address"
+msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "Malplena Redirekta Adreso"
 
@@ -3030,3 +3080,6 @@ msgid ""
 msgstr ""
 "Ĉi tiu butono malfermas apartan dialogon kie vi povas elekti ricevantojn el "
 "ĉiuj disponeblaj adresoj."
+
+#~ msgid "Select Attachments"
+#~ msgstr "Elekti Aldonaĵojn"

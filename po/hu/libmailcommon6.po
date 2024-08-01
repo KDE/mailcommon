@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:42+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2024-01-20 00:04+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -84,7 +84,9 @@ msgstr ""
 "Ha ez nincs meg, a lejárt üzenetek véglegesen törlésre kerülnek."
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "No Folder Selected"
+msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Nincs kiválasztva mappa"
 
@@ -100,7 +102,9 @@ msgstr ""
 "Ha ez nincs meg, a lejárt üzenetek véglegesen törlésre kerülnek."
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Wrong Folder Selected"
+msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "Hibás mappa van kiválasztva"
 
@@ -1019,37 +1023,51 @@ msgstr ""
 "tartalmaztak műveletet vagy keresési szabályt)."
 
 #: filter/filterimporterexporter.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import KMail Filters"
+msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "KMail szűrők importálása"
 
 #: filter/filterimporterexporter.cpp:146
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Evolution Filters"
+msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Evolution szűrők importálása"
 
 #: filter/filterimporterexporter.cpp:150
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Sylpheed Filters"
+msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Sylpheed szűrők importálása"
 
 #: filter/filterimporterexporter.cpp:154
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Procmail Filters"
+msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Procmail szűrők importálása"
 
 #: filter/filterimporterexporter.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Balsa Filters"
+msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Balsa szűrők importálása"
 
 #: filter/filterimporterexporter.cpp:162
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Claws Mail Filters"
+msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Claws Mail szűrők importálása"
 
 #: filter/filterimporterexporter.cpp:166
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Gmail Filters"
+msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "Gmail szűrők importálása"
 
@@ -1064,7 +1082,9 @@ msgstr ""
 "valószínűleg nem elegendőek."
 
 #: filter/filterimporterexporter.cpp:316
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Export Filters"
+msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Szűrők exportálása"
 
@@ -1385,18 +1405,20 @@ msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Futtatás most"
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Nem lehet ezt a szűrőt alkalmazni, mivel nincsenek mappák kiválasztva."
 
-#: filter/kmfilterdialog.cpp:419
-#, kde-format
+#: filter/kmfilterdialog.cpp:421
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Nincs kiválasztva mappa."
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1406,39 +1428,43 @@ msgstr ""
 "Néhány szűrő módosítva lett és még nincs elmentve. El kell mentenie a "
 "szűrőit, mielőtt alkalmazná azokat."
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
-#, kde-format
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#, fuzzy, kde-format
+#| msgid "Filters changed."
+msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Szűrők megváltoztak."
 
-#: filter/kmfilterdialog.cpp:434
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
 "Nem lehet egy szűrőt alkalmazni, mivel jelenleg nincsenek szűrők kiválasztva."
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:438
+#, fuzzy, kde-format
+#| msgid "No filters selected."
+msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Nincsenek szűrők kiválasztva."
 
-#: filter/kmfilterdialog.cpp:658
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Nem lett szűrő importálva."
 
-#: filter/kmfilterdialog.cpp:669
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Szűrők, amelyek importálva lettek:"
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr "Bármely talált szűrő."
 
-#: filter/kmfilterdialog.cpp:706
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1448,17 +1474,24 @@ msgstr ""
 "Néhány szűrő módosítva lett és még nincs elmentve.<br>El kell mentenie a "
 "szűrőit, mielőtt exportálná azokat."
 
-#: filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Nem lehet minden KMail szűrőt átalakítani sieve parancsfájlokká, de "
 "megpróbálhatjuk :)"
 
-#: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#, fuzzy, kde-format
+#| msgid "Convert KMail filters to sieve scripts"
+msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "KMail szűrők átalakítása sieve parancsfájlokká"
+
+#: filter/kmfilterdialog.cpp:733
+#, kde-format
+msgid "No filters selected."
+msgstr "Nincsenek szűrők kiválasztva."
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1651,12 +1684,16 @@ msgid "Do you want to remove selected filters?"
 msgstr "Szeretné eltávolítani a kijelölt szűrőket?"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Szűrő eltávolítása"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filters"
+msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Szűrők eltávolítása"
 
@@ -1873,7 +1910,9 @@ msgid "Could not create folder: %1"
 msgstr "Nem sikerült létrehozni ezt a mappát: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "A mappa létrehozása nem sikerült"
 
@@ -1930,7 +1969,9 @@ msgstr ""
 "mappában?</qt>"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go to Next Unread Message"
+msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Ugrás a következő olvasatlan üzenetre"
 
@@ -1991,7 +2032,9 @@ msgid "Failed to archive the folder '%1'."
 msgstr "Nem sikerült archiválni ezt a mappát: „%1”."
 
 #: job/backupjob.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Archiving failed"
+msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Az archiválás nem sikerült"
 
@@ -2000,7 +2043,7 @@ msgstr "Az archiválás nem sikerült"
 msgid "Unable to finalize the archive file."
 msgstr "Nem sikerült véglegesíteni az archívumfájlt."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:193
+#: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
 msgstr "Az archiválás befejeződött"
@@ -2025,6 +2068,13 @@ msgstr[1] "%1 üzenet (teljes méret: %2) archiválva."
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Az archívumfájl mérete %1."
+
+#: job/backupjob.cpp:193
+#, fuzzy, kde-format
+#| msgid "Archiving finished"
+msgctxt "@title:window"
+msgid "Archiving finished"
+msgstr "Az archiválás befejeződött"
 
 #: job/backupjob.cpp:243
 #, kde-format
@@ -2708,6 +2758,7 @@ msgid "Insert Variables"
 msgstr "Változók beszúrása"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2717,11 +2768,6 @@ msgstr "Mellékletek kiválasztása"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Szeretné törölni a kiválasztott mellékletet?"
-
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
-msgid "Select Attachments"
-msgstr "Mellékletek kiválasztása"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2842,7 +2888,9 @@ msgid "Do you want to update snippet?"
 msgstr "Szeretné frissíteni a töredéket?"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update snippet"
+msgctxt "@title:window"
 msgid "Update snippet"
 msgstr "Töredék frissítése"
 
@@ -3141,7 +3189,9 @@ msgid "You cannot redirect the message without an address."
 msgstr "Nem irányíthatja át az üzenetet egy cím nélkül."
 
 #: widgets/redirectdialog.cpp:207
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Redirection Address"
+msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "Üres átirányítási cím"
 
@@ -3160,6 +3210,9 @@ msgid ""
 msgstr ""
 "Ezzel a gombbal megnyitható egy új ablak, amelyben kiválaszthatók a "
 "címzettek az ismert címek közül."
+
+#~ msgid "Select Attachments"
+#~ msgstr "Mellékletek kiválasztása"
 
 #~ msgid "Add Tag..."
 #~ msgstr "Címke hozzáadása…"

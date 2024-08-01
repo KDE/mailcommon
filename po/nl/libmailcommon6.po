@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:42+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2024-07-30 12:56+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -82,7 +82,9 @@ msgstr ""
 "verwijderd."
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "No Folder Selected"
+msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Geen map geselecteerd"
 
@@ -99,7 +101,9 @@ msgstr ""
 "verwijderd."
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Wrong Folder Selected"
+msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "Verkeerde map geselecteerd"
 
@@ -990,37 +994,51 @@ msgstr ""
 "ze geen acties of zoekregels bevatten)."
 
 #: filter/filterimporterexporter.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import KMail Filters"
+msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Filters van KMail importeren"
 
 #: filter/filterimporterexporter.cpp:146
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Evolution Filters"
+msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Filters van Evolution importeren"
 
 #: filter/filterimporterexporter.cpp:150
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Sylpheed Filters"
+msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Filters van Sylpheed importeren"
 
 #: filter/filterimporterexporter.cpp:154
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Procmail Filters"
+msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Procmail-filters importeren"
 
 #: filter/filterimporterexporter.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Balsa Filters"
+msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Balsa-filters importeren"
 
 #: filter/filterimporterexporter.cpp:162
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Claws Mail Filters"
+msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Claws e-mailfilters importeren"
 
 #: filter/filterimporterexporter.cpp:166
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import Gmail Filters"
+msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "GMail-filters importeren"
 
@@ -1035,7 +1053,9 @@ msgstr ""
 "bestand."
 
 #: filter/filterimporterexporter.cpp:316
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Export Filters"
+msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Filters exporteren"
 
@@ -1325,18 +1345,20 @@ msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Nu uitvoeren"
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Dit filter toepassen kan niet omdat er geen mappen zijn geselecteerd."
 
-#: filter/kmfilterdialog.cpp:419
-#, kde-format
+#: filter/kmfilterdialog.cpp:421
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Geen map geselecteerd."
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1346,39 +1368,43 @@ msgstr ""
 "Sommige filters zijn gewijzigd en nog niet opgeslagen. U moet uw filters "
 "opslaan voordat u ze toe kunt passen."
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
-#, kde-format
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#, fuzzy, kde-format
+#| msgid "Filters changed."
+msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filters zijn gewijzigd."
 
-#: filter/kmfilterdialog.cpp:434
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
 "Een filter toepassen kan niet omdat er nu geen filters zijn geselecteerd."
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:438
+#, fuzzy, kde-format
+#| msgid "No filters selected."
+msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Geen filters geselecteerd."
 
-#: filter/kmfilterdialog.cpp:658
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Er is geen filter geïmporteerd."
 
-#: filter/kmfilterdialog.cpp:669
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Geïmporteerde filters zijn:"
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr "Elk gevonden filter."
 
-#: filter/kmfilterdialog.cpp:706
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1388,17 +1414,24 @@ msgstr ""
 "Sommige filters zijn gewijzigd en nog niet opgeslagen.<br>U moet uw filters "
 "opslaan voordat ze geëxporteerd kunnen worden."
 
-#: filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "We kunnen niet alle KMail-filters converteren naar sieve-scripts, maar we "
 "kunnen het proberen :)"
 
-#: filter/kmfilterdialog.cpp:713 filter/kmfilterdialog.cpp:729
-#, kde-format
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#, fuzzy, kde-format
+#| msgid "Convert KMail filters to sieve scripts"
+msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "KMail-filters naar sieve-scripts converteren"
+
+#: filter/kmfilterdialog.cpp:733
+#, kde-format
+msgid "No filters selected."
+msgstr "Geen filters geselecteerd."
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1590,12 +1623,16 @@ msgid "Do you want to remove selected filters?"
 msgstr "Wilt u geselecteerde filters verwijderen?"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filter"
+msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Filter verwijderen"
 
 #: filter/kmfilterlistbox.cpp:445
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove Filters"
+msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Filter verwijderen"
 
@@ -1805,7 +1842,9 @@ msgid "Could not create folder: %1"
 msgstr "Kon de map niet aanmaken: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder creation failed"
+msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Aanmaken van map is mislukt"
 
@@ -1860,7 +1899,9 @@ msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr "<qt>Naar het volgende ongelezen bericht gaan in map <b>%1</b>?</qt>"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go to Next Unread Message"
+msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Naar het volgende ongelezen bericht gaan"
 
@@ -1918,7 +1959,9 @@ msgid "Failed to archive the folder '%1'."
 msgstr "Een archief van de map '%1' maken is mislukt."
 
 #: job/backupjob.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Archiving failed"
+msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Archiveren is mislukt"
 
@@ -1927,7 +1970,7 @@ msgstr "Archiveren is mislukt"
 msgid "Unable to finalize the archive file."
 msgstr "Het afwerken van het archiefbestand lukte niet."
 
-#: job/backupjob.cpp:170 job/backupjob.cpp:193
+#: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
 msgstr "Archiveren voltooid"
@@ -1952,6 +1995,13 @@ msgstr[1] "%1 berichten met totale grootte %2 is gearchiveerd."
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Het archiefbestand heeft een grootte van %1."
+
+#: job/backupjob.cpp:193
+#, fuzzy, kde-format
+#| msgid "Archiving finished"
+msgctxt "@title:window"
+msgid "Archiving finished"
+msgstr "Archiveren voltooid"
 
 #: job/backupjob.cpp:243
 #, kde-format
@@ -2620,6 +2670,7 @@ msgid "Insert Variables"
 msgstr "Variabelen invoegen"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
@@ -2629,11 +2680,6 @@ msgstr "Bijlagen selecteren"
 #, kde-format
 msgid "Do you want to delete selected attachment?"
 msgstr "Wilt u de geselecteerde bijlage verwijderen?"
-
-#: snippets/snippetselectattachmentwidget.cpp:52
-#, kde-format
-msgid "Select Attachments"
-msgstr "Bijlagen selecteren"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
@@ -2744,7 +2790,9 @@ msgid "Do you want to update snippet?"
 msgstr "Wilt u het fragment bijwerken?"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Update snippet"
+msgctxt "@title:window"
 msgid "Update snippet"
 msgstr "Fragment bijwerken"
 
@@ -3029,7 +3077,9 @@ msgid "You cannot redirect the message without an address."
 msgstr "U kunt het bericht niet doorsturen zonder een adres."
 
 #: widgets/redirectdialog.cpp:207
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Redirection Address"
+msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "Omleidadres leeg maken"
 
@@ -3047,6 +3097,9 @@ msgid ""
 msgstr ""
 "Met deze knop opent u een aparte dialoog waar u ontvangers kunt selecteren "
 "uit alle beschikbare adressen."
+
+#~ msgid "Select Attachments"
+#~ msgstr "Bijlagen selecteren"
 
 #~ msgid "Add Tag..."
 #~ msgstr "Tag toevoegen..."
