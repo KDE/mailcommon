@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-01 00:41+0000\n"
-"PO-Revision-Date: 2024-07-30 19:03+0300\n"
+"PO-Revision-Date: 2024-08-01 13:10+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.07.70\n"
+"X-Generator: Lokalize 24.11.70\n"
 "X-POOTLE-MTIME: 1413111382.000000\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
@@ -85,8 +85,7 @@ msgstr ""
 "Bu işlem yapılmazsa süresi dolan iletiler kalıcı olarak silinecektir."
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, fuzzy, kde-format
-#| msgid "No Folder Selected"
+#, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Seçili Klasör Yok"
@@ -102,11 +101,10 @@ msgstr ""
 "Bu işlem yapılmazsa süresi dolan iletiler kalıcı olarak silinecektir."
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, fuzzy, kde-format
-#| msgid "Wrong Folder Selected"
+#, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
-msgstr "Yanlış Klasör Seçildi"
+msgstr "Yanlış Klasör Seçili"
 
 #: collectionpage/collectiongeneralpage.cpp:44
 #, kde-format
@@ -987,53 +985,46 @@ msgstr ""
 "içermiyor) kaydedilmedi."
 
 #: filter/filterimporterexporter.cpp:138
-#, fuzzy, kde-format
-#| msgid "Import KMail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
-msgstr "K Posta Süzgeçlerini İçe Aktar"
+msgstr "K Posta Süzgeçleri İçe Aktar"
 
 #: filter/filterimporterexporter.cpp:146
-#, fuzzy, kde-format
-#| msgid "Import Evolution Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
-msgstr "Evolution Süzgeçlerini İçe Aktar"
+msgstr "Evolution Süzgeçleri İçe Aktar"
 
 #: filter/filterimporterexporter.cpp:150
-#, fuzzy, kde-format
-#| msgid "Import Sylpheed Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
-msgstr "Sylpheed Süzgeçlerini İçe Aktar"
+msgstr "Sylpheed Süzgeçleri İçe Aktar"
 
 #: filter/filterimporterexporter.cpp:154
-#, fuzzy, kde-format
-#| msgid "Import Procmail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
-msgstr "Procmail Süzgeçlerini İçe Aktar"
+msgstr "Procmail Süzgeçleri İçe Aktar"
 
 #: filter/filterimporterexporter.cpp:158
-#, fuzzy, kde-format
-#| msgid "Import Balsa Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
-msgstr "Balsa Süzgeçlerini İçe Aktar"
+msgstr "Balsa Süzgeçleri İçe Aktar"
 
 #: filter/filterimporterexporter.cpp:162
-#, fuzzy, kde-format
-#| msgid "Import Claws Mail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
-msgstr "Claws Posta Süzgeçlerini İçe Aktar"
+msgstr "Claws Posta Süzgeçleri İçe Aktar"
 
 #: filter/filterimporterexporter.cpp:166
-#, fuzzy, kde-format
-#| msgid "Import Gmail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
-msgstr "GMail Süzgeçlerini İçe Aktar"
+msgstr "Gmail Süzgeçleri İçe Aktar"
 
 #: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
 #: filter/filterimporterexporter.cpp:236
@@ -1045,8 +1036,7 @@ msgstr ""
 "Seçilen dosya okunabilir değil. Dosya erişim izinleriniz yetersiz olabilir."
 
 #: filter/filterimporterexporter.cpp:316
-#, fuzzy, kde-format
-#| msgid "Export Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Süzgeçleri Dışa Aktar"
@@ -1343,11 +1333,10 @@ msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Seçilen bir klasör olmadığından bu süzgeç uygulanamıyor."
 
 #: filter/kmfilterdialog.cpp:421
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
-msgstr "Hiçbir klasör seçilmedi."
+msgstr "Seçili klasör yok."
 
 #: filter/kmfilterdialog.cpp:428
 #, kde-format
@@ -1360,11 +1349,10 @@ msgstr ""
 "süzgeçlerinizi kaydetmeniz gerekiyor."
 
 #: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
-#, fuzzy, kde-format
-#| msgid "Filters changed."
+#, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
-msgstr "Süzgeçler değişti."
+msgstr "Süzgeçler değiştirildi."
 
 #: filter/kmfilterdialog.cpp:437
 #, kde-format
@@ -1373,8 +1361,7 @@ msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Şu an seçili bir süzgeç olmadığından süzgeç uygulanamıyor."
 
 #: filter/kmfilterdialog.cpp:438
-#, fuzzy, kde-format
-#| msgid "No filters selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Seçili süzgeç yok."
@@ -1412,11 +1399,10 @@ msgstr ""
 "deneyebiliriz :-)"
 
 #: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
-#, fuzzy, kde-format
-#| msgid "Convert KMail filters to sieve scripts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
-msgstr "K Posta süzgeçlerini sieve betiklerine dönüştür"
+msgstr "K Posta Süzgeçlerini Sieve Betiklerine Dönüştür"
 
 #: filter/kmfilterdialog.cpp:733
 #, kde-format
@@ -1606,15 +1592,13 @@ msgid "Do you want to remove selected filters?"
 msgstr "Seçili süzgeçleri gerçekten kaldırmak istiyor musunuz?"
 
 #: filter/kmfilterlistbox.cpp:445
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Süzgeci Kaldır"
 
 #: filter/kmfilterlistbox.cpp:445
-#, fuzzy, kde-format
-#| msgid "Remove Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Süzgeçleri Kaldır"
@@ -1825,11 +1809,10 @@ msgid "Could not create folder: %1"
 msgstr "Klasör oluşturulamadı: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
-msgstr "Klasör oluşturulamadı"
+msgstr "Klasör Oluşturulamadı"
 
 #: folder/foldertreeview.cpp:130
 #, kde-format
@@ -1882,8 +1865,7 @@ msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr "<qt><b>%1</b> klasöründeki sonraki okunmamış iletiye gidilsin mi?</qt>"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, fuzzy, kde-format
-#| msgid "Go to Next Unread Message"
+#, kde-format
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Sonraki Okunmamış İletiye Git"
@@ -1942,11 +1924,10 @@ msgid "Failed to archive the folder '%1'."
 msgstr "“%1” dosyasını arşivleme başarısız."
 
 #: job/backupjob.cpp:155
-#, fuzzy, kde-format
-#| msgid "Archiving failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
-msgstr "Arşivleme başarısız"
+msgstr "Arşivleme Başarısız"
 
 #: job/backupjob.cpp:165
 #, kde-format
@@ -1979,11 +1960,10 @@ msgid "The archive file has a size of %1."
 msgstr "Arşiv dosyası %1 boyutunda."
 
 #: job/backupjob.cpp:193
-#, fuzzy, kde-format
-#| msgid "Archiving finished"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
-msgstr "Arşivleme tamamlandı"
+msgstr "Arşivleme Tamamlandı"
 
 #: job/backupjob.cpp:243
 #, kde-format
@@ -2769,11 +2749,10 @@ msgid "Do you want to update snippet?"
 msgstr "Kod parçacığını güncellemek istiyor musunuz?"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, fuzzy, kde-format
-#| msgid "Update snippet"
+#, kde-format
 msgctxt "@title:window"
 msgid "Update snippet"
-msgstr "Kırpmayı güncelle"
+msgstr "Kırpmayı Güncelle"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
 #, kde-format
@@ -3052,8 +3031,7 @@ msgid "You cannot redirect the message without an address."
 msgstr "Bir adres olmadan iletiyi yönlendiremezsiniz."
 
 #: widgets/redirectdialog.cpp:207
-#, fuzzy, kde-format
-#| msgid "Empty Redirection Address"
+#, kde-format
 msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "Boş Yönlendirme Adresi"

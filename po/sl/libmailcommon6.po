@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-01 00:41+0000\n"
-"PO-Revision-Date: 2024-07-30 10:12+0200\n"
+"PO-Revision-Date: 2024-08-01 06:53+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -87,11 +87,10 @@ msgstr ""
 "Če tega ne storite, bodo pretečena sporočila trajno izbrisana."
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, fuzzy, kde-format
-#| msgid "No Folder Selected"
+#, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
-msgstr "Izbrana ni nobena mapa"
+msgstr "Ni izbrane nobene mape"
 
 #: collectionpage/collectionexpirywidget.cpp:187
 #, kde-format
@@ -104,8 +103,7 @@ msgstr ""
 "Če tega ne storite, bodo pretečena sporočila trajno izbrisana."
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, fuzzy, kde-format
-#| msgid "Wrong Folder Selected"
+#, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "Izbrana je napačna mapa"
@@ -987,50 +985,43 @@ msgstr ""
 "nobenega dejanja ali iskalnega pravila)."
 
 #: filter/filterimporterexporter.cpp:138
-#, fuzzy, kde-format
-#| msgid "Import KMail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Uvozi filtre za KMail"
 
 #: filter/filterimporterexporter.cpp:146
-#, fuzzy, kde-format
-#| msgid "Import Evolution Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Uvozi filtre za Evolution"
 
 #: filter/filterimporterexporter.cpp:150
-#, fuzzy, kde-format
-#| msgid "Import Sylpheed Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Uvozi filtre za Sylpheed"
 
 #: filter/filterimporterexporter.cpp:154
-#, fuzzy, kde-format
-#| msgid "Import Procmail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Uvozi filtre za Procmail"
 
 #: filter/filterimporterexporter.cpp:158
-#, fuzzy, kde-format
-#| msgid "Import Balsa Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Uvozi filtre za Balsa"
 
 #: filter/filterimporterexporter.cpp:162
-#, fuzzy, kde-format
-#| msgid "Import Claws Mail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Uvozi filtre za Claws Mail"
 
 #: filter/filterimporterexporter.cpp:166
-#, fuzzy, kde-format
-#| msgid "Import Gmail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "Uvozi filtre za Gmail"
@@ -1046,8 +1037,7 @@ msgstr ""
 "datoteke."
 
 #: filter/filterimporterexporter.cpp:316
-#, fuzzy, kde-format
-#| msgid "Export Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Izvozi filtre"
@@ -1344,11 +1334,10 @@ msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Tega filtra ni mogoče uveljaviti, ker niste izbrali nobene mape."
 
 #: filter/kmfilterdialog.cpp:421
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
-msgstr "Izbrana ni nobena mapa."
+msgstr "Ni izbrane nobene mape."
 
 #: filter/kmfilterdialog.cpp:428
 #, kde-format
@@ -1361,11 +1350,10 @@ msgstr ""
 "uveljavite filtre, jih morate shraniti."
 
 #: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
-#, fuzzy, kde-format
-#| msgid "Filters changed."
+#, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
-msgstr "Filtri so bili spremenjeni."
+msgstr "Filtri so se spremenili."
 
 #: filter/kmfilterdialog.cpp:437
 #, kde-format
@@ -1374,11 +1362,10 @@ msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Filtrov ni mogoče uveljaviti, ker niste izbrali nobenega filtra."
 
 #: filter/kmfilterdialog.cpp:438
-#, fuzzy, kde-format
-#| msgid "No filters selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
-msgstr "Izbran ni noben filter."
+msgstr "Ni izbranega nobenega filtra."
 
 #: filter/kmfilterdialog.cpp:662
 #, kde-format
@@ -1412,8 +1399,7 @@ msgstr ""
 "Vseh filtrov KMail ni mogoče predelati v skripte Sieve, lahko pa poskusimo :)"
 
 #: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
-#, fuzzy, kde-format
-#| msgid "Convert KMail filters to sieve scripts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Pretvori filtre KMail v skripte Sieve"
@@ -1421,7 +1407,7 @@ msgstr "Pretvori filtre KMail v skripte Sieve"
 #: filter/kmfilterdialog.cpp:733
 #, kde-format
 msgid "No filters selected."
-msgstr "Izbran ni noben filter."
+msgstr "Ni izbranega nobenega filtra."
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1608,15 +1594,13 @@ msgid "Do you want to remove selected filters?"
 msgstr "Ali želite odstraniti izbrane filtre?"
 
 #: filter/kmfilterlistbox.cpp:445
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Odstrani filter"
 
 #: filter/kmfilterlistbox.cpp:445
-#, fuzzy, kde-format
-#| msgid "Remove Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Odstrani filtre"
@@ -1827,8 +1811,7 @@ msgid "Could not create folder: %1"
 msgstr "Ni bilo mogoče ustvariti mape: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Ustvarjanje mape ni uspelo"
@@ -1885,8 +1868,7 @@ msgstr ""
 "<qt>Ali naj grem na naslednje neprebrano sporočilo v mapi <b>%1</b>?</qt>"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, fuzzy, kde-format
-#| msgid "Go to Next Unread Message"
+#, kde-format
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Pojdi na naslednje neprebrano sporočilo"
@@ -1945,8 +1927,7 @@ msgid "Failed to archive the folder '%1'."
 msgstr "Arhiviranje mape »%1« ni uspelo."
 
 #: job/backupjob.cpp:155
-#, fuzzy, kde-format
-#| msgid "Archiving failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Arhiviranje ni uspelo"
@@ -1985,8 +1966,7 @@ msgid "The archive file has a size of %1."
 msgstr "Datoteka arhiva je velika %1."
 
 #: job/backupjob.cpp:193
-#, fuzzy, kde-format
-#| msgid "Archiving finished"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
 msgstr "Arhiviranje zaključeno"
@@ -2785,8 +2765,7 @@ msgid "Do you want to update snippet?"
 msgstr "Ali želite osvežiti izrezek?"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, fuzzy, kde-format
-#| msgid "Update snippet"
+#, kde-format
 msgctxt "@title:window"
 msgid "Update snippet"
 msgstr "Osveži izrezek"
@@ -3069,8 +3048,7 @@ msgid "You cannot redirect the message without an address."
 msgstr "Ne morete preusmeriti sporočila brez naslova."
 
 #: widgets/redirectdialog.cpp:207
-#, fuzzy, kde-format
-#| msgid "Empty Redirection Address"
+#, kde-format
 msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "Prazen naslov preusmeritve"
