@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-04 00:39+0000\n"
-"PO-Revision-Date: 2024-07-13 12:09+0200\n"
+"PO-Revision-Date: 2024-08-04 09:40+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -1226,8 +1226,8 @@ msgid ""
 msgstr ""
 "<p>Iragazkia mezua bidali <b>ondoren</b> eragingo da eta mezuaren kopia "
 "lokalari bakarrik eragingo dio.</p><p>Hartzailearen kopia ere aldatu beharra "
-"badago, mesedez, erabili «Aplikatu iragazki hau mezuak bidali <b>aurretik</"
-"b>».</p>"
+"badago, mesedez, erabili \"Aplikatu iragazki hau mezuak bidali <b>aurretik</"
+"b>\".</p>"
 
 #: filter/kmfilterdialog.cpp:227
 #, kde-format
@@ -1592,7 +1592,7 @@ msgstr ""
 #: filter/mailfilter.cpp:131
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
-msgstr "<b>Iragazki-ekintza ezartzen:</b> %1"
+msgstr "<b>Iragazki-ekintza aplikatzen:</b> %1"
 
 #: filter/mailfilter.cpp:140
 #, kde-format
@@ -1602,7 +1602,7 @@ msgstr "Errore larri bat gertatu da. Prozesatzea hemen bukatzen da."
 #: filter/mailfilter.cpp:147
 #, kde-format
 msgid "A problem was found while applying this action."
-msgstr "Arazo bat aurkitu da ekintza hau ezartzean."
+msgstr "Arazo bat aurkitu da ekintza hau aplikatzean."
 
 #: filter/mailfilter.cpp:427
 #, kde-format
@@ -1663,31 +1663,31 @@ msgstr "Ekintzak"
 #: filter/ui/filterconfigwidget.ui:129
 #, kde-format
 msgid "Apply options"
-msgstr "Ezartzeko aukerak"
+msgstr "Aplikatu aukerak"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyToIncomingCB)
 #: filter/ui/filterconfigwidget.ui:138
 #, kde-format
 msgid "Apply to incoming messages"
-msgstr "Ezarri sarrerako mezuei"
+msgstr "Aplikatu sarrerako mezuetan"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyToSentCB)
 #: filter/ui/filterconfigwidget.ui:145
 #, kde-format
 msgid "Apply to sent messages"
-msgstr "Ezarri bidalitako mezuei"
+msgstr "Aplikatu bidalitako mezuetan"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyBeforeSendCB)
 #: filter/ui/filterconfigwidget.ui:152
 #, kde-format
 msgid "Apply before sending messages"
-msgstr "Ezarri mezuak bidali aurretik"
+msgstr "Aplikatu mezuak bidali aurretik"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyManuallyCB)
 #: filter/ui/filterconfigwidget.ui:159
 #, kde-format
 msgid "Apply on manual filtering"
-msgstr "Ezarri eskuz iragaztean"
+msgstr "Aplikatu eskuz iragaztean"
 
 #. i18n: ectx: property (text), widget (QCheckBox, stopIfMatchesCB)
 #: filter/ui/filterconfigwidget.ui:169
@@ -2049,17 +2049,17 @@ msgstr "ezezaguna"
 #: search/searchpattern.cpp:243
 #, kde-format
 msgid "(match any of the following)"
-msgstr "(Bat etorri ondoko edozeinekin)"
+msgstr "(ondoko edozeinekin bat etorri)"
 
 #: search/searchpattern.cpp:246
 #, kde-format
 msgid "(match all of the following)"
-msgstr "(Bat etorri ondoko guztiekin)"
+msgstr "(ondoko guztiekin bat etorri)"
 
 #: search/searchpattern.cpp:249
 #, kde-format
 msgid "(match all messages)"
-msgstr "(bat etorri mezu guztiekin)"
+msgstr "(mezu guztiekin bat etorri)"
 
 #: search/searchpatternedit.cpp:41
 msgid "Complete Message"
@@ -2423,7 +2423,7 @@ msgstr "ez da honekin amaitzen"
 #: search/widgethandler/tagrulewidgethandler.cpp:97
 #: search/widgethandler/textrulerwidgethandler.cpp:33
 msgid "matches regular expr."
-msgstr "bat dator adierazpen erregularrarekin"
+msgstr "adierazpen erregularrarekin bat dator"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:35
 #: search/widgethandler/messagerulewidgethandler.cpp:27
@@ -2575,7 +2575,7 @@ msgstr "…"
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
-msgstr "Egokitu eranskinaren fitxategi-izena"
+msgstr "Eranskinaren fitxategi-izena neurrira ipini"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
 #, kde-format
