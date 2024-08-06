@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-01 00:41+0000\n"
-"PO-Revision-Date: 2024-07-04 14:01+0200\n"
+"PO-Revision-Date: 2024-08-01 10:51+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -86,8 +86,7 @@ msgstr ""
 "Si no ho feu, els missatges caducats seran suprimits permanentment."
 
 #: collectionpage/collectionexpirywidget.cpp:173
-#, fuzzy, kde-format
-#| msgid "No Folder Selected"
+#, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Cap carpeta seleccionada"
@@ -104,8 +103,7 @@ msgstr ""
 "Si no ho feu, els missatges caducats seran suprimits permanentment."
 
 #: collectionpage/collectionexpirywidget.cpp:189
-#, fuzzy, kde-format
-#| msgid "Wrong Folder Selected"
+#, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "La carpeta seleccionada és errònia"
@@ -1004,50 +1002,43 @@ msgstr ""
 "contenen accions o regles de busca)."
 
 #: filter/filterimporterexporter.cpp:138
-#, fuzzy, kde-format
-#| msgid "Import KMail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Importa els filtres de KMail"
 
 #: filter/filterimporterexporter.cpp:146
-#, fuzzy, kde-format
-#| msgid "Import Evolution Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Importa els filtres d'Evolution"
 
 #: filter/filterimporterexporter.cpp:150
-#, fuzzy, kde-format
-#| msgid "Import Sylpheed Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Importa els filtres del Sylpheed"
 
 #: filter/filterimporterexporter.cpp:154
-#, fuzzy, kde-format
-#| msgid "Import Procmail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Importa els filtres del Procmail"
 
 #: filter/filterimporterexporter.cpp:158
-#, fuzzy, kde-format
-#| msgid "Import Balsa Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Importa els filtres de Balsa"
 
 #: filter/filterimporterexporter.cpp:162
-#, fuzzy, kde-format
-#| msgid "Import Claws Mail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Importa els filtres del Claws Mail"
 
 #: filter/filterimporterexporter.cpp:166
-#, fuzzy, kde-format
-#| msgid "Import Gmail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "Importa els filtres del Gmail"
@@ -1063,8 +1054,7 @@ msgstr ""
 "d'accés."
 
 #: filter/filterimporterexporter.cpp:316
-#, fuzzy, kde-format
-#| msgid "Export Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Exporta els filtres"
@@ -1363,8 +1353,7 @@ msgstr ""
 "No s'ha pogut aplicar este filtre, ja que no s'ha seleccionat cap carpeta."
 
 #: filter/kmfilterdialog.cpp:421
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Cap carpeta seleccionada."
@@ -1380,8 +1369,7 @@ msgstr ""
 "filtres abans que es puguen aplicar."
 
 #: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
-#, fuzzy, kde-format
-#| msgid "Filters changed."
+#, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "S'han canviat els filtres."
@@ -1395,8 +1383,7 @@ msgstr ""
 "seleccionat."
 
 #: filter/kmfilterdialog.cpp:438
-#, fuzzy, kde-format
-#| msgid "No filters selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "No s'ha seleccionat cap filtre."
@@ -1434,8 +1421,7 @@ msgstr ""
 "s'intentarà :)"
 
 #: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
-#, fuzzy, kde-format
-#| msgid "Convert KMail filters to sieve scripts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Convertix els filtres de KMail a scripts de «Sieve»"
@@ -1630,15 +1616,13 @@ msgid "Do you want to remove selected filters?"
 msgstr "Voleu eliminar els filtres seleccionats?"
 
 #: filter/kmfilterlistbox.cpp:445
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Elimina el filtre"
 
 #: filter/kmfilterlistbox.cpp:445
-#, fuzzy, kde-format
-#| msgid "Remove Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Elimina els filtres"
@@ -1850,8 +1834,7 @@ msgid "Could not create folder: %1"
 msgstr "No s'ha pogut crear la carpeta: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "No s'ha pogut crear la carpeta"
@@ -1909,8 +1892,7 @@ msgstr ""
 "</qt>"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, fuzzy, kde-format
-#| msgid "Go to Next Unread Message"
+#, kde-format
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Ves fins al següent missatge sense llegir"
@@ -1969,8 +1951,7 @@ msgid "Failed to archive the folder '%1'."
 msgstr "No s'ha pogut arxivar la carpeta «%1»."
 
 #: job/backupjob.cpp:155
-#, fuzzy, kde-format
-#| msgid "Archiving failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "No s'ha pogut fer l'arxivament"
@@ -2007,8 +1988,7 @@ msgid "The archive file has a size of %1."
 msgstr "El fitxer d'arxiu té una mida de %1."
 
 #: job/backupjob.cpp:193
-#, fuzzy, kde-format
-#| msgid "Archiving finished"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
 msgstr "L'arxivament ha finalitzat"
@@ -2811,8 +2791,7 @@ msgid "Do you want to update snippet?"
 msgstr "Voleu actualitzar el fragment?"
 
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
-#, fuzzy, kde-format
-#| msgid "Update snippet"
+#, kde-format
 msgctxt "@title:window"
 msgid "Update snippet"
 msgstr "Actualitza el fragment"
@@ -3096,8 +3075,7 @@ msgid "You cannot redirect the message without an address."
 msgstr "No podeu redirigir el missatge sense una adreça."
 
 #: widgets/redirectdialog.cpp:207
-#, fuzzy, kde-format
-#| msgid "Empty Redirection Address"
+#, kde-format
 msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "Adreça de redirecció buida"
@@ -3116,6 +3094,3 @@ msgid ""
 msgstr ""
 "Este botó obri un diàleg separat a on podreu seleccionar destinataris des de "
 "totes les adreces disponibles."
-
-#~ msgid "Select Attachments"
-#~ msgstr "Selecciona els adjunts"
