@@ -17,14 +17,15 @@
 #include <QHeaderView>
 #include <QMenu>
 using namespace MailCommon;
+
 SnippetTreeView::SnippetTreeView(KActionCollection *actionCollection, QWidget *parent)
     : QTreeView(parent)
 {
     header()->hide();
-    setAcceptDrops(true);
-    setDragEnabled(true);
+    setDragDropMode(DragDrop);
     setRootIsDecorated(true);
     setAlternatingRowColors(true);
+    setDefaultDropAction(Qt::MoveAction); // allow to reorder without having to hold Shift
     mSnippetsManager = new MailCommon::SnippetsManager(actionCollection, this, this);
     connect(mSnippetsManager, &MailCommon::SnippetsManager::insertSnippetInfo, this, &SnippetTreeView::insertSnippetInfo);
 
@@ -69,14 +70,6 @@ void SnippetTreeView::contextMenuEvent(QContextMenuEvent *event)
     popup.addAction(mSnippetsManager->addSnippetGroupAction());
 
     popup.exec(event->globalPos());
-}
-
-void SnippetTreeView::dropEvent(QDropEvent *event)
-{
-    if (event->source() == this) {
-        event->setDropAction(Qt::MoveAction);
-    }
-    QTreeView::dropEvent(event);
 }
 
 MailCommon::SnippetsManager *SnippetTreeView::snippetsManager() const

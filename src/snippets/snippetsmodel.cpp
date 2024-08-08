@@ -40,7 +40,7 @@ public:
     void setKeySequence(const QString &sequence);
     [[nodiscard]] QString keySequence() const;
 
-    void appendChild(SnippetItem *child);
+    void insertChild(int row, SnippetItem *child);
     void removeChild(SnippetItem *child);
     [[nodiscard]] SnippetItem *child(int row) const;
     [[nodiscard]] int childCount() const;
@@ -135,9 +135,9 @@ QString SnippetItem::keySequence() const
     return mKeySequence;
 }
 
-void SnippetItem::appendChild(SnippetItem *item)
+void SnippetItem::insertChild(int row, SnippetItem *item)
 {
-    mChildItems.append(item);
+    mChildItems.insert(row, item);
 }
 
 void SnippetItem::removeChild(SnippetItem *item)
@@ -411,7 +411,7 @@ bool SnippetsModel::insertRows(int row, int count, const QModelIndex &parent)
     beginInsertRows(parent, row, row + count - 1);
     for (int i = 0; i < count; ++i) {
         auto snippet = new SnippetItem(!parent.isValid(), parentItem);
-        parentItem->appendChild(snippet);
+        parentItem->insertChild(row, snippet);
     }
     endInsertRows();
 
@@ -470,8 +470,6 @@ QMimeData *SnippetsModel::mimeData(const QModelIndexList &indexes) const
 
 bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &parent)
 {
-    Q_UNUSED(row)
-
     if (action == Qt::IgnoreAction) {
         return true;
     }
@@ -483,6 +481,9 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
 
         if (column > 1) {
             return false;
+        }
+        if (row == -1) {
+            row = rowCount(parent);
         }
 
         auto item = static_cast<SnippetItem *>(parent.internalPointer());
@@ -501,13 +502,10 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
         QString bcc;
         QString attachment;
         stream >> id >> name >> text >> keySequence >> keyword >> subject >> to >> cc >> bcc >> attachment;
-        if (parent.internalId() == id) {
-            return false;
-        }
         if (item->isGroup()) {
-            insertRow(rowCount(parent), parent);
+            insertRow(row, parent);
 
-            const QModelIndex idx = index(rowCount(parent) - 1, 0, parent);
+            const QModelIndex idx = index(row, 0, parent);
 
             setData(idx, name, SnippetsModel::NameRole);
             setData(idx, text, SnippetsModel::TextRole);

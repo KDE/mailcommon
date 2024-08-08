@@ -34,7 +34,6 @@ public:
 
 protected:
     void contextMenuEvent(QContextMenuEvent *) override;
-    void dropEvent(QDropEvent *) override;
 
 Q_SIGNALS:
     void insertSnippetInfo(const SnippetInfo &info);
