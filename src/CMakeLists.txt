@@ -355,7 +355,6 @@ PRIVATE
   KPim6::IdentityManagementWidgets
   Gpgmepp
   KPim6::AkonadiWidgets
-  KF6::TextWidgets
   KF6::I18n
   KPim6::MessageViewer
   KPim6::MailImporter
