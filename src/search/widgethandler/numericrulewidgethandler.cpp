@@ -7,12 +7,13 @@
 #include "numericrulewidgethandler.h"
 #include "search/searchpattern.h"
 
-#include <KLocalizedString>
-#include <KPluralHandlingSpinBox>
-
 #include <KLazyLocalizedString>
+#include <KLocalization>
+#include <KLocalizedString>
 #include <QComboBox>
+#include <QSpinBox>
 #include <QStackedWidget>
+#include <ki18n_version.h>
 using namespace MailCommon;
 
 static const struct {
@@ -53,8 +54,8 @@ QWidget *NumericRuleWidgetHandler::createValueWidget(int number, QStackedWidget 
         return nullptr;
     }
 
-    auto numInput = new KPluralHandlingSpinBox(valueStack);
-    numInput->setObjectName(QLatin1StringView("KPluralHandlingSpinBox"));
+    auto numInput = new QSpinBox(valueStack);
+    numInput->setObjectName(QLatin1StringView("QSpinBox"));
     QObject::connect(numInput, SIGNAL(valueChanged(int)), receiver, SLOT(slotValueChanged()));
     return numInput;
 }
@@ -87,7 +88,7 @@ SearchRule::Function NumericRuleWidgetHandler::function(const QByteArray &field,
 
 QString NumericRuleWidgetHandler::currentValue(const QStackedWidget *valueStack) const
 {
-    const KPluralHandlingSpinBox *numInput = valueStack->findChild<KPluralHandlingSpinBox *>(QStringLiteral("KPluralHandlingSpinBox"));
+    const QSpinBox *numInput = valueStack->findChild<QSpinBox *>(QStringLiteral("QSpinBox"));
 
     if (numInput) {
         return QString::number(numInput->value());
@@ -139,7 +140,7 @@ void NumericRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidg
     }
 
     // reset the value widget
-    auto numInput = valueStack->findChild<KPluralHandlingSpinBox *>(QStringLiteral("KPluralHandlingSpinBox"));
+    auto numInput = valueStack->findChild<QSpinBox *>(QStringLiteral("QSpinBox"));
 
     if (numInput) {
         numInput->blockSignals(true);
@@ -150,11 +151,13 @@ void NumericRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidg
 
 //---------------------------------------------------------------------------
 
-void initNumInput(KPluralHandlingSpinBox *numInput, const QByteArray &field)
+void initNumInput(QSpinBox *numInput, const QByteArray &field)
 {
     if (field == "<age in days>") {
         numInput->setMinimum(-10000);
-        numInput->setSuffix(ki18ncp("Unit suffix where units are days.", " day", " days"));
+#if KI18N_VERSION > QT_VERSION_CHECK(6, 5, 0)
+        KLocalization::setupSpinBoxFormatString(numInput, ki18ncp("Unit suffix where units are days.", " day", " days"));
+#endif
     }
 }
 
@@ -196,7 +199,7 @@ bool NumericRuleWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWi
         value = 0;
     }
 
-    auto numInput = valueStack->findChild<KPluralHandlingSpinBox *>(QStringLiteral("KPluralHandlingSpinBox"));
+    auto numInput = valueStack->findChild<QSpinBox *>(QStringLiteral("QSpinBox"));
 
     if (numInput) {
         initNumInput(numInput, rule->field());
@@ -220,7 +223,7 @@ bool NumericRuleWidgetHandler::update(const QByteArray &field, QStackedWidget *f
     functionStack->setCurrentWidget(functionStack->findChild<QWidget *>(QStringLiteral("numericRuleFuncCombo")));
 
     // raise the correct value widget
-    auto numInput = valueStack->findChild<KPluralHandlingSpinBox *>(QStringLiteral("KPluralHandlingSpinBox"));
+    auto numInput = valueStack->findChild<QSpinBox *>(QStringLiteral("QSpinBox"));
 
     if (numInput) {
         initNumInput(numInput, field);

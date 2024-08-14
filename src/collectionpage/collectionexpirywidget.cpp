@@ -11,28 +11,32 @@
 #include "folderrequester.h"
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
+#include <KLocalization>
+#include <ki18n_version.h>
 
 #include <Akonadi/CollectionModifyJob>
 
 #include <KMessageBox>
-#include <KPluralHandlingSpinBox>
 #include <QCheckBox>
 #include <QFormLayout>
 #include <QGroupBox>
 #include <QHBoxLayout>
 #include <QPushButton>
 #include <QRadioButton>
+#include <QSpinBox>
 
 using namespace MailCommon;
 
-class DaysSpinBox : public KPluralHandlingSpinBox
+class DaysSpinBox : public QSpinBox
 {
 public:
     DaysSpinBox(QWidget *parent)
-        : KPluralHandlingSpinBox(parent)
+        : QSpinBox(parent)
     {
         setMaximum(999999);
-        setSuffix(ki18ncp("Expire messages after %1", " day", " days"));
+#if KI18N_VERSION > QT_VERSION_CHECK(6, 5, 0)
+        KLocalization::setupSpinBoxFormatString(this, ki18ncp("Expire messages after %1", " day", " days"));
+#endif
         setSpecialValueText(i18n("Never"));
     }
 
@@ -41,12 +45,12 @@ public:
         if (value == 0) {
             return i18n("Never");
         }
-        return KPluralHandlingSpinBox::textFromValue(value);
+        return QSpinBox::textFromValue(value);
     }
 
     [[nodiscard]] int valueFromText(const QString &text) const override
     {
-        return KPluralHandlingSpinBox::valueFromText(text);
+        return QSpinBox::valueFromText(text);
     }
 
     QValidator::State validate(QString &text, int &pos) const override
@@ -54,7 +58,7 @@ public:
         if (text == i18n("Never")) {
             return QValidator::Acceptable;
         }
-        return KPluralHandlingSpinBox::validate(text, pos);
+        return QSpinBox::validate(text, pos);
     }
 };
 
@@ -69,10 +73,10 @@ CollectionExpiryWidget::CollectionExpiryWidget(QWidget *parent)
     auto formLayout = new QFormLayout(this);
     formLayout->setContentsMargins({});
 
-    connect(mExpireReadMailSB, &KPluralHandlingSpinBox::valueChanged, this, &CollectionExpiryWidget::slotChanged);
+    connect(mExpireReadMailSB, &QSpinBox::valueChanged, this, &CollectionExpiryWidget::slotChanged);
     formLayout->addRow(i18n("Expire read messages after:"), mExpireReadMailSB);
 
-    connect(mExpireUnreadMailSB, &KPluralHandlingSpinBox::valueChanged, this, &CollectionExpiryWidget::slotChanged);
+    connect(mExpireUnreadMailSB, &QSpinBox::valueChanged, this, &CollectionExpiryWidget::slotChanged);
     formLayout->addRow(i18n("Expire unread messages after:"), mExpireUnreadMailSB);
 
     connect(mExpireMailWithInvalidDateCB, &QCheckBox::toggled, this, &CollectionExpiryWidget::slotChanged);

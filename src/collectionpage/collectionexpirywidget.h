@@ -10,7 +10,7 @@
 #include <MailCommon/ExpireCollectionAttribute>
 #include <QWidget>
 class QCheckBox;
-class KPluralHandlingSpinBox;
+class QSpinBox;
 class QRadioButton;
 class QPushButton;
 namespace MailCommon
@@ -50,8 +50,8 @@ private:
     [[nodiscard]] MAILCOMMON_NO_EXPORT bool validateExpireFolder(bool expireNow);
     [[nodiscard]] MAILCOMMON_NO_EXPORT MailCommon::ExpireCollectionAttribute *assignFolderAttribute(Akonadi::Collection &collection, bool &expireNow);
     MAILCOMMON_NO_EXPORT void slotChanged();
-    KPluralHandlingSpinBox *const mExpireReadMailSB;
-    KPluralHandlingSpinBox *const mExpireUnreadMailSB;
+    QSpinBox *const mExpireReadMailSB;
+    QSpinBox *const mExpireUnreadMailSB;
     QRadioButton *mMoveToRB = nullptr;
     FolderRequester *const mFolderSelector;
     QRadioButton *mDeletePermanentlyRB = nullptr;
