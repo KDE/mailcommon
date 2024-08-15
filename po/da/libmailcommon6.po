@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-09 00:40+0000\n"
+"POT-Creation-Date: 2024-08-15 00:40+0000\n"
 "PO-Revision-Date: 2020-08-08 16:45+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -23,7 +23,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "Udløbstid"
 
-#: collectionpage/collectionexpirywidget.cpp:35
+#: collectionpage/collectionexpirywidget.cpp:38
 #, kde-format
 msgctxt "Expire messages after %1"
 msgid " day"
@@ -31,52 +31,52 @@ msgid_plural " days"
 msgstr[0] " dag"
 msgstr[1] " dage"
 
-#: collectionpage/collectionexpirywidget.cpp:36
-#: collectionpage/collectionexpirywidget.cpp:42
-#: collectionpage/collectionexpirywidget.cpp:54
+#: collectionpage/collectionexpirywidget.cpp:40
+#: collectionpage/collectionexpirywidget.cpp:46
+#: collectionpage/collectionexpirywidget.cpp:58
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu Never display tooltips."
 #| msgid "Never"
 msgid "Never"
 msgstr "Aldrig"
 
-#: collectionpage/collectionexpirywidget.cpp:66
+#: collectionpage/collectionexpirywidget.cpp:70
 #, fuzzy, kde-format
 #| msgid "Save Settings and Expire Now"
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Gem indstillinger og lad udløbe nu"
 
-#: collectionpage/collectionexpirywidget.cpp:67
+#: collectionpage/collectionexpirywidget.cpp:71
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Lad læste breve udløbe efter"
 
-#: collectionpage/collectionexpirywidget.cpp:73
+#: collectionpage/collectionexpirywidget.cpp:77
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
 msgid "Expire read messages after:"
 msgstr "Lad læste breve udløbe efter"
 
-#: collectionpage/collectionexpirywidget.cpp:76
+#: collectionpage/collectionexpirywidget.cpp:80
 #, fuzzy, kde-format
 #| msgid "Expire unread messages after"
 msgid "Expire unread messages after:"
 msgstr "Lad ulæste breve udløbe efter"
 
-#: collectionpage/collectionexpirywidget.cpp:90
+#: collectionpage/collectionexpirywidget.cpp:94
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "Flyt udløbne breve til:"
 
-#: collectionpage/collectionexpirywidget.cpp:101
+#: collectionpage/collectionexpirywidget.cpp:105
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "Slet udløbne breve permanent"
 
-#: collectionpage/collectionexpirywidget.cpp:172
+#: collectionpage/collectionexpirywidget.cpp:176
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -85,14 +85,14 @@ msgstr ""
 "Vælg en mapper som breve skal udløbe ind i.\n"
 "Hvis dette ikke gøres, vil udløbne breve blive slettet permanent."
 
-#: collectionpage/collectionexpirywidget.cpp:173
+#: collectionpage/collectionexpirywidget.cpp:177
 #, fuzzy, kde-format
 #| msgid "No Folder Selected"
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Ingen mappe valgt"
 
-#: collectionpage/collectionexpirywidget.cpp:187
+#: collectionpage/collectionexpirywidget.cpp:191
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -102,7 +102,7 @@ msgstr ""
 "Vælg en anden mappe end den nuværende som breve skal udløbe ind i.\n"
 "Hvis dette ikke gøres, vil udløbne breve blive slettet permanent."
 
-#: collectionpage/collectionexpirywidget.cpp:189
+#: collectionpage/collectionexpirywidget.cpp:193
 #, fuzzy, kde-format
 #| msgid "Wrong Folder Selected"
 msgctxt "@title:window"
@@ -2481,13 +2481,13 @@ msgstr "Strengen er tom."
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
-#: search/widgethandler/numericrulewidgethandler.cpp:21
+#: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is equal to"
 msgstr "er lig med"
 
 #: search/widgethandler/daterulewidgethandler.cpp:23
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:22
-#: search/widgethandler/numericrulewidgethandler.cpp:22
+#: search/widgethandler/numericrulewidgethandler.cpp:23
 msgid "is not equal to"
 msgstr "er ikke lig med"
 
@@ -2601,22 +2601,22 @@ msgid "has no attachment"
 msgstr "ikke har noget bilag"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:23
-#: search/widgethandler/numericrulewidgethandler.cpp:23
+#: search/widgethandler/numericrulewidgethandler.cpp:24
 msgid "is greater than"
 msgstr "er større end"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:24
-#: search/widgethandler/numericrulewidgethandler.cpp:24
+#: search/widgethandler/numericrulewidgethandler.cpp:25
 msgid "is less than or equal to"
 msgstr "er mindre end eller lig med"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:25
-#: search/widgethandler/numericrulewidgethandler.cpp:25
+#: search/widgethandler/numericrulewidgethandler.cpp:26
 msgid "is less than"
 msgstr "er mindre end"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:26
-#: search/widgethandler/numericrulewidgethandler.cpp:26
+#: search/widgethandler/numericrulewidgethandler.cpp:27
 msgid "is greater than or equal to"
 msgstr "er større end eller lig med"
 
@@ -2626,7 +2626,7 @@ msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " kB"
 
-#: search/widgethandler/numericrulewidgethandler.cpp:157
+#: search/widgethandler/numericrulewidgethandler.cpp:159
 #, kde-format
 msgctxt "Unit suffix where units are days."
 msgid " day"

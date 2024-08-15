@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-09 00:40+0000\n"
+"POT-Creation-Date: 2024-08-15 00:40+0000\n"
 "PO-Revision-Date: 2023-12-27 10:03+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -30,7 +30,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "Устаревание"
 
-#: collectionpage/collectionexpirywidget.cpp:35
+#: collectionpage/collectionexpirywidget.cpp:38
 #, kde-format
 msgctxt "Expire messages after %1"
 msgid " day"
@@ -40,48 +40,48 @@ msgstr[1] " дня"
 msgstr[2] " дней"
 msgstr[3] " день"
 
-#: collectionpage/collectionexpirywidget.cpp:36
-#: collectionpage/collectionexpirywidget.cpp:42
-#: collectionpage/collectionexpirywidget.cpp:54
+#: collectionpage/collectionexpirywidget.cpp:40
+#: collectionpage/collectionexpirywidget.cpp:46
+#: collectionpage/collectionexpirywidget.cpp:58
 #, kde-format
 msgid "Never"
 msgstr "Никогда"
 
-#: collectionpage/collectionexpirywidget.cpp:66
+#: collectionpage/collectionexpirywidget.cpp:70
 #, fuzzy, kde-format
 #| msgid "Save Settings and Expire Now"
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Сохранить параметры и обработать сейчас"
 
-#: collectionpage/collectionexpirywidget.cpp:67
+#: collectionpage/collectionexpirywidget.cpp:71
 #, fuzzy, kde-format
 #| msgid "Expire messages with invalid date"
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Проверять устаревание писем с некорректной датой"
 
-#: collectionpage/collectionexpirywidget.cpp:73
+#: collectionpage/collectionexpirywidget.cpp:77
 #, kde-format
 msgid "Expire read messages after:"
 msgstr "Срок устаревания прочитанных писем:"
 
-#: collectionpage/collectionexpirywidget.cpp:76
+#: collectionpage/collectionexpirywidget.cpp:80
 #, kde-format
 msgid "Expire unread messages after:"
 msgstr "Срок устаревания непрочитанных писем:"
 
-#: collectionpage/collectionexpirywidget.cpp:90
+#: collectionpage/collectionexpirywidget.cpp:94
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "Перемещать устаревшие письма в:"
 
-#: collectionpage/collectionexpirywidget.cpp:101
+#: collectionpage/collectionexpirywidget.cpp:105
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "Удалять устаревшие письма навсегда"
 
-#: collectionpage/collectionexpirywidget.cpp:172
+#: collectionpage/collectionexpirywidget.cpp:176
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -90,14 +90,14 @@ msgstr ""
 "Выберите папку для перемещения устаревших сообщений.\n"
 "Если этого не сделать, устаревшие сообщения будут удалены безвозвратно."
 
-#: collectionpage/collectionexpirywidget.cpp:173
+#: collectionpage/collectionexpirywidget.cpp:177
 #, fuzzy, kde-format
 #| msgid "No Folder Selected"
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Папка не выбрана"
 
-#: collectionpage/collectionexpirywidget.cpp:187
+#: collectionpage/collectionexpirywidget.cpp:191
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -107,7 +107,7 @@ msgstr ""
 "Выберите для перемещения устаревших сообщений папку, отличную от текущей.\n"
 "Если этого не сделать, устаревшие сообщения будут удалены безвозвратно."
 
-#: collectionpage/collectionexpirywidget.cpp:189
+#: collectionpage/collectionexpirywidget.cpp:193
 #, fuzzy, kde-format
 #| msgid "Wrong Folder Selected"
 msgctxt "@title:window"
@@ -2513,13 +2513,13 @@ msgstr "Указана пустая строка."
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
-#: search/widgethandler/numericrulewidgethandler.cpp:21
+#: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is equal to"
 msgstr "равен"
 
 #: search/widgethandler/daterulewidgethandler.cpp:23
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:22
-#: search/widgethandler/numericrulewidgethandler.cpp:22
+#: search/widgethandler/numericrulewidgethandler.cpp:23
 msgid "is not equal to"
 msgstr "не равен"
 
@@ -2633,22 +2633,22 @@ msgid "has no attachment"
 msgstr "без вложений"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:23
-#: search/widgethandler/numericrulewidgethandler.cpp:23
+#: search/widgethandler/numericrulewidgethandler.cpp:24
 msgid "is greater than"
 msgstr "больше чем"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:24
-#: search/widgethandler/numericrulewidgethandler.cpp:24
+#: search/widgethandler/numericrulewidgethandler.cpp:25
 msgid "is less than or equal to"
 msgstr "меньше или равен"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:25
-#: search/widgethandler/numericrulewidgethandler.cpp:25
+#: search/widgethandler/numericrulewidgethandler.cpp:26
 msgid "is less than"
 msgstr "меньше чем"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:26
-#: search/widgethandler/numericrulewidgethandler.cpp:26
+#: search/widgethandler/numericrulewidgethandler.cpp:27
 msgid "is greater than or equal to"
 msgstr "больше или равен"
 
@@ -2658,7 +2658,7 @@ msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " КБ"
 
-#: search/widgethandler/numericrulewidgethandler.cpp:157
+#: search/widgethandler/numericrulewidgethandler.cpp:159
 #, kde-format
 msgctxt "Unit suffix where units are days."
 msgid " day"

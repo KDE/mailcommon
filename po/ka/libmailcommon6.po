@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-09 00:40+0000\n"
+"POT-Creation-Date: 2024-08-15 00:40+0000\n"
 "PO-Revision-Date: 2024-08-01 06:01+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -24,7 +24,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "ვადა"
 
-#: collectionpage/collectionexpirywidget.cpp:35
+#: collectionpage/collectionexpirywidget.cpp:38
 #, kde-format
 msgctxt "Expire messages after %1"
 msgid " day"
@@ -32,46 +32,46 @@ msgid_plural " days"
 msgstr[0] " დღე"
 msgstr[1] " დღე"
 
-#: collectionpage/collectionexpirywidget.cpp:36
-#: collectionpage/collectionexpirywidget.cpp:42
-#: collectionpage/collectionexpirywidget.cpp:54
+#: collectionpage/collectionexpirywidget.cpp:40
+#: collectionpage/collectionexpirywidget.cpp:46
+#: collectionpage/collectionexpirywidget.cpp:58
 #, kde-format
 msgid "Never"
 msgstr "არასდროს"
 
-#: collectionpage/collectionexpirywidget.cpp:66
+#: collectionpage/collectionexpirywidget.cpp:70
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "პარამეტრების შენახვა და ვადის ახლავე გასვლა"
 
-#: collectionpage/collectionexpirywidget.cpp:67
+#: collectionpage/collectionexpirywidget.cpp:71
 #, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "არასწორი თარიღის მქონე შეტყობინებების ვადა"
 
-#: collectionpage/collectionexpirywidget.cpp:73
+#: collectionpage/collectionexpirywidget.cpp:77
 #, kde-format
 msgid "Expire read messages after:"
 msgstr "წაკითხული შეტყობინებების ვადა:"
 
-#: collectionpage/collectionexpirywidget.cpp:76
+#: collectionpage/collectionexpirywidget.cpp:80
 #, kde-format
 msgid "Expire unread messages after:"
 msgstr "წაუკითხავი შეტყობინებების ვადა:"
 
-#: collectionpage/collectionexpirywidget.cpp:90
+#: collectionpage/collectionexpirywidget.cpp:94
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "ვადაგასული შეტყობინებების გადატანა:"
 
-#: collectionpage/collectionexpirywidget.cpp:101
+#: collectionpage/collectionexpirywidget.cpp:105
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "ვადაგასული შეტყობინებების სამუდამოდ წაშლა"
 
-#: collectionpage/collectionexpirywidget.cpp:172
+#: collectionpage/collectionexpirywidget.cpp:176
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -80,13 +80,13 @@ msgstr ""
 "აირჩიეთ საქაღალდე, სადაც შეტყობინებები ამოიწურებიან.\n"
 "თუ ამას არ გააკეთებთ, ამოწურული შეტყობინებები ავტომატურად წაიშლება."
 
-#: collectionpage/collectionexpirywidget.cpp:173
+#: collectionpage/collectionexpirywidget.cpp:177
 #, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "საქაღალდე არჩეული არაა"
 
-#: collectionpage/collectionexpirywidget.cpp:187
+#: collectionpage/collectionexpirywidget.cpp:191
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -96,7 +96,7 @@ msgstr ""
 "შეტყობინებების ამოსაწურად მიმდინარისგან განსხვავებული საქაღალდე აირჩიეთ.\n"
 "თუ ამას არ გააკეთებთ, ამოწურული შეტყობინებები სამუდამოდ წაიშლება."
 
-#: collectionpage/collectionexpirywidget.cpp:189
+#: collectionpage/collectionexpirywidget.cpp:193
 #, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
@@ -2385,13 +2385,13 @@ msgstr "სტრიქონი ცარიელია."
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
-#: search/widgethandler/numericrulewidgethandler.cpp:21
+#: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is equal to"
 msgstr "უდრის"
 
 #: search/widgethandler/daterulewidgethandler.cpp:23
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:22
-#: search/widgethandler/numericrulewidgethandler.cpp:22
+#: search/widgethandler/numericrulewidgethandler.cpp:23
 msgid "is not equal to"
 msgstr "არ უდრის"
 
@@ -2504,22 +2504,22 @@ msgid "has no attachment"
 msgstr "არ აქვს მიმაგრებები"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:23
-#: search/widgethandler/numericrulewidgethandler.cpp:23
+#: search/widgethandler/numericrulewidgethandler.cpp:24
 msgid "is greater than"
 msgstr "მეტი, ვიდრე"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:24
-#: search/widgethandler/numericrulewidgethandler.cpp:24
+#: search/widgethandler/numericrulewidgethandler.cpp:25
 msgid "is less than or equal to"
 msgstr "ნაკლებია ან ტოლია"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:25
-#: search/widgethandler/numericrulewidgethandler.cpp:25
+#: search/widgethandler/numericrulewidgethandler.cpp:26
 msgid "is less than"
 msgstr "ნაკლები, ვიდრე"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:26
-#: search/widgethandler/numericrulewidgethandler.cpp:26
+#: search/widgethandler/numericrulewidgethandler.cpp:27
 msgid "is greater than or equal to"
 msgstr "მეტია ან ტოლია"
 
@@ -2529,7 +2529,7 @@ msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " კბ"
 
-#: search/widgethandler/numericrulewidgethandler.cpp:157
+#: search/widgethandler/numericrulewidgethandler.cpp:159
 #, kde-format
 msgctxt "Unit suffix where units are days."
 msgid " day"
