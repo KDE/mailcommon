@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-04 00:39+0000\n"
-"PO-Revision-Date: 2024-06-08 12:09+0400\n"
+"PO-Revision-Date: 2024-08-15 12:13+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -203,8 +203,7 @@ msgid "&Use custom message templates in this folder"
 msgstr "ا&ستخدم قوالب رسائل مخصّصة في هذا المجلد"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
-#, fuzzy, kde-format
-#| msgid "&Copy Global Templates"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "ا&نسخ القوالب العموميّة"
@@ -897,8 +896,7 @@ msgid "Save…"
 msgstr "احفظ…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Share…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "شارِك…"
@@ -1244,8 +1242,7 @@ msgid "Run selected filter(s) on: "
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:293
-#, fuzzy, kde-format
-#| msgid "Run Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "شغّل الآن"
@@ -1629,8 +1626,7 @@ msgid "Down"
 msgstr "لأسفل"
 
 #: folder/folderrequester.cpp:45
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "اختر مجلد"
@@ -2033,8 +2029,7 @@ msgid "Encryption"
 msgstr "التعمية"
 
 #: search/searchpatternedit.cpp:144
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "اختر أو اكتب معيارك الخاص"
@@ -2500,11 +2495,10 @@ msgid "Filename:"
 msgstr "اسم الملفّ:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, fuzzy, kde-format
-#| msgid "Variables"
+#, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
-msgstr "المتغيّرات"
+msgstr "أدخل متغيّرات"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
 #, kde-format
