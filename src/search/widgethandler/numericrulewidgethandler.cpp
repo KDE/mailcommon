@@ -156,7 +156,7 @@ void initNumInput(QSpinBox *numInput, const QByteArray &field)
     if (field == "<age in days>") {
         numInput->setMinimum(-10000);
 #if KI18N_VERSION > QT_VERSION_CHECK(6, 5, 0)
-        KLocalization::setupSpinBoxFormatString(numInput, ki18ncp("Unit suffix where units are days.", " day", " days"));
+        KLocalization::setupSpinBoxFormatString(numInput, ki18ncp("Unit suffix where units are days.", "%v day", "%v days"));
 #endif
     }
 }
