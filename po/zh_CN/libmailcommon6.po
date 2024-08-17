@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-15 00:40+0000\n"
+"POT-Creation-Date: 2024-08-17 00:40+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -24,10 +24,13 @@ msgid "Expiry"
 msgstr "过期"
 
 #: collectionpage/collectionexpirywidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Expire messages after %1"
+#| msgid " day"
+#| msgid_plural " days"
 msgctxt "Expire messages after %1"
-msgid " day"
-msgid_plural " days"
+msgid "%v day"
+msgid_plural "%v days"
 msgstr[0] " 天"
 
 #: collectionpage/collectionexpirywidget.cpp:40
@@ -2393,10 +2396,13 @@ msgid " kB"
 msgstr " kB"
 
 #: search/widgethandler/numericrulewidgethandler.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Unit suffix where units are days."
+#| msgid " day"
+#| msgid_plural " days"
 msgctxt "Unit suffix where units are days."
-msgid " day"
-msgid_plural " days"
+msgid "%v day"
+msgid_plural "%v days"
 msgstr[0] " 天"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:28

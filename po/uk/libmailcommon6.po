@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-15 00:40+0000\n"
+"POT-Creation-Date: 2024-08-17 00:40+0000\n"
 "PO-Revision-Date: 2024-08-01 20:30+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -27,10 +27,13 @@ msgid "Expiry"
 msgstr "Архівування"
 
 #: collectionpage/collectionexpirywidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Expire messages after %1"
+#| msgid " day"
+#| msgid_plural " days"
 msgctxt "Expire messages after %1"
-msgid " day"
-msgid_plural " days"
+msgid "%v day"
+msgid_plural "%v days"
 msgstr[0] " день"
 msgstr[1] " дні"
 msgstr[2] " днів"
@@ -2546,10 +2549,13 @@ msgid " kB"
 msgstr " кБ"
 
 #: search/widgethandler/numericrulewidgethandler.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Unit suffix where units are days."
+#| msgid " day"
+#| msgid_plural " days"
 msgctxt "Unit suffix where units are days."
-msgid " day"
-msgid_plural " days"
+msgid "%v day"
+msgid_plural "%v days"
 msgstr[0] " день"
 msgstr[1] " дні"
 msgstr[2] " днів"

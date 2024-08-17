@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-15 00:40+0000\n"
+"POT-Creation-Date: 2024-08-17 00:40+0000\n"
 "PO-Revision-Date: 2019-11-18 12:53+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -24,10 +24,13 @@ msgid "Expiry"
 msgstr "Vypršanie"
 
 #: collectionpage/collectionexpirywidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Expire messages after %1"
+#| msgid " day"
+#| msgid_plural " days"
 msgctxt "Expire messages after %1"
-msgid " day"
-msgid_plural " days"
+msgid "%v day"
+msgid_plural "%v days"
 msgstr[0] " deň"
 msgstr[1] " dni"
 msgstr[2] " dní"
@@ -2658,10 +2661,13 @@ msgid " kB"
 msgstr " KB"
 
 #: search/widgethandler/numericrulewidgethandler.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Unit suffix where units are days."
+#| msgid " day"
+#| msgid_plural " days"
 msgctxt "Unit suffix where units are days."
-msgid " day"
-msgid_plural " days"
+msgid "%v day"
+msgid_plural "%v days"
 msgstr[0] " deň"
 msgstr[1] " dni"
 msgstr[2] " dní"

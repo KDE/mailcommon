@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-15 00:40+0000\n"
+"POT-Creation-Date: 2024-08-17 00:40+0000\n"
 "PO-Revision-Date: 2021-01-13 17:59+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -30,10 +30,13 @@ msgid "Expiry"
 msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Expire messages after %1"
+#| msgid " day"
+#| msgid_plural " days"
 msgctxt "Expire messages after %1"
-msgid " day"
-msgid_plural " days"
+msgid "%v day"
+msgid_plural "%v days"
 msgstr[0] " dag"
 msgstr[1] " dagar"
 
@@ -2502,12 +2505,15 @@ msgid " kB"
 msgstr ""
 
 #: search/widgethandler/numericrulewidgethandler.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Expire messages after %1"
+#| msgid " day"
+#| msgid_plural " days"
 msgctxt "Unit suffix where units are days."
-msgid " day"
-msgid_plural " days"
-msgstr[0] ""
-msgstr[1] ""
+msgid "%v day"
+msgid_plural "%v days"
+msgstr[0] " dag"
+msgstr[1] " dagar"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:28
 msgctxt "message status"
