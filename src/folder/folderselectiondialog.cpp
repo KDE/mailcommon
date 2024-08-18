@@ -56,7 +56,7 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
     connect(buttonBox, &QDialogButtonBox::rejected, this, &FolderSelectionDialog::reject);
 
     if (!d->mNotAllowToCreateNewFolder) {
-        d->mUser1Button = new QPushButton;
+        d->mUser1Button = new QPushButton(this);
         d->mUser1Button->setDefault(false);
         d->mUser1Button->setAutoDefault(false);
         buttonBox->addButton(d->mUser1Button, QDialogButtonBox::ActionRole);
