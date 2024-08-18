@@ -44,6 +44,7 @@ public:
     void setTopLevelOrder(const QStringList &list);
 
     void setFolderMatcher(const HierarchicalFolderMatcher &matcher);
+    // TODO add activities support
 
 public Q_SLOTS:
     void slotSpecialCollectionsChanged();
