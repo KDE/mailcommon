@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-17 00:40+0000\n"
+"POT-Creation-Date: 2024-08-19 00:40+0000\n"
 "PO-Revision-Date: 2020-01-01 12:34+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -1865,7 +1865,9 @@ msgid "&New Subfolder…"
 msgstr "&Uus alamkaust..."
 
 #: folder/folderselectiondialog.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Create a new subfolder under the currently selected folder"
+msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "Uue alamkausta loomine parajasti valitud kaustas"
 
