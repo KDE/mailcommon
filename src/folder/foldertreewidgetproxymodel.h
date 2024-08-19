@@ -11,7 +11,10 @@
 #include <Akonadi/Collection>
 #include <Akonadi/EntityRightsFilterModel>
 #include <memory>
-
+namespace Akonadi
+{
+class AccountActivitiesAbstract;
+}
 namespace MailCommon
 {
 /**
@@ -57,6 +60,8 @@ public:
     void readConfig();
 
     void setWarningThreshold(qreal threshold);
+
+    void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 
 protected:
     bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override;

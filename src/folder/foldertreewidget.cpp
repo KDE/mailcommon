@@ -390,4 +390,9 @@ bool FolderTreeWidget::event(QEvent *e)
     return QWidget::event(e);
 }
 
+void FolderTreeWidget::setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities)
+{
+    d->readableproxy->setAccountActivities(accountActivities);
+}
+
 #include "moc_foldertreewidget.cpp"

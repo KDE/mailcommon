@@ -70,7 +70,6 @@ public:
     QMap<Akonadi::Collection::Id, int> collectionRanks;
     QStringList topLevelOrder;
     HierarchicalFolderMatcher matcher;
-    Akonadi::AccountActivitiesAbstract *accountActivities = nullptr;
     bool manualSortingActive = false;
 };
 
@@ -159,12 +158,6 @@ bool EntityCollectionOrderProxyModel::isManualSortingActive() const
 void EntityCollectionOrderProxyModel::setFolderMatcher(const HierarchicalFolderMatcher &matcher)
 {
     d->matcher = matcher;
-    invalidateFilter();
-}
-
-void EntityCollectionOrderProxyModel::setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities)
-{
-    d->accountActivities = accountActivities;
     invalidateFilter();
 }
 

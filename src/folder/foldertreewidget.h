@@ -17,6 +17,10 @@
 #include <memory>
 namespace Akonadi
 {
+class AccountActivitiesAbstract;
+}
+namespace Akonadi
+{
 class StatisticsProxyModel;
 }
 
@@ -107,6 +111,8 @@ public:
     void readConfig();
 
     void restoreHeaderState(const QByteArray &data);
+
+    void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 
 protected:
     void changeToolTipsPolicyConfig(ToolTipDisplayPolicy);

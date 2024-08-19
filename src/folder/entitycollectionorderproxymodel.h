@@ -10,10 +10,6 @@
 #include "mailcommon_export.h"
 #include <Akonadi/EntityOrderProxyModel>
 
-namespace Akonadi
-{
-class AccountActivitiesAbstract;
-}
 namespace MailCommon
 {
 class HierarchicalFolderMatcher;
@@ -48,8 +44,6 @@ public:
     void setTopLevelOrder(const QStringList &list);
 
     void setFolderMatcher(const HierarchicalFolderMatcher &matcher);
-
-    void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 
 public Q_SLOTS:
     void slotSpecialCollectionsChanged();

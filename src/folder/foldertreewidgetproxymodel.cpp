@@ -57,6 +57,7 @@ public:
         return false;
     }
 
+    Akonadi::AccountActivitiesAbstract *accountActivities = nullptr;
     QSet<QString> includedMimeTypes;
     Akonadi::MimeTypeChecker checker;
 
@@ -267,6 +268,12 @@ void FolderTreeWidgetProxyModel::addContentMimeTypeInclusionFilter(const QString
 {
     d->includedMimeTypes << mimeType;
     d->checker.setWantedMimeTypes(d->includedMimeTypes.values());
+    invalidateFilter();
+}
+
+void FolderTreeWidgetProxyModel::setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities)
+{
+    d->accountActivities = accountActivities;
     invalidateFilter();
 }
 
