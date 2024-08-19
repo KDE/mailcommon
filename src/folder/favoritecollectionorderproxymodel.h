@@ -9,7 +9,10 @@
 
 #include "mailcommon_export.h"
 #include <Akonadi/EntityOrderProxyModel>
-
+namespace Akonadi
+{
+class AccountActivitiesAbstract;
+}
 namespace MailCommon
 {
 /**
@@ -22,7 +25,10 @@ public:
     explicit FavoriteCollectionOrderProxyModel(QObject *parent = nullptr);
     ~FavoriteCollectionOrderProxyModel() override;
 
+    void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
+
 protected:
     [[nodiscard]] Akonadi::Collection parentCollection(const QModelIndex &index) const override;
+    Akonadi::AccountActivitiesAbstract *mAccountActivities = nullptr;
 };
 }

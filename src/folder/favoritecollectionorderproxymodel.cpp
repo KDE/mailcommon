@@ -6,6 +6,7 @@
 */
 
 #include "favoritecollectionorderproxymodel.h"
+#include <Akonadi/AccountActivitiesAbstract>
 #include <Akonadi/Collection>
 #include <Akonadi/EntityTreeModel>
 
@@ -22,6 +23,16 @@ Akonadi::Collection FavoriteCollectionOrderProxyModel::parentCollection(const QM
 {
     Q_UNUSED(index)
     return {};
+}
+
+void FavoriteCollectionOrderProxyModel::setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities)
+{
+    if (mAccountActivities) {
+        disconnect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FavoriteCollectionOrderProxyModel::invalidateFilter);
+    }
+    mAccountActivities = accountActivities;
+    connect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FavoriteCollectionOrderProxyModel::invalidateFilter);
+    invalidateFilter();
 }
 
 #include "moc_favoritecollectionorderproxymodel.cpp"
