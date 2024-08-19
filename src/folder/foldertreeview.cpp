@@ -28,14 +28,12 @@ using namespace MailCommon;
 FolderTreeView::FolderTreeView(QWidget *parent, bool showUnreadCount)
     : Akonadi::EntityTreeView(parent)
 {
-    setProperty("_breeze_force_frame", false);
     init(showUnreadCount);
 }
 
 FolderTreeView::FolderTreeView(KXMLGUIClient *xmlGuiClient, QWidget *parent, bool showUnreadCount)
     : Akonadi::EntityTreeView(xmlGuiClient, parent)
 {
-    setProperty("_breeze_force_frame", false);
     init(showUnreadCount);
 }
 
@@ -68,6 +66,7 @@ void FolderTreeView::disableContextMenuAndExtraColumn()
 
 void FolderTreeView::init(bool showUnreadCount)
 {
+    setProperty("_breeze_force_frame", false);
     setIconSize(QSize(22, 22));
     setUniformRowHeights(true);
     mSortingPolicy = FolderTreeWidget::SortByCurrentColumn;
