@@ -11,6 +11,7 @@
 
 #include <MessageCore/MessageCoreSettings>
 
+#include <Akonadi/AccountActivitiesAbstract>
 #include <Akonadi/AgentInstance>
 #include <Akonadi/AgentManager>
 #include <Akonadi/EntityTreeModel>
@@ -273,7 +274,11 @@ void FolderTreeWidgetProxyModel::addContentMimeTypeInclusionFilter(const QString
 
 void FolderTreeWidgetProxyModel::setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities)
 {
+    if (d->accountActivities) {
+        disconnect(d->accountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FolderTreeWidgetProxyModel::invalidateFilter);
+    }
     d->accountActivities = accountActivities;
+    connect(d->accountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FolderTreeWidgetProxyModel::invalidateFilter);
     invalidateFilter();
 }
 
