@@ -7,9 +7,9 @@
 
 #include "favoritecollectionorderproxymodel.h"
 #include <Akonadi/AccountActivitiesAbstract>
+#include <Akonadi/AgentManager>
 #include <Akonadi/Collection>
 #include <Akonadi/EntityTreeModel>
-
 using namespace MailCommon;
 
 FavoriteCollectionOrderProxyModel::FavoriteCollectionOrderProxyModel(QObject *parent)
@@ -41,9 +41,10 @@ bool FavoriteCollectionOrderProxyModel::filterAcceptsRow(int sourceRow, const QM
         const QModelIndex modelIndex = sourceModel()->index(sourceRow, 0, sourceParent);
 
         const auto collection = sourceModel()->data(modelIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
-        // TODO return mAccountActivities->filterAcceptsRow()
-        // TODO check resource + support activities
-        // TODO
+        const Akonadi::AgentInstance instance = Akonadi::AgentManager::self()->instance(collection.resource());
+        if (instance.activitiesEnabled()) {
+            return mAccountActivities->filterAcceptsRow(instance.activities());
+        }
     }
     return Akonadi::EntityOrderProxyModel::filterAcceptsColumn(sourceRow, sourceParent);
 }
