@@ -239,6 +239,11 @@ Akonadi::Collection::List FolderSelectionDialog::selectedCollections() const
     return d->folderTreeWidget->selectedCollections();
 }
 
+void FolderSelectionDialog::setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities)
+{
+    d->folderTreeWidget->setAccountActivities(accountActivities);
+}
+
 static const char myFilterConvertToSieveResultDialogGroupName[] = "FolderSelectionDialog";
 
 void FolderSelectionDialog::readConfig()

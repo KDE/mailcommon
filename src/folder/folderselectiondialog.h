@@ -16,7 +16,10 @@
 #include <QAbstractItemView>
 
 class KJob;
-
+namespace Akonadi
+{
+class AccountActivitiesAbstract;
+}
 namespace MailCommon
 {
 /**
@@ -49,6 +52,8 @@ public:
     void setSelectedCollection(const Akonadi::Collection &collection);
 
     [[nodiscard]] Akonadi::Collection::List selectedCollections() const;
+
+    void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 
 private Q_SLOTS:
     MAILCOMMON_NO_EXPORT void slotSelectionChanged();

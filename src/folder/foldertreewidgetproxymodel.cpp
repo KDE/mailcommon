@@ -286,7 +286,9 @@ void FolderTreeWidgetProxyModel::setAccountActivities(Akonadi::AccountActivities
         disconnect(d->accountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FolderTreeWidgetProxyModel::invalidateFilter);
     }
     d->accountActivities = accountActivities;
-    connect(d->accountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FolderTreeWidgetProxyModel::invalidateFilter);
+    if (d->accountActivities) {
+        connect(d->accountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FolderTreeWidgetProxyModel::invalidateFilter);
+    }
     invalidateFilter();
 }
 

@@ -32,6 +32,7 @@ public:
     bool mMustBeReadWrite = false;
     bool mShowOutbox = false;
     bool mNotCreateNewFolder = false;
+    Akonadi::AccountActivitiesAbstract *mAccountActivities = nullptr;
 };
 
 FolderRequester::FolderRequester(QWidget *parent)
@@ -73,6 +74,7 @@ void FolderRequester::slotOpenDialog()
     dlg->setWindowTitle(d->mSelectFolderTitleDialog.isEmpty() ? i18nc("@title:window", "Select Folder") : d->mSelectFolderTitleDialog);
     dlg->setModal(false);
     dlg->setSelectedCollection(d->mCollection);
+    dlg->setAccountActivities(d->mAccountActivities);
 
     if (dlg->exec() && dlg) {
         setCollection(dlg->selectedCollection(), false);
@@ -96,6 +98,8 @@ void FolderRequester::setCollectionFullPath(const Akonadi::Collection &col)
         d->mEdit->clear();
     }
 }
+
+void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 
 //-----------------------------------------------------------------------------
 void FolderRequester::setCollection(const Akonadi::Collection &collection, bool fetchCollection)
@@ -176,6 +180,11 @@ void FolderRequester::setNotAllowToCreateNewFolder(bool notCreateNewFolder)
 void FolderRequester::setSelectFolderTitleDialog(const QString &title)
 {
     d->mSelectFolderTitleDialog = title;
+}
+
+void FolderRequester::setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities)
+{
+    d->mAccountActivities = accountActivities;
 }
 
 #include "moc_folderrequester.cpp"

@@ -15,6 +15,10 @@
 class QKeyEvent;
 
 class KJob;
+namespace Akonadi
+{
+class AccountActivitiesAbstract;
+}
 
 namespace MailCommon
 {
@@ -73,6 +77,7 @@ public:
 
     void setSelectFolderTitleDialog(const QString &title);
 
+    void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 protected Q_SLOTS:
     /**
      * Opens the folder dialog.
