@@ -37,7 +37,14 @@ void FavoriteCollectionOrderProxyModel::setAccountActivities(Akonadi::AccountAct
 
 bool FavoriteCollectionOrderProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
 {
-    // TODO
+    if (mAccountActivities) {
+        const QModelIndex modelIndex = sourceModel()->index(sourceRow, 0, sourceParent);
+
+        const auto collection = sourceModel()->data(modelIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        // TODO return mAccountActivities->filterAcceptsRow()
+        // TODO check resource + support activities
+        // TODO
+    }
     return Akonadi::EntityOrderProxyModel::filterAcceptsColumn(sourceRow, sourceParent);
 }
 
