@@ -180,6 +180,14 @@ bool FolderTreeWidgetProxyModel::filterAcceptsRow(int sourceRow, const QModelInd
     const QModelIndex modelIndex = sourceModel()->index(sourceRow, 0, sourceParent);
 
     const auto collection = sourceModel()->data(modelIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+    if (d->accountActivities) {
+        const Akonadi::AgentInstance instance = Akonadi::AgentManager::self()->instance(collection.resource());
+        if (instance.activitiesEnabled()) {
+            if (!d->accountActivities->filterAcceptsRow(instance.activities())) {
+                return false;
+            }
+        }
+    }
     if (!d->checker.isWantedCollection(collection)) {
         return false;
     }
