@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-19 00:40+0000\n"
-"PO-Revision-Date: 2024-08-17 08:43+0200\n"
+"POT-Creation-Date: 2024-08-20 00:41+0000\n"
+"PO-Revision-Date: 2024-08-19 06:47+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -1784,11 +1784,10 @@ msgid "&New Subfolder…"
 msgstr "&Nova podmapa…"
 
 #: folder/folderselectiondialog.cpp:66
-#, fuzzy, kde-format
-#| msgid "Create a new subfolder under the currently selected folder"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
-msgstr "Ustvari novo podmapo v trenutno izbrani mapi"
+msgstr "Ustvari novo podmapo pod trenutno izbrano mapo"
 
 #: folder/folderselectiondialog.cpp:126
 #, kde-format
@@ -1818,70 +1817,70 @@ msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Ustvarjanje mape ni uspelo"
 
-#: folder/foldertreeview.cpp:130
+#: folder/foldertreeview.cpp:129
 #, kde-format
 msgid "View Columns"
 msgstr "Stolpci prikaza"
 
-#: folder/foldertreeview.cpp:140
+#: folder/foldertreeview.cpp:139
 #, kde-format
 msgid "Icon Size"
 msgstr "Velikost ikon"
 
-#: folder/foldertreeview.cpp:156
+#: folder/foldertreeview.cpp:155
 #, kde-format
 msgid "Display Tooltips"
 msgstr "Prikaži orodne namige"
 
-#: folder/foldertreeview.cpp:160
+#: folder/foldertreeview.cpp:159
 #, kde-format
 msgctxt "@action:inmenu Always display tooltips"
 msgid "Always"
 msgstr "Vedno"
 
-#: folder/foldertreeview.cpp:167
+#: folder/foldertreeview.cpp:166
 #, kde-format
 msgctxt "@action:inmenu Never display tooltips."
 msgid "Never"
 msgstr "Nikoli"
 
-#: folder/foldertreeview.cpp:174
+#: folder/foldertreeview.cpp:173
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Sort Items"
 msgstr "Razvrsti predmete"
 
-#: folder/foldertreeview.cpp:178
+#: folder/foldertreeview.cpp:177
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
 msgstr "Samodejno, po trenutnem stolpcu"
 
-#: folder/foldertreeview.cpp:185
+#: folder/foldertreeview.cpp:184
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
 msgstr "Ročno, z vlečenjem in spuščanjem"
 
-#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
+#: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr ""
 "<qt>Ali naj grem na naslednje neprebrano sporočilo v mapi <b>%1</b>?</qt>"
 
-#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
+#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, kde-format
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Pojdi na naslednje neprebrano sporočilo"
 
-#: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
+#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Pojdi na"
 
-#: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
+#: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
 #, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
@@ -1903,12 +1902,12 @@ msgstr "Da filtrirate seznam map, lahko pričnete tipkati."
 msgid "Path: (%1)"
 msgstr "Pot: (%1)"
 
-#: folder/foldertreewidgetproxymodel.cpp:233
+#: folder/foldertreewidgetproxymodel.cpp:235
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (nepovezan)"
 
-#: folder/foldertreewidgetproxymodel.cpp:237
+#: folder/foldertreewidgetproxymodel.cpp:239
 #, kde-format
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (doseženo %2 % kvote)"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-19 00:40+0000\n"
+"POT-Creation-Date: 2024-08-20 00:41+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -1955,71 +1955,71 @@ msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Неуспешно прављење фасцикле"
 
-#: folder/foldertreeview.cpp:130
+#: folder/foldertreeview.cpp:129
 #, kde-format
 msgid "View Columns"
 msgstr "Приказ колона"
 
-#: folder/foldertreeview.cpp:140
+#: folder/foldertreeview.cpp:139
 #, kde-format
 msgid "Icon Size"
 msgstr "Величина иконица"
 
-#: folder/foldertreeview.cpp:156
+#: folder/foldertreeview.cpp:155
 #, kde-format
 msgid "Display Tooltips"
 msgstr "Приказуј облачиће"
 
-#: folder/foldertreeview.cpp:160
+#: folder/foldertreeview.cpp:159
 #, kde-format
 msgctxt "@action:inmenu Always display tooltips"
 msgid "Always"
 msgstr "увијек"
 
-#: folder/foldertreeview.cpp:167
+#: folder/foldertreeview.cpp:166
 #, kde-format
 msgctxt "@action:inmenu Never display tooltips."
 msgid "Never"
 msgstr "никада"
 
-#: folder/foldertreeview.cpp:174
+#: folder/foldertreeview.cpp:173
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Sort Items"
 msgstr "Ређај ставке"
 
-#: folder/foldertreeview.cpp:178
+#: folder/foldertreeview.cpp:177
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
 msgstr "аутоматски, по тренутној колони"
 
-#: folder/foldertreeview.cpp:185
+#: folder/foldertreeview.cpp:184
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
 msgstr "ручно, превлачењем"
 
-#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
+#: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr "<qt>На следећу непрочитану поруку у фасцикли <b>%1</b>?</qt>"
 
-#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
+#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, fuzzy, kde-format
 #| msgid "Go to Next Unread Message"
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Иди на следећу непрочитану поруку"
 
-#: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
+#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, fuzzy, kde-format
 #| msgid "Go To"
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Иди"
 
-#: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
+#: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
 #, fuzzy, kde-format
 #| msgid "Do Not Go To"
 msgctxt "@action:button"
@@ -2043,12 +2043,12 @@ msgstr "Почните са куцањем ради филтрирања лис�
 msgid "Path: (%1)"
 msgstr "Путања: (%1)"
 
-#: folder/foldertreewidgetproxymodel.cpp:233
+#: folder/foldertreewidgetproxymodel.cpp:235
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (ван везе)"
 
-#: folder/foldertreewidgetproxymodel.cpp:237
+#: folder/foldertreewidgetproxymodel.cpp:239
 #, kde-format
 msgid "%1 (Reached %2% quota)"
 msgstr ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-19 00:40+0000\n"
+"POT-Creation-Date: 2024-08-20 00:41+0000\n"
 "PO-Revision-Date: 2024-08-07 20:31+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -1835,70 +1835,70 @@ msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Неуспешно създаване на папка"
 
-#: folder/foldertreeview.cpp:130
+#: folder/foldertreeview.cpp:129
 #, kde-format
 msgid "View Columns"
 msgstr "Преглед на колони"
 
-#: folder/foldertreeview.cpp:140
+#: folder/foldertreeview.cpp:139
 #, kde-format
 msgid "Icon Size"
 msgstr "Размерът на икони"
 
-#: folder/foldertreeview.cpp:156
+#: folder/foldertreeview.cpp:155
 #, kde-format
 msgid "Display Tooltips"
 msgstr "Показване на подсказки"
 
-#: folder/foldertreeview.cpp:160
+#: folder/foldertreeview.cpp:159
 #, kde-format
 msgctxt "@action:inmenu Always display tooltips"
 msgid "Always"
 msgstr "Винаги"
 
-#: folder/foldertreeview.cpp:167
+#: folder/foldertreeview.cpp:166
 #, kde-format
 msgctxt "@action:inmenu Never display tooltips."
 msgid "Never"
 msgstr "Никога"
 
-#: folder/foldertreeview.cpp:174
+#: folder/foldertreeview.cpp:173
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Sort Items"
 msgstr "Сортиране на елементи"
 
-#: folder/foldertreeview.cpp:178
+#: folder/foldertreeview.cpp:177
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
 msgstr "Автоматично, по текуща колона"
 
-#: folder/foldertreeview.cpp:185
+#: folder/foldertreeview.cpp:184
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
 msgstr "Ръчно, чрез плъзгане и пускане"
 
-#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
+#: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr ""
 "<qt> Отидете до следващото непрочетено съобщение в папка <b>%1 </b>? </qt>"
 
-#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
+#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, kde-format
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Към следващото непрочетено съобщение"
 
-#: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
+#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Навигация"
 
-#: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
+#: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
 #, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
@@ -1920,12 +1920,12 @@ msgstr "Можете да започнете да пишете, за да фил
 msgid "Path: (%1)"
 msgstr "Път: (%1)"
 
-#: folder/foldertreewidgetproxymodel.cpp:233
+#: folder/foldertreewidgetproxymodel.cpp:235
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (офлайн)"
 
-#: folder/foldertreewidgetproxymodel.cpp:237
+#: folder/foldertreewidgetproxymodel.cpp:239
 #, kde-format
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (Достигната %2% квота)"

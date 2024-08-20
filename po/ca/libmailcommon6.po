@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-19 00:40+0000\n"
-"PO-Revision-Date: 2024-08-17 11:14+0200\n"
+"POT-Creation-Date: 2024-08-20 00:41+0000\n"
+"PO-Revision-Date: 2024-08-19 09:33+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -1804,8 +1804,7 @@ msgid "&New Subfolder…"
 msgstr "Subcarpeta &nova…"
 
 #: folder/folderselectiondialog.cpp:66
-#, fuzzy, kde-format
-#| msgid "Create a new subfolder under the currently selected folder"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "Crea una subcarpeta nova sota la carpeta seleccionada"
@@ -1838,70 +1837,70 @@ msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Ha fallat la creació de la carpeta"
 
-#: folder/foldertreeview.cpp:130
+#: folder/foldertreeview.cpp:129
 #, kde-format
 msgid "View Columns"
 msgstr "Mostra les columnes"
 
-#: folder/foldertreeview.cpp:140
+#: folder/foldertreeview.cpp:139
 #, kde-format
 msgid "Icon Size"
 msgstr "Mida de les icones"
 
-#: folder/foldertreeview.cpp:156
+#: folder/foldertreeview.cpp:155
 #, kde-format
 msgid "Display Tooltips"
 msgstr "Mostra els consells"
 
-#: folder/foldertreeview.cpp:160
+#: folder/foldertreeview.cpp:159
 #, kde-format
 msgctxt "@action:inmenu Always display tooltips"
 msgid "Always"
 msgstr "Sempre"
 
-#: folder/foldertreeview.cpp:167
+#: folder/foldertreeview.cpp:166
 #, kde-format
 msgctxt "@action:inmenu Never display tooltips."
 msgid "Never"
 msgstr "Mai"
 
-#: folder/foldertreeview.cpp:174
+#: folder/foldertreeview.cpp:173
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Sort Items"
 msgstr "Ordena els elements"
 
-#: folder/foldertreeview.cpp:178
+#: folder/foldertreeview.cpp:177
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
 msgstr "Automàticament, per a la columna actual"
 
-#: folder/foldertreeview.cpp:185
+#: folder/foldertreeview.cpp:184
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
 msgstr "Manualment, arrossegant i deixant anar"
 
-#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
+#: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr ""
 "<qt>Voleu anar al següent missatge sense llegir a la carpeta <b>%1</b>?</qt>"
 
-#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
+#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, kde-format
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Ves al següent missatge sense llegir"
 
-#: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
+#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Ves"
 
-#: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
+#: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
 #, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
@@ -1923,12 +1922,12 @@ msgstr "Podeu començar a teclejar per a filtrar la llista de carpetes."
 msgid "Path: (%1)"
 msgstr "Camí: (%1)"
 
-#: folder/foldertreewidgetproxymodel.cpp:233
+#: folder/foldertreewidgetproxymodel.cpp:235
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (desconnectat)"
 
-#: folder/foldertreewidgetproxymodel.cpp:237
+#: folder/foldertreewidgetproxymodel.cpp:239
 #, kde-format
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (S'ha arribat al %2% de la quota)"

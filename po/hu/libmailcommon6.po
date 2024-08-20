@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-19 00:40+0000\n"
+"POT-Creation-Date: 2024-08-20 00:41+0000\n"
 "PO-Revision-Date: 2024-08-06 14:19+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -1875,72 +1875,72 @@ msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "A mappa létrehozása nem sikerült"
 
-#: folder/foldertreeview.cpp:130
+#: folder/foldertreeview.cpp:129
 #, kde-format
 msgid "View Columns"
 msgstr "Oszlopok megtekintése"
 
-#: folder/foldertreeview.cpp:140
+#: folder/foldertreeview.cpp:139
 #, kde-format
 msgid "Icon Size"
 msgstr "Ikonméret"
 
-#: folder/foldertreeview.cpp:156
+#: folder/foldertreeview.cpp:155
 #, kde-format
 msgid "Display Tooltips"
 msgstr "Tippek megjelenítése"
 
-#: folder/foldertreeview.cpp:160
+#: folder/foldertreeview.cpp:159
 #, kde-format
 msgctxt "@action:inmenu Always display tooltips"
 msgid "Always"
 msgstr "Mindig"
 
-#: folder/foldertreeview.cpp:167
+#: folder/foldertreeview.cpp:166
 #, kde-format
 msgctxt "@action:inmenu Never display tooltips."
 msgid "Never"
 msgstr "Soha"
 
-#: folder/foldertreeview.cpp:174
+#: folder/foldertreeview.cpp:173
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Sort Items"
 msgstr "Elemek rendezése"
 
-#: folder/foldertreeview.cpp:178
+#: folder/foldertreeview.cpp:177
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
 msgstr "Automatikusan, a jelenlegi oszlop szerint"
 
-#: folder/foldertreeview.cpp:185
+#: folder/foldertreeview.cpp:184
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
 msgstr "Kézzel, fogd és vidd módon"
 
-#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
+#: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr ""
 "<qt>A következő, még olvasatlan üzenetre szeretne ugrani a(z) <b>%1</b> "
 "mappában?</qt>"
 
-#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
+#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, fuzzy, kde-format
 #| msgid "Go to Next Unread Message"
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Ugrás a következő olvasatlan üzenetre"
 
-#: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
+#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Ugrás"
 
-#: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
+#: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
 #, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
@@ -1962,12 +1962,12 @@ msgstr "A gépelés elkezdésével szűrheti a mappák listáját."
 msgid "Path: (%1)"
 msgstr "Elérési út: (%1)"
 
-#: folder/foldertreewidgetproxymodel.cpp:233
+#: folder/foldertreewidgetproxymodel.cpp:235
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (Nem elérhető)"
 
-#: folder/foldertreewidgetproxymodel.cpp:237
+#: folder/foldertreewidgetproxymodel.cpp:239
 #, kde-format
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (a kvóta %2%-a elérve)"
