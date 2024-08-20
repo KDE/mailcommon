@@ -29,6 +29,9 @@ public:
 
 protected:
     [[nodiscard]] Akonadi::Collection parentCollection(const QModelIndex &index) const override;
+    [[nodiscard]] bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override;
+
+private:
     Akonadi::AccountActivitiesAbstract *mAccountActivities = nullptr;
 };
 }

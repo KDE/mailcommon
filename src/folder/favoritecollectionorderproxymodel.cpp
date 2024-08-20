@@ -35,4 +35,10 @@ void FavoriteCollectionOrderProxyModel::setAccountActivities(Akonadi::AccountAct
     invalidateFilter();
 }
 
+bool FavoriteCollectionOrderProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
+{
+    // TODO
+    return Akonadi::EntityOrderProxyModel::filterAcceptsColumn(sourceRow, sourceParent);
+}
+
 #include "moc_favoritecollectionorderproxymodel.cpp"
