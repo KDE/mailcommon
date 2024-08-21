@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-20 00:41+0000\n"
+"POT-Creation-Date: 2024-08-21 00:48+0000\n"
 "PO-Revision-Date: 2024-08-19 09:53+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -312,7 +312,7 @@ msgid ""
 msgstr "Filterkonto saknas. Välj ett konto att använda med filtret \"%1\"."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
-#: folder/folderrequester.cpp:73
+#: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
@@ -1749,18 +1749,18 @@ msgctxt "Move selected account down."
 msgid "Down"
 msgstr "Ner"
 
-#: folder/folderrequester.cpp:45
+#: folder/folderrequester.cpp:46
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Välj korg"
 
-#: folder/folderrequester.cpp:113
+#: folder/folderrequester.cpp:117
 #, kde-format
 msgid "Local Folders"
 msgstr "Lokala korgar"
 
-#: folder/folderrequester.cpp:123 folder/folderrequester.cpp:141
+#: folder/folderrequester.cpp:127 folder/folderrequester.cpp:145
 #, kde-format
 msgid "Please select a folder"
 msgstr "Välj en korg"
@@ -1889,12 +1889,12 @@ msgstr "Du kan börja skriva för att filtrera korglistan."
 msgid "Path: (%1)"
 msgstr "Sökväg: (%1)"
 
-#: folder/foldertreewidgetproxymodel.cpp:235
+#: folder/foldertreewidgetproxymodel.cpp:243
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (nerkopplad)"
 
-#: folder/foldertreewidgetproxymodel.cpp:239
+#: folder/foldertreewidgetproxymodel.cpp:247
 #, kde-format
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (%2 % tilldelning uppnådd)"

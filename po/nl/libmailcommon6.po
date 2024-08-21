@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-20 00:41+0000\n"
+"POT-Creation-Date: 2024-08-21 00:48+0000\n"
 "PO-Revision-Date: 2024-08-19 11:06+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -318,7 +318,7 @@ msgstr ""
 "\"%1\""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
-#: folder/folderrequester.cpp:73
+#: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
@@ -1776,18 +1776,18 @@ msgctxt "Move selected account down."
 msgid "Down"
 msgstr "Omlaag"
 
-#: folder/folderrequester.cpp:45
+#: folder/folderrequester.cpp:46
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Map selecteren"
 
-#: folder/folderrequester.cpp:113
+#: folder/folderrequester.cpp:117
 #, kde-format
 msgid "Local Folders"
 msgstr "Lokale mappen"
 
-#: folder/folderrequester.cpp:123 folder/folderrequester.cpp:141
+#: folder/folderrequester.cpp:127 folder/folderrequester.cpp:145
 #, kde-format
 msgid "Please select a folder"
 msgstr "Selecteer een map"
@@ -1916,12 +1916,12 @@ msgstr "U kunt met typen beginnen om de lijst van mappen te filteren."
 msgid "Path: (%1)"
 msgstr "Pad: (%1)"
 
-#: folder/foldertreewidgetproxymodel.cpp:235
+#: folder/foldertreewidgetproxymodel.cpp:243
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (offline)"
 
-#: folder/foldertreewidgetproxymodel.cpp:239
+#: folder/foldertreewidgetproxymodel.cpp:247
 #, kde-format
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (bereikt %2% quota)"

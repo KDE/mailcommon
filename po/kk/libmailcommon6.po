@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-20 00:41+0000\n"
+"POT-Creation-Date: 2024-08-21 00:48+0000\n"
 "PO-Revision-Date: 2013-11-01 04:30+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -334,7 +334,7 @@ msgstr ""
 "тіркелгіні таңдаңыз"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
-#: folder/folderrequester.cpp:73
+#: folder/folderrequester.cpp:74
 #, fuzzy, kde-format
 #| msgid "Select Folder"
 msgctxt "@title:window"
@@ -1875,19 +1875,19 @@ msgctxt "Move selected account down."
 msgid "Down"
 msgstr "Төмен"
 
-#: folder/folderrequester.cpp:45
+#: folder/folderrequester.cpp:46
 #, fuzzy, kde-format
 #| msgid "Select Folder"
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Қапшықты таңдау"
 
-#: folder/folderrequester.cpp:113
+#: folder/folderrequester.cpp:117
 #, kde-format
 msgid "Local Folders"
 msgstr "Жергілікті қапшықтар"
 
-#: folder/folderrequester.cpp:123 folder/folderrequester.cpp:141
+#: folder/folderrequester.cpp:127 folder/folderrequester.cpp:145
 #, kde-format
 msgid "Please select a folder"
 msgstr "Қапшықты таңдаңыз"
@@ -2024,12 +2024,12 @@ msgstr "Алғашқы әріптері бойынша қапшықтар тіз
 msgid "Path: (%1)"
 msgstr "Жолы: (%1)"
 
-#: folder/foldertreewidgetproxymodel.cpp:235
+#: folder/foldertreewidgetproxymodel.cpp:243
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (Желіден тыс)"
 
-#: folder/foldertreewidgetproxymodel.cpp:239
+#: folder/foldertreewidgetproxymodel.cpp:247
 #, kde-format
 msgid "%1 (Reached %2% quota)"
 msgstr ""

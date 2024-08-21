@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-20 00:41+0000\n"
-"PO-Revision-Date: 2024-08-14 11:29+0200\n"
+"POT-Creation-Date: 2024-08-21 00:48+0000\n"
+"PO-Revision-Date: 2024-08-20 08:52+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -27,16 +27,13 @@ msgid "Expiry"
 msgstr "Vyprší"
 
 #: collectionpage/collectionexpirywidget.cpp:38
-#, fuzzy, kde-format
-#| msgctxt "Expire messages after %1"
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] " den"
-msgstr[1] " dny"
-msgstr[2] " dnů"
+msgstr[0] "%v den"
+msgstr[1] "%v dny"
+msgstr[2] "%v dnů"
 
 #: collectionpage/collectionexpirywidget.cpp:40
 #: collectionpage/collectionexpirywidget.cpp:46
@@ -309,7 +306,7 @@ msgid ""
 msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
-#: folder/folderrequester.cpp:73
+#: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
@@ -1711,18 +1708,18 @@ msgctxt "Move selected account down."
 msgid "Down"
 msgstr "Dolů"
 
-#: folder/folderrequester.cpp:45
+#: folder/folderrequester.cpp:46
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Vyberte složku"
 
-#: folder/folderrequester.cpp:113
+#: folder/folderrequester.cpp:117
 #, kde-format
 msgid "Local Folders"
 msgstr "Lokální složky"
 
-#: folder/folderrequester.cpp:123 folder/folderrequester.cpp:141
+#: folder/folderrequester.cpp:127 folder/folderrequester.cpp:145
 #, kde-format
 msgid "Please select a folder"
 msgstr "Prosím vyberte složku"
@@ -1734,8 +1731,7 @@ msgid "&New Subfolder…"
 msgstr "&Nová podřízená složka…"
 
 #: folder/folderselectiondialog.cpp:66
-#, fuzzy, kde-format
-#| msgid "Create a new subfolder under the currently selected folder"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "Vytvořit podsložku ve vybrané složce"
@@ -1852,12 +1848,12 @@ msgstr "Postupným psaním můžete filtrovat seznam složek."
 msgid "Path: (%1)"
 msgstr "Cesta: (%1)"
 
-#: folder/foldertreewidgetproxymodel.cpp:235
+#: folder/foldertreewidgetproxymodel.cpp:243
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (odpojen)"
 
-#: folder/foldertreewidgetproxymodel.cpp:239
+#: folder/foldertreewidgetproxymodel.cpp:247
 #, kde-format
 msgid "%1 (Reached %2% quota)"
 msgstr ""
@@ -2474,16 +2470,13 @@ msgid " kB"
 msgstr " kB"
 
 #: search/widgethandler/numericrulewidgethandler.cpp:159
-#, fuzzy, kde-format
-#| msgctxt "Unit suffix where units are days."
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Unit suffix where units are days."
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] " den"
-msgstr[1] " dny"
-msgstr[2] " dnů"
+msgstr[0] "%v den"
+msgstr[1] "%v dny"
+msgstr[2] "%v dnů"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:28
 msgctxt "message status"

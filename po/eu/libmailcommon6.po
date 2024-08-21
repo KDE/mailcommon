@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-20 00:41+0000\n"
+"POT-Creation-Date: 2024-08-21 00:48+0000\n"
 "PO-Revision-Date: 2024-08-19 10:33+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -321,7 +321,7 @@ msgstr ""
 "beharreko kontua"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
-#: folder/folderrequester.cpp:73
+#: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
@@ -1774,18 +1774,18 @@ msgctxt "Move selected account down."
 msgid "Down"
 msgstr "Behera"
 
-#: folder/folderrequester.cpp:45
+#: folder/folderrequester.cpp:46
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Hautatu karpeta"
 
-#: folder/folderrequester.cpp:113
+#: folder/folderrequester.cpp:117
 #, kde-format
 msgid "Local Folders"
 msgstr "Karpetak lokalak"
 
-#: folder/folderrequester.cpp:123 folder/folderrequester.cpp:141
+#: folder/folderrequester.cpp:127 folder/folderrequester.cpp:145
 #, kde-format
 msgid "Please select a folder"
 msgstr "Mesedez, hautatu karpeta bat"
@@ -1914,12 +1914,12 @@ msgstr "Karpeten zerrenda iragazteko tekleatzen has zaitezke."
 msgid "Path: (%1)"
 msgstr "Bide-izena: (%1)"
 
-#: folder/foldertreewidgetproxymodel.cpp:235
+#: folder/foldertreewidgetproxymodel.cpp:243
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (lerroz kanpo)"
 
-#: folder/foldertreewidgetproxymodel.cpp:239
+#: folder/foldertreewidgetproxymodel.cpp:247
 #, kde-format
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (Kuotaren %%2(e)ra iritsi da)"

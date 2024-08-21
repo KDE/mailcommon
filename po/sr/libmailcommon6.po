@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-20 00:41+0000\n"
+"POT-Creation-Date: 2024-08-21 00:48+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -343,7 +343,7 @@ msgstr "Недостаје налог филтера. Изаберите жељ�
 
 # >> @title:window
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
-#: folder/folderrequester.cpp:73
+#: folder/folderrequester.cpp:74
 #, fuzzy, kde-format
 #| msgid "Select Folder"
 msgctxt "@title:window"
@@ -1894,19 +1894,19 @@ msgid "Down"
 msgstr "Доле"
 
 # >> @title:window
-#: folder/folderrequester.cpp:45
+#: folder/folderrequester.cpp:46
 #, fuzzy, kde-format
 #| msgid "Select Folder"
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Избор фасцикле"
 
-#: folder/folderrequester.cpp:113
+#: folder/folderrequester.cpp:117
 #, kde-format
 msgid "Local Folders"
 msgstr "Локалне фасцикле"
 
-#: folder/folderrequester.cpp:123 folder/folderrequester.cpp:141
+#: folder/folderrequester.cpp:127 folder/folderrequester.cpp:145
 #, kde-format
 msgid "Please select a folder"
 msgstr "Изаберите фасциклу"
@@ -2043,12 +2043,12 @@ msgstr "Почните са куцањем ради филтрирања лис�
 msgid "Path: (%1)"
 msgstr "Путања: (%1)"
 
-#: folder/foldertreewidgetproxymodel.cpp:235
+#: folder/foldertreewidgetproxymodel.cpp:243
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (ван везе)"
 
-#: folder/foldertreewidgetproxymodel.cpp:239
+#: folder/foldertreewidgetproxymodel.cpp:247
 #, kde-format
 msgid "%1 (Reached %2% quota)"
 msgstr ""

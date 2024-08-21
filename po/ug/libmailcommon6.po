@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-20 00:41+0000\n"
+"POT-Creation-Date: 2024-08-21 00:48+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -299,7 +299,7 @@ msgid ""
 msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
-#: folder/folderrequester.cpp:73
+#: folder/folderrequester.cpp:74
 #, fuzzy, kde-format
 #| msgid "Select Folder"
 msgctxt "@title:window"
@@ -1729,19 +1729,19 @@ msgctxt "Move selected account down."
 msgid "Down"
 msgstr "ئاستى"
 
-#: folder/folderrequester.cpp:45
+#: folder/folderrequester.cpp:46
 #, fuzzy, kde-format
 #| msgid "Select Folder"
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "قىسقۇچ تاللا"
 
-#: folder/folderrequester.cpp:113
+#: folder/folderrequester.cpp:117
 #, kde-format
 msgid "Local Folders"
 msgstr "يەرلىك قىسقۇچلار"
 
-#: folder/folderrequester.cpp:123 folder/folderrequester.cpp:141
+#: folder/folderrequester.cpp:127 folder/folderrequester.cpp:145
 #, kde-format
 msgid "Please select a folder"
 msgstr "قىسقۇچتىن بىرنى تاللاڭ."
@@ -1875,12 +1875,12 @@ msgstr ""
 msgid "Path: (%1)"
 msgstr ""
 
-#: folder/foldertreewidgetproxymodel.cpp:235
+#: folder/foldertreewidgetproxymodel.cpp:243
 #, kde-format
 msgid "%1 (Offline)"
 msgstr ""
 
-#: folder/foldertreewidgetproxymodel.cpp:239
+#: folder/foldertreewidgetproxymodel.cpp:247
 #, kde-format
 msgid "%1 (Reached %2% quota)"
 msgstr ""

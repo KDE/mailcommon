@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-20 00:41+0000\n"
+"POT-Creation-Date: 2024-08-21 00:48+0000\n"
 "PO-Revision-Date: 2019-11-18 12:53+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -340,7 +340,7 @@ msgid ""
 msgstr "Chýba účet filtra. Prosím, vybrať účet pre použitie s filtrom \"%1\""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
-#: folder/folderrequester.cpp:73
+#: folder/folderrequester.cpp:74
 #, fuzzy, kde-format
 #| msgid "Select Folder"
 msgctxt "@title:window"
@@ -1868,19 +1868,19 @@ msgctxt "Move selected account down."
 msgid "Down"
 msgstr "Dolu"
 
-#: folder/folderrequester.cpp:45
+#: folder/folderrequester.cpp:46
 #, fuzzy, kde-format
 #| msgid "Select Folder"
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Vybrať priečinok"
 
-#: folder/folderrequester.cpp:113
+#: folder/folderrequester.cpp:117
 #, kde-format
 msgid "Local Folders"
 msgstr "Miestne priečinky"
 
-#: folder/folderrequester.cpp:123 folder/folderrequester.cpp:141
+#: folder/folderrequester.cpp:127 folder/folderrequester.cpp:145
 #, kde-format
 msgid "Please select a folder"
 msgstr "Prosím vyberte priečinok"
@@ -2018,12 +2018,12 @@ msgstr "Môžete začať písať pre filtrovanie zoznamu priečinkov."
 msgid "Path: (%1)"
 msgstr "Cesta: (%1)"
 
-#: folder/foldertreewidgetproxymodel.cpp:235
+#: folder/foldertreewidgetproxymodel.cpp:243
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (Nepripojený)"
 
-#: folder/foldertreewidgetproxymodel.cpp:239
+#: folder/foldertreewidgetproxymodel.cpp:247
 #, kde-format
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (Dosiahol %2% kvótu)"
