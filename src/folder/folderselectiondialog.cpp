@@ -224,7 +224,7 @@ QAbstractItemView::SelectionMode FolderSelectionDialog::selectionMode() const
 
 Akonadi::Collection FolderSelectionDialog::selectedCollection() const
 {
-    qDebug() << " d->folderTreeWidget->selectedCollection()" << d->folderTreeWidget->selectedCollection();
+    // qDebug() << " d->folderTreeWidget->selectedCollection()" << d->folderTreeWidget->selectedCollection();
     return d->folderTreeWidget->selectedCollection();
 }
 
@@ -235,7 +235,7 @@ void FolderSelectionDialog::setSelectedCollection(const Akonadi::Collection &col
 
 Akonadi::Collection::List FolderSelectionDialog::selectedCollections() const
 {
-    qDebug() << " selectedCollections " << d->folderTreeWidget->selectedCollections();
+    // qDebug() << " selectedCollections " << d->folderTreeWidget->selectedCollections();
     return d->folderTreeWidget->selectedCollections();
 }
 
