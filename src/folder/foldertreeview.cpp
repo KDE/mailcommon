@@ -201,7 +201,7 @@ void FolderTreeView::slotHeaderContextMenuChangeSortingPolicy(bool)
     QVariant data = act->data();
 
     bool ok;
-    int policy = data.toInt(&ok);
+    const int policy = data.toInt(&ok);
     if (!ok) {
         return;
     }
@@ -248,7 +248,7 @@ void FolderTreeView::slotHeaderContextMenuChangeToolTipDisplayPolicy(bool)
         return;
     }
 
-    QVariant data = act->data();
+    const QVariant data = act->data();
 
     bool ok;
     const int id = data.toInt(&ok);
@@ -265,7 +265,7 @@ void FolderTreeView::slotHeaderContextMenuChangeHeader(bool)
         return;
     }
 
-    QVariant data = act->data();
+    const QVariant data = act->data();
 
     bool ok;
     const int id = data.toInt(&ok);
@@ -291,7 +291,7 @@ void FolderTreeView::slotHeaderContextMenuChangeIconSize(bool)
         return;
     }
 
-    QVariant data = act->data();
+    const QVariant data = act->data();
 
     bool ok;
     const int size = data.toInt(&ok);
