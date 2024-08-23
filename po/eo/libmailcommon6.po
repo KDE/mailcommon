@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-21 00:48+0000\n"
-"PO-Revision-Date: 2024-08-02 22:29+0200\n"
+"PO-Revision-Date: 2024-08-22 17:49+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -25,15 +25,12 @@ msgid "Expiry"
 msgstr "Eksvalidiĝo"
 
 #: collectionpage/collectionexpirywidget.cpp:38
-#, fuzzy, kde-format
-#| msgctxt "Expire messages after %1"
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] " tago"
-msgstr[1] " tagoj"
+msgstr[0] "%v tago"
+msgstr[1] "%v tagoj"
 
 #: collectionpage/collectionexpirywidget.cpp:40
 #: collectionpage/collectionexpirywidget.cpp:46
@@ -1790,8 +1787,7 @@ msgid "&New Subfolder…"
 msgstr "&Nova Subdosierujo…"
 
 #: folder/folderselectiondialog.cpp:66
-#, fuzzy, kde-format
-#| msgid "Create a new subfolder under the currently selected folder"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "Krei novan subdosierujon sub la nuntempe elektita dosierujo"
@@ -2528,15 +2524,12 @@ msgid " kB"
 msgstr "kB"
 
 #: search/widgethandler/numericrulewidgethandler.cpp:159
-#, fuzzy, kde-format
-#| msgctxt "Unit suffix where units are days."
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Unit suffix where units are days."
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] " tago"
-msgstr[1] " tagoj"
+msgstr[0] "%v tago"
+msgstr[1] "%v tagoj"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:28
 msgctxt "message status"
