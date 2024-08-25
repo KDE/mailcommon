@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-21 00:48+0000\n"
-"PO-Revision-Date: 2024-08-03 12:37+0100\n"
+"PO-Revision-Date: 2024-08-24 12:02+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
 "Language: en_GB\n"
@@ -26,15 +26,12 @@ msgid "Expiry"
 msgstr "Expiry"
 
 #: collectionpage/collectionexpirywidget.cpp:38
-#, fuzzy, kde-format
-#| msgctxt "Expire messages after %1"
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] " day"
-msgstr[1] " days"
+msgstr[0] "%v day"
+msgstr[1] "%v days"
 
 #: collectionpage/collectionexpirywidget.cpp:40
 #: collectionpage/collectionexpirywidget.cpp:46
@@ -1786,8 +1783,7 @@ msgid "&New Subfolder…"
 msgstr "&New Subfolder…"
 
 #: folder/folderselectiondialog.cpp:66
-#, fuzzy, kde-format
-#| msgid "Create a new subfolder under the currently selected folder"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "Create a new subfolder under the currently selected folder"
@@ -2521,15 +2517,12 @@ msgid " kB"
 msgstr " kB"
 
 #: search/widgethandler/numericrulewidgethandler.cpp:159
-#, fuzzy, kde-format
-#| msgctxt "Unit suffix where units are days."
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Unit suffix where units are days."
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] " day"
-msgstr[1] " days"
+msgstr[0] "%v day"
+msgstr[1] "%v days"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:28
 msgctxt "message status"
