@@ -861,14 +861,12 @@ msgstr ""
 
 #: filter/filteractions/filteractionwidget.cpp:69
 #, fuzzy, kde-format
-#| msgid "Please select a folder"
 msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Válljes máhpa"
 
 #: filter/filteractions/filteractionwithurl.cpp:22
 #, fuzzy, kde-format
-#| msgid "Help"
 msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Veahkki"
@@ -975,7 +973,6 @@ msgstr ""
 
 #: filter/filterselectiondialog.cpp:29
 #, fuzzy, kde-format
-#| msgid "Select Folder"
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Vállje máhpa"
@@ -1012,9 +1009,6 @@ msgstr "Badjelgeahča"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
 #, fuzzy, kde-format
-#| msgid ""
-#| "The following filters have not been saved because they were invalid (e.g. "
-#| "containing no actions or no search rules)."
 msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
@@ -1041,13 +1035,11 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:90
 #, fuzzy, kde-format
-#| msgid "Import..."
 msgid "Import…"
 msgstr "Sisafievrrit …"
 
 #: filter/kmfilterdialog.cpp:92
 #, fuzzy, kde-format
-#| msgid "Export..."
 msgid "Export…"
 msgstr "Olggosfievrrit …"
 
@@ -1058,7 +1050,6 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
 #, fuzzy, kde-format
-#| msgid "Available Filters"
 msgctxt "@action"
 msgid "KMail filters"
 msgstr "Filterčoakkáldat"
@@ -1083,14 +1074,12 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:114
 #, fuzzy, kde-format
-#| msgid "Available Filters"
 msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Filterčoakkáldat"
 
 #: filter/kmfilterdialog.cpp:118
 #, fuzzy, kde-format
-#| msgid "Available Filters"
 msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Filterčoakkáldat"
@@ -1109,7 +1098,6 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:132
 #, fuzzy, kde-format
-#| msgid "Available Filters"
 msgctxt "@action"
 msgid "Gmail filters"
 msgstr "Filterčoakkáldat"
@@ -1407,21 +1395,18 @@ msgstr "Ođđa"
 
 #: filter/kmfilterlistbox.cpp:141
 #, fuzzy, kde-format
-#| msgid "Copy"
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Máŋge"
 
 #: filter/kmfilterlistbox.cpp:142
 #, fuzzy, kde-format
-#| msgid "Delete"
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Sihko"
 
 #: filter/kmfilterlistbox.cpp:143
 #, fuzzy, kde-format
-#| msgid "Rename"
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Rievdat nama"
@@ -1544,7 +1529,6 @@ msgstr ""
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
 #, fuzzy, kde-format
-#| msgid "Play"
 msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Čuojat"
@@ -1652,7 +1636,6 @@ msgstr ""
 
 #: folder/folderrequester.cpp:45
 #, fuzzy, kde-format
-#| msgid "Select Folder"
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Vállje máhpa"
@@ -1669,7 +1652,6 @@ msgstr "Válljes máhpa"
 
 #: folder/folderselectiondialog.cpp:64
 #, fuzzy, kde-format
-#| msgid "&New Subfolder..."
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "&Ođđa vuollemáhppa …"
@@ -1681,7 +1663,6 @@ msgstr ""
 
 #: folder/folderselectiondialog.cpp:126
 #, fuzzy, kde-format
-#| msgid "&New Subfolder..."
 msgid "&New Subfolder…"
 msgstr "&Ođđa vuollemáhppa …"
 
@@ -1764,7 +1745,6 @@ msgstr "Mana boahtte logakeahtes reivii"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
 #, fuzzy, kde-format
-#| msgid "Go To"
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Mana dása"
@@ -1904,8 +1884,6 @@ msgstr "Filtii váldit eret reivviid %1-máhpas."
 
 #: job/expirejob.cpp:157
 #, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Váldimin eret ovtta boares reivve %2 máhpas …"
@@ -1918,8 +1896,6 @@ msgstr "Ii sáhte boarásmahttit reivviid %1 máhpas: ulbmilmáhppa %2 ii gávdn
 
 #: job/expirejob.cpp:180
 #, fuzzy, kde-format
-#| msgid "Moving 1 old message from folder %2 to folder %3..."
-#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Sirdimin ovtta boares reivve %2 máhpas %3 máhppii …"
@@ -2290,7 +2266,6 @@ msgstr ""
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
 #, fuzzy, kde-format
-#| msgid "Encrypt"
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "Krypteren"
@@ -2500,7 +2475,6 @@ msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
 #, fuzzy, kde-format
-#| msgid "Rename"
 msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "Rievdat nama"
@@ -2801,14 +2775,12 @@ msgstr ""
 
 #: tag/tagwidget.cpp:134
 #, fuzzy, kde-format
-#| msgid "Message tag &icon:"
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Reivegilkora &govaš:"
 
 #: tag/tagwidget.cpp:145
 #, fuzzy, kde-format
-#| msgid "Shortcut:"
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "Njuolggobálggis:"
@@ -2836,7 +2808,6 @@ msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:123
 #, fuzzy, kde-format
-#| msgid "Icon Size"
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Govašsturrodat"

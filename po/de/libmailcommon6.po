@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Johannes Obermayr <johannesobermayr@gmx.de>
+# SPDX-FileCopyrightText: 2023, 2024 Johannes Obermayr <johannesobermayr@gmx.de>
 # Frank Schütte <F.Schuette@t-online.de>, 2002, 2003, 2004, 2005.
 # Thomas Diehl <thd@kde.org>, 2002, 2003, 2004, 2005.
 # Stephan Johach <hunsum@gmx.de>, 2003, 2004, 2005, 2006, 2007.
@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-04 00:39+0000\n"
-"PO-Revision-Date: 2023-12-21 14:38+0100\n"
+"PO-Revision-Date: 2024-08-22 23:01+0200\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -52,8 +52,7 @@ msgid "Never"
 msgstr "Niemals"
 
 #: collectionpage/collectionexpirywidget.cpp:66
-#, fuzzy, kde-format
-#| msgid "Save Settings and Expire Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Einstellungen speichern und jetzt ablaufen"
@@ -241,8 +240,7 @@ msgid "&Use custom message templates in this folder"
 msgstr "Für diesen &Ordner eigene Nachrichtenvorlagen benutzen"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
-#, fuzzy, kde-format
-#| msgid "&Copy Global Templates"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "Globale Vorlagen &kopieren"
@@ -326,15 +324,13 @@ msgid "Select Folder"
 msgstr "Ordner auswählen"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
-#, fuzzy, kde-format
-#| msgid "Folder path was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
-msgstr "Ordnerpfad war „%1“."
+msgstr "Der Ordnerpfad war „%1“."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
-#, fuzzy, kde-format
-#| msgid "The following folders can be used for this filter:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Die folgenden Ordner wurden zur Verwendung mit diesem Filter gefunden:"
@@ -374,11 +370,10 @@ msgid "Select sound"
 msgstr "Klang auswählen"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
-#, fuzzy, kde-format
-#| msgid "Sound file was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
-msgstr "Klangdatei war „%1“."
+msgstr "Die Klangdatei war „%1“."
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
@@ -394,11 +389,10 @@ msgid "Select Tag"
 msgstr "Stichwort auswählen"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
-#, fuzzy, kde-format
-#| msgid "Tag was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
-msgstr "Stichwort war „%1“."
+msgstr "Das Stichwort war „%1“."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:47
 #, kde-format
@@ -407,10 +401,9 @@ msgstr ""
 "Das Filterstichwort fehlt. Bitte wählen Sie einen Ordner für den Filter „%1“."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgid "Add Tag…"
-msgstr "Neue Markierung hinzufügen"
+msgstr "Markierung hinzufügen …"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -469,8 +462,7 @@ msgid "Add Header"
 msgstr "Vorspann hinzufügen"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
-#, fuzzy, kde-format
-#| msgid "With value:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Mit Wert:"
@@ -529,15 +521,13 @@ msgid "KMail Filter"
 msgstr "KMail-Filter"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
-#, fuzzy, kde-format
-#| msgid "with category"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
 msgstr "mit der Kategorie"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
-#, fuzzy, kde-format
-#| msgid "in address book"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "im Adressbuch"
@@ -658,8 +648,7 @@ msgid "Forward To"
 msgstr "Weiterleiten an"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, fuzzy, kde-format
-#| msgid "The addressee to whom the message will be forwarded."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Der Empfänger, zu dem die Nachricht weitergeleitet wird."
@@ -678,8 +667,7 @@ msgid "Default Template"
 msgstr "Standardvorlage"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, fuzzy, kde-format
-#| msgid "The template used when forwarding"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Die Nachrichtenvorlage für Weiterleitungen"
@@ -774,15 +762,13 @@ msgid "Search string is empty."
 msgstr "Der Suchbegriff ist leer."
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
-#, fuzzy, kde-format
-#| msgid "Replace:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Ersetzen:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
-#, fuzzy, kde-format
-#| msgid "With:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
 msgstr "Durch:"
@@ -946,15 +932,13 @@ msgid "Status not defined."
 msgstr "Status nicht definiert."
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, fuzzy, kde-format
-#| msgid "Please select an action."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Bitte wählen Sie eine Aktion aus."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, fuzzy, kde-format
-#| msgid "Help"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Hilfe"
@@ -975,14 +959,13 @@ msgstr "Umwandlung in Sieve-Skript"
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save…"
-msgstr ""
+msgstr "Speichern …"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Shared"
+#, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr "Freigegeben"
+msgstr "Freigeben …"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -1065,15 +1048,13 @@ msgid "Export Filters"
 msgstr "Filter exportieren"
 
 #: filter/filterselectiondialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Alles auswählen"
 
 #: filter/filterselectiondialog.cpp:30
-#, fuzzy, kde-format
-#| msgid "Unselect All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Auswahl aufheben"
@@ -1103,16 +1084,13 @@ msgid "Discard"
 msgstr "Verwerfen"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
-#, fuzzy, kde-format
-#| msgid ""
-#| "The following filters are invalid (e.g. containing no actions or no "
-#| "search rules). Discard or edit invalid filters?"
+#, kde-format
 msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
 msgstr ""
-"Folgende Filter sind ungültig (sie enthalten keine Aktion oder keine "
+"Die folgenden Filter sind ungültig (sie enthalten keine Aktion oder keine "
 "Suchregeln). Möchten Sie diese verwerfen oder bearbeiten?"
 
 #: filter/kmfilteraccountlist.cpp:24
@@ -1132,89 +1110,76 @@ msgid "Filter Rules"
 msgstr "Filterregeln"
 
 #: filter/kmfilterdialog.cpp:90
-#, fuzzy, kde-format
-#| msgid "&Import"
+#, kde-format
 msgid "Import…"
-msgstr "&Importieren"
+msgstr "Importieren …"
 
 #: filter/kmfilterdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "Export..."
+#, kde-format
 msgid "Export…"
-msgstr "Exportieren ..."
+msgstr "Exportieren …"
 
 #: filter/kmfilterdialog.cpp:94
-#, fuzzy, kde-format
-#| msgid "Convert to..."
+#, kde-format
 msgid "Convert to…"
-msgstr "Umwandeln in ..."
+msgstr "Umwandeln in …"
 
 #: filter/kmfilterdialog.cpp:98
-#, fuzzy, kde-format
-#| msgid "KMail filters"
+#, kde-format
 msgctxt "@action"
 msgid "KMail filters"
 msgstr "KMail-Filter"
 
 #: filter/kmfilterdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Thunderbird-Filter"
 
 #: filter/kmfilterdialog.cpp:106
-#, fuzzy, kde-format
-#| msgid "Evolution filters"
+#, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Evolution-Filter"
 
 #: filter/kmfilterdialog.cpp:110
-#, fuzzy, kde-format
-#| msgid "Sylpheed filters"
+#, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Sylpheed-Filter"
 
 #: filter/kmfilterdialog.cpp:114
-#, fuzzy, kde-format
-#| msgid "Procmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Procmail-Filter"
 
 #: filter/kmfilterdialog.cpp:118
-#, fuzzy, kde-format
-#| msgid "Balsa filters"
+#, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Balsa-Filter"
 
 #: filter/kmfilterdialog.cpp:122
-#, fuzzy, kde-format
-#| msgid "Claws Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Claws-Mail-Filter"
 
 #: filter/kmfilterdialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "Icedove Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Icedove-Mailfilter"
 
 #: filter/kmfilterdialog.cpp:132
-#, fuzzy, kde-format
-#| msgid "Gmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
 msgstr "Gmail-Filter"
 
 #: filter/kmfilterdialog.cpp:140
-#, fuzzy, kde-format
-#| msgid "Sieve script"
+#, kde-format
 msgctxt "@action"
 msgid "Sieve script"
 msgstr "Sieve-Skript"
@@ -1237,8 +1202,7 @@ msgid "Advanced"
 msgstr "Erweitert"
 
 #: filter/kmfilterdialog.cpp:182
-#, fuzzy, kde-format
-#| msgid "Filter actions:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Filteraktionen:"
@@ -1348,15 +1312,13 @@ msgid "Icon for this filter:"
 msgstr "Symbol für diesen Filter:"
 
 #: filter/kmfilterdialog.cpp:287
-#, fuzzy, kde-format
-#| msgid "Run selected filter(s) on: "
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
-msgstr "Gewählte Filter anwenden auf: "
+msgstr "Gewählte(n) Filter anwenden auf: "
 
 #: filter/kmfilterdialog.cpp:293
-#, fuzzy, kde-format
-#| msgid "Run Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Jetzt anwenden"
@@ -1541,23 +1503,19 @@ msgid "New"
 msgstr "Neu"
 
 #: filter/kmfilterlistbox.cpp:141
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Kopieren"
 
 #: filter/kmfilterlistbox.cpp:142
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Delete"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Löschen"
 
 #: filter/kmfilterlistbox.cpp:143
-#, fuzzy, kde-format
-#| msgid "Rename"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Umbenennen"
@@ -1692,8 +1650,7 @@ msgid "Any action defined."
 msgstr "Jede definierte Aktion."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Wiedergabe"
@@ -1705,8 +1662,7 @@ msgid "Select Sound File"
 msgstr "Klangdatei auswählen"
 
 #: filter/soundtestwidget.cpp:107
-#, fuzzy, kde-format
-#| msgid "Pause"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
 msgstr "Pause"
@@ -1801,8 +1757,7 @@ msgid "Down"
 msgstr "Nach unten"
 
 #: folder/folderrequester.cpp:45
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Ordner auswählen"
@@ -1818,11 +1773,10 @@ msgid "Please select a folder"
 msgstr "Bitte wählen Sie einen Ordner aus."
 
 #: folder/folderselectiondialog.cpp:64
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
-msgstr "&Neuer Unterordner ..."
+msgstr "&Neuer Unterordner …"
 
 #: folder/folderselectiondialog.cpp:66
 #, kde-format
@@ -1831,10 +1785,9 @@ msgstr ""
 "Erstellt einen neuen Unterordner unterhalb des gerade ausgewählten Ordners"
 
 #: folder/folderselectiondialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgid "&New Subfolder…"
-msgstr "&Neuer Unterordner ..."
+msgstr "&Neuer Unterordner …"
 
 #: folder/folderselectiondialog.cpp:179
 #, kde-format
@@ -1914,22 +1867,19 @@ msgid "Go to Next Unread Message"
 msgstr "Zur nächsten ungelesenen Nachricht gehen"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, fuzzy, kde-format
-#| msgid "Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Dorthin gehen"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
-#, fuzzy, kde-format
-#| msgid "Do Not Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Nicht dorthin gehen"
 
 #: folder/foldertreewidget.cpp:78
-#, fuzzy, kde-format
-#| msgid "You can start typing to filter the list of folders."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
 msgstr "Geben Sie hier Text ein, um die Ordnerliste zu filtern."
@@ -2061,13 +2011,11 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Das Löschen der alten Nachrichten in Ordner %1 ist fehlgeschlagen."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "1 alte Nachricht wird aus Ordner %2 gelöscht ..."
-msgstr[1] "%1 alte Nachrichten werden aus Ordner %2 gelöscht ..."
+msgstr[0] "1 alte Nachricht wird aus Ordner %2 gelöscht …"
+msgstr[1] "%1 alte Nachrichten werden aus Ordner %2 gelöscht …"
 
 #: job/expirejob.cpp:164
 #, kde-format
@@ -2077,14 +2025,11 @@ msgstr ""
 "Ordner %2 wurde nicht gefunden."
 
 #: job/expirejob.cpp:180
-#, fuzzy, kde-format
-#| msgid "Moving 1 old message from folder %2 to folder %3..."
-#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] "1 alte Nachricht wird aus Ordner %2 nach Ordner %3 verschoben ..."
-msgstr[1] ""
-"%1 alte Nachrichten werden aus Ordner %2 nach Ordner %3 verschoben ..."
+msgstr[0] "1 alte Nachricht wird aus Ordner %2 in Ordner %3 verschoben …"
+msgstr[1] "%1 alte Nachrichten werden aus Ordner %2 in Ordner %3 verschoben …"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
@@ -2212,15 +2157,13 @@ msgid "Encryption"
 msgstr "Verschlüsselung"
 
 #: search/searchpatternedit.cpp:144
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Wählen Sie ein Kriterium oder geben Sie ein eigenes Kriterium ein"
 
 #: search/searchpatternedit.cpp:145
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Wählen Sie ein Kriterium oder geben Sie ein eigenes Kriterium ein"
@@ -2461,8 +2404,7 @@ msgid "is not"
 msgstr "ist nicht"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "encrypted"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "Verschlüsselt"
@@ -2648,15 +2590,13 @@ msgid "Has Attachment"
 msgstr "Hat einen Anhang"
 
 #: snippets/snippetattachmentwidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Click on button for selecting attachment file"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr "Klicken Sie zur Auswahl eines Dateianhangs auf den Knopf"
 
 #: snippets/snippetattachmentwidget.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Attachments"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Anhänge auswählen"
@@ -2664,7 +2604,7 @@ msgstr "Anhänge auswählen"
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2673,15 +2613,13 @@ msgid "Customize File Name Attachment"
 msgstr "Dateinamen des Anhangs anpassen"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Filename:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "Dateiname:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, fuzzy, kde-format
-#| msgid "Insert Variables"
+#, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Variablen einfügen"
@@ -2765,53 +2703,43 @@ msgid "Snippet %1"
 msgstr "Textbaustein %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
-msgstr "Textbaustein hinzufügen"
+msgstr "Textbaustein hinzufügen …"
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Edit Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
-msgstr "Textbaustein bearbeiten"
+msgstr "Textbaustein bearbeiten …"
 
 #: snippets/snippetsmanager.cpp:562
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Textbaustein entfernen"
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Group"
+#, kde-format
 msgctxt "@action"
 msgid "Add Group…"
-msgstr "Gruppe hinzufügen"
+msgstr "Gruppe hinzufügen …"
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
+#, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
-msgstr "Gruppe umbenennen ..."
+msgstr "Gruppe umbenennen …"
 
 #: snippets/snippetsmanager.cpp:569
-#, fuzzy, kde-format
-#| msgid "Remove Group"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Group"
 msgstr "Gruppe entfernen"
 
 #: snippets/snippetsmanager.cpp:572
-#, fuzzy, kde-format
-#| msgid "Insert Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "Textbaustein einfügen"
@@ -2827,8 +2755,7 @@ msgid "Update snippet"
 msgstr "Textbaustein aktualisieren"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
-#, fuzzy, kde-format
-#| msgid "Update"
+#, kde-format
 msgctxt "@action:button"
 msgid "Update"
 msgstr "Aktualisieren"
@@ -2845,8 +2772,7 @@ msgid "Enter Values for Variables"
 msgstr "Werte für Variablen eingeben"
 
 #: snippets/snippetvariabledialog.cpp:40
-#, fuzzy, kde-format
-#| msgid "Enter the replacement values for '%1':"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Geben Sie die Ersatzwerte für „%1“ an:"
@@ -3002,15 +2928,13 @@ msgid "&Italics"
 msgstr "&Kursiv"
 
 #: tag/tagwidget.cpp:134
-#, fuzzy, kde-format
-#| msgid "Message tag &icon:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Markierungs-S&ymbol:"
 
 #: tag/tagwidget.cpp:145
-#, fuzzy, kde-format
-#| msgid "Shortc&ut:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "&Kurzbefehl:"
@@ -3031,24 +2955,21 @@ msgid "Mode"
 msgstr "Modus"
 
 #: widgets/favoritecollectionwidget.cpp:113
-#, fuzzy, kde-format
-#| msgid "List Mode"
+#, kde-format
 msgctxt "@action"
 msgid "List Mode"
 msgstr "Listenmodus"
 
 #: widgets/favoritecollectionwidget.cpp:123
-#, fuzzy, kde-format
-#| msgid "Icon Mode"
+#, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Symbolmodus"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, fuzzy, kde-format
-#| msgid "Drop your favorite folders here..."
+#, kde-format
 msgid "Drop your favorite folders here…"
-msgstr "Bevorzugte Ordner hier hineinziehen ..."
+msgstr "Bevorzugte Ordner hier hineinziehen …"
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format
@@ -3072,8 +2993,7 @@ msgid "Redirect Message"
 msgstr "Nachricht umleiten"
 
 #: widgets/redirectdialog.cpp:123
-#, fuzzy, kde-format
-#| msgid "Select the recipient addresses to redirect to:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr "Wählen Sie die Zieladressen für die Umleitung:"
@@ -3089,15 +3009,13 @@ msgid "Transport:"
 msgstr "Versandart:"
 
 #: widgets/redirectdialog.cpp:158
-#, fuzzy, kde-format
-#| msgid "&Send Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "&Jetzt senden"
 
 #: widgets/redirectdialog.cpp:159
-#, fuzzy, kde-format
-#| msgid "Send &Later"
+#, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "S&päter senden"
@@ -3113,8 +3031,7 @@ msgid "Empty Redirection Address"
 msgstr "Fehlende Umleitungsadresse"
 
 #: widgets/redirectwidget.cpp:39
-#, fuzzy, kde-format
-#| msgid "Use the Address-Selection Dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "Adress-Auswahldialog verwenden"

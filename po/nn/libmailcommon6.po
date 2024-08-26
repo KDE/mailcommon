@@ -868,14 +868,12 @@ msgstr ""
 
 #: filter/filteractions/filteractionwidget.cpp:69
 #, fuzzy, kde-format
-#| msgid "Please select a folder"
 msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Vel ei mappe"
 
 #: filter/filteractions/filteractionwithurl.cpp:22
 #, fuzzy, kde-format
-#| msgid "Help"
 msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Hjelp"
@@ -982,7 +980,6 @@ msgstr ""
 
 #: filter/filterselectiondialog.cpp:29
 #, fuzzy, kde-format
-#| msgid "Select Folder"
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Vel mappe"
@@ -1019,9 +1016,6 @@ msgstr "Forkast"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
 #, fuzzy, kde-format
-#| msgid ""
-#| "The following filters are invalid (e.g. containing no actions or no "
-#| "search rules). Discard or edit invalid filters?"
 msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
@@ -1048,7 +1042,6 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:90
 #, fuzzy, kde-format
-#| msgid "Import..."
 msgid "Import…"
 msgstr "Importer …"
 
@@ -1064,7 +1057,6 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
 #, fuzzy, kde-format
-#| msgid "Available Filters"
 msgctxt "@action"
 msgid "KMail filters"
 msgstr "Tilgjengelege filter"
@@ -1089,14 +1081,12 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:114
 #, fuzzy, kde-format
-#| msgid "Available Filters"
 msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Tilgjengelege filter"
 
 #: filter/kmfilterdialog.cpp:118
 #, fuzzy, kde-format
-#| msgid "Available Filters"
 msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Tilgjengelege filter"
@@ -1115,7 +1105,6 @@ msgstr ""
 
 #: filter/kmfilterdialog.cpp:132
 #, fuzzy, kde-format
-#| msgid "Available Filters"
 msgctxt "@action"
 msgid "Gmail filters"
 msgstr "Tilgjengelege filter"
@@ -1420,21 +1409,18 @@ msgstr "Nytt"
 
 #: filter/kmfilterlistbox.cpp:141
 #, fuzzy, kde-format
-#| msgid "Copy"
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Kopier"
 
 #: filter/kmfilterlistbox.cpp:142
 #, fuzzy, kde-format
-#| msgid "Delete Message"
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Slett melding"
 
 #: filter/kmfilterlistbox.cpp:143
 #, fuzzy, kde-format
-#| msgid "Rename"
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Endra namn"
@@ -1671,7 +1657,6 @@ msgstr ""
 
 #: folder/folderrequester.cpp:45
 #, fuzzy, kde-format
-#| msgid "Select Folder"
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Vel mappe"
@@ -1688,7 +1673,6 @@ msgstr "Vel ei mappe"
 
 #: folder/folderselectiondialog.cpp:64
 #, fuzzy, kde-format
-#| msgid "&New Subfolder..."
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "&Ny undermappe …"
@@ -1700,7 +1684,6 @@ msgstr "Lag ei ny undermappe i den valde mappa"
 
 #: folder/folderselectiondialog.cpp:126
 #, fuzzy, kde-format
-#| msgid "&New Subfolder..."
 msgid "&New Subfolder…"
 msgstr "&Ny undermappe …"
 
@@ -1783,21 +1766,18 @@ msgstr "Gå til neste ulesne melding"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
 #, fuzzy, kde-format
-#| msgid "Go To"
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Gå til"
 
 #: folder/foldertreeview.cpp:478 folder/foldertreeview.cpp:520
 #, fuzzy, kde-format
-#| msgid "Do Not Go To"
 msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Ikkje gå til"
 
 #: folder/foldertreewidget.cpp:78
 #, fuzzy, kde-format
-#| msgid "You can start typing to filter the list of folders."
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
 msgstr "Du kan begynna å skriva for å filtrera lista over mapper."
@@ -1925,8 +1905,6 @@ msgstr "Klarte ikkje fjerna meldingar frå mappa %1."
 
 #: job/expirejob.cpp:157
 #, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Fjernar ei gammal melding fra mappa %2 …"
@@ -1940,8 +1918,6 @@ msgstr ""
 
 #: job/expirejob.cpp:180
 #, fuzzy, kde-format
-#| msgid "Moving 1 old message from folder %2 to folder %3..."
-#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Flyttar ei gammal melding frå mappa %2 til mappa %3 …"
@@ -2312,7 +2288,6 @@ msgstr ""
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
 #, fuzzy, kde-format
-#| msgid "Encrypt"
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "Krypter"
@@ -2522,7 +2497,6 @@ msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
 #, fuzzy, kde-format
-#| msgid "Rename"
 msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "Endra namn"
@@ -2823,14 +2797,12 @@ msgstr ""
 
 #: tag/tagwidget.cpp:134
 #, fuzzy, kde-format
-#| msgid "Message tag &icon:"
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Merkelapp&ikon:"
 
 #: tag/tagwidget.cpp:145
 #, fuzzy, kde-format
-#| msgid "Shortc&ut:"
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "Snø&ggtast:"
@@ -2852,14 +2824,12 @@ msgstr "Modus"
 
 #: widgets/favoritecollectionwidget.cpp:113
 #, fuzzy, kde-format
-#| msgid "Mode"
 msgctxt "@action"
 msgid "List Mode"
 msgstr "Modus"
 
 #: widgets/favoritecollectionwidget.cpp:123
 #, fuzzy, kde-format
-#| msgid "Icon Size"
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Ikonstorleik"
