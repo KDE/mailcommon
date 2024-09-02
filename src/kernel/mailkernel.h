@@ -7,6 +7,7 @@
 
 #pragma once
 
+#include "config-mailcommon.h"
 #include "mailcommon/mailinterfaces.h"
 #include "mailcommon_export.h"
 

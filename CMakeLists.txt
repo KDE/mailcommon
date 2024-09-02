@@ -84,7 +84,7 @@ find_package(Phonon4Qt6 ${PHONON_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6AkonadiContactWidgets ${AKONADICONTACT_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6IdentityManagementCore ${KMIME_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF6TextCustomEditor ${KTEXTADDONS_MIN_VERSION} CONFIG REQUIRED)
-
+find_package(KPim6PimCommonActivities ${PIMCOMMON_LIB_VERSION} CONFIG)
 option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
 add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Designer")
 
@@ -93,6 +93,31 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX MAILCOMMON
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6MailCommonConfigVersion.cmake"
                         SOVERSION 6
 )
+
+
+if(TARGET KPim6::PimCommonActivities)
+    option(OPTION_USE_PLASMA_ACTIVITIES "Activate plasma activities (experimental)" OFF)
+    if(OPTION_USE_PLASMA_ACTIVITIES)
+        if(NOT WIN32 AND NOT APPLE)
+            set(OPTION_USE_PLASMA_ACTIVITIES true)
+        else()
+            set(OPTION_USE_PLASMA_ACTIVITIES false) 
+        endif()
+    endif()
+    if(OPTION_USE_PLASMA_ACTIVITIES) 
+        if(NOT WIN32 AND NOT APPLE)
+            find_package(PlasmaActivities "6.1.0")
+            set_package_properties(PlasmaActivities PROPERTIES DESCRIPTION
+                "Allow to compile with plasma activities"
+                TYPE OPTIONAL
+            )
+        endif()
+
+        if(TARGET Plasma::Activities)
+            set(HAVE_ACTIVITY_SUPPORT TRUE)
+        endif()
+    endif()
+endif()
 
 
 ########### Targets ###########

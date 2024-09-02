@@ -2,6 +2,8 @@
 # SPDX-FileCopyrightText: none
 add_definitions(-DTRANSLATION_DOMAIN=\"libmailcommon6\")
 
+configure_file(config-mailcommon.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-mailcommon.h)
+
 #add_definitions(-DQT_NO_CAST_FROM_ASCII)
 #add_definitions(-DQT_NO_CAST_TO_ASCII)
 
@@ -594,13 +596,14 @@ install(FILES
     ${MailCommon_Camelcasefilterimporter_HEADERS}
     ${MailCommon_Camelcasesnippets_HEADERS}
     ${MailCommon_Camelcasewidgets_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6//MailCommon/MailCommon
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailCommon/MailCommon
     COMPONENT Devel
 )
 
 install(FILES
     ${MailCommon_searchrule_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/mailcommon_export.h
+    ${CMAKE_CURRENT_BINARY_DIR}/config-mailcommon.h
     ${CMAKE_CURRENT_BINARY_DIR}/pop3settings.h
     ${CMAKE_CURRENT_BINARY_DIR}/mailcommonsettings_base.h
     ${MailCommon_HEADERS}
@@ -618,7 +621,7 @@ install(FILES
     ${MailCommon_filterimporter_HEADERS}
     ${MailCommon_snippets_HEADERS}
     ${MailCommon_widgets_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6//MailCommon/mailcommon
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailCommon/mailcommon
     COMPONENT Devel
 )
 
