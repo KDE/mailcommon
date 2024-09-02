@@ -44,7 +44,7 @@ public:
      */
     void registerKernelIf(IKernel *kernelIf);
 
-    bool kernelIsRegistered() const;
+    [[nodiscard]] bool kernelIsRegistered() const;
 
     IKernel *kernelIf() const;
 
@@ -72,30 +72,30 @@ public:
      * the collection. Since the ETM is loaded async, this method will not find
      * the collection right after startup, when the ETM is not yet fully loaded.
      */
-    Akonadi::Collection collectionFromId(Akonadi::Collection::Id id) const;
+    [[nodiscard]] Akonadi::Collection collectionFromId(Akonadi::Collection::Id id) const;
 
-    Akonadi::Collection inboxCollectionFolder();
-    Akonadi::Collection outboxCollectionFolder();
-    Akonadi::Collection sentCollectionFolder();
-    Akonadi::Collection trashCollectionFolder();
-    Akonadi::Collection draftsCollectionFolder();
-    Akonadi::Collection templatesCollectionFolder();
+    [[nodiscard]] Akonadi::Collection inboxCollectionFolder();
+    [[nodiscard]] Akonadi::Collection outboxCollectionFolder();
+    [[nodiscard]] Akonadi::Collection sentCollectionFolder();
+    [[nodiscard]] Akonadi::Collection trashCollectionFolder();
+    [[nodiscard]] Akonadi::Collection draftsCollectionFolder();
+    [[nodiscard]] Akonadi::Collection templatesCollectionFolder();
 
-    bool isSystemFolderCollection(const Akonadi::Collection &col);
+    [[nodiscard]] bool isSystemFolderCollection(const Akonadi::Collection &col);
 
     /**
      * Returns true if this folder is the inbox on the local disk
      */
-    bool isMainFolderCollection(const Akonadi::Collection &col);
+    [[nodiscard]] bool isMainFolderCollection(const Akonadi::Collection &col);
 
     /**
      * Returns true if the folder is either the outbox or one of the drafts-folders.
      */
-    bool folderIsDraftOrOutbox(const Akonadi::Collection &collection);
+    [[nodiscard]] bool folderIsDraftOrOutbox(const Akonadi::Collection &collection);
 
-    bool folderIsDrafts(const Akonadi::Collection &);
+    [[nodiscard]] bool folderIsDrafts(const Akonadi::Collection &);
 
-    bool folderIsTemplates(const Akonadi::Collection &collection);
+    [[nodiscard]] bool folderIsTemplates(const Akonadi::Collection &collection);
 
     /**
      * Returns true if the folder is a trash folder.
@@ -104,7 +104,7 @@ public:
      * it will say false erroneously. However you can connect to SpecialMailCollections::collectionsChanged
      * to react on dynamic changes and call this again.
      */
-    bool folderIsTrash(const Akonadi::Collection &collection);
+    [[nodiscard]] bool folderIsTrash(const Akonadi::Collection &collection);
 
     /**
      * Returns the trash folder for the resource which @p col belongs to.
@@ -113,12 +113,12 @@ public:
      * it will return an invalid collection erroneously. However you can connect to SpecialMailCollections::collectionsChanged
      * to react on dynamic changes and call this again.
      */
-    Akonadi::Collection trashCollectionFromResource(const Akonadi::Collection &col);
+    [[nodiscard]] Akonadi::Collection trashCollectionFromResource(const Akonadi::Collection &col);
 
     /**
      * Returns true if the folder is one of the sent-mail folders.
      */
-    bool folderIsSentMailFolder(const Akonadi::Collection &);
+    [[nodiscard]] bool folderIsSentMailFolder(const Akonadi::Collection &);
 
     static bool folderIsInbox(const Akonadi::Collection &);
 
@@ -145,10 +145,10 @@ private:
     Kernel(QObject *parent = nullptr);
     friend class KernelPrivate;
 
-    IKernel *mKernelIf;
-    IFilter *mFilterIf;
-    ISettings *mSettingsIf;
-    PimCommon::ImapResourceCapabilitiesManager *mImapResourceManager;
+    IKernel *mKernelIf = nullptr;
+    IFilter *mFilterIf = nullptr;
+    ISettings *mSettingsIf = nullptr;
+    PimCommon::ImapResourceCapabilitiesManager *mImapResourceManager = nullptr;
 };
 }
 
