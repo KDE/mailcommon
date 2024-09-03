@@ -382,6 +382,10 @@ PRIVATE
 
 target_link_libraries(KPim6MailCommon PRIVATE QGpgmeQt6)
 
+if(HAVE_ACTIVITY_SUPPORT)
+    target_link_libraries(KPim6MailCommon PRIVATE KPim6::PimCommonActivities)
+endif()
+
 
 target_include_directories(KPim6MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/MailCommon/>")
 target_include_directories(KPim6MailCommon PUBLIC "$<BUILD_INTERFACE:${mailcommon_SOURCE_DIR}/src;${mailcommon_BINARY_DIR}/src;${mailcommon_SOURCE_DIR}/src/search;${mailcommon_SOURCE_DIR}/src/folder>")
