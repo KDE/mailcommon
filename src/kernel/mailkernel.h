@@ -20,6 +20,14 @@ namespace PimCommon
 {
 class ImapResourceCapabilitiesManager;
 }
+
+#if HAVE_ACTIVITY_SUPPORT
+namespace PimCommonActivities
+{
+class ActivitiesBaseManager;
+}
+#endif
+
 namespace MailCommon
 {
 /**
@@ -131,6 +139,11 @@ public:
 
     static QMap<QString, Akonadi::Collection::Id> pop3ResourceTargetCollection();
 
+#if HAVE_ACTIVITY_SUPPORT
+    PimCommonActivities::ActivitiesBaseManager *activitiesBaseManager() const;
+    void registerActivitiesBaseManager(PimCommonActivities::ActivitiesBaseManager *manager);
+#endif
+
 private:
     void findCreateDefaultCollection(Akonadi::SpecialMailCollections::Type);
 
@@ -150,6 +163,9 @@ private:
     IFilter *mFilterIf = nullptr;
     ISettings *mSettingsIf = nullptr;
     PimCommon::ImapResourceCapabilitiesManager *mImapResourceManager = nullptr;
+#if HAVE_ACTIVITY_SUPPORT
+    PimCommonActivities::ActivitiesBaseManager *mActivitiesBaseManager = nullptr;
+#endif
 };
 }
 

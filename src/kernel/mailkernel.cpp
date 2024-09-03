@@ -386,6 +386,18 @@ QMap<QString, Akonadi::Collection::Id> Kernel::pop3ResourceTargetCollection()
     }
     return mapIdentifierCollectionId;
 }
+
+#if HAVE_ACTIVITY_SUPPORT
+PimCommonActivities::ActivitiesBaseManager *Kernel::activitiesBaseManager() const
+{
+    return mActivitiesBaseManager;
+}
+
+void Kernel::registerActivitiesBaseManager(PimCommonActivities::ActivitiesBaseManager *manager)
+{
+    mActivitiesBaseManager = manager;
+}
+#endif
 }
 
 #include "moc_mailkernel.cpp"
