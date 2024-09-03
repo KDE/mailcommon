@@ -15,3 +15,7 @@ Dependencies:
     'pim/mailimporter' : '@same'
     'pim/messagelib' : '@same'
     'pim/pimcommon' : '@same'
+
+- 'on': ['Linux', 'FreeBSD']
+  'require':
+    'plasma/plasma-activities': '@latest-kf6'

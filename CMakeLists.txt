@@ -96,7 +96,7 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX MAILCOMMON
 
 
 if(TARGET KPim6::PimCommonActivities)
-    option(OPTION_USE_PLASMA_ACTIVITIES "Activate plasma activities (experimental)" OFF)
+    option(OPTION_USE_PLASMA_ACTIVITIES "Activate plasma activities (experimental)" ON)
     if(OPTION_USE_PLASMA_ACTIVITIES)
         if(NOT WIN32 AND NOT APPLE)
             set(OPTION_USE_PLASMA_ACTIVITIES true)
