@@ -382,7 +382,7 @@ PRIVATE
 
 target_link_libraries(KPim6MailCommon PRIVATE QGpgmeQt6)
 
-if(HAVE_ACTIVITY_SUPPORT)
+if(MAILCOMMON_HAVE_ACTIVITY_SUPPORT)
     target_link_libraries(KPim6MailCommon PRIVATE KPim6::PimCommonActivities)
 endif()
 

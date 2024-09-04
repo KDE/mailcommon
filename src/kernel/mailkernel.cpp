@@ -387,7 +387,7 @@ QMap<QString, Akonadi::Collection::Id> Kernel::pop3ResourceTargetCollection()
     return mapIdentifierCollectionId;
 }
 
-#if HAVE_ACTIVITY_SUPPORT
+#if MAILCOMMON_HAVE_ACTIVITY_SUPPORT
 PimCommonActivities::ActivitiesBaseManager *Kernel::activitiesBaseManager() const
 {
     return mActivitiesBaseManager;
