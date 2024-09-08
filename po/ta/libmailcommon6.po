@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-04 00:39+0000\n"
-"PO-Revision-Date: 2024-07-06 21:37+0530\n"
+"PO-Revision-Date: 2024-09-07 21:44+0200\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -203,12 +203,12 @@ msgstr "&பொதுவான வார்ப்புருகளை நகல
 #: collectionpage/collectionviewwidget.cpp:27
 #, kde-format
 msgid "Use default message list aggregation:"
-msgstr ""
+msgstr "இயல்பிருப்பு அஞ்சல்பட்டியல் தொகுப்புமுறையை பயன்படுத்து:"
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, kde-format
 msgid "Use default message list theme"
-msgstr ""
+msgstr "இயல்பிருப்பு அஞ்சல்பட்டியல் காட்சிமுறையை பயன்படுத்து"
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
@@ -228,7 +228,7 @@ msgstr "பொதுவான அமைப்புகளைப் பயன்�
 #: collectionpage/collectionviewwidget.cpp:40
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
-msgstr ""
+msgstr "அஞ்சல்பட்டியலில் அனுப்புநர்/பெறுநர் நெடுவரிசையை காட்டு"
 
 #: collectionpage/collectionviewwidget.cpp:43
 #, kde-format
@@ -281,7 +281,7 @@ msgstr "அடைவை தேர்வு செய்தல்"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
-msgstr ""
+msgstr "அடைவின் பாதை \"%1\" என இருந்தது."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
@@ -304,7 +304,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
-msgstr ""
+msgstr "அடையாளத்தைத் தேர்ந்தெடுக்கவும்"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:38
 #, kde-format
@@ -317,30 +317,30 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
-msgstr ""
+msgstr "ஒலியைத் தேர்ந்தெடுக்கவும்"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
-msgstr ""
+msgstr "ஒலிக்கோப்பு \"%1\" என இருந்தது."
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
-msgstr ""
+msgstr "ஒலிக்கோப்பை காணவில்லை. \"%1\" எனும் வடிகட்டிக்கான ஒலியைத் தேர்ந்தெடுக்கவும்."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
-msgstr ""
+msgstr "குறிச்சொல்லைத் தேர்ந்தெடுக்கவும்"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
-msgstr ""
+msgstr "குறிச்சொல் \"%1\" என இருந்தது."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:47
 #, kde-format
@@ -350,13 +350,13 @@ msgstr ""
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
 msgid "Add Tag…"
-msgstr ""
+msgstr "குறிச்சொல்லை சேர்…"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
-msgstr ""
+msgstr "வார்ப்புருவைத் தேர்ந்தெடுப்பது"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:38
 #, kde-format
@@ -387,7 +387,7 @@ msgstr ""
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:31
 #, kde-format
 msgid " (default)"
-msgstr ""
+msgstr " (இயல்பிருப்பு)"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
 #, kde-format
@@ -402,66 +402,66 @@ msgstr ""
 #: filter/filteractions/filteractionaddheader.cpp:21
 #, kde-format
 msgid "Add Header"
-msgstr ""
+msgstr "தலைப்புப்புலத்தை சேர்"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
-msgstr ""
+msgstr "இம்மதிப்புடன்"
 
 #: filter/filteractions/filteractionaddheader.cpp:202
 #, kde-format
 msgid "The header name was missing."
-msgstr ""
+msgstr "தலைப்புப்புலத்தின் பெயர் குறிப்பிடப்படவில்லை"
 
 #: filter/filteractions/filteractionaddheader.cpp:208
 #, kde-format
 msgid "The header value was missing."
-msgstr ""
+msgstr "தலைப்புப்புலத்தின் மதிப்பு குறிப்பிடப்படவில்லை."
 
 #: filter/filteractions/filteractionaddtag.cpp:24
 #, kde-format
 msgid "Add Tag"
-msgstr ""
+msgstr "குறிச்சொல்லை சேர்"
 
 #: filter/filteractions/filteractionaddtag.cpp:150
 #, kde-format
 msgid "No tag selected."
-msgstr ""
+msgstr "குறிச்சொல் தேர்ந்தெடுக்கப்படவில்லை."
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:32
 #, kde-format
 msgid "Add to Address Book"
-msgstr ""
+msgstr "முகவரிப்புத்தகத்தில் சேர்"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:33
 #, kde-format
 msgctxt "Email sender"
 msgid "From"
-msgstr ""
+msgstr "அனுப்புநர்"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:34
 #, kde-format
 msgctxt "Email recipient"
 msgid "To"
-msgstr ""
+msgstr "பெறுநர்"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:35
 #: search/searchpatternedit.cpp:52
 #, kde-format
 msgid "CC"
-msgstr ""
+msgstr "நகல்"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:36
 #, kde-format
 msgid "BCC"
-msgstr ""
+msgstr "மறைநகல்"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:39
 #, kde-format
 msgid "KMail Filter"
-msgstr ""
+msgstr "கேமெயில் வடிகட்டி"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
 #, kde-format
@@ -473,7 +473,7 @@ msgstr ""
 #, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
-msgstr ""
+msgstr "முகவரிப்புத்தகத்தில்"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:134
 #, kde-format
@@ -486,34 +486,34 @@ msgstr ""
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:286
 #, kde-format
 msgid "Header type selected is unknown."
-msgstr ""
+msgstr "தேர்ந்தெடுத்துள்ள தலைப்புப்புல வகை தெரியாதது."
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:292
 #, kde-format
 msgid "No addressbook selected."
-msgstr ""
+msgstr "எந்த முகவரிப்புத்தகமும் தேர்ந்தெடுக்கப்படவில்லை."
 
 #: filter/filteractions/filteractioncopy.cpp:19
 #, kde-format
 msgid "Copy Into Folder"
-msgstr ""
+msgstr "அடைவிற்கு நகலெடு"
 
 #: filter/filteractions/filteractioncopy.cpp:68
 #: filter/filteractions/filteractionmove.cpp:66
 #, kde-format
 msgid "Folder destination was not defined."
-msgstr ""
+msgstr "சேருமிட அடைவு குறிப்பிடப்படவில்லை."
 
 #: filter/filteractions/filteractiondecrypt.cpp:27
 #: filter/filteractions/filteractiondecrypt.cpp:40
 #, kde-format
 msgid "Decrypt"
-msgstr ""
+msgstr "மறையீட்டை நீக்கு"
 
 #: filter/filteractions/filteractiondecrypt.cpp:95
 #, kde-format
 msgid "<b>Warning:</b> Decrypted emails may be uploaded to a server!"
-msgstr ""
+msgstr "<b>எச்சரிக்கை:</b> மறைநீக்கிய அஞ்சல்கள் சேவையகத்திற்கு பதிவேற்றப்படலாம்!"
 
 #: filter/filteractions/filteractiondecrypt.cpp:97
 #, kde-format
@@ -521,26 +521,28 @@ msgid ""
 "<p>If the email folder that you are filtering into is connected to a remote "
 "account (like an IMAP-Server) the decrypted content will go there.</p>"
 msgstr ""
+"<p>சேருமிட அடைவு தொலை கணக்குடன் இணைக்கப்பட்டிருந்தால் (எ.கா. IMAP சேவையகம்) மறைநீக்கிய "
+"அஞ்சல் அச்சேவையகத்திற்கு பதிவேற்றப்படும்.</p>"
 
 #: filter/filteractions/filteractiondelete.cpp:18
 #, kde-format
 msgid "Delete Message"
-msgstr ""
+msgstr "அஞ்சலை நீக்கு"
 
 #: filter/filteractions/filteractiondelete.cpp:41
 #, kde-format
 msgid "Be careful, mails will be removed."
-msgstr ""
+msgstr "ஜாக்கிரதை, அஞ்சல்கள் நீக்கப்படும்."
 
 #: filter/filteractions/filteractionencrypt.cpp:43
 #, kde-format
 msgid "Encrypt"
-msgstr ""
+msgstr "மறையாக்கு"
 
 #: filter/filteractions/filteractionencrypt.cpp:206
 #, kde-format
 msgid "No encryption key has been selected"
-msgstr ""
+msgstr "எந்த மறையாக்க சாவியும் தேர்ந்தெடுக்கப்படவில்லை"
 
 #: filter/filteractions/filteractionencrypt.cpp:242
 #, kde-format
@@ -564,18 +566,18 @@ msgstr ""
 #: filter/filteractions/filteractionexec.cpp:15
 #, kde-format
 msgid "Execute Command"
-msgstr ""
+msgstr "கட்டளையை இயக்கு"
 
 #: filter/filteractions/filteractionexec.cpp:36
 #, kde-format
 msgid "Missing command."
-msgstr ""
+msgstr "காணாத கட்டளை."
 
 #: filter/filteractions/filteractionforward.cpp:35
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
-msgstr ""
+msgstr "முன்னனுப்பு"
 
 #: filter/filteractions/filteractionforward.cpp:91
 #, kde-format
@@ -592,13 +594,13 @@ msgstr ""
 #: filter/filteractions/filteractionforward.cpp:198
 #, kde-format
 msgid "Default Template"
-msgstr ""
+msgstr "இயல்பிருப்பு வார்ப்புரு"
 
 #: filter/filteractions/filteractionforward.cpp:110
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
-msgstr ""
+msgstr "முன்னனுப்பும்போது பயன்படுத்த வேண்டிய வார்ப்புரு"
 
 #: filter/filteractions/filteractionforward.cpp:111
 #, kde-format
@@ -619,12 +621,12 @@ msgstr ""
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."
-msgstr ""
+msgstr "மின்னஞ்சல் முகவரி குறிப்பிடப்படவில்லை."
 
 #: filter/filteractions/filteractionmove.cpp:23
 #, kde-format
 msgid "Move Into Folder"
-msgstr ""
+msgstr "அடைவிற்கு நகர்த்து"
 
 #: filter/filteractions/filteractionpipethrough.cpp:20
 #, kde-format
@@ -635,37 +637,37 @@ msgstr ""
 #: filter/filteractions/filteractionpipethrough.cpp:36
 #, kde-format
 msgid "No action defined."
-msgstr ""
+msgstr "எந்த கட்டளையும் குறிப்பிடப்படவில்லை."
 
 #: filter/filteractions/filteractionplaysound.cpp:22
 #, kde-format
 msgid "Play Sound"
-msgstr ""
+msgstr "ஒலியை இயக்கு"
 
 #: filter/filteractions/filteractionplaysound.cpp:77
 #, kde-format
 msgid "Sound file was not defined."
-msgstr ""
+msgstr "ஒலிக்கோப்பு குறிப்பிடப்படவில்லை."
 
 #: filter/filteractions/filteractionredirect.cpp:27
 #, kde-format
 msgid "Redirect To"
-msgstr ""
+msgstr "இவருக்கு வழிமாற்று"
 
 #: filter/filteractions/filteractionredirect.cpp:71
 #, kde-format
 msgid "Email address was missing."
-msgstr ""
+msgstr "மின்னஞ்சல் முகவரி காணவில்லை."
 
 #: filter/filteractions/filteractionremoveheader.cpp:22
 #, kde-format
 msgid "Remove Header"
-msgstr ""
+msgstr "தலைப்புப்புலத்தை நீக்கு"
 
 #: filter/filteractions/filteractionremoveheader.cpp:96
 #, kde-format
 msgid "Header name undefined."
-msgstr ""
+msgstr "தலைப்புப்புலத்தின் பெயர் செல்லுபடியாகாதது."
 
 #: filter/filteractions/filteractionreplyto.cpp:20
 #, kde-format
@@ -691,13 +693,13 @@ msgstr ""
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
-msgstr ""
+msgstr "இதை:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
-msgstr ""
+msgstr "இதாக மாற்று:"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:28
 #, kde-format
@@ -708,19 +710,19 @@ msgstr ""
 #, kde-format
 msgctxt "MDN type"
 msgid "Ignore"
-msgstr ""
+msgstr "பொருட்படுத்தாதே"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:34
 #, kde-format
 msgctxt "MDN type"
 msgid "Displayed"
-msgstr ""
+msgstr "காட்டப்பட்டது"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:35
 #, kde-format
 msgctxt "MDN type"
 msgid "Deleted"
-msgstr ""
+msgstr "நீக்கப்பட்டது"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:36
 #, kde-format
@@ -732,19 +734,19 @@ msgstr ""
 #, kde-format
 msgctxt "MDN type"
 msgid "Processed"
-msgstr ""
+msgstr "கையாளப்பட்டது"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:38
 #, kde-format
 msgctxt "MDN type"
 msgid "Denied"
-msgstr ""
+msgstr "மறுக்கப்பட்டது"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:39
 #, kde-format
 msgctxt "MDN type"
 msgid "Failed"
-msgstr ""
+msgstr "தோல்வியடைந்தது"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:115
 #, kde-format
@@ -754,22 +756,22 @@ msgstr ""
 #: filter/filteractions/filteractionsendreceipt.cpp:21
 #, kde-format
 msgid "Confirm Delivery"
-msgstr ""
+msgstr "சென்றடைந்ததை உறுதிசெய்"
 
 #: filter/filteractions/filteractionsetidentity.cpp:29
 #, kde-format
 msgid "Set Identity To"
-msgstr ""
+msgstr "அடையாளத்தை இதுவாக அமை"
 
 #: filter/filteractions/filteractionsetstatus.cpp:20
 #, kde-format
 msgid "Mark As"
-msgstr ""
+msgstr "இவ்வாறு குறி"
 
 #: filter/filteractions/filteractionsetstatus.cpp:32
 #, kde-format
 msgid "Status not specified."
-msgstr ""
+msgstr "நிலை குறிப்பிடப்படவில்லை."
 
 #: filter/filteractions/filteractionsettransport.cpp:36
 #, kde-format
@@ -785,49 +787,49 @@ msgstr ""
 #, kde-format
 msgctxt "msg status"
 msgid "Important"
-msgstr ""
+msgstr "முக்கியமானது"
 
 #: filter/filteractions/filteractionstatus.cpp:32
 #, kde-format
 msgctxt "msg status"
 msgid "Read"
-msgstr ""
+msgstr "படித்த‍து"
 
 #: filter/filteractions/filteractionstatus.cpp:33
 #, kde-format
 msgctxt "msg status"
 msgid "Unread"
-msgstr ""
+msgstr "படிக்காத‍து"
 
 #: filter/filteractions/filteractionstatus.cpp:34
 #, kde-format
 msgctxt "msg status"
 msgid "Replied"
-msgstr ""
+msgstr "பதிலளிக்கப்பட்டது"
 
 #: filter/filteractions/filteractionstatus.cpp:35
 #, kde-format
 msgctxt "msg status"
 msgid "Forwarded"
-msgstr ""
+msgstr "முன்னனுப்பப்பட்டது"
 
 #: filter/filteractions/filteractionstatus.cpp:36
 #, kde-format
 msgctxt "msg status"
 msgid "Watched"
-msgstr ""
+msgstr "கவனிக்கப்படுவது"
 
 #: filter/filteractions/filteractionstatus.cpp:37
 #, kde-format
 msgctxt "msg status"
 msgid "Ignored"
-msgstr ""
+msgstr "பொருட்படுத்தாதது"
 
 #: filter/filteractions/filteractionstatus.cpp:38
 #, kde-format
 msgctxt "msg status"
 msgid "Spam"
-msgstr ""
+msgstr "ஸ்பேம்"
 
 #: filter/filteractions/filteractionstatus.cpp:39
 #, kde-format
@@ -839,12 +841,12 @@ msgstr ""
 #, kde-format
 msgctxt "msg status"
 msgid "Action Item"
-msgstr ""
+msgstr "செயலுக்கானது"
 
 #: filter/filteractions/filteractionstatus.cpp:100
 #, kde-format
 msgid "Status is missing."
-msgstr ""
+msgstr "நிலையை காணவில்லை."
 
 #: filter/filteractions/filteractionunsetstatus.cpp:19
 #, kde-format
@@ -867,7 +869,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
-msgstr ""
+msgstr "உதவி"
 
 #: filter/filteractions/filteractionwithurl.cpp:64
 #, kde-format
@@ -883,13 +885,13 @@ msgstr ""
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save…"
-msgstr ""
+msgstr "சேமி…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr ""
+msgstr "பகிர்…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -965,43 +967,43 @@ msgstr ""
 #: filter/filterimporterexporter.cpp:316
 #, kde-format
 msgid "Export Filters"
-msgstr ""
+msgstr "வடிகட்டிகளை ஏற்றுமதி செய்"
 
 #: filter/filterselectiondialog.cpp:29
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr ""
+msgstr "அனைத்தையும் தேர்ந்தெடு"
 
 #: filter/filterselectiondialog.cpp:30
 #, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
-msgstr ""
+msgstr "அனைத்து தேர்வுகளை நிராகரி"
 
 #: filter/filterselectiondialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
-msgstr ""
+msgstr "வடிகட்டிகளைத் தெர்ந்தெடுப்பது"
 
 #: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:51
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
-msgstr ""
+msgstr "தேடு"
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
-msgstr ""
+msgstr "செல்லுபடியாகாத வடிகட்டிகள்"
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:40
 #, kde-format
 msgid "Discard"
-msgstr ""
+msgstr "கைவிடு"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
 #, kde-format
@@ -1014,12 +1016,12 @@ msgstr ""
 #: filter/kmfilteraccountlist.cpp:24
 #, kde-format
 msgid "Account Name"
-msgstr ""
+msgstr "கணக்கின் பெயர்"
 
 #: filter/kmfilteraccountlist.cpp:24
 #, kde-format
 msgid "Type"
-msgstr ""
+msgstr "வகை"
 
 #: filter/kmfilterdialog.cpp:72
 #, kde-format
@@ -1214,19 +1216,19 @@ msgstr ""
 #: filter/kmfilterdialog.cpp:279
 #, kde-format
 msgid "Icon for this filter:"
-msgstr ""
+msgstr "இந்த வடிகட்டிக்கான சின்னம்:"
 
 #: filter/kmfilterdialog.cpp:287
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
-msgstr ""
+msgstr "தேர்ந்தெடுத்துள்ள வடிகட்டிகளை இவற்றில் இயக்கு:"
 
 #: filter/kmfilterdialog.cpp:293
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
-msgstr ""
+msgstr "இப்போது இயக்கு"
 
 #: filter/kmfilterdialog.cpp:419
 #, kde-format
@@ -1237,7 +1239,7 @@ msgstr ""
 #: filter/kmfilterdialog.cpp:419
 #, kde-format
 msgid "No folder selected."
-msgstr ""
+msgstr "எந்த அடைவும் தேர்ந்தெடுக்கப்படவில்லை"
 
 #: filter/kmfilterdialog.cpp:426
 #, kde-format
@@ -1250,7 +1252,7 @@ msgstr ""
 #: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:708
 #, kde-format
 msgid "Filters changed."
-msgstr ""
+msgstr "வடிகட்டிகள் மாற்றப்பட்டுள்ளன."
 
 #: filter/kmfilterdialog.cpp:434
 #, kde-format
@@ -1261,17 +1263,17 @@ msgstr ""
 #: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:729
 #, kde-format
 msgid "No filters selected."
-msgstr ""
+msgstr "எந்த வடிகட்டியும் தேர்ந்தெடுக்கப்படவில்லை."
 
 #: filter/kmfilterdialog.cpp:658
 #, kde-format
 msgid "No filter was imported."
-msgstr ""
+msgstr "எந்த வடிகட்டியும் இறக்கமதி செய்யப்படவில்லை."
 
 #: filter/kmfilterdialog.cpp:669
 #, kde-format
 msgid "Filters which were imported:"
-msgstr ""
+msgstr "இறக்குமதி செய்யப்பட்டுள்ள வடிகட்டிகள்:"
 
 #: filter/kmfilterdialog.cpp:677
 #, kde-format
@@ -1308,25 +1310,25 @@ msgstr ""
 #, kde-format
 msgctxt "Move selected filter up."
 msgid "Up"
-msgstr ""
+msgstr "மேலே"
 
 #: filter/kmfilterlistbox.cpp:84
 #, kde-format
 msgctxt "Move selected filter down."
 msgid "Down"
-msgstr ""
+msgstr "கீழே"
 
 #: filter/kmfilterlistbox.cpp:85
 #, kde-format
 msgctxt "Move selected filter to the top."
 msgid "Top"
-msgstr ""
+msgstr "முதலில்"
 
 #: filter/kmfilterlistbox.cpp:86
 #, kde-format
 msgctxt "Move selected filter to the bottom."
 msgid "Bottom"
-msgstr ""
+msgstr "கடைசியில்"
 
 #: filter/kmfilterlistbox.cpp:88
 #, kde-format
@@ -1372,25 +1374,25 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button in filter list manipulator"
 msgid "New"
-msgstr ""
+msgstr "புதியது"
 
 #: filter/kmfilterlistbox.cpp:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
-msgstr ""
+msgstr "நகலெடுக்கும்"
 
 #: filter/kmfilterlistbox.cpp:142
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
-msgstr ""
+msgstr "நீக்கும்"
 
 #: filter/kmfilterlistbox.cpp:143
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
-msgstr ""
+msgstr "மறுபெயரிடும்"
 
 #: filter/kmfilterlistbox.cpp:145
 #, kde-format
@@ -1431,27 +1433,27 @@ msgstr ""
 #: filter/kmfilterlistbox.cpp:290
 #, kde-format
 msgid "unnamed"
-msgstr ""
+msgstr "பெயரிடப்படாதது"
 
 #: filter/kmfilterlistbox.cpp:444
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
-msgstr ""
+msgstr "\"%1\" எனும் வடிகட்டியை உறுதியாக நீக்க வேண்டுமா?"
 
 #: filter/kmfilterlistbox.cpp:444
 #, kde-format
 msgid "Do you want to remove selected filters?"
-msgstr ""
+msgstr "தேர்ந்தெடுத்துள்ள வடிகட்டிகளை உறுதியாக நீக்க வேண்டுமா?"
 
 #: filter/kmfilterlistbox.cpp:445
 #, kde-format
 msgid "Remove Filter"
-msgstr ""
+msgstr "வடிகட்டியை நீக்குவது"
 
 #: filter/kmfilterlistbox.cpp:445
 #, kde-format
 msgid "Remove Filters"
-msgstr ""
+msgstr "வடிகட்டிகளை நீக்குவது"
 
 #: filter/kmfilterlistbox.cpp:661
 #, kde-format
@@ -1668,42 +1670,42 @@ msgstr ""
 #: folder/foldertreeview.cpp:140
 #, kde-format
 msgid "Icon Size"
-msgstr ""
+msgstr "சின்னத்தின் அளவு"
 
 #: folder/foldertreeview.cpp:156
 #, kde-format
 msgid "Display Tooltips"
-msgstr ""
+msgstr "கருவித்துப்புகளை காட்டுவது"
 
 #: folder/foldertreeview.cpp:160
 #, kde-format
 msgctxt "@action:inmenu Always display tooltips"
 msgid "Always"
-msgstr ""
+msgstr "எப்போதும்"
 
 #: folder/foldertreeview.cpp:167
 #, kde-format
 msgctxt "@action:inmenu Never display tooltips."
 msgid "Never"
-msgstr ""
+msgstr "ஒருபோதும் வேண்டாம்"
 
 #: folder/foldertreeview.cpp:174
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Sort Items"
-msgstr ""
+msgstr "உருப்படிகளை வரிசைப்படுத்து"
 
 #: folder/foldertreeview.cpp:178
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
-msgstr ""
+msgstr "தற்போதைய நெடுவரிசையின்படி தானாக"
 
 #: folder/foldertreeview.cpp:185
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
-msgstr ""
+msgstr "கைமுறையாக (இழுத்துப் போட்டு)"
 
 #: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, kde-format
