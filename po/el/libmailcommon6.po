@@ -37,15 +37,12 @@ msgstr[1] " ημέρες"
 #: collectionpage/collectionexpirywidget.cpp:40
 #: collectionpage/collectionexpirywidget.cpp:46
 #: collectionpage/collectionexpirywidget.cpp:58
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu Never display tooltips."
-#| msgid "Never"
+#, kde-format
 msgid "Never"
 msgstr "Ποτέ"
 
 #: collectionpage/collectionexpirywidget.cpp:70
-#, fuzzy, kde-format
-#| msgid "Save Settings and Expire Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Αποθήκευση ρυθμίσεων και λήξη τώρα"
@@ -58,16 +55,14 @@ msgid "Expire messages with invalid date"
 msgstr "Λήξη αναγνωσμένων μηνυμάτων μετά από"
 
 #: collectionpage/collectionexpirywidget.cpp:77
-#, fuzzy, kde-format
-#| msgid "Expire read messages after"
+#, kde-format
 msgid "Expire read messages after:"
-msgstr "Λήξη αναγνωσμένων μηνυμάτων μετά από"
+msgstr "Λήξη αναγνωσμένων μηνυμάτων μετά από:"
 
 #: collectionpage/collectionexpirywidget.cpp:80
-#, fuzzy, kde-format
-#| msgid "Expire unread messages after"
+#, kde-format
 msgid "Expire unread messages after:"
-msgstr "Λήξη μη αναγνωσμένων μηνυμάτων μετά από"
+msgstr "Λήξη μη αναγνωσμένων μηνυμάτων μετά από:"
 
 #: collectionpage/collectionexpirywidget.cpp:94
 #, kde-format
@@ -89,8 +84,7 @@ msgstr ""
 "Αν δεν το κάνετε αυτό, τα ληγμένα μηνύματα θα διαγράφονται οριστικά."
 
 #: collectionpage/collectionexpirywidget.cpp:177
-#, fuzzy, kde-format
-#| msgid "No Folder Selected"
+#, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Δεν επιλέχθηκε φάκελος"
@@ -107,8 +101,7 @@ msgstr ""
 "Αν δεν το κάνετε αυτό, τα ληγμένα μηνύματα θα διαγράφονται οριστικά."
 
 #: collectionpage/collectionexpirywidget.cpp:193
-#, fuzzy, kde-format
-#| msgid "Wrong Folder Selected"
+#, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "Επιλέχθηκε λανθασμένος φάκελος"
@@ -154,8 +147,7 @@ msgstr ""
 "κλείσει ο διάλογος διαμόρφωσης."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
-#, fuzzy, kde-format
-#| msgid "Act on new/unread mail in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr "Ειδοποίηση για νέα/μη αναγνωσμένα μηνύματα στο φάκελο"
@@ -182,8 +174,7 @@ msgstr ""
 "p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, fuzzy, kde-format
-#| msgid "Keep replies in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "Διατήρηση των απαντήσεων στο φάκελο"
@@ -200,8 +191,7 @@ msgstr ""
 "του φακέλου απεσταλμένων."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, fuzzy, kde-format
-#| msgid "Hide this folder in the folder selection dialog"
+#, kde-format
 msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "Απόκρυψη του φακέλου στο διάλογο επιλογής φακέλων."
@@ -218,8 +208,7 @@ msgstr ""
 "interface>."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "Χρήση &προκαθορισμένης ταυτότητας"
@@ -329,8 +318,7 @@ msgid "Message format:"
 msgstr "Κατάσταση μηνύματος"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
-#, fuzzy, kde-format
-#| msgid "Select Account"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "Επιλογή λογαριασμού"
@@ -345,45 +333,38 @@ msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:74
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Επιλογή φακέλου"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
-#, fuzzy, kde-format
-#| msgid "Folder path was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Η διαδρομή του φακέλου ήταν «%1»."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
-#, fuzzy, kde-format
-#| msgid "The following folders can be used for this filter:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Οι παρακάτω φάκελοι μπορούν να χρησιμοποιηθούν για αυτό το φίλτρο: "
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Please select a folder"
+#, kde-format
 msgid "Please select a folder:"
-msgstr "Παρακαλώ επιλέξτε ένα φάκελο"
+msgstr "Παρακαλώ επιλέξτε ένα φάκελο:"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:70
-#, fuzzy, kde-format
-#| msgid ""
-#| "Filter folder is missing. Please select a folder to use with filter \"%1\""
+#, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
 msgstr ""
 "Ο φάκελος για το φίλτρο λείπει. Παρακαλώ επιλέξτε ένα φάκελο που θα "
-"χρησιμοποιηθεί με το φίλτρο «%1»"
+"χρησιμοποιηθεί με το φίλτρο «%1»:"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Identity"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "Επιλογή ταυτότητας"
@@ -398,15 +379,13 @@ msgstr ""
 "χρησιμοποιηθεί με το φίλτρο «%1»"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
-#, fuzzy, kde-format
-#| msgid "Select sound"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "Επιλογή ήχου"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
-#, fuzzy, kde-format
-#| msgid "Sound file was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "Το αρχείο ήχου ήταν «%1»."
@@ -419,15 +398,13 @@ msgstr ""
 "φίλτρο «%1»"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
-#, fuzzy, kde-format
-#| msgid "Select Tag"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Επιλογή ετικέτας"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
-#, fuzzy, kde-format
-#| msgid "Tag was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Η ετικέτα ήταν «%1»."
@@ -440,14 +417,12 @@ msgstr ""
 "χρησιμοποιηθεί με το φίλτρο «%1»"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgid "Add Tag…"
-msgstr "Προσθήκη ετικέτας"
+msgstr "Προσθήκη ετικέτας…"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Template"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "Επιλογή πρότυπου"
@@ -462,8 +437,7 @@ msgstr ""
 "χρησιμοποιηθεί με το φίλτρο «%1»"
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
-#, fuzzy, kde-format
-#| msgid "Select Transport"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "Επιλογή μεταφορέα"
@@ -478,11 +452,10 @@ msgstr ""
 "χρησιμοποιηθεί με το φίλτρο «%1»"
 
 #: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
-#, fuzzy, kde-format
-#| msgid "Select thunderbird filter files"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
-msgstr "Επιλογή αρχείων φίλτρων Thunderbird"
+msgstr "Επιλογή αρχείων φίλτρων thunderbird"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:31
 #, kde-format
@@ -506,8 +479,7 @@ msgid "Add Header"
 msgstr "Προσθήκη κεφαλίδας"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
-#, fuzzy, kde-format
-#| msgid "With value:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Με τιμή:"
@@ -567,15 +539,13 @@ msgid "KMail Filter"
 msgstr "Φίλτρο KMail"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
-#, fuzzy, kde-format
-#| msgid "with category"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
 msgstr "με κατηγορία"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
-#, fuzzy, kde-format
-#| msgid "in address book"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "στο βιβλίο διευθύνσεων"
@@ -691,8 +661,7 @@ msgid "Forward To"
 msgstr "Προώθηση προς"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, fuzzy, kde-format
-#| msgid "The addressee to whom the message will be forwarded."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Η διεύθυνση στην οποία θα προωθηθεί το μήνυμα."
@@ -709,8 +678,7 @@ msgid "Default Template"
 msgstr "Προκαθορισμένο πρότυπο"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, fuzzy, kde-format
-#| msgid "The template used when forwarding"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Το πρότυπο που χρησιμοποιείται όταν γίνεται προώθηση"
@@ -806,15 +774,13 @@ msgid "Search string is empty."
 msgstr ""
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
-#, fuzzy, kde-format
-#| msgid "Replace:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Αντικατάσταση:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
-#, fuzzy, kde-format
-#| msgid "With:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
 msgstr "Με:"
@@ -980,8 +946,7 @@ msgid "Status not defined."
 msgstr "Το αρχείο ήχου ήταν «%1»."
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, fuzzy, kde-format
-#| msgid "Please select an action."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Παρακαλώ επιλέξτε μια ενέργεια."
@@ -998,8 +963,7 @@ msgid "You can get specific header when you use %{headername}."
 msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
-#, fuzzy, kde-format
-#| msgid "Convert to sieve script"
+#, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Μετατροπή σε σενάριο sieve"
@@ -1027,8 +991,7 @@ msgstr ""
 "*|όλα τα αρχεία (*)"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
-#, fuzzy, kde-format
-#| msgid "Convert to Script Sieve"
+#, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
 msgstr "Μετατροπή σε σενάριο Sieve"
@@ -1055,43 +1018,37 @@ msgstr ""
 "θα περιείχαν ενέργειες ή κανόνες αναζήτησης)."
 
 #: filter/filterimporterexporter.cpp:138
-#, fuzzy, kde-format
-#| msgid "Import KMail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Εισαγωγή φίλτρων KMail"
 
 #: filter/filterimporterexporter.cpp:146
-#, fuzzy, kde-format
-#| msgid "Import Evolution Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Εισαγωγή φίλτρων του Evolution"
 
 #: filter/filterimporterexporter.cpp:150
-#, fuzzy, kde-format
-#| msgid "Import Sylpheed Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Εισαγωγή φίλτρων του Sylpheed"
 
 #: filter/filterimporterexporter.cpp:154
-#, fuzzy, kde-format
-#| msgid "Import Procmail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Εισαγωγή φίλτρων του Procmail"
 
 #: filter/filterimporterexporter.cpp:158
-#, fuzzy, kde-format
-#| msgid "Import Balsa Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Εισαγωγή φίλτρων Balsa"
 
 #: filter/filterimporterexporter.cpp:162
-#, fuzzy, kde-format
-#| msgid "Import Claws Mail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Εισαγωγή φίλτρων αλληλογραφίας Claws"
@@ -1114,39 +1071,32 @@ msgstr ""
 "στο αρχείο να μην το επιτρέπουν."
 
 #: filter/filterimporterexporter.cpp:316
-#, fuzzy, kde-format
-#| msgid "Export Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Εξαγωγή φίλτρων"
 
 #: filter/filterselectiondialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Επιλογή όλων"
 
 #: filter/filterselectiondialog.cpp:30
-#, fuzzy, kde-format
-#| msgid "Unselect All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Αποεπιλογή όλων"
 
 #: filter/filterselectiondialog.cpp:34
-#, fuzzy, kde-format
-#| msgid "Select Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Επιλογή φίλτρων"
 
 #: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:51
 #: folder/foldertreewidget.cpp:84
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "@info/plain Displayed grayed-out inside the textbox, verb to search"
-#| msgid "Search"
+#, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "Αναζήτηση"
@@ -1164,10 +1114,7 @@ msgid "Discard"
 msgstr "Απόρριψη"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
-#, fuzzy, kde-format
-#| msgid ""
-#| "The following filters are invalid (e.g. containing no actions or no "
-#| "search rules). Discard or edit invalid filters?"
+#, kde-format
 msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
@@ -1187,75 +1134,64 @@ msgid "Type"
 msgstr "Τύπος"
 
 #: filter/kmfilterdialog.cpp:72
-#, fuzzy, kde-format
-#| msgid "Filter Rules"
+#, kde-format
 msgctxt "@title:window"
 msgid "Filter Rules"
 msgstr "Κανόνες φίλτρου"
 
 #: filter/kmfilterdialog.cpp:90
-#, fuzzy, kde-format
-#| msgid "Import..."
+#, kde-format
 msgid "Import…"
-msgstr "Εισαγωγή..."
+msgstr "Εισαγωγή…"
 
 #: filter/kmfilterdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "Export..."
+#, kde-format
 msgid "Export…"
-msgstr "Εξαγωγή..."
+msgstr "Εξαγωγή…"
 
 #: filter/kmfilterdialog.cpp:94
-#, fuzzy, kde-format
-#| msgid "Convert to..."
+#, kde-format
 msgid "Convert to…"
-msgstr "Μετατροπή σε..."
+msgstr "Μετατροπή σε…"
 
 #: filter/kmfilterdialog.cpp:98
-#, fuzzy, kde-format
-#| msgid "KMail filters"
+#, kde-format
 msgctxt "@action"
 msgid "KMail filters"
 msgstr "Φίλτρα KMail"
 
 #: filter/kmfilterdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
-msgstr "Φίλτρα Thunderbird"
+msgstr "Φίλτρα thunderbird"
 
 #: filter/kmfilterdialog.cpp:106
-#, fuzzy, kde-format
-#| msgid "Evolution filters"
+#, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
-msgstr "Φίλτρα Evolution"
+msgstr "Φίλτρα evolution"
 
 #: filter/kmfilterdialog.cpp:110
-#, fuzzy, kde-format
-#| msgid "Sylpheed filters"
+#, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
-msgstr "Φίλτρα Sylpheed"
+msgstr "Φίλτρα sylpheed"
 
 #: filter/kmfilterdialog.cpp:114
-#, fuzzy, kde-format
-#| msgid "Procmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
-msgstr "Φίλτρα Procmail"
+msgstr "Φίλτρα procmail"
 
 #: filter/kmfilterdialog.cpp:118
-#, fuzzy, kde-format
-#| msgid "Balsa filters"
+#, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
-msgstr "Φίλτρα Balsa"
+msgstr "Φίλτρα balsa"
 
 #: filter/kmfilterdialog.cpp:122
-#, fuzzy, kde-format
-#| msgid "Claws Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Φίλτρα αλληλογραφίας Claws"
@@ -1275,8 +1211,7 @@ msgid "Gmail filters"
 msgstr "Φίλτρα KMail"
 
 #: filter/kmfilterdialog.cpp:140
-#, fuzzy, kde-format
-#| msgid "Sieve script"
+#, kde-format
 msgctxt "@action"
 msgid "Sieve script"
 msgstr "Σενάριο sieve"
@@ -1299,25 +1234,22 @@ msgid "Advanced"
 msgstr "Για προχωρημένους"
 
 #: filter/kmfilterdialog.cpp:182
-#, fuzzy, kde-format
-#| msgid "Filter Actions"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Filter actions:"
-msgstr "Ενέργειες φίλτρου"
+msgstr "Ενέργειες φίλτρου:"
 
 #: filter/kmfilterdialog.cpp:193
-#, fuzzy, kde-format
-#| msgid "Apply this filter to incoming messages:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Εφαρμογή αυτού του φίλτρου στα εισερχόμενα μηνύματα:"
 
 #: filter/kmfilterdialog.cpp:203
-#, fuzzy, kde-format
-#| msgid "from all accounts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From all accounts"
-msgstr "από όλους τους λογαριασμός"
+msgstr "Από όλους τους λογαριασμός"
 
 #: filter/kmfilterdialog.cpp:207
 #, fuzzy, kde-format
@@ -1334,8 +1266,7 @@ msgid "From selected accounts only"
 msgstr "από τους επιλεγμένους λογαριασμούς μόνο"
 
 #: filter/kmfilterdialog.cpp:219
-#, fuzzy, kde-format
-#| msgid "Apply this filter to &sent messages"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "Εφαρμογή αυτού του φίλτρου στα απε&σταλμένα μηνύματα"
@@ -1355,8 +1286,7 @@ msgstr ""
 "μηνυμάτων».</p>"
 
 #: filter/kmfilterdialog.cpp:227
-#, fuzzy, kde-format
-#| msgid "Apply this filter &before sending messages"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "Εφαρμογή αυτού του φίλτρου &πριν την αποστολή μηνυμάτων"
@@ -1374,8 +1304,7 @@ msgstr ""
 "αυτό να προσαρμοστεί.</p>"
 
 #: filter/kmfilterdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Apply this filter on manual &filtering"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "Εφαρμογή αυτού του φίλτρου κατά το χειροκίνητο &φιλτράρισμα"
@@ -1397,22 +1326,19 @@ msgid ""
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:245
-#, fuzzy, kde-format
-#| msgid "If this filter &matches, stop processing here"
+#, kde-format
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "Αν αυτό το φίλτρο ταιριάξει, στα&μάτημα της επεξεργασίας εδώ"
 
 #: filter/kmfilterdialog.cpp:248
-#, fuzzy, kde-format
-#| msgid "Add this filter to the Apply Filter menu"
+#, kde-format
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Προσθήκη του φίλτρου στο μενού εφαρμογής φίλτρου"
 
 #: filter/kmfilterdialog.cpp:266
-#, fuzzy, kde-format
-#| msgid "Additionally add this filter to the toolbar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Προσθήκη του φίλτρου και στη γραμμή εργαλείων"
@@ -1428,15 +1354,13 @@ msgid "Icon for this filter:"
 msgstr "Εικονίδιο για αυτό το φίλτρο:"
 
 #: filter/kmfilterdialog.cpp:287
-#, fuzzy, kde-format
-#| msgid "Run selected filter(s) on: "
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Εκτέλεση επιλεγμένων φίλτρων στο: "
 
 #: filter/kmfilterdialog.cpp:293
-#, fuzzy, kde-format
-#| msgid "Run Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Εκτέλεση τώρα"
@@ -1449,8 +1373,7 @@ msgstr ""
 "Αδύνατη η εφαρμογή του φίλτρου από τη στιγμή που δεν έχει επιλεγεί φάκελος."
 
 #: filter/kmfilterdialog.cpp:421
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Δεν επιλέχθηκε φάκελος."
@@ -1466,8 +1389,7 @@ msgstr ""
 "αποθηκεύσετε τα φίλτρα σας ώστε να είναι δυνατή η εφαρμογή τους."
 
 #: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
-#, fuzzy, kde-format
-#| msgid "Filters changed."
+#, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Τα φίλτρα άλλαξαν."
@@ -1480,8 +1402,7 @@ msgstr ""
 "Αδύνατη η εφαρμογή ενός φίλτρου από τη στιγμή που δεν έχουν επιλεγεί φίλτρα."
 
 #: filter/kmfilterdialog.cpp:438
-#, fuzzy, kde-format
-#| msgid "No filters selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Δεν επιλέχτηκαν φίλτρα."
@@ -1519,8 +1440,7 @@ msgstr ""
 "προσπαθήσουμε :)"
 
 #: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
-#, fuzzy, kde-format
-#| msgid "Convert KMail filters to sieve scripts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Μετατροπή των φίλτρων KMail σε σενάρια sieve"
@@ -1633,25 +1553,22 @@ msgid "New"
 msgstr "Νέο"
 
 #: filter/kmfilterlistbox.cpp:141
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Αντιγραφή"
 
 #: filter/kmfilterlistbox.cpp:142
-#, fuzzy, kde-format
-#| msgid "Delete"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Διαγραφή"
 
 #: filter/kmfilterlistbox.cpp:143
-#, fuzzy, kde-format
-#| msgid "Rename..."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
-msgstr "Μετονομασία..."
+msgstr "Μετονομασία"
 
 #: filter/kmfilterlistbox.cpp:145
 #, kde-format
@@ -1723,15 +1640,13 @@ msgid "Do you want to remove selected filters?"
 msgstr "Επιθυμείτε την αφαίρεση των επιλεγμένων φίλτρων;"
 
 #: filter/kmfilterlistbox.cpp:445
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Αφαίρεση φίλτρου"
 
 #: filter/kmfilterlistbox.cpp:445
-#, fuzzy, kde-format
-#| msgid "Remove Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Αφαίρεση των φίλτρων"
@@ -1786,15 +1701,13 @@ msgid "Any action defined."
 msgstr "Η δημιουργία του φακέλου απέτυχε"
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Αναπαραγωγή"
 
 #: filter/soundtestwidget.cpp:62
-#, fuzzy, kde-format
-#| msgid "Select Sound File"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Sound File"
 msgstr "Επιλογή αρχείου ήχου"
@@ -1884,24 +1797,19 @@ msgid "Use custom order"
 msgstr ""
 
 #: folder/accountconfigorderdialog.cpp:91
-#, fuzzy, kde-format
-#| msgctxt "Move selected filter up."
-#| msgid "Up"
+#, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "Πάνω"
 
 #: folder/accountconfigorderdialog.cpp:99
-#, fuzzy, kde-format
-#| msgctxt "Move selected filter down."
-#| msgid "Down"
+#, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
 msgstr "Κάτω"
 
 #: folder/folderrequester.cpp:46
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Επιλογή φακέλου"
@@ -1917,24 +1825,21 @@ msgid "Please select a folder"
 msgstr "Παρακαλώ επιλέξτε ένα φάκελο"
 
 #: folder/folderselectiondialog.cpp:64
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
-msgstr "&Νέος υποφάκελος..."
+msgstr "&Νέος υποφάκελος…"
 
 #: folder/folderselectiondialog.cpp:66
-#, fuzzy, kde-format
-#| msgid "Create a new subfolder under the currently selected folder"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "Δημιουργία ενός νέου υποφακέλου κάτω από τον επιλεγμένο φάκελο"
 
 #: folder/folderselectiondialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgid "&New Subfolder…"
-msgstr "&Νέος υποφάκελος..."
+msgstr "&Νέος υποφάκελος…"
 
 #: folder/folderselectiondialog.cpp:179
 #, kde-format
@@ -1954,8 +1859,7 @@ msgid "Could not create folder: %1"
 msgstr "Αδύνατη η δημιουργία του φακέλου: %1"
 
 #: folder/folderselectiondialog.cpp:196
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Η δημιουργία του φακέλου απέτυχε"
@@ -2012,29 +1916,25 @@ msgstr ""
 "<qt>Μετάβαση στο επόμενο μη αναγνωσμένο μήνυμα στο φάκελο <b>%1</b>;</qt>"
 
 #: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
-#, fuzzy, kde-format
-#| msgid "Go to Next Unread Message"
+#, kde-format
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Μετάβαση στο επόμενο μη αναγνωσμένο μήνυμα"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, fuzzy, kde-format
-#| msgid "Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Μετάβαση στο"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, fuzzy, kde-format
-#| msgid "Do Not Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Να μη γίνει μετάβαση στο"
 
 #: folder/foldertreewidget.cpp:78
-#, fuzzy, kde-format
-#| msgid "You can start typing to filter the list of folders."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
 msgstr "Αρχίστε την πληκτρολόγηση για το φιλτράρισμα της λίστας φακέλων."
@@ -2075,8 +1975,7 @@ msgid "Failed to archive the folder '%1'."
 msgstr "Αποτυχία αρχειοθέτησης του φακέλου «%1»."
 
 #: job/backupjob.cpp:155
-#, fuzzy, kde-format
-#| msgid "Archiving failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Η αρχειοθέτηση απέτυχε"
@@ -2113,8 +2012,7 @@ msgid "The archive file has a size of %1."
 msgstr "Η αρχειοθήκη έχει μέγεθος %1."
 
 #: job/backupjob.cpp:193
-#, fuzzy, kde-format
-#| msgid "Archiving finished"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
 msgstr "Η αρχειοθέτησε ολοκληρώθηκε"
@@ -2174,12 +2072,10 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Η αφαίρεση των παλιών μηνυμάτων από τον φάκελο %1 απέτυχε."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "Διαγραφή 1 παλιού μηνύματος από το φάκελο %2..."
+msgstr[0] "Διαγραφή 1 παλιού μηνύματος από το φάκελο %2…"
 msgstr[1] "Αφαίρεση %1 παλαιών μηνυμάτων από τον φάκελο %2..."
 
 #: job/expirejob.cpp:164
@@ -2189,13 +2085,11 @@ msgstr ""
 "Αδύνατη η λήξη μηνυμάτων του φακέλου %1: Ο φάκελος προορισμού %2 δεν βρέθηκε"
 
 #: job/expirejob.cpp:180
-#, fuzzy, kde-format
-#| msgid "Moving 1 old message from folder %2 to folder %3..."
-#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] "Μετακίνηση 1 παλιού μηνύματος από το φάκελο %2 στο φάκελο %3..."
-msgstr[1] "Μετακίνηση %1 παλαιών μηνυμάτων από το φάκελο %2 στο φάκελο %3..."
+msgstr[0] "Μετακίνηση 1 παλιού μηνύματος από το φάκελο %2 στο φάκελο %3…"
+msgstr[1] "Μετακίνηση %1 παλαιών μηνυμάτων από το φάκελο %2 στο φάκελο %3…"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
@@ -2294,9 +2188,6 @@ msgid "Message Tag"
 msgstr "Ετικέτα μηνύματος"
 
 #: search/searchpatternedit.cpp:49
-#, fuzzy
-#| msgctxt "Subject of an email."
-#| msgid "Subject"
 msgid "Subject"
 msgstr "Θέμα"
 
@@ -2305,9 +2196,6 @@ msgid "From"
 msgstr "Από"
 
 #: search/searchpatternedit.cpp:51
-#, fuzzy
-#| msgctxt "Email recipient"
-#| msgid "To"
 msgid "To"
 msgstr "Προς"
 
@@ -2328,45 +2216,39 @@ msgid "Encryption"
 msgstr ""
 
 #: search/searchpatternedit.cpp:144
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Επιλέξτε ή πληκτρολογήστε τα δικά σας κριτήρια"
 
 #: search/searchpatternedit.cpp:145
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Επιλέξτε ή πληκτρολογήστε τα δικά σας κριτήρια"
 
 #: search/searchpatternedit.cpp:580
-#, fuzzy, kde-format
-#| msgid "Match a&ll of the following"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "Ταιριάζει με ό&λα από τα ακόλουθα"
 
 #: search/searchpatternedit.cpp:581
-#, fuzzy, kde-format
-#| msgid "Match an&y of the following"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "Ταιριάζει με ο&ποιοδήποτε από τα ακόλουθα"
 
 #: search/searchpatternedit.cpp:583
-#, fuzzy, kde-format
-#| msgid "Match all messages"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Ταιριάζει με όλα τα μηνύματα"
 
 #: search/searchpatternedit.cpp:594
-#, fuzzy, kde-format
-#| msgid "Filter Criteria"
+#, kde-format
 msgid "Filter criteria:"
-msgstr "Κριτήρια φίλτρου"
+msgstr "Κριτήρια φίλτρου:"
 
 #: search/searchrule/searchrule.cpp:177
 #, kde-format
@@ -2889,53 +2771,43 @@ msgid "Snippet %1"
 msgstr "Απόσπασμα %1"
 
 #: snippets/snippetsmanager.cpp:558
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
-msgstr "Προσθήκη αποσπάσματος"
+msgstr "Προσθήκη αποσπάσματος…"
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Edit Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
-msgstr "Επεξεργασία αποσπάσματος"
+msgstr "Επεξεργασία αποσπάσματος…"
 
 #: snippets/snippetsmanager.cpp:562
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Αφαίρεση αποσπάσματος"
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Group"
+#, kde-format
 msgctxt "@action"
 msgid "Add Group…"
-msgstr "Προσθήκη ομάδας"
+msgstr "Προσθήκη ομάδας…"
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
+#, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
-msgstr "Μετονομασία ομάδας..."
+msgstr "Μετονομασία ομάδας…"
 
 #: snippets/snippetsmanager.cpp:569
-#, fuzzy, kde-format
-#| msgid "Remove Group"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Group"
 msgstr "Αφαίρεση ομάδας"
 
 #: snippets/snippetsmanager.cpp:572
-#, fuzzy, kde-format
-#| msgid "Insert Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "Εισαγωγή αποσπάσματος"
@@ -2967,22 +2839,19 @@ msgid "Text Snippets"
 msgstr "Εισαγωγή αποσπάσματος"
 
 #: snippets/snippetvariabledialog.cpp:37
-#, fuzzy, kde-format
-#| msgid "Enter Values for Variables"
+#, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Εισαγωγή τιμών μεταβλητών"
 
 #: snippets/snippetvariabledialog.cpp:40
-#, fuzzy, kde-format
-#| msgid "Enter the replacement values for '%1':"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Εισάγετε τις τιμές αντικατάστασης για το «%1»."
 
 #: snippets/snippetvariabledialog.cpp:45
-#, fuzzy, kde-format
-#| msgid "Make value &default"
+#, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Ορισμός τιμής ως &προκαθορισμένη"
@@ -3034,19 +2903,15 @@ msgstr "Ομάδα:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: snippets/ui/snippetwidget.ui:69
-#, fuzzy, kde-format
-#| msgctxt "Subject of an email."
-#| msgid "Subject"
+#, kde-format
 msgid "Subject:"
-msgstr "Θέμα"
+msgstr "Θέμα:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: snippets/ui/snippetwidget.ui:88
-#, fuzzy, kde-format
-#| msgctxt "Email recipient"
-#| msgid "To"
+#, kde-format
 msgid "To:"
-msgstr "Προς"
+msgstr "Προς:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: snippets/ui/snippetwidget.ui:101
@@ -3088,14 +2953,12 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
 #: snippets/ui/snippetwidget.ui:212
-#, fuzzy, kde-format
-#| msgid "Shortcut:"
+#, kde-format
 msgid "Sho&rtcut:"
-msgstr "&Συντόμευση:"
+msgstr "&Σ&υντόμευση:"
 
 #: tag/addtagdialog.cpp:39
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgctxt "@title:window"
 msgid "Add Tag"
 msgstr "Προσθήκη ετικέτας"
@@ -3112,22 +2975,19 @@ msgid "Name:"
 msgstr "Όνομα:"
 
 #: tag/tagwidget.cpp:70
-#, fuzzy, kde-format
-#| msgid "Change te&xt color:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "Αλλαγή χρώματος κει&μένου:"
 
 #: tag/tagwidget.cpp:82
-#, fuzzy, kde-format
-#| msgid "Change &background color:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "Αλλαγή χρώματος &φόντου:"
 
 #: tag/tagwidget.cpp:94
-#, fuzzy, kde-format
-#| msgid "Change fo&nt:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "Αλλαγή γραμματο&σειράς:"
@@ -3145,29 +3005,25 @@ msgid "&Italics"
 msgstr ""
 
 #: tag/tagwidget.cpp:122
-#, fuzzy, kde-format
-#| msgid "Message tag &icon:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Ε&ικονίδιο ετικέτας μηνύματος:"
 
 #: tag/tagwidget.cpp:133
-#, fuzzy, kde-format
-#| msgid "Shortc&ut:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "Συντόμε&υση:"
 
 #: tag/tagwidget.cpp:144
-#, fuzzy, kde-format
-#| msgid "Enable &toolbar button"
+#, kde-format
 msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Ενεργοποίηση κουμπιού γραμμής ε&ργαλείων"
 
 #: widgets/favoritecollectionwidget.cpp:90
-#, fuzzy, kde-format
-#| msgid "Icon Size"
+#, kde-format
 msgid "Icon size"
 msgstr "Μέγεθος εικονιδίων"
 
@@ -3190,10 +3046,9 @@ msgid "Icon Mode"
 msgstr "Μέγεθος εικονιδίων"
 
 #: widgets/favoritecollectionwidget.cpp:234
-#, fuzzy, kde-format
-#| msgid "Drop your favorite folders here..."
+#, kde-format
 msgid "Drop your favorite folders here…"
-msgstr "Ρίψη των προτιμώμενων φακέλων σας εδώ..."
+msgstr "Ρίψη των προτιμώμενων φακέλων σας εδώ…"
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format
@@ -3211,19 +3066,17 @@ msgid "Resend-Bcc:"
 msgstr ""
 
 #: widgets/redirectdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Redirect Message"
+#, kde-format
 msgctxt "@title:window"
 msgid "Redirect Message"
 msgstr "Ανακατεύθυνση μηνύματος"
 
 #: widgets/redirectdialog.cpp:123
-#, fuzzy, kde-format
-#| msgid "Select the recipient &addresses to redirect to:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr ""
-"Επιλέξτε τις διευθύνσεις π&αραληπτών στους οποίους θα γίνει ανακατεύθυνση:"
+"Επιλέξτε τις διευθύνσεις παραληπτών στους οποίους θα γίνει ανακατεύθυνση:"
 
 #: widgets/redirectdialog.cpp:152
 #, kde-format
@@ -3236,15 +3089,13 @@ msgid "Transport:"
 msgstr "Μεταφορέας:"
 
 #: widgets/redirectdialog.cpp:158
-#, fuzzy, kde-format
-#| msgid "&Send Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "Απο&στολή τώρα"
 
 #: widgets/redirectdialog.cpp:159
-#, fuzzy, kde-format
-#| msgid "Send &Later"
+#, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "Αποστολή αρ&γότερα"
@@ -3256,15 +3107,13 @@ msgstr ""
 "Δεν μπορείτε να ανακατευθύνετε το μήνυμα χωρίς να εισάγετε μια διεύθυνση."
 
 #: widgets/redirectdialog.cpp:207
-#, fuzzy, kde-format
-#| msgid "Empty Redirection Address"
+#, kde-format
 msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "Κενή διεύθυνσης ανακατεύθυνσης"
 
 #: widgets/redirectwidget.cpp:39
-#, fuzzy, kde-format
-#| msgid "Use the Address-Selection Dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "Χρήση του διαλόγου επιλογής διευθύνσεων"
