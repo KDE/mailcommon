@@ -13,7 +13,6 @@
 #include <QComboBox>
 #include <QSpinBox>
 #include <QStackedWidget>
-#include <ki18n_version.h>
 using namespace MailCommon;
 
 static const struct {

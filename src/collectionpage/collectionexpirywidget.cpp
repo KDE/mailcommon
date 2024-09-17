@@ -12,7 +12,6 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 #include <KLocalization>
-#include <ki18n_version.h>
 
 #include <Akonadi/CollectionModifyJob>
 
