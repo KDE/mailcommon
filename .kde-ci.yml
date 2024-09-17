@@ -15,6 +15,7 @@ Dependencies:
     'pim/mailimporter' : '@same'
     'pim/messagelib' : '@same'
     'pim/pimcommon' : '@same'
+    'libraries/phonon' : '@stable'
 
 - 'on': ['Linux', 'FreeBSD']
   'require':
