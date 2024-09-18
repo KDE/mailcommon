@@ -6,8 +6,8 @@
 
 #include "searchruleattachment.h"
 #include "filter/filterlog.h"
-#include "util/cryptoutils.h"
 using MailCommon::FilterLog;
+#include <Akonadi/MessageStatus>
 #include <KMime/Message>
 
 using namespace MailCommon;
@@ -27,14 +27,27 @@ bool SearchRuleAttachment::isEmpty() const
 
 bool SearchRuleAttachment::matches(const Akonadi::Item &item) const
 {
-    const bool shouldBeEncrypted = (function() == FuncEquals);
-
     if (!item.hasPayload<KMime::Message::Ptr>()) {
         return false;
     }
-    const auto msg = item.payload<KMime::Message::Ptr>();
+    Akonadi::MessageStatus status;
+    status.setStatusFromFlags(item.flags());
+    bool rc = false;
+    switch (function()) {
+    case FuncEquals:
+        if (status & Akonadi::MessageStatus::statusHasAttachment()) {
+            rc = true;
+        }
+        break;
+    case FuncNotEqual:
+        if (!(status & Akonadi::MessageStatus::statusHasAttachment())) {
+            rc = true;
+        }
+        break;
+    default:
+        break;
+    }
 
-    const bool rc = (shouldBeEncrypted == CryptoUtils::isEncrypted(msg.data()));
     if (FilterLog::instance()->isLogging()) {
         QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>") : QStringLiteral("<font color=#FF0000>0 = </font>"));
         msg += FilterLog::recode(asString());
@@ -46,7 +59,5 @@ bool SearchRuleAttachment::matches(const Akonadi::Item &item) const
 
 SearchRule::RequiredPart SearchRuleAttachment::requiredPart() const
 {
-    // We can't detect inline signatures just from headers, we need to inspect
-    // the entire body.
-    return SearchRule::CompleteMessage;
+    return SearchRule::Envelope;
 }
