@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-21 00:48+0000\n"
+"POT-Creation-Date: 2024-09-18 00:40+0000\n"
 "PO-Revision-Date: 2019-11-18 12:53+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -23,7 +23,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "Vypršanie"
 
-#: collectionpage/collectionexpirywidget.cpp:38
+#: collectionpage/collectionexpirywidget.cpp:37
 #, fuzzy, kde-format
 #| msgctxt "Expire messages after %1"
 #| msgid " day"
@@ -35,52 +35,52 @@ msgstr[0] " deň"
 msgstr[1] " dni"
 msgstr[2] " dní"
 
-#: collectionpage/collectionexpirywidget.cpp:40
-#: collectionpage/collectionexpirywidget.cpp:46
-#: collectionpage/collectionexpirywidget.cpp:58
+#: collectionpage/collectionexpirywidget.cpp:39
+#: collectionpage/collectionexpirywidget.cpp:45
+#: collectionpage/collectionexpirywidget.cpp:57
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu Never display tooltips."
 #| msgid "Never"
 msgid "Never"
 msgstr "Nikdy"
 
-#: collectionpage/collectionexpirywidget.cpp:70
+#: collectionpage/collectionexpirywidget.cpp:69
 #, fuzzy, kde-format
 #| msgid "Save Settings and Expire Now"
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Uložiť nastavenia a vypršať teraz"
 
-#: collectionpage/collectionexpirywidget.cpp:71
+#: collectionpage/collectionexpirywidget.cpp:70
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Skončiť platnosť prečítaných správ po"
 
-#: collectionpage/collectionexpirywidget.cpp:77
+#: collectionpage/collectionexpirywidget.cpp:76
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
 msgid "Expire read messages after:"
 msgstr "Skončiť platnosť prečítaných správ po"
 
-#: collectionpage/collectionexpirywidget.cpp:80
+#: collectionpage/collectionexpirywidget.cpp:79
 #, fuzzy, kde-format
 #| msgid "Expire unread messages after"
 msgid "Expire unread messages after:"
 msgstr "Skončiť platnosť neprečítaných správ po"
 
-#: collectionpage/collectionexpirywidget.cpp:94
+#: collectionpage/collectionexpirywidget.cpp:93
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "Premiestniť správy s vypršanou platnosťou do:"
 
-#: collectionpage/collectionexpirywidget.cpp:105
+#: collectionpage/collectionexpirywidget.cpp:104
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "Trvale vymazať správy s vypršanou platnosťou"
 
-#: collectionpage/collectionexpirywidget.cpp:176
+#: collectionpage/collectionexpirywidget.cpp:175
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -89,14 +89,14 @@ msgstr ""
 "Prosím vyberte priečinok na vypršanie tejto správy.\n"
 "Ak to nie je urobené, vypršané správy budú permanentne vymazané."
 
-#: collectionpage/collectionexpirywidget.cpp:177
+#: collectionpage/collectionexpirywidget.cpp:176
 #, fuzzy, kde-format
 #| msgid "No Folder Selected"
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Nebol vybraný žiaden priečinok"
 
-#: collectionpage/collectionexpirywidget.cpp:191
+#: collectionpage/collectionexpirywidget.cpp:190
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -107,7 +107,7 @@ msgstr ""
 "platnosťou.\n"
 "Ak to nie je urobené, vypršané správy budú permanentne vymazané."
 
-#: collectionpage/collectionexpirywidget.cpp:193
+#: collectionpage/collectionexpirywidget.cpp:192
 #, fuzzy, kde-format
 #| msgid "Wrong Folder Selected"
 msgctxt "@title:window"
@@ -2517,13 +2517,13 @@ msgstr "Reťazec je prázdny."
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
-#: search/widgethandler/numericrulewidgethandler.cpp:22
+#: search/widgethandler/numericrulewidgethandler.cpp:21
 msgid "is equal to"
 msgstr "je rovné"
 
 #: search/widgethandler/daterulewidgethandler.cpp:23
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:22
-#: search/widgethandler/numericrulewidgethandler.cpp:23
+#: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is not equal to"
 msgstr "nie je rovné"
 
@@ -2637,22 +2637,22 @@ msgid "has no attachment"
 msgstr "nemá prílohu"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:23
-#: search/widgethandler/numericrulewidgethandler.cpp:24
+#: search/widgethandler/numericrulewidgethandler.cpp:23
 msgid "is greater than"
 msgstr "je väčší ako"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:24
-#: search/widgethandler/numericrulewidgethandler.cpp:25
+#: search/widgethandler/numericrulewidgethandler.cpp:24
 msgid "is less than or equal to"
 msgstr "je menej alebo sa rovná"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:25
-#: search/widgethandler/numericrulewidgethandler.cpp:26
+#: search/widgethandler/numericrulewidgethandler.cpp:25
 msgid "is less than"
 msgstr "je menej než"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:26
-#: search/widgethandler/numericrulewidgethandler.cpp:27
+#: search/widgethandler/numericrulewidgethandler.cpp:26
 msgid "is greater than or equal to"
 msgstr "je viac alebo sa rovná"
 
@@ -2662,7 +2662,7 @@ msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " KB"
 
-#: search/widgethandler/numericrulewidgethandler.cpp:159
+#: search/widgethandler/numericrulewidgethandler.cpp:158
 #, fuzzy, kde-format
 #| msgctxt "Unit suffix where units are days."
 #| msgid " day"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-21 00:48+0000\n"
+"POT-Creation-Date: 2024-09-18 00:40+0000\n"
 "PO-Revision-Date: 2014-04-11 22:49+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -23,7 +23,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "Λήξη"
 
-#: collectionpage/collectionexpirywidget.cpp:38
+#: collectionpage/collectionexpirywidget.cpp:37
 #, fuzzy, kde-format
 #| msgctxt "Expire messages after %1"
 #| msgid " day"
@@ -34,47 +34,47 @@ msgid_plural "%v days"
 msgstr[0] " ημέρα"
 msgstr[1] " ημέρες"
 
-#: collectionpage/collectionexpirywidget.cpp:40
-#: collectionpage/collectionexpirywidget.cpp:46
-#: collectionpage/collectionexpirywidget.cpp:58
+#: collectionpage/collectionexpirywidget.cpp:39
+#: collectionpage/collectionexpirywidget.cpp:45
+#: collectionpage/collectionexpirywidget.cpp:57
 #, kde-format
 msgid "Never"
 msgstr "Ποτέ"
 
-#: collectionpage/collectionexpirywidget.cpp:70
+#: collectionpage/collectionexpirywidget.cpp:69
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Αποθήκευση ρυθμίσεων και λήξη τώρα"
 
-#: collectionpage/collectionexpirywidget.cpp:71
+#: collectionpage/collectionexpirywidget.cpp:70
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Λήξη αναγνωσμένων μηνυμάτων μετά από"
 
-#: collectionpage/collectionexpirywidget.cpp:77
+#: collectionpage/collectionexpirywidget.cpp:76
 #, kde-format
 msgid "Expire read messages after:"
 msgstr "Λήξη αναγνωσμένων μηνυμάτων μετά από:"
 
-#: collectionpage/collectionexpirywidget.cpp:80
+#: collectionpage/collectionexpirywidget.cpp:79
 #, kde-format
 msgid "Expire unread messages after:"
 msgstr "Λήξη μη αναγνωσμένων μηνυμάτων μετά από:"
 
-#: collectionpage/collectionexpirywidget.cpp:94
+#: collectionpage/collectionexpirywidget.cpp:93
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "Μετακίνηση ληγμένων μηνυμάτων σε:"
 
-#: collectionpage/collectionexpirywidget.cpp:105
+#: collectionpage/collectionexpirywidget.cpp:104
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "Οριστική διαγραφή ληγμένων μηνυμάτων"
 
-#: collectionpage/collectionexpirywidget.cpp:176
+#: collectionpage/collectionexpirywidget.cpp:175
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -83,13 +83,13 @@ msgstr ""
 "Παρακαλώ επιλέξτε έναν φάκελο του οποίου θα λήξουν τα μηνύματα.\n"
 "Αν δεν το κάνετε αυτό, τα ληγμένα μηνύματα θα διαγράφονται οριστικά."
 
-#: collectionpage/collectionexpirywidget.cpp:177
+#: collectionpage/collectionexpirywidget.cpp:176
 #, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Δεν επιλέχθηκε φάκελος"
 
-#: collectionpage/collectionexpirywidget.cpp:191
+#: collectionpage/collectionexpirywidget.cpp:190
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -100,7 +100,7 @@ msgstr ""
 "λήξουν τα μηνύματα.\n"
 "Αν δεν το κάνετε αυτό, τα ληγμένα μηνύματα θα διαγράφονται οριστικά."
 
-#: collectionpage/collectionexpirywidget.cpp:193
+#: collectionpage/collectionexpirywidget.cpp:192
 #, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
@@ -286,11 +286,10 @@ msgid "Show Sender/Receiver Column in List of Messages"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:43
-#, fuzzy, kde-format
-#| msgid " (default)"
+#, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
-msgstr " (προκαθορισμένο)"
+msgstr "Προκαθορισμένο"
 
 #: collectionpage/collectionviewwidget.cpp:44
 #, fuzzy, kde-format
@@ -1252,11 +1251,10 @@ msgid "From all accounts"
 msgstr "Από όλους τους λογαριασμός"
 
 #: filter/kmfilterdialog.cpp:207
-#, fuzzy, kde-format
-#| msgid "from all but online IMAP accounts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
-msgstr "από όλους εκτός τους συνδεδεμένους λογαριασμούς IMAP"
+msgstr "Από όλους εκτός τους συνδεδεμένους λογαριασμούς IMAP"
 
 #: filter/kmfilterdialog.cpp:211
 #, fuzzy, kde-format
@@ -2430,13 +2428,13 @@ msgstr ""
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
-#: search/widgethandler/numericrulewidgethandler.cpp:22
+#: search/widgethandler/numericrulewidgethandler.cpp:21
 msgid "is equal to"
 msgstr "είναι ίσο με"
 
 #: search/widgethandler/daterulewidgethandler.cpp:23
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:22
-#: search/widgethandler/numericrulewidgethandler.cpp:23
+#: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is not equal to"
 msgstr "δεν είναι ίσο με"
 
@@ -2549,22 +2547,22 @@ msgid "has no attachment"
 msgstr "δεν έχει συνημμένο"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:23
-#: search/widgethandler/numericrulewidgethandler.cpp:24
+#: search/widgethandler/numericrulewidgethandler.cpp:23
 msgid "is greater than"
 msgstr "είναι μεγαλύτερο του"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:24
-#: search/widgethandler/numericrulewidgethandler.cpp:25
+#: search/widgethandler/numericrulewidgethandler.cpp:24
 msgid "is less than or equal to"
 msgstr "είναι μικρότερο ή ίσο με"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:25
-#: search/widgethandler/numericrulewidgethandler.cpp:26
+#: search/widgethandler/numericrulewidgethandler.cpp:25
 msgid "is less than"
 msgstr "είναι μικρότερο από"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:26
-#: search/widgethandler/numericrulewidgethandler.cpp:27
+#: search/widgethandler/numericrulewidgethandler.cpp:26
 msgid "is greater than or equal to"
 msgstr "είναι μεγαλύτερο ή ίσο από"
 
@@ -2574,7 +2572,7 @@ msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " kB"
 
-#: search/widgethandler/numericrulewidgethandler.cpp:159
+#: search/widgethandler/numericrulewidgethandler.cpp:158
 #, fuzzy, kde-format
 #| msgctxt "Unit suffix where units are days."
 #| msgid " day"

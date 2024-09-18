@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-21 00:48+0000\n"
+"POT-Creation-Date: 2024-09-18 00:40+0000\n"
 "PO-Revision-Date: 2023-11-07 21:27+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
@@ -23,7 +23,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:38
+#: collectionpage/collectionexpirywidget.cpp:37
 #, fuzzy, kde-format
 #| msgctxt "Expire messages after %1"
 #| msgid " day"
@@ -34,59 +34,59 @@ msgid_plural "%v days"
 msgstr[0] " día"
 msgstr[1] " díes"
 
-#: collectionpage/collectionexpirywidget.cpp:40
-#: collectionpage/collectionexpirywidget.cpp:46
-#: collectionpage/collectionexpirywidget.cpp:58
+#: collectionpage/collectionexpirywidget.cpp:39
+#: collectionpage/collectionexpirywidget.cpp:45
+#: collectionpage/collectionexpirywidget.cpp:57
 #, kde-format
 msgid "Never"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:70
+#: collectionpage/collectionexpirywidget.cpp:69
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:71
+#: collectionpage/collectionexpirywidget.cpp:70
 #, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:77
+#: collectionpage/collectionexpirywidget.cpp:76
 #, kde-format
 msgid "Expire read messages after:"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:80
+#: collectionpage/collectionexpirywidget.cpp:79
 #, kde-format
 msgid "Expire unread messages after:"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:94
+#: collectionpage/collectionexpirywidget.cpp:93
 #, kde-format
 msgid "Move expired messages to:"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:105
+#: collectionpage/collectionexpirywidget.cpp:104
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:176
+#: collectionpage/collectionexpirywidget.cpp:175
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:177
+#: collectionpage/collectionexpirywidget.cpp:176
 #, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:191
+#: collectionpage/collectionexpirywidget.cpp:190
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -94,7 +94,7 @@ msgid ""
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:193
+#: collectionpage/collectionexpirywidget.cpp:192
 #, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
@@ -2258,13 +2258,13 @@ msgstr ""
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
-#: search/widgethandler/numericrulewidgethandler.cpp:22
+#: search/widgethandler/numericrulewidgethandler.cpp:21
 msgid "is equal to"
 msgstr ""
 
 #: search/widgethandler/daterulewidgethandler.cpp:23
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:22
-#: search/widgethandler/numericrulewidgethandler.cpp:23
+#: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is not equal to"
 msgstr ""
 
@@ -2377,22 +2377,22 @@ msgid "has no attachment"
 msgstr ""
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:23
-#: search/widgethandler/numericrulewidgethandler.cpp:24
+#: search/widgethandler/numericrulewidgethandler.cpp:23
 msgid "is greater than"
 msgstr ""
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:24
-#: search/widgethandler/numericrulewidgethandler.cpp:25
+#: search/widgethandler/numericrulewidgethandler.cpp:24
 msgid "is less than or equal to"
 msgstr ""
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:25
-#: search/widgethandler/numericrulewidgethandler.cpp:26
+#: search/widgethandler/numericrulewidgethandler.cpp:25
 msgid "is less than"
 msgstr ""
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:26
-#: search/widgethandler/numericrulewidgethandler.cpp:27
+#: search/widgethandler/numericrulewidgethandler.cpp:26
 msgid "is greater than or equal to"
 msgstr ""
 
@@ -2402,7 +2402,7 @@ msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr ""
 
-#: search/widgethandler/numericrulewidgethandler.cpp:159
+#: search/widgethandler/numericrulewidgethandler.cpp:158
 #, fuzzy, kde-format
 #| msgctxt "Expire messages after %1"
 #| msgid " day"
