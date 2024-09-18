@@ -15,7 +15,7 @@ static const struct {
     SearchRule::Function id;
     const KLazyLocalizedString displayName;
 } AttachmentFunctions[] = {{SearchRule::FuncEquals, kli18n("has")}, {SearchRule::FuncNotEqual, kli18n("has not")}};
-static const int EncryptionFunctionCount = sizeof(AttachmentFunctions) / sizeof(*AttachmentFunctions);
+static const int AttachmentFunctionCount = sizeof(AttachmentFunctions) / sizeof(*AttachmentFunctions);
 
 AttachmentWidgetHandler::AttachmentWidgetHandler()
     : RuleWidgetHandler()
@@ -35,7 +35,7 @@ QWidget *AttachmentWidgetHandler::createFunctionWidget(int number, QStackedWidge
     auto combo = new QComboBox(functionStack);
     combo->setMinimumWidth(50);
     combo->setObjectName(QLatin1StringView("attachmentRuleFuncCombo"));
-    for (int i = 0; i < EncryptionFunctionCount; ++i) {
+    for (int i = 0; i < AttachmentFunctionCount; ++i) {
         combo->addItem(AttachmentFunctions[i].displayName.toString());
     }
     combo->adjustSize();
@@ -120,7 +120,7 @@ bool AttachmentWidgetHandler::setRule(QStackedWidget *functionStack, QStackedWid
     const auto combo = functionStack->findChild<QComboBox *>(QStringLiteral("attachmentRuleFuncCombo"));
     if (combo) {
         const bool blocked = combo->blockSignals(true);
-        for (int i = 0; i < EncryptionFunctionCount; ++i) {
+        for (int i = 0; i < AttachmentFunctionCount; ++i) {
             if (AttachmentFunctions[i].id == rule->function()) {
                 combo->setCurrentIndex(i);
                 break;
