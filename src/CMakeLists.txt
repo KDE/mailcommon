@@ -172,6 +172,8 @@ target_sources(KPim6MailCommon PRIVATE
     search/searchrule/searchrulestatus.cpp
     search/searchrule/searchruleencryption.cpp
     search/searchrule/searchrule.cpp
+    search/searchrule/searchruleattachment.cpp
+    search/searchrule/searchruleattachment.h
     snippets/snippetdialog.cpp
     snippets/snippetsmanager.cpp
     snippets/snippetsmodel.cpp

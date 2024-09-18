@@ -53,7 +53,8 @@ static const struct {
                          {"Reply-To", kli18n("Reply To")},
                          {"Organization", kli18n("Organization")},
                          {"<date>", kli18n("Date")},
-                         {"<encryption>", kli18n("Encryption")}};
+                         {"<encryption>", kli18n("Encryption")},
+                         {"<attachment>", kli18n("Attachment")}};
 static const int SpecialRuleFieldsCount = sizeof(SpecialRuleFields) / sizeof(*SpecialRuleFields);
 
 //=============================================================================
@@ -364,6 +365,7 @@ void SearchRuleWidget::initFieldList(SearchPatternEdit::SearchPatternEditOptions
     }
 
     mFilterFieldList.append(SpecialRuleFields[Encryption].getLocalizedDisplayName());
+    mFilterFieldList.append(SpecialRuleFields[Attachment].getLocalizedDisplayName());
 
     // these others only represent message headers and you can add to
     // them as you like

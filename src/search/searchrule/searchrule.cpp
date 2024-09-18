@@ -5,6 +5,7 @@
 */
 #include "searchrule.h"
 #include "mailcommon_debug.h"
+#include "searchrule/searchruleattachment.h"
 #include "searchrule/searchruledate.h"
 #include "searchrule/searchruleencryption.h"
 #include "searchrule/searchrulenumerical.h"
@@ -83,6 +84,8 @@ SearchRule::Ptr SearchRule::createInstance(const QByteArray &field, Function fun
         ret = SearchRule::Ptr(new SearchRuleDate(field, func, contents));
     } else if (field == "<encryption>") {
         ret = SearchRule::Ptr(new SearchRuleEncryption(field, func, contents));
+    } else if (field == "<attachment>") {
+        ret = SearchRule::Ptr(new SearchRuleAttachment(field, func, contents));
     } else {
         ret = SearchRule::Ptr(new SearchRuleString(field, func, contents));
     }

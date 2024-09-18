@@ -164,7 +164,7 @@ public:
                               SearchPatternEdit::SearchPatternEditOptions options = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None),
                               SearchPatternEdit::SearchModeType modeType = SearchPatternEdit::StandardMode);
 
-    enum { Message, Body, AnyHeader, Recipients, Size, AgeInDays, Status, Tag, Subject, From, To, CC, ReplyTo, Organization, Date, Encryption };
+    enum { Message, Body, AnyHeader, Recipients, Size, AgeInDays, Status, Tag, Subject, From, To, CC, ReplyTo, Organization, Date, Encryption, Attachment };
 
     /**
      * Sets the rule. The rule is accepted regardless of the return
