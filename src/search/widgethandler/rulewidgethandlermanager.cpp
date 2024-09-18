@@ -6,6 +6,7 @@
 */
 
 #include "rulewidgethandlermanager.h"
+#include "attachmentwidgethandler.h"
 #include "daterulewidgethandler.h"
 #include "encryptionwidgethandler.h"
 #include "headersrulerwidgethandler.h"
@@ -40,6 +41,7 @@ MailCommon::RuleWidgetHandlerManager::RuleWidgetHandlerManager()
     registerHandler(new MailCommon::NumericDoubleRuleWidgetHandler());
     registerHandler(new MailCommon::HeadersRuleWidgetHandler());
     registerHandler(new MailCommon::EncryptionWidgetHandler());
+    registerHandler(new MailCommon::AttachmentWidgetHandler());
     // the TextRuleWidgetHandler is the fallback handler, so it has to be added
     // as last handler
     registerHandler(new MailCommon::TextRuleWidgetHandler());
