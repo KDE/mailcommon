@@ -6,9 +6,9 @@
 
 #pragma once
 
-#include <Akonadi/Item>
-
 #include "mailcommon/searchpattern.h"
+#include "mailcommon_private_export.h"
+#include <Akonadi/Item>
 #include <Akonadi/MessageStatus>
 
 namespace MailCommon
@@ -20,7 +20,7 @@ namespace MailCommon
  *  @short This class represents a search pattern rule operating on message
  *  status.
  */
-class MAILCOMMON_EXPORT SearchRuleStatus : public SearchRule
+class MAILCOMMON_TESTS_EXPORT SearchRuleStatus : public SearchRule
 {
 public:
     explicit SearchRuleStatus(const QByteArray &field = QByteArray(), Function function = FuncContains, const QString &contents = QString());

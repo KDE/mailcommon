@@ -5,7 +5,7 @@
 */
 
 #pragma once
-
+#include "mailcommon_private_export.h"
 #include "searchpattern.h"
 #include <Akonadi/Item>
 namespace MailCommon
@@ -16,7 +16,7 @@ namespace MailCommon
  * This class represents a search to be performed against a numerical value,
  * such as the age of the message in days or its size.
  */
-class SearchRuleNumerical : public SearchRule
+class MAILCOMMON_TESTS_EXPORT SearchRuleNumerical : public SearchRule
 {
 public:
     /**
