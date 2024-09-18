@@ -19,5 +19,6 @@ public:
     [[nodiscard]] bool isEmpty() const override;
     [[nodiscard]] bool matches(const Akonadi::Item &item) const override;
     [[nodiscard]] SearchRule::RequiredPart requiredPart() const override;
+    void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const override;
 };
 }

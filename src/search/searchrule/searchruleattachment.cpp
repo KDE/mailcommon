@@ -61,3 +61,12 @@ SearchRule::RequiredPart SearchRuleAttachment::requiredPart() const
 {
     return SearchRule::Envelope;
 }
+
+void SearchRuleAttachment::addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const
+{
+    using namespace Akonadi;
+    emptyIsNotAnError = true;
+    EmailSearchTerm term(EmailSearchTerm::MessageStatus, MessageStatus::statusHasAttachment().statusFlags().values().first(), akonadiComparator());
+    term.setIsNegated(isNegated());
+    groupTerm.addSubTerm(term);
+}
