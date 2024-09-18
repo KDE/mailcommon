@@ -5,12 +5,12 @@
 */
 
 #pragma once
-
+#include "mailcommon_private_export.h"
 #include "searchpattern.h"
 
 namespace MailCommon
 {
-class SearchRuleAttachment : public SearchRule
+class MAILCOMMON_TESTS_EXPORT SearchRuleAttachment : public SearchRule
 {
 public:
     explicit SearchRuleAttachment(const QByteArray &field = {}, Function func = FuncEquals, const QString &contents = {});
