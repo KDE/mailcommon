@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-18 00:40+0000\n"
+"POT-Creation-Date: 2024-09-19 00:40+0000\n"
 "PO-Revision-Date: 2014-04-11 22:49+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -2213,124 +2213,131 @@ msgstr "Ημερομηνία"
 msgid "Encryption"
 msgstr ""
 
-#: search/searchpatternedit.cpp:144
+#: search/searchpatternedit.cpp:57
+#, fuzzy
+#| msgctxt "message status"
+#| msgid "Has Attachment"
+msgid "Attachment"
+msgstr "Με συνημμένο"
+
+#: search/searchpatternedit.cpp:145
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Επιλέξτε ή πληκτρολογήστε τα δικά σας κριτήρια"
 
-#: search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:146
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Επιλέξτε ή πληκτρολογήστε τα δικά σας κριτήρια"
 
-#: search/searchpatternedit.cpp:580
+#: search/searchpatternedit.cpp:582
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "Ταιριάζει με ό&λα από τα ακόλουθα"
 
-#: search/searchpatternedit.cpp:581
+#: search/searchpatternedit.cpp:583
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "Ταιριάζει με ο&ποιοδήποτε από τα ακόλουθα"
 
-#: search/searchpatternedit.cpp:583
+#: search/searchpatternedit.cpp:585
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Ταιριάζει με όλα τα μηνύματα"
 
-#: search/searchpatternedit.cpp:594
+#: search/searchpatternedit.cpp:596
 #, kde-format
 msgid "Filter criteria:"
 msgstr "Κριτήρια φίλτρου:"
 
-#: search/searchrule/searchrule.cpp:177
+#: search/searchrule/searchrule.cpp:180
 #, kde-format
 msgid "equal"
 msgstr "ίσο"
 
-#: search/searchrule/searchrule.cpp:180
+#: search/searchrule/searchrule.cpp:183
 #, kde-format
 msgid "not equal"
 msgstr "δεν είναι ίσο"
 
-#: search/searchrule/searchrule.cpp:183
+#: search/searchrule/searchrule.cpp:186
 #, kde-format
 msgid "is greater"
 msgstr "είναι μεγαλύτερο"
 
-#: search/searchrule/searchrule.cpp:186
+#: search/searchrule/searchrule.cpp:189
 #, kde-format
 msgid "is less or equal"
 msgstr "είναι μικρότερο ή ίσο"
 
-#: search/searchrule/searchrule.cpp:189
+#: search/searchrule/searchrule.cpp:192
 #, kde-format
 msgid "is less"
 msgstr "είναι μικρότερο"
 
-#: search/searchrule/searchrule.cpp:192
+#: search/searchrule/searchrule.cpp:195
 #, kde-format
 msgid "is greater or equal"
 msgstr "είναι μεγαλύτερο ή ίσο"
 
-#: search/searchrule/searchrule.cpp:195
+#: search/searchrule/searchrule.cpp:198
 #, kde-format
 msgid "is in addressbook"
 msgstr "είναι στο βιβλίο διευθύνσεων"
 
-#: search/searchrule/searchrule.cpp:198
+#: search/searchrule/searchrule.cpp:201
 #, kde-format
 msgid "is not in addressbook"
 msgstr "δεν είναι στο βιβλίο διευθύνσεων"
 
-#: search/searchrule/searchrule.cpp:201 search/searchrule/searchrule.cpp:204
+#: search/searchrule/searchrule.cpp:204 search/searchrule/searchrule.cpp:207
 #, kde-format
 msgid "is in category"
 msgstr "είναι στην κατηγορία"
 
-#: search/searchrule/searchrule.cpp:207
+#: search/searchrule/searchrule.cpp:210
 #: search/widgethandler/messagerulewidgethandler.cpp:28
 #: search/widgethandler/messagerulewidgethandler.cpp:145
 #, kde-format
 msgid "has an attachment"
 msgstr "έχει συνημμένο"
 
-#: search/searchrule/searchrule.cpp:210
+#: search/searchrule/searchrule.cpp:213
 #, kde-format
 msgid "has not an attachment"
 msgstr "δεν έχει συνημμένο"
 
-#: search/searchrule/searchrule.cpp:213
+#: search/searchrule/searchrule.cpp:216
 #, kde-format
 msgid "start with"
 msgstr "αρχίζει με"
 
-#: search/searchrule/searchrule.cpp:216
+#: search/searchrule/searchrule.cpp:219
 #, kde-format
 msgid "not start with"
 msgstr "δεν αρχίζει με"
 
-#: search/searchrule/searchrule.cpp:219
+#: search/searchrule/searchrule.cpp:222
 #, kde-format
 msgid "end with"
 msgstr "τελειώνει με"
 
-#: search/searchrule/searchrule.cpp:222
+#: search/searchrule/searchrule.cpp:225
 #, kde-format
 msgid "not end with"
 msgstr "δεν τελειώνει με"
 
-#: search/searchrule/searchrule.cpp:225
+#: search/searchrule/searchrule.cpp:228
 #, kde-format
 msgid "none"
 msgstr "κανένα"
 
-#: search/searchrule/searchrule.cpp:228
+#: search/searchrule/searchrule.cpp:231
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
 #: search/widgethandler/tagrulewidgethandler.cpp:93
@@ -2339,74 +2346,74 @@ msgstr "κανένα"
 msgid "contains"
 msgstr "περιέχει"
 
-#: search/searchrule/searchrule.cpp:231
+#: search/searchrule/searchrule.cpp:234
 #, kde-format
 msgid "not contains"
 msgstr "δεν περιέχει"
 
-#: search/searchrule/searchrule.cpp:234
+#: search/searchrule/searchrule.cpp:237
 #, kde-format
 msgid "has regexp"
 msgstr "έχει κανονική έκφραση"
 
-#: search/searchrule/searchrule.cpp:237
+#: search/searchrule/searchrule.cpp:240
 #, kde-format
 msgid "not regexp"
 msgstr "χωρίς κανονική έκφραση"
 
-#: search/searchrule/searchrule.cpp:251
+#: search/searchrule/searchrule.cpp:254
 #, kde-format
 msgid "size equals not supported"
 msgstr ""
 
-#: search/searchrule/searchrule.cpp:254
+#: search/searchrule/searchrule.cpp:257
 #, fuzzy, kde-format
 #| msgid "is not equal to"
 msgid "size not equals not supported"
 msgstr "δεν είναι ίσο με"
 
-#: search/searchrule/searchrule.cpp:285 search/searchrule/searchrule.cpp:392
-#: search/searchrule/searchrule.cpp:474
+#: search/searchrule/searchrule.cpp:288 search/searchrule/searchrule.cpp:395
+#: search/searchrule/searchrule.cpp:477
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr ""
 
-#: search/searchrule/searchrule.cpp:292
+#: search/searchrule/searchrule.cpp:295
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr ""
 
-#: search/searchrule/searchrule.cpp:295
+#: search/searchrule/searchrule.cpp:298
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr ""
 
-#: search/searchrule/searchrule.cpp:298
+#: search/searchrule/searchrule.cpp:301
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr ""
 
-#: search/searchrule/searchrule.cpp:301
+#: search/searchrule/searchrule.cpp:304
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr ""
 
-#: search/searchrule/searchrule.cpp:304
+#: search/searchrule/searchrule.cpp:307
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr ""
 
-#: search/searchrule/searchrule.cpp:307
+#: search/searchrule/searchrule.cpp:310
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr ""
 
-#: search/searchrule/searchrule.cpp:309
+#: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr ""
 
-#: search/searchrule/searchrule.cpp:312
+#: search/searchrule/searchrule.cpp:315
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr ""
@@ -2425,6 +2432,30 @@ msgstr ""
 #, kde-format
 msgid "String is empty."
 msgstr ""
+
+#: search/widgethandler/attachmentwidgethandler.cpp:17
+msgid "has"
+msgstr ""
+
+#: search/widgethandler/attachmentwidgethandler.cpp:17
+#, fuzzy
+#| msgid "is not"
+msgid "has not"
+msgstr "δεν είναι"
+
+#: search/widgethandler/attachmentwidgethandler.cpp:54
+#, fuzzy, kde-format
+#| msgctxt "message status"
+#| msgid "Has Attachment"
+msgctxt "@label:textbox"
+msgid "attachments"
+msgstr "Με συνημμένο"
+
+#: search/widgethandler/attachmentwidgethandler.cpp:91
+#, fuzzy, kde-format
+#| msgid "has an attachment"
+msgid "has attachment"
+msgstr "έχει συνημμένο"
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
