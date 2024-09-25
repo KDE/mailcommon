@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-19 00:40+0000\n"
-"PO-Revision-Date: 2024-09-11 13:42+0200\n"
+"PO-Revision-Date: 2024-09-23 15:18+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -2179,10 +2179,8 @@ msgid "Encryption"
 msgstr "Криптиране"
 
 #: search/searchpatternedit.cpp:57
-#, fuzzy
-#| msgid "Attachments:"
 msgid "Attachment"
-msgstr "Прикачени файлове:"
+msgstr "Прикачен файл"
 
 #: search/searchpatternedit.cpp:145
 #, kde-format
@@ -2398,24 +2396,20 @@ msgstr "Низът е празен."
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 msgid "has"
-msgstr ""
+msgstr "има"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
-#, fuzzy
-#| msgid "is not"
 msgid "has not"
-msgstr "не е"
+msgstr "няма"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Attachments:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
-msgstr "Прикачени файлове:"
+msgstr "прикачени файлове"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "has an attachment"
+#, kde-format
 msgid "has attachment"
 msgstr "има прикачен файл"
 
