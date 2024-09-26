@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-19 00:40+0000\n"
-"PO-Revision-Date: 2024-08-20 17:38+0200\n"
+"PO-Revision-Date: 2024-09-20 14:48+0200\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -2189,9 +2189,6 @@ msgid "Encryption"
 msgstr "Cifratura"
 
 #: search/searchpatternedit.cpp:57
-#, fuzzy
-#| msgctxt "Attachement indication"
-#| msgid "Attachment"
 msgid "Attachment"
 msgstr "Allegato"
 
@@ -2408,30 +2405,23 @@ msgid "String is empty."
 msgstr "La stringa è vuota."
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
-#, fuzzy
-#| msgid "Charset"
 msgid "has"
-msgstr "Insieme di caratteri"
+msgstr "ha"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
-#, fuzzy
-#| msgid "is not"
 msgid "has not"
-msgstr "non è"
+msgstr "non ha"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgctxt "Config->Composer->Attachments"
-#| msgid "Attachments"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
-msgstr "Allegati"
+msgstr "allegati"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "has an attachment"
+#, kde-format
 msgid "has attachment"
-msgstr "ha un allegato"
+msgstr "ha allegati"
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
