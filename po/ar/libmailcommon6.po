@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-19 00:40+0000\n"
-"PO-Revision-Date: 2024-08-15 12:13+0400\n"
+"PO-Revision-Date: 2024-09-26 13:30+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -26,19 +26,16 @@ msgid "Expiry"
 msgstr "الانقضاء"
 
 #: collectionpage/collectionexpirywidget.cpp:37
-#, fuzzy, kde-format
-#| msgctxt "Expire messages after %1"
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] " (أقلّ من يوم)"
-msgstr[1] " (يوم واحد)"
-msgstr[2] " (يومان)"
-msgstr[3] " أيّام"
-msgstr[4] " يومًا"
-msgstr[5] " يوم"
+msgstr[0] "أقل من يوم"
+msgstr[1] "يوم واحد‏"
+msgstr[2] "يومان‏"
+msgstr[3] "‏%v أيام"
+msgstr[4] "‏%v يومًا"
+msgstr[5] "‏%v يوم‏"
 
 #: collectionpage/collectionexpirywidget.cpp:39
 #: collectionpage/collectionexpirywidget.cpp:45
@@ -1005,15 +1002,13 @@ msgid "Export Filters"
 msgstr "تصدير مرشّحات"
 
 #: filter/filterselectiondialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "حدّد الكلّ"
 
 #: filter/filterselectiondialog.cpp:30
-#, fuzzy, kde-format
-#| msgid "Unselect All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "أزِل تحديد الكلّ"
@@ -1702,8 +1697,7 @@ msgid "&New Subfolder…"
 msgstr "مجلد فرعي ج&ديد…"
 
 #: folder/folderselectiondialog.cpp:66
-#, fuzzy, kde-format
-#| msgid "Create a new subfolder under the currently selected folder"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "أنشئ مجلّدًا فرعيًّا جديدًا تحت المجلّد المحدّد حاليًّا"
@@ -2094,10 +2088,8 @@ msgid "Encryption"
 msgstr "التعمية"
 
 #: search/searchpatternedit.cpp:57
-#, fuzzy
-#| msgid "Attachments:"
 msgid "Attachment"
-msgstr "المرفقات:"
+msgstr "المرفق"
 
 #: search/searchpatternedit.cpp:145
 #, kde-format
@@ -2316,23 +2308,19 @@ msgid "has"
 msgstr ""
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
-#, fuzzy
-#| msgid "is not"
 msgid "has not"
 msgstr "ليس"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Attachments:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
-msgstr "المرفقات:"
+msgstr "المرفقات"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "has an attachment"
+#, kde-format
 msgid "has attachment"
-msgstr "لديه مرفقات"
+msgstr "فيها مرفقات"
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
@@ -2481,19 +2469,16 @@ msgid " kB"
 msgstr " ك.بايت"
 
 #: search/widgethandler/numericrulewidgethandler.cpp:158
-#, fuzzy, kde-format
-#| msgctxt "Unit suffix where units are days."
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Unit suffix where units are days."
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] " (أقلّ من يوم)"
-msgstr[1] " يوم واحد"
-msgstr[2] " يومان"
-msgstr[3] " أيّام"
-msgstr[4] " يومًا"
-msgstr[5] " يوم"
+msgstr[0] "أقل من يوم"
+msgstr[1] "يوم واحد"
+msgstr[2] "يومان"
+msgstr[3] "‏%v أيام"
+msgstr[4] "‏%v يومًا"
+msgstr[5] "‏%v يوم"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:28
 msgctxt "message status"
