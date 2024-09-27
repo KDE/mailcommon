@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-04 00:39+0000\n"
-"PO-Revision-Date: 2024-08-15 12:13+0400\n"
+"PO-Revision-Date: 2024-09-26 13:30+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -980,15 +980,13 @@ msgid "Export Filters"
 msgstr "تصدير مرشّحات"
 
 #: filter/filterselectiondialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "حدّد الكلّ"
 
 #: filter/filterselectiondialog.cpp:30
-#, fuzzy, kde-format
-#| msgid "Unselect All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "أزِل تحديد الكلّ"
@@ -2627,7 +2625,7 @@ msgstr ""
 #: snippets/snippetsmodel.cpp:527 snippets/snippetsmodel.cpp:556
 #, kde-format
 msgid "Update snippet"
-msgstr ""
+msgstr "حدث القصاصة"
 
 #: snippets/snippetsmodel.cpp:528 snippets/snippetsmodel.cpp:557
 #, kde-format
@@ -2770,7 +2768,7 @@ msgstr "الاسم:"
 #: tag/tagwidget.cpp:70
 #, kde-format
 msgid "Change te&xt color:"
-msgstr ""
+msgstr "غيّر لون ال&خط:"
 
 #: tag/tagwidget.cpp:86
 #, kde-format
