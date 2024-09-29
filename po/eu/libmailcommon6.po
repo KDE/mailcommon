@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-19 00:40+0000\n"
-"PO-Revision-Date: 2024-08-19 10:33+0200\n"
+"PO-Revision-Date: 2024-09-28 13:20+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 24.08.1\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -2176,10 +2176,8 @@ msgid "Encryption"
 msgstr "Zifratzea"
 
 #: search/searchpatternedit.cpp:57
-#, fuzzy
-#| msgid "Attachments:"
 msgid "Attachment"
-msgstr "Eranskinak:"
+msgstr "Eranskina"
 
 #: search/searchpatternedit.cpp:145
 #, kde-format
@@ -2395,26 +2393,22 @@ msgstr "Katea hutsik dago."
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 msgid "has"
-msgstr ""
+msgstr "du"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
-#, fuzzy
-#| msgid "is not"
 msgid "has not"
-msgstr "ez da"
+msgstr "ez du"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Attachments:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
-msgstr "Eranskinak:"
+msgstr "eranskinak"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "has an attachment"
+#, kde-format
 msgid "has attachment"
-msgstr "eranskin bat du"
+msgstr "eranskina du"
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
