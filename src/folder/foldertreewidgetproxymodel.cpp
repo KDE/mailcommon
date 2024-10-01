@@ -75,7 +75,6 @@ FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModel(QObject *parent, FolderTr
     : Akonadi::EntityRightsFilterModel(parent)
     , d(new FolderTreeWidgetProxyModelPrivate(this))
 {
-    setDynamicSortFilter(true);
     setFilterCaseSensitivity(Qt::CaseInsensitive);
 
     if (option & HideVirtualFolder) {
