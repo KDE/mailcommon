@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-19 00:40+0000\n"
-"PO-Revision-Date: 2024-08-20 08:52+0200\n"
+"PO-Revision-Date: 2024-09-20 15:11+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 24.08.1\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -2112,10 +2112,8 @@ msgid "Encryption"
 msgstr "Šifrování"
 
 #: search/searchpatternedit.cpp:57
-#, fuzzy
-#| msgid "Attachments:"
 msgid "Attachment"
-msgstr "Přílohy:"
+msgstr "Příloha"
 
 #: search/searchpatternedit.cpp:145
 #, kde-format
@@ -2331,24 +2329,20 @@ msgstr "Řetězec je prázdný."
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 msgid "has"
-msgstr ""
+msgstr "má"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
-#, fuzzy
-#| msgid "is not"
 msgid "has not"
-msgstr "není"
+msgstr "nemá"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Attachments:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
-msgstr "Přílohy:"
+msgstr "přílohy"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "has an attachment"
+#, kde-format
 msgid "has attachment"
 msgstr "má přílohu"
 
