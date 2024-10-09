@@ -183,8 +183,8 @@ KMime::Message::Ptr CryptoUtils::assembleMessage(const KMime::Message::Ptr &orig
     }
 
     // Overwrite some headers by those provided by the new content
-    headers = newContent->headers();
-    for (const auto hdr : std::as_const(headers)) {
+    const auto newContentHeaders = newContent->headers();
+    for (const auto hdr : newContentHeaders) {
         if (isContentHeader(hdr)) {
             copyHeader(hdr, out);
         }
