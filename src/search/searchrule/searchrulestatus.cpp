@@ -6,6 +6,7 @@
 
 #include "searchrulestatus.h"
 #include "filter/filterlog.h"
+#include <QVariant>
 using MailCommon::FilterLog;
 
 using namespace MailCommon;
