@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-04 00:39+0000\n"
-"PO-Revision-Date: 2024-09-08 13:38+0200\n"
+"PO-Revision-Date: 2024-10-20 16:32+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -75,6 +75,8 @@ msgid ""
 "Please select a folder to expire messages into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
+"காலாவதியான அஞ்சல்களை எந்த அடைவிற்கு நகர்த்த வேண்டுமென்பதைத் தேர்வுசெய்யவும்.\n"
+"எதையும் தேர்ந்தெடுக்காவிட்டால் காலாவதியான அஞ்சல்கள் நீக்கப்படும்."
 
 #: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
@@ -88,6 +90,8 @@ msgid ""
 "into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
+"காலாவதியான அஞ்சல்களுக்கான  எந்த அடைவிற்கு நகர்த்த வேண்டுமென்பதைத் தேர்வுசெய்யவும்.\n"
+"எதையும் தேர்ந்தெடுக்காவிட்டால் காலாவதியான அஞ்சல்கள் நீக்கப்படும்."
 
 #: collectionpage/collectionexpirywidget.cpp:189
 #, kde-format
@@ -269,6 +273,8 @@ msgstr "கணக்கைத் தேர்ந்தெடுப்பது"
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr ""
+"வடிகட்டிக்கான கணக்கை காணவில்லை. \"%1\" எனும் வடிகட்டியுடன் பயன்படுத்த வேண்டிய கணக்கைத் "
+"தேர்ந்தெடுக்கவும்"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:73
@@ -299,6 +305,8 @@ msgstr "அடைவைத் தேர்ந்தெடுக்கவும�
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
 msgstr ""
+"வடிகட்டிக்கான அடைவைக் காணவில்லை. \"%1\" எனும் வடிகட்டியுடன் பயன்படுத்த வேண்டிய அடைவைத் "
+"தேர்ந்தெடுக்கவும்"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
 #, kde-format
@@ -312,6 +320,8 @@ msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
 "\"%1\""
 msgstr ""
+"வடிகட்டிக்கான அடையாளத்தைக் காணவில்லை. \"%1\" எனும் வடிகட்டியுடன் பயன்படுத்த வேண்டிய "
+"அடையாளத்தைத் தேர்ந்தெடுக்கவும்"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
 #, kde-format
@@ -346,6 +356,8 @@ msgstr "குறிச்சொல் \"%1\" என இருந்தது."
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
+"வடிகட்டிக்கான குறிச்சொல்லைக் காணவில்லை. \"%1\" எனும் வடிகட்டியுடன் பயன்படுத்த வேண்டிய "
+"குறிச்சொல்லைத் தேர்ந்தெடுக்கவும்"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
@@ -364,6 +376,8 @@ msgid ""
 "Filter template is missing. Please select a template to use with filter "
 "\"%1\""
 msgstr ""
+"வடிகட்டிக்கான வார்ப்புருவைக் காணவில்லை. \"%1\" எனும் வடிகட்டியுடன் பயன்படுத்த வேண்டிய "
+"வார்ப்புருவைத் தேர்ந்தெடுக்கவும்"
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
 #, kde-format
@@ -907,12 +921,12 @@ msgstr ""
 #: filter/filterimporter/filterimportergmail.cpp:48
 #, kde-format
 msgid "Gmail filter %1"
-msgstr ""
+msgstr "Gmail வடிகட்டி %1"
 
 #: filter/filterimporter/filterimporterprocmail.cpp:52
 #, kde-format
 msgid "Procmail filter %1"
-msgstr ""
+msgstr "Procmail வடிகட்டு %1"
 
 #: filter/filterimporterexporter.cpp:112
 #, kde-format
@@ -924,45 +938,45 @@ msgstr ""
 #: filter/filterimporterexporter.cpp:138
 #, kde-format
 msgid "Import KMail Filters"
-msgstr ""
+msgstr "கேமெயில் வடிகட்டிகளை இறக்குமதி செய்வது"
 
 #: filter/filterimporterexporter.cpp:146
 #, kde-format
 msgid "Import Evolution Filters"
-msgstr ""
+msgstr "Evolution வடிகட்டிகளை இறக்குமதி செய்வது"
 
 #: filter/filterimporterexporter.cpp:150
 #, kde-format
 msgid "Import Sylpheed Filters"
-msgstr ""
+msgstr "Sylpheed வடிகட்டிகளை இறக்குமதி செய்வது"
 
 #: filter/filterimporterexporter.cpp:154
 #, kde-format
 msgid "Import Procmail Filters"
-msgstr ""
+msgstr "Procmail வடிகட்டிகளை இறக்குமதி செய்வது"
 
 #: filter/filterimporterexporter.cpp:158
 #, kde-format
 msgid "Import Balsa Filters"
-msgstr ""
+msgstr "Balsa வடிகட்டிகளை இறக்குமதி செய்வது"
 
 #: filter/filterimporterexporter.cpp:162
 #, kde-format
 msgid "Import Claws Mail Filters"
-msgstr ""
+msgstr "Claws வடிகட்டிகளை இறக்குமதி செய்வது"
 
 #: filter/filterimporterexporter.cpp:166
 #, kde-format
 msgid "Import Gmail Filters"
-msgstr ""
+msgstr "Gmail வடிகட்டிகளை இறக்குமதி செய்வது"
 
 #: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
 #: filter/filterimporterexporter.cpp:236
-#, kde-format
+#, fuzzy, kde-format
 msgid ""
 "The selected file is not readable. Your file access permissions might be "
 "insufficient."
-msgstr ""
+msgstr "தேர்ந்தெடுத்த கோப்பைப் படிக்க முடியவில்லை"
 
 #: filter/filterimporterexporter.cpp:316
 #, kde-format
