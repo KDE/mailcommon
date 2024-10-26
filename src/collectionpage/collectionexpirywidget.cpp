@@ -33,9 +33,7 @@ public:
         : QSpinBox(parent)
     {
         setMaximum(999999);
-#if KI18N_VERSION > QT_VERSION_CHECK(6, 5, 0)
         KLocalization::setupSpinBoxFormatString(this, ki18ncp("Expire messages after %1", "%v day", "%v days"));
-#endif
         setSpecialValueText(i18n("Never"));
     }
 
