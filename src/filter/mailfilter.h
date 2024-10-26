@@ -42,7 +42,11 @@ public:
       @param NoResult For internal use only!
 
     */
-    enum ReturnCode { NoResult, GoOn, CriticalError };
+    enum ReturnCode {
+        NoResult,
+        GoOn,
+        CriticalError
+    };
 
     /** Account type codes used by setApplicability. They mean:
 

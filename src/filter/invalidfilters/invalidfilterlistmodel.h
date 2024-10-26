@@ -16,7 +16,9 @@ class InvalidFilterListModel : public QAbstractListModel
     Q_OBJECT
 
 public:
-    enum Role { InformationRole = Qt::UserRole + 1 };
+    enum Role {
+        InformationRole = Qt::UserRole + 1
+    };
 
     explicit InvalidFilterListModel(QObject *parent = nullptr);
     ~InvalidFilterListModel() override;

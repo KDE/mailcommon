@@ -26,7 +26,9 @@ private:
     void readConfig();
     void writeConfig();
 
-    enum TypeData { UrlData = Qt::UserRole + 1 };
+    enum TypeData {
+        UrlData = Qt::UserRole + 1
+    };
     QListWidget *const mTagList;
 };
 }

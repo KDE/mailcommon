@@ -44,7 +44,9 @@ private:
     getPotentialFolders(const QAbstractItemModel *model, const QModelIndex &parentIndex, const QString &realPath, Akonadi::Collection::List &list);
     MAILCOMMON_NO_EXPORT void writeConfig();
     MAILCOMMON_NO_EXPORT void readConfig();
-    enum collectionEnum { IdentifyCollection = Qt::UserRole + 1 };
+    enum collectionEnum {
+        IdentifyCollection = Qt::UserRole + 1
+    };
 
     MailCommon::FolderRequester *const mFolderRequester;
     QListWidget *mListwidget = nullptr;

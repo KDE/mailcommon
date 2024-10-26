@@ -11,7 +11,10 @@
 class GPGHelper
 {
 public:
-    enum CryptoType { OpenPGP, SMIME };
+    enum CryptoType {
+        OpenPGP,
+        SMIME
+    };
 
     explicit GPGHelper(const QString &templateGnupgHome);
     ~GPGHelper();

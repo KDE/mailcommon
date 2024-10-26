@@ -38,7 +38,13 @@ public:
     [[nodiscard]] QString informationAboutNotValidAction() const override;
 
 private:
-    enum HeaderType { FromHeader, ToHeader, CcHeader, BccHeader, UnknownHeader };
+    enum HeaderType {
+        FromHeader,
+        ToHeader,
+        CcHeader,
+        BccHeader,
+        UnknownHeader
+    };
 
     const QString mFromStr, mToStr, mCCStr, mBCCStr;
     HeaderType mHeaderType;

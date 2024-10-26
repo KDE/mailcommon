@@ -23,7 +23,11 @@ class MAILCOMMON_EXPORT Tag
     Q_GADGET
 public:
     using Ptr = QSharedPointer<Tag>;
-    enum SaveFlag { TextColor = 1, BackgroundColor = 1 << 1, Font = 1 << 2 };
+    enum SaveFlag {
+        TextColor = 1,
+        BackgroundColor = 1 << 1,
+        Font = 1 << 2
+    };
     using SaveFlags = QFlags<SaveFlag>;
 
     // Returns true if two tags are equal
