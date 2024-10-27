@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-02 00:40+0000\n"
+"POT-Creation-Date: 2024-10-27 00:41+0000\n"
 "PO-Revision-Date: 2024-09-23 15:18+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -23,7 +23,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "Бракуване"
 
-#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:36
 #, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
@@ -31,46 +31,46 @@ msgid_plural "%v days"
 msgstr[0] "%v ден"
 msgstr[1] "%v дни"
 
-#: collectionpage/collectionexpirywidget.cpp:39
-#: collectionpage/collectionexpirywidget.cpp:45
-#: collectionpage/collectionexpirywidget.cpp:57
+#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:43
+#: collectionpage/collectionexpirywidget.cpp:55
 #, kde-format
 msgid "Never"
 msgstr "Никога"
 
-#: collectionpage/collectionexpirywidget.cpp:69
+#: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Запазване на настройките и бракуване сега"
 
-#: collectionpage/collectionexpirywidget.cpp:70
+#: collectionpage/collectionexpirywidget.cpp:68
 #, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Бракуване на съобщения с невалидна дата"
 
-#: collectionpage/collectionexpirywidget.cpp:76
+#: collectionpage/collectionexpirywidget.cpp:74
 #, kde-format
 msgid "Expire read messages after:"
 msgstr "Бракуване на прочетените съобщения след:"
 
-#: collectionpage/collectionexpirywidget.cpp:79
+#: collectionpage/collectionexpirywidget.cpp:77
 #, kde-format
 msgid "Expire unread messages after:"
 msgstr "Бракуване на непрочетените съобщения след:"
 
-#: collectionpage/collectionexpirywidget.cpp:93
+#: collectionpage/collectionexpirywidget.cpp:91
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "Преместване на бракувани съобщения в:"
 
-#: collectionpage/collectionexpirywidget.cpp:104
+#: collectionpage/collectionexpirywidget.cpp:102
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "Изтриване на бракуваните съобщения"
 
-#: collectionpage/collectionexpirywidget.cpp:175
+#: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -80,13 +80,13 @@ msgstr ""
 "Ако това не бъде направено, бракуваните съобщения ще бъдат изтрити за "
 "постоянно."
 
-#: collectionpage/collectionexpirywidget.cpp:176
+#: collectionpage/collectionexpirywidget.cpp:174
 #, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Не е избрана папка"
 
-#: collectionpage/collectionexpirywidget.cpp:190
+#: collectionpage/collectionexpirywidget.cpp:188
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -97,7 +97,7 @@ msgstr ""
 "Ако това не бъде направено, бракуваните съобщения ще бъдат изтрити за "
 "постоянно."
 
-#: collectionpage/collectionexpirywidget.cpp:192
+#: collectionpage/collectionexpirywidget.cpp:190
 #, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
@@ -2559,7 +2559,7 @@ msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " кБ"
 
-#: search/widgethandler/numericrulewidgethandler.cpp:158
+#: search/widgethandler/numericrulewidgethandler.cpp:157
 #, kde-format
 msgctxt "Unit suffix where units are days."
 msgid "%v day"

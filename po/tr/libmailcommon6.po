@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-02 00:40+0000\n"
+"POT-Creation-Date: 2024-10-27 00:41+0000\n"
 "PO-Revision-Date: 2024-09-19 19:39+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -28,7 +28,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "Süre Dolumu"
 
-#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:36
 #, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
@@ -36,46 +36,46 @@ msgid_plural "%v days"
 msgstr[0] "%v gün"
 msgstr[1] "%v gün"
 
-#: collectionpage/collectionexpirywidget.cpp:39
-#: collectionpage/collectionexpirywidget.cpp:45
-#: collectionpage/collectionexpirywidget.cpp:57
+#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:43
+#: collectionpage/collectionexpirywidget.cpp:55
 #, kde-format
 msgid "Never"
 msgstr "Asla"
 
-#: collectionpage/collectionexpirywidget.cpp:69
+#: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Ayarları Kaydet ve Şimdi Sürelerini Doldur"
 
-#: collectionpage/collectionexpirywidget.cpp:70
+#: collectionpage/collectionexpirywidget.cpp:68
 #, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Geçersiz tarihli iletilerin süresini doldur"
 
-#: collectionpage/collectionexpirywidget.cpp:76
+#: collectionpage/collectionexpirywidget.cpp:74
 #, kde-format
 msgid "Expire read messages after:"
 msgstr "Okunan iletilerin son kullanma tarihi:"
 
-#: collectionpage/collectionexpirywidget.cpp:79
+#: collectionpage/collectionexpirywidget.cpp:77
 #, kde-format
 msgid "Expire unread messages after:"
 msgstr "Okunmamış iletilerin son kullanma tarihi:"
 
-#: collectionpage/collectionexpirywidget.cpp:93
+#: collectionpage/collectionexpirywidget.cpp:91
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "Süresi dolmuş iletileri şuraya taşı:"
 
-#: collectionpage/collectionexpirywidget.cpp:104
+#: collectionpage/collectionexpirywidget.cpp:102
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "Süresi dolmuş iletileri kalıcı olarak sil"
 
-#: collectionpage/collectionexpirywidget.cpp:175
+#: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -84,13 +84,13 @@ msgstr ""
 "Süresi dolan iletiler için bir klasör seçin.\n"
 "Bu işlem yapılmazsa süresi dolan iletiler kalıcı olarak silinecektir."
 
-#: collectionpage/collectionexpirywidget.cpp:176
+#: collectionpage/collectionexpirywidget.cpp:174
 #, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Seçili Klasör Yok"
 
-#: collectionpage/collectionexpirywidget.cpp:190
+#: collectionpage/collectionexpirywidget.cpp:188
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -100,7 +100,7 @@ msgstr ""
 "Süresi dolan iletiler için bu klasörden başka bir klasör seçin.\n"
 "Bu işlem yapılmazsa süresi dolan iletiler kalıcı olarak silinecektir."
 
-#: collectionpage/collectionexpirywidget.cpp:192
+#: collectionpage/collectionexpirywidget.cpp:190
 #, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
@@ -2539,7 +2539,7 @@ msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " kB"
 
-#: search/widgethandler/numericrulewidgethandler.cpp:158
+#: search/widgethandler/numericrulewidgethandler.cpp:157
 #, kde-format
 msgctxt "Unit suffix where units are days."
 msgid "%v day"

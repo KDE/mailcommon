@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-02 00:40+0000\n"
+"POT-Creation-Date: 2024-10-27 00:41+0000\n"
 "PO-Revision-Date: 2024-08-21 00:33+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -23,53 +23,53 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "오래된 메시지 정리"
 
-#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:36
 #, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
 msgid_plural "%v days"
 msgstr[0] "%v일"
 
-#: collectionpage/collectionexpirywidget.cpp:39
-#: collectionpage/collectionexpirywidget.cpp:45
-#: collectionpage/collectionexpirywidget.cpp:57
+#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:43
+#: collectionpage/collectionexpirywidget.cpp:55
 #, kde-format
 msgid "Never"
 msgstr "하지 않음"
 
-#: collectionpage/collectionexpirywidget.cpp:69
+#: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "설정을 저장하고 지금 정리"
 
-#: collectionpage/collectionexpirywidget.cpp:70
+#: collectionpage/collectionexpirywidget.cpp:68
 #, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "날짜가 잘못된 메시지 정리"
 
-#: collectionpage/collectionexpirywidget.cpp:76
+#: collectionpage/collectionexpirywidget.cpp:74
 #, kde-format
 msgid "Expire read messages after:"
 msgstr "읽은 메시지를 다음 기간 이후에 정리:"
 
-#: collectionpage/collectionexpirywidget.cpp:79
+#: collectionpage/collectionexpirywidget.cpp:77
 #, kde-format
 msgid "Expire unread messages after:"
 msgstr "읽지 않은 메시지를 다음 기간 이후에 정리:"
 
-#: collectionpage/collectionexpirywidget.cpp:93
+#: collectionpage/collectionexpirywidget.cpp:91
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "정리된 메시지를 다음으로 이동:"
 
-#: collectionpage/collectionexpirywidget.cpp:104
+#: collectionpage/collectionexpirywidget.cpp:102
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "정리된 메시지를 영구히 삭제"
 
-#: collectionpage/collectionexpirywidget.cpp:175
+#: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -78,13 +78,13 @@ msgstr ""
 "오래된 메시지를 정리하여 저장할 폴더를 선택하십시오.\n"
 "폴더를 지정하지 않으면 정리된 메시지를 삭제합니다."
 
-#: collectionpage/collectionexpirywidget.cpp:176
+#: collectionpage/collectionexpirywidget.cpp:174
 #, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "선택한 폴더 없음"
 
-#: collectionpage/collectionexpirywidget.cpp:190
+#: collectionpage/collectionexpirywidget.cpp:188
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -94,7 +94,7 @@ msgstr ""
 "오래된 메시지를 정리하여 저장할 현재 폴더와 다른 폴더를 선택하십시오.\n"
 "폴더를 지정하지 않으면 정리된 메시지를 삭제합니다."
 
-#: collectionpage/collectionexpirywidget.cpp:192
+#: collectionpage/collectionexpirywidget.cpp:190
 #, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
@@ -2510,7 +2510,7 @@ msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " kB"
 
-#: search/widgethandler/numericrulewidgethandler.cpp:158
+#: search/widgethandler/numericrulewidgethandler.cpp:157
 #, kde-format
 msgctxt "Unit suffix where units are days."
 msgid "%v day"

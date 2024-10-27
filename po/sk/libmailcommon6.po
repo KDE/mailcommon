@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-02 00:40+0000\n"
+"POT-Creation-Date: 2024-10-27 00:41+0000\n"
 "PO-Revision-Date: 2019-11-18 12:53+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -23,7 +23,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "Vypršanie"
 
-#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:36
 #, fuzzy, kde-format
 #| msgctxt "Expire messages after %1"
 #| msgid " day"
@@ -35,52 +35,52 @@ msgstr[0] " deň"
 msgstr[1] " dni"
 msgstr[2] " dní"
 
-#: collectionpage/collectionexpirywidget.cpp:39
-#: collectionpage/collectionexpirywidget.cpp:45
-#: collectionpage/collectionexpirywidget.cpp:57
+#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:43
+#: collectionpage/collectionexpirywidget.cpp:55
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu Never display tooltips."
 #| msgid "Never"
 msgid "Never"
 msgstr "Nikdy"
 
-#: collectionpage/collectionexpirywidget.cpp:69
+#: collectionpage/collectionexpirywidget.cpp:67
 #, fuzzy, kde-format
 #| msgid "Save Settings and Expire Now"
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Uložiť nastavenia a vypršať teraz"
 
-#: collectionpage/collectionexpirywidget.cpp:70
+#: collectionpage/collectionexpirywidget.cpp:68
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Skončiť platnosť prečítaných správ po"
 
-#: collectionpage/collectionexpirywidget.cpp:76
+#: collectionpage/collectionexpirywidget.cpp:74
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
 msgid "Expire read messages after:"
 msgstr "Skončiť platnosť prečítaných správ po"
 
-#: collectionpage/collectionexpirywidget.cpp:79
+#: collectionpage/collectionexpirywidget.cpp:77
 #, fuzzy, kde-format
 #| msgid "Expire unread messages after"
 msgid "Expire unread messages after:"
 msgstr "Skončiť platnosť neprečítaných správ po"
 
-#: collectionpage/collectionexpirywidget.cpp:93
+#: collectionpage/collectionexpirywidget.cpp:91
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "Premiestniť správy s vypršanou platnosťou do:"
 
-#: collectionpage/collectionexpirywidget.cpp:104
+#: collectionpage/collectionexpirywidget.cpp:102
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "Trvale vymazať správy s vypršanou platnosťou"
 
-#: collectionpage/collectionexpirywidget.cpp:175
+#: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -89,14 +89,14 @@ msgstr ""
 "Prosím vyberte priečinok na vypršanie tejto správy.\n"
 "Ak to nie je urobené, vypršané správy budú permanentne vymazané."
 
-#: collectionpage/collectionexpirywidget.cpp:176
+#: collectionpage/collectionexpirywidget.cpp:174
 #, fuzzy, kde-format
 #| msgid "No Folder Selected"
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Nebol vybraný žiaden priečinok"
 
-#: collectionpage/collectionexpirywidget.cpp:190
+#: collectionpage/collectionexpirywidget.cpp:188
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -107,7 +107,7 @@ msgstr ""
 "platnosťou.\n"
 "Ak to nie je urobené, vypršané správy budú permanentne vymazané."
 
-#: collectionpage/collectionexpirywidget.cpp:192
+#: collectionpage/collectionexpirywidget.cpp:190
 #, fuzzy, kde-format
 #| msgid "Wrong Folder Selected"
 msgctxt "@title:window"
@@ -2691,7 +2691,7 @@ msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " KB"
 
-#: search/widgethandler/numericrulewidgethandler.cpp:158
+#: search/widgethandler/numericrulewidgethandler.cpp:157
 #, fuzzy, kde-format
 #| msgctxt "Unit suffix where units are days."
 #| msgid " day"

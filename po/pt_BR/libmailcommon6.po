@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-02 00:40+0000\n"
+"POT-Creation-Date: 2024-10-27 00:41+0000\n"
 "PO-Revision-Date: 2023-10-05 18:23-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -28,7 +28,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "Expiração"
 
-#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:36
 #, fuzzy, kde-format
 #| msgctxt "Expire messages after %1"
 #| msgid " day"
@@ -39,48 +39,48 @@ msgid_plural "%v days"
 msgstr[0] " dia"
 msgstr[1] " dias"
 
-#: collectionpage/collectionexpirywidget.cpp:39
-#: collectionpage/collectionexpirywidget.cpp:45
-#: collectionpage/collectionexpirywidget.cpp:57
+#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:43
+#: collectionpage/collectionexpirywidget.cpp:55
 #, kde-format
 msgid "Never"
 msgstr "Nunca"
 
-#: collectionpage/collectionexpirywidget.cpp:69
+#: collectionpage/collectionexpirywidget.cpp:67
 #, fuzzy, kde-format
 #| msgid "Save Settings and Expire Now"
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Salvar as configurações e expirar agora"
 
-#: collectionpage/collectionexpirywidget.cpp:70
+#: collectionpage/collectionexpirywidget.cpp:68
 #, fuzzy, kde-format
 #| msgid "Expire messages with invalid date"
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Expirar mensagens com data inválida"
 
-#: collectionpage/collectionexpirywidget.cpp:76
+#: collectionpage/collectionexpirywidget.cpp:74
 #, kde-format
 msgid "Expire read messages after:"
 msgstr "Expirar as mensagens lidas após:"
 
-#: collectionpage/collectionexpirywidget.cpp:79
+#: collectionpage/collectionexpirywidget.cpp:77
 #, kde-format
 msgid "Expire unread messages after:"
 msgstr "Expirar as mensagens não lidas após:"
 
-#: collectionpage/collectionexpirywidget.cpp:93
+#: collectionpage/collectionexpirywidget.cpp:91
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "Mover as mensagens expiradas para:"
 
-#: collectionpage/collectionexpirywidget.cpp:104
+#: collectionpage/collectionexpirywidget.cpp:102
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "Excluir permanentemente as mensagens expiradas"
 
-#: collectionpage/collectionexpirywidget.cpp:175
+#: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -90,14 +90,14 @@ msgstr ""
 "Se isto não for feito, as mensagens expiradas serão excluídas "
 "permanentemente."
 
-#: collectionpage/collectionexpirywidget.cpp:176
+#: collectionpage/collectionexpirywidget.cpp:174
 #, fuzzy, kde-format
 #| msgid "No Folder Selected"
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Nenhuma pasta selecionada"
 
-#: collectionpage/collectionexpirywidget.cpp:190
+#: collectionpage/collectionexpirywidget.cpp:188
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -109,7 +109,7 @@ msgstr ""
 "Se isto não for feito, as mensagens expiradas serão excluídas "
 "permanentemente."
 
-#: collectionpage/collectionexpirywidget.cpp:192
+#: collectionpage/collectionexpirywidget.cpp:190
 #, fuzzy, kde-format
 #| msgid "Wrong Folder Selected"
 msgctxt "@title:window"
@@ -2676,7 +2676,7 @@ msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " kB"
 
-#: search/widgethandler/numericrulewidgethandler.cpp:158
+#: search/widgethandler/numericrulewidgethandler.cpp:157
 #, fuzzy, kde-format
 #| msgctxt "Unit suffix where units are days."
 #| msgid " day"

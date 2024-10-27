@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-02 00:40+0000\n"
+"POT-Creation-Date: 2024-10-27 00:41+0000\n"
 "PO-Revision-Date: 2024-10-20 16:32+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -23,7 +23,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "காலாவதி"
 
-#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:36
 #, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
@@ -31,46 +31,46 @@ msgid_plural "%v days"
 msgstr[0] "%v நாள்"
 msgstr[1] "%v நாட்கள்"
 
-#: collectionpage/collectionexpirywidget.cpp:39
-#: collectionpage/collectionexpirywidget.cpp:45
-#: collectionpage/collectionexpirywidget.cpp:57
+#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:43
+#: collectionpage/collectionexpirywidget.cpp:55
 #, kde-format
 msgid "Never"
 msgstr "ஒருபோதும் வேண்டாம்"
 
-#: collectionpage/collectionexpirywidget.cpp:69
+#: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "அமைப்புகளை இப்போது சேமித்து காலாதியாக்கு"
 
-#: collectionpage/collectionexpirywidget.cpp:70
+#: collectionpage/collectionexpirywidget.cpp:68
 #, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "செல்லுபடியாகாத தேதியுள்ள அஞ்சல்களை காலாவதியாக்கு"
 
-#: collectionpage/collectionexpirywidget.cpp:76
+#: collectionpage/collectionexpirywidget.cpp:74
 #, kde-format
 msgid "Expire read messages after:"
 msgstr "படித்த அஞ்சல்களை இதற்கு பின் காலாவதியாக்கு:"
 
-#: collectionpage/collectionexpirywidget.cpp:79
+#: collectionpage/collectionexpirywidget.cpp:77
 #, kde-format
 msgid "Expire unread messages after:"
 msgstr "படிக்காத அஞ்சல்களை இதற்கு பின் காலாவதியாக்கு:"
 
-#: collectionpage/collectionexpirywidget.cpp:93
+#: collectionpage/collectionexpirywidget.cpp:91
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "காலாவதியான அஞ்சல்களை இங்கு நகர்த்து:"
 
-#: collectionpage/collectionexpirywidget.cpp:104
+#: collectionpage/collectionexpirywidget.cpp:102
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "காலாவதியான அஞ்சல்களை நிரந்தரமாக அழி"
 
-#: collectionpage/collectionexpirywidget.cpp:175
+#: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -79,13 +79,13 @@ msgstr ""
 "காலாவதியான அஞ்சல்களை எந்த அடைவிற்கு நகர்த்த வேண்டுமென்பதைத் தேர்வுசெய்யவும்.\n"
 "எதையும் தேர்ந்தெடுக்காவிட்டால் காலாவதியான அஞ்சல்கள் நீக்கப்படும்."
 
-#: collectionpage/collectionexpirywidget.cpp:176
+#: collectionpage/collectionexpirywidget.cpp:174
 #, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "எந்த அடைவும் தேர்ந்தெடுக்கப்படவில்லை"
 
-#: collectionpage/collectionexpirywidget.cpp:190
+#: collectionpage/collectionexpirywidget.cpp:188
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -95,7 +95,7 @@ msgstr ""
 "காலாவதியான அஞ்சல்களுக்கான  எந்த அடைவிற்கு நகர்த்த வேண்டுமென்பதைத் தேர்வுசெய்யவும்.\n"
 "எதையும் தேர்ந்தெடுக்காவிட்டால் காலாவதியான அஞ்சல்கள் நீக்கப்படும்."
 
-#: collectionpage/collectionexpirywidget.cpp:192
+#: collectionpage/collectionexpirywidget.cpp:190
 #, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
@@ -2447,7 +2447,7 @@ msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr ""
 
-#: search/widgethandler/numericrulewidgethandler.cpp:158
+#: search/widgethandler/numericrulewidgethandler.cpp:157
 #, fuzzy, kde-format
 #| msgctxt "Expire messages after %1"
 #| msgid " day"
