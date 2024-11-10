@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-10-27 00:41+0000\n"
-"PO-Revision-Date: 2024-09-23 15:18+0200\n"
+"PO-Revision-Date: 2024-11-09 20:09+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.07.70\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -316,7 +316,7 @@ msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr ""
 "Липсва акаунт за филтриране. Моля, изберете акаунт, който да използвате с "
-"филтър \"%1\""
+"филтър „%1“"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:74
@@ -329,7 +329,7 @@ msgstr "Избиране на папка"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
-msgstr "Пътят на папката беше \"%1\"."
+msgstr "Пътят на папката беше „%1“."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
@@ -348,7 +348,7 @@ msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
 msgstr ""
 "Липсва папка с филтър. Моля, изберете папка, която да използвате с филтър "
-"\"%1\":"
+"„%1“:"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
 #, kde-format
@@ -363,7 +363,7 @@ msgid ""
 "\"%1\""
 msgstr ""
 "Личността на филтъра липсва. Моля, изберете идентичност, която да използвате "
-"с филтъра \"%1\""
+"с филтъра „%1“"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
 #, kde-format
@@ -375,14 +375,13 @@ msgstr "Избиране на звук"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
-msgstr "Звуковият файл беше \"%1\"."
+msgstr "Звуковият файл беше „%1“."
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr ""
-"Звуковият файл липсва. Моля, изберете звук, който да използвате с филтър "
-"\"%1\""
+"Звуковият файл липсва. Моля, изберете звук, който да използвате с филтър „%1“"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
@@ -394,14 +393,14 @@ msgstr "Избиране на етикет"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
-msgstr "Етикетът беше \"%1\"."
+msgstr "Етикетът беше „%1“."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:47
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
 "Липсва етикет за филтър. Моля, изберете етикет, който да се използва с "
-"филтър \"%1\""
+"филтър „%1“"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
@@ -421,7 +420,7 @@ msgid ""
 "\"%1\""
 msgstr ""
 "Липсва шаблон за филтър. Моля, изберете шаблон, който да използвате с филтър "
-"\"%1\""
+"„%1“"
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
 #, kde-format
@@ -436,7 +435,7 @@ msgid ""
 "\"%1\""
 msgstr ""
 "Липсва транспорт на филтър. Моля, изберете транспорт, който да използвате с "
-"филтър \"%1\""
+"филтър „%1“"
 
 #: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
 #, kde-format
@@ -1598,7 +1597,7 @@ msgstr "неозаглавен"
 #: filter/kmfilterlistbox.cpp:444
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
-msgstr "Искате ли да премахнете филтъра \"%1\"?"
+msgstr "Искате ли да премахнете филтъра „%1“?"
 
 #: filter/kmfilterlistbox.cpp:444
 #, kde-format
@@ -1628,7 +1627,7 @@ msgid ""
 "Rename filter \"%1\" to:\n"
 "(leave the field empty for automatic naming)"
 msgstr ""
-"Преименуване на филтъра \"%1\"на: \n"
+"Преименуване на филтъра „%1“на: \n"
 "(оставете полето празно за автоматично именуване)"
 
 #: filter/mailfilter.cpp:131
@@ -1939,7 +1938,7 @@ msgstr "Операцията беше отменена от потребител
 #: job/backupjob.cpp:151
 #, kde-format
 msgid "Failed to archive the folder '%1'."
-msgstr "Неуспешно архивиране на папката \"%1\"."
+msgstr "Неуспешно архивиране на папката „%1“."
 
 #: job/backupjob.cpp:155
 #, kde-format
@@ -1992,7 +1991,7 @@ msgstr "Неуспешно записване на съобщение в арх�
 #: job/backupjob.cpp:267
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
-msgstr "Изтеглянето на съобщение в папка \"%1\" е неуспешно."
+msgstr "Изтеглянето на съобщение в папка „%1“ е неуспешно."
 
 #: job/backupjob.cpp:333
 #, kde-format
@@ -2337,7 +2336,7 @@ msgstr "неравен размер не се поддържа"
 #: search/searchrule/searchrule.cpp:477
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
-msgstr "\"%1\"не се поддържа с условие \"%2\""
+msgstr "„%1“не се поддържа с условие „%2“"
 
 #: search/searchrule/searchrule.cpp:295
 #, kde-format
@@ -2708,8 +2707,8 @@ msgid ""
 "Do you really want to remove snippet \"%1\"?<nl/><warning>There is no way to "
 "undo the removal.</warning>"
 msgstr ""
-"Наистина ли искате да премахнете шаблона \"%1\"? <nl /><warning> Няма начин "
-"да отмените премахването. </warning>"
+"Наистина ли искате да премахнете шаблона „%1“? <nl /><warning> Няма начин да "
+"отмените премахването. </warning>"
 
 #: snippets/snippetsmanager.cpp:305
 #, kde-format
@@ -2730,14 +2729,14 @@ msgid ""
 "Do you really want to remove group \"%1\" along with all its snippets?<nl/"
 "><warning>There is no way to undo the removal.</warning>"
 msgstr ""
-"Наистина ли искате да премахнете групата \"%1\" заедно с всички нейни "
-"шаблони? <nl /><warning> Няма начин да отмените премахването. </warning>"
+"Наистина ли искате да премахнете групата „%1“ заедно с всички нейни шаблони? "
+"<nl /><warning> Няма начин да отмените премахването. </warning>"
 
 #: snippets/snippetsmanager.cpp:369
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to remove group \"%1\"?"
-msgstr "Наистина ли искате да премахнете групата \"%1\" ?"
+msgstr "Наистина ли искате да премахнете групата „%1“ ?"
 
 #: snippets/snippetsmanager.cpp:437 snippets/snippetsmanager.cpp:466
 #, kde-format
