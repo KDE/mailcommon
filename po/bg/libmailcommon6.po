@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-10-27 00:41+0000\n"
-"PO-Revision-Date: 2024-11-09 20:09+0100\n"
+"PO-Revision-Date: 2024-11-10 20:12+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.08.2\n"
+"X-Generator: Lokalize 24.11.70\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -456,7 +456,7 @@ msgstr "Файл на Thunderbird (*.dat)"
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
 msgid "### \"action '%1' not supported\""
-msgstr "### \" действие '%1' не се поддържа \""
+msgstr "### \" действие „%1“ не се поддържа \""
 
 #: filter/filteractions/filteractionaddheader.cpp:21
 #, kde-format
@@ -1962,8 +1962,8 @@ msgid ""
 "Archiving folder '%1' successfully completed. The archive was written to the "
 "file '%2'."
 msgstr ""
-"Архивирането на папка '%1' завърши успешно. Архивът беше записан във файла "
-"'%2'."
+"Архивирането на папка „%1“ завърши успешно. Архивът беше записан във файла "
+"„%2“."
 
 #: job/backupjob.cpp:187
 #, kde-format
@@ -1986,7 +1986,7 @@ msgstr "Архивирането завърши"
 #: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
-msgstr "Неуспешно записване на съобщение в архивната папка '%1'."
+msgstr "Неуспешно записване на съобщение в архивната папка „%1“."
 
 #: job/backupjob.cpp:267
 #, kde-format
@@ -2002,7 +2002,7 @@ msgstr "Архивиране на папка %1"
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr ""
-"Не може да се създаде структура на папката за папка '%1' в архивния файл."
+"Не може да се създаде структура на папката за папка „%1“ в архивния файл."
 
 #: job/backupjob.cpp:370
 #, kde-format
@@ -2818,7 +2818,7 @@ msgstr "Въведете стойности за променливи"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
-msgstr "Въведете заместващите стойности за '%1':"
+msgstr "Въведете заместващите стойности за „%1“:"
 
 #: snippets/snippetvariabledialog.cpp:45
 #, kde-format
