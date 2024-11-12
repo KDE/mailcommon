@@ -314,13 +314,14 @@ void FolderTreeWidget::applyFilter(const QString &filter)
     HierarchicalFolderMatcher matcher;
     matcher.setFilter(filter, d->entityOrderProxy->filterCaseSensitivity());
     d->entityOrderProxy->setFolderMatcher(matcher);
-    d->folderTreeView->expandAll();
+
     const QAbstractItemModel *const model = d->folderTreeView->model();
     const QModelIndex current = d->folderTreeView->currentIndex();
     const QModelIndex start = current.isValid() ? current : model->index(0, 0);
     const QModelIndex firstMatch = matcher.findFirstMatch(model, start);
     if (firstMatch.isValid()) {
         d->folderTreeView->setCurrentIndex(firstMatch);
+        // This will expand to the selected item if necessary.
         d->folderTreeView->scrollTo(firstMatch);
     }
 }

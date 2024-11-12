@@ -14,6 +14,7 @@
 #include "kernel/mailkernel.h"
 
 #include <Akonadi/CollectionCreateJob>
+#include <Akonadi/ETMViewStateSaver>
 #include <Akonadi/EntityMimeTypeFilterModel>
 #include <Akonadi/EntityTreeModel>
 
@@ -116,7 +117,6 @@ FolderSelectionDialog::FolderSelectionDialog(QWidget *parent, SelectionFolderOpt
 
 FolderSelectionDialog::~FolderSelectionDialog()
 {
-    writeConfig();
 }
 
 void FolderSelectionDialog::slotFolderTreeWidgetContextMenuRequested(const QPoint &pos)
@@ -139,7 +139,6 @@ void FolderSelectionDialog::slotDoubleClick(const QModelIndex &index)
 
 void FolderSelectionDialog::focusTreeView()
 {
-    d->folderTreeWidget->folderTreeView()->expandAll();
     d->folderTreeWidget->folderTreeView()->setFocus();
 }
 
@@ -254,6 +253,16 @@ void FolderSelectionDialog::readConfig()
     if (size.isValid()) {
         resize(size);
     }
+
+    const QStringList expansionState = group.readEntry("Expansion", QStringList());
+    if (!expansionState.isEmpty()) {
+        Akonadi::ETMViewStateSaver *saver = new Akonadi::ETMViewStateSaver;
+        saver->setView(d->folderTreeWidget->folderTreeView());
+        saver->restoreExpanded(expansionState);
+    } else {
+        d->folderTreeWidget->folderTreeView()->expandAll();
+    }
+
     if (d->mUseGlobalSettings) {
         const Akonadi::Collection::Id id = SettingsIf->lastSelectedFolder();
         if (id > -1) {
@@ -268,6 +277,10 @@ void FolderSelectionDialog::writeConfig()
     KConfigGroup group(KernelIf->config(), QLatin1StringView(myFilterConvertToSieveResultDialogGroupName));
     group.writeEntry("Size", size());
 
+    Akonadi::ETMViewStateSaver saver;
+    saver.setView(d->folderTreeWidget->folderTreeView());
+    group.writeEntry("Expansion", saver.expansionKeys());
+
     if (d->mUseGlobalSettings) {
         Akonadi::Collection col = selectedCollection();
         if (col.isValid()) {
@@ -278,6 +291,7 @@ void FolderSelectionDialog::writeConfig()
 
 void FolderSelectionDialog::hideEvent(QHideEvent *)
 {
+    writeConfig();
     d->folderTreeWidget->clearFilter();
 }
 
