@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-27 00:41+0000\n"
+"POT-Creation-Date: 2024-11-27 00:41+0000\n"
 "PO-Revision-Date: 2012-01-28 16:25-0800\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -1793,14 +1793,14 @@ msgstr "ローカルフォルダ"
 msgid "Please select a folder"
 msgstr "フォルダを選択してください"
 
-#: folder/folderselectiondialog.cpp:64
+#: folder/folderselectiondialog.cpp:65
 #, fuzzy, kde-format
 #| msgid "&New Subfolder..."
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "新しいサブフォルダ(&N)..."
 
-#: folder/folderselectiondialog.cpp:66
+#: folder/folderselectiondialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Create a new subfolder under the currently selected folder"
 msgctxt "@info:tooltip"
@@ -1813,24 +1813,24 @@ msgstr "現在選択されているフォルダの下に新しいサブフォル
 msgid "&New Subfolder…"
 msgstr "新しいサブフォルダ(&N)..."
 
-#: folder/folderselectiondialog.cpp:179
+#: folder/folderselectiondialog.cpp:178
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "新しいフォルダ"
 
-#: folder/folderselectiondialog.cpp:179
+#: folder/folderselectiondialog.cpp:178
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "名前"
 
-#: folder/folderselectiondialog.cpp:196
+#: folder/folderselectiondialog.cpp:195
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "フォルダを作成できませんでした: %1"
 
-#: folder/folderselectiondialog.cpp:196
+#: folder/folderselectiondialog.cpp:195
 #, fuzzy, kde-format
 #| msgid "Folder creation failed"
 msgctxt "@title:window"

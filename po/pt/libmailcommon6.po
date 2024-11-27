@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-27 00:41+0000\n"
+"POT-Creation-Date: 2024-11-27 00:41+0000\n"
 "PO-Revision-Date: 2022-07-04 13:16+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -1886,14 +1886,14 @@ msgstr "Pastas Locais"
 msgid "Please select a folder"
 msgstr "Seleccione por favor uma pasta"
 
-#: folder/folderselectiondialog.cpp:64
+#: folder/folderselectiondialog.cpp:65
 #, fuzzy, kde-format
 #| msgid "&New Subfolder..."
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "&Nova Sub-Pasta..."
 
-#: folder/folderselectiondialog.cpp:66
+#: folder/folderselectiondialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Create a new subfolder under the currently selected folder"
 msgctxt "@info:tooltip"
@@ -1906,24 +1906,24 @@ msgstr "Criar uma nova sub-pasta sob a pasta seleccionada de momento"
 msgid "&New Subfolder…"
 msgstr "&Nova Sub-Pasta..."
 
-#: folder/folderselectiondialog.cpp:179
+#: folder/folderselectiondialog.cpp:178
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Nova Pasta"
 
-#: folder/folderselectiondialog.cpp:179
+#: folder/folderselectiondialog.cpp:178
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Nome"
 
-#: folder/folderselectiondialog.cpp:196
+#: folder/folderselectiondialog.cpp:195
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Não foi possível criar a pasta: %1"
 
-#: folder/folderselectiondialog.cpp:196
+#: folder/folderselectiondialog.cpp:195
 #, fuzzy, kde-format
 #| msgid "Folder creation failed"
 msgctxt "@title:window"

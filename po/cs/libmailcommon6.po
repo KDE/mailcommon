@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-27 00:41+0000\n"
+"POT-Creation-Date: 2024-11-27 00:41+0000\n"
 "PO-Revision-Date: 2024-09-20 15:11+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -1724,13 +1724,13 @@ msgstr "Lokální složky"
 msgid "Please select a folder"
 msgstr "Prosím vyberte složku"
 
-#: folder/folderselectiondialog.cpp:64
+#: folder/folderselectiondialog.cpp:65
 #, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "&Nová podřízená složka…"
 
-#: folder/folderselectiondialog.cpp:66
+#: folder/folderselectiondialog.cpp:67
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
@@ -1741,24 +1741,24 @@ msgstr "Vytvořit podsložku ve vybrané složce"
 msgid "&New Subfolder…"
 msgstr "&Nová podřízená složka…"
 
-#: folder/folderselectiondialog.cpp:179
+#: folder/folderselectiondialog.cpp:178
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Nová složka"
 
-#: folder/folderselectiondialog.cpp:179
+#: folder/folderselectiondialog.cpp:178
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Jméno"
 
-#: folder/folderselectiondialog.cpp:196
+#: folder/folderselectiondialog.cpp:195
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Nelze vytvořit složku: %1"
 
-#: folder/folderselectiondialog.cpp:196
+#: folder/folderselectiondialog.cpp:195
 #, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"

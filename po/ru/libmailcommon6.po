@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-27 00:41+0000\n"
+"POT-Creation-Date: 2024-11-27 00:41+0000\n"
 "PO-Revision-Date: 2023-12-27 10:03+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -1889,14 +1889,14 @@ msgstr "Локальные папки"
 msgid "Please select a folder"
 msgstr "(выберите папку)"
 
-#: folder/folderselectiondialog.cpp:64
+#: folder/folderselectiondialog.cpp:65
 #, fuzzy, kde-format
 #| msgid "&New Subfolder..."
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "&Создать подпапку..."
 
-#: folder/folderselectiondialog.cpp:66
+#: folder/folderselectiondialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Create a new subfolder under the currently selected folder"
 msgctxt "@info:tooltip"
@@ -1909,24 +1909,24 @@ msgstr "Создать вложенную папку"
 msgid "&New Subfolder…"
 msgstr "&Создать подпапку..."
 
-#: folder/folderselectiondialog.cpp:179
+#: folder/folderselectiondialog.cpp:178
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Создание папки"
 
-#: folder/folderselectiondialog.cpp:179
+#: folder/folderselectiondialog.cpp:178
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Имя новой папки:"
 
-#: folder/folderselectiondialog.cpp:196
+#: folder/folderselectiondialog.cpp:195
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Не удалось создать папку: %1"
 
-#: folder/folderselectiondialog.cpp:196
+#: folder/folderselectiondialog.cpp:195
 #, fuzzy, kde-format
 #| msgid "Folder creation failed"
 msgctxt "@title:window"

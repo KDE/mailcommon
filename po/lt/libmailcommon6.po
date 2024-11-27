@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-27 00:41+0000\n"
+"POT-Creation-Date: 2024-11-27 00:41+0000\n"
 "PO-Revision-Date: 2015-12-29 20:55+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
@@ -1761,14 +1761,14 @@ msgstr "Vietiniai aplankai"
 msgid "Please select a folder"
 msgstr "Pasirinkite aplanką"
 
-#: folder/folderselectiondialog.cpp:64
+#: folder/folderselectiondialog.cpp:65
 #, fuzzy, kde-format
 #| msgid "&New Subfolder..."
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "&Naujas poaplankis..."
 
-#: folder/folderselectiondialog.cpp:66
+#: folder/folderselectiondialog.cpp:67
 #, fuzzy, kde-format
 #| msgid "Create a new subfolder under the currently selected folder"
 msgctxt "@info:tooltip"
@@ -1781,24 +1781,24 @@ msgstr "Sukurti naują poaplankį šiuo metu pažymėtame aplanke"
 msgid "&New Subfolder…"
 msgstr "&Naujas poaplankis..."
 
-#: folder/folderselectiondialog.cpp:179
+#: folder/folderselectiondialog.cpp:178
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Naujas aplankas"
 
-#: folder/folderselectiondialog.cpp:179
+#: folder/folderselectiondialog.cpp:178
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Pavadinimas"
 
-#: folder/folderselectiondialog.cpp:196
+#: folder/folderselectiondialog.cpp:195
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Nepavyko sukurti aplanko: %1"
 
-#: folder/folderselectiondialog.cpp:196
+#: folder/folderselectiondialog.cpp:195
 #, fuzzy, kde-format
 #| msgid "Folder creation failed"
 msgctxt "@title:window"
