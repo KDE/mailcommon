@@ -9,10 +9,8 @@
 
 #include "filteractionwithtest.h"
 #include "mailcommon_private_export.h"
-namespace Phonon
-{
-class MediaObject;
-}
+
+class QMediaPlayer;
 
 namespace MailCommon
 {
@@ -35,6 +33,6 @@ public:
     [[nodiscard]] QString informationAboutNotValidAction() const override;
 
 private:
-    mutable Phonon::MediaObject *mPlayer = nullptr;
+    mutable QMediaPlayer *mPlayer = nullptr;
 };
 }

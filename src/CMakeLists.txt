@@ -370,7 +370,6 @@ PRIVATE
   KPim6::MessageList
   KPim6::Mime
   KPim6::MailTransport
-  Phonon::phonon4qt6
   KF6::XmlGui
   KF6::KIOWidgets
   KF6::IconThemes
@@ -382,6 +381,7 @@ PRIVATE
   KF6::Codecs
   KPim6::AkonadiContactWidgets
   Qt::Xml
+  Qt::Multimedia
   KF6::TextCustomEditor
 )
 
