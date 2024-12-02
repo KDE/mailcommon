@@ -20,7 +20,6 @@
 #include <QPushButton>
 
 #include <QStandardPaths>
-#include <qmediaplayer.h>
 
 using namespace MailCommon;
 
