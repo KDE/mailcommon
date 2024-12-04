@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-10-27 00:41+0000\n"
-"PO-Revision-Date: 2024-12-02 17:24+0300\n"
+"PO-Revision-Date: 2024-12-03 09:44+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -150,8 +150,7 @@ msgstr ""
 "папка исчезнет, как только будет закрыто окно настройки."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
-#, fuzzy, kde-format
-#| msgid "Act on new/unread mail in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr "Уведомлять о новых письмах в этой папке"
@@ -175,8 +174,7 @@ msgstr ""
 "папке со спамом.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, fuzzy, kde-format
-#| msgid "Keep replies in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "Помещать ответы в эту же папку"
@@ -192,8 +190,7 @@ msgstr ""
 "отправленных писем."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, fuzzy, kde-format
-#| msgid "Hide this folder in the folder selection dialog"
+#, kde-format
 msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "Скрыть эту папку в диалоговом окне выбора папок"
@@ -209,8 +206,7 @@ msgstr ""
 "папку</interface>."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "Использовать &профиль по умолчанию"
@@ -237,11 +233,10 @@ msgid "&Sender identity:"
 msgstr "Профиль о&тправителя:"
 
 #: collectionpage/collectiontemplateswidget.cpp:20
-#, fuzzy, kde-format
-#| msgid "&Use custom message templates in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
-msgstr "Использовать а этой папке &пользовательские шаблоны писем"
+msgstr "Использовать в этой папке &пользовательские шаблоны писем"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
@@ -250,36 +245,31 @@ msgid "&Copy Global Templates"
 msgstr "&Использовать стандартные шаблоны"
 
 #: collectionpage/collectionviewwidget.cpp:27
-#, fuzzy, kde-format
-#| msgid "Use default message list aggregation:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "Использовать группировку списка писем по умолчанию:"
 
 #: collectionpage/collectionviewwidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Use default message list theme"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "Использовать оформление списка писем по умолчанию"
 
 #: collectionpage/collectionviewwidget.cpp:31
-#, fuzzy, kde-format
-#| msgid "Prefer HTML to text"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr "Предпочитать HTML обычному тексту"
 
 #: collectionpage/collectionviewwidget.cpp:32
-#, fuzzy, kde-format
-#| msgid "Prefer text to HTML"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr "Предпочитать обычный текст"
 
 #: collectionpage/collectionviewwidget.cpp:33
-#, fuzzy, kde-format
-#| msgid "Use Global Settings"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr "Использовать глобальные параметры"
@@ -666,11 +656,10 @@ msgid "Forward To"
 msgstr "Переслать по адресу"
 
 #: filter/filteractions/filteractionforward.cpp:91
-#, fuzzy, kde-format
-#| msgid "The addressee to whom the message will be forwarded."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
-msgstr "Получатель пересылаемого письма."
+msgstr "Получатель пересылаемого письма"
 
 #: filter/filteractions/filteractionforward.cpp:92
 #, kde-format
@@ -684,8 +673,7 @@ msgid "Default Template"
 msgstr "Шаблон по умолчанию"
 
 #: filter/filteractions/filteractionforward.cpp:110
-#, fuzzy, kde-format
-#| msgid "The template used when forwarding"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Шаблон, используемый при пересылке"
@@ -980,11 +968,10 @@ msgid "Save…"
 msgstr "Сохранить…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Share..."
+#, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr "Опубликовать..."
+msgstr "Опубликовать…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -1074,15 +1061,13 @@ msgid "Export Filters"
 msgstr "Экспорт фильтров"
 
 #: filter/filterselectiondialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Выделить все"
 
 #: filter/filterselectiondialog.cpp:30
-#, fuzzy, kde-format
-#| msgid "Unselect All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Снять выделение"
@@ -1217,11 +1202,10 @@ msgstr "Фильтры Gmail"
 
 # BUGME: please add ellipsis because this opens a dialog --aspotashev
 #: filter/kmfilterdialog.cpp:140
-#, fuzzy, kde-format
-#| msgid "Sieve script"
+#, kde-format
 msgctxt "@action"
 msgid "Sieve script"
-msgstr "Сценарий Sieve..."
+msgstr "Сценарий Sieve…"
 
 #: filter/kmfilterdialog.cpp:162
 #, kde-format
@@ -1807,7 +1791,7 @@ msgstr "Переместить ниже"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
-msgstr "Выбор папки"
+msgstr "Выберите папку"
 
 #: folder/folderrequester.cpp:117
 #, kde-format
@@ -2067,15 +2051,13 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Не удалось удалить устаревшие письма из папки %1."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "Удаление %1 устаревшего письма из папки %2..."
-msgstr[1] "Удаление %1 устаревших писем из папки %2..."
-msgstr[2] "Удаление %1 устаревших писем из папки %2..."
-msgstr[3] "Удаление 1 устаревшего письма из папки %2..."
+msgstr[0] "Удаление %1 устаревшего письма из папки %2…"
+msgstr[1] "Удаление %1 устаревших писем из папки %2…"
+msgstr[2] "Удаление %1 устаревших писем из папки %2…"
+msgstr[3] "Удаление 1 устаревшего письма из папки %2…"
 
 #: job/expirejob.cpp:164
 #, kde-format
@@ -2219,11 +2201,10 @@ msgid "Attachment"
 msgstr "Вложение"
 
 #: search/searchpatternedit.cpp:145
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
-msgstr "Выбрать или вписать свой критерий"
+msgstr "Выберите или введите свой критерий"
 
 #: search/searchpatternedit.cpp:146
 #, kde-format
@@ -2863,8 +2844,7 @@ msgid "Enter the replacement values for '%1':"
 msgstr "Заменяющие значения для «%1»:"
 
 #: snippets/snippetvariabledialog.cpp:45
-#, fuzzy, kde-format
-#| msgid "Make value &default"
+#, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Установить как значение по &умолчанию"
@@ -3085,11 +3065,10 @@ msgid "Redirect Message"
 msgstr "Перенаправление письма"
 
 #: widgets/redirectdialog.cpp:123
-#, fuzzy, kde-format
-#| msgid "Select the recipient addresses to redirect to:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
-msgstr "Выберите адреса получателей, которым будет перенаправлено сообщение:"
+msgstr "Адреса получателей, которым будет перенаправлено сообщение:"
 
 #: widgets/redirectdialog.cpp:152
 #, kde-format
@@ -3102,15 +3081,13 @@ msgid "Transport:"
 msgstr "Метод отправки:"
 
 #: widgets/redirectdialog.cpp:158
-#, fuzzy, kde-format
-#| msgid "&Send Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "Отправить &немедленно"
 
 #: widgets/redirectdialog.cpp:159
-#, fuzzy, kde-format
-#| msgid "Send &Later"
+#, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "Отправить &позже"
