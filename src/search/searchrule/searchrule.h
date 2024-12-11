@@ -58,7 +58,9 @@ public:
         FuncStartWith,
         FuncNotStartWith,
         FuncEndWith,
-        FuncNotEndWith
+        FuncNotEndWith,
+        FuncHasInvitation,
+        FuncHasNoInvitation,
     };
 
     /**
