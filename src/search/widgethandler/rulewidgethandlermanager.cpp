@@ -11,6 +11,7 @@
 #include "encryptionwidgethandler.h"
 #include "headersrulerwidgethandler.h"
 #include "interfaces/rulewidgethandler.h"
+#include "invitationwidgethandler.h"
 #include "messagerulewidgethandler.h"
 #include "numericdoublerulewidgethandler.h"
 #include "numericrulewidgethandler.h"
@@ -42,6 +43,7 @@ MailCommon::RuleWidgetHandlerManager::RuleWidgetHandlerManager()
     registerHandler(new MailCommon::HeadersRuleWidgetHandler());
     registerHandler(new MailCommon::EncryptionWidgetHandler());
     registerHandler(new MailCommon::AttachmentWidgetHandler());
+    registerHandler(new MailCommon::InvitationWidgetHandler());
     // the TextRuleWidgetHandler is the fallback handler, so it has to be added
     // as last handler
     registerHandler(new MailCommon::TextRuleWidgetHandler());

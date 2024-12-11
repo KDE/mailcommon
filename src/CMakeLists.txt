@@ -166,6 +166,8 @@ target_sources(KPim6MailCommon PRIVATE
     search/widgethandler/headersrulerwidgethandler.cpp
     search/widgethandler/attachmentwidgethandler.cpp
     search/widgethandler/attachmentwidgethandler.h
+    search/widgethandler/invitationwidgethandler.h
+    search/widgethandler/invitationwidgethandler.cpp
     search/searchrule/searchrulenumerical.cpp
     search/searchrule/searchruledate.cpp
     search/searchrule/searchrulestring.cpp

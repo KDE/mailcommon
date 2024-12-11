@@ -181,7 +181,8 @@ public:
         Organization,
         Date,
         Encryption,
-        Attachment
+        Attachment,
+        Invitation,
     };
 
     /**

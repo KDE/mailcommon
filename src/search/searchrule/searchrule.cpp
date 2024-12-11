@@ -8,6 +8,7 @@
 #include "searchrule/searchruleattachment.h"
 #include "searchrule/searchruledate.h"
 #include "searchrule/searchruleencryption.h"
+#include "searchrule/searchruleinvitation.h"
 #include "searchrule/searchrulenumerical.h"
 #include "searchrule/searchrulestatus.h"
 #include "searchrule/searchrulestring.h"
@@ -39,7 +40,9 @@ static const char *const funcConfigNames[] = {"contains",
                                               "start-with",
                                               "not-start-with",
                                               "end-with",
-                                              "not-end-with"};
+                                              "not-end-with",
+                                              "has-invitation",
+                                              "has-no-invitation"};
 
 static const int numFuncConfigNames = sizeof funcConfigNames / sizeof *funcConfigNames;
 
@@ -86,6 +89,8 @@ SearchRule::Ptr SearchRule::createInstance(const QByteArray &field, Function fun
         ret = SearchRule::Ptr(new SearchRuleEncryption(field, func, contents));
     } else if (field == "<attachment>") {
         ret = SearchRule::Ptr(new SearchRuleAttachment(field, func, contents));
+    } else if (field == "<invitation>") {
+        ret = SearchRule::Ptr(new SearchRuleInvitation(field, func, contents));
     } else {
         ret = SearchRule::Ptr(new SearchRuleString(field, func, contents));
     }
