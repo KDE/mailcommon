@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-27 00:41+0000\n"
+"POT-Creation-Date: 2024-12-12 00:41+0000\n"
 "PO-Revision-Date: 2024-09-28 13:20+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -2179,124 +2179,130 @@ msgstr "Zifratzea"
 msgid "Attachment"
 msgstr "Eranskina"
 
-#: search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:58
+#, fuzzy
+#| msgid "Organization"
+msgid "Invitation"
+msgstr "Erakundea"
+
+#: search/searchpatternedit.cpp:146
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Hautatu edo tekleatu zure irizpide propioa"
 
-#: search/searchpatternedit.cpp:146
+#: search/searchpatternedit.cpp:147
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Hautatu edo tekleatu zure irizpide propioa"
 
-#: search/searchpatternedit.cpp:582
+#: search/searchpatternedit.cpp:584
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "Ondoko &guztiekin bat etorri"
 
-#: search/searchpatternedit.cpp:583
+#: search/searchpatternedit.cpp:585
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "Ondoko edo&zeinekin bat etorri"
 
-#: search/searchpatternedit.cpp:585
+#: search/searchpatternedit.cpp:587
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Mezu guztiekin bat etorri"
 
-#: search/searchpatternedit.cpp:596
+#: search/searchpatternedit.cpp:598
 #, kde-format
 msgid "Filter criteria:"
 msgstr "Iragazte-irizpideak:"
 
-#: search/searchrule/searchrule.cpp:180
+#: search/searchrule/searchrule.cpp:185
 #, kde-format
 msgid "equal"
 msgstr "berdina"
 
-#: search/searchrule/searchrule.cpp:183
+#: search/searchrule/searchrule.cpp:188
 #, kde-format
 msgid "not equal"
 msgstr "ez da berdina"
 
-#: search/searchrule/searchrule.cpp:186
+#: search/searchrule/searchrule.cpp:191
 #, kde-format
 msgid "is greater"
 msgstr "handiagoa da"
 
-#: search/searchrule/searchrule.cpp:189
+#: search/searchrule/searchrule.cpp:194
 #, kde-format
 msgid "is less or equal"
 msgstr "txikiago edo berdina da"
 
-#: search/searchrule/searchrule.cpp:192
+#: search/searchrule/searchrule.cpp:197
 #, kde-format
 msgid "is less"
 msgstr "txikiagoa da"
 
-#: search/searchrule/searchrule.cpp:195
+#: search/searchrule/searchrule.cpp:200
 #, kde-format
 msgid "is greater or equal"
 msgstr "baino handiagoa edo berdina"
 
-#: search/searchrule/searchrule.cpp:198
+#: search/searchrule/searchrule.cpp:203
 #, kde-format
 msgid "is in addressbook"
 msgstr "helbide-liburuan dago"
 
-#: search/searchrule/searchrule.cpp:201
+#: search/searchrule/searchrule.cpp:206
 #, kde-format
 msgid "is not in addressbook"
 msgstr "ez dago helbide-liburuan"
 
-#: search/searchrule/searchrule.cpp:204 search/searchrule/searchrule.cpp:207
+#: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
 #, kde-format
 msgid "is in category"
 msgstr "kategorian dago"
 
-#: search/searchrule/searchrule.cpp:210
+#: search/searchrule/searchrule.cpp:215
 #: search/widgethandler/messagerulewidgethandler.cpp:28
 #: search/widgethandler/messagerulewidgethandler.cpp:145
 #, kde-format
 msgid "has an attachment"
 msgstr "eranskin bat du"
 
-#: search/searchrule/searchrule.cpp:213
+#: search/searchrule/searchrule.cpp:218
 #, kde-format
 msgid "has not an attachment"
 msgstr "ez du eranskinik"
 
-#: search/searchrule/searchrule.cpp:216
+#: search/searchrule/searchrule.cpp:221
 #, kde-format
 msgid "start with"
 msgstr "honekin hasi"
 
-#: search/searchrule/searchrule.cpp:219
+#: search/searchrule/searchrule.cpp:224
 #, kde-format
 msgid "not start with"
 msgstr "honekin ez hasi"
 
-#: search/searchrule/searchrule.cpp:222
+#: search/searchrule/searchrule.cpp:227
 #, kde-format
 msgid "end with"
 msgstr "honekin amaitu"
 
-#: search/searchrule/searchrule.cpp:225
+#: search/searchrule/searchrule.cpp:230
 #, kde-format
 msgid "not end with"
 msgstr "honekin ez amaitu"
 
-#: search/searchrule/searchrule.cpp:228
+#: search/searchrule/searchrule.cpp:233
 #, kde-format
 msgid "none"
 msgstr "bat ere ez"
 
-#: search/searchrule/searchrule.cpp:231
+#: search/searchrule/searchrule.cpp:236
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
 #: search/widgethandler/tagrulewidgethandler.cpp:93
@@ -2305,73 +2311,73 @@ msgstr "bat ere ez"
 msgid "contains"
 msgstr "hau du"
 
-#: search/searchrule/searchrule.cpp:234
+#: search/searchrule/searchrule.cpp:239
 #, kde-format
 msgid "not contains"
 msgstr "ez du"
 
-#: search/searchrule/searchrule.cpp:237
+#: search/searchrule/searchrule.cpp:242
 #, kde-format
 msgid "has regexp"
 msgstr "adierazpen erreg. du"
 
-#: search/searchrule/searchrule.cpp:240
+#: search/searchrule/searchrule.cpp:245
 #, kde-format
 msgid "not regexp"
 msgstr "ez du adierazpen erreg.rrik"
 
-#: search/searchrule/searchrule.cpp:254
+#: search/searchrule/searchrule.cpp:259
 #, kde-format
 msgid "size equals not supported"
 msgstr "«neurria honen berdina» ez da onartzen"
 
-#: search/searchrule/searchrule.cpp:257
+#: search/searchrule/searchrule.cpp:262
 #, kde-format
 msgid "size not equals not supported"
 msgstr "«neurria ez da honen berdina» ez da onartzen"
 
-#: search/searchrule/searchrule.cpp:288 search/searchrule/searchrule.cpp:395
-#: search/searchrule/searchrule.cpp:477
+#: search/searchrule/searchrule.cpp:293 search/searchrule/searchrule.cpp:400
+#: search/searchrule/searchrule.cpp:482
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "«%1» ez da onartzen «%2» aukerarekin"
 
-#: search/searchrule/searchrule.cpp:295
+#: search/searchrule/searchrule.cpp:300
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> ez inplementatua/onartua"
 
-#: search/searchrule/searchrule.cpp:298
+#: search/searchrule/searchrule.cpp:303
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<any header> ez inplementatua/onartua"
 
-#: search/searchrule/searchrule.cpp:301
+#: search/searchrule/searchrule.cpp:306
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<contents> ez inplementatua/onartua"
 
-#: search/searchrule/searchrule.cpp:304
+#: search/searchrule/searchrule.cpp:309
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<age in days> ez inplementatua/onartua"
 
-#: search/searchrule/searchrule.cpp:307
+#: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<date> ez inplementatua/onartua"
 
-#: search/searchrule/searchrule.cpp:310
+#: search/searchrule/searchrule.cpp:315
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<recipients> ez inplementatua/onartua"
 
-#: search/searchrule/searchrule.cpp:312
+#: search/searchrule/searchrule.cpp:317
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "<Tag> ez da onartzen"
 
-#: search/searchrule/searchrule.cpp:315
+#: search/searchrule/searchrule.cpp:320
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<message> ez inplementatua/onartua"
@@ -2392,10 +2398,12 @@ msgid "String is empty."
 msgstr "Katea hutsik dago."
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
+#: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has"
 msgstr "du"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
+#: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has not"
 msgstr "ez du"
 
@@ -2523,6 +2531,19 @@ msgstr "helbide-liburuan dago"
 #, kde-format
 msgid "is not in address book"
 msgstr "ez dago helbide-liburuan"
+
+#: search/widgethandler/invitationwidgethandler.cpp:54
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgctxt "@label:textbox"
+msgid "invitation"
+msgstr "Erakundea"
+
+#: search/widgethandler/invitationwidgethandler.cpp:91
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgid "has invitation"
+msgstr "Erakundea"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147

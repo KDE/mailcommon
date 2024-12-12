@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-27 00:41+0000\n"
+"POT-Creation-Date: 2024-12-12 00:41+0000\n"
 "PO-Revision-Date: 2014-09-13 18:15+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -2145,124 +2145,130 @@ msgstr "Kryptering"
 msgid "Attachment"
 msgstr "Har vedlegg"
 
-#: search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:58
+#, fuzzy
+#| msgid "Organization"
+msgid "Invitation"
+msgstr "Organisasjon"
+
+#: search/searchpatternedit.cpp:146
 #, fuzzy, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Velg eller tast inn dine egne kriterier"
 
-#: search/searchpatternedit.cpp:146
+#: search/searchpatternedit.cpp:147
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Velg eller tast inn dine egne kriterier"
 
-#: search/searchpatternedit.cpp:582
+#: search/searchpatternedit.cpp:584
 #, fuzzy, kde-format
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "Pass til a&lle de følgende"
 
-#: search/searchpatternedit.cpp:583
+#: search/searchpatternedit.cpp:585
 #, fuzzy, kde-format
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "Pass med &en eller flere av de følgende"
 
-#: search/searchpatternedit.cpp:585
+#: search/searchpatternedit.cpp:587
 #, fuzzy, kde-format
 msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Treff alle meldinger"
 
-#: search/searchpatternedit.cpp:596
+#: search/searchpatternedit.cpp:598
 #, kde-format
 msgid "Filter criteria:"
 msgstr ""
 
-#: search/searchrule/searchrule.cpp:180
+#: search/searchrule/searchrule.cpp:185
 #, kde-format
 msgid "equal"
 msgstr "er lik"
 
-#: search/searchrule/searchrule.cpp:183
+#: search/searchrule/searchrule.cpp:188
 #, kde-format
 msgid "not equal"
 msgstr "ulik"
 
-#: search/searchrule/searchrule.cpp:186
+#: search/searchrule/searchrule.cpp:191
 #, kde-format
 msgid "is greater"
 msgstr "er større enn"
 
-#: search/searchrule/searchrule.cpp:189
+#: search/searchrule/searchrule.cpp:194
 #, kde-format
 msgid "is less or equal"
 msgstr "er mindre enn eller lik"
 
-#: search/searchrule/searchrule.cpp:192
+#: search/searchrule/searchrule.cpp:197
 #, kde-format
 msgid "is less"
 msgstr "er mindre enn"
 
-#: search/searchrule/searchrule.cpp:195
+#: search/searchrule/searchrule.cpp:200
 #, kde-format
 msgid "is greater or equal"
 msgstr "er større enn eller lik"
 
-#: search/searchrule/searchrule.cpp:198
+#: search/searchrule/searchrule.cpp:203
 #, kde-format
 msgid "is in addressbook"
 msgstr "er i adresseboka"
 
-#: search/searchrule/searchrule.cpp:201
+#: search/searchrule/searchrule.cpp:206
 #, kde-format
 msgid "is not in addressbook"
 msgstr "er ikke i adresseboka"
 
-#: search/searchrule/searchrule.cpp:204 search/searchrule/searchrule.cpp:207
+#: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
 #, kde-format
 msgid "is in category"
 msgstr "er i kategori"
 
-#: search/searchrule/searchrule.cpp:210
+#: search/searchrule/searchrule.cpp:215
 #: search/widgethandler/messagerulewidgethandler.cpp:28
 #: search/widgethandler/messagerulewidgethandler.cpp:145
 #, kde-format
 msgid "has an attachment"
 msgstr "har et vedlegg"
 
-#: search/searchrule/searchrule.cpp:213
+#: search/searchrule/searchrule.cpp:218
 #, kde-format
 msgid "has not an attachment"
 msgstr "har ingen vedlegg"
 
-#: search/searchrule/searchrule.cpp:216
+#: search/searchrule/searchrule.cpp:221
 #, kde-format
 msgid "start with"
 msgstr "starter med"
 
-#: search/searchrule/searchrule.cpp:219
+#: search/searchrule/searchrule.cpp:224
 #, kde-format
 msgid "not start with"
 msgstr "starter ikke med"
 
-#: search/searchrule/searchrule.cpp:222
+#: search/searchrule/searchrule.cpp:227
 #, kde-format
 msgid "end with"
 msgstr "slutter med"
 
-#: search/searchrule/searchrule.cpp:225
+#: search/searchrule/searchrule.cpp:230
 #, kde-format
 msgid "not end with"
 msgstr "slutter ikke med"
 
-#: search/searchrule/searchrule.cpp:228
+#: search/searchrule/searchrule.cpp:233
 #, kde-format
 msgid "none"
 msgstr "ingen"
 
-#: search/searchrule/searchrule.cpp:231
+#: search/searchrule/searchrule.cpp:236
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
 #: search/widgethandler/tagrulewidgethandler.cpp:93
@@ -2271,73 +2277,73 @@ msgstr "ingen"
 msgid "contains"
 msgstr "inneholder"
 
-#: search/searchrule/searchrule.cpp:234
+#: search/searchrule/searchrule.cpp:239
 #, kde-format
 msgid "not contains"
 msgstr "inneholder ikke"
 
-#: search/searchrule/searchrule.cpp:237
+#: search/searchrule/searchrule.cpp:242
 #, kde-format
 msgid "has regexp"
 msgstr "har regulært uttrykk"
 
-#: search/searchrule/searchrule.cpp:240
+#: search/searchrule/searchrule.cpp:245
 #, kde-format
 msgid "not regexp"
 msgstr "ikke regulært uttrykk:"
 
-#: search/searchrule/searchrule.cpp:254
+#: search/searchrule/searchrule.cpp:259
 #, kde-format
 msgid "size equals not supported"
 msgstr "lstørrelse lik er ikke støttet"
 
-#: search/searchrule/searchrule.cpp:257
+#: search/searchrule/searchrule.cpp:262
 #, kde-format
 msgid "size not equals not supported"
 msgstr "størrelse ikke lik er ikke støttet"
 
-#: search/searchrule/searchrule.cpp:288 search/searchrule/searchrule.cpp:395
-#: search/searchrule/searchrule.cpp:477
+#: search/searchrule/searchrule.cpp:293 search/searchrule/searchrule.cpp:400
+#: search/searchrule/searchrule.cpp:482
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "«%1» er ikke støttet med betingelse «%2»"
 
-#: search/searchrule/searchrule.cpp:295
+#: search/searchrule/searchrule.cpp:300
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> ikke implementert/støttet"
 
-#: search/searchrule/searchrule.cpp:298
+#: search/searchrule/searchrule.cpp:303
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<any header> ikke implementert/støttet"
 
-#: search/searchrule/searchrule.cpp:301
+#: search/searchrule/searchrule.cpp:306
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<contents> ikke implementert/støttet"
 
-#: search/searchrule/searchrule.cpp:304
+#: search/searchrule/searchrule.cpp:309
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<age in days> ikke implementert/støttet"
 
-#: search/searchrule/searchrule.cpp:307
+#: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<date> ikke implementert/støttet"
 
-#: search/searchrule/searchrule.cpp:310
+#: search/searchrule/searchrule.cpp:315
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<recipients> ikke implementert/støttet"
 
-#: search/searchrule/searchrule.cpp:312
+#: search/searchrule/searchrule.cpp:317
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "<Tag> er ikke støttet"
 
-#: search/searchrule/searchrule.cpp:315
+#: search/searchrule/searchrule.cpp:320
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<message> ikke implementert/støttet"
@@ -2358,10 +2364,12 @@ msgid "String is empty."
 msgstr ""
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
+#: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has"
 msgstr ""
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
+#: search/widgethandler/invitationwidgethandler.cpp:17
 #, fuzzy
 #| msgid "is not"
 msgid "has not"
@@ -2494,6 +2502,19 @@ msgstr "er i adresseboka"
 #, kde-format
 msgid "is not in address book"
 msgstr "er ikke i adresseboka"
+
+#: search/widgethandler/invitationwidgethandler.cpp:54
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgctxt "@label:textbox"
+msgid "invitation"
+msgstr "Organisasjon"
+
+#: search/widgethandler/invitationwidgethandler.cpp:91
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgid "has invitation"
+msgstr "Organisasjon"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147

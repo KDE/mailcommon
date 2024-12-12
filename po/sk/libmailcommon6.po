@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-27 00:41+0000\n"
+"POT-Creation-Date: 2024-12-12 00:41+0000\n"
 "PO-Revision-Date: 2019-11-18 12:53+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -2303,130 +2303,136 @@ msgstr "Šifrovanie"
 msgid "Attachment"
 msgstr "Príloha:"
 
-#: search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:58
+#, fuzzy
+#| msgid "Organization"
+msgid "Invitation"
+msgstr "Organizácia"
+
+#: search/searchpatternedit.cpp:146
 #, fuzzy, kde-format
 #| msgid "Choose or type your own criteria"
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Vyberte alebo napíšte vaše kritériá"
 
-#: search/searchpatternedit.cpp:146
+#: search/searchpatternedit.cpp:147
 #, fuzzy, kde-format
 #| msgid "Choose or type your own criteria"
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Vyberte alebo napíšte vaše kritériá"
 
-#: search/searchpatternedit.cpp:582
+#: search/searchpatternedit.cpp:584
 #, fuzzy, kde-format
 #| msgid "Match a&ll of the following"
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "Platia všetky nasledujúce"
 
-#: search/searchpatternedit.cpp:583
+#: search/searchpatternedit.cpp:585
 #, fuzzy, kde-format
 #| msgid "Match an&y of the following"
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "Platí niektoré z nasledujúcich"
 
-#: search/searchpatternedit.cpp:585
+#: search/searchpatternedit.cpp:587
 #, fuzzy, kde-format
 #| msgid "Match all messages"
 msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Platia všetky správy"
 
-#: search/searchpatternedit.cpp:596
+#: search/searchpatternedit.cpp:598
 #, fuzzy, kde-format
 #| msgid "Filter Criteria"
 msgid "Filter criteria:"
 msgstr "Kritérium filtra"
 
-#: search/searchrule/searchrule.cpp:180
+#: search/searchrule/searchrule.cpp:185
 #, kde-format
 msgid "equal"
 msgstr "je rovné"
 
-#: search/searchrule/searchrule.cpp:183
+#: search/searchrule/searchrule.cpp:188
 #, kde-format
 msgid "not equal"
 msgstr "nerovná sa"
 
-#: search/searchrule/searchrule.cpp:186
+#: search/searchrule/searchrule.cpp:191
 #, kde-format
 msgid "is greater"
 msgstr "je väčšie"
 
-#: search/searchrule/searchrule.cpp:189
+#: search/searchrule/searchrule.cpp:194
 #, kde-format
 msgid "is less or equal"
 msgstr "je menšie alebo rovné"
 
-#: search/searchrule/searchrule.cpp:192
+#: search/searchrule/searchrule.cpp:197
 #, kde-format
 msgid "is less"
 msgstr "je menšie"
 
-#: search/searchrule/searchrule.cpp:195
+#: search/searchrule/searchrule.cpp:200
 #, kde-format
 msgid "is greater or equal"
 msgstr "je väčšie alebo rovné"
 
-#: search/searchrule/searchrule.cpp:198
+#: search/searchrule/searchrule.cpp:203
 #, kde-format
 msgid "is in addressbook"
 msgstr "je v adresári kontaktov"
 
-#: search/searchrule/searchrule.cpp:201
+#: search/searchrule/searchrule.cpp:206
 #, kde-format
 msgid "is not in addressbook"
 msgstr "nie je v adresári kontaktov"
 
-#: search/searchrule/searchrule.cpp:204 search/searchrule/searchrule.cpp:207
+#: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
 #, kde-format
 msgid "is in category"
 msgstr "je v kategórii"
 
-#: search/searchrule/searchrule.cpp:210
+#: search/searchrule/searchrule.cpp:215
 #: search/widgethandler/messagerulewidgethandler.cpp:28
 #: search/widgethandler/messagerulewidgethandler.cpp:145
 #, kde-format
 msgid "has an attachment"
 msgstr "má prílohu"
 
-#: search/searchrule/searchrule.cpp:213
+#: search/searchrule/searchrule.cpp:218
 #, kde-format
 msgid "has not an attachment"
 msgstr "nemá prílohu"
 
-#: search/searchrule/searchrule.cpp:216
+#: search/searchrule/searchrule.cpp:221
 #, kde-format
 msgid "start with"
 msgstr "začať s"
 
-#: search/searchrule/searchrule.cpp:219
+#: search/searchrule/searchrule.cpp:224
 #, kde-format
 msgid "not start with"
 msgstr "nezačína s"
 
-#: search/searchrule/searchrule.cpp:222
+#: search/searchrule/searchrule.cpp:227
 #, kde-format
 msgid "end with"
 msgstr "končí s"
 
-#: search/searchrule/searchrule.cpp:225
+#: search/searchrule/searchrule.cpp:230
 #, kde-format
 msgid "not end with"
 msgstr "nekončí s"
 
-#: search/searchrule/searchrule.cpp:228
+#: search/searchrule/searchrule.cpp:233
 #, kde-format
 msgid "none"
 msgstr "žiadne"
 
-#: search/searchrule/searchrule.cpp:231
+#: search/searchrule/searchrule.cpp:236
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
 #: search/widgethandler/tagrulewidgethandler.cpp:93
@@ -2435,73 +2441,73 @@ msgstr "žiadne"
 msgid "contains"
 msgstr "obsahuje"
 
-#: search/searchrule/searchrule.cpp:234
+#: search/searchrule/searchrule.cpp:239
 #, kde-format
 msgid "not contains"
 msgstr "neobsahuje"
 
-#: search/searchrule/searchrule.cpp:237
+#: search/searchrule/searchrule.cpp:242
 #, kde-format
 msgid "has regexp"
 msgstr "má regexp"
 
-#: search/searchrule/searchrule.cpp:240
+#: search/searchrule/searchrule.cpp:245
 #, kde-format
 msgid "not regexp"
 msgstr "nie regexp"
 
-#: search/searchrule/searchrule.cpp:254
+#: search/searchrule/searchrule.cpp:259
 #, kde-format
 msgid "size equals not supported"
 msgstr "veľkosť sa rovná nie je podporované"
 
-#: search/searchrule/searchrule.cpp:257
+#: search/searchrule/searchrule.cpp:262
 #, kde-format
 msgid "size not equals not supported"
 msgstr "veľkosť nie je rovná nie je podporované"
 
-#: search/searchrule/searchrule.cpp:288 search/searchrule/searchrule.cpp:395
-#: search/searchrule/searchrule.cpp:477
+#: search/searchrule/searchrule.cpp:293 search/searchrule/searchrule.cpp:400
+#: search/searchrule/searchrule.cpp:482
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "\"%1\" nie je podporované s podmienkou \"%2\""
 
-#: search/searchrule/searchrule.cpp:295
+#: search/searchrule/searchrule.cpp:300
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> neimplementované/nepodporované"
 
-#: search/searchrule/searchrule.cpp:298
+#: search/searchrule/searchrule.cpp:303
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<any header> neimplementované/nepodporované"
 
-#: search/searchrule/searchrule.cpp:301
+#: search/searchrule/searchrule.cpp:306
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<contents> neimplementované/nepodporované"
 
-#: search/searchrule/searchrule.cpp:304
+#: search/searchrule/searchrule.cpp:309
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<age in days> neimplementované/nepodporované"
 
-#: search/searchrule/searchrule.cpp:307
+#: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<date> neimplementované/nepodporované"
 
-#: search/searchrule/searchrule.cpp:310
+#: search/searchrule/searchrule.cpp:315
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<recipients> neimplementované/nepodporované"
 
-#: search/searchrule/searchrule.cpp:312
+#: search/searchrule/searchrule.cpp:317
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "<Tag> nie je podporovaný"
 
-#: search/searchrule/searchrule.cpp:315
+#: search/searchrule/searchrule.cpp:320
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<message> neimplementované/nepodporované"
@@ -2522,10 +2528,12 @@ msgid "String is empty."
 msgstr "Reťazec je prázdny."
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
+#: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has"
 msgstr ""
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
+#: search/widgethandler/invitationwidgethandler.cpp:17
 #, fuzzy
 #| msgid "is not"
 msgid "has not"
@@ -2658,6 +2666,19 @@ msgstr "je v adresári"
 #, kde-format
 msgid "is not in address book"
 msgstr "nie je v adresári"
+
+#: search/widgethandler/invitationwidgethandler.cpp:54
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgctxt "@label:textbox"
+msgid "invitation"
+msgstr "Organizácia"
+
+#: search/widgethandler/invitationwidgethandler.cpp:91
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgid "has invitation"
+msgstr "Organizácia"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147

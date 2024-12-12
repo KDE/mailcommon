@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-27 00:41+0000\n"
+"POT-Creation-Date: 2024-12-12 00:41+0000\n"
 "PO-Revision-Date: 2024-10-02 05:43+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -2176,124 +2176,130 @@ msgstr "დაშიფვრა"
 msgid "Attachment"
 msgstr "მიმაგრებული ფაილი"
 
-#: search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:58
+#, fuzzy
+#| msgid "Organization"
+msgid "Invitation"
+msgstr "ორგანიზაცია"
+
+#: search/searchpatternedit.cpp:146
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "აირჩიეთ ან აკრიფეთ თქვენი პირობა"
 
-#: search/searchpatternedit.cpp:146
+#: search/searchpatternedit.cpp:147
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "აირჩიეთ ან აკრიფეთ თქვენი პირობა"
 
-#: search/searchpatternedit.cpp:582
+#: search/searchpatternedit.cpp:584
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "დაემთხვეს &ყველაფერი შემდეგიდან"
 
-#: search/searchpatternedit.cpp:583
+#: search/searchpatternedit.cpp:585
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "დამეთხვეს &ნებისმიერი რამ შემდეგიდან"
 
-#: search/searchpatternedit.cpp:585
+#: search/searchpatternedit.cpp:587
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "ყველა შეტყობინების დამთხვევა"
 
-#: search/searchpatternedit.cpp:596
+#: search/searchpatternedit.cpp:598
 #, kde-format
 msgid "Filter criteria:"
 msgstr "ფილტრის პირობა:"
 
-#: search/searchrule/searchrule.cpp:180
+#: search/searchrule/searchrule.cpp:185
 #, kde-format
 msgid "equal"
 msgstr "უდრის"
 
-#: search/searchrule/searchrule.cpp:183
+#: search/searchrule/searchrule.cpp:188
 #, kde-format
 msgid "not equal"
 msgstr "არ უდრის"
 
-#: search/searchrule/searchrule.cpp:186
+#: search/searchrule/searchrule.cpp:191
 #, kde-format
 msgid "is greater"
 msgstr "მეტი, ვიდრე"
 
-#: search/searchrule/searchrule.cpp:189
+#: search/searchrule/searchrule.cpp:194
 #, kde-format
 msgid "is less or equal"
 msgstr "ნაკლები ან ტოლი"
 
-#: search/searchrule/searchrule.cpp:192
+#: search/searchrule/searchrule.cpp:197
 #, kde-format
 msgid "is less"
 msgstr "ნაკლები"
 
-#: search/searchrule/searchrule.cpp:195
+#: search/searchrule/searchrule.cpp:200
 #, kde-format
 msgid "is greater or equal"
 msgstr "მეტი ან ტოლი"
 
-#: search/searchrule/searchrule.cpp:198
+#: search/searchrule/searchrule.cpp:203
 #, kde-format
 msgid "is in addressbook"
 msgstr "არის მისამართების წიგნში"
 
-#: search/searchrule/searchrule.cpp:201
+#: search/searchrule/searchrule.cpp:206
 #, kde-format
 msgid "is not in addressbook"
 msgstr "არაა მისამართების წიგნში"
 
-#: search/searchrule/searchrule.cpp:204 search/searchrule/searchrule.cpp:207
+#: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
 #, kde-format
 msgid "is in category"
 msgstr "არის კატეგორიაში"
 
-#: search/searchrule/searchrule.cpp:210
+#: search/searchrule/searchrule.cpp:215
 #: search/widgethandler/messagerulewidgethandler.cpp:28
 #: search/widgethandler/messagerulewidgethandler.cpp:145
 #, kde-format
 msgid "has an attachment"
 msgstr "აქვს მიმაგრებები"
 
-#: search/searchrule/searchrule.cpp:213
+#: search/searchrule/searchrule.cpp:218
 #, kde-format
 msgid "has not an attachment"
 msgstr "არ აქვს მიმაგრებები"
 
-#: search/searchrule/searchrule.cpp:216
+#: search/searchrule/searchrule.cpp:221
 #, kde-format
 msgid "start with"
 msgstr "იწყება"
 
-#: search/searchrule/searchrule.cpp:219
+#: search/searchrule/searchrule.cpp:224
 #, kde-format
 msgid "not start with"
 msgstr "არ იწყება"
 
-#: search/searchrule/searchrule.cpp:222
+#: search/searchrule/searchrule.cpp:227
 #, kde-format
 msgid "end with"
 msgstr "მთავრდება"
 
-#: search/searchrule/searchrule.cpp:225
+#: search/searchrule/searchrule.cpp:230
 #, kde-format
 msgid "not end with"
 msgstr "არ მთავრდება"
 
-#: search/searchrule/searchrule.cpp:228
+#: search/searchrule/searchrule.cpp:233
 #, kde-format
 msgid "none"
 msgstr "არა"
 
-#: search/searchrule/searchrule.cpp:231
+#: search/searchrule/searchrule.cpp:236
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
 #: search/widgethandler/tagrulewidgethandler.cpp:93
@@ -2302,73 +2308,73 @@ msgstr "არა"
 msgid "contains"
 msgstr "შეიცავს"
 
-#: search/searchrule/searchrule.cpp:234
+#: search/searchrule/searchrule.cpp:239
 #, kde-format
 msgid "not contains"
 msgstr "არ შეიცავს"
 
-#: search/searchrule/searchrule.cpp:237
+#: search/searchrule/searchrule.cpp:242
 #, kde-format
 msgid "has regexp"
 msgstr "აქვს რეგგამოსი"
 
-#: search/searchrule/searchrule.cpp:240
+#: search/searchrule/searchrule.cpp:245
 #, kde-format
 msgid "not regexp"
 msgstr "არ აქვს რეგგამოსი"
 
-#: search/searchrule/searchrule.cpp:254
+#: search/searchrule/searchrule.cpp:259
 #, kde-format
 msgid "size equals not supported"
 msgstr "ზომის ტოლობა მხარდაჭერილი არაა"
 
-#: search/searchrule/searchrule.cpp:257
+#: search/searchrule/searchrule.cpp:262
 #, kde-format
 msgid "size not equals not supported"
 msgstr "ზომის უტოლობა მხარდაჭერილი არაა"
 
-#: search/searchrule/searchrule.cpp:288 search/searchrule/searchrule.cpp:395
-#: search/searchrule/searchrule.cpp:477
+#: search/searchrule/searchrule.cpp:293 search/searchrule/searchrule.cpp:400
+#: search/searchrule/searchrule.cpp:482
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "\"%1\" პირობით \"%2\" მხარდაჭერილი არაა"
 
-#: search/searchrule/searchrule.cpp:295
+#: search/searchrule/searchrule.cpp:300
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> განხორციელებული/მხარდაჭერილი არაა"
 
-#: search/searchrule/searchrule.cpp:298
+#: search/searchrule/searchrule.cpp:303
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<any header> განხორციელებული/მხარდაჭერილი არაა"
 
-#: search/searchrule/searchrule.cpp:301
+#: search/searchrule/searchrule.cpp:306
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<contents> განხორციელებული/მხარდაჭერილი არაა"
 
-#: search/searchrule/searchrule.cpp:304
+#: search/searchrule/searchrule.cpp:309
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<age in days> განხორციელებული/მხარდაჭერილი არაა"
 
-#: search/searchrule/searchrule.cpp:307
+#: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<date> განხორციელებული/მხარდაჭერილი არაა"
 
-#: search/searchrule/searchrule.cpp:310
+#: search/searchrule/searchrule.cpp:315
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<recipients> განხორციელებული/მხარდაჭერილი არაა"
 
-#: search/searchrule/searchrule.cpp:312
+#: search/searchrule/searchrule.cpp:317
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "<Tag> მხარდაჭერილი არაა"
 
-#: search/searchrule/searchrule.cpp:315
+#: search/searchrule/searchrule.cpp:320
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<message> განხორციელებული/მხარდაჭერილი არაა"
@@ -2389,10 +2395,12 @@ msgid "String is empty."
 msgstr "სტრიქონი ცარიელია."
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
+#: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has"
 msgstr "აქვს"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
+#: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has not"
 msgstr "არ აქვს"
 
@@ -2520,6 +2528,19 @@ msgstr "არის მისამართების წიგნში"
 #, kde-format
 msgid "is not in address book"
 msgstr "არ არის მისამართების წიგნში"
+
+#: search/widgethandler/invitationwidgethandler.cpp:54
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgctxt "@label:textbox"
+msgid "invitation"
+msgstr "ორგანიზაცია"
+
+#: search/widgethandler/invitationwidgethandler.cpp:91
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgid "has invitation"
+msgstr "ორგანიზაცია"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147

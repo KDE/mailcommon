@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-27 00:41+0000\n"
+"POT-Creation-Date: 2024-12-12 00:41+0000\n"
 "PO-Revision-Date: 2024-08-21 00:33+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -2129,124 +2129,130 @@ msgstr "암호화"
 msgid "Attachment"
 msgstr "첨부:"
 
-#: search/searchpatternedit.cpp:145
+#: search/searchpatternedit.cpp:58
+#, fuzzy
+#| msgid "Organization"
+msgid "Invitation"
+msgstr "조직"
+
+#: search/searchpatternedit.cpp:146
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "조건을 선택하거나 입력하십시오"
 
-#: search/searchpatternedit.cpp:146
+#: search/searchpatternedit.cpp:147
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "조건을 선택하거나 입력하십시오"
 
-#: search/searchpatternedit.cpp:582
+#: search/searchpatternedit.cpp:584
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "다음 항목 모두에 일치(&L)"
 
-#: search/searchpatternedit.cpp:583
+#: search/searchpatternedit.cpp:585
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "다음 항목 중 하나 이상에 일치(&Y)"
 
-#: search/searchpatternedit.cpp:585
+#: search/searchpatternedit.cpp:587
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "모든 메시지 일치"
 
-#: search/searchpatternedit.cpp:596
+#: search/searchpatternedit.cpp:598
 #, kde-format
 msgid "Filter criteria:"
 msgstr "필터 조건:"
 
-#: search/searchrule/searchrule.cpp:180
+#: search/searchrule/searchrule.cpp:185
 #, kde-format
 msgid "equal"
 msgstr "같음"
 
-#: search/searchrule/searchrule.cpp:183
+#: search/searchrule/searchrule.cpp:188
 #, kde-format
 msgid "not equal"
 msgstr "같지 않음"
 
-#: search/searchrule/searchrule.cpp:186
+#: search/searchrule/searchrule.cpp:191
 #, kde-format
 msgid "is greater"
 msgstr "다음보다 큼"
 
-#: search/searchrule/searchrule.cpp:189
+#: search/searchrule/searchrule.cpp:194
 #, kde-format
 msgid "is less or equal"
 msgstr "다음보다 작거나 같음"
 
-#: search/searchrule/searchrule.cpp:192
+#: search/searchrule/searchrule.cpp:197
 #, kde-format
 msgid "is less"
 msgstr "다음보다 작음"
 
-#: search/searchrule/searchrule.cpp:195
+#: search/searchrule/searchrule.cpp:200
 #, kde-format
 msgid "is greater or equal"
 msgstr "다음보다 크거나 같음"
 
-#: search/searchrule/searchrule.cpp:198
+#: search/searchrule/searchrule.cpp:203
 #, kde-format
 msgid "is in addressbook"
 msgstr "주소록에 있음"
 
-#: search/searchrule/searchrule.cpp:201
+#: search/searchrule/searchrule.cpp:206
 #, kde-format
 msgid "is not in addressbook"
 msgstr "주소록에 없음"
 
-#: search/searchrule/searchrule.cpp:204 search/searchrule/searchrule.cpp:207
+#: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
 #, kde-format
 msgid "is in category"
 msgstr "분류에 포함됨"
 
-#: search/searchrule/searchrule.cpp:210
+#: search/searchrule/searchrule.cpp:215
 #: search/widgethandler/messagerulewidgethandler.cpp:28
 #: search/widgethandler/messagerulewidgethandler.cpp:145
 #, kde-format
 msgid "has an attachment"
 msgstr "첨부 있음"
 
-#: search/searchrule/searchrule.cpp:213
+#: search/searchrule/searchrule.cpp:218
 #, kde-format
 msgid "has not an attachment"
 msgstr "첨부 파일이 없음"
 
-#: search/searchrule/searchrule.cpp:216
+#: search/searchrule/searchrule.cpp:221
 #, kde-format
 msgid "start with"
 msgstr "다음으로 시작함"
 
-#: search/searchrule/searchrule.cpp:219
+#: search/searchrule/searchrule.cpp:224
 #, kde-format
 msgid "not start with"
 msgstr "다음으로 시작하지 않음"
 
-#: search/searchrule/searchrule.cpp:222
+#: search/searchrule/searchrule.cpp:227
 #, kde-format
 msgid "end with"
 msgstr "다음으로 끝남"
 
-#: search/searchrule/searchrule.cpp:225
+#: search/searchrule/searchrule.cpp:230
 #, kde-format
 msgid "not end with"
 msgstr "다음으로 끝나지 않음"
 
-#: search/searchrule/searchrule.cpp:228
+#: search/searchrule/searchrule.cpp:233
 #, kde-format
 msgid "none"
 msgstr "없음"
 
-#: search/searchrule/searchrule.cpp:231
+#: search/searchrule/searchrule.cpp:236
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
 #: search/widgethandler/tagrulewidgethandler.cpp:93
@@ -2255,73 +2261,73 @@ msgstr "없음"
 msgid "contains"
 msgstr "포함함"
 
-#: search/searchrule/searchrule.cpp:234
+#: search/searchrule/searchrule.cpp:239
 #, kde-format
 msgid "not contains"
 msgstr "포함하지 않음"
 
-#: search/searchrule/searchrule.cpp:237
+#: search/searchrule/searchrule.cpp:242
 #, kde-format
 msgid "has regexp"
 msgstr "정규 표현식과 일치"
 
-#: search/searchrule/searchrule.cpp:240
+#: search/searchrule/searchrule.cpp:245
 #, kde-format
 msgid "not regexp"
 msgstr "정규 표현식과 일치하지 않음"
 
-#: search/searchrule/searchrule.cpp:254
+#: search/searchrule/searchrule.cpp:259
 #, kde-format
 msgid "size equals not supported"
 msgstr "크기가 같음은 지원하지 않음"
 
-#: search/searchrule/searchrule.cpp:257
+#: search/searchrule/searchrule.cpp:262
 #, kde-format
 msgid "size not equals not supported"
 msgstr "크기가 다름은 지원하지 않음"
 
-#: search/searchrule/searchrule.cpp:288 search/searchrule/searchrule.cpp:395
-#: search/searchrule/searchrule.cpp:477
+#: search/searchrule/searchrule.cpp:293 search/searchrule/searchrule.cpp:400
+#: search/searchrule/searchrule.cpp:482
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "\"%2\" 조건 하에서 \"%1\"을(를) 지원하지 않음"
 
-#: search/searchrule/searchrule.cpp:295
+#: search/searchrule/searchrule.cpp:300
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> 구현/지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:298
+#: search/searchrule/searchrule.cpp:303
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<any header> 구현/지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:301
+#: search/searchrule/searchrule.cpp:306
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<contents> 구현/지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:304
+#: search/searchrule/searchrule.cpp:309
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<age in days> 구현/지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:307
+#: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<date> 구현/지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:310
+#: search/searchrule/searchrule.cpp:315
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<recipients> 구현/지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:312
+#: search/searchrule/searchrule.cpp:317
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "<Tag> 지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:315
+#: search/searchrule/searchrule.cpp:320
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<message> 구현/지원되지 않음"
@@ -2342,10 +2348,12 @@ msgid "String is empty."
 msgstr "문자열이 비어 있습니다."
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
+#: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has"
 msgstr ""
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
+#: search/widgethandler/invitationwidgethandler.cpp:17
 #, fuzzy
 #| msgid "is not"
 msgid "has not"
@@ -2477,6 +2485,19 @@ msgstr "주소록에 있음"
 #, kde-format
 msgid "is not in address book"
 msgstr "주소록에 없음"
+
+#: search/widgethandler/invitationwidgethandler.cpp:54
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgctxt "@label:textbox"
+msgid "invitation"
+msgstr "조직"
+
+#: search/widgethandler/invitationwidgethandler.cpp:91
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgid "has invitation"
+msgstr "조직"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147
