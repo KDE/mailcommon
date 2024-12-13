@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-12 00:41+0000\n"
-"PO-Revision-Date: 2024-09-19 07:27+0200\n"
+"PO-Revision-Date: 2024-12-12 07:22+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -2177,10 +2177,8 @@ msgid "Attachment"
 msgstr "Priloga"
 
 #: search/searchpatternedit.cpp:58
-#, fuzzy
-#| msgid "Organization"
 msgid "Invitation"
-msgstr "Organizacija"
+msgstr "Povabilo"
 
 #: search/searchpatternedit.cpp:146
 #, kde-format
@@ -2530,17 +2528,15 @@ msgid "is not in address book"
 msgstr "ni v imeniku"
 
 #: search/widgethandler/invitationwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
-msgstr "Organizacija"
+msgstr "povabilo"
 
 #: search/widgethandler/invitationwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has invitation"
-msgstr "Organizacija"
+msgstr "ima povabilo"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-12 00:41+0000\n"
-"PO-Revision-Date: 2024-10-02 05:43+0200\n"
+"PO-Revision-Date: 2024-12-12 03:41+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -2177,10 +2177,8 @@ msgid "Attachment"
 msgstr "მიმაგრებული ფაილი"
 
 #: search/searchpatternedit.cpp:58
-#, fuzzy
-#| msgid "Organization"
 msgid "Invitation"
-msgstr "ორგანიზაცია"
+msgstr "მოსაწვევი"
 
 #: search/searchpatternedit.cpp:146
 #, kde-format
@@ -2530,17 +2528,15 @@ msgid "is not in address book"
 msgstr "არ არის მისამართების წიგნში"
 
 #: search/widgethandler/invitationwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
-msgstr "ორგანიზაცია"
+msgstr "მოსაწვევი"
 
 #: search/widgethandler/invitationwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has invitation"
-msgstr "ორგანიზაცია"
+msgstr "აქვს მოსაწვევი"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147

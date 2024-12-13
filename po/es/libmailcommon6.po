@@ -1,15 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the mailcommon package.
 #
-# Javier Vinal <fjvinalgmail.com>, 2010, 2011, 2012, 2017.
-# Javier Viñal <fjvinal@gmail.com>, 2012, 2013, 2014, 2015, 2016, 2017, 2018.
+# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018 Javier Viñal <fjvinal@gmail.com>
 # SPDX-FileCopyrightText: 2019, 2020, 2021, 2022, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-12 00:41+0000\n"
-"PO-Revision-Date: 2024-09-20 02:06+0200\n"
+"PO-Revision-Date: 2024-12-13 01:27+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.08.1\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -2188,10 +2187,8 @@ msgid "Attachment"
 msgstr "Adjunto"
 
 #: search/searchpatternedit.cpp:58
-#, fuzzy
-#| msgid "Organization"
 msgid "Invitation"
-msgstr "Organización"
+msgstr "Invitación"
 
 #: search/searchpatternedit.cpp:146
 #, kde-format
@@ -2541,17 +2538,15 @@ msgid "is not in address book"
 msgstr "no está en la libreta de direcciones"
 
 #: search/widgethandler/invitationwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
-msgstr "Organización"
+msgstr "invitación"
 
 #: search/widgethandler/invitationwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has invitation"
-msgstr "Organización"
+msgstr "tiene invitación"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147
