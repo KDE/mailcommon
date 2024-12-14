@@ -1,79 +1,74 @@
-# Translation of libmailcommon6.po to Catalan (Valencian)
-# Copyright (C) 2011-2024 This_file_is_part_of_KDE
-# This file is distributed under the license LGPL version 2.1 or
-# version 3 or later versions approved by the membership of KDE e.V.
+# Sanskrit translations for mailcommon package.
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the mailcommon package.
+# Kali <EMAIL@ADDRESS>, 2024.
 #
-# SPDX-FileCopyrightText: 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Josep M. Ferrer <txemaq@gmail.com>
-# Manuel Tortosa <manutortosa@chakra-project.org>, 2011.
-# Antoni Bella Pérez <antonibella5@yahoo.com>, 2011, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-12 00:41+0000\n"
-"PO-Revision-Date: 2024-12-12 09:28+0100\n"
-"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
-"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
-"Language: ca@valencia\n"
+"PO-Revision-Date: 2024-12-13 19:09+0530\n"
+"Last-Translator: Kali <EMAIL@ADDRESS>\n"
+"Language-Team: Sanskrit\n"
+"Language: sa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 22.12.3\n"
+"Plural-Forms: nplurals=2; plural=(n>2);\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
 msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
-msgstr "Caducitat"
+msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:36
 #, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] "%v dia"
-msgstr[1] "%v dies"
+msgstr[0] ""
+msgstr[1] ""
 
 #: collectionpage/collectionexpirywidget.cpp:37
 #: collectionpage/collectionexpirywidget.cpp:43
 #: collectionpage/collectionexpirywidget.cpp:55
 #, kde-format
 msgid "Never"
-msgstr "Mai"
+msgstr "कदापि न"
 
 #: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
-msgstr "Guarda la configuració i fes caducar ara"
+msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:68
 #, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
-msgstr "Fes que caduquen els missatges amb una data no vàlida"
+msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:74
 #, kde-format
 msgid "Expire read messages after:"
-msgstr "Fes que caduquen els missatges llegits després de:"
+msgstr "ततः परं पठितसन्देशानां अवधिः समाप्तः भवति:"
 
 #: collectionpage/collectionexpirywidget.cpp:77
 #, kde-format
 msgid "Expire unread messages after:"
-msgstr "Fes que caduquen els missatges sense llegir després de:"
+msgstr "अपठितसन्देशानां अवधिः समाप्तं कुर्वन्तु:"
 
 #: collectionpage/collectionexpirywidget.cpp:91
 #, kde-format
 msgid "Move expired messages to:"
-msgstr "Mou els missatges caducats a:"
+msgstr "अवधिसमाप्तसन्देशान् अत्र स्थानान्तरयन्तु:"
 
 #: collectionpage/collectionexpirywidget.cpp:102
 #, kde-format
 msgid "Delete expired messages permanently"
-msgstr "Suprimix permanentment els missatges caducats"
+msgstr "अवधिसमाप्तसन्देशान् स्थायिरूपेण विलोपयन्तु"
 
 #: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
@@ -81,14 +76,14 @@ msgid ""
 "Please select a folder to expire messages into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
-"Seleccioneu una carpeta per a fer caducar els missatges.\n"
-"Si no ho feu, els missatges caducats seran suprimits permanentment."
+"कृपया सन्देशानां अवधिः समाप्तुं पुटं चिनोतु ।\n"
+"यदि एतत् न क्रियते तर्हि अवधिः समाप्ताः सन्देशाः स्थायिरूपेण विलोपिताः भविष्यन्ति ।"
 
 #: collectionpage/collectionexpirywidget.cpp:174
 #, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
-msgstr "Cap carpeta seleccionada"
+msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:188
 #, kde-format
@@ -97,32 +92,31 @@ msgid ""
 "into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
-"Seleccioneu una carpeta diferent de la carpeta actual per a fer caducar els "
-"missatges.\n"
-"Si no ho feu, els missatges caducats seran suprimits permanentment."
+"कृपया सन्देशानां अवधिः समाप्तुं वर्तमानपुटात् भिन्नं पुटं चिनोतु ।\n"
+"यदि एतत् न क्रियते तर्हि अवधिः समाप्ताः सन्देशाः स्थायिरूपेण विलोपिताः भविष्यन्ति ।"
 
 #: collectionpage/collectionexpirywidget.cpp:190
 #, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
-msgstr "La carpeta seleccionada és errònia"
+msgstr ""
 
 #: collectionpage/collectiongeneralpage.cpp:44
 #, kde-format
 msgctxt "@title:tab General settings for a folder."
 msgid "General"
-msgstr "General"
+msgstr "सामान्य"
 
 #: collectionpage/collectiongeneralpage.cpp:65
 #, kde-format
 msgctxt "@label:textbox Name of the folder."
 msgid "Folder &Name:"
-msgstr "&Nom de la carpeta:"
+msgstr ""
 
 #: collectionpage/collectiongeneralpage.cpp:110
 #, kde-format
 msgid "Share unread state with all users"
-msgstr "Compartix l'estat de no llegit amb tots els usuaris"
+msgstr "अपठितस्थितिः सर्वैः उपयोक्तृभिः सह साझां कुर्वन्तु"
 
 #: collectionpage/collectiongeneralpage.cpp:113
 #, kde-format
@@ -131,9 +125,9 @@ msgid ""
 "all users having access to this folder. If disabled (the default), every "
 "user with access to this folder has their own unread state."
 msgstr ""
-"Si està habilitada, l'estat de no llegit dels missatges d'esta carpeta serà "
-"el mateix per a tots els usuaris que tinguen accés a esta carpeta com a "
-"estat propi de no llegits."
+"यदि सक्षमं भवति तर्हि अस्मिन् पुटे सन्देशानां अपठितस्थितिः सर्वेषां उपयोक्तृणां कृते समाना "
+"भविष्यति येषां प्रवेशः अस्मिन् पुटे भवति । यदि अक्षमम् (पूर्वनिर्धारितं) तर्हि अस्मिन् पुटे प्रवेशं "
+"विद्यमानस्य प्रत्येकस्य उपयोक्तुः स्वकीया अपठिता अवस्था भवति ।"
 
 #: collectionpage/collectiongeneralpage.cpp:213
 #, kde-format
@@ -141,15 +135,14 @@ msgid ""
 "You have configured this folder to contain groupware information. That means "
 "that this folder will disappear once the configuration dialog is closed."
 msgstr ""
-"Heu configurat esta carpeta perquè continga informació de treball en grup. "
-"Açò vol dir que esta carpeta desapareixerà en tancar el diàleg de "
-"configuració."
+"भवता एतत् पुटं समूहवेयर-सूचनाः समाविष्टुं विन्यस्तम् । तस्य अर्थः अस्ति यत् एकवारं "
+"विन्याससंवादः पिहितः जातः चेत् एतत् पुटं अन्तर्धानं भविष्यति ।"
 
 #: collectionpage/collectiongeneralwidget.cpp:25
 #, kde-format
 msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
-msgstr "Acció en tindre correu nou/sense llegir en esta carpeta"
+msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:27
 #, kde-format
@@ -162,20 +155,18 @@ msgid ""
 "messages. This is useful for ignoring any new/unread mail in your trash and "
 "spam folder.</p></qt>"
 msgstr ""
-"<qt><p>Si esta opció està habilitada, se vos notificarà de missatges nous/"
-"sense llegir en esta carpeta. D'altra banda, anant fins a la carpeta següent "
-"o anterior amb missatges sense llegir es pararà en esta carpeta.</p><p> "
-"Desmarqueu esta opció si no voleu ser notificat sobre els correus nous/sense "
-"llegir en esta carpeta i si voleu que esta carpeta s'ometa en anar cap a la "
-"carpeta següent o anterior amb missatges sense llegir. Açò és útil per a "
-"ignorar qualsevol correu nou/sense llegir en la paperera i en la carpeta de "
-"correu brossa.</p></qt>"
+"<qt><p>यदि एषः विकल्पः सक्षमः अस्ति तर्हि अस्मिन् पुटे नूतन/अपठितमेलविषये भवन्तः सूचिताः "
+"भविष्यन्ति । अपि च, अपठितसन्देशैः सह अग्रिम/पूर्वपुटं गमनम् अस्मिन् पुटे स्थगितम् भविष्यति ।</"
+"p><p> यदि भवान् अस्मिन् पुटे नूतन/अपठितमेलविषये सूचनां न प्राप्तुम् इच्छति तथा च यदि भवान् "
+"इच्छति यत् अपठितसन्देशैः सह अग्रिम/पूर्वपुटं गच्छन् एतत् पुटे त्यक्तुम् इच्छति तर्हि एतत् विकल्पं "
+"अनचेक् कुर्वन्तु एतत् भवतः कचरा-स्पैम्-पुटे यत्किमपि नूतनं/अपठितं मेलं उपेक्षितुं उपयोगी भवति ।</"
+"p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
 #, kde-format
 msgctxt "@option:check"
 msgid "Keep replies in this folder"
-msgstr "Mantín les respostes en esta carpeta"
+msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:40
 #, kde-format
@@ -184,15 +175,14 @@ msgid ""
 "be put in this same folder after sending, instead of in the configured sent-"
 "mail folder."
 msgstr ""
-"Marqueu esta opció si voleu que les respostes que escriviu als correus "
-"d'esta carpeta es posen en esta mateixa carpeta després d'enviar-les, en "
-"lloc de la carpeta de correu enviat de la configuració."
+"यदि भवान् इच्छति यत् भवान् अस्मिन् पुटे मेल-पत्रेभ्यः लिखितानि उत्तराणि प्रेषणानन्तरं अस्मिन् "
+"एव पुटे स्थापितानि भवेयुः, विन्यस्त-प्रेषित-मेल-पुटस्य स्थाने ।"
 
 #: collectionpage/collectiongeneralwidget.cpp:46
 #, kde-format
 msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
-msgstr "Oculta esta carpeta en el diàleg de selecció d'una carpeta"
+msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:48
 #, kde-kuit-format
@@ -201,15 +191,12 @@ msgid ""
 "Check this option if you do not want this folder to be shown in folder "
 "selection dialogs, such as the <interface>Jump to Folder</interface> dialog."
 msgstr ""
-"Marqueu esta opció si no voleu que esta carpeta es mostre en els diàlegs de "
-"selecció d'una carpeta, com ara el diàleg <interface>Salta fins a la "
-"carpeta</interface>."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
 #, kde-format
 msgctxt "@option:check"
 msgid "Use &default identity"
-msgstr "Utilitza la i&dentitat predeterminada"
+msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
@@ -220,144 +207,139 @@ msgid ""
 "signing or encryption keys automatically. Identities can be set up in the "
 "main configuration dialog. (Settings -> Configure KMail)"
 msgstr ""
-"Seleccioneu la identitat del remitent que s'utilitzarà en escriure correus "
-"nous o respondre a correus en esta carpeta. Açò vol dir que si vos trobeu en "
-"una de les carpetes de treball, podeu fer que KMail empre la corresponent "
-"adreça del remitent del correu, la signatura i les claus de signatura o "
-"encriptació automàticament. Es poden establir les identitats en el diàleg de "
-"configuració principal. (Configuració -> Configura KMail)"
+"अस्मिन् पुटे नूतनं मेललेखनं वा मेलस्य उत्तरं वा ददाति चेत् उपयोक्तुं प्रेषकपरिचयं चिनोतु । अस्य "
+"अर्थः अस्ति यत् यदि भवान् स्वस्य कार्यपुटेषु कस्मिंश्चित् अस्ति तर्हि भवान् KMail इत्यनेन "
+"तत्सम्बद्धं प्रेषक-ईमेल-सङ्केतं, हस्ताक्षरं च हस्ताक्षरं वा एन्क्रिप्शन-कुंजीं स्वयमेव उपयोक्तुं कर्तुं "
+"शक्नोति । मुख्यविन्याससंवादे परिचयाः स्थापयितुं शक्यन्ते । (सेटिंग्स् -> KMail विन्यस्तं कुर्वन्तु)"
 
 #: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
 msgid "&Sender identity:"
-msgstr "Identitat del &remitent:"
+msgstr "&प्रेषकपरिचयः : १."
 
 #: collectionpage/collectiontemplateswidget.cpp:20
 #, kde-format
 msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
-msgstr "Utilit&za plantilles de missatge personalitzades en esta carpeta"
+msgstr ""
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
 msgctxt "@action:button"
 msgid "&Copy Global Templates"
-msgstr "&Copia les plantilles globals"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:27
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
-msgstr "Utilitza l'agregació predeterminada de llista de missatges:"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
-msgstr "Utilitza el tema predeterminat de llista de missatges"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer HTML to text"
-msgstr "Preferix HTML sobre text"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer text to HTML"
-msgstr "Preferix text sobre HTML"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
 msgctxt "@option:radio"
 msgid "Use Global Settings"
-msgstr "Utilitza la configuració global"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:40
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
-msgstr "Mostra la columna Remitent/Destinatari en la llista de missatges"
+msgstr "सन्देशसूचौ प्रेषकः/ग्राहकः स्तम्भं दर्शयतु"
 
 #: collectionpage/collectionviewwidget.cpp:43
 #, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
-msgstr "Predeterminat"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:44
 #, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
-msgstr "Remitent"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:45
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
-msgstr "Destinatari"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:46
 #, kde-format
 msgid "Sho&w column:"
-msgstr "Most&ra la columna:"
+msgstr "शो&व स्तम्भः ."
 
 #: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
 msgid "Message format:"
-msgstr "Format dels missatges:"
+msgstr "सन्देशस्वरूपम् : १."
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
-msgstr "Seleccioneu un compte"
+msgstr ""
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:39
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
-msgstr ""
-"Falta el compte del filtre. Seleccioneu un compte que s'utilitzarà amb el "
-"filtre «%1»"
+msgstr "फ़िल्टर खातं लुप्तम् अस्ति। कृपया \"%1\" फ़िल्टर इत्यनेन सह उपयोक्तुं खातं चिनोतु ।"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
-msgstr "Seleccioneu una carpeta"
+msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
-msgstr "El camí cap a la carpeta era «%1»."
+msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
-msgstr "Es poden utilitzar les carpetes següents amb este filtre:"
+msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:67
 #, kde-format
 msgid "Please select a folder:"
-msgstr "Seleccioneu una carpeta:"
+msgstr "कृपया एकं पुटं चिनोतु:"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:70
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
 msgstr ""
-"Falta la carpeta del filtre. Seleccioneu una carpeta que s'utilitzarà amb el "
-"filtre «%1»:"
+"फ़िल्टर फोल्डर् अनुपलब्धम् अस्ति। कृपया \"%1\" फ़िल्टर इत्यनेन सह उपयोगाय एकं पुटं चिनोतु:"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
-msgstr "Seleccioneu una identitat"
+msgstr ""
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:38
 #, kde-format
@@ -365,56 +347,53 @@ msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
 "\"%1\""
 msgstr ""
-"Falta la identitat del filtre. Seleccioneu una identitat que s'utilitzarà "
-"amb el filtre «%1»"
+"फ़िल्टर-परिचयः लुप्तः अस्ति । कृपया \"%1\" फ़िल्टर इत्यनेन सह उपयोक्तुं परिचयं चिनोतु ।"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
-msgstr "Seleccioneu un so"
+msgstr ""
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
-msgstr "El fitxer de so era «%1»."
+msgstr ""
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr ""
-"Falta el fitxer de so. Seleccioneu un so que s'utilitzarà amb el filtre «%1»"
+"ध्वनिसञ्चिका अनुपलब्धा अस्ति। कृपया \"%1\" फ़िल्टर इत्यनेन सह उपयोक्तुं ध्वनिं चिनोतु ।"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
-msgstr "Seleccioneu una etiqueta"
+msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
-msgstr "L'etiqueta era «%1»."
+msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:47
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
-msgstr ""
-"Falta l'etiqueta del filtre. Seleccioneu una etiqueta que s'utilitzarà amb "
-"el filtre «%1»"
+msgstr "फ़िल्टर टैग् अनुपलब्धम् अस्ति। कृपया \"%1\" फ़िल्टर इत्यनेन सह उपयोक्तुं टैग् चिनोतु ।"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
 msgid "Add Tag…"
-msgstr "Afig una etiqueta…"
+msgstr "टैगं योजयतु..."
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
-msgstr "Seleccioneu una plantilla"
+msgstr ""
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:38
 #, kde-format
@@ -422,14 +401,13 @@ msgid ""
 "Filter template is missing. Please select a template to use with filter "
 "\"%1\""
 msgstr ""
-"Falta la plantilla del filtre. Seleccioneu una plantilla que s'utilitzarà "
-"amb el filtre «%1»"
+"फ़िल्टर टेम्पलेट् अनुपलब्धम् अस्ति। कृपया \"%1\" फ़िल्टर इत्यनेन सह उपयोगाय एकं टेम्पलेट् चिनोतु ।"
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
-msgstr "Seleccioneu un transport"
+msgstr ""
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:37
 #, kde-format
@@ -437,105 +415,104 @@ msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
 "\"%1\""
 msgstr ""
-"Falta el transport del filtre. Seleccioneu un transport que s'utilitzarà amb "
-"el filtre «%1»"
+"फ़िल्टर परिवहनं लुप्तम् अस्ति। कृपया \"%1\" फ़िल्टर इत्यनेन सह उपयोगाय परिवहनं चिनोतु ।"
 
 #: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
-msgstr "Seleccioneu el fitxer de filtres de Thunderbird"
+msgstr ""
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:31
 #, kde-format
 msgid " (default)"
-msgstr " (de manera predeterminada)"
+msgstr " (मूलभूतम्‌)"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
 #, kde-format
 msgid "Thunderbird File (*.dat)"
-msgstr "Fitxer de Thunderbird (*.dat)"
+msgstr "वज्रपक्षी सञ्चिका (*.dat)"
 
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
 msgid "### \"action '%1' not supported\""
-msgstr "### «acció «%1» no admesa»"
+msgstr "### \"क्रिया '%1' समर्थिता नास्ति\"।"
 
 #: filter/filteractions/filteractionaddheader.cpp:21
 #, kde-format
 msgid "Add Header"
-msgstr "Afig una capçalera"
+msgstr "शीर्षकं योजयतु"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
-msgstr "Amb valor:"
+msgstr ""
 
 #: filter/filteractions/filteractionaddheader.cpp:202
 #, kde-format
 msgid "The header name was missing."
-msgstr "Falta el nom de la capçalera."
+msgstr "शीर्षकनाम लुप्तम् आसीत् ।"
 
 #: filter/filteractions/filteractionaddheader.cpp:208
 #, kde-format
 msgid "The header value was missing."
-msgstr "Falta el valor de la capçalera."
+msgstr "शीर्षकमूल्यं लुप्तम् आसीत् ।"
 
 #: filter/filteractions/filteractionaddtag.cpp:24
 #, kde-format
 msgid "Add Tag"
-msgstr "Afig una etiqueta"
+msgstr "Add Tag"
 
 #: filter/filteractions/filteractionaddtag.cpp:150
 #, kde-format
 msgid "No tag selected."
-msgstr "No s'ha seleccionat cap etiqueta."
+msgstr "कोऽपि टैग् चयनितः नास्ति।"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:32
 #, kde-format
 msgid "Add to Address Book"
-msgstr "Afig a la llibreta d'adreces"
+msgstr "पतापुस्तके योजयतु"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:33
 #, kde-format
 msgctxt "Email sender"
 msgid "From"
-msgstr "Des de"
+msgstr "इत्यस्मात्‌"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:34
 #, kde-format
 msgctxt "Email recipient"
 msgid "To"
-msgstr "A"
+msgstr "इत्यस्मै"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:35
 #: search/searchpatternedit.cpp:52
 #, kde-format
 msgid "CC"
-msgstr "CC"
+msgstr "सीसी"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:36
 #, kde-format
 msgid "BCC"
-msgstr "BCC"
+msgstr "बी.सी.सी"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:39
 #, kde-format
 msgid "KMail Filter"
-msgstr "Filtre de KMail"
+msgstr "KMail Filter इति"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:116
 #, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
-msgstr "amb categoria"
+msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
 #, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
-msgstr "en la llibreta d'adreces"
+msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:134
 #, kde-format
@@ -544,43 +521,40 @@ msgid ""
 "If it is not accessible, the filter will fallback to the default address "
 "book."
 msgstr ""
-"Definix la llibreta d'adreces preferida.\n"
-"Si no és accessible, el filtre canviarà a la llibreta d'adreces "
-"predeterminada."
+"एतेन प्राधान्यं सम्बोधनपुस्तकं परिभाषितं भवति ।\n"
+"यदि एतत् सुलभं नास्ति तर्हि फ़िल्टर पूर्वनिर्धारित-सङ्केतपुस्तके पुनः पतति ।"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:286
 #, kde-format
 msgid "Header type selected is unknown."
-msgstr "El tipus de capçalera seleccionat és desconegut."
+msgstr "चयनितः शीर्षकप्रकारः अज्ञातः अस्ति ।"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:292
 #, kde-format
 msgid "No addressbook selected."
-msgstr "No s'ha seleccionat la llibreta d'adreces."
+msgstr "न कोऽपि पतापुस्तिका चयनिता।"
 
 #: filter/filteractions/filteractioncopy.cpp:19
 #, kde-format
 msgid "Copy Into Folder"
-msgstr "Copia a dins de la carpeta"
+msgstr "Copy Into Folder इति"
 
 #: filter/filteractions/filteractioncopy.cpp:68
 #: filter/filteractions/filteractionmove.cpp:66
 #, kde-format
 msgid "Folder destination was not defined."
-msgstr "No s'ha definit la carpeta de destinació."
+msgstr "पुटस्य गन्तव्यं परिभाषितं नासीत् ।"
 
 #: filter/filteractions/filteractiondecrypt.cpp:27
 #: filter/filteractions/filteractiondecrypt.cpp:40
 #, kde-format
 msgid "Decrypt"
-msgstr "Desencripta"
+msgstr "विच्छेदनं कुर्वन्तु"
 
 #: filter/filteractions/filteractiondecrypt.cpp:95
 #, kde-format
 msgid "<b>Warning:</b> Decrypted emails may be uploaded to a server!"
-msgstr ""
-"<b>Avís:</b> els correus electrònics desencriptats es poden pujar a un "
-"servidor!"
+msgstr "<b>चेतावनी:</b> विगुप्त-ईमेल-पत्राणि सर्वरे अपलोड् कर्तुं शक्यन्ते!"
 
 #: filter/filteractions/filteractiondecrypt.cpp:97
 #, kde-format
@@ -588,41 +562,38 @@ msgid ""
 "<p>If the email folder that you are filtering into is connected to a remote "
 "account (like an IMAP-Server) the decrypted content will go there.</p>"
 msgstr ""
-"<p>Si la carpeta de correu electrònic on esteu filtrant està connectada amb "
-"un compte remot (com ara, un servidor IMAP), el contingut desencriptat hi "
-"anirà.</p>"
+"<p>यदि भवान् यस्मिन् ईमेल-पुटे फ़िल्टर करोति तत् दूरस्थ-खातेन (IMAP-Server इव) सम्बद्धं "
+"भवति तर्हि विगुप्त-सामग्री तत्र गमिष्यति ।</p>"
 
 #: filter/filteractions/filteractiondelete.cpp:18
 #, kde-format
 msgid "Delete Message"
-msgstr "Suprimix el missatge"
+msgstr "सन्देशं विलोपयन्तु"
 
 #: filter/filteractions/filteractiondelete.cpp:41
 #, kde-format
 msgid "Be careful, mails will be removed."
-msgstr "Aneu amb cura, se suprimiran els correus."
+msgstr "सावधानाः भवन्तु, मेल-पत्राणि निष्कासितानि भविष्यन्ति।"
 
 #: filter/filteractions/filteractionencrypt.cpp:43
 #, kde-format
 msgid "Encrypt"
-msgstr "Encripta"
+msgstr "एन्क्रिप्ट् कुर्वन्तु"
 
 #: filter/filteractions/filteractionencrypt.cpp:206
 #, kde-format
 msgid "No encryption key has been selected"
-msgstr "No s'ha seleccionat cap clau d'encriptació"
+msgstr "कोऽपि एन्क्रिप्शन कीलः न चयनितः"
 
 #: filter/filteractions/filteractionencrypt.cpp:242
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
-msgstr "Torna a encriptar els correus electrònics encriptats amb esta clau"
+msgstr "एतेन कुञ्जिकायाः सह एन्क्रिप्टेड् ईमेल-पत्राणि पुनः एन्क्रिप्ट् कुर्वन्तु"
 
 #: filter/filteractions/filteractionencrypt.cpp:252
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
-msgstr ""
-"<b>Avís:</b> La clau secreta és necessària per a llegir els correus "
-"electrònics."
+msgstr "<b>चेतावनी :</b> ईमेल पठितुं सेक्की आवश्यकम्।"
 
 #: filter/filteractions/filteractionencrypt.cpp:254
 #, kde-format
@@ -632,364 +603,361 @@ msgid ""
 "an email server and use several clients, each of them must be configured to "
 "enable decryption.</p>"
 msgstr ""
-"<p>Una vegada s'haja encriptat un correu electrònic, necessitareu una "
-"configuració de la criptografia amb la vostra clau secreta per a tornar a "
-"accedir al seu contingut.</p><p>Si manteniu els correus electrònics "
-"emmagatzemats en un servidor de correu electrònic i utilitzeu diversos "
-"clients, cadascun d'ells s'haurà de configurar per a habilitar la "
-"desencriptació.</p>"
+"<p>एकदा ईमेल एन्क्रिप्टेड् कृत्वा पुनः सामग्रीं प्राप्तुं भवतः गुप्तकुंजी सह क्रिप्टो सेटअपस्य "
+"आवश्यकता भविष्यति।</p><p> यदि भवान् ईमेल-सर्वर्-मध्ये ईमेल-पत्राणि संगृहीतं करोति, अनेक-"
+"क्लायन्ट्-इत्यस्य उपयोगं करोति च, तर्हि तेषु प्रत्येकं विगुप्तीकरणं सक्षमं कर्तुं विन्यस्तं "
+"भवितुमर्हति ।</p>"
 
 #: filter/filteractions/filteractionexec.cpp:15
 #, kde-format
 msgid "Execute Command"
-msgstr "Executa una ordre"
+msgstr "Command निष्पादयन्तु"
 
 #: filter/filteractions/filteractionexec.cpp:36
 #, kde-format
 msgid "Missing command."
-msgstr "Falta una ordre."
+msgstr "अनुपलब्धः आदेशः।"
 
 #: filter/filteractions/filteractionforward.cpp:35
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
-msgstr "Reenvia a"
+msgstr ""
 
 #: filter/filteractions/filteractionforward.cpp:91
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
-msgstr "El destinatari al qual se li reenviarà el missatge."
+msgstr ""
 
 #: filter/filteractions/filteractionforward.cpp:92
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
-msgstr "El filtre reenviarà el missatge al destinatari introduït ací."
+msgstr "अत्र प्रविष्टस्य सम्बोधकस्य कृते फ़िल्टरः सन्देशं अग्रे प्रेषयिष्यति ।"
 
 #: filter/filteractions/filteractionforward.cpp:99
 #: filter/filteractions/filteractionforward.cpp:198
 #, kde-format
 msgid "Default Template"
-msgstr "Plantilla predeterminada"
+msgstr "पूर्वनिर्धारित टेम्पलेट"
 
 #: filter/filteractions/filteractionforward.cpp:110
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
-msgstr "La plantilla utilitzada en reenviar"
+msgstr ""
 
 #: filter/filteractions/filteractionforward.cpp:111
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
-msgstr "Establix la plantilla de reenviament que s'utilitzarà amb este filtre."
+msgstr "अस्मिन् फ़िल्टरेन सह उपयुज्यमानं अग्रे प्रेषणसारूप्यम् सेट् कुर्वन्तु ।"
 
 #: filter/filteractions/filteractionforward.cpp:226
 #, kde-format
 msgid "Forward to %1 with default template"
-msgstr "Reenvia a %1 amb la plantilla predeterminada"
+msgstr "पूर्वनिर्धारितसाचायाः सह %1 प्रति अग्रे प्रेषयन्तु"
 
 #: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
 msgid "Forward to %1 with template %2"
-msgstr "Reenvia a %1 amb la plantilla %2"
+msgstr "%2 टेम्पलेट् सह %1 प्रति अग्रे प्रेषयन्तु"
 
 #: filter/filteractions/filteractionforward.cpp:234
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."
-msgstr "No s'ha definit l'adreça de correu electrònic."
+msgstr "ईमेल-सङ्केतः परिभाषितः नासीत् ।"
 
 #: filter/filteractions/filteractionmove.cpp:23
 #, kde-format
 msgid "Move Into Folder"
-msgstr "Mou cap a la carpeta"
+msgstr "Folder मध्ये गच्छतु"
 
 #: filter/filteractions/filteractionpipethrough.cpp:20
 #, kde-format
 msgctxt "pipe through with command"
 msgid "Pipe Through"
-msgstr "Passa a través de"
+msgstr ""
 
 #: filter/filteractions/filteractionpipethrough.cpp:36
 #, kde-format
 msgid "No action defined."
-msgstr "No s'ha definit l'acció."
+msgstr "न कर्म विवक्षितम्।"
 
 #: filter/filteractions/filteractionplaysound.cpp:22
 #, kde-format
 msgid "Play Sound"
-msgstr "Reproduïx un so"
+msgstr "ध्वनिं वादयतु"
 
 #: filter/filteractions/filteractionplaysound.cpp:77
 #, kde-format
 msgid "Sound file was not defined."
-msgstr "No s'ha definit cap fitxer de so."
+msgstr "ध्वनिसञ्चिका परिभाषिता नासीत् ।"
 
 #: filter/filteractions/filteractionredirect.cpp:27
 #, kde-format
 msgid "Redirect To"
-msgstr "Redirigix cap a"
+msgstr "Redirect To"
 
 #: filter/filteractions/filteractionredirect.cpp:71
 #, kde-format
 msgid "Email address was missing."
-msgstr "Falta l'adreça de correu electrònic."
+msgstr "ईमेल-सङ्केतः अभावः आसीत् ।"
 
 #: filter/filteractions/filteractionremoveheader.cpp:22
 #, kde-format
 msgid "Remove Header"
-msgstr "Elimina la capçalera"
+msgstr "शीर्षकं निष्कासयन्तु"
 
 #: filter/filteractions/filteractionremoveheader.cpp:96
 #, kde-format
 msgid "Header name undefined."
-msgstr "No s'ha definit el nom de la capçalera."
+msgstr "शीर्षकनाम अपरिभाषितम्।"
 
 #: filter/filteractions/filteractionreplyto.cpp:20
 #, kde-format
 msgid "Set Reply-To To"
-msgstr "Establix la resposta a"
+msgstr "Reply-To To इति सेट् कुर्वन्तु"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:25
 #, kde-format
 msgid "Rewrite Header"
-msgstr "Reescriu la capçalera"
+msgstr "शीर्षकं पुनः लिखत"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:42
 #, kde-format
 msgid "Header not defined"
-msgstr "No s'ha definit la capçalera"
+msgstr "शीर्षकं न परिभाषितम्"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:48
 #, kde-format
 msgid "Search string is empty."
-msgstr "La cadena de busca està buida."
+msgstr "अन्वेषणमाला रिक्तम् अस्ति ।"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
-msgstr "Substituïx:"
+msgstr ""
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
-msgstr "Amb:"
+msgstr ""
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:28
 #, kde-format
 msgid "Send Fake MDN"
-msgstr "Envia una MDN falsa"
+msgstr "नकली MDN प्रेषयतु"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:33
 #, kde-format
 msgctxt "MDN type"
 msgid "Ignore"
-msgstr "Ignorada"
+msgstr ""
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:34
 #, kde-format
 msgctxt "MDN type"
 msgid "Displayed"
-msgstr "Mostrada"
+msgstr ""
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:35
 #, kde-format
 msgctxt "MDN type"
 msgid "Deleted"
-msgstr "Suprimida"
+msgstr ""
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:36
 #, kde-format
 msgctxt "MDN type"
 msgid "Dispatched"
-msgstr "Servida"
+msgstr ""
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:37
 #, kde-format
 msgctxt "MDN type"
 msgid "Processed"
-msgstr "Processada"
+msgstr ""
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:38
 #, kde-format
 msgctxt "MDN type"
 msgid "Denied"
-msgstr "Denegada"
+msgstr ""
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:39
 #, kde-format
 msgctxt "MDN type"
 msgid "Failed"
-msgstr "No s'ha pogut"
+msgstr ""
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:115
 #, kde-format
 msgid "Fake type undefined."
-msgstr "No s'ha definit un tipus fals."
+msgstr "नकली प्रकार अपरिभाषित।"
 
 #: filter/filteractions/filteractionsendreceipt.cpp:21
 #, kde-format
 msgid "Confirm Delivery"
-msgstr "Confirma el lliurament"
+msgstr "प्रसवस्य पुष्टिं कुर्वन्तु"
 
 #: filter/filteractions/filteractionsetidentity.cpp:29
 #, kde-format
 msgid "Set Identity To"
-msgstr "Establix la identitat a"
+msgstr "Identity To इति सेट् कुर्वन्तु"
 
 #: filter/filteractions/filteractionsetstatus.cpp:20
 #, kde-format
 msgid "Mark As"
-msgstr "Marca com a"
+msgstr "मार्क अस्"
 
 #: filter/filteractions/filteractionsetstatus.cpp:32
 #, kde-format
 msgid "Status not specified."
-msgstr "No s'ha especificat l'estat."
+msgstr "स्थितिः निर्दिष्टा नास्ति।"
 
 #: filter/filteractions/filteractionsettransport.cpp:36
 #, kde-format
 msgid "Set Transport To"
-msgstr "Establix el transport a"
+msgstr "परिवहनं To इति सेट् कुर्वन्तु"
 
 #: filter/filteractions/filteractionsettransport.cpp:142
 #, kde-format
 msgid "Mail transport not defined."
-msgstr "No s'ha definit el transport del correu."
+msgstr "मेलपरिवहनं परिभाषितं नास्ति।"
 
 #: filter/filteractions/filteractionstatus.cpp:31
 #, kde-format
 msgctxt "msg status"
 msgid "Important"
-msgstr "Important"
+msgstr ""
 
 #: filter/filteractions/filteractionstatus.cpp:32
 #, kde-format
 msgctxt "msg status"
 msgid "Read"
-msgstr "Llegit"
+msgstr ""
 
 #: filter/filteractions/filteractionstatus.cpp:33
 #, kde-format
 msgctxt "msg status"
 msgid "Unread"
-msgstr "Sense llegir"
+msgstr ""
 
 #: filter/filteractions/filteractionstatus.cpp:34
 #, kde-format
 msgctxt "msg status"
 msgid "Replied"
-msgstr "Respost"
+msgstr ""
 
 #: filter/filteractions/filteractionstatus.cpp:35
 #, kde-format
 msgctxt "msg status"
 msgid "Forwarded"
-msgstr "Reenviat"
+msgstr ""
 
 #: filter/filteractions/filteractionstatus.cpp:36
 #, kde-format
 msgctxt "msg status"
 msgid "Watched"
-msgstr "Vigilat"
+msgstr ""
 
 #: filter/filteractions/filteractionstatus.cpp:37
 #, kde-format
 msgctxt "msg status"
 msgid "Ignored"
-msgstr "Ignorat"
+msgstr ""
 
 #: filter/filteractions/filteractionstatus.cpp:38
 #, kde-format
 msgctxt "msg status"
 msgid "Spam"
-msgstr "Correu brossa"
+msgstr ""
 
 #: filter/filteractions/filteractionstatus.cpp:39
 #, kde-format
 msgctxt "msg status"
 msgid "Ham"
-msgstr "Correu legítim"
+msgstr ""
 
 #: filter/filteractions/filteractionstatus.cpp:40
 #, kde-format
 msgctxt "msg status"
 msgid "Action Item"
-msgstr "Element d'acció"
+msgstr ""
 
 #: filter/filteractions/filteractionstatus.cpp:100
 #, kde-format
 msgid "Status is missing."
-msgstr "Falta l'estat."
+msgstr "स्थितिः लुप्तः अस्ति।"
 
 #: filter/filteractions/filteractionunsetstatus.cpp:19
 #, kde-format
 msgctxt "action: to unset the status"
 msgid "Unset Status"
-msgstr "Neteja l'estat"
+msgstr ""
 
 #: filter/filteractions/filteractionunsetstatus.cpp:37
 #, kde-format
 msgid "Status not defined."
-msgstr "No s'ha definit l'estat."
+msgstr "स्थितिः न परिभाषिता।"
 
 #: filter/filteractions/filteractionwidget.cpp:69
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
-msgstr "Seleccioneu una acció."
+msgstr ""
 
 #: filter/filteractions/filteractionwithurl.cpp:22
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
-msgstr "Ajuda"
+msgstr ""
 
-# skip-rule: t-sp_tpc
 #: filter/filteractions/filteractionwithurl.cpp:64
 #, kde-format
 msgid "You can get specific header when you use %{headername}."
-msgstr "Podeu obtindre una capçalera específica si utilitzeu %{nomcapçalera}."
+msgstr "%{headername} इत्यस्य उपयोगं कुर्वन् विशिष्टं शीर्षकं प्राप्तुं शक्नुवन्ति ।"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
-msgstr "Convertix a un script de «Sieve»"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save…"
-msgstr "Guarda…"
+msgstr "रक्ष्…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr "Compartix…"
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
-msgstr "Fitxers de «Sieve» (*.siv);;Tots els fitxers (*)"
+msgstr "चलनी सञ्चिकाः (*.siv);;सर्व सञ्चिकाः (*)"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
-msgstr "Convertix a un script «Sieve»"
+msgstr ""
 
 #: filter/filterimporter/filterimportergmail.cpp:48
 #, kde-format
 msgid "Gmail filter %1"
-msgstr "Filtre %1 de GMail"
+msgstr "जीमेल फ़िल्टर %1"
 
 #: filter/filterimporter/filterimporterprocmail.cpp:52
 #, kde-format
 msgid "Procmail filter %1"
-msgstr "Filtre %1 del Procmail"
+msgstr "Procmail फ़िल्टर %1"
 
 #: filter/filterimporterexporter.cpp:112
 #, kde-format
@@ -997,50 +965,50 @@ msgid ""
 "The following filters have not been saved because they were invalid (e.g. "
 "containing no actions or no search rules)."
 msgstr ""
-"Els filtres següents no s'han guardat perquè no són vàlids (p. ex., no "
-"contenen accions o regles de busca)."
+"निम्नलिखित-छिद्राणि अमान्यत्वात् (उदा. न क्रियाः अथवा अन्वेषणनियमाः न सन्ति) इति "
+"कारणेन न रक्षिताः ।"
 
 #: filter/filterimporterexporter.cpp:138
 #, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
-msgstr "Importa els filtres de KMail"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:146
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
-msgstr "Importa els filtres d'Evolution"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:150
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
-msgstr "Importa els filtres del Sylpheed"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:154
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
-msgstr "Importa els filtres del Procmail"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:158
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
-msgstr "Importa els filtres de Balsa"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
-msgstr "Importa els filtres del Claws Mail"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:166
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
-msgstr "Importa els filtres del Gmail"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
 #: filter/filterimporterexporter.cpp:236
@@ -1048,51 +1016,49 @@ msgstr "Importa els filtres del Gmail"
 msgid ""
 "The selected file is not readable. Your file access permissions might be "
 "insufficient."
-msgstr ""
-"No s'ha pogut llegir el fitxer seleccionat. Potser no teniu prou permisos "
-"d'accés."
+msgstr "चयनिता सञ्चिका पठनीया नास्ति । भवतः सञ्चिकाप्रवेशस्य अनुमतिः अपर्याप्तः भवेत् ।"
 
 #: filter/filterimporterexporter.cpp:316
 #, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
-msgstr "Exporta els filtres"
+msgstr ""
 
 #: filter/filterselectiondialog.cpp:29
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr "Selecciona-ho tot"
+msgstr ""
 
 #: filter/filterselectiondialog.cpp:30
 #, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
-msgstr "Desselecciona-ho tot"
+msgstr ""
 
 #: filter/filterselectiondialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
-msgstr "Seleccioneu els filtres"
+msgstr ""
 
 #: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:51
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
-msgstr "Busca"
+msgstr ""
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
-msgstr "Filtres no vàlids"
+msgstr ""
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:40
 #, kde-format
 msgid "Discard"
-msgstr "Descarta"
+msgstr "तनूकृ"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
 #, kde-format
@@ -1101,152 +1067,150 @@ msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
 msgstr ""
-"Els filtres següents no són vàlids (p. ex., no contenen accions o regles de "
-"busca). Voleu descartar o edite els filtres no vàlids?"
 
 #: filter/kmfilteraccountlist.cpp:24
 #, kde-format
 msgid "Account Name"
-msgstr "Nom del compte"
+msgstr "खाता नाम"
 
 #: filter/kmfilteraccountlist.cpp:24
 #, kde-format
 msgid "Type"
-msgstr "Tipus"
+msgstr "प्रकारः"
 
 #: filter/kmfilterdialog.cpp:72
 #, kde-format
 msgctxt "@title:window"
 msgid "Filter Rules"
-msgstr "Regles de filtratge"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:90
 #, kde-format
 msgid "Import…"
-msgstr "Importa…"
+msgstr "आयात…"
 
 #: filter/kmfilterdialog.cpp:92
 #, kde-format
 msgid "Export…"
-msgstr "Exporta…"
+msgstr "निर्यात…"
 
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
 msgid "Convert to…"
-msgstr "Convertix a…"
+msgstr "परिवर्तयन्तु..."
 
 #: filter/kmfilterdialog.cpp:98
 #, kde-format
 msgctxt "@action"
 msgid "KMail filters"
-msgstr "Filtres de KMail"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:102
 #, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
-msgstr "Filtres de Thunderbird"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:106
 #, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
-msgstr "Filtres d'Evolution"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:110
 #, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
-msgstr "Filtres del Sylpheed"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:114
 #, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
-msgstr "Filtres del Procmail"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:118
 #, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
-msgstr "Filtres de Balsa"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:122
 #, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
-msgstr "Filtres del Claws Mail"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:126
 #, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
-msgstr "Filtres d'Icedove Mail"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:132
 #, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
-msgstr "Filtres del Gmail"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:140
 #, kde-format
 msgctxt "@action"
 msgid "Sieve script"
-msgstr "Script de «Sieve»"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:162
 #, kde-format
 msgid "Available Filters"
-msgstr "Filtres disponibles"
+msgstr "उपलब्धाः फ़िल्टराः"
 
 #: filter/kmfilterdialog.cpp:168
 #, kde-format
 msgctxt "General mail filter settings."
 msgid "General"
-msgstr "General"
+msgstr "सामान्य"
 
 #: filter/kmfilterdialog.cpp:172
 #, kde-format
 msgctxt "Advanced mail filter settings."
 msgid "Advanced"
-msgstr "Avançat"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:182
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Filter actions:"
-msgstr "Accions de filtratge:"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:193
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
-msgstr "Aplica este filtre als missatges entrants:"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:203
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all accounts"
-msgstr "Des de tots els comptes"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:207
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
-msgstr "Des de tots excepte els comptes IMAP en línia"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:211
 #, kde-format
 msgctxt "@option:radio"
 msgid "From selected accounts only"
-msgstr "Només des dels comptes seleccionats"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:219
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
-msgstr "Aplica este filtre en en&viar missatges"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:221
 #, kde-format
@@ -1256,16 +1220,16 @@ msgid ""
 "also needs to be modified, please use \"Apply this filter <b>before</b> "
 "sending messages\".</p>"
 msgstr ""
-"<p>El filtre s'activarà <b>després</b> d'enviar el missatge i només afectarà "
-"la còpia local del missatge.</p><p>Si també cal modificar la còpia del "
-"destinatari, cal utilitzar «Aplica este filtre <b>abans</b> d'enviar "
-"missatges».</p>"
+"<p>सन्देशस्य <b>प्रेषणानन्तरं</b> फ़िल्टरः प्रवर्तते तथा च केवलं सन्देशस्य स्थानीयप्रतिलिपिं "
+"प्रभावितं करिष्यति ।</p><p> यदि प्राप्तकस्य प्रतिलिपिः अपि परिवर्तनीयः अस्ति तर्हि "
+"कृपया &quot;सन्देशप्रेषणात् <b>पूर्वं</b> एतत् फ़िल्टरं प्रयोजयन्तु&quot; इति उपयोगं कुर्वन्तु ।</"
+"p>"
 
 #: filter/kmfilterdialog.cpp:227
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
-msgstr "Aplica este filtre a&bans d'enviar els missatges"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:229
 #, kde-format
@@ -1274,22 +1238,21 @@ msgid ""
 "will affect both the local copy and the sent copy of the message.</p><p>This "
 "is required if the recipient's copy also needs to be modified.</p>"
 msgstr ""
-"<p>El filtre s'activarà <b>abans</b> d'enviar el missatge i afectarà tant la "
-"còpia local com la còpia enviada del missatge.</p><p>Açò és necessari si "
-"també cal modificar la còpia del destinatari.</p>"
+"<p>सन्देशस्य प्रेषणात् <b>पूर्वं</b> फ़िल्टरः प्रवर्तते तथा च सन्देशस्य स्थानीयप्रतिं प्रेषितप्रतिं "
+"च प्रभावितं करिष्यति ।</p><p> यदि प्राप्तकस्य प्रतिलिपिः अपि परिवर्तनीयः भवति तर्हि "
+"एतत् आवश्यकम् ।</p>"
 
 #: filter/kmfilterdialog.cpp:234
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
-msgstr "Aplica este filtre en el &filtratge manual"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:237
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr ""
-"Aplica este filtre als correus electrònics entrants en totes les carpetes"
 
 #: filter/kmfilterdialog.cpp:239
 #, kde-format
@@ -1299,63 +1262,61 @@ msgid ""
 "IMAP accounts where new emails may have already been moved to different "
 "folders by server-side filters.</p>"
 msgstr ""
-"<p>El filtre s'aplicarà als correus electrònics entrants de totes les "
-"carpetes pertanyents a tots els comptes seleccionats. Açò és útil quan "
-"s'empren filtres locals amb comptes IMAP, on els correus electrònics nous ja "
-"s'han pogut moure cap a carpetes diferents per als filtres del servidor.</p>"
+"<p>उपरि चयनितसर्वखातानां सर्वेभ्यः पुटेभ्यः आगच्छन्तीषु ईमेल-पत्रेषु फ़िल्टरः प्रयुक्तः भविष्यति "
+"। IMAP खाताभिः सह स्थानीय-छिद्रकाणां उपयोगे एतत् उपयोगी भवति यत्र नूतनाः ईमेल-पत्राणि "
+"पूर्वमेव सर्वर-पक्षीय-छिद्रकैः भिन्न-भिन्न-पुटेषु स्थानान्तरितानि भवेयुः ।</p>"
 
 #: filter/kmfilterdialog.cpp:245
 #, kde-format
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
-msgstr "Si este filtre &coincidix, para ací el procés"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:248
 #, kde-format
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
-msgstr "Afig este filtre al menú «Aplica el filtratge»"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:266
 #, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
-msgstr "De manera addicional, afig este filtre a la barra d'eines"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:273
 #, kde-format
 msgid "Shortcut:"
-msgstr "Drecera:"
+msgstr "लघुमार्गः : १."
 
 #: filter/kmfilterdialog.cpp:279
 #, kde-format
 msgid "Icon for this filter:"
-msgstr "Icona per a este filtre:"
+msgstr "अस्य फ़िल्टरस्य कृते चिह्नम् : १."
 
 #: filter/kmfilterdialog.cpp:287
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
-msgstr "Executa els filtres seleccionats en: "
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:293
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
-msgstr "Executa ara"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
-"No s'ha pogut aplicar este filtre, ja que no s'ha seleccionat cap carpeta."
 
 #: filter/kmfilterdialog.cpp:421
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
-msgstr "Cap carpeta seleccionada."
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:428
 #, kde-format
@@ -1364,43 +1325,39 @@ msgid ""
 "Some filters were changed and not saved yet. You must save your filters "
 "before they can be applied."
 msgstr ""
-"Alguns filtres s'han canviat i encara no s'han guardat. Cal guardar els "
-"filtres abans que es puguen aplicar."
 
 #: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
-msgstr "S'han canviat els filtres."
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
-"No s'ha pogut aplicar cap filtre, ja que actualment no hi ha cap filtre "
-"seleccionat."
 
 #: filter/kmfilterdialog.cpp:438
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
-msgstr "No s'ha seleccionat cap filtre."
+msgstr "न फ़िल्टर चयनितम्।"
 
 #: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
-msgstr "No s'ha importat cap filtre."
+msgstr "कोऽपि फ़िल्टरः आयातितः नासीत् ।"
 
 #: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
-msgstr "Filtres que s'han importat:"
+msgstr "ये फ़िल्टराः आयाताः आसन् : १."
 
 #: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
-msgstr "Qualsevol filtre trobat."
+msgstr "यत्किमपि छानकं प्राप्तम्।"
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format
@@ -1409,26 +1366,24 @@ msgid ""
 "Some filters were changed and not saved yet.<br>You must save your filters "
 "before they can be exported."
 msgstr ""
-"Alguns filtres s'han canviat i encara no s'han guardat.<br>Cal guardar els "
-"filtres abans que es puguen exportar."
 
 #: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
-"No es poden convertir tots els filtres de KMail a scripts de «Sieve» però "
-"s'intentarà :)"
+"वयं सर्वाणि KMail फ़िल्टर्स् sieve scripts मध्ये परिवर्तयितुं न शक्नुमः परन्तु वयं प्रयासं कर्तुं "
+"शक्नुमः :)"
 
 #: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
-msgstr "Convertix els filtres de KMail a scripts de «Sieve»"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:733
 #, kde-format
 msgid "No filters selected."
-msgstr "No s'ha seleccionat cap filtre."
+msgstr "न फ़िल्टर चयनितम्।"
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1437,33 +1392,33 @@ msgid ""
 "</p><p>Click on any filter to edit it using the controls in the right-hand "
 "half of the dialog.</p></qt>"
 msgstr ""
-"<qt><p>Esta és la llista de filtres definits. Es processen de dalt a baix.</"
-"p><p>Cliqueu en qualsevol filtre per a editar-lo utilitzant els controls a "
-"la meitat dreta del diàleg.</p></qt>"
+"<qt><p>एषा परिभाषित-छिद्रक-सूची अस्ति । ते उपरितः अधः यावत् संसाधिताः भवन्ति।</"
+"p><p> संवादस्य दक्षिणहस्तस्य अर्धभागे नियन्त्रणानि उपयुज्य सम्पादयितुं कस्यापि फ़िल्टरस्य उपरि "
+"नुदन्तु ।</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:83
 #, kde-format
 msgctxt "Move selected filter up."
 msgid "Up"
-msgstr "Puja"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:84
 #, kde-format
 msgctxt "Move selected filter down."
 msgid "Down"
-msgstr "Baixa"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:85
 #, kde-format
 msgctxt "Move selected filter to the top."
 msgid "Top"
-msgstr "Dalt"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:86
 #, kde-format
 msgctxt "Move selected filter to the bottom."
 msgid "Bottom"
-msgstr "Baix"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:88
 #, kde-format
@@ -1475,11 +1430,10 @@ msgid ""
 "accidentally, you can undo this by clicking on the <em>Down</em> button.</"
 "p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a moure el filtre seleccionat una posició cap "
-"<em>amunt</em> en la llista.</p><p>Açò és útil, ja que l'ordre dels filtres "
-"en la llista determina l'ordre en què s'apliquen en els missatges: el de més "
-"amunt s'aplicarà el primer.</p><p>Si heu clicat accidentalment este botó, "
-"podreu desfer-ho clicant en el botó <em>Baixa</em>.</p></qt>"
+"<qt><p>उपरिष्टाद् सूचीयां वर्तमानचयनितं फ़िल्टरं <em>उपरि</em> स्थापयितुं एतत् बटन् नुदन्तु ।"
+"</p><p> एतत् उपयोगी यतः सूचीस्थानां फ़िल्टर्-क्रमेण सन्देशेषु तेषां प्रयासः क्रमः निर्धारितः "
+"भवति: सर्वोच्च-छिद्रकं प्रथमं प्रयत्नः भवति ।</p><p> यदि भवान् अकस्मात् एतत् बटन् क्लिक् "
+"कृतवान् तर्हि <em>Down</em> बटन् नुत्वा एतत् पूर्ववत् कर्तुं शक्नोति ।</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:96
 #, kde-format
@@ -1491,11 +1445,10 @@ msgid ""
 "accidentally, you can undo this by clicking on the <em>Up</em> button.</p></"
 "qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a moure el filtre seleccionat una posició cap "
-"<em>avall</em> en la llista.</p><p>Açò és útil, ja que l'ordre dels filtres "
-"en la llista determina l'ordre en què s'apliquen en els missatges: el de més "
-"amunt s'aplicarà el primer.</p><p>Si heu clicat accidentalment este botó, "
-"podreu desfer-ho clicant en el botó <em>Puja</em>.</p></qt>"
+"<qt><p>उपरि सूचीयां वर्तमान-चयनितं फ़िल्टरं <em>अधः</em> स्थापयितुं एतत् बटन् नुदन्तु ।</"
+"p><p> एतत् उपयोगी यतः सूचीस्थानां फ़िल्टर्-क्रमेण सन्देशेषु तेषां प्रयासः क्रमः निर्धारितः "
+"भवति: सर्वोच्च-छिद्रकं प्रथमं प्रयत्नः भवति ।</p><p> यदि भवान् अकस्मात् एतत् बटन् क्लिक् "
+"कृतवान् तर्हि <em>Up</em> बटन् नुत्वा एतत् पूर्ववत् कर्तुं शक्नोति ।</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:104
 #, kde-format
@@ -1505,10 +1458,9 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a moure el filtre seleccionat a la part "
-"inferior de la llista.</p><p>Açò és útil, ja que l'ordre dels filtres en la "
-"llista determina l'ordre en què s'apliquen en els missatges: el de més amunt "
-"s'aplicarà el primer.</p></qt>"
+"<qt><p>वर्तमान-चयनितं फ़िल्टरं सूचीयाः अधः स्थापयितुं एतत् बटन् नुदन्तु ।</p><p> एतत् "
+"उपयोगी यतः सूचीस्थानां फ़िल्टर्-क्रमेण सन्देशेषु तेषां प्रयासः क्रमः निर्धारितः भवति: सर्वोच्च-"
+"छिद्रकं प्रथमं प्रयत्नः भवति ।</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:110
 #, kde-format
@@ -1518,34 +1470,33 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a moure el filtre seleccionat a la part "
-"superior de la llista.</p><p>Açò és útil, ja que l'ordre dels filtres en la "
-"llista determina l'ordre en què s'apliquen en els missatges: el de més amunt "
-"s'aplicarà el primer.</p></qt>"
+"<qt><p>वर्तमान चयनितं फ़िल्टरं सूचीयाः उपरि स्थानान्तरयितुं एतत् बटन् नुदन्तु ।</p><p> एतत् "
+"उपयोगी यतः सूचीस्थानां फ़िल्टर्-क्रमेण सन्देशेषु तेषां प्रयासः क्रमः निर्धारितः भवति: सर्वोच्च-"
+"छिद्रकं प्रथमं प्रयत्नः भवति ।</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:140
 #, kde-format
 msgctxt "@action:button in filter list manipulator"
 msgid "New"
-msgstr "Nou"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
-msgstr "Copia"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:142
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
-msgstr "Suprimix"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:143
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
-msgstr "Canvia el nom"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:145
 #, kde-format
@@ -1555,10 +1506,10 @@ msgid ""
 "that later on.</p><p>If you have clicked this button accidentally, you can "
 "undo this by clicking on the <em>Delete</em> button.</p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a crear un filtre nou.</p><p>El filtre "
-"s'inserirà immediatament abans del seleccionat, però sempre podreu canviar-"
-"ho més tard.</p><p>Si heu clicat accidentalment este botó, podreu desfer-ho "
-"clicant en el botó <em>Suprimix</em>.</p></qt>"
+"<qt><p>नूतनं फ़िल्टरं निर्मातुं एतत् बटन् नुदन्तु ।</p><p> वर्तमान-चयनितस्य पूर्वमेव फ़िल्टरं "
+"सम्मिलितं भविष्यति, परन्तु भवन्तः तत् पश्चात् सर्वदा परिवर्तयितुं शक्नुवन्ति ।</p><p> यदि "
+"भवान् अकस्मात् एतत् बटन् क्लिक् कृतवान् तर्हि <em>Delete</em> बटन् नुत्वा एतत् पूर्ववत् कर्तुं "
+"शक्नोति ।</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:152
 #, kde-format
@@ -1567,9 +1518,8 @@ msgid ""
 "button accidentally, you can undo this by clicking on the <em>Delete</em> "
 "button.</p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a copiar un filtre nou</p><p>Si heu clicat "
-"accidentalment este botó, podreu desfer-ho clicant en el botó <em>Suprimix</"
-"em>.</p></qt>"
+"<qt><p>एकं फ़िल्टरं प्रतिलिखितुं एतत् बटन् नुदन्तु ।</p><p> यदि भवान् अकस्मात् एतत् बटन् क्लिक् "
+"कृतवान् तर्हि <em>Delete</em> बटन् नुत्वा एतत् पूर्ववत् कर्तुं शक्नोति ।</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:156
 #, kde-format
@@ -1579,10 +1529,9 @@ msgid ""
 "deleted, but you can always leave the dialog by clicking <em>Cancel</em> to "
 "discard the changes made.</p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a <em>suprimir</em> el filtre seleccionat de la "
-"llista.</p><p>No hi ha manera de recuperar el filtre una vegada s'ha "
-"suprimit, però sempre podreu abandonar el diàleg clicant <em>Cancel·la</em> "
-"per a descartar els canvis efectuats.</p></qt>"
+"<qt><p>उपरिष्टात् सूचीतः वर्तमानं चयनितं फ़िल्टरं <em>विलोपयितुं</em> एतत् बटन् नुदन्तु ।</"
+"p><p> एकवारं विलोपितं जातं चेत् फ़िल्टरं पुनः प्राप्तुं कोऽपि उपायः नास्ति, परन्तु कृतं "
+"परिवर्तनं परित्यक्तुं <em>Cancel</em> नुत्वा सर्वदा संवादं त्यक्तुं शक्नुवन्ति ।</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:163
 #, kde-format
@@ -1593,43 +1542,43 @@ msgid ""
 "back, click this button and select <em>Clear</em> followed by <em>OK</em> in "
 "the appearing dialog.</p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a canviar el nom del filtre seleccionat.</"
-"p><p>Els filtres s'anomenen automàticament, i comencen per «&lt;»</p><p>Si "
-"heu canviat el nom accidentalment un filtre i el voleu tornar a anomenar "
-"automàticament, cliqueu este botó i seleccioneu <em>Neteja</em> seguit per "
-"<em>D'acord</em> en el diàleg que apareixerà.</p></qt>"
+"<qt><p>वर्तमानचयनितस्य फ़िल्टरस्य नाम परिवर्तयितुं एतत् बटन् नुदन्तु ।</p><p> फ़िल्टर्स् "
+"स्वयमेव नामकृताः भवन्ति, यावत् ते &quot;&lt;&quot; इत्यनेन आरभन्ते ।</p><p> यदि भवान् "
+"आकस्मिकरूपेण कस्यचित् फ़िल्टरस्य नाम परिवर्तितवान् अस्ति तथा च स्वचालितं नामकरणं इच्छति "
+"तर्हि एतत् बटन् नुत्वा प्रकटितसंवादे <em>Clear इति</em> चिनोतु तदनन्तरं <em>OK</em> इति "
+"चिनोतु ।</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:290
 #, kde-format
 msgid "unnamed"
-msgstr "sense nom"
+msgstr "अनामिका"
 
 #: filter/kmfilterlistbox.cpp:444
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
-msgstr "Voleu eliminar el filtre «%1»?"
+msgstr "किं भवान् \"%1\" इति फ़िल्टरं हर्तुं इच्छति?"
 
 #: filter/kmfilterlistbox.cpp:444
 #, kde-format
 msgid "Do you want to remove selected filters?"
-msgstr "Voleu eliminar els filtres seleccionats?"
+msgstr "चयनित-छिद्रकान् हर्तुं इच्छति वा ?"
 
 #: filter/kmfilterlistbox.cpp:445
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
-msgstr "Elimina el filtre"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:445
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
-msgstr "Elimina els filtres"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:661
 #, kde-format
 msgid "Rename Filter"
-msgstr "Canvia el nom del filtre"
+msgstr "Filter इत्यस्य नाम परिवर्तनं कुर्वन्तु"
 
 #: filter/kmfilterlistbox.cpp:662
 #, kde-format
@@ -1637,29 +1586,28 @@ msgid ""
 "Rename filter \"%1\" to:\n"
 "(leave the field empty for automatic naming)"
 msgstr ""
-"Canvia el nom del filtre «%1» a:\n"
-"(deixeu-ho buit per a anomenar-lo automàticament)"
+"\"%1\" इति फ़िल्टरस्य नामकरणं कृत्वा:\n"
+"(स्वचालितनामकरणार्थं क्षेत्रं रिक्तं त्यजन्तु)"
 
 #: filter/mailfilter.cpp:131
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
-msgstr "<b>S'està aplicant l'acció del filtre:</b> %1"
+msgstr "<b>फ़िल्टर क्रियां प्रयोजयति:</b> %1"
 
 #: filter/mailfilter.cpp:140
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
-msgstr "Ha ocorregut un error crític. El procés es para ací."
+msgstr "एकः गम्भीरः दोषः अभवत् । अत्रैव प्रसंस्करणं स्थगयति ।"
 
 #: filter/mailfilter.cpp:147
 #, kde-format
 msgid "A problem was found while applying this action."
-msgstr "S'ha trobat un problema en aplicar esta acció."
+msgstr "एतत् कार्यं प्रयोजयन् समस्या प्राप्ता ।"
 
 #: filter/mailfilter.cpp:427
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
-msgstr ""
-"<qt>Hi ha massa accions de filtre a la regla del filtre <b>%1</b>.</qt>"
+msgstr "<qt>फ़िल्टर नियम <b>%1</b> मध्ये अत्यधिकाः फ़िल्टर क्रियाः ।</qt>"
 
 #: filter/mailfilter.cpp:461
 #, kde-format
@@ -1667,441 +1615,425 @@ msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
 ">Ignoring it.</qt>"
 msgstr ""
-"<qt>Acció de filtre desconeguda <b>%1</b><br />a la regla del filtre <b>%2</"
-"b>.<br />S'està ignorant.</qt>"
+"<qt>अज्ञात फ़िल्टर क्रिया <b>%1</b><br /> फ़िल्टर नियमे <b>%2</b> .<br /> तस्य "
+"अवहेलना ।</qt>"
 
 #: filter/mailfilter.cpp:569
 #, kde-format
 msgid "Any action defined."
-msgstr "Qualsevol acció definida."
+msgstr "यत्किमपि कर्म विवक्षितम्।"
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
-msgstr "Reproduïx"
+msgstr ""
 
 #: filter/soundtestwidget.cpp:62
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Sound File"
-msgstr "Seleccioneu el fitxer de so"
+msgstr ""
 
 #: filter/soundtestwidget.cpp:107
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
-msgstr "Pausa"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: filter/ui/filterconfigwidget.ui:19
 #, kde-format
 msgid "Name:"
-msgstr "Nom:"
+msgstr "नामः:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: filter/ui/filterconfigwidget.ui:45
 #, kde-format
 msgid "Criteria"
-msgstr "Criteri"
+msgstr "कोटी"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: filter/ui/filterconfigwidget.ui:87
 #, kde-format
 msgid "Actions"
-msgstr "Accions"
+msgstr "कर्माणि"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: filter/ui/filterconfigwidget.ui:129
 #, kde-format
 msgid "Apply options"
-msgstr "Aplica les opcions"
+msgstr "विकल्पान् प्रयोजयन्तु"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyToIncomingCB)
 #: filter/ui/filterconfigwidget.ui:138
 #, kde-format
 msgid "Apply to incoming messages"
-msgstr "Aplica als missatges entrants"
+msgstr "आगच्छन्तसन्देशेषु प्रयोजयन्तु"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyToSentCB)
 #: filter/ui/filterconfigwidget.ui:145
 #, kde-format
 msgid "Apply to sent messages"
-msgstr "Aplica als missatges enviats"
+msgstr "प्रेषितसन्देशेषु आवेदनं कुर्वन्तु"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyBeforeSendCB)
 #: filter/ui/filterconfigwidget.ui:152
 #, kde-format
 msgid "Apply before sending messages"
-msgstr "Aplica abans d'enviar els missatges"
+msgstr "सन्देशप्रेषणात् पूर्वं आवेदनं कुर्वन्तु"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyManuallyCB)
 #: filter/ui/filterconfigwidget.ui:159
 #, kde-format
 msgid "Apply on manual filtering"
-msgstr "Aplica en filtrar manualment"
+msgstr "मैनुअल् फ़िल्टरिंग् इत्यत्र प्रयोजयन्तु"
 
 #. i18n: ectx: property (text), widget (QCheckBox, stopIfMatchesCB)
 #: filter/ui/filterconfigwidget.ui:169
 #, kde-format
 msgid "Stop processing if matches"
-msgstr "Para el procés si coincidix"
+msgstr "यदि मेलनं भवति तर्हि प्रक्रियां त्यजन्तु"
 
 #. i18n: ectx: property (text), widget (QRadioButton, selectFile)
 #: filter/ui/selectthunderbirdfilterfileswidget.ui:29
 #, kde-format
 msgid "Select File:"
-msgstr "Selecciona un fitxer:"
+msgstr "सञ्चिकां चिनोतु : १."
 
 #. i18n: ectx: property (text), widget (QRadioButton, selectFromConfig)
 #: filter/ui/selectthunderbirdfilterfileswidget.ui:45
 #, kde-format
 msgid "Select file from config:"
-msgstr "Selecciona un fitxer de configuració:"
+msgstr "config तः सञ्चिकां चिनोतु:"
 
 #: folder/accountconfigorderdialog.cpp:57
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
-msgstr "Editeu l'ordre dels comptes"
+msgstr ""
 
 #: folder/accountconfigorderdialog.cpp:74
 #, kde-format
 msgctxt "@option:check"
 msgid "Use custom order"
-msgstr "Utilitza un ordre personalitzat"
+msgstr ""
 
 #: folder/accountconfigorderdialog.cpp:91
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
-msgstr "Puja"
+msgstr ""
 
 #: folder/accountconfigorderdialog.cpp:99
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
-msgstr "Baixa"
+msgstr ""
 
 #: folder/folderrequester.cpp:46
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
-msgstr "Seleccioneu una carpeta"
+msgstr ""
 
 #: folder/folderrequester.cpp:117
 #, kde-format
 msgid "Local Folders"
-msgstr "Carpetes locals"
+msgstr "स्थानीय पुट"
 
 #: folder/folderrequester.cpp:127 folder/folderrequester.cpp:145
 #, kde-format
 msgid "Please select a folder"
-msgstr "Seleccioneu una carpeta"
+msgstr "कृपया एकं पुटं चिनोतु"
 
 #: folder/folderselectiondialog.cpp:65
 #, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
-msgstr "Subcarpeta &nova…"
+msgstr "&नवीन उपपुट..."
 
 #: folder/folderselectiondialog.cpp:67
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
-msgstr "Crea una subcarpeta nova davall la carpeta seleccionada"
+msgstr ""
 
 #: folder/folderselectiondialog.cpp:126
 #, kde-format
 msgid "&New Subfolder…"
-msgstr "Subcarpeta &nova…"
+msgstr "&नवीन उपपुट..."
 
 #: folder/folderselectiondialog.cpp:178
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
-msgstr "Carpeta nova"
+msgstr ""
 
 #: folder/folderselectiondialog.cpp:178
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
-msgstr "Nom"
+msgstr ""
 
 #: folder/folderselectiondialog.cpp:195
 #, kde-format
 msgid "Could not create folder: %1"
-msgstr "No s'ha pogut crear la carpeta: %1"
+msgstr "पुटं निर्मातुं न शक्तम्: %1"
 
 #: folder/folderselectiondialog.cpp:195
 #, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
-msgstr "No s'ha pogut crear la carpeta"
+msgstr ""
 
 #: folder/foldertreeview.cpp:129
 #, kde-format
 msgid "View Columns"
-msgstr "Mostra les columnes"
+msgstr "स्तम्भान् पश्यन्तु"
 
 #: folder/foldertreeview.cpp:139
 #, kde-format
 msgid "Icon Size"
-msgstr "Mida de les icones"
+msgstr "चिह्न आकार"
 
 #: folder/foldertreeview.cpp:155
 #, kde-format
 msgid "Display Tooltips"
-msgstr "Mostra els consells"
+msgstr "Tooltips प्रदर्शयन्तु"
 
 #: folder/foldertreeview.cpp:159
 #, kde-format
 msgctxt "@action:inmenu Always display tooltips"
 msgid "Always"
-msgstr "Sempre"
+msgstr ""
 
 #: folder/foldertreeview.cpp:166
 #, kde-format
 msgctxt "@action:inmenu Never display tooltips."
 msgid "Never"
-msgstr "Mai"
+msgstr "कदापि न"
 
 #: folder/foldertreeview.cpp:173
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Sort Items"
-msgstr "Ordena els elements"
+msgstr ""
 
 #: folder/foldertreeview.cpp:177
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
-msgstr "Automàticament, per a la columna actual"
+msgstr ""
 
 #: folder/foldertreeview.cpp:184
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
-msgstr "Manualment, arrossegant i deixant anar"
+msgstr ""
 
 #: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
-msgstr ""
-"<qt>Voleu anar fins al següent missatge sense llegir en la carpeta <b>%1</b>?"
-"</qt>"
+msgstr "<qt><b>%1</b> पुटे अग्रिमम् अपठितसन्देशं गच्छतु ?</qt>"
 
 #: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, kde-format
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
-msgstr "Ves fins al següent missatge sense llegir"
+msgstr ""
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
 msgctxt "@action:button"
 msgid "Go To"
-msgstr "Ves"
+msgstr ""
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
 #, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
-msgstr "No hi vages"
+msgstr ""
 
 #: folder/foldertreewidget.cpp:78
 #, kde-format
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
-msgstr "Podeu començar a teclejar per a filtrar la llista de carpetes."
+msgstr "भवन्तः पुटस्य सूचीं छानयितुं टङ्कनं आरभुं शक्नुवन्ति ।"
 
 #: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
-msgstr "Podeu començar a teclejar per a filtrar la llista de carpetes."
+msgstr "भवन्तः पुटस्य सूचीं छानयितुं टङ्कनं आरभुं शक्नुवन्ति ।"
 
 #: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "Path: (%1)"
-msgstr "Camí: (%1)"
+msgstr "पथः (%1) ."
 
 #: folder/foldertreewidgetproxymodel.cpp:242
 #, kde-format
 msgid "%1 (Offline)"
-msgstr "%1 (desconnectat)"
+msgstr "%1 (अफलाइन) २."
 
 #: folder/foldertreewidgetproxymodel.cpp:246
 #, kde-format
 msgid "%1 (Reached %2% quota)"
-msgstr "%1 (S'ha arribat a %2% de la quota)"
+msgstr "%1 (%2% कोटा प्राप्तम्)"
 
 #: job/backupjob.cpp:94
 #, kde-format
 msgid "Unable to retrieve folder list."
-msgstr "No s'ha pogut recuperar la llista de carpetes."
+msgstr "पुटसूचीं पुनः प्राप्तुं असमर्थः।"
 
 #: job/backupjob.cpp:121
 #, kde-format
 msgid "The operation was canceled by the user."
-msgstr "Operació cancel·lada per l'usuari."
+msgstr "उपयोक्त्रा कार्यं रद्दं कृतम् ।"
 
 #: job/backupjob.cpp:151
 #, kde-format
 msgid "Failed to archive the folder '%1'."
-msgstr "No s'ha pogut arxivar la carpeta «%1»."
+msgstr "'%1' इति पुटं संग्रहीतुं असफलम् ।"
 
 #: job/backupjob.cpp:155
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
-msgstr "No s'ha pogut fer l'arxivament"
+msgstr ""
 
 #: job/backupjob.cpp:165
 #, kde-format
 msgid "Unable to finalize the archive file."
-msgstr "No s'ha pogut finalitzar el fitxer d'arxiu."
+msgstr "संग्रहसञ्चिकां अन्तिमरूपेण स्थापयितुं असमर्थः ।"
 
 #: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
-msgstr "L'arxivament ha finalitzat"
+msgstr "संग्रहणं समाप्तम्"
 
 #: job/backupjob.cpp:181
 #, kde-format
 msgid ""
 "Archiving folder '%1' successfully completed. The archive was written to the "
 "file '%2'."
-msgstr ""
-"L'arxivament de la carpeta «%1» ha finalitzat correctament. L'arxiu s'ha "
-"escrit en el fitxer «%2»."
+msgstr "संग्रहणपुटं '%1' सफलतया सम्पन्नम् । संग्रहणं '%2' इति सञ्चिकायां लिखितम् आसीत् ।"
 
 #: job/backupjob.cpp:187
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
-msgstr[0] "S'ha arxivat 1 missatge de mida %2."
-msgstr[1] "S'han arxivat %1 missatges amb una mida total de %2."
+msgstr[0] ""
+msgstr[1] ""
 
 #: job/backupjob.cpp:191
 #, kde-format
 msgid "The archive file has a size of %1."
-msgstr "El fitxer d'arxiu té una mida de %1."
+msgstr "संग्रहसञ्चिकायाः आकारः %1 अस्ति ।"
 
 #: job/backupjob.cpp:193
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
-msgstr "L'arxivament ha finalitzat"
+msgstr "संग्रहणं समाप्तम्"
 
 #: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
-msgstr "No s'ha pogut escriure un missatge a dins de la carpeta d'arxiu «%1»."
+msgstr "'%1' संग्रहपुटे सन्देशं लिखितुं असफलम् ।"
 
 #: job/backupjob.cpp:267
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
-msgstr "No s'ha pogut baixar un missatge en la carpeta «%1»."
+msgstr "'%1' पुटे सन्देशस्य अवतरणं विफलम् ।"
 
 #: job/backupjob.cpp:333
 #, kde-format
 msgid "Archiving folder %1"
-msgstr "Arxivament de la carpeta %1"
+msgstr "%1 पुटस्य संग्रहणम्"
 
 #: job/backupjob.cpp:358
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
-msgstr ""
-"No s'ha pogut crear l'estructura de carpeta per a la carpeta «%1» en el "
-"fitxer d'arxiu."
+msgstr "संग्रहसञ्चिकायाः अन्तः '%1' पुटस्य कृते पुटसंरचना निर्मातुं असमर्थः ।"
 
 #: job/backupjob.cpp:370
 #, kde-format
 msgid "Unable to get message list for folder %1."
-msgstr "No s'ha pogut obtindre la llista de missatges per a la carpeta %1."
+msgstr "%1 पुटस्य कृते सन्देशसूचीं प्राप्तुं असमर्थम् ।"
 
 #: job/backupjob.cpp:408
 #, kde-format
 msgid "Unable to open archive for writing."
-msgstr "No s'ha pogut obrir l'arxiu per a escriptura."
+msgstr "लेखनार्थं संग्रहालयं उद्घाटयितुं असमर्थः।"
 
 #: job/backupjob.cpp:412
 #, kde-format
 msgid "Archiving"
-msgstr "Arxivament"
+msgstr "संग्रहणम्"
 
 #: job/expiredeletejob.cpp:66
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
-msgstr[0] "S'ha eliminat un missatge antic de la carpeta %2."
-msgstr[1] "S'han eliminat %1 missatges antics de la carpeta %2."
+msgstr[0] ""
+msgstr[1] ""
 
 #: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
-msgstr "S'ha cancel·lat la supressió de missatges antics de la carpeta %1."
+msgstr "%1 पुटतः पुरातनसन्देशान् निष्कासयितुं रद्दं कृतम् ।"
 
 #: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
-msgstr "No s'han pogut suprimir els missatges antics de la carpeta %1."
+msgstr "%1 पुटतः पुरातनसन्देशान् निष्कासयितुं विफलम् ।"
 
 #: job/expirejob.cpp:157
 #, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "S'està eliminant un missatge antic de la carpeta %2…"
-msgstr[1] "S'està eliminant %1 missatges antics de la carpeta %2…"
+msgstr[0] ""
+msgstr[1] ""
 
 #: job/expirejob.cpp:164
 #, kde-format
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
-msgstr ""
-"No es poden fer caducar els missatges de la carpeta %1: no s'ha trobat la "
-"carpeta de destinació %2"
+msgstr "%1 पुटतः सन्देशानां अवधिः समाप्तुं न शक्यते: गन्तव्यपुटं %2 न प्राप्तम्"
 
 #: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] ""
-"S'està movent un missatge antic des de la carpeta %2 cap a la carpeta %3…"
 msgstr[1] ""
-"S'està movent %1 missatges antics des de la carpeta %2 cap a la carpeta %3…"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] ""
-"S'ha mogut un missatge antic des de la carpeta %2 cap a la carpeta %3."
 msgstr[1] ""
-"S'han mogut %1 missatges antics des de la carpeta %2 cap a la carpeta %3."
 
 #: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
-msgstr ""
-"S'ha cancel·lat el trasllat dels missatges antics des de la carpeta %1 cap a "
-"la carpeta %2."
+msgstr "%1 पुटतः %2 पुटं प्रति पुरातनसन्देशान् स्थानान्तरणं रद्दं कृतम् ।"
 
 #: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
-msgstr ""
-"Ha fallat el trasllat dels missatges des de la carpeta %1 cap a la carpeta "
-"%2."
+msgstr "%1 पुटतः %2 पुटं प्रति पुरातनसन्देशान् स्थानान्तरयितुं विफलम् ।"
 
 #: kernel/mailkernel.cpp:179 kernel/mailkernel.cpp:201
 #, kde-format
 msgid "You do not have read/write permission to your inbox folder."
-msgstr "No teniu permisos de lectura/escriptura a la safata d'entrada."
+msgstr "भवतः इनबॉक्स-पुटस्य पठन/लेखनस्य अनुमतिः नास्ति ।"
 
 #: kernel/mailkernel.cpp:230
 #, kde-format
 msgid "The Email program encountered a fatal error and will terminate now"
-msgstr "El programa de correu ha trobat un error fatal i es pararà ara"
+msgstr "Email कार्यक्रमे घातकदोषः अभवत्, अधुना समाप्तं भविष्यति"
 
 #: kernel/mailkernel.cpp:233
 #, kde-format
@@ -2110,215 +2042,215 @@ msgid ""
 "The error was:\n"
 "%1"
 msgstr ""
-"El programa de correu ha trobat un error fatal i es pararà ara.\n"
-"L'error ha sigut:\n"
+"Email कार्यक्रमे घातकदोषः अभवत्, अधुना समाप्तं भविष्यति ।\n"
+"दोषः आसीत् : १.\n"
 "%1"
 
 #: search/searchpattern.cpp:235
 #, kde-format
 msgctxt "name used for a virgin filter"
 msgid "unknown"
-msgstr "desconegut"
+msgstr ""
 
 #: search/searchpattern.cpp:243
 #, kde-format
 msgid "(match any of the following)"
-msgstr "(coincidix amb qualsevol dels següents)"
+msgstr "(निम्नलिखितेषु कस्यापि मेलनं कुर्वन्तु)"
 
 #: search/searchpattern.cpp:246
 #, kde-format
 msgid "(match all of the following)"
-msgstr "(coincidix amb tots els següents)"
+msgstr "(निम्नलिखितानां सर्वेषां मेलनं कुर्वन्तु)"
 
 #: search/searchpattern.cpp:249
 #, kde-format
 msgid "(match all messages)"
-msgstr "(coincidix amb tots els missatges)"
+msgstr "(सर्वसन्देशानां मेलनं कुर्वन्तु)"
 
 #: search/searchpatternedit.cpp:41
 msgid "Complete Message"
-msgstr "Missatge sencer"
+msgstr "सम्पूर्ण सन्देश"
 
 #: search/searchpatternedit.cpp:42
 msgid "Body of Message"
-msgstr "Cos del missatge"
+msgstr "सन्देशस्य शरीरम्"
 
 #: search/searchpatternedit.cpp:43
 msgid "Anywhere in Headers"
-msgstr "A qualsevol lloc de les capçaleres"
+msgstr "Headers इत्यत्र कुत्रापि"
 
 #: search/searchpatternedit.cpp:44
 msgid "All Recipients"
-msgstr "Tots els destinataris"
+msgstr "सर्वे प्राप्तकर्ताः"
 
 #: search/searchpatternedit.cpp:45
 msgid "Size in Bytes"
-msgstr "Mida en bytes"
+msgstr "आकारः बाइट् मध्ये"
 
 #: search/searchpatternedit.cpp:46
 msgid "Age in Days"
-msgstr "Antiguitat en dies"
+msgstr "आयुः दिवसेषु"
 
 #: search/searchpatternedit.cpp:47
 msgid "Message Status"
-msgstr "Estat del missatge"
+msgstr "सन्देशस्य स्थितिः"
 
 #: search/searchpatternedit.cpp:48
 msgid "Message Tag"
-msgstr "Etiqueta del missatge"
+msgstr "सन्देश टैग"
 
 #: search/searchpatternedit.cpp:49
 msgid "Subject"
-msgstr "Assumpte"
+msgstr "विषयः"
 
 #: search/searchpatternedit.cpp:50
 msgid "From"
-msgstr "Des de"
+msgstr "इत्यस्मात्‌"
 
 #: search/searchpatternedit.cpp:51
 msgid "To"
-msgstr "A"
+msgstr "इत्यस्मै"
 
 #: search/searchpatternedit.cpp:53
 msgid "Reply To"
-msgstr "Respon a"
+msgstr "Reply To"
 
 #: search/searchpatternedit.cpp:54
 msgid "Organization"
-msgstr "Organització"
+msgstr "संघठनं"
 
 #: search/searchpatternedit.cpp:55
 msgid "Date"
-msgstr "Data"
+msgstr "दिनाङ्कः"
 
 #: search/searchpatternedit.cpp:56
 msgid "Encryption"
-msgstr "Encriptació"
+msgstr "एन्क्रिप्शन"
 
 #: search/searchpatternedit.cpp:57
 msgid "Attachment"
-msgstr "Adjunt"
+msgstr "संलग्न"
 
 #: search/searchpatternedit.cpp:58
 msgid "Invitation"
-msgstr "Invitació"
+msgstr "आमंत्रण"
 
 #: search/searchpatternedit.cpp:146
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
-msgstr "Escolliu o teclegeu els vostres propis criteris"
+msgstr ""
 
 #: search/searchpatternedit.cpp:147
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
-msgstr "Escolliu o teclegeu els vostres propis criteris"
+msgstr ""
 
 #: search/searchpatternedit.cpp:584
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
-msgstr "Coincidix amb t&ots els següents"
+msgstr ""
 
 #: search/searchpatternedit.cpp:585
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
-msgstr "Coincidix amb q&ualsevol dels següents"
+msgstr ""
 
 #: search/searchpatternedit.cpp:587
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match all messages"
-msgstr "Coincidix amb tots els missatges"
+msgstr ""
 
 #: search/searchpatternedit.cpp:598
 #, kde-format
 msgid "Filter criteria:"
-msgstr "Criteri de filtratge:"
+msgstr "फ़िल्टर मापदण्डः : १."
 
 #: search/searchrule/searchrule.cpp:185
 #, kde-format
 msgid "equal"
-msgstr "igual que"
+msgstr "समान"
 
 #: search/searchrule/searchrule.cpp:188
 #, kde-format
 msgid "not equal"
-msgstr "no és igual que"
+msgstr "न समः"
 
 #: search/searchrule/searchrule.cpp:191
 #, kde-format
 msgid "is greater"
-msgstr "és més gran que"
+msgstr "अधिकः इति"
 
 #: search/searchrule/searchrule.cpp:194
 #, kde-format
 msgid "is less or equal"
-msgstr "és més xicotet o igual que"
+msgstr "न्यूनं वा समं वा भवति"
 
 #: search/searchrule/searchrule.cpp:197
 #, kde-format
 msgid "is less"
-msgstr "és més xicotet que"
+msgstr "न्यूनम् इति"
 
 #: search/searchrule/searchrule.cpp:200
 #, kde-format
 msgid "is greater or equal"
-msgstr "és més gran o igual que"
+msgstr "महत्तरं समं वा भवति"
 
 #: search/searchrule/searchrule.cpp:203
 #, kde-format
 msgid "is in addressbook"
-msgstr "es troba en la llibreta d'adreces"
+msgstr "पतापुस्तके अस्ति"
 
 #: search/searchrule/searchrule.cpp:206
 #, kde-format
 msgid "is not in addressbook"
-msgstr "no es troba en la llibreta d'adreces"
+msgstr "पतापुस्तिकायां नास्ति"
 
 #: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
 #, kde-format
 msgid "is in category"
-msgstr "es troba en la categoria"
+msgstr "वर्गे अस्ति"
 
 #: search/searchrule/searchrule.cpp:215
 #: search/widgethandler/messagerulewidgethandler.cpp:28
 #: search/widgethandler/messagerulewidgethandler.cpp:145
 #, kde-format
 msgid "has an attachment"
-msgstr "té un adjunt"
+msgstr "आसक्तिः अस्ति"
 
 #: search/searchrule/searchrule.cpp:218
 #, kde-format
 msgid "has not an attachment"
-msgstr "no té un adjunt"
+msgstr "नास्ति आसक्तिः"
 
 #: search/searchrule/searchrule.cpp:221
 #, kde-format
 msgid "start with"
-msgstr "comença amb"
+msgstr "आरभ्यताम्"
 
 #: search/searchrule/searchrule.cpp:224
 #, kde-format
 msgid "not start with"
-msgstr "no comença amb"
+msgstr "न आरभ्यते"
 
 #: search/searchrule/searchrule.cpp:227
 #, kde-format
 msgid "end with"
-msgstr "acaba amb"
+msgstr "समाप्तम्"
 
 #: search/searchrule/searchrule.cpp:230
 #, kde-format
 msgid "not end with"
-msgstr "no acaba amb"
+msgstr "न समाप्तं भवति"
 
 #: search/searchrule/searchrule.cpp:233
 #, kde-format
 msgid "none"
-msgstr "cap"
+msgstr "न कश्चित्"
 
 #: search/searchrule/searchrule.cpp:236
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
@@ -2327,417 +2259,413 @@ msgstr "cap"
 #: search/widgethandler/textrulerwidgethandler.cpp:24
 #, kde-format
 msgid "contains"
-msgstr "conté"
+msgstr "भरति"
 
 #: search/searchrule/searchrule.cpp:239
 #, kde-format
 msgid "not contains"
-msgstr "no conté"
+msgstr "न समाहितम्"
 
-# skip-rule: punctuation-period-no
 #: search/searchrule/searchrule.cpp:242
 #, kde-format
 msgid "has regexp"
-msgstr "té una exp. reg."
+msgstr "has regexp"
 
-# skip-rule: punctuation-period-no
 #: search/searchrule/searchrule.cpp:245
 #, kde-format
 msgid "not regexp"
-msgstr "no té cap exp. reg."
+msgstr "न रेगेक्सप्"
 
 #: search/searchrule/searchrule.cpp:259
 #, kde-format
 msgid "size equals not supported"
-msgstr "no s'admet la mateixa mida"
+msgstr "आकारः समः समर्थितः नास्ति"
 
 #: search/searchrule/searchrule.cpp:262
 #, kde-format
 msgid "size not equals not supported"
-msgstr "no s'admet una mida diferent"
+msgstr "आकारः न समः न समर्थितः"
 
 #: search/searchrule/searchrule.cpp:293 search/searchrule/searchrule.cpp:400
 #: search/searchrule/searchrule.cpp:482
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
-msgstr "«%1» no és admesa amb la condició «%2»"
+msgstr "\"%1\" \"%2\" कण्डिशन् सह समर्थितः नास्ति ।"
 
 #: search/searchrule/searchrule.cpp:300
 #, kde-format
 msgid "<status> not implemented/supported"
-msgstr "<status> no implementat/admés"
+msgstr "<status> न कार्यान्वितम्/समर्थितम्"
 
 #: search/searchrule/searchrule.cpp:303
 #, kde-format
 msgid "<any header> not implemented/supported"
-msgstr "<any header> no implementada/admesa"
+msgstr "<any header> न कार्यान्वितम्/समर्थितम्"
 
 #: search/searchrule/searchrule.cpp:306
 #, kde-format
 msgid "<contents> not implemented/supported"
-msgstr "<contents> no implementats/admesos"
+msgstr "<contents> न कार्यान्वितम्/समर्थितम्"
 
 #: search/searchrule/searchrule.cpp:309
 #, kde-format
 msgid "<age in days> not implemented/supported"
-msgstr "<age in days> no implementats/admesos"
+msgstr "<वयः दिवसेषु> न कार्यान्वितम्/समर्थितम्"
 
 #: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<date> not implemented/supported"
-msgstr "<date> no implementada/admesa"
+msgstr "<date> न कार्यान्वितम्/समर्थितम्"
 
 #: search/searchrule/searchrule.cpp:315
 #, kde-format
 msgid "<recipients> not implemented/supported"
-msgstr "<recipients> no implementats/admesos"
+msgstr "<recipients> न कार्यान्वितम्/समर्थितम्"
 
 #: search/searchrule/searchrule.cpp:317
 #, kde-format
 msgid "<Tag> is not supported"
-msgstr "<Tag> no està admés"
+msgstr "<Tag> समर्थितं नास्ति"
 
 #: search/searchrule/searchrule.cpp:320
 #, kde-format
 msgid "<message> not implemented/supported"
-msgstr "<message> no implementat/admés"
+msgstr "<message> न कार्यान्वितम्/समर्थितम्"
 
 #: search/searchrule/searchruledate.cpp:23
 #, kde-format
 msgid "Date is not valid."
-msgstr "La data no és vàlida."
+msgstr "तिथिः वैधः नास्ति।"
 
 #: search/searchrule/searchrulenumerical.cpp:137
 #, kde-format
 msgid "Content is not a number."
-msgstr "El contingut no és un número."
+msgstr "सामग्री संख्या न भवति।"
 
 #: search/searchrule/searchrulestring.cpp:235
 #, kde-format
 msgid "String is empty."
-msgstr "La cadena està buida."
+msgstr "स्ट्रिंग् रिक्तम् अस्ति।"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 #: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has"
-msgstr "té"
+msgstr "वा"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 #: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has not"
-msgstr "no té"
+msgstr "न कृतवान्"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:54
 #, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
-msgstr "adjunts"
+msgstr ""
 
 #: search/widgethandler/attachmentwidgethandler.cpp:91
 #, kde-format
 msgid "has attachment"
-msgstr "té adjunts"
+msgstr "आसक्तिः अस्ति"
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
 #: search/widgethandler/numericrulewidgethandler.cpp:21
 msgid "is equal to"
-msgstr "és igual que"
+msgstr "सम इति"
 
 #: search/widgethandler/daterulewidgethandler.cpp:23
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:22
 #: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is not equal to"
-msgstr "no és igual que"
+msgstr "न समः"
 
 #: search/widgethandler/daterulewidgethandler.cpp:24
 msgid "is after"
-msgstr "va després"
+msgstr "इति पश्चात्"
 
 #: search/widgethandler/daterulewidgethandler.cpp:25
 msgid "is before or equal to"
-msgstr "va abans o és igual que"
+msgstr "पूर्वं वा समं वा"
 
 #: search/widgethandler/daterulewidgethandler.cpp:26
 msgid "is before"
-msgstr "va abans"
+msgstr "इति पूर्वम्"
 
 #: search/widgethandler/daterulewidgethandler.cpp:27
 msgid "is after or equal to"
-msgstr "va després o és igual que"
+msgstr "परं वा समं वा"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:17
 #: search/widgethandler/statusrulewidgethandler.cpp:18
 msgid "is"
-msgstr "és"
+msgstr "अस्ति"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:17
 #: search/widgethandler/statusrulewidgethandler.cpp:18
 msgid "is not"
-msgstr "no és"
+msgstr "इति न"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
 #, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
-msgstr "encriptat"
+msgstr ""
 
 #: search/widgethandler/encryptionwidgethandler.cpp:91
 #, kde-format
 msgid "is encrypted"
-msgstr "està encriptat"
+msgstr "एन्क्रिप्टेड् भवति"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:26
 #: search/widgethandler/messagerulewidgethandler.cpp:25
 #: search/widgethandler/tagrulewidgethandler.cpp:94
 #: search/widgethandler/textrulerwidgethandler.cpp:25
 msgid "does not contain"
-msgstr "no conté"
+msgstr "न समाहितम्"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:27
 #: search/widgethandler/tagrulewidgethandler.cpp:95
 #: search/widgethandler/textrulerwidgethandler.cpp:26
 msgid "equals"
-msgstr "és igual"
+msgstr "समः"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:28
 #: search/widgethandler/tagrulewidgethandler.cpp:96
 #: search/widgethandler/textrulerwidgethandler.cpp:27
 msgid "does not equal"
-msgstr "no és igual"
+msgstr "न समं करोति"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:29
 #: search/widgethandler/textrulerwidgethandler.cpp:28
 msgid "starts with"
-msgstr "comença per"
+msgstr "आरभ्यते"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:30
 #: search/widgethandler/textrulerwidgethandler.cpp:29
 msgid "does not start with"
-msgstr "no comença per"
+msgstr "न आरभते"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:31
 #: search/widgethandler/textrulerwidgethandler.cpp:30
 msgid "ends with"
-msgstr "acaba amb"
+msgstr "इति समाप्तम्"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:32
 #: search/widgethandler/textrulerwidgethandler.cpp:31
 msgid "does not end with"
-msgstr "no acaba amb"
+msgstr "न समाप्तं भवति"
 
-# skip-rule: punctuation-period
 #: search/widgethandler/headersrulerwidgethandler.cpp:34
 #: search/widgethandler/messagerulewidgethandler.cpp:26
 #: search/widgethandler/tagrulewidgethandler.cpp:97
 #: search/widgethandler/textrulerwidgethandler.cpp:33
 msgid "matches regular expr."
-msgstr "coincidix amb l'expr. regular"
+msgstr "नियमित expr मेल खाति।"
 
-# skip-rule: punctuation-period
 #: search/widgethandler/headersrulerwidgethandler.cpp:35
 #: search/widgethandler/messagerulewidgethandler.cpp:27
 #: search/widgethandler/tagrulewidgethandler.cpp:98
 #: search/widgethandler/textrulerwidgethandler.cpp:34
 msgid "does not match reg. expr."
-msgstr "no coincidix amb l'expr. regular"
+msgstr "न मेलति reg. expr."
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:36
 #: search/widgethandler/headersrulerwidgethandler.cpp:151
 #, kde-format
 msgid "is in address book"
-msgstr "es troba en la llibreta d'adreces"
+msgstr "सम्बोधनपुस्तके अस्ति"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:37
 #: search/widgethandler/headersrulerwidgethandler.cpp:153
 #, kde-format
 msgid "is not in address book"
-msgstr "no es troba en la llibreta d'adreces"
+msgstr "सम्बोधनपुस्तके नास्ति"
 
 #: search/widgethandler/invitationwidgethandler.cpp:54
 #, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
-msgstr "invitació"
+msgstr ""
 
 #: search/widgethandler/invitationwidgethandler.cpp:91
 #, kde-format
 msgid "has invitation"
-msgstr "té una invitació"
+msgstr "आमन्त्रणं भवति"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147
 #, kde-format
 msgid "has no attachment"
-msgstr "no té cap adjunt"
+msgstr "नास्ति आसक्तिः"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:23
 #: search/widgethandler/numericrulewidgethandler.cpp:23
 msgid "is greater than"
-msgstr "és més gran que"
+msgstr "इत्यस्मात् अधिकं भवति"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:24
 #: search/widgethandler/numericrulewidgethandler.cpp:24
 msgid "is less than or equal to"
-msgstr "és més xicotet o igual que"
+msgstr "न्यूनं वा समं वा भवति"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:25
 #: search/widgethandler/numericrulewidgethandler.cpp:25
 msgid "is less than"
-msgstr "és més xicotet que"
+msgstr "इति न्यूनम्"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:26
 #: search/widgethandler/numericrulewidgethandler.cpp:26
 msgid "is greater than or equal to"
-msgstr "és més gran o igual que"
+msgstr "अधिकाधिकं वा समं वा भवति"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:157
 #, kde-format
 msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
-msgstr " kB"
+msgstr ""
 
 #: search/widgethandler/numericrulewidgethandler.cpp:157
 #, kde-format
 msgctxt "Unit suffix where units are days."
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] "%v dia"
-msgstr[1] "%v dies"
+msgstr[0] ""
+msgstr[1] ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:28
 msgctxt "message status"
 msgid "Important"
-msgstr "Important"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:29
 msgctxt "message status"
 msgid "Action Item"
-msgstr "Element d'acció"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:30
 msgctxt "message status"
 msgid "Unread"
-msgstr "Sense llegir"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:31
 msgctxt "message status"
 msgid "Read"
-msgstr "Llegit"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:32
 msgctxt "message status"
 msgid "Deleted"
-msgstr "Suprimit"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:33
 msgctxt "message status"
 msgid "Replied"
-msgstr "Respost"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:34
 msgctxt "message status"
 msgid "Forwarded"
-msgstr "Reenviat"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:35
 msgctxt "message status"
 msgid "Queued"
-msgstr "En cua"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:36
 msgctxt "message status"
 msgid "Sent"
-msgstr "Enviat"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:37
 msgctxt "message status"
 msgid "Watched"
-msgstr "Vigilat"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:38
 msgctxt "message status"
 msgid "Ignored"
-msgstr "Ignorat"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:39
 msgctxt "message status"
 msgid "Spam"
-msgstr "Correu brossa"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:40
 msgctxt "message status"
 msgid "Ham"
-msgstr "Correu legítim"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:41
 msgctxt "message status"
 msgid "Has Attachment"
-msgstr "Té un adjunt"
+msgstr ""
 
 #: snippets/snippetattachmentwidget.cpp:26
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
-msgstr "Feu clic en el botó per a seleccionar un fitxer adjunt"
+msgstr ""
 
 #: snippets/snippetattachmentwidget.cpp:32
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
-msgstr "Selecciona els adjunts"
+msgstr ""
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
 msgid "…"
-msgstr "…"
+msgstr "..."
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
-msgstr "Personalització del nom del fitxer adjunt"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Filename:"
-msgstr "Nom del fitxer:"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
 #, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
-msgstr "Inserix variables"
+msgstr ""
 
 #: snippets/snippetselectattachmentdialog.cpp:26
 #: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
-msgstr "Seleccioneu els adjunts"
+msgstr ""
 
 #: snippets/snippetselectattachmentwidget.cpp:45
 #, kde-format
 msgid "Do you want to delete selected attachment?"
-msgstr "Voleu suprimir l'adjunt seleccionat?"
+msgstr "चयनितं संलग्नकं विलोपयितुम् इच्छति वा?"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
 msgid "General"
-msgstr "General"
+msgstr "सामान्य"
 
 #: snippets/snippetsmanager.cpp:160
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Snippet"
-msgstr "Afig un fragment"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:226
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Snippet"
-msgstr "Edita el fragment"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:286
 #, kde-kuit-format
@@ -2746,20 +2674,18 @@ msgid ""
 "Do you really want to remove snippet \"%1\"?<nl/><warning>There is no way to "
 "undo the removal.</warning>"
 msgstr ""
-"Segur que voleu eliminar el fragment «%1»?<nl/><warning>No hi ha manera de "
-"desfer la supressió.</warning>"
 
 #: snippets/snippetsmanager.cpp:305
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Group"
-msgstr "Afig un grup"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:330
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Group"
-msgstr "Editeu un grup"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:359
 #, kde-kuit-format
@@ -2768,102 +2694,100 @@ msgid ""
 "Do you really want to remove group \"%1\" along with all its snippets?<nl/"
 "><warning>There is no way to undo the removal.</warning>"
 msgstr ""
-"Segur que voleu eliminar el grup «%1» junt amb tots els seus fragments?<nl/"
-"><warning>No hi ha manera de desfer la supressió.</warning>"
 
 #: snippets/snippetsmanager.cpp:369
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to remove group \"%1\"?"
-msgstr "Segur que voleu eliminar el grup «%1»?"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:437 snippets/snippetsmanager.cpp:466
 #, kde-format
 msgctxt "@action"
 msgid "Snippet %1"
-msgstr "Fragment %1"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:558
 #, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
-msgstr "Afig un fragment…"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:560
 #, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
-msgstr "Edita el fragment…"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
-msgstr "Elimina el fragment"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:565
 #, kde-format
 msgctxt "@action"
 msgid "Add Group…"
-msgstr "Afig un grup…"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:567
 #, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
-msgstr "Canvia el nom del grup…"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:569
 #, kde-format
 msgctxt "@action"
 msgid "Remove Group"
-msgstr "Elimina el grup"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:572
 #, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
-msgstr "Inserix un fragment"
+msgstr ""
 
 #: snippets/snippetsmodel.cpp:524 snippets/snippetsmodel.cpp:553
 #, kde-format
 msgid "Do you want to update snippet?"
-msgstr "Voleu actualitzar el fragment?"
+msgstr "किं भवन्तः स्निपेट् अपडेट् कर्तुम् इच्छन्ति?"
 
 #: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:554
 #, kde-format
 msgctxt "@title:window"
 msgid "Update snippet"
-msgstr "Actualitza el fragment"
+msgstr ""
 
 #: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
 #, kde-format
 msgctxt "@action:button"
 msgid "Update"
-msgstr "Actualitza"
+msgstr ""
 
 #: snippets/snippettreeview.cpp:65
 #, kde-format
 msgid "Text Snippets"
-msgstr "Fragments de text"
+msgstr "पाठ स्निपेट्स्"
 
 #: snippets/snippetvariabledialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
-msgstr "Introducció dels valors de les variables"
+msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:40
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
-msgstr "Introduïu els valors de substitució per a «%1»:"
+msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
-msgstr "Convertix en el valor pre&determinat"
+msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:48
 #, kde-format
@@ -2872,8 +2796,6 @@ msgid ""
 "Enable this to save the value entered to the right as the default value for "
 "this variable"
 msgstr ""
-"Habiliteu açò per a guardar el valor introduït a la dreta com el valor "
-"predeterminat per a esta variable"
 
 #: snippets/snippetvariabledialog.cpp:51
 #, kde-format
@@ -2883,9 +2805,6 @@ msgid ""
 "you use the same variable later, even in another snippet, the value entered "
 "to the right will be the default value for that variable."
 msgstr ""
-"Si marqueu esta opció, es guardarà el valor introduït a la dreta. Si "
-"utilitzeu la mateixa variable més tard, inclús en un altre fragment, el "
-"valor introduït a la dreta serà el valor predeterminat per a esta variable."
 
 #: snippets/snippetwidget.cpp:56
 #, kde-format
@@ -2895,236 +2814,235 @@ msgid ""
 "then type \\greeting in your email and then press the tab key, and it will "
 "be replaced with the contents of this snippet."
 msgstr ""
-"Introduïu ací una paraula clau per a permetre la inserció ràpida d'este "
-"fragment en escriure un correu electrònic. Per exemple, si trau "
-"«greeting» (salutació) com a paraula clau, podreu escriure \\greeting en el "
-"vostre correu electrònic i després prémer la tecla de tabulació, i se "
-"substituirà amb el contingut d'este fragment."
+"ईमेल लिखन् अस्य स्निपेट् इत्यस्य शीघ्रं सम्मिलनं सक्षमं कर्तुं अत्र कीवर्डं प्रविशन्तु । यथा यदि "
+"भवान् \"greeting\" इति कीवर्डरूपेण चिनोति तर्हि ततः भवान् स्वस्य ईमेलमध्ये \\greeting "
+"इति टङ्कयितुं शक्नोति ततः tab कीलं नुदतु, तस्य स्थाने अस्य स्निपेट् इत्यस्य सामग्रीः स्थापिता "
+"भविष्यति"
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
 #: snippets/ui/snippetwidget.ui:32
 #, kde-format
 msgid "&Name:"
-msgstr "&Nom:"
+msgstr "&नामः:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabelGroup)
 #: snippets/ui/snippetwidget.ui:50
 #, kde-format
 msgctxt "Group to which the snippet belongs."
 msgid "Group:"
-msgstr "Grup:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: snippets/ui/snippetwidget.ui:69
 #, kde-format
 msgid "Subject:"
-msgstr "Assumpte:"
+msgstr "विषयः:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: snippets/ui/snippetwidget.ui:88
 #, kde-format
 msgid "To:"
-msgstr "A:"
+msgstr "इत्यस्मै:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: snippets/ui/snippetwidget.ui:101
 #, kde-format
 msgid "Cc:"
-msgstr "CC:"
+msgstr "सीसी : १."
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: snippets/ui/snippetwidget.ui:114
 #, kde-format
 msgid "Bcc:"
-msgstr "BCC:"
+msgstr "Bcc: १."
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel)
 #: snippets/ui/snippetwidget.ui:127
 #, kde-format
 msgid "&Snippet:"
-msgstr "F&ragment:"
+msgstr "&स्निपेट्: १."
 
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
 #: snippets/ui/snippetwidget.ui:157
 #, kde-format
 msgid "Variables"
-msgstr "Variables"
+msgstr "चराः"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: snippets/ui/snippetwidget.ui:181
 #, kde-format
 msgid "Attachments:"
-msgstr "Adjunts:"
+msgstr "संलग्नकाः : १."
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: snippets/ui/snippetwidget.ui:193
 #, kde-format
 msgid "Keyword:"
-msgstr "Paraula clau:"
+msgstr "कीवर्ड : १."
 
 #. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
 #: snippets/ui/snippetwidget.ui:212
 #, kde-format
 msgid "Sho&rtcut:"
-msgstr "D&recera:"
+msgstr "लघु&rtcut: ."
 
 #: tag/addtagdialog.cpp:39
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Tag"
-msgstr "Afig una etiqueta"
+msgstr "Add Tag"
 
 #: tag/addtagdialog.cpp:76
 #, kde-format
 msgid "Tag %1 already exists"
-msgstr "L'etiqueta %1 ja existix"
+msgstr "%1 टैग् पूर्वमेव अस्ति"
 
 #: tag/tagwidget.cpp:63
 #, kde-format
 msgctxt "@label:listbox Name of the tag"
 msgid "Name:"
-msgstr "Nom:"
+msgstr "नामः:"
 
 #: tag/tagwidget.cpp:70
 #, kde-format
 msgctxt "@option:check"
 msgid "Change te&xt color:"
-msgstr "Canvia el color del te&xt:"
+msgstr ""
 
 #: tag/tagwidget.cpp:82
 #, kde-format
 msgctxt "@option:check"
 msgid "Change &background color:"
-msgstr "Canvia el color de &fons:"
+msgstr ""
 
 #: tag/tagwidget.cpp:94
 #, kde-format
 msgctxt "@option:check"
 msgid "Change fo&nt:"
-msgstr "Canvia la &lletra:"
+msgstr ""
 
 #: tag/tagwidget.cpp:100
 #, kde-format
 msgctxt "@option:check"
 msgid "&Bold"
-msgstr "&Negreta"
+msgstr ""
 
 #: tag/tagwidget.cpp:104
 #, kde-format
 msgctxt "@option:check"
 msgid "&Italics"
-msgstr "&Cursiva"
+msgstr ""
 
 #: tag/tagwidget.cpp:122
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
-msgstr "&Icona d'etiqueta del missatge:"
+msgstr ""
 
 #: tag/tagwidget.cpp:133
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
-msgstr "&Drecera:"
+msgstr ""
 
 #: tag/tagwidget.cpp:144
 #, kde-format
 msgctxt "@option:check"
 msgid "Enable &toolbar button"
-msgstr "Activa el bo&tó de la barra d'eines"
+msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:90
 #, kde-format
 msgid "Icon size"
-msgstr "Mida de la icona"
+msgstr "चिह्न आकार"
 
 #: widgets/favoritecollectionwidget.cpp:109
 #, kde-format
 msgid "Mode"
-msgstr "Mode"
+msgstr "मोड्"
 
 #: widgets/favoritecollectionwidget.cpp:113
 #, kde-format
 msgctxt "@action"
 msgid "List Mode"
-msgstr "Mode de llista"
+msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:123
 #, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
-msgstr "Mode icones"
+msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
 msgid "Drop your favorite folders here…"
-msgstr "Deixeu anar ací les carpetes preferides…"
+msgstr "अत्र स्वस्य प्रियपुटं पातयन्तु..."
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format
 msgid "Resend-To:"
-msgstr "Reenvia-A:"
+msgstr "पुनः प्रेषण-कम् : १."
 
 #: widgets/redirectdialog.cpp:70
 #, kde-format
 msgid "Resend-Cc:"
-msgstr "Reenvia-CC:"
+msgstr "पुनः प्रेषण-Cc: ."
 
 #: widgets/redirectdialog.cpp:73
 #, kde-format
 msgid "Resend-Bcc:"
-msgstr "Reenvia-BCC:"
+msgstr "पुनः प्रेषण-Bcc: ."
 
 #: widgets/redirectdialog.cpp:102
 #, kde-format
 msgctxt "@title:window"
 msgid "Redirect Message"
-msgstr "Redirecció del missatge"
+msgstr ""
 
 #: widgets/redirectdialog.cpp:123
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
-msgstr "Seleccioneu els destinataris als quals redirigir:"
+msgstr ""
 
 #: widgets/redirectdialog.cpp:152
 #, kde-format
 msgid "Identity:"
-msgstr "Identitat:"
+msgstr "चिह्नं:"
 
 #: widgets/redirectdialog.cpp:156
 #, kde-format
 msgid "Transport:"
-msgstr "Transport:"
+msgstr "परिवहन:"
 
 #: widgets/redirectdialog.cpp:158
 #, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
-msgstr "&Envia ara"
+msgstr ""
 
 #: widgets/redirectdialog.cpp:159
 #, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
-msgstr "Envia més &tard"
+msgstr ""
 
 #: widgets/redirectdialog.cpp:207
 #, kde-format
 msgid "You cannot redirect the message without an address."
-msgstr "No podeu redirigir el missatge sense una adreça."
+msgstr "भवन्तः पतां विना सन्देशं पुनर्निर्देशनं कर्तुं न शक्नुवन्ति ।"
 
 #: widgets/redirectdialog.cpp:207
 #, kde-format
 msgctxt "@title:window"
 msgid "Empty Redirection Address"
-msgstr "Adreça de redirecció buida"
+msgstr ""
 
 #: widgets/redirectwidget.cpp:39
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
-msgstr "Utilitza el diàleg de selecció d'adreces"
+msgstr ""
 
 #: widgets/redirectwidget.cpp:41
 #, kde-format
@@ -3132,5 +3050,5 @@ msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr ""
-"Este botó obri un diàleg separat a on podreu seleccionar destinataris des de "
-"totes les adreces disponibles."
+"एतत् बटन् पृथक् संवादं उद्घाटयति यत्र भवान् सर्वेषु उपलब्धेषु पत्तनेषु प्राप्तकर्तान् चयनं कर्तुं "
+"शक्नोति ।"
