@@ -28,9 +28,7 @@ SearchRuleString::SearchRuleString(const QByteArray &field, Function func, const
 {
 }
 
-SearchRuleString::SearchRuleString(const SearchRuleString &other)
-
-    = default;
+SearchRuleString::SearchRuleString(const SearchRuleString &other) = default;
 
 const SearchRuleString &SearchRuleString::operator=(const SearchRuleString &other)
 {
