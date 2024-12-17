@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-12 00:41+0000\n"
-"PO-Revision-Date: 2024-11-10 20:12+0100\n"
+"POT-Creation-Date: 2024-12-17 00:41+0000\n"
+"PO-Revision-Date: 2024-12-16 22:14+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.11.70\n"
+"X-Generator: Lokalize 25.03.70\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -2182,10 +2182,8 @@ msgid "Attachment"
 msgstr "Прикачен файл"
 
 #: search/searchpatternedit.cpp:58
-#, fuzzy
-#| msgid "Organization"
 msgid "Invitation"
-msgstr "Организация"
+msgstr "Покана"
 
 #: search/searchpatternedit.cpp:146
 #, kde-format
@@ -2394,7 +2392,7 @@ msgstr "Датата не е валидна."
 msgid "Content is not a number."
 msgstr "Съдържанието не е число."
 
-#: search/searchrule/searchrulestring.cpp:235
+#: search/searchrule/searchrulestring.cpp:233
 #, kde-format
 msgid "String is empty."
 msgstr "Низът е празен."
@@ -2535,17 +2533,15 @@ msgid "is not in address book"
 msgstr "не е в адресната книга"
 
 #: search/widgethandler/invitationwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
-msgstr "Организация"
+msgstr "Покана"
 
 #: search/widgethandler/invitationwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has invitation"
-msgstr "Организация"
+msgstr "с покана"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147
