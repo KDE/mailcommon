@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-17 00:41+0000\n"
-"PO-Revision-Date: 2024-08-21 00:33+0200\n"
+"PO-Revision-Date: 2024-12-24 17:58+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -2124,16 +2124,12 @@ msgid "Encryption"
 msgstr "암호화"
 
 #: search/searchpatternedit.cpp:57
-#, fuzzy
-#| msgid "Attachments:"
 msgid "Attachment"
-msgstr "첨부:"
+msgstr "첨부"
 
 #: search/searchpatternedit.cpp:58
-#, fuzzy
-#| msgid "Organization"
 msgid "Invitation"
-msgstr "조직"
+msgstr "초대장"
 
 #: search/searchpatternedit.cpp:146
 #, kde-format
@@ -2350,27 +2346,23 @@ msgstr "문자열이 비어 있습니다."
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 #: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has"
-msgstr ""
+msgstr "포함함"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 #: search/widgethandler/invitationwidgethandler.cpp:17
-#, fuzzy
-#| msgid "is not"
 msgid "has not"
-msgstr "아님"
+msgstr "포함하지 않음"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Attachments:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
-msgstr "첨부:"
+msgstr "첨부"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "has an attachment"
+#, kde-format
 msgid "has attachment"
-msgstr "첨부 있음"
+msgstr "첨부가 포함됨"
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
@@ -2487,17 +2479,15 @@ msgid "is not in address book"
 msgstr "주소록에 없음"
 
 #: search/widgethandler/invitationwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
-msgstr "조직"
+msgstr "초대장"
 
 #: search/widgethandler/invitationwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has invitation"
-msgstr "조직"
+msgstr "초대장이 포함됨"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147
