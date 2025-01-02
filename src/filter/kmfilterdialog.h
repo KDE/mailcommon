@@ -2,7 +2,7 @@
   Filter Dialog
 
   SPDX-FileCopyrightText: Marc Mutz <mutz@kde.org>
-  SPDX-FileCopyrightText: 2011-2024 Laurent Montel <montel@kde.org>
+  SPDX-FileCopyrightText: 2011-2025 Laurent Montel <montel@kde.org>
 
   based upon work by Stefan Taferner <taferner@kde.org>
 

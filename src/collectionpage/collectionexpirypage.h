@@ -1,5 +1,5 @@
 /*
-  SPDX-FileCopyrightText: 2009-2024 Laurent Montel <montel@kde.org>
+  SPDX-FileCopyrightText: 2009-2025 Laurent Montel <montel@kde.org>
   SPDX-FileCopyrightText: 2013 Jonathan Marten <jjm@keelhaul.me.uk>
 
   SPDX-License-Identifier: GPL-2.0-only
