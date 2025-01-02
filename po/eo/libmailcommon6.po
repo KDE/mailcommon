@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-10-27 00:41+0000\n"
-"PO-Revision-Date: 2024-08-22 17:49+0200\n"
+"PO-Revision-Date: 2024-12-28 17:41+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -161,11 +161,11 @@ msgid ""
 msgstr ""
 "<qt><p>Se ĉi tiu opcio estas ebligita, vi estos sciigita pri nova/nelegita "
 "poŝto en ĉi tiu dosierujo. Plie, iri al la sekva/antaŭa dosierujo kun "
-"nelegitaj mesaĝoj ĉesos ĉe ĉi tiu dosierujo.</p><p>Malmarku ĉi tiun opcion "
-"se vi ne volas esti sciigita pri nova/nelegita poŝto en ĉi tiu dosierujo kaj "
-"se vi volas ĉi tiun dosierujon. por esti preterlasita kiam iros al la sekva/"
-"antaŭa dosierujo kun nelegitaj mesaĝoj. Ĉi tio utilas por ignori ajnan novan/"
-"nelegitan poŝton en via rubujo kaj spamdosierujo.</p></qt>"
+"nelegitaj mesaĝoj ĉesos ĉe ĉi tiu dosierujo.</p><p>Malmarku ĉi tiun "
+"elekteblon se vi ne volas esti sciigita pri nova/nelegita poŝto en ĉi tiu "
+"dosierujo kaj se vi volas ke ĉi tiu dosierujo estu preterlasita irante al la "
+"sekva/antaŭa dosierujo kun nelegitaj mesaĝoj. Ĉi tio utilas por ignori ajnan "
+"novan/nelegitan poŝton en via rubujo kaj spamdosierujo.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
 #, kde-format
@@ -180,7 +180,7 @@ msgid ""
 "be put in this same folder after sending, instead of in the configured sent-"
 "mail folder."
 msgstr ""
-"Marku ĉi tiun opcion se vi volas, ke la respondoj, kiujn vi skribas al "
+"Marku ĉi tiun elekteblon se vi volas, ke la respondoj, kiujn vi skribas al "
 "retpoŝtoj en ĉi tiu dosierujo, estu metitaj en ĉi tiun saman dosierujon post "
 "sendo, anstataŭ en la agordita sendita dosierujo."
 
@@ -197,8 +197,8 @@ msgid ""
 "Check this option if you do not want this folder to be shown in folder "
 "selection dialogs, such as the <interface>Jump to Folder</interface> dialog."
 msgstr ""
-"Marku ĉi tiun opcion se vi ne volas, ke ĉi tiu dosierujo estu montrata en "
-"dosierujo-elekto-dialogoj, kiel la dialogo <interface>Salti al Dosierujo</"
+"Marku ĉi tiun elekteblon se vi ne volas, ke ĉi tiu dosierujo estu montrata "
+"en dosierujo-elekto-dialogoj, kiel la dialogo <interface>Salti al Dosierujo</"
 "interface>."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
@@ -2166,10 +2166,8 @@ msgid "Encryption"
 msgstr "Ĉifrado"
 
 #: search/searchpatternedit.cpp:57
-#, fuzzy
-#| msgid "Attachments:"
 msgid "Attachment"
-msgstr "Aldonaĵoj:"
+msgstr "Aldonaĵo"
 
 #: search/searchpatternedit.cpp:145
 #, kde-format
@@ -2385,26 +2383,22 @@ msgstr "Ĉeno estas malplena."
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 msgid "has"
-msgstr ""
+msgstr "havas"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
-#, fuzzy
-#| msgid "is not"
 msgid "has not"
-msgstr "ne estas"
+msgstr "ne havas"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Attachments:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
-msgstr "Aldonaĵoj:"
+msgstr "aldonaĵoj"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "has an attachment"
+#, kde-format
 msgid "has attachment"
-msgstr "havas alligitecon"
+msgstr "havas aldonaĵon"
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
@@ -2838,9 +2832,9 @@ msgid ""
 "you use the same variable later, even in another snippet, the value entered "
 "to the right will be the default value for that variable."
 msgstr ""
-"Se vi ebligas ĉi tiun opcion, la valoro enigita dekstre estos konservita. Se "
-"vi poste uzas la saman variablon, eĉ en alia fragmento, la valoro enigita "
-"dekstre estos la defaŭlta valoro por tiu variablo."
+"Se vi ebligas ĉi tiun elekteblon, la valoro enigita dekstre estos "
+"konservita. Se vi poste uzas la saman variablon, eĉ en alia fragmento, la "
+"valoro enigita dekstre estos la defaŭlta valoro por tiu variablo."
 
 #: snippets/snippetwidget.cpp:56
 #, kde-format
