@@ -8,14 +8,14 @@
 #pragma once
 
 #include "filteractionwithnone.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
 // FilterActionSendReceipt - send receipt
 // Return delivery receipt.
 //=============================================================================
-class FilterActionSendReceipt : public FilterActionWithNone
+class MAILCOMMON_TESTS_EXPORT FilterActionSendReceipt : public FilterActionWithNone
 {
     Q_OBJECT
 public:

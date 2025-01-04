@@ -8,7 +8,7 @@
 #pragma once
 
 #include "filteraction.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 /**
@@ -25,7 +25,7 @@ namespace MailCommon
  * @author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>
  * @see FilterActionWithStringList FilterAction Filter
  */
-class FilterActionWithFolder : public FilterAction
+class MAILCOMMON_TESTS_EXPORT FilterActionWithFolder : public FilterAction
 {
     Q_OBJECT
 

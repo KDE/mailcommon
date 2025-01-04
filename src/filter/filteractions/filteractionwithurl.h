@@ -32,7 +32,7 @@ namespace MailCommon
  * @author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>
  * @see FilterActionWithString FilterAction Filter KProcess
  */
-class FilterActionWithUrlHelpButton : public QToolButton
+class MAILCOMMON_TESTS_EXPORT FilterActionWithUrlHelpButton : public QToolButton
 {
     Q_OBJECT
 public:

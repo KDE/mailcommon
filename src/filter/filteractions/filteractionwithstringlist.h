@@ -8,7 +8,7 @@
 #pragma once
 
 #include "filteractionwithstring.h"
-
+#include "mailcommon_private_export.h"
 #include <QStringList>
 
 namespace MailCommon
@@ -33,7 +33,7 @@ namespace MailCommon
  * @author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>
  * @see FilterActionWithString FilterActionWithFolder FilterAction Filter
  */
-class FilterActionWithStringList : public FilterActionWithString
+class MAILCOMMON_TESTS_EXPORT FilterActionWithStringList : public FilterActionWithString
 {
     Q_OBJECT
 

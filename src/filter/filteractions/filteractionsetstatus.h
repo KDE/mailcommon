@@ -8,13 +8,14 @@
 #pragma once
 
 #include "filteractionstatus.h"
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
 // FilterActionSetStatus - set status to
 // Set the status of messages
 //=============================================================================
-class FilterActionSetStatus : public FilterActionStatus
+class MAILCOMMON_TESTS_EXPORT FilterActionSetStatus : public FilterActionStatus
 {
     Q_OBJECT
 public:

@@ -8,14 +8,14 @@
 #pragma once
 
 #include "filteraction.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
 // FilterActionSetTransport - set transport to...
 // Specify mail transport (smtp server) to be used when replying to a message
 //=============================================================================
-class FilterActionSetTransport : public FilterAction
+class MAILCOMMON_TESTS_EXPORT FilterActionSetTransport : public FilterAction
 {
     Q_OBJECT
 public:

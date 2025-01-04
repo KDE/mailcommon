@@ -8,10 +8,10 @@
 #pragma once
 
 #include "filteraction.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
-class FilterActionWithTest : public FilterAction
+class MAILCOMMON_TESTS_EXPORT FilterActionWithTest : public FilterAction
 {
     Q_OBJECT
 public:

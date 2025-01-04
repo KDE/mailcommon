@@ -7,11 +7,11 @@
 #pragma once
 
 #include "filteractionwithstringlist.h"
+#include "mailcommon_private_export.h"
 #include <Akonadi/MessageStatus>
-
 namespace MailCommon
 {
-class FilterActionStatus : public FilterActionWithStringList
+class MAILCOMMON_TESTS_EXPORT FilterActionStatus : public FilterActionWithStringList
 {
     Q_OBJECT
 public:

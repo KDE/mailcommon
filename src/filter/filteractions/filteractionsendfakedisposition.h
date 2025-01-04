@@ -8,14 +8,14 @@
 #pragma once
 
 #include "filteractionwithstringlist.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
 // FilterActionSendFakeDisposition - send fake MDN
 // Sends a fake MDN or forces an ignore.
 //=============================================================================
-class FilterActionSendFakeDisposition : public FilterActionWithStringList
+class MAILCOMMON_TESTS_EXPORT FilterActionSendFakeDisposition : public FilterActionWithStringList
 {
     Q_OBJECT
 public:

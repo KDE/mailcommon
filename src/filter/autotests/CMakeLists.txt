@@ -39,8 +39,6 @@ add_mailcommon_filter_test(filteractionpipethroughtest
 add_mailcommon_filter_test(filteractionheadertest
     filteractionaddheadertest.cpp
     filteractionaddheadertest.h
-    ../filteractions/filteractionwithstringlist.cpp
-    ../filteractions/filteractionwithstring.cpp
     ${filter_common_SRCS}
 )
 
@@ -67,66 +65,48 @@ add_mailcommon_filter_test(filteractiondecrypttest
 add_mailcommon_filter_test(filteractionrewriteheadertest
     filteractionrewriteheadertest.cpp
     filteractionrewriteheadertest.h
-    ../filteractions/filteractionwithstringlist.cpp
-    ../filteractions/filteractionwithstring.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_test(filteractionsetstatustest
     filteractionsetstatustest.cpp
     filteractionsetstatustest.h
-    ../filteractions/filteractionsetstatus.cpp
-    ../filteractions/filteractionstatus.cpp
-    ../filteractions/filteractionwithstringlist.cpp
-    ../filteractions/filteractionwithstring.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_test(filteractionreplytotest
     filteractionreplytotest.cpp
     filteractionreplytotest.h
-    ../filteractions/filteractionwithaddress.cpp
-    ../filteractions/filteractionwithstring.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_test(filteractionwithurltest
     filteractionwithurltest.cpp
     filteractionwithurltest.h
-    ../filteractions/filteractionwithaddress.cpp
-    ../filteractions/filteractionwithstring.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_test(filteractionremoveheadertest
     filteractionremoveheadertest.cpp
     filteractionremoveheadertest.h
-    ../filteractions/filteractionwithstringlist.cpp
-    ../filteractions/filteractionwithstring.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_test(filteractionwithaddresstest
     filteractionwithaddresstest.cpp
     filteractionwithaddresstest.h
-    ../filteractions/filteractionwithaddress.cpp
-    ../filteractions/filteractionwithstring.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_akonadi_test(filteractionaddtoaddressbooktest.cpp
     filteractionaddtoaddressbooktest.cpp
     filteractionaddtoaddressbooktest.h
-    ../filteractions/filteractionwithstringlist.cpp
-    ../filteractions/filteractionwithstring.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_test(filteractionplaysoundtest
     filteractionplaysoundtest.cpp
     filteractionplaysoundtest.h
-    ../filteractions/filteractionwithtest.cpp
-    ../filteractions/filteractionplaysound.cpp
     ../soundtestwidget.cpp
     ../dialog/filteractionmissingsoundurldialog.cpp
     ${filter_common_SRCS}
@@ -153,17 +133,12 @@ add_mailcommon_filter_test(invalidfilterlistwidgettest
 add_mailcommon_filter_test(filteractionunsetstatustest
     filteractionunsetstatustest.cpp
     filteractionunsetstatustest.h
-    ../filteractions/filteractionstatus.cpp
-    ../filteractions/filteractionwithstringlist.cpp
-    ../filteractions/filteractionwithstring.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_test(filteractionredirecttest
     filteractionredirecttest.cpp
     filteractionredirecttest.h
-    ../filteractions/filteractionwithaddress.cpp
-    ../filteractions/filteractionwithstring.cpp
     ${filter_common_SRCS}
 )
 
@@ -176,17 +151,12 @@ add_mailcommon_filter_test(invalidfilterinfotest
 add_mailcommon_filter_test(filteractionsendfakedispositiontest
     filteractionsendfakedispositiontest.cpp
     filteractionsendfakedispositiontest.h
-    ../filteractions/filteractionsendfakedisposition.cpp
-    ../filteractions/filteractionwithstringlist.cpp
-    ../filteractions/filteractionwithstring.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_test(filteractionforwardtest
     filteractionforwardtest.cpp
     filteractionforwardtest.h
-    ../filteractions/filteractionwithaddress.cpp
-    ../filteractions/filteractionwithstring.cpp
     ../dialog/filteractionmissingtemplatedialog.cpp
     ${filter_common_SRCS}
 )
@@ -200,36 +170,30 @@ add_mailcommon_filter_test(invalidfilterinfowidgettest
 add_mailcommon_filter_test(filteractioncopytest
     filteractioncopytest.cpp
     filteractioncopytest.h
-    ../filteractions/filteractionwithfolder.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_test(filteractionmovetest
     filteractionmovetest.cpp
     filteractionmovetest.h
-    ../filteractions/filteractionwithfolder.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_test(filteractionexectest
     filteractionexectest.cpp
     filteractionexectest.h
-    ../filteractions/filteractionwithurl.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_test(filteractionsendreceipttest
     filteractionsendreceipttest.cpp
     filteractionsendreceipttest.h
-    ../filteractions/filteractionsendreceipt.cpp
-    ../filteractions/filteractionwithnone.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_test(filteractionsettransporttest
     filteractionsettransporttest.cpp
     filteractionsettransporttest.h
-    ../filteractions/filteractionsettransport.cpp
     ../dialog/filteractionmissingtransportdialog.cpp
     ${filter_common_SRCS}
 )
