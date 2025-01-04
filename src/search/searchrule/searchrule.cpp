@@ -217,6 +217,12 @@ QString SearchRule::conditionToString(Function function)
     case FuncHasNoAttachment:
         str = i18n("has not an attachment");
         break;
+    case FuncHasInvitation:
+        str = i18n("has an invitation");
+        break;
+    case FuncHasNoInvitation:
+        str = i18n("has not an invitation");
+        break;
     case FuncStartWith:
         str = i18n("start with");
         break;
@@ -281,6 +287,8 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         case FuncIsNotInCategory:
         case FuncHasAttachment:
         case FuncHasNoAttachment:
+        case FuncHasInvitation:
+        case FuncHasNoInvitation:
         case FuncStartWith:
         case FuncNotStartWith:
         case FuncEndWith:
@@ -397,6 +405,8 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         case FuncIsNotInCategory:
         case FuncHasAttachment:
         case FuncHasNoAttachment:
+        case FuncHasInvitation:
+        case FuncHasNoInvitation:
             code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1StringView(mField), conditionToString(mFunction))
                 + QLatin1Char('"');
             return;
@@ -477,6 +487,8 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         case FuncIsNotInAddressbook:
         case FuncIsInCategory:
         case FuncIsNotInCategory:
+        case FuncHasInvitation:
+        case FuncHasNoInvitation:
         case FuncHasAttachment:
         case FuncHasNoAttachment:
             code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1StringView(mField), conditionToString(mFunction))
@@ -576,6 +588,7 @@ bool SearchRule::isNegated() const
     case SearchRule::FuncNotEqual:
     case SearchRule::FuncNotRegExp:
     case SearchRule::FuncHasNoAttachment:
+    case SearchRule::FuncHasNoInvitation:
     case SearchRule::FuncIsNotInCategory:
     case SearchRule::FuncIsNotInAddressbook:
     case SearchRule::FuncNotStartWith:
