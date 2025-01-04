@@ -33,9 +33,6 @@ add_mailcommon_filter_test(itemcontexttest
 add_mailcommon_filter_test(filteractionpipethroughtest
    filteractionpipethroughtest.cpp
    filteractionpipethroughtest.h
-   ../filteractions/filteractionpipethrough.cpp
-   ../filteractions/filteractionwithcommand.cpp
-   ../filteractions/filteractionwithurl.cpp
    ${filter_common_SRCS}
 )
 
@@ -51,8 +48,6 @@ add_mailcommon_filter_test(filteractionheadertest
 add_mailcommon_filter_test(filteractiondeletetest
     filteractiondeletetest.cpp
     filteractiondeletetest.h
-    ../filteractions/filteractiondelete.cpp
-    ../filteractions/filteractionwithnone.cpp
     ${filter_common_SRCS}
 )
 

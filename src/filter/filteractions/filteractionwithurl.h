@@ -8,8 +8,8 @@
 #pragma once
 
 #include "filteraction.h"
+#include "mailcommon_private_export.h"
 #include <QToolButton>
-
 namespace MailCommon
 {
 /**
@@ -40,7 +40,7 @@ public:
     ~FilterActionWithUrlHelpButton() override;
 };
 
-class FilterActionWithUrl : public FilterAction
+class MAILCOMMON_TESTS_EXPORT FilterActionWithUrl : public FilterAction
 {
     Q_OBJECT
 public:
