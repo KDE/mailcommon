@@ -8,12 +8,12 @@
 #pragma once
 
 #include "filteraction.h"
-
+#include "mailcommon_private_export.h"
 #include <gpgme++/global.h>
 
 namespace MailCommon
 {
-class FilterActionWithCrypto : public FilterAction
+class MAILCOMMON_TESTS_EXPORT FilterActionWithCrypto : public FilterAction
 {
     Q_OBJECT
 

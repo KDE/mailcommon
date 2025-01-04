@@ -55,7 +55,6 @@ add_mailcommon_filter_test(filteractionencrypttest
     filteractionencrypttest.cpp
     filteractionencrypttest.h
     gpghelper.cpp gpghelper.h
-    ../filteractions/filteractionencrypt.cpp
     ../filteractions/filteractionwithcrypto.cpp
     ${filter_common_SRCS}
 )
