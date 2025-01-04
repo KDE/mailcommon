@@ -7,8 +7,8 @@
 
 #pragma once
 
+#include "mailcommon_private_export.h"
 #include <QWidget>
-
 namespace Phonon
 {
 class MediaObject;
@@ -22,7 +22,7 @@ namespace MailCommon
 /**
  * @short A widget to play a sound from a given URL.
  */
-class SoundTestWidget : public QWidget
+class MAILCOMMON_TESTS_EXPORT SoundTestWidget : public QWidget
 {
     Q_OBJECT
 

@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
 set(mailcommon_filter_test_LIBS Qt::Test Qt::Gui KPim6::AkonadiCore KPim6::AkonadiMime
-                                KPim6::MailCommon KPim6::PimCommon Phonon::phonon4qt6
+                                KPim6::MailCommon KPim6::PimCommon
                                 KF6::KIOWidgets KF6::IconThemes KPim6::TemplateParser
 				KPim6::AkonadiContactWidgets
                                 KPim6::MailTransport KF6::I18n KF6::SyntaxHighlighting KF6::Codecs
@@ -107,7 +107,6 @@ add_mailcommon_filter_akonadi_test(filteractionaddtoaddressbooktest.cpp
 add_mailcommon_filter_test(filteractionplaysoundtest
     filteractionplaysoundtest.cpp
     filteractionplaysoundtest.h
-    ../soundtestwidget.cpp
     ../dialog/filteractionmissingsoundurldialog.cpp
     ${filter_common_SRCS}
 )
