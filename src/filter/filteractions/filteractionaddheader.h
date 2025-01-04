@@ -8,14 +8,14 @@
 #pragma once
 
 #include "filteractionwithstringlist.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
 // FilterActionAddHeader - add header
 // Add a header with the given value.
 //=============================================================================
-class FilterActionAddHeader : public FilterActionWithStringList
+class MAILCOMMON_TESTS_EXPORT FilterActionAddHeader : public FilterActionWithStringList
 {
     Q_OBJECT
 public:

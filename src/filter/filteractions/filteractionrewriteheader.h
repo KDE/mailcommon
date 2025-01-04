@@ -8,7 +8,7 @@
 #pragma once
 
 #include "filteractionwithstringlist.h"
-
+#include "mailcommon_private_export.h"
 #include <QRegularExpression>
 
 namespace MailCommon
@@ -17,7 +17,7 @@ namespace MailCommon
 // FilterActionRewriteHeader - rewrite header
 // Rewrite a header using a regexp.
 //=============================================================================
-class FilterActionRewriteHeader : public FilterActionWithStringList
+class MAILCOMMON_TESTS_EXPORT FilterActionRewriteHeader : public FilterActionWithStringList
 {
     Q_OBJECT
 public:

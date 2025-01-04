@@ -7,8 +7,8 @@
 
 #pragma once
 
-#include "filteractionwithstringlist.h"
-
+#include "filteraction.h"
+#include "mailcommon_private_export.h"
 #include <QPointer>
 
 class QComboBox;
@@ -19,7 +19,7 @@ namespace MailCommon
 // FilterActionAddTag - append tag to message
 // Appends a tag to messages
 //=============================================================================
-class FilterActionAddTag : public FilterAction
+class MAILCOMMON_TESTS_EXPORT FilterActionAddTag : public FilterAction
 {
     Q_OBJECT
 public:

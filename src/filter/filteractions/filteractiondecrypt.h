@@ -8,10 +8,10 @@
 #pragma once
 
 #include "filteractionwithcrypto.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
-class FilterActionDecrypt : public FilterActionWithCrypto
+class MAILCOMMON_TESTS_EXPORT FilterActionDecrypt : public FilterActionWithCrypto
 {
     Q_OBJECT
 public:

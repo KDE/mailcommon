@@ -8,9 +8,10 @@
 #pragma once
 
 #include "filteractionstatus.h"
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
-class FilterActionUnsetStatus : public FilterActionStatus
+class MAILCOMMON_TESTS_EXPORT FilterActionUnsetStatus : public FilterActionStatus
 {
     Q_OBJECT
 public:

@@ -8,7 +8,7 @@
 #pragma once
 
 #include "filteractionwithcommand.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
@@ -16,7 +16,7 @@ namespace MailCommon
 // External message filter: executes a shell command with message
 // on stdin; altered message is expected on stdout.
 //=============================================================================
-class FilterActionPipeThrough : public FilterActionWithCommand
+class MAILCOMMON_TESTS_EXPORT FilterActionPipeThrough : public FilterActionWithCommand
 {
     Q_OBJECT
 public:

@@ -8,7 +8,7 @@
 #pragma once
 
 #include "filteractionwithtest.h"
-
+#include "mailcommon_private_export.h"
 namespace Phonon
 {
 class MediaObject;
@@ -20,7 +20,7 @@ namespace MailCommon
 // FilterActionPlaySound - execute command
 // Execute a sound
 //=============================================================================
-class FilterActionPlaySound : public FilterActionWithTest
+class MAILCOMMON_TESTS_EXPORT FilterActionPlaySound : public FilterActionWithTest
 {
     Q_OBJECT
 public:

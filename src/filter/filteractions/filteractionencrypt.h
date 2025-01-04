@@ -8,14 +8,14 @@
 #pragma once
 
 #include "filteractionwithcrypto.h"
-
+#include "mailcommon_private_export.h"
 #include <gpgme++/key.h>
 
 #include <Libkleo/KeyCache>
 
 namespace MailCommon
 {
-class FilterActionEncrypt : public FilterActionWithCrypto
+class MAILCOMMON_TESTS_EXPORT FilterActionEncrypt : public FilterActionWithCrypto
 {
     Q_OBJECT
 public:

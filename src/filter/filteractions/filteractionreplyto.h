@@ -8,14 +8,14 @@
 #pragma once
 
 #include "filteractionwithaddress.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
 // FilterActionReplyTo - set Reply-To to
 // Set the Reply-to header in a message
 //=============================================================================
-class FilterActionReplyTo : public FilterActionWithAddress
+class MAILCOMMON_TESTS_EXPORT FilterActionReplyTo : public FilterActionWithAddress
 {
     Q_OBJECT
 public:

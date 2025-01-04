@@ -8,14 +8,14 @@
 #pragma once
 
 #include "filteractionwithfolder.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
 // FilterActionMove - move into folder
 // File message into another mail folder
 //=============================================================================
-class FilterActionMove : public FilterActionWithFolder
+class MAILCOMMON_TESTS_EXPORT FilterActionMove : public FilterActionWithFolder
 {
     Q_OBJECT
 public:

@@ -8,7 +8,7 @@
 #pragma once
 
 #include "filteractionwithfolder.h"
-
+#include "mailcommon_private_export.h"
 class KJob;
 
 namespace MailCommon
@@ -17,7 +17,7 @@ namespace MailCommon
 // FilterActionCopy - copy into folder
 // Copy message into another mail folder
 //=============================================================================
-class FilterActionCopy : public FilterActionWithFolder
+class MAILCOMMON_TESTS_EXPORT FilterActionCopy : public FilterActionWithFolder
 {
     Q_OBJECT
 public:

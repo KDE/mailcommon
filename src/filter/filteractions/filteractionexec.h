@@ -8,14 +8,14 @@
 #pragma once
 
 #include "filteractionwithcommand.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
 // FilterActionExec - execute command
 // Execute a shell command
 //=============================================================================
-class FilterActionExec : public FilterActionWithCommand
+class MAILCOMMON_TESTS_EXPORT FilterActionExec : public FilterActionWithCommand
 {
     Q_OBJECT
 public:

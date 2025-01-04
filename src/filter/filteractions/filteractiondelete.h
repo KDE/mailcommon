@@ -8,13 +8,13 @@
 #pragma once
 
 #include "filteractionwithnone.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
 // FilterActionDelete - Delete action
 //=============================================================================
-class FilterActionDelete : public FilterActionWithNone
+class MAILCOMMON_TESTS_EXPORT FilterActionDelete : public FilterActionWithNone
 {
     Q_OBJECT
 public:

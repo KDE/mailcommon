@@ -8,14 +8,14 @@
 #pragma once
 
 #include "filteractionwithaddress.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
 // FilterActionForward - forward to
 // Forward message to another user, with a defined template
 //=============================================================================
-class FilterActionForward : public FilterActionWithAddress
+class MAILCOMMON_TESTS_EXPORT FilterActionForward : public FilterActionWithAddress
 {
     Q_OBJECT
 public:

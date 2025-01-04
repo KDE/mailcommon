@@ -8,14 +8,14 @@
 #pragma once
 
 #include "filteractionwithstringlist.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
 // FilterActionRemoveHeader - remove header
 // Remove all instances of the given header field.
 //=============================================================================
-class FilterActionRemoveHeader : public FilterActionWithStringList
+class MAILCOMMON_TESTS_EXPORT FilterActionRemoveHeader : public FilterActionWithStringList
 {
     Q_OBJECT
 public:

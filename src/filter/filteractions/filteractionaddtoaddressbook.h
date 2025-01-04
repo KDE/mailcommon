@@ -8,14 +8,14 @@
 #pragma once
 
 #include "filteractionwithstringlist.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
 // FilterActionAddToAddressBook
 // - add email address from header to address book
 //=============================================================================
-class FilterActionAddToAddressBook : public FilterActionWithStringList
+class MAILCOMMON_TESTS_EXPORT FilterActionAddToAddressBook : public FilterActionWithStringList
 {
     Q_OBJECT
 public:

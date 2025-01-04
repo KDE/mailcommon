@@ -8,12 +8,13 @@
 #pragma once
 
 #include "filteractionwithurl.h"
+#include "mailcommon_private_export.h"
 #include <QList>
 class QTemporaryFile;
 
 namespace MailCommon
 {
-class FilterActionWithCommand : public FilterActionWithUrl
+class MAILCOMMON_TESTS_EXPORT FilterActionWithCommand : public FilterActionWithUrl
 {
     Q_OBJECT
 

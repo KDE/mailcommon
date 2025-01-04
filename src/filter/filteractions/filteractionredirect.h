@@ -8,14 +8,14 @@
 #pragma once
 
 #include "filteractionwithaddress.h"
-
+#include "mailcommon_private_export.h"
 namespace MailCommon
 {
 //=============================================================================
 // FilterActionRedirect - redirect to
 // Redirect message to another user
 //=============================================================================
-class FilterActionRedirect : public FilterActionWithAddress
+class MAILCOMMON_TESTS_EXPORT FilterActionRedirect : public FilterActionWithAddress
 {
     Q_OBJECT
 public:
