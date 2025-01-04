@@ -6,11 +6,12 @@
 
 #pragma once
 
+#include "mailcommon_private_export.h"
 #include <QDialog>
 namespace MailCommon
 {
 class KMFilterAccountList;
-class FilterActionMissingAccountDialog : public QDialog
+class MAILCOMMON_TESTS_EXPORT FilterActionMissingAccountDialog : public QDialog
 {
     Q_OBJECT
 public:

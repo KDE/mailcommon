@@ -58,7 +58,7 @@ target_link_libraries(filteractionmissingtransportdialoggui
   KPim6::MailTransport
 )
 
-add_executable(filteractionmissingaccountdialoggui filteractionmissingaccountdialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h  ../dialog/filteractionmissingaccountdialog.cpp)
+add_executable(filteractionmissingaccountdialoggui filteractionmissingaccountdialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h )
 ecm_mark_as_test(filteractionmissingaccountdialoggui)
 target_link_libraries(filteractionmissingaccountdialoggui
   Qt::Core

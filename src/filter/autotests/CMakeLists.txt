@@ -233,7 +233,6 @@ add_mailcommon_filter_test(filteractionmissingtransportdialogtest
 add_mailcommon_filter_test(filteractionmissingaccountdialogtest
     filteractionmissingaccountdialogtest.cpp
     filteractionmissingaccountdialogtest.h
-    ../dialog/filteractionmissingaccountdialog.cpp
 )
 
 add_mailcommon_filter_test(filteractionmissingtagdialogtest
