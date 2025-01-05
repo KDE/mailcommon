@@ -9,11 +9,8 @@
 
 #include "mailcommon_private_export.h"
 #include <QWidget>
-namespace Phonon
-{
-class MediaObject;
-}
-
+class QMediaPlayer;
+class QAudioOutput;
 class QPushButton;
 class KUrlRequester;
 
@@ -67,6 +64,7 @@ private:
     void slotUrlChanged(const QString &);
     KUrlRequester *const m_urlRequester;
     QPushButton *const m_playButton;
-    Phonon::MediaObject *m_player = nullptr;
+    QMediaPlayer *m_player = nullptr;
+    QAudioOutput *m_output = nullptr;
 };
 }
