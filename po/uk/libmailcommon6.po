@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-17 00:41+0000\n"
+"POT-Creation-Date: 2025-01-05 00:42+0000\n"
 "PO-Revision-Date: 2024-12-12 11:24+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -2289,31 +2289,43 @@ msgid "has not an attachment"
 msgstr "не містить долучення"
 
 #: search/searchrule/searchrule.cpp:221
+#, fuzzy, kde-format
+#| msgid "has invitation"
+msgid "has an invitation"
+msgstr "містить запрошення"
+
+#: search/searchrule/searchrule.cpp:224
+#, fuzzy, kde-format
+#| msgid "has invitation"
+msgid "has not an invitation"
+msgstr "містить запрошення"
+
+#: search/searchrule/searchrule.cpp:227
 #, kde-format
 msgid "start with"
 msgstr "починається з"
 
-#: search/searchrule/searchrule.cpp:224
+#: search/searchrule/searchrule.cpp:230
 #, kde-format
 msgid "not start with"
 msgstr "не починається з"
 
-#: search/searchrule/searchrule.cpp:227
+#: search/searchrule/searchrule.cpp:233
 #, kde-format
 msgid "end with"
 msgstr "закінчується на"
 
-#: search/searchrule/searchrule.cpp:230
+#: search/searchrule/searchrule.cpp:236
 #, kde-format
 msgid "not end with"
 msgstr "не закінчується на"
 
-#: search/searchrule/searchrule.cpp:233
+#: search/searchrule/searchrule.cpp:239
 #, kde-format
 msgid "none"
 msgstr "нічого"
 
-#: search/searchrule/searchrule.cpp:236
+#: search/searchrule/searchrule.cpp:242
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
 #: search/widgethandler/tagrulewidgethandler.cpp:93
@@ -2322,73 +2334,73 @@ msgstr "нічого"
 msgid "contains"
 msgstr "містить"
 
-#: search/searchrule/searchrule.cpp:239
+#: search/searchrule/searchrule.cpp:245
 #, kde-format
 msgid "not contains"
 msgstr "не містить"
 
-#: search/searchrule/searchrule.cpp:242
+#: search/searchrule/searchrule.cpp:248
 #, kde-format
 msgid "has regexp"
 msgstr "містить формальний вираз"
 
-#: search/searchrule/searchrule.cpp:245
+#: search/searchrule/searchrule.cpp:251
 #, kde-format
 msgid "not regexp"
 msgstr "не є формальним виразом"
 
-#: search/searchrule/searchrule.cpp:259
+#: search/searchrule/searchrule.cpp:265
 #, kde-format
 msgid "size equals not supported"
 msgstr "підтримки рівності розмірів не передбачено"
 
-#: search/searchrule/searchrule.cpp:262
+#: search/searchrule/searchrule.cpp:268
 #, kde-format
 msgid "size not equals not supported"
 msgstr "підтримки нерівності розмірів не передбачено"
 
-#: search/searchrule/searchrule.cpp:293 search/searchrule/searchrule.cpp:400
-#: search/searchrule/searchrule.cpp:482
+#: search/searchrule/searchrule.cpp:301 search/searchrule/searchrule.cpp:410
+#: search/searchrule/searchrule.cpp:494
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "Підтримки «%1» з умовою «%2» не передбачено"
 
-#: search/searchrule/searchrule.cpp:300
+#: search/searchrule/searchrule.cpp:308
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> не реалізовано або не підтримується"
 
-#: search/searchrule/searchrule.cpp:303
+#: search/searchrule/searchrule.cpp:311
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<any header> не реалізовано або не підтримується"
 
-#: search/searchrule/searchrule.cpp:306
+#: search/searchrule/searchrule.cpp:314
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<contents> не реалізовано або не підтримується"
 
-#: search/searchrule/searchrule.cpp:309
+#: search/searchrule/searchrule.cpp:317
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<age in days> не реалізовано або не підтримується"
 
-#: search/searchrule/searchrule.cpp:312
+#: search/searchrule/searchrule.cpp:320
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<date> не реалізовано або не підтримується"
 
-#: search/searchrule/searchrule.cpp:315
+#: search/searchrule/searchrule.cpp:323
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<recipients> не реалізовано або не підтримується"
 
-#: search/searchrule/searchrule.cpp:317
+#: search/searchrule/searchrule.cpp:325
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "Підтримки <tag> не передбачено"
 
-#: search/searchrule/searchrule.cpp:320
+#: search/searchrule/searchrule.cpp:328
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<message> не реалізовано або не підтримується"

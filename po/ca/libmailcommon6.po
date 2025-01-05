@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-17 00:41+0000\n"
+"POT-Creation-Date: 2025-01-05 00:42+0000\n"
 "PO-Revision-Date: 2024-12-12 09:28+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -2286,31 +2286,43 @@ msgid "has not an attachment"
 msgstr "no té un adjunt"
 
 #: search/searchrule/searchrule.cpp:221
+#, fuzzy, kde-format
+#| msgid "has invitation"
+msgid "has an invitation"
+msgstr "té una invitació"
+
+#: search/searchrule/searchrule.cpp:224
+#, fuzzy, kde-format
+#| msgid "has invitation"
+msgid "has not an invitation"
+msgstr "té una invitació"
+
+#: search/searchrule/searchrule.cpp:227
 #, kde-format
 msgid "start with"
 msgstr "comença amb"
 
-#: search/searchrule/searchrule.cpp:224
+#: search/searchrule/searchrule.cpp:230
 #, kde-format
 msgid "not start with"
 msgstr "no comença amb"
 
-#: search/searchrule/searchrule.cpp:227
+#: search/searchrule/searchrule.cpp:233
 #, kde-format
 msgid "end with"
 msgstr "acaba amb"
 
-#: search/searchrule/searchrule.cpp:230
+#: search/searchrule/searchrule.cpp:236
 #, kde-format
 msgid "not end with"
 msgstr "no acaba amb"
 
-#: search/searchrule/searchrule.cpp:233
+#: search/searchrule/searchrule.cpp:239
 #, kde-format
 msgid "none"
 msgstr "cap"
 
-#: search/searchrule/searchrule.cpp:236
+#: search/searchrule/searchrule.cpp:242
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
 #: search/widgethandler/tagrulewidgethandler.cpp:93
@@ -2319,75 +2331,75 @@ msgstr "cap"
 msgid "contains"
 msgstr "conté"
 
-#: search/searchrule/searchrule.cpp:239
+#: search/searchrule/searchrule.cpp:245
 #, kde-format
 msgid "not contains"
 msgstr "no conté"
 
 # skip-rule: punctuation-period-no
-#: search/searchrule/searchrule.cpp:242
+#: search/searchrule/searchrule.cpp:248
 #, kde-format
 msgid "has regexp"
 msgstr "té una exp. reg."
 
 # skip-rule: punctuation-period-no
-#: search/searchrule/searchrule.cpp:245
+#: search/searchrule/searchrule.cpp:251
 #, kde-format
 msgid "not regexp"
 msgstr "no té cap exp. reg."
 
-#: search/searchrule/searchrule.cpp:259
+#: search/searchrule/searchrule.cpp:265
 #, kde-format
 msgid "size equals not supported"
 msgstr "no s'admet la mateixa mida"
 
-#: search/searchrule/searchrule.cpp:262
+#: search/searchrule/searchrule.cpp:268
 #, kde-format
 msgid "size not equals not supported"
 msgstr "no s'admet una mida diferent"
 
-#: search/searchrule/searchrule.cpp:293 search/searchrule/searchrule.cpp:400
-#: search/searchrule/searchrule.cpp:482
+#: search/searchrule/searchrule.cpp:301 search/searchrule/searchrule.cpp:410
+#: search/searchrule/searchrule.cpp:494
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "«%1» no és admesa amb la condició «%2»"
 
-#: search/searchrule/searchrule.cpp:300
+#: search/searchrule/searchrule.cpp:308
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> no implementat/admès"
 
-#: search/searchrule/searchrule.cpp:303
+#: search/searchrule/searchrule.cpp:311
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<any header> no implementada/admesa"
 
-#: search/searchrule/searchrule.cpp:306
+#: search/searchrule/searchrule.cpp:314
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<contents> no implementats/admesos"
 
-#: search/searchrule/searchrule.cpp:309
+#: search/searchrule/searchrule.cpp:317
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<age in days> no implementats/admesos"
 
-#: search/searchrule/searchrule.cpp:312
+#: search/searchrule/searchrule.cpp:320
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<date> no implementada/admesa"
 
-#: search/searchrule/searchrule.cpp:315
+#: search/searchrule/searchrule.cpp:323
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<recipients> no implementats/admesos"
 
-#: search/searchrule/searchrule.cpp:317
+#: search/searchrule/searchrule.cpp:325
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "<Tag> no està admès"
 
-#: search/searchrule/searchrule.cpp:320
+#: search/searchrule/searchrule.cpp:328
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<message> no implementat/admès"
