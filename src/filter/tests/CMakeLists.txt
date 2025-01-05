@@ -21,7 +21,7 @@ target_link_libraries(kmfilterdialogtestgui
 add_executable(filteractionmissingsoundurldialogui filteractionmissingsoundurldialogui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h)
 ecm_mark_as_test(filteractionmissingsoundurldialogui)
 target_link_libraries(filteractionmissingsoundurldialogui
-  Qt::Gui
+
   KPim6::MailCommon
   KF6::KIOWidgets
 )
