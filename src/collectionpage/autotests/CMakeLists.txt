@@ -5,7 +5,7 @@ macro(add_mailcommon_collectionpage_test _source)
     ecm_add_test(${_source} ${_name}.h
         TEST_NAME ${_name}
         NAME_PREFIX "mailcommon-collectionpage-"
-        LINK_LIBRARIES Qt::Test Qt::Gui KPim6::AkonadiCore KPim6::MailCommon KF6::Completion
+        LINK_LIBRARIES Qt::Test KPim6::MailCommon
 )
 endmacro()
 
