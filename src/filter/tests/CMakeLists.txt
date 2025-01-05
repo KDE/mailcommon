@@ -6,7 +6,6 @@ target_link_libraries(filterimporterexportergui
   Qt::Core
   Qt::Gui
   KPim6::MailCommon
-  KF6::I18n
 )
 
 add_executable(invalidfilterdialoggui invalidfilterdialoggui.cpp)
@@ -15,7 +14,6 @@ target_link_libraries(invalidfilterdialoggui
   Qt::Core
   Qt::Gui
   KPim6::MailCommon
-  KF6::I18n
 )
 
 add_executable(kmfilterdialogtestgui kmfilterdialogtestgui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h kmfilterdialogtestgui.h)
@@ -24,7 +22,6 @@ target_link_libraries(kmfilterdialogtestgui
   Qt::Core
   Qt::Gui
   KPim6::MailCommon
-  KF6::I18n
 )
 
 add_executable(filteractionmissingsoundurldialogui filteractionmissingsoundurldialogui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h)
@@ -33,7 +30,6 @@ target_link_libraries(filteractionmissingsoundurldialogui
   Qt::Core
   Qt::Gui
   KPim6::MailCommon
-  KF6::I18n
   KF6::KIOWidgets
 )
 
@@ -43,7 +39,6 @@ target_link_libraries(filteractionmissingtemplatedialoggui
   Qt::Core
   Qt::Gui
   KPim6::MailCommon
-  KF6::I18n
   KF6::Completion
 )
 
@@ -53,7 +48,6 @@ target_link_libraries(filteractionmissingtransportdialoggui
   Qt::Core
   Qt::Gui
   KPim6::MailCommon
-  KF6::I18n
   KF6::Completion
   KPim6::MailTransport
 )
@@ -64,7 +58,6 @@ target_link_libraries(filteractionmissingaccountdialoggui
   Qt::Core
   Qt::Gui
   KPim6::MailCommon
-  KF6::I18n
   KF6::Completion
 )
 
@@ -74,7 +67,6 @@ target_link_libraries(filteractionmissingtagdialoggui
   Qt::Core
   Qt::Gui
   KPim6::MailCommon
-  KF6::I18n
   KF6::Completion
 )
 
@@ -84,6 +76,5 @@ target_link_libraries(filteractionmissingidentitydialoggui
   Qt::Core
   Qt::Gui
   KPim6::MailCommon
-  KF6::I18n
   KF6::Completion
 )
