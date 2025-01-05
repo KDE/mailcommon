@@ -361,11 +361,11 @@ PUBLIC
   KPim6::MessageComposer
   KPim6::PimCommonAkonadi
   KF6::Completion
+  KF6::I18n
 PRIVATE
   KPim6::IdentityManagementWidgets
   Gpgmepp
   KPim6::AkonadiWidgets
-  KF6::I18n
   KPim6::MessageViewer
   KPim6::MailImporter
   KPim6::MessageCore

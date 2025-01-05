@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
-set(mailcommon_filter_test_LIBS Qt::Test Qt::Gui KPim6::AkonadiCore KPim6::AkonadiMime
-                                KPim6::MailCommon KPim6::PimCommon
-                                KF6::KIOWidgets KF6::IconThemes KPim6::TemplateParser
-				KPim6::AkonadiContactWidgets
-                                KPim6::MailTransport KF6::I18n KF6::SyntaxHighlighting KF6::Codecs
+set(mailcommon_filter_test_LIBS Qt::Test
+    KF6::KIOWidgets
+    KPim6::MailTransport
+    KF6::SyntaxHighlighting
+    KPim6::MailCommon
 )
 
 add_definitions(-DTEST_PATH=\"${CMAKE_CURRENT_SOURCE_DIR}\")
