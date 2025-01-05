@@ -107,7 +107,6 @@ add_mailcommon_filter_akonadi_test(filteractionaddtoaddressbooktest.cpp
 add_mailcommon_filter_test(filteractionplaysoundtest
     filteractionplaysoundtest.cpp
     filteractionplaysoundtest.h
-    ../dialog/filteractionmissingsoundurldialog.cpp
     ${filter_common_SRCS}
 )
 
@@ -156,7 +155,6 @@ add_mailcommon_filter_test(filteractionsendfakedispositiontest
 add_mailcommon_filter_test(filteractionforwardtest
     filteractionforwardtest.cpp
     filteractionforwardtest.h
-    ../dialog/filteractionmissingtemplatedialog.cpp
     ${filter_common_SRCS}
 )
 
@@ -193,15 +191,12 @@ add_mailcommon_filter_test(filteractionsendreceipttest
 add_mailcommon_filter_test(filteractionsettransporttest
     filteractionsettransporttest.cpp
     filteractionsettransporttest.h
-    ../dialog/filteractionmissingtransportdialog.cpp
     ${filter_common_SRCS}
 )
 
 add_mailcommon_filter_test(filterconverttosieveresultdialog
     filterconverttosieveresultdialogtest.cpp
     filterconverttosieveresultdialogtest.h
-    ../filterconverter/filterconverttosieveresultdialog.cpp
-    ../filterconverter/filterconverttosievepurposemenuwidget.cpp
     ${filter_common_SRCS}
 )
 
@@ -214,19 +209,16 @@ add_mailcommon_filter_test(mailfiltertest
 add_mailcommon_filter_test(filteractionmissingsoundurldialogtest
     filteractionmissingsoundurldialogtest.cpp
     filteractionmissingsoundurldialogtest.h
-    ../dialog/filteractionmissingsoundurldialog.cpp
 )
 
 add_mailcommon_filter_test(filteractionmissingtemplatedialogtest
     filteractionmissingtemplatedialogtest.cpp
     filteractionmissingtemplatedialogtest.h
-    ../dialog/filteractionmissingtemplatedialog.cpp
 )
 
 add_mailcommon_filter_test(filteractionmissingtransportdialogtest
     filteractionmissingtransportdialogtest.cpp
     filteractionmissingtransportdialogtest.h
-    ../dialog/filteractionmissingtransportdialog.cpp
 )
 
 add_mailcommon_filter_test(filteractionmissingaccountdialogtest
@@ -237,13 +229,11 @@ add_mailcommon_filter_test(filteractionmissingaccountdialogtest
 add_mailcommon_filter_test(filteractionmissingtagdialogtest
     filteractionmissingtagdialogtest.cpp
     filteractionmissingtagdialogtest.h
-    ../dialog/filteractionmissingtagdialog.cpp
 )
 
 add_mailcommon_filter_akonadi_test(
     filteractionmissingidentitydialogtest.cpp
     filteractionmissingidentitydialogtest.h
-    ../dialog/filteractionmissingidentitydialog.cpp
     ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h
 )
 

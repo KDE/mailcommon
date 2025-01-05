@@ -6,6 +6,7 @@
 
 #pragma once
 
+#include "mailcommon_private_export.h"
 #include <QDialog>
 namespace MailTransport
 {
@@ -14,7 +15,7 @@ class TransportComboBox;
 
 namespace MailCommon
 {
-class FilterActionMissingTransportDialog : public QDialog
+class MAILCOMMON_TESTS_EXPORT FilterActionMissingTransportDialog : public QDialog
 {
     Q_OBJECT
 public:

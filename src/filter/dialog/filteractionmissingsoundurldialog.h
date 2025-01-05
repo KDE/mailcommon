@@ -6,11 +6,12 @@
 
 #pragma once
 
+#include "mailcommon_private_export.h"
 #include <QDialog>
 class KUrlRequester;
 namespace MailCommon
 {
-class FilterActionMissingSoundUrlDialog : public QDialog
+class MAILCOMMON_TESTS_EXPORT FilterActionMissingSoundUrlDialog : public QDialog
 {
     Q_OBJECT
 public:

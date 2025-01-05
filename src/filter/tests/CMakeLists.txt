@@ -27,7 +27,7 @@ target_link_libraries(kmfilterdialogtestgui
   KF6::I18n
 )
 
-add_executable(filteractionmissingsoundurldialogui filteractionmissingsoundurldialogui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h ../dialog/filteractionmissingsoundurldialog.cpp)
+add_executable(filteractionmissingsoundurldialogui filteractionmissingsoundurldialogui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h)
 ecm_mark_as_test(filteractionmissingsoundurldialogui)
 target_link_libraries(filteractionmissingsoundurldialogui
   Qt::Core
@@ -37,7 +37,7 @@ target_link_libraries(filteractionmissingsoundurldialogui
   KF6::KIOWidgets
 )
 
-add_executable(filteractionmissingtemplatedialoggui filteractionmissingtemplatedialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h ../dialog/filteractionmissingtemplatedialog.cpp)
+add_executable(filteractionmissingtemplatedialoggui filteractionmissingtemplatedialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h)
 ecm_mark_as_test(filteractionmissingtemplatedialoggui)
 target_link_libraries(filteractionmissingtemplatedialoggui
   Qt::Core
@@ -47,7 +47,7 @@ target_link_libraries(filteractionmissingtemplatedialoggui
   KF6::Completion
 )
 
-add_executable(filteractionmissingtransportdialoggui filteractionmissingtransportdialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h ../dialog/filteractionmissingtransportdialog.cpp)
+add_executable(filteractionmissingtransportdialoggui filteractionmissingtransportdialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h)
 ecm_mark_as_test(filteractionmissingtransportdialoggui)
 target_link_libraries(filteractionmissingtransportdialoggui
   Qt::Core
@@ -68,7 +68,7 @@ target_link_libraries(filteractionmissingaccountdialoggui
   KF6::Completion
 )
 
-add_executable(filteractionmissingtagdialoggui filteractionmissingtagdialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h ../dialog/filteractionmissingtagdialog.cpp)
+add_executable(filteractionmissingtagdialoggui filteractionmissingtagdialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h)
 ecm_mark_as_test(filteractionmissingtagdialoggui)
 target_link_libraries(filteractionmissingtagdialoggui
   Qt::Core
@@ -78,7 +78,7 @@ target_link_libraries(filteractionmissingtagdialoggui
   KF6::Completion
 )
 
-add_executable(filteractionmissingidentitydialoggui filteractionmissingidentitydialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h ../dialog/filteractionmissingidentitydialog.cpp)
+add_executable(filteractionmissingidentitydialoggui filteractionmissingidentitydialoggui.cpp ../../../autotests/dummykernel.cpp ../../../autotests/dummykernel.h)
 ecm_mark_as_test(filteractionmissingidentitydialoggui)
 target_link_libraries(filteractionmissingidentitydialoggui
   Qt::Core

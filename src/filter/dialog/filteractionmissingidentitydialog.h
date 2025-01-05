@@ -5,7 +5,7 @@
 */
 
 #pragma once
-
+#include "mailcommon_private_export.h"
 #include <QDialog>
 
 namespace KIdentityManagementWidgets
@@ -14,7 +14,7 @@ class IdentityCombo;
 }
 namespace MailCommon
 {
-class FilterActionMissingIdentityDialog : public QDialog
+class MAILCOMMON_TESTS_EXPORT FilterActionMissingIdentityDialog : public QDialog
 {
     Q_OBJECT
 public:

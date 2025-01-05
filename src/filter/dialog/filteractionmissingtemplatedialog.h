@@ -5,13 +5,13 @@
 */
 
 #pragma once
-
+#include "mailcommon_private_export.h"
 #include <QDialog>
 
 class QComboBox;
 namespace MailCommon
 {
-class FilterActionMissingTemplateDialog : public QDialog
+class MAILCOMMON_TESTS_EXPORT FilterActionMissingTemplateDialog : public QDialog
 {
     Q_OBJECT
 public:

@@ -6,6 +6,7 @@
 
 #pragma once
 
+#include "mailcommon_private_export.h"
 #include <PimCommon/PurposeMenuWidget>
 namespace TextCustomEditor
 {
@@ -13,7 +14,7 @@ class PlainTextEditor;
 }
 namespace MailCommon
 {
-class FilterconverttosievePurposeMenuWidget : public PimCommon::PurposeMenuWidget
+class MAILCOMMON_TESTS_EXPORT FilterconverttosievePurposeMenuWidget : public PimCommon::PurposeMenuWidget
 {
     Q_OBJECT
 public:

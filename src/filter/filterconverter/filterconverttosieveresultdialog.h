@@ -6,6 +6,7 @@
 
 #pragma once
 
+#include "mailcommon_private_export.h"
 #include <KSyntaxHighlighting/Repository>
 #include <QDialog>
 namespace TextCustomEditor
@@ -18,7 +19,7 @@ class PurposeMenuMessageWidget;
 }
 namespace MailCommon
 {
-class FilterConvertToSieveResultDialog : public QDialog
+class MAILCOMMON_TESTS_EXPORT FilterConvertToSieveResultDialog : public QDialog
 {
     Q_OBJECT
 public:

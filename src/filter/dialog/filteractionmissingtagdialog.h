@@ -6,11 +6,12 @@
 
 #pragma once
 
+#include "mailcommon_private_export.h"
 #include <QDialog>
 class QListWidget;
 namespace MailCommon
 {
-class FilterActionMissingTagDialog : public QDialog
+class MAILCOMMON_TESTS_EXPORT FilterActionMissingTagDialog : public QDialog
 {
     Q_OBJECT
 public:
