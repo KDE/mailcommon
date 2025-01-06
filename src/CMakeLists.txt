@@ -4,9 +4,6 @@ add_definitions(-DTRANSLATION_DOMAIN=\"libmailcommon6\")
 
 configure_file(config-mailcommon.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-mailcommon.h)
 
-#add_definitions(-DQT_NO_CAST_FROM_ASCII)
-#add_definitions(-DQT_NO_CAST_TO_ASCII)
-
 if(BUILD_TESTING)
    add_definitions(-DBUILD_TESTING)
 endif()
