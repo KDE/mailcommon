@@ -1,16 +1,16 @@
 # Translation for libmailcommon.po to Euskara/Basque (eu).
-# Copyright (C) 2021-2024 This file is copyright:
+# Copyright (C) 2021-2025 This file is copyright:
 # This file is distributed under the same license as the mailcommon package.
-# SPDX-FileCopyrightText: 2023, 2024 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2023, 2024, 2025 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
 #
 # Translators:
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2021, 2022, 2023, 2024.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2021, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-05 00:42+0000\n"
-"PO-Revision-Date: 2024-12-12 19:25+0100\n"
+"PO-Revision-Date: 2025-01-05 11:21+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -2276,16 +2276,14 @@ msgid "has not an attachment"
 msgstr "ez du eranskinik"
 
 #: search/searchrule/searchrule.cpp:221
-#, fuzzy, kde-format
-#| msgid "has invitation"
+#, kde-format
 msgid "has an invitation"
-msgstr "gonbidapena dauka"
+msgstr "gonbidapen bat dauka"
 
 #: search/searchrule/searchrule.cpp:224
-#, fuzzy, kde-format
-#| msgid "has invitation"
+#, kde-format
 msgid "has not an invitation"
-msgstr "gonbidapena dauka"
+msgstr "ez dauka gonbidapenik"
 
 #: search/searchrule/searchrule.cpp:227
 #, kde-format
