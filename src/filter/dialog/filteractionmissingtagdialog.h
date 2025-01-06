@@ -23,9 +23,9 @@ public:
     [[nodiscard]] QString selectedTag() const;
 
 private:
-    void slotAddTag();
-    void readConfig();
-    void writeConfig();
+    MAILCOMMON_NO_EXPORT void slotAddTag();
+    MAILCOMMON_NO_EXPORT void readConfig();
+    MAILCOMMON_NO_EXPORT void writeConfig();
 
     enum TypeData {
         UrlData = Qt::UserRole + 1

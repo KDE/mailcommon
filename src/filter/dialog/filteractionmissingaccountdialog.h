@@ -21,8 +21,8 @@ public:
     [[nodiscard]] static bool allAccountExist(const QStringList &lst);
 
 private:
-    void readConfig();
-    void writeConfig();
+    MAILCOMMON_NO_EXPORT void readConfig();
+    MAILCOMMON_NO_EXPORT void writeConfig();
     MailCommon::KMFilterAccountList *const mAccountList;
 };
 }

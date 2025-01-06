@@ -47,7 +47,7 @@ private:
     void slotTagListingFinished();
 
 private:
-    void fillComboBox();
+    MAILCOMMON_NO_EXPORT void fillComboBox();
     mutable QMap<QUrl, QString> mList;
     QString mParameter;
     mutable QPointer<QComboBox> mComboBox;

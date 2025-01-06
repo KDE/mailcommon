@@ -101,6 +101,6 @@ private:
     mutable FilterActionWithUrlHelpButton *mHelpButton = nullptr;
 
 private:
-    void slotHelp();
+    MAILCOMMON_NO_EXPORT void slotHelp();
 };
 }

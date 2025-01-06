@@ -26,6 +26,6 @@ public:
     [[nodiscard]] QString informationAboutNotValidAction() const override;
 
 private:
-    bool checkIsValid(int &index) const;
+    [[nodiscard]] MAILCOMMON_NO_EXPORT bool checkIsValid(int &index) const;
 };
 }

@@ -20,8 +20,8 @@ public:
     [[nodiscard]] QString selectedTemplate() const;
 
 private:
-    void readConfig();
-    void writeConfig();
+    MAILCOMMON_NO_EXPORT void readConfig();
+    MAILCOMMON_NO_EXPORT void writeConfig();
     QComboBox *const mComboBoxTemplate;
 };
 }
