@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the mailcommon package.
 #
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Mincho Kondarev <mkondarev@yahoo.de>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-05 00:42+0000\n"
-"PO-Revision-Date: 2024-12-16 22:14+0100\n"
+"PO-Revision-Date: 2025-01-07 23:13+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -2278,16 +2278,14 @@ msgid "has not an attachment"
 msgstr "няма прикачен файл"
 
 #: search/searchrule/searchrule.cpp:221
-#, fuzzy, kde-format
-#| msgid "has invitation"
+#, kde-format
 msgid "has an invitation"
 msgstr "с покана"
 
 #: search/searchrule/searchrule.cpp:224
-#, fuzzy, kde-format
-#| msgid "has invitation"
+#, kde-format
 msgid "has not an invitation"
-msgstr "с покана"
+msgstr "без покана"
 
 #: search/searchrule/searchrule.cpp:227
 #, kde-format

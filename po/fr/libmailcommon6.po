@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Geoffray Levasseur <geoffray.levasseurbrandin@numericable.fr>, 2010, 2012, 2013, 2014.
 # Joëlle Cornavin <jcornavin@laposte.net>, 2010, 2011.
-# SPDX-FileCopyrightText: 2012, 2013, 2020, 2021, 2022, 2023, 2024 Xavier Besnard <xavier.besnard@kde.org>
+# SPDX-FileCopyrightText: 2012, 2013, 2020, 2021, 2022, 2023, 2024, 2025 Xavier Besnard <xavier.besnard@kde.org>
 # Sébastien Renard <renard@kde.org>, 2012.
 # Vincent Pinon <vpinon@kde.org>, 2017, 2018.
 # Simon Depiets <sdepiets@gmail.com>, 2019, 2020.
@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-05 00:42+0000\n"
-"PO-Revision-Date: 2024-12-13 08:53+0100\n"
+"PO-Revision-Date: 2025-01-06 09:17+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Accelerator-Marker: &\n"
 "X-Environment: kde\n"
-"X-Generator: Lokalize 24.11.90\n"
+"X-Generator: Lokalize 24.12.0\n"
 "X-Text-Markup: kde4\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
@@ -2316,16 +2316,14 @@ msgid "has not an attachment"
 msgstr "ne comporte pas de pièce jointe"
 
 #: search/searchrule/searchrule.cpp:221
-#, fuzzy, kde-format
-#| msgid "has invitation"
+#, kde-format
 msgid "has an invitation"
 msgstr "a reçu une invitation"
 
 #: search/searchrule/searchrule.cpp:224
-#, fuzzy, kde-format
-#| msgid "has invitation"
+#, kde-format
 msgid "has not an invitation"
-msgstr "a reçu une invitation"
+msgstr "n'a pas reçu d'invitation"
 
 #: search/searchrule/searchrule.cpp:227
 #, kde-format
