@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2018.
-# SPDX-FileCopyrightText: 2022, 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2022, 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-10-27 00:41+0000\n"
-"PO-Revision-Date: 2024-09-26 13:30+0400\n"
+"PO-Revision-Date: 2025-01-08 22:26+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -31,24 +31,24 @@ msgctxt "Expire messages after %1"
 msgid "%v day"
 msgid_plural "%v days"
 msgstr[0] "أقل من يوم"
-msgstr[1] "يوم واحد‏"
-msgstr[2] "يومان‏"
+msgstr[1] "يوم واحد"
+msgstr[2] "يومان"
 msgstr[3] "‏%v أيام"
 msgstr[4] "‏%v يومًا"
-msgstr[5] "‏%v يوم‏"
+msgstr[5] "‏%v يوم"
 
 #: collectionpage/collectionexpirywidget.cpp:37
 #: collectionpage/collectionexpirywidget.cpp:43
 #: collectionpage/collectionexpirywidget.cpp:55
 #, kde-format
 msgid "Never"
-msgstr "أبدًا"
+msgstr "البتة"
 
 #: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
-msgstr ""
+msgstr "احفظ الإعدادات وانتهاء الصلاحية الآن"
 
 #: collectionpage/collectionexpirywidget.cpp:68
 #, kde-format
@@ -82,6 +82,8 @@ msgid ""
 "Please select a folder to expire messages into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
+"الرجاء تحديد مجلد لانتهاء صلاحية الرسائل فيه.\n"
+"إذا لم يتم ذلك، سيحذف الرسائل منتهية الصلاحية نهائيًا."
 
 #: collectionpage/collectionexpirywidget.cpp:174
 #, kde-format
@@ -96,6 +98,8 @@ msgid ""
 "into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
+"الرجاء تحديد مجلد مختلف عن المجلد الحالي لانتهاء صلاحية الرسائل فيه.\n"
+"إذا لم يتم ذلك، سيحذف الرسائل منتهية الصلاحية نهائيًا."
 
 #: collectionpage/collectionexpirywidget.cpp:190
 #, kde-format
@@ -127,6 +131,8 @@ msgid ""
 "all users having access to this folder. If disabled (the default), every "
 "user with access to this folder has their own unread state."
 msgstr ""
+"في حالة التمكين، ستكون حالة الرسائل غير المقروءة في هذا المجلد هي نفسها "
+"لجميع المستخدمين الذين لديهم حق الوصول إلى هذا المجلد."
 
 #: collectionpage/collectiongeneralpage.cpp:213
 #, kde-format
@@ -134,12 +140,14 @@ msgid ""
 "You have configured this folder to contain groupware information. That means "
 "that this folder will disappear once the configuration dialog is closed."
 msgstr ""
+"لقد قمت بتكوين هذا المجلد ليحتوي على معلومات البرامج الجماعية. وهذا يعني أن "
+"هذا المجلد سوف يختفي بمجرد إغلاق مربع حوار الضبط."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
 #, kde-format
 msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
-msgstr ""
+msgstr "التعامل مع البريد الجديد/غير المقروء في هذا المجلد"
 
 #: collectionpage/collectiongeneralwidget.cpp:27
 #, kde-format
@@ -152,6 +160,13 @@ msgid ""
 "messages. This is useful for ignoring any new/unread mail in your trash and "
 "spam folder.</p></qt>"
 msgstr ""
+"<qt><p> إذا مُكّن هذا الخيار، فستُعلم بالرسائل الجديدة/غير المقروءة في هذا "
+"المجلد. وعلاوة على ذلك، فإن الانتقال إلى المجلد التالي/السابق الذي يحتوي على "
+"رسائل غير مقروءة سيتوقف عند هذا المجلد.</p><p> ألغ تحديد هذا الخيار إذا كنت "
+"لا تريد أن تعلم بالرسائل الجديدة/غير المقروءة في هذا المجلد وإذا كنت تريد "
+"تخطي هذا المجلد عند الانتقال إلى المجلد التالي/السابق الذي يحتوي على رسائل "
+"غير مقروءة. وهذا مفيد لتجاهل أي رسائل جديدة/غير مقروءة في مجلد سلة المهملات "
+"وبريد السخام.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
 #, kde-format
@@ -182,6 +197,8 @@ msgid ""
 "Check this option if you do not want this folder to be shown in folder "
 "selection dialogs, such as the <interface>Jump to Folder</interface> dialog."
 msgstr ""
+"حدد هذا الخيار إذا كنت لا تريد أن يظهر هذا المجلد في مربعات حوار تحديد "
+"المجلد، مثل مربع الحوار <interface>انتقل إلى المجلد</interface>."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
 #, kde-format
@@ -198,6 +215,11 @@ msgid ""
 "signing or encryption keys automatically. Identities can be set up in the "
 "main configuration dialog. (Settings -> Configure KMail)"
 msgstr ""
+"حدد هوية المرسل المراد استخدامها عند كتابة بريد جديد أو الرد على بريد في هذا "
+"المجلد. هذا يعني أنه إذا كنت في أحد مجلدات العمل الخاصة بك، فيمكنك جعل "
+"\"بريدك\" يستخدم عنوان البريد الإلكتروني للمرسل والتوقيع ومفاتيح التوقيع أو "
+"التعمية المقابلة تلقائيًا. يمكن إعداد الهويات في مربع الحوار الرئيس للضبط. "
+"(إعدادات -> ضبط بريدك)"
 
 #: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
@@ -249,7 +271,7 @@ msgstr "استخدم الإعدادات العموميّة"
 #: collectionpage/collectionviewwidget.cpp:40
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
-msgstr ""
+msgstr "أظهر عمود المرسل/المستقبل في قائمة الرسائل"
 
 #: collectionpage/collectionviewwidget.cpp:43
 #, kde-format
@@ -544,6 +566,8 @@ msgid ""
 "<p>If the email folder that you are filtering into is connected to a remote "
 "account (like an IMAP-Server) the decrypted content will go there.</p>"
 msgstr ""
+"<p> إذا كان مجلد البريد الإلكتروني الذي تقوم بالتصفية إليه متصلاً بحساب بعيد "
+"(مثل خادم IMAP)، فسينقل المحتوى الذي فُك تعميته إلى هناك.</p>"
 
 #: filter/filteractions/filteractiondelete.cpp:18
 #, kde-format
@@ -573,7 +597,7 @@ msgstr "أعِد تعمية الرّسائل المعمّاة بهذا المف�
 #: filter/filteractions/filteractionencrypt.cpp:252
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
-msgstr ""
+msgstr "<b>تحذير:</b> مفتاح الأمن Seckey ضروري لقراءة رسائل البريد الإلكتروني."
 
 #: filter/filteractions/filteractionencrypt.cpp:254
 #, kde-format
@@ -583,6 +607,10 @@ msgid ""
 "an email server and use several clients, each of them must be configured to "
 "enable decryption.</p>"
 msgstr ""
+"<p>بمجرد تعمية رسالة بريد إلكتروني، ستحتاج إلى إعداد تعمية باستخدام مفتاحك "
+"السري للوصول إلى المحتويات مرة أخرى.</p><p>إذا كنت تحتفظ برسائل البريد "
+"الإلكتروني مخزنة على خادم بريد إلكتروني وتستخدم العديد من العملاء، فيجب ضبط "
+"كل منهم لتمكين فك التعمية.</p>"
 
 #: filter/filteractions/filteractionexec.cpp:15
 #, kde-format
@@ -604,12 +632,12 @@ msgstr "مرّر إلى"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
-msgstr ""
+msgstr "المرسل إليه الذي سيعاد توجيه الرسالة إليه."
 
 #: filter/filteractions/filteractionforward.cpp:92
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
-msgstr ""
+msgstr "سيعيد المرشح توجيه الرسالة إلى المرسل إليه الذي أدخلته هنا."
 
 #: filter/filteractions/filteractionforward.cpp:99
 #: filter/filteractions/filteractionforward.cpp:198
@@ -647,13 +675,13 @@ msgstr "لم يُحدّد عنوان البريد الإلكترونيّ."
 #: filter/filteractions/filteractionmove.cpp:23
 #, kde-format
 msgid "Move Into Folder"
-msgstr ""
+msgstr "انقل إلى المجلد"
 
 #: filter/filteractions/filteractionpipethrough.cpp:20
 #, kde-format
 msgctxt "pipe through with command"
 msgid "Pipe Through"
-msgstr ""
+msgstr "مَرّر"
 
 #: filter/filteractions/filteractionpipethrough.cpp:36
 #, kde-format
@@ -668,7 +696,7 @@ msgstr "شغّل صوتًا"
 #: filter/filteractions/filteractionplaysound.cpp:77
 #, kde-format
 msgid "Sound file was not defined."
-msgstr ""
+msgstr "لم تعرف ملف الصوت."
 
 #: filter/filteractions/filteractionredirect.cpp:27
 #, kde-format
@@ -693,7 +721,7 @@ msgstr "اسم التّرويسة غير معرّف."
 #: filter/filteractions/filteractionreplyto.cpp:20
 #, kde-format
 msgid "Set Reply-To To"
-msgstr ""
+msgstr "عيّن الرد على"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:25
 #, kde-format
@@ -772,12 +800,12 @@ msgstr "فشل"
 #: filter/filteractions/filteractionsendfakedisposition.cpp:115
 #, kde-format
 msgid "Fake type undefined."
-msgstr ""
+msgstr "النوع المزيف غير محدد."
 
 #: filter/filteractions/filteractionsendreceipt.cpp:21
 #, kde-format
 msgid "Confirm Delivery"
-msgstr ""
+msgstr "تأكيد التسليم"
 
 #: filter/filteractions/filteractionsetidentity.cpp:29
 #, kde-format
@@ -895,7 +923,7 @@ msgstr "مساعدة"
 #: filter/filteractions/filteractionwithurl.cpp:64
 #, kde-format
 msgid "You can get specific header when you use %{headername}."
-msgstr ""
+msgstr "يمكنك الحصول على رأس محدد عند استخدام %{headername}."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
 #, kde-format
@@ -928,12 +956,12 @@ msgstr "التّحويل إلى سكربت «سِف»"
 #: filter/filterimporter/filterimportergmail.cpp:48
 #, kde-format
 msgid "Gmail filter %1"
-msgstr ""
+msgstr "مرشح ج ميل %1"
 
 #: filter/filterimporter/filterimporterprocmail.cpp:52
 #, kde-format
 msgid "Procmail filter %1"
-msgstr ""
+msgstr "مرشح Procmail %1"
 
 #: filter/filterimporterexporter.cpp:112
 #, kde-format
@@ -963,11 +991,10 @@ msgid "Import Sylpheed Filters"
 msgstr "استيراد مرشّحات Sylpheed"
 
 #: filter/filterimporterexporter.cpp:154
-#, fuzzy, kde-format
-#| msgid "Import Gmail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
-msgstr "استيراد مرشّحات Gmail"
+msgstr "استيراد مرشحات Procmail"
 
 #: filter/filterimporterexporter.cpp:158
 #, kde-format
@@ -994,6 +1021,7 @@ msgid ""
 "The selected file is not readable. Your file access permissions might be "
 "insufficient."
 msgstr ""
+"الملف المحدد غير قابل للقراءة. قد تكون أذونات الوصول إلى الملف غير كافية."
 
 #: filter/filterimporterexporter.cpp:316
 #, kde-format
@@ -1038,17 +1066,14 @@ msgid "Discard"
 msgstr "أهمِل"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
-#, fuzzy, kde-format
-#| msgid ""
-#| "The following filters have not been saved because they were invalid (e.g. "
-#| "containing no actions or no search rules)."
+#, kde-format
 msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
 msgstr ""
-"لم تُحفظ المرشّحات الآتية لأنّها كانت غير صالحة (مثلًا لا تحتوي إجراءات أو قواعد "
-"بحث)."
+"عوامل التصفية التالية غير صالحة (على سبيل المثال لا تحتوي على إجراءات أو لا "
+"تحتوي على قواعد). أتريد تجاهل أو تعديل المرشحات غير الصالحة؟"
 
 #: filter/kmfilteraccountlist.cpp:24
 #, kde-format
@@ -1202,6 +1227,9 @@ msgid ""
 "also needs to be modified, please use \"Apply this filter <b>before</b> "
 "sending messages\".</p>"
 msgstr ""
+"<p>سيشغل المرشح <b>بعد</b> إرسال الرسالة وسيؤثر فقط على النسخة المحلية من "
+"الرسالة.</p><p>إذا كانت نسخة المستلم تحتاج أيضًا إلى تعديل، فيرجى استخدام "
+"\"طبق هذا المرشح <b>قبل</b> إرسال الرسائل\".</p>"
 
 #: filter/kmfilterdialog.cpp:227
 #, kde-format
@@ -1216,20 +1244,21 @@ msgid ""
 "will affect both the local copy and the sent copy of the message.</p><p>This "
 "is required if the recipient's copy also needs to be modified.</p>"
 msgstr ""
+"<p>سيشغل المرشح <b>قبل</b> إرسال الرسالة وسيؤثر على كل من النسخة المحلية "
+"والنسخة المرسلة من الرسالة.</p><p>هذا مطلوب إذا كانت نسخة المستلم تحتاج أيضًا "
+"إلى تعديل.</p>"
 
 #: filter/kmfilterdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Apply on manual filtering"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
-msgstr "طبق على الترشيح اليدوي"
+msgstr "طبّق هذا المرشح على التصفية الي&دوية"
 
 #: filter/kmfilterdialog.cpp:237
-#, fuzzy, kde-format
-#| msgid "Apply this filter to incoming messages:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
-msgstr "طبّق هذا المرشّح على الرّسائل الواردة:"
+msgstr "طبّق هذا المرشح على رسائل البريد الإلكتروني الواردة في جميع المجلدات"
 
 #: filter/kmfilterdialog.cpp:239
 #, kde-format
@@ -1239,12 +1268,16 @@ msgid ""
 "IMAP accounts where new emails may have already been moved to different "
 "folders by server-side filters.</p>"
 msgstr ""
+"<p>سيُطبق المرشح على رسائل البريد الإلكتروني الواردة من جميع المجلدات التي "
+"تنتمي إلى لجميع الحسابات المحددة أعلاه. هذا مفيد عند استخدام مرشحات محلية مع "
+"حسابات IMAP المحلية حيث قد تكون رسائل البريد الإلكتروني الجديدة قد نُقلت "
+"بالفعل إلى مجلدات مختلفة بواسطة المرشحات من جانب الخادم.</p>"
 
 #: filter/kmfilterdialog.cpp:245
 #, kde-format
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
-msgstr ""
+msgstr "إذا كان هذا المرشح يت&طابق، أوقف المعالجة هنا"
 
 #: filter/kmfilterdialog.cpp:248
 #, kde-format
@@ -1253,11 +1286,10 @@ msgid "Add this filter to the Apply Filter menu"
 msgstr "أضف هذا المرشّح إلى قائمة «طبّق مرشّح»"
 
 #: filter/kmfilterdialog.cpp:266
-#, fuzzy, kde-format
-#| msgid "Add this filter to the Apply Filter menu"
+#, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
-msgstr "أضف هذا المرشّح إلى قائمة «طبّق مرشّح»"
+msgstr "إضافة إلى ذلك، أضف هذا المرشح إلى شريط الأدوات"
 
 #: filter/kmfilterdialog.cpp:273
 #, kde-format
@@ -1273,7 +1305,7 @@ msgstr "أيقونة هذا المرشّح:"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
-msgstr ""
+msgstr "تشغيل المرشح (المرشحات) المحددة على: "
 
 #: filter/kmfilterdialog.cpp:293
 #, kde-format
@@ -1285,7 +1317,7 @@ msgstr "شغّل الآن"
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
-msgstr ""
+msgstr "غير قادر على تطبيق هذا المرشح نظرًا لعدم وجود مجلدات محددة."
 
 #: filter/kmfilterdialog.cpp:421
 #, kde-format
@@ -1299,41 +1331,40 @@ msgctxt "@info"
 msgid ""
 "Some filters were changed and not saved yet. You must save your filters "
 "before they can be applied."
-msgstr ""
+msgstr "بعض المرشحات تغيرت ولم تُحفظ بعد. يجب عليك حفظ مرشحاتك قبل أن تطبقها."
 
 #: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
-msgstr ""
+msgstr "غُيّر المرشّحات."
 
 #: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
-msgstr ""
+msgstr "غير قادر على تطبيق المرشح نظرًا لعدم وجود مرشحات محددة حاليًا."
 
 #: filter/kmfilterdialog.cpp:438
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
-msgstr "لم تُحدّد مجلّدًا."
+msgstr "لم يُحدد أي مرشحات."
 
 #: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
-msgstr ""
+msgstr "لم يستورد أي مرشح."
 
 #: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
-msgstr ""
+msgstr "المرشحات المستوردة:"
 
 #: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
-msgstr ""
+msgstr "عثر على أي مرشح."
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format
@@ -1342,24 +1373,26 @@ msgid ""
 "Some filters were changed and not saved yet.<br>You must save your filters "
 "before they can be exported."
 msgstr ""
+"تغيّرت بعض المرشحات ولم تُحفظ بعد. <br>يجب عليك حفظ مرشحاتك قبل أن تتمكن من "
+"تصديرها."
 
 #: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
+"لا يمكننا تحويل جميع مرشحات \"بريدك\" إلى نصوص برمجية سيف ولكن يمكننا "
+"المحاولة :)"
 
 #: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Convert to Sieve Script"
+#, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
-msgstr "التّحويل إلى سكربت «سِف»"
+msgstr "حوّل مرشحات \"بريدك\" إلى برامج سيف"
 
 #: filter/kmfilterdialog.cpp:733
 #, kde-format
 msgid "No filters selected."
-msgstr ""
+msgstr "لم يُحدد أي مرشحات."
 
 #: filter/kmfilterlistbox.cpp:41
 #, kde-format
@@ -1368,6 +1401,9 @@ msgid ""
 "</p><p>Click on any filter to edit it using the controls in the right-hand "
 "half of the dialog.</p></qt>"
 msgstr ""
+"<qt><p>هذه قائمة المرشحات المحددة. وهي تُعالج من الأعلى إلى الأسفل.</p> "
+"<p>انقر على أي مرشح لتعديله باستخدام عناصر التحكم الموجودة في النصف الأيمن "
+"من مربع الحوار. من مربع الحوار.</p> </qt>."
 
 #: filter/kmfilterlistbox.cpp:83
 #, kde-format
@@ -1403,6 +1439,11 @@ msgid ""
 "accidentally, you can undo this by clicking on the <em>Down</em> button.</"
 "p></qt>"
 msgstr ""
+"<qt><p>انقر فوق هذا الزر لنقل المرشح المحدد حاليًا <em> لأعلى <em> مرة واحدة "
+"في القائمة أعلاه.</p><p>هذا مفيد لأن ترتيب عوامل التصفية في القائمة يحدد "
+"ترتيب تجربتها على الرسائل: المرشح الأعلى يُجرّب أولاً.</p><p>إذا نقرت على هذا "
+"الزر عن طريق الخطأ، يمكنك التراجع عن ذلك بالنقر على الزر <em>أسفل</em>.</p></"
+"p></qt>"
 
 #: filter/kmfilterlistbox.cpp:96
 #, kde-format
@@ -1414,6 +1455,11 @@ msgid ""
 "accidentally, you can undo this by clicking on the <em>Up</em> button.</p></"
 "qt>"
 msgstr ""
+"<qt><p>انقر فوق هذا الزر لنقل المرشح المحدد حاليًا <em> لأسفل <em> مرة واحدة "
+"في القائمة أعلاه.</p><p>هذا مفيد لأن ترتيب عوامل التصفية في القائمة يحدد "
+"ترتيب تجربتها على الرسائل: المرشح الأعلى يُجرّب أولاً.</p><p>إذا نقرت على هذا "
+"الزر عن طريق الخطأ، يمكنك التراجع عن ذلك بالنقر على الزر <em>أعلى.</p></p></"
+"qt>"
 
 #: filter/kmfilterlistbox.cpp:104
 #, kde-format
@@ -1423,6 +1469,9 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
+"<qt><p>انقر فوق هذا الزر لنقل المرشح المحدد حاليًا إلى أسفل القائمة.</"
+"p><p>هذا الأمر مفيد لأن ترتيب المرشحات في القائمة يحدد ترتيب تجربتها على "
+"الرسائل: يتم تجربة المرشح الأعلى أولاً.</p> </qt>"
 
 #: filter/kmfilterlistbox.cpp:110
 #, kde-format
@@ -1432,6 +1481,9 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
+"<qt><p>انقر فوق هذا الزر لنقل المرشح المحدد حاليًا إلى أعلى القائمة.</"
+"p><p>هذا الأمر مفيد لأن ترتيب المرشحات في القائمة يحدد ترتيب تجربتها على "
+"الرسائل: يتم تجربة المرشح الأعلى أولاً.</p> </qt>"
 
 #: filter/kmfilterlistbox.cpp:140
 #, kde-format
@@ -1465,6 +1517,9 @@ msgid ""
 "that later on.</p><p>If you have clicked this button accidentally, you can "
 "undo this by clicking on the <em>Delete</em> button.</p></qt>"
 msgstr ""
+"<qt><p>انقر على هذا الزر لإنشاء مرشح جديد.</p><p>سيُدرج المرشح قبل المرشح "
+"المحدد حاليًا، ولكن يمكنك دائمًا تغيير ذلك لاحقًا.</p><p>إذا نقرت على هذا الزر "
+"عن طريق الخطأ، يمكنك التراجع عن ذلك بالنقر على زر <em>احذف</em>.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:152
 #, kde-format
@@ -1473,6 +1528,8 @@ msgid ""
 "button accidentally, you can undo this by clicking on the <em>Delete</em> "
 "button.</p></qt>"
 msgstr ""
+"<qt><p>انقر فوق هذا الزر لنسخ مرشح. </p><p> إذا نقرت على هذا الزر عن طريق "
+"الخطأ، يمكنك التراجع عن ذلك بالنقر على زر <em>احذف<em>.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:156
 #, kde-format
@@ -1482,6 +1539,9 @@ msgid ""
 "deleted, but you can always leave the dialog by clicking <em>Cancel</em> to "
 "discard the changes made.</p></qt>"
 msgstr ""
+"<qt><p>انقر فوق هذا الزر <em>لحذف</em> المرشح المحدد حاليًا من القائمة أعلاه."
+"</p><p>لا توجد طريقة لاستعادة المرشح بعد حذفه، ولكن يمكنك دائمًا مغادرة مربع "
+"الحوار بالنقر فوق <em>ألغ</em> لتجاهل التغييرات التي أجريتها.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:163
 #, kde-format
@@ -1492,6 +1552,11 @@ msgid ""
 "back, click this button and select <em>Clear</em> followed by <em>OK</em> in "
 "the appearing dialog.</p></qt>"
 msgstr ""
+"<qt><p> انقر فوق هذا الزر لإعادة تسمية المرشح المحدد حاليًا. </p><p> ستسمى "
+"المرشحات تلقائيًا، طالما أنها تبدأ بـ \"&lt;\". </p><p> إذا أعدت تسمية أحد "
+"المرشحات عن طريق الخطأ وتريد إرجاع التسمية التلقائية، فانقر فوق هذا الزر "
+"وحدد <em>امسح</em> متبوعًا بـ <em>موافق</em> في مربع الحوار الذي يظهر. </p></"
+"qt>"
 
 #: filter/kmfilterlistbox.cpp:290
 #, kde-format
@@ -1547,12 +1612,12 @@ msgstr "حدث خطأ حرج. توقّفت المعالجة هنا."
 #: filter/mailfilter.cpp:147
 #, kde-format
 msgid "A problem was found while applying this action."
-msgstr ""
+msgstr "حدثت مشكلة أثناء تطبيق هذا الإجراء."
 
 #: filter/mailfilter.cpp:427
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
-msgstr ""
+msgstr "<qt>عدد كبير جدًا من إجراءات التصفية في قاعدة المرشح <b>%1</b>.</qt>"
 
 #: filter/mailfilter.cpp:461
 #, kde-format
@@ -1560,11 +1625,13 @@ msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
 ">Ignoring it.</qt>"
 msgstr ""
+"<qt>إجراء تصفية غير معروف <b>%1</b><br />في قاعدة المرشح <b>%2</b>.<br /"
+">تجاهله.</qt>"
 
 #: filter/mailfilter.cpp:569
 #, kde-format
 msgid "Any action defined."
-msgstr ""
+msgstr "أي إجراء معرف."
 
 #: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
 #, kde-format
@@ -1767,24 +1834,24 @@ msgstr "افرز العناصر"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
-msgstr ""
+msgstr "آليًا، بالعمود الحالي"
 
 #: folder/foldertreeview.cpp:184
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
-msgstr ""
+msgstr "يدويًا، بالسحب والإفلات"
 
 #: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
-msgstr ""
+msgstr "<qt>انتقل إلى الرسالة غير المقروءة التالية في المجلد <b>%1</b>؟</qt>"
 
 #: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, kde-format
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
-msgstr ""
+msgstr "انتقل للرسالة غير المقروءة التالية"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
@@ -1796,18 +1863,18 @@ msgstr "انتقل إلى"
 #, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
-msgstr ""
+msgstr "لا تذهب إلى"
 
 #: folder/foldertreewidget.cpp:78
 #, kde-format
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
-msgstr ""
+msgstr "يمكنك البدء في الكتابة لترشيح قائمة المجلدات."
 
 #: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
-msgstr ""
+msgstr "يمكنك البدء في الكتابة لترشيح قائمة المجلدات."
 
 #: folder/foldertreewidget.cpp:312
 #, kde-format
@@ -1822,7 +1889,7 @@ msgstr "‏%1 (غير متّصل)"
 #: folder/foldertreewidgetproxymodel.cpp:246
 #, kde-format
 msgid "%1 (Reached %2% quota)"
-msgstr ""
+msgstr "%1 (وصلت إلى حصة %2٪)"
 
 #: job/backupjob.cpp:94
 #, kde-format
@@ -1866,17 +1933,17 @@ msgstr "اكتملت أرشفة المجلّد ’%1‘ بنجاح. كُتب ا�
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
+msgstr[0] "لم تؤرشف أي رسالة بحجم %2."
+msgstr[1] "أُرشِفَت رسالة واحدة بحجم %2."
+msgstr[2] "أُرشِفَت رسالتان بحجم %2."
+msgstr[3] "أُرشِفَت %1 رسائل بحجم %2."
+msgstr[4] "أُرشِفَت %1 رسالة بحجم %2."
+msgstr[5] "أُرشِفَت %1 رسالة بحجم %2."
 
 #: job/backupjob.cpp:191
 #, kde-format
 msgid "The archive file has a size of %1."
-msgstr ""
+msgstr "حجم ملف الأرشيف هو %1."
 
 #: job/backupjob.cpp:193
 #, kde-format
@@ -1887,32 +1954,32 @@ msgstr "انتهت الأرشفة"
 #: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
-msgstr ""
+msgstr "فشلت كتابة رسالة في مجلد الأرشيف '%1'."
 
 #: job/backupjob.cpp:267
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
-msgstr ""
+msgstr "فشل تنزيل رسالة في المجلد '%1'."
 
 #: job/backupjob.cpp:333
 #, kde-format
 msgid "Archiving folder %1"
-msgstr ""
+msgstr "مجلد الأرشفة %1"
 
 #: job/backupjob.cpp:358
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
-msgstr ""
+msgstr "غير قادر على إنشاء بنية المجلد للمجلد '%1' داخل ملف الأرشيف."
 
 #: job/backupjob.cpp:370
 #, kde-format
 msgid "Unable to get message list for folder %1."
-msgstr ""
+msgstr "غير قادر على الحصول على قائمة الرسائل للمجلد %1."
 
 #: job/backupjob.cpp:408
 #, kde-format
 msgid "Unable to open archive for writing."
-msgstr ""
+msgstr "غير قادر على فتح الأرشيف للكتابة."
 
 #: job/backupjob.cpp:412
 #, kde-format
@@ -1923,80 +1990,81 @@ msgstr "يؤرشف"
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
+msgstr[0] "لم تحذف أي رسالة من المجلد %2."
+msgstr[1] "أزلت رسالة قديمة واحدة من المجلد %2."
+msgstr[2] "أزلت رسالتين قديمتين من المجلد %2."
+msgstr[3] "أزلت %1 رسائل قديمة من المجلد %2."
+msgstr[4] "أزلت %1 رسالة قديمة من المجلد %2."
+msgstr[5] "أزلت %1 رسالة قديمة من المجلد %2."
 
 #: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
-msgstr ""
+msgstr "ألغيت إزالة الرسائل القديمة من المجلد %1."
 
 #: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
-msgstr ""
+msgstr "فشلت عملية إزالة الرسائل القديمة من المجلد %1."
 
 #: job/expirejob.cpp:157
 #, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
+msgstr[0] "يزيل رسالة قديمة واحدة من المجلد %2..."
+msgstr[1] "يزيل رسالة قديمة واحدة من المجلد %2..."
+msgstr[2] "يزيل رسالتان قديمتان من المجلد %2..."
+msgstr[3] "يزيل %1 رسائل قديمة من المجلد %2..."
+msgstr[4] "يزيل %1 رسالة قديمة من المجلد %2..."
+msgstr[5] "يزيل %1 رسالة قديمة من المجلد %2..."
 
 #: job/expirejob.cpp:164
 #, kde-format
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr ""
+"لا يمكن انتهاء صلاحية الرسائل من المجلد %1: لم يعثر على المجلد المقصد %2"
 
 #: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
+msgstr[0] "ينقل رسالة قديمة واحدة من المجلد %2 إلى المجلد %3..."
+msgstr[1] "ينقل رسالة قديمة واحدة من المجلد %2 إلى المجلد %3..."
+msgstr[2] "ينقل رسالتان قديمتان من المجلد %2 إلى المجلد %3..."
+msgstr[3] "ينقل %1 رسائل قديمة من المجلد %2 إلى المجلد %3..."
+msgstr[4] "ينقل %1 رسالة قديمة من المجلد %2 إلى المجلد %3..."
+msgstr[5] "ينقل %1 رسالة قديمة من المجلد %2 إلى المجلد %3..."
 
 #: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
+msgstr[0] "نُقلت رسالة قديمة واحدة من المجلد %2 إلى المجلد %3..."
+msgstr[1] "نُقلت رسالة قديمة من المجلد %2 إلى المجلد %3."
+msgstr[2] "نُقلت رسالتان قديمتان من المجلد %2 إلى المجلد %3."
+msgstr[3] "نُقلت %1 رسائل قديمة من المجلد %2 إلى المجلد %3..."
+msgstr[4] "نُقلت %1 رسالة قديمة من المجلد %2 إلى المجلد %3..."
+msgstr[5] "نُقلت %1 رسالة قديمة من المجلد %2 إلى المجلد %3..."
 
 #: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
-msgstr ""
+msgstr "ألغي نقل الرسائل القديمة من المجلد %1 إلى المجلد %2."
 
 #: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
-msgstr ""
+msgstr "فشل نقل الرسائل القديمة من المجلد %1 إلى المجلد %2."
 
 #: kernel/mailkernel.cpp:179 kernel/mailkernel.cpp:201
 #, kde-format
 msgid "You do not have read/write permission to your inbox folder."
-msgstr ""
+msgstr "ليس لديك إذن القراءة/الكتابة إلى مجلد البريد الوارد الخاص بك."
 
 #: kernel/mailkernel.cpp:230
 #, kde-format
 msgid "The Email program encountered a fatal error and will terminate now"
-msgstr ""
+msgstr "واجه برنامج البريد الإلكتروني خطأً فادحًا وسينتهي الآن"
 
 #: kernel/mailkernel.cpp:233
 #, kde-format
@@ -2005,6 +2073,9 @@ msgid ""
 "The error was:\n"
 "%1"
 msgstr ""
+"واجه برنامج البريد الإلكتروني خطأً فادحًا وسيتم إنهاؤه الآن.\n"
+"الخطأ هو:\n"
+"%1"
 
 #: search/searchpattern.cpp:235
 #, kde-format
@@ -2305,7 +2376,7 @@ msgstr "النص فارغ."
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 msgid "has"
-msgstr ""
+msgstr "فيها"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 msgid "has not"
@@ -2408,21 +2479,21 @@ msgstr "ينتهي بـ"
 #: search/widgethandler/headersrulerwidgethandler.cpp:32
 #: search/widgethandler/textrulerwidgethandler.cpp:31
 msgid "does not end with"
-msgstr ""
+msgstr "لا ينتهي بـ"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:34
 #: search/widgethandler/messagerulewidgethandler.cpp:26
 #: search/widgethandler/tagrulewidgethandler.cpp:97
 #: search/widgethandler/textrulerwidgethandler.cpp:33
 msgid "matches regular expr."
-msgstr ""
+msgstr "يطابق تعبير نمطي."
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:35
 #: search/widgethandler/messagerulewidgethandler.cpp:27
 #: search/widgethandler/tagrulewidgethandler.cpp:98
 #: search/widgethandler/textrulerwidgethandler.cpp:34
 msgid "does not match reg. expr."
-msgstr ""
+msgstr "لا يطابق تعبير نمطي."
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:36
 #: search/widgethandler/headersrulerwidgethandler.cpp:151
@@ -2554,7 +2625,7 @@ msgstr "فيها مرفقات"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
-msgstr ""
+msgstr "اضغط على الزر لاختيار الملف المرفق"
 
 #: snippets/snippetattachmentwidget.cpp:32
 #, kde-format
@@ -2565,7 +2636,7 @@ msgstr "حدد المرفقات"
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2703,7 +2774,7 @@ msgstr "أدرج القصاصة"
 #: snippets/snippetsmodel.cpp:524 snippets/snippetsmodel.cpp:553
 #, kde-format
 msgid "Do you want to update snippet?"
-msgstr ""
+msgstr "هل تريد تحديث المقتطف؟"
 
 #: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:554
 #, kde-format
@@ -2726,19 +2797,19 @@ msgstr "مقتطفات نصية"
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
-msgstr ""
+msgstr "أدخل قيم المتغيرات"
 
 #: snippets/snippetvariabledialog.cpp:40
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
-msgstr ""
+msgstr "أدخل قيم الاستبدال لـ '%1':"
 
 #: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
-msgstr ""
+msgstr "جعل القيمة &مبدئية"
 
 #: snippets/snippetvariabledialog.cpp:48
 #, kde-format
@@ -2746,7 +2817,7 @@ msgctxt "@info:tooltip"
 msgid ""
 "Enable this to save the value entered to the right as the default value for "
 "this variable"
-msgstr ""
+msgstr "مكّن هذا لحفظ القيمة المدخلة إلى اليمين كقيمة مبدئية لهذا المتغير"
 
 #: snippets/snippetvariabledialog.cpp:51
 #, kde-format
@@ -2756,6 +2827,9 @@ msgid ""
 "you use the same variable later, even in another snippet, the value entered "
 "to the right will be the default value for that variable."
 msgstr ""
+"إذا فعّلت هذا الخيار، فستُحفظ القيمة المدخلة إلى اليمين. إذا استخدمت المتغيّر "
+"نفسه لاحقًا، حتى في مقتطف آخر، فإن القيمة المدخلة إلى اليمين ستكون القيمة "
+"الابتدائية لذلك المتغير."
 
 #: snippets/snippetwidget.cpp:56
 #, kde-format
@@ -2765,6 +2839,10 @@ msgid ""
 "then type \\greeting in your email and then press the tab key, and it will "
 "be replaced with the contents of this snippet."
 msgstr ""
+"أدخل كلمة أساسية هنا لتمكين الإدراج السريع لهذا المقتطف أثناء كتابة بريد "
+"إلكتروني. على سبيل المثال إذا اخترت ”تحية“ ككلمة رئيسية، يمكنك بعد ذلك كتابة "
+"\\تحية في بريدك الإلكتروني ثم الضغط على مفتاح Tab، وسوف يستبدل بها محتويات "
+"هذا المقتطف."
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
 #: snippets/ui/snippetwidget.ui:32
@@ -2842,7 +2920,7 @@ msgstr "أضف وسمًا"
 #: tag/addtagdialog.cpp:76
 #, kde-format
 msgid "Tag %1 already exists"
-msgstr ""
+msgstr "الوسم %1 موجود بالفعل"
 
 #: tag/tagwidget.cpp:63
 #, kde-format
@@ -2860,7 +2938,7 @@ msgstr "غيّر لون ال&خط:"
 #, kde-format
 msgctxt "@option:check"
 msgid "Change &background color:"
-msgstr ""
+msgstr "غيّر لون ال&خلفية:"
 
 #: tag/tagwidget.cpp:94
 #, kde-format
@@ -2896,7 +2974,7 @@ msgstr "الا&ختصار:"
 #, kde-format
 msgctxt "@option:check"
 msgid "Enable &toolbar button"
-msgstr ""
+msgstr "مكّن زر &شريط الأدوات"
 
 #: widgets/favoritecollectionwidget.cpp:90
 #, kde-format
@@ -2923,22 +3001,22 @@ msgstr "وضع الأيقونات"
 #: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
 msgid "Drop your favorite folders here…"
-msgstr ""
+msgstr "ضع مجلداتك المفضلة هنا..."
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format
 msgid "Resend-To:"
-msgstr ""
+msgstr "إعادة-إلى:"
 
 #: widgets/redirectdialog.cpp:70
 #, kde-format
 msgid "Resend-Cc:"
-msgstr ""
+msgstr "إعادة-ن‌ك:"
 
 #: widgets/redirectdialog.cpp:73
 #, kde-format
 msgid "Resend-Bcc:"
-msgstr ""
+msgstr "إعادة-ن‌ك‌ع:"
 
 #: widgets/redirectdialog.cpp:102
 #, kde-format
@@ -2950,7 +3028,7 @@ msgstr "أعد تحويل الرّسالة"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
-msgstr ""
+msgstr "حدد عناوين المستلمين لإعادة التوجيه إليهم:"
 
 #: widgets/redirectdialog.cpp:152
 #, kde-format
@@ -2977,13 +3055,13 @@ msgstr "أرسل لا&حقًا"
 #: widgets/redirectdialog.cpp:207
 #, kde-format
 msgid "You cannot redirect the message without an address."
-msgstr ""
+msgstr "لا يمكنك إعادة توجيه الرسالة بدون عنوان."
 
 #: widgets/redirectdialog.cpp:207
 #, kde-format
 msgctxt "@title:window"
 msgid "Empty Redirection Address"
-msgstr ""
+msgstr "عنوان إعادة التوجيه الفارغ"
 
 #: widgets/redirectwidget.cpp:39
 #, kde-format
@@ -2997,6 +3075,8 @@ msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr ""
+"يفتح هذا الزر مربع حوار منفصل حيث يمكنك تحديد المستلمين من بين جميع العناوين "
+"المتاحة."
 
 #~ msgid "Select Attachments"
 #~ msgstr "حدد المرفقات"
