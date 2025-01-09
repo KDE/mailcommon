@@ -21,9 +21,6 @@ namespace PimCommon
 class IncidencesForWidget;
 class ContentTypeWidget;
 }
-namespace KIdentityManagementCore
-{
-}
 namespace MailCommon
 {
 class FolderSettings;
