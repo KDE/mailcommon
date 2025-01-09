@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-05 00:42+0000\n"
+"POT-Creation-Date: 2025-01-09 00:41+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -753,7 +753,7 @@ msgstr "Радња није дефинисана."
 msgid "Play Sound"
 msgstr "Пусти звук"
 
-#: filter/filteractions/filteractionplaysound.cpp:77
+#: filter/filteractions/filteractionplaysound.cpp:78
 #, kde-format
 msgid "Sound file was not defined."
 msgstr "Није дефинисан фајл звука."
@@ -1778,7 +1778,7 @@ msgstr ""
 msgid "Any action defined."
 msgstr "Није дефинисана ниједна радња."
 
-#: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
+#: filter/soundtestwidget.cpp:35 filter/soundtestwidget.cpp:117
 #, fuzzy, kde-format
 #| msgid "Play"
 msgctxt "@info:tooltip"
@@ -1786,14 +1786,14 @@ msgid "Play"
 msgstr "Пусти"
 
 # >> @title:window
-#: filter/soundtestwidget.cpp:62
+#: filter/soundtestwidget.cpp:64
 #, fuzzy, kde-format
 #| msgid "Select Sound File"
 msgctxt "@title:window"
 msgid "Select Sound File"
 msgstr "Избор звучног фајла"
 
-#: filter/soundtestwidget.cpp:107
+#: filter/soundtestwidget.cpp:114
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"

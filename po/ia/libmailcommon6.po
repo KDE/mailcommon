@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# SPDX-FileCopyrightText: 2011, 2012, 2013, 2020, 2021, 2022, 2023, 2024 g.sora <g.sora@tiscali.it>
+# SPDX-FileCopyrightText: 2011, 2012, 2013, 2020, 2021, 2022, 2023, 2024, 2025 g.sora <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-05 00:42+0000\n"
-"PO-Revision-Date: 2024-12-18 17:58+0100\n"
+"POT-Creation-Date: 2025-01-09 00:41+0000\n"
+"PO-Revision-Date: 2025-01-08 15:29+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -713,7 +713,7 @@ msgstr "Nulle action definite."
 msgid "Play Sound"
 msgstr "Reproduce sono"
 
-#: filter/filteractions/filteractionplaysound.cpp:77
+#: filter/filteractions/filteractionplaysound.cpp:78
 #, kde-format
 msgid "Sound file was not defined."
 msgstr "File de sono non esseva  definite."
@@ -1669,19 +1669,19 @@ msgstr ""
 msgid "Any action defined."
 msgstr "Ulle action definite."
 
-#: filter/soundtestwidget.cpp:33 filter/soundtestwidget.cpp:110
+#: filter/soundtestwidget.cpp:35 filter/soundtestwidget.cpp:117
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Reproduce"
 
-#: filter/soundtestwidget.cpp:62
+#: filter/soundtestwidget.cpp:64
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Sound File"
 msgstr "Selige File de Sono"
 
-#: filter/soundtestwidget.cpp:107
+#: filter/soundtestwidget.cpp:114
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
@@ -2281,16 +2281,14 @@ msgid "has not an attachment"
 msgstr "non ha un attachamento"
 
 #: search/searchrule/searchrule.cpp:221
-#, fuzzy, kde-format
-#| msgid "has invitation"
+#, kde-format
 msgid "has an invitation"
-msgstr "ha invitation"
+msgstr "ha un invitation"
 
 #: search/searchrule/searchrule.cpp:224
-#, fuzzy, kde-format
-#| msgid "has invitation"
+#, kde-format
 msgid "has not an invitation"
-msgstr "ha invitation"
+msgstr "non ha un invitation"
 
 #: search/searchrule/searchrule.cpp:227
 #, kde-format
