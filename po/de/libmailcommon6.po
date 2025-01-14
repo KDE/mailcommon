@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023, 2024 Johannes Obermayr <johannesobermayr@gmx.de>
+# SPDX-FileCopyrightText: 2023, 2024, 2025 Johannes Obermayr <johannesobermayr@gmx.de>
 # Frank Schütte <F.Schuette@t-online.de>, 2002, 2003, 2004, 2005.
 # Thomas Diehl <thd@kde.org>, 2002, 2003, 2004, 2005.
 # Stephan Johach <hunsum@gmx.de>, 2003, 2004, 2005, 2006, 2007.
@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: libmailcommon6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-10-27 00:41+0000\n"
-"PO-Revision-Date: 2024-08-28 21:49+0200\n"
+"PO-Revision-Date: 2025-01-08 15:41+0100\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.11.70\n"
+"X-Generator: Lokalize 25.03.70\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -2210,11 +2210,8 @@ msgid "Encryption"
 msgstr "Verschlüsselung"
 
 #: search/searchpatternedit.cpp:57
-#, fuzzy
-#| msgctxt "Attachement indication"
-#| msgid "Attachment"
 msgid "Attachment"
-msgstr "Anhang"
+msgstr "Anhänge"
 
 #: search/searchpatternedit.cpp:145
 #, kde-format
@@ -2429,28 +2426,21 @@ msgid "String is empty."
 msgstr "Die Zeichenfolge ist leer."
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
-#, fuzzy
-#| msgid "Charset"
 msgid "has"
-msgstr "Zeichensatz"
+msgstr "hat"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
-#, fuzzy
-#| msgid "is not"
 msgid "has not"
-msgstr "ist nicht"
+msgstr "hat nicht"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgctxt "Config->Composer->Attachments"
-#| msgid "Attachments"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
 msgstr "Anhänge"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "has an attachment"
+#, kde-format
 msgid "has attachment"
 msgstr "hat einen Anhang"
 
