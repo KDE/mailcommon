@@ -13,7 +13,6 @@
 class QAbstractItemModel;
 class QModelIndex;
 class QRegularExpression;
-class QString;
 
 namespace MailCommon
 {
