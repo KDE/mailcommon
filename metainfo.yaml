@@ -1,5 +1,5 @@
 maintainer: mlaurent
-description: MailCommon Library 
+description: MailCommon Library
 tier: 3
 type: functional
 platforms:
@@ -11,7 +11,7 @@ portingAid: false
 deprecated: false
 release: false
 libraries:
- - cmake: "KPim6::MailCommon"
+    - cmake: "KPim6::MailCommon"
 cmakename: KPim6MailCommon
 group: kdepim
 public_lib: true
