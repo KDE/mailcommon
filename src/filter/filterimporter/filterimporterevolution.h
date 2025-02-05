@@ -24,7 +24,7 @@ public:
     [[nodiscard]] static QString defaultFiltersSettingsPath();
 
 private:
-    enum parseType {
+    enum class parseType : uint8_t {
         PartType = 0,
         ActionType = 1,
     };

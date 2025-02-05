@@ -76,7 +76,7 @@ public:
     [[nodiscard]] bool deleteItem() const;
 
 private:
-    enum ItemContextAction {
+    enum class ItemContextAction : uint8_t {
         None = 0,
         PlayloadStore = 1,
         FlagStore = 2,

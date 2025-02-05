@@ -11,7 +11,7 @@ using namespace MailCommon;
 
 ItemContext::ItemContext(const Akonadi::Item &item, bool needsFullPayload)
     : mItem(item)
-    , mItemContextAction(needsFullPayload ? FullPayload : None)
+    , mItemContextAction(needsFullPayload ? ItemContextAction::FullPayload : ItemContextAction::None)
 {
 }
 
@@ -32,35 +32,35 @@ Akonadi::Collection ItemContext::moveTargetCollection() const
 
 void ItemContext::setNeedsPayloadStore()
 {
-    mItemContextAction |= PlayloadStore;
+    mItemContextAction |= ItemContextAction::PlayloadStore;
 }
 
 bool ItemContext::needsPayloadStore() const
 {
-    return mItemContextAction & PlayloadStore;
+    return mItemContextAction & ItemContextAction::PlayloadStore;
 }
 
 void ItemContext::setNeedsFlagStore()
 {
-    mItemContextAction |= FlagStore;
+    mItemContextAction |= ItemContextAction::FlagStore;
 }
 
 bool ItemContext::needsFlagStore() const
 {
-    return mItemContextAction & FlagStore;
+    return mItemContextAction & ItemContextAction::FlagStore;
 }
 
 void ItemContext::setDeleteItem()
 {
-    mItemContextAction |= DeleteItem;
+    mItemContextAction |= ItemContextAction::DeleteItem;
 }
 
 bool ItemContext::deleteItem() const
 {
-    return mItemContextAction & DeleteItem;
+    return mItemContextAction & ItemContextAction::DeleteItem;
 }
 
 bool ItemContext::needsFullPayload() const
 {
-    return mItemContextAction & FullPayload;
+    return mItemContextAction & ItemContextAction::FullPayload;
 }

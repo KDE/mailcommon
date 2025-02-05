@@ -52,7 +52,7 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter, Mai
             if (partFilter.hasAttribute(QStringLiteral("name"))) {
                 const QString name = partFilter.attribute(QStringLiteral("name"));
                 qCDebug(MAILCOMMON_LOG) << " parsePartAction name attribute :" << name;
-                if (type == FilterImporterEvolution::PartType) {
+                if (type == FilterImporterEvolution::FilterImporterEvolution::parseType::PartType) {
                     QByteArray fieldName;
 
                     if (name == QLatin1StringView("to")) {
@@ -210,7 +210,7 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter, Mai
                     }
                     SearchRule::Ptr rule = SearchRule::createInstance(fieldName, functionName, contents);
                     filter->pattern()->append(rule);
-                } else if (type == FilterImporterEvolution::ActionType) {
+                } else if (type == FilterImporterEvolution::FilterImporterEvolution::parseType::ActionType) {
                     QString actionName;
                     if (name == QLatin1StringView("stop")) {
                         filter->setStopProcessingHere(true);
@@ -328,9 +328,9 @@ void FilterImporterEvolution::parseFilters(const QDomElement &e)
             filter->pattern()->setName(ruleFilter.text());
             filter->setToolbarName(ruleFilter.text());
         } else if (nexttag == QLatin1StringView("partset")) {
-            parsePartAction(ruleFilter, filter, PartType);
+            parsePartAction(ruleFilter, filter, FilterImporterEvolution::parseType::PartType);
         } else if (nexttag == QLatin1StringView("actionset")) {
-            parsePartAction(ruleFilter, filter, ActionType);
+            parsePartAction(ruleFilter, filter, FilterImporterEvolution::parseType::ActionType);
         } else {
             qCDebug(MAILCOMMON_LOG) << " tag not implemented : " << nexttag;
         }
