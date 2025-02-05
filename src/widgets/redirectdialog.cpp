@@ -37,7 +37,7 @@ public:
     {
     }
 
-    enum TypeAddress {
+    enum class TypeAddress : uint8_t {
         ResendTo,
         ResendCc,
         ResendBcc,
@@ -63,13 +63,13 @@ QString RedirectDialog::RedirectDialogPrivate::redirectLabelType(TypeAddress typ
 {
     QString label;
     switch (type) {
-    case ResendTo:
+    case TypeAddress::ResendTo:
         label = i18n("Resend-To:");
         break;
-    case ResendCc:
+    case TypeAddress::ResendCc:
         label = i18n("Resend-Cc:");
         break;
-    case ResendBcc:
+    case TypeAddress::ResendBcc:
         label = i18n("Resend-Bcc:");
         break;
     }
@@ -132,16 +132,16 @@ RedirectDialog::RedirectDialog(SendMode mode, QWidget *parent)
     mainLayout->addLayout(formLayout);
 
     d->mEditTo = new RedirectWidget(this);
-    formLayout->addRow(d->redirectLabelType(RedirectDialog::RedirectDialogPrivate::ResendTo), d->mEditTo);
+    formLayout->addRow(d->redirectLabelType(RedirectDialog::RedirectDialogPrivate::TypeAddress::ResendTo), d->mEditTo);
 
     connect(d->mEditTo, &RedirectWidget::addressChanged, this, [this](const QString &str) {
         d->slotAddressChanged(str);
     });
 
     d->mEditCc = new RedirectWidget(this);
-    formLayout->addRow(d->redirectLabelType(RedirectDialog::RedirectDialogPrivate::ResendCc), d->mEditCc);
+    formLayout->addRow(d->redirectLabelType(RedirectDialog::RedirectDialogPrivate::TypeAddress::ResendCc), d->mEditCc);
     d->mEditBcc = new RedirectWidget(this);
-    formLayout->addRow(d->redirectLabelType(RedirectDialog::RedirectDialogPrivate::ResendBcc), d->mEditBcc);
+    formLayout->addRow(d->redirectLabelType(RedirectDialog::RedirectDialogPrivate::TypeAddress::ResendBcc), d->mEditBcc);
     d->mEditTo->forceFocus();
 
     // Because the form layout vertical spacing was set to zero above,
