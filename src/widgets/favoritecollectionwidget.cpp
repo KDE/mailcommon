@@ -55,6 +55,7 @@ FavoriteCollectionWidget::FavoriteCollectionWidget(MailCommon::MailCommonSetting
     readConfig();
 
     createMenu(xmlGuiClient->actionCollection());
+    setResizeMode(QListView::Adjust);
 }
 
 FavoriteCollectionWidget::~FavoriteCollectionWidget() = default;
