@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-09 00:41+0000\n"
+"POT-Creation-Date: 2025-03-07 00:43+0000\n"
 "PO-Revision-Date: 2025-01-11 12:22+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -1292,41 +1292,41 @@ msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Lägg dessutom till filtret på verktygsraden"
 
-#: filter/kmfilterdialog.cpp:273
+#: filter/kmfilterdialog.cpp:277
 #, kde-format
 msgid "Shortcut:"
 msgstr "Genväg:"
 
-#: filter/kmfilterdialog.cpp:279
+#: filter/kmfilterdialog.cpp:283
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Ikon för detta filter:"
 
-#: filter/kmfilterdialog.cpp:287
+#: filter/kmfilterdialog.cpp:291
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Filtrera med valda filter för: "
 
-#: filter/kmfilterdialog.cpp:293
+#: filter/kmfilterdialog.cpp:297
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Filtrera nu"
 
-#: filter/kmfilterdialog.cpp:420
+#: filter/kmfilterdialog.cpp:424
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Kan inte filtrera, eftersom inga korgar är markerade."
 
-#: filter/kmfilterdialog.cpp:421
+#: filter/kmfilterdialog.cpp:425
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Ingen korg markerad."
 
-#: filter/kmfilterdialog.cpp:428
+#: filter/kmfilterdialog.cpp:432
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1336,40 +1336,40 @@ msgstr ""
 "Vissa filter har ändrats och inte sparats ännu. Filter måste sparas innan "
 "filtrering kan utföras."
 
-#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:716
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filter har ändrats."
 
-#: filter/kmfilterdialog.cpp:437
+#: filter/kmfilterdialog.cpp:441
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Kan inte filtrera, eftersom inga filter för närvarande är markerade."
 
-#: filter/kmfilterdialog.cpp:438
+#: filter/kmfilterdialog.cpp:442
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Inga filter markerade."
 
-#: filter/kmfilterdialog.cpp:662
+#: filter/kmfilterdialog.cpp:666
 #, kde-format
 msgid "No filter was imported."
 msgstr "Inget filter importerades."
 
-#: filter/kmfilterdialog.cpp:673
+#: filter/kmfilterdialog.cpp:677
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Filter som importerades:"
 
-#: filter/kmfilterdialog.cpp:681
+#: filter/kmfilterdialog.cpp:685
 #, kde-format
 msgid "Any filter found."
 msgstr "Alla filter som hittas."
 
-#: filter/kmfilterdialog.cpp:710
+#: filter/kmfilterdialog.cpp:714
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1379,20 +1379,20 @@ msgstr ""
 "Vissa filter har ändrats och inte sparats ännu.<br>Filter måste sparas innan "
 "de kan exporteras."
 
-#: filter/kmfilterdialog.cpp:716
+#: filter/kmfilterdialog.cpp:720
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Det går inte att konvertera alla Kmail-filter till Sieve-skript, men ett "
 "försök kommer att göras."
 
-#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:721 filter/kmfilterdialog.cpp:737
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Konvertera Kmail-filter till Sieve-skript"
 
-#: filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:737
 #, kde-format
 msgid "No filters selected."
 msgstr "Inga filter markerade."
@@ -2992,29 +2992,29 @@ msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Ak&tivera verktygsradsknapp"
 
-#: widgets/favoritecollectionwidget.cpp:90
+#: widgets/favoritecollectionwidget.cpp:91
 #, kde-format
 msgid "Icon size"
 msgstr "Ikonstorlek"
 
-#: widgets/favoritecollectionwidget.cpp:109
+#: widgets/favoritecollectionwidget.cpp:110
 #, kde-format
 msgid "Mode"
 msgstr "Läge"
 
-#: widgets/favoritecollectionwidget.cpp:113
+#: widgets/favoritecollectionwidget.cpp:114
 #, kde-format
 msgctxt "@action"
 msgid "List Mode"
 msgstr "Listläge"
 
-#: widgets/favoritecollectionwidget.cpp:123
+#: widgets/favoritecollectionwidget.cpp:124
 #, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Ikonläge"
 
-#: widgets/favoritecollectionwidget.cpp:234
+#: widgets/favoritecollectionwidget.cpp:235
 #, kde-format
 msgid "Drop your favorite folders here…"
 msgstr "Släpp favoritkorgar här…"

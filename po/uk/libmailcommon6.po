@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-09 00:41+0000\n"
+"POT-Creation-Date: 2025-03-07 00:43+0000\n"
 "PO-Revision-Date: 2025-01-05 11:56+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -1320,41 +1320,41 @@ msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Додатково додати цей фільтр у пенал"
 
-#: filter/kmfilterdialog.cpp:273
+#: filter/kmfilterdialog.cpp:277
 #, kde-format
 msgid "Shortcut:"
 msgstr "Скорочення:"
 
-#: filter/kmfilterdialog.cpp:279
+#: filter/kmfilterdialog.cpp:283
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Піктограма для цього фільтра:"
 
-#: filter/kmfilterdialog.cpp:287
+#: filter/kmfilterdialog.cpp:291
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Використати позначені фільтри для: "
 
-#: filter/kmfilterdialog.cpp:293
+#: filter/kmfilterdialog.cpp:297
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Запустити зараз"
 
-#: filter/kmfilterdialog.cpp:420
+#: filter/kmfilterdialog.cpp:424
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Не вдалося застосувати цей фільтр, оскільки не позначено жодної теки."
 
-#: filter/kmfilterdialog.cpp:421
+#: filter/kmfilterdialog.cpp:425
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Не позначено теки."
 
-#: filter/kmfilterdialog.cpp:428
+#: filter/kmfilterdialog.cpp:432
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1364,40 +1364,40 @@ msgstr ""
 "Деякі з фільтрів було змінено і не збережено. Вам слід зберегти внесені "
 "зміни перед застосуванням фільтрів."
 
-#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:716
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Фільтри змінено."
 
-#: filter/kmfilterdialog.cpp:437
+#: filter/kmfilterdialog.cpp:441
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Не вдалося застосувати фільтр, оскільки не позначено жодного фільтра."
 
-#: filter/kmfilterdialog.cpp:438
+#: filter/kmfilterdialog.cpp:442
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Не позначено фільтра."
 
-#: filter/kmfilterdialog.cpp:662
+#: filter/kmfilterdialog.cpp:666
 #, kde-format
 msgid "No filter was imported."
 msgstr "Не імпортовано жодного фільтра."
 
-#: filter/kmfilterdialog.cpp:673
+#: filter/kmfilterdialog.cpp:677
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Фільтри, які було імпортовано:"
 
-#: filter/kmfilterdialog.cpp:681
+#: filter/kmfilterdialog.cpp:685
 #, kde-format
 msgid "Any filter found."
 msgstr "Не знайдено жодного фільтра."
 
-#: filter/kmfilterdialog.cpp:710
+#: filter/kmfilterdialog.cpp:714
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1407,20 +1407,20 @@ msgstr ""
 "Деякі з фільтрів було змінено і не збережено.<br>Вам слід зберегти внесені "
 "зміни до експортування фільтрів."
 
-#: filter/kmfilterdialog.cpp:716
+#: filter/kmfilterdialog.cpp:720
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Ми не можемо перетворити усі фільтри KMail на скрипти фільтрування, але ми "
 "можемо спробувати. :)"
 
-#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:721 filter/kmfilterdialog.cpp:737
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Перетворення фільтрів KMail на скрипти фільтрування"
 
-#: filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:737
 #, kde-format
 msgid "No filters selected."
 msgstr "Не позначено фільтра."
@@ -3034,29 +3034,29 @@ msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Увімкнути кнопку на &панелі"
 
-#: widgets/favoritecollectionwidget.cpp:90
+#: widgets/favoritecollectionwidget.cpp:91
 #, kde-format
 msgid "Icon size"
 msgstr "Розмір піктограм"
 
-#: widgets/favoritecollectionwidget.cpp:109
+#: widgets/favoritecollectionwidget.cpp:110
 #, kde-format
 msgid "Mode"
 msgstr "Режим"
 
-#: widgets/favoritecollectionwidget.cpp:113
+#: widgets/favoritecollectionwidget.cpp:114
 #, kde-format
 msgctxt "@action"
 msgid "List Mode"
 msgstr "Режим списку"
 
-#: widgets/favoritecollectionwidget.cpp:123
+#: widgets/favoritecollectionwidget.cpp:124
 #, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Режим піктограм"
 
-#: widgets/favoritecollectionwidget.cpp:234
+#: widgets/favoritecollectionwidget.cpp:235
 #, kde-format
 msgid "Drop your favorite folders here…"
 msgstr "Скиньте сюди ваші улюблені теки…"

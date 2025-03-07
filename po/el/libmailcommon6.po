@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-09 00:41+0000\n"
+"POT-Creation-Date: 2025-03-07 00:43+0000\n"
 "PO-Revision-Date: 2014-04-11 22:49+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -1341,42 +1341,42 @@ msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Προσθήκη του φίλτρου και στη γραμμή εργαλείων"
 
-#: filter/kmfilterdialog.cpp:273
+#: filter/kmfilterdialog.cpp:277
 #, kde-format
 msgid "Shortcut:"
 msgstr "&Συντόμευση:"
 
-#: filter/kmfilterdialog.cpp:279
+#: filter/kmfilterdialog.cpp:283
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Εικονίδιο για αυτό το φίλτρο:"
 
-#: filter/kmfilterdialog.cpp:287
+#: filter/kmfilterdialog.cpp:291
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Εκτέλεση επιλεγμένων φίλτρων στο: "
 
-#: filter/kmfilterdialog.cpp:293
+#: filter/kmfilterdialog.cpp:297
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Εκτέλεση τώρα"
 
-#: filter/kmfilterdialog.cpp:420
+#: filter/kmfilterdialog.cpp:424
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
 "Αδύνατη η εφαρμογή του φίλτρου από τη στιγμή που δεν έχει επιλεγεί φάκελος."
 
-#: filter/kmfilterdialog.cpp:421
+#: filter/kmfilterdialog.cpp:425
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Δεν επιλέχθηκε φάκελος."
 
-#: filter/kmfilterdialog.cpp:428
+#: filter/kmfilterdialog.cpp:432
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1386,41 +1386,41 @@ msgstr ""
 "Μερικά φίλτρα έχουν αλλάξει και δεν έχουν αποθηκευθεί ακόμα. Θα πρέπει να "
 "αποθηκεύσετε τα φίλτρα σας ώστε να είναι δυνατή η εφαρμογή τους."
 
-#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:716
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Τα φίλτρα άλλαξαν."
 
-#: filter/kmfilterdialog.cpp:437
+#: filter/kmfilterdialog.cpp:441
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
 "Αδύνατη η εφαρμογή ενός φίλτρου από τη στιγμή που δεν έχουν επιλεγεί φίλτρα."
 
-#: filter/kmfilterdialog.cpp:438
+#: filter/kmfilterdialog.cpp:442
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Δεν επιλέχτηκαν φίλτρα."
 
-#: filter/kmfilterdialog.cpp:662
+#: filter/kmfilterdialog.cpp:666
 #, kde-format
 msgid "No filter was imported."
 msgstr "Δεν εισήχθη κάποιο φίλτρο."
 
-#: filter/kmfilterdialog.cpp:673
+#: filter/kmfilterdialog.cpp:677
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Φίλτρα που εισήχθησαν:"
 
-#: filter/kmfilterdialog.cpp:681
+#: filter/kmfilterdialog.cpp:685
 #, kde-format
 msgid "Any filter found."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:710
+#: filter/kmfilterdialog.cpp:714
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1430,20 +1430,20 @@ msgstr ""
 "Μερικά φίλτρα έχουν αλλάξει και δεν έχουν αποθηκευθεί ακόμα. Θα πρέπει να "
 "αποθηκεύσετε τα φίλτρα σας ώστε να είναι δυνατή η εξαγωγή τους."
 
-#: filter/kmfilterdialog.cpp:716
+#: filter/kmfilterdialog.cpp:720
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Δεν μπορούμε να μετατρέψουμε όλα τα φίλτρα του KMail σε sieve αλλά θα "
 "προσπαθήσουμε :)"
 
-#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:721 filter/kmfilterdialog.cpp:737
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Μετατροπή των φίλτρων KMail σε σενάρια sieve"
 
-#: filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:737
 #, kde-format
 msgid "No filters selected."
 msgstr "Δεν επιλέχτηκαν φίλτρα."
@@ -3084,30 +3084,30 @@ msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Ενεργοποίηση κουμπιού γραμμής ε&ργαλείων"
 
-#: widgets/favoritecollectionwidget.cpp:90
+#: widgets/favoritecollectionwidget.cpp:91
 #, kde-format
 msgid "Icon size"
 msgstr "Μέγεθος εικονιδίων"
 
-#: widgets/favoritecollectionwidget.cpp:109
+#: widgets/favoritecollectionwidget.cpp:110
 #, kde-format
 msgid "Mode"
 msgstr ""
 
-#: widgets/favoritecollectionwidget.cpp:113
+#: widgets/favoritecollectionwidget.cpp:114
 #, kde-format
 msgctxt "@action"
 msgid "List Mode"
 msgstr ""
 
-#: widgets/favoritecollectionwidget.cpp:123
+#: widgets/favoritecollectionwidget.cpp:124
 #, fuzzy, kde-format
 #| msgid "Icon Size"
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Μέγεθος εικονιδίων"
 
-#: widgets/favoritecollectionwidget.cpp:234
+#: widgets/favoritecollectionwidget.cpp:235
 #, kde-format
 msgid "Drop your favorite folders here…"
 msgstr "Ρίψη των προτιμώμενων φακέλων σας εδώ…"

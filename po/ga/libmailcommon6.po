@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-09 00:41+0000\n"
+"POT-Creation-Date: 2025-03-07 00:43+0000\n"
 "PO-Revision-Date: 2011-12-28 12:28-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -1319,43 +1319,43 @@ msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Cuir an scagaire seo leis an mbarra uirlisí chomh maith"
 
-#: filter/kmfilterdialog.cpp:273
+#: filter/kmfilterdialog.cpp:277
 #, kde-format
 msgid "Shortcut:"
 msgstr "Aicearra:"
 
-#: filter/kmfilterdialog.cpp:279
+#: filter/kmfilterdialog.cpp:283
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Deilbhín an scagaire seo:"
 
-#: filter/kmfilterdialog.cpp:287
+#: filter/kmfilterdialog.cpp:291
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:293
+#: filter/kmfilterdialog.cpp:297
 #, fuzzy, kde-format
 #| msgid "Run Now"
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Rith Anois"
 
-#: filter/kmfilterdialog.cpp:420
+#: filter/kmfilterdialog.cpp:424
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:421
+#: filter/kmfilterdialog.cpp:425
 #, fuzzy, kde-format
 #| msgid "No folder selected."
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Níl aon fhillteán roghnaithe."
 
-#: filter/kmfilterdialog.cpp:428
+#: filter/kmfilterdialog.cpp:432
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1363,42 +1363,42 @@ msgid ""
 "before they can be applied."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:716
 #, fuzzy, kde-format
 #| msgid "Filters changed."
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Athraíodh scagairí."
 
-#: filter/kmfilterdialog.cpp:437
+#: filter/kmfilterdialog.cpp:441
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:438
+#: filter/kmfilterdialog.cpp:442
 #, fuzzy, kde-format
 #| msgid "No filters selected."
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Níl aon scagairí roghnaithe."
 
-#: filter/kmfilterdialog.cpp:662
+#: filter/kmfilterdialog.cpp:666
 #, kde-format
 msgid "No filter was imported."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:673
+#: filter/kmfilterdialog.cpp:677
 #, kde-format
 msgid "Filters which were imported:"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:681
+#: filter/kmfilterdialog.cpp:685
 #, kde-format
 msgid "Any filter found."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:710
+#: filter/kmfilterdialog.cpp:714
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1406,18 +1406,18 @@ msgid ""
 "before they can be exported."
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:716
+#: filter/kmfilterdialog.cpp:720
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:721 filter/kmfilterdialog.cpp:737
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:737
 #, kde-format
 msgid "No filters selected."
 msgstr "Níl aon scagairí roghnaithe."
@@ -3064,31 +3064,31 @@ msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr ""
 
-#: widgets/favoritecollectionwidget.cpp:90
+#: widgets/favoritecollectionwidget.cpp:91
 #, fuzzy, kde-format
 #| msgid "Icon Size"
 msgid "Icon size"
 msgstr "Méid na nDeilbhíní"
 
-#: widgets/favoritecollectionwidget.cpp:109
+#: widgets/favoritecollectionwidget.cpp:110
 #, kde-format
 msgid "Mode"
 msgstr ""
 
-#: widgets/favoritecollectionwidget.cpp:113
+#: widgets/favoritecollectionwidget.cpp:114
 #, kde-format
 msgctxt "@action"
 msgid "List Mode"
 msgstr ""
 
-#: widgets/favoritecollectionwidget.cpp:123
+#: widgets/favoritecollectionwidget.cpp:124
 #, fuzzy, kde-format
 #| msgid "Icon Size"
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Méid na nDeilbhíní"
 
-#: widgets/favoritecollectionwidget.cpp:234
+#: widgets/favoritecollectionwidget.cpp:235
 #, kde-format
 msgid "Drop your favorite folders here…"
 msgstr ""

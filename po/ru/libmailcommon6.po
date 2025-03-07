@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-09 00:41+0000\n"
+"POT-Creation-Date: 2025-03-07 00:43+0000\n"
 "PO-Revision-Date: 2024-12-03 09:44+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -1333,41 +1333,41 @@ msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Кроме того, добавить этот фильтр на панель инструментов"
 
-#: filter/kmfilterdialog.cpp:273
+#: filter/kmfilterdialog.cpp:277
 #, kde-format
 msgid "Shortcut:"
 msgstr "Комбинация клавиш:"
 
-#: filter/kmfilterdialog.cpp:279
+#: filter/kmfilterdialog.cpp:283
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Значок для этого фильтра:"
 
-#: filter/kmfilterdialog.cpp:287
+#: filter/kmfilterdialog.cpp:291
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Запустить выбранные фильтры в: "
 
-#: filter/kmfilterdialog.cpp:293
+#: filter/kmfilterdialog.cpp:297
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Запустить сейчас"
 
-#: filter/kmfilterdialog.cpp:420
+#: filter/kmfilterdialog.cpp:424
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Невозможно применить этот фильтр, так как не выбраны папки."
 
-#: filter/kmfilterdialog.cpp:421
+#: filter/kmfilterdialog.cpp:425
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Не выбрана ни одна папка"
 
-#: filter/kmfilterdialog.cpp:428
+#: filter/kmfilterdialog.cpp:432
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1377,40 +1377,40 @@ msgstr ""
 "Некоторые фильтры были изменены, но не сохранены. Необходимо сохранить "
 "фильтры перед их использованием."
 
-#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:716
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Фильтры изменены"
 
-#: filter/kmfilterdialog.cpp:437
+#: filter/kmfilterdialog.cpp:441
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Невозможно применить фильтр, так как ни один фильтр не выбран."
 
-#: filter/kmfilterdialog.cpp:438
+#: filter/kmfilterdialog.cpp:442
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Не выбран ни один фильтр"
 
-#: filter/kmfilterdialog.cpp:662
+#: filter/kmfilterdialog.cpp:666
 #, kde-format
 msgid "No filter was imported."
 msgstr "Не был импортирован ни один фильтр."
 
-#: filter/kmfilterdialog.cpp:673
+#: filter/kmfilterdialog.cpp:677
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Импортированные фильтры:"
 
-#: filter/kmfilterdialog.cpp:681
+#: filter/kmfilterdialog.cpp:685
 #, kde-format
 msgid "Any filter found."
 msgstr "Любой найденный фильтр."
 
-#: filter/kmfilterdialog.cpp:710
+#: filter/kmfilterdialog.cpp:714
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1421,21 +1421,21 @@ msgstr ""
 "фильтры перед их экспортом."
 
 # BUGME: please be more formal, w/o ":)" --aspotashev
-#: filter/kmfilterdialog.cpp:716
+#: filter/kmfilterdialog.cpp:720
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Не любые фильтры KMail можно преобразовать в сценарий Sieve, но можно "
 "попытаться выполнить преобразование для имеющихся фильтров."
 
-#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:721 filter/kmfilterdialog.cpp:737
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Преобразование фильтров KMail в сценарии Sieve"
 
 # BUGME: please add @title:window where applicable --aspotashev
-#: filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:737
 #, kde-format
 msgid "No filters selected."
 msgstr "Не выбран ни один фильтр"
@@ -3049,29 +3049,29 @@ msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Доб&авить кнопку на панель инструментов"
 
-#: widgets/favoritecollectionwidget.cpp:90
+#: widgets/favoritecollectionwidget.cpp:91
 #, kde-format
 msgid "Icon size"
 msgstr "Размер значков"
 
-#: widgets/favoritecollectionwidget.cpp:109
+#: widgets/favoritecollectionwidget.cpp:110
 #, kde-format
 msgid "Mode"
 msgstr "Режим просмотра"
 
-#: widgets/favoritecollectionwidget.cpp:113
+#: widgets/favoritecollectionwidget.cpp:114
 #, kde-format
 msgctxt "@action"
 msgid "List Mode"
 msgstr "Список"
 
-#: widgets/favoritecollectionwidget.cpp:123
+#: widgets/favoritecollectionwidget.cpp:124
 #, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Значки"
 
-#: widgets/favoritecollectionwidget.cpp:234
+#: widgets/favoritecollectionwidget.cpp:235
 #, kde-format
 msgid "Drop your favorite folders here…"
 msgstr "Переместите избранные папки сюда…"

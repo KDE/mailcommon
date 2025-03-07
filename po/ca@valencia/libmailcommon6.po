@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-09 00:41+0000\n"
+"POT-Creation-Date: 2025-03-07 00:43+0000\n"
 "PO-Revision-Date: 2025-01-05 10:12+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -1322,42 +1322,42 @@ msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "De manera addicional, afig este filtre a la barra d'eines"
 
-#: filter/kmfilterdialog.cpp:273
+#: filter/kmfilterdialog.cpp:277
 #, kde-format
 msgid "Shortcut:"
 msgstr "Drecera:"
 
-#: filter/kmfilterdialog.cpp:279
+#: filter/kmfilterdialog.cpp:283
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Icona per a este filtre:"
 
-#: filter/kmfilterdialog.cpp:287
+#: filter/kmfilterdialog.cpp:291
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Executa els filtres seleccionats en: "
 
-#: filter/kmfilterdialog.cpp:293
+#: filter/kmfilterdialog.cpp:297
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Executa ara"
 
-#: filter/kmfilterdialog.cpp:420
+#: filter/kmfilterdialog.cpp:424
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
 "No s'ha pogut aplicar este filtre, ja que no s'ha seleccionat cap carpeta."
 
-#: filter/kmfilterdialog.cpp:421
+#: filter/kmfilterdialog.cpp:425
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Cap carpeta seleccionada."
 
-#: filter/kmfilterdialog.cpp:428
+#: filter/kmfilterdialog.cpp:432
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1367,13 +1367,13 @@ msgstr ""
 "Alguns filtres s'han canviat i encara no s'han guardat. Cal guardar els "
 "filtres abans que es puguen aplicar."
 
-#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:716
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "S'han canviat els filtres."
 
-#: filter/kmfilterdialog.cpp:437
+#: filter/kmfilterdialog.cpp:441
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
@@ -1381,28 +1381,28 @@ msgstr ""
 "No s'ha pogut aplicar cap filtre, ja que actualment no hi ha cap filtre "
 "seleccionat."
 
-#: filter/kmfilterdialog.cpp:438
+#: filter/kmfilterdialog.cpp:442
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "No s'ha seleccionat cap filtre."
 
-#: filter/kmfilterdialog.cpp:662
+#: filter/kmfilterdialog.cpp:666
 #, kde-format
 msgid "No filter was imported."
 msgstr "No s'ha importat cap filtre."
 
-#: filter/kmfilterdialog.cpp:673
+#: filter/kmfilterdialog.cpp:677
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Filtres que s'han importat:"
 
-#: filter/kmfilterdialog.cpp:681
+#: filter/kmfilterdialog.cpp:685
 #, kde-format
 msgid "Any filter found."
 msgstr "Qualsevol filtre trobat."
 
-#: filter/kmfilterdialog.cpp:710
+#: filter/kmfilterdialog.cpp:714
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1412,20 +1412,20 @@ msgstr ""
 "Alguns filtres s'han canviat i encara no s'han guardat.<br>Cal guardar els "
 "filtres abans que es puguen exportar."
 
-#: filter/kmfilterdialog.cpp:716
+#: filter/kmfilterdialog.cpp:720
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "No es poden convertir tots els filtres de KMail a scripts de «Sieve» però "
 "s'intentarà :)"
 
-#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:721 filter/kmfilterdialog.cpp:737
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Convertix els filtres de KMail a scripts de «Sieve»"
 
-#: filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:737
 #, kde-format
 msgid "No filters selected."
 msgstr "No s'ha seleccionat cap filtre."
@@ -3043,29 +3043,29 @@ msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Activa el bo&tó de la barra d'eines"
 
-#: widgets/favoritecollectionwidget.cpp:90
+#: widgets/favoritecollectionwidget.cpp:91
 #, kde-format
 msgid "Icon size"
 msgstr "Mida de la icona"
 
-#: widgets/favoritecollectionwidget.cpp:109
+#: widgets/favoritecollectionwidget.cpp:110
 #, kde-format
 msgid "Mode"
 msgstr "Mode"
 
-#: widgets/favoritecollectionwidget.cpp:113
+#: widgets/favoritecollectionwidget.cpp:114
 #, kde-format
 msgctxt "@action"
 msgid "List Mode"
 msgstr "Mode de llista"
 
-#: widgets/favoritecollectionwidget.cpp:123
+#: widgets/favoritecollectionwidget.cpp:124
 #, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Mode icones"
 
-#: widgets/favoritecollectionwidget.cpp:234
+#: widgets/favoritecollectionwidget.cpp:235
 #, kde-format
 msgid "Drop your favorite folders here…"
 msgstr "Deixeu anar ací les carpetes preferides…"

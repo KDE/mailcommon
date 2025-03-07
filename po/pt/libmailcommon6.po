@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-09 00:41+0000\n"
+"POT-Creation-Date: 2025-03-07 00:43+0000\n"
 "PO-Revision-Date: 2022-07-04 13:16+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -1395,44 +1395,44 @@ msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Adicionar também este filtro à barra de ferramentas"
 
-#: filter/kmfilterdialog.cpp:273
+#: filter/kmfilterdialog.cpp:277
 #, kde-format
 msgid "Shortcut:"
 msgstr "Atalho:"
 
-#: filter/kmfilterdialog.cpp:279
+#: filter/kmfilterdialog.cpp:283
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Ícone deste filtro:"
 
-#: filter/kmfilterdialog.cpp:287
+#: filter/kmfilterdialog.cpp:291
 #, fuzzy, kde-format
 #| msgid "Run selected filter(s) on: "
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Executar os filtros seleccionados em: "
 
-#: filter/kmfilterdialog.cpp:293
+#: filter/kmfilterdialog.cpp:297
 #, fuzzy, kde-format
 #| msgid "Run Now"
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Executar Agora"
 
-#: filter/kmfilterdialog.cpp:420
+#: filter/kmfilterdialog.cpp:424
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Não é possível aplicar este filtro, por não ter seleccionado pastas."
 
-#: filter/kmfilterdialog.cpp:421
+#: filter/kmfilterdialog.cpp:425
 #, fuzzy, kde-format
 #| msgid "No folder selected."
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Não está nenhuma pasta seleccionada."
 
-#: filter/kmfilterdialog.cpp:428
+#: filter/kmfilterdialog.cpp:432
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1442,42 +1442,42 @@ msgstr ""
 "Alguns filtros foram alterados e ainda não foram gravados. Terá de gravar os "
 "seus filtros antes de os poder aplicar."
 
-#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:716
 #, fuzzy, kde-format
 #| msgid "Filters changed."
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Os filtros foram alterados."
 
-#: filter/kmfilterdialog.cpp:437
+#: filter/kmfilterdialog.cpp:441
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Não foi possível aplicar um filtro, por não ter seleccionado filtros."
 
-#: filter/kmfilterdialog.cpp:438
+#: filter/kmfilterdialog.cpp:442
 #, fuzzy, kde-format
 #| msgid "No filters selected."
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Não está seleccionado nenhum filtro."
 
-#: filter/kmfilterdialog.cpp:662
+#: filter/kmfilterdialog.cpp:666
 #, kde-format
 msgid "No filter was imported."
 msgstr "Não foi importado nenhum filtro."
 
-#: filter/kmfilterdialog.cpp:673
+#: filter/kmfilterdialog.cpp:677
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Filtros que foram importados:"
 
-#: filter/kmfilterdialog.cpp:681
+#: filter/kmfilterdialog.cpp:685
 #, kde-format
 msgid "Any filter found."
 msgstr "Não foi encontrado nenhum filtro."
 
-#: filter/kmfilterdialog.cpp:710
+#: filter/kmfilterdialog.cpp:714
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1487,21 +1487,21 @@ msgstr ""
 "Alguns filtros foram alterados e ainda não foram gravados.<br/>Terá de "
 "gravar os seus filtros antes de os poder exportar."
 
-#: filter/kmfilterdialog.cpp:716
+#: filter/kmfilterdialog.cpp:720
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Não é possível converter todos os filtros do KMail como programas de Sieve, "
 "mas será dado o nosso melhor :)"
 
-#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:721 filter/kmfilterdialog.cpp:737
 #, fuzzy, kde-format
 #| msgid "Convert KMail filters to sieve scripts"
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Converter os filtros do KMail para programas de Sieve"
 
-#: filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:737
 #, kde-format
 msgid "No filters selected."
 msgstr "Não está seleccionado nenhum filtro."
@@ -3176,31 +3176,31 @@ msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Activar o &botão da barra de ferramentas"
 
-#: widgets/favoritecollectionwidget.cpp:90
+#: widgets/favoritecollectionwidget.cpp:91
 #, kde-format
 msgid "Icon size"
 msgstr "Tamanho do ícone"
 
-#: widgets/favoritecollectionwidget.cpp:109
+#: widgets/favoritecollectionwidget.cpp:110
 #, kde-format
 msgid "Mode"
 msgstr "Modo"
 
-#: widgets/favoritecollectionwidget.cpp:113
+#: widgets/favoritecollectionwidget.cpp:114
 #, fuzzy, kde-format
 #| msgid "List Mode"
 msgctxt "@action"
 msgid "List Mode"
 msgstr "Modo em Lista"
 
-#: widgets/favoritecollectionwidget.cpp:123
+#: widgets/favoritecollectionwidget.cpp:124
 #, fuzzy, kde-format
 #| msgid "Icon Mode"
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Modo dos Ícones"
 
-#: widgets/favoritecollectionwidget.cpp:234
+#: widgets/favoritecollectionwidget.cpp:235
 #, fuzzy, kde-format
 #| msgid "Drop your favorite folders here..."
 msgid "Drop your favorite folders here…"
