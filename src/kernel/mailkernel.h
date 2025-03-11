@@ -90,6 +90,8 @@ public:
     [[nodiscard]] Akonadi::Collection draftsCollectionFolder();
     [[nodiscard]] Akonadi::Collection templatesCollectionFolder();
 
+    [[nodiscard]] Akonadi::Collection spamsCollectionFolder();
+
     [[nodiscard]] bool isSystemFolderCollection(const Akonadi::Collection &col);
 
     /**
@@ -105,6 +107,8 @@ public:
     [[nodiscard]] bool folderIsDrafts(const Akonadi::Collection &);
 
     [[nodiscard]] bool folderIsTemplates(const Akonadi::Collection &collection);
+
+    [[nodiscard]] bool folderIsSpams(const Akonadi::Collection &collection);
 
     /**
      * Returns true if the folder is a trash folder.

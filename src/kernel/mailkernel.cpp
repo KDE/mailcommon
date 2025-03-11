@@ -143,10 +143,15 @@ Akonadi::Collection Kernel::templatesCollectionFolder()
     return Akonadi::SpecialMailCollections::self()->defaultCollection(Akonadi::SpecialMailCollections::Templates);
 }
 
+Akonadi::Collection Kernel::spamsCollectionFolder()
+{
+    return Akonadi::SpecialMailCollections::self()->defaultCollection(Akonadi::SpecialMailCollections::Spam);
+}
+
 bool Kernel::isSystemFolderCollection(const Akonadi::Collection &col)
 {
     return col == inboxCollectionFolder() || col == outboxCollectionFolder() || col == sentCollectionFolder() || col == trashCollectionFolder()
-        || col == draftsCollectionFolder() || col == templatesCollectionFolder();
+        || col == draftsCollectionFolder() || col == templatesCollectionFolder() || col == spamsCollectionFolder();
 }
 
 bool Kernel::isMainFolderCollection(const Akonadi::Collection &col)
@@ -294,6 +299,28 @@ bool Kernel::folderIsTemplates(const Akonadi::Collection &col)
     KIdentityManagementCore::IdentityManager::ConstIterator end(im->end());
     for (KIdentityManagementCore::IdentityManager::ConstIterator it = im->begin(); it != end; ++it) {
         if ((*it).templates() == idString) {
+            return true;
+        }
+    }
+    return false;
+}
+
+bool Kernel::folderIsSpams(const Akonadi::Collection &col)
+{
+    if (col == Akonadi::SpecialMailCollections::self()->defaultCollection(Akonadi::SpecialMailCollections::Spam)) {
+        return true;
+    }
+
+    const QString idString = QString::number(col.id());
+    if (idString.isEmpty()) {
+        return false;
+    }
+
+    // search the identities if the folder matches the drafts-folder
+    const KIdentityManagementCore::IdentityManager *im = KernelIf->identityManager();
+    KIdentityManagementCore::IdentityManager::ConstIterator end(im->end());
+    for (KIdentityManagementCore::IdentityManager::ConstIterator it = im->begin(); it != end; ++it) {
+        if ((*it).spam() == idString) {
             return true;
         }
     }
