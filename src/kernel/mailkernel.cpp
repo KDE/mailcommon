@@ -320,7 +320,7 @@ bool Kernel::folderIsSpams(const Akonadi::Collection &col)
     const KIdentityManagementCore::IdentityManager *im = KernelIf->identityManager();
     KIdentityManagementCore::IdentityManager::ConstIterator end(im->end());
     for (KIdentityManagementCore::IdentityManager::ConstIterator it = im->begin(); it != end; ++it) {
-        if ((*it).spam() == idString) {
+        if (!(*it).disabledSpam() && (*it).spam() == idString) {
             return true;
         }
     }
