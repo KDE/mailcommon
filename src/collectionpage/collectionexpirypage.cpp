@@ -52,18 +52,8 @@ void CollectionExpiryPage::load(const Akonadi::Collection &collection)
     init();
     const auto *attr = collection.attribute<MailCommon::ExpireCollectionAttribute>();
     if (attr) {
-        int daysToExpireRead;
-        int daysToExpireUnread;
-        attr->daysToExpire(daysToExpireUnread, daysToExpireRead);
         MailCommon::CollectionExpirySettings settings;
-        settings.expiryGloballyOn = attr->isAutoExpire();
-        settings.daysToExpireRead = daysToExpireRead;
-        settings.daysToExpireUnread = daysToExpireUnread;
-        settings.mUnreadExpireUnits = attr->unreadExpireUnits();
-        settings.mReadExpireUnits = attr->readExpireUnits();
-        settings.mExpireAction = attr->expireAction();
-        settings.mExpireToFolderId = attr->expireToFolderId();
-
+        settings.convertFromExpireCollectionAttribute(attr);
         mCollectionExpiryWidget->load(settings);
     } else {
         mCollectionExpiryWidget->load({});

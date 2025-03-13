@@ -266,6 +266,18 @@ bool CollectionExpirySettings::isValid() const
     return valid;
 }
 
+void CollectionExpirySettings::convertFromExpireCollectionAttribute(const ExpireCollectionAttribute *attr)
+{
+    if (attr) {
+        attr->daysToExpire(daysToExpireUnread, daysToExpireRead);
+        expiryGloballyOn = attr->isAutoExpire();
+        mUnreadExpireUnits = attr->unreadExpireUnits();
+        mReadExpireUnits = attr->readExpireUnits();
+        mExpireAction = attr->expireAction();
+        mExpireToFolderId = attr->expireToFolderId();
+    }
+}
+
 QDebug operator<<(QDebug d, const CollectionExpirySettings &t)
 {
     d << " expiryGloballyOn " << t.expiryGloballyOn;

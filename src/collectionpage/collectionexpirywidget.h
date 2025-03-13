@@ -27,6 +27,8 @@ struct MAILCOMMON_EXPORT CollectionExpirySettings {
     ExpireCollectionAttribute::ExpireUnits mReadExpireUnits = ExpireCollectionAttribute::ExpireNever;
     ExpireCollectionAttribute::ExpireAction mExpireAction = ExpireCollectionAttribute::ExpireDelete;
     Akonadi::Collection::Id mExpireToFolderId = -1;
+
+    void convertFromExpireCollectionAttribute(const ExpireCollectionAttribute *attr);
 };
 
 class MAILCOMMON_EXPORT CollectionExpiryWidget : public QWidget
