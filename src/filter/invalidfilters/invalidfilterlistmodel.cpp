@@ -76,7 +76,8 @@ QVariant InvalidFilterListModel::data(const QModelIndex &index, int role) const
 
 int InvalidFilterListModel::rowCount(const QModelIndex &parent) const
 {
-    Q_UNUSED(parent)
+    if (parent.isValid()) // flat model
+        return 0;
     return mInvalidFilterItems.count();
 }
 
