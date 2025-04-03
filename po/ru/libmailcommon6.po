@@ -5,13 +5,13 @@
 # Julia Dronova <juliette.tux@gmail.com>, 2012.
 # Alexander Lakhin <exclusion@gmail.com>, 2013.
 # Alexander Yavorsky <kekcuha@gmail.com>, 2018, 2019, 2020, 2021, 2022, 2023.
-# SPDX-FileCopyrightText: 2024 Olesya Gerasimenko <translation-team@basealt.ru>
+# SPDX-FileCopyrightText: 2024, 2025 Olesya Gerasimenko <translation-team@basealt.ru>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-07 00:43+0000\n"
-"PO-Revision-Date: 2024-12-03 09:44+0300\n"
+"PO-Revision-Date: 2025-04-02 16:13+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -2201,10 +2201,8 @@ msgid "Attachment"
 msgstr "Вложение"
 
 #: search/searchpatternedit.cpp:58
-#, fuzzy
-#| msgid "Organization"
 msgid "Invitation"
-msgstr "Организация"
+msgstr "Приглашение"
 
 #: search/searchpatternedit.cpp:146
 #, kde-format
@@ -2299,16 +2297,14 @@ msgid "has not an attachment"
 msgstr "без вложений"
 
 #: search/searchrule/searchrule.cpp:221
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has an invitation"
-msgstr "Организация"
+msgstr "с приглашением"
 
 #: search/searchrule/searchrule.cpp:224
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has not an invitation"
-msgstr "Организация"
+msgstr "без приглашения"
 
 #: search/searchrule/searchrule.cpp:227
 #, kde-format
@@ -2569,17 +2565,15 @@ msgid "is not in address book"
 msgstr "не в адресной книге"
 
 #: search/widgethandler/invitationwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
-msgstr "Организация"
+msgstr "приглашение"
 
 #: search/widgethandler/invitationwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has invitation"
-msgstr "Организация"
+msgstr "с приглашением"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147
