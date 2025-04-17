@@ -148,7 +148,7 @@ void NumericDoubleRuleWidgetHandler::reset(QStackedWidget *functionStack, QStack
 
 //---------------------------------------------------------------------------
 
-void initDoubleNumInput(QDoubleSpinBox *numInput, const QByteArray &field)
+static void initDoubleNumInput(QDoubleSpinBox *numInput, const QByteArray &field)
 {
     if (field == "<size>") {
         numInput->setMinimum(0);

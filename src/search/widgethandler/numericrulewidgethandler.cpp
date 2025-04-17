@@ -150,7 +150,7 @@ void NumericRuleWidgetHandler::reset(QStackedWidget *functionStack, QStackedWidg
 
 //---------------------------------------------------------------------------
 
-void initNumInput(QSpinBox *numInput, const QByteArray &field)
+static void initNumInput(QSpinBox *numInput, const QByteArray &field)
 {
     if (field == "<age in days>") {
         numInput->setMinimum(-10000);

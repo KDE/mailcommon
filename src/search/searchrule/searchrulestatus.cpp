@@ -31,7 +31,7 @@ static struct _statusNames statusNames[] = {{"Important", Akonadi::MessageStatus
                                             {"Ham", Akonadi::MessageStatus::statusHam()},
                                             {"Has Attachment", Akonadi::MessageStatus::statusHasAttachment()}};
 
-QString englishNameForStatus(Akonadi::MessageStatus status)
+static QString englishNameForStatus(Akonadi::MessageStatus status)
 {
     for (const _statusNames &statusName : statusNames) {
         if (statusName.status == status) {
