@@ -14,7 +14,7 @@
 using namespace MailCommon;
 
 FilterImporterSylpheed::FilterImporterSylpheed(QFile *file)
-    : FilterImporterAbstract()
+
 {
     QDomDocument doc;
     if (!loadDomElement(doc, file)) {

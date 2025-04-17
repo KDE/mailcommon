@@ -18,14 +18,14 @@
 using namespace MailCommon;
 
 FilterImporterBalsa::FilterImporterBalsa(QFile *file)
-    : FilterImporterAbstract()
+
 {
     KConfig config(file->fileName());
     readConfig(&config);
 }
 
 FilterImporterBalsa::FilterImporterBalsa()
-    : FilterImporterAbstract()
+
 {
 }
 

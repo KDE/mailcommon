@@ -13,7 +13,7 @@
 using namespace MailCommon;
 
 FilterImporterEvolution::FilterImporterEvolution(QFile *file)
-    : FilterImporterAbstract()
+
 {
     QDomDocument doc;
     if (!loadDomElement(doc, file)) {

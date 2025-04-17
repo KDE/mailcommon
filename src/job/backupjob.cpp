@@ -34,7 +34,7 @@ BackupJob::BackupJob(QWidget *parent)
     , mArchiveTime(QDateTime::currentDateTime())
     , mRootFolder(0)
     , mParentWidget(parent)
-    , mCurrentFolder(Akonadi::Collection())
+
 {
 }
 

@@ -72,7 +72,7 @@ void FilterActionDict::init()
 // The int in the QDict constructor (41) must be a prime
 // and should be greater than the double number of FilterAction types
 FilterActionDict::FilterActionDict()
-    : QMultiHash<QString, FilterActionDesc *>()
+
 {
     init();
 }

@@ -14,7 +14,7 @@
 using namespace MailCommon;
 
 FilterImporterGmail::FilterImporterGmail(QFile *file)
-    : FilterImporterAbstract()
+
 {
     QDomDocument doc;
     if (!loadDomElement(doc, file)) {

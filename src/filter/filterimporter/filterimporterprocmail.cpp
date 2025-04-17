@@ -15,14 +15,14 @@
 using namespace MailCommon;
 
 FilterImporterProcmail::FilterImporterProcmail(QFile *file)
-    : FilterImporterAbstract()
+
 {
     QTextStream stream(file);
     readStream(stream);
 }
 
 FilterImporterProcmail::FilterImporterProcmail(QString string)
-    : FilterImporterAbstract()
+
 {
     QTextStream stream(&string);
     readStream(stream);

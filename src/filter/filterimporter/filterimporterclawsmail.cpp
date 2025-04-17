@@ -14,14 +14,14 @@
 using namespace MailCommon;
 
 FilterImporterClawsMails::FilterImporterClawsMails(QFile *file)
-    : FilterImporterAbstract()
+
 {
     QTextStream stream(file);
     readStream(stream);
 }
 
 FilterImporterClawsMails::FilterImporterClawsMails(QString string)
-    : FilterImporterAbstract()
+
 {
     QTextStream stream(&string);
     readStream(stream);

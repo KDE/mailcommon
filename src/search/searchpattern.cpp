@@ -30,13 +30,13 @@ using namespace MailCommon;
 //==================================================
 
 SearchPattern::SearchPattern()
-    : QList<SearchRule::Ptr>()
+
 {
     init();
 }
 
 SearchPattern::SearchPattern(const KConfigGroup &config)
-    : QList<SearchRule::Ptr>()
+
 {
     readConfig(config);
 }
