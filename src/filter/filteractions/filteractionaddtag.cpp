@@ -52,8 +52,7 @@ void FilterActionAddTag::applyParamWidgetValue(QWidget *paramWidget)
 
 void FilterActionAddTag::setParamWidgetValue(QWidget *paramWidget) const
 {
-    const int index = static_cast<QComboBox *>(paramWidget)->findData(mParameter);
-
+    const int index = static_cast<QComboBox *>(paramWidget)->findData(QUrl(mParameter));
     static_cast<QComboBox *>(paramWidget)->setCurrentIndex(index < 0 ? 0 : index);
 }
 
