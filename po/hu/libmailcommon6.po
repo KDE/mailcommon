@@ -3,13 +3,13 @@
 #
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2011, 2012, 2014.
 # Balázs Úr <urbalazs@gmail.com>, 2012, 2013, 2014.
-# SPDX-FileCopyrightText: 2024 Kristof Kiszel <ulysses@fsf.hu>
+# SPDX-FileCopyrightText: 2024, 2025 Kristof Kiszel <ulysses@fsf.hu>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-23 02:35+0000\n"
-"PO-Revision-Date: 2024-10-02 22:43+0200\n"
+"PO-Revision-Date: 2025-04-29 21:47+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -2186,10 +2186,8 @@ msgid "Attachment"
 msgstr "Melléklet"
 
 #: search/searchpatternedit.cpp:58
-#, fuzzy
-#| msgid "Organization"
 msgid "Invitation"
-msgstr "Szervezet"
+msgstr "Meghívás"
 
 #: search/searchpatternedit.cpp:146
 #, kde-format
@@ -2284,16 +2282,14 @@ msgid "has not an attachment"
 msgstr "nincs melléklete"
 
 #: search/searchrule/searchrule.cpp:221
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has an invitation"
-msgstr "Szervezet"
+msgstr "van meghívója"
 
 #: search/searchrule/searchrule.cpp:224
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has not an invitation"
-msgstr "Szervezet"
+msgstr "nincs meghívója"
 
 #: search/searchrule/searchrule.cpp:227
 #, kde-format
@@ -2551,17 +2547,15 @@ msgid "is not in address book"
 msgstr "nincs a címjegyzékben"
 
 #: search/widgethandler/invitationwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
-msgstr "Szervezet"
+msgstr "meghívás"
 
 #: search/widgethandler/invitationwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has invitation"
-msgstr "Szervezet"
+msgstr "van meghívója"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147
