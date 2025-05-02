@@ -379,6 +379,7 @@ PRIVATE
   KF6::SyntaxHighlighting
   KF6::GuiAddons
   KF6::Codecs
+  KF6::ColorScheme
   KPim6::AkonadiContactWidgets
   Qt::Xml
   Qt::Multimedia
