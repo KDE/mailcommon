@@ -36,37 +36,10 @@ KMFilterAccountList::~KMFilterAccountList() = default;
 
 void KMFilterAccountList::updateAccountList(MailCommon::MailFilter *filter)
 {
-    clear();
-
-    QTreeWidgetItem *top = nullptr;
-    // Block the signals here, otherwise we end up calling
-    // slotApplicableAccountsChanged(), which will read the incomplete item
-    // state and write that back to the filter
-    blockSignals(true);
-    const Akonadi::AgentInstance::List lst = MailCommon::Util::agentInstances();
-    const int nbAccount = lst.count();
-    for (int i = 0; i < nbAccount; ++i) {
-        const Akonadi::AgentInstance agent = lst.at(i);
-        auto listItem = new QTreeWidgetItem(this, top);
-        listItem->setText(0, agent.name());
-        listItem->setText(1, agent.type().name());
-        listItem->setText(2, agent.identifier());
-        if (filter) {
-            listItem->setCheckState(0, filter->applyOnAccount(agent.identifier()) ? Qt::Checked : Qt::Unchecked);
-        }
-        top = listItem;
-    }
-    blockSignals(false);
-
-    // make sure our hidden column is really hidden (Qt tends to re-show it)
-    hideColumn(2);
-    resizeColumnToContents(0);
-    resizeColumnToContents(1);
-
-    top = topLevelItem(0);
-    if (top) {
-        setCurrentItem(top);
-    }
+    const auto decideSelected = [filter](const QString& accountName) {
+        return filter && filter->applyOnAccount(accountName);
+    };
+    updateAccountListInternal(decideSelected);
 }
 
 void KMFilterAccountList::applyOnAccount(MailCommon::MailFilter *filter)
@@ -80,11 +53,19 @@ void KMFilterAccountList::applyOnAccount(MailCommon::MailFilter *filter)
     }
 }
 
-void KMFilterAccountList::applyOnAccount(const QStringList &lstAccount)
+void KMFilterAccountList::applyOnAccount(const QStringList &selectedAccounts)
+{
+    const auto decideSelected = [&selectedAccounts](const QString& accountName) {
+        return selectedAccounts.contains(accountName);
+    };
+    updateAccountListInternal(decideSelected);
+}
+
+void KMFilterAccountList::updateAccountListInternal(const std::function<bool(const QString &)> &decideSelected)
 {
     clear();
 
-    QTreeWidgetItem *top = nullptr;
+    QTreeWidgetItem *prev = nullptr;
     // Block the signals here, otherwise we end up calling
     // slotApplicableAccountsChanged(), which will read the incomplete item
     // state and write that back to the filter
@@ -93,12 +74,12 @@ void KMFilterAccountList::applyOnAccount(const QStringList &lstAccount)
     const int nbAccount = lst.count();
     for (int i = 0; i < nbAccount; ++i) {
         const Akonadi::AgentInstance agent = lst.at(i);
-        auto listItem = new QTreeWidgetItem(this, top);
+        auto listItem = new QTreeWidgetItem(this, prev);
         listItem->setText(0, agent.name());
         listItem->setText(1, agent.type().name());
         listItem->setText(2, agent.identifier());
-        listItem->setCheckState(0, lstAccount.contains(agent.identifier()) ? Qt::Checked : Qt::Unchecked);
-        top = listItem;
+        listItem->setCheckState(0, decideSelected(agent.identifier()) ? Qt::Checked : Qt::Unchecked);
+        prev = listItem;
     }
     blockSignals(false);
 
@@ -107,7 +88,7 @@ void KMFilterAccountList::applyOnAccount(const QStringList &lstAccount)
     resizeColumnToContents(0);
     resizeColumnToContents(1);
 
-    top = topLevelItem(0);
+    QTreeWidgetItem *top = topLevelItem(0);
     if (top) {
         setCurrentItem(top);
     }

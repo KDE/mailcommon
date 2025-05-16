@@ -10,6 +10,8 @@
 
 #include "mailcommon_private_export.h"
 
+#include <functional>
+
 namespace MailCommon
 {
 class MailFilter;
@@ -25,5 +27,8 @@ public:
     void applyOnAccount(const QStringList &lst);
 
     [[nodiscard]] QStringList selectedAccount();
+
+private:
+    void updateAccountListInternal(const std::function<bool(const QString &)> &decideSelected);
 };
 }
