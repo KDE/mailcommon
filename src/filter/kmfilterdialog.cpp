@@ -572,7 +572,7 @@ void KMFilterDialog::slotApplicabilityChanged()
 
         // Advanced tab functionality - Update list of accounts this filter applies to
         if (!mApplyOnForAll->isChecked()) {
-            mAccountList->applyOnAccount(mFilter);
+            mAccountList->reloadAndSelectAccountsFrom(mFilter);
         }
 
         // Enable the apply button
@@ -642,7 +642,7 @@ void KMFilterDialog::slotFilterActionIconChanged(const QString &icon)
 
 void KMFilterDialog::slotUpdateAccountList()
 {
-    mAccountList->updateAccountList(mFilter);
+    mAccountList->reloadAndSelectAccountsFrom(mFilter);
 }
 
 void KMFilterDialog::slotImportFilter(QAction *act)

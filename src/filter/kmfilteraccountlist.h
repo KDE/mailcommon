@@ -22,13 +22,13 @@ public:
     explicit KMFilterAccountList(QWidget *parent);
     ~KMFilterAccountList() override;
 
-    void updateAccountList(MailCommon::MailFilter *filter);
-    void applyOnAccount(MailCommon::MailFilter *filter);
-    void applyOnAccount(const QStringList &lst);
+    void reloadAndSelectAccountsFrom(const MailCommon::MailFilter *filter);
+    void reloadAndSelectAccounts(const QStringList &selectedAccounts);
 
-    [[nodiscard]] QStringList selectedAccount();
+    [[nodiscard]] QStringList selectedAccounts() const;
+    void setSelectedAccountsOnFilter(MailCommon::MailFilter *filter) const;
 
 private:
-    void updateAccountListInternal(const std::function<bool(const QString &)> &decideSelected);
+    void reloadAndSelectAccountsInternal(const std::function<bool(const QString &)> &decideSelected);
 };
 }

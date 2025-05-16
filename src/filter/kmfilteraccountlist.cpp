@@ -24,7 +24,7 @@ KMFilterAccountList::KMFilterAccountList(QWidget *parent)
     const QStringList headerNames{i18n("Account Name"), i18n("Type")};
     setHeaderItem(new QTreeWidgetItem(headerNames));
     setAllColumnsShowFocus(true);
-    setFrameStyle(QFrame::WinPanel + QFrame::Sunken);
+    setFrameStyle(QFrame::WinPanel | QFrame::Sunken);
     setSortingEnabled(false);
     setRootIsDecorated(false);
     setSortingEnabled(true);
@@ -34,34 +34,23 @@ KMFilterAccountList::KMFilterAccountList(QWidget *parent)
 
 KMFilterAccountList::~KMFilterAccountList() = default;
 
-void KMFilterAccountList::updateAccountList(MailCommon::MailFilter *filter)
+void KMFilterAccountList::reloadAndSelectAccountsFrom(const MailCommon::MailFilter *filter)
 {
     const auto decideSelected = [filter](const QString& accountName) {
         return filter && filter->applyOnAccount(accountName);
     };
-    updateAccountListInternal(decideSelected);
+    reloadAndSelectAccountsInternal(decideSelected);
 }
 
-void KMFilterAccountList::applyOnAccount(MailCommon::MailFilter *filter)
-{
-    QTreeWidgetItemIterator it(this);
-
-    while (QTreeWidgetItem *item = *it) {
-        const QString id = item->text(2);
-        filter->setApplyOnAccount(id, item->checkState(0) == Qt::Checked);
-        ++it;
-    }
-}
-
-void KMFilterAccountList::applyOnAccount(const QStringList &selectedAccounts)
+void KMFilterAccountList::reloadAndSelectAccounts(const QStringList &selectedAccounts)
 {
     const auto decideSelected = [&selectedAccounts](const QString& accountName) {
         return selectedAccounts.contains(accountName);
     };
-    updateAccountListInternal(decideSelected);
+    reloadAndSelectAccountsInternal(decideSelected);
 }
 
-void KMFilterAccountList::updateAccountListInternal(const std::function<bool(const QString &)> &decideSelected)
+void KMFilterAccountList::reloadAndSelectAccountsInternal(const std::function<bool(const QString &)> &decideSelected)
 {
     clear();
 
@@ -94,18 +83,28 @@ void KMFilterAccountList::updateAccountListInternal(const std::function<bool(con
     }
 }
 
-QStringList KMFilterAccountList::selectedAccount()
+QStringList KMFilterAccountList::selectedAccounts() const
 {
-    QStringList lstAccount;
-    QTreeWidgetItemIterator it(this);
+    QStringList accounts;
 
-    while (QTreeWidgetItem *item = *it) {
+    const int count = topLevelItemCount();
+    for (int i = 0; i < count; ++i) {
+        QTreeWidgetItem *item = topLevelItem(i);
         if (item->checkState(0) == Qt::Checked) {
-            lstAccount << item->text(2);
+            accounts.append(item->text(2));
         }
-        ++it;
     }
-    return lstAccount;
+    return accounts;
+}
+
+void KMFilterAccountList::setSelectedAccountsOnFilter(MailCommon::MailFilter *filter) const
+{
+    const int count = topLevelItemCount();
+    for (int i = 0; i < count; ++i) {
+        const QTreeWidgetItem *const item = topLevelItem(i);
+        const QString id = item->text(2);
+        filter->setApplyOnAccount(id, item->checkState(0) == Qt::Checked);
+    }
 }
 
 #include "moc_kmfilteraccountlist.cpp"

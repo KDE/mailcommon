@@ -464,10 +464,10 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
 
     mAccounts = config.readEntry("accounts-set", QStringList());
     if (!mAccounts.isEmpty() && interactive) {
-        if (!MailCommon::FilterActionMissingAccountDialog::allAccountExist(mAccounts)) {
+        if (!MailCommon::FilterActionMissingAccountDialog::allAccountsExist(mAccounts)) {
             QPointer<MailCommon::FilterActionMissingAccountDialog> dlg = new MailCommon::FilterActionMissingAccountDialog(mAccounts, name());
             if (dlg->exec()) {
-                mAccounts = dlg->selectedAccount();
+                mAccounts = dlg->selectedAccounts();
                 needUpdate = true;
             }
             delete dlg;

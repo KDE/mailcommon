@@ -141,13 +141,14 @@ bool MailCommon::Util::showJobErrorMessage(KJob *job)
     return false;
 }
 
-Akonadi::AgentInstance::List MailCommon::Util::agentInstances(bool excludeMailDispacher)
+Akonadi::AgentInstance::List MailCommon::Util::agentInstances(bool excludeMailTransport)
 {
     Akonadi::AgentInstance::List relevantInstances;
-    const Akonadi::AgentInstance::List agentList = Akonadi::AgentManager::self()->instances();
-    std::copy_if(agentList.cbegin(), agentList.cend(), std::back_inserter(relevantInstances), [excludeMailDispacher](const Akonadi::AgentInstance &instance) {
-        return isMailAgent(instance, excludeMailDispacher);
-    });
+    for (const Akonadi::AgentInstance &instance : Akonadi::AgentManager::self()->instances()) {
+        if (isMailAgent(instance, excludeMailTransport)) {
+            relevantInstances.append(instance);
+        }
+    }
     return relevantInstances;
 }
 
@@ -158,14 +159,15 @@ bool MailCommon::Util::isMailAgent(const Akonadi::AgentInstance &instance, bool 
     }
 
     const QStringList capabilities(instance.type().capabilities());
-    if (capabilities.contains(QLatin1StringView("Resource")) && !capabilities.contains(QLatin1StringView("Virtual"))
-        && !capabilities.contains(QLatin1StringView("MailTransport")) && !capabilities.contains(QLatin1StringView("Autostart"))) {
-        return true;
-    } else if (!excludeMailTransport && instance.identifier() == QLatin1StringView("akonadi_maildispatcher_agent")) {
-        return true;
-    }
-
-    return false;
+    // clang-format off
+    return (capabilities.contains(QLatin1StringView("Resource")) &&
+            !capabilities.contains(QLatin1StringView("Virtual")) &&
+            !capabilities.contains(QLatin1StringView("MailTransport")) &&
+            !capabilities.contains(QLatin1StringView("Autostart")))
+        ||
+           (!excludeMailTransport &&
+            instance.identifier() == QLatin1StringView("akonadi_maildispatcher_agent"));
+    // clang-format on
 }
 
 bool MailCommon::Util::isUnifiedMailboxesAgent(const Akonadi::Collection &col)

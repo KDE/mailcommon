@@ -25,9 +25,9 @@ namespace
 static const char myFilterActionMissingAccountDialogConfigGroupName[] = "FilterActionMissingAccountDialog";
 }
 
-FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QStringList &lstAccount, const QString &filtername, QWidget *parent)
+FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QStringList &accounts, const QString &filtername, QWidget *parent)
     : QDialog(parent)
-    , mAccountList(new MailCommon::KMFilterAccountList(this))
+    , mAccountsSelector(new MailCommon::KMFilterAccountList(this))
 {
     setModal(true);
     setWindowTitle(i18nc("@title:window", "Select Account"));
@@ -41,9 +41,9 @@ FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QString
              filtername));
     label->setWordWrap(true);
     mainLayout->addWidget(label);
-    mAccountList->setObjectName(QLatin1StringView("accountlist"));
-    mAccountList->applyOnAccount(lstAccount);
-    mainLayout->addWidget(mAccountList);
+    mAccountsSelector->setObjectName(QLatin1StringView("accountlist"));
+    mAccountsSelector->reloadAndSelectAccounts(accounts);
+    mainLayout->addWidget(mAccountsSelector);
 
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QLatin1StringView("buttonbox"));
@@ -77,12 +77,12 @@ void FilterActionMissingAccountDialog::writeConfig()
     group.sync();
 }
 
-QStringList FilterActionMissingAccountDialog::selectedAccount() const
+QStringList FilterActionMissingAccountDialog::selectedAccounts() const
 {
-    return mAccountList->selectedAccount();
+    return mAccountsSelector->selectedAccounts();
 }
 
-bool FilterActionMissingAccountDialog::allAccountExist(const QStringList &lst)
+bool FilterActionMissingAccountDialog::allAccountsExist(const QStringList &lst)
 {
     const Akonadi::AgentInstance::List lstAgent = MailCommon::Util::agentInstances();
 

@@ -15,14 +15,14 @@ class MAILCOMMON_TESTS_EXPORT FilterActionMissingAccountDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit FilterActionMissingAccountDialog(const QStringList &lstAccount, const QString &filtername, QWidget *parent = nullptr);
+    explicit FilterActionMissingAccountDialog(const QStringList &accounts, const QString &filtername, QWidget *parent = nullptr);
     ~FilterActionMissingAccountDialog() override;
-    [[nodiscard]] QStringList selectedAccount() const;
-    [[nodiscard]] static bool allAccountExist(const QStringList &lst);
+    [[nodiscard]] QStringList selectedAccounts() const;
+    [[nodiscard]] static bool allAccountsExist(const QStringList &lst);
 
 private:
     MAILCOMMON_NO_EXPORT void readConfig();
     MAILCOMMON_NO_EXPORT void writeConfig();
-    MailCommon::KMFilterAccountList *const mAccountList;
+    MailCommon::KMFilterAccountList *const mAccountsSelector;
 };
 }
