@@ -32,12 +32,12 @@ Akonadi::Collection ItemContext::moveTargetCollection() const
 
 void ItemContext::setNeedsPayloadStore()
 {
-    mItemContextAction |= ItemContextAction::PlayloadStore;
+    mItemContextAction |= ItemContextAction::PayloadStore;
 }
 
 bool ItemContext::needsPayloadStore() const
 {
-    return mItemContextAction & ItemContextAction::PlayloadStore;
+    return mItemContextAction & ItemContextAction::PayloadStore;
 }
 
 void ItemContext::setNeedsFlagStore()

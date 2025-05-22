@@ -78,7 +78,7 @@ public:
 private:
     enum class ItemContextAction : uint8_t {
         None = 0,
-        PlayloadStore = 1,
+        PayloadStore = 1,
         FlagStore = 2,
         DeleteItem = 4,
         FullPayload = 8,
