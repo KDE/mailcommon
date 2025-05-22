@@ -26,7 +26,6 @@ public:
     void reloadAndSelectAccounts(const QStringList &selectedAccounts);
 
     [[nodiscard]] QStringList selectedAccounts() const;
-    void setSelectedAccountsOnFilter(MailCommon::MailFilter *filter) const;
 
 private:
     void reloadAndSelectAccountsInternal(const std::function<bool(const QString &)> &decideSelected);

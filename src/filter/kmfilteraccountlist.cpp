@@ -97,14 +97,4 @@ QStringList KMFilterAccountList::selectedAccounts() const
     return accounts;
 }
 
-void KMFilterAccountList::setSelectedAccountsOnFilter(MailCommon::MailFilter *filter) const
-{
-    const int count = topLevelItemCount();
-    for (int i = 0; i < count; ++i) {
-        const QTreeWidgetItem *const item = topLevelItem(i);
-        const QString id = item->text(2);
-        filter->setApplyOnAccount(id, item->checkState(0) == Qt::Checked);
-    }
-}
-
 #include "moc_kmfilteraccountlist.cpp"
