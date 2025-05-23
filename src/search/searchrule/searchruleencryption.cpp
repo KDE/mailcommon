@@ -5,9 +5,7 @@
 */
 
 #include "searchruleencryption.h"
-#include "filter/filterlog.h"
 #include "util/cryptoutils.h"
-using MailCommon::FilterLog;
 #include <KMime/Message>
 
 using namespace MailCommon;
@@ -27,20 +25,15 @@ bool SearchRuleEncryption::isEmpty() const
 
 bool SearchRuleEncryption::matches(const Akonadi::Item &item) const
 {
-    const bool shouldBeEncrypted = (function() == FuncEquals);
-
     if (!item.hasPayload<KMime::Message::Ptr>()) {
         return false;
     }
     const auto msg = item.payload<KMime::Message::Ptr>();
 
-    const bool rc = (shouldBeEncrypted == CryptoUtils::isEncrypted(msg.data()));
-    if (FilterLog::instance()->isLogging()) {
-        QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>") : QStringLiteral("<font color=#FF0000>0 = </font>"));
-        msg += FilterLog::recode(asString());
-        msg += QLatin1StringView(" ( <i>") + contents() + QLatin1StringView("</i> )"); // TODO change with locale?
-        FilterLog::instance()->add(msg, FilterLog::RuleResult);
-    }
+    const bool shouldBeEncrypted = function() == FuncEquals;
+    const bool rc = shouldBeEncrypted == CryptoUtils::isEncrypted(msg.data());
+
+    maybeLogMatchResult(rc);
     return rc;
 }
 

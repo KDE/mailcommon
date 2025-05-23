@@ -5,8 +5,6 @@
 */
 
 #include "searchruleattachment.h"
-#include "filter/filterlog.h"
-using MailCommon::FilterLog;
 #include <Akonadi/MessageStatus>
 #include <KMime/Message>
 
@@ -35,25 +33,16 @@ bool SearchRuleAttachment::matches(const Akonadi::Item &item) const
     bool rc = false;
     switch (function()) {
     case FuncEquals:
-        if (status & Akonadi::MessageStatus::statusHasAttachment()) {
-            rc = true;
-        }
+        rc = status & Akonadi::MessageStatus::statusHasAttachment();
         break;
     case FuncNotEqual:
-        if (!(status & Akonadi::MessageStatus::statusHasAttachment())) {
-            rc = true;
-        }
+        rc = !(status & Akonadi::MessageStatus::statusHasAttachment());
         break;
     default:
         break;
     }
 
-    if (FilterLog::instance()->isLogging()) {
-        QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>") : QStringLiteral("<font color=#FF0000>0 = </font>"));
-        msg += FilterLog::recode(asString());
-        msg += QLatin1StringView(" ( <i>") + contents() + QLatin1StringView("</i> )"); // TODO change with locale?
-        FilterLog::instance()->add(msg, FilterLog::RuleResult);
-    }
+    maybeLogMatchResult(rc);
     return rc;
 }
 

@@ -4,6 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 #include "searchrule.h"
+#include "filter/filterlog.h"
 #include "mailcommon_debug.h"
 #include "searchrule/searchruleattachment.h"
 #include "searchrule/searchruledate.h"
@@ -12,12 +13,11 @@
 #include "searchrule/searchrulenumerical.h"
 #include "searchrule/searchrulestatus.h"
 #include "searchrule/searchrulestring.h"
+using MailCommon::FilterLog;
 
 #include <KConfigGroup>
 
 #include <QDataStream>
-
-#include <algorithm>
 
 using namespace MailCommon;
 
@@ -598,6 +598,16 @@ bool SearchRule::isNegated() const
         break;
     }
     return negate;
+}
+
+void SearchRule::maybeLogMatchResult(bool result) const
+{
+    if (FilterLog::instance()->isLogging()) {
+        // TODO change with locale?
+        QString msg = QStringLiteral("<font color=#%1 = </font>%2 ( <i>%3</i> )")
+                          .arg((result ? QStringLiteral("00FF00>1") : QStringLiteral("FF0000>0")), FilterLog::recode(asString()), contents());
+        FilterLog::instance()->add(msg, FilterLog::RuleResult);
+    }
 }
 
 QDataStream &SearchRule::operator>>(QDataStream &s) const

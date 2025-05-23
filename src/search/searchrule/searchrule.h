@@ -253,6 +253,8 @@ protected:
      */
     [[nodiscard]] Akonadi::SearchTerm::Condition akonadiComparator() const;
 
+    void maybeLogMatchResult(bool result) const;
+
 private:
     MAILCOMMON_NO_EXPORT static Function configValueToFunc(const char *);
     MAILCOMMON_NO_EXPORT static QString functionToString(Function);

@@ -55,7 +55,7 @@ bool SearchRuleNumerical::matches(const Akonadi::Item &item) const
     } else {
         return false;
     }
-    bool rc = matchesInternal(numericalValue, numericalMsgContents, msgContents);
+    const bool rc = matchesInternal(numericalValue, numericalMsgContents, msgContents);
     if (FilterLog::instance()->isLogging()) {
         QString msg = (rc ? QStringLiteral("<font color=#00FF00>1 = </font>") : QStringLiteral("<font color=#FF0000>0 = </font>"));
         msg += FilterLog::recode(asString());
