@@ -69,7 +69,7 @@ public:
     /** Constructor that initializes from given config group.
      * Filters are stored one by one in config groups, i.e.
      * one filter, one group. */
-    explicit MailFilter(const KConfigGroup &aConfig, bool internal, bool &needUpdate);
+    explicit MailFilter(const KConfigGroup &aConfig, bool interactive, bool &needUpdate);
 
     /** Copy constructor. Constructs a deep copy of @p aFilter. */
     MailFilter(const MailFilter &other);
