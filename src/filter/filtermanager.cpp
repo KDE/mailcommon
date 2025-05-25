@@ -54,7 +54,7 @@ void FilterManager::FilterManagerPrivate::readConfig()
         KSharedConfig::openConfig(Akonadi::ServerManager::addNamespace(QStringLiteral("akonadi_mailfilter_agent")) + QStringLiteral("rc"));
     clear();
     QStringList emptyFilters;
-    mFilters = FilterImporterExporter::readFiltersFromConfig(config, emptyFilters);
+    mFilters = FilterImporterExporter::readFiltersFromConfig(config, false, emptyFilters);
     Q_EMIT q->filtersChanged();
 }
 
