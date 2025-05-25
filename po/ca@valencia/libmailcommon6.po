@@ -1438,8 +1438,8 @@ msgid ""
 "half of the dialog.</p></qt>"
 msgstr ""
 "<qt><p>Esta és la llista de filtres definits. Es processen de dalt a baix.</"
-"p><p>Cliqueu en qualsevol filtre per a editar-lo utilitzant els controls a "
-"la meitat dreta del diàleg.</p></qt>"
+"p><p>Cliqueu damunt de qualsevol filtre per a editar-lo utilitzant els "
+"controls a la meitat dreta del diàleg.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:83
 #, kde-format
@@ -1475,11 +1475,12 @@ msgid ""
 "accidentally, you can undo this by clicking on the <em>Down</em> button.</"
 "p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a moure el filtre seleccionat una posició cap "
-"<em>amunt</em> en la llista.</p><p>Açò és útil, ja que l'ordre dels filtres "
-"en la llista determina l'ordre en què s'apliquen en els missatges: el de més "
-"amunt s'aplicarà el primer.</p><p>Si heu clicat accidentalment este botó, "
-"podreu desfer-ho clicant en el botó <em>Baixa</em>.</p></qt>"
+"<qt><p>Cliqueu damunt d'este botó per a moure el filtre seleccionat una "
+"posició cap <em>amunt</em> en la llista.</p><p>Açò és útil, ja que l'ordre "
+"dels filtres en la llista determina l'ordre en què s'apliquen en els "
+"missatges: el de més amunt s'aplicarà el primer.</p><p>Si heu clicat "
+"accidentalment este botó, podreu desfer-ho clicant damunt del botó "
+"<em>Baixa</em>.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:96
 #, kde-format
@@ -1491,11 +1492,12 @@ msgid ""
 "accidentally, you can undo this by clicking on the <em>Up</em> button.</p></"
 "qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a moure el filtre seleccionat una posició cap "
-"<em>avall</em> en la llista.</p><p>Açò és útil, ja que l'ordre dels filtres "
-"en la llista determina l'ordre en què s'apliquen en els missatges: el de més "
-"amunt s'aplicarà el primer.</p><p>Si heu clicat accidentalment este botó, "
-"podreu desfer-ho clicant en el botó <em>Puja</em>.</p></qt>"
+"<qt><p>Cliqueu damunt d'este botó per a moure el filtre seleccionat una "
+"posició cap <em>avall</em> en la llista.</p><p>Açò és útil, ja que l'ordre "
+"dels filtres en la llista determina l'ordre en què s'apliquen en els "
+"missatges: el de més amunt s'aplicarà el primer.</p><p>Si heu clicat "
+"accidentalment este botó, podreu desfer-ho clicant damunt del botó <em>Puja</"
+"em>.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:104
 #, kde-format
@@ -1505,10 +1507,10 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a moure el filtre seleccionat a la part "
-"inferior de la llista.</p><p>Açò és útil, ja que l'ordre dels filtres en la "
-"llista determina l'ordre en què s'apliquen en els missatges: el de més amunt "
-"s'aplicarà el primer.</p></qt>"
+"<qt><p>Cliqueu damunt d'este botó per a moure el filtre seleccionat a la "
+"part inferior de la llista.</p><p>Açò és útil, ja que l'ordre dels filtres "
+"en la llista determina l'ordre en què s'apliquen en els missatges: el de més "
+"amunt s'aplicarà el primer.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:110
 #, kde-format
@@ -1518,10 +1520,10 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a moure el filtre seleccionat a la part "
-"superior de la llista.</p><p>Açò és útil, ja que l'ordre dels filtres en la "
-"llista determina l'ordre en què s'apliquen en els missatges: el de més amunt "
-"s'aplicarà el primer.</p></qt>"
+"<qt><p>Cliqueu damunt d'este botó per a moure el filtre seleccionat a la "
+"part superior de la llista.</p><p>Açò és útil, ja que l'ordre dels filtres "
+"en la llista determina l'ordre en què s'apliquen en els missatges: el de més "
+"amunt s'aplicarà el primer.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:140
 #, kde-format
@@ -1555,10 +1557,10 @@ msgid ""
 "that later on.</p><p>If you have clicked this button accidentally, you can "
 "undo this by clicking on the <em>Delete</em> button.</p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a crear un filtre nou.</p><p>El filtre "
+"<qt><p>Cliqueu damunt d'este botó per a crear un filtre nou.</p><p>El filtre "
 "s'inserirà immediatament abans del seleccionat, però sempre podreu canviar-"
 "ho més tard.</p><p>Si heu clicat accidentalment este botó, podreu desfer-ho "
-"clicant en el botó <em>Suprimix</em>.</p></qt>"
+"clicant damunt del botó <em>Suprimix</em>.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:152
 #, kde-format
@@ -1567,9 +1569,9 @@ msgid ""
 "button accidentally, you can undo this by clicking on the <em>Delete</em> "
 "button.</p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a copiar un filtre nou</p><p>Si heu clicat "
-"accidentalment este botó, podreu desfer-ho clicant en el botó <em>Suprimix</"
-"em>.</p></qt>"
+"<qt><p>Cliqueu damunt d'este botó per a copiar un filtre nou</p><p>Si heu "
+"clicat accidentalment este botó, podreu desfer-ho clicant damunt del botó "
+"<em>Suprimix</em>.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:156
 #, kde-format
@@ -1579,10 +1581,10 @@ msgid ""
 "deleted, but you can always leave the dialog by clicking <em>Cancel</em> to "
 "discard the changes made.</p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a <em>suprimir</em> el filtre seleccionat de la "
-"llista.</p><p>No hi ha manera de recuperar el filtre una vegada s'ha "
-"suprimit, però sempre podreu abandonar el diàleg clicant <em>Cancel·la</em> "
-"per a descartar els canvis efectuats.</p></qt>"
+"<qt><p>Cliqueu damunt d'este botó per a <em>suprimir</em> el filtre "
+"seleccionat de la llista.</p><p>No hi ha manera de recuperar el filtre una "
+"vegada s'ha suprimit, però sempre podreu abandonar el diàleg clicant damunt "
+"<em>Cancel·la</em> per a descartar els canvis efectuats.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:163
 #, kde-format
@@ -1593,11 +1595,12 @@ msgid ""
 "back, click this button and select <em>Clear</em> followed by <em>OK</em> in "
 "the appearing dialog.</p></qt>"
 msgstr ""
-"<qt><p>Cliqueu este botó per a canviar el nom del filtre seleccionat.</"
-"p><p>Els filtres s'anomenen automàticament, i comencen per «&lt;»</p><p>Si "
-"heu canviat el nom accidentalment un filtre i el voleu tornar a anomenar "
-"automàticament, cliqueu este botó i seleccioneu <em>Neteja</em> seguit per "
-"<em>D'acord</em> en el diàleg que apareixerà.</p></qt>"
+"<qt><p>Cliqueu damunt d'este botó per a canviar el nom del filtre "
+"seleccionat.</p><p>Els filtres s'anomenen automàticament, i comencen per "
+"«&lt;»</p><p>Si heu canviat el nom accidentalment un filtre i el voleu "
+"tornar a anomenar automàticament, cliqueu damunt d'este botó i seleccioneu "
+"<em>Neteja</em> seguit per <em>D'acord</em> en el diàleg que apareixerà.</"
+"p></qt>"
 
 #: filter/kmfilterlistbox.cpp:290
 #, kde-format
@@ -2207,13 +2210,13 @@ msgstr "Invitació"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
-msgstr "Escolliu o teclegeu els vostres propis criteris"
+msgstr "Trieu o teclegeu els vostres propis criteris"
 
 #: search/searchpatternedit.cpp:147
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
-msgstr "Escolliu o teclegeu els vostres propis criteris"
+msgstr "Trieu o teclegeu els vostres propis criteris"
 
 #: search/searchpatternedit.cpp:584
 #, kde-format
@@ -2689,7 +2692,7 @@ msgstr "Té un adjunt"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
-msgstr "Feu clic en el botó per a seleccionar un fitxer adjunt"
+msgstr "Cliqueu damunt del botó per a seleccionar un fitxer adjunt"
 
 #: snippets/snippetattachmentwidget.cpp:32
 #, kde-format
