@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 set(PIM_VERSION "6.6.40")
 
-project(mailcommon VERSION ${PIM_VERSION})
+project(mailcommon VERSION 6.6.41)
 
 set(KF_MIN_VERSION "6.19.0")
 set(QT_REQUIRED_VERSION "6.9.0")
