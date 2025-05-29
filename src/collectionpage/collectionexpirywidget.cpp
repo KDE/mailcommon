@@ -233,6 +233,7 @@ void CollectionExpiryWidget::save(const CollectionExpirySettings &collectionExpi
     attribute->setReadExpireUnits(collectionExpirySettings.mReadExpireUnits);
     attribute->setUnreadExpireUnits(collectionExpirySettings.mUnreadExpireUnits);
     attribute->setExpireAction(collectionExpirySettings.mExpireAction);
+    attribute->setExpireMessagesWithValidDate(!collectionExpirySettings.expiryMessagesWithInvalidDate);
 
     if (saveSettings) {
         auto job = new CollectionExpiryJob;
@@ -275,6 +276,7 @@ void CollectionExpirySettings::convertFromExpireCollectionAttribute(const Expire
         mReadExpireUnits = attr->readExpireUnits();
         mExpireAction = attr->expireAction();
         mExpireToFolderId = attr->expireToFolderId();
+        expiryMessagesWithInvalidDate = !attr->expireMessagesWithValidDate();
     }
 }
 
