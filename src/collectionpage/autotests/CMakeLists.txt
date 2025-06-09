@@ -6,7 +6,7 @@ macro(add_mailcommon_collectionpage_test _source)
         TEST_NAME ${_name}
         NAME_PREFIX "mailcommon-collectionpage-"
         LINK_LIBRARIES Qt::Test KPim6::MailCommon
-)
+    )
 endmacro()
 
 add_mailcommon_collectionpage_test(expirecollectionattributetest.cpp)

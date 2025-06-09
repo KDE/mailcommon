@@ -6,7 +6,7 @@ ecm_qtdesignerplugin_widget(MailCommon::SearchPatternEdit
     TOOLTIP "Search pattern editor (KDE-PIM)"
     WHATSTHIS "This widget is intended to be used in the filter configuration as well as in the message search dialogs."
     GROUP "Input (KDE-PIM)"
-    )
+)
 
 ecm_add_qtdesignerplugin(mailcommonwidgets
     NAME KDEPimMailCommonWidgets
@@ -19,4 +19,4 @@ ecm_add_qtdesignerplugin(mailcommonwidgets
     KF6::I18n
     INSTALL_DESTINATION "${KDE_INSTALL_QTPLUGINDIR}/designer"
     COMPONENT Devel
-    )
+)

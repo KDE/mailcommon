@@ -137,16 +137,16 @@ public:
     const SearchPattern *pattern() const;
 
     /** Set whether this filter should be applied on
-      outbound messages (@p aApply == true) or not.
+      outbound messages (@p apply == true) or not.
       See applyOnOutbound applyOnInbound setApplyOnInbound
     */
-    void setApplyOnOutbound(bool aApply);
+    void setApplyOnOutbound(bool apply);
 
     /** Set whether this filter should be applied on
-      outbound messages before sending (@p aApply == TRUE) or not.
+      outbound messages before sending (@p apply == TRUE) or not.
       See applyOnOutbound applyOnInbound setApplyOnInbound
     */
-    void setApplyBeforeOutbound(bool aApply);
+    void setApplyBeforeOutbound(bool apply);
 
     /** @return true if this filter should be applied on
       outbound messages, false otherwise.
@@ -161,10 +161,10 @@ public:
     [[nodiscard]] bool applyBeforeOutbound() const;
 
     /** Set whether this filter should be applied on
-      inbound messages (@p aApply == true) or not.
+      inbound messages (@p apply == true) or not.
       @see setApplyOnOutbound applyOnInbound applyOnOutbound
     */
-    void setApplyOnInbound(bool aApply);
+    void setApplyOnInbound(bool apply);
 
     /** @return true if this filter should be applied on
       inbound messages, false otherwise.
@@ -173,10 +173,10 @@ public:
     [[nodiscard]] bool applyOnInbound() const;
 
     /** Set whether this filter should be applied on
-      explicit (CTRL-J) filtering (@p aApply == true) or not.
+      explicit (CTRL-J) filtering (@p apply == true) or not.
       @see setApplyOnOutbound applyOnInbound applyOnOutbound
     */
-    void setApplyOnExplicit(bool aApply);
+    void setApplyOnExplicit(bool apply);
 
     /** @return true if this filter should be applied on
       explicit (CTRL-J) filtering, false otherwise.
@@ -185,18 +185,18 @@ public:
     [[nodiscard]] bool applyOnExplicit() const;
 
     /** Set whether this filter should be applied on
-      inbound messages for all accounts (@p aApply == All) or
-      inbound messages for all but IMAP accounts (@p aApply == ButImap) or
+      inbound messages for all accounts (@p apply == All) or
+      inbound messages for all but IMAP accounts (@p apply == ButImap) or
       for a specified set of accounts only.
       Only applicable to filters that are applied on inbound messages.
       @see setApplyOnInbound setApplyOnAccount
     */
-    void setApplicability(AccountType aApply = All);
+    void setApplicability(AccountType apply = All);
 
     /** Sets whether the filter should be applied on inbound emails in all
       folders, not just Inbox.
     */
-    void setApplyOnAllFoldersInbound(bool aApply);
+    void setApplyOnAllFoldersInbound(bool apply);
 
     /** Returns whether the filter should be applied on inbound emails in all
       folders, not just Inbox.
@@ -217,7 +217,7 @@ public:
       set of accounts.
       @see setApplicability applyOnAccount
     */
-    void setApplyOnAccount(const QString &id, bool aApply = true);
+    void setApplyOnAccount(const QString &id, bool apply = true);
 
     /** @return true if this filter should be applied on
       inbound messages from the account with id (@p id), false otherwise.

@@ -446,13 +446,13 @@ void SearchRuleWidgetLister::setRuleList(QList<SearchRule::Ptr> *aList)
     QList<QWidget *> widgetList = widgets();
     QList<SearchRule::Ptr>::const_iterator rIt;
     QList<SearchRule::Ptr>::const_iterator rItEnd(mRuleList->constEnd());
-    QList<QWidget *>::const_iterator wIt = widgetList.constBegin();
+    QList<QWidget *>::const_iterator with = widgetList.constBegin();
     QList<QWidget *>::const_iterator wItEnd = widgetList.constEnd();
-    for (rIt = mRuleList->constBegin(); rIt != rItEnd && wIt != wItEnd; ++rIt, ++wIt) {
-        qobject_cast<SearchRuleWidget *>(*wIt)->setRule((*rIt));
+    for (rIt = mRuleList->constBegin(); rIt != rItEnd && with != wItEnd; ++rIt, ++with) {
+        qobject_cast<SearchRuleWidget *>(*with)->setRule((*rIt));
     }
-    for (; wIt != wItEnd; ++wIt) {
-        qobject_cast<SearchRuleWidget *>(*wIt)->reset();
+    for (; with != wItEnd; ++with) {
+        qobject_cast<SearchRuleWidget *>(*with)->reset();
     }
 
     Q_ASSERT(!widgets().isEmpty());
@@ -494,10 +494,10 @@ void SearchRuleWidgetLister::updateAddRemoveButton()
         addButtonEnabled = true;
         removeButtonEnabled = true;
     }
-    QList<QWidget *>::ConstIterator wIt = widgetList.constBegin();
+    QList<QWidget *>::ConstIterator with = widgetList.constBegin();
     QList<QWidget *>::ConstIterator wEnd = widgetList.constEnd();
-    for (; wIt != wEnd; ++wIt) {
-        auto w = qobject_cast<SearchRuleWidget *>(*wIt);
+    for (; with != wEnd; ++with) {
+        auto w = qobject_cast<SearchRuleWidget *>(*with);
         w->updateAddRemoveButton(addButtonEnabled, removeButtonEnabled);
     }
 }

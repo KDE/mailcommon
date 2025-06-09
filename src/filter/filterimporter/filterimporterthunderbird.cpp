@@ -259,7 +259,7 @@ bool FilterImporterThunderbird::splitConditions(const QString &cond, MailCommon:
     {nsMsgSearchOp::Contains, "contains"},
     {nsMsgSearchOp::DoesntContain,"doesn't contain"},
     {nsMsgSearchOp::Is,"is"},
-    {nsMsgSearchOp::Isnt,  "isn't"},
+    {nsMsgSearchOp::Isn't,  "isn't"},
     {nsMsgSearchOp::IsEmpty, "is empty"},
     {nsMsgSearchOp::IsntEmpty, "isn't empty"},
     {nsMsgSearchOp::IsBefore, "is before"},

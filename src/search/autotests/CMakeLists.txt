@@ -6,7 +6,7 @@ macro(add_search_autotest _source)
         TEST_NAME ${_name}
         NAME_PREFIX "mailcommon-search-"
         LINK_LIBRARIES Qt::Test KPim6::MailCommon KF6::Codecs
-)
+    )
 endmacro()
 
 add_search_autotest(searchpatterntest.cpp)

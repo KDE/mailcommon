@@ -178,14 +178,14 @@ const SearchPattern *MailFilter::pattern() const
     return &mPattern;
 }
 
-void MailFilter::setApplyOnOutbound(bool aApply)
+void MailFilter::setApplyOnOutbound(bool apply)
 {
-    bApplyOnOutbound = aApply;
+    bApplyOnOutbound = apply;
 }
 
-void MailFilter::setApplyBeforeOutbound(bool aApply)
+void MailFilter::setApplyBeforeOutbound(bool apply)
 {
-    bApplyBeforeOutbound = aApply;
+    bApplyBeforeOutbound = apply;
 }
 
 bool MailFilter::applyOnOutbound() const
@@ -198,9 +198,9 @@ bool MailFilter::applyBeforeOutbound() const
     return bApplyBeforeOutbound;
 }
 
-void MailFilter::setApplyOnInbound(bool aApply)
+void MailFilter::setApplyOnInbound(bool apply)
 {
-    bApplyOnInbound = aApply;
+    bApplyOnInbound = apply;
 }
 
 bool MailFilter::applyOnInbound() const
@@ -208,9 +208,9 @@ bool MailFilter::applyOnInbound() const
     return bApplyOnInbound;
 }
 
-void MailFilter::setApplyOnExplicit(bool aApply)
+void MailFilter::setApplyOnExplicit(bool apply)
 {
-    bApplyOnExplicit = aApply;
+    bApplyOnExplicit = apply;
 }
 
 bool MailFilter::applyOnExplicit() const
@@ -218,9 +218,9 @@ bool MailFilter::applyOnExplicit() const
     return bApplyOnExplicit;
 }
 
-void MailFilter::setApplyOnAllFoldersInbound(bool aApply)
+void MailFilter::setApplyOnAllFoldersInbound(bool apply)
 {
-    bApplyOnAllFolders = aApply;
+    bApplyOnAllFolders = apply;
 }
 
 bool MailFilter::applyOnAllFoldersInbound() const
@@ -228,9 +228,9 @@ bool MailFilter::applyOnAllFoldersInbound() const
     return bApplyOnAllFolders;
 }
 
-void MailFilter::setApplicability(AccountType aApply)
+void MailFilter::setApplicability(AccountType apply)
 {
-    mApplicability = aApply;
+    mApplicability = apply;
 }
 
 MailFilter::AccountType MailFilter::applicability() const
@@ -284,11 +284,11 @@ void MailFilter::clearApplyOnAccount()
     mAccounts.clear();
 }
 
-void MailFilter::setApplyOnAccount(const QString &id, bool aApply)
+void MailFilter::setApplyOnAccount(const QString &id, bool apply)
 {
-    if (aApply && !mAccounts.contains(id)) {
+    if (apply && !mAccounts.contains(id)) {
         mAccounts.append(id);
-    } else if (!aApply && mAccounts.contains(id)) {
+    } else if (!apply && mAccounts.contains(id)) {
         mAccounts.removeAll(id);
     }
 }

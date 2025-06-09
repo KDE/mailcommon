@@ -118,7 +118,7 @@ public:
     static SearchRule::Ptr createInstance(const SearchRule &other);
 
     /**
-     * Creates a new search rule by deseralizing its structure from a data @p stream.
+     * Creates a new search rule by deserializing its structure from a data @p stream.
      */
     static SearchRule::Ptr createInstance(QDataStream &stream);
 

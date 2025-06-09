@@ -314,10 +314,10 @@ void FilterActionWidgetLister::setActionList(QList<FilterAction *> *list)
     // load the actions into the widgets
     QList<QWidget *> widgetList = widgets();
     QList<FilterAction *>::const_iterator aEnd(d->mActionList->constEnd());
-    QList<QWidget *>::ConstIterator wIt = widgetList.constBegin();
+    QList<QWidget *>::ConstIterator with = widgetList.constBegin();
     QList<QWidget *>::ConstIterator wEnd = widgetList.constEnd();
-    for (QList<FilterAction *>::const_iterator aIt = d->mActionList->constBegin(); (aIt != aEnd && wIt != wEnd); ++aIt, ++wIt) {
-        connectWidget((*wIt), (*aIt));
+    for (QList<FilterAction *>::const_iterator aIt = d->mActionList->constBegin(); (aIt != aEnd && with != wEnd); ++aIt, ++with) {
+        connectWidget((*with), (*aIt));
     }
     widgets().constFirst()->blockSignals(false);
     updateAddRemoveButton();
@@ -361,10 +361,10 @@ void FilterActionWidgetLister::updateAddRemoveButton()
         addButtonEnabled = true;
         removeButtonEnabled = true;
     }
-    QList<QWidget *>::ConstIterator wIt = widgetList.constBegin();
+    QList<QWidget *>::ConstIterator with = widgetList.constBegin();
     QList<QWidget *>::ConstIterator wEnd = widgetList.constEnd();
-    for (; wIt != wEnd; ++wIt) {
-        auto w = qobject_cast<FilterActionWidget *>(*wIt);
+    for (; with != wEnd; ++with) {
+        auto w = qobject_cast<FilterActionWidget *>(*with);
         w->updateAddRemoveButton(addButtonEnabled, removeButtonEnabled);
     }
 }
