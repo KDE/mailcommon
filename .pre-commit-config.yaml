@@ -39,7 +39,7 @@ repos:
    rev: v2.4.1
    hooks:
     - id: codespell
-      exclude: (textemoticons/core/data/emoji.json|textgrammarcheck/grammalecte/autotests/data/result1.json|texttranslator/translator/plugins/bergamot/autotests/data/modellanguages/models.json|textgrammarcheck/languagetool/autotests/data/test2.json|textautocorrection/core/autotests/data/custom-fr-ref.xml|textgrammarcheck/common/autotests/grammarresultutiltest.cpp|textautocorrection/core/autotests/data/custom-fr.xml)
+      exclude: (src/filter/filteractions/filteractionforward.cpp|src/filter/autotests/gpghome/trustlist.txt|autotests/unittestenv/xdgconfig/akonadi_knut_resource_0rc|src/filter/autotests/gpgdata/text-plain.msg.smime|src/filter/autotests/gpghome/private-keys-v1.d/1AB79D3867F2789661A1FF16675F5778804FD2AD.key|src/filter/autotests/gpghome/private-keys-v1.d/89F939DAC83D1CFDC09042B238D430FFC2BF662C.key|src/filter/autotests/gpghome/private-keys-v1.d/E16CFA285A3D4C9D4402FFF4BE8968ABDC855AD7.key|src/filter/autotests/gpghome/smime.cert|src/filter/autotests/gpghome/trustlist.txt|src/filter/autotests/unittestenv/xdgconfig/akonadi_knut_resource_0rc|src/filter/filterimporter/autotests/unittestenv/xdgconfig/akonadi_knut_resource_0rc)
  - repo: https://github.com/BlankSpruce/gersemi
    rev: 0.19.3
    hooks:
