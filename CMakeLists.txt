@@ -194,7 +194,7 @@ if(USE_UNITY_CMAKE_SUPPORT)
 endif()
 
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
-ecm_set_disabled_deprecation_versions(QT 6.10.0 KF 6.15.0)
+ecm_set_disabled_deprecation_versions(QT 6.10.0 KF 6.16.0)
 
 add_subdirectory(src)
 if(BUILD_TESTING)
