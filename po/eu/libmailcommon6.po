@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-25 00:44+0000\n"
-"PO-Revision-Date: 2025-01-05 11:21+0100\n"
+"PO-Revision-Date: 2025-07-23 14:10+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 25.04.3\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -408,7 +408,7 @@ msgstr ""
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
 msgid "Add Tag…"
-msgstr "Gehitu etiketa..."
+msgstr "Gehitu etiketa…"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -962,7 +962,7 @@ msgstr "Gorde…"
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr "Partekatu..."
+msgstr "Partekatu…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -1117,17 +1117,17 @@ msgstr "Iragazte arauak"
 #: filter/kmfilterdialog.cpp:90
 #, kde-format
 msgid "Import…"
-msgstr "Inportatu..."
+msgstr "Inportatu…"
 
 #: filter/kmfilterdialog.cpp:92
 #, kde-format
 msgid "Export…"
-msgstr "Esportatu..."
+msgstr "Esportatu…"
 
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
 msgid "Convert to…"
-msgstr "Bihurtu..."
+msgstr "Bihurtu…"
 
 #: filter/kmfilterdialog.cpp:98
 #, kde-format
@@ -1794,7 +1794,7 @@ msgstr "Mesedez, hautatu karpeta bat"
 #, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
-msgstr "Azpikarpeta &berria..."
+msgstr "Azpikarpeta &berria…"
 
 #: folder/folderselectiondialog.cpp:67
 #, kde-format
@@ -1805,7 +1805,7 @@ msgstr "Sortu azpikarpeta berri bat unean hautatutako karpetaren barruan"
 #: folder/folderselectiondialog.cpp:126
 #, kde-format
 msgid "&New Subfolder…"
-msgstr "Azpikarpeta &berria..."
+msgstr "Azpikarpeta &berria…"
 
 #: folder/folderselectiondialog.cpp:178
 #, kde-format
@@ -2038,8 +2038,8 @@ msgstr "Mezu zaharrak %1 karpetatik kentzea huts egin du."
 #, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "%2 karpetatik mezu zahar 1 kentzen..."
-msgstr[1] "%2 karpetatik %1 mezu zahar kentzen..."
+msgstr[0] "%2 karpetatik mezu zahar 1 kentzen…"
+msgstr[1] "%2 karpetatik %1 mezu zahar kentzen…"
 
 #: job/expirejob.cpp:164
 #, kde-format
@@ -2051,8 +2051,8 @@ msgstr ""
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] "Mezu zahar 1 %2 karpetatik %3 karpetara eramaten..."
-msgstr[1] "%1 mezu zahar %2 karpetatik %3 karpetara eramaten..."
+msgstr[0] "Mezu zahar 1 %2 karpetatik %3 karpetara eramaten…"
+msgstr[1] "%1 mezu zahar %2 karpetatik %3 karpetara eramaten…"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
@@ -2773,13 +2773,13 @@ msgstr "%1 testu-zatia"
 #, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
-msgstr "Gehitu testu-zatia..."
+msgstr "Gehitu testu-zatia…"
 
 #: snippets/snippetsmanager.cpp:560
 #, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
-msgstr "Editatu testu-zatia..."
+msgstr "Editatu testu-zatia…"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
@@ -2791,13 +2791,13 @@ msgstr "Kendu testu-zatia"
 #, kde-format
 msgctxt "@action"
 msgid "Add Group…"
-msgstr "Gehitu taldea..."
+msgstr "Gehitu taldea…"
 
 #: snippets/snippetsmanager.cpp:567
 #, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
-msgstr "Berrizendatu taldea..."
+msgstr "Berrizendatu taldea…"
 
 #: snippets/snippetsmanager.cpp:569
 #, kde-format
@@ -3043,7 +3043,7 @@ msgstr "Ikono-modua"
 #: widgets/favoritecollectionwidget.cpp:235
 #, kde-format
 msgid "Drop your favorite folders here…"
-msgstr "Jaregin zure gogoko karpetak hemen..."
+msgstr "Jaregin zure gogoko karpetak hemen…"
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format
