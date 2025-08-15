@@ -29,7 +29,7 @@ using namespace MailCommon;
 class DaysSpinBox : public QSpinBox
 {
 public:
-    DaysSpinBox(QWidget *parent)
+    explicit DaysSpinBox(QWidget *parent)
         : QSpinBox(parent)
     {
         setMaximum(999999);

@@ -24,7 +24,7 @@ namespace MailCommon
 class FilterManager::FilterManagerPrivate
 {
 public:
-    FilterManagerPrivate(FilterManager *qq)
+    explicit FilterManagerPrivate(FilterManager *qq)
         : q(qq)
         , mMonitor(new Akonadi::Monitor)
     {

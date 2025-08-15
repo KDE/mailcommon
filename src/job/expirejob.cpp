@@ -135,7 +135,6 @@ void ExpireJob::itemFetchResult(KJob *job)
 
 void ExpireJob::done()
 {
-    QString str;
     bool moving = false;
     if (!mRemovedMsgs.isEmpty()) {
         const int count = mRemovedMsgs.count();
@@ -144,6 +143,7 @@ void ExpireJob::done()
         mCancellable = false;
 
         const MailCommon::ExpireCollectionAttribute *expirationAttribute = mSrcFolder.attribute<MailCommon::ExpireCollectionAttribute>();
+        QString str;
         if (expirationAttribute) {
             const QString srcFolderName{mSrcFolder.name()};
             if (expirationAttribute->expireAction() == MailCommon::ExpireCollectionAttribute::ExpireDelete) {

@@ -28,7 +28,7 @@ using namespace MailCommon;
 class FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelPrivate
 {
 public:
-    FolderTreeWidgetProxyModelPrivate(FolderTreeWidgetProxyModel *qq)
+    explicit FolderTreeWidgetProxyModelPrivate(FolderTreeWidgetProxyModel *qq)
         : q(qq)
     {
     }

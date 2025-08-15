@@ -122,9 +122,9 @@ KMime::Message::Ptr CryptoUtils::decryptMessage(const KMime::Message::Ptr &msg, 
     if (inlinePGP) {
         inData = outData;
         auto verify = proto->verifyOpaqueJob(true);
-        auto result = verify->exec(inData, outData);
-        if (result.error()) {
-            qCWarning(MAILCOMMON_LOG) << "Failed to verify:" << result.error().asString();
+        auto resultVerify = verify->exec(inData, outData);
+        if (resultVerify.error()) {
+            qCWarning(MAILCOMMON_LOG) << "Failed to verify:" << resultVerify.error().asString();
             return {};
         }
     }
