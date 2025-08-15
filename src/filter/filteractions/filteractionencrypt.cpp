@@ -8,6 +8,7 @@
 #include "filteractionencrypt.h"
 #include "mailcommon_debug.h"
 #include "util/cryptoutils.h"
+#include <gpgme.h>
 
 #include <QCheckBox>
 #include <QEventLoop>
@@ -92,7 +93,11 @@ void FilterActionEncrypt::argsFromString(const QString &argsStr)
     listJob->deleteLater();
 
     if (result.error()) {
+#if GPGME_VERSION_NUMBER >= 0x011800 // 1.24.0
+        qCWarning(MAILCOMMON_LOG) << "Failed to retrieve keys:" << result.error().asStdString();
+#else
         qCWarning(MAILCOMMON_LOG) << "Failed to retrieve keys:" << result.error().asString();
+#endif
         return;
     }
 

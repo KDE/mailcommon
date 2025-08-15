@@ -15,6 +15,7 @@
 #include <gpgme++/context.h>
 #include <gpgme++/decryptionresult.h>
 #include <gpgme++/verificationresult.h>
+#include <gpgme.h>
 
 using namespace MailCommon;
 
@@ -115,7 +116,11 @@ KMime::Message::Ptr CryptoUtils::decryptMessage(const KMime::Message::Ptr &msg, 
     auto result = decrypt->exec(inData, outData);
     if (result.error()) {
         // unknown key, invalid algo, or general error
+#if GPGME_VERSION_NUMBER >= 0x011800 // 1.24.0
+        qCWarning(MAILCOMMON_LOG) << "Failed to decrypt:" << result.error().asStdString();
+#else
         qCWarning(MAILCOMMON_LOG) << "Failed to decrypt:" << result.error().asString();
+#endif
         return {};
     }
 
@@ -124,7 +129,11 @@ KMime::Message::Ptr CryptoUtils::decryptMessage(const KMime::Message::Ptr &msg, 
         auto verify = proto->verifyOpaqueJob(true);
         auto resultVerify = verify->exec(inData, outData);
         if (resultVerify.error()) {
-            qCWarning(MAILCOMMON_LOG) << "Failed to verify:" << resultVerify.error().asString();
+#if GPGME_VERSION_NUMBER >= 0x011800 // 1.24.0
+        qCWarning(MAILCOMMON_LOG) << "Failed to verify:" << resultVerify.error().asStdString();
+#else
+        qCWarning(MAILCOMMON_LOG) << "Failed to verify:" << resultVerify.error().asString();
+#endif
             return {};
         }
     }
