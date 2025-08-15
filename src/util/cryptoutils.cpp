@@ -130,9 +130,9 @@ KMime::Message::Ptr CryptoUtils::decryptMessage(const KMime::Message::Ptr &msg, 
         auto resultVerify = verify->exec(inData, outData);
         if (resultVerify.error()) {
 #if GPGME_VERSION_NUMBER >= 0x011800 // 1.24.0
-        qCWarning(MAILCOMMON_LOG) << "Failed to verify:" << resultVerify.error().asStdString();
+            qCWarning(MAILCOMMON_LOG) << "Failed to verify:" << resultVerify.error().asStdString();
 #else
-        qCWarning(MAILCOMMON_LOG) << "Failed to verify:" << resultVerify.error().asString();
+            qCWarning(MAILCOMMON_LOG) << "Failed to verify:" << resultVerify.error().asString();
 #endif
             return {};
         }
