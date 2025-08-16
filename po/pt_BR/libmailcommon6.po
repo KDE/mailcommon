@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-25 00:44+0000\n"
+"POT-Creation-Date: 2025-08-16 00:44+0000\n"
 "PO-Revision-Date: 2025-07-26 13:55-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -601,27 +601,27 @@ msgstr "Excluir mensagem"
 msgid "Be careful, mails will be removed."
 msgstr "Tenha cuidado, os e-mails serão removidos."
 
-#: filter/filteractions/filteractionencrypt.cpp:43
+#: filter/filteractions/filteractionencrypt.cpp:44
 #, kde-format
 msgid "Encrypt"
 msgstr "Criptografar"
 
-#: filter/filteractions/filteractionencrypt.cpp:206
+#: filter/filteractions/filteractionencrypt.cpp:211
 #, kde-format
 msgid "No encryption key has been selected"
 msgstr "Nenhuma chave de criptografia foi selecionada"
 
-#: filter/filteractions/filteractionencrypt.cpp:242
+#: filter/filteractions/filteractionencrypt.cpp:247
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
 msgstr "Recriptografar e-mails com esta chave"
 
-#: filter/filteractions/filteractionencrypt.cpp:252
+#: filter/filteractions/filteractionencrypt.cpp:257
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
 msgstr "<b>Atenção:</b> É necessária uma chave privada para ler os e-mails."
 
-#: filter/filteractions/filteractionencrypt.cpp:254
+#: filter/filteractions/filteractionencrypt.cpp:259
 #, kde-format
 msgid ""
 "<p>Once an email has been encrypted you will need a crypto setup with your "

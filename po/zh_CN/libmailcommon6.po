@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-25 00:44+0000\n"
+"POT-Creation-Date: 2025-08-16 00:44+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -544,27 +544,27 @@ msgstr "删除信件"
 msgid "Be careful, mails will be removed."
 msgstr "小心，邮件会被删除。"
 
-#: filter/filteractions/filteractionencrypt.cpp:43
+#: filter/filteractions/filteractionencrypt.cpp:44
 #, kde-format
 msgid "Encrypt"
 msgstr "加密"
 
-#: filter/filteractions/filteractionencrypt.cpp:206
+#: filter/filteractions/filteractionencrypt.cpp:211
 #, kde-format
 msgid "No encryption key has been selected"
 msgstr "未选择加密密钥"
 
-#: filter/filteractions/filteractionencrypt.cpp:242
+#: filter/filteractions/filteractionencrypt.cpp:247
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
 msgstr "使用此密钥对加密过的邮件再次加密"
 
-#: filter/filteractions/filteractionencrypt.cpp:252
+#: filter/filteractions/filteractionencrypt.cpp:257
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
 msgstr "<b>警告:</b> 需要密钥来阅读邮件。"
 
-#: filter/filteractions/filteractionencrypt.cpp:254
+#: filter/filteractions/filteractionencrypt.cpp:259
 #, kde-format
 msgid ""
 "<p>Once an email has been encrypted you will need a crypto setup with your "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-25 00:44+0000\n"
+"POT-Creation-Date: 2025-08-16 00:44+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -638,27 +638,27 @@ msgstr "Obriši poruku"
 msgid "Be careful, mails will be removed."
 msgstr "Pazite, poruke će biti uklonjene."
 
-#: filter/filteractions/filteractionencrypt.cpp:43
+#: filter/filteractions/filteractionencrypt.cpp:44
 #, kde-format
 msgid "Encrypt"
 msgstr "Šifruj"
 
-#: filter/filteractions/filteractionencrypt.cpp:206
+#: filter/filteractions/filteractionencrypt.cpp:211
 #, kde-format
 msgid "No encryption key has been selected"
 msgstr "Nije nađen nijedan ključ za šifrovanje."
 
-#: filter/filteractions/filteractionencrypt.cpp:242
+#: filter/filteractions/filteractionencrypt.cpp:247
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
 msgstr "Ponovo šifruj već šifrovane poruke ovim ključem"
 
-#: filter/filteractions/filteractionencrypt.cpp:252
+#: filter/filteractions/filteractionencrypt.cpp:257
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
 msgstr "<b>Upozorenje:</b> tajni ključ neophodan za čitanje poruka."
 
-#: filter/filteractions/filteractionencrypt.cpp:254
+#: filter/filteractions/filteractionencrypt.cpp:259
 #, kde-format
 msgid ""
 "<p>Once an email has been encrypted you will need a crypto setup with your "
