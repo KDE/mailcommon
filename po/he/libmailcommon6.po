@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-16 00:44+0000\n"
-"PO-Revision-Date: 2025-08-19 19:50+0300\n"
+"PO-Revision-Date: 2025-08-20 23:00+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
-"2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Lokalize 25.08.0\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
@@ -2471,15 +2471,15 @@ msgstr ""
 msgctxt "Unit suffix where units are days."
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "יום"
+msgstr[1] "יומיים"
+msgstr[2] "%v ימים"
+msgstr[3] "%v ימים"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:28
 msgctxt "message status"
 msgid "Important"
-msgstr ""
+msgstr "חשוב"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:29
 msgctxt "message status"
@@ -2489,62 +2489,62 @@ msgstr ""
 #: search/widgethandler/statusrulewidgethandler.cpp:30
 msgctxt "message status"
 msgid "Unread"
-msgstr ""
+msgstr "לא נקראה"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:31
 msgctxt "message status"
 msgid "Read"
-msgstr ""
+msgstr "נקראה"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:32
 msgctxt "message status"
 msgid "Deleted"
-msgstr ""
+msgstr "נמחקה"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:33
 msgctxt "message status"
 msgid "Replied"
-msgstr ""
+msgstr "זכתה למענה"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:34
 msgctxt "message status"
 msgid "Forwarded"
-msgstr ""
+msgstr "הועברה"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:35
 msgctxt "message status"
 msgid "Queued"
-msgstr ""
+msgstr "בתור"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:36
 msgctxt "message status"
 msgid "Sent"
-msgstr ""
+msgstr "נשלחה"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:37
 msgctxt "message status"
 msgid "Watched"
-msgstr ""
+msgstr "נקראה"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:38
 msgctxt "message status"
 msgid "Ignored"
-msgstr ""
+msgstr "נתעלמה"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:39
 msgctxt "message status"
 msgid "Spam"
-msgstr ""
+msgstr "זבל"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:40
 msgctxt "message status"
 msgid "Ham"
-msgstr ""
+msgstr "תקין"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:41
 msgctxt "message status"
 msgid "Has Attachment"
-msgstr ""
+msgstr "יש צרופה"
 
 #: snippets/snippetattachmentwidget.cpp:26
 #, kde-format
@@ -2556,12 +2556,12 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
-msgstr ""
+msgstr "בחירת צרופות"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
@@ -2573,42 +2573,42 @@ msgstr ""
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Filename:"
-msgstr ""
+msgstr "שם קובץ:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
 #, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
-msgstr ""
+msgstr "הוספת משתנים"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
 #: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
-msgstr ""
+msgstr "בחירת צרופות"
 
 #: snippets/snippetselectattachmentwidget.cpp:45
 #, kde-format
 msgid "Do you want to delete selected attachment?"
-msgstr ""
+msgstr "למחוק את הצרופות הנבחרות?"
 
 #: snippets/snippetsmanager.cpp:154
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "כללי"
 
 #: snippets/snippetsmanager.cpp:160
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Snippet"
-msgstr ""
+msgstr "הוספת קטע טקסט"
 
 #: snippets/snippetsmanager.cpp:226
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Snippet"
-msgstr ""
+msgstr "עריכת קטע טקסט"
 
 #: snippets/snippetsmanager.cpp:286
 #, kde-kuit-format
@@ -2617,18 +2617,19 @@ msgid ""
 "Do you really want to remove snippet \"%1\"?<nl/><warning>There is no way to "
 "undo the removal.</warning>"
 msgstr ""
+"להסיר את מקטע הטקסט „%1”?<nl/><warning>אין דרך להסיג את ההסרה.</warning>"
 
 #: snippets/snippetsmanager.cpp:305
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Group"
-msgstr ""
+msgstr "הוספת קבוצה"
 
 #: snippets/snippetsmanager.cpp:330
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Group"
-msgstr ""
+msgstr "עריכת קבוצה"
 
 #: snippets/snippetsmanager.cpp:359
 #, kde-kuit-format
@@ -2637,12 +2638,14 @@ msgid ""
 "Do you really want to remove group \"%1\" along with all its snippets?<nl/"
 "><warning>There is no way to undo the removal.</warning>"
 msgstr ""
+"להסיר את הקבוצה „%1” על כל מקטעי הטקסט שלה?<nl/><warning>אין דרך להסיג את "
+"ההסרה.</warning>"
 
 #: snippets/snippetsmanager.cpp:369
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to remove group \"%1\"?"
-msgstr ""
+msgstr "להסיר את הקבוצה „%1”?"
 
 #: snippets/snippetsmanager.cpp:437 snippets/snippetsmanager.cpp:466
 #, kde-format
@@ -2672,19 +2675,19 @@ msgstr ""
 #, kde-format
 msgctxt "@action"
 msgid "Add Group…"
-msgstr ""
+msgstr "הוספת קבוצה…"
 
 #: snippets/snippetsmanager.cpp:567
 #, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
-msgstr ""
+msgstr "שינוי שם הקבוצה…"
 
 #: snippets/snippetsmanager.cpp:569
 #, kde-format
 msgctxt "@action"
 msgid "Remove Group"
-msgstr ""
+msgstr "הסרת קבוצה"
 
 #: snippets/snippetsmanager.cpp:572
 #, kde-format
@@ -2707,7 +2710,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Update"
-msgstr ""
+msgstr "עדכון"
 
 #: snippets/snippettreeview.cpp:65
 #, kde-format
@@ -2718,19 +2721,19 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
-msgstr ""
+msgstr "נא למלא ערכים למשתנים"
 
 #: snippets/snippetvariabledialog.cpp:40
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
-msgstr ""
+msgstr "נא למלא את ערכי ההחלפה עבור ‚%1’:"
 
 #: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
-msgstr ""
+msgstr "הפיכת הערך ל&ברירת המחדל"
 
 #: snippets/snippetvariabledialog.cpp:48
 #, kde-format
@@ -2762,20 +2765,20 @@ msgstr ""
 #: snippets/ui/snippetwidget.ui:32
 #, kde-format
 msgid "&Name:"
-msgstr ""
+msgstr "&שם:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabelGroup)
 #: snippets/ui/snippetwidget.ui:50
 #, kde-format
 msgctxt "Group to which the snippet belongs."
 msgid "Group:"
-msgstr ""
+msgstr "קבוצה:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: snippets/ui/snippetwidget.ui:69
 #, kde-format
 msgid "Subject:"
-msgstr ""
+msgstr "נושא:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: snippets/ui/snippetwidget.ui:88
@@ -2805,72 +2808,72 @@ msgstr ""
 #: snippets/ui/snippetwidget.ui:157
 #, kde-format
 msgid "Variables"
-msgstr ""
+msgstr "משתנים"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: snippets/ui/snippetwidget.ui:181
 #, kde-format
 msgid "Attachments:"
-msgstr ""
+msgstr "קבצים מצורפים:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: snippets/ui/snippetwidget.ui:193
 #, kde-format
 msgid "Keyword:"
-msgstr ""
+msgstr "מילת מפתח:"
 
 #. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
 #: snippets/ui/snippetwidget.ui:212
 #, kde-format
 msgid "Sho&rtcut:"
-msgstr ""
+msgstr "קיצור &דרך:"
 
 #: tag/addtagdialog.cpp:39
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Tag"
-msgstr ""
+msgstr "הוספת תגית"
 
 #: tag/addtagdialog.cpp:76
 #, kde-format
 msgid "Tag %1 already exists"
-msgstr ""
+msgstr "התגית %1 כבר קיימת"
 
 #: tag/tagwidget.cpp:63
 #, kde-format
 msgctxt "@label:listbox Name of the tag"
 msgid "Name:"
-msgstr ""
+msgstr "שם:"
 
 #: tag/tagwidget.cpp:70
 #, kde-format
 msgctxt "@option:check"
 msgid "Change te&xt color:"
-msgstr ""
+msgstr "החלפת &צבע הטקסט:"
 
 #: tag/tagwidget.cpp:82
 #, kde-format
 msgctxt "@option:check"
 msgid "Change &background color:"
-msgstr ""
+msgstr "החלפת צבע ה7רקע:"
 
 #: tag/tagwidget.cpp:94
 #, kde-format
 msgctxt "@option:check"
 msgid "Change fo&nt:"
-msgstr ""
+msgstr "החלפת &גופן:"
 
 #: tag/tagwidget.cpp:100
 #, kde-format
 msgctxt "@option:check"
 msgid "&Bold"
-msgstr ""
+msgstr "מודג&ש"
 
 #: tag/tagwidget.cpp:104
 #, kde-format
 msgctxt "@option:check"
 msgid "&Italics"
-msgstr ""
+msgstr "&נטוי"
 
 #: tag/tagwidget.cpp:122
 #, kde-format
@@ -2882,40 +2885,40 @@ msgstr ""
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
-msgstr ""
+msgstr "קיצור &דרך:"
 
 #: tag/tagwidget.cpp:144
 #, kde-format
 msgctxt "@option:check"
 msgid "Enable &toolbar button"
-msgstr ""
+msgstr "הפעלת &כפתור בסרגל הכלים"
 
 #: widgets/favoritecollectionwidget.cpp:91
 #, kde-format
 msgid "Icon size"
-msgstr ""
+msgstr "גודל סמלים"
 
 #: widgets/favoritecollectionwidget.cpp:110
 #, kde-format
 msgid "Mode"
-msgstr ""
+msgstr "מצב"
 
 #: widgets/favoritecollectionwidget.cpp:114
 #, kde-format
 msgctxt "@action"
 msgid "List Mode"
-msgstr ""
+msgstr "מצב רשימה"
 
 #: widgets/favoritecollectionwidget.cpp:124
 #, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
-msgstr ""
+msgstr "מצב סמלים"
 
 #: widgets/favoritecollectionwidget.cpp:235
 #, kde-format
 msgid "Drop your favorite folders here…"
-msgstr ""
+msgstr "נא לגרור את התיקיות המועדפות עליך לכאן…"
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format
@@ -2936,52 +2939,52 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Redirect Message"
-msgstr ""
+msgstr "הפניית הודעה"
 
 #: widgets/redirectdialog.cpp:123
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
-msgstr ""
+msgstr "נא לבחור את כתובות הנמענים להפנות אליהן:"
 
 #: widgets/redirectdialog.cpp:152
 #, kde-format
 msgid "Identity:"
-msgstr ""
+msgstr "זהות:"
 
 #: widgets/redirectdialog.cpp:156
 #, kde-format
 msgid "Transport:"
-msgstr ""
+msgstr "תעבורה:"
 
 #: widgets/redirectdialog.cpp:158
 #, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
-msgstr ""
+msgstr "לשלוח &עכשיו"
 
 #: widgets/redirectdialog.cpp:159
 #, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
-msgstr ""
+msgstr "לשלוח &אחר כך"
 
 #: widgets/redirectdialog.cpp:207
 #, kde-format
 msgid "You cannot redirect the message without an address."
-msgstr ""
+msgstr "אי אפשר להפנות את ההודעה ללא כתובת."
 
 #: widgets/redirectdialog.cpp:207
 #, kde-format
 msgctxt "@title:window"
 msgid "Empty Redirection Address"
-msgstr ""
+msgstr "כתובת הפניה ריקה"
 
 #: widgets/redirectwidget.cpp:39
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
-msgstr ""
+msgstr "יש להשתמש בחלונית בחירת הכתובות"
 
 #: widgets/redirectwidget.cpp:41
 #, kde-format
@@ -2989,3 +2992,4 @@ msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr ""
+"הכפתור הזה פותח חלונית נפרדת בה ניתן לבחור נמענים מתוך כל הכתובות הזמינות."
