@@ -6,6 +6,8 @@
  */
 
 #include "filteractionforward.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mailcommon_debug.h"
 
 #include "filter/dialog/filteractionmissingtemplatedialog.h"
@@ -56,7 +58,7 @@ FilterAction::ReturnCode FilterActionForward::process(ItemContext &context, bool
     factory.setTemplate(mTemplate);
 
     KMime::Message::Ptr fwdMsg = factory.createForward();
-    fwdMsg->to()->fromUnicodeString(fwdMsg->to()->asUnicodeString() + QLatin1Char(',') + mParameter, "utf-8");
+    fwdMsg->to()->fromUnicodeString(fwdMsg->to()->asUnicodeString() + u',' + mParameter, "utf-8");
     if (!KernelIf->msgSender()->send(fwdMsg, MessageComposer::MessageSender::SendDefault)) {
         qCWarning(MAILCOMMON_LOG) << "FilterAction: could not forward message (sending failed)";
         return ErrorButGoOn; // error: couldn't send

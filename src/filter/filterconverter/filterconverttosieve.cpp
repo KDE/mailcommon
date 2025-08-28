@@ -5,6 +5,8 @@
 */
 
 #include "filterconverttosieve.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filter/mailfilter.h"
 #include "filterconverttosieveresultdialog.h"
 
@@ -27,12 +29,12 @@ void FilterConvertToSieve::convert()
         QString code;
         for (MailFilter *filter : std::as_const(mListFilters)) {
             filter->generateSieveScript(requiresModule, code);
-            code += QLatin1Char('\n');
+            code += u'\n';
         }
         QString requireStr;
         for (const QString &require : std::as_const(requiresModule)) {
             requireStr += QStringLiteral("require \"%1\";").arg(require);
-            requireStr += QLatin1Char('\n');
+            requireStr += u'\n';
         }
         result = requireStr + code;
     }

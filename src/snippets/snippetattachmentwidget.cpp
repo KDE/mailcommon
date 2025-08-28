@@ -5,6 +5,8 @@
 */
 
 #include "snippetattachmentwidget.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "snippetselectattachmentdialog.h"
 #include <KLocalizedString>
 #include <QHBoxLayout>
@@ -55,9 +57,9 @@ void SnippetAttachmentWidget::clear()
 void SnippetAttachmentWidget::slotSelectAttachment()
 {
     QPointer<MailCommon::SnippetSelectAttachmentDialog> dlg = new MailCommon::SnippetSelectAttachmentDialog(this);
-    dlg->setAttachments(mLineEdit->text().split(QLatin1Char(','), Qt::SkipEmptyParts));
+    dlg->setAttachments(mLineEdit->text().split(u',', Qt::SkipEmptyParts));
     if (dlg->exec()) {
-        mLineEdit->setText(dlg->attachments().join(QLatin1Char(',')));
+        mLineEdit->setText(dlg->attachments().join(u','));
         Q_EMIT wasChanged();
     }
     delete dlg;

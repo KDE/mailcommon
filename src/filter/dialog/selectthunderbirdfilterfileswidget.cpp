@@ -5,6 +5,8 @@
 */
 
 #include "selectthunderbirdfilterfileswidget.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "ui_selectthunderbirdfilterfileswidget.h"
 #include <MailImporter/FilterThunderbird>
 #include <QAbstractButton>
@@ -82,11 +84,11 @@ void SelectThunderbirdFilterFilesWidget::slotProfileChanged(int index)
     QDir dir(path);
     const QStringList subDir = dir.entryList(QDir::AllDirs | QDir::NoDotAndDotDot, QDir::Name);
     for (const QString &mailPath : subDir) {
-        const QString subMailPath(path + QLatin1Char('/') + mailPath);
+        const QString subMailPath(path + u'/' + mailPath);
         QDir dirMail(subMailPath);
         const QStringList subDirMail = dirMail.entryList(QDir::AllDirs | QDir::NoDotAndDotDot, QDir::Name);
         for (const QString &file : subDirMail) {
-            const QString filterFile(subMailPath + QLatin1Char('/') + file + QLatin1StringView("/msgFilterRules.dat"));
+            const QString filterFile(subMailPath + u'/' + file + QLatin1StringView("/msgFilterRules.dat"));
             if (QFile(filterFile).exists()) {
                 listFilterFiles << filterFile;
             }

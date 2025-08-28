@@ -5,6 +5,8 @@
 */
 
 #include "filterimporterexportergui.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filter/mailfilter.h"
 
 #include <QApplication>
@@ -84,7 +86,7 @@ void FilterImporterExporterGui::importFilters(MailCommon::FilterImporterExporter
     QString result;
     for (MailCommon::MailFilter *filter : filters) {
         if (!result.isEmpty()) {
-            result += QLatin1Char('\n');
+            result += u'\n';
         }
         result += filter->asString();
     }

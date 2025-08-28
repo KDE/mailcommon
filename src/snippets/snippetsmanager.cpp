@@ -8,6 +8,8 @@
 */
 
 #include "snippetsmanager.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mailcommon_debug.h"
 #include "snippetdialog.h"
 #include "snippetsmodel.h"
@@ -435,7 +437,7 @@ void SnippetsManager::SnippetsManagerPrivate::initializeAction(const QString &ne
                                                                const QString &attachment)
 {
     const QString actionName = i18nc("@action", "Snippet %1", newName);
-    const QString normalizedName = QString(actionName).replace(QLatin1Char(' '), QLatin1Char('_'));
+    const QString normalizedName = QString(actionName).replace(u' ', u'_');
 
     QAction *action = mActionCollection->addAction(normalizedName, q);
     connect(action, &QAction::triggered, q, [this]() {
@@ -464,7 +466,7 @@ void SnippetsManager::SnippetsManagerPrivate::updateActionCollection(const QStri
     // remove previous action in case that the name changed
     if (!oldName.isEmpty() && mActionCollection) {
         const QString actionName = i18nc("@action", "Snippet %1", oldName);
-        const QString normalizedName = QString(actionName).replace(QLatin1Char(' '), QLatin1Char('_'));
+        const QString normalizedName = QString(actionName).replace(u' ', u'_');
 
         QAction *action = mActionCollection->action(normalizedName);
         if (action) {
@@ -490,7 +492,7 @@ QString SnippetsManager::SnippetsManagerPrivate::replaceVariables(const QString 
         // find the next variable by this regex
         iFound = text.indexOf(QRegularExpression(QStringLiteral("\\$[A-Za-z\\-_0-9\\s]*\\$")), iEnd + 1);
         if (iFound >= 0) {
-            iEnd = text.indexOf(QLatin1Char('$'), iFound + 1) + 1;
+            iEnd = text.indexOf(u'$', iFound + 1) + 1;
 
             variableName = text.mid(iFound, iEnd - iFound);
 
@@ -511,7 +513,7 @@ QString SnippetsManager::SnippetsManagerPrivate::replaceVariables(const QString 
                     variableValue = localVariables.value(variableName);
                 }
             } else {
-                variableValue = QLatin1Char('$'); // if double-delimiter -> replace by single character
+                variableValue = u'$'; // if double-delimiter -> replace by single character
             }
 
             result.replace(variableName, variableValue);

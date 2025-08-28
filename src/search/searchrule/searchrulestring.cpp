@@ -5,6 +5,8 @@
 */
 
 #include "searchrulestring.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filter/filterlog.h"
 using MailCommon::FilterLog;
 
@@ -154,7 +156,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
             || (qstricmp(field().constData(), "from") == 0) || (qstricmp(field().constData(), "reply-to") == 0)) {
             if (function() == SearchRule::FuncEndWith || function() == SearchRule::FuncNotEndWith) {
                 QString newContents = msgContents;
-                if (newContents.endsWith(QLatin1Char('>'))) {
+                if (newContents.endsWith(u'>')) {
                     newContents.chop(1);
                     rc = matchesInternal(newContents);
                 }

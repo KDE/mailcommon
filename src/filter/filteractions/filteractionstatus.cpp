@@ -6,6 +6,8 @@
 */
 
 #include "filteractionstatus.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include <KLocalizedString>
 using namespace MailCommon;
 
@@ -57,7 +59,7 @@ QString FilterActionStatus::realStatusString(const QString &statusStr)
     QString result(statusStr);
 
     if (result.size() == 2) {
-        result.remove(QLatin1Char('U'));
+        result.remove(u'U');
     }
 
     return result;

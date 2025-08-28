@@ -152,8 +152,7 @@ void CollectionGeneralPage::save(Collection &collection)
     if (mNameEdit) {
         if (!mIsLocalSystemFolder) {
             const QString nameFolder(mNameEdit->text().trimmed());
-            bool canRenameFolder = !(nameFolder.startsWith(QLatin1Char('.')) || nameFolder.endsWith(QLatin1Char('.')) || nameFolder.contains(QLatin1Char('/'))
-                                     || nameFolder.isEmpty());
+            bool canRenameFolder = !(nameFolder.startsWith(u'.') || nameFolder.endsWith(u'.') || nameFolder.contains(u'/') || nameFolder.isEmpty());
 
             if (mIsResourceFolder && (PimCommon::Util::isImapResource(collection.resource()))) {
                 collection.setName(nameFolder);
@@ -228,7 +227,7 @@ void CollectionGeneralPage::slotNameChanged(const QString &name)
 {
 #ifndef QT_NO_STYLE_STYLESHEET
     QString styleSheet;
-    if (name.startsWith(QLatin1Char('.')) || name.endsWith(QLatin1Char('.')) || name.contains(QLatin1Char('/')) || name.trimmed().isEmpty()) {
+    if (name.startsWith(u'.') || name.endsWith(u'.') || name.contains(u'/') || name.trimmed().isEmpty()) {
         if (mColorName.isEmpty()) {
             const KColorScheme::BackgroundRole bgColorScheme(KColorScheme::NegativeBackground);
             KStatefulBrush bgBrush(KColorScheme::View, bgColorScheme);

@@ -6,6 +6,8 @@
  */
 
 #include "filteractionencrypt.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mailcommon_debug.h"
 #include "util/cryptoutils.h"
 #include <gpgme.h>
@@ -70,7 +72,7 @@ QString FilterActionEncrypt::argsAsString() const
 
 void FilterActionEncrypt::argsFromString(const QString &argsStr)
 {
-    const int pos = argsStr.indexOf(QLatin1Char(':'));
+    const int pos = argsStr.indexOf(u':');
     const QStringView strView(argsStr);
     const auto protoStr = strView.left(pos);
 

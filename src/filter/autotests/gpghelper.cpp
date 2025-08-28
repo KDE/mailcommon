@@ -5,6 +5,7 @@
  */
 
 #include "gpghelper.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <QDebug>
 #include <QFileInfo>
@@ -26,8 +27,8 @@ bool copyRecursively(const QString &src, const QString &dest)
         QDir srcDir(src);
         const auto srcFiles = srcDir.entryList(QDir::Files | QDir::Dirs | QDir::NoDotAndDotDot | QDir::Hidden | QDir::System);
         for (const auto &fileName : srcFiles) {
-            const QString srcFile = src + QLatin1Char('/') + fileName;
-            const QString dstFile = dest + QLatin1Char('/') + fileName;
+            const QString srcFile = src + u'/' + fileName;
+            const QString dstFile = dest + u'/' + fileName;
             if (!copyRecursively(srcFile, dstFile)) {
                 return false;
             }

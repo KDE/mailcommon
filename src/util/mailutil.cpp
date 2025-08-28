@@ -5,6 +5,8 @@
 */
 
 #include "mailutil.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mailutil_p.h"
 
 #include "calendarinterface.h"
@@ -84,7 +86,7 @@ QString MailCommon::Util::fullCollectionPath(const Akonadi::Collection &collecti
     fullPath = idx.data().toString();
     idx = idx.parent();
     while (idx != QModelIndex()) {
-        const QString tmp = idx.data().toString() + QLatin1Char('/') + fullPath;
+        const QString tmp = idx.data().toString() + u'/' + fullPath;
         idx = idx.parent();
         if (idx != QModelIndex()) {
             fullPath = tmp;
@@ -112,7 +114,7 @@ QString MailCommon::Util::fullCollectionRemoveIdPath(const Akonadi::Collection &
     fullPath = idx.data().toString();
     idx = idx.parent();
     while (idx != QModelIndex()) {
-        const QString tmp = idx.data(Akonadi::EntityTreeModel::RemoteIdRole).toString() + QLatin1Char('/') + fullPath;
+        const QString tmp = idx.data(Akonadi::EntityTreeModel::RemoteIdRole).toString() + u'/' + fullPath;
         idx = idx.parent();
         if (idx != QModelIndex()) {
             fullPath = tmp;
@@ -205,7 +207,7 @@ QString MailCommon::Util::realFolderPath(const QString &path)
     QString realPath(path);
     realPath.remove(QStringLiteral(".directory"));
     realPath.replace(QLatin1StringView("/."), QStringLiteral("/"));
-    if (!realPath.isEmpty() && (realPath.at(0) == QLatin1Char('.'))) {
+    if (!realPath.isEmpty() && (realPath.at(0) == u'.')) {
         realPath.remove(0, 1); // remove first "."
     }
     return realPath;

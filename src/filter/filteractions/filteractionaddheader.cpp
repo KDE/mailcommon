@@ -6,6 +6,7 @@
  */
 
 #include "filteractionaddheader.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <KComboBox>
 #include <KLineEdit>
@@ -144,7 +145,7 @@ SearchRule::RequiredPart FilterActionAddHeader::requiredPart() const
 QString FilterActionAddHeader::argsAsString() const
 {
     QString result = mParameter;
-    result += QLatin1Char('\t');
+    result += u'\t';
     result += mValue;
 
     return result;
@@ -157,7 +158,7 @@ QString FilterActionAddHeader::displayString() const
 
 void FilterActionAddHeader::argsFromString(const QString &argsStr)
 {
-    const QStringList list = argsStr.split(QLatin1Char('\t'));
+    const QStringList list = argsStr.split(u'\t');
     QString result;
     if (list.count() < 2) {
         result = list[0];
@@ -203,12 +204,12 @@ QString FilterActionAddHeader::informationAboutNotValidAction() const
     }
     if (mValue.isEmpty()) {
         if (result.isEmpty()) {
-            result += QLatin1Char('\n');
+            result += u'\n';
         }
         result += i18n("The header value was missing.");
     }
     if (!result.isEmpty()) {
-        result = name() + QLatin1Char('\n') + result;
+        result = name() + u'\n' + result;
     }
     return result;
 }

@@ -4,6 +4,8 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 #include "searchrule.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filter/filterlog.h"
 #include "mailcommon_debug.h"
 #include "searchrule/searchruleattachment.h"
@@ -262,10 +264,10 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         int offset = 0;
         switch (mFunction) {
         case FuncEquals:
-            comparison = QLatin1Char('"') + i18n("size equals not supported") + QLatin1Char('"');
+            comparison = u'"' + i18n("size equals not supported") + u'"';
             break;
         case FuncNotEqual:
-            comparison = QLatin1Char('"') + i18n("size not equals not supported") + QLatin1Char('"');
+            comparison = u'"' + i18n("size not equals not supported") + u'"';
             break;
         case FuncIsGreater:
             comparison = QStringLiteral(":over");
@@ -298,31 +300,30 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         case FuncContainsNot:
         case FuncRegExp:
         case FuncNotRegExp:
-            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1StringView(mField), conditionToString(mFunction))
-                + QLatin1Char('"');
+            code += u'"' + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1StringView(mField), conditionToString(mFunction)) + u'"';
             return;
         }
         code += QStringLiteral("size %1 %2K").arg(comparison).arg(QString::number(mContents.toInt() + offset));
     } else if (mField == "<status>") {
         // TODO ?
-        code += QLatin1Char('"') + i18n("<status> not implemented/supported") + QLatin1Char('"');
+        code += u'"' + i18n("<status> not implemented/supported") + u'"';
     } else if (mField == "<any header>") {
         // TODO ?
-        code += QLatin1Char('"') + i18n("<any header> not implemented/supported") + QLatin1Char('"');
+        code += u'"' + i18n("<any header> not implemented/supported") + u'"';
     } else if (mField == "contents") {
         // TODO ?
-        code += QLatin1Char('"') + i18n("<contents> not implemented/supported") + QLatin1Char('"');
+        code += u'"' + i18n("<contents> not implemented/supported") + u'"';
     } else if (mField == "<age in days>") {
         // TODO ?
-        code += QLatin1Char('"') + i18n("<age in days> not implemented/supported") + QLatin1Char('"');
+        code += u'"' + i18n("<age in days> not implemented/supported") + u'"';
     } else if (mField == "<date>") {
         // TODO ?
-        code += QLatin1Char('"') + i18n("<date> not implemented/supported") + QLatin1Char('"');
+        code += u'"' + i18n("<date> not implemented/supported") + u'"';
     } else if (mField == "<recipients>") {
         // TODO ?
-        code += QLatin1Char('"') + i18n("<recipients> not implemented/supported") + QLatin1Char('"');
+        code += u'"' + i18n("<recipients> not implemented/supported") + u'"';
     } else if (mField == "<tag>") {
-        code += QLatin1Char('"') + i18n("<Tag> is not supported") + QLatin1Char('"');
+        code += u'"' + i18n("<Tag> is not supported") + u'"';
     } else if (mField == "<message>") {
         // TODO ?
         code += i18n("<message> not implemented/supported");
@@ -367,7 +368,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
             if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
-            contentStr = QLatin1Char('^') + contentStr;
+            contentStr = u'^' + contentStr;
             break;
         case FuncNotStartWith:
             comparison = QStringLiteral(":regex");
@@ -375,7 +376,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
-            contentStr = QLatin1Char('^') + contentStr;
+            contentStr = u'^' + contentStr;
             negative = true;
             break;
         case FuncEndWith:
@@ -384,7 +385,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
-            contentStr = contentStr + QLatin1Char('$');
+            contentStr = contentStr + u'$';
             break;
         case FuncNotEndWith:
             comparison = QStringLiteral(":regex");
@@ -392,7 +393,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
-            contentStr = contentStr + QLatin1Char('$');
+            contentStr = contentStr + u'$';
             negative = true;
             break;
         case FuncIsGreater:
@@ -407,8 +408,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         case FuncHasNoAttachment:
         case FuncHasInvitation:
         case FuncHasNoInvitation:
-            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1StringView(mField), conditionToString(mFunction))
-                + QLatin1Char('"');
+            code += u'"' + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1StringView(mField), conditionToString(mFunction)) + u'"';
             return;
         }
         code += (negative ? QStringLiteral("not ") : QString()) + QStringLiteral("body :text %1 \"%2\"").arg(comparison, contentStr);
@@ -450,7 +450,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
             if (!requireModules.contains(QLatin1StringView("regex"))) {
                 requireModules << QStringLiteral("regex");
             }
-            contentStr = QLatin1Char('^') + contentStr;
+            contentStr = u'^' + contentStr;
             break;
         case FuncNotStartWith:
             comparison = QStringLiteral(":regex");
@@ -458,7 +458,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
-            contentStr = QLatin1Char('^') + contentStr;
+            contentStr = u'^' + contentStr;
             negative = true;
             break;
         case FuncEndWith:
@@ -467,7 +467,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
-            contentStr = contentStr + QLatin1Char('$');
+            contentStr = contentStr + u'$';
             break;
         case FuncNotEndWith:
             comparison = QStringLiteral(":regex");
@@ -475,7 +475,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
                 requireModules << QStringLiteral("regex");
             }
             comparison = QStringLiteral(":regex");
-            contentStr = contentStr + QLatin1Char('$');
+            contentStr = contentStr + u'$';
             negative = true;
             break;
 
@@ -491,8 +491,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
         case FuncHasNoInvitation:
         case FuncHasAttachment:
         case FuncHasNoAttachment:
-            code += QLatin1Char('"') + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1StringView(mField), conditionToString(mFunction))
-                + QLatin1Char('"');
+            code += u'"' + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1StringView(mField), conditionToString(mFunction)) + u'"';
             return;
         }
         code += (negative ? QStringLiteral("not ") : QString())

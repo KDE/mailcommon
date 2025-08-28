@@ -6,6 +6,7 @@
  */
 
 #include "filteractionrewriteheader.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <KComboBox>
 #include <KLineEdit>
@@ -43,7 +44,7 @@ QString FilterActionRewriteHeader::informationAboutNotValidAction() const
     }
     if (mRegex.pattern().isEmpty()) {
         if (!info.isEmpty()) {
-            info += QLatin1Char('\n');
+            info += u'\n';
         }
         info += i18n("Search string is empty.");
     }
@@ -195,9 +196,9 @@ void FilterActionRewriteHeader::clearParamWidget(QWidget *paramWidget) const
 QString FilterActionRewriteHeader::argsAsString() const
 {
     QString result = mParameter;
-    result += QLatin1Char('\t');
+    result += u'\t';
     result += mRegex.pattern();
-    result += QLatin1Char('\t');
+    result += u'\t';
     result += mReplacementString;
 
     return result;
@@ -210,7 +211,7 @@ QString FilterActionRewriteHeader::displayString() const
 
 void FilterActionRewriteHeader::argsFromString(const QString &argsStr)
 {
-    const QStringList list = argsStr.split(QLatin1Char('\t'));
+    const QStringList list = argsStr.split(u'\t');
     if (list.count() < 3) {
         return;
     }

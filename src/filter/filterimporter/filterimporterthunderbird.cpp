@@ -5,6 +5,8 @@
 */
 
 #include "filterimporterthunderbird.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
 #include <MailImporter/FilterIcedove>
@@ -91,13 +93,13 @@ MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream
                         value = QStringLiteral("5 (Lowest)");
                     }
                     lstValue << value;
-                    value = lstValue.join(QLatin1Char('\t'));
+                    value = lstValue.join(u'\t');
                     actionName = QStringLiteral("add header");
                 } else if (actionName == QLatin1StringView("copy") || actionName == QLatin1StringView("transfer")) {
                     QUrl url = QUrl::fromLocalFile(value);
                     if (url.isValid()) {
                         QString path = url.path();
-                        if (path.startsWith(QLatin1Char('/'))) {
+                        if (path.startsWith(u'/')) {
                             path.remove(0, 1); // Remove '/'
                         }
                         value = path;
@@ -199,10 +201,10 @@ bool FilterImporterThunderbird::splitConditions(const QString &cond, MailCommon:
     */
 
     QString str = cond.trimmed();
-    str.remove(QLatin1Char('('));
+    str.remove(u'(');
     str.remove(str.length() - 1, 1); // remove last )
 
-    const QStringList listOfCond = str.split(QLatin1Char(','));
+    const QStringList listOfCond = str.split(u',');
     if (listOfCond.count() < 3) {
         qCDebug(MAILCOMMON_LOG) << "We have a pb in cond:" << cond;
         return false;

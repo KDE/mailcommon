@@ -9,6 +9,7 @@
 
 // my header
 #include "mailfilter.h"
+using namespace Qt::Literals::StringLiterals;
 
 // other kmail headers
 #include "dialog/filteractionmissingaccountdialog.h"
@@ -491,7 +492,7 @@ void MailFilter::generateSieveScript(QStringList &requiresModules, QString &code
         if (firstAction) {
             firstAction = false;
         } else {
-            code += QLatin1Char('\n');
+            code += u'\n';
         }
         code += indentationStr + (*it)->sieveCode();
         const QStringList lstRequires = (*it)->sieveRequires();
@@ -502,7 +503,7 @@ void MailFilter::generateSieveScript(QStringList &requiresModules, QString &code
         }
     }
     if (bStopProcessingHere) {
-        code += QLatin1Char('\n') + indentationStr + QStringLiteral("stop;");
+        code += u'\n' + indentationStr + QStringLiteral("stop;");
     }
     code += QLatin1StringView("\n}\n");
 }
@@ -564,7 +565,7 @@ QString MailFilter::purify(bool removeAction)
 
     if (mActions.isEmpty()) {
         if (!informationAboutNotValidAction.isEmpty()) {
-            informationAboutNotValidAction += QLatin1Char('\n');
+            informationAboutNotValidAction += u'\n';
         }
         informationAboutNotValidAction += i18n("Any action defined.");
     } else {
@@ -574,7 +575,7 @@ QString MailFilter::purify(bool removeAction)
             FilterAction *action = it.previous();
             if (action->isEmpty()) {
                 if (!informationAboutNotValidAction.isEmpty()) {
-                    informationAboutNotValidAction += QLatin1Char('\n');
+                    informationAboutNotValidAction += u'\n';
                 }
                 informationAboutNotValidAction += action->informationAboutNotValidAction();
                 if (removeAction) {
@@ -617,7 +618,7 @@ const QString MailFilter::asString() const
     QString result;
 
     result += QLatin1StringView("Filter name: ") + name() + QLatin1StringView(" (") + mIdentifier + QLatin1StringView(")\n");
-    result += mPattern.asString() + QLatin1Char('\n');
+    result += mPattern.asString() + u'\n';
 
     result += QStringLiteral("Filter is %1\n").arg(bEnabled ? QStringLiteral("enabled") : QStringLiteral("disabled"));
 
@@ -626,9 +627,9 @@ const QString MailFilter::asString() const
     for (; it != end; ++it) {
         result += QStringLiteral("    action: ");
         result += (*it)->label();
-        result += QLatin1Char(' ');
+        result += u' ';
         result += (*it)->argsAsString();
-        result += QLatin1Char('\n');
+        result += u'\n';
     }
     result += QStringLiteral("This filter belongs to the following sets:");
     if (bApplyOnInbound) {
@@ -646,7 +647,7 @@ const QString MailFilter::asString() const
     if (bApplyOnAllFolders) {
         result += QStringLiteral(" All Folders");
     }
-    result += QLatin1Char('\n');
+    result += u'\n';
     if (bApplyOnInbound && mApplicability == All) {
         result += QStringLiteral("This filter applies to all accounts.\n");
     } else if (bApplyOnInbound && mApplicability == ButImap) {
@@ -658,11 +659,11 @@ const QString MailFilter::asString() const
         } else {
             for (QStringList::ConstIterator it2 = mAccounts.begin(), it2End = mAccounts.end(); it2 != it2End; ++it2) {
                 if (Akonadi::AgentManager::self()->instance(*it2).isValid()) {
-                    result += QLatin1Char(' ') + Akonadi::AgentManager::self()->instance(*it2).name();
+                    result += u' ' + Akonadi::AgentManager::self()->instance(*it2).name();
                 }
             }
         }
-        result += QLatin1Char('\n');
+        result += u'\n';
     }
     if (bStopProcessingHere) {
         result += QStringLiteral("If it matches, processing stops at this filter.\n");

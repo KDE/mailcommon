@@ -5,6 +5,8 @@
 */
 
 #include "filterimporterclawsmail.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
 
@@ -43,7 +45,7 @@ void FilterImporterClawsMails::readStream(QTextStream &stream)
 
         if (line.isEmpty()) {
             // Nothing
-        } else if (line.startsWith(QLatin1Char('[')) && line.endsWith(QLatin1Char(']'))) {
+        } else if (line.startsWith(u'[') && line.endsWith(u']')) {
             // TODO
         } else {
             appendFilter(filter);
@@ -113,14 +115,14 @@ QString FilterImporterClawsMails::extractString(const QString &tmp, int &pos)
     int i = 0;
     for (; i < tmp.length(); ++i) {
         const QChar currentChar = tmp.at(i);
-        if (i == 0 && (currentChar.isSpace() || currentChar == QLatin1Char('"'))) {
+        if (i == 0 && (currentChar.isSpace() || currentChar == u'"')) {
         } else {
-            if (currentChar != QLatin1Char('"')) {
-                if (currentChar != QLatin1Char('\\')) {
+            if (currentChar != u'"') {
+                if (currentChar != u'\\') {
                     name += currentChar;
                 }
             } else {
-                if (previousChar == QLatin1Char('\\')) {
+                if (previousChar == u'\\') {
                     name += currentChar;
                 } else {
                     break;

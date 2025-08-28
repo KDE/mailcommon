@@ -6,6 +6,8 @@
  */
 
 #include "filteractionsetstatus.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mailcommon_debug.h"
 #include <Akonadi/MessageStatus>
 #include <KLocalizedString>
@@ -66,11 +68,11 @@ QString FilterActionSetStatus::sieveCode() const
 {
     QString flagCode;
     const QString parameter = argsAsString();
-    if (parameter == QLatin1Char('R')) {
+    if (parameter == u'R') {
         flagCode = QStringLiteral("\\\\Seen");
-    } else if (parameter == QLatin1Char('D')) {
+    } else if (parameter == u'D') {
         flagCode = QStringLiteral("\\\\Deleted");
-    } else if (parameter == QLatin1Char('A')) {
+    } else if (parameter == u'A') {
         flagCode = QStringLiteral("\\\\Answered");
     } else {
         qCDebug(MAILCOMMON_LOG) << " FilterActionSetStatus::sieveCode() unknown flags" << parameter;

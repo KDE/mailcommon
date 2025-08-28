@@ -5,6 +5,8 @@
 */
 
 #include "filterimporterbalsa.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
 
@@ -98,7 +100,7 @@ void FilterImporterBalsa::parseCondition(const QString &condition, MailCommon::M
             fieldName = "<date>";
             cond = cond.right(cond.length() - 4);
             cond = cond.trimmed();
-            QStringList splitDate = cond.split(QLatin1Char(' '));
+            QStringList splitDate = cond.split(u' ');
             qCDebug(MAILCOMMON_LOG) << " splitDate " << splitDate;
         } else if (cond.startsWith(QLatin1StringView("FLAG"))) {
             qCDebug(MAILCOMMON_LOG) << " FLAG :";

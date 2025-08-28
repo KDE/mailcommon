@@ -41,7 +41,7 @@ void FilterActionAddHeaderTest::shouldAddValue_data()
     QTest::addColumn<QString>("resultheader");
     QTest::addColumn<QString>("resultvalue");
     QTest::newRow("empty") << QString() << QString() << QString();
-    QString val = QLatin1StringView("bla") + QLatin1Char('\t') + QLatin1StringView("blo");
+    QString val = QLatin1StringView("bla") + u'\t' + QLatin1StringView("blo");
     QTest::newRow("real value") << val << QStringLiteral("bla") << QStringLiteral("blo");
 }
 
@@ -61,7 +61,7 @@ void FilterActionAddHeaderTest::shouldClearWidget()
 void FilterActionAddHeaderTest::shouldReturnSieveCode()
 {
     MailCommon::FilterActionAddHeader filter;
-    QCOMPARE(filter.sieveRequires().join(QLatin1Char(',')), QStringLiteral("editheader"));
+    QCOMPARE(filter.sieveRequires().join(u','), QStringLiteral("editheader"));
 }
 
 void FilterActionAddHeaderTest::shouldBeEmpty()

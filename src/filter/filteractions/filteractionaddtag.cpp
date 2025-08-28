@@ -6,6 +6,8 @@
  */
 
 #include "filteractionaddtag.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filter/dialog/filteractionmissingtagdialog.h"
 #include "filter/filtermanager.h"
 
@@ -146,7 +148,7 @@ QString FilterActionAddTag::displayString() const
 
 QString FilterActionAddTag::informationAboutNotValidAction() const
 {
-    const QString info = name() + QLatin1Char('\n') + i18n("No tag selected.");
+    const QString info = name() + u'\n' + i18n("No tag selected.");
     return info;
 }
 

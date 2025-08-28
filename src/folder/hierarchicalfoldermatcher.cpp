@@ -6,6 +6,7 @@
 */
 
 #include "hierarchicalfoldermatcher_p.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <QAbstractItemModel>
 #include <QModelIndex>
@@ -26,12 +27,12 @@ void HierarchicalFolderMatcher::setFilter(const QString &filter, Qt::CaseSensiti
         return;
     }
     const auto patternOptions = caseSensitivity == Qt::CaseInsensitive ? QRegularExpression::CaseInsensitiveOption : QRegularExpression::NoPatternOption;
-    const auto parts = QStringView(filter).split(QLatin1Char('/'));
+    const auto parts = QStringView(filter).split(u'/');
     std::transform(std::begin(parts), std::end(parts), std::back_inserter(filterRegExps), [patternOptions](const auto &part) {
         // QRegularExpression::wildcardToRegularExpression() returns a fully anchored
         // regular expression, but we want to check for substring matches; wrap
         // the user's filter part into '*' to fix this
-        return QRegularExpression{QRegularExpression::wildcardToRegularExpression(QLatin1Char('*') + part + QLatin1Char('*')), patternOptions};
+        return QRegularExpression{QRegularExpression::wildcardToRegularExpression(u'*' + part + u'*'), patternOptions};
     });
 }
 

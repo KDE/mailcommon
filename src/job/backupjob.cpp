@@ -6,6 +6,7 @@
 */
 
 #include "backupjob.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include "mailcommon_debug.h"
 #include <Akonadi/CollectionDeleteJob>
@@ -149,7 +150,7 @@ void BackupJob::abort(const QString &errorMessage)
         // The progressmanager will delete it
     }
     QString text = i18n("Failed to archive the folder '%1'.", mRootFolder.name());
-    text += QLatin1Char('\n') + errorMessage;
+    text += u'\n' + errorMessage;
     Q_EMIT error(text);
     if (mDisplayMessageBox) {
         KMessageBox::error(mParentWidget, text, i18nc("@title:window", "Archiving failed"));
@@ -183,12 +184,12 @@ void BackupJob::finish()
         mRealPath.isEmpty() ? mRootFolder.name() : mRealPath,
         mMailArchivePath.path());
     KFormat format;
-    text += QLatin1Char('\n')
+    text += u'\n'
         + i18np("1 message of size %2 was archived.",
                 "%1 messages with the total size of %2 were archived.",
                 mArchivedMessages,
                 format.formatByteSize(mArchivedSize));
-    text += QLatin1Char('\n') + i18n("The archive file has a size of %1.", format.formatByteSize(archiveFileInfo.size()));
+    text += u'\n' + i18n("The archive file has a size of %1.", format.formatByteSize(archiveFileInfo.size()));
     if (mDisplayMessageBox) {
         KMessageBox::information(mParentWidget, text, i18nc("@title:window", "Archiving finished"));
     }
@@ -298,11 +299,11 @@ QString BackupJob::pathForCollection(const Akonadi::Collection &collection) cons
     if (collection != mRootFolder) {
         Q_ASSERT(curCol.isValid());
         while (curCol != mRootFolder) {
-            fullPath.prepend(QLatin1Char('.') + collectionName(curCol) + QLatin1StringView(".directory/"));
+            fullPath.prepend(u'.' + collectionName(curCol) + QLatin1StringView(".directory/"));
             curCol = curCol.parentCollection();
         }
         Q_ASSERT(curCol == mRootFolder);
-        fullPath.prepend(QLatin1Char('.') + collectionName(curCol) + QLatin1StringView(".directory/"));
+        fullPath.prepend(u'.' + collectionName(curCol) + QLatin1StringView(".directory/"));
     }
     return fullPath;
 }
@@ -313,7 +314,7 @@ QString BackupJob::subdirPathForCollection(const Akonadi::Collection &collection
     const int parentDirEndIndex = path.lastIndexOf(collection.name());
     Q_ASSERT(parentDirEndIndex != -1);
     path.truncate(parentDirEndIndex);
-    path.append(QLatin1Char('.') + collection.name() + QLatin1StringView(".directory"));
+    path.append(u'.' + collection.name() + QLatin1StringView(".directory"));
     return path;
 }
 

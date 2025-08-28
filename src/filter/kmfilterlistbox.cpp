@@ -5,6 +5,8 @@
 */
 
 #include "kmfilterlistbox.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filteractions/filteractiondict.h"
 #include "filtermanager.h"
 #include "invalidfilters/invalidfilterdialog.h"
@@ -287,7 +289,7 @@ void KMFilterListBox::slotUpdateFilterName()
         if (!p->isEmpty() && p->first() && !p->first()->field().trimmed().isEmpty()) {
             shouldBeName = QStringLiteral("<%1>: %2").arg(QString::fromLatin1(p->first()->field()), p->first()->contents());
         } else {
-            shouldBeName = QLatin1Char('<') + i18n("unnamed") + QLatin1Char('>');
+            shouldBeName = u'<' + i18n("unnamed") + u'>';
         }
         p->setName(shouldBeName);
     }

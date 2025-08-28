@@ -6,6 +6,7 @@
  */
 
 #include "filteractionaddtoaddressbook.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <Akonadi/AddContactJob>
 
@@ -87,7 +88,7 @@ FilterAction::ReturnCode FilterActionAddToAddressBook::process(ItemContext &cont
         email.setPreferred(true);
         contact.addEmail(email);
         if (!mCategory.isEmpty()) {
-            contact.setCategories(mCategory.split(QLatin1Char(';')));
+            contact.setCategories(mCategory.split(u';'));
         }
 
         auto job = new Akonadi::AddContactJob(contact, Akonadi::Collection(mCollectionId));
@@ -178,7 +179,7 @@ void FilterActionAddToAddressBook::setParamWidgetValue(QWidget *paramWidget) con
 
     auto categoryEdit = paramWidget->findChild<Akonadi::TagWidget *>(QStringLiteral("CategoryEdit"));
     Q_ASSERT(categoryEdit);
-    categoryEdit->setSelection(namesToTags(mCategory.split(QLatin1Char(';'))));
+    categoryEdit->setSelection(namesToTags(mCategory.split(u';')));
 
     auto collectionComboBox = paramWidget->findChild<Akonadi::CollectionComboBox *>(QStringLiteral("AddressBookComboBox"));
     Q_ASSERT(collectionComboBox);
@@ -194,7 +195,7 @@ void FilterActionAddToAddressBook::applyParamWidgetValue(QWidget *paramWidget)
 
     const auto categoryEdit = paramWidget->findChild<Akonadi::TagWidget *>(QStringLiteral("CategoryEdit"));
     Q_ASSERT(categoryEdit);
-    mCategory = tagsToNames(categoryEdit->selection()).join(QLatin1Char(';'));
+    mCategory = tagsToNames(categoryEdit->selection()).join(u';');
 
     const Akonadi::CollectionComboBox *collectionComboBox = paramWidget->findChild<Akonadi::CollectionComboBox *>(QStringLiteral("AddressBookComboBox"));
     Q_ASSERT(collectionComboBox);
@@ -221,7 +222,7 @@ void FilterActionAddToAddressBook::clearParamWidget(QWidget *paramWidget) const
 
     auto categoryEdit = paramWidget->findChild<Akonadi::TagWidget *>(QStringLiteral("CategoryEdit"));
     Q_ASSERT(categoryEdit);
-    categoryEdit->setSelection(namesToTags(mCategory.split(QLatin1Char(';'))));
+    categoryEdit->setSelection(namesToTags(mCategory.split(u';')));
 }
 
 QString FilterActionAddToAddressBook::argsAsString() const
@@ -245,9 +246,9 @@ QString FilterActionAddToAddressBook::argsAsString() const
         break;
     }
 
-    result += QLatin1Char('\t');
+    result += u'\t';
     result += QString::number(mCollectionId);
-    result += QLatin1Char('\t');
+    result += u'\t';
     result += mCategory;
 
     return result;
@@ -255,7 +256,7 @@ QString FilterActionAddToAddressBook::argsAsString() const
 
 void FilterActionAddToAddressBook::argsFromString(const QString &argsStr)
 {
-    const QStringList parts = argsStr.split(QLatin1Char('\t'), Qt::KeepEmptyParts);
+    const QStringList parts = argsStr.split(u'\t', Qt::KeepEmptyParts);
     const QString firstElement = parts[0];
     if (firstElement == QLatin1StringView("From")) {
         mHeaderType = FromHeader;
@@ -287,7 +288,7 @@ QString FilterActionAddToAddressBook::informationAboutNotValidAction() const
     }
     if (mCollectionId == -1) {
         if (!result.isEmpty()) {
-            result += QLatin1Char('\n');
+            result += u'\n';
         }
         result += i18n("No addressbook selected.");
     }

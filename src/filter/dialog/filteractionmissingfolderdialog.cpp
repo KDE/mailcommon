@@ -6,6 +6,8 @@
 */
 
 #include "filteractionmissingfolderdialog.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "folder/folderrequester.h"
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
@@ -167,7 +169,7 @@ Akonadi::Collection::List FilterActionMissingFolderDialog::potentialCorrectFolde
     }
 
     if (KernelIf->collectionModel()) {
-        const int lastSlash = realPath.lastIndexOf(QLatin1Char('/'));
+        const int lastSlash = realPath.lastIndexOf(u'/');
         QString lastElement;
         if (lastSlash == -1) {
             lastElement = realPath;

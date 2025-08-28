@@ -7,6 +7,8 @@
 */
 
 #include "searchpattern.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filter/filterlog.h"
 using MailCommon::FilterLog;
 #include "mailcommon_debug.h"
@@ -105,7 +107,7 @@ QString SearchPattern::purify(bool removeAction)
             if (removeAction) {
                 qCDebug(MAILCOMMON_LOG) << "Removing" << (*it)->asString();
                 if (!informationAboutNotValidPattern.isEmpty()) {
-                    informationAboutNotValidPattern += QLatin1Char('\n');
+                    informationAboutNotValidPattern += u'\n';
                 }
                 informationAboutNotValidPattern += (*it)->informationAboutNotValidRules();
 
@@ -232,7 +234,7 @@ void SearchPattern::init()
 {
     clear();
     mOperator = OpAnd;
-    mName = QLatin1Char('<') + i18nc("name used for a virgin filter", "unknown") + QLatin1Char('>');
+    mName = u'<' + i18nc("name used for a virgin filter", "unknown") + u'>';
 }
 
 QString SearchPattern::asString() const
@@ -363,7 +365,7 @@ QDataStream &SearchPattern::operator<<(QDataStream &s)
 
 void SearchPattern::generateSieveScript(QStringList &requiresModules, QString &code)
 {
-    code += QLatin1StringView("\n#") + mName + QLatin1Char('\n');
+    code += QLatin1StringView("\n#") + mName + u'\n';
     switch (mOperator) {
     case OpOr:
         code += QLatin1StringView("if anyof (");

@@ -6,6 +6,8 @@
  */
 
 #include "filteractionwithcommand.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mailcommon_debug.h"
 #include <KProcess>
 #include <KShell>
@@ -203,7 +205,7 @@ FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &co
     // the user may have specified. In the long run, we
     // shouldn't be using tempfiles at all for this class, due
     // to security aspects. (mmutz)
-    commandLine = QLatin1Char('(') + commandLine + QLatin1StringView(") <") + inFile->fileName();
+    commandLine = u'(' + commandLine + QLatin1StringView(") <") + inFile->fileName();
 
     // write message to file
     QString tempFileName = inFile->fileName();

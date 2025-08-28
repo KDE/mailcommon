@@ -5,6 +5,8 @@
 */
 
 #include "snippetwidget.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "ui_snippetwidget.h"
 #include <MessageComposer/ConvertSnippetVariableMenu>
 #include <TextCustomEditor/PlainTextEditor>
@@ -42,7 +44,7 @@ SnippetWidget::SnippetWidget(QWidget *parent)
             &MessageComposer::ConvertSnippetVariableMenu::insertVariable,
             this,
             [this](MessageComposer::ConvertSnippetVariablesUtil::VariableType type) {
-                d->mUi.snippetText->editor()->insertPlainText(MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(type) + QLatin1Char(' '));
+                d->mUi.snippetText->editor()->insertPlainText(MessageComposer::ConvertSnippetVariablesUtil::snippetVariableFromEnum(type) + u' ');
             });
 
     d->mUi.nameEdit->setTrapReturnKey(true);

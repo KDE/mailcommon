@@ -5,6 +5,8 @@
 */
 
 #include "filterimporterprocmail.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
 #include <KLocalizedString>
@@ -58,7 +60,7 @@ MailCommon::MailFilter *FilterImporterProcmail::parseLine(QTextStream &stream, Q
     if (line.isEmpty()) {
         // Empty line
         return filter;
-    } else if (line.startsWith(QLatin1Char('#'))) {
+    } else if (line.startsWith(u'#')) {
         // Commented line
         return filter;
     } else if (line.startsWith(QLatin1StringView(":0"))) {
@@ -88,17 +90,17 @@ MailCommon::MailFilter *FilterImporterProcmail::parseLine(QTextStream &stream, Q
         SearchRule::Ptr rule = SearchRule::createInstance(fieldName, functionName, line);
         filter->pattern()->append(rule);
         // Condition
-    } else if (line.startsWith(QLatin1Char('!'))) {
-        line.remove(QLatin1Char('!'));
+    } else if (line.startsWith(u'!')) {
+        line.remove(u'!');
         // Redirect email
-    } else if (line.startsWith(QLatin1Char('|'))) {
+    } else if (line.startsWith(u'|')) {
         // Shell
         const QString actionName(QStringLiteral("execute"));
         const QString value(line);
         createFilterAction(filter, actionName, value);
-    } else if (line.startsWith(QLatin1Char('{'))) {
+    } else if (line.startsWith(u'{')) {
         // Block
-    } else if (line.startsWith(QLatin1Char('}'))) {
+    } else if (line.startsWith(u'}')) {
         // End block
     } else {
         const QString actionName(QStringLiteral("transfer"));
