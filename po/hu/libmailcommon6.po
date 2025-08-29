@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-16 00:44+0000\n"
+"POT-Creation-Date: 2025-08-29 00:44+0000\n"
 "PO-Revision-Date: 2025-04-29 21:47+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -133,7 +133,7 @@ msgstr ""
 "mappához. Ha le van tiltva (ez az alapértelmezett), minden felhasználónak "
 "saját olvasatlan állapota lesz, akiknek hozzáférése van ehhez a mappához."
 
-#: collectionpage/collectiongeneralpage.cpp:213
+#: collectionpage/collectiongeneralpage.cpp:212
 #, kde-format
 msgid ""
 "You have configured this folder to contain groupware information. That means "
@@ -316,31 +316,31 @@ msgstr ""
 "A szűrőfiók hiányzik. Válasszon ki egy fiókot a(z) „%1” szűrővel való "
 "használathoz"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:38
+#: filter/dialog/filteractionmissingfolderdialog.cpp:40
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Mappa kiválasztása"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:41
+#: filter/dialog/filteractionmissingfolderdialog.cpp:43
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "A mappaútvonal ez volt: „%1”."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:46
+#: filter/dialog/filteractionmissingfolderdialog.cpp:48
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "A következő mappák használhatók ehhez a szűrőhöz:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:67
+#: filter/dialog/filteractionmissingfolderdialog.cpp:69
 #, kde-format
 msgid "Please select a folder:"
 msgstr "Válasszon ki egy mappát:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:70
+#: filter/dialog/filteractionmissingfolderdialog.cpp:72
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
@@ -442,12 +442,12 @@ msgctxt "@title:window"
 msgid "Select thunderbird filter files"
 msgstr "Thunderbird szűrőfájlok kijelölése"
 
-#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:31
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:33
 #, kde-format
 msgid " (default)"
 msgstr " (alapértelmezett)"
 
-#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:118
 #, kde-format
 msgid "Thunderbird File (*.dat)"
 msgstr "Thunderbird fájl (*.dat)"
@@ -457,83 +457,83 @@ msgstr "Thunderbird fájl (*.dat)"
 msgid "### \"action '%1' not supported\""
 msgstr "### „a(z) %1 művelet nem támogatott”"
 
-#: filter/filteractions/filteractionaddheader.cpp:21
+#: filter/filteractions/filteractionaddheader.cpp:22
 #, kde-format
 msgid "Add Header"
 msgstr "Fejléc hozzáadása"
 
-#: filter/filteractions/filteractionaddheader.cpp:76
+#: filter/filteractions/filteractionaddheader.cpp:77
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Ezzel az értékkel:"
 
-#: filter/filteractions/filteractionaddheader.cpp:202
+#: filter/filteractions/filteractionaddheader.cpp:203
 #, kde-format
 msgid "The header name was missing."
 msgstr "A fejléc neve hiányzik."
 
-#: filter/filteractions/filteractionaddheader.cpp:208
+#: filter/filteractions/filteractionaddheader.cpp:209
 #, kde-format
 msgid "The header value was missing."
 msgstr "A fejléc értéke hiányzik."
 
-#: filter/filteractions/filteractionaddtag.cpp:24
+#: filter/filteractions/filteractionaddtag.cpp:26
 #, kde-format
 msgid "Add Tag"
 msgstr "Címke hozzáadása"
 
-#: filter/filteractions/filteractionaddtag.cpp:149
+#: filter/filteractions/filteractionaddtag.cpp:151
 #, kde-format
 msgid "No tag selected."
 msgstr "Nincs címke kiválasztva."
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:32
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:33
 #, kde-format
 msgid "Add to Address Book"
 msgstr "Hozzáadás a címjegyzékhez"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:33
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:34
 #, kde-format
 msgctxt "Email sender"
 msgid "From"
 msgstr "Feladó"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:34
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:35
 #, kde-format
 msgctxt "Email recipient"
 msgid "To"
 msgstr "Címzett"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:35
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:36
 #: search/searchpatternedit.cpp:52
 #, kde-format
 msgid "CC"
 msgstr "Másolat"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:36
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:37
 #, kde-format
 msgid "BCC"
 msgstr "Titkos másolat"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:39
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:40
 #, kde-format
 msgid "KMail Filter"
 msgstr "KMail szűrő"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:116
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:117
 #, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
 msgstr "kategóriával"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:124
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:125
 #, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "a címjegyzékben"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:134
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:135
 #, kde-format
 msgid ""
 "This defines the preferred address book.\n"
@@ -544,12 +544,12 @@ msgstr ""
 "Ha ez nem hozzáférhető, a szűrő vissza fog váltani az alapértelmezett "
 "címjegyzékre."
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:286
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:287
 #, kde-format
 msgid "Header type selected is unknown."
 msgstr "A kiválasztott fejléctípus ismeretlen."
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:292
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:293
 #, kde-format
 msgid "No addressbook selected."
 msgstr "Nincs kiválasztva címjegyzék."
@@ -597,28 +597,28 @@ msgstr "Üzenet törlése"
 msgid "Be careful, mails will be removed."
 msgstr "Legyen óvatos, a levelek el lesznek távolítva."
 
-#: filter/filteractions/filteractionencrypt.cpp:44
+#: filter/filteractions/filteractionencrypt.cpp:46
 #, kde-format
 msgid "Encrypt"
 msgstr "Titkosítás"
 
-#: filter/filteractions/filteractionencrypt.cpp:211
+#: filter/filteractions/filteractionencrypt.cpp:213
 #, kde-format
 msgid "No encryption key has been selected"
 msgstr "Nincs kiválasztva titkosítási kulcs"
 
-#: filter/filteractions/filteractionencrypt.cpp:247
+#: filter/filteractions/filteractionencrypt.cpp:249
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
 msgstr "A titkosított e-mailek újbóli titkosítása ezzel a kulccsal"
 
-#: filter/filteractions/filteractionencrypt.cpp:257
+#: filter/filteractions/filteractionencrypt.cpp:259
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
 msgstr ""
 "<b>Figyelmeztetés:</b> A titkos kulcs szükséges az e-mailek olvasásához."
 
-#: filter/filteractions/filteractionencrypt.cpp:259
+#: filter/filteractions/filteractionencrypt.cpp:261
 #, kde-format
 msgid ""
 "<p>Once an email has been encrypted you will need a crypto setup with your "
@@ -641,52 +641,52 @@ msgstr "Parancs végrehajtása"
 msgid "Missing command."
 msgstr "Hiányzó parancs."
 
-#: filter/filteractions/filteractionforward.cpp:35
+#: filter/filteractions/filteractionforward.cpp:37
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
 msgstr "Továbbítás"
 
-#: filter/filteractions/filteractionforward.cpp:91
+#: filter/filteractions/filteractionforward.cpp:93
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "A címzett, akinek az üzenetet továbbítani fogja."
 
-#: filter/filteractions/filteractionforward.cpp:92
+#: filter/filteractions/filteractionforward.cpp:94
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
 msgstr "A szűrő továbbítani fogja az üzenetet az itt megadott címzettnek."
 
-#: filter/filteractions/filteractionforward.cpp:99
-#: filter/filteractions/filteractionforward.cpp:198
+#: filter/filteractions/filteractionforward.cpp:101
+#: filter/filteractions/filteractionforward.cpp:200
 #, kde-format
 msgid "Default Template"
 msgstr "Alapértelmezett sablon"
 
-#: filter/filteractions/filteractionforward.cpp:110
+#: filter/filteractions/filteractionforward.cpp:112
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "A továbbításkor használt sablon"
 
-#: filter/filteractions/filteractionforward.cpp:111
+#: filter/filteractions/filteractionforward.cpp:113
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
 msgstr ""
 "A továbbítási sablon beállítása, amely ezzel a szűrővel lesz használva."
 
-#: filter/filteractions/filteractionforward.cpp:226
+#: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
 msgid "Forward to %1 with default template"
 msgstr "Továbbítás %1 címzettnek az alapértelmezett sablonnal"
 
-#: filter/filteractions/filteractionforward.cpp:228
+#: filter/filteractions/filteractionforward.cpp:230
 #, kde-format
 msgid "Forward to %1 with template %2"
 msgstr "Továbbítás %1 címzettnek a(z) %2 sablonnal"
 
-#: filter/filteractions/filteractionforward.cpp:234
+#: filter/filteractions/filteractionforward.cpp:236
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."
@@ -743,81 +743,81 @@ msgstr "A fejléc neve nem definiált."
 msgid "Set Reply-To To"
 msgstr "Válaszcím beállítása"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:25
+#: filter/filteractions/filteractionrewriteheader.cpp:26
 #, kde-format
 msgid "Rewrite Header"
 msgstr "Fejléc újraírása"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:42
+#: filter/filteractions/filteractionrewriteheader.cpp:43
 #, kde-format
 msgid "Header not defined"
 msgstr "A fejléc nem definiált"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:48
+#: filter/filteractions/filteractionrewriteheader.cpp:49
 #, kde-format
 msgid "Search string is empty."
 msgstr "A keresőszöveg üres."
 
-#: filter/filteractions/filteractionrewriteheader.cpp:110
+#: filter/filteractions/filteractionrewriteheader.cpp:111
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Csere:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:121
+#: filter/filteractions/filteractionrewriteheader.cpp:122
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
 msgstr "Erre:"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:28
+#: filter/filteractions/filteractionsendfakedisposition.cpp:29
 #, kde-format
 msgid "Send Fake MDN"
 msgstr "Hamis MDN küldése"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:33
+#: filter/filteractions/filteractionsendfakedisposition.cpp:34
 #, kde-format
 msgctxt "MDN type"
 msgid "Ignore"
 msgstr "Mellőzés"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:34
+#: filter/filteractions/filteractionsendfakedisposition.cpp:35
 #, kde-format
 msgctxt "MDN type"
 msgid "Displayed"
 msgstr "Megjelenítve"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:35
+#: filter/filteractions/filteractionsendfakedisposition.cpp:36
 #, kde-format
 msgctxt "MDN type"
 msgid "Deleted"
 msgstr "Törölve"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:36
+#: filter/filteractions/filteractionsendfakedisposition.cpp:37
 #, kde-format
 msgctxt "MDN type"
 msgid "Dispatched"
 msgstr "Elküldve"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:37
+#: filter/filteractions/filteractionsendfakedisposition.cpp:38
 #, kde-format
 msgctxt "MDN type"
 msgid "Processed"
 msgstr "Feldolgozva"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:38
+#: filter/filteractions/filteractionsendfakedisposition.cpp:39
 #, kde-format
 msgctxt "MDN type"
 msgid "Denied"
 msgstr "Elutasítva"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:39
+#: filter/filteractions/filteractionsendfakedisposition.cpp:40
 #, kde-format
 msgctxt "MDN type"
 msgid "Failed"
 msgstr "Sikertelen"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:115
+#: filter/filteractions/filteractionsendfakedisposition.cpp:116
 #, kde-format
 msgid "Fake type undefined."
 msgstr "A hamis típus nem definiált."
@@ -832,12 +832,12 @@ msgstr "Kézbesítés megerősítése"
 msgid "Set Identity To"
 msgstr "Azonosító beállítása"
 
-#: filter/filteractions/filteractionsetstatus.cpp:20
+#: filter/filteractions/filteractionsetstatus.cpp:22
 #, kde-format
 msgid "Mark As"
 msgstr "Megjelölés mint"
 
-#: filter/filteractions/filteractionsetstatus.cpp:32
+#: filter/filteractions/filteractionsetstatus.cpp:34
 #, kde-format
 msgid "Status not specified."
 msgstr "Az állapot nincs megadva."
@@ -852,78 +852,78 @@ msgstr "Továbbítási mód beállítása"
 msgid "Mail transport not defined."
 msgstr "A levéltovábbítás nem definiált."
 
-#: filter/filteractions/filteractionstatus.cpp:31
+#: filter/filteractions/filteractionstatus.cpp:33
 #, kde-format
 msgctxt "msg status"
 msgid "Important"
 msgstr "Fontos"
 
-#: filter/filteractions/filteractionstatus.cpp:32
+#: filter/filteractions/filteractionstatus.cpp:34
 #, kde-format
 msgctxt "msg status"
 msgid "Read"
 msgstr "Olvasott"
 
-#: filter/filteractions/filteractionstatus.cpp:33
+#: filter/filteractions/filteractionstatus.cpp:35
 #, kde-format
 msgctxt "msg status"
 msgid "Unread"
 msgstr "Olvasatlan"
 
-#: filter/filteractions/filteractionstatus.cpp:34
+#: filter/filteractions/filteractionstatus.cpp:36
 #, kde-format
 msgctxt "msg status"
 msgid "Replied"
 msgstr "Megválaszolt"
 
-#: filter/filteractions/filteractionstatus.cpp:35
+#: filter/filteractions/filteractionstatus.cpp:37
 #, kde-format
 msgctxt "msg status"
 msgid "Forwarded"
 msgstr "Továbbított"
 
-#: filter/filteractions/filteractionstatus.cpp:36
+#: filter/filteractions/filteractionstatus.cpp:38
 #, kde-format
 msgctxt "msg status"
 msgid "Watched"
 msgstr "Figyelt"
 
-#: filter/filteractions/filteractionstatus.cpp:37
+#: filter/filteractions/filteractionstatus.cpp:39
 #, kde-format
 msgctxt "msg status"
 msgid "Ignored"
 msgstr "Nem figyelt"
 
-#: filter/filteractions/filteractionstatus.cpp:38
+#: filter/filteractions/filteractionstatus.cpp:40
 #, kde-format
 msgctxt "msg status"
 msgid "Spam"
 msgstr "Levélszemét"
 
-#: filter/filteractions/filteractionstatus.cpp:39
+#: filter/filteractions/filteractionstatus.cpp:41
 #, kde-format
 msgctxt "msg status"
 msgid "Ham"
 msgstr "Ál-kéretlen"
 
-#: filter/filteractions/filteractionstatus.cpp:40
+#: filter/filteractions/filteractionstatus.cpp:42
 #, kde-format
 msgctxt "msg status"
 msgid "Action Item"
 msgstr "Műveletelem"
 
-#: filter/filteractions/filteractionstatus.cpp:100
+#: filter/filteractions/filteractionstatus.cpp:102
 #, kde-format
 msgid "Status is missing."
 msgstr "Az állapot hiányzik."
 
-#: filter/filteractions/filteractionunsetstatus.cpp:19
+#: filter/filteractions/filteractionunsetstatus.cpp:21
 #, kde-format
 msgctxt "action: to unset the status"
 msgid "Unset Status"
 msgstr "Állapot beállításának törlése"
 
-#: filter/filteractions/filteractionunsetstatus.cpp:37
+#: filter/filteractions/filteractionunsetstatus.cpp:39
 #, kde-format
 msgid "Status not defined."
 msgstr "Az állapot nem definiált."
@@ -978,7 +978,7 @@ msgstr "Átalakítás Sieve parancsfájlra"
 msgid "Gmail filter %1"
 msgstr "Gmail szűrő %1"
 
-#: filter/filterimporter/filterimporterprocmail.cpp:52
+#: filter/filterimporter/filterimporterprocmail.cpp:54
 #, kde-format
 msgid "Procmail filter %1"
 msgstr "Procmail szűrő %1"
@@ -1068,7 +1068,7 @@ msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Szűrők kiválasztása"
 
-#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:51
+#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:53
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
@@ -1419,7 +1419,7 @@ msgstr "KMail szűrők átalakítása sieve parancsfájlokká"
 msgid "No filters selected."
 msgstr "Nincsenek szűrők kiválasztva."
 
-#: filter/kmfilterlistbox.cpp:41
+#: filter/kmfilterlistbox.cpp:43
 #, kde-format
 msgid ""
 "<qt><p>This is the list of defined filters. They are processed top-to-bottom."
@@ -1430,31 +1430,31 @@ msgstr ""
 "haladva történik).</p><p>Egy szűrő módosításához kattintson rá a szűrő "
 "nevére, majd használja a jobb oldali vezérlőelemeket.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:83
+#: filter/kmfilterlistbox.cpp:85
 #, kde-format
 msgctxt "Move selected filter up."
 msgid "Up"
 msgstr "Fel"
 
-#: filter/kmfilterlistbox.cpp:84
+#: filter/kmfilterlistbox.cpp:86
 #, kde-format
 msgctxt "Move selected filter down."
 msgid "Down"
 msgstr "Le"
 
-#: filter/kmfilterlistbox.cpp:85
+#: filter/kmfilterlistbox.cpp:87
 #, kde-format
 msgctxt "Move selected filter to the top."
 msgid "Top"
 msgstr "Fent"
 
-#: filter/kmfilterlistbox.cpp:86
+#: filter/kmfilterlistbox.cpp:88
 #, kde-format
 msgctxt "Move selected filter to the bottom."
 msgid "Bottom"
 msgstr "Lent"
 
-#: filter/kmfilterlistbox.cpp:88
+#: filter/kmfilterlistbox.cpp:90
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>up</em> "
@@ -1471,7 +1471,7 @@ msgstr ""
 "gombot, akkor a művelet visszavonásához kattintson a <em>Lefelé</em> gombra."
 "</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:96
+#: filter/kmfilterlistbox.cpp:98
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>down</em> "
@@ -1488,7 +1488,7 @@ msgstr ""
 "gombot, akkor a művelet visszavonásához kattintson a <em>Felfelé</em> gombra."
 "</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:104
+#: filter/kmfilterlistbox.cpp:106
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to bottom of "
@@ -1501,7 +1501,7 @@ msgstr ""
 "sorrendet, amelyben alkalmazzák azokat az üzeneteken: a legfelső szűrőt "
 "próbálják elsőként.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:110
+#: filter/kmfilterlistbox.cpp:112
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to top of "
@@ -1514,31 +1514,31 @@ msgstr ""
 "a sorrendet, amelyben alkalmazzák azokat az üzeneteken: a legfelső szűrőt "
 "próbálják elsőként.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:140
+#: filter/kmfilterlistbox.cpp:142
 #, kde-format
 msgctxt "@action:button in filter list manipulator"
 msgid "New"
 msgstr "Új"
 
-#: filter/kmfilterlistbox.cpp:141
+#: filter/kmfilterlistbox.cpp:143
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Másolás"
 
-#: filter/kmfilterlistbox.cpp:142
+#: filter/kmfilterlistbox.cpp:144
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Törlés"
 
-#: filter/kmfilterlistbox.cpp:143
+#: filter/kmfilterlistbox.cpp:145
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Átnevezés"
 
-#: filter/kmfilterlistbox.cpp:145
+#: filter/kmfilterlistbox.cpp:147
 #, kde-format
 msgid ""
 "<qt><p>Click this button to create a new filter.</p><p>The filter will be "
@@ -1551,7 +1551,7 @@ msgstr ""
 "p><p>Ha véletlenül nyomta meg ezt a gombot, akkor a létrehozott üres szűrőt "
 "távolítsa el a jobb oldali <em>Törlés</em> gomb megnyomásával.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:152
+#: filter/kmfilterlistbox.cpp:154
 #, kde-format
 msgid ""
 "<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
@@ -1562,7 +1562,7 @@ msgstr ""
 "nyomta meg ezt a gombot, akkor a létrehozott üres szűrőt távolítsa el a jobb "
 "oldali <em>Törlés</em> gomb megnyomásával.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:156
+#: filter/kmfilterlistbox.cpp:158
 #, kde-format
 msgid ""
 "<qt><p>Click this button to <em>delete</em> the currently-selected filter "
@@ -1575,7 +1575,7 @@ msgstr ""
 "nyerhetők vissza). Ha félbe szeretné szakítani a műveletet, a <em>Mégsem</"
 "em> gomb megnyomásával lépjen ki a párbeszédablakból.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:163
+#: filter/kmfilterlistbox.cpp:165
 #, kde-format
 msgid ""
 "<qt><p>Click this button to rename the currently-selected filter.</"
@@ -1591,39 +1591,39 @@ msgstr ""
 "<em>Törlés</em>, majd az <em>OK</em> gombot a megjelenő párbeszédablakban.</"
 "p></qt>"
 
-#: filter/kmfilterlistbox.cpp:290
+#: filter/kmfilterlistbox.cpp:292
 #, kde-format
 msgid "unnamed"
 msgstr "névtelen"
 
-#: filter/kmfilterlistbox.cpp:444
+#: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "El szeretné távolítani a(z) „%1” szűrőt?"
 
-#: filter/kmfilterlistbox.cpp:444
+#: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Do you want to remove selected filters?"
 msgstr "Szeretné eltávolítani a kijelölt szűrőket?"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Szűrő eltávolítása"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Szűrők eltávolítása"
 
-#: filter/kmfilterlistbox.cpp:661
+#: filter/kmfilterlistbox.cpp:663
 #, kde-format
 msgid "Rename Filter"
 msgstr "Szűrő átnevezése"
 
-#: filter/kmfilterlistbox.cpp:662
+#: filter/kmfilterlistbox.cpp:664
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
@@ -1632,28 +1632,28 @@ msgstr ""
 "A(z) „%1” szűrő átnevezése erre:\n"
 "(hagyja üresen a mezőt az automatikus elnevezéshez)"
 
-#: filter/mailfilter.cpp:131
+#: filter/mailfilter.cpp:132
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>Szűrés alkalmazása:</b> %1"
 
-#: filter/mailfilter.cpp:140
+#: filter/mailfilter.cpp:141
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "Kritikus hiba történt. A feldolgozás itt leállt."
 
-#: filter/mailfilter.cpp:147
+#: filter/mailfilter.cpp:148
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "A művelet alkalmazása közben hiba történt."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr ""
 "<qt>Túl sok szűrési művelet szerepel a(z) <b>%1</b> szűrési szabályban.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1662,7 +1662,7 @@ msgstr ""
 "<qt>Ismeretlen szűrési parancs (<b>%1</b>)<br />a(z) <b>%2</b> szűrési "
 "szabályban.<br />Figyelmen kívül lesz hagyva.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "Bármely megadott művelet."
@@ -1927,38 +1927,38 @@ msgstr "%1 (Nem elérhető)"
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (a kvóta %2%-a elérve)"
 
-#: job/backupjob.cpp:94
+#: job/backupjob.cpp:95
 #, kde-format
 msgid "Unable to retrieve folder list."
 msgstr "Nem lehet letölteni a mappalistát."
 
-#: job/backupjob.cpp:121
+#: job/backupjob.cpp:122
 #, kde-format
 msgid "The operation was canceled by the user."
 msgstr "A felhasználó megszakította a műveletet."
 
-#: job/backupjob.cpp:151
+#: job/backupjob.cpp:152
 #, kde-format
 msgid "Failed to archive the folder '%1'."
 msgstr "Nem sikerült archiválni ezt a mappát: „%1”."
 
-#: job/backupjob.cpp:155
+#: job/backupjob.cpp:156
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Az archiválás nem sikerült"
 
-#: job/backupjob.cpp:165
+#: job/backupjob.cpp:166
 #, kde-format
 msgid "Unable to finalize the archive file."
 msgstr "Nem sikerült véglegesíteni az archívumfájlt."
 
-#: job/backupjob.cpp:170
+#: job/backupjob.cpp:171
 #, kde-format
 msgid "Archiving finished"
 msgstr "Az archiválás befejeződött"
 
-#: job/backupjob.cpp:181
+#: job/backupjob.cpp:182
 #, kde-format
 msgid ""
 "Archiving folder '%1' successfully completed. The archive was written to the "
@@ -1967,56 +1967,56 @@ msgstr ""
 "A(z) „%1” mappa archiválása sikeresen befejeződött. Az archívum a(z) „%2” "
 "fájlba lett írva."
 
-#: job/backupjob.cpp:187
+#: job/backupjob.cpp:188
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
 msgstr[0] "1 üzenet (méret: %2) archiválva."
 msgstr[1] "%1 üzenet (teljes méret: %2) archiválva."
 
-#: job/backupjob.cpp:191
+#: job/backupjob.cpp:192
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Az archívumfájl mérete %1."
 
-#: job/backupjob.cpp:193
+#: job/backupjob.cpp:194
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
 msgstr "Az archiválás befejeződött"
 
-#: job/backupjob.cpp:243
+#: job/backupjob.cpp:244
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "Nem sikerült üzenetet hozzáadni a következő archív mappához: „%1”."
 
-#: job/backupjob.cpp:267
+#: job/backupjob.cpp:268
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr "Nem sikerült letölteni egy üzenetet ebből a mappából: „%1”."
 
-#: job/backupjob.cpp:333
+#: job/backupjob.cpp:334
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "Mappa archiválása: %1"
 
-#: job/backupjob.cpp:358
+#: job/backupjob.cpp:359
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr ""
 "Nem lehet létrehozni a mappastruktúrát a(z) „%1” mappához az archívumfájlban."
 
-#: job/backupjob.cpp:370
+#: job/backupjob.cpp:371
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "Nem lehet lekérdezni a(z) %1 mappa üzenetlistáját."
 
-#: job/backupjob.cpp:408
+#: job/backupjob.cpp:409
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "Nem sikerült megnyitni írásra az archívumot."
 
-#: job/backupjob.cpp:412
+#: job/backupjob.cpp:413
 #, kde-format
 msgid "Archiving"
 msgstr "Archiválás"
@@ -2100,23 +2100,23 @@ msgstr ""
 "A hiba ez volt:\n"
 "%1"
 
-#: search/searchpattern.cpp:235
+#: search/searchpattern.cpp:237
 #, kde-format
 msgctxt "name used for a virgin filter"
 msgid "unknown"
 msgstr "ismeretlen"
 
-#: search/searchpattern.cpp:243
+#: search/searchpattern.cpp:245
 #, kde-format
 msgid "(match any of the following)"
 msgstr "(illeszkedés a következők legalább egyikéhez)"
 
-#: search/searchpattern.cpp:246
+#: search/searchpattern.cpp:248
 #, kde-format
 msgid "(match all of the following)"
 msgstr "(illeszkedés a következők mindegyikéhez)"
 
-#: search/searchpattern.cpp:249
+#: search/searchpattern.cpp:251
 #, kde-format
 msgid "(match all messages)"
 msgstr "(illeszkedés minden üzenethez)"
@@ -2224,99 +2224,99 @@ msgstr "Illeszkedés minden üzenethez"
 msgid "Filter criteria:"
 msgstr "Szűrési feltételek:"
 
-#: search/searchrule/searchrule.cpp:185
+#: search/searchrule/searchrule.cpp:187
 #, kde-format
 msgid "equal"
 msgstr "egyenlő"
 
-#: search/searchrule/searchrule.cpp:188
+#: search/searchrule/searchrule.cpp:190
 #, kde-format
 msgid "not equal"
 msgstr "nem egyenlő"
 
-#: search/searchrule/searchrule.cpp:191
+#: search/searchrule/searchrule.cpp:193
 #, kde-format
 msgid "is greater"
 msgstr "nagyobb"
 
-#: search/searchrule/searchrule.cpp:194
+#: search/searchrule/searchrule.cpp:196
 #, kde-format
 msgid "is less or equal"
 msgstr "kisebb vagy egyenlő"
 
-#: search/searchrule/searchrule.cpp:197
+#: search/searchrule/searchrule.cpp:199
 #, kde-format
 msgid "is less"
 msgstr "kisebb"
 
-#: search/searchrule/searchrule.cpp:200
+#: search/searchrule/searchrule.cpp:202
 #, kde-format
 msgid "is greater or equal"
 msgstr "nagyobb vagy egyenlő"
 
-#: search/searchrule/searchrule.cpp:203
+#: search/searchrule/searchrule.cpp:205
 #, kde-format
 msgid "is in addressbook"
 msgstr "a címjegyzékben van"
 
-#: search/searchrule/searchrule.cpp:206
+#: search/searchrule/searchrule.cpp:208
 #, kde-format
 msgid "is not in addressbook"
 msgstr "nincs a címjegyzékben"
 
-#: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
+#: search/searchrule/searchrule.cpp:211 search/searchrule/searchrule.cpp:214
 #, kde-format
 msgid "is in category"
 msgstr "a kategóriában van"
 
-#: search/searchrule/searchrule.cpp:215
+#: search/searchrule/searchrule.cpp:217
 #: search/widgethandler/messagerulewidgethandler.cpp:28
 #: search/widgethandler/messagerulewidgethandler.cpp:145
 #, kde-format
 msgid "has an attachment"
 msgstr "van melléklete"
 
-#: search/searchrule/searchrule.cpp:218
+#: search/searchrule/searchrule.cpp:220
 #, kde-format
 msgid "has not an attachment"
 msgstr "nincs melléklete"
 
-#: search/searchrule/searchrule.cpp:221
+#: search/searchrule/searchrule.cpp:223
 #, kde-format
 msgid "has an invitation"
 msgstr "van meghívója"
 
-#: search/searchrule/searchrule.cpp:224
+#: search/searchrule/searchrule.cpp:226
 #, kde-format
 msgid "has not an invitation"
 msgstr "nincs meghívója"
 
-#: search/searchrule/searchrule.cpp:227
+#: search/searchrule/searchrule.cpp:229
 #, kde-format
 msgid "start with"
 msgstr "ezzel kezdődik"
 
-#: search/searchrule/searchrule.cpp:230
+#: search/searchrule/searchrule.cpp:232
 #, kde-format
 msgid "not start with"
 msgstr "nem ezzel kezdődik"
 
-#: search/searchrule/searchrule.cpp:233
+#: search/searchrule/searchrule.cpp:235
 #, kde-format
 msgid "end with"
 msgstr "erre végződik"
 
-#: search/searchrule/searchrule.cpp:236
+#: search/searchrule/searchrule.cpp:238
 #, kde-format
 msgid "not end with"
 msgstr "nem erre végződik"
 
-#: search/searchrule/searchrule.cpp:239
+#: search/searchrule/searchrule.cpp:241
 #, kde-format
 msgid "none"
 msgstr "nincs"
 
-#: search/searchrule/searchrule.cpp:242
+#: search/searchrule/searchrule.cpp:244
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
 #: search/widgethandler/tagrulewidgethandler.cpp:93
@@ -2325,73 +2325,73 @@ msgstr "nincs"
 msgid "contains"
 msgstr "tartalmazza"
 
-#: search/searchrule/searchrule.cpp:245
+#: search/searchrule/searchrule.cpp:247
 #, kde-format
 msgid "not contains"
 msgstr "nem tartalmazza"
 
-#: search/searchrule/searchrule.cpp:248
+#: search/searchrule/searchrule.cpp:250
 #, kde-format
 msgid "has regexp"
 msgstr "van reguláris kifejezése"
 
-#: search/searchrule/searchrule.cpp:251
+#: search/searchrule/searchrule.cpp:253
 #, kde-format
 msgid "not regexp"
 msgstr "nincs reguláris kifejezése"
 
-#: search/searchrule/searchrule.cpp:265
+#: search/searchrule/searchrule.cpp:267
 #, kde-format
 msgid "size equals not supported"
 msgstr "a méret egyenlő nem támogatott"
 
-#: search/searchrule/searchrule.cpp:268
+#: search/searchrule/searchrule.cpp:270
 #, kde-format
 msgid "size not equals not supported"
 msgstr "a méret nem egyenlő nem támogatott"
 
-#: search/searchrule/searchrule.cpp:301 search/searchrule/searchrule.cpp:410
+#: search/searchrule/searchrule.cpp:303 search/searchrule/searchrule.cpp:411
 #: search/searchrule/searchrule.cpp:494
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "„%1” nem támogatott a(z) „%2” feltétellel"
 
-#: search/searchrule/searchrule.cpp:308
+#: search/searchrule/searchrule.cpp:309
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> nem megvalósított / támogatott"
 
-#: search/searchrule/searchrule.cpp:311
+#: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<any header> nem megvalósított / támogatott"
 
-#: search/searchrule/searchrule.cpp:314
+#: search/searchrule/searchrule.cpp:315
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<contents> nem megvalósított / támogatott"
 
-#: search/searchrule/searchrule.cpp:317
+#: search/searchrule/searchrule.cpp:318
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<age in days> nem megvalósított / támogatott"
 
-#: search/searchrule/searchrule.cpp:320
+#: search/searchrule/searchrule.cpp:321
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<date> nem megvalósított / támogatott"
 
-#: search/searchrule/searchrule.cpp:323
+#: search/searchrule/searchrule.cpp:324
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<recipients> nem megvalósított / támogatott"
 
-#: search/searchrule/searchrule.cpp:325
+#: search/searchrule/searchrule.cpp:326
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "<Tag> nem támogatott"
 
-#: search/searchrule/searchrule.cpp:328
+#: search/searchrule/searchrule.cpp:329
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<message> nem megvalósított / támogatott"
@@ -2406,7 +2406,7 @@ msgstr "A dátum érvénytelen."
 msgid "Content is not a number."
 msgstr "A tartalom nem szám."
 
-#: search/searchrule/searchrulestring.cpp:233
+#: search/searchrule/searchrulestring.cpp:235
 #, kde-format
 msgid "String is empty."
 msgstr "A szöveg üres."
@@ -2667,19 +2667,19 @@ msgctxt "message status"
 msgid "Has Attachment"
 msgstr "Van melléklete"
 
-#: snippets/snippetattachmentwidget.cpp:26
+#: snippets/snippetattachmentwidget.cpp:28
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr "Kattintson a gombra a melléklet kiválasztásához"
 
-#: snippets/snippetattachmentwidget.cpp:32
+#: snippets/snippetattachmentwidget.cpp:34
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Mellékletek kiválasztása"
 
-#: snippets/snippetattachmentwidget.cpp:33
+#: snippets/snippetattachmentwidget.cpp:35
 #, kde-format
 msgid "…"
 msgstr "…"
@@ -2714,24 +2714,24 @@ msgstr "Mellékletek kiválasztása"
 msgid "Do you want to delete selected attachment?"
 msgstr "Szeretné törölni a kiválasztott mellékletet?"
 
-#: snippets/snippetsmanager.cpp:154
+#: snippets/snippetsmanager.cpp:156
 #, kde-format
 msgid "General"
 msgstr "Általános"
 
-#: snippets/snippetsmanager.cpp:160
+#: snippets/snippetsmanager.cpp:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Snippet"
 msgstr "Töredék hozzáadása"
 
-#: snippets/snippetsmanager.cpp:226
+#: snippets/snippetsmanager.cpp:228
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Snippet"
 msgstr "Töredék szerkesztése"
 
-#: snippets/snippetsmanager.cpp:286
+#: snippets/snippetsmanager.cpp:288
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2741,19 +2741,19 @@ msgstr ""
 "Biztosan el szeretné távolítani a(z) „%1” töredéket?<nl/><warning>Nincs mód "
 "az eltávolítás visszavonására.</warning>"
 
-#: snippets/snippetsmanager.cpp:305
+#: snippets/snippetsmanager.cpp:307
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Group"
 msgstr "Csoport hozzáadása"
 
-#: snippets/snippetsmanager.cpp:330
+#: snippets/snippetsmanager.cpp:332
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Group"
 msgstr "Csoport szerkesztése"
 
-#: snippets/snippetsmanager.cpp:359
+#: snippets/snippetsmanager.cpp:361
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2763,55 +2763,55 @@ msgstr ""
 "Biztosan el szeretné távolítani a(z) „%1” csoportot és vele együtt az összes "
 "töredékét?<nl/><warning>Nincs mód az eltávolítás visszavonására.</warning>"
 
-#: snippets/snippetsmanager.cpp:369
+#: snippets/snippetsmanager.cpp:371
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to remove group \"%1\"?"
 msgstr "Biztosan el szeretné távolítani a(z) „%1” csoportot?"
 
-#: snippets/snippetsmanager.cpp:437 snippets/snippetsmanager.cpp:466
+#: snippets/snippetsmanager.cpp:439 snippets/snippetsmanager.cpp:468
 #, kde-format
 msgctxt "@action"
 msgid "Snippet %1"
 msgstr "Töredék %1"
 
-#: snippets/snippetsmanager.cpp:558
+#: snippets/snippetsmanager.cpp:560
 #, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "Töredék hozzáadása…"
 
-#: snippets/snippetsmanager.cpp:560
+#: snippets/snippetsmanager.cpp:562
 #, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "Töredék szerkesztése…"
 
-#: snippets/snippetsmanager.cpp:562
+#: snippets/snippetsmanager.cpp:564
 #, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Töredék eltávolítása"
 
-#: snippets/snippetsmanager.cpp:565
+#: snippets/snippetsmanager.cpp:567
 #, kde-format
 msgctxt "@action"
 msgid "Add Group…"
 msgstr "Csoport hozzáadása…"
 
-#: snippets/snippetsmanager.cpp:567
+#: snippets/snippetsmanager.cpp:569
 #, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
 msgstr "Csoport átnevezése…"
 
-#: snippets/snippetsmanager.cpp:569
+#: snippets/snippetsmanager.cpp:571
 #, kde-format
 msgctxt "@action"
 msgid "Remove Group"
 msgstr "Csoport eltávolítása"
 
-#: snippets/snippetsmanager.cpp:572
+#: snippets/snippetsmanager.cpp:574
 #, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
@@ -2879,7 +2879,7 @@ msgstr ""
 "később felhasználja ugyanezt a változót, akár más kódrészletben is, a most a "
 "jobb oldalon megadott érték lesz a változó alapértelmezése."
 
-#: snippets/snippetwidget.cpp:56
+#: snippets/snippetwidget.cpp:58
 #, kde-format
 msgid ""
 "Enter a keyword here to enable fast insertion of this snippet while writing "

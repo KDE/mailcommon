@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-16 00:44+0000\n"
+"POT-Creation-Date: 2025-08-29 00:44+0000\n"
 "PO-Revision-Date: 2025-01-11 12:22+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -129,7 +129,7 @@ msgstr ""
 "användare som har tillgång till korgen. Om inaktiverad (normalvärdet), har "
 "varje användare med tillgång till korgen sitt eget olästa tillstånd."
 
-#: collectionpage/collectiongeneralpage.cpp:213
+#: collectionpage/collectiongeneralpage.cpp:212
 #, kde-format
 msgid ""
 "You have configured this folder to contain groupware information. That means "
@@ -311,31 +311,31 @@ msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr "Filterkonto saknas. Välj ett konto att använda med filtret \"%1\"."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:38
+#: filter/dialog/filteractionmissingfolderdialog.cpp:40
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Välj korg"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:41
+#: filter/dialog/filteractionmissingfolderdialog.cpp:43
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Korgsökvägen är \"%1\"."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:46
+#: filter/dialog/filteractionmissingfolderdialog.cpp:48
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Följande korgar kan användas för filtret:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:67
+#: filter/dialog/filteractionmissingfolderdialog.cpp:69
 #, kde-format
 msgid "Please select a folder:"
 msgstr "Välj en korg:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:70
+#: filter/dialog/filteractionmissingfolderdialog.cpp:72
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
@@ -427,12 +427,12 @@ msgctxt "@title:window"
 msgid "Select thunderbird filter files"
 msgstr "Välj Thunderbird-filterfiler"
 
-#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:31
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:33
 #, kde-format
 msgid " (default)"
 msgstr " (förval)"
 
-#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:118
 #, kde-format
 msgid "Thunderbird File (*.dat)"
 msgstr "Thunderbird-fil (*.dat)"
@@ -442,83 +442,83 @@ msgstr "Thunderbird-fil (*.dat)"
 msgid "### \"action '%1' not supported\""
 msgstr "### \"åtgärd '%1' stöds inte\""
 
-#: filter/filteractions/filteractionaddheader.cpp:21
+#: filter/filteractions/filteractionaddheader.cpp:22
 #, kde-format
 msgid "Add Header"
 msgstr "Lägg till huvud"
 
-#: filter/filteractions/filteractionaddheader.cpp:76
+#: filter/filteractions/filteractionaddheader.cpp:77
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Med värde:"
 
-#: filter/filteractions/filteractionaddheader.cpp:202
+#: filter/filteractions/filteractionaddheader.cpp:203
 #, kde-format
 msgid "The header name was missing."
 msgstr "Huvudnamnet saknades."
 
-#: filter/filteractions/filteractionaddheader.cpp:208
+#: filter/filteractions/filteractionaddheader.cpp:209
 #, kde-format
 msgid "The header value was missing."
 msgstr "Huvudvärdet saknades."
 
-#: filter/filteractions/filteractionaddtag.cpp:24
+#: filter/filteractions/filteractionaddtag.cpp:26
 #, kde-format
 msgid "Add Tag"
 msgstr "Lägg till etikett"
 
-#: filter/filteractions/filteractionaddtag.cpp:149
+#: filter/filteractions/filteractionaddtag.cpp:151
 #, kde-format
 msgid "No tag selected."
 msgstr "Ingen etikett vald."
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:32
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:33
 #, kde-format
 msgid "Add to Address Book"
 msgstr "Lägg till i adressboken"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:33
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:34
 #, kde-format
 msgctxt "Email sender"
 msgid "From"
 msgstr "Från"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:34
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:35
 #, kde-format
 msgctxt "Email recipient"
 msgid "To"
 msgstr "Till"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:35
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:36
 #: search/searchpatternedit.cpp:52
 #, kde-format
 msgid "CC"
 msgstr "Kopia"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:36
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:37
 #, kde-format
 msgid "BCC"
 msgstr "Dold kopia"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:39
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:40
 #, kde-format
 msgid "KMail Filter"
 msgstr "Filter i Kmail"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:116
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:117
 #, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
 msgstr "med kategori"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:124
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:125
 #, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "i adressbok"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:134
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:135
 #, kde-format
 msgid ""
 "This defines the preferred address book.\n"
@@ -528,12 +528,12 @@ msgstr ""
 "Det här definierar adressboken som föredras.\n"
 "Om den inte går att komma åt, återgår filtret till standardadressboken."
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:286
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:287
 #, kde-format
 msgid "Header type selected is unknown."
 msgstr "Vald huvudtyp är okänd."
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:292
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:293
 #, kde-format
 msgid "No addressbook selected."
 msgstr "Ingen adressbok vald."
@@ -579,27 +579,27 @@ msgstr "Ta bort brev"
 msgid "Be careful, mails will be removed."
 msgstr "Var försiktig, brev kommer att tas bort"
 
-#: filter/filteractions/filteractionencrypt.cpp:44
+#: filter/filteractions/filteractionencrypt.cpp:46
 #, kde-format
 msgid "Encrypt"
 msgstr "Kryptera"
 
-#: filter/filteractions/filteractionencrypt.cpp:211
+#: filter/filteractions/filteractionencrypt.cpp:213
 #, kde-format
 msgid "No encryption key has been selected"
 msgstr "Ingen krypteringsnyckel har valts"
 
-#: filter/filteractions/filteractionencrypt.cpp:247
+#: filter/filteractions/filteractionencrypt.cpp:249
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
 msgstr "Kryptera om krypterade brev med den här nyckeln"
 
-#: filter/filteractions/filteractionencrypt.cpp:257
+#: filter/filteractions/filteractionencrypt.cpp:259
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
 msgstr "<b>Varning:</b> Säkerhetsnyckel krävs för att läsa e-post."
 
-#: filter/filteractions/filteractionencrypt.cpp:259
+#: filter/filteractions/filteractionencrypt.cpp:261
 #, kde-format
 msgid ""
 "<p>Once an email has been encrypted you will need a crypto setup with your "
@@ -622,51 +622,51 @@ msgstr "Kör kommando"
 msgid "Missing command."
 msgstr "Saknar kommando."
 
-#: filter/filteractions/filteractionforward.cpp:35
+#: filter/filteractions/filteractionforward.cpp:37
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
 msgstr "Vidarebefordra till"
 
-#: filter/filteractions/filteractionforward.cpp:91
+#: filter/filteractions/filteractionforward.cpp:93
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Adressaten brevet kommer att vidarebefordras till."
 
-#: filter/filteractions/filteractionforward.cpp:92
+#: filter/filteractions/filteractionforward.cpp:94
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
 msgstr "Filtret vidarebefordrar brevet till adressaten som skrivs in här."
 
-#: filter/filteractions/filteractionforward.cpp:99
-#: filter/filteractions/filteractionforward.cpp:198
+#: filter/filteractions/filteractionforward.cpp:101
+#: filter/filteractions/filteractionforward.cpp:200
 #, kde-format
 msgid "Default Template"
 msgstr "Standardmall"
 
-#: filter/filteractions/filteractionforward.cpp:110
+#: filter/filteractions/filteractionforward.cpp:112
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Mallen som används vid vidarebefordran"
 
-#: filter/filteractions/filteractionforward.cpp:111
+#: filter/filteractions/filteractionforward.cpp:113
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
 msgstr "Ställ in mallen för vidarebefordran som används med filtret."
 
-#: filter/filteractions/filteractionforward.cpp:226
+#: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
 msgid "Forward to %1 with default template"
 msgstr "Vidarebefordra till %1 med standardmall"
 
-#: filter/filteractions/filteractionforward.cpp:228
+#: filter/filteractions/filteractionforward.cpp:230
 #, kde-format
 msgid "Forward to %1 with template %2"
 msgstr "Vidarebefordra till %1 med mallen %2"
 
-#: filter/filteractions/filteractionforward.cpp:234
+#: filter/filteractions/filteractionforward.cpp:236
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."
@@ -723,81 +723,81 @@ msgstr "Huvudnamn odefinierat."
 msgid "Set Reply-To To"
 msgstr "Ange svara till"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:25
+#: filter/filteractions/filteractionrewriteheader.cpp:26
 #, kde-format
 msgid "Rewrite Header"
 msgstr "Skriv om huvud"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:42
+#: filter/filteractions/filteractionrewriteheader.cpp:43
 #, kde-format
 msgid "Header not defined"
 msgstr "Huvud odefinierat"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:48
+#: filter/filteractions/filteractionrewriteheader.cpp:49
 #, kde-format
 msgid "Search string is empty."
 msgstr "Söksträngen är tom."
 
-#: filter/filteractions/filteractionrewriteheader.cpp:110
+#: filter/filteractions/filteractionrewriteheader.cpp:111
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Ersätt:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:121
+#: filter/filteractions/filteractionrewriteheader.cpp:122
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
 msgstr "Med:"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:28
+#: filter/filteractions/filteractionsendfakedisposition.cpp:29
 #, kde-format
 msgid "Send Fake MDN"
 msgstr "Skicka förfalskad bekräftelse"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:33
+#: filter/filteractions/filteractionsendfakedisposition.cpp:34
 #, kde-format
 msgctxt "MDN type"
 msgid "Ignore"
 msgstr "Ignorerat"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:34
+#: filter/filteractions/filteractionsendfakedisposition.cpp:35
 #, kde-format
 msgctxt "MDN type"
 msgid "Displayed"
 msgstr "Visas"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:35
+#: filter/filteractions/filteractionsendfakedisposition.cpp:36
 #, kde-format
 msgctxt "MDN type"
 msgid "Deleted"
 msgstr "Borttaget"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:36
+#: filter/filteractions/filteractionsendfakedisposition.cpp:37
 #, kde-format
 msgctxt "MDN type"
 msgid "Dispatched"
 msgstr "Skickat"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:37
+#: filter/filteractions/filteractionsendfakedisposition.cpp:38
 #, kde-format
 msgctxt "MDN type"
 msgid "Processed"
 msgstr "Hanterat"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:38
+#: filter/filteractions/filteractionsendfakedisposition.cpp:39
 #, kde-format
 msgctxt "MDN type"
 msgid "Denied"
 msgstr "Nekat"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:39
+#: filter/filteractions/filteractionsendfakedisposition.cpp:40
 #, kde-format
 msgctxt "MDN type"
 msgid "Failed"
 msgstr "Misslyckat"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:115
+#: filter/filteractions/filteractionsendfakedisposition.cpp:116
 #, kde-format
 msgid "Fake type undefined."
 msgstr "Förfalskad typ odefinierad."
@@ -812,12 +812,12 @@ msgstr "Bekräfta utdelning"
 msgid "Set Identity To"
 msgstr "Ange identitet till"
 
-#: filter/filteractions/filteractionsetstatus.cpp:20
+#: filter/filteractions/filteractionsetstatus.cpp:22
 #, kde-format
 msgid "Mark As"
 msgstr "Markera som"
 
-#: filter/filteractions/filteractionsetstatus.cpp:32
+#: filter/filteractions/filteractionsetstatus.cpp:34
 #, kde-format
 msgid "Status not specified."
 msgstr "Status inte angiven."
@@ -832,78 +832,78 @@ msgstr "Ange överföring till"
 msgid "Mail transport not defined."
 msgstr "E-postöverföring odefinierad."
 
-#: filter/filteractions/filteractionstatus.cpp:31
+#: filter/filteractions/filteractionstatus.cpp:33
 #, kde-format
 msgctxt "msg status"
 msgid "Important"
 msgstr "Viktigt"
 
-#: filter/filteractions/filteractionstatus.cpp:32
+#: filter/filteractions/filteractionstatus.cpp:34
 #, kde-format
 msgctxt "msg status"
 msgid "Read"
 msgstr "Läst"
 
-#: filter/filteractions/filteractionstatus.cpp:33
+#: filter/filteractions/filteractionstatus.cpp:35
 #, kde-format
 msgctxt "msg status"
 msgid "Unread"
 msgstr "Oläst"
 
-#: filter/filteractions/filteractionstatus.cpp:34
+#: filter/filteractions/filteractionstatus.cpp:36
 #, kde-format
 msgctxt "msg status"
 msgid "Replied"
 msgstr "Besvarat"
 
-#: filter/filteractions/filteractionstatus.cpp:35
+#: filter/filteractions/filteractionstatus.cpp:37
 #, kde-format
 msgctxt "msg status"
 msgid "Forwarded"
 msgstr "Vidarebefordrat"
 
-#: filter/filteractions/filteractionstatus.cpp:36
+#: filter/filteractions/filteractionstatus.cpp:38
 #, kde-format
 msgctxt "msg status"
 msgid "Watched"
 msgstr "Bevakat"
 
-#: filter/filteractions/filteractionstatus.cpp:37
+#: filter/filteractions/filteractionstatus.cpp:39
 #, kde-format
 msgctxt "msg status"
 msgid "Ignored"
 msgstr "Ignorerat"
 
-#: filter/filteractions/filteractionstatus.cpp:38
+#: filter/filteractions/filteractionstatus.cpp:40
 #, kde-format
 msgctxt "msg status"
 msgid "Spam"
 msgstr "Skräp"
 
-#: filter/filteractions/filteractionstatus.cpp:39
+#: filter/filteractions/filteractionstatus.cpp:41
 #, kde-format
 msgctxt "msg status"
 msgid "Ham"
 msgstr "Önskat"
 
-#: filter/filteractions/filteractionstatus.cpp:40
+#: filter/filteractions/filteractionstatus.cpp:42
 #, kde-format
 msgctxt "msg status"
 msgid "Action Item"
 msgstr "Åtgärdas"
 
-#: filter/filteractions/filteractionstatus.cpp:100
+#: filter/filteractions/filteractionstatus.cpp:102
 #, kde-format
 msgid "Status is missing."
 msgstr "Status saknas."
 
-#: filter/filteractions/filteractionunsetstatus.cpp:19
+#: filter/filteractions/filteractionunsetstatus.cpp:21
 #, kde-format
 msgctxt "action: to unset the status"
 msgid "Unset Status"
 msgstr "Ta bort status"
 
-#: filter/filteractions/filteractionunsetstatus.cpp:37
+#: filter/filteractions/filteractionunsetstatus.cpp:39
 #, kde-format
 msgid "Status not defined."
 msgstr "Status odefinierad."
@@ -958,7 +958,7 @@ msgstr "Konvertera till Sieve-skript"
 msgid "Gmail filter %1"
 msgstr "GMail-filter %1"
 
-#: filter/filterimporter/filterimporterprocmail.cpp:52
+#: filter/filterimporter/filterimporterprocmail.cpp:54
 #, kde-format
 msgid "Procmail filter %1"
 msgstr "Procmail-filter %1"
@@ -1048,7 +1048,7 @@ msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Välj filter"
 
-#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:51
+#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:53
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
@@ -1397,7 +1397,7 @@ msgstr "Konvertera Kmail-filter till Sieve-skript"
 msgid "No filters selected."
 msgstr "Inga filter markerade."
 
-#: filter/kmfilterlistbox.cpp:41
+#: filter/kmfilterlistbox.cpp:43
 #, kde-format
 msgid ""
 "<qt><p>This is the list of defined filters. They are processed top-to-bottom."
@@ -1408,31 +1408,31 @@ msgstr ""
 "till botten.</p><p>Klicka på ett filter för att redigera det med hjälp av "
 "kontrollerna på högra halvan av dialogrutan.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:83
+#: filter/kmfilterlistbox.cpp:85
 #, kde-format
 msgctxt "Move selected filter up."
 msgid "Up"
 msgstr "Upp"
 
-#: filter/kmfilterlistbox.cpp:84
+#: filter/kmfilterlistbox.cpp:86
 #, kde-format
 msgctxt "Move selected filter down."
 msgid "Down"
 msgstr "Ner"
 
-#: filter/kmfilterlistbox.cpp:85
+#: filter/kmfilterlistbox.cpp:87
 #, kde-format
 msgctxt "Move selected filter to the top."
 msgid "Top"
 msgstr "Längst upp"
 
-#: filter/kmfilterlistbox.cpp:86
+#: filter/kmfilterlistbox.cpp:88
 #, kde-format
 msgctxt "Move selected filter to the bottom."
 msgid "Bottom"
 msgstr "Längst ner"
 
-#: filter/kmfilterlistbox.cpp:88
+#: filter/kmfilterlistbox.cpp:90
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>up</em> "
@@ -1448,7 +1448,7 @@ msgstr ""
 "filtret provas först.</p><p>Om du klickade på denna knapp av misstag, kan du "
 "ångra ändringen genom att klicka på knappen <em>Ner</em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:96
+#: filter/kmfilterlistbox.cpp:98
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>down</em> "
@@ -1464,7 +1464,7 @@ msgstr ""
 "filtret provas först.</p><p>Om du klickade på denna knapp av misstag, kan du "
 "ångra detta genom att klicka på knappen <em>Upp</em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:104
+#: filter/kmfilterlistbox.cpp:106
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to bottom of "
@@ -1477,7 +1477,7 @@ msgstr ""
 "ordning i listan avgör i vilken ordning de provas på brev: det översta "
 "filtret provas först.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:110
+#: filter/kmfilterlistbox.cpp:112
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to top of "
@@ -1490,31 +1490,31 @@ msgstr ""
 "ordning i listan avgör i vilken ordning de provas på brev: det översta "
 "filtret provas först.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:140
+#: filter/kmfilterlistbox.cpp:142
 #, kde-format
 msgctxt "@action:button in filter list manipulator"
 msgid "New"
 msgstr "Nytt"
 
-#: filter/kmfilterlistbox.cpp:141
+#: filter/kmfilterlistbox.cpp:143
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Kopiera"
 
-#: filter/kmfilterlistbox.cpp:142
+#: filter/kmfilterlistbox.cpp:144
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Ta bort"
 
-#: filter/kmfilterlistbox.cpp:143
+#: filter/kmfilterlistbox.cpp:145
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Byt namn"
 
-#: filter/kmfilterlistbox.cpp:145
+#: filter/kmfilterlistbox.cpp:147
 #, kde-format
 msgid ""
 "<qt><p>Click this button to create a new filter.</p><p>The filter will be "
@@ -1527,7 +1527,7 @@ msgstr ""
 "ordningen senare.</p><p>Om du klickade på knappen av misstag, kan du ångra "
 "detta genom att klicka på knappen <em>Ta bort</em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:152
+#: filter/kmfilterlistbox.cpp:154
 #, kde-format
 msgid ""
 "<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
@@ -1538,7 +1538,7 @@ msgstr ""
 "klickade på knappen av misstag, kan du ångra detta genom att klicka på "
 "knappen <em>Ta bort</em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:156
+#: filter/kmfilterlistbox.cpp:158
 #, kde-format
 msgid ""
 "<qt><p>Click this button to <em>delete</em> the currently-selected filter "
@@ -1551,7 +1551,7 @@ msgstr ""
 "bort det, men du kan alltid lämna dialogrutan genom att välja <em>Avbryt</"
 "em> utan att några ändringar görs.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:163
+#: filter/kmfilterlistbox.cpp:165
 #, kde-format
 msgid ""
 "<qt><p>Click this button to rename the currently-selected filter.</"
@@ -1566,39 +1566,39 @@ msgstr ""
 "automatiska namngivningen, klicka på denna knapp och välj <em>Rensa</em> "
 "följt av <em>Ok</em> i dialogrutan som visas.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:290
+#: filter/kmfilterlistbox.cpp:292
 #, kde-format
 msgid "unnamed"
 msgstr "namnlös"
 
-#: filter/kmfilterlistbox.cpp:444
+#: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "Vill du ta bort filtret \"%1\"?"
 
-#: filter/kmfilterlistbox.cpp:444
+#: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Do you want to remove selected filters?"
 msgstr "Vill du ta bort markerade filter?"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Ta bort filter"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Ta bort filter"
 
-#: filter/kmfilterlistbox.cpp:661
+#: filter/kmfilterlistbox.cpp:663
 #, kde-format
 msgid "Rename Filter"
 msgstr "Byt namn på filter"
 
-#: filter/kmfilterlistbox.cpp:662
+#: filter/kmfilterlistbox.cpp:664
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
@@ -1607,27 +1607,27 @@ msgstr ""
 "Byt namn på filtret \"%1\" till:\n"
 "(lämna fältet tomt för automatiskt namngivning)"
 
-#: filter/mailfilter.cpp:131
+#: filter/mailfilter.cpp:132
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>Tillämpar filteråtgärd:</b> %1"
 
-#: filter/mailfilter.cpp:140
+#: filter/mailfilter.cpp:141
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "Ett kritiskt fel uppstod. Behandling stoppar här."
 
-#: filter/mailfilter.cpp:147
+#: filter/mailfilter.cpp:148
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "Ett problem hittades när den här åtgärden skulle utföras."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>För många filterkommandon i filterregeln %1<b>. </b></qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1636,7 +1636,7 @@ msgstr ""
 "<qt>Okänt filterkommando <b>%1</b><br />i filterregeln <b>%2</b>.<br /"
 ">Ignorerar det.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "Någon åtgärd definierad."
@@ -1899,38 +1899,38 @@ msgstr "%1 (nerkopplad)"
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (%2 % tilldelning uppnådd)"
 
-#: job/backupjob.cpp:94
+#: job/backupjob.cpp:95
 #, kde-format
 msgid "Unable to retrieve folder list."
 msgstr "Kunde inte hämta ett brevlista."
 
-#: job/backupjob.cpp:121
+#: job/backupjob.cpp:122
 #, kde-format
 msgid "The operation was canceled by the user."
 msgstr "Åtgärden avbröts av användaren."
 
-#: job/backupjob.cpp:151
+#: job/backupjob.cpp:152
 #, kde-format
 msgid "Failed to archive the folder '%1'."
 msgstr "Misslyckades arkivera korgen '%1'."
 
-#: job/backupjob.cpp:155
+#: job/backupjob.cpp:156
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Arkivering misslyckades"
 
-#: job/backupjob.cpp:165
+#: job/backupjob.cpp:166
 #, kde-format
 msgid "Unable to finalize the archive file."
 msgstr "Kunde inte avsluta arkivfilen."
 
-#: job/backupjob.cpp:170
+#: job/backupjob.cpp:171
 #, kde-format
 msgid "Archiving finished"
 msgstr "Arkivering klar"
 
-#: job/backupjob.cpp:181
+#: job/backupjob.cpp:182
 #, kde-format
 msgid ""
 "Archiving folder '%1' successfully completed. The archive was written to the "
@@ -1939,55 +1939,55 @@ msgstr ""
 "Arkivering av korgen '%1' avslutades med lyckat resultat. Arkivet har "
 "skrivits i filen '%2'."
 
-#: job/backupjob.cpp:187
+#: job/backupjob.cpp:188
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
 msgstr[0] "%1 brev med storlek %2 har arkiverats."
 msgstr[1] "%1 brev med den totala storleken %2 har arkiverats."
 
-#: job/backupjob.cpp:191
+#: job/backupjob.cpp:192
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Arkivfilens storlek är %1."
 
-#: job/backupjob.cpp:193
+#: job/backupjob.cpp:194
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
 msgstr "Arkivering klar"
 
-#: job/backupjob.cpp:243
+#: job/backupjob.cpp:244
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "Misslyckades skriva ett brev i arkivkorgen '%1'."
 
-#: job/backupjob.cpp:267
+#: job/backupjob.cpp:268
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr "Nerladdning av ett brev i korgen '%1' misslyckades."
 
-#: job/backupjob.cpp:333
+#: job/backupjob.cpp:334
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "Arkiverar korg %1"
 
-#: job/backupjob.cpp:358
+#: job/backupjob.cpp:359
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr "Kunde inte skapa korgstruktur för korgen '%1' i arkivfilen."
 
-#: job/backupjob.cpp:370
+#: job/backupjob.cpp:371
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "Kunde inte hämta brevlista för korgen %1."
 
-#: job/backupjob.cpp:408
+#: job/backupjob.cpp:409
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "Kunde inte öppna arkiv för skrivning."
 
-#: job/backupjob.cpp:412
+#: job/backupjob.cpp:413
 #, kde-format
 msgid "Archiving"
 msgstr "Arkiverar"
@@ -2068,23 +2068,23 @@ msgstr ""
 "Felet var:\n"
 "%1"
 
-#: search/searchpattern.cpp:235
+#: search/searchpattern.cpp:237
 #, kde-format
 msgctxt "name used for a virgin filter"
 msgid "unknown"
 msgstr "okänt"
 
-#: search/searchpattern.cpp:243
+#: search/searchpattern.cpp:245
 #, kde-format
 msgid "(match any of the following)"
 msgstr "(matcha någon av följande)"
 
-#: search/searchpattern.cpp:246
+#: search/searchpattern.cpp:248
 #, kde-format
 msgid "(match all of the following)"
 msgstr "(matcha alla följande)"
 
-#: search/searchpattern.cpp:249
+#: search/searchpattern.cpp:251
 #, kde-format
 msgid "(match all messages)"
 msgstr "(matcha alla brev)"
@@ -2192,99 +2192,99 @@ msgstr "Matcha alla brev"
 msgid "Filter criteria:"
 msgstr "Filterkriterier:"
 
-#: search/searchrule/searchrule.cpp:185
+#: search/searchrule/searchrule.cpp:187
 #, kde-format
 msgid "equal"
 msgstr "är lika med"
 
-#: search/searchrule/searchrule.cpp:188
+#: search/searchrule/searchrule.cpp:190
 #, kde-format
 msgid "not equal"
 msgstr "är inte lika med"
 
-#: search/searchrule/searchrule.cpp:191
+#: search/searchrule/searchrule.cpp:193
 #, kde-format
 msgid "is greater"
 msgstr "är större än"
 
-#: search/searchrule/searchrule.cpp:194
+#: search/searchrule/searchrule.cpp:196
 #, kde-format
 msgid "is less or equal"
 msgstr "är mindre än eller lika med"
 
-#: search/searchrule/searchrule.cpp:197
+#: search/searchrule/searchrule.cpp:199
 #, kde-format
 msgid "is less"
 msgstr "är mindre än"
 
-#: search/searchrule/searchrule.cpp:200
+#: search/searchrule/searchrule.cpp:202
 #, kde-format
 msgid "is greater or equal"
 msgstr "är större än eller lika med"
 
-#: search/searchrule/searchrule.cpp:203
+#: search/searchrule/searchrule.cpp:205
 #, kde-format
 msgid "is in addressbook"
 msgstr "är i adressboken"
 
-#: search/searchrule/searchrule.cpp:206
+#: search/searchrule/searchrule.cpp:208
 #, kde-format
 msgid "is not in addressbook"
 msgstr "är inte i adressboken"
 
-#: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
+#: search/searchrule/searchrule.cpp:211 search/searchrule/searchrule.cpp:214
 #, kde-format
 msgid "is in category"
 msgstr "är i kategorin"
 
-#: search/searchrule/searchrule.cpp:215
+#: search/searchrule/searchrule.cpp:217
 #: search/widgethandler/messagerulewidgethandler.cpp:28
 #: search/widgethandler/messagerulewidgethandler.cpp:145
 #, kde-format
 msgid "has an attachment"
 msgstr "har en bilaga"
 
-#: search/searchrule/searchrule.cpp:218
+#: search/searchrule/searchrule.cpp:220
 #, kde-format
 msgid "has not an attachment"
 msgstr "har inte en bilaga"
 
-#: search/searchrule/searchrule.cpp:221
+#: search/searchrule/searchrule.cpp:223
 #, kde-format
 msgid "has an invitation"
 msgstr "har en inbjudan"
 
-#: search/searchrule/searchrule.cpp:224
+#: search/searchrule/searchrule.cpp:226
 #, kde-format
 msgid "has not an invitation"
 msgstr "har inte en inbjudan"
 
-#: search/searchrule/searchrule.cpp:227
+#: search/searchrule/searchrule.cpp:229
 #, kde-format
 msgid "start with"
 msgstr "börjar med"
 
-#: search/searchrule/searchrule.cpp:230
+#: search/searchrule/searchrule.cpp:232
 #, kde-format
 msgid "not start with"
 msgstr "börjar inte med"
 
-#: search/searchrule/searchrule.cpp:233
+#: search/searchrule/searchrule.cpp:235
 #, kde-format
 msgid "end with"
 msgstr "slutar med"
 
-#: search/searchrule/searchrule.cpp:236
+#: search/searchrule/searchrule.cpp:238
 #, kde-format
 msgid "not end with"
 msgstr "slutar inte med"
 
-#: search/searchrule/searchrule.cpp:239
+#: search/searchrule/searchrule.cpp:241
 #, kde-format
 msgid "none"
 msgstr "inget"
 
-#: search/searchrule/searchrule.cpp:242
+#: search/searchrule/searchrule.cpp:244
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
 #: search/widgethandler/tagrulewidgethandler.cpp:93
@@ -2293,73 +2293,73 @@ msgstr "inget"
 msgid "contains"
 msgstr "innehåller"
 
-#: search/searchrule/searchrule.cpp:245
+#: search/searchrule/searchrule.cpp:247
 #, kde-format
 msgid "not contains"
 msgstr "innehåller inte"
 
-#: search/searchrule/searchrule.cpp:248
+#: search/searchrule/searchrule.cpp:250
 #, kde-format
 msgid "has regexp"
 msgstr "har reguljärt uttryck"
 
-#: search/searchrule/searchrule.cpp:251
+#: search/searchrule/searchrule.cpp:253
 #, kde-format
 msgid "not regexp"
 msgstr "har inte reguljärt uttryck"
 
-#: search/searchrule/searchrule.cpp:265
+#: search/searchrule/searchrule.cpp:267
 #, kde-format
 msgid "size equals not supported"
 msgstr "lika storlekar stöds inte"
 
-#: search/searchrule/searchrule.cpp:268
+#: search/searchrule/searchrule.cpp:270
 #, kde-format
 msgid "size not equals not supported"
 msgstr "olika storlekar stöds inte"
 
-#: search/searchrule/searchrule.cpp:301 search/searchrule/searchrule.cpp:410
+#: search/searchrule/searchrule.cpp:303 search/searchrule/searchrule.cpp:411
 #: search/searchrule/searchrule.cpp:494
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "\"%1\" stöds inte med villkoret \"%2\""
 
-#: search/searchrule/searchrule.cpp:308
+#: search/searchrule/searchrule.cpp:309
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> inte implementerat eller stöds inte"
 
-#: search/searchrule/searchrule.cpp:311
+#: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<något huvud> inte implementerat eller stöds inte stöds inte"
 
-#: search/searchrule/searchrule.cpp:314
+#: search/searchrule/searchrule.cpp:315
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<innehåll> inte implementerat eller stöds inte"
 
-#: search/searchrule/searchrule.cpp:317
+#: search/searchrule/searchrule.cpp:318
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<ålder i dagar> inte implementerat eller stöds inte stöds inte"
 
-#: search/searchrule/searchrule.cpp:320
+#: search/searchrule/searchrule.cpp:321
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<datum> inte implementerat eller stöds inte"
 
-#: search/searchrule/searchrule.cpp:323
+#: search/searchrule/searchrule.cpp:324
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<mottagare> inte implementerat eller stöds inte"
 
-#: search/searchrule/searchrule.cpp:325
+#: search/searchrule/searchrule.cpp:326
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "<ettikett> stöds inte"
 
-#: search/searchrule/searchrule.cpp:328
+#: search/searchrule/searchrule.cpp:329
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<brev> inte implementerat eller stöds inte"
@@ -2374,7 +2374,7 @@ msgstr "Datumet är inte giltigt."
 msgid "Content is not a number."
 msgstr "Innehållet är inte ett tal."
 
-#: search/searchrule/searchrulestring.cpp:233
+#: search/searchrule/searchrulestring.cpp:235
 #, kde-format
 msgid "String is empty."
 msgstr "Strängen är tom."
@@ -2635,19 +2635,19 @@ msgctxt "message status"
 msgid "Has Attachment"
 msgstr "Har bilaga"
 
-#: snippets/snippetattachmentwidget.cpp:26
+#: snippets/snippetattachmentwidget.cpp:28
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr "Klicka på knappen för att välja bilagd fil"
 
-#: snippets/snippetattachmentwidget.cpp:32
+#: snippets/snippetattachmentwidget.cpp:34
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Välj bilagor"
 
-#: snippets/snippetattachmentwidget.cpp:33
+#: snippets/snippetattachmentwidget.cpp:35
 #, kde-format
 msgid "…"
 msgstr "…"
@@ -2682,24 +2682,24 @@ msgstr "Välj bilagor"
 msgid "Do you want to delete selected attachment?"
 msgstr "Vill du ta bort vald bilaga?"
 
-#: snippets/snippetsmanager.cpp:154
+#: snippets/snippetsmanager.cpp:156
 #, kde-format
 msgid "General"
 msgstr "Allmänt"
 
-#: snippets/snippetsmanager.cpp:160
+#: snippets/snippetsmanager.cpp:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Snippet"
 msgstr "Lägg till textsnutt"
 
-#: snippets/snippetsmanager.cpp:226
+#: snippets/snippetsmanager.cpp:228
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Snippet"
 msgstr "Redigera textsnutt"
 
-#: snippets/snippetsmanager.cpp:286
+#: snippets/snippetsmanager.cpp:288
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2709,19 +2709,19 @@ msgstr ""
 "Vill du verkligen ta bort textsnutten \"%1\"?<nl/><warning>Det finns inget "
 "sätt att ångra borttagningen.</warning>"
 
-#: snippets/snippetsmanager.cpp:305
+#: snippets/snippetsmanager.cpp:307
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Group"
 msgstr "Lägg till grupp"
 
-#: snippets/snippetsmanager.cpp:330
+#: snippets/snippetsmanager.cpp:332
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Group"
 msgstr "Redigera grupp"
 
-#: snippets/snippetsmanager.cpp:359
+#: snippets/snippetsmanager.cpp:361
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2731,55 +2731,55 @@ msgstr ""
 "Vill du verkligen ta bort gruppen \"%1\" samt alla dess textsnuttar?<nl/"
 "><warning>Det finns inget sätt att ångra borttagningen.</warning>"
 
-#: snippets/snippetsmanager.cpp:369
+#: snippets/snippetsmanager.cpp:371
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to remove group \"%1\"?"
 msgstr "Vill du verkligen ta bort gruppen \"%1\"?"
 
-#: snippets/snippetsmanager.cpp:437 snippets/snippetsmanager.cpp:466
+#: snippets/snippetsmanager.cpp:439 snippets/snippetsmanager.cpp:468
 #, kde-format
 msgctxt "@action"
 msgid "Snippet %1"
 msgstr "Textsnutt %1"
 
-#: snippets/snippetsmanager.cpp:558
+#: snippets/snippetsmanager.cpp:560
 #, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "Lägg till textsnutt…"
 
-#: snippets/snippetsmanager.cpp:560
+#: snippets/snippetsmanager.cpp:562
 #, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "Redigera textsnutt…"
 
-#: snippets/snippetsmanager.cpp:562
+#: snippets/snippetsmanager.cpp:564
 #, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Ta bort textsnutt"
 
-#: snippets/snippetsmanager.cpp:565
+#: snippets/snippetsmanager.cpp:567
 #, kde-format
 msgctxt "@action"
 msgid "Add Group…"
 msgstr "Lägg till grupp…"
 
-#: snippets/snippetsmanager.cpp:567
+#: snippets/snippetsmanager.cpp:569
 #, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
 msgstr "Byt namn på grupp…"
 
-#: snippets/snippetsmanager.cpp:569
+#: snippets/snippetsmanager.cpp:571
 #, kde-format
 msgctxt "@action"
 msgid "Remove Group"
 msgstr "Ta bort grupp"
 
-#: snippets/snippetsmanager.cpp:572
+#: snippets/snippetsmanager.cpp:574
 #, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
@@ -2847,7 +2847,7 @@ msgstr ""
 "senare använder samma variabel, till och med i en annan textsnutt, blir "
 "värdet som skrivs in till höger variabelns förvalda värde."
 
-#: snippets/snippetwidget.cpp:56
+#: snippets/snippetwidget.cpp:58
 #, kde-format
 msgid ""
 "Enter a keyword here to enable fast insertion of this snippet while writing "

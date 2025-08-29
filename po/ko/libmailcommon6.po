@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-16 00:44+0000\n"
+"POT-Creation-Date: 2025-08-29 00:44+0000\n"
 "PO-Revision-Date: 2025-04-06 23:33+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -128,7 +128,7 @@ msgstr ""
 "합니다. 이 옵션을 사용하지 않으면(기본값) 이 폴더를 읽는 모든 사용자는 개별적"
 "으로 읽음/읽지 않음 상태를 가집니다."
 
-#: collectionpage/collectiongeneralpage.cpp:213
+#: collectionpage/collectiongeneralpage.cpp:212
 #, kde-format
 msgid ""
 "You have configured this folder to contain groupware information. That means "
@@ -305,31 +305,31 @@ msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr "필터 계정이 없습니다. \"%1\" 필터에 사용할 계정을 선택하십시오"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:38
+#: filter/dialog/filteractionmissingfolderdialog.cpp:40
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "폴더 선택"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:41
+#: filter/dialog/filteractionmissingfolderdialog.cpp:43
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "폴더 경로는 \"%1\"이었습니다."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:46
+#: filter/dialog/filteractionmissingfolderdialog.cpp:48
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "이 필터를 다음 폴더에 적용할 수 있습니다:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:67
+#: filter/dialog/filteractionmissingfolderdialog.cpp:69
 #, kde-format
 msgid "Please select a folder:"
 msgstr "폴더를 선택하십시오:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:70
+#: filter/dialog/filteractionmissingfolderdialog.cpp:72
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
@@ -420,12 +420,12 @@ msgctxt "@title:window"
 msgid "Select thunderbird filter files"
 msgstr "Thunderbird 필터 파일 선택"
 
-#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:31
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:33
 #, kde-format
 msgid " (default)"
 msgstr " (기본값)"
 
-#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:116
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:118
 #, kde-format
 msgid "Thunderbird File (*.dat)"
 msgstr "Thunderbird 파일 (*.dat)"
@@ -435,83 +435,83 @@ msgstr "Thunderbird 파일 (*.dat)"
 msgid "### \"action '%1' not supported\""
 msgstr "### \"동작 '%1'을(를) 지원하지 않음\""
 
-#: filter/filteractions/filteractionaddheader.cpp:21
+#: filter/filteractions/filteractionaddheader.cpp:22
 #, kde-format
 msgid "Add Header"
 msgstr "헤더 추가"
 
-#: filter/filteractions/filteractionaddheader.cpp:76
+#: filter/filteractions/filteractionaddheader.cpp:77
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "값 사용:"
 
-#: filter/filteractions/filteractionaddheader.cpp:202
+#: filter/filteractions/filteractionaddheader.cpp:203
 #, kde-format
 msgid "The header name was missing."
 msgstr "헤더 이름이 없습니다."
 
-#: filter/filteractions/filteractionaddheader.cpp:208
+#: filter/filteractions/filteractionaddheader.cpp:209
 #, kde-format
 msgid "The header value was missing."
 msgstr "헤더 값이 없습니다."
 
-#: filter/filteractions/filteractionaddtag.cpp:24
+#: filter/filteractions/filteractionaddtag.cpp:26
 #, kde-format
 msgid "Add Tag"
 msgstr "태그 추가"
 
-#: filter/filteractions/filteractionaddtag.cpp:149
+#: filter/filteractions/filteractionaddtag.cpp:151
 #, kde-format
 msgid "No tag selected."
 msgstr "태그를 선택하지 않았습니다."
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:32
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:33
 #, kde-format
 msgid "Add to Address Book"
 msgstr "주소록에 추가"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:33
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:34
 #, kde-format
 msgctxt "Email sender"
 msgid "From"
 msgstr "보낸 사람"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:34
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:35
 #, kde-format
 msgctxt "Email recipient"
 msgid "To"
 msgstr "받는 사람"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:35
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:36
 #: search/searchpatternedit.cpp:52
 #, kde-format
 msgid "CC"
 msgstr "참조"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:36
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:37
 #, kde-format
 msgid "BCC"
 msgstr "숨은 참조"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:39
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:40
 #, kde-format
 msgid "KMail Filter"
 msgstr "KMail 필터"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:116
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:117
 #, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
 msgstr "분류 사용"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:124
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:125
 #, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "주소록에서"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:134
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:135
 #, kde-format
 msgid ""
 "This defines the preferred address book.\n"
@@ -521,12 +521,12 @@ msgstr ""
 "선호하는 주소록을 지정합니다.\n"
 "접근할 수 없으면 기본 주소록을 사용합니다."
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:286
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:287
 #, kde-format
 msgid "Header type selected is unknown."
 msgstr "선택한 헤더 종류를 알 수 없습니다."
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:292
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:293
 #, kde-format
 msgid "No addressbook selected."
 msgstr "주소록을 선택하지 않았습니다."
@@ -572,27 +572,27 @@ msgstr "메시지 삭제"
 msgid "Be careful, mails will be removed."
 msgstr "주의하십시오. 메일이 삭제될 수도 있습니다."
 
-#: filter/filteractions/filteractionencrypt.cpp:44
+#: filter/filteractions/filteractionencrypt.cpp:46
 #, kde-format
 msgid "Encrypt"
 msgstr "암호화"
 
-#: filter/filteractions/filteractionencrypt.cpp:211
+#: filter/filteractions/filteractionencrypt.cpp:213
 #, kde-format
 msgid "No encryption key has been selected"
 msgstr "암호화 키가 선택되지 않았음"
 
-#: filter/filteractions/filteractionencrypt.cpp:247
+#: filter/filteractions/filteractionencrypt.cpp:249
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
 msgstr "암호화된 이메일을 이 키로 다시 암호화"
 
-#: filter/filteractions/filteractionencrypt.cpp:257
+#: filter/filteractions/filteractionencrypt.cpp:259
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
 msgstr "<b>경고:</b> 이메일을 읽으려면 비밀 키가 필요합니다."
 
-#: filter/filteractions/filteractionencrypt.cpp:259
+#: filter/filteractions/filteractionencrypt.cpp:261
 #, kde-format
 msgid ""
 "<p>Once an email has been encrypted you will need a crypto setup with your "
@@ -614,51 +614,51 @@ msgstr "명령 실행"
 msgid "Missing command."
 msgstr "명령이 없습니다."
 
-#: filter/filteractions/filteractionforward.cpp:35
+#: filter/filteractions/filteractionforward.cpp:37
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
 msgstr "다음으로 전달"
 
-#: filter/filteractions/filteractionforward.cpp:91
+#: filter/filteractions/filteractionforward.cpp:93
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "메시지를 전달할 메일 주소입니다."
 
-#: filter/filteractions/filteractionforward.cpp:92
+#: filter/filteractions/filteractionforward.cpp:94
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
 msgstr "이 필터는 여기에 입력한 주소로 메시지를 전달합니다."
 
-#: filter/filteractions/filteractionforward.cpp:99
-#: filter/filteractions/filteractionforward.cpp:198
+#: filter/filteractions/filteractionforward.cpp:101
+#: filter/filteractions/filteractionforward.cpp:200
 #, kde-format
 msgid "Default Template"
 msgstr "기본 템플릿"
 
-#: filter/filteractions/filteractionforward.cpp:110
+#: filter/filteractions/filteractionforward.cpp:112
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "전달할 때 사용할 템플릿"
 
-#: filter/filteractions/filteractionforward.cpp:111
+#: filter/filteractions/filteractionforward.cpp:113
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
 msgstr "이 필터에 사용할 전달 템플릿을 선택하십시오."
 
-#: filter/filteractions/filteractionforward.cpp:226
+#: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
 msgid "Forward to %1 with default template"
 msgstr "기본 템플릿을 사용하여 %1에게 전달"
 
-#: filter/filteractions/filteractionforward.cpp:228
+#: filter/filteractions/filteractionforward.cpp:230
 #, kde-format
 msgid "Forward to %1 with template %2"
 msgstr "%2 템플릿을 사용하여 %1에게 전달"
 
-#: filter/filteractions/filteractionforward.cpp:234
+#: filter/filteractions/filteractionforward.cpp:236
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."
@@ -715,81 +715,81 @@ msgstr "헤더 이름이 정의되지 않았습니다."
 msgid "Set Reply-To To"
 msgstr "Reply-To 헤더 설정"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:25
+#: filter/filteractions/filteractionrewriteheader.cpp:26
 #, kde-format
 msgid "Rewrite Header"
 msgstr "헤더 다시 작성"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:42
+#: filter/filteractions/filteractionrewriteheader.cpp:43
 #, kde-format
 msgid "Header not defined"
 msgstr "헤더가 정의되지 않았음"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:48
+#: filter/filteractions/filteractionrewriteheader.cpp:49
 #, kde-format
 msgid "Search string is empty."
 msgstr "검색 문자열이 비어 있습니다."
 
-#: filter/filteractions/filteractionrewriteheader.cpp:110
+#: filter/filteractions/filteractionrewriteheader.cpp:111
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "바꾸기:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:121
+#: filter/filteractions/filteractionrewriteheader.cpp:122
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
 msgstr "다음으로:"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:28
+#: filter/filteractions/filteractionsendfakedisposition.cpp:29
 #, kde-format
 msgid "Send Fake MDN"
 msgstr "가짜 MDN 전송"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:33
+#: filter/filteractions/filteractionsendfakedisposition.cpp:34
 #, kde-format
 msgctxt "MDN type"
 msgid "Ignore"
 msgstr "무시"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:34
+#: filter/filteractions/filteractionsendfakedisposition.cpp:35
 #, kde-format
 msgctxt "MDN type"
 msgid "Displayed"
 msgstr "표시됨"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:35
+#: filter/filteractions/filteractionsendfakedisposition.cpp:36
 #, kde-format
 msgctxt "MDN type"
 msgid "Deleted"
 msgstr "삭제됨"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:36
+#: filter/filteractions/filteractionsendfakedisposition.cpp:37
 #, kde-format
 msgctxt "MDN type"
 msgid "Dispatched"
 msgstr "전달됨"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:37
+#: filter/filteractions/filteractionsendfakedisposition.cpp:38
 #, kde-format
 msgctxt "MDN type"
 msgid "Processed"
 msgstr "처리됨"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:38
+#: filter/filteractions/filteractionsendfakedisposition.cpp:39
 #, kde-format
 msgctxt "MDN type"
 msgid "Denied"
 msgstr "거부됨"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:39
+#: filter/filteractions/filteractionsendfakedisposition.cpp:40
 #, kde-format
 msgctxt "MDN type"
 msgid "Failed"
 msgstr "실패함"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:115
+#: filter/filteractions/filteractionsendfakedisposition.cpp:116
 #, kde-format
 msgid "Fake type undefined."
 msgstr "가짜 형식이 정의되지 않았습니다."
@@ -804,12 +804,12 @@ msgstr "배달 확인"
 msgid "Set Identity To"
 msgstr "다음으로 프로필 설정"
 
-#: filter/filteractions/filteractionsetstatus.cpp:20
+#: filter/filteractions/filteractionsetstatus.cpp:22
 #, kde-format
 msgid "Mark As"
 msgstr "다음으로 표시"
 
-#: filter/filteractions/filteractionsetstatus.cpp:32
+#: filter/filteractions/filteractionsetstatus.cpp:34
 #, kde-format
 msgid "Status not specified."
 msgstr "상태가 정의되지 않았습니다."
@@ -824,78 +824,78 @@ msgstr "다음으로 전송 방법 설정"
 msgid "Mail transport not defined."
 msgstr "메일 전송이 정의되지 않았습니다."
 
-#: filter/filteractions/filteractionstatus.cpp:31
+#: filter/filteractions/filteractionstatus.cpp:33
 #, kde-format
 msgctxt "msg status"
 msgid "Important"
 msgstr "중요함"
 
-#: filter/filteractions/filteractionstatus.cpp:32
+#: filter/filteractions/filteractionstatus.cpp:34
 #, kde-format
 msgctxt "msg status"
 msgid "Read"
 msgstr "읽음"
 
-#: filter/filteractions/filteractionstatus.cpp:33
+#: filter/filteractions/filteractionstatus.cpp:35
 #, kde-format
 msgctxt "msg status"
 msgid "Unread"
 msgstr "읽지 않음"
 
-#: filter/filteractions/filteractionstatus.cpp:34
+#: filter/filteractions/filteractionstatus.cpp:36
 #, kde-format
 msgctxt "msg status"
 msgid "Replied"
 msgstr "답장 보냈음"
 
-#: filter/filteractions/filteractionstatus.cpp:35
+#: filter/filteractions/filteractionstatus.cpp:37
 #, kde-format
 msgctxt "msg status"
 msgid "Forwarded"
 msgstr "전달됨"
 
-#: filter/filteractions/filteractionstatus.cpp:36
+#: filter/filteractions/filteractionstatus.cpp:38
 #, kde-format
 msgctxt "msg status"
 msgid "Watched"
 msgstr "주시함"
 
-#: filter/filteractions/filteractionstatus.cpp:37
+#: filter/filteractions/filteractionstatus.cpp:39
 #, kde-format
 msgctxt "msg status"
 msgid "Ignored"
 msgstr "무시됨"
 
-#: filter/filteractions/filteractionstatus.cpp:38
+#: filter/filteractions/filteractionstatus.cpp:40
 #, kde-format
 msgctxt "msg status"
 msgid "Spam"
 msgstr "스팸"
 
-#: filter/filteractions/filteractionstatus.cpp:39
+#: filter/filteractions/filteractionstatus.cpp:41
 #, kde-format
 msgctxt "msg status"
 msgid "Ham"
 msgstr "햄"
 
-#: filter/filteractions/filteractionstatus.cpp:40
+#: filter/filteractions/filteractionstatus.cpp:42
 #, kde-format
 msgctxt "msg status"
 msgid "Action Item"
 msgstr "동작 항목"
 
-#: filter/filteractions/filteractionstatus.cpp:100
+#: filter/filteractions/filteractionstatus.cpp:102
 #, kde-format
 msgid "Status is missing."
 msgstr "상태가 없습니다."
 
-#: filter/filteractions/filteractionunsetstatus.cpp:19
+#: filter/filteractions/filteractionunsetstatus.cpp:21
 #, kde-format
 msgctxt "action: to unset the status"
 msgid "Unset Status"
 msgstr "상태 해제"
 
-#: filter/filteractions/filteractionunsetstatus.cpp:37
+#: filter/filteractions/filteractionunsetstatus.cpp:39
 #, kde-format
 msgid "Status not defined."
 msgstr "상태가 정의되지 않았습니다."
@@ -950,7 +950,7 @@ msgstr "Sieve 스크립트로 변환"
 msgid "Gmail filter %1"
 msgstr "GMail 필터 %1"
 
-#: filter/filterimporter/filterimporterprocmail.cpp:52
+#: filter/filterimporter/filterimporterprocmail.cpp:54
 #, kde-format
 msgid "Procmail filter %1"
 msgstr "Procmail 필터 %1"
@@ -1038,7 +1038,7 @@ msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "필터 선택"
 
-#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:51
+#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:53
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
@@ -1385,7 +1385,7 @@ msgstr "KMail 필터를 Sieve 스크립트로 변환"
 msgid "No filters selected."
 msgstr "필터를 선택하지 않았습니다."
 
-#: filter/kmfilterlistbox.cpp:41
+#: filter/kmfilterlistbox.cpp:43
 #, kde-format
 msgid ""
 "<qt><p>This is the list of defined filters. They are processed top-to-bottom."
@@ -1396,31 +1396,31 @@ msgstr ""
 "를 선택한 다음 대화 상자 오른쪽에 있는 컨트롤을 사용하여 편집할 수 있습니다."
 "</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:83
+#: filter/kmfilterlistbox.cpp:85
 #, kde-format
 msgctxt "Move selected filter up."
 msgid "Up"
 msgstr "위로 이동"
 
-#: filter/kmfilterlistbox.cpp:84
+#: filter/kmfilterlistbox.cpp:86
 #, kde-format
 msgctxt "Move selected filter down."
 msgid "Down"
 msgstr "아래로 이동"
 
-#: filter/kmfilterlistbox.cpp:85
+#: filter/kmfilterlistbox.cpp:87
 #, kde-format
 msgctxt "Move selected filter to the top."
 msgid "Top"
 msgstr "맨 위"
 
-#: filter/kmfilterlistbox.cpp:86
+#: filter/kmfilterlistbox.cpp:88
 #, kde-format
 msgctxt "Move selected filter to the bottom."
 msgid "Bottom"
 msgstr "맨 아래"
 
-#: filter/kmfilterlistbox.cpp:88
+#: filter/kmfilterlistbox.cpp:90
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>up</em> "
@@ -1435,7 +1435,7 @@ msgstr ""
 "유용합니다. 맨 위에 있는 필터부터 적용됩니다.</p><p>실수로 이 단추를 클릭했으"
 "면 <em>아래로 이동</em> 단추를 클릭해서 실행을 취소할 수 있습니다.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:96
+#: filter/kmfilterlistbox.cpp:98
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>down</em> "
@@ -1450,7 +1450,7 @@ msgstr ""
 "에 유용합니다. 맨 위에 있는 필터부터 적용됩니다.</p><p>실수로 이 단추를 클릭"
 "했으면 <em>위로 이동</em> 단추를 클릭해서 실행을 취소할 수 있습니다.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:104
+#: filter/kmfilterlistbox.cpp:106
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to bottom of "
@@ -1462,7 +1462,7 @@ msgstr ""
 "<p>목록에 있는 필터 순서는 메시지에 적용하는 순서와 동일하기 때문에 유용합니"
 "다. 맨 위에 있는 필터부터 적용됩니다.</p> </qt>"
 
-#: filter/kmfilterlistbox.cpp:110
+#: filter/kmfilterlistbox.cpp:112
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to top of "
@@ -1474,31 +1474,31 @@ msgstr ""
 "목록에 있는 필터 순서는 메시지에 적용하는 순서와 동일하기 때문에 유용합니다. "
 "맨 위에 있는 필터부터 적용됩니다.</p> </qt>"
 
-#: filter/kmfilterlistbox.cpp:140
+#: filter/kmfilterlistbox.cpp:142
 #, kde-format
 msgctxt "@action:button in filter list manipulator"
 msgid "New"
 msgstr "새로 만들기"
 
-#: filter/kmfilterlistbox.cpp:141
+#: filter/kmfilterlistbox.cpp:143
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "복사"
 
-#: filter/kmfilterlistbox.cpp:142
+#: filter/kmfilterlistbox.cpp:144
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "삭제"
 
-#: filter/kmfilterlistbox.cpp:143
+#: filter/kmfilterlistbox.cpp:145
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "이름 바꾸기"
 
-#: filter/kmfilterlistbox.cpp:145
+#: filter/kmfilterlistbox.cpp:147
 #, kde-format
 msgid ""
 "<qt><p>Click this button to create a new filter.</p><p>The filter will be "
@@ -1511,7 +1511,7 @@ msgstr ""
 "로 클릭했으면 <em>삭제</em> 단추를 클릭해서 실행을 취소할 수 있습니다.</p></"
 "qt>"
 
-#: filter/kmfilterlistbox.cpp:152
+#: filter/kmfilterlistbox.cpp:154
 #, kde-format
 msgid ""
 "<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
@@ -1521,7 +1521,7 @@ msgstr ""
 "<qt><p>이 단추를 클릭하면 필터를 복사합니다.</p><p>이 단추를 실수로 클릭했으"
 "면 <em>삭제</em> 단추를 클릭해서 실행을 취소할 수 있습니다.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:156
+#: filter/kmfilterlistbox.cpp:158
 #, kde-format
 msgid ""
 "<qt><p>Click this button to <em>delete</em> the currently-selected filter "
@@ -1533,7 +1533,7 @@ msgstr ""
 "니다.</p><p>필터를 삭제하면 취소할 수 없지만 대화 상자의 <em>취소</em> 단추"
 "를 클릭해서 전체 실행을 취소할 수 있습니다.</p> </qt>"
 
-#: filter/kmfilterlistbox.cpp:163
+#: filter/kmfilterlistbox.cpp:165
 #, kde-format
 msgid ""
 "<qt><p>Click this button to rename the currently-selected filter.</"
@@ -1547,39 +1547,39 @@ msgstr ""
 "실수로 변경했고 자동 이름 지정을 사용하려면 이 단추를 클릭하고 나타나는 대화 "
 "상자에서 <em>지우기</em>를 누른 다음 <em>확인</em>을 클릭하십시오.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:290
+#: filter/kmfilterlistbox.cpp:292
 #, kde-format
 msgid "unnamed"
 msgstr "이름 없음"
 
-#: filter/kmfilterlistbox.cpp:444
+#: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "\"%1\" 필터를 삭제하시겠습니까?"
 
-#: filter/kmfilterlistbox.cpp:444
+#: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Do you want to remove selected filters?"
 msgstr "선택한 필터를 삭제하시겠습니까?"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "필터 삭제"
 
-#: filter/kmfilterlistbox.cpp:445
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "필터 삭제"
 
-#: filter/kmfilterlistbox.cpp:661
+#: filter/kmfilterlistbox.cpp:663
 #, kde-format
 msgid "Rename Filter"
 msgstr "필터 이름 바꾸기"
 
-#: filter/kmfilterlistbox.cpp:662
+#: filter/kmfilterlistbox.cpp:664
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
@@ -1588,27 +1588,27 @@ msgstr ""
 "\"%1\" 필터의 이름 바꾸기:\n"
 "(비워 두면 자동으로 이름 바꾸기)"
 
-#: filter/mailfilter.cpp:131
+#: filter/mailfilter.cpp:132
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>필터 동작 적용:</b> %1"
 
-#: filter/mailfilter.cpp:140
+#: filter/mailfilter.cpp:141
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "치명적인 오류가 발생했습니다. 처리를 중단합니다."
 
-#: filter/mailfilter.cpp:147
+#: filter/mailfilter.cpp:148
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "이 동작을 적용하는 중 문제가 발생했습니다."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>필터 규칙 <b>%1</b>에 너무 많은 필터 동작이 있습니다.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1617,7 +1617,7 @@ msgstr ""
 "<qt>필터 규칙 <b>%2</b>에<br />알 수 없는 필터 동작 <b>%1</b>이(가) 있습니다."
 "<br />무시합니다.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "동작이 정의되었습니다."
@@ -1881,92 +1881,92 @@ msgstr "%1(오프라인)"
 msgid "%1 (Reached %2% quota)"
 msgstr "%1(할당량의 %2% 사용 중)"
 
-#: job/backupjob.cpp:94
+#: job/backupjob.cpp:95
 #, kde-format
 msgid "Unable to retrieve folder list."
 msgstr "폴더 목록을 가져올 수 없습니다."
 
-#: job/backupjob.cpp:121
+#: job/backupjob.cpp:122
 #, kde-format
 msgid "The operation was canceled by the user."
 msgstr "사용자가 작업을 취소했습니다."
 
-#: job/backupjob.cpp:151
+#: job/backupjob.cpp:152
 #, kde-format
 msgid "Failed to archive the folder '%1'."
 msgstr "'%1' 폴더를 압축할 수 없습니다."
 
-#: job/backupjob.cpp:155
+#: job/backupjob.cpp:156
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "압축 작업 실패"
 
-#: job/backupjob.cpp:165
+#: job/backupjob.cpp:166
 #, kde-format
 msgid "Unable to finalize the archive file."
 msgstr "압축 파일을 마무리할 수 없습니다."
 
-#: job/backupjob.cpp:170
+#: job/backupjob.cpp:171
 #, kde-format
 msgid "Archiving finished"
 msgstr "압축 완료"
 
-#: job/backupjob.cpp:181
+#: job/backupjob.cpp:182
 #, kde-format
 msgid ""
 "Archiving folder '%1' successfully completed. The archive was written to the "
 "file '%2'."
 msgstr "'%1' 폴더를 압축 파일로 저장했습니다. 저장된 압축 파일은 '%2'입니다."
 
-#: job/backupjob.cpp:187
+#: job/backupjob.cpp:188
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
 msgstr[0] "메시지 %1개(총 크기 %2)를 압축 파일로 저장했습니다."
 
-#: job/backupjob.cpp:191
+#: job/backupjob.cpp:192
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "압축 파일의 크기는 %1입니다."
 
-#: job/backupjob.cpp:193
+#: job/backupjob.cpp:194
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
 msgstr "압축 완료"
 
-#: job/backupjob.cpp:243
+#: job/backupjob.cpp:244
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "압축 폴더 '%1'에 메시지를 저장하는 데 실패했습니다."
 
-#: job/backupjob.cpp:267
+#: job/backupjob.cpp:268
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr "폴더 '%1'의 메시지를 다운로드하는 데 실패했습니다."
 
-#: job/backupjob.cpp:333
+#: job/backupjob.cpp:334
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "%1 폴더 압축 중"
 
-#: job/backupjob.cpp:358
+#: job/backupjob.cpp:359
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr "압축 파일에 '%1' 폴더의 구조를 만들 수 없습니다."
 
-#: job/backupjob.cpp:370
+#: job/backupjob.cpp:371
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "%1 폴더의 메시지 목록을 가져올 수 없습니다."
 
-#: job/backupjob.cpp:408
+#: job/backupjob.cpp:409
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "압축 파일에 쓰려고 열 수 없습니다."
 
-#: job/backupjob.cpp:412
+#: job/backupjob.cpp:413
 #, kde-format
 msgid "Archiving"
 msgstr "압축 중"
@@ -2042,23 +2042,23 @@ msgstr ""
 "오류는 다음과 같습니다:\n"
 "%1"
 
-#: search/searchpattern.cpp:235
+#: search/searchpattern.cpp:237
 #, kde-format
 msgctxt "name used for a virgin filter"
 msgid "unknown"
 msgstr "알 보낸 사람수 없음"
 
-#: search/searchpattern.cpp:243
+#: search/searchpattern.cpp:245
 #, kde-format
 msgid "(match any of the following)"
 msgstr "(다음 항목 중 하나 이상에 일치)"
 
-#: search/searchpattern.cpp:246
+#: search/searchpattern.cpp:248
 #, kde-format
 msgid "(match all of the following)"
 msgstr "(다음 항목 모두에 일치)"
 
-#: search/searchpattern.cpp:249
+#: search/searchpattern.cpp:251
 #, kde-format
 msgid "(match all messages)"
 msgstr "(모든 메시지 일치)"
@@ -2166,99 +2166,99 @@ msgstr "모든 메시지 일치"
 msgid "Filter criteria:"
 msgstr "필터 조건:"
 
-#: search/searchrule/searchrule.cpp:185
+#: search/searchrule/searchrule.cpp:187
 #, kde-format
 msgid "equal"
 msgstr "같음"
 
-#: search/searchrule/searchrule.cpp:188
+#: search/searchrule/searchrule.cpp:190
 #, kde-format
 msgid "not equal"
 msgstr "같지 않음"
 
-#: search/searchrule/searchrule.cpp:191
+#: search/searchrule/searchrule.cpp:193
 #, kde-format
 msgid "is greater"
 msgstr "다음보다 큼"
 
-#: search/searchrule/searchrule.cpp:194
+#: search/searchrule/searchrule.cpp:196
 #, kde-format
 msgid "is less or equal"
 msgstr "다음보다 작거나 같음"
 
-#: search/searchrule/searchrule.cpp:197
+#: search/searchrule/searchrule.cpp:199
 #, kde-format
 msgid "is less"
 msgstr "다음보다 작음"
 
-#: search/searchrule/searchrule.cpp:200
+#: search/searchrule/searchrule.cpp:202
 #, kde-format
 msgid "is greater or equal"
 msgstr "다음보다 크거나 같음"
 
-#: search/searchrule/searchrule.cpp:203
+#: search/searchrule/searchrule.cpp:205
 #, kde-format
 msgid "is in addressbook"
 msgstr "주소록에 있음"
 
-#: search/searchrule/searchrule.cpp:206
+#: search/searchrule/searchrule.cpp:208
 #, kde-format
 msgid "is not in addressbook"
 msgstr "주소록에 없음"
 
-#: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
+#: search/searchrule/searchrule.cpp:211 search/searchrule/searchrule.cpp:214
 #, kde-format
 msgid "is in category"
 msgstr "분류에 포함됨"
 
-#: search/searchrule/searchrule.cpp:215
+#: search/searchrule/searchrule.cpp:217
 #: search/widgethandler/messagerulewidgethandler.cpp:28
 #: search/widgethandler/messagerulewidgethandler.cpp:145
 #, kde-format
 msgid "has an attachment"
 msgstr "첨부 있음"
 
-#: search/searchrule/searchrule.cpp:218
+#: search/searchrule/searchrule.cpp:220
 #, kde-format
 msgid "has not an attachment"
 msgstr "첨부 파일이 없음"
 
-#: search/searchrule/searchrule.cpp:221
+#: search/searchrule/searchrule.cpp:223
 #, kde-format
 msgid "has an invitation"
 msgstr "초대장이 포함됨"
 
-#: search/searchrule/searchrule.cpp:224
+#: search/searchrule/searchrule.cpp:226
 #, kde-format
 msgid "has not an invitation"
 msgstr "초대장이 포함되지 않음"
 
-#: search/searchrule/searchrule.cpp:227
+#: search/searchrule/searchrule.cpp:229
 #, kde-format
 msgid "start with"
 msgstr "다음으로 시작함"
 
-#: search/searchrule/searchrule.cpp:230
+#: search/searchrule/searchrule.cpp:232
 #, kde-format
 msgid "not start with"
 msgstr "다음으로 시작하지 않음"
 
-#: search/searchrule/searchrule.cpp:233
+#: search/searchrule/searchrule.cpp:235
 #, kde-format
 msgid "end with"
 msgstr "다음으로 끝남"
 
-#: search/searchrule/searchrule.cpp:236
+#: search/searchrule/searchrule.cpp:238
 #, kde-format
 msgid "not end with"
 msgstr "다음으로 끝나지 않음"
 
-#: search/searchrule/searchrule.cpp:239
+#: search/searchrule/searchrule.cpp:241
 #, kde-format
 msgid "none"
 msgstr "없음"
 
-#: search/searchrule/searchrule.cpp:242
+#: search/searchrule/searchrule.cpp:244
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
 #: search/widgethandler/tagrulewidgethandler.cpp:93
@@ -2267,73 +2267,73 @@ msgstr "없음"
 msgid "contains"
 msgstr "포함함"
 
-#: search/searchrule/searchrule.cpp:245
+#: search/searchrule/searchrule.cpp:247
 #, kde-format
 msgid "not contains"
 msgstr "포함하지 않음"
 
-#: search/searchrule/searchrule.cpp:248
+#: search/searchrule/searchrule.cpp:250
 #, kde-format
 msgid "has regexp"
 msgstr "정규 표현식과 일치"
 
-#: search/searchrule/searchrule.cpp:251
+#: search/searchrule/searchrule.cpp:253
 #, kde-format
 msgid "not regexp"
 msgstr "정규 표현식과 일치하지 않음"
 
-#: search/searchrule/searchrule.cpp:265
+#: search/searchrule/searchrule.cpp:267
 #, kde-format
 msgid "size equals not supported"
 msgstr "크기가 같음은 지원하지 않음"
 
-#: search/searchrule/searchrule.cpp:268
+#: search/searchrule/searchrule.cpp:270
 #, kde-format
 msgid "size not equals not supported"
 msgstr "크기가 다름은 지원하지 않음"
 
-#: search/searchrule/searchrule.cpp:301 search/searchrule/searchrule.cpp:410
+#: search/searchrule/searchrule.cpp:303 search/searchrule/searchrule.cpp:411
 #: search/searchrule/searchrule.cpp:494
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "\"%2\" 조건 하에서 \"%1\"을(를) 지원하지 않음"
 
-#: search/searchrule/searchrule.cpp:308
+#: search/searchrule/searchrule.cpp:309
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> 구현/지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:311
+#: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<any header> 구현/지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:314
+#: search/searchrule/searchrule.cpp:315
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<contents> 구현/지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:317
+#: search/searchrule/searchrule.cpp:318
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<age in days> 구현/지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:320
+#: search/searchrule/searchrule.cpp:321
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<date> 구현/지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:323
+#: search/searchrule/searchrule.cpp:324
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<recipients> 구현/지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:325
+#: search/searchrule/searchrule.cpp:326
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "<Tag> 지원되지 않음"
 
-#: search/searchrule/searchrule.cpp:328
+#: search/searchrule/searchrule.cpp:329
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<message> 구현/지원되지 않음"
@@ -2348,7 +2348,7 @@ msgstr "날짜가 잘못되었습니다."
 msgid "Content is not a number."
 msgstr "내용이 숫자가 아닙니다."
 
-#: search/searchrule/searchrulestring.cpp:233
+#: search/searchrule/searchrulestring.cpp:235
 #, kde-format
 msgid "String is empty."
 msgstr "문자열이 비어 있습니다."
@@ -2608,19 +2608,19 @@ msgctxt "message status"
 msgid "Has Attachment"
 msgstr "첨부 파일 포함"
 
-#: snippets/snippetattachmentwidget.cpp:26
+#: snippets/snippetattachmentwidget.cpp:28
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr "첨부 파일을 선택하려면 단추를 클릭하십시오"
 
-#: snippets/snippetattachmentwidget.cpp:32
+#: snippets/snippetattachmentwidget.cpp:34
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "첨부 파일 선택"
 
-#: snippets/snippetattachmentwidget.cpp:33
+#: snippets/snippetattachmentwidget.cpp:35
 #, kde-format
 msgid "…"
 msgstr "…"
@@ -2655,24 +2655,24 @@ msgstr "첨부 파일 선택"
 msgid "Do you want to delete selected attachment?"
 msgstr "선택한 첨부 파일을 삭제하시겠습니까?"
 
-#: snippets/snippetsmanager.cpp:154
+#: snippets/snippetsmanager.cpp:156
 #, kde-format
 msgid "General"
 msgstr "일반"
 
-#: snippets/snippetsmanager.cpp:160
+#: snippets/snippetsmanager.cpp:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Snippet"
 msgstr "스니펫 추가"
 
-#: snippets/snippetsmanager.cpp:226
+#: snippets/snippetsmanager.cpp:228
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Snippet"
 msgstr "스니펫 편집"
 
-#: snippets/snippetsmanager.cpp:286
+#: snippets/snippetsmanager.cpp:288
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2682,19 +2682,19 @@ msgstr ""
 "스니펫 \"%1\"을(를) 삭제하시겠습니까?<nl/> <warning>이 작업은 실행 취소할 수 "
 "없습니다.</warning>"
 
-#: snippets/snippetsmanager.cpp:305
+#: snippets/snippetsmanager.cpp:307
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Group"
 msgstr "그룹 추가"
 
-#: snippets/snippetsmanager.cpp:330
+#: snippets/snippetsmanager.cpp:332
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Group"
 msgstr "그룹 편집"
 
-#: snippets/snippetsmanager.cpp:359
+#: snippets/snippetsmanager.cpp:361
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2704,55 +2704,55 @@ msgstr ""
 "스니펫 그룹 \"%1\" 및 포함된 모든 스니펫을 삭제하시겠습니까?<nl/> <warning>"
 "이 작업은 실행 취소할 수 없습니다.</warning>"
 
-#: snippets/snippetsmanager.cpp:369
+#: snippets/snippetsmanager.cpp:371
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to remove group \"%1\"?"
 msgstr "그룹 \"%1\"을(를) 삭제하시겠습니까?"
 
-#: snippets/snippetsmanager.cpp:437 snippets/snippetsmanager.cpp:466
+#: snippets/snippetsmanager.cpp:439 snippets/snippetsmanager.cpp:468
 #, kde-format
 msgctxt "@action"
 msgid "Snippet %1"
 msgstr "스니펫 %1"
 
-#: snippets/snippetsmanager.cpp:558
+#: snippets/snippetsmanager.cpp:560
 #, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "스니펫 추가…"
 
-#: snippets/snippetsmanager.cpp:560
+#: snippets/snippetsmanager.cpp:562
 #, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "스니펫 편집…"
 
-#: snippets/snippetsmanager.cpp:562
+#: snippets/snippetsmanager.cpp:564
 #, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "스니펫 삭제"
 
-#: snippets/snippetsmanager.cpp:565
+#: snippets/snippetsmanager.cpp:567
 #, kde-format
 msgctxt "@action"
 msgid "Add Group…"
 msgstr "그룹 추가…"
 
-#: snippets/snippetsmanager.cpp:567
+#: snippets/snippetsmanager.cpp:569
 #, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
 msgstr "그룹 이름 바꾸기…"
 
-#: snippets/snippetsmanager.cpp:569
+#: snippets/snippetsmanager.cpp:571
 #, kde-format
 msgctxt "@action"
 msgid "Remove Group"
 msgstr "그룹 삭제"
 
-#: snippets/snippetsmanager.cpp:572
+#: snippets/snippetsmanager.cpp:574
 #, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
@@ -2817,7 +2817,7 @@ msgstr ""
 "이 옵션을 사용하면 오른쪽에 입력한 값을 저장합니다. 나중에 다른 스니펫에서도 "
 "이 변수를 사용하면 오른쪽에 입력한 값을 기본값으로 사용합니다."
 
-#: snippets/snippetwidget.cpp:56
+#: snippets/snippetwidget.cpp:58
 #, kde-format
 msgid ""
 "Enter a keyword here to enable fast insertion of this snippet while writing "
