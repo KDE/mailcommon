@@ -120,7 +120,7 @@ void ExpireCollectionAttributeTest::shouldCloneAttr()
     attr.setExpireAction(expireaction);
     attr.setExpireToFolderId(akonadiid);
     MailCommon::ExpireCollectionAttribute *result = attr.clone();
-    QVERIFY(attr == *result);
+    QCOMPARE(attr, *result);
     delete result;
 }
 
@@ -166,7 +166,7 @@ void ExpireCollectionAttributeTest::shouldSerializedValue()
     const QByteArray ba = attr.serialized();
     MailCommon::ExpireCollectionAttribute result;
     result.deserialize(ba);
-    QVERIFY(attr == result);
+    QCOMPARE(attr, result);
 }
 
 void ExpireCollectionAttributeTest::shouldHaveType()

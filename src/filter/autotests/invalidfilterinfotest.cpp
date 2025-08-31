@@ -52,7 +52,7 @@ void InvalidFilterInfoTest::shouldBeEqual()
     info.setInformation(information);
     MailCommon::InvalidFilterInfo copyInfo;
     copyInfo = info;
-    QVERIFY(copyInfo == info);
+    QCOMPARE(copyInfo, info);
 }
 
 QTEST_MAIN(InvalidFilterInfoTest)
