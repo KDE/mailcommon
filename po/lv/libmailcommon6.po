@@ -1,0 +1,3107 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the mailcommon package.
+#
+# SPDX-FileCopyrightText: 2025 Toms Trasuns <toms.trasuns@posteo.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: mailcommon\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-08-29 00:44+0000\n"
+"PO-Revision-Date: 2025-08-29 16:53+0300\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 25.08.0\n"
+
+#: collectionpage/collectionexpirypage.cpp:23
+#, kde-format
+msgctxt "@title:tab Expiry settings for a folder."
+msgid "Expiry"
+msgstr "Derīgums"
+
+#: collectionpage/collectionexpirywidget.cpp:36
+#, kde-format
+msgctxt "Expire messages after %1"
+msgid "%v day"
+msgid_plural "%v days"
+msgstr[0] "%v diena"
+msgstr[1] "%v dienas"
+msgstr[2] "%v dienu"
+
+#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:43
+#: collectionpage/collectionexpirywidget.cpp:55
+#, kde-format
+msgid "Never"
+msgstr "Nekad"
+
+#: collectionpage/collectionexpirywidget.cpp:67
+#, kde-format
+msgctxt "@action:button"
+msgid "Save Settings and Expire Now"
+msgstr "Saglabāt iestatījumus un izbeigt derīgumu"
+
+#: collectionpage/collectionexpirywidget.cpp:68
+#, kde-format
+msgctxt "@option:check"
+msgid "Expire messages with invalid date"
+msgstr "Izbeigt derīgumu vēstulēm ar nederīgu datumu"
+
+#: collectionpage/collectionexpirywidget.cpp:74
+#, kde-format
+msgid "Expire read messages after:"
+msgstr "Izbeigt lasītu vēstuļu derīgumu pēc:"
+
+#: collectionpage/collectionexpirywidget.cpp:77
+#, kde-format
+msgid "Expire unread messages after:"
+msgstr "Izbeigt nelasītu vēstuļu derīgumu pēc:"
+
+#: collectionpage/collectionexpirywidget.cpp:91
+#, kde-format
+msgid "Move expired messages to:"
+msgstr "Pārvietot vēstules ar beigušos derīgumu uz:"
+
+#: collectionpage/collectionexpirywidget.cpp:102
+#, kde-format
+msgid "Delete expired messages permanently"
+msgstr "Neatgriezeniski dzēst vēstules ar beigušos derīgumu"
+
+#: collectionpage/collectionexpirywidget.cpp:173
+#, kde-format
+msgid ""
+"Please select a folder to expire messages into.\n"
+"If this is not done, expired messages will be permanently deleted."
+msgstr ""
+"Atlasiet mapi, kurā pārvietot vēstules ar beigušos derīgumu.\n"
+"Ja tas netiek darīts, vēstules ar beigušos derīgumu tiks neatgriezeniski "
+"dzēstas."
+
+#: collectionpage/collectionexpirywidget.cpp:174
+#, kde-format
+msgctxt "@title:window"
+msgid "No Folder Selected"
+msgstr "Mape nav atlasīta"
+
+#: collectionpage/collectionexpirywidget.cpp:188
+#, kde-format
+msgid ""
+"Please select a different folder than the current folder to expire messages "
+"into.\n"
+"If this is not done, expired messages will be permanently deleted."
+msgstr ""
+"Atlasiet citu mapi par pašreizējo, kurā pārvietot vēstules ar beigušos "
+"derīgumu.\n"
+"Ja tas nav izdarīts, vēstules ar beigušos derīgumu tiks neatgriezeniski "
+"dzēstas."
+
+#: collectionpage/collectionexpirywidget.cpp:190
+#, kde-format
+msgctxt "@title:window"
+msgid "Wrong Folder Selected"
+msgstr "Ir atlasīta nepareiza mape"
+
+#: collectionpage/collectiongeneralpage.cpp:44
+#, kde-format
+msgctxt "@title:tab General settings for a folder."
+msgid "General"
+msgstr "Pamata"
+
+#: collectionpage/collectiongeneralpage.cpp:65
+#, kde-format
+msgctxt "@label:textbox Name of the folder."
+msgid "Folder &Name:"
+msgstr "Mapes &nosaukums:"
+
+#: collectionpage/collectiongeneralpage.cpp:110
+#, kde-format
+msgid "Share unread state with all users"
+msgstr "Kopīgot nelasīta statusu ar visiem lietotājiem"
+
+#: collectionpage/collectiongeneralpage.cpp:113
+#, kde-format
+msgid ""
+"If enabled, the unread state of messages in this folder will be the same for "
+"all users having access to this folder. If disabled (the default), every "
+"user with access to this folder has their own unread state."
+msgstr ""
+"Ja ieslēgts, vēstules „nelasīts“ statuss šajā mapē būs kopīgs visiem "
+"lietotājiem, kuriem ir piekļuve pie šīs mapes. Ja izslēgts (noklusējums), "
+"katram lietotājam ar piekļuvi pie šīs mapes būs savs „nelasīts“ statuss."
+
+#: collectionpage/collectiongeneralpage.cpp:212
+#, kde-format
+msgid ""
+"You have configured this folder to contain groupware information. That means "
+"that this folder will disappear once the configuration dialog is closed."
+msgstr ""
+"Jūs konfigurējāt šo mapi, lai tā saturētu grupprogrammatūras informāciju. "
+"Tas nozīmē, ka šī mape pazudīs tiklīdz konfigurācijas lodziņš ir aizvērts."
+
+#: collectionpage/collectiongeneralwidget.cpp:25
+#, kde-format
+msgctxt "@option:check"
+msgid "Act on new/unread mail in this folder"
+msgstr "Rīkoties, kad mapē ir jauns/nelasīts pasts"
+
+#: collectionpage/collectiongeneralwidget.cpp:27
+#, kde-format
+msgid ""
+"<qt><p>If this option is enabled then you will be notified about new/unread "
+"mail in this folder. Moreover, going to the next/previous folder with unread "
+"messages will stop at this folder.</p><p>Uncheck this option if you do not "
+"want to be notified about new/unread mail in this folder and if you want "
+"this folder to be skipped when going to the next/previous folder with unread "
+"messages. This is useful for ignoring any new/unread mail in your trash and "
+"spam folder.</p></qt>"
+msgstr ""
+"<qt><p> Ja ir ieslēgta šī opcija, jūs saņemsit ziņojumu par jaunu/nelasītu "
+"pastu šajā mapē. Kā arī, šajā mapē apstāsies iešana uz nākamo/iepriekšējo "
+"mapi ar nelasītām vēstulēm.</p><p>Noņemiet šo atzīmi, ja nevēlaties saņemt "
+"paziņojumus par jaunām/nelasītām vēstulēm šajā mapē un vēlaties, lai šī mape "
+"tiktu izlaista, kad dodaties uz nākamo/iepriekšējo mapi ar nelasītām "
+"vēstulēm. Tas ir noderīgi, lai ignorētu jaunas/nelasītas vēstules atkritnē "
+"un mēstuļu mapē.</p></qt>"
+
+#: collectionpage/collectiongeneralwidget.cpp:38
+#, kde-format
+msgctxt "@option:check"
+msgid "Keep replies in this folder"
+msgstr "Paturēt atbildes šajā mapē"
+
+#: collectionpage/collectiongeneralwidget.cpp:40
+#, kde-format
+msgid ""
+"Check this option if you want replies you write to mails in this folder to "
+"be put in this same folder after sending, instead of in the configured sent-"
+"mail folder."
+msgstr ""
+"Atzīmējiet šo opciju, ja vēlaties, lai jūsu rakstītās atbildes uz vēstulēm "
+"pēc nosūtīšanas tiktu saglabātas tajā pašā mapē, bet ne konfigurētajā "
+"nosūtnē."
+
+#: collectionpage/collectiongeneralwidget.cpp:46
+#, kde-format
+msgctxt "@option:check"
+msgid "Hide this folder in the folder selection dialog"
+msgstr "Paslēpt šo mapi mapes atlases lodziņā"
+
+#: collectionpage/collectiongeneralwidget.cpp:48
+#, kde-kuit-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this option if you do not want this folder to be shown in folder "
+"selection dialogs, such as the <interface>Jump to Folder</interface> dialog."
+msgstr ""
+"Atzīmējiet šo opciju, ja nevēlaties, lai šī mape parādītos mapes atlases "
+"lodziņos, piemēram, <interface>Iet uz mapi</interface> lodziņā."
+
+#: collectionpage/collectiongeneralwidget.cpp:54
+#, kde-format
+msgctxt "@option:check"
+msgid "Use &default identity"
+msgstr "Izmantot &noklusējuma identitāti"
+
+#: collectionpage/collectiongeneralwidget.cpp:60
+#, kde-format
+msgid ""
+"Select the sender identity to be used when writing new mail or replying to "
+"mail in this folder. This means that if you are in one of your work folders, "
+"you can make KMail use the corresponding sender email address, signature and "
+"signing or encryption keys automatically. Identities can be set up in the "
+"main configuration dialog. (Settings -> Configure KMail)"
+msgstr ""
+"Atlasiet sūtītāja identitāti, ko izmantot, kad rakstāt jaunu pastu vai "
+"atbildat uz pastu šajā mapē. Tas nozīmē, ka, ja atrodaties kādā no jūsu "
+"darba mapēm, varat „KMail“ automātiski likt izmantot attiecīgo sūtītāja e-"
+"pasta adresi, parakstu un parakstīšanas vai šifrēšanas atslēgas. Identitātes "
+"varat iestatīt pamata konfigurācijas lodziņā (Iestatījumi -> Konfigurēt "
+"„KMail“)"
+
+#: collectionpage/collectiongeneralwidget.cpp:66
+#, kde-format
+msgid "&Sender identity:"
+msgstr "&Sūtītāja identitāte:"
+
+#: collectionpage/collectiontemplateswidget.cpp:20
+#, kde-format
+msgctxt "@option:check"
+msgid "&Use custom message templates in this folder"
+msgstr "Šai &mapei lietot pielāgotas vēstuļu veidnes"
+
+#: collectionpage/collectiontemplateswidget.cpp:42
+#, kde-format
+msgctxt "@action:button"
+msgid "&Copy Global Templates"
+msgstr "&Kopēt globālās veidnes"
+
+#: collectionpage/collectionviewwidget.cpp:27
+#, kde-format
+msgctxt "@option:check"
+msgid "Use default message list aggregation:"
+msgstr "Lietot noklusējuma vēstuļu saraksta apkopošanu:"
+
+#: collectionpage/collectionviewwidget.cpp:29
+#, kde-format
+msgctxt "@option:check"
+msgid "Use default message list theme"
+msgstr "Lietot noklusējuma vēstuļu saraksta motīvu"
+
+#: collectionpage/collectionviewwidget.cpp:31
+#, kde-format
+msgctxt "@option:radio"
+msgid "Prefer HTML to text"
+msgstr "Dot priekšroku HTML, ne tekstam"
+
+#: collectionpage/collectionviewwidget.cpp:32
+#, kde-format
+msgctxt "@option:radio"
+msgid "Prefer text to HTML"
+msgstr "Dot priekšroku tekstam, ne HTML"
+
+#: collectionpage/collectionviewwidget.cpp:33
+#, kde-format
+msgctxt "@option:radio"
+msgid "Use Global Settings"
+msgstr "Izmantot globālos iestatījumus"
+
+#: collectionpage/collectionviewwidget.cpp:40
+#, kde-format
+msgid "Show Sender/Receiver Column in List of Messages"
+msgstr "Vēstuļu sarakstā rādīta nosūtītāja/saņēmēja kolonnu"
+
+#: collectionpage/collectionviewwidget.cpp:43
+#, kde-format
+msgctxt "@item:inlistbox Show default value."
+msgid "Default"
+msgstr "Noklusējums"
+
+#: collectionpage/collectionviewwidget.cpp:44
+#, kde-format
+msgctxt "@item:inlistbox Show sender."
+msgid "Sender"
+msgstr "Nosūtītājs"
+
+#: collectionpage/collectionviewwidget.cpp:45
+#, kde-format
+msgctxt "@item:inlistbox Show receiver."
+msgid "Receiver"
+msgstr "Saņēmējs"
+
+#: collectionpage/collectionviewwidget.cpp:46
+#, kde-format
+msgid "Sho&w column:"
+msgstr "&Rādīt kolonnu:"
+
+#: collectionpage/collectionviewwidget.cpp:77
+#, kde-format
+msgid "Message format:"
+msgstr "Vēstules formāts:"
+
+#: filter/dialog/filteractionmissingaccountdialog.cpp:33
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Account"
+msgstr "Atlasiet kontu"
+
+#: filter/dialog/filteractionmissingaccountdialog.cpp:39
+#, kde-format
+msgid ""
+"Filter account is missing. Please select account to use with filter \"%1\""
+msgstr "Trūkst filtra konta. Atlasiet izmantojamo kontu ar filtru „%1“"
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:40
+#: folder/folderrequester.cpp:74
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Folder"
+msgstr "Atlasiet mapi"
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:43
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Folder path was \"%1\"."
+msgstr "Mapes ceļš bija „%1“."
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:48
+#, kde-format
+msgctxt "@label:textbox"
+msgid "The following folders can be used for this filter:"
+msgstr "Šim filtram iespējams lietot šīs mapes:"
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:69
+#, kde-format
+msgid "Please select a folder:"
+msgstr "Atlasiet mapi:"
+
+#: filter/dialog/filteractionmissingfolderdialog.cpp:72
+#, kde-format
+msgid ""
+"Filter folder is missing. Please select a folder to use with filter \"%1\":"
+msgstr "Trūkst filtra mapes. Atlasiet mapi, ko lietot ar filtru „%1“:"
+
+#: filter/dialog/filteractionmissingidentitydialog.cpp:32
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Identity"
+msgstr "Atlasiet identitāti"
+
+#: filter/dialog/filteractionmissingidentitydialog.cpp:38
+#, kde-format
+msgid ""
+"Filter identity is missing. Please select an identity to use with filter "
+"\"%1\""
+msgstr ""
+"Trūkst filtra identitātes. Atlasiet identitāti, ko izmantot ar filtru „%1“"
+
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:31
+#, kde-format
+msgctxt "@title:window"
+msgid "Select sound"
+msgstr "Atlasiet skaņu"
+
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:35
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Sound file was \"%1\"."
+msgstr "Skaņas datne ir „%1“."
+
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:42
+#, kde-format
+msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
+msgstr "Skaņas datnes trūkst. Atlasiet skaņu, ko lietot ar filtru „%1“"
+
+#: filter/dialog/filteractionmissingtagdialog.cpp:37
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Tag"
+msgstr "Atlasiet birku"
+
+#: filter/dialog/filteractionmissingtagdialog.cpp:40
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Tag was \"%1\"."
+msgstr "Birka bija „%1“."
+
+#: filter/dialog/filteractionmissingtagdialog.cpp:47
+#, kde-format
+msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
+msgstr "Trūkst filtra birkas. Atlasiet birku, ko izmantot ar filtru „%1“"
+
+#: filter/dialog/filteractionmissingtagdialog.cpp:71
+#, kde-format
+msgid "Add Tag…"
+msgstr "Pievienot birku…"
+
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:32
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Template"
+msgstr "Veidnes atlasīšana"
+
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:38
+#, kde-format
+msgid ""
+"Filter template is missing. Please select a template to use with filter "
+"\"%1\""
+msgstr "Trūkst filtra veidnes. Atlasiet veidni, ko izmantot ar filtru „%1“"
+
+#: filter/dialog/filteractionmissingtransportdialog.cpp:31
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Transport"
+msgstr "Atlasiet transportu"
+
+#: filter/dialog/filteractionmissingtransportdialog.cpp:37
+#, kde-format
+msgid ""
+"Filter transport is missing. Please select a transport to use with filter "
+"\"%1\""
+msgstr ""
+"Trūkst filtra transporta. Atlasiet transportu, ko izmantot ar filtru „%1“"
+
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
+#, kde-format
+msgctxt "@title:window"
+msgid "Select thunderbird filter files"
+msgstr "Atlasiet „Thunderbird“ filtra datnes"
+
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:33
+#, kde-format
+msgid " (default)"
+msgstr " (noklusējums)"
+
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:118
+#, kde-format
+msgid "Thunderbird File (*.dat)"
+msgstr "„Thunderbird“ datne (*.dat)"
+
+#: filter/filteractions/filteraction.cpp:133
+#, kde-format
+msgid "### \"action '%1' not supported\""
+msgstr "### „darbība „%1“ nav atbalstīta“"
+
+#: filter/filteractions/filteractionaddheader.cpp:22
+#, kde-format
+msgid "Add Header"
+msgstr "Pievienot galveni"
+
+#: filter/filteractions/filteractionaddheader.cpp:77
+#, kde-format
+msgctxt "@label:textbox"
+msgid "With value:"
+msgstr "Ar vērtību:"
+
+#: filter/filteractions/filteractionaddheader.cpp:203
+#, kde-format
+msgid "The header name was missing."
+msgstr "Trūkst galvenes vārda."
+
+#: filter/filteractions/filteractionaddheader.cpp:209
+#, kde-format
+msgid "The header value was missing."
+msgstr "Trūkst galvenes vērtības."
+
+#: filter/filteractions/filteractionaddtag.cpp:26
+#, kde-format
+msgid "Add Tag"
+msgstr "Pievienot birku"
+
+#: filter/filteractions/filteractionaddtag.cpp:151
+#, kde-format
+msgid "No tag selected."
+msgstr "Neviena birka nav atlasīta."
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:33
+#, kde-format
+msgid "Add to Address Book"
+msgstr "Pievienot adrešu grāmatu"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:34
+#, kde-format
+msgctxt "Email sender"
+msgid "From"
+msgstr "No"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:35
+#, kde-format
+msgctxt "Email recipient"
+msgid "To"
+msgstr "Kam"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:36
+#: search/searchpatternedit.cpp:52
+#, kde-format
+msgid "CC"
+msgstr "CC"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:37
+#, kde-format
+msgid "BCC"
+msgstr "BCC"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:40
+#, kde-format
+msgid "KMail Filter"
+msgstr "„KMail“ filtrs"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:117
+#, kde-format
+msgctxt "@label:textbox"
+msgid "with category"
+msgstr "ar kategoriju"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:125
+#, kde-format
+msgctxt "@label:textbox"
+msgid "in address book"
+msgstr "adrešu grāmatā"
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:135
+#, kde-format
+msgid ""
+"This defines the preferred address book.\n"
+"If it is not accessible, the filter will fallback to the default address "
+"book."
+msgstr ""
+"Tas definē priekšrokas adrešu grāmatu.\n"
+"Ja tā nebūs pieejama, filtrs atgriezīsies pie noklusējuma adrešu grāmatas."
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:287
+#, kde-format
+msgid "Header type selected is unknown."
+msgstr "Atlasītais galvenes tips nav zināms."
+
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:293
+#, kde-format
+msgid "No addressbook selected."
+msgstr "Nav atlasīta neviena adrešu grāmata."
+
+#: filter/filteractions/filteractioncopy.cpp:19
+#, kde-format
+msgid "Copy Into Folder"
+msgstr "Kopēt mapē"
+
+#: filter/filteractions/filteractioncopy.cpp:68
+#: filter/filteractions/filteractionmove.cpp:66
+#, kde-format
+msgid "Folder destination was not defined."
+msgstr "Nav definēts mapes galamērķis."
+
+#: filter/filteractions/filteractiondecrypt.cpp:27
+#: filter/filteractions/filteractiondecrypt.cpp:40
+#, kde-format
+msgid "Decrypt"
+msgstr "Atšifrēt"
+
+#: filter/filteractions/filteractiondecrypt.cpp:95
+#, kde-format
+msgid "<b>Warning:</b> Decrypted emails may be uploaded to a server!"
+msgstr ""
+"<b>Uzmanību:</b> serverī var tikt augšupielādētas atšifrētas e-pasta "
+"vēstules!"
+
+#: filter/filteractions/filteractiondecrypt.cpp:97
+#, kde-format
+msgid ""
+"<p>If the email folder that you are filtering into is connected to a remote "
+"account (like an IMAP-Server) the decrypted content will go there.</p>"
+msgstr ""
+"<p>Ja e-pasta mape, kurā mēģināt filtrēt, ir savienota ar attālu kontu "
+"(piemēram, IMAP serveri), serverī var nokļūt arī atšifrēts saturs.</p>"
+
+#: filter/filteractions/filteractiondelete.cpp:18
+#, kde-format
+msgid "Delete Message"
+msgstr "Dzēst vēstuli"
+
+#: filter/filteractions/filteractiondelete.cpp:41
+#, kde-format
+msgid "Be careful, mails will be removed."
+msgstr "Rīkojieties piesardzīgi, vēstules tik dzēstas."
+
+#: filter/filteractions/filteractionencrypt.cpp:46
+#, kde-format
+msgid "Encrypt"
+msgstr "Šifrēt"
+
+#: filter/filteractions/filteractionencrypt.cpp:213
+#, kde-format
+msgid "No encryption key has been selected"
+msgstr "Nav atlasīta neviena šifrēšanas atslēga"
+
+#: filter/filteractions/filteractionencrypt.cpp:249
+#, kde-format
+msgid "Re-encrypt encrypted emails with this key"
+msgstr "No jauna šifrēt šifrētās e-pasta vēstules ar šo atslēgu"
+
+#: filter/filteractions/filteractionencrypt.cpp:259
+#, kde-format
+msgid "<b>Warning:</b> Seckey necessary to read emails."
+msgstr ""
+"<b>Uzmanību:</b> lai lasītu e-pasta vēstules, ir nepieciešama slepenā "
+"atslēga."
+
+#: filter/filteractions/filteractionencrypt.cpp:261
+#, kde-format
+msgid ""
+"<p>Once an email has been encrypted you will need a crypto setup with your "
+"secret key to access the contents again.</p><p>If you keep emails stored on "
+"an email server and use several clients, each of them must be configured to "
+"enable decryption.</p>"
+msgstr ""
+"<p>Pēc e-pasta šifrēšanas, lai piekļūtu vēstules saturam, jums vajadzēs "
+"sagatavot kriptogrāfiju ar atbilstošo slepeno atslēgu.</p><p>Ja glabājat e-"
+"pasta vēstules e-pasta serverī un izmantojat vairākus klientus, katrs ir "
+"atbilstoši jākonfigurē vēstuļu atšifrēšanai.</p>"
+
+#: filter/filteractions/filteractionexec.cpp:15
+#, kde-format
+msgid "Execute Command"
+msgstr "Izpildīt komandu"
+
+#: filter/filteractions/filteractionexec.cpp:36
+#, kde-format
+msgid "Missing command."
+msgstr "Trūkst komandas."
+
+#: filter/filteractions/filteractionforward.cpp:37
+#, kde-format
+msgctxt "Forward directly not with a command"
+msgid "Forward To"
+msgstr "Pārsūtīt uz"
+
+#: filter/filteractions/filteractionforward.cpp:93
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "The addressee to whom the message will be forwarded."
+msgstr "Adresāts, kuram vēstule tiks pārsūtīta."
+
+#: filter/filteractions/filteractionforward.cpp:94
+#, kde-format
+msgid "The filter will forward the message to the addressee entered here."
+msgstr "Filtrs pārsūtīs ziņojumu te norādītajam adresātam."
+
+#: filter/filteractions/filteractionforward.cpp:101
+#: filter/filteractions/filteractionforward.cpp:200
+#, kde-format
+msgid "Default Template"
+msgstr "Noklusējuma veidne"
+
+#: filter/filteractions/filteractionforward.cpp:112
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "The template used when forwarding"
+msgstr "Pārsūtīšanai izmantotā veidne"
+
+#: filter/filteractions/filteractionforward.cpp:113
+#, kde-format
+msgid "Set the forwarding template that will be used with this filter."
+msgstr "Norādiet pārsūtīšanas veidni, ko izmantot šim filtram."
+
+#: filter/filteractions/filteractionforward.cpp:228
+#, kde-format
+msgid "Forward to %1 with default template"
+msgstr "Pārsūtīt uz „%1“ ar noklusējuma veidni"
+
+#: filter/filteractions/filteractionforward.cpp:230
+#, kde-format
+msgid "Forward to %1 with template %2"
+msgstr "Pārsūtīt uz „%1“ ar veidni „%2“"
+
+#: filter/filteractions/filteractionforward.cpp:236
+#: filter/filteractions/filteractionreplyto.cpp:51
+#, kde-format
+msgid "Email address was not defined."
+msgstr "E-pasta adrese nav definēta."
+
+#: filter/filteractions/filteractionmove.cpp:23
+#, kde-format
+msgid "Move Into Folder"
+msgstr "Pārvietot uz mapi"
+
+#: filter/filteractions/filteractionpipethrough.cpp:20
+#, kde-format
+msgctxt "pipe through with command"
+msgid "Pipe Through"
+msgstr "Izlaist cauri programmkanālam (|)"
+
+#: filter/filteractions/filteractionpipethrough.cpp:36
+#, kde-format
+msgid "No action defined."
+msgstr "Nav definēta neviena darbība."
+
+#: filter/filteractions/filteractionplaysound.cpp:22
+#, kde-format
+msgid "Play Sound"
+msgstr "Atskaņot skaņu"
+
+#: filter/filteractions/filteractionplaysound.cpp:78
+#, kde-format
+msgid "Sound file was not defined."
+msgstr "Skaņas datne nav definēta."
+
+#: filter/filteractions/filteractionredirect.cpp:27
+#, kde-format
+msgid "Redirect To"
+msgstr "Pāradresēt uz"
+
+#: filter/filteractions/filteractionredirect.cpp:71
+#, kde-format
+msgid "Email address was missing."
+msgstr "E-pasta adrese ir pazudusi."
+
+#: filter/filteractions/filteractionremoveheader.cpp:22
+#, kde-format
+msgid "Remove Header"
+msgstr "Noņemt galveni"
+
+#: filter/filteractions/filteractionremoveheader.cpp:96
+#, kde-format
+msgid "Header name undefined."
+msgstr "Galvenes nosaukums nav definēts."
+
+#: filter/filteractions/filteractionreplyto.cpp:20
+#, kde-format
+msgid "Set Reply-To To"
+msgstr "Nosūtīt atbildēt-uz uz"
+
+#: filter/filteractions/filteractionrewriteheader.cpp:26
+#, kde-format
+msgid "Rewrite Header"
+msgstr "Pārrakstīta galveni"
+
+#: filter/filteractions/filteractionrewriteheader.cpp:43
+#, kde-format
+msgid "Header not defined"
+msgstr "Galvene nav definēta"
+
+#: filter/filteractions/filteractionrewriteheader.cpp:49
+#, kde-format
+msgid "Search string is empty."
+msgstr "Meklēšanas teksts ir tukšs."
+
+#: filter/filteractions/filteractionrewriteheader.cpp:111
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Replace:"
+msgstr "Aizvietot:"
+
+#: filter/filteractions/filteractionrewriteheader.cpp:122
+#, kde-format
+msgctxt "@label:textbox"
+msgid "With:"
+msgstr "Ar:"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:29
+#, kde-format
+msgid "Send Fake MDN"
+msgstr "Nosūtīt neīstu MDN"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:34
+#, kde-format
+msgctxt "MDN type"
+msgid "Ignore"
+msgstr "Ignorēt"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:35
+#, kde-format
+msgctxt "MDN type"
+msgid "Displayed"
+msgstr "Parādīts"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:36
+#, kde-format
+msgctxt "MDN type"
+msgid "Deleted"
+msgstr "Dzēsts"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:37
+#, kde-format
+msgctxt "MDN type"
+msgid "Dispatched"
+msgstr "Nosūtīts"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:38
+#, kde-format
+msgctxt "MDN type"
+msgid "Processed"
+msgstr "Apstrādāts"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:39
+#, kde-format
+msgctxt "MDN type"
+msgid "Denied"
+msgstr "Liegts"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:40
+#, kde-format
+msgctxt "MDN type"
+msgid "Failed"
+msgstr "Neizdevās"
+
+#: filter/filteractions/filteractionsendfakedisposition.cpp:116
+#, kde-format
+msgid "Fake type undefined."
+msgstr "Viltojuma tips nav definēts"
+
+#: filter/filteractions/filteractionsendreceipt.cpp:21
+#, kde-format
+msgid "Confirm Delivery"
+msgstr "Apstiprināt nosūtīšanu"
+
+#: filter/filteractions/filteractionsetidentity.cpp:29
+#, kde-format
+msgid "Set Identity To"
+msgstr "Iestatīt identitāti uz"
+
+#: filter/filteractions/filteractionsetstatus.cpp:22
+#, kde-format
+msgid "Mark As"
+msgstr "Atzīmēt kā"
+
+#: filter/filteractions/filteractionsetstatus.cpp:34
+#, kde-format
+msgid "Status not specified."
+msgstr "Statuss nav precizēts."
+
+#: filter/filteractions/filteractionsettransport.cpp:36
+#, kde-format
+msgid "Set Transport To"
+msgstr "Iestatīt transportu uz"
+
+#: filter/filteractions/filteractionsettransport.cpp:142
+#, kde-format
+msgid "Mail transport not defined."
+msgstr "Pasta transports nav definēts."
+
+#: filter/filteractions/filteractionstatus.cpp:33
+#, kde-format
+msgctxt "msg status"
+msgid "Important"
+msgstr "Svarīgi"
+
+#: filter/filteractions/filteractionstatus.cpp:34
+#, kde-format
+msgctxt "msg status"
+msgid "Read"
+msgstr "Lasīta"
+
+#: filter/filteractions/filteractionstatus.cpp:35
+#, kde-format
+msgctxt "msg status"
+msgid "Unread"
+msgstr "Nelasīta"
+
+#: filter/filteractions/filteractionstatus.cpp:36
+#, kde-format
+msgctxt "msg status"
+msgid "Replied"
+msgstr "Atbildēta"
+
+#: filter/filteractions/filteractionstatus.cpp:37
+#, kde-format
+msgctxt "msg status"
+msgid "Forwarded"
+msgstr "Pārsūtīta"
+
+#: filter/filteractions/filteractionstatus.cpp:38
+#, kde-format
+msgctxt "msg status"
+msgid "Watched"
+msgstr "Pārraudzīta"
+
+#: filter/filteractions/filteractionstatus.cpp:39
+#, kde-format
+msgctxt "msg status"
+msgid "Ignored"
+msgstr "Ignorēta"
+
+#: filter/filteractions/filteractionstatus.cpp:40
+#, kde-format
+msgctxt "msg status"
+msgid "Spam"
+msgstr "Mēstule"
+
+#: filter/filteractions/filteractionstatus.cpp:41
+#, kde-format
+msgctxt "msg status"
+msgid "Ham"
+msgstr "Nav mēstule"
+
+#: filter/filteractions/filteractionstatus.cpp:42
+#, kde-format
+msgctxt "msg status"
+msgid "Action Item"
+msgstr "Darbības vienums"
+
+#: filter/filteractions/filteractionstatus.cpp:102
+#, kde-format
+msgid "Status is missing."
+msgstr "Statusa trūkst."
+
+#: filter/filteractions/filteractionunsetstatus.cpp:21
+#, kde-format
+msgctxt "action: to unset the status"
+msgid "Unset Status"
+msgstr "Noņemt statusu"
+
+#: filter/filteractions/filteractionunsetstatus.cpp:39
+#, kde-format
+msgid "Status not defined."
+msgstr "Statuss nav definēts"
+
+#: filter/filteractions/filteractionwidget.cpp:69
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Please select an action."
+msgstr "Atlasiet darbību."
+
+#: filter/filteractions/filteractionwithurl.cpp:22
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Help"
+msgstr "Palīdzība"
+
+#: filter/filteractions/filteractionwithurl.cpp:64
+#, kde-format
+msgid "You can get specific header when you use %{headername}."
+msgstr "Varat iegūt specifisku galveni, lietojot „%{headername}“."
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
+#, kde-format
+msgctxt "@title:window"
+msgid "Convert to Sieve Script"
+msgstr "Konvertēt uz „Sieve“ skriptu"
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
+#, kde-format
+msgid "Save…"
+msgstr "Saglabāt…"
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
+#, kde-format
+msgctxt "@action:button"
+msgid "Share…"
+msgstr "Kopīgot…"
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
+#, kde-format
+msgid "Sieve Files (*.siv);;All Files (*)"
+msgstr "„Sieve“ datnes (*.siv);;Visas datnes (*)"
+
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
+#, kde-format
+msgctxt "@title:window"
+msgid "Convert to Script Sieve"
+msgstr "Pārveidot uz „Sieve“ skriptu"
+
+#: filter/filterimporter/filterimportergmail.cpp:48
+#, kde-format
+msgid "Gmail filter %1"
+msgstr "„Gmail“ filtrs „%1“"
+
+#: filter/filterimporter/filterimporterprocmail.cpp:54
+#, kde-format
+msgid "Procmail filter %1"
+msgstr "„Procmail“ filtrs „%1“"
+
+#: filter/filterimporterexporter.cpp:112
+#, kde-format
+msgid ""
+"The following filters have not been saved because they were invalid (e.g. "
+"containing no actions or no search rules)."
+msgstr ""
+"Šie filtri nav saglabāti, jo tie bija nederīgi (proti, nesaturēja darbības "
+"vai meklēšanas noteikumus)."
+
+#: filter/filterimporterexporter.cpp:138
+#, kde-format
+msgctxt "@title:window"
+msgid "Import KMail Filters"
+msgstr "Importēt „KMail“ filtrus"
+
+#: filter/filterimporterexporter.cpp:146
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Evolution Filters"
+msgstr "Importēt „Evolution“ filtrus"
+
+#: filter/filterimporterexporter.cpp:150
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Sylpheed Filters"
+msgstr "Importēt „Sylpheed“ filtrus"
+
+#: filter/filterimporterexporter.cpp:154
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Procmail Filters"
+msgstr "Importēt „Procmail“ filtrus"
+
+#: filter/filterimporterexporter.cpp:158
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Balsa Filters"
+msgstr "Importēt „Balsa“ filtrus"
+
+#: filter/filterimporterexporter.cpp:162
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Claws Mail Filters"
+msgstr "Importēt „Claws Mail“ filtrus"
+
+#: filter/filterimporterexporter.cpp:166
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Gmail Filters"
+msgstr "Importēt „Gmail“ filtrus"
+
+#: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
+#: filter/filterimporterexporter.cpp:236
+#, kde-format
+msgid ""
+"The selected file is not readable. Your file access permissions might be "
+"insufficient."
+msgstr ""
+"Atlasītā datne nav nolasāma. Iespējams, jums trūkst tiesību datni lasīt."
+
+#: filter/filterimporterexporter.cpp:316
+#, kde-format
+msgctxt "@title:window"
+msgid "Export Filters"
+msgstr "Eksportēt filtrus"
+
+#: filter/filterselectiondialog.cpp:29
+#, kde-format
+msgctxt "@action:button"
+msgid "Select All"
+msgstr "Atlasīt visus"
+
+#: filter/filterselectiondialog.cpp:30
+#, kde-format
+msgctxt "@action:button"
+msgid "Unselect All"
+msgstr "Noņemt atlasi visam"
+
+#: filter/filterselectiondialog.cpp:34
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Filters"
+msgstr "Atlasīt filtrus"
+
+#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:53
+#: folder/foldertreewidget.cpp:84
+#, kde-format
+msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
+msgid "Search"
+msgstr "Meklēt"
+
+#: filter/invalidfilters/invalidfilterdialog.cpp:29
+#, kde-format
+msgctxt "@title:window"
+msgid "Invalid Filters"
+msgstr "Nederīgi filtri"
+
+#: filter/invalidfilters/invalidfilterdialog.cpp:40
+#, kde-format
+msgid "Discard"
+msgstr "Izmest"
+
+#: filter/invalidfilters/invalidfilterwidget.cpp:22
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"The following filters are invalid (e.g. containing no actions or no search "
+"rules). Discard or edit invalid filters?"
+msgstr ""
+"Šie filtri ir nederīgi (piemēram, nesatur nekādas darbības vai meklēšanas "
+"noteikumus). Vai nederīgos filtrus izmest vai rediģēt?"
+
+#: filter/kmfilteraccountlist.cpp:24
+#, kde-format
+msgid "Account Name"
+msgstr "Konta nosaukums"
+
+#: filter/kmfilteraccountlist.cpp:24
+#, kde-format
+msgid "Type"
+msgstr "Tips"
+
+#: filter/kmfilterdialog.cpp:72
+#, kde-format
+msgctxt "@title:window"
+msgid "Filter Rules"
+msgstr "Filtra noteikumi"
+
+#: filter/kmfilterdialog.cpp:90
+#, kde-format
+msgid "Import…"
+msgstr "Importēt…"
+
+#: filter/kmfilterdialog.cpp:92
+#, kde-format
+msgid "Export…"
+msgstr "Eksportēt…"
+
+#: filter/kmfilterdialog.cpp:94
+#, kde-format
+msgid "Convert to…"
+msgstr "Pārveidot…"
+
+#: filter/kmfilterdialog.cpp:98
+#, kde-format
+msgctxt "@action"
+msgid "KMail filters"
+msgstr "„KMail“ filtri"
+
+#: filter/kmfilterdialog.cpp:102
+#, kde-format
+msgctxt "@action"
+msgid "Thunderbird filters"
+msgstr "„Thunderbird“ filtri"
+
+#: filter/kmfilterdialog.cpp:106
+#, kde-format
+msgctxt "@action"
+msgid "Evolution filters"
+msgstr "„Evolution“ filtri"
+
+#: filter/kmfilterdialog.cpp:110
+#, kde-format
+msgctxt "@action"
+msgid "Sylpheed filters"
+msgstr "„Sylpheed“ filtri"
+
+#: filter/kmfilterdialog.cpp:114
+#, kde-format
+msgctxt "@action"
+msgid "Procmail filters"
+msgstr "„Procmail“ filtri"
+
+#: filter/kmfilterdialog.cpp:118
+#, kde-format
+msgctxt "@action"
+msgid "Balsa filters"
+msgstr "„Balsa“ filtri"
+
+#: filter/kmfilterdialog.cpp:122
+#, kde-format
+msgctxt "@action"
+msgid "Claws Mail filters"
+msgstr "„Claws Mail“ filtri"
+
+#: filter/kmfilterdialog.cpp:126
+#, kde-format
+msgctxt "@action"
+msgid "Icedove Mail filters"
+msgstr "„Icedove Mail“ filtri"
+
+#: filter/kmfilterdialog.cpp:132
+#, kde-format
+msgctxt "@action"
+msgid "Gmail filters"
+msgstr "„Gmail“ filtri"
+
+#: filter/kmfilterdialog.cpp:140
+#, kde-format
+msgctxt "@action"
+msgid "Sieve script"
+msgstr "„Sieve“ skripts"
+
+#: filter/kmfilterdialog.cpp:162
+#, kde-format
+msgid "Available Filters"
+msgstr "Pieejamie filtri"
+
+#: filter/kmfilterdialog.cpp:168
+#, kde-format
+msgctxt "General mail filter settings."
+msgid "General"
+msgstr "Pamata"
+
+#: filter/kmfilterdialog.cpp:172
+#, kde-format
+msgctxt "Advanced mail filter settings."
+msgid "Advanced"
+msgstr "Paplašināti"
+
+#: filter/kmfilterdialog.cpp:182
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Filter actions:"
+msgstr "Filtra darbības:"
+
+#: filter/kmfilterdialog.cpp:193
+#, kde-format
+msgctxt "@option:check"
+msgid "Apply this filter to incoming messages:"
+msgstr "Pielietot šo filtru ienākošajām vēstulēm"
+
+#: filter/kmfilterdialog.cpp:203
+#, kde-format
+msgctxt "@option:radio"
+msgid "From all accounts"
+msgstr "No visiem kontiem"
+
+#: filter/kmfilterdialog.cpp:207
+#, kde-format
+msgctxt "@option:radio"
+msgid "From all but online IMAP accounts"
+msgstr "No visiem kontiem, izņemot IMAP kontus"
+
+#: filter/kmfilterdialog.cpp:211
+#, kde-format
+msgctxt "@option:radio"
+msgid "From selected accounts only"
+msgstr "Tikai no atlasītajiem kontiem"
+
+#: filter/kmfilterdialog.cpp:219
+#, kde-format
+msgctxt "@option:check"
+msgid "Apply this filter to &sent messages"
+msgstr "Pielietot šo filtru &nosūtītajām vēstulēm"
+
+#: filter/kmfilterdialog.cpp:221
+#, kde-format
+msgid ""
+"<p>The filter will be triggered <b>after</b> the message is sent and it will "
+"only affect the local copy of the message.</p><p>If the recipient's copy "
+"also needs to be modified, please use \"Apply this filter <b>before</b> "
+"sending messages\".</p>"
+msgstr ""
+"<p>Šis filtrs būs aktīvs <b>pēc</b> vēstules nosūtīšanas un tas ietekmēs "
+"tikai vēstules lokālo kopiju.</p><p>Ja ir nepieciešams izmainīt arī saņēmēja "
+"kopiju, izmantojiet iestatījumu „Pielietot šo filtru <b>pēc</b> vēstuļu "
+"nosūtīšanas“.</p>"
+
+#: filter/kmfilterdialog.cpp:227
+#, kde-format
+msgctxt "@option:check"
+msgid "Apply this filter &before sending messages"
+msgstr "Pielietot šo filtru &pēc vēstuļu nosūtīšanas“"
+
+#: filter/kmfilterdialog.cpp:229
+#, kde-format
+msgid ""
+"<p>The filter will be triggered <b>before</b> the message is sent and it "
+"will affect both the local copy and the sent copy of the message.</p><p>This "
+"is required if the recipient's copy also needs to be modified.</p>"
+msgstr ""
+"<p>Šis filtrs būs aktīvs <b>pirms</b> vēstules nosūtīšanas un tas ietekmēs "
+"kā lokālo kopiju, tā arī vēstules kopiju.</p><p>Tas ir nepieciešams, ja "
+"vēlaties, lai tiktu izmainīta arī vēstules saņēmēja kopija.</p>"
+
+#: filter/kmfilterdialog.cpp:234
+#, kde-format
+msgctxt "@option:check"
+msgid "Apply this filter on manual &filtering"
+msgstr "Pielietot šo filtru pēc manuālas &filtrēšanas"
+
+#: filter/kmfilterdialog.cpp:237
+#, kde-format
+msgctxt "@option:check"
+msgid "Apply this filter on inbound emails in all folders"
+msgstr "Pielietot šo filtru ienākošajām e-pastu vēstulēm visās mapēs"
+
+#: filter/kmfilterdialog.cpp:239
+#, kde-format
+msgid ""
+"<p>The filter will be applied on inbound emails from all folders belonging "
+"to all accounts selected above. This is useful when using local filters with "
+"IMAP accounts where new emails may have already been moved to different "
+"folders by server-side filters.</p>"
+msgstr ""
+"<p>Šis filtrs darbosies uz visiem ienākošajiem e-pastiem no visām mapēm, kas "
+"pieder pie augstāk atlasītajiem kontiem. Tas ir lietderīgi, kad izmantojat "
+"lokālos filtrus ar IMAP kontiem, kad jaunās e-pasta vēstules jau varētu būt "
+"pārvietotas uz citām mapēm, izmantojot servera puses filtrus.</p>"
+
+#: filter/kmfilterdialog.cpp:245
+#, kde-format
+msgctxt "@option:check"
+msgid "If this filter &matches, stop processing here"
+msgstr "Ja šis filtrs &atrod atbilstību, apturēt apstrādi te"
+
+#: filter/kmfilterdialog.cpp:248
+#, kde-format
+msgctxt "@option:check"
+msgid "Add this filter to the Apply Filter menu"
+msgstr "Pielietot šo filtru „Pielietot filtru“ izvēlnei"
+
+#: filter/kmfilterdialog.cpp:266
+#, kde-format
+msgctxt "@option:check"
+msgid "Additionally add this filter to the toolbar"
+msgstr "Pievienot šo filtru arī rīkjoslai"
+
+#: filter/kmfilterdialog.cpp:277
+#, kde-format
+msgid "Shortcut:"
+msgstr "Saīsne:"
+
+#: filter/kmfilterdialog.cpp:283
+#, kde-format
+msgid "Icon for this filter:"
+msgstr "Ikona šim filtram:"
+
+#: filter/kmfilterdialog.cpp:291
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Run selected filter(s) on: "
+msgstr "Palaist atlasīto filtru(us) uz:"
+
+#: filter/kmfilterdialog.cpp:297
+#, kde-format
+msgctxt "@action:button"
+msgid "Run Now"
+msgstr "Palaist tagad"
+
+#: filter/kmfilterdialog.cpp:424
+#, kde-format
+msgctxt "@info"
+msgid "Unable to apply this filter since there are no folders selected."
+msgstr "Neizdodas pielietot šo filtru, jo nav atlasīta neviena mape."
+
+#: filter/kmfilterdialog.cpp:425
+#, kde-format
+msgctxt "@title:window"
+msgid "No folder selected."
+msgstr "Nav atlasīta mape."
+
+#: filter/kmfilterdialog.cpp:432
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Some filters were changed and not saved yet. You must save your filters "
+"before they can be applied."
+msgstr ""
+"Daži filtri ir izmainīti, bet vēl nav saglabāti. Pirms filtru pielietošanas "
+"tie ir jāsaglabā."
+
+#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:716
+#, kde-format
+msgctxt "@title:window"
+msgid "Filters changed."
+msgstr "Filtri ir izmainīti."
+
+#: filter/kmfilterdialog.cpp:441
+#, kde-format
+msgctxt "@info"
+msgid "Unable to apply a filter since there are no filters currently selected."
+msgstr "Neizdodas pielietot filtru, jo šobrīd neviens filtrs nav atlasīts."
+
+#: filter/kmfilterdialog.cpp:442
+#, kde-format
+msgctxt "@title:window"
+msgid "No filters selected."
+msgstr "Neviens filtrs nav atlasīts."
+
+#: filter/kmfilterdialog.cpp:666
+#, kde-format
+msgid "No filter was imported."
+msgstr "Netika importēts neviens filtrs."
+
+#: filter/kmfilterdialog.cpp:677
+#, kde-format
+msgid "Filters which were imported:"
+msgstr "Importētie filtri:"
+
+#: filter/kmfilterdialog.cpp:685
+#, kde-format
+msgid "Any filter found."
+msgstr "Atrasts jebkāds filtrs."
+
+#: filter/kmfilterdialog.cpp:714
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Some filters were changed and not saved yet.<br>You must save your filters "
+"before they can be exported."
+msgstr ""
+"Daži filtri tika izmainīti un vēl nav saglabāti.<br>Jums pirms filtru "
+"eksportēšanas tie ir jāsaglabā."
+
+#: filter/kmfilterdialog.cpp:720
+#, kde-format
+msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
+msgstr ""
+"Mēs nevaram pārveidot visus „KMail“ filtrus par „Sieve“ skriptiem, bet varam "
+"mēģināt :)"
+
+#: filter/kmfilterdialog.cpp:721 filter/kmfilterdialog.cpp:737
+#, kde-format
+msgctxt "@title:window"
+msgid "Convert KMail filters to sieve scripts"
+msgstr "Pārveidot „KMail“ filtrus par „Sieve“ skriptiem"
+
+#: filter/kmfilterdialog.cpp:737
+#, kde-format
+msgid "No filters selected."
+msgstr "Nav atlasīts neviens filtrs."
+
+#: filter/kmfilterlistbox.cpp:43
+#, kde-format
+msgid ""
+"<qt><p>This is the list of defined filters. They are processed top-to-bottom."
+"</p><p>Click on any filter to edit it using the controls in the right-hand "
+"half of the dialog.</p></qt>"
+msgstr ""
+"<qt><p>Šis ir definēto filtru saraksts. Tie tiek apstrādāti secībā no augšas "
+"uz leju.</p><p>Klikšķiniet uz jebkura filtra, lai to rediģētu, izmantojot "
+"lodziņa labajā pusē esošās vadīklas.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:85
+#, kde-format
+msgctxt "Move selected filter up."
+msgid "Up"
+msgstr "Augšup"
+
+#: filter/kmfilterlistbox.cpp:86
+#, kde-format
+msgctxt "Move selected filter down."
+msgid "Down"
+msgstr "Lejup"
+
+#: filter/kmfilterlistbox.cpp:87
+#, kde-format
+msgctxt "Move selected filter to the top."
+msgid "Top"
+msgstr "Uz augšu"
+
+#: filter/kmfilterlistbox.cpp:88
+#, kde-format
+msgctxt "Move selected filter to the bottom."
+msgid "Bottom"
+msgstr "Uz apakšu"
+
+#: filter/kmfilterlistbox.cpp:90
+#, kde-format
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter <em>up</em> "
+"one in the list above.</p><p>This is useful since the order of the filters "
+"in the list determines the order in which they are tried on messages: The "
+"topmost filter gets tried first.</p><p>If you have clicked this button "
+"accidentally, you can undo this by clicking on the <em>Down</em> button.</"
+"p></qt>"
+msgstr ""
+"<qt><p>Klikšķiniet uz šīs pogas, lai atlasīto filtru pārvietotu <em>augšup</"
+"em> sarakstā par vienu pozīciju.</p><p>Tas ir noderīgi, jo filtru secība "
+"sarakstā nosaka arī to palaišanas un darbības uz vēstulēm secību: augstāk "
+"esošais filtrs tiek izmantots vispirms.</p><p>Ja šo pogu nospiedāt nejauši, "
+"varat darbību atcelt, klikšķinot uz <em>lejup</em> pogas.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:98
+#, kde-format
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter <em>down</em> "
+"one in the list above.</p><p>This is useful since the order of the filters "
+"in the list determines the order in which they are tried on messages: The "
+"topmost filter gets tried first.</p><p>If you have clicked this button "
+"accidentally, you can undo this by clicking on the <em>Up</em> button.</p></"
+"qt>"
+msgstr ""
+"<qt><p>Klikšķiniet uz šīs pogas, lai atlasīto filtru pārvietotu <em>lejup</"
+"em> sarakstā par vienu pozīciju.</p><p>Tas ir noderīgi, jo filtru secība "
+"sarakstā nosaka arī to palaišanas un darbības uz vēstulēm secību: augstāk "
+"esošais filtrs tiek izmantots vispirms.</p><p>Ja šo pogu nospiedāt nejauši, "
+"varat darbību atcelt, klikšķinot uz <em>augšup</em> pogas.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:106
+#, kde-format
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter to bottom of "
+"list.</p><p>This is useful since the order of the filters in the list "
+"determines the order in which they are tried on messages: The topmost filter "
+"gets tried first.</p></qt>"
+msgstr ""
+"<qt><p>Klikšķiniet šo pogu, lai pārvietotu atlasīto filtru saraksta apakšā.</"
+"p><p>Tas ir noderīgi, jo filtru secība sarakstā nosaka secību, kādā tie tiks "
+"darbināti uz vēstulēm: sistēma sāks ar filtriem pēc kārtas no augstākā.</p></"
+"qt>"
+
+#: filter/kmfilterlistbox.cpp:112
+#, kde-format
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter to top of "
+"list.</p><p>This is useful since the order of the filters in the list "
+"determines the order in which they are tried on messages: The topmost filter "
+"gets tried first.</p></qt>"
+msgstr ""
+"<qt><p>Klikšķiniet šo pogu, lai pārvietotu atlasīto filtru saraksta augšā.</"
+"p><p>Tas ir noderīgi, jo filtru secība sarakstā nosaka secību, kādā tie tiks "
+"darbināti uz vēstulēm: sistēma sāks ar filtriem pēc kārtas no augstākā.</p></"
+"qt>"
+
+#: filter/kmfilterlistbox.cpp:142
+#, kde-format
+msgctxt "@action:button in filter list manipulator"
+msgid "New"
+msgstr "Jauns"
+
+#: filter/kmfilterlistbox.cpp:143
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Copy"
+msgstr "Kopēt"
+
+#: filter/kmfilterlistbox.cpp:144
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Delete"
+msgstr "Dzēst"
+
+#: filter/kmfilterlistbox.cpp:145
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Rename"
+msgstr "Pārdēvēt"
+
+#: filter/kmfilterlistbox.cpp:147
+#, kde-format
+msgid ""
+"<qt><p>Click this button to create a new filter.</p><p>The filter will be "
+"inserted just before the currently-selected one, but you can always change "
+"that later on.</p><p>If you have clicked this button accidentally, you can "
+"undo this by clicking on the <em>Delete</em> button.</p></qt>"
+msgstr ""
+"<qt><p>Klikšķiniet šo pogu, lai izveidotu jaunu filtru.</p><p>Filtrs tiks "
+"ievietots uzreiz pirms šobrīd atlasītā, bet tā vietu varēsit mainīt arī "
+"vēlāk.</p><p>Ja šo pogu nospiedāt nejauši, varat atcelt darbību, klikšķinot "
+"uz <em>Dzēst</em> pogas.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:154
+#, kde-format
+msgid ""
+"<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
+"button accidentally, you can undo this by clicking on the <em>Delete</em> "
+"button.</p></qt>"
+msgstr ""
+"<qt><p>Klikšķiniet uz šīs pogas, lai filtru kopētu.</p><p>Ja šo pogu "
+"nospiedāt nejauši, varat atcelt darbību, klikšķinot uz <em>Dzēst</em> pogas."
+"</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:158
+#, kde-format
+msgid ""
+"<qt><p>Click this button to <em>delete</em> the currently-selected filter "
+"from the list above.</p><p>There is no way to get the filter back once it is "
+"deleted, but you can always leave the dialog by clicking <em>Cancel</em> to "
+"discard the changes made.</p></qt>"
+msgstr ""
+"<qt><p>Klikšķiniet te, lai no augstāk esošā saraksta <em>dzēstu</em> šobrīd "
+"atlasīto filtru.</p><p>Ja filtru dzēsīsiet, to vairs atjaunot nevarēsiet. Ja "
+"pārdomāsit un dzēst tomēr nevēlēsities, varat iziet no lodziņa, klikšķinot "
+"ar <em>Atcelt</em>, kas noraidīs visas veiktās izmaiņas.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:165
+#, kde-format
+msgid ""
+"<qt><p>Click this button to rename the currently-selected filter.</"
+"p><p>Filters are named automatically, as long as they start with \"&lt;\".</"
+"p><p>If you have renamed a filter accidentally and want automatic naming "
+"back, click this button and select <em>Clear</em> followed by <em>OK</em> in "
+"the appearing dialog.</p></qt>"
+msgstr ""
+"<qt><p>Klikšķiniet uz šīs pogas, lai pārdēvētu pašreiz atlasītu filtru.</"
+"p><p>Filtri tiek nosaukti automātiski, kamēr vien sākas ar „&lt;“.</p><p>Ja "
+"filtru nejauši pārdēvējāt un vēlaties to automātiski pārdēvēt atpakaļ, "
+"klikšķiniet te un atlasiet <em>Notīrīt</em>, tad lodziņā, kas atvērsies, "
+"<em>Labi</em>.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:292
+#, kde-format
+msgid "unnamed"
+msgstr "nenosaukts"
+
+#: filter/kmfilterlistbox.cpp:446
+#, kde-format
+msgid "Do you want to remove the filter \"%1\"?"
+msgstr "Vai vēlaties noņemt filtru „%1“?"
+
+#: filter/kmfilterlistbox.cpp:446
+#, kde-format
+msgid "Do you want to remove selected filters?"
+msgstr "Vai vēlaties noņemt atlasītos filtrus?"
+
+#: filter/kmfilterlistbox.cpp:447
+#, kde-format
+msgctxt "@title:window"
+msgid "Remove Filter"
+msgstr "Noņemt filtru"
+
+#: filter/kmfilterlistbox.cpp:447
+#, kde-format
+msgctxt "@title:window"
+msgid "Remove Filters"
+msgstr "Noņemt filtrus"
+
+#: filter/kmfilterlistbox.cpp:663
+#, kde-format
+msgid "Rename Filter"
+msgstr "Pārdēvēt filtru"
+
+#: filter/kmfilterlistbox.cpp:664
+#, kde-format
+msgid ""
+"Rename filter \"%1\" to:\n"
+"(leave the field empty for automatic naming)"
+msgstr ""
+"Pārdēvēt filtru „%1“ par:\n"
+"(atstājiet lauku tukšu, ja vēlaties automātisku vārda piešķiršanu)"
+
+#: filter/mailfilter.cpp:132
+#, kde-format
+msgid "<b>Applying filter action:</b> %1"
+msgstr "<b>Pielieto filtrs darbību:</b> %1"
+
+#: filter/mailfilter.cpp:141
+#, kde-format
+msgid "A critical error occurred. Processing stops here."
+msgstr "Notikusi kritiska kļūda. Apstrāde beidzas."
+
+#: filter/mailfilter.cpp:148
+#, kde-format
+msgid "A problem was found while applying this action."
+msgstr "Pielietojot šo darbību, atklāta problēma."
+
+#: filter/mailfilter.cpp:428
+#, kde-format
+msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
+msgstr "<qt>Filtra noteikums satur pārāk daudz darbību <b>%1</b>.</qt>"
+
+#: filter/mailfilter.cpp:462
+#, kde-format
+msgid ""
+"<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
+">Ignoring it.</qt>"
+msgstr ""
+"<qt>Nezināma filtra darbība <b>%1</b><br />filtra noteikumā <b>%2</b>.<br /"
+">Tā tiek ignorēta.</qt>"
+
+#: filter/mailfilter.cpp:570
+#, kde-format
+msgid "Any action defined."
+msgstr "Jebkāda definēta darbība."
+
+#: filter/soundtestwidget.cpp:35 filter/soundtestwidget.cpp:117
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Play"
+msgstr "Atskaņot"
+
+#: filter/soundtestwidget.cpp:64
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Sound File"
+msgstr "Atlasīt skaņas datni"
+
+#: filter/soundtestwidget.cpp:114
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Pause"
+msgstr "Pauzēt"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: filter/ui/filterconfigwidget.ui:19
+#, kde-format
+msgid "Name:"
+msgstr "Nosaukums:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: filter/ui/filterconfigwidget.ui:45
+#, kde-format
+msgid "Criteria"
+msgstr "Kritērijs"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: filter/ui/filterconfigwidget.ui:87
+#, kde-format
+msgid "Actions"
+msgstr "Darbības"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: filter/ui/filterconfigwidget.ui:129
+#, kde-format
+msgid "Apply options"
+msgstr "Pielietot opcijas"
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyToIncomingCB)
+#: filter/ui/filterconfigwidget.ui:138
+#, kde-format
+msgid "Apply to incoming messages"
+msgstr "Pielietot ienākošajiem ziņojumiem"
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyToSentCB)
+#: filter/ui/filterconfigwidget.ui:145
+#, kde-format
+msgid "Apply to sent messages"
+msgstr "Pielietot nosūtītajiem ziņojumiem"
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyBeforeSendCB)
+#: filter/ui/filterconfigwidget.ui:152
+#, kde-format
+msgid "Apply before sending messages"
+msgstr "Pielietot pirms ziņojumu nosūtīšanas"
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyManuallyCB)
+#: filter/ui/filterconfigwidget.ui:159
+#, kde-format
+msgid "Apply on manual filtering"
+msgstr "Pielietot, veicot manuālu filtrēšanu"
+
+#. i18n: ectx: property (text), widget (QCheckBox, stopIfMatchesCB)
+#: filter/ui/filterconfigwidget.ui:169
+#, kde-format
+msgid "Stop processing if matches"
+msgstr "Apturēt apstrādi, ja atrasta atbilstība"
+
+#. i18n: ectx: property (text), widget (QRadioButton, selectFile)
+#: filter/ui/selectthunderbirdfilterfileswidget.ui:29
+#, kde-format
+msgid "Select File:"
+msgstr "Atlasīt datni:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, selectFromConfig)
+#: filter/ui/selectthunderbirdfilterfileswidget.ui:45
+#, kde-format
+msgid "Select file from config:"
+msgstr "Atlasīt datni no konfigurācijas:"
+
+#: folder/accountconfigorderdialog.cpp:57
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit Accounts Order"
+msgstr "Rediģēt kontu secību"
+
+#: folder/accountconfigorderdialog.cpp:74
+#, kde-format
+msgctxt "@option:check"
+msgid "Use custom order"
+msgstr "Lietot pielāgotu secību"
+
+#: folder/accountconfigorderdialog.cpp:91
+#, kde-format
+msgctxt "Move selected account up."
+msgid "Up"
+msgstr "Augšup"
+
+#: folder/accountconfigorderdialog.cpp:99
+#, kde-format
+msgctxt "Move selected account down."
+msgid "Down"
+msgstr "Lejup"
+
+#: folder/folderrequester.cpp:46
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Select Folder"
+msgstr "Atlasiet mapi"
+
+#: folder/folderrequester.cpp:117
+#, kde-format
+msgid "Local Folders"
+msgstr "Lokālās mapes"
+
+#: folder/folderrequester.cpp:127 folder/folderrequester.cpp:145
+#, kde-format
+msgid "Please select a folder"
+msgstr "Atlasiet mapi"
+
+#: folder/folderselectiondialog.cpp:65
+#, kde-format
+msgctxt "@action:button"
+msgid "&New Subfolder…"
+msgstr "&Jauna apakšmape…"
+
+#: folder/folderselectiondialog.cpp:67
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Create a new subfolder under the currently selected folder"
+msgstr "Izveidot jaunu apakšmapi zem šobrīd atlasītās mapes"
+
+#: folder/folderselectiondialog.cpp:126
+#, kde-format
+msgid "&New Subfolder…"
+msgstr "&Jauna apakšmape…"
+
+#: folder/folderselectiondialog.cpp:178
+#, kde-format
+msgctxt "@title:window"
+msgid "New Folder"
+msgstr "Jauna mape"
+
+#: folder/folderselectiondialog.cpp:178
+#, kde-format
+msgctxt "@label:textbox, name of a thing"
+msgid "Name"
+msgstr "Nosaukums"
+
+#: folder/folderselectiondialog.cpp:195
+#, kde-format
+msgid "Could not create folder: %1"
+msgstr "Nevarēja izveidot mapi: %1"
+
+#: folder/folderselectiondialog.cpp:195
+#, kde-format
+msgctxt "@title:window"
+msgid "Folder creation failed"
+msgstr "Mapes izveidošana neizdevās"
+
+#: folder/foldertreeview.cpp:129
+#, kde-format
+msgid "View Columns"
+msgstr "Skatīt kolonnas"
+
+#: folder/foldertreeview.cpp:139
+#, kde-format
+msgid "Icon Size"
+msgstr "Ikonas izmērs"
+
+#: folder/foldertreeview.cpp:155
+#, kde-format
+msgid "Display Tooltips"
+msgstr "Rādīt paskaidres"
+
+#: folder/foldertreeview.cpp:159
+#, kde-format
+msgctxt "@action:inmenu Always display tooltips"
+msgid "Always"
+msgstr "Vienmēr"
+
+#: folder/foldertreeview.cpp:166
+#, kde-format
+msgctxt "@action:inmenu Never display tooltips."
+msgid "Never"
+msgstr "Nekad"
+
+#: folder/foldertreeview.cpp:173
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Sort Items"
+msgstr "Kārtot vienumus"
+
+#: folder/foldertreeview.cpp:177
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Automatically, by Current Column"
+msgstr "Automātiski pēc pašreizējās kolonnas"
+
+#: folder/foldertreeview.cpp:184
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Manually, by Drag And Drop"
+msgstr "Manuāli ar vilkšanu un nomešanu"
+
+#: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
+#, kde-format
+msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
+msgstr "<qt>Iet uz nākamo nelasīto vēstuli mapē <b>%1</b>?</qt>"
+
+#: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
+#, kde-format
+msgctxt "@title:window"
+msgid "Go to Next Unread Message"
+msgstr "Iet uz nākamo nelasīto vēstuli"
+
+#: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
+#, kde-format
+msgctxt "@action:button"
+msgid "Go To"
+msgstr "Iezt uz"
+
+#: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
+#, kde-format
+msgctxt "@action:button"
+msgid "Do Not Go To"
+msgstr "Neiet uz"
+
+#: folder/foldertreewidget.cpp:78
+#, kde-format
+msgctxt "@label:textbox"
+msgid "You can start typing to filter the list of folders."
+msgstr "Sāciet rakstīt, lai filtrētu mapju sarakstu."
+
+#: folder/foldertreewidget.cpp:312
+#, kde-format
+msgid "You can start typing to filter the list of folders."
+msgstr "Sāciet rakstīt, lai filtrētu mapju sarakstu."
+
+#: folder/foldertreewidget.cpp:312
+#, kde-format
+msgid "Path: (%1)"
+msgstr "Ceļš: (%1)"
+
+#: folder/foldertreewidgetproxymodel.cpp:242
+#, kde-format
+msgid "%1 (Offline)"
+msgstr "%1 (nesaistē)"
+
+#: folder/foldertreewidgetproxymodel.cpp:246
+#, kde-format
+msgid "%1 (Reached %2% quota)"
+msgstr "%1 (sasniedza %2 % kvotu)"
+
+#: job/backupjob.cpp:95
+#, kde-format
+msgid "Unable to retrieve folder list."
+msgstr "Neizdodas izgūt mapju sarakstu."
+
+#: job/backupjob.cpp:122
+#, kde-format
+msgid "The operation was canceled by the user."
+msgstr "Darbību atcēla lietotājs."
+
+#: job/backupjob.cpp:152
+#, kde-format
+msgid "Failed to archive the folder '%1'."
+msgstr "Neizdevās arhivēt mapi „%1“."
+
+#: job/backupjob.cpp:156
+#, kde-format
+msgctxt "@title:window"
+msgid "Archiving failed"
+msgstr "Arhivēšana neizdevās"
+
+#: job/backupjob.cpp:166
+#, kde-format
+msgid "Unable to finalize the archive file."
+msgstr "Neizdodas pabeigt arhivēšanas datnes izveidi."
+
+#: job/backupjob.cpp:171
+#, kde-format
+msgid "Archiving finished"
+msgstr "Arhivēšana ir pabeigta"
+
+#: job/backupjob.cpp:182
+#, kde-format
+msgid ""
+"Archiving folder '%1' successfully completed. The archive was written to the "
+"file '%2'."
+msgstr ""
+"Mapes „%1“ arhivēšana ir veiksmīgi pabeigta. Arhīvs ir ierakstīts datnē „%2“."
+
+#: job/backupjob.cpp:188
+#, kde-format
+msgid "1 message of size %2 was archived."
+msgid_plural "%1 messages with the total size of %2 were archived."
+msgstr[0] "%1 vēstule ar izmēru %2 ir ievietota arhīvā."
+msgstr[1] "%1 vēstules ar izmēru %2 ir ievietotas arhīvā."
+msgstr[2] "%1 vēstuļu ar izmēru %2 ir ievietots arhīvā."
+
+#: job/backupjob.cpp:192
+#, kde-format
+msgid "The archive file has a size of %1."
+msgstr "Arhīva datnes izmērs ir %1."
+
+#: job/backupjob.cpp:194
+#, kde-format
+msgctxt "@title:window"
+msgid "Archiving finished"
+msgstr "Arhivēšana ir pabeigta."
+
+#: job/backupjob.cpp:244
+#, kde-format
+msgid "Failed to write a message into the archive folder '%1'."
+msgstr "Neizdevās rakstīt vēstuli arhīva datnē „%1“."
+
+#: job/backupjob.cpp:268
+#, kde-format
+msgid "Downloading a message in folder '%1' failed."
+msgstr "Vēstules lejupielāde mapē „%1“ nav izdevusies."
+
+#: job/backupjob.cpp:334
+#, kde-format
+msgid "Archiving folder %1"
+msgstr "Arhivē mapi „%1“"
+
+#: job/backupjob.cpp:359
+#, kde-format
+msgid "Unable to create folder structure for folder '%1' within archive file."
+msgstr "Neizdodas izveidot mapes struktūru mapei „%1“ arhīva datnē."
+
+#: job/backupjob.cpp:371
+#, kde-format
+msgid "Unable to get message list for folder %1."
+msgstr "Neizdodas iegūt vēstuļu sarakstu mapei „%1“."
+
+#: job/backupjob.cpp:409
+#, kde-format
+msgid "Unable to open archive for writing."
+msgstr "Neizdodas atvērt arhīvu rakstīšanai."
+
+#: job/backupjob.cpp:413
+#, kde-format
+msgid "Archiving"
+msgstr "Arhivē"
+
+#: job/expiredeletejob.cpp:66
+#, kde-format
+msgid "Removed 1 old message from folder %2."
+msgid_plural "Removed %1 old messages from folder %2."
+msgstr[0] "Tika noņemtas %1 vēstuli no mapes „%2“."
+msgstr[1] "Tika noņemtas %1 vēstules no mapes „%2“."
+msgstr[2] "Tika noņemtas %1 vēstuļu no mapes „%2“."
+
+#: job/expiredeletejob.cpp:70
+#, kde-format
+msgid "Removing old messages from folder %1 was canceled."
+msgstr "Veco vēstuļu noņemšana no mapes „%1“ ir atcelta."
+
+#: job/expiredeletejob.cpp:74
+#, kde-format
+msgid "Removing old messages from folder %1 failed."
+msgstr "Veco vēstuļu noņemšana no mapes „%1“ ir atcelta."
+
+#: job/expirejob.cpp:157
+#, kde-format
+msgid "Removing 1 old message from folder %2…"
+msgid_plural "Removing %1 old messages from folder %2..."
+msgstr[0] "Noņem %1 veco vēstuli no mapes „%2“…"
+msgstr[1] "Noņem %1 vecās vēstules no mapes „%2“…"
+msgstr[2] "Noņem %1 veco vēstuļu no mapes „%2“…"
+
+#: job/expirejob.cpp:164
+#, kde-format
+msgid "Cannot expire messages from folder %1: destination folder %2 not found"
+msgstr ""
+"Neizdodas izbeigt ziņu derīgumu mapē „%1“: nav atrasta galamērķa mape „%2“"
+
+#: job/expirejob.cpp:180
+#, kde-format
+msgid "Moving 1 old message from folder %2 to folder %3…"
+msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
+msgstr[0] "Pārvieto %1 veco vēstuli no mapes „%2“ uz mapi „%3“…"
+msgstr[1] "Pārvieto %1 vecās vēstules no mapes „%2“ uz mapi „%3“…"
+msgstr[2] "Pārvieto %1 veco vēstuļu no mapes „%2“ uz mapi „%3“…"
+
+#: job/expiremovejob.cpp:127
+#, kde-format
+msgid "Moved 1 old message from folder %2 to folder %3."
+msgid_plural "Moved %1 old messages from folder %2 to folder %3."
+msgstr[0] "Tika pārvietota %1 vecā vēstule no mapes „%2“ uz mapi „%3“."
+msgstr[1] "Tika pārvietotas %1 vecās vēstules no mapes „%2“ uz mapi „%3“."
+msgstr[2] "Tika pārvietots %1 veco vēstuļu no mapes „%2“ uz mapi „%3“."
+
+#: job/expiremovejob.cpp:136
+#, kde-format
+msgid "Moving old messages from folder %1 to folder %2 was canceled."
+msgstr "Veco vēstuļu pārvietošana no „%1“ mapes uz „%2“ mapi tika atcelta."
+
+#: job/expiremovejob.cpp:143
+#, kde-format
+msgid "Moving old messages from folder %1 to folder %2 failed."
+msgstr "Veco vēstuļu pārvietošana no „%1“ mapes uz „%2“ mapi neizdevās."
+
+#: kernel/mailkernel.cpp:184 kernel/mailkernel.cpp:206
+#, kde-format
+msgid "You do not have read/write permission to your inbox folder."
+msgstr "Jums nav lasīšanas/rakstīšanas atļaujas iesūtnes mapē."
+
+#: kernel/mailkernel.cpp:235
+#, kde-format
+msgid "The Email program encountered a fatal error and will terminate now"
+msgstr "Jūsu e-pasta programma saskārās ar fatālu kļūdu un izslēdzas"
+
+#: kernel/mailkernel.cpp:238
+#, kde-format
+msgid ""
+"The Email program encountered a fatal error and will terminate now.\n"
+"The error was:\n"
+"%1"
+msgstr ""
+"Jūsu e-pasta programma saskārās ar fatālu kļūdu un izslēdzas.\n"
+"Kļūda bija:\n"
+"%1"
+
+#: search/searchpattern.cpp:237
+#, kde-format
+msgctxt "name used for a virgin filter"
+msgid "unknown"
+msgstr "nezināms"
+
+#: search/searchpattern.cpp:245
+#, kde-format
+msgid "(match any of the following)"
+msgstr "(atbilst jebkam no tālākā)"
+
+#: search/searchpattern.cpp:248
+#, kde-format
+msgid "(match all of the following)"
+msgstr "(atbilst visam tālākajam)"
+
+#: search/searchpattern.cpp:251
+#, kde-format
+msgid "(match all messages)"
+msgstr "(atbilst visām vēstulēm)"
+
+#: search/searchpatternedit.cpp:41
+msgid "Complete Message"
+msgstr "Pabeigt vēstuli"
+
+#: search/searchpatternedit.cpp:42
+msgid "Body of Message"
+msgstr "Vēstules pamatteksts"
+
+#: search/searchpatternedit.cpp:43
+msgid "Anywhere in Headers"
+msgstr "Jebkur galvenēs"
+
+#: search/searchpatternedit.cpp:44
+msgid "All Recipients"
+msgstr "Visi saņēmēji"
+
+#: search/searchpatternedit.cpp:45
+msgid "Size in Bytes"
+msgstr "Izmērs baitos"
+
+#: search/searchpatternedit.cpp:46
+msgid "Age in Days"
+msgstr "Vecums dienās"
+
+#: search/searchpatternedit.cpp:47
+msgid "Message Status"
+msgstr "Vēstules statuss"
+
+#: search/searchpatternedit.cpp:48
+msgid "Message Tag"
+msgstr "Vēstules birka"
+
+#: search/searchpatternedit.cpp:49
+msgid "Subject"
+msgstr "Temats"
+
+#: search/searchpatternedit.cpp:50
+msgid "From"
+msgstr "No"
+
+#: search/searchpatternedit.cpp:51
+msgid "To"
+msgstr "Kam"
+
+#: search/searchpatternedit.cpp:53
+msgid "Reply To"
+msgstr "Atbildēt"
+
+#: search/searchpatternedit.cpp:54
+msgid "Organization"
+msgstr "Organizācija"
+
+#: search/searchpatternedit.cpp:55
+msgid "Date"
+msgstr "Datums"
+
+#: search/searchpatternedit.cpp:56
+msgid "Encryption"
+msgstr "Šifrēšana"
+
+#: search/searchpatternedit.cpp:57
+msgid "Attachment"
+msgstr "Piesaistne"
+
+#: search/searchpatternedit.cpp:58
+msgid "Invitation"
+msgstr "Uzaicinājums"
+
+#: search/searchpatternedit.cpp:146
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Choose or type your own criteria"
+msgstr "Izvēlieties tipu vai savu kritēriju"
+
+#: search/searchpatternedit.cpp:147
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Choose or type your own criteria"
+msgstr "Izvēlieties tipu vai savu kritēriju"
+
+#: search/searchpatternedit.cpp:584
+#, kde-format
+msgctxt "@option:radio"
+msgid "Match a&ll of the following"
+msgstr "Atbilst &visam tālākajam"
+
+#: search/searchpatternedit.cpp:585
+#, kde-format
+msgctxt "@option:radio"
+msgid "Match an&y of the following"
+msgstr "Atbilst &jebkam tālākajam"
+
+#: search/searchpatternedit.cpp:587
+#, kde-format
+msgctxt "@option:radio"
+msgid "Match all messages"
+msgstr "Atbilst visām vēstulēm"
+
+#: search/searchpatternedit.cpp:598
+#, kde-format
+msgid "Filter criteria:"
+msgstr "Filtra kritērijs:"
+
+#: search/searchrule/searchrule.cpp:187
+#, kde-format
+msgid "equal"
+msgstr "vienāds"
+
+#: search/searchrule/searchrule.cpp:190
+#, kde-format
+msgid "not equal"
+msgstr "nav vienāds"
+
+#: search/searchrule/searchrule.cpp:193
+#, kde-format
+msgid "is greater"
+msgstr "ir lielāks par "
+
+#: search/searchrule/searchrule.cpp:196
+#, kde-format
+msgid "is less or equal"
+msgstr "ir mazāks vai vienāds ar"
+
+#: search/searchrule/searchrule.cpp:199
+#, kde-format
+msgid "is less"
+msgstr "ir mazāks par"
+
+#: search/searchrule/searchrule.cpp:202
+#, kde-format
+msgid "is greater or equal"
+msgstr "ir lielāks vai vienāds ar"
+
+#: search/searchrule/searchrule.cpp:205
+#, kde-format
+msgid "is in addressbook"
+msgstr "atrodas adrešu grāmatā"
+
+#: search/searchrule/searchrule.cpp:208
+#, kde-format
+msgid "is not in addressbook"
+msgstr "nav adrešu grāmatā"
+
+#: search/searchrule/searchrule.cpp:211 search/searchrule/searchrule.cpp:214
+#, kde-format
+msgid "is in category"
+msgstr "ir kategorijā"
+
+#: search/searchrule/searchrule.cpp:217
+#: search/widgethandler/messagerulewidgethandler.cpp:28
+#: search/widgethandler/messagerulewidgethandler.cpp:145
+#, kde-format
+msgid "has an attachment"
+msgstr "ir piesaistne"
+
+#: search/searchrule/searchrule.cpp:220
+#, kde-format
+msgid "has not an attachment"
+msgstr "nav piesaistnes"
+
+#: search/searchrule/searchrule.cpp:223
+#, kde-format
+msgid "has an invitation"
+msgstr "ir uzaicinājums"
+
+#: search/searchrule/searchrule.cpp:226
+#, kde-format
+msgid "has not an invitation"
+msgstr "nav uzaicinājuma"
+
+#: search/searchrule/searchrule.cpp:229
+#, kde-format
+msgid "start with"
+msgstr "sākas ar"
+
+#: search/searchrule/searchrule.cpp:232
+#, kde-format
+msgid "not start with"
+msgstr "nesākas ar"
+
+#: search/searchrule/searchrule.cpp:235
+#, kde-format
+msgid "end with"
+msgstr "beidzas ar"
+
+#: search/searchrule/searchrule.cpp:238
+#, kde-format
+msgid "not end with"
+msgstr "nebeidzas ar"
+
+#: search/searchrule/searchrule.cpp:241
+#, kde-format
+msgid "none"
+msgstr "nekas"
+
+#: search/searchrule/searchrule.cpp:244
+#: search/widgethandler/headersrulerwidgethandler.cpp:25
+#: search/widgethandler/messagerulewidgethandler.cpp:24
+#: search/widgethandler/tagrulewidgethandler.cpp:93
+#: search/widgethandler/textrulerwidgethandler.cpp:24
+#, kde-format
+msgid "contains"
+msgstr "satur"
+
+#: search/searchrule/searchrule.cpp:247
+#, kde-format
+msgid "not contains"
+msgstr "nesatur"
+
+#: search/searchrule/searchrule.cpp:250
+#, kde-format
+msgid "has regexp"
+msgstr "ir regulārā izteiksme"
+
+#: search/searchrule/searchrule.cpp:253
+#, kde-format
+msgid "not regexp"
+msgstr "nav regulārā izteiksme"
+
+#: search/searchrule/searchrule.cpp:267
+#, kde-format
+msgid "size equals not supported"
+msgstr "izmērs ir vienāds vai nav atbildēts"
+
+#: search/searchrule/searchrule.cpp:270
+#, kde-format
+msgid "size not equals not supported"
+msgstr "izmērs nav vienāds vai nav atbalstīts"
+
+#: search/searchrule/searchrule.cpp:303 search/searchrule/searchrule.cpp:411
+#: search/searchrule/searchrule.cpp:494
+#, kde-format
+msgid "\"%1\" is not supported with condition \"%2\""
+msgstr "„%1“ nav atbalstīts ar nosacījumu „%2“"
+
+#: search/searchrule/searchrule.cpp:309
+#, kde-format
+msgid "<status> not implemented/supported"
+msgstr "<statuss> nav īstenots/atbalstīts"
+
+#: search/searchrule/searchrule.cpp:312
+#, kde-format
+msgid "<any header> not implemented/supported"
+msgstr "<jebkāda galvene> nav īstenota/atbalstīts"
+
+#: search/searchrule/searchrule.cpp:315
+#, kde-format
+msgid "<contents> not implemented/supported"
+msgstr "<saturs> nav īstenots/atbalstīts"
+
+#: search/searchrule/searchrule.cpp:318
+#, kde-format
+msgid "<age in days> not implemented/supported"
+msgstr "<vecums dienās> nav īstenots/atbalstīts"
+
+#: search/searchrule/searchrule.cpp:321
+#, kde-format
+msgid "<date> not implemented/supported"
+msgstr "<datums> nav īstenots/atbalstīts"
+
+#: search/searchrule/searchrule.cpp:324
+#, kde-format
+msgid "<recipients> not implemented/supported"
+msgstr "<saņēmēji> nav īstenoti/atbalstīti"
+
+#: search/searchrule/searchrule.cpp:326
+#, kde-format
+msgid "<Tag> is not supported"
+msgstr "<birka> nav atbalstīta"
+
+#: search/searchrule/searchrule.cpp:329
+#, kde-format
+msgid "<message> not implemented/supported"
+msgstr "<vēstule> nav īstenota/atbalstīta"
+
+#: search/searchrule/searchruledate.cpp:20
+#, kde-format
+msgid "Date is not valid."
+msgstr "Datums nav derīgs."
+
+#: search/searchrule/searchrulenumerical.cpp:137
+#, kde-format
+msgid "Content is not a number."
+msgstr "Saturs nav skaitlis."
+
+#: search/searchrule/searchrulestring.cpp:235
+#, kde-format
+msgid "String is empty."
+msgstr "Virkne ir tukša"
+
+#: search/widgethandler/attachmentwidgethandler.cpp:17
+#: search/widgethandler/invitationwidgethandler.cpp:17
+msgid "has"
+msgstr "ir"
+
+#: search/widgethandler/attachmentwidgethandler.cpp:17
+#: search/widgethandler/invitationwidgethandler.cpp:17
+msgid "has not"
+msgstr "nav"
+
+#: search/widgethandler/attachmentwidgethandler.cpp:54
+#, kde-format
+msgctxt "@label:textbox"
+msgid "attachments"
+msgstr "piesaistnes"
+
+#: search/widgethandler/attachmentwidgethandler.cpp:91
+#, kde-format
+msgid "has attachment"
+msgstr "ir piesaistne"
+
+#: search/widgethandler/daterulewidgethandler.cpp:22
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:21
+#: search/widgethandler/numericrulewidgethandler.cpp:21
+msgid "is equal to"
+msgstr "ir vienāds ar"
+
+#: search/widgethandler/daterulewidgethandler.cpp:23
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:22
+#: search/widgethandler/numericrulewidgethandler.cpp:22
+msgid "is not equal to"
+msgstr "nav vienāds ar"
+
+#: search/widgethandler/daterulewidgethandler.cpp:24
+msgid "is after"
+msgstr "ir pēc"
+
+#: search/widgethandler/daterulewidgethandler.cpp:25
+msgid "is before or equal to"
+msgstr "ir pirms vai vienāds ar"
+
+#: search/widgethandler/daterulewidgethandler.cpp:26
+msgid "is before"
+msgstr "ir pirms"
+
+#: search/widgethandler/daterulewidgethandler.cpp:27
+msgid "is after or equal to"
+msgstr "ir pēc vai vienāds ar"
+
+#: search/widgethandler/encryptionwidgethandler.cpp:17
+#: search/widgethandler/statusrulewidgethandler.cpp:18
+msgid "is"
+msgstr "ir"
+
+#: search/widgethandler/encryptionwidgethandler.cpp:17
+#: search/widgethandler/statusrulewidgethandler.cpp:18
+msgid "is not"
+msgstr "nav"
+
+#: search/widgethandler/encryptionwidgethandler.cpp:54
+#, kde-format
+msgctxt "@label:textbox"
+msgid "encrypted"
+msgstr "šifrēts"
+
+#: search/widgethandler/encryptionwidgethandler.cpp:91
+#, kde-format
+msgid "is encrypted"
+msgstr "ir šifrēts"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:26
+#: search/widgethandler/messagerulewidgethandler.cpp:25
+#: search/widgethandler/tagrulewidgethandler.cpp:94
+#: search/widgethandler/textrulerwidgethandler.cpp:25
+msgid "does not contain"
+msgstr "nesatur"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:27
+#: search/widgethandler/tagrulewidgethandler.cpp:95
+#: search/widgethandler/textrulerwidgethandler.cpp:26
+msgid "equals"
+msgstr "ir vienāds ar"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:28
+#: search/widgethandler/tagrulewidgethandler.cpp:96
+#: search/widgethandler/textrulerwidgethandler.cpp:27
+msgid "does not equal"
+msgstr "nav vienāds ar"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:29
+#: search/widgethandler/textrulerwidgethandler.cpp:28
+msgid "starts with"
+msgstr "sākas ar"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:30
+#: search/widgethandler/textrulerwidgethandler.cpp:29
+msgid "does not start with"
+msgstr "nesākas ar"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:31
+#: search/widgethandler/textrulerwidgethandler.cpp:30
+msgid "ends with"
+msgstr "beidzas ar"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:32
+#: search/widgethandler/textrulerwidgethandler.cpp:31
+msgid "does not end with"
+msgstr "nebeidzas ar"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:34
+#: search/widgethandler/messagerulewidgethandler.cpp:26
+#: search/widgethandler/tagrulewidgethandler.cpp:97
+#: search/widgethandler/textrulerwidgethandler.cpp:33
+msgid "matches regular expr."
+msgstr "atbilst regulārajai izt."
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:35
+#: search/widgethandler/messagerulewidgethandler.cpp:27
+#: search/widgethandler/tagrulewidgethandler.cpp:98
+#: search/widgethandler/textrulerwidgethandler.cpp:34
+msgid "does not match reg. expr."
+msgstr "neatbilst regulārajai izt."
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:36
+#: search/widgethandler/headersrulerwidgethandler.cpp:151
+#, kde-format
+msgid "is in address book"
+msgstr "atrodas adrešu grāmatā"
+
+#: search/widgethandler/headersrulerwidgethandler.cpp:37
+#: search/widgethandler/headersrulerwidgethandler.cpp:153
+#, kde-format
+msgid "is not in address book"
+msgstr "nav adrešu grāmatā"
+
+#: search/widgethandler/invitationwidgethandler.cpp:54
+#, kde-format
+msgctxt "@label:textbox"
+msgid "invitation"
+msgstr "uzaicinājums"
+
+#: search/widgethandler/invitationwidgethandler.cpp:91
+#, kde-format
+msgid "has invitation"
+msgstr "ir uzaicinājums"
+
+#: search/widgethandler/messagerulewidgethandler.cpp:29
+#: search/widgethandler/messagerulewidgethandler.cpp:147
+#, kde-format
+msgid "has no attachment"
+msgstr "nav piesaistņu"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:23
+#: search/widgethandler/numericrulewidgethandler.cpp:23
+msgid "is greater than"
+msgstr "Ir lielāka par"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:24
+#: search/widgethandler/numericrulewidgethandler.cpp:24
+msgid "is less than or equal to"
+msgstr "Ir mazāka par vai vienāda ar"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:25
+#: search/widgethandler/numericrulewidgethandler.cpp:25
+msgid "is less than"
+msgstr "Ir mazāka par"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:26
+#: search/widgethandler/numericrulewidgethandler.cpp:26
+msgid "is greater than or equal to"
+msgstr "ir lielāka par vai vienāda ar"
+
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:157
+#, kde-format
+msgctxt "spinbox suffix: unit for kilobyte"
+msgid " kB"
+msgstr " kB"
+
+#: search/widgethandler/numericrulewidgethandler.cpp:157
+#, kde-format
+msgctxt "Unit suffix where units are days."
+msgid "%v day"
+msgid_plural "%v days"
+msgstr[0] "%v dienu"
+msgstr[1] "%v dienām"
+msgstr[2] "%v dienām"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:28
+msgctxt "message status"
+msgid "Important"
+msgstr "Svarīgi"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:29
+msgctxt "message status"
+msgid "Action Item"
+msgstr "Darbības vienums"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:30
+msgctxt "message status"
+msgid "Unread"
+msgstr "Nelasīta"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:31
+msgctxt "message status"
+msgid "Read"
+msgstr "Lasīta"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:32
+msgctxt "message status"
+msgid "Deleted"
+msgstr "Dzēsta"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:33
+msgctxt "message status"
+msgid "Replied"
+msgstr "Atbildēta"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:34
+msgctxt "message status"
+msgid "Forwarded"
+msgstr "Pārsūtīta"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:35
+msgctxt "message status"
+msgid "Queued"
+msgstr "Ierindota"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:36
+msgctxt "message status"
+msgid "Sent"
+msgstr "Nosūtīta"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:37
+msgctxt "message status"
+msgid "Watched"
+msgstr "Pārraudzīta"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:38
+msgctxt "message status"
+msgid "Ignored"
+msgstr "Ignorēta"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:39
+msgctxt "message status"
+msgid "Spam"
+msgstr "Mēstule"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:40
+msgctxt "message status"
+msgid "Ham"
+msgstr "Nav mēstule"
+
+#: search/widgethandler/statusrulewidgethandler.cpp:41
+msgctxt "message status"
+msgid "Has Attachment"
+msgstr "Ir piesaistnes"
+
+#: snippets/snippetattachmentwidget.cpp:28
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Click on button for selecting attachment file"
+msgstr "Klikšķiniet uz pogas, lai atlasītu piesaistnes datni"
+
+#: snippets/snippetattachmentwidget.cpp:34
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select Attachments"
+msgstr "Atlasīt piesaistnes"
+
+#: snippets/snippetattachmentwidget.cpp:35
+#, kde-format
+msgid "…"
+msgstr "…"
+
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:28
+#, kde-format
+msgctxt "@title:window"
+msgid "Customize File Name Attachment"
+msgstr "Pielāgot datnes nosaukuma piesaistni"
+
+#: snippets/snippetcustomfileattachmentnamewidget.cpp:29
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Filename:"
+msgstr "Datnes nosaukums:"
+
+#: snippets/snippetcustomfileattachmentnamewidget.cpp:47
+#, kde-format
+msgctxt "@action:button"
+msgid "Insert Variables"
+msgstr "Ievietot mainīgos"
+
+#: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentwidget.cpp:52
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Attachments"
+msgstr "Atlasiet piesaistnes"
+
+#: snippets/snippetselectattachmentwidget.cpp:45
+#, kde-format
+msgid "Do you want to delete selected attachment?"
+msgstr "Vai vēlaties dzēst atlasīto piesaistni?"
+
+#: snippets/snippetsmanager.cpp:156
+#, kde-format
+msgid "General"
+msgstr "Pamata"
+
+#: snippets/snippetsmanager.cpp:162
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Snippet"
+msgstr "Pievienot fragmentu"
+
+#: snippets/snippetsmanager.cpp:228
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit Snippet"
+msgstr "Rediģēt fragmentu"
+
+#: snippets/snippetsmanager.cpp:288
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Do you really want to remove snippet \"%1\"?<nl/><warning>There is no way to "
+"undo the removal.</warning>"
+msgstr ""
+"Vai tiešām vēlaties noņemt fragmentu „%1“?<nl/><warning>Noņemšanu atsaukt "
+"nebūs iespējams.</warning>"
+
+#: snippets/snippetsmanager.cpp:307
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Group"
+msgstr "Pievienot grupu"
+
+#: snippets/snippetsmanager.cpp:332
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit Group"
+msgstr "Rediģēt grupu"
+
+#: snippets/snippetsmanager.cpp:361
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Do you really want to remove group \"%1\" along with all its snippets?<nl/"
+"><warning>There is no way to undo the removal.</warning>"
+msgstr ""
+"Vai tiešām vēlaties noņemt grupu „%1“ kopā ar visiem tās fragmentiem?<nl/"
+"><warning>Šo darbību atsaukt nav iespējams.</warning>"
+
+#: snippets/snippetsmanager.cpp:371
+#, kde-format
+msgctxt "@info"
+msgid "Do you really want to remove group \"%1\"?"
+msgstr "Vai tiešām vēlaties noņemt grupu „%1“?"
+
+#: snippets/snippetsmanager.cpp:439 snippets/snippetsmanager.cpp:468
+#, kde-format
+msgctxt "@action"
+msgid "Snippet %1"
+msgstr "Fragments „%1“"
+
+#: snippets/snippetsmanager.cpp:560
+#, kde-format
+msgctxt "@action"
+msgid "Add Snippet…"
+msgstr "Pievienot fragmentu…"
+
+#: snippets/snippetsmanager.cpp:562
+#, kde-format
+msgctxt "@action"
+msgid "Edit Snippet…"
+msgstr "Rediģēt fragmentu"
+
+#: snippets/snippetsmanager.cpp:564
+#, kde-format
+msgctxt "@action"
+msgid "Remove Snippet"
+msgstr "Noņemt fragmentu"
+
+#: snippets/snippetsmanager.cpp:567
+#, kde-format
+msgctxt "@action"
+msgid "Add Group…"
+msgstr "Pievienot grupu…"
+
+#: snippets/snippetsmanager.cpp:569
+#, kde-format
+msgctxt "@action"
+msgid "Rename Group…"
+msgstr "Pārdēvēt grupu…"
+
+#: snippets/snippetsmanager.cpp:571
+#, kde-format
+msgctxt "@action"
+msgid "Remove Group"
+msgstr "Noņemt grupu"
+
+#: snippets/snippetsmanager.cpp:574
+#, kde-format
+msgctxt "@action"
+msgid "Insert Snippet"
+msgstr "Ievietot fragmentu"
+
+#: snippets/snippetsmodel.cpp:524 snippets/snippetsmodel.cpp:553
+#, kde-format
+msgid "Do you want to update snippet?"
+msgstr "Vai tiešām vēlaties atjaunināt fragmentu?"
+
+#: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:554
+#, kde-format
+msgctxt "@title:window"
+msgid "Update snippet"
+msgstr "Atjaunināt fragmentu"
+
+#: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
+#, kde-format
+msgctxt "@action:button"
+msgid "Update"
+msgstr "Atjaunināt"
+
+#: snippets/snippettreeview.cpp:65
+#, kde-format
+msgid "Text Snippets"
+msgstr "Teksta fragmenti"
+
+#: snippets/snippetvariabledialog.cpp:37
+#, kde-format
+msgctxt "@title:window"
+msgid "Enter Values for Variables"
+msgstr "Ievadīt mainīgo vērtības"
+
+#: snippets/snippetvariabledialog.cpp:40
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Enter the replacement values for '%1':"
+msgstr "Ievadiet aizstāšanas vērtības „%1“:"
+
+#: snippets/snippetvariabledialog.cpp:45
+#, kde-format
+msgctxt "@option:check"
+msgid "Make value &default"
+msgstr "Padarīt vērtību par &noklusējumu"
+
+#: snippets/snippetvariabledialog.cpp:48
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"Enable this to save the value entered to the right as the default value for "
+"this variable"
+msgstr ""
+"Ieslēdziet, lai saglabātu ievadīto vērtību labajā pusē kā noklusējuma "
+"vērtību šim mainīgajam"
+
+#: snippets/snippetvariabledialog.cpp:51
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"If you enable this option, the value entered to the right will be saved. If "
+"you use the same variable later, even in another snippet, the value entered "
+"to the right will be the default value for that variable."
+msgstr ""
+"ieslēdzot šo opciju, labajā pusē ievadītā vērtība tiks saglabāta. Ja šo pašu "
+"mainīgo izmantosit vēlāk (arī ja citā fragmentā), labajā pusē ievadītā "
+"vērtība būs noklusējuma vērtība šim mainīgajam."
+
+#: snippets/snippetwidget.cpp:58
+#, kde-format
+msgid ""
+"Enter a keyword here to enable fast insertion of this snippet while writing "
+"an email. For instance if you choose \"greeting\" as the keyword, you can "
+"then type \\greeting in your email and then press the tab key, and it will "
+"be replaced with the contents of this snippet."
+msgstr ""
+"Ierakstiet atslēgvārdu, lai ieslēgtu šī fragmenta ātro ievietošanu, rakstot "
+"e-pasta vēstuli. Piemēram, norādot atslēgvārdu „sveiciens“, varat vēstulē "
+"rakstīt \\sveiciens un spiest „Tab“ taustiņu, lai šo vārdu aizvietotu "
+"attiecīgais fragments."
+
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: snippets/ui/snippetwidget.ui:32
+#, kde-format
+msgid "&Name:"
+msgstr "&Nosaukums:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabelGroup)
+#: snippets/ui/snippetwidget.ui:50
+#, kde-format
+msgctxt "Group to which the snippet belongs."
+msgid "Group:"
+msgstr "Grupa:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: snippets/ui/snippetwidget.ui:69
+#, kde-format
+msgid "Subject:"
+msgstr "Temats"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: snippets/ui/snippetwidget.ui:88
+#, kde-format
+msgid "To:"
+msgstr "Kam:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: snippets/ui/snippetwidget.ui:101
+#, kde-format
+msgid "Cc:"
+msgstr "Cc:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: snippets/ui/snippetwidget.ui:114
+#, kde-format
+msgid "Bcc:"
+msgstr "Bcc:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel)
+#: snippets/ui/snippetwidget.ui:127
+#, kde-format
+msgid "&Snippet:"
+msgstr "&Fragments:"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
+#: snippets/ui/snippetwidget.ui:157
+#, kde-format
+msgid "Variables"
+msgstr "Mainīgie"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: snippets/ui/snippetwidget.ui:181
+#, kde-format
+msgid "Attachments:"
+msgstr "Piesaistnes:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: snippets/ui/snippetwidget.ui:193
+#, kde-format
+msgid "Keyword:"
+msgstr "Atslēgvārds:"
+
+#. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
+#: snippets/ui/snippetwidget.ui:212
+#, kde-format
+msgid "Sho&rtcut:"
+msgstr "&Saīsne:"
+
+#: tag/addtagdialog.cpp:39
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Tag"
+msgstr "Pievienot birku"
+
+#: tag/addtagdialog.cpp:76
+#, kde-format
+msgid "Tag %1 already exists"
+msgstr "Birka „%1“ jau pastāv"
+
+#: tag/tagwidget.cpp:63
+#, kde-format
+msgctxt "@label:listbox Name of the tag"
+msgid "Name:"
+msgstr "Nosaukums:"
+
+#: tag/tagwidget.cpp:70
+#, kde-format
+msgctxt "@option:check"
+msgid "Change te&xt color:"
+msgstr "Mainīt &teksta krāsu:"
+
+#: tag/tagwidget.cpp:82
+#, kde-format
+msgctxt "@option:check"
+msgid "Change &background color:"
+msgstr "Manīt &fona krāsu:"
+
+#: tag/tagwidget.cpp:94
+#, kde-format
+msgctxt "@option:check"
+msgid "Change fo&nt:"
+msgstr "Mainīt f&ontu:"
+
+#: tag/tagwidget.cpp:100
+#, kde-format
+msgctxt "@option:check"
+msgid "&Bold"
+msgstr "&Treknraksts"
+
+#: tag/tagwidget.cpp:104
+#, kde-format
+msgctxt "@option:check"
+msgid "&Italics"
+msgstr "&Slīpraksts"
+
+#: tag/tagwidget.cpp:122
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Message tag &icon:"
+msgstr "Vēstules birkas &ikona:"
+
+#: tag/tagwidget.cpp:133
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Shortc&ut:"
+msgstr "S&aīsne:"
+
+#: tag/tagwidget.cpp:144
+#, kde-format
+msgctxt "@option:check"
+msgid "Enable &toolbar button"
+msgstr "Ieslēgt &rīkjoslas pogu"
+
+#: widgets/favoritecollectionwidget.cpp:91
+#, kde-format
+msgid "Icon size"
+msgstr "Ikonas izmērs"
+
+#: widgets/favoritecollectionwidget.cpp:110
+#, kde-format
+msgid "Mode"
+msgstr "Režīms"
+
+#: widgets/favoritecollectionwidget.cpp:114
+#, kde-format
+msgctxt "@action"
+msgid "List Mode"
+msgstr "Saraksta režīms"
+
+#: widgets/favoritecollectionwidget.cpp:124
+#, kde-format
+msgctxt "@action"
+msgid "Icon Mode"
+msgstr "Ikonu režīms"
+
+#: widgets/favoritecollectionwidget.cpp:235
+#, kde-format
+msgid "Drop your favorite folders here…"
+msgstr "Velciet un nometiet te izlases mapes…"
+
+#: widgets/redirectdialog.cpp:67
+#, kde-format
+msgid "Resend-To:"
+msgstr "Atkārtoti sūtīt uz:"
+
+#: widgets/redirectdialog.cpp:70
+#, kde-format
+msgid "Resend-Cc:"
+msgstr "Atkārtoti sūtīt CC:"
+
+#: widgets/redirectdialog.cpp:73
+#, kde-format
+msgid "Resend-Bcc:"
+msgstr "Atkārtoti sūtīt BCC:"
+
+#: widgets/redirectdialog.cpp:102
+#, kde-format
+msgctxt "@title:window"
+msgid "Redirect Message"
+msgstr "Pāradresēt vēstuli"
+
+#: widgets/redirectdialog.cpp:123
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Select the recipient addresses to redirect to:"
+msgstr "Atlasiet saņēmēja adreses, uz kurām pāradresēt:"
+
+#: widgets/redirectdialog.cpp:152
+#, kde-format
+msgid "Identity:"
+msgstr "Identitāte:"
+
+#: widgets/redirectdialog.cpp:156
+#, kde-format
+msgid "Transport:"
+msgstr "Transports:"
+
+#: widgets/redirectdialog.cpp:158
+#, kde-format
+msgctxt "@action:button"
+msgid "&Send Now"
+msgstr "&Nosūtīt tagad:"
+
+#: widgets/redirectdialog.cpp:159
+#, kde-format
+msgctxt "@action:button"
+msgid "Send &Later"
+msgstr "Nosūtīt &vēlāk"
+
+#: widgets/redirectdialog.cpp:207
+#, kde-format
+msgid "You cannot redirect the message without an address."
+msgstr "Jūs nevarat pāradresēt vēstuli bez norādītas adreses."
+
+#: widgets/redirectdialog.cpp:207
+#, kde-format
+msgctxt "@title:window"
+msgid "Empty Redirection Address"
+msgstr "Iztukšot pāradresācijas adresi"
+
+#: widgets/redirectwidget.cpp:39
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Use the Address-Selection Dialog"
+msgstr "Izmantot adreses atlases lodziņu"
+
+#: widgets/redirectwidget.cpp:41
+#, kde-format
+msgid ""
+"This button opens a separate dialog where you can select recipients out of "
+"all available addresses."
+msgstr ""
+"Šī poga atver atsevišķu lodziņu, kurā varat atlasīt saņēmējus no visām "
+"pieejamajām adresēm."
