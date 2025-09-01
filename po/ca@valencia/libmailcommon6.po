@@ -81,7 +81,7 @@ msgid ""
 "Please select a folder to expire messages into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
-"Seleccioneu una carpeta per a fer caducar els missatges.\n"
+"Trieu una carpeta per a fer caducar els missatges.\n"
 "Si no ho feu, els missatges caducats seran suprimits permanentment."
 
 #: collectionpage/collectionexpirywidget.cpp:174
@@ -97,7 +97,7 @@ msgid ""
 "into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
-"Seleccioneu una carpeta diferent de la carpeta actual per a fer caducar els "
+"Trieu una carpeta diferent de la carpeta actual per a fer caducar els "
 "missatges.\n"
 "Si no ho feu, els missatges caducats seran suprimits permanentment."
 
@@ -220,11 +220,11 @@ msgid ""
 "signing or encryption keys automatically. Identities can be set up in the "
 "main configuration dialog. (Settings -> Configure KMail)"
 msgstr ""
-"Seleccioneu la identitat del remitent que s'utilitzarà en escriure correus "
-"nous o respondre a correus en esta carpeta. Açò vol dir que si vos trobeu en "
-"una de les carpetes de treball, podeu fer que KMail empre la corresponent "
-"adreça del remitent del correu, la signatura i les claus de signatura o "
-"encriptació automàticament. Es poden establir les identitats en el diàleg de "
+"Trieu la identitat del remitent que s'utilitzarà en escriure correus nous o "
+"respondre a correus en esta carpeta. Açò vol dir que si vos trobeu en una de "
+"les carpetes de treball, podeu fer que KMail empre la corresponent adreça "
+"del remitent del correu, la signatura i les claus de signatura o encriptació "
+"automàticament. Es poden establir les identitats en el diàleg de "
 "configuració principal. (Configuració -> Configura KMail)"
 
 #: collectionpage/collectiongeneralwidget.cpp:66
@@ -311,22 +311,22 @@ msgstr "Format dels missatges:"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
-msgstr "Seleccioneu un compte"
+msgstr "Trieu un compte"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:39
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr ""
-"Falta el compte del filtre. Seleccioneu un compte que s'utilitzarà amb el "
-"filtre «%1»"
+"Falta el compte del filtre. Trieu un compte que s'utilitzarà amb el filtre "
+"«%1»"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
-msgstr "Seleccioneu una carpeta"
+msgstr "Trieu una carpeta"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #, kde-format
@@ -343,21 +343,21 @@ msgstr "Es poden utilitzar les carpetes següents amb este filtre:"
 #: filter/dialog/filteractionmissingfolderdialog.cpp:67
 #, kde-format
 msgid "Please select a folder:"
-msgstr "Seleccioneu una carpeta:"
+msgstr "Trieu una carpeta:"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:70
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
 msgstr ""
-"Falta la carpeta del filtre. Seleccioneu una carpeta que s'utilitzarà amb el "
+"Falta la carpeta del filtre. Trieu una carpeta que s'utilitzarà amb el "
 "filtre «%1»:"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
-msgstr "Seleccioneu una identitat"
+msgstr "Trieu una identitat"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:38
 #, kde-format
@@ -365,14 +365,14 @@ msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
 "\"%1\""
 msgstr ""
-"Falta la identitat del filtre. Seleccioneu una identitat que s'utilitzarà "
-"amb el filtre «%1»"
+"Falta la identitat del filtre. Trieu una identitat que s'utilitzarà amb el "
+"filtre «%1»"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
-msgstr "Seleccioneu un so"
+msgstr "Trieu un so"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
 #, kde-format
@@ -383,14 +383,13 @@ msgstr "El fitxer de so era «%1»."
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
-msgstr ""
-"Falta el fitxer de so. Seleccioneu un so que s'utilitzarà amb el filtre «%1»"
+msgstr "Falta el fitxer de so. Trieu un so que s'utilitzarà amb el filtre «%1»"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
-msgstr "Seleccioneu una etiqueta"
+msgstr "Trieu una etiqueta"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
 #, kde-format
@@ -402,8 +401,8 @@ msgstr "L'etiqueta era «%1»."
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
-"Falta l'etiqueta del filtre. Seleccioneu una etiqueta que s'utilitzarà amb "
-"el filtre «%1»"
+"Falta l'etiqueta del filtre. Trieu una etiqueta que s'utilitzarà amb el "
+"filtre «%1»"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
@@ -414,7 +413,7 @@ msgstr "Afig una etiqueta…"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
-msgstr "Seleccioneu una plantilla"
+msgstr "Trieu una plantilla"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:38
 #, kde-format
@@ -422,14 +421,14 @@ msgid ""
 "Filter template is missing. Please select a template to use with filter "
 "\"%1\""
 msgstr ""
-"Falta la plantilla del filtre. Seleccioneu una plantilla que s'utilitzarà "
-"amb el filtre «%1»"
+"Falta la plantilla del filtre. Trieu una plantilla que s'utilitzarà amb el "
+"filtre «%1»"
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
-msgstr "Seleccioneu un transport"
+msgstr "Trieu un transport"
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:37
 #, kde-format
@@ -437,14 +436,14 @@ msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
 "\"%1\""
 msgstr ""
-"Falta el transport del filtre. Seleccioneu un transport que s'utilitzarà amb "
-"el filtre «%1»"
+"Falta el transport del filtre. Trieu un transport que s'utilitzarà amb el "
+"filtre «%1»"
 
 #: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
-msgstr "Seleccioneu el fitxer de filtres de Thunderbird"
+msgstr "Trieu el fitxer de filtres de Thunderbird"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:31
 #, kde-format
@@ -939,7 +938,7 @@ msgstr "No s'ha definit l'estat."
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
-msgstr "Seleccioneu una acció."
+msgstr "Trieu una acció."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
 #, kde-format
@@ -1074,7 +1073,7 @@ msgstr "Desselecciona-ho tot"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
-msgstr "Seleccioneu els filtres"
+msgstr "Trieu els filtres"
 
 #: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:51
 #: folder/foldertreewidget.cpp:84
@@ -1598,7 +1597,7 @@ msgstr ""
 "<qt><p>Cliqueu damunt d'este botó per a canviar el nom del filtre "
 "seleccionat.</p><p>Els filtres s'anomenen automàticament, i comencen per "
 "«&lt;»</p><p>Si heu canviat el nom accidentalment un filtre i el voleu "
-"tornar a anomenar automàticament, cliqueu damunt d'este botó i seleccioneu "
+"tornar a anomenar automàticament, cliqueu damunt d'este botó i trieu "
 "<em>Neteja</em> seguit per <em>D'acord</em> en el diàleg que apareixerà.</"
 "p></qt>"
 
@@ -1688,7 +1687,7 @@ msgstr "Reproduïx"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Sound File"
-msgstr "Seleccioneu el fitxer de so"
+msgstr "Trieu el fitxer de so"
 
 #: filter/soundtestwidget.cpp:114
 #, kde-format
@@ -1754,13 +1753,13 @@ msgstr "Para el procés si coincidix"
 #: filter/ui/selectthunderbirdfilterfileswidget.ui:29
 #, kde-format
 msgid "Select File:"
-msgstr "Selecciona un fitxer:"
+msgstr "Tria un fitxer:"
 
 #. i18n: ectx: property (text), widget (QRadioButton, selectFromConfig)
 #: filter/ui/selectthunderbirdfilterfileswidget.ui:45
 #, kde-format
 msgid "Select file from config:"
-msgstr "Selecciona un fitxer de configuració:"
+msgstr "Tria un fitxer de configuració:"
 
 #: folder/accountconfigorderdialog.cpp:57
 #, kde-format
@@ -1790,7 +1789,7 @@ msgstr "Baixa"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
-msgstr "Seleccioneu una carpeta"
+msgstr "Trieu una carpeta"
 
 #: folder/folderrequester.cpp:117
 #, kde-format
@@ -1800,7 +1799,7 @@ msgstr "Carpetes locals"
 #: folder/folderrequester.cpp:127 folder/folderrequester.cpp:145
 #, kde-format
 msgid "Please select a folder"
-msgstr "Seleccioneu una carpeta"
+msgstr "Trieu una carpeta"
 
 #: folder/folderselectiondialog.cpp:65
 #, kde-format
@@ -2698,7 +2697,7 @@ msgstr "Cliqueu damunt del botó per a seleccionar un fitxer adjunt"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
-msgstr "Selecciona els adjunts"
+msgstr "Tria els adjunts"
 
 #: snippets/snippetattachmentwidget.cpp:33
 #, kde-format
@@ -2728,7 +2727,7 @@ msgstr "Inserix variables"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
-msgstr "Seleccioneu els adjunts"
+msgstr "Trieu els adjunts"
 
 #: snippets/snippetselectattachmentwidget.cpp:45
 #, kde-format
@@ -3098,7 +3097,7 @@ msgstr "Redirecció del missatge"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
-msgstr "Seleccioneu els destinataris als quals redirigir:"
+msgstr "Trieu els destinataris als quals redirigir:"
 
 #: widgets/redirectdialog.cpp:152
 #, kde-format
