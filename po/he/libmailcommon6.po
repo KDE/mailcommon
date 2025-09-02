@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-29 00:44+0000\n"
-"PO-Revision-Date: 2025-08-20 23:00+0300\n"
+"PO-Revision-Date: 2025-09-01 08:23+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -2200,239 +2200,239 @@ msgstr ""
 #: search/widgethandler/textrulerwidgethandler.cpp:24
 #, kde-format
 msgid "contains"
-msgstr ""
+msgstr "מכיל"
 
 #: search/searchrule/searchrule.cpp:247
 #, kde-format
 msgid "not contains"
-msgstr ""
+msgstr "לא מכיל"
 
 #: search/searchrule/searchrule.cpp:250
 #, kde-format
 msgid "has regexp"
-msgstr ""
+msgstr "יש ביטוי רגולרי"
 
 #: search/searchrule/searchrule.cpp:253
 #, kde-format
 msgid "not regexp"
-msgstr ""
+msgstr "לא ביטוי רגולרי"
 
 #: search/searchrule/searchrule.cpp:267
 #, kde-format
 msgid "size equals not supported"
-msgstr ""
+msgstr "גודל שווה לא נתמך"
 
 #: search/searchrule/searchrule.cpp:270
 #, kde-format
 msgid "size not equals not supported"
-msgstr ""
+msgstr "גודל לא שווה לא נתמך"
 
 #: search/searchrule/searchrule.cpp:303 search/searchrule/searchrule.cpp:411
 #: search/searchrule/searchrule.cpp:494
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
-msgstr ""
+msgstr "„%1” לא נתמך עם התנאי „%2”"
 
 #: search/searchrule/searchrule.cpp:309
 #, kde-format
 msgid "<status> not implemented/supported"
-msgstr ""
+msgstr "<status> (מצב) לא מומשה/נתמכת"
 
 #: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<any header> not implemented/supported"
-msgstr ""
+msgstr "<any header> (כל כותרת שהיא) לא מומשה/נתמכת"
 
 #: search/searchrule/searchrule.cpp:315
 #, kde-format
 msgid "<contents> not implemented/supported"
-msgstr ""
+msgstr "<contents> (תוכן) לא מומשה/נתמכת"
 
 #: search/searchrule/searchrule.cpp:318
 #, kde-format
 msgid "<age in days> not implemented/supported"
-msgstr ""
+msgstr "<age in days> (גיל בימים) לא מומשה/נתמכת"
 
 #: search/searchrule/searchrule.cpp:321
 #, kde-format
 msgid "<date> not implemented/supported"
-msgstr ""
+msgstr "<date> (תאריך) לא מומשה/נתמכת"
 
 #: search/searchrule/searchrule.cpp:324
 #, kde-format
 msgid "<recipients> not implemented/supported"
-msgstr ""
+msgstr "<recipients> (נמענים) לא מומשה/נתמכת"
 
 #: search/searchrule/searchrule.cpp:326
 #, kde-format
 msgid "<Tag> is not supported"
-msgstr ""
+msgstr "אין תמיכה ב־<Tag> (תגית)"
 
 #: search/searchrule/searchrule.cpp:329
 #, kde-format
 msgid "<message> not implemented/supported"
-msgstr ""
+msgstr "<message> (הודעה) לא מומשה/נתמכת"
 
 #: search/searchrule/searchruledate.cpp:20
 #, kde-format
 msgid "Date is not valid."
-msgstr ""
+msgstr "התאריך שגוי."
 
 #: search/searchrule/searchrulenumerical.cpp:137
 #, kde-format
 msgid "Content is not a number."
-msgstr ""
+msgstr "התוכן אינו מספר."
 
 #: search/searchrule/searchrulestring.cpp:235
 #, kde-format
 msgid "String is empty."
-msgstr ""
+msgstr "המחרוזת ריקה."
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 #: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has"
-msgstr ""
+msgstr "יש לו"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 #: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has not"
-msgstr ""
+msgstr "אין לו"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:54
 #, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
-msgstr ""
+msgstr "צרופות"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:91
 #, kde-format
 msgid "has attachment"
-msgstr ""
+msgstr "יש צרופה"
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
 #: search/widgethandler/numericrulewidgethandler.cpp:21
 msgid "is equal to"
-msgstr ""
+msgstr "שווה ל־"
 
 #: search/widgethandler/daterulewidgethandler.cpp:23
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:22
 #: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is not equal to"
-msgstr ""
+msgstr "אינו שווה ל־"
 
 #: search/widgethandler/daterulewidgethandler.cpp:24
 msgid "is after"
-msgstr ""
+msgstr "אחרי"
 
 #: search/widgethandler/daterulewidgethandler.cpp:25
 msgid "is before or equal to"
-msgstr ""
+msgstr "לפני או שווה ל־"
 
 #: search/widgethandler/daterulewidgethandler.cpp:26
 msgid "is before"
-msgstr ""
+msgstr "לפני"
 
 #: search/widgethandler/daterulewidgethandler.cpp:27
 msgid "is after or equal to"
-msgstr ""
+msgstr "אחרי או שווה ל־"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:17
 #: search/widgethandler/statusrulewidgethandler.cpp:18
 msgid "is"
-msgstr ""
+msgstr "הוא"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:17
 #: search/widgethandler/statusrulewidgethandler.cpp:18
 msgid "is not"
-msgstr ""
+msgstr "אינו"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:54
 #, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
-msgstr ""
+msgstr "מוצפן"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:91
 #, kde-format
 msgid "is encrypted"
-msgstr ""
+msgstr "הוא מוצפן"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:26
 #: search/widgethandler/messagerulewidgethandler.cpp:25
 #: search/widgethandler/tagrulewidgethandler.cpp:94
 #: search/widgethandler/textrulerwidgethandler.cpp:25
 msgid "does not contain"
-msgstr ""
+msgstr "לא מכיל"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:27
 #: search/widgethandler/tagrulewidgethandler.cpp:95
 #: search/widgethandler/textrulerwidgethandler.cpp:26
 msgid "equals"
-msgstr ""
+msgstr "שווה"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:28
 #: search/widgethandler/tagrulewidgethandler.cpp:96
 #: search/widgethandler/textrulerwidgethandler.cpp:27
 msgid "does not equal"
-msgstr ""
+msgstr "לא שווה ל־"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:29
 #: search/widgethandler/textrulerwidgethandler.cpp:28
 msgid "starts with"
-msgstr ""
+msgstr "מתחיל ב־"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:30
 #: search/widgethandler/textrulerwidgethandler.cpp:29
 msgid "does not start with"
-msgstr ""
+msgstr "לא מתחיל ב־"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:31
 #: search/widgethandler/textrulerwidgethandler.cpp:30
 msgid "ends with"
-msgstr ""
+msgstr "מסתיים ב־"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:32
 #: search/widgethandler/textrulerwidgethandler.cpp:31
 msgid "does not end with"
-msgstr ""
+msgstr "לא מסתיים ב־"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:34
 #: search/widgethandler/messagerulewidgethandler.cpp:26
 #: search/widgethandler/tagrulewidgethandler.cpp:97
 #: search/widgethandler/textrulerwidgethandler.cpp:33
 msgid "matches regular expr."
-msgstr ""
+msgstr "עונה על ביטוי רגולרי"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:35
 #: search/widgethandler/messagerulewidgethandler.cpp:27
 #: search/widgethandler/tagrulewidgethandler.cpp:98
 #: search/widgethandler/textrulerwidgethandler.cpp:34
 msgid "does not match reg. expr."
-msgstr ""
+msgstr "לא עונה על ביטוי רגולרי"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:36
 #: search/widgethandler/headersrulerwidgethandler.cpp:151
 #, kde-format
 msgid "is in address book"
-msgstr ""
+msgstr "בפנקס הכתובות"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:37
 #: search/widgethandler/headersrulerwidgethandler.cpp:153
 #, kde-format
 msgid "is not in address book"
-msgstr ""
+msgstr "אינו בפנקס הכתובות"
 
 #: search/widgethandler/invitationwidgethandler.cpp:54
 #, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
-msgstr ""
+msgstr "הזמנה"
 
 #: search/widgethandler/invitationwidgethandler.cpp:91
 #, kde-format
 msgid "has invitation"
-msgstr ""
+msgstr "יש הזמנה"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147
@@ -2443,28 +2443,28 @@ msgstr ""
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:23
 #: search/widgethandler/numericrulewidgethandler.cpp:23
 msgid "is greater than"
-msgstr ""
+msgstr "גדול מ־"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:24
 #: search/widgethandler/numericrulewidgethandler.cpp:24
 msgid "is less than or equal to"
-msgstr ""
+msgstr "קטן או שווה ל־"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:25
 #: search/widgethandler/numericrulewidgethandler.cpp:25
 msgid "is less than"
-msgstr ""
+msgstr "קטן מ־"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:26
 #: search/widgethandler/numericrulewidgethandler.cpp:26
 msgid "is greater than or equal to"
-msgstr ""
+msgstr "גדול או שווה ל־"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:157
 #, kde-format
 msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
-msgstr ""
+msgstr " ק״ב"
 
 #: search/widgethandler/numericrulewidgethandler.cpp:157
 #, kde-format
@@ -2484,7 +2484,7 @@ msgstr "חשוב"
 #: search/widgethandler/statusrulewidgethandler.cpp:29
 msgctxt "message status"
 msgid "Action Item"
-msgstr ""
+msgstr "פריט לביצוע"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:30
 msgctxt "message status"
@@ -2651,25 +2651,25 @@ msgstr "להסיר את הקבוצה „%1”?"
 #, kde-format
 msgctxt "@action"
 msgid "Snippet %1"
-msgstr ""
+msgstr "קטע טקסט %1"
 
 #: snippets/snippetsmanager.cpp:560
 #, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
-msgstr ""
+msgstr "הוספת קטע טקסט…"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
-msgstr ""
+msgstr "עריכת קטע טקסט…"
 
 #: snippets/snippetsmanager.cpp:564
 #, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
-msgstr ""
+msgstr "הסרת קטע טקסט"
 
 #: snippets/snippetsmanager.cpp:567
 #, kde-format
@@ -2693,18 +2693,18 @@ msgstr "הסרת קבוצה"
 #, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
-msgstr ""
+msgstr "הוספת קטע טקסט"
 
 #: snippets/snippetsmodel.cpp:524 snippets/snippetsmodel.cpp:553
 #, kde-format
 msgid "Do you want to update snippet?"
-msgstr ""
+msgstr "לעדכן את קטע הטקסט"
 
 #: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:554
 #, kde-format
 msgctxt "@title:window"
 msgid "Update snippet"
-msgstr ""
+msgstr "עדכון קטע טקסט"
 
 #: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
 #, kde-format
@@ -2715,7 +2715,7 @@ msgstr "עדכון"
 #: snippets/snippettreeview.cpp:65
 #, kde-format
 msgid "Text Snippets"
-msgstr ""
+msgstr "קטעי טקסט"
 
 #: snippets/snippetvariabledialog.cpp:37
 #, kde-format
@@ -2751,6 +2751,8 @@ msgid ""
 "you use the same variable later, even in another snippet, the value entered "
 "to the right will be the default value for that variable."
 msgstr ""
+"הפעלת האפשרות הזאת תשמור את הערך שמולא משמאל. אם המשתנה הזה מופיע שוב בהמשך, "
+"אפילו בקטע טקסט אחר, הערך שמולא משמאל יהיה ערך ברירת המחדל למשתנה הזה."
 
 #: snippets/snippetwidget.cpp:58
 #, kde-format
@@ -2784,25 +2786,25 @@ msgstr "נושא:"
 #: snippets/ui/snippetwidget.ui:88
 #, kde-format
 msgid "To:"
-msgstr ""
+msgstr "אל:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: snippets/ui/snippetwidget.ui:101
 #, kde-format
 msgid "Cc:"
-msgstr ""
+msgstr "עותק:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: snippets/ui/snippetwidget.ui:114
 #, kde-format
 msgid "Bcc:"
-msgstr ""
+msgstr "עותק סמוי:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel)
 #: snippets/ui/snippetwidget.ui:127
 #, kde-format
 msgid "&Snippet:"
-msgstr ""
+msgstr "&קטע טקסט:"
 
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
 #: snippets/ui/snippetwidget.ui:157
@@ -2879,7 +2881,7 @@ msgstr "&נטוי"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
-msgstr ""
+msgstr "&סמל תגית הודעה:"
 
 #: tag/tagwidget.cpp:133
 #, kde-format
@@ -2923,17 +2925,17 @@ msgstr "נא לגרור את התיקיות המועדפות עליך לכאן�
 #: widgets/redirectdialog.cpp:67
 #, kde-format
 msgid "Resend-To:"
-msgstr ""
+msgstr "שליחה מחדש-אל:"
 
 #: widgets/redirectdialog.cpp:70
 #, kde-format
 msgid "Resend-Cc:"
-msgstr ""
+msgstr "שליחה מחדש-עותק:"
 
 #: widgets/redirectdialog.cpp:73
 #, kde-format
 msgid "Resend-Bcc:"
-msgstr ""
+msgstr "שליחה מחדש-עותק סמוי:"
 
 #: widgets/redirectdialog.cpp:102
 #, kde-format
