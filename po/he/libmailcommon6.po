@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-29 00:44+0000\n"
-"PO-Revision-Date: 2025-09-01 08:23+0300\n"
+"PO-Revision-Date: 2025-09-02 15:36+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -717,7 +717,7 @@ msgstr ""
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
-msgstr ""
+msgstr "עם:"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:29
 #, kde-format
@@ -774,12 +774,12 @@ msgstr ""
 #: filter/filteractions/filteractionsendreceipt.cpp:21
 #, kde-format
 msgid "Confirm Delivery"
-msgstr ""
+msgstr "אישור מסירה"
 
 #: filter/filteractions/filteractionsetidentity.cpp:29
 #, kde-format
 msgid "Set Identity To"
-msgstr ""
+msgstr "הגדרת הזהות לכדי"
 
 #: filter/filteractions/filteractionsetstatus.cpp:22
 #, kde-format
@@ -859,12 +859,12 @@ msgstr ""
 #, kde-format
 msgctxt "msg status"
 msgid "Action Item"
-msgstr ""
+msgstr "פריט לביצוע"
 
 #: filter/filteractions/filteractionstatus.cpp:102
 #, kde-format
 msgid "Status is missing."
-msgstr ""
+msgstr "חסר מצב."
 
 #: filter/filteractions/filteractionunsetstatus.cpp:21
 #, kde-format
@@ -875,19 +875,19 @@ msgstr ""
 #: filter/filteractions/filteractionunsetstatus.cpp:39
 #, kde-format
 msgid "Status not defined."
-msgstr ""
+msgstr "מצב לא מוגדר."
 
 #: filter/filteractions/filteractionwidget.cpp:69
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
-msgstr ""
+msgstr "נא לבחור פעולה."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
-msgstr ""
+msgstr "עזרה"
 
 #: filter/filteractions/filteractionwithurl.cpp:64
 #, kde-format
@@ -898,23 +898,23 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
-msgstr ""
+msgstr "להמיר לסקריפט Sieve"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save…"
-msgstr ""
+msgstr "שמירה…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr ""
+msgstr "שיתוף…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
-msgstr ""
+msgstr "קובצי Sieve‏ (‎*.siv);;כל הקבצים (*)"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
 #, kde-format
@@ -1692,74 +1692,74 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
-msgstr ""
+msgstr "תיקייה חדשה"
 
 #: folder/folderselectiondialog.cpp:178
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
-msgstr ""
+msgstr "שם"
 
 #: folder/folderselectiondialog.cpp:195
 #, kde-format
 msgid "Could not create folder: %1"
-msgstr ""
+msgstr "לא ניתן ליצור תיקייה: %1"
 
 #: folder/folderselectiondialog.cpp:195
 #, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
-msgstr ""
+msgstr "יצירת תיקייה נכשלה"
 
 #: folder/foldertreeview.cpp:129
 #, kde-format
 msgid "View Columns"
-msgstr ""
+msgstr "עמודות תצוגה"
 
 #: folder/foldertreeview.cpp:139
 #, kde-format
 msgid "Icon Size"
-msgstr ""
+msgstr "גודל סמלים"
 
 #: folder/foldertreeview.cpp:155
 #, kde-format
 msgid "Display Tooltips"
-msgstr ""
+msgstr "הצגת חלוניות עצה"
 
 #: folder/foldertreeview.cpp:159
 #, kde-format
 msgctxt "@action:inmenu Always display tooltips"
 msgid "Always"
-msgstr ""
+msgstr "תמיד"
 
 #: folder/foldertreeview.cpp:166
 #, kde-format
 msgctxt "@action:inmenu Never display tooltips."
 msgid "Never"
-msgstr ""
+msgstr "אף פעם"
 
 #: folder/foldertreeview.cpp:173
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Sort Items"
-msgstr ""
+msgstr "מיון פריטים"
 
 #: folder/foldertreeview.cpp:177
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
-msgstr ""
+msgstr "אוטומטית, לפי העמודה הנוכחית"
 
 #: folder/foldertreeview.cpp:184
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
-msgstr ""
+msgstr "ידנית, בגרירה"
 
 #: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
-msgstr ""
+msgstr "<qt>לעבור להודעה הבאה שלא נקראה בתיקייה <b>%1</b>?</qt>"
 
 #: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, kde-format
@@ -2016,67 +2016,67 @@ msgstr ""
 
 #: search/searchpatternedit.cpp:45
 msgid "Size in Bytes"
-msgstr ""
+msgstr "גודל בבתים"
 
 #: search/searchpatternedit.cpp:46
 msgid "Age in Days"
-msgstr ""
+msgstr "גיל בימים"
 
 #: search/searchpatternedit.cpp:47
 msgid "Message Status"
-msgstr ""
+msgstr "מצב הודעה"
 
 #: search/searchpatternedit.cpp:48
 msgid "Message Tag"
-msgstr ""
+msgstr "תגית הודעה"
 
 #: search/searchpatternedit.cpp:49
 msgid "Subject"
-msgstr ""
+msgstr "נושא"
 
 #: search/searchpatternedit.cpp:50
 msgid "From"
-msgstr ""
+msgstr "מאת"
 
 #: search/searchpatternedit.cpp:51
 msgid "To"
-msgstr ""
+msgstr "אל"
 
 #: search/searchpatternedit.cpp:53
 msgid "Reply To"
-msgstr ""
+msgstr "תגובה אל"
 
 #: search/searchpatternedit.cpp:54
 msgid "Organization"
-msgstr ""
+msgstr "ארגון"
 
 #: search/searchpatternedit.cpp:55
 msgid "Date"
-msgstr ""
+msgstr "תאריך"
 
 #: search/searchpatternedit.cpp:56
 msgid "Encryption"
-msgstr ""
+msgstr "הצפנה"
 
 #: search/searchpatternedit.cpp:57
 msgid "Attachment"
-msgstr ""
+msgstr "קובץ מצורף"
 
 #: search/searchpatternedit.cpp:58
 msgid "Invitation"
-msgstr ""
+msgstr "הזמנה"
 
 #: search/searchpatternedit.cpp:146
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
-msgstr ""
+msgstr "נא לבחור או להקליד קטגוריה משלך"
 
 #: search/searchpatternedit.cpp:147
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
-msgstr ""
+msgstr "נא לבחור או להקליד קטגוריה משלך"
 
 #: search/searchpatternedit.cpp:584
 #, kde-format
@@ -2099,99 +2099,99 @@ msgstr ""
 #: search/searchpatternedit.cpp:598
 #, kde-format
 msgid "Filter criteria:"
-msgstr ""
+msgstr "אילוצי סינון:"
 
 #: search/searchrule/searchrule.cpp:187
 #, kde-format
 msgid "equal"
-msgstr ""
+msgstr "שווה ל־"
 
 #: search/searchrule/searchrule.cpp:190
 #, kde-format
 msgid "not equal"
-msgstr ""
+msgstr "לא שווה ל־"
 
 #: search/searchrule/searchrule.cpp:193
 #, kde-format
 msgid "is greater"
-msgstr ""
+msgstr "גדול מ־"
 
 #: search/searchrule/searchrule.cpp:196
 #, kde-format
 msgid "is less or equal"
-msgstr ""
+msgstr "קטן או שווה ל־"
 
 #: search/searchrule/searchrule.cpp:199
 #, kde-format
 msgid "is less"
-msgstr ""
+msgstr "קטן מ־"
 
 #: search/searchrule/searchrule.cpp:202
 #, kde-format
 msgid "is greater or equal"
-msgstr ""
+msgstr "גדול או שווה ל־"
 
 #: search/searchrule/searchrule.cpp:205
 #, kde-format
 msgid "is in addressbook"
-msgstr ""
+msgstr "בפנקס הכתובות"
 
 #: search/searchrule/searchrule.cpp:208
 #, kde-format
 msgid "is not in addressbook"
-msgstr ""
+msgstr "אינו בפנקס הכתובות"
 
 #: search/searchrule/searchrule.cpp:211 search/searchrule/searchrule.cpp:214
 #, kde-format
 msgid "is in category"
-msgstr ""
+msgstr "בקטגוריה"
 
 #: search/searchrule/searchrule.cpp:217
 #: search/widgethandler/messagerulewidgethandler.cpp:28
 #: search/widgethandler/messagerulewidgethandler.cpp:145
 #, kde-format
 msgid "has an attachment"
-msgstr ""
+msgstr "מצורף לו קובץ"
 
 #: search/searchrule/searchrule.cpp:220
 #, kde-format
 msgid "has not an attachment"
-msgstr ""
+msgstr "לא מצורף לא קובץ"
 
 #: search/searchrule/searchrule.cpp:223
 #, kde-format
 msgid "has an invitation"
-msgstr ""
+msgstr "יש לו הזמנה"
 
 #: search/searchrule/searchrule.cpp:226
 #, kde-format
 msgid "has not an invitation"
-msgstr ""
+msgstr "אין לו הזמנה"
 
 #: search/searchrule/searchrule.cpp:229
 #, kde-format
 msgid "start with"
-msgstr ""
+msgstr "מתחיל ב־"
 
 #: search/searchrule/searchrule.cpp:232
 #, kde-format
 msgid "not start with"
-msgstr ""
+msgstr "לא מתחיל ב־"
 
 #: search/searchrule/searchrule.cpp:235
 #, kde-format
 msgid "end with"
-msgstr ""
+msgstr "מסתיים ב־"
 
 #: search/searchrule/searchrule.cpp:238
 #, kde-format
 msgid "not end with"
-msgstr ""
+msgstr "לא מסתיים ב־"
 
 #: search/searchrule/searchrule.cpp:241
 #, kde-format
 msgid "none"
-msgstr ""
+msgstr "ללא"
 
 #: search/searchrule/searchrule.cpp:244
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
@@ -2438,7 +2438,7 @@ msgstr "יש הזמנה"
 #: search/widgethandler/messagerulewidgethandler.cpp:147
 #, kde-format
 msgid "has no attachment"
-msgstr ""
+msgstr "אין קובץ מצורף"
 
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:23
 #: search/widgethandler/numericrulewidgethandler.cpp:23
