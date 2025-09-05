@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-29 00:44+0000\n"
-"PO-Revision-Date: 2025-09-02 15:36+0300\n"
+"PO-Revision-Date: 2025-09-04 14:51+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -158,7 +158,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Keep replies in this folder"
-msgstr ""
+msgstr "להשאיר את התגובות בתיקייה הזאת"
 
 #: collectionpage/collectiongeneralwidget.cpp:40
 #, kde-format
@@ -167,12 +167,14 @@ msgid ""
 "be put in this same folder after sending, instead of in the configured sent-"
 "mail folder."
 msgstr ""
+"יש לסמן את האפשרות הזאת כדי שתגובות שנכתבות להודעות בתיקייה הזאת תוצבנה "
+"באותה התיקייה לאחר השליחה, במקום בתיקייה המוגדרת להודעות שנשלחו (sent-mail)."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
 #, kde-format
 msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
-msgstr ""
+msgstr "להסתיר את התיקייה הזאת בחלונית ברירת תיקיות"
 
 #: collectionpage/collectiongeneralwidget.cpp:48
 #, kde-kuit-format
@@ -231,19 +233,19 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer HTML to text"
-msgstr ""
+msgstr "העדפת HTML על טקסט"
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer text to HTML"
-msgstr ""
+msgstr "העדפת טקסט על HTML"
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
 msgctxt "@option:radio"
 msgid "Use Global Settings"
-msgstr ""
+msgstr "להשתמש בהגדרות מקיפות"
 
 #: collectionpage/collectionviewwidget.cpp:40
 #, kde-format
@@ -254,234 +256,234 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
-msgstr ""
+msgstr "ברירת מחדל"
 
 #: collectionpage/collectionviewwidget.cpp:44
 #, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
-msgstr ""
+msgstr "מוען"
 
 #: collectionpage/collectionviewwidget.cpp:45
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
-msgstr ""
+msgstr "נמען"
 
 #: collectionpage/collectionviewwidget.cpp:46
 #, kde-format
 msgid "Sho&w column:"
-msgstr ""
+msgstr "הצגת &עמודה:"
 
 #: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
 msgid "Message format:"
-msgstr ""
+msgstr "תבנית הודעה:"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
-msgstr ""
+msgstr "בחירת חשבון"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:39
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
-msgstr ""
+msgstr "חשבון סינון חסר. נא לבחור חשבון לשימוש עם המסנן „%1”"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:40
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
-msgstr ""
+msgstr "בחירת תיקייה"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:43
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
-msgstr ""
+msgstr "נתיב התיקייה היה „%1”."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:48
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
-msgstr ""
+msgstr "אפשר להשתמש בתיקיות הבאות למסנן הזה:"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:69
 #, kde-format
 msgid "Please select a folder:"
-msgstr ""
+msgstr "נא לבחור תיקייה:"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:72
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
-msgstr ""
+msgstr "תיקיית סינון חסרה. נא לבחור תיקייה לשימוש עם המסנן „%1”:"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
-msgstr ""
+msgstr "בחירת זהות"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:38
 #, kde-format
 msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
 "\"%1\""
-msgstr ""
+msgstr "זהות סינון חסרה. נא לבחור זהות לשימוש עם המסנן „%1”"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
-msgstr ""
+msgstr "בחירת צליל"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
-msgstr ""
+msgstr "קובץ הצליל היה „%1”."
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
-msgstr ""
+msgstr "קובץ הצליל חסר. נא לבחור קובץ לשימוש עם המסנן „%1”."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
-msgstr ""
+msgstr "בחירת תגית"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
-msgstr ""
+msgstr "התגית הייתה „%1”."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:47
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
-msgstr ""
+msgstr "תגית סינון חסרה. נא לבחור תגית לשימוש עם המסנן „%1”"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
 msgid "Add Tag…"
-msgstr ""
+msgstr "הוספת תגית…"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
-msgstr ""
+msgstr "בחירת תבנית"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:38
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
 "\"%1\""
-msgstr ""
+msgstr "תבנית סינון חסרה. נא לבחור תבנית לשימוש עם המסנן „%1”"
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
-msgstr ""
+msgstr "בחירת תעבורה"
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:37
 #, kde-format
 msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
 "\"%1\""
-msgstr ""
+msgstr "תעבורת סינון חסרה. נא לבחור תעבורה לשימוש עם המסנן „%1”"
 
 #: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
-msgstr ""
+msgstr "בחירת קובצי סינון של thunderbird"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:33
 #, kde-format
 msgid " (default)"
-msgstr ""
+msgstr " (ברירת מחדל)"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:118
 #, kde-format
 msgid "Thunderbird File (*.dat)"
-msgstr ""
+msgstr "קובץ Thunderbird‏ (‎*.dat)"
 
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
 msgid "### \"action '%1' not supported\""
-msgstr ""
+msgstr "### „הפעולה ‚%1’ אינה נתמכת”"
 
 #: filter/filteractions/filteractionaddheader.cpp:22
 #, kde-format
 msgid "Add Header"
-msgstr ""
+msgstr "הוספת כותרת"
 
 #: filter/filteractions/filteractionaddheader.cpp:77
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
-msgstr ""
+msgstr "עם הערך:"
 
 #: filter/filteractions/filteractionaddheader.cpp:203
 #, kde-format
 msgid "The header name was missing."
-msgstr ""
+msgstr "שם הכותרת היה חסר."
 
 #: filter/filteractions/filteractionaddheader.cpp:209
 #, kde-format
 msgid "The header value was missing."
-msgstr ""
+msgstr "ערך הכותרת היה חסר."
 
 #: filter/filteractions/filteractionaddtag.cpp:26
 #, kde-format
 msgid "Add Tag"
-msgstr ""
+msgstr "הוספת תגית"
 
 #: filter/filteractions/filteractionaddtag.cpp:151
 #, kde-format
 msgid "No tag selected."
-msgstr ""
+msgstr "לא נבחרה תגית."
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:33
 #, kde-format
 msgid "Add to Address Book"
-msgstr ""
+msgstr "הוספה לפנקס כתובות"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:34
 #, kde-format
 msgctxt "Email sender"
 msgid "From"
-msgstr ""
+msgstr "מאת"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:35
 #, kde-format
 msgctxt "Email recipient"
 msgid "To"
-msgstr ""
+msgstr "אל"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:36
 #: search/searchpatternedit.cpp:52
 #, kde-format
 msgid "CC"
-msgstr ""
+msgstr "עותק"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:37
 #, kde-format
 msgid "BCC"
-msgstr ""
+msgstr "עותק סמוי"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:40
 #, kde-format
 msgid "KMail Filter"
-msgstr ""
+msgstr "מסנן KMail"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:117
 #, kde-format
@@ -506,29 +508,29 @@ msgstr ""
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:287
 #, kde-format
 msgid "Header type selected is unknown."
-msgstr ""
+msgstr "סוג הכותרת שנבחר לא ידוע."
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:293
 #, kde-format
 msgid "No addressbook selected."
-msgstr ""
+msgstr "לא נבחר פנקס כתובות."
 
 #: filter/filteractions/filteractioncopy.cpp:19
 #, kde-format
 msgid "Copy Into Folder"
-msgstr ""
+msgstr "העתקה לתוך תיקייה"
 
 #: filter/filteractions/filteractioncopy.cpp:68
 #: filter/filteractions/filteractionmove.cpp:66
 #, kde-format
 msgid "Folder destination was not defined."
-msgstr ""
+msgstr "יעד התיקייה לא הוגדר."
 
 #: filter/filteractions/filteractiondecrypt.cpp:27
 #: filter/filteractions/filteractiondecrypt.cpp:40
 #, kde-format
 msgid "Decrypt"
-msgstr ""
+msgstr "פענוח"
 
 #: filter/filteractions/filteractiondecrypt.cpp:95
 #, kde-format
@@ -545,32 +547,32 @@ msgstr ""
 #: filter/filteractions/filteractiondelete.cpp:18
 #, kde-format
 msgid "Delete Message"
-msgstr ""
+msgstr "מחיקת הודעה"
 
 #: filter/filteractions/filteractiondelete.cpp:41
 #, kde-format
 msgid "Be careful, mails will be removed."
-msgstr ""
+msgstr "כדאי להיזהר, הודעות תוסרנה."
 
 #: filter/filteractions/filteractionencrypt.cpp:46
 #, kde-format
 msgid "Encrypt"
-msgstr ""
+msgstr "הצפנה"
 
 #: filter/filteractions/filteractionencrypt.cpp:213
 #, kde-format
 msgid "No encryption key has been selected"
-msgstr ""
+msgstr "לא נבחר מפתח הצפנה"
 
 #: filter/filteractions/filteractionencrypt.cpp:249
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
-msgstr ""
+msgstr "להצפין את ההודעות המוצפנות מחדש עם המפתח הזה"
 
 #: filter/filteractions/filteractionencrypt.cpp:259
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
-msgstr ""
+msgstr "<b>אזהרה:</b> מפתח האבטחה הכרחי לקריאת הודעות."
 
 #: filter/filteractions/filteractionencrypt.cpp:261
 #, kde-format
@@ -584,29 +586,29 @@ msgstr ""
 #: filter/filteractions/filteractionexec.cpp:15
 #, kde-format
 msgid "Execute Command"
-msgstr ""
+msgstr "הרצת פקודה"
 
 #: filter/filteractions/filteractionexec.cpp:36
 #, kde-format
 msgid "Missing command."
-msgstr ""
+msgstr "פקודה חסרה."
 
 #: filter/filteractions/filteractionforward.cpp:37
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
-msgstr ""
+msgstr "העברה אל"
 
 #: filter/filteractions/filteractionforward.cpp:93
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
-msgstr ""
+msgstr "הנמען או הנמענת שאליהם תועבר ההודעה."
 
 #: filter/filteractions/filteractionforward.cpp:94
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
-msgstr ""
+msgstr "המסנן יעביר את ההודעה לנמען שנבחר כאן."
 
 #: filter/filteractions/filteractionforward.cpp:101
 #: filter/filteractions/filteractionforward.cpp:200
@@ -660,64 +662,64 @@ msgstr ""
 #: filter/filteractions/filteractionplaysound.cpp:22
 #, kde-format
 msgid "Play Sound"
-msgstr ""
+msgstr "השמעת צליל"
 
 #: filter/filteractions/filteractionplaysound.cpp:78
 #, kde-format
 msgid "Sound file was not defined."
-msgstr ""
+msgstr "לא הוגדר קובץ צליל."
 
 #: filter/filteractions/filteractionredirect.cpp:27
 #, kde-format
 msgid "Redirect To"
-msgstr ""
+msgstr "הפנייה אל"
 
 #: filter/filteractions/filteractionredirect.cpp:71
 #, kde-format
 msgid "Email address was missing."
-msgstr ""
+msgstr "כתובת הדוא״ל הייתה חסרה."
 
 #: filter/filteractions/filteractionremoveheader.cpp:22
 #, kde-format
 msgid "Remove Header"
-msgstr ""
+msgstr "הסרת כותרת"
 
 #: filter/filteractions/filteractionremoveheader.cpp:96
 #, kde-format
 msgid "Header name undefined."
-msgstr ""
+msgstr "שם הכותרת לא מוגדר."
 
 #: filter/filteractions/filteractionreplyto.cpp:20
 #, kde-format
 msgid "Set Reply-To To"
-msgstr ""
+msgstr "הגדרת כתובת תגובה אל לכדי"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:26
 #, kde-format
 msgid "Rewrite Header"
-msgstr ""
+msgstr "שכתוב כותרת"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:43
 #, kde-format
 msgid "Header not defined"
-msgstr ""
+msgstr "כותרת לא מוגדרת"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:49
 #, kde-format
 msgid "Search string is empty."
-msgstr ""
+msgstr "מחרוזת החיפוש ריקה."
 
 #: filter/filteractions/filteractionrewriteheader.cpp:111
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
-msgstr ""
+msgstr "החלפה:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:122
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
-msgstr "עם:"
+msgstr "ב־:"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:29
 #, kde-format
@@ -728,7 +730,7 @@ msgstr ""
 #, kde-format
 msgctxt "MDN type"
 msgid "Ignore"
-msgstr ""
+msgstr "התעלמות"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:35
 #, kde-format
@@ -943,43 +945,43 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
-msgstr ""
+msgstr "ייבוא מסננים של KMail"
 
 #: filter/filterimporterexporter.cpp:146
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
-msgstr ""
+msgstr "ייבוא מסננים של Evolution"
 
 #: filter/filterimporterexporter.cpp:150
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
-msgstr ""
+msgstr "ייבוא מסננים של Sylpheed"
 
 #: filter/filterimporterexporter.cpp:154
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
-msgstr ""
+msgstr "ייבוא מסננים של Procmail"
 
 #: filter/filterimporterexporter.cpp:158
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
-msgstr ""
+msgstr "ייבוא מסננים של Balsa"
 
 #: filter/filterimporterexporter.cpp:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
-msgstr ""
+msgstr "ייבוא מסננים של Claws Mail"
 
 #: filter/filterimporterexporter.cpp:166
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
-msgstr ""
+msgstr "ייבוא מסננים של Gmail"
 
 #: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
 #: filter/filterimporterexporter.cpp:236
@@ -988,48 +990,49 @@ msgid ""
 "The selected file is not readable. Your file access permissions might be "
 "insufficient."
 msgstr ""
+"הקובץ הנבחר אינו קריא. יכול להיות שהרשאות הגישה שלך לקובץ אינן מספיקות."
 
 #: filter/filterimporterexporter.cpp:316
 #, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
-msgstr ""
+msgstr "ייצוא מסננים"
 
 #: filter/filterselectiondialog.cpp:29
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr ""
+msgstr "בחירה בהכול"
 
 #: filter/filterselectiondialog.cpp:30
 #, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
-msgstr ""
+msgstr "ביטול בחירה"
 
 #: filter/filterselectiondialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
-msgstr ""
+msgstr "בחירת מסננים"
 
 #: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:53
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
-msgstr ""
+msgstr "חיפוש"
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
-msgstr ""
+msgstr "מסננים שגויים"
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:40
 #, kde-format
 msgid "Discard"
-msgstr ""
+msgstr "התעלמות"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
 #, kde-format
@@ -1042,93 +1045,93 @@ msgstr ""
 #: filter/kmfilteraccountlist.cpp:24
 #, kde-format
 msgid "Account Name"
-msgstr ""
+msgstr "שם חשבון"
 
 #: filter/kmfilteraccountlist.cpp:24
 #, kde-format
 msgid "Type"
-msgstr ""
+msgstr "סוג"
 
 #: filter/kmfilterdialog.cpp:72
 #, kde-format
 msgctxt "@title:window"
 msgid "Filter Rules"
-msgstr ""
+msgstr "כללי סינון"
 
 #: filter/kmfilterdialog.cpp:90
 #, kde-format
 msgid "Import…"
-msgstr ""
+msgstr "ייבוא…"
 
 #: filter/kmfilterdialog.cpp:92
 #, kde-format
 msgid "Export…"
-msgstr ""
+msgstr "ייצוא…"
 
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
 msgid "Convert to…"
-msgstr ""
+msgstr "המרה אל…"
 
 #: filter/kmfilterdialog.cpp:98
 #, kde-format
 msgctxt "@action"
 msgid "KMail filters"
-msgstr ""
+msgstr "מסננים של KMail"
 
 #: filter/kmfilterdialog.cpp:102
 #, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
-msgstr ""
+msgstr "מסננים של Thunderbird"
 
 #: filter/kmfilterdialog.cpp:106
 #, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
-msgstr ""
+msgstr "מסננים של Evolution"
 
 #: filter/kmfilterdialog.cpp:110
 #, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
-msgstr ""
+msgstr "מסננים של Sylpheed"
 
 #: filter/kmfilterdialog.cpp:114
 #, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
-msgstr ""
+msgstr "מסננים של Procmail"
 
 #: filter/kmfilterdialog.cpp:118
 #, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
-msgstr ""
+msgstr "מסננים של Balsa"
 
 #: filter/kmfilterdialog.cpp:122
 #, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
-msgstr ""
+msgstr "מסננים של Claws Mail"
 
 #: filter/kmfilterdialog.cpp:126
 #, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
-msgstr ""
+msgstr "מסננים של Icedove Mail"
 
 #: filter/kmfilterdialog.cpp:132
 #, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
-msgstr ""
+msgstr "מסננים של Gmail"
 
 #: filter/kmfilterdialog.cpp:140
 #, kde-format
 msgctxt "@action"
 msgid "Sieve script"
-msgstr ""
+msgstr "סקריפט Sieve"
 
 #: filter/kmfilterdialog.cpp:162
 #, kde-format
@@ -1231,53 +1234,53 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
-msgstr ""
+msgstr "אם המסנן הזה &לוכד משהו, להפסיק את העיבוד כאן"
 
 #: filter/kmfilterdialog.cpp:248
 #, kde-format
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
-msgstr ""
+msgstr "להוסיף את המסנן הזה לתפריט החלת מסנן"
 
 #: filter/kmfilterdialog.cpp:266
 #, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
-msgstr ""
+msgstr "להוסיף את המסנן הזה לסרגל הכלים כרשות"
 
 #: filter/kmfilterdialog.cpp:277
 #, kde-format
 msgid "Shortcut:"
-msgstr ""
+msgstr "קיצור דרך:"
 
 #: filter/kmfilterdialog.cpp:283
 #, kde-format
 msgid "Icon for this filter:"
-msgstr ""
+msgstr "סמל של המסנן הזה:"
 
 #: filter/kmfilterdialog.cpp:291
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
-msgstr ""
+msgstr "הרצת המסננים הנבחרים על:"
 
 #: filter/kmfilterdialog.cpp:297
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
-msgstr ""
+msgstr "להריץ כעת"
 
 #: filter/kmfilterdialog.cpp:424
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
-msgstr ""
+msgstr "לא ניתן להחיל את המסנן הזה מאחר שלא נבחרו תיקיות."
 
 #: filter/kmfilterdialog.cpp:425
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
-msgstr ""
+msgstr "לא נבחרה תיקייה."
 
 #: filter/kmfilterdialog.cpp:432
 #, kde-format
@@ -1286,34 +1289,36 @@ msgid ""
 "Some filters were changed and not saved yet. You must save your filters "
 "before they can be applied."
 msgstr ""
+"חלק מהמסננים השתנו ולא נשמרו עדיין. יש לשמור את המסננים לפני שאפשר יהיה "
+"להחיל אותם."
 
 #: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:716
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
-msgstr ""
+msgstr "המסננים נערכו."
 
 #: filter/kmfilterdialog.cpp:441
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
-msgstr ""
+msgstr "לא ניתן להחיל מסנן מאחר שלא נבחרו מסננים."
 
 #: filter/kmfilterdialog.cpp:442
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
-msgstr ""
+msgstr "לא נבחרו מסננים."
 
 #: filter/kmfilterdialog.cpp:666
 #, kde-format
 msgid "No filter was imported."
-msgstr ""
+msgstr "לא יובאו מסננים."
 
 #: filter/kmfilterdialog.cpp:677
 #, kde-format
 msgid "Filters which were imported:"
-msgstr ""
+msgstr "מסננים שיובאו:"
 
 #: filter/kmfilterdialog.cpp:685
 #, kde-format
@@ -1337,12 +1342,12 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
-msgstr ""
+msgstr "המרת מסנני KMail לסקריפטים מסוג sieve"
 
 #: filter/kmfilterdialog.cpp:737
 #, kde-format
 msgid "No filters selected."
-msgstr ""
+msgstr "לא נבחרו מסננים."
 
 #: filter/kmfilterlistbox.cpp:43
 #, kde-format
@@ -1356,25 +1361,25 @@ msgstr ""
 #, kde-format
 msgctxt "Move selected filter up."
 msgid "Up"
-msgstr ""
+msgstr "למעלה"
 
 #: filter/kmfilterlistbox.cpp:86
 #, kde-format
 msgctxt "Move selected filter down."
 msgid "Down"
-msgstr ""
+msgstr "למטה"
 
 #: filter/kmfilterlistbox.cpp:87
 #, kde-format
 msgctxt "Move selected filter to the top."
 msgid "Top"
-msgstr ""
+msgstr "עליון"
 
 #: filter/kmfilterlistbox.cpp:88
 #, kde-format
 msgctxt "Move selected filter to the bottom."
 msgid "Bottom"
-msgstr ""
+msgstr "תחתון"
 
 #: filter/kmfilterlistbox.cpp:90
 #, kde-format
@@ -1420,25 +1425,25 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button in filter list manipulator"
 msgid "New"
-msgstr ""
+msgstr "חדש"
 
 #: filter/kmfilterlistbox.cpp:143
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
-msgstr ""
+msgstr "העתקה"
 
 #: filter/kmfilterlistbox.cpp:144
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
-msgstr ""
+msgstr "מחיקה"
 
 #: filter/kmfilterlistbox.cpp:145
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
-msgstr ""
+msgstr "שינוי שם"
 
 #: filter/kmfilterlistbox.cpp:147
 #, kde-format
@@ -1479,34 +1484,34 @@ msgstr ""
 #: filter/kmfilterlistbox.cpp:292
 #, kde-format
 msgid "unnamed"
-msgstr ""
+msgstr "ללא שם"
 
 #: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
-msgstr ""
+msgstr "להסיר את המסנן „%1”?"
 
 #: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Do you want to remove selected filters?"
-msgstr ""
+msgstr "להסיר את המסננים הנבחרים?"
 
 #: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
-msgstr ""
+msgstr "הסרת מסנן"
 
 #: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
-msgstr ""
+msgstr "הסרת מסננים"
 
 #: filter/kmfilterlistbox.cpp:663
 #, kde-format
 msgid "Rename Filter"
-msgstr ""
+msgstr "שינוי שם מסנן"
 
 #: filter/kmfilterlistbox.cpp:664
 #, kde-format
@@ -1514,11 +1519,13 @@ msgid ""
 "Rename filter \"%1\" to:\n"
 "(leave the field empty for automatic naming)"
 msgstr ""
+"שינוי שם המסנן „%1” לשם:\n"
+"(להשאיר את השדה ריק למתן שם אוטומטית)"
 
 #: filter/mailfilter.cpp:132
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
-msgstr ""
+msgstr "<b>החלת פעולת מסנן:</b> %1"
 
 #: filter/mailfilter.cpp:141
 #, kde-format
@@ -1981,38 +1988,38 @@ msgstr ""
 #, kde-format
 msgctxt "name used for a virgin filter"
 msgid "unknown"
-msgstr ""
+msgstr "לא ידוע"
 
 #: search/searchpattern.cpp:245
 #, kde-format
 msgid "(match any of the following)"
-msgstr ""
+msgstr "(ללכוד אחד מהבאים)"
 
 #: search/searchpattern.cpp:248
 #, kde-format
 msgid "(match all of the following)"
-msgstr ""
+msgstr "(ללכוד את כל הבאים)"
 
 #: search/searchpattern.cpp:251
 #, kde-format
 msgid "(match all messages)"
-msgstr ""
+msgstr "(ללכוד את כל ההודעות)"
 
 #: search/searchpatternedit.cpp:41
 msgid "Complete Message"
-msgstr ""
+msgstr "הודעה מלאה"
 
 #: search/searchpatternedit.cpp:42
 msgid "Body of Message"
-msgstr ""
+msgstr "גוף ההודעה"
 
 #: search/searchpatternedit.cpp:43
 msgid "Anywhere in Headers"
-msgstr ""
+msgstr "איפשהו בין הכותרות"
 
 #: search/searchpatternedit.cpp:44
 msgid "All Recipients"
-msgstr ""
+msgstr "כל הנמענים"
 
 #: search/searchpatternedit.cpp:45
 msgid "Size in Bytes"
@@ -2082,19 +2089,19 @@ msgstr "נא לבחור או להקליד קטגוריה משלך"
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
-msgstr ""
+msgstr "ללכוד את כל ה&באים"
 
 #: search/searchpatternedit.cpp:585
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
-msgstr ""
+msgstr "ללכוד &אחד מהבאים"
 
 #: search/searchpatternedit.cpp:587
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match all messages"
-msgstr ""
+msgstr "ללכוד את כל ההודעות"
 
 #: search/searchpatternedit.cpp:598
 #, kde-format
@@ -2550,7 +2557,7 @@ msgstr "יש צרופה"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
-msgstr ""
+msgstr "יש ללחוץ על הכפתור לבחירת קובץ מצורף"
 
 #: snippets/snippetattachmentwidget.cpp:34
 #, kde-format
@@ -2567,7 +2574,7 @@ msgstr "…"
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
-msgstr ""
+msgstr "התאמת צירוף שם קובץ"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
 #, kde-format
