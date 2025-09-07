@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-25 00:44+0000\n"
-"PO-Revision-Date: 2025-09-04 14:51+0300\n"
+"PO-Revision-Date: 2025-09-06 11:13+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -135,12 +135,14 @@ msgid ""
 "You have configured this folder to contain groupware information. That means "
 "that this folder will disappear once the configuration dialog is closed."
 msgstr ""
+"הגדרת את התיקייה הזאת כך שתכיל את פרטי התיאום הקבוצתי שלך. המשמעות היא "
+"שהתיקייה הזאת תיעלם לאחר סגירת חלונית ההגדרות."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
 #, kde-format
 msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
-msgstr ""
+msgstr "לפעול על הודעות חדשות/שלא נקראו בתיקייה הזאת"
 
 #: collectionpage/collectiongeneralwidget.cpp:27
 #, kde-format
@@ -188,7 +190,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Use &default identity"
-msgstr ""
+msgstr "להשתמש בזהות &ברירת המחדל"
 
 #: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
@@ -203,7 +205,7 @@ msgstr ""
 #: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
 msgid "&Sender identity:"
-msgstr ""
+msgstr "זהות ה&מוען:"
 
 #: collectionpage/collectiontemplateswidget.cpp:20
 #, kde-format
@@ -215,7 +217,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "&Copy Global Templates"
-msgstr ""
+msgstr "ה&עתקת תבניות מקיפות"
 
 #: collectionpage/collectionviewwidget.cpp:27
 #, kde-format
@@ -250,7 +252,7 @@ msgstr "להשתמש בהגדרות מקיפות"
 #: collectionpage/collectionviewwidget.cpp:40
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
-msgstr ""
+msgstr "להציג עמודת מוען/נמען ברשימת ההודעות"
 
 #: collectionpage/collectionviewwidget.cpp:43
 #, kde-format
@@ -489,13 +491,13 @@ msgstr "מסנן KMail"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
-msgstr ""
+msgstr "עם קטגוריה"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:124
 #, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
-msgstr ""
+msgstr "בפנקס הכתובות"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:134
 #, kde-format
@@ -504,6 +506,8 @@ msgid ""
 "If it is not accessible, the filter will fallback to the default address "
 "book."
 msgstr ""
+"מגדיר את פנקס הכתובות המועדף.\n"
+"אם אינו נגיש, המסנן יחזור לפנקס הכתובות כברירת המחדל."
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:286
 #, kde-format
@@ -535,7 +539,7 @@ msgstr "פענוח"
 #: filter/filteractions/filteractiondecrypt.cpp:95
 #, kde-format
 msgid "<b>Warning:</b> Decrypted emails may be uploaded to a server!"
-msgstr ""
+msgstr "<b>אזהרה:</b> הודעות שההצפנה שלהם פוענחה עלולות להישלח לשרת!"
 
 #: filter/filteractions/filteractiondecrypt.cpp:97
 #, kde-format
@@ -543,6 +547,8 @@ msgid ""
 "<p>If the email folder that you are filtering into is connected to a remote "
 "account (like an IMAP-Server) the decrypted content will go there.</p>"
 msgstr ""
+"<p>אם תיקיית הדוא״ל שאליה מתבצע הסינון מחוברת לחשבון חיצוני (כגון שרת IMAP) "
+"התוכן שהצפנתו פוענחה יזלוג לשם.</p>"
 
 #: filter/filteractions/filteractiondelete.cpp:18
 #, kde-format
@@ -614,50 +620,50 @@ msgstr "המסנן יעביר את ההודעה לנמען שנבחר כאן."
 #: filter/filteractions/filteractionforward.cpp:198
 #, kde-format
 msgid "Default Template"
-msgstr ""
+msgstr "תבנית ברירת מחדל"
 
 #: filter/filteractions/filteractionforward.cpp:110
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
-msgstr ""
+msgstr "התבנית לשימוש להעברה"
 
 #: filter/filteractions/filteractionforward.cpp:111
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
-msgstr ""
+msgstr "להגדיר את תבנית ההעברה שבה ישתמש המסנן הזה."
 
 #: filter/filteractions/filteractionforward.cpp:226
 #, kde-format
 msgid "Forward to %1 with default template"
-msgstr ""
+msgstr "העברה אל %1 עם תבנית ברירת המחדל"
 
 #: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
 msgid "Forward to %1 with template %2"
-msgstr ""
+msgstr "העברה אל %1 עם התבנית %2"
 
 #: filter/filteractions/filteractionforward.cpp:234
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."
-msgstr ""
+msgstr "כתובת הדוא״ל לא הוגדרה."
 
 #: filter/filteractions/filteractionmove.cpp:23
 #, kde-format
 msgid "Move Into Folder"
-msgstr ""
+msgstr "העברה לתוך תיקייה"
 
 #: filter/filteractions/filteractionpipethrough.cpp:20
 #, kde-format
 msgctxt "pipe through with command"
 msgid "Pipe Through"
-msgstr ""
+msgstr "לשרשר לפקודה"
 
 #: filter/filteractions/filteractionpipethrough.cpp:36
 #, kde-format
 msgid "No action defined."
-msgstr ""
+msgstr "לא הוגדרה פעולה."
 
 #: filter/filteractions/filteractionplaysound.cpp:22
 #, kde-format
@@ -786,40 +792,40 @@ msgstr "הגדרת הזהות לכדי"
 #: filter/filteractions/filteractionsetstatus.cpp:20
 #, kde-format
 msgid "Mark As"
-msgstr ""
+msgstr "סימון בתור"
 
 #: filter/filteractions/filteractionsetstatus.cpp:32
 #, kde-format
 msgid "Status not specified."
-msgstr ""
+msgstr "לא צוין מצב."
 
 #: filter/filteractions/filteractionsettransport.cpp:36
 #, kde-format
 msgid "Set Transport To"
-msgstr ""
+msgstr "הגדרת התעבורה לכדי"
 
 #: filter/filteractions/filteractionsettransport.cpp:142
 #, kde-format
 msgid "Mail transport not defined."
-msgstr ""
+msgstr "תעבורת דוא״ל לא מוגדרת."
 
 #: filter/filteractions/filteractionstatus.cpp:31
 #, kde-format
 msgctxt "msg status"
 msgid "Important"
-msgstr ""
+msgstr "חשובה"
 
 #: filter/filteractions/filteractionstatus.cpp:32
 #, kde-format
 msgctxt "msg status"
 msgid "Read"
-msgstr ""
+msgstr "נקראה"
 
 #: filter/filteractions/filteractionstatus.cpp:33
 #, kde-format
 msgctxt "msg status"
 msgid "Unread"
-msgstr ""
+msgstr "לא נקראה"
 
 #: filter/filteractions/filteractionstatus.cpp:34
 #, kde-format
@@ -894,7 +900,7 @@ msgstr "עזרה"
 #: filter/filteractions/filteractionwithurl.cpp:64
 #, kde-format
 msgid "You can get specific header when you use %{headername}."
-msgstr ""
+msgstr "אפשר לקבל כותרת מסוימת כשמשתמשים ב־%{headername}."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
 #, kde-format
@@ -922,17 +928,17 @@ msgstr "קובצי Sieve‏ (‎*.siv);;כל הקבצים (*)"
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
-msgstr ""
+msgstr "המרה לסקריפט Sieve"
 
 #: filter/filterimporter/filterimportergmail.cpp:48
 #, kde-format
 msgid "Gmail filter %1"
-msgstr ""
+msgstr "מסנן Gmail‏ %1"
 
 #: filter/filterimporter/filterimporterprocmail.cpp:52
 #, kde-format
 msgid "Procmail filter %1"
-msgstr ""
+msgstr "מסנן Procmail‏ %1"
 
 #: filter/filterimporterexporter.cpp:112
 #, kde-format
@@ -940,6 +946,8 @@ msgid ""
 "The following filters have not been saved because they were invalid (e.g. "
 "containing no actions or no search rules)."
 msgstr ""
+"המסננים הבאים לא נשמרו כי הם נמצאו שגויים (למשל: לא מכילים פעולות או כללי "
+"חיפוש)."
 
 #: filter/filterimporterexporter.cpp:138
 #, kde-format
@@ -1041,6 +1049,8 @@ msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
 msgstr ""
+"המסננים הבאים שגויים (למשל: לא מכילים פעולות או כללי חיפוש). להתעלם מהם או "
+"לערוך את המסננים השגויים?"
 
 #: filter/kmfilteraccountlist.cpp:24
 #, kde-format
@@ -1136,55 +1146,55 @@ msgstr "סקריפט Sieve"
 #: filter/kmfilterdialog.cpp:162
 #, kde-format
 msgid "Available Filters"
-msgstr ""
+msgstr "מסננים זמינים"
 
 #: filter/kmfilterdialog.cpp:168
 #, kde-format
 msgctxt "General mail filter settings."
 msgid "General"
-msgstr ""
+msgstr "כללי"
 
 #: filter/kmfilterdialog.cpp:172
 #, kde-format
 msgctxt "Advanced mail filter settings."
 msgid "Advanced"
-msgstr ""
+msgstr "מתקדם"
 
 #: filter/kmfilterdialog.cpp:182
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Filter actions:"
-msgstr ""
+msgstr "פעולות סינון:"
 
 #: filter/kmfilterdialog.cpp:193
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
-msgstr ""
+msgstr "להחיל את המסנן הזה על הודעות נכנסות:"
 
 #: filter/kmfilterdialog.cpp:203
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all accounts"
-msgstr ""
+msgstr "מכל החשבונות"
 
 #: filter/kmfilterdialog.cpp:207
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
-msgstr ""
+msgstr "מכל חשבונות ה־IMAP המקוונים"
 
 #: filter/kmfilterdialog.cpp:211
 #, kde-format
 msgctxt "@option:radio"
 msgid "From selected accounts only"
-msgstr ""
+msgstr "מחשבונות מסוימים בלבד"
 
 #: filter/kmfilterdialog.cpp:219
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
-msgstr ""
+msgstr "להחיל את המסנן הזה על הודעות ש&נשלחו"
 
 #: filter/kmfilterdialog.cpp:221
 #, kde-format
@@ -1194,12 +1204,15 @@ msgid ""
 "also needs to be modified, please use \"Apply this filter <b>before</b> "
 "sending messages\".</p>"
 msgstr ""
+"<p>המסנן יוזנק <b>אחרי</b> שההודעה נשלחה והיא תשפיע רק על העותק המקומי של "
+"ההודעה.</p><p>אם צריך לשנות גם את העותק של הנמען או הנמענת, נא להשתמש ב„החלת "
+"המסנן הזה <b>לפני</b> שליחת הודעות”.</p>"
 
 #: filter/kmfilterdialog.cpp:227
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
-msgstr ""
+msgstr "החלת המסנן הזה &לפני שליחת הודעות"
 
 #: filter/kmfilterdialog.cpp:229
 #, kde-format
@@ -1208,18 +1221,21 @@ msgid ""
 "will affect both the local copy and the sent copy of the message.</p><p>This "
 "is required if the recipient's copy also needs to be modified.</p>"
 msgstr ""
+"<p>המסנן יוזנק <b>לפני</b> שליחת ההודעה והוא ישפיע גם על העותק המקומי וגם על "
+"העותק של ההודעה שנשלח.</p><p>נחוץ אם צריך לשנות גם את העותק שמגיע לנמען או "
+"הנמענת.</p>"
 
 #: filter/kmfilterdialog.cpp:234
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
-msgstr ""
+msgstr "החלת המסנן הזה על סינון י&דני"
 
 #: filter/kmfilterdialog.cpp:237
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
-msgstr ""
+msgstr "החלת המסנן הזה על הודעות דוא״ל נכנסות בכל התיקיות"
 
 #: filter/kmfilterdialog.cpp:239
 #, kde-format
@@ -1332,11 +1348,15 @@ msgid ""
 "Some filters were changed and not saved yet.<br>You must save your filters "
 "before they can be exported."
 msgstr ""
+"חלק מהמסננים השתנו ולא נשמרו עדיין.<br> יש לשמור את המסננים לפני שאפשר יהיה "
+"לייצא אותם."
 
 #: filter/kmfilterdialog.cpp:720
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
+"אנחנו לא יכולים להמיר את כל מסנני KMail לסקריפטים מסוג sieve אבל נוכל "
+"לנסות :)"
 
 #: filter/kmfilterdialog.cpp:721 filter/kmfilterdialog.cpp:737
 #, kde-format
@@ -1530,17 +1550,17 @@ msgstr "<b>החלת פעולת מסנן:</b> %1"
 #: filter/mailfilter.cpp:140
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
-msgstr ""
+msgstr "אירעה שגיאה חמורה. כאן נעצר העיבוד."
 
 #: filter/mailfilter.cpp:147
 #, kde-format
 msgid "A problem was found while applying this action."
-msgstr ""
+msgstr "נמצאה בעיה עם החלת הפעולה הזאת."
 
 #: filter/mailfilter.cpp:427
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
-msgstr ""
+msgstr "<qt>יותר מדי פעולות סינון בכלל הסינון <b>%1</b>.</qt>"
 
 #: filter/mailfilter.cpp:461
 #, kde-format
@@ -1548,152 +1568,154 @@ msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
 ">Ignoring it.</qt>"
 msgstr ""
+"<qt>פעולת המסנן <b>%1</b> אינה ידועה<br />בכלל הסינון <b>%2</b>.<br />היא לא "
+"תבוצע.</qt>"
 
 #: filter/mailfilter.cpp:569
 #, kde-format
 msgid "Any action defined."
-msgstr ""
+msgstr "לא הוגדרה פעולה."
 
 #: filter/soundtestwidget.cpp:35 filter/soundtestwidget.cpp:117
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
-msgstr ""
+msgstr "נגינה"
 
 #: filter/soundtestwidget.cpp:64
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Sound File"
-msgstr ""
+msgstr "נא לבחור קובץ צליל"
 
 #: filter/soundtestwidget.cpp:114
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
-msgstr ""
+msgstr "השהיה"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: filter/ui/filterconfigwidget.ui:19
 #, kde-format
 msgid "Name:"
-msgstr ""
+msgstr "שם:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: filter/ui/filterconfigwidget.ui:45
 #, kde-format
 msgid "Criteria"
-msgstr ""
+msgstr "תנאים"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: filter/ui/filterconfigwidget.ui:87
 #, kde-format
 msgid "Actions"
-msgstr ""
+msgstr "פעולות"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: filter/ui/filterconfigwidget.ui:129
 #, kde-format
 msgid "Apply options"
-msgstr ""
+msgstr "אפשרויות החלה"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyToIncomingCB)
 #: filter/ui/filterconfigwidget.ui:138
 #, kde-format
 msgid "Apply to incoming messages"
-msgstr ""
+msgstr "החלה על הודעות נכנסות"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyToSentCB)
 #: filter/ui/filterconfigwidget.ui:145
 #, kde-format
 msgid "Apply to sent messages"
-msgstr ""
+msgstr "החלה על הודעות שנשלחו"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyBeforeSendCB)
 #: filter/ui/filterconfigwidget.ui:152
 #, kde-format
 msgid "Apply before sending messages"
-msgstr ""
+msgstr "החלה לפני שליחת הודעות"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyManuallyCB)
 #: filter/ui/filterconfigwidget.ui:159
 #, kde-format
 msgid "Apply on manual filtering"
-msgstr ""
+msgstr "החלה על סינון ידני"
 
 #. i18n: ectx: property (text), widget (QCheckBox, stopIfMatchesCB)
 #: filter/ui/filterconfigwidget.ui:169
 #, kde-format
 msgid "Stop processing if matches"
-msgstr ""
+msgstr "להפסיק לעבד אם הייתה לכידה"
 
 #. i18n: ectx: property (text), widget (QRadioButton, selectFile)
 #: filter/ui/selectthunderbirdfilterfileswidget.ui:29
 #, kde-format
 msgid "Select File:"
-msgstr ""
+msgstr "בחירת קובץ:"
 
 #. i18n: ectx: property (text), widget (QRadioButton, selectFromConfig)
 #: filter/ui/selectthunderbirdfilterfileswidget.ui:45
 #, kde-format
 msgid "Select file from config:"
-msgstr ""
+msgstr "בחירת קובץ מההגדרות:"
 
 #: folder/accountconfigorderdialog.cpp:57
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
-msgstr ""
+msgstr "עריכת סדר חשבונות"
 
 #: folder/accountconfigorderdialog.cpp:74
 #, kde-format
 msgctxt "@option:check"
 msgid "Use custom order"
-msgstr ""
+msgstr "סידור בהתאמה אישית"
 
 #: folder/accountconfigorderdialog.cpp:91
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
-msgstr ""
+msgstr "למעלה"
 
 #: folder/accountconfigorderdialog.cpp:99
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
-msgstr ""
+msgstr "למטה"
 
 #: folder/folderrequester.cpp:46
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
-msgstr ""
+msgstr "בחירת תיקייה"
 
 #: folder/folderrequester.cpp:117
 #, kde-format
 msgid "Local Folders"
-msgstr ""
+msgstr "תיקיות מקומיות"
 
 #: folder/folderrequester.cpp:127 folder/folderrequester.cpp:145
 #, kde-format
 msgid "Please select a folder"
-msgstr ""
+msgstr "נא לבחור תיקייה"
 
 #: folder/folderselectiondialog.cpp:65
 #, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
-msgstr ""
+msgstr "&תת־תיקייה חדשה…"
 
 #: folder/folderselectiondialog.cpp:67
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
-msgstr ""
+msgstr "ליצור תת־תיקייה תחת התיקייה הנבחרת"
 
 #: folder/folderselectiondialog.cpp:126
 #, kde-format
 msgid "&New Subfolder…"
-msgstr ""
+msgstr "&תת־תיקייה חדשה…"
 
 #: folder/folderselectiondialog.cpp:178
 #, kde-format
@@ -1772,157 +1794,157 @@ msgstr "<qt>לעבור להודעה הבאה שלא נקראה בתיקייה <b
 #, kde-format
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
-msgstr ""
+msgstr "מעבר לההודעה הבאה שלא נקראה"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
 msgctxt "@action:button"
 msgid "Go To"
-msgstr ""
+msgstr "לעבור אל"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
 #, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
-msgstr ""
+msgstr "לא לעבור אל"
 
 #: folder/foldertreewidget.cpp:78
 #, kde-format
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
-msgstr ""
+msgstr "אפשר להתחיל להקליד כדי לסנן את רשימת התיקיות."
 
 #: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "You can start typing to filter the list of folders."
-msgstr ""
+msgstr "אפשר להתחיל להקליד כדי לסנן את רשימת התיקיות."
 
 #: folder/foldertreewidget.cpp:312
 #, kde-format
 msgid "Path: (%1)"
-msgstr ""
+msgstr "נתיב: (%1)"
 
 #: folder/foldertreewidgetproxymodel.cpp:242
 #, kde-format
 msgid "%1 (Offline)"
-msgstr ""
+msgstr "%1 (מנותק)"
 
 #: folder/foldertreewidgetproxymodel.cpp:246
 #, kde-format
 msgid "%1 (Reached %2% quota)"
-msgstr ""
+msgstr "%1 (מילוי של %2% מהמכסה)"
 
 #: job/backupjob.cpp:94
 #, kde-format
 msgid "Unable to retrieve folder list."
-msgstr ""
+msgstr "לא ניתן למשוך את רשימת התיקיות."
 
 #: job/backupjob.cpp:121
 #, kde-format
 msgid "The operation was canceled by the user."
-msgstr ""
+msgstr "הפעולה בוטלה על ידי המשתמש."
 
 #: job/backupjob.cpp:151
 #, kde-format
 msgid "Failed to archive the folder '%1'."
-msgstr ""
+msgstr "העברת התיקייה ‚%1’ לארכיון נכשלה."
 
 #: job/backupjob.cpp:155
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
-msgstr ""
+msgstr "העברה לארכיון נכשלה"
 
 #: job/backupjob.cpp:165
 #, kde-format
 msgid "Unable to finalize the archive file."
-msgstr ""
+msgstr "לא ניתן להשלים את סגירת קובץ הארכיון."
 
 #: job/backupjob.cpp:170
 #, kde-format
 msgid "Archiving finished"
-msgstr ""
+msgstr "ההעברה לארכיון הסתיימה"
 
 #: job/backupjob.cpp:181
 #, kde-format
 msgid ""
 "Archiving folder '%1' successfully completed. The archive was written to the "
 "file '%2'."
-msgstr ""
+msgstr "העברת התיקייה ‚%1’ לארכיון הושלמה בהצלחה. הארכיון נכתב לקובץ ‚%2’."
 
 #: job/backupjob.cpp:187
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "הודעה בגודל %1 הועברה לארכיון."
+msgstr[1] "שתי הודעות בגודל כולל של %2 הועברו לארכיון."
+msgstr[2] "%1 הודעות בגודל כולל של %2 הועברו לארכיון."
+msgstr[3] "%1 הודעות בגודל כולל של %2 הועברו לארכיון."
 
 #: job/backupjob.cpp:191
 #, kde-format
 msgid "The archive file has a size of %1."
-msgstr ""
+msgstr "גודל קובץ הארכיון הוא %1."
 
 #: job/backupjob.cpp:193
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
-msgstr ""
+msgstr "ההעברה לארכיון נכשלה"
 
 #: job/backupjob.cpp:243
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
-msgstr ""
+msgstr "כתיבת הודעה לתיקיית הארכיון ‚%1’ נכשלה."
 
 #: job/backupjob.cpp:267
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
-msgstr ""
+msgstr "הורדת הודעה בתיקייה ‚%1’ נכשלה."
 
 #: job/backupjob.cpp:333
 #, kde-format
 msgid "Archiving folder %1"
-msgstr ""
+msgstr "התיקייה %1 מועברת לארכיון"
 
 #: job/backupjob.cpp:358
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
-msgstr ""
+msgstr "לא ניתן ליצור את מבנה התיקיות לתיקייה ‚%1’ בתוך קובץ הארכיון."
 
 #: job/backupjob.cpp:370
 #, kde-format
 msgid "Unable to get message list for folder %1."
-msgstr ""
+msgstr "לא ניתן למשוך את רשימת ההודעות לתיקייה %1."
 
 #: job/backupjob.cpp:408
 #, kde-format
 msgid "Unable to open archive for writing."
-msgstr ""
+msgstr "לא ניתן לפתוח את הארכיון לכתיבה."
 
 #: job/backupjob.cpp:412
 #, kde-format
 msgid "Archiving"
-msgstr ""
+msgstr "העברה לארכיון"
 
 #: job/expiredeletejob.cpp:66
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "הודעה ישנה הוסרה מהתיקייה %2."
+msgstr[1] "שתי הודעות ישנות הוסרו מהתיקייה %2."
+msgstr[2] "%1 הודעות ישנות הוסרו מהתיקייה %2."
+msgstr[3] "%1 הודעות ישנות הוסרו מהתיקייה %2."
 
 #: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
-msgstr ""
+msgstr "הסרת הודעות ישנות מהתיקייה %1 בוטלה."
 
 #: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
-msgstr ""
+msgstr "הסרת הודעות ישנות מהתיקייה %1 נכשלה."
 
 #: job/expirejob.cpp:157
 #, kde-format
@@ -1936,7 +1958,7 @@ msgstr[3] ""
 #: job/expirejob.cpp:164
 #, kde-format
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
-msgstr ""
+msgstr "לא ניתן להפיג הודעות מהתיקייה %1: תיקיית היעד %2 לא נמצאה"
 
 #: job/expirejob.cpp:180
 #, kde-format
@@ -1959,17 +1981,17 @@ msgstr[3] ""
 #: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
-msgstr ""
+msgstr "העברת הודעות ישנות מהתיקייה %1 לתיקייה %2 בוטלה."
 
 #: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
-msgstr ""
+msgstr "העברת הודעות ישנות מהתיקייה %1 לתיקייה %2 נכשלה."
 
 #: kernel/mailkernel.cpp:184 kernel/mailkernel.cpp:206
 #, kde-format
 msgid "You do not have read/write permission to your inbox folder."
-msgstr ""
+msgstr "אין לך הרשאה לקרוא/לכתוב לתיקיית הדוא״ל הנכנס שלך."
 
 #: kernel/mailkernel.cpp:235
 #, kde-format
