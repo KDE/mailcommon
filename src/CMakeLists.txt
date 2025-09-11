@@ -623,6 +623,24 @@ install(
     COMPONENT Devel
 )
 
+set(MAILCOMMON_INCLUDES_FILES
+    ${MailCommon_HEADERS}
+    ${MailCommon_top_HEADERS}
+    ${MailCommon_tag_HEADERS}
+    ${MailCommon_folder_HEADERS}
+    ${MailCommon_kernel_HEADERS}
+    ${MailCommon_interfaces_HEADERS}
+    ${MailCommon_filter_HEADERS}
+    ${MailCommon_job_HEADERS}
+    ${MailCommon_filteraction_HEADERS}
+    ${MailCommon_mdn_HEADERS}
+    ${MailCommon_collectionpage_HEADERS}
+    ${MailCommon_collectionpageattributes_HEADERS}
+    ${MailCommon_filterimporter_HEADERS}
+    ${MailCommon_snippets_HEADERS}
+    ${MailCommon_widgets_HEADERS}
+)
+
 install(
     FILES
         ${MailCommon_searchrule_HEADERS}
@@ -630,21 +648,7 @@ install(
         ${CMAKE_CURRENT_BINARY_DIR}/config-mailcommon.h
         ${CMAKE_CURRENT_BINARY_DIR}/pop3settings.h
         ${CMAKE_CURRENT_BINARY_DIR}/mailcommonsettings_base.h
-        ${MailCommon_HEADERS}
-        ${MailCommon_top_HEADERS}
-        ${MailCommon_tag_HEADERS}
-        ${MailCommon_folder_HEADERS}
-        ${MailCommon_kernel_HEADERS}
-        ${MailCommon_interfaces_HEADERS}
-        ${MailCommon_filter_HEADERS}
-        ${MailCommon_job_HEADERS}
-        ${MailCommon_filteraction_HEADERS}
-        ${MailCommon_mdn_HEADERS}
-        ${MailCommon_collectionpage_HEADERS}
-        ${MailCommon_collectionpageattributes_HEADERS}
-        ${MailCommon_filterimporter_HEADERS}
-        ${MailCommon_snippets_HEADERS}
-        ${MailCommon_widgets_HEADERS}
+        ${MAILCOMMON_INCLUDES_FILES}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailCommon/mailcommon
     COMPONENT Devel
 )
@@ -661,23 +665,7 @@ if(BUILD_QCH)
         VERSION ${PIM_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
-            ${MailCommon_HEADERS}
-            ${MailCommon_top_HEADERS}
-            ${MailCommon_tag_HEADERS}
-            ${MailCommon_folder_HEADERS}
-            ${MailCommon_kernel_HEADERS}
-            ${MailCommon_interfaces_HEADERS}
-            ${MailCommon_filter_HEADERS}
-            ${MailCommon_job_HEADERS}
-            ${MailCommon_filteraction_HEADERS}
-            ${MailCommon_mdn_HEADERS}
-            ${MailCommon_collectionpage_HEADERS}
-            ${MailCommon_collectionpageattributes_HEADERS}
-            ${MailCommon_filterimporter_HEADERS}
-            ${MailCommon_snippets_HEADERS}
-            ${MailCommon_widgets_HEADERS}
-        #MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
-        #IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
+        ${MAILCOMMON_INCLUDES_FILES}
         LINK_QCHS
             Qt6Core_QCH
             Qt6Gui_QCH
