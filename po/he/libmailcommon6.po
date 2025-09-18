@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-29 00:44+0000\n"
-"PO-Revision-Date: 2025-09-07 10:14+0300\n"
+"PO-Revision-Date: 2025-09-08 19:10+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -128,6 +128,9 @@ msgid ""
 "all users having access to this folder. If disabled (the default), every "
 "user with access to this folder has their own unread state."
 msgstr ""
+"אם האפשרות פעילה, המצב בו ההודעה לא נקראה יהיה זהה לכל המשתמשים שיש להם גישה "
+"לתיקייה הזאת. אם היא כבויה (ברירת המחדל), לכל משתמש ומשתמשת עם גישה לתיקייה "
+"הזאת יהיה מצב העדר קריאה עצמאי."
 
 #: collectionpage/collectiongeneralpage.cpp:212
 #, kde-format
@@ -185,6 +188,8 @@ msgid ""
 "Check this option if you do not want this folder to be shown in folder "
 "selection dialogs, such as the <interface>Jump to Folder</interface> dialog."
 msgstr ""
+"יש לסמן את האפשרות הזאת אם אין ברצונך שהתיקייה הזאת תופיע בחלוניות בחירת "
+"תיקייה, כגון חלונית <interface>קפיצה לתיקייה</interface>."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
 #, kde-format
@@ -201,6 +206,10 @@ msgid ""
 "signing or encryption keys automatically. Identities can be set up in the "
 "main configuration dialog. (Settings -> Configure KMail)"
 msgstr ""
+"יש לבחור את זהות המוען לשליחה בעת כתיבת הודעה חדשה או תגובה להודעה בתיקייה "
+"הזאת. המשמעות היא שאם הכתיבה מתבצעת מתוך אחת מתיקיות העבודה שלך, אפשר לגרום "
+"ל־KMail להשתמש בכתובת דוא״ל המוען, החתימה ומפתחות החתימה או ההצפנה המתאימות "
+"אוטומטית. אפשר להגדיר זהויות בחלונית ההגדרות הראשית. (הגדרות -> הגדרת KMail)"
 
 #: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
@@ -211,7 +220,7 @@ msgstr "זהות ה&מוען:"
 #, kde-format
 msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
-msgstr ""
+msgstr "להשתמש ב&תבניות הודעות מותאמות אישית בתיקייה הזאת"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
@@ -223,13 +232,13 @@ msgstr "ה&עתקת תבניות מקיפות"
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
-msgstr ""
+msgstr "להשתמש באגירת רשימות דוא״ל כברירת מחדל:"
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
-msgstr ""
+msgstr "להשתמש בערכת העיצוב לרשימות הודעות כברירת מחדל"
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
@@ -730,7 +739,7 @@ msgstr "ב־:"
 #: filter/filteractions/filteractionsendfakedisposition.cpp:29
 #, kde-format
 msgid "Send Fake MDN"
-msgstr ""
+msgstr "שליחת MDN (מצב מסירת הודעה) מזויף"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:34
 #, kde-format
@@ -742,42 +751,42 @@ msgstr "התעלמות"
 #, kde-format
 msgctxt "MDN type"
 msgid "Displayed"
-msgstr ""
+msgstr "הוצגה"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:36
 #, kde-format
 msgctxt "MDN type"
 msgid "Deleted"
-msgstr ""
+msgstr "נמחקה"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:37
 #, kde-format
 msgctxt "MDN type"
 msgid "Dispatched"
-msgstr ""
+msgstr "נמסר"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:38
 #, kde-format
 msgctxt "MDN type"
 msgid "Processed"
-msgstr ""
+msgstr "עובד"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:39
 #, kde-format
 msgctxt "MDN type"
 msgid "Denied"
-msgstr ""
+msgstr "נדחה"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:40
 #, kde-format
 msgctxt "MDN type"
 msgid "Failed"
-msgstr ""
+msgstr "נכשלה"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:116
 #, kde-format
 msgid "Fake type undefined."
-msgstr ""
+msgstr "סוג מזויף לא מוגדר."
 
 #: filter/filteractions/filteractionsendreceipt.cpp:21
 #, kde-format
@@ -831,37 +840,37 @@ msgstr "לא נקראה"
 #, kde-format
 msgctxt "msg status"
 msgid "Replied"
-msgstr ""
+msgstr "זכתה למענה"
 
 #: filter/filteractions/filteractionstatus.cpp:37
 #, kde-format
 msgctxt "msg status"
 msgid "Forwarded"
-msgstr ""
+msgstr "הועברה"
 
 #: filter/filteractions/filteractionstatus.cpp:38
 #, kde-format
 msgctxt "msg status"
 msgid "Watched"
-msgstr ""
+msgstr "נקראה"
 
 #: filter/filteractions/filteractionstatus.cpp:39
 #, kde-format
 msgctxt "msg status"
 msgid "Ignored"
-msgstr ""
+msgstr "נתעלמה"
 
 #: filter/filteractions/filteractionstatus.cpp:40
 #, kde-format
 msgctxt "msg status"
 msgid "Spam"
-msgstr ""
+msgstr "זבל"
 
 #: filter/filteractions/filteractionstatus.cpp:41
 #, kde-format
 msgctxt "msg status"
 msgid "Ham"
-msgstr ""
+msgstr "תקין"
 
 #: filter/filteractions/filteractionstatus.cpp:42
 #, kde-format
@@ -878,7 +887,7 @@ msgstr "חסר מצב."
 #, kde-format
 msgctxt "action: to unset the status"
 msgid "Unset Status"
-msgstr ""
+msgstr "ביטול הגדרת מצב"
 
 #: filter/filteractions/filteractionunsetstatus.cpp:39
 #, kde-format
@@ -1245,6 +1254,9 @@ msgid ""
 "IMAP accounts where new emails may have already been moved to different "
 "folders by server-side filters.</p>"
 msgstr ""
+"<p>המסנן יחול על הודעות נכנסות מכל התיקיות ששייכות לכל החשבונות שנבחרו להלן. "
+"שימושי במקרה של מסננים מקומיים עם חשבונות IMAP שבהם הודעות חדשות כבר הועברו "
+"לתיקיות אחרות על ידי מסננים מצד השרת.</p>"
 
 #: filter/kmfilterdialog.cpp:245
 #, kde-format
@@ -1339,7 +1351,7 @@ msgstr "מסננים שיובאו:"
 #: filter/kmfilterdialog.cpp:685
 #, kde-format
 msgid "Any filter found."
-msgstr ""
+msgstr "מסנן כלשהו נמצא."
 
 #: filter/kmfilterdialog.cpp:714
 #, kde-format
@@ -1376,6 +1388,8 @@ msgid ""
 "</p><p>Click on any filter to edit it using the controls in the right-hand "
 "half of the dialog.</p></qt>"
 msgstr ""
+"<qt><p>זאת רשימת המסננים המוגדרים. עם מעובדים מלמעלה למטה.</p><p>יש ללחוץ על "
+"מסנן כלשהו כדי לערוך אותו באמצעות הפקדים בצד השמאלי של החלונית.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:85
 #, kde-format
@@ -1996,7 +2010,7 @@ msgstr "אין לך הרשאה לקרוא/לכתוב לתיקיית הדוא״ל
 #: kernel/mailkernel.cpp:235
 #, kde-format
 msgid "The Email program encountered a fatal error and will terminate now"
-msgstr ""
+msgstr "תוכנית הדוא״ל נתקלה בשגיאה מכריעה והיא תחוסל כעת"
 
 #: kernel/mailkernel.cpp:238
 #, kde-format
@@ -2005,6 +2019,9 @@ msgid ""
 "The error was:\n"
 "%1"
 msgstr ""
+"תוכנית הדוא״ל נתקלה בשגיאה מכריעה והיא תחוסל כעת.\n"
+"השגיאה הייתה:\n"
+"%1"
 
 #: search/searchpattern.cpp:237
 #, kde-format
@@ -2770,7 +2787,7 @@ msgctxt "@info:tooltip"
 msgid ""
 "Enable this to save the value entered to the right as the default value for "
 "this variable"
-msgstr ""
+msgstr "יש להפעיל כדי לשמור את הערך שמולא משמאל לערך ברירת המחדל למשתנה הזה"
 
 #: snippets/snippetvariabledialog.cpp:51
 #, kde-format
