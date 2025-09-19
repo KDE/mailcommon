@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-25 00:44+0000\n"
-"PO-Revision-Date: 2025-09-08 19:10+0300\n"
+"PO-Revision-Date: 2025-09-18 09:42+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -597,6 +597,9 @@ msgid ""
 "an email server and use several clients, each of them must be configured to "
 "enable decryption.</p>"
 msgstr ""
+"<p>לאחר הצפנת הודעה צריך תצורת הצפנה עם המפתח שלך כדי לגשת שוב לתוכן. </"
+"p><p>אם ההודעות שמורות בשרת דוא״ל ויש לך מספר מכשירים שונים שניגשים לתיבה, "
+"יש להגדיר כל אחד מהם בנפרד כדי לפענח את ההצפנה.</p>"
 
 #: filter/filteractions/filteractionexec.cpp:15
 #, kde-format
@@ -1964,10 +1967,10 @@ msgstr "הסרת הודעות ישנות מהתיקייה %1 נכשלה."
 #, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "הודעה ישנה נמחקת מהתיקייה %2…"
+msgstr[1] "שתי הודעות ישנות נמחקות מהתיקייה %2…"
+msgstr[2] "%1 הודעות ישנות נמחקות מהתיקייה %2…"
+msgstr[3] "%1 הודעות ישנות נמחקות מהתיקייה %2…"
 
 #: job/expirejob.cpp:164
 #, kde-format
@@ -1978,19 +1981,19 @@ msgstr "לא ניתן להפיג הודעות מהתיקייה %1: תיקיית 
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "הודעה ישנה מועברת מהתיקייה %2 לתיקייה %3…"
+msgstr[1] "שתי הודעות ישנות מועברות מהתיקייה %2 לתיקייה %3…"
+msgstr[2] "%1 הודעות ישנות מועברות מהתיקייה %2 לתיקייה %3…"
+msgstr[3] "%1 הודעות ישנות מועברות מהתיקייה %2 לתיקייה %3…"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "הודעה ישנה הועברה מהתיקייה %2 לתיקייה %3."
+msgstr[1] "שתי הודעות ישנות הועברו מהתיקייה %2 לתיקייה %3."
+msgstr[2] "%1 הודעות ישנות הועברו מהתיקייה %2 לתיקייה %3."
+msgstr[3] "%1 הודעות ישנות הועברו מהתיקייה %2 לתיקייה %3."
 
 #: job/expiremovejob.cpp:136
 #, kde-format
@@ -2808,6 +2811,9 @@ msgid ""
 "then type \\greeting in your email and then press the tab key, and it will "
 "be replaced with the contents of this snippet."
 msgstr ""
+"נא למלא כאן מילות מפתח כדי לאפשר הזנה מהירה של מקטע הטקסט הזה תוך כדי כתיבת "
+"הודעה. למשל, בחירה ב„ברכות” כמילת מפתח, תאפשר לך להקליד \\ברכות בהודעה שלך "
+"ואז ללחוץ על Tab, והיא תוחלף בתוך מקטע הטקסט הזה."
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
 #: snippets/ui/snippetwidget.ui:32
