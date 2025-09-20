@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-25 00:44+0000\n"
-"PO-Revision-Date: 2025-09-18 09:42+0300\n"
+"PO-Revision-Date: 2025-09-18 21:58+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -1448,6 +1448,9 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
+"<qt><p>לחיצה על הכפתור הזה תעביר את המסנן הנבחר לתחתית הרשימה. </p><p>הסדר "
+"הוא הכרחי ולכן שינוי סדר המסננים ברשימה קובע את סדר הניסיון על ההודעות: "
+"המסנן העליון הוא הראשון שיבוצע עליו ניסיון.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:110
 #, kde-format
@@ -1457,6 +1460,9 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
+"<qt><p>לחיצה על הכפתור הזה תעביר את המסנן הנבחר לראש הרשימה. </p><p>הסדר הוא "
+"הכרחי ולכן שינוי סדר המסננים ברשימה קובע את סדר הניסיון על ההודעות: המסנן "
+"העליון הוא הראשון שיבוצע עליו ניסיון.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:140
 #, kde-format
@@ -1490,6 +1496,10 @@ msgid ""
 "that later on.</p><p>If you have clicked this button accidentally, you can "
 "undo this by clicking on the <em>Delete</em> button.</p></qt>"
 msgstr ""
+"<qt><p>לחיצה על הכפתור הזה יוצרת מסנן חדש.</p><p>המסנן יתווסף לפני המסנן "
+"הנוכחי בצמוד אליו, אך תמיד ניתן לשנות את זה בהמשך. </p><p>אם לחצת על הכפתור "
+"הזה בטעות, אפשר להסיג את הפעולה הזאת על ידי לחיצה על כפתור ה<em>מחיקה</em>.</"
+"p></qt>"
 
 #: filter/kmfilterlistbox.cpp:152
 #, kde-format
@@ -1498,6 +1508,8 @@ msgid ""
 "button accidentally, you can undo this by clicking on the <em>Delete</em> "
 "button.</p></qt>"
 msgstr ""
+"<qt><p>לחיצה על הכפתור הזה תעתיק מסנן.</p><p>אם לחצת על הכפתור הזה בטעות, "
+"אפשר להסיג את הפעולה הזאת על ידי לחיצה על כפתור ה<em>מחיקה</em>.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:156
 #, kde-format
@@ -1507,6 +1519,9 @@ msgid ""
 "deleted, but you can always leave the dialog by clicking <em>Cancel</em> to "
 "discard the changes made.</p></qt>"
 msgstr ""
+"<qt><p>לחיצה על הכפתור הזה <em>תמחק</em> את המסנן הנבחר מהרשימה שלהלן.</"
+"p><p>אין דרך להשיב את המסנן לאחר מחיקתו, אך תמיד ניתן לנטוש את החלונית על "
+"ידי לחיצה על <em>ביטול</em> כדי להתעלם מהשינויים שבוצעו.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:163
 #, kde-format
@@ -1517,6 +1532,10 @@ msgid ""
 "back, click this button and select <em>Clear</em> followed by <em>OK</em> in "
 "the appearing dialog.</p></qt>"
 msgstr ""
+"<qt><p>לחיצה על הכפתור הזה תאפשר לשנות את שם המסנן הנבחר.</p><p>שמות המסננים "
+"נבחרים אוטומטית, כל עוד הם נפתחים ב־„&lt;”.</p><p>אם שינית בטעות שם של מסנן "
+"ועדיף לך להחזיר את השם האוטומטי, יש ללחוץ על הכפתור הזה ולבחור ב<em>פינוי</"
+"em> ואז ב<em>אישור</em> בחלונית שתצוץ.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:290
 #, kde-format
