@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-25 00:44+0000\n"
-"PO-Revision-Date: 2025-09-18 21:58+0300\n"
+"PO-Revision-Date: 2025-09-20 12:56+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -158,6 +158,12 @@ msgid ""
 "messages. This is useful for ignoring any new/unread mail in your trash and "
 "spam folder.</p></qt>"
 msgstr ""
+"<qt><p>אם האפשרות הזאת פעילה תופענה התראות על הודעות חדשות/שלא נקראו בתיקייה "
+"הזאת. יתרה מכך, מעבר לתיקייה הבאה/קודמת עם הודעות שלא נקראויעצור בתיקייה "
+"הזאת.</p><p>יש לבטל את סימון האפשרות הזאת כדי לא לקבל התראות על הודעות "
+"חדשות/שלא נקראו בתיקייה הזאת ואם ברצונך לדלג על התיקייה הזאת במעבר לתיקייה "
+"הבאה/קודמת עם הודעות שלא נקראו. שימושי להתעלמות מהודעות חדשות/שלא נקראו "
+"בתיקיות האשפה והספאם שלך.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
 #, kde-format
@@ -1428,6 +1434,11 @@ msgid ""
 "accidentally, you can undo this by clicking on the <em>Down</em> button.</"
 "p></qt>"
 msgstr ""
+"<qt><p>לחיצה על הכפתור תעלה את המסנן הנבחר <em>למעלה</em> במקום אחד במעלה "
+"הרשימה שלהלן.</p><p>הסדר הוא הכרחי ולכן שינוי סדר המסננים ברשימה קובע את סדר "
+"הניסיון על ההודעות: המסנן העליון הוא הראשון שיבוצע עליו ניסיון. </p><p>אם "
+"לחצת על הכפתור הזה בטעות, אפשר להסיג את הפעולה בלחיצה כפתור <em>למטה</em>.</"
+"p></qt>"
 
 #: filter/kmfilterlistbox.cpp:96
 #, kde-format
@@ -1439,6 +1450,11 @@ msgid ""
 "accidentally, you can undo this by clicking on the <em>Up</em> button.</p></"
 "qt>"
 msgstr ""
+"<qt><p>לחיצה על הכפתור תוריד את המסנן הנבחר <em>למטה</em> במקום אחד במורד "
+"הרשימה שלהלן.</p><p>הסדר הוא הכרחי ולכן שינוי סדר המסננים ברשימה קובע את סדר "
+"הניסיון על ההודעות: המסנן העליון הוא הראשון שיבוצע עליו ניסיון. </p><p>אם "
+"לחצת על הכפתור הזה בטעות, אפשר להסיג את הפעולה בלחיצה כפתור <em>למעלה</em>.</"
+"p></qt>"
 
 #: filter/kmfilterlistbox.cpp:104
 #, kde-format
