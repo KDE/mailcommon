@@ -107,7 +107,7 @@ KMime::Message::Ptr CryptoUtils::decryptMessage(const KMime::Message::Ptr &msg, 
 
     wasEncrypted = true;
     QByteArray outData;
-    auto inData = multipart ? msg->encodedContent() : msg->decodedContent(); // decodedContent in fact returns decoded body
+    auto inData = multipart ? msg->encodedContent() : msg->decodedBody(); // decodedContent in fact returns decoded body
     auto decrypt = proto->decryptJob();
     if (inlinePGP) {
         auto ctx = QGpgME::Job::context(decrypt);

@@ -106,12 +106,12 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const KMime::Messa
             if ((*it) == -1) {
                 file.write(aMsg->encodedContent());
             } else if (aMsg->contents().isEmpty()) {
-                file.write(aMsg->decodedContent());
+                file.write(aMsg->decodedBody());
             } else {
                 int index = *it; // we pass by reference below, so this is not const
                 KMime::Content *content = findMimeNodeForIndex(aMsg.data(), index);
                 if (content) {
-                    file.write(content->decodedContent());
+                    file.write(content->decodedBody());
                 }
             }
             file.close();
