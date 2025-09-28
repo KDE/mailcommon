@@ -48,13 +48,13 @@ bool CryptoUtils::isInlinePGP(const KMime::Content *part)
 
 bool CryptoUtils::isPGP(const KMime::Content *part, bool allowOctetStream)
 {
-    const auto ct = static_cast<KMime::Headers::ContentType *>(part->headerByType("Content-Type"));
+    const auto ct = part->contentType();
     return ct && (ct->isSubtype("pgp-encrypted") || ct->isSubtype("encrypted") || (allowOctetStream && ct->isMimeType("application/octet-stream")));
 }
 
 bool CryptoUtils::isSMIME(const KMime::Content *part)
 {
-    const auto ct = static_cast<KMime::Headers::ContentType *>(part->headerByType("Content-Type"));
+    const auto ct = part->contentType();
     return ct && (ct->isSubtype("pkcs7-mime") || ct->isSubtype("x-pkcs7-mime"));
 }
 
