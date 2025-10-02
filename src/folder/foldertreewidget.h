@@ -114,6 +114,9 @@ public:
 
     void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 
+    void expandAll();
+    void collapseAll();
+
 protected:
     void changeToolTipsPolicyConfig(ToolTipDisplayPolicy);
 

@@ -157,6 +157,16 @@ void FolderTreeWidget::slotFilterFixedString(const QString &text)
     d->entityOrderProxy->setFilterWildcard(text);
 }
 
+void FolderTreeWidget::expandAll()
+{
+    d->folderTreeView->expandAll();
+}
+
+void FolderTreeWidget::collapseAll()
+{
+    d->folderTreeView->collapseAll();
+}
+
 void FolderTreeWidget::disableContextMenuAndExtraColumn()
 {
     d->folderTreeView->disableContextMenuAndExtraColumn();
