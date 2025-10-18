@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-10-03 00:45+0000\n"
+"POT-Creation-Date: 2025-10-18 00:43+0000\n"
 "PO-Revision-Date: 2019-11-18 12:53+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -1394,45 +1394,45 @@ msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Dodatočne pridať tento filter do panela nástrojov"
 
-#: filter/kmfilterdialog.cpp:277
+#: filter/kmfilterdialog.cpp:273
 #, kde-format
 msgid "Shortcut:"
 msgstr "Skratka:"
 
-#: filter/kmfilterdialog.cpp:283
+#: filter/kmfilterdialog.cpp:279
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Ikona pre tento filter:"
 
-#: filter/kmfilterdialog.cpp:291
+#: filter/kmfilterdialog.cpp:287
 #, fuzzy, kde-format
 #| msgid "Run selected filter(s) on: "
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Spustiť vybrané filter(e) na:"
 
-#: filter/kmfilterdialog.cpp:297
+#: filter/kmfilterdialog.cpp:293
 #, fuzzy, kde-format
 #| msgid "Run Now"
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Spustiť teraz"
 
-#: filter/kmfilterdialog.cpp:424
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
 "Nemožno použiť tento filter, pretože tam nie sú žiadne vybrané priečinky."
 
-#: filter/kmfilterdialog.cpp:425
+#: filter/kmfilterdialog.cpp:421
 #, fuzzy, kde-format
 #| msgid "No folder selected."
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Nebol vybraný žiadny priečinok"
 
-#: filter/kmfilterdialog.cpp:432
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1442,42 +1442,42 @@ msgstr ""
 "Niektoré filtre boli zmenené, ale ešte nie uložené. Musíte uložiť vaše "
 "filtre predtým, než môžu byť použité."
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:716
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
 #, fuzzy, kde-format
 #| msgid "Filters changed."
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filtre sa zmenili."
 
-#: filter/kmfilterdialog.cpp:441
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Nemožno použiť filter, pretože nie sú žiadne filtre aktuálne vybrané."
 
-#: filter/kmfilterdialog.cpp:442
+#: filter/kmfilterdialog.cpp:438
 #, fuzzy, kde-format
 #| msgid "No filters selected."
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Nebol vybraný žiadny priečinok"
 
-#: filter/kmfilterdialog.cpp:666
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Žiadny filter nebol importovaný."
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Filtre, ktoré boli importované:"
 
-#: filter/kmfilterdialog.cpp:685
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr "Bol nájdený akýkoľvek filter."
 
-#: filter/kmfilterdialog.cpp:714
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1487,21 +1487,21 @@ msgstr ""
 "Niektoré filtre boli zmenené, ale ešte nie uložené.<br> Musíte uložiť vaše "
 "filtre predtým, než môžu byť exportované."
 
-#: filter/kmfilterdialog.cpp:720
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Nemôžeme skonvertovať všetky filtre KMail do sieve skriptov, ale môžeme to "
 "skúsiť :)"
 
-#: filter/kmfilterdialog.cpp:721 filter/kmfilterdialog.cpp:737
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
 #, fuzzy, kde-format
 #| msgid "Convert KMail filters to sieve scripts"
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Konvertovať filtre KMail na sieve skripty"
 
-#: filter/kmfilterdialog.cpp:737
+#: filter/kmfilterdialog.cpp:733
 #, kde-format
 msgid "No filters selected."
 msgstr "Nebol vybraný žiadny priečinok"

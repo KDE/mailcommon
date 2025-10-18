@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-10-03 00:45+0000\n"
+"POT-Creation-Date: 2025-10-18 00:43+0000\n"
 "PO-Revision-Date: 2025-10-01 11:30+0200\n"
 "Last-Translator: Frank Steinmetzger <dev-kde@felsenfleischer.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -1334,42 +1334,42 @@ msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Diesen Filter zur Werkzeugleiste hinzufügen"
 
-#: filter/kmfilterdialog.cpp:277
+#: filter/kmfilterdialog.cpp:273
 #, kde-format
 msgid "Shortcut:"
 msgstr "Kurzbefehl:"
 
-#: filter/kmfilterdialog.cpp:283
+#: filter/kmfilterdialog.cpp:279
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Symbol für diesen Filter:"
 
-#: filter/kmfilterdialog.cpp:291
+#: filter/kmfilterdialog.cpp:287
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Gewählte(n) Filter anwenden auf: "
 
-#: filter/kmfilterdialog.cpp:297
+#: filter/kmfilterdialog.cpp:293
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Jetzt anwenden"
 
-#: filter/kmfilterdialog.cpp:424
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
 "Dieser Filter kann nicht angewendet werden, da keine Ordner ausgewählt sind."
 
-#: filter/kmfilterdialog.cpp:425
+#: filter/kmfilterdialog.cpp:421
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Kein Ordner ausgewählt."
 
-#: filter/kmfilterdialog.cpp:432
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1379,41 +1379,41 @@ msgstr ""
 "Einige Filter wurden geändert aber noch nicht gespeichert. Sie müssen die "
 "Änderungen speichern, bevor Sie die Filter anwenden können."
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:716
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filter geändert."
 
-#: filter/kmfilterdialog.cpp:441
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
 "Kein Filter kann angewendet werden, da aktuell keine Filter ausgewählt sind."
 
-#: filter/kmfilterdialog.cpp:442
+#: filter/kmfilterdialog.cpp:438
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Keine Filter ausgewählt."
 
-#: filter/kmfilterdialog.cpp:666
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Es wurde kein Filter importiert."
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Importierte Filter:"
 
-#: filter/kmfilterdialog.cpp:685
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr "Jeder gefundene Filter."
 
-#: filter/kmfilterdialog.cpp:714
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1423,19 +1423,19 @@ msgstr ""
 "Einige Filter wurden geändert aber noch nicht gespeichert. <br>Sie müssen "
 "die Änderungen speichern, bevor Sie die Filter exportieren können."
 
-#: filter/kmfilterdialog.cpp:720
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Es können leider nicht alle KMail-Filter in Sieve-Skripte umgewandelt werden"
 
-#: filter/kmfilterdialog.cpp:721 filter/kmfilterdialog.cpp:737
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "KMail-Filter in Sieve-Skripte umwandeln"
 
-#: filter/kmfilterdialog.cpp:737
+#: filter/kmfilterdialog.cpp:733
 #, kde-format
 msgid "No filters selected."
 msgstr "Keine Filter ausgewählt."

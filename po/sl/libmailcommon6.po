@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-10-03 00:45+0000\n"
+"POT-Creation-Date: 2025-10-18 00:43+0000\n"
 "PO-Revision-Date: 2025-01-05 08:36+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -1305,41 +1305,41 @@ msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Dodatno dodaj ta filter v orodno vrstico"
 
-#: filter/kmfilterdialog.cpp:277
+#: filter/kmfilterdialog.cpp:273
 #, kde-format
 msgid "Shortcut:"
 msgstr "Bližnjica:"
 
-#: filter/kmfilterdialog.cpp:283
+#: filter/kmfilterdialog.cpp:279
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Ikona za ta filter:"
 
-#: filter/kmfilterdialog.cpp:291
+#: filter/kmfilterdialog.cpp:287
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Izbrane filtre zaženi na: "
 
-#: filter/kmfilterdialog.cpp:297
+#: filter/kmfilterdialog.cpp:293
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Zaženi zdaj"
 
-#: filter/kmfilterdialog.cpp:424
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Tega filtra ni mogoče uveljaviti, ker niste izbrali nobene mape."
 
-#: filter/kmfilterdialog.cpp:425
+#: filter/kmfilterdialog.cpp:421
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Ni izbrane nobene mape."
 
-#: filter/kmfilterdialog.cpp:432
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1349,40 +1349,40 @@ msgstr ""
 "Nekateri filtri so bili spremenjeni, a še niso shranjeni. Preden lahko "
 "uveljavite filtre, jih morate shraniti."
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:716
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filtri so se spremenili."
 
-#: filter/kmfilterdialog.cpp:441
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Filtrov ni mogoče uveljaviti, ker niste izbrali nobenega filtra."
 
-#: filter/kmfilterdialog.cpp:442
+#: filter/kmfilterdialog.cpp:438
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Ni izbranega nobenega filtra."
 
-#: filter/kmfilterdialog.cpp:666
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Uvožen ni bil noben filter."
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Filtri, ki so bili uvoženi:"
 
-#: filter/kmfilterdialog.cpp:685
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr "Najden katerikoli filter."
 
-#: filter/kmfilterdialog.cpp:714
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1392,19 +1392,19 @@ msgstr ""
 "Nekateri filtri so bili spremenjeni in še niso shranjeni.<br>Filtre morate "
 "najprej shraniti preden jih lahko izvozite."
 
-#: filter/kmfilterdialog.cpp:720
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Vseh filtrov KMail ni mogoče predelati v skripte Sieve, lahko pa poskusimo :)"
 
-#: filter/kmfilterdialog.cpp:721 filter/kmfilterdialog.cpp:737
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Pretvori filtre KMail v skripte Sieve"
 
-#: filter/kmfilterdialog.cpp:737
+#: filter/kmfilterdialog.cpp:733
 #, kde-format
 msgid "No filters selected."
 msgstr "Ni izbranega nobenega filtra."

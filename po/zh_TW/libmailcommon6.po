@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-10-03 00:45+0000\n"
+"POT-Creation-Date: 2025-10-18 00:43+0000\n"
 "PO-Revision-Date: 2025-01-08 17:49+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -1271,41 +1271,41 @@ msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "將這個過濾器放到工具列上"
 
-#: filter/kmfilterdialog.cpp:277
+#: filter/kmfilterdialog.cpp:273
 #, kde-format
 msgid "Shortcut:"
 msgstr "捷徑："
 
-#: filter/kmfilterdialog.cpp:283
+#: filter/kmfilterdialog.cpp:279
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "此過濾器的圖示"
 
-#: filter/kmfilterdialog.cpp:291
+#: filter/kmfilterdialog.cpp:287
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "執行選取的過濾器於："
 
-#: filter/kmfilterdialog.cpp:297
+#: filter/kmfilterdialog.cpp:293
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "立即執行"
 
-#: filter/kmfilterdialog.cpp:424
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "無法套用此過濾器，因為沒有選擇任何資料夾。"
 
-#: filter/kmfilterdialog.cpp:425
+#: filter/kmfilterdialog.cpp:421
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "沒有選擇任何資料夾。"
 
-#: filter/kmfilterdialog.cpp:432
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1313,40 +1313,40 @@ msgid ""
 "before they can be applied."
 msgstr "有些過濾器已變更但尚未儲存。您必須在套用前先儲存您的過濾器。"
 
-#: filter/kmfilterdialog.cpp:434 filter/kmfilterdialog.cpp:716
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "過濾器已變更。"
 
-#: filter/kmfilterdialog.cpp:441
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "無法套用，因為沒有選擇任何過濾器。"
 
-#: filter/kmfilterdialog.cpp:442
+#: filter/kmfilterdialog.cpp:438
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "沒有選擇任何過濾器。"
 
-#: filter/kmfilterdialog.cpp:666
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "沒有匯入任何過濾器。"
 
-#: filter/kmfilterdialog.cpp:677
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "已匯入的過濾器："
 
-#: filter/kmfilterdialog.cpp:685
+#: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
 msgstr "任何找到的過濾器。"
 
-#: filter/kmfilterdialog.cpp:714
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1354,18 +1354,18 @@ msgid ""
 "before they can be exported."
 msgstr "有些過濾器已變更但尚未儲存。<br/>您必須在匯出前先儲存您的過濾器。"
 
-#: filter/kmfilterdialog.cpp:720
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr "無法將所有 KMail 過濾器轉換為 sieve 文稿，但我們會試試看 ^^"
 
-#: filter/kmfilterdialog.cpp:721 filter/kmfilterdialog.cpp:737
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "將 KMail 過濾器轉換為 sieve 文稿"
 
-#: filter/kmfilterdialog.cpp:737
+#: filter/kmfilterdialog.cpp:733
 #, kde-format
 msgid "No filters selected."
 msgstr "沒有選擇任何過濾器。"
