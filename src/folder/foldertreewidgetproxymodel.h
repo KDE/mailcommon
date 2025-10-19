@@ -67,6 +67,7 @@ protected:
     bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override;
 
 private:
+    void slotInvalidateFilter();
     class FolderTreeWidgetProxyModelPrivate;
     std::unique_ptr<FolderTreeWidgetProxyModelPrivate> const d;
 };

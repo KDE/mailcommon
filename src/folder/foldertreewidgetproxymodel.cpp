@@ -274,21 +274,38 @@ void FolderTreeWidgetProxyModel::updatePalette()
 
 void FolderTreeWidgetProxyModel::addContentMimeTypeInclusionFilter(const QString &mimeType)
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+    beginFilterChange();
+#endif
     d->includedMimeTypes << mimeType;
     d->checker.setWantedMimeTypes(d->includedMimeTypes.values());
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+    endFilterChange(QSortFilterProxyModel::Direction::Rows);
+#else
     invalidateFilter();
+#endif
 }
 
 void FolderTreeWidgetProxyModel::setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities)
 {
     if (d->accountActivities) {
-        disconnect(d->accountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FolderTreeWidgetProxyModel::invalidateFilter);
+        disconnect(d->accountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FolderTreeWidgetProxyModel::slotInvalidateFilter);
     }
     d->accountActivities = accountActivities;
     if (d->accountActivities) {
-        connect(d->accountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FolderTreeWidgetProxyModel::invalidateFilter);
+        connect(d->accountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FolderTreeWidgetProxyModel::slotInvalidateFilter);
     }
+    slotInvalidateFilter();
+}
+
+void FolderTreeWidgetProxyModel::slotInvalidateFilter()
+{
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+    beginFilterChange();
+    endFilterChange(QSortFilterProxyModel::Direction::Rows);
+#else
     invalidateFilter();
+#endif
 }
 
 #include "moc_foldertreewidgetproxymodel.cpp"

@@ -28,11 +28,11 @@ Akonadi::Collection FavoriteCollectionOrderProxyModel::parentCollection(const QM
 void FavoriteCollectionOrderProxyModel::setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities)
 {
     if (mAccountActivities) {
-        disconnect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FavoriteCollectionOrderProxyModel::invalidateFilter);
+        disconnect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FavoriteCollectionOrderProxyModel::slotInvalidateFilter);
     }
     mAccountActivities = accountActivities;
-    connect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FavoriteCollectionOrderProxyModel::invalidateFilter);
-    invalidateFilter();
+    connect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FavoriteCollectionOrderProxyModel::slotInvalidateFilter);
+    slotInvalidateFilter();
 }
 
 bool FavoriteCollectionOrderProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
@@ -47,6 +47,16 @@ bool FavoriteCollectionOrderProxyModel::filterAcceptsRow(int sourceRow, const QM
         }
     }
     return Akonadi::EntityOrderProxyModel::filterAcceptsColumn(sourceRow, sourceParent);
+}
+
+void FavoriteCollectionOrderProxyModel::slotInvalidateFilter()
+{
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+    beginFilterChange();
+    endFilterChange(QSortFilterProxyModel::Direction::Rows);
+#else
+    invalidateFilter();
+#endif
 }
 
 #include "moc_favoritecollectionorderproxymodel.cpp"

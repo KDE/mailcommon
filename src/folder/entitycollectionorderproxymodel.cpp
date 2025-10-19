@@ -157,8 +157,15 @@ bool EntityCollectionOrderProxyModel::isManualSortingActive() const
 
 void EntityCollectionOrderProxyModel::setFolderMatcher(const HierarchicalFolderMatcher &matcher)
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+    beginFilterChange();
+#endif
     d->matcher = matcher;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+    endFilterChange(QSortFilterProxyModel::Direction::Rows);
+#else
     invalidateFilter();
+#endif
 }
 
 bool EntityCollectionOrderProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
