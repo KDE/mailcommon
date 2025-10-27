@@ -47,17 +47,17 @@ void MDNWarningJob::start()
         return;
     }
 
-    const QPair<bool, KMime::MDN::SendingMode> mdnSend = modifyItem(message);
-    qCDebug(MAILCOMMON_LOG) << " Send " << mdnSend.first << " mdnSend.sendmode " << mdnSend.second;
+    const MDNSendingInfo mdnSend = modifyItem(message);
+    qCDebug(MAILCOMMON_LOG) << " Send " << mdnSend.doSend << " mdnSend.sendmode " << mdnSend.mode;
 
-    if (mdnSend.first) {
+    if (mdnSend.doSend) {
         const int quote = MessageViewer::MessageViewerSettings::self()->quoteMessage();
 
         MessageComposer::MessageFactoryNG factory(message, Akonadi::Item().id());
         factory.setIdentityManager(mKernel->identityManager());
         factory.setFolderIdentity(MailCommon::Util::folderIdentity(mItem));
 
-        const KMime::Message::Ptr mdn = factory.createMDN(KMime::MDN::ManualAction, KMime::MDN::Displayed, mdnSend.second, quote);
+        const KMime::Message::Ptr mdn = factory.createMDN(KMime::MDN::ManualAction, KMime::MDN::Displayed, mdnSend.mode, quote);
         if (mdn) {
             if (!mKernel->msgSender()->send(mdn)) {
                 qCDebug(MAILCOMMON_LOG) << "Sending failed.";
@@ -83,9 +83,9 @@ bool MDNWarningJob::canStart() const
     return mItem.isValid() && (mResponse != Unknown);
 }
 
-QPair<bool, KMime::MDN::SendingMode> MDNWarningJob::modifyItem(const KMime::Message::Ptr &msg)
+MDNWarningJob::MDNSendingInfo MDNWarningJob::modifyItem(const KMime::Message::Ptr &msg)
 {
-    QPair<bool, KMime::MDN::SendingMode> result;
+    MDNSendingInfo result;
     auto mdnStateAttr = new Akonadi::MDNStateAttribute(Akonadi::MDNStateAttribute::MDNStateUnknown);
     // create a minimal version of item with just the attribute we want to change
     bool doSend = false;
@@ -102,8 +102,8 @@ QPair<bool, KMime::MDN::SendingMode> MDNWarningJob::modifyItem(const KMime::Mess
         doSend = true;
         mdnStateAttr->setMDNState(MessageComposer::MDNAdviceHelper::dispositionToSentState(KMime::MDN::Displayed));
     }
-    result.first = doSend;
-    result.second = mSendingMode;
+    result.doSend = doSend;
+    result.mode = mSendingMode;
     Akonadi::Item i(mItem.id());
     i.setRevision(mItem.revision());
     i.setMimeType(mItem.mimeType());
