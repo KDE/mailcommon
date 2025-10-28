@@ -100,8 +100,8 @@ void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionTyp
         return;
     }
 
-    const QPair<bool, KMime::MDN::SendingMode> mdnSend = MessageComposer::MDNAdviceHelper::instance()->checkAndSetMDNInfo(item, type, true);
-    if (mdnSend.first) {
+    const MessageComposer::MDNAdviceHelper::MDNSendingModeInfo mdnSend = MessageComposer::MDNAdviceHelper::instance()->checkAndSetMDNInfo(item, type, true);
+    if (mdnSend.doSend) {
         const int quote = MessageViewer::MessageViewerSettings::self()->quoteMessage();
         QString receiptTo;
         if (auto hrd = msg->headerByType("Disposition-Notification-To")) {
@@ -114,7 +114,7 @@ void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionTyp
         factory.setIdentityManager(KernelIf->identityManager());
         factory.setFolderIdentity(MailCommon::Util::folderIdentity(item));
 
-        const KMime::Message::Ptr mdn = factory.createMDN(KMime::MDN::AutomaticAction, type, mdnSend.second, quote, modifiers);
+        const KMime::Message::Ptr mdn = factory.createMDN(KMime::MDN::AutomaticAction, type, mdnSend.mode, quote, modifiers);
         if (mdn) {
             if (!KernelIf->msgSender()->send(mdn, MessageComposer::MessageSender::SendLater)) {
                 qCDebug(MAILCOMMON_LOG) << "Sending failed.";
