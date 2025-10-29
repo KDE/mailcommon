@@ -34,10 +34,8 @@ QWidget *FilterActionAddTag::createParamWidget(QWidget *parent) const
     mComboBox = new QComboBox(parent);
     mComboBox->setMinimumWidth(50);
     mComboBox->setEditable(false);
-    QMapIterator<QUrl, QString> i(mList);
-    while (i.hasNext()) {
-        i.next();
-        mComboBox->addItem(i.value(), i.key());
+    for (const auto &[key, value] : mList.asKeyValueRange()) {
+        mComboBox->addItem(value, key);
     }
 
     setParamWidgetValue(mComboBox);
@@ -79,10 +77,8 @@ void FilterActionAddTag::slotTagListingFinished()
 
 void FilterActionAddTag::fillComboBox()
 {
-    QMapIterator<QUrl, QString> i(mList);
-    while (i.hasNext()) {
-        i.next();
-        mComboBox->addItem(i.value(), i.key());
+    for (const auto &[key, value] : mList.asKeyValueRange()) {
+        mComboBox->addItem(value, key);
     }
 }
 
