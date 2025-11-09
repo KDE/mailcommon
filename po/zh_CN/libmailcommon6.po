@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/mailcommon/libmailcommon6.pot\n"
-"X-Crowdin-File-ID: 49084\n"
+"X-Crowdin-File: /kf6-stable/messages/mailcommon/libmailcommon6.pot\n"
+"X-Crowdin-File-ID: 52508\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -28,7 +28,7 @@ msgstr "过期"
 msgctxt "Expire messages after %1"
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] ""
+msgstr[0] "第 %v 天"
 
 #: collectionpage/collectionexpirywidget.cpp:37
 #: collectionpage/collectionexpirywidget.cpp:43
@@ -41,23 +41,23 @@ msgstr "从不"
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
-msgstr ""
+msgstr "保存设置并立即设置到期"
 
 #: collectionpage/collectionexpirywidget.cpp:68
 #, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
-msgstr ""
+msgstr "无效日期的过期消息"
 
 #: collectionpage/collectionexpirywidget.cpp:74
 #, kde-format
 msgid "Expire read messages after:"
-msgstr ""
+msgstr "到期已读信件期限："
 
 #: collectionpage/collectionexpirywidget.cpp:77
 #, kde-format
 msgid "Expire unread messages after:"
-msgstr ""
+msgstr "到期未读信件期限："
 
 #: collectionpage/collectionexpirywidget.cpp:91
 #, kde-format
@@ -75,12 +75,14 @@ msgid ""
 "Please select a folder to expire messages into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
+"请选择保存过期信件的文件夹。\n"
+"如果未设置，过期的信件将被直接删除。"
 
 #: collectionpage/collectionexpirywidget.cpp:174
 #, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
-msgstr ""
+msgstr "未选中文件夹"
 
 #: collectionpage/collectionexpirywidget.cpp:188
 #, kde-format
@@ -89,12 +91,14 @@ msgid ""
 "into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
+"不能选择当前文件夹，请选择其他文件夹用于存储过期信件。\n"
+"如果未设置，过期的信件将被直接删除。"
 
 #: collectionpage/collectionexpirywidget.cpp:190
 #, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
-msgstr ""
+msgstr "选中错误的文件夹"
 
 #: collectionpage/collectiongeneralpage.cpp:44
 #, kde-format
@@ -106,7 +110,7 @@ msgstr "常规"
 #, kde-format
 msgctxt "@label:textbox Name of the folder."
 msgid "Folder &Name:"
-msgstr ""
+msgstr "文件夹名称(&N)："
 
 #: collectionpage/collectiongeneralpage.cpp:110
 #, kde-format
@@ -120,6 +124,8 @@ msgid ""
 "all users having access to this folder. If disabled (the default), every "
 "user with access to this folder has their own unread state."
 msgstr ""
+"如果启用，此文件夹中消息的未读状态对于所有有权访问该文件夹的用户将是相同的。"
+"如果禁用（默认设置），每个有权访问此文件夹的用户都将拥有自己的未读状态。"
 
 #: collectionpage/collectiongeneralpage.cpp:212
 #, kde-format
@@ -127,12 +133,13 @@ msgid ""
 "You have configured this folder to contain groupware information. That means "
 "that this folder will disappear once the configuration dialog is closed."
 msgstr ""
+"您已将此文件夹配置为包含群件信息。这意味着该文件夹将在配置对话框关闭后消失。"
 
 #: collectionpage/collectiongeneralwidget.cpp:25
 #, kde-format
 msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
-msgstr ""
+msgstr "此文件夹中对新邮件/未读邮件的操作"
 
 #: collectionpage/collectiongeneralwidget.cpp:27
 #, kde-format
@@ -145,12 +152,17 @@ msgid ""
 "messages. This is useful for ignoring any new/unread mail in your trash and "
 "spam folder.</p></qt>"
 msgstr ""
+"<qt><p>如果启用此选项，您将收到有关此文件夹中新的/未读邮件的通知。此外，在前"
+"往下一个/上一个有未读邮件的文件夹时会在此文件夹停止。</p><p>如果您不希望收到"
+"有关此文件夹中新的/未读邮件的通知，并且希望在前往下一个/上一个有未读邮件的文"
+"件夹时跳过此文件夹，请取消选中此选项。这对于忽略垃圾箱和垃圾邮件文件夹中的任"
+"何新/未读邮件非常有用。</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
 #, kde-format
 msgctxt "@option:check"
 msgid "Keep replies in this folder"
-msgstr ""
+msgstr "保留回复邮件到此文件夹"
 
 #: collectionpage/collectiongeneralwidget.cpp:40
 #, kde-format
@@ -159,12 +171,14 @@ msgid ""
 "be put in this same folder after sending, instead of in the configured sent-"
 "mail folder."
 msgstr ""
+"如果希望将该文件夹内邮件的回复内容保留在此文件夹，而非配置的已发送邮件文件"
+"夹，请勾选此选项。"
 
 #: collectionpage/collectiongeneralwidget.cpp:46
 #, kde-format
 msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
-msgstr ""
+msgstr "在文件夹选择对话框中隐藏此文件夹"
 
 #: collectionpage/collectiongeneralwidget.cpp:48
 #, kde-kuit-format
@@ -173,12 +187,14 @@ msgid ""
 "Check this option if you do not want this folder to be shown in folder "
 "selection dialogs, such as the <interface>Jump to Folder</interface> dialog."
 msgstr ""
+"如果不想让此文件夹显示在文件夹选择对话框中，例如<interface>跳转到文件夹</"
+"interface>对话框，请勾选此选项。"
 
 #: collectionpage/collectiongeneralwidget.cpp:54
 #, kde-format
 msgctxt "@option:check"
 msgid "Use &default identity"
-msgstr ""
+msgstr "使用默认身份(&D)"
 
 #: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
@@ -189,6 +205,9 @@ msgid ""
 "signing or encryption keys automatically. Identities can be set up in the "
 "main configuration dialog. (Settings -> Configure KMail)"
 msgstr ""
+"选择在该文件夹中撰写新邮件或回复邮件时使用的发件人身份。这意味着，如果您位于"
+"某个工作文件夹中，可以让 KMail 自动使用相应的发件人电子邮件地址、签名以及签名"
+"或加密密钥。身份可以在主配置对话框中设置。（设置 -> 配置 KMail）"
 
 #: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
@@ -199,54 +218,54 @@ msgstr "发件人身份(&S)："
 #, kde-format
 msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
-msgstr ""
+msgstr "在此文件夹中使用自定义信件模板(&U)"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
 msgctxt "@action:button"
 msgid "&Copy Global Templates"
-msgstr ""
+msgstr "复制全局模板(&C)"
 
 #: collectionpage/collectionviewwidget.cpp:27
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
-msgstr ""
+msgstr "使用默认消息列表聚合："
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
-msgstr ""
+msgstr "使用默认消息列表主题："
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer HTML to text"
-msgstr ""
+msgstr "优先使用 HTML 格式"
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer text to HTML"
-msgstr ""
+msgstr "优先使用纯文本格式"
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
 msgctxt "@option:radio"
 msgid "Use Global Settings"
-msgstr ""
+msgstr "使用全局设置"
 
 #: collectionpage/collectionviewwidget.cpp:40
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
-msgstr ""
+msgstr "在信件列表中显示发件人/收件人列表"
 
 #: collectionpage/collectionviewwidget.cpp:43
 #, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
-msgstr ""
+msgstr "默认"
 
 #: collectionpage/collectionviewwidget.cpp:44
 #, kde-format
@@ -263,12 +282,12 @@ msgstr "收件人"
 #: collectionpage/collectionviewwidget.cpp:46
 #, kde-format
 msgid "Sho&w column:"
-msgstr ""
+msgstr "显示列(&W)："
 
 #: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
 msgid "Message format:"
-msgstr ""
+msgstr "消息格式："
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
 #, kde-format
@@ -280,7 +299,7 @@ msgstr "选择账户"
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
-msgstr ""
+msgstr "过滤账户缺失。请选择一个账户以用于过滤器“%1”："
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:40
 #: folder/folderrequester.cpp:74
@@ -293,24 +312,24 @@ msgstr "选择文件夹"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
-msgstr ""
+msgstr "文件夹路径 “%1”。"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:48
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
-msgstr ""
+msgstr "以下文件夹可以用于此过滤器："
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:69
 #, kde-format
 msgid "Please select a folder:"
-msgstr ""
+msgstr "请选择一个文件夹："
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:72
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
-msgstr ""
+msgstr "过滤文件夹缺失。请选择一个文件夹以用于过滤器“%1”："
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
 #, kde-format
@@ -323,7 +342,7 @@ msgstr "选择身份"
 msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
 "\"%1\""
-msgstr ""
+msgstr "过滤身份缺失。请选择一个身份以用于过滤器“%1”："
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
 #, kde-format
@@ -335,12 +354,12 @@ msgstr "选择声音"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
-msgstr ""
+msgstr "声音文件 “%1”。"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
-msgstr ""
+msgstr "声音文件缺失。请选择一个声音以用于过滤器“%1”。"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
@@ -352,17 +371,17 @@ msgstr "选择标签"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
-msgstr ""
+msgstr "标签 “%1”。"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:47
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
-msgstr ""
+msgstr "过滤器标签缺失。请选择一个标签以用于过滤器“%1”："
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
 msgid "Add Tag…"
-msgstr ""
+msgstr "添加标签"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
 #, kde-format
@@ -375,7 +394,7 @@ msgstr "选择模板"
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
 "\"%1\""
-msgstr ""
+msgstr "过滤器模板缺失。请选择一个模板以用于过滤器“%1”："
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
 #, kde-format
@@ -388,7 +407,7 @@ msgstr "选择传输"
 msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
 "\"%1\""
-msgstr ""
+msgstr "过滤器传输缺失。请选择一个传输以用于过滤器“%1”："
 
 #: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
 #, kde-format
@@ -404,12 +423,12 @@ msgstr " (默认)"
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:118
 #, kde-format
 msgid "Thunderbird File (*.dat)"
-msgstr ""
+msgstr "Thunderbird 文件 (*.dat)"
 
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
 msgid "### \"action '%1' not supported\""
-msgstr ""
+msgstr "### \"action '%1'不支持\""
 
 #: filter/filteractions/filteractionaddheader.cpp:22
 #, kde-format
@@ -420,7 +439,7 @@ msgstr "添加信头"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
-msgstr ""
+msgstr "使用值："
 
 #: filter/filteractions/filteractionaddheader.cpp:203
 #, kde-format
@@ -479,13 +498,13 @@ msgstr "KMail 过滤器"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
-msgstr ""
+msgstr "使用类别"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:125
 #, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
-msgstr ""
+msgstr "在地址簿中"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:135
 #, kde-format
@@ -494,6 +513,8 @@ msgid ""
 "If it is not accessible, the filter will fallback to the default address "
 "book."
 msgstr ""
+"定义了首选地址簿。\n"
+"若不可用，过滤器将回退到默认地址簿。"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:287
 #, kde-format
@@ -533,6 +554,8 @@ msgid ""
 "<p>If the email folder that you are filtering into is connected to a remote "
 "account (like an IMAP-Server) the decrypted content will go there.</p>"
 msgstr ""
+"<p>如果要将过滤的邮件文件夹连接到远程账户（如 IMAP 服务器），解密后的邮件内容"
+"将会发送到远程服务器。</p>"
 
 #: filter/filteractions/filteractiondelete.cpp:18
 #, kde-format
@@ -572,6 +595,9 @@ msgid ""
 "an email server and use several clients, each of them must be configured to "
 "enable decryption.</p>"
 msgstr ""
+"<p>一旦电子邮件被加密，您将需要使用包含私钥的加密设置来再次访问其内容。</"
+"p><p>如果您将电子邮件存储在邮件服务器上并使用多个客户端，则必须为每个客户端配"
+"置以启用解密。</p>"
 
 #: filter/filteractions/filteractionexec.cpp:15
 #, kde-format
@@ -593,7 +619,7 @@ msgstr "转发给"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
-msgstr ""
+msgstr "转发信件的收件人。"
 
 #: filter/filteractions/filteractionforward.cpp:94
 #, kde-format
@@ -610,22 +636,22 @@ msgstr "默认模板"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
-msgstr ""
+msgstr "转发时使用的模板"
 
 #: filter/filteractions/filteractionforward.cpp:113
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
-msgstr ""
+msgstr "设置此过滤器的转发模板。"
 
 #: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
 msgid "Forward to %1 with default template"
-msgstr ""
+msgstr "转发至 %1 使用的默认模板"
 
 #: filter/filteractions/filteractionforward.cpp:230
 #, kde-format
 msgid "Forward to %1 with template %2"
-msgstr ""
+msgstr "转发至 %1 使用的模板 %2"
 
 #: filter/filteractions/filteractionforward.cpp:236
 #: filter/filteractions/filteractionreplyto.cpp:51
@@ -703,13 +729,13 @@ msgstr "搜索字符串为空。"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
-msgstr ""
+msgstr "替换："
 
 #: filter/filteractions/filteractionrewriteheader.cpp:122
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
-msgstr ""
+msgstr "为："
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:29
 #, kde-format
@@ -873,13 +899,13 @@ msgstr "状态未定义。"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
-msgstr ""
+msgstr "请选择动作。"
 
 #: filter/filteractions/filteractionwithurl.cpp:22
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
-msgstr ""
+msgstr "帮助"
 
 #: filter/filteractions/filteractionwithurl.cpp:64
 #, kde-format
@@ -895,13 +921,13 @@ msgstr "转换成 Sieve 脚本"
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save…"
-msgstr ""
+msgstr "保存…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr ""
+msgstr "分享..."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -929,49 +955,49 @@ msgstr "Procmail 过滤器 %1"
 msgid ""
 "The following filters have not been saved because they were invalid (e.g. "
 "containing no actions or no search rules)."
-msgstr ""
+msgstr "以下过滤器由于无效 (如不包含任何操作或搜索规则) 而未被保存。"
 
 #: filter/filterimporterexporter.cpp:138
 #, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
-msgstr ""
+msgstr "导入 KMail 过滤器"
 
 #: filter/filterimporterexporter.cpp:146
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
-msgstr ""
+msgstr "导入 Evolution 过滤器"
 
 #: filter/filterimporterexporter.cpp:150
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
-msgstr ""
+msgstr "导入 Sylpheed 过滤器"
 
 #: filter/filterimporterexporter.cpp:154
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
-msgstr ""
+msgstr "导入 Procmail 过滤器"
 
 #: filter/filterimporterexporter.cpp:158
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
-msgstr ""
+msgstr "导入 Balsa 过滤器"
 
 #: filter/filterimporterexporter.cpp:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
-msgstr ""
+msgstr "导入 Claws Mail 过滤器"
 
 #: filter/filterimporterexporter.cpp:166
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
-msgstr ""
+msgstr "导入 Gmail 过滤器"
 
 #: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
 #: filter/filterimporterexporter.cpp:236
@@ -979,25 +1005,25 @@ msgstr ""
 msgid ""
 "The selected file is not readable. Your file access permissions might be "
 "insufficient."
-msgstr ""
+msgstr "所选文件不可读。您的文件访问权限可能不足。"
 
 #: filter/filterimporterexporter.cpp:316
 #, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
-msgstr ""
+msgstr "导出过滤器"
 
 #: filter/filterselectiondialog.cpp:29
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr ""
+msgstr "选择全部"
 
 #: filter/filterselectiondialog.cpp:30
 #, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
-msgstr ""
+msgstr "取消选择全部"
 
 #: filter/filterselectiondialog.cpp:34
 #, kde-format
@@ -1030,6 +1056,7 @@ msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
 msgstr ""
+"以下过滤器无效 (如不包含任何操作或搜索规则) 。是否丢弃或编辑无效过滤器？"
 
 #: filter/kmfilteraccountlist.cpp:24
 #, kde-format
@@ -1050,77 +1077,77 @@ msgstr "过滤规则"
 #: filter/kmfilterdialog.cpp:90
 #, kde-format
 msgid "Import…"
-msgstr ""
+msgstr "导入…"
 
 #: filter/kmfilterdialog.cpp:92
 #, kde-format
 msgid "Export…"
-msgstr ""
+msgstr "导出…"
 
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
 msgid "Convert to…"
-msgstr ""
+msgstr "转换为…"
 
 #: filter/kmfilterdialog.cpp:98
 #, kde-format
 msgctxt "@action"
 msgid "KMail filters"
-msgstr ""
+msgstr "KMail 过滤器"
 
 #: filter/kmfilterdialog.cpp:102
 #, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
-msgstr ""
+msgstr "Thunderbird 过滤器"
 
 #: filter/kmfilterdialog.cpp:106
 #, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
-msgstr ""
+msgstr "Evolution 过滤器"
 
 #: filter/kmfilterdialog.cpp:110
 #, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
-msgstr ""
+msgstr "Sylpheed 过滤器"
 
 #: filter/kmfilterdialog.cpp:114
 #, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
-msgstr ""
+msgstr "Procmail 过滤器"
 
 #: filter/kmfilterdialog.cpp:118
 #, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
-msgstr ""
+msgstr "Balsa 过滤器"
 
 #: filter/kmfilterdialog.cpp:122
 #, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
-msgstr ""
+msgstr "Claws Mail 过滤器"
 
 #: filter/kmfilterdialog.cpp:126
 #, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
-msgstr ""
+msgstr "Icedove 邮件过滤器"
 
 #: filter/kmfilterdialog.cpp:132
 #, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
-msgstr ""
+msgstr "Gmail 过滤器"
 
 #: filter/kmfilterdialog.cpp:140
 #, kde-format
 msgctxt "@action"
 msgid "Sieve script"
-msgstr ""
+msgstr "Sieve 脚本"
 
 #: filter/kmfilterdialog.cpp:162
 #, kde-format
@@ -1143,37 +1170,37 @@ msgstr "高级"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Filter actions:"
-msgstr ""
+msgstr "过滤器动作:"
 
 #: filter/kmfilterdialog.cpp:193
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
-msgstr ""
+msgstr "应用此过滤器到传入邮件："
 
 #: filter/kmfilterdialog.cpp:203
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all accounts"
-msgstr ""
+msgstr "来自全部账户"
 
 #: filter/kmfilterdialog.cpp:207
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
-msgstr ""
+msgstr "来自所有除了在线 IMAP 账户"
 
 #: filter/kmfilterdialog.cpp:211
 #, kde-format
 msgctxt "@option:radio"
 msgid "From selected accounts only"
-msgstr ""
+msgstr "来自选定的账户"
 
 #: filter/kmfilterdialog.cpp:219
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
-msgstr ""
+msgstr "应用过滤器到已发送邮件(&S)"
 
 #: filter/kmfilterdialog.cpp:221
 #, kde-format
@@ -1183,12 +1210,14 @@ msgid ""
 "also needs to be modified, please use \"Apply this filter <b>before</b> "
 "sending messages\".</p>"
 msgstr ""
+"<p>过滤器将在消息发送<b>之后</b>触发，并且仅影响消息的本地副本。</p><p>如果还"
+"需要修改收件人的副本，请使用“在发送消息<b>之前</b>应用此过滤器”。</p>"
 
 #: filter/kmfilterdialog.cpp:227
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
-msgstr ""
+msgstr "在发送信件之前应用此过滤器(&B)"
 
 #: filter/kmfilterdialog.cpp:229
 #, kde-format
@@ -1197,18 +1226,22 @@ msgid ""
 "will affect both the local copy and the sent copy of the message.</p><p>This "
 "is required if the recipient's copy also needs to be modified.</p>"
 msgstr ""
+"<p>过滤器将在消息<b>发送前</b>触发，并会同时影响消息的本地副本和已发送副本。"
+"</p><p>如果需要修改收件人收到的消息副本，此机制是必需的。通过在发送流程早期介"
+"入，筛选器能够确保修改同时应用于本地存储和传输内容，避免出现版本不一致的问"
+"题。</p>"
 
 #: filter/kmfilterdialog.cpp:234
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
-msgstr ""
+msgstr "在手动过滤时应用此过滤器(&F)"
 
 #: filter/kmfilterdialog.cpp:237
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
-msgstr ""
+msgstr "应用此过滤器到所有文件夹中的入站邮件"
 
 #: filter/kmfilterdialog.cpp:239
 #, kde-format
@@ -1218,24 +1251,27 @@ msgid ""
 "IMAP accounts where new emails may have already been moved to different "
 "folders by server-side filters.</p>"
 msgstr ""
+"<p>该过滤器将应用于从上述所有选定账户的所有文件夹中接收的邮件。这在使用本地过"
+"滤器处理 IMAP 账户时非常有用，因为新邮件可能已经被服务器端的过滤器移动到不同"
+"的文件夹中。</p>"
 
 #: filter/kmfilterdialog.cpp:245
 #, kde-format
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
-msgstr ""
+msgstr "如果过滤器匹配，在此处停止处理"
 
 #: filter/kmfilterdialog.cpp:248
 #, kde-format
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
-msgstr ""
+msgstr "将此过滤器添加到“应用过滤器”菜单中"
 
 #: filter/kmfilterdialog.cpp:266
 #, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
-msgstr ""
+msgstr "添加此过滤器到工具栏"
 
 #: filter/kmfilterdialog.cpp:273
 #, kde-format
@@ -1251,25 +1287,25 @@ msgstr "过滤器的图标："
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
-msgstr ""
+msgstr "运行选中的过滤器于： "
 
 #: filter/kmfilterdialog.cpp:293
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
-msgstr ""
+msgstr "立即运行"
 
 #: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
-msgstr ""
+msgstr "无法应用此过滤器，未选择文件夹。"
 
 #: filter/kmfilterdialog.cpp:421
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
-msgstr ""
+msgstr "未选中文件夹。"
 
 #: filter/kmfilterdialog.cpp:428
 #, kde-format
@@ -1277,25 +1313,25 @@ msgctxt "@info"
 msgid ""
 "Some filters were changed and not saved yet. You must save your filters "
 "before they can be applied."
-msgstr ""
+msgstr "一些过滤器已被更改且尚未保存。您必须保存您的过滤器以进行进一步操作。"
 
 #: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
-msgstr ""
+msgstr "过滤器已修改。"
 
 #: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
-msgstr ""
+msgstr "无法应用此过滤器，未选择过滤器。"
 
 #: filter/kmfilterdialog.cpp:438
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
-msgstr ""
+msgstr "未选中过滤器。"
 
 #: filter/kmfilterdialog.cpp:662
 #, kde-format
@@ -1305,12 +1341,12 @@ msgstr "未导入过滤器。"
 #: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
-msgstr ""
+msgstr "导入的过滤器："
 
 #: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
-msgstr ""
+msgstr "任意过滤器"
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format
@@ -1319,17 +1355,18 @@ msgid ""
 "Some filters were changed and not saved yet.<br>You must save your filters "
 "before they can be exported."
 msgstr ""
+"一些过滤器已被更改且尚未保存。<br>您必须保存您的过滤器以进行进一步操作。"
 
 #: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
-msgstr ""
+msgstr "我们不能将所有 KMail 过滤器转换为筛选脚本，但我们可以尝试进行 :)"
 
 #: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
-msgstr ""
+msgstr "将 KMail 过滤器转换为 sieve 脚本"
 
 #: filter/kmfilterdialog.cpp:733
 #, kde-format
@@ -1343,6 +1380,8 @@ msgid ""
 "</p><p>Click on any filter to edit it using the controls in the right-hand "
 "half of the dialog.</p></qt>"
 msgstr ""
+"<qt><p>这是已定义过滤器的列表。它们将从上到下依次处理。</p><p>单击任意过滤器"
+"以使用对话框右半部分的控件进行编辑。</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:85
 #, kde-format
@@ -1378,6 +1417,10 @@ msgid ""
 "accidentally, you can undo this by clicking on the <em>Down</em> button.</"
 "p></qt>"
 msgstr ""
+"<qt><p>点击此按钮将当前选中的过滤器在上方列表中 <em>向上</em> 移动一位。</"
+"p><p>列表中过滤器的顺序决定了它们在消息上应用的顺序：最上方的过滤器会首先被尝"
+"试。</p><p>如果您不小心点击了此按钮，可以通过点击 <em>向下</em> 按钮来撤销操"
+"作。</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:98
 #, kde-format
@@ -1389,6 +1432,10 @@ msgid ""
 "accidentally, you can undo this by clicking on the <em>Up</em> button.</p></"
 "qt>"
 msgstr ""
+"<qt><p>单击此按钮可将当前选中的过滤器在上方列表中 <em>向下</em> 移动一位。</"
+"p><p>过滤器在列表中的顺序决定了它们对消息进行匹配的顺序：最顶部的过滤器会首先"
+"被尝试。</p><p>如果您不小心单击了此按钮，可以通过单击 <em>向上</em> 按钮来撤"
+"销操作。</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:106
 #, kde-format
@@ -1398,6 +1445,8 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
+"<p>点击此按钮将当前选中的过滤器移至列表底部。</p><p>列表中过滤器的顺序决定了"
+"它们在消息上尝试的顺序：最顶部的过滤器会首先被尝试。</p>"
 
 #: filter/kmfilterlistbox.cpp:112
 #, kde-format
@@ -1407,6 +1456,8 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
+"<qt><p>单击此按钮将当前选中的过滤器移至列表顶部。</p><p>列表中过滤器的顺序决"
+"定了它们对消息进行匹配的顺序：最上方的过滤器会首先被应用。</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:142
 #, kde-format
@@ -1418,19 +1469,19 @@ msgstr "新建"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
-msgstr ""
+msgstr "复制"
 
 #: filter/kmfilterlistbox.cpp:144
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
-msgstr ""
+msgstr "删除"
 
 #: filter/kmfilterlistbox.cpp:145
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
-msgstr ""
+msgstr "重命名"
 
 #: filter/kmfilterlistbox.cpp:147
 #, kde-format
@@ -1440,6 +1491,9 @@ msgid ""
 "that later on.</p><p>If you have clicked this button accidentally, you can "
 "undo this by clicking on the <em>Delete</em> button.</p></qt>"
 msgstr ""
+"<qt><p>单击此按钮以创建新过滤器。</p><p>该过滤器将插入到当前选定过滤器的前"
+"面，您之后可以随时更改顺序。</p><p>如果您误点了此按钮，可以通过单击<em>删除</"
+"em>按钮撤销操作。</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:154
 #, kde-format
@@ -1448,6 +1502,8 @@ msgid ""
 "button accidentally, you can undo this by clicking on the <em>Delete</em> "
 "button.</p></qt>"
 msgstr ""
+"<qt><p>点击此按钮以复制过滤器。</p><p>如果您不小心点击了此按钮，可以通过点击"
+"<em>删除</em>按钮来撤销此操作。</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:158
 #, kde-format
@@ -1457,6 +1513,9 @@ msgid ""
 "deleted, but you can always leave the dialog by clicking <em>Cancel</em> to "
 "discard the changes made.</p></qt>"
 msgstr ""
+"<qt><p>单击此按钮以<em>删除</em>当前选中的过滤器。</p><p>过滤器一旦被删除，将"
+"无法恢复，但您始终可以通过单击<em>取消</em>来退出对话框，从而放弃所作的更改。"
+"</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:165
 #, kde-format
@@ -1467,6 +1526,9 @@ msgid ""
 "back, click this button and select <em>Clear</em> followed by <em>OK</em> in "
 "the appearing dialog.</p></qt>"
 msgstr ""
+"<qt><p>单击此按钮以重命名当前选中的过滤器。</p><p>只要过滤器名称以“&lt;”开"
+"头，就会自动命名。</p><p>如果不小心重命名了过滤器并希望恢复自动命名，请单击此"
+"按钮，然后在弹出的对话框中选择<em>清除</em>，再点击<em>确定</em>。</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:292
 #, kde-format
@@ -1487,13 +1549,13 @@ msgstr "您想要删除所选过滤器吗？"
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
-msgstr ""
+msgstr "移除过滤器"
 
 #: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
-msgstr ""
+msgstr "移除过滤器"
 
 #: filter/kmfilterlistbox.cpp:663
 #, kde-format
@@ -1506,6 +1568,8 @@ msgid ""
 "Rename filter \"%1\" to:\n"
 "(leave the field empty for automatic naming)"
 msgstr ""
+"重命名过滤器 \"%1\" 到:\n"
+"(留空以自动命名)"
 
 #: filter/mailfilter.cpp:132
 #, kde-format
@@ -1525,7 +1589,7 @@ msgstr "应用此操作时发现了一个问题。"
 #: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
-msgstr ""
+msgstr "<qt>过滤规则 <b>%1</b> 中包含过多的过滤操作。</qt>"
 
 #: filter/mailfilter.cpp:462
 #, kde-format
@@ -1533,17 +1597,19 @@ msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
 ">Ignoring it.</qt>"
 msgstr ""
+"<qt>未知的过滤器动作 <b>%1</b><br />位于过滤规则 <b>%2</b> 中。<br />已忽略。"
+"</qt>"
 
 #: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
-msgstr ""
+msgstr "已定义任意动作。"
 
 #: filter/soundtestwidget.cpp:35 filter/soundtestwidget.cpp:117
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
-msgstr ""
+msgstr "播放"
 
 #: filter/soundtestwidget.cpp:64
 #, kde-format
@@ -1555,7 +1621,7 @@ msgstr "选择声音文件"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
-msgstr ""
+msgstr "暂停"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: filter/ui/filterconfigwidget.ui:19
@@ -1585,31 +1651,31 @@ msgstr "应用选项"
 #: filter/ui/filterconfigwidget.ui:138
 #, kde-format
 msgid "Apply to incoming messages"
-msgstr ""
+msgstr "用于传入邮件"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyToSentCB)
 #: filter/ui/filterconfigwidget.ui:145
 #, kde-format
 msgid "Apply to sent messages"
-msgstr ""
+msgstr "用于传出邮件"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyBeforeSendCB)
 #: filter/ui/filterconfigwidget.ui:152
 #, kde-format
 msgid "Apply before sending messages"
-msgstr ""
+msgstr "在发送前应用"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyManuallyCB)
 #: filter/ui/filterconfigwidget.ui:159
 #, kde-format
 msgid "Apply on manual filtering"
-msgstr ""
+msgstr "应用于手动过滤"
 
 #. i18n: ectx: property (text), widget (QCheckBox, stopIfMatchesCB)
 #: filter/ui/filterconfigwidget.ui:169
 #, kde-format
 msgid "Stop processing if matches"
-msgstr ""
+msgstr "若匹配则停止处理"
 
 #. i18n: ectx: property (text), widget (QRadioButton, selectFile)
 #: filter/ui/selectthunderbirdfilterfileswidget.ui:29
@@ -1633,7 +1699,7 @@ msgstr "编辑账户顺序"
 #, kde-format
 msgctxt "@option:check"
 msgid "Use custom order"
-msgstr ""
+msgstr "使用自定义顺序"
 
 #: folder/accountconfigorderdialog.cpp:91
 #, kde-format
@@ -1651,7 +1717,7 @@ msgstr "下移"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
-msgstr ""
+msgstr "选择文件夹"
 
 #: folder/folderrequester.cpp:117
 #, kde-format
@@ -1667,18 +1733,18 @@ msgstr "选择选择一个文件夹"
 #, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
-msgstr ""
+msgstr "新建子文件夹(&N)..."
 
 #: folder/folderselectiondialog.cpp:67
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
-msgstr ""
+msgstr "在当前所选文件夹下创建新子文件夹"
 
 #: folder/folderselectiondialog.cpp:126
 #, kde-format
 msgid "&New Subfolder…"
-msgstr ""
+msgstr "新建子文件夹(&N)..."
 
 #: folder/folderselectiondialog.cpp:178
 #, kde-format
@@ -1701,7 +1767,7 @@ msgstr "无法创建文件夹：%1"
 #, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
-msgstr ""
+msgstr "文件夹创建失败"
 
 #: folder/foldertreeview.cpp:129
 #, kde-format
@@ -1740,47 +1806,47 @@ msgstr "项目排序"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Automatically, by Current Column"
-msgstr ""
+msgstr "自动，按当前列"
 
 #: folder/foldertreeview.cpp:184
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Manually, by Drag And Drop"
-msgstr ""
+msgstr "手动，使用拖放操作"
 
 #: folder/foldertreeview.cpp:474 folder/foldertreeview.cpp:516
 #, kde-format
 msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
-msgstr ""
+msgstr "<qt>是否前往文件夹<b>%1</b>中的下一条未读消息？</qt>"
 
 #: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
 #, kde-format
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
-msgstr ""
+msgstr "前往下一封未读信件"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
 #, kde-format
 msgctxt "@action:button"
 msgid "Go To"
-msgstr ""
+msgstr "转到"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
 #, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
-msgstr ""
+msgstr "不转到"
 
 #: folder/foldertreewidget.cpp:78
 #, kde-format
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
-msgstr ""
+msgstr "输入以过滤文件夹列表。"
 
 #: folder/foldertreewidget.cpp:322
 #, kde-format
 msgid "You can start typing to filter the list of folders."
-msgstr ""
+msgstr "输入以过滤文件夹列表。"
 
 #: folder/foldertreewidget.cpp:322
 #, kde-format
@@ -1795,7 +1861,7 @@ msgstr "%1 (离线)"
 #: folder/foldertreewidgetproxymodel.cpp:246
 #, kde-format
 msgid "%1 (Reached %2% quota)"
-msgstr ""
+msgstr "%1（已达到 %2% 配额）"
 
 #: job/backupjob.cpp:95
 #, kde-format
@@ -1805,7 +1871,7 @@ msgstr "无法获取文件夹列表"
 #: job/backupjob.cpp:122
 #, kde-format
 msgid "The operation was canceled by the user."
-msgstr ""
+msgstr "操作被用户取消。"
 
 #: job/backupjob.cpp:152
 #, kde-format
@@ -1816,12 +1882,12 @@ msgstr "无法归档文件夹：%1"
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
-msgstr ""
+msgstr "归档失败"
 
 #: job/backupjob.cpp:166
 #, kde-format
 msgid "Unable to finalize the archive file."
-msgstr ""
+msgstr "无法完成归档文件。"
 
 #: job/backupjob.cpp:171
 #, kde-format
@@ -1833,44 +1899,44 @@ msgstr "归档完成"
 msgid ""
 "Archiving folder '%1' successfully completed. The archive was written to the "
 "file '%2'."
-msgstr ""
+msgstr "归档文件夹“%1”已完成。存档已写入文件“%2”。"
 
 #: job/backupjob.cpp:188
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
-msgstr[0] ""
+msgstr[0] "大小为 %2 的 %1 条消息已被归档。"
 
 #: job/backupjob.cpp:192
 #, kde-format
 msgid "The archive file has a size of %1."
-msgstr ""
+msgstr "存档文件的大小为 %1。"
 
 #: job/backupjob.cpp:194
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
-msgstr ""
+msgstr "归档完成"
 
 #: job/backupjob.cpp:244
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
-msgstr ""
+msgstr "无法将消息写入归档文件夹 '%1'。"
 
 #: job/backupjob.cpp:268
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
-msgstr ""
+msgstr "下载文件夹“%1”中的消息失败。"
 
 #: job/backupjob.cpp:334
 #, kde-format
 msgid "Archiving folder %1"
-msgstr ""
+msgstr "归档文件夹 %1"
 
 #: job/backupjob.cpp:359
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
-msgstr ""
+msgstr "无法在归档文件中为文件夹“%1”创建文件夹结构。"
 
 #: job/backupjob.cpp:371
 #, kde-format
@@ -1880,7 +1946,7 @@ msgstr "无法获取文件夹 %1 的信件列表"
 #: job/backupjob.cpp:409
 #, kde-format
 msgid "Unable to open archive for writing."
-msgstr ""
+msgstr "无法写入归档文件"
 
 #: job/backupjob.cpp:413
 #, kde-format
@@ -1891,60 +1957,60 @@ msgstr "归档"
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
-msgstr[0] ""
+msgstr[0] "已从文件夹 %2 中移除 %1 条旧消息。"
 
 #: job/expiredeletejob.cpp:70
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
-msgstr ""
+msgstr "已取消从文件夹 %1 中删除旧消息。"
 
 #: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
-msgstr ""
+msgstr "从文件夹 %1 中删除旧消息失败。"
 
 #: job/expirejob.cpp:157
 #, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] ""
+msgstr[0] "正在从文件夹 %2 中移除 %1 条旧消息。"
 
 #: job/expirejob.cpp:164
 #, kde-format
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
-msgstr ""
+msgstr "无法从文件夹 %1 中过期消息：未找到目标文件夹 %2"
 
 #: job/expirejob.cpp:180
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] ""
+msgstr[0] "正在将 %1 条旧消息从文件夹 %2 移动到文件夹 %3 …"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
-msgstr[0] ""
+msgstr[0] "将 %1 条旧消息从文件夹 %2 移动到文件夹 %3 已完成。"
 
 #: job/expiremovejob.cpp:136
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
-msgstr ""
+msgstr "已取消将旧消息从文件夹 %1 移动到文件夹 %2 。"
 
 #: job/expiremovejob.cpp:143
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
-msgstr ""
+msgstr "将旧消息从文件夹 %1 移动到文件夹 %2 失败。"
 
 #: kernel/mailkernel.cpp:184 kernel/mailkernel.cpp:206
 #, kde-format
 msgid "You do not have read/write permission to your inbox folder."
-msgstr ""
+msgstr "您没有对收件文件夹的读写权限。"
 
 #: kernel/mailkernel.cpp:235
 #, kde-format
 msgid "The Email program encountered a fatal error and will terminate now"
-msgstr ""
+msgstr "程序出现严重错误，即将终止运行。"
 
 #: kernel/mailkernel.cpp:238
 #, kde-format
@@ -1953,6 +2019,9 @@ msgid ""
 "The error was:\n"
 "%1"
 msgstr ""
+"程序遇到严重错误，即将终止运行。\n"
+"错误为：\n"
+"%1"
 
 #: search/searchpattern.cpp:237
 #, kde-format
@@ -1985,7 +2054,7 @@ msgstr "信件正文"
 
 #: search/searchpatternedit.cpp:43
 msgid "Anywhere in Headers"
-msgstr ""
+msgstr "在标题中的任意位置"
 
 #: search/searchpatternedit.cpp:44
 msgid "All Recipients"
@@ -2037,46 +2106,46 @@ msgstr "仅加密"
 
 #: search/searchpatternedit.cpp:57
 msgid "Attachment"
-msgstr ""
+msgstr "附件"
 
 #: search/searchpatternedit.cpp:58
 msgid "Invitation"
-msgstr ""
+msgstr "邀请"
 
 #: search/searchpatternedit.cpp:146
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
-msgstr ""
+msgstr "选择或输入您自己的条件"
 
 #: search/searchpatternedit.cpp:147
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
-msgstr ""
+msgstr "选择或输入您自己的条件"
 
 #: search/searchpatternedit.cpp:584
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
-msgstr ""
+msgstr "匹配以下全部条件(&L)"
 
 #: search/searchpatternedit.cpp:585
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
-msgstr ""
+msgstr "匹配以下任意条件(&Y)"
 
 #: search/searchpatternedit.cpp:587
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match all messages"
-msgstr ""
+msgstr "匹配所有消息"
 
 #: search/searchpatternedit.cpp:598
 #, kde-format
 msgid "Filter criteria:"
-msgstr ""
+msgstr "筛选条件:"
 
 #: search/searchrule/searchrule.cpp:187
 #, kde-format
@@ -2138,12 +2207,12 @@ msgstr "有附件"
 #: search/searchrule/searchrule.cpp:223
 #, kde-format
 msgid "has an invitation"
-msgstr ""
+msgstr "已收到邀请"
 
 #: search/searchrule/searchrule.cpp:226
 #, kde-format
 msgid "has not an invitation"
-msgstr ""
+msgstr "未收到邀请。"
 
 #: search/searchrule/searchrule.cpp:229
 #, kde-format
@@ -2197,7 +2266,7 @@ msgstr "无正则表达式"
 #: search/searchrule/searchrule.cpp:267
 #, kde-format
 msgid "size equals not supported"
-msgstr ""
+msgstr "大小匹配不受支持"
 
 #: search/searchrule/searchrule.cpp:270
 #, kde-format
@@ -2208,37 +2277,37 @@ msgstr "不支持大小等于"
 #: search/searchrule/searchrule.cpp:494
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
-msgstr ""
+msgstr "“%1”不支持条件“%2”"
 
 #: search/searchrule/searchrule.cpp:309
 #, kde-format
 msgid "<status> not implemented/supported"
-msgstr ""
+msgstr "<status> 未实现/不支持"
 
 #: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<any header> not implemented/supported"
-msgstr ""
+msgstr "<any header> 未实现/不支持"
 
 #: search/searchrule/searchrule.cpp:315
 #, kde-format
 msgid "<contents> not implemented/supported"
-msgstr ""
+msgstr "<contents> 未实现/不支持"
 
 #: search/searchrule/searchrule.cpp:318
 #, kde-format
 msgid "<age in days> not implemented/supported"
-msgstr ""
+msgstr "<age in days> 未实现/不支持"
 
 #: search/searchrule/searchrule.cpp:321
 #, kde-format
 msgid "<date> not implemented/supported"
-msgstr ""
+msgstr "<date> 未实现/不支持"
 
 #: search/searchrule/searchrule.cpp:324
 #, kde-format
 msgid "<recipients> not implemented/supported"
-msgstr ""
+msgstr "<recipients> 未实现/不支持"
 
 #: search/searchrule/searchrule.cpp:326
 #, kde-format
@@ -2248,7 +2317,7 @@ msgstr "<Tag> 不被支持"
 #: search/searchrule/searchrule.cpp:329
 #, kde-format
 msgid "<message> not implemented/supported"
-msgstr ""
+msgstr "<message> 未实现/不支持"
 
 #: search/searchrule/searchruledate.cpp:20
 #, kde-format
@@ -2268,23 +2337,23 @@ msgstr "字符串为空。"
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 #: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has"
-msgstr ""
+msgstr "包含"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 #: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has not"
-msgstr ""
+msgstr "不包含"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:54
 #, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
-msgstr ""
+msgstr "附件"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:91
 #, kde-format
 msgid "has attachment"
-msgstr ""
+msgstr "包含附件"
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
@@ -2328,7 +2397,7 @@ msgstr "不是"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
-msgstr ""
+msgstr "已加密"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:91
 #, kde-format
@@ -2404,12 +2473,12 @@ msgstr "不在地址簿中"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
-msgstr ""
+msgstr "邀请"
 
 #: search/widgethandler/invitationwidgethandler.cpp:91
 #, kde-format
 msgid "has invitation"
-msgstr ""
+msgstr "包含邀请"
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147
@@ -2448,7 +2517,7 @@ msgstr " kB"
 msgctxt "Unit suffix where units are days."
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] ""
+msgstr[0] "第 %v 天"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:28
 msgctxt "message status"
@@ -2524,48 +2593,48 @@ msgstr "有附件"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
-msgstr ""
+msgstr "点击按钮选择附件文件"
 
 #: snippets/snippetattachmentwidget.cpp:34
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
-msgstr ""
+msgstr "选择附件"
 
 #: snippets/snippetattachmentwidget.cpp:35
 #, kde-format
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
-msgstr ""
+msgstr "自定义附件名称"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Filename:"
-msgstr ""
+msgstr "文件名："
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
 #, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
-msgstr ""
+msgstr "插入变量"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
 #: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
-msgstr ""
+msgstr "选择附件"
 
 #: snippets/snippetselectattachmentwidget.cpp:45
 #, kde-format
 msgid "Do you want to delete selected attachment?"
-msgstr ""
+msgstr "您是否想要删除选中附件？"
 
 #: snippets/snippetsmanager.cpp:156
 #, kde-format
@@ -2582,7 +2651,7 @@ msgstr "添加代码片断"
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Snippet"
-msgstr "编辑代码片断"
+msgstr "编辑短语"
 
 #: snippets/snippetsmanager.cpp:288
 #, kde-kuit-format
@@ -2590,7 +2659,7 @@ msgctxt "@info"
 msgid ""
 "Do you really want to remove snippet \"%1\"?<nl/><warning>There is no way to "
 "undo the removal.</warning>"
-msgstr ""
+msgstr "您确定要删除短语“%1”吗？<nl/><warning>此操作无法撤销。</warning>"
 
 #: snippets/snippetsmanager.cpp:307
 #, kde-format
@@ -2611,6 +2680,8 @@ msgid ""
 "Do you really want to remove group \"%1\" along with all its snippets?<nl/"
 "><warning>There is no way to undo the removal.</warning>"
 msgstr ""
+"您确定要删除分组“%1”及分组内的所有短语吗？<nl/><warning>此操作无法撤销。</"
+"warning>"
 
 #: snippets/snippetsmanager.cpp:371
 #, kde-format
@@ -2622,49 +2693,49 @@ msgstr "您真地想移除组“%1”吗？"
 #, kde-format
 msgctxt "@action"
 msgid "Snippet %1"
-msgstr "片断 %1"
+msgstr "短语 %1"
 
 #: snippets/snippetsmanager.cpp:560
 #, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
-msgstr ""
+msgstr "添加模板…"
 
 #: snippets/snippetsmanager.cpp:562
 #, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
-msgstr ""
+msgstr "编辑短语…"
 
 #: snippets/snippetsmanager.cpp:564
 #, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
-msgstr ""
+msgstr "删除短语"
 
 #: snippets/snippetsmanager.cpp:567
 #, kde-format
 msgctxt "@action"
 msgid "Add Group…"
-msgstr ""
+msgstr "添加分组..."
 
 #: snippets/snippetsmanager.cpp:569
 #, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
-msgstr ""
+msgstr "重命名分组..."
 
 #: snippets/snippetsmanager.cpp:571
 #, kde-format
 msgctxt "@action"
 msgid "Remove Group"
-msgstr ""
+msgstr "删除分组"
 
 #: snippets/snippetsmanager.cpp:574
 #, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
-msgstr ""
+msgstr "插入短语"
 
 #: snippets/snippetsmodel.cpp:524 snippets/snippetsmodel.cpp:553
 #, kde-format
@@ -2675,18 +2746,18 @@ msgstr "您真地想更新片段吗？"
 #, kde-format
 msgctxt "@title:window"
 msgid "Update snippet"
-msgstr ""
+msgstr "更新短语"
 
 #: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
 #, kde-format
 msgctxt "@action:button"
 msgid "Update"
-msgstr ""
+msgstr "更新"
 
 #: snippets/snippettreeview.cpp:65
 #, kde-format
 msgid "Text Snippets"
-msgstr ""
+msgstr "文本短语"
 
 #: snippets/snippetvariabledialog.cpp:37
 #, kde-format
@@ -2698,13 +2769,13 @@ msgstr "为变量输入值"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
-msgstr ""
+msgstr "为“%1”输入替换值："
 
 #: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
-msgstr ""
+msgstr "设为默认值(&D)"
 
 #: snippets/snippetvariabledialog.cpp:48
 #, kde-format
@@ -2712,7 +2783,7 @@ msgctxt "@info:tooltip"
 msgid ""
 "Enable this to save the value entered to the right as the default value for "
 "this variable"
-msgstr ""
+msgstr "启用此选项可将右侧输入的值保存为该变量的默认值。"
 
 #: snippets/snippetvariabledialog.cpp:51
 #, kde-format
@@ -2722,6 +2793,8 @@ msgid ""
 "you use the same variable later, even in another snippet, the value entered "
 "to the right will be the default value for that variable."
 msgstr ""
+"如果启用此选项，右侧输入的值将会被保存。如果之后在其他代码片段中使用相同的变"
+"量，右侧输入的值将作为该变量的默认值。"
 
 #: snippets/snippetwidget.cpp:58
 #, kde-format
@@ -2752,7 +2825,7 @@ msgstr "分组："
 #: snippets/ui/snippetwidget.ui:69
 #, kde-format
 msgid "Subject:"
-msgstr ""
+msgstr "主题："
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: snippets/ui/snippetwidget.ui:88
@@ -2782,7 +2855,7 @@ msgstr "片断(&S)："
 #: snippets/ui/snippetwidget.ui:157
 #, kde-format
 msgid "Variables"
-msgstr ""
+msgstr "变量"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: snippets/ui/snippetwidget.ui:181
@@ -2823,49 +2896,49 @@ msgstr "名称："
 #, kde-format
 msgctxt "@option:check"
 msgid "Change te&xt color:"
-msgstr ""
+msgstr "更改文本颜色(&X)："
 
 #: tag/tagwidget.cpp:82
 #, kde-format
 msgctxt "@option:check"
 msgid "Change &background color:"
-msgstr ""
+msgstr "更改背景颜色(&B)："
 
 #: tag/tagwidget.cpp:94
 #, kde-format
 msgctxt "@option:check"
 msgid "Change fo&nt:"
-msgstr ""
+msgstr "更改字体(&N)："
 
 #: tag/tagwidget.cpp:100
 #, kde-format
 msgctxt "@option:check"
 msgid "&Bold"
-msgstr ""
+msgstr "粗体(&B)"
 
 #: tag/tagwidget.cpp:104
 #, kde-format
 msgctxt "@option:check"
 msgid "&Italics"
-msgstr ""
+msgstr "斜体(&I)"
 
 #: tag/tagwidget.cpp:122
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
-msgstr ""
+msgstr "信件标记图标(&I)："
 
 #: tag/tagwidget.cpp:133
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
-msgstr ""
+msgstr "快捷键(&U)："
 
 #: tag/tagwidget.cpp:144
 #, kde-format
 msgctxt "@option:check"
 msgid "Enable &toolbar button"
-msgstr ""
+msgstr "启用工具栏按钮(&T)"
 
 #: widgets/favoritecollectionwidget.cpp:91
 #, kde-format
@@ -2881,13 +2954,13 @@ msgstr "模式"
 #, kde-format
 msgctxt "@action"
 msgid "List Mode"
-msgstr ""
+msgstr "列表模式"
 
 #: widgets/favoritecollectionwidget.cpp:124
 #, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
-msgstr ""
+msgstr "图标模式"
 
 #: widgets/favoritecollectionwidget.cpp:235
 #, kde-format
@@ -2919,7 +2992,7 @@ msgstr "转发信件"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
-msgstr ""
+msgstr "选择自动转发的收信地址："
 
 #: widgets/redirectdialog.cpp:152
 #, kde-format
@@ -2935,13 +3008,13 @@ msgstr "传输："
 #, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
-msgstr ""
+msgstr "立即发送(&S)"
 
 #: widgets/redirectdialog.cpp:159
 #, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
-msgstr ""
+msgstr "稍后发送(&L)"
 
 #: widgets/redirectdialog.cpp:207
 #, kde-format
@@ -2952,17 +3025,17 @@ msgstr "您不能重定向没有地址的邮件。"
 #, kde-format
 msgctxt "@title:window"
 msgid "Empty Redirection Address"
-msgstr ""
+msgstr "清空自动转发地址"
 
 #: widgets/redirectwidget.cpp:39
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
-msgstr ""
+msgstr "使用地址选择对话框"
 
 #: widgets/redirectwidget.cpp:41
 #, kde-format
 msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
-msgstr ""
+msgstr "此按钮打开一个单独对话框，您可以从所有可用地址中选择收件人。"
