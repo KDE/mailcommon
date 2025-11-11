@@ -21,10 +21,11 @@ using namespace Qt::Literals::StringLiterals;
 #include <templateparser/customtemplates_kfg.h>
 
 #include <KComboBox>
-#include <KLineEdit>
+#include <KLineEditEventHandler>
 #include <KLocalizedString>
 
 #include <QHBoxLayout>
+#include <QLineEdit>
 
 using namespace MailCommon;
 
@@ -87,9 +88,9 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
 
     auto addressRequester = qobject_cast<Akonadi::EmailAddressRequester *>(addressEdit);
     Q_ASSERT(addressRequester);
-    KLineEdit *lineEdit = addressRequester->lineEdit();
+    QLineEdit *lineEdit = addressRequester->lineEdit();
     lineEdit->setClearButtonEnabled(true);
-    lineEdit->setTrapReturnKey(true);
+    KLineEditEventHandler::catchReturnKey(lineEdit);
     lineEdit->setToolTip(i18nc("@info:tooltip", "The addressee to whom the message will be forwarded."));
     lineEdit->setWhatsThis(i18n("The filter will forward the message to the addressee entered here."));
 
