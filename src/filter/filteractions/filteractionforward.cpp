@@ -14,6 +14,7 @@ using namespace Qt::Literals::StringLiterals;
 #include "kernel/mailkernel.h"
 
 #include <Akonadi/EmailAddressRequester>
+#include <KLineEditEventHandler>
 #include <MessageComposer/MessageFactoryNG>
 #include <MessageComposer/MessageSender>
 #include <MessageCore/StringUtil>
@@ -21,8 +22,8 @@ using namespace Qt::Literals::StringLiterals;
 #include <templateparser/customtemplates_kfg.h>
 
 #include <KComboBox>
-#include <KLineEdit>
 #include <KLocalizedString>
+#include <QLineEdit>
 
 #include <QHBoxLayout>
 
@@ -87,8 +88,8 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
 
     auto addressRequester = qobject_cast<Akonadi::EmailAddressRequester *>(addressEdit);
     Q_ASSERT(addressRequester);
-    KLineEdit *lineEdit = addressRequester->lineEdit();
-    lineEdit->setClearButtonEnabled(true);
+    QLineEdit *lineEdit = addressRequester->lineEdit();
+    KLineEditEventHandler::catchReturnKey(lineEdit);
     lineEdit->setTrapReturnKey(true);
     lineEdit->setToolTip(i18nc("@info:tooltip", "The addressee to whom the message will be forwarded."));
     lineEdit->setWhatsThis(i18n("The filter will forward the message to the addressee entered here."));
