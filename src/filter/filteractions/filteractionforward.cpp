@@ -90,7 +90,6 @@ QWidget *FilterActionForward::createParamWidget(QWidget *parent) const
     Q_ASSERT(addressRequester);
     QLineEdit *lineEdit = addressRequester->lineEdit();
     KLineEditEventHandler::catchReturnKey(lineEdit);
-    lineEdit->setTrapReturnKey(true);
     lineEdit->setToolTip(i18nc("@info:tooltip", "The addressee to whom the message will be forwarded."));
     lineEdit->setWhatsThis(i18n("The filter will forward the message to the addressee entered here."));
 
