@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-10-30 00:43+0000\n"
+"POT-Creation-Date: 2025-11-12 00:44+0000\n"
 "PO-Revision-Date: 2020-08-08 16:45+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -661,53 +661,53 @@ msgstr "Udfør kommando"
 msgid "Missing command."
 msgstr "Mangler kommando."
 
-#: filter/filteractions/filteractionforward.cpp:37
+#: filter/filteractions/filteractionforward.cpp:38
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
 msgstr "Videresend til"
 
-#: filter/filteractions/filteractionforward.cpp:93
+#: filter/filteractions/filteractionforward.cpp:94
 #, fuzzy, kde-format
 #| msgid "The addressee to whom the message will be forwarded."
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Den adresserede til hvem brevet vil blive videresendt."
 
-#: filter/filteractions/filteractionforward.cpp:94
+#: filter/filteractions/filteractionforward.cpp:95
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
 msgstr "Filteret vil videresende brevet til den adresserede der angives her."
 
-#: filter/filteractions/filteractionforward.cpp:101
-#: filter/filteractions/filteractionforward.cpp:200
+#: filter/filteractions/filteractionforward.cpp:102
+#: filter/filteractions/filteractionforward.cpp:201
 #, kde-format
 msgid "Default Template"
 msgstr "Standardskabelon"
 
-#: filter/filteractions/filteractionforward.cpp:112
+#: filter/filteractions/filteractionforward.cpp:113
 #, fuzzy, kde-format
 #| msgid "The template used when forwarding"
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Den skabelon der bruges til videresendelse"
 
-#: filter/filteractions/filteractionforward.cpp:113
+#: filter/filteractions/filteractionforward.cpp:114
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
 msgstr "Angiv den videresendelsesskabelon der skal bruges med dette filter."
 
-#: filter/filteractions/filteractionforward.cpp:228
+#: filter/filteractions/filteractionforward.cpp:229
 #, kde-format
 msgid "Forward to %1 with default template"
 msgstr "Videresend til %1 med standardskabelonen"
 
-#: filter/filteractions/filteractionforward.cpp:230
+#: filter/filteractions/filteractionforward.cpp:231
 #, kde-format
 msgid "Forward to %1 with template %2"
 msgstr "Videresend til %1 med skabelonen %2"
 
-#: filter/filteractions/filteractionforward.cpp:236
+#: filter/filteractions/filteractionforward.cpp:237
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."

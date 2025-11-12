@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-10-30 00:43+0000\n"
+"POT-Creation-Date: 2025-11-12 00:44+0000\n"
 "PO-Revision-Date: 2025-10-03 10:11+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -634,51 +634,51 @@ msgstr "Komutu Yürüt"
 msgid "Missing command."
 msgstr "Eksik komut."
 
-#: filter/filteractions/filteractionforward.cpp:37
+#: filter/filteractions/filteractionforward.cpp:38
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
 msgstr "İlet"
 
-#: filter/filteractions/filteractionforward.cpp:93
+#: filter/filteractions/filteractionforward.cpp:94
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "İletinin iletileceği kişi"
 
-#: filter/filteractions/filteractionforward.cpp:94
+#: filter/filteractions/filteractionforward.cpp:95
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
 msgstr "Bu süzgeç, iletiyi buraya girilen kişiye iletecektir."
 
-#: filter/filteractions/filteractionforward.cpp:101
-#: filter/filteractions/filteractionforward.cpp:200
+#: filter/filteractions/filteractionforward.cpp:102
+#: filter/filteractions/filteractionforward.cpp:201
 #, kde-format
 msgid "Default Template"
 msgstr "Öntanımlı Şablon"
 
-#: filter/filteractions/filteractionforward.cpp:112
+#: filter/filteractions/filteractionforward.cpp:113
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "İletilirken kullanılan şablon"
 
-#: filter/filteractions/filteractionforward.cpp:113
+#: filter/filteractions/filteractionforward.cpp:114
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
 msgstr "Bu süzgeç ile kullanılacak iletme şablonunu ayarlayın."
 
-#: filter/filteractions/filteractionforward.cpp:228
+#: filter/filteractions/filteractionforward.cpp:229
 #, kde-format
 msgid "Forward to %1 with default template"
 msgstr "%1 kişisine öntanımlı şablon ile ilet"
 
-#: filter/filteractions/filteractionforward.cpp:230
+#: filter/filteractions/filteractionforward.cpp:231
 #, kde-format
 msgid "Forward to %1 with template %2"
 msgstr "%1 kişisine %2 şablonu ile ilet"
 
-#: filter/filteractions/filteractionforward.cpp:236
+#: filter/filteractions/filteractionforward.cpp:237
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."

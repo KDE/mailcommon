@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-10-30 00:43+0000\n"
+"POT-Creation-Date: 2025-11-12 00:44+0000\n"
 "PO-Revision-Date: 2025-01-05 10:12+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -648,51 +648,51 @@ msgstr "Executa una ordre"
 msgid "Missing command."
 msgstr "Falta una ordre."
 
-#: filter/filteractions/filteractionforward.cpp:37
+#: filter/filteractions/filteractionforward.cpp:38
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
 msgstr "Reenvia a"
 
-#: filter/filteractions/filteractionforward.cpp:93
+#: filter/filteractions/filteractionforward.cpp:94
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "El destinatari al qual se li reenviarà el missatge."
 
-#: filter/filteractions/filteractionforward.cpp:94
+#: filter/filteractions/filteractionforward.cpp:95
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
 msgstr "El filtre reenviarà el missatge al destinatari introduït ací."
 
-#: filter/filteractions/filteractionforward.cpp:101
-#: filter/filteractions/filteractionforward.cpp:200
+#: filter/filteractions/filteractionforward.cpp:102
+#: filter/filteractions/filteractionforward.cpp:201
 #, kde-format
 msgid "Default Template"
 msgstr "Plantilla predeterminada"
 
-#: filter/filteractions/filteractionforward.cpp:112
+#: filter/filteractions/filteractionforward.cpp:113
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "La plantilla utilitzada en reenviar"
 
-#: filter/filteractions/filteractionforward.cpp:113
+#: filter/filteractions/filteractionforward.cpp:114
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
 msgstr "Establix la plantilla de reenviament que s'utilitzarà amb este filtre."
 
-#: filter/filteractions/filteractionforward.cpp:228
+#: filter/filteractions/filteractionforward.cpp:229
 #, kde-format
 msgid "Forward to %1 with default template"
 msgstr "Reenvia a %1 amb la plantilla predeterminada"
 
-#: filter/filteractions/filteractionforward.cpp:230
+#: filter/filteractions/filteractionforward.cpp:231
 #, kde-format
 msgid "Forward to %1 with template %2"
 msgstr "Reenvia a %1 amb la plantilla %2"
 
-#: filter/filteractions/filteractionforward.cpp:236
+#: filter/filteractions/filteractionforward.cpp:237
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."

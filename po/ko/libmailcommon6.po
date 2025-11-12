@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-10-30 00:43+0000\n"
+"POT-Creation-Date: 2025-11-12 00:44+0000\n"
 "PO-Revision-Date: 2025-04-06 23:33+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -614,51 +614,51 @@ msgstr "명령 실행"
 msgid "Missing command."
 msgstr "명령이 없습니다."
 
-#: filter/filteractions/filteractionforward.cpp:37
+#: filter/filteractions/filteractionforward.cpp:38
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
 msgstr "다음으로 전달"
 
-#: filter/filteractions/filteractionforward.cpp:93
+#: filter/filteractions/filteractionforward.cpp:94
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "메시지를 전달할 메일 주소입니다."
 
-#: filter/filteractions/filteractionforward.cpp:94
+#: filter/filteractions/filteractionforward.cpp:95
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
 msgstr "이 필터는 여기에 입력한 주소로 메시지를 전달합니다."
 
-#: filter/filteractions/filteractionforward.cpp:101
-#: filter/filteractions/filteractionforward.cpp:200
+#: filter/filteractions/filteractionforward.cpp:102
+#: filter/filteractions/filteractionforward.cpp:201
 #, kde-format
 msgid "Default Template"
 msgstr "기본 템플릿"
 
-#: filter/filteractions/filteractionforward.cpp:112
+#: filter/filteractions/filteractionforward.cpp:113
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "전달할 때 사용할 템플릿"
 
-#: filter/filteractions/filteractionforward.cpp:113
+#: filter/filteractions/filteractionforward.cpp:114
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
 msgstr "이 필터에 사용할 전달 템플릿을 선택하십시오."
 
-#: filter/filteractions/filteractionforward.cpp:228
+#: filter/filteractions/filteractionforward.cpp:229
 #, kde-format
 msgid "Forward to %1 with default template"
 msgstr "기본 템플릿을 사용하여 %1에게 전달"
 
-#: filter/filteractions/filteractionforward.cpp:230
+#: filter/filteractions/filteractionforward.cpp:231
 #, kde-format
 msgid "Forward to %1 with template %2"
 msgstr "%2 템플릿을 사용하여 %1에게 전달"
 
-#: filter/filteractions/filteractionforward.cpp:236
+#: filter/filteractions/filteractionforward.cpp:237
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-10-30 00:43+0000\n"
+"POT-Creation-Date: 2025-11-12 00:44+0000\n"
 "PO-Revision-Date: 2022-02-17 11:52+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -657,53 +657,53 @@ msgstr "Execută comanda"
 msgid "Missing command."
 msgstr ""
 
-#: filter/filteractions/filteractionforward.cpp:37
+#: filter/filteractions/filteractionforward.cpp:38
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
 msgstr "Înaintează către"
 
-#: filter/filteractions/filteractionforward.cpp:93
+#: filter/filteractions/filteractionforward.cpp:94
 #, fuzzy, kde-format
 #| msgid "The addressee to whom the message will be forwarded."
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Destinatarul căruia îi va fi înaintat mesajul"
 
-#: filter/filteractions/filteractionforward.cpp:94
+#: filter/filteractions/filteractionforward.cpp:95
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
 msgstr "Filtrul va înainta mesajul către destinatarul introdus aici."
 
-#: filter/filteractions/filteractionforward.cpp:101
-#: filter/filteractions/filteractionforward.cpp:200
+#: filter/filteractions/filteractionforward.cpp:102
+#: filter/filteractions/filteractionforward.cpp:201
 #, kde-format
 msgid "Default Template"
 msgstr "Șablon implicit"
 
-#: filter/filteractions/filteractionforward.cpp:112
+#: filter/filteractions/filteractionforward.cpp:113
 #, fuzzy, kde-format
 #| msgid "The template used when forwarding"
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Șablonul utilizat la înaintare"
 
-#: filter/filteractions/filteractionforward.cpp:113
+#: filter/filteractions/filteractionforward.cpp:114
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
 msgstr "Stabiliți șablonul de înaintare ce va fi utiilzat cu acest filtru."
 
-#: filter/filteractions/filteractionforward.cpp:228
+#: filter/filteractions/filteractionforward.cpp:229
 #, kde-format
 msgid "Forward to %1 with default template"
 msgstr "Înaintează către %1 cu șablon implicit"
 
-#: filter/filteractions/filteractionforward.cpp:230
+#: filter/filteractions/filteractionforward.cpp:231
 #, kde-format
 msgid "Forward to %1 with template %2"
 msgstr "Înaintează către %1 cu șablonul %2"
 
-#: filter/filteractions/filteractionforward.cpp:236
+#: filter/filteractions/filteractionforward.cpp:237
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."
