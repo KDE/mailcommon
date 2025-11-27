@@ -122,7 +122,7 @@ public:
 
 Q_SIGNALS:
     void insertSnippet();
-    void insertSnippetInfo(const SnippetInfo &info);
+    void insertSnippetInfo(const MailCommon::SnippetInfo &info);
 
 private:
     //@cond PRIVATE

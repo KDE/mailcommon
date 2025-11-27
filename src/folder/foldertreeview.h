@@ -92,7 +92,7 @@ protected Q_SLOTS:
     void slotHeaderContextMenuChangeSortingPolicy(bool);
 
 Q_SIGNALS:
-    void changeTooltipsPolicy(FolderTreeWidget::ToolTipDisplayPolicy);
+    void changeTooltipsPolicy(MailCommon::FolderTreeWidget::ToolTipDisplayPolicy);
     void manualSortingChanged(bool actif);
     void newTabRequested(bool);
 

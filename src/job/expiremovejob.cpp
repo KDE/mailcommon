@@ -40,7 +40,7 @@ void ExpireMoveJob::start()
     }
     Akonadi::Item::List ids;
     ids.reserve(100);
-    for (const Akonadi::Item &item : mRemovedMsgs) {
+    for (const Akonadi::Item &item : std::as_const(mRemovedMsgs)) {
         ids.append(item);
         if (ids.count() >= 100) {
             auto job = new Akonadi::ItemMoveJob(ids, mMoveToFolder, this);

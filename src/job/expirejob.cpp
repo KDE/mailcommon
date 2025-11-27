@@ -68,11 +68,11 @@ void ExpireJob::execute()
 
         if (unreadDays > 0) {
             qCDebug(MAILCOMMON_LOG) << "ExpireJob: deleting unread older than" << unreadDays << "days";
-            mMaxUnreadTime = QDateTime::currentDateTime().toSecsSinceEpoch() - unreadDays * 3600 * 24;
+            mMaxUnreadTime = QDateTime::currentSecsSinceEpoch() - unreadDays * 3600 * 24;
         }
         if (readDays > 0) {
             qCDebug(MAILCOMMON_LOG) << "ExpireJob: deleting read older than" << readDays << "days";
-            mMaxReadTime = QDateTime::currentDateTime().toSecsSinceEpoch() - readDays * 3600 * 24;
+            mMaxReadTime = QDateTime::currentSecsSinceEpoch() - readDays * 3600 * 24;
         }
 
         if ((mMaxUnreadTime == 0) && (mMaxReadTime == 0)) {

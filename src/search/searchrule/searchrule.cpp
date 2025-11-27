@@ -303,7 +303,7 @@ void SearchRule::generateSieveScript(QStringList &requireModules, QString &code)
             code += u'"' + i18n("\"%1\" is not supported with condition \"%2\"", QLatin1StringView(mField), conditionToString(mFunction)) + u'"';
             return;
         }
-        code += QStringLiteral("size %1 %2K").arg(comparison).arg(QString::number(mContents.toInt() + offset));
+        code += QStringLiteral("size %1 %2K").arg(comparison, QString::number(mContents.toInt() + offset));
     } else if (mField == "<status>") {
         // TODO ?
         code += u'"' + i18n("<status> not implemented/supported") + u'"';

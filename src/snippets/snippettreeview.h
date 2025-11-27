@@ -36,7 +36,7 @@ protected:
     void contextMenuEvent(QContextMenuEvent *) override;
 
 Q_SIGNALS:
-    void insertSnippetInfo(const SnippetInfo &info);
+    void insertSnippetInfo(const MailCommon::SnippetInfo &info);
 
 private:
     MailCommon::SnippetsManager *mSnippetsManager = nullptr;

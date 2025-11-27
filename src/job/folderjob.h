@@ -67,7 +67,7 @@ Q_SIGNALS:
      * This signal is emitted by the FolderJob destructor => do NOT downcast
      * the job to a subclass!
      */
-    void result(FolderJob *job);
+    void result(MailCommon::FolderJob *job);
 
 protected:
     /**

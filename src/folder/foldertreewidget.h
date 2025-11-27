@@ -123,7 +123,7 @@ protected:
     [[nodiscard]] bool event(QEvent *e) override;
 
 protected Q_SLOTS:
-    void slotChangeTooltipsPolicy(FolderTreeWidget::ToolTipDisplayPolicy);
+    void slotChangeTooltipsPolicy(MailCommon::FolderTreeWidget::ToolTipDisplayPolicy);
     void slotManualSortingChanged(bool);
     void slotFilterFixedString(const QString &);
     void slotGeneralFontChanged();
