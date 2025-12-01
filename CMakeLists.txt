@@ -91,7 +91,7 @@ find_package(
     REQUIRED Widgets DBus Xml Multimedia
 )
 
-set(GPGMEPP_LIB_VERSION "1.20.0")
+set(GPGMEPP_LIB_VERSION "1.23.2")
 find_package(Gpgmepp ${GPGMEPP_LIB_VERSION} CONFIG REQUIRED)
 find_package(QGpgmeQt6 ${GPGMEPP_LIB_VERSION} CONFIG REQUIRED)
 
