@@ -1655,7 +1655,7 @@ msgstr "Ha ocorregut un error crític. El procés es para ací."
 #: filter/mailfilter.cpp:148
 #, kde-format
 msgid "A problem was found while applying this action."
-msgstr "S'ha trobat un problema en aplicar esta acció."
+msgstr "S'ha trobat un problema mentre s'aplicava esta acció."
 
 #: filter/mailfilter.cpp:428
 #, kde-format
@@ -1950,7 +1950,7 @@ msgstr "Operació cancel·lada per l'usuari."
 #: job/backupjob.cpp:152
 #, kde-format
 msgid "Failed to archive the folder '%1'."
-msgstr "No s'ha pogut arxivar la carpeta «%1»."
+msgstr "Ha fallat mentre s'arxivava la carpeta «%1»."
 
 #: job/backupjob.cpp:156
 #, kde-format
@@ -1998,12 +1998,13 @@ msgstr "L'arxivament ha finalitzat"
 #: job/backupjob.cpp:244
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
-msgstr "No s'ha pogut escriure un missatge a dins de la carpeta d'arxiu «%1»."
+msgstr ""
+"Ha fallat mentre s'escrivia un missatge a dins de la carpeta d'arxiu «%1»."
 
 #: job/backupjob.cpp:268
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
-msgstr "No s'ha pogut baixar un missatge en la carpeta «%1»."
+msgstr "Ha fallat mentre es baixava un missatge a la carpeta «%1»."
 
 #: job/backupjob.cpp:334
 #, kde-format
