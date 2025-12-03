@@ -68,9 +68,9 @@ FilterAction::ReturnCode FilterActionSetTransport::process(ItemContext &context,
     }
 
     const auto msg = context.item().payload<KMime::Message::Ptr>();
-    auto header = new KMime::Headers::Generic("X-KMail-Transport");
+    auto header = std::unique_ptr<KMime::Headers::Generic>(new KMime::Headers::Generic("X-KMail-Transport"));
     header->fromUnicodeString(argsAsString());
-    msg->setHeader(header);
+    msg->setHeader(std::move(header));
     msg->assemble();
 
     context.setNeedsPayloadStore();

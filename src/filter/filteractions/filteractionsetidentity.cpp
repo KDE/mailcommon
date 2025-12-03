@@ -62,7 +62,7 @@ FilterAction::ReturnCode FilterActionSetIdentity::process(ItemContext &context, 
         currentId = hrd->asUnicodeString().trimmed().toUInt();
     }
     if (currentId != mParameter) {
-        auto header = new KMime::Headers::Generic("X-KMail-Identity");
+        auto header = std::unique_ptr<KMime::Headers::Generic>(new KMime::Headers::Generic("X-KMail-Identity"));
         header->fromUnicodeString(QString::number(mParameter));
         if (applyOnOutbound) {
             msg->from()->fromUnicodeString(ident.fullEmailAddr());
@@ -73,7 +73,7 @@ FilterAction::ReturnCode FilterActionSetIdentity::process(ItemContext &context, 
                 }
             }
         }
-        msg->setHeader(header);
+        msg->setHeader(std::move(header));
         msg->assemble();
 
         context.setNeedsPayloadStore();

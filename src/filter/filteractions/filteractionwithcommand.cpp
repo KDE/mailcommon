@@ -255,9 +255,9 @@ FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &co
             }
             if (uid != newUid) {
                 aMsg->setFrozen(false);
-                auto header = new KMime::Headers::Generic("X-UID");
+                auto header = std::unique_ptr<KMime::Headers::Generic>(new KMime::Headers::Generic("X-UID"));
                 header->fromUnicodeString(uid);
-                aMsg->setHeader(header);
+                aMsg->setHeader(std::move(header));
                 aMsg->assemble();
             }
 
