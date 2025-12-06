@@ -30,7 +30,7 @@
 
 using namespace MailCommon;
 
-QList<MailFilter *> FilterImporterExporter::readFiltersFromConfig(const KSharedConfig::Ptr &config, QStringList &emptyFilters)
+QList<MailFilter *> FilterImporterExporter::readFiltersFromConfig(const KSharedConfig::Ptr &config, bool interactive, QStringList &emptyFilters)
 {
     const KConfigGroup group = config->group("General");
 
@@ -43,7 +43,7 @@ QList<MailFilter *> FilterImporterExporter::readFiltersFromConfig(const KSharedC
 
         const KConfigGroup group = config->group(groupName);
         bool update = false;
-        auto filter = new MailFilter(group, true /*interactive*/, update);
+        auto filter = new MailFilter(group, interactive, update);
         filter->purify();
         if (update) {
             filterNeedUpdate = true;
@@ -189,7 +189,7 @@ QList<MailFilter *> FilterImporterExporter::importFilters(bool &canceled, Filter
     switch (type) {
     case KMailFilter: {
         const KSharedConfig::Ptr config = KSharedConfig::openConfig(fileName);
-        imported = readFiltersFromConfig(config, emptyFilter);
+        imported = readFiltersFromConfig(config, true /*interactive*/, emptyFilter);
         break;
     }
     case IcedoveFilter:

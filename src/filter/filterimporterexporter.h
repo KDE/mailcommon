@@ -75,9 +75,11 @@ public:
 
     /**
      * Reads a list of filters from the given @p config file.
-     * Return list of empty filter
+     * @p emptyfilters will contain filters that are empty after "purification", which removes aspects that are not applicable,
+     * usually because of references to nonexistent external entities such as accounts, folders, etc.
+     * If @p interactive is true, a dialog will offer to select a different account for any filter that refers to an account that doesn't exist.
      */
-    static QList<MailFilter *> readFiltersFromConfig(const KSharedConfig::Ptr &config, QStringList &emptyFilter);
+    static QList<MailFilter *> readFiltersFromConfig(const KSharedConfig::Ptr &config, bool interactive, QStringList &emptyFilters);
 
 private:
     //@cond PRIVATE
