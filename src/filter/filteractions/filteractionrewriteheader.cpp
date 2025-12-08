@@ -71,12 +71,12 @@ FilterAction::ReturnCode FilterActionRewriteHeader::process(ItemContext &context
     if (newValue != oldValue) {
         msg->removeHeader(param.constData());
 
-        KMime::Headers::Base *newheader = KMime::Headers::createHeader(param);
+        auto newheader = KMime::Headers::createHeader(param);
         if (!newheader) {
-            newheader = new KMime::Headers::Generic(param.constData());
+            newheader = std::make_unique<KMime::Headers::Generic>(param.constData());
         }
         newheader->fromUnicodeString(newValue);
-        msg->setHeader(newheader);
+        msg->setHeader(std::move(newheader));
         msg->assemble();
 
         context.setNeedsPayloadStore();

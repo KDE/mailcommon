@@ -28,12 +28,12 @@ FilterAction::ReturnCode FilterActionReplyTo::process(ItemContext &context, bool
     }
     const auto msg = context.item().payload<KMime::Message::Ptr>();
     const QByteArray replyTo("Reply-To");
-    KMime::Headers::Base *header = KMime::Headers::createHeader(replyTo);
+    auto header = KMime::Headers::createHeader(replyTo);
     if (!header) {
-        header = new KMime::Headers::Generic(replyTo.constData());
+        header = std::make_unique<KMime::Headers::Generic>(replyTo.constData());
     }
     header->fromUnicodeString(mParameter);
-    msg->setHeader(header);
+    msg->setHeader(std::move(header));
     msg->assemble();
 
     context.setNeedsPayloadStore();
