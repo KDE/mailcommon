@@ -149,7 +149,7 @@ void substituteMessageHeaders(const KMime::Message::Ptr &aMsg, QString &result)
         const KMime::Headers::Base *header = aMsg->headerByType(rmatch.captured(1).toLatin1().constData());
         QString replacement;
         if (header) {
-            replacement = KShell::quoteArg(QString::fromLatin1(header->as7BitString(false)));
+            replacement = KShell::quoteArg(QString::fromLatin1(header->as7BitString()));
         }
         const int start = rmatch.capturedStart(0);
         result.replace(start, rmatch.capturedLength(0), replacement);
