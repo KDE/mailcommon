@@ -40,13 +40,13 @@ FilterAction::ReturnCode FilterActionAddHeader::process(ItemContext &context, bo
 
     auto msg = context.item().payload<KMime::Message::Ptr>();
 
-    KMime::Headers::Base *header = KMime::Headers::createHeader(mParameter.toLatin1());
+    auto header = KMime::Headers::createHeader(mParameter.toLatin1());
     if (!header) {
-        header = new KMime::Headers::Generic(mParameter.toLatin1().constData());
+        header = std::make_unique<KMime::Headers::Generic>(mParameter.toLatin1().constData());
     }
     header->fromUnicodeString(mValue);
 
-    msg->setHeader(header);
+    msg->setHeader(std::move(header));
     msg->assemble();
 
     context.setNeedsPayloadStore();
