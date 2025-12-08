@@ -156,7 +156,7 @@ void CryptoUtils::copyHeader(const KMime::Headers::Base *header, KMime::Message:
     if (!newHdr) {
         newHdr = std::make_unique<KMime::Headers::Generic>(header->type());
     }
-    newHdr->from7BitString(header->as7BitString(false));
+    newHdr->from7BitString(header->as7BitString());
     msg->appendHeader(std::move(newHdr));
 }
 
