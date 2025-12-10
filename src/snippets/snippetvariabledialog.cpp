@@ -100,7 +100,7 @@ void SnippetVariableDialog::readConfig()
 {
     create(); // ensure a window is created
     windowHandle()->resize(QSize(300, 350));
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySnippetVariableDialogConfigGroupName));
+    const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySnippetVariableDialogConfigGroupName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
 }

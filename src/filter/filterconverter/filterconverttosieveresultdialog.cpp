@@ -93,7 +93,7 @@ void FilterConvertToSieveResultDialog::readConfig()
 {
     create(); // ensure a window is created
     windowHandle()->resize(QSize(500, 300));
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterConvertToSieveResultDialogName));
+    const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterConvertToSieveResultDialogName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
 }

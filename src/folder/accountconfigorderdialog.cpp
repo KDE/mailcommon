@@ -241,7 +241,7 @@ void AccountConfigOrderDialog::readConfig()
 {
     create(); // ensure a window is created
     windowHandle()->resize(QSize(500, 150));
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myAccountConfigOrderDialogName));
+    const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myAccountConfigOrderDialogName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
 }

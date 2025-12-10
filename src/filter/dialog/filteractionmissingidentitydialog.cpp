@@ -66,7 +66,7 @@ void FilterActionMissingIdentityDialog::readConfig()
 {
     create(); // ensure a window is created
     windowHandle()->resize(QSize(500, 300));
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterActionMissingIdentityDialogConfigGroupName));
+    const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterActionMissingIdentityDialogConfigGroupName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
 }

@@ -62,7 +62,7 @@ void SelectThunderbirdFilterFilesDialog::readConfig()
 {
     create(); // ensure a window is created
     windowHandle()->resize(QSize(500, 300));
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySelectThunderbirdFilterFilesDialogGroupName));
+    const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySelectThunderbirdFilterFilesDialogGroupName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
