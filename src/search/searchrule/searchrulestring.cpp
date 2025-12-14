@@ -75,11 +75,11 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     if (isEmpty()) {
         return false;
     }
-    if (!item.hasPayload<KMime::Message::Ptr>()) {
+    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
         return false;
     }
 
-    const auto msg = item.payload<KMime::Message::Ptr>();
+    const auto msg = item.payload<QSharedPointer<KMime::Message>>();
     Q_ASSERT(msg.data());
 
     if (!msg->hasHeader("From")) {

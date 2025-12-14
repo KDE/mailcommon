@@ -53,7 +53,7 @@ private:
         KMime::MDN::SendingMode mode = KMime::MDN::SendingMode::SentAutomatically;
         bool doSend = false;
     };
-    [[nodiscard]] MAILCOMMON_NO_EXPORT MDNSendingInfo modifyItem(const KMime::Message::Ptr &msg);
+    [[nodiscard]] MAILCOMMON_NO_EXPORT MDNSendingInfo modifyItem(const QSharedPointer<KMime::Message> &msg);
     Akonadi::Item mItem;
     ResponseMDN mResponse = Unknown;
     KMime::MDN::SendingMode mSendingMode = KMime::MDN::SendingMode::SentAutomatically;

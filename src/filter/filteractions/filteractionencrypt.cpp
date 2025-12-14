@@ -125,12 +125,12 @@ FilterAction::ReturnCode FilterActionEncrypt::process(ItemContext &context, bool
     }
 
     auto &item = context.item();
-    if (!item.hasPayload<KMime::Message::Ptr>()) {
+    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
         qCWarning(MAILCOMMON_LOG) << "Item" << item.id() << "does not contain KMime::Message payload!";
         return ErrorNeedComplete;
     }
 
-    auto msg = item.payload<KMime::Message::Ptr>();
+    auto msg = item.payload<QSharedPointer<KMime::Message>>();
     if (KMime::isEncrypted(msg.data())) {
         if (mReencrypt) {
             // Make sure the email is not already encrypted by the mKey - this is

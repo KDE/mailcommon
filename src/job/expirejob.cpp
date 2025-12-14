@@ -106,11 +106,11 @@ void ExpireJob::itemFetchResult(KJob *job)
 
     const Akonadi::Item::List items = qobject_cast<Akonadi::ItemFetchJob *>(job)->items();
     for (const Akonadi::Item &item : items) {
-        if (!item.hasPayload<KMime::Message::Ptr>()) {
+        if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
             continue;
         }
 
-        const auto mb = item.payload<KMime::Message::Ptr>();
+        const auto mb = item.payload<QSharedPointer<KMime::Message>>();
         Akonadi::MessageStatus status;
         status.setStatusFromFlags(item.flags());
         if ((status.isImportant() || status.isToAct() || status.isWatched()) && SettingsIf->excludeImportantMailFromExpiry()) {

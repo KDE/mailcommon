@@ -50,7 +50,7 @@ bool SearchPattern::matches(const Akonadi::Item &item, bool ignoreBody) const
     if (isEmpty()) {
         return true;
     }
-    if (!item.hasPayload<KMime::Message::Ptr>()) {
+    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
         return false;
     }
 

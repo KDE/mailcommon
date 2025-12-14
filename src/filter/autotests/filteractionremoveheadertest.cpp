@@ -43,9 +43,9 @@ void FilterActionRemoveHeaderTest::shouldBeEmpty()
 void FilterActionRemoveHeaderTest::shouldNotExecuteActionWhenParameterIsEmpty()
 {
     MailCommon::FilterActionRemoveHeader filter(this);
-    KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
+    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
     Akonadi::Item item;
-    item.setPayload<KMime::Message::Ptr>(msgPtr);
+    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
     filter.argsFromString(QString());
@@ -76,11 +76,11 @@ void FilterActionRemoveHeaderTest::shouldRemoveHeader()
         "test";
 
     MailCommon::FilterActionRemoveHeader filter(this);
-    KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
+    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
     msgPtr->setContent(data);
     msgPtr->parse();
     Akonadi::Item item;
-    item.setPayload<KMime::Message::Ptr>(msgPtr);
+    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
     filter.argsFromString(QStringLiteral("testheader"));
@@ -103,11 +103,11 @@ void FilterActionRemoveHeaderTest::shouldNotTryToRemoveHeaderWhenItDoesntExist()
         "test";
 
     MailCommon::FilterActionRemoveHeader filter(this);
-    KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
+    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
     msgPtr->setContent(data);
     msgPtr->parse();
     Akonadi::Item item;
-    item.setPayload<KMime::Message::Ptr>(msgPtr);
+    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
     filter.argsFromString(QStringLiteral("testheader"));
@@ -141,11 +141,11 @@ void FilterActionRemoveHeaderTest::shouldRemoveMultiHeader()
         "test";
 
     MailCommon::FilterActionRemoveHeader filter(this);
-    KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
+    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
     msgPtr->setContent(data);
     msgPtr->parse();
     Akonadi::Item item;
-    item.setPayload<KMime::Message::Ptr>(msgPtr);
+    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
     filter.argsFromString(QStringLiteral("testheader"));

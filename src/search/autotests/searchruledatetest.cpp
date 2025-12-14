@@ -74,11 +74,11 @@ void SearchRuleDateTest::shouldMatchDate()
     QFETCH(bool, match);
     MailCommon::SearchRuleDate searchrule("<date>", function, matchdate.toString(Qt::ISODate));
 
-    KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
+    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
     msgPtr->date(true)->setDateTime(QDateTime(maildate.startOfDay()));
 
     Akonadi::Item item;
-    item.setPayload<KMime::Message::Ptr>(msgPtr);
+    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
     QCOMPARE(searchrule.matches(item), match);
 }
 

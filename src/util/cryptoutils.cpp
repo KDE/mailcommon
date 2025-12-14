@@ -69,7 +69,7 @@ bool CryptoUtils::isEncrypted(const KMime::Message *msg)
     return isInlinePGP(msg);
 }
 
-KMime::Message::Ptr CryptoUtils::decryptMessage(const KMime::Message::Ptr &msg, bool &wasEncrypted)
+QSharedPointer<KMime::Message> CryptoUtils::decryptMessage(const QSharedPointer<KMime::Message> &msg, bool &wasEncrypted)
 {
     GpgME::Protocol protoName = GpgME::UnknownProtocol;
     bool inlinePGP = false;
@@ -150,7 +150,7 @@ KMime::Message::Ptr CryptoUtils::decryptMessage(const KMime::Message::Ptr &msg, 
     return assembleMessage(msg, &decCt);
 }
 
-void CryptoUtils::copyHeader(const KMime::Headers::Base *header, KMime::Message::Ptr msg)
+void CryptoUtils::copyHeader(const KMime::Headers::Base *header, QSharedPointer<KMime::Message> msg)
 {
     auto newHdr = KMime::Headers::createHeader(header->type());
     if (!newHdr) {
@@ -165,9 +165,9 @@ bool CryptoUtils::isContentHeader(const KMime::Headers::Base *header)
     return header->is("Content-Type") || header->is("Content-Transfer-Encoding") || header->is("Content-Disposition");
 }
 
-KMime::Message::Ptr CryptoUtils::assembleMessage(const KMime::Message::Ptr &orig, const KMime::Content *newContent)
+QSharedPointer<KMime::Message> CryptoUtils::assembleMessage(const QSharedPointer<KMime::Message> &orig, const KMime::Content *newContent)
 {
-    auto out = KMime::Message::Ptr::create();
+    auto out = QSharedPointer<KMime::Message>::create();
     // Use the new content as message content
     out->setBody(const_cast<KMime::Content *>(newContent)->encodedBody());
     out->parse();

@@ -150,7 +150,7 @@ void SearchRuleEncryptionTest::shouldMatchMessage()
     QFETCH(SearchRule::Function, function);
     QFETCH(bool, shouldMatch);
 
-    auto msg = KMime::Message::Ptr::create();
+    auto msg = QSharedPointer<KMime::Message>::create();
     msg->setContent(message);
     msg->parse();
 

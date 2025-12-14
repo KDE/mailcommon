@@ -24,9 +24,9 @@ void FilterActionPipeThroughTest::testWithNoCommand()
      */
 
     FilterActionPipeThrough filter(this);
-    KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
+    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
     Akonadi::Item item;
-    item.setPayload<KMime::Message::Ptr>(msgPtr);
+    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
     ItemContext context(item, true);
 
     filter.argsFromString(QLatin1StringView(""));
@@ -56,10 +56,10 @@ void FilterActionPipeThroughTest::testWithInvalidCommandPath()
         "--simple boundary--\n";
 
     FilterActionPipeThrough filter(this);
-    KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
+    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
     Akonadi::Item item;
     msgPtr->setContent(data);
-    item.setPayload<KMime::Message::Ptr>(msgPtr);
+    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
     ItemContext context(item, true);
 
     filter.argsFromString(QStringLiteral("/home/cat "));
@@ -74,9 +74,9 @@ void FilterActionPipeThroughTest::testCommandWithoutOutput()
      */
 
     FilterActionPipeThrough filter(this);
-    KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
+    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
     Akonadi::Item item;
-    item.setPayload<KMime::Message::Ptr>(msgPtr);
+    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
     ItemContext context(item, true);
 
     filter.argsFromString(QStringLiteral("echo ''"));
@@ -111,9 +111,9 @@ void FilterActionPipeThroughTest::testWithMailOutput()
         "--simple boundary--\n";
 
     FilterActionPipeThrough filter(this);
-    KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
+    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
     Akonadi::Item item;
-    item.setPayload<KMime::Message::Ptr>(msgPtr);
+    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
     ItemContext context(item, true);
 
     setOutput(&filter, data);
@@ -147,10 +147,10 @@ void FilterActionPipeThroughTest::testCopyMail()
         "--simple boundary--\n";
 
     FilterActionPipeThrough filter(this);
-    KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
+    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
     Akonadi::Item item;
     msgPtr->setContent(data);
-    item.setPayload<KMime::Message::Ptr>(msgPtr);
+    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
     ItemContext context(item, true);
 
     filter.argsFromString(QStringLiteral("cat "));
@@ -183,11 +183,11 @@ void FilterActionPipeThroughTest::testXUidUnchange()
         "--simple boundary--\n";
 
     FilterActionPipeThrough filter(this);
-    KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
+    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
     Akonadi::Item item;
     msgPtr->setContent(data);
     msgPtr->parse();
-    item.setPayload<KMime::Message::Ptr>(msgPtr);
+    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
     ItemContext context(item, true);
 
     filter.argsFromString(QStringLiteral("cat "));
@@ -263,11 +263,11 @@ void FilterActionPipeThroughTest::testXUidRemoved()
         "\n";
 
     FilterActionPipeThrough filter(this);
-    KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
+    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
     Akonadi::Item item;
     msgPtr->setContent(data);
     msgPtr->parse();
-    item.setPayload<KMime::Message::Ptr>(msgPtr);
+    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
     ItemContext context(item, true);
     setOutput(&filter, send);
     QCOMPARE(filter.process(context, false), FilterAction::GoOn);
@@ -349,11 +349,11 @@ void FilterActionPipeThroughTest::testXUidChange()
         "\n";
 
     FilterActionPipeThrough filter(this);
-    KMime::Message::Ptr msgPtr = KMime::Message::Ptr(new KMime::Message());
+    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
     Akonadi::Item item;
     msgPtr->setContent(data);
     msgPtr->parse();
-    item.setPayload<KMime::Message::Ptr>(msgPtr);
+    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
     ItemContext context(item, true);
     setOutput(&filter, send);
     QCOMPARE(filter.process(context, false), FilterAction::GoOn);

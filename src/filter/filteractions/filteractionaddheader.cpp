@@ -38,7 +38,7 @@ FilterAction::ReturnCode FilterActionAddHeader::process(ItemContext &context, bo
         return ErrorButGoOn;
     }
 
-    auto msg = context.item().payload<KMime::Message::Ptr>();
+    auto msg = context.item().payload<QSharedPointer<KMime::Message>>();
 
     auto header = KMime::Headers::createHeader(mParameter.toLatin1());
     if (!header) {

@@ -33,11 +33,11 @@ bool SearchRuleNumerical::isEmpty() const
 
 bool SearchRuleNumerical::matches(const Akonadi::Item &item) const
 {
-    if (!item.hasPayload<KMime::Message::Ptr>()) {
+    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
         return false;
     }
 
-    const auto msg = item.payload<KMime::Message::Ptr>();
+    const auto msg = item.payload<QSharedPointer<KMime::Message>>();
 
     QString msgContents;
     qint64 numericalMsgContents = 0;

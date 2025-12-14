@@ -40,7 +40,7 @@ void MDNWarningJob::start()
         return;
     }
 
-    const KMime::Message::Ptr message = MessageComposer::Util::message(mItem);
+    const QSharedPointer<KMime::Message> message = MessageComposer::Util::message(mItem);
     if (!message) {
         qCWarning(MAILCOMMON_LOG) << " It's not a valid message";
         deleteLater();
@@ -57,7 +57,7 @@ void MDNWarningJob::start()
         factory.setIdentityManager(mKernel->identityManager());
         factory.setFolderIdentity(MailCommon::Util::folderIdentity(mItem));
 
-        const KMime::Message::Ptr mdn = factory.createMDN(KMime::MDN::ManualAction, KMime::MDN::Displayed, mdnSend.mode, quote);
+        const QSharedPointer<KMime::Message> mdn = factory.createMDN(KMime::MDN::ManualAction, KMime::MDN::Displayed, mdnSend.mode, quote);
         if (mdn) {
             if (!mKernel->msgSender()->send(mdn)) {
                 qCDebug(MAILCOMMON_LOG) << "Sending failed.";
@@ -83,7 +83,7 @@ bool MDNWarningJob::canStart() const
     return mItem.isValid() && (mResponse != Unknown);
 }
 
-MDNWarningJob::MDNSendingInfo MDNWarningJob::modifyItem(const KMime::Message::Ptr &msg)
+MDNWarningJob::MDNSendingInfo MDNWarningJob::modifyItem(const QSharedPointer<KMime::Message> &msg)
 {
     MDNSendingInfo result;
     auto mdnStateAttr = new Akonadi::MDNStateAttribute(Akonadi::MDNStateAttribute::MDNStateUnknown);
