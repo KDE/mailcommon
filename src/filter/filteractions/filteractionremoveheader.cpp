@@ -46,7 +46,7 @@ FilterAction::ReturnCode FilterActionRemoveHeader::process(ItemContext &context,
         return ErrorButGoOn;
     }
 
-    auto msg = context.item().payload<QSharedPointer<KMime::Message>>();
+    auto msg = context.item().payload<std::shared_ptr<KMime::Message>>();
     const QByteArray param(mParameter.toLatin1());
     bool headerRemove = false;
     while (msg->removeHeader(param.constData())) {

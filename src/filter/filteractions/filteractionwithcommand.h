@@ -51,7 +51,7 @@ public:
      * the name of a tempfile holding the n'th message part, with n=0
      * meaning the body of the message.
      */
-    [[nodiscard]] virtual QString substituteCommandLineArgsFor(const QSharedPointer<KMime::Message> &aMsg, QList<QTemporaryFile *> &aTempFileList) const;
+    [[nodiscard]] virtual QString substituteCommandLineArgsFor(const std::shared_ptr<KMime::Message> &aMsg, QList<QTemporaryFile *> &aTempFileList) const;
 
     [[nodiscard]] virtual ReturnCode genericProcess(ItemContext &context, bool filtering) const;
 };

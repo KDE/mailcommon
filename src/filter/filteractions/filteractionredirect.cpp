@@ -34,13 +34,13 @@ FilterAction::ReturnCode FilterActionRedirect::process(ItemContext &context, boo
         return ErrorButGoOn;
     }
 
-    QSharedPointer<KMime::Message> msg = MessageComposer::Util::message(context.item());
+    std::shared_ptr<KMime::Message> msg = MessageComposer::Util::message(context.item());
 
     MessageComposer::MessageFactoryNG factory(msg, context.item().id());
     factory.setFolderIdentity(Util::folderIdentity(context.item()));
     factory.setIdentityManager(KernelIf->identityManager());
 
-    QSharedPointer<KMime::Message> rmsg = factory.createRedirect(mParameter);
+    std::shared_ptr<KMime::Message> rmsg = factory.createRedirect(mParameter);
     if (!rmsg) {
         return ErrorButGoOn;
     }

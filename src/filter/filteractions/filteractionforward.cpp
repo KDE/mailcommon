@@ -45,7 +45,7 @@ FilterAction::ReturnCode FilterActionForward::process(ItemContext &context, bool
         return ErrorButGoOn;
     }
 
-    const auto msg = context.item().payload<QSharedPointer<KMime::Message>>();
+    const auto msg = context.item().payload<std::shared_ptr<KMime::Message>>();
     // avoid endless loops when this action is used in a filter
     // which applies to sent messages
     if (MessageCore::StringUtil::addressIsInAddressList(mParameter, QStringList(msg->to()->asUnicodeString()))) {
@@ -58,7 +58,7 @@ FilterAction::ReturnCode FilterActionForward::process(ItemContext &context, bool
     factory.setFolderIdentity(Util::folderIdentity(context.item()));
     factory.setTemplate(mTemplate);
 
-    QSharedPointer<KMime::Message> fwdMsg = factory.createForward();
+    std::shared_ptr<KMime::Message> fwdMsg = factory.createForward();
     fwdMsg->to()->fromUnicodeString(fwdMsg->to()->asUnicodeString() + u',' + mParameter, "utf-8");
     if (!KernelIf->msgSender()->send(fwdMsg, MessageComposer::MessageSender::SendDefault)) {
         qCWarning(MAILCOMMON_LOG) << "FilterAction: could not forward message (sending failed)";

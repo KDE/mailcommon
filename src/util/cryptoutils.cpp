@@ -69,7 +69,7 @@ bool CryptoUtils::isEncrypted(const KMime::Message *msg)
     return isInlinePGP(msg);
 }
 
-QSharedPointer<KMime::Message> CryptoUtils::decryptMessage(const QSharedPointer<KMime::Message> &msg, bool &wasEncrypted)
+std::shared_ptr<KMime::Message> CryptoUtils::decryptMessage(const std::shared_ptr<KMime::Message> &msg, bool &wasEncrypted)
 {
     GpgME::Protocol protoName = GpgME::UnknownProtocol;
     bool inlinePGP = false;
@@ -87,11 +87,11 @@ QSharedPointer<KMime::Message> CryptoUtils::decryptMessage(const QSharedPointer<
             }
         }
     } else {
-        if (isPGP(msg.data())) {
+        if (isPGP(msg.get())) {
             protoName = GpgME::OpenPGP;
-        } else if (isSMIME(msg.data())) {
+        } else if (isSMIME(msg.get())) {
             protoName = GpgME::CMS;
-        } else if (isInlinePGP(msg.data())) {
+        } else if (isInlinePGP(msg.get())) {
             protoName = GpgME::OpenPGP;
             inlinePGP = true;
         }
@@ -150,7 +150,7 @@ QSharedPointer<KMime::Message> CryptoUtils::decryptMessage(const QSharedPointer<
     return assembleMessage(msg, &decCt);
 }
 
-void CryptoUtils::copyHeader(const KMime::Headers::Base *header, QSharedPointer<KMime::Message> msg)
+void CryptoUtils::copyHeader(const KMime::Headers::Base *header, std::shared_ptr<KMime::Message> msg)
 {
     auto newHdr = KMime::Headers::createHeader(header->type());
     if (!newHdr) {
@@ -165,9 +165,9 @@ bool CryptoUtils::isContentHeader(const KMime::Headers::Base *header)
     return header->is("Content-Type") || header->is("Content-Transfer-Encoding") || header->is("Content-Disposition");
 }
 
-QSharedPointer<KMime::Message> CryptoUtils::assembleMessage(const QSharedPointer<KMime::Message> &orig, const KMime::Content *newContent)
+std::shared_ptr<KMime::Message> CryptoUtils::assembleMessage(const std::shared_ptr<KMime::Message> &orig, const KMime::Content *newContent)
 {
-    auto out = QSharedPointer<KMime::Message>::create();
+    auto out = std::make_shared<KMime::Message>();
     // Use the new content as message content
     out->setBody(const_cast<KMime::Content *>(newContent)->encodedBody());
     out->parse();

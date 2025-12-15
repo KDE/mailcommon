@@ -75,12 +75,12 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     if (isEmpty()) {
         return false;
     }
-    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
+    if (!item.hasPayload<std::shared_ptr<KMime::Message>>()) {
         return false;
     }
 
-    const auto msg = item.payload<QSharedPointer<KMime::Message>>();
-    Q_ASSERT(msg.data());
+    const auto msg = item.payload<std::shared_ptr<KMime::Message>>();
+    Q_ASSERT(msg.get());
 
     if (!msg->hasHeader("From")) {
         msg->parse(); // probably not parsed yet: make sure we can access all headers
@@ -143,9 +143,9 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
 
     // these two functions need the kmmessage therefore they don't call matchesInternal
     if (function() == FuncHasAttachment) {
-        return KMime::hasAttachment(msg.data());
+        return KMime::hasAttachment(msg.get());
     } else if (function() == FuncHasNoAttachment) {
-        return !KMime::hasAttachment(msg.data());
+        return !KMime::hasAttachment(msg.get());
     }
 
     bool rc = matchesInternal(msgContents);

@@ -57,12 +57,12 @@ SearchRule::RequiredPart FilterActionDecrypt::requiredPart() const
 FilterAction::ReturnCode FilterActionDecrypt::process(ItemContext &context, bool) const
 {
     auto &item = context.item();
-    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
+    if (!item.hasPayload<std::shared_ptr<KMime::Message>>()) {
         return ErrorNeedComplete;
     }
 
-    auto msg = item.payload<QSharedPointer<KMime::Message>>();
-    if (!isEncrypted(msg.data())) {
+    auto msg = item.payload<std::shared_ptr<KMime::Message>>();
+    if (!isEncrypted(msg.get())) {
         qCDebug(MAILCOMMON_LOG) << "Message not encrypted";
         return GoOn;
     }

@@ -59,7 +59,7 @@ static KMime::Content *findMimeNodeForIndex(KMime::Content *node, int &index)
     return nullptr;
 }
 
-QString FilterActionWithCommand::substituteCommandLineArgsFor(const QSharedPointer<KMime::Message> &aMsg, QList<QTemporaryFile *> &aTempFileList) const
+QString FilterActionWithCommand::substituteCommandLineArgsFor(const std::shared_ptr<KMime::Message> &aMsg, QList<QTemporaryFile *> &aTempFileList) const
 {
     QString result = mParameter;
     QList<int> argList;
@@ -109,7 +109,7 @@ QString FilterActionWithCommand::substituteCommandLineArgsFor(const QSharedPoint
                 file.write(aMsg->decodedBody());
             } else {
                 int index = *it; // we pass by reference below, so this is not const
-                KMime::Content *content = findMimeNodeForIndex(aMsg.data(), index);
+                KMime::Content *content = findMimeNodeForIndex(aMsg.get(), index);
                 if (content) {
                     file.write(content->decodedBody());
                 }
@@ -138,7 +138,7 @@ namespace
  * content of the corresponding header in the message.
  * %{From} -> Joe Author <joe@acme.com>
  */
-void substituteMessageHeaders(const QSharedPointer<KMime::Message> &aMsg, QString &result)
+void substituteMessageHeaders(const std::shared_ptr<KMime::Message> &aMsg, QString &result)
 {
     // Replace the %{foo} with the content of the foo header field.
     // If the header doesn't exist, remove the placeholder.
@@ -171,7 +171,7 @@ void substituteCommandLineArgsForItem(const Akonadi::Item &item, QString &comman
 
 FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &context, bool withOutput) const
 {
-    const auto aMsg = context.item().payload<QSharedPointer<KMime::Message>>();
+    const auto aMsg = context.item().payload<std::shared_ptr<KMime::Message>>();
     Q_ASSERT(aMsg);
 
     if (mParameter.isEmpty()) {

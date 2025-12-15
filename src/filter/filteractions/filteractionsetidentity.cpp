@@ -56,7 +56,7 @@ FilterAction::ReturnCode FilterActionSetIdentity::process(ItemContext &context, 
         return ErrorButGoOn;
     }
 
-    const auto msg = context.item().payload<QSharedPointer<KMime::Message>>();
+    const auto msg = context.item().payload<std::shared_ptr<KMime::Message>>();
     uint currentId = 0;
     if (auto hrd = msg->headerByType("X-KMail-Identity")) {
         currentId = hrd->asUnicodeString().trimmed().toUInt();

@@ -25,7 +25,7 @@ bool SearchRuleInvitation::isEmpty() const
 
 bool SearchRuleInvitation::matches(const Akonadi::Item &item) const
 {
-    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
+    if (!item.hasPayload<std::shared_ptr<KMime::Message>>()) {
         return false;
     }
     Akonadi::MessageStatus status;

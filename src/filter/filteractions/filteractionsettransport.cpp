@@ -67,7 +67,7 @@ FilterAction::ReturnCode FilterActionSetTransport::process(ItemContext &context,
         return ErrorButGoOn;
     }
 
-    const auto msg = context.item().payload<QSharedPointer<KMime::Message>>();
+    const auto msg = context.item().payload<std::shared_ptr<KMime::Message>>();
     auto header = std::unique_ptr<KMime::Headers::Generic>(new KMime::Headers::Generic("X-KMail-Transport"));
     header->fromUnicodeString(argsAsString());
     msg->setHeader(std::move(header));

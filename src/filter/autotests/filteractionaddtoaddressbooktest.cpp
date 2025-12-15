@@ -45,9 +45,9 @@ void FilterActionAddToAddressBookTest::shouldHaveDefaultValue()
 void FilterActionAddToAddressBookTest::shouldReportErrorWhenArgumentIsEmpty()
 {
     MailCommon::FilterActionAddToAddressBook filter;
-    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
+    auto msgPtr = std::make_shared<KMime::Message>();
     Akonadi::Item item;
-    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
+    item.setPayload<std::shared_ptr<KMime::Message>>(msgPtr);
     MailCommon::ItemContext context(item, false);
 
     filter.argsFromString(QString());
@@ -61,9 +61,9 @@ void FilterActionAddToAddressBookTest::shouldReportErrorWhenArgumentIsEmpty()
 void FilterActionAddToAddressBookTest::shouldReportErrorWhenCollectionIsInvalid()
 {
     MailCommon::FilterActionAddToAddressBook filter;
-    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
+    auto msgPtr = std::make_shared<KMime::Message>();
     Akonadi::Item item;
-    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
+    item.setPayload<std::shared_ptr<KMime::Message>>(msgPtr);
     MailCommon::ItemContext context(item, false);
 
     filter.argsFromString(QStringLiteral("foo\t-1\tddd"));

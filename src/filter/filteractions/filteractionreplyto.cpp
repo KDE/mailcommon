@@ -26,7 +26,7 @@ FilterAction::ReturnCode FilterActionReplyTo::process(ItemContext &context, bool
     if (mParameter.isEmpty()) {
         return ErrorButGoOn;
     }
-    const auto msg = context.item().payload<QSharedPointer<KMime::Message>>();
+    const auto msg = context.item().payload<std::shared_ptr<KMime::Message>>();
     const QByteArray replyTo("Reply-To");
     auto header = KMime::Headers::createHeader(replyTo);
     if (!header) {

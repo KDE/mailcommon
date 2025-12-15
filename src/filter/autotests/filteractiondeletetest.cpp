@@ -47,9 +47,9 @@ void FilterActionDeleteTest::shouldRequiresPart()
 void FilterActionDeleteTest::shouldDeleteItem()
 {
     MailCommon::FilterActionDelete filter(this);
-    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
+    auto msgPtr = std::make_shared<KMime::Message>();
     Akonadi::Item item;
-    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
+    item.setPayload<std::shared_ptr<KMime::Message>>(msgPtr);
     MailCommon::ItemContext context(item, false);
 
     filter.argsFromString(QString());

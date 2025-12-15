@@ -63,7 +63,7 @@ void FilterActionEncryptTest::shouldEncrypt()
     QVERIFY(!action.key().isNull());
     QCOMPARE(action.reencrypt(), key.contains(QLatin1StringView(":1:")));
 
-    auto msg = QSharedPointer<KMime::Message>::create();
+    auto msg = std::make_shared<KMime::Message>();
     msg->setContent(content);
     msg->parse();
     msg->assemble();
@@ -76,7 +76,7 @@ void FilterActionEncryptTest::shouldEncrypt()
     QCOMPARE(result, MailCommon::FilterAction::GoOn);
     QVERIFY(context.needsPayloadStore());
 
-    auto newMsg = context.item().payload<QSharedPointer<KMime::Message>>();
+    auto newMsg = context.item().payload<std::shared_ptr<KMime::Message>>();
     QCOMPARE(newMsg->from()->asUnicodeString(), msg->from()->asUnicodeString());
     QCOMPARE(newMsg->to()->asUnicodeString(), msg->to()->asUnicodeString());
     QCOMPARE(newMsg->date()->asUnicodeString(), msg->date()->asUnicodeString());

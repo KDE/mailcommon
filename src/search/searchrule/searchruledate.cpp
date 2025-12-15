@@ -27,10 +27,10 @@ bool SearchRuleDate::isEmpty() const
 
 bool SearchRuleDate::matches(const Akonadi::Item &item) const
 {
-    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
+    if (!item.hasPayload<std::shared_ptr<KMime::Message>>()) {
         return false;
     }
-    const auto msg = item.payload<QSharedPointer<KMime::Message>>();
+    const auto msg = item.payload<std::shared_ptr<KMime::Message>>();
 
     const QDate msgDate = msg->date()->dateTime().date();
     const QDate dateValue = QDate::fromString(contents(), Qt::ISODate);

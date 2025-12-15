@@ -20,7 +20,7 @@ class MAILCOMMON_TESTS_EXPORT FilterActionWithCrypto : public FilterAction
 protected:
     using FilterAction::FilterAction;
 
-    [[nodiscard]] QStringList getEncryptionKeysFromContent(const QSharedPointer<KMime::Message> &msg, GpgME::Protocol proto) const;
+    [[nodiscard]] QStringList getEncryptionKeysFromContent(const std::shared_ptr<KMime::Message> &msg, GpgME::Protocol proto) const;
 
 private:
     // cached values

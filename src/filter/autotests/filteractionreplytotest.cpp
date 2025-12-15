@@ -53,11 +53,11 @@ void FilterActionReplyToTest::shouldHadReplyToHeader()
         "test";
 
     MailCommon::FilterActionReplyTo filter(this);
-    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
+    auto msgPtr = std::make_shared<KMime::Message>();
     msgPtr->setContent(data);
     msgPtr->parse();
     Akonadi::Item item;
-    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
+    item.setPayload<std::shared_ptr<KMime::Message>>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
     filter.argsFromString(replyTo);
@@ -92,11 +92,11 @@ void FilterActionReplyToTest::shouldReplaceReplyToHeader()
         "test";
 
     MailCommon::FilterActionReplyTo filter(this);
-    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
+    auto msgPtr = std::make_shared<KMime::Message>();
     msgPtr->setContent(data);
     msgPtr->parse();
     Akonadi::Item item;
-    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
+    item.setPayload<std::shared_ptr<KMime::Message>>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
     filter.argsFromString(replyTo);
@@ -125,11 +125,11 @@ void FilterActionReplyToTest::shouldNotCreateReplyToWhenAddressIsEmpty()
         "test";
 
     MailCommon::FilterActionReplyTo filter(this);
-    QSharedPointer<KMime::Message> msgPtr = QSharedPointer<KMime::Message>(new KMime::Message());
+    auto msgPtr = std::make_shared<KMime::Message>();
     msgPtr->setContent(data);
     msgPtr->parse();
     Akonadi::Item item;
-    item.setPayload<QSharedPointer<KMime::Message>>(msgPtr);
+    item.setPayload<std::shared_ptr<KMime::Message>>(msgPtr);
     MailCommon::ItemContext context(item, true);
 
     filter.argsFromString(QString());

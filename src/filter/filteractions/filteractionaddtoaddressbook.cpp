@@ -52,7 +52,7 @@ FilterAction::ReturnCode FilterActionAddToAddressBook::process(ItemContext &cont
         return ErrorButGoOn;
     }
 
-    const auto msg = context.item().payload<QSharedPointer<KMime::Message>>();
+    const auto msg = context.item().payload<std::shared_ptr<KMime::Message>>();
 
     QString headerLine;
     switch (mHeaderType) {

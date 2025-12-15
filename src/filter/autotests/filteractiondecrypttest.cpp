@@ -51,7 +51,7 @@ void FilterActionDecryptTest::shouldDecrypt()
 
     MailCommon::FilterActionDecrypt action(this);
 
-    auto msg = QSharedPointer<KMime::Message>::create();
+    auto msg = std::make_shared<KMime::Message>();
     msg->setContent(encrypted);
     msg->parse();
     msg->assemble();
@@ -69,7 +69,7 @@ void FilterActionDecryptTest::shouldDecrypt()
         QVERIFY(!context.needsPayloadStore());
     }
 
-    auto newMsg = context.item().payload<QSharedPointer<KMime::Message>>();
+    auto newMsg = context.item().payload<std::shared_ptr<KMime::Message>>();
     QCOMPARE(newMsg->from()->asUnicodeString(), msg->from()->asUnicodeString());
     QCOMPARE(newMsg->to()->asUnicodeString(), msg->to()->asUnicodeString());
     QCOMPARE(newMsg->date()->asUnicodeString(), msg->date()->asUnicodeString());

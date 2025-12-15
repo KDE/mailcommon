@@ -12,7 +12,7 @@
 
 using namespace MailCommon;
 
-QStringList FilterActionWithCrypto::getEncryptionKeysFromContent(const QSharedPointer<KMime::Message> &msg, GpgME::Protocol protocol) const
+QStringList FilterActionWithCrypto::getEncryptionKeysFromContent(const std::shared_ptr<KMime::Message> &msg, GpgME::Protocol protocol) const
 {
     if (protocol == GpgME::CMS && mGpgSmPath.isNull()) {
         const auto path = QStandardPaths::findExecutable(QStringLiteral("gpgsm"));

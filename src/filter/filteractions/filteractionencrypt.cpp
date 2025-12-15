@@ -125,13 +125,13 @@ FilterAction::ReturnCode FilterActionEncrypt::process(ItemContext &context, bool
     }
 
     auto &item = context.item();
-    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
+    if (!item.hasPayload<std::shared_ptr<KMime::Message>>()) {
         qCWarning(MAILCOMMON_LOG) << "Item" << item.id() << "does not contain KMime::Message payload!";
         return ErrorNeedComplete;
     }
 
-    auto msg = item.payload<QSharedPointer<KMime::Message>>();
-    if (KMime::isEncrypted(msg.data())) {
+    auto msg = item.payload<std::shared_ptr<KMime::Message>>();
+    if (KMime::isEncrypted(msg.get())) {
         if (mReencrypt) {
             // Make sure the email is not already encrypted by the mKey - this is
             // a little expensive, but still much cheaper than modifying and
@@ -180,7 +180,7 @@ FilterAction::ReturnCode FilterActionEncrypt::process(ItemContext &context, bool
     }
 
     MessageComposer::EncryptJob encrypt;
-    encrypt.setContent(msg.data());
+    encrypt.setContent(msg.get());
     encrypt.setCryptoMessageFormat(mKey.protocol() == GpgME::OpenPGP ? Kleo::OpenPGPMIMEFormat : Kleo::SMIMEFormat);
     encrypt.setEncryptionKeys({mKey});
     encrypt.exec();

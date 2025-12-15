@@ -24,13 +24,13 @@ FilterActionSendReceipt::FilterActionSendReceipt(QObject *parent)
 
 FilterAction::ReturnCode FilterActionSendReceipt::process(ItemContext &context, bool) const
 {
-    const auto msg = context.item().payload<QSharedPointer<KMime::Message>>();
+    const auto msg = context.item().payload<std::shared_ptr<KMime::Message>>();
 
     MessageComposer::MessageFactoryNG factory(msg, context.item().id());
     factory.setFolderIdentity(Util::folderIdentity(context.item()));
     factory.setIdentityManager(KernelIf->identityManager());
 
-    const QSharedPointer<KMime::Message> receipt = factory.createDeliveryReceipt();
+    const std::shared_ptr<KMime::Message> receipt = factory.createDeliveryReceipt();
     if (!receipt) {
         return ErrorButGoOn;
     }

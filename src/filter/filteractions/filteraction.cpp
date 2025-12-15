@@ -95,7 +95,7 @@ bool FilterAction::folderRemoved(const Akonadi::Collection &, const Akonadi::Col
 
 void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionType type, const QList<KMime::MDN::DispositionModifier> &modifiers)
 {
-    const QSharedPointer<KMime::Message> msg = MessageComposer::Util::message(item);
+    const std::shared_ptr<KMime::Message> msg = MessageComposer::Util::message(item);
     if (!msg) {
         return;
     }
@@ -114,7 +114,7 @@ void FilterAction::sendMDN(const Akonadi::Item &item, KMime::MDN::DispositionTyp
         factory.setIdentityManager(KernelIf->identityManager());
         factory.setFolderIdentity(MailCommon::Util::folderIdentity(item));
 
-        const QSharedPointer<KMime::Message> mdn = factory.createMDN(KMime::MDN::AutomaticAction, type, mdnSend.mode, quote, modifiers);
+        const std::shared_ptr<KMime::Message> mdn = factory.createMDN(KMime::MDN::AutomaticAction, type, mdnSend.mode, quote, modifiers);
         if (mdn) {
             if (!KernelIf->msgSender()->send(mdn, MessageComposer::MessageSender::SendLater)) {
                 qCDebug(MAILCOMMON_LOG) << "Sending failed.";

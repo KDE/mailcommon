@@ -25,13 +25,13 @@ bool SearchRuleEncryption::isEmpty() const
 
 bool SearchRuleEncryption::matches(const Akonadi::Item &item) const
 {
-    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
+    if (!item.hasPayload<std::shared_ptr<KMime::Message>>()) {
         return false;
     }
-    const auto msg = item.payload<QSharedPointer<KMime::Message>>();
+    const auto msg = item.payload<std::shared_ptr<KMime::Message>>();
 
     const bool shouldBeEncrypted = function() == FuncEquals;
-    const bool rc = shouldBeEncrypted == CryptoUtils::isEncrypted(msg.data());
+    const bool rc = shouldBeEncrypted == CryptoUtils::isEncrypted(msg.get());
 
     maybeLogMatchResult(rc);
     return rc;
