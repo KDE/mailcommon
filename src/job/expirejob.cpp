@@ -117,7 +117,7 @@ void ExpireJob::itemFetchResult(KJob *job)
             continue;
         }
 
-        auto mailDate = mb->date(false);
+        auto mailDate = mb->date(KMime::CreatePolicy::DontCreate);
         if (!mailDate) {
             if (mExpireMessagesWithoutInvalidDate) {
                 mRemovedMsgs.append(item);

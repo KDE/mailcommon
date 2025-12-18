@@ -74,7 +74,7 @@ std::shared_ptr<KMime::Message> CryptoUtils::decryptMessage(const std::shared_pt
     GpgME::Protocol protoName = GpgME::UnknownProtocol;
     bool inlinePGP = false;
     bool multipart = false;
-    if (msg->contentType(false) && msg->contentType(false)->isMimeType("multipart/encrypted")) {
+    if (msg->contentType(KMime::CreatePolicy::DontCreate) && msg->contentType(KMime::CreatePolicy::DontCreate)->isMimeType("multipart/encrypted")) {
         multipart = true;
         const auto subparts = msg->contents();
         for (auto subpart : subparts) {

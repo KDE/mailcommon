@@ -75,7 +75,7 @@ void SearchRuleDateTest::shouldMatchDate()
     MailCommon::SearchRuleDate searchrule("<date>", function, matchdate.toString(Qt::ISODate));
 
     auto msgPtr = std::make_shared<KMime::Message>();
-    msgPtr->date(true)->setDateTime(QDateTime(maildate.startOfDay()));
+    msgPtr->date(KMime::CreatePolicy::Create)->setDateTime(QDateTime(maildate.startOfDay()));
 
     Akonadi::Item item;
     item.setPayload<std::shared_ptr<KMime::Message>>(msgPtr);

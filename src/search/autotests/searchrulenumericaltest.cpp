@@ -54,7 +54,7 @@ void SearchRuleNumericalTest::shouldMatchNumericalsize()
     QFETCH(bool, match);
     MailCommon::SearchRuleNumerical searchrule("<size>", function, QString::number(value));
     auto msgPtr = std::make_shared<KMime::Message>();
-    msgPtr->date(true)->setDateTime(maildate);
+    msgPtr->date(KMime::CreatePolicy::Create)->setDateTime(maildate);
     Akonadi::Item item;
     item.setPayload<std::shared_ptr<KMime::Message>>(msgPtr);
     QCOMPARE(searchrule.matches(item), match);

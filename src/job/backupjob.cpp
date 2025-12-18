@@ -232,7 +232,7 @@ void BackupJob::processMessage(const Akonadi::Item &item)
     }
 
     const auto message = item.payload<std::shared_ptr<KMime::Message>>();
-    qCDebug(MAILCOMMON_LOG) << "Processing message with subject " << message->subject(false);
+    qCDebug(MAILCOMMON_LOG) << "Processing message with subject " << message->subject(KMime::CreatePolicy::DontCreate);
     const QByteArray messageData = message->encodedContent();
     const qint64 messageSize = messageData.size();
     const QString messageName = QString::number(item.id());
