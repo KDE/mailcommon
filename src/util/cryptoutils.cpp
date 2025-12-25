@@ -62,7 +62,7 @@ bool CryptoUtils::isEncrypted(const KMime::Message *msg)
 {
     // KMime::isEncrypted does not cover all cases - mostly only deals with
     // mime types.
-    if (KMime::isEncrypted(const_cast<KMime::Message *>(msg))) {
+    if (KMime::isEncrypted(msg)) {
         return true;
     }
 
@@ -169,7 +169,7 @@ std::shared_ptr<KMime::Message> CryptoUtils::assembleMessage(const std::shared_p
 {
     auto out = std::make_shared<KMime::Message>();
     // Use the new content as message content
-    out->setBody(const_cast<KMime::Content *>(newContent)->encodedBody());
+    out->setBody(newContent->encodedBody());
     out->parse();
 
     // remove default explicit content headers added by KMime::Content::parse()
