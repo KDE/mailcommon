@@ -180,7 +180,7 @@ FilterAction::ReturnCode FilterActionEncrypt::process(ItemContext &context, bool
     }
 
     MessageComposer::EncryptJob encrypt;
-    encrypt.setContent(msg.get());
+    encrypt.setContent(msg->clone());
     encrypt.setCryptoMessageFormat(mKey.protocol() == GpgME::OpenPGP ? Kleo::OpenPGPMIMEFormat : Kleo::SMIMEFormat);
     encrypt.setEncryptionKeys({mKey});
     encrypt.exec();
@@ -189,16 +189,14 @@ FilterAction::ReturnCode FilterActionEncrypt::process(ItemContext &context, bool
         return ErrorButGoOn;
     }
 
-    KMime::Content *result = encrypt.content();
+    auto result = encrypt.takeContent();
     result->assemble();
 
-    auto nec = CryptoUtils::assembleMessage(msg, result);
+    auto nec = CryptoUtils::assembleMessage(msg, result.get());
     context.item().setPayload(nec);
     context.item().setFlag(Akonadi::MessageFlags::Encrypted);
     context.setNeedsPayloadStore();
     context.setNeedsFlagStore();
-
-    delete result;
 
     return GoOn;
 }
