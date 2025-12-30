@@ -722,12 +722,12 @@ void SnippetsModel::save(const QString &filename)
         const QModelIndex groupIndex = index(i, 0, QModelIndex());
         const QString groupName = groupIndex.data(SnippetsModel::NameRole).toString();
 
-        KConfigGroup group = config->group(QStringLiteral("SnippetGroup_%1").arg(i));
-        group.writeEntry("Name", groupName);
+        KConfigGroup snippetConfigGroup = config->group(QStringLiteral("SnippetGroup_%1").arg(i));
+        snippetConfigGroup.writeEntry("Name", groupName);
 
         const int snippetCount = rowCount(groupIndex);
 
-        group.writeEntry("snippetCount", snippetCount);
+        snippetConfigGroup.writeEntry("snippetCount", snippetCount);
         for (int j = 0; j < snippetCount; ++j) {
             const QModelIndex modelIndex = index(j, 0, groupIndex);
 
@@ -742,47 +742,47 @@ void SnippetsModel::save(const QString &filename)
                 const QString snippetBcc = modelIndex.data(SnippetsModel::BccRole).toString();
                 const QString snippetAttachment = modelIndex.data(SnippetsModel::AttachmentRole).toString();
 
-                group.writeEntry(QStringLiteral("snippetName_%1").arg(j), snippetName);
+                snippetConfigGroup.writeEntry(QStringLiteral("snippetName_%1").arg(j), snippetName);
                 if (!snippetText.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetText_%1").arg(j), snippetText);
+                    snippetConfigGroup.writeEntry(QStringLiteral("snippetText_%1").arg(j), snippetText);
                 }
                 if (!snippetKeySequence.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetKeySequence_%1").arg(j), snippetKeySequence);
+                    snippetConfigGroup.writeEntry(QStringLiteral("snippetKeySequence_%1").arg(j), snippetKeySequence);
                 }
                 if (!snippetKeyword.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetKeyword_%1").arg(j), snippetKeyword);
+                    snippetConfigGroup.writeEntry(QStringLiteral("snippetKeyword_%1").arg(j), snippetKeyword);
                 }
                 if (!snippetSubject.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetSubject_%1").arg(j), snippetSubject);
+                    snippetConfigGroup.writeEntry(QStringLiteral("snippetSubject_%1").arg(j), snippetSubject);
                 }
                 if (!snippetTo.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetTo_%1").arg(j), snippetTo);
+                    snippetConfigGroup.writeEntry(QStringLiteral("snippetTo_%1").arg(j), snippetTo);
                 }
                 if (!snippetCc.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetCc_%1").arg(j), snippetCc);
+                    snippetConfigGroup.writeEntry(QStringLiteral("snippetCc_%1").arg(j), snippetCc);
                 }
                 if (!snippetBcc.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetBcc_%1").arg(j), snippetBcc);
+                    snippetConfigGroup.writeEntry(QStringLiteral("snippetBcc_%1").arg(j), snippetBcc);
                 }
                 if (!snippetAttachment.isEmpty()) {
-                    group.writeEntry(QStringLiteral("snippetAttachment_%1").arg(j), snippetAttachment);
+                    snippetConfigGroup.writeEntry(QStringLiteral("snippetAttachment_%1").arg(j), snippetAttachment);
                 }
             }
         }
     }
 
     {
-        KConfigGroup group = config->group("SavedVariablesPart");
+        KConfigGroup savedVariableConfigGroup = config->group("SavedVariablesPart");
 
         const int variablesCount = mSavedVariables.count();
-        group.writeEntry("variablesCount", variablesCount);
+        savedVariableConfigGroup.writeEntry("variablesCount", variablesCount);
 
         int counter = 0;
         QMap<QString, QString>::const_iterator it = mSavedVariables.cbegin();
         const QMap<QString, QString>::const_iterator itEnd = mSavedVariables.cend();
         for (; it != itEnd; ++it) {
-            group.writeEntry(QStringLiteral("variableName_%1").arg(counter), it.key());
-            group.writeEntry(QStringLiteral("variableValue_%1").arg(counter), it.value());
+            savedVariableConfigGroup.writeEntry(QStringLiteral("variableName_%1").arg(counter), it.key());
+            savedVariableConfigGroup.writeEntry(QStringLiteral("variableValue_%1").arg(counter), it.value());
             counter++;
         }
     }

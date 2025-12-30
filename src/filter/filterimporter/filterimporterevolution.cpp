@@ -120,8 +120,8 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter, Mai
 
                         if (valueTag == QLatin1StringView("value")) {
                             if (valueFilter.hasAttribute(QStringLiteral("name"))) {
-                                const QString name = valueFilter.attribute(QStringLiteral("name"));
-                                if (name == QLatin1StringView("flag")) {
+                                const QString valueTagFilterName = valueFilter.attribute(QStringLiteral("name"));
+                                if (valueTagFilterName == QLatin1StringView("flag")) {
                                     const QString flag = valueFilter.attribute(QStringLiteral("value"));
                                     qCDebug(MAILCOMMON_LOG) << " flag :" << flag;
                                     if (flag == QLatin1StringView("Seen")) {
@@ -138,16 +138,16 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter, Mai
                                         qCDebug(MAILCOMMON_LOG) << " unknown status flags " << flag;
                                     }
                                 }
-                                qCDebug(MAILCOMMON_LOG) << " value filter name :" << name;
+                                qCDebug(MAILCOMMON_LOG) << " value filter name :" << valueTagFilterName;
                             }
                             if (valueFilter.hasAttribute(QStringLiteral("type"))) {
-                                const QString name = valueFilter.attribute(QStringLiteral("type"));
-                                if (name == QLatin1StringView("option")) {
+                                const QString typeName = valueFilter.attribute(QStringLiteral("type"));
+                                if (typeName == QLatin1StringView("option")) {
                                     // Nothing we will look at value
-                                } else if (name == QLatin1StringView("string")) {
+                                } else if (typeName == QLatin1StringView("string")) {
                                     QDomElement string = valueFilter.firstChildElement();
                                     contents = string.text();
-                                } else if (name == QLatin1StringView("folder")) {
+                                } else if (typeName == QLatin1StringView("folder")) {
                                     QDomElement folder = valueFilter.firstChildElement();
                                     if (folder.hasAttribute(QStringLiteral("uri"))) {
                                         contents = folder.attribute(QStringLiteral("uri"));
@@ -155,10 +155,10 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter, Mai
                                             contents.remove(QStringLiteral("folder://"));
                                         }
                                     }
-                                } else if (name == QLatin1StringView("address")) {
+                                } else if (typeName == QLatin1StringView("address")) {
                                     QDomElement address = valueFilter.firstChildElement();
                                     contents = address.text();
-                                } else if (name == QLatin1StringView("integer")) {
+                                } else if (typeName == QLatin1StringView("integer")) {
                                     if (valueFilter.hasAttribute(QStringLiteral("integer"))) {
                                         contents = valueFilter.attribute(QStringLiteral("integer"));
                                         int val = contents.toInt();
@@ -166,7 +166,7 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter, Mai
                                         contents = QString::number(val);
                                     }
                                 } else {
-                                    qCDebug(MAILCOMMON_LOG) << " type not implemented " << name;
+                                    qCDebug(MAILCOMMON_LOG) << " type not implemented " << typeName;
                                 }
                             }
                             if (valueFilter.hasAttribute(QStringLiteral("value"))) {
@@ -250,17 +250,17 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter, Mai
                         const QString valueTag = valueFilter.tagName();
                         if (valueTag == QLatin1StringView("value")) {
                             if (valueFilter.hasAttribute(QStringLiteral("name"))) {
-                                const QString name = valueFilter.attribute(QStringLiteral("name"));
-                                qCDebug(MAILCOMMON_LOG) << " value filter name :" << name;
+                                const QString valueFilterName = valueFilter.attribute(QStringLiteral("name"));
+                                qCDebug(MAILCOMMON_LOG) << " value filter name :" << valueFilterName;
                             }
                             if (valueFilter.hasAttribute(QStringLiteral("type"))) {
-                                const QString name = valueFilter.attribute(QStringLiteral("type"));
-                                qCDebug(MAILCOMMON_LOG) << " value filter type :" << name;
-                                if (name == QLatin1StringView("option")) {
+                                const QString filterTypeName = valueFilter.attribute(QStringLiteral("type"));
+                                qCDebug(MAILCOMMON_LOG) << " value filter type :" << filterTypeName;
+                                if (filterTypeName == QLatin1StringView("option")) {
                                     // Nothing we will look at value
-                                } else if (name == QLatin1StringView("string")) {
+                                } else if (filterTypeName == QLatin1StringView("string")) {
                                     // TODO
-                                } else if (name == QLatin1StringView("folder")) {
+                                } else if (filterTypeName == QLatin1StringView("folder")) {
                                     QDomElement folder = valueFilter.firstChildElement();
 
                                     if (folder.hasAttribute(QStringLiteral("uri"))) {
@@ -270,13 +270,13 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter, Mai
                                         }
                                         qCDebug(MAILCOMMON_LOG) << " contents folder :" << value;
                                     }
-                                } else if (name == QLatin1StringView("address")) {
+                                } else if (filterTypeName == QLatin1StringView("address")) {
                                     // TODO
                                 }
                             }
                             if (valueFilter.hasAttribute(QStringLiteral("value"))) {
-                                const QString name = valueFilter.attribute(QStringLiteral("value"));
-                                qCDebug(MAILCOMMON_LOG) << " value filter value :" << name;
+                                const QString valueFilterName = valueFilter.attribute(QStringLiteral("value"));
+                                qCDebug(MAILCOMMON_LOG) << " value filter value :" << valueFilterName;
                                 if (value == QLatin1StringView("contains")) {
                                     // TODO
                                 }

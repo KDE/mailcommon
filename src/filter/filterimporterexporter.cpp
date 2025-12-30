@@ -41,9 +41,9 @@ QList<MailFilter *> FilterImporterExporter::readFiltersFromConfig(const KSharedC
     for (int i = 0; i < numFilters; ++i) {
         const QString groupName = QStringLiteral("Filter #%1").arg(i);
 
-        const KConfigGroup group = config->group(groupName);
+        const KConfigGroup groupFilterName = config->group(groupName);
         bool update = false;
-        auto filter = new MailFilter(group, interactive, update);
+        auto filter = new MailFilter(groupFilterName, interactive, update);
         filter->purify();
         if (update) {
             filterNeedUpdate = true;
@@ -57,12 +57,12 @@ QList<MailFilter *> FilterImporterExporter::readFiltersFromConfig(const KSharedC
         }
     }
     if (filterNeedUpdate) {
-        KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("akonadi_mailfilter_agentrc"));
+        KSharedConfig::Ptr mailFilterAgentConfig = KSharedConfig::openConfig(QStringLiteral("akonadi_mailfilter_agentrc"));
 
         // Now, write out the new stuff:
-        FilterImporterExporter::writeFiltersToConfig(filters, config);
-        KConfigGroup group = config->group("General");
-        group.sync();
+        FilterImporterExporter::writeFiltersToConfig(filters, mailFilterAgentConfig);
+        KConfigGroup generalConfigGroup = mailFilterAgentConfig->group("General");
+        generalConfigGroup.sync();
     }
     return filters;
 }
