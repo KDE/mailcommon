@@ -657,27 +657,4 @@ if(BUILD_DESIGNERPLUGIN)
     add_subdirectory(designer)
 endif()
 
-if(BUILD_QCH)
-    ecm_add_qch(
-        KPim6MailCommon_QCH
-        NAME KPim6MailCommon
-        BASE_NAME KPim6MailCommon
-        VERSION ${PIM_VERSION}
-        ORG_DOMAIN org.kde
-        SOURCES # using only public headers, to cover only public API
-        ${MAILCOMMON_INCLUDES_FILES}
-        LINK_QCHS
-            Qt6Core_QCH
-            Qt6Gui_QCH
-            Qt6Widgets_QCH
-        INCLUDE_DIRS
-            ${CMAKE_CURRENT_BINARY_DIR}
-        BLANK_MACROS
-            MAILCOMMON_EXPORT
-        TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-        QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-        COMPONENT Devel
-    )
-endif()
-
 ecm_qt_install_logging_categories(EXPORT MAILCOMMON FILE mailcommon.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
