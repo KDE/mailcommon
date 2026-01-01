@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2004 Carsten Burghardt <burghardt@kde.org>
- * SPDX-FileCopyrightText: 2009-2025 Laurent Montel <montel@kde.org>
+ * SPDX-FileCopyrightText: 2009-2026 Laurent Montel <montel@kde.org>
  *
  *  SPDX-License-Identifier: GPL-2.0-only
  */
