@@ -13,8 +13,8 @@
 #include <memory>
 namespace MailCommon
 {
-/**
- * @short KMail Filter Log Collector.
+/*!
+ * \brief KMail Filter Log Collector.
  *
  * The filter log helps to collect log information about the
  * filter process in KMail. It's implemented as singleton,
@@ -34,17 +34,17 @@ class MAILCOMMON_EXPORT FilterLog : public QObject
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Destroys the filter log.
      */
     ~FilterLog() override;
 
-    /**
+    /*!
      * Returns the single global instance of the filter log.
      */
     static FilterLog *instance();
 
-    /**
+    /*!
      * Describes the type of content that will be logged.
      */
     enum ContentType {
@@ -55,92 +55,92 @@ public:
         AppliedAction = 16 ///< Log all applied actions.
     };
 
-    /**
-     * Sets whether the filter log is currently @p active.
+    /*!
+     * Sets whether the filter log is currently \a active.
      */
     void setLogging(bool active);
 
-    /**
+    /*!
      * Returns whether the filter log is currently active.
      */
     [[nodiscard]] bool isLogging() const;
 
-    /**
-     * Sets the maximum @p size of the log in bytes.
+    /*!
+     * Sets the maximum \a size of the log in bytes.
      */
     void setMaxLogSize(long size = -1);
 
-    /**
+    /*!
      * Returns the maximum size of the log in bytes.
      */
     [[nodiscard]] long maxLogSize() const;
 
-    /**
-     * Sets whether a given content @p type will be @p enabled for logging.
+    /*!
+     * Sets whether a given content \a type will be \a enabled for logging.
      */
     void setContentTypeEnabled(ContentType type, bool enabled);
 
-    /**
-     * Returns whether the given content @p type is enabled for logging.
+    /*!
+     * Returns whether the given content \a type is enabled for logging.
      */
     [[nodiscard]] bool isContentTypeEnabled(ContentType type) const;
 
-    /**
-     * Adds the given log @p entry under the given content @p type to the log.
+    /*!
+     * Adds the given log \a entry under the given content \a type to the log.
      */
     void add(const QString &entry, ContentType type);
 
-    /**
+    /*!
      * Adds a separator line to the log.
      */
     void addSeparator();
 
-    /**
+    /*!
      * Clears the log.
      */
     void clear();
 
-    /**
+    /*!
      * Returns the list of log entries.
      */
     [[nodiscard]] QStringList logEntries() const;
 
-    /**
-     * Saves the log to the file with the given @p fileName.
+    /*!
+     * Saves the log to the file with the given \a fileName.
      *
-     * @return @c true on success or @c false on failure.
+     * Returns \\ true on success or \\ false on failure.
      */
     bool saveToFile(const QString &fileName) const;
 
-    /**
+    /*!
      * Returns an escaped version of the log which can be used
      * in a HTML document.
      */
     [[nodiscard]] static QString recode(const QString &plain);
 
-    /**
+    /*!
      * Dumps the log to console. Used for debugging.
      */
     void dump();
 
 Q_SIGNALS:
-    /**
-     * This signal is emitted whenever a new @p entry has been added to the log.
+    /*!
+     * This signal is emitted whenever a new \a entry has been added to the log.
      */
     void logEntryAdded(const QString &entry);
 
-    /**
+    /*!
      * This signal is emitted whenever the log has shrunk.
      */
     void logShrinked();
 
-    /**
+    /*!
      * This signal is emitted whenever the activity of the filter log has been changed.
      */
     void logStateChanged();
 
 private:
-    //@cond PRIVATE
+    //\\ond PRIVATE
     MAILCOMMON_NO_EXPORT FilterLog();
 
     class FilterLogPrivate;

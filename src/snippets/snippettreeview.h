@@ -20,7 +20,7 @@ namespace MailCommon
 {
 class SnippetsManager;
 struct SnippetInfo;
-/**
+/*!
  * @author Robert Gruber
  */
 class MAILCOMMON_EXPORT SnippetTreeView : public QTreeView

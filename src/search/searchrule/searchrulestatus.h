@@ -13,11 +13,11 @@
 
 namespace MailCommon
 {
-/**
+/*!
  *  This class represents a search to be performed against the status of a
  *  message. The status is represented by a bitfield.
  *
- *  @short This class represents a search pattern rule operating on message
+ *  \brief This class represents a search pattern rule operating on message
  *  status.
  */
 class MAILCOMMON_EXPORT SearchRuleStatus : public SearchRule
@@ -30,8 +30,8 @@ public:
     [[nodiscard]] bool isEmpty() const override;
     [[nodiscard]] bool matches(const Akonadi::Item &item) const override;
 
-    /**
-     * @copydoc SearchRule::requiredPart()
+    /*!
+     * \\opydoc SearchRule::requiredPart()
      */
     [[nodiscard]] RequiredPart requiredPart() const override;
 

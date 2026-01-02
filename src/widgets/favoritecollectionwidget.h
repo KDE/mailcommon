@@ -17,8 +17,8 @@ class KActionCollection;
 namespace MailCommon
 {
 class MailCommonSettings;
-/**
- * @brief The FavoriteCollectionWidget class
+/*!
+ * \brief The FavoriteCollectionWidget class
  * @author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT FavoriteCollectionWidget : public Akonadi::EntityListView

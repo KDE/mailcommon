@@ -18,16 +18,16 @@ class FilterAction;
 
 using FilterActionNewFunc = FilterAction *(*)();
 
-/**
- * @short Auxiliary struct for FilterActionDict.
+/*!
+ * \brief Auxiliary struct for FilterActionDict.
  */
 struct FilterActionDesc {
     QString label, name;
     FilterActionNewFunc create;
 };
 
-/**
- * @short List of known FilterAction-types.
+/*!
+ * \brief List of known FilterAction-types.
  *
  * Dictionary that contains a list of all registered filter actions
  * with their creation functions. They are hard-coded into the
@@ -47,22 +47,22 @@ struct FilterActionDesc {
  * You can iterate over all known filter actions by using list.
  *
  * @author Marc Mutz <mutz@kde.org>, based on work by Stefan Taferner <taferner@kde.org>
- * @see FilterAction FilterActionDesc Filter
+ * \sa FilterAction FilterActionDesc Filter
  */
 class FilterActionDict : public QMultiHash<QString, FilterActionDesc *>
 {
 public:
-    /**
+    /*!
      * Creates the filter action dictionary.
      */
     MAILCOMMON_EXPORT FilterActionDict();
 
-    /**
+    /*!
      * Destroys the filter action dictionary.
      */
     MAILCOMMON_EXPORT virtual ~FilterActionDict();
 
-    /**
+    /*!
      * Overloaded member function, provided for convenience. Thin
      * wrapper around QDict::insert and QPtrList::insert.
      * Inserts the resulting FilterActionDesc
@@ -73,14 +73,14 @@ public:
      */
     MAILCOMMON_EXPORT void insert(FilterActionNewFunc aNewFunc);
 
-    /**
+    /*!
      * Provides read-only access to a list of all known filter
      * actions.
      */
     MAILCOMMON_EXPORT const QList<FilterActionDesc *> &list() const;
 
 protected:
-    /**
+    /*!
      * Populate the dictionary with all known  FilterAction
      * types. Called automatically from the constructor.
      */

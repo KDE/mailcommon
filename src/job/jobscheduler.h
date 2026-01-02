@@ -25,7 +25,7 @@ namespace MailCommon
 class FolderJob;
 class ScheduledJob;
 
-/**
+/*!
  * A scheduled task is some information about a folder job that should be run later.
  * As long as it's not running, it's called a "task", i.e. something that needs to be done.
  * Tasks are managed by the JobScheduler.
@@ -33,15 +33,15 @@ class ScheduledJob;
 class MAILCOMMON_EXPORT ScheduledTask
 {
 public:
-    /**
+    /*!
      * Creates a scheduled task for a given folder.
-     * If @p immediate is true, the scheduler will run this task as soon
+     * If \a immediate is true, the scheduler will run this task as soon
      * as possible (but won't interrupt a currently running job for it).
      */
     ScheduledTask(const Akonadi::Collection &folder, bool immediate);
     virtual ~ScheduledTask();
 
-    /**
+    /*!
      * Run this task, i.e. create a job for it.
      * Important: the job's execute() method must either call open() on the folder
      * or storage immediately, or abort (deleting itself).
@@ -52,7 +52,7 @@ public:
      */
     virtual ScheduledJob *run() = 0;
 
-    /**
+    /*!
      * An identifier for the type of task (a bit like QListViewItem::rtti).
      * This allows to automatically prevent two identical tasks from being scheduled
      * for the same folder. To circumvent this feature and make every task unique,
@@ -60,7 +60,7 @@ public:
      */
     virtual int taskTypeId() const = 0;
 
-    /**
+    /*!
      * The folder which this task is supposed to handle, 0 if it was deleted meanwhile.
      */
     [[nodiscard]] Akonadi::Collection folder() const;
@@ -72,7 +72,7 @@ private:
     const bool mImmediate;
 };
 
-/**
+/*!
  * The unique JobScheduler instance (owned by kmkernel) implements "background processing"
  * of folder operations (like expiration and compaction). Tasks (things to be done)
  * are registered with the JobScheduler, and it will execute them one at a time,
@@ -87,7 +87,7 @@ public:
     explicit JobScheduler(QObject *parent);
     ~JobScheduler() override;
 
-    /**
+    /*!
      * Register a task to be done for a given folder. The ownership of the task is transferred
      * to the JobScheduler.
      */
@@ -120,7 +120,7 @@ private:
     ScheduledJob *mCurrentJob = nullptr;
 };
 
-/**
+/*!
  * Base class for scheduled jobs.
  */
 class MAILCOMMON_EXPORT ScheduledJob : public FolderJob

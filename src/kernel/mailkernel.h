@@ -30,7 +30,7 @@ class ActivitiesBaseManager;
 
 namespace MailCommon
 {
-/**
+/*!
  * Deals with common mail application related operations. The required interfaces
  * MUST be registered before using it!
  * Be careful when using in multi-threaded applications, as Kernel is a QObject
@@ -46,7 +46,7 @@ public:
 
     static Kernel *self();
 
-    /**
+    /*!
      * Registers the interface dealing with main mail functionality. This function
      * MUST be called with a valid interface pointer, before any Kernel::self()
      * method is used. The pointer ownership will not be transferred to Kernel.
@@ -57,7 +57,7 @@ public:
 
     IKernel *kernelIf() const;
 
-    /**
+    /*!
      * Registers the interface dealing with mail settings. This function
      * MUST be called with a valid interface pointer, before any Kernel::self()
      * method is used. The pointer ownership will not be transferred to Kernel.
@@ -66,7 +66,7 @@ public:
 
     ISettings *settingsIf() const;
 
-    /**
+    /*!
      * Registers the interface dealing with mail settings. This function
      * MUST be called with a valid interface pointer, before any Kernel::self()
      * method is used. The pointer ownership will not be transferred to Kernel.
@@ -75,8 +75,8 @@ public:
 
     IFilter *filterIf() const;
 
-    /**
-     * Returns the collection associated with the given @p id, or an invalid
+    /*!
+     * Returns the collection associated with the given \a id, or an invalid
      * collection if not found. The EntityTreeModel of the kernel is searched for
      * the collection. Since the ETM is loaded async, this method will not find
      * the collection right after startup, when the ETM is not yet fully loaded.
@@ -94,12 +94,12 @@ public:
 
     [[nodiscard]] bool isSystemFolderCollection(const Akonadi::Collection &col);
 
-    /**
+    /*!
      * Returns true if this folder is the inbox on the local disk
      */
     [[nodiscard]] bool isMainFolderCollection(const Akonadi::Collection &col);
 
-    /**
+    /*!
      * Returns true if the folder is either the outbox or one of the drafts-folders.
      */
     [[nodiscard]] bool folderIsDraftOrOutbox(const Akonadi::Collection &collection);
@@ -110,7 +110,7 @@ public:
 
     [[nodiscard]] bool folderIsSpams(const Akonadi::Collection &collection);
 
-    /**
+    /*!
      * Returns true if the folder is a trash folder.
      *
      * When calling this too early (before the SpecialMailCollectionsDiscoveryJob from initFolders finishes),
@@ -119,8 +119,8 @@ public:
      */
     [[nodiscard]] bool folderIsTrash(const Akonadi::Collection &collection);
 
-    /**
-     * Returns the trash folder for the resource which @p col belongs to.
+    /*!
+     * Returns the trash folder for the resource which \a col belongs to.
      *
      * When calling this too early (before the SpecialMailCollectionsDiscoveryJob from initFolders finishes),
      * it will return an invalid collection erroneously. However you can connect to SpecialMailCollections::collectionsChanged
@@ -128,7 +128,7 @@ public:
      */
     [[nodiscard]] Akonadi::Collection trashCollectionFromResource(const Akonadi::Collection &col);
 
-    /**
+    /*!
      * Returns true if the folder is one of the sent-mail folders.
      */
     [[nodiscard]] bool folderIsSentMailFolder(const Akonadi::Collection &);

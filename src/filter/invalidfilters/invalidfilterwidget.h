@@ -13,8 +13,8 @@
 namespace MailCommon
 {
 class InvalidFilterListView;
-/**
- * @brief The InvalidFilterWidget class
+/*!
+ * \brief The InvalidFilterWidget class
  * @author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT InvalidFilterWidget : public QWidget

@@ -45,73 +45,73 @@ public:
 
     void daysToExpire(int &unreadDays, int &readDays) const;
 
-    /**
+    /*!
      * Sets whether this folder automatically expires messages.
      */
     void setAutoExpire(bool enabled);
 
-    /**
+    /*!
      * Returns true if this folder automatically expires old messages.
      */
     [[nodiscard]] bool isAutoExpire() const;
 
-    /**
+    /*!
      * Sets the maximum age for unread messages in this folder.
      * Age should not be negative. Units are set using
      * setUnreadExpireUnits().
      */
     void setUnreadExpireAge(int age);
 
-    /**
+    /*!
      * Sets the units to use for expiry of unread messages.
      * Values are 1 = days, 2 = weeks, 3 = months.
      */
     void setUnreadExpireUnits(ExpireUnits units);
 
-    /**
+    /*!
      * Sets the maximum age for read messages in this folder.
      * Age should not be negative. Units are set using
      * setReadExpireUnits().
      */
     void setReadExpireAge(int age);
 
-    /**
+    /*!
      * Sets the units to use for expiry of read messages.
      * Values are 1 = days, 2 = weeks, 3 = months.
      */
     void setReadExpireUnits(ExpireUnits units);
 
-    /**
+    /*!
      * Returns the age at which unread messages are expired.
      * Units are determined by unreadExpireUnits().
      */
     [[nodiscard]] int unreadExpireAge() const;
 
-    /**
+    /*!
      * Returns the age at which read messages are expired.
      * Units are determined by readExpireUnits().
      */
     [[nodiscard]] int readExpireAge() const;
 
-    /**
+    /*!
      * What should expiry do? Delete or move to another folder?
      */
     [[nodiscard]] ExpireAction expireAction() const;
     void setExpireAction(ExpireAction a);
 
-    /**
+    /*!
      * If expiry should move to folder, return the ID of that folder
      */
     [[nodiscard]] Akonadi::Collection::Id expireToFolderId() const;
     void setExpireToFolderId(Akonadi::Collection::Id id);
 
-    /**
+    /*!
      * Units getUnreadExpireAge() is returned in.
      * 1 = days, 2 = weeks, 3 = months.
      */
     [[nodiscard]] ExpireUnits unreadExpireUnits() const;
 
-    /**
+    /*!
      * Units getReadExpireAge() is returned in.
      * 1 = days, 2 = weeks, 3 = months.
      */

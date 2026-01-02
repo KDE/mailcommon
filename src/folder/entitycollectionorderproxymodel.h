@@ -14,8 +14,8 @@ namespace MailCommon
 {
 class HierarchicalFolderMatcher;
 
-/**
- * @brief The EntityCollectionOrderProxyModel class implements ordering of mail collections.
+/*!
+ * \brief The EntityCollectionOrderProxyModel class implements ordering of mail collections.
  * It supports two modes: manual sorting and automatic sorting.
  *
  * The manual sorting (which has to be activated explicitly by the user) allows the user to

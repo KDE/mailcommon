@@ -17,8 +17,8 @@ class AccountActivitiesAbstract;
 }
 namespace MailCommon
 {
-/**
- * @brief The FolderTreeWidgetProxyModel class
+/*!
+ * \brief The FolderTreeWidgetProxyModel class
  * @author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT FolderTreeWidgetProxyModel : public Akonadi::EntityRightsFilterModel

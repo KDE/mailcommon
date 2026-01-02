@@ -15,8 +15,8 @@ class AccountActivitiesAbstract;
 }
 namespace MailCommon
 {
-/**
- * @brief The FavoriteCollectionOrderProxyModel class implements ordering of favorite collections.
+/*!
+ * \brief The FavoriteCollectionOrderProxyModel class implements ordering of favorite collections.
  */
 class MAILCOMMON_EXPORT FavoriteCollectionOrderProxyModel : public Akonadi::EntityOrderProxyModel
 {

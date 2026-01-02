@@ -19,8 +19,8 @@ namespace MailCommon
 class FilterAction;
 class FilterActionWidget;
 
-/**
- * @short A widget to edit a single MailCommon::FilterAction.
+/*!
+ * \brief A widget to edit a single MailCommon::FilterAction.
  *
  * This widgets allows to edit a single MailCommon::FilterAction (in fact
  * any derived class that is registered in
@@ -35,37 +35,38 @@ class FilterActionWidget;
  * one to create a parameter widget.
  *
  * @author Marc Mutz <mutz@kde.org>
- * @see MailCommon::FilterAction MailCommon::MailFilter FilterActionWidgetLister
+ * \sa MailCommon::FilterAction MailCommon::MailFilter FilterActionWidgetLister
  */
 class FilterActionWidget : public QWidget
 {
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Creates a filter action widget with no type selected.
      *
-     * @param parent The parent widget.
+     * \a parent The parent widget.
      */
     explicit FilterActionWidget(QWidget *parent = nullptr);
 
-    /**
+    /*!
      * Destroys the filter action widget.
      */
     ~FilterActionWidget() override;
 
-    /**
+    /*!
      * Sets the filter action.
      *
      * The action's type is determined and the corresponding widget
-     * it loaded with @p action's parameters and then raised.
+     * it loaded with \a action's parameters and then raised.
      *
-     * If @p action is @c 0, the widget is cleared.
-     * @note The widget takes ownership of the passed action.
+     * If \a action is \\ 0, the widget is cleared.
+     * \
+ote The widget takes ownership of the passed action.
      */
     void setAction(const MailCommon::FilterAction *action);
 
-    /**
+    /*!
      * Returns the filter action.
      *
      * This method is necessary because the type of actions can
@@ -82,41 +83,41 @@ Q_SIGNALS:
     void removeFilterWidget(QWidget *);
 
 private:
-    //@cond PRIVATE
+    //\\ond PRIVATE
     class FilterActionWidgetPrivate;
     std::unique_ptr<FilterActionWidgetPrivate> const d;
     //@endcond
 };
 
-/**
- * @short A container widget for a list of FilterActionWidgets.
+/*!
+ * \brief A container widget for a list of FilterActionWidgets.
  *
  * @author Marc Mutz <mutz@kde.org>
- * @see MailCommon::FilterAction MailCommon::MailFilter FilterActionWidget
+ * \sa MailCommon::FilterAction MailCommon::MailFilter FilterActionWidget
  */
 class MAILCOMMON_EXPORT FilterActionWidgetLister : public KPIM::KWidgetLister
 {
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Creates a new filter action widget lister.
      *
-     * @param parent The parent widget.
+     * \a parent The parent widget.
      */
     explicit FilterActionWidgetLister(QWidget *parent = nullptr);
 
-    /**
+    /*!
      * Destroys the filter action widget lister.
      */
     ~FilterActionWidgetLister() override;
 
-    /**
-     * Sets the @p list of filter actions, the lister will create FilterActionWidgets for.
+    /*!
+     * Sets the \a list of filter actions, the lister will create FilterActionWidgets for.
      */
     void setActionList(QList<FilterAction *> *list);
 
-    /**
+    /*!
      * Updates the action list according to the current action widget values.
      */
     void updateActionList();
@@ -124,7 +125,7 @@ public:
     void reconnectWidget(FilterActionWidget *w);
 
 public Q_SLOTS:
-    /**
+    /*!
      * Resets the action widgets.
      */
     void reset();
@@ -135,20 +136,20 @@ Q_SIGNALS:
     void filterModified();
 
 protected:
-    /**
-     * @copydoc KPIM::KWidgetLister::clearWidget
+    /*!
+     * \\opydoc KPIM::KWidgetLister::clearWidget
      */
     void clearWidget(QWidget *) override;
 
-    /**
-     * @copydoc KPIM::KWidgetLister::createWidget
+    /*!
+     * \\opydoc KPIM::KWidgetLister::createWidget
      */
     QWidget *createWidget(QWidget *) override;
 
     void updateAddRemoveButton();
 
 private:
-    //@cond PRIVATE
+    //\\ond PRIVATE
     class FilterActionWidgetListerPrivate;
     std::unique_ptr<FilterActionWidgetListerPrivate> const d;
     //@endcond

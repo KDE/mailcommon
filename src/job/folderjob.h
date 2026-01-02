@@ -12,8 +12,8 @@
 #include <QObject>
 namespace MailCommon
 {
-/**
- * @brief The FolderJob class
+/*!
+ * \brief The FolderJob class
  */
 class MAILCOMMON_EXPORT FolderJob : public QObject
 {
@@ -24,30 +24,30 @@ public:
 
     ~FolderJob() override;
 
-    /**
+    /*!
      * Start the job
      */
     void start();
 
-    /**
+    /*!
      * Interrupt the job. Note that the finished() and result() signal
      * will be emitted, unless you called setPassiveDestructor(true) before.
      * This kills the job, don't use it afterwards.
      */
     virtual void kill();
 
-    /**
-     * @return the error code of the job. This must only be called from
+    /*!
+     * Returns the error code of the job. This must only be called from
      * the slot connected to the finished() signal.
      */
     [[nodiscard]] int error() const;
 
-    /**
-     * @return true if this job can be canceled, e.g. to exit the application
+    /*!
+     * Returns true if this job can be canceled, e.g. to exit the application
      */
     [[nodiscard]] bool isCancellable() const;
 
-    /**
+    /*!
      * Call this to change the "cancellable" property of this job.
      * By default, tListMessages, tGetMessage, tGetFolder and tCheckUidValidity
      * are cancellable, the others are not. But when copying, a non-cancellable
@@ -56,12 +56,12 @@ public:
     void setCancellable(bool b);
 
 Q_SIGNALS:
-    /**
+    /*!
      * Emitted when the job finishes all processing.
      */
     void finished();
 
-    /**
+    /*!
      * Emitted when the job finishes all processing.
      * More convenient signal than finished(), since it provides a pointer to the job.
      * This signal is emitted by the FolderJob destructor => do NOT downcast
@@ -70,7 +70,7 @@ Q_SIGNALS:
     void result(MailCommon::FolderJob *job);
 
 protected:
-    /**
+    /*!
      * Has to be reimplemented. It's called by the start() method. Should
      * start the processing of the specified job function.
      */

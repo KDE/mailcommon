@@ -34,7 +34,7 @@ namespace MailCommon
 class EntityCollectionOrderProxyModel;
 class FolderTreeView;
 
-/**
+/*!
  * This is the widget that shows the main folder tree.
  *
  * It consists of the view (FolderTreeView) and a search line.
@@ -63,7 +63,7 @@ public:
                               FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelOptions optReadableProxy = FolderTreeWidgetProxyModel::None);
     ~FolderTreeWidget() override;
 
-    /**
+    /*!
      * The possible tooltip display policies.
      */
     enum ToolTipDisplayPolicy {
@@ -72,7 +72,7 @@ public:
         DisplayNever ///< Nevery display tooltips
     };
 
-    /**
+    /*!
      * The available sorting policies.
      */
     enum SortingPolicy {

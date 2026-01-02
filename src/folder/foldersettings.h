@@ -20,8 +20,8 @@ using MessageCore::MailingList;
 
 namespace MailCommon
 {
-/**
- * @brief The FolderSettings class
+/*!
+ * \brief The FolderSettings class
  * @author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT FolderSettings : public QObject
@@ -68,7 +68,7 @@ public:
     void setShortcut(const QKeySequence &);
     const QKeySequence &shortcut() const;
 
-    /**
+    /*!
      *  Get / set whether the default identity should be used instead of the
      *  identity specified by setIdentity().
      */
@@ -78,7 +78,7 @@ public:
     void setIdentity(uint identity);
     [[nodiscard]] uint identity() const;
 
-    /**
+    /*!
      * Returns true if this folder is associated with a mailing-list.
      */
     void setMailingListEnabled(bool enabled);
@@ -88,14 +88,14 @@ public:
 
     [[nodiscard]] MailingList mailingList() const;
 
-    /**
+    /*!
      * Returns true if the replies to mails from this folder should be
      * put in the same folder.
      */
     [[nodiscard]] bool putRepliesInSameFolder() const;
     void setPutRepliesInSameFolder(bool b);
 
-    /**
+    /*!
      * Returns true if this folder should be hidden from all folder selection dialogs
      */
     [[nodiscard]] bool hideInSelectionDialog() const;
@@ -119,7 +119,7 @@ private:
 
     Akonadi::Collection mCollection;
 
-    /** Mailing list attributes */
+    /*! Mailing list attributes */
     bool mMailingListEnabled = false;
     MailingList mMailingList;
 
@@ -127,15 +127,15 @@ private:
     uint mIdentity;
 
     MessageViewer::Viewer::DisplayFormatMessage mFormatMessage = MessageViewer::Viewer::Unknown;
-    /** Should replies to messages in this folder be put in here? */
+    /*! Should replies to messages in this folder be put in here? */
     bool mPutRepliesInSameFolder = false;
 
-    /** Should this folder be hidden in the folder selection dialog? */
+    /*! Should this folder be hidden in the folder selection dialog? */
     bool mHideInSelectionDialog = false;
 
     bool mFolderHtmlLoadExtPreference = false;
 
-    /** shortcut associated with this folder or null, if none is configured. */
+    /*! shortcut associated with this folder or null, if none is configured. */
     QKeySequence mShortcut;
     bool mWriteConfig = true;
 };

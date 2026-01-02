@@ -13,8 +13,8 @@ class QDomElement;
 
 namespace MailCommon
 {
-/**
- * @brief The FilterImporterGmail class
+/*!
+ * \brief The FilterImporterGmail class
  * @author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT FilterImporterGmail : public FilterImporterAbstract

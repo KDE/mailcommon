@@ -31,7 +31,7 @@ class ItemFetchJob;
 
 namespace MailCommon
 {
-/**
+/*!
  * Writes an entire folder structure to an archive file. The archive is
  * structured like a hierarchy of maildir folders. However, every type of
  * folder works as the source, i.e. also online IMAP folders.

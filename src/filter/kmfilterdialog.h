@@ -41,7 +41,7 @@ class KMFilterListBox;
 
 class KJob;
 
-/**
+/*!
  * The filter dialog. This is a non-modal dialog used to manage the filters.
  * It should only be called through KMFilterMgr::openDialog. The dialog
  * consists of three main parts:
@@ -76,7 +76,8 @@ class KJob;
  * is made by KMFilterListBox. The changed filters are local to
  * KMFilterListBox until the user clicks the 'Apply' button.
  *
- * NOTE: Though this dialog is non-modal, it completely ignores all
+ * \
+ote Though this dialog is non-modal, it completely ignores all
  * the stuff that goes on behind the scenes with folders esp. folder
  * creation, move and create. The widgets that depend on the filter
  * list and the filters that use folders as parameters are not
@@ -88,12 +89,12 @@ class KJob;
  * turn delivers it to the KMFilterListBox.
  *
  * If you change the (DocBook) anchor for the filter dialog help,
- * make sure to change @p const @p QString @p KMFilterDialogHelpAnchor
+ * make sure to change \a const \a QString \a KMFilterDialogHelpAnchor
  * in kmfilterdlg.cpp accordingly.
  *
- * @short The filter dialog.
+ * \brief The filter dialog.
  * @author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>.
- * @see MailCommon::MailFilter KMFilterActionEdit SearchPatternEdit KMFilterListBox
+ * \sa MailCommon::MailFilter KMFilterActionEdit SearchPatternEdit KMFilterListBox
  */
 namespace MailCommon
 {
@@ -102,14 +103,14 @@ class MAILCOMMON_EXPORT KMFilterDialog : public QDialog
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Creates the filter dialog. The only class which should be able
      * to do this is KMFilterMgr. This ensures that there is only a
      * single filter dialog.
      */
     explicit KMFilterDialog(const QList<KActionCollection *> &actionCollection, QWidget *parent = nullptr, bool createDummyFilter = true);
 
-    /**
+    /*!
      * Called from KMFilterMgr. Creates a new filter and presets
      * the first rule with "field equals value". Internally forwarded to
      * KMFilterListBox::createFilter. You should instead call
@@ -118,7 +119,7 @@ public:
     void createFilter(const QByteArray &field, const QString &value);
 
 public Q_SLOTS:
-    /**
+    /*!
      * Internally connected to KMFilterListBox::filterSelected.
      * Just does a simple check and then calls
      * SearchPatternEdit::setSearchPattern and
@@ -126,7 +127,7 @@ public Q_SLOTS:
      */
     void slotFilterSelected(MailCommon::MailFilter *aFilter);
 
-    /** Override QDialog::accept to allow disabling close */
+    /*! Override QDialog::accept to allow disabling close */
     void accept() override;
 
 protected Q_SLOTS:
@@ -140,42 +141,42 @@ protected Q_SLOTS:
     void slotUpdateFilter();
     void slotSaveSize();
 
-    /**
+    /*!
      * Called when the dialog is closed (finished).
      */
     void slotFinished();
 
-    /**
+    /*!
      * Update the list of accounts shown in the advanced tab.
      */
     void slotUpdateAccountList();
 
-    /**
+    /*!
      * Called when a user clicks the import filters button. Pops up
      * a dialog asking the user which file to import from and which
      * of the filters in that file to import.
      */
     void slotImportFilter(QAction *);
 
-    /**
+    /*!
      * Called when a user clicks the export filters button. Pops up
      * a dialog asking the user which filters to export and which
      * file to export to.
      */
     void slotExportFilters();
 
-    /**
+    /*!
      * Called when a user decides to continue editing invalid filters
      */
     void slotDisableAccept();
 
-    /**
+    /*!
      * Called whenever a change in the filters configuration is detected,
      * to enable the Apply button.
      */
     void slotDialogUpdated();
 
-    /**
+    /*!
      * Called wherenever the apply button is pressed.
      */
     void slotApply();
@@ -194,17 +195,17 @@ private:
 protected:
     bool event(QEvent *e) override;
 
-    /** The widget that contains the ListBox showing the filters, and the
+    /*! The widget that contains the ListBox showing the filters, and the
         controls to remove filters, add new ones and to change their order. */
     KMFilterListBox *mFilterList = nullptr;
 
-    /** The widget that allows editing of the filter pattern. */
+    /*! The widget that allows editing of the filter pattern. */
     MailCommon::SearchPatternEdit *mPatternEdit = nullptr;
 
-    /** The widget that allows editing of the filter actions. */
+    /*! The widget that allows editing of the filter actions. */
     MailCommon::FilterActionWidgetLister *mActionLister = nullptr;
 
-    /** Lets the user select whether to apply this filter on
+    /*! Lets the user select whether to apply this filter on
        inbound/outbound messages, both, or only on explicit CTRL-J. */
     QCheckBox *mApplyOnIn = nullptr;
     QCheckBox *mApplyOnOut = nullptr;
@@ -212,13 +213,13 @@ protected:
     QCheckBox *mApplyOnCtrlJ = nullptr;
     QCheckBox *mApplyOnAllFolders = nullptr;
 
-    /** For a filter applied to inbound messages selects whether to apply
+    /*! For a filter applied to inbound messages selects whether to apply
         this filter to all accounts or to selected accounts only. */
     QRadioButton *mApplyOnForAll = nullptr;
     QRadioButton *mApplyOnForTraditional = nullptr;
     QRadioButton *mApplyOnForChecked = nullptr;
 
-    /** ListView that shows the accounts in the advanced tab */
+    /*! ListView that shows the accounts in the advanced tab */
     KMFilterAccountList *mAccountList = nullptr;
 
     QCheckBox *mStopProcessingHere = nullptr;

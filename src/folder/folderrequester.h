@@ -22,7 +22,7 @@ class AccountActivitiesAbstract;
 
 namespace MailCommon
 {
-/**
+/*!
  * A widget that contains a QLineEdit which shows the current folder
  * and a button that fires a FolderSelectionDialog
  * The dialog is set to disable readonly folders by default
@@ -41,30 +41,30 @@ class MAILCOMMON_EXPORT FolderRequester : public QWidget
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Constructor
-     * @param parent the parent widget
+     * \a parent the parent widget
      */
     explicit FolderRequester(QWidget *parent = nullptr);
     ~FolderRequester() override;
 
-    /**
+    /*!
      * Returns the selected collection.
      */
     [[nodiscard]] Akonadi::Collection collection() const;
 
-    /**
-     * Presets the folder to the collection @p collection.
-     * Disable fetchcollection when not necessary @p fetchCollection
+    /*!
+     * Presets the folder to the collection \a collection.
+     * Disable fetchcollection when not necessary \a fetchCollection
      */
     void setCollection(const Akonadi::Collection &collection, bool fetchCollection = true);
 
-    /**
-     * Returns @c true if there's a valid collection set on this widget.
+    /*!
+     * Returns \\ true if there's a valid collection set on this widget.
      */
     [[nodiscard]] bool hasCollection() const;
 
-    /**
+    /*!
      * Sets if readonly folders should be disabled.
      * Be aware that if you disable this the user can also select the
      * 'Local Folders' folder which has no valid folder associated
@@ -79,25 +79,25 @@ public:
 
     void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 protected Q_SLOTS:
-    /**
+    /*!
      * Opens the folder dialog.
      */
     void slotOpenDialog();
 
-    /**
+    /*!
      * Updates the information we have about the current folder.
      */
     void slotCollectionsReceived(KJob *);
 
 Q_SIGNALS:
-    /**
+    /*!
      * Emitted when the folder changed.
      */
     void folderChanged(const Akonadi::Collection &);
     void invalidFolder();
 
 protected:
-    /** Capture space key to open the dialog */
+    /*! Capture space key to open the dialog */
     void keyPressEvent(QKeyEvent *e) override;
     void setCollectionFullPath(const Akonadi::Collection &col);
 

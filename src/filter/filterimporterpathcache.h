@@ -12,8 +12,8 @@
 #include <QObject>
 namespace MailCommon
 {
-/**
- * @brief The FilterImporterPathCache class
+/*!
+ * \brief The FilterImporterPathCache class
  * @author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT FilterImporterPathCache : public QObject

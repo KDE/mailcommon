@@ -23,7 +23,7 @@ class CollectionStatisticsDelegate;
 
 namespace MailCommon
 {
-/**
+/*!
  * This is an enhanced EntityTreeView specially suited for the folders in KMail's
  * main folder widget.
  */

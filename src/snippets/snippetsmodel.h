@@ -15,8 +15,8 @@
 namespace MailCommon
 {
 class SnippetItem;
-/**
- * @brief The SnippetsInfo struct
+/*!
+ * \brief The SnippetsInfo struct
  * @author Laurent Montel <montel@kde.org>
  */
 struct MAILCOMMON_EXPORT SnippetsInfo {
@@ -31,8 +31,8 @@ struct MAILCOMMON_EXPORT SnippetsInfo {
     QString attachment;
 };
 
-/**
- * @brief The SnippetsModel class
+/*!
+ * \brief The SnippetsModel class
  * @author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT SnippetsModel : public QAbstractItemModel

@@ -21,8 +21,8 @@ namespace MailCommon
 {
 class MailFilter;
 
-/**
- * @short Utility class that provides persisting of filters to/from KConfig.
+/*!
+ * \brief Utility class that provides persisting of filters to/from KConfig.
  *
  * @author Till Adam <till@kdab.net>
  */
@@ -42,47 +42,47 @@ public:
         SeaMonkeyFilter = 9,
     };
 
-    /**
+    /*!
      * Creates a new filter importer/exporter.
      *
-     * @param parent The parent widget.
+     * \a parent The parent widget.
      */
     explicit FilterImporterExporter(QWidget *parent = nullptr);
 
-    /**
+    /*!
      * Destroys the filter importer/exporter.
      */
     virtual ~FilterImporterExporter();
 
-    /**
-     * Exports the given @p filters to a file which
+    /*!
+     * Exports the given \a filters to a file which
      * is asked from the user. The list to export is also
      * presented for confirmation/selection.
      */
     void exportFilters(const QList<MailFilter *> &filters, const QUrl &fileName = QUrl(), bool saveAll = false);
 
-    /**
+    /*!
      * Imports filters. Ask the user where to import them from
      * and which filters to import.
      */
     [[nodiscard]] QList<MailFilter *>
     importFilters(bool &canceled, FilterImporterExporter::FilterType type = FilterImporterExporter::KMailFilter, const QString &filename = QString());
 
-    /**
-     * Writes the given list of @p filters to the given @p config file.
+    /*!
+     * Writes the given list of \a filters to the given \a config file.
      */
     static void writeFiltersToConfig(const QList<MailFilter *> &filters, KSharedConfig::Ptr config, bool exportFilter = false);
 
-    /**
-     * Reads a list of filters from the given @p config file.
-     * @p emptyfilters will contain filters that are empty after "purification", which removes aspects that are not applicable,
+    /*!
+     * Reads a list of filters from the given \a config file.
+     * \a emptyfilters will contain filters that are empty after "purification", which removes aspects that are not applicable,
      * usually because of references to nonexistent external entities such as accounts, folders, etc.
-     * If @p interactive is true, a dialog will offer to select a different account for any filter that refers to an account that doesn't exist.
+     * If \a interactive is true, a dialog will offer to select a different account for any filter that refers to an account that doesn't exist.
      */
     static QList<MailFilter *> readFiltersFromConfig(const KSharedConfig::Ptr &config, bool interactive, QStringList &emptyFilters);
 
 private:
-    //@cond PRIVATE
+    //\\ond PRIVATE
     Q_DISABLE_COPY(FilterImporterExporter)
 
     class FilterImporterExporterPrivate;

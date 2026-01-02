@@ -25,7 +25,7 @@ namespace MailCommon
 {
 class SearchPatternEdit;
 
-/**
+/*!
  * This widget is intended to be used in the filter configuration as
  * well as in the message search dialogs. It consists of a frame,
  * inside which there are placed two radio buttons entitled "Match
@@ -53,7 +53,7 @@ class SearchPatternEdit;
  * change it. This is because it auto-names the pattern to
  * "<$field>:$contents" iff the pattern begins with "<".
  *
- * @short A widget which allows editing a set of MailCommon::SearchRule's.
+ * \brief A widget which allows editing a set of MailCommon::SearchRule's.
  * @author Marc Mutz <mutz@kde.org>
  */
 class SearchRuleWidgetLister;
@@ -78,7 +78,7 @@ public:
         BalooMode = 1,
     };
 
-    /**
+    /*!
      * Constructor. The parent parameter is passed to the underlying
      * QGroupBox, as usual.
      */
@@ -90,34 +90,34 @@ public:
 
     void setPatternEditOptions(SearchPatternEdit::SearchPatternEditOptions options);
 
-    /**
+    /*!
      * Sets the search pattern. Rules are inserted regardless of the
      * return value of each rules' MailCommon::SearchRule::isEmpty.
-     * This widget makes a shallow copy of @p aPattern and operates
+     * This widget makes a shallow copy of \a aPattern and operates
      * directly on it.
      */
     void setSearchPattern(MailCommon::SearchPattern *aPattern);
 
-    /**
+    /*!
      * Updates the search pattern according to the current widget values.
      */
     void updateSearchPattern();
 
 public Q_SLOTS:
-    /**
+    /*!
      * Called when the widget should let go of the currently referenced
      * filter and disable itself.
      */
     void reset();
 
 Q_SIGNALS:
-    /**
+    /*!
      * This signal is emitted whenever the name of the processed
      * search pattern may have changed.
      */
     void maybeNameChanged();
 
-    /**
+    /*!
      * This signal is emitted wherenever the search pattern changes in some way.
      */
     void patternChanged();
@@ -136,7 +136,7 @@ private:
     SearchRuleWidgetLister *mRuleLister = nullptr;
 };
 
-/**
+/*!
  * A widget to edit a single MailCommon::SearchRule.
  * It consists of an editable KComboBox for the field,
  * a read-only KComboBox for the function and
@@ -147,7 +147,7 @@ private:
  * it does the rest. It will never delete the rule itself, as it assumes
  *  that something outside of it manages this.
  *
- * @short A widget to edit a single MailCommon::SearchRule.
+ * \brief A widget to edit a single MailCommon::SearchRule.
  * @author Marc Mutz <mutz@kde.org>
  */
 class SearchRuleWidget : public QWidget
@@ -155,7 +155,7 @@ class SearchRuleWidget : public QWidget
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Constructor. You can give a MailCommon::SearchRule as parameter,
      * which will be used to initialize the widget.
      */
@@ -185,21 +185,21 @@ public:
         Invitation,
     };
 
-    /**
+    /*!
      * Sets the rule. The rule is accepted regardless of the return
      * value of MailCommon::SearchRule::isEmpty. This widget makes a shallow
-     * copy of @p aRule and operates directly on it. If @p aRule is 0,
+     * copy of \a aRule and operates directly on it. If \a aRule is 0,
      * resets itself, takes user input, but does essentially nothing.
      * If you pass 0, you should probably disable it.
      */
     void setRule(MailCommon::SearchRule::Ptr aRule);
 
-    /**
+    /*!
      * Returns a reference to the currently-worked-on MailCommon::SearchRule.
      */
     MailCommon::SearchRule::Ptr rule() const;
 
-    /**
+    /*!
      * Resets the rule currently worked on and updates the widget accordingly.
      */
     void reset();
@@ -216,14 +216,14 @@ public Q_SLOTS:
     void slotReturnPressed();
 
 Q_SIGNALS:
-    /**
+    /*!
      * This signal is emitted whenever the user alters the field.
      * The pseudo-headers <...> are returned in their i18n form, but
      * stored in their English form in the rule.
      */
     void fieldChanged(const QString &);
 
-    /**
+    /*!
      * This signal is emitted whenever the user alters the contents/value
      * of the rule.
      */
@@ -235,12 +235,12 @@ Q_SIGNALS:
     void removeWidget(QWidget *);
 
 protected:
-    /**
+    /*!
      * Used internally to translate i18n-ized pseudo-headers back to English.
      */
     static QByteArray ruleFieldToEnglish(const QString &i18nVal);
 
-    /**
+    /*!
      * Used internally to find the corresponding index into the field
      * ComboBox. Returns the index if found or -1 if the search failed,
      */

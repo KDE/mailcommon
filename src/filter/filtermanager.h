@@ -18,8 +18,8 @@ namespace MailCommon
 {
 class FilterActionDict;
 
-/**
- * @short A wrapper class that allows easy access to the mail filters
+/*!
+ * \brief A wrapper class that allows easy access to the mail filters
  *
  * This class communicates with the mailfilter agent via DBus.
  */
@@ -29,7 +29,7 @@ class MAILCOMMON_EXPORT FilterManager : public QObject
 
 public:
     ~FilterManager() override;
-    /**
+    /*!
      * Describes the list of filters.
      */
     enum FilterSet {
@@ -42,28 +42,28 @@ public:
         All = Inbound | BeforeOutbound | Outbound | Explicit | AllFolders
     };
 
-    /**
+    /*!
      * Returns the global filter manager object.
      */
     static FilterManager *instance();
 
-    /**
+    /*!
      * Returns whether the filter manager is in a usable state.
      */
     [[nodiscard]] bool isValid() const;
 
-    /**
-     * Checks for existing filters with the @p name and extend the
+    /*!
+     * Checks for existing filters with the \a name and extend the
      * "name" to "name (i)" until no match is found for i=1..n
      */
     [[nodiscard]] QString createUniqueFilterName(const QString &name) const;
 
-    /**
+    /*!
      * Returns the global filter action dictionary.
      */
     static FilterActionDict *filterActionDict();
 
-    /**
+    /*!
      * Shows the filter log dialog.
      *
      * This is used to debug problems with filters.
@@ -72,55 +72,55 @@ public:
 
     /// Apply filters interface
 
-    /**
-     * Applies filter with the given @p identifier on the message @p item.
-     * @return @c true on success, @c false otherwise.
+    /*!
+     * Applies filter with the given \a identifier on the message \a item.
+     * Returns \\ true on success, \\ false otherwise.
      */
     void filter(const Akonadi::Item &item, const QString &identifier, const QString &resourceId) const;
 
-    /**
+    /*!
      * Process given message item by applying the filter rules one by
      * one. You can select which set of filters (incoming or outgoing)
      * should be used.
      *
-     * @param item The message item to process.
-     * @param set Select the filter set to use.
-     * @param account @c true if an account id is specified else @c false
-     * @param accountId The id of the resource that the message was retrieved from
+     * \a item The message item to process.
+     * \a set Select the filter set to use.
+     * \a account \\ true if an account id is specified else \\ false
+     * \a accountId The id of the resource that the message was retrieved from
      */
     void filter(const Akonadi::Item &item, FilterSet set = Inbound, bool account = false, const QString &resourceId = QString()) const;
 
-    /**
+    /*!
      * Process all messages in given collection by applying the filters rules one
      * by one. You can select which set of filters (incoming or outgoing)
      * should be used.
      */
     void filter(const Akonadi::Collection &collection, FilterSet set = Explicit) const;
 
-    /**
+    /*!
      * Apply specified filters on all messages in given collection
      */
     void filter(const Akonadi::Collection &collection, const QStringList &listFilters) const;
 
-    /**
+    /*!
      * Process all messages in given collections by applying the filters rules one
      * by one. You can select which set of filters (incoming or outgoing)
      * should be used.
      */
     void filter(const Akonadi::Collection::List &collections, FilterSet set = Explicit) const;
 
-    /**
+    /*!
      * Apply specified filters on all messages in given collection
      */
     void filter(const Akonadi::Collection::List &collections, const QStringList &listFilters, FilterSet set = Explicit) const;
 
-    /**
-     * Process given @p messages by applying the filter rules one by
+    /*!
+     * Process given \a messages by applying the filter rules one by
      * one. You can select which set of filters (incoming or outgoing)
      * should be used.
      *
-     * @param item The message item to process.
-     * @param set Select the filter set to use.
+     * \a item The message item to process.
+     * \a set Select the filter set to use.
      */
     void filter(const Akonadi::Item::List &messages, FilterSet set = Explicit) const;
 
@@ -128,36 +128,36 @@ public:
 
     /// Manage filters interface
 
-    /**
-     * Appends the list of @p filters to the current list of filters and
+    /*!
+     * Appends the list of \a filters to the current list of filters and
      * write everything back into the configuration. The filter manager
      * takes ownership of the filters in the list.
      */
     void appendFilters(const QList<MailCommon::MailFilter *> &filters, bool replaceIfNameExists = false);
 
-    /**
-     * Removes the given @p filter from the list.
+    /*!
+     * Removes the given \a filter from the list.
      * The filter object is not deleted.
      */
     void removeFilter(MailCommon::MailFilter *filter);
 
-    /**
-     * Replace the list of filters of the filter manager with the given list of @p filters.
+    /*!
+     * Replace the list of filters of the filter manager with the given list of \a filters.
      * The manager takes ownership of the filters.
      */
     void setFilters(const QList<MailCommon::MailFilter *> &filters);
 
-    /**
+    /*!
      * Returns the filter list of the manager.
      */
     [[nodiscard]] QList<MailCommon::MailFilter *> filters() const;
 
-    /**
+    /*!
      * Should be called at the beginning of an filter list update.
      */
     void beginUpdate();
 
-    /**
+    /*!
      * Should be called at the end of an filter list update.
      */
     void endUpdate();
@@ -178,7 +178,7 @@ private Q_SLOTS:
     MAILCOMMON_NO_EXPORT void slotTagRemoved(const Akonadi::Tag &);
 
 Q_SIGNALS:
-    /**
+    /*!
      * This signal is emitted whenever the filter list has been updated.
      */
     void filtersChanged();

@@ -23,7 +23,7 @@ class QString;
 
 namespace MailCommon
 {
-/**
+/*!
  * The Util namespace contains a collection of helper functions use in
  * various places.
  */
@@ -46,7 +46,7 @@ MAILCOMMON_EXPORT bool showJobErrorMessage(KJob *job);
 
 [[nodiscard]] MAILCOMMON_EXPORT bool isUnifiedMailboxesAgent(const Akonadi::Collection &col);
 
-/**
+/*!
  * Returns the identity of the folder that contains the given Akonadi::Item.
  */
 [[nodiscard]] MAILCOMMON_EXPORT uint folderIdentity(const Akonadi::Item &item);

@@ -15,8 +15,8 @@
 namespace MailCommon
 {
 class CollectionExpiryWidget;
-/**
- * @brief The CollectionExpiryPage class
+/*!
+ * \brief The CollectionExpiryPage class
  * @author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT CollectionExpiryPage : public Akonadi::CollectionPropertiesPage
