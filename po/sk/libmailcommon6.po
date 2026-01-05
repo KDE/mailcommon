@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2026-01-05 00:43+0000\n"
 "PO-Revision-Date: 2019-11-18 12:53+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -637,22 +637,22 @@ msgstr "Buďte opatrní, e-maily budú odstránené."
 msgid "Encrypt"
 msgstr "Šifrovať"
 
-#: filter/filteractions/filteractionencrypt.cpp:213
+#: filter/filteractions/filteractionencrypt.cpp:211
 #, kde-format
 msgid "No encryption key has been selected"
 msgstr "Nebol vybraný žiadny šifrovací kľúč"
 
-#: filter/filteractions/filteractionencrypt.cpp:249
+#: filter/filteractions/filteractionencrypt.cpp:247
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
 msgstr "Znovu zašifrujte šifrované e-maily pomocou tohto kľúča"
 
-#: filter/filteractions/filteractionencrypt.cpp:259
+#: filter/filteractions/filteractionencrypt.cpp:257
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
 msgstr "<b>Varovanie:</b> Seckey je potrebné na čítanie e-mailov."
 
-#: filter/filteractions/filteractionencrypt.cpp:261
+#: filter/filteractions/filteractionencrypt.cpp:259
 #, kde-format
 msgid ""
 "<p>Once an email has been encrypted you will need a crypto setup with your "
