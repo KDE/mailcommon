@@ -42,6 +42,10 @@ class KMFilterListBox;
 class KJob;
 
 /*!
+ * \class MailCommon::KMFilterDialog
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/KMFilterDialog
+ *
  * The filter dialog. This is a non-modal dialog used to manage the filters.
  * It should only be called through KMFilterMgr::openDialog. The dialog
  * consists of three main parts:
@@ -76,8 +80,7 @@ class KJob;
  * is made by KMFilterListBox. The changed filters are local to
  * KMFilterListBox until the user clicks the 'Apply' button.
  *
- * \
-ote Though this dialog is non-modal, it completely ignores all
+ * \note Though this dialog is non-modal, it completely ignores all
  * the stuff that goes on behind the scenes with folders esp. folder
  * creation, move and create. The widgets that depend on the filter
  * list and the filters that use folders as parameters are not

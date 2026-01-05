@@ -14,6 +14,10 @@ namespace MailCommon
 {
 class InvalidFilterListView;
 /*!
+ * \class MailCommon::InvalidFilterWidget
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/InvalidFilterWidget
+ *
  * \brief The InvalidFilterWidget class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -21,12 +25,22 @@ class MAILCOMMON_EXPORT InvalidFilterWidget : public QWidget
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit InvalidFilterWidget(QWidget *parent = nullptr);
+    /*!
+     */
     ~InvalidFilterWidget() override;
 
+    /*!
+     */
     void setInvalidFilters(const QList<MailCommon::InvalidFilterInfo> &lst);
 Q_SIGNALS:
+    /*!
+     */
     void showDetails(const QString &);
+    /*!
+     */
     void hideInformationWidget();
 
 private:

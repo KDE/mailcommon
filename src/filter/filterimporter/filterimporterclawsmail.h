@@ -15,7 +15,14 @@ class QTextStream;
 namespace MailCommon
 {
 class MailFilter;
-
+/*!
+ * \class MailCommon::FilterImporterClawsMails
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FilterImporterClawsMail
+ *
+ * \brief The FilterImporterClawsMails class
+ * \author Laurent Montel <montel@kde.org>
+ */
 class MAILCOMMON_EXPORT FilterImporterClawsMails : public FilterImporterAbstract
 {
 public:

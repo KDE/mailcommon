@@ -14,6 +14,10 @@
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::FilterLog
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FilterLog
+ *
  * \brief KMail Filter Log Collector.
  *
  * The filter log helps to collect log information about the

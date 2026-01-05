@@ -17,13 +17,29 @@ class IdentityCombo;
 namespace MailCommon
 {
 class FolderSettings;
+/*!
+ * \class MailCommon::CollectionGeneralWidget
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/CollectionGeneralWidget
+ *
+ * \brief The CollectionGeneralWidget class
+ * \author Laurent Montel <montel@kde.org>
+ */
 class MAILCOMMON_EXPORT CollectionGeneralWidget : public QWidget
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit CollectionGeneralWidget(QWidget *parent = nullptr);
+    /*!
+     */
     ~CollectionGeneralWidget() override;
+    /*!
+     */
     void save(Akonadi::Collection &);
+    /*!
+     */
     void load(const Akonadi::Collection &col);
 
 private:

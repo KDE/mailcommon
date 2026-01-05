@@ -23,6 +23,10 @@ class KConfigGroup;
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::MailFilter
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/MailFilter
+ *
  * \brief The MailFilter class
  */
 class MAILCOMMON_EXPORT MailFilter

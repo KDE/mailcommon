@@ -16,6 +16,10 @@ namespace MailCommon
 {
 class CollectionExpiryWidget;
 /*!
+ * \class MailCommon::CollectionExpiryPage
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/CollectionExpiryPage
+ *
  * \brief The CollectionExpiryPage class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -24,11 +28,23 @@ class MAILCOMMON_EXPORT CollectionExpiryPage : public Akonadi::CollectionPropert
     Q_OBJECT
 
 public:
+    /*!
+     * \brief CollectionExpiryPage
+     * \param parent
+     */
     explicit CollectionExpiryPage(QWidget *parent = nullptr);
+    /*!
+     */
     ~CollectionExpiryPage() override;
 
+    /*!
+     */
     [[nodiscard]] bool canHandle(const Akonadi::Collection &col) const override;
+    /*!
+     */
     void load(const Akonadi::Collection &collection) override;
+    /*!
+     */
     void save(Akonadi::Collection &collection) override;
 
 private:

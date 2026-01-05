@@ -20,8 +20,11 @@ class QWidget;
 namespace MailCommon
 {
 class MailFilter;
-
 /*!
+ * \class MailCommon::FilterImporterExporter
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FilterImporterExporter
+ *
  * \brief Utility class that provides persisting of filters to/from KConfig.
  *
  * \author Till Adam <till@kdab.net>

@@ -13,6 +13,10 @@
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::FilterImporterPathCache
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FilterImporterPathCache
+ *
  * \brief The FilterImporterPathCache class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -20,14 +24,28 @@ class MAILCOMMON_EXPORT FilterImporterPathCache : public QObject
 {
     Q_OBJECT
 public:
+    /*!
+     */
     static FilterImporterPathCache *self();
 
+    /*!
+     */
     explicit FilterImporterPathCache(QObject *parent = nullptr);
+    /*!
+     */
     ~FilterImporterPathCache() override;
 
+    /*!
+     */
     void insert(const QString &original, const Akonadi::Collection &newValue);
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection convertedFilterPath(const QString &original);
+    /*!
+     */
     void clear();
+    /*!
+     */
     [[nodiscard]] int count() const;
 
 private:

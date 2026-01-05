@@ -18,6 +18,10 @@ class TemplatesConfiguration;
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::CollectionTemplatesWidget
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/CollectionTemplatesWidget
+ *
  * \brief The CollectionTemplateWidget class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -25,9 +29,17 @@ class MAILCOMMON_EXPORT CollectionTemplatesWidget : public QWidget
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit CollectionTemplatesWidget(QWidget *parent = nullptr);
+    /*!
+     */
     ~CollectionTemplatesWidget() override;
+    /*!
+     */
     void save(Akonadi::Collection &);
+    /*!
+     */
     void load(const Akonadi::Collection &col);
 
 private:

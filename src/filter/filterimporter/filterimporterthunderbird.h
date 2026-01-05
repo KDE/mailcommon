@@ -16,18 +16,34 @@ namespace MailCommon
 {
 class MailFilter;
 /*!
+ * \class MailCommon::FilterImporterThunderbird
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FilterImporterThunderbird
+ *
  * \brief The FilterImporterThunderbird class
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT FilterImporterThunderbird : public FilterImporterAbstract
 {
 public:
+    /*!
+     */
     explicit FilterImporterThunderbird(QFile *file, bool interactive = true);
+    /*!
+     */
     FilterImporterThunderbird(QString string, bool interactive = true);
+    /*!
+     */
     ~FilterImporterThunderbird();
+    /*!
+     */
     [[nodiscard]] static QString defaultThunderbirdFiltersSettingsPath();
 
+    /*!
+     */
     [[nodiscard]] static QString defaultIcedoveFiltersSettingsPath();
+    /*!
+     */
     [[nodiscard]] static QString defaultSeaMonkeyFiltersSettingsPath();
 
 private:

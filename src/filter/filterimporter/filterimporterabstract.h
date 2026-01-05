@@ -16,18 +16,39 @@ class QDomDocument;
 namespace MailCommon
 {
 class MailFilter;
-
+/*!
+ * \class MailCommon::FilterImporterAbstract
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FilterImporterAbstract
+ *
+ * \brief The FilterImporterAbstract class
+ * \author Laurent Montel <montel@kde.org>
+ */
 class MAILCOMMON_EXPORT FilterImporterAbstract
 {
 public:
+    /*!
+     */
     explicit FilterImporterAbstract(bool interactive = true);
+    /*!
+     */
     ~FilterImporterAbstract();
+    /*!
+     */
     [[nodiscard]] QList<MailFilter *> importFilter() const;
+    /*!
+     */
     [[nodiscard]] QStringList emptyFilter() const;
 
 protected:
+    /*!
+     */
     void appendFilter(MailCommon::MailFilter *filter);
+    /*!
+     */
     void createFilterAction(MailCommon::MailFilter *filter, const QString &actionName, const QString &value);
+    /*!
+     */
     bool loadDomElement(QDomDocument &doc, QFile *file);
 
     QList<MailFilter *> mListMailFilter;

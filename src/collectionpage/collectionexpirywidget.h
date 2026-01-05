@@ -31,21 +31,48 @@ struct MAILCOMMON_EXPORT CollectionExpirySettings {
     void convertFromExpireCollectionAttribute(const ExpireCollectionAttribute *attr);
 };
 
+/*!
+ * \class MailCommon::CollectionExpiryWidget
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/CollectionExpiryWidget
+ *
+ * \brief The CollectionExpiryWidget class
+ */
 class MAILCOMMON_EXPORT CollectionExpiryWidget : public QWidget
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit CollectionExpiryWidget(QWidget *parent = nullptr);
+    /*!
+     */
     ~CollectionExpiryWidget() override;
 
+    /*!
+     */
     void load(const MailCommon::CollectionExpirySettings &settings);
+    /*!
+     */
     void save(Akonadi::Collection &collection, bool saveSettings, bool expireNow);
+    /*!
+     */
     void save(const CollectionExpirySettings &collectionExpirySettings, Akonadi::Collection &collection, bool saveSettings, bool expireNow);
+    /*!
+     */
     [[nodiscard]] CollectionExpirySettings settings() const;
+    /*!
+     */
     void hideExpireNowButton();
+    /*!
+     */
     [[nodiscard]] static bool canHandle(const Akonadi::Collection &col);
 Q_SIGNALS:
+    /*!
+     */
     void saveAndExpireRequested();
+    /*!
+     */
     void configChanged(bool changed = true);
 
 private:

@@ -17,8 +17,11 @@
 namespace MailCommon
 {
 class FilterActionDict;
-
 /*!
+ * \class MailCommon::FilterManager
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FilterManager
+ *
  * \brief A wrapper class that allows easy access to the mail filters
  *
  * This class communicates with the mailfilter agent via DBus.

@@ -25,6 +25,10 @@ class QWidget;
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::FilterAction
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FilterAction
+
  * \brief Abstract base class for mail filter actions.
  *
  * Abstract base class for mail filter actions. All it can do is

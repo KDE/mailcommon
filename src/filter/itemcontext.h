@@ -16,6 +16,10 @@
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::CollectionGeneralWidget
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/CollectionGeneralWidget
+ *
  * \brief A helper class for the filtering process
  *
  * The item context is used to pass the item together with meta data

@@ -26,6 +26,10 @@ namespace MailCommon
 class FolderSettings;
 class CollectionGeneralWidget;
 /*!
+ * \class MailCommon::CollectionGeneralPage
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/CollectionGeneralPage
+ *
  * \brief The CollectionGeneralPage class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -34,13 +38,23 @@ class MAILCOMMON_EXPORT CollectionGeneralPage : public Akonadi::CollectionProper
     Q_OBJECT
 
 public:
+    /*!
+     */
     explicit CollectionGeneralPage(QWidget *parent = nullptr);
+    /*!
+     */
     ~CollectionGeneralPage() override;
 
+    /*!
+     */
     void load(const Akonadi::Collection &collection) override;
+    /*!
+     */
     void save(Akonadi::Collection &collection) override;
 
 protected:
+    /*!
+     */
     void init(const Akonadi::Collection &);
 
 private:
