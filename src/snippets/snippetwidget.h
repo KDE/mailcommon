@@ -15,7 +15,7 @@ namespace MailCommon
 {
 /*!
  * \brief The SnippetWidget class
- * @author Laurent Montel <montel@kde.org>
+ * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT SnippetWidget : public QWidget
 {

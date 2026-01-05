@@ -19,7 +19,7 @@ namespace MailCommon
 {
 /*!
  * \brief The CollectionTemplateWidget class
- * @author Laurent Montel <montel@kde.org>
+ * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT CollectionTemplatesWidget : public QWidget
 {

@@ -22,7 +22,7 @@ namespace MailCommon
  * @li static FilterAction::newAction
  * @li the *ParamWidget* methods.
  *
- * @author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>
+ * \author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>
  * @see FilterAction Filter
  */
 class FilterActionWithUOID : public FilterAction

@@ -22,7 +22,7 @@ namespace MailCommon
 {
 /*!
  * \brief The SnippetInfo struct
- * @author Laurent Montel <montel@kde.org>
+ * \author Laurent Montel <montel@kde.org>
  */
 struct MAILCOMMON_EXPORT SnippetInfo {
     SnippetInfo(const QString &_subject, const QString &_text, const QString &_to, const QString &_cc, const QString &_bcc, const QString &_attachment)
@@ -44,7 +44,7 @@ struct MAILCOMMON_EXPORT SnippetInfo {
 };
 /*!
  * \brief The SnippetsManager class
- * @author Laurent Montel <montel@kde.org>
+ * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT SnippetsManager : public QObject
 {

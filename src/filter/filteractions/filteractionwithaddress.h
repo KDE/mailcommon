@@ -23,7 +23,7 @@ namespace MailCommon
  * @li virtual FilterAction::ReturnCodes FilterAction::process
  * @li static FilterAction::newAction
  *
- * @author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>
+ * \author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>
  * @see FilterActionWithString FilterAction Filter
  */
 class MAILCOMMON_TESTS_EXPORT FilterActionWithAddress : public FilterActionWithString

@@ -27,7 +27,7 @@ class FolderSettings;
 class CollectionGeneralWidget;
 /*!
  * \brief The CollectionGeneralPage class
- * @author Laurent Montel <montel@kde.org>
+ * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT CollectionGeneralPage : public Akonadi::CollectionPropertiesPage
 {

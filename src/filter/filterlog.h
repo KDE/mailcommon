@@ -27,7 +27,7 @@ namespace MailCommon
  * A signal is emitted whenever a new logentry is added,
  * when the log was cleared or any log state was changed.
  *
- * @author Andreas Gungl <a.gungl@gmx.de>
+ * \author Andreas Gungl <a.gungl@gmx.de>
  */
 class MAILCOMMON_EXPORT FilterLog : public QObject
 {

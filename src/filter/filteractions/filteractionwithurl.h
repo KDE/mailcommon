@@ -29,7 +29,7 @@ namespace MailCommon
  * modifications and stream the resulting command line into @p
  * mProcess. Then you can start the command with @p mProcess.start().
  *
- * @author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>
+ * \author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>
  * @see FilterActionWithString FilterAction Filter KProcess
  */
 class MAILCOMMON_TESTS_EXPORT FilterActionWithUrlHelpButton : public QToolButton

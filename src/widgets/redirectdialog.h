@@ -20,7 +20,7 @@ namespace MailCommon
  * manually redirecting messages. Only Redirect-To is
  * supported so far.
  *
- * @author Andreas Gungl <a.gungl@gmx.de>
+ * \author Andreas Gungl <a.gungl@gmx.de>
  */
 class MAILCOMMON_EXPORT RedirectDialog : public QDialog
 {

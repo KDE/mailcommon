@@ -34,7 +34,7 @@ class FilterActionWidget;
  * every MailCommon::FilterAction in KMFilterActionDict and asks each
  * one to create a parameter widget.
  *
- * @author Marc Mutz <mutz@kde.org>
+ * \author Marc Mutz <mutz@kde.org>
  * \sa MailCommon::FilterAction MailCommon::MailFilter FilterActionWidgetLister
  */
 class FilterActionWidget : public QWidget
@@ -92,7 +92,7 @@ private:
 /*!
  * \brief A container widget for a list of FilterActionWidgets.
  *
- * @author Marc Mutz <mutz@kde.org>
+ * \author Marc Mutz <mutz@kde.org>
  * \sa MailCommon::FilterAction MailCommon::MailFilter FilterActionWidget
  */
 class MAILCOMMON_EXPORT FilterActionWidgetLister : public KPIM::KWidgetLister

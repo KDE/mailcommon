@@ -30,7 +30,7 @@ namespace MailCommon
  * strings. The combobox will then contain be populated automatically
  * with those strings. The default string will be the first one.
  *
- * @author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>
+ * \author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>
  * @see FilterActionWithString FilterActionWithFolder FilterAction Filter
  */
 class MAILCOMMON_TESTS_EXPORT FilterActionWithStringList : public FilterActionWithString

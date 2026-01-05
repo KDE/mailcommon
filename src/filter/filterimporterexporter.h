@@ -24,7 +24,7 @@ class MailFilter;
 /*!
  * \brief Utility class that provides persisting of filters to/from KConfig.
  *
- * @author Till Adam <till@kdab.net>
+ * \author Till Adam <till@kdab.net>
  */
 class MAILCOMMON_EXPORT FilterImporterExporter
 {

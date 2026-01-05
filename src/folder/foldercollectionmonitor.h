@@ -28,7 +28,7 @@ namespace MailCommon
 class FolderCollectionMonitorPrivate;
 /*!
  * \brief The FolderCollectionMonitor class
- * @author Laurent Montel <montel@kde.org>
+ * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT FolderCollectionMonitor : public QObject
 {

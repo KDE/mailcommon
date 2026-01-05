@@ -48,7 +48,7 @@ namespace MailCommon
     reuse a rule in another pattern, make a deep copy of that rule.
 
     \brief An abstraction of a search over messages.
-    @author Marc Mutz <mutz@kde.org>
+    \author Marc Mutz <mutz@kde.org>
 */
 class MAILCOMMON_EXPORT SearchPattern : public QList<SearchRule::Ptr>
 {

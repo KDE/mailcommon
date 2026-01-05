@@ -54,7 +54,7 @@ class SearchPatternEdit;
  * "<$field>:$contents" iff the pattern begins with "<".
  *
  * \brief A widget which allows editing a set of MailCommon::SearchRule's.
- * @author Marc Mutz <mutz@kde.org>
+ * \author Marc Mutz <mutz@kde.org>
  */
 class SearchRuleWidgetLister;
 class MAILCOMMON_EXPORT SearchPatternEdit : public QWidget
@@ -148,7 +148,7 @@ private:
  *  that something outside of it manages this.
  *
  * \brief A widget to edit a single MailCommon::SearchRule.
- * @author Marc Mutz <mutz@kde.org>
+ * \author Marc Mutz <mutz@kde.org>
  */
 class SearchRuleWidget : public QWidget
 {

@@ -17,7 +17,7 @@ namespace MailCommon
 class IKernel;
 /*!
  * \brief The MDNWarningJob class
- * @author Laurent Montel <montel@kde.org>
+ * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT MDNWarningJob : public QObject
 {

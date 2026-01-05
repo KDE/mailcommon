@@ -93,7 +93,7 @@ ote Though this dialog is non-modal, it completely ignores all
  * in kmfilterdlg.cpp accordingly.
  *
  * \brief The filter dialog.
- * @author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>.
+ * \author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>.
  * \sa MailCommon::MailFilter KMFilterActionEdit SearchPatternEdit KMFilterListBox
  */
 namespace MailCommon

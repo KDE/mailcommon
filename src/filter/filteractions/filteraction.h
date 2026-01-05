@@ -32,7 +32,7 @@ namespace MailCommon
  * inherit form this and are capable of providing parameter handling
  * (import/export as string, a widget to allow editing, etc.)
  *
- * @author Marc Mutz <mutz@kde.org>, based on work by Stefan Taferner <taferner@kde.org>.
+ * \author Marc Mutz <mutz@kde.org>, based on work by Stefan Taferner <taferner@kde.org>.
  * \sa Filter FilterMgr
  */
 class MAILCOMMON_EXPORT FilterAction : public QObject

@@ -46,7 +46,7 @@ struct FilterActionDesc {
  *
  * You can iterate over all known filter actions by using list.
  *
- * @author Marc Mutz <mutz@kde.org>, based on work by Stefan Taferner <taferner@kde.org>
+ * \author Marc Mutz <mutz@kde.org>, based on work by Stefan Taferner <taferner@kde.org>
  * \sa FilterAction FilterActionDesc Filter
  */
 class FilterActionDict : public QMultiHash<QString, FilterActionDesc *>

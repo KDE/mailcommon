@@ -34,7 +34,7 @@ class KListWidgetSearchLine;
  * transfer the altered filter list back to KMFilterMgr.
  *
  * @short A complex widget that allows managing a list of MailCommon::MailFilter's.
- * @author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>.
+ * \author Marc Mutz <mutz@kde.org>, based upon work by Stefan Taferner <taferner@kde.org>.
  * @see MailCommon::MailFilter KMFilterDialog KMFilterActionEdit SearchPatternEdit
  */
 
