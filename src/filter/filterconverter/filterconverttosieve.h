@@ -14,7 +14,7 @@ class MailFilter;
 class FilterConvertToSieve
 {
 public:
-    FilterConvertToSieve(const QList<MailFilter *> &filters);
+    explicit FilterConvertToSieve(const QList<MailFilter *> &filters);
     ~FilterConvertToSieve();
 
     void convert();
