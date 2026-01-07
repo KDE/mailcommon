@@ -153,9 +153,6 @@ std::shared_ptr<KMime::Message> CryptoUtils::decryptMessage(const std::shared_pt
 void CryptoUtils::copyHeader(const KMime::Headers::Base *header, std::shared_ptr<KMime::Message> msg)
 {
     auto newHdr = KMime::Headers::createHeader(header->type());
-    if (!newHdr) {
-        newHdr = std::make_unique<KMime::Headers::Generic>(header->type());
-    }
     newHdr->from7BitString(header->as7BitString());
     msg->appendHeader(std::move(newHdr));
 }

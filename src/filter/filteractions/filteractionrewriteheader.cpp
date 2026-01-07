@@ -69,12 +69,9 @@ FilterAction::ReturnCode FilterActionRewriteHeader::process(ItemContext &context
     const QString oldValue = value;
     const QString newValue = value.replace(mRegex, mReplacementString);
     if (newValue != oldValue) {
-        msg->removeHeader(param.constData());
+        msg->removeHeader(param);
 
         auto newheader = KMime::Headers::createHeader(param);
-        if (!newheader) {
-            newheader = std::make_unique<KMime::Headers::Generic>(param.constData());
-        }
         newheader->fromUnicodeString(newValue);
         msg->setHeader(std::move(newheader));
         msg->assemble();

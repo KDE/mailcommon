@@ -27,11 +27,7 @@ FilterAction::ReturnCode FilterActionReplyTo::process(ItemContext &context, bool
         return ErrorButGoOn;
     }
     const auto msg = context.item().payload<std::shared_ptr<KMime::Message>>();
-    const QByteArray replyTo("Reply-To");
-    auto header = KMime::Headers::createHeader(replyTo);
-    if (!header) {
-        header = std::make_unique<KMime::Headers::Generic>(replyTo.constData());
-    }
+    auto header = KMime::Headers::createHeader("Reply-To");
     header->fromUnicodeString(mParameter);
     msg->setHeader(std::move(header));
     msg->assemble();

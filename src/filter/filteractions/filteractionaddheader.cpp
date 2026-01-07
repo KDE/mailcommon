@@ -41,9 +41,6 @@ FilterAction::ReturnCode FilterActionAddHeader::process(ItemContext &context, bo
     auto msg = context.item().payload<std::shared_ptr<KMime::Message>>();
 
     auto header = KMime::Headers::createHeader(mParameter.toLatin1());
-    if (!header) {
-        header = std::make_unique<KMime::Headers::Generic>(mParameter.toLatin1().constData());
-    }
     header->fromUnicodeString(mValue);
 
     msg->setHeader(std::move(header));
