@@ -243,7 +243,10 @@ QVariant FolderTreeWidgetProxyModel::data(const QModelIndex &index, int role) co
                 }
                 qreal percentage = 0.0;
                 if (d->checkQuotaExcedded(index, percentage)) {
-                    return i18n("%1 (Reached %2% quota)", Akonadi::EntityRightsFilterModel::data(index, role).toString(), static_cast<int>(percentage));
+                    return i18nc("%1 is the name of a mailbox, %2 is a percentage. Keep this string short!",
+                                 "%1 (Reached %2% quota)",
+                                 Akonadi::EntityRightsFilterModel::data(index, role).toString(),
+                                 static_cast<int>(percentage));
                 }
             }
         }
