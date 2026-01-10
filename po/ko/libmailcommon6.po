@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-05 00:43+0000\n"
+"POT-Creation-Date: 2026-01-10 00:44+0000\n"
 "PO-Revision-Date: 2025-04-06 23:33+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -1876,8 +1876,11 @@ msgstr "경로: (%1)"
 msgid "%1 (Offline)"
 msgstr "%1(오프라인)"
 
-#: folder/foldertreewidgetproxymodel.cpp:246
-#, kde-format
+#: folder/foldertreewidgetproxymodel.cpp:247
+#, fuzzy, kde-format
+#| msgid "%1 (Reached %2% quota)"
+msgctxt ""
+"%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
 msgstr "%1(할당량의 %2% 사용 중)"
 

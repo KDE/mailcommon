@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-05 00:43+0000\n"
+"POT-Creation-Date: 2026-01-10 00:44+0000\n"
 "PO-Revision-Date: 2022-02-17 11:52+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -1981,8 +1981,10 @@ msgstr "Cale: (%1)"
 msgid "%1 (Offline)"
 msgstr "%1 (Deconectat)"
 
-#: folder/foldertreewidgetproxymodel.cpp:246
+#: folder/foldertreewidgetproxymodel.cpp:247
 #, kde-format
+msgctxt ""
+"%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
 msgstr ""
 

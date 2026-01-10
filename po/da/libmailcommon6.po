@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-05 00:43+0000\n"
+"POT-Creation-Date: 2026-01-10 00:44+0000\n"
 "PO-Revision-Date: 2020-08-08 16:45+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -2001,8 +2001,11 @@ msgstr "Sti: (%1)"
 msgid "%1 (Offline)"
 msgstr "%1 (offline)"
 
-#: folder/foldertreewidgetproxymodel.cpp:246
-#, kde-format
+#: folder/foldertreewidgetproxymodel.cpp:247
+#, fuzzy, kde-format
+#| msgid "%1 (Reached %2% quota)"
+msgctxt ""
+"%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (nået %2%-kvote)"
 

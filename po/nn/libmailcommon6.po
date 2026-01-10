@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-05 00:43+0000\n"
+"POT-Creation-Date: 2026-01-10 00:44+0000\n"
 "PO-Revision-Date: 2021-01-13 17:59+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -1844,8 +1844,10 @@ msgstr "Adresse: (%1)"
 msgid "%1 (Offline)"
 msgstr ""
 
-#: folder/foldertreewidgetproxymodel.cpp:246
+#: folder/foldertreewidgetproxymodel.cpp:247
 #, kde-format
+msgctxt ""
+"%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
 msgstr ""
 

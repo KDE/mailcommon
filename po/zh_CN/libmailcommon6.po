@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-05 00:43+0000\n"
+"POT-Creation-Date: 2026-01-10 00:44+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -1858,8 +1858,11 @@ msgstr "路径：(%1)"
 msgid "%1 (Offline)"
 msgstr "%1 (离线)"
 
-#: folder/foldertreewidgetproxymodel.cpp:246
-#, kde-format
+#: folder/foldertreewidgetproxymodel.cpp:247
+#, fuzzy, kde-format
+#| msgid "%1 (Reached %2% quota)"
+msgctxt ""
+"%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
 msgstr "%1（已达到 %2% 配额）"
 

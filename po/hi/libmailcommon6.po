@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-05 00:43+0000\n"
+"POT-Creation-Date: 2026-01-10 00:44+0000\n"
 "PO-Revision-Date: 2024-12-15 19:31+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
@@ -1888,8 +1888,11 @@ msgstr "पथ: (%1)"
 msgid "%1 (Offline)"
 msgstr "%1 (ऑफ़लाइन)"
 
-#: folder/foldertreewidgetproxymodel.cpp:246
-#, kde-format
+#: folder/foldertreewidgetproxymodel.cpp:247
+#, fuzzy, kde-format
+#| msgid "%1 (Reached %2% quota)"
+msgctxt ""
+"%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (%2% कोटा प्राप्त हुआ)"
 
