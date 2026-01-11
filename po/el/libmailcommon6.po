@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-10 00:44+0000\n"
+"POT-Creation-Date: 2026-01-11 00:44+0000\n"
 "PO-Revision-Date: 2014-04-11 22:49+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -477,18 +477,18 @@ msgstr "### «η ενέργεια «%1» δεν υποστηρίζεται»"
 msgid "Add Header"
 msgstr "Προσθήκη κεφαλίδας"
 
-#: filter/filteractions/filteractionaddheader.cpp:77
+#: filter/filteractions/filteractionaddheader.cpp:74
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Με τιμή:"
 
-#: filter/filteractions/filteractionaddheader.cpp:203
+#: filter/filteractions/filteractionaddheader.cpp:200
 #, kde-format
 msgid "The header name was missing."
 msgstr ""
 
-#: filter/filteractions/filteractionaddheader.cpp:209
+#: filter/filteractions/filteractionaddheader.cpp:206
 #, kde-format
 msgid "The header value was missing."
 msgstr ""
@@ -698,7 +698,7 @@ msgid "Forward to %1 with template %2"
 msgstr "Προώθηση προς %1 με το πρότυπο %2"
 
 #: filter/filteractions/filteractionforward.cpp:237
-#: filter/filteractions/filteractionreplyto.cpp:51
+#: filter/filteractions/filteractionreplyto.cpp:47
 #, kde-format
 msgid "Email address was not defined."
 msgstr ""
@@ -772,13 +772,13 @@ msgstr "Το αρχείο ήχου ήταν «%1»."
 msgid "Search string is empty."
 msgstr ""
 
-#: filter/filteractions/filteractionrewriteheader.cpp:111
+#: filter/filteractions/filteractionrewriteheader.cpp:108
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Αντικατάσταση:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:122
+#: filter/filteractions/filteractionrewriteheader.cpp:119
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"

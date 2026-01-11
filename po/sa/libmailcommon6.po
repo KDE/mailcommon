@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-10 00:44+0000\n"
+"POT-Creation-Date: 2026-01-11 00:44+0000\n"
 "PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -447,18 +447,18 @@ msgstr "### \"क्रिया '%1' समर्थिता नास्त�
 msgid "Add Header"
 msgstr "शीर्षकं योजयतु"
 
-#: filter/filteractions/filteractionaddheader.cpp:77
+#: filter/filteractions/filteractionaddheader.cpp:74
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "मूल्येन सह :"
 
-#: filter/filteractions/filteractionaddheader.cpp:203
+#: filter/filteractions/filteractionaddheader.cpp:200
 #, kde-format
 msgid "The header name was missing."
 msgstr "शीर्षकनाम लुप्तम् आसीत् ।"
 
-#: filter/filteractions/filteractionaddheader.cpp:209
+#: filter/filteractions/filteractionaddheader.cpp:206
 #, kde-format
 msgid "The header value was missing."
 msgstr "शीर्षकमूल्यं लुप्तम् आसीत् ।"
@@ -667,7 +667,7 @@ msgid "Forward to %1 with template %2"
 msgstr "%2 टेम्पलेट् सह %1 प्रति अग्रे प्रेषयन्तु"
 
 #: filter/filteractions/filteractionforward.cpp:237
-#: filter/filteractions/filteractionreplyto.cpp:51
+#: filter/filteractions/filteractionreplyto.cpp:47
 #, kde-format
 msgid "Email address was not defined."
 msgstr "ईमेल-सङ्केतः परिभाषितः नासीत् ।"
@@ -738,13 +738,13 @@ msgstr "शीर्षकं न परिभाषितम्"
 msgid "Search string is empty."
 msgstr "अन्वेषणमाला रिक्तम् अस्ति ।"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:111
+#: filter/filteractions/filteractionrewriteheader.cpp:108
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "प्रत्याहृ:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:122
+#: filter/filteractions/filteractionrewriteheader.cpp:119
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-10 00:44+0000\n"
+"POT-Creation-Date: 2026-01-11 00:44+0000\n"
 "PO-Revision-Date: 2020-08-08 16:45+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -482,19 +482,19 @@ msgstr "### \"handlingen %1 er ikke understøttet\""
 msgid "Add Header"
 msgstr "Tilføj header"
 
-#: filter/filteractions/filteractionaddheader.cpp:77
+#: filter/filteractions/filteractionaddheader.cpp:74
 #, fuzzy, kde-format
 #| msgid "With value:"
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Med værdi:"
 
-#: filter/filteractions/filteractionaddheader.cpp:203
+#: filter/filteractions/filteractionaddheader.cpp:200
 #, kde-format
 msgid "The header name was missing."
 msgstr "Header-navnet manglede."
 
-#: filter/filteractions/filteractionaddheader.cpp:209
+#: filter/filteractions/filteractionaddheader.cpp:206
 #, kde-format
 msgid "The header value was missing."
 msgstr "Header-værdien manglede."
@@ -708,7 +708,7 @@ msgid "Forward to %1 with template %2"
 msgstr "Videresend til %1 med skabelonen %2"
 
 #: filter/filteractions/filteractionforward.cpp:237
-#: filter/filteractions/filteractionreplyto.cpp:51
+#: filter/filteractions/filteractionreplyto.cpp:47
 #, kde-format
 msgid "Email address was not defined."
 msgstr "E-mailadressen blev ikke angivet."
@@ -779,14 +779,14 @@ msgstr "Header ikke defineret"
 msgid "Search string is empty."
 msgstr "Søgestrengen er tom."
 
-#: filter/filteractions/filteractionrewriteheader.cpp:111
+#: filter/filteractions/filteractionrewriteheader.cpp:108
 #, fuzzy, kde-format
 #| msgid "Replace:"
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Erstat:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:122
+#: filter/filteractions/filteractionrewriteheader.cpp:119
 #, fuzzy, kde-format
 #| msgid "With:"
 msgctxt "@label:textbox"

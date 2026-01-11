@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-10 00:44+0000\n"
+"POT-Creation-Date: 2026-01-11 00:44+0000\n"
 "PO-Revision-Date: 2025-08-29 16:53+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -451,18 +451,18 @@ msgstr "### „darbība „%1“ nav atbalstīta“"
 msgid "Add Header"
 msgstr "Pievienot galveni"
 
-#: filter/filteractions/filteractionaddheader.cpp:77
+#: filter/filteractions/filteractionaddheader.cpp:74
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Ar vērtību:"
 
-#: filter/filteractions/filteractionaddheader.cpp:203
+#: filter/filteractions/filteractionaddheader.cpp:200
 #, kde-format
 msgid "The header name was missing."
 msgstr "Trūkst galvenes vārda."
 
-#: filter/filteractions/filteractionaddheader.cpp:209
+#: filter/filteractions/filteractionaddheader.cpp:206
 #, kde-format
 msgid "The header value was missing."
 msgstr "Trūkst galvenes vērtības."
@@ -675,7 +675,7 @@ msgid "Forward to %1 with template %2"
 msgstr "Pārsūtīt uz „%1“ ar veidni „%2“"
 
 #: filter/filteractions/filteractionforward.cpp:237
-#: filter/filteractions/filteractionreplyto.cpp:51
+#: filter/filteractions/filteractionreplyto.cpp:47
 #, kde-format
 msgid "Email address was not defined."
 msgstr "E-pasta adrese nav definēta."
@@ -746,13 +746,13 @@ msgstr "Galvene nav definēta"
 msgid "Search string is empty."
 msgstr "Meklēšanas teksts ir tukšs."
 
-#: filter/filteractions/filteractionrewriteheader.cpp:111
+#: filter/filteractions/filteractionrewriteheader.cpp:108
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Aizvietot:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:122
+#: filter/filteractions/filteractionrewriteheader.cpp:119
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-10 00:44+0000\n"
+"POT-Creation-Date: 2026-01-11 00:44+0000\n"
 "PO-Revision-Date: 2025-01-06 09:17+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
@@ -477,18 +477,18 @@ msgstr "### « action « %1 » non pris en charge »"
 msgid "Add Header"
 msgstr "Ajouter une en-tête"
 
-#: filter/filteractions/filteractionaddheader.cpp:77
+#: filter/filteractions/filteractionaddheader.cpp:74
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Avec la valeur :"
 
-#: filter/filteractions/filteractionaddheader.cpp:203
+#: filter/filteractions/filteractionaddheader.cpp:200
 #, kde-format
 msgid "The header name was missing."
 msgstr "Le nom d'en-tête est manquant."
 
-#: filter/filteractions/filteractionaddheader.cpp:209
+#: filter/filteractions/filteractionaddheader.cpp:206
 #, kde-format
 msgid "The header value was missing."
 msgstr "La valeur d'en-tête est manquante."
@@ -703,7 +703,7 @@ msgid "Forward to %1 with template %2"
 msgstr "Transmettre à %1 avec le modèle %2"
 
 #: filter/filteractions/filteractionforward.cpp:237
-#: filter/filteractions/filteractionreplyto.cpp:51
+#: filter/filteractions/filteractionreplyto.cpp:47
 #, kde-format
 msgid "Email address was not defined."
 msgstr "Adresse courriel non définie."
@@ -774,13 +774,13 @@ msgstr "En-tête non défini."
 msgid "Search string is empty."
 msgstr "Chaîne de recherche vide."
 
-#: filter/filteractions/filteractionrewriteheader.cpp:111
+#: filter/filteractions/filteractionrewriteheader.cpp:108
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Remplacer :"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:122
+#: filter/filteractions/filteractionrewriteheader.cpp:119
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"

@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-10 00:44+0000\n"
-"PO-Revision-Date: 2025-01-05 08:36+0100\n"
+"POT-Creation-Date: 2026-01-11 00:44+0000\n"
+"PO-Revision-Date: 2026-01-10 09:09+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.8\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -454,18 +454,18 @@ msgstr "### »dejanje '%1' ni podprto«"
 msgid "Add Header"
 msgstr "Dodaj glavo"
 
-#: filter/filteractions/filteractionaddheader.cpp:77
+#: filter/filteractions/filteractionaddheader.cpp:74
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Z vrednostjo:"
 
-#: filter/filteractions/filteractionaddheader.cpp:203
+#: filter/filteractions/filteractionaddheader.cpp:200
 #, kde-format
 msgid "The header name was missing."
 msgstr "Ime glave je manjkalo."
 
-#: filter/filteractions/filteractionaddheader.cpp:209
+#: filter/filteractions/filteractionaddheader.cpp:206
 #, kde-format
 msgid "The header value was missing."
 msgstr "Vrednost glave je manjkala."
@@ -679,7 +679,7 @@ msgid "Forward to %1 with template %2"
 msgstr "Posreduj do %1 s predlogo %2"
 
 #: filter/filteractions/filteractionforward.cpp:237
-#: filter/filteractions/filteractionreplyto.cpp:51
+#: filter/filteractions/filteractionreplyto.cpp:47
 #, kde-format
 msgid "Email address was not defined."
 msgstr "E-poštni naslov ni bil določen."
@@ -750,13 +750,13 @@ msgstr "Glava ni določena"
 msgid "Search string is empty."
 msgstr "Iskalni niz je prazen."
 
-#: filter/filteractions/filteractionrewriteheader.cpp:111
+#: filter/filteractions/filteractionrewriteheader.cpp:108
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Zamenjaj:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:122
+#: filter/filteractions/filteractionrewriteheader.cpp:119
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
@@ -1908,12 +1908,11 @@ msgid "%1 (Offline)"
 msgstr "%1 (nepovezan)"
 
 #: folder/foldertreewidgetproxymodel.cpp:247
-#, fuzzy, kde-format
-#| msgid "%1 (Reached %2% quota)"
+#, kde-format
 msgctxt ""
 "%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
-msgstr "%1 (doseženo %2 % kvote)"
+msgstr "%1 (Dosežena %2% kvota)"
 
 #: job/backupjob.cpp:95
 #, kde-format

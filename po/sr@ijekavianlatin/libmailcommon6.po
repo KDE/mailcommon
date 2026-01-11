@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-10 00:44+0000\n"
+"POT-Creation-Date: 2026-01-11 00:44+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -500,19 +500,19 @@ msgstr "### „radnja ‘%1’ nije podržana“"
 msgid "Add Header"
 msgstr "Dodaj zaglavlje"
 
-#: filter/filteractions/filteractionaddheader.cpp:77
+#: filter/filteractions/filteractionaddheader.cpp:74
 #, fuzzy, kde-format
 #| msgid "With value:"
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "sa vrednošću:"
 
-#: filter/filteractions/filteractionaddheader.cpp:203
+#: filter/filteractions/filteractionaddheader.cpp:200
 #, kde-format
 msgid "The header name was missing."
 msgstr "Nedostaje ime zaglavlja."
 
-#: filter/filteractions/filteractionaddheader.cpp:209
+#: filter/filteractions/filteractionaddheader.cpp:206
 #, kde-format
 msgid "The header value was missing."
 msgstr "Nedostaje vrednost zaglavlja."
@@ -728,7 +728,7 @@ msgid "Forward to %1 with template %2"
 msgstr "Prosledi na %1 sa šablonom %2"
 
 #: filter/filteractions/filteractionforward.cpp:237
-#: filter/filteractions/filteractionreplyto.cpp:51
+#: filter/filteractions/filteractionreplyto.cpp:47
 #, kde-format
 msgid "Email address was not defined."
 msgstr "Adresa e‑pošte nije definisana."
@@ -799,14 +799,14 @@ msgstr "Zaglavlje nije definisano."
 msgid "Search string is empty."
 msgstr "Niska za traženje je prazna."
 
-#: filter/filteractions/filteractionrewriteheader.cpp:111
+#: filter/filteractions/filteractionrewriteheader.cpp:108
 #, fuzzy, kde-format
 #| msgid "Replace:"
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Zameni:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:122
+#: filter/filteractions/filteractionrewriteheader.cpp:119
 #, fuzzy, kde-format
 #| msgid "With:"
 msgctxt "@label:textbox"

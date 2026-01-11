@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-10 00:44+0000\n"
+"POT-Creation-Date: 2026-01-11 00:44+0000\n"
 "PO-Revision-Date: 2022-07-04 13:16+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -495,19 +495,19 @@ msgstr "### \"a acção '%1' não é suportada\""
 msgid "Add Header"
 msgstr "Adicionar o Cabeçalho"
 
-#: filter/filteractions/filteractionaddheader.cpp:77
+#: filter/filteractions/filteractionaddheader.cpp:74
 #, fuzzy, kde-format
 #| msgid "With value:"
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Com o valor:"
 
-#: filter/filteractions/filteractionaddheader.cpp:203
+#: filter/filteractions/filteractionaddheader.cpp:200
 #, kde-format
 msgid "The header name was missing."
 msgstr "O nome do cabeçalho estava em falta."
 
-#: filter/filteractions/filteractionaddheader.cpp:209
+#: filter/filteractions/filteractionaddheader.cpp:206
 #, kde-format
 msgid "The header value was missing."
 msgstr "O valor do cabeçalho estava em falta."
@@ -726,7 +726,7 @@ msgid "Forward to %1 with template %2"
 msgstr "Encaminhar para %1 com o modelo %2"
 
 #: filter/filteractions/filteractionforward.cpp:237
-#: filter/filteractions/filteractionreplyto.cpp:51
+#: filter/filteractions/filteractionreplyto.cpp:47
 #, kde-format
 msgid "Email address was not defined."
 msgstr "O endereço de e-mail não estava definido."
@@ -797,14 +797,14 @@ msgstr "O cabeçalho não está definido"
 msgid "Search string is empty."
 msgstr "O texto da pesquisa está vazio."
 
-#: filter/filteractions/filteractionrewriteheader.cpp:111
+#: filter/filteractions/filteractionrewriteheader.cpp:108
 #, fuzzy, kde-format
 #| msgid "Replace:"
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Substituir:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:122
+#: filter/filteractions/filteractionrewriteheader.cpp:119
 #, fuzzy, kde-format
 #| msgid "With:"
 msgctxt "@label:textbox"
