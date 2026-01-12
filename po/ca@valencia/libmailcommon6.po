@@ -1,17 +1,17 @@
 # Translation of libmailcommon6.po to Catalan (Valencian)
-# Copyright (C) 2011-2025 This_file_is_part_of_KDE
+# Copyright (C) 2011-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # SPDX-FileCopyrightText: 2011 Manuel Tortosa <manutortosa@chakra-project.org>
 # SPDX-FileCopyrightText: 2011, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020 Antoni Bella Pérez <antonibella5@yahoo.com>
-# SPDX-FileCopyrightText: 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-11 00:44+0000\n"
-"PO-Revision-Date: 2025-01-05 10:12+0100\n"
+"PO-Revision-Date: 2026-01-10 11:53+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -1655,7 +1655,7 @@ msgstr "Ha ocorregut un error crític. El procés es para ací."
 #: filter/mailfilter.cpp:148
 #, kde-format
 msgid "A problem was found while applying this action."
-msgstr "S'ha trobat un problema en aplicar esta acció."
+msgstr "S'ha trobat un problema mentre s'aplicava esta acció."
 
 #: filter/mailfilter.cpp:428
 #, kde-format
@@ -1933,8 +1933,7 @@ msgid "%1 (Offline)"
 msgstr "%1 (desconnectat)"
 
 #: folder/foldertreewidgetproxymodel.cpp:247
-#, fuzzy, kde-format
-#| msgid "%1 (Reached %2% quota)"
+#, kde-format
 msgctxt ""
 "%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
@@ -1953,7 +1952,7 @@ msgstr "Operació cancel·lada per l'usuari."
 #: job/backupjob.cpp:152
 #, kde-format
 msgid "Failed to archive the folder '%1'."
-msgstr "No s'ha pogut arxivar la carpeta «%1»."
+msgstr "Ha fallat mentre s'arxivava la carpeta «%1»."
 
 #: job/backupjob.cpp:156
 #, kde-format
@@ -2001,12 +2000,13 @@ msgstr "L'arxivament ha finalitzat"
 #: job/backupjob.cpp:244
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
-msgstr "No s'ha pogut escriure un missatge a dins de la carpeta d'arxiu «%1»."
+msgstr ""
+"Ha fallat mentre s'escrivia un missatge a dins de la carpeta d'arxiu «%1»."
 
 #: job/backupjob.cpp:268
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
-msgstr "No s'ha pogut baixar un missatge en la carpeta «%1»."
+msgstr "Ha fallat mentre es baixava un missatge a la carpeta «%1»."
 
 #: job/backupjob.cpp:334
 #, kde-format
