@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2018.
-# SPDX-FileCopyrightText: 2022, 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2022, 2024, 2025, 2026 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-11 00:44+0000\n"
-"PO-Revision-Date: 2025-10-23 11:05+0400\n"
+"PO-Revision-Date: 2026-01-14 07:18+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -1886,12 +1886,11 @@ msgid "%1 (Offline)"
 msgstr "‏%1 (غير متّصل)"
 
 #: folder/foldertreewidgetproxymodel.cpp:247
-#, fuzzy, kde-format
-#| msgid "%1 (Reached %2% quota)"
+#, kde-format
 msgctxt ""
 "%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
-msgstr "%1 (وصلت إلى حصة %2٪)"
+msgstr "%1 (وصلت %2٪ من الحصة)"
 
 #: job/backupjob.cpp:95
 #, kde-format
