@@ -17,20 +17,21 @@
 # SPDX-FileCopyrightText: 2023, 2024, 2025 Johannes Obermayr <johannesobermayr@gmx.de>
 # SPDX-FileCopyrightText: 2025 Frank Steinmetzger <dev-kde@felsenfleischer.de>
 # SPDX-FileCopyrightText: 2026 Alexander Becker <alex-at-kde-l10n-de@freenet.de>
+# SPDX-FileCopyrightText: 2026 Philipp Kiemle <l10n.daphipz@fastmail.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-11 00:44+0000\n"
-"PO-Revision-Date: 2026-01-08 13:40+0100\n"
-"Last-Translator: Alexander Becker <alex-at-kde-l10n-de@freenet.de>\n"
+"PO-Revision-Date: 2026-01-11 20:26+0100\n"
+"Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -233,10 +234,10 @@ msgid ""
 "main configuration dialog. (Settings -> Configure KMail)"
 msgstr ""
 "Wählen Sie die Identität, die bei neuen Nachrichten oder Antworten auf "
-"Nachrichten in diesem Ordner benutzt werden soll. Damit kann KMail die zu "
+"Nachrichten in diesem Ordner verwendet werden soll. Damit kann KMail die zu "
 "einem Arbeitsordner gehörende Absenderadresse, Signatur und Signierungs- "
 "oder Verschlüsselungsschlüssel automatisch auswählen. Identitäten werden im "
-"Haupteinrichtungsdialog festgelegt. (Einstellungen -> KMail einrichten)"
+"Haupteinrichtungsdialog festgelegt (Einstellungen → KMail einrichten)."
 
 #: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
@@ -962,7 +963,7 @@ msgstr "Hilfe"
 #, kde-format
 msgid "You can get specific header when you use %{headername}."
 msgstr ""
-"Sie können einen bestimmten Vorspann benutzen, wenn Sie %{headername} "
+"Sie können einen bestimmten Vorspann verwenden, wenn Sie %{headername} "
 "eingeben."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
@@ -1948,8 +1949,7 @@ msgid "%1 (Offline)"
 msgstr "%1 (Offline)"
 
 #: folder/foldertreewidgetproxymodel.cpp:247
-#, fuzzy, kde-format
-#| msgid "%1 (Reached %2% quota)"
+#, kde-format
 msgctxt ""
 "%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
@@ -2072,8 +2072,8 @@ msgstr "Das Löschen der alten Nachrichten in Ordner %1 ist fehlgeschlagen."
 #, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "1 alte Nachricht wird aus Ordner %2 gelöscht …"
-msgstr[1] "%1 alte Nachrichten werden aus Ordner %2 gelöscht …"
+msgstr[0] "Eine alte Nachricht wird aus Ordner %2 gelöscht …"
+msgstr[1] "%1 alte Nachrichten werden aus Ordner %2 gelöscht …"
 
 #: job/expirejob.cpp:164
 #, kde-format
@@ -2086,8 +2086,8 @@ msgstr ""
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] "1 alte Nachricht wird aus Ordner %2 in Ordner %3 verschoben …"
-msgstr[1] "%1 alte Nachrichten werden aus Ordner %2 in Ordner %3 verschoben …"
+msgstr[0] "Eine alte Nachricht wird aus Ordner %2 in Ordner %3 verschoben …"
+msgstr[1] "%1 alte Nachrichten werden aus Ordner %2 in Ordner %3 verschoben …"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
