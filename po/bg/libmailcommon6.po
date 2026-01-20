@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the mailcommon package.
 #
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Mincho Kondarev <mkondarev@yahoo.de>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025, 2026 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-11 00:44+0000\n"
-"PO-Revision-Date: 2025-10-24 22:07+0200\n"
+"PO-Revision-Date: 2026-01-19 22:36+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.07.70\n"
+"X-Generator: Lokalize 26.03.70\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -1921,8 +1921,7 @@ msgid "%1 (Offline)"
 msgstr "%1 (офлайн)"
 
 #: folder/foldertreewidgetproxymodel.cpp:247
-#, fuzzy, kde-format
-#| msgid "%1 (Reached %2% quota)"
+#, kde-format
 msgctxt ""
 "%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
