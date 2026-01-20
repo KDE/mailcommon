@@ -219,6 +219,20 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 ecm_set_disabled_deprecation_versions(QT 6.11.0 KF 6.22.0 KMIME 6.7.0)
 
+option(WARNINGS_AS_ERRORS "Warnings are errors -Werror" OFF)
+if(WARNINGS_AS_ERRORS)
+    if(MSVC)
+        add_compile_options(/WX)
+        add_compile_options(/wd4996)
+    else()
+        add_compile_options(-Werror)
+        add_compile_options(
+            -Wno-error=deprecated-declarations
+            -Wno-error=date-time
+        )
+    endif()
+endif()
+
 add_subdirectory(src)
 if(BUILD_TESTING)
     find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Test)
