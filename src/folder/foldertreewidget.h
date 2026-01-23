@@ -35,6 +35,10 @@ class EntityCollectionOrderProxyModel;
 class FolderTreeView;
 
 /*!
+ * \class MailCommon::FolderTreeWidget
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FolderTreeWidget
+ *
  * This is the widget that shows the main folder tree.
  *
  * It consists of the view (FolderTreeView) and a search line.
@@ -57,6 +61,8 @@ public:
     };
     Q_DECLARE_FLAGS(TreeViewOptions, TreeViewOption)
 
+    /*!
+     */
     explicit FolderTreeWidget(QWidget *parent = nullptr,
                               KXMLGUIClient *xmlGuiClient = nullptr,
                               TreeViewOptions options = (TreeViewOptions)(ShowUnreadCount | ShowCollectionStatisticAnimation),
@@ -80,53 +86,107 @@ public:
         SortByDragAndDropKey ///< Columns are NOT clickable, sorting is done by drag and drop
     };
 
+    /*!
+     */
     void selectCollectionFolder(const Akonadi::Collection &col, bool expand = true);
 
+    /*!
+     */
     void setSelectionMode(QAbstractItemView::SelectionMode mode);
 
+    /*!
+     */
     [[nodiscard]] QAbstractItemView::SelectionMode selectionMode() const;
 
+    /*!
+     */
     [[nodiscard]] QItemSelectionModel *selectionModel() const;
 
+    /*!
+     */
     [[nodiscard]] QModelIndex currentIndex() const;
 
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection selectedCollection() const;
 
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection::List selectedCollections() const;
 
+    /*!
+     */
     [[nodiscard]] FolderTreeView *folderTreeView() const;
 
+    /*!
+     */
     [[nodiscard]] Akonadi::StatisticsProxyModel *statisticsProxyModel() const;
 
+    /*!
+     */
     [[nodiscard]] FolderTreeWidgetProxyModel *folderTreeWidgetProxyModel() const;
 
+    /*!
+     */
     [[nodiscard]] EntityCollectionOrderProxyModel *entityOrderProxy() const;
 
+    /*!
+     */
     [[nodiscard]] QLineEdit *filterFolderLineEdit() const;
+    /*!
+     */
     void applyFilter(const QString &);
+    /*!
+     */
     void clearFilter();
 
+    /*!
+     */
     void disableContextMenuAndExtraColumn();
 
+    /*!
+     */
     void readConfig();
 
+    /*!
+     */
     void restoreHeaderState(const QByteArray &data);
 
+    /*!
+     */
     void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 
+    /*!
+     */
     void expandAll();
+    /*!
+     */
     void collapseAll();
 
 protected:
+    /*!
+     */
     void changeToolTipsPolicyConfig(ToolTipDisplayPolicy);
 
+    /*!
+     */
     [[nodiscard]] bool event(QEvent *e) override;
 
 protected Q_SLOTS:
+    /*!
+     */
     void slotChangeTooltipsPolicy(MailCommon::FolderTreeWidget::ToolTipDisplayPolicy);
+    /*!
+     */
     void slotManualSortingChanged(bool);
+    /*!
+     */
     void slotFilterFixedString(const QString &);
+    /*!
+     */
     void slotGeneralFontChanged();
+    /*!
+     */
     void slotGeneralPaletteChanged();
 
 private:

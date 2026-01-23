@@ -14,6 +14,10 @@ class KConfigGroup;
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::SearchRule
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/SearchRule
+ *
  * \brief This class represents one search pattern rule.
  * Incoming mail is sent through the list of mail filter
  * rules before it is placed in the associated mail folder (usually "inbox").

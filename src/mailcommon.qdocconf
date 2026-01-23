@@ -1,0 +1,33 @@
+include($KDE_DOCS/global/qt-module-defaults.qdocconf)
+
+project = MailCommon
+description = MailCommon library.
+
+
+documentationinheaders = true
+
+headerdirs += .
+sourcedirs += .
+
+outputformats = HTML
+
+depends += \
+    qtcore
+
+navigation.landingpage = "MailCommon"
+
+qhp.projects            = mailcommon
+
+qhp.mailcommon.file                = mailcommon.qhp
+qhp.mailcommon.namespace           = org.kde.mailcommon.$QT_VERSION_TAG
+qhp.mailcommon.virtualFolder       = mailcommon
+qhp.mailcommon.indexTitle          = mailcommon
+qhp.mailcommon.indexRoot           =
+
+qhp.mailcommon.subprojects         = classes
+qhp.mailcommon.subprojects.classes.title = C++ Classes
+qhp.mailcommon.subprojects.classes.indexTitle = MailCommon C++ Classes
+qhp.mailcommon.subprojects.classes.selectors = class fake:headerfile
+qhp.mailcommon.subprojects.classes.sortPages = true
+
+tagfile = mailcommon.tags

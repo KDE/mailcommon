@@ -21,21 +21,35 @@ namespace MailCommon
 class SnippetsManager;
 struct SnippetInfo;
 /*!
+ * \class MailCommon::SnippetTreeView
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/SnippetTreeView
+ *
  * \author Robert Gruber
  */
 class MAILCOMMON_EXPORT SnippetTreeView : public QTreeView
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit SnippetTreeView(KActionCollection *actionCollection, QWidget *parent = nullptr);
+    /*!
+     */
     ~SnippetTreeView() override;
 
+    /*!
+     */
     MailCommon::SnippetsManager *snippetsManager() const;
 
 protected:
+    /*!
+     */
     void contextMenuEvent(QContextMenuEvent *) override;
 
 Q_SIGNALS:
+    /*!
+     */
     void insertSnippetInfo(const MailCommon::SnippetInfo &info);
 
 private:

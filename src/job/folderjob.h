@@ -13,6 +13,10 @@
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::FolderJob
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FolderJob
+ *
  * \brief The FolderJob class
  */
 class MAILCOMMON_EXPORT FolderJob : public QObject
@@ -20,8 +24,12 @@ class MAILCOMMON_EXPORT FolderJob : public QObject
     Q_OBJECT
 
 public:
+    /*!
+     */
     explicit FolderJob(QObject *parent = nullptr);
 
+    /*!
+     */
     ~FolderJob() override;
 
     /*!

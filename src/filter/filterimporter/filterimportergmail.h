@@ -14,14 +14,26 @@ class QDomElement;
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::FilterImporterGmail
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FilterImporterGmail
+ *
  * \brief The FilterImporterGmail class
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT FilterImporterGmail : public FilterImporterAbstract
 {
 public:
+    /*!
+     * \brief FilterImporterGmail
+     * \param file
+     */
     explicit FilterImporterGmail(QFile *file);
+    /*!
+     */
     ~FilterImporterGmail();
+    /*!
+     */
     [[nodiscard]] static QString defaultFiltersSettingsPath();
 
 private:

@@ -85,11 +85,9 @@ public:
     static QList<MailFilter *> readFiltersFromConfig(const KSharedConfig::Ptr &config, bool interactive, QStringList &emptyFilters);
 
 private:
-    //\\ond PRIVATE
     Q_DISABLE_COPY(FilterImporterExporter)
 
     class FilterImporterExporterPrivate;
     std::unique_ptr<FilterImporterExporterPrivate> const d;
-    //@endcond
 };
 }

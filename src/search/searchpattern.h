@@ -32,7 +32,12 @@ namespace MailCommon
 {
 // ------------------------------------------------------------------------
 
-/*! This class is an abstraction of a search over messages.  It is
+/*!
+    \class MailCommon::SearchPattern
+    \inmodule MailCommon
+    \inheaderfile MailCommon/SearchPattern
+
+    This class is an abstraction of a search over messages.  It is
     intended to be used inside a KFilter (which adds KFilterAction's),
     as well as in KMSearch. It can read and write itself into a
     KConfig group and there is a constructor, mainly used by KMFilter
@@ -200,6 +205,8 @@ public:
     QDataStream &operator>>(QDataStream &s) const;
     QDataStream &operator<<(QDataStream &s);
 
+    /*!
+     */
     void generateSieveScript(QStringList &requiresModules, QString &code);
 
 private:

@@ -14,6 +14,10 @@
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::RedirectDialog
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/RedirectDialog
+ *
  * \brief A dialog to request information about message redirection from the user.
  *
  * The dialog is used to collect redirect addresses when
@@ -58,20 +62,28 @@ public:
      */
     [[nodiscard]] SendMode sendMode() const;
 
+    /*!
+     */
     [[nodiscard]] int transportId() const;
 
+    /*!
+     */
     [[nodiscard]] int identity() const;
 
+    /*!
+     */
     [[nodiscard]] QString cc() const;
+    /*!
+     */
     [[nodiscard]] QString bcc() const;
 
 protected:
+    /*!
+     */
     void accept() override;
 
 private:
-    //\\ond PRIVATE
     class RedirectDialogPrivate;
     std::unique_ptr<RedirectDialogPrivate> const d;
-    //@endcond
 };
 }

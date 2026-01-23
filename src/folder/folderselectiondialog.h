@@ -23,6 +23,10 @@ class AccountActivitiesAbstract;
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::FolderSelectionDialog
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FolderSelectionDialog
+ *
  * A dialog that lets the user select a folder.
  * TODO: Move most of this to Akonadi::CollectionDialog
  */
@@ -42,17 +46,33 @@ public:
     };
     Q_DECLARE_FLAGS(SelectionFolderOptions, SelectionFolderOption)
 
+    /*!
+     */
     FolderSelectionDialog(QWidget *parent, FolderSelectionDialog::SelectionFolderOptions options);
+    /*!
+     */
     ~FolderSelectionDialog() override;
 
+    /*!
+     */
     void setSelectionMode(QAbstractItemView::SelectionMode mode);
+    /*!
+     */
     [[nodiscard]] QAbstractItemView::SelectionMode selectionMode() const;
 
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection selectedCollection() const;
+    /*!
+     */
     void setSelectedCollection(const Akonadi::Collection &collection);
 
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection::List selectedCollections() const;
 
+    /*!
+     */
     void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 
 private Q_SLOTS:

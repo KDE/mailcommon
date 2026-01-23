@@ -14,12 +14,25 @@
 namespace MailCommon
 {
 class ResourceReadConfigFilePrivate;
+/*!
+ * \class MailCommon::ResourceReadConfigFile
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/ResourceReadConfigFile
+ *
+ * \brief The ResourceReadConfigFile class
+ */
 class MAILCOMMON_EXPORT ResourceReadConfigFile
 {
 public:
+    /*!
+     */
     explicit ResourceReadConfigFile(const QString &resourceName);
+    /*!
+     */
     ~ResourceReadConfigFile();
 
+    /*!
+     */
     KConfigGroup group(const QString &name) const;
 
 private:

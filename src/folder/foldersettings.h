@@ -21,6 +21,10 @@ using MessageCore::MailingList;
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::FolderSettings
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FolderSettings
+ *
  * \brief The FolderSettings class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -29,43 +33,87 @@ class MAILCOMMON_EXPORT FolderSettings : public QObject
     Q_OBJECT
 
 public:
+    /*!
+     */
     static QSharedPointer<FolderSettings> forCollection(const Akonadi::Collection &coll, bool writeConfig = true);
 
+    /*!
+     */
     ~FolderSettings() override;
 
+    /*!
+     */
     void setCollection(const Akonadi::Collection &collection);
 
+    /*!
+     */
     static QString configGroupName(const Akonadi::Collection &col);
+    /*!
+     */
     static void clearCache();
+    /*!
+     */
     static void resetHtmlFormat();
 
+    /*!
+     */
     [[nodiscard]] bool isWriteConfig() const;
+    /*!
+     */
     void setWriteConfig(bool writeConfig);
 
+    /*!
+     */
     void writeConfig() const;
+    /*!
+     */
     void readConfig();
 
+    /*!
+     */
     [[nodiscard]] QString name() const;
 
+    /*!
+     */
     [[nodiscard]] bool isReadOnly() const;
 
+    /*!
+     */
     [[nodiscard]] bool isStructural() const;
 
+    /*!
+     */
     [[nodiscard]] bool isSystemFolder() const;
 
+    /*!
+     */
     [[nodiscard]] qint64 count() const;
+    /*!
+     */
 
     [[nodiscard]] bool canDeleteMessages() const;
 
+    /*!
+     */
     [[nodiscard]] bool canCreateMessages() const;
 
+    /*!
+     */
     [[nodiscard]] bool isValid() const;
 
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection::Rights rights() const;
 
+    /*!
+     */
     [[nodiscard]] Akonadi::CollectionStatistics statistics() const;
 
+    /*!
+     */
     void setShortcut(const QKeySequence &);
+    /*!
+     */
     const QKeySequence &shortcut() const;
 
     /*!
@@ -73,19 +121,31 @@ public:
      *  identity specified by setIdentity().
      */
     void setUseDefaultIdentity(bool useDefaultIdentity);
+    /*!
+     */
     [[nodiscard]] bool useDefaultIdentity() const;
 
+    /*!
+     */
     void setIdentity(uint identity);
+    /*!
+     */
     [[nodiscard]] uint identity() const;
 
     /*!
      * Returns true if this folder is associated with a mailing-list.
      */
     void setMailingListEnabled(bool enabled);
+    /*!
+     */
     [[nodiscard]] bool isMailingListEnabled() const;
 
+    /*!
+     */
     void setMailingList(const MailingList &mlist);
 
+    /*!
+     */
     [[nodiscard]] MailingList mailingList() const;
 
     /*!
@@ -99,18 +159,34 @@ public:
      * Returns true if this folder should be hidden from all folder selection dialogs
      */
     [[nodiscard]] bool hideInSelectionDialog() const;
+    /*!
+     */
     void setHideInSelectionDialog(bool hide);
 
+    /*!
+     */
     [[nodiscard]] QString mailingListPostAddress() const;
 
+    /*!
+     */
     [[nodiscard]] uint fallBackIdentity() const;
+    /*!
+     */
     [[nodiscard]] MessageViewer::Viewer::DisplayFormatMessage formatMessage() const;
+    /*!
+     */
     void setFormatMessage(MessageViewer::Viewer::DisplayFormatMessage formatMessage);
 
+    /*!
+     */
     [[nodiscard]] bool folderHtmlLoadExtPreference() const;
+    /*!
+     */
     void setFolderHtmlLoadExtPreference(bool folderHtmlLoadExtPreference);
 
 protected Q_SLOTS:
+    /*!
+     */
     void slotIdentitiesChanged();
 
 private:

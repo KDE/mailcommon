@@ -32,6 +32,10 @@ struct MAILCOMMON_EXPORT SnippetsInfo {
 };
 
 /*!
+ * \class MailCommon::SnippetsModel
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/SnippetsModel
+ *
  * \brief The SnippetsModel class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -52,39 +56,77 @@ public:
         AttachmentRole, ///< The Attachment of a snippet
     };
 
+    /*!
+     */
     static SnippetsModel *instance();
 
+    /*!
+     */
     explicit SnippetsModel(QObject *parent = nullptr);
+    /*!
+     */
     ~SnippetsModel() override;
 
+    /*!
+     */
     bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole) override;
 
+    /*!
+     */
     [[nodiscard]] QVariant data(const QModelIndex &index, int role) const override;
 
+    /*!
+     */
     [[nodiscard]] Qt::ItemFlags flags(const QModelIndex &index) const override;
 
+    /*!
+     */
     [[nodiscard]] QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const override;
 
+    /*!
+     */
     [[nodiscard]] QModelIndex parent(const QModelIndex &index) const override;
 
+    /*!
+     */
     [[nodiscard]] int rowCount(const QModelIndex &parent = QModelIndex()) const override;
 
+    /*!
+     */
     [[nodiscard]] int columnCount(const QModelIndex &parent = QModelIndex()) const override;
 
+    /*!
+     */
     [[nodiscard]] QStringList mimeTypes() const override;
 
+    /*!
+     */
     [[nodiscard]] QMimeData *mimeData(const QModelIndexList &indexes) const override;
 
+    /*!
+     */
     [[nodiscard]] bool dropMimeData(const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &parent) override;
 
+    /*!
+     */
     [[nodiscard]] Qt::DropActions supportedDropActions() const override;
 
+    /*!
+     */
     void save(const QString &filename = QString());
+    /*!
+     */
     void load(const QString &filename = QString());
 
+    /*!
+     */
     [[nodiscard]] QMap<QString, QString> savedVariables() const;
+    /*!
+     */
     void setSavedVariables(const QMap<QString, QString> &savedVariables);
 
+    /*!
+     */
     [[nodiscard]] QList<SnippetsInfo> snippetsInfo() const;
 
 protected:
@@ -93,8 +135,14 @@ protected:
     bool removeRows(int row, int count, const QModelIndex &parent = QModelIndex()) override;
 
 Q_SIGNALS:
+    /*!
+     */
     void dndDone();
+    /*!
+     */
     void addNewDndSnippset(const QString &);
+    /*!
+     */
     void updateActionCollection(const QString &oldName,
                                 const QString &newName,
                                 const QKeySequence &keySequence,

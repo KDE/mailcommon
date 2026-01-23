@@ -26,11 +26,23 @@ class MailFilter;
 class MAILCOMMON_EXPORT FilterImporterClawsMails : public FilterImporterAbstract
 {
 public:
+    /*!
+     * \brief FilterImporterClawsMails
+     * \param file
+     */
     explicit FilterImporterClawsMails(QFile *file);
+    /*!
+     * \brief FilterImporterClawsMails
+     * \param string
+     */
     FilterImporterClawsMails(QString string);
     // Use for unittests
     FilterImporterClawsMails(bool interactive = false);
     ~FilterImporterClawsMails();
+    /*!
+     * \brief defaultFiltersSettingsPath
+     * \return
+     */
     [[nodiscard]] static QString defaultFiltersSettingsPath();
 
     // the returned mail filter instance will be owned by the caller, who must ensure to delete it at some point

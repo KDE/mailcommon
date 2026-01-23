@@ -18,6 +18,10 @@ namespace MailCommon
 {
 class MailCommonSettings;
 /*!
+ * \class MailCommon::FavoriteCollectionWidget
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FavoriteCollectionWidget
+ *
  * \brief The FavoriteCollectionWidget class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -25,30 +29,64 @@ class MAILCOMMON_EXPORT FavoriteCollectionWidget : public Akonadi::EntityListVie
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit FavoriteCollectionWidget(MailCommon::MailCommonSettings *settings, KXMLGUIClient *xmlGuiClient, QWidget *parent = nullptr);
+    /*!
+     */
     ~FavoriteCollectionWidget() override;
 
+    /*!
+     */
     void readConfig();
+    /*!
+     */
     void updateMode();
 
+    /*!
+     */
     void changeViewMode(QListView::ViewMode mode);
 
 protected Q_SLOTS:
+    /*!
+     */
     void slotGeneralFontChanged();
+    /*!
+     */
     void slotGeneralPaletteChanged();
+    /*!
+     */
     void slotChangeIconSize(bool);
+    /*!
+     */
     void slotChangeMode(bool);
 
 protected:
+    /*!
+     */
     void paintEvent(QPaintEvent *) override;
+    /*!
+     */
     void dragEnterEvent(QDragEnterEvent *event) override;
+    /*!
+     */
     void dragMoveEvent(QDragMoveEvent *event) override;
+    /*!
+     */
     void dropEvent(QDropEvent *event) override;
+    /*!
+     */
     void startDrag(Qt::DropActions) override;
 
+    /*!
+     */
     void mousePressEvent(QMouseEvent *e) override;
+    /*!
+     */
     [[nodiscard]] bool event(QEvent *e) override;
 Q_SIGNALS:
+    /*!
+     */
     void newTabRequested(bool);
 
 private:

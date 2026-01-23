@@ -31,6 +31,10 @@ class ActivitiesBaseManager;
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::Kernel
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/Kernel
+ *
  * Deals with common mail application related operations. The required interfaces
  * MUST be registered before using it!
  * Be careful when using in multi-threaded applications, as Kernel is a QObject
@@ -42,8 +46,12 @@ class MAILCOMMON_EXPORT Kernel : public QObject
 {
     Q_OBJECT
 public:
+    /*!
+     */
     ~Kernel() override;
 
+    /*!
+     */
     static Kernel *self();
 
     /*!
@@ -73,6 +81,8 @@ public:
      */
     void registerFilterIf(IFilter *filterIf);
 
+    /*!
+     */
     IFilter *filterIf() const;
 
     /*!
@@ -83,15 +93,31 @@ public:
      */
     [[nodiscard]] Akonadi::Collection collectionFromId(Akonadi::Collection::Id id) const;
 
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection inboxCollectionFolder();
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection outboxCollectionFolder();
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection sentCollectionFolder();
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection trashCollectionFolder();
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection draftsCollectionFolder();
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection templatesCollectionFolder();
 
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection spamsCollectionFolder();
 
+    /*!
+     */
     [[nodiscard]] bool isSystemFolderCollection(const Akonadi::Collection &col);
 
     /*!
@@ -104,10 +130,16 @@ public:
      */
     [[nodiscard]] bool folderIsDraftOrOutbox(const Akonadi::Collection &collection);
 
+    /*!
+     */
     [[nodiscard]] bool folderIsDrafts(const Akonadi::Collection &);
 
+    /*!
+     */
     [[nodiscard]] bool folderIsTemplates(const Akonadi::Collection &collection);
 
+    /*!
+     */
     [[nodiscard]] bool folderIsSpams(const Akonadi::Collection &collection);
 
     /*!
@@ -133,18 +165,32 @@ public:
      */
     [[nodiscard]] bool folderIsSentMailFolder(const Akonadi::Collection &);
 
+    /*!
+     */
     static bool folderIsInbox(const Akonadi::Collection &);
 
+    /*!
+     */
     void initFolders();
 
+    /*!
+     */
     void emergencyExit(const QString &reason);
 
+    /*!
+     */
     PimCommon::ImapResourceCapabilitiesManager *imapResourceManager() const;
 
+    /*!
+     */
     static QMap<QString, Akonadi::Collection::Id> pop3ResourceTargetCollection();
 
 #if MAILCOMMON_HAVE_ACTIVITY_SUPPORT
+    /*!
+     */
     PimCommonActivities::ActivitiesBaseManager *activitiesBaseManager() const;
+    /*!
+     */
     void registerActivitiesBaseManager(PimCommonActivities::ActivitiesBaseManager *manager);
 #endif
 
@@ -156,7 +202,11 @@ private Q_SLOTS:
     void slotDefaultCollectionsChanged();
 
 Q_SIGNALS:
+    /*!
+     */
     void requestConfigSync();
+    /*!
+     */
     void requestSystemTrayUpdate();
 
 private:

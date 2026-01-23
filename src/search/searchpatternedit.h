@@ -26,6 +26,10 @@ namespace MailCommon
 class SearchPatternEdit;
 
 /*!
+ * \class MailCommon::SearchPatternEdit
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/SearchPatternEdit
+ *
  * This widget is intended to be used in the filter configuration as
  * well as in the message search dialogs. It consists of a frame,
  * inside which there are placed two radio buttons entitled "Match
@@ -86,8 +90,12 @@ public:
                                SearchPatternEditOptions options = (SearchPatternEditOptions)(None),
                                SearchModeType modeType = StandardMode);
 
+    /*!
+     */
     ~SearchPatternEdit() override;
 
+    /*!
+     */
     void setPatternEditOptions(SearchPatternEdit::SearchPatternEditOptions options);
 
     /*!
@@ -122,6 +130,8 @@ Q_SIGNALS:
      */
     void patternChanged();
 
+    /*!
+     */
     void returnPressed();
 
 private:
@@ -204,15 +214,27 @@ public:
      */
     void reset();
 
+    /*!
+     */
     static int ruleFieldToId(const QString &i18nVal);
 
+    /*!
+     */
     void updateAddRemoveButton(bool addButtonEnabled, bool removeButtonEnabled);
 
+    /*!
+     */
     void setPatternEditOptions(MailCommon::SearchPatternEdit::SearchPatternEditOptions options);
 
 public Q_SLOTS:
+    /*!
+     */
     void slotFunctionChanged();
+    /*!
+     */
     void slotValueChanged();
+    /*!
+     */
     void slotReturnPressed();
 
 Q_SIGNALS:
@@ -229,9 +251,15 @@ Q_SIGNALS:
      */
     void contentsChanged(const QString &);
 
+    /*!
+     */
     void returnPressed();
 
+    /*!
+     */
     void addWidget(QWidget *);
+    /*!
+     */
     void removeWidget(QWidget *);
 
 protected:
@@ -247,8 +275,14 @@ protected:
     int indexOfRuleField(const QByteArray &aName) const;
 
 protected Q_SLOTS:
+    /*!
+     */
     void slotRuleFieldChanged(const QString &);
+    /*!
+     */
     void slotAddWidget();
+    /*!
+     */
     void slotRemoveWidget();
 
 private:

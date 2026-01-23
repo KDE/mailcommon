@@ -83,13 +83,15 @@ Q_SIGNALS:
     void removeFilterWidget(QWidget *);
 
 private:
-    //\\ond PRIVATE
     class FilterActionWidgetPrivate;
     std::unique_ptr<FilterActionWidgetPrivate> const d;
-    //@endcond
 };
 
 /*!
+ * \class MailCommon::FilterActionWidgetLister
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FilterActionWidget
+ *
  * \brief A container widget for a list of FilterActionWidgets.
  *
  * \author Marc Mutz <mutz@kde.org>

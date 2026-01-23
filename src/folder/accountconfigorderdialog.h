@@ -14,6 +14,10 @@ namespace MailCommon
 class AccountConfigOrderDialogPrivate;
 class MailCommonSettings;
 /*!
+ * \class MailCommon::AccountConfigOrderDialog
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/AccountConfigOrderDialog
+ *
  * \brief The AccountConfigOrderDialog class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -21,7 +25,12 @@ class MAILCOMMON_EXPORT AccountConfigOrderDialog : public QDialog
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit AccountConfigOrderDialog(MailCommon::MailCommonSettings *settings, QWidget *parent);
+
+    /*!
+     */
     ~AccountConfigOrderDialog() override;
 
 private:

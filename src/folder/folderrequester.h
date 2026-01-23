@@ -23,6 +23,10 @@ class AccountActivitiesAbstract;
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::FolderRequester
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FolderRequester
+ *
  * A widget that contains a QLineEdit which shows the current folder
  * and a button that fires a FolderSelectionDialog
  * The dialog is set to disable readonly folders by default

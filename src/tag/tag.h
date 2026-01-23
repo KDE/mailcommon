@@ -18,6 +18,13 @@ namespace MailCommon
 // Useful in the config dialog, because the user might cancel his changes,
 // in which case we don't write them back.
 // Also used as a convenience class in the TagActionManager.
+/*!
+ * \class MailCommon::Tag
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/Tag
+ *
+ * \brief The Tag class
+ */
 class MAILCOMMON_EXPORT Tag
 {
     Q_GADGET
@@ -31,23 +38,43 @@ public:
     using SaveFlags = QFlags<SaveFlag>;
 
     // Returns true if two tags are equal
+    /*!
+     */
     [[nodiscard]] bool operator==(const Tag &other) const;
 
+    /*!
+     */
     [[nodiscard]] bool operator!=(const Tag &other) const;
 
+    /*!
+     */
     static Ptr createDefaultTag(const QString &name);
     // expects a tag with all attributes fetched
+    /*!
+     */
     static Ptr fromAkonadi(const Akonadi::Tag &tag);
 
+    /*!
+     */
     [[nodiscard]] Akonadi::Tag saveToAkonadi(SaveFlags saveFlags = SaveFlags(TextColor | BackgroundColor | Font)) const;
 
     // Compare, based on priority
+    /*!
+     */
     static bool compare(const Ptr &tag1, const Ptr &tag2);
     // Compare, based on name
+    /*!
+     */
     static bool compareName(const Ptr &tag1, const Ptr &tag2);
 
+    /*!
+     */
     [[nodiscard]] qint64 id() const;
+    /*!
+     */
     [[nodiscard]] QString name() const;
+    /*!
+     */
     [[nodiscard]] Akonadi::Tag tag() const;
 
     QString tagName;

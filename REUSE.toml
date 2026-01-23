@@ -4,7 +4,7 @@ SPDX-PackageSupplier = "Montel Laurent <montel@kde.org>"
 SPDX-PackageDownloadLocation = "https://invent.kde.org/pim/mailcommon"
 
 [[annotations]]
-path = ["src/filter/autotests/unittestenv/**", "src/filter/autotests/gpghome/**", "autotests/unittestenv/**", "src/filter/autotests/gpgdata/**", "src/filter/filterimporter/autotests/unittestenv/**", "src/filter/TODO", "src/filter/TODO"]
+path = ["src/filter/autotests/unittestenv/**", "src/filter/autotests/gpghome/**", "autotests/unittestenv/**", "src/filter/autotests/gpgdata/**", "src/filter/filterimporter/autotests/unittestenv/**", "src/filter/TODO", "src/filter/TODO", "src/mailcommon-index.qdoc", "src/mailcommon.qdoc", "src/mailcommon.qdocconf"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "none"
 SPDX-License-Identifier = "CC0-1.0"

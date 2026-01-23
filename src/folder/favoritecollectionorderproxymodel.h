@@ -16,15 +16,25 @@ class AccountActivitiesAbstract;
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::FavoriteCollectionOrderProxyModel
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FavoriteCollectionOrderProxyModel
+ *
  * \brief The FavoriteCollectionOrderProxyModel class implements ordering of favorite collections.
  */
 class MAILCOMMON_EXPORT FavoriteCollectionOrderProxyModel : public Akonadi::EntityOrderProxyModel
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit FavoriteCollectionOrderProxyModel(QObject *parent = nullptr);
+    /*!
+     */
     ~FavoriteCollectionOrderProxyModel() override;
 
+    /*!
+     */
     void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 
 protected:

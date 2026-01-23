@@ -15,6 +15,13 @@
 
 namespace MailCommon
 {
+/*!
+ * \class MailCommon::ExpireCollectionAttribute
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/ExpireCollectionAttribute
+ *
+ * \brief The ExpireCollectionAttribute class
+ */
 class MAILCOMMON_EXPORT ExpireCollectionAttribute : public Akonadi::Attribute
 {
 public:

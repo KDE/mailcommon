@@ -27,6 +27,10 @@ namespace MailCommon
 {
 class FolderCollectionMonitorPrivate;
 /*!
+ * \class MailCommon::FolderCollectionMonitor
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FolderCollectionMonitor
+ *
  * \brief The FolderCollectionMonitor class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -35,14 +39,25 @@ class MAILCOMMON_EXPORT FolderCollectionMonitor : public QObject
     Q_OBJECT
 
 public:
+    /*!
+     */
     explicit FolderCollectionMonitor(Akonadi::Session *session, QObject *parent = nullptr);
+    /*!
+     */
     ~FolderCollectionMonitor() override;
-
+    /*!
+     */
     [[nodiscard]] Akonadi::ChangeRecorder *monitor() const;
+    /*!
+     */
     void expireAllFolders(bool immediate, QAbstractItemModel *collectionModel);
+    /*!
+     */
     void expunge(const Akonadi::Collection &, bool sync = false);
 
 protected:
+    /*!
+     */
     void expireAllCollection(const QAbstractItemModel *model, bool immediate, const QModelIndex &parentIndex = QModelIndex());
 
 private:

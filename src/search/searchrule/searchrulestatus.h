@@ -14,6 +14,10 @@
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::SearchRuleStatus
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/SearchRuleStatus
+ *
  *  This class represents a search to be performed against the status of a
  *  message. The status is represented by a bitfield.
  *
@@ -23,11 +27,19 @@ namespace MailCommon
 class MAILCOMMON_EXPORT SearchRuleStatus : public SearchRule
 {
 public:
+    /*!
+     */
     explicit SearchRuleStatus(const QByteArray &field = QByteArray(), Function function = FuncContains, const QString &contents = QString());
 
+    /*!
+     */
     explicit SearchRuleStatus(Akonadi::MessageStatus status, Function function = FuncContains);
 
+    /*!
+     */
     [[nodiscard]] bool isEmpty() const override;
+    /*!
+     */
     [[nodiscard]] bool matches(const Akonadi::Item &item) const override;
 
     /*!
@@ -35,13 +47,21 @@ public:
      */
     [[nodiscard]] RequiredPart requiredPart() const override;
 
+    /*!
+     */
     void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const override;
 
     // Not possible to implement optimized form for status searching
+    /*!
+     */
     using SearchRule::matches;
 
+    /*!
+     */
     static Akonadi::MessageStatus statusFromEnglishName(const QString &);
 
+    /*!
+     */
     [[nodiscard]] QString informationAboutNotValidRules() const override;
 
 private:

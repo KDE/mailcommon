@@ -43,6 +43,10 @@ struct MAILCOMMON_EXPORT SnippetInfo {
     QString attachment;
 };
 /*!
+ * \class MailCommon::SnippetsManager
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/SnippetsManager
+ *
  * \brief The SnippetsManager class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -121,13 +125,15 @@ public:
     [[nodiscard]] QString selectedName() const;
 
 Q_SIGNALS:
+    /*!
+     */
     void insertSnippet();
+    /*!
+     */
     void insertSnippetInfo(const MailCommon::SnippetInfo &info);
 
 private:
-    //\\ond PRIVATE
     class SnippetsManagerPrivate;
     std::unique_ptr<SnippetsManagerPrivate> const d;
-    //@endcond
 };
 }

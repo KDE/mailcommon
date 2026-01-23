@@ -16,6 +16,10 @@ namespace MailCommon
 {
 class IKernel;
 /*!
+ * \class MailCommon::MDNWarningJob
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/MDNWarningJob
+ *
  * \brief The MDNWarningJob class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -29,23 +33,45 @@ public:
         Denied,
         Send,
     };
+    /*!
+     */
     explicit MDNWarningJob(IKernel *kernel, QObject *parent = nullptr);
+    /*!
+     */
     ~MDNWarningJob() override;
 
+    /*!
+     */
     void start();
 
+    /*!
+     */
     [[nodiscard]] const Akonadi::Item &item() const;
+    /*!
+     */
     void setItem(const Akonadi::Item &newItem);
 
+    /*!
+     */
     [[nodiscard]] bool canStart() const;
 
+    /*!
+     */
     [[nodiscard]] ResponseMDN response() const;
+    /*!
+     */
     void setResponse(ResponseMDN newResponse);
 
+    /*!
+     */
     [[nodiscard]] KMime::MDN::SendingMode sendingMode() const;
+    /*!
+     */
     void setSendingMode(KMime::MDN::SendingMode newSendingMode);
 
 Q_SIGNALS:
+    /*!
+     */
     void finished();
 
 private:

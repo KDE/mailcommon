@@ -24,6 +24,10 @@ class CollectionStatisticsDelegate;
 namespace MailCommon
 {
 /*!
+ * \class MailCommon::FolderTreeView
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FolderTreeView
+ *
  * This is an enhanced EntityTreeView specially suited for the folders in KMail's
  * main folder widget.
  */
@@ -32,32 +36,62 @@ class MAILCOMMON_EXPORT FolderTreeView : public Akonadi::EntityTreeView
     Q_OBJECT
 
 public:
+    /*!
+     */
     explicit FolderTreeView(QWidget *parent = nullptr, bool showUnreadCount = true);
 
+    /*!
+     */
     explicit FolderTreeView(KXMLGUIClient *xmlGuiClient, QWidget *parent = nullptr, bool showUnreadCount = true);
 
+    /*!
+     */
     ~FolderTreeView() override;
 
+    /*!
+     */
     void selectNextUnreadFolder(bool confirm = false);
+    /*!
+     */
     void selectPrevUnreadFolder(bool confirm = false);
 
+    /*!
+     */
     void showStatisticAnimation(bool anim);
 
+    /*!
+     */
     void disableContextMenuAndExtraColumn();
 
+    /*!
+     */
     void setTooltipsPolicy(FolderTreeWidget::ToolTipDisplayPolicy);
 
+    /*!
+     */
     void restoreHeaderState(const QByteArray &data);
 
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection currentFolder() const;
 
+    /*!
+     */
     void disableSaveConfig();
+    /*!
+     */
     void readConfig();
 
+    /*!
+     */
     void updatePalette();
 
+    /*!
+     */
     void keyboardSearch(const QString &) override;
 
+    /*!
+     */
     void setEnableDragDrop(bool enabled);
 
 protected:
@@ -66,34 +100,76 @@ protected:
         Previous = 1,
     };
 
+    /*!
+     */
     void init(bool showUnreadCount);
+    /*!
+     */
     void selectModelIndex(const QModelIndex &);
+    /*!
+     */
     void setCurrentModelIndex(const QModelIndex &);
+    /*!
+     */
     QModelIndex selectNextFolder(const QModelIndex &current);
+    /*!
+     */
     bool isUnreadFolder(const QModelIndex &current, QModelIndex &nextIndex, FolderTreeView::Move move, bool confirm);
+    /*!
+     */
     void writeConfig();
 
+    /*!
+     */
     void setSortingPolicy(FolderTreeWidget::SortingPolicy policy, bool writeInConfig = false);
 
+    /*!
+     */
     void mousePressEvent(QMouseEvent *e) override;
 
 public Q_SLOTS:
+    /*!
+     */
     void slotFocusNextFolder();
+    /*!
+     */
     void slotFocusPrevFolder();
+    /*!
+     */
     void slotSelectFocusFolder();
+    /*!
+     */
     void slotFocusFirstFolder();
+    /*!
+     */
     void slotFocusLastFolder();
 
 protected Q_SLOTS:
+    /*!
+     */
     void slotHeaderContextMenuRequested(const QPoint &);
+    /*!
+     */
     void slotHeaderContextMenuChangeIconSize(bool);
+    /*!
+     */
     void slotHeaderContextMenuChangeHeader(bool);
+    /*!
+     */
     void slotHeaderContextMenuChangeToolTipDisplayPolicy(bool);
+    /*!
+     */
     void slotHeaderContextMenuChangeSortingPolicy(bool);
 
 Q_SIGNALS:
+    /*!
+     */
     void changeTooltipsPolicy(MailCommon::FolderTreeWidget::ToolTipDisplayPolicy);
+    /*!
+     */
     void manualSortingChanged(bool actif);
+    /*!
+     */
     void newTabRequested(bool);
 
 private:

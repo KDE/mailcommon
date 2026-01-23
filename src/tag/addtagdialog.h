@@ -18,15 +18,32 @@ class KActionCollection;
 namespace MailCommon
 {
 class AddTagDialogPrivate;
+/*!
+ * \class MailCommon::AddTagDialog
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/AddTagDialog
+ *
+ * \brief The AddTagDialog class
+ */
 class MAILCOMMON_EXPORT AddTagDialog : public QDialog
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit AddTagDialog(const QList<KActionCollection *> &actions, QWidget *parent = nullptr);
+    /*!
+     */
     ~AddTagDialog() override;
 
+    /*!
+     */
     void setTags(const QList<MailCommon::Tag::Ptr> &tags);
+    /*!
+     */
     [[nodiscard]] QString label() const;
+    /*!
+     */
     [[nodiscard]] Akonadi::Tag tag() const;
 
 private:

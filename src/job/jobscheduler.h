@@ -26,6 +26,10 @@ class FolderJob;
 class ScheduledJob;
 
 /*!
+ * \class MailCommon::ScheduledTask
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/JobScheduler
+ *
  * A scheduled task is some information about a folder job that should be run later.
  * As long as it's not running, it's called a "task", i.e. something that needs to be done.
  * Tasks are managed by the JobScheduler.
@@ -73,6 +77,10 @@ private:
 };
 
 /*!
+ * \class MailCommon::ScheduledJob
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/JobScheduler
+ *
  * The unique JobScheduler instance (owned by kmkernel) implements "background processing"
  * of folder operations (like expiration and compaction). Tasks (things to be done)
  * are registered with the JobScheduler, and it will execute them one at a time,
@@ -84,7 +92,11 @@ class MAILCOMMON_EXPORT JobScheduler : public QObject
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit JobScheduler(QObject *parent);
+    /*!
+     */
     ~JobScheduler() override;
 
     /*!
@@ -94,7 +106,11 @@ public:
     void registerTask(ScheduledTask *task);
 
     // D-Bus calls, called from KMKernel
+    /*!
+     */
     void pause();
+    /*!
+     */
     void resume();
 
 private:
@@ -121,6 +137,10 @@ private:
 };
 
 /*!
+ * \class MailCommon::ScheduledJob
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/JobScheduler
+ *
  * Base class for scheduled jobs.
  */
 class MAILCOMMON_EXPORT ScheduledJob : public FolderJob
