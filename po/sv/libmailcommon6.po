@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2024, 2025 Stefan Asserhall <stefan.asserhall@gmail.com>
+# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2024, 2025, 2026 Stefan Asserhall <stefan.asserhall@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-11 00:44+0000\n"
-"PO-Revision-Date: 2025-01-11 12:22+0100\n"
+"PO-Revision-Date: 2026-01-23 20:52+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 25.12.1\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -1895,12 +1895,11 @@ msgid "%1 (Offline)"
 msgstr "%1 (nerkopplad)"
 
 #: folder/foldertreewidgetproxymodel.cpp:247
-#, fuzzy, kde-format
-#| msgid "%1 (Reached %2% quota)"
+#, kde-format
 msgctxt ""
 "%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
-msgstr "%1 (%2 % tilldelning uppnådd)"
+msgstr "%1 (%2 % uppnått)"
 
 #: job/backupjob.cpp:95
 #, kde-format
