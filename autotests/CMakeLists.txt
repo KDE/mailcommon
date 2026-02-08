@@ -10,4 +10,8 @@ target_link_libraries(
 )
 
 add_akonadi_isolated_test(favoritestest.cpp)
-target_link_libraries(favoritestest KPim6::AkonadiWidgets KPim6::MailCommon)
+target_link_libraries(
+    favoritestest
+    KPim6::AkonadiWidgets
+    KPim6::MailCommon
+)

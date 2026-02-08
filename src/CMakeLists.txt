@@ -2,10 +2,7 @@
 # SPDX-FileCopyrightText: none
 add_definitions(-DTRANSLATION_DOMAIN=\"libmailcommon6\")
 
-configure_file(
-    config-mailcommon.h.in
-    ${CMAKE_CURRENT_BINARY_DIR}/config-mailcommon.h
-)
+configure_file(config-mailcommon.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-mailcommon.h)
 
 if(BUILD_TESTING)
     add_definitions(-DBUILD_TESTING)
@@ -22,7 +19,9 @@ ecm_qt_declare_logging_category(libmailcommon_SRCS HEADER mailcommon_debug.h IDE
 
 set_source_files_properties(
     ${CMAKE_CURRENT_SOURCE_DIR}/dbusinterfaces/org.freedesktop.Akonadi.MailFilterAgent.xml
-    PROPERTIES INCLUDE "dbusoperators.h"
+    PROPERTIES
+        INCLUDE
+            "dbusoperators.h"
 )
 
 qt_add_dbus_interfaces(libmailcommon_SRCS
@@ -31,7 +30,10 @@ qt_add_dbus_interfaces(libmailcommon_SRCS
 
 ki18n_wrap_ui(libmailcommon_SRCS filter/ui/filterconfigwidget.ui snippets/ui/snippetwidget.ui filter/ui/selectthunderbirdfilterfileswidget.ui)
 
-set(libmailcommon_SRCS ${libmailcommon_SRCS} filter/soundtestwidget.cpp)
+set(libmailcommon_SRCS
+    ${libmailcommon_SRCS}
+    filter/soundtestwidget.cpp
+)
 
 macro(add_resource_iface _kcfgFile _ifaceName _className)
     kcfg_generate_dbus_interface(${CMAKE_CURRENT_SOURCE_DIR}/${_kcfgFile} ${_ifaceName})
@@ -347,10 +349,17 @@ target_sources(
 )
 
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KPim6MailCommon PROPERTIES UNITY_BUILD ON)
+    set_target_properties(
+        KPim6MailCommon
+        PROPERTIES
+            UNITY_BUILD
+                ON
+    )
     set_source_files_properties(
         ${libmailcommon_search_SRCS}
-        PROPERTIES SKIP_UNITY_BUILD_INCLUSION ON
+        PROPERTIES
+            SKIP_UNITY_BUILD_INCLUSION
+                ON
     )
 endif()
 generate_export_header(KPim6MailCommon BASE_NAME mailcommon)
@@ -398,10 +407,7 @@ if(MAILCOMMON_HAVE_ACTIVITY_SUPPORT)
     target_link_libraries(KPim6MailCommon PRIVATE KPim6::PimCommonActivities)
 endif()
 
-target_include_directories(
-    KPim6MailCommon
-    INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/MailCommon/>"
-)
+target_include_directories(KPim6MailCommon INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/MailCommon/>")
 target_include_directories(
     KPim6MailCommon
     PUBLIC
@@ -411,16 +417,15 @@ target_include_directories(
 set_target_properties(
     KPim6MailCommon
     PROPERTIES
-        VERSION ${MAILCOMMON_VERSION}
-        SOVERSION ${MAILCOMMON_SOVERSION}
-        EXPORT_NAME MailCommon
+        VERSION
+            ${MAILCOMMON_VERSION}
+        SOVERSION
+            ${MAILCOMMON_SOVERSION}
+        EXPORT_NAME
+            MailCommon
 )
 
-install(
-    TARGETS KPim6MailCommon
-    EXPORT KPim6MailCommonTargets
-    ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
-)
+install(TARGETS KPim6MailCommon EXPORT KPim6MailCommonTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 if(BUILD_TESTING)
     add_subdirectory(filter/filterimporter/autotests)

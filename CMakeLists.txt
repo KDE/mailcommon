@@ -39,12 +39,10 @@ endif()
 if(NOT ${PRE_COMMIT_INSTALLED})
     find_program(PRE_COMMIT_EXECUTABLE pre-commit)
     if(PRE_COMMIT_EXECUTABLE)
-        message(
-            STATUS
-            "This module has pre-commit support. pre-commit binary was found. Installing pre-commit hook"
-        )
+        message(STATUS "This module has pre-commit support. pre-commit binary was found. Installing pre-commit hook")
         execute_process(
-            COMMAND "${PRE_COMMIT_EXECUTABLE}" install -f
+            COMMAND
+                "${PRE_COMMIT_EXECUTABLE}" install -f
             ERROR_QUIET
             RESULT_VARIABLE _precommitresult
             WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}"
@@ -61,10 +59,7 @@ if(NOT ${PRE_COMMIT_INSTALLED})
             kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
         endif()
     else()
-        message(
-            WARNING
-            "This module has pre-commit support. pre-commit binary was not found."
-        )
+        message(WARNING "This module has pre-commit support. pre-commit binary was not found.")
         include(KDEGitCommitHooks)
         include(KDEClangFormat)
         kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
@@ -105,7 +100,11 @@ find_package(
     Qt6
     ${QT_REQUIRED_VERSION}
     CONFIG
-    REQUIRED Widgets DBus Xml Multimedia
+    REQUIRED
+        Widgets
+        DBus
+        Xml
+        Multimedia
 )
 
 set(GPGMEPP_LIB_VERSION "2.0.0")
@@ -140,18 +139,8 @@ find_package(KPim6MessageViewer ${MESSAGELIB_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6Mime ${KMIME_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6PimCommonAkonadi ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6TemplateParser ${MESSAGELIB_LIB_VERSION} CONFIG REQUIRED)
-find_package(
-    KPim6AkonadiContactWidgets
-    ${AKONADICONTACT_LIB_VERSION}
-    CONFIG
-    REQUIRED
-)
-find_package(
-    KPim6IdentityManagementCore
-    ${KIDENTITYMANAGERCORE_LIB_VERSION}
-    CONFIG
-    REQUIRED
-)
+find_package(KPim6AkonadiContactWidgets ${AKONADICONTACT_LIB_VERSION} CONFIG REQUIRED)
+find_package(KPim6IdentityManagementCore ${KIDENTITYMANAGERCORE_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF6TextCustomEditor ${KTEXTADDONS_MIN_VERSION} CONFIG REQUIRED)
 find_package(KPim6PimCommonActivities ${PIMCOMMON_LIB_VERSION} CONFIG)
 option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
@@ -168,11 +157,7 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX MAILCOMMON
 )
 
 if(TARGET KPim6::PimCommonActivities)
-    option(
-        OPTION_USE_PLASMA_ACTIVITIES
-        "Activate plasma activities (experimental)"
-        ON
-    )
+    option(OPTION_USE_PLASMA_ACTIVITIES "Activate plasma activities (experimental)" ON)
     if(OPTION_USE_PLASMA_ACTIVITIES)
         if(NOT WIN32 AND NOT APPLE)
             set(OPTION_USE_PLASMA_ACTIVITIES true)
@@ -186,8 +171,10 @@ if(TARGET KPim6::PimCommonActivities)
             set_package_properties(
                 PlasmaActivities
                 PROPERTIES
-                    DESCRIPTION "Allow to compile with plasma activities"
-                    TYPE OPTIONAL
+                    DESCRIPTION
+                        "Allow to compile with plasma activities"
+                    TYPE
+                        OPTIONAL
             )
         endif()
 
@@ -200,11 +187,7 @@ endif()
 ########### Targets ###########
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 
-option(
-    USE_UNITY_CMAKE_SUPPORT
-    "Use UNITY cmake support (speedup compile time)"
-    OFF
-)
+option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
 set(COMPILE_WITH_UNITY_CMAKE_SUPPORT OFF)
 if(USE_UNITY_CMAKE_SUPPORT)
@@ -263,7 +246,8 @@ install(
 )
 
 install(
-    FILES ${CMAKE_CURRENT_BINARY_DIR}/mailcommon_version.h
+    FILES
+        ${CMAKE_CURRENT_BINARY_DIR}/mailcommon_version.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailCommon
     COMPONENT Devel
 )
