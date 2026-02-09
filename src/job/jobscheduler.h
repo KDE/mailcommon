@@ -146,7 +146,11 @@ private:
 class MAILCOMMON_EXPORT ScheduledJob : public FolderJob
 {
 public:
+    /*!
+     */
     ScheduledJob(const Akonadi::Collection &folder, bool immediate);
+    /*!
+     */
     ~ScheduledJob() override;
 
 protected:

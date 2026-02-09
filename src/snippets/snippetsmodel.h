@@ -18,6 +18,8 @@ class SnippetItem;
 /*!
  * \brief The SnippetsInfo struct
  * \author Laurent Montel <montel@kde.org>
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/SnippetsModel
  */
 struct MAILCOMMON_EXPORT SnippetsInfo {
     QString newName;
