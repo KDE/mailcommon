@@ -297,6 +297,13 @@ public:
     void registerActivitiesBaseManager(PimCommonActivities::ActivitiesBaseManager *manager);
 #endif
 
+private:
+    void findCreateDefaultCollection(Akonadi::SpecialMailCollections::Type);
+
+private Q_SLOTS:
+    void createDefaultCollectionDone(KJob *job);
+    void slotDefaultCollectionsChanged();
+
 Q_SIGNALS:
     /*!
      * Emitted when a configuration synchronization is requested.
