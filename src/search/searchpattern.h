@@ -93,7 +93,9 @@ public:
      */
     explicit SearchPattern(const KConfigGroup &config);
 
-    /*! Destructor. Deletes all stored rules! */
+    /*!
+     * Destructor. Deletes all stored rules!
+     */
     ~SearchPattern();
 
     /*!
@@ -104,13 +106,16 @@ public:
      * own result or else most functionality is lacking, or has to be
      * reimplemented, since the rules are private to this class.
      *
-     * Returns true if the match was successful, false otherwise.
+     * \param item The Akonadi item to match
+     * \param ignoreBody Whether to ignore the body content when matching
+     * \return True if the match was successful, false otherwise
      */
     bool matches(const Akonadi::Item &item, bool ignoreBody = false) const;
 
     /*!
      * Returns the required part from the item that is needed for the search to
-     * operate. See \ SearchRule::RequiredPart */
+     * operate. See \ SearchRule::RequiredPart
+     */
     SearchRule::RequiredPart requiredPart() const;
 
     /*!
@@ -176,6 +181,9 @@ public:
         mOperator = aOp;
     }
 
+    /*!
+     * Returns the maximum number of filter rules allowed.
+     */
     static int filterRulesMaximumSize();
     /*!
      * Returns the pattern as string. For debugging.
@@ -202,10 +210,20 @@ public:
      */
     void deserialize(const QByteArray &);
 
+    /*!
+     * Stream operator for output.
+     */
     QDataStream &operator>>(QDataStream &s) const;
+    /*!
+     * Stream operator for input.
+     */
     QDataStream &operator<<(QDataStream &s);
 
     /*!
+     * Generates a Sieve script representation of this pattern.
+     *
+     * \param requiresModules The list of Sieve modules required by the script
+     * \param code The generated Sieve script code
      */
     void generateSieveScript(QStringList &requiresModules, QString &code);
 

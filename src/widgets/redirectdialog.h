@@ -63,22 +63,27 @@ public:
     [[nodiscard]] SendMode sendMode() const;
 
     /*!
+     * Returns the transport ID selected in the dialog.
      */
     [[nodiscard]] int transportId() const;
 
     /*!
+     * Returns the identity ID selected in the dialog.
      */
     [[nodiscard]] int identity() const;
 
     /*!
+     * Returns the CC addresses for the redirection.
      */
     [[nodiscard]] QString cc() const;
     /*!
+     * Returns the BCC addresses for the redirection.
      */
     [[nodiscard]] QString bcc() const;
 
 protected:
     /*!
+     * Accepts the dialog and stores the user's settings.
      */
     void accept() override;
 

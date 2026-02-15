@@ -25,10 +25,14 @@ class MAILCOMMON_EXPORT FolderJob : public QObject
 
 public:
     /*!
+     * Constructs a folder job.
+     *
+     * \param parent The parent object
      */
     explicit FolderJob(QObject *parent = nullptr);
 
     /*!
+     * Destroys the folder job.
      */
     ~FolderJob() override;
 
@@ -47,11 +51,15 @@ public:
     /*!
      * Returns the error code of the job. This must only be called from
      * the slot connected to the finished() signal.
+     *
+     * \return The error code
      */
     [[nodiscard]] int error() const;
 
     /*!
      * Returns true if this job can be canceled, e.g. to exit the application
+     *
+     * \return True if the job is cancellable, false otherwise
      */
     [[nodiscard]] bool isCancellable() const;
 
@@ -60,6 +68,8 @@ public:
      * By default, tListMessages, tGetMessage, tGetFolder and tCheckUidValidity
      * are cancellable, the others are not. But when copying, a non-cancellable
      * tGetMessage is needed.
+     *
+     * \param b Whether the job should be cancellable
      */
     void setCancellable(bool b);
 
@@ -74,6 +84,8 @@ Q_SIGNALS:
      * More convenient signal than finished(), since it provides a pointer to the job.
      * This signal is emitted by the FolderJob destructor => do NOT downcast
      * the job to a subclass!
+     *
+     * \param job Pointer to this job
      */
     void result(MailCommon::FolderJob *job);
 

@@ -34,43 +34,71 @@ public:
         Send,
     };
     /*!
+     * Constructs an MDN warning job.
+     *
+     * \param kernel The mail kernel object
+     * \param parent The parent object
      */
     explicit MDNWarningJob(IKernel *kernel, QObject *parent = nullptr);
     /*!
+     * Destroys the MDN warning job.
      */
     ~MDNWarningJob() override;
 
     /*!
+     * Starts the MDN warning process.
      */
     void start();
 
     /*!
+     * Returns the Akonadi item being processed.
+     *
+     * \return The Akonadi item
      */
     [[nodiscard]] const Akonadi::Item &item() const;
     /*!
+     * Sets the Akonadi item to process.
+     *
+     * \param newItem The Akonadi item
      */
     void setItem(const Akonadi::Item &newItem);
 
     /*!
+     * Checks if the job can be started.
+     *
+     * \return True if the job can start, false otherwise
      */
     [[nodiscard]] bool canStart() const;
 
     /*!
+     * Returns the MDN response.
+     *
+     * \return The MDN response
      */
     [[nodiscard]] ResponseMDN response() const;
     /*!
+     * Sets the MDN response.
+     *
+     * \param newResponse The MDN response to set
      */
     void setResponse(ResponseMDN newResponse);
 
     /*!
+     * Returns the MDN sending mode.
+     *
+     * \return The sending mode
      */
     [[nodiscard]] KMime::MDN::SendingMode sendingMode() const;
     /*!
+     * Sets the MDN sending mode.
+     *
+     * \param newSendingMode The sending mode to set
      */
     void setSendingMode(KMime::MDN::SendingMode newSendingMode);
 
 Q_SIGNALS:
     /*!
+     * Emitted when the MDN warning job has finished processing.
      */
     void finished();
 

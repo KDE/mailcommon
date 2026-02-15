@@ -57,10 +57,10 @@ public:
     /*!
      * Creates a new snippets manager.
      *
-     * \a actionCollection The action collection where the manager will
+     * \param actionCollection The action collection where the manager will
      *                         register the snippet shortcuts at.
-     * \a parent The parent object.
-     * \a widget The widget.
+     * \param parent The parent object.
+     * \param widget The widget.
      */
     explicit SnippetsManager(KActionCollection *actionCollection, QObject *parent = nullptr, QWidget *widget = nullptr);
 
@@ -126,9 +126,13 @@ public:
 
 Q_SIGNALS:
     /*!
+     * Emitted when a snippet is requested to be inserted into the editor.
      */
     void insertSnippet();
     /*!
+     * Emitted when a specific snippet should be inserted with all its details.
+     *
+     * \param info The snippet information to insert
      */
     void insertSnippetInfo(const MailCommon::SnippetInfo &info);
 

@@ -85,16 +85,24 @@ public:
     /*!
      * Constructor. The parent parameter is passed to the underlying
      * QGroupBox, as usual.
+     *
+     * \param parent The parent widget
+     * \param options Search pattern edit options
+     * \param modeType The search mode type (Standard or Baloo)
      */
     explicit SearchPatternEdit(QWidget *parent = nullptr,
                                SearchPatternEditOptions options = (SearchPatternEditOptions)(None),
                                SearchModeType modeType = StandardMode);
 
     /*!
+     * Destroys the search pattern edit widget.
      */
     ~SearchPatternEdit() override;
 
     /*!
+     * Sets additional pattern edit options after construction.
+     *
+     * \param options The options to set
      */
     void setPatternEditOptions(SearchPatternEdit::SearchPatternEditOptions options);
 
@@ -103,6 +111,8 @@ public:
      * return value of each rules' MailCommon::SearchRule::isEmpty.
      * This widget makes a shallow copy of \a aPattern and operates
      * directly on it.
+     *
+     * \param aPattern The search pattern to edit
      */
     void setSearchPattern(MailCommon::SearchPattern *aPattern);
 
@@ -131,6 +141,7 @@ Q_SIGNALS:
     void patternChanged();
 
     /*!
+     * Emitted when the Return key is pressed in the widget.
      */
     void returnPressed();
 

@@ -56,44 +56,76 @@ public:
     };
 
     /*!
+     * Constructs a backup job.
+     *
+     * \param parent The parent widget
      */
     explicit BackupJob(QWidget *parent = nullptr);
     /*!
+     * Destroys the backup job.
      */
     ~BackupJob() override;
 
     /*!
+     * Sets the root folder to backup.
+     *
+     * \param rootFolder The root collection to backup
      */
     void setRootFolder(const Akonadi::Collection &rootFolder);
     /*!
+     * Sets the location to save the backup archive.
+     *
+     * \param savePath The path where the archive should be saved
      */
     void setSaveLocation(const QUrl &savePath);
     /*!
+     * Sets the type of archive to create.
+     *
+     * \param type The archive type (Zip, Tar, TarBz2, or TarGz)
      */
     void setArchiveType(ArchiveType type);
     /*!
+     * Sets whether to delete folders after the backup is complete.
+     *
+     * \param deleteThem Whether to delete folders after backup
      */
     void setDeleteFoldersAfterCompletion(bool deleteThem);
     /*!
+     * Sets whether to backup recursively (all subfolders).
+     *
+     * \param recursive Whether to backup recursively
      */
     void setRecursive(bool recursive);
     /*!
+     * Sets whether to display a message box when the backup is complete.
+     *
+     * \param display Whether to display completion message
      */
     void setDisplayMessageBox(bool display);
     /*!
+     * Sets the real path of the folder to backup.
+     *
+     * \param path The real path to backup
      */
     void setRealPath(const QString &path);
 
     /*!
+     * Starts the backup job.
      */
     void start();
 Q_SIGNALS:
     /*!
+     * Emitted when the backup has completed successfully.
+     *
+     * \param message A message describing the backup completion
      */
-    void backupDone(const QString &);
+    void backupDone(const QString &message);
     /*!
+     * Emitted when an error occurs during the backup.
+     *
+     * \param message A message describing the error
      */
-    void error(const QString &);
+    void error(const QString &message);
 
 private:
     MAILCOMMON_NO_EXPORT void itemFetchJobResult(KJob *job);

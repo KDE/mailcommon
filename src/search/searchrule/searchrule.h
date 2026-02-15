@@ -151,8 +151,10 @@ ote This function does no validation of the data obtained
      *
      * Returns true if the rule matched, false otherwise.
      *
-     * \
-ote Must be implemented by subclasses.
+     * \note Must be implemented by subclasses.
+     *
+     * \param item The Akonadi item to match against
+     * \return True if the rule matches, false otherwise
      */
     virtual bool matches(const Akonadi::Item &item) const = 0;
 
@@ -161,44 +163,59 @@ ote Must be implemented by subclasses.
      * It isn't if either the field is not set or the contents is empty.
      * The calling code should make sure that it's rule list contains
      * only non-empty rules, as matches doesn't check this.
+     *
+     * \return True if the rule is empty, false otherwise
      */
     virtual bool isEmpty() const = 0;
 
     /*!
      * Returns the required part from the item that is needed for the search to
-     * operate. See \ RequiredPart */
+     * operate. See \sa RequiredPart
+     *
+     * \return The required part for this rule
+     */
     virtual SearchRule::RequiredPart requiredPart() const = 0;
 
     /*!
      * Saves the object into a given config \a group.
      *
-     * \a group The config group.
-     * \a index The identifier that is used to distinguish
+     * \param group The config group.
+     * \param index The identifier that is used to distinguish
      *              rules within a single config group.
      *
-     * \
-ote This function will happily write itself even when it's
+     * \note This function will happily write itself even when it's
      *       not valid, assuming higher layers to Do The Right Thing(TM).
      */
     void writeConfig(KConfigGroup &group, int index) const;
 
+    /*!
+     * Generates a Sieve script representation of this rule.
+     *
+     * \param requireModules The list of Sieve modules required by the script
+     * \param code The generated Sieve script code
+     */
     void generateSieveScript(QStringList &requireModules, QString &code);
 
     /*!
      * Sets the filter \a function of the rule.
+     *
+     * \param function The filter function to set
      */
     void setFunction(Function function);
 
     /*!
      * Returns the filter function of the rule.
+     *
+     * \return The current filter function
      */
     Function function() const;
 
     /*!
      * Sets the message header field \a name.
      *
-     * \
-ote Make sure the name contains no trailing ':'.
+     * \note Make sure the name contains no trailing ':'.
+     *
+     * \param name The header field name
      */
     void setField(const QByteArray &name);
 
@@ -214,6 +231,8 @@ ote Make sure the name contains no trailing ':'.
      * @li \<age in days\>: Try to match against age of message (numerical).
      * @li \<status\>: Try to match against status of message (status).
      * @li \<tag\>: Try to match against message tags.
+     *
+     * \return The header field name
      */
     [[nodiscard]] QByteArray field() const;
 
@@ -222,21 +241,30 @@ ote Make sure the name contains no trailing ':'.
      *
      * This can be either a substring to search for in
      * or a regexp pattern to match against the header.
+     *
+     * \param contents The contents to search for
      */
     void setContents(const QString &contents);
 
     /*!
      * Returns the contents of the rule.
+     *
+     * \return The search contents
      */
     [[nodiscard]] QString contents() const;
 
     /*!
      * Returns the rule as string for debugging purpose
+     *
+     * \return A string representation of the rule
      */
     [[nodiscard]] const QString asString() const;
 
     /*!
      * Adds query terms to the given term group.
+     *
+     * \param groupTerm The search term group to add query terms to
+     * \param emptyIsNotAnError Whether empty values should be considered an error
      */
     virtual void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const
     {
@@ -244,7 +272,15 @@ ote Make sure the name contains no trailing ':'.
         Q_UNUSED(emptyIsNotAnError)
     }
 
+    /*!
+     * Stream operator for serialization.
+     */
     QDataStream &operator>>(QDataStream &) const;
+    /*!
+     * Returns information about validation errors in this rule.
+     *
+     * \return A string describing validation errors, or empty if valid
+     */
     virtual QString informationAboutNotValidRules() const
     {
         return {};
@@ -253,14 +289,23 @@ ote Make sure the name contains no trailing ':'.
 protected:
     /*!
      * Helper that returns whether the rule has a negated function.
+     *
+     * \return True if the function is negated, false otherwise
      */
     [[nodiscard]] bool isNegated() const;
 
     /*!
      * Converts the rule function into the corresponding Akonadi query operator.
+     *
+     * \return The Akonadi search term condition
      */
     [[nodiscard]] Akonadi::SearchTerm::Condition akonadiComparator() const;
 
+    /*!
+     * Logs the result of a match operation for debugging purposes.
+     *
+     * \param result The result of the match operation
+     */
     void maybeLogMatchResult(bool result) const;
 
 private:
