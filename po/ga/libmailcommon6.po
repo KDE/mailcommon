@@ -24,27 +24,19 @@ msgid "Expiry"
 msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:36
-#, fuzzy, kde-format
-#| msgctxt "Expire messages after %1"
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] " lá"
-msgstr[1] " lá"
-msgstr[2] " lá"
-msgstr[3] " lá"
-msgstr[4] " lá"
+msgstr[0] ""
+msgstr[1] ""
 
 #: collectionpage/collectionexpirywidget.cpp:37
 #: collectionpage/collectionexpirywidget.cpp:43
 #: collectionpage/collectionexpirywidget.cpp:55
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu Never display tooltips."
-#| msgid "Never"
+#, kde-format
 msgid "Never"
-msgstr "Riamh"
+msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
@@ -86,11 +78,10 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:174
-#, fuzzy, kde-format
-#| msgid "No Folder Selected"
+#, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
-msgstr "Níl Aon Fhillteán Roghnaithe"
+msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:188
 #, kde-format
@@ -101,11 +92,10 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:190
-#, fuzzy, kde-format
-#| msgid "No Folder Selected"
+#, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
-msgstr "Níl Aon Fhillteán Roghnaithe"
+msgstr ""
 
 #: collectionpage/collectiongeneralpage.cpp:44
 #, kde-format
@@ -114,11 +104,10 @@ msgid "General"
 msgstr "Ginearálta"
 
 #: collectionpage/collectiongeneralpage.cpp:65
-#, fuzzy, kde-format
-#| msgid "Rename..."
+#, kde-format
 msgctxt "@label:textbox Name of the folder."
 msgid "Folder &Name:"
-msgstr "Athainmnigh..."
+msgstr ""
 
 #: collectionpage/collectiongeneralpage.cpp:110
 #, kde-format
@@ -187,11 +176,10 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use &default identity"
-msgstr "Úsái&d an t-aitheantas réamhshocraithe"
+msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
@@ -221,18 +209,16 @@ msgid "&Copy Global Templates"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:27
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
-msgstr "Úsái&d an t-aitheantas réamhshocraithe"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
-msgstr "Úsái&d an t-aitheantas réamhshocraithe"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
@@ -258,18 +244,16 @@ msgid "Show Sender/Receiver Column in List of Messages"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:43
-#, fuzzy, kde-format
-#| msgid " (default)"
+#, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
-msgstr " (réamhshocrú)"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:44
-#, fuzzy, kde-format
-#| msgid "&Send"
+#, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
-msgstr "&Seol"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:45
 #, kde-format
@@ -278,23 +262,20 @@ msgid "Receiver"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:46
-#, fuzzy, kde-format
-#| msgid "Shortcut:"
+#, kde-format
 msgid "Sho&w column:"
-msgstr "Aicearra:"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:77
-#, fuzzy, kde-format
-#| msgid "Message Status"
+#, kde-format
 msgid "Message format:"
-msgstr "Stádas na Teachtaireachta"
+msgstr ""
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
-#, fuzzy, kde-format
-#| msgid "Select Account"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
-msgstr "Roghnaigh Cuntas"
+msgstr ""
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:39
 #, kde-format
@@ -304,11 +285,10 @@ msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:40
 #: folder/folderrequester.cpp:74
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
-msgstr "Roghnaigh Fillteán"
+msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:43
 #, kde-format
@@ -323,10 +303,9 @@ msgid "The following folders can be used for this filter:"
 msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:69
-#, fuzzy, kde-format
-#| msgid "Please select an action."
+#, kde-format
 msgid "Please select a folder:"
-msgstr "Roghnaigh gníomh le do thoil."
+msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:72
 #, kde-format
@@ -335,11 +314,10 @@ msgid ""
 msgstr ""
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
-#, fuzzy, kde-format
-#| msgid "&Sender identity:"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
-msgstr "A&itheantas an tseoltóra:"
+msgstr ""
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:38
 #, kde-format
@@ -349,11 +327,10 @@ msgid ""
 msgstr ""
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
-#, fuzzy, kde-format
-#| msgid "Select sound"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
-msgstr "Roghnaigh fuaim"
+msgstr ""
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
 #, kde-format
@@ -367,11 +344,10 @@ msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
-#, fuzzy, kde-format
-#| msgid "Select Tag"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
-msgstr "Roghnaigh Clib"
+msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
 #, kde-format
@@ -385,17 +361,15 @@ msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgid "Add Tag…"
-msgstr "Cuir Clib Leis"
+msgstr ""
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
-#, fuzzy, kde-format
-#| msgid "Default Template"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
-msgstr "Teimpléad Réamhshocraithe"
+msgstr ""
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:38
 #, kde-format
@@ -405,11 +379,10 @@ msgid ""
 msgstr ""
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
-#, fuzzy, kde-format
-#| msgid "Transport:"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
-msgstr "Iompar:"
+msgstr ""
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:37
 #, kde-format
@@ -419,11 +392,10 @@ msgid ""
 msgstr ""
 
 #: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
-msgstr "Scagairí Thunderbird"
+msgstr ""
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:33
 #, kde-format
@@ -431,10 +403,9 @@ msgid " (default)"
 msgstr " (réamhshocrú)"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:118
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgid "Thunderbird File (*.dat)"
-msgstr "Scagairí Thunderbird"
+msgstr ""
 
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
@@ -447,11 +418,10 @@ msgid "Add Header"
 msgstr ""
 
 #: filter/filteractions/filteractionaddheader.cpp:74
-#, fuzzy, kde-format
-#| msgid "With:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
-msgstr "Le:"
+msgstr ""
 
 #: filter/filteractions/filteractionaddheader.cpp:200
 #, kde-format
@@ -469,10 +439,9 @@ msgid "Add Tag"
 msgstr "Cuir Clib Leis"
 
 #: filter/filteractions/filteractionaddtag.cpp:147
-#, fuzzy, kde-format
-#| msgid "No filters selected."
+#, kde-format
 msgid "No tag selected."
-msgstr "Níl aon scagairí roghnaithe."
+msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:33
 #, kde-format
@@ -508,18 +477,16 @@ msgid "KMail Filter"
 msgstr "Scagaire KMail"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:117
-#, fuzzy, kde-format
-#| msgid "with category"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
-msgstr "le catagóir"
+msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:125
-#, fuzzy, kde-format
-#| msgid "in address book"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
-msgstr "i leabhar seoltaí"
+msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:135
 #, kde-format
@@ -535,10 +502,9 @@ msgid "Header type selected is unknown."
 msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:293
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgid "No addressbook selected."
-msgstr "Níl aon fhillteán roghnaithe."
+msgstr ""
 
 #: filter/filteractions/filteractioncopy.cpp:19
 #, kde-format
@@ -547,10 +513,9 @@ msgstr "Cóipeáil go Fillteán"
 
 #: filter/filteractions/filteractioncopy.cpp:68
 #: filter/filteractions/filteractionmove.cpp:66
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgid "Folder destination was not defined."
-msgstr "Theip ar chruthú an fhillteáin"
+msgstr ""
 
 #: filter/filteractions/filteractiondecrypt.cpp:27
 #: filter/filteractions/filteractiondecrypt.cpp:40
@@ -681,10 +646,9 @@ msgid "Pipe Through"
 msgstr ""
 
 #: filter/filteractions/filteractionpipethrough.cpp:36
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgid "No action defined."
-msgstr "Theip ar chruthú an fhillteáin"
+msgstr ""
 
 #: filter/filteractions/filteractionplaysound.cpp:22
 #, kde-format
@@ -737,18 +701,16 @@ msgid "Search string is empty."
 msgstr ""
 
 #: filter/filteractions/filteractionrewriteheader.cpp:108
-#, fuzzy, kde-format
-#| msgid "Replace:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
-msgstr "Ionadaigh:"
+msgstr ""
 
 #: filter/filteractions/filteractionrewriteheader.cpp:119
-#, fuzzy, kde-format
-#| msgid "With:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
-msgstr "Le:"
+msgstr ""
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:29
 #, kde-format
@@ -828,10 +790,9 @@ msgid "Set Transport To"
 msgstr ""
 
 #: filter/filteractions/filteractionsettransport.cpp:142
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgid "Mail transport not defined."
-msgstr "Theip ar chruthú an fhillteáin"
+msgstr ""
 
 #: filter/filteractions/filteractionstatus.cpp:33
 #, kde-format
@@ -905,17 +866,15 @@ msgid "Unset Status"
 msgstr ""
 
 #: filter/filteractions/filteractionunsetstatus.cpp:39
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgid "Status not defined."
-msgstr "Theip ar chruthú an fhillteáin"
+msgstr ""
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, fuzzy, kde-format
-#| msgid "Please select an action."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
-msgstr "Roghnaigh gníomh le do thoil."
+msgstr ""
 
 #: filter/filteractions/filteractionwithurl.cpp:22
 #, kde-format
@@ -940,11 +899,10 @@ msgid "Save…"
 msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Rename..."
+#, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr "Athainmnigh..."
+msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
@@ -958,16 +916,14 @@ msgid "Convert to Script Sieve"
 msgstr ""
 
 #: filter/filterimporter/filterimportergmail.cpp:48
-#, fuzzy, kde-format
-#| msgid "KMail filters"
+#, kde-format
 msgid "Gmail filter %1"
-msgstr "Scagairí KMail"
+msgstr ""
 
 #: filter/filterimporter/filterimporterprocmail.cpp:54
-#, fuzzy, kde-format
-#| msgid "Procmail filters"
+#, kde-format
 msgid "Procmail filter %1"
-msgstr "Scagairí Procmail"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:112
 #, kde-format
@@ -977,53 +933,46 @@ msgid ""
 msgstr ""
 
 #: filter/filterimporterexporter.cpp:138
-#, fuzzy, kde-format
-#| msgid "Import KMail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
-msgstr "Iompórtáil Scagairí KMail"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:146
-#, fuzzy, kde-format
-#| msgid "Import Evolution Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
-msgstr "Iompórtáil Scagairí Evolution"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:150
-#, fuzzy, kde-format
-#| msgid "Import Sylpheed Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
-msgstr "Iompórtáil Scagairí Sylpheed"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:154
-#, fuzzy, kde-format
-#| msgid "Import Procmail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
-msgstr "Iompórtáil Scagairí Procmail"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:158
-#, fuzzy, kde-format
-#| msgid "Import Balsa Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
-msgstr "Iompórtáil Scagairí Balsa"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:162
-#, fuzzy, kde-format
-#| msgid "Import Claws Mail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
-msgstr "Iompórtáil Scagairí Ríomhphoist Claws"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:166
-#, fuzzy, kde-format
-#| msgid "Import KMail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
-msgstr "Iompórtáil Scagairí KMail"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
 #: filter/filterimporterexporter.cpp:236
@@ -1034,49 +983,41 @@ msgid ""
 msgstr ""
 
 #: filter/filterimporterexporter.cpp:316
-#, fuzzy, kde-format
-#| msgid "Export Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
-msgstr "Easpórtáil Scagairí"
+msgstr ""
 
 #: filter/filterselectiondialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr "Roghnaigh Uile"
+msgstr ""
 
 #: filter/filterselectiondialog.cpp:30
-#, fuzzy, kde-format
-#| msgid "Unselect All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
-msgstr "Díroghnaigh Uile"
+msgstr ""
 
 #: filter/filterselectiondialog.cpp:34
-#, fuzzy, kde-format
-#| msgid "Select Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
-msgstr "Roghnaigh Scagairí"
+msgstr ""
 
 #: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:53
 #: folder/foldertreewidget.cpp:84
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "@info/plain Displayed grayed-out inside the textbox, verb to search"
-#| msgid "Search"
+#, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
-msgstr "Cuardaigh"
+msgstr ""
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Available Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
-msgstr "Scagairí atá ar fáil"
+msgstr ""
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:40
 #, kde-format
@@ -1102,23 +1043,20 @@ msgid "Type"
 msgstr "Cineál"
 
 #: filter/kmfilterdialog.cpp:72
-#, fuzzy, kde-format
-#| msgid "Filter Rules"
+#, kde-format
 msgctxt "@title:window"
 msgid "Filter Rules"
-msgstr "Rialacha Scagtha"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:90
-#, fuzzy, kde-format
-#| msgid "Import..."
+#, kde-format
 msgid "Import…"
-msgstr "Iompórtáil..."
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "Export..."
+#, kde-format
 msgid "Export…"
-msgstr "Easpórtáil..."
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:94
 #, kde-format
@@ -1126,67 +1064,58 @@ msgid "Convert to…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
-#, fuzzy, kde-format
-#| msgid "KMail filters"
+#, kde-format
 msgctxt "@action"
 msgid "KMail filters"
-msgstr "Scagairí KMail"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
-msgstr "Scagairí Thunderbird"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:106
-#, fuzzy, kde-format
-#| msgid "Evolution filters"
+#, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
-msgstr "Scagairí Evolution"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:110
-#, fuzzy, kde-format
-#| msgid "Sylpheed filters"
+#, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
-msgstr "Scagairí Sylpheed"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:114
-#, fuzzy, kde-format
-#| msgid "Procmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
-msgstr "Scagairí Procmail"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:118
-#, fuzzy, kde-format
-#| msgid "Balsa filters"
+#, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
-msgstr "Scagairí Balsa"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:122
-#, fuzzy, kde-format
-#| msgid "Claws Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
-msgstr "Scagairí Claws"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "KMail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
-msgstr "Scagairí KMail"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:132
-#, fuzzy, kde-format
-#| msgid "KMail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
-msgstr "Scagairí KMail"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:140
 #, kde-format
@@ -1218,39 +1147,34 @@ msgid "Filter actions:"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:193
-#, fuzzy, kde-format
-#| msgid "Apply this filter to incoming messages:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
-msgstr "Cuir an scagaire seo i bhfeidhm ar theachtaireachtaí isteach:"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:203
-#, fuzzy, kde-format
-#| msgid "from all accounts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From all accounts"
-msgstr "ó gach cuntas"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:207
-#, fuzzy, kde-format
-#| msgid "from all but online IMAP accounts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
-msgstr "ó gach cuntas seachas ar líne IMAP"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:211
-#, fuzzy, kde-format
-#| msgid "from checked accounts only"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From selected accounts only"
-msgstr "ó na cuntais ticeáilte amháin"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:219
-#, fuzzy, kde-format
-#| msgid "Apply this filter to incoming messages:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
-msgstr "Cuir an scagaire seo i bhfeidhm ar theachtaireachtaí isteach:"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:221
 #, kde-format
@@ -1262,11 +1186,10 @@ msgid ""
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:227
-#, fuzzy, kde-format
-#| msgid "Apply this filter &before sending messages"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
-msgstr "Cuir an scagaire seo i &bhfeidhm sula seoltar teachtaireachtaí"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:229
 #, kde-format
@@ -1277,18 +1200,16 @@ msgid ""
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Apply this filter to incoming messages:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
-msgstr "Cuir an scagaire seo i bhfeidhm ar theachtaireachtaí isteach:"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:237
-#, fuzzy, kde-format
-#| msgid "Apply this filter to incoming messages:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
-msgstr "Cuir an scagaire seo i bhfeidhm ar theachtaireachtaí isteach:"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:239
 #, kde-format
@@ -1306,18 +1227,16 @@ msgid "If this filter &matches, stop processing here"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:248
-#, fuzzy, kde-format
-#| msgid "Additionally add this filter to the toolbar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
-msgstr "Cuir an scagaire seo leis an mbarra uirlisí chomh maith"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:266
-#, fuzzy, kde-format
-#| msgid "Additionally add this filter to the toolbar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
-msgstr "Cuir an scagaire seo leis an mbarra uirlisí chomh maith"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:273
 #, kde-format
@@ -1336,11 +1255,10 @@ msgid "Run selected filter(s) on: "
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:293
-#, fuzzy, kde-format
-#| msgid "Run Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
-msgstr "Rith Anois"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:420
 #, kde-format
@@ -1349,11 +1267,10 @@ msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:421
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
-msgstr "Níl aon fhillteán roghnaithe."
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:428
 #, kde-format
@@ -1364,11 +1281,10 @@ msgid ""
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
-#, fuzzy, kde-format
-#| msgid "Filters changed."
+#, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
-msgstr "Athraíodh scagairí."
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:437
 #, kde-format
@@ -1377,11 +1293,10 @@ msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:438
-#, fuzzy, kde-format
-#| msgid "No filters selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
-msgstr "Níl aon scagairí roghnaithe."
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:662
 #, kde-format
@@ -1501,25 +1416,22 @@ msgid "New"
 msgstr "Nua"
 
 #: filter/kmfilterlistbox.cpp:143
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
-msgstr "Cóipeáil"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:144
-#, fuzzy, kde-format
-#| msgid "Delete"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
-msgstr "Scrios"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:145
-#, fuzzy, kde-format
-#| msgid "Rename..."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
-msgstr "Athainmnigh..."
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:147
 #, kde-format
@@ -1573,18 +1485,16 @@ msgid "Do you want to remove selected filters?"
 msgstr ""
 
 #: filter/kmfilterlistbox.cpp:447
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
-msgstr "Bain Scagaire"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:447
-#, fuzzy, kde-format
-#| msgid "Remove Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
-msgstr "Bain Scagairí"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:663
 #, kde-format
@@ -1626,10 +1536,9 @@ msgid ""
 msgstr ""
 
 #: filter/mailfilter.cpp:570
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgid "Any action defined."
-msgstr "Theip ar chruthú an fhillteáin"
+msgstr ""
 
 #: filter/soundtestwidget.cpp:35 filter/soundtestwidget.cpp:117
 #, kde-format
@@ -1638,11 +1547,10 @@ msgid "Play"
 msgstr ""
 
 #: filter/soundtestwidget.cpp:64
-#, fuzzy, kde-format
-#| msgid "Select Sound File"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Sound File"
-msgstr "Roghnaigh Comhad Fuaime"
+msgstr ""
 
 #: filter/soundtestwidget.cpp:114
 #, kde-format
@@ -1729,27 +1637,22 @@ msgid "Use custom order"
 msgstr ""
 
 #: folder/accountconfigorderdialog.cpp:91
-#, fuzzy, kde-format
-#| msgctxt "Move selected filter up."
-#| msgid "Up"
+#, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
-msgstr "Suas"
+msgstr ""
 
 #: folder/accountconfigorderdialog.cpp:99
-#, fuzzy, kde-format
-#| msgctxt "Move selected filter down."
-#| msgid "Down"
+#, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
-msgstr "Síos"
+msgstr ""
 
 #: folder/folderrequester.cpp:46
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
-msgstr "Roghnaigh Fillteán"
+msgstr ""
 
 #: folder/folderrequester.cpp:117
 #, kde-format
@@ -1762,11 +1665,10 @@ msgid "Please select a folder"
 msgstr ""
 
 #: folder/folderselectiondialog.cpp:65
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
-msgstr "Fofhillteán &Nua..."
+msgstr ""
 
 #: folder/folderselectiondialog.cpp:67
 #, kde-format
@@ -1775,10 +1677,9 @@ msgid "Create a new subfolder under the currently selected folder"
 msgstr ""
 
 #: folder/folderselectiondialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgid "&New Subfolder…"
-msgstr "Fofhillteán &Nua..."
+msgstr ""
 
 #: folder/folderselectiondialog.cpp:178
 #, kde-format
@@ -1798,11 +1699,10 @@ msgid "Could not create folder: %1"
 msgstr "Níorbh fhéidir an fillteán a chruthú: %1"
 
 #: folder/folderselectiondialog.cpp:195
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
-msgstr "Theip ar chruthú an fhillteáin"
+msgstr ""
 
 #: folder/foldertreeview.cpp:129
 #, kde-format
@@ -1855,25 +1755,22 @@ msgid "<qt>Go to the next unread message in folder <b>%1</b>?</qt>"
 msgstr ""
 
 #: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
-#, fuzzy, kde-format
-#| msgid "Go to Next Unread Message"
+#, kde-format
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
-msgstr "An Chéad Teachtaireacht Neamhléite Eile"
+msgstr ""
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, fuzzy, kde-format
-#| msgid "Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Go To"
-msgstr "Téigh Go"
+msgstr ""
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, fuzzy, kde-format
-#| msgid "Do Not Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
-msgstr "Ná Téigh Go"
+msgstr ""
 
 #: folder/foldertreewidget.cpp:78
 #, kde-format
@@ -1919,11 +1816,10 @@ msgid "Failed to archive the folder '%1'."
 msgstr ""
 
 #: job/backupjob.cpp:156
-#, fuzzy, kde-format
-#| msgid "Archiving failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
-msgstr "Theip ar chartlannú"
+msgstr ""
 
 #: job/backupjob.cpp:166
 #, kde-format
@@ -1955,11 +1851,10 @@ msgid "The archive file has a size of %1."
 msgstr ""
 
 #: job/backupjob.cpp:194
-#, fuzzy, kde-format
-#| msgid "Archiving failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
-msgstr "Theip ar chartlannú"
+msgstr ""
 
 #: job/backupjob.cpp:244
 #, kde-format
@@ -2017,16 +1912,11 @@ msgid "Removing old messages from folder %1 failed."
 msgstr ""
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
-msgstr[0] "%1 seanteachtaireacht á baint as fillteán %2..."
-msgstr[1] "%1 sheanteachtaireacht á mbaint as fillteán %2..."
-msgstr[2] "%1 sheanteachtaireacht á mbaint as fillteán %2..."
-msgstr[3] "%1 seanteachtaireacht á mbaint as fillteán %2..."
-msgstr[4] "%1 seanteachtaireacht á mbaint as fillteán %2..."
+msgstr[0] ""
+msgstr[1] ""
 
 #: job/expirejob.cpp:164
 #, kde-format
@@ -2034,20 +1924,11 @@ msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr ""
 
 #: job/expirejob.cpp:180
-#, fuzzy, kde-format
-#| msgid "Moving 1 old message from folder %2 to folder %3..."
-#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] "%1 seanteachtaireacht á bogadh ó fhillteán %2 go dtí fillteán %3..."
+msgstr[0] ""
 msgstr[1] ""
-"%1 sheanteachtaireacht á mbogadh ó fhillteán %2 go dtí fillteán %3..."
-msgstr[2] ""
-"%1 sheanteachtaireacht á mbogadh ó fhillteán %2 go dtí fillteán %3..."
-msgstr[3] ""
-"%1 seanteachtaireacht á mbogadh ó fhillteán %2 go dtí fillteán %3..."
-msgstr[4] ""
-"%1 seanteachtaireacht á mbogadh ó fhillteán %2 go dtí fillteán %3..."
 
 #: job/expiremovejob.cpp:127
 #, kde-format
@@ -2138,22 +2019,16 @@ msgid "Message Tag"
 msgstr ""
 
 #: search/searchpatternedit.cpp:49
-#, fuzzy
-#| msgctxt "Subject of an email."
-#| msgid "Subject"
 msgid "Subject"
-msgstr "Ábhar"
+msgstr ""
 
 #: search/searchpatternedit.cpp:50
 msgid "From"
 msgstr "Ó"
 
 #: search/searchpatternedit.cpp:51
-#, fuzzy
-#| msgctxt "Email recipient"
-#| msgid "To"
 msgid "To"
-msgstr "Chuig"
+msgstr ""
 
 #: search/searchpatternedit.cpp:53
 msgid "Reply To"
@@ -2172,17 +2047,12 @@ msgid "Encryption"
 msgstr ""
 
 #: search/searchpatternedit.cpp:57
-#, fuzzy
-#| msgctxt "message status"
-#| msgid "Has Attachment"
 msgid "Attachment"
-msgstr "Le hIatán"
+msgstr ""
 
 #: search/searchpatternedit.cpp:58
-#, fuzzy
-#| msgid "Organization"
 msgid "Invitation"
-msgstr "Eagras"
+msgstr ""
 
 #: search/searchpatternedit.cpp:146
 #, kde-format
@@ -2220,52 +2090,44 @@ msgid "Filter criteria:"
 msgstr ""
 
 #: search/searchrule/searchrule.cpp:187
-#, fuzzy, kde-format
-#| msgid "equals"
+#, kde-format
 msgid "equal"
-msgstr "cothrom le"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:190
-#, fuzzy, kde-format
-#| msgid "is not equal to"
+#, kde-format
 msgid "not equal"
-msgstr "ní cothrom le"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:193
-#, fuzzy, kde-format
-#| msgid "is greater than"
+#, kde-format
 msgid "is greater"
-msgstr "atá níos mó ná"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:196
-#, fuzzy, kde-format
-#| msgid "is not equal to"
+#, kde-format
 msgid "is less or equal"
-msgstr "ní cothrom le"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:199
-#, fuzzy, kde-format
-#| msgid "is less than"
+#, kde-format
 msgid "is less"
-msgstr "atá níos lú ná"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:202
-#, fuzzy, kde-format
-#| msgid "is greater than"
+#, kde-format
 msgid "is greater or equal"
-msgstr "atá níos mó ná"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:205
-#, fuzzy, kde-format
-#| msgid "is in address book"
+#, kde-format
 msgid "is in addressbook"
-msgstr "atá i leabhar seoltaí"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:208
-#, fuzzy, kde-format
-#| msgid "is not in address book"
+#, kde-format
 msgid "is not in addressbook"
-msgstr "nach bhfuil i leabhar seoltaí"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:211 search/searchrule/searchrule.cpp:214
 #, kde-format
@@ -2280,46 +2142,39 @@ msgid "has an attachment"
 msgstr "a bhfuil iatán aige"
 
 #: search/searchrule/searchrule.cpp:220
-#, fuzzy, kde-format
-#| msgid "has an attachment"
+#, kde-format
 msgid "has not an attachment"
-msgstr "a bhfuil iatán aige"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:223
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has an invitation"
-msgstr "Eagras"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:226
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has not an invitation"
-msgstr "Eagras"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:229
-#, fuzzy, kde-format
-#| msgid "starts with"
+#, kde-format
 msgid "start with"
-msgstr "a thosaíonn le"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:232
-#, fuzzy, kde-format
-#| msgid "does not start with"
+#, kde-format
 msgid "not start with"
-msgstr "nach dtosaíonn le"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:235
-#, fuzzy, kde-format
-#| msgid "ends with"
+#, kde-format
 msgid "end with"
-msgstr "atá críochnaithe le"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:238
-#, fuzzy, kde-format
-#| msgid "does not end with"
+#, kde-format
 msgid "not end with"
-msgstr "nach gcríochnaíonn le"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:241
 #, kde-format
@@ -2336,10 +2191,9 @@ msgid "contains"
 msgstr "ina bhfuil"
 
 #: search/searchrule/searchrule.cpp:247
-#, fuzzy, kde-format
-#| msgid "contains"
+#, kde-format
 msgid "not contains"
-msgstr "ina bhfuil"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:250
 #, kde-format
@@ -2357,10 +2211,9 @@ msgid "size equals not supported"
 msgstr ""
 
 #: search/searchrule/searchrule.cpp:270
-#, fuzzy, kde-format
-#| msgid "is not equal to"
+#, kde-format
 msgid "size not equals not supported"
-msgstr "ní cothrom le"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:303 search/searchrule/searchrule.cpp:411
 #: search/searchrule/searchrule.cpp:494
@@ -2430,24 +2283,19 @@ msgstr ""
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 #: search/widgethandler/invitationwidgethandler.cpp:17
-#, fuzzy
-#| msgid "is not"
 msgid "has not"
-msgstr "nach bhfuil"
+msgstr ""
 
 #: search/widgethandler/attachmentwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgctxt "message status"
-#| msgid "Has Attachment"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
-msgstr "Le hIatán"
+msgstr ""
 
 #: search/widgethandler/attachmentwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "has an attachment"
+#, kde-format
 msgid "has attachment"
-msgstr "a bhfuil iatán aige"
+msgstr ""
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
@@ -2564,17 +2412,15 @@ msgid "is not in address book"
 msgstr "nach bhfuil i leabhar seoltaí"
 
 #: search/widgethandler/invitationwidgethandler.cpp:54
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
-msgstr "Eagras"
+msgstr ""
 
 #: search/widgethandler/invitationwidgethandler.cpp:91
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has invitation"
-msgstr "Eagras"
+msgstr ""
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147
@@ -2609,18 +2455,12 @@ msgid " kB"
 msgstr " kB"
 
 #: search/widgethandler/numericrulewidgethandler.cpp:157
-#, fuzzy, kde-format
-#| msgctxt "Expire messages after %1"
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Unit suffix where units are days."
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] " lá"
-msgstr[1] " lá"
-msgstr[2] " lá"
-msgstr[3] " lá"
-msgstr[4] " lá"
+msgstr[0] ""
+msgstr[1] ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:28
 msgctxt "message status"
@@ -2699,11 +2539,10 @@ msgid "Click on button for selecting attachment file"
 msgstr ""
 
 #: snippets/snippetattachmentwidget.cpp:34
-#, fuzzy, kde-format
-#| msgid "Remove Attachments"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
-msgstr "Bain Iatáin"
+msgstr ""
 
 #: snippets/snippetattachmentwidget.cpp:35
 #, kde-format
@@ -2711,33 +2550,29 @@ msgid "…"
 msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
-#, fuzzy, kde-format
-#| msgid "Remove Attachments"
+#, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
-msgstr "Bain Iatáin"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Rename..."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Filename:"
-msgstr "Athainmnigh..."
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, fuzzy, kde-format
-#| msgid "Enter Values for Variables"
+#, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
-msgstr "Iontráil Luachanna ar Athróga"
+msgstr ""
 
 #: snippets/snippetselectattachmentdialog.cpp:26
 #: snippets/snippetselectattachmentwidget.cpp:52
-#, fuzzy, kde-format
-#| msgid "Remove Attachments"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
-msgstr "Bain Iatáin"
+msgstr ""
 
 #: snippets/snippetselectattachmentwidget.cpp:45
 #, kde-format
@@ -2802,53 +2637,46 @@ msgid "Snippet %1"
 msgstr "Blúire %1"
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgid "Add Snippet..."
+#, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
-msgstr "Cuir Blúire Leis..."
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:562
-#, fuzzy, kde-format
-#| msgid "Edit Snippet..."
+#, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
-msgstr "Cuir Blúire in Eagar..."
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:564
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
-msgstr "Bain Blúire"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgid "Add Group..."
+#, kde-format
 msgctxt "@action"
 msgid "Add Group…"
-msgstr "Cuir Grúpa Leis..."
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:569
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
+#, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
-msgstr "Athainmnigh Grúpa..."
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:571
-#, fuzzy, kde-format
-#| msgid "Remove Group"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Group"
-msgstr "Bain Grúpa"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:574
-#, fuzzy, kde-format
-#| msgid "Insert Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
-msgstr "Ionsáigh Blúire"
+msgstr ""
 
 #: snippets/snippetsmodel.cpp:524 snippets/snippetsmodel.cpp:553
 #, kde-format
@@ -2856,31 +2684,27 @@ msgid "Do you want to update snippet?"
 msgstr ""
 
 #: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:554
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgctxt "@title:window"
 msgid "Update snippet"
-msgstr "Bain Blúire"
+msgstr ""
 
 #: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgctxt "@action:button"
 msgid "Update"
-msgstr "Bain Blúire"
+msgstr ""
 
 #: snippets/snippettreeview.cpp:65
-#, fuzzy, kde-format
-#| msgid "Insert Snippet"
+#, kde-format
 msgid "Text Snippets"
-msgstr "Ionsáigh Blúire"
+msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:37
-#, fuzzy, kde-format
-#| msgid "Enter Values for Variables"
+#, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
-msgstr "Iontráil Luachanna ar Athróga"
+msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:40
 #, kde-format
@@ -2889,11 +2713,10 @@ msgid "Enter the replacement values for '%1':"
 msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:45
-#, fuzzy, kde-format
-#| msgid "Make value &default"
+#, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
-msgstr "Socraigh mar &réamhshocrú"
+msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:48
 #, kde-format
@@ -2936,19 +2759,15 @@ msgstr "Grúpa:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: snippets/ui/snippetwidget.ui:69
-#, fuzzy, kde-format
-#| msgctxt "Subject of an email."
-#| msgid "Subject"
+#, kde-format
 msgid "Subject:"
-msgstr "Ábhar"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: snippets/ui/snippetwidget.ui:88
-#, fuzzy, kde-format
-#| msgctxt "Email recipient"
-#| msgid "To"
+#, kde-format
 msgid "To:"
-msgstr "Chuig"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: snippets/ui/snippetwidget.ui:101
@@ -2976,11 +2795,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: snippets/ui/snippetwidget.ui:181
-#, fuzzy, kde-format
-#| msgctxt "message status"
-#| msgid "Has Attachment"
+#, kde-format
 msgid "Attachments:"
-msgstr "Le hIatán"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: snippets/ui/snippetwidget.ui:193
@@ -2990,17 +2807,15 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
 #: snippets/ui/snippetwidget.ui:212
-#, fuzzy, kde-format
-#| msgid "Shortcut:"
+#, kde-format
 msgid "Sho&rtcut:"
-msgstr "Aicearra:"
+msgstr ""
 
 #: tag/addtagdialog.cpp:39
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgctxt "@title:window"
 msgid "Add Tag"
-msgstr "Cuir Clib Leis"
+msgstr ""
 
 #: tag/addtagdialog.cpp:76
 #, kde-format
@@ -3014,25 +2829,22 @@ msgid "Name:"
 msgstr "Ainm:"
 
 #: tag/tagwidget.cpp:70
-#, fuzzy, kde-format
-#| msgid "Change te&xt color:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change te&xt color:"
-msgstr "Athraigh dath an téa&cs:"
+msgstr ""
 
 #: tag/tagwidget.cpp:82
-#, fuzzy, kde-format
-#| msgid "Change &background color:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change &background color:"
-msgstr "Athraigh &dath an chúlra:"
+msgstr ""
 
 #: tag/tagwidget.cpp:94
-#, fuzzy, kde-format
-#| msgid "Change fo&nt:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change fo&nt:"
-msgstr "Athraigh a&n chló:"
+msgstr ""
 
 #: tag/tagwidget.cpp:100
 #, kde-format
@@ -3047,18 +2859,16 @@ msgid "&Italics"
 msgstr ""
 
 #: tag/tagwidget.cpp:122
-#, fuzzy, kde-format
-#| msgid "Message Status"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
-msgstr "Stádas na Teachtaireachta"
+msgstr ""
 
 #: tag/tagwidget.cpp:133
-#, fuzzy, kde-format
-#| msgid "Shortc&ut:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
-msgstr "&Aicearra:"
+msgstr ""
 
 #: tag/tagwidget.cpp:144
 #, kde-format
@@ -3067,10 +2877,9 @@ msgid "Enable &toolbar button"
 msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:91
-#, fuzzy, kde-format
-#| msgid "Icon Size"
+#, kde-format
 msgid "Icon size"
-msgstr "Méid na nDeilbhíní"
+msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:110
 #, kde-format
@@ -3084,11 +2893,10 @@ msgid "List Mode"
 msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:124
-#, fuzzy, kde-format
-#| msgid "Icon Size"
+#, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
-msgstr "Méid na nDeilbhíní"
+msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:235
 #, kde-format
@@ -3111,11 +2919,10 @@ msgid "Resend-Bcc:"
 msgstr ""
 
 #: widgets/redirectdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Redirect Message"
+#, kde-format
 msgctxt "@title:window"
 msgid "Redirect Message"
-msgstr "Athsheol an Teachtaireacht"
+msgstr ""
 
 #: widgets/redirectdialog.cpp:123
 #, kde-format
@@ -3134,18 +2941,16 @@ msgid "Transport:"
 msgstr "Iompar:"
 
 #: widgets/redirectdialog.cpp:158
-#, fuzzy, kde-format
-#| msgid "&Send Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
-msgstr "&Seol Anois"
+msgstr ""
 
 #: widgets/redirectdialog.cpp:159
-#, fuzzy, kde-format
-#| msgid "Send &Later"
+#, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
-msgstr "Seo&l Níos Déanaí"
+msgstr ""
 
 #: widgets/redirectdialog.cpp:207
 #, kde-format
@@ -3170,183 +2975,3 @@ msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr ""
-
-#, fuzzy
-#~| msgid "Remove Attachments"
-#~ msgid "Select Attachments"
-#~ msgstr "Bain Iatáin"
-
-#~ msgid "Add Tag..."
-#~ msgstr "Cuir Clib Leis..."
-
-#, fuzzy
-#~| msgid "Rename..."
-#~ msgid "Save..."
-#~ msgstr "Athainmnigh..."
-
-#, fuzzy
-#~| msgid "Rename..."
-#~ msgid "..."
-#~ msgstr "Athainmnigh..."
-
-#~ msgid "&Ignore"
-#~ msgstr "Déan neamha&ird de"
-
-#~ msgid "&Send"
-#~ msgstr "&Seol"
-
-#~ msgctxt "Receiver of an email."
-#~ msgid "To"
-#~ msgstr "Chuig"
-
-#~ msgid "Advanced Options"
-#~ msgstr "Ardroghanna"
-
-#~ msgctxt "@label:textbox Name of the folder."
-#~ msgid "&Name:"
-#~ msgstr "Ai&nm:"
-
-#, fuzzy
-#~| msgid "Message Status"
-#~ msgid "Message List"
-#~ msgstr "Stádas na Teachtaireachta"
-
-#, fuzzy
-#~| msgid "Organization"
-#~ msgid "Aggregation"
-#~ msgstr "Eagras"
-
-#~ msgctxt "type of folder content"
-#~ msgid "Mail"
-#~ msgstr "Ríomhphost"
-
-#~ msgctxt "type of folder content"
-#~ msgid "Calendar"
-#~ msgstr "Féilire"
-
-#~ msgctxt "type of folder content"
-#~ msgid "Contacts"
-#~ msgstr "Teagmhálacha"
-
-#~ msgctxt "type of folder content"
-#~ msgid "Notes"
-#~ msgstr "Nótaí"
-
-#~ msgctxt "type of folder content"
-#~ msgid "Tasks"
-#~ msgstr "Tascanna"
-
-#~ msgctxt "type of folder content"
-#~ msgid "Journal"
-#~ msgstr "Dialann"
-
-#~ msgctxt "type of folder content"
-#~ msgid "Unknown"
-#~ msgstr "Anaithnid"
-
-#~ msgid "Sh&ortcut:"
-#~ msgstr "&Aicearra:"
-
-#~ msgid "Edit..."
-#~ msgstr "Eagar..."
-
-#~ msgid "Import Thunderbird Filters"
-#~ msgstr "Iompórtáil Scagairí Thunderbird"
-
-#, fuzzy
-#~| msgid "Import Sylpheed Filters"
-#~ msgid "Import Icedove Filters"
-#~ msgstr "Iompórtáil Scagairí Sylpheed"
-
-#~ msgid "Add Filter"
-#~ msgstr "Cuir Scagaire Leis"
-
-#~ msgid "Edit Filter"
-#~ msgstr "Cuir Scagaire in Eagar"
-
-#~ msgid "Add"
-#~ msgstr "Cuir Leis"
-
-#~ msgid "Edit"
-#~ msgstr "Eagar"
-
-#~ msgid "Remove"
-#~ msgstr "Bain"
-
-#~ msgid "Move Up"
-#~ msgstr "Bog Suas"
-
-#~ msgid "Move Down"
-#~ msgstr "Bog Síos"
-
-#~ msgid "Attach &inline"
-#~ msgstr "Iatán &inlíne"
-
-#~ msgctxt "Unit suffix where units are days."
-#~ msgid " days"
-#~ msgstr " lá"
-
-#~ msgid ""
-#~ "From: %1\n"
-#~ "To: %2\n"
-#~ "Subject: %3"
-#~ msgstr ""
-#~ "Ó: %1\n"
-#~ "Chuig: %2\n"
-#~ "Ábhar: %3"
-
-#~ msgid "Mail: %1"
-#~ msgstr "Ríomhphost: %1"
-
-#, fuzzy
-#~| msgctxt ""
-#~| "@info/plain Displayed grayed-out inside the textbox, verb to search"
-#~| msgid "Search"
-#~ msgid "Search..."
-#~ msgstr "Cuardaigh"
-
-#, fuzzy
-#~| msgid "Select Folder"
-#~ msgid "Select Multiple Folders"
-#~ msgstr "Roghnaigh Fillteán"
-
-#~ msgid "is not in category"
-#~ msgstr "nach bhfuil i gcatagóir"
-
-#~ msgid "Permissions"
-#~ msgstr "Ceadanna"
-
-#~ msgid "Add Entry..."
-#~ msgstr "Cuir Iontráil Leis..."
-
-#~ msgid "Edit Entry..."
-#~ msgstr "Cuir Iontráil in Eagar..."
-
-#~ msgid "Remove Entry"
-#~ msgstr "Bain Iontráil"
-
-#~ msgctxt "Permissions"
-#~ msgid "None"
-#~ msgstr "Gan Chead"
-
-#~ msgctxt "Permissions"
-#~ msgid "Read"
-#~ msgstr "Léamh"
-
-#~ msgctxt "Permissions"
-#~ msgid "Append"
-#~ msgstr "Iarcheangal"
-
-#~ msgctxt "Permissions"
-#~ msgid "Write"
-#~ msgstr "Scríobh"
-
-#~ msgctxt "Permissions"
-#~ msgid "All"
-#~ msgstr "Uile"
-
-#~ msgid "Custom Permissions (%1)"
-#~ msgstr "Ceadanna Saincheaptha (%1)"
-
-#~ msgid " bytes"
-#~ msgstr " beart"
