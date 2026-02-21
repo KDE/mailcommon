@@ -76,9 +76,8 @@ void FilterAction::clearParamWidget(QWidget *) const
 {
 }
 
-bool FilterAction::argsFromStringInteractive(const QString &argsStr, const QString &filterName)
+bool FilterAction::argsFromStringInteractive(const QString &argsStr, [[maybe_unused]] const QString &filterName)
 {
-    Q_UNUSED(filterName)
     argsFromString(argsStr);
     return false;
 }

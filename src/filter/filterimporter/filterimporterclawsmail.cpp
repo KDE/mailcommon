@@ -89,9 +89,8 @@ MailFilter *FilterImporterClawsMails::parseLine(const QString &line)
     return filter;
 }
 
-QString FilterImporterClawsMails::extractActions(const QString &line, MailFilter *filter)
+QString FilterImporterClawsMails::extractActions(const QString &line, [[maybe_unused]] MailFilter *filter)
 {
-    Q_UNUSED(filter)
     return line;
 }
 

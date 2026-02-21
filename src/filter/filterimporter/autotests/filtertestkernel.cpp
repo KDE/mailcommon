@@ -80,10 +80,8 @@ bool FilterTestKernel::showPopupAfterDnD()
     return false;
 }
 
-void FilterTestKernel::expunge(Akonadi::Collection::Id col, bool sync)
+void FilterTestKernel::expunge([[maybe_unused]] Akonadi::Collection::Id col, [[maybe_unused]] bool sync)
 {
-    Q_UNUSED(col)
-    Q_UNUSED(sync)
 }
 
 qreal FilterTestKernel::closeToQuotaThreshold()
@@ -109,9 +107,8 @@ Akonadi::Collection::Id FilterTestKernel::lastSelectedFolder()
     return Akonadi::Collection::Id();
 }
 
-void FilterTestKernel::setLastSelectedFolder(Akonadi::Collection::Id col)
+void FilterTestKernel::setLastSelectedFolder([[maybe_unused]] Akonadi::Collection::Id col)
 {
-    Q_UNUSED(col)
 }
 
 #include "moc_filtertestkernel.cpp"

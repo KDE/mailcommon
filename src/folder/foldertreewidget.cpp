@@ -352,9 +352,8 @@ void FolderTreeWidget::slotManualSortingChanged(bool active)
     d->folderTreeView->setManualSortingActive(active);
 }
 
-bool FolderTreeWidget::eventFilter(QObject *o, QEvent *e)
+bool FolderTreeWidget::eventFilter([[maybe_unused]] QObject *o, QEvent *e)
 {
-    Q_UNUSED(o)
     if (d->dontKeyFilter) {
         return false;
     }

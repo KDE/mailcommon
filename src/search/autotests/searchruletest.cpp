@@ -17,9 +17,8 @@ public:
     {
     }
 
-    [[nodiscard]] bool matches(const Akonadi::Item &item) const override
+    [[nodiscard]] bool matches([[maybe_unused]] const Akonadi::Item &item) const override
     {
-        Q_UNUSED(item)
         return false;
     }
 

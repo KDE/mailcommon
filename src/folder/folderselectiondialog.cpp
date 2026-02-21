@@ -128,9 +128,8 @@ void FolderSelectionDialog::slotFolderTreeWidgetContextMenuRequested(const QPoin
     }
 }
 
-void FolderSelectionDialog::slotDoubleClick(const QModelIndex &index)
+void FolderSelectionDialog::slotDoubleClick([[maybe_unused]] const QModelIndex &index)
 {
-    Q_UNUSED(index)
     const bool hasSelectedCollection = (!d->folderTreeWidget->selectionModel()->selectedIndexes().isEmpty());
     if (hasSelectedCollection) {
         accept();

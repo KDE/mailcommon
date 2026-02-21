@@ -54,9 +54,8 @@ QString FilterImporterProcmail::createUniqFilterName()
     return i18n("Procmail filter %1", ++mFilterCount);
 }
 
-MailCommon::MailFilter *FilterImporterProcmail::parseLine(QTextStream &stream, QString line, MailCommon::MailFilter *filter)
+MailCommon::MailFilter *FilterImporterProcmail::parseLine([[maybe_unused]] QTextStream &stream, QString line, MailCommon::MailFilter *filter)
 {
-    Q_UNUSED(stream)
     if (line.isEmpty()) {
         // Empty line
         return filter;

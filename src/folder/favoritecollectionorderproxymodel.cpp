@@ -19,9 +19,8 @@ FavoriteCollectionOrderProxyModel::FavoriteCollectionOrderProxyModel(QObject *pa
 
 FavoriteCollectionOrderProxyModel::~FavoriteCollectionOrderProxyModel() = default;
 
-Akonadi::Collection FavoriteCollectionOrderProxyModel::parentCollection(const QModelIndex &index) const
+Akonadi::Collection FavoriteCollectionOrderProxyModel::parentCollection([[maybe_unused]] const QModelIndex &index) const
 {
-    Q_UNUSED(index)
     return {};
 }
 
