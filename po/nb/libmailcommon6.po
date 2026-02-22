@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-11 00:44+0000\n"
+"POT-Creation-Date: 2026-02-22 00:47+0000\n"
 "PO-Revision-Date: 2014-09-13 18:15+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -439,7 +439,7 @@ msgstr " (standard)"
 msgid "Thunderbird File (*.dat)"
 msgstr "Thunderbird-filtre"
 
-#: filter/filteractions/filteraction.cpp:133
+#: filter/filteractions/filteraction.cpp:132
 #, kde-format
 msgid "### \"action '%1' not supported\""
 msgstr "### «handling %1 er ikke støttet»"
@@ -1558,39 +1558,39 @@ msgstr ""
 "navnsetting, så trykk denne knappen, velg <em>Tøm</em> og deretter <em>OK</"
 "em> i den dialogen som vises.</p> </qt>"
 
-#: filter/kmfilterlistbox.cpp:292
+#: filter/kmfilterlistbox.cpp:293
 #, kde-format
 msgid "unnamed"
 msgstr "uten navn"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "Vil du fjerne filteret «%1»?"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgid "Do you want to remove selected filters?"
 msgstr "Vil du fjerne de valgte filtrene?"
 
-#: filter/kmfilterlistbox.cpp:447
+#: filter/kmfilterlistbox.cpp:448
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Fjern filter"
 
-#: filter/kmfilterlistbox.cpp:447
+#: filter/kmfilterlistbox.cpp:448
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Fjern filtre"
 
-#: filter/kmfilterlistbox.cpp:663
+#: filter/kmfilterlistbox.cpp:664
 #, kde-format
 msgid "Rename Filter"
 msgstr "Endre navn på filter"
 
-#: filter/kmfilterlistbox.cpp:664
+#: filter/kmfilterlistbox.cpp:665
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
@@ -1774,24 +1774,24 @@ msgstr "Lag ny undermappe under den valgte mappa"
 msgid "&New Subfolder…"
 msgstr "&Ny undermappe …"
 
-#: folder/folderselectiondialog.cpp:178
+#: folder/folderselectiondialog.cpp:177
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Ny mappe"
 
-#: folder/folderselectiondialog.cpp:178
+#: folder/folderselectiondialog.cpp:177
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Navn"
 
-#: folder/folderselectiondialog.cpp:195
+#: folder/folderselectiondialog.cpp:194
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Klarte ikke å lage mappa: %1"
 
-#: folder/folderselectiondialog.cpp:195
+#: folder/folderselectiondialog.cpp:194
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
@@ -2383,13 +2383,13 @@ msgstr ""
 msgid "has not"
 msgstr "er ikke"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:54
+#: search/widgethandler/attachmentwidgethandler.cpp:51
 #, fuzzy, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
 msgstr "Har vedlegg"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:91
+#: search/widgethandler/attachmentwidgethandler.cpp:88
 #, fuzzy, kde-format
 msgid "has attachment"
 msgstr "har et vedlegg"
@@ -2432,13 +2432,13 @@ msgstr "er"
 msgid "is not"
 msgstr "er ikke"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:54
+#: search/widgethandler/encryptionwidgethandler.cpp:51
 #, fuzzy, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "Krypter"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:91
+#: search/widgethandler/encryptionwidgethandler.cpp:88
 #, kde-format
 msgid "is encrypted"
 msgstr ""
@@ -2497,24 +2497,24 @@ msgid "does not match reg. expr."
 msgstr "passer ikke regulært uttr."
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:36
-#: search/widgethandler/headersrulerwidgethandler.cpp:151
+#: search/widgethandler/headersrulerwidgethandler.cpp:149
 #, kde-format
 msgid "is in address book"
 msgstr "er i adresseboka"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:37
-#: search/widgethandler/headersrulerwidgethandler.cpp:153
+#: search/widgethandler/headersrulerwidgethandler.cpp:151
 #, kde-format
 msgid "is not in address book"
 msgstr "er ikke i adresseboka"
 
-#: search/widgethandler/invitationwidgethandler.cpp:54
+#: search/widgethandler/invitationwidgethandler.cpp:51
 #, fuzzy, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
 msgstr "Organisasjon"
 
-#: search/widgethandler/invitationwidgethandler.cpp:91
+#: search/widgethandler/invitationwidgethandler.cpp:88
 #, fuzzy, kde-format
 msgid "has invitation"
 msgstr "Organisasjon"

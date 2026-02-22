@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-11 00:44+0000\n"
+"POT-Creation-Date: 2026-02-22 00:47+0000\n"
 "PO-Revision-Date: 2026-01-19 22:36+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -453,7 +453,7 @@ msgstr " (по подразбиране)"
 msgid "Thunderbird File (*.dat)"
 msgstr "Файл на Thunderbird (*.dat)"
 
-#: filter/filteractions/filteraction.cpp:133
+#: filter/filteractions/filteraction.cpp:132
 #, kde-format
 msgid "### \"action '%1' not supported\""
 msgstr "###  „действие „%1“ не се поддържа \""
@@ -1589,39 +1589,39 @@ msgstr ""
 "автоматично именуване, щракнете върху този бутон и изберете <em> Изчистване "
 "</em>, последвано от <em> OK </em> в появилия се диалогов прозорец. </p></qt>"
 
-#: filter/kmfilterlistbox.cpp:292
+#: filter/kmfilterlistbox.cpp:293
 #, kde-format
 msgid "unnamed"
 msgstr "неозаглавен"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "Искате ли да премахнете филтъра „%1“?"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgid "Do you want to remove selected filters?"
 msgstr "Искате ли да премахнете избраните филтри?"
 
-#: filter/kmfilterlistbox.cpp:447
+#: filter/kmfilterlistbox.cpp:448
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Премахване на филтъра"
 
-#: filter/kmfilterlistbox.cpp:447
+#: filter/kmfilterlistbox.cpp:448
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Премахване на филтри"
 
-#: filter/kmfilterlistbox.cpp:663
+#: filter/kmfilterlistbox.cpp:664
 #, kde-format
 msgid "Rename Filter"
 msgstr "Преименуване на филтър"
 
-#: filter/kmfilterlistbox.cpp:664
+#: filter/kmfilterlistbox.cpp:665
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
@@ -1807,24 +1807,24 @@ msgstr "Създаване на нова подпапка под текущо и
 msgid "&New Subfolder…"
 msgstr "&Нова подпапка…"
 
-#: folder/folderselectiondialog.cpp:178
+#: folder/folderselectiondialog.cpp:177
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Нова папка"
 
-#: folder/folderselectiondialog.cpp:178
+#: folder/folderselectiondialog.cpp:177
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Име"
 
-#: folder/folderselectiondialog.cpp:195
+#: folder/folderselectiondialog.cpp:194
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Грешка при създаване на папката: %1"
 
-#: folder/folderselectiondialog.cpp:195
+#: folder/folderselectiondialog.cpp:194
 #, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
@@ -2419,13 +2419,13 @@ msgstr "има"
 msgid "has not"
 msgstr "няма"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:54
+#: search/widgethandler/attachmentwidgethandler.cpp:51
 #, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
 msgstr "прикачени файлове"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:91
+#: search/widgethandler/attachmentwidgethandler.cpp:88
 #, kde-format
 msgid "has attachment"
 msgstr "има прикачен файл"
@@ -2468,13 +2468,13 @@ msgstr "е"
 msgid "is not"
 msgstr "не е"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:54
+#: search/widgethandler/encryptionwidgethandler.cpp:51
 #, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "криптиран"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:91
+#: search/widgethandler/encryptionwidgethandler.cpp:88
 #, kde-format
 msgid "is encrypted"
 msgstr "е криптиран"
@@ -2533,24 +2533,24 @@ msgid "does not match reg. expr."
 msgstr "не съответства на регулярен израз:"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:36
-#: search/widgethandler/headersrulerwidgethandler.cpp:151
+#: search/widgethandler/headersrulerwidgethandler.cpp:149
 #, kde-format
 msgid "is in address book"
 msgstr "е в адресната книга"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:37
-#: search/widgethandler/headersrulerwidgethandler.cpp:153
+#: search/widgethandler/headersrulerwidgethandler.cpp:151
 #, kde-format
 msgid "is not in address book"
 msgstr "не е в адресната книга"
 
-#: search/widgethandler/invitationwidgethandler.cpp:54
+#: search/widgethandler/invitationwidgethandler.cpp:51
 #, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
 msgstr "Покана"
 
-#: search/widgethandler/invitationwidgethandler.cpp:91
+#: search/widgethandler/invitationwidgethandler.cpp:88
 #, kde-format
 msgid "has invitation"
 msgstr "с покана"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-11 00:44+0000\n"
+"POT-Creation-Date: 2026-02-22 00:47+0000\n"
 "PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -437,7 +437,7 @@ msgstr " (मूलभूतम्‌)"
 msgid "Thunderbird File (*.dat)"
 msgstr "वज्रपक्षी सञ्चिका (*.dat)"
 
-#: filter/filteractions/filteraction.cpp:133
+#: filter/filteractions/filteraction.cpp:132
 #, kde-format
 msgid "### \"action '%1' not supported\""
 msgstr "### \"क्रिया '%1' समर्थिता नास्ति\"।"
@@ -1558,39 +1558,39 @@ msgstr ""
 "तर्हि एतत् बटन् नुत्वा प्रकटितसंवादे <em>Clear इति</em> चिनोतु तदनन्तरं <em>OK</em> इति "
 "चिनोतु ।</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:292
+#: filter/kmfilterlistbox.cpp:293
 #, kde-format
 msgid "unnamed"
 msgstr "अनामिका"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "किं भवान् \"%1\" इति फ़िल्टरं हर्तुं इच्छति?"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgid "Do you want to remove selected filters?"
 msgstr "चयनित-छिद्रकान् हर्तुं इच्छति वा ?"
 
-#: filter/kmfilterlistbox.cpp:447
+#: filter/kmfilterlistbox.cpp:448
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Filter निष्कासयन्तु"
 
-#: filter/kmfilterlistbox.cpp:447
+#: filter/kmfilterlistbox.cpp:448
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "फ़िल्टर्स् निष्कासयन्तु"
 
-#: filter/kmfilterlistbox.cpp:663
+#: filter/kmfilterlistbox.cpp:664
 #, kde-format
 msgid "Rename Filter"
 msgstr "Filter इत्यस्य नाम परिवर्तनं कुर्वन्तु"
 
-#: filter/kmfilterlistbox.cpp:664
+#: filter/kmfilterlistbox.cpp:665
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
@@ -1774,24 +1774,24 @@ msgstr "वर्तमान चयनितपुटस्य अधः नू
 msgid "&New Subfolder…"
 msgstr "&नवीन उपपुट..."
 
-#: folder/folderselectiondialog.cpp:178
+#: folder/folderselectiondialog.cpp:177
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "नवीनं पुटम्"
 
-#: folder/folderselectiondialog.cpp:178
+#: folder/folderselectiondialog.cpp:177
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "नामः"
 
-#: folder/folderselectiondialog.cpp:195
+#: folder/folderselectiondialog.cpp:194
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "पुटं निर्मातुं न शक्तम्: %1"
 
-#: folder/folderselectiondialog.cpp:195
+#: folder/folderselectiondialog.cpp:194
 #, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
@@ -2382,13 +2382,13 @@ msgstr "वा"
 msgid "has not"
 msgstr "न कृतवान्"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:54
+#: search/widgethandler/attachmentwidgethandler.cpp:51
 #, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
 msgstr "आसक्तिः"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:91
+#: search/widgethandler/attachmentwidgethandler.cpp:88
 #, kde-format
 msgid "has attachment"
 msgstr "आसक्तिः अस्ति"
@@ -2431,13 +2431,13 @@ msgstr "अस्ति"
 msgid "is not"
 msgstr "इति न"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:54
+#: search/widgethandler/encryptionwidgethandler.cpp:51
 #, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "एन्क्रिप्टेड्"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:91
+#: search/widgethandler/encryptionwidgethandler.cpp:88
 #, kde-format
 msgid "is encrypted"
 msgstr "एन्क्रिप्टेड् भवति"
@@ -2496,24 +2496,24 @@ msgid "does not match reg. expr."
 msgstr "न मेलति reg. expr."
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:36
-#: search/widgethandler/headersrulerwidgethandler.cpp:151
+#: search/widgethandler/headersrulerwidgethandler.cpp:149
 #, kde-format
 msgid "is in address book"
 msgstr "सम्बोधनपुस्तके अस्ति"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:37
-#: search/widgethandler/headersrulerwidgethandler.cpp:153
+#: search/widgethandler/headersrulerwidgethandler.cpp:151
 #, kde-format
 msgid "is not in address book"
 msgstr "सम्बोधनपुस्तके नास्ति"
 
-#: search/widgethandler/invitationwidgethandler.cpp:54
+#: search/widgethandler/invitationwidgethandler.cpp:51
 #, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
 msgstr "आमंत्रण"
 
-#: search/widgethandler/invitationwidgethandler.cpp:91
+#: search/widgethandler/invitationwidgethandler.cpp:88
 #, kde-format
 msgid "has invitation"
 msgstr "आमन्त्रणं भवति"

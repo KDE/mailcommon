@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-11 00:44+0000\n"
+"POT-Creation-Date: 2026-02-22 00:47+0000\n"
 "PO-Revision-Date: 2019-11-18 12:53+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -487,7 +487,7 @@ msgstr " (predvolené)"
 msgid "Thunderbird File (*.dat)"
 msgstr "Thunderbird filtre"
 
-#: filter/filteractions/filteraction.cpp:133
+#: filter/filteractions/filteraction.cpp:132
 #, kde-format
 msgid "### \"action '%1' not supported\""
 msgstr "### \"akcia '%1' nepodporovaná\""
@@ -1679,41 +1679,41 @@ msgstr ""
 "na toto tlačidlo a vyberte <em>Vyčistiť</em> a potom <em>OK</em> v "
 "zobrazenom dialógu.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:292
+#: filter/kmfilterlistbox.cpp:293
 #, kde-format
 msgid "unnamed"
 msgstr "bez mena"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "Chcete odstrániť filter %1?"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgid "Do you want to remove selected filters?"
 msgstr "Chcete odstrániť  vybrané filtre?"
 
-#: filter/kmfilterlistbox.cpp:447
+#: filter/kmfilterlistbox.cpp:448
 #, fuzzy, kde-format
 #| msgid "Remove Filter"
 msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Odstrániť filter"
 
-#: filter/kmfilterlistbox.cpp:447
+#: filter/kmfilterlistbox.cpp:448
 #, fuzzy, kde-format
 #| msgid "Remove Filters"
 msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Odstrániť filtre"
 
-#: filter/kmfilterlistbox.cpp:663
+#: filter/kmfilterlistbox.cpp:664
 #, kde-format
 msgid "Rename Filter"
 msgstr "Premenovať filter"
 
-#: filter/kmfilterlistbox.cpp:664
+#: filter/kmfilterlistbox.cpp:665
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
@@ -1905,24 +1905,24 @@ msgstr "Vytvoriť nový podpriečinok pod aktuálne vybraným priečinkom"
 msgid "&New Subfolder…"
 msgstr "Nový po&dpriečinok"
 
-#: folder/folderselectiondialog.cpp:178
+#: folder/folderselectiondialog.cpp:177
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Nový priečinok"
 
-#: folder/folderselectiondialog.cpp:178
+#: folder/folderselectiondialog.cpp:177
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Názov"
 
-#: folder/folderselectiondialog.cpp:195
+#: folder/folderselectiondialog.cpp:194
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Nie je možné vytvoriť priečinok: %1"
 
-#: folder/folderselectiondialog.cpp:195
+#: folder/folderselectiondialog.cpp:194
 #, fuzzy, kde-format
 #| msgid "Folder creation failed"
 msgctxt "@title:window"
@@ -2554,14 +2554,14 @@ msgstr ""
 msgid "has not"
 msgstr "nie je"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:54
+#: search/widgethandler/attachmentwidgethandler.cpp:51
 #, fuzzy, kde-format
 #| msgid "Attachment:"
 msgctxt "@label:textbox"
 msgid "attachments"
 msgstr "Príloha:"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:91
+#: search/widgethandler/attachmentwidgethandler.cpp:88
 #, fuzzy, kde-format
 #| msgid "has an attachment"
 msgid "has attachment"
@@ -2605,14 +2605,14 @@ msgstr "je"
 msgid "is not"
 msgstr "nie je"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:54
+#: search/widgethandler/encryptionwidgethandler.cpp:51
 #, fuzzy, kde-format
 #| msgid "encrypted"
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "šifrované"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:91
+#: search/widgethandler/encryptionwidgethandler.cpp:88
 #, kde-format
 msgid "is encrypted"
 msgstr "je šifrované"
@@ -2671,25 +2671,25 @@ msgid "does not match reg. expr."
 msgstr "nezodpovedá regulárnemu výrazu"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:36
-#: search/widgethandler/headersrulerwidgethandler.cpp:151
+#: search/widgethandler/headersrulerwidgethandler.cpp:149
 #, kde-format
 msgid "is in address book"
 msgstr "je v adresári"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:37
-#: search/widgethandler/headersrulerwidgethandler.cpp:153
+#: search/widgethandler/headersrulerwidgethandler.cpp:151
 #, kde-format
 msgid "is not in address book"
 msgstr "nie je v adresári"
 
-#: search/widgethandler/invitationwidgethandler.cpp:54
+#: search/widgethandler/invitationwidgethandler.cpp:51
 #, fuzzy, kde-format
 #| msgid "Organization"
 msgctxt "@label:textbox"
 msgid "invitation"
 msgstr "Organizácia"
 
-#: search/widgethandler/invitationwidgethandler.cpp:91
+#: search/widgethandler/invitationwidgethandler.cpp:88
 #, fuzzy, kde-format
 #| msgid "Organization"
 msgid "has invitation"

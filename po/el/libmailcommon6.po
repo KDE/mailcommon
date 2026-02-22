@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-11 00:44+0000\n"
+"POT-Creation-Date: 2026-02-22 00:47+0000\n"
 "PO-Revision-Date: 2014-04-11 22:49+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -467,7 +467,7 @@ msgstr " (προκαθορισμένο)"
 msgid "Thunderbird File (*.dat)"
 msgstr "Φίλτρα Thunderbird"
 
-#: filter/filteractions/filteraction.cpp:133
+#: filter/filteractions/filteraction.cpp:132
 #, kde-format
 msgid "### \"action '%1' not supported\""
 msgstr "### «η ενέργεια «%1» δεν υποστηρίζεται»"
@@ -1622,39 +1622,39 @@ msgstr ""
 "ονομασία, κάντε κλικ σε αυτό το κουμπί και επιλέξτε <em>Καθαρισμός</em> και "
 "<em>Εντάξει</em> στο διάλογο που θα εμφανιστεί.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:292
+#: filter/kmfilterlistbox.cpp:293
 #, kde-format
 msgid "unnamed"
 msgstr "ανώνυμο"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "Επιθυμείτε την αφαίρεση του φίλτρου «%1»;"
 
-#: filter/kmfilterlistbox.cpp:446
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgid "Do you want to remove selected filters?"
 msgstr "Επιθυμείτε την αφαίρεση των επιλεγμένων φίλτρων;"
 
-#: filter/kmfilterlistbox.cpp:447
+#: filter/kmfilterlistbox.cpp:448
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "Αφαίρεση φίλτρου"
 
-#: filter/kmfilterlistbox.cpp:447
+#: filter/kmfilterlistbox.cpp:448
 #, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Αφαίρεση των φίλτρων"
 
-#: filter/kmfilterlistbox.cpp:663
+#: filter/kmfilterlistbox.cpp:664
 #, kde-format
 msgid "Rename Filter"
 msgstr "Μετονομασία του φίλτρου"
 
-#: filter/kmfilterlistbox.cpp:664
+#: filter/kmfilterlistbox.cpp:665
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
@@ -1839,24 +1839,24 @@ msgstr "Δημιουργία ενός νέου υποφακέλου κάτω α�
 msgid "&New Subfolder…"
 msgstr "&Νέος υποφάκελος…"
 
-#: folder/folderselectiondialog.cpp:178
+#: folder/folderselectiondialog.cpp:177
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Νέος φάκελος"
 
-#: folder/folderselectiondialog.cpp:178
+#: folder/folderselectiondialog.cpp:177
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Όνομα"
 
-#: folder/folderselectiondialog.cpp:195
+#: folder/folderselectiondialog.cpp:194
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Αδύνατη η δημιουργία του φακέλου: %1"
 
-#: folder/folderselectiondialog.cpp:195
+#: folder/folderselectiondialog.cpp:194
 #, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
@@ -2465,7 +2465,7 @@ msgstr ""
 msgid "has not"
 msgstr "δεν είναι"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:54
+#: search/widgethandler/attachmentwidgethandler.cpp:51
 #, fuzzy, kde-format
 #| msgctxt "message status"
 #| msgid "Has Attachment"
@@ -2473,7 +2473,7 @@ msgctxt "@label:textbox"
 msgid "attachments"
 msgstr "Με συνημμένο"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:91
+#: search/widgethandler/attachmentwidgethandler.cpp:88
 #, fuzzy, kde-format
 #| msgid "has an attachment"
 msgid "has attachment"
@@ -2517,13 +2517,13 @@ msgstr "είναι"
 msgid "is not"
 msgstr "δεν είναι"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:54
+#: search/widgethandler/encryptionwidgethandler.cpp:51
 #, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr ""
 
-#: search/widgethandler/encryptionwidgethandler.cpp:91
+#: search/widgethandler/encryptionwidgethandler.cpp:88
 #, kde-format
 msgid "is encrypted"
 msgstr ""
@@ -2582,25 +2582,25 @@ msgid "does not match reg. expr."
 msgstr "δεν ταιριάζει με την κανονική έκφραση"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:36
-#: search/widgethandler/headersrulerwidgethandler.cpp:151
+#: search/widgethandler/headersrulerwidgethandler.cpp:149
 #, kde-format
 msgid "is in address book"
 msgstr "είναι στο βιβλίο διευθύνσεων"
 
 #: search/widgethandler/headersrulerwidgethandler.cpp:37
-#: search/widgethandler/headersrulerwidgethandler.cpp:153
+#: search/widgethandler/headersrulerwidgethandler.cpp:151
 #, kde-format
 msgid "is not in address book"
 msgstr "δεν είναι στο βιβλίο διευθύνσεων"
 
-#: search/widgethandler/invitationwidgethandler.cpp:54
+#: search/widgethandler/invitationwidgethandler.cpp:51
 #, fuzzy, kde-format
 #| msgid "Organization"
 msgctxt "@label:textbox"
 msgid "invitation"
 msgstr "Οργανισμός"
 
-#: search/widgethandler/invitationwidgethandler.cpp:91
+#: search/widgethandler/invitationwidgethandler.cpp:88
 #, fuzzy, kde-format
 #| msgid "Organization"
 msgid "has invitation"
