@@ -1,24 +1,25 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Lukáš Tinkl <ltinkl@redhat.com>, 2010, 2011, 2012.
-# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2023, 2024, 2025 Vít Pelčák <vit@pelcak.org>
+# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2023, 2024, 2025, 2026 Vít Pelčák <vit@pelcak.org>
 # Tomáš Chvátal <tomas.chvatal@gmail.com>, 2012, 2013.
 # SPDX-FileCopyrightText: 2021, 2022, 2024 Vit Pelcak <vit@pelcak.org>
+# SPDX-FileCopyrightText: 2026 Libor Filípek <filipek.libor@protonmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 14:41+0000\n"
-"PO-Revision-Date: 2025-12-01 14:24+0100\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"PO-Revision-Date: 2026-02-10 10:21+0100\n"
+"Last-Translator:  Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 25.08.3\n"
+"X-Generator: Lokalize 25.12.2\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -46,7 +47,7 @@ msgstr "Nikdy"
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
-msgstr ""
+msgstr "Uložit nastavení a okamžitě vypršet"
 
 #: collectionpage/collectionexpirywidget.cpp:68
 #, kde-format
@@ -80,6 +81,8 @@ msgid ""
 "Please select a folder to expire messages into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
+"Vyberte složku, do které se mají zprávy po uplynutí platnosti přesunout.\n"
+" Pokud tak neučiníte, budou zprávy po uplynutí platnosti trvale smazány."
 
 #: collectionpage/collectionexpirywidget.cpp:174
 #, kde-format
@@ -94,6 +97,9 @@ msgid ""
 "into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
+"Vyberte jinou složku než aktuální složku, do které se mají zprávy po "
+"uplynutí platnosti přesunout.\n"
+" Pokud tak neučiníte, budou zprávy po uplynutí platnosti trvale smazány."
 
 #: collectionpage/collectionexpirywidget.cpp:190
 #, kde-format
@@ -125,6 +131,10 @@ msgid ""
 "all users having access to this folder. If disabled (the default), every "
 "user with access to this folder has their own unread state."
 msgstr ""
+"Pokud je tato možnost povolena, stav nepřečtených zpráv v této složce bude "
+"stejný pro všechny uživatele, kteří mají přístup k této složce. Pokud je "
+"tato možnost zakázána (výchozí nastavení), každý uživatel s přístupem k této "
+"složce má svůj vlastní stav nepřečtených zpráv."
 
 #: collectionpage/collectiongeneralpage.cpp:212
 #, kde-format
@@ -191,6 +201,9 @@ msgid ""
 "Check this option if you do not want this folder to be shown in folder "
 "selection dialogs, such as the <interface>Jump to Folder</interface> dialog."
 msgstr ""
+"Tuto možnost zaškrtněte, pokud nechcete, aby se tato složka zobrazovala v "
+"dialogových oknech pro výběr složek, například v dialogovém okně "
+"<interface>Přejít do složky</interface>."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
 #, kde-format
@@ -234,13 +247,13 @@ msgstr "&Kopírovat globální šablony"
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
-msgstr ""
+msgstr "Použít výchozí agregaci seznamu zpráv:"
 
 #: collectionpage/collectionviewwidget.cpp:29
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
-msgstr ""
+msgstr "Použít výchozí motiv seznamu zpráv"
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
@@ -303,7 +316,7 @@ msgstr "Vyberte účet"
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
-msgstr ""
+msgstr "Chybí účet filtru. Vyberte účet, který chcete použít s filtrem \"%1\"."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:40
 #: folder/folderrequester.cpp:74
@@ -334,6 +347,7 @@ msgstr "Prosím vyberte složku:"
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
 msgstr ""
+"Chybí složka filtru. Vyberte složku, kterou chcete použít s filtrem \"%1\":"
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
 #, kde-format
@@ -347,6 +361,8 @@ msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
 "\"%1\""
 msgstr ""
+"Chybí identita filtru. Vyberte identitu, kterou chcete použít s filtrem "
+"\"%1\""
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
 #, kde-format
@@ -358,12 +374,13 @@ msgstr "Vyberte zvuk"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
-msgstr ""
+msgstr "Zvukový soubor byl \"%1\"."
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:42
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr ""
+"Chybí zvukový soubor. Vyberte zvuk, který chcete použít s filtrem \"%1\"."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
@@ -381,6 +398,8 @@ msgstr "Značka byla \"%1\"."
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
+"Chybí značka filtru. Vyberte prosím značku, kterou chcete použít s filtrem "
+"\"%1\"."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
 #, kde-format
@@ -399,6 +418,7 @@ msgid ""
 "Filter template is missing. Please select a template to use with filter "
 "\"%1\""
 msgstr ""
+"Chybí šablona filtru. Vyberte šablonu, kterou chcete použít s filtrem \"%1\""
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
 #, kde-format
@@ -412,6 +432,7 @@ msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
 "\"%1\""
 msgstr ""
+"Chybí přenos filtru. Vyberte přenos, který chcete použít s filtrem \"%1\""
 
 #: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
 #, kde-format
@@ -432,7 +453,7 @@ msgstr "Soubor Thunderbirdu (*.dat)"
 #: filter/filteractions/filteraction.cpp:133
 #, kde-format
 msgid "### \"action '%1' not supported\""
-msgstr ""
+msgstr "### \"akce ‚%1‘ není podporována\""
 
 #: filter/filteractions/filteractionaddheader.cpp:22
 #, kde-format
@@ -448,12 +469,12 @@ msgstr "S hodnotou:"
 #: filter/filteractions/filteractionaddheader.cpp:203
 #, kde-format
 msgid "The header name was missing."
-msgstr ""
+msgstr "Chyběl název záhlaví."
 
 #: filter/filteractions/filteractionaddheader.cpp:209
 #, kde-format
 msgid "The header value was missing."
-msgstr ""
+msgstr "Chyběla hodnota záhlaví."
 
 #: filter/filteractions/filteractionaddtag.cpp:26
 #, kde-format
@@ -517,11 +538,13 @@ msgid ""
 "If it is not accessible, the filter will fallback to the default address "
 "book."
 msgstr ""
+"Tím se definuje preferovaná kniha adres.\n"
+"Pokud filtr není přístupný, vrátí se k výchozí knize adres."
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:287
 #, kde-format
 msgid "Header type selected is unknown."
-msgstr ""
+msgstr "Vybraný typ záhlaví je neznámý."
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:293
 #, kde-format
@@ -548,7 +571,7 @@ msgstr "Dešifrovat"
 #: filter/filteractions/filteractiondecrypt.cpp:95
 #, kde-format
 msgid "<b>Warning:</b> Decrypted emails may be uploaded to a server!"
-msgstr ""
+msgstr "<b>Upozornění:</b> Dekódované e-maily mohou být nahrány na server!"
 
 #: filter/filteractions/filteractiondecrypt.cpp:97
 #, kde-format
@@ -556,6 +579,8 @@ msgid ""
 "<p>If the email folder that you are filtering into is connected to a remote "
 "account (like an IMAP-Server) the decrypted content will go there.</p>"
 msgstr ""
+"<p>Pokud je e-mailová složka, do které filtrujete, připojena ke vzdálenému "
+"účtu (například IMAP serveru), bude dešifrovaný obsah odeslán tam."
 
 #: filter/filteractions/filteractiondelete.cpp:18
 #, kde-format
@@ -565,7 +590,7 @@ msgstr "Zmazat zprávu"
 #: filter/filteractions/filteractiondelete.cpp:41
 #, kde-format
 msgid "Be careful, mails will be removed."
-msgstr ""
+msgstr "Pozor, e-maily budou odstraněny."
 
 #: filter/filteractions/filteractionencrypt.cpp:46
 #, kde-format
@@ -585,7 +610,7 @@ msgstr "Znovu tímto klíčem zašifrovat šifrované emaily"
 #: filter/filteractions/filteractionencrypt.cpp:259
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
-msgstr ""
+msgstr "<b>Upozornění:</b> K přečtení e-mailů je nutný tajný klíč."
 
 #: filter/filteractions/filteractionencrypt.cpp:261
 #, kde-format
@@ -595,6 +620,10 @@ msgid ""
 "an email server and use several clients, each of them must be configured to "
 "enable decryption.</p>"
 msgstr ""
+"<p>Jakmile je e-mail zašifrován, budete potřebovat kryptografické nastavení "
+"s vaším tajným klíčem, abyste měli opět přístup k obsahu.</p><p>Pokud "
+"uchováváte e-maily na e-mailovém serveru a používáte několik klientů, každý "
+"z nich musí být nakonfigurován tak, aby umožňoval dešifrování.</p>"
 
 #: filter/filteractions/filteractionexec.cpp:15
 #, kde-format
@@ -621,7 +650,7 @@ msgstr "Adresát, kterému bude zpráva přeposlána."
 #: filter/filteractions/filteractionforward.cpp:94
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
-msgstr ""
+msgstr "Filtr přepošle zprávu adresátovi zadanému zde."
 
 #: filter/filteractions/filteractionforward.cpp:101
 #: filter/filteractions/filteractionforward.cpp:200
@@ -638,7 +667,7 @@ msgstr "Šablona zprávy pro přeposlání"
 #: filter/filteractions/filteractionforward.cpp:113
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
-msgstr ""
+msgstr "Nastavte šablonu pro přesměrování, která bude použita s tímto filtrem."
 
 #: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
@@ -654,7 +683,7 @@ msgstr "Přeposlat %1 pomocí šablony %2"
 #: filter/filteractions/filteractionreplyto.cpp:51
 #, kde-format
 msgid "Email address was not defined."
-msgstr ""
+msgstr "E-mailová adresa nebyla zadána."
 
 #: filter/filteractions/filteractionmove.cpp:23
 #, kde-format
@@ -690,7 +719,7 @@ msgstr "Přesměrovat na"
 #: filter/filteractions/filteractionredirect.cpp:71
 #, kde-format
 msgid "Email address was missing."
-msgstr ""
+msgstr "Chyběla e-mailová adresa."
 
 #: filter/filteractions/filteractionremoveheader.cpp:22
 #, kde-format
@@ -700,7 +729,7 @@ msgstr "Odstranit hlavičku"
 #: filter/filteractions/filteractionremoveheader.cpp:96
 #, kde-format
 msgid "Header name undefined."
-msgstr ""
+msgstr "Název záhlaví není definován."
 
 #: filter/filteractions/filteractionreplyto.cpp:20
 #, kde-format
@@ -784,7 +813,7 @@ msgstr "Selhalo"
 #: filter/filteractions/filteractionsendfakedisposition.cpp:116
 #, kde-format
 msgid "Fake type undefined."
-msgstr ""
+msgstr "Falešný typ nedefinován."
 
 #: filter/filteractions/filteractionsendreceipt.cpp:21
 #, kde-format
@@ -804,7 +833,7 @@ msgstr "Označit jako"
 #: filter/filteractions/filteractionsetstatus.cpp:34
 #, kde-format
 msgid "Status not specified."
-msgstr ""
+msgstr "Stav není specifikován."
 
 #: filter/filteractions/filteractionsettransport.cpp:36
 #, kde-format
@@ -814,7 +843,7 @@ msgstr "Nastavit přenos na"
 #: filter/filteractions/filteractionsettransport.cpp:142
 #, kde-format
 msgid "Mail transport not defined."
-msgstr ""
+msgstr "Přenos pošty není definován."
 
 #: filter/filteractions/filteractionstatus.cpp:33
 #, kde-format
@@ -907,7 +936,7 @@ msgstr "Nápověda"
 #: filter/filteractions/filteractionwithurl.cpp:64
 #, kde-format
 msgid "You can get specific header when you use %{headername}."
-msgstr ""
+msgstr "Specifické záhlaví získáte použitím %{headername}."
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
 #, kde-format
@@ -935,7 +964,7 @@ msgstr "soubory sieve (*.siv);;Všechny soubory (*)"
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
-msgstr ""
+msgstr "Převést na skript Sieve"
 
 #: filter/filterimporter/filterimportergmail.cpp:48
 #, kde-format
@@ -1210,6 +1239,9 @@ msgid ""
 "also needs to be modified, please use \"Apply this filter <b>before</b> "
 "sending messages\".</p>"
 msgstr ""
+"<p>Filtr se spustí <b>po</b> odeslání zprávy a bude mít vliv pouze na místní "
+"kopii zprávy.</p><p>Pokud je třeba upravit také kopii příjemce, použijte "
+"možnost \"Použít tento filtr <b>před</b> odesláním zprávy\".</p>"
 
 #: filter/kmfilterdialog.cpp:227
 #, kde-format
@@ -1224,6 +1256,9 @@ msgid ""
 "will affect both the local copy and the sent copy of the message.</p><p>This "
 "is required if the recipient's copy also needs to be modified.</p>"
 msgstr ""
+"<p>Filtr se spustí <b>před</b> odesláním zprávy a ovlivní jak místní kopii, "
+"tak odeslanou kopii zprávy.</p><p>To je nutné, pokud je třeba upravit také "
+"kopii příjemce."
 
 #: filter/kmfilterdialog.cpp:234
 #, kde-format
@@ -1245,6 +1280,10 @@ msgid ""
 "IMAP accounts where new emails may have already been moved to different "
 "folders by server-side filters.</p>"
 msgstr ""
+"<p>Filtr bude aplikován na příchozí e-maily ze všech složek patřících ke "
+"všem výše vybraným účtům. To je užitečné při používání lokálních filtrů s "
+"účty IMAP, kde nové e-maily již mohly být přesunuty do různých složek filtry "
+"na straně serveru.</p>"
 
 #: filter/kmfilterdialog.cpp:245
 #, kde-format
@@ -1278,7 +1317,7 @@ msgstr "Ikona tohoto filtru:"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
-msgstr ""
+msgstr "Spustit vybrané filtry na: "
 
 #: filter/kmfilterdialog.cpp:293
 #, kde-format
@@ -1290,7 +1329,7 @@ msgstr "Spustit nyní"
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
-msgstr ""
+msgstr "Tento filtr nelze použít, protože nejsou vybrány žádné složky."
 
 #: filter/kmfilterdialog.cpp:421
 #, kde-format
@@ -1305,6 +1344,8 @@ msgid ""
 "Some filters were changed and not saved yet. You must save your filters "
 "before they can be applied."
 msgstr ""
+"Některé filtry byly změněny a ještě nebyly uloženy. Filtry je nutné uložit, "
+"aby mohly být použity."
 
 #: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
 #, kde-format
@@ -1316,7 +1357,7 @@ msgstr "Změněné filtry."
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
-msgstr ""
+msgstr "Nelze použít filtr, protože v současné době není vybrán žádný filtr."
 
 #: filter/kmfilterdialog.cpp:438
 #, kde-format
@@ -1337,7 +1378,7 @@ msgstr "Filtry jež byly importovány:"
 #: filter/kmfilterdialog.cpp:681
 #, kde-format
 msgid "Any filter found."
-msgstr ""
+msgstr "Nalezen filtr."
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format
@@ -1346,17 +1387,21 @@ msgid ""
 "Some filters were changed and not saved yet.<br>You must save your filters "
 "before they can be exported."
 msgstr ""
+"Některé filtry byly změněny a ještě nebyly uloženy. <br>Filtry je nutné "
+"uložit, než je bude možné exportovat."
 
 #: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
+"Nemůžeme převést všechny filtry KMailu na skripty sieve, ale můžeme to "
+"zkusit :)"
 
 #: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
-msgstr ""
+msgstr "Převést filtry KMail na skripty sieve"
 
 #: filter/kmfilterdialog.cpp:733
 #, kde-format
@@ -1439,6 +1484,10 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
+"<qt><p>Kliknutím na toto tlačítko přesunete aktuálně vybraný filtr na konec "
+"seznamu.</p><p>To je užitečné, protože pořadí filtrů v seznamu určuje "
+"pořadí, v jakém jsou filtry aplikovány na zprávy: Nejvyšší filtr je "
+"aplikován jako první.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:112
 #, kde-format
@@ -1448,6 +1497,10 @@ msgid ""
 "determines the order in which they are tried on messages: The topmost filter "
 "gets tried first.</p></qt>"
 msgstr ""
+"<qt><p>Kliknutím na toto tlačítko přesunete aktuálně vybraný filtr na "
+"začátek seznamu.</p><p>To je užitečné, protože pořadí filtrů v seznamu "
+"určuje pořadí, v jakém jsou filtry aplikovány na zprávy: Nejvyšší filtr je "
+"aplikován jako první.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:142
 #, kde-format
@@ -1598,7 +1651,7 @@ msgstr ""
 #: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
-msgstr ""
+msgstr "Činnost definována."
 
 #: filter/soundtestwidget.cpp:35 filter/soundtestwidget.cpp:117
 #, kde-format
@@ -1682,7 +1735,7 @@ msgstr "Vybrat soubor:"
 #: filter/ui/selectthunderbirdfilterfileswidget.ui:45
 #, kde-format
 msgid "Select file from config:"
-msgstr ""
+msgstr "Vyberte soubor z konfigurace:"
 
 #: folder/accountconfigorderdialog.cpp:57
 #, kde-format
@@ -1856,7 +1909,7 @@ msgstr "%1 (odpojen)"
 #: folder/foldertreewidgetproxymodel.cpp:246
 #, kde-format
 msgid "%1 (Reached %2% quota)"
-msgstr ""
+msgstr "%1 (Dosáhli jste kvóty %2%)"
 
 #: job/backupjob.cpp:95
 #, kde-format
@@ -1902,9 +1955,9 @@ msgstr ""
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Byla archivována 1 zpráva o velikosti %2."
+msgstr[1] "Byly archivovány %1 zprávy o celkové velikosti %2."
+msgstr[2] "Bylo archivováno %1 zpráv o celkové velikosti %2."
 
 #: job/backupjob.cpp:192
 #, kde-format
@@ -2049,7 +2102,7 @@ msgstr "(odpovídá všemu, co následuje)"
 #: search/searchpattern.cpp:251
 #, kde-format
 msgid "(match all messages)"
-msgstr ""
+msgstr "(odpovídá všem zprávám)"
 
 #: search/searchpatternedit.cpp:41
 msgid "Complete Message"
@@ -2147,7 +2200,7 @@ msgstr "O&dpovídá něčemu z toho, co následuje"
 #, kde-format
 msgctxt "@option:radio"
 msgid "Match all messages"
-msgstr ""
+msgstr "Odpovídá všem zprávám"
 
 #: search/searchpatternedit.cpp:598
 #, kde-format
@@ -2263,7 +2316,7 @@ msgstr "neobsahuje"
 #: search/searchrule/searchrule.cpp:250
 #, kde-format
 msgid "has regexp"
-msgstr ""
+msgstr "je regulární výraz"
 
 #: search/searchrule/searchrule.cpp:253
 #, kde-format
@@ -2284,47 +2337,47 @@ msgstr "velikost není rovno - nepodporováno"
 #: search/searchrule/searchrule.cpp:494
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
-msgstr ""
+msgstr "\"%1\" není podporováno s podmínkou \"%2\""
 
 #: search/searchrule/searchrule.cpp:309
 #, kde-format
 msgid "<status> not implemented/supported"
-msgstr ""
+msgstr "<status> není implementováno/podporováno"
 
 #: search/searchrule/searchrule.cpp:312
 #, kde-format
 msgid "<any header> not implemented/supported"
-msgstr ""
+msgstr "<any header> není implementováno/podporováno"
 
 #: search/searchrule/searchrule.cpp:315
 #, kde-format
 msgid "<contents> not implemented/supported"
-msgstr ""
+msgstr "<contents> není implementováno/podporováno"
 
 #: search/searchrule/searchrule.cpp:318
 #, kde-format
 msgid "<age in days> not implemented/supported"
-msgstr ""
+msgstr "<age in days> není implementováno/podporováno"
 
 #: search/searchrule/searchrule.cpp:321
 #, kde-format
 msgid "<date> not implemented/supported"
-msgstr ""
+msgstr "<date> není implementováno/podporováno"
 
 #: search/searchrule/searchrule.cpp:324
 #, kde-format
 msgid "<recipients> not implemented/supported"
-msgstr ""
+msgstr "<recipients> není implementováno/podporováno"
 
 #: search/searchrule/searchrule.cpp:326
 #, kde-format
 msgid "<Tag> is not supported"
-msgstr ""
+msgstr "<Tag> není podporován"
 
 #: search/searchrule/searchrule.cpp:329
 #, kde-format
 msgid "<message> not implemented/supported"
-msgstr ""
+msgstr "<message> není implementováno/podporováno"
 
 #: search/searchrule/searchruledate.cpp:20
 #, kde-format
@@ -2691,6 +2744,8 @@ msgid ""
 "Do you really want to remove group \"%1\" along with all its snippets?<nl/"
 "><warning>There is no way to undo the removal.</warning>"
 msgstr ""
+"Opravdu chcete odstranit skupinu \"%1\" spolu se všemi jejími ústřižky?<nl/"
+"><warning>Odstranění nelze vrátit zpět.</warning>"
 
 #: snippets/snippetsmanager.cpp:371
 #, kde-format
@@ -2816,6 +2871,10 @@ msgid ""
 "then type \\greeting in your email and then press the tab key, and it will "
 "be replaced with the contents of this snippet."
 msgstr ""
+"Zadejte sem klíčové slovo, abyste mohli tento ústřižek rychle vložit při "
+"psaní e-mailu. Pokud například jako klíčové slovo zvolíte \"pozdrav\", "
+"můžete do e-mailu napsat \\pozdrav a stisknout klávesu Tab, čímž se nahradí "
+"obsahem tohoto ústřižku."
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
 #: snippets/ui/snippetwidget.ui:32
@@ -2974,7 +3033,7 @@ msgstr "Režim ikon"
 #: widgets/favoritecollectionwidget.cpp:235
 #, kde-format
 msgid "Drop your favorite folders here…"
-msgstr ""
+msgstr "Přeneste sem své oblíbené složky…"
 
 #: widgets/redirectdialog.cpp:67
 #, kde-format
