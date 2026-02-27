@@ -116,11 +116,7 @@ std::shared_ptr<KMime::Message> CryptoUtils::decryptMessage(const std::shared_pt
     auto result = decrypt->exec(inData, outData);
     if (result.error()) {
         // unknown key, invalid algo, or general error
-#if GPGME_VERSION_NUMBER >= 0x011800 // 1.24.0
         qCWarning(MAILCOMMON_LOG) << "Failed to decrypt:" << result.error().asStdString();
-#else
-        qCWarning(MAILCOMMON_LOG) << "Failed to decrypt:" << result.error().asString();
-#endif
         return {};
     }
 
@@ -129,11 +125,7 @@ std::shared_ptr<KMime::Message> CryptoUtils::decryptMessage(const std::shared_pt
         auto verify = proto->verifyOpaqueJob(true);
         auto resultVerify = verify->exec(inData, outData);
         if (resultVerify.error()) {
-#if GPGME_VERSION_NUMBER >= 0x011800 // 1.24.0
             qCWarning(MAILCOMMON_LOG) << "Failed to verify:" << resultVerify.error().asStdString();
-#else
-            qCWarning(MAILCOMMON_LOG) << "Failed to verify:" << resultVerify.error().asString();
-#endif
             return {};
         }
     }
