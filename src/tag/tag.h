@@ -37,7 +37,6 @@ public:
     };
     using SaveFlags = QFlags<SaveFlag>;
 
-    // Returns true if two tags are equal
     /*!
      * Compares this tag with another tag for equality.
      *
@@ -78,7 +77,6 @@ public:
      */
     [[nodiscard]] Akonadi::Tag saveToAkonadi(SaveFlags saveFlags = SaveFlags(TextColor | BackgroundColor | Font)) const;
 
-    // Compare, based on priority
     /*!
      * Compares two tags based on their priority.
      *
@@ -87,7 +85,6 @@ public:
      * \return True if tag1 has higher priority than tag2
      */
     static bool compare(const Ptr &tag1, const Ptr &tag2);
-    // Compare, based on name
     /*!
      * Compares two tags alphabetically by name.
      *
