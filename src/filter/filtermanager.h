@@ -31,6 +31,8 @@ class MAILCOMMON_EXPORT FilterManager : public QObject
     Q_OBJECT
 
 public:
+    /*!
+     */
     ~FilterManager() override;
     /*!
      * Describes the list of filters.

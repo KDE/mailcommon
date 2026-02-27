@@ -134,14 +134,32 @@ public Q_SLOTS:
     void accept() override;
 
 protected Q_SLOTS:
+    /*!
+     */
     void slotApplicabilityChanged();
+    /*!
+     */
     void slotApplicableAccountsChanged();
+    /*!
+     */
     void slotStopProcessingButtonToggled(bool aChecked);
+    /*!
+     */
     void slotShortcutChanged(const QKeySequence &newSeq);
+    /*!
+     */
     void slotConfigureToolbarButtonToggled(bool aChecked);
+    /*!
+     */
     void slotFilterActionIconChanged(const QString &icon);
+    /*!
+     */
     void slotReset();
+    /*!
+     */
     void slotUpdateFilter();
+    /*!
+     */
     void slotSaveSize();
 
     /*!
@@ -184,10 +202,16 @@ protected Q_SLOTS:
      */
     void slotApply();
 
+    /*!
+     */
     void slotRunFilters();
 
+    /*!
+     */
     void slotFetchItemsForFolderDone(KJob *job);
 
+    /*!
+     */
     void slotFolderChanged(const Akonadi::Collection &);
 
 private:

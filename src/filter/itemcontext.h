@@ -76,7 +76,11 @@ public:
      * Full payload is needed to change the headers or the body */
     [[nodiscard]] bool needsFullPayload() const;
 
+    /*!
+     */
     void setDeleteItem();
+    /*!
+     */
     [[nodiscard]] bool deleteItem() const;
 
 private:

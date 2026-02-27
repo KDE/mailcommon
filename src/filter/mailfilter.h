@@ -81,7 +81,11 @@ public:
     /*! Cleanup. */
     ~MailFilter();
 
+    /*!
+     */
     static int filterActionsMaximumSize();
+    /*!
+     */
     void generateRandomIdentifier();
 
     /*!
@@ -317,11 +321,19 @@ public:
     /*! Return if filter is enabled or not
      */
     [[nodiscard]] bool isEnabled() const;
+    /*!
+     */
     void setEnabled(bool);
 
+    /*!
+     */
     void generateSieveScript(QStringList &requiresModules, QString &code);
 
+    /*!
+     */
     void clearApplyOnAccount();
+    /*!
+     */
     void agentRemoved(const QString &identifier);
 
 private:

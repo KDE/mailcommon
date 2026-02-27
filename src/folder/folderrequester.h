@@ -75,12 +75,20 @@ public:
      */
     void setMustBeReadWrite(bool readwrite);
 
+    /*!
+     */
     void setShowOutbox(bool show);
 
+    /*!
+     */
     void setNotAllowToCreateNewFolder(bool notCreateNewFolder);
 
+    /*!
+     */
     void setSelectFolderTitleDialog(const QString &title);
 
+    /*!
+     */
     void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 protected Q_SLOTS:
     /*!

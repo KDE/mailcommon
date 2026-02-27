@@ -110,6 +110,10 @@ public:
      * If expiry should move to folder, return the ID of that folder
      */
     [[nodiscard]] Akonadi::Collection::Id expireToFolderId() const;
+    /*!
+     * \brief setExpireToFolderId
+     * \param id
+     */
     void setExpireToFolderId(Akonadi::Collection::Id id);
 
     /*!
@@ -125,7 +129,15 @@ public:
     [[nodiscard]] ExpireUnits readExpireUnits() const;
 
     [[nodiscard]] bool operator==(const ExpireCollectionAttribute &other) const;
+    /*!
+     * \brief expireMessagesWithValidDate
+     * \return
+     */
     [[nodiscard]] bool expireMessagesWithValidDate() const;
+    /*!
+     * \brief setExpireMessagesWithValidDate
+     * \param expireMessagesWithValidDate
+     */
     void setExpireMessagesWithValidDate(bool expireMessagesWithValidDate);
 
 private:
