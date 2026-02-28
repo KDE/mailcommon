@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-22 00:47+0000\n"
+"POT-Creation-Date: 2026-02-28 00:45+0000\n"
 "PO-Revision-Date: 2026-01-19 22:36+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -601,22 +601,22 @@ msgstr "Внимавайте, писмата ще бъдат премахнат�
 msgid "Encrypt"
 msgstr "Шифроване"
 
-#: filter/filteractions/filteractionencrypt.cpp:211
+#: filter/filteractions/filteractionencrypt.cpp:207
 #, kde-format
 msgid "No encryption key has been selected"
 msgstr "Не е избран ключ за криптиране"
 
-#: filter/filteractions/filteractionencrypt.cpp:247
+#: filter/filteractions/filteractionencrypt.cpp:243
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
 msgstr "Повторно шифроване на криптирани имейли с този ключ"
 
-#: filter/filteractions/filteractionencrypt.cpp:257
+#: filter/filteractions/filteractionencrypt.cpp:253
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
 msgstr "<b>Предупреждение:</b> Необходим е Seckey за прочитане на имейлите."
 
-#: filter/filteractions/filteractionencrypt.cpp:259
+#: filter/filteractions/filteractionencrypt.cpp:255
 #, kde-format
 msgid ""
 "<p>Once an email has been encrypted you will need a crypto setup with your "

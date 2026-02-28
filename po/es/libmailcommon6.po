@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-22 00:47+0000\n"
+"POT-Creation-Date: 2026-02-28 00:45+0000\n"
 "PO-Revision-Date: 2026-01-11 00:32+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -604,22 +604,22 @@ msgstr "Tenga cuidado, los correos se eliminarán."
 msgid "Encrypt"
 msgstr "Cifrar"
 
-#: filter/filteractions/filteractionencrypt.cpp:211
+#: filter/filteractions/filteractionencrypt.cpp:207
 #, kde-format
 msgid "No encryption key has been selected"
 msgstr "No se ha seleccionado ninguna clave de cifrado"
 
-#: filter/filteractions/filteractionencrypt.cpp:247
+#: filter/filteractions/filteractionencrypt.cpp:243
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
 msgstr "Volver a cifrar los correos cifrados con esta clave"
 
-#: filter/filteractions/filteractionencrypt.cpp:257
+#: filter/filteractions/filteractionencrypt.cpp:253
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
 msgstr "<b>Advertencia:</b>La clave secreta es necesaria para leer correos."
 
-#: filter/filteractions/filteractionencrypt.cpp:259
+#: filter/filteractions/filteractionencrypt.cpp:255
 #, kde-format
 msgid ""
 "<p>Once an email has been encrypted you will need a crypto setup with your "
