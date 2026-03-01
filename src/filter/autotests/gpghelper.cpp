@@ -5,7 +5,6 @@
  */
 
 #include "gpghelper.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <QDebug>
 #include <QFileInfo>
@@ -14,6 +13,7 @@ using namespace Qt::Literals::StringLiterals;
 
 namespace
 {
+using namespace Qt::Literals::StringLiterals;
 bool copyRecursively(const QString &src, const QString &dest)
 {
     QFileInfo srcInfo(src);

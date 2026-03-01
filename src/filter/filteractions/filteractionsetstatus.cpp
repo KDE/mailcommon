@@ -6,13 +6,13 @@
  */
 
 #include "filteractionsetstatus.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailcommon_debug.h"
 #include <Akonadi/MessageStatus>
 #include <KLocalizedString>
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 FilterAction *FilterActionSetStatus::newAction()
 {
     return new FilterActionSetStatus;

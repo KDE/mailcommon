@@ -8,7 +8,6 @@
 */
 
 #include "snippetsmanager.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailcommon_debug.h"
 #include "snippetdialog.h"
@@ -94,6 +93,7 @@ public:
     bool mDirty = false;
 };
 
+using namespace Qt::Literals::StringLiterals;
 QModelIndex SnippetsManager::SnippetsManagerPrivate::currentGroupIndex() const
 {
     if (mSelectionModel->selectedIndexes().isEmpty()) {

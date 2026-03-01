@@ -5,7 +5,6 @@
 */
 
 #include "filterimporterthunderbird.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
@@ -18,6 +17,7 @@ using namespace Qt::Literals::StringLiterals;
 
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 FilterImporterThunderbird::FilterImporterThunderbird(QFile *file, bool interactive)
     : FilterImporterAbstract(interactive)
 {

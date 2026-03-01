@@ -4,7 +4,6 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 #include "searchrule.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filter/filterlog.h"
 #include "mailcommon_debug.h"
@@ -54,6 +53,7 @@ static const int numFuncConfigNames = sizeof funcConfigNames / sizeof *funcConfi
 //
 //==================================================
 
+using namespace Qt::Literals::StringLiterals;
 SearchRule::SearchRule(const QByteArray &field, Function func, const QString &contents)
     : mField(field)
     , mFunction(func)

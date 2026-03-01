@@ -9,7 +9,6 @@
 
 // my header
 #include "mailfilter.h"
-using namespace Qt::Literals::StringLiterals;
 
 // other kmail headers
 #include "dialog/filteractionmissingaccountdialog.h"
@@ -36,6 +35,7 @@ using MailCommon::FilterLog;
 
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 MailFilter::MailFilter()
 {
     generateRandomIdentifier();

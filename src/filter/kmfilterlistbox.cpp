@@ -5,7 +5,6 @@
 */
 
 #include "kmfilterlistbox.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filteractions/filteractiondict.h"
 #include "filtermanager.h"
@@ -31,6 +30,7 @@ using namespace Qt::Literals::StringLiterals;
 //
 //=============================================================================
 using namespace MailCommon;
+using namespace Qt::Literals::StringLiterals;
 KMFilterListBox::KMFilterListBox(const QString &title, QWidget *parent)
     : QGroupBox(title, parent)
 {

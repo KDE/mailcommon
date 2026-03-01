@@ -6,7 +6,6 @@
 */
 
 #include "filteractionmissingfolderdialog.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "folder/folderrequester.h"
 #include "kernel/mailkernel.h"
@@ -29,6 +28,7 @@ namespace
 static const char myFilterActionMissingCollectionDialogConfigGroupName[] = "FilterActionMissingCollectionDialog";
 }
 
+using namespace Qt::Literals::StringLiterals;
 FilterActionMissingFolderDialog::FilterActionMissingFolderDialog(const Akonadi::Collection::List &list,
                                                                  const QString &filtername,
                                                                  const QString &argStr,

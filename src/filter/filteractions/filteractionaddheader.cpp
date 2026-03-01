@@ -6,7 +6,6 @@
  */
 
 #include "filteractionaddheader.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KComboBox>
 #include <KLineEdit>
@@ -18,6 +17,7 @@ using namespace Qt::Literals::StringLiterals;
 
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 FilterActionAddHeader::FilterActionAddHeader(QObject *parent)
     : FilterActionWithStringList(QStringLiteral("add header"), i18n("Add Header"), parent)
 {

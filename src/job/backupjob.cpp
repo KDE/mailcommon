@@ -6,7 +6,6 @@
 */
 
 #include "backupjob.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailcommon_debug.h"
 #include <Akonadi/CollectionDeleteJob>
@@ -30,6 +29,7 @@ using namespace Qt::Literals::StringLiterals;
 using namespace MailCommon;
 static const mode_t archivePerms = S_IFREG | 0644;
 
+using namespace Qt::Literals::StringLiterals;
 BackupJob::BackupJob(QWidget *parent)
     : QObject(parent)
     , mArchiveTime(QDateTime::currentDateTime())

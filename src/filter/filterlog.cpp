@@ -5,7 +5,6 @@
 */
 
 #include "filterlog.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailcommon_debug.h"
 
@@ -38,6 +37,7 @@ public:
     void checkLogSize();
 };
 
+using namespace Qt::Literals::StringLiterals;
 void FilterLog::FilterLogPrivate::checkLogSize()
 {
     if (mCurrentLogSize > mMaxLogSize && mMaxLogSize > -1) {

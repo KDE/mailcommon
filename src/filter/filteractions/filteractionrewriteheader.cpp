@@ -6,7 +6,6 @@
  */
 
 #include "filteractionrewriteheader.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KComboBox>
 #include <KLineEdit>
@@ -17,6 +16,7 @@ using namespace Qt::Literals::StringLiterals;
 
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 FilterAction *FilterActionRewriteHeader::newAction()
 {
     return new FilterActionRewriteHeader;

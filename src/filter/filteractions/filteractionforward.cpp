@@ -6,7 +6,6 @@
  */
 
 #include "filteractionforward.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailcommon_debug.h"
 
@@ -29,6 +28,7 @@ using namespace Qt::Literals::StringLiterals;
 
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 FilterAction *FilterActionForward::newAction()
 {
     return new FilterActionForward;

@@ -6,7 +6,6 @@
  */
 
 #include "filteractionaddtoaddressbook.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <Akonadi/AddContactJob>
 
@@ -24,6 +23,7 @@ using namespace Qt::Literals::StringLiterals;
 
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 FilterAction *FilterActionAddToAddressBook::newAction()
 {
     return new FilterActionAddToAddressBook;

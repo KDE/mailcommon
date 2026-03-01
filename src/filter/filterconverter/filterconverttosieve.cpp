@@ -5,7 +5,6 @@
 */
 
 #include "filterconverttosieve.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filter/mailfilter.h"
 #include "filterconverttosieveresultdialog.h"
@@ -14,6 +13,7 @@ using namespace Qt::Literals::StringLiterals;
 
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 FilterConvertToSieve::FilterConvertToSieve(const QList<MailFilter *> &filters)
     : mListFilters(filters)
 {

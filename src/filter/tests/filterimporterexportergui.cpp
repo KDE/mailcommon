@@ -5,7 +5,6 @@
 */
 
 #include "filterimporterexportergui.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filter/mailfilter.h"
 
@@ -16,6 +15,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QVBoxLayout>
 
 Q_DECLARE_METATYPE(MailCommon::FilterImporterExporter::FilterType)
+using namespace Qt::Literals::StringLiterals;
 FilterImporterExporterGui::FilterImporterExporterGui(QWidget *parent)
     : QWidget(parent)
 {

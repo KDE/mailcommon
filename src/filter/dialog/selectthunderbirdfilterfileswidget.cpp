@@ -5,7 +5,6 @@
 */
 
 #include "selectthunderbirdfilterfileswidget.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "ui_selectthunderbirdfilterfileswidget.h"
 #include <MailImporter/FilterThunderbird>
@@ -15,6 +14,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <KLocalizedString>
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 SelectThunderbirdFilterFilesWidget::SelectThunderbirdFilterFilesWidget(const QString &defaultSettingPath, QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::SelectThunderbirdFilterFilesWidget)

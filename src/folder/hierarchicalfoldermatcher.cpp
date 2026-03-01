@@ -6,7 +6,6 @@
 */
 
 #include "hierarchicalfoldermatcher_p.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <QAbstractItemModel>
 #include <QModelIndex>
@@ -15,6 +14,7 @@ using namespace Qt::Literals::StringLiterals;
 using namespace MailCommon;
 HierarchicalFolderMatcher::HierarchicalFolderMatcher() = default;
 
+using namespace Qt::Literals::StringLiterals;
 bool HierarchicalFolderMatcher::isNull() const
 {
     return filterRegExps.empty();

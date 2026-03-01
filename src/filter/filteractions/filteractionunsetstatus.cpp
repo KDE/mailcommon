@@ -6,12 +6,12 @@
 */
 
 #include "filteractionunsetstatus.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailcommon_debug.h"
 #include <KLocalizedString>
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 FilterAction *FilterActionUnsetStatus::newAction()
 {
     return new FilterActionUnsetStatus;

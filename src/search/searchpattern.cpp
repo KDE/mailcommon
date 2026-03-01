@@ -7,7 +7,6 @@
 */
 
 #include "searchpattern.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filter/filterlog.h"
 using MailCommon::FilterLog;
@@ -31,6 +30,7 @@ using namespace MailCommon;
 //
 //==================================================
 
+using namespace Qt::Literals::StringLiterals;
 SearchPattern::SearchPattern()
 
 {

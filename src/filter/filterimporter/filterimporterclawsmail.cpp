@@ -5,7 +5,6 @@
 */
 
 #include "filterimporterclawsmail.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
@@ -15,6 +14,7 @@ using namespace Qt::Literals::StringLiterals;
 
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 FilterImporterClawsMails::FilterImporterClawsMails(QFile *file)
 
 {

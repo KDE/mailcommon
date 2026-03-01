@@ -5,7 +5,6 @@
 */
 
 #include "snippetwidget.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "ui_snippetwidget.h"
 #include <MessageComposer/ConvertSnippetVariableMenu>
@@ -27,6 +26,7 @@ public:
     bool wasChanged = false;
 };
 
+using namespace Qt::Literals::StringLiterals;
 SnippetWidget::SnippetWidget(QWidget *parent)
     : QWidget(parent)
     , d(new SnippetWidgetPrivate)

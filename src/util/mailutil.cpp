@@ -5,7 +5,6 @@
 */
 
 #include "mailutil.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailutil_p.h"
 
@@ -47,6 +46,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <KIO/JobUiDelegate>
 #include <KJob>
 
+using namespace Qt::Literals::StringLiterals;
 OrgKdeAkonadiPOP3SettingsInterface *MailCommon::Util::createPop3SettingsInterface(const QString &ident)
 {
     const auto service = Akonadi::ServerManager::agentServiceName(Akonadi::ServerManager::Resource, ident);

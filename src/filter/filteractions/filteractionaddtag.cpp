@@ -6,7 +6,6 @@
  */
 
 #include "filteractionaddtag.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filter/dialog/filteractionmissingtagdialog.h"
 #include "filter/filtermanager.h"
@@ -17,6 +16,7 @@ using namespace Qt::Literals::StringLiterals;
 
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 FilterAction *FilterActionAddTag::newAction()
 {
     return new FilterActionAddTag;

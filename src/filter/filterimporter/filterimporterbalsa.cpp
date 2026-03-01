@@ -5,7 +5,6 @@
 */
 
 #include "filterimporterbalsa.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
@@ -18,16 +17,15 @@ using namespace Qt::Literals::StringLiterals;
 #include <QRegularExpression>
 
 using namespace MailCommon;
+using namespace Qt::Literals::StringLiterals;
 
 FilterImporterBalsa::FilterImporterBalsa(QFile *file)
-
 {
     KConfig config(file->fileName());
     readConfig(&config);
 }
 
 FilterImporterBalsa::FilterImporterBalsa()
-
 {
 }
 

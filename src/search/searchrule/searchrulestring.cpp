@@ -5,7 +5,6 @@
 */
 
 #include "searchrulestring.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filter/filterlog.h"
 using MailCommon::FilterLog;
@@ -25,6 +24,7 @@ using MailCommon::FilterLog;
 #include <algorithm>
 
 using namespace MailCommon;
+using namespace Qt::Literals::StringLiterals;
 SearchRuleString::SearchRuleString(const QByteArray &field, Function func, const QString &contents)
     : SearchRule(field, func, contents)
 {

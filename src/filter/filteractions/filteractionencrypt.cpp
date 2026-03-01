@@ -6,7 +6,6 @@
  */
 
 #include "filteractionencrypt.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailcommon_debug.h"
 #include "util/cryptoutils.h"
@@ -42,6 +41,7 @@ using namespace MailCommon;
 #define LISTING_FINISHED "listingFinished"
 #define IGNORE_KEY_CHANGE "ignoreKeyChange"
 
+using namespace Qt::Literals::StringLiterals;
 FilterActionEncrypt::FilterActionEncrypt(QObject *parent)
     : FilterActionWithCrypto(QStringLiteral("encrypt"), i18n("Encrypt"), parent)
     , mKeyCache(Kleo::KeyCache::instance())

@@ -6,7 +6,6 @@
  */
 
 #include "filteractionwithcommand.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailcommon_debug.h"
 #include <KProcess>
@@ -17,6 +16,7 @@ using namespace Qt::Literals::StringLiterals;
 
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 FilterActionWithCommand::FilterActionWithCommand(const QString &name, const QString &label, QObject *parent)
     : FilterActionWithUrl(name, label, parent)
 {

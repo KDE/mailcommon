@@ -6,7 +6,6 @@
 */
 
 #include "filteractionstatus.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 using namespace MailCommon;
@@ -24,6 +23,7 @@ const Akonadi::MessageStatus MailCommon::FilterActionStatus::statuses[] = {Akona
 
 const int MailCommon::FilterActionStatus::StatiCount = sizeof(MailCommon::FilterActionStatus::statuses) / sizeof(Akonadi::MessageStatus);
 
+using namespace Qt::Literals::StringLiterals;
 FilterActionStatus::FilterActionStatus(const QString &name, const QString &label, QObject *parent)
     : FilterActionWithStringList(name, label, parent)
 {

@@ -6,7 +6,6 @@
  */
 
 #include "filteractionsendfakedisposition.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <Akonadi/MDNStateAttribute>
 #include <KLocalizedString>
@@ -25,6 +24,7 @@ static const KMime::MDN::DispositionType mdns[] = {
 };
 static const int numMDNs = sizeof(mdns) / sizeof(*mdns);
 
+using namespace Qt::Literals::StringLiterals;
 FilterActionSendFakeDisposition::FilterActionSendFakeDisposition(QObject *parent)
     : FilterActionWithStringList(QStringLiteral("fake mdn"), i18n("Send Fake MDN"), parent)
 {

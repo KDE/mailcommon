@@ -5,7 +5,6 @@
 */
 
 #include "snippetattachmentwidget.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "snippetselectattachmentdialog.h"
 #include <KLocalizedString>
@@ -16,6 +15,7 @@ using namespace Qt::Literals::StringLiterals;
 
 using namespace MailCommon;
 
+using namespace Qt::Literals::StringLiterals;
 SnippetAttachmentWidget::SnippetAttachmentWidget(QWidget *parent)
     : QWidget(parent)
     , mLineEdit(new QLineEdit(this))
