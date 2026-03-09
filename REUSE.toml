@@ -4,7 +4,25 @@ SPDX-PackageSupplier = "Montel Laurent <montel@kde.org>"
 SPDX-PackageDownloadLocation = "https://invent.kde.org/pim/mailcommon"
 
 [[annotations]]
-path = ["src/filter/autotests/unittestenv/**", "src/filter/autotests/gpghome/**", "autotests/unittestenv/**", "src/filter/autotests/gpgdata/**", "src/filter/filterimporter/autotests/unittestenv/**", "src/filter/TODO", "src/filter/TODO", "src/mailcommon-index.qdoc", "src/mailcommon.qdoc", "src/mailcommon.qdocconf"]
+path = ["src/filter/autotests/unittestenv/**", "src/filter/autotests/gpghome/**", "autotests/unittestenv/**", "src/filter/autotests/gpgdata/**", "src/filter/filterimporter/autotests/unittestenv/**", "src/filter/TODO", "src/filter/TODO", "src/mailcommon-index.qdoc", "src/mailcommon.qdoc", "src/mailcommon.qdocconf", "metainfo.yaml", "readme-build-ftime.txt"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "none"
 SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = ["README-pre-commit.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023-2026 Laurent Montel <montel@kde.org>"
+SPDX-License-Identifier = "BSD-3-Clause"
+
+[[annotations]]
+path = ["CMakePresets.json"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021-2026 Laurent Montel <montel@kde.org>"
+SPDX-License-Identifier = "BSD-3-Clause"
+
+[[annotations]]
+path = ["README-qdoc.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023-2026 Laurent Montel <montel@kde.org>"
+SPDX-License-Identifier = "BSD-3-Clause"
