@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-28 00:45+0000\n"
-"PO-Revision-Date: 2026-02-27 21:18+0100\n"
+"PO-Revision-Date: 2026-03-13 11:00+0100\n"
 "Last-Translator:  Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 25.12.2\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -580,7 +580,7 @@ msgid ""
 "account (like an IMAP-Server) the decrypted content will go there.</p>"
 msgstr ""
 "<p>Pokud je e-mailová složka, do které filtrujete, připojena ke vzdálenému "
-"účtu (například IMAP serveru), bude dešifrovaný obsah odeslán tam."
+"účtu (například IMAP serveru), bude dešifrovaný obsah odeslán tam.</p>"
 
 #: filter/filteractions/filteractiondelete.cpp:18
 #, kde-format
@@ -1258,7 +1258,7 @@ msgid ""
 msgstr ""
 "<p>Filtr se spustí <b>před</b> odesláním zprávy a ovlivní jak místní kopii, "
 "tak odeslanou kopii zprávy.</p><p>To je nutné, pokud je třeba upravit také "
-"kopii příjemce."
+"kopii příjemce.</p>"
 
 #: filter/kmfilterdialog.cpp:234
 #, kde-format
