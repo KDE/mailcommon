@@ -172,7 +172,10 @@ void substituteCommandLineArgsForItem(const Akonadi::Item &item, QString &comman
 FilterAction::ReturnCode FilterActionWithCommand::genericProcess(ItemContext &context, bool withOutput) const
 {
     const auto aMsg = context.item().payload<std::shared_ptr<KMime::Message>>();
-    Q_ASSERT(aMsg);
+    if (!aMsg) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionWithCommand: message payload not found";
+        return ErrorNeedComplete;
+    }
 
     if (mParameter.isEmpty()) {
         return ErrorButGoOn;

@@ -7,6 +7,8 @@
 
 #include "filteractionaddheader.h"
 
+#include "mailcommon_debug.h"
+
 #include <KComboBox>
 #include <KLineEdit>
 #include <KLocalizedString>
@@ -95,7 +97,10 @@ void FilterActionAddHeader::setParamWidgetValue(QWidget *paramWidget) const
     const int index = mParameterList.indexOf(mParameter);
 
     const auto comboBox = paramWidget->findChild<KComboBox *>(QStringLiteral("combo"));
-    Q_ASSERT(comboBox);
+    if (!comboBox) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionAddHeader: combo box not found in param widget";
+        return;
+    }
     comboBox->clear();
     comboBox->addItems(mParameterList);
 
@@ -107,7 +112,10 @@ void FilterActionAddHeader::setParamWidgetValue(QWidget *paramWidget) const
     }
 
     auto lineEdit = paramWidget->findChild<QLineEdit *>(QStringLiteral("ledit"));
-    Q_ASSERT(lineEdit);
+    if (!lineEdit) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionAddHeader: line edit not found in param widget";
+        return;
+    }
 
     lineEdit->setText(mValue);
 }
@@ -115,22 +123,34 @@ void FilterActionAddHeader::setParamWidgetValue(QWidget *paramWidget) const
 void FilterActionAddHeader::applyParamWidgetValue(QWidget *paramWidget)
 {
     const auto comboBox = paramWidget->findChild<KComboBox *>(QStringLiteral("combo"));
-    Q_ASSERT(comboBox);
+    if (!comboBox) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionAddHeader: combo box not found in param widget";
+        return;
+    }
     mParameter = comboBox->currentText();
 
     const QLineEdit *lineEdit = paramWidget->findChild<QLineEdit *>(QStringLiteral("ledit"));
-    Q_ASSERT(lineEdit);
+    if (!lineEdit) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionAddHeader: line edit not found in param widget";
+        return;
+    }
     mValue = lineEdit->text();
 }
 
 void FilterActionAddHeader::clearParamWidget(QWidget *paramWidget) const
 {
     const auto comboBox = paramWidget->findChild<KComboBox *>(QStringLiteral("combo"));
-    Q_ASSERT(comboBox);
+    if (!comboBox) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionAddHeader: combo box not found in param widget";
+        return;
+    }
     comboBox->setCurrentIndex(0);
 
     auto lineEdit = paramWidget->findChild<QLineEdit *>(QStringLiteral("ledit"));
-    Q_ASSERT(lineEdit);
+    if (!lineEdit) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionAddHeader: line edit not found in param widget";
+        return;
+    }
     lineEdit->clear();
 }
 

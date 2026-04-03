@@ -7,6 +7,8 @@
 
 #include "filteractionrewriteheader.h"
 
+#include "mailcommon_debug.h"
+
 #include <KComboBox>
 #include <KLineEdit>
 #include <KLocalizedString>
@@ -140,7 +142,10 @@ void FilterActionRewriteHeader::setParamWidgetValue(QWidget *paramWidget) const
 {
     const int index = mParameterList.indexOf(mParameter);
     const auto comboBox = paramWidget->findChild<KComboBox *>(QStringLiteral("combo"));
-    Q_ASSERT(comboBox);
+    if (!comboBox) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionRewriteHeader: combo box not found in param widget";
+        return;
+    }
 
     comboBox->clear();
     comboBox->addItems(mParameterList);
@@ -152,26 +157,41 @@ void FilterActionRewriteHeader::setParamWidgetValue(QWidget *paramWidget) const
     }
 
     auto regExpLineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("search"));
-    Q_ASSERT(regExpLineEdit);
+    if (!regExpLineEdit) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionRewriteHeader: search line edit not found in param widget";
+        return;
+    }
     regExpLineEdit->setText(mRegex.pattern());
 
     auto lineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("replace"));
-    Q_ASSERT(lineEdit);
+    if (!lineEdit) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionRewriteHeader: replace line edit not found in param widget";
+        return;
+    }
     lineEdit->setText(mReplacementString);
 }
 
 void FilterActionRewriteHeader::applyParamWidgetValue(QWidget *paramWidget)
 {
     const auto comboBox = paramWidget->findChild<KComboBox *>(QStringLiteral("combo"));
-    Q_ASSERT(comboBox);
+    if (!comboBox) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionRewriteHeader: combo box not found in param widget";
+        return;
+    }
     mParameter = comboBox->currentText();
 
     const KLineEdit *regExpLineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("search"));
-    Q_ASSERT(regExpLineEdit);
+    if (!regExpLineEdit) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionRewriteHeader: search line edit not found in param widget";
+        return;
+    }
     mRegex.setPattern(regExpLineEdit->text());
 
     const KLineEdit *lineEdit = paramWidget->findChild<KLineEdit *>(QStringLiteral("replace"));
-    Q_ASSERT(lineEdit);
+    if (!lineEdit) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionRewriteHeader: replace line edit not found in param widget";
+        return;
+    }
     mReplacementString = lineEdit->text();
 }
 

@@ -10,6 +10,7 @@
 
 #include "filter/dialog/filteractionmissingidentitydialog.h"
 #include "kernel/mailkernel.h"
+#include "mailcommon_debug.h"
 
 #include <KIdentityManagementCore/Identity>
 #include <KIdentityManagementCore/IdentityManager>
@@ -100,7 +101,10 @@ QWidget *FilterActionSetIdentity::createParamWidget(QWidget *parent) const
 void FilterActionSetIdentity::applyParamWidgetValue(QWidget *paramWidget)
 {
     const KIdentityManagementWidgets::IdentityCombo *comboBox = qobject_cast<KIdentityManagementWidgets::IdentityCombo *>(paramWidget);
-    Q_ASSERT(comboBox);
+    if (!comboBox) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionSetIdentity: identity combo box not found in param widget";
+        return;
+    }
 
     mParameter = comboBox->currentIdentity();
 }
@@ -108,7 +112,10 @@ void FilterActionSetIdentity::applyParamWidgetValue(QWidget *paramWidget)
 void FilterActionSetIdentity::clearParamWidget(QWidget *paramWidget) const
 {
     auto comboBox = qobject_cast<KIdentityManagementWidgets::IdentityCombo *>(paramWidget);
-    Q_ASSERT(comboBox);
+    if (!comboBox) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionSetIdentity: identity combo box not found in param widget";
+        return;
+    }
 
     comboBox->setCurrentIndex(0);
 }
@@ -116,7 +123,10 @@ void FilterActionSetIdentity::clearParamWidget(QWidget *paramWidget) const
 void FilterActionSetIdentity::setParamWidgetValue(QWidget *paramWidget) const
 {
     auto comboBox = qobject_cast<KIdentityManagementWidgets::IdentityCombo *>(paramWidget);
-    Q_ASSERT(comboBox);
+    if (!comboBox) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionSetIdentity: identity combo box not found in param widget";
+        return;
+    }
 
     comboBox->setCurrentIdentity(mParameter);
 }

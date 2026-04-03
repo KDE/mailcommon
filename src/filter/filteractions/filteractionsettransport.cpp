@@ -8,6 +8,7 @@
 #include "filteractionsettransport.h"
 
 #include "filter/dialog/filteractionmissingtransportdialog.h"
+#include "mailcommon_debug.h"
 
 #include <KLocalizedString>
 #include <MailTransport/Transport>
@@ -86,7 +87,10 @@ SearchRule::RequiredPart FilterActionSetTransport::requiredPart() const
 void FilterActionSetTransport::applyParamWidgetValue(QWidget *paramWidget)
 {
     const MailTransport::TransportComboBox *comboBox = qobject_cast<MailTransport::TransportComboBox *>(paramWidget);
-    Q_ASSERT(comboBox);
+    if (!comboBox) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionSetTransport: transport combo box not found in param widget";
+        return;
+    }
 
     mParameter = comboBox->currentTransportId();
     mTransportName.clear();
@@ -95,7 +99,10 @@ void FilterActionSetTransport::applyParamWidgetValue(QWidget *paramWidget)
 void FilterActionSetTransport::clearParamWidget(QWidget *paramWidget) const
 {
     auto comboBox = qobject_cast<MailTransport::TransportComboBox *>(paramWidget);
-    Q_ASSERT(comboBox);
+    if (!comboBox) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionSetTransport: transport combo box not found in param widget";
+        return;
+    }
 
     comboBox->setCurrentIndex(0);
 }
@@ -103,7 +110,10 @@ void FilterActionSetTransport::clearParamWidget(QWidget *paramWidget) const
 void FilterActionSetTransport::setParamWidgetValue(QWidget *paramWidget) const
 {
     auto comboBox = qobject_cast<MailTransport::TransportComboBox *>(paramWidget);
-    Q_ASSERT(comboBox);
+    if (!comboBox) {
+        qCWarning(MAILCOMMON_LOG) << "FilterActionSetTransport: transport combo box not found in param widget";
+        return;
+    }
 
     comboBox->setCurrentTransport(mParameter);
 }
