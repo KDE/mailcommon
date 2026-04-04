@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-28 00:45+0000\n"
+"POT-Creation-Date: 2026-04-04 00:46+0000\n"
 "PO-Revision-Date: 2026-01-10 06:59-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -463,23 +463,23 @@ msgstr "Arquivo do Thunderbird (*.dat)"
 msgid "### \"action '%1' not supported\""
 msgstr "### \"Não há suporte para a ação '%1'\""
 
-#: filter/filteractions/filteractionaddheader.cpp:22
+#: filter/filteractions/filteractionaddheader.cpp:24
 #, kde-format
 msgid "Add Header"
 msgstr "Adicionar cabeçalho"
 
-#: filter/filteractions/filteractionaddheader.cpp:74
+#: filter/filteractions/filteractionaddheader.cpp:76
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Com valor:"
 
-#: filter/filteractions/filteractionaddheader.cpp:200
+#: filter/filteractions/filteractionaddheader.cpp:220
 #, kde-format
 msgid "The header name was missing."
 msgstr "Estava faltando o nome do cabeçalho."
 
-#: filter/filteractions/filteractionaddheader.cpp:206
+#: filter/filteractions/filteractionaddheader.cpp:226
 #, kde-format
 msgid "The header value was missing."
 msgstr "Estava faltando o valor do cabeçalho."
@@ -747,29 +747,29 @@ msgstr "Nome do cabeçalho não definido."
 msgid "Set Reply-To To"
 msgstr "Definir resposta para"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:26
+#: filter/filteractions/filteractionrewriteheader.cpp:28
 #, kde-format
 msgid "Rewrite Header"
 msgstr "Reescrever cabeçalho"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:43
+#: filter/filteractions/filteractionrewriteheader.cpp:45
 #, kde-format
 msgid "Header not defined"
 msgstr "Cabeçalho não definido"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:49
+#: filter/filteractions/filteractionrewriteheader.cpp:51
 #, kde-format
 msgid "Search string is empty."
 msgstr "O texto da pesquisa está vazio."
 
-#: filter/filteractions/filteractionrewriteheader.cpp:108
+#: filter/filteractions/filteractionrewriteheader.cpp:110
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Substituir:"
 
 # TRADUZIR COMO "COM:" NÃO FICA ADEQUADO.
-#: filter/filteractions/filteractionrewriteheader.cpp:119
+#: filter/filteractions/filteractionrewriteheader.cpp:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
@@ -832,7 +832,7 @@ msgstr "Tipo falso não definido."
 msgid "Confirm Delivery"
 msgstr "Confirmar entrega"
 
-#: filter/filteractions/filteractionsetidentity.cpp:29
+#: filter/filteractions/filteractionsetidentity.cpp:30
 #, kde-format
 msgid "Set Identity To"
 msgstr "Definir identidade para"
@@ -847,12 +847,12 @@ msgstr "Marcar como"
 msgid "Status not specified."
 msgstr "Status não especificado."
 
-#: filter/filteractions/filteractionsettransport.cpp:36
+#: filter/filteractions/filteractionsettransport.cpp:37
 #, kde-format
 msgid "Set Transport To"
 msgstr "Definir transporte para"
 
-#: filter/filteractions/filteractionsettransport.cpp:142
+#: filter/filteractions/filteractionsettransport.cpp:152
 #, kde-format
 msgid "Mail transport not defined."
 msgstr "O transporte de e-mail não foi definido."

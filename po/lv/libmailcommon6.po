@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-28 00:45+0000\n"
+"POT-Creation-Date: 2026-04-04 00:46+0000\n"
 "PO-Revision-Date: 2025-08-29 16:53+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -446,23 +446,23 @@ msgstr "„Thunderbird“ datne (*.dat)"
 msgid "### \"action '%1' not supported\""
 msgstr "### „darbība „%1“ nav atbalstīta“"
 
-#: filter/filteractions/filteractionaddheader.cpp:22
+#: filter/filteractions/filteractionaddheader.cpp:24
 #, kde-format
 msgid "Add Header"
 msgstr "Pievienot galveni"
 
-#: filter/filteractions/filteractionaddheader.cpp:74
+#: filter/filteractions/filteractionaddheader.cpp:76
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Ar vērtību:"
 
-#: filter/filteractions/filteractionaddheader.cpp:200
+#: filter/filteractions/filteractionaddheader.cpp:220
 #, kde-format
 msgid "The header name was missing."
 msgstr "Trūkst galvenes vārda."
 
-#: filter/filteractions/filteractionaddheader.cpp:206
+#: filter/filteractions/filteractionaddheader.cpp:226
 #, kde-format
 msgid "The header value was missing."
 msgstr "Trūkst galvenes vērtības."
@@ -731,28 +731,28 @@ msgstr "Galvenes nosaukums nav definēts."
 msgid "Set Reply-To To"
 msgstr "Nosūtīt atbildēt-uz uz"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:26
+#: filter/filteractions/filteractionrewriteheader.cpp:28
 #, kde-format
 msgid "Rewrite Header"
 msgstr "Pārrakstīta galveni"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:43
+#: filter/filteractions/filteractionrewriteheader.cpp:45
 #, kde-format
 msgid "Header not defined"
 msgstr "Galvene nav definēta"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:49
+#: filter/filteractions/filteractionrewriteheader.cpp:51
 #, kde-format
 msgid "Search string is empty."
 msgstr "Meklēšanas teksts ir tukšs."
 
-#: filter/filteractions/filteractionrewriteheader.cpp:108
+#: filter/filteractions/filteractionrewriteheader.cpp:110
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Aizvietot:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:119
+#: filter/filteractions/filteractionrewriteheader.cpp:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
@@ -815,7 +815,7 @@ msgstr "Viltojuma tips nav definēts"
 msgid "Confirm Delivery"
 msgstr "Apstiprināt nosūtīšanu"
 
-#: filter/filteractions/filteractionsetidentity.cpp:29
+#: filter/filteractions/filteractionsetidentity.cpp:30
 #, kde-format
 msgid "Set Identity To"
 msgstr "Iestatīt identitāti uz"
@@ -830,12 +830,12 @@ msgstr "Atzīmēt kā"
 msgid "Status not specified."
 msgstr "Statuss nav precizēts."
 
-#: filter/filteractions/filteractionsettransport.cpp:36
+#: filter/filteractions/filteractionsettransport.cpp:37
 #, kde-format
 msgid "Set Transport To"
 msgstr "Iestatīt transportu uz"
 
-#: filter/filteractions/filteractionsettransport.cpp:142
+#: filter/filteractions/filteractionsettransport.cpp:152
 #, kde-format
 msgid "Mail transport not defined."
 msgstr "Pasta transports nav definēts."

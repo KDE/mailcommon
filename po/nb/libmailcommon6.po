@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-28 00:45+0000\n"
+"POT-Creation-Date: 2026-04-04 00:46+0000\n"
 "PO-Revision-Date: 2014-09-13 18:15+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -444,23 +444,23 @@ msgstr "Thunderbird-filtre"
 msgid "### \"action '%1' not supported\""
 msgstr "### «handling %1 er ikke støttet»"
 
-#: filter/filteractions/filteractionaddheader.cpp:22
+#: filter/filteractions/filteractionaddheader.cpp:24
 #, kde-format
 msgid "Add Header"
 msgstr "Legg til meldingshode"
 
-#: filter/filteractions/filteractionaddheader.cpp:74
+#: filter/filteractions/filteractionaddheader.cpp:76
 #, fuzzy, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Med verdi:"
 
-#: filter/filteractions/filteractionaddheader.cpp:200
+#: filter/filteractions/filteractionaddheader.cpp:220
 #, kde-format
 msgid "The header name was missing."
 msgstr ""
 
-#: filter/filteractions/filteractionaddheader.cpp:206
+#: filter/filteractions/filteractionaddheader.cpp:226
 #, kde-format
 msgid "The header value was missing."
 msgstr ""
@@ -718,28 +718,28 @@ msgstr ""
 msgid "Set Reply-To To"
 msgstr "Sett Svar-til til"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:26
+#: filter/filteractions/filteractionrewriteheader.cpp:28
 #, kde-format
 msgid "Rewrite Header"
 msgstr "Skriv om meldingshode"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:43
+#: filter/filteractions/filteractionrewriteheader.cpp:45
 #, kde-format
 msgid "Header not defined"
 msgstr ""
 
-#: filter/filteractions/filteractionrewriteheader.cpp:49
+#: filter/filteractions/filteractionrewriteheader.cpp:51
 #, kde-format
 msgid "Search string is empty."
 msgstr ""
 
-#: filter/filteractions/filteractionrewriteheader.cpp:108
+#: filter/filteractions/filteractionrewriteheader.cpp:110
 #, fuzzy, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Erstatt:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:119
+#: filter/filteractions/filteractionrewriteheader.cpp:121
 #, fuzzy, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
@@ -802,7 +802,7 @@ msgstr ""
 msgid "Confirm Delivery"
 msgstr "Bekreft levering"
 
-#: filter/filteractions/filteractionsetidentity.cpp:29
+#: filter/filteractions/filteractionsetidentity.cpp:30
 #, kde-format
 msgid "Set Identity To"
 msgstr "Sett identitet til"
@@ -817,12 +817,12 @@ msgstr "Marker som"
 msgid "Status not specified."
 msgstr ""
 
-#: filter/filteractions/filteractionsettransport.cpp:36
+#: filter/filteractions/filteractionsettransport.cpp:37
 #, kde-format
 msgid "Set Transport To"
 msgstr "Sett transport til"
 
-#: filter/filteractions/filteractionsettransport.cpp:142
+#: filter/filteractions/filteractionsettransport.cpp:152
 #, kde-format
 msgid "Mail transport not defined."
 msgstr ""

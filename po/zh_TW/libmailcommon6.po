@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-28 00:45+0000\n"
+"POT-Creation-Date: 2026-04-04 00:46+0000\n"
 "PO-Revision-Date: 2026-01-13 01:35+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -429,23 +429,23 @@ msgstr "Thunderbird 檔案 (*.dat)"
 msgid "### \"action '%1' not supported\""
 msgstr "### \"動作 '%1' 不支援\""
 
-#: filter/filteractions/filteractionaddheader.cpp:22
+#: filter/filteractions/filteractionaddheader.cpp:24
 #, kde-format
 msgid "Add Header"
 msgstr "增加標頭"
 
-#: filter/filteractions/filteractionaddheader.cpp:74
+#: filter/filteractions/filteractionaddheader.cpp:76
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "值："
 
-#: filter/filteractions/filteractionaddheader.cpp:200
+#: filter/filteractions/filteractionaddheader.cpp:220
 #, kde-format
 msgid "The header name was missing."
 msgstr "標頭名稱遺失。"
 
-#: filter/filteractions/filteractionaddheader.cpp:206
+#: filter/filteractions/filteractionaddheader.cpp:226
 #, kde-format
 msgid "The header value was missing."
 msgstr "標頭值遺失。"
@@ -709,28 +709,28 @@ msgstr "標頭名稱未定義。"
 msgid "Set Reply-To To"
 msgstr "設定「回覆地址」欄位"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:26
+#: filter/filteractions/filteractionrewriteheader.cpp:28
 #, kde-format
 msgid "Rewrite Header"
 msgstr "重寫標頭"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:43
+#: filter/filteractions/filteractionrewriteheader.cpp:45
 #, kde-format
 msgid "Header not defined"
 msgstr "標頭未定義"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:49
+#: filter/filteractions/filteractionrewriteheader.cpp:51
 #, kde-format
 msgid "Search string is empty."
 msgstr "搜尋字串是空的。"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:108
+#: filter/filteractions/filteractionrewriteheader.cpp:110
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "取代："
 
-#: filter/filteractions/filteractionrewriteheader.cpp:119
+#: filter/filteractions/filteractionrewriteheader.cpp:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
@@ -793,7 +793,7 @@ msgstr "假型態未定義。"
 msgid "Confirm Delivery"
 msgstr "確認送達"
 
-#: filter/filteractions/filteractionsetidentity.cpp:29
+#: filter/filteractions/filteractionsetidentity.cpp:30
 #, kde-format
 msgid "Set Identity To"
 msgstr "設定身份欄位"
@@ -808,12 +808,12 @@ msgstr "標示成"
 msgid "Status not specified."
 msgstr "狀態未指定。"
 
-#: filter/filteractions/filteractionsettransport.cpp:36
+#: filter/filteractions/filteractionsettransport.cpp:37
 #, kde-format
 msgid "Set Transport To"
 msgstr "設定發信帳號為"
 
-#: filter/filteractions/filteractionsettransport.cpp:142
+#: filter/filteractions/filteractionsettransport.cpp:152
 #, kde-format
 msgid "Mail transport not defined."
 msgstr "郵件傳送未定義。"

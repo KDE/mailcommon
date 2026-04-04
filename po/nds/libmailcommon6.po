@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-28 00:45+0000\n"
+"POT-Creation-Date: 2026-04-04 00:46+0000\n"
 "PO-Revision-Date: 2014-09-18 22:35+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -484,24 +484,24 @@ msgstr "Thunderbird-Filtern"
 msgid "### \"action '%1' not supported\""
 msgstr "### \"Akschoon '%1' nich ünnerstütt\""
 
-#: filter/filteractions/filteractionaddheader.cpp:22
+#: filter/filteractions/filteractionaddheader.cpp:24
 #, kde-format
 msgid "Add Header"
 msgstr "Koppreeg tofögen"
 
-#: filter/filteractions/filteractionaddheader.cpp:74
+#: filter/filteractions/filteractionaddheader.cpp:76
 #, fuzzy, kde-format
 #| msgid "With value:"
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "Mit Weert:"
 
-#: filter/filteractions/filteractionaddheader.cpp:200
+#: filter/filteractions/filteractionaddheader.cpp:220
 #, kde-format
 msgid "The header name was missing."
 msgstr ""
 
-#: filter/filteractions/filteractionaddheader.cpp:206
+#: filter/filteractions/filteractionaddheader.cpp:226
 #, kde-format
 msgid "The header value was missing."
 msgstr ""
@@ -773,30 +773,30 @@ msgstr ""
 msgid "Set Reply-To To"
 msgstr "Antern-Na instellen op:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:26
+#: filter/filteractions/filteractionrewriteheader.cpp:28
 #, kde-format
 msgid "Rewrite Header"
 msgstr "Koppreeg ümschrieven"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:43
+#: filter/filteractions/filteractionrewriteheader.cpp:45
 #, fuzzy, kde-format
 #| msgid "Sound file was \"%1\"."
 msgid "Header not defined"
 msgstr "Klangdatei weer \"%1\"."
 
-#: filter/filteractions/filteractionrewriteheader.cpp:49
+#: filter/filteractions/filteractionrewriteheader.cpp:51
 #, kde-format
 msgid "Search string is empty."
 msgstr ""
 
-#: filter/filteractions/filteractionrewriteheader.cpp:108
+#: filter/filteractions/filteractionrewriteheader.cpp:110
 #, fuzzy, kde-format
 #| msgid "Replace:"
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Utwesseln:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:119
+#: filter/filteractions/filteractionrewriteheader.cpp:121
 #, fuzzy, kde-format
 #| msgid "With:"
 msgctxt "@label:textbox"
@@ -860,7 +860,7 @@ msgstr ""
 msgid "Confirm Delivery"
 msgstr "Utlevern beglöven"
 
-#: filter/filteractions/filteractionsetidentity.cpp:29
+#: filter/filteractions/filteractionsetidentity.cpp:30
 #, kde-format
 msgid "Set Identity To"
 msgstr "Identiteet instellen op:"
@@ -875,12 +875,12 @@ msgstr "Markeren as"
 msgid "Status not specified."
 msgstr ""
 
-#: filter/filteractions/filteractionsettransport.cpp:36
+#: filter/filteractions/filteractionsettransport.cpp:37
 #, kde-format
 msgid "Set Transport To"
 msgstr "Överdreegmetood bruken:"
 
-#: filter/filteractions/filteractionsettransport.cpp:142
+#: filter/filteractions/filteractionsettransport.cpp:152
 #, fuzzy, kde-format
 #| msgid "Sound file was \"%1\"."
 msgid "Mail transport not defined."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-28 00:45+0000\n"
+"POT-Creation-Date: 2026-04-04 00:46+0000\n"
 "PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -442,23 +442,23 @@ msgstr "वज्रपक्षी सञ्चिका (*.dat)"
 msgid "### \"action '%1' not supported\""
 msgstr "### \"क्रिया '%1' समर्थिता नास्ति\"।"
 
-#: filter/filteractions/filteractionaddheader.cpp:22
+#: filter/filteractions/filteractionaddheader.cpp:24
 #, kde-format
 msgid "Add Header"
 msgstr "शीर्षकं योजयतु"
 
-#: filter/filteractions/filteractionaddheader.cpp:74
+#: filter/filteractions/filteractionaddheader.cpp:76
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "मूल्येन सह :"
 
-#: filter/filteractions/filteractionaddheader.cpp:200
+#: filter/filteractions/filteractionaddheader.cpp:220
 #, kde-format
 msgid "The header name was missing."
 msgstr "शीर्षकनाम लुप्तम् आसीत् ।"
 
-#: filter/filteractions/filteractionaddheader.cpp:206
+#: filter/filteractions/filteractionaddheader.cpp:226
 #, kde-format
 msgid "The header value was missing."
 msgstr "शीर्षकमूल्यं लुप्तम् आसीत् ।"
@@ -723,28 +723,28 @@ msgstr "शीर्षकनाम अपरिभाषितम्।"
 msgid "Set Reply-To To"
 msgstr "Reply-To To इति सेट् कुर्वन्तु"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:26
+#: filter/filteractions/filteractionrewriteheader.cpp:28
 #, kde-format
 msgid "Rewrite Header"
 msgstr "शीर्षकं पुनः लिखत"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:43
+#: filter/filteractions/filteractionrewriteheader.cpp:45
 #, kde-format
 msgid "Header not defined"
 msgstr "शीर्षकं न परिभाषितम्"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:49
+#: filter/filteractions/filteractionrewriteheader.cpp:51
 #, kde-format
 msgid "Search string is empty."
 msgstr "अन्वेषणमाला रिक्तम् अस्ति ।"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:108
+#: filter/filteractions/filteractionrewriteheader.cpp:110
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "प्रत्याहृ:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:119
+#: filter/filteractions/filteractionrewriteheader.cpp:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
@@ -807,7 +807,7 @@ msgstr "नकली प्रकार अपरिभाषित।"
 msgid "Confirm Delivery"
 msgstr "प्रसवस्य पुष्टिं कुर्वन्तु"
 
-#: filter/filteractions/filteractionsetidentity.cpp:29
+#: filter/filteractions/filteractionsetidentity.cpp:30
 #, kde-format
 msgid "Set Identity To"
 msgstr "Identity To इति सेट् कुर्वन्तु"
@@ -822,12 +822,12 @@ msgstr "मार्क अस्"
 msgid "Status not specified."
 msgstr "स्थितिः निर्दिष्टा नास्ति।"
 
-#: filter/filteractions/filteractionsettransport.cpp:36
+#: filter/filteractions/filteractionsettransport.cpp:37
 #, kde-format
 msgid "Set Transport To"
 msgstr "परिवहनं To इति सेट् कुर्वन्तु"
 
-#: filter/filteractions/filteractionsettransport.cpp:142
+#: filter/filteractions/filteractionsettransport.cpp:152
 #, kde-format
 msgid "Mail transport not defined."
 msgstr "मेलपरिवहनं परिभाषितं नास्ति।"

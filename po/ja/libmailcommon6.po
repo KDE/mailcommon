@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-28 00:45+0000\n"
+"POT-Creation-Date: 2026-04-04 00:46+0000\n"
 "PO-Revision-Date: 2012-01-28 16:25-0800\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -452,24 +452,24 @@ msgstr "フィルタをインポート"
 msgid "### \"action '%1' not supported\""
 msgstr ""
 
-#: filter/filteractions/filteractionaddheader.cpp:22
+#: filter/filteractions/filteractionaddheader.cpp:24
 #, fuzzy, kde-format
 #| msgid "Add Filter"
 msgid "Add Header"
 msgstr "フィルタを追加"
 
-#: filter/filteractions/filteractionaddheader.cpp:74
+#: filter/filteractions/filteractionaddheader.cpp:76
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr ""
 
-#: filter/filteractions/filteractionaddheader.cpp:200
+#: filter/filteractions/filteractionaddheader.cpp:220
 #, kde-format
 msgid "The header name was missing."
 msgstr ""
 
-#: filter/filteractions/filteractionaddheader.cpp:206
+#: filter/filteractions/filteractionaddheader.cpp:226
 #, kde-format
 msgid "The header value was missing."
 msgstr ""
@@ -737,23 +737,23 @@ msgstr ""
 msgid "Set Reply-To To"
 msgstr ""
 
-#: filter/filteractions/filteractionrewriteheader.cpp:26
+#: filter/filteractions/filteractionrewriteheader.cpp:28
 #, kde-format
 msgid "Rewrite Header"
 msgstr ""
 
-#: filter/filteractions/filteractionrewriteheader.cpp:43
+#: filter/filteractions/filteractionrewriteheader.cpp:45
 #, fuzzy, kde-format
 #| msgid "No Folder Selected"
 msgid "Header not defined"
 msgstr "フォルダが選択されていません"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:49
+#: filter/filteractions/filteractionrewriteheader.cpp:51
 #, kde-format
 msgid "Search string is empty."
 msgstr ""
 
-#: filter/filteractions/filteractionrewriteheader.cpp:108
+#: filter/filteractions/filteractionrewriteheader.cpp:110
 #, fuzzy, kde-format
 #| msgctxt "message status"
 #| msgid "Replied"
@@ -761,7 +761,7 @@ msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "返信済み"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:119
+#: filter/filteractions/filteractionrewriteheader.cpp:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
@@ -826,7 +826,7 @@ msgstr ""
 msgid "Confirm Delivery"
 msgstr "配信確認"
 
-#: filter/filteractions/filteractionsetidentity.cpp:29
+#: filter/filteractions/filteractionsetidentity.cpp:30
 #, fuzzy, kde-format
 #| msgid "Select Folder"
 msgid "Set Identity To"
@@ -842,13 +842,13 @@ msgstr ""
 msgid "Status not specified."
 msgstr ""
 
-#: filter/filteractions/filteractionsettransport.cpp:36
+#: filter/filteractions/filteractionsettransport.cpp:37
 #, fuzzy, kde-format
 #| msgid "Select Folder"
 msgid "Set Transport To"
 msgstr "フォルダを選択"
 
-#: filter/filteractions/filteractionsettransport.cpp:142
+#: filter/filteractions/filteractionsettransport.cpp:152
 #, fuzzy, kde-format
 #| msgid "No Folder Selected"
 msgid "Mail transport not defined."
