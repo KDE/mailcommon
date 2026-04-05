@@ -13,9 +13,9 @@ msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-28 00:45+0000\n"
-"PO-Revision-Date: 2026-01-12 10:18+0100\n"
+"PO-Revision-Date: 2026-04-03 14:22+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
-"Language-Team: \n"
+"Language-Team: fr\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Accelerator-Marker: &\n"
 "X-Environment: kde\n"
-"X-Generator: Lokalize 25.12.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 "X-Text-Markup: kde4\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
@@ -2960,7 +2960,7 @@ msgstr "À :"
 #: snippets/ui/snippetwidget.ui:101
 #, kde-format
 msgid "Cc:"
-msgstr "Cc :"
+msgstr "CC :"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: snippets/ui/snippetwidget.ui:114
@@ -3098,7 +3098,7 @@ msgstr "Renvoi-à :"
 #: widgets/redirectdialog.cpp:70
 #, kde-format
 msgid "Resend-Cc:"
-msgstr "Renvoi-Cc :"
+msgstr "Renvoi - CC :"
 
 #: widgets/redirectdialog.cpp:73
 #, kde-format
