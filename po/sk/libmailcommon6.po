@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.11.80\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 19.11.80\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -24,10 +24,7 @@ msgid "Expiry"
 msgstr "Vypršanie"
 
 #: collectionpage/collectionexpirywidget.cpp:36
-#, fuzzy, kde-format
-#| msgctxt "Expire messages after %1"
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
 msgid_plural "%v days"
@@ -38,35 +35,29 @@ msgstr[2] " dní"
 #: collectionpage/collectionexpirywidget.cpp:37
 #: collectionpage/collectionexpirywidget.cpp:43
 #: collectionpage/collectionexpirywidget.cpp:55
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu Never display tooltips."
-#| msgid "Never"
+#, kde-format
 msgid "Never"
 msgstr "Nikdy"
 
 #: collectionpage/collectionexpirywidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Save Settings and Expire Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Uložiť nastavenia a vypršať teraz"
 
 #: collectionpage/collectionexpirywidget.cpp:68
-#, fuzzy, kde-format
-#| msgid "Expire read messages after"
+#, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Skončiť platnosť prečítaných správ po"
 
 #: collectionpage/collectionexpirywidget.cpp:74
-#, fuzzy, kde-format
-#| msgid "Expire read messages after"
+#, kde-format
 msgid "Expire read messages after:"
 msgstr "Skončiť platnosť prečítaných správ po"
 
 #: collectionpage/collectionexpirywidget.cpp:77
-#, fuzzy, kde-format
-#| msgid "Expire unread messages after"
+#, kde-format
 msgid "Expire unread messages after:"
 msgstr "Skončiť platnosť neprečítaných správ po"
 
@@ -90,8 +81,7 @@ msgstr ""
 "Ak to nie je urobené, vypršané správy budú permanentne vymazané."
 
 #: collectionpage/collectionexpirywidget.cpp:174
-#, fuzzy, kde-format
-#| msgid "No Folder Selected"
+#, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Nebol vybraný žiaden priečinok"
@@ -108,8 +98,7 @@ msgstr ""
 "Ak to nie je urobené, vypršané správy budú permanentne vymazané."
 
 #: collectionpage/collectionexpirywidget.cpp:190
-#, fuzzy, kde-format
-#| msgid "Wrong Folder Selected"
+#, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "Bol vybraný zlý priečinok"
@@ -121,8 +110,7 @@ msgid "General"
 msgstr "Všeobecné"
 
 #: collectionpage/collectiongeneralpage.cpp:65
-#, fuzzy, kde-format
-#| msgid "Rename"
+#, kde-format
 msgctxt "@label:textbox Name of the folder."
 msgid "Folder &Name:"
 msgstr "Premenovať"
@@ -154,8 +142,7 @@ msgstr ""
 "znamená, že táto zložka zmizne, akonáhle sa konfiguračný dialóg sa zatvorí."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
-#, fuzzy, kde-format
-#| msgid "Act on new/unread mail in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "Act on new/unread mail in this folder"
 msgstr "Spracovať novú/neprečítanú poštu v tomto priečinku"
@@ -181,8 +168,7 @@ msgstr ""
 "priečinku nevyžiadanej pošty.</p></qt>"
 
 #: collectionpage/collectiongeneralwidget.cpp:38
-#, fuzzy, kde-format
-#| msgid "Keep replies in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "Keep replies in this folder"
 msgstr "Ponechať odpovede v tomto priečinku"
@@ -199,8 +185,7 @@ msgstr ""
 "priečinka odoslanej pošty."
 
 #: collectionpage/collectiongeneralwidget.cpp:46
-#, fuzzy, kde-format
-#| msgid "Hide this folder in the folder selection dialog"
+#, kde-format
 msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
 msgstr "Skryť tento priečinok v dialógu výberu priečinkov"
@@ -217,8 +202,7 @@ msgstr ""
 "interface>."
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use &default identity"
 msgstr "Použiť predvolenú identitu"
@@ -245,8 +229,7 @@ msgid "&Sender identity:"
 msgstr "Identita odo&sielateľa:"
 
 #: collectionpage/collectiontemplateswidget.cpp:20
-#, fuzzy, kde-format
-#| msgid "Keep replies in this folder"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "Ponechať odpovede v tomto priečinku"
@@ -255,18 +238,16 @@ msgstr "Ponechať odpovede v tomto priečinku"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Copy Global Templates"
-msgstr ""
+msgstr "&Kopírovať globálne šablóny"
 
 #: collectionpage/collectionviewwidget.cpp:27
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "Použiť predvolenú identitu"
 
 #: collectionpage/collectionviewwidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "Použiť predvolenú identitu"
@@ -275,60 +256,55 @@ msgstr "Použiť predvolenú identitu"
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer HTML to text"
-msgstr ""
+msgstr "Uprednostniť HTML pred textom"
 
 #: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer text to HTML"
-msgstr ""
+msgstr "Uprednostniť text pred HTML"
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
 msgctxt "@option:radio"
 msgid "Use Global Settings"
-msgstr ""
+msgstr "Použiť globálne nastavenia"
 
 #: collectionpage/collectionviewwidget.cpp:40
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
-msgstr ""
+msgstr "Zobraziť stĺpec odosielateľa/príjemcu v zozname správ"
 
 #: collectionpage/collectionviewwidget.cpp:43
-#, fuzzy, kde-format
-#| msgid " (default)"
+#, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
 msgstr " (predvolené)"
 
 #: collectionpage/collectionviewwidget.cpp:44
-#, fuzzy, kde-format
-#| msgid "&Send"
+#, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
-msgstr "&Poslať"
+msgstr "Odosielateľ"
 
 #: collectionpage/collectionviewwidget.cpp:45
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
-msgstr ""
+msgstr "Príjemca"
 
 #: collectionpage/collectionviewwidget.cpp:46
-#, fuzzy, kde-format
-#| msgid "Sho&rtcut:"
+#, kde-format
 msgid "Sho&w column:"
 msgstr "Skratka:"
 
 #: collectionpage/collectionviewwidget.cpp:77
-#, fuzzy, kde-format
-#| msgid "Message Status"
+#, kde-format
 msgid "Message format:"
 msgstr "Stav správy"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
-#, fuzzy, kde-format
-#| msgid "Select Account"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "Vyberte účet"
@@ -341,36 +317,30 @@ msgstr "Chýba účet filtra. Prosím, vybrať účet pre použitie s filtrom \"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:40
 #: folder/folderrequester.cpp:74
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Vybrať priečinok"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:43
-#, fuzzy, kde-format
-#| msgid "Folder path was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Cesta priečinka bola \"%1\"."
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:48
-#, fuzzy, kde-format
-#| msgid "The following folders can be used for this filter:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Nasledujúce priečinky môžu byť použité pre tento filter:"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:69
-#, fuzzy, kde-format
-#| msgid "Please select a folder"
+#, kde-format
 msgid "Please select a folder:"
 msgstr "Prosím vyberte priečinok"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:72
-#, fuzzy, kde-format
-#| msgid ""
-#| "Filter folder is missing. Please select a folder to use with filter \"%1\""
+#, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
 msgstr ""
@@ -378,8 +348,7 @@ msgstr ""
 "\"%1\""
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Identity"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "Vybrať identitu"
@@ -393,15 +362,13 @@ msgstr ""
 "Chýba identita filtra. Prosím, vybrať identitu pre použitie s filtrom \"%1\""
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
-#, fuzzy, kde-format
-#| msgid "Select sound"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "Vybrať zvuk"
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
-#, fuzzy, kde-format
-#| msgid "Sound file was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr " Zvukový súbor bol \"%1\"."
@@ -414,15 +381,13 @@ msgstr ""
 "\"%1\""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
-#, fuzzy, kde-format
-#| msgid "Select Tag"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Vybrať značku"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
-#, fuzzy, kde-format
-#| msgid "Tag was \"%1\"."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Značka bola \"%1\"."
@@ -434,14 +399,12 @@ msgstr ""
 "Značka filtra chýba. Prosím, vybrať značku pre použitie s filtrom \"%1\""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:71
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgid "Add Tag…"
 msgstr "Pridať značku"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Template"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "Vybrať šablónu"
@@ -455,8 +418,7 @@ msgstr ""
 "Chýba šablóna filtra. Prosím, vybrať šablónu pre použitie s filtrom \"%1\""
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
-#, fuzzy, kde-format
-#| msgid "Select Transport"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "Vybrať prenos"
@@ -470,8 +432,7 @@ msgstr ""
 "Chýba prenos filtra. Prosím, vybrať prenos pre použitie s filtrom \"%1\""
 
 #: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
-#, fuzzy, kde-format
-#| msgid "Select thunderbird filter files"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
 msgstr "Vyberte súbory filtra thunderbird"
@@ -482,8 +443,7 @@ msgid " (default)"
 msgstr " (predvolené)"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:118
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgid "Thunderbird File (*.dat)"
 msgstr "Thunderbird filtre"
 
@@ -498,8 +458,7 @@ msgid "Add Header"
 msgstr "Pridať hlavičku"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
-#, fuzzy, kde-format
-#| msgid "With value:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
 msgstr "S hodnotou:"
@@ -558,15 +517,13 @@ msgid "KMail Filter"
 msgstr "KMail Filter"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:117
-#, fuzzy, kde-format
-#| msgid "with category"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
 msgstr "s kategóriou"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:125
-#, fuzzy, kde-format
-#| msgid "in address book"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "v adresári"
@@ -682,8 +639,7 @@ msgid "Forward To"
 msgstr "Preposlať do"
 
 #: filter/filteractions/filteractionforward.cpp:94
-#, fuzzy, kde-format
-#| msgid "The addressee to whom the message will be forwarded."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Adresát, ktorému bude preposlaná správa ."
@@ -700,8 +656,7 @@ msgid "Default Template"
 msgstr "Predvolená šablóna"
 
 #: filter/filteractions/filteractionforward.cpp:113
-#, fuzzy, kde-format
-#| msgid "The template used when forwarding"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Šablóna použitá pri preposielaní"
@@ -795,15 +750,13 @@ msgid "Search string is empty."
 msgstr "Hľadaný reťazec je prázdny."
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
-#, fuzzy, kde-format
-#| msgid "Replace:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "Nahradiť:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
-#, fuzzy, kde-format
-#| msgid "With:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
 msgstr "Týmto:"
@@ -967,18 +920,16 @@ msgid "Status not defined."
 msgstr "Stav definovaný."
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, fuzzy, kde-format
-#| msgid "Please select an action."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Vyberte prosím akciu."
 
 #: filter/filteractions/filteractionwithurl.cpp:22
-#, fuzzy, kde-format
-#| msgid "Help"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
-msgstr "Pomoc"
+msgstr "Pomocník"
 
 #: filter/filteractions/filteractionwithurl.cpp:64
 #, kde-format
@@ -994,11 +945,10 @@ msgstr "Konvertovať na Sieve skript"
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
 #, kde-format
 msgid "Save…"
-msgstr ""
+msgstr "Uložiť…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Share..."
+#, kde-format
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "Zdieľať..."
@@ -1034,50 +984,43 @@ msgstr ""
 "žiadne akcie alebo pravidlá pre hľadanie)."
 
 #: filter/filterimporterexporter.cpp:138
-#, fuzzy, kde-format
-#| msgid "Import KMail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Importovať KMail filtre"
 
 #: filter/filterimporterexporter.cpp:146
-#, fuzzy, kde-format
-#| msgid "Import Evolution Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Importovať Evolution filtre"
 
 #: filter/filterimporterexporter.cpp:150
-#, fuzzy, kde-format
-#| msgid "Import Sylpheed Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Importovať Sylpheed filtre"
 
 #: filter/filterimporterexporter.cpp:154
-#, fuzzy, kde-format
-#| msgid "Import Procmail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Importovať Procmail filtre"
 
 #: filter/filterimporterexporter.cpp:158
-#, fuzzy, kde-format
-#| msgid "Import Balsa Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Importovať filtre Balsa"
 
 #: filter/filterimporterexporter.cpp:162
-#, fuzzy, kde-format
-#| msgid "Import Claws Mail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Importovať filtre Claws Mail"
 
 #: filter/filterimporterexporter.cpp:166
-#, fuzzy, kde-format
-#| msgid "Import Gmail Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "Importovať GMail filtre"
@@ -1093,29 +1036,25 @@ msgstr ""
 "nedostatočné."
 
 #: filter/filterimporterexporter.cpp:316
-#, fuzzy, kde-format
-#| msgid "Export Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Exportovať filtre"
 
 #: filter/filterselectiondialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Vybrať všetko"
 
 #: filter/filterselectiondialog.cpp:30
-#, fuzzy, kde-format
-#| msgid "Unselect All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Odznačiť všetko"
 
 #: filter/filterselectiondialog.cpp:34
-#, fuzzy, kde-format
-#| msgid "Select Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Vybrať filtre"
@@ -1128,8 +1067,7 @@ msgid "Search"
 msgstr "Hľadať"
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Invalid Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "Neplatné filtre"
@@ -1140,10 +1078,7 @@ msgid "Discard"
 msgstr "Zahodiť"
 
 #: filter/invalidfilters/invalidfilterwidget.cpp:22
-#, fuzzy, kde-format
-#| msgid ""
-#| "The following filters are invalid (e.g. containing no actions or no "
-#| "search rules). Discard or edit invalid filters?"
+#, kde-format
 msgctxt "@label:textbox"
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
@@ -1163,96 +1098,82 @@ msgid "Type"
 msgstr "Typ"
 
 #: filter/kmfilterdialog.cpp:72
-#, fuzzy, kde-format
-#| msgid "Filter Rules"
+#, kde-format
 msgctxt "@title:window"
 msgid "Filter Rules"
 msgstr "Pravidlá filtra"
 
 #: filter/kmfilterdialog.cpp:90
-#, fuzzy, kde-format
-#| msgid "Import..."
+#, kde-format
 msgid "Import…"
 msgstr "Importovať..."
 
 #: filter/kmfilterdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "Export..."
+#, kde-format
 msgid "Export…"
 msgstr "Exportovať..."
 
 #: filter/kmfilterdialog.cpp:94
-#, fuzzy, kde-format
-#| msgid "Convert to..."
+#, kde-format
 msgid "Convert to…"
 msgstr "Previesť do..."
 
 #: filter/kmfilterdialog.cpp:98
-#, fuzzy, kde-format
-#| msgid "KMail filters"
+#, kde-format
 msgctxt "@action"
 msgid "KMail filters"
 msgstr "KMail filtre"
 
 #: filter/kmfilterdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Thunderbird filters"
+#, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Thunderbird filtre"
 
 #: filter/kmfilterdialog.cpp:106
-#, fuzzy, kde-format
-#| msgid "Evolution filters"
+#, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Evolution filtre"
 
 #: filter/kmfilterdialog.cpp:110
-#, fuzzy, kde-format
-#| msgid "Sylpheed filters"
+#, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Sylpheed filtre"
 
 #: filter/kmfilterdialog.cpp:114
-#, fuzzy, kde-format
-#| msgid "Procmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Procmail filtre"
 
 #: filter/kmfilterdialog.cpp:118
-#, fuzzy, kde-format
-#| msgid "Balsa filters"
+#, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Filtre programu Balsa"
 
 #: filter/kmfilterdialog.cpp:122
-#, fuzzy, kde-format
-#| msgid "Claws Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Filtre Claws Mail"
 
 #: filter/kmfilterdialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "Icedove Mail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Poštové filtre Icedove"
 
 #: filter/kmfilterdialog.cpp:132
-#, fuzzy, kde-format
-#| msgid "Gmail filters"
+#, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
 msgstr "GMail filtre"
 
 #: filter/kmfilterdialog.cpp:140
-#, fuzzy, kde-format
-#| msgid "Sieve script"
+#, kde-format
 msgctxt "@action"
 msgid "Sieve script"
 msgstr "Sieve skript"
@@ -1275,43 +1196,37 @@ msgid "Advanced"
 msgstr "Pokročilé"
 
 #: filter/kmfilterdialog.cpp:182
-#, fuzzy, kde-format
-#| msgid "Filter Actions"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Akcie filtra"
 
 #: filter/kmfilterdialog.cpp:193
-#, fuzzy, kde-format
-#| msgid "Apply this filter to incoming messages:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Použiť tento filter na prichádzajúce správy:"
 
 #: filter/kmfilterdialog.cpp:203
-#, fuzzy, kde-format
-#| msgid "from all accounts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "od všetkých účtov"
 
 #: filter/kmfilterdialog.cpp:207
-#, fuzzy, kde-format
-#| msgid "from all but online IMAP accounts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "od všetkých účtov okrem online IMAP"
 
 #: filter/kmfilterdialog.cpp:211
-#, fuzzy, kde-format
-#| msgid "from checked accounts only"
+#, kde-format
 msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "len od označených účtov"
 
 #: filter/kmfilterdialog.cpp:219
-#, fuzzy, kde-format
-#| msgid "Apply this filter to &sent messages"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "Použiť tento filter na odo&slané správy"
@@ -1329,8 +1244,7 @@ msgstr ""
 "\"Použiť tento filter <b>pred</b> odosielaním správ\".</p>"
 
 #: filter/kmfilterdialog.cpp:227
-#, fuzzy, kde-format
-#| msgid "Apply this filter &before sending messages"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "Použiť tento filter pred odoslaním správ"
@@ -1347,15 +1261,13 @@ msgstr ""
 "kópia príjemcu.</p>"
 
 #: filter/kmfilterdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Apply this filter on manual &filtering"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "Použiť tento filter pri ručnom &filtrovaní"
 
 #: filter/kmfilterdialog.cpp:237
-#, fuzzy, kde-format
-#| msgid "Apply this filter on inbound emails in all folders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "Použiť tento filter na prichádzajúce e-maily vo všetkých priečinkoch"
@@ -1374,22 +1286,19 @@ msgstr ""
 "rôznych priečinkov pomocou filtrov na strane servera.</p>"
 
 #: filter/kmfilterdialog.cpp:245
-#, fuzzy, kde-format
-#| msgid "If this filter &matches, stop processing here"
+#, kde-format
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "Ak tento filter zodpovedá, tu skončiť spracovanie"
 
 #: filter/kmfilterdialog.cpp:248
-#, fuzzy, kde-format
-#| msgid "Add this filter to the Apply Filter menu"
+#, kde-format
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Pridať tento filter do ponuky Použiť filter"
 
 #: filter/kmfilterdialog.cpp:266
-#, fuzzy, kde-format
-#| msgid "Additionally add this filter to the toolbar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Dodatočne pridať tento filter do panela nástrojov"
@@ -1405,15 +1314,13 @@ msgid "Icon for this filter:"
 msgstr "Ikona pre tento filter:"
 
 #: filter/kmfilterdialog.cpp:287
-#, fuzzy, kde-format
-#| msgid "Run selected filter(s) on: "
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Spustiť vybrané filter(e) na:"
 
 #: filter/kmfilterdialog.cpp:293
-#, fuzzy, kde-format
-#| msgid "Run Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Spustiť teraz"
@@ -1426,8 +1333,7 @@ msgstr ""
 "Nemožno použiť tento filter, pretože tam nie sú žiadne vybrané priečinky."
 
 #: filter/kmfilterdialog.cpp:421
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Nebol vybraný žiadny priečinok"
@@ -1443,8 +1349,7 @@ msgstr ""
 "filtre predtým, než môžu byť použité."
 
 #: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
-#, fuzzy, kde-format
-#| msgid "Filters changed."
+#, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filtre sa zmenili."
@@ -1456,8 +1361,7 @@ msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Nemožno použiť filter, pretože nie sú žiadne filtre aktuálne vybrané."
 
 #: filter/kmfilterdialog.cpp:438
-#, fuzzy, kde-format
-#| msgid "No filters selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Nebol vybraný žiadny priečinok"
@@ -1495,8 +1399,7 @@ msgstr ""
 "skúsiť :)"
 
 #: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
-#, fuzzy, kde-format
-#| msgid "Convert KMail filters to sieve scripts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Konvertovať filtre KMail na sieve skripty"
@@ -1606,22 +1509,19 @@ msgid "New"
 msgstr "Nový"
 
 #: filter/kmfilterlistbox.cpp:143
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "Kopírovať"
 
 #: filter/kmfilterlistbox.cpp:144
-#, fuzzy, kde-format
-#| msgid "Delete"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "Vymazať"
 
 #: filter/kmfilterlistbox.cpp:145
-#, fuzzy, kde-format
-#| msgid "Rename"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Premenovať"
@@ -1695,15 +1595,13 @@ msgid "Do you want to remove selected filters?"
 msgstr "Chcete odstrániť  vybrané filtre?"
 
 #: filter/kmfilterlistbox.cpp:448
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
-msgstr "Odstrániť filter"
+msgstr "Vyčistiť filter"
 
 #: filter/kmfilterlistbox.cpp:448
-#, fuzzy, kde-format
-#| msgid "Remove Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
 msgstr "Odstrániť filtre"
@@ -1757,15 +1655,13 @@ msgid "Any action defined."
 msgstr "Ľubovoľná akcia definovaná."
 
 #: filter/soundtestwidget.cpp:35 filter/soundtestwidget.cpp:117
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Prehrať"
 
 #: filter/soundtestwidget.cpp:64
-#, fuzzy, kde-format
-#| msgid "Select Sound File"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Sound File"
 msgstr "Vybrať zvukový súbor"
@@ -1774,7 +1670,7 @@ msgstr "Vybrať zvukový súbor"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
-msgstr ""
+msgstr "Pozastaviť"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: filter/ui/filterconfigwidget.ui:19
@@ -1843,15 +1739,13 @@ msgid "Select file from config:"
 msgstr "Vybrať súbor z nastavenia:"
 
 #: folder/accountconfigorderdialog.cpp:57
-#, fuzzy, kde-format
-#| msgid "Edit Accounts Order"
+#, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "Upraviť poradie účtov"
 
 #: folder/accountconfigorderdialog.cpp:74
-#, fuzzy, kde-format
-#| msgid "Use custom order"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "Použiť vlastné poradie"
@@ -1869,8 +1763,7 @@ msgid "Down"
 msgstr "Dolu"
 
 #: folder/folderrequester.cpp:46
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "Vybrať priečinok"
@@ -1886,22 +1779,19 @@ msgid "Please select a folder"
 msgstr "Prosím vyberte priečinok"
 
 #: folder/folderselectiondialog.cpp:65
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "Nový po&dpriečinok"
 
 #: folder/folderselectiondialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Create a new subfolder under the currently selected folder"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "Vytvoriť nový podpriečinok pod aktuálne vybraným priečinkom"
 
 #: folder/folderselectiondialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgid "&New Subfolder…"
 msgstr "Nový po&dpriečinok"
 
@@ -1923,8 +1813,7 @@ msgid "Could not create folder: %1"
 msgstr "Nie je možné vytvoriť priečinok: %1"
 
 #: folder/folderselectiondialog.cpp:194
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "Nepodarilo sa vytvoriť zložku"
@@ -1981,29 +1870,25 @@ msgstr ""
 "<qt>Prejsť na nasledujúcu neprečítanú správu v priečinku <b>%1</b>?</qt>"
 
 #: folder/foldertreeview.cpp:475 folder/foldertreeview.cpp:517
-#, fuzzy, kde-format
-#| msgid "Go to Next Unread Message"
+#, kde-format
 msgctxt "@title:window"
 msgid "Go to Next Unread Message"
 msgstr "Prejsť na nasledujúcu neprečítanú správu"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, fuzzy, kde-format
-#| msgid "Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Prejsť na"
 
 #: folder/foldertreeview.cpp:477 folder/foldertreeview.cpp:519
-#, fuzzy, kde-format
-#| msgid "Do Not Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Neísť do"
 
 #: folder/foldertreewidget.cpp:78
-#, fuzzy, kde-format
-#| msgid "You can start typing to filter the list of folders."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
 msgstr "Môžete začať písať pre filtrovanie zoznamu priečinkov."
@@ -2024,8 +1909,7 @@ msgid "%1 (Offline)"
 msgstr "%1 (Nepripojený)"
 
 #: folder/foldertreewidgetproxymodel.cpp:247
-#, fuzzy, kde-format
-#| msgid "%1 (Reached %2% quota)"
+#, kde-format
 msgctxt ""
 "%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
@@ -2047,8 +1931,7 @@ msgid "Failed to archive the folder '%1'."
 msgstr "Zlyhala archivácia priečinka '%1'. "
 
 #: job/backupjob.cpp:156
-#, fuzzy, kde-format
-#| msgid "Archiving failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Archivácia zlyhala"
@@ -2086,8 +1969,7 @@ msgid "The archive file has a size of %1."
 msgstr "Archívny súbor má veľkosť %1."
 
 #: job/backupjob.cpp:194
-#, fuzzy, kde-format
-#| msgid "Archiving finished"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
 msgstr "Archivácia ukončená"
@@ -2148,9 +2030,7 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Odstraňovanie starých správ z priečinka %1 zlyhalo."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2..."
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Odstraňovanie 1 starej správy z priečinka %2..."
@@ -2165,9 +2045,7 @@ msgstr ""
 "nenašiel"
 
 #: job/expirejob.cpp:180
-#, fuzzy, kde-format
-#| msgid "Moving 1 old message from folder %2 to folder %3..."
-#| msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
+#, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Presúvam 1 starú správu z priečinka %2 do priečinka %3..."
@@ -2267,9 +2145,6 @@ msgid "Message Tag"
 msgstr "Značka správy"
 
 #: search/searchpatternedit.cpp:49
-#, fuzzy
-#| msgctxt "Subject of an email."
-#| msgid "Subject"
 msgid "Subject"
 msgstr "Predmet"
 
@@ -2278,11 +2153,8 @@ msgid "From"
 msgstr "Od"
 
 #: search/searchpatternedit.cpp:51
-#, fuzzy
-#| msgctxt "Email recipient"
-#| msgid "To"
 msgid "To"
-msgstr "Pre"
+msgstr "Komu"
 
 #: search/searchpatternedit.cpp:53
 msgid "Reply To"
@@ -2301,55 +2173,45 @@ msgid "Encryption"
 msgstr "Šifrovanie"
 
 #: search/searchpatternedit.cpp:57
-#, fuzzy
-#| msgid "Attachment:"
 msgid "Attachment"
-msgstr "Príloha:"
+msgstr "Príloha"
 
 #: search/searchpatternedit.cpp:58
-#, fuzzy
-#| msgid "Organization"
 msgid "Invitation"
-msgstr "Organizácia"
+msgstr "Pozvánka"
 
 #: search/searchpatternedit.cpp:146
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Choose or type your own criteria"
 msgstr "Vyberte alebo napíšte vaše kritériá"
 
 #: search/searchpatternedit.cpp:147
-#, fuzzy, kde-format
-#| msgid "Choose or type your own criteria"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Choose or type your own criteria"
 msgstr "Vyberte alebo napíšte vaše kritériá"
 
 #: search/searchpatternedit.cpp:584
-#, fuzzy, kde-format
-#| msgid "Match a&ll of the following"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "Platia všetky nasledujúce"
 
 #: search/searchpatternedit.cpp:585
-#, fuzzy, kde-format
-#| msgid "Match an&y of the following"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "Platí niektoré z nasledujúcich"
 
 #: search/searchpatternedit.cpp:587
-#, fuzzy, kde-format
-#| msgid "Match all messages"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match all messages"
 msgstr "Platia všetky správy"
 
 #: search/searchpatternedit.cpp:598
-#, fuzzy, kde-format
-#| msgid "Filter Criteria"
+#, kde-format
 msgid "Filter criteria:"
 msgstr "Kritérium filtra"
 
@@ -2411,14 +2273,12 @@ msgid "has not an attachment"
 msgstr "nemá prílohu"
 
 #: search/searchrule/searchrule.cpp:223
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has an invitation"
 msgstr "Organizácia"
 
 #: search/searchrule/searchrule.cpp:226
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has not an invitation"
 msgstr "Organizácia"
 
@@ -2545,25 +2405,21 @@ msgstr "Reťazec je prázdny."
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 #: search/widgethandler/invitationwidgethandler.cpp:17
 msgid "has"
-msgstr ""
+msgstr "obsahuje"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 #: search/widgethandler/invitationwidgethandler.cpp:17
-#, fuzzy
-#| msgid "is not"
 msgid "has not"
 msgstr "nie je"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:51
-#, fuzzy, kde-format
-#| msgid "Attachment:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
 msgstr "Príloha:"
 
 #: search/widgethandler/attachmentwidgethandler.cpp:88
-#, fuzzy, kde-format
-#| msgid "has an attachment"
+#, kde-format
 msgid "has attachment"
 msgstr "má prílohu"
 
@@ -2606,8 +2462,7 @@ msgid "is not"
 msgstr "nie je"
 
 #: search/widgethandler/encryptionwidgethandler.cpp:51
-#, fuzzy, kde-format
-#| msgid "encrypted"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "šifrované"
@@ -2683,15 +2538,13 @@ msgid "is not in address book"
 msgstr "nie je v adresári"
 
 #: search/widgethandler/invitationwidgethandler.cpp:51
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
 msgstr "Organizácia"
 
 #: search/widgethandler/invitationwidgethandler.cpp:88
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has invitation"
 msgstr "Organizácia"
 
@@ -2728,10 +2581,7 @@ msgid " kB"
 msgstr " KB"
 
 #: search/widgethandler/numericrulewidgethandler.cpp:157
-#, fuzzy, kde-format
-#| msgctxt "Unit suffix where units are days."
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Unit suffix where units are days."
 msgid "%v day"
 msgid_plural "%v days"
@@ -2810,15 +2660,13 @@ msgid "Has Attachment"
 msgstr "Má prílohu"
 
 #: snippets/snippetattachmentwidget.cpp:28
-#, fuzzy, kde-format
-#| msgid "Click on button for selecting attachment file"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Click on button for selecting attachment file"
 msgstr "Kliknite na tlačidlo pre výber súboru prílohy"
 
 #: snippets/snippetattachmentwidget.cpp:34
-#, fuzzy, kde-format
-#| msgid "Select Attachments"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
 msgstr "Vyberte prílohy"
@@ -2826,33 +2674,29 @@ msgstr "Vyberte prílohy"
 #: snippets/snippetattachmentwidget.cpp:35
 #, kde-format
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
-#, fuzzy, kde-format
-#| msgid "Select Attachments"
+#, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
 msgstr "Vyberte prílohy"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Rename"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Filename:"
-msgstr "Premenovať"
+msgstr "Názov súboru:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, fuzzy, kde-format
-#| msgid "Variables"
+#, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Premenné"
 
 #: snippets/snippetselectattachmentdialog.cpp:26
 #: snippets/snippetselectattachmentwidget.cpp:52
-#, fuzzy, kde-format
-#| msgid "Select Attachments"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
 msgstr "Vyberte prílohy"
@@ -2924,53 +2768,43 @@ msgid "Snippet %1"
 msgstr "Úryvok %1"
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
-msgstr "Pridať úryvok"
+msgstr "Pridať úryvok..."
 
 #: snippets/snippetsmanager.cpp:562
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Edit Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
-msgstr "Upraviť úryvok"
+msgstr "Upraviť úryvok..."
 
 #: snippets/snippetsmanager.cpp:564
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Odstrániť úryvok"
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Group"
+#, kde-format
 msgctxt "@action"
 msgid "Add Group…"
-msgstr "Pridať skupinu"
+msgstr "Pridať skupinu..."
 
 #: snippets/snippetsmanager.cpp:569
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
+#, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
 msgstr "Premenovať skupinu..."
 
 #: snippets/snippetsmanager.cpp:571
-#, fuzzy, kde-format
-#| msgid "Remove Group"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Group"
 msgstr "Odstrániť skupinu"
 
 #: snippets/snippetsmanager.cpp:574
-#, fuzzy, kde-format
-#| msgid "Insert Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
 msgstr "Vložiť úryvok"
@@ -2981,18 +2815,16 @@ msgid "Do you want to update snippet?"
 msgstr "Chcete aktualizovať úryvok?"
 
 #: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:554
-#, fuzzy, kde-format
-#| msgid "Update snippet"
+#, kde-format
 msgctxt "@title:window"
 msgid "Update snippet"
 msgstr "Aktualizovať úryvok"
 
 #: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
-#, fuzzy, kde-format
-#| msgid "Update snippet"
+#, kde-format
 msgctxt "@action:button"
 msgid "Update"
-msgstr "Aktualizovať úryvok"
+msgstr "Aktualizovať"
 
 #: snippets/snippettreeview.cpp:65
 #, kde-format
@@ -3000,22 +2832,19 @@ msgid "Text Snippets"
 msgstr "Textové útržky"
 
 #: snippets/snippetvariabledialog.cpp:37
-#, fuzzy, kde-format
-#| msgid "Enter Values for Variables"
+#, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Zadať hodnoty pre premenné"
 
 #: snippets/snippetvariabledialog.cpp:40
-#, fuzzy, kde-format
-#| msgid "Enter the replacement values for '%1':"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Zadať náhradné hodnoty pre '%1':"
 
 #: snippets/snippetvariabledialog.cpp:45
-#, fuzzy, kde-format
-#| msgid "Make value &default"
+#, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Spraviť hodnotu pre&dvolenú"
@@ -3050,6 +2879,10 @@ msgid ""
 "then type \\greeting in your email and then press the tab key, and it will "
 "be replaced with the contents of this snippet."
 msgstr ""
+"Zadajte tu kľúčové slovo na umožnenie rýchleho vloženia tohto úryvku počas "
+"písania e-mailu. Napríklad ak zvolíte \"greeting\" ako kľúčové slovo, môžete "
+"potom do e-mailu napísať \\greeting a stlačiť kláves Tab, čím sa nahradí "
+"obsahom tohto úryvku."
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
 #: snippets/ui/snippetwidget.ui:32
@@ -3102,10 +2935,9 @@ msgstr "Premenné"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: snippets/ui/snippetwidget.ui:181
-#, fuzzy, kde-format
-#| msgid "Attachment:"
+#, kde-format
 msgid "Attachments:"
-msgstr "Príloha:"
+msgstr "Prílohy:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: snippets/ui/snippetwidget.ui:193
@@ -3120,8 +2952,7 @@ msgid "Sho&rtcut:"
 msgstr "Skratka:"
 
 #: tag/addtagdialog.cpp:39
-#, fuzzy, kde-format
-#| msgid "Add Tag"
+#, kde-format
 msgctxt "@title:window"
 msgid "Add Tag"
 msgstr "Pridať značku"
@@ -3138,57 +2969,49 @@ msgid "Name:"
 msgstr "Názov:"
 
 #: tag/tagwidget.cpp:70
-#, fuzzy, kde-format
-#| msgid "Change te&xt color:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "Zmeniť farbu textu:"
 
 #: tag/tagwidget.cpp:82
-#, fuzzy, kde-format
-#| msgid "Change &background color:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "Zmeniť farbu pozadia:"
 
 #: tag/tagwidget.cpp:94
-#, fuzzy, kde-format
-#| msgid "Change fo&nt:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "Zmeniť písmo:"
 
 #: tag/tagwidget.cpp:100
-#, fuzzy, kde-format
-#| msgid "&Bold"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Bold"
 msgstr "&Tučné"
 
 #: tag/tagwidget.cpp:104
-#, fuzzy, kde-format
-#| msgid "&Italics"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Italics"
 msgstr "Kurzíva"
 
 #: tag/tagwidget.cpp:122
-#, fuzzy, kde-format
-#| msgid "Message tag &icon:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "Ikona značky správy:"
 
 #: tag/tagwidget.cpp:133
-#, fuzzy, kde-format
-#| msgid "Shortc&ut:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "Skrat&ka:"
 
 #: tag/tagwidget.cpp:144
-#, fuzzy, kde-format
-#| msgid "Enable &toolbar button"
+#, kde-format
 msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Povoliť tlačidlo panelu nástrojov"
@@ -3204,22 +3027,19 @@ msgid "Mode"
 msgstr "Režim"
 
 #: widgets/favoritecollectionwidget.cpp:114
-#, fuzzy, kde-format
-#| msgid "List Mode"
+#, kde-format
 msgctxt "@action"
 msgid "List Mode"
 msgstr "Režim zoznamu"
 
 #: widgets/favoritecollectionwidget.cpp:124
-#, fuzzy, kde-format
-#| msgid "Icon Mode"
+#, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Režim ikon"
 
 #: widgets/favoritecollectionwidget.cpp:235
-#, fuzzy, kde-format
-#| msgid "Drop your favorite folders here..."
+#, kde-format
 msgid "Drop your favorite folders here…"
 msgstr "Pustite vaše obľúbené priečinky tu ..."
 
@@ -3239,15 +3059,13 @@ msgid "Resend-Bcc:"
 msgstr "Preposlať-Bcc:"
 
 #: widgets/redirectdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Redirect Message"
+#, kde-format
 msgctxt "@title:window"
 msgid "Redirect Message"
 msgstr "Presmerovať správu"
 
 #: widgets/redirectdialog.cpp:123
-#, fuzzy, kde-format
-#| msgid "Select the recipient addresses to redirect to:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr "Vyberte adresy príjemcov, na ktoré chcete presmerovať:"
@@ -3263,15 +3081,13 @@ msgid "Transport:"
 msgstr "Prenos:"
 
 #: widgets/redirectdialog.cpp:158
-#, fuzzy, kde-format
-#| msgid "&Send Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "Po&slať teraz"
 
 #: widgets/redirectdialog.cpp:159
-#, fuzzy, kde-format
-#| msgid "Send &Later"
+#, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "Po&slať neskôr"
@@ -3282,15 +3098,13 @@ msgid "You cannot redirect the message without an address."
 msgstr "Nemôžete presmerovať správu bez adresy."
 
 #: widgets/redirectdialog.cpp:207
-#, fuzzy, kde-format
-#| msgid "Empty Redirection Address"
+#, kde-format
 msgctxt "@title:window"
 msgid "Empty Redirection Address"
 msgstr "Prázdna adresa presmerovania"
 
 #: widgets/redirectwidget.cpp:39
-#, fuzzy, kde-format
-#| msgid "Use the Address-Selection Dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Use the Address-Selection Dialog"
 msgstr "Použiť dialóg pre výber adresy"
@@ -3326,7 +3140,6 @@ msgstr ""
 #~ msgstr "Pridať skupinu..."
 
 #, fuzzy
-#~| msgid "Message Disposition Notification Request"
 #~ msgctxt "@title:window"
 #~ msgid "Message Disposition Notification Request"
 #~ msgstr "Požiadavka na oznámenie o doručení správy"
@@ -3419,12 +3232,10 @@ msgstr ""
 #~ msgstr "&Názov:"
 
 #, fuzzy
-#~| msgid "Message Tag"
 #~ msgid "Message List"
 #~ msgstr "Značka správy"
 
 #, fuzzy
-#~| msgid "Organization"
 #~ msgid "Aggregation"
 #~ msgstr "Organizácia"
 
@@ -3432,7 +3243,6 @@ msgstr ""
 #~ msgstr "Oddeľte adresy čiarkou"
 
 #, fuzzy
-#~| msgid "No filter was imported."
 #~ msgid "File was shared."
 #~ msgstr "Žiadny filter nebol importovaný."
 
