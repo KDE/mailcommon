@@ -383,7 +383,7 @@ target_link_libraries(
         KPim6::MessageCore
         KPim6::TemplateParser
         KPim6::MessageList
-        KPim6::Mime
+        KF6::Mime
         KPim6::MailTransport
         KF6::XmlGui
         KF6::KIOWidgets
