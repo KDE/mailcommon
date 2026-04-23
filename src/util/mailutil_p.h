@@ -9,7 +9,6 @@
 #include "mailcommon_export.h"
 #include "mailutil.h"
 
-#include <Akonadi/AgentInstance>
 #include <Akonadi/Collection>
 
 namespace MailCommon

@@ -12,7 +12,6 @@
 #include <Libkdepim/KWidgetLister>
 
 #include <QByteArray>
-#include <QGroupBox>
 
 class KComboBox;
 class QPushButton;

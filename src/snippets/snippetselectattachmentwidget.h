@@ -8,7 +8,6 @@
 
 #include "mailcommon_private_export.h"
 #include <PimCommon/SimpleStringListEditor>
-#include <QWidget>
 namespace PimCommon
 {
 class SimpleStringListEditor;
