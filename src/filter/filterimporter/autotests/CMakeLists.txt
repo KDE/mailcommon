@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR})
-add_akonadi_isolated_test_advanced(filterimportclawmailtest.cpp filtertestkernel.cpp "KPim6::MailCommon")
-add_akonadi_isolated_test_advanced(filterimportthunderbirdtest.cpp filtertestkernel.cpp "KPim6::MailCommon")
-add_akonadi_isolated_test_advanced(filterimportbalsatest.cpp filtertestkernel.cpp "KPim6::MailCommon")
-add_akonadi_isolated_test_advanced(filterimportevolutiontest.cpp filtertestkernel.cpp "KPim6::MailCommon")
-add_akonadi_isolated_test_advanced(filterimportprocmailtest.cpp filtertestkernel.cpp "KPim6::MailCommon")
-add_akonadi_isolated_test_advanced(filterimportsylpheedtest.cpp filtertestkernel.cpp "KPim6::MailCommon")
-add_akonadi_isolated_test_advanced(filterimportergmailtest.cpp filtertestkernel.cpp "KPim6::MailCommon")
+add_akonadi_isolated_test(SOURCE filterimportclawmailtest.cpp ADDITIONAL_SOURCES filtertestkernel.cpp LINK_LIBRARIES KPim6::MailCommon)
+add_akonadi_isolated_test(SOURCE filterimportthunderbirdtest.cpp ADDITIONAL_SOURCES filtertestkernel.cpp LINK_LIBRARIES KPim6::MailCommon)
+add_akonadi_isolated_test(SOURCE filterimportbalsatest.cpp ADDITIONAL_SOURCES filtertestkernel.cpp LINK_LIBRARIES KPim6::MailCommon)
+add_akonadi_isolated_test(SOURCE filterimportevolutiontest.cpp ADDITIONAL_SOURCES filtertestkernel.cpp LINK_LIBRARIES KPim6::MailCommon)
+add_akonadi_isolated_test(SOURCE filterimportprocmailtest.cpp ADDITIONAL_SOURCES filtertestkernel.cpp LINK_LIBRARIES KPim6::MailCommon)
+add_akonadi_isolated_test(SOURCE filterimportsylpheedtest.cpp ADDITIONAL_SOURCES filtertestkernel.cpp LINK_LIBRARIES KPim6::MailCommon)
+add_akonadi_isolated_test(SOURCE filterimportergmailtest.cpp ADDITIONAL_SOURCES filtertestkernel.cpp LINK_LIBRARIES KPim6::MailCommon)

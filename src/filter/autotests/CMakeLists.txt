@@ -20,7 +20,7 @@ endmacro()
 
 macro(add_mailcommon_filter_akonadi_test _name _sources)
     set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR})
-    add_akonadi_isolated_test_advanced(${_name} "${ARGN}" "${mailcommon_filter_test_LIBS}")
+    add_akonadi_isolated_test(SOURCE ${_name} ADDITIONAL_SOURCES ${ARGN} LINK_LIBRARIES ${mailcommon_filter_test_LIBS})
 endmacro()
 
 add_mailcommon_filter_test(itemcontexttest
