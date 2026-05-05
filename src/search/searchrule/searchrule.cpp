@@ -61,9 +61,7 @@ SearchRule::SearchRule(const QByteArray &field, Function func, const QString &co
 {
 }
 
-SearchRule::SearchRule(const SearchRule &other)
-
-    = default;
+SearchRule::SearchRule(const SearchRule &other) = default;
 
 const SearchRule &SearchRule::operator=(const SearchRule &other)
 {
