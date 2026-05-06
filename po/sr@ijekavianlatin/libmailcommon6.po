@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-04 00:46+0000\n"
+"POT-Creation-Date: 2026-05-06 00:47+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -2383,101 +2383,101 @@ msgstr "Uklopi sve poruke"
 msgid "Filter criteria:"
 msgstr "Kriterijumi filtera"
 
-#: search/searchrule/searchrule.cpp:187
+#: search/searchrule/searchrule.cpp:185
 #, kde-format
 msgid "equal"
 msgstr "jednako"
 
-#: search/searchrule/searchrule.cpp:190
+#: search/searchrule/searchrule.cpp:188
 #, kde-format
 msgid "not equal"
 msgstr "nije jednako"
 
-#: search/searchrule/searchrule.cpp:193
+#: search/searchrule/searchrule.cpp:191
 #, kde-format
 msgid "is greater"
 msgstr "veće"
 
-#: search/searchrule/searchrule.cpp:196
+#: search/searchrule/searchrule.cpp:194
 #, kde-format
 msgid "is less or equal"
 msgstr "manje ili jednako"
 
-#: search/searchrule/searchrule.cpp:199
+#: search/searchrule/searchrule.cpp:197
 #, kde-format
 msgid "is less"
 msgstr "manje"
 
-#: search/searchrule/searchrule.cpp:202
+#: search/searchrule/searchrule.cpp:200
 #, kde-format
 msgid "is greater or equal"
 msgstr "veće ili jednako"
 
-#: search/searchrule/searchrule.cpp:205
+#: search/searchrule/searchrule.cpp:203
 #, kde-format
 msgid "is in addressbook"
 msgstr "u adresaru"
 
-#: search/searchrule/searchrule.cpp:208
+#: search/searchrule/searchrule.cpp:206
 #, kde-format
 msgid "is not in addressbook"
 msgstr "nije u adresaru"
 
-#: search/searchrule/searchrule.cpp:211 search/searchrule/searchrule.cpp:214
+#: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
 #, kde-format
 msgid "is in category"
 msgstr "u kategoriji"
 
-#: search/searchrule/searchrule.cpp:217
+#: search/searchrule/searchrule.cpp:215
 #: search/widgethandler/messagerulewidgethandler.cpp:28
 #: search/widgethandler/messagerulewidgethandler.cpp:145
 #, kde-format
 msgid "has an attachment"
 msgstr "ima prilog"
 
-#: search/searchrule/searchrule.cpp:220
+#: search/searchrule/searchrule.cpp:218
 #, kde-format
 msgid "has not an attachment"
 msgstr "nema prilog"
 
-#: search/searchrule/searchrule.cpp:223
+#: search/searchrule/searchrule.cpp:221
 #, fuzzy, kde-format
 #| msgid "Organization"
 msgid "has an invitation"
 msgstr "organizacija"
 
-#: search/searchrule/searchrule.cpp:226
+#: search/searchrule/searchrule.cpp:224
 #, fuzzy, kde-format
 #| msgid "Organization"
 msgid "has not an invitation"
 msgstr "organizacija"
 
-#: search/searchrule/searchrule.cpp:229
+#: search/searchrule/searchrule.cpp:227
 #, kde-format
 msgid "start with"
 msgstr "počinje sa"
 
-#: search/searchrule/searchrule.cpp:232
+#: search/searchrule/searchrule.cpp:230
 #, kde-format
 msgid "not start with"
 msgstr "ne počinje sa"
 
-#: search/searchrule/searchrule.cpp:235
+#: search/searchrule/searchrule.cpp:233
 #, kde-format
 msgid "end with"
 msgstr "završava se sa"
 
-#: search/searchrule/searchrule.cpp:238
+#: search/searchrule/searchrule.cpp:236
 #, kde-format
 msgid "not end with"
 msgstr "ne završava se sa"
 
-#: search/searchrule/searchrule.cpp:241
+#: search/searchrule/searchrule.cpp:239
 #, kde-format
 msgid "none"
 msgstr "ništa"
 
-#: search/searchrule/searchrule.cpp:244
+#: search/searchrule/searchrule.cpp:242
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
 #: search/widgethandler/tagrulewidgethandler.cpp:93
@@ -2486,74 +2486,74 @@ msgstr "ništa"
 msgid "contains"
 msgstr "sadrži"
 
-#: search/searchrule/searchrule.cpp:247
+#: search/searchrule/searchrule.cpp:245
 #, kde-format
 msgid "not contains"
 msgstr "ne sadrži"
 
-#: search/searchrule/searchrule.cpp:250
+#: search/searchrule/searchrule.cpp:248
 #, kde-format
 msgid "has regexp"
 msgstr "ima regiz"
 
-#: search/searchrule/searchrule.cpp:253
+#: search/searchrule/searchrule.cpp:251
 #, kde-format
 msgid "not regexp"
 msgstr "nije regiz"
 
-#: search/searchrule/searchrule.cpp:267
+#: search/searchrule/searchrule.cpp:265
 #, kde-format
 msgid "size equals not supported"
 msgstr "„veličina jednaka“ nije podržano"
 
-#: search/searchrule/searchrule.cpp:270
+#: search/searchrule/searchrule.cpp:268
 #, kde-format
 msgid "size not equals not supported"
 msgstr "„veličina nije jednaka“ nije podržano"
 
-#: search/searchrule/searchrule.cpp:303 search/searchrule/searchrule.cpp:411
-#: search/searchrule/searchrule.cpp:494
+#: search/searchrule/searchrule.cpp:301 search/searchrule/searchrule.cpp:409
+#: search/searchrule/searchrule.cpp:492
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "„%1“ nije podržano sa uslovom „%2“"
 
-#: search/searchrule/searchrule.cpp:309
+#: search/searchrule/searchrule.cpp:307
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> nije izvedeno/podržano"
 
 # literal-segment: any header
-#: search/searchrule/searchrule.cpp:312
+#: search/searchrule/searchrule.cpp:310
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<any header> nije izvedeno/podržano"
 
-#: search/searchrule/searchrule.cpp:315
+#: search/searchrule/searchrule.cpp:313
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<contents> nije izvedeno/podržano"
 
-#: search/searchrule/searchrule.cpp:318
+#: search/searchrule/searchrule.cpp:316
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<age in days> nije izvedeno/podržano"
 
-#: search/searchrule/searchrule.cpp:321
+#: search/searchrule/searchrule.cpp:319
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<date> nije izvedeno/podržano"
 
-#: search/searchrule/searchrule.cpp:324
+#: search/searchrule/searchrule.cpp:322
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<recipients> nije izvedeno/podržano"
 
-#: search/searchrule/searchrule.cpp:326
+#: search/searchrule/searchrule.cpp:324
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "<tag> nije podržano"
 
-#: search/searchrule/searchrule.cpp:329
+#: search/searchrule/searchrule.cpp:327
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<message> nije izvedeno/podržano"

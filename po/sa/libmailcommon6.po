@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-04 00:46+0000\n"
+"POT-Creation-Date: 2026-05-06 00:47+0000\n"
 "PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -2183,101 +2183,101 @@ msgstr "सर्वेषां सन्देशानां मेलनं 
 msgid "Filter criteria:"
 msgstr "फ़िल्टर मापदण्डः :"
 
-#: search/searchrule/searchrule.cpp:187
+#: search/searchrule/searchrule.cpp:185
 #, kde-format
 msgid "equal"
 msgstr "समान"
 
-#: search/searchrule/searchrule.cpp:190
+#: search/searchrule/searchrule.cpp:188
 #, kde-format
 msgid "not equal"
 msgstr "न समः"
 
-#: search/searchrule/searchrule.cpp:193
+#: search/searchrule/searchrule.cpp:191
 #, kde-format
 msgid "is greater"
 msgstr "अधिकः इति"
 
-#: search/searchrule/searchrule.cpp:196
+#: search/searchrule/searchrule.cpp:194
 #, kde-format
 msgid "is less or equal"
 msgstr "न्यूनं वा समं वा भवति"
 
-#: search/searchrule/searchrule.cpp:199
+#: search/searchrule/searchrule.cpp:197
 #, kde-format
 msgid "is less"
 msgstr "न्यूनम् इति"
 
-#: search/searchrule/searchrule.cpp:202
+#: search/searchrule/searchrule.cpp:200
 #, kde-format
 msgid "is greater or equal"
 msgstr "महत्तरं समं वा भवति"
 
-#: search/searchrule/searchrule.cpp:205
+#: search/searchrule/searchrule.cpp:203
 #, kde-format
 msgid "is in addressbook"
 msgstr "पतापुस्तके अस्ति"
 
-#: search/searchrule/searchrule.cpp:208
+#: search/searchrule/searchrule.cpp:206
 #, kde-format
 msgid "is not in addressbook"
 msgstr "पतापुस्तिकायां नास्ति"
 
-#: search/searchrule/searchrule.cpp:211 search/searchrule/searchrule.cpp:214
+#: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
 #, kde-format
 msgid "is in category"
 msgstr "वर्गे अस्ति"
 
-#: search/searchrule/searchrule.cpp:217
+#: search/searchrule/searchrule.cpp:215
 #: search/widgethandler/messagerulewidgethandler.cpp:28
 #: search/widgethandler/messagerulewidgethandler.cpp:145
 #, kde-format
 msgid "has an attachment"
 msgstr "आसक्तिः अस्ति"
 
-#: search/searchrule/searchrule.cpp:220
+#: search/searchrule/searchrule.cpp:218
 #, kde-format
 msgid "has not an attachment"
 msgstr "नास्ति आसक्तिः"
 
-#: search/searchrule/searchrule.cpp:223
+#: search/searchrule/searchrule.cpp:221
 #, fuzzy, kde-format
 #| msgid "has invitation"
 msgid "has an invitation"
 msgstr "आमन्त्रणं भवति"
 
-#: search/searchrule/searchrule.cpp:226
+#: search/searchrule/searchrule.cpp:224
 #, fuzzy, kde-format
 #| msgid "has invitation"
 msgid "has not an invitation"
 msgstr "आमन्त्रणं भवति"
 
-#: search/searchrule/searchrule.cpp:229
+#: search/searchrule/searchrule.cpp:227
 #, kde-format
 msgid "start with"
 msgstr "आरभ्यताम्"
 
-#: search/searchrule/searchrule.cpp:232
+#: search/searchrule/searchrule.cpp:230
 #, kde-format
 msgid "not start with"
 msgstr "न आरभ्यते"
 
-#: search/searchrule/searchrule.cpp:235
+#: search/searchrule/searchrule.cpp:233
 #, kde-format
 msgid "end with"
 msgstr "समाप्तम्"
 
-#: search/searchrule/searchrule.cpp:238
+#: search/searchrule/searchrule.cpp:236
 #, kde-format
 msgid "not end with"
 msgstr "न समाप्तं भवति"
 
-#: search/searchrule/searchrule.cpp:241
+#: search/searchrule/searchrule.cpp:239
 #, kde-format
 msgid "none"
 msgstr "न कश्चित्"
 
-#: search/searchrule/searchrule.cpp:244
+#: search/searchrule/searchrule.cpp:242
 #: search/widgethandler/headersrulerwidgethandler.cpp:25
 #: search/widgethandler/messagerulewidgethandler.cpp:24
 #: search/widgethandler/tagrulewidgethandler.cpp:93
@@ -2286,73 +2286,73 @@ msgstr "न कश्चित्"
 msgid "contains"
 msgstr "भरति"
 
-#: search/searchrule/searchrule.cpp:247
+#: search/searchrule/searchrule.cpp:245
 #, kde-format
 msgid "not contains"
 msgstr "न समाहितम्"
 
-#: search/searchrule/searchrule.cpp:250
+#: search/searchrule/searchrule.cpp:248
 #, kde-format
 msgid "has regexp"
 msgstr "has regexp"
 
-#: search/searchrule/searchrule.cpp:253
+#: search/searchrule/searchrule.cpp:251
 #, kde-format
 msgid "not regexp"
 msgstr "न रेगेक्सप्"
 
-#: search/searchrule/searchrule.cpp:267
+#: search/searchrule/searchrule.cpp:265
 #, kde-format
 msgid "size equals not supported"
 msgstr "आकारः समः समर्थितः नास्ति"
 
-#: search/searchrule/searchrule.cpp:270
+#: search/searchrule/searchrule.cpp:268
 #, kde-format
 msgid "size not equals not supported"
 msgstr "आकारः न समः न समर्थितः"
 
-#: search/searchrule/searchrule.cpp:303 search/searchrule/searchrule.cpp:411
-#: search/searchrule/searchrule.cpp:494
+#: search/searchrule/searchrule.cpp:301 search/searchrule/searchrule.cpp:409
+#: search/searchrule/searchrule.cpp:492
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "\"%1\" \"%2\" कण्डिशन् सह समर्थितः नास्ति ।"
 
-#: search/searchrule/searchrule.cpp:309
+#: search/searchrule/searchrule.cpp:307
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> न कार्यान्वितम्/समर्थितम्"
 
-#: search/searchrule/searchrule.cpp:312
+#: search/searchrule/searchrule.cpp:310
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<any header> न कार्यान्वितम्/समर्थितम्"
 
-#: search/searchrule/searchrule.cpp:315
+#: search/searchrule/searchrule.cpp:313
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<contents> न कार्यान्वितम्/समर्थितम्"
 
-#: search/searchrule/searchrule.cpp:318
+#: search/searchrule/searchrule.cpp:316
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<वयः दिवसेषु> न कार्यान्वितम्/समर्थितम्"
 
-#: search/searchrule/searchrule.cpp:321
+#: search/searchrule/searchrule.cpp:319
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<date> न कार्यान्वितम्/समर्थितम्"
 
-#: search/searchrule/searchrule.cpp:324
+#: search/searchrule/searchrule.cpp:322
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<recipients> न कार्यान्वितम्/समर्थितम्"
 
-#: search/searchrule/searchrule.cpp:326
+#: search/searchrule/searchrule.cpp:324
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "<Tag> समर्थितं नास्ति"
 
-#: search/searchrule/searchrule.cpp:329
+#: search/searchrule/searchrule.cpp:327
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<message> न कार्यान्वितम्/समर्थितम्"
