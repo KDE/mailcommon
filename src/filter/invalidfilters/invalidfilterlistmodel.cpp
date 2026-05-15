@@ -17,6 +17,9 @@ InvalidFilterListModel::~InvalidFilterListModel() = default;
 
 bool InvalidFilterListModel::insertRows(int row, int count, const QModelIndex &parent)
 {
+    if (parent.isValid()) {
+        return false;
+    }
     if (row > rowCount()) {
         return false;
     }
