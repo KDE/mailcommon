@@ -182,7 +182,7 @@ void FolderSelectionDialog::slotAddChildFolder()
 
         Akonadi::Collection col;
         col.setName(name);
-        col.parentCollection().setId(parentCol.id());
+        col.setParentCollection(parentCol);
         auto job = new Akonadi::CollectionCreateJob(col);
         connect(job, &Akonadi::CollectionCreateJob::result, this, &FolderSelectionDialog::collectionCreationResult);
     }
