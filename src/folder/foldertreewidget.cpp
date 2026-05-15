@@ -221,7 +221,7 @@ Akonadi::Collection::List FolderTreeWidget::selectedCollections() const
 {
     Akonadi::Collection::List collections;
     const QItemSelectionModel *selectionModel = d->folderTreeView->selectionModel();
-    const QModelIndexList selectedIndexes = selectionModel->selectedIndexes();
+    const QModelIndexList selectedIndexes = selectionModel->selectedRows();
     for (const QModelIndex &index : selectedIndexes) {
         if (index.isValid()) {
             const auto collection = index.model()->data(index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
