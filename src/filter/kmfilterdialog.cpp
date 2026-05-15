@@ -677,12 +677,12 @@ void KMFilterDialog::slotExportFilters()
 {
     bool wasCanceled = false;
     const QList<MailFilter *> filters = mFilterList->filtersForSaving(false, wasCanceled);
-    if (filters.isEmpty()) {
-        KMessageBox::information(this, i18n("Any filter found."));
-        return;
-    }
     if (wasCanceled) {
         qDeleteAll(filters);
+        return;
+    }
+    if (filters.isEmpty()) {
+        KMessageBox::information(this, i18n("No filter found."));
         return;
     }
     FilterImporterExporter exporter(this);
