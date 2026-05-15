@@ -134,6 +134,8 @@ bool EntityCollectionOrderProxyModel::lessThan(const QModelIndex &left, const QM
 
     if (MailCommon::Util::isUnifiedMailboxesAgent(leftData)) {
         return true;
+    } else if (MailCommon::Util::isUnifiedMailboxesAgent(rightData)) {
+        return false;
     } else {
         return EntityOrderProxyModel::lessThan(left, right);
     }
