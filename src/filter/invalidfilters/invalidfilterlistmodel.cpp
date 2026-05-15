@@ -41,7 +41,7 @@ bool InvalidFilterListModel::insertRows(int row, int count, const QModelIndex &p
 bool InvalidFilterListModel::setData(const QModelIndex &index, const QVariant &value, int role)
 {
     const int row = index.row();
-    if (row >= rowCount()) {
+    if (!index.isValid() || row < 0 || row >= rowCount()) {
         return false;
     }
 
@@ -63,7 +63,7 @@ bool InvalidFilterListModel::setData(const QModelIndex &index, const QVariant &v
 QVariant InvalidFilterListModel::data(const QModelIndex &index, int role) const
 {
     const int row = index.row();
-    if (row < rowCount()) {
+    if (index.isValid() && row >= 0 && row < rowCount()) {
         switch (role) {
         case Qt::DisplayRole:
             return mInvalidFilterItems[row].name();
