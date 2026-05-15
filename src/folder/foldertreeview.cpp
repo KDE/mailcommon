@@ -491,12 +491,12 @@ bool FolderTreeView::isUnreadFolder(const QModelIndex &current, QModelIndex &ind
         }
 
         if (index.isValid()) {
-            const auto collection = index.model()->data(current, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+            const auto collection = index.model()->data(index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
             if (collection.isValid()) {
                 if (collection.statistics().unreadCount() > 0) {
                     if (!confirm) {
-                        selectModelIndex(current);
+                        selectModelIndex(index);
                         return true;
                     } else {
                         // Skip drafts, sent mail and templates as well, when reading mail with the
@@ -523,7 +523,7 @@ bool FolderTreeView::isUnreadFolder(const QModelIndex &current, QModelIndex &ind
                             return true; // assume selected (do not continue looping)
                         }
 
-                        selectModelIndex(current);
+                        selectModelIndex(index);
                         return true;
                     }
                 }
