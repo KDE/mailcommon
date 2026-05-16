@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-06 00:47+0000\n"
+"POT-Creation-Date: 2026-05-16 00:44+0000\n"
 "PO-Revision-Date: 2021-01-13 17:59+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -1328,10 +1328,10 @@ msgstr ""
 msgid "Filters which were imported:"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:681
-#, kde-format
-msgid "Any filter found."
-msgstr ""
+#: filter/kmfilterdialog.cpp:685
+#, fuzzy, kde-format
+msgid "No filter found."
+msgstr "Inga mappe vald"
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format

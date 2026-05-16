@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-06 00:47+0000\n"
+"POT-Creation-Date: 2026-05-16 00:44+0000\n"
 "PO-Revision-Date: 2026-01-10 11:53+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -1394,9 +1394,10 @@ msgstr "No s'ha importat cap filtre."
 msgid "Filters which were imported:"
 msgstr "Filtres que s'han importat:"
 
-#: filter/kmfilterdialog.cpp:681
-#, kde-format
-msgid "Any filter found."
+#: filter/kmfilterdialog.cpp:685
+#, fuzzy, kde-format
+#| msgid "Any filter found."
+msgid "No filter found."
 msgstr "Qualsevol filtre trobat."
 
 #: filter/kmfilterdialog.cpp:710

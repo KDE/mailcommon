@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-06 00:47+0000\n"
+"POT-Creation-Date: 2026-05-16 00:44+0000\n"
 "PO-Revision-Date: 2025-08-29 16:53+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -1372,9 +1372,10 @@ msgstr "Netika importēts neviens filtrs."
 msgid "Filters which were imported:"
 msgstr "Importētie filtri:"
 
-#: filter/kmfilterdialog.cpp:681
-#, kde-format
-msgid "Any filter found."
+#: filter/kmfilterdialog.cpp:685
+#, fuzzy, kde-format
+#| msgid "Any filter found."
+msgid "No filter found."
 msgstr "Atrasts jebkāds filtrs."
 
 #: filter/kmfilterdialog.cpp:710

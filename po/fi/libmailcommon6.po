@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-06 00:47+0000\n"
+"POT-Creation-Date: 2026-05-16 00:44+0000\n"
 "PO-Revision-Date: 2025-01-12 16:55+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -1376,9 +1376,10 @@ msgstr "Yhtään suodatinta ei tuotu."
 msgid "Filters which were imported:"
 msgstr "Tuodut suodattimet:"
 
-#: filter/kmfilterdialog.cpp:681
-#, kde-format
-msgid "Any filter found."
+#: filter/kmfilterdialog.cpp:685
+#, fuzzy, kde-format
+#| msgid "Any filter found."
+msgid "No filter found."
 msgstr "Mikä tahansa löytynyt suodatin."
 
 #: filter/kmfilterdialog.cpp:710

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-06 00:47+0000\n"
+"POT-Creation-Date: 2026-05-16 00:44+0000\n"
 "PO-Revision-Date: 2015-12-29 20:55+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
@@ -1393,10 +1393,11 @@ msgstr ""
 msgid "Filters which were imported:"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:681
-#, kde-format
-msgid "Any filter found."
-msgstr ""
+#: filter/kmfilterdialog.cpp:685
+#, fuzzy, kde-format
+#| msgid "No folder selected."
+msgid "No filter found."
+msgstr "Nepasirinkote aplanko."
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format

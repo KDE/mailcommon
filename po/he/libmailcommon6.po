@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-06 00:47+0000\n"
+"POT-Creation-Date: 2026-05-16 00:44+0000\n"
 "PO-Revision-Date: 2026-04-21 14:10+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -1357,9 +1357,10 @@ msgstr "לא יובאו מסננים."
 msgid "Filters which were imported:"
 msgstr "מסננים שיובאו:"
 
-#: filter/kmfilterdialog.cpp:681
-#, kde-format
-msgid "Any filter found."
+#: filter/kmfilterdialog.cpp:685
+#, fuzzy, kde-format
+#| msgid "Any filter found."
+msgid "No filter found."
 msgstr "מסנן כלשהו נמצא."
 
 #: filter/kmfilterdialog.cpp:710

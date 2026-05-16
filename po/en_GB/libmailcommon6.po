@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-06 00:47+0000\n"
+"POT-Creation-Date: 2026-05-16 00:44+0000\n"
 "PO-Revision-Date: 2024-10-18 17:08+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -1375,9 +1375,10 @@ msgstr "No filter was imported."
 msgid "Filters which were imported:"
 msgstr "Filters which were imported:"
 
-#: filter/kmfilterdialog.cpp:681
-#, kde-format
-msgid "Any filter found."
+#: filter/kmfilterdialog.cpp:685
+#, fuzzy, kde-format
+#| msgid "Any filter found."
+msgid "No filter found."
 msgstr "Any filter found."
 
 #: filter/kmfilterdialog.cpp:710

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-06 00:47+0000\n"
+"POT-Creation-Date: 2026-05-16 00:44+0000\n"
 "PO-Revision-Date: 2014-01-31 19:29+0100\n"
 "Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
 "Language-Team: bs <bs@kde.org>\n"
@@ -1487,10 +1487,11 @@ msgstr "Nema uvezenih filtera"
 msgid "Filters which were imported:"
 msgstr "Filteri koji su bili uvezeni:"
 
-#: filter/kmfilterdialog.cpp:681
-#, kde-format
-msgid "Any filter found."
-msgstr ""
+#: filter/kmfilterdialog.cpp:685
+#, fuzzy, kde-format
+#| msgid "No filter was imported."
+msgid "No filter found."
+msgstr "Nema uvezenih filtera"
 
 #: filter/kmfilterdialog.cpp:710
 #, fuzzy, kde-format

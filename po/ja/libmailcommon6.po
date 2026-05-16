@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-06 00:47+0000\n"
+"POT-Creation-Date: 2026-05-16 00:44+0000\n"
 "PO-Revision-Date: 2012-01-28 16:25-0800\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -1417,10 +1417,11 @@ msgstr "フォルダが選択されていません"
 msgid "Filters which were imported:"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:681
-#, kde-format
-msgid "Any filter found."
-msgstr ""
+#: filter/kmfilterdialog.cpp:685
+#, fuzzy, kde-format
+#| msgid "No Folder Selected"
+msgid "No filter found."
+msgstr "フォルダが選択されていません"
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format

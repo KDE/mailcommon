@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-06 00:47+0000\n"
+"POT-Creation-Date: 2026-05-16 00:44+0000\n"
 "PO-Revision-Date: 2025-01-26 17:37+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -1324,10 +1324,11 @@ msgstr "எந்த வடிகட்டியும் இறக்கமத�
 msgid "Filters which were imported:"
 msgstr "இறக்குமதி செய்யப்பட்டுள்ள வடிகட்டிகள்:"
 
-#: filter/kmfilterdialog.cpp:681
-#, kde-format
-msgid "Any filter found."
-msgstr ""
+#: filter/kmfilterdialog.cpp:685
+#, fuzzy, kde-format
+#| msgid "No filter was imported."
+msgid "No filter found."
+msgstr "எந்த வடிகட்டியும் இறக்கமதி செய்யப்படவில்லை."
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format

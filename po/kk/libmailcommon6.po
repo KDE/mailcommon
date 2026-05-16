@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-06 00:47+0000\n"
+"POT-Creation-Date: 2026-05-16 00:44+0000\n"
 "PO-Revision-Date: 2013-11-01 04:30+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1476,10 +1476,11 @@ msgstr "Ешбір сүзгі импортталмады"
 msgid "Filters which were imported:"
 msgstr "Импортталған сүзгілер:"
 
-#: filter/kmfilterdialog.cpp:681
-#, kde-format
-msgid "Any filter found."
-msgstr ""
+#: filter/kmfilterdialog.cpp:685
+#, fuzzy, kde-format
+#| msgid "No filter was imported."
+msgid "No filter found."
+msgstr "Ешбір сүзгі импортталмады"
 
 #: filter/kmfilterdialog.cpp:710
 #, fuzzy, kde-format
