@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-16 00:44+0000\n"
-"PO-Revision-Date: 2026-01-10 11:53+0100\n"
+"PO-Revision-Date: 2026-05-16 11:47+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -225,7 +225,7 @@ msgstr ""
 "les carpetes de treball, podeu fer que KMail empre la corresponent adreça "
 "del remitent del correu, la signatura i les claus de signatura o encriptació "
 "automàticament. Es poden establir les identitats en el diàleg de "
-"configuració principal. (Configuració -> Configura KMail)"
+"configuració principal. (Configuració → Configura KMail)"
 
 #: collectionpage/collectiongeneralwidget.cpp:66
 #, kde-format
@@ -236,7 +236,7 @@ msgstr "Identitat del &remitent:"
 #, kde-format
 msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
-msgstr "Utilit&za plantilles de missatge personalitzades en esta carpeta"
+msgstr "&Utilitza plantilles de missatge personalitzades en esta carpeta"
 
 #: collectionpage/collectiontemplateswidget.cpp:42
 #, kde-format
@@ -1397,10 +1397,9 @@ msgid "Filters which were imported:"
 msgstr "Filtres que s'han importat:"
 
 #: filter/kmfilterdialog.cpp:685
-#, fuzzy, kde-format
-#| msgid "Any filter found."
+#, kde-format
 msgid "No filter found."
-msgstr "Qualsevol filtre trobat."
+msgstr "No s'ha trobat cap filtre."
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format

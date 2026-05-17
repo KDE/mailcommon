@@ -4,7 +4,7 @@
 #
 # André Marcelo Alvarenga <alvarenga@kde.org>, 2010, 2011, 2012, 2013, 2014, 2015, 2019, 2020.
 # Aracele Torres <araceletorres@gmail.com>, 2010.
-# SPDX-FileCopyrightText: 2011, 2012, 2025, 2026 Marcus Gama <marcus.gama@gmail.com>
+# SPDX-FileCopyrightText: 2011-2012, 2025-2026 Marcus Gama <marcus.gama@gmail.com>
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2011, 2012, 2015, 2018, 2019, 2020, 2021, 2022, 2023.
 # Thiago Masato Costa Sueto <herzenschein@gmail.com>, 2020.
 # SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-16 00:44+0000\n"
-"PO-Revision-Date: 2026-01-10 06:59-0300\n"
+"PO-Revision-Date: 2026-05-16 05:54-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -1393,10 +1393,9 @@ msgid "Filters which were imported:"
 msgstr "Filtros que foram importados:"
 
 #: filter/kmfilterdialog.cpp:685
-#, fuzzy, kde-format
-#| msgid "Any filter found."
+#, kde-format
 msgid "No filter found."
-msgstr "Qualquer filtro encontrado."
+msgstr "Nenhum filtro encontrado."
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format

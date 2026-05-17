@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-16 00:44+0000\n"
-"PO-Revision-Date: 2026-01-10 02:52+0100\n"
+"PO-Revision-Date: 2026-05-16 04:39+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -1382,10 +1382,9 @@ msgid "Filters which were imported:"
 msgstr "ფილტრები, რომლებიც შემოტანილია:"
 
 #: filter/kmfilterdialog.cpp:685
-#, fuzzy, kde-format
-#| msgid "Any filter found."
+#, kde-format
 msgid "No filter found."
-msgstr "ნებისმიერი ნაპოვნი ფილტრი."
+msgstr "ფილტრები აღმოჩენილი არაა."
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format
@@ -3119,24 +3118,3 @@ msgid ""
 msgstr ""
 "ეს ღილაკი ხსნის ცალკე ფანჯარას, სადაც მიმღებები ყველა ხელმისაწვდომი "
 "მისამართიდან შეგიძლიათ, აირჩიოთ."
-
-#~ msgid "Select Attachments"
-#~ msgstr "აირჩიეთ მიმაგრებული ფაილები"
-
-#~ msgid "Add Tag..."
-#~ msgstr "ჭდის დამატება..."
-
-#~ msgid "Save..."
-#~ msgstr "შენახვა..."
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Add Snippet..."
-#~ msgstr "ნაწყვეტის დამატება..."
-
-#~ msgid "Edit Snippet..."
-#~ msgstr "ნაწყვეტის ჩასწორება..."
-
-#~ msgid "Add Group..."
-#~ msgstr "ჯგუფის დამატება..."
