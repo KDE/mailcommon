@@ -11,15 +11,15 @@ msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-16 00:44+0000\n"
-"PO-Revision-Date: 2026-03-13 11:00+0100\n"
-"Last-Translator:  Vít Pelčák <vit@pelcak.org>\n"
+"PO-Revision-Date: 2026-05-19 22:04+0200\n"
+"Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -1376,10 +1376,9 @@ msgid "Filters which were imported:"
 msgstr "Filtry jež byly importovány:"
 
 #: filter/kmfilterdialog.cpp:685
-#, fuzzy, kde-format
-#| msgid "Any filter found."
+#, kde-format
 msgid "No filter found."
-msgstr "Nalezen filtr."
+msgstr "Nebyl nalezen žádný filtr."
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format
