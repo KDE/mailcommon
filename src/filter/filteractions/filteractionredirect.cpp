@@ -45,7 +45,7 @@ FilterAction::ReturnCode FilterActionRedirect::process(ItemContext &context, boo
         return ErrorButGoOn;
     }
 
-    sendMDN(context.item(), KMime::MDN::Dispatched);
+    sendMDN(context.item(), MessageCore::MDN::Dispatched);
 
     if (!KernelIf->msgSender()->send(rmsg, MessageComposer::MessageSender::SendLater)) {
         qCDebug(MAILCOMMON_LOG) << "FilterAction: could not redirect message (sending failed)";

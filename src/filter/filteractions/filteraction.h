@@ -15,8 +15,8 @@
 #include <Akonadi/Collection>
 #include <Akonadi/Item>
 
-#include <KMime/MDN>
 #include <KMime/Message>
+#include <MessageCore/MDN>
 
 #include <QObject>
 
@@ -175,8 +175,8 @@ public:
      * Automates the sending of MDNs from filter actions.
      */
     static void sendMDN(const Akonadi::Item &item,
-                        KMime::MDN::DispositionType d,
-                        const QList<KMime::MDN::DispositionModifier> &m = QList<KMime::MDN::DispositionModifier>());
+                        MessageCore::MDN::DispositionType d,
+                        const QList<MessageCore::MDN::DispositionModifier> &m = QList<MessageCore::MDN::DispositionModifier>());
 
 Q_SIGNALS:
     /*!

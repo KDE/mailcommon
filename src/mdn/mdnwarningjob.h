@@ -88,13 +88,13 @@ public:
      *
      * \return The sending mode
      */
-    [[nodiscard]] KMime::MDN::SendingMode sendingMode() const;
+    [[nodiscard]] MessageCore::MDN::SendingMode sendingMode() const;
     /*!
      * Sets the MDN sending mode.
      *
      * \param newSendingMode The sending mode to set
      */
-    void setSendingMode(KMime::MDN::SendingMode newSendingMode);
+    void setSendingMode(MessageCore::MDN::SendingMode newSendingMode);
 
 Q_SIGNALS:
     /*!
@@ -104,13 +104,13 @@ Q_SIGNALS:
 
 private:
     struct MDNSendingInfo {
-        KMime::MDN::SendingMode mode = KMime::MDN::SendingMode::SentAutomatically;
+        MessageCore::MDN::SendingMode mode = MessageCore::MDN::SendingMode::SentAutomatically;
         bool doSend = false;
     };
     [[nodiscard]] MAILCOMMON_NO_EXPORT MDNSendingInfo modifyItem(const std::shared_ptr<KMime::Message> &msg);
     Akonadi::Item mItem;
     ResponseMDN mResponse = Unknown;
-    KMime::MDN::SendingMode mSendingMode = KMime::MDN::SendingMode::SentAutomatically;
+    MessageCore::MDN::SendingMode mSendingMode = MessageCore::MDN::SendingMode::SentAutomatically;
     IKernel *const mKernel = nullptr;
 };
 }

@@ -14,13 +14,13 @@ using namespace MailCommon;
 
 // if you change this list, also update
 // the count in argsFromString
-static const KMime::MDN::DispositionType mdns[] = {
-    KMime::MDN::Displayed,
-    KMime::MDN::Deleted,
-    KMime::MDN::Dispatched,
-    KMime::MDN::Processed,
-    KMime::MDN::Denied,
-    KMime::MDN::Failed,
+static const MessageCore::MDN::DispositionType mdns[] = {
+    MessageCore::MDN::Displayed,
+    MessageCore::MDN::Deleted,
+    MessageCore::MDN::Dispatched,
+    MessageCore::MDN::Processed,
+    MessageCore::MDN::Denied,
+    MessageCore::MDN::Failed,
 };
 static const int numMDNs = sizeof(mdns) / sizeof(*mdns);
 

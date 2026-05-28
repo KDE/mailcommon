@@ -57,7 +57,7 @@ void MDNWarningJob::start()
         factory.setIdentityManager(mKernel->identityManager());
         factory.setFolderIdentity(MailCommon::Util::folderIdentity(mItem));
 
-        const std::shared_ptr<KMime::Message> mdn = factory.createMDN(KMime::MDN::ManualAction, KMime::MDN::Displayed, mdnSend.mode, quote);
+        const std::shared_ptr<KMime::Message> mdn = factory.createMDN(MessageCore::MDN::ManualAction, MessageCore::MDN::Displayed, mdnSend.mode, quote);
         if (mdn) {
             if (!mKernel->msgSender()->send(mdn)) {
                 qCDebug(MAILCOMMON_LOG) << "Sending failed.";
@@ -100,7 +100,7 @@ MDNWarningJob::MDNSendingInfo MDNWarningJob::modifyItem(const std::shared_ptr<KM
         mdnStateAttr->setMDNState(Akonadi::MDNStateAttribute::MDNDenied);
     } else if (mResponse == Send) { // the user wants to send. let's make sure we can, according to the RFC.
         doSend = true;
-        mdnStateAttr->setMDNState(MessageComposer::MDNAdviceHelper::dispositionToSentState(KMime::MDN::Displayed));
+        mdnStateAttr->setMDNState(MessageComposer::MDNAdviceHelper::dispositionToSentState(MessageCore::MDN::Displayed));
     }
     result.doSend = doSend;
     result.mode = mSendingMode;
@@ -114,12 +114,12 @@ MDNWarningJob::MDNSendingInfo MDNWarningJob::modifyItem(const std::shared_ptr<KM
     return result;
 }
 
-KMime::MDN::SendingMode MDNWarningJob::sendingMode() const
+MessageCore::MDN::SendingMode MDNWarningJob::sendingMode() const
 {
     return mSendingMode;
 }
 
-void MDNWarningJob::setSendingMode(KMime::MDN::SendingMode newSendingMode)
+void MDNWarningJob::setSendingMode(MessageCore::MDN::SendingMode newSendingMode)
 {
     mSendingMode = newSendingMode;
 }
