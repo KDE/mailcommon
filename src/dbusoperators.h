@@ -7,5 +7,6 @@
 #pragma once
 
 #include <QList>
+#include <QMetaType>
 
 Q_DECLARE_METATYPE(QList<qint64>)
