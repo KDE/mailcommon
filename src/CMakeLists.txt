@@ -372,13 +372,13 @@ target_link_libraries(
         KPim6::Libkdepim
         KPim6::MessageComposer
         KPim6::PimCommonAkonadi
+        KPim6::MessageViewer
         KF6::Completion
         KF6::I18n
     PRIVATE
         KPim6::IdentityManagementWidgets
         Gpgmepp
         KPim6::AkonadiWidgets
-        KPim6::MessageViewer
         KPim6::MailImporter
         KPim6::MessageCore
         KPim6::TemplateParser
