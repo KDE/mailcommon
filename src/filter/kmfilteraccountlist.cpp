@@ -44,7 +44,7 @@ void KMFilterAccountList::reloadAndSelectAccountsFrom(const MailCommon::MailFilt
 
 void KMFilterAccountList::reloadAndSelectAccounts(const QStringList &selectedAccounts)
 {
-    const auto decideSelected = [&selectedAccounts](const QString &accountName) {
+    const auto decideSelected = [&selectedAccounts](const QString &accountName) noexcept {
         return selectedAccounts.contains(accountName);
     };
     reloadAndSelectAccountsInternal(decideSelected);
