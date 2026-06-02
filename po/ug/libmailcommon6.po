@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-16 00:44+0000\n"
-"PO-Revision-Date: 2013-09-08 07:05+0900\n"
-"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"PO-Revision-Date: 2026-05-31 20:23-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -24,21 +25,16 @@ msgid "Expiry"
 msgstr "ئىناۋەتلىك ۋاقتى"
 
 #: collectionpage/collectionexpirywidget.cpp:36
-#, fuzzy, kde-format
-#| msgctxt "Expire messages after %1"
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] " كۈن"
+msgstr[0] "%v كۈن"
 
 #: collectionpage/collectionexpirywidget.cpp:37
 #: collectionpage/collectionexpirywidget.cpp:43
 #: collectionpage/collectionexpirywidget.cpp:55
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu Never display tooltips."
-#| msgid "Never"
+#, kde-format
 msgid "Never"
 msgstr "ھەرگىز"
 
@@ -82,11 +78,10 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:174
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
-msgstr "قىسقۇچ تاللانمىدى."
+msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:188
 #, kde-format
@@ -97,11 +92,10 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectionexpirywidget.cpp:190
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
-msgstr "قىسقۇچ تاللانمىدى."
+msgstr ""
 
 #: collectionpage/collectiongeneralpage.cpp:44
 #, kde-format
@@ -110,11 +104,10 @@ msgid "General"
 msgstr "ئادەتتىكى"
 
 #: collectionpage/collectiongeneralpage.cpp:65
-#, fuzzy, kde-format
-#| msgid "Rename..."
+#, kde-format
 msgctxt "@label:textbox Name of the folder."
 msgid "Folder &Name:"
-msgstr "ئات ئۆزگەرت…"
+msgstr ""
 
 #: collectionpage/collectiongeneralpage.cpp:110
 #, kde-format
@@ -183,11 +176,10 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:54
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use &default identity"
-msgstr "كۆڭۈلدىكى كىملىكنى ئىشلەت(&D)"
+msgstr ""
 
 #: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
@@ -217,18 +209,16 @@ msgid "&Copy Global Templates"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:27
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
-msgstr "كۆڭۈلدىكى كىملىكنى ئىشلەت(&D)"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Use &default identity"
+#, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
-msgstr "كۆڭۈلدىكى كىملىكنى ئىشلەت(&D)"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
@@ -254,40 +244,35 @@ msgid "Show Sender/Receiver Column in List of Messages"
 msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:43
-#, fuzzy, kde-format
-#| msgid " (default)"
+#, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
-msgstr " (كۆڭۈلدىكى)"
+msgstr "كۆڭۈلدىكى"
 
 #: collectionpage/collectionviewwidget.cpp:44
-#, fuzzy, kde-format
-#| msgid "&Send"
+#, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
-msgstr "ئەۋەت(&S)"
+msgstr "يوللىغۇچى"
 
 #: collectionpage/collectionviewwidget.cpp:45
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
-msgstr ""
+msgstr "قوبۇللىغۇچى"
 
 #: collectionpage/collectionviewwidget.cpp:46
-#, fuzzy, kde-format
-#| msgid "Shortcut:"
+#, kde-format
 msgid "Sho&w column:"
-msgstr "تېزلەتمە:"
+msgstr ""
 
 #: collectionpage/collectionviewwidget.cpp:77
-#, fuzzy, kde-format
-#| msgid "Message Status"
+#, kde-format
 msgid "Message format:"
-msgstr "ئۇچۇر ھالىتى"
+msgstr ""
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:33
-#, fuzzy, kde-format
-#| msgid "Select Account"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "ھېسابات تاللاش"
@@ -300,8 +285,7 @@ msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:40
 #: folder/folderrequester.cpp:74
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "قىسقۇچ تاللا"
@@ -319,10 +303,9 @@ msgid "The following folders can be used for this filter:"
 msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:69
-#, fuzzy, kde-format
-#| msgid "Please select a folder"
+#, kde-format
 msgid "Please select a folder:"
-msgstr "قىسقۇچتىن بىرنى تاللاڭ."
+msgstr ""
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:72
 #, kde-format
@@ -331,11 +314,10 @@ msgid ""
 msgstr ""
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:32
-#, fuzzy, kde-format
-#| msgid "Identity:"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
-msgstr "كىملىك:"
+msgstr ""
 
 #: filter/dialog/filteractionmissingidentitydialog.cpp:38
 #, kde-format
@@ -345,11 +327,10 @@ msgid ""
 msgstr ""
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:31
-#, fuzzy, kde-format
-#| msgid "Select Account"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
-msgstr "ھېسابات تاللاش"
+msgstr ""
 
 #: filter/dialog/filteractionmissingsoundurldialog.cpp:35
 #, kde-format
@@ -363,11 +344,10 @@ msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
-msgstr "ھەممىنى تاللا"
+msgstr ""
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:40
 #, kde-format
@@ -386,11 +366,10 @@ msgid "Add Tag…"
 msgstr ""
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:32
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
-msgstr "قىسقۇچ تاللا"
+msgstr ""
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:38
 #, kde-format
@@ -400,11 +379,10 @@ msgid ""
 msgstr ""
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:31
-#, fuzzy, kde-format
-#| msgid "Transport:"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
-msgstr "توشۇش:"
+msgstr ""
 
 #: filter/dialog/filteractionmissingtransportdialog.cpp:37
 #, kde-format
@@ -440,11 +418,10 @@ msgid "Add Header"
 msgstr ""
 
 #: filter/filteractions/filteractionaddheader.cpp:76
-#, fuzzy, kde-format
-#| msgid "With:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With value:"
-msgstr "بىللە:"
+msgstr ""
 
 #: filter/filteractions/filteractionaddheader.cpp:220
 #, kde-format
@@ -462,10 +439,9 @@ msgid "Add Tag"
 msgstr ""
 
 #: filter/filteractions/filteractionaddtag.cpp:147
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgid "No tag selected."
-msgstr "قىسقۇچ تاللانمىدى."
+msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:33
 #, kde-format
@@ -476,7 +452,7 @@ msgstr "ئادرېس دەپتىرىگە قوش"
 #, kde-format
 msgctxt "Email sender"
 msgid "From"
-msgstr "يوللىغۇچى"
+msgstr "كىمدىن"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:35
 #, kde-format
@@ -507,11 +483,10 @@ msgid "with category"
 msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:125
-#, fuzzy, kde-format
-#| msgid "Add to Address Book"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
-msgstr "ئادرېس دەپتىرىگە قوش"
+msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:135
 #, kde-format
@@ -527,10 +502,9 @@ msgid "Header type selected is unknown."
 msgstr ""
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:293
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgid "No addressbook selected."
-msgstr "قىسقۇچ تاللانمىدى."
+msgstr ""
 
 #: filter/filteractions/filteractioncopy.cpp:19
 #, kde-format
@@ -539,16 +513,15 @@ msgstr ""
 
 #: filter/filteractions/filteractioncopy.cpp:68
 #: filter/filteractions/filteractionmove.cpp:66
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgid "Folder destination was not defined."
-msgstr "قىسقۇچ قۇرۇش مەغلۇپ بولدى"
+msgstr ""
 
 #: filter/filteractions/filteractiondecrypt.cpp:27
 #: filter/filteractions/filteractiondecrypt.cpp:40
 #, kde-format
 msgid "Decrypt"
-msgstr ""
+msgstr "شىفىر يەش"
 
 #: filter/filteractions/filteractiondecrypt.cpp:95
 #, kde-format
@@ -575,7 +548,7 @@ msgstr ""
 #: filter/filteractions/filteractionencrypt.cpp:46
 #, kde-format
 msgid "Encrypt"
-msgstr ""
+msgstr "شىفىر"
 
 #: filter/filteractions/filteractionencrypt.cpp:207
 #, kde-format
@@ -632,7 +605,7 @@ msgstr ""
 #: filter/filteractions/filteractionforward.cpp:201
 #, kde-format
 msgid "Default Template"
-msgstr ""
+msgstr "كۆڭۈلدىكى قېلىپ"
 
 #: filter/filteractions/filteractionforward.cpp:113
 #, kde-format
@@ -673,10 +646,9 @@ msgid "Pipe Through"
 msgstr ""
 
 #: filter/filteractions/filteractionpipethrough.cpp:36
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgid "No action defined."
-msgstr "قىسقۇچ قۇرۇش مەغلۇپ بولدى"
+msgstr ""
 
 #: filter/filteractions/filteractionplaysound.cpp:22
 #, kde-format
@@ -729,15 +701,13 @@ msgid "Search string is empty."
 msgstr ""
 
 #: filter/filteractions/filteractionrewriteheader.cpp:110
-#, fuzzy, kde-format
-#| msgid "Replace:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Replace:"
 msgstr "ئالماشتۇر:"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:121
-#, fuzzy, kde-format
-#| msgid "With:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
 msgstr "بىللە:"
@@ -775,7 +745,7 @@ msgstr ""
 #, kde-format
 msgctxt "MDN type"
 msgid "Processed"
-msgstr ""
+msgstr "ﺑﯩﺮ ﺗﻪﺭﻩﭖ ﻗﯩﻠﯩﻨﺪﻯ"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:39
 #, kde-format
@@ -820,10 +790,9 @@ msgid "Set Transport To"
 msgstr ""
 
 #: filter/filteractions/filteractionsettransport.cpp:152
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgid "Mail transport not defined."
-msgstr "قىسقۇچ قۇرۇش مەغلۇپ بولدى"
+msgstr ""
 
 #: filter/filteractions/filteractionstatus.cpp:33
 #, kde-format
@@ -835,7 +804,7 @@ msgstr "مۇھىم"
 #, kde-format
 msgctxt "msg status"
 msgid "Read"
-msgstr "ئوقۇ"
+msgstr "ئوقۇلغان"
 
 #: filter/filteractions/filteractionstatus.cpp:35
 #, kde-format
@@ -877,7 +846,7 @@ msgstr "سپەم"
 #, kde-format
 msgctxt "msg status"
 msgid "Ham"
-msgstr "Ham"
+msgstr ""
 
 #: filter/filteractions/filteractionstatus.cpp:42
 #, kde-format
@@ -897,14 +866,12 @@ msgid "Unset Status"
 msgstr "ھالەتنى قالدۇر"
 
 #: filter/filteractions/filteractionunsetstatus.cpp:39
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgid "Status not defined."
-msgstr "قىسقۇچ قۇرۇش مەغلۇپ بولدى"
+msgstr ""
 
 #: filter/filteractions/filteractionwidget.cpp:69
-#, fuzzy, kde-format
-#| msgid "Please select an action."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "مەشغۇلات تاللاڭ."
@@ -913,7 +880,7 @@ msgstr "مەشغۇلات تاللاڭ."
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
-msgstr ""
+msgstr "ياردەم"
 
 #: filter/filteractions/filteractionwithurl.cpp:64
 #, kde-format
@@ -932,21 +899,15 @@ msgid "Save…"
 msgstr ""
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Save..."
+#, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr "ساقلاش…"
+msgstr "ھەمبەھىر…"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
-#, fuzzy, kde-format
-#| msgid ""
-#| "*.siv|sieve files (*.siv)\n"
-#| "*|all files (*)"
+#, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr ""
-"*.siv|sieve ھۆججەتلىرى (*.siv)\n"
-"*|بارلىق ھۆججەتلەر (*)"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
 #, kde-format
@@ -955,16 +916,14 @@ msgid "Convert to Script Sieve"
 msgstr ""
 
 #: filter/filterimporter/filterimportergmail.cpp:48
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgid "Gmail filter %1"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/filterimporter/filterimporterprocmail.cpp:54
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgid "Procmail filter %1"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:112
 #, kde-format
@@ -974,53 +933,46 @@ msgid ""
 msgstr ""
 
 #: filter/filterimporterexporter.cpp:138
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:146
-#, fuzzy, kde-format
-#| msgid "Available Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
-msgstr "ئىشلەتكىلى بولىدىغان سۈزگۈچلەر"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:150
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
-msgstr "قىسقۇچ تاللا"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:154
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:158
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:162
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:166
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
 #: filter/filterimporterexporter.cpp:236
@@ -1031,49 +983,41 @@ msgid ""
 msgstr ""
 
 #: filter/filterimporterexporter.cpp:316
-#, fuzzy, kde-format
-#| msgid "Edit Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
-msgstr "سۈزگۈچ تەھرىرلەش"
+msgstr ""
 
 #: filter/filterselectiondialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "ھەممىنى تاللا"
 
 #: filter/filterselectiondialog.cpp:30
-#, fuzzy, kde-format
-#| msgid "Unselect All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "ھەممىنى تاللىما"
 
 #: filter/filterselectiondialog.cpp:34
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
-msgstr "قىسقۇچ تاللا"
+msgstr ""
 
 #: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:53
 #: folder/foldertreewidget.cpp:84
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "@info/plain Displayed grayed-out inside the textbox, verb to search"
-#| msgid "Search"
+#, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "ئىزدە"
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Available Filters"
+#, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
-msgstr "ئىشلەتكىلى بولىدىغان سۈزگۈچلەر"
+msgstr ""
 
 #: filter/invalidfilters/invalidfilterdialog.cpp:40
 #, kde-format
@@ -1096,7 +1040,7 @@ msgstr "ھېسابات ئاتى"
 #: filter/kmfilteraccountlist.cpp:24
 #, kde-format
 msgid "Type"
-msgstr "تىپى"
+msgstr "تۈرى"
 
 #: filter/kmfilterdialog.cpp:72
 #, kde-format
@@ -1105,14 +1049,12 @@ msgid "Filter Rules"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:90
-#, fuzzy, kde-format
-#| msgid "Import..."
+#, kde-format
 msgid "Import…"
 msgstr "ئەكىر…"
 
 #: filter/kmfilterdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "Export..."
+#, kde-format
 msgid "Export…"
 msgstr "چىقار…"
 
@@ -1122,11 +1064,10 @@ msgid "Convert to…"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:98
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@action"
 msgid "KMail filters"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:102
 #, kde-format
@@ -1135,53 +1076,46 @@ msgid "Thunderbird filters"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:106
-#, fuzzy, kde-format
-#| msgid "Available Filters"
+#, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
-msgstr "ئىشلەتكىلى بولىدىغان سۈزگۈچلەر"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:110
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
-msgstr "قىسقۇچ تاللا"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:114
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:118
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:122
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:132
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:140
 #, kde-format
@@ -1207,11 +1141,10 @@ msgid "Advanced"
 msgstr "ئالىي"
 
 #: filter/kmfilterdialog.cpp:182
-#, fuzzy, kde-format
-#| msgid "Filter Criteria"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Filter actions:"
-msgstr "سۈزگۈچ شەرتى"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:193
 #, kde-format
@@ -1322,11 +1255,10 @@ msgid "Run selected filter(s) on: "
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:293
-#, fuzzy, kde-format
-#| msgid "&Send Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
-msgstr "ھازىر ئەۋەت(&S)"
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:420
 #, kde-format
@@ -1335,11 +1267,10 @@ msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:421
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
-msgstr "قىسقۇچ تاللانمىدى."
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:428
 #, kde-format
@@ -1362,11 +1293,10 @@ msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:438
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
-msgstr "قىسقۇچ تاللانمىدى."
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:662
 #, kde-format
@@ -1379,10 +1309,9 @@ msgid "Filters which were imported:"
 msgstr ""
 
 #: filter/kmfilterdialog.cpp:685
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgid "No filter found."
-msgstr "قىسقۇچ تاللانمىدى."
+msgstr ""
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format
@@ -1487,25 +1416,22 @@ msgid "New"
 msgstr "يېڭى"
 
 #: filter/kmfilterlistbox.cpp:143
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Copy"
 msgstr "كۆچۈر"
 
 #: filter/kmfilterlistbox.cpp:144
-#, fuzzy, kde-format
-#| msgid "Delete"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete"
 msgstr "ئۆچۈر"
 
 #: filter/kmfilterlistbox.cpp:145
-#, fuzzy, kde-format
-#| msgid "Rename..."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
-msgstr "ئات ئۆزگەرت…"
+msgstr "ئات ئۆزگەرت"
 
 #: filter/kmfilterlistbox.cpp:147
 #, kde-format
@@ -1559,18 +1485,16 @@ msgid "Do you want to remove selected filters?"
 msgstr ""
 
 #: filter/kmfilterlistbox.cpp:448
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filter"
 msgstr "سۈزگۈچنى چىقىرىۋەت"
 
 #: filter/kmfilterlistbox.cpp:448
-#, fuzzy, kde-format
-#| msgid "Remove Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Remove Filters"
-msgstr "سۈزگۈچنى چىقىرىۋەت"
+msgstr ""
 
 #: filter/kmfilterlistbox.cpp:664
 #, kde-format
@@ -1612,20 +1536,18 @@ msgid ""
 msgstr ""
 
 #: filter/mailfilter.cpp:570
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgid "Any action defined."
-msgstr "قىسقۇچ قۇرۇش مەغلۇپ بولدى"
+msgstr ""
 
 #: filter/soundtestwidget.cpp:35 filter/soundtestwidget.cpp:117
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
-msgstr ""
+msgstr "ياڭرات"
 
 #: filter/soundtestwidget.cpp:64
-#, fuzzy, kde-format
-#| msgid "Select Sound File"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Sound File"
 msgstr "ئاۋاز ھۆججەت تاللا"
@@ -1634,7 +1556,7 @@ msgstr "ئاۋاز ھۆججەت تاللا"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
-msgstr ""
+msgstr "ۋاقىتلىق توختا"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: filter/ui/filterconfigwidget.ui:19
@@ -1652,7 +1574,7 @@ msgstr "شەرت"
 #: filter/ui/filterconfigwidget.ui:87
 #, kde-format
 msgid "Actions"
-msgstr "مەشغۇلاتلار"
+msgstr "مەشغۇلات"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: filter/ui/filterconfigwidget.ui:129
@@ -1715,24 +1637,19 @@ msgid "Use custom order"
 msgstr ""
 
 #: folder/accountconfigorderdialog.cpp:91
-#, fuzzy, kde-format
-#| msgctxt "Move selected filter up."
-#| msgid "Up"
+#, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "ئۈستى"
 
 #: folder/accountconfigorderdialog.cpp:99
-#, fuzzy, kde-format
-#| msgctxt "Move selected filter down."
-#| msgid "Down"
+#, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
 msgstr "ئاستى"
 
 #: folder/folderrequester.cpp:46
-#, fuzzy, kde-format
-#| msgid "Select Folder"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Select Folder"
 msgstr "قىسقۇچ تاللا"
@@ -1740,32 +1657,29 @@ msgstr "قىسقۇچ تاللا"
 #: folder/folderrequester.cpp:117
 #, kde-format
 msgid "Local Folders"
-msgstr "يەرلىك قىسقۇچلار"
+msgstr "يەرلىك قىسقۇچ"
 
 #: folder/folderrequester.cpp:127 folder/folderrequester.cpp:145
 #, kde-format
 msgid "Please select a folder"
-msgstr "قىسقۇچتىن بىرنى تاللاڭ."
+msgstr "قىسقۇچتىن بىرنى تاللاڭ"
 
 #: folder/folderselectiondialog.cpp:65
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
-msgstr "يېڭى تارماق مۇندەرىجە(&N)…"
+msgstr ""
 
 #: folder/folderselectiondialog.cpp:67
-#, fuzzy, kde-format
-#| msgid "Create a new subfolder under the currently selected folder"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
-msgstr "نۆۋەتتە تاللانغان قىسقۇچ ئاستىغا يېڭى تارماق قىسقۇچ قۇرىدۇ"
+msgstr ""
 
 #: folder/folderselectiondialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "&New Subfolder..."
+#, kde-format
 msgid "&New Subfolder…"
-msgstr "يېڭى تارماق مۇندەرىجە(&N)…"
+msgstr ""
 
 #: folder/folderselectiondialog.cpp:177
 #, kde-format
@@ -1785,8 +1699,7 @@ msgid "Could not create folder: %1"
 msgstr "قىسقۇچ قۇرالمىدى: %1"
 
 #: folder/folderselectiondialog.cpp:194
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
 msgstr "قىسقۇچ قۇرۇش مەغلۇپ بولدى"
@@ -1794,7 +1707,7 @@ msgstr "قىسقۇچ قۇرۇش مەغلۇپ بولدى"
 #: folder/foldertreeview.cpp:129
 #, kde-format
 msgid "View Columns"
-msgstr "ئىستونلارنى كۆرۈش"
+msgstr "رەتنى كۆرۈش"
 
 #: folder/foldertreeview.cpp:139
 #, kde-format
@@ -1848,8 +1761,7 @@ msgid "Go to Next Unread Message"
 msgstr ""
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, fuzzy, kde-format
-#| msgid "Go To"
+#, kde-format
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "يۆتكەل"
@@ -1896,7 +1808,7 @@ msgstr ""
 #: job/backupjob.cpp:122
 #, kde-format
 msgid "The operation was canceled by the user."
-msgstr "ئىشلەتكۈچى مەشغۇلاتنى بىكار قىلدى"
+msgstr "ئىشلەتكۈچى مەشغۇلاتنى بىكار قىلدى."
 
 #: job/backupjob.cpp:152
 #, kde-format
@@ -1904,11 +1816,10 @@ msgid "Failed to archive the folder '%1'."
 msgstr ""
 
 #: job/backupjob.cpp:156
-#, fuzzy, kde-format
-#| msgid "Archiving failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
-msgstr "ئارخىپلاش مەغلۇپ بولدى"
+msgstr ""
 
 #: job/backupjob.cpp:166
 #, kde-format
@@ -1939,11 +1850,10 @@ msgid "The archive file has a size of %1."
 msgstr ""
 
 #: job/backupjob.cpp:194
-#, fuzzy, kde-format
-#| msgid "Archiving failed"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
-msgstr "ئارخىپلاش مەغلۇپ بولدى"
+msgstr ""
 
 #: job/backupjob.cpp:244
 #, kde-format
@@ -2051,7 +1961,7 @@ msgstr ""
 #, kde-format
 msgctxt "name used for a virgin filter"
 msgid "unknown"
-msgstr "نامەلۇم"
+msgstr "يوچۇن"
 
 #: search/searchpattern.cpp:245
 #, kde-format
@@ -2101,20 +2011,14 @@ msgid "Message Tag"
 msgstr ""
 
 #: search/searchpatternedit.cpp:49
-#, fuzzy
-#| msgctxt "Subject of an email."
-#| msgid "Subject"
 msgid "Subject"
-msgstr "تېما"
+msgstr "ماۋزۇ"
 
 #: search/searchpatternedit.cpp:50
 msgid "From"
-msgstr "يوللىغۇچى"
+msgstr "كىمدىن"
 
 #: search/searchpatternedit.cpp:51
-#, fuzzy
-#| msgctxt "Email recipient"
-#| msgid "To"
 msgid "To"
 msgstr "تاپشۇرۇپ ئالغۇچى"
 
@@ -2124,7 +2028,7 @@ msgstr ""
 
 #: search/searchpatternedit.cpp:54
 msgid "Organization"
-msgstr "ئورگان"
+msgstr "تەشكىل"
 
 #: search/searchpatternedit.cpp:55
 msgid "Date"
@@ -2132,20 +2036,15 @@ msgstr "چېسلا"
 
 #: search/searchpatternedit.cpp:56
 msgid "Encryption"
-msgstr ""
+msgstr "شىفىرلاش"
 
 #: search/searchpatternedit.cpp:57
-#, fuzzy
-#| msgctxt "message status"
-#| msgid "Has Attachment"
 msgid "Attachment"
-msgstr "قوشۇلما بار"
+msgstr ""
 
 #: search/searchpatternedit.cpp:58
-#, fuzzy
-#| msgid "Organization"
 msgid "Invitation"
-msgstr "ئورگان"
+msgstr ""
 
 #: search/searchpatternedit.cpp:146
 #, kde-format
@@ -2160,15 +2059,13 @@ msgid "Choose or type your own criteria"
 msgstr ""
 
 #: search/searchpatternedit.cpp:584
-#, fuzzy, kde-format
-#| msgid "Match a&ll of the following"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match a&ll of the following"
 msgstr "تۆۋەندىكى تۈرلەرنىڭ ھەممىسىگە ماس كېلىدۇ(&L)"
 
 #: search/searchpatternedit.cpp:585
-#, fuzzy, kde-format
-#| msgid "Match an&y of the following"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Match an&y of the following"
 msgstr "تۆۋەندىكىلەردىن خالىغان بىرىگە ماسلاشتۇر(&Y)"
@@ -2180,10 +2077,9 @@ msgid "Match all messages"
 msgstr ""
 
 #: search/searchpatternedit.cpp:598
-#, fuzzy, kde-format
-#| msgid "Filter Criteria"
+#, kde-format
 msgid "Filter criteria:"
-msgstr "سۈزگۈچ شەرتى"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:185
 #, kde-format
@@ -2243,16 +2139,14 @@ msgid "has not an attachment"
 msgstr ""
 
 #: search/searchrule/searchrule.cpp:221
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has an invitation"
-msgstr "ئورگان"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:224
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has not an invitation"
-msgstr "ئورگان"
+msgstr ""
 
 #: search/searchrule/searchrule.cpp:227
 #, kde-format
@@ -2381,25 +2275,19 @@ msgstr ""
 
 #: search/widgethandler/attachmentwidgethandler.cpp:17
 #: search/widgethandler/invitationwidgethandler.cpp:17
-#, fuzzy
-#| msgid "is not"
 msgid "has not"
-msgstr "ئەمەس"
+msgstr ""
 
 #: search/widgethandler/attachmentwidgethandler.cpp:51
-#, fuzzy, kde-format
-#| msgctxt "message status"
-#| msgid "Has Attachment"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
-msgstr "قوشۇلما بار"
+msgstr ""
 
 #: search/widgethandler/attachmentwidgethandler.cpp:88
-#, fuzzy, kde-format
-#| msgctxt "message status"
-#| msgid "Has Attachment"
+#, kde-format
 msgid "has attachment"
-msgstr "قوشۇلما بار"
+msgstr ""
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
@@ -2516,17 +2404,15 @@ msgid "is not in address book"
 msgstr ""
 
 #: search/widgethandler/invitationwidgethandler.cpp:51
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
-msgstr "ئورگان"
+msgstr ""
 
 #: search/widgethandler/invitationwidgethandler.cpp:88
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "has invitation"
-msgstr "ئورگان"
+msgstr ""
 
 #: search/widgethandler/messagerulewidgethandler.cpp:29
 #: search/widgethandler/messagerulewidgethandler.cpp:147
@@ -2558,17 +2444,14 @@ msgstr ""
 #, kde-format
 msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
-msgstr " كىلوبايت"
+msgstr " kB"
 
 #: search/widgethandler/numericrulewidgethandler.cpp:157
-#, fuzzy, kde-format
-#| msgctxt "Expire messages after %1"
-#| msgid " day"
-#| msgid_plural " days"
+#, kde-format
 msgctxt "Unit suffix where units are days."
 msgid "%v day"
 msgid_plural "%v days"
-msgstr[0] " كۈن"
+msgstr[0] "%v كۈن"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:28
 msgctxt "message status"
@@ -2588,7 +2471,7 @@ msgstr "ئوقۇلمىغان"
 #: search/widgethandler/statusrulewidgethandler.cpp:31
 msgctxt "message status"
 msgid "Read"
-msgstr "ئوقۇ"
+msgstr "ئوقۇلغان"
 
 #: search/widgethandler/statusrulewidgethandler.cpp:32
 msgctxt "message status"
@@ -2633,7 +2516,7 @@ msgstr "سپەم"
 #: search/widgethandler/statusrulewidgethandler.cpp:40
 msgctxt "message status"
 msgid "Ham"
-msgstr "Ham"
+msgstr ""
 
 #: search/widgethandler/statusrulewidgethandler.cpp:41
 msgctxt "message status"
@@ -2647,45 +2530,40 @@ msgid "Click on button for selecting attachment file"
 msgstr ""
 
 #: snippets/snippetattachmentwidget.cpp:34
-#, fuzzy, kde-format
-#| msgid "Remove Attachments"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select Attachments"
-msgstr "قوشۇلمىنى چىقىرىۋېتىش"
+msgstr ""
 
 #: snippets/snippetattachmentwidget.cpp:35
 #, kde-format
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: snippets/snippetcustomfileattachmentnamedialog.cpp:28
-#, fuzzy, kde-format
-#| msgid "Remove Attachments"
+#, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
-msgstr "قوشۇلمىنى چىقىرىۋېتىش"
+msgstr ""
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:29
-#, fuzzy, kde-format
-#| msgid "Rename..."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Filename:"
-msgstr "ئات ئۆزگەرت…"
+msgstr "ھۆججەت ئاتى:"
 
 #: snippets/snippetcustomfileattachmentnamewidget.cpp:47
-#, fuzzy, kde-format
-#| msgid "Insert Snippet"
+#, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
-msgstr "پۇرۇچ قىستۇرۇش"
+msgstr ""
 
 #: snippets/snippetselectattachmentdialog.cpp:26
 #: snippets/snippetselectattachmentwidget.cpp:52
-#, fuzzy, kde-format
-#| msgid "Remove Attachments"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Attachments"
-msgstr "قوشۇلمىنى چىقىرىۋېتىش"
+msgstr ""
 
 #: snippets/snippetselectattachmentwidget.cpp:45
 #, kde-format
@@ -2701,13 +2579,13 @@ msgstr "ئادەتتىكى"
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Snippet"
-msgstr "پۇرۇچ قوشۇش"
+msgstr "پۇرۇچ قوش"
 
 #: snippets/snippetsmanager.cpp:228
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Snippet"
-msgstr "پۇرۇچ تەھرىرلەش"
+msgstr "پۇرۇچ تەھرىر"
 
 #: snippets/snippetsmanager.cpp:288
 #, kde-kuit-format
@@ -2750,56 +2628,46 @@ msgid "Snippet %1"
 msgstr "پۇرۇچ %1"
 
 #: snippets/snippetsmanager.cpp:560
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
-msgstr "پۇرۇچ قوشۇش"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:562
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Edit Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
-msgstr "پۇرۇچ تەھرىرلەش"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:564
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
-msgstr "پۇرۇچنى چىقىرىۋېتىش"
+msgstr "پۇرۇچنى چىقىرىۋەت"
 
 #: snippets/snippetsmanager.cpp:567
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Group"
+#, kde-format
 msgctxt "@action"
 msgid "Add Group…"
-msgstr "گۇرۇپپا قوش"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:569
-#, fuzzy, kde-format
-#| msgid "Rename Group..."
+#, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
-msgstr "گۇرۇپپا ئاتىنى ئۆزگەرتىش…"
+msgstr ""
 
 #: snippets/snippetsmanager.cpp:571
-#, fuzzy, kde-format
-#| msgid "Remove Group"
+#, kde-format
 msgctxt "@action"
 msgid "Remove Group"
 msgstr "گۇرۇپپىنى چىقىرىۋەت"
 
 #: snippets/snippetsmanager.cpp:574
-#, fuzzy, kde-format
-#| msgid "Insert Snippet"
+#, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
-msgstr "پۇرۇچ قىستۇرۇش"
+msgstr ""
 
 #: snippets/snippetsmodel.cpp:524 snippets/snippetsmodel.cpp:553
 #, kde-format
@@ -2807,24 +2675,21 @@ msgid "Do you want to update snippet?"
 msgstr ""
 
 #: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:554
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgctxt "@title:window"
 msgid "Update snippet"
-msgstr "پۇرۇچنى چىقىرىۋېتىش"
+msgstr ""
 
 #: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
-#, fuzzy, kde-format
-#| msgid "Remove Snippet"
+#, kde-format
 msgctxt "@action:button"
 msgid "Update"
-msgstr "پۇرۇچنى چىقىرىۋېتىش"
+msgstr "يېڭىلا"
 
 #: snippets/snippettreeview.cpp:65
-#, fuzzy, kde-format
-#| msgid "Insert Snippet"
+#, kde-format
 msgid "Text Snippets"
-msgstr "پۇرۇچ قىستۇرۇش"
+msgstr ""
 
 #: snippets/snippetvariabledialog.cpp:37
 #, kde-format
@@ -2885,17 +2750,15 @@ msgstr "گۇرۇپپا:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: snippets/ui/snippetwidget.ui:69
-#, fuzzy, kde-format
-#| msgctxt "Subject of an email."
-#| msgid "Subject"
+#, kde-format
 msgid "Subject:"
-msgstr "تېما"
+msgstr "تېما:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: snippets/ui/snippetwidget.ui:88
 #, kde-format
 msgid "To:"
-msgstr "تاپشۇرۇپ ئالغۇچى"
+msgstr "كىمگە:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: snippets/ui/snippetwidget.ui:101
@@ -2919,15 +2782,13 @@ msgstr "پۇرۇچ(&S):"
 #: snippets/ui/snippetwidget.ui:157
 #, kde-format
 msgid "Variables"
-msgstr ""
+msgstr "ئۆزگەرگۈچى"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: snippets/ui/snippetwidget.ui:181
-#, fuzzy, kde-format
-#| msgctxt "message status"
-#| msgid "Has Attachment"
+#, kde-format
 msgid "Attachments:"
-msgstr "قوشۇلما بار"
+msgstr "قوشۇلما:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: snippets/ui/snippetwidget.ui:193
@@ -2937,10 +2798,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, keyWidgetLabel)
 #: snippets/ui/snippetwidget.ui:212
-#, fuzzy, kde-format
-#| msgid "Shortcut:"
+#, kde-format
 msgid "Sho&rtcut:"
-msgstr "تېزلەتمە:"
+msgstr ""
 
 #: tag/addtagdialog.cpp:39
 #, kde-format
@@ -2981,7 +2841,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "&Bold"
-msgstr ""
+msgstr "توم(&B)"
 
 #: tag/tagwidget.cpp:104
 #, kde-format
@@ -2990,15 +2850,13 @@ msgid "&Italics"
 msgstr ""
 
 #: tag/tagwidget.cpp:122
-#, fuzzy, kde-format
-#| msgid "Message Status"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
-msgstr "ئۇچۇر ھالىتى"
+msgstr ""
 
 #: tag/tagwidget.cpp:133
-#, fuzzy, kde-format
-#| msgid "Shortc&ut:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "تېزلەتمە(&U):"
@@ -3020,18 +2878,16 @@ msgid "Mode"
 msgstr "ھالىتى"
 
 #: widgets/favoritecollectionwidget.cpp:114
-#, fuzzy, kde-format
-#| msgid "List Mode"
+#, kde-format
 msgctxt "@action"
 msgid "List Mode"
-msgstr "تىزىش ھالىتى"
+msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:124
-#, fuzzy, kde-format
-#| msgid "Icon Size"
+#, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
-msgstr "سىنبەلگە چوڭلۇقى"
+msgstr ""
 
 #: widgets/favoritecollectionwidget.cpp:235
 #, kde-format
@@ -3054,11 +2910,10 @@ msgid "Resend-Bcc:"
 msgstr ""
 
 #: widgets/redirectdialog.cpp:102
-#, fuzzy, kde-format
-#| msgid "Delete Message"
+#, kde-format
 msgctxt "@title:window"
 msgid "Redirect Message"
-msgstr "ئۇچۇر ئۆچۈر"
+msgstr ""
 
 #: widgets/redirectdialog.cpp:123
 #, kde-format
@@ -3077,15 +2932,13 @@ msgid "Transport:"
 msgstr "توشۇش:"
 
 #: widgets/redirectdialog.cpp:158
-#, fuzzy, kde-format
-#| msgid "&Send Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
-msgstr "ھازىر ئەۋەت(&S)"
+msgstr ""
 
 #: widgets/redirectdialog.cpp:159
-#, fuzzy, kde-format
-#| msgid "Send &Later"
+#, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "كېيىن ئەۋەت(&L)"
@@ -3114,7 +2967,6 @@ msgid ""
 "all available addresses."
 msgstr ""
 
-#, fuzzy
 #~| msgid "Remove Attachments"
 #~ msgid "Select Attachments"
 #~ msgstr "قوشۇلمىنى چىقىرىۋېتىش"
@@ -3122,7 +2974,6 @@ msgstr ""
 #~ msgid "Save..."
 #~ msgstr "ساقلاش…"
 
-#, fuzzy
 #~| msgid "Save..."
 #~ msgid "..."
 #~ msgstr "ساقلاش…"
@@ -3153,12 +3004,10 @@ msgstr ""
 #~ msgid "&Name:"
 #~ msgstr "ئاتى(&N):"
 
-#, fuzzy
 #~| msgid "Message Status"
 #~ msgid "Message List"
 #~ msgstr "ئۇچۇر ھالىتى"
 
-#, fuzzy
 #~| msgid "Organization"
 #~ msgid "Aggregation"
 #~ msgstr "ئورگان"
@@ -3200,7 +3049,6 @@ msgstr ""
 #~ msgid "Edit..."
 #~ msgstr "تەھرىر…"
 
-#, fuzzy
 #~| msgid "Remove Filter"
 #~ msgid "Import Icedove Filters"
 #~ msgstr "سۈزگۈچنى چىقىرىۋەت"
@@ -3245,14 +3093,12 @@ msgstr ""
 #~ msgid "Mail: %1"
 #~ msgstr "خەت: %1"
 
-#, fuzzy
 #~| msgctxt ""
 #~| "@info/plain Displayed grayed-out inside the textbox, verb to search"
 #~| msgid "Search"
 #~ msgid "Search..."
 #~ msgstr "ئىزدە"
 
-#, fuzzy
 #~| msgid "Select Folder"
 #~ msgid "Select Multiple Folders"
 #~ msgstr "قىسقۇچ تاللا"
