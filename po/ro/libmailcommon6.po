@@ -1,22 +1,22 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Sergiu Bivol <sergiu@cip.md>, 2011, 2012, 2013, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2011, 2012, 2013, 2020, 2021, 2022, 2026 Sergiu Bivol <sergiu@cip.md>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-16 00:44+0000\n"
-"PO-Revision-Date: 2022-02-17 11:52+0000\n"
+"PO-Revision-Date: 2026-06-15 16:27+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
-"Language-Team: Romanian\n"
+"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.2\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -1383,7 +1383,7 @@ msgstr "Suplimentar, adaugă acest filtru la bara de unelte"
 #: filter/kmfilterdialog.cpp:273
 #, kde-format
 msgid "Shortcut:"
-msgstr "Accelerator:"
+msgstr "Scurtătură:"
 
 #: filter/kmfilterdialog.cpp:279
 #, kde-format
@@ -1391,15 +1391,13 @@ msgid "Icon for this filter:"
 msgstr "Pictogramă pentru acest filtru:"
 
 #: filter/kmfilterdialog.cpp:287
-#, fuzzy, kde-format
-#| msgid "Run selected filter(s) on: "
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
-msgstr "Rulează filtrele alese la: "
+msgstr "Rulează filtrele alese pe: "
 
 #: filter/kmfilterdialog.cpp:293
-#, fuzzy, kde-format
-#| msgid "Run Now"
+#, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Rulează acum"
@@ -1411,8 +1409,7 @@ msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Acest filtru nu poate fi aplicat deoarece nu au fost alese dosare."
 
 #: filter/kmfilterdialog.cpp:421
-#, fuzzy, kde-format
-#| msgid "No folder selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Niciun dosar ales."
@@ -1428,8 +1425,7 @@ msgstr ""
 "salvați filtrele înainte ca acestea să poată fi aplicate."
 
 #: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
-#, fuzzy, kde-format
-#| msgid "Filters changed."
+#, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filtre modificate."
@@ -1441,8 +1437,7 @@ msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Nu se poate aplica un filtru deoarece nu sunt filtre alese momentan."
 
 #: filter/kmfilterdialog.cpp:438
-#, fuzzy, kde-format
-#| msgid "No filters selected."
+#, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Niciun filtru ales."
@@ -1458,10 +1453,9 @@ msgid "Filters which were imported:"
 msgstr "Filtrele importate:"
 
 #: filter/kmfilterdialog.cpp:685
-#, fuzzy, kde-format
-#| msgid "No filter was imported."
+#, kde-format
 msgid "No filter found."
-msgstr "Nu a fost importat niciun filtru."
+msgstr "Nu a fost găsit niciun filtru."
 
 #: filter/kmfilterdialog.cpp:710
 #, fuzzy, kde-format
