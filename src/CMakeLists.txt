@@ -664,3 +664,35 @@ endif()
 
 ecm_qt_install_logging_categories(EXPORT MAILCOMMON FILE mailcommon.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
 ecm_generate_qdoc(KPim6MailCommon mailcommon.qdocconf)
+
+ecm_add_installed_library_check(KPim6MailCommon
+    PACKAGE_NAME "KPim6MailCommon"
+    PACKAGE_VERSION ${MAILCOMMON_VERSION}
+    PACKAGE_TARGET_NAMESPACE "KPim6::"
+)
+
+ecm_installed_library_check_include_strings(KPim6MailCommon
+    HEADERS         ${MAILCOMMON_INCLUDES_FILES}
+    PREFIX mailcommon
+)
+
+ecm_installed_library_check_include_strings(KPim6MailCommon
+   HEADERS
+   ${MailCommon_Camelcasesearchrule_HEADERS}
+   ${MailCommon_CamelCase_HEADERS}
+   ${MailCommon_Camelcasetop_HEADERS}
+   ${MailCommon_Camelcasetag_HEADERS}
+   ${MailCommon_Camelcasefolder_HEADERS}
+   ${MailCommon_Camelcasekernel_HEADERS}
+   ${MailCommon_Camelcaseinterfaces_HEADERS}
+   ${MailCommon_Camelcasefilter_HEADERS}
+   ${MailCommon_Camelcasejob_HEADERS}
+   ${MailCommon_Camelcasefilteraction_HEADERS}
+   ${MailCommon_Camelcasemdn_HEADERS}
+   ${MailCommon_Camelcasecollectionpage_HEADERS}
+   ${MailCommon_Camelcasecollectionpageattributes_HEADERS}
+   ${MailCommon_Camelcasefilterimporter_HEADERS}
+   ${MailCommon_Camelcasesnippets_HEADERS}
+   ${MailCommon_Camelcasewidgets_HEADERS}
+    PREFIX MailCommon
+)
