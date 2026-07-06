@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
 cmake_minimum_required(VERSION 3.29)
-set(PIM_VERSION "6.7.40")
+set(PIM_VERSION "6.8.40")
 
 project(mailcommon VERSION ${PIM_VERSION})
 
@@ -114,7 +114,7 @@ set(PIMCOMMON_LIB_VERSION "6.7.40")
 set(KIDENTITYMANAGERCORE_LIB_VERSION "6.7.40")
 
 set(AKONADI_VERSION "6.7.40")
-set(KTEXTADDONS_MIN_VERSION "2.0.2")
+set(KTEXTADDONS_MIN_VERSION "2.1.0")
 
 find_package(
     Qt6
