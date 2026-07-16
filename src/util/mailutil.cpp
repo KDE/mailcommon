@@ -182,12 +182,13 @@ uint MailCommon::Util::folderIdentity(const Akonadi::Item &item)
     uint id = 0;
     if (item.isValid() && item.parentCollection().isValid()) {
         Akonadi::Collection col = item.parentCollection();
-        if (col.resource().isEmpty()) {
+        if (col.isValid() && col.resource().isEmpty()) {
             col = CommonKernel->collectionFromId(col.id());
         }
-        const QSharedPointer<FolderSettings> fd = FolderSettings::forCollection(col, false);
-
-        id = fd->identity();
+        if (col.isValid()) {
+            const QSharedPointer<FolderSettings> fd = FolderSettings::forCollection(col, false);
+            id = fd->identity();
+        }
     }
     return id;
 }

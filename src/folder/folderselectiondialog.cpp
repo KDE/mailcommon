@@ -266,7 +266,9 @@ void FolderSelectionDialog::readConfig()
         const Akonadi::Collection::Id id = SettingsIf->lastSelectedFolder();
         if (id > -1) {
             const Akonadi::Collection col = Kernel::self()->collectionFromId(id);
-            d->folderTreeWidget->selectCollectionFolder(col);
+            if (col.isValid()) {
+                d->folderTreeWidget->selectCollectionFolder(col);
+            }
         }
     }
 }

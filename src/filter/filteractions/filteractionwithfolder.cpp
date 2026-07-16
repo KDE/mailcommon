@@ -116,6 +116,9 @@ QString FilterActionWithFolder::displayString() const
     QString result;
     if (mFolder.isValid()) {
         result = MailCommon::Util::fullCollectionPath(CommonKernel->collectionFromId(mFolder.id()));
+        if (result.isEmpty()) {
+            result = i18nc("unknown folder name", "UNKNOWN");
+        }
     }
 
     return label() + QLatin1StringView(" \"") + result.toHtmlEscaped() + QLatin1StringView("\"");
