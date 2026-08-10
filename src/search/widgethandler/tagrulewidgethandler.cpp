@@ -145,7 +145,7 @@ QWidget *TagRuleWidgetHandler::createValueWidget(int number, QStackedWidget *val
         valueCombo->addItem(QString()); // empty entry for user input
 
         auto job = new FillTagComboJob(valueCombo);
-        job->start();
+        job->exec();
 
         valueCombo->adjustSize();
         QObject::connect(valueCombo, SIGNAL(activated(int)), receiver, SLOT(slotValueChanged()));
