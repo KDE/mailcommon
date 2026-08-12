@@ -63,16 +63,16 @@ void ExpireJob::execute()
         mMaxReadTime = 0;
         int unreadDays;
         int readDays;
-        mExpireMessagesWithoutInvalidDate = expirationAttribute->expireMessagesWithValidDate();
+        mExpireMessagesWithInvalidDate = !expirationAttribute->expireMessagesWithValidDate();
         expirationAttribute->daysToExpire(unreadDays, readDays);
 
         if (unreadDays > 0) {
             qCDebug(MAILCOMMON_LOG) << "ExpireJob: deleting unread older than" << unreadDays << "days";
-            mMaxUnreadTime = QDateTime::currentSecsSinceEpoch() - unreadDays * 3600 * 24;
+            mMaxUnreadTime = QDateTime::currentSecsSinceEpoch() - static_cast<qint64>(unreadDays) * 3600 * 24;
         }
         if (readDays > 0) {
             qCDebug(MAILCOMMON_LOG) << "ExpireJob: deleting read older than" << readDays << "days";
-            mMaxReadTime = QDateTime::currentSecsSinceEpoch() - readDays * 3600 * 24;
+            mMaxReadTime = QDateTime::currentSecsSinceEpoch() - static_cast<qint64>(readDays) * 3600 * 24;
         }
 
         if ((mMaxUnreadTime == 0) && (mMaxReadTime == 0)) {
@@ -119,11 +119,11 @@ void ExpireJob::itemFetchResult(KJob *job)
 
         auto mailDate = mb->date(KMime::CreatePolicy::DontCreate);
         if (!mailDate) {
-            if (mExpireMessagesWithoutInvalidDate) {
+            if (mExpireMessagesWithInvalidDate) {
                 mRemovedMsgs.append(item);
             }
         } else {
-            const time_t maxTime = status.isRead() ? mMaxReadTime : mMaxUnreadTime;
+            const qint64 maxTime = status.isRead() ? mMaxReadTime : mMaxUnreadTime;
             if (mailDate->dateTime().toSecsSinceEpoch() < maxTime) {
                 mRemovedMsgs.append(item);
             }
