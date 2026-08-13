@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-16 00:44+0000\n"
+"POT-Creation-Date: 2026-08-13 00:51+0000\n"
 "PO-Revision-Date: 2014-04-11 22:49+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -2073,9 +2073,11 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Η αφαίρεση των παλιών μηνυμάτων από τον φάκελο %1 απέτυχε."
 
 #: job/expirejob.cpp:157
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2…"
+#| msgid_plural "Removing %1 old messages from folder %2..."
 msgid "Removing 1 old message from folder %2…"
-msgid_plural "Removing %1 old messages from folder %2..."
+msgid_plural "Removing %1 old messages from folder %2…"
 msgstr[0] "Διαγραφή 1 παλιού μηνύματος από το φάκελο %2…"
 msgstr[1] "Αφαίρεση %1 παλαιών μηνυμάτων από τον φάκελο %2..."
 

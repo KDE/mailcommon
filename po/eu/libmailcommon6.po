@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-16 00:44+0000\n"
+"POT-Creation-Date: 2026-08-13 00:51+0000\n"
 "PO-Revision-Date: 2026-07-01 19:15+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -2037,9 +2037,11 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Mezu zaharrak %1 karpetatik kentzea huts egin du."
 
 #: job/expirejob.cpp:157
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2…"
+#| msgid_plural "Removing %1 old messages from folder %2..."
 msgid "Removing 1 old message from folder %2…"
-msgid_plural "Removing %1 old messages from folder %2..."
+msgid_plural "Removing %1 old messages from folder %2…"
 msgstr[0] "%2 karpetatik mezu zahar 1 kentzen…"
 msgstr[1] "%2 karpetatik %1 mezu zahar kentzen…"
 

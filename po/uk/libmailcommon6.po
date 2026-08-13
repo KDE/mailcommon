@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-16 00:44+0000\n"
+"POT-Creation-Date: 2026-08-13 00:51+0000\n"
 "PO-Revision-Date: 2026-05-16 11:30+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -2042,9 +2042,11 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Помилка під час вилученні старих повідомлень з теки %1."
 
 #: job/expirejob.cpp:157
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2…"
+#| msgid_plural "Removing %1 old messages from folder %2..."
 msgid "Removing 1 old message from folder %2…"
-msgid_plural "Removing %1 old messages from folder %2..."
+msgid_plural "Removing %1 old messages from folder %2…"
 msgstr[0] "Вилучення %1 старого повідомлення з теки %2…"
 msgstr[1] "Вилучення %1 старих повідомлень з теки %2…"
 msgstr[2] "Вилучення %1 старих повідомлень з теки %2…"

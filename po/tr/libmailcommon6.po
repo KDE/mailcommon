@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-16 00:44+0000\n"
+"POT-Creation-Date: 2026-08-13 00:51+0000\n"
 "PO-Revision-Date: 2026-05-16 20:25+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -2022,9 +2022,11 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "%1 klasöründeki eski iletilerin kaldırılması başarısız oldu."
 
 #: job/expirejob.cpp:157
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2…"
+#| msgid_plural "Removing %1 old messages from folder %2..."
 msgid "Removing 1 old message from folder %2…"
-msgid_plural "Removing %1 old messages from folder %2..."
+msgid_plural "Removing %1 old messages from folder %2…"
 msgstr[0] "%2 klasöründen 1 eski ileti kaldırılıyor…"
 msgstr[1] "%2 klasöründen %1 eski ileti kaldırılıyor…"
 
