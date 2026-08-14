@@ -2026,7 +2026,9 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Odstranění starých zpráv ze složky %1 se nezdařilo."
 
 #: job/expirejob.cpp:157
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Removing 1 old message from folder %2…"
+#| msgid_plural "Removing %1 old messages from folder %2..."
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "Odstraňuji 1 starou zprávu ze složky %2…"
