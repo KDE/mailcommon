@@ -2,14 +2,14 @@
 # Copyright (C) 2010-2026 This file is copyright:
 # This file is distributed under the same license as the mailcommon package.
 #
-# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018 Javier Viñal <fjvinal@gmail.com>
+# SPDX-FileCopyrightText: 2010-2018 Javier Viñal <fjvinal@gmail.com>
 # SPDX-FileCopyrightText: 2019-2026 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-13 00:51+0000\n"
-"PO-Revision-Date: 2026-05-16 17:33+0100\n"
+"PO-Revision-Date: 2026-08-13 12:23+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 26.04.1\n"
+"X-Generator: Lokalize 26.04.3\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -2040,9 +2040,7 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "La eliminación de los mensajes antiguos de la carpeta %1 ha fallado."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2…"
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2…"
 msgstr[0] "Eliminando 1 mensaje antiguo de la carpeta %2…"
