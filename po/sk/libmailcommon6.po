@@ -2030,14 +2030,12 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Odstraňovanie starých správ z priečinka %1 zlyhalo."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2…"
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2…"
-msgstr[0] "Odstraňovanie 1 starej správy z priečinka %2..."
-msgstr[1] "Odstraňovanie %1 starých správ z priečinka %2..."
-msgstr[2] "Odstraňovanie %1 starých správ z priečinka %2..."
+msgstr[0] "Odstraňovanie 1 starej správy z priečinka %2…"
+msgstr[1] "Odstraňovanie %1 starých správ z priečinka %2…"
+msgstr[2] "Odstraňovanie %1 starých správ z priečinka %2…"
 
 #: job/expirejob.cpp:164
 #, kde-format
