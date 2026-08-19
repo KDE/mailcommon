@@ -1972,9 +1972,7 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "从文件夹 %1 中删除旧消息失败。"
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2…"
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2…"
 msgstr[0] "正在从文件夹 %2 中移除 %1 条旧消息。"
