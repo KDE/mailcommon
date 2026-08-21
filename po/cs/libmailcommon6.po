@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-13 00:51+0000\n"
-"PO-Revision-Date: 2026-08-15 00:13+0200\n"
+"PO-Revision-Date: 2026-08-20 12:15+0200\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 26.04.3\n"
+"X-Generator: Poedit 3.9\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -958,7 +958,7 @@ msgstr "Sdílet…"
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
-msgstr "soubory sieve (*.siv);;Všechny soubory (*)"
+msgstr "Soubory Sieve (*.siv);;Všechny soubory (*)"
 
 #: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
 #, kde-format
@@ -1926,7 +1926,7 @@ msgstr "Operace byla přerušena uživatelem."
 #: job/backupjob.cpp:152
 #, kde-format
 msgid "Failed to archive the folder '%1'."
-msgstr "Nelze archivovat složku '%1'"
+msgstr "Nelze archivovat složku '%1'."
 
 #: job/backupjob.cpp:156
 #, kde-format
@@ -2030,8 +2030,8 @@ msgstr "Odstranění starých zpráv ze složky %1 se nezdařilo."
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2…"
 msgstr[0] "Odstraňování 1 staré zprávy ze složky %2…"
-msgstr[1] "Odstraňování %1 starých zpráv ze složky %2..."
-msgstr[2] "Odstraňování %1 starých zpráv ze složky %2..."
+msgstr[1] "Odstraňování %1 starých zpráv ze složky %2…"
+msgstr[2] "Odstraňování %1 starých zpráv ze složky %2…"
 
 #: job/expirejob.cpp:164
 #, kde-format
@@ -2042,9 +2042,9 @@ msgstr "Zprávy ve složce %1 nemohou vypršet: nenalezena cílová složka %2"
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] "Přesunuji 1 starou zprávu ze složky %2 do %3..."
-msgstr[1] "Přesunuji %1 staré zprávy ze složky %2 do %3..."
-msgstr[2] "Přesunuji %1 starých zpráv ze složky %2 do %3..."
+msgstr[0] "Přesun 1 staré zprávy ze složky %2 do %3…"
+msgstr[1] "Přesun %1 starých zpráv ze složky %2 do %3…"
+msgstr[2] "Přesun %1 starých zpráv ze složky %2 do %3…"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
@@ -2737,7 +2737,7 @@ msgstr "Přidat skupinu"
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Group"
-msgstr "Upravit skupinu..."
+msgstr "Upravit skupinu"
 
 #: snippets/snippetsmanager.cpp:361
 #, kde-kuit-format
@@ -2783,7 +2783,7 @@ msgstr "Odstranit ústřižek"
 #, kde-format
 msgctxt "@action"
 msgid "Add Group…"
-msgstr "Přidat skupinu..."
+msgstr "Přidat skupinu…"
 
 #: snippets/snippetsmanager.cpp:569
 #, kde-format

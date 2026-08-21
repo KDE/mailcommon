@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-13 00:51+0000\n"
-"PO-Revision-Date: 2026-05-29 23:20+0200\n"
+"PO-Revision-Date: 2026-08-15 20:56+0200\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -2044,9 +2044,7 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Cancellazione vecchi messaggi dalla cartella %1 non riuscita."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2…"
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2…"
 msgstr[0] "Rimozione di 1 vecchio messaggio dalla cartella %2…"
