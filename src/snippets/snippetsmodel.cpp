@@ -671,26 +671,26 @@ QList<SnippetsInfo> SnippetsModel::snippetsInfo() const
             SnippetsInfo info;
             const QModelIndex modelIndex = index(j, 0, groupIndex);
 
-            const QString snippetName = modelIndex.data(SnippetsModel::NameRole).toString();
+            QString snippetName = modelIndex.data(SnippetsModel::NameRole).toString();
             if (!snippetName.isEmpty()) {
-                const QString snippetText = modelIndex.data(SnippetsModel::TextRole).toString();
+                QString snippetText = modelIndex.data(SnippetsModel::TextRole).toString();
                 const QString snippetKeySequence = modelIndex.data(SnippetsModel::KeySequenceRole).toString();
-                const QString snippetKeyword = modelIndex.data(SnippetsModel::KeywordRole).toString();
-                const QString snippetSubject = modelIndex.data(SnippetsModel::SubjectRole).toString();
-                const QString snippetTo = modelIndex.data(SnippetsModel::ToRole).toString();
-                const QString snippetCc = modelIndex.data(SnippetsModel::CcRole).toString();
-                const QString snippetBcc = modelIndex.data(SnippetsModel::BccRole).toString();
-                const QString snippetAttachment = modelIndex.data(SnippetsModel::AttachmentRole).toString();
-                info.text = snippetText;
-                info.newName = snippetName;
-                info.keyword = snippetKeyword;
+                QString snippetKeyword = modelIndex.data(SnippetsModel::KeywordRole).toString();
+                QString snippetSubject = modelIndex.data(SnippetsModel::SubjectRole).toString();
+                QString snippetTo = modelIndex.data(SnippetsModel::ToRole).toString();
+                QString snippetCc = modelIndex.data(SnippetsModel::CcRole).toString();
+                QString snippetBcc = modelIndex.data(SnippetsModel::BccRole).toString();
+                QString snippetAttachment = modelIndex.data(SnippetsModel::AttachmentRole).toString();
+                info.text = std::move(snippetText);
+                info.newName = std::move(snippetName);
+                info.keyword = std::move(snippetKeyword);
                 info.keySequence = QKeySequence::fromString(snippetKeySequence);
-                info.subject = snippetSubject;
-                info.to = snippetTo;
-                info.cc = snippetCc;
-                info.bcc = snippetBcc;
-                info.attachment = snippetAttachment;
-                infos.append(info);
+                info.subject = std::move(snippetSubject);
+                info.to = std::move(snippetTo);
+                info.cc = std::move(snippetCc);
+                info.bcc = std::move(snippetBcc);
+                info.attachment = std::move(snippetAttachment);
+                infos.append(std::move(info));
             }
         }
     }

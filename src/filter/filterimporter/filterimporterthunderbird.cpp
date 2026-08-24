@@ -102,7 +102,7 @@ MailCommon::MailFilter *FilterImporterThunderbird::parseLine(QTextStream &stream
                         if (path.startsWith(u'/')) {
                             path.remove(0, 1); // Remove '/'
                         }
-                        value = path;
+                        value = std::move(path);
                     }
                 }
                 createFilterAction(filter, actionName, value);
@@ -346,7 +346,7 @@ bool FilterImporterThunderbird::splitConditions(const QString &cond, MailCommon:
     }
 
     SearchRule::Ptr rule = SearchRule::createInstance(fieldName, functionName, contentsName);
-    filter->pattern()->append(rule);
+    filter->pattern()->append(std::move(rule));
     // qCDebug(MAILCOMMON_LOG) << " field :" << field << " function :" << function
     //         << " contents :" << contents << " cond :" << cond;
     return true;

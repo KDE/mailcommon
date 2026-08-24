@@ -15,15 +15,15 @@ using namespace MailCommon;
 QStringList FilterActionWithCrypto::getEncryptionKeysFromContent(const std::shared_ptr<KMime::Message> &msg, GpgME::Protocol protocol) const
 {
     if (protocol == GpgME::CMS && mGpgSmPath.isNull()) {
-        const auto path = QStandardPaths::findExecutable(QStringLiteral("gpgsm"));
-        mGpgSmPath = path.isEmpty() ? QString() : path;
+        auto path = QStandardPaths::findExecutable(QStringLiteral("gpgsm"));
+        mGpgSmPath = path.isEmpty() ? QString() : std::move(path);
     } else if (protocol == GpgME::OpenPGP && mGpgPath.isNull()) {
         auto path = QStandardPaths::findExecutable(QStringLiteral("gpg2"));
         if (path.isEmpty()) {
             path = QStandardPaths::findExecutable(QStringLiteral("gpg"));
-            mGpgPath = path.isEmpty() ? QString() : path;
+            mGpgPath = path.isEmpty() ? QString() : std::move(path);
         } else {
-            mGpgPath = path;
+            mGpgPath = std::move(path);
         }
     }
 

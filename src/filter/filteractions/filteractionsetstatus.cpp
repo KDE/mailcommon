@@ -67,7 +67,7 @@ SearchRule::RequiredPart FilterActionSetStatus::requiredPart() const
 QString FilterActionSetStatus::sieveCode() const
 {
     QString flagCode;
-    const QString parameter = argsAsString();
+    QString parameter = argsAsString();
     if (parameter == u'R') {
         flagCode = QStringLiteral("\\\\Seen");
     } else if (parameter == u'D') {
@@ -76,7 +76,7 @@ QString FilterActionSetStatus::sieveCode() const
         flagCode = QStringLiteral("\\\\Answered");
     } else {
         qCDebug(MAILCOMMON_LOG) << " FilterActionSetStatus::sieveCode() unknown flags" << parameter;
-        flagCode = parameter;
+        flagCode = std::move(parameter);
     }
 
     const QString result = QStringLiteral("setflag \"%1\";").arg(flagCode);

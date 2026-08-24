@@ -87,7 +87,7 @@ MailCommon::MailFilter *FilterImporterProcmail::parseLine([[maybe_unused]] QText
             qCDebug(MAILCOMMON_LOG) << " line condition not parsed :" << line;
         }
         SearchRule::Ptr rule = SearchRule::createInstance(fieldName, functionName, line);
-        filter->pattern()->append(rule);
+        filter->pattern()->append(std::move(rule));
         // Condition
     } else if (line.startsWith(u'!')) {
         line.remove(u'!');

@@ -150,7 +150,7 @@ void FilterImporterSylpheed::parseConditions(const QDomElement &e, MailCommon::M
             }
         }
         SearchRule::Ptr rule = SearchRule::createInstance(fieldName, functionName, contentsName);
-        filter->pattern()->append(rule);
+        filter->pattern()->append(std::move(rule));
     }
 }
 

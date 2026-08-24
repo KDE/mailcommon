@@ -69,7 +69,7 @@ void AddTagDialog::slotTagNameChanged(const QString &text)
 
 void AddTagDialog::slotSave()
 {
-    const QString name(d->mTagWidget->tagNameLineEdit()->text());
+    QString name(d->mTagWidget->tagNameLineEdit()->text());
 
     for (const MailCommon::Tag::Ptr &tag : std::as_const(d->mTags)) {
         if (tag->name() == name) {
@@ -86,7 +86,7 @@ void AddTagDialog::slotSave()
     auto createJob = new Akonadi::TagCreateJob(akonadiTag, this);
     connect(createJob, &Akonadi::TagCreateJob::result, this, &AddTagDialog::onTagCreated);
 
-    d->mLabel = name;
+    d->mLabel = std::move(name);
 }
 
 void AddTagDialog::onTagCreated(KJob *job)

@@ -224,9 +224,9 @@ Akonadi::Collection::List FolderTreeWidget::selectedCollections() const
     const QModelIndexList selectedIndexes = selectionModel->selectedRows();
     for (const QModelIndex &index : selectedIndexes) {
         if (index.isValid()) {
-            const auto collection = index.model()->data(index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+            auto collection = index.model()->data(index, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
             if (collection.isValid()) {
-                collections.append(collection);
+                collections.append(std::move(collection));
             }
         }
     }

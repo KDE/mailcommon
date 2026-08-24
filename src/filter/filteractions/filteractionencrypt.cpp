@@ -162,13 +162,13 @@ FilterAction::ReturnCode FilterActionEncrypt::process(ItemContext &context, bool
                 }
             }
             bool dummy; // dummy
-            const auto decrypted = CryptoUtils::decryptMessage(msg, dummy);
+            auto decrypted = CryptoUtils::decryptMessage(msg, dummy);
             if (!decrypted) {
                 // We failed to decrypt the encrypted email - very likely we just don't
                 // have the right key, so don't consider it an error
                 return GoOn;
             } else {
-                msg = decrypted;
+                msg = std::move(decrypted);
             }
         } else {
             return GoOn;

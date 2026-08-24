@@ -86,15 +86,15 @@ QString MailCommon::Util::fullCollectionPath(const Akonadi::Collection &collecti
     fullPath = idx.data().toString();
     idx = idx.parent();
     while (idx != QModelIndex()) {
-        const QString tmp = idx.data().toString() + u'/' + fullPath;
+        QString tmp = idx.data().toString() + u'/' + fullPath;
         idx = idx.parent();
         if (idx != QModelIndex()) {
-            fullPath = tmp;
+            fullPath = std::move(tmp);
         } else {
             if (!addAccountName) {
                 break;
             } else {
-                fullPath = tmp;
+                fullPath = std::move(tmp);
                 break;
             }
         }
@@ -114,15 +114,15 @@ QString MailCommon::Util::fullCollectionRemoveIdPath(const Akonadi::Collection &
     fullPath = idx.data().toString();
     idx = idx.parent();
     while (idx != QModelIndex()) {
-        const QString tmp = idx.data(Akonadi::EntityTreeModel::RemoteIdRole).toString() + u'/' + fullPath;
+        QString tmp = idx.data(Akonadi::EntityTreeModel::RemoteIdRole).toString() + u'/' + fullPath;
         idx = idx.parent();
         if (idx != QModelIndex()) {
-            fullPath = tmp;
+            fullPath = std::move(tmp);
         } else {
             if (!addAccountName) {
                 break;
             } else {
-                fullPath = tmp;
+                fullPath = std::move(tmp);
                 break;
             }
         }

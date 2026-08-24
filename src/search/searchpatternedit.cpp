@@ -542,7 +542,7 @@ void SearchRuleWidgetLister::regenerateRuleListFromWidgets()
     for (const QWidget *w : lst) {
         SearchRule::Ptr r = qobject_cast<const SearchRuleWidget *>(w)->rule();
         if (r && !r->isEmpty()) {
-            mRuleList->append(r);
+            mRuleList->append(std::move(r));
         }
     }
     updateAddRemoveButton();

@@ -209,7 +209,7 @@ void FilterImporterEvolution::parsePartAction(const QDomElement &ruleFilter, Mai
                         }
                     }
                     SearchRule::Ptr rule = SearchRule::createInstance(fieldName, functionName, contents);
-                    filter->pattern()->append(rule);
+                    filter->pattern()->append(std::move(rule));
                 } else if (type == FilterImporterEvolution::FilterImporterEvolution::parseType::ActionType) {
                     QString actionName;
                     if (name == QLatin1StringView("stop")) {

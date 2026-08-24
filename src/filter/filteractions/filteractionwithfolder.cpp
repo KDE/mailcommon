@@ -64,7 +64,7 @@ bool FilterActionWithFolder::argsFromStringInteractive(const QString &argsStr, c
         if (lst.count() == 1 && exactPath) {
             mFolder = lst.at(0);
         } else {
-            const Akonadi::Collection newCol = MailCommon::FilterImporterPathCache::self()->convertedFilterPath(argsStr);
+            Akonadi::Collection newCol = MailCommon::FilterImporterPathCache::self()->convertedFilterPath(argsStr);
             if (!newCol.isValid()) {
                 QPointer<FilterActionMissingFolderDialog> dlg = new FilterActionMissingFolderDialog(lst, name, argsStr);
                 if (dlg->exec()) {
@@ -74,7 +74,7 @@ bool FilterActionWithFolder::argsFromStringInteractive(const QString &argsStr, c
                 }
                 delete dlg;
             } else {
-                mFolder = newCol;
+                mFolder = std::move(newCol);
                 needUpdate = true;
             }
         }

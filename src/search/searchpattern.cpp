@@ -145,7 +145,7 @@ void SearchPattern::readConfig(const KConfigGroup &config)
     for (int i = 0; i < nRules; ++i) {
         SearchRule::Ptr r = SearchRule::createInstanceFromConfig(config, i);
         if (!r->isEmpty()) {
-            append(r);
+            append(std::move(r));
         }
     }
 }
@@ -160,7 +160,7 @@ void SearchPattern::importLegacyConfig(const KConfigGroup &config)
         // we really can't do much heuristics...
         return;
     }
-    append(rule);
+    append(std::move(rule));
 
     const QString sOperator = config.readEntry("operator");
     if (sOperator == QLatin1StringView("ignore")) {
@@ -172,7 +172,7 @@ void SearchPattern::importLegacyConfig(const KConfigGroup &config)
     if (rule->isEmpty()) {
         return;
     }
-    append(rule);
+    append(std::move(rule));
 
     if (sOperator == QLatin1StringView("or")) {
         mOperator = OpOr;
@@ -358,7 +358,7 @@ QDataStream &SearchPattern::operator<<(QDataStream &s)
 
     while (!s.atEnd()) {
         SearchRule::Ptr rule = SearchRule::createInstance(s);
-        append(rule);
+        append(std::move(rule));
     }
     return s;
 }

@@ -186,13 +186,13 @@ void CollectionGeneralPage::save(Collection &collection)
     if (mContentsComboBox) {
         const PimCommon::CollectionTypeUtil::FolderContentsType type = collectionUtil.contentsTypeFromString(mContentsComboBox->currentText());
 
-        const QByteArray kolabName = collectionUtil.kolabNameFromType(type);
+        QByteArray kolabName = collectionUtil.kolabNameFromType(type);
         if (!kolabName.isEmpty()) {
             const QString iconName = collectionUtil.iconNameFromContentsType(type);
             auto *attribute = collection.attribute<Akonadi::EntityDisplayAttribute>(Akonadi::Collection::AddIfMissing);
             attribute->setIconName(iconName);
             new Akonadi::CollectionModifyJob(collection);
-            annotations[PimCommon::CollectionTypeUtil::kolabFolderType()] = kolabName;
+            annotations[PimCommon::CollectionTypeUtil::kolabFolderType()] = std::move(kolabName);
         }
     }
     if (annotations.isEmpty()) {
