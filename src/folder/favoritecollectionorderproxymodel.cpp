@@ -30,7 +30,9 @@ void FavoriteCollectionOrderProxyModel::setAccountActivities(Akonadi::AccountAct
         disconnect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FavoriteCollectionOrderProxyModel::slotInvalidateFilter);
     }
     mAccountActivities = accountActivities;
-    connect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FavoriteCollectionOrderProxyModel::slotInvalidateFilter);
+    if (mAccountActivities) {
+        connect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &FavoriteCollectionOrderProxyModel::slotInvalidateFilter);
+    }
     slotInvalidateFilter();
 }
 
