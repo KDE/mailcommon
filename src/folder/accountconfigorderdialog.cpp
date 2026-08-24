@@ -214,7 +214,6 @@ void AccountConfigOrderDialog::init()
         if (tmp.isValid()) {
             auto item = new QListWidgetItem(tmp.icon, tmp.name, d->mListAccount);
             item->setData(AccountConfigOrderDialog::IdentifierAccount, identifier);
-            d->mListAccount->addItem(item);
         }
     }
     const bool enabled = d->mSettings->enableAccountOrder();
