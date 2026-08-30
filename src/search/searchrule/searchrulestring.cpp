@@ -182,45 +182,46 @@ void SearchRuleString::addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &empty
     using namespace Akonadi;
     emptyIsNotAnError = false;
     SearchTerm termGroup(SearchTerm::RelOr);
-    if (qstricmp(field().constData(), "subject") == 0) {
+    const QByteArray f = field();
+    if (qstricmp(f.constData(), "subject") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Subject, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "reply-to") == 0) {
+    } else if (qstricmp(f.constData(), "reply-to") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderReplyTo, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "<message>") == 0) {
+    } else if (qstricmp(f.constData(), "<message>") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Message, contents(), akonadiComparator()));
-    } else if (field() == "<body>") {
+    } else if (f == "<body>") {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Body, contents(), akonadiComparator()));
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Attachment, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "<recipients>") == 0) {
+    } else if (qstricmp(f.constData(), "<recipients>") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderTo, contents(), akonadiComparator()));
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderCC, contents(), akonadiComparator()));
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderBCC, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "<any header>") == 0) {
+    } else if (qstricmp(f.constData(), "<any header>") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Headers, contents(), akonadiComparator()));
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Subject, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "to") == 0) {
+    } else if (qstricmp(f.constData(), "to") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderTo, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "cc") == 0) {
+    } else if (qstricmp(f.constData(), "cc") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderCC, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "bcc") == 0) {
+    } else if (qstricmp(f.constData(), "bcc") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderBCC, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "from") == 0) {
+    } else if (qstricmp(f.constData(), "from") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderFrom, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "list-id") == 0) {
+    } else if (qstricmp(f.constData(), "list-id") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderListId, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "resent-from") == 0) {
+    } else if (qstricmp(f.constData(), "resent-from") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderResentFrom, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "x-loop") == 0) {
+    } else if (qstricmp(f.constData(), "x-loop") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderXLoop, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "x-mailing-list") == 0) {
+    } else if (qstricmp(f.constData(), "x-mailing-list") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderXMailingList, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "x-spam-flag") == 0) {
+    } else if (qstricmp(f.constData(), "x-spam-flag") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderXSpamFlag, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "organization") == 0) {
+    } else if (qstricmp(f.constData(), "organization") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::HeaderOrganization, contents(), akonadiComparator()));
-    } else if (qstricmp(field().constData(), "<tag>") == 0) {
+    } else if (qstricmp(f.constData(), "<tag>") == 0) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::MessageTag, contents(), akonadiComparator()));
-    } else if (!field().isEmpty()) {
+    } else if (!f.isEmpty()) {
         termGroup.addSubTerm(EmailSearchTerm(EmailSearchTerm::Headers, contents(), akonadiComparator()));
     }
 
