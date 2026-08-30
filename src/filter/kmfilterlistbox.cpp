@@ -729,7 +729,6 @@ void KMFilterListBox::loadFilterList(bool createDummyFilter)
     for (MailFilter *filter : filters) {
         auto item = new QListWidgetFilterItem(filter->pattern()->name(), mListWidget);
         item->setFilter(new MailFilter(*filter));
-        mListWidget->addItem(item);
     }
 
     blockSignals(false);
