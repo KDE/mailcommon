@@ -86,12 +86,26 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
         msg->parse(); // probably not parsed yet: make sure we can access all headers
     }
 
+    // these two functions need the kmmessage therefore they don't call matchesInternal
+    if (function() == FuncHasAttachment) {
+        return KMime::hasAttachment(msg.get());
+    } else if (function() == FuncHasNoAttachment) {
+        return !KMime::hasAttachment(msg.get());
+    }
+
     QString msgContents;
     // Show the value used to compare the rules against in the log.
     // Overwrite the value for complete messages and all headers!
     bool logContents = true;
 
-    if (qstricmp(field().constData(), "<message>") == 0) {
+    if (qstricmp(field().constData(), "<tag>") == 0) {
+        // port?
+        //     const Nepomuk2::Resource res( item.url() );
+        //     foreach ( const Nepomuk2::Tag &tag, res.tags() ) {
+        //       msgContents += tag.label();
+        //     }
+        logContents = false;
+    } else if (qstricmp(field().constData(), "<message>") == 0) {
         msgContents = QString::fromUtf8(msg->encodedContent());
         logContents = false;
     } else if (qstricmp(field().constData(), "<body>") == 0) {
@@ -115,13 +129,6 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
         msgContents += msg->cc()->asUnicodeString();
         msgContents += QLatin1StringView(", ");
         msgContents += msg->bcc()->asUnicodeString();
-    } else if (qstricmp(field().constData(), "<tag>") == 0) {
-        // port?
-        //     const Nepomuk2::Resource res( item.url() );
-        //     foreach ( const Nepomuk2::Tag &tag, res.tags() ) {
-        //       msgContents += tag.label();
-        //     }
-        logContents = false;
     } else {
         // make sure to treat messages with multiple header lines for
         // the same header correctly
@@ -141,13 +148,6 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
         if (msgContents.isEmpty()) {
             return (function() == FuncIsInAddressbook) ? false : true;
         }
-    }
-
-    // these two functions need the kmmessage therefore they don't call matchesInternal
-    if (function() == FuncHasAttachment) {
-        return KMime::hasAttachment(msg.get());
-    } else if (function() == FuncHasNoAttachment) {
-        return !KMime::hasAttachment(msg.get());
     }
 
     bool rc = matchesInternal(msgContents);
