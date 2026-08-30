@@ -146,7 +146,9 @@ bool MailCommon::Util::showJobErrorMessage(KJob *job)
 Akonadi::AgentInstance::List MailCommon::Util::agentInstances(bool excludeMailTransport)
 {
     Akonadi::AgentInstance::List relevantInstances;
-    for (const Akonadi::AgentInstance &instance : Akonadi::AgentManager::self()->instances()) {
+    const auto instances = Akonadi::AgentManager::self()->instances();
+    relevantInstances.reserve(instances.count());
+    for (const Akonadi::AgentInstance &instance : instances) {
         if (isMailAgent(instance, excludeMailTransport)) {
             relevantInstances.append(instance);
         }

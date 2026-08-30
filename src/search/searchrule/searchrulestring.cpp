@@ -111,8 +111,10 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
                 || matchesInternal(msg->bcc()->asUnicodeString());
         }
         msgContents = msg->to()->asUnicodeString();
-        msgContents += QLatin1StringView(", ") + msg->cc()->asUnicodeString();
-        msgContents += QLatin1StringView(", ") + msg->bcc()->asUnicodeString();
+        msgContents += QLatin1StringView(", ");
+        msgContents += msg->cc()->asUnicodeString();
+        msgContents += QLatin1StringView(", ");
+        msgContents += msg->bcc()->asUnicodeString();
     } else if (qstricmp(field().constData(), "<tag>") == 0) {
         // port?
         //     const Nepomuk2::Resource res( item.url() );
@@ -244,10 +246,10 @@ bool SearchRuleString::matchesInternal(const QString &msgContents) const
 
     switch (function()) {
     case SearchRule::FuncEquals:
-        return QString::compare(msgContents.toLower(), contents().toLower()) == 0;
+        return QString::compare(msgContents, contents(), Qt::CaseInsensitive) == 0;
 
     case SearchRule::FuncNotEqual:
-        return QString::compare(msgContents.toLower(), contents().toLower()) != 0;
+        return QString::compare(msgContents, contents(), Qt::CaseInsensitive) != 0;
 
     case SearchRule::FuncContains:
         return msgContents.contains(contents(), Qt::CaseInsensitive);

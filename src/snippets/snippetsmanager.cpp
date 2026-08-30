@@ -488,9 +488,10 @@ QString SnippetsManager::SnippetsManagerPrivate::replaceVariables(const QString 
     int iFound = -1;
     int iEnd = -1;
     QMap<QString, QString> tempLocalVariables(localVariables);
+    static const QRegularExpression variableRegex(QStringLiteral("\\$[A-Za-z\\-_0-9\\s]*\\$"));
     do {
         // find the next variable by this regex
-        iFound = text.indexOf(QRegularExpression(QStringLiteral("\\$[A-Za-z\\-_0-9\\s]*\\$")), iEnd + 1);
+        iFound = text.indexOf(variableRegex, iEnd + 1);
         if (iFound >= 0) {
             iEnd = text.indexOf(u'$', iFound + 1) + 1;
 
