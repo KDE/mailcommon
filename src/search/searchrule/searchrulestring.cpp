@@ -98,23 +98,24 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     // Overwrite the value for complete messages and all headers!
     bool logContents = true;
 
-    if (qstricmp(field().constData(), "<tag>") == 0) {
+    const QByteArray f = field();
+    if (qstricmp(f.constData(), "<tag>") == 0) {
         // port?
         //     const Nepomuk2::Resource res( item.url() );
         //     foreach ( const Nepomuk2::Tag &tag, res.tags() ) {
         //       msgContents += tag.label();
         //     }
         logContents = false;
-    } else if (qstricmp(field().constData(), "<message>") == 0) {
+    } else if (qstricmp(f.constData(), "<message>") == 0) {
         msgContents = QString::fromUtf8(msg->encodedContent());
         logContents = false;
-    } else if (qstricmp(field().constData(), "<body>") == 0) {
+    } else if (qstricmp(f.constData(), "<body>") == 0) {
         msgContents = QString::fromUtf8(msg->body());
         logContents = false;
-    } else if (qstricmp(field().constData(), "<any header>") == 0) {
+    } else if (qstricmp(f.constData(), "<any header>") == 0) {
         msgContents = QString::fromUtf8(msg->head());
         logContents = false;
-    } else if (qstricmp(field().constData(), "<recipients>") == 0) {
+    } else if (qstricmp(f.constData(), "<recipients>") == 0) {
         // (mmutz 2001-11-05) hack to fix "<recipients> !contains foo" to
         // meet user's expectations. See FAQ entry in KDE 2.2.2's KMail
         // handbook
@@ -133,7 +134,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
         // make sure to treat messages with multiple header lines for
         // the same header correctly
         msgContents.clear();
-        if (auto hrd = msg->headerByType(field().constData())) {
+        if (auto hrd = msg->headerByType(f.constData())) {
             msgContents = hrd->asUnicodeString();
         }
     }
@@ -141,7 +142,7 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     if (function() == FuncIsInAddressbook || function() == FuncIsNotInAddressbook) {
         // I think only the "from"-field makes sense.
         msgContents.clear();
-        if (auto hrd = msg->headerByType(field().constData())) {
+        if (auto hrd = msg->headerByType(f.constData())) {
             msgContents = hrd->asUnicodeString();
         }
 
@@ -154,8 +155,8 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
     if (!rc) {
         // Try to search endwith for emails => remove >
         // Bug 455273
-        if ((qstricmp(field().constData(), "to") == 0) || (qstricmp(field().constData(), "cc") == 0) || (qstricmp(field().constData(), "bcc") == 0)
-            || (qstricmp(field().constData(), "from") == 0) || (qstricmp(field().constData(), "reply-to") == 0)) {
+        if ((qstricmp(f.constData(), "to") == 0) || (qstricmp(f.constData(), "cc") == 0) || (qstricmp(f.constData(), "bcc") == 0)
+            || (qstricmp(f.constData(), "from") == 0) || (qstricmp(f.constData(), "reply-to") == 0)) {
             if (function() == SearchRule::FuncEndWith || function() == SearchRule::FuncNotEndWith) {
                 QString newContents = msgContents;
                 if (newContents.endsWith(u'>')) {
