@@ -119,17 +119,21 @@ bool SearchRuleString::matches(const Akonadi::Item &item) const
         // (mmutz 2001-11-05) hack to fix "<recipients> !contains foo" to
         // meet user's expectations. See FAQ entry in KDE 2.2.2's KMail
         // handbook
-        if (function() == FuncEquals || function() == FuncNotEqual) {
-            // do we need to treat this case specially? Ie.: What shall
-            // "equality" mean for recipients.
-            return matchesInternal(msg->to()->asUnicodeString()) || matchesInternal(msg->cc()->asUnicodeString())
-                || matchesInternal(msg->bcc()->asUnicodeString());
+
+        QStringList recipients;
+        for (const KMime::Headers::Base *hdr : {static_cast<const KMime::Headers::Base *>(msg->to(KMime::CreatePolicy::DontCreate)),
+                                                static_cast<const KMime::Headers::Base *>(msg->cc(KMime::CreatePolicy::DontCreate)),
+                                                static_cast<const KMime::Headers::Base *>(msg->bcc(KMime::CreatePolicy::DontCreate))}) {
+            if (hdr && !hdr->isEmpty()) {
+                recipients.append(hdr->asUnicodeString());
+            }
         }
-        msgContents = msg->to()->asUnicodeString();
-        msgContents += QLatin1StringView(", ");
-        msgContents += msg->cc()->asUnicodeString();
-        msgContents += QLatin1StringView(", ");
-        msgContents += msg->bcc()->asUnicodeString();
+        if (function() == FuncEquals || function() == FuncNotEqual) {
+            return std::any_of(recipients.cbegin(), recipients.cend(), [this](const QString &s) {
+                return matchesInternal(s);
+            });
+        }
+        msgContents = recipients.join(u", "_s);
     } else {
         // make sure to treat messages with multiple header lines for
         // the same header correctly
