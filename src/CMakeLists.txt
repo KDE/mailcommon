@@ -399,6 +399,7 @@ target_link_libraries(
         Qt::Xml
         Qt::Multimedia
         KF6::TextCustomEditor
+        KF6::TextAddonsWidgets
 )
 
 target_link_libraries(KPim6MailCommon PRIVATE QGpgmeQt6)

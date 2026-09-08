@@ -169,6 +169,7 @@ find_package(KPim6TemplateParser ${MESSAGELIB_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6AkonadiContactWidgets ${AKONADICONTACT_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6IdentityManagementCore ${KIDENTITYMANAGERCORE_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF6TextCustomEditor ${KTEXTADDONS_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6TextAddonsWidgets ${KTEXTADDONS_MIN_VERSION} CONFIG REQUIRED)
 find_package(KPim6PimCommonActivities ${PIMCOMMON_LIB_VERSION} CONFIG)
 option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
 add_feature_info(

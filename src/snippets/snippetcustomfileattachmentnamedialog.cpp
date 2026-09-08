@@ -16,6 +16,7 @@
 #include <KSharedConfig>
 #include <KWindowConfig>
 #include <QWindow>
+#include <TextAddonsWidgets/LoadDialogSizeUtils>
 namespace
 {
 static const char mySnippetCustomFileAttachmentNameDialogGroupName[] = "SnippetCustomFileAttachmentNameDialog";
@@ -52,18 +53,24 @@ SnippetCustomFileAttachmentNameDialog::~SnippetCustomFileAttachmentNameDialog()
 
 void SnippetCustomFileAttachmentNameDialog::readConfig()
 {
+#if TEXTADDONSWIDGETS_VERSION >= QT_VERSION_CHECK(2, 1, 49)
+    TextAddonsWidgets::LoadDialogSizeUtils::manageDialogSize(this, QLatin1StringView(mySnippetCustomFileAttachmentNameDialogGroupName), QSize(500, 150));
+#else
     create(); // ensure a window is created
     windowHandle()->resize(QSize(500, 150));
     const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySnippetCustomFileAttachmentNameDialogGroupName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
+#endif
 }
 
 void SnippetCustomFileAttachmentNameDialog::writeConfig()
 {
+#if TEXTADDONSWIDGETS_VERSION < QT_VERSION_CHECK(2, 1, 49)
     KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySnippetCustomFileAttachmentNameDialogGroupName));
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
+#endif
 }
 
 QString SnippetCustomFileAttachmentNameDialog::result() const

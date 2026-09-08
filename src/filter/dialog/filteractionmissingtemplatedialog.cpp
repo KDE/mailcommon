@@ -18,6 +18,7 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QWindow>
+#include <TextAddonsWidgets/LoadDialogSizeUtils>
 
 using namespace MailCommon;
 namespace
@@ -62,18 +63,24 @@ FilterActionMissingTemplateDialog::~FilterActionMissingTemplateDialog()
 
 void FilterActionMissingTemplateDialog::readConfig()
 {
+#if TEXTADDONSWIDGETS_VERSION >= QT_VERSION_CHECK(2, 1, 49)
+    TextAddonsWidgets::LoadDialogSizeUtils::manageDialogSize(this, QLatin1StringView(myFilterActionMissingTemplateDialogGroupName), QSize(500, 300));
+#else
     create(); // ensure a window is created
     windowHandle()->resize(QSize(500, 300));
     const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterActionMissingTemplateDialogGroupName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
+#endif
 }
 
 void FilterActionMissingTemplateDialog::writeConfig()
 {
+#if TEXTADDONSWIDGETS_VERSION < QT_VERSION_CHECK(2, 1, 49)
     KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterActionMissingTemplateDialogGroupName));
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
+#endif
 }
 
 QString FilterActionMissingTemplateDialog::selectedTemplate() const

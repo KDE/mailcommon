@@ -15,6 +15,7 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QWindow>
+#include <TextAddonsWidgets/LoadDialogSizeUtils>
 
 #include <MailTransport/TransportComboBox>
 
@@ -59,18 +60,24 @@ FilterActionMissingTransportDialog::~FilterActionMissingTransportDialog()
 
 void FilterActionMissingTransportDialog::readConfig()
 {
+#if TEXTADDONSWIDGETS_VERSION >= QT_VERSION_CHECK(2, 1, 49)
+    TextAddonsWidgets::LoadDialogSizeUtils::manageDialogSize(this, QLatin1StringView(myFilterActionMissingTransportDialogGroupName), QSize(500, 300));
+#else
     create(); // ensure a window is created
     windowHandle()->resize(QSize(500, 300));
     const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterActionMissingTransportDialogGroupName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
+#endif
 }
 
 void FilterActionMissingTransportDialog::writeConfig()
 {
+#if TEXTADDONSWIDGETS_VERSION < QT_VERSION_CHECK(2, 1, 49)
     KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterActionMissingTransportDialogGroupName));
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
+#endif
 }
 
 int FilterActionMissingTransportDialog::selectedTransport() const

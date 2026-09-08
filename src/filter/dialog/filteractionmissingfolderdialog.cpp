@@ -23,6 +23,7 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QWindow>
+#include <TextAddonsWidgets/LoadDialogSizeUtils>
 namespace
 {
 static const char myFilterActionMissingCollectionDialogConfigGroupName[] = "FilterActionMissingCollectionDialog";
@@ -98,18 +99,24 @@ FilterActionMissingFolderDialog::~FilterActionMissingFolderDialog()
 
 void FilterActionMissingFolderDialog::readConfig()
 {
+#if TEXTADDONSWIDGETS_VERSION >= QT_VERSION_CHECK(2, 1, 49)
+    TextAddonsWidgets::LoadDialogSizeUtils::manageDialogSize(this, QLatin1StringView(myFilterActionMissingCollectionDialogConfigGroupName), QSize(500, 300));
+#else
     create(); // ensure a window is created
     windowHandle()->resize(QSize(500, 300));
     const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterActionMissingCollectionDialogConfigGroupName));
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
+#endif
 }
 
 void FilterActionMissingFolderDialog::writeConfig()
 {
+#if TEXTADDONSWIDGETS_VERSION < QT_VERSION_CHECK(2, 1, 49)
     KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterActionMissingCollectionDialogConfigGroupName));
     KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
+#endif
 }
 
 void FilterActionMissingFolderDialog::slotFolderChanged(const Akonadi::Collection &col)
