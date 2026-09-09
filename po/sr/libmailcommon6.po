@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-04 00:46+0000\n"
+"POT-Creation-Date: 2026-09-09 00:51+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -328,21 +328,21 @@ msgid "Message format:"
 msgstr "ознака поруке"
 
 # >> @title:window
-#: filter/dialog/filteractionmissingaccountdialog.cpp:33
+#: filter/dialog/filteractionmissingaccountdialog.cpp:34
 #, fuzzy, kde-format
 #| msgid "Select Account"
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "Избор налога"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:39
+#: filter/dialog/filteractionmissingaccountdialog.cpp:40
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr "Недостаје налог филтера. Изаберите жељени налог за филтер „%1“."
 
 # >> @title:window
-#: filter/dialog/filteractionmissingfolderdialog.cpp:40
+#: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #: folder/folderrequester.cpp:74
 #, fuzzy, kde-format
 #| msgid "Select Folder"
@@ -350,27 +350,27 @@ msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Избор фасцикле"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:43
+#: filter/dialog/filteractionmissingfolderdialog.cpp:44
 #, fuzzy, kde-format
 #| msgid "Folder path was \"%1\"."
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Путања фасцикле је „%1“."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:48
+#: filter/dialog/filteractionmissingfolderdialog.cpp:49
 #, fuzzy, kde-format
 #| msgid "The following folders can be used for this filter:"
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Следеће фасцикле могу се употребити за овај филтер:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:69
+#: filter/dialog/filteractionmissingfolderdialog.cpp:70
 #, fuzzy, kde-format
 #| msgid "Please select a folder"
 msgid "Please select a folder:"
 msgstr "Изаберите фасциклу"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:72
+#: filter/dialog/filteractionmissingfolderdialog.cpp:73
 #, fuzzy, kde-format
 #| msgid ""
 #| "Filter folder is missing. Please select a folder to use with filter \"%1\""
@@ -379,14 +379,14 @@ msgid ""
 msgstr "Недостаје фасцикла филтера. Изаберите жељену фасциклу за филтер „%1“."
 
 # >> @title:window
-#: filter/dialog/filteractionmissingidentitydialog.cpp:32
+#: filter/dialog/filteractionmissingidentitydialog.cpp:33
 #, fuzzy, kde-format
 #| msgid "Select Identity"
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "Избор идентитета"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:38
+#: filter/dialog/filteractionmissingidentitydialog.cpp:39
 #, kde-format
 msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
@@ -395,60 +395,60 @@ msgstr ""
 "Недостаје идентитет филтера. Изаберите жељени идентитет за филтер „%1“."
 
 # >> @title:window
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:31
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:32
 #, fuzzy, kde-format
 #| msgid "Select sound"
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "Избор звука"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:35
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:36
 #, fuzzy, kde-format
 #| msgid "Sound file was \"%1\"."
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "Фајл звука је „%1“."
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:42
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:43
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr "Недостаје фајл звука. Изаберите жељени звук за филтер „%1“."
 
 # >> @title:window
-#: filter/dialog/filteractionmissingtagdialog.cpp:37
+#: filter/dialog/filteractionmissingtagdialog.cpp:38
 #, fuzzy, kde-format
 #| msgid "Select Tag"
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Избор ознаке"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:40
+#: filter/dialog/filteractionmissingtagdialog.cpp:41
 #, fuzzy, kde-format
 #| msgid "Tag was \"%1\"."
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Ознака је „%1“."
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:47
+#: filter/dialog/filteractionmissingtagdialog.cpp:48
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr "Недостаје ознака филтера. Изаберите жељену ознаку за филтер „%1“."
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:71
+#: filter/dialog/filteractionmissingtagdialog.cpp:72
 #, fuzzy, kde-format
 #| msgid "Add Tag"
 msgid "Add Tag…"
 msgstr "Додај ознаку"
 
 # >> @title:window
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:32
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:33
 #, fuzzy, kde-format
 #| msgid "Select Template"
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "Избор шаблона"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:38
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:39
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
@@ -456,14 +456,14 @@ msgid ""
 msgstr "Недостаје шаблон филтера. Изаберите жељени шаблон за филтер „%1“."
 
 # >> @title:window
-#: filter/dialog/filteractionmissingtransportdialog.cpp:31
+#: filter/dialog/filteractionmissingtransportdialog.cpp:32
 #, fuzzy, kde-format
 #| msgid "Select Transport"
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "Избор транспорта"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:37
+#: filter/dialog/filteractionmissingtransportdialog.cpp:38
 #, kde-format
 msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
@@ -471,7 +471,7 @@ msgid ""
 msgstr ""
 "Недостаје транспорт филтера. Изаберите жељени транспорт за филтер „%1“."
 
-#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:29
 #, fuzzy, kde-format
 #| msgid "Select thunderbird filter files"
 msgctxt "@title:window"
@@ -990,30 +990,30 @@ msgstr "Помоћ"
 msgid "You can get specific header when you use %{headername}."
 msgstr "Можете да задате одређено заглавље помоћу %{headername}."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:38
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Претварање у сито скрипту"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:45
 #, kde-format
 msgid "Save…"
 msgstr ""
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:68
 #, fuzzy, kde-format
 #| msgid "Save..."
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "Сачувај..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr "сито фајлови (*.siv);;сви фајлови (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:85
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
@@ -1110,14 +1110,14 @@ msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Извоз филтера̂"
 
-#: filter/filterselectiondialog.cpp:29
+#: filter/filterselectiondialog.cpp:30
 #, fuzzy, kde-format
 #| msgid "Select All"
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Изабери све"
 
-#: filter/filterselectiondialog.cpp:30
+#: filter/filterselectiondialog.cpp:31
 #, fuzzy, kde-format
 #| msgid "Unselect All"
 msgctxt "@action:button"
@@ -1125,28 +1125,28 @@ msgid "Unselect All"
 msgstr "Поништи сав избор"
 
 # >> @title:window
-#: filter/filterselectiondialog.cpp:34
+#: filter/filterselectiondialog.cpp:35
 #, fuzzy, kde-format
 #| msgid "Select Filters"
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Избор филтера̂"
 
-#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:53
+#: filter/filterselectiondialog.cpp:46 filter/kmfilterlistbox.cpp:53
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "тражи"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:29
+#: filter/invalidfilters/invalidfilterdialog.cpp:30
 #, fuzzy, kde-format
 #| msgid "Invalid Filters"
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "Лоши филтери"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:40
+#: filter/invalidfilters/invalidfilterdialog.cpp:41
 #, kde-format
 msgid "Discard"
 msgstr "Одбаци"
@@ -1868,27 +1868,27 @@ msgid "Select file from config:"
 msgstr "Фајла из поставе:"
 
 # >> @title:window
-#: folder/accountconfigorderdialog.cpp:57
+#: folder/accountconfigorderdialog.cpp:58
 #, fuzzy, kde-format
 #| msgid "Edit Accounts Order"
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "Уређивање редоследа налога"
 
-#: folder/accountconfigorderdialog.cpp:74
+#: folder/accountconfigorderdialog.cpp:75
 #, fuzzy, kde-format
 #| msgid "Use custom order"
 msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "Посебан редослед"
 
-#: folder/accountconfigorderdialog.cpp:91
+#: folder/accountconfigorderdialog.cpp:92
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "Горе"
 
-#: folder/accountconfigorderdialog.cpp:99
+#: folder/accountconfigorderdialog.cpp:100
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
@@ -2861,7 +2861,7 @@ msgstr "Избор налога"
 msgid "…"
 msgstr ""
 
-#: snippets/snippetcustomfileattachmentnamedialog.cpp:28
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
@@ -2883,7 +2883,7 @@ msgid "Insert Variables"
 msgstr "Унос вредности за променљиве"
 
 # >> @title:window
-#: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentdialog.cpp:27
 #: snippets/snippetselectattachmentwidget.cpp:52
 #, fuzzy, kde-format
 #| msgid "Select Account"
@@ -3038,28 +3038,28 @@ msgid "Text Snippets"
 msgstr "Уметни исечак"
 
 # >> @title:window
-#: snippets/snippetvariabledialog.cpp:37
+#: snippets/snippetvariabledialog.cpp:38
 #, fuzzy, kde-format
 #| msgid "Enter Values for Variables"
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Унос вредности за променљиве"
 
-#: snippets/snippetvariabledialog.cpp:40
+#: snippets/snippetvariabledialog.cpp:41
 #, fuzzy, kde-format
 #| msgid "Enter the replacement values for '%1':"
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Унесите вредност замене за „%1“:"
 
-#: snippets/snippetvariabledialog.cpp:45
+#: snippets/snippetvariabledialog.cpp:46
 #, fuzzy, kde-format
 #| msgid "Make value &default"
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Постави као по&дразумевану"
 
-#: snippets/snippetvariabledialog.cpp:48
+#: snippets/snippetvariabledialog.cpp:49
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -3069,7 +3069,7 @@ msgstr ""
 "Укључите ово да бисте сачували вредност унесену десно као подразумевану за "
 "ову променљиву."
 
-#: snippets/snippetvariabledialog.cpp:51
+#: snippets/snippetvariabledialog.cpp:52
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""

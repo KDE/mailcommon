@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-04 00:46+0000\n"
+"POT-Creation-Date: 2026-09-09 00:51+0000\n"
 "PO-Revision-Date: 2026-08-13 12:23+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -304,13 +304,13 @@ msgstr "&Mostrar columna:"
 msgid "Message format:"
 msgstr "Formato de los mensajes:"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:33
+#: filter/dialog/filteractionmissingaccountdialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "Seleccionar cuenta"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:39
+#: filter/dialog/filteractionmissingaccountdialog.cpp:40
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
@@ -318,31 +318,31 @@ msgstr ""
 "La cuenta del filtro se ha perdido. seleccione una cuenta para usar con el "
 "filtro «%1»"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:40
+#: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Seleccionar carpeta"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:43
+#: filter/dialog/filteractionmissingfolderdialog.cpp:44
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "La ruta de la carpeta era «%1»."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:48
+#: filter/dialog/filteractionmissingfolderdialog.cpp:49
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Las siguientes carpetas se pueden usar para este filtro:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:69
+#: filter/dialog/filteractionmissingfolderdialog.cpp:70
 #, kde-format
 msgid "Please select a folder:"
 msgstr "Seleccione una carpeta:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:72
+#: filter/dialog/filteractionmissingfolderdialog.cpp:73
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
@@ -350,13 +350,13 @@ msgstr ""
 "La carpeta de filtro se ha perdido. Seleccione una carpeta para usar con el "
 "filtro «%1»:"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:32
+#: filter/dialog/filteractionmissingidentitydialog.cpp:33
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "Seleccionar identidad"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:38
+#: filter/dialog/filteractionmissingidentitydialog.cpp:39
 #, kde-format
 msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
@@ -365,56 +365,56 @@ msgstr ""
 "La identidad del filtro se ha perdido. Seleccione una identidad para usar "
 "con el filtro «%1»"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:31
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "Seleccionar sonido"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:35
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:36
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "El archivo de sonido era «%1»."
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:42
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:43
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr ""
 "El archivo de sonido se ha perdido. Seleccione un archivo de sonido para "
 "usar con el filtro «%1»"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:37
+#: filter/dialog/filteractionmissingtagdialog.cpp:38
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Seleccionar etiqueta"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:40
+#: filter/dialog/filteractionmissingtagdialog.cpp:41
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "La etiqueta era «%1»."
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:47
+#: filter/dialog/filteractionmissingtagdialog.cpp:48
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
 "La etiqueta del filtro se ha perdido. Seleccione una etiqueta para usar con "
 "el filtro «%1»"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:71
+#: filter/dialog/filteractionmissingtagdialog.cpp:72
 #, kde-format
 msgid "Add Tag…"
 msgstr "Añadir etiqueta…"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:32
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:33
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "Seleccionar plantilla"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:38
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:39
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
@@ -423,13 +423,13 @@ msgstr ""
 "La plantilla del filtro se ha perdido. Seleccione una plantilla para usar "
 "con el filtro «%1»"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:31
+#: filter/dialog/filteractionmissingtransportdialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "Seleccionar transporte"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:37
+#: filter/dialog/filteractionmissingtransportdialog.cpp:38
 #, kde-format
 msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
@@ -438,7 +438,7 @@ msgstr ""
 "El transporte del filtro se ha perdido. Seleccione un transporte para usar "
 "con el filtro «%1»"
 
-#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
@@ -945,29 +945,29 @@ msgstr "Ayuda"
 msgid "You can get specific header when you use %{headername}."
 msgstr "Puede obtener un encabezado específico usando %{headername}."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:38
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Convertir a guión Sieve"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:45
 #, kde-format
 msgid "Save…"
 msgstr "Guardar…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:68
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "Compartir…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr "Archivos sieve (*.siv);;Todos los archivos (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:85
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
@@ -1050,38 +1050,38 @@ msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Exportar filtros"
 
-#: filter/filterselectiondialog.cpp:29
+#: filter/filterselectiondialog.cpp:30
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Seleccionar todo"
 
-#: filter/filterselectiondialog.cpp:30
+#: filter/filterselectiondialog.cpp:31
 #, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Deseleccionar todo"
 
-#: filter/filterselectiondialog.cpp:34
+#: filter/filterselectiondialog.cpp:35
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Seleccionar filtros"
 
-#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:53
+#: filter/filterselectiondialog.cpp:46 filter/kmfilterlistbox.cpp:53
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "Buscar"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:29
+#: filter/invalidfilters/invalidfilterdialog.cpp:30
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "Filtros no válidos"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:40
+#: filter/invalidfilters/invalidfilterdialog.cpp:41
 #, kde-format
 msgid "Discard"
 msgstr "Descartar"
@@ -1750,25 +1750,25 @@ msgstr "Seleccionar archivo:"
 msgid "Select file from config:"
 msgstr "Seleccionar archivo desde configuración:"
 
-#: folder/accountconfigorderdialog.cpp:57
+#: folder/accountconfigorderdialog.cpp:58
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "Editar el orden de las cuentas"
 
-#: folder/accountconfigorderdialog.cpp:74
+#: folder/accountconfigorderdialog.cpp:75
 #, kde-format
 msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "Usar orden personalizado"
 
-#: folder/accountconfigorderdialog.cpp:91
+#: folder/accountconfigorderdialog.cpp:92
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "Subir"
 
-#: folder/accountconfigorderdialog.cpp:99
+#: folder/accountconfigorderdialog.cpp:100
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
@@ -2688,7 +2688,7 @@ msgstr "Seleccionar adjuntos"
 msgid "…"
 msgstr "…"
 
-#: snippets/snippetcustomfileattachmentnamedialog.cpp:28
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
@@ -2706,7 +2706,7 @@ msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Insertar variables"
 
-#: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentdialog.cpp:27
 #: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
@@ -2843,25 +2843,25 @@ msgstr "Actualizar"
 msgid "Text Snippets"
 msgstr "Fragmentos de texto"
 
-#: snippets/snippetvariabledialog.cpp:37
+#: snippets/snippetvariabledialog.cpp:38
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Introduzca valores para las variables"
 
-#: snippets/snippetvariabledialog.cpp:40
+#: snippets/snippetvariabledialog.cpp:41
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Introduzca los valores de sustitución para «%1»:"
 
-#: snippets/snippetvariabledialog.cpp:45
+#: snippets/snippetvariabledialog.cpp:46
 #, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Hacer valor pre&determinado"
 
-#: snippets/snippetvariabledialog.cpp:48
+#: snippets/snippetvariabledialog.cpp:49
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2871,7 +2871,7 @@ msgstr ""
 "Active esto para guardar el valor introducido a la derecha como valor "
 "predeterminado para esta variable"
 
-#: snippets/snippetvariabledialog.cpp:51
+#: snippets/snippetvariabledialog.cpp:52
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""

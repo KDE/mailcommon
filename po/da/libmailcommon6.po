@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-04 00:46+0000\n"
+"POT-Creation-Date: 2026-09-09 00:51+0000\n"
 "PO-Revision-Date: 2020-08-08 16:45+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -321,46 +321,46 @@ msgstr "Ge&nvej:"
 msgid "Message format:"
 msgstr "Brevstatus"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:33
+#: filter/dialog/filteractionmissingaccountdialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "Vælg konto"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:39
+#: filter/dialog/filteractionmissingaccountdialog.cpp:40
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr "Filterkonto mangler. Vælg en konto der skal bruges med filteret \"%1\""
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:40
+#: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Vælg mappe"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:43
+#: filter/dialog/filteractionmissingfolderdialog.cpp:44
 #, fuzzy, kde-format
 #| msgid "Folder path was \"%1\"."
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Mappestien var \"%1\"."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:48
+#: filter/dialog/filteractionmissingfolderdialog.cpp:49
 #, fuzzy, kde-format
 #| msgid "The following folders can be used for this filter:"
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Følgende mapper kan bruges til dette filter:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:69
+#: filter/dialog/filteractionmissingfolderdialog.cpp:70
 #, fuzzy, kde-format
 #| msgid "Please select a folder"
 msgid "Please select a folder:"
 msgstr "Vælg en mappe"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:72
+#: filter/dialog/filteractionmissingfolderdialog.cpp:73
 #, fuzzy, kde-format
 #| msgid ""
 #| "Filter folder is missing. Please select a folder to use with filter \"%1\""
@@ -369,13 +369,13 @@ msgid ""
 msgstr ""
 "Filtermappen mangler. Vælg en mappe der skal bruges med filteret \"%1\""
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:32
+#: filter/dialog/filteractionmissingidentitydialog.cpp:33
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "Vælg identitet"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:38
+#: filter/dialog/filteractionmissingidentitydialog.cpp:39
 #, kde-format
 msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
@@ -384,55 +384,55 @@ msgstr ""
 "Filteridentiteten mangler. Vælg en identitet der skal bruges med filteret "
 "\"%1\""
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:31
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "Vælg lyd"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:35
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:36
 #, fuzzy, kde-format
 #| msgid "Sound file was \"%1\"."
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "Lydfilen var \"%1\"."
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:42
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:43
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr "Lydfilen mangler. Vælg en lyd der skal bruges med filtret \"%1\""
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:37
+#: filter/dialog/filteractionmissingtagdialog.cpp:38
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Vælg mærke"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:40
+#: filter/dialog/filteractionmissingtagdialog.cpp:41
 #, fuzzy, kde-format
 #| msgid "Tag was \"%1\"."
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Mærket var \"%1\""
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:47
+#: filter/dialog/filteractionmissingtagdialog.cpp:48
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr "Filtermærke mangler. Vælg et mærke der skal bruges med filteret \"%1\""
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:71
+#: filter/dialog/filteractionmissingtagdialog.cpp:72
 #, fuzzy, kde-format
 #| msgid "Add Tag"
 msgid "Add Tag…"
 msgstr "Tilføj mærke"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:32
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:33
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "Vælg skabelon"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:38
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:39
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
@@ -440,13 +440,13 @@ msgid ""
 msgstr ""
 "Filterskabelon mangler. Vælg en skabelon der skal bruges med filteret \"%1\""
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:31
+#: filter/dialog/filteractionmissingtransportdialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "Vælg transport"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:37
+#: filter/dialog/filteractionmissingtransportdialog.cpp:38
 #, kde-format
 msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
@@ -455,7 +455,7 @@ msgstr ""
 "Filtertransport mangler. Vælg en transport der skal bruges med filteret "
 "\"%1\""
 
-#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
@@ -970,30 +970,30 @@ msgstr "Hjælp"
 msgid "You can get specific header when you use %{headername}."
 msgstr "Du kan hente en specifik header, når du bruger %{headername}."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:38
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Konvertér til sieve-script"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:45
 #, kde-format
 msgid "Save…"
 msgstr ""
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:68
 #, fuzzy, kde-format
 #| msgid "Share..."
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "Del..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr "Sieve-filer (*.siv);;Alle filer (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:85
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
@@ -1084,40 +1084,40 @@ msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Eksportér filtre"
 
-#: filter/filterselectiondialog.cpp:29
+#: filter/filterselectiondialog.cpp:30
 #, fuzzy, kde-format
 #| msgid "Select All"
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Markér alle"
 
-#: filter/filterselectiondialog.cpp:30
+#: filter/filterselectiondialog.cpp:31
 #, fuzzy, kde-format
 #| msgid "Unselect All"
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Afmarkér alle"
 
-#: filter/filterselectiondialog.cpp:34
+#: filter/filterselectiondialog.cpp:35
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Vælg filtre"
 
-#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:53
+#: filter/filterselectiondialog.cpp:46 filter/kmfilterlistbox.cpp:53
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "Søg"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:29
+#: filter/invalidfilters/invalidfilterdialog.cpp:30
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "Ugyldige filtre"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:40
+#: filter/invalidfilters/invalidfilterdialog.cpp:41
 #, kde-format
 msgid "Discard"
 msgstr "Kassér"
@@ -1823,26 +1823,26 @@ msgstr "Vælg fil:"
 msgid "Select file from config:"
 msgstr "Vælg fil fra konfiguration:"
 
-#: folder/accountconfigorderdialog.cpp:57
+#: folder/accountconfigorderdialog.cpp:58
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "Redigér kontorækkefølge"
 
-#: folder/accountconfigorderdialog.cpp:74
+#: folder/accountconfigorderdialog.cpp:75
 #, fuzzy, kde-format
 #| msgid "Use custom order"
 msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "Anvend brugerdefineret rækkefølge"
 
-#: folder/accountconfigorderdialog.cpp:91
+#: folder/accountconfigorderdialog.cpp:92
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "Op"
 
-#: folder/accountconfigorderdialog.cpp:99
+#: folder/accountconfigorderdialog.cpp:100
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
@@ -2797,7 +2797,7 @@ msgstr "Vælg bilag"
 msgid "…"
 msgstr ""
 
-#: snippets/snippetcustomfileattachmentnamedialog.cpp:28
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
@@ -2817,7 +2817,7 @@ msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Indsæt variable"
 
-#: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentdialog.cpp:27
 #: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
@@ -2966,27 +2966,27 @@ msgstr "Opdatér tekststump"
 msgid "Text Snippets"
 msgstr "Tekststumper"
 
-#: snippets/snippetvariabledialog.cpp:37
+#: snippets/snippetvariabledialog.cpp:38
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Angiv værdier for variable"
 
-#: snippets/snippetvariabledialog.cpp:40
+#: snippets/snippetvariabledialog.cpp:41
 #, fuzzy, kde-format
 #| msgid "Enter the replacement values for '%1':"
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Angiv erstatningsværdier for \"%1\":"
 
-#: snippets/snippetvariabledialog.cpp:45
+#: snippets/snippetvariabledialog.cpp:46
 #, fuzzy, kde-format
 #| msgid "Make value &default"
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Gør værdi til &standard"
 
-#: snippets/snippetvariabledialog.cpp:48
+#: snippets/snippetvariabledialog.cpp:49
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2996,7 +2996,7 @@ msgstr ""
 "Aktivér dette for at gemme den angivne værdi til højre som standardværdi for "
 "denne variabel"
 
-#: snippets/snippetvariabledialog.cpp:51
+#: snippets/snippetvariabledialog.cpp:52
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""

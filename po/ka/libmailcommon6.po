@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-04 00:46+0000\n"
+"POT-Creation-Date: 2026-09-09 00:51+0000\n"
 "PO-Revision-Date: 2026-08-13 06:58+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -301,13 +301,13 @@ msgstr "სვეტის &ჩვენება:"
 msgid "Message format:"
 msgstr "შეტყობინების ფორმატი:"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:33
+#: filter/dialog/filteractionmissingaccountdialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "აირჩიეთ ანგარიში"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:39
+#: filter/dialog/filteractionmissingaccountdialog.cpp:40
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
@@ -315,31 +315,31 @@ msgstr ""
 "ფილტრი account ვერ ვიპოვე. აირჩიეთ ანგარიში, რომელიც გნებავთ, გამოიყენოთ "
 "ფილტრთან \"%1\""
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:40
+#: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "აირჩიეთ საქაღალდე"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:43
+#: filter/dialog/filteractionmissingfolderdialog.cpp:44
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "საქაღალდის ბილიკი იყო \"%1\"."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:48
+#: filter/dialog/filteractionmissingfolderdialog.cpp:49
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "ამ ფილტრისთვის შეგიძლიათ შემდეგი საქაღალდეები გამოიყენოთ:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:69
+#: filter/dialog/filteractionmissingfolderdialog.cpp:70
 #, kde-format
 msgid "Please select a folder:"
 msgstr "აირჩიეთ საქაღალდე:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:72
+#: filter/dialog/filteractionmissingfolderdialog.cpp:73
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
@@ -347,13 +347,13 @@ msgstr ""
 "ფილტრი folder ვერ ვიპოვე. აირჩიეთ საქაღლდე, რომელიც გნებავთ, გამოიყენოთ "
 "ფილტრთან \"%1\":"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:32
+#: filter/dialog/filteractionmissingidentitydialog.cpp:33
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "აირჩიეთ იდენტიფიკატორი"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:38
+#: filter/dialog/filteractionmissingidentitydialog.cpp:39
 #, kde-format
 msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
@@ -362,54 +362,54 @@ msgstr ""
 "ფილტრი identity ვერ ვიპოვე. აირჩიეთ იდენტიფიკატორი, რომელიც გნებავთ, "
 "გამოიყენოთ ფილტრთან \"%1\""
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:31
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "აირჩიეთ ხმა"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:35
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:36
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "ხმის ფაილი იყო \"%1\"."
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:42
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:43
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr "ხმის ფაილი ვერ ვიპოვე. აირჩიეთ ხმა, რომელსაც \"%1\" ფილტრი გამოიყენებს"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:37
+#: filter/dialog/filteractionmissingtagdialog.cpp:38
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "აირჩეთ ჭდე"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:40
+#: filter/dialog/filteractionmissingtagdialog.cpp:41
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "ჭდე იყო \"%1\"."
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:47
+#: filter/dialog/filteractionmissingtagdialog.cpp:48
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
 "ფილტრი tag ვერ ვიპოვე. აირჩიეთ ჭდე, რომელიც გნებავთ, გამოიყენოთ ფილტრთან "
 "\"%1\""
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:71
+#: filter/dialog/filteractionmissingtagdialog.cpp:72
 #, kde-format
 msgid "Add Tag…"
 msgstr "ჭდის დამატება…"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:32
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:33
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "აირჩიეთ შაბლონი"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:38
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:39
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
@@ -418,13 +418,13 @@ msgstr ""
 "ფილტრი template ვერ ვიპოვე. აირჩიეთ ნიმუში, რომელიც გნებავთ, გამოიყენოთ "
 "ფილტრთან \"%1\""
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:31
+#: filter/dialog/filteractionmissingtransportdialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "აირჩიეთ ტრანსპორტი"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:37
+#: filter/dialog/filteractionmissingtransportdialog.cpp:38
 #, kde-format
 msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
@@ -433,7 +433,7 @@ msgstr ""
 "ფილტრი transport ვერ ვიპოვე. აირჩიეთ ტრანსპორტი, რომელიც გნებავთ, გამოიყენოთ "
 "ფილტრთან \"%1\""
 
-#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:28
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
@@ -938,29 +938,29 @@ msgstr "დახმარება"
 msgid "You can get specific header when you use %{headername}."
 msgstr "მითითებული თავსართის მიღება შეგიძლიათ, როცა იყენებთ %{headername}"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:37
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:38
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Sieve-ის სკრიპტში გადაყვანა"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:44
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:45
 #, kde-format
 msgid "Save…"
 msgstr "შენახვა…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:67
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:68
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "გაზიარება…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:83
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr "Sieve -ის ფაილები (*.siv);;ყველა ფაილი (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:85
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
@@ -1043,38 +1043,38 @@ msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "ფილტრების გატანა"
 
-#: filter/filterselectiondialog.cpp:29
+#: filter/filterselectiondialog.cpp:30
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "ყველას მონიშვნა"
 
-#: filter/filterselectiondialog.cpp:30
+#: filter/filterselectiondialog.cpp:31
 #, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "მონიშვნის ყველაფერზე მოხსნა"
 
-#: filter/filterselectiondialog.cpp:34
+#: filter/filterselectiondialog.cpp:35
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "აირჩიეთ ფილტრები"
 
-#: filter/filterselectiondialog.cpp:45 filter/kmfilterlistbox.cpp:53
+#: filter/filterselectiondialog.cpp:46 filter/kmfilterlistbox.cpp:53
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "ძებნა"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:29
+#: filter/invalidfilters/invalidfilterdialog.cpp:30
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "არასწორი ფილტრები"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:40
+#: filter/invalidfilters/invalidfilterdialog.cpp:41
 #, kde-format
 msgid "Discard"
 msgstr "გაუქმება"
@@ -1744,25 +1744,25 @@ msgstr "აირჩიეთ ფაილი:"
 msgid "Select file from config:"
 msgstr "აირჩიეთ ფაილი კონფიგურაციიდან:"
 
-#: folder/accountconfigorderdialog.cpp:57
+#: folder/accountconfigorderdialog.cpp:58
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "ანგარიშების მიმდევრობის ჩასწორება"
 
-#: folder/accountconfigorderdialog.cpp:74
+#: folder/accountconfigorderdialog.cpp:75
 #, kde-format
 msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "მიმდევრობის ხელით მითითება"
 
-#: folder/accountconfigorderdialog.cpp:91
+#: folder/accountconfigorderdialog.cpp:92
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "მაღლა"
 
-#: folder/accountconfigorderdialog.cpp:99
+#: folder/accountconfigorderdialog.cpp:100
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
@@ -2677,7 +2677,7 @@ msgstr "აირჩიეთ მიმაგრებული ფაილე�
 msgid "…"
 msgstr "…"
 
-#: snippets/snippetcustomfileattachmentnamedialog.cpp:28
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
@@ -2695,7 +2695,7 @@ msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "ჩასვით ცვლადები"
 
-#: snippets/snippetselectattachmentdialog.cpp:26
+#: snippets/snippetselectattachmentdialog.cpp:27
 #: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
@@ -2832,25 +2832,25 @@ msgstr "განახლება"
 msgid "Text Snippets"
 msgstr "ტექსტური ნაწყვეტები"
 
-#: snippets/snippetvariabledialog.cpp:37
+#: snippets/snippetvariabledialog.cpp:38
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "შეიყვანეთ ცვლადის მნიშვნელობები"
 
-#: snippets/snippetvariabledialog.cpp:40
+#: snippets/snippetvariabledialog.cpp:41
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "შეიყვანეთ '%1'-ის ჩასანაცვლებელი მნიშვნელობები:"
 
-#: snippets/snippetvariabledialog.cpp:45
+#: snippets/snippetvariabledialog.cpp:46
 #, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "მნიშვნელობის ნაგულისხმევად გამოყენება"
 
-#: snippets/snippetvariabledialog.cpp:48
+#: snippets/snippetvariabledialog.cpp:49
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2860,7 +2860,7 @@ msgstr ""
 "ჩართეთ ეს, რათა შეინახოთ მნიშვნელობა, რომელიც ამ ცვლადის ნაგულისხმევი "
 "მნიშვნელობის მარჯვნივ შეიყვანეთ"
 
-#: snippets/snippetvariabledialog.cpp:51
+#: snippets/snippetvariabledialog.cpp:52
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
