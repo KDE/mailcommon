@@ -37,5 +37,5 @@ void InvalidFilterInfo::setInformation(const QString &information)
 
 bool InvalidFilterInfo::operator==(const InvalidFilterInfo &other) const
 {
-    return (mName == other.name()) && (mInformation == other.information());
+    return (mName == other.mName) && (mInformation == other.mInformation);
 }

@@ -113,9 +113,9 @@ ExpireCollectionAttribute::ExpireUnits ExpireCollectionAttribute::readExpireUnit
 
 bool ExpireCollectionAttribute::operator==(const ExpireCollectionAttribute &other) const
 {
-    return (mExpireMessages == other.isAutoExpire()) && (mUnreadExpireAge == other.unreadExpireAge()) && (mReadExpireAge == other.readExpireAge())
-        && (mUnreadExpireUnits == other.unreadExpireUnits()) && (mReadExpireUnits == other.readExpireUnits()) && (mExpireAction == other.expireAction())
-        && (mExpireToFolderId == other.expireToFolderId()) && (mExpireMessagesWithValidDate == other.expireMessagesWithValidDate());
+    return (mExpireMessages == other.mExpireMessages) && (mUnreadExpireAge == other.mUnreadExpireAge) && (mReadExpireAge == other.mReadExpireAge)
+        && (mUnreadExpireUnits == other.mUnreadExpireUnits) && (mReadExpireUnits == other.mReadExpireUnits) && (mExpireAction == other.mExpireAction)
+        && (mExpireToFolderId == other.mExpireToFolderId) && (mExpireMessagesWithValidDate == other.mExpireMessagesWithValidDate);
 }
 
 int ExpireCollectionAttribute::daysToExpire(int number, ExpireCollectionAttribute::ExpireUnits units)
