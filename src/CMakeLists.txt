@@ -453,7 +453,7 @@ ecm_generate_headers(MailCommon_CamelCase_HEADERS
 ecm_generate_headers(MailCommon_CamelCaseattr_HEADERS
     HEADER_NAMES
         SnoozeAttribute
-    REQUIRED_HEADERS MailCommonattr_HEADERS
+    REQUIRED_HEADERS MailCommon_attr_HEADERS
     PREFIX MailCommon
     RELATIVE attributes
 )
