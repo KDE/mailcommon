@@ -437,6 +437,7 @@ if(BUILD_TESTING)
     add_subdirectory(snippets/autotests)
     add_subdirectory(filter/tests)
     add_subdirectory(search/autotests)
+    add_subdirectory(attributes/autotests)
 endif()
 
 ecm_generate_headers(MailCommon_CamelCase_HEADERS
