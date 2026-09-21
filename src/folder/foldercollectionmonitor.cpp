@@ -5,6 +5,7 @@
 */
 
 #include "foldercollectionmonitor.h"
+#include "attributes/snoozeattribute.h"
 #include "collectionpage/attributes/expirecollectionattribute.h"
 #include "foldersettings.h"
 #include "mailcommon_debug.h"
@@ -47,6 +48,7 @@ FolderCollectionMonitor::FolderCollectionMonitor(Akonadi::Session *session, QObj
     d->mMonitor->itemFetchScope().setFetchRemoteIdentification(false);
     d->mMonitor->itemFetchScope().setFetchTags(true);
     d->mMonitor->itemFetchScope().fetchAttribute<Akonadi::EntityAnnotationsAttribute>(true);
+    d->mMonitor->itemFetchScope().fetchAttribute<MailCommon::SnoozeAttribute>(true);
 }
 
 FolderCollectionMonitor::~FolderCollectionMonitor() = default;
