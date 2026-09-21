@@ -346,6 +346,8 @@ target_sources(
         util/mailutil.h
         util/cryptoutils.h
         util/resourcereadconfigfile.h
+        attributes/snoozeattribute.h
+        attributes/snoozeattribute.cpp
 )
 
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
@@ -445,6 +447,14 @@ ecm_generate_headers(MailCommon_CamelCase_HEADERS
   REQUIRED_HEADERS MailCommon_HEADERS
   PREFIX MailCommon
   RELATIVE util
+)
+
+ecm_generate_headers(MailCommon_CamelCaseattr_HEADERS
+    HEADER_NAMES
+        SnoozeAttribute
+    REQUIRED_HEADERS MailCommonattr_HEADERS
+    PREFIX MailCommon
+    RELATIVE attributes
 )
 
 ecm_generate_headers(MailCommon_Camelcasetop_HEADERS
@@ -625,6 +635,7 @@ install(
         ${MailCommon_Camelcasefilterimporter_HEADERS}
         ${MailCommon_Camelcasesnippets_HEADERS}
         ${MailCommon_Camelcasewidgets_HEADERS}
+        ${MailCommon_CamelCaseattr_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailCommon/MailCommon
     COMPONENT Devel
 )
@@ -645,6 +656,7 @@ set(MAILCOMMON_INCLUDES_FILES
     ${MailCommon_filterimporter_HEADERS}
     ${MailCommon_snippets_HEADERS}
     ${MailCommon_widgets_HEADERS}
+    ${MailCommon_attr_HEADERS}
 )
 
 install(
@@ -695,5 +707,6 @@ ecm_installed_library_check_include_strings(KPim6MailCommon
    ${MailCommon_Camelcasefilterimporter_HEADERS}
    ${MailCommon_Camelcasesnippets_HEADERS}
    ${MailCommon_Camelcasewidgets_HEADERS}
+   ${MailCommon_attr_HEADERS}
     PREFIX MailCommon
 )
