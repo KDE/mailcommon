@@ -235,10 +235,10 @@ void KMFilterListBox::slotFilterEnabledChanged(QListWidgetItem *item)
     Q_EMIT filterUpdated(filter);
 }
 
-void KMFilterListBox::slotRowsMoved([[maybe_unused]] const QModelIndex &,
+void KMFilterListBox::slotRowsMoved(const QModelIndex &,
                                     [[maybe_unused]] int sourcestart,
                                     [[maybe_unused]] int sourceEnd,
-                                    [[maybe_unused]] const QModelIndex &,
+                                    const QModelIndex &,
                                     [[maybe_unused]] int destinationRow)
 {
     enableControls();
