@@ -27,6 +27,7 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 
 include(GenerateExportHeader)
 include(ECMGenerateHeaders)
+include(ECMQmlModule)
 include(ECMInstalledLibraryCheck)
 include(ECMSetupVersion)
 file(
@@ -132,6 +133,7 @@ find_package(
         DBus
         Xml
         Multimedia
+        Qml
 )
 
 set(GPGMEPP_LIB_VERSION "2.0.0")

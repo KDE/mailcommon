@@ -15,6 +15,12 @@ namespace MailCommon
 class HierarchicalFolderMatcher;
 
 /*!
+ * \qmltype EntityCollectionOrderProxyModel
+ * \inqmlmodule org.kde.mailcommon
+ * \nativetype MailCommon::EntityCollectionOrderProxyModel
+ * \brief A model that orders mail collections and folders.
+ */
+/*!
  * \class MailCommon::EntityCollectionOrderProxyModel
  * \inmodule MailCommon
  * \inheaderfile MailCommon/EntityCollectionOrderProxyModel

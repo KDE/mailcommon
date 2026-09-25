@@ -430,6 +430,8 @@ set_target_properties(
 
 install(TARGETS KPim6MailCommon EXPORT KPim6MailCommonTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
+add_subdirectory(qml)
+
 if(BUILD_TESTING)
     add_subdirectory(filter/filterimporter/autotests)
     add_subdirectory(collectionpage/autotests)
