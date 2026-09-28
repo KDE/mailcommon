@@ -555,7 +555,7 @@ SnippetsManager::SnippetsManager(KActionCollection *actionCollection, QObject *p
                    const QString &attachment) {
                 d->updateActionCollection(oldName, newName, keySequence, text, subject, to, cc, bcc, attachment);
             });
-    d->mSelectionModel = new QItemSelectionModel(d->mModel);
+    d->mSelectionModel = new QItemSelectionModel(d->mModel, this);
     d->mActionCollection = actionCollection;
 
     d->mAddSnippetAction = new QAction(i18nc("@action", "Add Snippet…"), this);
