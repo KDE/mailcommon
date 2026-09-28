@@ -283,7 +283,7 @@ void SnippetsManager::SnippetsManagerPrivate::deleteSnippet()
 
     const QString snippetName = index.data(SnippetsModel::NameRole).toString();
 
-    if (KMessageBox::warningContinueCancel(nullptr,
+    if (KMessageBox::warningContinueCancel(mParent,
                                            xi18nc("@info",
                                                   "Do you really want to remove snippet \"%1\"?<nl/>"
                                                   "<warning>There is no way to undo the removal.</warning>",
@@ -356,7 +356,7 @@ void SnippetsManager::SnippetsManagerPrivate::deleteSnippetGroup()
     const QString groupName = groupIndex.data(SnippetsModel::NameRole).toString();
 
     if (mModel->rowCount(groupIndex) > 0) {
-        if (KMessageBox::warningContinueCancel(nullptr,
+        if (KMessageBox::warningContinueCancel(mParent,
                                                xi18nc("@info",
                                                       "Do you really want to remove group \"%1\" along with all its snippets?<nl/>"
                                                       "<warning>There is no way to undo the removal.</warning>",
@@ -367,7 +367,7 @@ void SnippetsManager::SnippetsManagerPrivate::deleteSnippetGroup()
             return;
         }
     } else {
-        if (KMessageBox::warningContinueCancel(nullptr,
+        if (KMessageBox::warningContinueCancel(mParent,
                                                i18nc("@info", "Do you really want to remove group \"%1\"?", groupName),
                                                QString(),
                                                KStandardGuiItem::remove())
