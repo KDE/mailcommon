@@ -64,13 +64,13 @@ bool MailCommon::Util::isVirtualCollection(const QString &resource)
         return true;
     }
 
-    const auto type = Akonadi::AgentManager::self()->type(resource);
+    const auto type = Akonadi::AgentManager::self()->instance(resource).type();
     return type.capabilities().contains(QLatin1StringView("Virtual"));
 }
 
 bool MailCommon::Util::isLocalCollection(const QString &resource)
 {
-    auto type = Akonadi::AgentManager::self()->type(resource);
+    const auto type = Akonadi::AgentManager::self()->instance(resource).type();
     return type.customProperties().value(QStringLiteral("HasLocalStorage"), false).toBool();
 }
 
