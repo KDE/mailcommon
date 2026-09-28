@@ -5,7 +5,7 @@
 */
 
 #include "snoozeattributetest.h"
-#include "attributes/snoozeattribute.h"
+#include "snooze/attributes/snoozeattribute.h"
 #include <QTest>
 QTEST_GUILESS_MAIN(SnoozeAttributeTest)
 using namespace Qt::Literals::StringLiterals;

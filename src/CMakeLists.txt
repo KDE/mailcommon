@@ -346,8 +346,8 @@ target_sources(
         util/mailutil.h
         util/cryptoutils.h
         util/resourcereadconfigfile.h
-        attributes/snoozeattribute.h
-        attributes/snoozeattribute.cpp
+        snooze/attributes/snoozeattribute.h
+        snooze/attributes/snoozeattribute.cpp
 )
 
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
@@ -437,7 +437,7 @@ if(BUILD_TESTING)
     add_subdirectory(snippets/autotests)
     add_subdirectory(filter/tests)
     add_subdirectory(search/autotests)
-    add_subdirectory(attributes/autotests)
+    add_subdirectory(snooze/attributes/autotests)
 endif()
 
 ecm_generate_headers(MailCommon_CamelCase_HEADERS
@@ -455,7 +455,7 @@ ecm_generate_headers(MailCommon_CamelCaseattr_HEADERS
         SnoozeAttribute
     REQUIRED_HEADERS MailCommon_attr_HEADERS
     PREFIX MailCommon
-    RELATIVE attributes
+    RELATIVE snooze/attributes
 )
 
 ecm_generate_headers(MailCommon_Camelcasetop_HEADERS

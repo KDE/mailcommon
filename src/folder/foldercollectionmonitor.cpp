@@ -5,10 +5,10 @@
 */
 
 #include "foldercollectionmonitor.h"
-#include "attributes/snoozeattribute.h"
 #include "collectionpage/attributes/expirecollectionattribute.h"
 #include "foldersettings.h"
 #include "mailcommon_debug.h"
+#include "snooze/attributes/snoozeattribute.h"
 #include "util/mailutil.h"
 #include <Akonadi/ChangeRecorder>
 #include <Akonadi/Collection>
