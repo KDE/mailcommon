@@ -708,6 +708,6 @@ ecm_installed_library_check_include_strings(KPim6MailCommon
    ${MailCommon_Camelcasefilterimporter_HEADERS}
    ${MailCommon_Camelcasesnippets_HEADERS}
    ${MailCommon_Camelcasewidgets_HEADERS}
-   ${MailCommon_attr_HEADERS}
+   ${MailCommon_CamelCaseattr_HEADERS}
     PREFIX MailCommon
 )
