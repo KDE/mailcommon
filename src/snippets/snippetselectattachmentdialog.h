@@ -22,7 +22,6 @@ public:
     [[nodiscard]] QStringList attachments() const;
 
 private:
-    MAILCOMMON_NO_EXPORT void writeConfig();
     MAILCOMMON_NO_EXPORT void readConfig();
     SnippetSelectAttachmentWidget *const mAttachmentWidget;
 };

@@ -24,7 +24,6 @@ public:
     void setInvalidFilters(const QList<InvalidFilterInfo> &lst);
 
 private:
-    MAILCOMMON_NO_EXPORT void writeConfig();
     MAILCOMMON_NO_EXPORT void readConfig();
     InvalidFilterWidget *const mInvalidFilterWidget;
     InvalidFilterInfoWidget *const mInvalidFilterInfoWidget;

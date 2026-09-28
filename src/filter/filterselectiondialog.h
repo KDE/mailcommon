@@ -35,7 +35,6 @@ public Q_SLOTS:
     void reject() override;
 
 private:
-    void writeConfig();
     void readConfig();
     QListWidget *const filtersListWidget;
     QList<MailFilter *> originalFilters;

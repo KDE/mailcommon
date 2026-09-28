@@ -25,7 +25,6 @@ public:
 
 private:
     void readConfig();
-    void writeConfig();
     SelectThunderbirdFilterFilesWidget *const mSelectFilterFilesWidget;
 };
 }

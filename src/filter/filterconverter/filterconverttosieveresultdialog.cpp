@@ -16,13 +16,9 @@
 #include <KSyntaxHighlighting/SyntaxHighlighter>
 #include <KSyntaxHighlighting/Theme>
 
-#include <KConfigGroup>
-#include <KSharedConfig>
-#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include <QWindow>
 #include <TextAddonsWidgets/LoadDialogSizeUtils>
 
 using namespace MailCommon;
@@ -74,10 +70,7 @@ FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *pare
     readConfig();
 }
 
-FilterConvertToSieveResultDialog::~FilterConvertToSieveResultDialog()
-{
-    writeConfig();
-}
+FilterConvertToSieveResultDialog::~FilterConvertToSieveResultDialog() = default;
 
 void FilterConvertToSieveResultDialog::slotSave()
 {
@@ -92,24 +85,7 @@ void FilterConvertToSieveResultDialog::setCode(const QString &code)
 
 void FilterConvertToSieveResultDialog::readConfig()
 {
-#if TEXTADDONSWIDGETS_VERSION >= QT_VERSION_CHECK(2, 1, 49)
     TextAddonsWidgets::LoadDialogSizeUtils::manageDialogSize(this, QLatin1StringView(myFilterConvertToSieveResultDialogName), QSize(500, 300));
-#else
-    create(); // ensure a window is created
-    windowHandle()->resize(QSize(500, 300));
-    const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterConvertToSieveResultDialogName));
-    KWindowConfig::restoreWindowSize(windowHandle(), group);
-    resize(windowHandle()->size()); // workaround for QTBUG-40584
-#endif
-}
-
-void FilterConvertToSieveResultDialog::writeConfig()
-{
-#if TEXTADDONSWIDGETS_VERSION < QT_VERSION_CHECK(2, 1, 49)
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterConvertToSieveResultDialogName));
-    KWindowConfig::saveWindowSize(windowHandle(), group);
-    group.sync();
-#endif
 }
 
 #include "moc_filterconverttosieveresultdialog.cpp"

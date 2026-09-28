@@ -23,7 +23,6 @@ public:
     [[nodiscard]] int selectedIdentity() const;
 
 private:
-    MAILCOMMON_NO_EXPORT void writeConfig();
     MAILCOMMON_NO_EXPORT void readConfig();
     KIdentityManagementWidgets::IdentityCombo *mComboBoxIdentity = nullptr;
 };

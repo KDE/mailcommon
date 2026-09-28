@@ -11,14 +11,10 @@
 #include "snippetwidget.h"
 
 #include <KActionCollection>
-#include <KConfigGroup>
-#include <KSharedConfig>
-#include <KWindowConfig>
 #include <MessageComposer/ConvertSnippetVariableMenu>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include <QWindow>
 #include <TextAddonsWidgets/LoadDialogSizeUtils>
 
 using namespace MailCommon;
@@ -56,33 +52,11 @@ SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMo
     }
 }
 
-SnippetDialog::~SnippetDialog()
-{
-    if (!mInGroupMode) {
-        writeConfig();
-    }
-}
+SnippetDialog::~SnippetDialog() = default;
 
 void SnippetDialog::readConfig()
 {
-#if TEXTADDONSWIDGETS_VERSION >= QT_VERSION_CHECK(2, 1, 49)
     TextAddonsWidgets::LoadDialogSizeUtils::manageDialogSize(this, QLatin1StringView(mySnippetDialogConfigGroupName), QSize(300, 350));
-#else
-    create(); // ensure a window is created
-    windowHandle()->resize(QSize(300, 350));
-    const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySnippetDialogConfigGroupName));
-    KWindowConfig::restoreWindowSize(windowHandle(), group);
-    resize(windowHandle()->size()); // workaround for QTBUG-40584
-#endif
-}
-
-void SnippetDialog::writeConfig()
-{
-#if TEXTADDONSWIDGETS_VERSION < QT_VERSION_CHECK(2, 1, 49)
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySnippetDialogConfigGroupName));
-    KWindowConfig::saveWindowSize(windowHandle(), group);
-    group.sync();
-#endif
 }
 
 void SnippetDialog::slotGroupChanged()

@@ -6,19 +6,15 @@
 
 #include "filteractionmissingtagdialog.h"
 #include <KLocalizedString>
-#include <KSharedConfig>
 
 #include "tag/addtagdialog.h"
 
-#include <KConfigGroup>
-#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QListWidget>
 #include <QPointer>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include <QWindow>
 #include <TextAddonsWidgets/LoadDialogSizeUtils>
 
 using namespace MailCommon;
@@ -80,31 +76,11 @@ FilterActionMissingTagDialog::FilterActionMissingTagDialog(const QMap<QUrl, QStr
     readConfig();
 }
 
-FilterActionMissingTagDialog::~FilterActionMissingTagDialog()
-{
-    writeConfig();
-}
+FilterActionMissingTagDialog::~FilterActionMissingTagDialog() = default;
 
 void FilterActionMissingTagDialog::readConfig()
 {
-#if TEXTADDONSWIDGETS_VERSION >= QT_VERSION_CHECK(2, 1, 49)
     TextAddonsWidgets::LoadDialogSizeUtils::manageDialogSize(this, QLatin1StringView(myFilterActionMissingTagDialogGroupName), QSize(500, 300));
-#else
-    create(); // ensure a window is created
-    windowHandle()->resize(QSize(500, 300));
-    const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterActionMissingTagDialogGroupName));
-    KWindowConfig::restoreWindowSize(windowHandle(), group);
-    resize(windowHandle()->size()); // workaround for QTBUG-40584
-#endif
-}
-
-void FilterActionMissingTagDialog::writeConfig()
-{
-#if TEXTADDONSWIDGETS_VERSION < QT_VERSION_CHECK(2, 1, 49)
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterActionMissingTagDialogGroupName));
-    KWindowConfig::saveWindowSize(windowHandle(), group);
-    group.sync();
-#endif
 }
 
 QString FilterActionMissingTagDialog::selectedTag() const

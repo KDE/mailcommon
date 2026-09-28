@@ -25,7 +25,6 @@ public:
 private:
     MAILCOMMON_NO_EXPORT void slotAddTag();
     MAILCOMMON_NO_EXPORT void readConfig();
-    MAILCOMMON_NO_EXPORT void writeConfig();
 
     enum TypeData {
         UrlData = Qt::UserRole + 1

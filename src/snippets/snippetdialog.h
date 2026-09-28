@@ -64,7 +64,6 @@ private:
     void slotTextChanged();
     void slotGroupChanged();
     bool snippetIsValid() const;
-    void writeConfig();
     void readConfig();
 
     SnippetWidget *const mSnippetWidget;

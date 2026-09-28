@@ -9,15 +9,11 @@
 #include "util/mailutil.h"
 
 #include <KLocalizedString>
-#include <KSharedConfig>
 
-#include <KConfigGroup>
-#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include <QWindow>
 #include <TextAddonsWidgets/LoadDialogSizeUtils>
 
 using namespace MailCommon;
@@ -57,31 +53,11 @@ FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QString
     readConfig();
 }
 
-FilterActionMissingAccountDialog::~FilterActionMissingAccountDialog()
-{
-    writeConfig();
-}
+FilterActionMissingAccountDialog::~FilterActionMissingAccountDialog() = default;
 
 void FilterActionMissingAccountDialog::readConfig()
 {
-#if TEXTADDONSWIDGETS_VERSION >= QT_VERSION_CHECK(2, 1, 49)
     TextAddonsWidgets::LoadDialogSizeUtils::manageDialogSize(this, QLatin1StringView(myFilterActionMissingAccountDialogConfigGroupName), QSize(500, 300));
-#else
-    create(); // ensure a window is created
-    windowHandle()->resize(QSize(500, 300));
-    const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterActionMissingAccountDialogConfigGroupName));
-    KWindowConfig::restoreWindowSize(windowHandle(), group);
-    resize(windowHandle()->size()); // workaround for QTBUG-40584
-#endif
-}
-
-void FilterActionMissingAccountDialog::writeConfig()
-{
-#if TEXTADDONSWIDGETS_VERSION < QT_VERSION_CHECK(2, 1, 49)
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myFilterActionMissingAccountDialogConfigGroupName));
-    KWindowConfig::saveWindowSize(windowHandle(), group);
-    group.sync();
-#endif
 }
 
 QStringList FilterActionMissingAccountDialog::selectedAccounts() const

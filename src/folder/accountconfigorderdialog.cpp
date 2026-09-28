@@ -17,13 +17,10 @@
 #include <Akonadi/AgentInstance>
 #include <Akonadi/AgentManager>
 
-#include <KConfigGroup>
-#include <KWindowConfig>
 #include <QCheckBox>
 #include <QDialogButtonBox>
 #include <QHBoxLayout>
 #include <QListWidget>
-#include <QWindow>
 #include <TextAddonsWidgets/LoadDialogSizeUtils>
 
 using namespace MailCommon;
@@ -117,10 +114,7 @@ AccountConfigOrderDialog::AccountConfigOrderDialog(MailCommon::MailCommonSetting
     init();
 }
 
-AccountConfigOrderDialog::~AccountConfigOrderDialog()
-{
-    writeConfig();
-}
+AccountConfigOrderDialog::~AccountConfigOrderDialog() = default;
 
 void AccountConfigOrderDialog::slotEnableAccountOrder(bool state)
 {
@@ -239,24 +233,7 @@ void AccountConfigOrderDialog::slotOk()
 
 void AccountConfigOrderDialog::readConfig()
 {
-#if TEXTADDONSWIDGETS_VERSION >= QT_VERSION_CHECK(2, 1, 49)
     TextAddonsWidgets::LoadDialogSizeUtils::manageDialogSize(this, QLatin1StringView(myAccountConfigOrderDialogName), QSize(500, 150));
-#else
-    create(); // ensure a window is created
-    windowHandle()->resize(QSize(500, 150));
-    const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myAccountConfigOrderDialogName));
-    KWindowConfig::restoreWindowSize(windowHandle(), group);
-    resize(windowHandle()->size()); // workaround for QTBUG-40584
-#endif
-}
-
-void AccountConfigOrderDialog::writeConfig()
-{
-#if TEXTADDONSWIDGETS_VERSION < QT_VERSION_CHECK(2, 1, 49)
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myAccountConfigOrderDialogName));
-    KWindowConfig::saveWindowSize(windowHandle(), group);
-    group.sync();
-#endif
 }
 
 #include "moc_accountconfigorderdialog.cpp"

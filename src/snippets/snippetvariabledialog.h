@@ -30,7 +30,6 @@ public:
     [[nodiscard]] bool saveVariableIsChecked() const;
 
 private:
-    void writeConfig();
     void readConfig();
     void slotAccepted();
     const QString mVariableName;

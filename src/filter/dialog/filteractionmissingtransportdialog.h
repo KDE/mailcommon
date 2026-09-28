@@ -24,7 +24,6 @@ public:
     [[nodiscard]] int selectedTransport() const;
 
 private:
-    MAILCOMMON_NO_EXPORT void writeConfig();
     MAILCOMMON_NO_EXPORT void readConfig();
     MailTransport::TransportComboBox *const mComboBoxTransport;
 };

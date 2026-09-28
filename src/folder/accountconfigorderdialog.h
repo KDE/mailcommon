@@ -43,7 +43,6 @@ private:
         IdentifierAccount = Qt::UserRole + 1,
     };
 
-    MAILCOMMON_NO_EXPORT void writeConfig();
     MAILCOMMON_NO_EXPORT void readConfig();
     MAILCOMMON_NO_EXPORT void init();
     std::unique_ptr<AccountConfigOrderDialogPrivate> const d;

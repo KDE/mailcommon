@@ -7,14 +7,10 @@
 #include "selectthunderbirdfilterfilesdialog.h"
 #include "selectthunderbirdfilterfileswidget.h"
 #include <KLocalizedString>
-#include <KSharedConfig>
 
-#include <KConfigGroup>
-#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include <QWindow>
 #include <TextAddonsWidgets/LoadDialogSizeUtils>
 
 using namespace MailCommon;
@@ -44,10 +40,7 @@ SelectThunderbirdFilterFilesDialog::SelectThunderbirdFilterFilesDialog(const QSt
     readConfig();
 }
 
-SelectThunderbirdFilterFilesDialog::~SelectThunderbirdFilterFilesDialog()
-{
-    writeConfig();
-}
+SelectThunderbirdFilterFilesDialog::~SelectThunderbirdFilterFilesDialog() = default;
 
 QStringList SelectThunderbirdFilterFilesDialog::selectedFiles() const
 {
@@ -61,24 +54,7 @@ void SelectThunderbirdFilterFilesDialog::setStartDir(const QUrl &url)
 
 void SelectThunderbirdFilterFilesDialog::readConfig()
 {
-#if TEXTADDONSWIDGETS_VERSION >= QT_VERSION_CHECK(2, 1, 49)
     TextAddonsWidgets::LoadDialogSizeUtils::manageDialogSize(this, QLatin1StringView(mySelectThunderbirdFilterFilesDialogGroupName), QSize(500, 300));
-#else
-    create(); // ensure a window is created
-    windowHandle()->resize(QSize(500, 300));
-    const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySelectThunderbirdFilterFilesDialogGroupName));
-    KWindowConfig::restoreWindowSize(windowHandle(), group);
-    resize(windowHandle()->size()); // workaround for QTBUG-40584
-#endif
-}
-
-void SelectThunderbirdFilterFilesDialog::writeConfig()
-{
-#if TEXTADDONSWIDGETS_VERSION < QT_VERSION_CHECK(2, 1, 49)
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySelectThunderbirdFilterFilesDialogGroupName));
-    KWindowConfig::saveWindowSize(windowHandle(), group);
-    group.sync();
-#endif
 }
 
 #include "moc_selectthunderbirdfilterfilesdialog.cpp"

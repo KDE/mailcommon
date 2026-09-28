@@ -7,15 +7,11 @@
 #include "snippetcustomfileattachmentnamedialog.h"
 #include "snippetcustomfileattachmentnamewidget.h"
 
-#include <KConfigGroup>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
 
 #include <KLocalizedString>
-#include <KSharedConfig>
-#include <KWindowConfig>
-#include <QWindow>
 #include <TextAddonsWidgets/LoadDialogSizeUtils>
 namespace
 {
@@ -46,31 +42,11 @@ SnippetCustomFileAttachmentNameDialog::SnippetCustomFileAttachmentNameDialog(QWi
     readConfig();
 }
 
-SnippetCustomFileAttachmentNameDialog::~SnippetCustomFileAttachmentNameDialog()
-{
-    writeConfig();
-}
+SnippetCustomFileAttachmentNameDialog::~SnippetCustomFileAttachmentNameDialog() = default;
 
 void SnippetCustomFileAttachmentNameDialog::readConfig()
 {
-#if TEXTADDONSWIDGETS_VERSION >= QT_VERSION_CHECK(2, 1, 49)
     TextAddonsWidgets::LoadDialogSizeUtils::manageDialogSize(this, QLatin1StringView(mySnippetCustomFileAttachmentNameDialogGroupName), QSize(500, 150));
-#else
-    create(); // ensure a window is created
-    windowHandle()->resize(QSize(500, 150));
-    const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySnippetCustomFileAttachmentNameDialogGroupName));
-    KWindowConfig::restoreWindowSize(windowHandle(), group);
-    resize(windowHandle()->size()); // workaround for QTBUG-40584
-#endif
-}
-
-void SnippetCustomFileAttachmentNameDialog::writeConfig()
-{
-#if TEXTADDONSWIDGETS_VERSION < QT_VERSION_CHECK(2, 1, 49)
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(mySnippetCustomFileAttachmentNameDialogGroupName));
-    KWindowConfig::saveWindowSize(windowHandle(), group);
-    group.sync();
-#endif
 }
 
 QString SnippetCustomFileAttachmentNameDialog::result() const

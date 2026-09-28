@@ -31,7 +31,6 @@ public:
 private:
     void slotSave();
     void readConfig();
-    void writeConfig();
     TextCustomEditor::PlainTextEditorWidget *const mEditor;
     PimCommon::PurposeMenuMessageWidget *const mPurposeMenuMessageWidget;
     KSyntaxHighlighting::Repository mSyntaxRepo;
