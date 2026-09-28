@@ -535,7 +535,7 @@ bool SnippetsModel::dropMimeData(const QMimeData *data, Qt::DropAction action, i
             return false;
         }
     } else if (data->hasFormat(QStringLiteral("text/plain"))) {
-        if (column > 1) {
+        if (column > 0) {
             return false;
         }
         const QString encodedData = QString::fromUtf8(data->data(QStringLiteral("text/plain")));
