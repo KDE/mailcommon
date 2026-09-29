@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-16 00:44+0000\n"
-"PO-Revision-Date: 2026-02-03 23:48+0100\n"
+"PO-Revision-Date: 2026-09-29 00:54+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -1354,10 +1354,9 @@ msgid "Filters which were imported:"
 msgstr "다음 필터를 가져왔습니다:"
 
 #: filter/kmfilterdialog.cpp:685
-#, fuzzy, kde-format
-#| msgid "Any filter found."
+#, kde-format
 msgid "No filter found."
-msgstr "필터를 찾았습니다."
+msgstr "필터를 찾을 수 없습니다."
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format
@@ -1991,9 +1990,7 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "%1 폴더에서 오래된 메시지를 삭제할 수 없습니다."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2…"
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "%2 폴더에서 오래된 메시지 %1개 삭제 중..."
