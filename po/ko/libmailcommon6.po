@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-09 00:51+0000\n"
-"PO-Revision-Date: 2026-02-03 23:48+0100\n"
+"POT-Creation-Date: 2026-09-29 00:46+0000\n"
+"PO-Revision-Date: 2026-09-29 00:54+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
 #, kde-format
@@ -293,120 +293,120 @@ msgstr "열 표시(&W):"
 msgid "Message format:"
 msgstr "메시지 형식:"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:34
+#: filter/dialog/filteractionmissingaccountdialog.cpp:30
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "계정 선택"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:40
+#: filter/dialog/filteractionmissingaccountdialog.cpp:36
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr "필터 계정이 없습니다. \"%1\" 필터에 사용할 계정을 선택하십시오"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:41
+#: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "폴더 선택"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:44
+#: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "폴더 경로는 \"%1\"이었습니다."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:49
+#: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "이 필터를 다음 폴더에 적용할 수 있습니다:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:70
+#: filter/dialog/filteractionmissingfolderdialog.cpp:67
 #, kde-format
 msgid "Please select a folder:"
 msgstr "폴더를 선택하십시오:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:73
+#: filter/dialog/filteractionmissingfolderdialog.cpp:70
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
 msgstr "필터 폴더가 없습니다. \"%1\" 필터에 사용할 폴더를 선택하십시오:"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:33
+#: filter/dialog/filteractionmissingidentitydialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "프로필 선택"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:39
+#: filter/dialog/filteractionmissingidentitydialog.cpp:35
 #, kde-format
 msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
 "\"%1\""
 msgstr "필터 프로필이 없습니다. \"%1\" 필터에 사용할 프로필을 선택하십시오"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:32
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "소리 선택"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:36
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "소리 파일은 \"%1\"이었습니다."
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:43
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:39
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr "소리 파일이 없습니다. \"%1\" 필터에 사용할 소리 파일을 선택하십시오"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:38
+#: filter/dialog/filteractionmissingtagdialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "태그 선택"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:41
+#: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "태그는 \"%1\"이었습니다."
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:48
+#: filter/dialog/filteractionmissingtagdialog.cpp:44
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr "필터 태그가 없습니다. \"%1\" 필터에 사용할 태그를 선택하십시오"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:72
+#: filter/dialog/filteractionmissingtagdialog.cpp:68
 #, kde-format
 msgid "Add Tag…"
 msgstr "태그 추가…"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:33
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "템플릿 선택"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:39
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:34
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
 "\"%1\""
 msgstr "필터 템플릿이 없습니다. \"%1\" 필터에 사용할 템플릿을 선택하십시오"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:32
+#: filter/dialog/filteractionmissingtransportdialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "전송 방식 선택"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:38
+#: filter/dialog/filteractionmissingtransportdialog.cpp:35
 #, kde-format
 msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
@@ -414,7 +414,7 @@ msgid ""
 msgstr ""
 "필터 전송 방식이 없습니다. \"%1\" 필터에 사용할 전송 방식을 선택하십시오"
 
-#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:29
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:25
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
@@ -917,29 +917,29 @@ msgstr "도움말"
 msgid "You can get specific header when you use %{headername}."
 msgstr "%{headername}을 사용하면 특정한 헤더를 가져올 수 있습니다."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:38
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Sieve 스크립트로 변환"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:45
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:41
 #, kde-format
 msgid "Save…"
 msgstr "저장…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:68
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:64
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "공유…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:77
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr "Sieve 파일 (*.siv);;모든 파일 (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:85
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:78
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
@@ -1020,38 +1020,38 @@ msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "필터 내보내기"
 
-#: filter/filterselectiondialog.cpp:30
+#: filter/filterselectiondialog.cpp:26
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "모두 선택"
 
-#: filter/filterselectiondialog.cpp:31
+#: filter/filterselectiondialog.cpp:27
 #, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "모두 선택 해제"
 
-#: filter/filterselectiondialog.cpp:35
+#: filter/filterselectiondialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "필터 선택"
 
-#: filter/filterselectiondialog.cpp:46 filter/kmfilterlistbox.cpp:53
+#: filter/filterselectiondialog.cpp:42 filter/kmfilterlistbox.cpp:53
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "검색"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:30
+#: filter/invalidfilters/invalidfilterdialog.cpp:26
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "잘못된 필터"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:41
+#: filter/invalidfilters/invalidfilterdialog.cpp:37
 #, kde-format
 msgid "Discard"
 msgstr "무시"
@@ -1354,10 +1354,9 @@ msgid "Filters which were imported:"
 msgstr "다음 필터를 가져왔습니다:"
 
 #: filter/kmfilterdialog.cpp:685
-#, fuzzy, kde-format
-#| msgid "Any filter found."
+#, kde-format
 msgid "No filter found."
-msgstr "필터를 찾았습니다."
+msgstr "필터를 찾을 수 없습니다."
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format
@@ -1707,25 +1706,25 @@ msgstr "파일 선택:"
 msgid "Select file from config:"
 msgstr "설정에서 파일 선택:"
 
-#: folder/accountconfigorderdialog.cpp:58
+#: folder/accountconfigorderdialog.cpp:55
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "계정 순서 편집"
 
-#: folder/accountconfigorderdialog.cpp:75
+#: folder/accountconfigorderdialog.cpp:72
 #, kde-format
 msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "사용자 정의 순서 사용"
 
-#: folder/accountconfigorderdialog.cpp:92
+#: folder/accountconfigorderdialog.cpp:89
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "위로 이동"
 
-#: folder/accountconfigorderdialog.cpp:100
+#: folder/accountconfigorderdialog.cpp:97
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
@@ -1991,9 +1990,7 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "%1 폴더에서 오래된 메시지를 삭제할 수 없습니다."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2…"
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2…"
 msgstr[0] "%2 폴더에서 오래된 메시지 %1개 삭제 중..."
@@ -2630,7 +2627,7 @@ msgstr "첨부 파일 선택"
 msgid "…"
 msgstr "…"
 
-#: snippets/snippetcustomfileattachmentnamedialog.cpp:29
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:25
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
@@ -2648,7 +2645,7 @@ msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "변수 삽입"
 
-#: snippets/snippetselectattachmentdialog.cpp:27
+#: snippets/snippetselectattachmentdialog.cpp:23
 #: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
@@ -2785,25 +2782,25 @@ msgstr "업데이트"
 msgid "Text Snippets"
 msgstr "텍스트 스니펫"
 
-#: snippets/snippetvariabledialog.cpp:38
+#: snippets/snippetvariabledialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "변수의 값을 입력하십시오"
 
-#: snippets/snippetvariabledialog.cpp:41
+#: snippets/snippetvariabledialog.cpp:37
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "'%1'의 대체 값 입력:"
 
-#: snippets/snippetvariabledialog.cpp:46
+#: snippets/snippetvariabledialog.cpp:42
 #, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "기본값으로 값 사용(&D)"
 
-#: snippets/snippetvariabledialog.cpp:49
+#: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2811,7 +2808,7 @@ msgid ""
 "this variable"
 msgstr "이 옵션을 사용하면 오른쪽에 입력한 값을 변수의 기본값으로 사용합니다"
 
-#: snippets/snippetvariabledialog.cpp:52
+#: snippets/snippetvariabledialog.cpp:48
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""

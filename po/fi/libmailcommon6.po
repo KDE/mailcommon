@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-09 00:51+0000\n"
+"POT-Creation-Date: 2026-09-29 00:46+0000\n"
 "PO-Revision-Date: 2026-03-02 18:57+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -304,56 +304,56 @@ msgstr "&Näytä sarake:"
 msgid "Message format:"
 msgstr "Viestimuoto:"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:34
+#: filter/dialog/filteractionmissingaccountdialog.cpp:30
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "Valitse tili"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:40
+#: filter/dialog/filteractionmissingaccountdialog.cpp:36
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr "Suodattimen tili puuttuu. Valitse suodattimelle ”%1” käytettävä tili"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:41
+#: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Valitse kansio"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:44
+#: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Kansion sijainti oli ”%1”."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:49
+#: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Suodattimeen voi käyttää seuraavia kansioita:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:70
+#: filter/dialog/filteractionmissingfolderdialog.cpp:67
 #, kde-format
 msgid "Please select a folder:"
 msgstr "Valitse kansio:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:73
+#: filter/dialog/filteractionmissingfolderdialog.cpp:70
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
 msgstr ""
 "Suodattimen kansio puuttuu. Valitse suodattimelle ”%1” käytettävä kansio:"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:33
+#: filter/dialog/filteractionmissingidentitydialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "Valitse henkilöys"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:39
+#: filter/dialog/filteractionmissingidentitydialog.cpp:35
 #, kde-format
 msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
@@ -362,53 +362,53 @@ msgstr ""
 "Suodattimen henkilöys puuttuu. Valitse suodattimelle ”%1” käytettävä "
 "henkilöys"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:32
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "Valitse ääni"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:36
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "Äänitiedosto oli ”%1”."
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:43
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:39
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr "Äänitiedosto puuttuu. Valitse suodattimelle ”%1” käytettävä ääni"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:38
+#: filter/dialog/filteractionmissingtagdialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Valitse luokitus"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:41
+#: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Luokitus oli ”%1”."
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:48
+#: filter/dialog/filteractionmissingtagdialog.cpp:44
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
 "Suodattimen luokitus puuttuu. Valitse suodattimelle ”%1” käytettävä luokitus"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:72
+#: filter/dialog/filteractionmissingtagdialog.cpp:68
 #, kde-format
 msgid "Add Tag…"
 msgstr "Lisää luokitus…"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:33
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "Valitse mallipohja"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:39
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:34
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
@@ -417,13 +417,13 @@ msgstr ""
 "Suodattimen mallipohja puuttuu. Valitse suodattimelle ”%1” käytettävä "
 "mallipohja"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:32
+#: filter/dialog/filteractionmissingtransportdialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "Valitse postinvälitys"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:38
+#: filter/dialog/filteractionmissingtransportdialog.cpp:35
 #, kde-format
 msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
@@ -432,7 +432,7 @@ msgstr ""
 "Suodattimen postinvälitys puuttuu. Valitse suodattimelle ”%1” käytettävä "
 "postinvälitys"
 
-#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:29
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:25
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
@@ -936,29 +936,29 @@ msgstr "Ohje"
 msgid "You can get specific header when you use %{headername}."
 msgstr "Voit saada tietyn otsakkeen arvon kirjoittamalla %{headername}."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:38
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Muunna Sieve-komentosarjaksi"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:45
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:41
 #, kde-format
 msgid "Save…"
 msgstr "Tallenna…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:68
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:64
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "Jaa…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:77
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr "Sieve-tiedostot (*.siv);;Kaikki tiedostot (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:85
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:78
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
@@ -1040,38 +1040,38 @@ msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Vientisuodattimet"
 
-#: filter/filterselectiondialog.cpp:30
+#: filter/filterselectiondialog.cpp:26
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Valitse kaikki"
 
-#: filter/filterselectiondialog.cpp:31
+#: filter/filterselectiondialog.cpp:27
 #, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Poista kaikki valinnat"
 
-#: filter/filterselectiondialog.cpp:35
+#: filter/filterselectiondialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Valitse suodattimet"
 
-#: filter/filterselectiondialog.cpp:46 filter/kmfilterlistbox.cpp:53
+#: filter/filterselectiondialog.cpp:42 filter/kmfilterlistbox.cpp:53
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "Etsi"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:30
+#: filter/invalidfilters/invalidfilterdialog.cpp:26
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "Virheelliset suodattimet"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:41
+#: filter/invalidfilters/invalidfilterdialog.cpp:37
 #, kde-format
 msgid "Discard"
 msgstr "Hylkää"
@@ -1734,25 +1734,25 @@ msgstr "Valitse tiedosto:"
 msgid "Select file from config:"
 msgstr "Valitse tiedosto asetuksista:"
 
-#: folder/accountconfigorderdialog.cpp:58
+#: folder/accountconfigorderdialog.cpp:55
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "Muuta tilien järjestystä"
 
-#: folder/accountconfigorderdialog.cpp:75
+#: folder/accountconfigorderdialog.cpp:72
 #, kde-format
 msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "Käytä omaa järjestystä"
 
-#: folder/accountconfigorderdialog.cpp:92
+#: folder/accountconfigorderdialog.cpp:89
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "Ylemmäs"
 
-#: folder/accountconfigorderdialog.cpp:100
+#: folder/accountconfigorderdialog.cpp:97
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
@@ -2665,7 +2665,7 @@ msgstr "Valitse liitteet"
 msgid "…"
 msgstr "…"
 
-#: snippets/snippetcustomfileattachmentnamedialog.cpp:29
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:25
 #, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
@@ -2683,7 +2683,7 @@ msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Lisää muuttujia"
 
-#: snippets/snippetselectattachmentdialog.cpp:27
+#: snippets/snippetselectattachmentdialog.cpp:23
 #: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
@@ -2820,25 +2820,25 @@ msgstr "Virkistä"
 msgid "Text Snippets"
 msgstr "Tekstileikkeet"
 
-#: snippets/snippetvariabledialog.cpp:38
+#: snippets/snippetvariabledialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Anna muuttujien arvot"
 
-#: snippets/snippetvariabledialog.cpp:41
+#: snippets/snippetvariabledialog.cpp:37
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Anna ”%1”:n korvaavat arvot:"
 
-#: snippets/snippetvariabledialog.cpp:46
+#: snippets/snippetvariabledialog.cpp:42
 #, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Tee arvosta &oletus"
 
-#: snippets/snippetvariabledialog.cpp:49
+#: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2847,7 +2847,7 @@ msgid ""
 msgstr ""
 "Valitse tämä tallentaaksesi oikealle merkityn arvon muuttujan oletusarvoksi"
 
-#: snippets/snippetvariabledialog.cpp:52
+#: snippets/snippetvariabledialog.cpp:48
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""

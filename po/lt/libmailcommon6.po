@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-09 00:51+0000\n"
+"POT-Creation-Date: 2026-09-29 00:46+0000\n"
 "PO-Revision-Date: 2026-09-26 00:23+0300\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
@@ -279,55 +279,55 @@ msgstr "Klavišų derinys:"
 msgid "Message format:"
 msgstr "Laiško formatas:"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:34
+#: filter/dialog/filteractionmissingaccountdialog.cpp:30
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Account"
 msgstr "Pasirinkite paskyrą"
 
-#: filter/dialog/filteractionmissingaccountdialog.cpp:40
+#: filter/dialog/filteractionmissingaccountdialog.cpp:36
 #, kde-format
 msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr ""
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:41
+#: filter/dialog/filteractionmissingfolderdialog.cpp:38
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Pasirinkite aplanką"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:44
+#: filter/dialog/filteractionmissingfolderdialog.cpp:41
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Aplanko kelias buvo „%1“."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:49
+#: filter/dialog/filteractionmissingfolderdialog.cpp:46
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr ""
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:70
+#: filter/dialog/filteractionmissingfolderdialog.cpp:67
 #, kde-format
 msgid "Please select a folder:"
 msgstr "Pasirinkite aplanką:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:73
+#: filter/dialog/filteractionmissingfolderdialog.cpp:70
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
 msgstr ""
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:33
+#: filter/dialog/filteractionmissingidentitydialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Identity"
 msgstr "Pasirinkite tapatybę"
 
-#: filter/dialog/filteractionmissingidentitydialog.cpp:39
+#: filter/dialog/filteractionmissingidentitydialog.cpp:35
 #, kde-format
 msgid ""
 "Filter identity is missing. Please select an identity to use with filter "
@@ -336,52 +336,52 @@ msgstr ""
 "Trūksta filtro tapatybės. Pasirinkite tapatybę, kurią naudosite su filtru "
 "„%1“"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:32
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Select sound"
 msgstr "Pasirinkite garsą"
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:36
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Sound file was \"%1\"."
 msgstr "Garso failas buvo „%1“."
 
-#: filter/dialog/filteractionmissingsoundurldialog.cpp:43
+#: filter/dialog/filteractionmissingsoundurldialog.cpp:39
 #, kde-format
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr "Trūksta garso failo. Pasirinkite garsą, kurį naudosite su filtru „%1“"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:38
+#: filter/dialog/filteractionmissingtagdialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Pasirinkite žymę"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:41
+#: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Žymė buvo „%1“."
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:48
+#: filter/dialog/filteractionmissingtagdialog.cpp:44
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr "Trūksta filtro žymės. Pasirinkite žymę, kurią naudosite su filtru „%1“"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:72
+#: filter/dialog/filteractionmissingtagdialog.cpp:68
 #, kde-format
 msgid "Add Tag…"
 msgstr "Pridėti žymę…"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:33
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Template"
 msgstr "Pasirinkite šabloną"
 
-#: filter/dialog/filteractionmissingtemplatedialog.cpp:39
+#: filter/dialog/filteractionmissingtemplatedialog.cpp:34
 #, kde-format
 msgid ""
 "Filter template is missing. Please select a template to use with filter "
@@ -389,20 +389,20 @@ msgid ""
 msgstr ""
 "Trūksta filtro šablono. Pasirinkite šabloną, kurį naudosite su filtru „%1“"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:32
+#: filter/dialog/filteractionmissingtransportdialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Transport"
 msgstr "Pasirinkite perdavimą"
 
-#: filter/dialog/filteractionmissingtransportdialog.cpp:38
+#: filter/dialog/filteractionmissingtransportdialog.cpp:35
 #, kde-format
 msgid ""
 "Filter transport is missing. Please select a transport to use with filter "
 "\"%1\""
 msgstr ""
 
-#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:29
+#: filter/dialog/selectthunderbirdfilterfilesdialog.cpp:25
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird filter files"
@@ -904,29 +904,29 @@ msgstr "Pagalba"
 msgid "You can get specific header when you use %{headername}."
 msgstr "Galite gauti konkrečią antraštę, kai naudojate %{headername}."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:38
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Konvertuoti į Sieve scenarijų"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:45
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:41
 #, kde-format
 msgid "Save…"
 msgstr "Įrašyti…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:68
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:64
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "Bendrinti…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:84
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:77
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr "Sieve failai (*.siv);;Visi failai (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:85
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:78
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
@@ -1009,38 +1009,38 @@ msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Eksportuoti filtrus"
 
-#: filter/filterselectiondialog.cpp:30
+#: filter/filterselectiondialog.cpp:26
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Žymėti visus"
 
-#: filter/filterselectiondialog.cpp:31
+#: filter/filterselectiondialog.cpp:27
 #, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Nuimti žymėjimą nuo visų"
 
-#: filter/filterselectiondialog.cpp:35
+#: filter/filterselectiondialog.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Pasirinkite filtrus"
 
-#: filter/filterselectiondialog.cpp:46 filter/kmfilterlistbox.cpp:53
+#: filter/filterselectiondialog.cpp:42 filter/kmfilterlistbox.cpp:53
 #: folder/foldertreewidget.cpp:84
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "Ieškoti"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:30
+#: filter/invalidfilters/invalidfilterdialog.cpp:26
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "Netinkami filtrai"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:41
+#: filter/invalidfilters/invalidfilterdialog.cpp:37
 #, kde-format
 msgid "Discard"
 msgstr "Atmesti"
@@ -1653,25 +1653,25 @@ msgstr "Pasirinkti failą:"
 msgid "Select file from config:"
 msgstr "Pasirinkti failą iš konfigūracijos:"
 
-#: folder/accountconfigorderdialog.cpp:58
+#: folder/accountconfigorderdialog.cpp:55
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Accounts Order"
 msgstr "Taisyti paskyrų tvarką"
 
-#: folder/accountconfigorderdialog.cpp:75
+#: folder/accountconfigorderdialog.cpp:72
 #, kde-format
 msgctxt "@option:check"
 msgid "Use custom order"
 msgstr "Naudoti tinkintą tvarką"
 
-#: folder/accountconfigorderdialog.cpp:92
+#: folder/accountconfigorderdialog.cpp:89
 #, kde-format
 msgctxt "Move selected account up."
 msgid "Up"
 msgstr "Aukštyn"
 
-#: folder/accountconfigorderdialog.cpp:100
+#: folder/accountconfigorderdialog.cpp:97
 #, kde-format
 msgctxt "Move selected account down."
 msgid "Down"
@@ -2596,7 +2596,7 @@ msgstr "Pasirinkti priedus"
 msgid "…"
 msgstr "…"
 
-#: snippets/snippetcustomfileattachmentnamedialog.cpp:29
+#: snippets/snippetcustomfileattachmentnamedialog.cpp:25
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Customize File Name Attachment"
@@ -2614,7 +2614,7 @@ msgctxt "@action:button"
 msgid "Insert Variables"
 msgstr "Įterpti kintamuosius"
 
-#: snippets/snippetselectattachmentdialog.cpp:27
+#: snippets/snippetselectattachmentdialog.cpp:23
 #: snippets/snippetselectattachmentwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
@@ -2747,25 +2747,25 @@ msgstr "Atnaujinti"
 msgid "Text Snippets"
 msgstr "Pašalinti iškarpas"
 
-#: snippets/snippetvariabledialog.cpp:38
+#: snippets/snippetvariabledialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr ""
 
-#: snippets/snippetvariabledialog.cpp:41
+#: snippets/snippetvariabledialog.cpp:37
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr ""
 
-#: snippets/snippetvariabledialog.cpp:46
+#: snippets/snippetvariabledialog.cpp:42
 #, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr ""
 
-#: snippets/snippetvariabledialog.cpp:49
+#: snippets/snippetvariabledialog.cpp:45
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2773,7 +2773,7 @@ msgid ""
 "this variable"
 msgstr ""
 
-#: snippets/snippetvariabledialog.cpp:52
+#: snippets/snippetvariabledialog.cpp:48
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
