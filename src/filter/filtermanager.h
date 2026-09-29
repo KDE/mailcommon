@@ -38,12 +38,12 @@ public:
      * Describes the list of filters.
      */
     enum FilterSet {
-        NoSet = 0x0,
-        Inbound = 0x1,
-        Outbound = 0x2,
-        Explicit = 0x4,
-        BeforeOutbound = 0x8,
-        AllFolders = 0x16, ///< Apply the filter on all folders, not just inbox
+        NoSet = 0,
+        Inbound = 1,
+        Outbound = 2,
+        Explicit = 4,
+        BeforeOutbound = 8,
+        AllFolders = 16, ///< Apply the filter on all folders, not just inbox
         All = Inbound | BeforeOutbound | Outbound | Explicit | AllFolders
     };
 
