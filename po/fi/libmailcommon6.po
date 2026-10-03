@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-29 00:46+0000\n"
-"PO-Revision-Date: 2026-03-02 18:57+0200\n"
+"PO-Revision-Date: 2026-09-05 11:10+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -1377,10 +1377,9 @@ msgid "Filters which were imported:"
 msgstr "Tuodut suodattimet:"
 
 #: filter/kmfilterdialog.cpp:685
-#, fuzzy, kde-format
-#| msgid "Any filter found."
+#, kde-format
 msgid "No filter found."
-msgstr "Mikä tahansa löytynyt suodatin."
+msgstr "Suodattimia ei löytynyt."
 
 #: filter/kmfilterdialog.cpp:710
 #, kde-format
@@ -2022,9 +2021,7 @@ msgid "Removing old messages from folder %1 failed."
 msgstr "Vanhojen viestien siirto kansiosta %1 epäonnistui."
 
 #: job/expirejob.cpp:157
-#, fuzzy, kde-format
-#| msgid "Removing 1 old message from folder %2…"
-#| msgid_plural "Removing %1 old messages from folder %2..."
+#, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2…"
 msgstr[0] "Poistetaan yksi vanha viesti kansiosta %2…"
