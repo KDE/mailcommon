@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-29 00:46+0000\n"
-"PO-Revision-Date: 2026-09-26 00:23+0300\n"
+"PO-Revision-Date: 2026-10-03 13:25+0300\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -249,7 +249,7 @@ msgstr "Naudoti visuotines nuostatas"
 #: collectionpage/collectionviewwidget.cpp:40
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
-msgstr ""
+msgstr "Rodyti laiškų sąraše siuntėjo/gavėjo stulpelį"
 
 #: collectionpage/collectionviewwidget.cpp:43
 #, fuzzy, kde-format
@@ -270,9 +270,9 @@ msgid "Receiver"
 msgstr "Gavėjas"
 
 #: collectionpage/collectionviewwidget.cpp:46
-#, fuzzy, kde-format
+#, kde-format
 msgid "Sho&w column:"
-msgstr "Klavišų derinys:"
+msgstr "Ro&dyti stulpelį:"
 
 #: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
@@ -1152,16 +1152,16 @@ msgid "Available Filters"
 msgstr "Prieinami filtrai"
 
 #: filter/kmfilterdialog.cpp:168
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "General mail filter settings."
 msgid "General"
-msgstr "Bendri"
+msgstr "Bendros"
 
 #: filter/kmfilterdialog.cpp:172
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "Advanced mail filter settings."
 msgid "Advanced"
-msgstr "Išsamiau"
+msgstr "Išplėstinės"
 
 #: filter/kmfilterdialog.cpp:182
 #, kde-format
@@ -1226,7 +1226,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
-msgstr ""
+msgstr "Taikyti šį filtrą &filtruojant rankiniu būdu"
 
 #: filter/kmfilterdialog.cpp:237
 #, kde-format
@@ -1275,7 +1275,7 @@ msgstr "Šio filtro piktograma:"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
-msgstr ""
+msgstr "Paleisti pažymėtą filtrą(-us) čia: "
 
 #: filter/kmfilterdialog.cpp:293
 #, kde-format
@@ -1287,7 +1287,7 @@ msgstr "Paleisti dabar"
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
-msgstr ""
+msgstr "Nepavyko taikyti šio filtro, nes nepasirinkti jokie aplankai."
 
 #: filter/kmfilterdialog.cpp:421
 #, kde-format
@@ -1536,6 +1536,8 @@ msgid ""
 "Rename filter \"%1\" to:\n"
 "(leave the field empty for automatic naming)"
 msgstr ""
+"Pervadinti filtrą „%1“ į:\n"
+"(palikite tuščią, jei norite automatiškai suteikti pavadinimą)"
 
 #: filter/mailfilter.cpp:132
 #, kde-format
@@ -1563,11 +1565,13 @@ msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
 ">Ignoring it.</qt>"
 msgstr ""
+"<qt>Nežinomas filtro veiksmas <b>%1</b>,<br />esantis filtro taisyklėje <b>"
+"%2</b>.<br />Jo nepaisoma.</qt>"
 
 #: filter/mailfilter.cpp:570
-#, fuzzy, kde-format
+#, kde-format
 msgid "Any action defined."
-msgstr "Nepavyko sukurti aplanko"
+msgstr "Bet koks apibrėžtas veiksmas."
 
 #: filter/soundtestwidget.cpp:35 filter/soundtestwidget.cpp:117
 #, kde-format
@@ -1595,7 +1599,7 @@ msgstr "Pavadinimas:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: filter/ui/filterconfigwidget.ui:45
-#, fuzzy, kde-format
+#, kde-format
 msgid "Criteria"
 msgstr "Kriterijai"
 
@@ -1615,31 +1619,31 @@ msgstr ""
 #: filter/ui/filterconfigwidget.ui:138
 #, kde-format
 msgid "Apply to incoming messages"
-msgstr ""
+msgstr "Taikyti gaunamiems laiškams"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyToSentCB)
 #: filter/ui/filterconfigwidget.ui:145
 #, kde-format
 msgid "Apply to sent messages"
-msgstr ""
+msgstr "Taikyti išsiųstiems laiškams"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyBeforeSendCB)
 #: filter/ui/filterconfigwidget.ui:152
 #, kde-format
 msgid "Apply before sending messages"
-msgstr ""
+msgstr "Taikyti prieš išsiunčiant laiškus"
 
 #. i18n: ectx: property (text), widget (QCheckBox, applyManuallyCB)
 #: filter/ui/filterconfigwidget.ui:159
 #, kde-format
 msgid "Apply on manual filtering"
-msgstr ""
+msgstr "Taikyti filtruojant rankiniu būdu"
 
 #. i18n: ectx: property (text), widget (QCheckBox, stopIfMatchesCB)
 #: filter/ui/filterconfigwidget.ui:169
 #, kde-format
 msgid "Stop processing if matches"
-msgstr ""
+msgstr "Stabdyti apdorojimą, jei atitinka"
 
 #. i18n: ectx: property (text), widget (QRadioButton, selectFile)
 #: filter/ui/selectthunderbirdfilterfileswidget.ui:29
@@ -1700,7 +1704,7 @@ msgid "&New Subfolder…"
 msgstr "&Naujas poaplankis…"
 
 #: folder/folderselectiondialog.cpp:67
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "Sukurti naują poaplankį šiuo metu pažymėtame aplanke"
@@ -1734,9 +1738,9 @@ msgid "Folder creation failed"
 msgstr "Nepavyko sukurti aplanko"
 
 #: folder/foldertreeview.cpp:129
-#, fuzzy, kde-format
+#, kde-format
 msgid "View Columns"
-msgstr "Žiūrėti stulpelius"
+msgstr "Rodyti stulpelius"
 
 #: folder/foldertreeview.cpp:139
 #, kde-format
@@ -1744,9 +1748,9 @@ msgid "Icon Size"
 msgstr "Piktogramų dydis"
 
 #: folder/foldertreeview.cpp:155
-#, fuzzy, kde-format
+#, kde-format
 msgid "Display Tooltips"
-msgstr "Rodyti patarimus"
+msgstr "Rodyti paaiškinimus"
 
 #: folder/foldertreeview.cpp:159
 #, kde-format
@@ -1790,7 +1794,7 @@ msgid "Go to Next Unread Message"
 msgstr "Eiti į kitą neskaitytą laišką"
 
 #: folder/foldertreeview.cpp:476 folder/foldertreeview.cpp:518
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:button"
 msgid "Go To"
 msgstr "Eiti į"
@@ -1799,7 +1803,7 @@ msgstr "Eiti į"
 #, kde-format
 msgctxt "@action:button"
 msgid "Do Not Go To"
-msgstr ""
+msgstr "Neiti į"
 
 #: folder/foldertreewidget.cpp:78
 #, kde-format
@@ -1827,10 +1831,10 @@ msgstr "%1 (Atsijungęs (-usi))"
 msgctxt ""
 "%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
-msgstr ""
+msgstr "%1 (Pasiektа %2% riba)"
 
 #: job/backupjob.cpp:95
-#, fuzzy, kde-format
+#, kde-format
 msgid "Unable to retrieve folder list."
 msgstr "Nepavyko gauti aplankų sąrašo."
 
@@ -1840,9 +1844,9 @@ msgid "The operation was canceled by the user."
 msgstr "Operacija nutraukta naudotojo."
 
 #: job/backupjob.cpp:152
-#, fuzzy, kde-format
+#, kde-format
 msgid "Failed to archive the folder '%1'."
-msgstr "Nepavyko suarchyvuoti aplanko „%1“."
+msgstr "Nepavyko archyvuoti aplanko „%1“."
 
 #: job/backupjob.cpp:156
 #, kde-format
@@ -1866,6 +1870,7 @@ msgid ""
 "Archiving folder '%1' successfully completed. The archive was written to the "
 "file '%2'."
 msgstr ""
+"Aplanko „%1“ archyvavimas sėkmingai užbaigtas. Archyvas rašytas į failą „%2“."
 
 #: job/backupjob.cpp:188
 #, kde-format
@@ -1879,7 +1884,7 @@ msgstr[3] ""
 #: job/backupjob.cpp:192
 #, kde-format
 msgid "The archive file has a size of %1."
-msgstr ""
+msgstr "Archyvo failo dydis yra %1."
 
 #: job/backupjob.cpp:194
 #, kde-format
@@ -1890,7 +1895,7 @@ msgstr "Archyvavimas užbaigtas"
 #: job/backupjob.cpp:244
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
-msgstr ""
+msgstr "Nepavyko rašyti laiško į archyvo aplanką „%1“."
 
 #: job/backupjob.cpp:268
 #, kde-format
@@ -1906,6 +1911,8 @@ msgstr "Archyvuojamas aplankas %1"
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr ""
+"Nepavyko archyvo failo viduje sukurti aplanko struktūrą, skirtą aplankui "
+"„%1“."
 
 #: job/backupjob.cpp:371
 #, kde-format
@@ -1915,7 +1922,7 @@ msgstr ""
 #: job/backupjob.cpp:409
 #, kde-format
 msgid "Unable to open archive for writing."
-msgstr ""
+msgstr "Nepavyko atverti archyvo rašymui."
 
 #: job/backupjob.cpp:413
 #, fuzzy, kde-format
@@ -1939,7 +1946,7 @@ msgstr ""
 #: job/expiredeletejob.cpp:74
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
-msgstr ""
+msgstr "Nepavyko pašalinti senų laiškų iš aplanko %1."
 
 #: job/expirejob.cpp:157
 #, kde-format
@@ -1959,19 +1966,19 @@ msgstr ""
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Perkeliamas %1 senas laiškas iš aplanko %2 į aplanką %3…"
+msgstr[1] "Perkeliami %1 seni laiškai iš aplanko %2 į aplanką %3…"
+msgstr[2] "Perkeliama %1 senų laiškų iš aplanko %2 į aplanką %3…"
+msgstr[3] "Perkeliamas %1 senas laiškas iš aplanko %2 į aplanką %3…"
 
 #: job/expiremovejob.cpp:127
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Perkeltas %1 senas laiškas iš aplanko %2 į aplanką %3."
+msgstr[1] "Perkelti %1 seni laiškai iš aplanko %2 į aplanką %3."
+msgstr[2] "Perkelta %1 senų laiškų iš aplanko %2 į aplanką %3."
+msgstr[3] "Perkeltas %1 senas laiškas iš aplanko %2 į aplanką %3."
 
 #: job/expiremovejob.cpp:136
 #, kde-format
@@ -1986,12 +1993,13 @@ msgstr ""
 #: kernel/mailkernel.cpp:184 kernel/mailkernel.cpp:206
 #, kde-format
 msgid "You do not have read/write permission to your inbox folder."
-msgstr ""
+msgstr "Jūs neturite leidimo skaityti/rašyti į savo gautų laiškų aplanką."
 
 #: kernel/mailkernel.cpp:235
 #, kde-format
 msgid "The Email program encountered a fatal error and will terminate now"
 msgstr ""
+"El. pašto programa susidūrė su lemtingąja klaida ir dabar užbaigs darbą"
 
 #: kernel/mailkernel.cpp:238
 #, kde-format
@@ -2000,6 +2008,9 @@ msgid ""
 "The error was:\n"
 "%1"
 msgstr ""
+"El. pašto programa susidūrė su lemtingąja klaida ir dabar užbaigs darbą.\n"
+"Klaida buvo:\n"
+"%1"
 
 #: search/searchpattern.cpp:237
 #, kde-format
@@ -2051,9 +2062,8 @@ msgid "Message Status"
 msgstr "Laiško būsena"
 
 #: search/searchpatternedit.cpp:48
-#, fuzzy
 msgid "Message Tag"
-msgstr "Laiško gairė „%1“"
+msgstr "Laiško žymė"
 
 #: search/searchpatternedit.cpp:49
 msgid "Subject"
@@ -2171,7 +2181,7 @@ msgstr "nėra adresų knygoje"
 #: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
 #, kde-format
 msgid "is in category"
-msgstr ""
+msgstr "yra kategorijoje"
 
 #: search/searchrule/searchrule.cpp:215
 #: search/widgethandler/messagerulewidgethandler.cpp:28
@@ -2675,7 +2685,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to remove group \"%1\"?"
-msgstr ""
+msgstr "Ar tikrai norite pašalinti grupę „%1“?"
 
 #: snippets/snippetsmanager.cpp:439 snippets/snippetsmanager.cpp:468
 #, fuzzy, kde-format
@@ -2751,7 +2761,7 @@ msgstr "Pašalinti iškarpas"
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
-msgstr ""
+msgstr "Įveskite kintamųjų reikšmes"
 
 #: snippets/snippetvariabledialog.cpp:37
 #, kde-format
