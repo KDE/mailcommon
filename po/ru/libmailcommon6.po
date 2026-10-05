@@ -115,7 +115,7 @@ msgstr "Выбрана неверная папка"
 #, kde-format
 msgctxt "@title:tab General settings for a folder."
 msgid "General"
-msgstr "Главное"
+msgstr "Общие"
 
 #: collectionpage/collectiongeneralpage.cpp:65
 #, kde-format
@@ -126,7 +126,7 @@ msgstr "&Имя папки:"
 #: collectionpage/collectiongeneralpage.cpp:110
 #, kde-format
 msgid "Share unread state with all users"
-msgstr "Разделить непрочитанные сообщения со всеми пользователями"
+msgstr "Общее состояние прочтения для всех пользователей"
 
 #: collectionpage/collectiongeneralpage.cpp:113
 #, kde-format
@@ -138,7 +138,7 @@ msgstr ""
 "Если флажок установлен, то состояние непрочитанных сообщений из данной папки "
 "будет распространяться на всех пользователей, имеющих право доступа к папке. "
 "По умолчанию флажок не установлен, и для каждого пользователя с доступом к "
-"этой папке отображается персональное состояние непрочитанных сообщений."
+"этой папке ведётся собственное состояние непрочитанных сообщений."
 
 #: collectionpage/collectiongeneralpage.cpp:212
 #, kde-format
@@ -146,8 +146,8 @@ msgid ""
 "You have configured this folder to contain groupware information. That means "
 "that this folder will disappear once the configuration dialog is closed."
 msgstr ""
-"Папка настроена для хранения совместной информации. Это значит, что данная "
-"папка исчезнет, как только будет закрыто окно настройки."
+"Папка настроена для хранения данных совместной работы. Это значит, что "
+"данная папка исчезнет, как только будет закрыто окно настройки."
 
 #: collectionpage/collectiongeneralwidget.cpp:25
 #, kde-format
@@ -193,7 +193,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Hide this folder in the folder selection dialog"
-msgstr "Скрыть эту папку в диалоговом окне выбора папок"
+msgstr "Скрывать эту папку в диалоговом окне выбора папок"
 
 #: collectionpage/collectiongeneralwidget.cpp:48
 #, kde-kuit-format
@@ -242,7 +242,7 @@ msgstr "Использовать в этой папке &пользовател�
 #, kde-format
 msgctxt "@action:button"
 msgid "&Copy Global Templates"
-msgstr "&Использовать стандартные шаблоны"
+msgstr "&Скопировать общие шаблоны"
 
 #: collectionpage/collectionviewwidget.cpp:27
 #, kde-format
@@ -305,7 +305,7 @@ msgstr "&Показать столбец:"
 #: collectionpage/collectionviewwidget.cpp:77
 #, kde-format
 msgid "Message format:"
-msgstr "Формат письма по умолчанию:"
+msgstr "Формат письма:"
 
 #: filter/dialog/filteractionmissingaccountdialog.cpp:30
 #, kde-format
@@ -489,7 +489,7 @@ msgstr "Не указано значение заголовка."
 #: filter/filteractions/filteractionaddtag.cpp:26
 #, kde-format
 msgid "Add Tag"
-msgstr "Добавить метку…"
+msgstr "Добавить метку"
 
 #: filter/filteractions/filteractionaddtag.cpp:147
 #, kde-format
@@ -549,7 +549,7 @@ msgid ""
 "book."
 msgstr ""
 "Определяет предпочтительную адресную книгу.\n"
-"Если книга недоступна, фильтр возвратится к адресной книге по умолчанию."
+"Если она недоступна, фильтр будет использовать адресную книгу по умолчанию."
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:287
 #, kde-format
@@ -624,7 +624,7 @@ msgstr "Выполнить повторное шифрование зашифр�
 #: filter/filteractions/filteractionencrypt.cpp:253
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
-msgstr "<b>Предупреждение:</b> для чтения писем необходимо наличие Seckey."
+msgstr "<b>Предупреждение:</b> для чтения писем необходим закрытый ключ."
 
 #: filter/filteractions/filteractionencrypt.cpp:255
 #, kde-format
@@ -635,8 +635,8 @@ msgid ""
 "enable decryption.</p>"
 msgstr ""
 "<p>Для доступа к содержимому зашифрованного письма необходимо расшифровать "
-"его секретным ключом.</p><p>Если письма хранятся на сервере электронной "
-"почты и для доступа к ним используется несколько клиентов, следует включить "
+"его закрытым ключом.</p><p>Если письма хранятся на сервере электронной почты "
+"и для доступа к ним используется несколько клиентов, следует включить "
 "расшифровку в каждом из них.</p>"
 
 #: filter/filteractions/filteractionexec.cpp:15
@@ -783,7 +783,7 @@ msgstr "на"
 #: filter/filteractions/filteractionsendfakedisposition.cpp:29
 #, kde-format
 msgid "Send Fake MDN"
-msgstr "Отправить поддельное уведомление о доставке письма"
+msgstr "Отправить поддельное уведомление об обработке письма"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:34
 #, kde-format
@@ -795,7 +795,7 @@ msgstr "Игнорируемые"
 #, kde-format
 msgctxt "MDN type"
 msgid "Displayed"
-msgstr "Выделенные"
+msgstr "Просмотренные"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:36
 #, kde-format
@@ -830,7 +830,7 @@ msgstr "Неудавшиеся"
 #: filter/filteractions/filteractionsendfakedisposition.cpp:116
 #, kde-format
 msgid "Fake type undefined."
-msgstr "Не указан тип поддельного уведомления о доставке письма."
+msgstr "Не указан тип поддельного уведомления об обработке письма."
 
 #: filter/filteractions/filteractionsendreceipt.cpp:21
 #, kde-format
@@ -1205,7 +1205,7 @@ msgstr "Фильтры Gmail"
 #, kde-format
 msgctxt "@action"
 msgid "Sieve script"
-msgstr "Сценарий Sieve…"
+msgstr "Сценарий Sieve"
 
 #: filter/kmfilterdialog.cpp:162
 #, kde-format
@@ -1216,7 +1216,7 @@ msgstr "Доступные фильтры"
 #, kde-format
 msgctxt "General mail filter settings."
 msgid "General"
-msgstr "Главное"
+msgstr "Общие"
 
 #: filter/kmfilterdialog.cpp:172
 #, kde-format
@@ -1234,7 +1234,7 @@ msgstr "Действия фильтра:"
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
-msgstr "Применить этот фильтр к входящим сообщениям:"
+msgstr "Применять этот фильтр к входящим сообщениям:"
 
 #: filter/kmfilterdialog.cpp:203
 #, kde-format
@@ -1258,7 +1258,7 @@ msgstr "Только от выбранных учётных записей"
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
-msgstr "Применить этот фильтр к о&тправленным сообщениям"
+msgstr "Применять этот фильтр к о&тправленным сообщениям"
 
 #: filter/kmfilterdialog.cpp:221
 #, kde-format
@@ -1277,7 +1277,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
-msgstr "Применить этот фильтр п&еред отправкой сообщений"
+msgstr "Применять этот фильтр п&еред отправкой сообщений"
 
 #: filter/kmfilterdialog.cpp:229
 #, kde-format
@@ -1294,13 +1294,13 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
-msgstr "Применить этот фильтр при р&учной фильтрации"
+msgstr "Применять этот фильтр при р&учной фильтрации"
 
 #: filter/kmfilterdialog.cpp:237
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
-msgstr "Применить этот фильтр к входящим письмам во всех папках"
+msgstr "Применять этот фильтр к входящим письмам во всех папках"
 
 #: filter/kmfilterdialog.cpp:239
 #, kde-format
@@ -1319,19 +1319,19 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
-msgstr "&При совпадении этого фильтра остановить выполнение здесь"
+msgstr "&При совпадении этого фильтра прекращать обработку"
 
 #: filter/kmfilterdialog.cpp:248
 #, kde-format
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
-msgstr "Добавить этот фильтр в меню «Применить фильтр»"
+msgstr "Добавлять этот фильтр в меню «Применить фильтр»"
 
 #: filter/kmfilterdialog.cpp:266
 #, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
-msgstr "Кроме того, добавить этот фильтр на панель инструментов"
+msgstr "Кроме того, добавлять этот фильтр на панель инструментов"
 
 #: filter/kmfilterdialog.cpp:273
 #, kde-format
@@ -1585,7 +1585,7 @@ msgid ""
 msgstr ""
 "<qt><p><em>Удалить</em> текущий выбранный фильтр из списка.</p><p>Если "
 "фильтр был удалён, то восстановить его уже нельзя, но можно отменить "
-"внесённые изменения, щелкнув по кнопке <em>Отмена</em>.</p></qt>"
+"внесённые изменения, щёлкнув по кнопке <em>Отмена</em>.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:165
 #, kde-format
@@ -1597,7 +1597,7 @@ msgid ""
 "the appearing dialog.</p></qt>"
 msgstr ""
 "<qt><p>Переименовать текущий выделенный фильтр.</p><p>Имя фильтра "
-"присваивается автоматически, если они начинаются с «&lt;».</p><p>Если фильтр "
+"присваивается автоматически, если оно начинается с «&lt;».</p><p>Если фильтр "
 "был переименован случайно, то вернуть автоматически данное имя можно нажав "
 "на эту кнопку и выбрав <em>Очистить</em> и затем <em>ОК</em> в появившемся "
 "окне.</p></qt>"
@@ -1856,7 +1856,7 @@ msgstr "Размер значков"
 #: folder/foldertreeview.cpp:155
 #, kde-format
 msgid "Display Tooltips"
-msgstr "Всплывающие подсказки"
+msgstr "Показывать всплывающие подсказки"
 
 #: folder/foldertreeview.cpp:159
 #, kde-format
@@ -1983,7 +1983,7 @@ msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
 msgstr[0] "Было заархивировано %1 сообщение размером %2."
 msgstr[1] "Были заархивированы %1 сообщения размером %2."
-msgstr[2] "Были заархивированы %1 сообщений размером %2."
+msgstr[2] "Было заархивировано %1 сообщений размером %2."
 msgstr[3] "Было заархивировано 1 сообщение размером %2."
 
 #: job/backupjob.cpp:192
@@ -2005,7 +2005,7 @@ msgstr "Ошибка при записи сообщения в архивную 
 #: job/backupjob.cpp:268
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
-msgstr "Не удалось загрузить сообщение в папку «%1»."
+msgstr "Не удалось загрузить сообщение из папки «%1»."
 
 #: job/backupjob.cpp:334
 #, kde-format
@@ -2039,7 +2039,7 @@ msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "Удалено %1 устаревшее письмо из папки %2."
 msgstr[1] "Удалены %1 устаревших письма из папки %2."
-msgstr[2] "Удалены %1 устаревших писем из папки %2."
+msgstr[2] "Удалено %1 устаревших писем из папки %2."
 msgstr[3] "Удалено 1 устаревшее письмо из папки %2."
 
 #: job/expiredeletejob.cpp:70
@@ -2083,7 +2083,7 @@ msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Перемещено %1 устаревшее письмо из папки %2 в папку %3."
 msgstr[1] "Перемещены %1 устаревших письма из папки %2 в папку %3."
-msgstr[2] "Перемещены %1 устаревших писем из папки %2 в папку %3."
+msgstr[2] "Перемещено %1 устаревших писем из папки %2 в папку %3."
 msgstr[3] "Перемещено 1 устаревшее письмо из папки %2 в папку %3."
 
 #: job/expiremovejob.cpp:136
@@ -2184,7 +2184,7 @@ msgstr "Получатель"
 
 #: search/searchpatternedit.cpp:53
 msgid "Reply To"
-msgstr "Ответить"
+msgstr "Адрес для ответа"
 
 #: search/searchpatternedit.cpp:54
 msgid "Organization"
@@ -2739,7 +2739,7 @@ msgstr "Удалить выбранное вложение?"
 #: snippets/snippetsmanager.cpp:156
 #, kde-format
 msgid "General"
-msgstr "Главное"
+msgstr "Общие"
 
 #: snippets/snippetsmanager.cpp:162
 #, kde-format
@@ -2908,7 +2908,7 @@ msgid ""
 "be replaced with the contents of this snippet."
 msgstr ""
 "Введите ключевое слово для включения функции быстрой вставки данной фразы "
-"при составлении письма. Например, задав в качестве ключевого слово "
+"при составлении письма. Например, задав в качестве ключевого слова "
 "«приветствие», в тексте письма наберите «\\приветствие» (без кавычек) и "
 "нажмите клавишу Tab. В результате данный шаблон будет заменён на текст "
 "соответствующей фразы."
