@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-29 00:46+0000\n"
-"PO-Revision-Date: 2026-10-03 13:25+0300\n"
+"PO-Revision-Date: 2026-10-09 20:02+0300\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -106,10 +106,10 @@ msgid "Wrong Folder Selected"
 msgstr "Pasirinktas neteisingas aplankas"
 
 #: collectionpage/collectiongeneralpage.cpp:44
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:tab General settings for a folder."
 msgid "General"
-msgstr "Bendri"
+msgstr "Bendros"
 
 #: collectionpage/collectiongeneralpage.cpp:65
 #, kde-format
@@ -308,7 +308,7 @@ msgstr "Aplanko kelias buvo „%1“."
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
-msgstr ""
+msgstr "Su šiuo filtru gali būti naudojami šie aplankai:"
 
 #: filter/dialog/filteractionmissingfolderdialog.cpp:67
 #, kde-format
@@ -1373,6 +1373,9 @@ msgid ""
 "</p><p>Click on any filter to edit it using the controls in the right-hand "
 "half of the dialog.</p></qt>"
 msgstr ""
+"<qt><p>Tai yra apibrėžtų filtrų sąrašas. Jie yra apdorojami iš viršaus į "
+"apačią.</p><p>Spustelėkite ant bet kurio filtro norėdami jį taisyti "
+"naudojant dešinėje dialogo pusėje esančius valdiklius.</p></qt>"
 
 #: filter/kmfilterlistbox.cpp:85
 #, kde-format
@@ -1839,9 +1842,9 @@ msgid "Unable to retrieve folder list."
 msgstr "Nepavyko gauti aplankų sąrašo."
 
 #: job/backupjob.cpp:122
-#, fuzzy, kde-format
+#, kde-format
 msgid "The operation was canceled by the user."
-msgstr "Operacija nutraukta naudotojo."
+msgstr "Naudotojas atsisakė operacijos."
 
 #: job/backupjob.cpp:152
 #, kde-format
@@ -1855,9 +1858,9 @@ msgid "Archiving failed"
 msgstr "Nepavyko archyvuoti"
 
 #: job/backupjob.cpp:166
-#, fuzzy, kde-format
+#, kde-format
 msgid "Unable to finalize the archive file."
-msgstr "Nepavyksta užbaigti archyvo failo."
+msgstr "Nepavyko užbaigti archyvo failo."
 
 #: job/backupjob.cpp:171
 #, kde-format
@@ -1933,10 +1936,10 @@ msgstr "Archyvavimas"
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Pašalintas %1 senas laiškas iš aplanko %2."
+msgstr[1] "Pašalinti %1 seni laiškai iš aplanko %2."
+msgstr[2] "Pašalinta %1 senų laiškų iš aplanko %2."
+msgstr[3] "Pašalintas %1 senas laiškas iš aplanko %2."
 
 #: job/expiredeletejob.cpp:70
 #, kde-format
@@ -1952,10 +1955,10 @@ msgstr "Nepavyko pašalinti senų laiškų iš aplanko %1."
 #, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2…"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Šalinamas %1 senas laiškas iš aplanko %2…"
+msgstr[1] "Šalinami %1 seni laiškai iš aplanko %2…"
+msgstr[2] "Šalinama %1 senų laiškų iš aplanko %2…"
+msgstr[3] "Šalinamas %1 senas laiškas iš aplanko %2…"
 
 #: job/expirejob.cpp:164
 #, kde-format
@@ -2637,21 +2640,21 @@ msgid "Do you want to delete selected attachment?"
 msgstr "Ar norite ištrinti pasirinktą priedą?"
 
 #: snippets/snippetsmanager.cpp:156
-#, fuzzy, kde-format
+#, kde-format
 msgid "General"
-msgstr "Bendri"
+msgstr "Bendros"
 
 #: snippets/snippetsmanager.cpp:162
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Add Snippet"
-msgstr "Pridėti iškarpą"
+msgstr "Pridėti fragmentą"
 
 #: snippets/snippetsmanager.cpp:228
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Snippet"
-msgstr ""
+msgstr "Taisyti fragmentą"
 
 #: snippets/snippetsmanager.cpp:288
 #, kde-kuit-format
@@ -2660,6 +2663,8 @@ msgid ""
 "Do you really want to remove snippet \"%1\"?<nl/><warning>There is no way to "
 "undo the removal.</warning>"
 msgstr ""
+"Ar tikrai norite pašalinti fragmentą „%1“?<nl/><warning>Bus nebeįmanoma "
+"atšaukti pašalinimą.</warning>"
 
 #: snippets/snippetsmanager.cpp:307
 #, kde-format
@@ -2680,6 +2685,8 @@ msgid ""
 "Do you really want to remove group \"%1\" along with all its snippets?<nl/"
 "><warning>There is no way to undo the removal.</warning>"
 msgstr ""
+"Ar tikrai norite pašalinti grupę „%1“ kartu su visais jos fragmentais?<nl/"
+"><warning>Bus nebeįmanoma atšaukti pašalinimą.</warning>"
 
 #: snippets/snippetsmanager.cpp:371
 #, kde-format
@@ -2688,28 +2695,28 @@ msgid "Do you really want to remove group \"%1\"?"
 msgstr "Ar tikrai norite pašalinti grupę „%1“?"
 
 #: snippets/snippetsmanager.cpp:439 snippets/snippetsmanager.cpp:468
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action"
 msgid "Snippet %1"
-msgstr "Iškarpa %1"
+msgstr "Fragmentas %1"
 
 #: snippets/snippetsmanager.cpp:561
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
-msgstr "Pridėti iškarpą"
+msgstr "Pridėti fragmentą…"
 
 #: snippets/snippetsmanager.cpp:563
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
-msgstr "Pridėti iškarpą"
+msgstr "Taisyti fragmentą…"
 
 #: snippets/snippetsmanager.cpp:565
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
-msgstr "Pašalinti iškarpas"
+msgstr "Šalinti fragmentą"
 
 #: snippets/snippetsmanager.cpp:568
 #, kde-format
@@ -2730,21 +2737,21 @@ msgid "Remove Group"
 msgstr "Šalinti grupę"
 
 #: snippets/snippetsmanager.cpp:575
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
-msgstr "Pašalinti iškarpas"
+msgstr "Įterpti fragmentą"
 
 #: snippets/snippetsmodel.cpp:524 snippets/snippetsmodel.cpp:553
 #, kde-format
 msgid "Do you want to update snippet?"
-msgstr ""
+msgstr "Ar norite atnaujinti fragmentą?"
 
 #: snippets/snippetsmodel.cpp:525 snippets/snippetsmodel.cpp:554
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Update snippet"
-msgstr "Pašalinti iškarpas"
+msgstr "Atnaujinti fragmentą"
 
 #: snippets/snippetsmodel.cpp:526 snippets/snippetsmodel.cpp:555
 #, kde-format
@@ -2753,9 +2760,9 @@ msgid "Update"
 msgstr "Atnaujinti"
 
 #: snippets/snippettreeview.cpp:65
-#, fuzzy, kde-format
+#, kde-format
 msgid "Text Snippets"
-msgstr "Pašalinti iškarpas"
+msgstr "Teksto fragmentai"
 
 #: snippets/snippetvariabledialog.cpp:34
 #, kde-format
@@ -2773,7 +2780,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
-msgstr ""
+msgstr "Paversti reikšmę &numatytąja"
 
 #: snippets/snippetvariabledialog.cpp:45
 #, kde-format
@@ -2840,9 +2847,9 @@ msgstr "Nematoma kopija (Bcc):"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel)
 #: snippets/ui/snippetwidget.ui:127
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Snippet:"
-msgstr "&Iškarpa:"
+msgstr "Fragmenta&s:"
 
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonVariables)
 #: snippets/ui/snippetwidget.ui:157
