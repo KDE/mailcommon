@@ -24,7 +24,7 @@ public:
 
     void setInformation(const QString &information);
 
-    [[nodiscard]] bool operator==(const InvalidFilterInfo &other) const;
+    [[nodiscard]] bool operator==(const InvalidFilterInfo &other) const = default;
 
 private:
     QString mName;
