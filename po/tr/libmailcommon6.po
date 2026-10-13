@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-29 00:46+0000\n"
-"PO-Revision-Date: 2026-08-13 19:20+0300\n"
+"PO-Revision-Date: 2026-10-12 11:58+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 26.04.2\n"
+"X-Generator: Lokalize 26.08.0\n"
 "X-POOTLE-MTIME: 1413111382.000000\n"
 
 #: collectionpage/collectionexpirypage.cpp:23
@@ -220,9 +220,9 @@ msgid ""
 msgstr ""
 "Bu klasörde yeni bir posta yazarken veya postalara yanıt verirken "
 "kullanılacak gönderici kimliğini seçin. Bu, çalışma klasörlerinizden "
-"birindeyseniz K Posta’nın ilgili gönderici adresi, imzası ve imzalama ile "
+"birindeyseniz KMail’in ilgili gönderici adresi, imzası ve imzalama ile "
 "şifreleme anahtarlarını otomatik kullanmasını sağlar. Kimlikler, ana "
-"yapılandırma penceresinde ayarlanabilir (Ayarlar: K Posta Uygulamasını "
+"yapılandırma penceresinde ayarlanabilir (Ayarlar: KMail Uygulamasını "
 "Yapılandır)"
 
 #: collectionpage/collectiongeneralwidget.cpp:66
@@ -385,24 +385,24 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
-msgstr "Etiket Seç"
+msgstr "Künye Seç"
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:37
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
-msgstr "Etiket “%1” idi."
+msgstr "Künye, “%1” idi."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:44
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
-"Süzgeç etiketi eksik. Lütfen “%1” süzgeciyle kullanmak üzere bir etiket seçin"
+"Süzgeç künyesi eksik. Lütfen “%1” süzgeciyle kullanmak üzere bir künye seçin."
 
 #: filter/dialog/filteractionmissingtagdialog.cpp:68
 #, kde-format
 msgid "Add Tag…"
-msgstr "Etiket Ekle…"
+msgstr "Künye Ekle…"
 
 #: filter/dialog/filteractionmissingtemplatedialog.cpp:28
 #, kde-format
@@ -457,7 +457,7 @@ msgstr "### “‘%1’ eylemi desteklenmiyor”"
 #: filter/filteractions/filteractionaddheader.cpp:24
 #, kde-format
 msgid "Add Header"
-msgstr "Üstbilgi Ekle"
+msgstr "Üst Bilgi Ekle"
 
 #: filter/filteractions/filteractionaddheader.cpp:76
 #, kde-format
@@ -468,22 +468,22 @@ msgstr "Değer ile:"
 #: filter/filteractions/filteractionaddheader.cpp:220
 #, kde-format
 msgid "The header name was missing."
-msgstr "Üstbilgi adı eksik."
+msgstr "Üst bilgi adı eksik."
 
 #: filter/filteractions/filteractionaddheader.cpp:226
 #, kde-format
 msgid "The header value was missing."
-msgstr "Üstbilgi değeri eksik."
+msgstr "Üst bilgi değeri eksik."
 
 #: filter/filteractions/filteractionaddtag.cpp:26
 #, kde-format
 msgid "Add Tag"
-msgstr "Etiket Ekle"
+msgstr "Künye Ekle"
 
 #: filter/filteractions/filteractionaddtag.cpp:147
 #, kde-format
 msgid "No tag selected."
-msgstr "Seçili etiket yok."
+msgstr "Seçili künye yok."
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:33
 #, kde-format
@@ -516,7 +516,7 @@ msgstr "Gizli Kopya"
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:40
 #, kde-format
 msgid "KMail Filter"
-msgstr "K Posta Süzgeci"
+msgstr "KMail Süzgeci"
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:117
 #, kde-format
@@ -723,12 +723,12 @@ msgstr "E-posta adresi eksik."
 #: filter/filteractions/filteractionremoveheader.cpp:22
 #, kde-format
 msgid "Remove Header"
-msgstr "Üstbilgiyi Kaldır"
+msgstr "Üst Bilgiyi Kaldır"
 
 #: filter/filteractions/filteractionremoveheader.cpp:96
 #, kde-format
 msgid "Header name undefined."
-msgstr "Üstbilgi adı tanımsız."
+msgstr "Üst bilgi adı tanımsız."
 
 #: filter/filteractions/filteractionreplyto.cpp:20
 #, kde-format
@@ -738,12 +738,12 @@ msgstr "Yanıt Adresi Belirle"
 #: filter/filteractions/filteractionrewriteheader.cpp:28
 #, kde-format
 msgid "Rewrite Header"
-msgstr "Üstbilgiyi Yeniden Yaz"
+msgstr "Üst Bilgiyi Yeniden Yaz"
 
 #: filter/filteractions/filteractionrewriteheader.cpp:45
 #, kde-format
 msgid "Header not defined"
-msgstr "Üstbilgi tanımlanmamış"
+msgstr "Üst bilgi tanımlanmamış."
 
 #: filter/filteractions/filteractionrewriteheader.cpp:51
 #, kde-format
@@ -760,7 +760,7 @@ msgstr "Değiştir:"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "With:"
-msgstr "İle:"
+msgstr "Şununla:"
 
 #: filter/filteractions/filteractionsendfakedisposition.cpp:29
 #, kde-format
@@ -988,7 +988,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
-msgstr "K Posta Süzgeçleri İçe Aktar"
+msgstr "KMail Süzgeçleri İçe Aktar"
 
 #: filter/filterimporterexporter.cpp:146
 #, kde-format
@@ -1122,7 +1122,7 @@ msgstr "Şuna Dönüştür…"
 #, kde-format
 msgctxt "@action"
 msgid "KMail filters"
-msgstr "K Posta Süzgeçleri"
+msgstr "KMail Süzgeçleri"
 
 #: filter/kmfilterdialog.cpp:102
 #, kde-format
@@ -1395,14 +1395,14 @@ msgstr ""
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
-"Tüm K Posta süzgeçlerini sieve betiklerine dönüştüremeyiz; ancak "
+"Tüm KMail süzgeçlerini sieve betiklerine dönüştüremeyiz; ancak "
 "deneyebiliriz :-)"
 
 #: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
-msgstr "K Posta Süzgeçlerini Sieve Betiklerine Dönüştür"
+msgstr "KMail Süzgeçlerini Sieve Betiklerine Dönüştür"
 
 #: filter/kmfilterdialog.cpp:733
 #, kde-format
@@ -2130,7 +2130,7 @@ msgstr "İleti Durumu"
 
 #: search/searchpatternedit.cpp:48
 msgid "Message Tag"
-msgstr "İleti Etiketi"
+msgstr "İleti Künyesi"
 
 #: search/searchpatternedit.cpp:49
 msgid "Subject"
@@ -2368,7 +2368,7 @@ msgstr "<alıcılar> gerçeklenmedi/desteklenmiyor"
 #: search/searchrule/searchrule.cpp:324
 #, kde-format
 msgid "<Tag> is not supported"
-msgstr "<Etiket> desteklenmiyor"
+msgstr "<Künye> desteklenmiyor"
 
 #: search/searchrule/searchrule.cpp:327
 #, kde-format
@@ -2941,12 +2941,12 @@ msgstr "Kısa&yol:"
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Tag"
-msgstr "Etiket Ekle"
+msgstr "Künye Ekle"
 
 #: tag/addtagdialog.cpp:76
 #, kde-format
 msgid "Tag %1 already exists"
-msgstr "%1 etiketi zaten mevcut"
+msgstr "%1 künyesi hâlihazırda var."
 
 #: tag/tagwidget.cpp:63
 #, kde-format
@@ -2988,7 +2988,7 @@ msgstr "&Yatık"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
-msgstr "İleti etiketi s&imgesi:"
+msgstr "İleti künyesi s&imgesi:"
 
 #: tag/tagwidget.cpp:133
 #, kde-format
