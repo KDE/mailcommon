@@ -26,7 +26,7 @@
 using namespace MailCommon;
 namespace
 {
-static const char myAccountConfigOrderDialogName[] = "AccountConfigOrderDialog";
+const char myAccountConfigOrderDialogName[] = "AccountConfigOrderDialog";
 }
 struct InstanceStruct {
     QString name;

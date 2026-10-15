@@ -19,7 +19,7 @@
 using namespace MailCommon;
 namespace
 {
-static const char myFilterSelectionDialogName[] = "FilterSelectionDialog";
+const char myFilterSelectionDialogName[] = "FilterSelectionDialog";
 }
 FilterSelectionDialog::FilterSelectionDialog(QWidget *parent)
     : QDialog(parent)

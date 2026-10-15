@@ -18,7 +18,7 @@
 using namespace MailCommon;
 namespace
 {
-static const char myFilterActionMissingTemplateDialogGroupName[] = "FilterActionMissingTemplateDialog";
+const char myFilterActionMissingTemplateDialogGroupName[] = "FilterActionMissingTemplateDialog";
 }
 FilterActionMissingTemplateDialog::FilterActionMissingTemplateDialog(const QStringList &templateList, const QString &filtername, QWidget *parent)
     : QDialog(parent)

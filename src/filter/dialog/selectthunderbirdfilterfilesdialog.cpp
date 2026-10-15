@@ -16,7 +16,7 @@
 using namespace MailCommon;
 namespace
 {
-static const char mySelectThunderbirdFilterFilesDialogGroupName[] = "SelectThunderbirdFilterFilesDialog";
+const char mySelectThunderbirdFilterFilesDialogGroupName[] = "SelectThunderbirdFilterFilesDialog";
 }
 SelectThunderbirdFilterFilesDialog::SelectThunderbirdFilterFilesDialog(const QString &defaultSettingPath, QWidget *parent)
     : QDialog(parent)

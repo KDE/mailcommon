@@ -24,7 +24,7 @@
 using namespace MailCommon;
 namespace
 {
-static const char myFilterConvertToSieveResultDialogName[] = "FilterConvertToSieveResultDialog";
+const char myFilterConvertToSieveResultDialogName[] = "FilterConvertToSieveResultDialog";
 }
 FilterConvertToSieveResultDialog::FilterConvertToSieveResultDialog(QWidget *parent)
     : QDialog(parent)

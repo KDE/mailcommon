@@ -19,7 +19,7 @@
 using namespace MailCommon;
 namespace
 {
-static const char myFilterActionMissingAccountDialogConfigGroupName[] = "FilterActionMissingAccountDialog";
+const char myFilterActionMissingAccountDialogConfigGroupName[] = "FilterActionMissingAccountDialog";
 }
 
 FilterActionMissingAccountDialog::FilterActionMissingAccountDialog(const QStringList &accounts, const QString &filtername, QWidget *parent)

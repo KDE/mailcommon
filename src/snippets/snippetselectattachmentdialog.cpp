@@ -13,7 +13,7 @@
 #include <TextAddonsWidgets/LoadDialogSizeUtils>
 namespace
 {
-static const char mySnippetSelectAttachmentDialogGroupName[] = "SnippetSelectAttachmentDialog";
+const char mySnippetSelectAttachmentDialogGroupName[] = "SnippetSelectAttachmentDialog";
 }
 using namespace MailCommon;
 SnippetSelectAttachmentDialog::SnippetSelectAttachmentDialog(QWidget *parent)

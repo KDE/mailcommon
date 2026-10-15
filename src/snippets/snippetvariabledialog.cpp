@@ -23,7 +23,7 @@
 using namespace MailCommon;
 namespace
 {
-static const char mySnippetVariableDialogConfigGroupName[] = "SnippetVariableDialog";
+const char mySnippetVariableDialogConfigGroupName[] = "SnippetVariableDialog";
 }
 SnippetVariableDialog::SnippetVariableDialog(const QString &variableName, QMap<QString, QString> *variables, QWidget *parent)
     : QDialog(parent)

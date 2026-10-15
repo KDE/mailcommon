@@ -17,7 +17,7 @@
 using namespace MailCommon;
 namespace
 {
-static const char myFilterActionMissingSoundUrlDialogGroupName[] = "FilterActionMissingSoundUrlDialog";
+const char myFilterActionMissingSoundUrlDialogGroupName[] = "FilterActionMissingSoundUrlDialog";
 }
 
 FilterActionMissingSoundUrlDialog::FilterActionMissingSoundUrlDialog(const QString &filtername, const QString &argStr, QWidget *parent)

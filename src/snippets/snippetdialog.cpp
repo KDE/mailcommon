@@ -19,7 +19,7 @@
 using namespace MailCommon;
 namespace
 {
-static const char mySnippetDialogConfigGroupName[] = "SnippetDialog";
+const char mySnippetDialogConfigGroupName[] = "SnippetDialog";
 }
 SnippetDialog::SnippetDialog(KActionCollection *actionCollection, bool inGroupMode, QWidget *parent)
     : QDialog(parent)

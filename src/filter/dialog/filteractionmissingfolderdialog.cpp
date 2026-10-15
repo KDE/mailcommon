@@ -23,7 +23,7 @@
 #include <TextAddonsWidgets/LoadDialogSizeUtils>
 namespace
 {
-static const char myFilterActionMissingCollectionDialogConfigGroupName[] = "FilterActionMissingCollectionDialog";
+const char myFilterActionMissingCollectionDialogConfigGroupName[] = "FilterActionMissingCollectionDialog";
 }
 
 using namespace Qt::Literals::StringLiterals;

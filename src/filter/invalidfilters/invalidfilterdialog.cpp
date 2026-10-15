@@ -18,7 +18,7 @@
 using namespace MailCommon;
 namespace
 {
-static const char myInvalidFilterDialogName[] = "InvalidFilterDialog";
+const char myInvalidFilterDialogName[] = "InvalidFilterDialog";
 }
 InvalidFilterDialog::InvalidFilterDialog(QWidget *parent)
     : QDialog(parent)

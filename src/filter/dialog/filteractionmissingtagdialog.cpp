@@ -20,7 +20,7 @@
 using namespace MailCommon;
 namespace
 {
-static const char myFilterActionMissingTagDialogGroupName[] = "FilterActionMissingTagDialog";
+const char myFilterActionMissingTagDialogGroupName[] = "FilterActionMissingTagDialog";
 }
 
 FilterActionMissingTagDialog::FilterActionMissingTagDialog(const QMap<QUrl, QString> &tagList,
