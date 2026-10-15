@@ -8,7 +8,6 @@
 
 #include "mailutil_p.h"
 
-#include "calendarinterface.h"
 #include "filter/dialog/filteractionmissingfolderdialog.h"
 #include "folder/foldersettings.h"
 #include "job/expirejob.h"
@@ -27,16 +26,10 @@
 #include <MailImporter/FilterThunderbird>
 #include <MailImporter/OtherMailerUtil>
 
-#include <MessageCore/StringUtil>
-
-#include <MessageComposer/MessageHelper>
-
 #include <Akonadi/AgentManager>
 #include <Akonadi/EntityMimeTypeFilterModel>
 #include <Akonadi/EntityTreeModel>
-#include <Akonadi/ItemFetchJob>
-#include <Akonadi/ItemFetchScope>
-#include <Akonadi/MessageParts>
+#include <Akonadi/Item>
 #include <Akonadi/NewMailNotifierAttribute>
 #include <Akonadi/ServerManager>
 
@@ -45,6 +38,8 @@
 #include <KIO/Job>
 #include <KIO/JobUiDelegate>
 #include <KJob>
+
+#include <QPointer>
 
 using namespace Qt::Literals::StringLiterals;
 OrgKdeAkonadiPOP3SettingsInterface *MailCommon::Util::createPop3SettingsInterface(const QString &ident)

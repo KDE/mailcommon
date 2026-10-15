@@ -28,7 +28,6 @@ class KKeySequenceWidget;
 class QCheckBox;
 class QPushButton;
 class QRadioButton;
-class QPushButton;
 class QGroupBox;
 namespace MailCommon
 {

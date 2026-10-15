@@ -9,7 +9,6 @@
 #include "mailcommon_export.h"
 
 #include <KIO/Job>
-#include <KSharedConfig>
 
 #include <QModelIndex>
 #include <QObject>

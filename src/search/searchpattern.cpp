@@ -11,11 +11,11 @@
 #include "filter/filterlog.h"
 using MailCommon::FilterLog;
 #include "mailcommon_debug.h"
-#include <Akonadi/ContactSearchJob>
 
 #include <KMime/Message>
 
 #include <KConfigGroup>
+#include <KLocalizedString>
 
 #include <QDataStream>
 #include <QIODevice>

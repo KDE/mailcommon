@@ -14,7 +14,6 @@
 #include "snippetsmodel.h"
 #include "snippetvariabledialog.h"
 #include <KActionCollection>
-#include <KSharedConfig>
 
 #include <KLocalizedString>
 #include <KMessageBox>
@@ -93,7 +92,6 @@ public:
     bool mDirty = false;
 };
 
-using namespace Qt::Literals::StringLiterals;
 QModelIndex SnippetsManager::SnippetsManagerPrivate::currentGroupIndex() const
 {
     if (mSelectionModel->selectedIndexes().isEmpty()) {

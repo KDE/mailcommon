@@ -11,7 +11,6 @@
 #include "../kernel/mailkernel.h"
 #include "mailcommon_debug.h"
 #include "util/mailutil.h"
-#include <MessageComposer/MDNAdviceDialog>
 #include <MessageComposer/MDNAdviceHelper>
 
 #include <MessageComposer/MessageFactoryNG>
@@ -20,6 +19,8 @@
 #include <MessageViewer/MessageViewerSettings>
 
 #include <KLocalizedString>
+
+#include <QWidget>
 
 using namespace MailCommon;
 

@@ -14,6 +14,8 @@
 
 #include <QObject>
 
+class KJob;
+
 namespace MailCommon
 {
 class FilterActionDict;

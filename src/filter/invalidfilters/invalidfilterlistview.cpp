@@ -5,6 +5,7 @@
 */
 
 #include "invalidfilterlistview.h"
+#include "invalidfilterinfo.h"
 #include "invalidfilterlistitemdelegate.h"
 #include "invalidfilterlistmodel.h"
 using namespace MailCommon;

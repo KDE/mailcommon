@@ -22,7 +22,6 @@
 
 namespace MailCommon
 {
-class FolderJob;
 class ScheduledJob;
 
 /*!

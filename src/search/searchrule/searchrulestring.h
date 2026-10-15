@@ -7,7 +7,6 @@
 #pragma once
 #include "mailcommon_private_export.h"
 #include "searchpattern.h"
-#include <Akonadi/Item>
 
 /**
  * @short This class represents a search pattern rule operating on a string.

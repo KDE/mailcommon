@@ -14,8 +14,6 @@
 
 #include <KMime/Message>
 
-#include <gpgme++/decryptionresult.h>
-
 #include <Akonadi/MessageFlags>
 
 #include <QLabel>

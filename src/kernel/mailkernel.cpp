@@ -15,6 +15,7 @@
 #include <Akonadi/AgentInstance>
 #include <Akonadi/AgentManager>
 #include <Akonadi/EntityMimeTypeFilterModel>
+#include <Akonadi/EntityTreeModel>
 #include <Akonadi/SpecialMailCollectionsDiscoveryJob>
 #include <Akonadi/SpecialMailCollectionsRequestJob>
 #include <QApplication>

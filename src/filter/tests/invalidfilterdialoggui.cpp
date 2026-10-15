@@ -5,6 +5,7 @@
 */
 
 #include "filter/invalidfilters/invalidfilterdialog.h"
+#include "filter/invalidfilters/invalidfilterinfo.h"
 
 #include <QApplication>
 

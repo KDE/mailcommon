@@ -22,8 +22,6 @@ class QStackedWidget;
 
 namespace MailCommon
 {
-class SearchPatternEdit;
-
 /*!
  * \class MailCommon::SearchPatternEdit
  * \inmodule MailCommon

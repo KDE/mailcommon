@@ -7,9 +7,9 @@
 #include "filterimportergmail.h"
 #include "filter/mailfilter.h"
 #include "mailcommon_debug.h"
+#include <KLocalizedString>
 #include <QDir>
 #include <QDomDocument>
-#include <QFile>
 
 using namespace MailCommon;
 

@@ -11,18 +11,14 @@
 #include "hierarchicalfoldermatcher_p.h"
 #include "kernel/mailkernel.h"
 
-#include <PimCommon/PimUtil>
 #include <PimCommonAkonadi/ImapAclAttribute>
 
 #include <Akonadi/AttributeFactory>
-#include <Akonadi/ChangeRecorder>
 #include <Akonadi/EntityMimeTypeFilterModel>
 #include <Akonadi/EntityTreeModel>
-#include <Akonadi/ItemFetchScope>
 #include <Akonadi/StatisticsProxyModel>
 
 #include <Akonadi/ETMViewStateSaver>
-#include <Akonadi/EntityTreeView>
 
 #include <KMime/Message>
 
@@ -30,7 +26,6 @@
 
 #include <KLocalizedString>
 
-#include <QApplication>
 #include <QFontDatabase>
 #include <QHeaderView>
 #include <QKeyEvent>

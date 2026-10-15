@@ -6,12 +6,13 @@
 
 #pragma once
 
-#include "invalidfilterinfo.h"
 #include "mailcommon_private_export.h"
 #include <QListView>
 
 namespace MailCommon
 {
+class InvalidFilterInfo;
+
 class MAILCOMMON_TESTS_EXPORT InvalidFilterListView : public QListView
 {
     Q_OBJECT

@@ -9,13 +9,12 @@
 #include "mailcommon_export.h"
 
 #include <Akonadi/CollectionPropertiesPage>
+#include <QSharedPointer>
 
 class QLineEdit;
 
 class QCheckBox;
 
-template<typename T>
-class QSharedPointer;
 namespace PimCommon
 {
 class IncidencesForWidget;

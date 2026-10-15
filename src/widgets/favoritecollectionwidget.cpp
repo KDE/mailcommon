@@ -6,11 +6,11 @@
 */
 
 #include "favoritecollectionwidget.h"
-#include "kernel/mailkernel.h"
 #include "mailcommonsettings_base.h"
 
 #include <MessageCore/MessageCoreSettings>
 
+#include <Akonadi/Collection>
 #include <Akonadi/CollectionStatisticsDelegate>
 #include <KActionCollection>
 #include <KActionMenu>
@@ -18,7 +18,6 @@
 #include <KXMLGUIClient>
 
 #include <QActionGroup>
-#include <QApplication>
 #include <QFontDatabase>
 #include <QMimeData>
 #include <QMouseEvent>

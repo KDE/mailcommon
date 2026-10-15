@@ -9,6 +9,8 @@
 #include <Akonadi/Item>
 #include <QObject>
 
+class KJob;
+
 class ExpireDeleteJob : public QObject
 {
     Q_OBJECT

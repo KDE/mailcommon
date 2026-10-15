@@ -21,12 +21,8 @@ namespace Akonadi
 class Item;
 }
 
-namespace KMime
-{
-class Message;
-}
-
 class KConfigGroup;
+class QDataStream;
 
 namespace MailCommon
 {

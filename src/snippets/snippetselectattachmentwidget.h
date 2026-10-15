@@ -8,10 +8,6 @@
 
 #include "mailcommon_private_export.h"
 #include <PimCommon/SimpleStringListEditor>
-namespace PimCommon
-{
-class SimpleStringListEditor;
-}
 namespace MailCommon
 {
 class MAILCOMMON_TESTS_EXPORT SnippetSelectorWidget : public PimCommon::SimpleStringListEditor

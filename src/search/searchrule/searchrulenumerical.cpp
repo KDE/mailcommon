@@ -9,12 +9,11 @@
 #include "filter/filterlog.h"
 using MailCommon::FilterLog;
 
+#include <KLocalizedString>
 #include <KMime/Message>
 #include <QDateTime>
 
 #include <QRegularExpression>
-
-#include <algorithm>
 
 using namespace MailCommon;
 

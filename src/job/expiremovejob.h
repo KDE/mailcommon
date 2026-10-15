@@ -6,8 +6,11 @@
 
 #pragma once
 
+#include <Akonadi/Collection>
 #include <Akonadi/Item>
 #include <QObject>
+
+class KJob;
 
 class ExpireMoveJob : public QObject
 {

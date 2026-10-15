@@ -8,6 +8,7 @@
 #include "mailfilter.h"
 
 #include <KListWidgetSearchLine>
+#include <KLocalizedString>
 #include <QPushButton>
 
 #include <QDialogButtonBox>

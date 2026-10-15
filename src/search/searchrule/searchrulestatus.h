@@ -8,7 +8,6 @@
 
 #include "mailcommon/searchpattern.h"
 #include "mailcommon_export.h"
-#include <Akonadi/Item>
 #include <Akonadi/MessageStatus>
 
 namespace MailCommon

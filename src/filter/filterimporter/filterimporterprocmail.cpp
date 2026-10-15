@@ -12,6 +12,7 @@
 
 #include <QDir>
 #include <QFile>
+#include <QTextStream>
 
 using namespace MailCommon;
 

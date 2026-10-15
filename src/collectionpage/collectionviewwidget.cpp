@@ -19,6 +19,7 @@
 
 #include <QCheckBox>
 #include <QComboBox>
+#include <QHBoxLayout>
 #include <QRadioButton>
 using namespace MailCommon;
 CollectionViewWidget::CollectionViewWidget(QWidget *parent)

@@ -10,6 +10,8 @@
 #include <KLocalizedString>
 #include <KUrlRequester>
 #include <QAudioOutput>
+#include <QDir>
+#include <QFileDialog>
 #include <QIcon>
 #include <QMediaFormat>
 #include <QMediaPlayer>

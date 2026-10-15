@@ -9,7 +9,6 @@
 
 #include <Akonadi/AddContactJob>
 
-#include <Akonadi/TagSelectionDialog>
 #include <Akonadi/TagWidget>
 
 #include <Akonadi/CollectionComboBox>
@@ -20,6 +19,10 @@
 
 #include <QGridLayout>
 #include <QLabel>
+
+#include <algorithm>
+#include <functional>
+#include <iterator>
 
 using namespace MailCommon;
 

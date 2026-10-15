@@ -5,10 +5,12 @@
 */
 
 #include "invalidfilterdialog.h"
+#include "invalidfilterinfo.h"
 #include "invalidfilterinfowidget.h"
 #include "invalidfilterwidget.h"
 #include <KLocalizedString>
 #include <QDialogButtonBox>
+#include <QIcon>
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <TextAddonsWidgets/LoadDialogSizeUtils>

@@ -7,12 +7,12 @@
 
 #pragma once
 
+#include <QRegularExpression>
 #include <QString>
 #include <vector>
 
 class QAbstractItemModel;
 class QModelIndex;
-class QRegularExpression;
 
 namespace MailCommon
 {

@@ -10,9 +10,9 @@
 #include <MessageComposer/ConvertSnippetVariableMenu>
 #include <TextCustomEditor/PlainTextEditor>
 
-#include <KActionCollection>
 #include <KLineEdit>
 #include <KLocalizedString>
+#include <QAbstractItemModel>
 #include <QComboBox>
 #include <QVBoxLayout>
 using namespace MailCommon;
@@ -26,7 +26,6 @@ public:
     bool wasChanged = false;
 };
 
-using namespace Qt::Literals::StringLiterals;
 SnippetWidget::SnippetWidget(QWidget *parent)
     : QWidget(parent)
     , d(new SnippetWidgetPrivate)

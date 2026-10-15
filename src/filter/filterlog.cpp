@@ -11,8 +11,6 @@
 #include <QFile>
 #include <QTime>
 
-#include <sys/stat.h>
-
 using namespace MailCommon;
 
 class Q_DECL_HIDDEN FilterLog::FilterLogPrivate

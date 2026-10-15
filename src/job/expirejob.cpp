@@ -16,12 +16,8 @@ using PimCommon::BroadcastStatus;
 
 #include <KLocalizedString>
 
-#include <Akonadi/ItemDeleteJob>
 #include <Akonadi/ItemFetchJob>
 #include <Akonadi/ItemFetchScope>
-#include <Akonadi/ItemModifyJob>
-#include <Akonadi/ItemMoveJob>
-#include <Akonadi/MessageFlags>
 #include <Akonadi/MessageParts>
 #include <Akonadi/MessageStatus>
 #include <KMime/Message>

@@ -6,12 +6,12 @@
 
 #pragma once
 
-#include "invalidfilterinfo.h"
 #include "mailcommon_private_export.h"
 #include <QDialog>
 
 namespace MailCommon
 {
+class InvalidFilterInfo;
 class InvalidFilterWidget;
 class InvalidFilterInfoWidget;
 class MAILCOMMON_TESTS_EXPORT InvalidFilterDialog : public QDialog

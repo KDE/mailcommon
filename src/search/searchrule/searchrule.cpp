@@ -17,6 +17,7 @@
 using MailCommon::FilterLog;
 
 #include <KConfigGroup>
+#include <KLocalizedString>
 
 #include <QDataStream>
 

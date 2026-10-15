@@ -10,7 +10,6 @@
 
 #include "redirectwidget.h"
 
-#include <KIdentityManagementCore/Identity>
 #include <KIdentityManagementWidgets/IdentityCombo>
 
 #include <MailTransport/TransportComboBox>
@@ -21,9 +20,9 @@
 #include <KGuiItem>
 #include <QDialogButtonBox>
 #include <QFormLayout>
+#include <QIcon>
 #include <QLabel>
 #include <QPushButton>
-#include <QTreeView>
 #include <QVBoxLayout>
 
 using namespace MailCommon;

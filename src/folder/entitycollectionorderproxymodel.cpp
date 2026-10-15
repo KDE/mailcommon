@@ -10,7 +10,6 @@
 #include "kernel/mailkernel.h"
 #include "mailcommon_debug.h"
 #include "util/mailutil.h"
-#include <Akonadi/AgentManager>
 #include <Akonadi/Collection>
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/SpecialMailCollections>

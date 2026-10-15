@@ -8,7 +8,6 @@
 #pragma once
 
 #include "foldertreewidget.h"
-#include "mailcommon/mailutil.h"
 #include "mailcommon_export.h"
 
 #include <Akonadi/Collection>

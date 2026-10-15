@@ -8,7 +8,6 @@
 
 #include <KLineEditEventHandler>
 
-#include <KActionCollection>
 #include <KColorCombo>
 #include <KIconButton>
 #include <KKeySequenceWidget>

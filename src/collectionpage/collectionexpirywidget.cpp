@@ -12,8 +12,7 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 #include <KLocalization>
-
-#include <Akonadi/CollectionModifyJob>
+#include <KLocalizedString>
 
 #include <KMessageBox>
 #include <QCheckBox>

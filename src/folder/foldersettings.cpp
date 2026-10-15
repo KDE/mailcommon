@@ -9,8 +9,6 @@
 #include "kernel/mailkernel.h"
 #include "util/resourcereadconfigfile.h"
 #include <Akonadi/CollectionModifyJob>
-#include <Akonadi/ItemFetchJob>
-#include <Akonadi/ItemFetchScope>
 #include <Akonadi/NewMailNotifierAttribute>
 #include <PimCommon/PimUtil>
 

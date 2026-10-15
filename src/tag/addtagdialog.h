@@ -9,11 +9,12 @@
 #include "mailcommon_export.h"
 #include "tag.h"
 #include <Akonadi/Tag>
-#include <Akonadi/TagCreateJob>
 #include <QDialog>
 #include <QList>
+#include <memory>
 
 class KActionCollection;
+class KJob;
 
 namespace MailCommon
 {

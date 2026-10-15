@@ -13,7 +13,10 @@
 #include <MailImporter/FilterThunderbird>
 #include <QUrl>
 
+#include <QDate>
 #include <QFile>
+#include <QLocale>
+#include <QTextStream>
 
 using namespace MailCommon;
 

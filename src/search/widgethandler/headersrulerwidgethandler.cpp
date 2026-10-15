@@ -6,8 +6,6 @@
 
 #include "headersrulerwidgethandler.h"
 
-#include "search/searchpattern.h"
-
 #include <KLineEdit>
 #include <KLocalizedString>
 

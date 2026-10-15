@@ -21,7 +21,6 @@ using MailCommon::FilterImporterExporter;
 #include "filterconverter/filterconverttosieve.h"
 #include "filtermanager.h"
 #include "folder/folderrequester.h"
-#include "kernel/mailkernel.h"
 #include "search/searchpatternedit.h"
 #include <PimCommon/PimUtil>
 
@@ -33,9 +32,9 @@ using MailCommon::FilterImporterExporter;
 #include <KIconLoader>
 #include <KJob>
 #include <KKeySequenceWidget>
-#include <KListWidgetSearchLine>
 #include <KLocalizedString>
 #include <KMessageBox>
+#include <KSharedConfig>
 #include <QIcon>
 #include <QPushButton>
 #include <QTabWidget>
@@ -52,7 +51,6 @@ using MailCommon::FilterImporterExporter;
 #include <QMenu>
 #include <QPointer>
 #include <QRadioButton>
-#include <QShortcut>
 #include <QSplitter>
 #include <QTreeWidget>
 #include <QVBoxLayout>

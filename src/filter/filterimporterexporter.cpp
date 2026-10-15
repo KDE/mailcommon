@@ -19,13 +19,12 @@
 
 #include <MessageViewer/MessageViewerUtil>
 
-#include <KConfig>
 #include <KConfigGroup>
-#include <KListWidgetSearchLine>
 #include <KMessageBox>
+#include <QDir>
+#include <QFile>
 #include <QFileDialog>
 #include <QPointer>
-#include <QPushButton>
 #include <QRegularExpression>
 
 using namespace MailCommon;

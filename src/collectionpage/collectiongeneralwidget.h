@@ -8,6 +8,7 @@
 
 #include "mailcommon_export.h"
 #include <Akonadi/Collection>
+#include <QSharedPointer>
 #include <QWidget>
 class QCheckBox;
 namespace KIdentityManagementWidgets

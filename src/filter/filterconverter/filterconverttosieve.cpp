@@ -9,8 +9,6 @@
 #include "filter/mailfilter.h"
 #include "filterconverttosieveresultdialog.h"
 
-#include <QPointer>
-
 using namespace MailCommon;
 
 using namespace Qt::Literals::StringLiterals;

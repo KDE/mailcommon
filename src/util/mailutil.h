@@ -10,6 +10,7 @@
 
 #include <Akonadi/AgentInstance>
 #include <Akonadi/Collection>
+#include <QStringList>
 
 class OrgKdeAkonadiPOP3SettingsInterface;
 
@@ -18,8 +19,6 @@ namespace Akonadi
 class Item;
 }
 class KJob;
-
-class QString;
 
 namespace MailCommon
 {

@@ -8,7 +8,6 @@
 
 #include "mailcommon_export.h"
 
-#include <Akonadi/Collection>
 #include <Akonadi/EntityRightsFilterModel>
 #include <memory>
 namespace Akonadi

@@ -11,6 +11,9 @@
 #include <QModelIndex>
 #include <QRegularExpression>
 
+#include <algorithm>
+#include <iterator>
+
 using namespace MailCommon;
 HierarchicalFolderMatcher::HierarchicalFolderMatcher() = default;
 

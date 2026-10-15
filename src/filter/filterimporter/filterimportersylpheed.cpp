@@ -9,7 +9,7 @@
 #include "mailcommon_debug.h"
 
 #include <QDir>
-#include <QFile>
+#include <QDomDocument>
 
 using namespace MailCommon;
 

@@ -10,9 +10,8 @@
 #include "snippetdialog.h"
 #include "snippetwidget.h"
 
-#include <KActionCollection>
-#include <MessageComposer/ConvertSnippetVariableMenu>
 #include <QDialogButtonBox>
+#include <QModelIndex>
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <TextAddonsWidgets/LoadDialogSizeUtils>

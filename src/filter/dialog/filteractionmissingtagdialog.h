@@ -8,7 +8,9 @@
 
 #include "mailcommon_private_export.h"
 #include <QDialog>
+#include <QMap>
 class QListWidget;
+class QUrl;
 namespace MailCommon
 {
 class MAILCOMMON_TESTS_EXPORT FilterActionMissingTagDialog : public QDialog

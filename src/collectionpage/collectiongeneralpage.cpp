@@ -16,7 +16,6 @@
 #include <PimCommonAkonadi/IncidencesForWidget>
 
 #include <Akonadi/AgentManager>
-#include <Akonadi/AttributeFactory>
 #include <Akonadi/Collection>
 #include <Akonadi/CollectionModifyJob>
 #include <Akonadi/EntityDisplayAttribute>

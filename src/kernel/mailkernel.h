@@ -13,9 +13,8 @@
 
 #include <Akonadi/Collection>
 #include <Akonadi/SpecialMailCollections>
-#include <KSharedConfig>
-
 #include <QObject>
+class KJob;
 namespace PimCommon
 {
 class ImapResourceCapabilitiesManager;

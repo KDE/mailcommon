@@ -9,7 +9,6 @@
 
 #include <KJob>
 #include <KLineEdit>
-#include <KLocalizedString>
 #include <QIcon>
 
 #include <Akonadi/Tag>

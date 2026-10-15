@@ -5,6 +5,7 @@
 */
 
 #include "invalidfilterwidget.h"
+#include "invalidfilterinfo.h"
 #include "invalidfilterlistview.h"
 #include <KLocalizedString>
 #include <QLabel>

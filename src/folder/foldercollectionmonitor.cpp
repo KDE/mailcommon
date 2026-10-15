@@ -6,7 +6,6 @@
 
 #include "foldercollectionmonitor.h"
 #include "collectionpage/attributes/expirecollectionattribute.h"
-#include "foldersettings.h"
 #include "mailcommon_debug.h"
 #include "snooze/attributes/snoozeattribute.h"
 #include "util/mailutil.h"
@@ -15,11 +14,10 @@
 #include <Akonadi/CollectionFetchScope>
 #include <Akonadi/EntityAnnotationsAttribute>
 #include <Akonadi/EntityTreeModel>
-#include <Akonadi/Item>
 #include <Akonadi/ItemDeleteJob>
-#include <Akonadi/ItemFetchJob>
 #include <Akonadi/ItemFetchScope>
 #include <Akonadi/MessageParts>
+#include <KMime/Message>
 
 using namespace MailCommon;
 

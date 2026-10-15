@@ -8,7 +8,6 @@
 
 #include "mailcommon_export.h"
 #include <Akonadi/Item>
-#include <MailCommon/MailKernel>
 #include <MessageComposer/MDNAdviceHelper>
 #include <QObject>
 

@@ -9,8 +9,6 @@
 #include "kernel/mailkernel.h"
 #include "util/mailutil.h"
 
-#include <MessageCore/MessageCoreSettings>
-
 #include <Akonadi/AccountActivitiesAbstract>
 #include <Akonadi/AgentInstance>
 #include <Akonadi/AgentManager>

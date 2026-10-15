@@ -11,6 +11,7 @@
 #include <KUrlRequester>
 #include <QUrl>
 
+#include <QCursor>
 #include <QHBoxLayout>
 #include <QWhatsThis>
 

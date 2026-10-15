@@ -8,8 +8,7 @@
 
 #include "filter/filterimporter/filterimporterabstract.h"
 
-#include <QTextStream>
-
+class QTextStream;
 class QFile;
 
 namespace MailCommon

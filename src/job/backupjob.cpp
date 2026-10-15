@@ -26,6 +26,8 @@
 #include <QFileInfo>
 #include <QTimer>
 
+#include <sys/stat.h>
+
 using namespace MailCommon;
 static const mode_t archivePerms = S_IFREG | 0644;
 

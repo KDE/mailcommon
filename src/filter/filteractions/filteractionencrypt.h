@@ -11,7 +11,10 @@
 #include "mailcommon_private_export.h"
 #include <gpgme++/key.h>
 
-#include <Libkleo/KeyCache>
+namespace Kleo
+{
+class KeyCache;
+}
 
 namespace MailCommon
 {

@@ -6,9 +6,6 @@
 
 #pragma once
 
-#include "mailcommon_export.h"
-#include "mailutil.h"
-
 #include <Akonadi/Collection>
 
 namespace MailCommon

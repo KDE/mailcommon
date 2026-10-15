@@ -10,7 +10,6 @@
 #include "snippettreeview.h"
 #include "snippetsmanager.h"
 
-#include <KActionCollection>
 #include <KLocalizedString>
 
 #include <QContextMenuEvent>

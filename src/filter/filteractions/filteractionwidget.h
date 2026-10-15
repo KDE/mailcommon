@@ -17,7 +17,6 @@
 namespace MailCommon
 {
 class FilterAction;
-class FilterActionWidget;
 
 /*!
  * \brief A widget to edit a single MailCommon::FilterAction.

@@ -18,6 +18,7 @@
 #include <QPushButton>
 
 #include <QGridLayout>
+#include <QHBoxLayout>
 #include <QLabel>
 
 using namespace MailCommon;

@@ -6,12 +6,12 @@
 
 #pragma once
 
-#include "invalidfilterinfo.h"
 #include "mailcommon_export.h"
 #include <QWidget>
 
 namespace MailCommon
 {
+class InvalidFilterInfo;
 class InvalidFilterListView;
 /*!
  * \class MailCommon::InvalidFilterWidget

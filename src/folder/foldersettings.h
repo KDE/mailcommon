@@ -17,6 +17,7 @@ using MessageCore::MailingList;
 
 #include <KSharedConfig>
 #include <QKeySequence>
+#include <QSharedPointer>
 
 namespace MailCommon
 {

@@ -10,6 +10,7 @@
 #include "filter/dialog/filteractionmissingtagdialog.h"
 #include "filter/filtermanager.h"
 
+#include <KLocalizedString>
 #include <QComboBox>
 
 #include <Akonadi/Tag>

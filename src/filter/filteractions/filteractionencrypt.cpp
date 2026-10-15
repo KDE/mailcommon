@@ -9,7 +9,6 @@
 
 #include "mailcommon_debug.h"
 #include "util/cryptoutils.h"
-#include <gpgme.h>
 
 #include <QCheckBox>
 #include <QEventLoop>
@@ -20,14 +19,12 @@
 
 #include <KMime/Message>
 
-#include <QGpgME/EncryptJob>
 #include <QGpgME/KeyListJob>
-#include <QGpgME/ListAllKeysJob>
 #include <QGpgME/Protocol>
-#include <gpgme++/encryptionresult.h>
 #include <gpgme++/keylistresult.h>
 
 #include <Libkleo/DefaultKeyFilter>
+#include <Libkleo/KeyCache>
 #include <Libkleo/KeySelectionCombo>
 
 #include <MessageComposer/EncryptJob>

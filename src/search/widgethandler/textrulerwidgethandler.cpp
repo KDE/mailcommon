@@ -6,15 +6,13 @@
 
 #include "textrulerwidgethandler.h"
 
+#include <KLazyLocalizedString>
 #include <KLineEdit>
-#include <KLocalizedString>
 #include <QComboBox>
+#include <QLabel>
 #include <QStackedWidget>
 
 using namespace MailCommon;
-
-#include <KLazyLocalizedString>
-#include <QLabel>
 
 // also see SearchRule::matches() and SearchRule::Function
 // if you change the following strings!

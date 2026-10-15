@@ -14,6 +14,7 @@
 class KActionCollection;
 
 class QAbstractItemModel;
+class QKeySequence;
 class QModelIndex;
 class QPushButton;
 

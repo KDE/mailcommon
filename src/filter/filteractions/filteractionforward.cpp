@@ -13,8 +13,6 @@
 #include "kernel/mailkernel.h"
 
 #include <Akonadi/EmailAddressRequester>
-#include <MessageComposer/MessageFactoryNG>
-#include <MessageComposer/MessageSender>
 #include <MessageCore/StringUtil>
 #include <TemplateParser/CustomTemplates>
 #include <templateparser/customtemplates_kfg.h>
@@ -25,6 +23,7 @@
 
 #include <QHBoxLayout>
 #include <QLineEdit>
+#include <QPointer>
 
 using namespace MailCommon;
 

@@ -15,11 +15,10 @@
 
 #include <Akonadi/CollectionCreateJob>
 #include <Akonadi/ETMViewStateSaver>
-#include <Akonadi/EntityMimeTypeFilterModel>
-#include <Akonadi/EntityTreeModel>
 
 #include <KLocalizedString>
 #include <KMessageBox>
+#include <QCursor>
 #include <QInputDialog>
 #include <QMenu>
 

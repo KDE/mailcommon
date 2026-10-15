@@ -29,7 +29,6 @@ class IdentityManager;
 
 namespace MailCommon
 {
-class FilterDialog;
 class JobScheduler;
 
 /** Generic interface for mail kernels.*/

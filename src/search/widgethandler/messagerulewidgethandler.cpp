@@ -5,7 +5,6 @@
 */
 
 #include "messagerulewidgethandler.h"
-#include "search/searchpattern.h"
 
 #include <KLazyLocalizedString>
 #include <KLineEdit>

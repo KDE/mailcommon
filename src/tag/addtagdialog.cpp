@@ -8,6 +8,7 @@
 #include "mailcommon_debug.h"
 #include "tag/tagwidget.h"
 
+#include <Akonadi/TagCreateJob>
 #include <KJob>
 #include <KLocalizedString>
 #include <KMessageBox>

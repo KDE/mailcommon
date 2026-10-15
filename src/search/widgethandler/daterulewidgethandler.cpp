@@ -7,7 +7,6 @@
 #include "daterulewidgethandler.h"
 
 #include <KDateComboBox>
-#include <KLocalizedString>
 
 #include <KLazyLocalizedString>
 #include <QComboBox>

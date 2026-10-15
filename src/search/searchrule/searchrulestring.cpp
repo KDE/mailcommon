@@ -11,8 +11,6 @@ using MailCommon::FilterLog;
 
 #include <Akonadi/ContactSearchJob>
 
-#include <Akonadi/SearchQuery>
-
 #include <KMime/Message>
 
 #include <KEmailAddress>

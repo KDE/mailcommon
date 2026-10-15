@@ -11,6 +11,7 @@
 
 #include <MailCommon/FolderSettings>
 #include <QCheckBox>
+#include <QPushButton>
 #include <QSharedPointer>
 #include <QVBoxLayout>
 #include <TemplateParser/TemplatesConfiguration>

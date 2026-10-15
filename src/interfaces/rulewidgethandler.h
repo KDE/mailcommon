@@ -7,7 +7,7 @@
 
 #pragma once
 
-#include "search/searchpattern.h"
+#include "search/searchrule/searchrule.h"
 
 #include <QByteArray>
 

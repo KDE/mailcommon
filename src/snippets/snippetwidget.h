@@ -7,9 +7,12 @@
 #pragma once
 
 #include "mailcommon_export.h"
-#include <QAbstractItemModel>
 #include <QWidget>
+#include <memory>
 class KActionCollection;
+class QAbstractItemModel;
+class QKeySequence;
+class QModelIndex;
 class SnippetWidgetPrivate;
 namespace MailCommon
 {

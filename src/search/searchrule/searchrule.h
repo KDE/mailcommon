@@ -10,7 +10,10 @@
 
 #include <Akonadi/Item>
 
+#include <QStringList>
+
 class KConfigGroup;
+class QDataStream;
 namespace MailCommon
 {
 /*!

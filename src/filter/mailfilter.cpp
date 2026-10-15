@@ -24,7 +24,6 @@ using MailCommon::FilterLog;
 #include <Akonadi/AgentManager>
 
 // other KDE headers
-#include <KConfig>
 #include <KConfigGroup>
 #include <KLocalizedString>
 #include <KMessageBox>

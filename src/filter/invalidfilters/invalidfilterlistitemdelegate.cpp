@@ -10,7 +10,6 @@
 #include <QIcon>
 #include <QLabel>
 #include <QPainter>
-#include <QPushButton>
 #include <QToolButton>
 
 using namespace MailCommon;
