@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-29 00:46+0000\n"
+"POT-Creation-Date: 2026-10-16 00:49+0000\n"
 "PO-Revision-Date: 2026-08-14 11:49+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: fr\n"
@@ -32,7 +32,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "Expiration"
 
-#: collectionpage/collectionexpirywidget.cpp:36
+#: collectionpage/collectionexpirywidget.cpp:35
 #, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
@@ -40,46 +40,46 @@ msgid_plural "%v days"
 msgstr[0] "jour %v"
 msgstr[1] "%v jours"
 
-#: collectionpage/collectionexpirywidget.cpp:37
-#: collectionpage/collectionexpirywidget.cpp:43
-#: collectionpage/collectionexpirywidget.cpp:55
+#: collectionpage/collectionexpirywidget.cpp:36
+#: collectionpage/collectionexpirywidget.cpp:42
+#: collectionpage/collectionexpirywidget.cpp:54
 #, kde-format
 msgid "Never"
 msgstr "Jamais"
 
-#: collectionpage/collectionexpirywidget.cpp:67
+#: collectionpage/collectionexpirywidget.cpp:66
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Enregistrer la configuration et faire expirer maintenant"
 
-#: collectionpage/collectionexpirywidget.cpp:68
+#: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Faire expirer les messages ayant une date non valable"
 
-#: collectionpage/collectionexpirywidget.cpp:74
+#: collectionpage/collectionexpirywidget.cpp:73
 #, kde-format
 msgid "Expire read messages after:"
 msgstr "Expiration des messages lus après :"
 
-#: collectionpage/collectionexpirywidget.cpp:77
+#: collectionpage/collectionexpirywidget.cpp:76
 #, kde-format
 msgid "Expire unread messages after:"
 msgstr "Expiration des messages non lus après :"
 
-#: collectionpage/collectionexpirywidget.cpp:91
+#: collectionpage/collectionexpirywidget.cpp:90
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "Déplacer les messages expirés vers :"
 
-#: collectionpage/collectionexpirywidget.cpp:102
+#: collectionpage/collectionexpirywidget.cpp:101
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "Supprimer définitivement les messages expirés"
 
-#: collectionpage/collectionexpirywidget.cpp:173
+#: collectionpage/collectionexpirywidget.cpp:172
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -88,13 +88,13 @@ msgstr ""
 "Veuillez sélectionner le dossier dans lequel placer les messages expirés.\n"
 "Si ceci n'est pas fait, les messages expirés seront effacés définitivement."
 
-#: collectionpage/collectionexpirywidget.cpp:174
+#: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Aucun dossier sélectionné"
 
-#: collectionpage/collectionexpirywidget.cpp:188
+#: collectionpage/collectionexpirywidget.cpp:187
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -105,30 +105,30 @@ msgstr ""
 "les messages expirés.\n"
 "Si ceci n'est pas fait, les messages expirés seront effacés définitivement."
 
-#: collectionpage/collectionexpirywidget.cpp:190
+#: collectionpage/collectionexpirywidget.cpp:189
 #, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "Dossier sélectionné incorrect"
 
-#: collectionpage/collectiongeneralpage.cpp:44
+#: collectionpage/collectiongeneralpage.cpp:43
 #, kde-format
 msgctxt "@title:tab General settings for a folder."
 msgid "General"
 msgstr "Général"
 
-#: collectionpage/collectiongeneralpage.cpp:65
+#: collectionpage/collectiongeneralpage.cpp:64
 #, kde-format
 msgctxt "@label:textbox Name of the folder."
 msgid "Folder &Name:"
 msgstr "&Nom du dossier :"
 
-#: collectionpage/collectiongeneralpage.cpp:110
+#: collectionpage/collectiongeneralpage.cpp:109
 #, kde-format
 msgid "Share unread state with all users"
 msgstr "Partager l'état « Non lu » avec tous les utilisateurs"
 
-#: collectionpage/collectiongeneralpage.cpp:113
+#: collectionpage/collectiongeneralpage.cpp:112
 #, kde-format
 msgid ""
 "If enabled, the unread state of messages in this folder will be the same for "
@@ -140,7 +140,7 @@ msgstr ""
 "elle est non sélectionnée (réglage par défaut), chaque utilisateur ayant "
 "accès à ce dossier aura son propre état « Non lu »."
 
-#: collectionpage/collectiongeneralpage.cpp:212
+#: collectionpage/collectiongeneralpage.cpp:211
 #, kde-format
 msgid ""
 "You have configured this folder to contain groupware information. That means "
@@ -241,78 +241,78 @@ msgstr ""
 msgid "&Sender identity:"
 msgstr "Identité de l'expédi&teur :"
 
-#: collectionpage/collectiontemplateswidget.cpp:20
+#: collectionpage/collectiontemplateswidget.cpp:21
 #, kde-format
 msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "&Utiliser des modèles personnalisés de messages de ce dossier"
 
-#: collectionpage/collectiontemplateswidget.cpp:42
+#: collectionpage/collectiontemplateswidget.cpp:43
 #, kde-format
 msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "&Copier les modèles globaux"
 
-#: collectionpage/collectionviewwidget.cpp:27
+#: collectionpage/collectionviewwidget.cpp:28
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "Utiliser l'agrégation par défaut des listes de messages :"
 
-#: collectionpage/collectionviewwidget.cpp:29
+#: collectionpage/collectionviewwidget.cpp:30
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "Utiliser le thème par défaut pour la liste des messages"
 
-#: collectionpage/collectionviewwidget.cpp:31
+#: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr "Préférer le format « HTML » au format texte"
 
-#: collectionpage/collectionviewwidget.cpp:32
+#: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr "Préférer le format texte au format « HTML »"
 
-#: collectionpage/collectionviewwidget.cpp:33
+#: collectionpage/collectionviewwidget.cpp:34
 #, kde-format
 msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr "Utiliser la configuration globale"
 
-#: collectionpage/collectionviewwidget.cpp:40
+#: collectionpage/collectionviewwidget.cpp:41
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
 msgstr ""
 "Afficher la colonne de l'expéditeur / destinataire dans la liste des messages"
 
-#: collectionpage/collectionviewwidget.cpp:43
+#: collectionpage/collectionviewwidget.cpp:44
 #, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
 msgstr "Par défaut"
 
-#: collectionpage/collectionviewwidget.cpp:44
+#: collectionpage/collectionviewwidget.cpp:45
 #, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
 msgstr "Expéditeur"
 
-#: collectionpage/collectionviewwidget.cpp:45
+#: collectionpage/collectionviewwidget.cpp:46
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
 msgstr "Destinataire"
 
-#: collectionpage/collectionviewwidget.cpp:46
+#: collectionpage/collectionviewwidget.cpp:47
 #, kde-format
 msgid "Sho&w column:"
 msgstr "Affic&her la colonne :"
 
-#: collectionpage/collectionviewwidget.cpp:77
+#: collectionpage/collectionviewwidget.cpp:78
 #, kde-format
 msgid "Message format:"
 msgstr "Format du message :"
@@ -457,17 +457,17 @@ msgctxt "@title:window"
 msgid "Select thunderbird filter files"
 msgstr "Sélectionner les fichiers de filtres pour Thunderbird"
 
-#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:33
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:35
 #, kde-format
 msgid " (default)"
 msgstr " (par défaut)"
 
-#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:118
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:120
 #, kde-format
 msgid "Thunderbird File (*.dat)"
 msgstr "Fichier pour Thunderbird (*.dat)"
 
-#: filter/filteractions/filteraction.cpp:132
+#: filter/filteractions/filteraction.cpp:133
 #, kde-format
 msgid "### \"action '%1' not supported\""
 msgstr "### « action « %1 » non pris en charge »"
@@ -493,62 +493,62 @@ msgstr "Le nom d'en-tête est manquant."
 msgid "The header value was missing."
 msgstr "La valeur d'en-tête est manquante."
 
-#: filter/filteractions/filteractionaddtag.cpp:26
+#: filter/filteractions/filteractionaddtag.cpp:27
 #, kde-format
 msgid "Add Tag"
 msgstr "Ajouter une étiquette"
 
-#: filter/filteractions/filteractionaddtag.cpp:147
+#: filter/filteractions/filteractionaddtag.cpp:148
 #, kde-format
 msgid "No tag selected."
 msgstr "Aucune étiquette sélectionnée."
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:33
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:36
 #, kde-format
 msgid "Add to Address Book"
 msgstr "Ajouter au carnet d'adresses"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:34
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:37
 #, kde-format
 msgctxt "Email sender"
 msgid "From"
 msgstr "De"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:35
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:38
 #, kde-format
 msgctxt "Email recipient"
 msgid "To"
 msgstr "À"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:36
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:39
 #: search/searchpatternedit.cpp:52
 #, kde-format
 msgid "CC"
 msgstr "CC"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:37
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:40
 #, kde-format
 msgid "BCC"
 msgstr "BCC"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:40
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:43
 #, kde-format
 msgid "KMail Filter"
 msgstr "Filtre pour KMail"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:117
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:120
 #, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
 msgstr "avec la catégorie"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:125
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:128
 #, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "dans le carnet d'adresses"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:135
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:138
 #, kde-format
 msgid ""
 "This defines the preferred address book.\n"
@@ -559,12 +559,12 @@ msgstr ""
 "S'il est non accessible, le filtre utilisera en remplacement le carnet "
 "d'adresses par défaut."
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:287
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:290
 #, kde-format
 msgid "Header type selected is unknown."
 msgstr "Le type d'en-tête sélectionné est inconnu."
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:293
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:296
 #, kde-format
 msgid "No addressbook selected."
 msgstr "Aucun carnet d'adresses sélectionné."
@@ -580,20 +580,20 @@ msgstr "Copier dans ce dossier"
 msgid "Folder destination was not defined."
 msgstr "Le dossier de destination n'est pas défini."
 
-#: filter/filteractions/filteractiondecrypt.cpp:27
-#: filter/filteractions/filteractiondecrypt.cpp:40
+#: filter/filteractions/filteractiondecrypt.cpp:25
+#: filter/filteractions/filteractiondecrypt.cpp:38
 #, kde-format
 msgid "Decrypt"
 msgstr "Déchiffrer"
 
-#: filter/filteractions/filteractiondecrypt.cpp:95
+#: filter/filteractions/filteractiondecrypt.cpp:93
 #, kde-format
 msgid "<b>Warning:</b> Decrypted emails may be uploaded to a server!"
 msgstr ""
 "<b>Avertissement :</b> les messages déchiffrés peuvent être envoyés sur un "
 "serveur !"
 
-#: filter/filteractions/filteractiondecrypt.cpp:97
+#: filter/filteractions/filteractiondecrypt.cpp:95
 #, kde-format
 msgid ""
 "<p>If the email folder that you are filtering into is connected to a remote "
@@ -613,28 +613,28 @@ msgstr "Effacer un message"
 msgid "Be careful, mails will be removed."
 msgstr "Faites attention. Des messages vont être effacés."
 
-#: filter/filteractions/filteractionencrypt.cpp:46
+#: filter/filteractions/filteractionencrypt.cpp:43
 #, kde-format
 msgid "Encrypt"
 msgstr "Chiffrer"
 
-#: filter/filteractions/filteractionencrypt.cpp:207
+#: filter/filteractions/filteractionencrypt.cpp:204
 #, kde-format
 msgid "No encryption key has been selected"
 msgstr "Aucune clé de chiffrement n'a été sélectionnée"
 
-#: filter/filteractions/filteractionencrypt.cpp:243
+#: filter/filteractions/filteractionencrypt.cpp:240
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
 msgstr "Re-chiffrer les messages chiffrés avec cette clé"
 
-#: filter/filteractions/filteractionencrypt.cpp:253
+#: filter/filteractions/filteractionencrypt.cpp:250
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
 msgstr ""
 "<b>Avertissement :</b> la clé secrète est nécessaire pour lire les courriels."
 
-#: filter/filteractions/filteractionencrypt.cpp:255
+#: filter/filteractions/filteractionencrypt.cpp:252
 #, kde-format
 msgid ""
 "<p>Once an email has been encrypted you will need a crypto setup with your "
@@ -658,51 +658,51 @@ msgstr "Exécuter une commande"
 msgid "Missing command."
 msgstr "Commande manquante."
 
-#: filter/filteractions/filteractionforward.cpp:38
+#: filter/filteractions/filteractionforward.cpp:37
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
 msgstr "Transmettre à"
 
-#: filter/filteractions/filteractionforward.cpp:94
+#: filter/filteractions/filteractionforward.cpp:93
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Le destinataire auquel le message sera transféré."
 
-#: filter/filteractions/filteractionforward.cpp:95
+#: filter/filteractions/filteractionforward.cpp:94
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
 msgstr "Le filtre fera suivre le message au destinataire indiqué ici."
 
-#: filter/filteractions/filteractionforward.cpp:102
-#: filter/filteractions/filteractionforward.cpp:201
+#: filter/filteractions/filteractionforward.cpp:101
+#: filter/filteractions/filteractionforward.cpp:200
 #, kde-format
 msgid "Default Template"
 msgstr "Modèle par défaut"
 
-#: filter/filteractions/filteractionforward.cpp:113
+#: filter/filteractions/filteractionforward.cpp:112
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "Le modèle utilisé pour le transfert"
 
-#: filter/filteractions/filteractionforward.cpp:114
+#: filter/filteractions/filteractionforward.cpp:113
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
 msgstr "Définir le modèle de transfert à utiliser avec ce filtre."
 
-#: filter/filteractions/filteractionforward.cpp:229
+#: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
 msgid "Forward to %1 with default template"
 msgstr "Transmettre à %1 avec le modèle par défaut"
 
-#: filter/filteractions/filteractionforward.cpp:231
+#: filter/filteractions/filteractionforward.cpp:230
 #, kde-format
 msgid "Forward to %1 with template %2"
 msgstr "Transmettre à %1 avec le modèle %2"
 
-#: filter/filteractions/filteractionforward.cpp:237
+#: filter/filteractions/filteractionforward.cpp:236
 #: filter/filteractions/filteractionreplyto.cpp:47
 #, kde-format
 msgid "Email address was not defined."
@@ -843,7 +843,7 @@ msgstr "Type factice non défini."
 msgid "Confirm Delivery"
 msgstr "Confirmer la réception"
 
-#: filter/filteractions/filteractionsetidentity.cpp:30
+#: filter/filteractions/filteractionsetidentity.cpp:29
 #, kde-format
 msgid "Set Identity To"
 msgstr "Définir l'identité à"
@@ -944,19 +944,19 @@ msgstr "État non spécifié"
 msgid "Status not defined."
 msgstr "État non défini."
 
-#: filter/filteractions/filteractionwidget.cpp:69
+#: filter/filteractions/filteractionwidget.cpp:70
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "Veuillez sélectionner une action."
 
-#: filter/filteractions/filteractionwithurl.cpp:22
+#: filter/filteractions/filteractionwithurl.cpp:23
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "Aide"
 
-#: filter/filteractions/filteractionwithurl.cpp:64
+#: filter/filteractions/filteractionwithurl.cpp:65
 #, kde-format
 msgid "You can get specific header when you use %{headername}."
 msgstr ""
@@ -996,12 +996,12 @@ msgstr "Convertir en script Sieve"
 msgid "Gmail filter %1"
 msgstr "Filtres de GMail %1"
 
-#: filter/filterimporter/filterimporterprocmail.cpp:54
+#: filter/filterimporter/filterimporterprocmail.cpp:55
 #, kde-format
 msgid "Procmail filter %1"
 msgstr "Filtres de Procmail %1"
 
-#: filter/filterimporterexporter.cpp:112
+#: filter/filterimporterexporter.cpp:111
 #, kde-format
 msgid ""
 "The following filters have not been saved because they were invalid (e.g. "
@@ -1010,50 +1010,50 @@ msgstr ""
 "Les filtres suivant n'ont pas été enregistrés car ils étaient non valables "
 "(c'est-à-dire, ne contenant aucune action ou règle de recherche)."
 
-#: filter/filterimporterexporter.cpp:138
+#: filter/filterimporterexporter.cpp:137
 #, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Importer des filtres pour KMail"
 
-#: filter/filterimporterexporter.cpp:146
+#: filter/filterimporterexporter.cpp:145
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Importer des filtres pour Evolution"
 
-#: filter/filterimporterexporter.cpp:150
+#: filter/filterimporterexporter.cpp:149
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Importer des filtres pour Sylpheed"
 
-#: filter/filterimporterexporter.cpp:154
+#: filter/filterimporterexporter.cpp:153
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Importer des filtres pour Procmail"
 
-#: filter/filterimporterexporter.cpp:158
+#: filter/filterimporterexporter.cpp:157
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Importer des filtres pour Balsa"
 
-#: filter/filterimporterexporter.cpp:162
+#: filter/filterimporterexporter.cpp:161
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Importer des filtres pour Claws"
 
-#: filter/filterimporterexporter.cpp:166
+#: filter/filterimporterexporter.cpp:165
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "Importer des filtres pour GMail"
 
-#: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
-#: filter/filterimporterexporter.cpp:236
+#: filter/filterimporterexporter.cpp:179 filter/filterimporterexporter.cpp:215
+#: filter/filterimporterexporter.cpp:235
 #, kde-format
 msgid ""
 "The selected file is not readable. Your file access permissions might be "
@@ -1062,49 +1062,49 @@ msgstr ""
 "Impossible de lire le fichier sélectionné. Vos droits d'accès sur le fichier "
 "peuvent être insuffisants."
 
-#: filter/filterimporterexporter.cpp:316
+#: filter/filterimporterexporter.cpp:315
 #, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "Exporter des filtres"
 
-#: filter/filterselectiondialog.cpp:26
+#: filter/filterselectiondialog.cpp:27
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Tout sélectionner"
 
-#: filter/filterselectiondialog.cpp:27
+#: filter/filterselectiondialog.cpp:28
 #, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "Tout dé-sélectionner"
 
-#: filter/filterselectiondialog.cpp:31
+#: filter/filterselectiondialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Sélectionner des filtres"
 
-#: filter/filterselectiondialog.cpp:42 filter/kmfilterlistbox.cpp:53
-#: folder/foldertreewidget.cpp:84
+#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:53
+#: folder/foldertreewidget.cpp:79
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "Rechercher"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:26
+#: filter/invalidfilters/invalidfilterdialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "Filtres non valables"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:37
+#: filter/invalidfilters/invalidfilterdialog.cpp:39
 #, kde-format
 msgid "Discard"
 msgstr "Rejeter"
 
-#: filter/invalidfilters/invalidfilterwidget.cpp:22
+#: filter/invalidfilters/invalidfilterwidget.cpp:23
 #, kde-format
 msgctxt "@label:textbox"
 msgid ""
@@ -1124,141 +1124,141 @@ msgstr "Nom du compte"
 msgid "Type"
 msgstr "Type"
 
-#: filter/kmfilterdialog.cpp:72
+#: filter/kmfilterdialog.cpp:70
 #, kde-format
 msgctxt "@title:window"
 msgid "Filter Rules"
 msgstr "Règles de filtrage"
 
-#: filter/kmfilterdialog.cpp:90
+#: filter/kmfilterdialog.cpp:88
 #, kde-format
 msgid "Import…"
 msgstr "Importer..."
 
-#: filter/kmfilterdialog.cpp:92
+#: filter/kmfilterdialog.cpp:90
 #, kde-format
 msgid "Export…"
 msgstr "Exporter..."
 
-#: filter/kmfilterdialog.cpp:94
+#: filter/kmfilterdialog.cpp:92
 #, kde-format
 msgid "Convert to…"
 msgstr "Convertir vers..."
 
-#: filter/kmfilterdialog.cpp:98
+#: filter/kmfilterdialog.cpp:96
 #, kde-format
 msgctxt "@action"
 msgid "KMail filters"
 msgstr "Filtres de KMail"
 
-#: filter/kmfilterdialog.cpp:102
+#: filter/kmfilterdialog.cpp:100
 #, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Filtres de Thunderbird"
 
-#: filter/kmfilterdialog.cpp:106
+#: filter/kmfilterdialog.cpp:104
 #, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Filtres de Evolution"
 
-#: filter/kmfilterdialog.cpp:110
+#: filter/kmfilterdialog.cpp:108
 #, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Filtres de Sylpheed"
 
-#: filter/kmfilterdialog.cpp:114
+#: filter/kmfilterdialog.cpp:112
 #, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Filtres de Procmail"
 
-#: filter/kmfilterdialog.cpp:118
+#: filter/kmfilterdialog.cpp:116
 #, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Filtres de Balsa"
 
-#: filter/kmfilterdialog.cpp:122
+#: filter/kmfilterdialog.cpp:120
 #, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Filtres de Claws Mail"
 
-#: filter/kmfilterdialog.cpp:126
+#: filter/kmfilterdialog.cpp:124
 #, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Filtres de Icedove Mail"
 
-#: filter/kmfilterdialog.cpp:132
+#: filter/kmfilterdialog.cpp:130
 #, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
 msgstr "Filtres de GMail"
 
-#: filter/kmfilterdialog.cpp:140
+#: filter/kmfilterdialog.cpp:138
 #, kde-format
 msgctxt "@action"
 msgid "Sieve script"
 msgstr "Script de Sieve"
 
-#: filter/kmfilterdialog.cpp:162
+#: filter/kmfilterdialog.cpp:160
 #, kde-format
 msgid "Available Filters"
 msgstr "Filtres disponibles"
 
-#: filter/kmfilterdialog.cpp:168
+#: filter/kmfilterdialog.cpp:166
 #, kde-format
 msgctxt "General mail filter settings."
 msgid "General"
 msgstr "Général"
 
-#: filter/kmfilterdialog.cpp:172
+#: filter/kmfilterdialog.cpp:170
 #, kde-format
 msgctxt "Advanced mail filter settings."
 msgid "Advanced"
 msgstr "Avancé"
 
-#: filter/kmfilterdialog.cpp:182
+#: filter/kmfilterdialog.cpp:180
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Actions de filtre :"
 
-#: filter/kmfilterdialog.cpp:193
+#: filter/kmfilterdialog.cpp:191
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Appliquer ce filtre aux messages entrants :"
 
-#: filter/kmfilterdialog.cpp:203
+#: filter/kmfilterdialog.cpp:201
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "Depuis tous les comptes"
 
-#: filter/kmfilterdialog.cpp:207
+#: filter/kmfilterdialog.cpp:205
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "Depuis tous les comptes excepté les comptes « IMAP » en ligne"
 
-#: filter/kmfilterdialog.cpp:211
+#: filter/kmfilterdialog.cpp:209
 #, kde-format
 msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "Uniquement à partir des comptes sélectionnés"
 
-#: filter/kmfilterdialog.cpp:219
+#: filter/kmfilterdialog.cpp:217
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "Appliquer ce filtre aux me&ssages envoyés"
 
-#: filter/kmfilterdialog.cpp:221
+#: filter/kmfilterdialog.cpp:219
 #, kde-format
 msgid ""
 "<p>The filter will be triggered <b>after</b> the message is sent and it will "
@@ -1271,13 +1271,13 @@ msgstr ""
 "destinataire doit aussi être modifiée, veuillez utiliser « Appliquer ce "
 "filtre <b>avant</b> l'envoi des messages ».</p>"
 
-#: filter/kmfilterdialog.cpp:227
+#: filter/kmfilterdialog.cpp:225
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "Appliquer ce &filtre avant l'envoi des messages"
 
-#: filter/kmfilterdialog.cpp:229
+#: filter/kmfilterdialog.cpp:227
 #, kde-format
 msgid ""
 "<p>The filter will be triggered <b>before</b> the message is sent and it "
@@ -1288,19 +1288,19 @@ msgstr ""
 "à la fois la copie locale et la copie envoyée du message.</p><p>Ceci est "
 "nécessaire si la copie du destinataire doit aussi être modifiée.</p>"
 
-#: filter/kmfilterdialog.cpp:234
+#: filter/kmfilterdialog.cpp:232
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "Appliquer ce filtre lors du &filtrage manuel"
 
-#: filter/kmfilterdialog.cpp:237
+#: filter/kmfilterdialog.cpp:235
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "Appliquer ce filtre sur les courriels entrants de tous les dossiers"
 
-#: filter/kmfilterdialog.cpp:239
+#: filter/kmfilterdialog.cpp:237
 #, kde-format
 msgid ""
 "<p>The filter will be applied on inbound emails from all folders belonging "
@@ -1314,60 +1314,60 @@ msgstr ""
 "nouveaux courriels on pu être déjà déplacés dans différents dossiers par des "
 "filtres côté serveur.</p>"
 
-#: filter/kmfilterdialog.cpp:245
+#: filter/kmfilterdialog.cpp:243
 #, kde-format
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "Si ce filtre &correspond, arrêter le processus ici"
 
-#: filter/kmfilterdialog.cpp:248
+#: filter/kmfilterdialog.cpp:246
 #, kde-format
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Ajouter ce filtre au menu « Appliquer les filtres »"
 
-#: filter/kmfilterdialog.cpp:266
+#: filter/kmfilterdialog.cpp:264
 #, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Ajouter en plus ce filtre à la barre d'outils"
 
-#: filter/kmfilterdialog.cpp:273
+#: filter/kmfilterdialog.cpp:271
 #, kde-format
 msgid "Shortcut:"
 msgstr "Raccourci :"
 
-#: filter/kmfilterdialog.cpp:279
+#: filter/kmfilterdialog.cpp:277
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Icône pour ce dossier :"
 
-#: filter/kmfilterdialog.cpp:287
+#: filter/kmfilterdialog.cpp:285
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Lancer le(s) filtre(s) sélectionné(s) sur : "
 
-#: filter/kmfilterdialog.cpp:293
+#: filter/kmfilterdialog.cpp:291
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Lancer maintenant"
 
-#: filter/kmfilterdialog.cpp:420
+#: filter/kmfilterdialog.cpp:418
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
 "Impossible d'appliquer ce filtre tant qu'aucun dossier n'est sélectionné."
 
-#: filter/kmfilterdialog.cpp:421
+#: filter/kmfilterdialog.cpp:419
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Aucun dossier sélectionné."
 
-#: filter/kmfilterdialog.cpp:428
+#: filter/kmfilterdialog.cpp:426
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1377,41 +1377,41 @@ msgstr ""
 "Certains filtres ont été modifiés mais n'ont pas encore été enregistrés. "
 "Vous devez enregistrer vos filtres avant de pouvoir les appliquer."
 
-#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filtres modifiés."
 
-#: filter/kmfilterdialog.cpp:437
+#: filter/kmfilterdialog.cpp:435
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr ""
 "Impossible d'appliquer un filtre tant qu'aucun filtre n'est sélectionné."
 
-#: filter/kmfilterdialog.cpp:438
+#: filter/kmfilterdialog.cpp:436
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Aucun filtre sélectionné."
 
-#: filter/kmfilterdialog.cpp:662
+#: filter/kmfilterdialog.cpp:660
 #, kde-format
 msgid "No filter was imported."
 msgstr "Aucun filtre n'a été importé."
 
-#: filter/kmfilterdialog.cpp:673
+#: filter/kmfilterdialog.cpp:671
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Filtres ayant été importés :"
 
-#: filter/kmfilterdialog.cpp:685
+#: filter/kmfilterdialog.cpp:683
 #, kde-format
 msgid "No filter found."
 msgstr "Aucun filtre n'a été trouvé."
 
-#: filter/kmfilterdialog.cpp:710
+#: filter/kmfilterdialog.cpp:708
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1421,20 +1421,20 @@ msgstr ""
 "Certains filtres ont été modifiés mais n'ont pas encore été enregistrés.<br> "
 "Vous devez enregistrer vos filtres avant de pouvoir les exporter."
 
-#: filter/kmfilterdialog.cpp:716
+#: filter/kmfilterdialog.cpp:714
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Impossible de convertir tous les filtres de KMail en scripts « Sieve » mais "
 "la tentative est possible : )"
 
-#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:715 filter/kmfilterdialog.cpp:731
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Convertir les filtres pour KMail en scripts de Sieve"
 
-#: filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:731
 #, kde-format
 msgid "No filters selected."
 msgstr "Aucun filtre sélectionné."
@@ -1657,27 +1657,27 @@ msgstr ""
 "Renommer le filtre « %1 » en :\n"
 "(laisser ce champ vide pour un nommage automatique)"
 
-#: filter/mailfilter.cpp:132
+#: filter/mailfilter.cpp:131
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>Application de l'action du filtre :</b> %1"
 
-#: filter/mailfilter.cpp:141
+#: filter/mailfilter.cpp:140
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "Une erreur critique est survenue. Le traitement s'arrête ici."
 
-#: filter/mailfilter.cpp:148
+#: filter/mailfilter.cpp:147
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "Un problème est apparu lors de l'application de cette action."
 
-#: filter/mailfilter.cpp:428
+#: filter/mailfilter.cpp:427
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>Trop d'actions de filtrage dans la règle de filtre <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:462
+#: filter/mailfilter.cpp:461
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1686,24 +1686,24 @@ msgstr ""
 "<qt>Action de filtre <b>%1</b> inconnue<br />dans la règle de filtre <b>%2</"
 "b>.<br />Elle sera ignorée.</qt>"
 
-#: filter/mailfilter.cpp:570
+#: filter/mailfilter.cpp:569
 #, kde-format
 msgid "Any action defined."
 msgstr "Toute action définie."
 
-#: filter/soundtestwidget.cpp:35 filter/soundtestwidget.cpp:117
+#: filter/soundtestwidget.cpp:37 filter/soundtestwidget.cpp:119
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "Lire"
 
-#: filter/soundtestwidget.cpp:64
+#: filter/soundtestwidget.cpp:66
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Sound File"
 msgstr "Choisir un fichier son"
 
-#: filter/soundtestwidget.cpp:114
+#: filter/soundtestwidget.cpp:116
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
@@ -1815,41 +1815,41 @@ msgstr "Dossiers locaux"
 msgid "Please select a folder"
 msgstr "Veuillez sélectionner un dossier"
 
-#: folder/folderselectiondialog.cpp:65
+#: folder/folderselectiondialog.cpp:64
 #, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "&Nouveau sous-dossier..."
 
-#: folder/folderselectiondialog.cpp:67
+#: folder/folderselectiondialog.cpp:66
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "Créer un nouveau sous-dossier sous le dossier actuellement sélectionné"
 
-#: folder/folderselectiondialog.cpp:126
+#: folder/folderselectiondialog.cpp:125
 #, kde-format
 msgid "&New Subfolder…"
 msgstr "&Nouveau sous-dossier..."
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:176
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Nouveau dossier"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:176
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "Nom"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:193
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Impossible de créer un dossier : %1"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:193
 #, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
@@ -1923,7 +1923,7 @@ msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Ne pas aller à"
 
-#: folder/foldertreewidget.cpp:78
+#: folder/foldertreewidget.cpp:73
 #, kde-format
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
@@ -1931,62 +1931,62 @@ msgstr ""
 "Vous pouvez commencer à effectuer la saisie pour filtrer la liste des "
 "dossiers."
 
-#: folder/foldertreewidget.cpp:322
+#: folder/foldertreewidget.cpp:317
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr ""
 "Vous pouvez commencer à effectuer la saisie pour filtrer la liste des "
 "dossiers."
 
-#: folder/foldertreewidget.cpp:322
+#: folder/foldertreewidget.cpp:317
 #, kde-format
 msgid "Path: (%1)"
 msgstr "Emplacement : (%1)"
 
-#: folder/foldertreewidgetproxymodel.cpp:242
+#: folder/foldertreewidgetproxymodel.cpp:240
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (Déconnecté)"
 
-#: folder/foldertreewidgetproxymodel.cpp:247
+#: folder/foldertreewidgetproxymodel.cpp:245
 #, kde-format
 msgctxt ""
 "%1 is the name of a mailbox, %2 is a percentage. Keep this string short!"
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (%2 % du quota atteint)"
 
-#: job/backupjob.cpp:95
+#: job/backupjob.cpp:97
 #, kde-format
 msgid "Unable to retrieve folder list."
 msgstr "Impossible d'obtenir la liste des dossiers."
 
-#: job/backupjob.cpp:122
+#: job/backupjob.cpp:124
 #, kde-format
 msgid "The operation was canceled by the user."
 msgstr "L'opération a été annulée par l'utilisateur."
 
-#: job/backupjob.cpp:152
+#: job/backupjob.cpp:154
 #, kde-format
 msgid "Failed to archive the folder '%1'."
 msgstr "Impossible d'archiver le dossier « %1 »."
 
-#: job/backupjob.cpp:156
+#: job/backupjob.cpp:158
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "Échec de l'enregistrement"
 
-#: job/backupjob.cpp:166
+#: job/backupjob.cpp:168
 #, kde-format
 msgid "Unable to finalize the archive file."
 msgstr "Impossible de finaliser le fichier archive."
 
-#: job/backupjob.cpp:171
+#: job/backupjob.cpp:173
 #, kde-format
 msgid "Archiving finished"
 msgstr "Archivage terminé"
 
-#: job/backupjob.cpp:182
+#: job/backupjob.cpp:184
 #, kde-format
 msgid ""
 "Archiving folder '%1' successfully completed. The archive was written to the "
@@ -1995,57 +1995,57 @@ msgstr ""
 "L'archivage du dossier « %1 » s'est terminé avec succès. L'archive a été "
 "enregistrée dans le fichier « %2 »."
 
-#: job/backupjob.cpp:188
+#: job/backupjob.cpp:190
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
 msgstr[0] "1 message de taille « %2 » a été archivé."
 msgstr[1] "%1 messages d'une taille totale de %2 ont été archivés."
 
-#: job/backupjob.cpp:192
+#: job/backupjob.cpp:194
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "Le fichier d'archivage est de taille %1."
 
-#: job/backupjob.cpp:194
+#: job/backupjob.cpp:196
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
 msgstr "Enregistrement terminé"
 
-#: job/backupjob.cpp:244
+#: job/backupjob.cpp:246
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "Impossible d'écrire un message dans le dossier d'archivage « %1 »."
 
-#: job/backupjob.cpp:268
+#: job/backupjob.cpp:270
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr "Le téléchargement d'un message dans le dossier %1 a échoué."
 
-#: job/backupjob.cpp:334
+#: job/backupjob.cpp:336
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "Dossier d'archivage %1"
 
-#: job/backupjob.cpp:359
+#: job/backupjob.cpp:361
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr ""
 "Impossible de créer la structure de dossier pour le dossier « %1 » dans le "
 "fichier d'archivage."
 
-#: job/backupjob.cpp:371
+#: job/backupjob.cpp:373
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "Impossible d'obtenir la liste des messages pour le dossier %1."
 
-#: job/backupjob.cpp:409
+#: job/backupjob.cpp:411
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "Impossible d'ouvrir l'archive en écriture."
 
-#: job/backupjob.cpp:413
+#: job/backupjob.cpp:415
 #, kde-format
 msgid "Archiving"
 msgstr "Archivage"
@@ -2067,21 +2067,21 @@ msgstr "La suppression d'anciens messages du dossier %1 a été annulée."
 msgid "Removing old messages from folder %1 failed."
 msgstr "La suppression d'un ancien message du dossier %1 a échoué."
 
-#: job/expirejob.cpp:157
+#: job/expirejob.cpp:153
 #, kde-format
 msgid "Removing 1 old message from folder %2…"
 msgid_plural "Removing %1 old messages from folder %2…"
 msgstr[0] "Suppression d'un ancien message du dossier %2..."
 msgstr[1] "Suppression de %1anciens messages du dossier %2..."
 
-#: job/expirejob.cpp:164
+#: job/expirejob.cpp:160
 #, kde-format
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr ""
 "Impossible de faire expirer les messages du dossier  %1 : le dossier de "
 "destination %2 est introuvable"
 
-#: job/expirejob.cpp:180
+#: job/expirejob.cpp:176
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
@@ -2110,21 +2110,21 @@ msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr ""
 "Le déplacement d'anciens messages du dossier %1 vers le dossier %2 a échoué."
 
-#: kernel/mailkernel.cpp:184 kernel/mailkernel.cpp:206
+#: kernel/mailkernel.cpp:185 kernel/mailkernel.cpp:207
 #, kde-format
 msgid "You do not have read/write permission to your inbox folder."
 msgstr ""
 "Vous ne disposez pas des droits de lecture / d'écriture sur votre dossier "
 "« Boite de réception »."
 
-#: kernel/mailkernel.cpp:235
+#: kernel/mailkernel.cpp:236
 #, kde-format
 msgid "The Email program encountered a fatal error and will terminate now"
 msgstr ""
 "Le client de messagerie a rencontré une erreur fatale et va s'arrêter "
 "maintenant"
 
-#: kernel/mailkernel.cpp:238
+#: kernel/mailkernel.cpp:239
 #, kde-format
 msgid ""
 "The Email program encountered a fatal error and will terminate now.\n"
@@ -2260,174 +2260,174 @@ msgstr "Faire correspondre pour tous les messages"
 msgid "Filter criteria:"
 msgstr "Critères de filtre :"
 
-#: search/searchrule/searchrule.cpp:185
+#: search/searchrule/searchrule.cpp:186
 #, kde-format
 msgid "equal"
 msgstr "égal à"
 
-#: search/searchrule/searchrule.cpp:188
+#: search/searchrule/searchrule.cpp:189
 #, kde-format
 msgid "not equal"
 msgstr "différent de"
 
-#: search/searchrule/searchrule.cpp:191
+#: search/searchrule/searchrule.cpp:192
 #, kde-format
 msgid "is greater"
 msgstr "est supérieur"
 
-#: search/searchrule/searchrule.cpp:194
+#: search/searchrule/searchrule.cpp:195
 #, kde-format
 msgid "is less or equal"
 msgstr "est inférieur ou égal"
 
-#: search/searchrule/searchrule.cpp:197
+#: search/searchrule/searchrule.cpp:198
 #, kde-format
 msgid "is less"
 msgstr "est inférieur"
 
-#: search/searchrule/searchrule.cpp:200
+#: search/searchrule/searchrule.cpp:201
 #, kde-format
 msgid "is greater or equal"
 msgstr "est supérieur ou égal"
 
-#: search/searchrule/searchrule.cpp:203
+#: search/searchrule/searchrule.cpp:204
 #, kde-format
 msgid "is in addressbook"
 msgstr "est dans le carnet d'adresses"
 
-#: search/searchrule/searchrule.cpp:206
+#: search/searchrule/searchrule.cpp:207
 #, kde-format
 msgid "is not in addressbook"
 msgstr "n'est pas dans le carnet d'adresses"
 
-#: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
+#: search/searchrule/searchrule.cpp:210 search/searchrule/searchrule.cpp:213
 #, kde-format
 msgid "is in category"
 msgstr "est dans la catégorie"
 
-#: search/searchrule/searchrule.cpp:215
-#: search/widgethandler/messagerulewidgethandler.cpp:28
-#: search/widgethandler/messagerulewidgethandler.cpp:145
+#: search/searchrule/searchrule.cpp:216
+#: search/widgethandler/messagerulewidgethandler.cpp:27
+#: search/widgethandler/messagerulewidgethandler.cpp:144
 #, kde-format
 msgid "has an attachment"
 msgstr "comporte une pièce jointe"
 
-#: search/searchrule/searchrule.cpp:218
+#: search/searchrule/searchrule.cpp:219
 #, kde-format
 msgid "has not an attachment"
 msgstr "ne comporte pas de pièce jointe"
 
-#: search/searchrule/searchrule.cpp:221
+#: search/searchrule/searchrule.cpp:222
 #, kde-format
 msgid "has an invitation"
 msgstr "a reçu une invitation"
 
-#: search/searchrule/searchrule.cpp:224
+#: search/searchrule/searchrule.cpp:225
 #, kde-format
 msgid "has not an invitation"
 msgstr "n'a pas reçu d'invitation"
 
-#: search/searchrule/searchrule.cpp:227
+#: search/searchrule/searchrule.cpp:228
 #, kde-format
 msgid "start with"
 msgstr "commence par"
 
-#: search/searchrule/searchrule.cpp:230
+#: search/searchrule/searchrule.cpp:231
 #, kde-format
 msgid "not start with"
 msgstr "ne commence pas par"
 
-#: search/searchrule/searchrule.cpp:233
+#: search/searchrule/searchrule.cpp:234
 #, kde-format
 msgid "end with"
 msgstr "se termine par"
 
-#: search/searchrule/searchrule.cpp:236
+#: search/searchrule/searchrule.cpp:237
 #, kde-format
 msgid "not end with"
 msgstr "ne se termine pas par"
 
-#: search/searchrule/searchrule.cpp:239
+#: search/searchrule/searchrule.cpp:240
 #, kde-format
 msgid "none"
 msgstr "aucun"
 
-#: search/searchrule/searchrule.cpp:242
-#: search/widgethandler/headersrulerwidgethandler.cpp:25
-#: search/widgethandler/messagerulewidgethandler.cpp:24
-#: search/widgethandler/tagrulewidgethandler.cpp:93
-#: search/widgethandler/textrulerwidgethandler.cpp:24
+#: search/searchrule/searchrule.cpp:243
+#: search/widgethandler/headersrulerwidgethandler.cpp:23
+#: search/widgethandler/messagerulewidgethandler.cpp:23
+#: search/widgethandler/tagrulewidgethandler.cpp:92
+#: search/widgethandler/textrulerwidgethandler.cpp:22
 #, kde-format
 msgid "contains"
 msgstr "contient"
 
-#: search/searchrule/searchrule.cpp:245
+#: search/searchrule/searchrule.cpp:246
 #, kde-format
 msgid "not contains"
 msgstr "ne contient pas"
 
-#: search/searchrule/searchrule.cpp:248
+#: search/searchrule/searchrule.cpp:249
 #, kde-format
 msgid "has regexp"
 msgstr "a « regexp »"
 
-#: search/searchrule/searchrule.cpp:251
+#: search/searchrule/searchrule.cpp:252
 #, kde-format
 msgid "not regexp"
 msgstr "n'a pas « regexp »"
 
-#: search/searchrule/searchrule.cpp:265
+#: search/searchrule/searchrule.cpp:266
 #, kde-format
 msgid "size equals not supported"
 msgstr "La condition « la taille est égale à » est non prise en charge"
 
-#: search/searchrule/searchrule.cpp:268
+#: search/searchrule/searchrule.cpp:269
 #, kde-format
 msgid "size not equals not supported"
 msgstr "La condition « la taille est différente de » est non prise en charge"
 
-#: search/searchrule/searchrule.cpp:301 search/searchrule/searchrule.cpp:409
-#: search/searchrule/searchrule.cpp:492
+#: search/searchrule/searchrule.cpp:302 search/searchrule/searchrule.cpp:410
+#: search/searchrule/searchrule.cpp:493
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "« %1 » n'est pas pris en charge avec la condition « %2 »"
 
-#: search/searchrule/searchrule.cpp:307
+#: search/searchrule/searchrule.cpp:308
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> non implémenté / pris en charge"
 
-#: search/searchrule/searchrule.cpp:310
+#: search/searchrule/searchrule.cpp:311
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<any header> non implémenté / pris en charge"
 
-#: search/searchrule/searchrule.cpp:313
+#: search/searchrule/searchrule.cpp:314
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<contents> non implémenté / pris en charge"
 
-#: search/searchrule/searchrule.cpp:316
+#: search/searchrule/searchrule.cpp:317
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<age in days> non implémenté / pris en charge"
 
-#: search/searchrule/searchrule.cpp:319
+#: search/searchrule/searchrule.cpp:320
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<date> non implémenté / pris en charge"
 
-#: search/searchrule/searchrule.cpp:322
+#: search/searchrule/searchrule.cpp:323
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<recipients> non implémenté / pris en charge"
 
-#: search/searchrule/searchrule.cpp:324
+#: search/searchrule/searchrule.cpp:325
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "<Tag> non pris en charge"
 
-#: search/searchrule/searchrule.cpp:327
+#: search/searchrule/searchrule.cpp:328
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<message> non implémenté / pris en charge"
@@ -2437,12 +2437,12 @@ msgstr "<message> non implémenté / pris en charge"
 msgid "Date is not valid."
 msgstr "Date non valable."
 
-#: search/searchrule/searchrulenumerical.cpp:137
+#: search/searchrule/searchrulenumerical.cpp:136
 #, kde-format
 msgid "Content is not a number."
 msgstr "Le contenu n'est pas un nombre."
 
-#: search/searchrule/searchrulestring.cpp:243
+#: search/searchrule/searchrulestring.cpp:241
 #, kde-format
 msgid "String is empty."
 msgstr "La chaine est vide."
@@ -2468,31 +2468,31 @@ msgstr "Pièces jointes"
 msgid "has attachment"
 msgstr "possède une pièce jointe"
 
-#: search/widgethandler/daterulewidgethandler.cpp:22
+#: search/widgethandler/daterulewidgethandler.cpp:21
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
 #: search/widgethandler/numericrulewidgethandler.cpp:21
 msgid "is equal to"
 msgstr "est égal à"
 
-#: search/widgethandler/daterulewidgethandler.cpp:23
+#: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:22
 #: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is not equal to"
 msgstr "est différent de"
 
-#: search/widgethandler/daterulewidgethandler.cpp:24
+#: search/widgethandler/daterulewidgethandler.cpp:23
 msgid "is after"
 msgstr "est supérieur"
 
-#: search/widgethandler/daterulewidgethandler.cpp:25
+#: search/widgethandler/daterulewidgethandler.cpp:24
 msgid "is before or equal to"
 msgstr "est inférieur ou égal à"
 
-#: search/widgethandler/daterulewidgethandler.cpp:26
+#: search/widgethandler/daterulewidgethandler.cpp:25
 msgid "is before"
 msgstr "est inférieur"
 
-#: search/widgethandler/daterulewidgethandler.cpp:27
+#: search/widgethandler/daterulewidgethandler.cpp:26
 msgid "is after or equal to"
 msgstr "est supérieur ou égal à"
 
@@ -2517,67 +2517,67 @@ msgstr "chiffré"
 msgid "is encrypted"
 msgstr "est chiffré"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:26
-#: search/widgethandler/messagerulewidgethandler.cpp:25
-#: search/widgethandler/tagrulewidgethandler.cpp:94
-#: search/widgethandler/textrulerwidgethandler.cpp:25
+#: search/widgethandler/headersrulerwidgethandler.cpp:24
+#: search/widgethandler/messagerulewidgethandler.cpp:24
+#: search/widgethandler/tagrulewidgethandler.cpp:93
+#: search/widgethandler/textrulerwidgethandler.cpp:23
 msgid "does not contain"
 msgstr "ne contient pas"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:27
-#: search/widgethandler/tagrulewidgethandler.cpp:95
-#: search/widgethandler/textrulerwidgethandler.cpp:26
+#: search/widgethandler/headersrulerwidgethandler.cpp:25
+#: search/widgethandler/tagrulewidgethandler.cpp:94
+#: search/widgethandler/textrulerwidgethandler.cpp:24
 msgid "equals"
 msgstr "est égal à"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:28
-#: search/widgethandler/tagrulewidgethandler.cpp:96
-#: search/widgethandler/textrulerwidgethandler.cpp:27
+#: search/widgethandler/headersrulerwidgethandler.cpp:26
+#: search/widgethandler/tagrulewidgethandler.cpp:95
+#: search/widgethandler/textrulerwidgethandler.cpp:25
 msgid "does not equal"
 msgstr "est différent de"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:29
-#: search/widgethandler/textrulerwidgethandler.cpp:28
+#: search/widgethandler/headersrulerwidgethandler.cpp:27
+#: search/widgethandler/textrulerwidgethandler.cpp:26
 msgid "starts with"
 msgstr "commence par"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:30
-#: search/widgethandler/textrulerwidgethandler.cpp:29
+#: search/widgethandler/headersrulerwidgethandler.cpp:28
+#: search/widgethandler/textrulerwidgethandler.cpp:27
 msgid "does not start with"
 msgstr "ne commence pas par"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:31
-#: search/widgethandler/textrulerwidgethandler.cpp:30
+#: search/widgethandler/headersrulerwidgethandler.cpp:29
+#: search/widgethandler/textrulerwidgethandler.cpp:28
 msgid "ends with"
 msgstr "se termine par"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:32
-#: search/widgethandler/textrulerwidgethandler.cpp:31
+#: search/widgethandler/headersrulerwidgethandler.cpp:30
+#: search/widgethandler/textrulerwidgethandler.cpp:29
 msgid "does not end with"
 msgstr "ne se termine pas par"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:34
-#: search/widgethandler/messagerulewidgethandler.cpp:26
-#: search/widgethandler/tagrulewidgethandler.cpp:97
-#: search/widgethandler/textrulerwidgethandler.cpp:33
+#: search/widgethandler/headersrulerwidgethandler.cpp:32
+#: search/widgethandler/messagerulewidgethandler.cpp:25
+#: search/widgethandler/tagrulewidgethandler.cpp:96
+#: search/widgethandler/textrulerwidgethandler.cpp:31
 msgid "matches regular expr."
 msgstr "correspond à l'expression rationnelle"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:35
-#: search/widgethandler/messagerulewidgethandler.cpp:27
-#: search/widgethandler/tagrulewidgethandler.cpp:98
-#: search/widgethandler/textrulerwidgethandler.cpp:34
+#: search/widgethandler/headersrulerwidgethandler.cpp:33
+#: search/widgethandler/messagerulewidgethandler.cpp:26
+#: search/widgethandler/tagrulewidgethandler.cpp:97
+#: search/widgethandler/textrulerwidgethandler.cpp:32
 msgid "does not match reg. expr."
 msgstr "ne correspond pas à l'expression rationnelle"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:36
-#: search/widgethandler/headersrulerwidgethandler.cpp:149
+#: search/widgethandler/headersrulerwidgethandler.cpp:34
+#: search/widgethandler/headersrulerwidgethandler.cpp:147
 #, kde-format
 msgid "is in address book"
 msgstr "est dans le carnet d'adresses"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:37
-#: search/widgethandler/headersrulerwidgethandler.cpp:151
+#: search/widgethandler/headersrulerwidgethandler.cpp:35
+#: search/widgethandler/headersrulerwidgethandler.cpp:149
 #, kde-format
 msgid "is not in address book"
 msgstr "n'est pas dans le carnet d'adresses"
@@ -2593,8 +2593,8 @@ msgstr "invitation"
 msgid "has invitation"
 msgstr "a reçu une invitation"
 
-#: search/widgethandler/messagerulewidgethandler.cpp:29
-#: search/widgethandler/messagerulewidgethandler.cpp:147
+#: search/widgethandler/messagerulewidgethandler.cpp:28
+#: search/widgethandler/messagerulewidgethandler.cpp:146
 #, kde-format
 msgid "has no attachment"
 msgstr "ne comporte aucune pièce jointe"
@@ -2726,13 +2726,13 @@ msgctxt "@title:window"
 msgid "Customize File Name Attachment"
 msgstr "Personnaliser le nom de la pièce jointe"
 
-#: snippets/snippetcustomfileattachmentnamewidget.cpp:29
+#: snippets/snippetcustomfileattachmentnamewidget.cpp:30
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "Nom de fichier :"
 
-#: snippets/snippetcustomfileattachmentnamewidget.cpp:47
+#: snippets/snippetcustomfileattachmentnamewidget.cpp:48
 #, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
@@ -2750,24 +2750,24 @@ msgstr "Sélectionner des pièces jointes"
 msgid "Do you want to delete selected attachment?"
 msgstr "Voulez-vous supprimer la pièce jointe sélectionnée ?"
 
-#: snippets/snippetsmanager.cpp:156
+#: snippets/snippetsmanager.cpp:154
 #, kde-format
 msgid "General"
 msgstr "Général"
 
-#: snippets/snippetsmanager.cpp:162
+#: snippets/snippetsmanager.cpp:160
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Snippet"
 msgstr "Ajouter un fragment"
 
-#: snippets/snippetsmanager.cpp:228
+#: snippets/snippetsmanager.cpp:226
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Snippet"
 msgstr "Modifier un fragment"
 
-#: snippets/snippetsmanager.cpp:288
+#: snippets/snippetsmanager.cpp:286
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2777,19 +2777,19 @@ msgstr ""
 "Voulez-vous vraiment supprimer le fragment « %1 » ?<nl/><warning>Il n'existe "
 "aucun moyen d'annuler la suppression.</warning>"
 
-#: snippets/snippetsmanager.cpp:307
+#: snippets/snippetsmanager.cpp:305
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Group"
 msgstr "Ajouter un groupe"
 
-#: snippets/snippetsmanager.cpp:332
+#: snippets/snippetsmanager.cpp:330
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Group"
 msgstr "Modifier un groupe"
 
-#: snippets/snippetsmanager.cpp:361
+#: snippets/snippetsmanager.cpp:359
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2800,55 +2800,55 @@ msgstr ""
 "fragments ?<nl/><warning>Il n'existe aucun moyen d'annuler la suppression.</"
 "warning>"
 
-#: snippets/snippetsmanager.cpp:371
+#: snippets/snippetsmanager.cpp:369
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to remove group \"%1\"?"
 msgstr "Voulez-vous vraiment supprimer le groupe « %1 » ?"
 
-#: snippets/snippetsmanager.cpp:439 snippets/snippetsmanager.cpp:468
+#: snippets/snippetsmanager.cpp:437 snippets/snippetsmanager.cpp:466
 #, kde-format
 msgctxt "@action"
 msgid "Snippet %1"
 msgstr "Fragment %1"
 
-#: snippets/snippetsmanager.cpp:561
+#: snippets/snippetsmanager.cpp:559
 #, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "Ajouter un fragment..."
 
-#: snippets/snippetsmanager.cpp:563
+#: snippets/snippetsmanager.cpp:561
 #, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "Modifier un fragment..."
 
-#: snippets/snippetsmanager.cpp:565
+#: snippets/snippetsmanager.cpp:563
 #, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "Supprimer un fragment"
 
-#: snippets/snippetsmanager.cpp:568
+#: snippets/snippetsmanager.cpp:566
 #, kde-format
 msgctxt "@action"
 msgid "Add Group…"
 msgstr "Ajouter un groupe..."
 
-#: snippets/snippetsmanager.cpp:570
+#: snippets/snippetsmanager.cpp:568
 #, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
 msgstr "Renommer un groupe..."
 
-#: snippets/snippetsmanager.cpp:572
+#: snippets/snippetsmanager.cpp:570
 #, kde-format
 msgctxt "@action"
 msgid "Remove Group"
 msgstr "Supprimer un groupe"
 
-#: snippets/snippetsmanager.cpp:575
+#: snippets/snippetsmanager.cpp:573
 #, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
@@ -2871,7 +2871,7 @@ msgctxt "@action:button"
 msgid "Update"
 msgstr "Mettre à jour"
 
-#: snippets/snippettreeview.cpp:65
+#: snippets/snippettreeview.cpp:64
 #, kde-format
 msgid "Text Snippets"
 msgstr "Fragments de texte"
@@ -2917,7 +2917,7 @@ msgstr ""
 "autre fragment, la valeur saisie à droite sera la valeur par défaut pour "
 "cette variable."
 
-#: snippets/snippetwidget.cpp:58
+#: snippets/snippetwidget.cpp:57
 #, kde-format
 msgid ""
 "Enter a keyword here to enable fast insertion of this snippet while writing "
@@ -2998,120 +2998,120 @@ msgstr "Mot clé :"
 msgid "Sho&rtcut:"
 msgstr "&Raccourci :"
 
-#: tag/addtagdialog.cpp:39
+#: tag/addtagdialog.cpp:40
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Tag"
 msgstr "Ajouter une étiquette"
 
-#: tag/addtagdialog.cpp:76
+#: tag/addtagdialog.cpp:77
 #, kde-format
 msgid "Tag %1 already exists"
 msgstr "L'étiquette %1 existe déjà"
 
-#: tag/tagwidget.cpp:63
+#: tag/tagwidget.cpp:62
 #, kde-format
 msgctxt "@label:listbox Name of the tag"
 msgid "Name:"
 msgstr "Nom :"
 
-#: tag/tagwidget.cpp:70
+#: tag/tagwidget.cpp:69
 #, kde-format
 msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "Modifier la couleur du te&xte :"
 
-#: tag/tagwidget.cpp:82
+#: tag/tagwidget.cpp:81
 #, kde-format
 msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "Modifier la couleur &d'arrière-plan :"
 
-#: tag/tagwidget.cpp:94
+#: tag/tagwidget.cpp:93
 #, kde-format
 msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "Modifier la &police :"
 
-#: tag/tagwidget.cpp:100
+#: tag/tagwidget.cpp:99
 #, kde-format
 msgctxt "@option:check"
 msgid "&Bold"
 msgstr "&Gras"
 
-#: tag/tagwidget.cpp:104
+#: tag/tagwidget.cpp:103
 #, kde-format
 msgctxt "@option:check"
 msgid "&Italics"
 msgstr "&Italique"
 
-#: tag/tagwidget.cpp:122
+#: tag/tagwidget.cpp:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "&Icône de l'étiquette de message :"
 
-#: tag/tagwidget.cpp:133
+#: tag/tagwidget.cpp:132
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "Racco&urci :"
 
-#: tag/tagwidget.cpp:144
+#: tag/tagwidget.cpp:143
 #, kde-format
 msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "Ac&tiver le bouton de la barre d'outils"
 
-#: widgets/favoritecollectionwidget.cpp:91
+#: widgets/favoritecollectionwidget.cpp:90
 #, kde-format
 msgid "Icon size"
 msgstr "Taille des icônes"
 
-#: widgets/favoritecollectionwidget.cpp:110
+#: widgets/favoritecollectionwidget.cpp:109
 #, kde-format
 msgid "Mode"
 msgstr "Mode"
 
-#: widgets/favoritecollectionwidget.cpp:114
+#: widgets/favoritecollectionwidget.cpp:113
 #, kde-format
 msgctxt "@action"
 msgid "List Mode"
 msgstr "Mode en liste"
 
-#: widgets/favoritecollectionwidget.cpp:124
+#: widgets/favoritecollectionwidget.cpp:123
 #, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "Mode en icônes"
 
-#: widgets/favoritecollectionwidget.cpp:235
+#: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
 msgid "Drop your favorite folders here…"
 msgstr "Déposez vos dossiers préférés ici..."
 
-#: widgets/redirectdialog.cpp:67
+#: widgets/redirectdialog.cpp:66
 #, kde-format
 msgid "Resend-To:"
 msgstr "Renvoi-à :"
 
-#: widgets/redirectdialog.cpp:70
+#: widgets/redirectdialog.cpp:69
 #, kde-format
 msgid "Resend-Cc:"
 msgstr "Renvoi - CC :"
 
-#: widgets/redirectdialog.cpp:73
+#: widgets/redirectdialog.cpp:72
 #, kde-format
 msgid "Resend-Bcc:"
 msgstr "Renvoi-Bcc :"
 
-#: widgets/redirectdialog.cpp:102
+#: widgets/redirectdialog.cpp:101
 #, kde-format
 msgctxt "@title:window"
 msgid "Redirect Message"
 msgstr "Re-diriger un message"
 
-#: widgets/redirectdialog.cpp:123
+#: widgets/redirectdialog.cpp:122
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
@@ -3119,34 +3119,34 @@ msgstr ""
 "Sélectionner les adresses des destinataires vers lesquelles effectuer la "
 "redirection :"
 
-#: widgets/redirectdialog.cpp:152
+#: widgets/redirectdialog.cpp:151
 #, kde-format
 msgid "Identity:"
 msgstr "Identité :"
 
-#: widgets/redirectdialog.cpp:156
+#: widgets/redirectdialog.cpp:155
 #, kde-format
 msgid "Transport:"
 msgstr "Transport :"
 
-#: widgets/redirectdialog.cpp:158
+#: widgets/redirectdialog.cpp:157
 #, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "&Envoyer maintenant"
 
-#: widgets/redirectdialog.cpp:159
+#: widgets/redirectdialog.cpp:158
 #, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "Envoyer u&ltérieurement"
 
-#: widgets/redirectdialog.cpp:207
+#: widgets/redirectdialog.cpp:206
 #, kde-format
 msgid "You cannot redirect the message without an address."
 msgstr "Il est impossible de re-diriger le message sans une adresse."
 
-#: widgets/redirectdialog.cpp:207
+#: widgets/redirectdialog.cpp:206
 #, kde-format
 msgctxt "@title:window"
 msgid "Empty Redirection Address"

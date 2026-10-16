@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-29 00:46+0000\n"
+"POT-Creation-Date: 2026-10-16 00:49+0000\n"
 "PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -25,7 +25,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "समाप्ति"
 
-#: collectionpage/collectionexpirywidget.cpp:36
+#: collectionpage/collectionexpirywidget.cpp:35
 #, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
@@ -33,46 +33,46 @@ msgid_plural "%v days"
 msgstr[0] "%v दिवस"
 msgstr[1] "%v दिवसाः"
 
-#: collectionpage/collectionexpirywidget.cpp:37
-#: collectionpage/collectionexpirywidget.cpp:43
-#: collectionpage/collectionexpirywidget.cpp:55
+#: collectionpage/collectionexpirywidget.cpp:36
+#: collectionpage/collectionexpirywidget.cpp:42
+#: collectionpage/collectionexpirywidget.cpp:54
 #, kde-format
 msgid "Never"
 msgstr "कदापि न"
 
-#: collectionpage/collectionexpirywidget.cpp:67
+#: collectionpage/collectionexpirywidget.cpp:66
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "सेटिंग्स् रक्षन्तु अधुना समाप्तं कुर्वन्तु"
 
-#: collectionpage/collectionexpirywidget.cpp:68
+#: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "अमान्यतिथियुक्तान् सन्देशान् समाप्तं कुर्वन्तु"
 
-#: collectionpage/collectionexpirywidget.cpp:74
+#: collectionpage/collectionexpirywidget.cpp:73
 #, kde-format
 msgid "Expire read messages after:"
 msgstr "ततः परं पठितसन्देशानां अवधिः समाप्तः भवति:"
 
-#: collectionpage/collectionexpirywidget.cpp:77
+#: collectionpage/collectionexpirywidget.cpp:76
 #, kde-format
 msgid "Expire unread messages after:"
 msgstr "अपठितसन्देशानां अवधिः समाप्तं कुर्वन्तु:"
 
-#: collectionpage/collectionexpirywidget.cpp:91
+#: collectionpage/collectionexpirywidget.cpp:90
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "अवधिसमाप्तसन्देशान् अत्र स्थानान्तरयन्तु:"
 
-#: collectionpage/collectionexpirywidget.cpp:102
+#: collectionpage/collectionexpirywidget.cpp:101
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "अवधिसमाप्तसन्देशान् स्थायिरूपेण विलोपयन्तु"
 
-#: collectionpage/collectionexpirywidget.cpp:173
+#: collectionpage/collectionexpirywidget.cpp:172
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -81,13 +81,13 @@ msgstr ""
 "कृपया सन्देशानां अवधिः समाप्तुं पुटं चिनोतु ।\n"
 "यदि एतत् न क्रियते तर्हि अवधिः समाप्ताः सन्देशाः स्थायिरूपेण विलोपिताः भविष्यन्ति ।"
 
-#: collectionpage/collectionexpirywidget.cpp:174
+#: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "कोऽपि पुटः चयनितः नास्ति"
 
-#: collectionpage/collectionexpirywidget.cpp:188
+#: collectionpage/collectionexpirywidget.cpp:187
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -97,30 +97,30 @@ msgstr ""
 "कृपया सन्देशानां अवधिः समाप्तुं वर्तमानपुटात् भिन्नं पुटं चिनोतु ।\n"
 "यदि एतत् न क्रियते तर्हि अवधिः समाप्ताः सन्देशाः स्थायिरूपेण विलोपिताः भविष्यन्ति ।"
 
-#: collectionpage/collectionexpirywidget.cpp:190
+#: collectionpage/collectionexpirywidget.cpp:189
 #, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
 msgstr "गलत समुच्चय चयनितम्"
 
-#: collectionpage/collectiongeneralpage.cpp:44
+#: collectionpage/collectiongeneralpage.cpp:43
 #, kde-format
 msgctxt "@title:tab General settings for a folder."
 msgid "General"
 msgstr "सामान्य"
 
-#: collectionpage/collectiongeneralpage.cpp:65
+#: collectionpage/collectiongeneralpage.cpp:64
 #, kde-format
 msgctxt "@label:textbox Name of the folder."
 msgid "Folder &Name:"
 msgstr "पुटम् &नाम: ."
 
-#: collectionpage/collectiongeneralpage.cpp:110
+#: collectionpage/collectiongeneralpage.cpp:109
 #, kde-format
 msgid "Share unread state with all users"
 msgstr "अपठितस्थितिः सर्वैः उपयोक्तृभिः सह साझां कुर्वन्तु"
 
-#: collectionpage/collectiongeneralpage.cpp:113
+#: collectionpage/collectiongeneralpage.cpp:112
 #, kde-format
 msgid ""
 "If enabled, the unread state of messages in this folder will be the same for "
@@ -131,7 +131,7 @@ msgstr ""
 "भविष्यति येषां प्रवेशः अस्मिन् पुटे भवति । यदि अक्षमम् (पूर्वनिर्धारितं) तर्हि अस्मिन् पुटे प्रवेशं "
 "विद्यमानस्य प्रत्येकस्य उपयोक्तुः स्वकीया अपठिता अवस्था भवति ।"
 
-#: collectionpage/collectiongeneralpage.cpp:212
+#: collectionpage/collectiongeneralpage.cpp:211
 #, kde-format
 msgid ""
 "You have configured this folder to contain groupware information. That means "
@@ -221,77 +221,77 @@ msgstr ""
 msgid "&Sender identity:"
 msgstr "&प्रेषकपरिचयः :"
 
-#: collectionpage/collectiontemplateswidget.cpp:20
+#: collectionpage/collectiontemplateswidget.cpp:21
 #, kde-format
 msgctxt "@option:check"
 msgid "&Use custom message templates in this folder"
 msgstr "&अस्मिन् पुटे कस्टम् सन्देश टेम्पलेट् उपयुज्यताम्"
 
-#: collectionpage/collectiontemplateswidget.cpp:42
+#: collectionpage/collectiontemplateswidget.cpp:43
 #, kde-format
 msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "&वैश्विक टेम्पलेट्स प्रतिलिपि"
 
-#: collectionpage/collectionviewwidget.cpp:27
+#: collectionpage/collectionviewwidget.cpp:28
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "पूर्वनिर्धारितसन्देशसूचीसङ्ग्रहस्य उपयोगं कुर्वन्तु:"
 
-#: collectionpage/collectionviewwidget.cpp:29
+#: collectionpage/collectionviewwidget.cpp:30
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "पूर्वनिर्धारितसन्देशसूचीविषयस्य उपयोगं कुर्वन्तु"
 
-#: collectionpage/collectionviewwidget.cpp:31
+#: collectionpage/collectionviewwidget.cpp:32
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr "पाठस्य अपेक्षया HTML इत्येतत् प्राधान्यं ददातु"
 
-#: collectionpage/collectionviewwidget.cpp:32
+#: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr "HTML इत्यस्मात् पाठं प्राधान्यं ददातु"
 
-#: collectionpage/collectionviewwidget.cpp:33
+#: collectionpage/collectionviewwidget.cpp:34
 #, kde-format
 msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr "वैश्विकसेटिंग्स् इत्यस्य उपयोगं कुर्वन्तु"
 
-#: collectionpage/collectionviewwidget.cpp:40
+#: collectionpage/collectionviewwidget.cpp:41
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
 msgstr "सन्देशसूचौ प्रेषकः/ग्राहकः स्तम्भं दर्शयतु"
 
-#: collectionpage/collectionviewwidget.cpp:43
+#: collectionpage/collectionviewwidget.cpp:44
 #, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
 msgstr "मूलभूतम्‌"
 
-#: collectionpage/collectionviewwidget.cpp:44
+#: collectionpage/collectionviewwidget.cpp:45
 #, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
 msgstr "प्रेषकः"
 
-#: collectionpage/collectionviewwidget.cpp:45
+#: collectionpage/collectionviewwidget.cpp:46
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
 msgstr "ग्राहकः"
 
-#: collectionpage/collectionviewwidget.cpp:46
+#: collectionpage/collectionviewwidget.cpp:47
 #, kde-format
 msgid "Sho&w column:"
 msgstr "शो&व स्तम्भः ."
 
-#: collectionpage/collectionviewwidget.cpp:77
+#: collectionpage/collectionviewwidget.cpp:78
 #, kde-format
 msgid "Message format:"
 msgstr "सन्देशस्वरूपम् :"
@@ -427,17 +427,17 @@ msgctxt "@title:window"
 msgid "Select thunderbird filter files"
 msgstr "thunderbird फ़िल्टर सञ्चिकाः चिनोतु"
 
-#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:33
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:35
 #, kde-format
 msgid " (default)"
 msgstr " (मूलभूतम्‌)"
 
-#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:118
+#: filter/dialog/selectthunderbirdfilterfileswidget.cpp:120
 #, kde-format
 msgid "Thunderbird File (*.dat)"
 msgstr "वज्रपक्षी सञ्चिका (*.dat)"
 
-#: filter/filteractions/filteraction.cpp:132
+#: filter/filteractions/filteraction.cpp:133
 #, kde-format
 msgid "### \"action '%1' not supported\""
 msgstr "### \"क्रिया '%1' समर्थिता नास्ति\"।"
@@ -463,62 +463,62 @@ msgstr "शीर्षकनाम लुप्तम् आसीत् ।"
 msgid "The header value was missing."
 msgstr "शीर्षकमूल्यं लुप्तम् आसीत् ।"
 
-#: filter/filteractions/filteractionaddtag.cpp:26
+#: filter/filteractions/filteractionaddtag.cpp:27
 #, kde-format
 msgid "Add Tag"
 msgstr "Add Tag"
 
-#: filter/filteractions/filteractionaddtag.cpp:147
+#: filter/filteractions/filteractionaddtag.cpp:148
 #, kde-format
 msgid "No tag selected."
 msgstr "कोऽपि टैग् चयनितः नास्ति।"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:33
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:36
 #, kde-format
 msgid "Add to Address Book"
 msgstr "पतापुस्तके योजयतु"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:34
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:37
 #, kde-format
 msgctxt "Email sender"
 msgid "From"
 msgstr "इत्यस्मात्‌"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:35
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:38
 #, kde-format
 msgctxt "Email recipient"
 msgid "To"
 msgstr "इत्यस्मै"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:36
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:39
 #: search/searchpatternedit.cpp:52
 #, kde-format
 msgid "CC"
 msgstr "सीसी"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:37
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:40
 #, kde-format
 msgid "BCC"
 msgstr "बी.सी.सी"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:40
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:43
 #, kde-format
 msgid "KMail Filter"
 msgstr "KMail Filter इति"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:117
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:120
 #, kde-format
 msgctxt "@label:textbox"
 msgid "with category"
 msgstr "वर्गेण सह"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:125
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:128
 #, kde-format
 msgctxt "@label:textbox"
 msgid "in address book"
 msgstr "सम्बोधनपुस्तके"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:135
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:138
 #, kde-format
 msgid ""
 "This defines the preferred address book.\n"
@@ -528,12 +528,12 @@ msgstr ""
 "एतेन प्राधान्यं सम्बोधनपुस्तकं परिभाषितं भवति ।\n"
 "यदि एतत् सुलभं नास्ति तर्हि फ़िल्टर पूर्वनिर्धारित-सङ्केतपुस्तके पुनः पतति ।"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:287
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:290
 #, kde-format
 msgid "Header type selected is unknown."
 msgstr "चयनितः शीर्षकप्रकारः अज्ञातः अस्ति ।"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:293
+#: filter/filteractions/filteractionaddtoaddressbook.cpp:296
 #, kde-format
 msgid "No addressbook selected."
 msgstr "न कोऽपि पतापुस्तिका चयनिता।"
@@ -549,18 +549,18 @@ msgstr "Copy Into Folder इति"
 msgid "Folder destination was not defined."
 msgstr "पुटस्य गन्तव्यं परिभाषितं नासीत् ।"
 
-#: filter/filteractions/filteractiondecrypt.cpp:27
-#: filter/filteractions/filteractiondecrypt.cpp:40
+#: filter/filteractions/filteractiondecrypt.cpp:25
+#: filter/filteractions/filteractiondecrypt.cpp:38
 #, kde-format
 msgid "Decrypt"
 msgstr "विच्छेदनं कुर्वन्तु"
 
-#: filter/filteractions/filteractiondecrypt.cpp:95
+#: filter/filteractions/filteractiondecrypt.cpp:93
 #, kde-format
 msgid "<b>Warning:</b> Decrypted emails may be uploaded to a server!"
 msgstr "<b>चेतावनी:</b> विगुप्त-ईमेल-पत्राणि सर्वरे अपलोड् कर्तुं शक्यन्ते!"
 
-#: filter/filteractions/filteractiondecrypt.cpp:97
+#: filter/filteractions/filteractiondecrypt.cpp:95
 #, kde-format
 msgid ""
 "<p>If the email folder that you are filtering into is connected to a remote "
@@ -579,27 +579,27 @@ msgstr "सन्देशं विलोपयन्तु"
 msgid "Be careful, mails will be removed."
 msgstr "सावधानाः भवन्तु, मेल-पत्राणि निष्कासितानि भविष्यन्ति।"
 
-#: filter/filteractions/filteractionencrypt.cpp:46
+#: filter/filteractions/filteractionencrypt.cpp:43
 #, kde-format
 msgid "Encrypt"
 msgstr "एन्क्रिप्ट् कुर्वन्तु"
 
-#: filter/filteractions/filteractionencrypt.cpp:207
+#: filter/filteractions/filteractionencrypt.cpp:204
 #, kde-format
 msgid "No encryption key has been selected"
 msgstr "कोऽपि एन्क्रिप्शन कीलः न चयनितः"
 
-#: filter/filteractions/filteractionencrypt.cpp:243
+#: filter/filteractions/filteractionencrypt.cpp:240
 #, kde-format
 msgid "Re-encrypt encrypted emails with this key"
 msgstr "एतेन कुञ्जिकायाः सह एन्क्रिप्टेड् ईमेल-पत्राणि पुनः एन्क्रिप्ट् कुर्वन्तु"
 
-#: filter/filteractions/filteractionencrypt.cpp:253
+#: filter/filteractions/filteractionencrypt.cpp:250
 #, kde-format
 msgid "<b>Warning:</b> Seckey necessary to read emails."
 msgstr "<b>चेतावनी :</b> ईमेल पठितुं सेक्की आवश्यकम्।"
 
-#: filter/filteractions/filteractionencrypt.cpp:255
+#: filter/filteractions/filteractionencrypt.cpp:252
 #, kde-format
 msgid ""
 "<p>Once an email has been encrypted you will need a crypto setup with your "
@@ -622,51 +622,51 @@ msgstr "Command निष्पादयन्तु"
 msgid "Missing command."
 msgstr "अनुपलब्धः आदेशः।"
 
-#: filter/filteractions/filteractionforward.cpp:38
+#: filter/filteractions/filteractionforward.cpp:37
 #, kde-format
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
 msgstr "अग्रे To"
 
-#: filter/filteractions/filteractionforward.cpp:94
+#: filter/filteractions/filteractionforward.cpp:93
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "यस्य सम्बोधकस्य समीपं सन्देशः अग्रे प्रेषितः भविष्यति।"
 
-#: filter/filteractions/filteractionforward.cpp:95
+#: filter/filteractions/filteractionforward.cpp:94
 #, kde-format
 msgid "The filter will forward the message to the addressee entered here."
 msgstr "अत्र प्रविष्टस्य सम्बोधकस्य कृते फ़िल्टरः सन्देशं अग्रे प्रेषयिष्यति ।"
 
-#: filter/filteractions/filteractionforward.cpp:102
-#: filter/filteractions/filteractionforward.cpp:201
+#: filter/filteractions/filteractionforward.cpp:101
+#: filter/filteractions/filteractionforward.cpp:200
 #, kde-format
 msgid "Default Template"
 msgstr "पूर्वनिर्धारित टेम्पलेट"
 
-#: filter/filteractions/filteractionforward.cpp:113
+#: filter/filteractions/filteractionforward.cpp:112
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The template used when forwarding"
 msgstr "अग्रे प्रेषणकाले प्रयुक्तः टेम्पलेट्"
 
-#: filter/filteractions/filteractionforward.cpp:114
+#: filter/filteractions/filteractionforward.cpp:113
 #, kde-format
 msgid "Set the forwarding template that will be used with this filter."
 msgstr "अस्मिन् फ़िल्टरेन सह उपयुज्यमानं अग्रे प्रेषणसारूप्यम् सेट् कुर्वन्तु ।"
 
-#: filter/filteractions/filteractionforward.cpp:229
+#: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
 msgid "Forward to %1 with default template"
 msgstr "पूर्वनिर्धारितसाचायाः सह %1 प्रति अग्रे प्रेषयन्तु"
 
-#: filter/filteractions/filteractionforward.cpp:231
+#: filter/filteractions/filteractionforward.cpp:230
 #, kde-format
 msgid "Forward to %1 with template %2"
 msgstr "%2 टेम्पलेट् सह %1 प्रति अग्रे प्रेषयन्तु"
 
-#: filter/filteractions/filteractionforward.cpp:237
+#: filter/filteractions/filteractionforward.cpp:236
 #: filter/filteractions/filteractionreplyto.cpp:47
 #, kde-format
 msgid "Email address was not defined."
@@ -807,7 +807,7 @@ msgstr "नकली प्रकार अपरिभाषित।"
 msgid "Confirm Delivery"
 msgstr "प्रसवस्य पुष्टिं कुर्वन्तु"
 
-#: filter/filteractions/filteractionsetidentity.cpp:30
+#: filter/filteractions/filteractionsetidentity.cpp:29
 #, kde-format
 msgid "Set Identity To"
 msgstr "Identity To इति सेट् कुर्वन्तु"
@@ -908,19 +908,19 @@ msgstr "अनिर्मित स्थितिः"
 msgid "Status not defined."
 msgstr "स्थितिः न परिभाषिता।"
 
-#: filter/filteractions/filteractionwidget.cpp:69
+#: filter/filteractions/filteractionwidget.cpp:70
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Please select an action."
 msgstr "कृपया कञ्चन क्रियां चिनुत।"
 
-#: filter/filteractions/filteractionwithurl.cpp:22
+#: filter/filteractions/filteractionwithurl.cpp:23
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Help"
 msgstr "साहाय्यम्‌"
 
-#: filter/filteractions/filteractionwithurl.cpp:64
+#: filter/filteractions/filteractionwithurl.cpp:65
 #, kde-format
 msgid "You can get specific header when you use %{headername}."
 msgstr "%{headername} इत्यस्य उपयोगं कुर्वन् विशिष्टं शीर्षकं प्राप्तुं शक्नुवन्ति ।"
@@ -958,12 +958,12 @@ msgstr "Script Sieve इत्यत्र परिवर्तयन्तु"
 msgid "Gmail filter %1"
 msgstr "जीमेल फ़िल्टर %1"
 
-#: filter/filterimporter/filterimporterprocmail.cpp:54
+#: filter/filterimporter/filterimporterprocmail.cpp:55
 #, kde-format
 msgid "Procmail filter %1"
 msgstr "Procmail फ़िल्टर %1"
 
-#: filter/filterimporterexporter.cpp:112
+#: filter/filterimporterexporter.cpp:111
 #, kde-format
 msgid ""
 "The following filters have not been saved because they were invalid (e.g. "
@@ -972,99 +972,99 @@ msgstr ""
 "निम्नलिखित-छिद्राणि अमान्यत्वात् (उदा. न क्रियाः अथवा अन्वेषणनियमाः न सन्ति) इति "
 "कारणेन न रक्षिताः ।"
 
-#: filter/filterimporterexporter.cpp:138
+#: filter/filterimporterexporter.cpp:137
 #, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "KMail Filters आयात करें"
 
-#: filter/filterimporterexporter.cpp:146
+#: filter/filterimporterexporter.cpp:145
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "विकास फ़िल्टर आयात करें"
 
-#: filter/filterimporterexporter.cpp:150
+#: filter/filterimporterexporter.cpp:149
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "सिल्फीड् फ़िल्टर आयात करें"
 
-#: filter/filterimporterexporter.cpp:154
+#: filter/filterimporterexporter.cpp:153
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Procmail Filters आयात करें"
 
-#: filter/filterimporterexporter.cpp:158
+#: filter/filterimporterexporter.cpp:157
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Balsa Filters आयात करें"
 
-#: filter/filterimporterexporter.cpp:162
+#: filter/filterimporterexporter.cpp:161
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "पंजा मेल फ़िल्टर आयात करें"
 
-#: filter/filterimporterexporter.cpp:166
+#: filter/filterimporterexporter.cpp:165
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "जीमेल फ़िल्टर आयात करें"
 
-#: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
-#: filter/filterimporterexporter.cpp:236
+#: filter/filterimporterexporter.cpp:179 filter/filterimporterexporter.cpp:215
+#: filter/filterimporterexporter.cpp:235
 #, kde-format
 msgid ""
 "The selected file is not readable. Your file access permissions might be "
 "insufficient."
 msgstr "चयनिता सञ्चिका पठनीया नास्ति । भवतः सञ्चिकाप्रवेशस्य अनुमतिः अपर्याप्तः भवेत् ।"
 
-#: filter/filterimporterexporter.cpp:316
+#: filter/filterimporterexporter.cpp:315
 #, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
 msgstr "निर्यात फ़िल्टर"
 
-#: filter/filterselectiondialog.cpp:26
+#: filter/filterselectiondialog.cpp:27
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "All इति चिनोतु"
 
-#: filter/filterselectiondialog.cpp:27
+#: filter/filterselectiondialog.cpp:28
 #, kde-format
 msgctxt "@action:button"
 msgid "Unselect All"
 msgstr "All अचयनं कुर्वन्तु"
 
-#: filter/filterselectiondialog.cpp:31
+#: filter/filterselectiondialog.cpp:32
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Filters इति चिनोतु"
 
-#: filter/filterselectiondialog.cpp:42 filter/kmfilterlistbox.cpp:53
-#: folder/foldertreewidget.cpp:84
+#: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:53
+#: folder/foldertreewidget.cpp:79
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "अन्वेषण"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:26
+#: filter/invalidfilters/invalidfilterdialog.cpp:28
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Filters"
 msgstr "अमान्य फ़िल्टर"
 
-#: filter/invalidfilters/invalidfilterdialog.cpp:37
+#: filter/invalidfilters/invalidfilterdialog.cpp:39
 #, kde-format
 msgid "Discard"
 msgstr "तनूकृ"
 
-#: filter/invalidfilters/invalidfilterwidget.cpp:22
+#: filter/invalidfilters/invalidfilterwidget.cpp:23
 #, kde-format
 msgctxt "@label:textbox"
 msgid ""
@@ -1084,141 +1084,141 @@ msgstr "खाता नाम"
 msgid "Type"
 msgstr "प्रकारः"
 
-#: filter/kmfilterdialog.cpp:72
+#: filter/kmfilterdialog.cpp:70
 #, kde-format
 msgctxt "@title:window"
 msgid "Filter Rules"
 msgstr "फ़िल्टर नियम"
 
-#: filter/kmfilterdialog.cpp:90
+#: filter/kmfilterdialog.cpp:88
 #, kde-format
 msgid "Import…"
 msgstr "आयात…"
 
-#: filter/kmfilterdialog.cpp:92
+#: filter/kmfilterdialog.cpp:90
 #, kde-format
 msgid "Export…"
 msgstr "निर्यात…"
 
-#: filter/kmfilterdialog.cpp:94
+#: filter/kmfilterdialog.cpp:92
 #, kde-format
 msgid "Convert to…"
 msgstr "परिवर्तयन्तु..."
 
-#: filter/kmfilterdialog.cpp:98
+#: filter/kmfilterdialog.cpp:96
 #, kde-format
 msgctxt "@action"
 msgid "KMail filters"
 msgstr "KMail फ़िल्टर"
 
-#: filter/kmfilterdialog.cpp:102
+#: filter/kmfilterdialog.cpp:100
 #, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "वज्रपक्षी फ़िल्टर"
 
-#: filter/kmfilterdialog.cpp:106
+#: filter/kmfilterdialog.cpp:104
 #, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
 msgstr "विकासः छानयति"
 
-#: filter/kmfilterdialog.cpp:110
+#: filter/kmfilterdialog.cpp:108
 #, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "सिल्फीड छानक"
 
-#: filter/kmfilterdialog.cpp:114
+#: filter/kmfilterdialog.cpp:112
 #, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Procmail फ़िल्टर"
 
-#: filter/kmfilterdialog.cpp:118
+#: filter/kmfilterdialog.cpp:116
 #, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
 msgstr "बालसा फ़िल्टर"
 
-#: filter/kmfilterdialog.cpp:122
+#: filter/kmfilterdialog.cpp:120
 #, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "नखाः मेल फ़िल्टर"
 
-#: filter/kmfilterdialog.cpp:126
+#: filter/kmfilterdialog.cpp:124
 #, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Icedove Mail फ़िल्टर"
 
-#: filter/kmfilterdialog.cpp:132
+#: filter/kmfilterdialog.cpp:130
 #, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
 msgstr "जीमेल फ़िल्टर"
 
-#: filter/kmfilterdialog.cpp:140
+#: filter/kmfilterdialog.cpp:138
 #, kde-format
 msgctxt "@action"
 msgid "Sieve script"
 msgstr "चलनी लिपि"
 
-#: filter/kmfilterdialog.cpp:162
+#: filter/kmfilterdialog.cpp:160
 #, kde-format
 msgid "Available Filters"
 msgstr "उपलब्धाः फ़िल्टराः"
 
-#: filter/kmfilterdialog.cpp:168
+#: filter/kmfilterdialog.cpp:166
 #, kde-format
 msgctxt "General mail filter settings."
 msgid "General"
 msgstr "सामान्य"
 
-#: filter/kmfilterdialog.cpp:172
+#: filter/kmfilterdialog.cpp:170
 #, kde-format
 msgctxt "Advanced mail filter settings."
 msgid "Advanced"
 msgstr "उन्नतं"
 
-#: filter/kmfilterdialog.cpp:182
+#: filter/kmfilterdialog.cpp:180
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "फ़िल्टर क्रियाः :"
 
-#: filter/kmfilterdialog.cpp:193
+#: filter/kmfilterdialog.cpp:191
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "आगच्छन्तसन्देशेषु एतत् फ़िल्टरं प्रयोजयन्तु:"
 
-#: filter/kmfilterdialog.cpp:203
+#: filter/kmfilterdialog.cpp:201
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "सर्वेभ्यः लेखाभ्यः"
 
-#: filter/kmfilterdialog.cpp:207
+#: filter/kmfilterdialog.cpp:205
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "ऑनलाइन IMAP खाताभ्यः विहाय सर्वेभ्यः"
 
-#: filter/kmfilterdialog.cpp:211
+#: filter/kmfilterdialog.cpp:209
 #, kde-format
 msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "केवलं चयनितलेखात्"
 
-#: filter/kmfilterdialog.cpp:219
+#: filter/kmfilterdialog.cpp:217
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "&sent सन्देशेषु एतत् फ़िल्टरं प्रयोजयन्तु"
 
-#: filter/kmfilterdialog.cpp:221
+#: filter/kmfilterdialog.cpp:219
 #, kde-format
 msgid ""
 "<p>The filter will be triggered <b>after</b> the message is sent and it will "
@@ -1231,13 +1231,13 @@ msgstr ""
 "कृपया &quot;सन्देशप्रेषणात् <b>पूर्वं</b> एतत् फ़िल्टरं प्रयोजयन्तु&quot; इति उपयोगं कुर्वन्तु ।</"
 "p>"
 
-#: filter/kmfilterdialog.cpp:227
+#: filter/kmfilterdialog.cpp:225
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "एतत् फ़िल्टर &सन्देशप्रेषणात् पूर्वं प्रयोजयन्तु"
 
-#: filter/kmfilterdialog.cpp:229
+#: filter/kmfilterdialog.cpp:227
 #, kde-format
 msgid ""
 "<p>The filter will be triggered <b>before</b> the message is sent and it "
@@ -1248,19 +1248,19 @@ msgstr ""
 "च प्रभावितं करिष्यति ।</p><p> यदि प्राप्तकस्य प्रतिलिपिः अपि परिवर्तनीयः भवति तर्हि "
 "एतत् आवश्यकम् ।</p>"
 
-#: filter/kmfilterdialog.cpp:234
+#: filter/kmfilterdialog.cpp:232
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "एतत् फ़िल्टरं manual &filtering इत्यत्र प्रयोजयन्तु"
 
-#: filter/kmfilterdialog.cpp:237
+#: filter/kmfilterdialog.cpp:235
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "सर्वेषु पुटेषु आगच्छन्तीषु ईमेलषु एतत् फ़िल्टरं प्रयोजयन्तु"
 
-#: filter/kmfilterdialog.cpp:239
+#: filter/kmfilterdialog.cpp:237
 #, kde-format
 msgid ""
 "<p>The filter will be applied on inbound emails from all folders belonging "
@@ -1272,59 +1272,59 @@ msgstr ""
 "। IMAP खाताभिः सह स्थानीय-छिद्रकाणां उपयोगे एतत् उपयोगी भवति यत्र नूतनाः ईमेल-पत्राणि "
 "पूर्वमेव सर्वर-पक्षीय-छिद्रकैः भिन्न-भिन्न-पुटेषु स्थानान्तरितानि भवेयुः ।</p>"
 
-#: filter/kmfilterdialog.cpp:245
+#: filter/kmfilterdialog.cpp:243
 #, kde-format
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "यदि एतत् फ़िल्टर &मेलति तर्हि अत्र प्रक्रियां त्यजन्तु"
 
-#: filter/kmfilterdialog.cpp:248
+#: filter/kmfilterdialog.cpp:246
 #, kde-format
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "एतत् फ़िल्टर Apply Filter मेन्यू मध्ये योजयन्तु"
 
-#: filter/kmfilterdialog.cpp:266
+#: filter/kmfilterdialog.cpp:264
 #, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "अतिरिक्तरूपेण एतत् फ़िल्टरं टूल्बार मध्ये योजयन्तु"
 
-#: filter/kmfilterdialog.cpp:273
+#: filter/kmfilterdialog.cpp:271
 #, kde-format
 msgid "Shortcut:"
 msgstr "लघुमार्गः :"
 
-#: filter/kmfilterdialog.cpp:279
+#: filter/kmfilterdialog.cpp:277
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "अस्य फ़िल्टरस्य कृते चिह्नम् :"
 
-#: filter/kmfilterdialog.cpp:287
+#: filter/kmfilterdialog.cpp:285
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "चयनितं फ़िल्टर(s) चालयन्तु: "
 
-#: filter/kmfilterdialog.cpp:293
+#: filter/kmfilterdialog.cpp:291
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "अधुना चालयन्तु"
 
-#: filter/kmfilterdialog.cpp:420
+#: filter/kmfilterdialog.cpp:418
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "पुटं चयनितं नास्ति इति कारणतः एतत् फ़िल्टरं प्रयोक्तुं असमर्थम् ।"
 
-#: filter/kmfilterdialog.cpp:421
+#: filter/kmfilterdialog.cpp:419
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "न पुटं चयनितम्।"
 
-#: filter/kmfilterdialog.cpp:428
+#: filter/kmfilterdialog.cpp:426
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1334,41 +1334,41 @@ msgstr ""
 "केचन छानकाः परिवर्तिताः, अद्यापि न रक्षिताः । भवता स्वस्य फ़िल्टर्स् प्रयोक्तुं पूर्वं "
 "रक्षितव्यम् ।"
 
-#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
+#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "फ़िल्टर्स् परिवर्तिताः।"
 
-#: filter/kmfilterdialog.cpp:437
+#: filter/kmfilterdialog.cpp:435
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "सम्प्रति फ़िल्टराः चयनिताः नास्ति इति कारणतः फ़िल्टरं प्रयोक्तुं असमर्थः ।"
 
-#: filter/kmfilterdialog.cpp:438
+#: filter/kmfilterdialog.cpp:436
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "न फ़िल्टर चयनितम्।"
 
-#: filter/kmfilterdialog.cpp:662
+#: filter/kmfilterdialog.cpp:660
 #, kde-format
 msgid "No filter was imported."
 msgstr "कोऽपि फ़िल्टरः आयातितः नासीत् ।"
 
-#: filter/kmfilterdialog.cpp:673
+#: filter/kmfilterdialog.cpp:671
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "ये फ़िल्टराः आयाताः आसन् :"
 
-#: filter/kmfilterdialog.cpp:685
+#: filter/kmfilterdialog.cpp:683
 #, fuzzy, kde-format
 #| msgid "Any filter found."
 msgid "No filter found."
 msgstr "यत्किमपि छानकं प्राप्तम्।"
 
-#: filter/kmfilterdialog.cpp:710
+#: filter/kmfilterdialog.cpp:708
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1378,20 +1378,20 @@ msgstr ""
 "केचन छानकाः परिवर्तिताः, अद्यापि न रक्षिताः ।<br> निर्यातस्य पूर्वं भवता स्वस्य फ़िल्टर्स् "
 "रक्षितव्याः ।"
 
-#: filter/kmfilterdialog.cpp:716
+#: filter/kmfilterdialog.cpp:714
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "वयं सर्वाणि KMail फ़िल्टर्स् sieve scripts मध्ये परिवर्तयितुं न शक्नुमः परन्तु वयं प्रयासं कर्तुं "
 "शक्नुमः :)"
 
-#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:715 filter/kmfilterdialog.cpp:731
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "KMail फ़िल्टर्स् सिव स्क्रिप्ट् मध्ये परिवर्तयन्तु"
 
-#: filter/kmfilterdialog.cpp:733
+#: filter/kmfilterdialog.cpp:731
 #, kde-format
 msgid "No filters selected."
 msgstr "न फ़िल्टर चयनितम्।"
@@ -1600,27 +1600,27 @@ msgstr ""
 "\"%1\" इति फ़िल्टरस्य नामकरणं कृत्वा:\n"
 "(स्वचालितनामकरणार्थं क्षेत्रं रिक्तं त्यजन्तु)"
 
-#: filter/mailfilter.cpp:132
+#: filter/mailfilter.cpp:131
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>फ़िल्टर क्रियां प्रयोजयति:</b> %1"
 
-#: filter/mailfilter.cpp:141
+#: filter/mailfilter.cpp:140
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "एकः गम्भीरः दोषः अभवत् । अत्रैव प्रसंस्करणं स्थगयति ।"
 
-#: filter/mailfilter.cpp:148
+#: filter/mailfilter.cpp:147
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "एतत् कार्यं प्रयोजयन् समस्या प्राप्ता ।"
 
-#: filter/mailfilter.cpp:428
+#: filter/mailfilter.cpp:427
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>फ़िल्टर नियम <b>%1</b> मध्ये अत्यधिकाः फ़िल्टर क्रियाः ।</qt>"
 
-#: filter/mailfilter.cpp:462
+#: filter/mailfilter.cpp:461
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1629,24 +1629,24 @@ msgstr ""
 "<qt>अज्ञात फ़िल्टर क्रिया <b>%1</b><br /> फ़िल्टर नियमे <b>%2</b> .<br /> तस्य "
 "अवहेलना ।</qt>"
 
-#: filter/mailfilter.cpp:570
+#: filter/mailfilter.cpp:569
 #, kde-format
 msgid "Any action defined."
 msgstr "यत्किमपि कर्म विवक्षितम्।"
 
-#: filter/soundtestwidget.cpp:35 filter/soundtestwidget.cpp:117
+#: filter/soundtestwidget.cpp:37 filter/soundtestwidget.cpp:119
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Play"
 msgstr "क्रीडतु"
 
-#: filter/soundtestwidget.cpp:64
+#: filter/soundtestwidget.cpp:66
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Sound File"
 msgstr "Sound File इति चिनोतु"
 
-#: filter/soundtestwidget.cpp:114
+#: filter/soundtestwidget.cpp:116
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Pause"
@@ -1758,41 +1758,41 @@ msgstr "स्थानीय पुट"
 msgid "Please select a folder"
 msgstr "कृपया एकं पुटं चिनोतु"
 
-#: folder/folderselectiondialog.cpp:65
+#: folder/folderselectiondialog.cpp:64
 #, kde-format
 msgctxt "@action:button"
 msgid "&New Subfolder…"
 msgstr "&नवीन उपपुट..."
 
-#: folder/folderselectiondialog.cpp:67
+#: folder/folderselectiondialog.cpp:66
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "वर्तमान चयनितपुटस्य अधः नूतनं उपपुटं रचयन्तु"
 
-#: folder/folderselectiondialog.cpp:126
+#: folder/folderselectiondialog.cpp:125
 #, kde-format
 msgid "&New Subfolder…"
 msgstr "&नवीन उपपुट..."
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:176
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "नवीनं पुटम्"
 
-#: folder/folderselectiondialog.cpp:177
+#: folder/folderselectiondialog.cpp:176
 #, kde-format
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr "नामः"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:193
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "पुटं निर्मातुं न शक्तम्: %1"
 
-#: folder/folderselectiondialog.cpp:194
+#: folder/folderselectiondialog.cpp:193
 #, kde-format
 msgctxt "@title:window"
 msgid "Folder creation failed"
@@ -1866,28 +1866,28 @@ msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "मा गच्छतु"
 
-#: folder/foldertreewidget.cpp:78
+#: folder/foldertreewidget.cpp:73
 #, kde-format
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
 msgstr "भवन्तः पुटस्य सूचीं छानयितुं टङ्कनं आरभुं शक्नुवन्ति ।"
 
-#: folder/foldertreewidget.cpp:322
+#: folder/foldertreewidget.cpp:317
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "भवन्तः पुटस्य सूचीं छानयितुं टङ्कनं आरभुं शक्नुवन्ति ।"
 
-#: folder/foldertreewidget.cpp:322
+#: folder/foldertreewidget.cpp:317
 #, kde-format
 msgid "Path: (%1)"
 msgstr "पथः (%1) ."
 
-#: folder/foldertreewidgetproxymodel.cpp:242
+#: folder/foldertreewidgetproxymodel.cpp:240
 #, kde-format
 msgid "%1 (Offline)"
 msgstr "%1 (अफलाइन)"
 
-#: folder/foldertreewidgetproxymodel.cpp:247
+#: folder/foldertreewidgetproxymodel.cpp:245
 #, fuzzy, kde-format
 #| msgid "%1 (Reached %2% quota)"
 msgctxt ""
@@ -1895,93 +1895,93 @@ msgctxt ""
 msgid "%1 (Reached %2% quota)"
 msgstr "%1 (%2% कोटा प्राप्तम्)"
 
-#: job/backupjob.cpp:95
+#: job/backupjob.cpp:97
 #, kde-format
 msgid "Unable to retrieve folder list."
 msgstr "पुटसूचीं पुनः प्राप्तुं असमर्थः।"
 
-#: job/backupjob.cpp:122
+#: job/backupjob.cpp:124
 #, kde-format
 msgid "The operation was canceled by the user."
 msgstr "उपयोक्त्रा कार्यं रद्दं कृतम् ।"
 
-#: job/backupjob.cpp:152
+#: job/backupjob.cpp:154
 #, kde-format
 msgid "Failed to archive the folder '%1'."
 msgstr "'%1' इति पुटं संग्रहीतुं असफलम् ।"
 
-#: job/backupjob.cpp:156
+#: job/backupjob.cpp:158
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving failed"
 msgstr "संग्रहणं विफलम् अभवत्"
 
-#: job/backupjob.cpp:166
+#: job/backupjob.cpp:168
 #, kde-format
 msgid "Unable to finalize the archive file."
 msgstr "संग्रहसञ्चिकां अन्तिमरूपेण स्थापयितुं असमर्थः ।"
 
-#: job/backupjob.cpp:171
+#: job/backupjob.cpp:173
 #, kde-format
 msgid "Archiving finished"
 msgstr "संग्रहणं समाप्तम्"
 
-#: job/backupjob.cpp:182
+#: job/backupjob.cpp:184
 #, kde-format
 msgid ""
 "Archiving folder '%1' successfully completed. The archive was written to the "
 "file '%2'."
 msgstr "संग्रहणपुटं '%1' सफलतया सम्पन्नम् । संग्रहणं '%2' इति सञ्चिकायां लिखितम् आसीत् ।"
 
-#: job/backupjob.cpp:188
+#: job/backupjob.cpp:190
 #, kde-format
 msgid "1 message of size %2 was archived."
 msgid_plural "%1 messages with the total size of %2 were archived."
 msgstr[0] "%2 आकारस्य १ सन्देशः संग्रहीतः ।"
 msgstr[1] "%2 कुल आकारयुक्ताः %1 सन्देशाः संग्रहीताः आसन् ।"
 
-#: job/backupjob.cpp:192
+#: job/backupjob.cpp:194
 #, kde-format
 msgid "The archive file has a size of %1."
 msgstr "संग्रहसञ्चिकायाः आकारः %1 अस्ति ।"
 
-#: job/backupjob.cpp:194
+#: job/backupjob.cpp:196
 #, kde-format
 msgctxt "@title:window"
 msgid "Archiving finished"
 msgstr "संग्रहणं समाप्तम्"
 
-#: job/backupjob.cpp:244
+#: job/backupjob.cpp:246
 #, kde-format
 msgid "Failed to write a message into the archive folder '%1'."
 msgstr "'%1' संग्रहपुटे सन्देशं लिखितुं असफलम् ।"
 
-#: job/backupjob.cpp:268
+#: job/backupjob.cpp:270
 #, kde-format
 msgid "Downloading a message in folder '%1' failed."
 msgstr "'%1' पुटे सन्देशस्य अवतरणं विफलम् ।"
 
-#: job/backupjob.cpp:334
+#: job/backupjob.cpp:336
 #, kde-format
 msgid "Archiving folder %1"
 msgstr "%1 पुटस्य संग्रहणम्"
 
-#: job/backupjob.cpp:359
+#: job/backupjob.cpp:361
 #, kde-format
 msgid "Unable to create folder structure for folder '%1' within archive file."
 msgstr "संग्रहसञ्चिकायाः अन्तः '%1' पुटस्य कृते पुटसंरचना निर्मातुं असमर्थः ।"
 
-#: job/backupjob.cpp:371
+#: job/backupjob.cpp:373
 #, kde-format
 msgid "Unable to get message list for folder %1."
 msgstr "%1 पुटस्य कृते सन्देशसूचीं प्राप्तुं असमर्थम् ।"
 
-#: job/backupjob.cpp:409
+#: job/backupjob.cpp:411
 #, kde-format
 msgid "Unable to open archive for writing."
 msgstr "लेखनार्थं संग्रहालयं उद्घाटयितुं असमर्थः।"
 
-#: job/backupjob.cpp:413
+#: job/backupjob.cpp:415
 #, kde-format
 msgid "Archiving"
 msgstr "संग्रहणम्"
@@ -2003,7 +2003,7 @@ msgstr "%1 पुटतः पुरातनसन्देशान् नि�
 msgid "Removing old messages from folder %1 failed."
 msgstr "%1 पुटतः पुरातनसन्देशान् निष्कासयितुं विफलम् ।"
 
-#: job/expirejob.cpp:157
+#: job/expirejob.cpp:153
 #, fuzzy, kde-format
 #| msgid "Removing 1 old message from folder %2…"
 #| msgid_plural "Removing %1 old messages from folder %2..."
@@ -2012,12 +2012,12 @@ msgid_plural "Removing %1 old messages from folder %2…"
 msgstr[0] "%2... पुटतः 1 पुरातनं सन्देशं निष्कासयति..."
 msgstr[1] "%2 पुटतः %1 पुरातनसन्देशान् निष्कासयति..."
 
-#: job/expirejob.cpp:164
+#: job/expirejob.cpp:160
 #, kde-format
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr "%1 पुटतः सन्देशानां अवधिः समाप्तुं न शक्यते: गन्तव्यपुटं %2 न प्राप्तम्"
 
-#: job/expirejob.cpp:180
+#: job/expirejob.cpp:176
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
@@ -2041,17 +2041,17 @@ msgstr "%1 पुटतः %2 पुटं प्रति पुरातनस
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "%1 पुटतः %2 पुटं प्रति पुरातनसन्देशान् स्थानान्तरयितुं विफलम् ।"
 
-#: kernel/mailkernel.cpp:184 kernel/mailkernel.cpp:206
+#: kernel/mailkernel.cpp:185 kernel/mailkernel.cpp:207
 #, kde-format
 msgid "You do not have read/write permission to your inbox folder."
 msgstr "भवतः इनबॉक्स-पुटस्य पठन/लेखनस्य अनुमतिः नास्ति ।"
 
-#: kernel/mailkernel.cpp:235
+#: kernel/mailkernel.cpp:236
 #, kde-format
 msgid "The Email program encountered a fatal error and will terminate now"
 msgstr "Email कार्यक्रमे घातकदोषः अभवत्, अधुना समाप्तं भविष्यति"
 
-#: kernel/mailkernel.cpp:238
+#: kernel/mailkernel.cpp:239
 #, kde-format
 msgid ""
 "The Email program encountered a fatal error and will terminate now.\n"
@@ -2186,176 +2186,176 @@ msgstr "सर्वेषां सन्देशानां मेलनं 
 msgid "Filter criteria:"
 msgstr "फ़िल्टर मापदण्डः :"
 
-#: search/searchrule/searchrule.cpp:185
+#: search/searchrule/searchrule.cpp:186
 #, kde-format
 msgid "equal"
 msgstr "समान"
 
-#: search/searchrule/searchrule.cpp:188
+#: search/searchrule/searchrule.cpp:189
 #, kde-format
 msgid "not equal"
 msgstr "न समः"
 
-#: search/searchrule/searchrule.cpp:191
+#: search/searchrule/searchrule.cpp:192
 #, kde-format
 msgid "is greater"
 msgstr "अधिकः इति"
 
-#: search/searchrule/searchrule.cpp:194
+#: search/searchrule/searchrule.cpp:195
 #, kde-format
 msgid "is less or equal"
 msgstr "न्यूनं वा समं वा भवति"
 
-#: search/searchrule/searchrule.cpp:197
+#: search/searchrule/searchrule.cpp:198
 #, kde-format
 msgid "is less"
 msgstr "न्यूनम् इति"
 
-#: search/searchrule/searchrule.cpp:200
+#: search/searchrule/searchrule.cpp:201
 #, kde-format
 msgid "is greater or equal"
 msgstr "महत्तरं समं वा भवति"
 
-#: search/searchrule/searchrule.cpp:203
+#: search/searchrule/searchrule.cpp:204
 #, kde-format
 msgid "is in addressbook"
 msgstr "पतापुस्तके अस्ति"
 
-#: search/searchrule/searchrule.cpp:206
+#: search/searchrule/searchrule.cpp:207
 #, kde-format
 msgid "is not in addressbook"
 msgstr "पतापुस्तिकायां नास्ति"
 
-#: search/searchrule/searchrule.cpp:209 search/searchrule/searchrule.cpp:212
+#: search/searchrule/searchrule.cpp:210 search/searchrule/searchrule.cpp:213
 #, kde-format
 msgid "is in category"
 msgstr "वर्गे अस्ति"
 
-#: search/searchrule/searchrule.cpp:215
-#: search/widgethandler/messagerulewidgethandler.cpp:28
-#: search/widgethandler/messagerulewidgethandler.cpp:145
+#: search/searchrule/searchrule.cpp:216
+#: search/widgethandler/messagerulewidgethandler.cpp:27
+#: search/widgethandler/messagerulewidgethandler.cpp:144
 #, kde-format
 msgid "has an attachment"
 msgstr "आसक्तिः अस्ति"
 
-#: search/searchrule/searchrule.cpp:218
+#: search/searchrule/searchrule.cpp:219
 #, kde-format
 msgid "has not an attachment"
 msgstr "नास्ति आसक्तिः"
 
-#: search/searchrule/searchrule.cpp:221
+#: search/searchrule/searchrule.cpp:222
 #, fuzzy, kde-format
 #| msgid "has invitation"
 msgid "has an invitation"
 msgstr "आमन्त्रणं भवति"
 
-#: search/searchrule/searchrule.cpp:224
+#: search/searchrule/searchrule.cpp:225
 #, fuzzy, kde-format
 #| msgid "has invitation"
 msgid "has not an invitation"
 msgstr "आमन्त्रणं भवति"
 
-#: search/searchrule/searchrule.cpp:227
+#: search/searchrule/searchrule.cpp:228
 #, kde-format
 msgid "start with"
 msgstr "आरभ्यताम्"
 
-#: search/searchrule/searchrule.cpp:230
+#: search/searchrule/searchrule.cpp:231
 #, kde-format
 msgid "not start with"
 msgstr "न आरभ्यते"
 
-#: search/searchrule/searchrule.cpp:233
+#: search/searchrule/searchrule.cpp:234
 #, kde-format
 msgid "end with"
 msgstr "समाप्तम्"
 
-#: search/searchrule/searchrule.cpp:236
+#: search/searchrule/searchrule.cpp:237
 #, kde-format
 msgid "not end with"
 msgstr "न समाप्तं भवति"
 
-#: search/searchrule/searchrule.cpp:239
+#: search/searchrule/searchrule.cpp:240
 #, kde-format
 msgid "none"
 msgstr "न कश्चित्"
 
-#: search/searchrule/searchrule.cpp:242
-#: search/widgethandler/headersrulerwidgethandler.cpp:25
-#: search/widgethandler/messagerulewidgethandler.cpp:24
-#: search/widgethandler/tagrulewidgethandler.cpp:93
-#: search/widgethandler/textrulerwidgethandler.cpp:24
+#: search/searchrule/searchrule.cpp:243
+#: search/widgethandler/headersrulerwidgethandler.cpp:23
+#: search/widgethandler/messagerulewidgethandler.cpp:23
+#: search/widgethandler/tagrulewidgethandler.cpp:92
+#: search/widgethandler/textrulerwidgethandler.cpp:22
 #, kde-format
 msgid "contains"
 msgstr "भरति"
 
-#: search/searchrule/searchrule.cpp:245
+#: search/searchrule/searchrule.cpp:246
 #, kde-format
 msgid "not contains"
 msgstr "न समाहितम्"
 
-#: search/searchrule/searchrule.cpp:248
+#: search/searchrule/searchrule.cpp:249
 #, kde-format
 msgid "has regexp"
 msgstr "has regexp"
 
-#: search/searchrule/searchrule.cpp:251
+#: search/searchrule/searchrule.cpp:252
 #, kde-format
 msgid "not regexp"
 msgstr "न रेगेक्सप्"
 
-#: search/searchrule/searchrule.cpp:265
+#: search/searchrule/searchrule.cpp:266
 #, kde-format
 msgid "size equals not supported"
 msgstr "आकारः समः समर्थितः नास्ति"
 
-#: search/searchrule/searchrule.cpp:268
+#: search/searchrule/searchrule.cpp:269
 #, kde-format
 msgid "size not equals not supported"
 msgstr "आकारः न समः न समर्थितः"
 
-#: search/searchrule/searchrule.cpp:301 search/searchrule/searchrule.cpp:409
-#: search/searchrule/searchrule.cpp:492
+#: search/searchrule/searchrule.cpp:302 search/searchrule/searchrule.cpp:410
+#: search/searchrule/searchrule.cpp:493
 #, kde-format
 msgid "\"%1\" is not supported with condition \"%2\""
 msgstr "\"%1\" \"%2\" कण्डिशन् सह समर्थितः नास्ति ।"
 
-#: search/searchrule/searchrule.cpp:307
+#: search/searchrule/searchrule.cpp:308
 #, kde-format
 msgid "<status> not implemented/supported"
 msgstr "<status> न कार्यान्वितम्/समर्थितम्"
 
-#: search/searchrule/searchrule.cpp:310
+#: search/searchrule/searchrule.cpp:311
 #, kde-format
 msgid "<any header> not implemented/supported"
 msgstr "<any header> न कार्यान्वितम्/समर्थितम्"
 
-#: search/searchrule/searchrule.cpp:313
+#: search/searchrule/searchrule.cpp:314
 #, kde-format
 msgid "<contents> not implemented/supported"
 msgstr "<contents> न कार्यान्वितम्/समर्थितम्"
 
-#: search/searchrule/searchrule.cpp:316
+#: search/searchrule/searchrule.cpp:317
 #, kde-format
 msgid "<age in days> not implemented/supported"
 msgstr "<वयः दिवसेषु> न कार्यान्वितम्/समर्थितम्"
 
-#: search/searchrule/searchrule.cpp:319
+#: search/searchrule/searchrule.cpp:320
 #, kde-format
 msgid "<date> not implemented/supported"
 msgstr "<date> न कार्यान्वितम्/समर्थितम्"
 
-#: search/searchrule/searchrule.cpp:322
+#: search/searchrule/searchrule.cpp:323
 #, kde-format
 msgid "<recipients> not implemented/supported"
 msgstr "<recipients> न कार्यान्वितम्/समर्थितम्"
 
-#: search/searchrule/searchrule.cpp:324
+#: search/searchrule/searchrule.cpp:325
 #, kde-format
 msgid "<Tag> is not supported"
 msgstr "<Tag> समर्थितं नास्ति"
 
-#: search/searchrule/searchrule.cpp:327
+#: search/searchrule/searchrule.cpp:328
 #, kde-format
 msgid "<message> not implemented/supported"
 msgstr "<message> न कार्यान्वितम्/समर्थितम्"
@@ -2365,12 +2365,12 @@ msgstr "<message> न कार्यान्वितम्/समर्थि
 msgid "Date is not valid."
 msgstr "तिथिः वैधः नास्ति।"
 
-#: search/searchrule/searchrulenumerical.cpp:137
+#: search/searchrule/searchrulenumerical.cpp:136
 #, kde-format
 msgid "Content is not a number."
 msgstr "सामग्री संख्या न भवति।"
 
-#: search/searchrule/searchrulestring.cpp:243
+#: search/searchrule/searchrulestring.cpp:241
 #, kde-format
 msgid "String is empty."
 msgstr "स्ट्रिंग् रिक्तम् अस्ति।"
@@ -2396,31 +2396,31 @@ msgstr "आसक्तिः"
 msgid "has attachment"
 msgstr "आसक्तिः अस्ति"
 
-#: search/widgethandler/daterulewidgethandler.cpp:22
+#: search/widgethandler/daterulewidgethandler.cpp:21
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:21
 #: search/widgethandler/numericrulewidgethandler.cpp:21
 msgid "is equal to"
 msgstr "सम इति"
 
-#: search/widgethandler/daterulewidgethandler.cpp:23
+#: search/widgethandler/daterulewidgethandler.cpp:22
 #: search/widgethandler/numericdoublerulewidgethandler.cpp:22
 #: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is not equal to"
 msgstr "न समः"
 
-#: search/widgethandler/daterulewidgethandler.cpp:24
+#: search/widgethandler/daterulewidgethandler.cpp:23
 msgid "is after"
 msgstr "इति पश्चात्"
 
-#: search/widgethandler/daterulewidgethandler.cpp:25
+#: search/widgethandler/daterulewidgethandler.cpp:24
 msgid "is before or equal to"
 msgstr "पूर्वं वा समं वा"
 
-#: search/widgethandler/daterulewidgethandler.cpp:26
+#: search/widgethandler/daterulewidgethandler.cpp:25
 msgid "is before"
 msgstr "इति पूर्वम्"
 
-#: search/widgethandler/daterulewidgethandler.cpp:27
+#: search/widgethandler/daterulewidgethandler.cpp:26
 msgid "is after or equal to"
 msgstr "परं वा समं वा"
 
@@ -2445,67 +2445,67 @@ msgstr "एन्क्रिप्टेड्"
 msgid "is encrypted"
 msgstr "एन्क्रिप्टेड् भवति"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:26
-#: search/widgethandler/messagerulewidgethandler.cpp:25
-#: search/widgethandler/tagrulewidgethandler.cpp:94
-#: search/widgethandler/textrulerwidgethandler.cpp:25
+#: search/widgethandler/headersrulerwidgethandler.cpp:24
+#: search/widgethandler/messagerulewidgethandler.cpp:24
+#: search/widgethandler/tagrulewidgethandler.cpp:93
+#: search/widgethandler/textrulerwidgethandler.cpp:23
 msgid "does not contain"
 msgstr "न समाहितम्"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:27
-#: search/widgethandler/tagrulewidgethandler.cpp:95
-#: search/widgethandler/textrulerwidgethandler.cpp:26
+#: search/widgethandler/headersrulerwidgethandler.cpp:25
+#: search/widgethandler/tagrulewidgethandler.cpp:94
+#: search/widgethandler/textrulerwidgethandler.cpp:24
 msgid "equals"
 msgstr "समः"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:28
-#: search/widgethandler/tagrulewidgethandler.cpp:96
-#: search/widgethandler/textrulerwidgethandler.cpp:27
+#: search/widgethandler/headersrulerwidgethandler.cpp:26
+#: search/widgethandler/tagrulewidgethandler.cpp:95
+#: search/widgethandler/textrulerwidgethandler.cpp:25
 msgid "does not equal"
 msgstr "न समं करोति"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:29
-#: search/widgethandler/textrulerwidgethandler.cpp:28
+#: search/widgethandler/headersrulerwidgethandler.cpp:27
+#: search/widgethandler/textrulerwidgethandler.cpp:26
 msgid "starts with"
 msgstr "आरभ्यते"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:30
-#: search/widgethandler/textrulerwidgethandler.cpp:29
+#: search/widgethandler/headersrulerwidgethandler.cpp:28
+#: search/widgethandler/textrulerwidgethandler.cpp:27
 msgid "does not start with"
 msgstr "न आरभते"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:31
-#: search/widgethandler/textrulerwidgethandler.cpp:30
+#: search/widgethandler/headersrulerwidgethandler.cpp:29
+#: search/widgethandler/textrulerwidgethandler.cpp:28
 msgid "ends with"
 msgstr "इति समाप्तम्"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:32
-#: search/widgethandler/textrulerwidgethandler.cpp:31
+#: search/widgethandler/headersrulerwidgethandler.cpp:30
+#: search/widgethandler/textrulerwidgethandler.cpp:29
 msgid "does not end with"
 msgstr "न समाप्तं भवति"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:34
-#: search/widgethandler/messagerulewidgethandler.cpp:26
-#: search/widgethandler/tagrulewidgethandler.cpp:97
-#: search/widgethandler/textrulerwidgethandler.cpp:33
+#: search/widgethandler/headersrulerwidgethandler.cpp:32
+#: search/widgethandler/messagerulewidgethandler.cpp:25
+#: search/widgethandler/tagrulewidgethandler.cpp:96
+#: search/widgethandler/textrulerwidgethandler.cpp:31
 msgid "matches regular expr."
 msgstr "नियमित expr मेल खाति।"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:35
-#: search/widgethandler/messagerulewidgethandler.cpp:27
-#: search/widgethandler/tagrulewidgethandler.cpp:98
-#: search/widgethandler/textrulerwidgethandler.cpp:34
+#: search/widgethandler/headersrulerwidgethandler.cpp:33
+#: search/widgethandler/messagerulewidgethandler.cpp:26
+#: search/widgethandler/tagrulewidgethandler.cpp:97
+#: search/widgethandler/textrulerwidgethandler.cpp:32
 msgid "does not match reg. expr."
 msgstr "न मेलति reg. expr."
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:36
-#: search/widgethandler/headersrulerwidgethandler.cpp:149
+#: search/widgethandler/headersrulerwidgethandler.cpp:34
+#: search/widgethandler/headersrulerwidgethandler.cpp:147
 #, kde-format
 msgid "is in address book"
 msgstr "सम्बोधनपुस्तके अस्ति"
 
-#: search/widgethandler/headersrulerwidgethandler.cpp:37
-#: search/widgethandler/headersrulerwidgethandler.cpp:151
+#: search/widgethandler/headersrulerwidgethandler.cpp:35
+#: search/widgethandler/headersrulerwidgethandler.cpp:149
 #, kde-format
 msgid "is not in address book"
 msgstr "सम्बोधनपुस्तके नास्ति"
@@ -2521,8 +2521,8 @@ msgstr "आमंत्रण"
 msgid "has invitation"
 msgstr "आमन्त्रणं भवति"
 
-#: search/widgethandler/messagerulewidgethandler.cpp:29
-#: search/widgethandler/messagerulewidgethandler.cpp:147
+#: search/widgethandler/messagerulewidgethandler.cpp:28
+#: search/widgethandler/messagerulewidgethandler.cpp:146
 #, kde-format
 msgid "has no attachment"
 msgstr "नास्ति आसक्तिः"
@@ -2654,13 +2654,13 @@ msgctxt "@title:window"
 msgid "Customize File Name Attachment"
 msgstr "सञ्चिकानाम संलग्नकं अनुकूलितं कुर्वन्तु"
 
-#: snippets/snippetcustomfileattachmentnamewidget.cpp:29
+#: snippets/snippetcustomfileattachmentnamewidget.cpp:30
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "सञ्चिकानाम :"
 
-#: snippets/snippetcustomfileattachmentnamewidget.cpp:47
+#: snippets/snippetcustomfileattachmentnamewidget.cpp:48
 #, kde-format
 msgctxt "@action:button"
 msgid "Insert Variables"
@@ -2678,24 +2678,24 @@ msgstr "संलग्नकानि चिनोतु"
 msgid "Do you want to delete selected attachment?"
 msgstr "चयनितं संलग्नकं विलोपयितुम् इच्छति वा?"
 
-#: snippets/snippetsmanager.cpp:156
+#: snippets/snippetsmanager.cpp:154
 #, kde-format
 msgid "General"
 msgstr "सामान्य"
 
-#: snippets/snippetsmanager.cpp:162
+#: snippets/snippetsmanager.cpp:160
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Snippet"
 msgstr "स्निपेट् योजयतु"
 
-#: snippets/snippetsmanager.cpp:228
+#: snippets/snippetsmanager.cpp:226
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Snippet"
 msgstr "स्निपेट सम्पादयतु"
 
-#: snippets/snippetsmanager.cpp:288
+#: snippets/snippetsmanager.cpp:286
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2705,19 +2705,19 @@ msgstr ""
 "किं भवान् वास्तवमेव \"%1\" इति स्निपेट् अपसारयितुम् इच्छति?<nl/><warning>निष्कासनं पूर्ववत् "
 "कर्तुं कोऽपि उपायः नास्ति ।</warning>"
 
-#: snippets/snippetsmanager.cpp:307
+#: snippets/snippetsmanager.cpp:305
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Group"
 msgstr "समूहं योजयतु"
 
-#: snippets/snippetsmanager.cpp:332
+#: snippets/snippetsmanager.cpp:330
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Group"
 msgstr "समूह सम्पादयतु"
 
-#: snippets/snippetsmanager.cpp:361
+#: snippets/snippetsmanager.cpp:359
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2727,55 +2727,55 @@ msgstr ""
 "किं भवान् वास्तवमेव \"%1\" समूहं तस्य सर्वैः स्निपेट्-सहितं निष्कासयितुम् इच्छति?<nl/"
 "><warning>निष्कासनं पूर्ववत् कर्तुं कोऽपि उपायः नास्ति ।</warning>"
 
-#: snippets/snippetsmanager.cpp:371
+#: snippets/snippetsmanager.cpp:369
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to remove group \"%1\"?"
 msgstr "किं भवान् वास्तवमेव \"%1\" इति समूहं हर्तुं इच्छति?"
 
-#: snippets/snippetsmanager.cpp:439 snippets/snippetsmanager.cpp:468
+#: snippets/snippetsmanager.cpp:437 snippets/snippetsmanager.cpp:466
 #, kde-format
 msgctxt "@action"
 msgid "Snippet %1"
 msgstr "स्निपेट %1"
 
-#: snippets/snippetsmanager.cpp:561
+#: snippets/snippetsmanager.cpp:559
 #, kde-format
 msgctxt "@action"
 msgid "Add Snippet…"
 msgstr "स्निपेट् योजयतु..."
 
-#: snippets/snippetsmanager.cpp:563
+#: snippets/snippetsmanager.cpp:561
 #, kde-format
 msgctxt "@action"
 msgid "Edit Snippet…"
 msgstr "स्निपेट सम्पादयतु..."
 
-#: snippets/snippetsmanager.cpp:565
+#: snippets/snippetsmanager.cpp:563
 #, kde-format
 msgctxt "@action"
 msgid "Remove Snippet"
 msgstr "स्निपेटं निष्कासयन्तु"
 
-#: snippets/snippetsmanager.cpp:568
+#: snippets/snippetsmanager.cpp:566
 #, kde-format
 msgctxt "@action"
 msgid "Add Group…"
 msgstr "समूहं योजयतु..."
 
-#: snippets/snippetsmanager.cpp:570
+#: snippets/snippetsmanager.cpp:568
 #, kde-format
 msgctxt "@action"
 msgid "Rename Group…"
 msgstr "समूहस्य नाम परिवर्तनं कुर्वन्तु..."
 
-#: snippets/snippetsmanager.cpp:572
+#: snippets/snippetsmanager.cpp:570
 #, kde-format
 msgctxt "@action"
 msgid "Remove Group"
 msgstr "समूहं निष्कासयन्तु"
 
-#: snippets/snippetsmanager.cpp:575
+#: snippets/snippetsmanager.cpp:573
 #, kde-format
 msgctxt "@action"
 msgid "Insert Snippet"
@@ -2798,7 +2798,7 @@ msgctxt "@action:button"
 msgid "Update"
 msgstr "अद्यतन"
 
-#: snippets/snippettreeview.cpp:65
+#: snippets/snippettreeview.cpp:64
 #, kde-format
 msgid "Text Snippets"
 msgstr "पाठ स्निपेट्स्"
@@ -2841,7 +2841,7 @@ msgstr ""
 "भवान् पश्चात् अन्यस्मिन् स्निपेट् मध्ये अपि समानं चरं उपयुङ्क्ते तर्हि दक्षिणतः प्रविष्टं मूल्यं तस्य "
 "चरस्य पूर्वनिर्धारितं मूल्यं भविष्यति ।"
 
-#: snippets/snippetwidget.cpp:58
+#: snippets/snippetwidget.cpp:57
 #, kde-format
 msgid ""
 "Enter a keyword here to enable fast insertion of this snippet while writing "
@@ -2921,153 +2921,153 @@ msgstr "कीवर्ड :"
 msgid "Sho&rtcut:"
 msgstr "लघु&rtcut: ."
 
-#: tag/addtagdialog.cpp:39
+#: tag/addtagdialog.cpp:40
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Tag"
 msgstr "Add Tag"
 
-#: tag/addtagdialog.cpp:76
+#: tag/addtagdialog.cpp:77
 #, kde-format
 msgid "Tag %1 already exists"
 msgstr "%1 टैग् पूर्वमेव अस्ति"
 
-#: tag/tagwidget.cpp:63
+#: tag/tagwidget.cpp:62
 #, kde-format
 msgctxt "@label:listbox Name of the tag"
 msgid "Name:"
 msgstr "नामः:"
 
-#: tag/tagwidget.cpp:70
+#: tag/tagwidget.cpp:69
 #, kde-format
 msgctxt "@option:check"
 msgid "Change te&xt color:"
 msgstr "te&xt वर्णं परिवर्तयन्तु:"
 
-#: tag/tagwidget.cpp:82
+#: tag/tagwidget.cpp:81
 #, kde-format
 msgctxt "@option:check"
 msgid "Change &background color:"
 msgstr "&पृष्ठभूमिवर्णं परिवर्तयन्तु:"
 
-#: tag/tagwidget.cpp:94
+#: tag/tagwidget.cpp:93
 #, kde-format
 msgctxt "@option:check"
 msgid "Change fo&nt:"
 msgstr "परिवर्तनं fo&nt:"
 
-#: tag/tagwidget.cpp:100
+#: tag/tagwidget.cpp:99
 #, kde-format
 msgctxt "@option:check"
 msgid "&Bold"
 msgstr "&विक्रान्तः"
 
-#: tag/tagwidget.cpp:104
+#: tag/tagwidget.cpp:103
 #, kde-format
 msgctxt "@option:check"
 msgid "&Italics"
 msgstr "&इटालिक"
 
-#: tag/tagwidget.cpp:122
+#: tag/tagwidget.cpp:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Message tag &icon:"
 msgstr "सन्देश टैग &icon:"
 
-#: tag/tagwidget.cpp:133
+#: tag/tagwidget.cpp:132
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Shortc&ut:"
 msgstr "Shortc&ut:"
 
-#: tag/tagwidget.cpp:144
+#: tag/tagwidget.cpp:143
 #, kde-format
 msgctxt "@option:check"
 msgid "Enable &toolbar button"
 msgstr "&toolbar बटनं सक्षमं कुर्वन्तु"
 
-#: widgets/favoritecollectionwidget.cpp:91
+#: widgets/favoritecollectionwidget.cpp:90
 #, kde-format
 msgid "Icon size"
 msgstr "चिह्न आकार"
 
-#: widgets/favoritecollectionwidget.cpp:110
+#: widgets/favoritecollectionwidget.cpp:109
 #, kde-format
 msgid "Mode"
 msgstr "मोड्"
 
-#: widgets/favoritecollectionwidget.cpp:114
+#: widgets/favoritecollectionwidget.cpp:113
 #, kde-format
 msgctxt "@action"
 msgid "List Mode"
 msgstr "सूची मोड"
 
-#: widgets/favoritecollectionwidget.cpp:124
+#: widgets/favoritecollectionwidget.cpp:123
 #, kde-format
 msgctxt "@action"
 msgid "Icon Mode"
 msgstr "चिह्न मोड"
 
-#: widgets/favoritecollectionwidget.cpp:235
+#: widgets/favoritecollectionwidget.cpp:234
 #, kde-format
 msgid "Drop your favorite folders here…"
 msgstr "अत्र स्वस्य प्रियपुटं पातयन्तु..."
 
-#: widgets/redirectdialog.cpp:67
+#: widgets/redirectdialog.cpp:66
 #, kde-format
 msgid "Resend-To:"
 msgstr "पुनः प्रेषण-कम् :"
 
-#: widgets/redirectdialog.cpp:70
+#: widgets/redirectdialog.cpp:69
 #, kde-format
 msgid "Resend-Cc:"
 msgstr "पुनः प्रेषण-Cc: ."
 
-#: widgets/redirectdialog.cpp:73
+#: widgets/redirectdialog.cpp:72
 #, kde-format
 msgid "Resend-Bcc:"
 msgstr "पुनः प्रेषण-Bcc: ."
 
-#: widgets/redirectdialog.cpp:102
+#: widgets/redirectdialog.cpp:101
 #, kde-format
 msgctxt "@title:window"
 msgid "Redirect Message"
 msgstr "सन्देशं पुनः निर्दिशति"
 
-#: widgets/redirectdialog.cpp:123
+#: widgets/redirectdialog.cpp:122
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Select the recipient addresses to redirect to:"
 msgstr "पुनर्निर्देशनार्थं प्राप्तकर्तापत्तनानि चिनोतु:"
 
-#: widgets/redirectdialog.cpp:152
+#: widgets/redirectdialog.cpp:151
 #, kde-format
 msgid "Identity:"
 msgstr "चिह्नं:"
 
-#: widgets/redirectdialog.cpp:156
+#: widgets/redirectdialog.cpp:155
 #, kde-format
 msgid "Transport:"
 msgstr "परिवहन:"
 
-#: widgets/redirectdialog.cpp:158
+#: widgets/redirectdialog.cpp:157
 #, kde-format
 msgctxt "@action:button"
 msgid "&Send Now"
 msgstr "&अधुना प्रेषयतु"
 
-#: widgets/redirectdialog.cpp:159
+#: widgets/redirectdialog.cpp:158
 #, kde-format
 msgctxt "@action:button"
 msgid "Send &Later"
 msgstr "प्रेषयतु &पश्चात्"
 
-#: widgets/redirectdialog.cpp:207
+#: widgets/redirectdialog.cpp:206
 #, kde-format
 msgid "You cannot redirect the message without an address."
 msgstr "भवन्तः पतां विना सन्देशं पुनर्निर्देशनं कर्तुं न शक्नुवन्ति ।"
 
-#: widgets/redirectdialog.cpp:207
+#: widgets/redirectdialog.cpp:206
 #, kde-format
 msgctxt "@title:window"
 msgid "Empty Redirection Address"
