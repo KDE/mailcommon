@@ -419,6 +419,7 @@ bool MailFilter::readConfig(const KConfigGroup &config, bool interactive)
     bAutoNaming = config.readEntry("AutomaticName", false);
     bEnabled = config.readEntry("Enabled", true);
 
+    qDeleteAll(mActions);
     mActions.clear();
 
     int numActions = config.readEntry("actions", 0);
@@ -579,6 +580,7 @@ QString MailFilter::purify(bool removeAction)
                 informationAboutNotValidAction += action->informationAboutNotValidAction();
                 if (removeAction) {
                     mActions.removeAll(action);
+                    delete action;
                 }
             }
         }

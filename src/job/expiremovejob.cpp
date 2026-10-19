@@ -88,6 +88,7 @@ void ExpireMoveJob::slotMoveDone(KJob *job)
 {
     if (job->error()) {
         qCCritical(MAILCOMMON_LOG) << job->error() << job->errorString();
+        slotExpireDone(job);
         deleteLater();
         return;
     }
