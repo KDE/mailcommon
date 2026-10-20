@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2025-08-29 16:53+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -1631,12 +1631,12 @@ msgstr "Notikusi kritiska kļūda. Apstrāde beidzas."
 msgid "A problem was found while applying this action."
 msgstr "Pielietojot šo darbību, atklāta problēma."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>Filtra noteikums satur pārāk daudz darbību <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1645,7 +1645,7 @@ msgstr ""
 "<qt>Nezināma filtra darbība <b>%1</b><br />filtra noteikumā <b>%2</b>.<br /"
 ">Tā tiek ignorēta.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "Jebkāda definēta darbība."
@@ -2046,7 +2046,7 @@ msgstr[0] "Pārvieto %1 veco vēstuli no mapes „%2“ uz mapi „%3“…"
 msgstr[1] "Pārvieto %1 vecās vēstules no mapes „%2“ uz mapi „%3“…"
 msgstr[2] "Pārvieto %1 veco vēstuļu no mapes „%2“ uz mapi „%3“…"
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
@@ -2054,12 +2054,12 @@ msgstr[0] "Tika pārvietota %1 vecā vēstule no mapes „%2“ uz mapi „%3“
 msgstr[1] "Tika pārvietotas %1 vecās vēstules no mapes „%2“ uz mapi „%3“."
 msgstr[2] "Tika pārvietots %1 veco vēstuļu no mapes „%2“ uz mapi „%3“."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Veco vēstuļu pārvietošana no „%1“ mapes uz „%2“ mapi tika atcelta."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Veco vēstuļu pārvietošana no „%1“ mapes uz „%2“ mapi neizdevās."

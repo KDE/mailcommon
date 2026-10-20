@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2026-08-13 14:22+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -1649,12 +1649,12 @@ msgstr "Er deed zich een kritieke fout voor. De verwerking stopt hier."
 msgid "A problem was found while applying this action."
 msgstr "Er deed zich een probleem voor tijdens het toepassen van deze actie."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>Teveel filteracties in filterregel <b>%1'</b>.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1663,7 +1663,7 @@ msgstr ""
 "<qt>Onbekende filteractie <b>%1</b><br /> in filterregel <b>%2</b>.<br /"
 ">Deze wordt genegeerd.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "Elke gedefinieerde actie."
@@ -2061,19 +2061,19 @@ msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Bezig 1 oud bericht uit map %2 te verplaatsen naar map %3…"
 msgstr[1] "Bezig %1 oude berichten uit map %2 te verplaatsen naar map %3…"
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "1 oud bericht uit map %2 verplaatst naar map %3."
 msgstr[1] "%1 oude berichten uit map %2 verplaatst naar map %3."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Verplaatsing van oude berichten van map %1 naar %2 werd geannuleerd."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Het verplaatsen van oude berichten van map %1 naar %2 is mislukt."

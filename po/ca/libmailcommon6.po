@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2026-08-13 09:16+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -1652,13 +1652,13 @@ msgstr "Ha ocorregut un error crític. El procés s'atura aquí."
 msgid "A problem was found while applying this action."
 msgstr "S'ha trobat un problema en aplicar aquesta acció."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr ""
 "<qt>Hi ha massa accions de filtre a la regla del filtre <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1667,7 +1667,7 @@ msgstr ""
 "<qt>Acció de filtre desconeguda <b>%1</b><br />a la regla del filtre <b>%2</"
 "b>.<br />S'està ignorant.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "Qualsevol acció definida."
@@ -2066,21 +2066,21 @@ msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "S'està movent un missatge antic de la carpeta %2 a la carpeta %3…"
 msgstr[1] "S'està movent %1 missatges antics de la carpeta %2 a la carpeta %3…"
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "S'ha mogut un missatge antic de la carpeta %2 a la carpeta %3."
 msgstr[1] "S'han mogut %1 missatges antics de la carpeta %2 a la carpeta %3."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 "S'ha cancel·lat el trasllat dels missatges antics de la carpeta %1 a la "
 "carpeta %2."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Ha fallat el trasllat dels missatges de la carpeta %1 a la carpeta %2."

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2026-08-15 20:56+0200\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -1650,12 +1650,12 @@ msgstr "Errore critico. Elaborazione conclusa."
 msgid "A problem was found while applying this action."
 msgstr "È stato riscontrato un problema durante l'esecuzione di questa azione."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>Troppe azioni nella regola di filtro <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1664,7 +1664,7 @@ msgstr ""
 "<qt>Azione di filtro <b>%1</b> sconosciuta <br />nella regola di filtro <b>"
 "%2</b>.<br />Ignorata.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "Qualsiasi azione definita."
@@ -2066,20 +2066,20 @@ msgstr[0] ""
 msgstr[1] ""
 "Spostamento di %1 vecchi messaggi dalla cartella %2 alla cartella %3…"
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Spostato 1 vecchio messaggio dalla cartella %2 alla cartella %3."
 msgstr[1] "Spostati %1 vecchi messaggi dalla cartella %2 alla cartella %3."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 "Spostamento vecchi messaggi dalla cartella %1 alla cartella %2 annullato."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr ""

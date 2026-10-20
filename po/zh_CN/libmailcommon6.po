@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -1586,12 +1586,12 @@ msgstr "发生致命错误。在此停止处理。"
 msgid "A problem was found while applying this action."
 msgstr "应用此操作时发现了一个问题。"
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>过滤规则 <b>%1</b> 中包含过多的过滤操作。</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1600,7 +1600,7 @@ msgstr ""
 "<qt>未知的过滤器动作 <b>%1</b><br />位于过滤规则 <b>%2</b> 中。<br />已忽略。"
 "</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "已定义任意动作。"
@@ -1988,18 +1988,18 @@ msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "正在将 %1 条旧消息从文件夹 %2 移动到文件夹 %3 …"
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "将 %1 条旧消息从文件夹 %2 移动到文件夹 %3 已完成。"
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "已取消将旧消息从文件夹 %1 移动到文件夹 %2 。"
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "将旧消息从文件夹 %1 移动到文件夹 %2 失败。"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2026-06-15 16:27+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -1688,13 +1688,13 @@ msgstr "A apărut o eroare critică. Procesarea se oprește aici."
 msgid "A problem was found while applying this action."
 msgstr "A apărut o problemă la aplicarea acestei acțiuni."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr ""
 "<qt>Prea multe acțiuni de filtrare în regula de filtrare <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1703,7 +1703,7 @@ msgstr ""
 "<qt>Acțiune de filtru necunoscută <b>%1</b><br />în regula de filtrare <b>"
 "%2</b>.<br />O ignor.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, fuzzy, kde-format
 #| msgid "Folder creation failed"
 msgid "Any action defined."
@@ -2125,7 +2125,7 @@ msgstr[0] "Se mută 1 mesaj vechi din dosarul %2 în dosarul %3..."
 msgstr[1] "Se mută %1 mesaje vechi din dosarul %2 în dosarul %3..."
 msgstr[2] "Se mută %1 de mesaje vechi din dosarul %2 în dosarul %3..."
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
@@ -2133,12 +2133,12 @@ msgstr[0] "S-a mutat 1 mesaj vechi din dosarul %2 în dosarul %3."
 msgstr[1] "S-au mutat %1 de mesaje vechi din dosarul %2 în dosarul %3."
 msgstr[2] "S-au mutat %1 mesaje vechi din dosarul %2 în dosarul %3."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Mutarea mesajelor vechi din dosarul %1 în dosarul %2 a fost anulată."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Mutarea mesajelor vechi din dosarul %1 în dosarul %2 a eșuat."

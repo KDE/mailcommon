@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2017-12-15 12:38+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -1761,12 +1761,12 @@ msgstr "Kritična greška, obrada obustavljena."
 msgid "A problem was found while applying this action."
 msgstr "Došlo je do problema tokom primene ove radnje."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>Previše filterskih radnji u filterskom pravilu <b>%1</b>?</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1775,7 +1775,7 @@ msgstr ""
 "<qt>Nepoznata filterska radnja <b>%1</b><br />u filterskom pravilu <b>%2</b>."
 "<br />Ignorišem je.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "Nije definisana nijedna radnja."
@@ -2202,7 +2202,7 @@ msgstr[1] "Premeštam %1 stare poruke iz fascikle %2 u fasciklu %3..."
 msgstr[2] "Premeštam %1 starih poruka iz fascikle %2 u fasciklu %3..."
 msgstr[3] "Premeštam 1 staru poruku iz fascikle %2 u fasciklu %3..."
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
@@ -2211,12 +2211,12 @@ msgstr[1] "Premeštene %1 stare poruke iz fascikle %2 u fasciklu %3."
 msgstr[2] "Premešteno %1 starih poruka iz fascikle %2 u fasciklu %3."
 msgstr[3] "Premeštena 1 stara poruka iz fascikle %2 u fasciklu %3."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Premeštanje starih poruka iz fascikle %1 u fasciklu %2 je otkazano."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Premeštanje starih poruka iz fascikle %1 u fasciklu %2 nije uspelo."

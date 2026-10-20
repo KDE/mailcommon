@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2026-08-17 21:17+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -1613,12 +1613,12 @@ msgstr "حدث خطأ حرج. توقّفت المعالجة هنا."
 msgid "A problem was found while applying this action."
 msgstr "حدثت مشكلة أثناء تطبيق هذا الإجراء."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>عدد كبير جدًا من إجراءات التصفية في قاعدة المرشح <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1627,7 +1627,7 @@ msgstr ""
 "<qt>إجراء تصفية غير معروف <b>%1</b><br />في قاعدة المرشح <b>%2</b>.<br /"
 ">تجاهله.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "أي إجراء معرف."
@@ -2036,7 +2036,7 @@ msgstr[3] "ينقل %1 رسائل قديمة من المجلد %2 إلى الم�
 msgstr[4] "ينقل %1 رسالة قديمة من المجلد %2 إلى المجلد %3..."
 msgstr[5] "ينقل %1 رسالة قديمة من المجلد %2 إلى المجلد %3..."
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
@@ -2047,12 +2047,12 @@ msgstr[3] "نُقلت %1 رسائل قديمة من المجلد %2 إلى ال�
 msgstr[4] "نُقلت %1 رسالة قديمة من المجلد %2 إلى المجلد %3..."
 msgstr[5] "نُقلت %1 رسالة قديمة من المجلد %2 إلى المجلد %3..."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "ألغي نقل الرسائل القديمة من المجلد %1 إلى المجلد %2."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "فشل نقل الرسائل القديمة من المجلد %1 إلى المجلد %2."

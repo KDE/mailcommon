@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2026-09-29 00:54+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -1603,12 +1603,12 @@ msgstr "치명적인 오류가 발생했습니다. 처리를 중단합니다."
 msgid "A problem was found while applying this action."
 msgstr "이 동작을 적용하는 중 문제가 발생했습니다."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>필터 규칙 <b>%1</b>에 너무 많은 필터 동작이 있습니다.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1617,7 +1617,7 @@ msgstr ""
 "<qt>필터 규칙 <b>%2</b>에<br />알 수 없는 필터 동작 <b>%1</b>이(가) 있습니다."
 "<br />무시합니다.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "동작이 정의되었습니다."
@@ -2007,18 +2007,18 @@ msgid "Moving 1 old message from folder %2 to folder %3…"
 msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "%2 폴더에서 %3 폴더로 오래된 메시지 %1개 이동 중…"
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "%2 폴더에서 오래된 메시지 %1개를 폴더 %3(으)로 이동했습니다."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "%1 폴더에서 %2(으)로 오래된 메시지 이동 작업이 취소되었습니다."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "%1 폴더에서 %2 폴더로 오래된 메시지를 이동할 수 없습니다."

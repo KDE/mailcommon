@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2024-12-15 19:31+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
@@ -1617,12 +1617,12 @@ msgstr "एक गंभीर त्रुटि हुई। प्रसं�
 msgid "A problem was found while applying this action."
 msgstr "इस कार्रवाई को लागू करते समय एक समस्या पाई गई."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>फ़िल्टर नियम <b>%1</b> में बहुत अधिक फ़िल्टर क्रियाएँ हैं.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1631,7 +1631,7 @@ msgstr ""
 "<qt>अज्ञात फ़िल्टर क्रिया <b>%1</b><br /> फ़िल्टर नियम <b>%2</b> में.<br /> इसे अनदेखा "
 "करना.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "कोई भी परिभाषित कार्रवाई."
@@ -2026,19 +2026,19 @@ msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "%1 पुराने संदेशों को फ़ोल्डर %2 से फ़ोल्डर %3 में ले जाया जा रहा है…"
 msgstr[1] "%1 पुराने संदेशों को फ़ोल्डर %2 से फ़ोल्डर %3 में ले जाया जा रहा है…"
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "%1 पुराने संदेशों को फ़ोल्डर %2 से फ़ोल्डर %3 में स्थानांतरित किया गया."
 msgstr[1] "%1 पुराने संदेशों को फ़ोल्डर %2 से फ़ोल्डर %3 में स्थानांतरित किया गया."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "पुराने संदेशों को फ़ोल्डर %1 से फ़ोल्डर %2 में ले जाना रद्द कर दिया गया."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "पुराने संदेशों को फ़ोल्डर %1 से फ़ोल्डर %2 में ले जाना विफल रहा."

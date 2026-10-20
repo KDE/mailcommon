@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2026-09-05 11:10+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -1630,12 +1630,12 @@ msgstr "Sattui kriittinen virhe. Prosessointi lopetetaan."
 msgid "A problem was found while applying this action."
 msgstr "Toimenpidettä suoritettaessa kohdattiin ongelma."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>Liian monta toimenpidettä suodatussäännössä <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1644,7 +1644,7 @@ msgstr ""
 "<qt>Tuntematon toimenpide <b>%1</b><br />suodatinsäännössä <b>%2</b>. <br /"
 ">Ohitetaan.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "Mikä tahansa määritetty toiminto."
@@ -2039,19 +2039,19 @@ msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Siirretään yksi vanha viesti kansiosta %2 kansioon %3…"
 msgstr[1] "Siirretään %1 vanhaa viestiä kansiosta %2 kansioon %3…"
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Siirrettiin 1 vanha viesti kansiosta %2 kansioon %3."
 msgstr[1] "Siirrettiin %1 vanhaa viestiä kansiosta %2 kansioon %3."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Vanhojen viestien siirto kansiosta %1 kansioon %2 peruttiin."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Vanhojen viestien siirto kansiosta %1 kansioon %2 epäonnistui."

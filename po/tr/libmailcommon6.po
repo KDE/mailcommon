@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2026-10-12 11:58+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -1632,12 +1632,12 @@ msgstr "Kritik bir hata oluştu. İşlem burada sonlanıyor."
 msgid "A problem was found while applying this action."
 msgstr "Bu eylem uygulanırken bir problem bulundu."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt><b>%1</b> süzgeç kuralında çok sayıda süzme eylemi var.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1646,7 +1646,7 @@ msgstr ""
 "<qt>Bilinmeyen süzgeç eylemi <b>%1</b><br />Süzgeç kuralı: <b>%2</b>.<br /"
 ">Yok sayılıyor.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "Herhangi bir eylem tanımlandı."
@@ -2041,19 +2041,19 @@ msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "%2 klasöründeki 1 eski ileti %3 klasörüne taşınıyor…"
 msgstr[1] "%2 klasöründeki %1 eski ileti %3 klasörüne taşınıyor…"
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "%2 klasöründeki 1 eski ileti %3 klasörüne taşındı."
 msgstr[1] "%2 dizinindeki %1 eski ileti %3 klasörüne taşındı."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "%1 klasöründeki eski iletilerin %2 klasörüne taşınması iptal edildi."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "%1 klasöründeki eski iletilerin %2 klasörüne taşınması başarısız oldu."

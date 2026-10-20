@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2026-09-06 18:08+0200\n"
 "Last-Translator: Alexander Yavorskiy <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -1658,12 +1658,12 @@ msgstr "Критическая ошибка. Обработка остановл
 msgid "A problem was found while applying this action."
 msgstr "Произошла ошибка при выполнении действия."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>Слишком много действий в правиле фильтрации <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1672,7 +1672,7 @@ msgstr ""
 "<qt>Неизвестное действие <b>%1</b><br />в правиле фильтрации <b>%2</b>.<br /"
 ">Действие игнорируется.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "Любое заданное действие."
@@ -2077,7 +2077,7 @@ msgstr[1] "Перемещение %1 устаревших писем из пап
 msgstr[2] "Перемещение %1 устаревших писем из папки %2 в папку %3…"
 msgstr[3] "Перемещение 1 устаревшего письма из папки %2 в папку %3…"
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
@@ -2086,12 +2086,12 @@ msgstr[1] "Перемещены %1 устаревших письма из пап
 msgstr[2] "Перемещено %1 устаревших писем из папки %2 в папку %3."
 msgstr[3] "Перемещено 1 устаревшее письмо из папки %2 в папку %3."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "Перемещение устаревших писем из %1 в %2 было прервано."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Не удалось переместить устаревшие письма из папки %1 в папку %2."

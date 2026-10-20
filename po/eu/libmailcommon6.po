@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2026-09-28 20:54+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -1647,12 +1647,12 @@ msgstr "Errore larri bat gertatu da. Prozesatzea hemen bukatzen da."
 msgid "A problem was found while applying this action."
 msgstr "Arazo bat aurkitu da ekintza hau aplikatzean."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt><b>%1</b> iragazki arauan ekintza gehiegi.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1661,7 +1661,7 @@ msgstr ""
 "<qt><b>%1</b> iragazte ekintza ezezaguna<br /><b>%2</b> iragazki ekintzan."
 "<br />Ezikusi egiten.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "Definitutako edozein ekintza."
@@ -2056,20 +2056,20 @@ msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Mezu zahar 1 %2 karpetatik %3 karpetara eramaten…"
 msgstr[1] "%1 mezu zahar %2 karpetatik %3 karpetara eramaten…"
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Mezu zahar 1 eraman da %2 karpetatik %3 karpetara."
 msgstr[1] "%1 mezu zahar eraman dira %2 karpetatik %3 karpetara."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 "Mezu zaharrak %1 karpetatik %2 karpetara eramatea bertan behera utzi da."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Mezu zaharrak %1 karpetatik %2 karpetara eramatea huts egin du."

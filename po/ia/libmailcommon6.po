@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2026-09-14 17:17+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -1650,12 +1650,12 @@ msgstr "Un error critic occurreva. Le processar stoppa hic."
 msgid "A problem was found while applying this action."
 msgstr "Un problema esseva trovate durante que on applicava iste action."
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>Nimie actiones de filtro in regula de filtro <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1664,7 +1664,7 @@ msgstr ""
 "<qt>Incognite action de filtro <b>%1</b><br />in regula de filtro <b>%2</b>."
 "<br />On ignora lo.</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "Ulle action definite."
@@ -2061,20 +2061,20 @@ msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "Movente 1 vetere message ex dossier %2 a dossier %3 ..."
 msgstr[1] "Movente %1 vetere messages ex dossier %2 a dossier %3..."
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "Movite 1 vetere message ex dossier %2 a dossier %3."
 msgstr[1] "Movite %1 vetere messages ex dossier %2 a dossier %3."
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 "Le remover  vetule messages ex dossier %1 a dossier %2 esseva cancellate."
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "Le remover de vetule messages ex dossier %1 a dossier  %2 falleva."

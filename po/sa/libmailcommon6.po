@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:49+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -1615,12 +1615,12 @@ msgstr "एकः गम्भीरः दोषः अभवत् । अत�
 msgid "A problem was found while applying this action."
 msgstr "एतत् कार्यं प्रयोजयन् समस्या प्राप्ता ।"
 
-#: filter/mailfilter.cpp:427
+#: filter/mailfilter.cpp:428
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>फ़िल्टर नियम <b>%1</b> मध्ये अत्यधिकाः फ़िल्टर क्रियाः ।</qt>"
 
-#: filter/mailfilter.cpp:461
+#: filter/mailfilter.cpp:462
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1629,7 +1629,7 @@ msgstr ""
 "<qt>अज्ञात फ़िल्टर क्रिया <b>%1</b><br /> फ़िल्टर नियमे <b>%2</b> .<br /> तस्य "
 "अवहेलना ।</qt>"
 
-#: filter/mailfilter.cpp:569
+#: filter/mailfilter.cpp:570
 #, kde-format
 msgid "Any action defined."
 msgstr "यत्किमपि कर्म विवक्षितम्।"
@@ -2024,19 +2024,19 @@ msgid_plural "Moving %1 old messages from folder %2 to folder %3…"
 msgstr[0] "%2 पुटतः %3 पुटं प्रति 1 पुरातनं सन्देशं स्थानान्तरयति..."
 msgstr[1] "%1 पुरातनसन्देशान् %2 पुटतः %3 पुटं प्रति स्थानान्तरयति..."
 
-#: job/expiremovejob.cpp:127
+#: job/expiremovejob.cpp:128
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "%2 पुटतः %3 पुटं प्रति 1 पुरातनं सन्देशं स्थानान्तरितम् ।"
 msgstr[1] "%1 पुरातनसन्देशाः %2 पुटेतः %3 पुटे स्थानान्तरिताः ।"
 
-#: job/expiremovejob.cpp:136
+#: job/expiremovejob.cpp:137
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr "%1 पुटतः %2 पुटं प्रति पुरातनसन्देशान् स्थानान्तरणं रद्दं कृतम् ।"
 
-#: job/expiremovejob.cpp:143
+#: job/expiremovejob.cpp:144
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr "%1 पुटतः %2 पुटं प्रति पुरातनसन्देशान् स्थानान्तरयितुं विफलम् ।"
