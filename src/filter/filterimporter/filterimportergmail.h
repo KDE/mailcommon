@@ -7,6 +7,7 @@
 #pragma once
 
 #include "filter/filterimporter/filterimporterabstract.h"
+#include "mailcommon_private_export.h"
 
 class QFile;
 class QDomElement;
@@ -21,7 +22,7 @@ namespace MailCommon
  * \brief The FilterImporterGmail class
  * \author Laurent Montel <montel@kde.org>
  */
-class MAILCOMMON_EXPORT FilterImporterGmail : public FilterImporterAbstract
+class MAILCOMMON_TESTS_EXPORT FilterImporterGmail : public FilterImporterAbstract
 {
 public:
     /*!
