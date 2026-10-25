@@ -38,7 +38,7 @@ public:
 
 private:
     [[nodiscard]] MAILCOMMON_NO_EXPORT QString createUniqFilterName();
-    void parseFilters(const QDomElement &e);
+    MAILCOMMON_NO_EXPORT void parseFilters(const QDomElement &e);
     int mFilterCount = 0;
 };
 }

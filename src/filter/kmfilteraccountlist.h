@@ -28,6 +28,6 @@ public:
     [[nodiscard]] QStringList selectedAccounts() const;
 
 private:
-    void reloadAndSelectAccountsInternal(const std::function<bool(const QString &)> &decideSelected);
+    MAILCOMMON_NO_EXPORT void reloadAndSelectAccountsInternal(const std::function<bool(const QString &)> &decideSelected);
 };
 }

@@ -59,9 +59,9 @@ Q_SIGNALS:
     void textChanged(const QString &);
 
 private:
-    void playSound();
-    void openSoundDialog(KUrlRequester *);
-    void slotUrlChanged(const QString &);
+    MAILCOMMON_NO_EXPORT void playSound();
+    MAILCOMMON_NO_EXPORT void openSoundDialog(KUrlRequester *);
+    MAILCOMMON_NO_EXPORT void slotUrlChanged(const QString &);
     KUrlRequester *const m_urlRequester;
     QPushButton *const m_playButton;
     QMediaPlayer *m_player = nullptr;

@@ -44,7 +44,7 @@ public:
     [[nodiscard]] QString informationAboutNotValidAction() const override;
 
 private:
-    void slotTagListingFinished();
+    MAILCOMMON_NO_EXPORT void slotTagListingFinished();
 
 private:
     MAILCOMMON_NO_EXPORT void fillComboBox();

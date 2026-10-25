@@ -29,8 +29,8 @@ public:
     void setCode(const QString &code);
 
 private:
-    void slotSave();
-    void readConfig();
+    MAILCOMMON_NO_EXPORT void slotSave();
+    MAILCOMMON_NO_EXPORT void readConfig();
     TextCustomEditor::PlainTextEditorWidget *const mEditor;
     PimCommon::PurposeMenuMessageWidget *const mPurposeMenuMessageWidget;
     KSyntaxHighlighting::Repository mSyntaxRepo;

@@ -297,11 +297,11 @@ public:
 #endif
 
 private:
-    void findCreateDefaultCollection(Akonadi::SpecialMailCollections::Type);
+    MAILCOMMON_NO_EXPORT void findCreateDefaultCollection(Akonadi::SpecialMailCollections::Type);
 
 private Q_SLOTS:
-    void createDefaultCollectionDone(KJob *job);
-    void slotDefaultCollectionsChanged();
+    MAILCOMMON_NO_EXPORT void createDefaultCollectionDone(KJob *job);
+    MAILCOMMON_NO_EXPORT void slotDefaultCollectionsChanged();
 
 Q_SIGNALS:
     /*!
