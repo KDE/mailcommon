@@ -7,7 +7,7 @@
 #pragma once
 
 #include "filter/filterimporter/filterimporterabstract.h"
-#include "mailcommon_export.h"
+#include "mailcommon_private_export.h"
 
 class QFile;
 class QTextStream;
@@ -23,7 +23,7 @@ class MailFilter;
  * \brief The FilterImporterThunderbird class
  * \author Laurent Montel <montel@kde.org>
  */
-class MAILCOMMON_EXPORT FilterImporterThunderbird : public FilterImporterAbstract
+class MAILCOMMON_TESTS_EXPORT FilterImporterThunderbird : public FilterImporterAbstract
 {
 public:
     /*!

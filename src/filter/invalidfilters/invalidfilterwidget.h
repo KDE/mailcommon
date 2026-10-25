@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include "mailcommon_export.h"
+#include "mailcommon_private_export.h"
 #include <QWidget>
 
 namespace MailCommon
@@ -21,7 +21,7 @@ class InvalidFilterListView;
  * \brief The InvalidFilterWidget class
  * \author Laurent Montel <montel@kde.org>
  */
-class MAILCOMMON_EXPORT InvalidFilterWidget : public QWidget
+class MAILCOMMON_TESTS_EXPORT InvalidFilterWidget : public QWidget
 {
     Q_OBJECT
 public:
