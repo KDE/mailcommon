@@ -10,8 +10,6 @@
 
 #pragma once
 
-#include "mailcommon_export.h"
-
 #include <Libkdepim/KWidgetLister>
 #include <QList>
 namespace MailCommon
@@ -96,7 +94,7 @@ private:
  * \author Marc Mutz <mutz@kde.org>
  * \sa MailCommon::FilterAction MailCommon::MailFilter FilterActionWidget
  */
-class MAILCOMMON_EXPORT FilterActionWidgetLister : public KPIM::KWidgetLister
+class FilterActionWidgetLister : public KPIM::KWidgetLister
 {
     Q_OBJECT
 
