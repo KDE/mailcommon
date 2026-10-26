@@ -176,7 +176,7 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX MAILCOMMON
 )
 
 if(TARGET KPim6::PimCommonActivities)
-    option(OPTION_USE_PLASMA_ACTIVITIES "Activate plasma activities (experimental)" ON)
+    option(OPTION_USE_PLASMA_ACTIVITIES "Activate plasma activities" ON)
     if(OPTION_USE_PLASMA_ACTIVITIES)
         if(NOT WIN32 AND NOT APPLE)
             set(OPTION_USE_PLASMA_ACTIVITIES true)
@@ -185,17 +185,15 @@ if(TARGET KPim6::PimCommonActivities)
         endif()
     endif()
     if(OPTION_USE_PLASMA_ACTIVITIES)
-        if(NOT WIN32 AND NOT APPLE)
-            find_package(PlasmaActivities "6.5.0")
-            set_package_properties(
-                PlasmaActivities
-                PROPERTIES
-                    DESCRIPTION
-                        "Allow to compile with plasma activities"
-                    TYPE
-                        OPTIONAL
-            )
-        endif()
+        find_package(PlasmaActivities "6.5.0")
+        set_package_properties(
+            PlasmaActivities
+            PROPERTIES
+                DESCRIPTION
+                    "Allow to compile with plasma activities"
+                TYPE
+                    OPTIONAL
+        )
 
         if(TARGET Plasma::Activities)
             set(MAILCOMMON_HAVE_ACTIVITY_SUPPORT TRUE)
