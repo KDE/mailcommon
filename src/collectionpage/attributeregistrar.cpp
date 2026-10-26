@@ -5,6 +5,7 @@
 */
 
 #include "collectionpage/attributes/expirecollectionattribute.h"
+#include "snooze/attributes/snoozeattribute.h"
 #include <Akonadi/NewMailNotifierAttribute>
 
 #include <Akonadi/AttributeFactory>
@@ -16,6 +17,7 @@ bool dummy()
 {
     Akonadi::AttributeFactory::registerAttribute<MailCommon::ExpireCollectionAttribute>();
     Akonadi::AttributeFactory::registerAttribute<Akonadi::NewMailNotifierAttribute>();
+    Akonadi::AttributeFactory::registerAttribute<MailCommon::SnoozeAttribute>();
     return true;
 }
 
