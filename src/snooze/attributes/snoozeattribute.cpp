@@ -38,6 +38,7 @@ QByteArray SnoozeAttribute::serialized() const
 void SnoozeAttribute::deserialize(const QByteArray &data)
 {
     QDataStream s(data);
+    s.setVersion(QDataStream::Qt_6_0);
     s >> mWakeUpDateTime;
 }
 
