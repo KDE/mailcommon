@@ -15,6 +15,11 @@ using namespace MailCommon;
 FavoriteCollectionOrderProxyModel::FavoriteCollectionOrderProxyModel(QObject *parent)
     : EntityOrderProxyModel(parent)
 {
+    connect(Akonadi::AgentManager::self(), &Akonadi::AgentManager::instanceActivitiesChanged, this, [this]() {
+        if (mAccountActivities) {
+            slotInvalidateFilter();
+        }
+    });
 }
 
 FavoriteCollectionOrderProxyModel::~FavoriteCollectionOrderProxyModel() = default;

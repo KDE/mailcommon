@@ -84,6 +84,11 @@ FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModel(QObject *parent, FolderTr
     if (option & HideOutboxFolder) {
         d->hideOutboxFolder = true;
     }
+    connect(Akonadi::AgentManager::self(), &Akonadi::AgentManager::instanceActivitiesChanged, this, [this]() {
+        if (d->accountActivities) {
+            slotInvalidateFilter();
+        }
+    });
     readConfig();
 }
 
