@@ -47,7 +47,7 @@ bool FavoriteCollectionOrderProxyModel::filterAcceptsRow(int sourceRow, const QM
             return mAccountActivities->filterAcceptsRow(instance.activities());
         }
     }
-    return Akonadi::EntityOrderProxyModel::filterAcceptsColumn(sourceRow, sourceParent);
+    return Akonadi::EntityOrderProxyModel::filterAcceptsRow(sourceRow, sourceParent);
 }
 
 void FavoriteCollectionOrderProxyModel::slotInvalidateFilter()
