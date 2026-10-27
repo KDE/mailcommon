@@ -41,8 +41,8 @@ public:
      * If \a immediate is true, the scheduler will run this task as soon
      * as possible (but won't interrupt a currently running job for it).
      *
-     * \param folder The Akonadi collection to perform the task on
-     * \param immediate Whether the task should be run immediately
+     * \a folder The Akonadi collection to perform the task on
+     * \a immediate Whether the task should be run immediately
      */
     ScheduledTask(const Akonadi::Collection &folder, bool immediate);
     /*!
@@ -93,7 +93,7 @@ private:
 };
 
 /*!
- * \class MailCommon::ScheduledJob
+ * \class MailCommon::JobScheduler
  * \inmodule MailCommon
  * \inheaderfile MailCommon/JobScheduler
  *
@@ -111,7 +111,7 @@ public:
     /*!
      * Constructs a job scheduler.
      *
-     * \param parent The parent object
+     * \a parent The parent object
      */
     explicit JobScheduler(QObject *parent);
     /*!
@@ -123,7 +123,7 @@ public:
      * Register a task to be done for a given folder. The ownership of the task is transferred
      * to the JobScheduler.
      *
-     * \param task The task to register
+     * \a task The task to register
      */
     void registerTask(ScheduledTask *task);
 
@@ -173,8 +173,8 @@ public:
     /*!
      * Constructs a scheduled job.
      *
-     * \param folder The Akonadi collection to perform the job on
-     * \param immediate Whether the job should be run immediately
+     * \a folder The Akonadi collection to perform the job on
+     * \a immediate Whether the job should be run immediately
      */
     ScheduledJob(const Akonadi::Collection &folder, bool immediate);
     /*!

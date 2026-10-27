@@ -21,7 +21,8 @@ namespace MailCommon
  * \inmodule MailCommon
  * \inheaderfile MailCommon/SnippetWidget
  *
- * \brief The SnippetWidget class
+ * \brief The SnippetWidget class.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT SnippetWidget : public QWidget
@@ -31,7 +32,7 @@ public:
     /*!
      * Constructs a snippet widget.
      *
-     * \param parent The parent widget
+     * \a parent The parent widget
      */
     explicit SnippetWidget(QWidget *parent = nullptr);
     /*!
@@ -42,7 +43,7 @@ public:
     /*!
      * Sets the name of the snippet.
      *
-     * \param name The snippet name
+     * \a name The snippet name
      */
     void setName(const QString &name);
     /*!
@@ -55,7 +56,7 @@ public:
     /*!
      * Sets the text content of the snippet.
      *
-     * \param text The snippet text
+     * \a text The snippet text
      */
     void setText(const QString &text);
     /*!
@@ -68,7 +69,7 @@ public:
     /*!
      * Sets the keyboard shortcut for this snippet.
      *
-     * \param sequence The key sequence
+     * \a sequence The key sequence
      */
     void setKeySequence(const QKeySequence &sequence);
     /*!
@@ -81,7 +82,7 @@ public:
     /*!
      * Sets the keyword that triggers this snippet.
      *
-     * \param keyword The trigger keyword
+     * \a keyword The trigger keyword
      */
     void setKeyword(const QString &keyword);
     /*!
@@ -94,7 +95,7 @@ public:
     /*!
      * Sets the "To" email address for this snippet.
      *
-     * \param keyword The email address
+     * \a keyword The email address
      */
     void setTo(const QString &keyword);
     /*!
@@ -107,7 +108,7 @@ public:
     /*!
      * Sets the "CC" email addresses for this snippet.
      *
-     * \param keyword The email addresses
+     * \a keyword The email addresses
      */
     void setCc(const QString &keyword);
     /*!
@@ -120,7 +121,7 @@ public:
     /*!
      * Sets the "BCC" email addresses for this snippet.
      *
-     * \param keyword The email addresses
+     * \a keyword The email addresses
      */
     void setBcc(const QString &keyword);
     /*!
@@ -133,13 +134,13 @@ public:
     /*!
      * Sets the group model for organizing snippets.
      *
-     * \param model The abstract item model
+     * \a model The abstract item model
      */
     void setGroupModel(QAbstractItemModel *model);
     /*!
      * Sets the current group index.
      *
-     * \param index The model index of the group
+     * \a index The model index of the group
      */
     void setGroupIndex(const QModelIndex &index);
 
@@ -159,14 +160,14 @@ public:
     /*!
      * Sets the action collections for checking keyboard shortcut conflicts.
      *
-     * \param lst The list of action collections
+     * \a lst The list of action collections
      */
     void setCheckActionCollections(const QList<KActionCollection *> &lst);
 
     /*!
      * Sets whether the snippet group is selected.
      *
-     * \param b True if the group is selected
+     * \a b True if the group is selected
      */
     void setGroupSelected(bool b);
 
@@ -190,14 +191,14 @@ public:
     /*!
      * Sets the modified state of the snippet.
      *
-     * \param b True if the snippet was changed
+     * \a b True if the snippet was changed
      */
     void setWasChanged(bool b);
 
     /*!
      * Sets the subject line for this snippet.
      *
-     * \param text The subject text
+     * \a text The subject text
      */
     void setSubject(const QString &text);
     /*!
@@ -210,7 +211,7 @@ public:
     /*!
      * Sets the attachment path for this snippet.
      *
-     * \param keyword The attachment path
+     * \a keyword The attachment path
      */
     void setAttachment(const QString &keyword);
     /*!
@@ -224,13 +225,13 @@ Q_SIGNALS:
     /*!
      * Emitted when the text content of the snippet has changed.
      *
-     * \param str The new text
+     * \a str The new text
      */
     void textChanged(const QString &str);
     /*!
      * Emitted when the group selection has changed.
      *
-     * \param index The new group index
+     * \a index The new group index
      */
     void groupChanged(int index);
 

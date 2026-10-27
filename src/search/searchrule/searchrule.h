@@ -31,6 +31,7 @@ class MAILCOMMON_EXPORT SearchRule
 {
 public:
     /*!
+     * \typedef MailCommon::SearchRule::Ptr
      * Defines a pointer to a search rule.
      */
     using Ptr = std::shared_ptr<SearchRule>;
@@ -43,6 +44,30 @@ public:
      * in SearchRule, too.
      * Also, it is assumed that these functions come in pairs of logical
      * opposites (ie. "=" <-> "!=", ">" <-> "<=", etc.).
+     *
+     * \value FuncNone No function
+     * \value FuncContains The field contains the contents
+     * \value FuncContainsNot The field does not contain the contents
+     * \value FuncEquals The field equals the contents
+     * \value FuncNotEqual The field does not equal the contents
+     * \value FuncRegExp The field matches the regular expression
+     * \value FuncNotRegExp The field does not match the regular expression
+     * \value FuncIsGreater The field is greater than the contents
+     * \value FuncIsLessOrEqual The field is less than or equal to the contents
+     * \value FuncIsLess The field is less than the contents
+     * \value FuncIsGreaterOrEqual The field is greater than or equal to the contents
+     * \value FuncIsInAddressbook The address is in the address book
+     * \value FuncIsNotInAddressbook The address is not in the address book
+     * \value FuncIsInCategory The address is in the category
+     * \value FuncIsNotInCategory The address is not in the category
+     * \value FuncHasAttachment The message has an attachment
+     * \value FuncHasNoAttachment The message has no attachment
+     * \value FuncStartWith The field starts with the contents
+     * \value FuncNotStartWith The field does not start with the contents
+     * \value FuncEndWith The field ends with the contents
+     * \value FuncNotEndWith The field does not end with the contents
+     * \value FuncHasInvitation The message has an invitation
+     * \value FuncHasNoInvitation The message has no invitation
      */
     enum Function {
         FuncNone = -1,
@@ -71,13 +96,16 @@ public:
     };
 
     /*!
-     * @enum RequiredPart
-     * \brief Possible required parts.
+     * Possible required parts.
+     *
+     * \value Envelope Envelope
+     * \value Header Header
+     * \value CompleteMessage Whole message
      */
     enum RequiredPart {
-        Envelope = 0, ///< Envelope
-        Header, ///< Header
-        CompleteMessage ///< Whole message
+        Envelope = 0,
+        Header,
+        CompleteMessage
     };
 
     /*!
@@ -156,7 +184,7 @@ ote This function does no validation of the data obtained
      *
      * \note Must be implemented by subclasses.
      *
-     * \param item The Akonadi item to match against
+     * \a item The Akonadi item to match against
      * \return True if the rule matches, false otherwise
      */
     virtual bool matches(const Akonadi::Item &item) const = 0;
@@ -182,8 +210,8 @@ ote This function does no validation of the data obtained
     /*!
      * Saves the object into a given config \a group.
      *
-     * \param group The config group.
-     * \param index The identifier that is used to distinguish
+     * \a group The config group.
+     * \a index The identifier that is used to distinguish
      *              rules within a single config group.
      *
      * \note This function will happily write itself even when it's
@@ -194,15 +222,15 @@ ote This function does no validation of the data obtained
     /*!
      * Generates a Sieve script representation of this rule.
      *
-     * \param requireModules The list of Sieve modules required by the script
-     * \param code The generated Sieve script code
+     * \a requireModules The list of Sieve modules required by the script
+     * \a code The generated Sieve script code
      */
     void generateSieveScript(QStringList &requireModules, QString &code);
 
     /*!
      * Sets the filter \a function of the rule.
      *
-     * \param function The filter function to set
+     * \a function The filter function to set
      */
     void setFunction(Function function);
 
@@ -218,7 +246,7 @@ ote This function does no validation of the data obtained
      *
      * \note Make sure the name contains no trailing ':'.
      *
-     * \param name The header field name
+     * \a name The header field name
      */
     void setField(const QByteArray &name);
 
@@ -245,7 +273,7 @@ ote This function does no validation of the data obtained
      * This can be either a substring to search for in
      * or a regexp pattern to match against the header.
      *
-     * \param contents The contents to search for
+     * \a contents The contents to search for
      */
     void setContents(const QString &contents);
 
@@ -266,8 +294,8 @@ ote This function does no validation of the data obtained
     /*!
      * Adds query terms to the given term group.
      *
-     * \param groupTerm The search term group to add query terms to
-     * \param emptyIsNotAnError Whether empty values should be considered an error
+     * \a groupTerm The search term group to add query terms to
+     * \a emptyIsNotAnError Whether empty values should be considered an error
      */
     virtual void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const
     {
@@ -307,7 +335,7 @@ protected:
     /*!
      * Logs the result of a match operation for debugging purposes.
      *
-     * \param result The result of the match operation
+     * \a result The result of the match operation
      */
     void maybeLogMatchResult(bool result) const;
 

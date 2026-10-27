@@ -27,7 +27,7 @@ public:
     /**
      * Creates a new sound test widget.
      *
-     * @param parent The parent widget.
+     * \a parent The parent widget.
      */
     explicit SoundTestWidget(QWidget *parent = nullptr);
 

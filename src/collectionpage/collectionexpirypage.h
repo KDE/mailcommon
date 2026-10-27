@@ -20,7 +20,8 @@ class CollectionExpiryWidget;
  * \inmodule MailCommon
  * \inheaderfile MailCommon/CollectionExpiryPage
  *
- * \brief The CollectionExpiryPage class
+ * \brief The CollectionExpiryPage class.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT CollectionExpiryPage : public Akonadi::CollectionPropertiesPage
@@ -29,21 +30,24 @@ class MAILCOMMON_EXPORT CollectionExpiryPage : public Akonadi::CollectionPropert
 
 public:
     /*!
-     * \brief CollectionExpiryPage
-     * \param parent
+     * Constructs the expiry page with the given \a parent.
      */
     explicit CollectionExpiryPage(QWidget *parent = nullptr);
     /*!
+     * Destroys the expiry page.
      */
     ~CollectionExpiryPage() override;
 
     /*!
+     * Returns \c true if expiry can be configured for the collection \a col.
      */
     [[nodiscard]] bool canHandle(const Akonadi::Collection &col) const override;
     /*!
+     * Loads the expiry settings of \a collection.
      */
     void load(const Akonadi::Collection &collection) override;
     /*!
+     * Saves the expiry settings into \a collection.
      */
     void save(Akonadi::Collection &collection) override;
 

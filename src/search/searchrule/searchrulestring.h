@@ -23,9 +23,9 @@ public:
     /**
      * Creates new new string search rule.
      *
-     * @param field The field to search in.
-     * @param function The function to use for searching.
-     * @param contents The contents to search for.
+     * \a field The field to search in.
+     * \a function The function to use for searching.
+     * \a contents The contents to search for.
      */
     explicit SearchRuleString(const QByteArray &field = QByteArray(), Function function = FuncContains, const QString &contents = QString());
 

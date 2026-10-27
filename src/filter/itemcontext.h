@@ -16,11 +16,11 @@
 namespace MailCommon
 {
 /*!
- * \class MailCommon::CollectionGeneralWidget
+ * \class MailCommon::ItemContext
  * \inmodule MailCommon
- * \inheaderfile MailCommon/CollectionGeneralWidget
+ * \inheaderfile MailCommon/ItemContext
  *
- * \brief A helper class for the filtering process
+ * \brief A helper class for the filtering process.
  *
  * The item context is used to pass the item together with meta data
  * through the filter chain.
@@ -32,7 +32,7 @@ class MAILCOMMON_EXPORT ItemContext
 public:
     /*!
      * Creates an item context for the given \a item.
-     * \a requestedPart the part requested for the item (Envelope, Header or CompleteMessage)
+     * \a needsFullPayload is \c true if the full payload was requested for the item.
      */
     ItemContext(const Akonadi::Item &item, bool needsFullPayload);
 
@@ -42,7 +42,7 @@ public:
     Akonadi::Item &item();
 
     /*!
-     * Sets the target collection the item should be moved to.
+     * Sets the target \a collection the item should be moved to.
      */
     void setMoveTargetCollection(const Akonadi::Collection &collection);
 
@@ -77,9 +77,11 @@ public:
     [[nodiscard]] bool needsFullPayload() const;
 
     /*!
+     * Marks that the item shall be deleted.
      */
     void setDeleteItem();
     /*!
+     * Returns whether the item shall be deleted.
      */
     [[nodiscard]] bool deleteItem() const;
 

@@ -29,7 +29,8 @@ class CollectionGeneralWidget;
  * \inmodule MailCommon
  * \inheaderfile MailCommon/CollectionGeneralPage
  *
- * \brief The CollectionGeneralPage class
+ * \brief The CollectionGeneralPage class.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT CollectionGeneralPage : public Akonadi::CollectionPropertiesPage
@@ -38,23 +39,28 @@ class MAILCOMMON_EXPORT CollectionGeneralPage : public Akonadi::CollectionProper
 
 public:
     /*!
+     * Constructs the general page with the given \a parent.
      */
     explicit CollectionGeneralPage(QWidget *parent = nullptr);
     /*!
+     * Destroys the general page.
      */
     ~CollectionGeneralPage() override;
 
     /*!
+     * Loads the general settings of \a collection.
      */
     void load(const Akonadi::Collection &collection) override;
     /*!
+     * Saves the general settings into \a collection.
      */
     void save(Akonadi::Collection &collection) override;
 
 protected:
     /*!
+     * Initializes the page for \a collection.
      */
-    void init(const Akonadi::Collection &);
+    void init(const Akonadi::Collection &collection);
 
 private:
     MAILCOMMON_NO_EXPORT void slotFolderContentsSelectionChanged(int);

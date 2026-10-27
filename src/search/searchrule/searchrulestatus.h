@@ -29,17 +29,17 @@ public:
     /*!
      * Constructs a search rule for message status.
      *
-     * \param field The field to search in
-     * \param function The function to use for searching
-     * \param contents The contents to search for
+     * \a field The field to search in
+     * \a function The function to use for searching
+     * \a contents The contents to search for
      */
     explicit SearchRuleStatus(const QByteArray &field = QByteArray(), Function function = FuncContains, const QString &contents = QString());
 
     /*!
      * Constructs a search rule for a specific message status.
      *
-     * \param status The message status to search for
-     * \param function The function to use for searching
+     * \a status The message status to search for
+     * \a function The function to use for searching
      */
     explicit SearchRuleStatus(Akonadi::MessageStatus status, Function function = FuncContains);
 
@@ -52,7 +52,7 @@ public:
     /*!
      * Tries to match the rule against the Akonadi item.
      *
-     * \param item The Akonadi item to match against
+     * \a item The Akonadi item to match against
      * \return True if the rule matches, false otherwise
      */
     [[nodiscard]] bool matches(const Akonadi::Item &item) const override;
@@ -65,21 +65,19 @@ public:
     /*!
      * Adds query terms to the given term group.
      *
-     * \param groupTerm The search term group to add query terms to
-     * \param emptyIsNotAnError Whether empty values should be considered an error
+     * \a groupTerm The search term group to add query terms to
+     * \a emptyIsNotAnError Whether empty values should be considered an error
      */
     void addQueryTerms(Akonadi::SearchTerm &groupTerm, bool &emptyIsNotAnError) const override;
 
     // Not possible to implement optimized form for status searching
-    /*!
-     * Using parent class matches method for optimization.
-     */
+    // Using parent class matches method for optimization.
     using SearchRule::matches;
 
     /*!
      * Converts an English status name to the corresponding MessageStatus.
      *
-     * \param name The English name of the status
+     * \a name The English name of the status
      * \return The corresponding message status
      */
     static Akonadi::MessageStatus statusFromEnglishName(const QString &name);

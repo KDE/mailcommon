@@ -62,7 +62,7 @@ public:
      * MUST be called with a valid interface pointer, before any Kernel::self()
      * method is used. The pointer ownership will not be transferred to Kernel.
      *
-     * \param kernelIf The kernel interface to register
+     * \a kernelIf The kernel interface to register
      */
     void registerKernelIf(IKernel *kernelIf);
 
@@ -85,7 +85,7 @@ public:
      * MUST be called with a valid interface pointer, before any Kernel::self()
      * method is used. The pointer ownership will not be transferred to Kernel.
      *
-     * \param settingsIf The settings interface to register
+     * \a settingsIf The settings interface to register
      */
     void registerSettingsIf(ISettings *settingsIf);
 
@@ -101,7 +101,7 @@ public:
      * MUST be called with a valid interface pointer, before any Kernel::self()
      * method is used. The pointer ownership will not be transferred to Kernel.
      *
-     * \param filterIf The filter interface to register
+     * \a filterIf The filter interface to register
      */
     void registerFilterIf(IFilter *filterIf);
 
@@ -118,7 +118,7 @@ public:
      * the collection. Since the ETM is loaded async, this method will not find
      * the collection right after startup, when the ETM is not yet fully loaded.
      *
-     * \param id The collection ID to look up
+     * \a id The collection ID to look up
      * \return The collection with the given ID, or an invalid collection
      */
     [[nodiscard]] Akonadi::Collection collectionFromId(Akonadi::Collection::Id id) const;
@@ -170,7 +170,7 @@ public:
     /*!
      * Checks if the given collection is a system folder collection.
      *
-     * \param col The collection to check
+     * \a col The collection to check
      * \return True if the collection is a system folder, false otherwise
      */
     [[nodiscard]] bool isSystemFolderCollection(const Akonadi::Collection &col);
@@ -178,7 +178,7 @@ public:
     /*!
      * Returns true if this folder is the inbox on the local disk
      *
-     * \param col The collection to check
+     * \a col The collection to check
      * \return True if the collection is the main inbox, false otherwise
      */
     [[nodiscard]] bool isMainFolderCollection(const Akonadi::Collection &col);
@@ -186,7 +186,7 @@ public:
     /*!
      * Returns true if the folder is either the outbox or one of the drafts-folders.
      *
-     * \param collection The collection to check
+     * \a collection The collection to check
      * \return True if the collection is a draft or outbox folder, false otherwise
      */
     [[nodiscard]] bool folderIsDraftOrOutbox(const Akonadi::Collection &collection);
@@ -194,7 +194,7 @@ public:
     /*!
      * Checks if the given collection is a drafts folder.
      *
-     * \param collection The collection to check
+     * \a collection The collection to check
      * \return True if the collection is a drafts folder, false otherwise
      */
     [[nodiscard]] bool folderIsDrafts(const Akonadi::Collection &collection);
@@ -202,7 +202,7 @@ public:
     /*!
      * Checks if the given collection is a templates folder.
      *
-     * \param collection The collection to check
+     * \a collection The collection to check
      * \return True if the collection is a templates folder, false otherwise
      */
     [[nodiscard]] bool folderIsTemplates(const Akonadi::Collection &collection);
@@ -210,7 +210,7 @@ public:
     /*!
      * Checks if the given collection is a spam/junk folder.
      *
-     * \param collection The collection to check
+     * \a collection The collection to check
      * \return True if the collection is a spam folder, false otherwise
      */
     [[nodiscard]] bool folderIsSpams(const Akonadi::Collection &collection);
@@ -222,7 +222,7 @@ public:
      * it will say false erroneously. However you can connect to SpecialMailCollections::collectionsChanged
      * to react on dynamic changes and call this again.
      *
-     * \param collection The collection to check
+     * \a collection The collection to check
      * \return True if the collection is a trash folder, false otherwise
      */
     [[nodiscard]] bool folderIsTrash(const Akonadi::Collection &collection);
@@ -234,7 +234,7 @@ public:
      * it will return an invalid collection erroneously. However you can connect to SpecialMailCollections::collectionsChanged
      * to react on dynamic changes and call this again.
      *
-     * \param col The collection whose resource's trash folder should be returned
+     * \a col The collection whose resource's trash folder should be returned
      * \return The trash collection for the resource
      */
     [[nodiscard]] Akonadi::Collection trashCollectionFromResource(const Akonadi::Collection &col);
@@ -242,7 +242,7 @@ public:
     /*!
      * Returns true if the folder is one of the sent-mail folders.
      *
-     * \param collection The collection to check
+     * \a collection The collection to check
      * \return True if the collection is a sent mail folder, false otherwise
      */
     [[nodiscard]] bool folderIsSentMailFolder(const Akonadi::Collection &collection);
@@ -250,7 +250,7 @@ public:
     /*!
      * Checks if the given collection is an inbox folder.
      *
-     * \param collection The collection to check
+     * \a collection The collection to check
      * \return True if the collection is an inbox, false otherwise
      */
     static bool folderIsInbox(const Akonadi::Collection &collection);
@@ -263,7 +263,7 @@ public:
     /*!
      * Performs emergency exit when an error occurs.
      *
-     * \param reason The reason for the emergency exit
+     * \a reason The reason for the emergency exit
      */
     void emergencyExit(const QString &reason);
 
@@ -291,7 +291,7 @@ public:
     /*!
      * Registers the activities base manager.
      *
-     * \param manager The activities base manager to register
+     * \a manager The activities base manager to register
      */
     void registerActivitiesBaseManager(PimCommonActivities::ActivitiesBaseManager *manager);
 #endif

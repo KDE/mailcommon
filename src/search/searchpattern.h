@@ -49,6 +49,7 @@ namespace MailCommon
     reuse a rule in another pattern, make a deep copy of that rule.
 
     \brief An abstraction of a search over messages.
+
     \author Marc Mutz <mutz@kde.org>
 */
 class MAILCOMMON_EXPORT SearchPattern : public QList<SearchRule::Ptr>
@@ -56,9 +57,13 @@ class MAILCOMMON_EXPORT SearchPattern : public QList<SearchRule::Ptr>
 public:
     /*!
      * Boolean operators that connect the return values of the
-     * individual rules. A pattern with \a OpAnd will match iff all
-     *  it's rules match, whereas a pattern with \a OpOr will match if
+     * individual rules. A pattern with \c OpAnd will match iff all
+     *  it's rules match, whereas a pattern with \c OpOr will match if
      *  any of it's rules matches.
+     *
+     * \value OpAnd All rules must match
+     * \value OpOr Any rule must match
+     * \value OpAll All messages match
      */
     enum Operator {
         OpAnd,
@@ -102,15 +107,15 @@ public:
      * own result or else most functionality is lacking, or has to be
      * reimplemented, since the rules are private to this class.
      *
-     * \param item The Akonadi item to match
-     * \param ignoreBody Whether to ignore the body content when matching
+     * \a item The Akonadi item to match
+     * \a ignoreBody Whether to ignore the body content when matching
      * \return True if the match was successful, false otherwise
      */
     bool matches(const Akonadi::Item &item, bool ignoreBody = false) const;
 
     /*!
      * Returns the required part from the item that is needed for the search to
-     * operate. See \ SearchRule::RequiredPart
+     * operate. See SearchRule::RequiredPart
      */
     SearchRule::RequiredPart requiredPart() const;
 
@@ -118,6 +123,9 @@ public:
      * Removes all empty rules from the list. You should call this
      * method whenever the user had had control of the rules outside of
      * this class. (e.g. after editing it with SearchPatternEdit).
+     *
+     * Rules are only removed if \a removeAction is \c true.
+     * Returns a description of the invalid rules that were removed.
      */
     QString purify(bool removeAction = true);
 
@@ -127,7 +135,7 @@ public:
      * as if it were constructed using the default constructor.
      *
      * For backwards compatibility with previous versions of KMail, it
-     * checks for old-style filter rules (e.g. using \a OpIgnore)
+     * checks for old-style filter rules (e.g. using \c OpIgnore)
      * in \a config und converts them to the new format on writeConfig.
      *
      * Derived classes reimplementing readConfig() should also call this
@@ -153,7 +161,7 @@ public:
     }
 
     /*!
-     * Sets the name of the search pattern. KMFilter uses this to
+     * Sets the name of the search pattern to \a newName. KMFilter uses this to
      * store it's own name, too.
      */
     void setName(const QString &newName)
@@ -170,7 +178,7 @@ public:
     }
 
     /*!
-     * Sets the filter operator.
+     * Sets the filter operator to \a aOp.
      */
     void setOp(SearchPattern::Operator aOp)
     {
@@ -192,7 +200,7 @@ public:
     SparqlQueryError asAkonadiQuery(Akonadi::SearchQuery &) const;
 
     /*!
-     * Overloaded assignment operator. Makes a deep copy.
+     * Overloaded assignment operator. Makes a deep copy of \a aPattern.
      */
     const SearchPattern &operator=(const SearchPattern &aPattern);
 
@@ -207,19 +215,19 @@ public:
     void deserialize(const QByteArray &);
 
     /*!
-     * Stream operator for output.
+     * Stream operator for output. Writes the pattern into the stream \a s and returns it.
      */
     QDataStream &operator>>(QDataStream &s) const;
     /*!
-     * Stream operator for input.
+     * Stream operator for input. Reads the pattern from the stream \a s and returns it.
      */
     QDataStream &operator<<(QDataStream &s);
 
     /*!
      * Generates a Sieve script representation of this pattern.
      *
-     * \param requiresModules The list of Sieve modules required by the script
-     * \param code The generated Sieve script code
+     * \a requiresModules The list of Sieve modules required by the script
+     * \a code The generated Sieve script code
      */
     void generateSieveScript(QStringList &requiresModules, QString &code);
 

@@ -24,7 +24,7 @@ class AddTagDialogPrivate;
  * \inmodule MailCommon
  * \inheaderfile MailCommon/AddTagDialog
  *
- * \brief The AddTagDialog class
+ * \brief The AddTagDialog class.
  */
 class MAILCOMMON_EXPORT AddTagDialog : public QDialog
 {
@@ -33,8 +33,8 @@ public:
     /*!
      * Constructs an add tag dialog.
      *
-     * \param actions List of action collections for keyboard shortcuts
-     * \param parent The parent widget
+     * \a actions List of action collections for keyboard shortcuts
+     * \a parent The parent widget
      */
     explicit AddTagDialog(const QList<KActionCollection *> &actions, QWidget *parent = nullptr);
     /*!
@@ -45,7 +45,7 @@ public:
     /*!
      * Sets the list of existing tags to validate against duplicates.
      *
-     * \param tags The list of existing tags
+     * \a tags The list of existing tags
      */
     void setTags(const QList<MailCommon::Tag::Ptr> &tags);
     /*!

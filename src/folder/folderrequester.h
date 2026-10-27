@@ -64,30 +64,34 @@ public:
     void setCollection(const Akonadi::Collection &collection, bool fetchCollection = true);
 
     /*!
-     * Returns \\ true if there's a valid collection set on this widget.
+     * Returns \c true if there's a valid collection set on this widget.
      */
     [[nodiscard]] bool hasCollection() const;
 
     /*!
-     * Sets if readonly folders should be disabled.
+     * Sets if readonly folders should be disabled, according to \a readwrite.
      * Be aware that if you disable this the user can also select the
      * 'Local Folders' folder which has no valid folder associated
      */
     void setMustBeReadWrite(bool readwrite);
 
     /*!
+     * Sets whether the outbox folder is shown in the folder dialog, according to \a show.
      */
     void setShowOutbox(bool show);
 
     /*!
+     * Prevents the creation of new folders from the folder dialog if \a notCreateNewFolder is \c true.
      */
     void setNotAllowToCreateNewFolder(bool notCreateNewFolder);
 
     /*!
+     * Sets the \a title of the folder selection dialog.
      */
     void setSelectFolderTitleDialog(const QString &title);
 
     /*!
+     * Sets \a accountActivities, used to filter the folders by activity.
      */
     void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 protected Q_SLOTS:
@@ -109,7 +113,7 @@ Q_SIGNALS:
     void invalidFolder();
 
 protected:
-    /*! Capture space key to open the dialog */
+    /*! Captures the space key of the key event \a e to open the dialog. */
     void keyPressEvent(QKeyEvent *e) override;
     void setCollectionFullPath(const Akonadi::Collection &col);
 

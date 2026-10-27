@@ -28,7 +28,8 @@ namespace MailCommon
  * \inmodule MailCommon
  * \inheaderfile MailCommon/CollectionViewWidget
  *
- * \brief The CollectionViewWidget class
+ * \brief The CollectionViewWidget class.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT CollectionViewWidget : public QWidget
@@ -36,15 +37,19 @@ class MAILCOMMON_EXPORT CollectionViewWidget : public QWidget
     Q_OBJECT
 public:
     /*!
+     * Constructs the view widget with the given \a parent.
      */
     explicit CollectionViewWidget(QWidget *parent = nullptr);
     /*!
+     * Destroys the view widget.
      */
     ~CollectionViewWidget() override;
     /*!
+     * Loads the view settings of the collection \a col into the widget.
      */
     void load(const Akonadi::Collection &col);
     /*!
+     * Saves the view settings shown in the widget into the collection \a col.
      */
     void save(Akonadi::Collection &col);
 

@@ -19,7 +19,8 @@ namespace MailCommon
  * \inmodule MailCommon
  * \inheaderfile MailCommon/FilterImporterGmail
  *
- * \brief The FilterImporterGmail class
+ * \brief The FilterImporterGmail class.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_TESTS_EXPORT FilterImporterGmail : public FilterImporterAbstract
@@ -27,7 +28,7 @@ class MAILCOMMON_TESTS_EXPORT FilterImporterGmail : public FilterImporterAbstrac
 public:
     /*!
      * \brief FilterImporterGmail
-     * \param file
+     * \a file
      */
     explicit FilterImporterGmail(QFile *file);
     /*!

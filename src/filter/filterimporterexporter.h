@@ -58,29 +58,37 @@ public:
     virtual ~FilterImporterExporter();
 
     /*!
-     * Exports the given \a filters to a file which
-     * is asked from the user. The list to export is also
-     * presented for confirmation/selection.
+     * Exports the given \a filters to the file \a fileName, or to a file which
+     * is asked from the user if \a fileName is empty. Unless \a saveAll is
+     * \c true, the list to export is also presented for confirmation/selection.
      */
     void exportFilters(const QList<MailFilter *> &filters, const QUrl &fileName = QUrl(), bool saveAll = false);
 
     /*!
-     * Imports filters. Ask the user where to import them from
-     * and which filters to import.
+     * Imports filters of the given \a type from the file \a filename. If
+     * \a filename is empty, asks the user where to import them from.
+     * The user is also asked which filters to import. \a canceled is set to
+     * \c true if the user canceled the import.
+     *
+     * Returns the list of imported filters.
      */
     [[nodiscard]] QList<MailFilter *>
     importFilters(bool &canceled, FilterImporterExporter::FilterType type = FilterImporterExporter::KMailFilter, const QString &filename = QString());
 
     /*!
      * Writes the given list of \a filters to the given \a config file.
+     * If \a exportFilter is \c true, the action arguments are written in their
+     * exportable form.
      */
     static void writeFiltersToConfig(const QList<MailFilter *> &filters, KSharedConfig::Ptr config, bool exportFilter = false);
 
     /*!
      * Reads a list of filters from the given \a config file.
-     * \a emptyfilters will contain filters that are empty after "purification", which removes aspects that are not applicable,
+     * \a emptyFilters will contain filters that are empty after "purification", which removes aspects that are not applicable,
      * usually because of references to nonexistent external entities such as accounts, folders, etc.
      * If \a interactive is true, a dialog will offer to select a different account for any filter that refers to an account that doesn't exist.
+     *
+     * Returns the list of filters read.
      */
     static QList<MailFilter *> readFiltersFromConfig(const KSharedConfig::Ptr &config, bool interactive, QStringList &emptyFilters);
 

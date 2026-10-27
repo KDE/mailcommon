@@ -23,7 +23,10 @@ class KJob;
 namespace MailCommon
 {
 /*!
- * The Util namespace contains a collection of helper functions use in
+ * \namespace MailCommon::Util
+ * \inmodule MailCommon
+ *
+ * \brief The Util namespace contains a collection of helper functions used in
  * various places.
  */
 namespace Util
@@ -46,7 +49,7 @@ MAILCOMMON_EXPORT bool showJobErrorMessage(KJob *job);
 [[nodiscard]] MAILCOMMON_EXPORT bool isUnifiedMailboxesAgent(const Akonadi::Collection &col);
 
 /*!
- * Returns the identity of the folder that contains the given Akonadi::Item.
+ * Returns the identity of the folder that contains the given Akonadi::Item \a item.
  */
 [[nodiscard]] MAILCOMMON_EXPORT uint folderIdentity(const Akonadi::Item &item);
 

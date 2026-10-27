@@ -15,9 +15,9 @@ public:
     /**
      * Creates new date search rule.
      *
-     * @param field The field to search in.
-     * @param function The function to use for searching.
-     * @param contents The contents to search for.
+     * \a field The field to search in.
+     * \a function The function to use for searching.
+     * \a contents The contents to search for.
      */
     explicit SearchRuleDate(const QByteArray &field = QByteArray(), Function function = FuncContains, const QString &contents = QString());
     /**

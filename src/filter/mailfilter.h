@@ -27,7 +27,7 @@ namespace MailCommon
  * \inmodule MailCommon
  * \inheaderfile MailCommon/MailFilter
  *
- * \brief The MailFilter class
+ * \brief The MailFilter class.
  */
 class MAILCOMMON_EXPORT MailFilter
 {
@@ -35,16 +35,13 @@ class MAILCOMMON_EXPORT MailFilter
     friend MAILCOMMON_EXPORT QDataStream &operator>>(QDataStream &stream, MailFilter &filter);
 
 public:
-    /*! Result codes returned by process. They mean:
+    /*! Result codes returned by process.
 
-      \a GoOn Everything OK. You are still the owner of the
+      \value NoResult For internal use only!
+      \value GoOn Everything OK. You are still the owner of the
       message and you should continue applying filter actions to this
       message.
-
-      \a CriticalError A critical error occurred (e.g. "disk full").
-
-      \a NoResult For internal use only!
-
+      \value CriticalError A critical error occurred (e.g. "disk full").
     */
     enum ReturnCode {
         NoResult,
@@ -52,14 +49,11 @@ public:
         CriticalError
     };
 
-    /*! Account type codes used by setApplicability. They mean:
+    /*! Account type codes used by setApplicability.
 
-      \a All Apply to all accounts
-
-      \a ButImap Apply to all but IMAP accounts
-
-      \a Checked apply to all accounts specified by setApplyOnAccount
-
+      \value All Apply to all accounts
+      \value ButImap Apply to all but IMAP accounts
+      \value Checked Apply to all accounts specified by setApplyOnAccount
     */
     enum AccountType {
         All,
@@ -70,21 +64,25 @@ public:
     /*! Constructor that initializes basic settings. */
     MailFilter();
 
-    /*! Constructor that initializes from given config group.
+    /*! Constructor that initializes from the given config group \a aConfig.
      * Filters are stored one by one in config groups, i.e.
-     * one filter, one group. */
+     * one filter, one group. If \a interactive is \c true, the user may be asked
+     * to fix the filter. \a needUpdate is set to \c true if the configuration
+     * needs to be written back. */
     explicit MailFilter(const KConfigGroup &aConfig, bool interactive, bool &needUpdate);
 
-    /*! Copy constructor. Constructs a deep copy of \a aFilter. */
+    /*! Copy constructor. Constructs a deep copy of \a other. */
     MailFilter(const MailFilter &other);
 
     /*! Cleanup. */
     ~MailFilter();
 
     /*!
+     * Returns the maximum number of actions of a filter.
      */
     static int filterActionsMaximumSize();
     /*!
+     * Generates a new random identifier for this filter.
      */
     void generateRandomIdentifier();
 
@@ -93,17 +91,19 @@ public:
      */
     [[nodiscard]] QString identifier() const;
 
-    /*! Equivalent to \a pattern()->name(). Returns name of the filter */
+    /*! Equivalent to \c {pattern()->name()}. Returns name of the filter */
     [[nodiscard]] QString name() const;
 
     /*! Execute the filter action(s) on the given message.
       Returns:
-      @li 2 if a critical error occurred,
-      @li 1 if the caller is still
+      \list
+      \li 2 if a critical error occurred,
+      \li 1 if the caller is still
       the owner of the message,
-      @li 0 if processed successfully.
+      \li 0 if processed successfully.
+      \endlist
       \a context The context that contains the item to which the actions should be applied.
-      \a stopIt Contains \\ true if the caller may apply other filters and \\ false if he shall
+      \a stopIt Contains \c true if the caller may apply other filters and \c false if he shall
       stop the filtering of this message.
       \a applyOnOutbound Defines whether to apply the rules on the outbound.
     */
@@ -111,23 +111,27 @@ public:
 
     /*!
      * Returns the required part from the item that is needed for the filter to
-     * operate. See \ SearchRule::RequiredPart */
+     * operate on messages from the account \a id. See SearchRule::RequiredPart */
     [[nodiscard]] SearchRule::RequiredPart requiredPart(const QString &id) const;
 
-    /*! Write contents to given config group. */
+    /*! Write contents to the given \a config group. If \a exportFilter is \c true,
+     *  the action arguments are written in their exportable form. */
     void writeConfig(KConfigGroup &config, bool exportFilter) const;
 
-    /*! Initialize from given config group. */
+    /*! Initialize from the given \a config group. If \a interactive is \c true,
+     *  the user may be asked to fix the filter.
+     *  Returns \c true if the configuration needs to be written back. */
     [[nodiscard]] bool readConfig(const KConfigGroup &config, bool interactive = false);
 
-    /*! Remove empty rules (and actions one day). */
+    /*! Remove empty rules, and empty actions if \a removeAction is \c true.
+     *  Returns a description of the invalid rules and actions. */
     QString purify(bool removeAction = true);
 
-    /*! Check for empty pattern and action list. */
+    /*! Returns \c true if the pattern and the action list are empty. */
     bool isEmpty() const;
 
     /*! Provides a reference to the internal action list. If your used
-      the \a setAction() and \a action() functions before, please
+      the \c setAction() and \c action() functions before, please
       convert to using myFilter->actions()->at() and friends now. */
     QList<FilterAction *> *actions();
 
@@ -135,12 +139,12 @@ public:
     const QList<FilterAction *> *actions() const;
 
     /*! Provides a reference to the internal pattern. If you used the
-      \a matches() function before, please convert to using
+      \c matches() function before, please convert to using
       myFilter->pattern()->matches() now. */
     [[nodiscard]] SearchPattern *pattern();
 
     /*! Provides a reference to the internal pattern. If you used the
-      \a matches() function before, please convert to using
+      \c matches() function before, please convert to using
       myFilter->pattern()->matches() now. */
     const SearchPattern *pattern() const;
 
@@ -202,7 +206,7 @@ public:
     void setApplicability(AccountType apply = All);
 
     /*! Sets whether the filter should be applied on inbound emails in all
-      folders, not just Inbox.
+      folders, not just Inbox, according to \a apply.
     */
     void setApplyOnAllFoldersInbound(bool apply);
 
@@ -220,7 +224,7 @@ public:
     [[nodiscard]] AccountType applicability() const;
 
     /*! Set whether this filter should be applied on
-      inbound messages for the account with id (\a id).
+      inbound messages for the account with id (\a id), according to \a apply.
       Only applicable to filters that are only applied to a specified
       set of accounts.
       \sa setApplicability applyOnAccount
@@ -236,7 +240,8 @@ public:
     void setStopProcessingHere(bool aStop);
     bool stopProcessingHere() const;
 
-    /*! Set whether this filter should be plugged into the filter menu.
+    /*! Set whether this filter should be plugged into the filter menu,
+     *  according to \a aShort.
      */
     void setConfigureShortcut(bool aShort);
 
@@ -246,7 +251,8 @@ public:
     */
     [[nodiscard]] bool configureShortcut() const;
 
-    /*! Set whether this filter should be plugged into the toolbar.
+    /*! Set whether this filter should be plugged into the toolbar,
+      according to \a aTool.
       This can be done only if a shortcut is defined.
       \sa setConfigureShortcut
     */
@@ -263,7 +269,7 @@ public:
      */
     QString toolbarName() const;
 
-    /*! This sets the toolbar name for this filter.
+    /*! This sets the toolbar name for this filter to \a toolbarName.
      *  The toolbar name is the text to be displayed underneath the toolbar icon
      *  for this filter. This is usually the same as name(),  expect when
      *  explicitly set by this function.
@@ -272,7 +278,7 @@ public:
      */
     void setToolbarName(const QString &toolbarName);
 
-    /*! Set the shortcut to be used if plugged into the filter menu
+    /*! Set the \a shortcut to be used if plugged into the filter menu
       or toolbar. Default is no shortcut.
       \sa setConfigureShortcut setConfigureToolbar
     */
@@ -283,7 +289,7 @@ public:
     */
     const QKeySequence &shortcut() const;
 
-    /*! Set the icon to be used if plugged into the filter menu
+    /*! Set the \a icon to be used if plugged into the filter menu
       or toolbar. Default is the gear icon.
       \sa setConfigureShortcut setConfigureToolbar
     */
@@ -296,10 +302,8 @@ public:
 
     /*!
      * Called from the filter manager when a folder is moved.
-     * Tests if the folder aFolder is used in any action. Changes it
-     * to aNewFolder folder in this case.
-     * Returns true if a change in some action occurred,
-     * false if no action was affected.
+     * Tests if the folder \a aFolder is used in any action. Changes it
+     * to \a aNewFolder folder in this case.
      */
     void folderRemoved(const Akonadi::Collection &aFolder, const Akonadi::Collection &aNewFolder);
 
@@ -308,8 +312,8 @@ public:
       in the future... */
     const QString asString() const;
 
-    /*! Set the mode for using automatic naming for the filter.
-      If the feature is enabled, the name is derived from the
+    /*! Set the mode for using automatic naming for the filter to
+      \a useAutomaticNames. If the feature is enabled, the name is derived from the
       first filter rule.
     */
     void setAutoNaming(bool useAutomaticNames);
@@ -322,17 +326,23 @@ public:
      */
     [[nodiscard]] bool isEnabled() const;
     /*!
+     * Enables or disables the filter.
      */
     void setEnabled(bool);
 
     /*!
+     * Generates the Sieve script \a code of this filter, and appends the
+     * required Sieve modules to \a requiresModules.
      */
     void generateSieveScript(QStringList &requiresModules, QString &code);
 
     /*!
+     * Clears the list of accounts this filter applies to.
      */
     void clearApplyOnAccount();
     /*!
+     * Called when the agent \a identifier is removed: the filter no longer
+     * applies to this account.
      */
     void agentRemoved(const QString &identifier);
 

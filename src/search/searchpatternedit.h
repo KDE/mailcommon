@@ -55,6 +55,7 @@ namespace MailCommon
  * "<$field>:$contents" iff the pattern begins with "<".
  *
  * \brief A widget which allows editing a set of MailCommon::SearchRule's.
+ *
  * \author Marc Mutz <mutz@kde.org>
  */
 class SearchRuleWidgetLister;
@@ -83,9 +84,9 @@ public:
      * Constructor. The parent parameter is passed to the underlying
      * QGroupBox, as usual.
      *
-     * \param parent The parent widget
-     * \param options Search pattern edit options
-     * \param modeType The search mode type (Standard or Baloo)
+     * \a parent The parent widget
+     * \a options Search pattern edit options
+     * \a modeType The search mode type (Standard or Baloo)
      */
     explicit SearchPatternEdit(QWidget *parent = nullptr,
                                SearchPatternEditOptions options = (SearchPatternEditOptions)(None),
@@ -99,7 +100,7 @@ public:
     /*!
      * Sets additional pattern edit options after construction.
      *
-     * \param options The options to set
+     * \a options The options to set
      */
     void setPatternEditOptions(SearchPatternEdit::SearchPatternEditOptions options);
 
@@ -109,7 +110,7 @@ public:
      * This widget makes a shallow copy of \a aPattern and operates
      * directly on it.
      *
-     * \param aPattern The search pattern to edit
+     * \a aPattern The search pattern to edit
      */
     void setSearchPattern(MailCommon::SearchPattern *aPattern);
 
@@ -155,6 +156,10 @@ private:
 };
 
 /*!
+ * \class MailCommon::SearchRuleWidget
+ * \inmodule MailCommon
+ * \internal
+ *
  * A widget to edit a single MailCommon::SearchRule.
  * It consists of an editable KComboBox for the field,
  * a read-only KComboBox for the function and
@@ -166,6 +171,7 @@ private:
  *  that something outside of it manages this.
  *
  * \brief A widget to edit a single MailCommon::SearchRule.
+ *
  * \author Marc Mutz <mutz@kde.org>
  */
 class SearchRuleWidget : public QWidget

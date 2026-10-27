@@ -47,31 +47,39 @@ public:
     Q_DECLARE_FLAGS(SelectionFolderOptions, SelectionFolderOption)
 
     /*!
+     * Constructs a folder selection dialog with the given \a parent and \a options.
      */
     FolderSelectionDialog(QWidget *parent, FolderSelectionDialog::SelectionFolderOptions options);
     /*!
+     * Destroys the dialog.
      */
     ~FolderSelectionDialog() override;
 
     /*!
+     * Sets the selection \a mode of the folder tree view.
      */
     void setSelectionMode(QAbstractItemView::SelectionMode mode);
     /*!
+     * Returns the selection mode of the folder tree view.
      */
     [[nodiscard]] QAbstractItemView::SelectionMode selectionMode() const;
 
     /*!
+     * Returns the selected collection.
      */
     [[nodiscard]] Akonadi::Collection selectedCollection() const;
     /*!
+     * Selects the \a collection.
      */
     void setSelectedCollection(const Akonadi::Collection &collection);
 
     /*!
+     * Returns the selected collections.
      */
     [[nodiscard]] Akonadi::Collection::List selectedCollections() const;
 
     /*!
+     * Sets \a accountActivities, used to filter the folders by activity.
      */
     void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 

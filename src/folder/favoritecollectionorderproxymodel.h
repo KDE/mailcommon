@@ -27,13 +27,16 @@ class MAILCOMMON_EXPORT FavoriteCollectionOrderProxyModel : public Akonadi::Enti
     Q_OBJECT
 public:
     /*!
+     * Constructs a favorite collection order proxy model with the given \a parent.
      */
     explicit FavoriteCollectionOrderProxyModel(QObject *parent = nullptr);
     /*!
+     * Destroys the model.
      */
     ~FavoriteCollectionOrderProxyModel() override;
 
     /*!
+     * Sets \a accountActivities, used to filter the favorite collections by activity.
      */
     void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 

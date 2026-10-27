@@ -17,7 +17,7 @@ namespace MailCommon
  * \inmodule MailCommon
  * \inheaderfile MailCommon/FolderJob
  *
- * \brief The FolderJob class
+ * \brief The FolderJob class.
  */
 class MAILCOMMON_EXPORT FolderJob : public QObject
 {
@@ -27,7 +27,7 @@ public:
     /*!
      * Constructs a folder job.
      *
-     * \param parent The parent object
+     * \a parent The parent object
      */
     explicit FolderJob(QObject *parent = nullptr);
 
@@ -69,7 +69,7 @@ public:
      * are cancellable, the others are not. But when copying, a non-cancellable
      * tGetMessage is needed.
      *
-     * \param b Whether the job should be cancellable
+     * \a b Whether the job should be cancellable
      */
     void setCancellable(bool b);
 
@@ -85,7 +85,7 @@ Q_SIGNALS:
      * This signal is emitted by the FolderJob destructor => do NOT downcast
      * the job to a subclass!
      *
-     * \param job Pointer to this job
+     * \a job Pointer to this job
      */
     void result(MailCommon::FolderJob *job);
 

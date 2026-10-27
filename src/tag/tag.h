@@ -23,7 +23,7 @@ namespace MailCommon
  * \inmodule MailCommon
  * \inheaderfile MailCommon/Tag
  *
- * \brief The Tag class
+ * \brief The Tag class.
  */
 class MAILCOMMON_EXPORT Tag
 {
@@ -40,7 +40,7 @@ public:
     /*!
      * Compares this tag with another tag for equality.
      *
-     * \param other The other tag to compare with
+     * \a other The other tag to compare with
      * \return True if the tags are equal, false otherwise
      */
     [[nodiscard]] bool operator==(const Tag &other) const;
@@ -48,7 +48,7 @@ public:
     /*!
      * Compares this tag with another tag for inequality.
      *
-     * \param other The other tag to compare with
+     * \a other The other tag to compare with
      * \return True if the tags are not equal, false otherwise
      */
     [[nodiscard]] bool operator!=(const Tag &other) const;
@@ -56,7 +56,7 @@ public:
     /*!
      * Creates a default tag with the specified name.
      *
-     * \param name The name of the new tag
+     * \a name The name of the new tag
      * \return A shared pointer to the newly created tag
      */
     static Ptr createDefaultTag(const QString &name);
@@ -64,7 +64,7 @@ public:
     /*!
      * Creates a Tag from an Akonadi::Tag object.
      *
-     * \param tag The Akonadi tag to convert
+     * \a tag The Akonadi tag to convert
      * \return A shared pointer to the newly created Tag
      */
     static Ptr fromAkonadi(const Akonadi::Tag &tag);
@@ -72,7 +72,7 @@ public:
     /*!
      * Converts this tag to an Akonadi::Tag object.
      *
-     * \param saveFlags Flags indicating which attributes to save
+     * \a saveFlags Flags indicating which attributes to save
      * \return An Akonadi::Tag containing the tag's data
      */
     [[nodiscard]] Akonadi::Tag saveToAkonadi(SaveFlags saveFlags = SaveFlags(TextColor | BackgroundColor | Font)) const;
@@ -80,16 +80,16 @@ public:
     /*!
      * Compares two tags based on their priority.
      *
-     * \param tag1 The first tag to compare
-     * \param tag2 The second tag to compare
+     * \a tag1 The first tag to compare
+     * \a tag2 The second tag to compare
      * \return True if tag1 has higher priority than tag2
      */
     static bool compare(const Ptr &tag1, const Ptr &tag2);
     /*!
      * Compares two tags alphabetically by name.
      *
-     * \param tag1 The first tag to compare
-     * \param tag2 The second tag to compare
+     * \a tag1 The first tag to compare
+     * \a tag2 The second tag to compare
      * \return True if tag1's name comes before tag2's name alphabetically
      */
     static bool compareName(const Ptr &tag1, const Ptr &tag2);

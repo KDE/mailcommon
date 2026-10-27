@@ -19,7 +19,7 @@ class ResourceReadConfigFilePrivate;
  * \inmodule MailCommon
  * \inheaderfile MailCommon/ResourceReadConfigFile
  *
- * \brief The ResourceReadConfigFile class
+ * \brief The ResourceReadConfigFile class.
  */
 class MAILCOMMON_EXPORT ResourceReadConfigFile
 {
@@ -27,7 +27,7 @@ public:
     /*!
      * Constructs a resource config file reader.
      *
-     * \param resourceName The name of the resource to read configuration for
+     * \a resourceName The name of the resource to read configuration for
      */
     explicit ResourceReadConfigFile(const QString &resourceName);
     /*!
@@ -38,7 +38,7 @@ public:
     /*!
      * Returns a configuration group with the given name.
      *
-     * \param name The name of the configuration group
+     * \a name The name of the configuration group
      * \return A KConfigGroup for accessing configuration data
      */
     KConfigGroup group(const QString &name) const;

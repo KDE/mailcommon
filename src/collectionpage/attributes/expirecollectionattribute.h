@@ -20,7 +20,7 @@ namespace MailCommon
  * \inmodule MailCommon
  * \inheaderfile MailCommon/ExpireCollectionAttribute
  *
- * \brief The ExpireCollectionAttribute class
+ * \brief The ExpireCollectionAttribute class.
  */
 class MAILCOMMON_EXPORT ExpireCollectionAttribute : public Akonadi::Attribute
 {
@@ -53,7 +53,7 @@ public:
     void daysToExpire(int &unreadDays, int &readDays) const;
 
     /*!
-     * Sets whether this folder automatically expires messages.
+     * Sets whether this folder automatically expires messages, according to \a enabled.
      */
     void setAutoExpire(bool enabled);
 
@@ -63,27 +63,27 @@ public:
     [[nodiscard]] bool isAutoExpire() const;
 
     /*!
-     * Sets the maximum age for unread messages in this folder.
+     * Sets the maximum \a age for unread messages in this folder.
      * Age should not be negative. Units are set using
      * setUnreadExpireUnits().
      */
     void setUnreadExpireAge(int age);
 
     /*!
-     * Sets the units to use for expiry of unread messages.
+     * Sets the \a units to use for expiry of unread messages.
      * Values are 1 = days, 2 = weeks, 3 = months.
      */
     void setUnreadExpireUnits(ExpireUnits units);
 
     /*!
-     * Sets the maximum age for read messages in this folder.
+     * Sets the maximum \a age for read messages in this folder.
      * Age should not be negative. Units are set using
      * setReadExpireUnits().
      */
     void setReadExpireAge(int age);
 
     /*!
-     * Sets the units to use for expiry of read messages.
+     * Sets the \a units to use for expiry of read messages.
      * Values are 1 = days, 2 = weeks, 3 = months.
      */
     void setReadExpireUnits(ExpireUnits units);
@@ -112,7 +112,7 @@ public:
     [[nodiscard]] Akonadi::Collection::Id expireToFolderId() const;
     /*!
      * \brief setExpireToFolderId
-     * \param id
+     * \a id
      */
     void setExpireToFolderId(Akonadi::Collection::Id id);
 
@@ -136,7 +136,7 @@ public:
     [[nodiscard]] bool expireMessagesWithValidDate() const;
     /*!
      * \brief setExpireMessagesWithValidDate
-     * \param expireMessagesWithValidDate
+     * \a expireMessagesWithValidDate
      */
     void setExpireMessagesWithValidDate(bool expireMessagesWithValidDate);
 

@@ -18,7 +18,8 @@ class MailCommonSettings;
  * \inmodule MailCommon
  * \inheaderfile MailCommon/AccountConfigOrderDialog
  *
- * \brief The AccountConfigOrderDialog class
+ * \brief The AccountConfigOrderDialog class.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT AccountConfigOrderDialog : public QDialog
@@ -26,10 +27,12 @@ class MAILCOMMON_EXPORT AccountConfigOrderDialog : public QDialog
     Q_OBJECT
 public:
     /*!
+     * Constructs a dialog to configure the order of the accounts, stored in \a settings, with the given \a parent.
      */
     explicit AccountConfigOrderDialog(MailCommon::MailCommonSettings *settings, QWidget *parent);
 
     /*!
+     * Destroys the dialog.
      */
     ~AccountConfigOrderDialog() override;
 

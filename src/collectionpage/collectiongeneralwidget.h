@@ -23,7 +23,8 @@ class FolderSettings;
  * \inmodule MailCommon
  * \inheaderfile MailCommon/CollectionGeneralWidget
  *
- * \brief The CollectionGeneralWidget class
+ * \brief The CollectionGeneralWidget class.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT CollectionGeneralWidget : public QWidget
@@ -31,15 +32,19 @@ class MAILCOMMON_EXPORT CollectionGeneralWidget : public QWidget
     Q_OBJECT
 public:
     /*!
+     * Constructs the general widget with the given \a parent.
      */
     explicit CollectionGeneralWidget(QWidget *parent = nullptr);
     /*!
+     * Destroys the general widget.
      */
     ~CollectionGeneralWidget() override;
     /*!
+     * Saves the settings shown in the widget into \a collection.
      */
-    void save(Akonadi::Collection &);
+    void save(Akonadi::Collection &collection);
     /*!
+     * Loads the settings of the collection \a col into the widget.
      */
     void load(const Akonadi::Collection &col);
 

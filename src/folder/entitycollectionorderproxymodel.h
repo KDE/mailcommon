@@ -42,37 +42,46 @@ class MAILCOMMON_EXPORT EntityCollectionOrderProxyModel : public Akonadi::Entity
     Q_OBJECT
 public:
     /*!
+     * Constructs a collection order proxy model with the given \a parent.
      */
     explicit EntityCollectionOrderProxyModel(QObject *parent = nullptr);
 
     /*!
+     * Destroys the model. The manual order is saved if manual sorting is active.
      */
     ~EntityCollectionOrderProxyModel() override;
 
     /*!
+     * Returns \c true if the collection at \a left must be sorted before the collection at \a right.
      */
     [[nodiscard]] bool lessThan(const QModelIndex &left, const QModelIndex &right) const override;
 
     /*!
+     * Enables manual sorting (by drag-n-drop) if \a active is \c true, otherwise automatic sorting is used.
      */
     void setManualSortingActive(bool active);
     /*!
+     * Returns \c true if manual sorting is active.
      */
     [[nodiscard]] bool isManualSortingActive() const;
 
     /*!
+     * Clears the cached ranks of the collections and re-sorts the model.
      */
     void clearRanks();
     /*!
+     * Sets the order of the toplevel collections to \a list, a list of resource identifiers.
      */
     void setTopLevelOrder(const QStringList &list);
 
     /*!
+     * Sets the \a matcher used to filter the folders.
      */
     void setFolderMatcher(const HierarchicalFolderMatcher &matcher);
 
 public Q_SLOTS:
     /*!
+     * Updates the ranks when the special collections change.
      */
     void slotSpecialCollectionsChanged();
 

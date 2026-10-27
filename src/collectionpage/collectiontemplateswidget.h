@@ -22,7 +22,8 @@ namespace MailCommon
  * \inmodule MailCommon
  * \inheaderfile MailCommon/CollectionTemplatesWidget
  *
- * \brief The CollectionTemplateWidget class
+ * \brief The CollectionTemplateWidget class.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT CollectionTemplatesWidget : public QWidget
@@ -30,15 +31,19 @@ class MAILCOMMON_EXPORT CollectionTemplatesWidget : public QWidget
     Q_OBJECT
 public:
     /*!
+     * Constructs the templates widget with the given \a parent.
      */
     explicit CollectionTemplatesWidget(QWidget *parent = nullptr);
     /*!
+     * Destroys the templates widget.
      */
     ~CollectionTemplatesWidget() override;
     /*!
+     * Saves the templates shown in the widget into \a collection.
      */
-    void save(Akonadi::Collection &);
+    void save(Akonadi::Collection &collection);
     /*!
+     * Loads the templates of the collection \a col into the widget.
      */
     void load(const Akonadi::Collection &col);
 

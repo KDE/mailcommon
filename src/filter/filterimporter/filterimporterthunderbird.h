@@ -20,7 +20,8 @@ class MailFilter;
  * \inmodule MailCommon
  * \inheaderfile MailCommon/FilterImporterThunderbird
  *
- * \brief The FilterImporterThunderbird class
+ * \brief The FilterImporterThunderbird class.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_TESTS_EXPORT FilterImporterThunderbird : public FilterImporterAbstract

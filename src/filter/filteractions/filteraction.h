@@ -28,7 +28,7 @@ namespace MailCommon
  * \class MailCommon::FilterAction
  * \inmodule MailCommon
  * \inheaderfile MailCommon/FilterAction
-
+ *
  * \brief Abstract base class for mail filter actions.
  *
  * Abstract base class for mail filter actions. All it can do is
@@ -37,7 +37,7 @@ namespace MailCommon
  * (import/export as string, a widget to allow editing, etc.)
  *
  * \author Marc Mutz <mutz@kde.org>, based on work by Stefan Taferner <taferner@kde.org>.
- * \sa Filter FilterMgr
+ * \sa MailFilter FilterManager
  */
 class MAILCOMMON_EXPORT FilterAction : public QObject
 {
@@ -45,22 +45,25 @@ class MAILCOMMON_EXPORT FilterAction : public QObject
 public:
     /*!
      * Describes the possible return codes of filter processing:
+     *
+     * \value ErrorNeedComplete Could not process because a complete message is needed.
+     * \value GoOn Go on with applying filter actions.
+     * \value ErrorButGoOn A non-critical error occurred (e.g. an invalid address in
+     *        the 'forward' action), but processing should continue.
+     * \value CriticalError A critical error occurred during processing (e.g. "disk full").
      */
     enum ReturnCode {
-        ErrorNeedComplete = 0x1, ///< Could not process because a complete message is needed.
-        GoOn = 0x2, ///< Go on with applying filter actions.
-        ErrorButGoOn = 0x4, ///< A non-critical error occurred
-        ///  (e.g. an invalid address in the 'forward' action),
-        ///   but processing should continue.
-        CriticalError = 0x8 ///< A critical error occurred during processing
-                            ///  (e.g. "disk full").
+        ErrorNeedComplete = 0x1,
+        GoOn = 0x2,
+        ErrorButGoOn = 0x4,
+        CriticalError = 0x8
     };
 
     /*!
      * Creates a new filter action.
      *
      * The action is initialized with an identifier \a name and
-     * an i18n'd \a label.
+     * an i18n'd \a label, with the given \a parent.
      */
     FilterAction(const QString &name, const QString &label, QObject *parent = nullptr);
 
@@ -86,13 +89,14 @@ public:
     [[nodiscard]] virtual QString sieveCode() const;
 
     /*!
-     * Execute action on given message (inside the item context).
-     * Returns \a CriticalError if a
-     * critical error has occurred (eg. disk full), \a ErrorButGoOn if
+     * Execute action on given message (inside the item \a context).
+     * \a applyOnOutbound is \c true when the filter is applied on outgoing messages.
+     * Returns \c CriticalError if a
+     * critical error has occurred (eg. disk full), \c ErrorButGoOn if
      * there was a non-critical error (e.g. invalid address in
-     * 'forward' action), \a ErrorNeedComplete if a complete message
-     * is required, \a GoOn if the message shall be processed by
-     * further filters and \a Ok otherwise.
+     * 'forward' action), \c ErrorNeedComplete if a complete message
+     * is required, \c GoOn if the message shall be processed by
+     * further filters and \c Ok otherwise.
      */
     [[nodiscard]] virtual ReturnCode process(ItemContext &context, bool applyOnOutbound) const = 0;
 
@@ -101,7 +105,7 @@ public:
      * operate. See \ MailCommon::SearchRule::RequiredPart */
     [[nodiscard]] virtual SearchRule::RequiredPart requiredPart() const = 0;
     /*!
-     * Determines whether this action is valid. But this is just a
+     * Returns \c true if this action is empty, i.e. not valid. But this is just a
      * quick test. Eg., actions that have a mail address as parameter
      * shouldn't try real address validation, but only check if the
      * string representation is empty.
@@ -111,38 +115,39 @@ public:
     [[nodiscard]] virtual QString informationAboutNotValidAction() const;
 
     /*!
-     * Creates a widget for setting the filter action parameter. Also
-     * sets the value of the widget.
+     * Creates a widget with the given \a parent for setting the filter action
+     * parameter. Also sets the value of the widget.
      */
     [[nodiscard]] virtual QWidget *createParamWidget(QWidget *parent) const;
 
     /*!
-     * The filter action shall set it's parameter from the widget's
-     * contents. It is allowed that the value is read by the action
+     * The filter action shall set it's parameter from the contents of
+     * \a paramWidget. It is allowed that the value is read by the action
      * before this function is called.
      */
     virtual void applyParamWidgetValue(QWidget *paramWidget);
 
     /*!
-     * The filter action shall set it's widget's contents from it's
+     * The filter action shall set the contents of \a paramWidget from it's
      * parameter.
      */
     virtual void setParamWidgetValue(QWidget *paramWidget) const;
 
     /*!
-     * The filter action shall clear it's parameter widget's
-     * contents.
+     * The filter action shall clear the contents of its parameter widget
+     * \a paramWidget.
      */
     virtual void clearParamWidget(QWidget *paramWidget) const;
 
     /*!
-     * Read extra arguments from given string.
+     * Read extra arguments from the given string \a argsStr.
      */
     virtual void argsFromString(const QString &argsStr) = 0;
 
     /*!
-     * Read extra arguments from given string.
-     * Return true if we need to update config file
+     * Read extra arguments from the given string \a argsStr, for the filter
+     * named \a filterName.
+     * Returns \c true if we need to update config file.
      */
     [[nodiscard]] virtual bool argsFromStringInteractive(const QString &argsStr, const QString &filterName);
 
@@ -172,7 +177,8 @@ public:
     static FilterAction *newAction();
 
     /*!
-     * Automates the sending of MDNs from filter actions.
+     * Automates the sending of MDNs from filter actions: sends an MDN for
+     * \a item with the disposition type \a d and the disposition modifiers \a m.
      */
     static void sendMDN(const Akonadi::Item &item,
                         KMime::MDN::DispositionType d,

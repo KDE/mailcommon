@@ -19,6 +19,10 @@ class FilterAction;
 using FilterActionNewFunc = FilterAction *(*)();
 
 /*!
+ * \struct MailCommon::FilterActionDesc
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FilterActionDict
+ *
  * \brief Auxiliary struct for FilterActionDict.
  */
 struct FilterActionDesc {
@@ -27,6 +31,10 @@ struct FilterActionDesc {
 };
 
 /*!
+ * \class MailCommon::FilterActionDict
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FilterActionDict
+ *
  * \brief List of known FilterAction-types.
  *
  * Dictionary that contains a list of all registered filter actions
@@ -47,7 +55,7 @@ struct FilterActionDesc {
  * You can iterate over all known filter actions by using list.
  *
  * \author Marc Mutz <mutz@kde.org>, based on work by Stefan Taferner <taferner@kde.org>
- * \sa FilterAction FilterActionDesc Filter
+ * \sa FilterAction FilterActionDesc MailFilter
  */
 class FilterActionDict : public QMultiHash<QString, FilterActionDesc *>
 {
@@ -65,7 +73,7 @@ public:
     /*!
      * Overloaded member function, provided for convenience. Thin
      * wrapper around QDict::insert and QPtrList::insert.
-     * Inserts the resulting FilterActionDesc
+     * Creates an action with \a aNewFunc and inserts the resulting FilterActionDesc
      * thrice: First with the name, then with the label as key into the
      * QDict, then into the QPtrList. For that, it creates an
      * instance of the action internally and deletes it again after

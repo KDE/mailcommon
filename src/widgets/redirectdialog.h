@@ -33,6 +33,9 @@ class MAILCOMMON_EXPORT RedirectDialog : public QDialog
 public:
     /*!
      * Describes the send mode.
+     *
+     * \value SendNow Send the message immediately
+     * \value SendLater Queue the message to send it later
      */
     enum SendMode {
         SendNow,

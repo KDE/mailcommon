@@ -21,7 +21,12 @@ class QItemSelectionModel;
 namespace MailCommon
 {
 /*!
- * \brief The SnippetInfo struct
+ * \struct MailCommon::SnippetInfo
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/SnippetsManager
+ *
+ * \brief The SnippetInfo struct.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 struct MAILCOMMON_EXPORT SnippetInfo {
@@ -47,7 +52,8 @@ struct MAILCOMMON_EXPORT SnippetInfo {
  * \inmodule MailCommon
  * \inheaderfile MailCommon/SnippetsManager
  *
- * \brief The SnippetsManager class
+ * \brief The SnippetsManager class.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT SnippetsManager : public QObject
@@ -57,10 +63,10 @@ public:
     /*!
      * Creates a new snippets manager.
      *
-     * \param actionCollection The action collection where the manager will
+     * \a actionCollection The action collection where the manager will
      *                         register the snippet shortcuts at.
-     * \param parent The parent object.
-     * \param widget The widget.
+     * \a parent The parent object.
+     * \a widget The widget.
      */
     explicit SnippetsManager(KActionCollection *actionCollection, QObject *parent = nullptr, QWidget *widget = nullptr);
 
@@ -132,7 +138,7 @@ Q_SIGNALS:
     /*!
      * Emitted when a specific snippet should be inserted with all its details.
      *
-     * \param info The snippet information to insert
+     * \a info The snippet information to insert
      */
     void insertSnippetInfo(const MailCommon::SnippetInfo &info);
 

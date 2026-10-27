@@ -50,13 +50,19 @@ public:
 
     /*!
      * Describes the type of content that will be logged.
+     *
+     * \value Meta Log all meta data.
+     * \value PatternDescription Log all pattern description.
+     * \value RuleResult Log all rule matching results.
+     * \value PatternResult Log all pattern matching results.
+     * \value AppliedAction Log all applied actions.
      */
     enum ContentType {
-        Meta = 1, ///< Log all meta data.
-        PatternDescription = 2, ///< Log all pattern description.
-        RuleResult = 4, ///< Log all rule matching results.
-        PatternResult = 8, ///< Log all pattern matching results.
-        AppliedAction = 16 ///< Log all applied actions.
+        Meta = 1,
+        PatternDescription = 2,
+        RuleResult = 4,
+        PatternResult = 8,
+        AppliedAction = 16
     };
 
     /*!
@@ -112,12 +118,12 @@ public:
     /*!
      * Saves the log to the file with the given \a fileName.
      *
-     * Returns \\ true on success or \\ false on failure.
+     * Returns \c true on success or \c false on failure.
      */
     bool saveToFile(const QString &fileName) const;
 
     /*!
-     * Returns an escaped version of the log which can be used
+     * Returns an escaped version of the log text \a plain which can be used
      * in a HTML document.
      */
     [[nodiscard]] static QString recode(const QString &plain);

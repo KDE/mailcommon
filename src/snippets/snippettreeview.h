@@ -34,8 +34,8 @@ public:
     /*!
      * Constructs a snippet tree view.
      *
-     * \param actionCollection The action collection for managing context menu actions
-     * \param parent The parent widget
+     * \a actionCollection The action collection for managing context menu actions
+     * \a parent The parent widget
      */
     explicit SnippetTreeView(KActionCollection *actionCollection, QWidget *parent = nullptr);
     /*!
@@ -54,7 +54,7 @@ protected:
     /*!
      * Handles context menu events for the tree view.
      *
-     * \param event The context menu event
+     * \a event The context menu event
      */
     void contextMenuEvent(QContextMenuEvent *event) override;
 
@@ -62,7 +62,7 @@ Q_SIGNALS:
     /*!
      * Emitted when a snippet should be inserted into the editor.
      *
-     * \param info The snippet information to insert
+     * \a info The snippet information to insert
      */
     void insertSnippetInfo(const MailCommon::SnippetInfo &info);
 

@@ -22,7 +22,8 @@ class MailCommonSettings;
  * \inmodule MailCommon
  * \inheaderfile MailCommon/FavoriteCollectionWidget
  *
- * \brief The FavoriteCollectionWidget class
+ * \brief The FavoriteCollectionWidget class.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT FavoriteCollectionWidget : public Akonadi::EntityListView
@@ -32,9 +33,9 @@ public:
     /*!
      * Constructs a favorite collection widget.
      *
-     * \param settings The mail common settings object
-     * \param xmlGuiClient The XML GUI client for action management
-     * \param parent The parent widget
+     * \a settings The mail common settings object
+     * \a xmlGuiClient The XML GUI client for action management
+     * \a parent The parent widget
      */
     explicit FavoriteCollectionWidget(MailCommon::MailCommonSettings *settings, KXMLGUIClient *xmlGuiClient, QWidget *parent = nullptr);
     /*!
@@ -54,7 +55,7 @@ public:
     /*!
      * Changes the view mode of the favorite collection list.
      *
-     * \param mode The new view mode (Icon, List, etc.)
+     * \a mode The new view mode (Icon, List, etc.)
      */
     void changeViewMode(QListView::ViewMode mode);
 
@@ -70,13 +71,13 @@ protected Q_SLOTS:
     /*!
      * Slot called when the icon size should be changed.
      *
-     * \param toggle Whether to toggle the icon size
+     * \a toggle Whether to toggle the icon size
      */
     void slotChangeIconSize(bool toggle);
     /*!
      * Slot called when the display mode should be changed.
      *
-     * \param toggle Whether to toggle the mode
+     * \a toggle Whether to toggle the mode
      */
     void slotChangeMode(bool toggle);
 
@@ -84,44 +85,44 @@ protected:
     /*!
      * Handles paint events to draw the favorite collections.
      *
-     * \param event The paint event
+     * \a event The paint event
      */
     void paintEvent(QPaintEvent *event) override;
     /*!
      * Handles drag enter events for drag and drop operations.
      *
-     * \param event The drag enter event
+     * \a event The drag enter event
      */
     void dragEnterEvent(QDragEnterEvent *event) override;
     /*!
      * Handles drag move events for drag and drop operations.
      *
-     * \param event The drag move event
+     * \a event The drag move event
      */
     void dragMoveEvent(QDragMoveEvent *event) override;
     /*!
      * Handles drop events for drag and drop operations.
      *
-     * \param event The drop event
+     * \a event The drop event
      */
     void dropEvent(QDropEvent *event) override;
     /*!
      * Initiates drag operations.
      *
-     * \param supportedActions The drop actions supported by the source
+     * \a supportedActions The drop actions supported by the source
      */
     void startDrag(Qt::DropActions supportedActions) override;
 
     /*!
      * Handles mouse press events.
      *
-     * \param e The mouse event
+     * \a e The mouse event
      */
     void mousePressEvent(QMouseEvent *e) override;
     /*!
      * Processes events with special handling.
      *
-     * \param e The event to process
+     * \a e The event to process
      * \return True if the event was processed, false otherwise
      */
     [[nodiscard]] bool event(QEvent *e) override;
@@ -129,7 +130,7 @@ Q_SIGNALS:
     /*!
      * Emitted when a new tab is requested.
      *
-     * \param isChecked True if the action that triggered this signal is checked
+     * \a isChecked True if the action that triggered this signal is checked
      */
     void newTabRequested(bool isChecked);
 

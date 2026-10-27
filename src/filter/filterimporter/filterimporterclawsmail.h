@@ -20,7 +20,8 @@ class MailFilter;
  * \inmodule MailCommon
  * \inheaderfile MailCommon/FilterImporterClawsMail
  *
- * \brief The FilterImporterClawsMails class
+ * \brief The FilterImporterClawsMails class.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT FilterImporterClawsMails : public FilterImporterAbstract
@@ -28,12 +29,12 @@ class MAILCOMMON_EXPORT FilterImporterClawsMails : public FilterImporterAbstract
 public:
     /*!
      * \brief FilterImporterClawsMails
-     * \param file
+     * \a file
      */
     explicit FilterImporterClawsMails(QFile *file);
     /*!
      * \brief FilterImporterClawsMails
-     * \param string
+     * \a string
      */
     FilterImporterClawsMails(QString string);
     // Use for unittests

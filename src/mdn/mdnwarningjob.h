@@ -19,7 +19,8 @@ class IKernel;
  * \inmodule MailCommon
  * \inheaderfile MailCommon/MDNWarningJob
  *
- * \brief The MDNWarningJob class
+ * \brief The MDNWarningJob class.
+ *
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILCOMMON_EXPORT MDNWarningJob : public QObject
@@ -35,8 +36,8 @@ public:
     /*!
      * Constructs an MDN warning job.
      *
-     * \param kernel The mail kernel object
-     * \param parent The parent object
+     * \a kernel The mail kernel object
+     * \a parent The parent object
      */
     explicit MDNWarningJob(IKernel *kernel, QObject *parent = nullptr);
     /*!
@@ -58,7 +59,7 @@ public:
     /*!
      * Sets the Akonadi item to process.
      *
-     * \param newItem The Akonadi item
+     * \a newItem The Akonadi item
      */
     void setItem(const Akonadi::Item &newItem);
 
@@ -78,7 +79,7 @@ public:
     /*!
      * Sets the MDN response.
      *
-     * \param newResponse The MDN response to set
+     * \a newResponse The MDN response to set
      */
     void setResponse(ResponseMDN newResponse);
 
@@ -91,7 +92,7 @@ public:
     /*!
      * Sets the MDN sending mode.
      *
-     * \param newSendingMode The sending mode to set
+     * \a newSendingMode The sending mode to set
      */
     void setSendingMode(KMime::MDN::SendingMode newSendingMode);
 

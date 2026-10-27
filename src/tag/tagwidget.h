@@ -27,7 +27,7 @@ class TagWidgetPrivate;
  * \inmodule MailCommon
  * \inheaderfile MailCommon/TagWidget
  *
- * \brief The TagWidget class
+ * \brief The TagWidget class.
  */
 class MAILCOMMON_EXPORT TagWidget : public QWidget
 {
@@ -36,8 +36,8 @@ public:
     /*!
      * Constructs a tag widget for editing tag properties.
      *
-     * \param actionCollections List of action collections for keyboard shortcuts
-     * \param parent The parent widget
+     * \a actionCollections List of action collections for keyboard shortcuts
+     * \a parent The parent widget
      */
     explicit TagWidget(const QList<KActionCollection *> &actionCollections, QWidget *parent = nullptr);
     /*!
@@ -48,7 +48,7 @@ public:
     /*!
      * Records the current tag settings to the given tag object.
      *
-     * \param tag The tag object to store settings in
+     * \a tag The tag object to store settings in
      */
     void recordTagSettings(MailCommon::Tag::Ptr tag);
 
@@ -126,20 +126,20 @@ public:
     /*!
      * Sets the text color for the tag preview.
      *
-     * \param color The color to set
+     * \a color The color to set
      */
     void setTagTextColor(const QColor &color);
     /*!
      * Sets the background color for the tag preview.
      *
-     * \param color The color to set
+     * \a color The color to set
      */
     void setTagBackgroundColor(const QColor &color);
     /*!
      * Sets the text format (bold and italic) for the tag preview.
      *
-     * \param bold Whether the text should be bold
-     * \param italic Whether the text should be italic
+     * \a bold Whether the text should be bold
+     * \a italic Whether the text should be italic
      */
     void setTagTextFormat(bool bold, bool italic);
 
@@ -151,7 +151,7 @@ Q_SIGNALS:
     /*!
      * Emitted when the tag's icon name has been changed.
      *
-     * \param iconName The new icon name
+     * \a iconName The new icon name
      */
     void iconNameChanged(const QString &iconName);
 
