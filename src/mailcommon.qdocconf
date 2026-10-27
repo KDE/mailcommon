@@ -12,7 +12,19 @@ sourcedirs += .
 outputformats = HTML
 
 depends += \
-    qtcore
+    qtcore \
+    qtgui \
+    qtwidgets \
+    kmime \
+    kmailtransport \
+    identitymanagementcore \
+    libkdepim \
+    pimcommon \
+    messagecore \
+    messagecomposer \
+    messageviewer \
+    templateparser \
+    textcustomeditor
 
 navigation.landingpage = "MailCommon"
 
@@ -21,7 +33,7 @@ qhp.projects            = mailcommon
 qhp.mailcommon.file                = mailcommon.qhp
 qhp.mailcommon.namespace           = org.kde.mailcommon.$QT_VERSION_TAG
 qhp.mailcommon.virtualFolder       = mailcommon
-qhp.mailcommon.indexTitle          = mailcommon
+qhp.mailcommon.indexTitle          = MailCommon
 qhp.mailcommon.indexRoot           =
 
 qhp.mailcommon.subprojects         = classes
