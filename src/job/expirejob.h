@@ -27,7 +27,6 @@ public:
 
 private:
     void slotDoWork();
-    void slotExpireDone(KJob *job);
     void itemFetchResult(KJob *job);
     void done();
     void slotExpireDeleteDone();
