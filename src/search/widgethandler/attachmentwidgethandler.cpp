@@ -6,6 +6,7 @@
 
 #include "attachmentwidgethandler.h"
 #include <KLazyLocalizedString>
+#include <KLocalizedString>
 #include <QComboBox>
 #include <QLabel>
 #include <QStackedWidget>

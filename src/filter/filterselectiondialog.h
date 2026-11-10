@@ -13,7 +13,6 @@
 class QPushButton;
 
 class QListWidget;
-class QWidget;
 
 namespace MailCommon
 {

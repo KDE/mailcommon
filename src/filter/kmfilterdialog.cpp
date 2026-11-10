@@ -12,6 +12,7 @@
 #include "kmfilterdialog.h"
 #include "kmfilterlistbox.h"
 #include "mailcommon_debug.h"
+#include "mailfilter.h"
 
 #include "filteractions/filteractionwidget.h"
 #include "filterimporterpathcache.h"
@@ -39,6 +40,7 @@ using MailCommon::FilterImporterExporter;
 #include <QPushButton>
 #include <QTabWidget>
 
+#include <QAction>
 #include <QButtonGroup>
 #include <QCheckBox>
 #include <QDialogButtonBox>

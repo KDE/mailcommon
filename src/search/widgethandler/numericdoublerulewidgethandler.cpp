@@ -5,7 +5,6 @@
 */
 
 #include "numericdoublerulewidgethandler.h"
-#include "search/searchpattern.h"
 
 #include <KLocalizedString>
 

@@ -28,6 +28,7 @@ using MailCommon::FilterLog;
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KRandom>
+#include <QDataStream>
 #include <QPointer>
 
 #include <algorithm>

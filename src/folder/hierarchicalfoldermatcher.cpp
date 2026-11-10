@@ -9,7 +9,6 @@
 
 #include <QAbstractItemModel>
 #include <QModelIndex>
-#include <QRegularExpression>
 
 #include <algorithm>
 #include <iterator>

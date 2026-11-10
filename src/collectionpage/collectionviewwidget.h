@@ -7,7 +7,7 @@
 #pragma once
 
 #include "mailcommon_export.h"
-#include <MailCommon/FolderSettings>
+#include <Akonadi/Collection>
 #include <QSharedPointer>
 #include <QWidget>
 class QCheckBox;
@@ -23,6 +23,7 @@ class ThemeComboBox;
 }
 namespace MailCommon
 {
+class FolderSettings;
 /*!
  * \class MailCommon::CollectionViewWidget
  * \inmodule MailCommon

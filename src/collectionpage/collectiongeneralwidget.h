@@ -7,10 +7,13 @@
 #pragma once
 
 #include "mailcommon_export.h"
-#include <Akonadi/Collection>
 #include <QSharedPointer>
 #include <QWidget>
 class QCheckBox;
+namespace Akonadi
+{
+class Collection;
+}
 namespace KIdentityManagementWidgets
 {
 class IdentityCombo;

@@ -11,6 +11,8 @@
 
 #include <QDialog>
 
+#include <memory>
+
 namespace MailCommon
 {
 /*!

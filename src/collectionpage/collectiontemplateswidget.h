@@ -7,9 +7,12 @@
 #pragma once
 
 #include "mailcommon_export.h"
-#include <Akonadi/Collection>
 #include <QWidget>
 class QCheckBox;
+namespace Akonadi
+{
+class Collection;
+}
 namespace TemplateParser
 {
 class TemplatesConfiguration;

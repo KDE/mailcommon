@@ -16,6 +16,7 @@
 
 #include <KMessageBox>
 #include <QCheckBox>
+#include <QDebug>
 #include <QFormLayout>
 #include <QGroupBox>
 #include <QHBoxLayout>

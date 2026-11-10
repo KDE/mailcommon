@@ -6,7 +6,7 @@
 
 #pragma once
 #include "mailcommon_private_export.h"
-#include "searchpattern.h"
+#include "searchrule.h"
 namespace MailCommon
 {
 /**

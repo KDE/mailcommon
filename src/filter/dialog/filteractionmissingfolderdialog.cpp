@@ -12,6 +12,7 @@
 #include "util/mailutil.h"
 
 #include <Akonadi/EntityMimeTypeFilterModel>
+#include <Akonadi/EntityTreeModel>
 
 #include <KLocalizedString>
 

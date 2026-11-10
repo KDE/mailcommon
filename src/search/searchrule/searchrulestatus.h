@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include "mailcommon/searchpattern.h"
+#include "mailcommon/searchrule.h"
 #include "mailcommon_export.h"
 #include <Akonadi/MessageStatus>
 

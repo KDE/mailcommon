@@ -7,6 +7,7 @@
 
 #include "favoritecollectionorderproxymodel.h"
 #include <Akonadi/AccountActivitiesAbstract>
+#include <Akonadi/AgentInstance>
 #include <Akonadi/AgentManager>
 #include <Akonadi/Collection>
 #include <Akonadi/EntityTreeModel>

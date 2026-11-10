@@ -15,6 +15,7 @@
 #include <QFile>
 #include <QMediaPlayer>
 #include <QPointer>
+#include <QUrl>
 
 using namespace MailCommon;
 

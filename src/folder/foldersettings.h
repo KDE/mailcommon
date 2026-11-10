@@ -15,7 +15,6 @@ using MessageCore::MailingList;
 #include <Akonadi/Collection>
 #include <Akonadi/CollectionStatistics>
 
-#include <KSharedConfig>
 #include <QKeySequence>
 #include <QSharedPointer>
 

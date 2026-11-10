@@ -9,6 +9,7 @@
 
 #include <MailCommon/ExpireCollectionAttribute>
 #include <QWidget>
+class QDebug;
 class QCheckBox;
 class QSpinBox;
 class QRadioButton;

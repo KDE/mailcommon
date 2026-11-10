@@ -17,6 +17,8 @@ using namespace Akonadi;
 #include <KIdentityManagementCore/Identity>
 #include <KIdentityManagementCore/IdentityManager>
 
+#include <KConfigGroup>
+#include <KSharedConfig>
 #include <QMutex>
 #include <QMutexLocker>
 #include <QSharedPointer>

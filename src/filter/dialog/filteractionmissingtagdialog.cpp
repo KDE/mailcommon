@@ -12,8 +12,10 @@
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QListWidget>
+#include <QMap>
 #include <QPointer>
 #include <QPushButton>
+#include <QUrl>
 #include <QVBoxLayout>
 #include <TextAddonsWidgets/LoadDialogSizeUtils>
 

@@ -5,7 +5,6 @@
 */
 
 #include "numericrulewidgethandler.h"
-#include "search/searchpattern.h"
 
 #include <KLazyLocalizedString>
 #include <KLocalization>

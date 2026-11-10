@@ -24,6 +24,7 @@
 
 #include <MessageCore/MessageCoreSettings>
 
+#include <KConfigGroup>
 #include <KLocalizedString>
 
 #include <QFontDatabase>

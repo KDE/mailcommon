@@ -13,6 +13,7 @@
 
 #include <Akonadi/Collection>
 #include <Akonadi/SpecialMailCollections>
+#include <QMap>
 #include <QObject>
 class KJob;
 namespace PimCommon

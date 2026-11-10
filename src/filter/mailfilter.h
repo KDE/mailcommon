@@ -15,10 +15,10 @@
 #include <Akonadi/Collection>
 #include <QKeySequence>
 
-#include <QDataStream>
 #include <QList>
 
 class KConfigGroup;
+class QDataStream;
 
 namespace MailCommon
 {

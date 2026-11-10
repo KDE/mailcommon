@@ -20,6 +20,7 @@
 #include <MessageViewer/MessageViewerUtil>
 
 #include <KConfigGroup>
+#include <KLocalizedString>
 #include <KMessageBox>
 #include <QDir>
 #include <QFile>

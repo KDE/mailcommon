@@ -11,7 +11,7 @@
 
 #include <Akonadi/Attribute>
 #include <Akonadi/Collection>
-#include <QDebug>
+class QDebug;
 
 namespace MailCommon
 {

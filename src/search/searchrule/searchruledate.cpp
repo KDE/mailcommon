@@ -8,6 +8,7 @@
 
 #include <KLocalizedString>
 #include <KMime/Message>
+#include <QDate>
 using namespace MailCommon;
 
 SearchRuleDate::SearchRuleDate(const QByteArray &field, Function func, const QString &contents)

@@ -12,6 +12,7 @@
 #include "mailcommon_export.h"
 #include <QAbstractItemModel>
 #include <QKeySequence>
+#include <QMap>
 namespace MailCommon
 {
 class SnippetItem;

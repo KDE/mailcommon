@@ -18,6 +18,7 @@
 
 #include <QDialogButtonBox>
 #include <QPushButton>
+#include <QUrl>
 #include <QVBoxLayout>
 #include <TextAddonsWidgets/LoadDialogSizeUtils>
 

@@ -12,6 +12,7 @@
 
 #include <KLocalizedString>
 
+#include <QAction>
 #include <QContextMenuEvent>
 #include <QHeaderView>
 #include <QMenu>

@@ -8,6 +8,8 @@
 
 #include "filter/filterimporter/filterimporterabstract.h"
 
+#include <cstdint>
+
 class QDomElement;
 class QFile;
 

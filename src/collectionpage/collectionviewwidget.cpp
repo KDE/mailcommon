@@ -5,6 +5,7 @@
 */
 
 #include "collectionviewwidget.h"
+#include "folder/foldersettings.h"
 #include "mailcommon_debug.h"
 #include <KLocalizedString>
 #include <QFormLayout>

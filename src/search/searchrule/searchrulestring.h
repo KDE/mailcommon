@@ -6,7 +6,7 @@
 
 #pragma once
 #include "mailcommon_private_export.h"
-#include "searchpattern.h"
+#include "searchrule.h"
 
 /**
  * @short This class represents a search pattern rule operating on a string.

@@ -12,10 +12,7 @@
 #pragma once
 
 #include "filterimporterexporter.h"
-#include "mailcommon/filteraction.h"
-#include "mailcommon/searchpattern.h"
 #include "mailcommon_export.h"
-#include "mailfilter.h"
 
 #include <QDialog>
 
@@ -29,8 +26,13 @@ class QCheckBox;
 class QPushButton;
 class QRadioButton;
 class QGroupBox;
+namespace Akonadi
+{
+class Collection;
+}
 namespace MailCommon
 {
+class MailFilter;
 class SearchPatternEdit;
 class FilterActionWidgetLister;
 class FolderRequester;

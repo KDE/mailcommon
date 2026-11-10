@@ -13,7 +13,6 @@
 #include <QCheckBox>
 #include <QDialogButtonBox>
 #include <QLabel>
-#include <QMap>
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <TextAddonsWidgets/LoadDialogSizeUtils>

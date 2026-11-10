@@ -7,11 +7,13 @@
 
 #pragma once
 
-#include "mailcommon/searchpattern.h"
 #include "mailcommon_export.h"
 
 #include <Akonadi/Collection>
 #include <Akonadi/Item>
+#include <QFlags>
+
+#include <cstdint>
 
 namespace MailCommon
 {

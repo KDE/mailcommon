@@ -9,6 +9,8 @@
 #include "mailcommon_export.h"
 #include <QDialog>
 
+#include <memory>
+
 namespace MailCommon
 {
 class AccountConfigOrderDialogPrivate;

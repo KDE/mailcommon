@@ -12,6 +12,8 @@
 
 #include <QStringList>
 
+#include <memory>
+
 class KConfigGroup;
 class QDataStream;
 namespace MailCommon

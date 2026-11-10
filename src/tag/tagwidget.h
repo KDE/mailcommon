@@ -12,6 +12,8 @@
 
 #include <QWidget>
 
+#include <memory>
+
 class QLineEdit;
 class KColorCombo;
 class KIconButton;

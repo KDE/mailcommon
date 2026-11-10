@@ -10,6 +10,7 @@
 #pragma once
 
 #include <QDialog>
+#include <QMap>
 
 class QCheckBox;
 namespace TextCustomEditor

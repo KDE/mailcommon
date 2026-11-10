@@ -6,6 +6,7 @@
 
 #include "invitationwidgethandler.h"
 #include <KLazyLocalizedString>
+#include <KLocalizedString>
 #include <QComboBox>
 #include <QLabel>
 #include <QStackedWidget>
