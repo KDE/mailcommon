@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-27 01:01+0000\n"
+"POT-Creation-Date: 2026-11-11 01:03+0000\n"
 "PO-Revision-Date: 2019-11-18 12:53+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -23,7 +23,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "Vypršanie"
 
-#: collectionpage/collectionexpirywidget.cpp:35
+#: collectionpage/collectionexpirywidget.cpp:36
 #, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
@@ -32,46 +32,46 @@ msgstr[0] " deň"
 msgstr[1] " dni"
 msgstr[2] " dní"
 
-#: collectionpage/collectionexpirywidget.cpp:36
-#: collectionpage/collectionexpirywidget.cpp:42
-#: collectionpage/collectionexpirywidget.cpp:54
+#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:43
+#: collectionpage/collectionexpirywidget.cpp:55
 #, kde-format
 msgid "Never"
 msgstr "Nikdy"
 
-#: collectionpage/collectionexpirywidget.cpp:66
+#: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Uložiť nastavenia a vypršať teraz"
 
-#: collectionpage/collectionexpirywidget.cpp:67
+#: collectionpage/collectionexpirywidget.cpp:68
 #, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Skončiť platnosť prečítaných správ po"
 
-#: collectionpage/collectionexpirywidget.cpp:73
+#: collectionpage/collectionexpirywidget.cpp:74
 #, kde-format
 msgid "Expire read messages after:"
 msgstr "Skončiť platnosť prečítaných správ po"
 
-#: collectionpage/collectionexpirywidget.cpp:76
+#: collectionpage/collectionexpirywidget.cpp:77
 #, kde-format
 msgid "Expire unread messages after:"
 msgstr "Skončiť platnosť neprečítaných správ po"
 
-#: collectionpage/collectionexpirywidget.cpp:90
+#: collectionpage/collectionexpirywidget.cpp:91
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "Premiestniť správy s vypršanou platnosťou do:"
 
-#: collectionpage/collectionexpirywidget.cpp:101
+#: collectionpage/collectionexpirywidget.cpp:102
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "Trvale vymazať správy s vypršanou platnosťou"
 
-#: collectionpage/collectionexpirywidget.cpp:172
+#: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -80,13 +80,13 @@ msgstr ""
 "Prosím vyberte priečinok na vypršanie tejto správy.\n"
 "Ak to nie je urobené, vypršané správy budú permanentne vymazané."
 
-#: collectionpage/collectionexpirywidget.cpp:173
+#: collectionpage/collectionexpirywidget.cpp:174
 #, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Nebol vybraný žiaden priečinok"
 
-#: collectionpage/collectionexpirywidget.cpp:187
+#: collectionpage/collectionexpirywidget.cpp:188
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -97,7 +97,7 @@ msgstr ""
 "platnosťou.\n"
 "Ak to nie je urobené, vypršané správy budú permanentne vymazané."
 
-#: collectionpage/collectionexpirywidget.cpp:189
+#: collectionpage/collectionexpirywidget.cpp:190
 #, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
@@ -240,65 +240,65 @@ msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "&Kopírovať globálne šablóny"
 
-#: collectionpage/collectionviewwidget.cpp:28
+#: collectionpage/collectionviewwidget.cpp:29
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "Použiť predvolenú identitu"
 
-#: collectionpage/collectionviewwidget.cpp:30
+#: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "Použiť predvolenú identitu"
 
-#: collectionpage/collectionviewwidget.cpp:32
+#: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr "Uprednostniť HTML pred textom"
 
-#: collectionpage/collectionviewwidget.cpp:33
+#: collectionpage/collectionviewwidget.cpp:34
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr "Uprednostniť text pred HTML"
 
-#: collectionpage/collectionviewwidget.cpp:34
+#: collectionpage/collectionviewwidget.cpp:35
 #, kde-format
 msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr "Použiť globálne nastavenia"
 
-#: collectionpage/collectionviewwidget.cpp:41
+#: collectionpage/collectionviewwidget.cpp:42
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
 msgstr "Zobraziť stĺpec odosielateľa/príjemcu v zozname správ"
 
-#: collectionpage/collectionviewwidget.cpp:44
+#: collectionpage/collectionviewwidget.cpp:45
 #, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
 msgstr " (predvolené)"
 
-#: collectionpage/collectionviewwidget.cpp:45
+#: collectionpage/collectionviewwidget.cpp:46
 #, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
 msgstr "Odosielateľ"
 
-#: collectionpage/collectionviewwidget.cpp:46
+#: collectionpage/collectionviewwidget.cpp:47
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
 msgstr "Príjemca"
 
-#: collectionpage/collectionviewwidget.cpp:47
+#: collectionpage/collectionviewwidget.cpp:48
 #, kde-format
 msgid "Sho&w column:"
 msgstr "Skratka:"
 
-#: collectionpage/collectionviewwidget.cpp:78
+#: collectionpage/collectionviewwidget.cpp:79
 #, kde-format
 msgid "Message format:"
 msgstr "Stav správy"
@@ -315,31 +315,31 @@ msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr "Chýba účet filtra. Prosím, vybrať účet pre použitie s filtrom \"%1\""
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:38
+#: filter/dialog/filteractionmissingfolderdialog.cpp:39
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Vybrať priečinok"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:41
+#: filter/dialog/filteractionmissingfolderdialog.cpp:42
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Cesta priečinka bola \"%1\"."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:46
+#: filter/dialog/filteractionmissingfolderdialog.cpp:47
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Nasledujúce priečinky môžu byť použité pre tento filter:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:67
+#: filter/dialog/filteractionmissingfolderdialog.cpp:68
 #, kde-format
 msgid "Please select a folder:"
 msgstr "Prosím vyberte priečinok"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:70
+#: filter/dialog/filteractionmissingfolderdialog.cpp:71
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
@@ -380,25 +380,25 @@ msgstr ""
 "Zvukový súbor chýba. Prosím, vybrať zvukový súbor pre použitie s filtrom "
 "\"%1\""
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:34
+#: filter/dialog/filteractionmissingtagdialog.cpp:36
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Vybrať značku"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:37
+#: filter/dialog/filteractionmissingtagdialog.cpp:39
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Značka bola \"%1\"."
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:44
+#: filter/dialog/filteractionmissingtagdialog.cpp:46
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr ""
 "Značka filtra chýba. Prosím, vybrať značku pre použitie s filtrom \"%1\""
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:68
+#: filter/dialog/filteractionmissingtagdialog.cpp:70
 #, kde-format
 msgid "Add Tag…"
 msgstr "Pridať značku"
@@ -699,12 +699,12 @@ msgstr "Presmerovať cez"
 msgid "No action defined."
 msgstr "Akcia nedefinovaná."
 
-#: filter/filteractions/filteractionplaysound.cpp:22
+#: filter/filteractions/filteractionplaysound.cpp:23
 #, kde-format
 msgid "Play Sound"
 msgstr "Prehrať zvuk"
 
-#: filter/filteractions/filteractionplaysound.cpp:78
+#: filter/filteractions/filteractionplaysound.cpp:79
 #, kde-format
 msgid "Sound file was not defined."
 msgstr "Zvukový súbor nebol definovaný."
@@ -936,29 +936,29 @@ msgstr "Pomocník"
 msgid "You can get specific header when you use %{headername}."
 msgstr "Špecifickú hlavičku môžete získať použitím %{headername}."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:34
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:35
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Konvertovať na Sieve skript"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:41
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:42
 #, kde-format
 msgid "Save…"
 msgstr "Uložiť…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:64
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:65
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "Zdieľať..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:77
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:78
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr "Súbory Sieve (*.siv);;Všetky súbory (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:78
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:79
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
@@ -974,7 +974,7 @@ msgstr "Gmail filter %1"
 msgid "Procmail filter %1"
 msgstr "Procmail filter %1"
 
-#: filter/filterimporterexporter.cpp:111
+#: filter/filterimporterexporter.cpp:112
 #, kde-format
 msgid ""
 "The following filters have not been saved because they were invalid (e.g. "
@@ -983,50 +983,50 @@ msgstr ""
 "Nasledujúce filtre neboli uložené, pretože sú neplatné (napr. neobsahujú "
 "žiadne akcie alebo pravidlá pre hľadanie)."
 
-#: filter/filterimporterexporter.cpp:137
+#: filter/filterimporterexporter.cpp:138
 #, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Importovať KMail filtre"
 
-#: filter/filterimporterexporter.cpp:145
+#: filter/filterimporterexporter.cpp:146
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Importovať Evolution filtre"
 
-#: filter/filterimporterexporter.cpp:149
+#: filter/filterimporterexporter.cpp:150
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Importovať Sylpheed filtre"
 
-#: filter/filterimporterexporter.cpp:153
+#: filter/filterimporterexporter.cpp:154
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Importovať Procmail filtre"
 
-#: filter/filterimporterexporter.cpp:157
+#: filter/filterimporterexporter.cpp:158
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Importovať filtre Balsa"
 
-#: filter/filterimporterexporter.cpp:161
+#: filter/filterimporterexporter.cpp:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Importovať filtre Claws Mail"
 
-#: filter/filterimporterexporter.cpp:165
+#: filter/filterimporterexporter.cpp:166
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "Importovať GMail filtre"
 
-#: filter/filterimporterexporter.cpp:179 filter/filterimporterexporter.cpp:215
-#: filter/filterimporterexporter.cpp:235
+#: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
+#: filter/filterimporterexporter.cpp:236
 #, kde-format
 msgid ""
 "The selected file is not readable. Your file access permissions might be "
@@ -1035,7 +1035,7 @@ msgstr ""
 "Vybraný súbor nie je čitateľný. Vaše prístupové práva k súborom môžu byť "
 "nedostatočné."
 
-#: filter/filterimporterexporter.cpp:315
+#: filter/filterimporterexporter.cpp:316
 #, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
@@ -1060,7 +1060,7 @@ msgid "Select Filters"
 msgstr "Vybrať filtre"
 
 #: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:53
-#: folder/foldertreewidget.cpp:79
+#: folder/foldertreewidget.cpp:80
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
@@ -1097,141 +1097,141 @@ msgstr "Meno účtu"
 msgid "Type"
 msgstr "Typ"
 
-#: filter/kmfilterdialog.cpp:70
+#: filter/kmfilterdialog.cpp:72
 #, kde-format
 msgctxt "@title:window"
 msgid "Filter Rules"
 msgstr "Pravidlá filtra"
 
-#: filter/kmfilterdialog.cpp:88
+#: filter/kmfilterdialog.cpp:90
 #, kde-format
 msgid "Import…"
 msgstr "Importovať..."
 
-#: filter/kmfilterdialog.cpp:90
+#: filter/kmfilterdialog.cpp:92
 #, kde-format
 msgid "Export…"
 msgstr "Exportovať..."
 
-#: filter/kmfilterdialog.cpp:92
+#: filter/kmfilterdialog.cpp:94
 #, kde-format
 msgid "Convert to…"
 msgstr "Previesť do..."
 
-#: filter/kmfilterdialog.cpp:96
+#: filter/kmfilterdialog.cpp:98
 #, kde-format
 msgctxt "@action"
 msgid "KMail filters"
 msgstr "KMail filtre"
 
-#: filter/kmfilterdialog.cpp:100
+#: filter/kmfilterdialog.cpp:102
 #, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Thunderbird filtre"
 
-#: filter/kmfilterdialog.cpp:104
+#: filter/kmfilterdialog.cpp:106
 #, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Evolution filtre"
 
-#: filter/kmfilterdialog.cpp:108
+#: filter/kmfilterdialog.cpp:110
 #, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Sylpheed filtre"
 
-#: filter/kmfilterdialog.cpp:112
+#: filter/kmfilterdialog.cpp:114
 #, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Procmail filtre"
 
-#: filter/kmfilterdialog.cpp:116
+#: filter/kmfilterdialog.cpp:118
 #, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Filtre programu Balsa"
 
-#: filter/kmfilterdialog.cpp:120
+#: filter/kmfilterdialog.cpp:122
 #, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Filtre Claws Mail"
 
-#: filter/kmfilterdialog.cpp:124
+#: filter/kmfilterdialog.cpp:126
 #, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Poštové filtre Icedove"
 
-#: filter/kmfilterdialog.cpp:130
+#: filter/kmfilterdialog.cpp:132
 #, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
 msgstr "GMail filtre"
 
-#: filter/kmfilterdialog.cpp:138
+#: filter/kmfilterdialog.cpp:140
 #, kde-format
 msgctxt "@action"
 msgid "Sieve script"
 msgstr "Sieve skript"
 
-#: filter/kmfilterdialog.cpp:160
+#: filter/kmfilterdialog.cpp:162
 #, kde-format
 msgid "Available Filters"
 msgstr "Filtre k dispozícii"
 
-#: filter/kmfilterdialog.cpp:166
+#: filter/kmfilterdialog.cpp:168
 #, kde-format
 msgctxt "General mail filter settings."
 msgid "General"
 msgstr "Všeobecné"
 
-#: filter/kmfilterdialog.cpp:170
+#: filter/kmfilterdialog.cpp:172
 #, kde-format
 msgctxt "Advanced mail filter settings."
 msgid "Advanced"
 msgstr "Pokročilé"
 
-#: filter/kmfilterdialog.cpp:180
+#: filter/kmfilterdialog.cpp:182
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Akcie filtra"
 
-#: filter/kmfilterdialog.cpp:191
+#: filter/kmfilterdialog.cpp:193
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Použiť tento filter na prichádzajúce správy:"
 
-#: filter/kmfilterdialog.cpp:201
+#: filter/kmfilterdialog.cpp:203
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "od všetkých účtov"
 
-#: filter/kmfilterdialog.cpp:205
+#: filter/kmfilterdialog.cpp:207
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "od všetkých účtov okrem online IMAP"
 
-#: filter/kmfilterdialog.cpp:209
+#: filter/kmfilterdialog.cpp:211
 #, kde-format
 msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "len od označených účtov"
 
-#: filter/kmfilterdialog.cpp:217
+#: filter/kmfilterdialog.cpp:219
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "Použiť tento filter na odo&slané správy"
 
-#: filter/kmfilterdialog.cpp:219
+#: filter/kmfilterdialog.cpp:221
 #, kde-format
 msgid ""
 "<p>The filter will be triggered <b>after</b> the message is sent and it will "
@@ -1243,13 +1243,13 @@ msgstr ""
 "správy.</p> <p>Ak má byť zmenená aj prijímateľova kópia, prosím použite "
 "\"Použiť tento filter <b>pred</b> odosielaním správ\".</p>"
 
-#: filter/kmfilterdialog.cpp:225
+#: filter/kmfilterdialog.cpp:227
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "Použiť tento filter pred odoslaním správ"
 
-#: filter/kmfilterdialog.cpp:227
+#: filter/kmfilterdialog.cpp:229
 #, kde-format
 msgid ""
 "<p>The filter will be triggered <b>before</b> the message is sent and it "
@@ -1260,19 +1260,19 @@ msgstr ""
 "odoslanú kópiu správy.</p> <p>Toto sa vyžaduje, ak musí byť modifikovaná aj "
 "kópia príjemcu.</p>"
 
-#: filter/kmfilterdialog.cpp:232
+#: filter/kmfilterdialog.cpp:234
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "Použiť tento filter pri ručnom &filtrovaní"
 
-#: filter/kmfilterdialog.cpp:235
+#: filter/kmfilterdialog.cpp:237
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "Použiť tento filter na prichádzajúce e-maily vo všetkých priečinkoch"
 
-#: filter/kmfilterdialog.cpp:237
+#: filter/kmfilterdialog.cpp:239
 #, kde-format
 msgid ""
 "<p>The filter will be applied on inbound emails from all folders belonging "
@@ -1285,60 +1285,60 @@ msgstr ""
 "miestnych filtrov s účtami IMAP, kde nové e-maily už mohli byť presunuté do "
 "rôznych priečinkov pomocou filtrov na strane servera.</p>"
 
-#: filter/kmfilterdialog.cpp:243
+#: filter/kmfilterdialog.cpp:245
 #, kde-format
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "Ak tento filter zodpovedá, tu skončiť spracovanie"
 
-#: filter/kmfilterdialog.cpp:246
+#: filter/kmfilterdialog.cpp:248
 #, kde-format
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Pridať tento filter do ponuky Použiť filter"
 
-#: filter/kmfilterdialog.cpp:264
+#: filter/kmfilterdialog.cpp:266
 #, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Dodatočne pridať tento filter do panela nástrojov"
 
-#: filter/kmfilterdialog.cpp:271
+#: filter/kmfilterdialog.cpp:273
 #, kde-format
 msgid "Shortcut:"
 msgstr "Skratka:"
 
-#: filter/kmfilterdialog.cpp:277
+#: filter/kmfilterdialog.cpp:279
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Ikona pre tento filter:"
 
-#: filter/kmfilterdialog.cpp:285
+#: filter/kmfilterdialog.cpp:287
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Spustiť vybrané filter(e) na:"
 
-#: filter/kmfilterdialog.cpp:291
+#: filter/kmfilterdialog.cpp:293
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Spustiť teraz"
 
-#: filter/kmfilterdialog.cpp:418
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr ""
 "Nemožno použiť tento filter, pretože tam nie sú žiadne vybrané priečinky."
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:421
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Nebol vybraný žiadny priečinok"
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1348,40 +1348,40 @@ msgstr ""
 "Niektoré filtre boli zmenené, ale ešte nie uložené. Musíte uložiť vaše "
 "filtre predtým, než môžu byť použité."
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:710
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filtre sa zmenili."
 
-#: filter/kmfilterdialog.cpp:435
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Nemožno použiť filter, pretože nie sú žiadne filtre aktuálne vybrané."
 
-#: filter/kmfilterdialog.cpp:436
+#: filter/kmfilterdialog.cpp:438
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Nebol vybraný žiadny priečinok"
 
-#: filter/kmfilterdialog.cpp:660
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Žiadny filter nebol importovaný."
 
-#: filter/kmfilterdialog.cpp:671
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Filtre, ktoré boli importované:"
 
-#: filter/kmfilterdialog.cpp:683
+#: filter/kmfilterdialog.cpp:685
 #, kde-format
 msgid "No filter found."
 msgstr "Nenašiel sa žiaden filter."
 
-#: filter/kmfilterdialog.cpp:708
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1391,20 +1391,20 @@ msgstr ""
 "Niektoré filtre boli zmenené, ale ešte nie uložené.<br> Musíte uložiť vaše "
 "filtre predtým, než môžu byť exportované."
 
-#: filter/kmfilterdialog.cpp:714
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Nemôžeme skonvertovať všetky filtre KMail do sieve skriptov, ale môžeme to "
 "skúsiť :)"
 
-#: filter/kmfilterdialog.cpp:715 filter/kmfilterdialog.cpp:731
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Konvertovať filtre KMail na sieve skripty"
 
-#: filter/kmfilterdialog.cpp:731
+#: filter/kmfilterdialog.cpp:733
 #, kde-format
 msgid "No filters selected."
 msgstr "Nebol vybraný žiadny priečinok"
@@ -1620,27 +1620,27 @@ msgstr ""
 "Premenovať filter \"%1\" na:\n"
 "(nechajte pole prázdne pre automatické pomenovanie)"
 
-#: filter/mailfilter.cpp:131
+#: filter/mailfilter.cpp:132
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>Akcia použitia filtra:</b> %1"
 
-#: filter/mailfilter.cpp:140
+#: filter/mailfilter.cpp:141
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "Došlo ku kritickej chybe. Spracovanie sa tu zastaví."
 
-#: filter/mailfilter.cpp:147
+#: filter/mailfilter.cpp:148
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "Bol zistený problém pri použití tejto akcie."
 
-#: filter/mailfilter.cpp:428
+#: filter/mailfilter.cpp:429
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>Príliš veľa akcií filtra v pravidle filtra <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:462
+#: filter/mailfilter.cpp:463
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1649,7 +1649,7 @@ msgstr ""
 "<qt>Neznáma akcia filtra <b>%1</b><br />v pravidle filtra <b>%2</b>.<br /"
 ">Ignoruje sa.</qt>"
 
-#: filter/mailfilter.cpp:570
+#: filter/mailfilter.cpp:571
 #, kde-format
 msgid "Any action defined."
 msgstr "Ľubovoľná akcia definovaná."
@@ -1887,18 +1887,18 @@ msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Neísť do"
 
-#: folder/foldertreewidget.cpp:73
+#: folder/foldertreewidget.cpp:74
 #, kde-format
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
 msgstr "Môžete začať písať pre filtrovanie zoznamu priečinkov."
 
-#: folder/foldertreewidget.cpp:317
+#: folder/foldertreewidget.cpp:318
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "Môžete začať písať pre filtrovanie zoznamu priečinkov."
 
-#: folder/foldertreewidget.cpp:317
+#: folder/foldertreewidget.cpp:318
 #, kde-format
 msgid "Path: (%1)"
 msgstr "Cesta: (%1)"
@@ -2387,7 +2387,7 @@ msgstr "<Tag> nie je podporovaný"
 msgid "<message> not implemented/supported"
 msgstr "<message> neimplementované/nepodporované"
 
-#: search/searchrule/searchruledate.cpp:20
+#: search/searchrule/searchruledate.cpp:21
 #, kde-format
 msgid "Date is not valid."
 msgstr "Dátum nie je platný."
@@ -2402,36 +2402,36 @@ msgstr "Obsah nie je číslo."
 msgid "String is empty."
 msgstr "Reťazec je prázdny."
 
-#: search/widgethandler/attachmentwidgethandler.cpp:17
-#: search/widgethandler/invitationwidgethandler.cpp:17
+#: search/widgethandler/attachmentwidgethandler.cpp:18
+#: search/widgethandler/invitationwidgethandler.cpp:18
 msgid "has"
 msgstr "obsahuje"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:17
-#: search/widgethandler/invitationwidgethandler.cpp:17
+#: search/widgethandler/attachmentwidgethandler.cpp:18
+#: search/widgethandler/invitationwidgethandler.cpp:18
 msgid "has not"
 msgstr "nie je"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:51
+#: search/widgethandler/attachmentwidgethandler.cpp:52
 #, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
 msgstr "Príloha:"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:88
+#: search/widgethandler/attachmentwidgethandler.cpp:89
 #, kde-format
 msgid "has attachment"
 msgstr "má prílohu"
 
 #: search/widgethandler/daterulewidgethandler.cpp:21
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:21
-#: search/widgethandler/numericrulewidgethandler.cpp:21
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:20
+#: search/widgethandler/numericrulewidgethandler.cpp:20
 msgid "is equal to"
 msgstr "je rovné"
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:22
-#: search/widgethandler/numericrulewidgethandler.cpp:22
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:21
+#: search/widgethandler/numericrulewidgethandler.cpp:21
 msgid "is not equal to"
 msgstr "nie je rovné"
 
@@ -2451,23 +2451,23 @@ msgstr "je pred"
 msgid "is after or equal to"
 msgstr "je za alebo sa rovná"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:17
+#: search/widgethandler/encryptionwidgethandler.cpp:18
 #: search/widgethandler/statusrulewidgethandler.cpp:18
 msgid "is"
 msgstr "je"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:17
+#: search/widgethandler/encryptionwidgethandler.cpp:18
 #: search/widgethandler/statusrulewidgethandler.cpp:18
 msgid "is not"
 msgstr "nie je"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:51
+#: search/widgethandler/encryptionwidgethandler.cpp:52
 #, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "šifrované"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:88
+#: search/widgethandler/encryptionwidgethandler.cpp:89
 #, kde-format
 msgid "is encrypted"
 msgstr "je šifrované"
@@ -2537,13 +2537,13 @@ msgstr "je v adresári"
 msgid "is not in address book"
 msgstr "nie je v adresári"
 
-#: search/widgethandler/invitationwidgethandler.cpp:51
+#: search/widgethandler/invitationwidgethandler.cpp:52
 #, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
 msgstr "Organizácia"
 
-#: search/widgethandler/invitationwidgethandler.cpp:88
+#: search/widgethandler/invitationwidgethandler.cpp:89
 #, kde-format
 msgid "has invitation"
 msgstr "Organizácia"
@@ -2554,33 +2554,33 @@ msgstr "Organizácia"
 msgid "has no attachment"
 msgstr "nemá prílohu"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:23
-#: search/widgethandler/numericrulewidgethandler.cpp:23
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:22
+#: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is greater than"
 msgstr "je väčší ako"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:24
-#: search/widgethandler/numericrulewidgethandler.cpp:24
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:23
+#: search/widgethandler/numericrulewidgethandler.cpp:23
 msgid "is less than or equal to"
 msgstr "je menej alebo sa rovná"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:25
-#: search/widgethandler/numericrulewidgethandler.cpp:25
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:24
+#: search/widgethandler/numericrulewidgethandler.cpp:24
 msgid "is less than"
 msgstr "je menej než"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:26
-#: search/widgethandler/numericrulewidgethandler.cpp:26
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:25
+#: search/widgethandler/numericrulewidgethandler.cpp:25
 msgid "is greater than or equal to"
 msgstr "je viac alebo sa rovná"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:157
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:156
 #, kde-format
 msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " KB"
 
-#: search/widgethandler/numericrulewidgethandler.cpp:157
+#: search/widgethandler/numericrulewidgethandler.cpp:156
 #, kde-format
 msgctxt "Unit suffix where units are days."
 msgid "%v day"
@@ -2826,30 +2826,30 @@ msgctxt "@action:button"
 msgid "Update"
 msgstr "Aktualizovať"
 
-#: snippets/snippettreeview.cpp:64
+#: snippets/snippettreeview.cpp:65
 #, kde-format
 msgid "Text Snippets"
 msgstr "Textové útržky"
 
-#: snippets/snippetvariabledialog.cpp:34
+#: snippets/snippetvariabledialog.cpp:33
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Zadať hodnoty pre premenné"
 
-#: snippets/snippetvariabledialog.cpp:37
+#: snippets/snippetvariabledialog.cpp:36
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Zadať náhradné hodnoty pre '%1':"
 
-#: snippets/snippetvariabledialog.cpp:42
+#: snippets/snippetvariabledialog.cpp:41
 #, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Spraviť hodnotu pre&dvolenú"
 
-#: snippets/snippetvariabledialog.cpp:45
+#: snippets/snippetvariabledialog.cpp:44
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2859,7 +2859,7 @@ msgstr ""
 "Toto povoliť pre uloženie hodnoty zadanej vpravo ako predvolenej hodnoty pre "
 "túto premennú"
 
-#: snippets/snippetvariabledialog.cpp:48
+#: snippets/snippetvariabledialog.cpp:47
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""

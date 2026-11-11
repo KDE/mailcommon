@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-27 01:01+0000\n"
+"POT-Creation-Date: 2026-11-11 01:03+0000\n"
 "PO-Revision-Date: 2026-10-12 19:52+0300\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
@@ -29,7 +29,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "Galioja iki"
 
-#: collectionpage/collectionexpirywidget.cpp:35
+#: collectionpage/collectionexpirywidget.cpp:36
 #, fuzzy, kde-format
 msgctxt "Expire messages after %1"
 msgid "%v day"
@@ -39,59 +39,59 @@ msgstr[1] " dienos"
 msgstr[2] " dienos"
 msgstr[3] " diena"
 
-#: collectionpage/collectionexpirywidget.cpp:36
-#: collectionpage/collectionexpirywidget.cpp:42
-#: collectionpage/collectionexpirywidget.cpp:54
+#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:43
+#: collectionpage/collectionexpirywidget.cpp:55
 #, kde-format
 msgid "Never"
 msgstr "Niekada"
 
-#: collectionpage/collectionexpirywidget.cpp:66
+#: collectionpage/collectionexpirywidget.cpp:67
 #, kde-format
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:67
+#: collectionpage/collectionexpirywidget.cpp:68
 #, kde-format
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:73
+#: collectionpage/collectionexpirywidget.cpp:74
 #, kde-format
 msgid "Expire read messages after:"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:76
+#: collectionpage/collectionexpirywidget.cpp:77
 #, kde-format
 msgid "Expire unread messages after:"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:90
+#: collectionpage/collectionexpirywidget.cpp:91
 #, kde-format
 msgid "Move expired messages to:"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:101
+#: collectionpage/collectionexpirywidget.cpp:102
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:172
+#: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:173
+#: collectionpage/collectionexpirywidget.cpp:174
 #, kde-format
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Nepasirinktas joks aplankas"
 
-#: collectionpage/collectionexpirywidget.cpp:187
+#: collectionpage/collectionexpirywidget.cpp:188
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -99,7 +99,7 @@ msgid ""
 "If this is not done, expired messages will be permanently deleted."
 msgstr ""
 
-#: collectionpage/collectionexpirywidget.cpp:189
+#: collectionpage/collectionexpirywidget.cpp:190
 #, kde-format
 msgctxt "@title:window"
 msgid "Wrong Folder Selected"
@@ -216,65 +216,65 @@ msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr "&Kopijuoti visuotinius šablonus"
 
-#: collectionpage/collectionviewwidget.cpp:28
+#: collectionpage/collectionviewwidget.cpp:29
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "Nau&doti numatytą tapatybę"
 
-#: collectionpage/collectionviewwidget.cpp:30
+#: collectionpage/collectionviewwidget.cpp:31
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "Nau&doti numatytą tapatybę"
 
-#: collectionpage/collectionviewwidget.cpp:32
+#: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr "Teikti didesnę pirmenybę HTML nei tekstui"
 
-#: collectionpage/collectionviewwidget.cpp:33
+#: collectionpage/collectionviewwidget.cpp:34
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr "Teikti didesnę pirmenybę tekstui nei HTML"
 
-#: collectionpage/collectionviewwidget.cpp:34
+#: collectionpage/collectionviewwidget.cpp:35
 #, kde-format
 msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr "Naudoti visuotines nuostatas"
 
-#: collectionpage/collectionviewwidget.cpp:41
+#: collectionpage/collectionviewwidget.cpp:42
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
 msgstr "Rodyti laiškų sąraše siuntėjo/gavėjo stulpelį"
 
-#: collectionpage/collectionviewwidget.cpp:44
+#: collectionpage/collectionviewwidget.cpp:45
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
 msgstr " (numatyta)"
 
-#: collectionpage/collectionviewwidget.cpp:45
+#: collectionpage/collectionviewwidget.cpp:46
 #, kde-format
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
 msgstr "Siuntėjas"
 
-#: collectionpage/collectionviewwidget.cpp:46
+#: collectionpage/collectionviewwidget.cpp:47
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
 msgstr "Gavėjas"
 
-#: collectionpage/collectionviewwidget.cpp:47
+#: collectionpage/collectionviewwidget.cpp:48
 #, kde-format
 msgid "Sho&w column:"
 msgstr "Ro&dyti stulpelį:"
 
-#: collectionpage/collectionviewwidget.cpp:78
+#: collectionpage/collectionviewwidget.cpp:79
 #, kde-format
 msgid "Message format:"
 msgstr "Laiško formatas:"
@@ -291,31 +291,31 @@ msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr ""
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:38
+#: filter/dialog/filteractionmissingfolderdialog.cpp:39
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Pasirinkite aplanką"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:41
+#: filter/dialog/filteractionmissingfolderdialog.cpp:42
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Aplanko kelias buvo „%1“."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:46
+#: filter/dialog/filteractionmissingfolderdialog.cpp:47
 #, kde-format
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Su šiuo filtru gali būti naudojami šie aplankai:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:67
+#: filter/dialog/filteractionmissingfolderdialog.cpp:68
 #, kde-format
 msgid "Please select a folder:"
 msgstr "Pasirinkite aplanką:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:70
+#: filter/dialog/filteractionmissingfolderdialog.cpp:71
 #, kde-format
 msgid ""
 "Filter folder is missing. Please select a folder to use with filter \"%1\":"
@@ -353,24 +353,24 @@ msgstr "Garso failas buvo „%1“."
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr "Trūksta garso failo. Pasirinkite garsą, kurį naudosite su filtru „%1“"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:34
+#: filter/dialog/filteractionmissingtagdialog.cpp:36
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Pasirinkite žymę"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:37
+#: filter/dialog/filteractionmissingtagdialog.cpp:39
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Žymė buvo „%1“."
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:44
+#: filter/dialog/filteractionmissingtagdialog.cpp:46
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr "Trūksta filtro žymės. Pasirinkite žymę, kurią naudosite su filtru „%1“"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:68
+#: filter/dialog/filteractionmissingtagdialog.cpp:70
 #, kde-format
 msgid "Add Tag…"
 msgstr "Pridėti žymę…"
@@ -667,12 +667,12 @@ msgstr ""
 msgid "No action defined."
 msgstr "Neapibrėžtas joks veiksmas."
 
-#: filter/filteractions/filteractionplaysound.cpp:22
+#: filter/filteractions/filteractionplaysound.cpp:23
 #, kde-format
 msgid "Play Sound"
 msgstr "Atkurti garsą"
 
-#: filter/filteractions/filteractionplaysound.cpp:78
+#: filter/filteractions/filteractionplaysound.cpp:79
 #, kde-format
 msgid "Sound file was not defined."
 msgstr "Garso failas nebuvo apibrėžtas."
@@ -904,29 +904,29 @@ msgstr "Pagalba"
 msgid "You can get specific header when you use %{headername}."
 msgstr "Galite gauti konkrečią antraštę, kai naudojate %{headername}."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:34
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:35
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Konvertuoti į Sieve scenarijų"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:41
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:42
 #, kde-format
 msgid "Save…"
 msgstr "Įrašyti…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:64
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:65
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "Bendrinti…"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:77
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:78
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr "Sieve failai (*.siv);;Visi failai (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:78
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:79
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
@@ -942,7 +942,7 @@ msgstr "Gmail filtras %1"
 msgid "Procmail filter %1"
 msgstr "Procmail filtras %1"
 
-#: filter/filterimporterexporter.cpp:111
+#: filter/filterimporterexporter.cpp:112
 #, kde-format
 msgid ""
 "The following filters have not been saved because they were invalid (e.g. "
@@ -951,50 +951,50 @@ msgstr ""
 "Šie filtrai neįrašyti, nes jie buvo netinkami (pvz., juose nebuvo veiksmų "
 "arba paieškos taisyklių)."
 
-#: filter/filterimporterexporter.cpp:137
+#: filter/filterimporterexporter.cpp:138
 #, kde-format
 msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "Importuoti KMail filtrus"
 
-#: filter/filterimporterexporter.cpp:145
+#: filter/filterimporterexporter.cpp:146
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Importuoti Evolution filtrus"
 
-#: filter/filterimporterexporter.cpp:149
+#: filter/filterimporterexporter.cpp:150
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Importuoti Sylpheed filtrus"
 
-#: filter/filterimporterexporter.cpp:153
+#: filter/filterimporterexporter.cpp:154
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Importuoti Procmail filtrus"
 
-#: filter/filterimporterexporter.cpp:157
+#: filter/filterimporterexporter.cpp:158
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Importuoti Balsa filtrus"
 
-#: filter/filterimporterexporter.cpp:161
+#: filter/filterimporterexporter.cpp:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Importuoti Claws Mail filtrus"
 
-#: filter/filterimporterexporter.cpp:165
+#: filter/filterimporterexporter.cpp:166
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "Importuoti Gmail filtrus"
 
-#: filter/filterimporterexporter.cpp:179 filter/filterimporterexporter.cpp:215
-#: filter/filterimporterexporter.cpp:235
+#: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
+#: filter/filterimporterexporter.cpp:236
 #, kde-format
 msgid ""
 "The selected file is not readable. Your file access permissions might be "
@@ -1003,7 +1003,7 @@ msgstr ""
 "Pasirinktas failas yra neperskaitomas. Gali būti, kad turite nepakankamai "
 "teisių prieigai prie failų."
 
-#: filter/filterimporterexporter.cpp:315
+#: filter/filterimporterexporter.cpp:316
 #, kde-format
 msgctxt "@title:window"
 msgid "Export Filters"
@@ -1028,7 +1028,7 @@ msgid "Select Filters"
 msgstr "Pasirinkite filtrus"
 
 #: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:53
-#: folder/foldertreewidget.cpp:79
+#: folder/foldertreewidget.cpp:80
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
@@ -1065,141 +1065,141 @@ msgstr "Paskyros pavadinimas"
 msgid "Type"
 msgstr "Tipas"
 
-#: filter/kmfilterdialog.cpp:70
+#: filter/kmfilterdialog.cpp:72
 #, kde-format
 msgctxt "@title:window"
 msgid "Filter Rules"
 msgstr "Filtravimo taisyklės"
 
-#: filter/kmfilterdialog.cpp:88
+#: filter/kmfilterdialog.cpp:90
 #, kde-format
 msgid "Import…"
 msgstr "Importuoti…"
 
-#: filter/kmfilterdialog.cpp:90
+#: filter/kmfilterdialog.cpp:92
 #, kde-format
 msgid "Export…"
 msgstr "Eksportuoti…"
 
-#: filter/kmfilterdialog.cpp:92
+#: filter/kmfilterdialog.cpp:94
 #, kde-format
 msgid "Convert to…"
 msgstr "Konvertuoti į…"
 
-#: filter/kmfilterdialog.cpp:96
+#: filter/kmfilterdialog.cpp:98
 #, kde-format
 msgctxt "@action"
 msgid "KMail filters"
 msgstr "KMail filtrai"
 
-#: filter/kmfilterdialog.cpp:100
+#: filter/kmfilterdialog.cpp:102
 #, kde-format
 msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Thunderbird filtrai"
 
-#: filter/kmfilterdialog.cpp:104
+#: filter/kmfilterdialog.cpp:106
 #, kde-format
 msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Evolution filtrai"
 
-#: filter/kmfilterdialog.cpp:108
+#: filter/kmfilterdialog.cpp:110
 #, kde-format
 msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Sylpheed filtrai"
 
-#: filter/kmfilterdialog.cpp:112
+#: filter/kmfilterdialog.cpp:114
 #, kde-format
 msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Procmail filtrai"
 
-#: filter/kmfilterdialog.cpp:116
+#: filter/kmfilterdialog.cpp:118
 #, kde-format
 msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Balsa filtrai"
 
-#: filter/kmfilterdialog.cpp:120
+#: filter/kmfilterdialog.cpp:122
 #, kde-format
 msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Claws Mail filtrai"
 
-#: filter/kmfilterdialog.cpp:124
+#: filter/kmfilterdialog.cpp:126
 #, kde-format
 msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Icedove Mail filtrai"
 
-#: filter/kmfilterdialog.cpp:130
+#: filter/kmfilterdialog.cpp:132
 #, kde-format
 msgctxt "@action"
 msgid "Gmail filters"
 msgstr "Gmail filtrai"
 
-#: filter/kmfilterdialog.cpp:138
+#: filter/kmfilterdialog.cpp:140
 #, kde-format
 msgctxt "@action"
 msgid "Sieve script"
 msgstr "Sieve scenarijus"
 
-#: filter/kmfilterdialog.cpp:160
+#: filter/kmfilterdialog.cpp:162
 #, kde-format
 msgid "Available Filters"
 msgstr "Prieinami filtrai"
 
-#: filter/kmfilterdialog.cpp:166
+#: filter/kmfilterdialog.cpp:168
 #, kde-format
 msgctxt "General mail filter settings."
 msgid "General"
 msgstr "Bendros"
 
-#: filter/kmfilterdialog.cpp:170
+#: filter/kmfilterdialog.cpp:172
 #, kde-format
 msgctxt "Advanced mail filter settings."
 msgid "Advanced"
 msgstr "Išplėstinės"
 
-#: filter/kmfilterdialog.cpp:180
+#: filter/kmfilterdialog.cpp:182
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Filtravimo veiksmai:"
 
-#: filter/kmfilterdialog.cpp:191
+#: filter/kmfilterdialog.cpp:193
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Taikyti šį filtrą gaunamiems laiškams:"
 
-#: filter/kmfilterdialog.cpp:201
+#: filter/kmfilterdialog.cpp:203
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "Iš visų paskyrų"
 
-#: filter/kmfilterdialog.cpp:205
+#: filter/kmfilterdialog.cpp:207
 #, kde-format
 msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "Iš visų, išskyrus internetines IMAP paskyras"
 
-#: filter/kmfilterdialog.cpp:209
+#: filter/kmfilterdialog.cpp:211
 #, kde-format
 msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "Tik iš pasirinktų paskyrų"
 
-#: filter/kmfilterdialog.cpp:217
+#: filter/kmfilterdialog.cpp:219
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "Taikyti šį filtrą iš&siųstiems laiškams"
 
-#: filter/kmfilterdialog.cpp:219
+#: filter/kmfilterdialog.cpp:221
 #, kde-format
 msgid ""
 "<p>The filter will be triggered <b>after</b> the message is sent and it will "
@@ -1208,13 +1208,13 @@ msgid ""
 "sending messages\".</p>"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:225
+#: filter/kmfilterdialog.cpp:227
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "Taikyti šį filtrą &prieš išsiunčiant laiškus"
 
-#: filter/kmfilterdialog.cpp:227
+#: filter/kmfilterdialog.cpp:229
 #, kde-format
 msgid ""
 "<p>The filter will be triggered <b>before</b> the message is sent and it "
@@ -1222,19 +1222,19 @@ msgid ""
 "is required if the recipient's copy also needs to be modified.</p>"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:232
+#: filter/kmfilterdialog.cpp:234
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "Taikyti šį filtrą &filtruojant rankiniu būdu"
 
-#: filter/kmfilterdialog.cpp:235
+#: filter/kmfilterdialog.cpp:237
 #, kde-format
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:237
+#: filter/kmfilterdialog.cpp:239
 #, kde-format
 msgid ""
 "<p>The filter will be applied on inbound emails from all folders belonging "
@@ -1243,59 +1243,59 @@ msgid ""
 "folders by server-side filters.</p>"
 msgstr ""
 
-#: filter/kmfilterdialog.cpp:243
+#: filter/kmfilterdialog.cpp:245
 #, kde-format
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "Jei šis filtras a&titinka, stabdyti čia apdorojimą"
 
-#: filter/kmfilterdialog.cpp:246
+#: filter/kmfilterdialog.cpp:248
 #, kde-format
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Pridėti šį filtrą į filtro taikymo meniu"
 
-#: filter/kmfilterdialog.cpp:264
+#: filter/kmfilterdialog.cpp:266
 #, kde-format
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Be to, pridėti šį filtrą į įrankių juostą"
 
-#: filter/kmfilterdialog.cpp:271
+#: filter/kmfilterdialog.cpp:273
 #, kde-format
 msgid "Shortcut:"
 msgstr "Spartusis klavišas:"
 
-#: filter/kmfilterdialog.cpp:277
+#: filter/kmfilterdialog.cpp:279
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Šio filtro piktograma:"
 
-#: filter/kmfilterdialog.cpp:285
+#: filter/kmfilterdialog.cpp:287
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Paleisti pažymėtą filtrą(-us) čia: "
 
-#: filter/kmfilterdialog.cpp:291
+#: filter/kmfilterdialog.cpp:293
 #, kde-format
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Paleisti dabar"
 
-#: filter/kmfilterdialog.cpp:418
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Nepavyko taikyti šio filtro, nes nepasirinkti jokie aplankai."
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:421
 #, kde-format
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Nepasirinktas joks aplankas."
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1305,40 +1305,40 @@ msgstr ""
 "Kai kurie filtrai buvo pakeisti ir dar neįrašyti. Privalote įrašyti filtrus, "
 "prieš galėdami juos taikyti."
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:710
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
 #, kde-format
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filtrai pakeisti."
 
-#: filter/kmfilterdialog.cpp:435
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Nepavyko taikyti filtro, nes šiuo metu nepasirinktas joks filtras."
 
-#: filter/kmfilterdialog.cpp:436
+#: filter/kmfilterdialog.cpp:438
 #, kde-format
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Nepasirinktas joks filtras."
 
-#: filter/kmfilterdialog.cpp:660
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Nebuvo importuotas joks filtras."
 
-#: filter/kmfilterdialog.cpp:671
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Filtrai, kurie buvo importuoti:"
 
-#: filter/kmfilterdialog.cpp:683
+#: filter/kmfilterdialog.cpp:685
 #, kde-format
 msgid "No filter found."
 msgstr "Nerastas joks filtras."
 
-#: filter/kmfilterdialog.cpp:708
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1348,20 +1348,20 @@ msgstr ""
 "Kai kurie filtrai buvo pakeisti ir dar neįrašyti.<br>Prieš galėdami "
 "eksportuoti filtrus, privalote juos įrašyti."
 
-#: filter/kmfilterdialog.cpp:714
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Mes negalime konvertuoti visų KMail filtrų į Sieve scenarijus, bet galime "
 "pamėginti :)"
 
-#: filter/kmfilterdialog.cpp:715 filter/kmfilterdialog.cpp:731
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "Konvertuoti KMail filtrus į Sieve scenarijus"
 
-#: filter/kmfilterdialog.cpp:731
+#: filter/kmfilterdialog.cpp:733
 #, kde-format
 msgid "No filters selected."
 msgstr "Nepasirinktas joks filtras."
@@ -1542,27 +1542,27 @@ msgstr ""
 "Pervadinti filtrą „%1“ į:\n"
 "(palikite tuščią, jei norite automatiškai suteikti pavadinimą)"
 
-#: filter/mailfilter.cpp:131
+#: filter/mailfilter.cpp:132
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>Taikomas filtro veiksmas:</b> %1"
 
-#: filter/mailfilter.cpp:140
+#: filter/mailfilter.cpp:141
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "Įvyko kritinė klaida. Apdorojimas čia sustabdomas."
 
-#: filter/mailfilter.cpp:147
+#: filter/mailfilter.cpp:148
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "Taikant šį veiksmą iškilo problemų."
 
-#: filter/mailfilter.cpp:428
+#: filter/mailfilter.cpp:429
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>Per daug filtro veiksmų filtro taisyklėje <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:462
+#: filter/mailfilter.cpp:463
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1571,7 +1571,7 @@ msgstr ""
 "<qt>Nežinomas filtro veiksmas <b>%1</b>,<br />esantis filtro taisyklėje <b>"
 "%2</b>.<br />Jo nepaisoma.</qt>"
 
-#: filter/mailfilter.cpp:570
+#: filter/mailfilter.cpp:571
 #, kde-format
 msgid "Any action defined."
 msgstr "Bet koks apibrėžtas veiksmas."
@@ -1808,18 +1808,18 @@ msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Neiti į"
 
-#: folder/foldertreewidget.cpp:73
+#: folder/foldertreewidget.cpp:74
 #, kde-format
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
 msgstr "Pradėkite rašyti norėdami filtruoti aplankų sąrašą."
 
-#: folder/foldertreewidget.cpp:317
+#: folder/foldertreewidget.cpp:318
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "Pradėkite rašyti norėdami filtruoti aplankų sąrašą."
 
-#: folder/foldertreewidget.cpp:317
+#: folder/foldertreewidget.cpp:318
 #, kde-format
 msgid "Path: (%1)"
 msgstr "Kelias: (%1)"
@@ -2312,7 +2312,7 @@ msgstr ""
 msgid "<message> not implemented/supported"
 msgstr ""
 
-#: search/searchrule/searchruledate.cpp:20
+#: search/searchrule/searchruledate.cpp:21
 #, kde-format
 msgid "Date is not valid."
 msgstr "Data neteisinga."
@@ -2327,37 +2327,37 @@ msgstr ""
 msgid "String is empty."
 msgstr "Eilutė tuščia."
 
-#: search/widgethandler/attachmentwidgethandler.cpp:17
-#: search/widgethandler/invitationwidgethandler.cpp:17
+#: search/widgethandler/attachmentwidgethandler.cpp:18
+#: search/widgethandler/invitationwidgethandler.cpp:18
 msgid "has"
 msgstr ""
 
-#: search/widgethandler/attachmentwidgethandler.cpp:17
-#: search/widgethandler/invitationwidgethandler.cpp:17
+#: search/widgethandler/attachmentwidgethandler.cpp:18
+#: search/widgethandler/invitationwidgethandler.cpp:18
 #, fuzzy
 msgid "has not"
 msgstr "nėra"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:51
+#: search/widgethandler/attachmentwidgethandler.cpp:52
 #, kde-format
 msgctxt "@label:textbox"
 msgid "attachments"
 msgstr "priedai"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:88
+#: search/widgethandler/attachmentwidgethandler.cpp:89
 #, fuzzy, kde-format
 msgid "has attachment"
 msgstr "Turi priedą"
 
 #: search/widgethandler/daterulewidgethandler.cpp:21
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:21
-#: search/widgethandler/numericrulewidgethandler.cpp:21
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:20
+#: search/widgethandler/numericrulewidgethandler.cpp:20
 msgid "is equal to"
 msgstr "yra lygu"
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:22
-#: search/widgethandler/numericrulewidgethandler.cpp:22
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:21
+#: search/widgethandler/numericrulewidgethandler.cpp:21
 msgid "is not equal to"
 msgstr "nėra lygu"
 
@@ -2377,23 +2377,23 @@ msgstr "yra prieš"
 msgid "is after or equal to"
 msgstr ""
 
-#: search/widgethandler/encryptionwidgethandler.cpp:17
+#: search/widgethandler/encryptionwidgethandler.cpp:18
 #: search/widgethandler/statusrulewidgethandler.cpp:18
 msgid "is"
 msgstr "yra"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:17
+#: search/widgethandler/encryptionwidgethandler.cpp:18
 #: search/widgethandler/statusrulewidgethandler.cpp:18
 msgid "is not"
 msgstr "nėra"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:51
+#: search/widgethandler/encryptionwidgethandler.cpp:52
 #, kde-format
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "šifruotas"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:88
+#: search/widgethandler/encryptionwidgethandler.cpp:89
 #, kde-format
 msgid "is encrypted"
 msgstr "yra šifruotas"
@@ -2464,13 +2464,13 @@ msgstr "yra adresų knygoje"
 msgid "is not in address book"
 msgstr "nėra adresų knygoje"
 
-#: search/widgethandler/invitationwidgethandler.cpp:51
+#: search/widgethandler/invitationwidgethandler.cpp:52
 #, kde-format
 msgctxt "@label:textbox"
 msgid "invitation"
 msgstr "pakvietimas"
 
-#: search/widgethandler/invitationwidgethandler.cpp:88
+#: search/widgethandler/invitationwidgethandler.cpp:89
 #, kde-format
 msgid "has invitation"
 msgstr "turi pakvietimą"
@@ -2481,35 +2481,35 @@ msgstr "turi pakvietimą"
 msgid "has no attachment"
 msgstr "neturi priedo"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:23
-#: search/widgethandler/numericrulewidgethandler.cpp:23
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:22
+#: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is greater than"
 msgstr "yra didesnis nei"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:24
-#: search/widgethandler/numericrulewidgethandler.cpp:24
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:23
+#: search/widgethandler/numericrulewidgethandler.cpp:23
 #, fuzzy
 msgid "is less than or equal to"
 msgstr "Mažiau arba lygu"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:25
-#: search/widgethandler/numericrulewidgethandler.cpp:25
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:24
+#: search/widgethandler/numericrulewidgethandler.cpp:24
 msgid "is less than"
 msgstr "yra mažesnis nei"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:26
-#: search/widgethandler/numericrulewidgethandler.cpp:26
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:25
+#: search/widgethandler/numericrulewidgethandler.cpp:25
 #, fuzzy
 msgid "is greater than or equal to"
 msgstr "Daugiau arba lygu"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:157
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:156
 #, kde-format
 msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " kB"
 
-#: search/widgethandler/numericrulewidgethandler.cpp:157
+#: search/widgethandler/numericrulewidgethandler.cpp:156
 #, fuzzy, kde-format
 msgctxt "Unit suffix where units are days."
 msgid "%v day"
@@ -2758,30 +2758,30 @@ msgctxt "@action:button"
 msgid "Update"
 msgstr "Atnaujinti"
 
-#: snippets/snippettreeview.cpp:64
+#: snippets/snippettreeview.cpp:65
 #, kde-format
 msgid "Text Snippets"
 msgstr "Teksto fragmentai"
 
-#: snippets/snippetvariabledialog.cpp:34
+#: snippets/snippetvariabledialog.cpp:33
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Įveskite kintamųjų reikšmes"
 
-#: snippets/snippetvariabledialog.cpp:37
+#: snippets/snippetvariabledialog.cpp:36
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr ""
 
-#: snippets/snippetvariabledialog.cpp:42
+#: snippets/snippetvariabledialog.cpp:41
 #, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Paversti reikšmę &numatytąja"
 
-#: snippets/snippetvariabledialog.cpp:45
+#: snippets/snippetvariabledialog.cpp:44
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2789,7 +2789,7 @@ msgid ""
 "this variable"
 msgstr ""
 
-#: snippets/snippetvariabledialog.cpp:48
+#: snippets/snippetvariabledialog.cpp:47
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""

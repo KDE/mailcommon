@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-27 01:01+0000\n"
+"POT-Creation-Date: 2026-11-11 01:03+0000\n"
 "PO-Revision-Date: 2020-01-01 12:34+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -23,7 +23,7 @@ msgctxt "@title:tab Expiry settings for a folder."
 msgid "Expiry"
 msgstr "Aegumine"
 
-#: collectionpage/collectionexpirywidget.cpp:35
+#: collectionpage/collectionexpirywidget.cpp:36
 #, fuzzy, kde-format
 #| msgctxt "Expire messages after %1"
 #| msgid " day"
@@ -34,52 +34,52 @@ msgid_plural "%v days"
 msgstr[0] " päeva"
 msgstr[1] " päeva"
 
-#: collectionpage/collectionexpirywidget.cpp:36
-#: collectionpage/collectionexpirywidget.cpp:42
-#: collectionpage/collectionexpirywidget.cpp:54
+#: collectionpage/collectionexpirywidget.cpp:37
+#: collectionpage/collectionexpirywidget.cpp:43
+#: collectionpage/collectionexpirywidget.cpp:55
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu Never display tooltips."
 #| msgid "Never"
 msgid "Never"
 msgstr "Mitte kunagi"
 
-#: collectionpage/collectionexpirywidget.cpp:66
+#: collectionpage/collectionexpirywidget.cpp:67
 #, fuzzy, kde-format
 #| msgid "Save Settings and Expire Now"
 msgctxt "@action:button"
 msgid "Save Settings and Expire Now"
 msgstr "Salvesta seadistused ja kustuta kohe"
 
-#: collectionpage/collectionexpirywidget.cpp:67
+#: collectionpage/collectionexpirywidget.cpp:68
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
 msgctxt "@option:check"
 msgid "Expire messages with invalid date"
 msgstr "Loetud kirjad määratakse aegunuks pärast"
 
-#: collectionpage/collectionexpirywidget.cpp:73
+#: collectionpage/collectionexpirywidget.cpp:74
 #, fuzzy, kde-format
 #| msgid "Expire read messages after"
 msgid "Expire read messages after:"
 msgstr "Loetud kirjad määratakse aegunuks pärast"
 
-#: collectionpage/collectionexpirywidget.cpp:76
+#: collectionpage/collectionexpirywidget.cpp:77
 #, fuzzy, kde-format
 #| msgid "Expire unread messages after"
 msgid "Expire unread messages after:"
 msgstr "Lugemata kirjad määratakse aegunuks pärast"
 
-#: collectionpage/collectionexpirywidget.cpp:90
+#: collectionpage/collectionexpirywidget.cpp:91
 #, kde-format
 msgid "Move expired messages to:"
 msgstr "Aegunud kirjad liigutatakse kausta:"
 
-#: collectionpage/collectionexpirywidget.cpp:101
+#: collectionpage/collectionexpirywidget.cpp:102
 #, kde-format
 msgid "Delete expired messages permanently"
 msgstr "Aegunud kirjad kustutatakse lõplikult"
 
-#: collectionpage/collectionexpirywidget.cpp:172
+#: collectionpage/collectionexpirywidget.cpp:173
 #, kde-format
 msgid ""
 "Please select a folder to expire messages into.\n"
@@ -88,14 +88,14 @@ msgstr ""
 "Palun vali kaust, kuhu paigutada aegunud kirjad.\n"
 "Kui sa seda ei tee, kustutatakse aegunud kirjad jäädavalt."
 
-#: collectionpage/collectionexpirywidget.cpp:173
+#: collectionpage/collectionexpirywidget.cpp:174
 #, fuzzy, kde-format
 #| msgid "No Folder Selected"
 msgctxt "@title:window"
 msgid "No Folder Selected"
 msgstr "Kaust on valimata"
 
-#: collectionpage/collectionexpirywidget.cpp:187
+#: collectionpage/collectionexpirywidget.cpp:188
 #, kde-format
 msgid ""
 "Please select a different folder than the current folder to expire messages "
@@ -105,7 +105,7 @@ msgstr ""
 "Palun vali praegusest erinev kaust, kuhu aegunud kirjad liigutada.\n"
 "Kui sa seda ei tee, kustutatakse aegunud kirjad jäädavalt."
 
-#: collectionpage/collectionexpirywidget.cpp:189
+#: collectionpage/collectionexpirywidget.cpp:190
 #, fuzzy, kde-format
 #| msgid "Wrong Folder Selected"
 msgctxt "@title:window"
@@ -251,70 +251,70 @@ msgctxt "@action:button"
 msgid "&Copy Global Templates"
 msgstr ""
 
-#: collectionpage/collectionviewwidget.cpp:28
+#: collectionpage/collectionviewwidget.cpp:29
 #, fuzzy, kde-format
 #| msgid "Use &default identity"
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
 msgstr "Vaikei&dentiteedi kasutamine"
 
-#: collectionpage/collectionviewwidget.cpp:30
+#: collectionpage/collectionviewwidget.cpp:31
 #, fuzzy, kde-format
 #| msgid "Use &default identity"
 msgctxt "@option:check"
 msgid "Use default message list theme"
 msgstr "Vaikei&dentiteedi kasutamine"
 
-#: collectionpage/collectionviewwidget.cpp:32
+#: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer HTML to text"
 msgstr ""
 
-#: collectionpage/collectionviewwidget.cpp:33
+#: collectionpage/collectionviewwidget.cpp:34
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prefer text to HTML"
 msgstr ""
 
-#: collectionpage/collectionviewwidget.cpp:34
+#: collectionpage/collectionviewwidget.cpp:35
 #, kde-format
 msgctxt "@option:radio"
 msgid "Use Global Settings"
 msgstr ""
 
-#: collectionpage/collectionviewwidget.cpp:41
+#: collectionpage/collectionviewwidget.cpp:42
 #, kde-format
 msgid "Show Sender/Receiver Column in List of Messages"
 msgstr ""
 
-#: collectionpage/collectionviewwidget.cpp:44
+#: collectionpage/collectionviewwidget.cpp:45
 #, fuzzy, kde-format
 #| msgid " (default)"
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
 msgstr " (vaikimisi)"
 
-#: collectionpage/collectionviewwidget.cpp:45
+#: collectionpage/collectionviewwidget.cpp:46
 #, fuzzy, kde-format
 #| msgid "&Send"
 msgctxt "@item:inlistbox Show sender."
 msgid "Sender"
 msgstr "&Saada"
 
-#: collectionpage/collectionviewwidget.cpp:46
+#: collectionpage/collectionviewwidget.cpp:47
 #, kde-format
 msgctxt "@item:inlistbox Show receiver."
 msgid "Receiver"
 msgstr ""
 
-#: collectionpage/collectionviewwidget.cpp:47
+#: collectionpage/collectionviewwidget.cpp:48
 #, fuzzy, kde-format
 #| msgid "Sho&rtcut:"
 msgid "Sho&w column:"
 msgstr "Kii&rklahv:"
 
-#: collectionpage/collectionviewwidget.cpp:78
+#: collectionpage/collectionviewwidget.cpp:79
 #, fuzzy, kde-format
 #| msgid "Message Status"
 msgid "Message format:"
@@ -332,34 +332,34 @@ msgid ""
 "Filter account is missing. Please select account to use with filter \"%1\""
 msgstr "Filtri konto puudub. Palun vali konto, mida kasutada filtriga \"%1\""
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:38
+#: filter/dialog/filteractionmissingfolderdialog.cpp:39
 #: folder/folderrequester.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Kausta valimine"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:41
+#: filter/dialog/filteractionmissingfolderdialog.cpp:42
 #, fuzzy, kde-format
 #| msgid "Folder path was \"%1\"."
 msgctxt "@label:textbox"
 msgid "Folder path was \"%1\"."
 msgstr "Kausta asukoht oli \"%1\"."
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:46
+#: filter/dialog/filteractionmissingfolderdialog.cpp:47
 #, fuzzy, kde-format
 #| msgid "The following folders can be used for this filter:"
 msgctxt "@label:textbox"
 msgid "The following folders can be used for this filter:"
 msgstr "Seda filtrit saavad kasutada järgmised kaustad:"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:67
+#: filter/dialog/filteractionmissingfolderdialog.cpp:68
 #, fuzzy, kde-format
 #| msgid "Please select a folder"
 msgid "Please select a folder:"
 msgstr "Palun vali kaust"
 
-#: filter/dialog/filteractionmissingfolderdialog.cpp:70
+#: filter/dialog/filteractionmissingfolderdialog.cpp:71
 #, fuzzy, kde-format
 #| msgid ""
 #| "Filter folder is missing. Please select a folder to use with filter \"%1\""
@@ -400,25 +400,25 @@ msgstr "Helifail oli \"%1\"."
 msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
 msgstr "Helifail puudub. Palun vali helifail, mida kasutada filtriga \"%1\""
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:34
+#: filter/dialog/filteractionmissingtagdialog.cpp:36
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tag"
 msgstr "Sildi valimine"
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:37
+#: filter/dialog/filteractionmissingtagdialog.cpp:39
 #, fuzzy, kde-format
 #| msgid "Tag was \"%1\"."
 msgctxt "@label:textbox"
 msgid "Tag was \"%1\"."
 msgstr "Silt oli \"%1\"."
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:44
+#: filter/dialog/filteractionmissingtagdialog.cpp:46
 #, kde-format
 msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
 msgstr "Filtri silt puudub. Palun vali silt, mida kasutada filtriga \"%1\""
 
-#: filter/dialog/filteractionmissingtagdialog.cpp:68
+#: filter/dialog/filteractionmissingtagdialog.cpp:70
 #, fuzzy, kde-format
 #| msgid "Add Tag"
 msgid "Add Tag…"
@@ -724,12 +724,12 @@ msgstr "Filtreeri läbi käsu"
 msgid "No action defined."
 msgstr "Ühtegi toimingut pole määratud."
 
-#: filter/filteractions/filteractionplaysound.cpp:22
+#: filter/filteractions/filteractionplaysound.cpp:23
 #, kde-format
 msgid "Play Sound"
 msgstr "Mängi heli"
 
-#: filter/filteractions/filteractionplaysound.cpp:78
+#: filter/filteractions/filteractionplaysound.cpp:79
 #, kde-format
 msgid "Sound file was not defined."
 msgstr "Helifaili pole määratud."
@@ -965,30 +965,30 @@ msgstr "Abi"
 msgid "You can get specific header when you use %{headername}."
 msgstr "Konkreetse päise võib saada, kui kasutada %{headername}."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:34
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:35
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Sieve Script"
 msgstr "Teisendamine Sieve skriptiks"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:41
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:42
 #, kde-format
 msgid "Save…"
 msgstr ""
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:64
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:65
 #, fuzzy, kde-format
 #| msgid "Share..."
 msgctxt "@action:button"
 msgid "Share…"
 msgstr "Jaga ..."
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:77
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:78
 #, kde-format
 msgid "Sieve Files (*.siv);;All Files (*)"
 msgstr "Sieve failid (*.siv);;Kõik failid (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:78
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:79
 #, kde-format
 msgctxt "@title:window"
 msgid "Convert to Script Sieve"
@@ -1004,7 +1004,7 @@ msgstr "Gmaili filter %1"
 msgid "Procmail filter %1"
 msgstr "Procmaili filter %1"
 
-#: filter/filterimporterexporter.cpp:111
+#: filter/filterimporterexporter.cpp:112
 #, kde-format
 msgid ""
 "The following filters have not been saved because they were invalid (e.g. "
@@ -1013,57 +1013,57 @@ msgstr ""
 "Järgmisi filtreid ei olnud võimalik salvestada, sest nad olid vigased "
 "(näiteks ei sisaldanud toimingut või otsingureeglit)."
 
-#: filter/filterimporterexporter.cpp:137
+#: filter/filterimporterexporter.cpp:138
 #, fuzzy, kde-format
 #| msgid "Import KMail Filters"
 msgctxt "@title:window"
 msgid "Import KMail Filters"
 msgstr "KMaili filtrite import"
 
-#: filter/filterimporterexporter.cpp:145
+#: filter/filterimporterexporter.cpp:146
 #, fuzzy, kde-format
 #| msgid "Import Evolution Filters"
 msgctxt "@title:window"
 msgid "Import Evolution Filters"
 msgstr "Evolutioni filtrite import"
 
-#: filter/filterimporterexporter.cpp:149
+#: filter/filterimporterexporter.cpp:150
 #, fuzzy, kde-format
 #| msgid "Import Sylpheed Filters"
 msgctxt "@title:window"
 msgid "Import Sylpheed Filters"
 msgstr "Sylpheedi filtrite import"
 
-#: filter/filterimporterexporter.cpp:153
+#: filter/filterimporterexporter.cpp:154
 #, fuzzy, kde-format
 #| msgid "Import Procmail Filters"
 msgctxt "@title:window"
 msgid "Import Procmail Filters"
 msgstr "Procmaili filtrite import"
 
-#: filter/filterimporterexporter.cpp:157
+#: filter/filterimporterexporter.cpp:158
 #, fuzzy, kde-format
 #| msgid "Import Balsa Filters"
 msgctxt "@title:window"
 msgid "Import Balsa Filters"
 msgstr "Balsa filtrite import"
 
-#: filter/filterimporterexporter.cpp:161
+#: filter/filterimporterexporter.cpp:162
 #, fuzzy, kde-format
 #| msgid "Import Claws Mail Filters"
 msgctxt "@title:window"
 msgid "Import Claws Mail Filters"
 msgstr "Claws Maili filtrite import"
 
-#: filter/filterimporterexporter.cpp:165
+#: filter/filterimporterexporter.cpp:166
 #, fuzzy, kde-format
 #| msgid "Import Gmail Filters"
 msgctxt "@title:window"
 msgid "Import Gmail Filters"
 msgstr "GMaili filtrite import"
 
-#: filter/filterimporterexporter.cpp:179 filter/filterimporterexporter.cpp:215
-#: filter/filterimporterexporter.cpp:235
+#: filter/filterimporterexporter.cpp:180 filter/filterimporterexporter.cpp:216
+#: filter/filterimporterexporter.cpp:236
 #, kde-format
 msgid ""
 "The selected file is not readable. Your file access permissions might be "
@@ -1071,7 +1071,7 @@ msgid ""
 msgstr ""
 "Valitud fail ei ole loetav. Võimalik, et sinu failiõigused ei ole piisavad."
 
-#: filter/filterimporterexporter.cpp:315
+#: filter/filterimporterexporter.cpp:316
 #, fuzzy, kde-format
 #| msgid "Export Filters"
 msgctxt "@title:window"
@@ -1099,7 +1099,7 @@ msgid "Select Filters"
 msgstr "Filtrite valik"
 
 #: filter/filterselectiondialog.cpp:43 filter/kmfilterlistbox.cpp:53
-#: folder/foldertreewidget.cpp:79
+#: folder/foldertreewidget.cpp:80
 #, kde-format
 msgctxt "@info Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
@@ -1139,160 +1139,160 @@ msgstr "Konto nimi"
 msgid "Type"
 msgstr "Tüüp"
 
-#: filter/kmfilterdialog.cpp:70
+#: filter/kmfilterdialog.cpp:72
 #, kde-format
 msgctxt "@title:window"
 msgid "Filter Rules"
 msgstr "Filtri reeglid"
 
-#: filter/kmfilterdialog.cpp:88
+#: filter/kmfilterdialog.cpp:90
 #, fuzzy, kde-format
 #| msgid "Import..."
 msgid "Import…"
 msgstr "Impordi..."
 
-#: filter/kmfilterdialog.cpp:90
+#: filter/kmfilterdialog.cpp:92
 #, fuzzy, kde-format
 #| msgid "Export..."
 msgid "Export…"
 msgstr "Ekspordi..."
 
-#: filter/kmfilterdialog.cpp:92
+#: filter/kmfilterdialog.cpp:94
 #, fuzzy, kde-format
 #| msgid "Convert to..."
 msgid "Convert to…"
 msgstr "Teisenda..."
 
-#: filter/kmfilterdialog.cpp:96
+#: filter/kmfilterdialog.cpp:98
 #, fuzzy, kde-format
 #| msgid "KMail filters"
 msgctxt "@action"
 msgid "KMail filters"
 msgstr "KMaili filtrid"
 
-#: filter/kmfilterdialog.cpp:100
+#: filter/kmfilterdialog.cpp:102
 #, fuzzy, kde-format
 #| msgid "Thunderbird filters"
 msgctxt "@action"
 msgid "Thunderbird filters"
 msgstr "Thunderbirdi filtrid"
 
-#: filter/kmfilterdialog.cpp:104
+#: filter/kmfilterdialog.cpp:106
 #, fuzzy, kde-format
 #| msgid "Evolution filters"
 msgctxt "@action"
 msgid "Evolution filters"
 msgstr "Evolutioni filtrid"
 
-#: filter/kmfilterdialog.cpp:108
+#: filter/kmfilterdialog.cpp:110
 #, fuzzy, kde-format
 #| msgid "Sylpheed filters"
 msgctxt "@action"
 msgid "Sylpheed filters"
 msgstr "Sylpheedi filtrid"
 
-#: filter/kmfilterdialog.cpp:112
+#: filter/kmfilterdialog.cpp:114
 #, fuzzy, kde-format
 #| msgid "Procmail filters"
 msgctxt "@action"
 msgid "Procmail filters"
 msgstr "Procmaili filtrid"
 
-#: filter/kmfilterdialog.cpp:116
+#: filter/kmfilterdialog.cpp:118
 #, fuzzy, kde-format
 #| msgid "Balsa filters"
 msgctxt "@action"
 msgid "Balsa filters"
 msgstr "Balsa filtrid"
 
-#: filter/kmfilterdialog.cpp:120
+#: filter/kmfilterdialog.cpp:122
 #, fuzzy, kde-format
 #| msgid "Claws Mail filters"
 msgctxt "@action"
 msgid "Claws Mail filters"
 msgstr "Claws Maili filtrid"
 
-#: filter/kmfilterdialog.cpp:124
+#: filter/kmfilterdialog.cpp:126
 #, fuzzy, kde-format
 #| msgid "Icedove Mail filters"
 msgctxt "@action"
 msgid "Icedove Mail filters"
 msgstr "Icedove'i filtrid"
 
-#: filter/kmfilterdialog.cpp:130
+#: filter/kmfilterdialog.cpp:132
 #, fuzzy, kde-format
 #| msgid "Gmail filters"
 msgctxt "@action"
 msgid "Gmail filters"
 msgstr "Gmaili filtrid"
 
-#: filter/kmfilterdialog.cpp:138
+#: filter/kmfilterdialog.cpp:140
 #, fuzzy, kde-format
 #| msgid "Sieve script"
 msgctxt "@action"
 msgid "Sieve script"
 msgstr "Sieve skript"
 
-#: filter/kmfilterdialog.cpp:160
+#: filter/kmfilterdialog.cpp:162
 #, kde-format
 msgid "Available Filters"
 msgstr "Kehtivad filtrid"
 
-#: filter/kmfilterdialog.cpp:166
+#: filter/kmfilterdialog.cpp:168
 #, kde-format
 msgctxt "General mail filter settings."
 msgid "General"
 msgstr "Üldine"
 
-#: filter/kmfilterdialog.cpp:170
+#: filter/kmfilterdialog.cpp:172
 #, kde-format
 msgctxt "Advanced mail filter settings."
 msgid "Advanced"
 msgstr "Muu"
 
-#: filter/kmfilterdialog.cpp:180
+#: filter/kmfilterdialog.cpp:182
 #, fuzzy, kde-format
 #| msgid "Filter Actions"
 msgctxt "@label:textbox"
 msgid "Filter actions:"
 msgstr "Filtri toimingud"
 
-#: filter/kmfilterdialog.cpp:191
+#: filter/kmfilterdialog.cpp:193
 #, fuzzy, kde-format
 #| msgid "Apply this filter to incoming messages:"
 msgctxt "@option:check"
 msgid "Apply this filter to incoming messages:"
 msgstr "Filter rakendatakse sisenevatele kirjadele:"
 
-#: filter/kmfilterdialog.cpp:201
+#: filter/kmfilterdialog.cpp:203
 #, fuzzy, kde-format
 #| msgid "from all accounts"
 msgctxt "@option:radio"
 msgid "From all accounts"
 msgstr "kõigis kontodes"
 
-#: filter/kmfilterdialog.cpp:205
+#: filter/kmfilterdialog.cpp:207
 #, fuzzy, kde-format
 #| msgid "from all but online IMAP accounts"
 msgctxt "@option:radio"
 msgid "From all but online IMAP accounts"
 msgstr "kõigis kontodes, välja arvatud IMAP kontod"
 
-#: filter/kmfilterdialog.cpp:209
+#: filter/kmfilterdialog.cpp:211
 #, fuzzy, kde-format
 #| msgid "from checked accounts only"
 msgctxt "@option:radio"
 msgid "From selected accounts only"
 msgstr "ainult märgitud kontodes"
 
-#: filter/kmfilterdialog.cpp:217
+#: filter/kmfilterdialog.cpp:219
 #, fuzzy, kde-format
 #| msgid "Apply this filter to &sent messages"
 msgctxt "@option:check"
 msgid "Apply this filter to &sent messages"
 msgstr "Filter rakendatakse &saadetud kirjadele"
 
-#: filter/kmfilterdialog.cpp:219
+#: filter/kmfilterdialog.cpp:221
 #, kde-format
 msgid ""
 "<p>The filter will be triggered <b>after</b> the message is sent and it will "
@@ -1304,14 +1304,14 @@ msgstr ""
 "kirja kohalikku koopiat.</p><p>Kui on vajalik muuta ka saaja koopiat, siis "
 "tuleb valida \"Filtri rakendamine <b>enne</b> kirjade saatmist\".</p>"
 
-#: filter/kmfilterdialog.cpp:225
+#: filter/kmfilterdialog.cpp:227
 #, fuzzy, kde-format
 #| msgid "Apply this filter &before sending messages"
 msgctxt "@option:check"
 msgid "Apply this filter &before sending messages"
 msgstr "Filter rakendatakse &enne kirjade saatmist"
 
-#: filter/kmfilterdialog.cpp:227
+#: filter/kmfilterdialog.cpp:229
 #, kde-format
 msgid ""
 "<p>The filter will be triggered <b>before</b> the message is sent and it "
@@ -1322,21 +1322,21 @@ msgstr ""
 "kohalikku kui ka saadetud koopiat.</p><p>See on vajalik juhul, kui muuta "
 "tuleb ka saaja koopiat.</p>"
 
-#: filter/kmfilterdialog.cpp:232
+#: filter/kmfilterdialog.cpp:234
 #, fuzzy, kde-format
 #| msgid "Apply this filter on manual &filtering"
 msgctxt "@option:check"
 msgid "Apply this filter on manual &filtering"
 msgstr "&Filter rakendatakse käsitsi filtreerimisel"
 
-#: filter/kmfilterdialog.cpp:235
+#: filter/kmfilterdialog.cpp:237
 #, fuzzy, kde-format
 #| msgid "Apply this filter on inbound emails in all folders"
 msgctxt "@option:check"
 msgid "Apply this filter on inbound emails in all folders"
 msgstr "Filter rakendatakse kõigi kaustade saabuvatele kirjadele"
 
-#: filter/kmfilterdialog.cpp:237
+#: filter/kmfilterdialog.cpp:239
 #, kde-format
 msgid ""
 "<p>The filter will be applied on inbound emails from all folders belonging "
@@ -1349,65 +1349,65 @@ msgstr ""
 "kontode puhul, kus uued kirjad on juba serveripoolsete filtrite tegevusel "
 "tulemusel liigutatud mõnda teise kausta.</p>"
 
-#: filter/kmfilterdialog.cpp:243
+#: filter/kmfilterdialog.cpp:245
 #, fuzzy, kde-format
 #| msgid "If this filter &matches, stop processing here"
 msgctxt "@option:check"
 msgid "If this filter &matches, stop processing here"
 msgstr "K&ui filter sobib, peatatakse filtrite läbimine"
 
-#: filter/kmfilterdialog.cpp:246
+#: filter/kmfilterdialog.cpp:248
 #, fuzzy, kde-format
 #| msgid "Add this filter to the Apply Filter menu"
 msgctxt "@option:check"
 msgid "Add this filter to the Apply Filter menu"
 msgstr "Filter lisatakse menüüsse 'Rakenda filtritoimingud'"
 
-#: filter/kmfilterdialog.cpp:264
+#: filter/kmfilterdialog.cpp:266
 #, fuzzy, kde-format
 #| msgid "Additionally add this filter to the toolbar"
 msgctxt "@option:check"
 msgid "Additionally add this filter to the toolbar"
 msgstr "Filter lisatakse ka tööriistaribale"
 
-#: filter/kmfilterdialog.cpp:271
+#: filter/kmfilterdialog.cpp:273
 #, kde-format
 msgid "Shortcut:"
 msgstr "Kiirklahv:"
 
-#: filter/kmfilterdialog.cpp:277
+#: filter/kmfilterdialog.cpp:279
 #, kde-format
 msgid "Icon for this filter:"
 msgstr "Selle filtri ikoon:"
 
-#: filter/kmfilterdialog.cpp:285
+#: filter/kmfilterdialog.cpp:287
 #, fuzzy, kde-format
 #| msgid "Run selected filter(s) on: "
 msgctxt "@label:textbox"
 msgid "Run selected filter(s) on: "
 msgstr "Valitud filtri(te) käivitamine: "
 
-#: filter/kmfilterdialog.cpp:291
+#: filter/kmfilterdialog.cpp:293
 #, fuzzy, kde-format
 #| msgid "Run Now"
 msgctxt "@action:button"
 msgid "Run Now"
 msgstr "Käivita kohe"
 
-#: filter/kmfilterdialog.cpp:418
+#: filter/kmfilterdialog.cpp:420
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply this filter since there are no folders selected."
 msgstr "Filtrit ei saa rakendada, sest ühtegi kausta pole valitud."
 
-#: filter/kmfilterdialog.cpp:419
+#: filter/kmfilterdialog.cpp:421
 #, fuzzy, kde-format
 #| msgid "No folder selected."
 msgctxt "@title:window"
 msgid "No folder selected."
 msgstr "Kaust on valimata."
 
-#: filter/kmfilterdialog.cpp:426
+#: filter/kmfilterdialog.cpp:428
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1417,43 +1417,43 @@ msgstr ""
 "Mõned filtrid on muudetud, aga mitte veel salvestatud. Filtrid tuleb "
 "salvestada, enne kui neid saab rakendada."
 
-#: filter/kmfilterdialog.cpp:428 filter/kmfilterdialog.cpp:710
+#: filter/kmfilterdialog.cpp:430 filter/kmfilterdialog.cpp:712
 #, fuzzy, kde-format
 #| msgid "Filters changed."
 msgctxt "@title:window"
 msgid "Filters changed."
 msgstr "Filtreid on muudetud."
 
-#: filter/kmfilterdialog.cpp:435
+#: filter/kmfilterdialog.cpp:437
 #, kde-format
 msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Filtrit ei saa rakendada, sest ühtegi filtrit pole valitud."
 
-#: filter/kmfilterdialog.cpp:436
+#: filter/kmfilterdialog.cpp:438
 #, fuzzy, kde-format
 #| msgid "No filters selected."
 msgctxt "@title:window"
 msgid "No filters selected."
 msgstr "Filter on valimata."
 
-#: filter/kmfilterdialog.cpp:660
+#: filter/kmfilterdialog.cpp:662
 #, kde-format
 msgid "No filter was imported."
 msgstr "Ühtegi filtrit ei imporditud."
 
-#: filter/kmfilterdialog.cpp:671
+#: filter/kmfilterdialog.cpp:673
 #, kde-format
 msgid "Filters which were imported:"
 msgstr "Imporditud filtrid:"
 
-#: filter/kmfilterdialog.cpp:683
+#: filter/kmfilterdialog.cpp:685
 #, fuzzy, kde-format
 #| msgid "Any filter found."
 msgid "No filter found."
 msgstr "Ühtegi filtrit ei leitud."
 
-#: filter/kmfilterdialog.cpp:708
+#: filter/kmfilterdialog.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1463,21 +1463,21 @@ msgstr ""
 "Mõned filtrid on muudetud, aga mitte veel salvestatud.<br>Filtrid tuleb "
 "salvestada, enne kui neid saab rakendada."
 
-#: filter/kmfilterdialog.cpp:714
+#: filter/kmfilterdialog.cpp:716
 #, kde-format
 msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
 msgstr ""
 "Me ei suuda teisendada kõiki KMaili filtreid sieve skriptideks, aga me "
 "proovime :-)"
 
-#: filter/kmfilterdialog.cpp:715 filter/kmfilterdialog.cpp:731
+#: filter/kmfilterdialog.cpp:717 filter/kmfilterdialog.cpp:733
 #, fuzzy, kde-format
 #| msgid "Convert KMail filters to sieve scripts"
 msgctxt "@title:window"
 msgid "Convert KMail filters to sieve scripts"
 msgstr "KMaili filtrite teisendamine sieve skriptideks"
 
-#: filter/kmfilterdialog.cpp:731
+#: filter/kmfilterdialog.cpp:733
 #, kde-format
 msgid "No filters selected."
 msgstr "Filter on valimata."
@@ -1697,27 +1697,27 @@ msgstr ""
 "Filtrile \"%1\" antakse nimi:\n"
 "(tühjaksjätmisel omistatakse nimi automaatselt)"
 
-#: filter/mailfilter.cpp:131
+#: filter/mailfilter.cpp:132
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>Rakendatakse filtri toimingud:</b> %1"
 
-#: filter/mailfilter.cpp:140
+#: filter/mailfilter.cpp:141
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "Tekkis kriitiline viga. Töötlus jääb siinkohal katki."
 
-#: filter/mailfilter.cpp:147
+#: filter/mailfilter.cpp:148
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "Toimingu rakendamisel ilmnes probleem."
 
-#: filter/mailfilter.cpp:428
+#: filter/mailfilter.cpp:429
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>Filtri reeglis <b>%1</b> on liiga palju toiminguid.</qt>"
 
-#: filter/mailfilter.cpp:462
+#: filter/mailfilter.cpp:463
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1726,7 +1726,7 @@ msgstr ""
 "<qt>Tundmatu filtri toiming <b>%1</b><br />filtri reeglis <b>%2</b>.<br /"
 ">Seda eiratakse.</qt>"
 
-#: filter/mailfilter.cpp:570
+#: filter/mailfilter.cpp:571
 #, kde-format
 msgid "Any action defined."
 msgstr "Ühtegi toimingut pole määratud."
@@ -1973,19 +1973,19 @@ msgctxt "@action:button"
 msgid "Do Not Go To"
 msgstr "Ära liigu"
 
-#: folder/foldertreewidget.cpp:73
+#: folder/foldertreewidget.cpp:74
 #, fuzzy, kde-format
 #| msgid "You can start typing to filter the list of folders."
 msgctxt "@label:textbox"
 msgid "You can start typing to filter the list of folders."
 msgstr "Kaustade nimekirja filtreerimiseks hakka lihtsalt kirjutama."
 
-#: folder/foldertreewidget.cpp:317
+#: folder/foldertreewidget.cpp:318
 #, kde-format
 msgid "You can start typing to filter the list of folders."
 msgstr "Kaustade nimekirja filtreerimiseks hakka lihtsalt kirjutama."
 
-#: folder/foldertreewidget.cpp:317
+#: folder/foldertreewidget.cpp:318
 #, kde-format
 msgid "Path: (%1)"
 msgstr "Asukoht: (%1)"
@@ -2491,7 +2491,7 @@ msgstr "<Silt> ei ole toetatud"
 msgid "<message> not implemented/supported"
 msgstr "<kiri> ei ole teostatud/toetatud"
 
-#: search/searchrule/searchruledate.cpp:20
+#: search/searchrule/searchruledate.cpp:21
 #, kde-format
 msgid "Date is not valid."
 msgstr "Kuupäev ei ole õige."
@@ -2506,40 +2506,40 @@ msgstr "Sisu ei ole arv."
 msgid "String is empty."
 msgstr "String on tühi."
 
-#: search/widgethandler/attachmentwidgethandler.cpp:17
-#: search/widgethandler/invitationwidgethandler.cpp:17
+#: search/widgethandler/attachmentwidgethandler.cpp:18
+#: search/widgethandler/invitationwidgethandler.cpp:18
 msgid "has"
 msgstr ""
 
-#: search/widgethandler/attachmentwidgethandler.cpp:17
-#: search/widgethandler/invitationwidgethandler.cpp:17
+#: search/widgethandler/attachmentwidgethandler.cpp:18
+#: search/widgethandler/invitationwidgethandler.cpp:18
 #, fuzzy
 #| msgid "is not"
 msgid "has not"
 msgstr "ei ole"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:51
+#: search/widgethandler/attachmentwidgethandler.cpp:52
 #, fuzzy, kde-format
 #| msgid "Attachments:"
 msgctxt "@label:textbox"
 msgid "attachments"
 msgstr "Manused:"
 
-#: search/widgethandler/attachmentwidgethandler.cpp:88
+#: search/widgethandler/attachmentwidgethandler.cpp:89
 #, fuzzy, kde-format
 #| msgid "has an attachment"
 msgid "has attachment"
 msgstr "on manusega"
 
 #: search/widgethandler/daterulewidgethandler.cpp:21
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:21
-#: search/widgethandler/numericrulewidgethandler.cpp:21
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:20
+#: search/widgethandler/numericrulewidgethandler.cpp:20
 msgid "is equal to"
 msgstr "võrdub"
 
 #: search/widgethandler/daterulewidgethandler.cpp:22
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:22
-#: search/widgethandler/numericrulewidgethandler.cpp:22
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:21
+#: search/widgethandler/numericrulewidgethandler.cpp:21
 msgid "is not equal to"
 msgstr "ei võrdu"
 
@@ -2559,24 +2559,24 @@ msgstr "on varasem kui"
 msgid "is after or equal to"
 msgstr "on hilisem kui või võrdub"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:17
+#: search/widgethandler/encryptionwidgethandler.cpp:18
 #: search/widgethandler/statusrulewidgethandler.cpp:18
 msgid "is"
 msgstr "on"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:17
+#: search/widgethandler/encryptionwidgethandler.cpp:18
 #: search/widgethandler/statusrulewidgethandler.cpp:18
 msgid "is not"
 msgstr "ei ole"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:51
+#: search/widgethandler/encryptionwidgethandler.cpp:52
 #, fuzzy, kde-format
 #| msgid "encrypted"
 msgctxt "@label:textbox"
 msgid "encrypted"
 msgstr "krüptitud"
 
-#: search/widgethandler/encryptionwidgethandler.cpp:88
+#: search/widgethandler/encryptionwidgethandler.cpp:89
 #, kde-format
 msgid "is encrypted"
 msgstr "on krüptitud"
@@ -2646,14 +2646,14 @@ msgstr "on aadressiraamatus"
 msgid "is not in address book"
 msgstr "ei ole aadressiraamatus"
 
-#: search/widgethandler/invitationwidgethandler.cpp:51
+#: search/widgethandler/invitationwidgethandler.cpp:52
 #, fuzzy, kde-format
 #| msgid "Organization"
 msgctxt "@label:textbox"
 msgid "invitation"
 msgstr "Organisatsioon"
 
-#: search/widgethandler/invitationwidgethandler.cpp:88
+#: search/widgethandler/invitationwidgethandler.cpp:89
 #, fuzzy, kde-format
 #| msgid "Organization"
 msgid "has invitation"
@@ -2665,33 +2665,33 @@ msgstr "Organisatsioon"
 msgid "has no attachment"
 msgstr "on manuseta"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:23
-#: search/widgethandler/numericrulewidgethandler.cpp:23
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:22
+#: search/widgethandler/numericrulewidgethandler.cpp:22
 msgid "is greater than"
 msgstr "on suurem kui"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:24
-#: search/widgethandler/numericrulewidgethandler.cpp:24
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:23
+#: search/widgethandler/numericrulewidgethandler.cpp:23
 msgid "is less than or equal to"
 msgstr "on väiksem kui või võrdub"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:25
-#: search/widgethandler/numericrulewidgethandler.cpp:25
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:24
+#: search/widgethandler/numericrulewidgethandler.cpp:24
 msgid "is less than"
 msgstr "on väiksem kui"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:26
-#: search/widgethandler/numericrulewidgethandler.cpp:26
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:25
+#: search/widgethandler/numericrulewidgethandler.cpp:25
 msgid "is greater than or equal to"
 msgstr "on suurem kui või võrdub"
 
-#: search/widgethandler/numericdoublerulewidgethandler.cpp:157
+#: search/widgethandler/numericdoublerulewidgethandler.cpp:156
 #, kde-format
 msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " kB"
 
-#: search/widgethandler/numericrulewidgethandler.cpp:157
+#: search/widgethandler/numericrulewidgethandler.cpp:156
 #, fuzzy, kde-format
 #| msgctxt "Unit suffix where units are days."
 #| msgid " day"
@@ -2955,32 +2955,32 @@ msgctxt "@action:button"
 msgid "Update"
 msgstr "Uuenda tekstijuppi"
 
-#: snippets/snippettreeview.cpp:64
+#: snippets/snippettreeview.cpp:65
 #, kde-format
 msgid "Text Snippets"
 msgstr "Tekstijupid"
 
-#: snippets/snippetvariabledialog.cpp:34
+#: snippets/snippetvariabledialog.cpp:33
 #, kde-format
 msgctxt "@title:window"
 msgid "Enter Values for Variables"
 msgstr "Muutujate väärtuste sisestamine"
 
-#: snippets/snippetvariabledialog.cpp:37
+#: snippets/snippetvariabledialog.cpp:36
 #, fuzzy, kde-format
 #| msgid "Enter the replacement values for '%1':"
 msgctxt "@label:textbox"
 msgid "Enter the replacement values for '%1':"
 msgstr "Sisesta %1 asendusväärtus:"
 
-#: snippets/snippetvariabledialog.cpp:42
+#: snippets/snippetvariabledialog.cpp:41
 #, fuzzy, kde-format
 #| msgid "Make value &default"
 msgctxt "@option:check"
 msgid "Make value &default"
 msgstr "Kasutamine &vaikeväärtusena"
 
-#: snippets/snippetvariabledialog.cpp:45
+#: snippets/snippetvariabledialog.cpp:44
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2989,7 +2989,7 @@ msgid ""
 msgstr ""
 "Valimisel salvestatakse paremal antud väärtus antud muutuja vaikeväärtusena"
 
-#: snippets/snippetvariabledialog.cpp:48
+#: snippets/snippetvariabledialog.cpp:47
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
