@@ -9,6 +9,15 @@ documentationinheaders = true
 headerdirs += .
 sourcedirs += .
 
+excludedirs += \
+    collectionpage/autotests \
+    filter/autotests \
+    filter/filterimporter/autotests \
+    filter/tests \
+    search/autotests \
+    snippets/autotests \
+    snooze/attributes/autotests
+
 outputformats = HTML
 
 depends += \
