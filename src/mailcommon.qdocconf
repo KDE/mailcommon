@@ -1,6 +1,7 @@
 include($KDE_DOCS/global/qt-module-defaults.qdocconf)
 
 project = MailCommon
+moduleheader = mailcommon_qdocmoduleheader.h
 description = MailCommon library.
 
 
