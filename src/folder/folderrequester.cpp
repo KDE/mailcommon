@@ -99,8 +99,6 @@ void FolderRequester::setCollectionFullPath(const Akonadi::Collection &col)
     }
 }
 
-void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
-
 //-----------------------------------------------------------------------------
 void FolderRequester::setCollection(const Akonadi::Collection &collection, bool fetchCollection)
 {
