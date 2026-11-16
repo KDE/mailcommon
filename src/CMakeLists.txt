@@ -644,6 +644,7 @@ install(
 )
 
 set(MAILCOMMON_INCLUDES_FILES
+    ${MailCommon_searchrule_HEADERS}
     ${MailCommon_HEADERS}
     ${MailCommon_top_HEADERS}
     ${MailCommon_tag_HEADERS}
@@ -664,7 +665,6 @@ set(MAILCOMMON_INCLUDES_FILES
 
 install(
     FILES
-        ${MailCommon_searchrule_HEADERS}
         ${CMAKE_CURRENT_BINARY_DIR}/mailcommon_export.h
         ${CMAKE_CURRENT_BINARY_DIR}/config-mailcommon.h
         ${CMAKE_CURRENT_BINARY_DIR}/pop3settings.h
