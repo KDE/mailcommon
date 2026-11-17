@@ -402,9 +402,8 @@ target_link_libraries(
         Qt::Multimedia
         KF6::TextCustomEditor
         KF6::TextAddonsWidgets
+        QGpgmeQt6
 )
-
-target_link_libraries(KPim6MailCommon PRIVATE QGpgmeQt6)
 
 if(MAILCOMMON_HAVE_ACTIVITY_SUPPORT)
     target_link_libraries(KPim6MailCommon PRIVATE KPim6::PimCommonActivities)
