@@ -77,9 +77,7 @@ MailFilter::MailFilter(const MailFilter &aFilter)
     mIcon = aFilter.icon();
     mShortcut = aFilter.shortcut();
 
-    QListIterator<FilterAction *> it(aFilter.mActions);
-    while (it.hasNext()) {
-        FilterAction *action = it.next();
+    for (FilterAction *action : aFilter.mActions) {
         FilterActionDesc *desc = FilterManager::filterActionDict()->value(action->name());
         if (desc) {
             FilterAction *f = desc->create();
@@ -274,9 +272,8 @@ void MailFilter::agentRemoved(const QString &identifier)
 
 void MailFilter::folderRemoved(const Akonadi::Collection &aFolder, const Akonadi::Collection &aNewFolder)
 {
-    QListIterator<FilterAction *> it(mActions);
-    while (it.hasNext()) {
-        it.next()->folderRemoved(aFolder, aNewFolder);
+    for (FilterAction *action : std::as_const(mActions)) {
+        action->folderRemoved(aFolder, aNewFolder);
     }
 }
 
@@ -570,10 +567,10 @@ QString MailFilter::purify(bool removeAction)
         }
         informationAboutNotValidAction += i18n("Any action defined.");
     } else {
-        QListIterator<FilterAction *> it(mActions);
-        it.toBack();
-        while (it.hasPrevious()) {
-            FilterAction *action = it.previous();
+        // Iterate over a copy: mActions may be modified in the loop
+        const QList<FilterAction *> actions = mActions;
+        for (auto it = actions.crbegin(), end = actions.crend(); it != end; ++it) {
+            FilterAction *action = *it;
             if (action->isEmpty()) {
                 if (!informationAboutNotValidAction.isEmpty()) {
                     informationAboutNotValidAction += u'\n';
@@ -680,9 +677,7 @@ QDataStream &MailCommon::operator<<(QDataStream &stream, const MailCommon::MailF
     stream << filter.mPattern.serialize();
 
     stream << filter.mActions.count();
-    QListIterator<FilterAction *> it(filter.mActions);
-    while (it.hasNext()) {
-        const FilterAction *action = it.next();
+    for (const FilterAction *action : filter.mActions) {
         stream << action->name();
         stream << action->argsAsString();
     }
