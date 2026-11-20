@@ -9,6 +9,7 @@
 
 #include "filteraction.h"
 #include "mailcommon_private_export.h"
+#include <QMap>
 #include <QPointer>
 
 class QComboBox;

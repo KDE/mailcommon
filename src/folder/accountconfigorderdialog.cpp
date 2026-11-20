@@ -11,6 +11,7 @@
 #include <KLocalizedString>
 #include <PimCommon/PimUtil>
 #include <QIcon>
+#include <QMap>
 #include <QPushButton>
 #include <QVBoxLayout>
 
