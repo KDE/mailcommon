@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-21 01:12+0000\n"
+"POT-Creation-Date: 2026-11-22 01:06+0000\n"
 "PO-Revision-Date: 2026-08-13 12:23+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -1631,28 +1631,28 @@ msgstr ""
 "Cambiar de nombre el filtro «%1» a\n"
 "(deje el campo vació para cambio de nombre automático)"
 
-#: filter/mailfilter.cpp:132
+#: filter/mailfilter.cpp:130
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>Aplicando acción del filtro:</b> %1"
 
-#: filter/mailfilter.cpp:141
+#: filter/mailfilter.cpp:139
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "Sucedió un error crítico. El proceso se detiene aquí."
 
-#: filter/mailfilter.cpp:148
+#: filter/mailfilter.cpp:146
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "Se encontró un problema al aplicar esta acción."
 
-#: filter/mailfilter.cpp:429
+#: filter/mailfilter.cpp:426
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr ""
 "<qt>Demasiadas acciones de filtrado en la regla de filtrado <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:463
+#: filter/mailfilter.cpp:460
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1661,7 +1661,7 @@ msgstr ""
 "<qt>Acción de filtrado desconocida <b>%1</b><br />en la regla de filtrado <b>"
 "%2</b>.<br />Ignorándola.</qt>"
 
-#: filter/mailfilter.cpp:571
+#: filter/mailfilter.cpp:568
 #, kde-format
 msgid "Any action defined."
 msgstr "Cualquier acción definida."

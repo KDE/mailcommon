@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-21 01:12+0000\n"
+"POT-Creation-Date: 2026-11-22 01:06+0000\n"
 "PO-Revision-Date: 2026-10-12 19:52+0300\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
@@ -1542,27 +1542,27 @@ msgstr ""
 "Pervadinti filtrą „%1“ į:\n"
 "(palikite tuščią, jei norite automatiškai suteikti pavadinimą)"
 
-#: filter/mailfilter.cpp:132
+#: filter/mailfilter.cpp:130
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>Taikomas filtro veiksmas:</b> %1"
 
-#: filter/mailfilter.cpp:141
+#: filter/mailfilter.cpp:139
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "Įvyko kritinė klaida. Apdorojimas čia sustabdomas."
 
-#: filter/mailfilter.cpp:148
+#: filter/mailfilter.cpp:146
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "Taikant šį veiksmą iškilo problemų."
 
-#: filter/mailfilter.cpp:429
+#: filter/mailfilter.cpp:426
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>Per daug filtro veiksmų filtro taisyklėje <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:463
+#: filter/mailfilter.cpp:460
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1571,7 +1571,7 @@ msgstr ""
 "<qt>Nežinomas filtro veiksmas <b>%1</b>,<br />esantis filtro taisyklėje <b>"
 "%2</b>.<br />Jo nepaisoma.</qt>"
 
-#: filter/mailfilter.cpp:571
+#: filter/mailfilter.cpp:568
 #, kde-format
 msgid "Any action defined."
 msgstr "Bet koks apibrėžtas veiksmas."

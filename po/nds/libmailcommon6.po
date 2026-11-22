@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-21 01:12+0000\n"
+"POT-Creation-Date: 2026-11-22 01:06+0000\n"
 "PO-Revision-Date: 2014-09-18 22:35+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -1722,27 +1722,27 @@ msgstr ""
 "Filter \"%1\" ümnömen to:\n"
 "(Blifft dat Feld leddig, kriggt de Filter automaatsch en Naam)"
 
-#: filter/mailfilter.cpp:132
+#: filter/mailfilter.cpp:130
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>Filterakschoon warrt anwendt:</b> %1"
 
-#: filter/mailfilter.cpp:141
+#: filter/mailfilter.cpp:139
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "Dat geev en sworen Fehler. Verarbeiden beendt."
 
-#: filter/mailfilter.cpp:148
+#: filter/mailfilter.cpp:146
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "Dat geev en Problem bi't Utföhren vun disse Akschoon."
 
-#: filter/mailfilter.cpp:429
+#: filter/mailfilter.cpp:426
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>To vele Filterakschonen binnen Filterregel <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:463
+#: filter/mailfilter.cpp:460
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1751,7 +1751,7 @@ msgstr ""
 "<qt>Nich begäng Filterakschoon <b>%1</b><br />binnen Filterregel <b>%2</b> "
 "<br />warrt övergahn.</qt>"
 
-#: filter/mailfilter.cpp:571
+#: filter/mailfilter.cpp:568
 #, fuzzy, kde-format
 #| msgid "Folder creation failed"
 msgid "Any action defined."

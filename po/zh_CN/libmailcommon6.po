@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-21 01:12+0000\n"
+"POT-Creation-Date: 2026-11-22 01:06+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -1571,27 +1571,27 @@ msgstr ""
 "重命名过滤器 \"%1\" 到:\n"
 "(留空以自动命名)"
 
-#: filter/mailfilter.cpp:132
+#: filter/mailfilter.cpp:130
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>应用过滤器操作：</b> %1"
 
-#: filter/mailfilter.cpp:141
+#: filter/mailfilter.cpp:139
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "发生致命错误。在此停止处理。"
 
-#: filter/mailfilter.cpp:148
+#: filter/mailfilter.cpp:146
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "应用此操作时发现了一个问题。"
 
-#: filter/mailfilter.cpp:429
+#: filter/mailfilter.cpp:426
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>过滤规则 <b>%1</b> 中包含过多的过滤操作。</qt>"
 
-#: filter/mailfilter.cpp:463
+#: filter/mailfilter.cpp:460
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1600,7 +1600,7 @@ msgstr ""
 "<qt>未知的过滤器动作 <b>%1</b><br />位于过滤规则 <b>%2</b> 中。<br />已忽略。"
 "</qt>"
 
-#: filter/mailfilter.cpp:571
+#: filter/mailfilter.cpp:568
 #, kde-format
 msgid "Any action defined."
 msgstr "已定义任意动作。"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-21 01:12+0000\n"
+"POT-Creation-Date: 2026-11-22 01:06+0000\n"
 "PO-Revision-Date: 2013-11-01 04:30+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1727,27 +1727,27 @@ msgstr ""
 "\"%1\" сүзгіcін қайта атау:\n"
 "(автоматты түрде атау үшін өрісті бос қалдырыңыз)"
 
-#: filter/mailfilter.cpp:132
+#: filter/mailfilter.cpp:130
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>Сүзгі әрекетін қолдану:</b> %1"
 
-#: filter/mailfilter.cpp:141
+#: filter/mailfilter.cpp:139
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "Дағдарысты қате пайда болды. Өңдеу тоқтатылды."
 
-#: filter/mailfilter.cpp:148
+#: filter/mailfilter.cpp:146
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "Әрекетті орындау кезінде қате пайда болды."
 
-#: filter/mailfilter.cpp:429
+#: filter/mailfilter.cpp:426
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt><b>%1</b> сүзгі ережесінде әрекеттер тым көп.</qt>"
 
-#: filter/mailfilter.cpp:463
+#: filter/mailfilter.cpp:460
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1756,7 +1756,7 @@ msgstr ""
 "<qt><b>%2</b> сүзгі ережесінде<br /> <b>%1</b> әрекеті беймәлім.<br /> "
 "Әрекет еленбей қалдырылды.</qt>"
 
-#: filter/mailfilter.cpp:571
+#: filter/mailfilter.cpp:568
 #, fuzzy, kde-format
 #| msgid "Folder creation failed"
 msgid "Any action defined."

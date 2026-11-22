@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailcommon\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-21 01:12+0000\n"
+"POT-Creation-Date: 2026-11-22 01:06+0000\n"
 "PO-Revision-Date: 2026-08-13 06:58+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -1626,27 +1626,27 @@ msgstr ""
 "ფილტრის \"%1\" სახელის გადარქმევა სახელზე:\n"
 "(ავტომატური სახელისთვის ეს ველი ცარიელი დატოვეთ)"
 
-#: filter/mailfilter.cpp:132
+#: filter/mailfilter.cpp:130
 #, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>მიმდინარეობს ფილტრის ქმედების გადატარება:</b> %1"
 
-#: filter/mailfilter.cpp:141
+#: filter/mailfilter.cpp:139
 #, kde-format
 msgid "A critical error occurred. Processing stops here."
 msgstr "აღმოჩენილია კრიტიკული შეცდომა. დამუშავება აქ დასრულდა."
 
-#: filter/mailfilter.cpp:148
+#: filter/mailfilter.cpp:146
 #, kde-format
 msgid "A problem was found while applying this action."
 msgstr "ამ ქმედების გადატარებისას აღმოჩენილია პრობლემა."
 
-#: filter/mailfilter.cpp:429
+#: filter/mailfilter.cpp:426
 #, kde-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr "<qt>მეტისმეტად ბევრი ფილტრის ქმედება ფილტრის წესში <b>%1</b>.</qt>"
 
-#: filter/mailfilter.cpp:463
+#: filter/mailfilter.cpp:460
 #, kde-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
@@ -1655,7 +1655,7 @@ msgstr ""
 "<qt>უცნობი ფილტრის ქმედება <b>%1</b><br />ფილტრის წესში <b>%2</b>.<br /"
 ">გამოტოვება.</qt>"
 
-#: filter/mailfilter.cpp:571
+#: filter/mailfilter.cpp:568
 #, kde-format
 msgid "Any action defined."
 msgstr "ნებისმიერი აღწერილი ქმედება."
