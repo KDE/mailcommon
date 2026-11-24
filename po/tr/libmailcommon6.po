@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-22 01:06+0000\n"
-"PO-Revision-Date: 2026-11-15 20:13+0300\n"
+"PO-Revision-Date: 2026-11-23 18:19+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -131,7 +131,7 @@ msgid ""
 "user with access to this folder has their own unread state."
 msgstr ""
 "Etkinse bu klasördeki iletilerin okunmadı durumu bu klasörü paylaşan tüm "
-"kullanıcılar için aynı olacaktır. Etkin değilse (öntanımlı) bu klasöre "
+"kullanıcılar için aynı olacaktır. Etkin değilse (varsayılan) bu klasöre "
 "erişebilen herkes kendi bağımsız okunmadı durumuna sahip olur."
 
 #: collectionpage/collectiongeneralpage.cpp:211
@@ -207,7 +207,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Use &default identity"
-msgstr "Ö&ntanımlı kimliği kullan"
+msgstr "&Varsayılan kimliği kullan"
 
 #: collectionpage/collectiongeneralwidget.cpp:60
 #, kde-format
@@ -246,13 +246,13 @@ msgstr "Global Şablonları Ko&pyala"
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list aggregation:"
-msgstr "Öntanımlı ileti listesi toplamasını kullan:"
+msgstr "Varsayılan ileti listesi toplamasını kullan:"
 
 #: collectionpage/collectionviewwidget.cpp:31
 #, kde-format
 msgctxt "@option:check"
 msgid "Use default message list theme"
-msgstr "Öntanımlı ileti listesi temasını kullan"
+msgstr "Varsayılan ileti listesi temasını kullan"
 
 #: collectionpage/collectionviewwidget.cpp:33
 #, kde-format
@@ -281,7 +281,7 @@ msgstr "İleti Listesinde Gönderen/Alıcı Sütununu Göster"
 #, kde-format
 msgctxt "@item:inlistbox Show default value."
 msgid "Default"
-msgstr "Öntanımlı"
+msgstr "Varsayılan"
 
 #: collectionpage/collectionviewwidget.cpp:46
 #, kde-format
@@ -442,7 +442,7 @@ msgstr "Thunderbird süzgeç dosyalarını seçin"
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:35
 #, kde-format
 msgid " (default)"
-msgstr " (öntanımlı)"
+msgstr " (varsayılan)"
 
 #: filter/dialog/selectthunderbirdfilterfileswidget.cpp:120
 #, kde-format
@@ -538,7 +538,7 @@ msgid ""
 "book."
 msgstr ""
 "Bu, yeğlenen adres defterini tanımlar.\n"
-"Erişilebilir değilse süzgeç öntanımlı adres defterine geri döner."
+"Erişilebilir değilse süzgeç varsayılan adres defterine geri döner."
 
 #: filter/filteractions/filteractionaddtoaddressbook.cpp:290
 #, kde-format
@@ -655,7 +655,7 @@ msgstr "Bu süzgeç, iletiyi buraya girilen kişiye iletecektir."
 #: filter/filteractions/filteractionforward.cpp:200
 #, kde-format
 msgid "Default Template"
-msgstr "Öntanımlı Şablon"
+msgstr "Varsayılan Şablon"
 
 #: filter/filteractions/filteractionforward.cpp:112
 #, kde-format
@@ -671,7 +671,7 @@ msgstr "Bu süzgeç ile kullanılacak iletme şablonunu ayarlayın."
 #: filter/filteractions/filteractionforward.cpp:228
 #, kde-format
 msgid "Forward to %1 with default template"
-msgstr "%1 kişisine öntanımlı şablon ile ilet"
+msgstr "%1 kişisine varsayılan şablon ile ilet"
 
 #: filter/filteractions/filteractionforward.cpp:230
 #, kde-format
@@ -2834,7 +2834,7 @@ msgstr "“%1” için değiştirilecek değerleri girin:"
 #, kde-format
 msgctxt "@option:check"
 msgid "Make value &default"
-msgstr "Değeri ö&ntanımlı yap"
+msgstr "&Değeri varsayılan yap"
 
 #: snippets/snippetvariabledialog.cpp:44
 #, kde-format
@@ -2843,8 +2843,8 @@ msgid ""
 "Enable this to save the value entered to the right as the default value for "
 "this variable"
 msgstr ""
-"Bu değişken için sağa yazılan değeri öntanımlı değer olarak kaydetmek için "
-"bunu etkinleştirin"
+"Bu değişken için sağa yazılan değeri varsayılan değer olarak kaydetmek için "
+"bunu etkinleştirin."
 
 #: snippets/snippetvariabledialog.cpp:47
 #, kde-format
@@ -2854,9 +2854,9 @@ msgid ""
 "you use the same variable later, even in another snippet, the value entered "
 "to the right will be the default value for that variable."
 msgstr ""
-"Bu seçeneği etkinleştirirseniz, sağa girdiğiniz değer kaydedilecektir. Eğer "
+"Bu seçeneği etkinleştirirseniz sağa girdiğiniz değer kaydedilecektir. Eğer "
 "aynı değişkeni daha sonra farklı bir kod parçacığında kullansanız dahi, sağa "
-"girdiğiniz değer bu değişken için öntanımlı değer olacaktır."
+"girdiğiniz değer bu değişken için varsayılan değer olacaktır."
 
 #: snippets/snippetwidget.cpp:57
 #, kde-format
