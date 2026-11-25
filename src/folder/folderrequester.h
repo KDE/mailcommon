@@ -40,6 +40,11 @@ namespace MailCommon
  * - Allow to pass in an existing ETM, to remove the Kernel dependency
  */
 class FolderRequesterPrivate;
+/*!
+ * \class MailCommon::FolderRequester
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FolderRequester
+ */
 class MAILCOMMON_EXPORT FolderRequester : public QWidget
 {
     Q_OBJECT
@@ -50,6 +55,8 @@ public:
      * \a parent the parent widget
      */
     explicit FolderRequester(QWidget *parent = nullptr);
+    /*!
+     */
     ~FolderRequester() override;
 
     /*!
@@ -110,14 +117,20 @@ Q_SIGNALS:
      * Emitted when the folder changed.
      */
     void folderChanged(const Akonadi::Collection &);
+    /*!
+     */
     void invalidFolder();
 
 protected:
     /*! Captures the space key of the key event \a e to open the dialog. */
     void keyPressEvent(QKeyEvent *e) override;
+    /*!
+     */
     void setCollectionFullPath(const Akonadi::Collection &col);
 
 protected:
+    /*!
+     */
     std::unique_ptr<FolderRequesterPrivate> const d;
 };
 }

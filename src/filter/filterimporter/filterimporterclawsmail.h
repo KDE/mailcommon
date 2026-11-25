@@ -38,7 +38,11 @@ public:
      */
     FilterImporterClawsMails(QString string);
     // Use for unittests
+    /*!
+     */
     FilterImporterClawsMails(bool interactive = false);
+    /*!
+     */
     ~FilterImporterClawsMails();
     /*!
      * \brief defaultFiltersSettingsPath
@@ -47,6 +51,8 @@ public:
     [[nodiscard]] static QString defaultFiltersSettingsPath();
 
     // the returned mail filter instance will be owned by the caller, who must ensure to delete it at some point
+    /*!
+     */
     [[nodiscard]] MailFilter *parseLine(const QString &line);
 
 private:

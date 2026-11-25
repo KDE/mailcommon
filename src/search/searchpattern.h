@@ -71,6 +71,8 @@ public:
         OpAll,
     };
 
+    /*!
+     */
     enum SparqlQueryError {
         NoError = 0,
         MissingCheck,

@@ -63,7 +63,11 @@ protected:
      */
     bool loadDomElement(QDomDocument &doc, QFile *file);
 
+    /*!
+     */
     QList<MailFilter *> mListMailFilter;
+    /*!
+     */
     QStringList mEmptyFilter;
 
 private:

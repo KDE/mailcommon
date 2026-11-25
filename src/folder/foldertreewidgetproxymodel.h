@@ -30,6 +30,8 @@ class MAILCOMMON_EXPORT FolderTreeWidgetProxyModel : public Akonadi::EntityRight
     Q_OBJECT
 
 public:
+    /*!
+     */
     enum FolderTreeWidgetProxyModelOption {
         None = 0,
         HideVirtualFolder = 1,

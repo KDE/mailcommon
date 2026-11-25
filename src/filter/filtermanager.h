@@ -183,10 +183,16 @@ public:
      */
     void endUpdate();
 
+    /*!
+     */
     [[nodiscard]] QMap<QUrl, QString> tagList() const;
 
+    /*!
+     */
     [[nodiscard]] bool initialized() const;
 
+    /*!
+     */
     void cleanup();
 private Q_SLOTS:
     MAILCOMMON_NO_EXPORT void slotServerStateChanged(Akonadi::ServerManager::State);
@@ -204,8 +210,12 @@ Q_SIGNALS:
      */
     void filtersChanged();
 
+    /*!
+     */
     void tagListingFinished();
 
+    /*!
+     */
     void loadingFiltersDone();
 
 private:

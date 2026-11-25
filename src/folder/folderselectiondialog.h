@@ -35,6 +35,8 @@ class MAILCOMMON_EXPORT FolderSelectionDialog : public QDialog
     Q_OBJECT
 
 public:
+    /*!
+     */
     enum SelectionFolderOption {
         None = 0,
         EnableCheck = 1,
@@ -92,13 +94,25 @@ private Q_SLOTS:
     MAILCOMMON_NO_EXPORT void slotFolderTreeWidgetContextMenuRequested(const QPoint &);
 
 protected:
+    /*!
+     */
     void focusTreeView();
+    /*!
+     */
     void readConfig();
+    /*!
+     */
     void writeConfig();
+    /*!
+     */
     bool canCreateCollection(Akonadi::Collection &parentCol);
 
+    /*!
+     */
     void hideEvent(QHideEvent *) override;
 
+    /*!
+     */
     void showEvent(QShowEvent *) override;
 
 private:

@@ -17,18 +17,43 @@ class QPushButton;
 namespace MailCommon
 {
 class FolderRequester;
+/*!
+ * \class MailCommon::CollectionExpirySettings
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/CollectionExpiryWidget
+ */
 struct MAILCOMMON_EXPORT CollectionExpirySettings {
+    /*!
+     */
     [[nodiscard]] bool isValid() const;
 
+    /*!
+     */
     bool expiryGloballyOn = false;
+    /*!
+     */
     bool expiryMessagesWithInvalidDate = false;
+    /*!
+     */
     int daysToExpireRead = -1;
+    /*!
+     */
     int daysToExpireUnread = -1;
+    /*!
+     */
     ExpireCollectionAttribute::ExpireUnits mUnreadExpireUnits = ExpireCollectionAttribute::ExpireNever;
+    /*!
+     */
     ExpireCollectionAttribute::ExpireUnits mReadExpireUnits = ExpireCollectionAttribute::ExpireNever;
+    /*!
+     */
     ExpireCollectionAttribute::ExpireAction mExpireAction = ExpireCollectionAttribute::ExpireDelete;
+    /*!
+     */
     Akonadi::Collection::Id mExpireToFolderId = -1;
 
+    /*!
+     */
     void convertFromExpireCollectionAttribute(const ExpireCollectionAttribute *attr);
 };
 

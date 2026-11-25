@@ -26,14 +26,32 @@ class SnippetItem;
  * \author Laurent Montel <montel@kde.org>
  */
 struct MAILCOMMON_EXPORT SnippetsInfo {
+    /*!
+     */
     QString newName;
+    /*!
+     */
     QKeySequence keySequence;
+    /*!
+     */
     QString text;
+    /*!
+     */
     QString keyword;
+    /*!
+     */
     QString subject;
+    /*!
+     */
     QString to;
+    /*!
+     */
     QString cc;
+    /*!
+     */
     QString bcc;
+    /*!
+     */
     QString attachment;
 };
 
@@ -50,6 +68,8 @@ class MAILCOMMON_EXPORT SnippetsModel : public QAbstractItemModel
 {
     Q_OBJECT
 public:
+    /*!
+     */
     enum Role {
         IsGroupRole = Qt::UserRole + 1, ///< Returns whether the index represents a group
         NameRole, ///< The name of a snippet or group

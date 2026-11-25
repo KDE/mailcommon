@@ -59,11 +59,18 @@ namespace MailCommon
  * \author Marc Mutz <mutz@kde.org>
  */
 class SearchRuleWidgetLister;
+/*!
+ * \class MailCommon::SearchPatternEdit
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/SearchPatternEdit
+ */
 class MAILCOMMON_EXPORT SearchPatternEdit : public QWidget
 {
     Q_OBJECT
 
 public:
+    /*!
+     */
     enum SearchPatternEditOption {
         None = 0,
         HeadersOnly = 1,
@@ -75,6 +82,8 @@ public:
     };
     Q_DECLARE_FLAGS(SearchPatternEditOptions, SearchPatternEditOption)
 
+    /*!
+     */
     enum SearchModeType {
         StandardMode = 0,
         BalooMode = 1,
@@ -188,6 +197,8 @@ public:
                               SearchPatternEdit::SearchPatternEditOptions options = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None),
                               SearchPatternEdit::SearchModeType modeType = SearchPatternEdit::StandardMode);
 
+    /*!
+     */
     enum {
         Message,
         Body,
@@ -311,6 +322,11 @@ private:
     QPushButton *mRemove = nullptr;
 };
 
+/*!
+ * \class MailCommon::SearchRuleWidgetLister
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/SearchPatternEdit
+ */
 class SearchRuleWidgetLister : public KPIM::KWidgetLister
 {
     Q_OBJECT
@@ -318,23 +334,41 @@ class SearchRuleWidgetLister : public KPIM::KWidgetLister
     friend class SearchPatternEdit;
 
 public:
+    /*!
+     */
     explicit SearchRuleWidgetLister(QWidget *parent = nullptr,
                                     SearchPatternEdit::SearchPatternEditOptions opt = (SearchPatternEdit::SearchPatternEditOptions)(SearchPatternEdit::None),
                                     SearchPatternEdit::SearchModeType modeType = SearchPatternEdit::StandardMode);
 
+    /*!
+     */
     ~SearchRuleWidgetLister() override;
 
+    /*!
+     */
     void setRuleList(QList<MailCommon::SearchRule::Ptr> *aList);
 
+    /*!
+     */
     void setPatternEditOptions(SearchPatternEdit::SearchPatternEditOptions options);
 
 public Q_SLOTS:
+    /*!
+     */
     void reset();
+    /*!
+     */
     void slotAddWidget(QWidget *);
+    /*!
+     */
     void slotRemoveWidget(QWidget *);
 
 protected:
+    /*!
+     */
     void clearWidget(QWidget *aWidget) override;
+    /*!
+     */
     QWidget *createWidget(QWidget *parent) override;
 
 private:

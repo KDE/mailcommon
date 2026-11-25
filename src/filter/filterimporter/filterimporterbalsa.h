@@ -16,13 +16,28 @@ namespace MailCommon
 {
 class MailFilter;
 
+/*!
+ * \class MailCommon::FilterImporterBalsa
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/FilterImporterBalsa
+ */
 class FilterImporterBalsa : public FilterImporterAbstract
 {
 public:
+    /*!
+     */
     explicit FilterImporterBalsa(QFile *file);
+    /*!
+     */
     FilterImporterBalsa();
+    /*!
+     */
     ~FilterImporterBalsa();
+    /*!
+     */
     [[nodiscard]] static QString defaultFiltersSettingsPath();
+    /*!
+     */
     void readConfig(KConfig *config);
 
 private:

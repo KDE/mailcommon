@@ -30,6 +30,8 @@ class MAILCOMMON_EXPORT Tag
     Q_GADGET
 public:
     using Ptr = QSharedPointer<Tag>;
+    /*!
+     */
     enum SaveFlag {
         TextColor = 1,
         BackgroundColor = 1 << 1,
@@ -113,17 +115,37 @@ public:
      */
     [[nodiscard]] Akonadi::Tag tag() const;
 
+    /*!
+     */
     QString tagName;
+    /*!
+     */
     QColor textColor;
+    /*!
+     */
     QColor backgroundColor;
+    /*!
+     */
     QString iconName;
+    /*!
+     */
     QKeySequence shortcut;
+    /*!
+     */
     bool isBold;
+    /*!
+     */
     bool isItalic;
+    /*!
+     */
     bool inToolbar;
+    /*!
+     */
     bool isImmutable;
     // Priority, i.e. sort order of the tag. Only used when loading the tag, when saving
     // the priority is set to the position in the list widget
+    /*!
+     */
     int priority;
 
 private:

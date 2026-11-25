@@ -48,6 +48,8 @@ class MAILCOMMON_EXPORT BackupJob : public QObject
 
 public:
     // These enum values have to stay in sync with the format combobox of ArchiveFolderDialog!
+    /*!
+     */
     enum ArchiveType {
         Zip = 0,
         Tar = 1,

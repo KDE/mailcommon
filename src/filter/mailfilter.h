@@ -237,7 +237,11 @@ public:
     */
     [[nodiscard]] bool applyOnAccount(const QString &id) const;
 
+    /*!
+     */
     void setStopProcessingHere(bool aStop);
+    /*!
+     */
     bool stopProcessingHere() const;
 
     /*! Set whether this filter should be plugged into the filter menu,

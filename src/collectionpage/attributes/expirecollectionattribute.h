@@ -25,12 +25,16 @@ namespace MailCommon
 class MAILCOMMON_EXPORT ExpireCollectionAttribute : public Akonadi::Attribute
 {
 public:
+    /*!
+     */
     ExpireCollectionAttribute();
 
     /*
      * Define the possible units to use for measuring message expiry.
      * expireNever is used to switch off message expiry, and expireMaxUnits
      * must always be the last in the list (for bounds checking).
+     */
+    /*!
      */
     enum ExpireUnits {
         ExpireNever = 0,
@@ -40,16 +44,28 @@ public:
         ExpireMaxUnits = 4,
     };
 
+    /*!
+     */
     enum ExpireAction {
         ExpireDelete = 0,
         ExpireMove = 1,
     };
 
+    /*!
+     */
     [[nodiscard]] QByteArray type() const override;
+    /*!
+     */
     ExpireCollectionAttribute *clone() const override;
+    /*!
+     */
     [[nodiscard]] QByteArray serialized() const override;
+    /*!
+     */
     void deserialize(const QByteArray &data) override;
 
+    /*!
+     */
     void daysToExpire(int &unreadDays, int &readDays) const;
 
     /*!
@@ -104,6 +120,8 @@ public:
      * What should expiry do? Delete or move to another folder?
      */
     [[nodiscard]] ExpireAction expireAction() const;
+    /*!
+     */
     void setExpireAction(ExpireAction a);
 
     /*!
@@ -128,6 +146,8 @@ public:
      */
     [[nodiscard]] ExpireUnits readExpireUnits() const;
 
+    /*!
+     */
     [[nodiscard]] bool operator==(const ExpireCollectionAttribute &other) const;
     /*!
      * \brief expireMessagesWithValidDate

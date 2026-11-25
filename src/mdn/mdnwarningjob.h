@@ -27,6 +27,8 @@ class MAILCOMMON_EXPORT MDNWarningJob : public QObject
 {
     Q_OBJECT
 public:
+    /*!
+     */
     enum ResponseMDN {
         Unknown = 0,
         MDNIgnore,

@@ -113,6 +113,8 @@ public:
     void setEnableDragDrop(bool enabled);
 
 protected:
+    /*!
+     */
     enum Move {
         Next = 0,
         Previous = 1,

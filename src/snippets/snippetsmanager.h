@@ -30,6 +30,8 @@ namespace MailCommon
  * \author Laurent Montel <montel@kde.org>
  */
 struct MAILCOMMON_EXPORT SnippetInfo {
+    /*!
+     */
     SnippetInfo(const QString &_subject, const QString &_text, const QString &_to, const QString &_cc, const QString &_bcc, const QString &_attachment)
         : subject(_subject)
         , text(_text)
@@ -40,11 +42,23 @@ struct MAILCOMMON_EXPORT SnippetInfo {
     {
     }
 
+    /*!
+     */
     QString subject;
+    /*!
+     */
     QString text;
+    /*!
+     */
     QString to;
+    /*!
+     */
     QString cc;
+    /*!
+     */
     QString bcc;
+    /*!
+     */
     QString attachment;
 };
 /*!

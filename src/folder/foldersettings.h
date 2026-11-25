@@ -182,6 +182,8 @@ public:
      * put in the same folder.
      */
     [[nodiscard]] bool putRepliesInSameFolder() const;
+    /*!
+     */
     void setPutRepliesInSameFolder(bool b);
 
     /*!

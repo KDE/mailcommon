@@ -41,7 +41,11 @@ public:
     void setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities);
 
 protected:
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection parentCollection(const QModelIndex &index) const override;
+    /*!
+     */
     [[nodiscard]] bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override;
 
 private:

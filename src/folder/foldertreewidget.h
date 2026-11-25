@@ -49,6 +49,8 @@ class MAILCOMMON_EXPORT FolderTreeWidget : public QWidget
     Q_OBJECT
 
 public:
+    /*!
+     */
     enum TreeViewOption {
         None = 0,
         ShowUnreadCount = 1,
@@ -69,6 +71,8 @@ public:
                               KXMLGUIClient *xmlGuiClient = nullptr,
                               TreeViewOptions options = (TreeViewOptions)(ShowUnreadCount | ShowCollectionStatisticAnimation),
                               FolderTreeWidgetProxyModel::FolderTreeWidgetProxyModelOptions optReadableProxy = FolderTreeWidgetProxyModel::None);
+    /*!
+     */
     ~FolderTreeWidget() override;
 
     /*!

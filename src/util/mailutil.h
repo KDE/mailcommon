@@ -31,21 +31,39 @@ namespace MailCommon
  */
 namespace Util
 {
+/*!
+ */
 [[nodiscard]] MAILCOMMON_EXPORT OrgKdeAkonadiPOP3SettingsInterface *createPop3SettingsInterface(const QString &ident);
 
+/*!
+ */
 [[nodiscard]] MAILCOMMON_EXPORT bool isVirtualCollection(const Akonadi::Collection &col);
 
+/*!
+ */
 [[nodiscard]] MAILCOMMON_EXPORT bool isVirtualCollection(const QString &resource);
 
+/*!
+ */
 [[nodiscard]] MAILCOMMON_EXPORT QString fullCollectionPath(const Akonadi::Collection &collection, bool addAccountName = true);
+/*!
+ */
 [[nodiscard]] MAILCOMMON_EXPORT QString fullCollectionRemoveIdPath(const Akonadi::Collection &collection, bool addAccountName = true);
 
+/*!
+ */
 MAILCOMMON_EXPORT bool showJobErrorMessage(KJob *job);
 
+/*!
+ */
 [[nodiscard]] MAILCOMMON_EXPORT Akonadi::AgentInstance::List agentInstances(bool excludeMailTransport = true);
 
+/*!
+ */
 [[nodiscard]] MAILCOMMON_EXPORT bool isMailAgent(const Akonadi::AgentInstance &instance, bool excludeMailTransport = true);
 
+/*!
+ */
 [[nodiscard]] MAILCOMMON_EXPORT bool isUnifiedMailboxesAgent(const Akonadi::Collection &col);
 
 /*!
@@ -53,15 +71,29 @@ MAILCOMMON_EXPORT bool showJobErrorMessage(KJob *job);
  */
 [[nodiscard]] MAILCOMMON_EXPORT uint folderIdentity(const Akonadi::Item &item);
 
+/*!
+ */
 [[nodiscard]] MAILCOMMON_EXPORT QString realFolderPath(const QString &path);
 
+/*!
+ */
 MAILCOMMON_EXPORT void expireOldMessages(const Akonadi::Collection &collection, bool immediate);
 
+/*!
+ */
 [[nodiscard]] MAILCOMMON_EXPORT Akonadi::Collection::Id convertFolderPathToCollectionId(const QString &folder);
+/*!
+ */
 [[nodiscard]] MAILCOMMON_EXPORT QString convertFolderPathToCollectionStr(const QString &folder);
 
+/*!
+ */
 MAILCOMMON_EXPORT void foundMailer(QStringList &lst, const QString &name);
+/*!
+ */
 [[nodiscard]] MAILCOMMON_EXPORT QStringList foundMailer();
+/*!
+ */
 [[nodiscard]] MAILCOMMON_EXPORT bool isLocalCollection(const QString &resource);
 }
 }

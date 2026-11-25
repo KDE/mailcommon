@@ -96,10 +96,18 @@ protected:
      */
     virtual void execute() = 0;
 
+    /*!
+     */
     Akonadi::Collection mSrcFolder;
+    /*!
+     */
     int mErrorCode = 0;
 
+    /*!
+     */
     bool mStarted = false;
+    /*!
+     */
     bool mCancellable = false;
 };
 }

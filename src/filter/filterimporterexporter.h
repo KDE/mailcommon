@@ -32,6 +32,8 @@ class MailFilter;
 class MAILCOMMON_EXPORT FilterImporterExporter
 {
 public:
+    /*!
+     */
     enum FilterType {
         KMailFilter = 0,
         ThunderBirdFilter = 1,

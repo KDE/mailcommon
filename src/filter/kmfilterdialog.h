@@ -102,6 +102,11 @@ class KJob;
  */
 namespace MailCommon
 {
+/*!
+ * \class MailCommon::KMFilterDialog
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/KMFilterDialog
+ */
 class MAILCOMMON_EXPORT KMFilterDialog : public QDialog
 {
     Q_OBJECT
@@ -231,6 +236,8 @@ private:
     MAILCOMMON_NO_EXPORT void importFilters(MailCommon::FilterImporterExporter::FilterType type);
 
 protected:
+    /*!
+     */
     bool event(QEvent *e) override;
 
     /*! The widget that contains the ListBox showing the filters, and the
@@ -246,33 +253,71 @@ protected:
     /*! Lets the user select whether to apply this filter on
        inbound/outbound messages, both, or only on explicit CTRL-J. */
     QCheckBox *mApplyOnIn = nullptr;
+    /*!
+     */
     QCheckBox *mApplyOnOut = nullptr;
+    /*!
+     */
     QCheckBox *mApplyBeforeOut = nullptr;
+    /*!
+     */
     QCheckBox *mApplyOnCtrlJ = nullptr;
+    /*!
+     */
     QCheckBox *mApplyOnAllFolders = nullptr;
 
     /*! For a filter applied to inbound messages selects whether to apply
         this filter to all accounts or to selected accounts only. */
     QRadioButton *mApplyOnForAll = nullptr;
+    /*!
+     */
     QRadioButton *mApplyOnForTraditional = nullptr;
+    /*!
+     */
     QRadioButton *mApplyOnForChecked = nullptr;
 
     /*! ListView that shows the accounts in the advanced tab */
     KMFilterAccountList *mAccountList = nullptr;
 
+    /*!
+     */
     QCheckBox *mStopProcessingHere = nullptr;
+    /*!
+     */
     QCheckBox *mConfigureShortcut = nullptr;
+    /*!
+     */
     QCheckBox *mConfigureToolbar = nullptr;
+    /*!
+     */
     KIconButton *mFilterActionIconButton = nullptr;
+    /*!
+     */
     KKeySequenceWidget *mKeySeqWidget = nullptr;
+    /*!
+     */
     QGroupBox *mAdvOptsGroup = nullptr;
 
+    /*!
+     */
     MailCommon::MailFilter *mFilter = nullptr;
+    /*!
+     */
     MailCommon::FolderRequester *mFolderRequester = nullptr;
+    /*!
+     */
     QPushButton *mRunNow = nullptr;
+    /*!
+     */
     QPushButton *mApplyButton = nullptr;
+    /*!
+     */
     bool mDoNotClose = false;
+    /*!
+     */
     bool mIgnoreFilterUpdates = true;
+    /*!
+     */
     QWidget *mInMenuWidget = nullptr;
 };
 }

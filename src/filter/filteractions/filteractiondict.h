@@ -26,7 +26,11 @@ using FilterActionNewFunc = FilterAction *(*)();
  * \brief Auxiliary struct for FilterActionDict.
  */
 struct FilterActionDesc {
+    /*!
+     */
     QString label, name;
+    /*!
+     */
     FilterActionNewFunc create;
 };
 

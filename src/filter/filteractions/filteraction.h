@@ -84,8 +84,12 @@ public:
      */
     [[nodiscard]] QString name() const;
 
+    /*!
+     */
     [[nodiscard]] virtual QStringList sieveRequires() const;
 
+    /*!
+     */
     [[nodiscard]] virtual QString sieveCode() const;
 
     /*!
@@ -112,6 +116,8 @@ public:
      */
     [[nodiscard]] virtual bool isEmpty() const;
 
+    /*!
+     */
     [[nodiscard]] virtual QString informationAboutNotValidAction() const;
 
     /*!
@@ -151,6 +157,8 @@ public:
      */
     [[nodiscard]] virtual bool argsFromStringInteractive(const QString &argsStr, const QString &filterName);
 
+    /*!
+     */
     [[nodiscard]] virtual QString argsAsStringReal() const;
 
     /*!

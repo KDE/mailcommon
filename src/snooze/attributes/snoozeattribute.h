@@ -11,7 +11,10 @@
 #include <QDateTime>
 namespace MailCommon
 {
-/**
+/*!
+ * \class MailCommon::SnoozeAttribute
+ * \inmodule MailCommon
+ * \inheaderfile MailCommon/SnoozeAttribute
  * Marks a message as snoozed until a given date/time.
  *
  * The attribute is the source of truth: the message list proxy hides any item
@@ -28,18 +31,34 @@ namespace MailCommon
 class MAILCOMMON_EXPORT SnoozeAttribute : public Akonadi::Attribute
 {
 public:
+    /*!
+     */
     SnoozeAttribute();
+    /*!
+     */
     ~SnoozeAttribute() override;
 
+    /*!
+     */
     [[nodiscard]] QByteArray type() const override;
+    /*!
+     */
     [[nodiscard]] SnoozeAttribute *clone() const override;
+    /*!
+     */
     [[nodiscard]] QByteArray serialized() const override;
+    /*!
+     */
     void deserialize(const QByteArray &data) override;
 
-    /** Wake-up instant, always stored in UTC. */
+    /*! Wake-up instant, always stored in UTC. */
     [[nodiscard]] QDateTime wakeUpDateTime() const;
+    /*!
+     */
     void setWakeUpDateTime(const QDateTime &dateTime);
 
+    /*!
+     */
     [[nodiscard]] bool operator==(const SnoozeAttribute &other) const;
 
 private:
